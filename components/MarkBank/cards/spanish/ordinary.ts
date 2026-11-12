@@ -183,7 +183,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does Carolina describe herself? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(quite) ambitious; mature (for her age); in good physical condition; has (inner) mental strength or (is) mentally strong; confident (of herself and her possibilities); proud (to have chosen badminton); has overcome difficult situations"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(quite) ambitious","mature (for her age)","in good physical condition","has (inner) mental strength or (is) mentally strong","confident (of herself and her possibilities)","proud (to have chosen badminton)","has overcome difficult situations"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -218,7 +218,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does she plan to do next? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["go to Spain, prepare for the games/Olympics in Río, win (an Olympic) medal"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["go to Spain","prepare for the games/Olympics in Río","win (an Olympic) medal"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1096,7 +1096,7 @@ export const CARDS: SecCard[] = [
     questionText: "What advice is given if you come across a manatee? (Give one detail.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["Don’t touch it/don’t give it food/don’t feed it/leave it in peace"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["Don’t touch it","don’t give it food","don’t feed it","leave it in peace"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1144,7 +1144,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who should avoid drinking coffee? (Give one detail.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["pregnant women/people suffering from hypertension/cardiac or heart problems/(acute) gastritis or irritable bowel (syndrome)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["pregnant women","people suffering from hypertension/cardiac or heart problems/(acute) gastritis or irritable bowel (syndrome)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1730,7 +1730,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one thing that Spanish festivals have in common.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["they take place outdoors, with music, fireworks, great opportunity to liberate the Spanish spirit."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["they take place outdoors","with music","fireworks","great opportunity to liberate the Spanish spirit."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2049,7 +2049,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one opportunity of student life.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["to study new subjects, to enjoy a social life, to learn to live with greater independence and responsibility"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["to study new subjects","to enjoy a social life","to learn to live with greater independence and responsibility"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2119,7 +2119,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one thing that holidays mean for people.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["adventure, tranquillity/peace, (quality) time with the family"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["adventure","tranquillity/peace","(quality) time with the family"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2154,7 +2154,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one thing that Salou offers tourists.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":6,"options":["adventure, kilometres of beaches, Port Aventura / attraction park"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":6,"options":["adventure","kilometres of beaches","Port Aventura / attraction park"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2297,7 +2297,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the forecast for Sunday? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["very hot/warm, light winds"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["very hot/warm","light winds"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2367,7 +2367,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one place where Pokemons can be found.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["police stations, bridges, museums, historical places"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["police stations","bridges","museums","historical places"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2629,7 +2629,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué planes tiene Carlos para el futuro? (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":1,"perOption":5,"options":["Quiere volver a vivir en Cuba/ enseñar a una nueva generación de bailarines/ pasar más tiempo con su familia / quizás escribir otra novela."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":1,"perOption":5,"options":["Quiere volver a vivir en Cuba","enseñar a una nueva generación de bailarines","pasar más tiempo con su familia","quizás escribir otra novela."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2941,7 +2941,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Pilar Fernández say about bullfighting? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["they portray negative values in society / they can have a serious impact on the psychological development of children."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["they portray negative values in society","they can have a serious impact on the psychological development of children."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3037,7 +3037,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why were there so many viewers in 2016? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["it was the first time it was shown on YouTube/ It was the first time it was shown live in The United States."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["it was the first time it was shown on YouTube","It was the first time it was shown live in The United States."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3417,7 +3417,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is entitled to a discount? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["children/young people/those under 12, school groups"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["children/young people/those under 12","school groups"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4050,7 +4050,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where was Justin Bieber when he first heard Despacito?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Bogotá/Colombia/at a disco/after his concert/on tour"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Bogotá","Colombia","at a disco","after his concert","on tour"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4445,7 +4445,7 @@ export const CARDS: SecCard[] = [
     questionText: "What can hotel guests do in the area? (Give one detail)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["relax / golf / go cycling / hiking / visit Dalí museum"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["relax","golf","go cycling","hiking","visit Dalí museum"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4469,7 +4469,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does La Experiencia Dalí offer? (Give one detail)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["a night in the castle tower / a four course dinner / a guided tour of the castle"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["a night in the castle tower","a four course dinner","a guided tour of the castle"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4493,7 +4493,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is Chile famous for? (Give one detail)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["active volcanos/driest desert in the world/ glacial lakes"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["active volcanos","driest desert in the world","glacial lakes"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4517,7 +4517,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why the north of Chile is one of the best places to look at the stars.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["no pollution/more than 300 nights a year with clear skies"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["no pollution","more than 300 nights a year with clear skies"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4613,7 +4613,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did President Higgins refer to in his speech in Colombia? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["the importance of the process of reconciliation/ the Irish experience / the resolution of conflict, dialogue and peace"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["the importance of the process of reconciliation","the Irish experience","the resolution of conflict, dialogue and peace"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4637,7 +4637,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one activity he undertook during his visit to Cuba.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he visited the president Raúl Castro / he spoke in Revolution Square in Havana/ he opened the International book fair (in Havana) / he launched the Spanish version of Joseph O’Connor’s book / he went on a guided tour of Havana / he attended the National Dance School / he met members of the Irish community"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he visited the president Raúl Castro","he spoke in Revolution Square in Havana","he opened the International book fair (in Havana)","he launched the Spanish version of Joseph O’Connor’s book","he went on a guided tour of Havana","he attended the National Dance School","he met members of the Irish community"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4709,7 +4709,7 @@ export const CARDS: SecCard[] = [
     questionText: "How do we know Martin is successful? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he has a long list of hits / he has a personal fortune of 14 million US Dollars"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he has a long list of hits","he has a personal fortune of 14 million US Dollars"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4781,7 +4781,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Ibiza mentioned? (Give one detail).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["in 2017, he became resident DJ there/ He played in Ushuaia Ibiza Beach Hotel Ibiza every Thursday from July to September."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["in 2017, he became resident DJ there","He played in Ushuaia Ibiza Beach Hotel Ibiza every Thursday from July to September."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5314,7 +5314,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Pedro like to do when he goes to Chile? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["go on holidays/ be on the beach/ talk to his father/ have lunch with his cousins"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["go on holidays","be on the beach","talk to his father","have lunch with his cousins"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5349,7 +5349,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Jaime Peña? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["policeman/ worked against the drug traffickers/ nice/ hardworking"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["policeman","worked against the drug traffickers","nice","hardworking"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5384,7 +5384,7 @@ export const CARDS: SecCard[] = [
     questionText: "What fascinates people about this series? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["money/ drugs/ power"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["money","drugs","power"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5454,7 +5454,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one additional cost Erasmus students have.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["airplane tickets/ Spanish classes"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["airplane tickets","Spanish classes"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5595,7 +5595,7 @@ export const CARDS: SecCard[] = [
     questionText: "Two seas are mentioned. Name one.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Mediterranean/ Atlantic Ocean"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Mediterranean","Atlantic Ocean"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5773,7 +5773,7 @@ export const CARDS: SecCard[] = [
     questionText: "What actors are they looking for? Name one role available.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["farmers, soldiers, cooks"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["farmers","soldiers","cooks"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5808,7 +5808,7 @@ export const CARDS: SecCard[] = [
     questionText: "As well as fifty euro per day, what will the actors receive? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["free food/ free transport"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["free food","free transport"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6247,7 +6247,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are we told about dogs? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["(a dog) is man’s best friend/ the most popular pet (in Spain)/ more than 5 million (registered)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["(a dog) is man’s best friend","the most popular pet (in Spain)","more than 5 million (registered)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6271,7 +6271,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is the beach mentioned? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["(it is the dogs’) preferred destination/ each year there are more beaches with access for dogs/ Valencia and Cataluña have the most dog-friendly beaches"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["(it is the dogs’) preferred destination","each year there are more beaches with access for dogs","Valencia and Cataluña have the most dog-friendly beaches"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6320,7 +6320,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where do many people use the Babbel app?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["on public transport/ on the way to school/ on the way to work"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["on public transport","on the way to school","on the way to work"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6536,7 +6536,7 @@ export const CARDS: SecCard[] = [
     questionText: "What happened in 2013? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["she injured her right foot/ she had an operation"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["she injured her right foot","she had an operation"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13783,7 +13783,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does he say about his method? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["simple/fun"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["simple","fun"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14537,7 +14537,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Olga say about the day of the final?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["it was the best (day) of her life/ it was the worst (day)of her life/ her father died"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["it was the best (day) of her life","it was the worst (day)of her life","her father died"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14609,7 +14609,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Inma do when she discovered the snake?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["she shouted (in a loud voice)/asked her mother for help"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["she shouted (in a loud voice)","asked her mother for help"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14657,7 +14657,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Julia do to stop the snake escaping?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["she closed the door of the bathroom/put a towel on the floor"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["she closed the door of the bathroom","put a towel on the floor"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14729,7 +14729,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Harry do before the concert?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":6,"options":["he signed autographs/he chatted to a girl in a wheelchair"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":6,"options":["he signed autographs","he chatted to a girl in a wheelchair"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14778,7 +14778,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did Harry greet the audience?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["(with the phrase) Good night/ in Spanish"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["(with the phrase) Good night","in Spanish"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14802,7 +14802,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Harry’s visit to the Prado Museum?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["it lasted 40 minutes/ it didn’t limit the normal access to the rest of the public"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["it lasted 40 minutes","it didn’t limit the normal access to the rest of the public"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

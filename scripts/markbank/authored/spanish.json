@@ -963,7 +963,9 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "Keep your wallet safe./ There may be thieves around/ The bags or cds may be fake"
+      "Keep your wallet safe.",
+      "There may be thieves around",
+      "The bags or cds may be fake"
      ]
     }
    }
@@ -4013,7 +4015,13 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "(quite) ambitious; mature (for her age); in good physical condition; has (inner) mental strength or (is) mentally strong; confident (of herself and her possibilities); proud (to have chosen badminton); has overcome difficult situations"
+      "(quite) ambitious",
+      "mature (for her age)",
+      "in good physical condition",
+      "has (inner) mental strength or (is) mentally strong",
+      "confident (of herself and her possibilities)",
+      "proud (to have chosen badminton)",
+      "has overcome difficult situations"
      ]
     }
    }
@@ -4067,7 +4075,9 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "go to Spain, prepare for the games/Olympics in Río, win (an Olympic) medal"
+      "go to Spain",
+      "prepare for the games/Olympics in Río",
+      "win (an Olympic) medal"
      ]
     }
    }
@@ -5422,7 +5432,10 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "Don’t touch it/don’t give it food/don’t feed it/leave it in peace"
+      "Don’t touch it",
+      "don’t give it food",
+      "don’t feed it",
+      "leave it in peace"
      ]
     }
    }
@@ -5508,7 +5521,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "pregnant women/people suffering from hypertension/cardiac or heart problems/(acute) gastritis or irritable bowel (syndrome)"
+      "pregnant women",
+      "people suffering from hypertension/cardiac or heart problems/(acute) gastritis or irritable bowel (syndrome)"
      ]
     }
    }
@@ -6970,10 +6984,8 @@
      "claimMax": 3,
      "perOption": 1,
      "options": [
-      "he got to know Marta",
-      "all her friends.",
-      "They all wanted to help him",
-      "brought him drinks and tapas.",
+      "he got to know Marta and all her friends.",
+      "They all wanted to help him and brought him drinks and tapas.",
       "He had a great time."
      ]
     }
@@ -8414,7 +8426,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "as a lawyer and employee of the company, he negotiated with the governments of both countries the creation of a maritime link. / He was born in Cuba but his family brought him to Florida when he was nine months old because of the revolution."
+      "as a lawyer and employee of the company, he negotiated with the governments of both countries the creation of a maritime link.",
+      "He was born in Cuba but his family brought him to Florida when he was nine months old because of the revolution."
      ]
     }
    }
@@ -9552,7 +9565,7 @@
       "Set up thirteen years ago.",
       "Aim to promote sport as an educational means.",
       "It is social programme",
-      "(It has succeeded in) improving the school progress and health of boys and girls (between the ages of 6 and 18)",
+      "(It has succeeded in) improving the school progress and health of boys and girls (between the ages of 6 and 18}",
       "There are 17 (of them).",
       "Situated in poor areas of various Spanish cities.",
       "Each one is linked with an elite athlete who voluntarily visits the school and shares their time and experience with the students.",
@@ -10410,7 +10423,10 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "they take place outdoors, with music, fireworks, great opportunity to liberate the Spanish spirit."
+      "they take place outdoors",
+      "with music",
+      "fireworks",
+      "great opportunity to liberate the Spanish spirit."
      ]
     }
    }
@@ -10873,7 +10889,9 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "to study new subjects, to enjoy a social life, to learn to live with greater independence and responsibility"
+      "to study new subjects",
+      "to enjoy a social life",
+      "to learn to live with greater independence and responsibility"
      ]
     }
    }
@@ -10983,7 +11001,9 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "adventure, tranquillity/peace, (quality) time with the family"
+      "adventure",
+      "tranquillity/peace",
+      "(quality) time with the family"
      ]
     }
    }
@@ -11037,7 +11057,9 @@
      "claimMax": 1,
      "perOption": 6,
      "options": [
-      "adventure, kilometres of beaches, Port Aventura / attraction park"
+      "adventure",
+      "kilometres of beaches",
+      "Port Aventura / attraction park"
      ]
     }
    }
@@ -11248,7 +11270,8 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "very hot/warm, light winds"
+      "very hot/warm",
+      "light winds"
      ]
     }
    }
@@ -11349,7 +11372,10 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "police stations, bridges, museums, historical places"
+      "police stations",
+      "bridges",
+      "museums",
+      "historical places"
      ]
     }
    }
@@ -11756,7 +11782,10 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "Quiere volver a vivir en Cuba/ enseñar a una nueva generación de bailarines/ pasar más tiempo con su familia / quizás escribir otra novela."
+      "Quiere volver a vivir en Cuba",
+      "enseñar a una nueva generación de bailarines",
+      "pasar más tiempo con su familia",
+      "quizás escribir otra novela."
      ]
     }
    }
@@ -12271,7 +12300,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "they portray negative values in society / they can have a serious impact on the psychological development of children."
+      "they portray negative values in society",
+      "they can have a serious impact on the psychological development of children."
      ]
     }
    }
@@ -12432,7 +12462,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "it was the first time it was shown on YouTube/ It was the first time it was shown live in The United States."
+      "it was the first time it was shown on YouTube",
+      "It was the first time it was shown live in The United States."
      ]
     }
    }
@@ -13232,7 +13263,8 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "he thinks parents should enjoy their children/ (if we fill their afternoons with homework), they don’t have time to be children"
+      "he thinks parents should enjoy their children",
+      "(if we fill their afternoons with homework), they don’t have time to be children"
      ]
     }
    }
@@ -16923,7 +16955,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "children/young people/those under 12, school groups"
+      "children/young people/those under 12",
+      "school groups"
      ]
     }
    }
@@ -17829,7 +17862,11 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "Bogotá/Colombia/at a disco/after his concert/on tour"
+      "Bogotá",
+      "Colombia",
+      "at a disco",
+      "after his concert",
+      "on tour"
      ]
     }
    }
@@ -18446,7 +18483,11 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "relax / golf / go cycling / hiking / visit Dalí museum"
+      "relax",
+      "golf",
+      "go cycling",
+      "hiking",
+      "visit Dalí museum"
      ]
     }
    }
@@ -18489,7 +18530,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "a night in the castle tower / a four course dinner / a guided tour of the castle"
+      "a night in the castle tower",
+      "a four course dinner",
+      "a guided tour of the castle"
      ]
     }
    }
@@ -18532,7 +18575,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "active volcanos/driest desert in the world/ glacial lakes"
+      "active volcanos",
+      "driest desert in the world",
+      "glacial lakes"
      ]
     }
    }
@@ -18575,7 +18620,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "no pollution/more than 300 nights a year with clear skies"
+      "no pollution",
+      "more than 300 nights a year with clear skies"
      ]
     }
    }
@@ -18738,7 +18784,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "the importance of the process of reconciliation/ the Irish experience / the resolution of conflict, dialogue and peace"
+      "the importance of the process of reconciliation",
+      "the Irish experience",
+      "the resolution of conflict, dialogue and peace"
      ]
     }
    }
@@ -18781,7 +18829,13 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "he visited the president Raúl Castro / he spoke in Revolution Square in Havana/ he opened the International book fair (in Havana) / he launched the Spanish version of Joseph O’Connor’s book / he went on a guided tour of Havana / he attended the National Dance School / he met members of the Irish community"
+      "he visited the president Raúl Castro",
+      "he spoke in Revolution Square in Havana",
+      "he opened the International book fair (in Havana)",
+      "he launched the Spanish version of Joseph O’Connor’s book",
+      "he went on a guided tour of Havana",
+      "he attended the National Dance School",
+      "he met members of the Irish community"
      ]
     }
    }
@@ -18913,7 +18967,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "he has a long list of hits / he has a personal fortune of 14 million US Dollars"
+      "he has a long list of hits",
+      "he has a personal fortune of 14 million US Dollars"
      ]
     }
    }
@@ -19041,7 +19096,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "in 2017, he became resident DJ there/ He played in Ushuaia Ibiza Beach Hotel Ibiza every Thursday from July to September."
+      "in 2017, he became resident DJ there",
+      "He played in Ushuaia Ibiza Beach Hotel Ibiza every Thursday from July to September."
      ]
     }
    }
@@ -20368,7 +20424,8 @@
      "claimMax": 1,
      "perOption": 2,
      "options": [
-      "They drive on the right/ speed limits are in km/h"
+      "They drive on the right",
+      "speed limits are in km/h"
      ]
     }
    }
@@ -23686,7 +23743,10 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "go on holidays/ be on the beach/ talk to his father/ have lunch with his cousins"
+      "go on holidays",
+      "be on the beach",
+      "talk to his father",
+      "have lunch with his cousins"
      ]
     }
    }
@@ -23740,7 +23800,10 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "policeman/ worked against the drug traffickers/ nice/ hardworking"
+      "policeman",
+      "worked against the drug traffickers",
+      "nice",
+      "hardworking"
      ]
     }
    }
@@ -23794,7 +23857,9 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "money/ drugs/ power"
+      "money",
+      "drugs",
+      "power"
      ]
     }
    }
@@ -23895,7 +23960,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "airplane tickets/ Spanish classes"
+      "airplane tickets",
+      "Spanish classes"
      ]
     }
    }
@@ -24095,7 +24161,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "Mediterranean/ Atlantic Ocean"
+      "Mediterranean",
+      "Atlantic Ocean"
      ]
     }
    }
@@ -24353,7 +24420,9 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "farmers, soldiers, cooks"
+      "farmers",
+      "soldiers",
+      "cooks"
      ]
     }
    }
@@ -24407,7 +24476,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "free food/ free transport"
+      "free food",
+      "free transport"
      ]
     }
    }
@@ -25137,7 +25207,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "(a dog) is man’s best friend/ the most popular pet (in Spain)/ more than 5 million (registered)"
+      "(a dog) is man’s best friend",
+      "the most popular pet (in Spain)",
+      "more than 5 million (registered)"
      ]
     }
    }
@@ -25180,7 +25252,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "(it is the dogs’) preferred destination/ each year there are more beaches with access for dogs/ Valencia and Cataluña have the most dog-friendly beaches"
+      "(it is the dogs’) preferred destination",
+      "each year there are more beaches with access for dogs",
+      "Valencia and Cataluña have the most dog-friendly beaches"
      ]
     }
    }
@@ -25265,7 +25339,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "on public transport/ on the way to school/ on the way to work"
+      "on public transport",
+      "on the way to school",
+      "on the way to work"
      ]
     }
    }
@@ -25640,7 +25716,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "she injured her right foot/ she had an operation"
+      "she injured her right foot",
+      "she had an operation"
      ]
     }
    }
@@ -55821,7 +55898,8 @@
      "claimMax": 1,
      "perOption": 4,
      "options": [
-      "simple/fun"
+      "simple",
+      "fun"
      ]
     }
    }
@@ -56940,7 +57018,9 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "it was the best (day) of her life/ it was the worst (day)of her life/ her father died"
+      "it was the best (day) of her life",
+      "it was the worst (day)of her life",
+      "her father died"
      ]
     }
    }
@@ -57055,7 +57135,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "she shouted (in a loud voice)/asked her mother for help"
+      "she shouted (in a loud voice)",
+      "asked her mother for help"
      ]
     }
    }
@@ -57134,7 +57215,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "she closed the door of the bathroom/put a towel on the floor"
+      "she closed the door of the bathroom",
+      "put a towel on the floor"
      ]
     }
    }
@@ -57264,7 +57346,8 @@
      "claimMax": 1,
      "perOption": 6,
      "options": [
-      "he signed autographs/he chatted to a girl in a wheelchair"
+      "he signed autographs",
+      "he chatted to a girl in a wheelchair"
      ]
     }
    }
@@ -57349,7 +57432,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "(with the phrase) Good night/ in Spanish"
+      "(with the phrase) Good night",
+      "in Spanish"
      ]
     }
    }
@@ -57392,7 +57476,8 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "it lasted 40 minutes/ it didn’t limit the normal access to the rest of the public"
+      "it lasted 40 minutes",
+      "it didn’t limit the normal access to the rest of the public"
      ]
     }
    }

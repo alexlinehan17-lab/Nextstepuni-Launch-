@@ -674,7 +674,7 @@ export const CARDS: SecCard[] = [
     questionText: "What advice is given? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["Keep your wallet safe./ There may be thieves around/ The bags or cds may be fake"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["Keep your wallet safe.","There may be thieves around","The bags or cds may be fake"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2794,7 +2794,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did things change for the better for Pepe? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":1,"options":["he got to know Marta","all her friends.","They all wanted to help him","brought him drinks and tapas.","He had a great time."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":1,"options":["he got to know Marta and all her friends.","They all wanted to help him and brought him drinks and tapas.","He had a great time."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3659,7 +3659,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain in detail one reason why Pérez was chosen to represent Carnival. (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["as a lawyer and employee of the company, he negotiated with the governments of both countries the creation of a maritime link. / He was born in Cuba but his family brought him to Florida when he was nine months old because of the revolution."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["as a lawyer and employee of the company, he negotiated with the governments of both countries the creation of a maritime link.","He was born in Cuba but his family brought him to Florida when he was nine months old because of the revolution."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4367,7 +4367,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are we told about the Escuelas Deportivas? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":2,"options":["Set up thirteen years ago.","Aim to promote sport as an educational means.","It is social programme","(It has succeeded in) improving the school progress and health of boys and girls (between the ages of 6 and 18)","There are 17 (of them).","Situated in poor areas of various Spanish cities.","Each one is linked with an elite athlete who voluntarily visits the school and shares their time and experience with the students.","Their (fundamental) aim is to teach (young people) that to be a good sportsperson you must first be a good person."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":2,"options":["Set up thirteen years ago.","Aim to promote sport as an educational means.","It is social programme","(It has succeeded in) improving the school progress and health of boys and girls (between the ages of 6 and 18}","There are 17 (of them).","Situated in poor areas of various Spanish cities.","Each one is linked with an elite athlete who voluntarily visits the school and shares their time and experience with the students.","Their (fundamental) aim is to teach (young people) that to be a good sportsperson you must first be a good person."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5032,7 +5032,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does he give little homework? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["he thinks parents should enjoy their children/ (if we fill their afternoons with homework), they don’t have time to be children"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["he thinks parents should enjoy their children","(if we fill their afternoons with homework), they don’t have time to be children"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7805,7 +7805,7 @@ export const CARDS: SecCard[] = [
     questionText: "Gibraltar is unique as a British territory. Give one reason why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They drive on the right/ speed limits are in km/h"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They drive on the right","speed limits are in km/h"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

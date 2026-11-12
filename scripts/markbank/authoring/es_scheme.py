@@ -252,10 +252,9 @@ MISPRINTS = {
     (2021, 'hl'): [('Prescribed literatura:', 'Prescribed literature:')],
     # 2017 Higher prints Question 2(b)(i)'s tariff without its opening
     # bracket: "- boats adrift/ in difficulty. 2+2+2m)".
-    # Section B Q4(b) closes a bracket with a brace: "(between the ages of 6
-    # and 18}".
-    (2017, 'hl'): [('- boats adrift/ in difficulty. 2+2+2m)', '- boats adrift/ in difficulty. (2+2+2m)'),
-                   ('(between the ages of 6 and 18}', '(between the ages of 6 and 18)')],
+    # (Section B Q4(b)'s "(between the ages of 6 and 18}" is what the page
+    # prints, rendered and read: it is kept as printed.)
+    (2017, 'hl'): [('- boats adrift/ in difficulty. 2+2+2m)', '- boats adrift/ in difficulty. (2+2+2m)')],
 }
 
 # Layouts the reader is taught by example, keyed by sitting, never content:
@@ -288,6 +287,72 @@ MENU_CUTS = {
     # children (5m+5m)": "abandoned/orphaned" is one answer's two words.
     (2018, 'ol', 'A', 5, 'f', None): ('a family', 'a stable home',
                                       'a better education to abandoned/orphaned children'),
+}
+
+
+# "One of:" lists printed on one line (coordinator ruling, 12 Nov 2026): each
+# item the scheme separates is an answer of its own, cut at the separator the
+# line uses, and the student picks the one they gave. The separator is named
+# per row, because the same line can also use a slash INSIDE one answer
+# ("games/Olympics", "km/h", "tranquillity/peace"); a row whose slashes all
+# sit inside one answer is kept whole (ONE_OF_KEPT). A one-line "One of:" list
+# in neither table is a fault, so a new sitting cannot ship one uncut.
+ONE_OF_CUTS = {
+    (2016, 'hl', 'L', 5, 'd', None): '/',
+    (2016, 'ol', 'L', 2, 'b', None): ';',
+    (2016, 'ol', 'L', 2, 'c', None): ',',        # "the games/Olympics" is one answer
+    (2016, 'ol', 'A', 2, 'e', None): '/',
+    # "pregnant women/people suffering from hypertension/cardiac or heart
+    # problems/…": the first slash parts two answers, the rest are one
+    # answer's conditions.
+    (2016, 'ol', 'A', 3, 'b', None): ('pregnant women',
+                                      'people suffering from hypertension/cardiac or heart '
+                                      'problems/(acute) gastritis or irritable bowel (syndrome)'),
+    (2017, 'hl', 'A1b', 1, 'c', None): ' / ',     # commas inside the first answer
+    (2017, 'ol', 'L', 1, 'b', None): ',',
+    (2017, 'ol', 'L', 4, 'b', None): ',',
+    (2017, 'ol', 'L', 5, 'a', None): ',',        # "tranquillity/peace" is one answer
+    (2017, 'ol', 'L', 5, 'b', None): ',',        # "Port Aventura / attraction park" is one
+    (2017, 'ol', 'L', 6, 'c', None): ',',        # "very hot/warm" is one answer
+    (2017, 'ol', 'L', 7, 'b', None): ',',
+    (2017, 'ol', 'A', 1, 'i', None): '/',
+    (2017, 'ol', 'A', 4, 'e', None): '/',
+    (2017, 'ol', 'A', 5, 'd', None): '/',
+    (2018, 'hl', 'L', 2, 'c', None): '/',
+    (2018, 'ol', 'L', 1, 'c', None): ',',        # "children/young people/those under 12" is one
+    (2018, 'ol', 'L', 7, 'b', None): '/',
+    (2018, 'ol', 'A', 2, 'd', None): '/',
+    (2018, 'ol', 'A', 2, 'e', None): '/',
+    (2018, 'ol', 'A', 3, 'a', None): '/',
+    (2018, 'ol', 'A', 3, 'b', None): '/',
+    (2018, 'ol', 'A', 4, 'c', None): '/',        # "conflict, dialogue and peace" is one
+    (2018, 'ol', 'A', 4, 'd', None): '/',
+    (2018, 'ol', 'A', 5, 'b', None): '/',
+    (2018, 'ol', 'A', 5, 'e', None): '/',        # "in 2017, he became …" is one
+    (2019, 'hl', 'L', 5, 'b', None): '/ ',       # "km/h" is inside an answer
+    (2019, 'ol', 'L', 3, 'b', None): '/',
+    (2019, 'ol', 'L', 3, 'c', None): '/',
+    (2019, 'ol', 'L', 3, 'd', None): '/',
+    (2019, 'ol', 'L', 4, 'b', None): '/',
+    (2019, 'ol', 'L', 5, 'c', None): '/',
+    (2019, 'ol', 'L', 7, 'b', None): ',',
+    (2019, 'ol', 'L', 7, 'c', None): '/',
+    (2019, 'ol', 'A', 3, 'c', None): '/',
+    (2019, 'ol', 'A', 3, 'd', None): '/',
+    (2019, 'ol', 'A', 4, 'b', None): '/',
+    (2019, 'ol', 'A', 5, 'f', None): '/',
+    (2024, 'ol', 'L', 3, 'b', None): '/',
+    (2024, 'ol', 'A', 2, 'b', None): '/',
+    (2024, 'ol', 'A', 3, 'a', None): '/',
+    (2024, 'ol', 'A', 3, 'c', None): '/',
+    (2024, 'ol', 'A', 4, 'b', None): '/',
+    (2024, 'ol', 'A', 4, 'd', None): '/',
+    (2024, 'ol', 'A', 4, 'e', None): '/',
+}
+ONE_OF_KEPT = {
+    # "protects us from (chronic) diseases/illnesses like Parkinson's/
+    # Alzheimer's/ (many types of) cancer": one benefit, its slashes inside it.
+    (2016, 'ol', 'A', 3, 'a', None),
 }
 
 
@@ -961,6 +1026,10 @@ class EsScheme:
                     bare = re.sub(r'\([^()]*\)', '', prev.rstrip(','))
                     slashes, commas_ = '/' in bare, ',' in bare
                     if lines and (prev.endswith('/') or prev.count('(') > prev.count(')')
+                                  # a sentence the line break split: 2017 Higher
+                                  # listening Q3(c) "he got to know Marta" / "and
+                                  # all her friends." (coordinator ruling, 12 Nov)
+                                  or (re.match(r'^(?:and|y)\s', l) and not prev.endswith('.'))
                                   or (slashes and (re.search(r'(?:,|\b(?:and|or|y|o))$', prev)
                                                    or l[:1].islower()))
                                   or (commas_ and prev.endswith(','))):
@@ -1000,6 +1069,19 @@ class EsScheme:
                 joined = ' '.join(' '.join(answers).split())
                 assert all(o in joined for o in cut), (section, q, letter, cut)
                 options = list(cut)
+            key = (self.year, self.level, section, q, letter, roman)
+            if quota == 1 and len(options) == 1 and key not in ONE_OF_KEPT:
+                one = ONE_OF_CUTS.get(key)
+                if isinstance(one, tuple):
+                    assert all(o in options[0] for o in one), (key, one)
+                    options = list(one)
+                elif one:
+                    options = [o.strip().rstrip(',;').strip()
+                               for o in options[0].split(one) if o.strip()]
+                    assert len(options) >= 2, (key, options)
+                elif re.search(r'[/;,]', options[0]):
+                    fault = fault or ('a one-line "One of:" list the reader has not been '
+                                      'told how to cut (ONE_OF_CUTS / ONE_OF_KEPT)')
             if len(options) < quota and self.year <= OLD_LETTERS_LAST:
                 # The 2016-2019 schemes set a menu's answers one to a printed
                 # line with no dash ("Two of: it will be in Madrid … /
