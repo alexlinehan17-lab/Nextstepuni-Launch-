@@ -322,6 +322,15 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   }
   const direct = entry.papers.find(p => labelCovers(p.label).has(section));
   if (direct) return stripPdf(direct.doc?.f);
+  // Technology 2010-2018 prints Sections B AND C in one booklet, component
+  // 015 (its cover: "Section B - Core ... Section C - Options"), which the
+  // index labels "Section B" alone; from 2019 the same booklet (039) is
+  // "Section B&C". A Section C card belongs to that document, named by its
+  // component, not by a guess.
+  if (subjectId === 'technology' && section === 'C') {
+    const bc = entry.papers.filter(p => labelCovers(p.label).has('B') && componentOf(p.doc?.f) === '015');
+    if (bc.length === 1) return stripPdf(bc[0].doc?.f);
+  }
   // The 2022 Irish OL Paper 1 is labelled only "Exam Paper" in the SEC index,
   // beside an explicitly labelled Paper Two.  The sole unnumbered sibling is
   // therefore Paper 1; this evidence-based fallback stays null for ambiguous
