@@ -34,17 +34,24 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 from es_scheme import schemes_dir                               # noqa: E402
 
 # ---------------------------------------------------------------- the paper -
+# 2019 Ordinary sets the footer of its Section B page with every word twice:
+# "Leaving Leaving Certificate Certificate Examination Examination 2019 2019 8",
+# "Spanish Spanish – Written – Written – Ordinary – Ordinary Level Level", under
+# the page's number on a row of its own ("8").
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate Examination,?\s*\d{4}|Spanish\s*[–-]|_{6,}|\.{6,}|'
-    r'Do not write on this page|There is no examination material)', re.I)
+    r'Do not write on this page|There is no examination material|'
+    r'Leaving Leaving Certificate Certificate Examination|Spanish Spanish\s*[–-]|'
+    r'\d{1,2}$)', re.I)
 # Where a task's own lines end: the "OR" between alternatives, a section head,
 # an answer-page pointer, or the end matter. (The next task or question head
 # ends it too; those are found by position, below.)
 # "OR" is a line of its own: matched case-insensitively it ended a dialogue at
 # "organisation and a very important part of Irish culture" (2023 Higher).
+# 2018 Higher heads its answer page "BELOW WRITE YOUR ANSWER TO SECTION A, …".
 TASK_END = re.compile(
     r'^(?:OR\s*$|SECTION\s+[A-C]\b|Section\s+[A-C]\s|Copyright notice|Acknowledgements|'
-    r'PLEASE WRITE|WRITE YOUR ANSWER|Write your answer|This is space for extra work)')
+    r'PLEASE WRITE|(?:BELOW\s+)?WRITE YOUR ANSWER|Write your answer|This is space for extra work)')
 # A line that starts a new line of the task as printed: a dialogue turn
 # ("Begoña:", "Tú:"), a bullet or dash point, or a bracketed aside.
 NEW_LINE = re.compile(r'^(?:[A-ZÁÉÍÓÚÑ][\wáéíóúñ]{0,15}(?: [A-ZÁÉÍÓÚÑ][\wáéíóúñ]{0,15})?:\s|[•−–‐\-]\s|\()')
@@ -81,6 +88,8 @@ def _summary(rest):
     """A lettered line that only NAMES an alternative ("Question 1 (b) Letter
     OR", "2. (a) Diary Entry or (b) Note. (25 marks)") rather than setting it."""
     rest = MARKS.sub(' ', rest).strip()
+    if not rest:
+        return False      # "(b)" alone on its line: the task follows (2016 Ordinary)
     return (len(rest.split()) <= 4 or re.search(r'\bOR$', rest)
             or re.search(r'\(\s*[a-c]\s*\)', rest) is not None)
 
@@ -260,7 +269,21 @@ RANGE_END = re.compile(r'\s*(\d{1,2})\s*[–-]\s*(\d{1,2})\s+marks$')
 BAND = re.compile(r'^(TOP|MIDDLE|BOTTOM)$')
 # "1. CONTENT/COMMUNICATION 25 marks"; 2021 and 2022 print "25marks".
 CRITERION = re.compile(r'^(\d)\.\s+([A-Z][A-Z/ ]+?)\s*(\d{1,2})\s*marks$')
-TIMES = re.compile(r'\((\d)\s*x\s*(\d{1,2})\s*m\s*=\s*(\d{1,3})\s*marks\)')
+# "(5 x 6m = 30 marks)"; 2017 prints "(5 x 6 = 30marks)".
+TIMES = re.compile(r'\((\d)\s*x\s*(\d{1,2})\s*m?\s*=\s*(\d{1,3})\s*marks\)')
+# 2010-2019 print it the other way round: "8 marks x 5 = 40 marks", "5 marks x 4 = 20".
+OLD_TIMES = re.compile(r'^(\d{1,2})\s*marks?\s*[x×]\s*(\d)\s*=\s*(\d{1,3})\b', re.I)
+
+
+def _times(s):
+    """(n, per, total) from a printed tariff line, or None."""
+    m = TIMES.search(s)
+    if m:
+        return int(m.group(1)), int(m.group(2)), int(m.group(3))
+    m = OLD_TIMES.search(s)
+    if m:
+        return int(m.group(2)), int(m.group(1)), int(m.group(3))
+    return None
 # A ladder entry opens with its marks ("6 marks:", "4 - 5 marks:", "5 marks
 # Communicative …") or closes with them ("… Verb(s) correct. 7 - 8 marks",
 # "Full message unequivocally conveyed: 8 marks").
@@ -289,7 +312,7 @@ def _span(lines, start, stop):
 def grid_b5(year, level):
     """Higher Section B Q5: Content/Communication and Language, three bands each."""
     L = scheme_lines(year, level)
-    i, j = _span(L, lambda s: re.match(r'^Section B:?\s+Question 5\b', s),
+    i, j = _span(L, lambda s: re.match(r'^Section B:?\s+Question 5\b', s, re.I),
                  lambda s: s.startswith('SECTION C'))
     block = L[i:j]
     pages = sorted({p for p, _s in block})
@@ -364,7 +387,16 @@ def _ladder(lines):
 
 
 def grid_c(year, level, q, letter):
-    """Higher Section C: a per-turn (dialogue) or per-point ladder."""
+    """Higher Section C: a per-turn (dialogue) or per-point ladder.
+
+    Read by region, because 2016-2026 lay the section out several ways: each
+    alternative's own lines run from its head ("Question 1 (a) DIALOGUE
+    CONSTRUCTION", "Q.1 (a) …") to the "OR", the next head or the ladder's
+    head ("Criteria for Question 1 …", "Guidelines for Section C, Question 1
+    (a) and (b):", "Criteria for awarding marks in Q.2 …"); the ladder and any
+    "Note:" lines belong to the whole question; 2016 and 2017's letter notes
+    ("1a) Letter/Email:" …) to the letter alone.
+    """
     L = scheme_lines(year, level)
     i, j = _span(L, lambda s: s.startswith('SECTION C'),
                  lambda s: s.startswith('APPENDIX') or s.startswith('LISTENING COMPREHENSION'))
@@ -381,41 +413,76 @@ def grid_c(year, level, q, letter):
         else:
             block.append((p, s))
     texts = [s for _p, s in block]
+    OPT = re.compile(r'^(?:Question|Q\.?)\s*(\d)\s*\(\s*([a-c])\s*\)(?!\s*and\b)')
+    CRIT = re.compile(r'^(?:Criteria for|Guidelines for Section C, Question)')
+    LETTER_NOTES = re.compile(r'^(?:Extra Notes|1[ab]\)\s*Letter)')
+    opts = [(k, int(m.group(1)), m.group(2).lower()) for k, s in enumerate(texts) if (m := OPT.match(s))]
     # The section's own guidelines, printed once above Question 1.
-    g0 = next(k for k, s in enumerate(texts) if s.startswith('Guidelines for Section C'))
-    g1 = next(k for k, s in enumerate(texts) if re.match(r'^Question 1\b', s))
-    guidelines = _sentences(texts[g0 + 1:g1])
-    # Question 1's own direction ("When marking this question … broadly
-    # adhered to") precedes its options.
-    want = re.compile(rf'^Question {q}\s*\(\s*{letter}\s*\)(?!\s*and\b)')
-    o0 = next(k for k, s in enumerate(texts) if want.match(s))
-    o1 = next(k for k in range(o0 + 1, len(texts))
-              if texts[k] == 'OR' or texts[k].startswith('Criteria for'))
+    g0 = next((k for k, s in enumerate(texts) if s.startswith('Guidelines for Section C')
+               and not CRIT.match(s)), None)
+    g1 = next(k for k, s in enumerate(texts) if re.match(r'^Question 1\b', s) or OPT.match(s))
+    guidelines = _sentences(texts[(g0 + 1) if g0 is not None else 1:g1])
+    o0 = next(k for k, qq, ll in opts if qq == q and ll == letter)
+    r0 = min(k for k, qq, _l in opts if qq == q)
+    # The question ends where the next one's first head is printed, its own
+    # lead included ("Question 2(a) and (b): Five points. …", 2021, 2022).
+    r1 = min([k for k, qq, _l in opts if qq > q] + [len(texts)]
+             + [k for k, s in enumerate(texts) if k > r0 and re.match(rf'^(?:Question|Q\.?)\s*{q + 1}\b', s)])
+    o1 = next((k for k in range(o0 + 1, r1) if texts[k] == 'OR' or CRIT.match(texts[k])
+               or OPT.match(texts[k]) or re.match(r'^Note:', texts[k]) or LETTER_NOTES.match(texts[k])), r1)
     option = [texts[o0]] + _sentences(texts[o0 + 1:o1])
     direction = []
     if q == 1:
-        d0 = next(k for k, s in enumerate(texts) if re.match(r'^Question 1\s*[.:]\s*When marking', s))
+        d0 = next((k for k, s in enumerate(texts) if re.match(r'^Question 1\s*[.:]\s*When marking', s)), None)
         # The one sentence, however many lines it wraps over.
-        direction = _sentences(texts[d0:d0 + 3])[:1]
-    c0 = next(k for k in range(o0, len(texts)) if texts[k].startswith(f'Criteria for Question {q}'))
-    c1 = next((k for k in range(c0 + 1, len(texts))
-               if re.match(r'^Question \d\s*\(', texts[k]) or texts[k].startswith('APPENDIX')), len(texts))
-    criteria_head = texts[c0:c0 + 2]
-    if not re.match(r'^TOTAL MARKS', texts[c0 + 1]):
-        criteria_head = texts[c0:c0 + 1]
-    ladder = _ladder(texts[c0 + len(criteria_head):c1])
-    # 2021 and 2022 print a lead over Question 2's alternatives: "Question 2(a)
-    # and (b): Five points. Four to be answered. If all are answered, read all
-    # and apply a global mark to the best FOUR according to the criteria below."
+        if d0 is not None:
+            direction = _sentences(texts[d0:d0 + 3])[:1]
+    c0 = next((k for k in range(r0, r1) if CRIT.match(texts[k])), None)
+    criteria_head, ladder = [], []
+    if c0 is not None:
+        criteria_head = texts[c0:c0 + 2] if re.match(r'^TOTAL MARKS', texts[c0 + 1]) else texts[c0:c0 + 1]
+        c1 = next((k for k in range(c0 + len(criteria_head), r1) if re.match(r'^Note:', texts[k])
+                   or LETTER_NOTES.match(texts[k])), r1)
+        ladder = _ladder(texts[c0 + len(criteria_head):c1])
+    # Notes printed for the whole question ("Note: In Q. 2 (a) and (b) …"),
+    # and the letter's own notes.
+    notes, in_letter = [], False
+    for k in range(r0, r1):
+        t = texts[k]
+        if LETTER_NOTES.match(t):
+            in_letter = True
+        if in_letter:
+            continue
+        elif re.match(r'^Note:', t) and (c0 is None or not (c0 <= k < c0 + len(criteria_head) + len(ladder))):
+            notes.append(t)
+            # its wrapped continuation lines
+            m = k + 1
+            while m < r1 and not (texts[m] == 'OR' or CRIT.match(texts[m]) or OPT.match(texts[m])
+                                  or re.match(r'^Note:', texts[m]) or LETTER_NOTES.match(texts[m])):
+                notes.append(texts[m])
+                m += 1
+    notes = _sentences(notes)
+    # The letter's own notes run from their head to the next question's head
+    # or the section's end: 2017 prints them under Question 1, 2016 under
+    # Question 2, after its notes ("Extra Notes:" / "1a) Letter/Email:" / …).
+    letter_at = []
+    if q == 1 and letter == 'b':
+        k0 = next((k for k, t in enumerate(texts) if LETTER_NOTES.match(t)), None)
+        if k0 is not None:
+            k1 = next((k for k in range(k0 + 1, len(texts)) if OPT.match(texts[k])), len(texts))
+            letter_at = list(range(k0, k1))
+            notes += _sentences([texts[k] for k in letter_at])
+    times = next((_times(s) for s in option if _times(s)), None)
+    # Pages from the lines' own positions: the question's region and the
+    # section's guidelines (a ladder line repeated under Question 2 is not
+    # Question 1's page).
+    pages = sorted({block[k][0] for k in [*range(r0, r1), *range(g0 or 0, g1), *letter_at]})
     l0 = next((k for k, s in enumerate(texts) if re.match(rf'^Question {q}\s*\(a\) and \(b\)', s)), None)
     lead = _sentences(texts[l0:next(k for k in range(l0, len(texts)) if texts[k] == 'OR')]) if l0 is not None else []
-    times = next((TIMES.search(s) for s in option if TIMES.search(s)), None)
-    pages = sorted({p for p, s in block if s in texts[o0:c1] or s in texts[g0:g1]
-                    or (l0 is not None and s in texts[l0:o0])})
     out = {'option': option, 'direction': direction, 'guidelines': guidelines, 'lead': lead,
-           'criteriaHead': criteria_head, 'ladder': ladder, 'pages': pages}
+           'criteriaHead': criteria_head, 'ladder': ladder, 'notes': notes, 'pages': pages}
     if times:
-        n, per, total = int(times.group(1)), int(times.group(2)), int(times.group(3))
+        n, per, total = times
         return {**out, 'n': n, 'per': per, 'total': total}
     whole = re.search(r'\((\d{1,2})\s*marks\)', option[0])
     if any(re.search(r'\bglobal mark\b', s) for s in lead) and whole:
@@ -431,16 +498,18 @@ def grid_ol_b(year, level, q, letter):
                  lambda s: s.startswith('LISTENING') or s.startswith('APPENDIX'))
     block = [(p, s) for p, s in L[i:j] if not PAGE_NO.match(s)]
     texts = [s for _p, s in block]
-    head = re.compile(r'^Q\.?\s*1\.' if q == 1 else r'^Q\.?\s*2\.')
+    # "Q. 1. LETTER", "Q.2. (a) NOTE …"; 2016 prints "Q.2 (a) NOTE …".
+    head = re.compile(r'^Q\.?\s*1\.' if q == 1 else r'^Q\.?\s*2\b\.?')
     o0 = next(k for k, s in enumerate(texts) if head.match(s))
-    o1 = next((k for k in range(o0 + 1, len(texts)) if re.match(r'^Q\.?\s*2\.', texts[k])), len(texts)) \
+    o1 = next((k for k in range(o0 + 1, len(texts)) if re.match(r'^Q\.?\s*2\b', texts[k])), len(texts)) \
         if q == 1 else len(texts)
+    # 2019 closes the section with its "Reasonable Accommodations:" note.
+    o1 = next((k for k in range(o0 + 1, o1) if re.match(r'^Reasonable Accommodations', texts[k])), o1)
     part = texts[o0 + 1:o1]
-    t = next(k for k, s in enumerate(part) if TIMES.search(s))
+    t = next(k for k, s in enumerate(part) if _times(s))
     lead = _sentences(part[:t + 1])
     ladder = _ladder(part[t + 1:])
-    times = TIMES.search(part[t])
-    n, per, total = int(times.group(1)), int(times.group(2)), int(times.group(3))
+    n, per, total = _times(part[t])
     pages = sorted({p for p, s in block if s in texts[o0:o1]})
     return {'n': n, 'per': per, 'total': total, 'head': texts[o0], 'lead': lead,
             'ladder': ladder, 'section': _sentences(texts[1:next(k for k, s in enumerate(texts) if head.match(s) or re.match(r'^Q\.?\s*1\.', s))]),

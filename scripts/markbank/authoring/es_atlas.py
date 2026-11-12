@@ -164,7 +164,7 @@ def _writing_n(level, section, q, letter):
 EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
            (2024, 'hl', 'A1b', 4): 'A1b4',
            (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2',
-           (2021, 'hl', 'A1b', 4): 'A1b4'}
+           (2021, 'hl', 'A1b', 4): 'A1b4', (2019, 'hl', 'A1b', 4): 'A1b4'}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',
