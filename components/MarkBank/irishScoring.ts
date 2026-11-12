@@ -7,7 +7,7 @@
  * that nests under the criterion's id, so the listening sheet, which
  * namespaces each extract's criteria, carries the rows with it.
  */
-import type { IrishAllocation, IrishAnswerPart, IrishCriterion } from '../../types/markBank';
+import { bestClaimedMarks, type IrishAllocation, type IrishAnswerPart, type IrishCriterion } from '../../types/markBank';
 
 export type IrishScores = Partial<Record<string, number>>;
 
@@ -56,11 +56,10 @@ export const irishPartMarks = (criterionId: string, part: IrishAnswerPart, score
     const ticked = Math.min(new Set(claimed.map(irishRowPoint)).size, part.ladder.length);
     return ticked > 0 ? part.ladder[ticked - 1] : 0;
   }
-  // A point counts once, at its best claimed row.
+  // A point counts once, at its best claimed row; the part takes its best points.
   const best = new Map<string, number>();
   for (const row of claimed) best.set(irishRowPoint(row), Math.max(best.get(irishRowPoint(row)) ?? 0, irishRowValue(criterionId, part, row, scores)));
-  const values = [...best.values()].sort((a, b) => b - a).slice(0, irishPartCount(part));
-  return Math.min(part.tariff, values.reduce((sum, value) => sum + value, 0));
+  return Math.min(part.tariff, bestClaimedMarks([...best.values()], irishPartCount(part)));
 };
 
 export const irishAllocationMarks = (criterionId: string, allocation: IrishAllocation, scores: IrishScores): number =>

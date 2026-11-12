@@ -1328,8 +1328,22 @@ const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 74, ordinary: 55 },
   2020: { higher: 73, ordinary: 51 },
 };
-const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
-const spanishAddedTotal = Object.values(SPANISH_ADDED)
+/* 2021-2025 shipped their reading cards before the lane; their listening,
+ * writing and direction asks were excluded then and are carded on top (batch
+ * 2, from 2026-11-12), one sitting per commit, pinned here per year and level.
+ * Those cards are known by their address: Section L, Higher B Q5 and Section C,
+ * Higher A1a Q5 and A1b Q4, Ordinary Section B. No frozen id has one. */
+const SPANISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 33, ordinary: 25 },
+  2024: { higher: 33, ordinary: 25 },
+  2023: { higher: 33, ordinary: 25 },
+  2022: { higher: 33, ordinary: 25 },
+  2021: { higher: 33, ordinary: 26 },
+};
+const SPANISH_ADDED_TO_FROZEN_ID = /^es-202[1-5]-(?:hl-(?:l-|b-5$|c-|a1a-5$|a1b-4$)|ol-(?:l-|b-))/;
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in SPANISH_ADDED
+  || (Number(id.slice(3, 7)) in SPANISH_ADDED_TO_FROZEN && SPANISH_ADDED_TO_FROZEN_ID.test(id)));
+const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPANISH_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
@@ -2193,6 +2207,11 @@ describe('Mark Bank card preservation', () => {
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
       expect(added.every(card => card.id.startsWith(`es-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(SPANISH_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && SPANISH_ADDED_TO_FROZEN_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
     }
     expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);
