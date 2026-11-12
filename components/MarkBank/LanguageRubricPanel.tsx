@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageCategoryCompensation, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languagePointsAllocation, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageCategoryCompensation, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores, type LanguageScoringContext } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -11,6 +11,8 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
 }) {
   const { rubric } = card;
   const writingRubric: LanguageWritingRubric = { ...rubric, system: 'language-writing', criteria: rubric.criteria ?? [] };
+  const scoringContext = rubric.system === 'language-points'
+    ? { selectedGroupMarks: languagePointsAllocation(rubric, scores, card.answerLanguageRule) } : undefined;
   const conditions = writingRubric.criteria.flatMap(criterion => (criterion.limits ?? []).flatMap(limit => limit.when.any));
   const lengths = [...new Set(conditions.flatMap(condition => 'length' in condition ? [condition.length] : []))];
   const flags = [...new Map(conditions.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])).values()];
@@ -20,13 +22,13 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
   const claimedDetails = rubric.system === 'language-points' ? rubric.groups
     .filter(group => scores[languageGroupId(group.id)] === 1)
     .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
-  const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
+  const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false, context?: LanguageScoringContext) => {
       if (criterion.automaticAward) return <section className="mb-language-criterion" key={criterion.id}>
         <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.automaticAward.marks} marks awarded to all candidates</span></div>
         {criterion.guidance.filter(text => text !== criterion.automaticAward!.sourceText).map((text, index) => <p key={index}>{text}</p>)}
         <p>{criterion.automaticAward.sourceText}</p>
       </section>;
-      const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id]);
+      const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id], context);
       const bandedLimits = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).filter(limit => limit.bands);
       const sourceLimits = limits.filter(limit => limit.bands || limit.scaleLabel || (limit.minMarks ?? 0) > 0);
       const literalScales = sourceLimits.filter(limit => !limit.bands);
@@ -62,7 +64,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         </React.Fragment>)}
         <MarkStrip disabled={disabled} label={criterion.label} marks={permitted} selected={selected} onSelect={mark => onScore(languageScoreId(criterion.id), mark)} />
         {needsRangeReview && cap > 0 && <p>{selected === 0 ? 'Choose a mark within the active range.' : 'Review this placement against the active range.'}</p>}
-        {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores)} marks.</p>}
+        {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores, false, [], context) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores, false, [], context)} marks.</p>}
       </section>;
   };
   const manualExceptions = card.answerLanguageRule?.manualCriterionExceptions;
@@ -88,7 +90,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         onChange={event => onScore(languageFlagId(condition.flag), event.currentTarget.checked ? 1 : 0)} />
       <span>{condition.prompt}</span>
     </label>)}
-    {writingRubric.criteria.map(criterion => renderCriterion(criterion, writingRubric))}
+    {writingRubric.criteria.map(criterion => renderCriterion(criterion, writingRubric, false, scoringContext))}
     {rubric.system === 'language-writing' && otherLanguageControl('response', 'Response')}
     {rubric.system === 'language-points' && <>
       {otherLanguageControl('response', 'All answers')}

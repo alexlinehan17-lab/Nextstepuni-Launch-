@@ -1322,7 +1322,11 @@ export interface FrenchRubric {
 /** Source-defined language grids. Conditions are printed scheme rules, never
  * inferred from the language or carried forward from another examination. */
 export type LanguageLimitCondition =
-  | { criterionIds: string[]; atMost: number; ignoreDeductions?: boolean }
+  | { criterionIds: string[]; atMost: number; ignoreDeductions?: boolean;
+      /** Include the actual capped allocation of selected response groups.
+       * Only whole-task language-points criteria without language penalties
+       * may use this source-defined content threshold. Never entered twice. */
+      includeSelectedGroupMarks?: true }
   | { length: 'words' | 'characters'; below: number }
   | { flag: string; prompt: string };
 
@@ -1742,7 +1746,9 @@ export function tariffReconciles(card: SecCard): boolean {
           && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark === 0
             || (mark >= (limit.minMarks ?? 0) && mark <= limit.maxMarks)))
           && limit.when.any.every(condition => 'criterionIds' in condition
-            ? condition.criterionIds.length > 0 && condition.criterionIds.every(id => ids.has(id) && id !== criterion.id) && Number.isFinite(condition.atMost)
+            ? (condition.includeSelectedGroupMarks === undefined ? condition.criterionIds.length > 0
+                : condition.includeSelectedGroupMarks === true && rubric.system === 'language-points' && !card.answerLanguageRule)
+              && condition.criterionIds.every(id => ids.has(id) && id !== criterion.id) && Number.isFinite(condition.atMost)
             : 'length' in condition ? Number.isInteger(condition.below) && condition.below > 0
               : !!condition.flag && !!condition.prompt.trim())))) return false;
       // Source rules may depend on other criteria, but circular definitions
