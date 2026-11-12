@@ -4857,5 +4857,165 @@
       ]
     },
     "md5": "48e86bfa3af0b5e0086334d741837fbf"
+  },
+  "ja-2011-ol-1-1": {
+    "src": "/exam-figures/japanese/ja-2011-ol-1-1.png",
+    "alt": "On which page in the magazine would you find these sections?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.32
+      ]
+    },
+    "md5": "e2eeae10a54bc8204264045584b4a67b"
+  },
+  "ja-2011-ol-1-3-iii": {
+    "src": "/exam-figures/japanese/ja-2011-ol-1-3-iii.png",
+    "alt": "Circle two bands from the following that will headline the Summer Sonic festival.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.1,
+        0.585,
+        0.97,
+        0.715
+      ]
+    },
+    "md5": "6db8a8d1da2dd3e251392a258f36eeda"
+  },
+  "ja-2011-ol-2a": {
+    "src": "/exam-figures/japanese/ja-2011-ol-2a.png",
+    "alt": "Answer the following questions in English:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.295
+      ]
+    },
+    "md5": "bd83369ca3db3394afa731ee7ac15799"
+  },
+  "ja-2011-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2011-ol-2b.png",
+    "alt": "Write whether the following sentences are True or False. Choose a phrase from the text to support your answer as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.3,
+        0.97,
+        0.95
+      ]
+    },
+    "md5": "db70692871eb8153393631104b4044b0"
+  },
+  "ja-2011-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2011-ol-2c.png",
+    "alt": "Circle the correct reading (a, b, c or d) for the following kanji. Write the meaning of the kanji in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.475
+      ]
+    },
+    "md5": "9fc079a977571daeb8a74a7193620321"
+  },
+  "ja-2011-ol-3a-1": {
+    "src": "/exam-figures/japanese/ja-2011-ol-3a-1.png",
+    "alt": "The following countries have participated in the programme. Match the country as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.44
+      ]
+    },
+    "md5": "b44cd8fc444edf0f1b597f0571614fc8"
+  },
+  "ja-2011-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2011-ol-3b-1.png",
+    "alt": "Circle the correct particle a, b, c or d below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.325
+      ]
+    },
+    "md5": "2398222af719ccc7a093d3a7eb17ec5c"
+  },
+  "ja-2011-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2011-ol-3b-2.png",
+    "alt": "Write the following sentences in the past tense as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.065,
+        0.385,
+        0.97,
+        0.68
+      ]
+    },
+    "md5": "be0a3f75eca88e05e7c610bd1e2de244"
+  },
+  "ja-2011-ol-lc-2-ii": {
+    "src": "/exam-figures/japanese/ja-2011-ol-lc-2-ii.png",
+    "alt": "Complete the phone number for Kabanet.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.065,
+        0.615,
+        0.97,
+        0.715
+      ]
+    },
+    "md5": "bc00f435c8473052f38c70a269625467"
+  },
+  "ja-2011-ol-ld": {
+    "src": "/exam-figures/japanese/ja-2011-ol-ld.png",
+    "alt": "Write True or False in the box provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 5,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.78
+      ]
+    },
+    "md5": "01e91c89b2ddbe947d9e5187ac53426f"
   }
 }
