@@ -75,6 +75,14 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
     (2017, 'ol'),
     (2016, 'hl'),
     (2016, 'ol'),
+    (2015, 'hl'),
+    (2015, 'ol'),
+    (2014, 'hl'),
+    (2014, 'ol'),
+    (2013, 'hl'),
+    (2013, 'ol'),
+    (2012, 'hl'),
+    (2012, 'ol'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -82,15 +90,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl'), (2015, 'hl'), (2014, 'hl'), (2013, 'hl'), (2012, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -119,7 +127,10 @@ DIRECTION_ONLY = re.compile(
     r'^Discussion on any\b|^Any mark from\b|^Marks? awarded\b'
     # 2020 prints the direction on Q.5's own head: "= 12 marks for any four
     # relevant points (12m)".
-    r'|^for any \w+ relevant points\b', re.I)
+    r'|^for any \w+ relevant points\b'
+    # 2012 Higher literature Q3 and Q4: "Any 3 relevant points taken from
+    # lines 9 – 16. (4 +3 + 3 marks)".
+    r'|^Any \d relevant points\b', re.I)
 
 # The section a card is filed under, which SecCardBase types as a single
 # letter. The section TOKEN in a citation carries more than that — "A1a" is
@@ -558,6 +569,18 @@ def _listening(year, level, P, S, cards, refuse):
         lines = [l.replace(TICK, '✓') for l in lines if re.search(r'\w', l)]
         choices = None
         tick = next((i for i, l in enumerate(lines) if re.match(r'^Tick\b', l)), None)
+        if tick is None:
+            # 2014 Ordinary sets "Tick the correct answer:" on the question's
+            # own line ("How many workers …? Tick the correct answer:").
+            tick = next((i for i, l in enumerate(lines)
+                         if re.search(r'\bTick the correct answer[:.]\s*$', l)), None)
+        if tick is None and 3 <= len(lines) <= 6 and lines[0].rstrip().endswith('?'):
+            # … and prints Q4(b)'s three boxes with no instruction at all:
+            # the printed lines under the question are its choices where the
+            # scheme's answer is one of them.
+            said = {re.sub(r'[\W_]+', ' ', t).strip().lower() for t, _m in (ask.points or [])}
+            if any(re.sub(r'[\W_]+', ' ', l).strip().lower() in said for l in lines[1:]):
+                tick = 0
         if tick is not None:
             choices = lines[tick + 1:]
             assert 2 <= len(choices) <= 5, (ref, lines)
@@ -744,7 +767,9 @@ def _direction_rows(ask, language, rule):
         if (lo, hi) != (0, ask.total):
             return None
         steps = list(range(lo, hi + 1))
-    elif ask.terms and len(ask.terms) > 1 and len(set(ask.terms)) == 1:
+    elif ask.terms and len(ask.terms) > 1:
+        # 4 + 4 + 4 places at 0, 4, 8, 12; 2012's 4 + 3 + 3 at 0, 4, 7, 10,
+        # the first point paid 4 as the scheme's order prints it.
         steps = [0]
         for t in ask.terms:
             steps.append(steps[-1] + t)
@@ -933,11 +958,20 @@ def _separate_answers(text, n):
         # of television." / "It is a cultural phenomenon (of the 21st
         # Century). (2+1m)".
         re.split(r'(?<=\.)\s+(?=[A-Z])', text) if text.rstrip().endswith('.') else [],
+        # Last, and only on a line with no comma and no "and": slashes, where
+        # they part exactly as many answers as the tariff prices. 2013 Higher
+        # listening Q3(c) "Share a flat/ do the shopping/ manage money
+        # (1+1+1 marks)"; but "in her shops and online/ internet (2+2)" is
+        # one answer's two words, and its "and" gives that away.
+        [p for p in text.split('/')] if not re.search(r',|\band\b', text) else [],
     )
     for pieces in cuts:
         # A roman cut leaves the comma that closed the answer before it: "(i)
         # It will cost half the price, (ii) no stress/ without stress (1+1m)".
         pieces = [p.strip().rstrip(',').strip() for p in pieces if p and p.strip()]
+        # … and the "and" before the next answer: 2014 Ordinary Q5(c) "(i) she
+        # had a very bad voice and (ii) they also thought she was crazy."
+        pieces = [re.sub(r'\s+(?:and|y)$', '', p) for p in pieces]
         if counted and not INLINE_COUNT.search(pieces[-1] if pieces else ''):
             continue
         if len(pieces) == n:
