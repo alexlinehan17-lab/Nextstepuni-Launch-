@@ -74,7 +74,8 @@ describe('Paper Trail syllabus history', () => {
 // booklets, a Section A sheet and a Sections B and C booklet a sitting (from
 // 2026-11-12), their questions kept apart from June's by
 // logicalQuestionIdentity.
-const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf'];
+const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
+  '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf'];
 const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '2025|LC001ALP200IV-deferred.pdf', '2025|LC001GLP100IV-deferred.pdf', '2025|LC001GLP200IV-deferred.pdf', '2024|LC001ALP100IV-deferred.pdf', '2024|LC001ALP200IV-deferred.pdf', '2024|LC001GLP100IV-deferred.pdf', '2024|LC001GLP200IV-deferred.pdf'];
 const ADMITTED_DEFERRED = new Set([
   'economics|2022|LC034ALP000EV-deferred.pdf',

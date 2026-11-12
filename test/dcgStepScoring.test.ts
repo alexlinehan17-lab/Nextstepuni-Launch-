@@ -86,9 +86,15 @@ describe('DCG step scoring', () => {
       t.cards.push(card);
       totals.set(key, t);
     }
+    // Where the SEC's deferred scheme prices more steps than its own total,
+    // the cards keep every printed step at its printed value and add up to
+    // the steps (dcg_scheme.DEFERRED_MISPRINTS, flagged on the census):
+    // 2023 C-2(b) prints (9) over steps 3 + 6 + 3, and C-5's "Base (16)" over
+    // steps 4 + 9 + 4, under a printed "Total = 60" each.
+    const printedSteps = new Map([['2023 HL deferred C-2', 63], ['2023 HL deferred C-5', 61]]);
     const wrong: string[] = [];
     for (const [key, t] of totals) {
-      if (t.sum !== tariff(t.year, t.section)) wrong.push(`${key}: cards add to ${t.sum}`);
+      if (t.sum !== (printedSteps.get(key) ?? tariff(t.year, t.section))) wrong.push(`${key}: cards add to ${t.sum}`);
       const presentation = t.cards.flatMap((c, i) => rowsOf(c).filter(r => r.verbatim === 'Presentation').map(() => i));
       const want = key.includes(' OL ') ? [0] : [];
       if (JSON.stringify(presentation) !== JSON.stringify(want)) wrong.push(`${key}: Presentation on cards ${presentation}`);

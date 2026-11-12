@@ -2062,7 +2062,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 428, 'ffbd2bddf340df527136cc6136f2daa03eb2e549601639a505360d3522bec307'],
+  higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
   ordinary: [DCG_ORDINARY, 279, '3c74ae028f53f1678bd4ba6792c99a55c47f0e34116f4e99401a73d377d1a18a'],
 } as const;
 const peAdditions = {
@@ -2176,7 +2176,9 @@ describe('Mark Bank card preservation', () => {
     // pieces, C-5(a) in seven named groups); 2010 Ordinary 30 for its 23
     // (B-1 under two heads, C-4(a) under two, C-5 in six named groups).
     // The deferred sittings, Higher only: 2022 32 cards for its 30 asks
-    // (B-3 priced whole, one card for (a) and (b); C-5 in seven named groups).
+    // (B-3 priced whole, one card for (a) and (b); C-5 in seven named groups);
+    // 2023 32 for its 32 (C-1(a) in four earthworks pieces; C-4(a)(i)-(ii)
+    // one unit, C-1(b)(i)-(iii) one unit).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
