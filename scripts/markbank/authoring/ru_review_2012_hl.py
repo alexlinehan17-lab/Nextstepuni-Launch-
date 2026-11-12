@@ -1,4 +1,4 @@
-"""Russian 2012 Higher source authoring; unsupported numeric cases remain open."""
+"""Russian 2012 Higher source authoring; unresolved numeric allocations remain explicit."""
 import hashlib
 import json
 import re
@@ -165,6 +165,18 @@ def base(*args,**kwargs):
 def source_card(r):
     pages=r.get('sourcePages') or ([2,3,4] if r['unit']=='C1' else [6,7,8] if r['unit'] in ('C2','LA2') else r['questionPages'])
     c=base(r['unit'],r['question'],r['publishedTotal'],pages,r['schemePages'],r['item'],r['roman']);c['review']['questionPages']=r['questionPages'];return c
+
+def reading_confidence(source):
+    record=next(task for task in source['tasks'] if task['id']=='ru-2012-hl-c1-2-ii')
+    assert record['publishedTotal']==6 and '2 x 2 = 6' in record['publishedSourceBlock']
+    card=source_card(record)
+    card['kind']='question'
+    card['tariffModel']={'kind':'questionTotal'}
+    card['review']['schemePages']=[6]
+    card['rows']=[{'id':'published-guidance','kind':'point','verbatim':record['publishedSourceBlock'],'marks':None,
+        'contextNote':'Source allocation ambiguity: the original question asks for two details. The scheme makes a reference to the mother’s feelings compulsory, prints “2 x 2 = 6”, and separately gives full and partial detail tariffs. The recorded 6 is the scheme’s printed result, not an agreed scoring maximum. The complete compulsory, full, partial and no-credit guidance is retained for review; this card does not calculate a numerical score. Do not infer a third requested detail or a separately priced compulsory response. The original bilingual paper allows English or Irish.'}]
+    assert 'answerLanguageRule' not in card
+    return card
 
 def reading(source):
     result=[]
@@ -434,10 +446,12 @@ def build():
     cards=reading(source)+summaries(source)+language_and_matching(docs,source)+grammar(docs,source)+writing(docs,source,base)+listening(docs,source)
     source_language_rules(cards,source)
     split_original_page_quotes(cards)
-    assert len(cards)==39 and len({c['id'] for c in cards})==39
-    assert sum(c['totalMarks'] for c in cards)==296
+    assert len(cards)==39 and sum(c['totalMarks'] for c in cards)==296
+    cards.append(reading_confidence(source))
+    assert len(cards)==len({c['id'] for c in cards})==40
+    assert sum(c['totalMarks'] for c in cards)==302
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==13
-    assert not any(c['id']=='ru-2012-hl-c1-2-ii' for c in cards)
+    assert len([c for c in cards if c['id']=='ru-2012-hl-c1-2-ii'])==1
     for doc in docs.values():doc.close()
     return cards
 

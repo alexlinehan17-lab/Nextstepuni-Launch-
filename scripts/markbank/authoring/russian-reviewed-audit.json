@@ -4110,7 +4110,7 @@
     {
       "year": 2012,
       "level": "higher",
-      "reviewedAt": "2026-11-10",
+      "reviewedAt": "2026-11-11",
       "paperPagesInspected": [
         1,
         2,
@@ -4179,18 +4179,18 @@
         24
       ],
       "independentPracticeTasks": 40,
-      "sourceReviewedSupportedTasks": 39,
+      "sourceReviewedSupportedTasks": 40,
       "writtenTasks": 20,
       "listeningTasks": 20,
-      "supportedWrittenTasks": 19,
+      "supportedWrittenTasks": 20,
       "printedWrittenMarks": 220,
       "printedListeningMarks": 80,
       "supportedPracticeMarks": 296,
       "sourceLeafTotal": 302,
-      "newCards": 39,
+      "newCards": 40,
       "correctedCards": 0,
       "previousIdsPreserved": 199,
-      "sourceReview": "partial:39 supported tasks; C1Q2(ii) allocation conflict remains open",
+      "sourceReview": "All 40 independently counted original asks represented; C1Q2(ii) numeric allocation remains held in confidence-only review.",
       "heldTasks": [
         {
           "unit": "C1Q2(ii)",
@@ -4201,7 +4201,10 @@
             6
           ],
           "sourceRate": "2 x 2 = 6",
-          "reason": "Both original question and scheme request two details, but scheme prints2x2=6. No invented third response, silent change, exclusion or full sitting completion."
+          "reason": "Original two-detail instruction and printed 2 x 2 = 6 remain unresolved. The complete source task has null-priced rows, no automatic language rule and no numerical score. Do not infer a third detail or extra compulsory two-mark award. Source availability is complete; numerical allocation and release readiness are not asserted.",
+          "cardId": "ru-2012-hl-c1-2-ii",
+          "holdKind": "numeric-allocation",
+          "sourceCoverage": "Complete original question and all compulsory/full/partial/no-credit guidance published for confidence-only review."
         }
       ],
       "diagnosedReaderIssues": [
@@ -4235,38 +4238,120 @@
           "Confirmed original both-girls prohibition; five is a derived upper ceiling on the integer0–6 grid, not an award or fixed deduction.",
           "Confirmed literal CA1 both/either language without named pair.",
           "Confirmed both summary routes and incomplete discretion cap.",
-          "Confirmed category compensation on physicalp24 and two inner components per bracketed Pauline full answer."
+          "Confirmed category compensation on physicalp24 and two inner components per bracketed Pauline full answer.",
+          "Coordinator independently confirmed original scheme physical p6 and paper p3; approved complete confidence-only task while retaining the numeric conflict and 302-versus-300 source accounting."
         ]
       },
       "validation": {
-        "status": "passed for all 39 supported tasks; C1Q2(ii) allocation remains open",
-        "browserQa": "pending; root integration owns native UI QA",
+        "status": "Source/confidence checkpoint passed; numeric allocation remains held. Root full types/build and actual confidence-label/quiz integration checks remain required.",
+        "sourceCoverageComplete": true,
         "sittingCompletion": false,
+        "sourceSlicesVerified": 381,
+        "mandatoryOriginalSourceCasesPassed": 12,
         "heldNumericTasks": [
           "C1Q2(ii)"
         ],
-        "sourceSlicesVerified": 380,
-        "combinedSourceSlicesVerified": 10992,
-        "mandatoryPythonSourceTestsPassed": 53,
-        "focusedTestsPassed": 143,
-        "requiredTestsPassed": 637,
-        "requiredTestFiles": 41,
+        "numericallyScoredTasks": 39,
+        "confidenceOnlyTasks": 1,
+        "priorFullSourceGate": {
+          "commit": "7612c037c",
+          "cards": 1267,
+          "slices": 11767,
+          "unchangedPriorRecordProof": "passed: all 1,267 prior authored/runtime records and all prior source audit records unchanged"
+        },
+        "runtimeTests": {
+          "cases": 249,
+          "files": 5,
+          "passed": true
+        },
         "russianCoverageTestsPassed": 3,
-        "appTypecheck": "passed",
-        "scopedTestTypecheck": "passed",
         "targetedLint": "passed",
-        "productionBuild": "passed",
-        "productionBuildSeconds": 155.0,
         "deterministicRegenerations": 2,
-        "all1153PriorReviewedCardsUnchanged": true,
-        "all1153PriorAuthoredRecordsUnchanged": true,
-        "otherSubjectsPreserved": true,
-        "decodedNonRussianAtlasPreserved": true,
-        "nonRussianIndexBytesPreserved": true,
-        "sittingOpenTasks": 1,
+        "rootBothLayoutConfidenceLabelsAndQuizExclusion": "pending root integration; older lane UI is intentionally not migrated",
+        "fullAppScopedTypesBuild": "root combined integration owns these gates",
+        "browserQa": "pending coordinator native QA",
+        "previousSupportedCheckpoint": {
+          "status": "passed for all 39 supported tasks; C1Q2(ii) allocation remains open",
+          "browserQa": "pending; root integration owns native UI QA",
+          "sittingCompletion": false,
+          "heldNumericTasks": [
+            "C1Q2(ii)"
+          ],
+          "sourceSlicesVerified": 380,
+          "combinedSourceSlicesVerified": 10992,
+          "mandatoryPythonSourceTestsPassed": 53,
+          "focusedTestsPassed": 143,
+          "requiredTestsPassed": 637,
+          "requiredTestFiles": 41,
+          "russianCoverageTestsPassed": 3,
+          "appTypecheck": "passed",
+          "scopedTestTypecheck": "passed",
+          "targetedLint": "passed",
+          "productionBuild": "passed",
+          "productionBuildSeconds": 155.0,
+          "deterministicRegenerations": 2,
+          "all1153PriorReviewedCardsUnchanged": true,
+          "all1153PriorAuthoredRecordsUnchanged": true,
+          "otherSubjectsPreserved": true,
+          "decodedNonRussianAtlasPreserved": true,
+          "nonRussianIndexBytesPreserved": true,
+          "sittingOpenTasks": 1,
+          "sittingExcludedTasks": 0,
+          "sittingOrphans": 0,
+          "sourceGateCorrection": "Four quotations crossing bilingual page footers were split at independently verified page boundaries. Exact recombination preserves all words; all53 mandatory original-source cases and the unchanged verifier then passed."
+        },
+        "actualRuntimeOverlayLint": {
+          "cards": 1285,
+          "findings": 0,
+          "rulesUnchanged": true
+        },
+        "preservation": {
+          "all1267PriorAuthoredRecordsUnchanged": true,
+          "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+          "all1267PriorRuntimeRecordsUnchanged": true,
+          "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+          "scripts/paper-trail/answers/2012/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 31,
+            "newRows": 1
+          },
+          "public/paper-answers/2012/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 31,
+            "newRows": 1
+          },
+          "public/paper-anchors/2012/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 31,
+            "newRows": 1
+          },
+          "allPriorRussianTopicQuestionRecordsUnchanged": true,
+          "allOtherSittingAuditRecordsUnchanged": true
+        },
+        "sittingOpenTasks": 0,
         "sittingExcludedTasks": 0,
         "sittingOrphans": 0,
-        "sourceGateCorrection": "Four quotations crossing bilingual page footers were split at independently verified page boundaries. Exact recombination preserves all words; all53 mandatory original-source cases and the unchanged verifier then passed."
+        "unpricedResult": {
+          "marksClaimed": 0,
+          "marksAvailable": 0,
+          "bothLayoutsConfidenceGradeSaved": true
+        },
+        "reconciliation": {
+          "commandExitCode": 120,
+          "subjectComplete": false,
+          "covered": 1289,
+          "leaves": 1400,
+          "open": 85,
+          "excluded": 26,
+          "orphans": 0,
+          "unparsed": 0,
+          "historicalStaleExclusionsUnchanged": 254,
+          "censusFlagsUnchanged": 799,
+          "targetSitting": {
+            "asks": 40,
+            "covered": 40,
+            "open": 0,
+            "excluded": 0
+          },
+          "explanation": "Expected nonzero subject-wide result: min(85 open + 254 unchanged historical stale-exclusion records,120)=120. Only target-sitting and preservation assertions pass; the whole Russian backlog remains incomplete."
+        }
       },
       "totalReconciliation": {
         "nominalExamTotal": 300,
@@ -4282,7 +4367,10 @@
           80
         ],
         "reason": "C1Q2(ii) explicitly prints2x2=6 while requiring two details. Preserve every printed boundary; do not assign a replacement4 to that held task."
-      }
+      },
+      "numericallyScoredTasks": 39,
+      "confidenceOnlyTasks": 1,
+      "sourceCoverageComplete": true
     },
     {
       "year": 2011,

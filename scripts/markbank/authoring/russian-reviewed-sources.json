@@ -26888,5 +26888,26 @@
     "guidancePages": [
       16
     ]
+  },
+  {
+    "id": "ru-2012-hl-c1-2-ii",
+    "year": 2012,
+    "level": "higher",
+    "questionRef": "2012 HL Section C1 Q2(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ]
   }
 ]
