@@ -716,6 +716,9 @@ function spanishGridFault(c, scheme) {
 
 /** Mirrors bestClaimedMarks() in types/markBank.ts: the best `count` values, added. */
 const bestOf = (values, count) => [...values].sort((a, b) => b - a).slice(0, count).reduce((n, m) => n + m, 0);
+// Mirrors optionGroupMarks() in types/markBank.ts: fully claimed, a menu priced
+// option by option pays its answers, never an answer's part beside it.
+const answerMarks = (g) => g.optionMarks.filter((_m, i) => g.optionOf?.[i] === null || g.optionOf?.[i] === undefined);
 
 /** The level tokens a deck may carry.
  *
@@ -1273,7 +1276,7 @@ function tariffFault(c) {
   // steps, not claimMax times one value.
   const worth = (r) => (r.kind === 'anyN' && r.group
     ? (r.group.optionMarks
-        ? bestOf(r.group.optionMarks, r.group.claimMax)
+        ? bestOf(answerMarks(r.group), r.group.claimMax)
         : r.group.perOptionSteps
         ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
         : r.group.claimMax * r.group.perOption)
@@ -1343,7 +1346,7 @@ function groupFault(c) {
     // The session prints "Any 2 of these — 7 marks each" from these two numbers,
     // so a group worth more than the question tells the student a false total.
     const groupWorth = g.optionMarks
-      ? bestOf(g.optionMarks, g.claimMax)
+      ? bestOf(answerMarks(g), g.claimMax)
       : g.perOptionSteps
       ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
       : g.claimMax * g.perOption;
@@ -1353,6 +1356,13 @@ function groupFault(c) {
     if (g.optionMarks && (g.optionMarks.length !== g.options.length || g.perOptionSteps
       || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0) || g.perOption !== Math.max(...g.optionMarks))) {
       return `row "${r.id}" prices its options one by one inconsistently`;
+    }
+    // A partial points at the answer it credits (optionOf): an answer of its
+    // own, never itself, and never one priced below it.
+    if (g.optionOf && (!g.optionMarks || g.optionOf.length !== g.options.length
+      || g.optionOf.some((of, i) => of !== null && (!Number.isInteger(of) || of < 0 || of >= g.options.length
+        || of === i || g.optionOf[of] !== null || g.optionMarks[of] < g.optionMarks[i])))) {
+      return `row "${r.id}" ties a partial to its answer inconsistently`;
     }
     if (groupWorth > c.totalMarks) {
       return `row "${r.id}" offers ${groupWorth} marks on a ${c.totalMarks}-mark question`;

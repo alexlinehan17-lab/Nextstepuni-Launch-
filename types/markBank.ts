@@ -225,6 +225,17 @@ export interface MarkRow {
      * partial earns the full answer, once. perOption is the highest price.
      */
     optionMarks?: number[];
+    /**
+     * Which answer each priced option credits in part: the index of that
+     * answer's option, or null for an answer of its own. One entry per option,
+     * beside optionMarks. A menu that pays two answers lists each answer's
+     * partials beside the answers ("White blouse (shirt)" 2, "White" 1,
+     * "blouse (shirt)" 1), and without this a student who ticked a full answer
+     * and its partial was paid both: 3 for an answer worth 2. With it every
+     * answer counts once, at the best of it claimed (optionGroupMarks), as an
+     * Irish point counts once at its best claimed row (irishPartMarks).
+     */
+    optionOf?: (number | null)[];
   };
 }
 
@@ -1698,9 +1709,30 @@ export function bestClaimedMarks(values: readonly number[], count: number): numb
   return [...values].sort((a, b) => b - a).slice(0, Math.max(0, count)).reduce((sum, value) => sum + value, 0);
 }
 
+/**
+ * What a menu priced option by option pays for the options claimed: every
+ * answer once, at the best of it claimed (the answer itself or one of its
+ * partials, optionOf), and the best `claimMax` answers added. "White blouse
+ * (shirt)" with "White" pays 2, not 3. It never pays more than the scheme: two
+ * partials of one answer still pay that answer once, at the better partial.
+ * Without optionOf every option is an answer of its own, and this is
+ * bestClaimedMarks over the claimed prices, as before.
+ */
+export function optionGroupMarks(
+  g: { claimMax: number; optionMarks: readonly number[]; optionOf?: readonly (number | null)[] },
+  picked: readonly number[],
+): number {
+  const best = new Map<number, number>();
+  for (const i of new Set(picked)) {
+    const answer = g.optionOf?.[i] ?? i;
+    best.set(answer, Math.max(best.get(answer) ?? 0, g.optionMarks[i] ?? 0));
+  }
+  return bestClaimedMarks([...best.values()], g.claimMax);
+}
+
 /** What one bounded group is worth when fully claimed. */
-export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[]; optionMarks?: number[] }): number {
-  if (g.optionMarks) return bestClaimedMarks(g.optionMarks, g.claimMax);
+export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[]; optionMarks?: number[]; optionOf?: (number | null)[] }): number {
+  if (g.optionMarks) return optionGroupMarks({ ...g, optionMarks: g.optionMarks }, g.optionMarks.map((_m, i) => i));
   return g.perOptionSteps
     ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
     : g.claimMax * g.perOption;

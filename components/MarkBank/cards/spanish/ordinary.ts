@@ -182,7 +182,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Luisa’s uniform.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["White blouse (shirt)","green jersey","grey skirt","White","blouse (shirt)","green","jersey","grey","skirt"],"optionMarks":[2,2,2,1,1,1,1,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["White blouse (shirt)","green jersey","grey skirt","White","blouse (shirt)","green","jersey","grey","skirt"],"optionMarks":[2,2,2,1,1,1,1,1,1],"optionOf":[null,null,null,0,0,1,1,2,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -540,7 +540,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where was the survey carried out?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["Granada","city"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["Granada","city"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17652,7 +17652,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one place where you can give English classes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies","schools"],"optionMarks":[4,4,4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies","schools"],"optionMarks":[4,4,4,2],"optionOf":[null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22478,7 +22478,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of transport is mentioned?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["Bicycle","aeroplane"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["Bicycle","aeroplane"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

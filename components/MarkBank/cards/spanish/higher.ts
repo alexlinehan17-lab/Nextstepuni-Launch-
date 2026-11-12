@@ -113,7 +113,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did President da Silva think the Olympic Games should take place in South America?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They have never taken place in South America. (It is a question of justice.)","They were held 30 times in Europe"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They have never taken place in South America. (It is a question of justice.)","They were held 30 times in Europe"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -253,7 +253,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two reasons why the teacher thinks that uniforms are not expensive.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “comparison for full marks”.", group: {"claimMax":2,"perOption":2,"options":["school uniforms are cheaper than designer clothes","uniforms can be passed on from one sister to another","they can also be washed many times.","they last a long time"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “comparison for full marks”.", group: {"claimMax":2,"perOption":2,"options":["school uniforms are cheaper than designer clothes","uniforms can be passed on from one sister to another","they can also be washed many times.","they last a long time"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -288,7 +288,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does the teacher think that uniforms are good for discipline?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["(Because) they help the pupils to respect the school rules","Respects the school norms"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["(Because) they help the pupils to respect the school rules","Respects the school norms"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2078,7 +2078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Juan think the electric car is not the car of the future? (Give two details)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “must have comparison”.", group: {"claimMax":2,"perOption":3,"options":["Not as practical ( as combustion engine)","You need ten hours/too long to recharge it.","In an emergency it is not much use.","Because of the lack of new technology, only a few hundred cars are being manufactured in Spain.","A viable battery is difficult to find.","not practical on it’s own"],"optionMarks":[3,3,3,3,3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “must have comparison”.", group: {"claimMax":2,"perOption":3,"options":["Not as practical ( as combustion engine)","You need ten hours/too long to recharge it.","In an emergency it is not much use.","Because of the lack of new technology, only a few hundred cars are being manufactured in Spain.","A viable battery is difficult to find.","not practical on it’s own"],"optionMarks":[3,3,3,3,3,1],"optionOf":[null,null,null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8567,7 +8567,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to the text, what are two uses of the iPad? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late.","alarm"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late.","alarm"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9293,7 +9293,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is addiction to work hard to identify? (Give full details)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity.","it is sometimes hidden"],"optionMarks":[2,2,2,2,2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity.","it is sometimes hidden"],"optionMarks":[2,2,2,2,2,2,2,1],"optionOf":[null,null,null,null,null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10384,7 +10384,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the Teatro Romano? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["tourists show special interest in visiting it","dates from the first century BC","It’s a monument"],"optionMarks":[3,3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["tourists show special interest in visiting it","dates from the first century BC","It’s a monument"],"optionMarks":[3,3,1],"optionOf":[null,null,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13433,7 +13433,7 @@ export const CARDS: SecCard[] = [
     questionText: "What message have Spanish children heard for many years? (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["How important learning English is for life.","Learning languages has always been valuable"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["How important learning English is for life.","Learning languages has always been valuable"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20052,7 +20052,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about 16 and 17 year olds?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["They must book hotel rooms through specialist agencies which specialise in trips for under 18s/ minors","they can’t book a hotel room"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["They must book hotel rooms through specialist agencies which specialise in trips for under 18s/ minors","they can’t book a hotel room"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20641,7 +20641,7 @@ export const CARDS: SecCard[] = [
     questionText: "What stands out most, according to María López? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(In a lot of cases) the obese pets also have obese owners.","(The rate of) obesity in humans is similar to that in pets"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(In a lot of cases) the obese pets also have obese owners.","(The rate of) obesity in humans is similar to that in pets"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22261,7 +22261,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the Erasmus programme? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["(a European programme which) allows students to spend a year studying in another European university","Spain receives 40,000 Erasmus students"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["(a European programme which) allows students to spend a year studying in another European university","Spain receives 40,000 Erasmus students"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22332,7 +22332,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the European Union grant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["It only covers half the cost of accommodation","it helps you"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["It only covers half the cost of accommodation","it helps you"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23319,7 +23319,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Ireland’s attitude?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They can play every game with a winning mentality.","it has served them well"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They can play every game with a winning mentality.","it has served them well"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24475,7 +24475,7 @@ export const CARDS: SecCard[] = [
     questionText: "What has Ana done to show she is worried about climate change? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["She recorded a programme about its effects","watched a programme about its effects"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["She recorded a programme about its effects","watched a programme about its effects"],"optionMarks":[2,1],"optionOf":[null,0]} },
     { id: "r-2", kind: "point", verbatim: "attended the (World) Climate Summit (in Madrid last December)", marks: 2 },
     ],
     sourceMaterial: {
@@ -24833,8 +24833,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is needed to teach English well?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["A recognised qualification","degree"],"optionMarks":[2,2]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["to understand how the language works","to understand the language"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["A recognised qualification","degree"],"optionMarks":[2,2],"optionOf":[null,0]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["to understand how the language works","to understand the language"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24905,7 +24905,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "publish your profile on-line", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["put an advertisement in supermarkets/cafes/universities","locations on their own"],"optionMarks":[2,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["put an advertisement in supermarkets/cafes/universities","locations on their own"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26184,7 +26184,7 @@ export const CARDS: SecCard[] = [
     questionText: "Julia Ferrer makes suggestions for when we go clothes shopping. Explain one in detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4],"optionOf":[null,null,null,0,0,1,2,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27206,7 +27206,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why do people who travel a lot choose to have plants?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the whole test/whole section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["It’s more difficult to look after a pet (than a plant)","It’s difficult to look after a pet","You can look after a plant"],"optionMarks":[4,3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the whole test/whole section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["It’s more difficult to look after a pet (than a plant)","It’s difficult to look after a pet","You can look after a plant"],"optionMarks":[4,3,2],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27872,7 +27872,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do PE teachers want? Give full details. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["(Their) students to include sport in their lifestyle, thereby creating healthy citizens in society","To create a healthy society"],"optionMarks":[4,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["(Their) students to include sport in their lifestyle, thereby creating healthy citizens in society","To create a healthy society"],"optionMarks":[4,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29503,7 +29503,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pedestrianised (street)", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["one of the narrowest in the capital","one of the narrowest","narrow"],"optionMarks":[2,2,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["one of the narrowest in the capital","one of the narrowest","narrow"],"optionMarks":[2,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29573,7 +29573,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about a tradition in Madrid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["(It is a tradition) to visit (the chocolate café) with grandparents at Christmas","to visit with grandparents","to visit (the chocolate café) at Christmas","to visit the (chocolate) café"],"optionMarks":[3,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["(It is a tradition) to visit (the chocolate café) with grandparents at Christmas","to visit with grandparents","to visit (the chocolate café) at Christmas","to visit the (chocolate) café"],"optionMarks":[3,2,2,1],"optionOf":[null,0,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29713,7 +29713,7 @@ export const CARDS: SecCard[] = [
     questionText: "What will the weather be like tomorrow? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Sunnier (day) with clear (skies)","Sun"],"optionMarks":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Sunnier (day) with clear (skies)","Sun"],"optionMarks":[3,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30197,7 +30197,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does she say she achieved her dream? (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["Effort and dedication to her studies","studying hard","studying"],"optionMarks":[4,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["Effort and dedication to her studies","studying hard","studying"],"optionMarks":[4,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30434,7 +30434,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Tiberio’s campaign, Collecting Dust.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":2,"options":["15 volunteers","(they) meet every Saturday in his house","(they) repair (broken) mobiles","donates repaired phones to schools"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":2,"options":["15 volunteers","(they) meet every Saturday in his house","(they) repair (broken) mobiles","donates repaired phones to schools"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30457,7 +30457,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the Greek police find last summer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["A painting by the Spanish artist/ Pablo Picasso","A Picasso","a painting"],"optionMarks":[2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["A painting by the Spanish artist/ Pablo Picasso","A Picasso","a painting"],"optionMarks":[2,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30480,7 +30480,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the police say after the robbery? Give full details .",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["(Several) zones of the museum didn’t have security cameras (installed)","the museum didn’t have security cameras (installed)"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["(Several) zones of the museum didn’t have security cameras (installed)","the museum didn’t have security cameras (installed)"],"optionMarks":[2,1],"optionOf":[null,0]} },
     { id: "r-2", kind: "point", verbatim: "There was a problem with the alarm", marks: 2 },
     ],
     sourceMaterial: {
@@ -30892,7 +30892,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Alcarez say Desigual have been doing for many years? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["listened to the opinions of their employees","(looked for ways to) help them improve their professional lives","(looked for ways to) help them improve their personal lives","to help them","to improve","to improve their working conditions"],"optionMarks":[3,3,3,1,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["listened to the opinions of their employees","(looked for ways to) help them improve their professional lives","(looked for ways to) help them improve their personal lives","to help them","to improve","to improve their working conditions"],"optionMarks":[3,3,3,1,1,1],"optionOf":[null,null,null,1,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32113,7 +32113,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Julio and Meena’s combined age?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["More than 200 years/two centuries","Impressive"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["More than 200 years/two centuries","Impressive"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33840,7 +33840,7 @@ export const CARDS: SecCard[] = [
     questionText: "When exactly did Charo decide to host women in her home?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Shortly before retiring","She got sick"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Shortly before retiring","She got sick"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34365,7 +34365,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does the Director of Tourism think about the ‘break-up’ theory?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Silly","‘couples/people break up because things go badly’"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Silly","‘couples/people break up because things go badly’"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34858,7 +34858,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Leila Cobo say has happened in the last decade? (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Music in Spanish has gone through/had a growth and visibility (without precedent) outside of Central and South America/Latin America","Music in Spanish has become popular outside of Central & South America"],"optionMarks":[4,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Music in Spanish has gone through/had a growth and visibility (without precedent) outside of Central and South America/Latin America","Music in Spanish has become popular outside of Central & South America"],"optionMarks":[4,3],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -36236,7 +36236,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is the colour red an essential element in his films?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “red is/it is his favourite colour =1m if only correct information given”.", group: {"claimMax":1,"perOption":3,"options":["He doesn’t remember the colour (red) in the clothes of his childhood","red is/it is his favourite colour"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “red is/it is his favourite colour =1m if only correct information given”.", group: {"claimMax":1,"perOption":3,"options":["He doesn’t remember the colour (red) in the clothes of his childhood","red is/it is his favourite colour"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -36306,7 +36306,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does he say he is lucky? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["People 40 years younger than him are choosing his films","people watch/choose his movies","younger people/generations are choosing/watching his movies"],"optionMarks":[3,1,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["People 40 years younger than him are choosing his films","people watch/choose his movies","younger people/generations are choosing/watching his movies"],"optionMarks":[3,1,2],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37351,7 +37351,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why should we enjoy these cultural differences in Spain? (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Because they are what make Spain a unique/welcoming country that continues to attract so many people from abroad","It makes Spain unique/welcoming","Spain is unique only"],"optionMarks":[4,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Because they are what make Spain a unique/welcoming country that continues to attract so many people from abroad","It makes Spain unique/welcoming","Spain is unique only"],"optionMarks":[4,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37657,7 +37657,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the difference between playing padel in Spain and in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":3,"options":["In Spain padel is (normally) played outdoors but in Ireland everything is more complicated because of the climate/weather","If only answering: there is a necessity to build more domes"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":3,"options":["In Spain padel is (normally) played outdoors but in Ireland everything is more complicated because of the climate/weather","If only answering: there is a necessity to build more domes"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

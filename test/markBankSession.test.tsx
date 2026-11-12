@@ -24,13 +24,15 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { isRubricCard, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { groupMarks, isRubricCard, optionGroupMarks, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 import { irishPartCount } from '@/components/MarkBank/irishScoring';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '@/components/MarkBank/cards/irish/ordinary';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
 import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
+import { CARDS as SPANISH_HIGHER } from '@/components/MarkBank/cards/spanish/higher';
+import { CARDS as SPANISH_ORDINARY } from '@/components/MarkBank/cards/spanish/ordinary';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({
   // Source-reader interaction is independent of PDF rasterisation. Keep the
@@ -157,6 +159,58 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     });
     expect(marksClaimed(menu, {}, { g: [0, 3] })).toBe(3);
     expect(marksClaimed(menu, {}, { g: [3, 0, 1] })).toBe(4);
+  });
+
+  test('a full answer and its own partial in one menu pay once, at the best of them', () => {
+    // Spanish 2010 OL listening Q2(b) "Two of: White [1m] blouse (shirt) [1m]/
+    // green [1m] jersey[1m]/ grey [1m] skirt[1m] (1+1+1+1 marks)": each garment
+    // answer at 2 and its colour or garment alone at 1. Before optionOf the
+    // menu paid its best two TICKS, so "White blouse (shirt)" with "White" paid
+    // 3 for an answer worth 2. Each answer now counts once.
+    const shipped = SPANISH_ORDINARY.find(c => c.id === 'es-2010-ol-l-2-b') as SecQuestionCard;
+    const group = shipped.rows[0].group!;
+    expect(group.options.slice(0, 4)).toEqual(['White blouse (shirt)', 'green jersey', 'grey skirt', 'White']);
+    expect(group.optionOf).toEqual([null, null, null, 0, 0, 1, 1, 2, 2]);
+    const g = 'r-1';
+    expect(marksClaimed(shipped, {}, { [g]: [0, 3] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 3, 4] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: [3, 4] })).toBe(1);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 1] })).toBe(4);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 5] })).toBe(3);
+    expect(marksClaimed(shipped, {}, { [g]: [3, 5, 7] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: group.options.map((_o, i) => i) })).toBe(4);
+    // The same group read without its links pays the double claim: the defect.
+    expect(optionGroupMarks({ ...group, optionMarks: group.optionMarks!, optionOf: undefined }, [0, 3])).toBe(3);
+    // Three partials of one answer pay that answer once, at the best partial
+    // (2022 HL B Q4(b) "[to help them = 1m; to improve = 1m; to improve their
+    // working conditions =1m]").
+    const desigual = SPANISH_HIGHER.find(c => c.id === 'es-2022-hl-b-4-b') as SecQuestionCard;
+    expect(marksClaimed(desigual, {}, { 'r-1': [3, 4, 5] })).toBe(1);
+    expect(marksClaimed(desigual, {}, { 'r-1': [1, 3] })).toBe(3);
+    expect(marksClaimed(desigual, {}, { 'r-1': [0, 1, 3] })).toBe(6);
+  });
+
+  test('every Spanish menu priced option by option ties each partial to an answer it cannot raise', () => {
+    // Claiming an answer with any of its partials pays the answer alone, and the
+    // whole menu claimed pays what the group is worth, never more.
+    let partials = 0;
+    for (const c of [...SPANISH_HIGHER, ...SPANISH_ORDINARY] as SecQuestionCard[]) {
+      for (const r of c.rows ?? []) {
+        const gr = r.group;
+        if (!gr?.optionMarks) continue;
+        expect(gr.optionOf, `${c.id} links its partials`).toHaveLength(gr.options.length);
+        const marks = gr.optionMarks;
+        gr.optionOf!.forEach((of, i) => {
+          if (of === null) return;
+          partials += 1;
+          expect(gr.optionOf![of], `${c.id} option ${i} credits an answer`).toBeNull();
+          expect(optionGroupMarks({ ...gr, optionMarks: marks }, [of, i]), `${c.id} option ${i} with its answer`).toBe(marks[of]);
+        });
+        expect(optionGroupMarks({ ...gr, optionMarks: marks }, gr.options.map((_o, i) => i))).toBe(groupMarks(gr));
+        expect(groupMarks(gr)).toBeLessThanOrEqual(c.totalMarks);
+      }
+    }
+    expect(partials).toBeGreaterThanOrEqual(59);
   });
 
   test('an unclaimed asterisked row costs only its own marks', () => {

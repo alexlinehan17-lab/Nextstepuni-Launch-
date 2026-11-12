@@ -1066,7 +1066,7 @@ def _bracket_priced_options(ask, terms):
     raw = ' '.join((ask.raw or '').split())
     gap = r'\s*(?:\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\][,;]?\s*)?'
     prices, components = set(), []
-    for option in ask.options:
+    for at, option in enumerate(ask.options):
         words = option.split()
         m = re.search(gap.join(re.escape(w) for w in words)
                       + r'\s*\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]', raw)
@@ -1078,7 +1078,7 @@ def _bracket_priced_options(ask, terms):
         if len(parts) < 2 or not all(t for t, _n in parts):
             return None
         prices.add(sum(n for _t, n in parts))
-        components.extend(parts)
+        components.extend((t, n, at) for t, n in parts)
     if len(prices) != 1 or prices.pop() * ask.quota != sum(terms):
         return None
     return sum(terms) // ask.quota, components
@@ -1102,8 +1102,11 @@ def _menu_component_partials(ask, rows):
             out.append(row)
             continue
         marks = list(g.get('optionMarks') or [g['perOption']] * len(g['options']))
+        parents = list(g.get('optionOf') or [None] * len(g['options']))
         extra = []
-        for option, price in zip(g['options'], marks):
+        for oi, (option, price) in enumerate(zip(g['options'], marks)):
+            if parents[oi] is not None:
+                continue        # a part already, not an answer to slice
             words = option.split()
             gap = r'\s*(?:\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\][,;]?\s*)?'
             m = re.search(gap.join(re.escape(w.rstrip(',;')) + r'[,;]?' for w in words), raw)
@@ -1115,6 +1118,7 @@ def _menu_component_partials(ask, rows):
             # that we don't use [2m]; we should always consider … [1m]" offers
             # "To buy less" at 2 and "To buy less, we all have … use" at 4.
             seg, run = m.group(0), 0
+            slices = []
             for b in PRICE_BRACKET.finditer(seg):
                 if b.end() >= len(seg.rstrip(' .')):
                     break       # a price at the answer's end is its own
@@ -1122,11 +1126,15 @@ def _menu_component_partials(ask, rows):
                 part = ' '.join(PRICE_BRACKET.sub(' ', seg[:b.start()]).split()).strip(' ,;')
                 part = re.sub(r'\s+([,;])', r'\1', part)
                 if part and 0 < run < price and part not in g['options']:
-                    extra.append((part, run))
+                    slices.append((part, run))
+            # Each slice credits the answer it is cut from (optionOf): the
+            # answer counts once, at the longest of it claimed.
+            extra.extend((part, run, oi) for part, run in slices)
         if extra:
             g = dict(g)
-            g['options'] = list(g['options']) + [t for t, _n in extra]
-            g['optionMarks'] = marks + [n for _t, n in extra]
+            g['options'] = list(g['options']) + [t for t, _n, _of in extra]
+            g['optionMarks'] = marks + [n for _t, n, _of in extra]
+            g['optionOf'] = parents + [of for _t, _n, of in extra]
             g['perOption'] = max(g['optionMarks'])
             row = {**row, 'group': g}
         out.append(row)
@@ -1237,8 +1245,24 @@ def _claimable_partials(ask, rows, partials):
             g = dict(row['group'])
             assert not g.get('perOptionSteps'), (ask, 'a partial beside a descending tariff')
             marks = g.get('optionMarks') or [g['perOption']] * len(g['options'])
-            g['options'] = list(g['options']) + [t for t, _m in parsed]
+            parents = list(g.get('optionOf') or [None] * len(g['options']))
+            # The menu's answer the partial credits, read as for rows above:
+            # the answer printed straight before it, or, after the last, the
+            # one it shares words with (2013 Higher Q1(b) "... an alarm to
+            # avoid arriving late." / "[alarm =1]").
+            opts = list(g['options'])
+            at_opt = [raw.find(' '.join(o[:25].split())) for o in opts]
+            before = [i for i, st in enumerate(at_opt) if 0 <= st < at and parents[i] is None]
+            of = before[-1] if before else None
+            last = max((i for i in range(len(opts)) if parents[i] is None), default=None)
+            shared = [len(_words(o) & _words(' '.join(t for t, _m in parsed))) if parents[i] is None else 0
+                      for i, o in enumerate(opts)]
+            if (of is None or of == last) and shared and max(shared) > 0:
+                of = shared.index(max(shared))
+            assert of is not None and all(m <= marks[of] for _t, m in parsed), (ask, parsed, of)
+            g['options'] = opts + [t for t, _m in parsed]
             g['optionMarks'] = list(marks) + [m for _t, m in parsed]
+            g['optionOf'] = parents + [of] * len(parsed)
             g['perOption'] = max(g['optionMarks'])
             row['group'] = g
         else:
@@ -1252,7 +1276,8 @@ def _claimable_partials(ask, rows, partials):
                             'marks': None, **({'contextNote': row['contextNote']} if row.get('contextNote') else {}),
                             'group': {'claimMax': 1, 'perOption': full,
                                       'options': [row['verbatim']] + [t for t, _m in parsed],
-                                      'optionMarks': [full] + [m for _t, m in parsed]}}
+                                      'optionMarks': [full] + [m for _t, m in parsed],
+                                      'optionOf': [None] + [0] * len(parsed)}}
     return rows
 
 
@@ -1304,8 +1329,9 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
             # renderer and the tariff gate both read.
             group['perOptionSteps'] = list(terms)
         if components:
-            group['options'] = options + [t for t, _n in components]
-            group['optionMarks'] = [terms[0]] * len(options) + [n for _t, n in components]
+            group['options'] = options + [t for t, _n, _of in components]
+            group['optionMarks'] = [terms[0]] * len(options) + [n for _t, n, _of in components]
+            group['optionOf'] = [None] * len(options) + [of for _t, _n, of in components]
         contextNote = note
         if len(ask.options) > MAX_OPTIONS:
             contextNote += (f' The scheme lists {len(ask.options) - MAX_OPTIONS} '
