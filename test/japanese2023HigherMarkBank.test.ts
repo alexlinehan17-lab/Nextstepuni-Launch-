@@ -62,8 +62,8 @@ describe('Japanese 2023 Higher independent source review', () => {
     });
     const live = new Set([...higher, ...ordinary].map(card => card.id));
     for (const id of originalIds) expect(live.has(id) || live.has(CARD_ID_ALIASES[id]), id).toBe(true);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1500);
-    expect(live.size).toBe(600 + 1500 - 391);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1556);
+    expect(live.size).toBe(600 + 1556 - 391);
     expect(originalIds.filter(id => id.startsWith('ja-2023-hl-'))).toHaveLength(68);
     expect(cards.filter(card => originalIds.includes(card.id))).toHaveLength(25);
     expect(cards.filter(card => !originalIds.includes(card.id))).toHaveLength(42);
