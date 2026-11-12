@@ -1,0 +1,77 @@
+{
+  "name": "Mark Bank second batch corrected test gates",
+  "permissions": {
+    "contents": "read"
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "codex/markbank-verify-second-batch-tests-20261112"
+      ]
+    }
+  },
+  "concurrency": {
+    "group": "codex/markbank-verify-second-batch-tests-20261112",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "verify-candidate": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 20,
+      "env": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "with": {
+            "fetch-depth": 2
+          }
+        },
+        {
+          "name": "Verify exact candidate and workflow-only change",
+          "id": "integrity",
+          "shell": "bash",
+          "run": "test \"$(git rev-parse HEAD^)\" = 8d5614d017459c2887988edff37d9b57bc851603\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/markbank-second-batch-tests-20261112.yml\ngit show --no-patch --format=fuller HEAD"
+        },
+        {
+          "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "with": {
+            "node-version": 22,
+            "cache": "npm"
+          }
+        },
+        {
+          "name": "Install dependencies",
+          "id": "dependencies",
+          "run": "npm ci"
+        },
+        {
+          "name": "Generate scoped test type configuration",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "python3 - <<'PYCONFIG'\nimport json\nfrom pathlib import Path\np=Path('tmp/continuous-review/nov12-next-batch-test-tsconfig.json')\np.parent.mkdir(parents=True,exist_ok=True)\np.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/curriculumRegistry.test.ts', '../../test/markBankCardPreservation.test.ts', '../../test/markBankDeck.test.ts', '../../test/japanese2011OrdinaryMarkBank.test.ts', '../../test/japanese2026MarkBank.test.ts', '../../test/japanese2026OrdinaryMarkBank.test.ts', '../../test/japaneseSourceAnswers.test.ts', '../../test/japaneseSourceRules.test.ts', '../../test/japaneseSourceBank.test.ts', '../../test/russian2018HigherReviewed.test.tsx', '../../test/russian2018ConfidenceIntegration.test.tsx', '../../test/subjectShowcase.test.ts', '../../test/askThePapers.test.tsx', '../../test/markBankLibraryCoverage.test.ts', '../../test/markBankCoverage.test.ts', '../../vite-env.d.ts', '../../test/setup.ts']},indent=2)+'\\n')\nPYCONFIG"
+        },
+        {
+          "name": "Scoped test types",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=8192 node_modules/typescript/lib/tsc.js --noEmit -p tmp/continuous-review/nov12-next-batch-test-tsconfig.json"
+        },
+        {
+          "name": "Corrected original and confidence tests",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/japanese2011OrdinaryMarkBank.test.ts test/russian2018HigherReviewed.test.tsx test/russian2018ConfidenceIntegration.test.tsx --pool=forks --maxWorkers=1 --no-file-parallelism --reporter=default"
+        },
+        {
+          "name": "Corrected test lint",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node node_modules/eslint/bin/eslint.js test/japanese2011OrdinaryMarkBank.test.ts test/russian2018HigherReviewed.test.tsx test/russian2018ConfidenceIntegration.test.tsx --max-warnings 0"
+        },
+        {
+          "name": "Verify tracked files stayed unchanged",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "git diff --exit-code"
+        }
+      ]
+    }
+  }
+}
