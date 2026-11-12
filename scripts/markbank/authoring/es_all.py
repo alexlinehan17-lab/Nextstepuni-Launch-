@@ -73,6 +73,7 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
     (2018, 'ol'),
     (2017, 'hl'),
     (2017, 'ol'),
+    (2016, 'hl'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -80,15 +81,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).

@@ -171,7 +171,11 @@ EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
            (2024, 'hl', 'A1b', 4): 'A1b4',
            (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2',
            (2021, 'hl', 'A1b', 4): 'A1b4', (2019, 'hl', 'A1b', 4): 'A1b4',
-           (2018, 'hl', 'A1b', 4): 'A1b4', (2017, 'hl', 'A1b', 4): 'A1b4'}
+           (2018, 'hl', 'A1b', 4): 'A1b4', (2017, 'hl', 'A1b', 4): 'A1b4',
+           (2016, 'hl', 'A1b', 4): 'A1b4',
+           # 2016's English map anchors no Section B question; the generator
+           # restores one Section B card from the Irish edition ("B").
+           **{(2016, 'hl', 'B', q): 'B' for q in (1, 2, 3, 4)}}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',
