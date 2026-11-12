@@ -127,6 +127,13 @@ def _task_b5(rows, qheads, lo, hi):
     return {'question': '\n'.join(lines), 'stem': stem, 'pages': pages}
 
 
+# A paper that letters an alternative other than its own head names it: 2010
+# Higher Section C Q2 is headed "2. Answer either (a) DIARY ENTRY or (b) NOTE."
+# and prints the note as "(c) You are in Salamanca …". The census reads it as
+# (b), as the head does.
+PRINTED_LETTERS = {(2010, 'hl', 'C', 2): {'c': 'b'}}
+
+
 def task(P, section, q, letter):
     """{question, stem, pages} for one writing ask, from the paper's rows.
 
@@ -164,7 +171,9 @@ def task(P, section, q, letter):
         if m and not _summary(m.group(4)):
             qq = int(m.group(1) or m.group(2) or 0) or qnum
             qnum = qq
-            tasks.append((qq, m.group(3).lower(), i))
+            tok = m.group(3).lower()
+            tok = PRINTED_LETTERS.get((P.year, P.level, section, qq), {}).get(tok, tok)
+            tasks.append((qq, tok, i))
             continue
         h = QHEAD.match(t)
         if h and not m:
