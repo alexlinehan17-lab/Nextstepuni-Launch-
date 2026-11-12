@@ -4359,6 +4359,8 @@ def census_subject(subject):
         papers.extend(census_history_deferred())
     if subject == 'economics':
         papers.extend(census_economics_deferred())
+    if subject == 'dcg':
+        papers.extend(census_dcg_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4422,6 +4424,41 @@ def census_history_deferred():
         })
     return papers
 
+
+def census_dcg_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    DCG's deferred sittings (dcg_paper.DEFERRED_SITTINGS: 2022 and 2023
+    Higher, each two booklets, Section A and Sections B and C) are papers of
+    their own, keyed 'Deferred' as Engineering keys its own
+    (census_engineering_deferred), so a deferred ask never lands on a June leaf
+    with the same address. They are read by the June reader (dcg_paper.DcgPaper
+    pointed at deferredexams/) and checked against their own scheme
+    (deferredmarkingschemes/) by the June flags (dcg_flags). The cross-year
+    checksum is not run on them.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import dcg_paper as DP                                      # noqa: E402
+    from dcg_scheme import DcgScheme, has_scheme                # noqa: E402
+    papers = []
+    for year, level in DP.DEFERRED_SITTINGS:
+        P = DP.load(year, level, 'dcg', 'deferred')
+        S = DcgScheme(year, level, 'dcg', 'deferred') \
+            if has_scheme(year, level, 'dcg', 'deferred') else None
+        texts = {ask.key: ask.full_text for ask in P.asks()}
+        parts = set(texts)
+        leaves = list(leaves_of(parts))
+        flags = [f for f in continuity_flags(parts, texts, 'dcg')
+                 if not short_ask_ok('dcg', year, level, f)]
+        flags += dcg_flags(P, S)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'dcg'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 # The SEC's deferred Economics sittings in the archive: 2022 Higher only
 # (deferredexams/ and deferredmarkingschemes/ hold LC034ALP000EV for 2022 and no

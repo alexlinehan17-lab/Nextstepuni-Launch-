@@ -492,6 +492,8 @@ interface DesignAndCommunicationGraphicsRuntime {
   partReferences: Array<[number, number, 'm' | 'd', 's' | 'a', string, string]>;
   /** [h/o, e/i, year, B-C/Section-A, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings: [h/o, e/i, year, B-C/Section-A, booklet file id, local card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, string, number[]]>;
 }
 
 interface PhysicsAndChemistryRuntime {
@@ -4035,6 +4037,30 @@ for (const [levelCode, langCode, year, paperKeyCode, n, topicIndexes] of (
       levelCode === 'h' ? 'higher' : 'ordinary',
       year,
       'main',
+      n,
+      dcgPaperKey(paperKeyCode),
+      langCode === 'e' ? 'ev' : 'iv',
+    ),
+    topicIndexes.map(topicIndex => {
+      const topicId = designAndCommunicationGraphicsRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown DCG runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+// A deferred sitting's booklet ("LC562ALP039EV-deferred.pdf") is numbered as
+// June's: its questions join on the booklet, so they never replace or merge
+// with June's question of the same number (Irish and Economics do the same).
+for (const [levelCode, langCode, year, paperKeyCode, fileid, n, topicIndexes] of (
+  designAndCommunicationGraphicsRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      designAndCommunicationGraphicsRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      year,
+      'main',
+      fileid,
       n,
       dcgPaperKey(paperKeyCode),
       langCode === 'e' ? 'ev' : 'iv',

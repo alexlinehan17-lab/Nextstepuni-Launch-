@@ -200,6 +200,13 @@ def _clean_old(rows, slot=OLD_SLOT):
         if not t:
             continue
         if had_leader and slot.match(t):
+            # …unless its label is words the question needs to be read: 2010
+            # Ordinary listening Q5(a) "What is the profession most desired
+            # by:" / "Boys: ……" / "Girls: ……". A label goes on where the line
+            # above it ends on the colon that asks for it.
+            if (re.fullmatch(r'[A-Za-z]+\s*:', t) and out
+                    and out[-1][2].rstrip().endswith(':')):
+                out.append(Row(pno, x, t, getattr(text_row, 'y', None)))
             continue
         if OLD_FURNITURE.match(t):
             continue
@@ -233,7 +240,9 @@ AURAL_PART = re.compile(r'^\(\s*([a-h])\s*\)\s*(.+)$')
 AURAL_WORDS = re.compile(r'[A-Za-z]{3}')
 # The answer lines the booklet prints under a part: "1." "2." "3." on their
 # own, which the baseline reader joins onto the end of the ask.
-ANSWER_LINES = re.compile(r'(?:\s*\d{1,2}\s*\.)+\s*$')
+# Never the tail of a longer figure: 2011 Ordinary listening Q7(d) offers
+# "1985." as a tick-box choice, and its "85." is no answer line.
+ANSWER_LINES = re.compile(r'(?:\s*(?<!\d)\d{1,2}\s*\.)+\s*$')
 
 # The loose sheet: the title the SEC prints above the Section B article, which
 # is the same string the marking scheme prints above its Section B answers and
@@ -301,6 +310,13 @@ def _dedup_words(page):
         cur = None
         for x0, x1, ch, y0, y1 in sorted(row['c']):
             if not ch.strip():
+                # A space breaks the word only where it stands clear of it: the
+                # 2011 Ordinary paper also paints runs of spaces on a second
+                # baseline OVER its bold instruction, and they cut "1. Lee" into
+                # "1 . L e e" (p2). A glyph that follows within a point of the
+                # word's end is still the word's.
+                if cur is not None and x0 < cur[2] - 0.5:
+                    continue
                 cur = None
                 continue
             if cur is not None and x0 - cur[2] <= 1.0:
@@ -1026,6 +1042,13 @@ class EsPaper:
             # follows it); a card's question text must not carry it.
             if lines_only and re.match(r'^END OF LISTENING', text, re.I):
                 break
+            if (self.old and cur is not None and re.fullmatch(r'\d{1,4}\.?', text.strip())
+                    and any(re.match(r'^Tick\b', l) for l in cur[2])):
+                # A tick-box ask's choices can be bare figures, read otherwise
+                # as page numbers: 2010 Ordinary listening Q4(c) "Tick the
+                # correct answer:" / "120" / "1200" / "12.".
+                cur[2].append(text.strip())
+                continue
             if FURNITURE.match(text):
                 continue
             m = AURAL_Q.match(text) or (self.old and OLD_AURAL_Q.match(text))
@@ -1048,15 +1071,26 @@ class EsPaper:
 
         Read for the census: every printed part of the booklet is an ask.
         """
-        return [(qq, letter, ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
+        return [(qq, letter, ' '.join(' '.join(lines).split()) if _figure_choice(lines, len(lines) - 1)
+                 else ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
                 for qq, letter, lines, page in self._aural_parts()]
 
     def aural_ask_lines(self):
         """[(q, letter, [printed lines], page)]: each listening ask as the
         booklet sets it out, line by line, for the card. A tick-box ask prints
         its options one to a line under "Tick (✓) the correct answer:"."""
-        return [(qq, letter, [ANSWER_LINES.sub('', ' '.join(l.split())).strip() for l in lines], page)
+        return [(qq, letter, [' '.join(l.split()) if _figure_choice(lines, n)
+                              else ANSWER_LINES.sub('', ' '.join(l.split())).strip()
+                              for n, l in enumerate(lines)], page)
                 for qq, letter, lines, page in self._aural_parts(lines_only=True)]
+
+def _figure_choice(lines, n):
+    """Is line n a tick-box choice that is a bare figure? Never answer-line
+    numbering: 2010 Ordinary listening Q4(c) offers "120" / "1200" / "12.",
+    and "12." read as numbering left two choices of three."""
+    return (0 <= n < len(lines) and re.fullmatch(r'\d{1,4}\.?', ' '.join(lines[n].split()))
+            and any(re.match(r'^Tick\b', l) for l in lines[:n]))
+
 
 def main():
     ap = argparse.ArgumentParser()
