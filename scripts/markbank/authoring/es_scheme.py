@@ -359,8 +359,10 @@ LAYOUTS = {
 
 # 2016 Ordinary sets its bullets in a symbol font the text layer reads as the
 # letter "x": "(f) Three of:" / "x English" / "x started painting in England" /
-# …. Read as the dash it is drawn as.
-X_BULLETS = {(2016, 'ol')}
+# …. Read as the dash it is drawn as. 2010 Ordinary does the same with the
+# bullets of its Section B ladders ("x Full message unequivocally conveyed: 8
+# marks", rendered and read: a round bullet, p8).
+X_BULLETS = {(2016, 'ol'), (2010, 'ol')}
 # The same scheme's tick: its text layer reads "¥" (U+00A5 in TimesNewRomanPSMT)
 # where the page draws "√" ("√ 91 6895360", rendered and read, p4), the sign
 # 2018 Ordinary prints as text.
