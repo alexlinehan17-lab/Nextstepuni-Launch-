@@ -1623,13 +1623,16 @@ def strip_furniture(card):
     # The examiner's empty total box after the Eolas and Gaeilge boxes ("Gaeilge (5) = C 2 A (a) (30) =", "… = C3B (30) =",
     # "… = 2 A (b) 30 ="), 2022's and 2023's: the boxes are the examiner's form, not marking.
     box = re.compile(r'(Gaeilge \(5\) =)\s*(?:C ?)?\d ?[ABF]?(?: ?[ABF])? ?(?:\([a-f]\) ?)?\(?\d+\)? ?=?(?=\s|$)')
+    # The margin label's letter, stored apart from its words ("… = 1 mharc B Dhá shampla …", 2022 Ordinary 3B(a)).
+    margin = re.compile(r'(?<=\d mharc) [AB](?= [A-ZÁÉÍÓÚ][a-záéíóú])')
     count = 0
     for c in card['criteria']:
         lines = []
         for line in c['guidance']:
             new, n = pattern.subn(' ', line)
             new, m = box.subn(r'\1', new)
-            count += n + m
+            new, k = margin.subn('', new)
+            count += n + m + k
             lines.append(clean(new))
         c['guidance'] = [line for line in lines if line]
     return count
