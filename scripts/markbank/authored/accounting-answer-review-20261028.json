@@ -1,0 +1,2075 @@
+{
+  "reviewedAt": "2026-10-28",
+  "reviewer": "Codex visual review of all 96 cited PDF pages; no human sign-off claimed",
+  "scope": "The 98 tasks without structured Accounting answer rows on main b0fe24d8b93b19e08a601b3572cb5cbd6d2b9828. Original source solutions remain available for every task. This is not a new completeness audit.",
+  "tasks": [
+    {
+      "id": "acc-2010-hl-q5(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC032ALP000EV.pdf",
+        "sha256": "e466b34661c2ede96101139379be3de5ae6a24687337bfda84a553d95751a602",
+        "pages": [
+          13,
+          14
+        ]
+      },
+      "observation": "The full Question 5(b) heading was missed. Six explicit priced sections sum to 40.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Dividend Policy The dividend cover is 1.33 times. Last year’s dividend cover was 1.4 times. This is a worsening trend. The DPS last year was 15c while this year it is 11.25c. Based on this year’s profit of €65,000, the dividends proposed of €50,000 are excessive. More of the profits should be retained for the repayment of debentures. The % of profits given out is 75%. In 2008, the % given out was 71%.",
+          "marks": 7,
+          "page": 14
+        },
+        {
+          "id": "r2",
+          "text": "Security - Real Value of the Assets The debentures are secured on the fixed assets. The debenture holders would be interested in the size of the assets to make sure that there is enough security for the loan. There are fixed assets of €820,000 of which, intangible assets are €180,000 leaving net assets excluding intangibles of €640,000. It would be prudent to ascertain the real value of fixed assets as there are no write-offs like depreciation. However, the debenture holders would feel secure because of the excess in value of fixed assets over the loan of €300,000. There are investments of €95,000 but the debenture holders would be disappointed at the fact that the investments have dropped from their value of €120,000.",
+          "marks": 7,
+          "page": 14
+        },
+        {
+          "id": "r3",
+          "text": "Profitability The return on capital employed for 2009 is 11.80%. Last year the return was 13%. It has disimproved by 1.20% and this fall indicates an unhealthy trend. If this downward trend continues, there is a risk of having to sell the fixed assets in order to repay debentures. The company is in a profitable position as the return of 11.80% is better than the return from risk free investments of less than 5% and is above the debenture interest rate of 8%. The company is making less efficient use of resources this year.",
+          "marks": 7,
+          "page": 14
+        },
+        {
+          "id": "r4",
+          "text": "Liquidity The company has a very serious liquidity problem. Last year the quick ratio was 1:1 but this year the quick ratio has fallen to 0.36:1. The company now has only 36c available to pay every €1 owed in the short term. The worsening of the ratio indicates a difficulty in paying debts including future interest. If this trend continues, the ability to pay interest would come under pressure and funds would not be available to invest for the purpose of repaying the loan.",
+          "marks": 7,
+          "page": 14
+        },
+        {
+          "id": "r5",
+          "text": "Gearing The company is lowly geared. In 2009, the gearing was at 43.48%. The gearing has worsened from 37% of total capital in 2008. Interest cover was 4.7 times but is now down to 3.2 times. This worsening trend could make interest payments more difficult.",
+          "marks": 7,
+          "page": 14
+        },
+        {
+          "id": "r6",
+          "text": "Sector The overall worsening state of the economy is having a very negative effect on the dairy industry and there are also risks of over production and low cost competition. The long term prospects are not encouraging in the dairy industry due to outside influences.",
+          "marks": 5,
+          "page": 14
+        }
+      ]
+    },
+    {
+      "id": "acc-2010-hl-q5(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC032ALP000EV.pdf",
+        "sha256": "e466b34661c2ede96101139379be3de5ae6a24687337bfda84a553d95751a602",
+        "pages": [
+          13,
+          14,
+          15
+        ]
+      },
+      "observation": "The recommendation and four priced supporting sections sum to 15; further unpriced examples remain available in the original scheme.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "I would advise my friend not to buy shares in Hebe plc for the following reasons:",
+          "marks": 3,
+          "page": 15
+        },
+        {
+          "id": "r2",
+          "text": "Share Price The share value has fallen from €1.80 to €1.50 [30c] since 2009 and is likely to continue in its downward movement based on current year performance. There is a lack of stock market confidence and may discourage investment.",
+          "marks": 4,
+          "page": 15
+        },
+        {
+          "id": "r3",
+          "text": "Dividends Dividend per share is 11.25c. The dividend per share has dropped from 15c The dividend yield has dropped from 8.3% to 7.5%. Whilst the rate is good the trend is not.",
+          "marks": 4,
+          "page": 15
+        },
+        {
+          "id": "r4",
+          "text": "Reserves The dividend cover is low and dropping. The firm is not retaining enough profits to build up reserves. The company’s dividend cover has dropped from 1.4 times to 1.33 times.",
+          "marks": 2,
+          "page": 15
+        },
+        {
+          "id": "r5",
+          "text": "Sector Dairy industry is not performing well and future is unsure.",
+          "marks": 2,
+          "page": 15
+        }
+      ]
+    },
+    {
+      "id": "acc-2010-hl-q7(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC032ALP000EV.pdf",
+        "sha256": "e466b34661c2ede96101139379be3de5ae6a24687337bfda84a553d95751a602",
+        "pages": [
+          19,
+          20
+        ]
+      },
+      "observation": "The balance sheet has priced figures across cost, depreciation and net-value columns. Reconcile the two-mark discrepancy at statement level before assigning row controls.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-hl-q8(f)(ii)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032ALP000EV.pdf",
+        "sha256": "88946d77c1714e98a54b87937b96a28fe2889f76c2b2b2cb2c78127da1b44902",
+        "pages": [
+          19
+        ]
+      },
+      "observation": "The five-mark answer is a step-fixed-cost graph. Keep the original diagram; a text-only row would not capture the drawn response. Needs a dedicated reviewed graph crop/control.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q1(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "observation": "The balance sheet prices cells in a cost/depreciation/net-value grid. Bind each mark to its asset and column before lifting.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q3(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          7
+        ]
+      },
+      "observation": "Four unlettered ledger headings carry totals 15, 20, 15 and 10. Bind date, debit/credit side and account labels, excluding heading totals from row sums.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q3(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          7
+        ]
+      },
+      "observation": "Four unlettered ledger headings carry totals 15, 20, 15 and 10. Bind date, debit/credit side and account labels, excluding heading totals from row sums.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q3(c)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          7
+        ]
+      },
+      "observation": "Four unlettered ledger headings carry totals 15, 20, 15 and 10. Bind date, debit/credit side and account labels, excluding heading totals from row sums.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q3(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          7
+        ]
+      },
+      "observation": "Four unlettered ledger headings carry totals 15, 20, 15 and 10. Bind date, debit/credit side and account labels, excluding heading totals from row sums.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2011-ol-q8(a)(ii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Machine Hour rate: Budget factory overheads / Budgeted Machinery hours = 108000 / 9000hrs = €12 per machine hour",
+          "marks": 15,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2011-ol-q8(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Total Cost of Job No 482 — Machine Hour Rate. Direct Materials 19,000; Direct Labour (240 x 8.50) 2,040; Factory overheads (175 x €12) 2,100; €23,140",
+          "marks": 16,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2011-ol-q8(d)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Selling Price of Job No 482 — Labour Rate. Cost 22,768; Mark – up 25% 5,692; €28,460",
+          "marks": 10,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2011-ol-q8(e)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC032GLP000EV.pdf",
+        "sha256": "6cc1e4f7659e1f54e4087080282effcd26a5bd43aadf37573db8f594ff27dc64",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "A business needs to be able to calculate the cost price of a product so that they can determine a suitable selling price in order to make a profit. They also can see if it is worthwhile producing.",
+          "marks": 8,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2012-hl-q9(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC032ALP000EV.pdf",
+        "sha256": "a7796475e0fcf3f5dde412581166cca04c31c629e947e3dc3436a34138af7863",
+        "pages": [
+          22
+        ]
+      },
+      "observation": "The cash budget includes six half-mark wage cells. Integer-only parsing loses three marks. Needs month-aware half-mark extraction.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2012-hl-q9(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC032ALP000EV.pdf",
+        "sha256": "a7796475e0fcf3f5dde412581166cca04c31c629e947e3dc3436a34138af7863",
+        "pages": [
+          22
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Last year sales from other stores Market research/ opinion of sales manager and sales representatives Trends/ State of Economy Price to be charged/Sales price Competition Luxuries versus necessities",
+          "marks": 5,
+          "page": 22,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2013-hl-q2(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC032ALP000EV.pdf",
+        "sha256": "a3fc188d93315325481bf4da936a6bfa9f467a831d75163c74651c161de0e2bd",
+        "pages": [
+          6
+        ]
+      },
+      "observation": "The provision-for-depreciation ledger uses repeated dates and two account sides. Each price needs its date and debit/credit label.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2013-hl-q9(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC032ALP000EV.pdf",
+        "sha256": "a3fc188d93315325481bf4da936a6bfa9f467a831d75163c74651c161de0e2bd",
+        "pages": [
+          21
+        ]
+      },
+      "observation": "The raw-materials budget uses half-mark cells across months. Preserve both the budget row and month for every priced figure.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2013-ol-q2(b)(i)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC032GLP000EV.pdf",
+        "sha256": "2c41818f4ff2b45bc3410e4c4414a4d6aa3b9bd3d614d3cc206dfb84a26c57fe",
+        "pages": [
+          6
+        ]
+      },
+      "observation": "The enterprise account has a 20-mark priced income/expenditure table. Recover its row labels before replacing the source-table stepper.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2013-ol-q8(f)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC032GLP000EV.pdf",
+        "sha256": "2c41818f4ff2b45bc3410e4c4414a4d6aa3b9bd3d614d3cc206dfb84a26c57fe",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Cost Price 3,352.80; Add mark – up 25% 838.20; Selling Price 4,191.00",
+          "marks": 6,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2014-hl-q3(b)(ii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC032ALP000EV.pdf",
+        "sha256": "c73094b35449abb3a8be7c5429d0b415624c7da853ac00b3aa84728597136f5c",
+        "pages": [
+          9
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Exceptional Item: This is a material item of significant size. It is a profit or loss that must be shown separately in the profit and loss account because of size. Example: Profit or loss on sale of fixed asset or large bad debt.",
+          "marks": 6,
+          "page": 9,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2014-hl-q8(a)(i)-margin-of-safety",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC032ALP000EV.pdf",
+        "sha256": "c73094b35449abb3a8be7c5429d0b415624c7da853ac00b3aa84728597136f5c",
+        "pages": [
+          18
+        ]
+      },
+      "observation": "Three separate two-mark annotations price the formula, substitution and result.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Margin of safety: Sales – Break even point",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r2",
+          "text": "16,000 – 8,843",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r3",
+          "text": "7,157 units",
+          "marks": 2,
+          "page": 18
+        }
+      ]
+    },
+    {
+      "id": "acc-2014-hl-q8(b)(ii)-differences",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC032ALP000EV.pdf",
+        "sha256": "c73094b35449abb3a8be7c5429d0b415624c7da853ac00b3aa84728597136f5c",
+        "pages": [
+          19
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "There is a difference in the profit figures because closing stock is valued differently. Closing stock under marginal costing is valued lower than under absorption costing. When costing a product, marginal costing does not include fixed costs whereas in absorption costing the fixed costs are included. Therefore a share of fixed costs is included in the value of stock under absorption costing and not included under marginal costing. Under absorption costing, closing stock is valued at a 1/10 of the production cost of €19,000 Under marginal costing, closing stock is valued at a 1/10 of the variable cost of €15,000 Closing Stock – Absorption Costing 1,900 Closing Stock – Marginal Costing (1,500) Difference 400 The profit difference is 18,900 – 18,500 = 400",
+          "marks": 6,
+          "page": 19,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2014-hl-q8(b)(ii)-financial-reporting",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC032ALP000EV.pdf",
+        "sha256": "c73094b35449abb3a8be7c5429d0b415624c7da853ac00b3aa84728597136f5c",
+        "pages": [
+          19
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Absorption costing should be used as it agrees with standard accounting practice and concepts and also matches costs with revenues.",
+          "marks": 3,
+          "page": 19,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2014-hl-q9(e)(i)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC032ALP000EV.pdf",
+        "sha256": "c73094b35449abb3a8be7c5429d0b415624c7da853ac00b3aa84728597136f5c",
+        "pages": [
+          21
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "A Cash Budget is a plan or forecast that summarises the expected inflows and outflows of cash during a period. This budget is prepared by the management accountant or the financial accountant. A cash budget will anticipate periods when the organization will have cash surpluses and will enable it to arrange short term investments. A cash budget will anticipate periods when the organization will have cash deficits and will enable it to make arrangements for a loan or overdraft. A cash budget will help in making sure that there is always enough funds available to meet the day to day needs of the business.",
+          "marks": 6,
+          "page": 21,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2015-hl-q2(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032ALP000EV.pdf",
+        "sha256": "dcbcd9be3fb823933ee4e3115015e03bf713072cc2bad312dbc42c8a0e7b029e",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "observation": "The depreciation ledger spans accounting periods and uses marks beside dates and balances. Bind each to the correct year and ledger side; workings on the following page are context.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2015-hl-q5(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032ALP000EV.pdf",
+        "sha256": "dcbcd9be3fb823933ee4e3115015e03bf713072cc2bad312dbc42c8a0e7b029e",
+        "pages": [
+          12,
+          13,
+          14
+        ]
+      },
+      "observation": "The investment report prices format 3, market value 8, dividends 8, profitability 6, liquidity 6, gearing 6 and sector 3. Preserve the sector/investment-policy alternative and unpriced recommendation across the page break.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2015-ol-q1(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032GLP000EV.pdf",
+        "sha256": "63beddacd17fd2871db95119e1337d2b23ee2e5f65c0f49dffaca252e298e815",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "observation": "The 40-mark balance-sheet total is being counted alongside its priced cells. Requires explicit cost/depreciation/net-value row mapping.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2015-ol-q8(a)-packing-fixed",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032GLP000EV.pdf",
+        "sha256": "63beddacd17fd2871db95119e1337d2b23ee2e5f65c0f49dffaca252e298e815",
+        "pages": [
+          13
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Packing Dept: Fixed 7,000 / 2,000 = €3.50 per hour",
+          "marks": 10,
+          "page": 13,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2015-ol-q8(a)-packing-variable",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032GLP000EV.pdf",
+        "sha256": "63beddacd17fd2871db95119e1337d2b23ee2e5f65c0f49dffaca252e298e815",
+        "pages": [
+          13
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Packing Dept: Variable 9,000 / 2,000 = €4.50 per hour",
+          "marks": 10,
+          "page": 13,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2015-ol-q8(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC032GLP000EV.pdf",
+        "sha256": "63beddacd17fd2871db95119e1337d2b23ee2e5f65c0f49dffaca252e298e815",
+        "pages": [
+          13
+        ]
+      },
+      "observation": "Job 671 has separately priced materials, labour and two departments of fixed/variable overheads. Exclude the 24-mark heading and carry department labels into every row.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2016-ol-q6(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2016/LC032GLP000EV.pdf",
+        "sha256": "4c58907dbef0d6e1bddd85cbb1c826dd71fa1b334e6a34fe1a8670983468e736",
+        "pages": [
+          10
+        ]
+      },
+      "observation": "The cash-flow statement has a 65-mark allocation including named heading marks. Preserve section labels and bind each amount to its activity.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2017-ol-q8(d)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC032GLP000EV.pdf",
+        "sha256": "b889d3c056fc38cce9b3ce76a83e4f24773ff2ef3316ce57ed3d461d22fdd473",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The cost, mark-up and selling price are separately priced 4 + 4 + 2; the heading total is not another row.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Cost 24,134",
+          "marks": 4,
+          "page": 14
+        },
+        {
+          "id": "r2",
+          "text": "Mark up 20% 4,827",
+          "marks": 4,
+          "page": 14
+        },
+        {
+          "id": "r3",
+          "text": "Selling price 28,961",
+          "marks": 2,
+          "page": 14
+        }
+      ]
+    },
+    {
+      "id": "acc-2017-ol-q8(e)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC032GLP000EV.pdf",
+        "sha256": "b889d3c056fc38cce9b3ce76a83e4f24773ff2ef3316ce57ed3d461d22fdd473",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "A business needs to be able to calculate the cost price of a product so that they can determine a suitable selling price in order to make a profit. They also can see if it is worthwhile producing.",
+          "marks": 8,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2019-hl-q7(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC032ALP000EV.pdf",
+        "sha256": "16d788b7351d92dee57d4367b5d7ee3284e56c5c9b9da09a5d7110f27b8de3fd",
+        "pages": [
+          18,
+          19,
+          20
+        ]
+      },
+      "observation": "The whole 12-mark response explains non-cash items and investing/financing movements, with alternatives. No per-example split is published; preserve all examples together in a reviewed block.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2019-ol-q8(a)-production-fixed",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC032GLP000EV.pdf",
+        "sha256": "c667cd4a1fe025e9b9cbe7c38c459f2750f134be3857489c3d4bcd6a3ddd0c1d",
+        "pages": [
+          16
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Production Dept: Fixed 40,000 / 8,000 = €5 per hour",
+          "marks": 10,
+          "page": 16,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2019-ol-q8(a)-production-variable",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC032GLP000EV.pdf",
+        "sha256": "c667cd4a1fe025e9b9cbe7c38c459f2750f134be3857489c3d4bcd6a3ddd0c1d",
+        "pages": [
+          16
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Production Dept: Variable 16,000 / 8,000 = €2 per hour",
+          "marks": 10,
+          "page": 16,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2019-ol-q8(a)-servicing-fixed",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC032GLP000EV.pdf",
+        "sha256": "c667cd4a1fe025e9b9cbe7c38c459f2750f134be3857489c3d4bcd6a3ddd0c1d",
+        "pages": [
+          16
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Servicing Dept: Fixed 6,000 / 4,000 = €1.50 per hour",
+          "marks": 10,
+          "page": 16,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2019-ol-q8(a)-servicing-variable",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC032GLP000EV.pdf",
+        "sha256": "c667cd4a1fe025e9b9cbe7c38c459f2750f134be3857489c3d4bcd6a3ddd0c1d",
+        "pages": [
+          16
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Servicing Dept: Variable 10,000 / 4,000 = €2.50 per hour",
+          "marks": 10,
+          "page": 16,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2020-hl-q2(a)-profit-loss",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          6
+        ]
+      },
+      "observation": "The published profit-and-loss statement has a 35-mark allocation and an account-order penalty footnote. Needs named priced rows and the penalty retained as guidance.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2020-hl-q5(a)(i)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          15
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "The Opening Stock if the Rate of Stock Turnover is 8 based on Average Stock. Cost of sales / Average stock = 8 times. Average stock × 8 = 536,000. Average stock = 536,000 / 8 = 67,000. Average stock = (? + 75,000) / 2 = 67,000. Opening stock = €59,000",
+          "marks": 12,
+          "page": 15,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2020-hl-q7(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          22
+        ]
+      },
+      "observation": "The shop profit-and-loss account has eight one-mark figures and a two-mark net profit. Map each figure to its row; exclude the section total.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2020-hl-q8(a)(iii)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      "observation": "The target-profit equation offers alternative solution routes with the same 14 marks. Preserve one complete route and the alternative guidance; do not sum both.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2020-hl-q8(a)(iv)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      "observation": "Part (iv) follows an alternative route for part (iii); its own four priced lines must not be suppressed by the alternative-route filter.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Sales (31,200 × €38) 1,185,600",
+          "marks": 6,
+          "page": 27
+        },
+        {
+          "id": "r2",
+          "text": "Less variable costs (31,200 × €28.66) (894,192). Variable costs PU = €8.50 + €14.00 + €3.50 + €2.66 = €28.66",
+          "marks": 4,
+          "page": 27
+        },
+        {
+          "id": "r3",
+          "text": "Less fixed costs 216,000 + 8,640 (224,640)",
+          "marks": 2,
+          "page": 27
+        },
+        {
+          "id": "r4",
+          "text": "Profit 66,768",
+          "marks": 2,
+          "page": 27
+        }
+      ]
+    },
+    {
+      "id": "acc-2020-hl-q9(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+        "sha256": "abc1e2369a5f6c6bd0db9a7c439a4ee3bcc31105c8503b3f9c3add673b6b8f6b",
+        "pages": [
+          30
+        ]
+      },
+      "observation": "The material-purchases budget includes half marks. Each amount needs its month and material row, not an integer-only bracket match.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2020-ol-q5(b)(i)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032GLP000EV.pdf",
+        "sha256": "21ed2602ffcd7fd65c3e788da9099b8cdb6e22f77c65a25f8e66db327ad71d54",
+        "pages": [
+          9
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Debentures are long term loans. They will be repaid in full during the years 2024/2025. They carry a fixed annual rate of interest of 6%. Logan has a debenture of €200,000.",
+          "marks": 10,
+          "page": 9,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2020-ol-q7(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC032GLP000EV.pdf",
+        "sha256": "21ed2602ffcd7fd65c3e788da9099b8cdb6e22f77c65a25f8e66db327ad71d54",
+        "pages": [
+          13,
+          14,
+          15
+        ]
+      },
+      "observation": "The balance sheet has a 40-mark total across cost, depreciation, net book value, current assets and financing. Requires explicit cell-to-label mapping.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2021-hl-q4(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          13
+        ]
+      },
+      "observation": "The schedule has eight priced lines totalling 30; the adjacent control account and section totals are separate.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Schedule of Debtors Accounts Balances 37,135",
+          "marks": 3,
+          "page": 13
+        },
+        {
+          "id": "r2",
+          "text": "Add Discount 132",
+          "marks": 4,
+          "page": 13
+        },
+        {
+          "id": "r3",
+          "text": "Add Interest 144",
+          "marks": 5,
+          "page": 13
+        },
+        {
+          "id": "r4",
+          "text": "Add Credit sales 3,390",
+          "marks": 5,
+          "page": 13
+        },
+        {
+          "id": "r5",
+          "text": "Add Bad debt recovered 55",
+          "marks": 4,
+          "page": 13
+        },
+        {
+          "id": "r6",
+          "text": "Add Sales 2,590",
+          "marks": 4,
+          "page": 13
+        },
+        {
+          "id": "r7",
+          "text": "Deduct Reduction in restocking charge 27",
+          "marks": 4,
+          "page": 13
+        },
+        {
+          "id": "r8",
+          "text": "Balance as per adjusted control a/c 43,419",
+          "marks": 1,
+          "page": 13
+        }
+      ]
+    },
+    {
+      "id": "acc-2021-hl-q4(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          13
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Explain the importance of control accounts. 1 They act as a check on the accuracy of the ledgers by comparing the balance of the control account with the total as per the schedule. 2 They help to locate errors quickly by narrowing the search to confined areas. 3 They allow the total amount owed by debtors/total amount owed to creditors to be ascertained quickly by simply balancing the control accounts. 4 They are useful when a firm wishes to find credit sales/credit purchases when having to do final accounts from incomplete records.",
+          "marks": 8,
+          "page": 13,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2021-hl-q6(a)-balance-sheet",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          18,
+          19,
+          20
+        ]
+      },
+      "observation": "The published balance sheet includes a shared one-mark annotation with arrows for classification. Preserve that shared mark once, rather than inventing a missing amount.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2021-hl-q6(a)-notes",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          18,
+          19,
+          20
+        ]
+      },
+      "observation": "The notes total 24: policies 5, operating profit 5, contingency 4, tangible assets 7, interest 3. The seven-mark asset grid needs its entire table and must not be divided into invented submarks.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2021-hl-q6(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          21
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Exceptional Item This is a material item of significant size. It is a profit or loss that must be shown separately in the profit and loss account because of its size. Example: Profit or loss on sale of land or a large bad debt. Explain what is meant by an auditor's qualified report. Auditors Qualified Report An auditor’s qualified report is when an auditor in his or her opinion is not satisfied that all of the following apply: • The financial statements give a true and fair view of the state of affairs of the company at the end of the year. • The financial statements are prepared in accordance with the Companies Acts. • All the information necessary for the audit was available. • The information given by the directors is consistent with the financial statements. • The net assets are more than 50% of the called‐up capital. The report will state the elements of the accounts that are not satisfactory.",
+          "marks": 10,
+          "page": 21,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2021-hl-q8(b)(ii)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      "observation": "The job-cost and overhead-absorption tables share this page. Retain department labels, distinguish actual/absorbed figures, and preserve the separate four-mark explanation.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2021-hl-q8(c)(ii)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032ALP000EV.pdf",
+        "sha256": "f17fe7a03fd8768deec36dc872bc2425715a47730f217830446265a440e732a9",
+        "pages": [
+          27
+        ]
+      },
+      "observation": "The job-cost and overhead-absorption tables share this page. Retain department labels, distinguish actual/absorbed figures, and preserve the separate four-mark explanation.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2021-ol-q8(d)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC032GLP000EV.pdf",
+        "sha256": "48e18cbbdfc6b478d5c79b892060dd1a94af66078e681602e9118271b59e35c1",
+        "pages": [
+          15
+        ]
+      },
+      "observation": "The cost, mark-up and selling price are separately priced 4 + 4 + 2; the heading total is not another row.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Cost 34,355",
+          "marks": 4,
+          "page": 15
+        },
+        {
+          "id": "r2",
+          "text": "Mark up 20% 6,871",
+          "marks": 4,
+          "page": 15
+        },
+        {
+          "id": "r3",
+          "text": "Selling price 41,226",
+          "marks": 2,
+          "page": 15
+        }
+      ]
+    },
+    {
+      "id": "acc-2022-hl-q6(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032ALP000EV.pdf",
+        "sha256": "36aa9eaa05422a41977fd4d88d8df4a31fbe751effe106ec978aa6299c2b4487",
+        "pages": [
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "observation": "The incomplete-records profit-and-loss account totals 50. Resolve the missing three-mark amount against its row and preserve the related workings.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-hl-q6(c)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032ALP000EV.pdf",
+        "sha256": "36aa9eaa05422a41977fd4d88d8df4a31fbe751effe106ec978aa6299c2b4487",
+        "pages": [
+          27
+        ]
+      },
+      "observation": "Any two accounting concepts share a ten-mark total. Preserve all four named examples as alternatives within one response; do not award marks for answering all four. The source font also needs glyph decoding.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q1A(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          3
+        ]
+      },
+      "observation": "The 2022 statement uses bare numeric marks in a right-hand column and a title mark. Decode the font and bind these prices to table rows before lifting.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q1A(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "observation": "The 2022 balance sheet uses a separate mark column and cost/depreciation/net-value columns. Decode the font and preserve source row-level groupings.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q3(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          9
+        ]
+      },
+      "observation": "The bank account and reconciliation total 35 and 25. The reverse reconciliation is an alternative route. Bind ledger sides and prevent alternative double-counting.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q3(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          9
+        ]
+      },
+      "observation": "The bank account and reconciliation total 35 and 25. The reverse reconciliation is an alternative route. Bind ledger sides and prevent alternative double-counting.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q5(a)(iii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          11
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Period of credit received from Trade Creditors. Creditors / Credit Purchases × 365 = 44,000 / 381,000 × 365 = 1.39 months / 42.15 days",
+          "marks": 8,
+          "page": 11,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2022-ol-q5(b)(iv)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          12
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "8% Debentures (2026/2027). Debentures are long term loans. They will be repaid in full during the years 2026/2027. They carry a fixed annual rate of interest of 8%. Summer Ltd has a Debenture loan of €200,000.",
+          "marks": 10,
+          "page": 12,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2022-ol-q7(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          14,
+          15
+        ]
+      },
+      "observation": "The club balance sheet totals 30 and prices asset cost, depreciation and net book values separately. Recover column-aware labels and exclude the adjacent explanation.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2022-ol-q9(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC032GLP000EV.pdf",
+        "sha256": "f4c863c68cd49c798e4df73d0c0afd6c38c104784885657f37cf3a146bd822f6",
+        "pages": [
+          17
+        ]
+      },
+      "observation": "The cash budget has five months plus a total column with bare numeric prices. Bind marks to row and month, including final-column totals.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-hl-q5(a)(ii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032ALP000EV.pdf",
+        "sha256": "16fe9daa5704df676be10db014580e093464a61503fb95f010c94891f970452a",
+        "pages": [
+          14
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Return on capital employed = (Net Profit + Interest) / Capital Employed × 100 = (€104,000 + €32,000) / €1,028,000 × 100 = 13.23%",
+          "marks": 10,
+          "page": 14,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-hl-q8(a)(ii)(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032ALP000EV.pdf",
+        "sha256": "16fe9daa5704df676be10db014580e093464a61503fb95f010c94891f970452a",
+        "pages": [
+          27
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "The Margin of Safety is the reduction in sales that can occur before the breakeven point of a business is reached. In this question the margin of safety is 58,867 units.",
+          "marks": 4,
+          "page": 27,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-hl-q8(b)(i)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032ALP000EV.pdf",
+        "sha256": "16fe9daa5704df676be10db014580e093464a61503fb95f010c94891f970452a",
+        "pages": [
+          29
+        ]
+      },
+      "observation": "The two profit statements share 18 marks; absorption and marginal costs must remain labelled separately. A six-mark benefits block follows and is not part of the calculation.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-hl-q8(b)(ii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032ALP000EV.pdf",
+        "sha256": "16fe9daa5704df676be10db014580e093464a61503fb95f010c94891f970452a",
+        "pages": [
+          29
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "1. All costs, variable and fixed, are recovered in the selling price charged to customers 2. It gives a more accurate valuation of closing stock at the end of the financial period and this will enable accurate final accounts to be prepared. 3. Helps managers to calculate the total cost of producing each product, which enables a business to manufacture the most profitable products. 4 . There is no need to separate costs into variable and fixed costs which can be very time-consuming and costly, and in many cases may not be possible at all. 5 Absorption costing complies with accounting principles and standards. 6. It matches the costs and revenues for the period. 7 Profit is higher under absorption costing.",
+          "marks": 6,
+          "page": 29,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-ol-q1B(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          7,
+          8
+        ]
+      },
+      "observation": "The company balance sheet includes title, authorised/issued capital heading marks and cost/depreciation columns. Resolve the one-mark shortfall without borrowing from the workings.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-ol-q3(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          11
+        ]
+      },
+      "observation": "The depreciation, disposal and revaluation ledgers have totals 20, 15 and 10. Exclude parent totals and preserve dates and debit/credit sides.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-ol-q3(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          11
+        ]
+      },
+      "observation": "Four priced ledger entries total 15; preserve date and account side, excluding the section total and unpriced balancing totals.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Disposal of Buildings Account — debit: 01/07/21 Buildings 175,000",
+          "marks": 4,
+          "page": 11
+        },
+        {
+          "id": "r2",
+          "text": "Disposal of Buildings Account — debit: 01/07/21 Profit on disposal 7,000",
+          "marks": 3,
+          "page": 11
+        },
+        {
+          "id": "r3",
+          "text": "Disposal of Buildings Account — credit: 01/07/21 Depreciation 78,000",
+          "marks": 4,
+          "page": 11
+        },
+        {
+          "id": "r4",
+          "text": "Disposal of Buildings Account — credit: 01/07/21 Bank 104,000",
+          "marks": 4,
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-ol-q3(d)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          11
+        ]
+      },
+      "observation": "Only the two credit-side revaluation entries are priced, at five marks each. Balances carry no separate marks.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Revaluation Reserve Account — credit: 01/01/22 Buildings 290,000",
+          "marks": 5,
+          "page": 11
+        },
+        {
+          "id": "r2",
+          "text": "Revaluation Reserve Account — credit: 01/01/22 Provision for dep 129,000",
+          "marks": 5,
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-ol-q7(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          16,
+          17
+        ]
+      },
+      "observation": "The general profit-and-loss account is labelled (c) in the scheme but is task (b) in the deck; bound by content. Seven priced lines sum to 25.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Gross profit “Cattle & Milk” 45,060",
+          "marks": 3,
+          "page": 17
+        },
+        {
+          "id": "r2",
+          "text": "Gross profit “Grain” 4,840",
+          "marks": 3,
+          "page": 17
+        },
+        {
+          "id": "r3",
+          "text": "Electricity 11,400",
+          "marks": 5,
+          "page": 17
+        },
+        {
+          "id": "r4",
+          "text": "Interest 18,000",
+          "marks": 3,
+          "page": 17
+        },
+        {
+          "id": "r5",
+          "text": "Depreciation - buildings 5,800",
+          "marks": 4,
+          "page": 17
+        },
+        {
+          "id": "r6",
+          "text": "Depreciation - machinery 8,500",
+          "marks": 4,
+          "page": 17
+        },
+        {
+          "id": "r7",
+          "text": "Net profit 6,200",
+          "marks": 3,
+          "page": 17
+        }
+      ]
+    },
+    {
+      "id": "acc-2023-ol-q7(c)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          16,
+          17,
+          18
+        ]
+      },
+      "observation": "The 35-mark farm balance sheet is labelled (d) in the scheme but is task (c) in the deck. Bind by content and preserve the asset column labels.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-ol-q9(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          20
+        ]
+      },
+      "observation": "The material-purchase and labour budgets use product/material columns with their own prices. Exclude parent totals and retain column context; the shared labour total is priced once.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-ol-q9(e)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          20
+        ]
+      },
+      "observation": "The material-purchase and labour budgets use product/material columns with their own prices. Exclude parent totals and retain column context; the shared labour total is priced once.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2023-ol-q9(f)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC032GLP000EV.pdf",
+        "sha256": "f86ead328380d5c1c4b3711876ba2f3c6abd94377c86f7bd8f51f9bc812f1a59",
+        "pages": [
+          20
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "A production budget is prepared in order to determine the total number of units the company needs to produce (make) for the coming period. The figure calculated is needed to find out what materials need to be purchased for production.",
+          "marks": 4,
+          "page": 20,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2024-hl-q8(b)(iii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032ALP000EV.pdf",
+        "sha256": "0a37ff4e3f89a02681473d4fab5d5d9e0f91c08b871ea7f82710221e40a21816",
+        "pages": [
+          29,
+          30
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "FIFO(First in First Out) is a common stock valuation method used in cost accounting. Under the FIFO method, the earliest purchased or produced goods are sold/used first. By selling your oldest stock first, its price or value is represented as the most accurate estimate of each stock item. Alternative method – • LIFO • Average Cost • Weighted Average • Standard Cost",
+          "marks": 6,
+          "page": 30,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2024-ol-q1A(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032GLP000EV.pdf",
+        "sha256": "ce810360d581e0f5f7c5a26cbebed775ab08883250a2c992ad4b301ddbf8c3cf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "observation": "The 40-mark balance-sheet heading is being double-counted with its cells. Preserve the title mark and distinct cost/depreciation/current-liability rows.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2024-ol-q1B(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032GLP000EV.pdf",
+        "sha256": "ce810360d581e0f5f7c5a26cbebed775ab08883250a2c992ad4b301ddbf8c3cf",
+        "pages": [
+          5
+        ]
+      },
+      "observation": "The manufacturing account has a separately priced Prime cost heading as well as amount rows. Resolve all 40 marks, including that heading.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2024-ol-q1B(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032GLP000EV.pdf",
+        "sha256": "ce810360d581e0f5f7c5a26cbebed775ab08883250a2c992ad4b301ddbf8c3cf",
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "observation": "The trading/profit-and-loss account has title, Administration and Selling and Distribution heading marks. Include those once and keep adjacent manufacturing data separate.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2024-ol-q1B(c)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032GLP000EV.pdf",
+        "sha256": "ce810360d581e0f5f7c5a26cbebed775ab08883250a2c992ad4b301ddbf8c3cf",
+        "pages": [
+          5,
+          6,
+          7
+        ]
+      },
+      "observation": "The balance sheet prices cost/depreciation/net value and authorised/issued capital headings. Resolve cell context before assigning the 40 marks.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2024-ol-q5(a)(iii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC032GLP000EV.pdf",
+        "sha256": "ce810360d581e0f5f7c5a26cbebed775ab08883250a2c992ad4b301ddbf8c3cf",
+        "pages": [
+          12
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Period of credit given to Trade Debtors. Debtors / Credit Sales × 365 = 43,000 / 750,000 × 365 = 20.93 days/.69 months",
+          "marks": 10,
+          "page": 12,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-hl-q5(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032ALP000EV.pdf",
+        "sha256": "fd38427485d093c767ef2891feed8dcaa1d115d0402ec8c95eb940e4db39abc6",
+        "pages": [
+          19
+        ]
+      },
+      "observation": "Parenthesised marks beside six report headings and the three-mark conclusion sum to 40; retain the complete source paragraphs.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Profitability (7) Technik Ltd is a profitable company. It’s ROCE has improved from 10.8% in 2023 to 13.05% in 2024. This is much better than the return from risk free investments of 0-3%. It is also better than the 7% being paid to debenture holders and the 6% being paid to preference shareholders. The company is making more efficient use of its resources this year. The Earnings per share has disimproved from 30c in 2023 to 22.11c in 2024.",
+          "marks": 7,
+          "page": 19
+        },
+        {
+          "id": "r2",
+          "text": "Liquidity (6) Technik Ltd does not have a liquidity problem. Its acid test ratio has improved/disimproved from 1.6:1 in 2023 to 1.31:1 in 2024. This means the company has €1.31 in liquid assets to repay every €1 owed in short term debt. The company will have no problem paying dividends or interest. However, it is still well above the ideal of 1:1. The company is being a little too conservative and should consider investing some of its excess resources in fixed assets increasing the productive capacity of the business.",
+          "marks": 6,
+          "page": 19
+        },
+        {
+          "id": "r3",
+          "text": "Gearing(7) Technik Ltd is a lowly geared company which means the company is financed more by equity than by debt. The gearing has improved from 42% in 2023 to 39.79% in 2024. The debt to equity ratio is 66.08% which is a bad trend compared to last year’s 42% but indicates the firm is still lowly geared. The interest cover has improved from 15 times in 2023 to 17.57 times in 2024. The company will have no problem making interest payments.",
+          "marks": 7,
+          "page": 19
+        },
+        {
+          "id": "r4",
+          "text": "Dividend policy (7) The DPS has improved from 8c in 2023 to 9.89c in 2024. The Dividend cover has disimproved from 3.75 times in 2023 to 2.24 times in 2024. The % of profits paid out in dividends has changed from 26.67% in 2023 to 44.64% in 2024. Shareholders would like to see money being retained for expansion purposes and repayment of the loan but will be happy to get a good dividend.The Dividend Yield has improved from 5.71% to 6.18%. This is better than the return from risk-free investments of 0-3%.",
+          "marks": 7,
+          "page": 19
+        },
+        {
+          "id": "r5",
+          "text": "Market value of the share (5) The market value of the share has improved from €1.40 in 2023 to €1.60 in 2024. This shows stock market confidence in the company. The P/E ratio has disimproved from 4.67 years in 2023 to 7.24 years. This means it will take longer to recoup the initial investment in the company.",
+          "marks": 5,
+          "page": 19
+        },
+        {
+          "id": "r6",
+          "text": "Sector (5) Technik Ltd operates in the IT sector. In the short term this is a promising sector to be in as the use of AI becomes more predominant across many different sectors in the economy. Long term prospects are also good with demand for IT services growing even higher as the shift to remoter working continues to grow.",
+          "marks": 5,
+          "page": 19
+        },
+        {
+          "id": "r7",
+          "text": "Overall the firm’s ratios are very promising and the shareholders would be very happy with the performance, state of affairs and prospects of the company. (3)",
+          "marks": 3,
+          "page": 19
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-hl-q6(b)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032ALP000EV.pdf",
+        "sha256": "fd38427485d093c767ef2891feed8dcaa1d115d0402ec8c95eb940e4db39abc6",
+        "pages": [
+          22,
+          23
+        ]
+      },
+      "observation": "The incomplete-records balance sheet has source note references N1–N24 and priced amounts. The separate workings page is context; resolve the five-mark extraction shortfall.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2025-hl-q6(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032ALP000EV.pdf",
+        "sha256": "fd38427485d093c767ef2891feed8dcaa1d115d0402ec8c95eb940e4db39abc6",
+        "pages": [
+          24
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "(i) It is the financial term that is used to describe the total value of what a person or a business owns(assets) minus what the person or a business owes(liabilities). A positive net worth means the person owns more in assets than they owe in liabilities. (ii) A full set of accounts cannot accurately be prepared because essential information, such as sales revenue and expenses is not available. Without the double-entry system it is difficult to cross-check transactions and therefore fraud is more likely. The owner of the business does not have enough information for analysis purposes, the owner has limited information to be able to make informed business decisions. Information is unreliable and makes preparation of final accounts difficult, especially when they’re required for legal purposes.",
+          "marks": 8,
+          "page": 24,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-hl-q7",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032ALP000EV.pdf",
+        "sha256": "fd38427485d093c767ef2891feed8dcaa1d115d0402ec8c95eb940e4db39abc6",
+        "pages": [
+          25
+        ]
+      },
+      "observation": "The 100-mark tabular statement is landscape, with month columns and repeated account rows. The extraction sums only 82; needs a complete cell-by-cell map, including wrapped P&L/revaluation entries.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2025-ol-q1B(a)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032GLP000EV.pdf",
+        "sha256": "7de03dd7220ae1b35718a381d443f0c4d5ded5db25d82175d4f9b546469defb1",
+        "pages": [
+          5
+        ]
+      },
+      "observation": "The manufacturing account has a one-mark PRIME COST heading in addition to its amount rows. Recover the heading rather than borrowing a mark from another statement.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2025-ol-q8(d)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032GLP000EV.pdf",
+        "sha256": "7de03dd7220ae1b35718a381d443f0c4d5ded5db25d82175d4f9b546469defb1",
+        "pages": [
+          17
+        ]
+      },
+      "observation": "The cost, mark-up and selling price are separately priced 4 + 4 + 2; the heading total is not another row.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Cost 17,100",
+          "marks": 4,
+          "page": 17
+        },
+        {
+          "id": "r2",
+          "text": "Mark up 20% 3,420",
+          "marks": 4,
+          "page": 17
+        },
+        {
+          "id": "r3",
+          "text": "Selling price 20,520",
+          "marks": 2,
+          "page": 17
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-ol-q9(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032GLP000EV.pdf",
+        "sha256": "7de03dd7220ae1b35718a381d443f0c4d5ded5db25d82175d4f9b546469defb1",
+        "pages": [
+          18
+        ]
+      },
+      "observation": "Eight two-mark cells sum to 16; every cell retains its Star/Moon product label.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Budgeted sales — Star 8,800",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r2",
+          "text": "Budgeted sales — Moon 9,200",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r3",
+          "text": "Add closing stock — Star 180",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r4",
+          "text": "Add closing stock — Moon 200",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r5",
+          "text": "Less opening stock — Star (240)",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r6",
+          "text": "Less opening stock — Moon (320)",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r7",
+          "text": "Budgeted production in units — Star 8,740",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r8",
+          "text": "Budgeted production in units — Moon 9,080",
+          "marks": 2,
+          "page": 18
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-ol-q9(c)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032GLP000EV.pdf",
+        "sha256": "7de03dd7220ae1b35718a381d443f0c4d5ded5db25d82175d4f9b546469defb1",
+        "pages": [
+          18
+        ]
+      },
+      "observation": "Two material columns each price the two product amounts at three marks and their total at two marks; sum 16.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Material X — Star (8740 × 5) 43,700",
+          "marks": 3,
+          "page": 18
+        },
+        {
+          "id": "r2",
+          "text": "Material X — Moon (9,080 × 4) 36,320",
+          "marks": 3,
+          "page": 18
+        },
+        {
+          "id": "r3",
+          "text": "Material X — 80,020",
+          "marks": 2,
+          "page": 18
+        },
+        {
+          "id": "r4",
+          "text": "Material Y — Star (8740 × 4) 34,960",
+          "marks": 3,
+          "page": 18
+        },
+        {
+          "id": "r5",
+          "text": "Material Y — Moon (9,080 × 3) 27,240",
+          "marks": 3,
+          "page": 18
+        },
+        {
+          "id": "r6",
+          "text": "Material Y — 62,200",
+          "marks": 2,
+          "page": 18
+        }
+      ]
+    },
+    {
+      "id": "acc-2025-ol-q9(d)",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC032GLP000EV.pdf",
+        "sha256": "7de03dd7220ae1b35718a381d443f0c4d5ded5db25d82175d4f9b546469defb1",
+        "pages": [
+          18
+        ]
+      },
+      "observation": "The production/material budgets have Star/Moon and Material X/Y columns. Bind each amount to its row and column and count only the published prices, not section totals.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2026-hl-q2(a)-cash-flow",
+      "status": "retained-source",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          10,
+          11,
+          12
+        ]
+      },
+      "observation": "The 32-mark cash-flow statement includes six one-mark activity headings. Preserve them and the amount rows; the 52-mark parent section includes other tasks.",
+      "nextAction": "Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+    },
+    {
+      "id": "acc-2026-hl-q2(b)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          12
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "(i) Horan’s operating profit and change in cashflow are different because earning profit does not always result in a corresponding change in cash balances. Profit but Not Cash: Credit sales increases profit but not cash. Debtors increased by €19,000. Credit purchases reduces profit but not cash. Creditors increased by €24,000. Loss on sale of fixed asset reduces profit but not cash. There was a loss on sale of €13,600. Depreciation on fixed assets reduces profit but does not affect cash. Depreciation was €54,400. Increase in bad debt provision reduces profit but has no effect on cash. There is an increase in the bad debts provision of €760. Cash but not Profit: Receipts from sale of fixed assets increases cash but has no immediate effect on profit. €35,000 was received from the sale of fixed assets. Payments for the purchase of fixed assets reduces cash but has no immediate effect on profit. New fixed assets were purchased for €120,000. Receipts from issue of shares and premium increases cash but has no immediate effect on profit. New shares were issued for €48,000. Repayment of debenture reduces cash but has no immediate effect on profit. €40,000 of Debentures were repaid. Purchase of government securities reduces cash but has no immediate effect on profit. €15,000 was spent on government securities (ii) Solvency is the ability of a company to pay all of its debts as they fall due. A business is solvent if its total assets exceed its external/outside liabilities. It is the most important indicator of a business’s ability to survive in the long term. Horan plc is solvent as its total assets of €1,517,480 are greater than its external liabilities of €528,900.",
+          "marks": 8,
+          "page": 12,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2026-hl-q5(a)(v)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          17
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Dividend Yield = DPS / MP × 100 = 8.57c / 125c × 100 = 6.86%. DPS = (41,000 – 5,000) / 420,000 = 8.57 cent",
+          "marks": 10,
+          "page": 17,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2026-hl-q8(e)(i)-calculation",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          29,
+          30
+        ]
+      },
+      "observation": "Nine priced cells sum to 11. Each row names its department and quantity; the separate meaning and impact blocks are excluded.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Actual overhead incurred — Production dept. 1 €599,320",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r2",
+          "text": "Actual overhead incurred — Production dept. 2 €489,200",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r3",
+          "text": "Actual overhead incurred — Total Overhead €1,088,520",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r4",
+          "text": "Overhead absorbed — Production dept. 1: 93,000 Mh × €6.34 = €589,620",
+          "marks": 2,
+          "page": 30
+        },
+        {
+          "id": "r5",
+          "text": "Overhead absorbed — Production dept. 2: 104,000 Lh × €4.84 = €503,360",
+          "marks": 2,
+          "page": 30
+        },
+        {
+          "id": "r6",
+          "text": "Overhead absorbed — Total Overhead €1,092,980",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r7",
+          "text": "(Under)/over absorbed — Production dept. 1 (€9,700)",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r8",
+          "text": "(Under)/over absorbed — Production dept. 2 €14,160",
+          "marks": 1,
+          "page": 30
+        },
+        {
+          "id": "r9",
+          "text": "(Under)/over absorbed — Total Overhead €4,460",
+          "marks": 1,
+          "page": 30
+        }
+      ]
+    },
+    {
+      "id": "acc-2026-hl-q8(e)(i)-meaning",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          29,
+          30
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "In production department 1 the costs incurred were €9,700 greater than expected/budgeted and therefore profits are €9,700 less than budgeted. In production department 2 the costs incurred were €14,160 less than expected/budgeted and therefore profits are €14,160 more than budgeted. Overall, the costs incurred were €4,460 less than budgeted/expected and profits are €4,460 more than budgeted.",
+          "marks": 3,
+          "page": 30,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": "acc-2026-hl-q8(e)(ii)",
+      "status": "resolved",
+      "source": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC032ALP000EV.pdf",
+        "sha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+        "pages": [
+          30
+        ]
+      },
+      "observation": "The scheme prints one mark allocation for this complete response; it gives no separately priced substeps.",
+      "rows": [
+        {
+          "id": "r1",
+          "text": "Profits are greater than budgeted. Good for business and shareholders. Danger that the company may have costed their products too high. The firm may be less competitive and may lose customers as a result. Overvalued closing stock resulting in incorrect higher reported profits/inaccurate financial statements. May lead to unnecessary cost cutting e.g. layoffs.",
+          "marks": 4,
+          "page": 30,
+          "block": true
+        }
+      ]
+    }
+  ]
+}
