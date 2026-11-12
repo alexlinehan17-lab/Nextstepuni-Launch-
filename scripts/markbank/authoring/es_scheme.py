@@ -275,6 +275,10 @@ LAYOUTS = {
 # letter "x": "(f) Three of:" / "x English" / "x started painting in England" /
 # …. Read as the dash it is drawn as.
 X_BULLETS = {(2016, 'ol')}
+# The same scheme's tick: its text layer reads "¥" (U+00A5 in TimesNewRomanPSMT)
+# where the page draws "√" ("√ 91 6895360", rendered and read, p4), the sign
+# 2018 Ordinary prints as text.
+GLYPHS = {(2016, 'ol'): [('¥', '√')]}
 
 # A menu whose slashes both separate its answers and join two words of one
 # answer, cut by hand where no rule can tell the two apart. Each answer is a
@@ -416,6 +420,8 @@ class EsScheme:
             raw = fh.read()
         if (year, level) in X_BULLETS:
             raw = re.sub(r'(?m)^x (?=\S)', '- ', raw)
+        for old, new in GLYPHS.get((year, level), ()):
+            raw = raw.replace(old, new)
         # The 2025 schemes set every space inside a heading as U+00A0, so
         # "DIALOGUE\u00a0CONSTRUCTION" is not the string "DIALOGUE CONSTRUCTION"
         # any literal in this file spells. Two of that sitting's four Section C
@@ -949,10 +955,15 @@ class EsScheme:
                     if not l:
                         continue
                     prev = lines[-1] if lines else ''
-                    listed = '/' in re.sub(r'\([^()]*\)', '', prev)   # "(we/it)" is not a list
+                    # A slash or comma list ("(we/it)" is no list): 2016
+                    # Ordinary "two of: classical literature, children's books,
+                    # science fiction, biographies," / "cookery books or recipes".
+                    bare = re.sub(r'\([^()]*\)', '', prev.rstrip(','))
+                    slashes, commas_ = '/' in bare, ',' in bare
                     if lines and (prev.endswith('/') or prev.count('(') > prev.count(')')
-                                  or (listed and (re.search(r'(?:,|\b(?:and|or|y|o))$', prev)
-                                                  or l[:1].islower()))):
+                                  or (slashes and (re.search(r'(?:,|\b(?:and|or|y|o))$', prev)
+                                                   or l[:1].islower()))
+                                  or (commas_ and prev.endswith(','))):
                         lines[-1] = f'{prev} {l}'
                     else:
                         lines.append(l)
@@ -1010,6 +1021,28 @@ class EsScheme:
             # lists them: "- Fresh ingredients / - Traditional ways of cooking
             # (2+1m)" is two answers at 2 and 1, not one answer worth 3.
             points = list(zip(answers, terms))
+        elif self.year <= OLD_LETTERS_LAST and marked >= 2 and terms and len(terms) == 1 \
+                and len(answers) == marked \
+                and not re.search(r'\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]', ' '.join(b or '' for b in body)):
+            # Numbered answers priced together: 2016 Ordinary Q5(a) "(i) it is
+            # vandalism" / "(ii) it is a means of alternative expression (6
+            # marks)". Both are asked for and the scheme prints no split: a
+            # menu of the two, paid its 6 when both are claimed.
+            quota = marked
+            options = answers
+        elif (self.year <= OLD_LETTERS_LAST and not marked and terms and len(terms) >= 2
+              and len([l for l in rest if l and l.strip()]) == len(terms)
+              and all(not re.search(r'(?:[,/(]|\b(?:and|or|y|o))$', ' '.join(l.split()))
+                      and l.count('(') == l.count(')')
+                      for l in rest if l and l.strip())
+              and all(re.match(r'^[A-ZÁÉÍÓÚÑ(¿¡“‘"…]', ' '.join(l.split()))
+                      for l in [l for l in rest if l and l.strip()][1:])):
+            # 2016-2019 set several required answers one to a printed line,
+            # undashed: 2016 Higher Q1(c) "Cutbacks in education" /
+            # "Withdrawal of resources (2+2marks)". A line that runs on (a
+            # comma, slash or "and" at its end, a bracket open, the next line
+            # in lower case) is one answer wrapped instead.
+            points = list(zip([' '.join(l.split()) for l in rest if l and l.strip()], terms))
         elif answers:
             # One answer, however many marks it is worth. "(5+5m)" on a single
             # printed line is the SEC splitting ONE answer's marks across its

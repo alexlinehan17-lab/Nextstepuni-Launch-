@@ -68,7 +68,7 @@ def tags_for(year, level, fileid):
     return {}
 
 
-def place(found, page, y, section, q):
+def place(found, page, y, section, q, letter=None):
     """The Atlas question a card printed at (page, y) belongs to, or a reason."""
     # A tolerance of a hundredth of the page: the anchor and the ask are
     # read off the same line by two different readers.
@@ -93,6 +93,11 @@ def place(found, page, y, section, q):
         # and then the position cannot choose between them. The label can:
         # the anchor that names the card's own question number.
         named = [a for a in tied if _label_q(a['label']) == q]
+        if section == 'A2' and letter and len(named) != 1:
+            # 2018 Higher anchors Question 2's two texts at one height of page
+            # 6, "Section A · 2(a) Short Comprehension (Circo …)" and "… 2(b)
+            # …": the label that names the card's own text is its question.
+            named = [a for a in tied if re.search(rf'\b2\s*\(\s*{letter}\s*\)', a['label'])]
         if len(named) != 1:
             return None, (f'{len(tied)} anchors begin at page {last[0]} height '
                           f'{last[1]} and the labels do not single out Q{q}')
@@ -164,7 +169,8 @@ def _writing_n(level, section, q, letter):
 EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
            (2024, 'hl', 'A1b', 4): 'A1b4',
            (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2',
-           (2021, 'hl', 'A1b', 4): 'A1b4', (2019, 'hl', 'A1b', 4): 'A1b4'}
+           (2021, 'hl', 'A1b', 4): 'A1b4', (2019, 'hl', 'A1b', 4): 'A1b4',
+           (2018, 'hl', 'A1b', 4): 'A1b4'}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',
@@ -222,7 +228,7 @@ def resolve(cards):
                 refused.append((card['id'], 'the census holds no printed block for it'))
                 continue
             row = P.rows[block.row]
-            hit, reason = place(found, block.page + 1, row.y, section, q)
+            hit, reason = place(found, block.page + 1, row.y, section, q, letter)
         if hit is None:
             refused.append((card['id'], reason))
             continue
