@@ -5,9 +5,11 @@
  * The SEC's deferred Irish sittings, carded in the June shape (scripts/markbank/authoring/irish_deferred.py, 2026-11-12).
  * Each card is the June card's shape for its paper layout, cites "… — Deferred sitting", opens its deferred paper and
  * cites its deferred scheme, and its manifest lists the census asks it covers (paper_census.census_irish_deferred,
- * test/irishDeferredCensus.test.ts). The deferred schemes print no key for some options (the optional prose and poetry;
- * Higher 4C and 4E): those cards say so and are marked by what the scheme does print (its band tables and directions)
- * or, where it prints nothing, at the paper's printed tariffs.
+ * test/irishDeferredCensus.test.ts). The 2024 and 2025 deferred schemes print no key for some options (the optional
+ * prose and poetry; Higher 4C and 4E), and 2022's restates its Higher optional prose and 4A–4E without notes: those
+ * cards say so and are marked by what the scheme does print (its band tables and directions) or, where it prints
+ * nothing, at the paper's printed tariffs. The 2023 and 2022 Ordinary schemes key every optional option, so those cards
+ * carry the scheme's own lines, the title row and the deduction printed under each.
  */
 import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
@@ -16,6 +18,7 @@ import higher2025 from '../components/MarkBank/cards/irish/higher-2025-deferred-
 import ordinary2025 from '../components/MarkBank/cards/irish/ordinary-2025-deferred-authored.json';
 import higher2024 from '../components/MarkBank/cards/irish/higher-2024-deferred-authored.json';
 import ordinary2024 from '../components/MarkBank/cards/irish/ordinary-2024-deferred-authored.json';
+import higher2023 from '../components/MarkBank/cards/irish/higher-2023-deferred-authored.json';
 import { listeningExerciseKey } from '../components/MarkBank/sessionPlanning';
 import type { IrishCriterion, SecRubricCard } from '../types/markBank';
 
@@ -23,7 +26,8 @@ interface Manifest { covers: Record<string, string[]>; cards: { id: string; crit
 interface Shape { listening: number; composition: number; wholeReading: number; readingParts: number; readingSlots: number; literature: number; literatureParts: number }
 // Where an Ordinary option has no key, the 0-4 Gaeilge deduction applies only if the scheme prints it for the whole
 // question ('question', with the page's own words), never when it is printed under the keyed options alone ('none').
-interface Sitting { file: Manifest; cards: number; asks: number; shape: Shape; unprinted: string[]; byTable: string[]; deduction?: 'none' | 'question' }
+// keyedOptional: an Ordinary scheme that keys its optional prose and poetry (2023, 2022), each option with its own deduction.
+interface Sitting { file: Manifest; cards: number; asks: number; shape: Shape; unprinted: string[]; byTable: string[]; deduction?: 'none' | 'question'; keyedOptional?: boolean }
 
 // Per sitting: its cards, the census asks they cover (the denominator), the card shape for its layout, and the options
 // its scheme prints no key for.
@@ -40,6 +44,9 @@ const SITTINGS: Record<string, Sitting> = {
   'ordinary 2024': { file: ordinary2024 as Manifest, cards: 74, asks: 79,
     shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 12, literatureParts: 17 },
     unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [], deduction: 'question' },
+  'higher 2023': { file: higher2023 as Manifest, cards: 91, asks: 91,
+    shape: { listening: 8, composition: 9, wholeReading: 12, readingParts: 34, readingSlots: 14, literature: 14, literatureParts: 0 },
+    unprinted: [], byTable: ['prose-2b-a', 'prose-2b-b'] },
 };
 
 const DEFERRED = /^irish-(\d{4})-(hl|ol)-deferred-p([12])-/;
@@ -123,6 +130,15 @@ describe('Irish deferred sittings: the June shape', () => {
         .map(key).sort(), sittingName).toEqual(sitting.unprinted);
       // The Higher optional prose and Ceist 4C/4E: the scheme's band table and Ceist 4's directions are their marking.
       expect(cards.filter(card => /prints no notes/.test(rubric(card).markingGuideNote)).map(key).sort(), sittingName).toEqual(sitting.byTable);
+      if (sitting.keyedOptional) {
+        // Each optional option carries the scheme's lines, the title row it prices, and the deduction printed under it.
+        for (const card of cards.filter(c => /^(?:prose-2b|poetry-3b)-[a-c]$/.test(key(c)))) {
+          const ids = criteria(card).map(criterion => criterion.id);
+          expect(ids, card.id).toContain('teideal');
+          expect(criteria(card).filter(criterion => criterion.kind === 'deduction').map(d => d.guidance.join(' ')), card.id)
+            .toEqual([expect.stringMatching(/^\[Gaeilge lochtach: 0[-‐]4 a bhaint den iomlán a gnóthaíodh\.?\]$/)]);
+        }
+      }
       if (!sitting.deduction) continue;
       for (const card of cards.filter(c => sitting.unprinted.includes(key(c)))) {
         const deductions = criteria(card).filter(criterion => criterion.kind === 'deduction');

@@ -50,8 +50,8 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',)}
-AUDIO = {2025: 'available', 2024: 'available'}
+SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher',)}
+AUDIO = {2025: 'available', 2024: 'available', 2023: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
 SHA = {  # (year, level, paper; 0 = the scheme)
@@ -1067,7 +1067,9 @@ def literature_higher(sitting, base):
                'single shared 5-mark Gaeilge award.' + (notes_line + '.' if notes_line else '') if two_heads else
                'One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award.' + notes_line
                + ('; with only one of the required aspects discussed, the scheme marks the Eolas out of 18.' if out_of_18 else '.' if notes_line else ''))
-              + (' The deferred scheme prints no notes for the optional prose: its band table is the marking.' if noteless else ''))
+              + ((' The deferred scheme prints no notes for the optional prose: its Treoir and band table are the marking.'
+                  if starts[index] is not None and 'Treoir' in guidance[0] else
+                  ' The deferred scheme prints no notes for the optional prose: its band table is the marking.') if noteless else ''))
 
     poems = [('poetry-3a-a', 'F-3A-a'), ('poetry-3a-b', 'F-3A-b'), ('poetry-3b-a', 'F-3B-a'), ('poetry-3b-b', 'F-3B-b')]
     # Each poem searched for after the one before it: 2023 restates both optional poems, and they open alike ("Maidir le dán

@@ -704,7 +704,23 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       // The scheme prints the option's tariff twice, once per alternative text (scannán nó dráma): one set of rows.
       part.rows = part.rows.slice(0, part.rows.length / 2);
     } else if (sum !== part.tariff) {
-      return { ok: false, reason: `rows add to ${sum}, sub-question is ${part.tariff}` };
+      const restated = restatedTail(part.rows, part.tariff);
+      const counted = countedPoints(directions, part.tariff - sum);
+      if (restated) {
+        // The scheme prices the part, then restates the same prices as a summary ("Dhá aidiacht … = 2 mharc Plé … = 5 mharc"
+        // then "Aidiachtaí a lua = 2 mharc Plé ar aidiacht a haon: 3 mharc …", 2023 deferred Higher 3A(a)(iii)): the
+        // restatement is a note under the rows, not more answers (the loose-rows rule above, for a part's own rows).
+        directions.push(...part.rows.slice(restated).map(row => row.text));
+        part.rows = part.rows.slice(0, restated);
+      } else if (counted) {
+        // The only price of the points is the count note ("Cur síos ar atmaisféar an dáin = 1 mharc Dhá phointe eolais ag
+        // teastáil anseo: 3 mharc an ceann ar an dá phointe eolais", 2023 deferred Higher 3B(a)(iii)): the note is their row,
+        // in its own steps, and no longer a direction.
+        directions.splice(directions.indexOf(counted.note), 1);
+        part.rows.push({ id: '', text: counted.note, marks: counted.marks, steps: counted.steps });
+      } else {
+        return { ok: false, reason: `rows add to ${sum}, sub-question is ${part.tariff}` };
+      }
     }
     total += part.tariff;
     built.push({
@@ -718,6 +734,35 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   const seen = new Set<string>();
   return { ok: true, allocation: { parts: built, directions: directions.filter(note => note && !seen.has(note) && seen.add(note)) } };
 }
+
+/** Where a part's rows overshoot its tariff because the scheme restates them: the count of leading rows that price the part
+ *  exactly, when every later row repeats a price already placed. Otherwise undefined. */
+const restatedTail = (rows: IrishAnswerRow[], tariff: number): number | undefined => {
+  let sum = 0;
+  for (let count = 1; count < rows.length; count++) {
+    sum += rows[count - 1].marks;
+    if (sum > tariff) return undefined;
+    if (sum !== tariff) continue;
+    const placed = new Set(rows.slice(0, count).map(row => row.marks));
+    const tail = rows.slice(count);
+    return tail.every(row => placed.has(row.marks)) && tail.reduce((acc, row) => acc + row.marks, 0) <= tariff ? count : undefined;
+  }
+  return undefined;
+};
+
+/** A count note ("Dhá phointe eolais ag teastáil anseo: 3 mharc an ceann ar an dá phointe eolais") that prices exactly the
+ *  marks a part's rows leave unpriced: its points as one row in steps of one point. Otherwise undefined. */
+const countedPoints = (directions: string[], short: number): { note: string; marks: number; steps: number[] } | undefined => {
+  if (short <= 0) return undefined;
+  for (const note of directions) {
+    const match = /^(Dhá|Trí|Ceithre|Cúig|\d+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\b/.exec(note);
+    if (!match) continue;
+    const count = /^\d+$/.test(match[1]) ? Number(match[1]) : WORDS[match[1].toLowerCase()];
+    const each = Number(match[2]);
+    if (count && count * each === short) return { note, marks: short, steps: Array.from({ length: count + 1 }, (_, index) => index * each) };
+  }
+  return undefined;
+};
 
 /** The marks a printed band table's values cover: "6-7 … 5 … 4 … 3 … 0-2", "10, 11 … 0, 1, 2, 3". */
 const bandValues = (table: string): Set<number> => {
