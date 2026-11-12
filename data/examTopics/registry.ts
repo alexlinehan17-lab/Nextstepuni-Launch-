@@ -295,6 +295,8 @@ interface IrishRuntime {
     string,
     number[],
   ]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, paper key, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, '1' | '2', string, string, number[]]>;
 }
 
 interface SpanishRuntime {
@@ -3945,6 +3947,49 @@ for (const [levelCode, yearOffset, n, topicIndexes] of technologyRuntime.questio
   );
 }
 
+// A Technology option question belongs on its option's page: Section C prints
+// Option 1 Applied Control Systems, 2 Electronics and Control, 3 ICT,
+// 4 Manufacturing Systems and 5 Materials Technology as Questions 1 to 5 in
+// every sitting 2010-2026. The factual file-scoped headings file seven of
+// them by content alone (2014 Higher C2, 2015 Ordinary C1, 2017 Higher C4 and
+// C5, 2017 Ordinary C3, 2019 Ordinary C3, 2026 Higher C3), and an exact file
+// match shadows the question-level mapping, so a student revising that option
+// never met them. The option is added beside the reference's own headings,
+// which stay, in every year.
+const TECHNOLOGY_OPTION_TOPICS: Record<PaperLevel, string[]> = {
+  higher: [
+    'technology-higher-option-applied-control-systems',
+    'technology-higher-option-electronics-control',
+    'technology-higher-option-information-communications-technology',
+    'technology-higher-option-manufacturing-systems',
+    'technology-higher-option-materials-technology',
+  ],
+  ordinary: [
+    'technology-ordinary-option-1-applied-control-systems',
+    'technology-ordinary-option-2-electronics-control',
+    'technology-ordinary-option-3-information-communications-technology',
+    'technology-ordinary-option-4-manufacturing-systems',
+    'technology-ordinary-option-5-materials-technology',
+  ],
+} as Record<PaperLevel, string[]>;
+for (const reference of technologyPartReferences) {
+  const option = /^C([1-5])$/.exec(reference.n);
+  if (!reference.fileid || !option) continue;
+  const topicId = TECHNOLOGY_OPTION_TOPICS[reference.level][Number(option[1]) - 1];
+  if (!TOPICS_BY_ID.has(topicId)) throw new Error(`Unknown Technology option topic: ${topicId}`);
+  for (const fileid of new Set([
+    reference.fileid,
+    reference.fileid.replace(/EV(?=\.pdf$)/i, 'IV'),
+    reference.fileid.replace(/IV(?=\.pdf$)/i, 'EV'),
+  ])) {
+    const key = fileQuestionKey(
+      reference.subjectId, reference.level, reference.year, 'main', fileid, reference.n, reference.paperKey,
+    );
+    const ids = FILE_QUESTION_TOPICS.get(key) ?? [];
+    if (!ids.includes(topicId)) FILE_QUESTION_TOPICS.set(key, [...ids, topicId]);
+  }
+}
+
 // Chemistry shares the audited mapping between both official-language
 // editions. Exact factual joins cover 342 cards; the 32 reference omissions
 // are retained from direct SEC-paper review, including every 2026 task.
@@ -4097,20 +4142,37 @@ for (const [
   );
 }
 
-// Irish spans three levels and four live paper slots. The generated join is
-// authoritative for all 979 local cards, including the frozen reading cards
-// and the two preservation-only archive shelves.
+// Irish's generated local joins are authoritative for the indexed paper slots.
+// Replace a matching language-neutral reference association as well: merging
+// it back would reintroduce known errors such as 2024 Foundation's form tagged
+// as a letter. The original factual headings remain in part-reference metadata.
 for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of irishRuntime.questionMappings) {
+  const topicIds = topicIndexes.map(topicIndex => {
+    const topicId = irishRuntime.topics[topicIndex]?.[0];
+    if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
+    return topicId;
+  });
+  const level = irishLevel(levelCode);
+  const year = yearOffset + 2000;
+  const paperKey = irishRuntimePaperKey(paperKeyCode);
   QUESTION_TOPICS.set(
-    questionKey(
-      irishRuntime.subjectId,
-      irishLevel(levelCode),
-      yearOffset + 2000,
-      'main',
-      n,
-      irishRuntimePaperKey(paperKeyCode),
-      langCode === 'e' ? 'ev' : 'iv',
-    ),
+    questionKey('irish', level, year, 'main', n, paperKey, langCode === 'e' ? 'ev' : 'iv'),
+    topicIds,
+  );
+  const sharedKey = questionKey('irish', level, year, 'main', n, paperKey);
+  const shared = QUESTION_TOPICS.get(sharedKey);
+  if (shared) {
+    QUESTION_TOPICS.set(sharedKey, [...new Set([
+      ...shared.filter(id => topicIds.includes(id)), ...topicIds,
+    ])]);
+  }
+}
+// A deferred sitting ("LC001ALP100IV-deferred.pdf") is its own booklet, numbered as June's: its cards join on the
+// booklet, so they never replace or merge with June's card of the same number (Economics' deferred paper does the same).
+for (const [levelCode, langCode, yearOffset, paperKeyCode, fileid, n, topicIndexes] of irishRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey('irish', irishLevel(levelCode), yearOffset + 2000, 'main', fileid, n,
+      irishRuntimePaperKey(paperKeyCode), langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = irishRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);

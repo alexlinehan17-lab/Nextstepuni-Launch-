@@ -34,6 +34,16 @@ the region's own text pages are everything before that run.
 **A bare number is an answer box, not a question.** "Give three details" is
 followed by "1.", "2." and "3." printed alone on the answer lines. A marker
 with nothing after it is never an ask.
+
+**The 2010-2020 booklets are a different examination.** Before the 2021
+redesign the paper heads its sections "SECTION A (70 marks)", rules its
+answer lines with underscores on the ask's own line, heads its questions "2.
+Read the items (a) and (b) below ... (20 marks)" rather than "Question 2", and
+sets Ordinary questions as "N. Lee este artículo ... (50 marks)". Those papers
+are read by the `_old` paths (`OLD_ERA_LAST`), which the 2021-2026 census never
+touches; 2011's three booklets also paint glyphs twice (`_dedup_words`).
+Every one of the 22 written papers and 22 listening booklets of 2010-2020 was
+hand-counted from rendered pages, ask by ask, and agrees with this reader.
 """
 import argparse
 import os
@@ -66,7 +76,10 @@ def papers_dir(subject=SUBJECT):
 # ------------------------------------------------------------- the layout ---
 # A printed marker at the head of a line: "1.", "1. (a)", "(b)", "(iii)".
 NUM_MARK = re.compile(r'^(\d{1,2})\s*\.\s*(?:\(\s*([a-h]|i{1,3}|iv|v)\s*\)\s*)?(.*)$', re.I)
-LETTER_MARK = re.compile(r'^\(\s*([a-h]|i{1,3}|iv|v)\s*\)\s*(.*)$', re.I)
+# Letters run to (j): 2026 Ordinary Q1 prints ten parts, "(j) ¿Para quiénes hay
+# descuento?", the only (j) in the 2021-2026 corpus. "(i)" stays ambiguous
+# here exactly as before; a roman is only ever read inside a lettered part.
+LETTER_MARK = re.compile(r'^\(\s*([a-h]|i{1,3}|iv|v|j)\s*\)\s*(.*)$', re.I)
 
 # The answer lines the paper prints UNDER an ask, which the baseline reader
 # collects as continuation lines of that ask: "Mention three local businesses
@@ -86,7 +99,7 @@ FURNITURE = re.compile(
     r'|Write your answer to Section|Copyright notice|Page \d+$|\d{1,3}$)', re.I)
 
 # The examination's own sections, as the paper heads them.
-SECTION_HEAD = re.compile(r'^Section\s+([ABC])\b\s*(.*)$')
+SECTION_HEAD = re.compile(r'^(?:Section|SECTION)\s+([ABC])\b\s*(.*)$')
 MARKS = re.compile(r'(\d{1,3})\s*marks\b', re.I)
 
 # Higher Section A's two alternatives. 2024 prints "1. (a) Prescribed
@@ -104,6 +117,109 @@ Q_HEAD = re.compile(r'^(?:QUESTION|Question|Q)\s*\.?\s*(\d)\b\s*(.*)$')
 # printed occurrence is the task itself.
 C_TASK = re.compile(r'^(?:Question|Q)?\s*\.?\s*([12])\s*\.?\s*\(\s*([ab])\s*\)\s*(.*)$')
 C_BARE = re.compile(r'^\(\s*([ab])\s*\)\s*(.*)$')
+
+# ------------------------------------------------- the 2010-2020 papers ----
+# The examination was redesigned for 2021 (a 24-page answer book where the
+# 2010-2020 booklets ran to 16). Everything below is read only for a paper set
+# in the old layout, so the 2021-2026 census is untouched by it.
+OLD_ERA_LAST = 2020
+
+# Ruled answer lines and dotted leaders. The old booklets print the candidate's
+# writing space as underscores ON THE SAME LINE as the ask — "(a) le desanimaba
+# (lines 1-20) ______" — and as labelled slots under it: "(a) ______",
+# "(i) ______ (ii) ______", "When: ______". The leader is page furniture, never
+# a word of the question.
+LEADER = re.compile(r'_{2,}|[.…]{4,}|…{2,}')
+# What is left of a labelled answer slot once its leader is gone: "(i) (ii)",
+# "i) ii) iii)", "(a)", "When: Where:".
+OLD_SLOT = re.compile(r'^(?:\(?\s*(?:i{1,3}|iv|v|[a-h])\s*\)\s*)+$', re.I)
+# In the LISTENING booklet a slot may also carry a one-word label — "(i)
+# Width: …… (ii) Length: ……", "When: …… Where: ……" — under ONE question
+# ("What is the width and length of a Padel tennis court?"). The written paper
+# is different: 2010 Ordinary Q5(a) asks for "one criticism that Javier makes
+# of each of the following" and its romans "(ii) buses:", "(iv) pedestrians:"
+# ARE the four prompts, so labels are read as slots in the aural booklet only.
+OLD_AURAL_SLOT = re.compile(
+    r'^(?:\(?\s*(?:i{1,3}|iv|v|[a-h])\s*\)\s*(?:[A-Za-z]+\s*:\s*)?)+$'
+    r'|^(?:[A-Za-z]+\s*:\s*)+$', re.I)
+# The old papers letter up to (j): Ordinary Section A's first comprehension
+# runs (a)-(j) in 2010, 2013 and 2015, and "(i)" there is the ninth LETTER,
+# not a roman — it follows "(h)".
+OLD_LETTER_MARK = re.compile(r'^\(\s*([a-k]|i{1,3}|iv|v)\s*\)\s*(.*)$', re.I)
+ROMANS = ('i', 'ii', 'iii', 'iv', 'v')
+# A question head: "2. Read the items (a) and (b) below ... (20 marks)",
+# "1. Lee este artículo ... (50 marks)". The mark is on the head's own line or
+# the one after it; a numbered PARAGRAPH of a passage never carries one.
+OLD_Q_HEAD = re.compile(r'^(\d)\s*\.\s*(\S.*)$')
+# Higher Section A's literature route: "(a) PRESCRIBED LITERATURE: Josep
+# Lorman: La aventura de Saíd" (2010-2018) or, without the letter, "PRESCRIBED
+# LITERATURE: Eduardo Mendoza: Sin noticias de Gurb" (2019, 2020). The colon
+# separates it from the instruction above it, "(a) PRESCRIBED LITERATURE (La
+# aventura de Saíd) or (b) JOURNALISTIC TEXT.", which names both routes.
+OLD_LIT_HEAD = re.compile(r'^(?:\(\s*a\s*\)\s*)?PRESCRIBED\s+LITERATURE\s*:', re.I)
+# Higher Section C: "1. Attempt either (a) DIALOGUE CONSTRUCTION or (b) LETTER
+# WRITING. (30 marks)", "2. Answer either (a) DIARY ENTRY or (b) NOTE."
+OLD_C_HEAD = re.compile(r'^([12])\s*\.\s*(?:Attempt|Answer)\s+either\b', re.I)
+# The old listening booklet heads each section by number and kind:
+# "1. ANUNCIO: This will be played three times ...", "6. El TIEMPO: ...".
+OLD_AURAL_Q = re.compile(
+    r'^(\d)\s*\.\s*(?:ANUNCIO|DI[ÁA]LOGO|DESCRIPTIVO|EL\s+TIEMPO|UNA\s+NOTICIA)\s*:',
+    re.I)
+
+# Page furniture the 2010-2020 booklets print and the 2021 redesign dropped
+# (2016 Higher's loose-insert page leaves the word "Page" on a row alone):
+# "Page 2 of 16", "Page 7 of 16 / Lch 7 de 16", "OVER", "[Turn over", the
+# blank-page notices and the pointer to the loose sheet.
+OLD_FURNITURE = re.compile(
+    r'^(?:Page\s+\d+\s+of\s+\d+|Page$|Lch\s+\d+|OVER$|\[?\s*Turn over|See Loose Insert'
+    r'|There is no examination material|THIS PAGE|BLANK PAGE|Do not write|\*?\s*PAUSE$'
+    r'|N\.?B\.?\s+For use by Examiner|For use by Examiner)', re.I)
+
+
+def _clean_old(rows, slot=OLD_SLOT):
+    """The old booklets' rows with answer leaders and furniture taken out.
+
+    A row that loses a leader and is then nothing but a slot label — "(a)",
+    "(i) (ii)", "When: Where:" — was a place to write, and goes. A row that was
+    a bare "(b)" with no leader at all is kept: 2016 Ordinary sets the second
+    option of its Section B Question 2 that way, with the task on the lines
+    below it.
+    """
+    out = []
+    for text_row in rows:
+        pno, x, text = text_row
+        had_leader = bool(LEADER.search(text))
+        t = LEADER.sub(' ', text)
+        if had_leader:
+            # What a dotted leader leaves behind: ". .", "..", a lone "…".
+            t = re.sub(r'(?<!\S)[.…]{1,3}(?!\S)', ' ', t)
+        # "* PAUSE" is set at the right margin, on the baseline of whatever
+        # answer line it sits beside.
+        t = re.sub(r'\s*\*\s*PAUSE\s*$', '', t)
+        t = ' '.join(t.split())
+        if not t:
+            continue
+        if had_leader and slot.match(t):
+            continue
+        if OLD_FURNITURE.match(t):
+            continue
+        out.append(Row(pno, x, t, getattr(text_row, 'y', None)))
+    return out
+
+
+# Markers the SEC misprinted, keyed (year, level): the paper is what a student
+# holds, so the census keeps the printed SEQUENCE and renames only the one
+# marker that breaks it, with the evidence beside it.
+#   2010 HL Section C prints Question 2's second option as "(c) You are in
+#     Salamanca ..." directly under "2. Answer either (a) DIARY ENTRY or (b)
+#     NOTE." — there is no (b); the note IS (b).
+#   2015 HL Section B Question 4 prints "(a) What are the benefits of the
+#     siesta?", "(a) How was the Iberdrola company affected ...", "(c) The
+#     Parents Association ..." — the second (a) is (b).
+OLD_MISPRINTS = {
+    (2010, 'hl'): [('C', 2, 'c', 'b', 'You are in Salamanca')],
+    (2015, 'hl'): [('B', 4, 'a', 'b', 'How was the Iberdrola')],
+}
 
 # The listening booklet.
 AURAL_Q = re.compile(r'^Question\s+(\d)\b\s*(.*)$')
@@ -126,6 +242,94 @@ INSERT_SKIP = re.compile(r'^(?:SECTION\s+B|ROINN\s+B|Leaving Certificate|Spanish
                          re.I)
 
 
+class Row(tuple):
+    """(page, x, text) — one printed line — with its height on the page.
+
+    Still a 3-tuple wherever a line is unpacked; `y` (the line's middle as a
+    fraction of the page height) rides alongside it so a card can be placed on
+    the page where the paper printed it — which is how a card finds its Topic
+    Atlas question, whose anchor records the same position.
+    """
+
+    def __new__(cls, page, x, text, y=None):
+        obj = super().__new__(cls, (page, x, text))
+        obj.y = y
+        return obj
+
+
+def _dedup_words(page):
+    """The words of a page whose text layer paints some glyphs TWICE.
+
+    Three 2011 booklets (the Higher paper's pages 4 and 6, its loose sheet and
+    the Ordinary paper's pages 2-5) were produced so that every text run
+    repeats the last glyph of the run before it AT THE SAME POSITION: the 'e'
+    of "Re|ead" is drawn twice at x=212.2-217.5. pymupdf's word list then
+    reads "Re ead the arti icle" for "Read the article", which no ask, title
+    or answer could be lifted from. A glyph drawn where the same glyph was
+    already drawn is one printed character, so it is dropped, and the words
+    are rebuilt from what is left by the gaps between them.
+    """
+    # The repeat is not always at the identical coordinate: it lands up to a
+    # tenth of a point away ("AH|HORA" paints its H at x=428.34 and 428.40),
+    # so a glyph is a repeat when the same character was already drawn within
+    # half a point of it on the same baseline.
+    seen = {}
+    chars = []
+    raw = page.get_text('rawdict')
+    for b in raw['blocks']:
+        for l in b.get('lines', []):
+            for sp in l['spans']:
+                for c in sp['chars']:
+                    x0, y0, x1, y1 = c['bbox']
+                    if c['c'].strip():
+                        near = seen.setdefault((c['c'], round(y0)), [])
+                        if any(abs(x0 - x) < 0.5 for x in near):
+                            continue
+                        near.append(x0)
+                    chars.append((x0, y0, x1, y1, c['c']))
+    rows = []
+    for x0, y0, x1, y1, ch in chars:
+        mid = (y0 + y1) / 2
+        for row in rows:
+            if abs(row['mid'] - mid) <= BASELINE_TOL:
+                row['c'].append((x0, x1, ch, y0, y1))
+                break
+        else:
+            rows.append({'mid': mid, 'c': [(x0, x1, ch, y0, y1)]})
+    words = []
+    for row in rows:
+        cur = None
+        for x0, x1, ch, y0, y1 in sorted(row['c']):
+            if not ch.strip():
+                cur = None
+                continue
+            if cur is not None and x0 - cur[2] <= 1.0:
+                cur[2] = max(cur[2], x1)
+                cur[4] += ch
+            else:
+                cur = [x0, y0, x1, y1, ch]
+                words.append(cur)
+    return [(w[0], w[1], w[2], w[3], w[4]) for w in words]
+
+
+def _has_doubled_glyphs(page):
+    """True where the text layer paints a glyph twice at one position."""
+    seen = {}
+    dup = 0
+    for b in page.get_text('rawdict')['blocks']:
+        for l in b.get('lines', []):
+            for sp in l['spans']:
+                for c in sp['chars']:
+                    if not c['c'].strip():
+                        continue
+                    x0, y0 = c['bbox'][0], c['bbox'][1]
+                    near = seen.setdefault((c['c'], round(y0)), [])
+                    if any(abs(x0 - x) < 0.5 for x in near):
+                        dup += 1
+                    near.append(x0)
+    return dup > 5
+
+
 def _rows(path, page_from=0, page_to=None):
     """[(page, x, text)] — every printed line, in reading order.
 
@@ -140,7 +344,10 @@ def _rows(path, page_from=0, page_to=None):
         last = doc.page_count if page_to is None else page_to
         for pno in range(page_from, last):
             rows = []
-            for x0, y0, x1, y1, word, *_ in doc[pno].get_text('words'):
+            page = doc[pno]
+            words = (_dedup_words(page) if _has_doubled_glyphs(page)
+                     else page.get_text('words'))
+            for x0, y0, x1, y1, word, *_ in words:
                 if not word.strip():
                     continue
                 mid = (y0 + y1) / 2
@@ -153,7 +360,8 @@ def _rows(path, page_from=0, page_to=None):
             for row in sorted(rows, key=lambda r: r['mid']):
                 words = sorted(row['w'])
                 text = ' '.join(w for _x, w in words)
-                out.append((pno, words[0][0], ' '.join(text.split())))
+                out.append(Row(pno, words[0][0], ' '.join(text.split()),
+                               row['mid'] / page.rect.height))
     return out
 
 
@@ -271,8 +479,15 @@ class Region:
         """
         blocks = self.ask_blocks()
         parents = {b.item for b in blocks if b.tok is not None}
+        # A 2010-2020 Ordinary letter can carry printed romans of its own —
+        # 2010 Q5 "(a) Mention one criticism that Javier makes of each of the
+        # following:" then "(i) car drivers:" to "(iv) pedestrians:" — and is
+        # then a stem too. Such a roman keys "a/i".
+        lettered = {(b.item, b.tok.split('/')[0]) for b in blocks
+                    if b.tok and '/' in b.tok}
         return [(b.item, b.tok, b) for b in blocks
-                if b.tok is not None or b.item not in parents]
+                if (b.tok is not None or b.item not in parents)
+                and (b.item, b.tok) not in lettered]
 
     def bind(self, wanted):
         """{(item, tok): Block} for the keys the scheme prices, or None each.
@@ -304,9 +519,14 @@ class EsPaper:
     def __init__(self, year, level, subject=SUBJECT):
         self.year, self.level, self.subject = year, level, subject
         self.path = self._path('000')
-        self.insert_path = self._path('015', optional=True)
+        # 2016 files its loose sheet under a letter O: LC012ALPO15EV.
+        self.insert_path = (self._path('015', optional=True)
+                            or self._path('O15', optional=True))
         self.aural_path = self._path('A00', optional=True)
+        self.old = year <= OLD_ERA_LAST
         self.rows = _rows(self.path)
+        if self.old:
+            self.rows = _clean_old(self.rows)
         self.section_marks = {}
         self.regions = {}
         self.insert_title = None
@@ -359,6 +579,8 @@ class EsPaper:
 
     def _read(self):
         bounds = self._section_bounds()
+        if self.old:
+            return self._read_old(bounds)
         if self.level == 'hl':
             self._read_hl_a(*bounds.get('A', (0, 0)))
             if 'B' in bounds:
@@ -389,6 +611,97 @@ class EsPaper:
                 self._read_q2(i, stop)
             else:
                 self._region(token, i, stop)
+
+    # -- the 2010-2020 written paper ----------------------------------------
+    def _read_old(self, bounds):
+        if self.level == 'hl':
+            self._read_hl_a_old(*bounds.get('A', (0, 0)))
+            if 'B' in bounds:
+                self._region('B', *bounds['B'])
+            if 'C' in bounds:
+                self._read_c(*bounds['C'])
+        else:
+            self._read_ol_old('A', *bounds.get('A', (0, 0)))
+            if 'B' in bounds:
+                self._read_ol_old('B', *bounds['B'])
+        for section, q, printed, real, prefix in OLD_MISPRINTS.get(
+                (self.year, self.level), []):
+            if section == 'C':
+                continue                     # read in _read_c
+            region = self.regions[section]
+            hits = [b for b in region.blocks if b.item == q and b.tok == printed
+                    and b.text.startswith(prefix)]
+            assert len(hits) == 1, (self.year, self.level, section, q, printed)
+            hits[0].tok = real
+
+    def _read_hl_a_old(self, start, end):
+        """Section A, 2010-2020: the literature extract OR the journalistic
+        text, then Question 2's two short items."""
+        cuts = []
+        for i in range(start, end):
+            text = self.rows[i][2]
+            if OLD_LIT_HEAD.match(text):
+                cuts.append((i, 'A1a'))
+            elif JOURNAL_HEAD.match(text):
+                cuts.append((i, 'A1b'))
+            else:
+                m = OLD_Q_HEAD.match(text)
+                if (m and m.group(1) == '2'
+                        and re.match(r'Read the items', m.group(2), re.I)):
+                    cuts.append((i, 'A2'))
+        for n, (i, token) in enumerate(cuts):
+            stop = cuts[n + 1][0] if n + 1 < len(cuts) else end
+            if token == 'A2':
+                self._read_q2_old(i, stop)
+            else:
+                self._region(token, i, stop)
+
+    def _read_q2_old(self, start, end):
+        """Question 2, 2010-2020: "(a) TITLE" then the item then its romans.
+
+        The old paper prints the letter and the item's title on ONE line —
+        "(a) EL CAMINO INCA" — where the 2021 layout sets "(a)" alone.
+        """
+        cuts = []
+        for i in range(start + 1, end):
+            m = LETTER_MARK.match(self.rows[i][2])
+            if m and m.group(1).lower() in 'ab' and m.group(2).strip():
+                cuts.append((i, m.group(1).lower()))
+        head = [self.rows[i][2] for i in range(start, cuts[0][0] if cuts else end)
+                if not FURNITURE.match(self.rows[i][2])]
+        for n, (i, letter) in enumerate(cuts):
+            stop = cuts[n + 1][0] if n + 1 < len(cuts) else end
+            region = self._region(f'A2{letter}', i, stop, item=letter)
+            title = LETTER_MARK.match(self.rows[i][2]).group(2).strip()
+            region.title = region.title or title
+            region.lead_lines[:0] = [h for h in head if h]
+
+    def _read_ol_old(self, section, start, end):
+        """Ordinary, 2010-2020: Section A's five comprehensions, Section B's
+        letter and its note/diary alternatives, each headed "N. ..." with the
+        question's marks on the head's own line or the one below it. A
+        numbered paragraph of a passage never carries a mark."""
+        cuts = []
+        for i in range(start, end):
+            text = self.rows[i][2]
+            m = OLD_Q_HEAD.match(text)
+            if not m:
+                continue
+            # The head may wrap: 2010's letter task runs two lines before its
+            # "(40 marks)" is set at the right margin on a third.
+            priced = bool(MARKS.search(text))
+            for j in range(i + 1, min(i + 3, end)):
+                nxt = self.rows[j][2]
+                if OLD_Q_HEAD.match(nxt) or LETTER_MARK.match(nxt):
+                    break
+                if MARKS.search(nxt):
+                    priced = True
+                    break
+            if priced:
+                cuts.append((i, int(m.group(1))))
+        for n, (i, q) in enumerate(cuts):
+            stop = cuts[n + 1][0] if n + 1 < len(cuts) else end
+            self._region(f'{section}{q}', i, stop, item=q)
 
     def _read_q2(self, start, end):
         """Question 2's two short texts, each with its own (i)-(iii)."""
@@ -444,7 +757,24 @@ class EsPaper:
         """
         found = {}
         cur_q = None
-        for i in range(start, end):
+        if self.old:
+            fixes = {(q, printed): (real, prefix) for section, q, printed, real, prefix
+                     in OLD_MISPRINTS.get((self.year, self.level), []) if section == 'C'}
+            for i in range(start, end):
+                text = self.rows[i][2]
+                m = OLD_C_HEAD.match(text)
+                if m:
+                    cur_q = int(m.group(1))
+                    continue
+                m = re.match(r'^\(\s*([a-c])\s*\)\s*(.*)$', text)
+                if not (m and m.group(2).strip() and cur_q is not None):
+                    continue
+                letter, rest = m.group(1).lower(), m.group(2).strip()
+                if (cur_q, letter) in fixes and rest.startswith(fixes[(cur_q, letter)][1]):
+                    letter = fixes[(cur_q, letter)][0]
+                if letter in 'ab' and (cur_q, letter) not in found:
+                    found[(cur_q, letter)] = (i, rest)
+        for i in range(start, end) if not self.old else ():
             text = self.rows[i][2]
             m = C_TASK.match(text)
             if m and m.group(3).strip():
@@ -487,6 +817,7 @@ class EsPaper:
         cur = None
         cur_item = item
         first_ask = None
+        last_letter = None
         for i in range(start, end):
             pno, _x, text = self.rows[i]
             region.pages.append(pno)
@@ -510,17 +841,40 @@ class EsPaper:
                         # never another question.
                         key = (item, key[1]) if key[1] else None
                     rest = m.group(3)
-            if key is None:
+            if key is None and self.old:
+                m = OLD_LETTER_MARK.match(text)
+                if m:
+                    tok = m.group(1).lower()
+                    ninth = tok == 'i' and last_letter == 'h'
+                    if tok in ROMANS and last_letter is not None and not ninth:
+                        tok = f'{last_letter}/{tok}'
+                    elif tok not in ROMANS or ninth:
+                        last_letter = tok
+                    key = (item if item is not None else cur_item, tok)
+                    rest = m.group(2)
+            elif key is None:
                 m = LETTER_MARK.match(text)
                 if m and m.group(2).strip():
                     tok = m.group(1).lower()
                     key = (item if item is not None else cur_item, tok)
                     rest = m.group(2)
             if key is not None and key[0] is not None:
-                block = Block(pno, key[0], key[1], i)
-                if rest.strip():
-                    block.lines.append(rest.strip())
-                region.blocks.append(block)
+                pieces = [(key[1], rest)]
+                if self.old and key[1] and '/' in key[1]:
+                    # Several printed romans on ONE line, each a prompt of its
+                    # own: 2011 Ordinary Q1(e) "¿Cuales son las asignaturas
+                    # favoritas de:" then "(i) Ana? (ii) Alberto?".
+                    letter = key[1].split('/')[0]
+                    parts = re.split(r'\s+(?=\((?:i{1,3}|iv|v)\)\s)', rest)
+                    pieces = [(key[1], parts[0])]
+                    for part in parts[1:]:
+                        m2 = re.match(r'^\((i{1,3}|iv|v)\)\s*(.*)$', part)
+                        pieces.append((f'{letter}/{m2.group(1)}', m2.group(2)))
+                for tok, piece in pieces:
+                    block = Block(pno, key[0], tok, i)
+                    if piece.strip():
+                        block.lines.append(piece.strip())
+                    region.blocks.append(block)
                 cur = block
                 cur_item = key[0]
                 if first_ask is None:
@@ -597,35 +951,84 @@ class EsPaper:
     @staticmethod
     def _key(token, item, tok):
         """(section, q, letter, roman) for one printed ask."""
+        roman = None
+        if tok and '/' in tok:
+            tok, roman = tok.split('/')
         if token.startswith('A2') and len(token) == 3:
             return ('A2', None, token[2], tok)
         if token in ('A1a', 'A1b', 'B'):
-            return (token, item, tok, None)
+            return (token, item, tok, roman)
         if re.fullmatch(r'C[12][ab]', token):
             return ('C', int(token[1]), token[2], None)
         m = re.fullmatch(r'([AB])(\d)', token)
         if m:
-            return (m.group(1), int(m.group(2)), tok, None)
+            return (m.group(1), int(m.group(2)), tok, roman)
         return None
 
     # -- the listening booklet ----------------------------------------------
-    def aural_asks(self):
-        """[(q, letter, text, page)] for the Listening Comprehension Test.
+    def aural_heads(self):
+        """{question: (the lines printed above its first part, page)}.
 
-        Read for the census only: an ask here is answerable from the recording
-        alone, and es_all.py excludes every one of them with that evidence.
+        What the booklet prints between a question's number and its "(a)":
+        the kind of recording and how it will be played ("ANUNCIO: This will
+        be played three times right through …") and the item's own title in
+        Spanish and English. It is the only context a listening card has
+        before the student presses play.
         """
+        if not self.aural_path:
+            return {}
+        rows = _rows(self.aural_path)
+        if self.old:
+            rows = _clean_old(rows, OLD_AURAL_SLOT)
+        out = {}
+        q = None
+        for pno, _x, text in rows:
+            if AURAL_END.match(text) or (
+                    self.old and re.match(r'^END OF LISTENING', text, re.I)):
+                break
+            if FURNITURE.match(text):
+                continue
+            m = AURAL_Q.match(text) or (self.old and OLD_AURAL_Q.match(text))
+            if m:
+                q = int(m.group(1))
+                rest = AURAL_Q.match(text) and AURAL_Q.match(text).group(2).strip()
+                if self.old:
+                    rest = re.sub(r'^\d\s*\.\s*', '', text)
+                out[q] = ([rest] if rest else [], pno + 1)
+                continue
+            if q is None or q not in out:
+                continue
+            if AURAL_PART.match(text):
+                q = None
+                continue
+            out[q][0].append(text)
+        return out
+
+    def _aural_parts(self, lines_only=False):
+        """[q, letter, lines, page] for every printed part of the listening booklet."""
         if not self.aural_path:
             return []
         out = []
         q = None
         cur = None
-        for pno, _x, text in _rows(self.aural_path):
-            if AURAL_END.match(text):
+        rows = _rows(self.aural_path)
+        if self.old:
+            # The 2010-2020 booklet rules its answer lines with underscores
+            # and dotted leaders, heads each section "1. ANUNCIO: ...", and
+            # ends on "END OF LISTENING COMPREHENSION TEST".
+            rows = _clean_old(rows, OLD_AURAL_SLOT)
+        for pno, _x, text in rows:
+            if AURAL_END.match(text) or (
+                    self.old and re.match(r'^END OF LISTENING', text, re.I)):
+                break
+            # The 2021- booklets print the same closing line before their
+            # copyright notice. The census never needed to stop at it (no part
+            # follows it); a card's question text must not carry it.
+            if lines_only and re.match(r'^END OF LISTENING', text, re.I):
                 break
             if FURNITURE.match(text):
                 continue
-            m = AURAL_Q.match(text)
+            m = AURAL_Q.match(text) or (self.old and OLD_AURAL_Q.match(text))
             if m:
                 q, cur = int(m.group(1)), None
                 continue
@@ -638,9 +1041,22 @@ class EsPaper:
             elif (cur is not None and not text.startswith('*')
                     and not ANSWER_LINE.match(text)):
                 cur[2].append(text)
-        return [(qq, letter, ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
-                for qq, letter, lines, page in out]
+        return out
 
+    def aural_asks(self):
+        """[(q, letter, text, page)] for the Listening Comprehension Test.
+
+        Read for the census: every printed part of the booklet is an ask.
+        """
+        return [(qq, letter, ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
+                for qq, letter, lines, page in self._aural_parts()]
+
+    def aural_ask_lines(self):
+        """[(q, letter, [printed lines], page)]: each listening ask as the
+        booklet sets it out, line by line, for the card. A tick-box ask prints
+        its options one to a line under "Tick (✓) the correct answer:"."""
+        return [(qq, letter, [ANSWER_LINES.sub('', ' '.join(l.split())).strip() for l in lines], page)
+                for qq, letter, lines, page in self._aural_parts(lines_only=True)]
 
 def main():
     ap = argparse.ArgumentParser()

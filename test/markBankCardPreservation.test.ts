@@ -43,6 +43,58 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
+import ordinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
+import ordinary2020P1 from '../components/MarkBank/cards/irish/ordinary-2020-p1-authored.json';
+import ordinary2020P2 from '../components/MarkBank/cards/irish/ordinary-2020-p2-authored.json';
+import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
+import higher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
+import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
+import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
+import higher2019P1 from '../components/MarkBank/cards/irish/higher-2019-p1-authored.json';
+import higher2019P2 from '../components/MarkBank/cards/irish/higher-2019-p2-authored.json';
+import ordinary2019P1 from '../components/MarkBank/cards/irish/ordinary-2019-p1-authored.json';
+import ordinary2019P2 from '../components/MarkBank/cards/irish/ordinary-2019-p2-authored.json';
+import higher2018P1 from '../components/MarkBank/cards/irish/higher-2018-p1-authored.json';
+import higher2018P2 from '../components/MarkBank/cards/irish/higher-2018-p2-authored.json';
+import ordinary2018P1 from '../components/MarkBank/cards/irish/ordinary-2018-p1-authored.json';
+import ordinary2018P2 from '../components/MarkBank/cards/irish/ordinary-2018-p2-authored.json';
+import higher2017P1 from '../components/MarkBank/cards/irish/higher-2017-p1-authored.json';
+import higher2017P2 from '../components/MarkBank/cards/irish/higher-2017-p2-authored.json';
+import ordinary2017P1 from '../components/MarkBank/cards/irish/ordinary-2017-p1-authored.json';
+import ordinary2017P2 from '../components/MarkBank/cards/irish/ordinary-2017-p2-authored.json';
+import higher2016P1 from '../components/MarkBank/cards/irish/higher-2016-p1-authored.json';
+import higher2016P2 from '../components/MarkBank/cards/irish/higher-2016-p2-authored.json';
+import ordinary2016P1 from '../components/MarkBank/cards/irish/ordinary-2016-p1-authored.json';
+import ordinary2016P2 from '../components/MarkBank/cards/irish/ordinary-2016-p2-authored.json';
+import higher2015P1 from '../components/MarkBank/cards/irish/higher-2015-p1-authored.json';
+import higher2015P2 from '../components/MarkBank/cards/irish/higher-2015-p2-authored.json';
+import ordinary2015P1 from '../components/MarkBank/cards/irish/ordinary-2015-p1-authored.json';
+import ordinary2015P2 from '../components/MarkBank/cards/irish/ordinary-2015-p2-authored.json';
+import higher2014P1 from '../components/MarkBank/cards/irish/higher-2014-p1-authored.json';
+import higher2014P2 from '../components/MarkBank/cards/irish/higher-2014-p2-authored.json';
+import ordinary2014P1 from '../components/MarkBank/cards/irish/ordinary-2014-p1-authored.json';
+import ordinary2014P2 from '../components/MarkBank/cards/irish/ordinary-2014-p2-authored.json';
+import higher2013P1 from '../components/MarkBank/cards/irish/higher-2013-p1-authored.json';
+import higher2013P2 from '../components/MarkBank/cards/irish/higher-2013-p2-authored.json';
+import ordinary2013P1 from '../components/MarkBank/cards/irish/ordinary-2013-p1-authored.json';
+import ordinary2013P2 from '../components/MarkBank/cards/irish/ordinary-2013-p2-authored.json';
+import higher2012P1 from '../components/MarkBank/cards/irish/higher-2012-p1-authored.json';
+import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-authored.json';
+import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
+import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-authored.json';
+import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
+import ordinary2011P1 from '../components/MarkBank/cards/irish/ordinary-2011-p1-authored.json';
+import ordinary2011P2 from '../components/MarkBank/cards/irish/ordinary-2011-p2-authored.json';
+import higher2011Aural from '../components/MarkBank/cards/irish/higher-2011-aural-authored.json';
+import higher2011P1 from '../components/MarkBank/cards/irish/higher-2011-p1-authored.json';
+import higher2011P2 from '../components/MarkBank/cards/irish/higher-2011-p2-authored.json';
+import ordinary2010Aural from '../components/MarkBank/cards/irish/ordinary-2010-aural-authored.json';
+import ordinary2010P1 from '../components/MarkBank/cards/irish/ordinary-2010-p1-authored.json';
+import ordinary2010P2 from '../components/MarkBank/cards/irish/ordinary-2010-p2-authored.json';
+import higher2010Aural from '../components/MarkBank/cards/irish/higher-2010-aural-authored.json';
+import higher2010P1 from '../components/MarkBank/cards/irish/higher-2010-p1-authored.json';
+import higher2010P2 from '../components/MarkBank/cards/irish/higher-2010-p2-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -127,6 +179,156 @@ import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+// Additive partial-review routes are checked separately while the original
+// Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
+// The 2022/2024 optional-drama routes were withdrawn on 2026-10-12 (branch-only, never
+// live): the live 2B(a) card now carries the optional film or play. The 2022 3B(a) device
+// routes (-iomhanna, -codarsnacht, -mothuchain) were withdrawn on 2026-11-04 the same way
+// (decision 4): the live 3B(a) card carries the printed choice.
+const addedIrishRoutes = new Set([
+  'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
+  ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
+    ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),
+  ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
+  ...['1-bi','4-bi','4-bii','5-bii'].flatMap(key => [1,2].map(slot => `irish-2024-hl-p2-reading-b-q${key}-${slot}`)),
+  ...[1,2].map(slot => `irish-2024-hl-p2-reading-b-q6-b-${slot}`),
+  // 2026 Higher Paper 1, paper-reviewed 2026-10-11: 23 listening questions and 9 composition titles.
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2','a-f1-q3','a-f2-q1','a-f2-q2','a-f2-q3',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-first-q3','b-c1-second-q1','b-c1-second-q2',
+    'b-c2-first-q1','b-c2-first-q2','b-c2-first-q3','b-c2-second-q1','b-c2-second-q2','b-c2-second-q3',
+    'c-p1-q1','c-p1-q2','c-p1-q3','c-p2-q1','c-p2-q2'].map(key => `irish-2026-hl-p1-listening-${key}`),
+  ...['a-a','a-b','a-c','a-d','a-e','b-a','b-b','c-a','c-b'].map(key => `irish-2026-hl-p1-composition-${key}`),
+  // 2026 Higher Paper 2, paper-reviewed 2026-10-11: 56 reading cards and 16 literature routes.
+  ...['a','b'].flatMap(passage => [1,2,3,4,5,6].flatMap(number => [
+    `irish-2026-hl-p2-reading-${passage}-q${number}`,
+    ...(number === 6 ? ['a','b'] : ['a','bi','bii']).map(part => `irish-2026-hl-p2-reading-${passage}-q${number}-${part}`),
+  ])),
+  ...['a-q6-b','b-q1-bii','b-q2-bi','b-q2-bii','b-q4-bii'].flatMap(key => [1,2].map(slot => `irish-2026-hl-p2-reading-${key}-${slot}`)),
+  ...['prose-2a-a-caca-milis','prose-2a-a-an-lasair-choille','prose-2a-b','prose-2b-a','prose-2b-b',
+    'poetry-3a-a','poetry-3a-b','poetry-3b-a','poetry-3b-b',
+    'literature-4-a','literature-4-b','literature-4-c','literature-4-d','literature-4-e','literature-4-f'].map(key => `irish-2026-hl-p2-${key}`),
+  // 2025 Higher Paper 2 (reviewed 2026-10-11): every published reading part beside the
+  // retained whole questions, the 1 + 1 answer slots and the 6 + 6 point slots.
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`, `reading-${p}-q6-b-1`, `reading-${p}-q6-b-2`]))
+    .concat(['reading-a-q5-bi','reading-b-q2-bi','reading-b-q4-bi','reading-b-q5-bi','reading-b-q5-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2025-hl-p2-${key}`),
+  // 2023 Higher Paper 2 (reviewed 2026-10-12): every published reading part, the 1 + 1 answer
+  // slots and the A 6(b) trait slots (B 6(b) is opinion + two points inside one response).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`]))
+    .concat(['reading-a-q6-b','reading-a-q3-bi','reading-a-q4-bi','reading-b-q2-bii','reading-b-q3-bi','reading-b-q3-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2023-hl-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...higher2022P2.cards.map(card => card.id),
+  ...higher2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...higher2020P1.cards.map(card => card.id),
+  ...higher2020P2.cards.map(card => card.id),
+  ...higher2019P1.cards.map(card => card.id),
+  ...higher2019P2.cards.map(card => card.id),
+  ...higher2018P1.cards.map(card => card.id),
+  ...higher2018P2.cards.map(card => card.id),
+  ...higher2017P1.cards.map(card => card.id),
+  ...higher2017P2.cards.map(card => card.id),
+  ...higher2016P1.cards.map(card => card.id),
+  ...higher2016P2.cards.map(card => card.id),
+  ...higher2015P1.cards.map(card => card.id),
+  ...higher2015P2.cards.map(card => card.id),
+  ...higher2014P1.cards.map(card => card.id),
+  ...higher2014P2.cards.map(card => card.id),
+  ...higher2013P1.cards.map(card => card.id),
+  ...higher2013P2.cards.map(card => card.id),
+  ...higher2012P1.cards.map(card => card.id),
+  ...higher2012P2.cards.map(card => card.id),
+  ...higher2011Aural.cards.map(card => card.id),
+  ...higher2011P1.cards.map(card => card.id),
+  ...higher2011P2.cards.map(card => card.id),
+  ...higher2010Aural.cards.map(card => card.id),
+  ...higher2010P1.cards.map(card => card.id),
+  ...higher2010P2.cards.map(card => card.id),
+]);
+
+// Paper-reviewed Ordinary additions are tracked the same way beside the frozen
+// 185-ID Ordinary hash (2026 Ordinary Papers 1 and 2, reviewed 2026-10-11).
+// The SEC's deferred Irish sittings (irish_deferred.py, from 2026-11-12, "irish-2025-hl-deferred-p1-…") join as
+// additions, each its own sitting and every id new (pinned per level below).
+const irishDeferredIds = new Set([...IRISH_HIGHER, ...IRISH_ORDINARY]
+  .filter(card => /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id)).map(card => card.id));
+const addedIrishOrdinaryRoutes = new Set([
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
+    'c-p1-q1','c-p1-q2','c-p2-q1','c-p2-q2'].map(key => `irish-2026-ol-p1-listening-${key}`),
+  // Each printed title once (choice is not a route: no two-section combination cards).
+  ...['a-i','a-ii','a-iii','b-i','b-ii','c-i','c-ii','d-i','d-ii'].map(key => `irish-2026-ol-p1-composition-${key}`),
+  // 2026 Ordinary Paper 2: ten reading questions and their twenty parts, and the
+  // prescribed/optional literature routes with printed sub-questions (no combination cards).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}`, `reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .map(key => `irish-2026-ol-p2-${key}`),
+  ...(() => {
+    const parts = (route: string, labels: string[]) => [route, ...labels.map(label => `${route}-${label}`)];
+    const five = ['i','ii','iii','iv','v'], three = ['i','ii','iii'];
+    const routes = [
+      ...parts('prose-2a-a-caca-milis', five), ...parts('prose-2a-a-an-lasair-choille', five), 'prose-2a-b', ...parts('prose-2a-c', five),
+      // The optional film or play is one card (one grid, one Atlas heading).
+      'prose-2b-a', 'prose-2b-b', 'prose-2b-c',
+      ...parts('poetry-3a-a', three), ...parts('poetry-3a-b', [...three, 'i-a', 'i-b', 'i-c', 'i-d']), ...parts('poetry-3a-c', three),
+      'poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c',
+    ];
+    return routes.map(key => `irish-2026-ol-p2-${key}`);
+  })(),
+  // 2025 Ordinary Paper 2 (reviewed 2026-10-12): the twenty reading parts beside the retained
+  // whole questions, and each prescribed poem's printed sub-questions (3A(a)(i) has three).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c'].map(slot => `poetry-3a-a-i-${slot}`))
+    .map(key => `irish-2025-ol-p2-${key}`),
+  // 2024 Ordinary Paper 2 (reviewed 2026-10-12): reading parts, the printed 2A(a)/(b) and 3A
+  // sub-questions, the four 3A(b)(i) questions and the An Lasair Choille option of 2A(c).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b'].flatMap(text => ['i','ii','iii','iv','v'].map(part => `prose-2a-${text}-${part}`)))
+    .concat(['prose-2a-c-an-lasair-choille'])
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c','d'].map(slot => `poetry-3a-b-i-${slot}`))
+    .map(key => `irish-2024-ol-p2-${key}`),
+  // 2023 Ordinary Paper 2 (reviewed 2026-10-13): reading parts, the five 2A(a) Hurlamaboc and nine 3A
+  // sub-questions and the An Lasair Choille option of 2A(c).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['i','ii','iii','iv','v'].map(part => `prose-2a-a-${part}`))
+    .concat(['prose-2a-c-an-lasair-choille'])
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .map(key => `irish-2023-ol-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...ordinary2022P2.cards.map(card => card.id),
+  ...ordinary2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...ordinary2020P1.cards.map(card => card.id),
+  ...ordinary2020P2.cards.map(card => card.id),
+  ...ordinary2019P1.cards.map(card => card.id),
+  ...ordinary2019P2.cards.map(card => card.id),
+  ...ordinary2018P1.cards.map(card => card.id),
+  ...ordinary2018P2.cards.map(card => card.id),
+  ...ordinary2017P1.cards.map(card => card.id),
+  ...ordinary2017P2.cards.map(card => card.id),
+  ...ordinary2016P1.cards.map(card => card.id),
+  ...ordinary2016P2.cards.map(card => card.id),
+  ...ordinary2015P1.cards.map(card => card.id),
+  ...ordinary2015P2.cards.map(card => card.id),
+  ...ordinary2014P1.cards.map(card => card.id),
+  ...ordinary2014P2.cards.map(card => card.id),
+  ...ordinary2013P1.cards.map(card => card.id),
+  ...ordinary2013P2.cards.map(card => card.id),
+  ...ordinary2012P1.cards.map(card => card.id),
+  ...ordinary2012P2.cards.map(card => card.id),
+  ...ordinary2011Aural.cards.map(card => card.id),
+  ...ordinary2011P1.cards.map(card => card.id),
+  ...ordinary2011P2.cards.map(card => card.id),
+  ...ordinary2010Aural.cards.map(card => card.id),
+  ...ordinary2010P1.cards.map(card => card.id),
+  ...ordinary2010P2.cards.map(card => card.id),
+]);
+
 const decks = [
   // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
   // No prior Politics IDs existed. All prior subject preservation checks and
@@ -713,11 +915,10 @@ const decks = [
    * keys of the frozen form (frozenIds). Never rebaseline these two pins. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
-  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
-   * responses across 2021–2025 Higher and Ordinary are present, including
-   * listening audio and the real PDF pages for passages and printed poems. */
-  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
-  ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  /* Original 400 Irish identities. Their presence does not establish coverage
+   * of every task or route; the full 2010–2026 review remains in progress. */
+  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id) && !irishDeferredIds.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  ['irish:ordinary', IRISH_ORDINARY.filter(card => !addedIrishOrdinaryRoutes.has(card.id) && !irishDeferredIds.has(card.id)), 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
    * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
@@ -735,9 +936,30 @@ const decks = [
   ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
-   * other subject. */
-  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
+   * other subject.
+   * 2026-11-05, the every-printed-ask lane (compsci_lane.py, one module per
+   * sitting): the 336 shipped cards are unchanged and keep their ids; each
+   * sitting's open asks are added on top. 2026 Higher, 48 asks, 48 cards:
+   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168.
+   * 2025 Higher, the 15 asks the August cards missed: 257 -> 272.
+   * 2025 Ordinary, the 8 asks the August cards missed: 168 -> 176.
+   * 2024 Higher, the 3 asks the August cards missed: 272 -> 275.
+   * 2024 Ordinary, the 3 asks the August cards missed: 176 -> 179.
+   * 2023 Higher, the 10 asks the August cards missed: 275 -> 285.
+   * 2023 Ordinary, the 10 asks the August cards missed: 179 -> 189.
+   * 2022 Higher, the 8 asks the August cards missed: 285 -> 293.
+   * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205.
+   * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
+   * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
+   * 2020 Higher, every printed ask (the bank held none): 302 -> 349.
+   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213.
+   * 2025 Ordinary re-authored (batch 1b); its whole-question cards cs-2025-ol-q13, -q14 and -q15 split per the coordinator's ruling of 5 Nov and withdrawn onto -q13-a-ii, -q14-c and -q15-b-i: 213 -> 215.
+   * 2022 Higher re-authored (batch 1b); its whole-question card cs-2022-hl-q14 split per the coordinator's ruling of 5 Nov and withdrawn onto -q14-a-i: 349 -> 350.
+   * 2022 Ordinary re-authored (batch 1b); its Section C card cs-2022-ol-q16 (seven parts, over the six-row cap) split into Q16(a)(i)-(vii) and withdrawn onto -q16-a-i: 215 -> 221.
+   * 2024 Ordinary re-authored (batch 1b); its whole-question card cs-2024-ol-q16, beside cs-2024-ol-q16-b, split per the coordinator's ruling of 5 Nov into Q16(a)(i)-(vi) and withdrawn onto -q16-a-i: 221 -> 226.
+   * 2021 Ordinary re-authored (batch 1b); cs-2021-ol-q15 (whole Q15 beside its part cards) withdrawn onto -q15-b-i and cs-2021-ol-q16 (whole Section C, seven parts) onto -q16-a-i, per the coordinator's ruling of 5 Nov: 226 -> 232. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 350, '909b43be51e58055828602aafa0b8ee95b8735dbc7d18422b15f89a8374a4249'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 232, '73a289b4847405f7c65dfc4fb6b2fa059345d43a855e4c87ad2910e3ebad1ba1'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -772,9 +994,41 @@ const decks = [
   ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
-   * added and none replacing anything. Nothing in any other deck moved. */
-  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
-  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
+   * added and none replacing anything. Nothing in any other deck moved.
+   * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added.
+   * 2026 Ordinary, 29 band-grid cards, added.
+   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2020 Higher, 25 band-grid cards, added.
+   * 2019 Higher, 24 band-grid cards, added; I(b)(i) held for a ruling, no card.
+   * 2019 Ordinary, 23 band-grid cards, added.
+   * 2018 Higher, 22 band-grid cards, added; B(a)(i) held for a ruling, no card.
+   * 2018 Ordinary, 27 band-grid cards, added.
+   * 2019 Higher I(b)(i) and 2018 Higher B(a)(i), held for the overlapping-band ruling, added: 2 band-grid cards.
+   * 2017 Higher, 21 band-grid cards, added.
+   * 2017 Ordinary, 25 band-grid cards, added; C(a) held.
+   * 2016 Higher, 18 band-grid cards, added.
+   * 2016 Ordinary, 20 band-grid cards, added; six held.
+   * 2015 Higher, 23 band-grid cards, added; B(a)(ii) held.
+   * 2015 Ordinary, 26 band-grid cards, added.
+   * 2014 Higher, 19 band-grid cards, added.
+   * 2014 Ordinary, 20 band-grid cards, added; three held.
+   * 2017 Higher re-read with the Question Descriptor table; ids kept.
+   * 2017 Ordinary C(a), held for the 10-mark ruling, added.
+   * 2016 Higher re-read with the Question Descriptor table; ids kept.
+   * 2016 Ordinary's six held 10-mark asks added.
+   * 2015 Higher B(a)(ii), held for the 10-mark ruling, added.
+   * 2015 Ordinary re-read with the Question Descriptor table; ids kept.
+   * 2014 Higher re-read with the Question Descriptor table; ids kept.
+   * 2014 Ordinary's three held 10-mark asks added.
+   * 2012 Higher, 20 band-grid cards, added.
+   * 2012 Ordinary, 25 band-grid cards, added.
+   * 2011 Higher, 20 band-grid cards, added.
+   * 2011 Ordinary, 24 band-grid cards, added.
+   * 2010 Higher, 19 band-grid cards, added.
+   * 2010 Ordinary, 27 band-grid cards, added; RE 786/786. */
+  ['religious-education:higher', RE_HIGHER, 377, 'e1ddd166820471f24d92b0f1dd503e76b88358236a711083e810180cd3039082'],
+  ['religious-education:ordinary', RE_ORDINARY, 409, '5636dcd4ddba13d3760eee5d50ba7075a5fc3df46bb4c2c6490ad6c0ead11da4'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1018,6 +1272,8 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
+// [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
+const ENGINEERING_ADDITIONS = [1715, 'c1ec971168a80aeb0ede9e80cded118f1e330946232b46c222b750ca3fbc5501'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1064,6 +1320,45 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2010: { higher: 58, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
+ * identity hashes above). The languages lane (2026-11-05) cards every further
+ * sitting on top, one sitting per commit, pinned here per year and level and
+ * never folded into the frozen hashes. */
+const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 74, ordinary: 55 },
+  2020: { higher: 73, ordinary: 51 },
+  2019: { higher: 74, ordinary: 55 },
+  2018: { higher: 74, ordinary: 55 },
+  2017: { higher: 74, ordinary: 53 },
+  2016: { higher: 75, ordinary: 53 },
+  2015: { higher: 76, ordinary: 57 },
+  2014: { higher: 76, ordinary: 54 },
+  2013: { higher: 76, ordinary: 57 },
+  2012: { higher: 76, ordinary: 55 },
+};
+/* 2021-2025 shipped their reading cards before the lane; their listening,
+ * writing and direction asks were excluded then and are carded on top (batch
+ * 2, from 2026-11-12), one sitting per commit, pinned here per year and level.
+ * Those cards are known by their address: Section L, Higher B Q5 and Section C,
+ * Higher A1a Q5 and A1b Q4, Ordinary Section B. No frozen id has one. */
+const SPANISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 33, ordinary: 25 },
+  2024: { higher: 33, ordinary: 25 },
+  2023: { higher: 33, ordinary: 25 },
+  2022: { higher: 33, ordinary: 25 },
+  2021: { higher: 33, ordinary: 26 },
+};
+const SPANISH_ADDED_TO_FROZEN_ID = /^es-202[1-5]-(?:hl-(?:l-|b-5$|c-|a1a-5$|a1b-4$)|ol-(?:l-|b-))/;
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in SPANISH_ADDED
+  || (Number(id.slice(3, 7)) in SPANISH_ADDED_TO_FROZEN && SPANISH_ADDED_TO_FROZEN_ID.test(id)));
+const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPANISH_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
+/* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
+ * addition on top of the frozen 2020-2026 set, never a replacement -- those
+ * sittings had no card at all before. Pinned per level, count and id hash,
+ * beside the frozen set (technologyAdditions below). */
+const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
 /* Design & Communication Graphics (the 2010-2018 lane, from 2026-11-05):
  * every 2010-2018 card is an addition on top of the frozen 2019-2026 set,
  * never a replacement -- those sittings had no card at all before. Pinned per
@@ -1086,6 +1381,13 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
+// deck pins; each sitting's added cards are listed in the lane's ledger
+// (scripts/markbank/authoring/eng_residue/additions.json) and counted on top,
+// pinned by their own count and hash below. Cards a sitting rebuilds under
+// their own ids are not additions and stay in the frozen hash.
+const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1665,15 +1967,36 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+/* 2026-11-04: History's essays, its Ordinary parts B and C and the documents
+ * question's Q4 are carded as `history-essay` rubric cards (the scheme marks
+ * them by paragraph or by Core Statement and prints no model answer); 2026 is
+ * carded for the first time; and the one documents part priced by its split
+ * alone becomes a point card. Every one is NEW: no id is replaced and the
+ * frozen History set above is unchanged, so the additions are pinned on their
+ * own below. The years before 2021 join the same way, a paper at a time,
+ * from 2020 back (lane batch 3). */
+const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
+const HISTORY_ADDITIONS = {
+  counts: [1775, 2419],
+  hashes: ['edd7cca52497d08fc3979826d166f90f4f0e57b385e56d918bd61fc55fc4c69d', 'bdd6851049300440081b2e6e59d5695fcbd0466a08b7a95594508aeb9651eb28'],
+};
+// The deferred sittings (2022-2023, "hist-2023-hl-deferred-lm-...") join the
+// same way, each its own sitting and every id new.
+const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
+    || card.id.includes('-deferred-'))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
     // two independently priced tasks. Keep the old progress identity in the
     // frozen set through its alias; the two child IDs are additions.
     const splitIds = new Set(['tech-2024-hl-b3d-i', 'tech-2024-hl-b3d-ii']);
-    return [...ids.filter(id => !splitIds.has(id)), 'tech-2024-hl-b3d'];
+    return [...ids.filter(id => !splitIds.has(id) && !isTechnologyAdded(id)), 'tech-2024-hl-b3d'];
   }
+  if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
   if (name.startsWith('economics:')) {
@@ -1684,6 +2007,8 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
+  if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1734,9 +2059,13 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
+const technologyAdditions = {
+  higher: [TECHNOLOGY_HIGHER, 651, 'ce17746e8c42370352bcd6cbc13f9c8cf09b69c1f62e3f5e91144b243f964563'],
+  ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
+} as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 48, '76123d0f8ce2e1b953849ddb63c80063dd3c9c28013e13f0f1fd805f36470e53'],
-  ordinary: [DCG_ORDINARY, 34, '1993648c9d5f7831b1ffacc16a12804129515b8cefc589ce9fb4d0c7249c5e30'],
+  higher: [DCG_HIGHER, 396, '6c6503b5668af936a2af5746c53a507656a6c16e0388385740142fc6ae654d21'],
+  ordinary: [DCG_ORDINARY, 279, '3c74ae028f53f1678bd4ba6792c99a55c47f0e34116f4e99401a73d377d1a18a'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1752,11 +2081,102 @@ describe('Mark Bank card preservation', () => {
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
+  it.each(Object.entries(technologyAdditions))('pins the Technology %s 2010-2019 additions beside the frozen set', (_, [cards, count, hash]) => {
+    // Added sitting by sitting, each a card per printed ask the census reads
+    // (reconcile.py technology): 2019 Higher 84, 2019 Ordinary 83, 2018 Higher 85
+    // (83 cards: Q8 is a printed choice, one card for its three terms), 2018 Ordinary 82,
+    // 2017 Higher 86, 2017 Ordinary 82 (79 cards: Q2, Q5 and Q8 print tariffs
+    // that are not one term per roman, so each is one card), 2016 Higher 88
+    // (87 cards: Q3's "(2+2+2)" over two romans is one card).
+    const additions = cards.map(card => card.id).filter(isTechnologyAdded);
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
+  });
+
+  it('pins the Engineering lane additions beside the frozen set', () => {
+    // One line per sitting, as each lands (eng_residue/<sitting>.py says why
+    // every card exists; rebuilt cards keep their ids and are not listed).
+    //   2021 HL: +9 (554 -> 563); q2-d-ii, q3-b-iii, q5-b-i, q5-b-iii, q7-c-i rebuilt in place
+    //   2021 OL: +18 (563 -> 581); q1-i, q3-d, q3-d-i, q3-d-ii, q7-a-i, q7-c-ii rebuilt in place
+    //   2022 HL: +10 (581 -> 591); q3-b-i rebuilt in place
+    //   2022 OL: +17 (591 -> 608; two more than its 15 open asks: Q3(d)'s OR branch carded per roman); q3-d, q3-d-i rebuilt in place
+    //   2023 HL: +12 (608 -> 620); q3-b-i, q3-b-ii, q3-b-iii rebuilt in place
+    //   2023 OL: +9 (620 -> 629); q2-c-ii, q3-d-i, q3-d-ii, q5-a-ii, q6-c-i, q7-b-i, q7-b-iv rebuilt in place
+    //   2024 HL: +9 (629 -> 638); q7-a-iii, q9-b-ii rebuilt in place
+    //   2024 OL: +16 (638 -> 654; Q6(c)(ii)/(iii)'s CNC branch carded apart, priced differently); q1-k, q2-b-iii, q2-c-ii, q3-a, q5-a-ii, q6-a, q6-b, q6-c-ii, q6-c-iii, q7-a-i, q7-b, q7-b-iv rebuilt in place
+    //   2025 HL: +10 (654 -> 664; Q3(b)(i) and (ii) on one card, one graph answering both); q3-b-iii rebuilt in place
+    //   2025 OL: +24 (664 -> 688); eng-2025-ol-q2-c-i stays withdrawn, its successor is q2-c-i-v2; q1-l, q2-c-ii, q3-a, q4-c-i, q4-c-iv, q5-a-i, q5-d, q6-c-i, q6-c-iii rebuilt in place
+    //   2026 HL: +89 (688 -> 777; the sitting's first cards; Q6(c)'s robotic-arm branch carded apart, priced differently)
+    //   2026 OL: +60 (777 -> 837; the sitting's first cards; Q7(c)'s PCB branch carded apart, priced differently)
+    //   2020 HL: +78 (837 -> 915; the sitting's first cards; Q1 Section B (n)-(r) newly in the census; Q7(c)'s CNC branch carded apart, priced differently)
+    //   2019 HL: +75 (915 -> 990)
+    //   2019 OL: +53 (990 -> 1043)
+    //   2018 HL: +76 (1043 -> 1119)
+    //   2018 OL: +54 (1119 -> 1173)
+    //   2017 HL: +76 (1173 -> 1249)
+    //   2017 OL: +50 (1249 -> 1299)
+    //   2016 HL: +73 (1299 -> 1372)
+    //   2016 OL: +48 (1372 -> 1420)
+    //   2015 HL: +66
+    //   2015 OL: +49
+    //   2014 HL: +70
+    //   2014 OL: +46
+    //   2013 HL: +72
+    //   2013 OL: +46
+    //   2012 HL: +72
+    //   2012 OL: +45
+    //   2011 HL: +70
+    //   2011 OL: +46
+    //   2010 HL: +69
+    //   2010 OL: +42
+    //   2022 HL deferred: +74
+    //   2023 HL deferred: +82
+    const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
+    for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
+    expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
+    expect(idHash([...engineeringAdditionIds])).toBe(ENGINEERING_ADDITIONS[1]);
+  });
+
+  it('pins the History additions beside the frozen set', () => {
+    // Re-pinned at every History sitting (lane batch 2): the counts and hashes
+    // are the additions as shipped, so a regeneration that drops or renames
+    // one fails here.
+    const higher = HISTORY_HIGHER.map(card => card.id).filter(id => historyEssayIds.has(id));
+    const ordinary = HISTORY_ORDINARY.map(card => card.id).filter(id => historyEssayIds.has(id));
+    expect([higher.length, ordinary.length]).toEqual(HISTORY_ADDITIONS.counts);
+    expect([idHash(higher), idHash(ordinary)]).toEqual(HISTORY_ADDITIONS.hashes);
+    for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+  });
+
   it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 additions beside the frozen set', (_, [cards, count, hash]) => {
     // Added sitting by sitting, each a card per priced unit of the scheme
     // against the census's printed asks (reconcile.py dcg): 2018 Higher 48
     // cards for its 39 asks (B-1(a), C-1(a) and C-5(a) are priced in named
-    // groups, a card each), 2018 Ordinary 34 for its 30 (C-5 in six groups).
+    // groups, a card each), 2018 Ordinary 34 for its 30 (C-5 in six groups);
+    // 2017 Higher 46 for its 36 (B-3(a) under three printed heads, C-1(a) in
+    // four earthworks sections, C-5(a) in eight named groups); 2017 Ordinary
+    // 33 for its 29 (C-5 in five named groups); 2016 Higher 43 for its 35
+    // (C-1(a) in three earthworks pieces, C-5(a) in eight named groups);
+    // 2016 Ordinary 32 for its 26 (A-2 in two printed heads, C-5 in six
+    // named groups); 2015 Higher 45 for its 33 (B-1(a) under three printed
+    // heads, B-2(c) two, C-1(a) four earthworks sections, C-5(a) eight);
+    // 2015 Ordinary 35 for its 28 (A-3 under two heads, C-5 in seven);
+    // 2014 Higher 47 for its 34 (B-2(b) under two heads, C-1(a) in five
+    // earthworks pieces, C-5(a) in nine named groups); 2014 Ordinary 29 for
+    // its 25 (A-4 under two heads, C-5 in four named groups); 2013 Higher 44
+    // for its 37 (B-2(b) under two heads, C-1(a) in four earthworks pieces,
+    // C-5(a) in nine named groups; C-1(a)(i)-(ii) one unit); 2013 Ordinary
+    // 29 for its 24 (A-3 priced with no head, one card; C-5 in six groups);
+    // 2012 Higher 42 for its 33 (A-3 priced with no head, one card; A-4 and
+    // B-2(c) under printed heads, C-1(a) in four pieces, C-5(a) in eight);
+    // 2012 Ordinary 29 for its 23 (A-4 priced with no head, one card; C-5 in
+    // seven named groups); 2011 Higher 40 for its 34 (A-3 priced with no head,
+    // one card; B-1(c) under three heads, C-1(a) in four pieces, C-5(a) in
+    // six named groups); 2011 Ordinary 28 for its 23 (C-5 in six groups);
+    // 2010 Higher 41 for its 31 (B-1(b) under three heads, C-1(a) in four
+    // pieces, C-5(a) in seven named groups); 2010 Ordinary 30 for its 23
+    // (B-1 under two heads, C-4(a) under two, C-5 in six named groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -1802,6 +2222,23 @@ describe('Mark Bank card preservation', () => {
     }
     expect(artAliasIds.filter(isArtAdded)).toEqual([]);
     expect(cards.filter(card => !isArtAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
+  it('adds each further Spanish sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...SPANISH_HIGHER, ...SPANISH_ORDINARY];
+    for (const [year, counts] of Object.entries(SPANISH_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`es-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(SPANISH_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && SPANISH_ADDED_TO_FROZEN_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);
   });
 
@@ -1852,10 +2289,68 @@ describe('Mark Bank card preservation', () => {
     // and 2022 OL C2(d) split into (i) and (ii), the old id aliased onto (i):
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
+    // Computer Science (2026-11-05, the every-printed-ask lane): its 336 cards
+    // are unchanged and each sitting's open asks are carded on top, none
+    // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391. 2026 Ordinary, 41
+    // asks, 41 cards: 23,432.
+    // 2025 Higher residue, 15 asks, 15 cards: 23,447.
+    // 2025 Ordinary residue, 8 asks, 8 cards: 23,455.
+    // 2024 Higher residue, 3 asks, 3 cards: 23,458.
+    // 2024 Ordinary residue, 3 asks, 3 cards: 23,461.
+    // 2023 Higher residue, 10 asks, 10 cards: 23,471.
+    // 2023 Ordinary residue, 10 asks, 10 cards: 23,481.
+    // 2022 Higher residue, 8 asks, 8 cards: 23,489.
+    // 2022 Ordinary residue, 16 asks, 16 cards: 23,505.
+    // 2021 Higher residue, 9 asks, 9 cards: 23,514.
+    // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
+    // 2020 Higher, 47 asks, 47 cards: 23,565.
+    // 2023 Ordinary Q13 split, -1 whole + 5 parts: 23,569.
+    // 2025 Ordinary splits, -3 whole + 5 parts: 23,571.
+    // 2022 Higher split, -1 whole + 2 parts: 23,572.
+    // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
+    // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
+    // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
+    // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
+    // Religious Education 2026 Ordinary, 29 asks, 29 band-grid cards: 23,646.
+    // Religious Education 2025 Higher rebuilt in place, 28 ids kept: 23,646.
+    // Religious Education 2025 Ordinary rebuilt in place, 33 ids kept: 23,646.
+    // Religious Education 2020 Higher, 25 asks, 25 band-grid cards: 23,671.
+    // Religious Education 2019 Higher, 25 asks, 24 band-grid cards (I(b)(i) held): 23,695.
+    // Religious Education 2019 Ordinary, 23 asks, 23 band-grid cards: 23,718.
+    // Religious Education 2018 Higher, 23 asks, 22 band-grid cards (B(a)(i) held): 23,740.
+    // Religious Education 2018 Ordinary, 27 asks, 27 band-grid cards: 23,767.
+    // Religious Education 2019 HL I(b)(i) and 2018 HL B(a)(i), 2 band-grid cards: 23,769.
+    // Religious Education 2017 Higher, 21 asks, 21 band-grid cards: 23,790.
+    // Religious Education 2017 Ordinary, 26 asks, 25 band-grid cards (1 held): 23,815.
+    // Religious Education 2016 Higher, 18 asks, 18 band-grid cards: 23,833.
+    // Religious Education 2016 Ordinary, 26 asks, 20 band-grid cards (6 held): 23,853.
+    // Religious Education 2015 Higher, 24 asks, 23 band-grid cards (1 held): 23,876.
+    // Religious Education 2015 Ordinary, 26 asks, 26 band-grid cards: 23,902.
+    // Religious Education 2014 Higher, 19 asks, 19 band-grid cards: 23,921.
+    // Religious Education 2014 Ordinary, 23 asks, 20 band-grid cards (3 held): 23,941.
+    // Religious Education 2017 Higher re-read, 21 ids kept: 23,941.
+    // Religious Education 2017 Ordinary C(a) carded: 23,942.
+    // Religious Education 2016 Higher re-read, 18 ids kept: 23,942.
+    // Religious Education 2016 Ordinary, six held asks carded: 23,948.
+    // Religious Education 2015 Higher B(a)(ii) carded: 23,949.
+    // Religious Education 2015 Ordinary re-read, 26 ids kept: 23,949.
+    // Religious Education 2014 Higher re-read, 19 ids kept: 23,949.
+    // Religious Education 2014 Ordinary, three held asks carded: 23,952.
+    // Religious Education 2012 Higher, 20 asks, 20 band-grid cards: 23,972.
+    // Religious Education 2012 Ordinary, 25 asks, 25 band-grid cards: 23,997.
+    // Religious Education 2011 Higher, 20 asks, 20 band-grid cards: 24,017.
+    // Religious Education 2011 Ordinary, 24 asks, 24 band-grid cards: 24,041.
+    // Religious Education 2010 Higher, 19 asks, 19 band-grid cards: 24,060.
+    // Religious Education 2010 Ordinary, 27 asks, 27 band-grid cards: 24,087.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
-        // DCG's 2010-2018 additions count on top of the bank the same way.
+        : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
+        // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
+        : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
+        : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+    const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
+      .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
@@ -1865,21 +2360,24 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('history:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + dcgAddedCount
+      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + engineeringAdditionIds.size
+        // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
+        + historyEssayIds.size + spanishAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -2183,6 +2681,17 @@ describe('Mark Bank card preservation', () => {
     for (const id of constructionAliasIds) expect(liveIds.has(id), `${id} should be withdrawn behind its alias`).toBe(false);
   });
 
+  it('adds the reviewed Irish internal routes alongside the frozen 215-card Higher baseline', () => {
+    expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishRoutes].sort());
+    const deferred = (cards: readonly { id: string }[]) => cards.filter(card => irishDeferredIds.has(card.id)).length;
+    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([364, 300]);
+    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size + deferred(IRISH_HIGHER));
+    expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishOrdinaryRoutes].sort());
+    expect(IRISH_ORDINARY).toHaveLength(185 + addedIrishOrdinaryRoutes.size + deferred(IRISH_ORDINARY));
+  });
+
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
     /* 54 earlier aliases + 68 Art per-option cards (2026-10-12) + 36 Economics consolidations from the 2021-2025
@@ -2249,9 +2758,14 @@ describe('Mark Bank card preservation', () => {
     // carded as (i) and (ii) with the old id reading its progress from (i).
     const technologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('tech-'));
     expect(technologyAliasIds).toEqual(['tech-2022-ol-c2d', 'tech-2024-hl-b3d']);
+    // ...and the Computer Science batch 1b splits (cs- keys, coordinator 5 Nov): a
+    // shipped card for a whole question beside that question's part cards is
+    // withdrawn onto the question's first new part card.
+    const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
+    expect(computerScienceAliasIds).toEqual(['cs-2021-ol-q15', 'cs-2021-ol-q16', 'cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + technologyAliasIds.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -2309,8 +2823,9 @@ describe('Mark Bank card preservation', () => {
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
     // Technology is a new subject, outside this tally; its alias key is not
-    // one of these cards.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length).toBe(9_768 + 18);
+    // one of these cards. Nor are Computer Science's (a new subject too).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length
+      - computerScienceAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {

@@ -86,7 +86,18 @@ def schemes_dir(subject=SUBJECT):
 # also prints "Section B: Question 5 TOTAL MARKS: 50" in mixed case as a
 # sub-head INSIDE Section B, and a case-insensitive match there closes Section
 # B four lines before its last priced ask.
-UNIT = re.compile(r'^SECTION\s+([ABC])\b')
+# 2016 and 2017 Higher head the reading "WRITTEN PAPER: SECTION A (70 MARKS)".
+# 2016 Higher prints that sub-head in capitals, "SECTION B: Question 5 (50
+# marks)": it is Q5's head inside Section B, never a unit of its own.
+UNIT = re.compile(r'^(?:WRITTEN PAPER:\s*)?SECTION\s+([ABC])\b(?!\s*:\s*(?:Question|QUESTION)\b)')
+# Where a scheme prints no head for a unit (2016-2019): the listening test opens
+# at its first item, "1. Anuncio – FIESTAS ESPAÑOLAS", and the reading at its
+# first question, "Question 1. Un éxito cubano (50 marks)" (Ordinary) or "1. (a)
+# Prescribed literature – Sin noticias de Gurb (50 marks)" (Higher).
+LISTEN_START = re.compile(r'^1\s*\.\s*Anuncio\b', re.I)
+READ_START = re.compile(r'^(?:Question\s+1\s*\.|1\s*\.\s*\(\s*a\s*\)\s*Prescribed)', re.I)
+OLD_LETTERS_LAST = 2019
+OLD_LETTER = re.compile(r'^([a-j])\.\s+(?=\S)')
 UNIT_L = re.compile(r'^LISTENING\s+COMPREHENSION\b', re.I)
 # Everything from here is the Modified Marking Scheme and the scheme's own
 # contents index, which reprints "Section A", "Section B" and "Section C" as
@@ -97,14 +108,24 @@ APPENDIX = re.compile(r'^APPENDIX\b', re.I)
 #   1. (a) Prescribed literature – Relato de un náufrago (50 marks)
 #   1. (b) Journalistic Text: EL TRIUNFO DE LA MÚSICA EN ESPAÑOL (50 marks)
 #   2. (a) AND (b) = 20 marks     /  2. (a) OR (b) =10 marks
+# 2016 and 2017 print the total unbracketed: "… –Sin noticias de Gurb 50 marks".
 CHOICE_HEAD = re.compile(
-    r'^1\s*\.\s*\(\s*([ab])\s*\)\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
-Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*=?\s*'
-                     r'(\d{1,3})\s*marks?\s*$', re.I)
+    r'^1\s*\.\s*\(\s*([ab])\s*\)\s*(.*?)\s*\(?(\d{1,3})\s*marks?\)?\s*$', re.I)
+# The 2010-2020 schemes print the parts' groups between the letters and the
+# total — "2. (a) and (b) (2+2) + (3 + 3) + (1 +1+1) + (1 +1+1) + 4= 20 marks" —
+# and those groups are read by each item's own tariffs, never from here.
+Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*'
+                     r'(?:\(?[\d\s+()]*\)?\s*)?=?\s*'
+                     r'(\d{1,3})\s*(?:marks?)?\s*$', re.I)  # 2018: "… = 20", no "marks"
 # Inside Question 2, each alternative is a titled 10-mark text.
 #   (a) LA ABEJA ES DECLARADA EL SER VIVO MÁS IMPORTANTE DEL PLANETA (10 marks)
+# 2016 prints the two titles with no tariff, "(a) HERIDO GRAVE POR HACERSE UN
+# 'SELFIE'", under "2. (a) and (b) = 20 marks": a title is then read only where
+# it is printed in capitals (2014: "(a) El ROBOT JAPONÉS", one small letter at
+# most), and each part is priced by its own tariff.
 Q2_LETTER = re.compile(
     r'^\(\s*([ab])\s*\)\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
+Q2_LETTER_UNPRICED = re.compile(r'^\(\s*([ab])\s*\)\s*([A-ZÁÉÍÓÚÑ¿¡][^a-z]*?(?:[a-z][^a-z]*?)?)\s*$')
 
 # A question head inside Higher Section A or B.
 #   Q. 1 3 × 3m = 9 marks        Q.4 (6 marks)
@@ -113,16 +134,27 @@ HL_Q_HEAD = re.compile(r'^Q\s*\.?\s*(\d)\s+(.*?)\s*$')
 # An Ordinary Section A head: the question number, the text's own TITLE and the
 # tariff. The title is what the paper prints above the text, and is the second
 # thing the two documents share.
+# 2016 prints the total unbracketed: "Question 1. Pesadilla en el Paraíso 50 marks".
 OL_Q_HEAD = re.compile(
-    r'^Question\s+(\d)\s*\.\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
+    r'^Question\s+(\d)\s*\.\s*(.*?)\s*\(?(\d{1,3})\s*marks?\)?\s*$', re.I)
+# 2012 prints the number alone: "1 Justin Bieber cantante extraordinario (50 marks)".
+OL_Q_HEAD_BARE = re.compile(r'^(\d)\s+(\S.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
+# A scheme's own ruling on a question it set with an error: 2012 listening Q1
+# "[Due to the typographical error in question 1 – the superfluous word
+# 'pause' … mark each part out of 5 and accept the two highest scores.]". The
+# head then prices the two best parts, and each part is worth its own tariff.
+BEST_OF = re.compile(r'accept the (?:two|three) highest scores', re.I)
 # The listening test heads each item by number and title, with the tariff on
 # the line beneath. Read for the exclusion evidence only.
 L_HEAD = re.compile(r'^(\d)\s*\.\s*(?:(?:Anuncio|Di[áa]logo|Descriptivo|'
                     r'El Tiempo|Una Noticia)\s*[-–—]\s*)?(.+?)\s*$', re.I)
 
 # A part of a question: "(a) …", "(i) …". Roman numerals only appear under
-# Higher Section A Question 2, where the paper prints (i), (ii), (iii).
-PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h])\s*\)\s*(.*)$', re.I)
+# Higher Section A Question 2, where the paper prints (i), (ii), (iii). Letters
+# run to (j): 2026 Ordinary Q1 prints ten parts, and its scheme answers "(j)
+# para ciudadanos argentinos y jubilados" on a line of its own, which a grammar
+# that stopped at (i) welded onto (i)'s answer.
+PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h]|j)\s*\)\s*(.*)$', re.I)
 
 # The tariff a part prints at the END of its own body: "(5m)", "(4+3+3m)",
 # "(2+2+2 marks)", "(3+3m)".
@@ -139,11 +171,33 @@ TIMES = re.compile(r'^(\d{1,2})\s*[x×]\s*(\d{1,2})\s*(?:m|marks?)?\s*=\s*'
                    r'(\d{1,3})\s*marks?\s*$', re.I)
 SUM = re.compile(r'^(.+?)\s*=\s*(\d{1,3})\s*marks?\s*$', re.I)
 BARE_TOTAL = re.compile(r'^\((\d{1,3})\s*marks?\)\s*$', re.I)
+# 2017 and 2019 print the same head unbracketed: "Q.4 6 marks", "Q.4 6 marks (6m)".
+BARE_TOTAL_OLD = re.compile(r'^(\d{1,3})\s*marks?(?:\s*\(\s*(\d{1,3})\s*m\s*\))?\s*$', re.I)
 
 # A quota: the scheme's own statement of how many of the listed answers a
 # candidate must give. "Any three of:" and "Three of:" are the same thing.
-QUOTA = re.compile(r'^(?:Any\s+)?(one|two|three|four|five)\s+of\s*:?\s*(.*)$', re.I)
-QUOTA_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+# 2019 Higher prints the count as a figure: "Any 4 of:".
+# The colon is the count's: 2014 Higher Q2(b)(iii) "One of his works hung in
+# the entrance of the Twin Towers." is a sentence, not a menu. (Every count
+# the schemes print has one, "Three of :" included.)
+QUOTA = re.compile(r'^(?:Any\s+)?(one|two|three|four|five|[1-5])\s+of\s*(?::\s*(.*)|$)', re.I)
+QUOTA_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
+               '1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
+
+
+def _menu_at(lines, i):
+    """The QUOTA match where line i opens the part's menu, or None.
+
+    A count printed after a slash continues an alternative, it is not the
+    part's menu: 2019 Higher listening Q2(d) "He believed in equality for all
+    and" / "he was on the side of/ wrote about the marginalised/" / "three of:
+    women, immigrants," / "gypsies and homosexuals (2+2m)" names three of the
+    groups as one more way of saying "the marginalised".
+    """
+    m = QUOTA.match(' '.join((lines[i] or '').split()))
+    if m and i and (lines[i - 1] or '').rstrip().endswith('/'):
+        return None
+    return m
 # A question numbered from (i) is numbered in ROMANS; one numbered from (a) is
 # numbered in letters, and its ninth part is the letter i.
 ROMANS = ('i', 'ii', 'iii', 'iv', 'v')
@@ -156,6 +210,8 @@ DASH = '‐‑‒–—−●•-'
 # What opens a separate answer: one of the four dashes, or the scheme's own
 # "(1)" numbering, which 2021 Ordinary uses where the other years use dashes.
 ANSWER_START = re.compile(rf'^(?:[{DASH}]\s*|\(\s*\d{{1,2}}\s*\)\s+)')
+# A roman opening a line INSIDE a lettered part's body: one of its answers.
+ROMAN_ANSWER = re.compile(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s+')
 
 # An examiner instruction or a part-credit line, which the scheme prints in
 # square brackets: "[First correct answer=4m]", "[No marks awarded if extra
@@ -188,11 +244,14 @@ LANGUAGE_RULE = re.compile(
 # Section B's linked opinion question and Section C's written production: band
 # grids, read here so the refusal they earn is counted rather than assumed.
 GRID_B5 = re.compile(r'^Section\s+B\s*:\s*Question\s+5\b', re.I)
-GRID_C = re.compile(r'^Question\s+([12])\s*\.?\s*\(?\s*([ab])\s*\)?\s+'
+# 2016 and 2017 head them "Q.1 (a) DIALOGUE CONSTRUCTION 30 marks".
+GRID_C = re.compile(r'^(?:Question\s+|Q\s*\.\s*)([12])\s*\.?\s*\(?\s*([ab])\s*\)?\s+'
                     r'(DIALOGUE CONSTRUCTION|LETTER\s*/\s*EMAIL|DIARY ENTRY|NOTE)\b',
                     re.I)
 GRID_OL_B1 = re.compile(r'^Q\s*\.?\s*1\s*\.\s*LETTER\s*:', re.I)
-GRID_OL_B2 = re.compile(r'^Q\s*\.?\s*2\s*\.\s*\(\s*a\s*\)\s*NOTE\b', re.I)
+# 2016 prints "Q.2 (a) NOTE Q.2 (b) DIARY ENTRY 20 marks", no point after the 2.
+# 2015 names the note a MESSAGE: "Q.2.(a) MESSAGE Q.2.(b) DIARY ENTRY 20 Marks".
+GRID_OL_B2 = re.compile(r'^Q\s*\.?\s*2\s*\.?\s*\(\s*a\s*\)\s*(?:NOTE|MESSAGE)\b', re.I)
 
 # SEC misprints, keyed by the sitting and never repaired by a heuristic.
 MISPRINTS = {
@@ -203,6 +262,211 @@ MISPRINTS = {
     # is one of the three things the paper is joined on, so it is repaired here
     # where the repair is visible rather than tolerated by a loose pattern.
     (2021, 'hl'): [('Prescribed literatura:', 'Prescribed literature:')],
+    # 2017 Higher prints Question 2(b)(i)'s tariff without its opening
+    # bracket: "- boats adrift/ in difficulty. 2+2+2m)".
+    # (Section B Q4(b)'s "(between the ages of 6 and 18}" is what the page
+    # prints, rendered and read: it is kept as printed.)
+    (2017, 'hl'): [('- boats adrift/ in difficulty. 2+2+2m)', '- boats adrift/ in difficulty. (2+2+2m)')],
+    # 2013 prints two tariffs with a bracket astray (rendered and read: the
+    # page prints them so): Higher listening Q3(b) "(1+1+1) marks)", Ordinary
+    # Q1(c) "El marido de María Josefa 5 marks)". Only the tariff's bracket
+    # is repaired; no word a card shows changes.
+    (2013, 'hl'): [('he had a good time. (1+1+1) marks)', 'he had a good time. (1+1+1 marks)')],
+    # 2012 Higher listening Q1 leaves its third part unlettered ("Two of: - Do
+    # training …") and letters its fourth "c."; the paper prints (a)-(d), and
+    # the scheme's own note names the misprint it answers ("the superfluous
+    # word 'pause' between parts (b) and (c)").
+    # 2012 Ordinary breaks the same note's line at "(b) and" / "(c) and …",
+    # where the reader takes "(c)" for a part.
+    (2012, 'ol'): [('between parts (b) and\n(c) and potential confusion',
+                    'between parts (b) and (c) and potential confusion')],
+    (2012, 'hl'): [('(ii) (a) The patience (of the drivers). (b) The fuel/petrol. (2+2 marks)',
+                    '(ii) - The patience (of the drivers).\n- The fuel/petrol. (2+2 marks)'),
+                   ('(3+2 marks)\nTwo of: - Do training increasing in intensity',
+                    '(3+2 marks)\nc. Two of: - Do training increasing in intensity'),
+                   ('\nc. Certificate of completion of the Camino.', '\nd. Certificate of completion of the Camino.')],
+    (2013, 'ol'): [('El marido de María Josefa 5 marks)', 'El marido de María Josefa (5 marks)')],
+}
+
+# Layouts the reader is taught by example, keyed by sitting, never content:
+# each replacement only changes how the scheme's own words are laid out, and
+# every word a card shows still traces into the scheme's .md unchanged.
+LAYOUTS = {
+    # 2018 Higher Question 2(a)(iii) sets its two answers as "(a) …" and "(b)
+    # Three of: …" INSIDE a roman part, where the reader takes a letter for the
+    # next part. Read as the required answer it is, closed by the scheme's ";",
+    # ahead of its menu, priced (3+3m): the answer 3, the menu 3 for all three.
+    (2018, 'hl'): [('(iii) (a) more emphasis on domestic animals like dogs/ ponies\n(b) Three of: traditional acts/',
+                    '(iii) more emphasis on domestic animals like dogs/ ponies;\nThree of: traditional acts/')],
+    # 2015 Higher Question 2(b)(ii) numbers its two answers "(a)" and "(b)"
+    # inside the roman part, priced (2+2 marks): read as the two answers they
+    # are, each on its own line.
+    # 2014 Higher letters its literature Q4 answers "(a)", "(b)", "(c)" under
+    # "Any 3 of:", where the reader takes a letter for a part; and prints its
+    # listening Q7(a) letter without its full stop ("a to give information …",
+    # rendered and read). 2014 Ordinary does the same at listening Q6(b) ("b
+    # south").
+    (2014, 'hl'): [('(a) people who wanted to buy an apartment to live in/\n'
+                    '(b) people who want to buy an apartment in order to launder dirty money/\n'
+                    '(c) people who want to buy an apartment in the Olympic village.',
+                    '- people who wanted to buy an apartment to live in/\n'
+                    '- people who want to buy an apartment in order to launder dirty money/\n'
+                    '- people who want to buy an apartment in the Olympic village.'),
+                   ('\na to give information about the risks', '\na. to give information about the risks')],
+    (2014, 'ol'): [('\nb south (5 marks)', '\nb. south (5 marks)')],
+    # 2013 Ordinary Q2(c) prints its tariff after the first of two
+    # alternatives, the second on the line under it: "… because of his hair./
+    # (5 marks)" / "He agrees with this son."
+    (2013, 'ol'): [('(c) He thinks it is unfair to expel Alberto because of his hair./ (5 marks)\n'
+                    'He agrees with this son.',
+                    '(c) He thinks it is unfair to expel Alberto because of his hair./\n'
+                    'He agrees with this son. (5 marks)')],
+    (2015, 'hl'): [("(ii) (a) It’s the company which has been in charge of the Christmas lights\n"
+                    "for the past 45 years.\n(b) It will pay the costs. (2+2 marks)",
+                    "(ii) - It’s the company which has been in charge of the Christmas lights\n"
+                    "for the past 45 years.\n- It will pay the costs. (2+2 marks)")],
+}
+
+
+# 2016 Ordinary sets its bullets in a symbol font the text layer reads as the
+# letter "x": "(f) Three of:" / "x English" / "x started painting in England" /
+# …. Read as the dash it is drawn as.
+X_BULLETS = {(2016, 'ol')}
+# The same scheme's tick: its text layer reads "¥" (U+00A5 in TimesNewRomanPSMT)
+# where the page draws "√" ("√ 91 6895360", rendered and read, p4), the sign
+# 2018 Ordinary prints as text.
+GLYPHS = {(2016, 'ol'): [('¥', '√')]}
+
+# A menu whose slashes both separate its answers and join two words of one
+# answer, cut by hand where no rule can tell the two apart. Each answer is a
+# slice of the scheme's line, checked as it is read.
+MENU_CUTS = {
+    # "Two of: a family/a stable home/a better education to abandoned/orphaned
+    # children (5m+5m)": "abandoned/orphaned" is one answer's two words.
+    (2018, 'ol', 'A', 5, 'f', None): ('a family', 'a stable home',
+                                      'a better education to abandoned/orphaned children'),
+    # 2014 Higher Section B Q4(b) and (c) wrap two of their answers over a
+    # line break ("Bookings used to be two months in advance," / "now (the
+    # industry) doesn't know …"; "… with their own house, looking for" /
+    # "(long) stays abroad"): each sentence is one answer.
+    # 2013 Higher listening Q1(c): "we want to/ can travel" is one answer's slash.
+    (2013, 'hl', 'L', 1, 'c', None): ('(By choosing) the petrol station brand', 'type of petrol',
+                                      'maximum distance we want to/ can travel'),
+    (2014, 'hl', 'B', 4, 'b', None): (
+        'Uncertainty is attacking the nerves of all sectors /tourist industry',
+        'Bookings used to be two months in advance, now (the industry) doesn’t know how season/August will end',
+        'difficult to manage prices/tariffs and offers',
+        'People are not deciding until the last minute',
+        'Prices are going down',
+        'stays are shorter / used to be a month now more than two weeks is unusual',
+        'booking used to be for a minimum of one week/ and are now taken by days.',
+        'People are spending less even when they are on holidays.',
+        'House swap companies have benefited.'),
+    (2014, 'hl', 'B', 4, 'c', None): (
+        'The profile of the users is changing',
+        'previously they were families with their own house, looking for (long) stays abroad',
+        'seventy percent of house swaps are between people living in Spain',
+        'now more and more young people / couples are participating',
+        'the length of holidays are shorter / even just for the weekend'),
+}
+
+
+# A menu's first line that is the subject of the answers under it, not an
+# answer: 2015 Higher Section B Q4(c) "Two of:" / "the (Federation of)
+# Parents" / "doesn't see any benefits for students" / "says parents would …".
+# Quoted on the card as a note.
+MENU_LEADS = {
+    (2015, 'hl', 'B', 4, 'c', None): 'the (Federation of) Parents',
+}
+
+# "One of:" lists printed on one line (coordinator ruling, 12 Nov 2026): each
+# item the scheme separates is an answer of its own, cut at the separator the
+# line uses, and the student picks the one they gave. The separator is named
+# per row, because the same line can also use a slash INSIDE one answer
+# ("games/Olympics", "km/h", "tranquillity/peace"); a row whose slashes all
+# sit inside one answer is kept whole (ONE_OF_KEPT). A one-line "One of:" list
+# in neither table is a fault, so a new sitting cannot ship one uncut.
+ONE_OF_CUTS = {
+    (2016, 'hl', 'L', 5, 'd', None): '/',
+    (2016, 'ol', 'L', 2, 'b', None): ';',
+    (2016, 'ol', 'L', 2, 'c', None): ',',        # "the games/Olympics" is one answer
+    (2016, 'ol', 'A', 2, 'e', None): '/',
+    # "pregnant women/people suffering from hypertension/cardiac or heart
+    # problems/…": the first slash parts two answers, the rest are one
+    # answer's conditions.
+    (2016, 'ol', 'A', 3, 'b', None): ('pregnant women',
+                                      'people suffering from hypertension/cardiac or heart '
+                                      'problems/(acute) gastritis or irritable bowel (syndrome)'),
+    (2017, 'hl', 'A1b', 1, 'c', None): ' / ',     # commas inside the first answer
+    (2017, 'ol', 'L', 1, 'b', None): ',',
+    (2017, 'ol', 'L', 4, 'b', None): ',',
+    (2017, 'ol', 'L', 5, 'a', None): ',',        # "tranquillity/peace" is one answer
+    (2017, 'ol', 'L', 5, 'b', None): ',',        # "Port Aventura / attraction park" is one
+    (2017, 'ol', 'L', 6, 'c', None): ',',        # "very hot/warm" is one answer
+    (2017, 'ol', 'L', 7, 'b', None): ',',
+    (2017, 'ol', 'A', 1, 'i', None): '/',
+    (2017, 'ol', 'A', 4, 'e', None): '/',
+    (2017, 'ol', 'A', 5, 'd', None): '/',
+    (2018, 'hl', 'L', 2, 'c', None): '/',
+    (2018, 'ol', 'L', 1, 'c', None): ',',        # "children/young people/those under 12" is one
+    (2018, 'ol', 'L', 7, 'b', None): '/',
+    (2018, 'ol', 'A', 2, 'd', None): '/',
+    (2018, 'ol', 'A', 2, 'e', None): '/',
+    (2018, 'ol', 'A', 3, 'a', None): '/',
+    (2018, 'ol', 'A', 3, 'b', None): '/',
+    (2018, 'ol', 'A', 4, 'c', None): '/',        # "conflict, dialogue and peace" is one
+    (2018, 'ol', 'A', 4, 'd', None): '/',
+    (2018, 'ol', 'A', 5, 'b', None): '/',
+    (2018, 'ol', 'A', 5, 'e', None): '/',        # "in 2017, he became …" is one
+    (2019, 'hl', 'L', 5, 'b', None): '/ ',       # "km/h" is inside an answer
+    (2019, 'ol', 'L', 3, 'b', None): '/',
+    (2019, 'ol', 'L', 3, 'c', None): '/',
+    (2019, 'ol', 'L', 3, 'd', None): '/',
+    (2019, 'ol', 'L', 4, 'b', None): '/',
+    (2019, 'ol', 'L', 5, 'c', None): '/',
+    (2019, 'ol', 'L', 7, 'b', None): ',',
+    (2019, 'ol', 'L', 7, 'c', None): '/',
+    (2019, 'ol', 'A', 3, 'c', None): '/',
+    (2019, 'ol', 'A', 3, 'd', None): '/',
+    (2019, 'ol', 'A', 4, 'b', None): '/',
+    (2019, 'ol', 'A', 5, 'f', None): '/',
+    (2024, 'ol', 'L', 3, 'b', None): '/',
+    (2024, 'ol', 'A', 2, 'b', None): '/',
+    (2024, 'ol', 'A', 3, 'a', None): '/',
+    (2024, 'ol', 'A', 3, 'c', None): '/',
+    (2024, 'ol', 'A', 4, 'b', None): '/',
+    (2024, 'ol', 'A', 4, 'd', None): '/',
+    (2024, 'ol', 'A', 4, 'e', None): '/',
+    (2015, 'hl', 'A2', None, 'a', 'ii'): '/',
+    (2015, 'ol', 'L', 3, 'c', None): '/',
+    (2015, 'ol', 'L', 4, 'c', None): '/',
+    (2015, 'ol', 'L', 5, 'a', None): ',',
+    (2015, 'ol', 'L', 5, 'c', None): '/',
+    (2015, 'ol', 'L', 7, 'd', None): '/',
+    (2014, 'hl', 'L', 3, 'b', None): ',',
+    (2014, 'ol', 'L', 2, 'b', None): ',',
+    (2014, 'ol', 'L', 4, 'c', None): ',',        # "builders/bricklayers" is one answer
+    (2014, 'ol', 'L', 5, 'b', None): ',',        # "Feria de Agosto/August fair" is one
+    (2014, 'ol', 'L', 5, 'c', None): ',',
+    (2014, 'ol', 'L', 7, 'c', None): ',',        # "breathing /respiratory complications" is one
+    (2014, 'ol', 'A', 3, 'b', None): '/',
+    (2013, 'hl', 'A2', None, 'b', 'iii'): '/',
+    (2013, 'ol', 'L', 5, 'b', None): '/',
+    (2013, 'ol', 'L', 5, 'c', None): '/',
+    (2013, 'ol', 'L', 7, 'd', None): ('photos', 'videos', 'messages.'),   # "photos, videos and messages."
+    (2013, 'ol', 'A', 2, 'e', None): '/',
+    (2012, 'hl', 'L', 2, 'b', None): '/',
+    (2012, 'hl', 'L', 7, 'b', None): '/',
+    (2012, 'ol', 'L', 3, 'd', None): '/',
+    (2012, 'ol', 'L', 4, 'c', None): '/',
+    (2012, 'ol', 'L', 6, 'c', None): '/',
+}
+ONE_OF_KEPT = {
+    # "protects us from (chronic) diseases/illnesses like Parkinson's/
+    # Alzheimer's/ (many types of) cancer": one benefit, its slashes inside it.
+    (2016, 'ol', 'A', 3, 'a', None),
+    # "by taking selfies / photos": one answer, the slash between two words for it.
+    (2015, 'ol', 'L', 4, 'd', None),
 }
 
 
@@ -254,6 +518,9 @@ def parse_head_tariff(text):
     m = BARE_TOTAL.match(raw)
     if m:
         return int(m.group(1)), None
+    m = BARE_TOTAL_OLD.match(raw)
+    if m and (m.group(2) is None or m.group(2) == m.group(1)):
+        return int(m.group(1)), None
     m = TIMES.match(raw)
     if m:
         n, per, total = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -279,9 +546,15 @@ def parse_head_tariff(text):
     return total, groups
 
 
-def parse_part_tariff(text):
+# 2016-2019 also price a part "(5m+5m)" (a unit on every term) and "(1+1)"
+# (no unit at all, two or more terms): read only for those years.
+OLD_PART_TARIFF = re.compile(
+    r'\((\d{1,2}\s*m?(?:\s*\+\s*\d{1,2}\s*m?)+)\s*(?:m|marks?)?\s*\)\s*$', re.I)
+
+
+def parse_part_tariff(text, old=False):
     """([terms], text without the tariff) for one part's printed body."""
-    m = PART_TARIFF.search(text)
+    m = PART_TARIFF.search(text) or (OLD_PART_TARIFF.search(text) if old else None)
     if not m:
         return None, text
     terms = [int(t) for t in re.findall(r'\d{1,2}', m.group(1))]
@@ -293,7 +566,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation')
+                 'head_notation', 'lead_points', 'bracket_parts', 'raw', 'answer_lines')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -324,6 +597,10 @@ class EsScheme:
         self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
+        if (year, level) in X_BULLETS:
+            raw = re.sub(r'(?m)^x (?=\S)', '- ', raw)
+        for old, new in GLYPHS.get((year, level), ()):
+            raw = raw.replace(old, new)
         # The 2025 schemes set every space inside a heading as U+00A0, so
         # "DIALOGUE\u00a0CONSTRUCTION" is not the string "DIALOGUE CONSTRUCTION"
         # any literal in this file spells. Two of that sitting's four Section C
@@ -331,10 +608,14 @@ class EsScheme:
         # nobody writes. Folded to ordinary spaces: a whitespace normalisation,
         # never a change of content.
         raw = raw.replace('\u00a0', ' ').replace('\u2009', ' ').replace('\u202f', ' ')
-        for old, new in MISPRINTS.get((year, level), ()):
+        for old, new in [*MISPRINTS.get((year, level), ()), *LAYOUTS.get((year, level), ())]:
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
         self.lines = [l.rstrip() for l in raw.split('\n')]
+        if year <= OLD_LETTERS_LAST:
+            # The 2016-2019 schemes letter their parts "a." where every other
+            # year prints "(a)": read as the same part letter.
+            self.lines = [OLD_LETTER.sub(r'(\1) ', l) for l in self.lines]
         self.asks = []
         self.refused = []
         self.unit_totals = {}        # 'A' -> the total the unit prints
@@ -359,6 +640,22 @@ class EsScheme:
                 continue
             if UNIT_L.match(line):
                 marks.append((i, 'L'))
+        cut = next((i for i, u in marks if u is None), len(self.lines))
+        if not any(u == 'L' for _i, u in marks):
+            ls = next((i for i, line in enumerate(self.lines[:cut]) if LISTEN_START.match(line)), None)
+            if ls is not None:
+                # A unit's first line is read as its head, never its matter:
+                # the unit opens on the line above the first item.
+                marks.append((ls - 1, 'L'))
+        lmark = next((i for i, u in marks if u == 'L'), None)
+        if lmark is not None:
+            rs = next((i for i in range(lmark + 1, cut) if READ_START.match(self.lines[i])), None)
+            if rs is not None and not any(u == 'A' and lmark < i < rs for i, u in marks):
+                # 2018 Ordinary prints "SECTION A (160 MARKS)" over its listening
+                # test: the head belongs to the reading, which begins at rs.
+                marks = [(i, u) for i, u in marks if not (u == 'A' and i <= lmark)]
+                marks.append((rs - 1, 'A'))
+        marks.sort(key=lambda m: (m[0], m[1] is None))
         out = []
         for n, (i, unit) in enumerate(marks):
             if unit is None:
@@ -434,7 +731,12 @@ class EsScheme:
         for n, (section, i, title, total) in enumerate(spans):
             end = spans[n + 1][1] if n + 1 < len(spans) else len(block)
             if title is not None:
-                self.titles[(section, None)] = _clean_title(title)
+                # "1. (b) Journalistic Text GLOVO (50 marks)" (2020) names the
+                # text by its last word after the kind of text it is; the kind
+                # is not part of the title the paper prints.
+                self.titles[(section, None)] = _clean_title(re.sub(
+                    r'^(?:Journalistic\s+Text|Prescribed\s+literature)\s*[:–-]?\s*',
+                    '', title, flags=re.I))
             self.unit_totals.setdefault(section, total)
             if section == 'A2':
                 self._read_q2(block[i + 1:end], offset + i + 1)
@@ -445,13 +747,26 @@ class EsScheme:
         """Higher Section A Question 2: two titled texts, each with (i)-(iii)."""
         heads = [(i, m) for i, m in
                  ((i, Q2_LETTER.match(l.strip())) for i, l in enumerate(block)) if m]
+        if not heads:
+            heads = [(i, m) for i, m in
+                     ((i, Q2_LETTER_UNPRICED.match(l.strip())) for i, l in enumerate(block)) if m]
+        if len(heads) < 2:
+            # 2013 sets the titles in ordinary case, with no tariff: "(a)
+            # Aumentan los desplazamientos en bicicleta" over "(i) …". A
+            # lettered line with a roman part on the line under it is a title.
+            heads = [(i, m) for i, m in
+                     ((i, re.match(r'^\(\s*([ab])\s*\)\s*(\S.*?)\s*$', l.strip()))
+                      for i, l in enumerate(block))
+                     if m and i + 1 < len(block) and re.match(r'^\(\s*i\s*\)', (block[i + 1] or '').strip())]
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             letter = m.group(1).lower()
+            total = int(m.group(3)) if m.lastindex >= 3 else None
             self.titles[('A2', letter)] = _clean_title(m.group(2))
-            self.q_totals[('A2', letter)] = int(m.group(3))
+            if total is not None:
+                self.q_totals[('A2', letter)] = total
             self._read_parts('A2', None, letter, None,
-                             block[i + 1:end], offset + i + 1, int(m.group(3)))
+                             block[i + 1:end], offset + i + 1, total)
 
     def _read_hl_questions(self, section, block, offset):
         """"Q. 1 3 × 3m = 9 marks" and the parts beneath it."""
@@ -460,11 +775,22 @@ class EsScheme:
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             q = int(m.group(1))
-            total, groups = parse_head_tariff(m.group(2))
+            head = m.group(2)
+            body = block[i + 1:end]
+            # The 2010-2020 schemes can print the ask's whole direction on its
+            # head: "Q. 5 3m + 3m+ 3m+ 3m = 12 marks for any four relevant
+            # points (12m)". The tariff is read up to "marks", and what follows
+            # it is the part's first printed line.
+            tail = re.match(r'^(.+?=\s*\d{1,3}\s*marks?)\s+(\S.*)$', head, re.I)
+            if tail and parse_head_tariff(tail.group(1))[0] is not None \
+                    and parse_head_tariff(head)[0] is None:
+                head = tail.group(1)
+                body = [tail.group(2)] + list(body)
+            total, groups = parse_head_tariff(head)
             if total is not None:
                 self.q_totals[(section, q)] = total
-            self._read_parts(section, q, None, None, block[i + 1:end],
-                             offset + i + 1, total, groups, m.group(2))
+            self._read_parts(section, q, None, None, body,
+                             offset + i + 1, total, groups, head)
 
     # -- Higher Section B ---------------------------------------------------
     def _read_hl_b(self, block, offset):
@@ -496,6 +822,9 @@ class EsScheme:
     def _read_ol_a(self, block, offset):
         heads = [(i, m) for i, m in
                  ((i, OL_Q_HEAD.match(l.strip())) for i, l in enumerate(block)) if m]
+        if not heads and self.year <= OLD_LETTERS_LAST:
+            heads = [(i, m) for i, m in
+                     ((i, OL_Q_HEAD_BARE.match(l.strip())) for i, l in enumerate(block)) if m]
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             q = int(m.group(1))
@@ -575,6 +904,18 @@ class EsScheme:
         # Read per token, that part became ('Q1', None, 'i') while the paper
         # printed it under (1, 'i'), and the ask went unbound.
         as_roman = heads[0][1] in ROMANS
+        if not as_roman and letter0 is None:
+            # Romans INSIDE a lettered part are its answers, not more parts:
+            # 2020 Ordinary prints "(b) (i) cheese" then "(ii) honey (3+2m)",
+            # two answers to one printed ask. A roman is a part of its own only
+            # as the ninth letter, straight after (h).
+            kept_heads = []
+            for i, tok, rest in heads:
+                if tok in ROMANS and kept_heads and not (
+                        tok == 'i' and kept_heads[-1][1] == 'h'):
+                    continue
+                kept_heads.append((i, tok, rest))
+            heads = kept_heads
 
         # The head's own decomposition prices the parts only when it has one
         # group per part. Anything else and each part is priced from the tariff
@@ -600,6 +941,16 @@ class EsScheme:
         # prints. Where they do not, every part of that question is faulted —
         # a disagreement means a part may have been lost, and neither half of
         # the tariff can be trusted then.
+        best = ' '.join(' '.join((l or '').split()) for l in block)
+        if BEST_OF.search(best):
+            note = re.search(r'\[([^\]]*' + BEST_OF.pattern + r'[^\]]*)\]', best, re.I)
+            full = note.group(1).strip() if note else None
+            for a in got:
+                if full:
+                    # the note once, whole, in place of the pieces a part
+                    # read of it where its bracket ran over two lines
+                    a.notes = [n for n in (a.notes or []) if n.strip(' ].') not in full] + [full]
+            total = None
         if total is not None and got:
             summed = sum(a.total for a in got if a.total is not None)
             if summed != total or any(a.total is None for a in got):
@@ -616,6 +967,9 @@ class EsScheme:
         kept, notes = _split_notes(body)
         if not kept and total is None:
             return None
+        # The romans a lettered part prints for its answers ("(i) cheese",
+        # "(ii) honey") open separate answers, exactly as a dash does.
+        kept = [ROMAN_ANSWER.sub('- ', k) for k in kept]
 
         # The part's own printed tariff. Read from every line, because the SEC
         # prices a part in two different places: once at the END of the whole
@@ -626,10 +980,11 @@ class EsScheme:
         line_terms = []
         stripped = []
         for s_ in kept:
-            t, rest = parse_part_tariff(s_)
+            t, rest = parse_part_tariff(s_, old=self.year <= OLD_LETTERS_LAST)
             line_terms.append(t)
             stripped.append(rest.strip())
         answer_at = [i for i, s_ in enumerate(kept) if ANSWER_START.match(s_)]
+        implied_quota = None
         own_terms = None
         per_answer = None
         if (len(answer_at) >= 2
@@ -639,7 +994,39 @@ class EsScheme:
             kept = stripped
         else:
             last = max((i for i, t in enumerate(line_terms) if t), default=None)
-            if last is not None:
+            after = [k for k in stripped[last + 1:] if k] if last is not None else []
+            menu = last is not None and any(
+                _menu_at(kept, i) for i in range(last + 1))
+            if menu and after and (all(ANSWER_START.match(k) for k in after)
+                                   or self.year <= OLD_LETTERS_LAST):
+                # (2016-2019 set a priced menu's answers one to an undashed line
+                # under it: "(a) Four of: (1+1+1+1 marks)" / "He had a humble
+                # lifestyle." / …)
+                # A menu whose price is printed on an EARLY option's line:
+                # 2020 Ordinary listening Q3(c) "One of: - (99% comes) from his
+                # (daily) work in the hospital (in Spain/Valencia) (4m)" then
+                # "- people give/donate money". Dashed lines after the price
+                # are more options of the same menu, not guidance.
+                own_terms = line_terms[last]
+                kept = [k for k in stripped[:last + 1] if k] + after
+            elif (self.year <= OLD_LETTERS_LAST and last is not None and after
+                  and ((last == next(iter(answer_at), None)
+                        and all(ANSWER_START.match(k) for k in after)
+                        and 1 < len(line_terms[last]) < len(after) + 1)
+                       # undashed, one answer to a line: 2015 Higher literature
+                       # Q3 "Pays bill in restaurant. (4+3+3 marks)" / "Leaves a
+                       # tip [2] of 100 million" / "Buys new 'shoes' (skis)"
+                       or (last == 0 and not answer_at and stripped[0].rstrip().endswith('.')
+                           and all(re.match(r'^[A-ZÁÉÍÓÚÑ]', k) for k in after)
+                           and 1 < len(line_terms[last]) <= len(after) + 1))):
+                # A menu with no count of its own, priced on its first answer:
+                # 2017 Higher literature Q3 "- He eats the wafer / cone first
+                # (4+3+3m)" over four more dashed answers. The tariff prices
+                # three answers, and the scheme lists five: it is the count.
+                own_terms = line_terms[last]
+                kept = [k for k in stripped[:last + 1] if k] + after
+                implied_quota = len(own_terms)
+            elif last is not None:
                 own_terms = line_terms[last]
                 # Everything printed AFTER a part's price is examiner guidance
                 # for that part, not another answer: 2025 Higher Section A
@@ -657,6 +1044,12 @@ class EsScheme:
         elif own_terms is not None and sum(own_terms) != sum(terms):
             fault = (f'the question head prices this part {"+".join(map(str, terms))} '
                      f'and the part itself {"+".join(map(str, own_terms))}')
+        elif own_terms is not None and len(own_terms) > len(terms):
+            # The other way round: 2026 Higher heads its journalistic Q.1
+            # "4 + 4 + 4 + 4 + 4m" and closes part (c) "Two of: … (2+2m)". The
+            # part's own split is then the finer one, and it is what the
+            # examiner pays the two answers by.
+            terms = own_terms
         # The two agree on what the part is worth but not on how it is split —
         # Higher Q.5 heads itself "4 + 4 + 4 = 12 marks" and closes the ask
         # "(12m)". The head's split is the finer of the two and is what the
@@ -665,13 +1058,45 @@ class EsScheme:
         if terms is not None:
             total = sum(terms)
 
+        # A required answer printed AHEAD of a menu, each priced in its own
+        # square bracket: 2026 Higher journalistic Q.1(d) "He doesn't (have to)
+        # do (household) chores [2m] like" / "two of: [1+1m]" / three dashed
+        # chores, closed "(2+1+1m)". The bracket marks where the priced answer
+        # ends; what follows it ("like") introduces the menu.
+        lead_points = []
+        if terms and any(_menu_at(kept, i) for i in range(len(kept))):
+            quota_at = next(i for i in range(len(kept)) if _menu_at(kept, i))
+            q_count = QUOTA_WORDS[_menu_at(kept, quota_at).group(1).lower()]
+            lead_line = ' '.join(kept[0].split()) if quota_at == 1 else ''
+            if (quota_at == 1 and q_count > 1 and len(terms) == 2
+                    and lead_line.endswith(';') and not ANSWER_START.match(lead_line)):
+                # A required answer printed on its own line, closed by the
+                # scheme's answer separator, ahead of a menu: 2021 Higher
+                # listening Q7(b) "Extra services;" / "Two of: travel agency/
+                # hairdressers/ postal service (1+2m)". The answer takes the
+                # tariff's first term; the menu, the second, for all its
+                # answers together.
+                lead_points = [(lead_line.rstrip(';').strip(), terms[0])]
+                kept = kept[1:]
+            elif len(terms) == q_count + 1 and quota_at == 1:
+                for raw in body[:2]:
+                    s_ = ' '.join((raw or '').split())
+                    m = re.match(r'^(.*?)\s*\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', s_, re.I)
+                    if (m and int(m.group(2)) == terms[0] and m.group(1).strip()
+                            and not ANSWER_START.match(s_)):
+                        lead_points = [(m.group(1).strip(), terms[0])]
+                        kept = kept[1:]
+                        break
+
         quota = None
         rest = []
-        for s_ in kept:
-            m = QUOTA.match(s_)
+        if implied_quota:
+            quota = implied_quota
+        for i, s_ in enumerate(kept):
+            m = _menu_at(kept, i)
             if m:
                 quota = QUOTA_WORDS[m.group(1).lower()]
-                tail = m.group(2).strip()
+                tail = (m.group(2) or "").strip()
                 if tail:
                     rest.append(tail)
                 continue
@@ -683,7 +1108,16 @@ class EsScheme:
         # up carrying the opening clause of another.
         answers = []
         marked = 0
-        for s_ in rest:
+        for k, s_ in enumerate(rest):
+            if (self.year <= OLD_LETTERS_LAST and quota and s_.rstrip().endswith(':')
+                    and k + 1 < len(rest) and ANSWER_START.match(rest[k + 1] or '')):
+                # A lead-in over the dashed answers after it, not an answer
+                # nor the end of the one before: 2017 Higher Q2(b)(i) "Three
+                # of: to patrol (the beaches)" / "to identify:" / "- bathers in
+                # difficulty." / …. Quoted on the card as the scheme prints it.
+                notes.append(' '.join(s_.split()))
+                answers.append('')
+                continue
             if ANSWER_START.match(s_):
                 answers.append(ANSWER_START.sub('', s_).strip())
                 marked += 1
@@ -693,10 +1127,80 @@ class EsScheme:
                 answers.append(s_)
         answers = [INLINE_TARIFF.sub('', a).strip() for a in answers]
         answers = [a for a in answers if a]
+        bare = [' '.join(l.split()) for l in rest if l and l.strip()]
+        if (self.year <= OLD_LETTERS_LAST and not quota and terms and len(terms) >= 2
+                and not marked and len(bare) == len(terms) + 1 and bare[0].endswith(':')
+                and all(l.count('(') == l.count(')') for l in bare)):
+            # A lead-in over undashed answers, one to a line: 2015 Higher
+            # Section B Q4(b) "Reductions in costs of:" / "electricity" /
+            # "water" / "catering/canteen services. (2+2+1 marks)".
+            notes.append(bare[0])
+            answers = bare[1:]
+            marked = len(answers)     # each line an answer, priced in order
+        elif (self.year <= OLD_LETTERS_LAST and not quota and terms and len(terms) >= 2
+                and marked == len(terms) and len(answers) == marked + 1
+                and rest and not ANSWER_START.match(rest[0])):
+            # An undashed lead-in over dashed answers, each priced: 2017
+            # Higher Section B Q4(a) "Helps them (young people)" / "- to
+            # improve self esteem" / "- to socialise" / "- to learn fair play
+            # (2+2+2m)". Quoted on the card as the scheme prints it.
+            notes.append(answers.pop(0))
 
         options, points = [], []
         if quota:
             options = answers
+            if len(options) < max(quota, 2) and self.year <= OLD_LETTERS_LAST:
+                # 2016-2019 set a menu's answers one to a printed line, with no
+                # dash — 2019 Higher listening Q5(c) "Two of: They roam free" /
+                # "they are dangerous if you are carrying food" / "they could
+                # take it/food from you … and hurt you (2+2m)" — or along a
+                # line between slashes, wrapped wherever the line ran out: 2018
+                # Ordinary Q3(c) "it will: be built in the Andes /be the biggest
+                # … / be the size of a football" / "stadium /weigh 5,000 tons
+                # /…". A line runs on into the next where it ends on a slash or
+                # leaves a bracket open ("… the experts use (to" / "describe the
+                # conditions).", 2016 Higher Q1(a)), and, inside a slash list,
+                # where it ends on a comma or "and" or the next line goes on in
+                # lower case. Two or more lines left standing are the answers:
+                # a slash cut would weld the end of one to the start of the next
+                # ("… in the same area" / "The prices are lower/low …", 2016
+                # Higher listening Q5(a)). One line is a slash list, cut below.
+                lines = []
+                for l in rest:
+                    l = ' '.join((l or '').split())
+                    if not l:
+                        continue
+                    prev = lines[-1] if lines else ''
+                    # A slash or comma list ("(we/it)" is no list): 2016
+                    # Ordinary "two of: classical literature, children's books,
+                    # science fiction, biographies," / "cookery books or recipes".
+                    bare = re.sub(r'\([^()]*\)', '', prev.rstrip(','))
+                    slashes, commas_ = '/' in bare, ',' in bare
+                    if lines and (prev.endswith('/') or l.startswith('/')
+                                  or prev.count('(') > prev.count(')')
+                                  # a sentence the line break split: 2017 Higher
+                                  # listening Q3(c) "he got to know Marta" / "and
+                                  # all her friends." (coordinator ruling, 12 Nov)
+                                  or (re.match(r'^(?:and|y)\s', l) and not prev.endswith('.'))
+                                  # words in brackets the line above accepts:
+                                  # "… for the labour market/workforce" / "(in
+                                  # this century)," (2015 Higher Q1(b))
+                                  or re.fullmatch(r'\([^()]*\)[,.;]?', l)
+                                  or (slashes and (re.search(r'(?:,|\b(?:and|or|y|o))$', prev)
+                                                   or l[:1].islower()))
+                                  or (commas_ and prev.endswith(','))):
+                        lines[-1] = f'{prev} {l}'
+                    else:
+                        lines.append(l)
+                if quota == 1:
+                    # A "One of:" menu reads its lines as answers only where
+                    # each is short: the long lines of 2017 Higher Q1(c) "One
+                    # of: as a lawyer … he negotiated with the" / "governments
+                    # of both countries …" are one answer wrapped.
+                    if len(lines) > 1 and all(len(l) < 60 for l in lines):
+                        options = [l.rstrip(',/').strip() for l in lines]
+                elif len(lines) >= quota and len(lines) > 1:
+                    options = [l.rstrip(',/').strip() for l in lines]
             if len(options) < quota:
                 # One dash opening a list whose members are separated by
                 # slashes: 2022 Ordinary listening Q1(c) prints "Three of: -
@@ -706,8 +1210,60 @@ class EsScheme:
                 # here and synonyms everywhere a quota is absent.
                 joined = ' '.join(' '.join(answers).split())
                 split = [o.strip() for o in joined.split('/') if o.strip()]
-                if len(split) >= quota:
+                commas = [o.strip() for o in joined.split(',') if o.strip()]
+                if (self.year <= OLD_LETTERS_LAST and len(commas) > len(split)
+                        and len(commas) >= quota):
+                    # 2016-2019 also set a menu between commas, with a slash
+                    # inside one answer: 2018 Ordinary listening Q1(b) "Two
+                    # of: bedrooms, dining room/canteen, classrooms (3+3m)".
+                    # The cut that states more answers is the list.
+                    options = commas
+                elif len(split) >= quota:
                     options = split
+                elif (self.year <= OLD_LETTERS_LAST
+                      and len(joined.split(' and ')) == quota
+                      and all(len(o.split()) <= 2 for o in joined.split(' and '))):
+                    # "Two of: beer and wine (4 + 4 marks)" (2015 Ordinary
+                    # listening Q5(b)): two one-word answers.
+                    options = [o.strip() for o in joined.split(' and ')]
+            # A line holding only the full stop that closed the list above it
+            # (2015 Higher Q2(a)(iii) prints "." alone) is no answer.
+            options = [o for o in options if re.search(r'\w', o)]
+            lead = MENU_LEADS.get((self.year, self.level, section, q, letter, roman))
+            if lead:
+                assert options and options[0] == lead, (section, q, letter, options[:1])
+                notes.append(options.pop(0))
+            cut = MENU_CUTS.get((self.year, self.level, section, q, letter, roman))
+            if cut:
+                joined = ' '.join(' '.join(answers).split())
+                assert all(o in joined for o in cut), (section, q, letter, cut)
+                options = list(cut)
+            key = (self.year, self.level, section, q, letter, roman)
+            if quota == 1 and len(options) == 1 and key not in ONE_OF_KEPT:
+                one = ONE_OF_CUTS.get(key)
+                if isinstance(one, tuple):
+                    assert all(o in options[0] for o in one), (key, one)
+                    options = list(one)
+                elif one:
+                    options = [o.strip().rstrip(',;').strip()
+                               for o in options[0].split(one) if o.strip()]
+                    assert len(options) >= 2, (key, options)
+                elif re.search(r'[/;,]', options[0]):
+                    fault = fault or ('a one-line "One of:" list the reader has not been '
+                                      'told how to cut (ONE_OF_CUTS / ONE_OF_KEPT)')
+            if len(options) < quota and self.year <= OLD_LETTERS_LAST:
+                # The 2016-2019 schemes set a menu's answers one to a printed
+                # line with no dash ("Two of: it will be in Madrid … /
+                # it was created in 2009 / it has been a success …"), or between
+                # commas on one line ("Two of: bedrooms, dining room/canteen,
+                # classrooms"). Taken only where it gives at least as many answers
+                # as the menu asks for.
+                lines = [' '.join(l.split()).rstrip(',').strip() for l in rest if l and l.strip()]
+                commas = [o.strip() for o in joined.split(',') if o.strip()]
+                if len(lines) >= quota:
+                    options = lines
+                elif len(commas) >= quota:
+                    options = commas
             if len(options) < quota:
                 fault = fault or (
                     f'the scheme asks for {quota} answers and states {len(options)}')
@@ -716,16 +1272,79 @@ class EsScheme:
             # lists them: "- Fresh ingredients / - Traditional ways of cooking
             # (2+1m)" is two answers at 2 and 1, not one answer worth 3.
             points = list(zip(answers, terms))
+        elif self.year <= OLD_LETTERS_LAST and marked >= 2 and terms and len(terms) == 1 \
+                and len(answers) == marked \
+                and not re.search(r'\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]', ' '.join(b or '' for b in body)):
+            # Numbered answers priced together: 2016 Ordinary Q5(a) "(i) it is
+            # vandalism" / "(ii) it is a means of alternative expression (6
+            # marks)". Both are asked for and the scheme prints no split: a
+            # menu of the two, paid its 6 when both are claimed.
+            quota = marked
+            options = answers
+        elif (self.year <= OLD_LETTERS_LAST and not marked and terms and len(terms) >= 2
+              and len([l for l in rest if l and l.strip()]) == len(terms)
+              and all(not re.search(r'(?:[/(]|\b(?:and|or|y|o))$', ' '.join(l.split()))
+                      and l.count('(') == l.count(')')
+                      for l in rest if l and l.strip())
+              and all(re.match(r'^[A-ZÁÉÍÓÚÑ(¿¡“‘"…]', ' '.join(l.split()))
+                      for l in [l for l in rest if l and l.strip()][1:])):
+            # 2016-2019 set several required answers one to a printed line,
+            # undashed: 2016 Higher Q1(c) "Cutbacks in education" /
+            # "Withdrawal of resources (2+2marks)". A line that runs on (a
+            # comma, slash or "and" at its end, a bracket open, the next line
+            # in lower case) is one answer wrapped instead.
+            # (A comma closing a line closes that answer, as the next line
+            # opening in capitals shows: 2014 Higher listening Q5(c) "The
+            # August fair," / "Holy Week/Easter" / "(Spanish) Film Festival".)
+            points = list(zip([' '.join(l.split()).rstrip(',').strip() for l in rest if l and l.strip()],
+                              terms))
         elif answers:
             # One answer, however many marks it is worth. "(5+5m)" on a single
             # printed line is the SEC splitting ONE answer's marks across its
             # two halves, not two answers.
             points = [(' '.join(' '.join(answers).split()), total)]
 
+        # One answer the scheme prices in pieces with square brackets: "He
+        # delivered newspapers and bottles of milk [3m] and was a jockey [1m]
+        # (4m)". The scheme's explanatory page says a square bracket shows "a
+        # breakdown of marks within the question", so each bracket closes a
+        # component the examiner pays on its own. Read only where the brackets
+        # account for the whole tariff and nothing priced follows the last one.
+        bracket_parts = None
+        # The part's printed lines joined, square brackets kept: es_all.py
+        # reads a bracketed price on one of several answers from it.
+        raw = ' '.join(' '.join((b or '').split()) for b in body
+                       if b and not PAGE.match(b.strip()))
+        raw = PART_TARIFF.sub('', raw).strip()
+        if not quota and len(points) == 1 and total:
+            segs = re.split(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', raw)
+            if len(segs) >= 5 and not segs[-1].strip(' .,;'):
+                pieces = [(segs[i].strip(' ,;'), int(segs[i + 1]))
+                          for i in range(0, len(segs) - 1, 2)]
+                if all(p for p, _n in pieces) and sum(n for _p, n in pieces) == total:
+                    bracket_parts = pieces
+
+        if self.year <= OLD_LETTERS_LAST:
+            # 2016-2019 run an answer list on with its connectives: a slash
+            # menu "(Something of) the history and/ atmosphere (of the place)/
+            # and (meet) the people." and a roman list "(i) When people
+            # congratulate her," / "(ii) …". The connective at a cut is the
+            # list's, not the answer's: each answer is the slice without it.
+            def trim(a):
+                # (a stray full stop printed on a line of its own, joined to
+                # the answer above it, is no part of it: 2013 Higher Q4)
+                a = re.sub(r'(?<=\.)\s+\.$', '', a.strip())
+                a = re.sub(r'\s+(?:and|or|y|o)$', '', a.strip().rstrip(',/').strip())
+                return re.sub(r'^(?:and|y)\s+', '', a)
+            options = [trim(o) for o in options]
+            points = [(trim(t), m) for t, m in points]
+
         return Ask(section=section, q=q, letter=letter, roman=roman,
                    title=self.titles.get((section, q)), terms=terms, total=total,
                    quota=quota, options=options, points=points, notes=notes,
-                   line=line, fault=fault, head_notation=notation)
+                   line=line, fault=fault, head_notation=notation,
+                   lead_points=lead_points, bracket_parts=bracket_parts,
+                   raw=raw, answer_lines=list(rest))
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

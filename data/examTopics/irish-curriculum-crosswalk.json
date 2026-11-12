@@ -12,7 +12,12 @@
     "irish-1-3"
   ],
   "irish-higher-danta-breise": [
-    "irish-6-5"
+    "irish-6-5",
+    "irish-6-10",
+    "irish-6-6",
+    "irish-6-8",
+    "irish-6-7",
+    "irish-6-9"
   ],
   "irish-higher-grammar": [
     "irish-3-3",
@@ -39,6 +44,22 @@
   "irish-higher-studied-prose-pros-roghnach": [
     "irish-4-7",
     "irish-7-0"
+  ],
+  "irish-higher-prescribed-prose-archive": [
+    "irish-4-1",
+    "irish-4-4",
+    "irish-4-5",
+    "irish-4-6",
+    "irish-4-7",
+    "irish-4-8"
+  ],
+  "irish-higher-prescribed-poetry-archive": [
+    "irish-5-1",
+    "irish-5-2",
+    "irish-5-3",
+    "irish-5-4",
+    "irish-5-5",
+    "irish-5-6"
   ],
   "irish-higher-write-a-debate": [
     "irish-2-4",
@@ -123,6 +144,22 @@
   "irish-ordinary-write-about-a-studied-prose-optional": [
     "irish-4-7",
     "irish-7-0"
+  ],
+  "irish-ordinary-prescribed-prose-archive": [
+    "irish-4-1",
+    "irish-4-4",
+    "irish-4-5",
+    "irish-4-6",
+    "irish-4-7",
+    "irish-4-8"
+  ],
+  "irish-ordinary-prescribed-poetry-archive": [
+    "irish-5-1",
+    "irish-5-2",
+    "irish-5-3",
+    "irish-5-4",
+    "irish-5-5",
+    "irish-5-6"
   ],
   "irish-foundation-fill-in-a-form": [
     "irish-9-0"

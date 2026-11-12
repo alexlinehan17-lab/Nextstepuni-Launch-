@@ -1,0 +1,461 @@
+[
+ {
+  "year": 2026,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2026 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2026",
+   "sha256": "fcd0e7e4eaad8af1881230daa885b4b63899f173eb75123733c3a63fadc3a70c",
+   "bytes": 78497515,
+   "durationSeconds": 2453.047344,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2025,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2025 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2025",
+   "sha256": "8feba46df2858302242d807fe5fe657dc19b6fbbf3f1a1031c3dfd7439173026",
+   "bytes": 77899655,
+   "durationSeconds": 2434.364219,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2024,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2024 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2024",
+   "sha256": "ea4c5679f3ef086f898b2e37d76c4d02fb0e361b9eed4164c92ca3801a52c1fe",
+   "bytes": 78450755,
+   "durationSeconds": 2451.586094,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2023,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2023 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2023",
+   "sha256": "3e58e74fb218308b9064f19abecabe4ab310a1e41245831b33bf62b9fb12c2cb",
+   "bytes": 75929890,
+   "durationSeconds": 2372.809062,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2022,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2022 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2022",
+   "sha256": "1bf6d322f9addb53043573870f5f4584989ed0c8d673eabdc7442d341a1748ba",
+   "bytes": 78649485,
+   "durationSeconds": 2457.796406,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2021,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2021",
+   "sha256": "54be01f3bc58680b79f5890bbfab746678921528691a57af931d01c3fed7442d",
+   "bytes": 78535925,
+   "durationSeconds": 2454.247656,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2020,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2020",
+   "sha256": "3a57920d391d1f83e86ff6cdb9f2459271b7e1dd328fa3394bd5a6317a16816e",
+   "bytes": 76157845,
+   "durationSeconds": 2379.932656,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2019,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2019 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2019",
+   "sha256": "91810a98e45b5f75639c63e622077d613fd0c09d0731e53893039a8611b644b8",
+   "bytes": 77652939,
+   "durationSeconds": 2426.592625,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2018,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2018 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2018",
+   "sha256": "b28f32d75294e780cfada2c3aec19c65f2ad7cd6abe2f472a1b6dfead567af55",
+   "bytes": 79404188,
+   "durationSeconds": 2481.319156,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2017,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2017",
+   "sha256": "4a4abfc8928dfc9b6a9bb679ce519ac32e2d303dff4624b65dededcff704e909",
+   "bytes": 8877931,
+   "durationSeconds": 2453.211429,
+   "bitRate": 28946,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2016,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2016 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2016",
+   "sha256": "5e9a037583a53a90f21fb5a611835fb6eb5c92ff8e7945bfa193842070bc2e9a",
+   "bytes": 11400420,
+   "durationSeconds": 2356.944,
+   "bitRate": 38691,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2015,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2015 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2015",
+   "sha256": "3a3bbebf9531435443b775b7ac30981f000f00f3f48b406af8520c2e1f7351cb",
+   "bytes": 75238807,
+   "durationSeconds": 2351.151,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2014,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2014 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2014",
+   "sha256": "fe6e5a333e5ee36ac925b221bac9cc3b0c00c174074c9c4f0e8ff5594d1e50fb",
+   "bytes": 56952884,
+   "durationSeconds": 2372.96325,
+   "bitRate": 192000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2013,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2013 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2013",
+   "sha256": "f55e4f345b423deb8c435ebe3b71c463b19c99f3ace6a386c07bca5f5e3adac3",
+   "bytes": 56070781,
+   "durationSeconds": 2336.208958,
+   "bitRate": 192000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2012,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2012 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC012ZLPO17EV.mp3",
+   "secFileid": "LC012ZLPO17EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC012ZLPO17EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2012",
+   "sha256": "dc227712d702f0676acbd9b7597a619553f0ed5ee1a3809fcf1ee08200d26734",
+   "bytes": 35242203,
+   "durationSeconds": 2202.540375,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2011,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2011 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2011",
+   "sha256": "871d0f63f6dc9f8fa102ff977af6dd7b232170b614e52c06e3b53039db60dcb7",
+   "bytes": 37753302,
+   "durationSeconds": 2359.484063,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2010,
+  "paperFileids": [
+   "LC012ALPA00EV.pdf",
+   "LC012GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2010 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2010/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-11",
+   "discoveredAt": "https://examai.ie/past-papers/leaving-cert/spanish/2010",
+   "sha256": "691146fef76886bdb840537ccc4501d0d8c1cbccf0feaa2d7095d18669362cfd",
+   "bytes": 41745230,
+   "durationSeconds": 2608.979563,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ }
+]

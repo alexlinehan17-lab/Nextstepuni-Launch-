@@ -40,7 +40,7 @@ import sys
 import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paper_census import SUBJECTS, census_subject, key_label  # noqa: E402
+from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -157,6 +157,12 @@ def shipped_cards(subject):
                 if published['cardCount'] != len(published['cards']):
                     raise AssertionError(f"english published {published['level']} manifest count is stale")
                 shipped += [(card['id'], card['questionRef']) for card in published['cards']]
+        if subject == 'irish':
+            # The reviewed paper components ship beside authored.json; the
+            # deck is all of them, so the ledger reads all of them.
+            for name in irish_manifest_files()[1:]:
+                more = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
+                shipped += [(card['id'], card['questionRef']) for card in more['cards']]
         return shipped
 
     out = []
@@ -190,6 +196,13 @@ def shipped_cards(subject):
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
+    if subject == 'religious-education':
+        # The band-grid cards (re_lane.py) are data folded in by rubric.ts; a
+        # sitting rebuilt into them has left the literal point cards.
+        supplement = os.path.join(DECKS, subject, 'rubric-authored.json')
+        if os.path.exists(supplement):
+            out.extend((card['id'], card['questionRef'])
+                       for card in json.load(open(supplement, encoding='utf-8'))['cards'])
     if subject == 'business':
         supplement = os.path.join(DECKS, 'business', 'rubric-authored.json')
         if os.path.exists(supplement):
@@ -262,8 +275,27 @@ def reconcile_manifest(subject, census):
     shipped_ids = {cid for cid, _ in cards}
     covered = set()
     orphans = []
+    # A deferred Irish card is the June shape (one card per listening extract, per whole reading question, per
+    # literature option …), so it covers the printed asks its manifest lists (irish_deferred.py's `covers`), as a
+    # June card covers its paper's asks; every ask it names must be one the deferred census reads.
+    covers = {}
+    if subject == 'irish':
+        for name in irish_manifest_files():
+            covers.update(json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8')).get('covers', {}))
     for cid, ref in cards:
         wanted = expected.get(cid)
+        # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
+        # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
+        if subject == 'irish' and bool(re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
+            orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
+            continue
+        if cid in covers:
+            unknown = [leaf for leaf in covers[cid] if leaf not in expected]
+            if unknown or not covers[cid]:
+                orphans.append({'id': cid, 'ref': ref, 'why': f'covers asks absent from the {subject} paper census: {unknown[:3]}'})
+            else:
+                covered.update(covers[cid])
+            continue
         if wanted is None:
             orphans.append({'id': cid, 'ref': ref,
                             'why': f'card id is absent from the {subject} paper census'})
@@ -622,13 +654,27 @@ def reconcile_subject(subject, census=None):
             unparsed.append({'id': cid, 'ref': refstr})
             continue
         deferred = None
-        if subject == 'economics':
+        if subject == 'history':
             # A deferred sitting is its own census paper, 'Deferred', and its
-            # card says so twice: the id ("econ-2022-hl-deferred-...") and the
-            # citation ("... — Deferred sitting"). The two must agree. The same
-            # rule as Physics and Home Economics on codex/home-economics-
-            # continuation-20261101 and History on claude/history-lane-20261104.
-            deferred = bool(re.match(r'^econ-\d{4}-(?:hl|ol)-deferred-', cid))
+            # card says so twice: the id ("hist-2023-hl-deferred-lm-...") and
+            # the citation ("... — Deferred sitting"). The two must agree. The
+            # same rule as Physics and Home Economics on codex/home-economics-
+            # continuation-20261101.
+            hist_deferred = bool(re.match(r'^hist-\d{4}-(?:hl|ol)-deferred-', cid))
+            # History keeps its paper-name filter below (deferred stays None):
+            if hist_deferred != (' — Deferred sitting' in refstr):
+                unparsed.append({'id': cid, 'ref': refstr})
+                continue
+            if hist_deferred:
+                ref['paper'] = 'Deferred'
+        if subject in ('economics', 'engineering'):
+            # A deferred sitting is its own census paper, 'Deferred', and its
+            # card says so twice: the id ("econ-2022-hl-deferred-...",
+            # "eng-2022-hl-deferred-...") and the citation ("... — Deferred
+            # sitting"). The two must agree. The same rule as Physics and Home
+            # Economics on codex/home-economics-continuation-20261101.
+            deferred = bool(re.match({'economics': r'^econ-\d{4}-(?:hl|ol)-deferred-',
+                                      'engineering': r'^eng-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue
@@ -787,8 +833,10 @@ def content_hash(subject):
             # Scheme lines the lifted block lost are restored from the PDF at load.
             names += ['corrections.ts', 'corrections.json']
         if subject == 'irish':
-            # Listening/reading answers and literature tariffs are cut into rows at load.
-            names += ['answers.ts', 'tariffs.ts']
+            # Every manifest factory.ts imports, so a card gutted inside a
+            # reviewed component file trips the pin too; listening/reading
+            # answers and literature tariffs are cut into rows at load.
+            names += [*irish_manifest_files()[1:], 'answers.ts', 'tariffs.ts']
         if subject == 'accounting':
             # The priced lines a student claims are lifted from the scheme PDF (acc_rows.py).
             names += ['rows.json']
@@ -797,6 +845,9 @@ def content_hash(subject):
     if subject in ('physical-education', 'applied-maths'):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'religious-education' and os.path.exists(os.path.join(DECKS, subject, 'rubric-authored.json')):
+        for name in ('rubric-authored.json', 'rubric.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'business':
         # Reviewed rubric cards and printed routes are data, not literal cards.
@@ -846,7 +897,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'religious-education'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

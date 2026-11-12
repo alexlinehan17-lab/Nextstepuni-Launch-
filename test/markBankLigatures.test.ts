@@ -62,9 +62,16 @@ describe('Mark Bank ligature glyphs', () => {
       'religious-education', 'technology']) {
       expect(Object.keys(words[subject] ?? {}).length, subject).toBeGreaterThan(0);
     }
-    const found = decks.flatMap(({ subject, path, text }) => Object.keys(words[subject] ?? {})
-      .filter(word => new RegExp(`(?<![\\p{L}\\p{N}_])${escape(word)}(?![\\p{L}\\p{N}_])`, 'u').test(printed(text)))
-      .map(word => `${path.split('/cards/')[1]}: "${word}" (printed "${words[subject][word]}")`));
+    // The shown text is computed once per deck, not once per word: recomputed
+    // for each word it took this test past its 30 s limit on CI as decks grew.
+    const found = decks.flatMap(({ subject, path, text }) => {
+      const list = Object.keys(words[subject] ?? {});
+      if (!list.length) return [];
+      const shown = printed(text);
+      return list
+        .filter(word => new RegExp(`(?<![\\p{L}\\p{N}_])${escape(word)}(?![\\p{L}\\p{N}_])`, 'u').test(shown))
+        .map(word => `${path.split('/cards/')[1]}: "${word}" (printed "${words[subject][word]}")`);
+    });
     expect(found).toEqual([]);
   });
 

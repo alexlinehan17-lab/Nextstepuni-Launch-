@@ -10,7 +10,7 @@
  */
 import React from 'react';
 import type { IrishAllocation, IrishAnswerPart } from '../../types/markBank';
-import { irishPartCount, irishPartMarks, irishRowClaimed, irishRowScoreId, type IrishScores } from './irishScoring';
+import { irishPartCount, irishPartMarks, irishRowClaimed, irishRowPoint, irishRowScoreId, type IrishScores } from './irishScoring';
 import { ClaimDirections, ClaimPart, ClaimRow, marksChip } from './ClaimRows';
 import './irish-allocation.css';
 
@@ -31,8 +31,10 @@ export default function IrishAllocationPanel({ criterionId, allocation, scores, 
   return (
     <div className="mb-irish-alloc">
       {allocation.parts.map(part => {
-        const claimed = part.rows.filter(row => irishRowClaimed(criterionId, part, row.id, scores)).length;
-        const full = claimed >= irishPartCount(part);
+        // A point is claimed once any of its rows is: a group of one point's printed alternatives counts once.
+        const claimedPoints = new Set(part.rows.filter(row => irishRowClaimed(criterionId, part, row.id, scores)).map(irishRowPoint));
+        const full = claimedPoints.size >= irishPartCount(part);
+        const members = (group: string) => part.rows.filter(row => row.group === group);
         return (
           <section className="mb-irish-part" key={part.id} aria-label={part.prompt ?? `Cuid ${part.id}`}>
             <div className="mb-irish-part-head">
@@ -40,21 +42,34 @@ export default function IrishAllocationPanel({ criterionId, allocation, scores, 
               <span className="mb-claim-chip mb-irish-part-chip" aria-label={`Marks for this sub-question: ${partCaption(part)}`}>{partCaption(part)}</span>
             </div>
             {part.rows.map(row => {
-              const id = irishRowScoreId(criterionId, part.id, row.id);
-              const isClaimed = irishRowClaimed(criterionId, part, row.id, scores);
+              const claimRow = (member: typeof row) => {
+                const id = irishRowScoreId(criterionId, part.id, member.id);
+                const isClaimed = irishRowClaimed(criterionId, part, member.id, scores);
+                return (
+                  <ClaimRow
+                    key={id}
+                    text={member.text}
+                    marks={part.ladder ? undefined : member.marks}
+                    steps={member.steps}
+                    value={member.steps ? scores[id] ?? 0 : undefined}
+                    claimed={isClaimed}
+                    tone={!part.ladder && member.marks < part.tariff && !member.steps ? 'partial' : 'full'}
+                    disabled={!isClaimed && (full || claimedPoints.has(irishRowPoint(member)))}
+                    onToggle={() => onScore(id, isClaimed ? 0 : 1)}
+                    onStep={member.steps ? step => onScore(id, step) : undefined}
+                  />
+                );
+              };
+              if (!row.group) return claimRow(row);
+              // The printed alternatives for one point, together: any one of them earns it.
+              const group = members(row.group);
+              if (group[0] !== row) return null;
               return (
-                <ClaimRow
-                  key={id}
-                  text={row.text}
-                  marks={part.ladder ? undefined : row.marks}
-                  steps={row.steps}
-                  value={row.steps ? scores[id] ?? 0 : undefined}
-                  claimed={isClaimed}
-                  tone={!part.ladder && row.marks < part.tariff && !row.steps ? 'partial' : 'full'}
-                  disabled={full && !isClaimed}
-                  onToggle={() => onScore(id, isClaimed ? 0 : 1)}
-                  onStep={row.steps ? step => onScore(id, step) : undefined}
-                />
+                <div className="mb-irish-group" key={`${part.id}-${row.group}`} role="group"
+                  aria-label={`Any one of these: ${group[0].marks} marks`}>
+                  <span className="mb-irish-group-head">{`1 freagra · ${group[0].marks}m`}</span>
+                  {group.map(claimRow)}
+                </div>
               );
             })}
             {part.samples && <ClaimDirections title="Freagraí samplacha — sampla, ní seicliosta" notes={part.samples} />}

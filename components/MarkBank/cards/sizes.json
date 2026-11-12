@@ -40,8 +40,9 @@
   "ordinary": 1947
  },
  "irish": {
-  "higher": 215,
-  "ordinary": 185
+  "higher": 1750,
+  "ordinary": 1481,
+  "foundation": 1006
  },
  "art": {
   "higher": 902,
@@ -52,27 +53,27 @@
   "ordinary": 2146
  },
  "computer-science": {
-  "higher": 209,
-  "ordinary": 127
+  "higher": 350,
+  "ordinary": 232
  },
  "engineering": {
-  "higher": 360,
-  "ordinary": 194
+  "higher": 1452,
+  "ordinary": 817
  },
  "religious-education": {
-  "higher": 135,
-  "ordinary": 153
+  "higher": 377,
+  "ordinary": 409
  },
  "lcvp": {
   "common": 314
  },
  "technology": {
-  "higher": 588,
-  "ordinary": 501
+  "higher": 1239,
+  "ordinary": 1101
  },
  "history": {
-  "higher": 80,
-  "ordinary": 669
+  "higher": 1855,
+  "ordinary": 3088
  },
  "french": {
   "higher": 883,
@@ -87,8 +88,8 @@
   "ordinary": 153
  },
  "spanish": {
-  "higher": 204,
-  "ordinary": 143
+  "higher": 1117,
+  "ordinary": 814
  },
  "italian": {
   "higher": 172,
@@ -180,8 +181,8 @@
   "higher": 20
  },
  "dcg": {
-  "higher": 355,
-  "ordinary": 272
+  "higher": 703,
+  "ordinary": 517
  },
  "physical-education": {
   "higher": 382,

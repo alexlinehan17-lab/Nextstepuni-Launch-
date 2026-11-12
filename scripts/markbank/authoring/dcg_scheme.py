@@ -112,7 +112,9 @@ OPENS = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)')
 # nothing becomes a degree sign on the strength of a pattern alone.
 DEGREE_BLOCK = re.compile(r'<!-- markbank:degree-signs -->\n(.*?)'
                           r'<!-- /markbank:degree-signs -->\n?', re.S)
-DEGREE_O = re.compile(r'(\d)o(?=[\s,.;:)]|$)')
+# The markdown sometimes sets a space before the o as well: 2017 Ordinary
+# B-2(b) reads "Semicircle in plan (or 45 o lines)" where the PDF prints 45°.
+DEGREE_O = re.compile(r'(\d) ?o(?=[\s,.;:)]|$)')
 MARKER = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)\s*')
 
 
@@ -158,6 +160,12 @@ HEAD_MISPRINTS = {
 }
 
 
+def _repeats_scope(opener, line):
+    """Does `line` open with the whole of the opener's own words?"""
+    words = OPENS.sub('', opener).strip().lower()
+    return bool(words) and line.strip().lower().startswith(words + ' ')
+
+
 def _entries(lines):
     """The scheme's LOGICAL lines: a wrapped step joined back to its mark.
 
@@ -198,6 +206,15 @@ def _entries(lines):
                 out.append(pending)
                 pending = None
                 # fall through: the opener below is re-examined on its own
+            elif HEAD.match(line) and _repeats_scope(pending, line):
+                # The sub-head opens with the scope's own words: 2019
+                # Ordinary B-1 prints "(b) Interpenetration" over
+                # "Interpenetration on Left Hand Side (5)" and "...Right Hand
+                # Side (6)". Joined, the first read "Interpenetration
+                # Interpenetration on Left Hand Side", a title the SEC never
+                # printed. The opener stands alone as the letter's scope.
+                out.append(pending)
+                pending = None
             elif STEP.match(joined) or PART.match(joined):
                 out.append(joined)
                 pending = None

@@ -1,0 +1,447 @@
+{
+  "year": 2010,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "schemeFileid": "LC001ALP000EV.pdf",
+  "paperSha256": "c3ecba9e2accb4fffddac01ff59068ed2807d7bc616e35caa886138edfcc44f0",
+  "schemeSha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "schemeScope": "Combined Higher scheme LC001ALP000EV (named EV, printed in Irish). PDF 14–15 Ceist 1 Prós (A: (a) three alternatives \"Ionramháil Ábhair = 22 marc\", (b) two \"= 13 marc\", \"Cumas Gaeilge – (a) agus (b) le chéile = 5 marc\"; B the same, each alternative with its title line, then \"C. 1 (A) nó (B) = 40 marc (22 + 13 + 5)\", the examiner’s note and the title rule); PDF 16 Ceist 2 Próstéacs Breise (\"{ Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc}\") and Ceist 3A; PDF 17 Ceist 3B; PDF 18 Ceist 3C, Ceist 3’s \"Cumas Gaeilge (A nó B agus C le chéile) = 10 marc\" and Ceist 4 Stair (\"13 + 12 (Eolas) móide 5 marc ar an gCumas Gaeilge (sa dá cheann le chéile) = 30 marc\"). Páipéar II prints no supporting notes, band table or grade-to-mark table. PDF 3–13 belong to Páipéar 1, PDF 19–30 to the aural test, PDF 31–32 are blank.",
+  "reviewMethod": "Every paper page (1 cover, 2 the Treoracha, 3–15 the questions and poems, 16 blank) and scheme PDF 14–18 read in the text layer and checked against the rendered page; each prompt line and scheme slice is asserted against the PDFs by the builder.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "AINMNITHE (A) nó ROGHNACH (B)",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "AINMNITHE agus AN CÚRSA ROGHNACH.",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "Ainmnithe a fhreagairt; agus i gcás Cheist 3, is féidir ceist ar an bhFilíocht Ainmnithe nó",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "FREAGAIR GACH CEIST (1, 2, 3 AGUS 4).",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "I gcás Cheist 1, mar shampla, is féidir ceist ar an bPrós Roghnach nó ar an bPrós",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "Nóta: I gcás Cheist 1 (Prós) agus Cheist 3 (Filíocht), tá rogha ann idir AN CÚRSA",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "PRÓSTÉACS BREISE: Do rogha idir A, B, C nó D",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 2,
+      "raw": "ar an bhFilíocht Roghnach a fhreagairt.",
+      "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+    },
+    {
+      "page": 3,
+      "raw": "(a) Maidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar an gcaoi a léirítear",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 3,
+      "raw": "(b) Maidir leis an sliocht as an dírbheathaisnéis roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair (a) agus (b).",
+      "decision": "Every printed part of this route is answered; one card with a criterion per part."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach) anseo thíos.",
+      "decision": "Ceist 1 offers A (Prós Ainmnithe) or B (Prós Roghnach): each is its own route card (P-A, P-B). No combination card."
+    },
+    {
+      "page": 3,
+      "raw": "Maidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar dhá cheann de na",
+      "decision": "Opening line of a printed alternative, one route of its card; its “dhá …” (two aspects or traits) is a choice inside that question, the answer, not a route; one criterion."
+    },
+    {
+      "page": 3,
+      "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar dhá ghné den",
+      "decision": "Opening line of a printed alternative, one route of its card; its “dhá …” (two aspects or traits) is a choice inside that question, the answer, not a route; one criterion."
+    },
+    {
+      "page": 3,
+      "raw": "Maidir leis an scannán Clare sa Spéir, déan plé gairid ar do rogha dhá cheann de na gnéithe seo a leanas",
+      "decision": "Opening line of a printed alternative, one route of its card; its “dhá …” (two aspects or traits) is a choice inside that question, the answer, not a route; one criterion."
+    },
+    {
+      "page": 3,
+      "raw": "Maidir leis an sliocht as an dírbheathaisnéis Fiche Blian ag Fás, déan plé gairid ar dhá thréith a bhaineann le",
+      "decision": "Opening line of a printed alternative, one route of its card; its “dhá …” (two aspects or traits) is a choice inside that question, the answer, not a route; one criterion."
+    },
+    {
+      "page": 3,
+      "raw": "Maidir leis an sliocht as an dírbheathaisnéis roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 3,
+      "raw": "déan plé gairid ar dhá thréith de chuid an údair ann.",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 3,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 3,
+      "raw": "− PRÓS ROGHNACH −",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 4,
+      "raw": "(b) CNUASACH GEARRSCÉALTA ROGHNACH",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 4,
+      "raw": "An ráiteas sin a phlé maidir le do rogha gearrscéal amháin as do chnuasach roghnach.",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 4,
+      "raw": "An ráiteas sin a phlé maidir le do rogha scéal amháin díobh seo a leanas:",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair (a) nó (b).",
+      "decision": "Choice of route inside a Ceist 2 section: (a) the named text or (b) an optional one, each its own route card."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall).",
+      "decision": "Ceist 2 offers one of A–D, and inside each (a) or (b): each (a)/(b) is its own route card (X-2A-a … X-2D-b)."
+    },
+    {
+      "page": 4,
+      "raw": "Maidir le gearrscéal ar bith as do chnuasach roghnach, déan plé ar thubaiste éigin i saol",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 4,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 4,
+      "raw": "“Is minic a thagann athrú nó forbairt ar phearsantacht na príomhphearsan in imeacht an scéil.”",
+      "decision": "“nó”/“dhá” inside the quoted statement the question asks about, not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "(b) ÚRSCÉAL ROGHNACH",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 5,
+      "raw": "Freagair (a) nó (b).",
+      "decision": "Choice of route inside a Ceist 2 section: (a) the named text or (b) an optional one, each its own route card."
+    },
+    {
+      "page": 5,
+      "raw": "Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan cur síos ar thréimhse áirithe",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 5,
+      "raw": "Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan plé ar an tionchar",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 5,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 6,
+      "raw": "(b) DÍRBHEATHAISNÉIS ROGHNACH",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair (a) nó (b).",
+      "decision": "Choice of route inside a Ceist 2 section: (a) the named text or (b) an optional one, each its own route card."
+    },
+    {
+      "page": 6,
+      "raw": "Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan cur síos ar an",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 6,
+      "raw": "Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan cur síos ar an gcaidreamh",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 6,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 7,
+      "raw": "(b) DRÁMA ROGHNACH",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 7,
+      "raw": "Déan plé ar an ráiteas sin agus tú ag tagairt do dhá theicníocht dhrámata ar thug tú suntas dóibh",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 7,
+      "raw": "Déan plé ar an ráiteas sin agus tú ag tagairt do dhá theicníocht dhrámata, ar a laghad.",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair (a) nó (b).",
+      "decision": "Choice of route inside a Ceist 2 section: (a) the named text or (b) an optional one, each its own route card."
+    },
+    {
+      "page": 7,
+      "raw": "Maidir leis an dráma roghnach a ndearna tú staidéar air, déan plé ar an gcaidreamh atá ag an",
+      "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+    },
+    {
+      "page": 7,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 7,
+      "raw": "sa dráma roghnach a ndearna tú staidéar air.",
+      "decision": "Continuation of 2D(b)(ii) (the optional play), not a selection."
+    },
+    {
+      "page": 7,
+      "raw": "“Fásann príomhchoimhlintí an dráma as lochtanna nó duáilcí daonna a cheiltear faoi",
+      "decision": "“nó”/“dhá” inside the quoted statement the question asks about, not a selection."
+    },
+    {
+      "page": 8,
+      "raw": "Dob é an samhradh so mo rogha ’pháirtí é.",
+      "decision": "Line of the printed poem, not a selection directive."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair (a) atá thíos agus (b) atá thall ar leathanach 10.",
+      "decision": "Every printed part of this route is answered; one card with a criterion per part."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair A (Filíocht Ainmnithe) ar na leathanaigh 8, 9 agus 10 nó B (Filíocht Roghnach) ar leathanach 11",
+      "decision": "Ceist 3 offers A (Filíocht Ainmnithe) or B (Filíocht Roghnach), and C for everyone: each is its own route card (F-A, F-B, F-C)."
+    },
+    {
+      "page": 8,
+      "raw": "Scríobh nóta gairid faoi éifeacht na húsáide a bhaineann an file as dhá cheann díobh seo a leanas:",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 8,
+      "raw": "agus freagair C (Dánta Dualgais Breise) ar na leathanaigh 12, 13 agus 14.",
+      "decision": "Ceist 3 C is answered by everyone: its own route card (F-C)."
+    },
+    {
+      "page": 9,
+      "raw": "Scríobh nóta gairid faoi éifeacht na húsáide a bhaineann an file as dhá cheann díobh seo a leanas:",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 9,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 10,
+      "raw": "(b) “Sa dán Faoiseamh a Gheobhadsa (thíos), tá codarsnacht láidir idir dhá ghné de shaol an fhile.”",
+      "decision": "“nó”/“dhá” inside the quoted statement the question asks about, not a selection."
+    },
+    {
+      "page": 10,
+      "raw": "an file as dhá cheann díobh seo a leanas:",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 10,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 11,
+      "raw": "Freagair (a) agus (b).",
+      "decision": "Every printed part of this route is answered; one card with a criterion per part."
+    },
+    {
+      "page": 11,
+      "raw": "Luaigh an mothúchán is mó a mhúsclaíonn an dán ionat féin agus cuir fáth amháin le do rogha.",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 11,
+      "raw": "gairid ar an dá theicníocht is éifeachtaí a úsáideann an file chun príomhthéama an dáin a fhorbairt.",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 11,
+      "raw": "gairid ar éifeacht na húsáide a bhaineann an file as dhá ghné díobh seo a leanas: (a) na híomhánna;",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 11,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 11,
+      "raw": "úsáid tú i gcuid (a) thuas, déan plé gairid ar do rogha dhá cheann de na gnéithe seo: (a) cúlra an dáin;",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 11,
+      "raw": "− FILÍOCHT ROGHNACH −",
+      "decision": "Section or route heading naming the optional course (ROGHNACH); each route is its own card."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair (a) nó (b).",
+      "decision": "Ceist 3 C offers (a) Úirchill a’ Chreagáin or (b) An Chéad Dráma, marked alike (18 + 4 + 8): one card (F-C), each poem a route of it."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair (i), (ii) agus (iii) thíos.",
+      "decision": "Every part of 3C(a) is answered: one criterion each for (i), (ii) and (iii)."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair C (Dánta Dualgais Breise) ar na leathanaigh 12, 13 agus 14.",
+      "decision": "Ceist 3 C is answered by everyone: its own route card (F-C)."
+    },
+    {
+      "page": 12,
+      "raw": "Scríobh nóta ar mheadaracht an dáin agus léirigh í le do rogha véarsa as.",
+      "decision": "3C(a)(iii): the candidate’s choice of verse to illustrate the metre is the answer, not a route; one criterion."
+    },
+    {
+      "page": 12,
+      "raw": "má éagaim fán tSeanainn, i gcrích Mhanainn nó san Éiphte mhór",
+      "decision": "Line of the verse 3C(a)(ii) quotes for explanation (“Mínigh na línte seo”), not a selection."
+    },
+    {
+      "page": 12,
+      "raw": "nó an de na naoi mná deasa thú ó Pharnassus bhí déanta i gcló?",
+      "decision": "Line of the printed poem, not a selection directive."
+    },
+    {
+      "page": 12,
+      "raw": "nó an tírse a bheith ag fanóid faoi gach rabhán dá ndéan tú ’cheol?’",
+      "decision": "Line of the printed poem, not a selection directive."
+    },
+    {
+      "page": 13,
+      "raw": "má éagaim fan tSeanainn, i gcrích Mhanainn nó san Éiphte mhór",
+      "decision": "Line of the printed poem, not a selection directive."
+    },
+    {
+      "page": 14,
+      "raw": "(b) Freagair (i), (ii) agus (iii) thíos.",
+      "decision": "Every part of 3C(b) is answered: one criterion each for (i), (ii) and (iii)."
+    },
+    {
+      "page": 14,
+      "raw": "Nó go dtitfidh an cuirtín síos ag deireadh,",
+      "decision": "Line of the printed poem, not a selection directive."
+    },
+    {
+      "page": 14,
+      "raw": "Scríobh nóta ar an úsáid a bhaintear sa dán as dhá cheann díobh seo a leanas:",
+      "decision": "A choice inside one printed question (two of the listed aspects, traits, techniques or features, one of the listed stories, one emotion and one reason): the answer, not a route; one criterion."
+    },
+    {
+      "page": 14,
+      "raw": "nó",
+      "decision": "The word between two printed alternatives of one route (each alternative a route of its card, marked alike by the scheme)."
+    },
+    {
+      "page": 15,
+      "raw": "Do rogha beirt díobh seo a leanas:",
+      "decision": "Ceist 4(a): two of the listed people inside one option, its answer; not a route."
+    },
+    {
+      "page": 15,
+      "raw": "Do rogha dhá cheann díobh seo a leanas:",
+      "decision": "Ceist 4(b): two of the listed topics inside one option, its answer; not a route."
+    },
+    {
+      "page": 15,
+      "raw": "Scríobh gearrchuntas ar DHÁ CHEANN díobh seo a leanas.",
+      "decision": "Ceist 4: two of (a)–(f), one card (X-4): Eolas 13 + 12 (stepped at that printed split) and Cumas Gaeilge 5."
+    }
+  ],
+  "nonPoolDecisions": [
+    "One card per printed route: Ceist 1 A (Prós Ainmnithe) and B (Prós Roghnach); Ceist 2 A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b); Ceist 3 A, B and C; Ceist 4. 14 cards.",
+    "A printed choice inside a route is one card: Ceist 1A(a)’s three texts and 1A(b)’s two questions, 1B(a)’s three optional texts and 1B(b)’s two questions, each Ceist 2 route’s (i) and (ii), 3A(a)’s two poems, 3A(b)’s two questions, 3B’s alternatives and 3C’s two poems are marked alike by the scheme and file under one Atlas heading (pre-2012 texts have no Atlas node of their own).",
+    "The scheme prices each answer with one Eolas figure and prints no scale for it (no band table, grade table or notes on Páipéar II): each judged answer is claimed whole. Where a criterion prints its alternatives each at that figure (\"(Lá Buí Bealtaine) Ionramháil Ábhair = 22 marc Nó … = 22 marc\"), each alternative is a row of its own at the full figure and the one answered is claimed (tariffs.ts parsePrintedAlternatives); an alternative printed again in the same words (3C(ii) \"Mínigh na línte\") is one row.",
+    "Ceist 2’s Eolas criterion reads \"Ionramháil Ábhair = 35 marc\" as printed inside its braces; the selection line before it and the Cumas Gaeilge rule after it are the Gaeilge criterion’s guidance.",
+    "Ceist 3’s Cumas Gaeilge is 10 for A or B and C together; each route card carries 5, its printed 35 less its printed Eolas 30, and says so.",
+    "Ceist 4 is one card: Eolas 25 and Cumas Gaeilge 5. The Eolas row is the scheme’s \"Dhá cheann le déanamh as (a), (b), (c), (d), (e), (f). 13 + 12 (Eolas)\", stepped only at the split it prints (0, 12, 13, 25); the \"= 30 marc\" total and the full rule are on the Gaeilge criterion."
+  ],
+  "sourceFindings": [
+    "Pre-2012 layout: the reading comprehension is in Páipéar 1; Páipéar 2 is literature and Stair na Gaeilge. Existing Atlas entries for this paper are section keys (1, 2, 3, 4, P-A, P-B, F-A, F-B, X); the route cards take P-A, P-B, F-A and F-B over (the 2010–2011 keys the crosswalk files on the prescribed and optional shelves) and add F-C (Dánta Dualgais Breise), X-2A-a … X-2D-b and X-4 beside them, as 2011.",
+    "Paper variants, kept as printed: 3C(a)(ii) quotes the poem’s last verse as \"más cinniúin domh\", \"gealladh domh\" and \"fán tSeanainn\" where the poem (PDF 13) prints \"damh\" and \"fan\"; the question names the poem \"Úirchill a’ Chreagáin\", its printed title \"ÚIRCHILL AN CHREAGÁIN\".",
+    "Scheme variants beside the paper (the cards show the paper’s question): 3A’s heading \"(35 marc)\" for the paper’s \"35 mharc\"; \"Níl aon Ní\" for \"Níl Aon Ní\"; 1B(a) \"(Scéil béaloidis)\"; 3C(b)(ii) \"Mínigh na línte\" without the full stop that (a)(ii) prints.",
+    "Ceist 3’s note prints \"an marc as 17 (Ábhar) agus as 13 (Ábhar) agus as 30 (Ábhar) agus as 10 (Gaeilge)\": 17 is A or B’s (a) (11 + 6), 13 its (b), 30 C (18 + 4 + 8).",
+    "The paper’s SymbolMT dashes (U+F02D) flank the boxed headings and print three dashes inside the poems; read as U+2212. The scheme’s Páipéar II pages print no symbol-font span."
+  ],
+  "remainingWork": [
+    "Integration (parent): factory registration, coverage grammar for the 2010 refs, archive review test row, inventory row."
+  ]
+}

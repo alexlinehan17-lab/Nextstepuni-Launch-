@@ -1,0 +1,89 @@
+{
+  "subject": "irish",
+  "scope": "Higher and Ordinary 2021–2025 listening cards (70 cards in authored.json)",
+  "verifiedOn": "2026-10-11",
+  "method": "Downloaded both files; compared SHA-256 and macOS afinfo durations. For 2021, decoded both to 8 kHz mono PCM (afconvert) and aligned 100 Hz RMS envelopes by normalised cross-correlation, then checked every 30 s window (5 s windows for the opening).",
+  "result": "Every mirror has a verified official equivalent; all 70 cards now play the official SEC URL (playbackUrl = canonicalUrl). Only audioMaterial.playbackUrl and the mirror credit in audioMaterial.attribution changed; card IDs and all other fields are byte-identical.",
+  "mirrorsRetained": [],
+  "years": [
+    {
+      "year": 2021,
+      "official": "https://www.examinations.ie/archive/exampapers/2021/LC001ZLP017IV.mp3",
+      "officialSha256": "88d659537f942cc4c98fd93af48af4727f65ad0a2e1513a4679986597ae7647d",
+      "officialSeconds": 1436.395,
+      "replacedMirrors": [
+        {
+          "url": "https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20A.mp3",
+          "sha256": "9a9dbda33b943f57f785a3c736ed4061f6a3d7ae97f2e1d0446f526ad5521ea3",
+          "seconds": 406.648,
+          "alignedAt": [
+            0.0,
+            406.64
+          ],
+          "windowCorrelation": "≥0.997 for every 5 s window after the first 5 s (0.786, file-start edge)"
+        },
+        {
+          "url": "https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20B.mp3",
+          "sha256": "9e0d4b11e39ecaba1d0297f9f08d479357ca7e7d2f73048815e1867ec05a3a07",
+          "seconds": 665.626,
+          "alignedAt": [
+            406.54,
+            1072.16
+          ],
+          "windowCorrelation": "≥0.988 for every 30 s window"
+        },
+        {
+          "url": "https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20C.mp3",
+          "sha256": "401edff3eb414399f49d83e530616220faf638c61c3c4f0558027fee767ac930",
+          "seconds": 364.33,
+          "alignedAt": [
+            1072.07,
+            1436.39
+          ],
+          "windowCorrelation": "≥0.995 for every 30 s window"
+        }
+      ],
+      "verdict": "The three mirror files are the official recording split at the Cuid A/B/C boundaries: they tile 0–1436.4 s contiguously (joins within 0.1 s; total 1436.6 s vs official 1436.4 s decoded) and every RMS-envelope window correlates ≥0.988 at a constant offset (≤40 ms)."
+    },
+    {
+      "year": 2022,
+      "official": "https://www.examinations.ie/archive/exampapers/2022/LC001ZLP017IV.mp3",
+      "replacedMirror": "https://educateplus.ie/sites/default/files/2022_5.mp3",
+      "officialSha256": "a6b31158467b3c0a958d616373f6a56d4c393f3778eef16ac5613e9c28c5b60c",
+      "mirrorSha256": "a6b31158467b3c0a958d616373f6a56d4c393f3778eef16ac5613e9c28c5b60c",
+      "officialSeconds": 1433.434062,
+      "mirrorSeconds": 1433.434062,
+      "verdict": "Byte-identical file (same SHA-256, same size, same duration)."
+    },
+    {
+      "year": 2023,
+      "official": "https://www.examinations.ie/archive/exampapers/2023/LC001ZLP017IV.mp3",
+      "replacedMirror": "https://educateplus.ie/sites/default/files/2023_4.mp3",
+      "officialSha256": "e010d32b1b62cba381603f18a5b43d870edf6e025bcfb533268eedcdce62454e",
+      "mirrorSha256": "e010d32b1b62cba381603f18a5b43d870edf6e025bcfb533268eedcdce62454e",
+      "officialSeconds": 1398.912031,
+      "mirrorSeconds": 1398.912031,
+      "verdict": "Byte-identical file (same SHA-256, same size, same duration)."
+    },
+    {
+      "year": 2024,
+      "official": "https://www.examinations.ie/archive/exampapers/2024/LC001ZLP017IV.mp3",
+      "replacedMirror": "https://educateplus.ie/sites/default/files/2024_6.mp3",
+      "officialSha256": "f3167507902618290b7c7a18511a6bdda5b0f679cca6845f692305e7175310c0",
+      "mirrorSha256": "f3167507902618290b7c7a18511a6bdda5b0f679cca6845f692305e7175310c0",
+      "officialSeconds": 1356.796719,
+      "mirrorSeconds": 1356.796719,
+      "verdict": "Byte-identical file (same SHA-256, same size, same duration)."
+    },
+    {
+      "year": 2025,
+      "official": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
+      "replacedMirror": "https://educateplus.ie/sites/default/files/2025_6.mp3",
+      "officialSha256": "87d211b89b76963a25542e37f0e4f5b91c59a49729ef0ba73ea0d33c4d366f1d",
+      "mirrorSha256": "87d211b89b76963a25542e37f0e4f5b91c59a49729ef0ba73ea0d33c4d366f1d",
+      "officialSeconds": 1306.487969,
+      "mirrorSeconds": 1306.487969,
+      "verdict": "Byte-identical file (same SHA-256, same size, same duration)."
+    }
+  ]
+}

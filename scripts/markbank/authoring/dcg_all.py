@@ -52,8 +52,8 @@ import cardlint                                              # noqa: E402
 import dcg_paper as DP                                       # noqa: E402
 import dcg_topics as DT                                      # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from dcg_scheme import (CUE_FLOOR, DcgScheme, cue_score,     # noqa: E402
-                        has_scheme)
+from dcg_scheme import (CUE_FLOOR, DcgScheme, Unit,          # noqa: E402
+                        cue_score, has_scheme)
 
 SUBJECT = 'dcg'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
@@ -63,13 +63,24 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 # cards, crops, paper link and Atlas question have been checked. A sitting not
 # yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
-          | {(2018, 'hl'), (2018, 'ol')})
+          | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
+             (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
+             (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
+             (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'),
+             (2010, 'hl'), (2010, 'ol')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
 # by hand, with "elevation (2) and plan (2)" as parts, and step_row() now
 # builds exactly that from the scheme for every card.
 SHIPPED_EDITS = ()
+
+# Live card ids that a corrected citation would otherwise rename. An id keys a
+# student's review history and is never renamed: the citation is corrected,
+# the id is kept. 2019 Ordinary B-1's "(a) Given Elevation and Plan" shipped
+# as dcg-2019-ol-b1 citing "Q1(a), (b)" -- the old alignment spread it over
+# both letters; it prices (a), and November 2026's pairing cites it so.
+KEPT_IDS = {'dcg-2019-ol-b1a': 'dcg-2019-ol-b1'}
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.json')
 
 # The Topic Atlas files every printed question under the syllabus headings it
@@ -139,6 +150,34 @@ def pair(units, leaves, texts):
             paper_letters.append(key[2])
     if m == len(paper_letters) and [u.letter for u in units] == paper_letters:
         return [(u, [k for k in leaves if k[2] == u.letter]) for u in units]
+    # The scheme letters the SAME parts as the paper, in the same order, and
+    # prices some of a part under extra unlettered heads printed beneath its
+    # letter: 2017 Higher B-3 prints "(a) Required Plan (11)", then
+    # "Perspective Drawing of Prism (21)" and "Perspective of required lines
+    # on surfaces B, A and C (6)", then "(b) Development of Display Box (7)".
+    # The two documents still agree on every address, so an unlettered head
+    # belongs to the letter printed above it. Where the letters do NOT match
+    # (2021 Ordinary B-3 prices the paper's (b) under unlettered heads and
+    # letters its (c) "(b)"), the alignment below decides, as before.
+    # A letter may open more than one priced head: 2019 Ordinary B-1 scopes
+    # "(b) Interpenetration" over two priced sub-heads, each read as a unit
+    # lettered (b). The letters agree with the paper once each is counted
+    # where it is first printed.
+    if by_address(units, leaves):
+        out, letter = [], None
+        for u in units:
+            letter = u.letter or letter
+            under = [k for k in leaves if k[2] == letter]
+            # A head that prints the ROMAN it prices: 2011 Higher C-1 sets
+            # "(b) (i) Strike Line (4)" and "(ii) Dip of stratum (6)" against
+            # the paper's (b)(i) and (b)(ii) (2010 Higher C-1 the same). The
+            # roman is the address the SEC printed; spread over the whole
+            # letter, each card cited both romans and asked both.
+            r = HEAD_ROMAN.match(u.title)
+            if r and (letter and any(k[3] == r.group(1) for k in under)):
+                under = [k for k in under if k[3] == r.group(1)]
+            out.append((u, under))
+        return out
 
     # Every pairing the alignment makes has to PAY for itself. Scored on the
     # wording alone, spreading one unit over two asks always scores more than
@@ -196,6 +235,17 @@ def pair(units, leaves, texts):
         else:
             j += 1
     return [(units[k], out[k]) for k in range(m)]
+
+
+HEAD_ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)\s')
+
+
+def by_address(units, leaves):
+    """Do both documents letter the same parts in the same order, so that an
+    unlettered head belongs to the letter printed above it?"""
+    paper_letters = list(dict.fromkeys(k[2] for k in leaves if k[2]))
+    lettered = list(dict.fromkeys(u.letter for u in units if u.letter))
+    return bool(units) and bool(units[0].letter) and lettered == paper_letters
 
 
 # --------------------------------------------------------------- citations
@@ -285,8 +335,18 @@ def card_id(year, level, section, q, covered, ordinal, many):
 # correct one the step's full marks. "(3 lines)" and "(12 min.)" are not
 # prices: a token that is not a number or a count of marks refuses the whole.
 SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
-ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})\s*$', re.I)
-COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})$')
+# "(Any = 1)", "(Any = 1-2)", and with what is drawn named: "(any curve =
+# 1)" (2013 and 2014 Higher, five steps of 2023 Higher C-2), "(Any ellipse =
+# 2)" (2010 and 2011 Higher).
+ANY_PRICE = re.compile(r'^\s*any(?:\s+[a-z]+)?\s*=?\s*(\d{1,2})'
+                       r'(?:\s*-\s*(\d{1,2}))?\s*$', re.I)
+# "(<12 = 1)": fewer than the required divisions earns 1, the full number the
+# step's marks (2010 Higher C-4, 2011 Higher C-4). Read like "(Any = 1)".
+FEWER_PRICE = re.compile(r'^\s*<\s*\d{1,2}\s*=\s*(\d{1,2})()\s*$')
+# "(4×1)"; 2015 Higher A-1(b) adds what is counted: "(3 x 1 for each
+# surface)".
+COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})(?:\s+for\s+each\s+[a-z]+)?$')
+LABELLED = re.compile(r'^([A-Za-z]+)\s*=\s*(\d{1,2})$')
 # "Projections from elevation (2) and plan (2)": the step names its parts.
 NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
 
@@ -306,12 +366,36 @@ def sub_ladder(text, marks):
     single claim, wherever the printed parts do not add up to the step's own
     printed mark -- 2024 Higher A-4 prints "(1,2)" against a 2-mark step.
     """
-    for m in reversed(SUB_PRICE.findall(text)):
+    # Two or more printed prices NAMED by what earns them, on one step: 2016
+    # Higher B-3(c) prints "Draw correct curve (Any = 1) ... (Ellipse = 2)"
+    # against 3 -- any curve earns 1, an ellipse 2, the correct curve the
+    # step's 3. Each named price is a value the SEC printed; nothing between.
+    named = [LABELLED.match(m.strip()) for m in SUB_PRICE.findall(text)]
+    named = [n for n in named if n]
+    if len(named) >= 2:
+        values = sorted({int(n.group(2)) for n in named})
+        return [0, *values, marks] if all(0 < v < marks for v in values) \
+            else None
+    # Two printed prices on one step that do not name what earns them:
+    # 2012 Higher C-2(a) prints "Draw outline of hyperbolic curves .....(3,2)
+    # ....(any = 2)" against 5. Every value either price reaches is a value the
+    # SEC printed a route to, so the ladder is the union of the two.
+    groups = SUB_PRICE.findall(text)
+    if len(groups) >= 2:
+        each = [sub_ladder(f'({g})', marks) for g in groups]
+        if all(each):
+            return sorted(set().union(*each))
+    for m in reversed(groups):
         inner = m.strip()
-        a = ANY_PRICE.match(inner)
+        a = ANY_PRICE.match(inner) or FEWER_PRICE.match(inner)
         if a:
-            k = int(a.group(1))
-            return [0, k, marks] if 0 < k < marks else None
+            # "(Any = 1)": any curve earns 1, the right one the step's marks.
+            # "(Any = 1-2)" (2017 Higher C-2): any curve earns 1 or 2.
+            lo = int(a.group(1))
+            hi = int(a.group(2)) if a.group(2) else lo
+            if not 0 < lo <= hi < marks:
+                return None
+            return [0, *range(lo, hi + 1), marks]
         reach = set()
         for route in re.split(r'\s+or\s+', inner):
             values = []
@@ -639,10 +723,22 @@ def author(bind_figures=True):
             presentation = [step for step in (
                 S.questions[qkey].trailer if qkey in S.questions else [])
                 if PRESENTATION.match(step.text)]
-            for step in (S.questions[qkey].trailer if qkey in S.questions
-                         else []):
-                if step in presentation:
-                    continue
+            # A question asked WHOLE that the scheme prices with no head at
+            # all: its romans follow "QUESTION A-3" straight away (2013
+            # Ordinary A-3; also 2011 Higher A-3, 2012 Higher A-3, 2012
+            # Ordinary A-4). The steps are the question's own unit, titled by
+            # the scheme's heading, at the sum of the marks printed against
+            # them (the question's printed "Total =", less Presentation).
+            loose = [step for step in (S.questions[qkey].trailer
+                                       if qkey in S.questions else [])
+                     if step not in presentation]
+            if not unit_list and loose and len(mine) == 1:
+                whole = Unit(None, f'Question {section}-{q}',
+                             sum(step.marks for step in loose))
+                whole.steps = list(loose)
+                unit_list = [whole]
+                loose = []
+            for step in loose:
                 reason = ('the scheme prices this step on the QUESTION, '
                           'under no part the paper asks')
                 refused[reason] += 1
@@ -671,7 +767,10 @@ def author(bind_figures=True):
                 for _u, cov in pairing)
 
             question_carded = False
+            addressed = by_address(unit_list, mine)
+            scope = None
             for index, (unit, covered) in enumerate(pairing, 1):
+                scope = unit.letter or scope
                 ref = ref_for(year, level, section, q, covered, leaves)
                 base = card_id(year, level, section, q, covered, 1, False)
                 many = per_address[tuple(covered)] > 1
@@ -694,6 +793,15 @@ def author(bind_figures=True):
                 elif score >= CUE_FLOOR:
                     wording += 1
                 elif unit.letter and any(unit.letter == k[2] for k in covered):
+                    letter_only += 1
+                elif addressed and scope and all(k[2] == scope
+                                                 for k in covered):
+                    # An unlettered head printed under its letter, where the
+                    # two documents letter the same parts: 2015 Higher B-1
+                    # prices (a) under "Outline Plan and Elevation", then
+                    # "Outline auxiliary view" and "Plan of elliptical
+                    # transmission area" beneath it. Its address is the
+                    # letter the SEC printed above it, not its order.
                     letter_only += 1
                 else:
                     order_only += 1
@@ -732,7 +840,14 @@ def author(bind_figures=True):
                         continue
                     pieces = split
 
-                stem = ' '.join([' '.join((qq['stem'] or '').split())]
+                # The parts list an assembly prints is a table, and read as
+                # text it is two-word fragments: PARTS_LIST comes off the stem
+                # as it does off the ask. Left on, every C-5 stem ended "Part
+                # Name Qty. Main Body Base Brass Insert", and a C-5 asked whole
+                # printed its own words twice, the stem no longer matching the
+                # ask it repeats.
+                own = PARTS_LIST.sub('', ' '.join((qq['stem'] or '').split()))
+                stem = ' '.join([own.strip()]
                                 + parent_words(P, section, q, covered)).strip()
                 # A question the paper asks WHOLE has no ask of its own: its
                 # leaf text IS the stem, so the card would print the same
@@ -783,6 +898,7 @@ def author(bind_figures=True):
                         piece_id = f'{cid}-{piece_no}'
                     extra = presentation if not question_carded else []
                     question_carded = True
+                    piece_id = KEPT_IDS.get(piece_id, piece_id)
                     rows = step_rows(piece_id, title, steps, extra)
                     marks += sum(s.marks for s in extra)
                     cards.append({

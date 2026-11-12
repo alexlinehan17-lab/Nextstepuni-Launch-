@@ -151,6 +151,7 @@ def quadrants(page):
     rows = _thin(rows, 80)
     foot = min([r[0] for r in rows_ if FOOT_BANNER.search(r[3])]
                + [H - 34], default=H - 34) - 8
+    boxes = ruled_boxes(page)
     out = {}
     for r, m in heads:
         x = to_x(r[1])
@@ -161,8 +162,51 @@ def quadrants(page):
         x1 = cols[ci + 1] - 14 if ci + 1 < len(cols) else W - 18
         y0 = rows[ri] - 14 if ri else rows[0] - 16
         y1 = rows[ri + 1] - 14 if ri + 1 < len(rows) else foot
-        out[(m.group(1), int(m.group(2)))] = pymupdf.Rect(x0, y0, x1, y1)
+        out[(m.group(1), int(m.group(2)))] = _inside_own_box(
+            pymupdf.Rect(x0, y0, x1, y1), boxes, (x + 4, y + 4))
     return out
+
+
+def ruled_boxes(page):
+    """The ruled frames the SEC draws round each question of the A3 sheet,
+    in the page's displayed (rotated) space, which is the space a clip is in."""
+    M = page.rotation_matrix
+    return [item[1] * M for d in page.get_drawings() for item in d['items']
+            if item[0] == 're' and item[1].width > 200 and item[1].height > 200]
+
+
+def _inside_own_box(rect, boxes, marker):
+    """A quadrant cut back out of any OTHER question's ruled frame.
+
+    The cut is measured from the markers, 14pt short of the next one, and on
+    some sheets the next question's frame starts closer than that: 2016
+    Ordinary sets the right-hand frames 3pt inside where the left-hand crops
+    ended, and A-1's and A-2's crops carried a strip of A-3's and A-4's
+    photographs down their right edge. Where a crop reaches more than two
+    points into another question's frame, its edge stops three points short
+    of that frame, clear of its ruled line. A crop that only takes in a neighbour's ruled line (up to
+    2pt, as 2022-2025 do) is left exactly as it was cut, so no shipped crop
+    changes.
+    """
+    rect = pymupdf.Rect(rect)
+    point = pymupdf.Point(*marker)
+    for box in boxes:
+        if box.contains(point):
+            continue
+        inter = pymupdf.Rect(rect) & box
+        if inter.is_empty or min(inter.width, inter.height) <= 2.5:
+            continue
+        if inter.width <= inter.height:          # a strip down one side
+            if box.x0 > rect.x0:
+                rect.x1 = min(rect.x1, box.x0 - 3)
+            else:
+                rect.x0 = max(rect.x0, box.x1 + 3)
+        else:                                    # a strip across the top or foot
+            if box.y0 > rect.y0:
+                rect.y1 = min(rect.y1, box.y0 - 3)
+            else:
+                rect.y0 = max(rect.y0, box.y1 + 3)
+    return rect
 
 
 def page_box(page, page_rows, head):
@@ -209,12 +253,26 @@ def page_box(page, page_rows, head):
     W = page.rect.width
     foot_top = min(feet) if feet else H - 46
     left, right = PAGE_SIDES[0], W - PAGE_SIDES[1]
-    for box in artwork(page):
-        if box.y0 < top - 14 or box.y0 >= foot_top or box.is_empty:
+    art = [box for box in artwork(page)
+           if not box.is_empty and box.y0 >= top - 14]
+    for box in art:
+        if box.y0 >= foot_top:
             continue
         left = min(left, box.x0 - 3)
         right = max(right, box.x1 + 3)
         bottom = max(bottom, box.y1 + 3)
+    # Artwork that RUNS ON past the running foot's top: 2014 Higher C-5 is a
+    # drawing set as tens of thousands of thin image strips, and its last
+    # dimension lines ("45", "44", "6") start below the page number's top at
+    # y=794.9 and end at 805.8, so the crop cut them through. A piece that
+    # starts within a line of the foot's top, where the artwork above already
+    # reaches down to it, is the same drawing; the foot itself is painted out
+    # by foot_boxes().
+    reach = max((b.y1 for b in art if b.y0 < foot_top), default=0)
+    if reach >= foot_top - LINE:
+        for box in art:
+            if foot_top <= box.y0 < foot_top + LINE:
+                bottom = max(bottom, box.y1 + 3)
     return pymupdf.Rect(max(left, 8), max(top - 14, 18),
                         min(right, W - 8), min(bottom, H - 26))
 
@@ -251,6 +309,32 @@ def foot_boxes(page, rect):
                 and box.intersects(rect):
             out.append(box + (-1, -1, 1, 1))
     return out
+
+
+# The Ordinary Geologic Geometry page prints only the question: its drawing
+# is the contour map on the back of the Section A booklet. Cut head to foot,
+# the crop was half to three quarters empty page under the text (2017's 73%).
+# The tail is trimmed by INK, not by any reading of the page: every pixel row
+# below the last one carrying a non-white pixel is blank by definition, so no
+# printed mark, label or line can go. TAIL_PAD keeps a margin under the last
+# line. Ordinary C-1 only: elsewhere the blank under a question is the space
+# its drawing occupies, and no other crop changes.
+INK = 250            # a channel below this is ink, not paper
+TAIL_PAD = 18        # pixels kept under the last inked row
+
+
+def _without_blank_tail(pix, rect):
+    stride, data = pix.stride, pix.samples
+    last = 0
+    for y in range(pix.height - 1, -1, -1):
+        if min(data[y * stride:y * stride + pix.width * pix.n]) < INK:
+            last = y
+            break
+    keep = min(pix.height, last + 1 + TAIL_PAD)
+    if keep >= pix.height:
+        return rect
+    return pymupdf.Rect(rect.x0, rect.y0, rect.x1,
+                        rect.y0 + keep * rect.height / pix.height)
 
 
 def _thin(values, gap):
@@ -299,6 +383,9 @@ def cut(census=None, sitting=None):
                             page.draw_rect(box, color=None, fill=(1, 1, 1),
                                            overlay=True)
                     pix = page.get_pixmap(dpi=DPI, clip=rect)
+                    if (level, section, q) == ('ol', 'C', 1):
+                        rect = _without_blank_tail(pix, rect)
+                        pix = page.get_pixmap(dpi=DPI, clip=rect)
                     pix.save(out)
                     made.append((key, out, year, level, section, q))
             doc.close()

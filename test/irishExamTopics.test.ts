@@ -31,6 +31,7 @@ import {
   examTopicIdsForQuestion,
   examTopicTaxonomyFor,
 } from '../data/examTopics/registry';
+import { IRISH_ATLAS } from './fixtures/irishArchiveProgress';
 
 type IrishLevel = 'higher' | 'ordinary' | 'foundation';
 type Baseline = Array<{
@@ -56,7 +57,7 @@ const paperIdentity = (paper: { level: string; lang: string; year: number; filei
 describe('Irish exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('irish')!;
 
-  it('pins the exact three reference menus and appends only two labelled preservation shelves', () => {
+  it('pins the exact three reference menus and appends four labelled preservation shelves', () => {
     expect(taxonomy).not.toBeNull();
     expect(taxonomy.groups.map(group => ({ id: group.id, label: group.label, level: group.level })))
       .toEqual([
@@ -80,8 +81,24 @@ describe('Irish exam-topic registry', () => {
           id: 'irish-foundation-aural-cluastuiscint',
           label: 'Cluastuiscint (NextStepUni archive)',
         },
+        {
+          id: 'irish-higher-prescribed-prose-archive',
+          label: 'Prescribed Prose (NextStepUni archive)',
+        },
+        {
+          id: 'irish-higher-prescribed-poetry-archive',
+          label: 'Prescribed Poetry (NextStepUni archive)',
+        },
+        {
+          id: 'irish-ordinary-prescribed-prose-archive',
+          label: 'Prescribed Prose (NextStepUni archive)',
+        },
+        {
+          id: 'irish-ordinary-prescribed-poetry-archive',
+          label: 'Prescribed Poetry (NextStepUni archive)',
+        },
       ]);
-    expect(taxonomy.groups.map(group => group.topicIds.length)).toEqual([26, 26, 12]);
+    expect(taxonomy.groups.map(group => group.topicIds.length)).toEqual([28, 28, 12]);
     expect(strandsFor('irish', taxonomy.topics.map(topic => topic.id)).map(group => group.name))
       .toEqual(['Higher Level', 'Ordinary Level', 'Foundation Level']);
   });
@@ -92,7 +109,7 @@ describe('Irish exam-topic registry', () => {
         .find(subject => subject.id === 'irish')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(curriculumCrosswalk)).toHaveLength(64);
+    expect(Object.keys(curriculumCrosswalk)).toHaveLength(68);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids, topic.id).toEqual(curriculumCrosswalk[topic.id as keyof typeof curriculumCrosswalk]);
@@ -104,13 +121,15 @@ describe('Irish exam-topic registry', () => {
   it('reconciles all 842 official headings at an explicit source boundary', () => {
     expect(irishCrosswalk.summary).toMatchObject({
       referenceTopics: 62,
-      preservationExtensionTopics: 2,
-      runtimeTopics: 64,
+      preservationExtensionTopics: 6,
+      runtimeTopics: 68,
       referenceReportedAssociations: 1481,
       referenceOfficialAssociations: 842,
       referenceMockAssociations: 563,
       referenceProviderSampleAssociations: 76,
-      matchedAssociations: 534,
+      // 534 until 2026-11-04: the two Foundation W-4B headings the SEC paper itself files elsewhere
+      // (sourceTopicCorrection) are reference anomalies, as other subjects record theirs.
+      matchedAssociations: 532,
       sourceBlockedAssociations: 308,
       sourceBlockedByReason: {
         deferred: 91,
@@ -118,8 +137,15 @@ describe('Irish exam-topic registry', () => {
         sample: 28,
         'oral-material': 60,
       },
-      matchedLocalCardLinks: 744,
+      referenceAnomalyAssociations: 2,
+      matchedLocalCardLinks: 742,
     });
+    const anomalies = irishCrosswalk.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies.map(item => `${item.year} ${item.heading} ${item.topicId}`)).toEqual([
+      '2024 2024 - Question 4 - Part B irish-foundation-write-a-letter',
+      '2017 2017 - Section 2 - Question 4 - Part b irish-foundation-write-from-pictures',
+    ]);
+    expect(anomalies.every(item => 'reason' in item && /^StudyClix files this \d{4} foundation heading under .+ SEC \d{4} Foundation PDF page \d+ identifies this task as /.test(String(item.reason)))).toBe(true);
     expect(irishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = irishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
     expect(blocked).toHaveLength(308);
@@ -156,26 +182,33 @@ describe('Irish exam-topic registry', () => {
   it('adds every local paper component and every restored section card', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
-      localPaperVariants: 91,
-      localPhysicalMappings: 979,
-      distinctStudentFacingQuestions: 979,
+      // June's 91 components and the carded deferred papers (two a sitting, irish_deferred.py).
+      localPaperVariants: 107,
+      localPhysicalMappings: IRISH_ATLAS.questions,
+      distinctStudentFacingQuestions: IRISH_ATLAS.questions,
       referenceMappedLocalQuestions: 686,
-      retainedLocalQuestions: 293,
-      hostedPaperAnchorMaps: 91,
+      retainedLocalQuestions: IRISH_ATLAS.retainedLocalQuestions,
+      hostedPaperAnchorMaps: 107,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
-      newlyAddedPaperVariants: 65,
-      newlyAddedPhysicalMappings: 693,
+      newlyAddedPaperVariants: 81,
+      newlyAddedPhysicalMappings: IRISH_ATLAS.newlyAddedPhysicalMappings,
     });
-    expect(papers).toHaveLength(91);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(979);
+    expect(papers).toHaveLength(107);
+    // 2566 until 2026-11-04: decision 5 folds 30 Foundation option entries into their 11 printed tasks,
+    // then decision 4 withdraws the three 2022 Higher 3B(a) device entries (2536 -> 2533); each paper reviewed
+    // in batch 2 adds its per-question entries (fixtures/irishArchiveProgress.ts).
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(IRISH_ATLAS.questions);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     const indexPapers = reviewedArchiveEntries('irish').flatMap(entry => entry.papers);
     expect(indexPapers).toHaveLength(91);
 
-    expect(topicsForPaper('irish', 2026, 'higher', 'iv', 'LC001ALP100IV.pdf')?.q.map(q => q.n))
-      .toEqual(['1', '2', '3', '4', 'W-A', 'W-B', 'W-C']);
+    // The seven section identities stay first; the reviewed Paper 1 questions
+    // and composition titles are additive (23 listening + 9 composition).
+    const higher2026P1 = topicsForPaper('irish', 2026, 'higher', 'iv', 'LC001ALP100IV.pdf')?.q.map(q => q.n) ?? [];
+    expect(higher2026P1.slice(0, 7)).toEqual(['1', '2', '3', '4', 'W-A', 'W-B', 'W-C']);
+    expect(higher2026P1).toHaveLength(7 + 32);
     expect(topicsForPaper('irish', 2026, 'foundation', 'iv', 'LC001BLP100IV.pdf')?.q.map(q => q.n))
       .toContain('R-3C');
     expect(topicsForPaper('irish', 2010, 'higher', 'iv', 'LC001ALP200IV.pdf')?.q.map(q => q.n))
@@ -186,7 +219,7 @@ describe('Irish exam-topic registry', () => {
     const topics = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(examQuestionTopicMappingsForSubject('irish').filter(mapping => mapping.lang === 'iv'))
-      .toHaveLength(979);
+      .toHaveLength(IRISH_ATLAS.questions);
     for (const paper of papers) {
       for (const question of paper.q) {
         const ids = browseTopicIdsForQuestion(paper, question);
@@ -227,12 +260,11 @@ describe('Irish exam-topic registry', () => {
     expect(examTopicIdsForQuestion(
       'irish', 'foundation', 2024, 'main', 'W-4B', 'single', 'iv', 'LC001BLP000IV.pdf',
     )).toEqual([
-      'irish-foundation-write-a-letter',
       'irish-foundation-fill-in-a-form',
     ]);
   });
 
-  it('ships a finite paper-only fallback for all 979 cards', () => {
+  it('ships a finite paper-only fallback for every card', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(VAULT_PREFER_ANCHORS.get('irish')?.('LC001ALP100IV.pdf')).toBe(true);
     for (const paper of papers) {
@@ -254,10 +286,10 @@ describe('Irish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 979 questions while keeping provider-only and oral buckets visibly empty', () => {
+  it('surfaces every question while keeping provider-only and oral buckets visibly empty', () => {
     expect(subjectAtlasStats('irish')).toMatchObject({
-      questions: 979,
-      topics: 64,
+      questions: IRISH_ATLAS.questions,
+      topics: 68,
       yearMin: 2010,
       yearMax: 2026,
     });

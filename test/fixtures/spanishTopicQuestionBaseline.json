@@ -28,7 +28,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "6",
@@ -40,12 +41,11 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "10",
@@ -92,7 +92,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "6",
@@ -104,7 +105,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -112,8 +113,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -218,7 +218,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "6",
@@ -230,7 +231,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -238,8 +239,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -271,11 +271,13 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "4",
@@ -355,16 +357,16 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "4",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "5",
@@ -396,16 +398,16 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "4",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "5",
@@ -510,7 +512,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "6",
@@ -522,8 +525,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -555,15 +557,16 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "4",
-        "primary": "spanish-5-0"
+        "primary": "spanish-5-1"
       }
     ]
   },
@@ -654,7 +657,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "6",
@@ -666,12 +670,11 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "10",
@@ -703,16 +706,16 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-1"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "4",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "5",
@@ -817,7 +820,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -829,12 +833,11 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "10",
@@ -881,7 +884,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -893,12 +897,11 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "10",
@@ -974,7 +977,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -986,7 +990,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -994,8 +998,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -1027,11 +1030,13 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "4",
@@ -1126,7 +1131,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -1138,7 +1144,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -1146,8 +1152,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -1194,7 +1199,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -1206,12 +1212,11 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "10",
@@ -1516,7 +1521,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -1528,7 +1534,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -1649,7 +1655,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "6",
@@ -1661,7 +1668,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -1669,8 +1676,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -1702,11 +1708,13 @@
       },
       {
         "n": "2",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "3",
-        "primary": "spanish-5-1"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "4",
@@ -1879,7 +1887,8 @@
       },
       {
         "n": "6",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-3"
       },
       {
         "n": "7",
@@ -1891,7 +1900,7 @@
       },
       {
         "n": "9",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "10",
@@ -1899,8 +1908,7 @@
       },
       {
         "n": "11",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "12",
@@ -2005,7 +2013,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-2"
       },
       {
         "n": "6",
@@ -2017,7 +2026,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -2025,8 +2034,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -2131,7 +2139,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-2"
       },
       {
         "n": "6",
@@ -2143,7 +2152,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -2151,8 +2160,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
@@ -2199,7 +2207,8 @@
       },
       {
         "n": "5",
-        "primary": "spanish-5-0"
+        "primary": "spanish-2-1",
+        "secondary": "spanish-7-2"
       },
       {
         "n": "6",
@@ -2211,7 +2220,7 @@
       },
       {
         "n": "8",
-        "primary": "spanish-5-1"
+        "primary": "spanish-5-0"
       },
       {
         "n": "9",
@@ -2219,8 +2228,7 @@
       },
       {
         "n": "10",
-        "primary": "spanish-5-0",
-        "secondary": "spanish-1-1"
+        "primary": "spanish-5-1"
       },
       {
         "n": "11",
