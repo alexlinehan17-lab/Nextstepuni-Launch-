@@ -513,19 +513,19 @@
     "refsHash": "cbfff690c93f65b8"
   },
   "lcvp": {
-    "cards": 390,
-    "contentHash": "8f8a7ecf63288165",
-    "coveragePct": 55.2,
-    "covered": 402,
-    "excluded": 1,
+    "cards": 398,
+    "contentHash": "39537b9dea7338b1",
+    "coveragePct": 56.2,
+    "covered": 410,
+    "excluded": 0,
     "leaves": 730,
-    "open": 327,
+    "open": 320,
     "orphans": 0,
     "papers": {
       "count": 25,
       "hash": "aec10355e05833e6"
     },
-    "refsHash": "246805f9e0fe154a"
+    "refsHash": "5f49b847dccd109b"
   },
   "lithuanian": {
     "cards": 306,
