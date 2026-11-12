@@ -84,9 +84,10 @@ import ordinary2024Deferred from './ordinary-2024-deferred-authored.json';
 import higher2023Deferred from './higher-2023-deferred-authored.json';
 import ordinary2023Deferred from './ordinary-2023-deferred-authored.json';
 import ordinary2022Deferred from './ordinary-2022-deferred-authored.json';
+import higher2022Deferred from './higher-2022-deferred-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
 import { splitSlashRows } from './slashSplits';
-import { closeBrackets, irishTariffsFor, stepPrintedScales } from './tariffs';
+import { closeBrackets, irishTariffsFor, irishTariffsLastResort, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -122,7 +123,7 @@ interface AuthoredIrishCard {
 // Paper-reviewed components ship as their own files beside the legacy census output.
 const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards, ...higher2017P1.cards, ...higher2017P2.cards, ...ordinary2017P1.cards, ...ordinary2017P2.cards, ...higher2016P1.cards, ...higher2016P2.cards, ...ordinary2016P1.cards, ...ordinary2016P2.cards, ...higher2015P1.cards, ...higher2015P2.cards, ...ordinary2015P1.cards, ...ordinary2015P2.cards, ...higher2014P1.cards, ...higher2014P2.cards, ...ordinary2014P1.cards, ...ordinary2014P2.cards, ...higher2013P1.cards, ...higher2013P2.cards, ...ordinary2013P1.cards, ...ordinary2013P2.cards, ...higher2012P1.cards, ...higher2012P2.cards, ...ordinary2012P1.cards, ...ordinary2012P2.cards, ...ordinary2011Aural.cards, ...ordinary2011P1.cards, ...ordinary2011P2.cards, ...higher2011Aural.cards, ...higher2011P1.cards, ...higher2011P2.cards, ...ordinary2010Aural.cards, ...ordinary2010P1.cards, ...ordinary2010P2.cards, ...higher2010Aural.cards, ...higher2010P1.cards, ...higher2010P2.cards,
   // The SEC's deferred sittings (irish_deferred.py): their own papers and schemes, cited "… — Deferred sitting".
-  ...higher2025Deferred.cards, ...ordinary2025Deferred.cards, ...higher2024Deferred.cards, ...ordinary2024Deferred.cards, ...higher2023Deferred.cards, ...ordinary2023Deferred.cards, ...ordinary2022Deferred.cards] as AuthoredIrishCard[];
+  ...higher2025Deferred.cards, ...ordinary2025Deferred.cards, ...higher2024Deferred.cards, ...ordinary2024Deferred.cards, ...higher2023Deferred.cards, ...ordinary2023Deferred.cards, ...ordinary2022Deferred.cards, ...higher2022Deferred.cards] as AuthoredIrishCard[];
 
 /** A card from the SEC's deferred sitting cites that sitting's own scheme. */
 const DEFERRED_CARD = /^irish-\d{4}-(?:hl|ol)-deferred-/;
@@ -287,7 +288,11 @@ const freagraiAllocation = (criterion: Criterion): IrishAllocation | undefined =
 const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
     const found = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
-      ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
+      ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined)
+      ?? (pricedAward(criterion) && LITERATURE_CARD.test(card.questionRef)
+        ? irishTariffsLastResort({ id: card.id, totalMarks: criterion.maxMarks, cardTotal: card.totalMarks, questionRef: card.questionRef,
+          questionText: card.questionText, guidance: ownGuidance(criterion) })
+        : undefined);
     const allocation = found && splitSlashRows(card.id, criterion.id, closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found),
       criterion.guidance, card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance));
     return {
