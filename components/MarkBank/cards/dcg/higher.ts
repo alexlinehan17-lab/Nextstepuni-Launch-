@@ -9410,7 +9410,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c2a-r1", kind: "point", verbatim: "Draw rectangular outline of parabola", marks: 4 },
     { id: "dcg-2023-hl-c2a-r2", kind: "point", verbatim: "Construction to determine points on parabola on RHS (or LHS)", marks: 6 },
     { id: "dcg-2023-hl-c2a-r3", kind: "point", verbatim: "Mirror points to the other side", marks: 3 },
-    { id: "dcg-2023-hl-c2a-r4", kind: "point", verbatim: "Draw parabolic curve EBD in elevation ……. (any curve = 1)", marks: 3 },
+    { id: "dcg-2023-hl-c2a-r4", kind: "criterion", verbatim: "Draw parabolic curve EBD in elevation ……. (any curve = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
@@ -9434,7 +9434,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2023-hl-c2b-r1", kind: "point", verbatim: "Draw rectangular outline of parabola", marks: 3 },
     { id: "dcg-2023-hl-c2b-r2", kind: "point", verbatim: "Construction to determine points on parabola", marks: 4 },
-    { id: "dcg-2023-hl-c2b-r3", kind: "point", verbatim: "Draw parabolic curve ABC in end view…….. (any curve = 1)", marks: 3 },
+    { id: "dcg-2023-hl-c2b-r3", kind: "criterion", verbatim: "Draw parabolic curve ABC in end view…….. (any curve = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
@@ -9456,7 +9456,7 @@ export const CARDS: SecCard[] = [
     questionText: "Project the plan and complete the elevation of the tent.",
     tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
-    { id: "dcg-2023-hl-c2c-r1", kind: "criterion", verbatim: "Plan and elevation of tent", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Locate points A, C, D, and E","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Establish widths on curve in plan (top or bottom half)","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Mirror points in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Draw curve…….. (any curve = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Draw edges AE and CE","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Establish heights for curve CE in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Draw curve CE in elevation…….. (any curve = 1)","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2023-hl-c2c-r1", kind: "criterion", verbatim: "Plan and elevation of tent", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Locate points A, C, D, and E","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Establish widths on curve in plan (top or bottom half)","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Mirror points in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Draw curve…….. (any curve = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-5","verbatim":"Draw edges AE and CE","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Establish heights for curve CE in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Draw curve CE in elevation…….. (any curve = 1)","marks":3,"permittedMarks":[0,1,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
@@ -9480,7 +9480,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2023-hl-c2d-r1", kind: "point", verbatim: "Establish widths on true shape", marks: 2 },
     { id: "dcg-2023-hl-c2d-r2", kind: "point", verbatim: "Locate points on true shape curve CE", marks: 3 },
-    { id: "dcg-2023-hl-c2d-r3", kind: "point", verbatim: "Draw true shape curve…….. (any curve = 1)", marks: 3 },
+    { id: "dcg-2023-hl-c2d-r3", kind: "criterion", verbatim: "Draw true shape curve…….. (any curve = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",

@@ -31261,9 +31261,14 @@
    },
    {
     "id": "dcg-2023-hl-c2a-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve EBD in elevation ……. (any curve = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Draw given elevation of parabolic curve EBD' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -31302,9 +31307,14 @@
    },
    {
     "id": "dcg-2023-hl-c2b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve ABC in end view…….. (any curve = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Outline end view' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -31373,6 +31383,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -31400,6 +31411,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      }
@@ -31442,9 +31454,14 @@
    },
    {
     "id": "dcg-2023-hl-c2d-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw true shape curve…….. (any curve = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'True shape of curve CE' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."

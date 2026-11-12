@@ -320,8 +320,11 @@ def card_id(year, level, section, q, covered, ordinal, many):
 # correct one the step's full marks. "(3 lines)" and "(12 min.)" are not
 # prices: a token that is not a number or a count of marks refuses the whole.
 SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
-ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})(?:\s*-\s*(\d{1,2}))?\s*$',
-                       re.I)
+# "(Any = 1)", "(Any = 1-2)", and with what is drawn named: "(any curve =
+# 1)" (2013 and 2014 Higher, five steps of 2023 Higher C-2), "(Any ellipse =
+# 2)" (2010 and 2011 Higher).
+ANY_PRICE = re.compile(r'^\s*any(?:\s+[a-z]+)?\s*=?\s*(\d{1,2})'
+                       r'(?:\s*-\s*(\d{1,2}))?\s*$', re.I)
 # "(4×1)"; 2015 Higher A-1(b) adds what is counted: "(3 x 1 for each
 # surface)".
 COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})(?:\s+for\s+each\s+[a-z]+)?$')
