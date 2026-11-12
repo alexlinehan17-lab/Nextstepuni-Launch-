@@ -1,0 +1,774 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2022,
+ "level": "higher",
+ "lang": "ev",
+ "sitting": "deferred",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-12",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2022_hl_deferred.py",
+ "sourceHashes": {
+  "paper-trail-corpus/deferredexams/2022/LC027ALP000EV.pdf": "45b8f176279f7e9d117e30ca1b8cce125dec3c73e55a270fa4dafb859f68dd91",
+  "paper-trail-corpus/deferredmarkingschemes/2022/LC027ALP000EV.pdf": "6ed434ab45c3ff4e6c242568c835518d0a05e425dbe7157a0b75aedba4a9b8a7"
+ },
+ "expectedRuntimeCards": 74,
+ "reason": "2022 Higher deferred English written paper: every one of the 74 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 14 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-inventors-and-engineers-in-society",
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-metallurgy",
+    "engineering-higher-polymers",
+    "engineering-higher-testing-of-materials-and-products",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-heat-treatment",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-polymers",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "8",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-health-and-safety",
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "n": "9",
+   "fileid": "LC027ALP000EV-deferred.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2022-hl-deferred-q1-a",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-b",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ],
+   "canonicalTopicReview": "Adhesive bonding of windscreens and glass panels, which the reference files Q1(b) under; the card's syllabus heading is Joining of materials, where adhesives sit."
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-c",
+   "markBankTopicId": "eng-1-2",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-metallurgy"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-d",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-metallurgy"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-e",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-f",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-g",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-h",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-j",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-k",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-l",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q1-m",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-a-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-a-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-b-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-b-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-c",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-d",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q2-e",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic, set again in the deferred sitting), which the reference files June's Q2 under and heads no part of this paper's Q2; the card's syllabus heading is Technology, or Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-a-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-a-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-b-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-b-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ],
+   "canonicalTopicReview": "Elastic against plastic deformation in metals, the behaviour a tensile test measures, in the testing question the reference files whole under Testing of Materials and Products."
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-c-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q3-c-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q4-a",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q4-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q4-b-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q4-c-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q4-c-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-a-i",
+   "markBankTopicId": "eng-2-13",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ],
+   "canonicalTopicReview": "Strengthening sheet metal. The reference files Q5(a) under Corrosion of Metals ((iii), sacrificial protection), The Structure of Materials ((ii) and (iv)) and Heat Treatment, which is left to (i); the scheme answers with profiling (corrugating, folding, ribbing), and the card's syllabus heading is Manufacturing processes, which no outgoing-course topic covers."
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-a-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-a-iii",
+   "markBankTopicId": "eng-3-7",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-corrosion-of-metals"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-a-iv",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-b-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-b-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-c-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q5-c-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ],
+   "canonicalTopicReview": "Grain boundaries are crystal structure; the reference files Q5(a) and (b) under The Structure of Materials and heads no part (c). The card's syllabus heading is Materials testing (ductility)."
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-b-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-b-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-b-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-b-iv",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-c",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-c-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Servo against DC motors in robotic control systems: the second (c), which the reference does not head (it files Q6(a), (b) and the first (c) under Welding). Energy, Electronics & Robotics, where it files the second (c) of Q8 and Q9, covers the card's syllabus heading, Control technology and electronics.",
+   "addedToQuestion": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q6-c-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q7-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Polymers: the bumper's polymer and its moulding, copolymers, parisons, 3-D printing, fillers and stabilisers, thermosets against elastomers. The reference files June 2022's polymers question (Q7) under Polymers and heads no part of this paper's Q7.",
+   "addedToQuestion": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q7-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Polymers: the bumper's polymer and its moulding, copolymers, parisons, 3-D printing, fillers and stabilisers, thermosets against elastomers. The reference files June 2022's polymers question (Q7) under Polymers and heads no part of this paper's Q7.",
+   "addedToQuestion": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q7-b",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Polymers: the bumper's polymer and its moulding, copolymers, parisons, 3-D printing, fillers and stabilisers, thermosets against elastomers. The reference files June 2022's polymers question (Q7) under Polymers and heads no part of this paper's Q7.",
+   "addedToQuestion": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q7-c-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Polymers: the bumper's polymer and its moulding, copolymers, parisons, 3-D printing, fillers and stabilisers, thermosets against elastomers. The reference files June 2022's polymers question (Q7) under Polymers and heads no part of this paper's Q7.",
+   "addedToQuestion": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q7-c-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers",
+    "engineering-higher-the-structure-of-materials"
+   ],
+   "canonicalTopicReview": "Crystalline against amorphous polymers: polymer structure, filed as June 2022's Q1(b) (amorphous against crystalline structures) is, under Polymers and The Structure of Materials; the card's syllabus heading is Structure of metals. Polymers: the bumper's polymer and its moulding, copolymers, parisons, 3-D printing, fillers and stabilisers, thermosets against elastomers. The reference files June 2022's polymers question (Q7) under Polymers and heads no part of this paper's Q7.",
+   "addedToQuestion": [
+    "engineering-higher-polymers",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-a-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-a-ii",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-a-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-a-iv",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-a-v",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-b-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-b-ii",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-health-and-safety"
+   ],
+   "canonicalTopicReview": "Safety precautions for surface grinding are machine safety; Q8 is otherwise filed under machining (as June 2022's Q8(b)(ii) and (v)).",
+   "addedToQuestion": [
+    "engineering-higher-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-c",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-c-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q8-c-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-a-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-a-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-b-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-b-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-b-iii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-b-iv",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-b-v",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-c",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-c-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-deferred-q9-c-ii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  }
+ ]
+}
