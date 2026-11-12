@@ -5174,6 +5174,171 @@
           "logSha256": "f310f00e2bfbc735923275357efa01ff3c641036e73cda262dd611e5016512aa"
         }
       }
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "reviewedAt": "2026-11-12",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "29eb6fbdfe4d43b0f85912a87ba9589710417a5e39794c630f0ff70949c37251"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8"
+        },
+        "scheme": {
+          "pages": 27,
+          "sha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f"
+        }
+      },
+      "independentSourceAsks": 42,
+      "independentPracticeTasks": 24,
+      "writtenTasks": 20,
+      "listeningTasks": 22,
+      "sourceReviewedSupportedTasks": 42,
+      "publishedPracticeCards": 24,
+      "publishedListeningPracticeCards": 4,
+      "numericallySupportedPracticeCards": 19,
+      "confidenceOnlyPracticeCards": 5,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "publishedPracticeMarks": 190,
+      "sourceAccountedMarks": 300,
+      "confidenceOnlyPrintedMarks": 110,
+      "newCards": 24,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All42 original asks are represented by24 complete tasks. Four listening sections and the complete essay retain unresolved numerical source issues; source coverage does not imply numerical resolution.",
+      "diagnosedReaderIssues": [
+        "The historical parser counted only22 listening asks and omitted20 written asks; the independent51-page census preserves42 original asks.",
+        "Four listening sections retain all22 question identities and canonical topics. The printed suitcase1 plus bag/purse1 allocation remains visible within SectionI, without an inferred18 remainder or duplicated luggage card. Dog1 and Cat1 remain literal partials in SectionIV; no full-answer tariff is invented.",
+        "The original aural front says50minutes and back40minutes. SectionII English1(i) versus Irish/scheme1, and paper3 versus scheme3(i), remain explicitly disclosed.",
+        "All four summary10-mark tariffs are bound to their own printed coordinate regions. PDF content-stream order emits two labels before their own headings. All main/secondary details remain; no nearby label is used to infer another task tariff.",
+        "Summaries retain four manual0/1/2 details plus separate discretion0/1/2, the p7 Russian-word exception and incomplete-response discretion cap1. The source English-quality/loan-word allowance is visible beside C1/C2 assessment.",
+        "Essay30 retains all five choices and all original C10/E20 guidance, including unresolved Deduct1/2marks. Three complete original-page slices preserve all guidance without a cross-footer quotation. No interpretation is selected.",
+        "Guided writing retains three alternatives, C15/E15/TC10 and explicit soft-sign deduction2. LowerA7–12 is consistent, while prose9/10 versus printed9–11 overlaps11–12; both literal versions remain without descriptor reassignment.",
+        "LA1 preserves five infinitives/aspect and all18 travel entries under choose5. Travel is paperQ1.3 versus schemeQ2.2. LA2 preserves ten cases at1, Irish/English/Russian permission and English-translation zero, including both literal предожный spellings.",
+        "Matching has ten2-mark answers. Grammar has eleven original bracketed prompts and15 separately priced bold/underlined forms; зимой/зимою is one accepted alternative."
+      ],
+      "validation": {
+        "status": "Draft original/source/canonical gates passed; actual generated runtime, preservation, required checks and deterministic cycles pending.",
+        "sourceQuoteGate": {
+          "cards": 24,
+          "slices": 239,
+          "passed": true
+        },
+        "draftOriginalTests": {
+          "cases": 13,
+          "passed": true
+        },
+        "canonicalQuestionTopics": {
+          "questions": 22,
+          "negativeMutations": 7,
+          "passed": true
+        },
+        "sourceCoverageComplete": false,
+        "sourceCheckpointPassed": false,
+        "sittingCompletion": false,
+        "heldNumericTasks": [
+          {
+            "id": "ru-2020-hl-se",
+            "questionRef": "2020 HL Section SE Q2",
+            "printedMarks": 30,
+            "reason": "Literal soft-sign deduction1/2 is unresolved; full confidence task."
+          },
+          {
+            "id": "ru-2020-hl-l1",
+            "questionRef": "2020 HL Section L1 Q1–5 — complete section",
+            "printedMarks": 20,
+            "reason": "Complete published20 section; full per-answer allocations are missing. Known luggage1+1 and named pet1 prices remain visible without an inferred remainder."
+          },
+          {
+            "id": "ru-2020-hl-l2",
+            "questionRef": "2020 HL Section L2 Q1–5 — complete section",
+            "printedMarks": 20,
+            "reason": "Complete published20 section; full per-answer allocations are missing. Known luggage1+1 and named pet1 prices remain visible without an inferred remainder."
+          },
+          {
+            "id": "ru-2020-hl-l3",
+            "questionRef": "2020 HL Section L3 Q1–3 — complete section",
+            "printedMarks": 20,
+            "reason": "Complete published20 section; full per-answer allocations are missing. Known luggage1+1 and named pet1 prices remain visible without an inferred remainder."
+          },
+          {
+            "id": "ru-2020-hl-l4",
+            "questionRef": "2020 HL Section L4 Q1–3 — complete section",
+            "printedMarks": 20,
+            "reason": "Complete published20 section; full per-answer allocations are missing. Known luggage1+1 and named pet1 prices remain visible without an inferred remainder."
+          }
+        ],
+        "appTypes": "pending root combined integration",
+        "build": "pending root combined integration",
+        "browserQA": "coordinator-owned; not claimed",
+        "rootIntegrationRequirements": [
+          "Allfive actual confidence cards save0/0 in both current layouts, with confidence labels and no numerical suggested maximum.",
+          "Exclude allfive from numeric quiz selection while preserving known luggage/pet prices visibly.",
+          "Keep all earlier Russian objects/anchors and all non-Russian Atlas records unchanged."
+        ]
+      }
     }
   ]
 }
