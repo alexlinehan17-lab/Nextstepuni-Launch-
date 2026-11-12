@@ -1045,7 +1045,8 @@ function lastResort(source: IrishAnswerSource): IrishAllocation | undefined {
     parts: [{ id: 'p1', prompt, tariff: total, ...(ladder ? { ladder } : {}), rows: rows.map((row, index) => ({ ...row, id: `r${index + 1}` })) }],
     directions,
   });
-  const stepsOf = (first: number, second: number) => [...new Set([0, first, total])].sort((x, y) => x - y);
+  // A run of answers under a split price: one right answer earns the first share, two the whole.
+  const stepsOf = (first: number) => [...new Set([0, first, total])].sort((x, y) => x - y);
   // The price printed again after the answers ("… as a chéile. 3 mharc") is the part's, not an answer's.
   const unpriced = (text: string) => tidy(text.replace(/\s*\b\d+\s*m?h?arc\s*$/, ''));
   // "{3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc A dheasc a fholmhú (2 mharc)
@@ -1072,7 +1073,7 @@ function lastResort(source: IrishAnswerSource): IrishAllocation | undefined {
       : first) as RegExpExecArray;
   })();
   if (split && Number(split[1]) === total && Number(split[2]) + Number(split[3]) === total) {
-    const [first, second] = [Number(split[2]), Number(split[3])];
+    const first = Number(split[2]);
     if (LR_MARKED.test(` ${split[4]}`)) {
       const pieces = ` ${split[4]}`.split(LR_POINT_MARK).map(tidy);
       const answers = pieces.slice(0, -1).filter(Boolean);
@@ -1080,7 +1081,7 @@ function lastResort(source: IrishAnswerSource): IrishAllocation | undefined {
       if (answers.length >= 2) return part(answers.map(text => ({ id: '', text, marks: 0 })), [first, total],
         trailer && !/^\d+\s*m?h?arc$/.test(trailer) ? [trailer] : []);
     } else {
-      return part([{ id: '', text: unpriced(split[4]), marks: total, steps: stepsOf(first, second) }]);
+      return part([{ id: '', text: unpriced(split[4]), marks: total, steps: stepsOf(first) }]);
     }
   }
   const halves = LR_HALVES.exec(rest);
