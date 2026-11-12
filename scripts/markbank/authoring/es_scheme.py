@@ -280,7 +280,9 @@ MISPRINTS = {
     # where the reader takes "(c)" for a part.
     (2012, 'ol'): [('between parts (b) and\n(c) and potential confusion',
                     'between parts (b) and (c) and potential confusion')],
-    (2012, 'hl'): [('(3+2 marks)\nTwo of: - Do training increasing in intensity',
+    (2012, 'hl'): [('(ii) (a) The patience (of the drivers). (b) The fuel/petrol. (2+2 marks)',
+                    '(ii) - The patience (of the drivers).\n- The fuel/petrol. (2+2 marks)'),
+                   ('(3+2 marks)\nTwo of: - Do training increasing in intensity',
                     '(3+2 marks)\nc. Two of: - Do training increasing in intensity'),
                    ('\nc. Certificate of completion of the Camino.', '\nd. Certificate of completion of the Camino.')],
     (2013, 'ol'): [('El marido de María Josefa 5 marks)', 'El marido de María Josefa (5 marks)')],
@@ -942,9 +944,12 @@ class EsScheme:
         best = ' '.join(' '.join((l or '').split()) for l in block)
         if BEST_OF.search(best):
             note = re.search(r'\[([^\]]*' + BEST_OF.pattern + r'[^\]]*)\]', best, re.I)
+            full = note.group(1).strip() if note else None
             for a in got:
-                if note and note.group(1).strip() not in (a.notes or []):
-                    a.notes = list(a.notes or []) + [note.group(1).strip()]
+                if full:
+                    # the note once, whole, in place of the pieces a part
+                    # read of it where its bracket ran over two lines
+                    a.notes = [n for n in (a.notes or []) if n.strip(' ].') not in full] + [full]
             total = None
         if total is not None and got:
             summed = sum(a.total for a in got if a.total is not None)

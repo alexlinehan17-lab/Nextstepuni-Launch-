@@ -509,8 +509,10 @@ def grid_ol_b(year, level, q, letter):
     o0 = next(k for k, s in enumerate(texts) if head.match(s))
     o1 = next((k for k in range(o0 + 1, len(texts)) if re.match(r'^Q\.?\s*2\b', texts[k])), len(texts)) \
         if q == 1 else len(texts)
-    # 2019 closes the section with its "Reasonable Accommodations:" note.
-    o1 = next((k for k in range(o0 + 1, o1) if re.match(r'^Reasonable Accommodations', texts[k])), o1)
+    # 2019 closes the section with its "Reasonable Accommodations:" note, and
+    # 2012 runs straight on into "Appendix One".
+    o1 = next((k for k in range(o0 + 1, o1)
+               if re.match(r'^(?:Reasonable Accommodations|Appendix\b)', texts[k], re.I)), o1)
     part = texts[o0 + 1:o1]
     t = next(k for k, s in enumerate(part) if _times(s))
     lead = _sentences(part[:t + 1])

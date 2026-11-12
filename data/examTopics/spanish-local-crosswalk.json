@@ -23,17 +23,17 @@
       "preCorpus": 51,
       "oralBooklet": 9
     },
-    "matchedLocalCardLinks": 559,
+    "matchedLocalCardLinks": 562,
     "localPaperVariants": 136,
-    "localPhysicalMappings": 1229,
-    "distinctStudentFacingQuestions": 657,
-    "referenceMappedLocalQuestions": 459,
-    "retainedLocalQuestions": 770,
+    "localPhysicalMappings": 1235,
+    "distinctStudentFacingQuestions": 660,
+    "referenceMappedLocalQuestions": 461,
+    "retainedLocalQuestions": 774,
     "hostedPaperAnchorMaps": 136,
     "preservedBaselineVariants": 124,
     "preservedBaselineCards": 909,
     "newlyAddedPaperVariants": 12,
-    "newlyAddedPhysicalMappings": 320,
+    "newlyAddedPhysicalMappings": 326,
     "emptyReferenceTopics": [
       "spanish-higher-oral-exam",
       "spanish-higher-write-a-dialogue",
@@ -2682,7 +2682,8 @@
         "fileid": "LC012ALP000EV.pdf",
         "questionNumbers": [
           "6",
-          "8"
+          "8",
+          "A1b4"
         ]
       }
     },
@@ -3646,7 +3647,8 @@
         "questionNumbers": [
           "2",
           "7",
-          "9"
+          "9",
+          "10"
         ]
       }
     },
@@ -3666,7 +3668,8 @@
         "questionNumbers": [
           "2",
           "7",
-          "9"
+          "9",
+          "10"
         ]
       }
     },
@@ -21472,6 +21475,19 @@
       "fileid": "LC012ALP000EV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "9",
       "topicIds": [
         "spanish-higher-short-comprehensions"
@@ -21487,9 +21503,9 @@
       "kind": "written",
       "n": "10",
       "topicIds": [
-        "spanish-higher-opinion-text"
+        "spanish-higher-short-comprehensions"
       ],
-      "provenance": "retained-local"
+      "provenance": "reference"
     },
     {
       "level": "higher",
@@ -21550,6 +21566,19 @@
       "fileid": "LC012ALP000EV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "B5",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "15",
       "topicIds": [
         "spanish-higher-write-a-dialogue",
@@ -21557,6 +21586,19 @@
         "spanish-higher-write-a-letteremail"
       ],
       "provenance": "reference+retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "C2",
+      "topicIds": [
+        "spanish-higher-write-a-diary-entrynote"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
@@ -21760,6 +21802,19 @@
       "fileid": "LC012ALP000IV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2012,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "9",
       "topicIds": [
         "spanish-higher-short-comprehensions"
@@ -21838,11 +21893,37 @@
       "fileid": "LC012ALP000IV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "B5",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2012,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "15",
       "topicIds": [
         "spanish-higher-write-a-dialogue",
         "spanish-higher-write-a-diary-entrynote",
         "spanish-higher-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2012,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "C2",
+      "topicIds": [
+        "spanish-higher-write-a-diary-entrynote"
       ],
       "provenance": "retained-local"
     },
