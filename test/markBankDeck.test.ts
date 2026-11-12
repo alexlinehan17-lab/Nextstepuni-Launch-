@@ -201,7 +201,8 @@ const comparable = (text: string) => comparableScheme(text);
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'engineering' && /^eng-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 
 const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
@@ -544,10 +545,17 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry } =
+    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        // Irish prints two papers a sitting, in Irish: a deferred card's paper is the one its section names in the
+        // year's deferred entry ("Deferred · Paper One" for section 1).
+        if (deferredCard(c) && c.subjectId === 'irish') {
+          const entry = paperEntry('irish', c.year, c.level, c.paperFileid);
+          const named = entry?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
+          return entry?.sitting !== 'deferred' || String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
+        }
         if (deferredCard(c)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
           return c.paperFileid !== null

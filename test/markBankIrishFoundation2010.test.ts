@@ -78,7 +78,8 @@ describe('2010 Foundation written paper and listening paper (no official recordi
       expect(c.criteria[0].permittedMarks).toEqual(partial?[0,4,6]:[0,j<3?5:6]);
     }
     expect(guide('R-3A-3','answer')).toContain('An t-alt iomlán');
-    expect(note('R-3A-3')).toContain('Ceol draíochta 6−2 = 4');
+    // The accepted forms and the 6−2 = 4 answers are rows (markBankIrishFoundationRows): the note is the shared one.
+    for(const n of ['R-3A-3','R-3B-2','R-3C-4']) expect(note(n)).toBe('Use the answer and tariff published by the SEC for this part.');
     expect(guide('R-3B-2','answer')).toContain('eolas iomarcach');
     expect(guide('R-3C-4','answer')).toContain('Má scríobhtar an véarsa ar fad: 6 - 6 = 0');
     expect(guide('R-3C-4','answer')).toContain('Má scríobhtar dhá líne');

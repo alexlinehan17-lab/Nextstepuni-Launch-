@@ -3964,6 +3964,7 @@ def census_subject(subject):
             })
         if payload.get('cardUnitCount') != sum(p['leafCount'] for p in papers):
             raise AssertionError('Irish authored census count is stale')
+        papers.extend(census_irish_deferred())
         # Reviewed components ship from their own manifests. Each card there is
         # one reviewed, independently practicable unit of that paper, so it
         # joins the same paper's leaves (2025 HL Paper 2 spans both files).
@@ -3971,6 +3972,10 @@ def census_subject(subject):
         by_key = {(p['year'], p['level'], p['paper']): p for p in papers}
         for name in irish_manifest_files()[1:]:
             for card in json.load(open(os.path.join(IRISH_DECK, name), encoding='utf-8'))['cards']:
+                # A deferred sitting's card is not a leaf of June's paper: its printed asks are read above
+                # (census_irish_deferred) and the card lists the ones it covers.
+                if re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', card['id']):
+                    continue
                 key = (card['year'], short[card['level']], f"Paper {card['paper']}")
                 if key not in by_key:
                     by_key[key] = {'year': key[0], 'level': key[1], 'paper': key[2],
@@ -4447,6 +4452,48 @@ def census_economics_deferred():
             'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Irish sittings in the archive: 2022-2025, Higher and Ordinary, Paper 1 (listening and
+# composition) and Paper 2 (reading and literature) each (deferredexams/ holds LC001[AG]LP[12]00IV for every year,
+# deferredmarkingschemes/ LC001[AG]LP000IV; no Foundation).
+IRISH_DEFERRED_PAPERS = tuple((year, level, component, f'LC001{"A" if level == "hl" else "G"}LP{component}00IV')
+                              for year in (2022, 2023, 2024, 2025) for level in ('hl', 'ol') for component in (1, 2))
+
+
+def census_irish_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Irish paper is a census paper of its own, keyed 'Deferred Paper 1' / 'Deferred Paper 2' (Irish
+    keys its June papers 'Paper 1' / 'Paper 2'), as Economics keys its deferred sitting 'Deferred'
+    (census_economics_deferred). Its leaves are the paper's printed asks, read from its own text layer by
+    irish_paper_asks.py, each with the id a deferred card for it will carry ("irish-2023-hl-deferred-p1-…") and the
+    citation it will print ("… — Deferred sitting"). A paper absent from the local corpus is skipped.
+    """
+    import unicodedata
+    from irish_paper_asks import paper1_asks, paper2_asks
+
+    def slug(text):
+        plain = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode().lower()
+        return re.sub(r'[^a-z0-9]+', '-', plain).strip('-')
+
+    papers = []
+    for year, level, component, fileid in IRISH_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        if not os.path.exists(pdf):
+            continue
+        asks = paper1_asks(pdf) if component == 1 else paper2_asks(pdf)
+        leaves = [{'key': [f'irish-{year}-{level}-deferred-p{component}-{slug(section)}-{slug(address)}'],
+                   'label': f'{year} {level.upper()} Paper {component} {section} · {address} — Deferred sitting',
+                   'text': '', 'status': 'printed'} for section, address in asks]
+        if len({leaf['key'][0] for leaf in leaves}) != len(leaves):
+            raise AssertionError(f'Irish deferred {year} {level} Paper {component}: two asks share an address')
+        papers.append({
+            'year': year, 'level': level, 'paper': f'Deferred Paper {component}',
+            'leafCount': len(leaves), 'leaves': leaves,
+            'marksSum': None, 'marksQuestions': 0, 'flags': [],
         })
     return papers
 
