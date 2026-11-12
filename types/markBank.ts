@@ -1281,6 +1281,8 @@ export interface BusinessRubric {
   /** Exact official support notes, shown only after the scheme is revealed. */
   schemeFileid: string;
   schemePages: number[];
+  /** Reviewed image answers may focus the answer page while retaining the supporting pages. */
+  schemeRegions?: CardSourceMaterial['regions'];
   markingGuideNote: string;
 }
 
