@@ -67,7 +67,7 @@ CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')
              (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
              (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
              (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'),
-             (2010, 'hl')})
+             (2010, 'hl'), (2010, 'ol')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines

@@ -2053,7 +2053,7 @@ const technologyAdditions = {
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 396, '6c6503b5668af936a2af5746c53a507656a6c16e0388385740142fc6ae654d21'],
-  ordinary: [DCG_ORDINARY, 249, '1f6f7a1d6ac66b4b96e1d08e6717e489167530224cb110b22228b2a5678c1f59'],
+  ordinary: [DCG_ORDINARY, 279, '3c74ae028f53f1678bd4ba6792c99a55c47f0e34116f4e99401a73d377d1a18a'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -2163,7 +2163,8 @@ describe('Mark Bank card preservation', () => {
     // one card; B-1(c) under three heads, C-1(a) in four pieces, C-5(a) in
     // six named groups); 2011 Ordinary 28 for its 23 (C-5 in six groups);
     // 2010 Higher 41 for its 31 (B-1(b) under three heads, C-1(a) in four
-    // pieces, C-5(a) in seven named groups).
+    // pieces, C-5(a) in seven named groups); 2010 Ordinary 30 for its 23
+    // (B-1 under two heads, C-4(a) under two, C-5 in six named groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

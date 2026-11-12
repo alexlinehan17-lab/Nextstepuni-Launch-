@@ -2108,6 +2108,1718 @@
   "notes": "The scheme heads this 'Maximum rotation of swivel mount' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
  },
  {
+  "id": "dcg-2010-ol-a1a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q1(a)",
+  "questionText": "Locate the minor axis and construct the complete ellipse.",
+  "stem": "The 3D graphic on the left below shows a tennis racket. The head of the racket is an ellipse. On the drawing on the right, AB is the major axis for the ellipse and a portion of the curve is already drawn.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a1a-r1",
+    "kind": "point",
+    "verbatim": "Draw the minor axis",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a1a-r2",
+    "kind": "point",
+    "verbatim": "Appropriate method of construction",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-a1a-r3",
+    "kind": "point",
+    "verbatim": "Identify points on curve",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a1a-r4",
+    "kind": "point",
+    "verbatim": "Draw curve",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-a1a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Ellipse' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a1b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q1(b)",
+  "questionText": "Find the focal points for the ellipse.",
+  "stem": "The 3D graphic on the left below shows a tennis racket. The head of the racket is an ellipse. On the drawing on the right, AB is the major axis for the ellipse and a portion of the curve is already drawn.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a1b-r1",
+    "kind": "point",
+    "verbatim": "Locate focal points",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Focal points' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a2a",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q2(a)",
+  "questionText": "Draw the elevation of sphere A.",
+  "stem": "The 3D graphic below shows a training cone which is in contact with a football (A) and a basketball (B) as shown. The three items rest on the floor. The drawing on the right shows the plan and elevation of the cone. Sphere A is also shown in the plan and sphere B is shown in the elevation.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a2a-r1",
+    "kind": "point",
+    "verbatim": "Projection from plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a2a-r2",
+    "kind": "point",
+    "verbatim": "Establish the centre point in elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a2a-r3",
+    "kind": "point",
+    "verbatim": "Draw sphere A",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a2a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Sphere A' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a2b",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q2(b)",
+  "questionText": "Draw the plan of sphere B.",
+  "stem": "The 3D graphic below shows a training cone which is in contact with a football (A) and a basketball (B) as shown. The three items rest on the floor. The drawing on the right shows the plan and elevation of the cone. Sphere A is also shown in the plan and sphere B is shown in the elevation.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a2b-r1",
+    "kind": "point",
+    "verbatim": "Required construction in elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-a2b-r2",
+    "kind": "point",
+    "verbatim": "Projections to the plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a2b-r3",
+    "kind": "point",
+    "verbatim": "Draw sphere B",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a2b-r4",
+    "kind": "point",
+    "verbatim": "Hidden detail",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Sphere B' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a3a",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q3(a)",
+  "questionText": "Complete the elevation.",
+  "stem": "The 3D graphic below shows a modern seat from a hotel lobby. The plan and incomplete elevation of the seat are shown on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a3a-r1",
+    "kind": "point",
+    "verbatim": "Projections to elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-a3a-r2",
+    "kind": "point",
+    "verbatim": "Identify points in elevation",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-a3a-r3",
+    "kind": "point",
+    "verbatim": "Complete elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of elevation' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a3b",
+  "topicId": "design-and-communication-graphics-0-0",
+  "conceptId": "dcg-0-0",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q3(b)",
+  "questionText": "Draw an auxiliary view of the seat which will show the true angle between the surfaces A and B.",
+  "stem": "The 3D graphic below shows a modern seat from a hotel lobby. The plan and incomplete elevation of the seat are shown on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a3b-r1",
+    "kind": "point",
+    "verbatim": "Projections from plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-a3b-r2",
+    "kind": "point",
+    "verbatim": "Set up X1Y1",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-a3b-r3",
+    "kind": "point",
+    "verbatim": "Heights from elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-a3b-r4",
+    "kind": "point",
+    "verbatim": "Complete the auxiliary elevation",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'True angle' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a4a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q4(a)",
+  "questionText": "Complete the plan of the object.",
+  "stem": "The 3D graphic below shows three steps from the entrance to a building. A set of isometric axes and partially completed drawing are shown on the right. The elevation and incomplete plan of the steps have been positioned relative to the axes as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a4a-r1",
+    "kind": "point",
+    "verbatim": "Transfer the correct widths to the plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a4a-r2",
+    "kind": "point",
+    "verbatim": "Complete the plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a4a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of plan' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-a4b",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q4(b)",
+  "questionText": "Complete the axonometric projection.",
+  "stem": "The 3D graphic below shows three steps from the entrance to a building. A set of isometric axes and partially completed drawing are shown on the right. The elevation and incomplete plan of the steps have been positioned relative to the axes as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-a4b-r1",
+    "kind": "point",
+    "verbatim": "Projections from the plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a4b-r2",
+    "kind": "point",
+    "verbatim": "Projection from the elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a4b-r3",
+    "kind": "point",
+    "verbatim": "Identify points on the axonometric projection",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-a4b-r4",
+    "kind": "point",
+    "verbatim": "Complete the axonometric projection",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Axonometric projection' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b1-1",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q1 — Outline plan, outline elevation and end view",
+  "questionText": "The 3D graphic and the enlarged balloon detail shows part of a wooden fence which surrounds a patio. Fig. B-1 below shows a portion of one of the rectangular posts and one of the square rails from the fence. Draw the given plan and elevation and project an end view of the post and rail. Show all lines of interpenetration.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(28)"
+  },
+  "totalMarks": 28,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b1-1-r1",
+    "kind": "point",
+    "verbatim": "Plan of rectangular prism",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-b1-1-r2",
+    "kind": "point",
+    "verbatim": "Elevation of rectangular prism",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-b1-1-r3",
+    "kind": "criterion",
+    "verbatim": "Elevation of square prism inc. setup (2, 2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
+   },
+   {
+    "id": "dcg-2010-ol-b1-1-r4",
+    "kind": "point",
+    "verbatim": "Plan of square prism",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-b1-1-r5",
+    "kind": "point",
+    "verbatim": "End view",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2010-ol-b1-1-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Outline plan, outline elevation and end view' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b1-2",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q1 — Interpenetration",
+  "questionText": "The 3D graphic and the enlarged balloon detail shows part of a wooden fence which surrounds a patio. Fig. B-1 below shows a portion of one of the rectangular posts and one of the square rails from the fence. Draw the given plan and elevation and project an end view of the post and rail. Show all lines of interpenetration.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(17)"
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b1-2-r1",
+    "kind": "criterion",
+    "verbatim": "Interpenetration",
+    "marks": 17,
+    "permittedMarks": [
+     0,
+     17
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "(vi) Projections from LHS of plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "(vii) Locate points in elevation",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "(viii) Complete LHS of elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "(ix) Projections from RHS of plan",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "(x) Locate points in elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "(xi) Complete RHS of elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "(xii) Hidden detail",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Interpenetration' and prices it at 17. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b2a",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(a)",
+  "questionText": "Draw the given plan and elevation.",
+  "stem": "The 3D graphic on the right shows a model of a greenhouse with a compost bin attached. Fig. B-2 shows the plan and elevation of the greenhouse and the bin.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(30)"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b2a-r1",
+    "kind": "point",
+    "verbatim": "Plan of greenhouse",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2010-ol-b2a-r2",
+    "kind": "point",
+    "verbatim": "Plan of compost bin",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2010-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Elevation of green house",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2010-ol-b2a-r4",
+    "kind": "point",
+    "verbatim": "Elevation of compost bin",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-b2a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and elevation' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b2b",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(b)",
+  "questionText": "Draw an auxiliary elevation of the greenhouse and compost bin, projected from the plan, which will show the true shape of surface A of the bin.",
+  "stem": "The 3D graphic on the right shows a model of a greenhouse with a compost bin attached. Fig. B-2 shows the plan and elevation of the greenhouse and the bin.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b2b-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to plan of surface A",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-b2b-r2",
+    "kind": "point",
+    "verbatim": "Projections from plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-b2b-r3",
+    "kind": "point",
+    "verbatim": "Transfer heights from elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-b2b-r4",
+    "kind": "point",
+    "verbatim": "Draw surface A",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-b2b-r5",
+    "kind": "point",
+    "verbatim": "Complete auxiliary elevation",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Auxiliary elevation' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b3a",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(a)",
+  "questionText": "Draw the given plan.",
+  "stem": "The 3D graphic on the right shows a model of a tent which has a side window. Fig. B-3 shows the plan and elevation of the tent.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b3a-r1",
+    "kind": "point",
+    "verbatim": "Plan of structure",
+    "marks": 12
+   },
+   {
+    "id": "dcg-2010-ol-b3a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Plan' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-b3b",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(b)",
+  "questionText": "Make a perspective drawing of the structure given the following: The spectator point is 70mm from corner A. The picture plane is touching corner A. The horizon line is 30mm above the ground line.",
+  "stem": "The 3D graphic on the right shows a model of a tent which has a side window. Fig. B-3 shows the plan and elevation of the tent.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(29)"
+  },
+  "totalMarks": 29,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-b3b-r1",
+    "kind": "criterion",
+    "verbatim": "Perspective drawing",
+    "marks": 29,
+    "permittedMarks": [
+     0,
+     29
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Plan of spectator, PP, VP1 and VP2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Elevation of GL, HL, VP1 and VP2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Sight lines from spectator to plan",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       7
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Perspective of bottom edges",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Establish heights",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Completion of main structure",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Establish height for top of window opening",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Establish height for bottom of window opening",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Completion of window",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Completion of inside of tent",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective drawing' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c1a",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(a)",
+  "questionText": "On the drawing supplied, draw a vertical section (profile) on the line AB.",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(23)"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c1a-r1",
+    "kind": "point",
+    "verbatim": "Measure heights and draw horizontal lines",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c1a-r2",
+    "kind": "point",
+    "verbatim": "Projections from intersections between line AB and contours",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-c1a-r3",
+    "kind": "point",
+    "verbatim": "Draw outline of profile",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2010-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2010 Ordinary Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Profile' and prices it at 19. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(b)",
+  "questionText": "Determine and indicate, in metres, the maximum difference in altitude recorded along the line AB.",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c1b-r1",
+    "kind": "point",
+    "verbatim": "Identify the altitude extremes",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-c1b-r2",
+    "kind": "point",
+    "verbatim": "Indicate the required dimension",
+    "marks": 2
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2010 Ordinary Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Altitude difference' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c1c",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(c)",
+  "questionText": "C, D and E are outcrop points on the surface of a stratum of ore. Determine the strike and dip of the stratum.",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(17)"
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c1c-r1",
+    "kind": "point",
+    "verbatim": "Join the points in plan",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-c1c-r2",
+    "kind": "point",
+    "verbatim": "Draw the triangle in elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-c1c-r3",
+    "kind": "point",
+    "verbatim": "Horizontal line in elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c1c-r4",
+    "kind": "point",
+    "verbatim": "Strike in plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-c1c-r5",
+    "kind": "point",
+    "verbatim": "Viewing direction for dip",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c1c-r6",
+    "kind": "point",
+    "verbatim": "Determine dip (2 heights, edge view)",
+    "marks": 3
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2010 Ordinary Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Strike and dip' and prices it at 17. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(a)",
+  "questionText": "Draw the given plan and elevation of the hyperbolic paraboloid surface.",
+  "stem": "Hyperbolic paraboloid surfaces are often used in the construction of buildings such as the aircraft hanger shown in the 3D graphic on the right. Fig. C-2 below shows the plan and elevation of a typical hyperbolic paraboloid surface, ABCD. The outline of the surface is a rectangle in plan.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(27)"
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c2a-r1",
+    "kind": "point",
+    "verbatim": "Outline of surface ABCD in plan",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-c2a-r2",
+    "kind": "point",
+    "verbatim": "Elements in plan (incl. division)",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2010-ol-c2a-r3",
+    "kind": "point",
+    "verbatim": "Outline of surface ABCD in elevation",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-c2a-r4",
+    "kind": "point",
+    "verbatim": "Elements in elevation (incl. division or proj.)",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-c2a-r5",
+    "kind": "point",
+    "verbatim": "Curve in elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and Plan' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(b)",
+  "questionText": "Project an end view.",
+  "stem": "Hyperbolic paraboloid surfaces are often used in the construction of buildings such as the aircraft hanger shown in the 3D graphic on the right. Fig. C-2 below shows the plan and elevation of a typical hyperbolic paraboloid surface, ABCD. The outline of the surface is a rectangle in plan.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c2b-r1",
+    "kind": "point",
+    "verbatim": "Determine heights and widths for surface ABCD",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-c2b-r2",
+    "kind": "point",
+    "verbatim": "Draw the outline of the hyperbolic paraboloid",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c2b-r3",
+    "kind": "point",
+    "verbatim": "Draw the elements",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c2b-r4",
+    "kind": "point",
+    "verbatim": "Curve in end view",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'End view of Hyperbolic Paraboloid' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(a)",
+  "questionText": "Draw the given views.",
+  "stem": "The 3D graphic on the right shows a design for a money box. The plan, elevation and end view of the box are shown in Fig. C-3.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(23)"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c3a-r1",
+    "kind": "point",
+    "verbatim": "Outline plan",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-c3a-r2",
+    "kind": "point",
+    "verbatim": "Outline elevation",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2010-ol-c3a-r3",
+    "kind": "point",
+    "verbatim": "End view",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c3a-r4",
+    "kind": "criterion",
+    "verbatim": "Complete the elevation and plan (1, 2)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2010-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation' and prices it at 19. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(b)",
+  "questionText": "Draw a one-piece surface development of the money box.",
+  "stem": "The 3D graphic on the right shows a design for a money box. The plan, elevation and end view of the box are shown in Fig. C-3.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c3b-r1",
+    "kind": "criterion",
+    "verbatim": "Surface development",
+    "marks": 22,
+    "permittedMarks": [
+     0,
+     22
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Development of back surface",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Development of bottom surface",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Development of front vertical surface",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Development of inclined surface",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Development of side surfaces",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Division of circumference",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Development of curved surface",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Establish the width and length for the opening",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Draw the opening",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Surface development' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c4a-1",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(a) — Displacement Diagram",
+  "questionText": "The 3D graphic on the right shows a pull along toy. A cam and in-line knife-edge follower are used inside the toy to move the head up and down as the toy rolls. The cam has a minimum radius of 30mm, a camshaft diameter of 20mm and rotates in an anti-clockwise direction. The cam imparts the following motion to the follower: 0° to 120° Rise 40mm with uniform velocity 120° to 180° Dwell 180° to 360° Fall 40mm with simple harmonic motion. Draw the displacement diagram and the profile of the cam.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(17)"
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c4a-1-r1",
+    "kind": "point",
+    "verbatim": "360° division (widths on displacement diag.)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-c4a-1-r2",
+    "kind": "point",
+    "verbatim": "Establish follower position at 0°, 120°, 180° and 360°",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-c4a-1-r3",
+    "kind": "point",
+    "verbatim": "0° to 120°, Uniform Velocity",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4a-1-r4",
+    "kind": "point",
+    "verbatim": "120° to 180° , Dwell",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4a-1-r5",
+    "kind": "point",
+    "verbatim": "180° to 360°, Simple Harmonic Motion",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4a-1-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Displacement Diagram' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c4a-2",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(a) — Cam Profile",
+  "questionText": "The 3D graphic on the right shows a pull along toy. A cam and in-line knife-edge follower are used inside the toy to move the head up and down as the toy rolls. The cam has a minimum radius of 30mm, a camshaft diameter of 20mm and rotates in an anti-clockwise direction. The cam imparts the following motion to the follower: 0° to 120° Rise 40mm with uniform velocity 120° to 180° Dwell 180° to 360° Fall 40mm with simple harmonic motion. Draw the displacement diagram and the profile of the cam.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c4a-2-r1",
+    "kind": "criterion",
+    "verbatim": "Cam Profile",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     12
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Minimum radius",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Camshaft diameter",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Maximum radius",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "0° to 120°, Uniform Velocity",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "120° to 180° , Dwell",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "180° to 360°, Simple Harmonic Motion",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Direction of rotation",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Draw cam profile",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Cam Profile' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(b)",
+  "questionText": "A Trundle Wheel, as shown in the 3D graphic on the right, is often used to measure distances by rolling it along the ground. In Fig C-4(b) below, circle C represents the wheel. In the diagram circle C rolls clockwise along the line AB for one full revolution. Plot the locus of point P for this movement.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c4b-r1",
+    "kind": "point",
+    "verbatim": "Setup line AB, Circle C and Point P",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c4b-r2",
+    "kind": "point",
+    "verbatim": "Division of circle",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4b-r3",
+    "kind": "point",
+    "verbatim": "Centres marked on centre line",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4b-r4",
+    "kind": "point",
+    "verbatim": "Arcs swung from centres",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4b-r5",
+    "kind": "point",
+    "verbatim": "Points on locus",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c4b-r6",
+    "kind": "point",
+    "verbatim": "Draw locus",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Cycloid' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-1",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Assembly",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-1-r1",
+    "kind": "point",
+    "verbatim": "Relative positioning of components",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2010-ol-c5-1-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
+   }
+  ],
+  "notes": "The scheme heads this 'Assembly' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-2",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Mounting Bracket",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-2-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2010-ol-c5-2-r2",
+    "kind": "point",
+    "verbatim": "Hole",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2010-ol-c5-2-r3",
+    "kind": "point",
+    "verbatim": "Hexagons",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Mounting Bracket' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Fixing Plate",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-3-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2010-ol-c5-3-r2",
+    "kind": "point",
+    "verbatim": "Hole",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Fixing Plate' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Connecting Pin",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-4-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2010-ol-c5-4-r2",
+    "kind": "point",
+    "verbatim": "Holes",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Connecting Pin' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Bolts, Nuts and Washers",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-5-r1",
+    "kind": "point",
+    "verbatim": "Heads (incl. curves)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c5-5-r2",
+    "kind": "point",
+    "verbatim": "Shafts (incl. threads)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2010-ol-c5-5-r3",
+    "kind": "point",
+    "verbatim": "Nuts and washers (incl. curves)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Bolts, Nuts and Washers' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2010-ol-c5-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5 — Drawing Completion",
+  "questionText": "The 3D graphic on the right shows a Data Projector which is often mounted on the ceiling in a DCG classroom. Details of a Mounting Bracket are given in Fig. C-5 with the parts list tabulated below. A 3D graphic of the individual parts is also shown. Note: For clarity, some detail has been omitted from the End View of Part 1. Draw the sectional elevation A-A of the assembled Mounting Bracket. (Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2010-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2010-ol-c5-6-r1",
+    "kind": "criterion",
+    "verbatim": "Hatching and Centrelines …(3,3)",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Drawing Completion' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
   "id": "dcg-2011-hl-a1a",
   "topicId": "design-and-communication-graphics-0-0",
   "conceptId": "dcg-0-0",
