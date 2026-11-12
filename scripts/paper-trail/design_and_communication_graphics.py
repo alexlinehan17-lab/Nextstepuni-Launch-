@@ -88,7 +88,7 @@ REVIEWED_OMISSIONS: dict[str, list[str]] = {
 # 2023 Irish edition is deferred with every Irish-version paper. A sitting
 # joins the Atlas with its Mark Bank cards (test/paperTrailSyllabus.test.ts,
 # ADMITTED_DEFERRED), so this lists the deferred sittings carded.
-DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ()
+DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, "higher"),)
 
 # The reference heads every deferred question but Section C's assembly, C-5,
 # in both years; each was read on its own booklet ("Details of a beam balance

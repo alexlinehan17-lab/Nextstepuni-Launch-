@@ -32,6 +32,12 @@ interface TagPaper {
 const tags: TagPaper[] = JSON.parse(fs.readFileSync(
   'scripts/paper-trail/topic-tags/tags/design-and-communication-graphics.json', 'utf8'));
 
+/** A card of the SEC's deferred sitting ("dcg-2022-hl-deferred-...") and a
+ *  deferred booklet ("LC562ALP014EV-deferred.pdf"): its own paper, numbered as
+ *  June's. */
+const deferredCard = (card: { id: string }) => /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(card.id);
+const deferredPaper = (paper: { fileid: string }) => paper.fileid.endsWith('-deferred.pdf');
+
 /** The Atlas's own address for a printed DCG question. */
 const atlasAddress = (section: string, q: number) => (section === 'A'
   ? { paperKey: 'section-a', n: String(q) }
@@ -49,6 +55,20 @@ describe('DCG booklets', () => {
       }
     }
     expect(wrong).toEqual([]);
+  });
+
+  it('resolves each deferred section to its own deferred booklet', async () => {
+    const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const wrong: string[] = [];
+    const deferred = tags.filter(p => p.lang === 'ev' && deferredPaper(p));
+    for (const paper of deferred) {
+      for (const section of paper.paperKey === 'section-a' ? ['A'] : ['B', 'C']) {
+        const got = resolvePaperFileid('dcg', paper.year, paper.level, section, 'deferred');
+        if (`${got}.pdf` !== paper.fileid) wrong.push(`${paper.year} ${paper.level} ${section}: ${got} vs ${paper.fileid}`);
+      }
+    }
+    expect(wrong).toEqual([]);
+    expect(deferred.length).toBeGreaterThan(0);
   });
 
   it('follows the 2011 swap rather than the labels', async () => {
@@ -71,7 +91,8 @@ describe('DCG Geologic Geometry carries its contour map', () => {
       const source = card.sourceMaterial;
       const isC1 = /Section C Q1\b/.test(card.questionRef);
       if (!isC1) { if (source) wrong.push(`${card.id}: unexpected source`); continue; }
-      const booklet = tags.find(p => p.lang === 'ev' && p.year === card.year && p.level === card.level && p.paperKey === 'section-a');
+      const booklet = tags.find(p => p.lang === 'ev' && p.year === card.year && p.level === card.level
+        && p.paperKey === 'section-a' && deferredPaper(p) === deferredCard(card));
       if (!source || source.kind !== 'source-illustration' || JSON.stringify(source.pages) !== '[3]'
           || `${source.sourceFileid}.pdf` !== booklet?.fileid) {
         wrong.push(`${card.id}: ${JSON.stringify(source)}`);
@@ -83,8 +104,9 @@ describe('DCG Geologic Geometry carries its contour map', () => {
     // Ordinary 2, 2015 Higher 6, 2015 Ordinary 3, 2014 Higher 7, 2014
     // Ordinary 2, 2013 Higher 6, 2013 Ordinary 2, 2012 Higher 5, 2012
     // Ordinary 3, 2011 Higher 6, 2011 Ordinary 3, 2010 Higher 6, 2010
-    // Ordinary 3).
-    expect(cards.filter(c => c.sourceMaterial).length).toBe(144);
+    // Ordinary 3), and the deferred sittings' (2022 Higher 2, each opening
+    // its own deferred Section A sheet).
+    expect(cards.filter(c => c.sourceMaterial).length).toBe(146);
   });
 });
 
@@ -116,13 +138,14 @@ describe('DCG cards in the Topic Atlas', () => {
 
   it('files every card under a topic its Atlas question carries', () => {
     const index = new Map<string, string[]>(tags.filter(p => p.lang === 'ev').flatMap(p => p.q.map(
-      (q): [string, string[]] => [`${p.year}|${p.level}|${p.paperKey}|${q.n}`, [q.primary, ...(q.secondary ? [q.secondary] : [])]],
+      (q): [string, string[]] => [`${p.year}|${p.level}|${deferredPaper(p) ? 'deferred|' : ''}${p.paperKey}|${q.n}`,
+        [q.primary, ...(q.secondary ? [q.secondary] : [])]],
     )));
     const disagree: string[] = [];
     for (const card of cards) {
       const [, section, q] = card.questionRef.match(/Section ([ABC]) Q(\d)/)!;
       const { paperKey, n } = atlasAddress(section, Number(q));
-      const topics = index.get(`${card.year}|${card.level}|${paperKey}|${n}`) ?? [];
+      const topics = index.get(`${card.year}|${card.level}|${deferredCard(card) ? 'deferred|' : ''}${paperKey}|${n}`) ?? [];
       if (!topics.includes(card.topicId)) disagree.push(`${card.id}: ${card.topicId} not in ${topics.join(', ')}`);
     }
     expect(disagree).toEqual([]);

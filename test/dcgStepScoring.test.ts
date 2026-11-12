@@ -78,7 +78,9 @@ describe('DCG step scoring', () => {
     const totals = new Map<string, { year: number; section: string; sum: number; cards: SecCard[] }>();
     for (const card of cards) {
       const [, year, level, section, q] = card.questionRef.match(/^(\d{4}) (HL|OL) Section ([ABC]) Q(\d)/)!;
-      const key = `${year} ${level} ${section}-${q}`;
+      // A deferred sitting ("dcg-2022-hl-deferred-...") is its own paper.
+      const sitting = /-deferred-/.test(card.id) ? ' deferred' : '';
+      const key = `${year} ${level}${sitting} ${section}-${q}`;
       const t = totals.get(key) ?? { year: Number(year), section, sum: 0, cards: [] };
       t.sum += card.totalMarks;
       t.cards.push(card);

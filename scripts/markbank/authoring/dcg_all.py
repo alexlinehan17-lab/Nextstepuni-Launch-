@@ -71,7 +71,7 @@ CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')
 # The SEC's deferred sittings carded (dcg_paper.DEFERRED_SITTINGS lists those
 # in the archive). Each is its own census paper, 'Deferred'; its cards are
 # "dcg-<year>-<level>-deferred-..." and cite "... — Deferred sitting".
-CARDED_DEFERRED = set()
+CARDED_DEFERRED = {(2022, 'hl')}
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
