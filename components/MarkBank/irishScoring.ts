@@ -30,6 +30,8 @@ const irishPoints = (part: IrishAnswerPart): number[] => {
 /** How many answers a sub-question asks for: its tariff over its full answer, or its ladder's length. */
 export const irishPartCount = (part: IrishAnswerPart): number => {
   if (part.ladder) return part.ladder.length;
+  // A count the scheme's lines set (cards/irish/tariffs.ts printedOrder), where the rows' prices alone would count one.
+  if (part.count) return part.count;
   // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once,
   // and so are rows that are the tariff's components ("Tréith 1 a lua = 2 mharc", "sampla … = 4 mharc" of 6):
   // an answer list prices alternatives, which never add up to the sub-question exactly when their marks differ.

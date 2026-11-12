@@ -15,6 +15,7 @@ import {
 } from "../../northStarData";
 import { isLcaYear } from "../../utils/authUtils";
 import { trackFunnel } from "../../utils/funnel";
+import { getDefaultExamDateForYear } from "../../utils/examDates";
 import type { NorthStar } from "../../types";
 import {
   buildNorthStar,
@@ -277,11 +278,12 @@ export function useSetupFlow(
         category: null,
         vision: [],
         gradeSubject: null,
-        dateConfirmed: false,
+        date: getDefaultExamDateForYear(year),
+        dateEdited: false,
       });
       setSubjectGroup("languages");
       setVisionGroup("");
-    } else patch({ year, dateConfirmed: false });
+    } else patch({ year, ...(draft.year !== year ? { date: getDefaultExamDateForYear(year), dateEdited: false } : {}) });
     setPendingYear(null);
   };
   const selectYear = (year: YearGroup) => {
@@ -402,12 +404,6 @@ export function useSetupFlow(
       !(daysUntil(draft.date) > 0)
     )
       return "Choose a future exam date.";
-    if (
-      draft.step === "schedule" &&
-      needsDate(draft.year) &&
-      !draft.dateConfirmed
-    )
-      return "Confirm your exam date to continue.";
     if (draft.step === "summary") {
       if (
         !draft.year ||
@@ -421,7 +417,7 @@ export function useSetupFlow(
       if (
         !studyDays.length ||
         (needsDate(draft.year) &&
-          (!draft.dateConfirmed || !(daysUntil(draft.date) > 0)))
+          !(daysUntil(draft.date) > 0))
       )
         return "Review your study days and exam date.";
     }

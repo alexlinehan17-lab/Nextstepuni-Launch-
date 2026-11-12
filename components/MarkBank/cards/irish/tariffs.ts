@@ -23,6 +23,7 @@
  */
 import type { IrishAllocation, IrishAnswerPart, IrishAnswerRow } from '../../../../types/markBank';
 import type { IrishAnswerResult, IrishAnswerSource } from './answers';
+import { irishPartCount } from '../../irishScoring';
 import { parseIrishAnswers } from './answers';
 
 const MARC = String.raw`(\d+)\s*m?h?arc\b`;
@@ -854,7 +855,9 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     if (count > 1 && each > 0 && (WORDS[match[3].toLowerCase()] ?? Number(match[3])) === count) counts.set(count * each, cumulative(Array(count).fill(each)));
   }
   const bands = new Map<number, Set<number>>();
-  const headed = /(?:Catagóir\s+Marc as (\d+)(?!\s+Marc as)|Catagóir\s+(?:An plé|Plé|Eolas|Cur síos)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
+  // "Fáth Marc as 5 Léiriú sármhaith 5 … Léiriú lag/an-lag 0-1" (2026 Higher B 6(b)) heads each reason's band as "Pointe eolais
+  // Marc as 5" does a point's.
+  const headed = /(?:Catagóir\s+Marc as (\d+)(?!\s+Marc as)|Catagóir\s+(?:An plé|Plé|Eolas|Cur síos)\s*\((\d+)\s*m?h?arc\)|(?:Pointe eolais|Fáth) Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag|Léiriú lag\/an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
   for (const match of text.matchAll(headed)) {
     const values = bandValues(match[4].replace(/\([^)]*\)/g, ' '));
     // "Catagóir Plé Marcanna …" (2026) prints no price in its header: its top printed value is the price it scales.
@@ -931,6 +934,180 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
       }),
     })),
   };
+};
+
+/** The totals a criterion's rows can reach, by the app's own scoring (irishScoring.ts): a ladder by answers ticked, otherwise
+ *  each point at its best claimed row, the part's best points up to its count, never above the part's tariff. */
+const reachable = (allocation: IrishAllocation, max: number): Set<number> => {
+  let totals = new Set([0]);
+  for (const part of allocation.parts) {
+    let sums: Set<number>;
+    if (part.ladder) sums = new Set([0, ...part.ladder]);
+    else {
+      const points = new Map<string, Set<number>>();
+      for (const row of part.rows) {
+        const key = row.group ?? row.id;
+        const values = points.get(key) ?? new Set<number>();
+        for (const value of row.steps ?? [row.marks]) if (value > 0) values.add(value);
+        points.set(key, values);
+      }
+      const count = irishPartCount(part);
+      let states: Set<number>[] = Array.from({ length: count + 1 }, (_, used) => new Set(used === 0 ? [0] : []));
+      for (const values of points.values()) {
+        const next = states.map(state => new Set(state));
+        for (let used = 0; used < count; used++) for (const sum of states[used]) for (const value of values) next[used + 1].add(sum + value);
+        states = next;
+      }
+      sums = new Set(states.flatMap(state => [...state].map(sum => Math.min(part.tariff, sum))));
+    }
+    const next = new Set<number>();
+    for (const total of totals) for (const sum of sums) next.add(Math.min(max, total + sum));
+    totals = next;
+  }
+  return totals;
+};
+
+/** Marks the scheme prints for a part-right answer that a row priced whole does not offer: each is added to that row as a
+ *  step, and only where the scheme prints it for that row or its part (coordinator, 12 Nov: fix the rows, never the permitted
+ *  marks). Read, in order:
+ *  - an order rule over a two-item answer: "An chéad scoil atá cruinn = 3 mharc; an dara scoil luaite agus cruinn = 2 mharc"
+ *    (2014 Ordinary 2(b)): a whole answer at 5 steps at 3 for its first item;
+ *  - a row's own split printed after it: "Haca + camógaíocht = 3 mharc+2 mharc" (2013 Ordinary B 2(b));
+ *  - a note on a part-right answer: "(Má fhágtar ainmfhocal nó aidiacht amháin ar lár is fiú 3 mharc an freagra.)" (2017
+ *    Ordinary 3(b)), "Ceann amháin den dá rud (leictreachas nó teas) i gceart, bronn 2 mharc air" (2015 Ordinary listening);
+ *  - a reduced award: "… tá an freagra easnamhach (2-1)" (2018 Higher 4(b)(ii)), "… easnamhach = 2-1 = 1 mharc" (2014 Higher
+ *    B 4(b)(ii)), "Gan ‘le móramh’ (3-1) =2" (2022 deferred Higher 4(a));
+ *  - a mark lost for each item left out: "= 3 mharc (cailltear marc i leith gach ceann de ‘faisnéis’, ‘cúnamh dlíthiúil’ agus
+ *    ‘tacaíochtaí’ a fhágtar ar lár)" (2026 Higher 5(a)): the note is the row's, not a row of its own.
+ *  Two more shapes pay a list in the printed order:
+ *  - "Dhá phíosa eolais = 3 mharc + 2 mharc" over rows that are each one piece priced at the whole tariff (2014 Ordinary
+ *    A 4(b)): the part is the ladder the deferred cards and the French ones use, 1 right earns 3 and 2 right earn 5, so one
+ *    piece never earns 5 and never only 2; the scheme's "= 0" piece is its ruling, a direction, never a piece to tick;
+ *  - a part that asks for two answers ("2 mharc + 2 mharc") and prices each, but whose one row of both at the tariff left it
+ *    counting one claimed row (2022 Higher listening B C2 Q1: two answers at 2 earned 2): that row's own printed split
+ *    ("… gan bogadh as a theach = 2 mharc + 2 mharc") steps it, so the answers add again, as the scheme prints. */
+export const stepPrintedPartials = (allocation: IrishAllocation, guidance: string[], permitted: number[], max: number): IrishAllocation => {
+  // Only marks the criterion permits (set from the scheme) and its rows cannot yet reach: a row already offering every printed
+  // mark is left exactly as it is, unless its part counts one claimed row of several the scheme prices below the tariff.
+  const reach = reachable(allocation, max);
+  const wanted = (value: number) => permitted.includes(value) && !reach.has(value);
+  const countsOne = (part: IrishAllocation['parts'][number]) => !part.ladder && irishPartCount(part) === 1
+    && part.rows.filter(row => row.marks > 0 && row.marks < part.tariff).length >= 2;
+  if (!permitted.some(wanted) && !allocation.parts.some(countsOne)) return allocation;
+  const text = guidance.join(' ').replace(/\s+/g, ' ');
+  const escape = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const ordered = /An chéad \S+ (?:atá |luaite agus )?(?:ceart|cruinn) = (\d+) mharc;? an dara \S+(?: [^=•;]{0,40}?)? = (\d+) mharc/.exec(text);
+  const partRight = [...text.matchAll(/Má fhágtar [^()=•]*? ar lár is fiú (\d+) mharc an freagra|Ceann amháin den dá rud[^•=]*? i gceart, bronn (\d+) mharc air/g)]
+    .map(match => Number(match[1] ?? match[2]));
+  const lost = /=\s*(\d+)\s*m?h?arc\s*\(cailltear marc i leith gach ceann de ([^()]+?) a fhágtar ar lár\)/.exec(text);
+  const lostItems = lost ? lost[2].split(/,\s*|\s+agus\s+/).filter(Boolean).length : 0;
+  const pieces = /Dhá \S+(?: \S+)? = (\d+) mharc \+ (\d+) mharc/.exec(text);
+  let changed = false;
+  const parts = allocation.parts.map(part => {
+    if (part.ladder) return part;
+    const priced = part.rows.filter(row => row.marks > 0);
+    // Only pieces the scheme lists unpriced under the split: a row printed with its own "= 5 mharc" is a whole answer of both
+    // items ("Gaeilge agus Scannánaíocht = 5 mharc", 2014 Ordinary A 3(a)), which the order rule below steps instead.
+    if (pieces && Number(pieces[1]) + Number(pieces[2]) === part.tariff && wanted(Number(pieces[1])) && priced.length >= 2
+      && priced.every(row => row.marks === part.tariff && !row.steps
+        && !new RegExp(String.raw`${escape(row.text)}\s*=\s*${part.tariff}\s*m?h?arc`).test(text))
+      && part.rows.every(row => row.marks > 0 || text.includes(`${row.text} = 0`))) {
+      changed = true;
+      return { ...part, ladder: [Number(pieces[1]), part.tariff], rows: priced.map(row => ({ ...row, marks: 0 })) };
+    }
+    const one = countsOne(part);
+    let rows = part.rows;
+    // The lost-marks note cut as a row of its own goes back to being the note under the row it prices.
+    const noteRow = lost ? rows.findIndex(row => /^\(cailltear marc i leith gach ceann de/.test(row.text)) : -1;
+    if (noteRow > 0) rows = rows.filter((_, index) => index !== noteRow);
+    rows = rows.map(row => {
+      if (row.steps || row.marks < 2) return row;
+      const extra = new Set<number>();
+      if (ordered && Number(ordered[1]) + Number(ordered[2]) === row.marks && row.marks === part.tariff) extra.add(Number(ordered[1]));
+      const own = new RegExp(String.raw`${escape(row.text)}\s*=\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc`).exec(text);
+      if (own && Number(own[1]) + Number(own[2]) === row.marks) extra.add(Number(own[1])).add(Number(own[2]));
+      for (const value of partRight) if (value < row.marks && row.marks === part.tariff) extra.add(value);
+      // A reduced award printed with this row or its whole part: after the row's own words, before the next answer.
+      const at = text.indexOf(row.text);
+      const after = at >= 0 ? text.slice(at + row.text.length).split(/\s•\s/)[0] : '';
+      for (const reduced of [...`${row.text} ${after}`.matchAll(/\((\d+)\s*-\s*(\d+)\)\s*(?:=\s*(\d+))?|easnamhach\s*=\s*(\d+)\s*-\s*(\d+)\s*=\s*(\d+)\s*m?h?arc/g)]) {
+        const total = Number(reduced[1] ?? reduced[4]);
+        const value = reduced[3] !== undefined ? Number(reduced[3]) : reduced[6] !== undefined ? Number(reduced[6]) : total - Number(reduced[2] ?? reduced[5]);
+        if (total === row.marks && value > 0 && value < row.marks) extra.add(value);
+      }
+      if (lost && Number(lost[1]) === row.marks && lostItems === row.marks && text.indexOf(row.text) >= 0
+        && text.indexOf(row.text) < text.indexOf(lost[0]) && text.slice(text.indexOf(row.text), text.indexOf(lost[0])).length <= row.text.length + 2) {
+        for (let value = 1; value < row.marks; value++) extra.add(value);
+      }
+      const added = [...extra].filter(value => wanted(value) || [...reach].some(base => wanted(base + value))
+        || (one && own && row.marks === part.tariff && (value === Number(own[1]) || value === Number(own[2]))));
+      if (!added.length) return row;
+      changed = true;
+      return { ...row, steps: [...new Set([0, ...added, row.marks])].sort((x, y) => x - y) };
+    });
+    if (rows !== part.rows && noteRow > 0) changed = true;
+    return { ...part, rows };
+  });
+  if (!changed) return allocation;
+  const lostNote = lost && allocation.parts.some(part => part.rows.some(row => /^\(cailltear marc i leith gach ceann de/.test(row.text)));
+  // The "= 0" pieces a ladder no longer lists stay as the scheme's rulings.
+  const rulings = allocation.parts.flatMap((part, index) => (parts[index].ladder && !part.ladder
+    ? part.rows.filter(row => row.marks === 0).map(row => `${row.text} = 0`) : []));
+  const notes = [...allocation.directions, ...(lostNote && lost ? [lost[0].replace(/^=\s*\d+\s*m?h?arc\s*/, '')] : []), ...rulings];
+  return { ...allocation, parts, directions: notes };
+};
+
+/** Parts whose scheme pays two pieces in a printed order that their rows' prices alone cannot (coordinator rulings, 12 Nov).
+ *  Each override is keyed by card and criterion, names the scheme lines it rests on, and refuses to apply if the criterion's
+ *  lifted guidance no longer prints them or its parts are not the shape it was written for.
+ *  - Two pieces with a full row of both at the tariff, which left the part counting one claimed row: the part counts up to
+ *    TWO claimed rows, capped at its tariff (5). The full row alone pays 5, one piece 3, both pieces 5, full plus a piece 5.
+ *  - Two printed lists, one item asked from each, the first right item paid 3: a ladder [3, 5] over POINTS, each list one
+ *    point (its rows share a group, so one irishRowPoint). The first right item earns 3, an item from the other list makes
+ *    5, two from the same list stay at 3 ("An chéad mhír atá ceart = 3 mharc"). */
+const COUNT_TWO = (allocation: IrishAllocation): IrishAllocation | undefined => {
+  if (allocation.parts.length !== 1 || allocation.parts[0].ladder || allocation.parts[0].tariff !== 5) return undefined;
+  return { ...allocation, parts: [{ ...allocation.parts[0], count: 2 }] };
+};
+const LISTS_AS_POINTS = (allocation: IrishAllocation, prompt: string): IrishAllocation | undefined => {
+  const [first, second] = allocation.parts;
+  if (allocation.parts.length !== 2 || first.tariff !== 3 || second.tariff !== 2 || first.ladder || second.ladder
+    || [...first.rows, ...second.rows].some(row => row.group || row.steps)) return undefined;
+  const rows = [...first.rows.map(row => ({ ...row, group: 'list-1' })), ...second.rows.map(row => ({ ...row, group: 'list-2' }))]
+    .map((row, index) => ({ ...row, id: `r${index + 1}`, marks: 0 }));
+  return { ...allocation, parts: [{ id: 'p1', prompt, tariff: 5, ladder: [3, 5], rows }] };
+};
+const A5A_2013 = { lines: ['Dúil mhór sa tsaoirse = 3 mharc', 'Creideamh láidir (i nDia) = 2 mharc', 'An chéad mhír atá ceart = 3 mharc'], apply: COUNT_TWO };
+const Q1A_2025_DEFERRED = {
+  lines: ['Ionadaithe ó chlub píobairí Shráid Thomáis i mBaile Átha Cliath = 3 mharc',
+    'Daoine as Contae na hIarmhí a raibh baint mhór acu leis an gceol traidisiúnta = 3 mharc',
+    'Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart.'],
+  apply: COUNT_TWO,
+};
+const A4B_PROMPT = '(b) Luaigh rud amháin a rinne sé mar Uachtarán agus rud amháin nár éirigh leis a dhéanamh. (Alt 4)';
+const A4B_2013 = {
+  lines: [A4B_PROMPT, 'Rud amháin a rinne sé mar Uachtarán', 'Rud amháin nár éirigh leis a dhéanamh = 2 mharc', 'An chéad mhír atá ceart = 3 mharc'],
+  apply: (allocation: IrishAllocation) => LISTS_AS_POINTS(allocation, A4B_PROMPT),
+};
+const PRINTED_ORDER: Record<string, { lines: string[]; apply: (allocation: IrishAllocation) => IrishAllocation | undefined }> = {
+  'irish-2013-ol-p2-reading-a-q5::a': A5A_2013,
+  'irish-2013-ol-p2-reading-a-q5-a::a': A5A_2013,
+  'irish-2025-ol-deferred-p2-reading-a-q1::a': Q1A_2025_DEFERRED,
+  'irish-2025-ol-deferred-p2-reading-a-q1-a::a': Q1A_2025_DEFERRED,
+  'irish-2013-ol-p2-reading-a-q4::b': A4B_2013,
+  'irish-2013-ol-p2-reading-a-q4-b::b': A4B_2013,
+};
+export const PRINTED_ORDER_KEYS = Object.keys(PRINTED_ORDER);
+
+export const printedOrder = (cardId: string, criterionId: string, guidance: string[], allocation: IrishAllocation): IrishAllocation => {
+  const override = PRINTED_ORDER[`${cardId}::${criterionId}`];
+  if (!override) return allocation;
+  const text = guidance.join(' ').replace(/\s+/g, ' ');
+  const missing = override.lines.filter(line => !text.includes(line));
+  if (missing.length) throw new Error(`Irish printed-order override ${cardId}::${criterionId}: the scheme no longer prints "${missing[0]}"`);
+  const applied = override.apply(allocation);
+  if (!applied) throw new Error(`Irish printed-order override ${cardId}::${criterionId}: its parts are not the shape the ruling was written for`);
+  return applied;
 };
 
 /** A note or prompt cut inside a bracket keeps the bracket the scheme prints round it, and never a half of one: a direction

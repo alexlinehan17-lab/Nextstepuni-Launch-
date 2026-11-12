@@ -88,7 +88,7 @@ describe('independent official catalogue checklist, 10 November 2026', () => {
 });
 
 function readyDraft(year: YearGroup, names = subjectsFor(year).map(s => s.name)): SetupDraft {
-  return { ...initialDraft(), year, step: 'subjects', subjects: names, date: '2030-06-05', dateConfirmed: true,
+  return { ...initialDraft(), year, step: 'subjects', subjects: names, date: '2030-06-05', dateEdited: true,
     category: 'college-learning', vision: ['campus'], rest: ['Sunday'],
     configs: Object.fromEntries(names.map(name => [name, {
       ...emptyChoice(year, name), level: subjectLevels(year === '3rd' ? 'jc' : year === 'LCA1' ? 'lca' : 'lc', name)[0],
