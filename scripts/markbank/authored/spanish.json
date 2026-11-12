@@ -10238,6 +10238,1202 @@
   }
  },
  {
+  "id": "es-2021-ol-l-1-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "countries-did-train-station-connect",
+  "questionRef": "2021 OL Section L Q1(a)",
+  "questionText": "What two countries did the train station connect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Spain",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "France",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA ESTACIÓN DE CANFRANC (CANFRANC TRAIN STATION)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA ESTACIÓN DE CANFRANC",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-1-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "things-included-plan",
+  "questionRef": "2021 OL Section L Q1(b)",
+  "questionText": "Name two things included in the plan.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "hotel",
+      "(train) stop",
+      "pilgrim centre",
+      "museum"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA ESTACIÓN DE CANFRANC (CANFRANC TRAIN STATION)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA ESTACIÓN DE CANFRANC",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-1-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "long-does-guided-tour-last",
+  "questionRef": "2021 OL Section L Q1(c)",
+  "questionText": "How long does a guided tour last?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "45 minutes",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA ESTACIÓN DE CANFRANC (CANFRANC TRAIN STATION)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA ESTACIÓN DE CANFRANC",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-2-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-jon-usa",
+  "questionRef": "2021 OL Section L Q2(a)",
+  "questionText": "Why did Jon go to the USA?\nTick (✓) the correct answer:\nto study\nto work\nto play tennis",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(√) to study",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL (INTERVIEW WITH JON RAHM, PROFESSIONAL GOLFER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "to study",
+   "to work",
+   "to play tennis"
+  ]
+ },
+ {
+  "id": "es-2021-ol-l-2-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "subject-did-kelley-study-university",
+  "questionRef": "2021 OL Section L Q2(b)",
+  "questionText": "What subject did Kelley study at university?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Biology",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL (INTERVIEW WITH JON RAHM, PROFESSIONAL GOLFER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-2-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "apart-from-golf-does-like",
+  "questionRef": "2021 OL Section L Q2(c)",
+  "questionText": "Apart from golf, what does he like to do? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "meet up with friends",
+      "go out for dinner",
+      "have fun",
+      "have a stress-free life"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4+4 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL (INTERVIEW WITH JON RAHM, PROFESSIONAL GOLFER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON JON RAHM, GOLFISTA PROFESIONAL",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-3-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-she-want-when-she-younger",
+  "questionRef": "2021 OL Section L Q3(a)",
+  "questionText": "What did she want to be when she was younger?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vet",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES (SPEAKING WITH THE SPANISH ACTRESS, ALBA FLORES)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-3-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "year-does-she",
+  "questionRef": "2021 OL Section L Q3(b)",
+  "questionText": "What year does she mention?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2017",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES (SPEAKING WITH THE SPANISH ACTRESS, ALBA FLORES)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-3-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "does-she-say-her-true-passion",
+  "questionRef": "2021 OL Section L Q3(c)",
+  "questionText": "What does she say is her true passion?\nTick (✓) the correct answer:\ncinema\nfashion\ntheatre",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(√) theatre",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES (SPEAKING WITH THE SPANISH ACTRESS, ALBA FLORES)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON LA ACTRIZ ESPAÑOLA, ALBA FLORES",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "cinema",
+   "fashion",
+   "theatre"
+  ]
+ },
+ {
+  "id": "es-2021-ol-l-4-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "ways-can-travel-this-route",
+  "questionRef": "2021 OL Section L Q4(a)",
+  "questionText": "Name three ways you can travel this route.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "on foot",
+      "by car",
+      "by bicycle",
+      "on horseback"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RUTA DEL QUIJOTE (THE ROUTE OF QUIJOTE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA RUTA DEL QUIJOTE",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-4-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "outdoor-activity-can",
+  "questionRef": "2021 OL Section L Q4(b)",
+  "questionText": "Mention one outdoor activity you can do.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "fishing",
+      "swimming",
+      "hiking/trekking"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RUTA DEL QUIJOTE (THE ROUTE OF QUIJOTE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA RUTA DEL QUIJOTE",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-4-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "foods-mentioned",
+  "questionRef": "2021 OL Section L Q4(c)",
+  "questionText": "Name two foods mentioned.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "cheese",
+      "wine",
+      "chickpeas",
+      "ham",
+      "soup",
+      "garlic",
+      "bread",
+      "eggs"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RUTA DEL QUIJOTE (THE ROUTE OF QUIJOTE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA RUTA DEL QUIJOTE",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-5-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "people-have-time-pet-opt-have",
+  "questionRef": "2021 OL Section L Q5(a)",
+  "questionText": "If people have time, what pet do they opt to have?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A dog",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LAS PLANTAS SON LAS NUEVAS MASCOTAS (PLANTS ARE THE NEW PETS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — LAS PLANTAS SON LAS NUEVAS MASCOTAS",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-5-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "rooms-mentioned",
+  "questionRef": "2021 OL Section L Q5(b)",
+  "questionText": "Name two rooms mentioned.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "kitchen",
+      "bedroom",
+      "bathroom"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LAS PLANTAS SON LAS NUEVAS MASCOTAS (PLANTS ARE THE NEW PETS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — LAS PLANTAS SON LAS NUEVAS MASCOTAS",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-5-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "first-thing-need-know-plant",
+  "questionRef": "2021 OL Section L Q5(c)",
+  "questionText": "What is the first thing you need to know about your plant?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(the) name",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LAS PLANTAS SON LAS NUEVAS MASCOTAS (PLANTS ARE THE NEW PETS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — LAS PLANTAS SON LAS NUEVAS MASCOTAS",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-5-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "type-plants-should-not-have",
+  "questionRef": "2021 OL Section L Q5(d)",
+  "questionText": "What type of plants should you not have?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plastic/fake",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LAS PLANTAS SON LAS NUEVAS MASCOTAS (PLANTS ARE THE NEW PETS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — LAS PLANTAS SON LAS NUEVAS MASCOTAS",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-6-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "day-date-this-weather-forecast",
+  "questionRef": "2021 OL Section L Q6(a)",
+  "questionText": "For what day and date is this weather forecast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wednesday",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "3rd October",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-6-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "minimum-temperatures-mentioned",
+  "questionRef": "2021 OL Section L Q6(b)",
+  "questionText": "What are the minimum temperatures mentioned?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-6-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "where-canary-islands-could-rain",
+  "questionRef": "2021 OL Section L Q6(c)",
+  "questionText": "Where in the Canary Islands could it rain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "South",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-7-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "sections-corte-ingles",
+  "questionRef": "2021 OL Section L Q7(a)",
+  "questionText": "Name three sections in El Corte Inglés.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "fashion",
+      "stationery",
+      "books",
+      "sports",
+      "supermarket"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL CORTE INGLÉS (THE DEPARTMENT STORE EL CORTE INGLÉS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — EL CORTE INGLÉS",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-7-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "additional-service",
+  "questionRef": "2021 OL Section L Q7(b)",
+  "questionText": "Mention one additional service.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "travel agency",
+      "hairdressers",
+      "postal service"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL CORTE INGLÉS (THE DEPARTMENT STORE EL CORTE INGLÉS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — EL CORTE INGLÉS",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-7-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "colour-corte-ingles-card",
+  "questionRef": "2021 OL Section L Q7(c)",
+  "questionText": "What colour is the El Corte Inglés card?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "green",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL CORTE INGLÉS (THE DEPARTMENT STORE EL CORTE INGLÉS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — EL CORTE INGLÉS",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2021-ol-l-7-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "can-get-free-with-this-card",
+  "questionRef": "2021 OL Section L Q7(d)",
+  "questionText": "What can you get for free with this card?\nTick (✓) the correct answer:\nhome delivery\nparking\ndiscounts",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(√) parking",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL CORTE INGLÉS (THE DEPARTMENT STORE EL CORTE INGLÉS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — EL CORTE INGLÉS",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2021 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2021 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "home delivery",
+   "parking",
+   "discounts"
+  ]
+ },
+ {
   "id": "es-2021-ol-a-1-a",
   "subjectId": "spanish",
   "level": "ordinary",
@@ -11447,6 +12643,351 @@
    ],
    "attribution": "SEC Spanish 2021 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2021-ol-b-1",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "topicId": "spanish-6-2",
+  "conceptId": "family-going-visit-cousins-wexford-letter",
+  "questionRef": "2021 OL Section B Q1",
+  "questionText": "You and your family are going to visit your cousins in Wexford. Write a letter / email in Spanish, to your friend María, who lives in Toledo. Use any five of the points mentioned below:\n‐ Tell María you are going to spend a week with your cousins in Wexford.\n‐ Describe the area where your cousins live.\n‐ Say what you plan to do there.\n‐ Describe one of your cousins.\n‐ Say what the weather is like there in summer.\n‐ Say what you did last summer.\n‐ Ask María what she likes to do during the summer holidays.\n‐ Give regards to her family, especially her sister Carmen.",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "There are five points to be communicated. Allow a maximum of 8 marks for each of these.",
+    "(0 – 8 marks may be awarded for each point.) If more than five points are answered, mark all and award the marks for the five highest scoring points.",
+    "(5 x 8m = 40 marks)",
+    "Communicative intention fulfilled.",
+    "Good level of vocabulary. Verb(s) correct. 7 - 8 marks",
+    "Communicative intention more or less fulfilled.",
+    "Quite good level of vocabulary. Verb(s) generally correct. 5 - 6 marks",
+    "Some communicative intention fulfilled.",
+    "There may be a few errors. 3 - 4 marks",
+    "Possible to extract some communicative intention. 1 -2 marks",
+    "No communicative intention fulfilled. 0 marks"
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-5",
+     "label": "Fifth point",
+     "maxMarks": 8,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   10
+  ],
+  "stem": "Letter / E‐mail",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section B Question 1 — answer in Spanish",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2021-ol-b-2-a",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "topicId": "spanish-6-4",
+  "conceptId": "staying-vigo-with-spanish-friend-luis",
+  "questionRef": "2021 OL Section B Q2(a)",
+  "questionText": "You are staying in Vigo, with a Spanish friend, Luis. Leave him a note, in Spanish, including any four of the following details:\n‐ Say there is a football match this afternoon.\n‐ Tell him you are going to the stadium with friends.\n‐ Ask him if he would like to come.\n‐ Say you have a ticket for him.\n‐ Tell him you are going to eat in a restaurant later.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Identical allocation in each case.",
+    "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+    "(0 to 5 marks may be awarded for each point.) If more than four points are answered, mark all and award the marks for the four highest scoring points.",
+    "(4 x 5m = 20 marks)",
+    "Message fully conveyed, no grammatical errors. 5 marks",
+    "Message more or less conveyed, some grammatical errors. 4 marks",
+    "Message partly comprehensible. 3 marks",
+    "Possible to extract some sense of message. 2 marks",
+    "Very small amount of message conveyed. 1 mark",
+    "No communication of message. 0 marks"
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   10
+  ],
+  "stem": "Answer (a) or (b).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section B Question 2 (a) — answer in Spanish",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Spanish 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2021-ol-b-2-b",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "topicId": "spanish-6-3",
+  "conceptId": "school-alicante-weeks-diary-entry-spanish",
+  "questionRef": "2021 OL Section B Q2(b)",
+  "questionText": "You are in a school in Alicante for two weeks. Write a diary entry, in Spanish, including any four of the following details:\n‐ Describe what the school is like.\n‐ Say you are very happy. Explain why.\n‐ Say you are speaking a lot of Spanish.\n‐ Mention one thing you don’t like about the school.\n‐ Say what you do every day.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Identical allocation in each case.",
+    "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+    "(0 to 5 marks may be awarded for each point.) If more than four points are answered, mark all and award the marks for the four highest scoring points.",
+    "(4 x 5m = 20 marks)",
+    "Message fully conveyed, no grammatical errors. 5 marks",
+    "Message more or less conveyed, some grammatical errors. 4 marks",
+    "Message partly comprehensible. 3 marks",
+    "Possible to extract some sense of message. 2 marks",
+    "Very small amount of message conveyed. 1 mark",
+    "No communication of message. 0 marks"
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   10
+  ],
+  "stem": "Answer (a) or (b).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section B Question 2 (b) — answer in Spanish",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Spanish 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
   }
  },
  {
