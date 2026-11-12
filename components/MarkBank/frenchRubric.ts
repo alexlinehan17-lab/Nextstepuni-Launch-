@@ -52,6 +52,7 @@ export function frenchMarks(card: SecRubricCard, scores: FrenchScores): number {
   if (card.rubric.allocation) return frenchAllocationMarks(card.totalMarks, card.rubric.allocation, scores);
   return card.rubric.criteria.reduce((total, criterion) => {
     if (criterion.requiresAttempt && scores[FRENCH_ATTEMPT_ID] !== 1) return total;
+    if (criterion.zeroWhenZero && (scores[frenchScoreId(criterion.zeroWhenZero)] ?? 0) === 0) return total;
     const selected = scores[frenchScoreId(criterion.id)] ?? 0;
     return total + (criterion.permittedMarks.includes(selected) ? selected : 0);
   }, 0);
