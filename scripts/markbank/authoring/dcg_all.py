@@ -64,7 +64,7 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 # yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
           | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
-             (2016, 'hl'), (2016, 'ol')})
+             (2016, 'hl'), (2016, 'ol'), (2015, 'hl')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -160,8 +160,7 @@ def pair(units, leaves, texts):
     # "(b) Interpenetration" over two priced sub-heads, each read as a unit
     # lettered (b). The letters agree with the paper once each is counted
     # where it is first printed.
-    lettered = list(dict.fromkeys(u.letter for u in units if u.letter))
-    if units[0].letter and lettered == paper_letters:
+    if by_address(units, leaves):
         out, letter = [], None
         for u in units:
             letter = u.letter or letter
@@ -224,6 +223,14 @@ def pair(units, leaves, texts):
         else:
             j += 1
     return [(units[k], out[k]) for k in range(m)]
+
+
+def by_address(units, leaves):
+    """Do both documents letter the same parts in the same order, so that an
+    unlettered head belongs to the letter printed above it?"""
+    paper_letters = list(dict.fromkeys(k[2] for k in leaves if k[2]))
+    lettered = list(dict.fromkeys(u.letter for u in units if u.letter))
+    return bool(units) and bool(units[0].letter) and lettered == paper_letters
 
 
 # --------------------------------------------------------------- citations
@@ -315,7 +322,9 @@ def card_id(year, level, section, q, covered, ordinal, many):
 SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
 ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})(?:\s*-\s*(\d{1,2}))?\s*$',
                        re.I)
-COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})$')
+# "(4×1)"; 2015 Higher A-1(b) adds what is counted: "(3 x 1 for each
+# surface)".
+COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})(?:\s+for\s+each\s+[a-z]+)?$')
 LABELLED = re.compile(r'^([A-Za-z]+)\s*=\s*(\d{1,2})$')
 # "Projections from elevation (2) and plan (2)": the step names its parts.
 NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
@@ -716,7 +725,10 @@ def author(bind_figures=True):
                 for _u, cov in pairing)
 
             question_carded = False
+            addressed = by_address(unit_list, mine)
+            scope = None
             for index, (unit, covered) in enumerate(pairing, 1):
+                scope = unit.letter or scope
                 ref = ref_for(year, level, section, q, covered, leaves)
                 base = card_id(year, level, section, q, covered, 1, False)
                 many = per_address[tuple(covered)] > 1
@@ -739,6 +751,15 @@ def author(bind_figures=True):
                 elif score >= CUE_FLOOR:
                     wording += 1
                 elif unit.letter and any(unit.letter == k[2] for k in covered):
+                    letter_only += 1
+                elif addressed and scope and all(k[2] == scope
+                                                 for k in covered):
+                    # An unlettered head printed under its letter, where the
+                    # two documents letter the same parts: 2015 Higher B-1
+                    # prices (a) under "Outline Plan and Elevation", then
+                    # "Outline auxiliary view" and "Plan of elliptical
+                    # transmission area" beneath it. Its address is the
+                    # letter the SEC printed above it, not its order.
                     letter_only += 1
                 else:
                     order_only += 1

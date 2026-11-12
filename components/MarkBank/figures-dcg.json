@@ -1,4 +1,136 @@
 {
+ "dcg-2015-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A 3D graphic of a display box of chocolate eggs based on a truncated prism, the incomplete pictorial projection of a square-based prism cut by the oblique plane VTH, and its incomplete orthographic projection on XY with the traces VT and TH.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "eb07383b43e93e70e385dad23325fe7e",
+  "questionRef": "2015 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secA-q1-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of the FIFA Club World Cup trophy, a small outline elevation of it showing the parabolic curves AB and CD, the circle tangential to them at P and Q, and the incomplete outline elevation with the vertices V1 and V2 and the focal points F1 and F2.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b696a50172a419dca8716e2c0dcdc441",
+  "questionRef": "2015 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secA-q2-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A 3D graphic of a sculpture of intersecting planes on a wooden base, beside the elevation on XY and the plan of the two intersecting planes ABC and ADE.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "04dc258eeec01de02b1c3bf8c614011b",
+  "questionRef": "2015 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secA-q3-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of the Derry Peace Bridge at night, beside the elevation and plan of the skew lines AB and CD representing its two inclined pylons.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "2345c3eb40fbb5fc25378367d26f2f4d",
+  "questionRef": "2015 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secA-q4-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of a satellite beaming a signal to earth, and Fig. B-1: the plan, elevation and an auxiliary view on X1Y1 of a model of the earth (diameter 90, 20 above and below XY) with the satellite S, the 30 degree beam angle, the 150 distance, and the 15 and 45 degree angles. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "f0be011185c8dc176c889f9b0c6e155d",
+  "questionRef": "2015 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secB-q1-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A 3D graphic of an exterior light and a pictorial view of a hexagonal prism penetrating a square-based pyramid, and Fig. B-2: the axes X, Y and Z with the triangle abc and its 120 degree angles, the incomplete isometric projection, the incomplete elevation (15, 30, 15) and the plan (110 across). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b541ba548648b7a24480575dfde4592e",
+  "questionRef": "2015 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secB-q2-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of a greenhouse, and Fig. B-3: a pictorial view of the structure with its door and roof window open, its elevation on XY (1.5m bays, 2.25m eaves, 35 degree roof) and its plan (4.5m by 6m, in 1.5m bays) with the corner A and the spectator S at 45 degrees. Scale 1:50.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "17dace6d9d8c2a90351e78d1fe76b57d",
+  "questionRef": "2015 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secB-q3-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text with its bulleted specifications, and an aerial photograph of hilly countryside with a road; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "4b8331cb99498ad4e076387571ecdbc4",
+  "questionRef": "2015 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q1-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, photographs of a tube of potato crisps and of crisps, and Fig. C-2: the elevation of the hyperbolic paraboloid crisp ABCD on XY (25 high) and its elliptical plan (75 across, with a 35 degree angle) with the elements in both directions. Scale 2:1 (enlarged scale).",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "2a7dd3927d412bd9e26582c0fdced26e",
+  "questionRef": "2015 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q2-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a modern church with steep roof planes, and Fig. C-3: the elevation on XY (12m and 4m) with the surfaces A and C and the points P and Q, and the square plan (14.4m, set at 55 degrees) with the surfaces A and B. Scale 1:200.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "9e21f02a482a56f437d3250c2999da4f",
+  "questionRef": "2015 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q3-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of the Tipping Point game machine and Fig. C-4(a), the crank OA and the link mechanism with the points A, B, C and D (98, 84 and 21; OA 35mm, AB and BC 112mm); part (b): the cam motion in three bullets, a photograph of a radial plate cam, and Fig. C-4(b), the cam with its knife edge follower, R42 arcs and the 0, 90, 270 degree and 30 degree positions. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "4ff23cd741e2e88e91bd521636218603",
+  "questionRef": "2015 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q4-art.png",
+  "year": 2015
+ },
+ "dcg-2015-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, the question text, Fig. C-5: dimensioned details of the seven numbered parts of a bench mounted nutcracker with the section line A-A on the base, an exploded 3D graphic of the parts with the four return springs, and the parts list naming Base, Moving Jaw, Spindle, Pan Head Screw, Vertical Slide Rod, Off-centre Circular Cam Handle and Spindle Mount with their quantities.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b2843f05ed845199c64f4cdba0ad5151",
+  "questionRef": "2015 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q5-art.png",
+  "year": 2015
+ },
  "dcg-2016-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. Photographs of a set of traffic lights and of a curved metal shade from them, beside the circular end view and the elevation of the truncated cylindrical shade with the point P, and the incomplete surface development projected beneath the elevation.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
