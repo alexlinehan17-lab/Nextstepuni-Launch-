@@ -260,8 +260,12 @@ def build():
             if slot == '3C' and i == 3:
                 card['criteria'][0]['permittedMarks'] = [0,4,6]
                 card['criteria'][0]['guidance'] += [
-                    '6 mharc: N’fheadar (in aon chor) (cá dtéann sí); Bailíonn sí léi (de sciuird); líne1+2 as Véarsa2; líne3+4 as Véarsa2.',
-                    '4 mharc: líne2+3 le chéile; Véarsa2 iomlán. 0 marc: líne2 leis féin.']
+                    # Scheme p6, Ceist 3 (c) Mír3, in its own words ("Líne 1+2 as Véarsa a dó", "4 Marc (pionós -2) ar line 2+3
+                    # le chéile", "… ar an Véarsa iomlán"): the lift check had dropped our shorthand for them, and with it the
+                    # answers the scheme accepts at 6 and 4 (coordinator, 12 Nov: every printed award is a claimable row).
+                    '6 mharc: N’fheadar (in aon chor) (cá dtéann sí); Bailíonn sí léi (de sciuird); Líne 1+2 as Véarsa a dó; Líne 3+4 as Véarsa a dó.',
+                    '4 mharc: line 2+3 le chéile; an Véarsa iomlán.',
+                    '0 marc: líne2 leis féin.']
             reading_cards[slot].append(card)
 
     def combine(key,ref,members,pool_quote):
