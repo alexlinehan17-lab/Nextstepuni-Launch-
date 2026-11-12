@@ -52,8 +52,8 @@ import cardlint                                              # noqa: E402
 import dcg_paper as DP                                       # noqa: E402
 import dcg_topics as DT                                      # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from dcg_scheme import (CUE_FLOOR, DcgScheme, cue_score,     # noqa: E402
-                        has_scheme)
+from dcg_scheme import (CUE_FLOOR, DcgScheme, Unit,          # noqa: E402
+                        cue_score, has_scheme)
 
 SUBJECT = 'dcg'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
@@ -65,7 +65,7 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
           | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
              (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
-             (2014, 'hl'), (2014, 'ol'), (2013, 'hl')})
+             (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -697,10 +697,22 @@ def author(bind_figures=True):
             presentation = [step for step in (
                 S.questions[qkey].trailer if qkey in S.questions else [])
                 if PRESENTATION.match(step.text)]
-            for step in (S.questions[qkey].trailer if qkey in S.questions
-                         else []):
-                if step in presentation:
-                    continue
+            # A question asked WHOLE that the scheme prices with no head at
+            # all: its romans follow "QUESTION A-3" straight away (2013
+            # Ordinary A-3; also 2011 Higher A-3, 2012 Higher A-3, 2012
+            # Ordinary A-4). The steps are the question's own unit, titled by
+            # the scheme's heading, at the sum of the marks printed against
+            # them (the question's printed "Total =", less Presentation).
+            loose = [step for step in (S.questions[qkey].trailer
+                                       if qkey in S.questions else [])
+                     if step not in presentation]
+            if not unit_list and loose and len(mine) == 1:
+                whole = Unit(None, f'Question {section}-{q}',
+                             sum(step.marks for step in loose))
+                whole.steps = list(loose)
+                unit_list = [whole]
+                loose = []
+            for step in loose:
                 reason = ('the scheme prices this step on the QUESTION, '
                           'under no part the paper asks')
                 refused[reason] += 1

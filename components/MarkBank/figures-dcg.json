@@ -131,6 +131,138 @@
   "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q5-art.png",
   "year": 2013
  },
+ "dcg-2013-OL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph in a truncated hexagonal pyramid frame, beside the incomplete elevation on XY and hexagonal plan of a similar pyramid cut by the oblique plane VTH, and an auxiliary elevation on X1Y1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "8e1f127335a3d39f30ee8295737b9700",
+  "questionRef": "2013 OL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secA-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a toaster with a thought bubble of its outline, beside the plan of a similar toaster and a partially completed perspective view, with the picture plane PP, the vanishing points VP1 and VP2 and the ground line GL.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "e1dae5e034b7c97e9a1e1f12710a1faf",
+  "questionRef": "2013 OL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secA-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A 3D graphic of a toy box with a label wrapped around it, beside the elevation and the square plan of the box set at 45 degrees, and the label shown before it is wrapped, with arrows showing it being folded round.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "16cb8bc7ad95bf1fe08128945c627a03",
+  "questionRef": "2013 OL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secA-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of a parabolic water fountain in Sweden, beside the rectangle ABCD with the vertex V and a portion of the parabola drawn from it.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "a2f7f659df824cdc146b04d3f1795449",
+  "questionRef": "2013 OL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secA-q4-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A 3D graphic of a conductor at a music stand, and Fig. B-1: an isometric view of the stand with its dimensions (80, 30 degrees, 20, 120, 15, 13, 80, 63 and 30 degrees), the surface A, and the arrow giving the direction of the elevation. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "46798d086aad353ac383ef9f74df7fe8",
+  "questionRef": "2013 OL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secB-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of a cordless phone in its charging unit, and Fig. B-2: the triangle abc with the axes X, Y and Z at 30 degrees, the end view of the unit (50, 20, 10, 30, 10 and 60 degrees), the incomplete isometric projection, and the plan (106 across; 10, 30, 50 and 50 at 45 degrees). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "aebb42a77cfe6cb23e530837ace7cdf3",
+  "questionRef": "2013 OL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secB-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A 3D graphic of a wall intersecting a pillar, and Fig. B-3: the end of the wall (50, 15, 70 and 30), the incomplete elevation on XY (20, 20 and 100) and the plan with the pillar (66 by 115) at 45 degrees. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "46555bc1add0527f4273bac890a92f71",
+  "questionRef": "2013 OL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secB-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "808bef6c9f4735edfc155f784751397d",
+  "questionRef": "2013 OL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secC-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, photographs of a cufflink with a hyperbolic paraboloid face, and Fig. C-2: the elevation on XY of the surface ABCD (100 and 30) and its plan (44 and 76, with a 45 degree angle at C) with the elements. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "22d2d0f1b738e2f02c4a82980012ab16",
+  "questionRef": "2013 OL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secC-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a 3D graphic of a table lamp with a blue lampshade, and Fig. C-3: the elevation of the lampshade (30 across the top, R50 arcs, 70 high, 15 and 15, 15 and 50) and its plan (80 by 50). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "039b97a4f66d37640bafae8eced48334",
+  "questionRef": "2013 OL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secC-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, a photograph of a motorbike with its engine circled and enlarged, the cam motion in three bullets, parts (a) and (b) with (b)'s three bullets, and Fig. C-4, a 3D graphic of the cam. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "a5774a644aef67b600edd4e6e4d5adf2",
+  "questionRef": "2013 OL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secC-q4-art.png",
+  "year": 2013
+ },
+ "dcg-2013-OL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a bicycle repair stand with its clamp circled, the question text, Fig. C-5: dimensioned views of the bottom clamp jaw (1) with the section line A-A, the top clamp jaw (2), the clamping screw (3), the M8 bolt (4) and the M8 hex nut (5), the parts list naming them with their quantities, and a 3D graphic of the parts.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "ebe7ecc343eda008b7e7f899d419ddcd",
+  "questionRef": "2013 OL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-OL-paper-secC-q5-art.png",
+  "year": 2013
+ },
  "dcg-2014-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a goalkeeper diving at a penalty kick, beside the elevation and plan on XY of a set of goal posts, the ball at P, and the lines PS and PT showing the start of the two flight paths.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
