@@ -692,6 +692,16 @@ function spanishGridFault(c, scheme) {
       if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
     }
   }
+  // A criterion zeroed by another's 0 names a criterion of this card, and the
+  // card carries the scheme's printed rule ("… no marks are awarded for Content
+  // … no marks will be awarded for Language"), itself traced below.
+  for (const k of criteria) {
+    if (!k.zeroWhenZero) continue;
+    if (k.zeroWhenZero === k.id || !criteria.some(other => other.id === k.zeroWhenZero)) return `${k.label} is zeroed by a criterion the card does not have`;
+    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for Language\b/i.test(line))) {
+      return `${k.label} is zeroed by ${k.zeroWhenZero} but the card prints no such rule`;
+    }
+  }
   if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
   const lifted = [
     ...r.taskRequirements,

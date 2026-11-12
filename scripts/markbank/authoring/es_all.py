@@ -67,6 +67,14 @@ LEVELS = ('hl', 'ol')
 # once its cards have been read against the paper and the scheme.
 CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
     (2026, 'hl'), (2026, 'ol'), (2020, 'ol'), (2020, 'hl'),
+    (2019, 'hl'),
+    (2019, 'ol'),
+    (2018, 'hl'),
+    (2018, 'ol'),
+    (2017, 'hl'),
+    (2017, 'ol'),
+    (2016, 'hl'),
+    (2016, 'ol'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -74,15 +82,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -637,7 +645,7 @@ def _writing(year, level, P, section, q, letter):
         if level == 'hl':
             g = W.grid_c(year, level, q, letter)
             requirements = (g['lead'] + g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
-                            + g['direction'])
+                            + g['notes'] + g['direction'])
             note = '\n'.join(g['guidelines'])
         else:
             g = W.grid_ol_b(year, level, q, letter)
@@ -715,6 +723,19 @@ def _direction_rows(ask, language, rule):
     if ask.total is None:
         return None
     printed = [t for t, _m in (ask.points or [])] + list(ask.notes or [])
+    lines = [' '.join(l.split()) for l in (ask.answer_lines or []) if l and l.strip()]
+    if len(ask.points or []) == 1 and len(lines) > 1:
+        # Quoted line by line, as the scheme sets them: 2017 Higher prints
+        # "for any 4 relevant points" / "Discussion of one character 3 + 3m"
+        # / "Discussion of second character 3 + 3m" / …, a line going on in
+        # lower case being the one before it wrapped.
+        quoted_lines = []
+        for l in lines:
+            if quoted_lines and l[:1].islower():
+                quoted_lines[-1] = f'{quoted_lines[-1]} {l}'
+            else:
+                quoted_lines.append(l)
+        printed = quoted_lines + list(ask.notes or [])
     if not printed:
         return None
     m = next((ANY_MARK.search(t) for t in printed if ANY_MARK.search(t)), None)
@@ -749,8 +770,10 @@ ANSWER_LABEL = re.compile(r'\s+(?=[A-Z][a-z]{1,8}\.?\??:\s)')
 ROMAN_MARK = re.compile(r'\s*\((?:i|ii|iii|iv|v)\)\s*')
 
 
-PRICE_BRACKET = re.compile(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]')
-NOTE_BRACKET = re.compile(r'\[(?!\s*\d{1,2}\s*m(?:arks?)?\s*\])[^\]]*\]')
+# 2016-2019 also print the figure alone: "Las colas [3] y los retrasos [2] (en las
+# fronteras de los países) (3+2m)" (2018 Ordinary Q1(h)).
+PRICE_BRACKET = re.compile(r'\[\s*(\d{1,2})\s*(?:m(?:arks?)?)?\s*\]')
+NOTE_BRACKET = re.compile(r'\[(?!\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\])[^\]]*\]')
 
 
 def _bracketed(raw, text, marks):
@@ -769,9 +792,9 @@ def _bracketed(raw, text, marks):
     if not raw or not PRICE_BRACKET.search(raw):
         return None
     clean = NOTE_BRACKET.sub(' ', raw)
-    gap = r'\s*(?:\[\s*\d{1,2}\s*m(?:arks?)?\s*\]\s*)?'
+    gap = r'\s*(?:\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]\s*)?'
     words = text.split()
-    m = re.search(gap.join(map(re.escape, words)) + r'(?:\s*\[\s*\d{1,2}\s*m(?:arks?)?\s*\])?',
+    m = re.search(gap.join(map(re.escape, words)) + r'(?:\s*\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\])?',
                   clean)
     if not m or not PRICE_BRACKET.search(m.group(0)):
         return None
@@ -780,7 +803,12 @@ def _bracketed(raw, text, marks):
              for i in range(0, len(segs) - 1, 2)]
     rest = ' '.join(segs[-1].split()).strip(' ,;.')
     used = sum(n for _t, n in parts)
-    if rest:
+    if rest and used == marks and parts and re.fullmatch(r'\([^()]*\)', rest):
+        # Words the scheme accepts but does not require, printed after the
+        # last bracket: they belong to the last component ("… y los retrasos
+        # [2] (en las fronteras de los países)").
+        parts[-1] = (f'{parts[-1][0]} {rest}', parts[-1][1])
+    elif rest:
         if marks - used <= 0:
             return None
         parts.append((rest, marks - used))
@@ -789,6 +817,69 @@ def _bracketed(raw, text, marks):
     if len(parts) < 2 or not all(t for t, _n in parts):
         return None
     return parts
+
+
+# 2016-2019 also price a component of ONE answer in a ROUND bracket set inside
+# the line: "Thousands of Cubans lined the quay (1m) full of joy (1m) making
+# everyone feel welcome in their country (1m). (3m)" (2017 Higher Q1(b)).
+PRICE_ROUND = re.compile(r'\(\s*(\d{1,2}(?:\s*\+\s*\d{1,2})*)\s*m\s*\)')
+
+
+def _round_components(ask):
+    """[(component, [terms])] where the scheme prices the parts of one answer
+    in round brackets inside its printed line, or None.
+
+    Each bracket closes a component at its own figures ("(1 + 1m)" is one
+    component worth 1 and 1 more); what follows the last bracket is priced at
+    what the part's printed tariff leaves: 2018 Higher Q1(a) "People share
+    their food with pets (2m) (for example) Two of: (a bit of) bread, omelette
+    or chicken (so they can taste it too) (4m)" is 2, and the 2 the tariff
+    leaves.
+    """
+    raw = ' '.join((ask.raw or '').split())
+    if not raw or not PRICE_ROUND.search(raw) or ask.total is None:
+        return None
+    if len(ask.points or []) > 1:
+        return None        # answers the scheme already prices one to a line
+    if (not ask.quota and ask.points and len(ask.terms or []) > 1
+            and _separate_answers(ask.points[0][0], len(ask.terms))):
+        return None        # answers the line's own separators already cut apart
+    segs = PRICE_ROUND.split(raw)
+    parts = []
+    for i in range(0, len(segs) - 1, 2):
+        text = segs[i].strip(' ,;')
+        terms = [int(t) for t in re.findall(r'\d{1,2}', segs[i + 1])]
+        if not text:
+            return None
+        parts.append((text, terms))
+    rest = segs[-1].strip(' ,;.')
+    used = sum(sum(t) for _x, t in parts)
+    if rest:
+        if ask.total - used <= 0:
+            return None
+        parts.append((rest, [ask.total - used]))
+    elif used != ask.total:
+        return None
+    if len(parts) < 2:
+        return None
+    return parts
+
+
+def _round_component_row(ask, parts, note):
+    """One criterion row: each component claimed at the values its own
+    bracket prints, the row at their sums."""
+    out = []
+    for i, (text, terms) in enumerate(parts, start=1):
+        steps = [0]
+        for t in terms:
+            steps.append(steps[-1] + t)
+        out.append({'id': f'p{i}', 'verbatim': text, 'marks': steps[-1], 'permittedMarks': steps})
+    sums = {0}
+    for p in out:
+        sums = {x + y for x in sums for y in p['permittedMarks']}
+    return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': ' '.join(t for t, _n in parts),
+             'marks': ask.total, 'permittedMarks': sorted(sums), 'parts': out,
+             'contextNote': note}]
 
 
 def _component_row(rid, text, marks, parts, note=None):
@@ -805,6 +896,9 @@ def _component_row(rid, text, marks, parts, note=None):
     return row
 
 
+INLINE_COUNT = re.compile(r'\b(?:one|two|three|four|five)\s+of\s*\)?\s*:', re.I)
+
+
 def _separate_answers(text, n):
     """The n answers one printed line holds, cut where the scheme separates
     them, or None where it prints one answer whose marks it splits.
@@ -815,7 +909,15 @@ def _separate_answers(text, n):
     18 (2+2m)"); romans ("(i) has the most days of sun in Europe (ii) cheap
     (2+1m)"); commas ("Children, elderly, people with illnesses (2+2+2m)").
     Each piece is a slice of the scheme's line, never reworded.
+
+    A line that states a count of its own is never cut inside the list the
+    count is over: 2019 Higher listening Q1(a) "150 members (including) two
+    of: men, women and children (2+2m)" pays the count over the list after it,
+    and a cut at the comma would make "men" one answer and "women and
+    children" another. A cut BEFORE the count stands: 2021 Higher listening
+    Q4(d) "It was eaten at the time (of the book); (made) with two of: …".
     """
+    counted = INLINE_COUNT.search(text)
     cuts = (
         [p.strip() for p in text.split(';')],
         ANSWER_LABEL.split(text),
@@ -826,9 +928,18 @@ def _separate_answers(text, n):
         # is one answer.
         [p for p in text.split(' and ')] if all(
             len(p.split()) <= 2 for p in text.split(' and ')) else [],
+        # Whole sentences, each closed by its full stop: 2019 Higher listening
+        # Q7(a) "It is the series that has won the most awards in the history
+        # of television." / "It is a cultural phenomenon (of the 21st
+        # Century). (2+1m)".
+        re.split(r'(?<=\.)\s+(?=[A-Z])', text) if text.rstrip().endswith('.') else [],
     )
     for pieces in cuts:
-        pieces = [p.strip() for p in pieces if p and p.strip()]
+        # A roman cut leaves the comma that closed the answer before it: "(i)
+        # It will cost half the price, (ii) no stress/ without stress (1+1m)".
+        pieces = [p.strip().rstrip(',').strip() for p in pieces if p and p.strip()]
+        if counted and not INLINE_COUNT.search(pieces[-1] if pieces else ''):
+            continue
         if len(pieces) == n:
             return pieces
     return None
@@ -978,12 +1089,16 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
         # A bracket that only states a price ("[2m]", "[1+1m]") is already on
         # the row as its marks; quoting it again says nothing.
         notes = [n for n in notes if not re.fullmatch(
-            r'\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*m(?:arks?)?\s*', n, re.I)]
+            r'\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m(?:arks?)?)?\s*', n, re.I)]
     if notes:
         note += (' The scheme adds: '
                  + '; '.join(f'“{n}”' for n in notes[:3]) + '.')
     if ask.total is None or not ask.terms:
         return None
+    if stepped:
+        parts = _round_components(ask)
+        if parts:
+            return _round_component_row(ask, parts, note)
     if ask.quota:
         if not ask.options:
             return None
@@ -1036,7 +1151,11 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
         sums = {0}
         for _t, m in ask.bracket_parts:
             sums |= {x + m for x in sums}
-        return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': points[0][0],
+        # The row reads as its components do: 2018 Higher listening Q4(a)
+        # prices "(i) Instagram has … [1m]" and "(ii) It is the most …
+        # [2m]", and its numbering stays where the scheme prints it.
+        return [{'id': 'r-1', 'kind': 'criterion',
+                 'verbatim': ' '.join(t for t, _m in ask.bracket_parts),
                  'marks': ask.total, 'permittedMarks': sorted(sums),
                  'parts': parts, 'contextNote': note}]
     if stepped and len(points) == 1 and not ask.bracket_parts:
