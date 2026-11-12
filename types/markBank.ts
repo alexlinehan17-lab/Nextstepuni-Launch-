@@ -1295,6 +1295,10 @@ export interface FrenchCriterion {
   bands?: { label: string; marks: number[]; guidance: string[] }[];
   /** The SEC withholds language marks if no communicative task is attempted. */
   requiresAttempt?: boolean;
+  /** The id of another criterion whose 0 forces this one to 0, where the scheme
+   *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
+   *  rule; absent on every card that prints none. */
+  zeroWhenZero?: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a
