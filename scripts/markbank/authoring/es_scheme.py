@@ -239,7 +239,8 @@ GRID_C = re.compile(r'^(?:Question\s+|Q\s*\.\s*)([12])\s*\.?\s*\(?\s*([ab])\s*\)
                     re.I)
 GRID_OL_B1 = re.compile(r'^Q\s*\.?\s*1\s*\.\s*LETTER\s*:', re.I)
 # 2016 prints "Q.2 (a) NOTE Q.2 (b) DIARY ENTRY 20 marks", no point after the 2.
-GRID_OL_B2 = re.compile(r'^Q\s*\.?\s*2\s*\.?\s*\(\s*a\s*\)\s*NOTE\b', re.I)
+# 2015 names the note a MESSAGE: "Q.2.(a) MESSAGE Q.2.(b) DIARY ENTRY 20 Marks".
+GRID_OL_B2 = re.compile(r'^Q\s*\.?\s*2\s*\.?\s*\(\s*a\s*\)\s*(?:NOTE|MESSAGE)\b', re.I)
 
 # SEC misprints, keyed by the sitting and never repaired by a heuristic.
 MISPRINTS = {
@@ -267,6 +268,13 @@ LAYOUTS = {
     # ahead of its menu, priced (3+3m): the answer 3, the menu 3 for all three.
     (2018, 'hl'): [('(iii) (a) more emphasis on domestic animals like dogs/ ponies\n(b) Three of: traditional acts/',
                     '(iii) more emphasis on domestic animals like dogs/ ponies;\nThree of: traditional acts/')],
+    # 2015 Higher Question 2(b)(ii) numbers its two answers "(a)" and "(b)"
+    # inside the roman part, priced (2+2 marks): read as the two answers they
+    # are, each on its own line.
+    (2015, 'hl'): [("(ii) (a) It’s the company which has been in charge of the Christmas lights\n"
+                    "for the past 45 years.\n(b) It will pay the costs. (2+2 marks)",
+                    "(ii) - It’s the company which has been in charge of the Christmas lights\n"
+                    "for the past 45 years.\n- It will pay the costs. (2+2 marks)")],
 }
 
 
@@ -289,6 +297,14 @@ MENU_CUTS = {
                                       'a better education to abandoned/orphaned children'),
 }
 
+
+# A menu's first line that is the subject of the answers under it, not an
+# answer: 2015 Higher Section B Q4(c) "Two of:" / "the (Federation of)
+# Parents" / "doesn't see any benefits for students" / "says parents would …".
+# Quoted on the card as a note.
+MENU_LEADS = {
+    (2015, 'hl', 'B', 4, 'c', None): 'the (Federation of) Parents',
+}
 
 # "One of:" lists printed on one line (coordinator ruling, 12 Nov 2026): each
 # item the scheme separates is an answer of its own, cut at the separator the
@@ -348,11 +364,35 @@ ONE_OF_CUTS = {
     (2024, 'ol', 'A', 4, 'b', None): '/',
     (2024, 'ol', 'A', 4, 'd', None): '/',
     (2024, 'ol', 'A', 4, 'e', None): '/',
+    (2015, 'hl', 'A2', None, 'a', 'ii'): '/',
+    (2015, 'ol', 'L', 3, 'c', None): '/',
+    (2015, 'ol', 'L', 4, 'c', None): '/',
+    (2015, 'ol', 'L', 5, 'a', None): ',',
+    (2015, 'ol', 'L', 5, 'c', None): '/',
+    (2015, 'ol', 'L', 7, 'd', None): '/',
+    (2014, 'hl', 'L', 3, 'b', None): ',',
+    (2014, 'ol', 'L', 2, 'b', None): ',',
+    (2014, 'ol', 'L', 4, 'c', None): ',',        # "builders/bricklayers" is one answer
+    (2014, 'ol', 'L', 5, 'b', None): ',',        # "Feria de Agosto/August fair" is one
+    (2014, 'ol', 'L', 5, 'c', None): ',',
+    (2014, 'ol', 'L', 7, 'c', None): ',',        # "breathing /respiratory complications" is one
+    (2014, 'ol', 'A', 3, 'b', None): '/',
+    (2013, 'ol', 'L', 5, 'b', None): '/',
+    (2013, 'ol', 'L', 5, 'c', None): '/',
+    (2013, 'ol', 'L', 7, 'd', None): ('photos', 'videos', 'messages.'),   # "photos, videos and messages."
+    (2013, 'ol', 'A', 2, 'e', None): '/',
+    (2012, 'hl', 'L', 2, 'b', None): '/',
+    (2012, 'hl', 'L', 7, 'b', None): '/',
+    (2012, 'ol', 'L', 3, 'd', None): '/',
+    (2012, 'ol', 'L', 4, 'c', None): '/',
+    (2012, 'ol', 'L', 6, 'c', None): '/',
 }
 ONE_OF_KEPT = {
     # "protects us from (chronic) diseases/illnesses like Parkinson's/
     # Alzheimer's/ (many types of) cancer": one benefit, its slashes inside it.
     (2016, 'ol', 'A', 3, 'a', None),
+    # "by taking selfies / photos": one answer, the slash between two words for it.
+    (2015, 'ol', 'L', 4, 'd', None),
 }
 
 
@@ -875,9 +915,15 @@ class EsScheme:
                 own_terms = line_terms[last]
                 kept = [k for k in stripped[:last + 1] if k] + after
             elif (self.year <= OLD_LETTERS_LAST and last is not None and after
-                  and last == next(iter(answer_at), None)
-                  and all(ANSWER_START.match(k) for k in after)
-                  and 1 < len(line_terms[last]) < len(after) + 1):
+                  and ((last == next(iter(answer_at), None)
+                        and all(ANSWER_START.match(k) for k in after)
+                        and 1 < len(line_terms[last]) < len(after) + 1)
+                       # undashed, one answer to a line: 2015 Higher literature
+                       # Q3 "Pays bill in restaurant. (4+3+3 marks)" / "Leaves a
+                       # tip [2] of 100 million" / "Buys new 'shoes' (skis)"
+                       or (last == 0 and not answer_at and stripped[0].rstrip().endswith('.')
+                           and all(re.match(r'^[A-ZÁÉÍÓÚÑ]', k) for k in after)
+                           and 1 < len(line_terms[last]) <= len(after) + 1))):
                 # A menu with no count of its own, priced on its first answer:
                 # 2017 Higher literature Q3 "- He eats the wafer / cone first
                 # (4+3+3m)" over four more dashed answers. The tariff prices
@@ -986,7 +1032,17 @@ class EsScheme:
                 answers.append(s_)
         answers = [INLINE_TARIFF.sub('', a).strip() for a in answers]
         answers = [a for a in answers if a]
+        bare = [' '.join(l.split()) for l in rest if l and l.strip()]
         if (self.year <= OLD_LETTERS_LAST and not quota and terms and len(terms) >= 2
+                and not marked and len(bare) == len(terms) + 1 and bare[0].endswith(':')
+                and all(l.count('(') == l.count(')') for l in bare)):
+            # A lead-in over undashed answers, one to a line: 2015 Higher
+            # Section B Q4(b) "Reductions in costs of:" / "electricity" /
+            # "water" / "catering/canteen services. (2+2+1 marks)".
+            notes.append(bare[0])
+            answers = bare[1:]
+            marked = len(answers)     # each line an answer, priced in order
+        elif (self.year <= OLD_LETTERS_LAST and not quota and terms and len(terms) >= 2
                 and marked == len(terms) and len(answers) == marked + 1
                 and rest and not ANSWER_START.match(rest[0])):
             # An undashed lead-in over dashed answers, each priced: 2017
@@ -1030,6 +1086,10 @@ class EsScheme:
                                   # listening Q3(c) "he got to know Marta" / "and
                                   # all her friends." (coordinator ruling, 12 Nov)
                                   or (re.match(r'^(?:and|y)\s', l) and not prev.endswith('.'))
+                                  # words in brackets the line above accepts:
+                                  # "… for the labour market/workforce" / "(in
+                                  # this century)," (2015 Higher Q1(b))
+                                  or re.fullmatch(r'\([^()]*\)[,.;]?', l)
                                   or (slashes and (re.search(r'(?:,|\b(?:and|or|y|o))$', prev)
                                                    or l[:1].islower()))
                                   or (commas_ and prev.endswith(','))):
@@ -1064,6 +1124,19 @@ class EsScheme:
                     options = commas
                 elif len(split) >= quota:
                     options = split
+                elif (self.year <= OLD_LETTERS_LAST
+                      and len(joined.split(' and ')) == quota
+                      and all(len(o.split()) <= 2 for o in joined.split(' and '))):
+                    # "Two of: beer and wine (4 + 4 marks)" (2015 Ordinary
+                    # listening Q5(b)): two one-word answers.
+                    options = [o.strip() for o in joined.split(' and ')]
+            # A line holding only the full stop that closed the list above it
+            # (2015 Higher Q2(a)(iii) prints "." alone) is no answer.
+            options = [o for o in options if re.search(r'\w', o)]
+            lead = MENU_LEADS.get((self.year, self.level, section, q, letter, roman))
+            if lead:
+                assert options and options[0] == lead, (section, q, letter, options[:1])
+                notes.append(options.pop(0))
             cut = MENU_CUTS.get((self.year, self.level, section, q, letter, roman))
             if cut:
                 joined = ' '.join(' '.join(answers).split())
