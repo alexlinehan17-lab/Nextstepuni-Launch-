@@ -97,6 +97,689 @@
         }
       ],
       "section": "C2"
+    },
+    {
+      "id": "ru-2019-hl-l1",
+      "year": 2019,
+      "level": "higher",
+      "section": "L1",
+      "questionRef": "2019 HL Section L1 Q1–5 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        14
+      ],
+      "questions": [
+        {
+          "n": "l1-1",
+          "questionRef": "2019 HL Section L1 Q1",
+          "questionText": "Why does the taxi driver recommend the Radisson hotel? Give two details.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            1,
+            null,
+            null
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-2-i",
+          "questionRef": "2019 HL Section L1 Q2(i)",
+          "questionText": "What level of English does this caller have?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-3",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-2-ii",
+          "questionRef": "2019 HL Section L1 Q2(ii)",
+          "questionText": "How many people will be in her class?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-3",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-3",
+          "questionRef": "2019 HL Section L1 Q3",
+          "questionText": "Give two details about the patient’s symptoms.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            3,
+            null,
+            null
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-4",
+          "questionRef": "2019 HL Section L1 Q4",
+          "questionText": "Give two details about the plans these friends make for this evening.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            4,
+            null,
+            null
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-i",
+          "questionRef": "2019 HL Section L1 Q5(i)",
+          "questionText": "Where does this caller want to go?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            5,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-ii",
+          "questionRef": "2019 HL Section L1 Q5(ii)",
+          "questionText": "How many passengers will be travelling in the taxi?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            14
+          ],
+          "leafKey": [
+            "L1",
+            5,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "proposalOnly": true,
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+        },
+        "scheme": {
+          "pages": 24,
+          "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+        }
+      },
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-1-0",
+        "russian-0-3",
+        "russian-0-5",
+        "russian-0-9"
+      ],
+      "paperSha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
+      "schemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+      "independentSittingAsks": 44
+    },
+    {
+      "id": "ru-2019-hl-l2",
+      "year": 2019,
+      "level": "higher",
+      "section": "L2",
+      "questionRef": "2019 HL Section L2 Q1–4 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "questions": [
+        {
+          "n": "l2-1-i",
+          "questionRef": "2019 HL Section L2 Q1(i)",
+          "questionText": "Give two details about Maria’s first experiences of Irish dancing.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            1,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-i",
+          "questionRef": "2019 HL Section L2 Q2(i)",
+          "questionText": "Give two details about Irish Culture Day.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-ii",
+          "questionRef": "2019 HL Section L2 Q2(ii)",
+          "questionText": "Give one detail about the age range of the dancers in the group.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-3-i",
+          "questionRef": "2019 HL Section L2 Q3(i)",
+          "questionText": "What does Maria say about her job? Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            3,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-3-ii",
+          "questionRef": "2019 HL Section L2 Q3(ii)",
+          "questionText": "Name one other hobby apart from Irish dancing that Maria enjoys",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            3,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-4",
+          "questionRef": "2019 HL Section L2 Q4",
+          "questionText": "Give two details about Maria’s last holiday.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            15
+          ],
+          "leafKey": [
+            "L2",
+            4,
+            null,
+            null
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "proposalOnly": true,
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+        },
+        "scheme": {
+          "pages": 24,
+          "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+        }
+      },
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-1-0",
+        "russian-0-4",
+        "russian-0-5",
+        "russian-0-7",
+        "russian-0-8"
+      ],
+      "paperSha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
+      "schemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+      "independentSittingAsks": 44
+    },
+    {
+      "id": "ru-2019-hl-l3",
+      "year": 2019,
+      "level": "higher",
+      "section": "L3",
+      "questionRef": "2019 HL Section L3 Q1–3 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14,
+        16
+      ],
+      "questions": [
+        {
+          "n": "l3-1-i",
+          "questionRef": "2019 HL Section L3 Q1(i)",
+          "questionText": "Where and when will the festival take place?",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            16
+          ],
+          "leafKey": [
+            "L3",
+            1,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-1-ii",
+          "questionRef": "2019 HL Section L3 Q1(ii)",
+          "questionText": "Give two details about the opening ceremony of the festival.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            16
+          ],
+          "leafKey": [
+            "L3",
+            1,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-i",
+          "questionRef": "2019 HL Section L3 Q2(i)",
+          "questionText": "Give two details about the subject matter of the film ‘Zhili Bili.’",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            16
+          ],
+          "leafKey": [
+            "L3",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-ii",
+          "questionRef": "2019 HL Section L3 Q2(ii)",
+          "questionText": "What format of this film will be shown?",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            16
+          ],
+          "leafKey": [
+            "L3",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-3",
+          "questionRef": "2019 HL Section L3 Q3",
+          "questionText": "Give three details about the award ceremony.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            16
+          ],
+          "leafKey": [
+            "L3",
+            3,
+            null,
+            null
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "proposalOnly": true,
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+        },
+        "scheme": {
+          "pages": 24,
+          "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+        }
+      },
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-1-0",
+        "russian-0-7"
+      ],
+      "paperSha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
+      "schemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+      "independentSittingAsks": 44
+    },
+    {
+      "id": "ru-2019-hl-l4",
+      "year": 2019,
+      "level": "higher",
+      "section": "L4",
+      "questionRef": "2019 HL Section L4 Q1–3 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        14,
+        17
+      ],
+      "questions": [
+        {
+          "n": "l4-1-i",
+          "questionRef": "2019 HL Section L4 Q1(i)",
+          "questionText": "Give two details about Michael’s family.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            1,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-1",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-1-ii",
+          "questionRef": "2019 HL Section L4 Q1(ii)",
+          "questionText": "Give two details about the part‐time job Michael had when he was young.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            1,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-2-i",
+          "questionRef": "2019 HL Section L4 Q2(i)",
+          "questionText": "Give one detail about the band that Michael formed during his teenage years.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-2-ii",
+          "questionRef": "2019 HL Section L4 Q2(ii)",
+          "questionText": "Give two details about why Michael says the age of 19 was the most difficult time in his life.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-3",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-i",
+          "questionRef": "2019 HL Section L4 Q3(i)",
+          "questionText": "Give two details about Michael’s leading role in the film ‘300.’",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            3,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-ii",
+          "questionRef": "2019 HL Section L4 Q3(ii)",
+          "questionText": "Give one detail about why 2014 was a significant year in Michael’s career.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L4",
+            3,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "proposalOnly": true,
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+        },
+        "scheme": {
+          "pages": 24,
+          "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+        }
+      },
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-1-0",
+        "russian-0-1",
+        "russian-0-3",
+        "russian-0-4",
+        "russian-0-5"
+      ],
+      "paperSha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
+      "schemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+      "independentSittingAsks": 44
     }
   ]
 }

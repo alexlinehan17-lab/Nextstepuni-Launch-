@@ -4914,6 +4914,267 @@
           "infrastructureScope": "Root generic source-metadata/test support only; strict original-PDF generator verification remains required."
         }
       }
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "reviewedAt": "2026-11-12",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e"
+        },
+        "scheme": {
+          "pages": 24,
+          "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216"
+        }
+      },
+      "independentSourceAsks": 44,
+      "independentPracticeTasks": 24,
+      "writtenTasks": 20,
+      "listeningTasks": 24,
+      "sourceReviewedSupportedTasks": 44,
+      "publishedPracticeCards": 24,
+      "publishedListeningPracticeCards": 4,
+      "numericallySupportedPracticeCards": 19,
+      "confidenceOnlyPracticeCards": 5,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "publishedPracticeMarks": 190,
+      "sourceAccountedMarks": 300,
+      "confidenceOnlyPrintedMarks": 110,
+      "newCards": 24,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All44 original asks are represented by24 complete practice tasks. Four20-mark listening sections retain all24 original question identities without inferred full-answer tariffs. The complete30-mark Cultural Awareness task retains the unresolved literal Deduct1/2marks. Source coverage does not imply numeric resolution.",
+      "diagnosedReaderIssues": [
+        "Independent48-page visual census counts20written and24listening asks. The earlier parser diagnostic counted23; exact joint metadata retains44 denominator leaves despite24 actual practice cards.",
+        "Four original whole-section listening anchors remain unchanged. Each of24 original questions gains its exact original prompt/page/leaf identity and source-reviewed canonical topics, resolving to one complete section card.",
+        "Listening prints four20-mark section boundaries but no full per-answer tariffs. All full pools, station1, skating1, partial Dublin/Dundrum1, artists0 and comedy0 remain literal and visible. Russian answers and noninvalidating excess are expressly accepted. All rows are null-priced; no2/detail allocation is inferred.",
+        "The English aural booklet repeats5(ii), prints1(i) where the Irish/scheme use1, and the Irish column prints2(ii) beside the English/scheme1(ii) job question. Every original form is retained visibly while the independently reviewed leaf identity is disambiguated.",
+        "The whole Cultural Awareness30 task retains allfive choices,50Russianwords,fivefacts,title,C10/E20 and every band/deduction clause. Literal Deduct1/2marks is unresolved after independent original review and official-source searches; neither half nor one-or-two is selected.",
+        "Guided writing C15/E15/TC10 retains allthree choices. LowerA numeric7–12 is consistent, but prose9/10 conflicts with the table9–11 overlapping11–12. Preserve its complete literal guidance without reassigned descriptors; normal/LowerE tables remain structured. Its soft-sign deduction explicitly2 is separate from the essay ambiguity.",
+        "Comprehension guidance is delimited at the actual first question rather than the Q.1 header, preserving cross-section acceptance, highest-credit duplicate handling, inferred-detail zero and synthesis credit. Q2(ii) has two independent manual already-credited-in2(i) flags; each caps only that detail to0 without cross-card state.",
+        "Summaries retain four manual0/1/2 detail slots and separate0/1/2 discretion. The printed intelligible partial rule and page6 discretionary Russian-word exception remain available; incomplete sections cap discretion1 without invented content or secondary-detail tariffs.",
+        "Six case prompts expressly allow Irish/English/Russian. Cultural topic selection is oneofthree withthree distinct2-mark details; no model fact pool is invented. Infinitives five1 exclude the Q.2.2 heading; semantic field retains all15 complete source entries underchoose5.",
+        "Matching keeps allten2-mark answers including2/8 and8/2 without an added unique-number rule. Grammar has13 printed gaps and15 separately priced forms; both original red colours identify the accepted words. Raw Latin-a text-layer characters and complete two-word phrases are preserved without silent normalization."
+      ],
+      "validation": {
+        "status": "Source-reviewed candidate; remaining all-subject runtime imports await isolated validation after resource-guard stops. Five complete confidence tasks retain unresolved numeric allocations. No publication or completion claim.",
+        "sourceQuoteGate": {
+          "cards": 24,
+          "slices": 217,
+          "passed": true
+        },
+        "draftOriginalTests": {
+          "cases": 9,
+          "passed": true
+        },
+        "sourceCoverageComplete": true,
+        "sourceCheckpointPassed": false,
+        "sittingCompletion": false,
+        "heldNumericTasks": [
+          {
+            "questionRef": "2019 HL Section SE Q2",
+            "printedMarks": 30,
+            "reason": "Literal soft-sign deduction1/2 unresolved; whole confidence task.",
+            "id": "ru-2019-hl-se"
+          },
+          {
+            "questionRef": "2019 HL Section L1 Q1–5 — complete section",
+            "printedMarks": 20,
+            "reason": "No full per-answer tariff; preserve complete source section and all known partial/zero clauses in confidence review.",
+            "id": "ru-2019-hl-l1"
+          },
+          {
+            "questionRef": "2019 HL Section L2 Q1–4 — complete section",
+            "printedMarks": 20,
+            "reason": "No full per-answer tariff; preserve complete source section and all known partial/zero clauses in confidence review.",
+            "id": "ru-2019-hl-l2"
+          },
+          {
+            "questionRef": "2019 HL Section L3 Q1–3 — complete section",
+            "printedMarks": 20,
+            "reason": "No full per-answer tariff; preserve complete source section and all known partial/zero clauses in confidence review.",
+            "id": "ru-2019-hl-l3"
+          },
+          {
+            "questionRef": "2019 HL Section L4 Q1–3 — complete section",
+            "printedMarks": 20,
+            "reason": "No full per-answer tariff; preserve complete source section and all known partial/zero clauses in confidence review.",
+            "id": "ru-2019-hl-l4"
+          }
+        ],
+        "appTypes": "pending root combined integration",
+        "build": "pending root combined integration",
+        "browserQA": "coordinator-owned; not claimed",
+        "rootIntegrationRequirements": [
+          "Allfive actual confidence cards save0/0 in both current layouts, with confidence headers and no suggested20/30-mark assessment maximum.",
+          "Exclude allfive actual cards from numeric quiz selection while preserving every source allocation literally.",
+          "Keep allolder cards,original anchors and non-Russian Atlas records unchanged; retain explicit source-vs-numeric coverage distinction."
+        ],
+        "mandatoryOriginalTests": {
+          "cases": 10,
+          "passed": true,
+          "originalSlices": 217,
+          "rawArtifact": "Every untouched24-page original extraction plus a separately labelled complete-page whitespace-joined rendering; each independently compared to the pinned PDF."
+        },
+        "runtimeTests": {
+          "completedCases": 35,
+          "focusedCases": 19,
+          "curriculumCasesRetained": 16,
+          "allRequiredPassed": false,
+          "pending": [
+            {
+              "file": "markBankCardPreservation.test.ts",
+              "cases": 112
+            },
+            {
+              "file": "curriculumRegistry.test.ts",
+              "testName": "resolves every Mark Bank card into the correct canonical specification",
+              "cases": 1
+            },
+            {
+              "file": "markBankDeck.test.ts",
+              "cases": 104
+            }
+          ],
+          "resourceGuard": "Preservation fork/thread attempts stopped at pressure2 before assertions. Curriculum16cases completed before the final all-card case was interrupted. Guarded worker-exit errors are retained; no pending pass claimed."
+        },
+        "russianCoverageTests": {
+          "cases": 3,
+          "status": "pending isolated validation"
+        },
+        "targetedLint": "passed",
+        "actualRuntimeOverlayLint": {
+          "cards": 1348,
+          "findings": 0,
+          "rulesUnchanged": true
+        },
+        "deterministicRegenerations": 2,
+        "deterministicFiles": 30477,
+        "preservation": {
+          "all1307PriorAuthoredRecordsUnchanged": true,
+          "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+          "all1307PriorRuntimeRecordsUnchanged": true,
+          "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+          "scripts/paper-trail/answers/2019/LC099ALP000BV.pdf.json": {
+            "allPriorRowsUnchanged": 0,
+            "newRows": 20
+          },
+          "scripts/paper-trail/answers/2019/LC099ALPA00BV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 24
+          },
+          "public/paper-answers/2019/LC099ALP000BV.pdf.json": {
+            "allPriorRowsUnchanged": 0,
+            "newRows": 20
+          },
+          "public/paper-answers/2019/LC099ALPA00BV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 24
+          },
+          "public/paper-anchors/2019/LC099ALP000BV.pdf.json": {
+            "allPriorRowsUnchanged": 0,
+            "newRows": 20
+          },
+          "public/paper-anchors/2019/LC099ALPA00BV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 24
+          },
+          "allOtherRussianAnswerMapsByteIdentical": true,
+          "allPriorRussianTopicQuestionRecordsUnchanged": true,
+          "priorJointManifestUnchanged": true,
+          "allPriorRussianFullAtlasQuestionRecordsUnchanged": true,
+          "allOtherSittingAuditRecordsUnchanged": true
+        },
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "unpricedResult": {
+          "marksClaimed": 0,
+          "marksAvailable": 0,
+          "allFiveCardsBothLaneLayoutsConfidenceGradeSaved": true
+        },
+        "reconciliation": {
+          "commandExitCode": 120,
+          "subjectComplete": false,
+          "covered": 1372,
+          "leaves": 1445,
+          "open": 47,
+          "excluded": 26,
+          "orphans": 0,
+          "unparsed": 0,
+          "historicalStaleExclusionsUnchanged": 254,
+          "targetSitting": {
+            "asks": 44,
+            "covered": 44,
+            "practiceCards": 24,
+            "open": 0,
+            "excluded": 0
+          },
+          "baselineReason": "Russian-only baseline records the independently verified44-source-ask census and exact prior-record preservation; it does not suppress or claim an unrun runtime gate.",
+          "explanation": "Expected nonzero min(47open+254unchanged historical stale-exclusion records,120)=120. Other Russian source work remains."
+        }
+      }
     }
   ]
 }

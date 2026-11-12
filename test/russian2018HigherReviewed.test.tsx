@@ -19,7 +19,7 @@ describe('Russian 2018 Higher original tasks',()=>{
   it('represents all 39 asks while leaving the complete 30-mark essay numerically held',()=>{
     expect(sitting).toHaveLength(39);expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(20);
     expect(sitting.reduce((sum,c)=>sum+c.totalMarks,0)).toBe(300);
-    expect(sitting.filter(c=>c.section!=='SE').reduce((sum,c)=>sum+c.totalMarks,0)).toBe(270);
+    expect(sitting.filter(c=>c.id!=='ru-2018-hl-se').reduce((sum,c)=>sum+c.totalMarks,0)).toBe(270);
     expect(sitting.every(tariffReconciles)).toBe(true);
     expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(17);
     expect(sitting.filter(c=>c.audioMaterial).every(c=>!c.answerLanguageRule)).toBe(true);
