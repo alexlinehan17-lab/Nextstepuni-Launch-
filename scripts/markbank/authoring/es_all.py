@@ -1311,6 +1311,13 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
     if notes:
         note += (' The scheme adds: '
                  + '; '.join(f'“{n}”' for n in notes[:3]) + '.')
+    # Notes the scheme prints for the whole question, ahead of its parts,
+    # on the first row of each part's card (card-level notes do not ship).
+    if ask.qnotes:
+        # (closed by the note's own full stop where it prints one)
+        note += (' For the whole question the scheme prints: '
+                 + '; '.join(f'“{n}”' for n in ask.qnotes)
+                 + ('' if ask.qnotes[-1].rstrip().endswith(('.', '?', '!')) else '.'))
     if ask.total is None or not ask.terms:
         return None
     if stepped:

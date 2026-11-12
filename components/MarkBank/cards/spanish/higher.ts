@@ -1902,7 +1902,7 @@ export const CARDS: SecCard[] = [
     questionText: "preparados (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "listos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "listos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1927,7 +1927,7 @@ export const CARDS: SecCard[] = [
     questionText: "todos los días (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diariamente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "diariamente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1952,7 +1952,7 @@ export const CARDS: SecCard[] = [
     questionText: "accidentes (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "atropellos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "atropellos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1977,7 +1977,7 @@ export const CARDS: SecCard[] = [
     questionText: "desde (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a partir de", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "a partir de", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2002,7 +2002,7 @@ export const CARDS: SecCard[] = [
     questionText: "proponer (9)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "plantear", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "plantear", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4277,7 +4277,7 @@ export const CARDS: SecCard[] = [
     questionText: "ingresos (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "salarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "salarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4302,7 +4302,7 @@ export const CARDS: SecCard[] = [
     questionText: "sin salida (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bloqueadas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "bloqueadas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4327,7 +4327,7 @@ export const CARDS: SecCard[] = [
     questionText: "responsabilidades (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cargas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "cargas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4352,7 +4352,7 @@ export const CARDS: SecCard[] = [
     questionText: "una pareja (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un matrimonio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un matrimonio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4377,7 +4377,7 @@ export const CARDS: SecCard[] = [
     questionText: "desempleo (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6726,7 +6726,7 @@ export const CARDS: SecCard[] = [
     questionText: "incrementa (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aumenta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "aumenta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6751,7 +6751,7 @@ export const CARDS: SecCard[] = [
     questionText: "habitantes (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ciudadanos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "ciudadanos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6776,7 +6776,7 @@ export const CARDS: SecCard[] = [
     questionText: "una cantidad (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un número", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un número", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6801,7 +6801,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocultados (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "escondidos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "escondidos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6826,7 +6826,7 @@ export const CARDS: SecCard[] = [
     questionText: "sitios (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lugares/ zonas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "lugares/ zonas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9168,7 +9168,7 @@ export const CARDS: SecCard[] = [
     questionText: "sedativos (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "calmantes", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "calmantes", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9193,7 +9193,7 @@ export const CARDS: SecCard[] = [
     questionText: "percibe (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ve", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "ve", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9218,7 +9218,7 @@ export const CARDS: SecCard[] = [
     questionText: "obligaciones (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responsabilidades", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "responsabilidades", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9243,7 +9243,7 @@ export const CARDS: SecCard[] = [
     questionText: "extiendan (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "amplién", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "amplién", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9268,7 +9268,7 @@ export const CARDS: SecCard[] = [
     questionText: "empresas (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "compañías", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "compañías", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11617,7 +11617,7 @@ export const CARDS: SecCard[] = [
     questionText: "tal vez (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "quizá / quizás", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "quizá / quizás", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11642,7 +11642,7 @@ export const CARDS: SecCard[] = [
     questionText: "señala (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "apunta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "apunta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11667,7 +11667,7 @@ export const CARDS: SecCard[] = [
     questionText: "gangas (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "chollos / ofertas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "chollos / ofertas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11692,7 +11692,7 @@ export const CARDS: SecCard[] = [
     questionText: "ahorrar (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "guardar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "guardar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11717,7 +11717,7 @@ export const CARDS: SecCard[] = [
     questionText: "una tapa (8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un pinchito", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un pinchito", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14059,7 +14059,7 @@ export const CARDS: SecCard[] = [
     questionText: "las doce (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el mediodía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el mediodía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14084,7 +14084,7 @@ export const CARDS: SecCard[] = [
     questionText: "distinta (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diferente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "diferente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14109,7 +14109,7 @@ export const CARDS: SecCard[] = [
     questionText: "tiendas (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comercios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "comercios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14134,7 +14134,7 @@ export const CARDS: SecCard[] = [
     questionText: "introducir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aplicar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "aplicar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14159,7 +14159,7 @@ export const CARDS: SecCard[] = [
     questionText: "tradición (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "costumbre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "costumbre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16461,7 +16461,7 @@ export const CARDS: SecCard[] = [
     questionText: "asistieron (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "acudieron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "acudieron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16486,7 +16486,7 @@ export const CARDS: SecCard[] = [
     questionText: "en el campo (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en una zona rural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "en una zona rural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16511,7 +16511,7 @@ export const CARDS: SecCard[] = [
     questionText: "iniciador (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fundador", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fundador", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16536,7 +16536,7 @@ export const CARDS: SecCard[] = [
     questionText: "escapadas (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fugas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fugas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16561,7 +16561,7 @@ export const CARDS: SecCard[] = [
     questionText: "escogido (para 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "elegido", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "elegido", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18847,7 +18847,7 @@ export const CARDS: SecCard[] = [
     questionText: "el interés (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la atención", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "la atención", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18872,7 +18872,7 @@ export const CARDS: SecCard[] = [
     questionText: "cincuenta por ciento (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(la) mitad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(la) mitad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18897,7 +18897,7 @@ export const CARDS: SecCard[] = [
     questionText: "enseñanza (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "educación/ formación", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "educación/ formación", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18922,7 +18922,7 @@ export const CARDS: SecCard[] = [
     questionText: "los remedios (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "las soluciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "las soluciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18947,7 +18947,7 @@ export const CARDS: SecCard[] = [
     questionText: "fantástica (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fenomenal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fenomenal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21244,7 +21244,7 @@ export const CARDS: SecCard[] = [
     questionText: "salieron de (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dejaron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "dejaron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21269,7 +21269,7 @@ export const CARDS: SecCard[] = [
     questionText: "diferentes (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "distintos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "distintos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21294,7 +21294,7 @@ export const CARDS: SecCard[] = [
     questionText: "cree (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "considera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "considera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21319,7 +21319,7 @@ export const CARDS: SecCard[] = [
     questionText: "comenzar (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "emprender", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "emprender", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21344,7 +21344,7 @@ export const CARDS: SecCard[] = [
     questionText: "parientes (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "familiares", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "familiares", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23635,7 +23635,7 @@ export const CARDS: SecCard[] = [
     questionText: "inesperado (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sorprendente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "sorprendente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23660,7 +23660,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocurrido (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pasado", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "pasado", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23685,7 +23685,7 @@ export const CARDS: SecCard[] = [
     questionText: "sobre todo (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "principalmente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "principalmente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23710,7 +23710,7 @@ export const CARDS: SecCard[] = [
     questionText: "la posibilidad (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el riesgo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el riesgo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23735,7 +23735,7 @@ export const CARDS: SecCard[] = [
     questionText: "responsable (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "encargada", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "encargada", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25189,7 +25189,7 @@ export const CARDS: SecCard[] = [
     questionText: "llena (lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cargada", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "cargada", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25213,7 +25213,7 @@ export const CARDS: SecCard[] = [
     questionText: "contesta (lines 10-20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responde", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "responde", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25237,7 +25237,7 @@ export const CARDS: SecCard[] = [
     questionText: "casuales (lines 20-26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ocasionales", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ocasionales", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25523,7 +25523,7 @@ export const CARDS: SecCard[] = [
     questionText: "medio (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mitad", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "mitad", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25547,7 +25547,7 @@ export const CARDS: SecCard[] = [
     questionText: "todavía hay (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aún quedan", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "aún quedan", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25571,7 +25571,7 @@ export const CARDS: SecCard[] = [
     questionText: "cifras (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "estadísticas", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "estadísticas", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25805,7 +25805,7 @@ export const CARDS: SecCard[] = [
     questionText: "tal vez (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "quizás", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "quizás", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25830,7 +25830,7 @@ export const CARDS: SecCard[] = [
     questionText: "sueldo razonable (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "salario justo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "salario justo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25855,7 +25855,7 @@ export const CARDS: SecCard[] = [
     questionText: "compró más o menos (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "adquirió unos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "adquirió unos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25880,7 +25880,7 @@ export const CARDS: SecCard[] = [
     questionText: "los alumnos recomiendan (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los estudiantes proponen", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "los estudiantes proponen", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25905,7 +25905,7 @@ export const CARDS: SecCard[] = [
     questionText: "intentan crear (para 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "planean establecer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "planean establecer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26005,7 +26005,7 @@ export const CARDS: SecCard[] = [
     questionText: "coste (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "precio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "precio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26030,7 +26030,7 @@ export const CARDS: SecCard[] = [
     questionText: "riesgo (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "peligro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "peligro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26055,7 +26055,7 @@ export const CARDS: SecCard[] = [
     questionText: "así que (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "por eso", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "por eso", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26080,7 +26080,7 @@ export const CARDS: SecCard[] = [
     questionText: "modo (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "manera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "manera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26105,7 +26105,7 @@ export const CARDS: SecCard[] = [
     questionText: "resuelven (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "solucionan", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "solucionan", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26130,7 +26130,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do we learn about many of the factory workers? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "they work long days", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "they work long days", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”." },
     { id: "r-2", kind: "point", verbatim: "for low wages", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "in unhealthy conditions", marks: 1 },
     ],
@@ -26157,7 +26157,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the aim of the project launched by the students and Daniel Sánchez?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to find ways to generate awareness", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "to find ways to generate awareness", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”." },
     { id: "r-2", kind: "point", verbatim: "about the consumption of fast fashion", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "and its impact on the planet", marks: 1 },
     ],
@@ -26184,7 +26184,7 @@ export const CARDS: SecCard[] = [
     questionText: "Julia Ferrer makes suggestions for when we go clothes shopping. Explain one in detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4],"optionOf":[null,null,null,0,0,1,2,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”.", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4],"optionOf":[null,null,null,0,0,1,2,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27563,7 +27563,7 @@ export const CARDS: SecCard[] = [
     questionText: "arriesgada\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "peligrosa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "peligrosa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27587,7 +27587,7 @@ export const CARDS: SecCard[] = [
     questionText: "expresaba (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "manifestaba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "manifestaba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27611,7 +27611,7 @@ export const CARDS: SecCard[] = [
     questionText: "agotado (lines 21‐27)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fatigado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "fatigado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27896,7 +27896,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocio (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiempo libre/ descanso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tiempo libre/ descanso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27920,7 +27920,7 @@ export const CARDS: SecCard[] = [
     questionText: "los jóvenes sufren (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los adolescentes padecen", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "los adolescentes padecen", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27944,7 +27944,7 @@ export const CARDS: SecCard[] = [
     questionText: "bajada (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "descenso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "descenso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28179,7 +28179,7 @@ export const CARDS: SecCard[] = [
     questionText: "el planeta que habitamos(1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el mundo donde vivimos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "el mundo donde vivimos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28204,7 +28204,7 @@ export const CARDS: SecCard[] = [
     questionText: "se calcula (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se estima", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "se estima", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28229,7 +28229,7 @@ export const CARDS: SecCard[] = [
     questionText: "dijo adiós (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se despidió (de)", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "se despidió (de)", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28254,7 +28254,7 @@ export const CARDS: SecCard[] = [
     questionText: "revelación más grande (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mayor descubrimiento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "mayor descubrimiento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28279,7 +28279,7 @@ export const CARDS: SecCard[] = [
     questionText: "varias razones (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "muchos motivos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "muchos motivos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28379,7 +28379,7 @@ export const CARDS: SecCard[] = [
     questionText: "una ocasión (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "una oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "una oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28404,7 +28404,7 @@ export const CARDS: SecCard[] = [
     questionText: "dejar (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "abandonar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "abandonar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28429,7 +28429,7 @@ export const CARDS: SecCard[] = [
     questionText: "comenzó (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "empezó", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "empezó", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28454,7 +28454,7 @@ export const CARDS: SecCard[] = [
     questionText: "elegir (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "escoger", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "escoger", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28479,7 +28479,7 @@ export const CARDS: SecCard[] = [
     questionText: "sucede (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ocurre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ocurre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29888,7 +29888,7 @@ export const CARDS: SecCard[] = [
     questionText: "sufrimiento\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tortura", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tortura", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29912,7 +29912,7 @@ export const CARDS: SecCard[] = [
     questionText: "no sabía (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ignoraba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ignoraba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29936,7 +29936,7 @@ export const CARDS: SecCard[] = [
     questionText: "reconocí (lines 21‐26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "identifiqué", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "identifiqué", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30221,7 +30221,7 @@ export const CARDS: SecCard[] = [
     questionText: "el programa en vivo (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la transmisión en directo", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "la transmisión en directo", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30245,7 +30245,7 @@ export const CARDS: SecCard[] = [
     questionText: "niñez (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "infancia", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "infancia", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30269,7 +30269,7 @@ export const CARDS: SecCard[] = [
     questionText: "el objetivo de (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el fin de", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "el fin de", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30293,7 +30293,7 @@ export const CARDS: SecCard[] = [
     questionText: "… creció con una pasión por los viajes espaciales … (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… she grew up with a passion for space journeys …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… she grew up with a passion for space journeys …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30317,7 +30317,7 @@ export const CARDS: SecCard[] = [
     questionText: "El camino profesional de Diana ha sido impresionante. (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diana’s career path has been impressive", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Diana’s career path has been impressive", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30341,7 +30341,7 @@ export const CARDS: SecCard[] = [
     questionText: "“una joven que no tenía ni idea de cómo hablar inglés.’’ (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "“a young girl who had no idea how to speak English”", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "“a young girl who had no idea how to speak English”", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30528,7 +30528,7 @@ export const CARDS: SecCard[] = [
     questionText: "muchas modificaciones (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "numerosos cambios", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "numerosos cambios", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30554,7 +30554,7 @@ export const CARDS: SecCard[] = [
     questionText: "abruptamente (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "de repente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "de repente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30580,7 +30580,7 @@ export const CARDS: SecCard[] = [
     questionText: "tomar parte (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "participar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "participar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30606,7 +30606,7 @@ export const CARDS: SecCard[] = [
     questionText: "planea introducir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "propone lanzar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "propone lanzar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30632,7 +30632,7 @@ export const CARDS: SecCard[] = [
     questionText: "debe ir (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiene que viajar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tiene que viajar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30658,7 +30658,7 @@ export const CARDS: SecCard[] = [
     questionText: "… quizás uno de los más revolucionarios … (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… perhaps one of the most revolutionary...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… perhaps one of the most revolutionary...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30684,7 +30684,7 @@ export const CARDS: SecCard[] = [
     questionText: "… empecé a echar de menos a mis compañeros de trabajo … (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… I started to miss my work colleagues", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… I started to miss my work colleagues", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30710,7 +30710,7 @@ export const CARDS: SecCard[] = [
     questionText: "… le preocupó un poco la reducción de salario ... (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… the reduction in salary worried him a little...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… the reduction in salary worried him a little...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30736,7 +30736,7 @@ export const CARDS: SecCard[] = [
     questionText: "provisional (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "temporal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "temporal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30762,7 +30762,7 @@ export const CARDS: SecCard[] = [
     questionText: "compañía (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "empresa", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "empresa", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30788,7 +30788,7 @@ export const CARDS: SecCard[] = [
     questionText: "posibilidad (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "opción", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "opción", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30814,7 +30814,7 @@ export const CARDS: SecCard[] = [
     questionText: "fortuna (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suerte", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "suerte", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30840,7 +30840,7 @@ export const CARDS: SecCard[] = [
     questionText: "incremento (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aumento", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "aumento", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32253,7 +32253,7 @@ export const CARDS: SecCard[] = [
     questionText: "muy cansado\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "agotado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "agotado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32277,7 +32277,7 @@ export const CARDS: SecCard[] = [
     questionText: "abundante (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "espesa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "espesa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32301,7 +32301,7 @@ export const CARDS: SecCard[] = [
     questionText: "pocos minutos (lines 21‐26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "breves momentos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "breves momentos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32586,7 +32586,7 @@ export const CARDS: SecCard[] = [
     questionText: "ciudadanos (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "habitantes", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "habitantes", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32610,7 +32610,7 @@ export const CARDS: SecCard[] = [
     questionText: "es posible relajarse (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se puede descansar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "se puede descansar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32634,7 +32634,7 @@ export const CARDS: SecCard[] = [
     questionText: "altera la conducta (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "modifica el comportamiento", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "modifica el comportamiento", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32892,7 +32892,7 @@ export const CARDS: SecCard[] = [
     questionText: "en el medio (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a la mitad", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a la mitad", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32918,7 +32918,7 @@ export const CARDS: SecCard[] = [
     questionText: "quehaceres domésticos (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tareas del hogar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "tareas del hogar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32944,7 +32944,7 @@ export const CARDS: SecCard[] = [
     questionText: "admite (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "reconoce", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "reconoce", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32970,7 +32970,7 @@ export const CARDS: SecCard[] = [
     questionText: "bastante (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suficiente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "suficiente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32996,7 +32996,7 @@ export const CARDS: SecCard[] = [
     questionText: "periodos difíciles (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiempos adversos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "tiempos adversos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33022,7 +33022,7 @@ export const CARDS: SecCard[] = [
     questionText: "El alto coste del alquiler suele ser otro gran obstáculo… (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The high cost of rent is usually another big obstacle", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "The high cost of rent is usually another big obstacle", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33048,7 +33048,7 @@ export const CARDS: SecCard[] = [
     questionText: "…la fuerte conexión familiar que caracteriza a los españoles. (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The strong family connection that characterises the Spanish people", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "The strong family connection that characterises the Spanish people", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33074,7 +33074,7 @@ export const CARDS: SecCard[] = [
     questionText: "Educan a los niños para ser autosuficientes y establecer su propia casa. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They educate the children to be self-sufficient and to establish their own home", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "They educate the children to be self-sufficient and to establish their own home", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33100,7 +33100,7 @@ export const CARDS: SecCard[] = [
     questionText: "por el contrario (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sin embargo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "sin embargo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33126,7 +33126,7 @@ export const CARDS: SecCard[] = [
     questionText: "murió (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "falleció", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "falleció", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33152,7 +33152,7 @@ export const CARDS: SecCard[] = [
     questionText: "cambiarme (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mudarme", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "mudarme", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33178,7 +33178,7 @@ export const CARDS: SecCard[] = [
     questionText: "normal (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "natural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "natural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33204,7 +33204,7 @@ export const CARDS: SecCard[] = [
     questionText: "indica (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "señala", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "señala", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34645,7 +34645,7 @@ export const CARDS: SecCard[] = [
     questionText: "aguantar\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "soportar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "soportar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34669,7 +34669,7 @@ export const CARDS: SecCard[] = [
     questionText: "extraño (lines 11-20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "raro", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "raro", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34693,7 +34693,7 @@ export const CARDS: SecCard[] = [
     questionText: "recuperado (lines 21-27)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "restablecido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "restablecido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34978,7 +34978,7 @@ export const CARDS: SecCard[] = [
     questionText: "increíble (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "alucinante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "alucinante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35002,7 +35002,7 @@ export const CARDS: SecCard[] = [
     questionText: "auge (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "éxito/fama", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "éxito/fama", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35026,7 +35026,7 @@ export const CARDS: SecCard[] = [
     questionText: "negar (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ignorar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "ignorar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35285,7 +35285,7 @@ export const CARDS: SecCard[] = [
     questionText: "detalle sorprendente (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dato curioso", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "dato curioso", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35311,7 +35311,7 @@ export const CARDS: SecCard[] = [
     questionText: "levantó mucho interés (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "generó afición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "generó afición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35337,7 +35337,7 @@ export const CARDS: SecCard[] = [
     questionText: "porvenir prometedor (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "futuro brillante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "futuro brillante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35363,7 +35363,7 @@ export const CARDS: SecCard[] = [
     questionText: "desde entonces (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a partir de ese momento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a partir de ese momento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35389,7 +35389,7 @@ export const CARDS: SecCard[] = [
     questionText: "salieron a saludarlo (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fueron a hablar con él", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "fueron a hablar con él", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35415,7 +35415,7 @@ export const CARDS: SecCard[] = [
     questionText: "… la migración masiva de irlandeses a mediados del siglo diecinueve. (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… the massive migration of Irish in the middle of the nineteenth century", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… the massive migration of Irish in the middle of the nineteenth century", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35441,7 +35441,7 @@ export const CARDS: SecCard[] = [
     questionText: "… decidieron adaptar sus habilidades y formar un equipo masculino … (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they decided to adapt their skills and form a male team …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they decided to adapt their skills and form a male team …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35467,7 +35467,7 @@ export const CARDS: SecCard[] = [
     questionText: "… han alcanzado un nivel que les permite competir ... (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they have reached a level that allows them to compete ...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they have reached a level that allows them to compete ...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35493,7 +35493,7 @@ export const CARDS: SecCard[] = [
     questionText: "famosa (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "conocida", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "conocida", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35519,7 +35519,7 @@ export const CARDS: SecCard[] = [
     questionText: "orígenes (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "raíces", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "raíces", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35545,7 +35545,7 @@ export const CARDS: SecCard[] = [
     questionText: "alternativas (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(otras) opciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "(otras) opciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35571,7 +35571,7 @@ export const CARDS: SecCard[] = [
     questionText: "competiciones (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "torneos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "torneos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35597,7 +35597,7 @@ export const CARDS: SecCard[] = [
     questionText: "socios (8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "miembros", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "miembros", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37042,7 +37042,7 @@ export const CARDS: SecCard[] = [
     questionText: "de nuevo\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "otra vez", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "otra vez", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37066,7 +37066,7 @@ export const CARDS: SecCard[] = [
     questionText: "observé (lines 11-18)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vi", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "vi", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37090,7 +37090,7 @@ export const CARDS: SecCard[] = [
     questionText: "un corto tiempo (lines 19-24)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "breves minutos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "breves minutos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37375,7 +37375,7 @@ export const CARDS: SecCard[] = [
     questionText: "aún se escucha (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "todavía existe", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "todavía existe", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37399,7 +37399,7 @@ export const CARDS: SecCard[] = [
     questionText: "causa asombro (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sorprende", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "sorprende", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37423,7 +37423,7 @@ export const CARDS: SecCard[] = [
     questionText: "destacan (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "llaman la atención", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "llaman la atención", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37681,7 +37681,7 @@ export const CARDS: SecCard[] = [
     questionText: "empiezan a tener (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comienzan a ejercer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "comienzan a ejercer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37707,7 +37707,7 @@ export const CARDS: SecCard[] = [
     questionText: "le encantan (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "es apasionada de", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "es apasionada de", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37733,7 +37733,7 @@ export const CARDS: SecCard[] = [
     questionText: "un carácter abierto (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "una personalidad extrovertida", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "una personalidad extrovertida", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37759,7 +37759,7 @@ export const CARDS: SecCard[] = [
     questionText: "explica los obstáculos (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "da a conocer los problemas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "da a conocer los problemas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37785,7 +37785,7 @@ export const CARDS: SecCard[] = [
     questionText: "considerando (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "teniendo en cuenta", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "teniendo en cuenta", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37811,7 +37811,7 @@ export const CARDS: SecCard[] = [
     questionText: "Es guapísima, elegante y muy maja. (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She is very pretty, elegant and very nice", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "She is very pretty, elegant and very nice", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37837,7 +37837,7 @@ export const CARDS: SecCard[] = [
     questionText: "Alba parece salida de una película de ciencia ficción. (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Alba seems like something from a science fiction film", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Alba seems like something from a science fiction film", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37863,7 +37863,7 @@ export const CARDS: SecCard[] = [
     questionText: "… cobran unos ocho mil euros por publicación. (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they charge about 8,000 euro per post/publication", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they charge about 8,000 euro per post/publication", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37889,7 +37889,7 @@ export const CARDS: SecCard[] = [
     questionText: "representante (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "portavoz", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "portavoz", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37915,7 +37915,7 @@ export const CARDS: SecCard[] = [
     questionText: "aprecia (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "respeta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "respeta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37941,7 +37941,7 @@ export const CARDS: SecCard[] = [
     questionText: "colaborar (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "trabajar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "trabajar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37967,7 +37967,7 @@ export const CARDS: SecCard[] = [
     questionText: "desplazarse (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "viajar (de un sitio a otro)", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "viajar (de un sitio a otro)", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37993,7 +37993,7 @@ export const CARDS: SecCard[] = [
     questionText: "contesta (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responde", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "responde", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39440,7 +39440,7 @@ export const CARDS: SecCard[] = [
     questionText: "vuelto\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "regresado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "regresado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39464,7 +39464,7 @@ export const CARDS: SecCard[] = [
     questionText: "sin duda (lines 11-19)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "seguramente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "seguramente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39488,7 +39488,7 @@ export const CARDS: SecCard[] = [
     questionText: "permaneció (lines 20-25)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se quedó", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "se quedó", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39512,7 +39512,7 @@ export const CARDS: SecCard[] = [
     questionText: "… sólo sus ropas habían sido repartidas entre algunos hombres del poblado. (line 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "…only his clothes had been divided out among some of the men of the village", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "…only his clothes had been divided out among some of the men of the village", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39536,7 +39536,7 @@ export const CARDS: SecCard[] = [
     questionText: "… sin saber muy bien lo que significa todo el ritual. (line 11)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… without knowing very well what the whole ritual means …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… without knowing very well what the whole ritual means …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39560,7 +39560,7 @@ export const CARDS: SecCard[] = [
     questionText: "… iba a ser mi habitación durante mi estancia en Gabón, … (line 23)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… it was going to be my room during my stay in Gabon …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… it was going to be my room during my stay in Gabon …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39774,7 +39774,7 @@ export const CARDS: SecCard[] = [
     questionText: "da alegría a la gente (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hace a las personas felices", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "hace a las personas felices", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39798,7 +39798,7 @@ export const CARDS: SecCard[] = [
     questionText: "alrededor de (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en torno a", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "en torno a", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39822,7 +39822,7 @@ export const CARDS: SecCard[] = [
     questionText: "el personal (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la tripulación", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "la tripulación", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39846,7 +39846,7 @@ export const CARDS: SecCard[] = [
     questionText: "… en una empresa financiera situada en ... (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… in a finance company situated in …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… in a finance company situated in …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39870,7 +39870,7 @@ export const CARDS: SecCard[] = [
     questionText: "… mientras sigue con su trabajo y dirige su negocio … (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… while he continues with his job and runs his business…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… while he continues with his job and runs his business…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39894,7 +39894,7 @@ export const CARDS: SecCard[] = [
     questionText: "… me tratan como a la realeza. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "... they treat me like royalty", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "... they treat me like royalty", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40080,7 +40080,7 @@ export const CARDS: SecCard[] = [
     questionText: "cantidad (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cifra", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "cifra", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40106,7 +40106,7 @@ export const CARDS: SecCard[] = [
     questionText: "habilidad imprescindible (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "destreza necesaria", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "destreza necesaria", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40132,7 +40132,7 @@ export const CARDS: SecCard[] = [
     questionText: "frecuentemente (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a menudo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a menudo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40158,7 +40158,7 @@ export const CARDS: SecCard[] = [
     questionText: "renunciar al objetivo (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "abandonar la ambición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "abandonar la ambición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40184,7 +40184,7 @@ export const CARDS: SecCard[] = [
     questionText: "fuera de lo común (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "poco convencional", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "poco convencional", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40210,7 +40210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Aunque yo trataba de evitarlo, ... (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Even though I tried to avoid it …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Even though I tried to avoid it …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40236,7 +40236,7 @@ export const CARDS: SecCard[] = [
     questionText: "… no le importaba quedar en ridículo. (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "…he didn’t mind making a fool of himself", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "…he didn’t mind making a fool of himself", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40262,7 +40262,7 @@ export const CARDS: SecCard[] = [
     questionText: "Luego, mediante su empleo de periodista, … (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Later by way of his job as a journalist", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Later by way of his job as a journalist", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40288,7 +40288,7 @@ export const CARDS: SecCard[] = [
     questionText: "por otro lado (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en cambio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "en cambio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40314,7 +40314,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocasión (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40340,7 +40340,7 @@ export const CARDS: SecCard[] = [
     questionText: "conseguir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lograr", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "lograr", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40366,7 +40366,7 @@ export const CARDS: SecCard[] = [
     questionText: "errores (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fallos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "fallos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40392,7 +40392,7 @@ export const CARDS: SecCard[] = [
     questionText: "cariño (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "simpatía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "simpatía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -41855,7 +41855,7 @@ export const CARDS: SecCard[] = [
     questionText: "dudé un momento (lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vacilé un instante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "vacilé un instante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -41879,7 +41879,7 @@ export const CARDS: SecCard[] = [
     questionText: "mucho tiempo\n(lines 11‐18)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "largas horas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "largas horas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -41903,7 +41903,7 @@ export const CARDS: SecCard[] = [
     questionText: "sentimientos\n(lines 19‐24)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sensaciones", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "sensaciones", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42188,7 +42188,7 @@ export const CARDS: SecCard[] = [
     questionText: "sin embargo (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "no obstante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "no obstante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42212,7 +42212,7 @@ export const CARDS: SecCard[] = [
     questionText: "ventajas (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "beneficios", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "beneficios", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42236,7 +42236,7 @@ export const CARDS: SecCard[] = [
     questionText: "indispensable (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fundamental", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "fundamental", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42260,7 +42260,7 @@ export const CARDS: SecCard[] = [
     questionText: "Las nuevas tecnologías están presentes en nuestra vida cotidiana... (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "New technologies are present in our daily life….", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "New technologies are present in our daily life….", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42284,7 +42284,7 @@ export const CARDS: SecCard[] = [
     questionText: "… el tiempo de ocio ha cambiado mucho en los últimos años… (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… free time has changed a lot in the last few years.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… free time has changed a lot in the last few years.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42308,7 +42308,7 @@ export const CARDS: SecCard[] = [
     questionText: "… contribuyen a aliviar el estrés, mejorar el sueño… (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they contribute to alleviating stress and improving sleep…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… they contribute to alleviating stress and improving sleep…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42495,7 +42495,7 @@ export const CARDS: SecCard[] = [
     questionText: "actualmente (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hoy en día", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "hoy en día", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42521,7 +42521,7 @@ export const CARDS: SecCard[] = [
     questionText: "a la vez (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "al mismo tiempo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "al mismo tiempo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42547,7 +42547,7 @@ export const CARDS: SecCard[] = [
     questionText: "efectos serios (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "consecuencias graves", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "consecuencias graves", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42573,7 +42573,7 @@ export const CARDS: SecCard[] = [
     questionText: "las cercanías (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los alrededores", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "los alrededores", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42599,7 +42599,7 @@ export const CARDS: SecCard[] = [
     questionText: "solucionar el tema (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "resolver el problema", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "resolver el problema", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42625,7 +42625,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué atrae Barcelona a tantos turistas de todos los países del mundo? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Why does Barcelona attract so many tourists from all the countries of the world?", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Why does Barcelona attract so many tourists from all the countries of the world?", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42651,7 +42651,7 @@ export const CARDS: SecCard[] = [
     questionText: "… los comercios se adaptan a las necesidades turísticas... (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "... businesses adapt to tourist needs....", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "... businesses adapt to tourist needs....", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42677,7 +42677,7 @@ export const CARDS: SecCard[] = [
     questionText: "… han obligado a muchos vecinos a dejar sus casas... (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they have obliged many neighbours to leave their houses", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… they have obliged many neighbours to leave their houses", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42703,7 +42703,7 @@ export const CARDS: SecCard[] = [
     questionText: "transformarse (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "convertirse", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "convertirse", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42729,7 +42729,7 @@ export const CARDS: SecCard[] = [
     questionText: "especialmente (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sobre todo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "sobre todo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42755,7 +42755,7 @@ export const CARDS: SecCard[] = [
     questionText: "desempleo (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42781,7 +42781,7 @@ export const CARDS: SecCard[] = [
     questionText: "dueños (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "propietarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "propietarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42807,7 +42807,7 @@ export const CARDS: SecCard[] = [
     questionText: "desea (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "quiere", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "quiere", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42833,7 +42833,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Barcelona the perfect city for holidays? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["it is the perfect size, neither too big nor too small","both the beach and the mountains are less than an hour from the centre","It has a perfect climate with sun and pleasant temperatures"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["it is the perfect size, neither too big nor too small","both the beach and the mountains are less than an hour from the centre","It has a perfect climate with sun and pleasant temperatures"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42859,7 +42859,7 @@ export const CARDS: SecCard[] = [
     questionText: "What have the residents said about tourist behaviour? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["The tourists get drunk","They make noise during the whole night","They leave rubbish everywhere","They don’t respect anything","They shout on the streets"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["The tourists get drunk","They make noise during the whole night","They leave rubbish everywhere","They don’t respect anything","They shout on the streets"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -42885,7 +42885,7 @@ export const CARDS: SecCard[] = [
     questionText: "What measures have been taken by the town hall? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["They have prohibited the construction of new hotels in the city centre","They have just authorised a project which will prevent houses being converted into tourist apartments","Imposing tourist taxes","Regulating the prices of rent"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["They have prohibited the construction of new hotels in the city centre","They have just authorised a project which will prevent houses being converted into tourist apartments","Imposing tourist taxes","Regulating the prices of rent"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

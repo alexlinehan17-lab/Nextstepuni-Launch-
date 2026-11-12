@@ -568,6 +568,43 @@ ONE_OF_KEPT = {
 }
 
 
+def _question_notes(lines):
+    """The notes a question's block prints ahead of its first part: each
+    bracket whole, and the unbracketed lines between them as one paragraph.
+    Not its tariff ("(2+2) + 4 + 4 marks = 12 marks", "(9 marks)") nor a
+    title in capitals ("ACCIDENTES DE TRÁFICO", "BÁDMINTON")."""
+    notes, para, bracket = [], [], None
+    for raw in lines:
+        s = ' '.join((raw or '').split())
+        if not s or PAGE.match(s):
+            continue
+        if bracket is not None:
+            bracket.append(s)
+            if ']' in s:
+                notes.append(' '.join(bracket).strip('[] .').strip())
+                bracket = None
+            continue
+        if s.startswith('['):
+            if para:
+                notes.append(' '.join(para))
+                para = []
+            if s.rstrip(' .').endswith(']'):
+                notes.append(s.strip('[] .').strip())
+            else:
+                bracket = [s]
+            continue
+        if re.fullmatch(r'(?:[\d\s+()=]|m\b|marks?\b)+', s, re.I) or (s.isupper() and not s.endswith('.')):
+            continue
+        if re.fullmatch(r'[A-ZÁÉÍÓÚÑ ]+\(\s*\d{1,3}\s*marks?\s*\)', s):
+            continue
+        para.append(s)
+    if bracket:
+        notes.append(' '.join(bracket).strip('[] .').strip())
+    if para:
+        notes.append(' '.join(para))
+    return [n for n in notes if n]
+
+
 def _split_notes(body):
     """(answer lines, note lines) for one part's printed block.
 
@@ -674,7 +711,7 @@ class Ask:
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
                  'head_notation', 'lead_points', 'bracket_parts', 'raw', 'answer_lines',
-                 'answer_terms')
+                 'answer_terms', 'qnotes')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -1075,6 +1112,15 @@ class EsScheme:
                         f'the head prices this question {total} while its parts '
                         f'price {summed}; the value this part is really worth is '
                         f'not printed')
+        # What the scheme prints for the whole question, between its head and
+        # its first part: "[No marks awarded if words are added or omitted.
+        # Exact transcription required]", "[Correct tense required for full
+        # marks]", "Extra words no marks.", Ordinary Q1's "All answers must be
+        # in Spanish. Transcription (…) is acceptable. …". Every part's card
+        # carries it (coordinator, 12 Nov 2026).
+        qnotes = _question_notes(block[:heads[0][0]])
+        for a in got:
+            a.qnotes = qnotes or None
         self.asks.extend(got)
 
     def _parse_part(self, section, q, letter, roman, body, line, total,
