@@ -150,7 +150,10 @@ const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
 const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards, ...reviewedOrdinary2021P2.cards, ...reviewedHigher2020P1.cards, ...reviewedHigher2020P2.cards, ...reviewedOrdinary2020P1.cards, ...reviewedOrdinary2020P2.cards, ...reviewedHigher2019P1.cards, ...reviewedHigher2019P2.cards, ...reviewedOrdinary2019P1.cards, ...reviewedOrdinary2019P2.cards, ...reviewedHigher2018P1.cards, ...reviewedHigher2018P2.cards, ...reviewedOrdinary2018P1.cards, ...reviewedOrdinary2018P2.cards, ...reviewedHigher2017P1.cards, ...reviewedHigher2017P2.cards, ...reviewedOrdinary2017P1.cards, ...reviewedOrdinary2017P2.cards, ...reviewedHigher2016P1.cards, ...reviewedHigher2016P2.cards, ...reviewedOrdinary2016P1.cards, ...reviewedOrdinary2016P2.cards, ...reviewedHigher2015P1.cards, ...reviewedHigher2015P2.cards, ...reviewedOrdinary2015P1.cards, ...reviewedOrdinary2015P2.cards, ...reviewedHigher2014P1.cards, ...reviewedHigher2014P2.cards, ...reviewedOrdinary2014P1.cards, ...reviewedOrdinary2014P2.cards, ...reviewedHigher2013P1.cards, ...reviewedHigher2013P2.cards, ...reviewedOrdinary2013P1.cards, ...reviewedOrdinary2013P2.cards, ...reviewedHigher2012P1.cards, ...reviewedHigher2012P2.cards, ...reviewedOrdinary2012P1.cards, ...reviewedOrdinary2012P2.cards, ...reviewedOrdinary2011Aural.cards, ...reviewedOrdinary2011P1.cards, ...reviewedOrdinary2011P2.cards, ...reviewedHigher2011Aural.cards, ...reviewedHigher2011P1.cards, ...reviewedHigher2011P2.cards, ...reviewedOrdinary2010Aural.cards, ...reviewedOrdinary2010P1.cards, ...reviewedOrdinary2010P2.cards, ...reviewedHigher2010Aural.cards, ...reviewedHigher2010P1.cards, ...reviewedHigher2010P2.cards].map(card => card.id));
-const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
+// The deferred sittings' cards (irish_deferred.py) are their own deck component, pinned in markBankIrishDeferred.test.ts.
+const DEFERRED_CARD = /^irish-\d{4}-(?:hl|ol)-deferred-/;
+const DEFERRED_COUNT = [...HIGHER_DECK, ...ORDINARY_DECK].filter(card => DEFERRED_CARD.test(card.id)).length;
+const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id) && !DEFERRED_CARD.test(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
 // 2025, 2024, 2023, 2022 and 2021 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
 // attached the printed question page to its six prose options and three optional poems.
@@ -161,7 +164,7 @@ const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegment
   ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2022P1.listeningSegmentCardIds, ...reviewedOrdinary2021P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds, ...reviewedOrdinary2023P2.review.readingWholeCardIds, ...reviewedOrdinary2022P2.review.readingWholeCardIds, ...reviewedOrdinary2021P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
 const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds, ...reviewedOrdinary2023P1.compositionRouteCardIds, ...reviewedOrdinary2022P1.compositionRouteCardIds, ...reviewedOrdinary2021P1.compositionRouteCardIds]);
-const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
+const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id) && !DEFERRED_CARD.test(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
 
@@ -208,7 +211,7 @@ describe('Irish legacy generated-card ledger (not a completeness audit)', () => 
 
   it('maps the census and generated manifest one-to-one to the live decks', () => {
     expect(HIGHER).toHaveLength(261);
-    expect(HIGHER_DECK.length + ORDINARY_DECK.length).toBe(446 + REVIEWED_IDS.size);
+    expect(HIGHER_DECK.length + ORDINARY_DECK.length).toBe(446 + REVIEWED_IDS.size + DEFERRED_COUNT);
     expect(ORDINARY).toHaveLength(185);
     expect(ALL).toHaveLength(446);
     expect(manifest.cardCount).toBe(446);

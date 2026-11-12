@@ -275,8 +275,27 @@ def reconcile_manifest(subject, census):
     shipped_ids = {cid for cid, _ in cards}
     covered = set()
     orphans = []
+    # A deferred Irish card is the June shape (one card per listening extract, per whole reading question, per
+    # literature option …), so it covers the printed asks its manifest lists (irish_deferred.py's `covers`), as a
+    # June card covers its paper's asks; every ask it names must be one the deferred census reads.
+    covers = {}
+    if subject == 'irish':
+        for name in irish_manifest_files():
+            covers.update(json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8')).get('covers', {}))
     for cid, ref in cards:
         wanted = expected.get(cid)
+        # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
+        # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
+        if subject == 'irish' and bool(re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
+            orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
+            continue
+        if cid in covers:
+            unknown = [leaf for leaf in covers[cid] if leaf not in expected]
+            if unknown or not covers[cid]:
+                orphans.append({'id': cid, 'ref': ref, 'why': f'covers asks absent from the {subject} paper census: {unknown[:3]}'})
+            else:
+                covered.update(covers[cid])
+            continue
         if wanted is None:
             orphans.append({'id': cid, 'ref': ref,
                             'why': f'card id is absent from the {subject} paper census'})

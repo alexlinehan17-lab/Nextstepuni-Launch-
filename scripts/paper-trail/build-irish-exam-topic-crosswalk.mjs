@@ -34,6 +34,15 @@ const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'h
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
+// The SEC's deferred sittings, carded in the Mark Bank (scripts/markbank/authoring/irish_deferred.py): each paper joins the
+// Atlas as its own booklet ("LC001ALP100IV-deferred.pdf"), as History's and Economics' deferred papers do, with the
+// June paper's section entries and one entry per reviewed card. Their questions never join June's (logicalQuestionIdentity,
+// and the runtime keys them by booklet). June's outputs do not change.
+const DEFERRED_MANIFESTS = ['higher-2025-deferred-authored.json', 'ordinary-2025-deferred-authored.json', 'higher-2024-deferred-authored.json', 'ordinary-2024-deferred-authored.json'];
+const deferredTasks = DEFERRED_MANIFESTS
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
+  .filter(card => card.reviewedAt && card.atlasQuestionId);
+const DEFERRED_SUFFIX = ' — Deferred sitting';
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -259,6 +268,12 @@ for (const topic of referenceTopics) {
     setCurriculum(topic.id, [NEW_PROSE[title]]);
   }
 }
+for (const card of deferredTasks.filter(card => card.paper === 2 && /^[PF]-[23]A(?:-|$)/.test(card.atlasQuestionId))) {
+  const shelf = card.level === 'higher'
+    ? (card.atlasQuestionId.startsWith('P-') ? H.prescribedProse : H.prescribedPoetry)
+    : (card.atlasQuestionId.startsWith('P-') ? O.prescribedProse : O.prescribedPoetry);
+  if (!CURRICULUM_CROSSWALK[shelf].includes(card.topicId)) throw new Error('Deferred text off its June shelf: ' + card.id + ' ' + card.topicId);
+}
 for (const topic of allTopics) {
   if (!CURRICULUM_CROSSWALK[topic.id]?.filter(Boolean).length) {
     throw new Error('Irish topic has no curriculum bridge: ' + topic.id);
@@ -410,13 +425,34 @@ const fallbackLayout = paper => {
 };
 
 const papers = paperFiles.map(parsePaper);
+const deferredPapers = [...new Map(deferredTasks.map(card => [card.year + '|' + card.paperFileid, card])).values()]
+  .sort((a, b) => b.year - a.year || a.paperFileid.localeCompare(b.paperFileid))
+  .map(first => {
+    const match = (first.paperFileid + '.pdf').match(/^LC001([AG])LP([12])00IV-deferred\.pdf$/);
+    if (!match) throw new Error('Unexpected Irish deferred paper: ' + first.paperFileid);
+    const cards = deferredTasks.filter(card => card.year === first.year && card.paperFileid === first.paperFileid);
+    const page = test => {
+      const pages = cards.filter(card => test.test(card.atlasQuestionId)).map(card => card.reviewedPaperPages[0]);
+      if (!pages.length) throw new Error(first.paperFileid + ' ' + first.year + ': no reviewed card for ' + test);
+      return Math.min(...pages);
+    };
+    const kind = match[2] === '1' ? 'p1' : 'p2';
+    const level = match[1] === 'A' ? 'higher' : 'ordinary';
+    const layout = kind === 'p1'
+      ? { aural: [page(/^L-A-/), page(/^L-B-/), page(/^L-C-/)], writing: page(/^W-/) }
+      : { reading: [page(/^R-A-/), page(/^R-B-/)], prose: page(/^P-2A-/), proseOptional: page(/^P-2B-/),
+        poetry: page(/^F-3A-/), poetryOptional: page(/^F-3B-/), ...(level === 'higher' ? { extra: page(/^X-/) } : {}) };
+    return { subjectId: 'irish', year: first.year, level, lang: 'iv', fileid: first.paperFileid + '.pdf', component: match[2] + '00',
+      paperKey: kind, kind, baseline: undefined, deferred: true, layout };
+  });
+papers.push(...deferredPapers);
 const paperByIdentity = new Map();
 for (const paper of papers) {
   const sidecarPath = path.join(ANSWERS_ROOT, String(paper.year), paper.fileid + '.json');
-  paper.sidecar = fs.existsSync(sidecarPath) ? readJson(sidecarPath) : null;
+  paper.sidecar = !paper.deferred && fs.existsSync(sidecarPath) ? readJson(sidecarPath) : null;
   const hostedPath = path.join(HOSTED_ROOT, String(paper.year), paper.fileid + '.json');
-  paper.existingHosted = fs.existsSync(hostedPath) ? readJson(hostedPath) : null;
-  paper.layout = fallbackLayout(paper);
+  paper.existingHosted = !paper.deferred && fs.existsSync(hostedPath) ? readJson(hostedPath) : null;
+  paper.layout = paper.deferred ? paper.layout : fallbackLayout(paper);
   paper.q = [];
   paperByIdentity.set(paper.level + '|' + paper.year + '|' + paper.kind, paper);
 }
@@ -764,7 +800,7 @@ for (const card of foundationTasks.cards) {
   paper.hasReviewedFoundationTasks = true;
   paper.reviewedFoundationSchemeFileid = (card.schemeFileid ?? card.paperFileid) + '.pdf';
 }
-for (const card of reviewedHigherTasks) {
+for (const card of [...reviewedHigherTasks, ...deferredTasks]) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
   if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
   const existing = paper.q.find(q => q.n === card.atlasQuestionId);
@@ -811,7 +847,7 @@ for (const card of reviewedHigherTasks) {
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
-    label: card.questionRef.replace(/^\d{4} [HO]L (?:Paper [12] )?/, ''),
+    label: card.questionRef.replace(/^\d{4} [HO]L (?:Paper [12] )?/, '').replace(DEFERRED_SUFFIX, ''),
     // A reviewed card keyed as the paper's own section (2010-2011 Higher Paper 2's P-A, P-B, F-A, F-B) keeps the reference
     // headings that section answered, as a reviewed Foundation task does.
     referenceSlots: existing?.referenceSlots ?? [],
@@ -1020,7 +1056,7 @@ const blockedPaperKey = (topic, year) => {
 };
 const findPaper = (topic, year) => {
   const kind = topicKind(topic, year);
-  const matches = papers.filter(paper => paper.year === year && paper.level === topic.level && paper.kind === kind);
+  const matches = papers.filter(paper => !paper.deferred && paper.year === year && paper.level === topic.level && paper.kind === kind);
   if (matches.length !== 1) {
     throw new Error(year + ' ' + topic.level + ' ' + kind + ': expected one Irish paper, found ' + matches.length);
   }
@@ -1348,7 +1384,7 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
-  if (paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) {
+  if ((paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) && !paper.deferred) {
     const { paperOnly, ...answerMap } = artifact;
     answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid
       : paper.reviewedHigherSchemeFileid ?? 'LC001ALP000IV.pdf';
@@ -1405,6 +1441,7 @@ const blockedByReason = sourceBlocked.reduce((counts, association) => {
 }, {});
 const logicalQuestions = new Set(localQuestionMappings.map(mapping => [
   mapping.level, mapping.year, mapping.paperKey, mapping.n,
+  ...(/-deferred\.pdf$/.test(mapping.fileid) ? ['deferred'] : []),
 ].join('|')));
 const summary = {
   referenceTopics: referenceTopics.length,
@@ -1503,11 +1540,21 @@ const runtime = {
     topic.referenceTopic ? 1 : 0,
   ]),
   partReferences: runtimePartReferences,
-  questionMappings: localQuestionMappings.map(mapping => [
+  questionMappings: localQuestionMappings.filter(mapping => !/-deferred\.pdf$/.test(mapping.fileid)).map(mapping => [
     levelCode(mapping.level),
     'i',
     mapping.year - 2000,
     paperKeyCode(mapping.paperKey),
+    mapping.n,
+    mapping.topicIds.map(id => topicIndex.get(id)),
+  ]),
+  // [h/o, lang, year-2000, paper slot, booklet file id, card number, topic indexes]: the deferred sittings' cards.
+  deferredQuestionMappings: localQuestionMappings.filter(mapping => /-deferred\.pdf$/.test(mapping.fileid)).map(mapping => [
+    levelCode(mapping.level),
+    'i',
+    mapping.year - 2000,
+    paperKeyCode(mapping.paperKey),
+    mapping.fileid,
     mapping.n,
     mapping.topicIds.map(id => topicIndex.get(id)),
   ]),

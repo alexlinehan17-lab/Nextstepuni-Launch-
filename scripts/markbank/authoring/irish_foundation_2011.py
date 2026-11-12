@@ -324,8 +324,8 @@ def build():
                 next_heading={'3A':'Ceist 3 (b) Mír 4','3B':'Ceist 3 (c) Mír 2','3C':None}
                 details=details.split(heading[slot],1)[1]
                 if next_heading[slot]:details=details.split(next_heading[slot],1)[0]
-                card['criteria'][0]['guidance'] += [details,
-                    'Start from the accepted 6-mark answer. Extra sentence −2; two extra sentences −4; three extra sentences −6. Enter the final mark for this part only.']
+                # The accepted answers are rows and the printed penalties a direction (foundationAnswers.ts): the shared note.
+                card['criteria'][0]['guidance'] += [details]
             reading_cards[slot].append(card)
 
     def combine(key,ref,members,pool_quote):

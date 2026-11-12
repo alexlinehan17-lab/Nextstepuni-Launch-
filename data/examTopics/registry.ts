@@ -295,6 +295,8 @@ interface IrishRuntime {
     string,
     number[],
   ]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, paper key, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, '1' | '2', string, string, number[]]>;
 }
 
 interface SpanishRuntime {
@@ -4164,6 +4166,19 @@ for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of i
       ...shared.filter(id => topicIds.includes(id)), ...topicIds,
     ])]);
   }
+}
+// A deferred sitting ("LC001ALP100IV-deferred.pdf") is its own booklet, numbered as June's: its cards join on the
+// booklet, so they never replace or merge with June's card of the same number (Economics' deferred paper does the same).
+for (const [levelCode, langCode, yearOffset, paperKeyCode, fileid, n, topicIndexes] of irishRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey('irish', irishLevel(levelCode), yearOffset + 2000, 'main', fileid, n,
+      irishRuntimePaperKey(paperKeyCode), langCode === 'e' ? 'ev' : 'iv'),
+    topicIndexes.map(topicIndex => {
+      const topicId = irishRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
 }
 
 // Italian has two level-specific menus over written and aural cards. The
