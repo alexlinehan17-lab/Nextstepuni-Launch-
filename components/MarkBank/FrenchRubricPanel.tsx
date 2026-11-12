@@ -18,6 +18,7 @@ import {
   frenchRowScoreId,
   frenchRowValue,
   frenchScoreId,
+  rubricLanguage,
   type FrenchScoreId,
   type FrenchScores,
 } from './frenchRubric';
@@ -146,7 +147,7 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
   const guided = !!rubric.answerGuide?.length;
   const allocation = rubric.allocation;
   return <div className="mb-french-rubric">
-    <p className="mb-french-eyebrow">SEC French marking scheme</p>
+    <p className="mb-french-eyebrow">SEC {rubricLanguage(card.subjectId)} marking scheme</p>
     <h3>{allocation ? 'Claim each answer you gave, as the scheme prices it.' : 'Assess your response'}</h3>
     {!guided && rubric.taskRequirements.length > 0 && <ul className="mb-french-requirements">
       {rubric.taskRequirements.map((text, index) => <li key={index}>{text}</li>)}
