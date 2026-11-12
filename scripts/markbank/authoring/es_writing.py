@@ -248,17 +248,13 @@ def grid_b5(year, level):
 
 
 def _ladder(lines):
-    """A per-turn/per-point ladder, one entry per printed mark value, each the
-    printed lines that make it up joined."""
-    out = []
-    for s in lines:
-        if OPENS.match(s) or (out and re.search(r'marks?$', out[-1]) and not OPENS.match(out[-1])):
-            out.append(s)
-        elif out:
-            out[-1] = f'{out[-1]} {s}'
-        else:
-            out.append(s)
-    return out
+    """A per-turn/per-point ladder, one entry per PRINTED line (coordinator
+    ruling, 12 Nov 2026). The 2020 Higher diary/note ladder prints "5 marks
+    Communicative intention fulfilled" / "Good level of vocabulary" / "Verbs
+    correct" with no full stops; joined, they ran on into one sentence the
+    scheme never wrote, so each printed line stays a line and nothing is
+    added to it."""
+    return list(lines)
 
 
 def grid_c(year, level, q, letter):
