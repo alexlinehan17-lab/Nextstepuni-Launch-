@@ -4432,6 +4432,783 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-1-a", topicId: "spanish-3-0", conceptId: "countries-mentioned",
+    section: "L", questionRef: "2025 OL Section L Q1(a)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. UN DISCO TOUR SILENCIOSO (A SILENT DISCO TOUR)",
+    questionText: "Name two countries mentioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["Ireland","Australia","United States"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — UN DISCO TOUR SILENCIOSO",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-1-b", topicId: "spanish-3-0", conceptId: "with-whom-can-enjoy-this-tour",
+    section: "L", questionRef: "2025 OL Section L Q1(b)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. UN DISCO TOUR SILENCIOSO (A SILENT DISCO TOUR)",
+    questionText: "With whom can you enjoy this tour? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["friends","partner","family"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — UN DISCO TOUR SILENCIOSO",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-1-c", topicId: "spanish-3-0", conceptId: "items-recommended-bring",
+    section: "L", questionRef: "2025 OL Section L Q1(c)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. UN DISCO TOUR SILENCIOSO (A SILENT DISCO TOUR)",
+    questionText: "Name two items you are recommended to bring.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":3,"options":["water","comfortable clothes","sunglasses"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — UN DISCO TOUR SILENCIOSO",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-2-a", topicId: "spanish-3-2", conceptId: "his-favourite-colours",
+    section: "L", questionRef: "2025 OL Section L Q2(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR (INTERVIEW WITH THE FILM DIRECTOR, PEDRO ALMODÓVAR)",
+    questionText: "What are his favourite colours?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Red", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "green", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-2-b", topicId: "spanish-3-2", conceptId: "animal-does",
+    section: "L", questionRef: "2025 OL Section L Q2(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR (INTERVIEW WITH THE FILM DIRECTOR, PEDRO ALMODÓVAR)",
+    questionText: "What animal does he mention?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cats", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-2-c", topicId: "spanish-3-2", conceptId: "worried-future-cinema",
+    section: "L", questionRef: "2025 OL Section L Q2(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR (INTERVIEW WITH THE FILM DIRECTOR, PEDRO ALMODÓVAR)",
+    questionText: "Why is he worried about the future of cinema?\nTick (✓) the correct answer:\nmany have closed\nit is expensive\nit is not popular",
+    questionChoices: ["many have closed","it is expensive","it is not popular"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) many have closed", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON EL CINEASTA, PEDRO ALMODÓVAR",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-3-a", topicId: "spanish-3-2", conceptId: "where-spain-paula-from",
+    section: "L", questionRef: "2025 OL Section L Q3(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA (SPEAKING WITH THE ARTISTIC SKATER, PAULA ROMAGUERA)",
+    questionText: "Where in Spain is Paula from?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Madrid", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-3-b", topicId: "spanish-3-2", conceptId: "when-does-she-train",
+    section: "L", questionRef: "2025 OL Section L Q3(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA (SPEAKING WITH THE ARTISTIC SKATER, PAULA ROMAGUERA)",
+    questionText: "When does she train? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":4,"options":["Monday to Friday","three hours a day","more at weekends"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-3-c", topicId: "spanish-3-2", conceptId: "classes-mentioned",
+    section: "L", questionRef: "2025 OL Section L Q3(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA (SPEAKING WITH THE ARTISTIC SKATER, PAULA ROMAGUERA)",
+    questionText: "Name two classes mentioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["theatre","music","English"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON LA PATINADORA ARTÍSTICA, PAULA ROMAGUERA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-4-a", topicId: "spanish-3-1", conceptId: "thing-birth-month-can-influence",
+    section: "L", questionRef: "2025 OL Section L Q4(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL MES DE NACIMIENTO (YOUR BIRTH MONTH)",
+    questionText: "Name one thing your birth month can influence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["health","personality","height"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL MES DE NACIMIENTO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-4-b", topicId: "spanish-3-1", conceptId: "main-characteristic-those-born-spring",
+    section: "L", questionRef: "2025 OL Section L Q4(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL MES DE NACIMIENTO (YOUR BIRTH MONTH)",
+    questionText: "What is the main characteristic of those born in the Spring?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Optimism", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL MES DE NACIMIENTO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-4-c", topicId: "spanish-3-1", conceptId: "people-born-april",
+    section: "L", questionRef: "2025 OL Section L Q4(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL MES DE NACIMIENTO (YOUR BIRTH MONTH)",
+    questionText: "People born in April are:\nTick (✓) the correct answer:\nnice\nintelligent\ngenerous",
+    questionChoices: ["nice","intelligent","generous"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) nice", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL MES DE NACIMIENTO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-5-a", topicId: "spanish-3-1", conceptId: "when-2024-did-concerts-take-place",
+    section: "L", questionRef: "2025 OL Section L Q5(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU (CONCERTS IN THE SANTIAGO BERNABÉU STADIUM)",
+    questionText: "When in 2024 did the concerts take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "During the summer", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-5-b", topicId: "spanish-3-1", conceptId: "there-complaints-concerts-because",
+    section: "L", questionRef: "2025 OL Section L Q5(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU (CONCERTS IN THE SANTIAGO BERNABÉU STADIUM)",
+    questionText: "There are complaints about the concerts because of:\nTick (✓) the correct answer:\nvandalism\nfireworks\ntraffic",
+    questionChoices: ["vandalism","fireworks","traffic"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) traffic", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-5-c", topicId: "spanish-3-1", conceptId: "will-maximum-duration-concert",
+    section: "L", questionRef: "2025 OL Section L Q5(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU (CONCERTS IN THE SANTIAGO BERNABÉU STADIUM)",
+    questionText: "What will be the maximum duration of a concert?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two hours", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — CONCIERTOS EN EL ESTADIO SANTIAGO BERNABÉU",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-6-a", topicId: "spanish-3-3", conceptId: "day-date-this-weather-forecast",
+    section: "L", questionRef: "2025 OL Section L Q6(a)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "For what day and date is this weather forecast?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Day: Thursday", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "Date: 13th October", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-6-b", topicId: "spanish-3-3", conceptId: "weather-galicia",
+    section: "L", questionRef: "2025 OL Section L Q6(b)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What is said about the weather in Galicia? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["fog","wind"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-6-c", topicId: "spanish-3-3", conceptId: "temperatures-mentioned",
+    section: "L", questionRef: "2025 OL Section L Q6(c)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What temperatures are mentioned?\nMax: Min:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Max: 26", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "Min: 14", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-7-a", topicId: "spanish-3-4", conceptId: "where-new-zealand-town-paniora-clan",
+    section: "L", questionRef: "2025 OL Section L Q7(a)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. UN CLAN MAORÍ DE ESPAÑOLES (A SPANISH MAORI CLAN)",
+    questionText: "Where in New Zealand is the town of the ‘Paniora’ clan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "North Island", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — UN CLAN MAORÍ DE ESPAÑOLES",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-7-b", topicId: "spanish-3-4", conceptId: "manuel-described-physically",
+    section: "L", questionRef: "2025 OL Section L Q7(b)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. UN CLAN MAORÍ DE ESPAÑOLES (A SPANISH MAORI CLAN)",
+    questionText: "How is Manuel described physically?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tall, red‐haired, (very) handsome, green eyes", marks: 8, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — UN CLAN MAORÍ DE ESPAÑOLES",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-7-c", topicId: "spanish-3-4", conceptId: "did-sell-europeans",
+    section: "L", questionRef: "2025 OL Section L Q7(c)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. UN CLAN MAORÍ DE ESPAÑOLES (A SPANISH MAORI CLAN)",
+    questionText: "What did he sell to the Europeans?\nTick (✓) the correct answer:\nfish\nlocal products\nfresh flowers",
+    questionChoices: ["fish","local products","fresh flowers"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) local products", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — UN CLAN MAORÍ DE ESPAÑOLES",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
+    id: "es-2025-ol-l-7-d", topicId: "spanish-3-4", conceptId: "members-his-family-time-his-death",
+    section: "L", questionRef: "2025 OL Section L Q7(d)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. UN CLAN MAORÍ DE ESPAÑOLES (A SPANISH MAORI CLAN)",
+    questionText: "Give two details about the members of his family at the time of his death.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["5 wives","9 children","41 grandchildren"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — UN CLAN MAORÍ DE ESPAÑOLES",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2025 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
     paperFileid: "LC012GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2025 Ordinary Level — © State Examinations Commission.",
     id: "es-2025-ol-a-1-a", topicId: "spanish-5-2", conceptId: "tipo-viajero-ideal-holbox",
@@ -5132,6 +5909,227 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Spanish 2025 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2025 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2025-ol-b-1", topicId: "spanish-6-2", conceptId: "friend-pablo-has-invited-visit-him",
+    section: "B", questionRef: "2025 OL Section B Q1",
+    stem: "Letter / E‐mail",
+    questionText: "Your friend Pablo has invited you to visit him in Santander after the exams. Write a letter /e‐mail to him in Spanish. Use any five of the points mentioned below:\n‐ Tell him you are very tired because you are studying for your exams.\n‐ Say what you did to celebrate your birthday last weekend.\n‐ Mention two things you like about school.\n‐ Tell him about your part‐time job.\n‐ Describe how you will get to Santander.\n‐ Mention what you would like to do in Santander.\n‐ Give him your opinion on Spanish food.\n‐ Tell him about your plans for the rest of the summer.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "There are five points to be communicated. Allow a maximum of 8 marks for each of these.",
+                "(0 – 8 marks may be awarded for each point.) If more than five points are answered, mark all and award the marks for the five highest scoring points.",
+                "(5 x 8m = 40 marks)",
+                "Communicative intention fulfilled.",
+                "Good level of vocabulary. Verb(s) correct. 7 ‐ 8 marks",
+                "Communicative intention more or less fulfilled.",
+                "Quite good level of vocabulary. Verb(s) generally correct. 5 ‐ 6 marks",
+                "Some communicative intention fulfilled.",
+                "There may be a few errors. 3 ‐ 4 marks",
+                "Possible to extract some communicative intention. 1 ‐2 marks",
+                "No communicative intention fulfilled. 0 marks"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E‐MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 1 — answer in Spanish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2025 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2025-ol-b-2-a", topicId: "spanish-6-4", conceptId: "staying-palma-mallorca-with-spanish-friend",
+    section: "B", questionRef: "2025 OL Section B Q2(a)",
+    stem: "Answer (a) or (b).",
+    questionText: "You are staying in Palma de Mallorca with your Spanish friend, Sara. Leave her a note, in Spanish, including any four of the following points:\n‐ Say you are going to the city centre by bus.\n‐ Tell her you are going shopping.\n‐ Ask if she would like to go to the cinema with you at 8pm.\n‐ Say you will go for tapas later.\n‐ Tell her you will not be home for dinner.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Identical allocation in each case.",
+                "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+                "(0 to 5 marks may be awarded for each point.) If more than four points are answered, mark all and award the marks for the four highest scoring points.",
+                "(4 x 5m = 20 marks)",
+                "Message fully conveyed, no grammatical errors. 5 marks",
+                "Message more or less conveyed, some grammatical errors. 4 marks",
+                "Message partly comprehensible. 3 marks",
+                "Possible to extract some sense of message. 2 marks",
+                "Very small amount of message conveyed. 1 mark",
+                "No communication of message. 0 marks"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E‐MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 2 (a) — answer in Spanish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2025 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2025-ol-b-2-b", topicId: "spanish-6-3", conceptId: "doing-language-course-salamanca-diary-entry",
+    section: "B", questionRef: "2025 OL Section B Q2(b)",
+    stem: "Answer (a) or (b).",
+    questionText: "You are doing a language course in Salamanca. Write a diary entry, in Spanish, including any four of the following points:\n‐ Say you are doing a language course for two weeks.\n‐ Describe your teacher.\n‐ Say that you get a lot of homework.\n‐ Say you are speaking Spanish every day.\n‐ Describe the weather in Salamanca.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Identical allocation in each case.",
+                "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+                "(0 to 5 marks may be awarded for each point.) If more than four points are answered, mark all and award the marks for the four highest scoring points.",
+                "(4 x 5m = 20 marks)",
+                "Message fully conveyed, no grammatical errors. 5 marks",
+                "Message more or less conveyed, some grammatical errors. 4 marks",
+                "Message partly comprehensible. 3 marks",
+                "Possible to extract some sense of message. 2 marks",
+                "Very small amount of message conveyed. 1 mark",
+                "No communication of message. 0 marks"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "All answers must be in Spanish.\nCandidates must attempt:\n1. LETTER / E‐MAIL and either 2. (a) NOTE or 2 (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 2 (b) — answer in Spanish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Spanish 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
   {
