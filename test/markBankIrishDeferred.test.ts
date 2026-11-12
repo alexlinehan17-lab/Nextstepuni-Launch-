@@ -14,6 +14,7 @@ import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import higher2025 from '../components/MarkBank/cards/irish/higher-2025-deferred-authored.json';
 import ordinary2025 from '../components/MarkBank/cards/irish/ordinary-2025-deferred-authored.json';
+import higher2024 from '../components/MarkBank/cards/irish/higher-2024-deferred-authored.json';
 import { listeningExerciseKey } from '../components/MarkBank/sessionPlanning';
 import type { IrishCriterion, SecRubricCard } from '../types/markBank';
 
@@ -30,6 +31,9 @@ const SITTINGS: Record<string, Sitting> = {
   'ordinary 2025': { file: ordinary2025 as Manifest, cards: 76, asks: 80,
     shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 13, literatureParts: 18 },
     unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2a-c-an-lasair-choille', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [] },
+  'higher 2024': { file: higher2024 as Manifest, cards: 90, asks: 91,
+    shape: { listening: 8, composition: 9, wholeReading: 12, readingParts: 34, readingSlots: 12, literature: 15, literatureParts: 0 },
+    unprinted: ['poetry-3b-a', 'poetry-3b-b'], byTable: ['literature-4-c', 'literature-4-e', 'prose-2b-a', 'prose-2b-b'] },
 };
 
 const DEFERRED = /^irish-(\d{4})-(hl|ol)-deferred-p([12])-/;
