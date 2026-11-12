@@ -253,12 +253,26 @@ def page_box(page, page_rows, head):
     W = page.rect.width
     foot_top = min(feet) if feet else H - 46
     left, right = PAGE_SIDES[0], W - PAGE_SIDES[1]
-    for box in artwork(page):
-        if box.y0 < top - 14 or box.y0 >= foot_top or box.is_empty:
+    art = [box for box in artwork(page)
+           if not box.is_empty and box.y0 >= top - 14]
+    for box in art:
+        if box.y0 >= foot_top:
             continue
         left = min(left, box.x0 - 3)
         right = max(right, box.x1 + 3)
         bottom = max(bottom, box.y1 + 3)
+    # Artwork that RUNS ON past the running foot's top: 2014 Higher C-5 is a
+    # drawing set as tens of thousands of thin image strips, and its last
+    # dimension lines ("45", "44", "6") start below the page number's top at
+    # y=794.9 and end at 805.8, so the crop cut them through. A piece that
+    # starts within a line of the foot's top, where the artwork above already
+    # reaches down to it, is the same drawing; the foot itself is painted out
+    # by foot_boxes().
+    reach = max((b.y1 for b in art if b.y0 < foot_top), default=0)
+    if reach >= foot_top - LINE:
+        for box in art:
+            if foot_top <= box.y0 < foot_top + LINE:
+                bottom = max(bottom, box.y1 + 3)
     return pymupdf.Rect(max(left, 8), max(top - 14, 18),
                         min(right, W - 8), min(bottom, H - 26))
 

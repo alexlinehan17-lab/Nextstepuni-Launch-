@@ -947,8 +947,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2015-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q4-art.png",
-          "srcHash": "4ff23cd741e2e88e91bd521636218603",
-          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of the Tipping Point game machine and Fig. C-4(a), the crank OA and the link mechanism with the points A, B, C and D (98, 84 and 21; OA 35mm, AB and BC 112mm); part (b): the cam motion in three bullets, a photograph of a radial plate cam, and Fig. C-4(b), the cam with its knife edge follower, R42 arcs and the 0, 90, 270 degree and 30 degree positions. Scale 1:1.",
+          "srcHash": "0a47e644db5a73be54d7e4b2076ccaa9",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of the Tipping Point game machine and Fig. C-4(a), the crank OA and the link mechanism with the points A, B, C and D (98, 84 and 21; OA 35mm, AB and BC 112mm); part (b): the cam motion in three bullets, a photograph of a radial plate cam, and Fig. C-4(b), the cam with its knife edge follower, R42 arcs and the 0, 90, 180, 270 degree and 30 degree positions. Scale 1:1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission"
     },
@@ -968,8 +968,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2015-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2015-HL-paper-secC-q4-art.png",
-          "srcHash": "4ff23cd741e2e88e91bd521636218603",
-          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of the Tipping Point game machine and Fig. C-4(a), the crank OA and the link mechanism with the points A, B, C and D (98, 84 and 21; OA 35mm, AB and BC 112mm); part (b): the cam motion in three bullets, a photograph of a radial plate cam, and Fig. C-4(b), the cam with its knife edge follower, R42 arcs and the 0, 90, 270 degree and 30 degree positions. Scale 1:1.",
+          "srcHash": "0a47e644db5a73be54d7e4b2076ccaa9",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of the Tipping Point game machine and Fig. C-4(a), the crank OA and the link mechanism with the points A, B, C and D (98, 84 and 21; OA 35mm, AB and BC 112mm); part (b): the cam motion in three bullets, a photograph of a radial plate cam, and Fig. C-4(b), the cam with its knife edge follower, R42 arcs and the 0, 90, 180, 270 degree and 30 degree positions. Scale 1:1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission"
     },
