@@ -26,9 +26,11 @@ import { resolve } from 'node:path';
 // two copies drifted once and reported four correct cards as untraceable.
 import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
-import { reviewedPhysicsSource } from '../scripts/markbank/physicsSources.mjs';
-import { reviewedHomeEconomicsSource } from '../scripts/markbank/homeEconomicsSources.mjs';
-import { audioQuestionPaperFileid } from '../scripts/markbank/audioMaterial.mjs';
+import { reviewedPhysicsSourceMetadata } from '../scripts/markbank/physicsSources.mjs';
+import { reviewedHomeEconomicsSourceMetadata } from '../scripts/markbank/homeEconomicsSources.mjs';
+
+// These assertions join committed deck/Atlas/scheme identities. Original PDF
+// hashes remain mandatory in authoring; optional corpus tests verify those bytes.
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -199,7 +201,7 @@ const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { id: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : (card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('-deferred')) || (card.subjectId === 'physics' && reviewedPhysicsSource(card.id)?.sitting === 'deferred') || (card.subjectId === 'home-economics' && reviewedHomeEconomicsSource(card.id)?.sitting === 'deferred') ? '-deferred' : ''}.md`);
+    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : (card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('-deferred')) || (card.subjectId === 'physics' && reviewedPhysicsSourceMetadata(card.id)?.sitting === 'deferred') || (card.subjectId === 'home-economics' && reviewedHomeEconomicsSourceMetadata(card.id)?.sitting === 'deferred') ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
 const schemeText = (card: { id: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) => {
@@ -552,8 +554,8 @@ describe('every card points at the question paper it came from', () => {
         const source = c.subjectId === 'maths' && 'mathematicsScale' in c
           && c.mathematicsScale && c.sourceMaterial?.sourceFileid
           ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
-          : c.subjectId === 'physics' ? reviewedPhysicsSource(c.id)
-          : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
+          : c.subjectId === 'physics' ? reviewedPhysicsSourceMetadata(c.id)
+          : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSourceMetadata(c.id) : undefined;
         const expected = audioQuestionPaperFileid(c, c.subjectId) ?? (source
           ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
           : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection));
