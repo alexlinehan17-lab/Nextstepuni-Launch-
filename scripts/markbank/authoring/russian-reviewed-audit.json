@@ -5018,7 +5018,7 @@
         "Matching keeps allten2-mark answers including2/8 and8/2 without an added unique-number rule. Grammar has13 printed gaps and15 separately priced forms; both original red colours identify the accepted words. Raw Latin-a text-layer characters and complete two-word phrases are preserved without silent normalization."
       ],
       "validation": {
-        "status": "Source-reviewed candidate; remaining all-subject runtime imports await isolated validation after resource-guard stops. Five complete confidence tasks retain unresolved numeric allocations. No publication or completion claim.",
+        "status": "Per-sitting source/runtime checkpoint passed: all 252 focused/required cases and 3 coverage cases. Five complete confidence tasks retain unresolved numeric source issues. Root combined types/build, current-session confidence/quiz checks and native QA remain separate.",
         "sourceQuoteGate": {
           "cards": 24,
           "slices": 217,
@@ -5029,7 +5029,7 @@
           "passed": true
         },
         "sourceCoverageComplete": true,
-        "sourceCheckpointPassed": false,
+        "sourceCheckpointPassed": true,
         "sittingCompletion": false,
         "heldNumericTasks": [
           {
@@ -5078,30 +5078,19 @@
           "rawArtifact": "Every untouched24-page original extraction plus a separately labelled complete-page whitespace-joined rendering; each independently compared to the pinned PDF."
         },
         "runtimeTests": {
-          "completedCases": 35,
-          "focusedCases": 19,
-          "curriculumCasesRetained": 16,
-          "allRequiredPassed": false,
-          "pending": [
-            {
-              "file": "markBankCardPreservation.test.ts",
-              "cases": 112
-            },
-            {
-              "file": "curriculumRegistry.test.ts",
-              "testName": "resolves every Mark Bank card into the correct canonical specification",
-              "cases": 1
-            },
-            {
-              "file": "markBankDeck.test.ts",
-              "cases": 104
-            }
-          ],
-          "resourceGuard": "Preservation fork/thread attempts stopped at pressure2 before assertions. Curriculum16cases completed before the final all-card case was interrupted. Guarded worker-exit errors are retained; no pending pass claimed."
+          "completedCases": 252,
+          "files": 4,
+          "allRequiredPassed": true,
+          "pendingCases": 0,
+          "retainedLocalCases": 35,
+          "remainingRemoteCases": 217,
+          "recovery": "Nineteen focused cases and sixteen curriculum cases were retained. Only the pending preservation112, final curriculum1 and deck104 ran remotely. Earlier resource-guard interruptions are not counted as failures resolved by changed source data.",
+          "run": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43252407664"
         },
         "russianCoverageTests": {
           "cases": 3,
-          "status": "pending isolated validation"
+          "passed": true,
+          "run": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43252407664"
         },
         "targetedLint": "passed",
         "actualRuntimeOverlayLint": {
@@ -5171,8 +5160,18 @@
             "open": 0,
             "excluded": 0
           },
-          "baselineReason": "Russian-only baseline records the independently verified44-source-ask census and exact prior-record preservation; it does not suppress or claim an unrun runtime gate.",
+          "baselineReason": "The Russian-only baseline records the independently reviewed44-ask census and exact prior-record preservation. All3 required coverage cases subsequently passed on the unchanged candidate in isolated CI; no baseline was promoted to silence an unrun gate.",
           "explanation": "Expected nonzero min(47open+254unchanged historical stale-exclusion records,120)=120. Other Russian source work remains."
+        },
+        "remoteEvidence": {
+          "sourceCandidate": "9f729404cb7baa830bb154bfd8037698297a1326",
+          "supportedCandidate": "e5b03d9f38dbefee15dd1acfb5ff1ab7d2df76ac",
+          "workflowOnlyChild": "80e8a318149072e13d30986cf52905f444101f67",
+          "run": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43252407664",
+          "sourceSnapshotUnchanged": true,
+          "passedAssertions": 220,
+          "infrastructureScope": "Only six previously validated generic source-metadata/test blobs, identical to root d693 and the successful 2018 support. Strict pinned-original generator verification remains required.",
+          "logSha256": "f310f00e2bfbc735923275357efa01ff3c641036e73cda262dd611e5016512aa"
         }
       }
     }
