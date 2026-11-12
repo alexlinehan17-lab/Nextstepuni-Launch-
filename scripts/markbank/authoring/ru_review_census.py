@@ -171,6 +171,26 @@ def reviewed_keys(year, level):
         keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None),(4,None)]]
         assert len(keys) == len(set(keys)) == 40
         return set(keys)
+    if (year, level) == (2018, 'hl'):
+        # Independent sweep of all 16 written, 8 aural and 20 scheme pages.
+        # The conflicting whole Cultural Awareness choice remains one ask.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {
+            'papers/2018-hl-000-paper.pdf':'d6687ec578dd821b52da934b60d69713a76c9d22bfe2740bc57572f335a35da7',
+            'papers/2018-hl-A00-paper.pdf':'4168e975614c8d0dcdcf5399c36e2b28e91413519faf87f828974ce1043baf79',
+            'schemes/2018-hl.pdf':'3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a',
+        }.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii','iii')),(2,('i','ii')),(3,('i','ii')),(4,('i','ii'))] for r in rs]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]
+        keys += [(u,None,None,None) for u in ('LA1','LA2')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==19
+        keys += [('L1',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None),(5,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None),(4,None)]]
+        keys += [('L3',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None)]]
+        assert len(keys)==len(set(keys))==39
+        return set(keys)
     if (year, level) == (2017, 'hl'):
         # Independent 44-page original census: 20 written and 19 listening.
         root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'

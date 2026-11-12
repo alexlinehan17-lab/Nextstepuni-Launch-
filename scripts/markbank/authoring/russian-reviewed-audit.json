@@ -4696,6 +4696,213 @@
           "root confidence-label correction3b4f4aba6, intentionally not ported into this older UI lane"
         ]
       }
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "reviewedAt": "2026-11-12",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fullSizeTariffPages": [
+        6,
+        10,
+        11,
+        15
+      ],
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "d6687ec578dd821b52da934b60d69713a76c9d22bfe2740bc57572f335a35da7"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "4168e975614c8d0dcdcf5399c36e2b28e91413519faf87f828974ce1043baf79"
+        },
+        "scheme": {
+          "pages": 20,
+          "sha256": "3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a"
+        }
+      },
+      "independentPracticeTasks": 39,
+      "writtenTasks": 19,
+      "listeningTasks": 20,
+      "sourceReviewedSupportedTasks": 39,
+      "publishedPracticeCards": 39,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "publishedPracticeMarks": 270,
+      "sourceAccountedMarks": 300,
+      "confidenceOnlyPrintedMarks": 30,
+      "newCards": 39,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All 39 original asks are represented. The complete Cultural Awareness choice remains confidence-only because its Lower A numeric bounds conflict; source coverage does not resolve that allocation.",
+      "diagnosedReaderIssues": [
+        "The previous unreviewed parser counted only 15 listening parents and missed all written asks and listening Roman leaves. The independent pinned 44-page sweep has 19 written and 20 listening asks, increasing the subject denominator by 24.",
+        "One Cultural Awareness choice retains all five topics, 50 Russian words, five factual details, title, C10/E20, all partial/deduction/lower-scale rules and both original expression grids. Lower A prose says 9–14 while its own bracket and table include 15–16. No ceiling is chosen; all rows are unpriced and numeric scoring remains held.",
+        "Four summaries use four manual distinct full details at two each plus manual discretion two. No general one-mark content partial is printed. Source-bound Russian-word/weak-English exception preserves discretion when language flags zero content. Incomplete sections cap discretion at one; summary4 sequence not understood also caps it at one.",
+        "Summary4 preserves the original paper page8 website www.scherbackov.ru and scheme page7 www.scherbakov.ru visibly, without adjudication. Summary2 continuation is split into two physical-page quotes, retaining the complete sentence and excluding only the original standalone footer.",
+        "Reading partial pools stay beside manual distinct-answer slots where a unique partial-to-full pairing is not established. The unprefixed Anna sentence stays in its original location. Cross-section acceptance is retained literally.",
+        "LA1 is five of nine supplied aspect-preserving infinitives, not all nine. LA2 retains all29 original music entries, including the separate line-boundary words записать and звезда; each slash/parenthesis entry remains one option and the printed example is not added to the pool.",
+        "Grammar has fourteen printed bracket prompts but fifteen priced forms; школьных занятий has two separately priced words. All fifteen underlined source forms are extracted by their original underline baselines, with the full spelling/Latin-letter/wrong-tense zero rule.",
+        "Guided writing retains all three options, category requirements, one mark per content detail, literal borrowed-phrase rule, C15/E15/TC10, LowerE10 and nonoverlapping LowerA7–12 source grids. Soft-sign penalty is one OR two, not the prior year’s one-only rule.",
+        "Listening allows a combination of half-details from two segments to earn one two-mark point. Manual zero-or-two distinct response slots preserve that rule without inventing atom prices. The husband/Tatyana Dublin example earns two once; museums earns none. All literal full/no-credit pools and Russian-answer acceptance remain visible."
+      ],
+      "validation": {
+        "sourceCoverageComplete": true,
+        "sittingCompletion": false,
+        "sourceQuoteGate": {
+          "cards": 39,
+          "slices": 227,
+          "passed": true
+        },
+        "mandatoryOriginalTests": {
+          "cases": 10,
+          "passed": true,
+          "originalSlices": 227,
+          "rawArtifact": "All 20 original pages preserved as extracted from the pinned PDF, with a separate mechanically joined full-page form retaining standalone numeric allocations."
+        },
+        "runtimeTests": {
+          "completedCases": 244,
+          "files": 4,
+          "allRequiredPassed": false,
+          "pendingCases": 1,
+          "deckRecovery": "102 completed assertions retained; scheme-exists passed after adding raw extraction. The remaining full-row provenance import was resource-guard stopped before assertions after the source artifact fix. No pass is claimed."
+        },
+        "preservation": {
+          "all1268PriorAuthoredRecordsUnchanged": true,
+          "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+          "all1268PriorRuntimeRecordsUnchanged": true,
+          "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+          "scripts/paper-trail/answers/2018/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 13,
+            "newRows": 19
+          },
+          "public/paper-answers/2018/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 13,
+            "newRows": 19
+          },
+          "public/paper-anchors/2018/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 13,
+            "newRows": 19
+          },
+          "scripts/paper-trail/answers/2018/LC099ALPA00EV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 20
+          },
+          "public/paper-answers/2018/LC099ALPA00EV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 20
+          },
+          "public/paper-anchors/2018/LC099ALPA00EV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 20
+          },
+          "allPriorRussianTopicQuestionRecordsUnchanged": true,
+          "allOtherSittingAuditRecordsUnchanged": true
+        },
+        "deterministicRegenerations": 2,
+        "appTypes": "pending root combined integration",
+        "build": "pending root combined integration",
+        "browserQA": "coordinator-owned; not claimed",
+        "heldNumericTasks": [
+          {
+            "questionRef": "2018 HL Section SE Q2",
+            "reason": "Original Lower A numeric range 9–14 conflicts with the same instruction and table including 15–16. Complete 30-mark task is available for confidence review only."
+          }
+        ],
+        "rootIntegrationRequirements": [
+          "Actual both-layout confidence headers must not suggest a numeric30-mark assessment maximum.",
+          "Exclude actual Cultural Awareness task from numeric quiz selection.",
+          "Preserve all prior cards/anchors and run combined full types/build."
+        ],
+        "status": "Source-reviewed candidate; coverage3 and final provenance1 await isolated remote validation. Cultural Awareness numeric range remains held; root full types/build and confidence-label/quiz integration also remain required.",
+        "russianCoverageTests": {
+          "cases": 3,
+          "status": "pending isolated remote validation"
+        },
+        "targetedLint": "passed",
+        "actualRuntimeOverlayLint": {
+          "cards": 1324,
+          "findings": 0,
+          "rulesUnchanged": true
+        },
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "unpricedResult": {
+          "marksClaimed": 0,
+          "marksAvailable": 0,
+          "bothLayoutsConfidenceGradeSaved": true
+        },
+        "reconciliation": {
+          "commandExitCode": 120,
+          "subjectComplete": false,
+          "covered": 1328,
+          "leaves": 1424,
+          "open": 70,
+          "excluded": 26,
+          "orphans": 0,
+          "unparsed": 0,
+          "historicalStaleExclusionsUnchanged": 254,
+          "targetSitting": {
+            "asks": 39,
+            "covered": 39,
+            "open": 0,
+            "excluded": 0
+          },
+          "baselineReason": "Baseline records independently reviewed39 asks, original-source proof and exact prior-record preservation; it was not changed to suppress any test failure. Runtime coverage remains pending.",
+          "explanation": "Expected nonzero subject-wide result: min(70 open +254 unchanged historical stale-exclusion records,120)=120. Target sitting is fully covered; other Russian source work remains."
+        }
+      }
     }
   ]
 }
