@@ -483,7 +483,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2016-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2016-OL-paper-secC-q1-art.png",
-          "srcHash": "7e0f7c83e872a544d70ce46d032766dd",
+          "srcHash": "38d048b98ae7b56de37114b0102ffc76",
           "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Ordinary Level — © State Examinations Commission"
@@ -522,7 +522,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2016-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2016-OL-paper-secC-q1-art.png",
-          "srcHash": "7e0f7c83e872a544d70ce46d032766dd",
+          "srcHash": "38d048b98ae7b56de37114b0102ffc76",
           "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Ordinary Level — © State Examinations Commission"
@@ -1284,7 +1284,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2017-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2017-OL-paper-secC-q1-art.png",
-          "srcHash": "45237781177eaa0a4fc2653f95231da3",
+          "srcHash": "805f0f77ad07360ac8056e9cc945d381",
           "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Ordinary Level — © State Examinations Commission"
@@ -1321,7 +1321,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2017-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2017-OL-paper-secC-q1-art.png",
-          "srcHash": "45237781177eaa0a4fc2653f95231da3",
+          "srcHash": "805f0f77ad07360ac8056e9cc945d381",
           "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Ordinary Level — © State Examinations Commission"
@@ -1360,7 +1360,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2017-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2017-OL-paper-secC-q1-art.png",
-          "srcHash": "45237781177eaa0a4fc2653f95231da3",
+          "srcHash": "805f0f77ad07360ac8056e9cc945d381",
           "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Ordinary Level — © State Examinations Commission"
@@ -2132,7 +2132,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
-          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "srcHash": "49ac2e39e93620a4d74776c851d75136",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
@@ -2169,7 +2169,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
-          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "srcHash": "49ac2e39e93620a4d74776c851d75136",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
@@ -2210,7 +2210,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
-          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "srcHash": "49ac2e39e93620a4d74776c851d75136",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
@@ -3063,7 +3063,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
+          "srcHash": "448561a2f50179fc9b93cb6f7387c738",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -3100,7 +3100,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
+          "srcHash": "448561a2f50179fc9b93cb6f7387c738",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -3139,7 +3139,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
+          "srcHash": "448561a2f50179fc9b93cb6f7387c738",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -3954,7 +3954,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
+          "srcHash": "b20df6395488ab8ebecae22736593e6c",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -3991,7 +3991,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
+          "srcHash": "b20df6395488ab8ebecae22736593e6c",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -4030,7 +4030,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
+          "srcHash": "b20df6395488ab8ebecae22736593e6c",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -4828,7 +4828,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
-          "srcHash": "a6a05182981a968538104efddf575c5d",
+          "srcHash": "3d1cf38d85956376f442aaf1e44bb94a",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway on the M8 motorway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -4869,7 +4869,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
-          "srcHash": "a6a05182981a968538104efddf575c5d",
+          "srcHash": "3d1cf38d85956376f442aaf1e44bb94a",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway on the M8 motorway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -5611,7 +5611,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
-          "srcHash": "4670b1ad9c9023ad3f4b0640250d6b22",
+          "srcHash": "3930be0a557aacea79c7b2b3cc82f36b",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway running through a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -5649,7 +5649,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
-          "srcHash": "4670b1ad9c9023ad3f4b0640250d6b22",
+          "srcHash": "3930be0a557aacea79c7b2b3cc82f36b",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway running through a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -6430,7 +6430,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "044328ac9a33b7d7164215ca101ab316",
+          "srcHash": "0bf36fa55423ff695479126d089fe8e6",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -6467,7 +6467,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "044328ac9a33b7d7164215ca101ab316",
+          "srcHash": "0bf36fa55423ff695479126d089fe8e6",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -6506,7 +6506,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "044328ac9a33b7d7164215ca101ab316",
+          "srcHash": "0bf36fa55423ff695479126d089fe8e6",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -7304,7 +7304,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
-          "srcHash": "e364d0ede0bb447c7934dadd804ee246",
+          "srcHash": "3e22f3f41c673eaf446e28d0dae32df9",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a country road running between two cuttings; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -7342,7 +7342,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
-          "srcHash": "e364d0ede0bb447c7934dadd804ee246",
+          "srcHash": "3e22f3f41c673eaf446e28d0dae32df9",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a country road running between two cuttings; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -8126,7 +8126,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
+          "srcHash": "d81f139334845e00a97d1d1f46fee732",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -8163,7 +8163,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
+          "srcHash": "d81f139334845e00a97d1d1f46fee732",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -8202,7 +8202,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
+          "srcHash": "d81f139334845e00a97d1d1f46fee732",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
