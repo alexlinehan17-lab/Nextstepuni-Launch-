@@ -13346,4 +13346,1256 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the complete original source and question in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "medical-device-business",
+    section: "A", questionRef: "2016 CL Section A Q1",
+    questionText: "What type of product does TechMedPro make?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "product", kind: "point", verbatim: "TechMed Pro is a company which manufactures medical devices.", marks: 2, contextNote: "The original complete answer receives 2 marks. No internal split is printed." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a2", topicId: "lcvp-link-modules-1-0", conceptId: "senior-team-leader-role",
+    section: "A", questionRef: "2016 CL Section A Q2",
+    questionText: "What is a Senior Team Leader in TechMedPro expected to do?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What is a Senior Team Leader in TechMedPro expected to do?", marks: 2, contextNote: "2 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Work with teams/to help develop and improve TechMedPros products.","Help drive high performance/motivation/quality assurance within the team.","Oversee the production line."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a3", topicId: "lcvp-link-modules-0-0", conceptId: "competent-employee",
+    section: "A", questionRef: "2016 CL Section A Q3",
+    questionText: "Why does Siobhán consider herself to be a competent employee?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Why does Siobhán consider herself to be a competent employee?", marks: 2, contextNote: "2 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Under her supervision targets are always met.","Strict on time keeping."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a4", topicId: "lcvp-link-modules-1-0", conceptId: "effective-leadership-style",
+    section: "A", questionRef: "2016 CL Section A Q4",
+    questionText: "Explain why Siobhán believes her leadership style is effective.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain why Siobhán believes her leadership style is effective.", marks: 4, contextNote: "Original allocation: 2 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: She meets her production targets/or she will get the blame. | Worked for TechMedPro for 3 years/they never complained she did not meet her targets. | She motivates them/she tells them what their targets are/she makes sure they reach them.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a5", topicId: "lcvp-link-modules-1-0", conceptId: "intrinsic-motivation",
+    section: "A", questionRef: "2016 CL Section A Q5",
+    questionText: "Why is motivation from within considered more beneficial to employees?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Why is motivation from within considered more beneficial to employees?", marks: 4, contextNote: "2 distinct relevant responses; 2 or 0 marks each. All original alternatives remain visible. Original 2@2m (0/2): no 1-mark partial.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Fosters pride in ones work.","Encourages happier work place.","Can lead to greater productivity/creativity/work harder/work better."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a6", topicId: "lcvp-link-modules-1-0", conceptId: "team-motivation",
+    section: "A", questionRef: "2016 CL Section A Q6",
+    questionText: "Explain some of the ways Siobhán could motivate her team to perform better.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Explain some of the ways Siobhán could motivate her team to perform better.", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Try to inspire them.","Advance their skills.","Give them variety in their work.","Job rotation.","Listen to feedback.","Monetary/non monetary rewards.","Let them make decisions/share decision making."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a7", topicId: "lcvp-link-modules-1-0", conceptId: "manager-leader-contrasts",
+    section: "A", questionRef: "2016 CL Section A Q7",
+    questionText: "Outline the differences between a manager and a leader.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "contrasts", kind: "anyN", verbatim: "Outline the differences between a manager and a leader.", marks: 6, contextNote: "Original 3@2m (0/2). Each response must contain the complete manager–leader contrast; no isolated-cell credit or 1-mark partial. All four paired models remain. The printed phrase “Facilities creativity” is retained literally.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Controls — Inspires/motivates","Focuses on task in hand — Sees the bigger picture","Strict with people/apathy/disengaged — Empathetic","Tells them what to do — Facilities creativity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-a8", topicId: "lcvp-link-modules-0-0", conceptId: "workplace-feedback-training",
+    section: "A", questionRef: "2016 CL Section A Q8",
+    questionText: "Explain the reasons why it is important for TechMedPro to provide appropriate staff training in relation to feedback in the workplace.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "reasons", kind: "anyN", verbatim: "Explain the reasons why it is important for TechMedPro to provide appropriate staff training in relation to feedback in the workplace.", marks: 6, contextNote: "Original 6@1m. Training in giving and receiving feedback, both positive and negative will help staff to learn areas to improve on:", openList: true, group: {"claimMax":6,"perOption":1,"options":["Improves communication within the workplace.","Key tool in successful motivation and leadership.","Outline areas to improve upon/lets employees know what is expected of them.","Creates more convivial work environment.","Increases Productivity.","Better decisions are made."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2016 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2016 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Leadership sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-b1", topicId: "lcvp-link-modules-1-2", conceptId: "community-project-stakeholders",
+    section: "B", questionRef: "2016 CL Section B Q1",
+    stem: "GLENOR COMMUNITY PROJECT Glenor is a small picturesque town of approximately two thousand inhabitants. It is located 80km from a large city and approximately 30km from three larger towns. Glenor’s Development Committee is a very active and progressive organisation and has been involved in community development for many years. All stakeholders work tirelessly on issues that matter to them. More recently, due to increased optimism in the local economy, the committee has tried to focus on more innovative ways to increase the town’s prosperity. Ratlow Forest Park is nearby, set in the scenic foot hills of Glenor and covers approximately 1,200 hectares. In recent years Glenor’s Development Committee has been busy developing this wonderful park which now includes 20km of looped walking trails of varying degrees of difficulty. A modern children’s playground and a picnic area are in close proximity to the park. The Cuan River stretches the full length of the park and is used for angling and offers the possibility of being used for water sports. The committee believes Glenor’s natural resources can be used to the area’s advantage. Glenor’s Development Committee has successfully completed a town improvement project including replacing old inefficient street lighting with new ornate poles incorporating high efficiency light bulbs. Also, new hanging baskets and large richly planted flower pots have been added to enhance the ambiance of the town. This improvement work has helped to transform the town in many ways resulting in it being a recent winner of a National Tidy Towns Award. The upsurge of general goodwill in recent years has resulted in considerable financial gains as is evident from the increased income generated from tourism. However, there is still scope to improve this further. Presently, members of the committee are developing a website and a smart phone app for the town. Both the website and app will contain all the information that a visitor may require about Glenor. These developments will be of huge benefit to visitors and residents alike. Glenor’s Development Committee plans to maximise the use of the area’s vast natural resources. Recently, a meeting of all interested stakeholders was held and from the discussions both a short and long-term project were identified. The ‘Glenor Active Challenge 2016’ was decided on as an achievable short-term project. This will be open to walkers and runners alike and will involve tracks ranging from easy to highly challenging, thus allowing for the full use of Rathlow Park. The committee can apply for grant aid which will provide funding to purchase necessary safety equipment and undertake marketing and promotional campaigns. Negotiations are still underway as to whether mobile catering should be allowed in the park during this event. Effective forward planning and consultation, with communities who have overseen similar projects, is fundamental. It is hoped that large numbers of people will be attracted to the town and, if successful, it is envisaged that it could become an annual event. Having spoken to groups in other regions experienced in community development, local residents and businesses, the committee realises that the future success of the area lies in the appropriate development of local amenities and natural resources. Consequently, after much enthusiastic debate a “Tree Top Adventure Walk” was agreed as a potential long-term project. This will involve doing a SWOT analysis, a feasibility study and long-term planning. All stakeholders will be involved in the planning and delivery of this new initiative. Both visitors and residents are looking forward to experiencing the rural environment in this new and innovative manner. The Development Committee realise that the future prosperity of the town is contingent on its ability to attract and manage investment while continuing to develop the town as a competitive tourist and recreational destination.",
+    questionText: "List three stakeholders that could be involved in Glenor’s Development Committee.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List three stakeholders that could be involved in Glenor’s Development Committee.", marks: 6, contextNote: "3 distinct relevant responses; 2 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Local people, residents, employees","Local businesses/employers/entrepreneurs","Industry","Government agencies – LEO/CEB, Leader, Solas/FAS, Failte Ireland, ETB, APC","Local voluntary/charitable organisations","Local community groups","Sporting organisations","Financial services/Investors","Schools","Interest groups","Suppliers","Local politicians/county councilors/TDs/County Council"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Glenor Community Project — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      9
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-b2a", topicId: "lcvp-link-modules-1-2", conceptId: "linked-stakeholder-contributions-benefits",
+    section: "B", questionRef: "2016 CL Section B Q2(a)",
+    stem: "GLENOR COMMUNITY PROJECT Glenor is a small picturesque town of approximately two thousand inhabitants. It is located 80km from a large city and approximately 30km from three larger towns. Glenor’s Development Committee is a very active and progressive organisation and has been involved in community development for many years. All stakeholders work tirelessly on issues that matter to them. More recently, due to increased optimism in the local economy, the committee has tried to focus on more innovative ways to increase the town’s prosperity. Ratlow Forest Park is nearby, set in the scenic foot hills of Glenor and covers approximately 1,200 hectares. In recent years Glenor’s Development Committee has been busy developing this wonderful park which now includes 20km of looped walking trails of varying degrees of difficulty. A modern children’s playground and a picnic area are in close proximity to the park. The Cuan River stretches the full length of the park and is used for angling and offers the possibility of being used for water sports. The committee believes Glenor’s natural resources can be used to the area’s advantage. Glenor’s Development Committee has successfully completed a town improvement project including replacing old inefficient street lighting with new ornate poles incorporating high efficiency light bulbs. Also, new hanging baskets and large richly planted flower pots have been added to enhance the ambiance of the town. This improvement work has helped to transform the town in many ways resulting in it being a recent winner of a National Tidy Towns Award. The upsurge of general goodwill in recent years has resulted in considerable financial gains as is evident from the increased income generated from tourism. However, there is still scope to improve this further. Presently, members of the committee are developing a website and a smart phone app for the town. Both the website and app will contain all the information that a visitor may require about Glenor. These developments will be of huge benefit to visitors and residents alike. Glenor’s Development Committee plans to maximise the use of the area’s vast natural resources. Recently, a meeting of all interested stakeholders was held and from the discussions both a short and long-term project were identified. The ‘Glenor Active Challenge 2016’ was decided on as an achievable short-term project. This will be open to walkers and runners alike and will involve tracks ranging from easy to highly challenging, thus allowing for the full use of Rathlow Park. The committee can apply for grant aid which will provide funding to purchase necessary safety equipment and undertake marketing and promotional campaigns. Negotiations are still underway as to whether mobile catering should be allowed in the park during this event. Effective forward planning and consultation, with communities who have overseen similar projects, is fundamental. It is hoped that large numbers of people will be attracted to the town and, if successful, it is envisaged that it could become an annual event. Having spoken to groups in other regions experienced in community development, local residents and businesses, the committee realises that the future success of the area lies in the appropriate development of local amenities and natural resources. Consequently, after much enthusiastic debate a “Tree Top Adventure Walk” was agreed as a potential long-term project. This will involve doing a SWOT analysis, a feasibility study and long-term planning. All stakeholders will be involved in the planning and delivery of this new initiative. Both visitors and residents are looking forward to experiencing the rural environment in this new and innovative manner. The Development Committee realise that the future prosperity of the town is contingent on its ability to attract and manage investment while continuing to develop the town as a competitive tourist and recreational destination. List three stakeholders that could be involved in Glenor’s Development Committee.",
+    questionText: "Consider one of the stakeholders mentioned in Q1. (i) Outline what benefits he/she can bring to the committee. (ii) Give two benefits to this stakeholder of becoming involved with the committee.",
+    tariffModel: {"kind":"questionTotal","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "contributions", kind: "point", verbatim: "Type of support discussed specific to the stakeholder chosen.", marks: null, contextNote: "Numeric scoring held. One complete linked 6-mark task: (i) 2@1m; (ii) 2@2m (1+1). (If not linked; mark both and disallow the lower mark) The source does not name the comparison operands. Keep both subasks tied to the chosen stakeholder, all original models and the literal linkage clause; confidence review only pending authoritative clarification. No deduction rule is inferred." },
+    { id: "contribution-1", kind: "point", verbatim: "Skills/expertise", marks: null },
+    { id: "contribution-2", kind: "point", verbatim: "Donations/fundraising", marks: null },
+    { id: "contribution-3", kind: "point", verbatim: "Help with applying for grants", marks: null },
+    { id: "contribution-4", kind: "point", verbatim: "Training offered for others", marks: null },
+    { id: "contribution-5", kind: "point", verbatim: "Provide personnel/volunteers", marks: null },
+    { id: "contribution-6", kind: "point", verbatim: "Increases success/profitability of projects", marks: null },
+    { id: "contribution-7", kind: "point", verbatim: "Knowledge of the local area", marks: null },
+    { id: "contribution-8", kind: "point", verbatim: "Good contacts", marks: null },
+    { id: "benefits", kind: "point", verbatim: "(If not linked; mark both and disallow the lower mark)", marks: null },
+    { id: "benefit-1", kind: "point", verbatim: "Business improvement", marks: null },
+    { id: "benefit-2", kind: "point", verbatim: "Recognition of the contribution they have made/increase their profile/good for public image/they are seen as giving back to their local community/sense of achievement and pride in improving their community", marks: null },
+    { id: "benefit-3", kind: "point", verbatim: "Corporate Social Responsibility aspect", marks: null },
+    { id: "benefit-4", kind: "point", verbatim: "More informed on local issues", marks: null },
+    { id: "benefit-5", kind: "point", verbatim: "Get a say in the development of their own town", marks: null },
+    { id: "benefit-6", kind: "point", verbatim: "Good for networking – may meet people who would be able to help their own business", marks: null },
+    { id: "benefit-7", kind: "point", verbatim: "May help them develop new skills", marks: null },
+    { id: "benefit-8", kind: "point", verbatim: "Social aspect", marks: null },
+    { id: "benefit-9", kind: "point", verbatim: "Personal/ Use their involvement with the committee to improve their CV.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Glenor Community Project — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-b2b", topicId: "lcvp-link-modules-1-2", conceptId: "community-development-benefits",
+    section: "B", questionRef: "2016 CL Section B Q2(b)",
+    stem: "GLENOR COMMUNITY PROJECT Glenor is a small picturesque town of approximately two thousand inhabitants. It is located 80km from a large city and approximately 30km from three larger towns. Glenor’s Development Committee is a very active and progressive organisation and has been involved in community development for many years. All stakeholders work tirelessly on issues that matter to them. More recently, due to increased optimism in the local economy, the committee has tried to focus on more innovative ways to increase the town’s prosperity. Ratlow Forest Park is nearby, set in the scenic foot hills of Glenor and covers approximately 1,200 hectares. In recent years Glenor’s Development Committee has been busy developing this wonderful park which now includes 20km of looped walking trails of varying degrees of difficulty. A modern children’s playground and a picnic area are in close proximity to the park. The Cuan River stretches the full length of the park and is used for angling and offers the possibility of being used for water sports. The committee believes Glenor’s natural resources can be used to the area’s advantage. Glenor’s Development Committee has successfully completed a town improvement project including replacing old inefficient street lighting with new ornate poles incorporating high efficiency light bulbs. Also, new hanging baskets and large richly planted flower pots have been added to enhance the ambiance of the town. This improvement work has helped to transform the town in many ways resulting in it being a recent winner of a National Tidy Towns Award. The upsurge of general goodwill in recent years has resulted in considerable financial gains as is evident from the increased income generated from tourism. However, there is still scope to improve this further. Presently, members of the committee are developing a website and a smart phone app for the town. Both the website and app will contain all the information that a visitor may require about Glenor. These developments will be of huge benefit to visitors and residents alike. Glenor’s Development Committee plans to maximise the use of the area’s vast natural resources. Recently, a meeting of all interested stakeholders was held and from the discussions both a short and long-term project were identified. The ‘Glenor Active Challenge 2016’ was decided on as an achievable short-term project. This will be open to walkers and runners alike and will involve tracks ranging from easy to highly challenging, thus allowing for the full use of Rathlow Park. The committee can apply for grant aid which will provide funding to purchase necessary safety equipment and undertake marketing and promotional campaigns. Negotiations are still underway as to whether mobile catering should be allowed in the park during this event. Effective forward planning and consultation, with communities who have overseen similar projects, is fundamental. It is hoped that large numbers of people will be attracted to the town and, if successful, it is envisaged that it could become an annual event. Having spoken to groups in other regions experienced in community development, local residents and businesses, the committee realises that the future success of the area lies in the appropriate development of local amenities and natural resources. Consequently, after much enthusiastic debate a “Tree Top Adventure Walk” was agreed as a potential long-term project. This will involve doing a SWOT analysis, a feasibility study and long-term planning. All stakeholders will be involved in the planning and delivery of this new initiative. Both visitors and residents are looking forward to experiencing the rural environment in this new and innovative manner. The Development Committee realise that the future prosperity of the town is contingent on its ability to attract and manage investment while continuing to develop the town as a competitive tourist and recreational destination.",
+    questionText: "State and explain three benefits the development committee’s work brings to the area.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "State and explain three benefits the development committee’s work brings to the area.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: May create business or employment. | Local amenities/facilities improved. | Local environment improved – Tidy towns improves the appearance of the area for all residents. | Corporate Social Responsibility aspect. | Recognition for town from Tidy towns award – may bring more visitors to the area. | Improved Community Spirit | Increase town prosperity/financial gains/increased income generated from tourism", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Glenor Community Project — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-b3a", topicId: "lcvp-link-modules-1-3", conceptId: "long-term-project-planning",
+    section: "B", questionRef: "2016 CL Section B Q3(a)",
+    stem: "GLENOR COMMUNITY PROJECT Glenor is a small picturesque town of approximately two thousand inhabitants. It is located 80km from a large city and approximately 30km from three larger towns. Glenor’s Development Committee is a very active and progressive organisation and has been involved in community development for many years. All stakeholders work tirelessly on issues that matter to them. More recently, due to increased optimism in the local economy, the committee has tried to focus on more innovative ways to increase the town’s prosperity. Ratlow Forest Park is nearby, set in the scenic foot hills of Glenor and covers approximately 1,200 hectares. In recent years Glenor’s Development Committee has been busy developing this wonderful park which now includes 20km of looped walking trails of varying degrees of difficulty. A modern children’s playground and a picnic area are in close proximity to the park. The Cuan River stretches the full length of the park and is used for angling and offers the possibility of being used for water sports. The committee believes Glenor’s natural resources can be used to the area’s advantage. Glenor’s Development Committee has successfully completed a town improvement project including replacing old inefficient street lighting with new ornate poles incorporating high efficiency light bulbs. Also, new hanging baskets and large richly planted flower pots have been added to enhance the ambiance of the town. This improvement work has helped to transform the town in many ways resulting in it being a recent winner of a National Tidy Towns Award. The upsurge of general goodwill in recent years has resulted in considerable financial gains as is evident from the increased income generated from tourism. However, there is still scope to improve this further. Presently, members of the committee are developing a website and a smart phone app for the town. Both the website and app will contain all the information that a visitor may require about Glenor. These developments will be of huge benefit to visitors and residents alike. Glenor’s Development Committee plans to maximise the use of the area’s vast natural resources. Recently, a meeting of all interested stakeholders was held and from the discussions both a short and long-term project were identified. The ‘Glenor Active Challenge 2016’ was decided on as an achievable short-term project. This will be open to walkers and runners alike and will involve tracks ranging from easy to highly challenging, thus allowing for the full use of Rathlow Park. The committee can apply for grant aid which will provide funding to purchase necessary safety equipment and undertake marketing and promotional campaigns. Negotiations are still underway as to whether mobile catering should be allowed in the park during this event. Effective forward planning and consultation, with communities who have overseen similar projects, is fundamental. It is hoped that large numbers of people will be attracted to the town and, if successful, it is envisaged that it could become an annual event. Having spoken to groups in other regions experienced in community development, local residents and businesses, the committee realises that the future success of the area lies in the appropriate development of local amenities and natural resources. Consequently, after much enthusiastic debate a “Tree Top Adventure Walk” was agreed as a potential long-term project. This will involve doing a SWOT analysis, a feasibility study and long-term planning. All stakeholders will be involved in the planning and delivery of this new initiative. Both visitors and residents are looking forward to experiencing the rural environment in this new and innovative manner. The Development Committee realise that the future prosperity of the town is contingent on its ability to attract and manage investment while continuing to develop the town as a competitive tourist and recreational destination.",
+    questionText: "Why does the committee need to develop a plan for the long-term project?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Why does the committee need to develop a plan for the long-term project?", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Identifies the goals/objectives you wish to achieve. It defines the goals/aims and objectives/can assess actual performance compared to what is expected. | Sets out an objective that is achievable and measurable/brings clarity/structure to your plan. /Planning helps anticipate problems and aids problem solving. | Helps to establish resources required/staffing/materials/equipment etc. | Helps to keep track of who is responsible for what. | Identifies the steps needed to achieve their goal/helps decision making/helps you see how aims and objectives can be met/Sets out a time plan/completing work to a deadline. | Banks or other financial institutions/agencies will require a plan if you apply for a loan or look for a grant. | Allows you to plan for the future – costings/finances/capital purchases –be realistic about finances needed", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Glenor Community Project — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-b3b", topicId: "lcvp-link-modules-1-3", conceptId: "other-community-project-evaluation",
+    section: "B", questionRef: "2016 CL Section B Q3(b)",
+    stem: "GLENOR COMMUNITY PROJECT Glenor is a small picturesque town of approximately two thousand inhabitants. It is located 80km from a large city and approximately 30km from three larger towns. Glenor’s Development Committee is a very active and progressive organisation and has been involved in community development for many years. All stakeholders work tirelessly on issues that matter to them. More recently, due to increased optimism in the local economy, the committee has tried to focus on more innovative ways to increase the town’s prosperity. Ratlow Forest Park is nearby, set in the scenic foot hills of Glenor and covers approximately 1,200 hectares. In recent years Glenor’s Development Committee has been busy developing this wonderful park which now includes 20km of looped walking trails of varying degrees of difficulty. A modern children’s playground and a picnic area are in close proximity to the park. The Cuan River stretches the full length of the park and is used for angling and offers the possibility of being used for water sports. The committee believes Glenor’s natural resources can be used to the area’s advantage. Glenor’s Development Committee has successfully completed a town improvement project including replacing old inefficient street lighting with new ornate poles incorporating high efficiency light bulbs. Also, new hanging baskets and large richly planted flower pots have been added to enhance the ambiance of the town. This improvement work has helped to transform the town in many ways resulting in it being a recent winner of a National Tidy Towns Award. The upsurge of general goodwill in recent years has resulted in considerable financial gains as is evident from the increased income generated from tourism. However, there is still scope to improve this further. Presently, members of the committee are developing a website and a smart phone app for the town. Both the website and app will contain all the information that a visitor may require about Glenor. These developments will be of huge benefit to visitors and residents alike. Glenor’s Development Committee plans to maximise the use of the area’s vast natural resources. Recently, a meeting of all interested stakeholders was held and from the discussions both a short and long-term project were identified. The ‘Glenor Active Challenge 2016’ was decided on as an achievable short-term project. This will be open to walkers and runners alike and will involve tracks ranging from easy to highly challenging, thus allowing for the full use of Rathlow Park. The committee can apply for grant aid which will provide funding to purchase necessary safety equipment and undertake marketing and promotional campaigns. Negotiations are still underway as to whether mobile catering should be allowed in the park during this event. Effective forward planning and consultation, with communities who have overseen similar projects, is fundamental. It is hoped that large numbers of people will be attracted to the town and, if successful, it is envisaged that it could become an annual event. Having spoken to groups in other regions experienced in community development, local residents and businesses, the committee realises that the future success of the area lies in the appropriate development of local amenities and natural resources. Consequently, after much enthusiastic debate a “Tree Top Adventure Walk” was agreed as a potential long-term project. This will involve doing a SWOT analysis, a feasibility study and long-term planning. All stakeholders will be involved in the planning and delivery of this new initiative. Both visitors and residents are looking forward to experiencing the rural environment in this new and innovative manner. The Development Committee realise that the future prosperity of the town is contingent on its ability to attract and manage investment while continuing to develop the town as a competitive tourist and recreational destination.",
+    questionText: "Identify one other possible project that could be developed. How would you evaluate its short and long term success?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "project", kind: "point", verbatim: "Identify the project", marks: 1 },
+    { id: "evaluation", kind: "anyN", verbatim: "Identify one other possible project that could be developed. How would you evaluate its short and long term success?", marks: 5, contextNote: "Identify one OTHER project (1m) and evaluate its short and long term success (5@1m). Retain both time horizons without an invented fixed split; all eleven original models remain.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Employment created.","Financial viability.","Improvements to the area’s facilities.","Was there an increase in PR/profile for area.","Did the project attract other industry/create spin off business.","Was there a positive Environmental impact.","Is the Project sustainable into the future/still popular.","Ease of operation.","Wins awards.","Feedback from customers.","Did we achieve the aims and objectives."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Glenor Community Project — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c1ai", topicId: "lcvp-link-modules-1-0", conceptId: "named-entrepreneur",
+    section: "C", questionRef: "2016 CL Section C Q1(a)(i)",
+    stem: "Entrepreneurs are enterprising people and are essential in today’s society.",
+    questionText: "Name an entrepreneur known to you.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Any named person", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c1aii", topicId: "lcvp-link-modules-1-0", conceptId: "enterprising-definition",
+    section: "C", questionRef: "2016 CL Section C Q1(a)(ii)",
+    stem: "Entrepreneurs are enterprising people and are essential in today’s society.",
+    questionText: "Explain the term “enterprising”.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Explain the term ‘enterprising’.", marks: 4, contextNote: "Original 2@2m. Keep the complete slash-separated definition; no fixed semantic pairing or unprinted 1-mark step is inferred. Keep each response distinct and credit it only once. Complete original guidance: Doing something new/ and challenging/ taking initiative/ being prepared to take a risk", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c1b", topicId: "lcvp-link-modules-1-0", conceptId: "entrepreneur-characteristics",
+    section: "C", questionRef: "2016 CL Section C Q1(b)",
+    stem: "Entrepreneurs are enterprising people and are essential in today’s society.",
+    questionText: "Outline three characteristics of an entrepreneur.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "characteristics", kind: "criterion", verbatim: "Outline three characteristics of an entrepreneur.", marks: 6, contextNote: "Original 3@2m (1+1). List is not exhaustive. Preserve all eight models from both columns. Keep each response distinct and credit it only once. Complete original guidance: Risk-takers | Innovative | Hardworking | Future-focused | Motivated | Determined | Decisive | Self-confident", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c1c", topicId: "lcvp-link-modules-1-0", conceptId: "entrepreneur-business-reasons",
+    section: "C", questionRef: "2016 CL Section C Q1(c)",
+    stem: "Entrepreneurs are enterprising people and are essential in today’s society.",
+    questionText: "Discuss three reasons why an entrepreneur would start his/her own business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss three reasons why an entrepreneur would start his/her own business.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Be their own boss- take control and make their own decisions. | Profit/see their business grow- they take on the risk but reap the rewards. | Entrepreneurs can choose the people they want to work with. Surround themselves with like- minded people. | Manage their own time- They can balance work/life as they need. Choose their own working hours/holidays particularly as the business grows | They can challenge themselves with new opportunities, being creative and learning new things/personal ambition. Have a family tradition of business. | Sense of pride on what they have achieved/built. More satisfying to work for oneself rather than be employed | Can’t find a job so they set up their own business/redundancy/recession. | See a gap in the market and set up a business to fill the gap.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c1d", topicId: "lcvp-link-modules-1-1", conceptId: "starting-business-challenges",
+    section: "C", questionRef: "2016 CL Section C Q1(d)",
+    stem: "Entrepreneurs are enterprising people and are essential in today’s society.",
+    questionText: "Describe four challenges an entrepreneur might encounter when setting up his/her own business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe four challenges an entrepreneur might encounter when setting up his/her own business.", marks: 8, contextNote: "Original allocation: 4 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Getting the product or service right- good quality/good after sales/doing initial market research. | Getting finance from family/banks/investors – without sufficient funds they may not be able to start the business- needed for premises/machinery/stock/day-to-day running expenses. | Marketing their service/product -finding customers/create awareness/having a sufficient market for your service or product. | When to quit the job they may already be in - effect of lack of time/salary. | Dealing with stress, long hours, family life suffers, negative people and self-doubt. | Managing their money- banks, staff wages, taxes, VAT payments etc/day-to-day running expenses. | Dealing with competition- who they are/market share/influence on price and quality of the product/service. | Finding the right business location - proximity to their market/easy to get raw materials at reduced transport costs/ time not wasted traveling. | Hiring qualified/skilled staff- need for hardworking committed staff/properly qualified/skilled staff/recruitment agency. | Legal issues – around the startup of a company/planning/health and safety/ownership. | Lack of skills/expertise/needed to manage or run a business. | Find distributors/suppliers- no credit rating.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c2a", topicId: "lcvp-link-modules-1-3", conceptId: "carwash-advertising",
+    section: "C", questionRef: "2016 CL Section C Q2(a)",
+    stem: "As an LCVP class you have decided to wash cars for the local community as an enterprise activity to raise funds for a local charity. You have purchased all the materials you will need for this project.",
+    questionText: "List four methods you will use to advertise your fundraising activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List four methods you will use to advertise your fundraising activity.", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Word of mouth/calling to peoples house/t-shirt advertisement","Notices in shops/community notice boards","Local radio","Newspaper/magazines","Posters/Bill boards","Social media/Face book/Twitter /local bloggers","Local website","Intercom","Flyers/communication home to parents","TV"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c2b", topicId: "lcvp-link-modules-1-3", conceptId: "carwash-enterprise-planning",
+    section: "C", questionRef: "2016 CL Section C Q2(b)",
+    stem: "As an LCVP class you have decided to wash cars for the local community as an enterprise activity to raise funds for a local charity. You have purchased all the materials you will need for this project.",
+    questionText: "Other than the purchased materials outline three other aspects of the enterprise you should plan for.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Other than the purchased materials, outline three other aspects of the enterprise you should plan for.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: How much capital/finance is required to start the business/moneybox/safe. | Advertising the enterprise- effective ways. | Position/location of the service. | Pricing of service offered. | Who are the personnel involved/allocation of duties/rota of working times. | Health and safety issues. | Training for the job. | Legal issues/fundraising permit/insurance. | Time and date of the activity. | Permission from principal/BOM. | Decide on the charity they will donate the money raised. Materials have already been purchased. Keep advertising in the original pool; the source excludes purchased materials, not advertising.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c2c", topicId: "lcvp-link-modules-1-3", conceptId: "carwash-student-benefits",
+    section: "C", questionRef: "2016 CL Section C Q2(c)",
+    stem: "As an LCVP class you have decided to wash cars for the local community as an enterprise activity to raise funds for a local charity. You have purchased all the materials you will need for this project.",
+    questionText: "Explain three benefits to you and the students who have participated in this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three benefits to you and the students who have participated in this activity.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Develop teamwork skills – working with others, offering opinions, listening to others. | Learn how to plan- importance of planning so that the activity runs smoothly. | Gain an awareness of the charity and the work they do. | Personal skills/qualities/knowledge- developed or learnt. | Self-esteem improves as they are doing something worthwhile/high profile around the school | Can use the activity to complete a portfolio item- action plan, summary or enterprise report. | Social aspect work with people you’ve never worked with before creating new relationships. | Learned about running a business/enterprise.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c2d", topicId: "lcvp-link-modules-1-3", conceptId: "carwash-evaluation-methods",
+    section: "C", questionRef: "2016 CL Section C Q2(d)",
+    stem: "As an LCVP class you have decided to wash cars for the local community as an enterprise activity to raise funds for a local charity. You have purchased all the materials you will need for this project.",
+    questionText: "Discuss three methods you will use to evaluate the success of this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss three methods you will use to evaluate the success of this activity.", marks: 9, contextNote: "Original allocation: 3 responses, each 3 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Aims and Objectives achieved/Amount of funds raised by the activity: A large profit indicates the activity was a success. Easy to organise/objective. | Questionnaire/survey: Given to the class members/teacher/customers to assess the quality of the service etc. Easy to do/ anonymous/inexpensive/good response rate/objective | Class discussion: Ask students for their opinions. Easy to do/ inexpensive/ wide variety of opinions given/honest feedback/can review teamwork | Evaluate what skills were developed: what has been learnt/do a SCOT analysis/help with future activities/use of skills for the future | Ask teachers/customers involved for their opinion. | Teamwork/what teamwork elements worked well/didn’t work well. | Review of portfolio item – have enough information to write up an Enterprise Report/Action Plan/Summary Report. Original 3@3m (1+1+1). No repetition of points.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c3a", topicId: "lcvp-link-modules-0-3", conceptId: "work-placement-school-differences",
+    section: "C", questionRef: "2016 CL Section C Q3(a)",
+    stem: "Participation in LCVP work experience/work shadowing gives you an invaluable insight into the world of work.",
+    questionText: "Outline two ways work experience/work shadowing differs from school work.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline two ways work experience/work shadowing differs from school work.", marks: 4, contextNote: "Original allocation: 2 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Longer hours in work than in school. | Work is more practical than school/different skill set needed/school is often theory based. | More day to day variety in work than in school. | Teamwork is more evident in work than in school. | Different demands made on you. In work there is a need to be committed/finish work to a time plan; where in school you have a choice to be committed/no homework | If you are not fully committed to the work or do not turn up for work you can get a bad report. If you are not fully committed in school it could affect your grades. | You may get paid for your work experience but not paid in school. | IT/ Technology usually more up-to-date in the workplace.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c3b", topicId: "lcvp-link-modules-0-3", conceptId: "work-placement-outcomes",
+    section: "C", questionRef: "2016 CL Section C Q3(b)",
+    stem: "Participation in LCVP work experience/work shadowing gives you an invaluable insight into the world of work.",
+    questionText: "Identify three outcomes for you from participating in work experience/work shadowing placement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Identify three outcomes for you from participating in work experience/work shadowing placement.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Career suitability- helps you to decide if this is the career for you? Allows you to see what the job/career entails. | See the working world first hand- value of time keeping, completing a job, skills required to do the job etc. | Developed new personal skills/qualities/improve skills- specific skills for the job are learned. Can assess if you have these skills? | Motivates you to work harder at school as you now know this is the career for you. | You may get a referee for your CV or a contact. | Allows you to develop interpersonal skills, while working with other adults. | Help to complete a portfolio item – Work Experience Diary. | May get a part-time job/summer work. | Developed knowledge to help with LC subjects.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c3c", topicId: "lcvp-link-modules-0-0", conceptId: "workplace-safety-benefits",
+    section: "C", questionRef: "2016 CL Section C Q3(c)",
+    stem: "Participation in LCVP work experience/work shadowing gives you an invaluable insight into the world of work.",
+    questionText: "Discuss three benefits to employees and employers when a business complies with the Safety, Health & Welfare at Work Act.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss three benefits to employees and employers when a business complies with the Safety, Health & Welfare at Work Act.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Reduction of workplace accidents- safe working conditions provided/maintaining a safe working environment/safety statement. | No bullying- Lower employee absences and therefore less industrial relations problems | Prevents risks to other people visiting the work place e.g. visitors, customers, suppliers, reps - avoids claims/threat of legal action. | Provision of PPE/safe guards on machinery- Reduction of insurance costs/less chance of claims. | Employees receive proper information/training/instruction- which they use in the course of their work. Informed employees/ Safety statement provided/awareness of responsibilities/emergency plan and procedures/written in all languages of the employees. | Prevents damage to your business reputation or brand/ also better reputation for corporate responsibility among investors, customers and communities/avoids fines.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c3d", topicId: "lcvp-link-modules-0-3", conceptId: "work-placement-evaluation",
+    section: "C", questionRef: "2016 CL Section C Q3(d)",
+    stem: "Participation in LCVP work experience/work shadowing gives you an invaluable insight into the world of work.",
+    questionText: "Write out the evaluation you completed for your work experience/work shadowing placement.",
+    tariffModel: {"kind":"questionTotal","notation":"Original 2016 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "heading-1", kind: "point", verbatim: "Career Aspirations", marks: null, contextNote: "Numeric scoring held. Evaluation in light of ALL FIVE original headings. Printed total 9; literal allocation “4 @ 2m (0/2)” and “1 @ 1m”. Neither source assigns these values to particular headings or supplies a choose/best-four/ordered-response rule. Preserve the complete evaluation; confidence review only pending authoritative clarification. No positional or claim-order weights are inferred." },
+    { id: "heading-2", kind: "point", verbatim: "Future Studies", marks: null },
+    { id: "heading-3", kind: "point", verbatim: "What has been learned can be applied to work in the: Home", marks: null },
+    { id: "heading-4", kind: "point", verbatim: "School", marks: null },
+    { id: "heading-5", kind: "point", verbatim: "Community", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c4a", topicId: "lcvp-link-modules-0-1", conceptId: "recruitment-advertising",
+    section: "C", questionRef: "2016 CL Section C Q4(a)",
+    stem: "Choco Ltd needs to recruit an Accounts Manager. The following is a job advertisement for the position. ACCOUNTS MANAGER REQUIRED For a full-time position. The successful applicant should have three years post qualification experience in a similar position. They should be proficient in computers, be hardworking and have good interpersonal skills. Interested candidates should send their CV, covering letter and any references to the Personnel Manager before 06 June, 2016 Choco Ltd, Unit 2, Freeways Business Centre, Dublin 4. Tel: 01-082 1716 Email: chocopersonnel@eircom.net Choco Ltd is an equal opportunities employer.",
+    questionText: "State four ways Choco Ltd could advertise this position.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "State four ways Choco Ltd. could advertise this position.", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Newspapers","Job centre/Solas Training Centers","Recruitment agency","On-line/Internet/Website","Radio","TV-Aertel","Employment magazines","Internal notice board/word of mouth","Job Fairs","Social media e.g. twitter/instagram/facebook"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Choco Ltd — complete original advertisement",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. The four underlined terms are interpersonal skills, covering letter, references and Personnel Manager."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      23
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c4b", topicId: "lcvp-link-modules-0-1", conceptId: "underlined-recruitment-terms",
+    section: "C", questionRef: "2016 CL Section C Q4(b)",
+    stem: "Choco Ltd needs to recruit an Accounts Manager. The following is a job advertisement for the position. ACCOUNTS MANAGER REQUIRED For a full-time position. The successful applicant should have three years post qualification experience in a similar position. They should be proficient in computers, be hardworking and have good interpersonal skills. Interested candidates should send their CV, covering letter and any references to the Personnel Manager before 06 June, 2016 Choco Ltd, Unit 2, Freeways Business Centre, Dublin 4. Tel: 01-082 1716 Email: chocopersonnel@eircom.net Choco Ltd is an equal opportunities employer.",
+    questionText: "Explain two of the words underlined in the advertisement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Explain two of the underlined words in the advertisement.", marks: 3, contextNote: "Response 1 of 2. Explain TWO distinct underlined terms from all FOUR shown. Original 2@3m (2+1), with no 1-of-2 component award. CV and equal opportunities employer are bold, not underlined. Complete original guidance: Interpersonal skills: skills we use to communicate and interact with each other. | Covering letter: a letter that accompanies a CV/explains why you should be given an interview. | References: a letter/email/phonecall that sets out your suitability/skills/qualities/employment history/from previous employer/personal contact/educational establishment/can be added to a CV | Personnel Manager: the person who is in charge of the department that deals with employment/training/support etc.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Explain two of the underlined words in the advertisement.", marks: 3, contextNote: "Response 2 of 2. Explain TWO distinct underlined terms from all FOUR shown. Original 2@3m (2+1), with no 1-of-2 component award. CV and equal opportunities employer are bold, not underlined. Complete original guidance: Interpersonal skills: skills we use to communicate and interact with each other. | Covering letter: a letter that accompanies a CV/explains why you should be given an interview. | References: a letter/email/phonecall that sets out your suitability/skills/qualities/employment history/from previous employer/personal contact/educational establishment/can be added to a CV | Personnel Manager: the person who is in charge of the department that deals with employment/training/support etc.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Choco Ltd — complete original advertisement",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. The four underlined terms are interpersonal skills, covering letter, references and Personnel Manager."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      23,
+                      24
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c4c", topicId: "lcvp-link-modules-0-4", conceptId: "standout-job-application",
+    section: "C", questionRef: "2016 CL Section C Q4(c)",
+    stem: "Choco Ltd needs to recruit an Accounts Manager. The following is a job advertisement for the position. ACCOUNTS MANAGER REQUIRED For a full-time position. The successful applicant should have three years post qualification experience in a similar position. They should be proficient in computers, be hardworking and have good interpersonal skills. Interested candidates should send their CV, covering letter and any references to the Personnel Manager before 06 June, 2016 Choco Ltd, Unit 2, Freeways Business Centre, Dublin 4. Tel: 01-082 1716 Email: chocopersonnel@eircom.net Choco Ltd is an equal opportunities employer.",
+    questionText: "Choco Ltd has received 400 applications for this position. Explain how applicants could ensure that their application form, CV and covering letter would stand-out.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Choco Ltd. have received 400 applications for this position. Explain how applicants could ensure that their application form, CV and covering letter would stand-out.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Tailor your CV to the job, focus on your proficiency and ability. | Use a modern, professional format, don't over use fancy fonts and colours. Make it stand out. Be different use eye catching subject lines. | Make sure it is error free, neat and tidy, no spelling errors, grammatically correct,easy to read/tippex free. | Provide details of most relevant professional experience only. | Ensure your CV/Covering letter is an appropriate length. | Always send a well written cover letter. | Showcase your personal interests and non-work related activities. Make sure your key achievements are highlighted. Emphasise your uniqueness/what you can do better than anyone else. | Follow all instructions on the application form e.g. Use black biro only, Use Block Capitals.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Choco Ltd — complete original advertisement",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. The four underlined terms are interpersonal skills, covering letter, references and Personnel Manager."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      24
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c4d", topicId: "lcvp-link-modules-0-1", conceptId: "interview-preparation-periods",
+    section: "C", questionRef: "2016 CL Section C Q4(d)",
+    stem: "Choco Ltd needs to recruit an Accounts Manager. The following is a job advertisement for the position. ACCOUNTS MANAGER REQUIRED For a full-time position. The successful applicant should have three years post qualification experience in a similar position. They should be proficient in computers, be hardworking and have good interpersonal skills. Interested candidates should send their CV, covering letter and any references to the Personnel Manager before 06 June, 2016 Choco Ltd, Unit 2, Freeways Business Centre, Dublin 4. Tel: 01-082 1716 Email: chocopersonnel@eircom.net Choco Ltd is an equal opportunities employer.",
+    questionText: "Discuss how the shortlisted applicants can prepare themselves before the interview, on the day of the interview and be prepared for the interview itself.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "period-1", kind: "anyN", verbatim: "Before", marks: 3, contextNote: "Original 3@3m (2+1), “2 points from each”. TWO distinct points under EACH required period; response slots 2 then 1, not fixed prices for named models. Retain every original example.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Do your research on the company","Prepare a question you can ask at the end of the interview","Practise a mock interview/practise your answers/know your CV","Find out the exact location of the interview/transport","Prepare clothing/grooming","Review your CV/Application form"],"perOptionSteps":[2,1]} },
+    { id: "period-2", kind: "anyN", verbatim: "On the day", marks: 3, contextNote: "Original 3@3m (2+1), “2 points from each”. TWO distinct points under EACH required period; response slots 2 then 1, not fixed prices for named models. Retain every original example.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Stay calm/eat","Dress appropriately","Be punctual/arrive early","Review your CV/prepare answers"],"perOptionSteps":[2,1]} },
+    { id: "period-3", kind: "anyN", verbatim: "During the interview", marks: 3, contextNote: "Original 3@3m (2+1), “2 points from each”. TWO distinct points under EACH required period; response slots 2 then 1, not fixed prices for named models. Retain every original example.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Be honest","Answer questions asked as best you can/ simple short responses/Speak clearly and confidently","Be personable/courteous/pleasant to all you meet","Sit appropriately/shake hands/body language","If unsure of a question asked, ask for it to be repeated","Ask a question(s) at the end of the interview"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Choco Ltd — complete original advertisement",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. The four underlined terms are interpersonal skills, covering letter, references and Personnel Manager."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      25
+                ],
+                "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c5a", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-visitor-meeting-planning",
+    section: "C", questionRef: "2016 CL Section C Q5(a)",
+    stem: "As an LCVP class you are planning to organise a visitor in from a local voluntary group. You have been asked to plan a meeting to start organising this activity.",
+    questionText: "List three steps you should take to organise this meeting.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List three steps you should take to organise this meeting.", marks: 3, contextNote: "3 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Organise a venue","Advertise/give notice of the meeting.","Get permission","Draw up an agenda","Prepare Room/organise equipment/resources if necessary"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c5b", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-visitor-agenda",
+    section: "C", questionRef: "2016 CL Section C Q5(b)",
+    stem: "As an LCVP class you are planning to organise a visitor in from a local voluntary group. You have been asked to plan a meeting to start organising this activity.",
+    questionText: "Draw up an agenda for the first meeting of your class group.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "heading", kind: "point", verbatim: "AGENDA", marks: 1 },
+    { id: "content", kind: "anyN", verbatim: "content", marks: 6, contextNote: "Original 1m heading + 6@1m content + 1m Layout. Keep all seven content models for the first class meeting.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Election of officers- Chairman, secretary, treasurer","Discuss choice of speaker","Finances","Delegation of duties","Plan of work","Date of next meeting","AOB"]} },
+    { id: "layout", kind: "point", verbatim: "Layout", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26,
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c5c", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-visitor-advance-planning",
+    section: "C", questionRef: "2016 CL Section C Q5(c)",
+    stem: "As an LCVP class you are planning to organise a visitor in from a local voluntary group. You have been asked to plan a meeting to start organising this activity.",
+    questionText: "Explain three reasons why planning in advance for your visit-in is so important.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three reasons why planning in advance for your visit in is so important.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Allows you to set the aim/objectives/goals so the goals are clear and achievable. | Preparing a sequence of action steps allows the activity to run smoothly/efficiently. Keeps good control. | You can prepare a schedule of time, things happen when they should/aids organisation. | You can anticipate the resources needed for the activity. Find out what resources are needed and prepare them in advance. Reduces risks/failure./Change things if necessary | Helps in decision making. You can check the progress of arranging the visit against the plan to see if any changes are needed. | Sets out the tasks/duties to be carried out so each individual is clear on what they have to do.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c5di", topicId: "lcvp-link-modules-1-0", conceptId: "presentation-skills-importance",
+    section: "C", questionRef: "2016 CL Section C Q5(d)(i)",
+    stem: "As an LCVP class you are planning to organise a visitor in from a local voluntary group. You have been asked to plan a meeting to start organising this activity.",
+    questionText: "Why is it important for the speaker to have good presentation skills?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Why is it important for the speaker to have good presentation skills?", marks: 2, contextNote: "Original 2@1m. Keep the whole slash-separated explanation; no fixed semantic division is inferred. Keep each response distinct and credit it only once. Complete original guidance: Good presentation skills are important so that you can present information clearly/ and effectively /thus getting your message across/engage the audience.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c5dii", topicId: "lcvp-link-modules-1-0", conceptId: "effective-presentation",
+    section: "C", questionRef: "2016 CL Section C Q5(d)(ii)",
+    stem: "As an LCVP class you are planning to organise a visitor in from a local voluntary group. You have been asked to plan a meeting to start organising this activity.",
+    questionText: "How can he/she ensure the presentation is effective?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "How can he/she ensure the presentation is effective?", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Making sure it is clear & well structured | Being clear on the message you want to get across/ Find out the information needed by the group in advance and prepare the presentation accordingly. | Deciding on how you will present the message considering the audience, venue, facilities and your own personal preference. | Use humour/stories so that the audience can relate to the topic/ keep it short and interesting/use language they will understand | Show passion/connect with the audience/ Try to have audience interaction | Don't read straight from the slides, Prepare PowerPoint/Computer presentation to keep audience interested/use cue cards/flash cards/prepare handouts", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c6a", topicId: "lcvp-link-modules-1-1", conceptId: "local-business-product-service",
+    section: "C", questionRef: "2016 CL Section C Q6(a)",
+    stem: "Consider a local business enterprise in your area.",
+    questionText: "Name a business enterprise in your local area and give a brief outline of the product/service they provide.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Name:", marks: 1 },
+    { id: "response-1", kind: "criterion", verbatim: "Outline:", marks: 3, contextNote: "Response 1 of 1. Name 1m, Outline 2m + 1m. Retain the same named local business and its product/service; no model enterprise or 1-of-2 component award is invented. Complete original guidance: Outline: 2m + 1m", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c6b", topicId: "lcvp-link-modules-1-1", conceptId: "local-business-location",
+    section: "C", questionRef: "2016 CL Section C Q6(b)",
+    stem: "Consider a local business enterprise in your area. Name a business enterprise in your local area and give a brief outline of the product/service they provide.",
+    questionText: "Why do you think this enterprise has located itself in your locality?",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Why do you think this enterprise has located itself in your locality?", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Available market/customers in the locality. | Minimal competition in the area. | Lease term and rent favourable. Premises was available. | Proximity to /availability of resources/suppliers. | Good location/infrastructure/safe locality/easily accessible to customers. | Availability of skilled/trained staff in the local area/educational/training establishment nearby. | Room for expansion/future growth. | Economic reasons/grant for setting up there/good tax incentives. | Environmental issues. | Business owner has links with the local area/tradition in the area/historical links.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c6c", topicId: "lcvp-link-modules-1-1", conceptId: "business-success-measures",
+    section: "C", questionRef: "2016 CL Section C Q6(c)",
+    stem: "Consider a local business enterprise in your area. Name a business enterprise in your local area and give a brief outline of the product/service they provide.",
+    questionText: "Explain three ways the success of this business enterprise could be measured.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three ways the success of this business enterprise could be measured.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Profit/turnover/increased sales/meeting targets/aims/improved share price/ratios | Compare with competition/market share | Winning awards/recognition from industry/ISO awards etc | Good staff relations/ no strikes/low staff turnover/committed positive staff | Customer loyalty/return customers/word of mouth | Size of the business/increasing/expansion/new markets/new products/diversification/increase employees | Length of time in business.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2016 Common Level — © State Examinations Commission.",
+    id: "lcvp-2016-cl-c6d", topicId: "lcvp-link-modules-1-1", conceptId: "business-education-training",
+    section: "C", questionRef: "2016 CL Section C Q6(d)",
+    stem: "Consider a local business enterprise in your area. Name a business enterprise in your local area and give a brief outline of the product/service they provide.",
+    questionText: "Discuss three reasons why education and training are important to business enterprises.",
+    tariffModel: {"kind":"fixed","notation":"Original 2016 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Discuss three reasons why education and training are important to business enterprises.", marks: 3, contextNote: "Response 1 of 3. THREE distinct responses. Original 3@3m (2+1): separately controlled binary 0/2 component plus 0/1; no 1-of-2 award. All seven original models remain. Complete original guidance: Better quality of goods/service- less mistakes/saves business money/makes business money/greater staff productivity/Q mark/industrial awards. | Staff has more confidence/are more competent/capable- use initiative/work without supervision/managers can delegate. | Developing skills- refresh old skills/develop new skills/upskill/keeps employees up-to-date with new work practices/technology. | Health & Safety standards-training will reduce potential risks to the health of employees/improve safety standards/creates a safe environment. | Better morale- investment in training and education creates a supportive workplace. Employees feel valued/more satisfaction towards their jobs/better employee retention rates/possibility of promotion. | Legalities- certain types of training are compulsory by law- Safe Pass | Adaptable workplace- adaptable to change/train to deal with change/can adapt to competition/laws.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Discuss three reasons why education and training are important to business enterprises.", marks: 3, contextNote: "Response 2 of 3. THREE distinct responses. Original 3@3m (2+1): separately controlled binary 0/2 component plus 0/1; no 1-of-2 award. All seven original models remain. Complete original guidance: Better quality of goods/service- less mistakes/saves business money/makes business money/greater staff productivity/Q mark/industrial awards. | Staff has more confidence/are more competent/capable- use initiative/work without supervision/managers can delegate. | Developing skills- refresh old skills/develop new skills/upskill/keeps employees up-to-date with new work practices/technology. | Health & Safety standards-training will reduce potential risks to the health of employees/improve safety standards/creates a safe environment. | Better morale- investment in training and education creates a supportive workplace. Employees feel valued/more satisfaction towards their jobs/better employee retention rates/possibility of promotion. | Legalities- certain types of training are compulsory by law- Safe Pass | Adaptable workplace- adaptable to change/train to deal with change/can adapt to competition/laws.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Discuss three reasons why education and training are important to business enterprises.", marks: 3, contextNote: "Response 3 of 3. THREE distinct responses. Original 3@3m (2+1): separately controlled binary 0/2 component plus 0/1; no 1-of-2 award. All seven original models remain. Complete original guidance: Better quality of goods/service- less mistakes/saves business money/makes business money/greater staff productivity/Q mark/industrial awards. | Staff has more confidence/are more competent/capable- use initiative/work without supervision/managers can delegate. | Developing skills- refresh old skills/develop new skills/upskill/keeps employees up-to-date with new work practices/technology. | Health & Safety standards-training will reduce potential risks to the health of employees/improve safety standards/creates a safe environment. | Better morale- investment in training and education creates a supportive workplace. Employees feel valued/more satisfaction towards their jobs/better employee retention rates/possibility of promotion. | Legalities- certain types of training are compulsory by law- Safe Pass | Adaptable workplace- adaptable to change/train to deal with change/can adapt to competition/laws.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"2m","marks":2,"permittedMarks":[0,2]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2016 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
 ];

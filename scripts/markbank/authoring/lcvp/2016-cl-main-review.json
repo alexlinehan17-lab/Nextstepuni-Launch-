@@ -1,0 +1,2358 @@
+{
+  "schemaVersion": 1,
+  "year": 2016,
+  "level": "common",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-runtime-validated; two numeric-source ambiguities held; coordinator release checks pending",
+  "createdAt": "2026-11-12T17:57:05.193901+00:00",
+  "reviewedBy": "Codex",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "year": 2016,
+      "path": "paper-trail-corpus/exampapers/2016/LC462CLPO00EV.pdf",
+      "fileid": "LC462CLPO00EV.pdf",
+      "sha256": "fa035b6dea179a129bfc8654becd56f4f46e007c9b34826e1fc7987f92199903",
+      "pages": 32
+    },
+    {
+      "kind": "exampapers",
+      "year": 2016,
+      "path": "paper-trail-corpus/exampapers/2016/LC462CLPO16EV.pdf",
+      "fileid": "LC462CLPO16EV.pdf",
+      "sha256": "53eb749b342da6cc2a30322ee095edf6a32c215162d7abc6a2393eb3c380f213",
+      "pages": 2,
+      "component": "case-study"
+    },
+    {
+      "kind": "markingschemes",
+      "year": 2016,
+      "path": "paper-trail-corpus/markingschemes/2016/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "c4d3e8b7ad6a6b16b7a19a3d3412ee001347045d7c97e02e44939f16a9d13838",
+      "pages": 20
+    }
+  ],
+  "visualSweep": {
+    "paper": "All 32 original pages viewed before parser/legacy inspection: cover1/instructions2; A3–7; full Glenor case8; B9–12; repeated index13; C1 14–16, C2 17–19, C3 20–22, C4 23–25, C5 26–28, C6 29–31; examiner/portfolio forms32 are not extra tasks.",
+    "caseStudy": "Both original separate booklet pages viewed: SEC cover1 and full six-paragraph Glenor case2. The case matches paper8 after whitespace normalization; no additional task leaves.",
+    "writtenScheme": "All 20 original pages viewed before parser/legacy inspection: cover1, generic source-use guidance2, written160-mark introduction3; A4–5; B6–7; C1 8–9, C2 9–10, C3 11–12, C4 12–13, C5 14–15, C6 15–16; explicit blank pages17–19 and back cover20. No later or introductory provision names linkage operands."
+  },
+  "evidence": [
+    {
+      "path": "tmp/lcvp-2016-independent-visual-proof.json",
+      "sha256": "983f0bc5c72f9e55b8185ee75998b2eb9982a6db0d6233e5f1c83837668f2cae"
+    },
+    {
+      "path": "tmp/lcvp-2016-first-source-audit.json",
+      "sha256": "a766c482a573015c7ca4632d914f1b00ce04d048a862ab8e8b2805fa61bd8573"
+    },
+    {
+      "path": "tmp/lcvp-2016-visual-notes.md",
+      "sha256": "48a3100f4e2047cb2c8820f2c09c7a85d634caab1962044c997df529c50217f3"
+    },
+    {
+      "path": "tmp/lcvp-2016-paper-ledger-draft.json",
+      "sha256": "fbe4f605454d7177dc0cf1ad3d692136ea145a62cebe4d6df9ec4e177dd4afc4"
+    },
+    {
+      "path": "tmp/lcvp-2016-scheme-tariffs-draft.json",
+      "sha256": "60f7c8471b8dcf30ae0080a04d229a32d2d2ab0f52e62e3de51a2be0c73af575"
+    },
+    {
+      "path": "tmp/lcvp-2016-paper-census-proof.json",
+      "sha256": "180e8ec3eee1340b8cff083a50995a9b47dacbc56159c2041750158ac14fe9e3"
+    },
+    {
+      "path": "tmp/lcvp-2016-underlined-terms-review.json",
+      "sha256": "1a1b83303069d847d94ffcc5b9a791f626f3ccab1720995ef788060bcdba3579"
+    },
+    {
+      "path": "tmp/lcvp-2016-remaining-scheme-render-proof.json",
+      "sha256": "95607c5dd96c0b193854f104d353167f059cfbb357c353fed3b9a4acb8a13833"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-01.png",
+      "sha256": "fecb4f593464c4489d8a87aadc6ec90fd176d0499bb4026a5732b389536c4fb7"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-02.png",
+      "sha256": "7e4b0115b4e49a3b21905bc2bc7120e8e314d03d236d5478f449b0630b90de1d"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-03.png",
+      "sha256": "0e2c7b3010c0fb9372ebe7a9ac66646f2bb7bef0680bd748cf545d5661fbde6f"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-04.png",
+      "sha256": "c49123825133917cb7ef3e5d199f55aabab071f7aad7f0f3be6f4e0dd0e385ba"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-05.png",
+      "sha256": "564bb12d274166f3a3ebc621cde49b1628edf601ecb8f89cdd32d0a87af327aa"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-06.png",
+      "sha256": "2482e0d0111f8210fb4233a76b8026de74575de67b2d4858f8ec777373cf0df3"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-07.png",
+      "sha256": "2052c82fbeb7ca7917d3ccb3e59469b3c07e4aceeb10189096b87b16d48bfebf"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/paper-08.png",
+      "sha256": "5ee55b0505c5b15fcea85cbf6877358ccece4e4be16ca11d3312666196699f96"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/case-01.png",
+      "sha256": "5c0f0b7924dc7a150802dc48da1f2e6e585e696ec2ed17dba9e0f3443c4cad59"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/scheme-01.png",
+      "sha256": "95d6f9a05c338f578fe85f61b0e1c121b1f0a54a647696afa278150fd0654ff1"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/scheme-02.png",
+      "sha256": "d1805316907ab8f684ad820092a4683750221e23d7b0342e1e9bc80b3fc12511"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/scheme-03.png",
+      "sha256": "a5a7e3c749f80420477d3693f5ff896f1c60ad0ccf3613f11c632fce66a8cd55"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/scheme-04.png",
+      "sha256": "3cc1ffe952794e378177a2204cb5b17614f151910557aa6b9059b72949814f87"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2016-main/scheme-05.png",
+      "sha256": "c3c79c9519c31db0f32b75eafdf712d1413c047ddbc3b5553381041e12c40200"
+    }
+  ],
+  "manualOriginalLeaves": 40,
+  "manualSectionLeaves": {
+    "A": 8,
+    "B": 6,
+    "C": 26
+  },
+  "manualPricedTasks": 39,
+  "manualSectionTasks": {
+    "A": 8,
+    "B": 5,
+    "C": 26
+  },
+  "paperPrintedTariffUnits": 35,
+  "manualPaperLeaves": [
+    {
+      "key": "A1",
+      "pages": [
+        3
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "A2",
+      "pages": [
+        3
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "A3",
+      "pages": [
+        3
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "A4",
+      "pages": [
+        4
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "A5",
+      "pages": [
+        4,
+        5
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "A6",
+      "pages": [
+        5
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "A7",
+      "pages": [
+        6
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "A8",
+      "pages": [
+        7
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "B1",
+      "pages": [
+        9
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "B2ai",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentMarks": 12
+    },
+    {
+      "key": "B2aii",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentMarks": 12
+    },
+    {
+      "key": "B2b",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentMarks": 12
+    },
+    {
+      "key": "B3a",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "parentMarks": 12
+    },
+    {
+      "key": "B3b",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "parentMarks": 12
+    },
+    {
+      "key": "C1ai",
+      "pages": [
+        14
+      ],
+      "paperMarks": null,
+      "parentMarks": 5
+    },
+    {
+      "key": "C1aii",
+      "pages": [
+        14
+      ],
+      "paperMarks": null,
+      "parentMarks": 5
+    },
+    {
+      "key": "C1b",
+      "pages": [
+        14,
+        15
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C1c",
+      "pages": [
+        15
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C1d",
+      "pages": [
+        16
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C2a",
+      "pages": [
+        17
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C2b",
+      "pages": [
+        17,
+        18
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C2c",
+      "pages": [
+        18
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C2d",
+      "pages": [
+        19
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C3a",
+      "pages": [
+        20
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C3b",
+      "pages": [
+        20
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C3c",
+      "pages": [
+        21
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C3d",
+      "pages": [
+        22
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C4a",
+      "pages": [
+        23
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C4b",
+      "pages": [
+        23,
+        24
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C4c",
+      "pages": [
+        24
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C4d",
+      "pages": [
+        25
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C5a",
+      "pages": [
+        26
+      ],
+      "paperMarks": 3
+    },
+    {
+      "key": "C5b",
+      "pages": [
+        26,
+        27
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C5c",
+      "pages": [
+        27
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C5di",
+      "pages": [
+        28
+      ],
+      "paperMarks": null,
+      "parentMarks": 8
+    },
+    {
+      "key": "C5dii",
+      "pages": [
+        28
+      ],
+      "paperMarks": null,
+      "parentMarks": 8
+    },
+    {
+      "key": "C6a",
+      "pages": [
+        29
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C6b",
+      "pages": [
+        29
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C6c",
+      "pages": [
+        30
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C6d",
+      "pages": [
+        31
+      ],
+      "paperMarks": 9
+    }
+  ],
+  "pricedTaskLedger": [
+    {
+      "key": "A1",
+      "schemePages": [
+        4
+      ],
+      "marks": 2,
+      "tariff": "2 m",
+      "models": 1
+    },
+    {
+      "key": "A2",
+      "schemePages": [
+        4
+      ],
+      "marks": 2,
+      "tariff": "2 @ 1m",
+      "models": 3
+    },
+    {
+      "key": "A3",
+      "schemePages": [
+        4
+      ],
+      "marks": 2,
+      "tariff": "2 @ 1m",
+      "models": 2
+    },
+    {
+      "key": "A4",
+      "schemePages": [
+        4
+      ],
+      "marks": 4,
+      "tariff": "2 @ 2m (1 + 1)",
+      "models": 3
+    },
+    {
+      "key": "A5",
+      "schemePages": [
+        4
+      ],
+      "marks": 4,
+      "tariff": "2 @ 2m (0/2)",
+      "models": 3
+    },
+    {
+      "key": "A6",
+      "schemePages": [
+        4
+      ],
+      "marks": 4,
+      "tariff": "4 @ 1m",
+      "models": 7
+    },
+    {
+      "key": "A7",
+      "schemePages": [
+        5
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (0/2)",
+      "models": 4,
+      "modelType": "Complete manager/leader paired contrasts"
+    },
+    {
+      "key": "A8",
+      "schemePages": [
+        5
+      ],
+      "marks": 6,
+      "tariff": "6 @ 1m",
+      "models": 6
+    },
+    {
+      "key": "B1",
+      "schemePages": [
+        6
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (0/2)",
+      "models": 12
+    },
+    {
+      "key": "B2a",
+      "schemePages": [
+        6
+      ],
+      "marks": 6,
+      "sourceLeafKeys": [
+        "B2ai",
+        "B2aii"
+      ],
+      "tariff": "2 @ 1m + 2 @ 2m (1+1)",
+      "models": [
+        8,
+        9
+      ],
+      "heldNumericScoring": true,
+      "reason": "The literal linkage clause does not identify its comparison operands."
+    },
+    {
+      "key": "B2b",
+      "schemePages": [
+        7
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 7
+    },
+    {
+      "key": "B3a",
+      "schemePages": [
+        7
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2 marks (1 + 1)",
+      "models": 7
+    },
+    {
+      "key": "B3b",
+      "schemePages": [
+        7
+      ],
+      "marks": 6,
+      "tariff": "Identify the project (1m); 5 @ 1m",
+      "models": 11
+    },
+    {
+      "key": "C1ai",
+      "schemePages": [
+        8
+      ],
+      "marks": 1,
+      "tariff": "1m",
+      "models": "Any named person"
+    },
+    {
+      "key": "C1aii",
+      "schemePages": [
+        8
+      ],
+      "marks": 4,
+      "tariff": "2 @ 2m",
+      "models": "One slash-separated model definition with four visible fragments; no numbered pool"
+    },
+    {
+      "key": "C1b",
+      "schemePages": [
+        8
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 8,
+      "openPool": true
+    },
+    {
+      "key": "C1c",
+      "schemePages": [
+        8
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 8
+    },
+    {
+      "key": "C1d",
+      "schemePages": [
+        9
+      ],
+      "marks": 8,
+      "tariff": "4 @ 2m (1 + 1)",
+      "models": 12
+    },
+    {
+      "key": "C2a",
+      "schemePages": [
+        9
+      ],
+      "marks": 4,
+      "tariff": "4 @ 1m",
+      "models": 10
+    },
+    {
+      "key": "C2b",
+      "schemePages": [
+        10
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 11
+    },
+    {
+      "key": "C2c",
+      "schemePages": [
+        10
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 8
+    },
+    {
+      "key": "C2d",
+      "schemePages": [
+        10
+      ],
+      "marks": 9,
+      "tariff": "3 @ 3m (1 + 1 + 1)",
+      "models": 7,
+      "guidance": "No repetition of points"
+    },
+    {
+      "key": "C3a",
+      "schemePages": [
+        11
+      ],
+      "marks": 4,
+      "tariff": "2 @ 2m (1 + 1)",
+      "models": 8
+    },
+    {
+      "key": "C3b",
+      "schemePages": [
+        11
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 9
+    },
+    {
+      "key": "C3c",
+      "schemePages": [
+        11
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 6
+    },
+    {
+      "key": "C3d",
+      "schemePages": [
+        12
+      ],
+      "marks": 9,
+      "tariff": "4 @ 2m (0/2); 1 @ 1m",
+      "models": 5,
+      "guidance": "Evaluation in light of all five headings: Career Aspirations; Future Studies; transfer of learning to Home, School, Community. Completed full sweep and independent coordinator review confirm that no heading-to-tariff mapping is printed; numeric scoring remains held.",
+      "heldNumericScoring": true,
+      "reason": "The five headings are not bound to the unequal 4@2m(0/2),1@1m tariff."
+    },
+    {
+      "key": "C4a",
+      "schemePages": [
+        12
+      ],
+      "marks": 4,
+      "tariff": "4 items @ 1m each",
+      "models": 10
+    },
+    {
+      "key": "C4b",
+      "schemePages": [
+        12
+      ],
+      "marks": 6,
+      "tariff": "2 @ 3m (2 + 1)",
+      "models": 4
+    },
+    {
+      "key": "C4c",
+      "schemePages": [
+        13
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 8
+    },
+    {
+      "key": "C4d",
+      "schemePages": [
+        13
+      ],
+      "marks": 9,
+      "tariff": "3 @ 3m (2 + 1); 2 points from each",
+      "models": {
+        "Before": 6,
+        "On the day": 4,
+        "During": 6
+      }
+    },
+    {
+      "key": "C5a",
+      "schemePages": [
+        14
+      ],
+      "marks": 3,
+      "tariff": "3 @ 1m",
+      "models": 5
+    },
+    {
+      "key": "C5b",
+      "schemePages": [
+        14
+      ],
+      "marks": 8,
+      "tariff": "1m heading; 6 @ 1m content; 1m Layout",
+      "models": 7
+    },
+    {
+      "key": "C5c",
+      "schemePages": [
+        14
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 6
+    },
+    {
+      "key": "C5di",
+      "schemePages": [
+        15
+      ],
+      "marks": 2,
+      "tariff": "2 @ 1m",
+      "models": "One full slash-separated presentation-importance explanation"
+    },
+    {
+      "key": "C5dii",
+      "schemePages": [
+        15
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 6
+    },
+    {
+      "key": "C6a",
+      "schemePages": [
+        15
+      ],
+      "marks": 4,
+      "tariff": "Name1m; Outline2m+1m",
+      "models": "Own named enterprise and outline; source gives no invented named exemplar"
+    },
+    {
+      "key": "C6b",
+      "schemePages": [
+        15,
+        16
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 10
+    },
+    {
+      "key": "C6c",
+      "schemePages": [
+        16
+      ],
+      "marks": 6,
+      "tariff": "3 @ 2m (1 + 1)",
+      "models": 7
+    },
+    {
+      "key": "C6d",
+      "schemePages": [
+        16
+      ],
+      "marks": 9,
+      "tariff": "3 @ 3m (2 + 1)",
+      "models": 7
+    }
+  ],
+  "offeredPracticeMarks": 210,
+  "candidateWrittenMarks": 160,
+  "pricedMarks": 195,
+  "heldWholeTaskMarks": 15,
+  "rawReaderAudit": {
+    "rawLeaves": 40,
+    "leafKeys": [
+      [
+        "A",
+        1,
+        null,
+        null
+      ],
+      [
+        "A",
+        2,
+        null,
+        null
+      ],
+      [
+        "A",
+        3,
+        null,
+        null
+      ],
+      [
+        "A",
+        4,
+        null,
+        null
+      ],
+      [
+        "A",
+        5,
+        null,
+        null
+      ],
+      [
+        "A",
+        6,
+        null,
+        null
+      ],
+      [
+        "A",
+        7,
+        null,
+        null
+      ],
+      [
+        "A",
+        8,
+        null,
+        null
+      ],
+      [
+        "B",
+        1,
+        null,
+        null
+      ],
+      [
+        "B",
+        2,
+        "a",
+        "i"
+      ],
+      [
+        "B",
+        2,
+        "a",
+        "ii"
+      ],
+      [
+        "B",
+        2,
+        "b",
+        null
+      ],
+      [
+        "B",
+        3,
+        "a",
+        null
+      ],
+      [
+        "B",
+        3,
+        "b",
+        null
+      ],
+      [
+        "C",
+        1,
+        "a",
+        "i"
+      ],
+      [
+        "C",
+        1,
+        "a",
+        "ii"
+      ],
+      [
+        "C",
+        1,
+        "b",
+        null
+      ],
+      [
+        "C",
+        1,
+        "c",
+        null
+      ],
+      [
+        "C",
+        1,
+        "d",
+        null
+      ],
+      [
+        "C",
+        2,
+        "a",
+        null
+      ],
+      [
+        "C",
+        2,
+        "b",
+        null
+      ],
+      [
+        "C",
+        2,
+        "c",
+        null
+      ],
+      [
+        "C",
+        2,
+        "d",
+        null
+      ],
+      [
+        "C",
+        3,
+        "a",
+        null
+      ],
+      [
+        "C",
+        3,
+        "b",
+        null
+      ],
+      [
+        "C",
+        3,
+        "c",
+        null
+      ],
+      [
+        "C",
+        3,
+        "d",
+        null
+      ],
+      [
+        "C",
+        4,
+        "a",
+        null
+      ],
+      [
+        "C",
+        4,
+        "b",
+        null
+      ],
+      [
+        "C",
+        4,
+        "c",
+        null
+      ],
+      [
+        "C",
+        4,
+        "d",
+        null
+      ],
+      [
+        "C",
+        5,
+        "a",
+        null
+      ],
+      [
+        "C",
+        5,
+        "b",
+        null
+      ],
+      [
+        "C",
+        5,
+        "c",
+        null
+      ],
+      [
+        "C",
+        5,
+        "d",
+        "i"
+      ],
+      [
+        "C",
+        5,
+        "d",
+        "ii"
+      ],
+      [
+        "C",
+        6,
+        "a",
+        null
+      ],
+      [
+        "C",
+        6,
+        "b",
+        null
+      ],
+      [
+        "C",
+        6,
+        "c",
+        null
+      ],
+      [
+        "C",
+        6,
+        "d",
+        null
+      ]
+    ],
+    "capturedTariffSum": 44,
+    "continuityFlags": [],
+    "limitation": "All40 leaf addresses are found, but the older after-answer-space/continuation layout yields only44 captured marks. The independent original scheme ledger determines210 marks; raw tariff sum is not the source total."
+  },
+  "sourceTaskBoundaryReconciliation": "40 printed leaves under35 paper tariff units become39 whole tasks: B2(a)(i)/(ii) stay together because the literal linkage deduction compares unnamed operands. All other printed leaves remain separate source tasks. No missing/excluded task.",
+  "caseBookletMatchesPaper": true,
+  "originalMarkBankCards": 0,
+  "previousAuthoredCards": 436,
+  "sourceAuditBaseline": "be1592ee2655bdabc5682ba1a9114b69a9c596d9",
+  "authoringBaseCommit": "f27b0f3c714d8c166566d4e69929f2e8e14e1f42",
+  "originalAtlasMemberships": {
+    "baseline": "ecd7ff846",
+    "currentAuditBaseline": "be1592ee2655bdabc5682ba1a9114b69a9c596d9",
+    "preLaneMembershipsVerifiedUnchanged": true,
+    "existingRuntimeIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "questionTopicIds": {
+      "1": [
+        "link-modules-common-audio-visual"
+      ],
+      "2": [
+        "link-modules-common-audio-visual"
+      ],
+      "3": [
+        "link-modules-common-audio-visual"
+      ],
+      "4": [
+        "link-modules-common-audio-visual"
+      ],
+      "5": [
+        "link-modules-common-audio-visual"
+      ],
+      "6": [
+        "link-modules-common-audio-visual"
+      ],
+      "7": [
+        "link-modules-common-audio-visual"
+      ],
+      "8": [
+        "link-modules-common-audio-visual"
+      ],
+      "9": [
+        "link-modules-common-case-study"
+      ],
+      "10": [
+        "link-modules-common-case-study"
+      ],
+      "11": [
+        "link-modules-common-case-study"
+      ],
+      "12": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "13": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "14": [
+        "link-modules-common-1-work-placement"
+      ],
+      "15": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "16": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "17": [
+        "link-modules-common-2-local-business-enterprises"
+      ]
+    },
+    "canonicalWaveTopics": {
+      "1": [
+        "lcvp-link-modules-1-1"
+      ],
+      "2": [
+        "lcvp-link-modules-1-0"
+      ],
+      "3": [
+        "lcvp-link-modules-0-0"
+      ],
+      "4": [
+        "lcvp-link-modules-1-0"
+      ],
+      "5": [
+        "lcvp-link-modules-1-0"
+      ],
+      "6": [
+        "lcvp-link-modules-1-0"
+      ],
+      "7": [
+        "lcvp-link-modules-1-0"
+      ],
+      "8": [
+        "lcvp-link-modules-0-0",
+        "lcvp-link-modules-1-0"
+      ],
+      "9": [
+        "lcvp-link-modules-1-4",
+        "lcvp-link-modules-1-3"
+      ],
+      "10": [
+        "lcvp-link-modules-1-4",
+        "lcvp-link-modules-1-3"
+      ],
+      "11": [
+        "lcvp-link-modules-1-3"
+      ],
+      "12": [
+        "lcvp-link-modules-1-0"
+      ],
+      "13": [
+        "lcvp-link-modules-1-3"
+      ],
+      "14": [
+        "lcvp-link-modules-0-3"
+      ],
+      "15": [
+        "lcvp-link-modules-0-1",
+        "lcvp-link-modules-0-4"
+      ],
+      "16": [
+        "lcvp-link-modules-1-0",
+        "lcvp-link-modules-1-2"
+      ],
+      "17": [
+        "lcvp-link-modules-1-1"
+      ]
+    },
+    "paperFileid": "LC462CLPO00EV.pdf",
+    "schemeFileid": "LC462CLP000EV.pdf"
+  },
+  "numericHolds": [
+    {
+      "key": "B2a",
+      "marks": 6,
+      "sourcePages": [
+        6
+      ],
+      "originalSubasks": [
+        "B2ai",
+        "B2aii"
+      ],
+      "knownSubtotals": [
+        2,
+        4
+      ],
+      "models": [
+        8,
+        9
+      ],
+      "literalClause": "If not linked; mark both and disallow the lower mark",
+      "ruling": "One complete confidence-only task. The clause under(ii) does not name the comparison operands. Preserve chosen-stakeholder context, both subasks, all models and known2+4 tariffs; infer no numeric deduction."
+    },
+    {
+      "key": "C3d",
+      "marks": 9,
+      "sourcePages": [
+        12
+      ],
+      "headings": [
+        "Career Aspirations",
+        "Future Studies",
+        "Home",
+        "School",
+        "Community"
+      ],
+      "literalTariff": "4 @ 2m (0/2); 1 @ 1m",
+      "ruling": "One complete confidence-only evaluation. No heading-specific weights, choose/best-four instruction or ordered-response rule is printed. Preserve all five headings and the literal tariff; assign no positional weights or claim order."
+    }
+  ],
+  "sourceDecisions": [
+    "A7 retains all four complete manager/leader contrast pairs; three responses, binary0/2 each.",
+    "C4(b) chooses TWO of exactly four underlined terms; CV/equal opportunities employer are not underlined.",
+    "C4(d) requires two points under EACH Before/On the day/During heading,3×3(2+1); full6/4/6 model pools.",
+    "C5(b) agenda8=heading1+six content points1+layout1; seven model content items remain.",
+    "C5(d) source split is2+6, not an inferred4+4.",
+    "C6(a) Name1+Outline(2+1); no model named business is invented.",
+    "C6(b) tariff continues at the top of scheme physical16 after the ten-model pool on physical15.",
+    "A7 literal source wording is “Facilities creativity”. The preliminary frozen visual-note paraphrase “Facilitates creativity” is explicitly corrected here against physical scheme5; selectors and published models retain the printed wording."
+  ],
+  "tasks": [
+    {
+      "id": "lcvp-2016-cl-a1",
+      "questionRef": "2016 CL Section A Q1",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2016-cl-a2",
+      "questionRef": "2016 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a3",
+      "questionRef": "2016 CL Section A Q3",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a4",
+      "questionRef": "2016 CL Section A Q4",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a5",
+      "questionRef": "2016 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a6",
+      "questionRef": "2016 CL Section A Q6",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a7",
+      "questionRef": "2016 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-a8",
+      "questionRef": "2016 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2016-cl-b1",
+      "questionRef": "2016 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-b2a",
+      "questionRef": "2016 CL Section B Q2(a)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-b2b",
+      "questionRef": "2016 CL Section B Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-b3a",
+      "questionRef": "2016 CL Section B Q3(a)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-b3b",
+      "questionRef": "2016 CL Section B Q3(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c1ai",
+      "questionRef": "2016 CL Section C Q1(a)(i)",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c1aii",
+      "questionRef": "2016 CL Section C Q1(a)(ii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c1b",
+      "questionRef": "2016 CL Section C Q1(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c1c",
+      "questionRef": "2016 CL Section C Q1(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c1d",
+      "questionRef": "2016 CL Section C Q1(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c2a",
+      "questionRef": "2016 CL Section C Q2(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c2b",
+      "questionRef": "2016 CL Section C Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c2c",
+      "questionRef": "2016 CL Section C Q2(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c2d",
+      "questionRef": "2016 CL Section C Q2(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c3a",
+      "questionRef": "2016 CL Section C Q3(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c3b",
+      "questionRef": "2016 CL Section C Q3(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c3c",
+      "questionRef": "2016 CL Section C Q3(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c3d",
+      "questionRef": "2016 CL Section C Q3(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2016-cl-c4a",
+      "questionRef": "2016 CL Section C Q4(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c4b",
+      "questionRef": "2016 CL Section C Q4(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c4c",
+      "questionRef": "2016 CL Section C Q4(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-4"
+    },
+    {
+      "id": "lcvp-2016-cl-c4d",
+      "questionRef": "2016 CL Section C Q4(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c5a",
+      "questionRef": "2016 CL Section C Q5(a)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-c5b",
+      "questionRef": "2016 CL Section C Q5(b)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-c5c",
+      "questionRef": "2016 CL Section C Q5(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2016-cl-c5di",
+      "questionRef": "2016 CL Section C Q5(d)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c5dii",
+      "questionRef": "2016 CL Section C Q5(d)(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2016-cl-c6a",
+      "questionRef": "2016 CL Section C Q6(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c6b",
+      "questionRef": "2016 CL Section C Q6(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c6c",
+      "questionRef": "2016 CL Section C Q6(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2016-cl-c6d",
+      "questionRef": "2016 CL Section C Q6(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    }
+  ],
+  "validationPending": [
+    "Coordinator combined types/build and native-video/browser release QA",
+    "Authoritative clarification of B2(a) linkage operands and C3(d) heading weights"
+  ],
+  "sourceVerification": {
+    "evidence": "tmp/lcvp-2016-source-gate.json",
+    "sha256": "b6533b415332e6142dd13f15f481350ef1d702b1b9153367b01a612a2b81674b",
+    "validatedAuthoringSha256": "06754bcc3fb8cef7879d5e1468e802a3a3f15bb27c79a5ca806ab4b8b63b5d33",
+    "validatedGateSha256": "a7ca8eab1f477745fb390df8ed36b07a395cfd5b85b7fd9716a60fde1076a967",
+    "proof": {
+      "year": 2016,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        2,
+        20
+      ],
+      "manualLeaves": 40,
+      "rawLeaves": 40,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Older after-answer-space/continuation layout; independent original ledger governs 210 offered marks.",
+      "tasks": 39,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 195,
+      "heldWholeTaskMarks": 15,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "previousAuthoredCards": 436,
+      "originalAtlasIdentities": 17,
+      "caseBookletMatchesPaper": true,
+      "authoredSubsetSha256": "6aea390ccc4b83ceaddb516f9f7f41a7530f7683694c31b83c15ca75cf44d183",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null,
+            null
+          ],
+          "wordingRecall": 0.8333
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c",
+            null
+          ],
+          "wordingRecall": 0.9545
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a",
+            "i"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a",
+            "ii"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d",
+            "i"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d",
+            "ii"
+          ],
+          "wordingRecall": 1.0
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 54 original pages independently reviewed first. 40 printed leaves form 39 whole tasks; full case/ad, all alternatives and literal tariffs retained. B2(a) and C3(d) remain unresolved confidence reviews."
+    }
+  },
+  "validation": {
+    "completedAt": "2026-11-12T18:23:23.995968+00:00",
+    "sourceGate": {
+      "year": 2016,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        2,
+        20
+      ],
+      "manualLeaves": 40,
+      "rawLeaves": 40,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Older after-answer-space/continuation layout; independent original ledger governs 210 offered marks.",
+      "tasks": 39,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 195,
+      "heldWholeTaskMarks": 15,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "previousAuthoredCards": 436,
+      "originalAtlasIdentities": 17,
+      "caseBookletMatchesPaper": true,
+      "authoredSubsetSha256": "6aea390ccc4b83ceaddb516f9f7f41a7530f7683694c31b83c15ca75cf44d183",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null,
+            null
+          ],
+          "wordingRecall": 0.8333
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c",
+            null
+          ],
+          "wordingRecall": 0.9545
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d",
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a",
+            "i"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a",
+            "ii"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d",
+            "i"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d",
+            "ii"
+          ],
+          "wordingRecall": 1.0
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 54 original pages independently reviewed first. 40 printed leaves form 39 whole tasks; full case/ad, all alternatives and literal tariffs retained. B2(a) and C3(d) remain unresolved confidence reviews."
+    },
+    "regeneration": {
+      "regenerations": 1,
+      "filesChecked": 23,
+      "unrelatedCardsPreserved": 436,
+      "original2016IdsRetained": 0,
+      "addedCards": 39,
+      "nonLcvpRecordsUnchanged": true
+    },
+    "coverage": {
+      "cards": 475,
+      "contentHash": "ee823e775f3a1570",
+      "coveragePct": 66.8,
+      "covered": 488,
+      "excluded": 0,
+      "leaves": 730,
+      "open": 242,
+      "orphans": 0,
+      "papers": {
+        "count": 25,
+        "hash": "aec10355e05833e6"
+      },
+      "refsHash": "231dd59c31efe50a"
+    },
+    "requiredAndTargetedTestsPassed": 246,
+    "matchingCoverageTestsPassed": 3,
+    "localRuntimeCasesPassed": 249,
+    "remoteRuntimeCasesPassed": 0,
+    "preservationRecovery": "Initial full run:112 passed, one failed because the test retained addition count122 rather than161. Exact frozen IDs matched. The corrected single assertion passed;112 unrelated passes retained. No source/card changes or full-suite repeat.",
+    "checks": "Mandatory54-page original-source/census/media gate;39 whole tasks; cardlint/reconcile40of40;436 prior authored/emitted cards and314 original concepts;12 affected/identity/real-Session+17 curriculum+113 preservation+104 deck+3 filtered coverage cases; one unchanged regeneration and narrow4-filelint; unrelated full/decoded/direct Atlas retained.",
+    "baselineOrder": "Measured after source/identity/zero-orphan and every required runtime case passed; all other subject baselines unchanged.",
+    "scoringScope": "40 printed leaves form39 complete tasks;210 offered/160 candidate.195 marks source-priced; B2(a)6 and C3(d)9 remain whole-task confidence-only pending authoritative clarification.",
+    "broadValidation": "Data-only sitting under documented cadence; coordinator owns combined types/build and release QA.",
+    "pendingChecks": [
+      "Coordinator combined types/build and native-video/browser release QA",
+      "Authoritative clarification of B2(a) linkage operands and C3(d) heading weights"
+    ],
+    "logs": [
+      {
+        "path": "tmp/lcvp-2016-source-gate.json",
+        "sha256": "b6533b415332e6142dd13f15f481350ef1d702b1b9153367b01a612a2b81674b"
+      },
+      {
+        "path": "tmp/lcvp-2016-cardlint.json",
+        "sha256": "686f871537257aad2650c56c7c388e4ec7bf836a4b4705155ff498bbc2577fe0"
+      },
+      {
+        "path": "tmp/lcvp-2016-prebaseline.log",
+        "sha256": "a5fd758badff6afa781145d1fb391dd5918a289892eb6e04a7a412bef2348dc5"
+      },
+      {
+        "path": "tmp/lcvp-2016-targeted-tests.log",
+        "sha256": "8aed237b8554a4e885a97b1ea3209123b51ea0f00f7e33558ce36e36ca074254"
+      },
+      {
+        "path": "tmp/lcvp-2016-curriculum-test.log",
+        "sha256": "9a293f0bc178465882e2802e9ffbbc2f016d61dd1489e02f4a55808facfa12b6"
+      },
+      {
+        "path": "tmp/lcvp-2016-preservation-test.log",
+        "sha256": "0c058f5c7f7f82387277189c388a4e4b04ed1abe8667496cedb71098ecce08a4"
+      },
+      {
+        "path": "tmp/lcvp-2016-preservation-correction.log",
+        "sha256": "d84e39911856379faa94c0743f47962db334cc93c7e215a0ec2bae540d76df29"
+      },
+      {
+        "path": "tmp/lcvp-2016-deck-test.log",
+        "sha256": "7f434e09ec3a8ac4ccc28a3dd6712888a3b695d33dc1f3515010064d5dc954de"
+      },
+      {
+        "path": "tmp/lcvp-2016-ratchet.log",
+        "sha256": "591a97898be9bbea6def0a4826b4c3d88227a697836647499b2240597e984dcb"
+      },
+      {
+        "path": "tmp/lcvp-2016-coverage.log",
+        "sha256": "94e9cfad06216c4474afdd38e7e3f64f76030bd78790f2b4ac10c925b278e46f"
+      },
+      {
+        "path": "tmp/lcvp-2016-regeneration.log",
+        "sha256": "89362f0e5d8584928292184597cabf99ae9196e6661f870bec6da6a725d6c316"
+      },
+      {
+        "path": "tmp/lcvp-2016-lint.log",
+        "sha256": "3f83494dfa68a5850859a53311bbc1566503300079600f3fcbdd3a00fd955155"
+      }
+    ]
+  }
+}
