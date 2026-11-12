@@ -1129,9 +1129,20 @@ def literature_ordinary(sitting, base):
                         criteria.append(criterion('teideal', 'Teideal + ainm', titles[0][1], [u for u, _ in titles], 'exact', permitted=range(titles[0][1] + 1)))
                     assert sum(c['maxMarks'] for c in criteria) == 25, (key, [c['maxMarks'] for c in criteria])
                     pages = [s.page_at(sections['2a' if prose else '3a'].start())]
-                    route.update(schemePage=pages[0], schemePages=pages, criteria=criteria + [deduction()],
+                    # The 0-4 deduction applies here only where the scheme prints it for the whole question (2024's
+                    # modified-marking page: "Ceist 2: An Prós - … sna freagraí próis [Gaeilge lochtach: 0 - 4 …]"); printed
+                    # under the keyed options alone (2025), it is theirs, not this option's (coordinator ruling, 12 Nov).
+                    whole = s.find(r'Ceist 2: An Prós - An measúnú a dhéantar ar chaighdeán na Gaeilge sna freagraí próis \[Gaeilge lochtach: 0 ?- ?4 a bhaint den iomlán a gnóthaíodh\]'
+                                   if prose else
+                                   r'Ceist 3: An Fhilíocht - An measúnú a dhéantar ar chaighdeán na Gaeilge sna freagraí filíochta \[Gaeilge lochtach: 0 ?- ?4 a bhaint den iomlán a gnóthaíodh\]')
+                    if whole:
+                        pages = sorted({*pages, s.page_at(whole.start())})
+                        criteria.append(criterion('gaeilge-deduction', 'Gaeilge lochtach', 4, [whole.group(0)], 'quality', deduction=True))
+                    route.update(schemePage=pages[0], schemePages=pages, criteria=criteria,
                                  markingGuideNote=f'{UNPRINTED} The deferred scheme prints keys for the prescribed texts only; this option is marked at the '
-                                                  'paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.')
+                                                  'paper’s printed tariffs, judged on merit'
+                                                  + (f', then the 0–4 Gaeilge deduction the scheme prints for the whole question (scheme PDF {s.page_at(whole.start())}) once.'
+                                                     if whole else '. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.'))
                     stamped.append(route['id'])
                     continue
                 chunk, spages = found

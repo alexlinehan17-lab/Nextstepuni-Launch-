@@ -21,7 +21,9 @@ import type { IrishCriterion, SecRubricCard } from '../types/markBank';
 
 interface Manifest { covers: Record<string, string[]>; cards: { id: string; criteria: unknown[] }[] }
 interface Shape { listening: number; composition: number; wholeReading: number; readingParts: number; readingSlots: number; literature: number; literatureParts: number }
-interface Sitting { file: Manifest; cards: number; asks: number; shape: Shape; unprinted: string[]; byTable: string[] }
+// Where an Ordinary option has no key, the 0-4 Gaeilge deduction applies only if the scheme prints it for the whole
+// question ('question', with the page's own words), never when it is printed under the keyed options alone ('none').
+interface Sitting { file: Manifest; cards: number; asks: number; shape: Shape; unprinted: string[]; byTable: string[]; deduction?: 'none' | 'question' }
 
 // Per sitting: its cards, the census asks they cover (the denominator), the card shape for its layout, and the options
 // its scheme prints no key for.
@@ -31,13 +33,13 @@ const SITTINGS: Record<string, Sitting> = {
     unprinted: ['poetry-3b-a', 'poetry-3b-b'], byTable: ['literature-4-c', 'literature-4-e', 'prose-2b-a', 'prose-2b-b'] },
   'ordinary 2025': { file: ordinary2025 as Manifest, cards: 76, asks: 80,
     shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 13, literatureParts: 18 },
-    unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2a-c-an-lasair-choille', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [] },
+    unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2a-c-an-lasair-choille', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [], deduction: 'none' },
   'higher 2024': { file: higher2024 as Manifest, cards: 90, asks: 91,
     shape: { listening: 8, composition: 9, wholeReading: 12, readingParts: 34, readingSlots: 12, literature: 15, literatureParts: 0 },
     unprinted: ['poetry-3b-a', 'poetry-3b-b'], byTable: ['literature-4-c', 'literature-4-e', 'prose-2b-a', 'prose-2b-b'] },
   'ordinary 2024': { file: ordinary2024 as Manifest, cards: 74, asks: 79,
     shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 12, literatureParts: 17 },
-    unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [] },
+    unprinted: ['poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c', 'prose-2b-a', 'prose-2b-b', 'prose-2b-c'], byTable: [], deduction: 'question' },
 };
 
 const DEFERRED = /^irish-(\d{4})-(hl|ol)-deferred-p([12])-/;
@@ -121,6 +123,12 @@ describe('Irish deferred sittings: the June shape', () => {
         .map(key).sort(), sittingName).toEqual(sitting.unprinted);
       // The Higher optional prose and Ceist 4C/4E: the scheme's band table and Ceist 4's directions are their marking.
       expect(cards.filter(card => /prints no notes/.test(rubric(card).markingGuideNote)).map(key).sort(), sittingName).toEqual(sitting.byTable);
+      if (!sitting.deduction) continue;
+      for (const card of cards.filter(c => sitting.unprinted.includes(key(c)))) {
+        const deductions = criteria(card).filter(criterion => criterion.kind === 'deduction');
+        if (sitting.deduction === 'none') expect(deductions, card.id).toEqual([]);
+        else expect(deductions.map(d => d.guidance.join(' ')), card.id).toEqual([expect.stringMatching(/^Ceist [23]: An (?:Prós|Fhilíocht) - .*\[Gaeilge lochtach: 0 - 4 a bhaint den iomlán a gnóthaíodh\]$/)]);
+      }
     }
   });
 });
