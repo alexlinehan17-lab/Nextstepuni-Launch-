@@ -21,7 +21,7 @@ function reviewDraft(): SetupDraft {
   return {
     ...initialDraft(), step: 'summary', year: '5th', category: 'college-learning', vision: ['campus'],
     subjects: ['English'], configs: { English: { level: 'higher', current: 'H3', target: 'H1', reviewed: true } },
-    date: '2030-06-05', dateConfirmed: true, rest: ['Saturday', 'Sunday'], gradeSubject: 'English',
+    date: '2030-06-05', dateEdited: true, rest: ['Saturday', 'Sunday'], gradeSubject: 'English',
   };
 }
 

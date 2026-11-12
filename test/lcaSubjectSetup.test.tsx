@@ -16,7 +16,7 @@ const maths = 'Leaving Cert Maths';
 const key = draftKey(uid, 'fresh');
 function draft(): SetupDraft {
   const subjects = ['Science', maths, 'French'];
-  return { ...initialDraft(), step: 'subjects', year: 'LCA1', category: 'college-learning', vision: ['campus'], date: '2030-06-05', dateConfirmed: true, rest: ['Sunday'], subjects,
+  return { ...initialDraft(), step: 'subjects', year: 'LCA1', category: 'college-learning', vision: ['campus'], date: '2030-06-05', dateEdited: true, rest: ['Sunday'], subjects,
     configs: Object.fromEntries(subjects.map(name => [name, emptyChoice('LCA1', name)])), gradeSubject: maths };
 }
 function mount(value = draft(), complete = vi.fn()) {

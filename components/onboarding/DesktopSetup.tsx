@@ -683,21 +683,12 @@ export default function DesktopSetup(props: OnboardingProps) {
                               onChange={(event) =>
                                 patch({
                                   date: event.target.value,
-                                  dateConfirmed: false,
+                                  dateEdited: true,
                                 })
                               }
                             />
                           </label>
-                          <label className="setup-confirm">
-                            <input
-                              type="checkbox"
-                              checked={draft.dateConfirmed}
-                              onChange={(event) =>
-                                patch({ dateConfirmed: event.target.checked })
-                              }
-                            />
-                            <span>This is the right date for me.</span>
-                          </label>
+                          <p className="setup-description">Your exam date is filled in for you. You can change it here or later in Your setup.</p>
                         </>
                       )}
                       <fieldset className="setup-week-field">
@@ -819,7 +810,6 @@ export default function DesktopSetup(props: OnboardingProps) {
                                       year: "numeric",
                                     })
                                   : "Choose a date"}
-                                {!draft.dateConfirmed && " · Not confirmed"}
                               </dd>
                             </div>
                           )}

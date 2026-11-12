@@ -520,8 +520,8 @@ export default function SetupFlow(props: OnboardingProps) {
                 {needsDate(draft.year) && (
                   <>
                     <p className="setup-description">
-                      A date to work towards. Check that this is the right one
-                      for you.
+                      Your exam date is filled in for you. You can change it
+                      here or later in Your setup.
                     </p>
                     <label className="setup-field setup-date-field">
                       <span>Your exam date</span>
@@ -531,7 +531,7 @@ export default function SetupFlow(props: OnboardingProps) {
                         onChange={(event) =>
                           patch({
                             date: event.target.value,
-                            dateConfirmed: false,
+                            dateEdited: true,
                           })
                         }
                       />
@@ -546,16 +546,6 @@ export default function SetupFlow(props: OnboardingProps) {
                         </span>
                       </div>
                     )}
-                    <label className="setup-confirm">
-                      <input
-                        type="checkbox"
-                        checked={draft.dateConfirmed}
-                        onChange={(event) =>
-                          patch({ dateConfirmed: event.target.checked })
-                        }
-                      />
-                      <span>This is the right date for me.</span>
-                    </label>
                   </>
                 )}
                 <fieldset className="setup-week-field">
@@ -706,7 +696,6 @@ export default function SetupFlow(props: OnboardingProps) {
                                 year: "numeric",
                               })
                             : "Choose a date"}
-                          {!draft.dateConfirmed && " · Not confirmed"}
                         </dd>
                       </div>
                     )}
