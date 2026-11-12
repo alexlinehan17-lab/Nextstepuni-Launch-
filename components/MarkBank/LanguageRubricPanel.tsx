@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionLimits, languageCriterionValue, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languagePointsAllocation, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageCategoryCompensation, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores, type LanguageScoringContext } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -11,34 +11,70 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
 }) {
   const { rubric } = card;
   const writingRubric: LanguageWritingRubric = { ...rubric, system: 'language-writing', criteria: rubric.criteria ?? [] };
+  const scoringContext = rubric.system === 'language-points'
+    ? { selectedGroupMarks: languagePointsAllocation(rubric, scores, card.answerLanguageRule) } : undefined;
   const conditions = writingRubric.criteria.flatMap(criterion => (criterion.limits ?? []).flatMap(limit => limit.when.any));
   const lengths = [...new Set(conditions.flatMap(condition => 'length' in condition ? [condition.length] : []))];
   const flags = [...new Map(conditions.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])).values()];
   const selectedGroups = rubric.system === 'language-points' ? rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).length : 0;
-  const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
-      const limits = languageCriterionLimits(criterionRubric, criterion, scores, [criterion.id]);
-      const cap = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
-      const selected = Math.min(scores[languageScoreId(criterion.id)] ?? 0, cap);
-      const bands = ([...limits].sort((a, b) => a.maxMarks - b.maxMarks).find(limit => limit.bands)?.bands ?? criterion.bands)
-        ?.filter(band => Math.max(...band.marks) <= cap);
-      const permitted = criterion.permittedMarks.filter(mark => mark <= cap);
+  const alternativeConflicts = rubric.system === 'language-points' ? languageAlternativeConflicts(rubric, scores) : new Set<string>();
+  const compensation = rubric.system === 'language-points' ? languageCategoryCompensation(rubric, scores) : undefined;
+  const claimedDetails = rubric.system === 'language-points' ? rubric.groups
+    .filter(group => scores[languageGroupId(group.id)] === 1)
+    .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
+  const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false, context?: LanguageScoringContext) => {
+      if (criterion.automaticAward) return <section className="mb-language-criterion" key={criterion.id}>
+        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.automaticAward.marks} marks awarded to all candidates</span></div>
+        {criterion.guidance.filter(text => text !== criterion.automaticAward!.sourceText).map((text, index) => <p key={index}>{text}</p>)}
+        <p>{criterion.automaticAward.sourceText}</p>
+      </section>;
+      const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id], context);
+      const bandedLimits = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).filter(limit => limit.bands);
+      const sourceLimits = limits.filter(limit => limit.bands || limit.scaleLabel || (limit.minMarks ?? 0) > 0);
+      const literalScales = sourceLimits.filter(limit => !limit.bands);
+      // Simultaneous Lower A/Lower E rules do not establish descriptor
+      // precedence. Keep both named source scales and their printed ranges;
+      // the controls below enforce the numeric intersection without inventing
+      // a conversion between descriptors.
+      const scales = (minimum > 0 ? bandedLimits : bandedLimits.slice(0, 1))
+        .map(limit => ({ id: limit.id, label: limit.scaleLabel, bands: limit.bands! }));
+      // A contradictory printed descriptor table may be quoted literally
+      // while its unambiguous numeric range remains assessable. Do not label
+      // normal descriptors as active when that source scale has no bands.
+      if (!sourceLimits.length && criterion.bands) scales.push({ id: criterion.id, label: undefined, bands: criterion.bands });
+      const visibleScales = scales.map(scale => ({ ...scale, bands: scale.bands.filter(band => minimum > 0
+        ? band.marks.some(mark => mark > 0 && permitted.includes(mark))
+          || (band.marks.every(mark => mark === 0) && permitted.includes(0))
+        : Math.max(...band.marks) <= cap) })).filter(scale => scale.bands.length > 0);
       return <section className="mb-language-criterion" key={criterion.id}>
-        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction' : `Up to ${cap} marks`}</span></div>
+        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction'
+          : minimum > 0 && cap > 0 ? `${minimum}–${cap} marks` : `Up to ${cap} marks`}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
-        {limits.flatMap(limit => limit.guidance).map((text, index) => <p className="mb-language-rule" key={index}>{text}</p>)}
-        {bands?.map(band => <div className="mb-language-band" key={band.label}>
-          <strong>{band.marks[0]}–{band.marks.at(-1)} marks · {band.label}</strong>
-          <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
-        </div>)}
+        {limits.map(limit => <React.Fragment key={limit.id}>
+          {!limit.bands && limit.scaleLabel && <p><strong>{limit.scaleLabel}</strong></p>}
+          {limit.guidance.map((text, index) => <p className="mb-language-rule" key={index}>{text}</p>)}
+        </React.Fragment>)}
+        {cap > 0 && visibleScales.length + literalScales.length > 1 && <p>Both source scales apply. Use their shared mark range and reassess against each set of descriptors.</p>}
+        {visibleScales.map(scale => <React.Fragment key={scale.id}>
+          {scale.label && <p><strong>{scale.label}</strong></p>}
+          {scale.bands.map(band => <div className="mb-language-band" key={band.label}>
+            <strong>{band.marks[0]}–{band.marks.at(-1)} marks · {band.label}</strong>
+            <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
+          </div>)}
+        </React.Fragment>)}
         <MarkStrip disabled={disabled} label={criterion.label} marks={permitted} selected={selected} onSelect={mark => onScore(languageScoreId(criterion.id), mark)} />
-        {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores)} marks.</p>}
+        {needsRangeReview && cap > 0 && <p>{selected === 0 ? 'Choose a mark within the active range.' : 'Review this placement against the active range.'}</p>}
+        {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores, false, [], context) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores, false, [], context)} marks.</p>}
       </section>;
   };
+  const manualExceptions = card.answerLanguageRule?.manualCriterionExceptions;
+  const exceptionLabels = writingRubric.criteria.filter(criterion => manualExceptions?.criterionIds.includes(criterion.id))
+    .map(criterion => criterion.label);
   const otherLanguageControl = (target: string, label: string, disabled = false) => card.answerLanguageRule && <label className="mb-language-flag">
     <input type="checkbox" disabled={disabled || (target !== 'response' && scores[languageOtherLanguageId('response')] === 1)} aria-label={languageCreditAriaLabel(card.answerLanguageRule, label)}
       checked={scores[languageOtherLanguageId(target)] === 1}
       onChange={event => onScore(languageOtherLanguageId(target), event.currentTarget.checked ? 1 : 0)} />
-    <span>{languageCreditCondition(card.answerLanguageRule, target === 'response' && rubric.system === 'language-points')} · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    <span>{languageCreditCondition(card.answerLanguageRule, target === 'response' && rubric.system === 'language-points')} · {target === 'response' && exceptionLabels.length > 0 ? 'content: ' : ''}{card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
   </label>;
   return <div className="mb-language-rubric">
     <h3>Assess your response</h3>
@@ -54,27 +90,66 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         onChange={event => onScore(languageFlagId(condition.flag), event.currentTarget.checked ? 1 : 0)} />
       <span>{condition.prompt}</span>
     </label>)}
-    {writingRubric.criteria.map(criterion => renderCriterion(criterion, writingRubric))}
+    {writingRubric.criteria.map(criterion => renderCriterion(criterion, writingRubric, false, scoringContext))}
     {rubric.system === 'language-writing' && otherLanguageControl('response', 'Response')}
     {rubric.system === 'language-points' && <>
       {otherLanguageControl('response', 'All answers')}
-      <p>Select the {rubric.count} items you answered, then claim each component.</p>
+      {manualExceptions && <>
+        <p>Assess {exceptionLabels.join(', ')} separately under the source guidance.</p>
+        <p>{manualExceptions.sourceText}</p>
+      </>}
+      <p>{rubric.allocationCap?.answerCount
+        ? `Select up to ${rubric.count} groups, then claim up to ${rubric.allocationCap.answerCount} details in total.`
+        : `Select the ${rubric.count} items you answered, then claim each component.`}</p>
+      {rubric.allocationCap && <>
+        <p>These answers earn up to {languageAllocationMaximum(rubric, scores)} marks altogether.</p>
+        <p>{rubric.allocationCap.sourceText}</p>
+        {compensation?.needsReview && <p role="status">Review the increased category marks. Each category placed at {compensation.reducedMarks} marks permits one other category at {compensation.increasedMarks}. Until these placements agree, each category earns at most {compensation.normalMarks} marks.</p>}
+        {rubric.allocationCap.limits?.map(limit => <React.Fragment key={limit.id}>
+          {limit.sourceText !== rubric.allocationCap!.sourceText && <p>{limit.sourceText}</p>}
+          <label className="mb-language-flag">
+            <input type="checkbox" checked={scores[languageFlagId(limit.when.flag)] === 1}
+              onChange={event => onScore(languageFlagId(limit.when.flag), event.currentTarget.checked ? 1 : 0)} />
+            <span>{limit.when.prompt}</span>
+          </label>
+        </React.Fragment>)}
+      </>}
+      {rubric.alternativeSets?.map(set => <React.Fragment key={set.id}>
+        <p><strong>{set.label}</strong></p>
+        <p>{set.sourceText}</p>
+        {alternativeConflicts.has(set.id) && <p role="status">Choose one alternative for {set.label} to assess it. The conflicting alternatives are currently unassessed.</p>}
+      </React.Fragment>)}
       {rubric.groups.map(group => {
         const selected = scores[languageGroupId(group.id)] === 1;
         const claimed = group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length;
+        const anotherAlternativeSelected = group.alternativeSet !== undefined && rubric.groups.some(other => other.id !== group.id
+          && other.alternativeSet === group.alternativeSet && scores[languageGroupId(other.id)] === 1);
+        const conflicting = !!group.alternativeSet && alternativeConflicts.has(group.alternativeSet);
+        const groupFlags = [...new Map((group.criteria ?? []).flatMap(criterion => (criterion.limits ?? []).flatMap(limit =>
+          limit.when.any.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])))).values()];
         return <section className="mb-language-criterion" key={group.id}>
           <button type="button" className="mb-language-choice" aria-pressed={selected}
-            disabled={!selected && selectedGroups >= rubric.count}
+            disabled={!selected && (selectedGroups >= rubric.count || anotherAlternativeSelected)}
             onClick={() => onScore(languageGroupId(group.id), selected ? 0 : 1)}>{group.label}</button>
           {group.rows.map(row => {
             const value = scores[languageRowId(group.id, row.id)] ?? 0;
-            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || (value === 0 && claimed >= (group.answerCount ?? group.rows.length))}
+            const quotaReached = claimed >= (group.answerCount ?? group.rows.length)
+              || claimedDetails >= (rubric.allocationCap?.answerCount ?? Infinity);
+            const otherIncreased = compensation ? compensation.increasedCount - ((compensation.values.get(group.id) ?? 0) > compensation.normalMarks ? 1 : 0) : 0;
+            const otherReduced = compensation ? compensation.reducedCount - (compensation.values.get(group.id) === compensation.reducedMarks ? 1 : 0) : 0;
+            const disabledSteps = compensation && otherReduced <= otherIncreased ? row.steps?.filter(mark => mark > compensation.normalMarks) : undefined;
+            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} disabledSteps={disabledSteps} claimed={value > 0} value={value} disabled={!selected || conflicting || (value === 0 && quotaReached)}
               onToggle={() => onScore(languageRowId(group.id, row.id), value ? 0 : 1)}
               onStep={mark => onScore(languageRowId(group.id, row.id), value === mark ? 0 : mark)} />
               {otherLanguageControl(`row:${group.id}:${row.id}`, row.text, !selected)}
             </React.Fragment>;
           })}
-          {group.criteria?.map(criterion => renderCriterion(criterion, { ...writingRubric, criteria: group.criteria! }, !selected))}
+          {groupFlags.map(condition => <label className="mb-language-flag" key={condition.flag}>
+            <input type="checkbox" disabled={!selected || conflicting} checked={scores[languageFlagId(condition.flag)] === 1}
+              onChange={event => onScore(languageFlagId(condition.flag), event.currentTarget.checked ? 1 : 0)} />
+            <span>{condition.prompt}</span>
+          </label>)}
+          {group.criteria?.map(criterion => renderCriterion(criterion, { ...writingRubric, criteria: group.criteria! }, !selected || conflicting))}
           {!!group.criteria?.length && otherLanguageControl(`group:${group.id}`, group.label, !selected)}
         </section>;
       })}
