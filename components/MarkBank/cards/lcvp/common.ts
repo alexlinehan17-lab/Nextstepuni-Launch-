@@ -35,11 +35,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "evan-s-business",
     section: "A", questionRef: "2018 CL Section A Q1",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "What is the name of Evan’s business?",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Bog Roots", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "business", kind: "point", verbatim: "Bog Roots", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -47,13 +78,44 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-a2", topicId: "lcvp-link-modules-1-0", conceptId: "well-product-other-elements-does-evan",
+    id: "lcvp-2018-cl-a2", topicId: "lcvp-link-modules-1-1", conceptId: "well-product-other-elements-does-evan",
     section: "A", questionRef: "2018 CL Section A Q2",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "As well as product, what other elements does Evan consider important in becoming a successful business?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 1m","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Price","Promotion","Place Any"]} },
+    { id: "responses", kind: "anyN", verbatim: "As well as product, what other elements does Evan consider important in becoming a successful business?", marks: 2, contextNote: "Choose 2 distinct original responses. Each receives 1 or 0 marks; no unprinted partial award is introduced.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Price","Promotion","Place"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -61,13 +123,44 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-a3", topicId: "lcvp-link-modules-1-0", conceptId: "influenced-evan-his-decision-where-set",
+    id: "lcvp-2018-cl-a3", topicId: "lcvp-link-modules-1-1", conceptId: "influenced-evan-his-decision-where-set",
     section: "A", questionRef: "2018 CL Section A Q3",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "What influenced Evan in his decision on where to set up his workshop?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 1m","answer":3,"ofParts":4,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Funding – grants for setting up in a rural area","Cost of site/less expensive than large cities or towns","Amount of space available to the business is important","Midlands region is the natural region for bog wood craft/natural resources/raw materials"]} },
+    { id: "responses", kind: "anyN", verbatim: "What influenced Evan in his decision on where to set up his workshop?", marks: 3, contextNote: "Choose 3 distinct original responses. Each receives 1 or 0 marks; no unprinted partial award is introduced.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Funding – grants for setting up in a rural area.","Cost of site/less expensive than large cities or towns.","Amount of space available to the business is important.","Midlands region is the natural region for bog wood craft/natural resources/raw materials."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -77,11 +170,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-a4", topicId: "lcvp-link-modules-1-1", conceptId: "reasons-does-evan-sponsoring-local-gaelic",
     section: "A", questionRef: "2018 CL Section A Q4",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "What reasons does Evan give for sponsoring the local gaelic football team?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m(0/2)","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Loves the sport of gaelic football","Sports teams play a huge role in the strength and spirit of the community","The stronger the locality is the better it is for Evan’s business"]} },
+    { id: "responses", kind: "anyN", verbatim: "What reasons does Evan give for sponsoring the local gaelic football team?", marks: 4, contextNote: "Choose 2 distinct original responses. Each receives 2 or 0 marks; no unprinted partial award is introduced.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Loves the sport of gaelic football.","Sports teams play a huge role in the strength and spirit of the community.","The stronger the locality is the better it is for Evan’s business."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -89,13 +213,44 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-a5", topicId: "lcvp-link-modules-1-0", conceptId: "benefits-doing-feasibility-study",
+    id: "lcvp-2018-cl-a5", topicId: "lcvp-link-modules-1-1", conceptId: "benefits-doing-feasibility-study",
     section: "A", questionRef: "2018 CL Section A Q5",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "List the benefits of doing a feasibility study?",
-    tariffModel: {"kind":"bestNofParts","notation":"4@1 mark","answer":4,"ofParts":5,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Reduces risk/nothing left to chance","Shows a good demand for the product/Profit Potential/Sales Potential","Identifies suitability of location- tourism trade","Identifies suitability of location- infrastructure/airports/M6","Well researched feasibility study may secure financial loans/grants"]} },
+    { id: "responses", kind: "anyN", verbatim: "List the benefits of doing a feasibility study?", marks: 4, contextNote: "Choose 4 distinct original responses. Each receives 1 or 0 marks; no unprinted partial award is introduced.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Reduces risk/nothing left to chance.","Shows a good demand for the product/Profit Potential/Sales Potential.","Identifies suitability of location- tourism trade.","Identifies suitability of location- infrastructure/airports/M6.","Well researched feasibility study may secure financial loans/grants."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -105,11 +260,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "evan-innovative-business-person-evidence-there",
     section: "A", questionRef: "2018 CL Section A Q6",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "Evan is an innovative business person. What evidence is there to support this statement?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@ 2m(1+1)","answer":2,"ofParts":4,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Realised he needs to adapt the business model when business takes a dip","Diversified/Bog Roots makes smaller more affordable pre-made pieces","Working on a new product aimed at visitors/ancient east/smaller picture frames","Low cost shipping to anywhere in the world"]} },
+    { id: "responses", kind: "criterion", verbatim: "Evan is an innovative business person. What evidence is there to support this statement?", marks: 4, contextNote: "Original allocation: 2 responses at 2 marks (1+1). Keep each response distinct and credit it only once. Complete original guidance: Realised he needs to adapt the business model when business takes a dip. | Diversified/Bog Roots makes smaller more affordable pre-made pieces. | Working on a new product aimed at visitors/ancient east/smaller picture frames. | Low cost shipping to anywhere in the world.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -117,13 +303,44 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-a7", topicId: "lcvp-link-modules-1-0", conceptId: "has-evan-learned-his-self-evaluation",
+    id: "lcvp-2018-cl-a7", topicId: "lcvp-link-modules-1-1", conceptId: "has-evan-learned-his-self-evaluation",
     section: "A", questionRef: "2018 CL Section A Q7",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "What has Evan learned from his self‐evaluation of the business?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Location of business is very important/vibrant and supportive community","Value of mutually beneficial arrangements. Now working with a local photographer to sell his photo prints with his frame","By helping the community to ensure local loyalty and helping himself","Needs to update his website/stronger social media presence","Flexibility/ability to adapt when things are tough and when things are going well/people more likely to buy smaller affordable pieces","Business is going well/expansion to a new workshop"]} },
+    { id: "responses", kind: "criterion", verbatim: "What has Evan learned from his self-evaluation of the business?", marks: 6, contextNote: "Original allocation: 3 responses at 2 marks (1+1). Keep each response distinct and credit it only once. Complete original guidance: Location of business is very important/vibrant and supportive community. | Value of mutually beneficial arrangements. Now working with a local photographer to sell his photo prints with his frame. | By helping the community to ensure local loyalty and helping himself. | Needs to update his website/stronger social media presence. | Flexibility/ability to adapt when things are tough and when things are going well/people more likely to buy smaller affordable pieces. | Business is going well/expansion to a new workshop.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -131,14 +348,45 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-a8", topicId: "lcvp-link-modules-1-0", conceptId: "evidence-there-evan-aware-positive-impact",
+    id: "lcvp-2018-cl-a8", topicId: "lcvp-link-modules-1-1", conceptId: "evidence-there-evan-aware-positive-impact",
     section: "A", questionRef: "2018 CL Section A Q8",
-    stem: "You will be shown a DVD with a Business Location theme.",
     questionText: "What evidence is there that Evan is aware of the positive impact of IT on a business. How can he ensure that IT development continues to be beneficial?",
-    tariffModel: {"kind":"fixed","notation":"2@1 + 2@2(1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Aware of the importance of a website","Must have effective social media presence of their product. ("]} },
-    { id: "r-2", kind: "anyN", verbatim: "Question 2 — any 2", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Continue to up-date their website, online sales, photographs","Advertise the business on various platforms- use social media – blog/instagram/twitter to market the product","Agree with other businesses to promote each other’s business by creating hyperlinks","Keep up-to-date with changing IT developments. Complete a course on the use of IT in business to make sure he is making the most of the IT available to him"]} },
+    { id: "question-1", kind: "anyN", verbatim: "Question 1", marks: 2, contextNote: "Both original questions are required. First question: two answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Aware of the importance of a website.","Must have effective social media presence of their product."]} },
+    { id: "question-2", kind: "criterion", verbatim: "Question 2", marks: 4, contextNote: "Second question: two responses at 2 marks (1+1); retain the separate first-question allocation. Keep each response distinct and credit it only once. Complete original guidance: Continue to up-date their website, online sales, photographs. | Advertise the business on various platforms- use social media – blog/instagram/twitter to market the product. | Agree with other businesses to promote each other’s business by creating hyperlinks. | Keep up-to-date with changing IT developments. Complete a course on the use of IT in business to make sure he is making the most of the IT available to him.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2018 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2018 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Business Location sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -146,71 +394,147 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-b1", topicId: "lcvp-link-modules-0-3", conceptId: "following-terms",
+    id: "lcvp-2018-cl-b1", topicId: "lcvp-link-modules-1-2", conceptId: "following-terms",
     section: "B", questionRef: "2018 CL Section B Q1",
-    stem: "Explain three of the following terms",
-    questionText: "Explain three of the following terms",
-    tariffModel: {"kind":"bestNofParts","notation":"6 marks","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    stem: "VOLUNTEERING Many communities rely on volunteers to help deliver services and programmes that enhance the life of the people living in the area. Local Volunteer Centres were set up to help match those who needed volunteer workers with individuals offering their services. The Volunteer Centres offer advice, placement and support services to individuals and organisations who are interested in volunteering in Ireland. Opportunities also exist for those who wish to have the experience of volunteering abroad. Tailored volunteer projects are offered by many agencies. People volunteer for a variety of reasons. In Tommy’s case, having spent most of his working life in the construction industry, he found himself unemployed for a long period of time after his employer went out of business. He was becoming increasingly concerned about the challenges of gaining new employment. During a visit to his local Intreo Office he learned that he could volunteer and his jobseekers allowance would not be affected. Tommy decided to contact his local Volunteer Centre to explore some volunteering opportunities. This would give him the opportunity to develop new skills and gain valuable experience for his CV. Sarah is a Placement Officer in the Volunteer Centre; she matches organisations that need help with people who wish to volunteer. Tommy had a face‐to‐face meeting with Sarah during which she pointed out a number of things Tommy should consider if he wishes to volunteer while searching for a job. Volunteering is a great way to improve his chances of finding work but it is important not to let it interfere with his job search. Tommy discovered there are a number of aspects he should consider before committing to volunteering if his experience of being a volunteer is to be a positive one. Having registered with the Volunteer Centre, Tommy applied for work and secured a placement volunteering at a local care home for the elderly. His decision to accept this placement is due to his personal engagement with care homes. His elderly father has been living in a state‐of‐the‐art facility for the last 6 months. Through his experience in the care home Tommy realised that this type of work really suited him. He researched the qualifications that are required for this career and he applied to do a course in Care Skills at a Further Education College. Many organisations depend greatly on the positive impact of volunteering. Companies give back to society through their Corporate Social Responsibility strategy. Given the differences between commercial and volunteer organisations, it is important to ensure effective structures exist. Larger companies appoint Volunteer Co‐ordinators who play a vital and varied role for both the individual and the organisation. Experience has shown that involving all parties in decision‐making is vital to the success of volunteer agencies in Ireland.",
+    questionText: "Explain three of the following terms (i) Volunteer (ii) Construction Industry (iii) Placement Officer (iv) Corporate Social Responsibility.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Volunteer A person who works for the benefit of other individuals/particular cause/society, without expecting any financial reward for their work","Construction Industry All people/businesses involved in all aspects of the building industry, design teams, plumbers, builders, carpenters etc","Placement Officer Someone who matches workers/employees with job vacancies. The Placement officer will arrange the work placement/someone who matches organisations that need help with people who volunteer","Corporate Social Responsibility Corporate Social Responsibility is a business practice which involves participation in initiatives that benefit society/local community. Corporations are ethically & socially responsible. They actively support an initiative, which encourages concern for the environment and social wellbeing; often go over and above what is required by law"]} },
+    { id: "terms", kind: "anyN", verbatim: "Explain three of the following terms.", marks: 6, contextNote: "Choose THREE of all FOUR printed terms. Each definition receives 2 or 0 marks, exactly as printed. Keep the full original definition pool; no partial 1 mark is printed.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Volunteer A person who works for the benefit of other individuals/particular cause/society, without expecting any financial reward for their work.","Construction Industry All people/businesses involved in all aspects of the building industry, design teams, plumbers, builders, carpenters etc.","Placement Officer Someone who matches workers/employees with job vacancies. The Placement officer will arrange the work placement/someone who matches organisations that need help with people who volunteer.","Corporate Social Responsibility Corporate Social Responsibility is a business practice which involves participation in initiatives that benefit society/local community. Corporations are ethically & socially responsible. They actively support an initiative, which encourages concern for the environment and social wellbeing; often go over and above what is required by law."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Volunteering — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2018 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-b2i", topicId: "lcvp-link-modules-0-4", conceptId: "might-have-influenced-tommy-when-choosing",
+    id: "lcvp-2018-cl-b2i", topicId: "lcvp-link-modules-1-2", conceptId: "might-have-influenced-tommy-when-choosing",
     section: "B", questionRef: "2018 CL Section B Q2(i)",
+    stem: "VOLUNTEERING Many communities rely on volunteers to help deliver services and programmes that enhance the life of the people living in the area. Local Volunteer Centres were set up to help match those who needed volunteer workers with individuals offering their services. The Volunteer Centres offer advice, placement and support services to individuals and organisations who are interested in volunteering in Ireland. Opportunities also exist for those who wish to have the experience of volunteering abroad. Tailored volunteer projects are offered by many agencies. People volunteer for a variety of reasons. In Tommy’s case, having spent most of his working life in the construction industry, he found himself unemployed for a long period of time after his employer went out of business. He was becoming increasingly concerned about the challenges of gaining new employment. During a visit to his local Intreo Office he learned that he could volunteer and his jobseekers allowance would not be affected. Tommy decided to contact his local Volunteer Centre to explore some volunteering opportunities. This would give him the opportunity to develop new skills and gain valuable experience for his CV. Sarah is a Placement Officer in the Volunteer Centre; she matches organisations that need help with people who wish to volunteer. Tommy had a face‐to‐face meeting with Sarah during which she pointed out a number of things Tommy should consider if he wishes to volunteer while searching for a job. Volunteering is a great way to improve his chances of finding work but it is important not to let it interfere with his job search. Tommy discovered there are a number of aspects he should consider before committing to volunteering if his experience of being a volunteer is to be a positive one. Having registered with the Volunteer Centre, Tommy applied for work and secured a placement volunteering at a local care home for the elderly. His decision to accept this placement is due to his personal engagement with care homes. His elderly father has been living in a state‐of‐the‐art facility for the last 6 months. Through his experience in the care home Tommy realised that this type of work really suited him. He researched the qualifications that are required for this career and he applied to do a course in Care Skills at a Further Education College. Many organisations depend greatly on the positive impact of volunteering. Companies give back to society through their Corporate Social Responsibility strategy. Given the differences between commercial and volunteer organisations, it is important to ensure effective structures exist. Larger companies appoint Volunteer Co‐ordinators who play a vital and varied role for both the individual and the organisation. Experience has shown that involving all parties in decision‐making is vital to the success of volunteer agencies in Ireland.",
     questionText: "What might have influenced Tommy when choosing where to volunteer? What might Tommy gain from volunteering?",
-    tariffModel: {"kind":"fixed","notation":"4 @ 1m + 4@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Influences on where to volunteer — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Personal interest/father is a client of the care home/hobbies and interests","Opportunities to gain particular skills","Potential for future employment – Career they are interested in, that they want to get experience in","Convenience of location","Times may suit him. Whether the volunteer has the time available that the voluntary organisation needs","Volunteer somewhere where they can make a difference and contribute to the community or society/provide better amenities and services for a group of people/placement officer"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Social contact with new people. Meeting new people/something to do in their spare time/unemployed/similar interests","He can develop new skills/improve existing skills","Improves his CV – Reference/work experience","Self esteem improved by giving back/confidence/active citizenship/feeling of connection to the community","Training and experience may lead to paid employment/improve his chances of finding work/build networks/contact/help with job search","Find out more about work you would consider as a future career/lets you know what the career involves"]} },
+    { id: "influences", kind: "anyN", verbatim: "Influences on where to volunteer.", marks: 4, contextNote: "FOUR influences, 1 mark each, and FOUR gains, 1 mark each. Both components are required; retain the whole Tommy/Sarah case.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Personal interest/father is a client of the care home/hobbies and interests","Opportunities to gain particular skills.","Potential for future employment – Career they are interested in, that they want to get experience in.","Convenience of location.","Times may suit him. Whether the volunteer has the time available that the voluntary organisation needs.","Volunteer somewhere where they can make a difference and contribute to the community or society/provide better amenities and services for a group of people/placement officer."]} },
+    { id: "gains", kind: "anyN", verbatim: "What might Tommy gain from volunteering.", marks: 4, contextNote: "FOUR distinct gains, 1 mark each; keep the separately required influences above.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Social contact with new people. Meeting new people/something to do in their spare time/unemployed/similar interests.","He can develop new skills/improve existing skills.","Improves his CV – Reference/work experience.","Self esteem improved by giving back/confidence/active citizenship/feeling of connection to the community.","Training and experience may lead to paid employment/improve his chances of finding work/build networks/contact/help with job search.","Find out more about work you would consider as a future career/lets you know what the career involves."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Volunteering — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2018 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-b2ii", topicId: "lcvp-link-modules-0-4", conceptId: "steps-recruitment-process-when-organisation-looking",
+    id: "lcvp-2018-cl-b2ii", topicId: "lcvp-link-modules-1-2", conceptId: "steps-recruitment-process-when-organisation-looking",
     section: "B", questionRef: "2018 CL Section B Q2(ii)",
+    stem: "VOLUNTEERING Many communities rely on volunteers to help deliver services and programmes that enhance the life of the people living in the area. Local Volunteer Centres were set up to help match those who needed volunteer workers with individuals offering their services. The Volunteer Centres offer advice, placement and support services to individuals and organisations who are interested in volunteering in Ireland. Opportunities also exist for those who wish to have the experience of volunteering abroad. Tailored volunteer projects are offered by many agencies. People volunteer for a variety of reasons. In Tommy’s case, having spent most of his working life in the construction industry, he found himself unemployed for a long period of time after his employer went out of business. He was becoming increasingly concerned about the challenges of gaining new employment. During a visit to his local Intreo Office he learned that he could volunteer and his jobseekers allowance would not be affected. Tommy decided to contact his local Volunteer Centre to explore some volunteering opportunities. This would give him the opportunity to develop new skills and gain valuable experience for his CV. Sarah is a Placement Officer in the Volunteer Centre; she matches organisations that need help with people who wish to volunteer. Tommy had a face‐to‐face meeting with Sarah during which she pointed out a number of things Tommy should consider if he wishes to volunteer while searching for a job. Volunteering is a great way to improve his chances of finding work but it is important not to let it interfere with his job search. Tommy discovered there are a number of aspects he should consider before committing to volunteering if his experience of being a volunteer is to be a positive one. Having registered with the Volunteer Centre, Tommy applied for work and secured a placement volunteering at a local care home for the elderly. His decision to accept this placement is due to his personal engagement with care homes. His elderly father has been living in a state‐of‐the‐art facility for the last 6 months. Through his experience in the care home Tommy realised that this type of work really suited him. He researched the qualifications that are required for this career and he applied to do a course in Care Skills at a Further Education College. Many organisations depend greatly on the positive impact of volunteering. Companies give back to society through their Corporate Social Responsibility strategy. Given the differences between commercial and volunteer organisations, it is important to ensure effective structures exist. Larger companies appoint Volunteer Co‐ordinators who play a vital and varied role for both the individual and the organisation. Experience has shown that involving all parties in decision‐making is vital to the success of volunteer agencies in Ireland.",
     questionText: "Outline the steps in the recruitment process when an organisation is looking for a volunteer.",
-    tariffModel: {"kind":"bestNofParts","notation":"4@1m","answer":4,"ofParts":9,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Contact volunteer centre/Volunteer Ireland for advice","Job description, what task will they need to carry out","Decide on the skills/qualities you want/person specification, from someone volunteering","Decide on how many hours per week volunteers will work","Prepare an application form/apply with CV","Advertise the position","Decide on criteria for short listing/arrange and carry out interviews","Request references/Garda vetting","Appoint the volunteer and assign roles"]} },
+    { id: "steps", kind: "anyN", verbatim: "The steps in the recruitment process when an organisation is looking for a volunteer.", marks: 4, contextNote: "FOUR distinct recruitment steps, 1 mark each; all nine original models remain available.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Contact volunteer centre/Volunteer Ireland for advice.","Job description, what task will they need to carry out","Decide on the skills/qualities you want/person specification, from someone volunteering.","Decide on how many hours per week volunteers will work.","Prepare an application form/apply with CV.","Advertise the position.","Decide on criteria for short listing/arrange and carry out interviews.","Request references/Garda vetting.","Appoint the volunteer and assign roles."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Volunteering — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2018 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-b3i", topicId: "lcvp-link-modules-1-2", conceptId: "b3i",
+    section: "B", questionRef: "2018 CL Section B Q3(i)",
+    stem: "VOLUNTEERING Many communities rely on volunteers to help deliver services and programmes that enhance the life of the people living in the area. Local Volunteer Centres were set up to help match those who needed volunteer workers with individuals offering their services. The Volunteer Centres offer advice, placement and support services to individuals and organisations who are interested in volunteering in Ireland. Opportunities also exist for those who wish to have the experience of volunteering abroad. Tailored volunteer projects are offered by many agencies. People volunteer for a variety of reasons. In Tommy’s case, having spent most of his working life in the construction industry, he found himself unemployed for a long period of time after his employer went out of business. He was becoming increasingly concerned about the challenges of gaining new employment. During a visit to his local Intreo Office he learned that he could volunteer and his jobseekers allowance would not be affected. Tommy decided to contact his local Volunteer Centre to explore some volunteering opportunities. This would give him the opportunity to develop new skills and gain valuable experience for his CV. Sarah is a Placement Officer in the Volunteer Centre; she matches organisations that need help with people who wish to volunteer. Tommy had a face‐to‐face meeting with Sarah during which she pointed out a number of things Tommy should consider if he wishes to volunteer while searching for a job. Volunteering is a great way to improve his chances of finding work but it is important not to let it interfere with his job search. Tommy discovered there are a number of aspects he should consider before committing to volunteering if his experience of being a volunteer is to be a positive one. Having registered with the Volunteer Centre, Tommy applied for work and secured a placement volunteering at a local care home for the elderly. His decision to accept this placement is due to his personal engagement with care homes. His elderly father has been living in a state‐of‐the‐art facility for the last 6 months. Through his experience in the care home Tommy realised that this type of work really suited him. He researched the qualifications that are required for this career and he applied to do a course in Care Skills at a Further Education College. Many organisations depend greatly on the positive impact of volunteering. Companies give back to society through their Corporate Social Responsibility strategy. Given the differences between commercial and volunteer organisations, it is important to ensure effective structures exist. Larger companies appoint Volunteer Co‐ordinators who play a vital and varied role for both the individual and the organisation. Experience has shown that involving all parties in decision‐making is vital to the success of volunteer agencies in Ireland.",
+    questionText: "Compare and contrast a voluntary body with a commercial business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "compare", kind: "criterion", verbatim: "COMPARE:", marks: 2, contextNote: "Original rule: 6@1m; A minimum of 2 in each area. Credit TWO compare points here, TWO contrast points below, then TWO further DISTINCT points from either category. A point can be credited only once across all six slots. Complete original pools: COMPARE: Both need skilled reliable workers. | Both should provide appropriate training and have a duty of care to their workers. | Both must budget and operate within financial limits. | Both provide a product/service to benefit others. CONTRAST: A voluntary body relies on people to work for free whereas a commercial business pays wages. | Voluntary bodies rely on donations and grants for funds while a commercial business raises capital by personal investment/shares. | Voluntary bodies are non-profit making and are concerned with social issues whereas a Commercial business is motivated to make a profit. | Clients often have no choice but to engage with the voluntary organisations whereas commercial business must always seek new customers/must keep existing customers. | A Voluntary body is accountable to those who avail of their services-their clients, whereas a Commercial business is accountable to the shareholders/owners. | A Voluntary body benefits the community whereas a Commercial Business benefits the owners/investors. | A Voluntary body overall aim is to help others whereas the overall aim of a Commercial business is to produce a product/supply a service. Keep each response distinct and credit it only once. Complete original guidance: Both need skilled reliable workers. | Both should provide appropriate training and have a duty of care to their workers. | Both must budget and operate within financial limits. | Both provide a product/service to benefit others.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "contrast", kind: "criterion", verbatim: "CONTRAST:", marks: 2, contextNote: "TWO distinct contrast points. Do not reuse points credited in any other row. Keep each response distinct and credit it only once. Complete original guidance: A voluntary body relies on people to work for free whereas a commercial business pays wages. | Voluntary bodies rely on donations and grants for funds while a commercial business raises capital by personal investment/shares. | Voluntary bodies are non-profit making and are concerned with social issues whereas a Commercial business is motivated to make a profit. | Clients often have no choice but to engage with the voluntary organisations whereas commercial business must always seek new customers/must keep existing customers. | A Voluntary body is accountable to those who avail of their services-their clients, whereas a Commercial business is accountable to the shareholders/owners. | A Voluntary body benefits the community whereas a Commercial Business benefits the owners/investors. | A Voluntary body overall aim is to help others whereas the overall aim of a Commercial business is to produce a product/supply a service.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "further", kind: "criterion", verbatim: "Compare and contrast a voluntary body with a commercial business.", marks: 2, contextNote: "TWO further distinct points from either category, not already credited. This preserves 2+4, 3+3 or 4+2; no fixed 3+3 split. Keep each response distinct and credit it only once. Complete original guidance: Both need skilled reliable workers. | Both should provide appropriate training and have a duty of care to their workers. | Both must budget and operate within financial limits. | Both provide a product/service to benefit others. | A voluntary body relies on people to work for free whereas a commercial business pays wages. | Voluntary bodies rely on donations and grants for funds while a commercial business raises capital by personal investment/shares. | Voluntary bodies are non-profit making and are concerned with social issues whereas a Commercial business is motivated to make a profit. | Clients often have no choice but to engage with the voluntary organisations whereas commercial business must always seek new customers/must keep existing customers. | A Voluntary body is accountable to those who avail of their services-their clients, whereas a Commercial business is accountable to the shareholders/owners. | A Voluntary body benefits the community whereas a Commercial Business benefits the owners/investors. | A Voluntary body overall aim is to help others whereas the overall aim of a Commercial business is to produce a product/supply a service.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Volunteering — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -219,21 +543,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-b3ii", topicId: "lcvp-link-modules-1-2", conceptId: "challenges-exist-new-voluntary-body-setting",
     section: "B", questionRef: "2018 CL Section B Q3(ii)",
+    stem: "VOLUNTEERING Many communities rely on volunteers to help deliver services and programmes that enhance the life of the people living in the area. Local Volunteer Centres were set up to help match those who needed volunteer workers with individuals offering their services. The Volunteer Centres offer advice, placement and support services to individuals and organisations who are interested in volunteering in Ireland. Opportunities also exist for those who wish to have the experience of volunteering abroad. Tailored volunteer projects are offered by many agencies. People volunteer for a variety of reasons. In Tommy’s case, having spent most of his working life in the construction industry, he found himself unemployed for a long period of time after his employer went out of business. He was becoming increasingly concerned about the challenges of gaining new employment. During a visit to his local Intreo Office he learned that he could volunteer and his jobseekers allowance would not be affected. Tommy decided to contact his local Volunteer Centre to explore some volunteering opportunities. This would give him the opportunity to develop new skills and gain valuable experience for his CV. Sarah is a Placement Officer in the Volunteer Centre; she matches organisations that need help with people who wish to volunteer. Tommy had a face‐to‐face meeting with Sarah during which she pointed out a number of things Tommy should consider if he wishes to volunteer while searching for a job. Volunteering is a great way to improve his chances of finding work but it is important not to let it interfere with his job search. Tommy discovered there are a number of aspects he should consider before committing to volunteering if his experience of being a volunteer is to be a positive one. Having registered with the Volunteer Centre, Tommy applied for work and secured a placement volunteering at a local care home for the elderly. His decision to accept this placement is due to his personal engagement with care homes. His elderly father has been living in a state‐of‐the‐art facility for the last 6 months. Through his experience in the care home Tommy realised that this type of work really suited him. He researched the qualifications that are required for this career and he applied to do a course in Care Skills at a Further Education College. Many organisations depend greatly on the positive impact of volunteering. Companies give back to society through their Corporate Social Responsibility strategy. Given the differences between commercial and volunteer organisations, it is important to ensure effective structures exist. Larger companies appoint Volunteer Co‐ordinators who play a vital and varied role for both the individual and the organisation. Experience has shown that involving all parties in decision‐making is vital to the success of volunteer agencies in Ireland.",
     questionText: "What challenges exist for a new voluntary body setting up in your area.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m(0/2)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Challenges for a new voluntary body setting up in your area — any 3", marks: 6, contextNote: "3 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Funding/Financing/setup costs/running costs","Finding a suitable location/building with the right space etc. / proximity to clients, time not wasted travelling","Volunteers/having suitable volunteers at the times you want. Hiring qualified skilled staff/volunteers, need for hardworking committed staff/properly qualified/skilled staff, suitable volunteers","Attitude of locals/Getting the backing of the community so that they do not object to the organisations/Attitudes of people to corruption in voluntary organisations","Obtaining suitable permits/compliance with regulations. Legal issues – around the startup of the organisations/planning/health and safety/ownership","Assign roles- who is responsible for the setup/roles, define who does what/deciding what people need to do. Lack of skills/expertise needed to manage or run the organisation","Marketing their service/product –finding clients, volunteers, creating awareness of the organisation","Dealing with competitors – dealing with competing voluntary organizations"]} },
+    { id: "challenges", kind: "anyN", verbatim: "Challenges for a new voluntary body setting up in your area.", marks: 6, contextNote: "THREE distinct challenges, each 2 or 0 marks; the original scheme gives no 1-mark partial step.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Funding/Financing/setup costs/running costs.","Finding a suitable location/building with the right space etc. / proximity to clients, time not wasted travelling.","Volunteers/having suitable volunteers at the times you want. Hiring qualified skilled staff/volunteers, need for hardworking committed staff/properly qualified/skilled staff, suitable volunteers.","Attitude of locals/Getting the backing of the community so that they do not object to the organisations/Attitudes of people to corruption in voluntary organisations.","Obtaining suitable permits/compliance with regulations. Legal issues – around the startup of the organisations/planning/health and safety/ownership.","Assign roles- who is responsible for the setup/roles, define who does what/deciding what people need to do. Lack of skills/expertise needed to manage or run the organisation.","Marketing their service/product –finding clients, volunteers, creating awareness of the organisation.","Dealing with competitors – dealing with competing voluntary organizations."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Volunteering — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2018 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -244,10 +581,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q1(a)",
     stem: "Enterprise is essential for growth in the economy.",
     questionText: "Explain what you understand by the term ‘enterprise’.",
-    tariffModel: {"kind":"fixed","notation":"2@2m(0/2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enterprise is when you take the risk to set up a business or showing initiative/being creative/proactive/ taking on new challenges/showing innovation/profit/creates employment", marks: 4, contextNote: "2 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "Explain what you understand by the term ‘enterprise’.", marks: 4, contextNote: "Original two components at 2 or 0 marks each. Keep the complete definition; no compulsory semantic split or 1-mark step is invented. Keep each response distinct and credit it only once. Complete original guidance: Enterprise is when you take the risk to set up a business or showing initiative/being creative/proactive/ taking on new challenges/showing innovation/profit/creates employment.", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -256,12 +603,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-c1bi", topicId: "lcvp-link-modules-1-0", conceptId: "household",
     section: "C", questionRef: "2018 CL Section C Q1(b)(i)",
-    stem: "Enterprise is essential for growth in the economy.",
+    stem: "Enterprise is essential for growth in the economy. Describe two examples of enterprise in action in each of the following.",
     questionText: "Household",
-    tariffModel: {"kind":"bestNofParts","notation":"2@1m","answer":2,"ofParts":6,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Household (ii) Local Community Household — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Budgeting – Planning income and expenditure","Recycling – Using green and brown bins/using secondhand shops/environmentally friendly","DIY – This means you do not have to pay a tradesman to do the work","Growing your own vegetables, this can be healthier/organic/cheaper than buying from shops","Planning – Dividing up the chores/rota/work is shared","Setting up a home based business e.g. home baking/B&B/creche"]} },
+    { id: "examples", kind: "anyN", verbatim: "Household", marks: 2, contextNote: "TWO examples in this printed roman context, 1 mark each. The source also prints RP. Keep the parent instruction and the separately priced companion context.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Budgeting – Planning income and expenditure.","Recycling – Using green and brown bins/using secondhand shops/environmentally friendly.","DIY – This means you do not have to pay a tradesman to do the work.","Growing your own vegetables, this can be healthier/organic/cheaper than buying from shops.","Planning – Dividing up the chores/rota/work is shared.","Setting up a home based business e.g. home baking/B&B/creche."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -270,56 +627,195 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
     id: "lcvp-2018-cl-c1bii", topicId: "lcvp-link-modules-1-2", conceptId: "local-community",
     section: "C", questionRef: "2018 CL Section C Q1(b)(ii)",
-    stem: "Enterprise is essential for growth in the economy.",
+    stem: "Enterprise is essential for growth in the economy. Describe two examples of enterprise in action in each of the following.",
     questionText: "Local Community.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@1m","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Fundraising for locality – this helps a local charity or club so members can get better services","Local Community Organisation/Tidy Towns committee – improves the area and creates a sense of pride","Neighbourhood Watch/Community Alert – local residence feel safer/older people not afraid","Clubs/voluntary groups to benefit young people/aged etc. Cuts down on vandalism/loneliness","Visiting old people residential/care homes, offering services/entertainment"]} },
+    { id: "examples", kind: "anyN", verbatim: "Local Community", marks: 2, contextNote: "TWO examples in this printed roman context, 1 mark each. The source also prints RP. Keep the parent instruction and the separately priced companion context.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Fundraising for locality – this helps a local charity or club so members can get better services.","Local Community Organisation/Tidy Towns committee – improves the area and creates a sense of pride.","Neighbourhood Watch/Community Alert – local residence feel safer/older people not afraid.","Clubs/voluntary groups to benefit young people/aged etc. Cuts down on vandalism/loneliness.","Visiting old people residential/care homes, offering services/entertainment."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c1d", topicId: "lcvp-link-modules-1-4", conceptId: "planning-good-managerial-skills-product-development",
+    id: "lcvp-2018-cl-c1c", topicId: "lcvp-link-modules-1-1", conceptId: "c1c",
+    section: "C", questionRef: "2018 CL Section C Q1(c)",
+    stem: "Enterprise is essential for growth in the economy.",
+    questionText: "Identify two agencies which provide support for business start‐ups. Outline the type of support offered by each of these agencies.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "profile-1", kind: "criterion", verbatim: "Name of agency", marks: 4, contextNote: "TWO distinct agencies: each name 1, its matching support 3 (1+1+1). Keep each support linked to the SAME agency. All twelve source profiles, including agencies for which no detailed support model is printed: Local Enterprise Office/LEO/CEB Mentoring services Gives advice Start your own business course/training Grants for feasibility studies Capital grants for equipment | Enterprise Ireland Offers grants Gives advice on export markets Networking Mentoring services | Local Area Partnerships companies/APC’s Grants Advice for new business in certain urban/rural/certain types of business Provide premises Workshops/training | ETB’s/SOLAS/FAS Provide training in certain areas Work with local colleges providing courses Employers can advertise jobs in their offices | Leader Plus | Teagasc | Udaras Na Gaeltacha | Failte Ireland | IDA Ireland | Intertrade Ireland | Bord Bia | Glas", permittedMarks: [0,1,2,3,4], parts: [{"id":"component-1","verbatim":"Name of agency","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Type of support","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Name of agency", marks: 4, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3,4], parts: [{"id":"component-1","verbatim":"Name of agency","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Type of support","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c1d", topicId: "lcvp-link-modules-1-0", conceptId: "planning-good-managerial-skills-product-development",
     section: "C", questionRef: "2018 CL Section C Q1(d)",
     stem: "Enterprise is essential for growth in the economy.",
     questionText: "Planning, good managerial skills and product development are among the essential factors to ensuring continued success for any enterprise. Outline the importance of each.",
-    tariffModel: {"kind":"fixed","notation":"3@1m + 3@1m + 3@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Financial planning-keeps an eye on cash flow problems/budgeting properly","Planning identifies the goals/aims and objectives of the business so people within the business know what they are working towards","Planning allows weaknesses to be identified and addressed/SWOT","Planning brings order and clarity to the business/allows for time frames and deadlines and can keep all employees on track","The needs and resources required can be anticipated e.g. finances, staff, premises, materials, etc","The roles and duties of each employee are defined; everyone knows what they are working towards","Planning provides a basis for monitoring results/measuring success/ check the progress of the company against the plan to see if any changes need to be made","Provides the necessary information to investors when finance is required"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Financial management: Oversee short term day to day budgets and long term issues such as capital investment, bank borrowing","Business runs effectively, cover all aspects of business and in good time","Managing employees: Have suitably trained employees. Recruit right employees with relevant experience/qualifications/H.R","Better industrial relations/ less disputes/less absenteeism/staff turnover encourages loyalty to business which can lead to improved industrial relations within the business","Capable of communicating well with all the different stakeholders- investors, employees etc","Plan for economic factors such as a recession in the economy or increases in taxation","Leading: capable of leading the organisation to achieve its goals/delegating tasks etc","Motivating staff so they give their best for the firm"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Having the right product so you do not waste money producing the incorrect product that will not sell","Market research so that business stays ahead of competitors by always having upgraded product to meet consumer needs. This helps the business survive in the long term by having new products to sell to their customers","This builds the reputation of the business as always being up to date is a form of constant advertising, this builds customer loyalty","Good product development increases the sales and therefore the profit potential of the business"]} },
+    { id: "planning", kind: "anyN", verbatim: "Planning:", marks: 3, contextNote: "All THREE printed headings are required. Give three relevant points under this heading, 1 each; keep every original model.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Financial planning-keeps an eye on cash flow problems/budgeting properly.","Planning identifies the goals/aims and objectives of the business so people within the business know what they are working towards.","Planning allows weaknesses to be identified and addressed/SWOT.","Planning brings order and clarity to the business/allows for time frames and deadlines and can keep all employees on track.","The needs and resources required can be anticipated e.g. finances, staff, premises, materials, etc.","The roles and duties of each employee are defined; everyone knows what they are working towards.","Planning provides a basis for monitoring results/measuring success/ check the progress of the company against the plan to see if any changes need to be made.","Provides the necessary information to investors when finance is required."]} },
+    { id: "good-managerial-skills", kind: "anyN", verbatim: "Good managerial skills:", marks: 3, contextNote: "All THREE printed headings are required. Give three relevant points under this heading, 1 each; keep every original model.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Financial management: Oversee short term day to day budgets and long term issues such as capital investment, bank borrowing.","Business runs effectively, cover all aspects of business and in good time.","Managing employees: Have suitably trained employees. Recruit right employees with relevant experience/qualifications/H.R.","Better industrial relations/ less disputes/less absenteeism/staff turnover encourages loyalty to business which can lead to improved industrial relations within the business.","Capable of communicating well with all the different stakeholders- investors, employees etc.","Plan for economic factors such as a recession in the economy or increases in taxation.","Leading: capable of leading the organisation to achieve its goals/delegating tasks etc.","Motivating staff so they give their best for the firm."]} },
+    { id: "product-development", kind: "anyN", verbatim: "Product development:", marks: 3, contextNote: "All THREE printed headings are required. Give three relevant points under this heading, 1 each; keep every original model.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Having the right product so you do not waste money producing the incorrect product that will not sell.","Market research so that business stays ahead of competitors by always having upgraded product to meet consumer needs. This helps the business survive in the long term by having new products to sell to their customers.","This builds the reputation of the business as always being up to date is a form of constant advertising, this builds customer loyalty.","Good product development increases the sales and therefore the profit potential of the business."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c2bi", topicId: "lcvp-link-modules-0-4", conceptId: "methods-finding-work-experience-work-shadowing",
+    id: "lcvp-2018-cl-c2a", topicId: "lcvp-link-modules-0-2", conceptId: "c2a",
+    section: "C", questionRef: "2018 CL Section C Q2(a)",
+    stem: "As part of your LCVP course you are required to undertake work experience/work shadowing which will help you make informed career choices.",
+    questionText: "Name one career you might be interested in and identify two skills/qualities required to pursue it.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "career", kind: "point", verbatim: "Name of career", marks: 1 },
+    { id: "skills", kind: "criterion", verbatim: "Skills/qualities appropriate to the career", marks: 2, contextNote: "TWO skills/qualities appropriate to the SAME named career, 1 each. The original scheme supplies criteria, not a personal model; none is invented.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c2bi", topicId: "lcvp-link-modules-0-3", conceptId: "methods-finding-work-experience-work-shadowing",
     section: "C", questionRef: "2018 CL Section C Q2(b)(i)",
     stem: "As part of your LCVP course you are required to undertake work experience/work shadowing which will help you make informed career choices.",
     questionText: "State two methods of finding work experience/work shadowing.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@1m","answer":2,"ofParts":8,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Methods of finding a work experience/work shadowing — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Personal contacts/family/teachers/word of mouth","Sending out CV’s to potential employers/letters","Personal visit","Phone call","From part time work","Use the internet","Send an email","Newspapers/notice boards"]} },
+    { id: "responses", kind: "anyN", verbatim: "Methods of finding a work experience/work shadowing.", marks: 2, contextNote: "Choose 2 distinct relevant responses. Each receives 1 or 0 marks; preserve every original alternative.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Personal contacts/family/teachers/word of mouth","Sending out CV’s to potential employers/letters","Personal visit","Phone call","From part time work","Use the internet","Send an email","Newspapers/notice boards"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c2c", topicId: "lcvp-link-modules-0-2", conceptId: "reasons-helpful-employee-have-clearly-defined",
+    id: "lcvp-2018-cl-c2bii", topicId: "lcvp-link-modules-0-3", conceptId: "c2bii",
+    section: "C", questionRef: "2018 CL Section C Q2(b)(ii)",
+    stem: "As part of your LCVP course you are required to undertake work experience/work shadowing which will help you make informed career choices. State two methods of finding work experience/work shadowing.",
+    questionText: "Outline two advantages for one of the methods you have listed.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "advantages", kind: "anyN", verbatim: "Any two advantages related to one of the methods mentioned above", marks: 3, contextNote: "Both advantages must relate to ONE of the methods named in part(i). Original allocation: Any 2 relevant points given; 2m, 1m. Retain this unequal two-answer award and the source RP instruction; do not divide the marks equally.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Quick to get a reply","Easy to make a good impression in person","Easy to get a good recommendation","Easy to get information on the job","Might get experience in an area that its hard to get work experience in e.g. Accountants"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c2c", topicId: "lcvp-link-modules-0-0", conceptId: "reasons-helpful-employee-have-clearly-defined",
     section: "C", questionRef: "2018 CL Section C Q2(c)",
     stem: "As part of your LCVP course you are required to undertake work experience/work shadowing which will help you make informed career choices.",
     questionText: "Explain three reasons why it is helpful for an employee to have a clearly defined role in the workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m(1+1+1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["So that work can be divided up/employees skills can be matched to a specific job","Each worker knows who their supervisor/manager is/less supervision","Each employee knows their job and each person knows what are responsible for","Work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at/Productivity","Less disputes/confusion/less boredom","Safety aspect/employees are trained for a particular job","Motivation/Morale/better atmosphere in workplace/less stress"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three reasons why it is helpful for an employee to have a clearly defined role in the workplace.", marks: 9, contextNote: "Original allocation: 3 responses at 3 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: So that work can be divided up/employees skills can be matched to a specific job. | Each worker knows who their supervisor/manager is/less supervision. | Each employee knows their job and each person knows what are responsible for. | Work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at/Productivity. | Less disputes/confusion/less boredom. | Safety aspect/employees are trained for a particular job. | Motivation/Morale/better atmosphere in workplace/less stress.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c2d", topicId: "lcvp-link-modules-0-2", conceptId: "c2d",
+    section: "C", questionRef: "2018 CL Section C Q2(d)",
+    stem: "As part of your LCVP course you are required to undertake work experience/work shadowing which will help you make informed career choices.",
+    questionText: "Describe how your work experience/shadowing has influenced you in your choice of career. Refer to two possible career paths evaluating each.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "evaluation", kind: "criterion", verbatim: "Describe how the work experience/shadowing has influenced you in your choice of career. Refer to two possible career paths evaluating each.", marks: 4, contextNote: "The original scheme explicitly prices this task at 8 although the actual paper page omits its individual tariff. Two influence/evaluation responses, 2 marks (1+1) each. Keep each response distinct and credit it only once. Complete original guidance: Helped to make a decision regarding their career choice/does or does not want to pursue it after they leave school. | Experienced the type of work involved in the career/enjoyed it or did not enjoy what was involved in this particular job. | Realised what skills are required for this career/have or do not have these skills. | Motivated the student to work harder in school to get the necessary points/entry requirements to study a course in college. | Found out about the job prospects/good/poor/salary.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "career-paths", kind: "criterion", verbatim: "Two Career Paths-2 routes to same profession", marks: 4, contextNote: "The separately printed two career-path responses receive 2 (1+1) each. Preserve the source allowance for two routes to the SAME profession; do not require two different professions.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -330,52 +826,95 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q3(a)",
     stem: "Your local area has decided to enter the Tidy Towns competition.",
     questionText: "List two sources of employment in your local area.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "has decided to enter the Tidy Towns competition", marks: 2, contextNote: "2 marks for this answer.", openList: true },
+    { id: "workplaces", kind: "criterion", verbatim: "Any two workplaces named @ 1 mark each", marks: 2, contextNote: "Name TWO workplaces in the local area. No local personal examples are printed or invented.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c3b", topicId: "lcvp-link-modules-1-3", conceptId: "present-swot-analysis-organising-committee-draw",
+    id: "lcvp-2018-cl-c3b", topicId: "lcvp-link-modules-1-2", conceptId: "present-swot-analysis-organising-committee-draw",
     section: "C", questionRef: "2018 CL Section C Q3(b)",
     stem: "Your local area has decided to enter the Tidy Towns competition.",
     questionText: "Present the SWOT analysis the organising committee would draw‐up for your local area.",
-    tariffModel: {"kind":"bestNofParts","notation":"4@2m(1/1)","answer":4,"ofParts":6,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; (1/1) — all or nothing on each answer.", openList: true, group: {"claimMax":4,"perOption":2,"options":["SWOT analysis:","A relevant statement for each point Strengths: Location Historical points of interest Amenities Infrastructure Community Spirit/people/availability of volunteers with skills","Weaknesses: Parking and traffic management/infrastructure Lack of accommodation for tourists","Lack of volunteers Opportunities: Develop tourism industry Exploit the areas natural resources New business opportunities Provide more employment to local people","Threats: Competition from other similar towns/villages Securing financial support Other communities applying for the same grants Seasonal activities and weather dependent Lack of community interest","2 points under each heading 1 specific point to tidy towns No marks for headings No repetition of points"]} },
+    { id: "strengths", kind: "criterion", verbatim: "Strengths:", marks: 2, contextNote: "Across the whole SWOT answer, retain the exact source instructions: 4@2m(1/1); 2 points under each heading; 1 specific point to tidy towns; No marks for headings; No repetition of points.  Keep each response distinct and credit it only once. Complete original guidance: Location | Historical points of interest | Amenities | Infrastructure | Community Spirit/people/availability of volunteers with skills", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "weaknesses", kind: "criterion", verbatim: "Weaknesses:", marks: 2, contextNote: "Two relevant points under this heading, 1 each. No repeated points or marks for writing the heading.  Keep each response distinct and credit it only once. Complete original guidance: Parking and traffic management/infrastructure | Lack of accommodation for tourists | Lack of volunteers", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "opportunities", kind: "criterion", verbatim: "Opportunities:", marks: 2, contextNote: "Two relevant points under this heading, 1 each. No repeated points or marks for writing the heading.  Keep each response distinct and credit it only once. Complete original guidance: Develop tourism industry | Exploit the areas natural resources | New business opportunities | Provide more employment to local people", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "threats", kind: "criterion", verbatim: "Threats:", marks: 2, contextNote: "Two relevant points under this heading, 1 each. No repeated points or marks for writing the heading.  Keep each response distinct and credit it only once. Complete original guidance: Competition from other similar towns/villages | Securing financial support | Other communities applying for the same grants | Seasonal activities and weather dependent | Lack of community interest", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c3c", topicId: "lcvp-link-modules-1-3", conceptId: "steps-should-be-taken-local-community",
+    id: "lcvp-2018-cl-c3c", topicId: "lcvp-link-modules-1-2", conceptId: "steps-should-be-taken-local-community",
     section: "C", questionRef: "2018 CL Section C Q3(c)",
     stem: "Your local area has decided to enter the Tidy Towns competition.",
     questionText: "Outline the steps that should be taken by the local community in preparation for entry to the competition.",
-    tariffModel: {"kind":"bestNofParts","notation":"6@1m","answer":6,"ofParts":10,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 6 of the answers the scheme states", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Arrange notice/ advertise meeting to interested local people","Establish a committee of interested local people/range of skills/interests","Complete the entry form to enter the competition","SWOT of area/survey/draw up a plan for projects to be completed","Get volunteers/advertise locally/newsletter/mass/local radio/local Facebook & Twitter/local school","Assign projects/roles/duties to volunteers","Get sponsorship from local businesses/apply for grants from National Lottery","Secure an area to store equipment/tools","Source equipment/tools/materials etc","Visit an area/talk to committes who have previously won/done well in the competition"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline the steps that should be taken by the local community in preparation for entry to the competition.", marks: 6, contextNote: "Choose 6 distinct relevant responses. Each receives 1 or 0 marks; preserve every original alternative.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Arrange notice/ advertise meeting to interested local people.","Establish a committee of interested local people/range of skills/interests.","Complete the entry form to enter the competition.","SWOT of area/survey/draw up a plan for projects to be completed.","Get volunteers/advertise locally/newsletter/mass/local radio/local Facebook & Twitter/local school.","Assign projects/roles/duties to volunteers.","Get sponsorship from local businesses/apply for grants from National Lottery.","Secure an area to store equipment/tools.","Source equipment/tools/materials etc.","Visit an area/talk to committes who have previously won/done well in the competition."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c3d", topicId: "lcvp-link-modules-1-4", conceptId: "ways-local-community-will-benefit-participation",
+    id: "lcvp-2018-cl-c3d", topicId: "lcvp-link-modules-1-2", conceptId: "ways-local-community-will-benefit-participation",
     section: "C", questionRef: "2018 CL Section C Q3(d)",
     stem: "Your local area has decided to enter the Tidy Towns competition.",
     questionText: "Discuss three ways the local community will benefit from participation in the Tidy Towns competition.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m(1+1+1)","answer":3,"ofParts":5,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Improvement of local facitities/amenities e.g. walkways, parks/health benefits","Community spirit is improved/locals working together to achieve a common goal","Town/village looks appealing, people may want to move there/increases population","Attracts tourism/spin off businesses/B&B/cafe/restaurant/transport business. Money spent which raises the standard of living in the area/local businesses do well as a result","May create employment – development of natural resources may lead to employment e.g. lake/river"]} },
+    { id: "responses", kind: "criterion", verbatim: "Discuss three ways the local community will benefit from participation in the Tidy Towns competition.", marks: 9, contextNote: "Original allocation: 3 responses at 3 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Improvement of local facitities/amenities e.g. walkways, parks/health benefits. | Community spirit is improved/locals working together to achieve a common goal. | Town/village looks appealing, people may want to move there/increases population. | Attracts tourism/spin off businesses/B&B/cafe/restaurant/transport business. Money spent which raises the standard of living in the area/local businesses do well as a result. | May create employment – development of natural resources may lead to employment e.g. lake/river.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -386,10 +925,44 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q4(a)(i)",
     stem: "A positive workplace atmosphere is of benefit to all.",
     questionText: "Name two Trade Unions.",
-    tariffModel: {"kind":"fixed","notation":"2@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "eg: TUI/ASTI/INMO/UNITE/SIPTU/INTO/MANDATE/FORÁS", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "unions", kind: "anyN", verbatim: "Name any two trade unions", marks: 2, contextNote: "TWO union names, 1 each. All eight original examples and their historical spellings are retained.", openList: true, group: {"claimMax":2,"perOption":1,"options":["TUI","ASTI","INMO","UNITE","SIPTU","INTO","MANDATE","FORÁS"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c4aii", topicId: "lcvp-link-modules-0-0", conceptId: "c4aii",
+    section: "C", questionRef: "2018 CL Section C Q4(a)(ii)",
+    stem: "A positive workplace atmosphere is of benefit to all.",
+    questionText: "What is a shop steward?",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "A shop steward is the worker who represents the union in the workplace.", marks: 3, contextNote: "The complete original definition is allocated 3 marks. No internal partial ladder is printed or invented." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -400,10 +973,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q4(b)",
     stem: "A positive workplace atmosphere is of benefit to all.",
     questionText: "Outline four reasons why an individual might join a trade union?",
-    tariffModel: {"kind":"bestNofParts","notation":"4@2m(1+1)","answer":4,"ofParts":8,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Trade unions negotiate agreements with employers on pay/conditions","The trade union will represent members during major changes to the work place such as large scale redundancies/work practices/court","They can provide their members with information, advice and support on entitlements e.g. holidays","They can provide education facilities and training e.g. courses for shop stewards","They mediate with employers to resolve disputes/bullying incidents","Trade unions lead to greater solidarity among workers/strength in numbers/immunity","Consumer benefits such as discounted insurance/VHI","Can be compulsory to join a trade union"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline four reasons why an individual might join a trade union?", marks: 8, contextNote: "Original allocation: 4 responses at 2 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Trade unions negotiate agreements with employers on pay/conditions. | The trade union will represent members during major changes to the work place such as large scale redundancies/work practices/court. | They can provide their members with information, advice and support on entitlements e.g. holidays | They can provide education facilities and training e.g. courses for shop stewards. | They mediate with employers to resolve disputes/bullying incidents. | Trade unions lead to greater solidarity among workers/strength in numbers/immunity. | Consumer benefits such as discounted insurance/VHI. | Can be compulsory to join a trade union.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -414,11 +997,21 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q4(c)",
     stem: "A positive workplace atmosphere is of benefit to all.",
     questionText: "Explain the benefits to a business of a good industrial relations climate. How might poor industrial relations affect the business?",
-    tariffModel: {"kind":"fixed","notation":"3@1m + 3@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Good quality work is done","Employees are flexible/willing to help out when needed","Low staff turnover, so less training of new staff needed","Greater productivity/Profits should be up as sales will increase, avoids closure/loss of revenue due to strikes","Public image won’t be affected. Public will continue to support the company in the future/affects share price/ sales/Good customer service","Good place to work - Lower absenteeism/better morale/better communication/motivation"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Affect of poor Industrial relations — any 3", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Loss of customers who may never return","High staff turnover – employees are unhappy. Leave the company to work elsewhere/must hire and train new staff/losing experienced staff. Not able to recruit workers","Quality of work – employee morale will be low/employees lack enthusiasm/high absenteeism/","Loss of sales/reduction in profits","Damages public image/relations","Decreased innovation – people don’t feel motivated to help the business","Causes disputes"]} },
+    { id: "benefits", kind: "anyN", verbatim: "Benefits:", marks: 3, contextNote: "Both questions are required: three benefits of good relations, 1 each, and three effects of poor relations, 1 each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Good quality work is done.","Employees are flexible/willing to help out when needed.","Low staff turnover, so less training of new staff needed","Greater productivity/Profits should be up as sales will increase, avoids closure/loss of revenue due to strikes.","Public image won’t be affected. Public will continue to support the company in the future/affects share price/ sales/Good customer service","Good place to work - Lower absenteeism/better morale/better communication/motivation"]} },
+    { id: "poor-effects", kind: "anyN", verbatim: "Affect of poor Industrial relations.", marks: 3, contextNote: "THREE distinct effects of poor relations, 1 each, beside the separately required benefits.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Loss of customers who may never return.","High staff turnover – employees are unhappy. Leave the company to work elsewhere/must hire and train new staff/losing experienced staff. Not able to recruit workers.","Quality of work – employee morale will be low/employees lack enthusiasm/high absenteeism/","Loss of sales/reduction in profits.","Damages public image/relations.","Decreased innovation – people don’t feel motivated to help the business.","Causes disputes."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -429,52 +1022,92 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q4(d)",
     stem: "A positive workplace atmosphere is of benefit to all.",
     questionText: "Describe three obligations an employee has regarding health and safety at work.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m(1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Adhere to safety procedures/ensure risks are avoided. Follow all safety instructions/ guidelines/procedures","To undergo the proper training and abide by this to ensure safe working conditions. Keep training up to date e.g. Safe Pass. Practice all skills/knowledge learned in the workplace","Wear the PPE (Personal Protective Equipment) provided when necessary e.g. goggles, steel- toe capped boots, helmets, hard hats, ear plugs, gloves, aprons, hair nets etc","Do not engage in bullying of other workers. Adhere to procedures in place to deal with harassment, these issues should be dealt with immediately. Treat all others with respect","Report all accidents/and safety hazards defects to the Health and Safety Officer","Be familiar with the companies safety statement ( a document that outlines how a business mangages health, safety and risks) and adhere to them","Do not engage in improper conduct that affects health/safety","Use machinery and equipment correctly"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three obligations an employee has regarding health and safety at work.", marks: 6, contextNote: "Original allocation: 3 responses at 2 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Adhere to safety procedures/ensure risks are avoided. Follow all safety instructions/ guidelines/procedures. | To undergo the proper training and abide by this to ensure safe working conditions. Keep training up to date e.g. Safe Pass. Practice all skills/knowledge learned in the workplace. | Wear the PPE (Personal Protective Equipment) provided when necessary e.g. goggles, steel- toe capped boots, helmets, hard hats, ear plugs, gloves, aprons, hair nets etc. | Do not engage in bullying of other workers. Adhere to procedures in place to deal with harassment, these issues should be dealt with immediately. Treat all others with respect. | Report all accidents/and safety hazards defects to the Health and Safety Officer. | Be familiar with the companies safety statement ( a document that outlines how a business mangages health, safety and risks) and adhere to them. | Do not engage in improper conduct that affects health/safety. | Use machinery and equipment correctly.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c5a", topicId: "lcvp-link-modules-1-3", conceptId: "role-chairperson-committee",
+    id: "lcvp-2018-cl-c5a", topicId: "lcvp-link-modules-1-0", conceptId: "role-chairperson-committee",
     section: "C", questionRef: "2018 CL Section C Q5(a)",
     stem: "You are part of your LCVP class committee to plan upcoming activities.",
     questionText: "What is the role of the chairperson of a committee?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m(0/2)","answer":2,"ofParts":9,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Draws up the notice and agenda with the secretary before the meeting","The chairperson calls the meeting to order and opens the meeting","To adhere to agenda at every meeting, allowing discussion only of matters on the agenda","Runs the meeting/ manages time and contributions without any personal bias. Ensure all members have say and a role","Organises vote taking. In the event of a tie they have the casting vote","To provide leadership/is in charge","Ensure planning/co-ordination is completed","Set out goals and a time plan","Make sure work is done between meetings/Allocate certain jobs and roles to people"]} },
+    { id: "responses", kind: "anyN", verbatim: "What is the role of the chairperson of a committee?", marks: 4, contextNote: "Choose 2 distinct relevant responses. Each receives 2 or 0 marks; preserve every original alternative.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Draws up the notice and agenda with the secretary before the meeting.","The chairperson calls the meeting to order and opens the meeting.","To adhere to agenda at every meeting, allowing discussion only of matters on the agenda.","Runs the meeting/ manages time and contributions without any personal bias. Ensure all members have say and a role.","Organises vote taking. In the event of a tie they have the casting vote.","To provide leadership/is in charge.","Ensure planning/co-ordination is completed.","Set out goals and a time plan.","Make sure work is done between meetings/Allocate certain jobs and roles to people."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c5b", topicId: "lcvp-link-modules-1-3", conceptId: "skills-should-good-chairperson-have-each",
+    id: "lcvp-2018-cl-c5b", topicId: "lcvp-link-modules-1-0", conceptId: "skills-should-good-chairperson-have-each",
     section: "C", questionRef: "2018 CL Section C Q5(b)",
     stem: "You are part of your LCVP class committee to plan upcoming activities.",
     questionText: "What skills should a good chairperson have? Explain each of your answers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m(1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Planning Skills, know what has to be done and how to get it done","Communication Skills, can you get your point across in the correct way","Interpersonal skills/People skills, get others to work with you, be tactful and inclusive","Organisation skills/co-ordinating resourses to achieve a goal./Good I.T. skills","Team work/building skills, this will ensure that everyone will have a role thus leading to a better outcome","Time management, will ensure all tasks will get completed on time","Motivating skills, capable of getting the best out of people","Leadership/delegation skills/decision making/ problem solving, this shares the work load and gets other involved which will lead to overall success"]} },
+    { id: "responses", kind: "criterion", verbatim: "What skills should a good chairperson have? Explain each of your answers.", marks: 6, contextNote: "Original allocation: 3 responses at 2 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Planning Skills, know what has to be done and how to get it done. | Communication Skills, can you get your point across in the correct way. | Interpersonal skills/People skills, get others to work with you, be tactful and inclusive. | Organisation skills/co-ordinating resourses to achieve a goal./Good I.T. skills | Team work/building skills, this will ensure that everyone will have a role thus leading to a better outcome. | Time management, will ensure all tasks will get completed on time. | Motivating skills, capable of getting the best out of people. | Leadership/delegation skills/decision making/ problem solving, this shares the work load and gets other involved which will lead to overall success.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c5c", topicId: "lcvp-link-modules-1-3", conceptId: "consider-committee-have-taken-part-might",
+    id: "lcvp-2018-cl-c5c", topicId: "lcvp-link-modules-1-0", conceptId: "consider-committee-have-taken-part-might",
     section: "C", questionRef: "2018 CL Section C Q5(c)",
     stem: "You are part of your LCVP class committee to plan upcoming activities.",
     questionText: "Consider a committee in which you have taken part. What might cause it to be less successful?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@ 2m (1+1)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Not doing the actual work/ time wasting, spending too much time talking and not making decisions/ members not keeping to plans","Wrong people appointed as chairperson, secretary etc, then the planning will not get done efficiently","Absenteeism/not turning up/ lack of committment","Personality clashes/individuals not being able to work well together/Poor communication","Individual rather than a group focus by individuals not good for overall work","Unrealistic goals being set means that members may feel they have failed/Failure to plan/No Agenda","Not enough research being done can lead to failure and disillusioned members","Financial matters not planned for properly/Lack of resources","Loosing interest caused by lack of action, taking too long to make decisions"]} },
+    { id: "responses", kind: "criterion", verbatim: "Consider a committee in which you have taken part. What might cause it to be less successful?", marks: 6, contextNote: "Original allocation: 3 responses at 2 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Not doing the actual work/ time wasting, spending too much time talking and not making decisions/ members not keeping to plans. | Wrong people appointed as chairperson, secretary etc, then the planning will not get done efficiently. | Absenteeism/not turning up/ lack of committment. | Personality clashes/individuals not being able to work well together/Poor communication | Individual rather than a group focus by individuals not good for overall work. | Unrealistic goals being set means that members may feel they have failed/Failure to plan/No Agenda. | Not enough research being done can lead to failure and disillusioned members. | Financial matters not planned for properly/Lack of resources. | Loosing interest caused by lack of action, taking too long to make decisions.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -485,10 +1118,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q5(d)",
     stem: "You are part of your LCVP class committee to plan upcoming activities.",
     questionText: "What recommendations would you give to students planning their first LCVP class activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m(1+1+1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Set realistic goals/have clear aims/so everyone is clear on what needs to be done","Pick suitable research methods/carry out research/ get advice before making plans. No point planning for something which will not work","Set out a time plan in advance, make a list of all that has to be considered and completed. This means you can ask for help in good time","Action steps/delegate roles/make sure the correct people are in charge of the correct jobs, this leads to efficient completion of tasks","Plan finances/resourses required for the activity","Be aware that it is a team event and involves everyone, this means that everyone will pull together, help those who need it to complete their task","Have regular meetings and stick to the time plan, this will relieve stress"]} },
+    { id: "responses", kind: "criterion", verbatim: "What recommendations would you give to students planning their first LCVP class activity.", marks: 9, contextNote: "Original allocation: 3 responses at 3 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Set realistic goals/have clear aims/so everyone is clear on what needs to be done. | Pick suitable research methods/carry out research/ get advice before making plans. No point planning for something which will not work. | Set out a time plan in advance, make a list of all that has to be considered and completed. This means you can ask for help in good time. | Action steps/delegate roles/make sure the correct people are in charge of the correct jobs, this leads to efficient completion of tasks. | Plan finances/resourses required for the activity. | Be aware that it is a team event and involves everyone, this means that everyone will pull together, help those who need it to complete their task. | Have regular meetings and stick to the time plan, this will relieve stress.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -499,24 +1142,101 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 CL Section C Q6(a)",
     stem: "Your LCVP class has been involved in carrying out an enterprise activity.",
     questionText: "List three methods of generating an idea for a class project.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@1m","answer":3,"ofParts":8,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Brainstorming/suggestion box/mind map/class discussion/placemats","Asking other students/ask teacher /family/friends","Researching projects online","Reviewing needs in school/locality/ Study hobbies/interests/look at what is on sale in the shops","Adapt competitiors ideas/Ideas from abroad","Finding solutions to problems","Do market research/survey/questionnaire","Copy idea from a previous business"]} },
+    { id: "responses", kind: "anyN", verbatim: "List three methods of generating an idea for a class project.", marks: 3, contextNote: "Choose 3 distinct relevant responses. Each receives 1 or 0 marks; preserve every original alternative.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Brainstorming/suggestion box/mind map/class discussion/placemats.","Asking other students/ask teacher /family/friends.","Researching projects online.","Reviewing needs in school/locality/ Study hobbies/interests/look at what is on sale in the shops.","Adapt competitiors ideas/Ideas from abroad.","Finding solutions to problems.","Do market research/survey/questionnaire","Copy idea from a previous business."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
-    id: "lcvp-2018-cl-c6c", topicId: "lcvp-link-modules-0-4", conceptId: "draft-marketing-section-have-included-report",
+    id: "lcvp-2018-cl-c6b", topicId: "lcvp-link-modules-1-3", conceptId: "c6b",
+    section: "C", questionRef: "2018 CL Section C Q6(b)",
+    stem: "Your LCVP class has been involved in carrying out an enterprise activity.",
+    questionText: "Explain what is meant by the term ‘marketing mix’.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "combination", kind: "point", verbatim: "A combination of", marks: 1 },
+    { id: "mix-product", kind: "point", verbatim: "Product", marks: 1 },
+    { id: "mix-price", kind: "point", verbatim: "Price", marks: 1 },
+    { id: "mix-place", kind: "point", verbatim: "Place", marks: 1 },
+    { id: "mix-promotion", kind: "point", verbatim: "Promotion", marks: 1 },
+    { id: "purpose", kind: "point", verbatim: "to achieve goals, sell a product/service", marks: 1, contextNote: "Original definition allocation: combination 1; Product, Price, Place and Promotion 4×1; purpose 1. All components are required." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c6c", topicId: "lcvp-link-modules-1-3", conceptId: "draft-marketing-section-have-included-report",
     section: "C", questionRef: "2018 CL Section C Q6(c)",
     stem: "Your LCVP class has been involved in carrying out an enterprise activity.",
     questionText: "Draft the marketing section you would have included in your report on this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"4@2(1+1)","answer":4,"ofParts":5,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Market research/target market","Product/Packaging/USP/design","Price","Place","Promotion 2 points under each heading No marks for headings"]} },
+    { id: "model-1", kind: "point", verbatim: "Market research/target market", marks: null, contextNote: "Numeric scoring held. Original source lists FIVE headings, then “2 points under each heading”, “No marks for headings” and “4@2(1+1)”, with total 8. All five headings and the full task remain; confidence review only pending authoritative clarification. No choose-four rule, removed research heading, repaired total or partial allocation is inferred." },
+    { id: "model-2", kind: "point", verbatim: "Product/Packaging/USP/design", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Price", marks: null },
+    { id: "model-4", kind: "point", verbatim: "Place", marks: null },
+    { id: "model-5", kind: "point", verbatim: "Promotion", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2018 Common Level — © State Examinations Commission.",
+    id: "lcvp-2018-cl-c6d", topicId: "lcvp-link-modules-1-0", conceptId: "c6d",
+    section: "C", questionRef: "2018 CL Section C Q6(d)",
+    stem: "Your LCVP class has been involved in carrying out an enterprise activity.",
+    questionText: "Outline four ways your partipication in this activity will benefit you in future employment.",
+    tariffModel: {"kind":"fixed","notation":"Original 2018 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline four ways your participation in this activity will benefit you in future employment.", marks: 8, contextNote: "Original allocation: 4 responses at 2 marks, with each printed 1-mark component retained. Keep each response distinct and credit it only once. Complete original guidance: Personal skills/qualities learned or developed. | Teamwork skills learned. | Planning skills developed. | Problem solving/flexibility/adaptability | Knowledge of different aspects of running an activity, finance, advertising etc. | Awareness of broader issues | Gain networking contacts which may be useful in the future.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2018 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
