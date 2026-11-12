@@ -1057,6 +1057,59 @@ export const stepPrintedPartials = (allocation: IrishAllocation, guidance: strin
   return { ...allocation, parts, directions: notes };
 };
 
+/** Parts whose scheme pays two pieces in a printed order that their rows' prices alone cannot (coordinator rulings, 12 Nov).
+ *  Each override is keyed by card and criterion, names the scheme lines it rests on, and refuses to apply if the criterion's
+ *  lifted guidance no longer prints them or its parts are not the shape it was written for.
+ *  - Two pieces with a full row of both at the tariff, which left the part counting one claimed row: the part counts up to
+ *    TWO claimed rows, capped at its tariff (5). The full row alone pays 5, one piece 3, both pieces 5, full plus a piece 5.
+ *  - Two printed lists, one item asked from each, the first right item paid 3: a ladder [3, 5] over POINTS, each list one
+ *    point (its rows share a group, so one irishRowPoint). The first right item earns 3, an item from the other list makes
+ *    5, two from the same list stay at 3 ("An chéad mhír atá ceart = 3 mharc"). */
+const COUNT_TWO = (allocation: IrishAllocation): IrishAllocation | undefined => {
+  if (allocation.parts.length !== 1 || allocation.parts[0].ladder || allocation.parts[0].tariff !== 5) return undefined;
+  return { ...allocation, parts: [{ ...allocation.parts[0], count: 2 }] };
+};
+const LISTS_AS_POINTS = (allocation: IrishAllocation, prompt: string): IrishAllocation | undefined => {
+  const [first, second] = allocation.parts;
+  if (allocation.parts.length !== 2 || first.tariff !== 3 || second.tariff !== 2 || first.ladder || second.ladder
+    || [...first.rows, ...second.rows].some(row => row.group || row.steps)) return undefined;
+  const rows = [...first.rows.map(row => ({ ...row, group: 'list-1' })), ...second.rows.map(row => ({ ...row, group: 'list-2' }))]
+    .map((row, index) => ({ ...row, id: `r${index + 1}`, marks: 0 }));
+  return { ...allocation, parts: [{ id: 'p1', prompt, tariff: 5, ladder: [3, 5], rows }] };
+};
+const A5A_2013 = { lines: ['Dúil mhór sa tsaoirse = 3 mharc', 'Creideamh láidir (i nDia) = 2 mharc', 'An chéad mhír atá ceart = 3 mharc'], apply: COUNT_TWO };
+const Q1A_2025_DEFERRED = {
+  lines: ['Ionadaithe ó chlub píobairí Shráid Thomáis i mBaile Átha Cliath = 3 mharc',
+    'Daoine as Contae na hIarmhí a raibh baint mhór acu leis an gceol traidisiúnta = 3 mharc',
+    'Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart.'],
+  apply: COUNT_TWO,
+};
+const A4B_PROMPT = '(b) Luaigh rud amháin a rinne sé mar Uachtarán agus rud amháin nár éirigh leis a dhéanamh. (Alt 4)';
+const A4B_2013 = {
+  lines: [A4B_PROMPT, 'Rud amháin a rinne sé mar Uachtarán', 'Rud amháin nár éirigh leis a dhéanamh = 2 mharc', 'An chéad mhír atá ceart = 3 mharc'],
+  apply: (allocation: IrishAllocation) => LISTS_AS_POINTS(allocation, A4B_PROMPT),
+};
+const PRINTED_ORDER: Record<string, { lines: string[]; apply: (allocation: IrishAllocation) => IrishAllocation | undefined }> = {
+  'irish-2013-ol-p2-reading-a-q5::a': A5A_2013,
+  'irish-2013-ol-p2-reading-a-q5-a::a': A5A_2013,
+  'irish-2025-ol-deferred-p2-reading-a-q1::a': Q1A_2025_DEFERRED,
+  'irish-2025-ol-deferred-p2-reading-a-q1-a::a': Q1A_2025_DEFERRED,
+  'irish-2013-ol-p2-reading-a-q4::b': A4B_2013,
+  'irish-2013-ol-p2-reading-a-q4-b::b': A4B_2013,
+};
+export const PRINTED_ORDER_KEYS = Object.keys(PRINTED_ORDER);
+
+export const printedOrder = (cardId: string, criterionId: string, guidance: string[], allocation: IrishAllocation): IrishAllocation => {
+  const override = PRINTED_ORDER[`${cardId}::${criterionId}`];
+  if (!override) return allocation;
+  const text = guidance.join(' ').replace(/\s+/g, ' ');
+  const missing = override.lines.filter(line => !text.includes(line));
+  if (missing.length) throw new Error(`Irish printed-order override ${cardId}::${criterionId}: the scheme no longer prints "${missing[0]}"`);
+  const applied = override.apply(allocation);
+  if (!applied) throw new Error(`Irish printed-order override ${cardId}::${criterionId}: its parts are not the shape the ruling was written for`);
+  return applied;
+};
+
 /** A note or prompt cut inside a bracket keeps the bracket the scheme prints round it, and never a half of one: a direction
  *  missing the "(" the scheme prints straight before it ("Ní mór Ceist 6 (b) a fhreagairt … den scrúdpháipéar)", "5 mharc = 2
  *  mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)") takes it back, as one missing the ")" printed straight after it

@@ -65,9 +65,10 @@ export default function IrishAllocationPanel({ criterionId, allocation, scores, 
               const group = members(row.group);
               if (group[0] !== row) return null;
               return (
+                // In a ladder the group is one point the ladder prices, so it shows no marks of its own, as its rows do not.
                 <div className="mb-irish-group" key={`${part.id}-${row.group}`} role="group"
-                  aria-label={`Any one of these: ${group[0].marks} marks`}>
-                  <span className="mb-irish-group-head">{`1 freagra · ${group[0].marks}m`}</span>
+                  aria-label={part.ladder ? 'Any one of these: one point' : `Any one of these: ${group[0].marks} marks`}>
+                  <span className="mb-irish-group-head">{part.ladder ? '1 freagra' : `1 freagra · ${group[0].marks}m`}</span>
                   {group.map(claimRow)}
                 </div>
               );
