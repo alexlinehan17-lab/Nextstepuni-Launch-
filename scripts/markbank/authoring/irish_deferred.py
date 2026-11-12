@@ -23,10 +23,13 @@ from __future__ import annotations
 
 import argparse
 import copy
+import difflib
 import hashlib
 import json
+import os
 import re
 import sys
+import unicodedata
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -48,8 +51,8 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',)}
-AUDIO = {2025: 'available', 2024: 'available'}
+SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',), 2022: ('ordinary',)}
+AUDIO = {2025: 'available', 2024: 'available', 2023: 'available', 2022: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
 SHA = {  # (year, level, paper; 0 = the scheme)
@@ -65,6 +68,18 @@ SHA = {  # (year, level, paper; 0 = the scheme)
     (2024, 'ordinary', 1): '133f1d50fd02283ba27ee5ddc9ff372532e7fd4c86edcce449810fe324230166',
     (2024, 'ordinary', 2): '3e61d99598264985fc8ebd522f945c2a39241af40c6e42f3dd1c82d30399dd7f',
     (2024, 'ordinary', 0): '19c28ffdf07f6f94164ff7b68fc8338c23564d4a244488fd4512cf71e1260ec1',
+    (2023, 'higher', 1): 'e646969e24dac9a2dc03d710db498bf396a8ec3f24a2f4d28cda05748ba5f11a',
+    (2023, 'higher', 2): 'a3060f6aa3bf091c5a721359f029ab1b2544908d1ce1c6aa059a85f07e8c030f',
+    (2023, 'higher', 0): 'a72402672cbba38be725e75b0adb10914631ee4adfac891a8eb52fc34b829d90',
+    (2023, 'ordinary', 1): 'a5c5c33f0bc335f3cd63e09e4906699beedefe851365d9744d20adc3f72fc18b',
+    (2023, 'ordinary', 2): '97e0e1718e2c45575762be5e50643ca46b2a332064e2cd970d4435ba8a11ced9',
+    (2023, 'ordinary', 0): 'b6d96bbcff2645e2a50491c8d3ce400f95d712eeb8a99b6fd2f94fa8cf6ee9e1',
+    (2022, 'higher', 1): '78c17f6b8dad61886f860bece1cbc55b6f7e3834252e98da114c4fa0c057e29b',
+    (2022, 'higher', 2): 'dab4369b62a8ec67f803fe12774e8fe81b7ca8e896aeca6b153c60e6b2ada7f8',
+    (2022, 'higher', 0): '56a1638dea35544a15e55a61616138322dd79dcb7103533a6d94837797afa993',
+    (2022, 'ordinary', 1): 'd82ab8cd491bc4cbc8d2d06c3a5f6aca260ca3d9af873ecbdcd43512e917e413',
+    (2022, 'ordinary', 2): 'cdd6a5507820da8e5971b1dcd663536d44b69d2218814db2520b8ac2fee2b4ad',
+    (2022, 'ordinary', 0): '476588290f702b51452a0625f453ad41f93a7a8fee60fa901e32ac4327588bfe',
 }
 
 
@@ -127,15 +142,16 @@ def words_pattern(text, count=None, skip=0):
     return r'\W*'.join(''.join(ACCENTS.get(ch.lower(), re.escape(ch)) for ch in w) for w in words)
 
 
-def find_prompt(text, prompt, start, stop, tries=((6, 0), (4, 0), (5, 1), (3, 0))):
+def find_prompt(text, prompt, start, stop, tries=((6, 0), (4, 0), (5, 1), (3, 0), (4, 3))):
     """Where the scheme restates a printed prompt, at or after `start` and before `stop`: its first six words, else
-    four, else its words from the second on (a slip in one word of the restatement)."""
+    four, else its words from the second on, else from the fourth (a slip in one word of the restatement: "Cé a chur
+    amach" for the paper's "Cé a chuir amach")."""
     for count, skip in tries:
         m = re.compile(words_pattern(prompt, count, skip), re.I).search(text, start)
         if m and m.start() < stop:
             if skip:
-                # Back up over the skipped word.
-                back = re.search(r'\S+\s*$', text[max(0, m.start() - 40):m.start()])
+                # Back up over the skipped words.
+                back = re.search(r'(?:\S+\s*){%d}$' % skip, text[max(0, m.start() - 24 * skip):m.start()])
                 return m.start() - (len(back.group(0)) if back else 0), m.end()
             return m.start(), m.end()
     return None
@@ -209,7 +225,8 @@ def legacy_sources(sitting):
     """The legacy builders read a scheme by year and level; point them at this deferred sitting's files.
 
     Only this process sees the change, and only inside the block: irish_cards.py itself is untouched."""
-    saved = (legacy.paper_path, legacy.scheme_path, legacy.literature_scheme, legacy.additional_poetry_criteria)
+    saved = (legacy.paper_path, legacy.scheme_path, legacy.literature_scheme, legacy.additional_poetry_criteria, legacy.composition_scheme,
+             legacy.lifted_gaeilge)
     legacy.paper_path = lambda year, level, paper: str(paper_file(year, level, paper))
     legacy.scheme_path = lambda year, level: str(scheme_file(year, level))
 
@@ -224,10 +241,21 @@ def legacy_sources(sitting):
     # 4F's reviewed June scheme pages are June's; the review below reads the deferred scheme's 4F instead.
     legacy.additional_poetry_criteria = lambda year, scheme_pages: (
         1, [1], [legacy.criterion('eolas', 'Eolas', 35, [], guidance_kind='indicative')])
+
+    def composition_scheme(year, level, scheme_pages):
+        # The legacy reader expects June's composition pages; the review below lifts the deferred scheme's own.
+        try:
+            return saved[4](year, level, scheme_pages)
+        except (AssertionError, ValueError, StopIteration):
+            return 1, [legacy.criterion('placeholder', 'Placeholder', 100 if level == 'higher' else 50, [], guidance_kind='quality')]
+    legacy.composition_scheme = composition_scheme
+    # The legacy lift reads a row's mark after "\) " only; 2022's Higher scheme prints "deilbhíocht). 2".
+    legacy.lifted_gaeilge = gaeilge_found
     try:
         yield
     finally:
-        legacy.paper_path, legacy.scheme_path, legacy.literature_scheme, legacy.additional_poetry_criteria = saved
+        (legacy.paper_path, legacy.scheme_path, legacy.literature_scheme, legacy.additional_poetry_criteria,
+         legacy.composition_scheme, legacy.lifted_gaeilge) = saved
 
 
 # ---------------------------------------------------------------------------------------------------------- Paper 1
@@ -437,10 +465,24 @@ def composition(sitting, base):
     if higher:
         p = scheme_page(sitting, 'An Mharcáil:')
         marking = page_text(sitting, 0, p).split('An Mharcáil:', 1)[1].strip().removesuffix('Cuid II An Cheapadóireacht 100 marc').strip()
+        if 'Don Scrúdaitheoir' in marking:
+            # 2022 prints the listening totals panel after the marking, and its assessment steps on the next page.
+            marking = marking.split('Don Scrúdaitheoir', 1)[0].strip()
+            following = page_text(sitting, 0, p + 1)
+            if following.startswith('An Measúnú'):
+                marking += ' ' + following.split(' Stíl (5) =', 1)[0].strip()
         p_stil = scheme_page(sitting, 'Stíl chuí scríbhneoireachta (5 mharc)', p)
         text = page_text(sitting, 0, p_stil)
-        stil = text.split('Stíl chuí scríbhneoireachta (5 mharc)', 1)[1].split('Ionramháil Ábhair (15 mharc)', 1)[0].strip()
-        abhar = text.split('Ionramháil Ábhair (15 mharc)', 1)[1].strip()
+        if 'Ionramháil Ábhair (15 mharc)' in text:
+            stil = text.split('Stíl chuí scríbhneoireachta (5 mharc)', 1)[1].split('Ionramháil Ábhair (15 mharc)', 1)[0].strip()
+            abhar = text.split('Ionramháil Ábhair (15 mharc)', 1)[1].strip()
+        else:
+            # 2022 prints Stíl above the annotation key and the deficient-attempt table, and finishes it (and prints
+            # Ionramháil Ábhair) on the next page.
+            following = page_text(sitting, 0, p_stil + 1)
+            stil = (text.split('Stíl chuí scríbhneoireachta (5 mharc)', 1)[1].lstrip(':').split('Siombailí Anótála', 1)[0].strip() + ' '
+                    + following.split('Ionramháil Ábhair (15 mharc)', 1)[0].strip())
+            abhar = following.split('Ionramháil Ábhair (15 mharc)', 1)[1].lstrip(':').strip()
         p_gaeilge = scheme_page(sitting, 'Cumas Gaeilge (80 marc)', p)
         text = page_text(sitting, 0, p_gaeilge)
         gaeilge = [text[text.index('Cumas Gaeilge (80 marc)'):].strip(), page_text(sitting, 0, p_gaeilge + 1)]
@@ -457,7 +499,8 @@ def composition(sitting, base):
         smm = [q for q in sitting.scheme_pages_with('Scéim Mharcála Mhodhnaithe') if q > p_graded]
         scheme_pages = list(range(p, p_graded + 1))
         page = 7
-        head_text = clean(page7.split('Gaeilge, Páipéar 1 – Ardleibhéal', 1)[1].split('Scríobh AISTE', 1)[0])
+        # The running head is "Gaeilge, Páipéar 1 – Ardleibhéal" (2023 on) or "Gaeilge – Ardleibhéal" (2022).
+        head_text = clean(re.split(r'Gaeilge(?:, Páipéar 1)? – Ardleibhéal', page7, maxsplit=1)[1].split('Scríobh AISTE', 1)[0])
         head = '\n'.join(printed_lines(head_text))
         assert head.startswith('Freagair do rogha CEANN AMHÁIN'), head[:80]
         for card in base:
@@ -501,6 +544,7 @@ def composition(sitting, base):
         smm_line = ([f'Scéim Mharcála Mhodhnaithe (scheme PDF {"–".join(map(str, smm[:2]))}): eligible candidates are assessed on named grammar '
                      'features; spelling is not counted.'] if smm else [])
         scheme_pages = sorted({p, *tables})
+        unlabel = lambda piece: re.sub(r'\s*\(i{1,3}\)$', '', piece.strip())
         head_text = clean(sitting.texts[1][5].split('Treoracha', 1)[1])
         head = 'Treoracha: ' + head_text + '\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.'
         assert comparable('Freagair do rogha dhá cheann de A, B, C, D anseo.') in comparable(page7)
@@ -518,8 +562,9 @@ def composition(sitting, base):
                         sourceMaterial=source(year, level, 1, f'Ceapadóireacht {group}({roman})', [7]),
                         taskRequirements=['Freagair do rogha dhá cheann de A, B, C, D anseo.', 'Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.',
                                           'Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.', 'Leathleathanach nó mar sin.'],
-                        criteria=[criterion('tasc', 'An Tasc', 2, [marking.split('An tÁbhar (8 marc)')[0].strip()], 'quality', permitted=[0, 2]),
-                                  criterion('abhar', 'An tÁbhar', 8, [marking.split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0].strip()], 'quality'),
+                        # 2022 numbers the three awards "(i) … (ii) An tÁbhar … (iii) An Cumas Gaeilge": a label is its own award's.
+                        criteria=[criterion('tasc', 'An Tasc', 2, [unlabel(marking.split('An tÁbhar (8 marc)')[0])], 'quality', permitted=[0, 2]),
+                                  criterion('abhar', 'An tÁbhar', 8, [unlabel(marking.split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0])], 'quality'),
                                   criterion('gaeilge', 'An Cumas Gaeilge', 40,
                                             [marking.split('An Cumas Gaeilge (40 marc)', 1)[1].strip(), *extra] + smm_line, 'quality')],
                         markingGuideNote='Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns '
@@ -548,6 +593,31 @@ def printed_values(chunk, marks):
     return sorted({0, marks} | {int(v) for v in re.findall(r'= (\d+) mh?arc', chunk) if int(v) <= marks})
 
 
+class Tariff:
+    """A part's tariff read from one of 2022's looser layouts, answering .group() as the braced form's match does."""
+
+    def __init__(self, total, first=None, second=None):
+        self.groups = (None, str(total), first, second)
+
+    def group(self, n):
+        return self.groups[n]
+
+
+def loose_tariff(chunk):
+    """2022's Higher scheme sets a part's tariff in several ways besides "{3 mharc: 2 mharc + 1 mharc}": "(Alt 4) 3 mharc",
+    "pointe amháin eolais (2 mharc)", "3 mharc (2 mharc + 1 mharc)", "Dhá shampla (3 mharc) 2 mharc + 1 mharc", "2mharc
+    (1 mharc + 1 mharc)", "{1 mharc + 1 mharc}". The first one printed before the sample answers is the part's."""
+    head = chunk.split('•', 1)[0]
+    m = re.search(r'(\d+) ?mharc(?:[\s:()]*(\d) ?mharc\s*\+\s*(\d) ?mharc)?', head)
+    if not m:
+        return None
+    if m.group(2) is None:
+        alone = re.match(r'\s*\+\s*(\d) ?mharc', head[m.end():])
+        if alone:
+            return Tariff(int(m.group(1)) + int(alone.group(1)), m.group(1), alone.group(1))
+    return Tariff(int(m.group(1)), m.group(2), m.group(3))
+
+
 def reading_parts(question, higher):
     """A whole reading question's printed parts: [(part, prompt as printed)], e.g. ('bi', '(b) (i) Cén fáth …? (Alt 1)')."""
     body = re.sub(r'\s*\((?:7|10|15) m?h?arc\)\s*$', '', re.sub(r'^\d\.\s*', '', question))
@@ -560,6 +630,21 @@ def reading_parts(question, higher):
     return out
 
 
+def relift_labels(sitting, card):
+    """The legacy page reader can drop a part label the paper prints (2022's Higher A 1(b) loses its "(ii)"): where it
+    has, the question is read again from the paper's own text layer, which keeps the label. No other word may differ."""
+    question = card['questionText']
+    paper = ' '.join(sitting.texts[2])
+    head = re.compile(words_pattern(question, 10), re.I).search(paper)
+    assert head, question[:80]
+    tail = re.compile(r'\(\d+ m?h?arc\)').search(paper, head.end())
+    printed = clean(paper[head.start():tail.end()])
+    unlabelled = lambda text: comparable(re.sub(r'\((?:i{1,3}|iv|v)\)', ' ', text))
+    if comparable(printed) != comparable(question):
+        assert unlabelled(printed) == unlabelled(question), (card['id'], printed[:120])
+        card['questionText'] = printed
+
+
 def reading(sitting, base):
     """Every reading question whole, every printed part as its own card, and each independently priced answer or point
     of a part as its own practice card (the June shape: irish_higher_2026_p2.py, irish_ordinary_2025_p2.py)."""
@@ -567,13 +652,32 @@ def reading(sitting, base):
     higher = level == 'higher'
     whole = {c['id'].split('-p2-', 1)[1]: c for c in base if '-p2-reading-' in c['id']}
     assert len(whole) == (12 if higher else 10), len(whole)
+    for card in whole.values():
+        relift_labels(sitting, card)
     starts = {letter: s.find(r'LÉAMHTHUISCINT ' + letter + r' \(50 marc\)' if higher else
                              r'(?:LÉAMHTHUISCINT|Léamhthuiscint) ' + letter + r'\b') for letter in 'AB'}
+    shared_notes, notes_of = None, {}
     if not higher:
-        # Ordinary prints each passage's own notes above its Ceist 1; the passage starts at its first note.
-        notes_at = [m.start() for m in re.finditer(r'Nóta: Má tá dhá phointe eolais i gceist', s.text)]
-        assert len(notes_at) >= 2, notes_at
-        starts = {'A': notes_at[-2], 'B': notes_at[-1]}
+        # Ordinary prints each passage's notes above its Ceist 1 ("Nóta: Má tá dhá phointe/phíosa eolais i gceist …
+        # Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."); the passage starts at its notes. A scheme that prints them
+        # once, under "Freagair A agus B anseo." (2022), shares them, and B starts at its Ceist 1 restated.
+        blocks = list(re.finditer(r'Nóta: Má tá dhá (?:phointe|phíosa) eolais i gceist.*?Nóta: Gearrfar pionós i ngeall ar iomarcaíocht\.', s.text))
+        assert blocks, 'reading: the Ordinary notes are not printed'
+        first = lambda letter: re.sub(r'^\(a\)\s*', '', reading_parts(whole[f'reading-{letter}-q1']['questionText'], False)[0][1])
+        a_at = find_prompt(s.text, first('a'), blocks[0].start(), len(s.text))
+        b_at = find_prompt(s.text, first('b'), a_at[1], len(s.text))
+        assert a_at and b_at, 'reading: Ordinary Ceist 1 not found'
+        before_a = [m for m in blocks if m.end() <= a_at[0]]
+        before_b = [m for m in blocks if a_at[1] <= m.start() and m.end() <= b_at[0]]
+        assert before_a, 'reading: no notes above A'
+        notes_of['A'] = before_a[-1]
+        if before_b:
+            notes_of['B'] = before_b[-1]
+            starts = {'A': before_a[-1].start(), 'B': before_b[-1].start()}
+        else:
+            shared_notes = notes_of['B'] = before_a[-1]
+            label = re.search(r'(?:1\.\s*)?(?:\(a\)\s*)?(?:⟦\d+⟧\s*)?$', s.text[max(0, b_at[0] - 20):b_at[0]])
+            starts = {'A': before_a[-1].start(), 'B': b_at[0] - len(label.group(0))}
     else:
         starts = {k: v.start() for k, v in starts.items()}
         assert all(starts.values()), starts
@@ -590,16 +694,14 @@ def reading(sitting, base):
                          starts['B'] + 10)
     assert reading_end, 'reading: end not found'
     cards, stamped = [], []
-    lang_read = s.find(r'\[Gaeilge lochtach: 0 ?- ?5 a bhaint den iomlán a gnóthaíodh\]') if not higher else None
+    lang_read = s.find(r'\[Gaeilge lochtach: 0 ?[-‐] ?5 a bhaint den iomlán a gnóthaíodh\]') if not higher else None
     for letter in 'AB':
         cursor = starts[letter]
         stop = starts['B'] if letter == 'A' else reading_end.start()
         notes = ''
         if not higher:
-            n_end = s.find(r'1\.\s*\(a\)', cursor)
-            notes = clean(re.sub(r'⟦\d+⟧', ' ', s.text[cursor:n_end.start()]))
+            notes = clean(re.sub(r'⟦\d+⟧', ' ', notes_of[letter].group(0)))
             notes = re.sub(r'\s*Siombailí Anótála.*$', '', notes)
-            assert notes.startswith('Nóta: Má tá dhá phointe eolais') and notes.endswith('iomarcaíocht.'), notes[-80:]
         plan = []
         for q in range(1, (7 if higher else 6)):
             card = whole[f'reading-{letter.lower()}-q{q}']
@@ -621,6 +723,23 @@ def reading(sitting, base):
                 if late:
                     chunk = f'{late.group(1)} {late.group(3)} {late.group(2)}'
             item += [chunk, pages]
+        if not higher:
+            # 2022 prints B 3(b)'s "5 mharc" in the margin beside it, but the text layer stores it at the head of the next part
+            # ("4. (a) … (Alt 4) 5 mharc 3 mharc + 2 mharc = 5 mharc"). Read on the page: a price whose line lies above the
+            # next question's is this part's, and it is read beside this question. No word changes.
+            for index, item in enumerate(plan[:-1]):
+                following = plan[index + 1]
+                if re.search(r'\d ?mharc', item[4]):
+                    continue
+                stray = re.match(r'(.*?\(Alt \d\))\s+(\d+ mharc)\s+(\d+ mharc \+ \d+ mharc = \d+ ?mharc\b.*)$', following[4])
+                assert stray, (letter, item[0], item[1], item[4][:80])
+                page = sitting.docs[0][following[5][0] - 1]
+                words = page.get_text('words')
+                price = [w for w in words if w[4] == 'mharc' and w[0] > 400]
+                asked = [w for w in words if w[4] == f'{following[0]}.' and w[0] < 100]
+                assert price and asked and min(w[1] for w in price) < asked[0][1], (letter, item[0], item[1], 'the price is not printed above the next question')
+                item[4] = re.sub(r'^(.*?\?)\s+', lambda m: f'{m.group(1)} {stray.group(2)} ', item[4], count=1)
+                following[4] = f'{stray.group(1)} {stray.group(3)}'
         title = whole[f'reading-{letter.lower()}-q1']['sourceMaterial']['title']
         pages = whole[f'reading-{letter.lower()}-q1']['sourceMaterial']['pages']
         topic = 'irish-3-0' if letter == 'A' else 'irish-3-1'
@@ -634,7 +753,7 @@ def reading(sitting, base):
             atlas = f'R-{letter}-{q}-{part}'
             extra_topics = None
             if higher:
-                tariff = re.search(r'\{(\d+) mharc(?:\s*:\s*(\d) mharc\s*\+\s*(\d) mharc)?\s*\}', chunk)
+                tariff = re.search(r'\{(\d+) mharc(?:\s*[:=]\s*(\d) mharc\s*\+\s*(\d) mharc)?\s*\}', chunk) or loose_tariff(chunk)
                 marks = 12 if (q == 6 and part == 'b') else int(tariff.group(1)) if tariff else None
                 assert marks == (3 if part == 'a' else 2 if part.startswith('b') and q < 6 else 12), (letter, q, part, chunk[:120])
                 ordered = bool(tariff and tariff.group(2) == '2' and tariff.group(3) == '1') or bool(
@@ -647,7 +766,11 @@ def reading(sitting, base):
                 elif q == 6:
                     # An opinion or claim and two supports (the scheme's panel "T (2) = P1 (5) = P2 (5)"), else two points 6 + 6.
                     panel = re.search(r'\bT \(2\) = ([A-Z])1 \(5\) = \1 ?2 \(5\)', chunk)
-                    mode = 'opinion' if (panel or re.search(r'Tuairim \(T\) = 2 mharc', chunk)) else 'points' if re.search(r'6 mharc \+ 6 mharc', chunk) else 'whole'
+                    # 2022 asks how the passage affected the reader and prices that "C (2)= 2 mharc", then two points at 5.
+                    affect = re.search(r'(Conas a chuaigh an sliocht seo i bhfeidhm ort\?) C \(2\) ?= ?2 mharc', chunk)
+                    affect = affect if affect and re.search(r'Pointe eolais 1 = .*?= 5 mharc.*?Pointe eolais 2 = .*?= 5 mharc', chunk) else None
+                    mode = ('opinion' if (panel or affect or re.search(r'Tuairim \(T\) = 2 mharc', chunk)) else
+                            'points' if re.search(r'6 mharc \+ 6 mharc', chunk) else 'whole')
                 else:
                     mode = 'ordered' if ordered else 'slots' if slots else None
                 if mode == 'points':
@@ -656,7 +779,8 @@ def reading(sitting, base):
                 elif mode == 'opinion':
                     short = panel.group(1) if panel else 'P'
                     unit = {'F': 'Fáth', 'S': 'Sampla', 'P': 'Pointe eolais'}[short]
-                    claim = 'Tuairim (T)' if 'Tuairim (T)' in chunk else 'Tábhacht (T)' if 'Tábhacht a lua' in chunk else 'Tuairim (T)'
+                    claim = (f'{affect.group(1)} (C)' if affect else
+                             'Tuairim (T)' if 'Tuairim (T)' in chunk else 'Tábhacht (T)' if 'Tábhacht a lua' in chunk else 'Tuairim (T)')
                     crits = [criterion('opinion', claim, 2, [chunk, general]),
                              criterion('reason-1' if short == 'F' else 'point-1', f'{unit} 1 ({short}1)', 5, [chunk]),
                              criterion('reason-2' if short == 'F' else 'point-2', f'{unit} 2 ({short}2)', 5, [chunk])]
@@ -665,15 +789,22 @@ def reading(sitting, base):
                 elif mode in ('grammar', 'ordered'):
                     crits = [criterion('grammar' if mode == 'grammar' else part, 'Freagra', marks, [chunk, general, ORDER_NOTE], permitted=[0, 2, 3])]
                 else:
-                    crits = [criterion(part, 'Freagra', marks, [chunk, general], permitted=printed_values(chunk, marks))]
+                    # The braced split prices each answer ("{2 mharc: 1 mharc + 1 mharc}", 2023): a single answer earns its share.
+                    split = {int(tariff.group(n)) for n in (2, 3) if tariff and tariff.group(n)} if mode == 'slots' else set()
+                    if isinstance(tariff, Tariff):
+                        # 2022 can print a one-point answer's split after its sample ("Pointe amháin 2 mharc … (1 mharc + 1 mharc)").
+                        split |= {int(v) for m in re.finditer(r'\((\d) ?mharc \+ (\d) ?mharc\)', chunk) for v in m.groups() if int(v) < marks}
+                        # … and a reduced award for an incomplete answer ("Gan ‘le móramh’ (3-1) =2").
+                        split |= {int(m.group(1)) for m in re.finditer(r'\(\d ?- ?\d\) ?= ?(\d)\b', chunk) if int(m.group(1)) < marks}
+                    crits = [criterion(part, 'Freagra', marks, [chunk, general], permitted=sorted(set(printed_values(chunk, marks)) | split))]
                 here = 'irish-3-3' if mode == 'grammar' else topic
                 extra_topics = [topic] if mode == 'grammar' else None
                 requirements = READING_PART
                 note = PART_NOTE
             else:
-                assert '5 mharc' in chunk, (letter, q, part, chunk[:80])
+                assert re.search(r'5 ?mharc', chunk), (letter, q, part, chunk[:80])  # 2023 prints "= 5mharc"
                 two = '3 mharc + 2 mharc' in chunk
-                permitted = [0, 3, 5] if (two or '= 3 mharc' in chunk) else [0, 5]
+                permitted = [0, 3, 5] if (two or re.search(r'=\s?3 mharc', chunk)) else [0, 5]
                 crits = [criterion(part, 'Freagra', 5, [chunk, notes], permitted=permitted)]
                 mode, here, requirements = None, topic, READING_PART_OL
                 note = ('SEC allocation for this part' + (': first correct point 3, second 2 (0/3/5).' if two else '.')
@@ -732,19 +863,33 @@ def part_card(sitting, atlas, slug, ref, text, topic, pages, scheme_pages, crite
 
 
 LIT_REQUIREMENTS = ['Freagair gach cuid den cheist atá priontáilte.', 'Úsáid tagairtí cruinne agus ábhartha don téacs.']
-PAPER_FURNITURE = re.compile(r'\s*(?:Scrúdú na hArdteistiméireachta|Gaeilge, Páipéar 2 – (?:Ardleibhéal|Gnáthleibhéal))\s*\d*\s*$')
+# A page's running head, and the section label 2022 and 2023 print in the margin ("B – PRÓS ROGHNACH – (50 marc)",
+# "3B – FILÍOCHT ROGHNACH"), which the text layer stores after the page's last option.
+PAPER_FURNITURE = re.compile(r'\s*(?:Scrúdú na hArdteistiméireachta|Gaeilge, Páipéar 2 – (?:Ardleibhéal|Gnáthleibhéal)'
+                             r'|[23]?[AB]\s*– (?:PRÓS|FILÍOCHT) (?:AINMNITHE|ROGHNACH)(?: – \(50 marc\))?)\s*\d*\s*$')
 
 
-def option_start(s, prompt, start, stop, label=''):
+def option_start(s, prompt, start, stop, label='', span=False):
     """Where the scheme restates a literature option: its printed words (after the option's own label), backed up over
     the label ("(a) ", "nó (b) ", "4A. ") that opens it."""
     words = re.sub(r'^(?:\((?:[a-f]|i{1,3})\)\s*|4[A-F]\.\s*)+', '', prompt)
     # A literature option's opening words are shared by its neighbours ("Freagair an cheist thíos ar an …"): match long.
     found = find_prompt(s.text, words, start, stop, tries=((12, 0), (9, 0), (7, 0), (8, 1)))
     if not found:
+        # 2023 sets "Eolas = 25 marc" between a prescribed text's title and its statement, and rewords the statement
+        # ("áibhéalach … sa scéal seo" for the paper's "áibhéileach … sa scéal"): the title, that line, then the
+        # statement's first three words.
+        for count in range(6, 0, -1):
+            m = re.compile(words_pattern(words, count) + r'\W*Eolas\s*=\s*\d+\s*m?h?arc\W*' + words_pattern(words, 3, count),
+                           re.I).search(s.text, start)
+            if m and m.start() < stop:
+                found = (m.start(), m.end())
+                break
+    if not found:
         return None
     head = re.search(r'(?:nó\s*)?(?:\([a-f]\)\s*)?(?:\(i\)\s*)?(?:4[A-F]\.\s*)?(?:⟦\d+⟧\s*)?$', s.text[max(0, found[0] - 24):found[0]])
-    return found[0] - (len(head.group(0)) if head else 0)
+    at = found[0] - (len(head.group(0)) if head else 0)
+    return (at, found[1]) if span else at
 
 
 # The prescribed prose that prints two texts as one option ("ar an scannán Cáca Milis nó ar an dráma An Lasair
@@ -762,14 +907,20 @@ def two_texts(question):
     assert marks[0] < marks[1], question[:200]
     intro = question[:after].strip()
     # Each text's title is a line of its own above its question, as the paper sets it.
-    blocks = [re.sub(r'^(' + re.escape(title) + r')\s+', r'\1\n', block)
+    # The "nó" printed between the two texts belongs to neither.
+    blocks = [re.sub(r'^(' + re.escape(title) + r')\s+', r'\1\n', re.sub(r'\s+nó$', '', block))
               for (_, title, _), block in zip(CHOICE_TEXTS, [question[marks[0]:marks[1]].strip(), question[marks[1]:].strip()])]
     return [(slug, title, topic, intro, block) for (slug, title, topic), block in zip(CHOICE_TEXTS, blocks)]
 
 
 def eolas_cap(piece):
-    caps = re.findall(r'(?:Eolas|Míniú|Plé)\s*=\s*(\d+)\s*m?h?arc', piece)
-    return int(caps[0]) if caps else None
+    caps = re.search(r'(?:Eolas|Míniú|Plé)\s*=\s*(\d+)\s*m?h?arc', piece)
+    # 2022 prints a part's cap as "Eolas - 13" above its own split ("Príomhthéama T(2) = 2 mharc; Plé/Eolas = 11 mharc"),
+    # and in Ceist 4F as "Eolas – 19 marc", "Míniú – 7 marc", "Eolas 9 marc".
+    loose = re.search(r'(?<![/\w])(?:Eolas|Míniú)\s*(?:[-–]\s*)?(\d+)\s*m?h?arc\b|(?<![/\w])Eolas - (\d+)\b', piece)
+    if loose and (not caps or loose.start() < caps.start()):
+        return int(loose.group(1) or loose.group(2))
+    return int(caps.group(1)) if caps else None
 
 
 def sub_pieces(chunk, prompt, labels=('ii', 'iii')):
@@ -781,6 +932,10 @@ def sub_pieces(chunk, prompt, labels=('ii', 'iii')):
         found = find_prompt(chunk, m.group(1), cuts[-1] + 1, len(chunk))
         assert found, (label, m.group(1)[:60], chunk[:200])
         head = re.search(r'\(' + label + r'\)\s*$', chunk[max(0, found[0] - 8):found[0]])
+        if not head:
+            # A reworded restatement matched from its second word ("(iii) Conas mar a chuaigh …" for the paper's "Conas a
+            # chuaigh …"): the part still starts at its label.
+            head = re.search(r'\(' + label + r'\)\s*(?:\S+\s+){1,2}$', chunk[max(0, found[0] - 40):found[0]])
         cuts.append(found[0] - (len(head.group(0)) if head else 0))
     return [chunk[a:b].strip() for a, b in zip(cuts, cuts[1:] + [len(chunk)])]
 
@@ -788,11 +943,10 @@ def sub_pieces(chunk, prompt, labels=('ii', 'iii')):
 def literature_higher(sitting, base):
     """Each prose, poetry and Ceist 4 option one card: its Eolas at the deferred scheme's printed caps, and the one shared
     five-mark Gaeilge award (irish_higher_2025_p2.py's apply_legacy_review, on the deferred scheme)."""
-    from irish_gaeilge import lifted as lifted_gaeilge
     s, level, year = sitting.scheme, sitting.level, sitting.year
     by_key = {c['id'].split('-p2-', 1)[1]: c for c in base if '-p2-' in c['id'] and '-reading-' not in c['id']}
     assert len(by_key) == 14, sorted(by_key)
-    table, note5, _, _ = lifted_gaeilge(sitting.docs[0])
+    table, note5 = gaeilge_table(sitting.docs[0])
     gaeilge = lambda: criterion('gaeilge', 'Gaeilge', 5, [table, note5], 'quality')
     lit_start = s.find(r'Nóta: I gcás na gceisteanna 2 \(Prós\)')
     assert lit_start, 'literature notes not found'
@@ -810,7 +964,10 @@ def literature_higher(sitting, base):
     q4_panel = s.find(r'Ceist 4\s*LITRÍOCHT BHREISE \(40 marc\)', sec4.start())
     g4 = s.find(r'Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas', sec4.start())
     assert g4, 'Ceist 4 directions not found'
-    general4 = clean(re.sub(r'⟦\d+⟧', ' ', s.text[g4.start():s.find(r'Gaeilge \(5 mharc\)|Ceist 4\s*LITRÍOCHT', g4.end()).start()]))
+    # The directions and band table end at the separate Gaeilge table or the section's box; a band table that prints the
+    # Gaeilge column beside the Eolas one (2023) keeps it.
+    # 2022 restates the options straight after the table ("4A. An Triail …"), so the table ends there.
+    general4 = clean(re.sub(r'⟦\d+⟧', ' ', s.text[g4.start():s.find(r'Gaeilge \(5 mharc\)\s*Sárchumas|Ceist 4\s*LITRÍOCHT|⟦\d+⟧\s*4A\.\s', g4.end()).start()]))
     assert '30-35' in general4, general4[-200:]
     stamped = []
 
@@ -820,7 +977,9 @@ def literature_higher(sitting, base):
         m = re.match(r'(prose|poetry|literature)-(\d[ab]?)-([a-f])', key)
         heading = {'prose': 'Prós', 'poetry': 'Filíocht', 'literature': 'Litríocht'}[m.group(1)]
         address = f'{m.group(2).upper()}({m.group(3)})' if m.group(1) != 'literature' else f'4{m.group(3).upper()}'
-        card['questionRef'] = sitting.ref(2, f'{heading} {address} · {card.pop("_title", None) or title_of(card["questionText"])}')
+        # 4F is a prescribed poem, printed "4F. Dánta Breise – A Chlann": it is named so, never "Dán roghnach".
+        breise = re.search(r'4F\.\s*(Dánta Breise\s*[–-]\s*.+?)\s+Freagair', card['questionText']) if key == 'literature-4-f' else None
+        card['questionRef'] = sitting.ref(2, f'{heading} {address} · {card.pop("_title", None) or (breise.group(1) if breise else title_of(card["questionText"]))}')
         card.update(atlasQuestionId=atlas, reviewedAt=REVIEWED_AT, reviewedPaperPages=[card['paperPage']], schemeFileid=scheme_fileid(level),
                     schemePage=min(chunk_pages | set(extra_pages)), schemePages=sorted(chunk_pages | set(extra_pages)),
                     criteria=criteria, markingGuideNote=note, taskRequirements=LIT_REQUIREMENTS)
@@ -841,10 +1000,21 @@ def literature_higher(sitting, base):
             intro = re.sub(r'^\([ab]\)\s*', '', question.split('. ', 1)[0] + '.')
             at = comparable(page).index(comparable(intro))
             raw = page[next(i for i in range(len(page)) if comparable(page[:i]) == comparable(page)[:at]):]
+            # The match ends at the label's last letter ("(a"): its closing bracket is not the option's text.
+            raw = re.sub(r'^\)\s*', '', raw)
             raw = re.split(r'\s(?:nó\s+)?\(b\)\s|\s2B\b', raw)[0]
             question = f'({key[-1]}) ' + PAPER_FURNITURE.sub('', raw).strip()
             assert question.count(' marc)') == 2, question
         texts = two_texts(question) if key.startswith('prose-2a') else []
+        if not texts and key == 'prose-2a-a':
+            # 2022 sets the two texts as titled alternatives of (a), each with its own statement and tariff ("Cáca Milis (a)
+            # ‘…’ (30 marc) nó An Lasair Choille ‘…’ (30 marc)"); the legacy reader keeps only the first.
+            page = clean(sitting.texts[2][card['paperPage'] - 1])
+            m = re.search(r'Cáca Milis \(a\) (‘.*?\(30 marc\)) nó An Lasair Choille (‘.*?\(30 marc\))', page)
+            if m:
+                texts = [(slug, title, topic, None, f'{title}\n{block}')
+                         for (slug, title, topic), block in zip(CHOICE_TEXTS, m.groups())]
+                assert comparable(texts[0][4].split('\n', 1)[1]) in comparable(question), question
         if not texts:
             prose.append((key, atlas, card['questionText']))
             continue
@@ -854,10 +1024,11 @@ def literature_higher(sitting, base):
             twin = copy.deepcopy(card)
             option = key[-1]
             twin.update(id=sitting.card_id(2, f'{key}-{slug}'), topicId=topic, conceptId=f'irish-prose-2a-{topic}', _title=title,
-                        questionText=f'{intro}\n\n{block}')
+                        questionText=f'{intro}\n\n{block}' if intro else f'({option}) {block}')
             base.append(twin)
             by_key[f'{key}-{slug}'] = twin
-            prose.append((f'{key}-{slug}', f'{atlas}-{slug}', block))
+            # A titled alternative is found in the scheme by its statement: 2022 prints "Cáca Milis (a) ‘…’" there too.
+            prose.append((f'{key}-{slug}', f'{atlas}-{slug}', block if intro else block.split('\n', 1)[1]))
     starts, cursor = [], sec2.start()
     for key, atlas, prompt in prose:
         found = option_start(s, prompt, cursor, sec3.start())
@@ -869,19 +1040,55 @@ def literature_higher(sitting, base):
             assert key.startswith('prose-2b') and not s.find(r'2B\. Prós Roghnach'), (key, 'a prescribed option the scheme does not restate')
             guidance, pages = [prose_table, notes], band_pages
         else:
-            end = next((x for x in starts[index + 1:] if x), None) or (s.find(r'2B\. Prós Roghnach|Nóta: Níl na nótaí tacaíochta', starts[index] + 50) or sec3).start()
+            section_end = (s.find(r'2B\. Prós Roghnach|Nóta: Níl na nótaí tacaíochta', starts[index] + 50) or sec3).start()
+            end = next((x for x in starts[index + 1:] if x), None) or section_end
+            # 2023 restates the optional prose too: a prescribed option still stops at the 2B heading, and the shared
+            # Gaeilge table printed after an option's marking boxes is the Gaeilge award's, not the option's.
+            if key.startswith('prose-2a'):
+                end = min(end, section_end)
+            table_at = s.find(r'Gaeilge \(5 mharc\)\s*Sárchumas', starts[index])
+            if table_at:
+                end = min(end, table_at.start())
             end = min(end, sec3.start())
             chunk, pages = s.chunk(starts[index], end)
             chunk = re.sub(r'^nó ', '', chunk)
-            assert re.search(r'Eolas = 25 m?h?arc', chunk) and 'Gaeilge (5 mharc) Sárchumas' not in chunk, (key, chunk[:200])
-            guidance, pages = [chunk, prose_table, notes], set(pages) | band_pages
-        stamp(key, atlas, set(pages), [criterion('eolas', 'Eolas', 25, guidance, 'indicative'), gaeilge()],
-              'One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting notes are indicative rather than exhaustive; '
-              'with only one of the required aspects discussed, the scheme marks the Eolas out of 18.'
-              + ('' if starts[index] is not None else ' The deferred scheme prints no notes for the optional prose: its band table is the marking.'))
+            # 2022 sets the next prescribed text's title after an option's notes ("… nó An Lasair Choille"): it is the next card's.
+            chunk = re.sub(r'\s+nó\s+(?:' + '|'.join(re.escape(t) for _, t, _ in CHOICE_TEXTS) + r')$', '', chunk)
+            # The Eolas as each scheme prints it: "Eolas = 25 marc"; 2022's "Eolas – 25", its band table's "Eolas (25 marc)",
+            # its "Eolas 13 + 12 = 25" for two headings, and its "an marc as 25 [(13 + 12)] (Eolas)" under an optional option.
+            assert (re.search(r'Eolas = 25 m?h?arc|Eolas – 25|Eolas \(25 marc\)|Eolas 13 \+ 12 = 25|an marc as 25 (?:\(13 \+ 12\) )?\(Eolas\)', chunk)
+                    and 'Gaeilge (5 mharc) Sárchumas' not in chunk), (key, chunk[:200])
+            guidance, pages = [chunk] + ([prose_table] if prose_table not in chunk else []) + [notes], set(pages) | band_pages
+        two_heads = starts[index] is not None and 'an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12' in guidance[0]
+        if two_heads:
+            # 2022: two of three printed headings, "an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12".
+            eolas = [criterion('eolas-1', 'An ceann is fearr', 13, guidance, 'indicative'), criterion('eolas-2', 'An ceann eile', 12, guidance, 'indicative')]
+        else:
+            eolas = [criterion('eolas', 'Eolas', 25, guidance, 'indicative')]
+        # The one-aspect rule only where this sitting's scheme prints it (2025: "… Déan measúnú ar fhiúntas an phlé sa
+        # fhreagra as 18 marc."; its band table's 18-mark column).
+        out_of_18 = '18 marc' in ' '.join(guidance)
+        # 2022 restates its optional prose with no notes (no "Nótaí", no sample points): its band table is the marking.
+        noteless = starts[index] is None or not re.search(r'Nótaí|•', guidance[0])
+        notes_line = '' if (noteless and starts[index] is not None) else ' Supporting notes are indicative rather than exhaustive'
+        stamp(key, atlas, set(pages), eolas + [gaeilge()],
+              ('One complete SEC response: two of the three printed headings, the better one marked out of 13 and the other out of 12, and a '
+               'single shared 5-mark Gaeilge award.' + (notes_line + '.' if notes_line else '') if two_heads else
+               'One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award.' + notes_line
+               + ('; with only one of the required aspects discussed, the scheme marks the Eolas out of 18.' if out_of_18 else '.' if notes_line else ''))
+              + ((' The deferred scheme prints no notes for the optional prose: its Treoir and band table are the marking.'
+                  if starts[index] is not None and 'Treoir' in guidance[0] else
+                  ' The deferred scheme prints no notes for the optional prose: its band table is the marking.') if noteless else ''))
 
     poems = [('poetry-3a-a', 'F-3A-a'), ('poetry-3a-b', 'F-3A-b'), ('poetry-3b-a', 'F-3B-a'), ('poetry-3b-b', 'F-3B-b')]
-    starts = [option_start(s, by_key[key]['questionText'], sec3.start(), sec4.start()) for key, _ in poems]
+    # Each poem searched for after the one before it: 2023 restates both optional poems, and they open alike ("Maidir le dán
+    # nua-aimseartha roghnach a ndearna tú staidéar air …").
+    starts, cursor = [], sec3.start()
+    for key, _ in poems:
+        found = option_start(s, by_key[key]['questionText'], cursor, sec4.start(), span=True)
+        assert found is None or not key.startswith('poetry-3b') or re.match(r'(?:nó\s*)?\(' + key[-1] + r'\)', s.text[found[0]:]), (key, s.text[found[0]:found[0] + 60])
+        starts.append(found[0] if found else None)
+        cursor = found[1] if found else cursor
     assert all(starts[:2]), [k for (k, _), x in zip(poems, starts) if not x]
     for index, (key, atlas) in enumerate(poems):
         if starts[index] is None:
@@ -915,7 +1122,12 @@ def literature_higher(sitting, base):
         for m in re.finditer(r'4' + letter.upper() + r'\.\s', s.text[sec4.start():]):
             at = sec4.start() + m.start()
             ahead = s.text[at:at + 2500]
-            if re.search(r'Eolas = \d+ m?h?arc', ahead):
+            # Read up to the next option's heading: 2022 restates 4A–4E with no notes, and 4F's caps ("Eolas – 19 marc")
+            # lie within reach of them.
+            following = re.compile(r'\s4[A-F]\.\s').search(ahead, 4)
+            if following and letter != 'f' and re.search(r'Eolas – \d+ m?h?arc', s.text[sec4.start():]):
+                ahead = ahead[:following.start()]
+            if re.search(r'Eolas = \d+ m?h?arc', ahead) or (letter == 'f' and re.search(r'Eolas – \d+ m?h?arc', ahead)):
                 heading = at
                 break
         q4.append(heading)
@@ -949,6 +1161,30 @@ def literature_higher(sitting, base):
     return stamped
 
 
+def gaeilge_found(doc, first_page=1):
+    """The printed five-row Gaeilge (5 mharc) table and its note, with their pages (irish_gaeilge.lifted's lift),
+    reading a row's mark after its closing bracket with or without a full stop ("deilbhíocht). 2", 2022's Higher scheme)."""
+    from irish_gaeilge import NOTE, ROWS, TABLE
+    table = note = None
+    for number in range(first_page, len(doc) + 1):
+        text = re.sub(r'^\d+\s', '', clean(doc[number - 1].get_text()))
+        if note is None and NOTE.search(text):
+            note = (NOTE.search(text).group(0), number)
+        if table is None and TABLE.search(text):
+            table = (TABLE.search(text).group(0), number)
+        if table and note:
+            break
+    assert table and note, 'Gaeilge table or note not found'
+    assert [row for row in ROWS if row in table[0]] == list(ROWS) and re.findall(r'\)\.? ([1-5])\b', table[0]) == ['5', '4', '3', '2', '1'], table[0]
+    assert 'gan fiúntas' not in table[0]
+    return table[0], note[0], table[1], note[1]
+
+
+def gaeilge_table(doc):
+    table, note, _, _ = gaeilge_found(doc)
+    return table, note
+
+
 def lifted_table_out(chunk, table):
     """The printed Gaeilge table can sit between a key's parts; it belongs to the shared award, not to the Eolas."""
     return clean(chunk.replace(table, ' '))
@@ -977,6 +1213,23 @@ SAME_POEM = 'Níl cead an dán roghnach céanna a úsáid faoi dhó sna freagra�
 LIT_OL = ['Freagair gach fochuid atá priontáilte sa rogha seo.', 'Úsáid tagairtí cruinne agus ábhartha don téacs.']
 UNPRINTED = 'The scheme prints no answer for this part.'
 ROMANS = ('i', 'ii', 'iii', 'iv', 'v')
+# The section heads and choice rules as 2023's and 2022's deferred papers print them (each line is checked against the
+# paper before use); 2024 and 2025 print HEADS_OL. 2022 sets the year's two-questions-from-the-section rule, as June 2022.
+OL_PRINTED = {
+    2023: ({'2a': 'Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).\nA – PRÓS AINMNITHE — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.',
+            '2b': ('Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).\nB – PRÓS ROGHNACH — Níl cead aon ábhar a bhaineann le Prós Ainmnithe a '
+                   'úsáid sna freagraí ar an bPrós Roghnach. Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.'),
+            '3a': 'Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).\nA – FILÍOCHT AINMNITHE — Freagair do rogha dhá cheann as (a), (b) nó (c).',
+            '3b': ('Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).\nB – FILÍOCHT ROGHNACH — Níl cead aon ábhar a bhaineann le Filíocht '
+                   'Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach. Freagair do rogha dhá cheann as (a), (b) nó (c) thíos. Níl cead an '
+                   'dán roghnach céanna a úsáid faoi dhó.')},
+           {'2a': CHOOSE, '2b': CHOOSE, '3a': CHOOSE_3A, '3b': CHOOSE}, 'Níl cead an dán roghnach céanna a úsáid faoi dhó.'),
+    2022: ({'2a': '2A – PRÓS AINMNITHE',
+            '2b': '2B – PRÓS ROGHNACH\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.',
+            '3a': '3A – FILÍOCHT AINMNITHE',
+            '3b': '3B – FILÍOCHT ROGHNACH\nNíl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.'},
+           dict.fromkeys(('2a', '2b', '3a', '3b'), 'Freagair dhá cheist as an roinn seo.'), None),
+}
 
 
 def title_of(question):
@@ -1007,18 +1260,25 @@ def literature_ordinary(sitting, base):
     fixed sentence “The scheme prints no answer for this part.” (the 2011 aural's rule)."""
     s, level, year = sitting.scheme, sitting.level, sitting.year
     paper_text = ' '.join(sitting.texts[2])
-    for head in HEADS_OL.values():
+    heads, choose, same_poem = OL_PRINTED.get(year, (HEADS_OL, {'2a': CHOOSE, '2b': CHOOSE, '3a': CHOOSE_3A, '3b': CHOOSE}, SAME_POEM))
+    for head in [*heads.values(), *choose.values(), *([same_poem] if same_poem else [])]:
         for line in re.split(r'\n| — ', head):
             assert comparable(line) in comparable(paper_text), line
     by_key = {c['id'].split('-p2-', 1)[1]: c for c in base if '-p2-' in c['id'] and '-reading-' not in c['id']}
     assert len(by_key) == 12, sorted(by_key)
-    lang = s.find(r'\[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh\]')
+    lang = s.find(r'\[Gaeilge lochtach: 0[-‐]4 a bhaint den iomlán a gnóthaíodh\.?\]')
     assert lang, 'literature deduction not printed'
     lang = lang.group(0)
     # The deduction exactly as printed; each card's note says it applies once to the whole answer.
     deduction = lambda: criterion('gaeilge-deduction', 'Gaeilge lochtach', 4, [lang], 'quality', deduction=True)
-    sections = {'2a': s.find(r'Freagair 2A \(Prós Ainmnithe\) nó 2B \(Prós Roghnach\)\.'),
-                '3a': s.find(r'Freagair 3A \(Filíocht Ainmnithe\) nó 3B \(Filíocht Roghnach\)\.')}
+    sections = {'2a': s.find(r'Freagair 2A \(Prós Ainmnithe\) nó 2B \(Prós Roghnach\)\.') or s.find(r'2A – PRÓS AINMNITHE'),
+                '3a': s.find(r'Freagair 3A \(Filíocht Ainmnithe\) nó 3B \(Filíocht Roghnach\)\.') or s.find(r'3A – FILÍOCHT AINMNITHE')}
+    if not any(sections.values()):
+        # 2022's text layer stores each section heading inside its first key: a section opens at its own
+        # "Nóta: Níl sé i gceist …", printed once for the prose and once for the poetry.
+        opened = list(re.finditer(r'Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha', s.text))
+        assert len(opened) == 2, len(opened)
+        sections = {'2a': opened[0], '3a': opened[1]}
     assert all(sections.values()), sections
     notes = {}
     for key, m in sections.items():
@@ -1056,7 +1316,13 @@ def literature_ordinary(sitting, base):
             assert found, (roman, words[:60], chunk[:160])
             head = re.search(r'\(' + roman + r'\)\s*(?:\([a-d]\)\s*)?$', chunk[max(0, found[0] - 12):found[0]])
             cuts.append(found[0] - (len(head.group(0)) if head else 0))
-        pieces = [chunk[a:b].strip() for a, b in zip(cuts, cuts[1:] + [len(chunk)])]
+        # A piece never ends with the next part's label: 2022 labels Dís's (v) "(iv)", so it is cut at its words.
+        pieces = [re.sub(r'\s*\((?:i{1,3}|iv|v)\)$', '', chunk[a:b].strip()) for a, b in zip(cuts, cuts[1:] + [len(chunk)])]
+        # 2022's text layer stores a part's heading before its prices and its tariff after them ("… véarsa a dó. Freagra samplach:
+        # Dhá phointe eolais = 4 mharc + 4 mharc (8 marc) • …"); the page prints the tariff beside the question, then the prices,
+        # then the samples under their heading. Read in that order. No word changes.
+        pieces = [re.sub(r'^(.*?)\s+(Freagra(?:í)? [Ss]amplach(?:a)?:)\s+([^•\uf0b7]*?=[^•\uf0b7]*?)\s+(\(\d+ m?h?arc\))\s+([•\uf0b7].*)$',
+                         r'\1 \4 \3 \2 \5', piece) for piece in pieces]
         if parts and parts[0][0] == 'i':
             # The first piece starts at the option's heading; its part starts at "(i)".
             pieces[0] = pieces[0][pieces[0].index('(i)'):] if '(i)' in pieces[0] else pieces[0]
@@ -1065,6 +1331,73 @@ def literature_ordinary(sitting, base):
     def tariff_of(piece):
         m = re.search(r'\((\d+) m?h?arc\)', piece)
         return int(m.group(1)) if m else None
+
+    def unit_tariff(piece):
+        """2022 prices some parts without a bracketed total: by their priced lines ("An sórt duine = 1 mharc Dhá phointe
+        eolais = 2 mharc + 2 mharc"), or by a bare total after the question ("… ar an bpáipéar? 5 mharc")."""
+        head = re.split(r'Freagra(?:í)? Samplach', piece)[0]
+        lines = re.findall(r'=\s*(\d+) mharc((?:\s*\+\s*\d+ mharc)*)', head)
+        if lines:
+            return sum(int(a) + sum(int(x) for x in re.findall(r'(\d+) mharc', rest)) for a, rest in lines)
+        bare = re.search(r'\?\s+(\d+) mharc\b', head)
+        return int(bare.group(1)) if bare else None
+
+    cursors = {'2': 0, '3': 0}
+
+    def plain_words(text, count):
+        bare = ''.join(ch for ch in unicodedata.normalize('NFD', text.replace('‐', '-').lower()) if not unicodedata.combining(ch))
+        return re.findall(r'\w+', bare)[:count]
+
+    def optional_key(section, option, text):
+        """An optional option's key where the deferred scheme restates it (2022, 2023; 2024 and 2025 print none): its own
+        label followed by its printed words (the three optional poems open alike, and 2023's restatement of 3B(a) drops
+        a word: "Maidir dán nua‐aimseartha"), to its language deduction; one chunk per printed alternative ("scannán
+        roghnach … NÓ … dráma roghnach", each keyed in full and each closed by its own deduction)."""
+        home = section[0] + 'a'
+        lo, hi = max(sections[home].start(), cursors[section[0]]), ends[home]
+        want = plain_words(re.sub(r'^(?:\((?:[a-d]|i{1,3})\)\s*)+', '', text), 12)
+        start = None
+        for m in re.compile(r'\(' + option + r'\)\s*(?:⟦\d+⟧\s*)?(?:\(i\)\s*)?').finditer(s.text, lo, hi):
+            got = plain_words(re.sub(r'⟦\d+⟧', ' ', s.text[m.end():m.end() + 400]), 12)
+            if difflib.SequenceMatcher(None, want, got).ratio() >= 0.85:
+                start = m.start()
+                break
+        if start is None:
+            return None
+        cursors[section[0]] = start + 1
+        alternatives, pages = [], set()
+        for n in range(max(1, len(re.findall(r'Ní mór teideal', text)))):
+            if n:
+                # The next alternative opens with its own printed "Maidir le …" after the previous one's deduction.
+                start = s.find(r'Maidir le', start).start()
+            stop = s.find(r'\[Gaeilge lochtach', start)
+            assert stop and stop.start() < hi, (section, words[:60])
+            chunk, at = s.chunk(start, stop.start())
+            alternatives.append(chunk)
+            pages |= set(at)
+            start = stop.end()
+        return alternatives, sorted(pages)
+
+    def subset_sums(values):
+        sums = {0}
+        for v in values:
+            sums |= {x + v for x in sums}
+        return sorted(sums)
+
+    def title_criterion(key, alternatives, marks):
+        """The title (and writer) the option asks for, priced as the key prints it ("Teideal an ghiota = 1 mharc Ainm an
+        údair = 1 mharc"); a bracketed tariff the text layer stores after it is not part of the line."""
+        lines = []
+        for chunk in alternatives:
+            at = chunk.index('Ní mór teideal')
+            # The title's own tariff after its lines stays ("… Ainm an scríbhneora = 1 mharc (2 mharc)", as June's cards keep it);
+            # another stored beside it does not (2022 2B(a): "… = 1 mharc (23 marc) (2 mharc)").
+            lines.append(re.sub(r'(?:\s*\(\d+ m?h?arc\))+\s*$',
+                                lambda m: f' ({marks} mharc)' if re.search(r'\(%d m?h?arc\)' % marks, m.group(0)) else '', chunk[at:]).strip())
+        units = [[int(v) for v in re.findall(r'= (\d+) m?h?arc', line)] for line in lines]
+        assert all(sum(u) == marks for u in units) and len({tuple(u) for u in units}) == 1, (key, lines)
+        label = 'Teideal + ainm' if len(units[0]) > 1 else 'Teideal'
+        return criterion('teideal', label, marks, list(dict.fromkeys(lines)), 'exact', permitted=subset_sums(units[0]))
 
     def permitted_for(piece, marks):
         if marks == 5 and '3 mharc + 2 mharc' in piece:
@@ -1097,12 +1430,12 @@ def literature_ordinary(sitting, base):
                 parts = printed_parts(re.sub(r'\s*\(25 marc\)\s*$', '', text))
                 prescribed = section.endswith('a')
                 found = key_of(section, option, title) if prescribed else None
-                requirements = [CHOOSE_3A if section == '3a' else CHOOSE] + (
-                    [NO_PRESCRIBED_PROSE] if section == '2b' else [NO_PRESCRIBED_POETRY, SAME_POEM] if section == '3b' else []) + LIT_OL
+                requirements = [choose[section]] + (
+                    [NO_PRESCRIBED_PROSE] if section == '2b' else [NO_PRESCRIBED_POETRY] + ([same_poem] if same_poem else []) if section == '3b' else []) + LIT_OL
                 if texts:
                     requirements.insert(1, texts[0][3].split(') ', 1)[1])
                 body = re.sub(r'\s+(?=\((?:' + '|'.join(ROMANS) + r')\)\s)', '\n', text)
-                route.update(id=sitting.card_id(2, key), topicId=topic, questionRef=sitting.ref(2, ref), questionText=HEADS_OL[section] + '\n' + body,
+                route.update(id=sitting.card_id(2, key), topicId=topic, questionRef=sitting.ref(2, ref), questionText=heads[section] + '\n' + body,
                              atlasQuestionId=atlas, reviewedAt=REVIEWED_AT, reviewedPaperPages=[route['paperPage']], schemeFileid=scheme_fileid(level),
                              taskRequirements=requirements)
                 if not route.get('sourceMaterial'):
@@ -1110,6 +1443,67 @@ def literature_ordinary(sitting, base):
                     shelf = {'2a': 'Prós Ainmnithe', '2b': 'Prós Roghnach', '3a': 'Filíocht Ainmnithe', '3b': 'Filíocht Roghnach'}[section]
                     route['sourceMaterial'] = source(year, level, 2, shelf, [route['paperPage']],
                                                      title=title if section != '3b' else f'3B({option}) · Dán roghnach')
+                keyed = None if prescribed else optional_key(section, option, text)
+                if keyed:
+                    alternatives, spages = keyed
+                    titles = [int(m) for m in re.findall(r'Ní mór teideal[^()]*?\.\s*\((\d+) m?h?arc\)', text)]
+                    assert len(set(titles)) == 1 and len(titles) == len(alternatives), (key, titles)
+                    if parts:
+                        assert len(alternatives) == 1, key
+                        chunk = alternatives[0]
+                        pieces = cut(chunk[:chunk.index('Ní mór teideal')], parts)
+                        caps = []
+                        for (roman, prompt, printed_cap), piece in zip(parts, pieces):
+                            assert len(printed_parts(prompt, romans=('a', 'b', 'c', 'd'))) <= 1, (key, roman)
+                            cap = printed_cap or tariff_of(piece)
+                            assert cap and re.search(r'\(%d m?h?arc\)' % cap, piece), (key, roman, printed_cap, piece[:120])
+                            caps.append(cap)
+                        criteria = [criterion(f'eolas-{roman}', f'({roman}) Eolas', cap, [piece], 'indicative', permitted=permitted_for(piece, cap))
+                                    for (roman, _, _), cap, piece in zip(parts, caps, pieces)]
+                        summary = ', '.join(f'({r}) {c}' for (r, _, _), c in zip(parts, caps))
+                    else:
+                        paper_units = re.findall(r'\s*(.*?)\s*\((\d+) m?h?arc\)', text.split(') ', 1)[1])
+                        eolas_marks = {int(m) for u, m in paper_units if not u.startswith('Ní mór teideal')}
+                        assert len(eolas_marks) == 1, (key, paper_units)
+                        eolas_marks = eolas_marks.pop()
+                        # Each alternative's key: its priced lines ("An phríomhphearsa … a ainmniú = 1 mharc", "Na heachtraí … =
+                        # 22 marc") before its points rule ("5 phointe eolais ag teastáil …"), which goes with the largest line.
+                        shapes = []
+                        for chunk in alternatives:
+                            body = chunk[:chunk.index('Ní mór teideal')]
+                            after = body.split('(25 marc)', 1)
+                            assert len(after) == 2, (key, body[:160])
+                            rule = re.search(r'\d phointe eolais ag teastáil', after[1])
+                            assert rule, (key, after[1][:160])
+                            lines = [(m.group(0).strip(), m.group(1).strip(), int(m.group(2)))
+                                     for m in re.finditer(r'\s*(.+?) = (\d+) m?h?arc', after[1][:rule.start()])]
+                            shapes.append((lines, after[1][rule.start():].strip()))
+                        marks_of = {tuple(m for _, _, m in lines) for lines, _ in shapes}
+                        assert len(marks_of) == 1, (key, marks_of)
+                        lines0 = shapes[0][0]
+                        assert sum(m for _, _, m in lines0) in (0, eolas_marks), (key, lines0, eolas_marks)
+                        if not lines0:
+                            criteria = [criterion('eolas', 'Eolas', eolas_marks, list(dict.fromkeys(rule for _, rule in shapes)), 'indicative')]
+                        else:
+                            big = max(range(len(lines0)), key=lambda i: lines0[i][2])
+                            criteria = []
+                            for i, (_, label, marks) in enumerate(lines0):
+                                guidance = list(dict.fromkeys(lines[i][0] + (' ' + rule if i == big else '') for lines, rule in shapes))
+                                ident = 'eolas' if i == big else 'ainmniu' if 'ainmniú' in label else 'lua' if label.endswith(' a lua') else f'line-{i + 1}'
+                                criteria.append(criterion(ident, label, marks, guidance, 'indicative' if i == big else 'exact',
+                                                          permitted=None if i == big else range(marks + 1)))
+                        summary = ', '.join(f'{c["label"]} {c["maxMarks"]}' for c in criteria)
+                    criteria.append(title_criterion(key, alternatives, titles[0]))
+                    assert sum(c['maxMarks'] for c in criteria) == 25, (key, [c['maxMarks'] for c in criteria])
+                    note = (f'One complete SEC response: {summary}, {criteria[-1]["label"].lower()} {titles[0]}, then the 0–4 Gaeilge deduction once. '
+                            'The optional text is open content chosen by the candidate; its points are judged on merit against these '
+                            'allocations (indicative rather than exhaustive).')
+                    if len(alternatives) > 1:
+                        note += (f' {section.upper()}({option}) prints {len(alternatives)} alternatives keyed alike; one card carries the '
+                                 'scheme lines of each.')
+                    route.update(schemePage=spages[0], schemePages=spages, criteria=criteria + [deduction()], markingGuideNote=note)
+                    stamped.append(route['id'])
+                    continue
                 if found is None:
                     # No key: the paper's own printed tariffs, each part judged on merit. Units the paper prices:
                     # "Maidir le … (23 marc)", "(i) … (9 marc)", "Ní mór teideal … (2 mharc)". Printed alternatives ("scannán
@@ -1129,9 +1523,20 @@ def literature_ordinary(sitting, base):
                         criteria.append(criterion('teideal', 'Teideal + ainm', titles[0][1], [u for u, _ in titles], 'exact', permitted=range(titles[0][1] + 1)))
                     assert sum(c['maxMarks'] for c in criteria) == 25, (key, [c['maxMarks'] for c in criteria])
                     pages = [s.page_at(sections['2a' if prose else '3a'].start())]
-                    route.update(schemePage=pages[0], schemePages=pages, criteria=criteria + [deduction()],
+                    # The 0-4 deduction applies here only where the scheme prints it for the whole question (2024's
+                    # modified-marking page: "Ceist 2: An Prós - … sna freagraí próis [Gaeilge lochtach: 0 - 4 …]"); printed
+                    # under the keyed options alone (2025), it is theirs, not this option's (coordinator ruling, 12 Nov).
+                    whole = s.find(r'Ceist 2: An Prós - An measúnú a dhéantar ar chaighdeán na Gaeilge sna freagraí próis \[Gaeilge lochtach: 0 ?[-‐] ?4 a bhaint den iomlán a gnóthaíodh\]'
+                                   if prose else
+                                   r'Ceist 3: An Fhilíocht - An measúnú a dhéantar ar chaighdeán na Gaeilge sna freagraí filíochta \[Gaeilge lochtach: 0 ?[-‐] ?4 a bhaint den iomlán a gnóthaíodh\]')
+                    if whole:
+                        pages = sorted({*pages, s.page_at(whole.start())})
+                        criteria.append(criterion('gaeilge-deduction', 'Gaeilge lochtach', 4, [whole.group(0)], 'quality', deduction=True))
+                    route.update(schemePage=pages[0], schemePages=pages, criteria=criteria,
                                  markingGuideNote=f'{UNPRINTED} The deferred scheme prints keys for the prescribed texts only; this option is marked at the '
-                                                  'paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.')
+                                                  'paper’s printed tariffs, judged on merit'
+                                                  + (f', then the 0–4 Gaeilge deduction the scheme prints for the whole question (scheme PDF {s.page_at(whole.start())}) once.'
+                                                     if whole else '. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.'))
                     stamped.append(route['id'])
                     continue
                 chunk, spages = found
@@ -1147,7 +1552,7 @@ def literature_ordinary(sitting, base):
                             assert printed_cap and sum(sub_caps[:len(nested)]) == printed_cap, (key, roman, printed_cap, sub_caps)
                             caps.append(printed_cap)
                         else:
-                            caps.append(tariff_of(piece))
+                            caps.append(tariff_of(piece) or unit_tariff(piece))
                             assert printed_cap in (None, caps[-1]), (key, roman, printed_cap, caps[-1])
                     assert None not in caps and sum(caps) == 25, (key, caps)
                     criteria = [criterion(f'eolas-{roman}', f'({roman}) Eolas', cap, [piece, notes[section]], 'indicative',
@@ -1173,7 +1578,7 @@ def literature_ordinary(sitting, base):
                     nested = printed_parts(prompt, romans=('a', 'b', 'c', 'd'))
                     one = re.sub(r'\s+(?=\([a-d]\)\s)', '\n', prompt)
                     shown = one if re.search(r'\(\d+ m?h?arc\)$', one) else f'{one} ({cap} marc)'
-                    add(part_card(sitting, f'{atlas}-{roman}', f'{key}-{roman}', f'{ref} · ({roman})', HEADS_OL[section] + '\n' + lead + f'\n({roman}) {shown}',
+                    add(part_card(sitting, f'{atlas}-{roman}', f'{key}-{roman}', f'{ref} · ({roman})', heads[section] + '\n' + lead + f'\n({roman}) {shown}',
                                   topic, [route['paperPage']], spages, [criterion('eolas', 'Eolas', cap, [piece, notes[section]], 'indicative',
                                                                                   permitted=criteria[ROMANS.index(roman)]['permittedMarks'])],
                                   requirements[:1] + LIT_OL[1:],
@@ -1188,7 +1593,7 @@ def literature_ordinary(sitting, base):
                             values = [0, sub_cap] if '2 mharc + 2 mharc' not in sub else [0, 2, sub_cap]
                             asked = re.sub(r'\s*\(\d+ m?h?arc\)$', '', sub_prompt)
                             add(part_card(sitting, f'{atlas}-{roman}-{letter}', f'{key}-{roman}-{letter}', f'{ref} · ({roman})({letter})',
-                                          HEADS_OL[section] + '\n' + lead + f'\n({roman}) ({letter}) {asked}',
+                                          heads[section] + '\n' + lead + f'\n({roman}) ({letter}) {asked}',
                                           topic, [route['paperPage']], spages, [criterion('eolas', 'Freagra', sub_cap, [sub], 'exact', permitted=values)],
                                           requirements[:1] + LIT_OL[1:],
                                           f'One printed {sub_cap}-mark question inside {section.upper()}({option})({roman}). Scheme: “{lang}” applies to the whole 25-mark answer.',
@@ -1206,18 +1611,30 @@ FURNITURE = ('Ceist 1 LÉAMHTHUISCINT 100 marc Páipéar 2 (200 marc)', 'Ceist 2
              'Cuid I An Chluastuiscint 60 marc', 'Cuid II An Cheapadóireacht 100 marc', 'CEIST 1 (A + B) - LÉAMHTHUISCINT - 100 marc',
              'Ceist 2 Prós Ainmnithe nó Roghnach 50 marc', 'Ceist 3 Filíocht Ainmnithe nó Roghnach 50 marc',
              'Ceist 2 Prós – Ainmnithe nó Roghnach 50 marc', 'Ceist 3 Filíocht – Ainmnithe nó Roghnach 50 marc',
-             '2A PRÓS AINMNITHE 50 marc', '3A FILÍOCHT AINMNITHE 50 marc', 'Páipéar II (200 marc)')
+             '2A PRÓS AINMNITHE 50 marc', '3A FILÍOCHT AINMNITHE 50 marc', 'Páipéar II (200 marc)',
+             # 2022's and 2023's margin labels, stored inside the key beside them.
+             'A – (50 marc)', 'B – (50 marc)', '2B – PRÓS ROGHNACH', 'B PRÓS ROGHNACH', '– FILÍOCHT ROGHNACH –',
+             'CEIST 3 FILÍOCHT AINMNITHE nó ROGHNACH A –FILÍOCHT AINMNITHE')
 
 
 def strip_furniture(card):
     from irish_furniture import HEADINGS
     pattern = re.compile('|'.join(r'\s*' + re.escape(h) + r'(?=\s|$)\s*' for h in sorted(set(HEADINGS) | set(FURNITURE), key=len, reverse=True)))
+    # The examiner's empty total box after the Eolas and Gaeilge boxes ("Gaeilge (5) = C 2 A (a) (30) =", "… = C3B (30) =",
+    # "… = 2 A (b) 30 ="), 2022's and 2023's: the boxes are the examiner's form, not marking.
+    box = re.compile(r'(Gaeilge \(5\) =)\s*(?:C ?)?\d ?[ABF]?(?: ?[ABF])? ?(?:\([a-f]\) ?)?\(?\d+\)? ?=?(?=\s|$)')
+    # The margin label's letter, stored apart from its words ("… = 1 mharc B Dhá shampla …", 2022 Ordinary 3B(a)).
+    margin = re.compile(r'(?<=\d mharc) [AB](?= [A-ZÁÉÍÓÚ][a-záéíóú])')
     count = 0
     for c in card['criteria']:
         lines = []
         for line in c['guidance']:
             new, n = pattern.subn(' ', line)
-            count += n
+            new, m = box.subn(r'\1', new)
+            new, k = margin.subn('', new)
+            # SymbolMT's space (U+F020, Adobe Symbol 0x20) between two sample answers (2022 Ordinary Dís (v)): a space.
+            new = new.replace('\uf020', ' ')
+            count += n + m + k
             lines.append(clean(new))
         c['guidance'] = [line for line in lines if line]
     return count
@@ -1347,8 +1764,12 @@ def outputs(year, level):
                   reviewDate=REVIEWED_AT, audio=AUDIO[year], furnitureStripped=stripped,
                   cardCount=len(cards), censusAsks=len({leaf for found in covered.values() for leaf in found}))
     manifest = json.dumps(dict(review=review, covers=covered, cards=cards), ensure_ascii=False, indent=2) + '\n'
-    return {DECK / f'{level}-{year}-deferred-authored.json': manifest,
-            SCHEME_TEXT / f'{year}-{ll}-deferred.md': scheme_export(sitting)}
+    out = {DECK / f'{level}-{year}-deferred-authored.json': manifest,
+           SCHEME_TEXT / f'{year}-{ll}-deferred.md': scheme_export(sitting)}
+    # Close this sitting's documents now: PyMuPDF can trap with many documents left open across a full run.
+    for doc in sitting.docs.values():
+        doc.close()
+    return out
 
 
 def main():
@@ -1375,4 +1796,9 @@ def main():
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    code = main()
+    # PyMuPDF can trap while the interpreter tears down the many documents a full run leaves open (exit 133 after every
+    # output is written). Everything is written and flushed by now: leave without the teardown.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(code)

@@ -38,7 +38,7 @@ const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|'
 // Atlas as its own booklet ("LC001ALP100IV-deferred.pdf"), as History's and Economics' deferred papers do, with the
 // June paper's section entries and one entry per reviewed card. Their questions never join June's (logicalQuestionIdentity,
 // and the runtime keys them by booklet). June's outputs do not change.
-const DEFERRED_MANIFESTS = ['higher-2025-deferred-authored.json', 'ordinary-2025-deferred-authored.json', 'higher-2024-deferred-authored.json', 'ordinary-2024-deferred-authored.json'];
+const DEFERRED_MANIFESTS = ['higher-2025-deferred-authored.json', 'ordinary-2025-deferred-authored.json', 'higher-2024-deferred-authored.json', 'ordinary-2024-deferred-authored.json', 'higher-2023-deferred-authored.json', 'ordinary-2023-deferred-authored.json', 'ordinary-2022-deferred-authored.json'];
 const deferredTasks = DEFERRED_MANIFESTS
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
