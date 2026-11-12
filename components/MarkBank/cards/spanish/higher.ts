@@ -4389,6 +4389,919 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-1-a", topicId: "spanish-3-0", conceptId: "main-objective-relomar-agency",
+    section: "L", questionRef: "2023 HL Section L Q1(a)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. AYUDA PARA TRASLADARSE A ESPAÑA (HELP TO MOVE TO SPAIN)",
+    questionText: "What is the main objective of the Relomar agency? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To help (people) to adapt to a new life as soon as possible", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — AYUDA PARA TRASLADARSE A ESPAÑA",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-1-b", topicId: "spanish-3-0", conceptId: "experience-first-things-organise",
+    section: "L", questionRef: "2023 HL Section L Q1(b)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. AYUDA PARA TRASLADARSE A ESPAÑA (HELP TO MOVE TO SPAIN)",
+    questionText: "In their experience, what are the first things to organise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Temporary accommodation/housing", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "a bank account", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — AYUDA PARA TRASLADARSE A ESPAÑA",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-1-c", topicId: "spanish-3-0", conceptId: "information-welcome-pack",
+    section: "L", questionRef: "2023 HL Section L Q1(c)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. AYUDA PARA TRASLADARSE A ESPAÑA (HELP TO MOVE TO SPAIN)",
+    questionText: "What information is in the welcome pack?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(About the) new city; bills; how to change the car registration", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “Change the car= 0m”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — AYUDA PARA TRASLADARSE A ESPAÑA",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-2-a", topicId: "spanish-3-2", conceptId: "did-she-study-economics-university",
+    section: "L", questionRef: "2023 HL Section L Q2(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA (INTERVIEW WITH QUEEN MÁXIMA OF HOLLAND)",
+    questionText: "Why did she study Economics at university?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She was impacted by the economic crisis in Argentina/90s", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-2-b", topicId: "spanish-3-2", conceptId: "does-she-say-meeting-king-seville",
+    section: "L", questionRef: "2023 HL Section L Q2(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA (INTERVIEW WITH QUEEN MÁXIMA OF HOLLAND)",
+    questionText: "What does she say about meeting the King in Seville in 1999?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was love at first sight", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "the king/he didn’t know how to dance", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-2-c", topicId: "spanish-3-2", conceptId: "does-she-say-her-eldest-daughter",
+    section: "L", questionRef: "2023 HL Section L Q2(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA (INTERVIEW WITH QUEEN MÁXIMA OF HOLLAND)",
+    questionText: "What does she say about her eldest daughter Amalia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "She has just started university and (got her) driving licence", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-2-d", topicId: "spanish-3-2", conceptId: "work-does-she-with-united-nations",
+    section: "L", questionRef: "2023 HL Section L Q2(d)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA (INTERVIEW WITH QUEEN MÁXIMA OF HOLLAND)",
+    questionText: "What work does she do with the United Nations?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To teach (people) how to understand the financial world", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON LA REINA MÁXIMA DE HOLANDA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-3-a", topicId: "spanish-3-2", conceptId: "did-javier-realise-day",
+    section: "L", questionRef: "2023 HL Section L Q3(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ (SPEAKING WITH THE ADVENTURER, JAVIER MARTÍNEZ)",
+    questionText: "What did Javier realise one day?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That he was sick of airports", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-3-b", topicId: "spanish-3-2", conceptId: "does-describe-his-trip",
+    section: "L", questionRef: "2023 HL Section L Q3(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ (SPEAKING WITH THE ADVENTURER, JAVIER MARTÍNEZ)",
+    questionText: "How does he describe his trip?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Full of delays and pain", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-3-c", topicId: "spanish-3-2", conceptId: "exactly-happened-him-armenia",
+    section: "L", questionRef: "2023 HL Section L Q3(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ (SPEAKING WITH THE ADVENTURER, JAVIER MARTÍNEZ)",
+    questionText: "What exactly happened to him in Armenia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Trapped in snow without food or drink", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-3-d", topicId: "spanish-3-2", conceptId: "does-love-travelling",
+    section: "L", questionRef: "2023 HL Section L Q3(d)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ (SPEAKING WITH THE ADVENTURER, JAVIER MARTÍNEZ)",
+    questionText: "Why does he love travelling?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Extreme experiences; challenges; loneliness", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL AVENTURERO, JAVIER MARTÍNEZ",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-4-a", topicId: "spanish-3-1", conceptId: "exactly-company-seat-created",
+    section: "L", questionRef: "2023 HL Section L Q4(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SEAT – SIETE DÉCADAS DE HISTORIA (SEAT– SEVEN DECADES OF HISTORY)",
+    questionText: "Why exactly was the company SEAT created?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The need to make (vehicles like) ambulances and police cars", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — SEAT – SIETE DÉCADAS DE HISTORIA",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-4-b", topicId: "spanish-3-1", conceptId: "casa-seat-used",
+    section: "L", questionRef: "2023 HL Section L Q4(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SEAT – SIETE DÉCADAS DE HISTORIA (SEAT– SEVEN DECADES OF HISTORY)",
+    questionText: "What is the ‘Casa SEAT’ used for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To show their latest cars", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — SEAT – SIETE DÉCADAS DE HISTORIA",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-4-c", topicId: "spanish-3-1", conceptId: "city-arona",
+    section: "L", questionRef: "2023 HL Section L Q4(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SEAT – SIETE DÉCADAS DE HISTORIA (SEAT– SEVEN DECADES OF HISTORY)",
+    questionText: "What is said about the city of Arona? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":3,"perOption":0,"options":["coastal","79,000 inhabitants","south of Tenerife","car is named after it"],"perOptionSteps":[0,0,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — SEAT – SIETE DÉCADAS DE HISTORIA",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-4-d", topicId: "spanish-3-1", conceptId: "seat-choose-spanish-places-its-car",
+    section: "L", questionRef: "2023 HL Section L Q4(d)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SEAT – SIETE DÉCADAS DE HISTORIA (SEAT– SEVEN DECADES OF HISTORY)",
+    questionText: "How do SEAT choose the Spanish places for its car names?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Easily) pronounceable in dozens of languages", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — SEAT – SIETE DÉCADAS DE HISTORIA",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-5-a", topicId: "spanish-3-1", conceptId: "does-gastronomic-culture-allow-discover",
+    section: "L", questionRef: "2023 HL Section L Q5(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA COMIDA TRADICIONAL MEXICANA (TRADITIONAL MEXICAN FOOD)",
+    questionText: "What does gastronomic culture allow us to discover?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The lifestyle; values; identity (of a country)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA COMIDA TRADICIONAL MEXICANA",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-5-b", topicId: "spanish-3-1", conceptId: "according-experts-mexican-cuisine-varied",
+    section: "L", questionRef: "2023 HL Section L Q5(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA COMIDA TRADICIONAL MEXICANA (TRADITIONAL MEXICAN FOOD)",
+    questionText: "According to experts, why is Mexican cuisine varied?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Because of) the food that is grown in each region", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA COMIDA TRADICIONAL MEXICANA",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-5-c", topicId: "spanish-3-1", conceptId: "use-chocolate-mexican-cuisine",
+    section: "L", questionRef: "2023 HL Section L Q5(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA COMIDA TRADICIONAL MEXICANA (TRADITIONAL MEXICAN FOOD)",
+    questionText: "What is said about the use of chocolate in Mexican cuisine?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Only in Mexico is it used to make a spicy sauce", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA COMIDA TRADICIONAL MEXICANA",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-5-d", topicId: "spanish-3-1", conceptId: "does-gastronomic-tourism-contribute-mexican-economy",
+    section: "L", questionRef: "2023 HL Section L Q5(d)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA COMIDA TRADICIONAL MEXICANA (TRADITIONAL MEXICAN FOOD)",
+    questionText: "How does gastronomic tourism contribute to the Mexican economy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Generates) thousands of jobs", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "30% of (tourist) expenditure", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA COMIDA TRADICIONAL MEXICANA",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-6-a", topicId: "spanish-3-3", conceptId: "weather-this-november",
+    section: "L", questionRef: "2023 HL Section L Q6(a)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What is said about the weather this November? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Very) warm and drier than normal", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-6-b", topicId: "spanish-3-3", conceptId: "minimum-temperatures",
+    section: "L", questionRef: "2023 HL Section L Q6(b)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What is said about the minimum temperatures? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Above average; 13-15 (degrees)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-6-c", topicId: "spanish-3-3", conceptId: "will-weather-like-afternoon",
+    section: "L", questionRef: "2023 HL Section L Q6(c)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in the afternoon? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Increase in cloud in the Southeast","Possibility of storms in the Canaries"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-7-a", topicId: "spanish-3-4", conceptId: "julio-meena-combined-age",
+    section: "L", questionRef: "2023 HL Section L Q7(a)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL SECRETO DEL AMOR (THE SECRET OF LOVE)",
+    questionText: "What is said about Julio and Meena’s combined age?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["More than 200 years/two centuries","Impressive"],"optionMarks":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — EL SECRETO DEL AMOR",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-7-b", topicId: "spanish-3-4", conceptId: "where-exactly-did-julio-live",
+    section: "L", questionRef: "2023 HL Section L Q7(b)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL SECRETO DEL AMOR (THE SECRET OF LOVE)",
+    questionText: "Where exactly did Julio live?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the same building as Meena’s twin sister", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — EL SECRETO DEL AMOR",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-7-c", topicId: "spanish-3-4", conceptId: "were-awarded-guinness-world-record",
+    section: "L", questionRef: "2023 HL Section L Q7(c)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL SECRETO DEL AMOR (THE SECRET OF LOVE)",
+    questionText: "Why were they awarded the Guinness World Record? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "For being the oldest married people (in the world)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — EL SECRETO DEL AMOR",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-l-7-d", topicId: "spanish-3-4", conceptId: "say-secret-love",
+    section: "L", questionRef: "2023 HL Section L Q7(d)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL SECRETO DEL AMOR (THE SECRET OF LOVE)",
+    questionText: "What do they say is the secret of love? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Patience; maturity; respect", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — EL SECRETO DEL AMOR",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2023 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
     paperFileid: "LC012ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
     id: "es-2023-hl-a1a-1-a", topicId: "spanish-7-1", conceptId: "muy-cansado",
@@ -4564,6 +5477,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["(he says that) it’s a strange sensation","he realised the worst was yet to come","he was completely exhausted","he couldn’t stand up/stay on his feet","the waves pushed him violently","he had the medal of Virgen del Carmen between his teeth","his clothes and his shoes were weighing him down/felt very heavy","he felt shy","he thought that (soon) he might meet someone","he kept fighting against the undercurrent without removing his clothes which were preventing him from advancing","he felt he was fainting from exhaustion"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-a1a-5", topicId: "spanish-7-1", conceptId: "discuss-luis-life-changes-after-becomes",
+    section: "A", questionRef: "2023 HL Section A1a Q5",
+    questionText: "Discuss how Luis’ life changes after he becomes famous.\nYou may not support your answer by reference to the extract. Answer in English on page 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “Discussion on any three relevant points.” and “No marks awarded for answers supported by reference to the extract”, under the tariff “4 + 4 + 4 = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", permittedMarks: [0,4,8,12], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4833,6 +5769,30 @@ export const CARDS: SecCard[] = [
           "kind": "source-text",
           "label": "READING COMPREHENSION",
           "title": "AUMENTAN LAS OLAS DE CALOR EN ESPAÑA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2023 Higher Level — © State Examinations Commission.",
+    id: "es-2023-hl-a1b-4", topicId: "spanish-5-0", conceptId: "estadistica-muy-grave-gran-numero-centros",
+    section: "A", questionRef: "2023 HL Section A1b Q4",
+    stem: "Explica o (expresa de otro modo) en ESPAÑOL una de las frases siguientes:",
+    questionText: "(a) … una estadística muy grave. (para 2)\nO\n(b) … un gran número de centros escolares… (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "AUMENTAN LAS OLAS DE CALOR EN ESPAÑA — answer in Spanish",
           "pages": [
                 8
           ],
@@ -5392,6 +6352,432 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Spanish 2023 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
           "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
           "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2023 Higher Level, p.9 — © State Examinations Commission.",
+    id: "es-2023-hl-b-5", topicId: "spanish-6-0", conceptId: "hay-nada-tan-importante-como-familia",
+    section: "B", questionRef: "2023 HL Section B Q5",
+    stem: "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+    questionText: "(a) No hay nada tan importante como la familia.\nO\n(b) Ser estudiante en Irlanda es muy caro.\nO\n(c) Hoy día los jóvenes tienen una vida muy fácil.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where no marks are awarded for Content 1, (i.e. effort totally irrelevant), no marks will be awarded for Language 2.",
+                "No marks will be awarded for phrases taken directly from the text."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content/Communication",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "High level of coherence",
+                                        "Clear argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Comprehensible to Spanish speaker",
+                                        "Communicative intention more or less fulfilled",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Lack of coherence",
+                                        "Spanish speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Idiomatic Spanish",
+                                        "Good level of vocabulary",
+                                        "Few grammatical/spelling mistakes",
+                                        "Correct usage of tenses"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Vocabulary quite good - generally adequate and appropriate",
+                                        "Verbs generally correct",
+                                        "Not too many spelling/grammatical mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Problems with vocabulary – limited range of vocabulary",
+                                        "Most verbs incorrect",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Choose a band for Content/Communication and one for Language, then the mark within each band."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LOS JÓVENES ESPAÑOLES SE VAN DE CASA A LOS 29 AÑOS — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2023-hl-c-1-a", topicId: "spanish-6-1", conceptId: "spending-year-madrid-want-join-local",
+    section: "C", questionRef: "2023 HL Section C Q1(a)",
+    stem: "Answer EITHER (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING",
+    questionText: "You are spending a year in Madrid and you want to join a local basketball club. Complete in Spanish the dialogue. You should attempt any five of the following points:\nEntrenador: Buenos días, ¿así que quieres jugar al baloncesto con nosotros?\nTú: Say that you are delighted to meet him. Say that you are going to spend a year studying in Madrid and that you would like to stay fit.\nEntrenador: Estupendo. ¿Juegas bien al baloncesto?\nTú: Say that you have never played basketball, you prefer Gaelic football. There was a good team in your school and they won the final last year.\nEntrenador: Si, conozco el fútbol gaélico. ¡Los mejores jugadores deben ser muy ricos!\nTú: Say that they don’t earn anything, they love the sport. The GAA is a voluntary organisation and a very important part of Irish culture.\nEntrenador: ¿No eres un poco bajito/a para jugar al baloncesto?\nTú: Say that’s true, you are not very tall, but you are smart. You don’t mind training often and you get on well with your team mates.\nEntrenador: Pues, entrenamos los martes y los jueves a las siete de la tarde.\nTú: Tell him that seems ok, but you will arrive a bit late as your classes in the university don’t finish until six thirty every day.\nEntrenador: No te preocupes. ¿Te puedo ayudar en algo más?\nTú: Say that your parents love basketball and you want to bring them to a game during their visit in January. Ask is it difficult to get tickets.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Allow a maximum of 6 marks each. (5 x 6m = 30 marks)",
+                "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+                "6 marks: Communicative intention fulfilled.",
+                "Verbs must be correct for full marks.",
+                "4 - 5 marks: Communicative intention more or less fulfilled.",
+                "Verbs generally correct.",
+                "2 - 3 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Incorrect verb usage/ tenses wrong.",
+                "1 mark: Very small part of communicative intention fulfilled.",
+                "0 marks: No communication of message.",
+                "Question 1: When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "turn-1",
+                      "label": "First turn",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-2",
+                      "label": "Second turn",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-3",
+                      "label": "Third turn",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-4",
+                      "label": "Fourth turn",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-5",
+                      "label": "Fifth turn",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2, both must be marked and marks will be awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nN.B.: In any part of written production the same mistake will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each turn you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (a) — answer in Spanish",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2023-hl-c-1-b", topicId: "spanish-6-2", conceptId: "newspaper-article-states-that-spanish-people",
+    section: "C", questionRef: "2023 HL Section C Q1(b)",
+    stem: "Answer EITHER (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING",
+    questionText: "A newspaper article states that Spanish people should spend time in Ireland to improve their English. You decide to write a letter/email in Spanish to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with them. You should make five relevant points out of the eight below and each of these points should be expanded and developed)\n• Spanish people don’t need a visa to live in Ireland.\n• There are excellent language schools all over the country.\n• Spanish people can work part‐time to pay for their studies.\n• Irish people are very friendly and the accent is easy to understand.\n• There are cheap flights between Spanish and Irish airports.\n• The cost of living is expensive.\n• The scenery is amazing, especially along the coasts.\n• Ireland is great for people who like music and culture.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "• There are five points to be made. (5 x 6m = 30 marks)",
+                "• Allow a maximum of 6 marks each",
+                "• Note that each point should be developed and expanded.",
+                "• Letter/ email can be loosely based on the suggestions given.",
+                "• Candidates can make their own points and need not use the guidelines given.",
+                "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+                "6 marks: Communicative intention fulfilled.",
+                "Verbs must be correct for full marks.",
+                "4 - 5 marks: Communicative intention more or less fulfilled.",
+                "Verbs generally correct.",
+                "2 - 3 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Incorrect verb usage/ tenses wrong.",
+                "1 mark: Very small part of communicative intention fulfilled.",
+                "0 marks: No communication of message.",
+                "Question 1: When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2, both must be marked and marks will be awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nN.B.: In any part of written production the same mistake will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (b) — answer in Spanish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2023-hl-c-2-a", topicId: "spanish-6-3", conceptId: "have-just-spent-month-travelling-spain",
+    section: "C", questionRef: "2023 HL Section C Q2(a)",
+    stem: "Answer either (a) DIARY ENTRY or (b) NOTE",
+    questionText: "You have just spent a month travelling in Spain on your own. Write a diary entry in Spanish mentioning any four of the following points:\n− Say that you’ve had a great time and explain why.\n− Mention one advantage of travelling alone.\n− Describe an interesting Spanish person that you met.\n− Explain why you don’t like the hostel where you are staying.\n− Say how you plan to spend your first day back in Ireland.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "There are four points to be communicated. Allow maximum of 5 marks each (4 x 5m = 20 marks)",
+                "Development of points not necessarily essential.",
+                "TOTAL MARKS: 20 MARKS (Mark each point individually)",
+                "5 marks Communicative intention fulfilled.",
+                "Verbs correct.",
+                "4 marks Communicative intention more or less fulfilled.",
+                "Verbs generally correct.",
+                "3 marks Communicative intention more or less fulfilled.",
+                "There may be a few grammatical errors & spelling mistakes.",
+                "2 marks Some communicative intention fulfilled.",
+                "Quite a few grammatical errors & spelling mistakes.",
+                "1 mark Very small amount of message conveyed.",
+                "0 marks Message not communicated."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2, both must be marked and marks will be awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nN.B.: In any part of written production the same mistake will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (a) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2023 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2023-hl-c-2-b", topicId: "spanish-6-4", conceptId: "staying-bilbao-with-friend-iker-leave",
+    section: "C", questionRef: "2023 HL Section C Q2(b)",
+    stem: "Answer either (a) DIARY ENTRY or (b) NOTE",
+    questionText: "You are staying in Bilbao with your friend Iker. Leave a note in Spanish for Iker including any four of the following points:\n− Say you got up early to go for a swim in the sea.\n− Tell him that the kitchen is dirty but you’ll clean it later.\n− Say that you have both been invited to a party on Friday night.\n− Say that you will buy drinks and food tomorrow for the party.\n− Ask him if he’d like to visit Pamplona with you on Saturday.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "There are four points to be communicated. Allow maximum of 5 marks each. (4 x 5m = 20 marks)",
+                "Development of points not necessarily essential.",
+                "TOTAL MARKS: 20 MARKS (Mark each point individually)",
+                "5 marks Communicative intention fulfilled.",
+                "Verbs correct.",
+                "4 marks Communicative intention more or less fulfilled.",
+                "Verbs generally correct.",
+                "3 marks Communicative intention more or less fulfilled.",
+                "There may be a few grammatical errors & spelling mistakes.",
+                "2 marks Some communicative intention fulfilled.",
+                "Quite a few grammatical errors & spelling mistakes.",
+                "1 mark Very small amount of message conveyed.",
+                "0 marks Message not communicated."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2, both must be marked and marks will be awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nN.B.: In any part of written production the same mistake will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (b) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
   {

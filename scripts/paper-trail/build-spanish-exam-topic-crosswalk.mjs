@@ -438,6 +438,7 @@ for (let year = 2010; year <= 2026; year++) {
 // … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
 // on both for every year listed.
 const HIGHER_WRITING_PAGES = {
+  2023: { b5: 14, c2: 21 },
   2024: { b5: 14, c2: 21 },
   2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
