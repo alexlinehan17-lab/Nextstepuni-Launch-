@@ -438,6 +438,7 @@ for (let year = 2010; year <= 2026; year++) {
 // … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
 // on both for every year listed.
 const HIGHER_WRITING_PAGES = {
+  2021: { b5: 12, c2: 19 },
   2022: { b5: 14, c2: 21 },
   2023: { b5: 14, c2: 21 },
   2024: { b5: 14, c2: 21 },
@@ -470,6 +471,7 @@ for (const extra of [
   { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
   { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
   { year: 2024, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2021, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 8 },
   { year: 2022, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
   // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)
   // Answer EITHER (a) or (b) in ENGLISH.", p11); the Irish map has it (n 4).

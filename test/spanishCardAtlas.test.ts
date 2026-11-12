@@ -46,7 +46,7 @@ describe('Spanish cards in the Topic Atlas', () => {
     // on 12 Nov 2026 (A1b Q4 given its own question; n 5, 8, 9 retagged).
     // 2022 Question 2 was given its own question on 12 Nov 2026: no gaps left.
     expect(Object.keys(map.gaps).sort()).toEqual([]);
-    expect(map.topicResidue.length).toBeLessThanOrEqual(8);
+    expect(map.topicResidue.length).toBeLessThanOrEqual(0);
     for (const id of [...Object.keys(map.gaps), ...map.topicResidue]) {
       expect(id, id).toMatch(/^es-202[1-5]-hl-/);
     }

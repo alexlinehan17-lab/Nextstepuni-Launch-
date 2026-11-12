@@ -733,7 +733,18 @@ class EsScheme:
                             if QUOTA.match(' '.join(k.split())))
             q_count = QUOTA_WORDS[QUOTA.match(' '.join(kept[quota_at].split()))
                                   .group(1).lower()]
-            if len(terms) == q_count + 1 and quota_at == 1:
+            lead_line = ' '.join(kept[0].split()) if quota_at == 1 else ''
+            if (quota_at == 1 and q_count > 1 and len(terms) == 2
+                    and lead_line.endswith(';') and not ANSWER_START.match(lead_line)):
+                # A required answer printed on its own line, closed by the
+                # scheme's answer separator, ahead of a menu: 2021 Higher
+                # listening Q7(b) "Extra services;" / "Two of: travel agency/
+                # hairdressers/ postal service (1+2m)". The answer takes the
+                # tariff's first term; the menu, the second, for all its
+                # answers together.
+                lead_points = [(lead_line.rstrip(';').strip(), terms[0])]
+                kept = kept[1:]
+            elif len(terms) == q_count + 1 and quota_at == 1:
                 for raw in body[:2]:
                     s_ = ' '.join((raw or '').split())
                     m = re.match(r'^(.*?)\s*\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', s_, re.I)

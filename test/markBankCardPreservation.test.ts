@@ -1137,6 +1137,7 @@ const SPANISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number
   2024: { higher: 33, ordinary: 25 },
   2023: { higher: 33, ordinary: 25 },
   2022: { higher: 33, ordinary: 25 },
+  2021: { higher: 33, ordinary: 0 },
 };
 const SPANISH_ADDED_TO_FROZEN_ID = /^es-202[1-5]-(?:hl-(?:l-|b-5$|c-|a1a-5$|a1b-4$)|ol-(?:l-|b-))/;
 const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in SPANISH_ADDED
