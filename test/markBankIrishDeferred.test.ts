@@ -20,6 +20,7 @@ import higher2024 from '../components/MarkBank/cards/irish/higher-2024-deferred-
 import ordinary2024 from '../components/MarkBank/cards/irish/ordinary-2024-deferred-authored.json';
 import higher2023 from '../components/MarkBank/cards/irish/higher-2023-deferred-authored.json';
 import ordinary2023 from '../components/MarkBank/cards/irish/ordinary-2023-deferred-authored.json';
+import ordinary2022 from '../components/MarkBank/cards/irish/ordinary-2022-deferred-authored.json';
 import { listeningExerciseKey } from '../components/MarkBank/sessionPlanning';
 import type { IrishCriterion, SecRubricCard } from '../types/markBank';
 
@@ -50,6 +51,9 @@ const SITTINGS: Record<string, Sitting> = {
     unprinted: [], byTable: ['prose-2b-a', 'prose-2b-b'] },
   'ordinary 2023': { file: ordinary2023 as Manifest, cards: 75, asks: 79,
     shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 13, literatureParts: 17 },
+    unprinted: [], byTable: [], keyedOptional: true },
+  'ordinary 2022': { file: ordinary2022 as Manifest, cards: 75, asks: 80,
+    shape: { listening: 6, composition: 9, wholeReading: 10, readingParts: 20, readingSlots: 0, literature: 12, literatureParts: 18 },
     unprinted: [], byTable: [], keyedOptional: true },
 };
 

@@ -26,6 +26,7 @@ import copy
 import difflib
 import hashlib
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -50,8 +51,8 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',)}
-AUDIO = {2025: 'available', 2024: 'available', 2023: 'available'}
+SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',), 2022: ('ordinary',)}
+AUDIO = {2025: 'available', 2024: 'available', 2023: 'available', 2022: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
 SHA = {  # (year, level, paper; 0 = the scheme)
@@ -722,6 +723,23 @@ def reading(sitting, base):
                 if late:
                     chunk = f'{late.group(1)} {late.group(3)} {late.group(2)}'
             item += [chunk, pages]
+        if not higher:
+            # 2022 prints B 3(b)'s "5 mharc" in the margin beside it, but the text layer stores it at the head of the next part
+            # ("4. (a) … (Alt 4) 5 mharc 3 mharc + 2 mharc = 5 mharc"). Read on the page: a price whose line lies above the
+            # next question's is this part's, and it is read beside this question. No word changes.
+            for index, item in enumerate(plan[:-1]):
+                following = plan[index + 1]
+                if re.search(r'\d ?mharc', item[4]):
+                    continue
+                stray = re.match(r'(.*?\(Alt \d\))\s+(\d+ mharc)\s+(\d+ mharc \+ \d+ mharc = \d+ ?mharc\b.*)$', following[4])
+                assert stray, (letter, item[0], item[1], item[4][:80])
+                page = sitting.docs[0][following[5][0] - 1]
+                words = page.get_text('words')
+                price = [w for w in words if w[4] == 'mharc' and w[0] > 400]
+                asked = [w for w in words if w[4] == f'{following[0]}.' and w[0] < 100]
+                assert price and asked and min(w[1] for w in price) < asked[0][1], (letter, item[0], item[1], 'the price is not printed above the next question')
+                item[4] = re.sub(r'^(.*?\?)\s+', lambda m: f'{m.group(1)} {stray.group(2)} ', item[4], count=1)
+                following[4] = f'{stray.group(1)} {stray.group(3)}'
         title = whole[f'reading-{letter.lower()}-q1']['sourceMaterial']['title']
         pages = whole[f'reading-{letter.lower()}-q1']['sourceMaterial']['pages']
         topic = 'irish-3-0' if letter == 'A' else 'irish-3-1'
@@ -784,21 +802,12 @@ def reading(sitting, base):
                 requirements = READING_PART
                 note = PART_NOTE
             else:
-                printed = re.search(r'5 ?mharc', chunk)  # 2023 prints "= 5mharc"
-                derived = None
-                if not printed:
-                    # 2022 prints no tariff beside B 3(b): the paper prices the question at 10 and the scheme prices its (a)
-                    # at 5, so (b) is the remaining 5. Read from those two printed numbers, never assumed.
-                    priced = [p for p, _, _, _ in by_question.get(q, [])]
-                    assert part == 'b' and priced == ['a'] and whole[f'reading-{letter.lower()}-q{q}']['totalMarks'] == 10, (letter, q, part, chunk[:80])
-                    derived = ('The scheme prints no tariff beside this part; the paper prices the question at 10 marc and the scheme '
-                               f'prices {q}(a) at 5 mharc, so {q}(b) carries the remaining 5.')
+                assert re.search(r'5 ?mharc', chunk), (letter, q, part, chunk[:80])  # 2023 prints "= 5mharc"
                 two = '3 mharc + 2 mharc' in chunk
                 permitted = [0, 3, 5] if (two or re.search(r'=\s?3 mharc', chunk)) else [0, 5]
                 crits = [criterion(part, 'Freagra', 5, [chunk, notes], permitted=permitted)]
                 mode, here, requirements = None, topic, READING_PART_OL
                 note = ('SEC allocation for this part' + (': first correct point 3, second 2 (0/3/5).' if two else '.')
-                        + (f' {derived}' if derived else '')
                         + f' Scheme: “{lang_read.group(0)}” — one deduction from each passage total (50), never inside a single part.')
             card = part_card(sitting, atlas, slug, ref, text, here, pages, spages, crits, requirements, note, src, extra_topics)
             cards.append(card)
@@ -1309,6 +1318,11 @@ def literature_ordinary(sitting, base):
             cuts.append(found[0] - (len(head.group(0)) if head else 0))
         # A piece never ends with the next part's label: 2022 labels Dís's (v) "(iv)", so it is cut at its words.
         pieces = [re.sub(r'\s*\((?:i{1,3}|iv|v)\)$', '', chunk[a:b].strip()) for a, b in zip(cuts, cuts[1:] + [len(chunk)])]
+        # 2022's text layer stores a part's heading before its prices and its tariff after them ("… véarsa a dó. Freagra samplach:
+        # Dhá phointe eolais = 4 mharc + 4 mharc (8 marc) • …"); the page prints the tariff beside the question, then the prices,
+        # then the samples under their heading. Read in that order. No word changes.
+        pieces = [re.sub(r'^(.*?)\s+(Freagra(?:í)? [Ss]amplach(?:a)?:)\s+([^•\uf0b7]*?=[^•\uf0b7]*?)\s+(\(\d+ m?h?arc\))\s+([•\uf0b7].*)$',
+                         r'\1 \4 \3 \2 \5', piece) for piece in pieces]
         if parts and parts[0][0] == 'i':
             # The first piece starts at the option's heading; its part starts at "(i)".
             pieces[0] = pieces[0][pieces[0].index('(i)'):] if '(i)' in pieces[0] else pieces[0]
@@ -1745,8 +1759,12 @@ def outputs(year, level):
                   reviewDate=REVIEWED_AT, audio=AUDIO[year], furnitureStripped=stripped,
                   cardCount=len(cards), censusAsks=len({leaf for found in covered.values() for leaf in found}))
     manifest = json.dumps(dict(review=review, covers=covered, cards=cards), ensure_ascii=False, indent=2) + '\n'
-    return {DECK / f'{level}-{year}-deferred-authored.json': manifest,
-            SCHEME_TEXT / f'{year}-{ll}-deferred.md': scheme_export(sitting)}
+    out = {DECK / f'{level}-{year}-deferred-authored.json': manifest,
+           SCHEME_TEXT / f'{year}-{ll}-deferred.md': scheme_export(sitting)}
+    # Close this sitting's documents now: PyMuPDF can trap with many documents left open across a full run.
+    for doc in sitting.docs.values():
+        doc.close()
+    return out
 
 
 def main():
@@ -1773,4 +1791,9 @@ def main():
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    code = main()
+    # PyMuPDF can trap while the interpreter tears down the many documents a full run leaves open (exit 133 after every
+    # output is written). Everything is written and flushed by now: leave without the teardown.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(code)

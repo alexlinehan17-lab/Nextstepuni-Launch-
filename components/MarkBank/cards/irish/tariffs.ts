@@ -951,9 +951,18 @@ export function parsePrintedAlternatives(source: IrishAnswerSource): IrishAnswer
   return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows }], directions } };
 }
 
+/** "(iii) Cén toradh a bhí ar an suirbhé …? 5 mharc Freagra Samplach: • …" (2022 deferred Ordinary 2A(c)(iii)): the question's
+ *  price printed bare in the margin, then unpriced samples under their heading. Read as the question's tariff ("(5 mharc)") for
+ *  the parse only; the rows keep the scheme's own words. Tried only where nothing else reads the criterion. */
+const BARE_PRICE = /([?.])\s+(\d+)\s*(m?h?arc)\b(?=\s+Freagra(?:í)? [Ss]amplach(?:a)?:\s*•)/;
+
 export function irishTariffsFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishTariffs(source);
   if (result.ok) return result.allocation;
   const alternatives = parsePrintedAlternatives(source);
-  return alternatives.ok ? alternatives.allocation : undefined;
+  if (alternatives.ok) return alternatives.allocation;
+  const bare = source.guidance.map(line => line.replace(BARE_PRICE, (_, stop: string, marks: string, unit: string) => `${stop} (${marks} ${unit})`));
+  if (bare.every((line, index) => line === source.guidance[index])) return undefined;
+  const reread = parseIrishTariffs({ ...source, guidance: bare });
+  return reread.ok && reread.allocation.parts.length === 1 && reread.allocation.parts[0].tariff === source.totalMarks ? reread.allocation : undefined;
 }
