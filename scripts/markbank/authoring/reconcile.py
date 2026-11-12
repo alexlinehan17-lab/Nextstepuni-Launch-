@@ -277,6 +277,11 @@ def reconcile_manifest(subject, census):
     orphans = []
     for cid, ref in cards:
         wanted = expected.get(cid)
+        # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
+        # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
+        if subject == 'irish' and bool(re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
+            orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
+            continue
         if wanted is None:
             orphans.append({'id': cid, 'ref': ref,
                             'why': f'card id is absent from the {subject} paper census'})

@@ -440,11 +440,11 @@
   "irish": {
     "cards": 2567,
     "contentHash": "ee829dbea48536f0",
-    "coveragePct": 100.0,
+    "coveragePct": 78.9,
     "covered": 2567,
     "excluded": 0,
-    "leaves": 2567,
-    "open": 0,
+    "leaves": 3252,
+    "open": 685,
     "orphans": 0,
     "papers": {
       "count": 30,
