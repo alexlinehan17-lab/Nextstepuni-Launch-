@@ -112,7 +112,9 @@ OPENS = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)')
 # nothing becomes a degree sign on the strength of a pattern alone.
 DEGREE_BLOCK = re.compile(r'<!-- markbank:degree-signs -->\n(.*?)'
                           r'<!-- /markbank:degree-signs -->\n?', re.S)
-DEGREE_O = re.compile(r'(\d)o(?=[\s,.;:)]|$)')
+# The markdown sometimes sets a space before the o as well: 2017 Ordinary
+# B-2(b) reads "Semicircle in plan (or 45 o lines)" where the PDF prints 45°.
+DEGREE_O = re.compile(r'(\d) ?o(?=[\s,.;:)]|$)')
 MARKER = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)\s*')
 
 
