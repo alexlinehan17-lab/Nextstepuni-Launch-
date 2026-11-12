@@ -78,11 +78,11 @@ DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).

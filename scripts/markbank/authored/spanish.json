@@ -1,5 +1,1489 @@
 [
  {
+  "id": "es-2020-hl-l-1-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "who-articles-hola-normally",
+  "questionRef": "2020 HL Section L Q1(a)",
+  "questionText": "Who are the articles in ‘Hola’ normally about?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Royal families",
+      "film stars",
+      "singers",
+      "models"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO (‘HOLA’ MAGAZINE CELEBRATES ITS 75TH BIRTHDAY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-1-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "does-exhibition-include",
+  "questionRef": "2020 HL Section L Q1(b)",
+  "questionText": "What does the exhibition include? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "videos",
+      "talks",
+      "fashion shows",
+      "a documentary"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO (‘HOLA’ MAGAZINE CELEBRATES ITS 75TH BIRTHDAY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-1-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "who-founded-magazine-where-exactly-did",
+  "questionRef": "2020 HL Section L Q1(c)",
+  "questionText": "Who founded the magazine? Where exactly did this happen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Who?: A recently-married couple",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Where?: Sitting-room / their house in Barcelona",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO (‘HOLA’ MAGAZINE CELEBRATES ITS 75TH BIRTHDAY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — LA REVISTA ‘HOLA’ CELEBRA SU 75 ANIVERSARIO",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-2-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "ana-botin-described-fortune-magazine",
+  "questionRef": "2020 HL Section L Q2(a)",
+  "questionText": "How is Ana Botín described by Fortune magazine?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The most powerful woman in the world",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA (INTERVIEW WITH ANA BOTÍN, SPANISH BANKER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-2-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "know-her-family-has-long-history",
+  "questionRef": "2020 HL Section L Q2(b)",
+  "questionText": "How do we know her family has a long history with the bank? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "She is the fifth generation of her family to hold this position",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "She is the fifth generation of her family",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "to hold this position",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA (INTERVIEW WITH ANA BOTÍN, SPANISH BANKER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-2-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-ana-join-instagram",
+  "questionRef": "2020 HL Section L Q2(c)",
+  "questionText": "Why did Ana join Instagram? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To understand better what interests and worries young people",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA (INTERVIEW WITH ANA BOTÍN, SPANISH BANKER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-2-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "has-ana-done-show-she-worried",
+  "questionRef": "2020 HL Section L Q2(d)",
+  "questionText": "What has Ana done to show she is worried about climate change? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She recorded a programme about its effects",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “watched a programme about its effects= 1m”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "attended the (World) Climate Summit (in Madrid last December)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA (INTERVIEW WITH ANA BOTÍN, SPANISH BANKER)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — ENTREVISTA CON ANA BOTÍN, LA BANQUERA ESPAÑOLA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-3-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "specific-types-plastic-surgery-does-pedro",
+  "questionRef": "2020 HL Section L Q3(a)",
+  "questionText": "What specific types of plastic surgery does Pedro perform?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Reconstruction and transplants of feet/ hands/ legs/ fingers/ toes",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Reconstruction",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "and transplants",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p3",
+      "verbatim": "of feet/ hands/ legs/ fingers/ toes",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL CIRUJANO, PEDRO CAVADAS (SPEAKING WITH THE SURGEON, PEDRO CAVADAS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON EL CIRUJANO, PEDRO CAVADAS",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-3-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-set-his-foundation-africa",
+  "questionRef": "2020 HL Section L Q3(b)",
+  "questionText": "Why did he set up his foundation in Africa?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To operate for free because (medical) care is very expensive there",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL CIRUJANO, PEDRO CAVADAS (SPEAKING WITH THE SURGEON, PEDRO CAVADAS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON EL CIRUJANO, PEDRO CAVADAS",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-3-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "does-finance-his-foundation",
+  "questionRef": "2020 HL Section L Q3(c)",
+  "questionText": "How does he finance his foundation? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "99% comes from his (daily) work in the hospital in Valencia",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “Spain”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "people give/donate money",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 2+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL CIRUJANO, PEDRO CAVADAS (SPEAKING WITH THE SURGEON, PEDRO CAVADAS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON EL CIRUJANO, PEDRO CAVADAS",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-3-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "known-miracle-doctor",
+  "questionRef": "2020 HL Section L Q3(d)",
+  "questionText": "Why is he known as the ‘Miracle Doctor’? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "He has been successful with very difficult cases",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "He has been successful",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "with very difficult cases",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "he carried out the first face transplant (in Spain)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL CIRUJANO, PEDRO CAVADAS (SPEAKING WITH THE SURGEON, PEDRO CAVADAS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — HABLANDO CON EL CIRUJANO, PEDRO CAVADAS",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-4-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "exactly-these-dogs-assist-police",
+  "questionRef": "2020 HL Section L Q4(a)",
+  "questionText": "How exactly do these dogs assist the police?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Find explosives",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "rescue people",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "look for drugs",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN (POLICE AND CIVIL GUARD DOGS ALSO RETIRE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-4-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "must-families-adopt-these-dogs",
+  "questionRef": "2020 HL Section L Q4(b)",
+  "questionText": "What must families do to adopt one of these dogs? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fill in a questionnaire",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "do an interview",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "allow visits to their home",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN (POLICE AND CIVIL GUARD DOGS ALSO RETIRE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-4-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "bruno-personality-described",
+  "questionRef": "2020 HL Section L Q4(c)",
+  "questionText": "How is Bruno’s personality described?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "very good",
+      "obedient",
+      "affectionate"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN (POLICE AND CIVIL GUARD DOGS ALSO RETIRE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-4-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "did-bruno-have-problems-adapting-life",
+  "questionRef": "2020 HL Section L Q4(d)",
+  "questionText": "Why did Bruno have problems adapting to life with Carmen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Not used to family life",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “2m for the first correct answer”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "but (rather) a life with a lot of physical activity",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 2+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN (POLICE AND CIVIL GUARD DOGS ALSO RETIRE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LOS PERROS DE LA GUARDIA CIVIL Y LA POLICÍA TAMBIÉN SE JUBILAN",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-5-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "there-many-job-offers-teachers-english",
+  "questionRef": "2020 HL Section L Q5(a)",
+  "questionText": "Why are there many job offers for teachers of English in Spain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Many (Spaniards) feel the need to improve their English to have more job prospects",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Many (Spaniards) feel the need to improve their English",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "to have more job prospects",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2+1 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENSEÑANDO INGLÉS EN ESPAÑA (TEACHING ENGLISH IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — ENSEÑANDO INGLÉS EN ESPAÑA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-5-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "needed-teach-english-well",
+  "questionRef": "2020 HL Section L Q5(b)",
+  "questionText": "What is needed to teach English well?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A recognised qualification",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “degree = 2m”; “to understand the language =1m”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to understand how the language works",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENSEÑANDO INGLÉS EN ESPAÑA (TEACHING ENGLISH IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — ENSEÑANDO INGLÉS EN ESPAÑA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-5-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "specialised-english-classes-available",
+  "questionRef": "2020 HL Section L Q5(c)",
+  "questionText": "What specialised English classes are available? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "tourism",
+      "medicine",
+      "law"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENSEÑANDO INGLÉS EN ESPAÑA (TEACHING ENGLISH IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — ENSEÑANDO INGLÉS EN ESPAÑA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-5-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "can-find-extra-work-english-teacher",
+  "questionRef": "2020 HL Section L Q5(d)",
+  "questionText": "How can you find extra work as an English teacher? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "publish your profile on-line",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “locations on their own = 1m”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "put an advertisement in supermarkets/cafes/universities",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENSEÑANDO INGLÉS EN ESPAÑA (TEACHING ENGLISH IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — ENSEÑANDO INGLÉS EN ESPAÑA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-6-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "has-red-weather-alert-been-issued",
+  "questionRef": "2020 HL Section L Q6(a)",
+  "questionText": "Why has a red weather alert been issued for Alicante and Murcia? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "(Strong) winds and (torrential) rain which will cause flooding",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-6-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "will-weather-like-rest-spain",
+  "questionRef": "2020 HL Section L Q6(b)",
+  "questionText": "What will the weather be like in the rest of Spain? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Cloudy (skies); (with possibility of intense) fog in the North",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-6-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "maximum-minimum-temperatures-forecast",
+  "questionRef": "2020 HL Section L Q6(c)",
+  "questionText": "What maximum and minimum temperatures are forecast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Max.: 30",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Min.: 23",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 4.",
+  "stem": "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — EL TIEMPO",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-7-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "ski-season-sierra-nevada",
+  "questionRef": "2020 HL Section L Q7(a)",
+  "questionText": "What is said about the ski season in Sierra Nevada? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(One of) the longest in Europe",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “largest = 0m”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "lasts from (end of) November until (beginning of) May",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 1+2 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SIERRA NEVADA – TIERRA DE SOL Y NIEVE (SIERRA NEVADA – LAND OF SUN AND SNOW)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — SIERRA NEVADA – TIERRA DE SOL Y NIEVE",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-7-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "advantages-sierra-nevada-has-ski-resort",
+  "questionRef": "2020 HL Section L Q7(b)",
+  "questionText": "Mention two advantages Sierra Nevada has as a ski resort.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "has the most days of sun in Europe",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cheap",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 2+1 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SIERRA NEVADA – TIERRA DE SOL Y NIEVE (SIERRA NEVADA – LAND OF SUN AND SNOW)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — SIERRA NEVADA – TIERRA DE SOL Y NIEVE",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-7-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "skiing-saturdays",
+  "questionRef": "2020 HL Section L Q7(c)",
+  "questionText": "What is said about skiing on Saturdays? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is possible to ski at night",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "weather-permitting",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SIERRA NEVADA – TIERRA DE SOL Y NIEVE (SIERRA NEVADA – LAND OF SUN AND SNOW)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — SIERRA NEVADA – TIERRA DE SOL Y NIEVE",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2020-hl-l-7-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "items-should-pack-suitcase",
+  "questionRef": "2020 HL Section L Q7(d)",
+  "questionText": "Name three items you should pack in your suitcase.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "jacket",
+      "scarf",
+      "sunglasses",
+      "swimsuit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. SIERRA NEVADA – TIERRA DE SOL Y NIEVE (SIERRA NEVADA – LAND OF SUN AND SNOW)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — SIERRA NEVADA – TIERRA DE SOL Y NIEVE",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2020 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2020 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
   "id": "es-2020-hl-a1a-1-a",
   "subjectId": "spanish",
   "level": "higher",
@@ -1711,6 +3195,697 @@
    "sourceFileid": "LC012ALP015IV",
    "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
    "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2020-hl-b-5",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "topicId": "spanish-6-0",
+  "conceptId": "compramos-demasiada-ropa-jovenes-pueden-cambiar",
+  "questionRef": "2020 HL Section B Q5",
+  "questionText": "Compramos demasiada ropa.\nO\nLos jóvenes pueden cambiar el mundo.",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where no marks are awarded for Content, (i.e. effort totally irrelevant), no marks will be awarded for Language.",
+    "No marks will be awarded for phrases taken directly from the article."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content/Communication",
+     "maxMarks": 25,
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Top",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "High level of coherence",
+        "Clear argumentation",
+        "Communicative intention fulfilled",
+        "Little or no irrelevant material"
+       ]
+      },
+      {
+       "label": "Middle",
+       "marks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Comprehensible to Spanish speaker",
+        "Communicative intention more or less respected",
+        "Some irrelevant material"
+       ]
+      },
+      {
+       "label": "Bottom",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "guidance": [
+        "Lack of coherence",
+        "Spanish speaker would have difficulty understanding",
+        "Communicative intention not fulfilled",
+        "A lot of irrelevant material"
+       ]
+      }
+     ],
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 25,
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Top",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Idiomatic Spanish",
+        "Good level of vocabulary",
+        "Few grammatical/spelling mistakes",
+        "Correct usage of tenses"
+       ]
+      },
+      {
+       "label": "Middle",
+       "marks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Vocabulary quite good - generally adequate and appropriate",
+        "Verbs generally correct",
+        "Not too many spelling/grammatical mistakes"
+       ]
+      },
+      {
+       "label": "Bottom",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "guidance": [
+        "Problems with vocabulary – limited range of vocabulary",
+        "Most verbs incorrect",
+        "Many spelling mistakes"
+       ]
+      }
+     ],
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Choose a band for Content/Communication and one for Language, then the mark within each band."
+   ]
+  },
+  "schemePages": [
+   11
+  ],
+  "stem": "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "LA MODA RÁPIDA — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceFileid": "LC012ALP015IV",
+   "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+   "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2020-hl-c-1-a",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "topicId": "spanish-6-1",
+  "conceptId": "huelva-shop-return-item-have-bought",
+  "questionRef": "2020 HL Section C Q1(a)",
+  "questionText": "You are in Huelva and you go to a shop to return an item you have bought. Complete in SPANISH your side of the following DIALOGUE.\nPilar: ¿En qué puedo ayudarte?\nTú: Explain that you bought a present for your mother here yesterday, a grey jacket. However, when you returned to your apartment you realized that it was too big.\nPilar: Bueno. ¿Quieres devolverla?\nTú: Yes, here it is. Tell her that you would like the same jacket but in size forty. Tell her this is your mother’s favourite shop in Spain.\nPilar: ¿Estás aquí de vacaciones?\nTú: Tell her you are here with a group of friends. You have just finished your exams and are spending a week here. You visited the city last year with your family.\nPilar: ¿Y qué es lo que más te gusta de Huelva?\nTú: Explain that you love the weather, of course, as it is much better than in Ireland. The people are also very friendly, like the Irish.\nPilar: Entonces, ¿te gustaría vivir aquí?\nTú: Your parents want you to go to university in Ireland. You would prefer to spend a year in Huelva first to improve your Spanish because you want to study languages in the future.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Five ‘turns’. Allow a maximum of 6 marks each. (5 x 6m = 30 marks)",
+    "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+    "6 marks: Communicative intention fulfilled. (Point made and fully developed for letter). Good level of vocabulary.",
+    "4 - 5 marks: Communicative intention more or less respected. Verbs generally correct.",
+    "2 - 3 marks: Some communicative intention realised. Quite a few grammatical errors and spelling mistakes. Incorrect verb usage/ tenses wrong.",
+    "2 marks: For correct translation alone of suggested point for letter.",
+    "1 mark: Very small part of communicative intention conveyed.",
+    "0 marks: No communication of message.",
+    "Question 1. When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5.should be broadly adhered to."
+   ],
+   "criteria": [
+    {
+     "id": "turn-1",
+     "label": "First turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-2",
+     "label": "Second turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-3",
+     "label": "Third turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-4",
+     "label": "Fourth turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-5",
+     "label": "Fifth turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be marked and marks awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each turn you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Attempt either (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 1 (a) — answer in Spanish",
+   "pages": [
+    10,
+    11
+   ],
+   "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2020-hl-c-1-b",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "topicId": "spanish-6-2",
+  "conceptId": "recent-newspaper-article-states-that-spanish",
+  "questionRef": "2020 HL Section C Q1(b)",
+  "questionText": "A recent newspaper article states that Spanish food is very popular with all nationalities. You decide to write a LETTER / EMAIL in SPANISH to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with all or some of them. You should make five relevant points and each of these points should be expanded and developed.)\n• Food is an important part of a country’s culture.\n• Spanish food is very popular in Ireland.\n• The Spanish diet is very varied and healthy.\n• Tourists should try traditional dishes like paella when in Spain.\n• Eating in Spanish restaurants is an opportunity to meet Spanish people.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "• There are five points to be made. Allow a maximum of 6 marks each. (5 x 6m = 30 marks)",
+    "• Note that each point should be developed and expanded.",
+    "• Letter/email can be loosely based on the suggestions given.",
+    "• Candidates can make their own points and need not use the guidelines given.",
+    "• Correct register for letter/email is expected.",
+    "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+    "6 marks: Communicative intention fulfilled. (Point made and fully developed for letter). Good level of vocabulary.",
+    "4 - 5 marks: Communicative intention more or less respected. Verbs generally correct.",
+    "2 - 3 marks: Some communicative intention realised. Quite a few grammatical errors and spelling mistakes. Incorrect verb usage/ tenses wrong.",
+    "2 marks: For correct translation alone of suggested point for letter.",
+    "1 mark: Very small part of communicative intention conveyed.",
+    "0 marks: No communication of message.",
+    "Question 1. When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5.should be broadly adhered to."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-5",
+     "label": "Fifth point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be marked and marks awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12
+  ],
+  "stem": "Attempt either (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 1 (b) — answer in Spanish",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2020-hl-c-2-a",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "topicId": "spanish-6-3",
+  "conceptId": "school-exchange-valladolid-diary-entry-spanish",
+  "questionRef": "2020 HL Section C Q2(a)",
+  "questionText": "You are on a school exchange in Valladolid. Write a DIARY ENTRY in SPANISH mentioning all of the following points:\n− Say how you feel after your first day in the school.\n− Describe two things you did at school.\n− Mention one problem you had.\n− Explain how the school is different to your school.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Look for four valid well-made points. Allow a maximum of 5 marks each. (4 x 5m = 20 marks)",
+    "TOTAL MARKS: 20 MARKS (Mark each point individually.)",
+    "5 marks Communicative intention fulfilled Good level of vocabulary Verbs correct",
+    "4 marks Communicative intention more or less respected Quite good level of vocabulary Verbs generally correct",
+    "3 marks Communicative intention more or less respected There may be quite a few errors",
+    "2 marks Some communicative intention fulfilled Some correct vocabulary Quite a few errors",
+    "1 mark Very small amount of message conveyed",
+    "0 marks Message not communicated"
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be marked and marks awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Answer either (a) DIARY ENTRY or (b) NOTE.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 2 (a) — answer in Spanish",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2020-hl-c-2-b",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "topicId": "spanish-6-4",
+  "conceptId": "school-exchange-valladolid-staying-with-spanish",
+  "questionRef": "2020 HL Section C Q2(b)",
+  "questionText": "You are on a school exchange in Valladolid, staying with your Spanish friend Paco. Leave a NOTE in SPANISH for your friend including all of the following points:\n− Say that his friend David rang this morning.\n− Tell him that the visit to the museum is next Wednesday.\n− The bus will leave the school at ten o’clock sharp.\n− There is a café in the museum where we will have lunch.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "There are four points to be communicated. Allow maximum of 5 marks each. (4 x 5m = 20 marks)",
+    "[No development of points required]",
+    "TOTAL MARKS: 20 MARKS (Mark each point individually.)",
+    "5 marks Communicative intention fulfilled Good level of vocabulary Verbs correct",
+    "4 marks Communicative intention more or less respected Quite good level of vocabulary Verbs generally correct",
+    "3 marks Communicative intention more or less respected There may be quite a few errors",
+    "2 marks Some communicative intention fulfilled Some correct vocabulary Quite a few errors",
+    "1 mark Very small amount of message conveyed",
+    "0 marks Message not communicated"
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "• Should a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be marked and marks awarded only for the higher scoring of the two.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Answer either (a) DIARY ENTRY or (b) NOTE.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 2 (b) — answer in Spanish",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
   }
  },
  {
