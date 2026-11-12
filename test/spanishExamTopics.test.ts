@@ -163,23 +163,33 @@ describe('Spanish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     expect(spanishCrosswalk.summary).toMatchObject({
       localPaperVariants: 136,
-      localPhysicalMappings: 1155,
-      distinctStudentFacingQuestions: 616,
+      // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions.
+      localPhysicalMappings: 1163,
+      distinctStudentFacingQuestions: 620,
       referenceMappedLocalQuestions: 446,
-      retainedLocalQuestions: 709,
+      retainedLocalQuestions: 717,
       hostedPaperAnchorMaps: 136,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
       newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 246,
+      newlyAddedPhysicalMappings: 254,
     });
     expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1155);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1163);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
     expect(topicsForPaper('spanish', 2020, 'ordinary', 'iv', 'LC012GLP000IV.pdf')?.q.map(q => q.n))
       .toEqual(['1', '2', '3', '4', '5', 'B1', 'B2A', 'B2B']);
+    // Higher Section B Q5 and Section C Q2 are cards of their own wherever
+    // the Mark Bank has carded the sitting (es_atlas.py files them there).
+    for (const year of [2020, 2026]) {
+      expect(topicsForPaper('spanish', year, 'higher', 'ev', 'LC012ALP000EV.pdf')?.q)
+        .toEqual(expect.arrayContaining([
+          { n: 'B5', primary: 'spanish-6-0' },
+          { n: 'C2', primary: 'spanish-6-3', secondary: 'spanish-6-4' },
+        ]));
+    }
     expect(topicsForPaper('spanish', 2026, 'ordinary', 'ev', 'LC012GLP000EV.pdf')?.q)
       .toEqual(expect.arrayContaining([
         { n: 'B1', primary: 'spanish-6-2' },
@@ -230,7 +240,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,155 cards', () => {
+  it('ships a finite paper-only fallback for all 1,163 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -251,9 +261,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 616 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 620 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 616,
+      questions: 620,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,

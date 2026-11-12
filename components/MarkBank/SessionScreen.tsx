@@ -100,10 +100,10 @@ import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
 import ReligiousEducationRubricPanel, { religiousEducationMarks, type ReligiousEducationScoreId } from './ReligiousEducationRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
-import { frenchMarks, type FrenchScoreId } from './frenchRubric';
+import { frenchMarks, rubricLanguage, type FrenchScoreId } from './frenchRubric';
 import HistoryEssayPanel from './HistoryEssayPanel';
 import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
-import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
+import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
@@ -2484,7 +2484,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
-      : assessmentCard.rubric.system === 'french' ? 'French marking grid'
+      : assessmentCard.rubric.system === 'french' ? `${rubricLanguage(assessmentCard.subjectId)} marking grid`
       : assessmentCard.rubric.system === 'business' ? 'Business allocation'
       : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
     : 'rubric';
@@ -3006,7 +3006,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!printedQuestionReplacesText && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+            {!printedQuestionReplacesText && (audioMaterial && listeningScoredAlone(assessmentCard) ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />

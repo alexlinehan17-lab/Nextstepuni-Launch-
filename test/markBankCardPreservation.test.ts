@@ -1316,6 +1316,18 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2010: { higher: 58, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
+ * identity hashes above). The languages lane (2026-11-05) cards every further
+ * sitting on top, one sitting per commit, pinned here per year and level and
+ * never folded into the frozen hashes. */
+const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 74, ordinary: 55 },
+  2020: { higher: 73, ordinary: 51 },
+};
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
+const spanishAddedTotal = Object.values(SPANISH_ADDED)
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -1969,6 +1981,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2169,6 +2182,18 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further Spanish sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...SPANISH_HIGHER, ...SPANISH_ORDINARY];
+    for (const [year, counts] of Object.entries(SPANISH_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`es-${year}-`))).toBe(true);
+    }
+    expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -2271,6 +2296,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2010 Ordinary, 27 asks, 27 band-grid cards: 24,087.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
+        : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -2303,7 +2329,7 @@ describe('Mark Bank card preservation', () => {
         + chemistryAdded.size - chemistryWithdrawnShipped.length
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
-        + historyEssayIds.size);
+        + historyEssayIds.size + spanishAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
