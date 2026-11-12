@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
-import { assertJapaneseConditionLabel, assertJapaneseNaebaException, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { assertJapaneseConditionLabel, assertJapaneseNaebaException, assertJapaneseSelectedContent, assertJapanese2010ManualResponses, assertJapaneseSourceOnlyFigure, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
 import { assertJapaneseVariantSources, assertJapanese2011ListeningCorrection, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -63,6 +63,9 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
     const evidence = card.sourceEvidence;
     assertJapaneseConditionLabel(card, review);
     assertJapaneseNaebaException(card, review);
+    assertJapaneseSelectedContent(card, review);
+    assertJapanese2010ManualResponses(card, review);
+    assertJapaneseSourceOnlyFigure(card, review, figures[card.questionFigureKey]);
     assertJapanese2011ListeningCorrection(card, review, higher2011Review, audio.find(record => record.year === 2011));
     if (card.answerLanguageRule) {
       const rule = card.answerLanguageRule;
@@ -101,8 +104,9 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       const key = card.questionFigureKey;
       const figure = figures[key];
       if (!figure || hash(resolve(root, 'public', figure.src.replace(/^\//, '')), 'md5') !== figure.md5) throw new Error(`${card.id}: question crop changed`);
-      card.questionFigure = { candId: key, src: figure.src, srcHash: figure.md5, alt: figure.alt, attribution: figure.attribution, lettersVisible: [], includesPrompt: true };
+      card.questionFigure = { candId: key, src: figure.src, srcHash: figure.md5, alt: figure.alt, attribution: figure.attribution, lettersVisible: [], includesPrompt: card.questionFigureIncludesPrompt !== false };
       delete card.questionFigureKey;
+      delete card.questionFigureIncludesPrompt;
     }
     assertJapaneseVariantSources(card, review.selectors, unprintedAnswer);
     const answers = japaneseAnswerRows(card).flatMap(row => {

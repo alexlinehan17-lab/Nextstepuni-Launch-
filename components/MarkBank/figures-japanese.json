@@ -5017,5 +5017,117 @@
       ]
     },
     "md5": "01e91c89b2ddbe947d9e5187ac53426f"
+  },
+  "ja-2010-hl-web-buttons": {
+    "src": "/exam-figures/japanese/ja-2010-hl-web-buttons.png",
+    "alt": "Original webpage with numbered buttons",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 2,
+      "region": [
+        0.045,
+        0.015,
+        0.965,
+        0.98
+      ]
+    },
+    "md5": "a874c991538a61c8c9e573abd3289082"
+  },
+  "ja-2010-hl-2d-meaning": {
+    "src": "/exam-figures/japanese/ja-2010-hl-2d-meaning.png",
+    "alt": "1. Write the meaning of the following Kanji in English.\nE.g.  火 tine/fire\n(i)    外国人 ______________ (ii)     町 ______________\n(iii)   車 ______________ (iv) 川 ______________",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.045,
+        0.67,
+        0.965,
+        0.835
+      ]
+    },
+    "md5": "b41d5966c28eac8fd76b3df4696a375c"
+  },
+  "ja-2010-hl-2d-reading": {
+    "src": "/exam-figures/japanese/ja-2010-hl-2d-reading.png",
+    "alt": "2. Write the following Kanji in Hiragana.\nE.g. 入れる（ い  ）れる\n(i) 読む  ( ＿＿＿＿＿)    む (ii)  行く( ＿＿＿＿＿)    く\n(iii)  見る( ＿＿＿＿＿)   る (iv)  聞く( ＿＿＿＿＿) く",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.045,
+        0.837,
+        0.965,
+        0.963
+      ]
+    },
+    "md5": "75a7ea87367ddf09f06566fc520ed8e9"
+  },
+  "ja-2010-hl-3c-kanji": {
+    "src": "/exam-figures/japanese/ja-2010-hl-3c-kanji.png",
+    "alt": "C: Circle the correct reading for the following Kanji as they appear in the above text.  Give the meaning of the Kanji in English as in the example.\nMíniú/Meaning\nm.sh./e.g. 日本 a. にほん b. にもと  c. にちほん d. ひほん An tSeapáin/ Japan\n1.    雨 a. ゆき b.  あめ c. さむい d. あつい _________\n2. 左 a. みぎ b. きた c. みなみ d. ひだり _________\n3. 勉強 a. べんきょう    b. がっこう c. かんじ d. しゅくだい   _________\n4.    朝             a. よる b. ひる c. あさ d. つき _________\n5.    電車 a. くるま b. でんわ                c. でんき d. でんしゃ          _________\n6.    駅 a. えき b. みせ c. えん d. くに _________\n7.    時間   a. とけい b. とき c. じかん d. しかん        _________",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.47
+      ]
+    },
+    "md5": "3c6b756d8e88b442509c21785dbc9df0"
+  },
+  "ja-2010-hl-la": {
+    "src": "/exam-figures/japanese/ja-2010-hl-la.png",
+    "alt": "Complete the table below in English.  Some information has been filled in for you.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.07,
+        0.035,
+        0.98,
+        0.77
+      ]
+    },
+    "md5": "1d3bbbb0ef0d1d9d165493a8f8649de5"
+  },
+  "ja-2010-hl-lc2-map": {
+    "src": "/exam-figures/japanese/ja-2010-hl-lc2-map.png",
+    "alt": "3. Label the following buildings in the space provided using the corresponding number on the map.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.07,
+        0.58,
+        0.98,
+        0.955
+      ]
+    },
+    "md5": "4abd1e9e0398176cc1bc5d678d04870a"
+  },
+  "ja-2010-hl-ld-table": {
+    "src": "/exam-figures/japanese/ja-2010-hl-ld-table.png",
+    "alt": "4. Training schedule and location of John’s preferred club:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 5,
+      "region": [
+        0.07,
+        0.595,
+        0.97,
+        0.72
+      ]
+    },
+    "md5": "b7a55a0e3773b20a19d29a9e9d0b6e69"
   }
 }
