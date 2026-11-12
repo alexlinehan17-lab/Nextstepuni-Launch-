@@ -245,11 +245,11 @@
   "dcg": {
     "cards": 1220,
     "contentHash": "d5fef9e9ce4c95e4",
-    "coveragePct": 100.0,
+    "coveragePct": 94.3,
     "covered": 1021,
     "excluded": 0,
-    "leaves": 1021,
-    "open": 0,
+    "leaves": 1083,
+    "open": 62,
     "orphans": 0,
     "papers": {
       "count": 66,

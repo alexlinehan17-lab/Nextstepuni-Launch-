@@ -24,6 +24,7 @@ REFERENCE_PATH = ROOT / "data" / "examTopics" / f"{SUBJECT_ID}.json"
 CROSSWALK_PATH = ROOT / "data" / "examTopics" / f"{SUBJECT_ID}-curriculum-crosswalk.json"
 BASELINE_PATH = ROOT / "test" / "fixtures" / "designAndCommunicationGraphicsTopicQuestionBaseline.json"
 CORPUS_ROOT = ROOT / "paper-trail-corpus" / "exampapers"
+DEFERRED_ROOT = ROOT / "paper-trail-corpus" / "deferredexams"
 HOSTED_ROOT = ROOT / "public" / "paper-anchors"
 
 LEVEL_CODE = {"higher": "A", "ordinary": "G"}
@@ -76,6 +77,25 @@ REVIEWED_OMISSIONS: dict[str, list[str]] = {
     "ordinary|2024|single|3": [O + "interpenetration"],
     "ordinary|2025|section-a|2": [O + "conic-sections"],
     "ordinary|2026|section-a|1": [O + "conic-sections"],
+}
+
+# The SEC's deferred sittings in the archive: 2022 and 2023 Higher, each a
+# Section A sheet and a Sections B and C booklet (deferredexams/<year>/
+# LC562ALP014EV.pdf and LC562ALP039EV.pdf); no Ordinary, nothing for 2024 or
+# 2025. Each booklet is its own Atlas paper, its file id the index's
+# "LC562ALP014EV-deferred.pdf", numbered as June's, so its questions never
+# replace or merge with June's question of the same number. English only: the
+# 2023 Irish edition is deferred with every Irish-version paper. A sitting
+# joins the Atlas with its Mark Bank cards (test/paperTrailSyllabus.test.ts,
+# ADMITTED_DEFERRED), so this lists the deferred sittings carded.
+DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ()
+
+# The reference heads every deferred question but Section C's assembly, C-5,
+# in both years; each was read on its own booklet ("Details of a beam balance
+# weighing scales", 2022; "a pipe vice for holding round bars", 2023, both a
+# sectional elevation of an assembly), as REVIEWED_OMISSIONS reads June's.
+DEFERRED_REVIEWED_OMISSIONS: dict[str, list[str]] = {
+    f"higher|{year}|deferred|single|8": [H + "assemblies"] for year in (2022, 2023)
 }
 
 # A-sheet rectangles are stable quadrants on the rotated A3 page as rendered
@@ -145,6 +165,33 @@ def exact_topics(reference: dict) -> dict[str, list[str]]:
     return result
 
 
+def deferred_topics(reference: dict) -> dict[str, list[str]]:
+    """exact_topics for the deferred headings, keyed level|year|deferred|paperKey|n."""
+    result: dict[str, list[str]] = {}
+    for level, level_data in reference["levels"].items():
+        for topic in level_data["topics"]:
+            for heading in topic["officialQuestionHeadings"]:
+                year, sitting, section, printed = parse_heading(heading)
+                if sitting != "deferred":
+                    continue
+                paper_key, number = local_slot(section, printed)
+                key = f"{level}|{year}|deferred|{paper_key}|{number}"
+                result.setdefault(key, [])
+                if topic["id"] not in result[key]:
+                    result[key].append(topic["id"])
+    return result
+
+
+def deferred_files(level: str, year: int) -> tuple[Path, Path]:
+    code = LEVEL_CODE[level]
+    candidates = sorted((DEFERRED_ROOT / str(year)).glob(f"LC562{code}LP*EV.pdf"))
+    section_a = [path for path in candidates if len(PdfReader(path).pages) <= 3]
+    section_bc = [path for path in candidates if len(PdfReader(path).pages) > 3]
+    if len(section_a) != 1 or len(section_bc) != 1:
+        raise ValueError(f"{level}|{year} deferred: expected one Section-A and one B/C PDF, found {candidates}")
+    return section_a[0], section_bc[0]
+
+
 def corpus_files(level: str, lang: str, year: int) -> tuple[Path, Path | None]:
     code = LEVEL_CODE[level]
     candidates = sorted((CORPUS_ROOT / str(year)).glob(f"LC562{code}LP*{lang.upper()}.pdf"))
@@ -175,7 +222,7 @@ def question_card(number: str, topic_ids: list[str], crosswalk: dict[str, list[s
 
 
 def component(fileid: str) -> str:
-    match = re.search(r"LP([A-Z0-9]{3})(?:EV|IV)\.pdf$", fileid, flags=re.I)
+    match = re.search(r"LP([A-Z0-9]{3})(?:EV|IV)(?:-deferred)?\.pdf$", fileid, flags=re.I)
     if not match:
         raise ValueError(f"Unparseable DCG fileid {fileid}")
     return match.group(1)
@@ -306,18 +353,64 @@ def main() -> None:
                     existing[identity] = paper
                 write_map(year, a_path.name, section_a=True)
 
-    if len(papers) != 132:
-        raise ValueError(f"Expected 132 DCG physical variants, found {len(papers)}")
-    if sum(len(paper["q"]) for paper in papers) != 792:
+    june = [paper for paper in papers if not paper["fileid"].endswith("-deferred.pdf")]
+    if len(june) != 132:
+        raise ValueError(f"Expected 132 DCG physical variants, found {len(june)}")
+    if sum(len(paper["q"]) for paper in june) != 792:
         raise ValueError("Expected 792 DCG physical question mappings")
+
+    # The deferred sittings, after every June paper, so a June record never
+    # moves. Their topics come from the reference's deferred headings alone.
+    deferred_by_card = deferred_topics(reference)
+    overlap = set(deferred_by_card).intersection(DEFERRED_REVIEWED_OMISSIONS)
+    if overlap:
+        raise ValueError(f"Reviewed deferred omissions now present in the reference: {sorted(overlap)}")
+    deferred_by_card.update(DEFERRED_REVIEWED_OMISSIONS)
+    for year, level in DEFERRED_SITTINGS:
+        a_path, bc_path = deferred_files(level, year)
+        for path, paper_key, numbers in (
+            (bc_path, "single", range(1, 9)),
+            (a_path, "section-a", range(1, 5)),
+        ):
+            fileid = f"{path.stem}-deferred.pdf"
+            identity = "|".join([level, "ev", str(year), paper_key, fileid])
+            if identity not in existing:
+                q = [
+                    question_card(
+                        str(number),
+                        deferred_by_card[f"{level}|{year}|deferred|{paper_key}|{number}"],
+                        crosswalk,
+                    )
+                    for number in numbers
+                ]
+                paper = {
+                    "subjectId": SUBJECT_ID,
+                    "level": level,
+                    "lang": "ev",
+                    "year": year,
+                    "fileid": fileid,
+                    "paperKey": paper_key,
+                    "q": q,
+                }
+                papers.append(paper)
+                existing[identity] = paper
+            write_map(year, fileid, section_a=paper_key == "section-a")
+    deferred = [paper for paper in papers if paper["fileid"].endswith("-deferred.pdf")]
+    if len(deferred) != 2 * len(DEFERRED_SITTINGS):
+        raise ValueError(f"Expected {2 * len(DEFERRED_SITTINGS)} deferred DCG variants, found {len(deferred)}")
 
     for paper in papers:
         expected = 4 if paper["paperKey"] == "section-a" else 8
         if len(paper["q"]) != expected:
             raise ValueError(f"{paper_identity(paper)}: expected {expected} cards")
         for question in paper["q"]:
-            key = logical_key(paper["level"], paper["year"], paper["paperKey"], question["n"])
-            if key not in topics_by_card:
+            if paper["fileid"].endswith("-deferred.pdf"):
+                key = f"{paper['level']}|{paper['year']}|deferred|{paper['paperKey']}|{question['n']}"
+                known = deferred_by_card
+            else:
+                key = logical_key(paper["level"], paper["year"], paper["paperKey"], question["n"])
+                known = topics_by_card
+            if key not in known:
                 raise ValueError(f"Unclassified DCG card {key}")
 
     TAGS_PATH.write_text(json.dumps(papers, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

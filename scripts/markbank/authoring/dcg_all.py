@@ -68,6 +68,10 @@ CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')
              (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
              (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'),
              (2010, 'hl'), (2010, 'ol')})
+# The SEC's deferred sittings carded (dcg_paper.DEFERRED_SITTINGS lists those
+# in the archive). Each is its own census paper, 'Deferred'; its cards are
+# "dcg-<year>-<level>-deferred-..." and cite "... — Deferred sitting".
+CARDED_DEFERRED = set()
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -97,15 +101,21 @@ ATLAS_TAGS = os.path.join(ROOT, 'scripts', 'paper-trail', 'topic-tags', 'tags',
 
 @functools.lru_cache(maxsize=None)
 def atlas_topics():
-    """{(year, level word, paperKey, n): [primary, secondary...]} for EV papers."""
+    """{(year, level word, paperKey, n): [primary, secondary...]} for EV papers.
+
+    A deferred sitting's booklet ("LC562ALP014EV-deferred.pdf") is numbered as
+    June's, so its questions are keyed with a fifth element, 'deferred', and
+    never replace June's question of the same number."""
     with open(ATLAS_TAGS, encoding='utf-8') as fh:
         tags = json.load(fh)
     out = {}
     for paper in tags:
         if paper['lang'] != 'ev':
             continue
+        tail = ('deferred',) if paper['fileid'].endswith('-deferred.pdf') else ()
         for q in paper['q']:
-            out[(paper['year'], paper['level'], paper['paperKey'], q['n'])] = \
+            out[(paper['year'], paper['level'], paper['paperKey'], q['n'])
+                + tail] = \
                 [q['primary']] + ([q['secondary']] if q.get('secondary') else [])
     return out
 
@@ -318,13 +328,14 @@ def parent_words(P, section, q, covered):
     return out
 
 
-def card_id(year, level, section, q, covered, ordinal, many):
+def card_id(year, level, section, q, covered, ordinal, many, sitting='main'):
     letters = sorted({k[2] for k in covered if k[2]})
     tail = letters[0] if len(letters) == 1 else ''
     romans = sorted({k[3] for k in covered if k[3]})
     if len(romans) == 1 and len(letters) <= 1:
         tail += romans[0]
-    base = f'dcg-{year}-{level}-{section.lower()}{q}{tail}'
+    deferred = '-deferred' if sitting == 'deferred' else ''
+    base = f'dcg-{year}-{level}{deferred}-{section.lower()}{q}{tail}'
     return f'{base}-{ordinal}' if many else base
 
 
@@ -541,11 +552,11 @@ UPRIGHT = {(0, 1): 270, (0, -1): 90, (1, 0): 0, (-1, 0): 180}
 
 
 @functools.lru_cache(maxsize=None)
-def contour_map_page(year, level):
+def contour_map_page(year, level, sitting='main'):
     """(one-based page, clockwise turn) of the contour map in the Section A
     booklet, or None."""
     import pymupdf
-    P = DP.load(year, level, SUBJECT)
+    P = DP.load(year, level, SUBJECT, sitting)
     for path in P.files:
         with pymupdf.open(path) as doc:
             prints_a = any(DP.QHEAD.match(r[3]) and r[3].startswith('A')
@@ -570,12 +581,15 @@ def contour_map_page(year, level):
     return None
 
 
-def contour_map(year, level):
-    found = contour_map_page(year, level)
+def contour_map(year, level, sitting='main'):
+    found = contour_map_page(year, level, sitting)
     if found is None:
         return None
     page, turn = found
     word = 'Higher' if level == 'hl' else 'Ordinary'
+    # A deferred card's map is its own sitting's Section A booklet: build-deck
+    # resolves the label against the deferred index entry for a deferred card.
+    deferred = ', deferred examination' if sitting == 'deferred' else ''
     return {
         'kind': 'source-illustration',
         'label': 'Contour Map',
@@ -585,8 +599,8 @@ def contour_map(year, level):
         **({'pageRotations': {str(page): turn}} if turn else {}),
         'sourceLabel': 'Section A',
         'attribution': f'SEC Leaving Certificate Design and Communication '
-                       f'Graphics {year} {word} Level, Section A — © State '
-                       f'Examinations Commission.',
+                       f'Graphics {year} {word} Level{deferred}, Section A — '
+                       f'© State Examinations Commission.',
         'presentationNote': 'The back page of the Section A booklet, exactly '
                             'as it was printed for the examination.',
     }
@@ -608,11 +622,14 @@ def figure_index():
         with open(path, encoding='utf-8') as fh:
             manifest = json.load(fh)
         for key in manifest:
-            m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)-paper-sec([ABC])'
+            m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)(-deferred)?-paper-sec([ABC])'
                              r'-q(\d)-art', key)
             if m:
-                figs[(int(m.group(1)), m.group(2).lower(), m.group(3),
-                      int(m.group(4)))] = key
+                # A deferred sitting's crop is keyed with a fifth element, so
+                # it never stands in for June's question of the same number.
+                figs[(int(m.group(1)), m.group(2).lower(), m.group(4),
+                      int(m.group(5)))
+                     + (('deferred',) if m.group(3) else ())] = key
     return figs
 
 
@@ -685,20 +702,27 @@ def author(bind_figures=True):
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
-        if (year, level) not in CARDED:
+        sitting = 'deferred' if paper.get('paper') == 'Deferred' else 'main'
+        # Everything a deferred card says about its sitting: the fifth key
+        # element its Atlas question and crop are filed under, and the
+        # citation's last words.
+        tail = ('deferred',) if sitting == 'deferred' else ()
+        cite = ' — Deferred sitting' if sitting == 'deferred' else ''
+        if (year, level) not in (CARDED if sitting == 'main'
+                                 else CARDED_DEFERRED):
             refused['this sitting is censused and not yet carded'] += \
                 paper['leafCount']
             continue
-        P = DP.load(year, level, SUBJECT)
+        P = DP.load(year, level, SUBJECT, sitting)
         leaves = {tuple(leaf['key']) for leaf in paper['leaves']}
         texts = {ask.key: ask.full_text for ask in P.asks()}
         assert set(texts) == leaves, \
             f'{year} {level}: the authored leaf set is not the census leaf set'
-        if not has_scheme(year, level, SUBJECT):
+        if not has_scheme(year, level, SUBJECT, sitting):
             for key in sorted(leaves):
                 refused['no marking scheme is published for this sitting'] += 1
             continue
-        S = DcgScheme(year, level, SUBJECT)
+        S = DcgScheme(year, level, SUBJECT, sitting)
         wording = letter_only = forced = order_only = 0
 
         for qkey in sorted(P.questions):
@@ -763,7 +787,7 @@ def author(bind_figures=True):
             # is decided by how many cards the question makes and not by how
             # many share one address.
             bases = collections.Counter(
-                card_id(year, level, section, q, cov, 1, False)
+                card_id(year, level, section, q, cov, 1, False, sitting)
                 for _u, cov in pairing)
 
             question_carded = False
@@ -772,11 +796,12 @@ def author(bind_figures=True):
             for index, (unit, covered) in enumerate(pairing, 1):
                 scope = unit.letter or scope
                 ref = ref_for(year, level, section, q, covered, leaves)
-                base = card_id(year, level, section, q, covered, 1, False)
+                base = card_id(year, level, section, q, covered, 1, False,
+                               sitting)
                 many = per_address[tuple(covered)] > 1
                 ordinal[base] += 1
                 cid = card_id(year, level, section, q, covered,
-                              ordinal[base], bases[base] > 1)
+                              ordinal[base], bases[base] > 1, sitting)
 
                 def note(reason, detail=''):
                     verdicts.append({'year': year, 'level': level, 'ref': ref,
@@ -861,14 +886,15 @@ def author(bind_figures=True):
                     note('files under no syllabus heading', why)
                     continue
                 tags = atlas_topics().get(
-                    (year, LEVEL_WORD[level]) + atlas_address(section, q))
+                    (year, LEVEL_WORD[level]) + atlas_address(section, q)
+                    + tail)
                 if not tags:
                     note('the Topic Atlas lists no question at this '
                          'address', ref)
                     continue
                 if topic not in tags:
                     topic = tags[0]
-                figure = figures.get((year, level, section, q))
+                figure = figures.get((year, level, section, q) + tail)
                 if cardlint.NAMES_LETTERS.search(f'{stem} {question}') \
                         and not cardlint.INVITES_DRAWING.search(question):
                     note('names a lettered part this author cannot decode',
@@ -894,6 +920,7 @@ def author(bind_figures=True):
                     title = label or unit.title
                     if label or many:
                         piece_ref = f'{ref} — {title}'
+                    piece_ref += cite
                     if label:
                         piece_id = f'{cid}-{piece_no}'
                     extra = presentation if not question_carded else []
@@ -919,9 +946,9 @@ def author(bind_figures=True):
                                         'notation': f'({marks})'},
                         'totalMarks': marks,
                         'rows': rows,
-                        **({'sourceMaterial': contour_map(year, level)}
+                        **({'sourceMaterial': contour_map(year, level, sitting)}
                            if section == 'C' and qq['option'] == 'Geologic Geometry'
-                           and contour_map(year, level) else {}),
+                           and contour_map(year, level, sitting) else {}),
                         'notes': (f'The scheme heads this {title!r} and prices '
                                   f'it at {marks - sum(s.marks for s in extra)}. '
                                   'Construction lines must be shown on all '
