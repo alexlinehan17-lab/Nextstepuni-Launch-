@@ -173,18 +173,18 @@ describe('Spanish exam-topic registry', () => {
       // +6: 2014 Higher B5, C2 and A1b4, both editions.
       // +5: 2013 Higher B5 and C2, both editions, and A1b4 (English edition).
       // +6: 2012 Higher B5, C2 and A1b4, both editions.
-      localPhysicalMappings: 1240,
-      distinctStudentFacingQuestions: 663,
+      localPhysicalMappings: 1244,
+      distinctStudentFacingQuestions: 665,
       referenceMappedLocalQuestions: 462,
-      retainedLocalQuestions: 778,
+      retainedLocalQuestions: 782,
       hostedPaperAnchorMaps: 136,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
       newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 331,
+      newlyAddedPhysicalMappings: 335,
     });
     expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1240);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1244);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -192,7 +192,7 @@ describe('Spanish exam-topic registry', () => {
       .toEqual(['1', '2', '3', '4', '5', 'B1', 'B2A', 'B2B']);
     // Higher Section B Q5 and Section C Q2 are cards of their own wherever
     // the Mark Bank has carded the sitting (es_atlas.py files them there).
-    for (const year of [2020, 2026, 2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]) {
+    for (const year of [2020, 2026, 2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]) {
       expect(topicsForPaper('spanish', year, 'higher', 'ev', 'LC012ALP000EV.pdf')?.q)
         .toEqual(expect.arrayContaining([
           { n: 'B5', primary: 'spanish-6-0' },
@@ -249,7 +249,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,240 cards', () => {
+  it('ships a finite paper-only fallback for all 1,244 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -270,9 +270,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 663 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 665 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 663,
+      questions: 665,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,
