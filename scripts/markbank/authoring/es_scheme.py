@@ -302,7 +302,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation', 'lead_points', 'bracket_parts')
+                 'head_notation', 'lead_points', 'bracket_parts', 'raw')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -796,10 +796,12 @@ class EsScheme:
         # component the examiner pays on its own. Read only where the brackets
         # account for the whole tariff and nothing priced follows the last one.
         bracket_parts = None
+        # The part's printed lines joined, square brackets kept: es_all.py
+        # reads a bracketed price on one of several answers from it.
+        raw = ' '.join(' '.join((b or '').split()) for b in body
+                       if b and not PAGE.match(b.strip()))
+        raw = PART_TARIFF.sub('', raw).strip()
         if not quota and len(points) == 1 and total:
-            raw = ' '.join(' '.join((b or '').split()) for b in body
-                           if b and not PAGE.match(b.strip()))
-            raw = PART_TARIFF.sub('', raw).strip()
             segs = re.split(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', raw)
             if len(segs) >= 5 and not segs[-1].strip(' .,;'):
                 pieces = [(segs[i].strip(' ,;'), int(segs[i + 1]))
@@ -811,7 +813,8 @@ class EsScheme:
                    title=self.titles.get((section, q)), terms=terms, total=total,
                    quota=quota, options=options, points=points, notes=notes,
                    line=line, fault=fault, head_notation=notation,
-                   lead_points=lead_points, bracket_parts=bracket_parts)
+                   lead_points=lead_points, bracket_parts=bracket_parts,
+                   raw=raw)
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

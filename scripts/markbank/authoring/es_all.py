@@ -75,6 +75,14 @@ FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
 DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl')}
+# The sittings whose Listening Comprehension Test is carded: each ask with the
+# official SEC recording (data/spanishAudio.json, verified), scored on its own
+# as French listening is (coordinator ruling, 11 Nov 2026).
+LISTENING_CARDED = {(2026, 'hl')}
+# The sittings whose written production (Higher B Q5 and Section C, Ordinary
+# Section B) is carded on the scheme's own marking grid (es_writing.py), in the
+# French writing-rubric shape (coordinator ruling, 11 Nov 2026).
+WRITING_CARDED = {(2026, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -326,11 +334,14 @@ def _sitting(year, level, cards, refuse):
     grids = S.grids
     leaves = P.leaves()
 
-    for q, letter, text, _page in P.aural_asks():
-        ref = ref_for(year, level, 'L', q, letter, None)
-        refuse('the ask needs the recording, which no card can carry', ref,
-               f'{year} {level.upper()} Listening Comprehension Test, '
-               f'Question {q}: {AUDIO_EVIDENCE}')
+    if (year, level) in LISTENING_CARDED:
+        _listening(year, level, P, S, cards, refuse)
+    else:
+        for q, letter, text, _page in P.aural_asks():
+            ref = ref_for(year, level, 'L', q, letter, None)
+            refuse('the ask needs the recording, which no card can carry', ref,
+                   f'{year} {level.upper()} Listening Comprehension Test, '
+                   f'Question {q}: {AUDIO_EVIDENCE}')
 
     whole_carded = set()
     for key in sorted(leaves, key=lambda k: tuple(str(x) for x in k)):
@@ -344,6 +355,14 @@ def _sitting(year, level, cards, refuse):
         if section in ('B', 'C') and (
                 key in grids or (section, q, None, None) in grids
                 or (section, q, letter, None) in grids):
+            if (year, level) in WRITING_CARDED:
+                if level == 'hl' and section == 'B':
+                    # One card for the printed choice of statements.
+                    whole_carded.add((section, q))
+                    letter = None
+                card = _writing(year, level, P, section, q, letter)
+                cards.append(card)
+                continue
             line = (grids.get(key) or grids.get((section, q, letter, None))
                     or grids.get((section, q, None, None)))
             refuse('the scheme prints a band grid for this ask, not an answer',
@@ -464,6 +483,212 @@ def _sitting(year, level, cards, refuse):
         cards.append(card)
 
 
+AUDIO = os.path.join(ROOT, 'data', 'spanishAudio.json')
+AURAL_FILEID = {'hl': 'LC012ALPA00EV.pdf', 'ol': 'LC012GLPA00EV.pdf'}
+# Wingdings 0xFC, the tick the listening booklet prints in "Tick (✓) the
+# correct answer"; its text layer carries the private-use code point.
+TICK = '\uf0fc'
+
+
+def _listening_rule(S):
+    """The scheme's own language rule for the listening test, verbatim: the
+    lines between "LISTENING COMPREHENSION (80 MARKS)" and its first item
+    ("All answers must be in English." and the penalty for answering in
+    Spanish)."""
+    out, on = [], False
+    for line in S.lines:
+        s_ = ' '.join(line.split())
+        if not on:
+            on = bool(re.match(r'^LISTENING\s+COMPREHENSION\b', s_, re.I))
+            continue
+        if not s_ or s_.startswith('## Page'):
+            continue
+        if re.match(r'^\d\s*\.', s_):
+            break
+        out.append(s_)
+    return ' '.join(out)
+
+
+def _listening(year, level, P, S, cards, refuse):
+    """One card per listening ask, answered from the official recording.
+
+    The ask is the booklet's, set out line by line as printed (a tick-box ask
+    keeps its options, which become the card's printed choices); the marking
+    rows are the scheme's, read by es_scheme like the reading asks; the head
+    the booklet prints above the question (the kind of recording, how often it
+    is played, the item's title) is the stem; and the recording is the SEC's
+    own, bound from data/spanishAudio.json, where every year's file is pinned
+    by size, duration and hash.
+    """
+    from es_atlas import tags_for
+    with open(AUDIO, encoding='utf-8') as fh:
+        recording = next(r for r in json.load(fh) if r['year'] == year)
+    fileid = AURAL_FILEID[level]
+    assert fileid in recording['paperFileids'], (year, fileid)
+    tags = tags_for(year, LEVEL_WORD[level], fileid)
+    heads = P.aural_heads()
+    rule = _listening_rule(S)
+    by_key = S.by_key()
+    for q, letter, lines, page in P.aural_ask_lines():
+        ref = ref_for(year, level, 'L', q, letter, None)
+        ask = by_key.get(('L', q, letter, None))
+        if ask is None or ask.fault:
+            refuse('the scheme prices no answer for this listening ask', ref,
+                   f'{year} {level.upper()} scheme, listening Q{q}({letter}): '
+                   f'{ask.fault if ask else "no entry"}')
+            continue
+        rows = _rows_for(ask, 'English', rule, stepped=True)
+        if not isinstance(rows, list):
+            refuse(rows or 'the scheme states a direction to the examiner where the '
+                   'answer would be, not an answer', ref,
+                   f'{year} {level.upper()} scheme, listening Q{q}({letter})')
+            continue
+        # A rule fragment the text layer leaves on its own line ("]") is not
+        # printed matter of the ask.
+        lines = [l.replace(TICK, '✓') for l in lines if re.search(r'\w', l)]
+        choices = None
+        tick = next((i for i, l in enumerate(lines) if re.match(r'^Tick\b', l)), None)
+        if tick is not None:
+            choices = lines[tick + 1:]
+            assert 2 <= len(choices) <= 5, (ref, lines)
+        question = '\n'.join(lines)
+        head_lines, _head_page = heads.get(q, ([], page))
+        tag = tags.get(str(q))
+        if tag is None:
+            refuse('the Topic Atlas holds no question for this listening item', ref,
+                   f'{year} {level.upper()} {fileid}: no Atlas question {q}')
+            continue
+        kind = re.match(r'^([A-ZÁÉÍÓÚÑ ]+):', head_lines[0]) if head_lines else None
+        title = next((l for l in head_lines if l.isupper() and len(l) > 8
+                      and not re.match(r'^[A-ZÁÉÍÓÚÑ ]+:', l)
+                      and not l.startswith('(')),
+                     kind.group(1).strip() if kind else f'Question {q}')
+        card = {
+            'id': card_id(year, level, 'L', q, letter, None),
+            'subjectId': SUBJECT,
+            'level': LEVEL_WORD[level],
+            'year': year,
+            'section': 'L',
+            'topicId': tag['primary'],
+            'conceptId': concept_for(lines[0]),
+            'questionRef': ref,
+            'questionText': question,
+            'tariffModel': {'kind': 'fixed'},
+            'totalMarks': ask.total,
+            'rows': rows,
+            'notes': (f'The scheme prices this ask '
+                      f'{"+".join(map(str, ask.terms or [])) or ask.total} marks; the '
+                      f'listening booklet prints it on page {page}.'),
+            'stem': ' '.join(' '.join(head_lines).split()),
+            'sourceMaterial': {
+                'kind': 'source-text',
+                'label': 'LISTENING COMPREHENSION TEST',
+                'title': f'Question {q} — {title}'[:90],
+                'pages': [page],
+                # Resolved by build-deck.mjs from Paper Trail's index: the
+                # listening booklet is its own SEC document.
+                'sourceLabel': 'Aural Paper',
+                'attribution': (f'SEC Spanish {year} {LEVEL_TITLE[level]} Level '
+                                f'Listening Comprehension Test — © State '
+                                f'Examinations Commission.'),
+                'presentationNote': ('The question page of the listening booklet. '
+                                     'Play the recording, then answer.'),
+            },
+            'audioMaterial': {**recording['source'],
+                              'label': f'Question {q} · listening'},
+        }
+        if choices:
+            card['questionChoices'] = choices
+        cards.append(card)
+
+
+# Which writing task a printed alternative is: the paper names it ("Write a
+# diary entry", "Leave her a note", "Complete … the dialogue", "write a
+# letter/email"), and each has its own published topic.
+WRITING_TOPIC = (
+    (re.compile(r'\bdiary\b', re.I), 'spanish-6-3'),
+    (re.compile(r'\bnote\b', re.I), 'spanish-6-4'),
+    (re.compile(r'\bdialogue\b', re.I), 'spanish-6-1'),
+    (re.compile(r'\bletter\b|\be-?mail\b', re.I), 'spanish-6-2'),
+)
+ORDINALS = ('First', 'Second', 'Third', 'Fourth', 'Fifth')
+
+
+def _writing(year, level, P, section, q, letter):
+    """A written-production ask as a rubric card on the scheme's own grid."""
+    import es_writing as W
+    t = W.task(P, section, q, letter)
+    ref = ref_for(year, level, section, q, letter, None)
+    level_title = LEVEL_TITLE[level]
+    practice = ['Write your answer in Spanish, then place it on the published grid. '
+                'You are marked on this task alone, and where it asks you to choose '
+                'statements, turns or points, on the ones you chose.']
+    if level == 'hl' and section == 'B':
+        g = W.grid_b5(year, level)
+        topic = 'spanish-6-0'
+        rubric = {'system': 'french', 'taskRequirements': g['requirements'],
+                  'criteria': g['criteria'], 'markingGuideNote': ''}
+        practice.append('Choose a band for Content/Communication and one for Language, '
+                        'then the mark within each band.')
+        pages = g['pages']
+    else:
+        if level == 'hl':
+            g = W.grid_c(year, level, q, letter)
+            requirements = (g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
+                            + g['direction'])
+            note = '\n'.join(g['guidelines'])
+        else:
+            g = W.grid_ol_b(year, level, q, letter)
+            requirements = g['lead'] + g['ladder']
+            note = '\n'.join(g['section'])
+        topic = next(tid for rx, tid in WRITING_TOPIC if rx.search(t['question'][:200]))
+        unit = 'turn' if topic == 'spanish-6-1' else 'point'
+        criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',
+                     'maxMarks': g['per'], 'permittedMarks': list(range(g['per'] + 1)),
+                     'guidance': []} for i in range(1, g['n'] + 1)]
+        assert g['n'] * g['per'] == g['total'], (ref, g['n'], g['per'], g['total'])
+        rubric = {'system': 'french', 'taskRequirements': requirements,
+                  'criteria': criteria, 'markingGuideNote': note}
+        practice.append(f'Mark each {unit} you wrote on its own against the scheme\'s '
+                        f'ladder above.')
+        pages = g['pages']
+    rubric['practiceNotes'] = practice
+    total = sum(c['maxMarks'] for c in rubric['criteria'])
+    card = {
+        'id': card_id(year, level, section, q, letter, None),
+        'kind': 'rubric',
+        'subjectId': SUBJECT,
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': CARD_SECTION[section],
+        'topicId': topic,
+        'conceptId': concept_for(t['question']),
+        'questionRef': ref,
+        'questionText': t['question'],
+        'totalMarks': total,
+        'rubric': rubric,
+        'schemePages': pages,
+    }
+    if t['stem']:
+        card['stem'] = t['stem']
+    if level == 'hl' and section == 'B':
+        # The opinion piece is linked to the article it follows.
+        region = P.regions['B']
+        card['sourceMaterial'] = source_material(P, 'B', region, 'Spanish', level, year)
+    else:
+        card['sourceMaterial'] = {
+            'kind': 'source-text',
+            'label': 'WRITTEN PRODUCTION',
+            'title': f'Section {section} Question {q}{f" ({letter})" if letter else ""} '
+                     f'— answer in Spanish',
+            'pages': t['pages'],
+            'attribution': (f'SEC Spanish {year} {level_title} Level examination '
+                            f'paper — © State Examinations Commission.'),
+            'presentationNote': 'The task exactly as the examination printed it.',
+        }
+    return card
+
+
 def _direction_rows(ask, language, rule):
     """The one unprinted row for an ask whose scheme prints a direction.
 
@@ -504,6 +729,98 @@ def _direction_rows(ask, language, rule):
     return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED,
              'marks': ask.total, 'unprinted': True, 'permittedMarks': steps,
              'contextNote': note}]
+
+
+# A label the scheme prints in front of each of several answers on one line:
+# "Who?: A recently-married couple Where?: Sitting-room …", "Day: Friday
+# Date: 19th June", "Max.: 30 Min.: 23".
+ANSWER_LABEL = re.compile(r'\s+(?=[A-Z][a-z]{1,8}\.?\??:\s)')
+ROMAN_MARK = re.compile(r'\s*\((?:i|ii|iii|iv|v)\)\s*')
+
+
+PRICE_BRACKET = re.compile(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]')
+NOTE_BRACKET = re.compile(r'\[(?!\s*\d{1,2}\s*m(?:arks?)?\s*\])[^\]]*\]')
+
+
+def _bracketed(raw, text, marks):
+    """[(component, marks)] where the scheme prices part of ONE answer in a
+    square bracket, or None.
+
+    "He has been successful [1m] with very difficult cases; … (2+2m)": the
+    first answer is worth 2 and its first half alone 1. "Reconstruction [1m]
+    and transplants [1m] of feet/ hands/ legs/ fingers/ toes (2+1m)": the
+    brackets price two components and the rest of the answer takes the rest of
+    its tariff. The answer is found in the part's printed lines with its
+    brackets in place; each bracket closes a component priced at the bracket's
+    own figure, and what follows the last bracket is priced at what the
+    answer's printed tariff leaves. Never a split the scheme does not print.
+    """
+    if not raw or not PRICE_BRACKET.search(raw):
+        return None
+    clean = NOTE_BRACKET.sub(' ', raw)
+    gap = r'\s*(?:\[\s*\d{1,2}\s*m(?:arks?)?\s*\]\s*)?'
+    words = text.split()
+    m = re.search(gap.join(map(re.escape, words)) + r'(?:\s*\[\s*\d{1,2}\s*m(?:arks?)?\s*\])?',
+                  clean)
+    if not m or not PRICE_BRACKET.search(m.group(0)):
+        return None
+    segs = PRICE_BRACKET.split(m.group(0))
+    parts = [(' '.join(segs[i].split()).strip(' ,;'), int(segs[i + 1]))
+             for i in range(0, len(segs) - 1, 2)]
+    rest = ' '.join(segs[-1].split()).strip(' ,;.')
+    used = sum(n for _t, n in parts)
+    if rest:
+        if marks - used <= 0:
+            return None
+        parts.append((rest, marks - used))
+    elif used != marks:
+        return None
+    if len(parts) < 2 or not all(t for t, _n in parts):
+        return None
+    return parts
+
+
+def _component_row(rid, text, marks, parts, note=None):
+    """One answer whose components are claimed on their own printed marks."""
+    sums = {0}
+    for _t, n in parts:
+        sums |= {x + n for x in sums}
+    row = {'id': rid, 'kind': 'criterion', 'verbatim': text, 'marks': marks,
+           'permittedMarks': sorted(sums),
+           'parts': [{'id': f'p{i}', 'verbatim': t, 'marks': n, 'permittedMarks': [0, n]}
+                     for i, (t, n) in enumerate(parts, start=1)]}
+    if note:
+        row['contextNote'] = note
+    return row
+
+
+def _separate_answers(text, n):
+    """The n answers one printed line holds, cut where the scheme separates
+    them, or None where it prints one answer whose marks it splits.
+
+    Tried in order, and taken only where the cut gives exactly as many pieces
+    as the tariff has terms: the scheme's semicolons ("Water; electricity;
+    toilets; showers (1+1+1+1m)"); a label before each answer ("Max: 27 Min:
+    18 (2+2m)"); romans ("(i) has the most days of sun in Europe (ii) cheap
+    (2+1m)"); commas ("Children, elderly, people with illnesses (2+2+2m)").
+    Each piece is a slice of the scheme's line, never reworded.
+    """
+    cuts = (
+        [p.strip() for p in text.split(';')],
+        ANSWER_LABEL.split(text),
+        ROMAN_MARK.split(text),
+        [p.strip() for p in text.split(',')],
+        # "Tennis and skiing (2+2m)": two one-word answers. Only where every
+        # piece is a word or two; "Reconstruction and transplants of feet"
+        # is one answer.
+        [p for p in text.split(' and ')] if all(
+            len(p.split()) <= 2 for p in text.split(' and ')) else [],
+    )
+    for pieces in cuts:
+        pieces = [p.strip() for p in pieces if p and p.strip()]
+        if len(pieces) == n:
+            return pieces
+    return None
 
 
 def _rows_for(ask, language, rule, stepped=False):
@@ -569,10 +886,14 @@ def _rows_for(ask, language, rule, stepped=False):
         return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': points[0][0],
                  'marks': ask.total, 'permittedMarks': sorted(sums),
                  'parts': parts, 'contextNote': note}]
+    if stepped and len(points) == 1 and not ask.bracket_parts:
+        parts = _bracketed(ask.raw, points[0][0], ask.total)
+        if parts and not (len(ask.terms or []) > 1 and _separate_answers(points[0][0], len(ask.terms))):
+            return [_component_row('r-1', points[0][0], ask.total, parts, note)]
     if stepped and len(points) == 1 and ask.terms and len(ask.terms) > 1:
         text = points[0][0]
-        pieces = [p.strip() for p in text.split(';') if p.strip()]
-        if len(pieces) == len(ask.terms):
+        pieces = _separate_answers(text, len(ask.terms))
+        if pieces:
             # Several answers on one printed line, each priced: "Water;
             # electricity; toilets; showers (1+1+1+1m)". The semicolons are
             # the scheme's own separators, so each answer is its own claim row.
@@ -593,9 +914,16 @@ def _rows_for(ask, language, rule, stepped=False):
         return 'the scheme states more separate answers than one card may show'
     if sum(m or 0 for _t, m in points) != ask.total:
         return 'the scheme\'s answers do not add up to the tariff it prints'
-    return [{'id': f'r-{i}', 'kind': 'point', 'verbatim': text, 'marks': marks,
-             **({'contextNote': note} if i == 1 else {})}
-            for i, (text, marks) in enumerate(points, start=1)]
+    rows = []
+    for i, (text, marks) in enumerate(points, start=1):
+        parts = _bracketed(ask.raw, text, marks) if stepped and len(points) > 1 else None
+        if parts:
+            rows.append(_component_row(f'r-{i}', text, marks, parts,
+                                       note if i == 1 else None))
+            continue
+        rows.append({'id': f'r-{i}', 'kind': 'point', 'verbatim': text, 'marks': marks,
+                     **({'contextNote': note} if i == 1 else {})})
+    return rows
 
 
 # ---------------------------------------------------------------- report ----

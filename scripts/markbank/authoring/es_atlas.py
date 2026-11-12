@@ -142,6 +142,22 @@ def _label_q(label):
     return int(m.group(1)) if m else None
 
 
+def _writing_n(level, section, q, letter):
+    """The Atlas number of a written-production card, or None (filed by place).
+
+    Ordinary Section B (letter; note or diary) and Higher B Q5 and C Q2 are
+    Atlas questions of their own, numbered as printed. Higher C Q1 is the
+    answer map's "Section C · Written production" question, found by place.
+    """
+    if level == 'ol' and section == 'B':
+        return 'B1' if q == 1 else f'B{q}{(letter or "").upper()}'
+    if level == 'hl' and (section, q) == ('B', 5):
+        return 'B5'
+    if level == 'hl' and (section, q) == ('C', 2):
+        return 'C2'
+    return None
+
+
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',
           ('hl', 'aural'): 'LC012ALPA00EV.pdf', ('ol', 'aural'): 'LC012GLPA00EV.pdf'}
 REF = re.compile(r'^(\d{4}) (HL|OL) Section (\w+) Q(\d*)((?:\([a-z]+\))*)')
@@ -173,9 +189,18 @@ def resolve(cards):
         fileid = FILEID[(level, kind)]
         found = anchors(year, fileid)
         tags = tags_for(year, 'higher' if level == 'hl' else 'ordinary', fileid)
+        written_n = _writing_n(level, section, q, letter)
         if kind == 'aural':
             hit = next((a for a in found if a['n'] == str(q)), None)
             reason = None if hit else f'no anchor n={q}'
+        elif written_n:
+            # Written production is numbered in the Atlas by its PRINTED
+            # address ("B1", "B2A"; Higher "B5", "C2"), not by the answer
+            # map's running order, and those cards carry no answer-map anchor:
+            # the card is filed under the Atlas question of that number.
+            hit = {'n': written_n, 'label': f'Section {section} · Question {q}'
+                                             f'{f"({letter})" if letter else ""}'}
+            reason = None
         else:
             leaves = P.leaves()
             hits = [v for k, v in sorted(leaves.items(), key=lambda kv: str(kv[0]))

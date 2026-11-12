@@ -963,12 +963,46 @@ class EsPaper:
         return None
 
     # -- the listening booklet ----------------------------------------------
-    def aural_asks(self):
-        """[(q, letter, text, page)] for the Listening Comprehension Test.
+    def aural_heads(self):
+        """{question: (the lines printed above its first part, page)}.
 
-        Read for the census only: an ask here is answerable from the recording
-        alone, and es_all.py excludes every one of them with that evidence.
+        What the booklet prints between a question's number and its "(a)":
+        the kind of recording and how it will be played ("ANUNCIO: This will
+        be played three times right through …") and the item's own title in
+        Spanish and English. It is the only context a listening card has
+        before the student presses play.
         """
+        if not self.aural_path:
+            return {}
+        rows = _rows(self.aural_path)
+        if self.old:
+            rows = _clean_old(rows, OLD_AURAL_SLOT)
+        out = {}
+        q = None
+        for pno, _x, text in rows:
+            if AURAL_END.match(text) or (
+                    self.old and re.match(r'^END OF LISTENING', text, re.I)):
+                break
+            if FURNITURE.match(text):
+                continue
+            m = AURAL_Q.match(text) or (self.old and OLD_AURAL_Q.match(text))
+            if m:
+                q = int(m.group(1))
+                rest = AURAL_Q.match(text) and AURAL_Q.match(text).group(2).strip()
+                if self.old:
+                    rest = re.sub(r'^\d\s*\.\s*', '', text)
+                out[q] = ([rest] if rest else [], pno + 1)
+                continue
+            if q is None or q not in out:
+                continue
+            if AURAL_PART.match(text):
+                q = None
+                continue
+            out[q][0].append(text)
+        return out
+
+    def _aural_parts(self, lines_only=False):
+        """[q, letter, lines, page] for every printed part of the listening booklet."""
         if not self.aural_path:
             return []
         out = []
@@ -983,6 +1017,11 @@ class EsPaper:
         for pno, _x, text in rows:
             if AURAL_END.match(text) or (
                     self.old and re.match(r'^END OF LISTENING', text, re.I)):
+                break
+            # The 2021- booklets print the same closing line before their
+            # copyright notice. The census never needed to stop at it (no part
+            # follows it); a card's question text must not carry it.
+            if lines_only and re.match(r'^END OF LISTENING', text, re.I):
                 break
             if FURNITURE.match(text):
                 continue
@@ -999,9 +1038,22 @@ class EsPaper:
             elif (cur is not None and not text.startswith('*')
                     and not ANSWER_LINE.match(text)):
                 cur[2].append(text)
-        return [(qq, letter, ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
-                for qq, letter, lines, page in out]
+        return out
 
+    def aural_asks(self):
+        """[(q, letter, text, page)] for the Listening Comprehension Test.
+
+        Read for the census: every printed part of the booklet is an ask.
+        """
+        return [(qq, letter, ANSWER_LINES.sub('', ' '.join(' '.join(lines).split())), page)
+                for qq, letter, lines, page in self._aural_parts()]
+
+    def aural_ask_lines(self):
+        """[(q, letter, [printed lines], page)]: each listening ask as the
+        booklet sets it out, line by line, for the card. A tick-box ask prints
+        its options one to a line under "Tick (✓) the correct answer:"."""
+        return [(qq, letter, [ANSWER_LINES.sub('', ' '.join(l.split())).strip() for l in lines], page)
+                for qq, letter, lines, page in self._aural_parts(lines_only=True)]
 
 def main():
     ap = argparse.ArgumentParser()
