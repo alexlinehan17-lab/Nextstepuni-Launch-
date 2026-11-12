@@ -4,8 +4,9 @@
  *
  * The deferred Irish sittings (2022-2025, Higher and Ordinary, Papers 1 and 2): their printed asks, read from each
  * paper's own text layer (scripts/markbank/authoring/irish_paper_asks.py) into the census beside June's, keyed
- * 'Deferred Paper N'. Dry run (2026-11-11): nothing is carded yet. Hand counts: 2023 HL Paper 1 (33) and 2022 OL
- * Paper 2 (51), read off the rendered pages. CI has neither PyMuPDF nor the corpus: the census test runs where both are.
+ * 'Deferred Paper N'. Hand counts: 2023 HL Paper 1 (33) and 2022 OL Paper 2 (51), read off the rendered pages. 2025 and
+ * 2024 are carded (irish_deferred.py, markBankIrishDeferred.test.ts); each card's manifest lists the asks it covers.
+ * CI has neither PyMuPDF nor the corpus: the census test runs where both are.
  */
 import { describe, expect, it } from 'vitest';
 import { existsSync } from 'node:fs';
@@ -41,5 +42,10 @@ print(json.dumps([[p['year'], p['level'], p['paper'], [l['key'][0] for l in p['l
     const ids = (key: string) => papers.find(([year, level, paper]) => `${year} ${level} ${paper}` === key)![3];
     expect(ids('2023 hl Deferred Paper 1').filter(id => id.includes('-cluastuiscint-'))).toHaveLength(24);
     expect(ids('2022 ol Deferred Paper 2').filter(id => id.includes('-litriocht-3a-b-i-'))).toHaveLength(4);
+    // An answer line's label printed last on a page ("(i) (ii)" above the running head) is not a part of the question.
+    expect(ids('2025 hl Deferred Paper 1')).toContain('irish-2025-hl-deferred-p1-cluastuiscint-piosa-a-do-3');
+    expect(ids('2024 hl Deferred Paper 1')).toContain('irish-2024-hl-deferred-p1-cluastuiscint-comhra-a-haon-an-dara-mir-2');
+    expect(ids('2022 hl Deferred Paper 1')).toContain('irish-2022-hl-deferred-p1-cluastuiscint-fogra-a-do-2');
+    expect(papers.flatMap(([, , , paperIds]) => paperIds).filter(id => /-cluastuiscint-.*-\d-ii$/.test(id))).toEqual([]);
   });
 });

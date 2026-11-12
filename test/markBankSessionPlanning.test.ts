@@ -84,8 +84,9 @@ describe('Mark Bank session counts stay consistent across every screen', () => {
   });
 
   test('presents sibling listening cards as one visible exercise without deleting their ids', () => {
+    // June's two fógraí; the deferred sitting's (another recording) are another exercise.
     const announcements = IRISH_HIGHER.filter(card =>
-      card.year === 2025 && card.topicId === 'irish-1-0');
+      card.year === 2025 && card.topicId === 'irish-1-0' && !card.id.includes('-deferred-'));
 
     expect(announcements).toHaveLength(2);
     expect(visibleSessionExercises(announcements).map(card => card.id)).toEqual([

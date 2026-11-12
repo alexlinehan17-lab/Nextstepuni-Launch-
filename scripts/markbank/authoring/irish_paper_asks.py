@@ -22,6 +22,7 @@ ROM = re.compile(r'^\((i|ii|iii|iv|v|vi)\)(?:\s+(.*))?$')
 BLANK = re.compile(r'^[_\s.…‐-]*$')
 LIT_OPTION = re.compile(r'^([234][A-F])\.?(?:\s|$)')
 PRICE = re.compile(r'\(\d+\s*m?h?arc\)')
+FURNITURE = re.compile(r'^(?:Scrúdú na hArdteistiméireachta\b|Gaeilge, Páipéar [12]\b)')
 
 
 def num_rest(m):
@@ -53,7 +54,9 @@ def has_text(lines, k, inline):
         return True
     for j in range(k + 1, min(k + 3, len(lines))):
         t = lines[j][1]
-        if BLANK.match(t):
+        # The page's running head ("Scrúdú na hArdteistiméireachta 6", "Gaeilge, Páipéar 1 – …") is not a prompt: an
+        # answer line's label "(ii)" printed last on a page carries none.
+        if BLANK.match(t) or FURNITURE.match(t):
             return False
         if NUM.match(t) or LET.match(t) or ROM.match(t) or SEG.match(t):
             return False

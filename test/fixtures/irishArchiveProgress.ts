@@ -8,7 +8,8 @@
  */
 /** Papers in scripts/markbank/authored/irish-archive-inventory.json still pending a full review. */
 export const PAPERS_PENDING_FULL_REVIEW = 0;
-/** Irish Topic Atlas entries (data/examTopics/irish-local-crosswalk.json summary). */
+/** Irish Topic Atlas entries (data/examTopics/irish-local-crosswalk.json summary); June's 4290, and from 2026-11-12 each
+ *  carded deferred paper's section entries and one per carded task. */
 export const IRISH_ATLAS = { questions: 4290, retainedLocalQuestions: 3604, newlyAddedPhysicalMappings: 4004 } as const;
 /** Irish entries in HOSTED_ANSWER_OVERRIDES (components/PaperTrail/vaultResolve.ts): reviewed papers' hosted answer maps. */
 export const IRISH_ANSWER_OVERRIDES = 91;

@@ -182,6 +182,7 @@ describe('Irish exam-topic registry', () => {
   it('adds every local paper component and every restored section card', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
+      // June's 91 components and the carded deferred papers (two a sitting, irish_deferred.py).
       localPaperVariants: 91,
       localPhysicalMappings: IRISH_ATLAS.questions,
       distinctStudentFacingQuestions: IRISH_ATLAS.questions,

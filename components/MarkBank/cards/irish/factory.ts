@@ -115,6 +115,9 @@ interface AuthoredIrishCard {
 // Paper-reviewed components ship as their own files beside the legacy census output.
 const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards, ...higher2017P1.cards, ...higher2017P2.cards, ...ordinary2017P1.cards, ...ordinary2017P2.cards, ...higher2016P1.cards, ...higher2016P2.cards, ...ordinary2016P1.cards, ...ordinary2016P2.cards, ...higher2015P1.cards, ...higher2015P2.cards, ...ordinary2015P1.cards, ...ordinary2015P2.cards, ...higher2014P1.cards, ...higher2014P2.cards, ...ordinary2014P1.cards, ...ordinary2014P2.cards, ...higher2013P1.cards, ...higher2013P2.cards, ...ordinary2013P1.cards, ...ordinary2013P2.cards, ...higher2012P1.cards, ...higher2012P2.cards, ...ordinary2012P1.cards, ...ordinary2012P2.cards, ...ordinary2011Aural.cards, ...ordinary2011P1.cards, ...ordinary2011P2.cards, ...higher2011Aural.cards, ...higher2011P1.cards, ...higher2011P2.cards, ...ordinary2010Aural.cards, ...ordinary2010P1.cards, ...ordinary2010P2.cards, ...higher2010Aural.cards, ...higher2010P1.cards, ...higher2010P2.cards] as AuthoredIrishCard[];
 
+/** A card from the SEC's deferred sitting cites that sitting's own scheme. */
+const DEFERRED_CARD = /^irish-\d{4}-(?:hl|ol)-deferred-/;
+
 /** Listening and reading cards carry the scheme's exact answers; cut them
  *  into rows where the parts add up to the criterion (cards/irish/answers.ts).
  *  The 2026 Paper 1 question cards cite the extract itself ("Cuid A · Fógra a hAon · Ceist 1(a)"). */
@@ -307,7 +310,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC Gaeilge ${card.level === 'higher' ? 'Ardleibhéal' : 'Gnáthleibhéal'} ` +
-    `marking scheme ${card.year}, p.${card.schemePage}` +
+    `${DEFERRED_CARD.test(card.id) ? 'deferred ' : ''}marking scheme ${card.year}, p.${card.schemePage}` +
     (card.schemePages && card.schemePages.length > 1 ? `–${card.schemePages.at(-1)}` : '') +
     ' — © State Examinations Commission.',
   specVersion: resolveCurriculumSpecification('irish', card.year)!.id,

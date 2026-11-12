@@ -68,15 +68,18 @@ describe('Paper Trail syllabus history', () => {
 });
 
 // A deferred sitting joins the Atlas as its own paper only once it is carded
-// in the Mark Bank: Economics 2022 Higher (2026-11-04) and History's four Later
-// Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04), their
+// in the Mark Bank: Economics 2022 Higher (2026-11-04), History's four Later
+// Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04), and
+// Irish's carded deferred papers (from 2026-11-12), their
 // questions kept apart from June's by logicalQuestionIdentity.
+const IRISH_DEFERRED_PAPERS: string[] = [];
 const ADMITTED_DEFERRED = new Set([
   'economics|2022|LC034ALP000EV-deferred.pdf',
   'history|2022|LC004ALP000EV-deferred.pdf',
   'history|2022|LC004GLP000EV-deferred.pdf',
   'history|2023|LC004ALP000EV-deferred.pdf',
   'history|2023|LC004GLP000EV-deferred.pdf',
+  ...IRISH_DEFERRED_PAPERS.map(paper => `irish|${paper}`),
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {
@@ -112,5 +115,10 @@ describe('Topic Atlas stays on the reviewed June papers', () => {
       '2022|LC004ALP000EV-deferred.pdf', '2022|LC004GLP000EV-deferred.pdf',
       '2023|LC004ALP000EV-deferred.pdf', '2023|LC004GLP000EV-deferred.pdf',
     ]));
+    // Irish's carded deferred papers surface as their own questions: each paper's section entries (as June's) and
+    // one per carded task.
+    const irishDeferred = questionsForTopics('irish', null).filter(q => q.fileid.endsWith('-deferred.pdf'));
+    expect(irishDeferred).toHaveLength(0);
+    expect(new Set(irishDeferred.map(q => `${q.year}|${q.fileid}`))).toEqual(new Set(IRISH_DEFERRED_PAPERS));
   });
 });

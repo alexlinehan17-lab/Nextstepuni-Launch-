@@ -3893,6 +3893,10 @@ def census_subject(subject):
         by_key = {(p['year'], p['level'], p['paper']): p for p in papers}
         for name in irish_manifest_files()[1:]:
             for card in json.load(open(os.path.join(IRISH_DECK, name), encoding='utf-8'))['cards']:
+                # A deferred sitting's card is not a leaf of June's paper: its printed asks are read above
+                # (census_irish_deferred) and the card lists the ones it covers.
+                if re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', card['id']):
+                    continue
                 key = (card['year'], short[card['level']], f"Paper {card['paper']}")
                 if key not in by_key:
                     by_key[key] = {'year': key[0], 'level': key[1], 'paper': key[2],
