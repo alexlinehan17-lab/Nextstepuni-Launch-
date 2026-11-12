@@ -8344,14 +8344,21 @@
     "kind": "anyN",
     "verbatim": "The answers the scheme accepts",
     "marks": null,
-    "contextNote": "The examination paper directs that this question be answered in English. The scheme adds: “alarm =1”.",
+    "contextNote": "The examination paper directs that this question be answered in English.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
       "taking notes (but with multimedia accessories)",
       "coordinate timetable",
-      "an alarm to avoid arriving late."
+      "an alarm to avoid arriving late.",
+      "alarm"
+     ],
+     "optionMarks": [
+      2,
+      2,
+      2,
+      1
      ]
     }
    }
@@ -9503,7 +9510,18 @@
       "(legal and illegal) medication can also be used to stay active",
       "dedication to work is seen as something positive",
       "dedication to work can be associated with success in work",
-      "(where there is no defined working day) it is easy to confuse addiction with productivity."
+      "(where there is no defined working day) it is easy to confuse addiction with productivity.",
+      "it is sometimes hidden"
+     ],
+     "optionMarks": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
      ]
     }
    }
@@ -10338,10 +10356,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "save petrol/ locate petrol stations/compare prices/establish favourite petrol stations",
-    "marks": 4,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "save petrol",
+      "locate petrol stations",
+      "compare prices",
+      "establish favourite petrol stations"
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
@@ -10543,10 +10571,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Five leagues/ two world cups/ four Olympic medals",
-    "marks": 4,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Five leagues",
+      "two world cups",
+      "four Olympic medals"
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
@@ -24999,10 +25036,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Adopting an olive tree /Save olive trees/the production of olive oil.",
-    "marks": 5,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Adopting an olive tree",
+      "Save olive trees",
+      "the production of olive oil."
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 5 marks; the paper prints it on page 3 of the question booklet.",
@@ -25179,10 +25225,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Not to return home on your own at night/ watch your drink/ buy insurance.",
-    "marks": 5,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Not to return home on your own at night",
+      "watch your drink",
+      "buy insurance."
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 5 marks; the paper prints it on page 4 of the question booklet.",
@@ -32978,10 +33033,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "The girls were giving all their attention to Pepe / they had nobody to dance with.",
-    "marks": 3,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The girls were giving all their attention to Pepe",
+      "they had nobody to dance with."
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 3.",
@@ -43136,10 +43199,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Singing/dancing",
-    "marks": 4,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Singing",
+      "dancing"
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
@@ -43706,10 +43777,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Sunny / clear skies / cloud",
-    "marks": 3,
-    "contextNote": "The examination paper directs that this question be answered in English."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Sunny",
+      "clear skies",
+      "cloud"
+     ]
+    }
    }
   ],
   "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 4.",
@@ -55288,9 +55368,24 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "To buy less , we all have a lot of clothes that we don’t use ; we should always consider if we really need that shirt/ item",
-      "Buy intelligently , quality brands that last",
-      "Don’t throw clothing in the rubbish sell it or recycle it"
+      "To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item",
+      "Buy intelligently, quality brands that last",
+      "Don’t throw clothing in the rubbish sell it or recycle it",
+      "To buy less",
+      "To buy less, we all have a lot of clothes that we don’t use",
+      "Buy intelligently",
+      "Don’t throw clothing in the rubbish",
+      "Don’t throw clothing in the rubbish sell it"
+     ],
+     "optionMarks": [
+      5,
+      5,
+      5,
+      2,
+      4,
+      2,
+      2,
+      4
      ]
     }
    }
@@ -86419,10 +86514,36 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "We don’t have enough courts (to satisfy the demand)/ there are only 50 courts and we have 6000 players",
     "marks": 3,
-    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “2m”; “1m”."
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "We don’t have enough courts (to satisfy the demand)/ there are only 50 courts",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "and we have 6000 players",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”"
    }
   ],
   "notes": "The scheme prices this ask 3 marks; the paper prints it on page 12 of the question booklet.",

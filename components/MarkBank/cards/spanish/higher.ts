@@ -3714,7 +3714,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to the text, what are two uses of the iPad? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “alarm =1”.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late.","alarm"],"optionMarks":[2,2,2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4440,7 +4440,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is addiction to work hard to identify? (Give full details)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity.","it is sometimes hidden"],"optionMarks":[2,2,2,2,2,2,2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12608,7 +12608,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why were Pepe’s friends angry? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The girls were giving all their attention to Pepe / they had nobody to dance with.", marks: 3, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["The girls were giving all their attention to Pepe","they had nobody to dance with."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21331,7 +21331,7 @@ export const CARDS: SecCard[] = [
     questionText: "Julia Ferrer makes suggestions for when we go clothes shopping. Explain one in detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less , we all have a lot of clothes that we don’t use ; we should always consider if we really need that shirt/ item","Buy intelligently , quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32781,7 +32781,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Naomi Nicholl say about padel in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "We don’t have enough courts (to satisfy the demand)/ there are only 50 courts and we have 6000 players", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “2m”; “1m”." },
+    { id: "r-1", kind: "criterion", verbatim: "We don’t have enough courts (to satisfy the demand)/ there are only 50 courts and we have 6000 players", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"We don’t have enough courts (to satisfy the demand)/ there are only 50 courts","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"and we have 6000 players","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",

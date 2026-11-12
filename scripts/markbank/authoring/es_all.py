@@ -990,13 +990,65 @@ def _rows_for(ask, language, rule, stepped=False):
                       skip_notes={note for note, _p, whole in partials if whole})
     if partials and isinstance(rows, list):
         rows = _claimable_partials(ask, rows, partials)
+    if stepped and isinstance(rows, list):
+        rows = _menu_component_partials(ask, rows)
     return rows
+
+
+def _menu_component_partials(ask, rows):
+    """A menu answer the scheme prices in part inside its own line: 2013
+    Higher Section B Q4(a) "- it is sometimes hidden [1] by the use of
+    stimulants / sedatives" in a "Two of:" menu at 2 each. The slice before
+    the bracket is one more option of the menu at the bracket's price
+    (optionMarks), as a partial printed in a note already is
+    (_claimable_partials). A menu paid in descending steps has no price per
+    option to set it against, and is left as it is."""
+    raw = ' '.join((ask.raw or '').split())
+    if not PRICE_BRACKET.search(raw):
+        return rows
+    out = []
+    for row in rows:
+        g = row.get('group')
+        if row.get('kind') != 'anyN' or not g or g.get('perOptionSteps'):
+            out.append(row)
+            continue
+        marks = list(g.get('optionMarks') or [g['perOption']] * len(g['options']))
+        extra = []
+        for option, price in zip(g['options'], marks):
+            words = option.split()
+            gap = r'\s*(?:\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\][,;]?\s*)?'
+            m = re.search(gap.join(re.escape(w.rstrip(',;')) + r'[,;]?' for w in words), raw)
+            if not m:
+                continue
+            # Each bracket inside the answer closes a part of it; the slice up
+            # to it is worth what the brackets up to it add to. 2020 Higher B
+            # Q4(c) "One of: - To buy less [2m], we all have a lot of clothes
+            # that we don't use [2m]; we should always consider … [1m]" offers
+            # "To buy less" at 2 and "To buy less, we all have … use" at 4.
+            seg, run = m.group(0), 0
+            for b in PRICE_BRACKET.finditer(seg):
+                if b.end() >= len(seg.rstrip(' .')):
+                    break       # a price at the answer's end is its own
+                run += int(b.group(1))
+                part = ' '.join(PRICE_BRACKET.sub(' ', seg[:b.start()]).split()).strip(' ,;')
+                part = re.sub(r'\s+([,;])', r'\1', part)
+                if part and 0 < run < price:
+                    extra.append((part, run))
+        if extra:
+            g = dict(g)
+            g['options'] = list(g['options']) + [t for t, _n in extra]
+            g['optionMarks'] = marks + [n for _t, n in extra]
+            g['perOption'] = max(g['optionMarks'])
+            row = {**row, 'group': g}
+        out.append(row)
+    return out
 
 
 # A partial the scheme prices in a bracket: "degree = 2m", "studying hard =
 # 2m", "to understand the language =1m". Read up to its price; what follows it
 # ("if only correct information given") is a condition, kept quoted.
-PARTIAL = re.compile(r'^\s*(.*?\S)\s*=\s*(\d{1,2})\s*m(?:arks?)?\b\s*(.*)$', re.I)
+# 2013 prints the figure alone: "[alarm =1]".
+PARTIAL = re.compile(r'^\s*(.*?\S)\s*=\s*(\d{1,2})\s*(?:m(?:arks?)?\b)?\s*(.*)$', re.I)
 ORDER_NOTE = re.compile(r'first correct answer|for the first', re.I)
 STOPWORDS = {'the', 'and', 'with', 'that', 'this', 'their', 'they', 'them', 'from', 'about',
              'have', 'into', 'there', 'were', 'what', 'when', 'only', 'more', 'than'}
@@ -1119,7 +1171,7 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
     """The card's marking rows, or None (a direction) or a refusal string."""
     note = language_note(language, rule)
     notes = [n for n in (ask.notes or []) if n not in skip_notes]
-    if stepped:
+    if stepped or ask.bracket_parts:
         # A bracket that only states a price ("[2m]", "[1+1m]") is already on
         # the row as its marks; quoting it again says nothing.
         notes = [n for n in notes if not re.fullmatch(
@@ -1176,7 +1228,9 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
     if any(DIRECTION_ONLY.match(text) for text, _m in ask.points):
         return None
     points = list(ask.points)
-    if stepped and len(points) == 1 and ask.bracket_parts:
+    # (A shipped card too: its printed component prices are claimable,
+    # coordinator ruling of 12 Nov 2026 — 2025 Higher Q2(b)(ii).)
+    if len(points) == 1 and ask.bracket_parts:
         # One answer priced in bracketed components: one row, each component
         # claimed on its own marks, the row scoring their sum.
         parts = [{'id': f'p{i}', 'verbatim': text, 'marks': marks,

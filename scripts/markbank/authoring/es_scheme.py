@@ -461,6 +461,24 @@ ONE_OF_CUTS = {
     (2012, 'ol', 'L', 4, 'c', None): '/',
     (2012, 'ol', 'L', 6, 'c', None): '/',
 }
+# Slash lists with no "One of:" printed, where the paper asks for ONE ("Give
+# one detail", "Mention one aim …", "Explain one piece of advice …") and the
+# scheme prices one answer: the items are alternatives for that one point, cut
+# as ONE_OF_CUTS cuts (coordinator ruling, 12 Nov 2026, batch 5). Where nothing
+# printed says the items are alternatives, the row stays whole.
+ONE_DETAIL_CUTS = {
+    (2013, 'ol', 'L', 1, 'a', None): '/',
+    (2013, 'ol', 'L', 2, 'b', None): '/',
+    (2015, 'ol', 'A', 3, 'a', None): '/',
+    (2015, 'ol', 'A', 4, 'b', None): '/',
+    (2017, 'hl', 'L', 3, 'd', None): '/',
+    (2018, 'ol', 'L', 3, 'b', None): '/',
+    (2018, 'ol', 'L', 6, 'c', None): '/',
+}
+# Kept whole: 2016 Higher listening Q4(d) "A blog with one of: study
+# techniques/ advice on organisation (for students) or a collection of
+# (pocket) books" — its slash sits inside the blog answer.
+
 ONE_OF_KEPT = {
     # "protects us from (chronic) diseases/illnesses like Parkinson's/
     # Alzheimer's/ (many types of) cancer": one benefit, its slashes inside it.
@@ -493,7 +511,9 @@ def _split_notes(body):
                 depth = 0
             continue
         s = INLINE_BRACKET.sub(lambda m: (notes.append(m.group(0).strip('[] ')) or ' '), s)
-        s = ' '.join(s.split())
+        # (no space left before the comma a bracket stood in front of: "To
+        # buy less [2m], we all …" reads "To buy less, we all …")
+        s = re.sub(r'\s+([,;])', r'\1', ' '.join(s.split()))
         if BRACKET_OPEN.search(s):
             head, _open, tail = s.partition('[')
             if head.strip():
@@ -1324,6 +1344,11 @@ class EsScheme:
                 if all(p for p, _n in pieces) and sum(n for _p, n in pieces) == total:
                     bracket_parts = pieces
 
+        one = ONE_DETAIL_CUTS.get((self.year, self.level, section, q, letter, roman))
+        if one and not quota and len(points) == 1:
+            options = [o.strip() for o in points[0][0].split(one) if o.strip()]
+            assert len(options) >= 2, (section, q, letter, options)
+            quota, points = 1, []
         if self.year <= OLD_LETTERS_LAST:
             # 2016-2019 run an answer list on with its connectives: a slash
             # menu "(Something of) the history and/ atmosphere (of the place)/

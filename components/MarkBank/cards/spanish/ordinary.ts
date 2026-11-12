@@ -1767,7 +1767,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does this app help us to do? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "save petrol/ locate petrol stations/compare prices/establish favourite petrol stations", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["save petrol","locate petrol stations","compare prices","establish favourite petrol stations"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1910,7 +1910,7 @@ export const CARDS: SecCard[] = [
     questionText: "What important trophies has she won in her career? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Five leagues/ two world cups/ four Olympic medals", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Five leagues","two world cups","four Olympic medals"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6385,7 +6385,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one aim of this campaign.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Adopting an olive tree /Save olive trees/the production of olive oil.", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["Adopting an olive tree","Save olive trees","the production of olive oil."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6505,7 +6505,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain one piece of advice given in the leaflets and posters.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Not to return home on your own at night/ watch your drink/ buy insurance.", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["Not to return home on your own at night","watch your drink","buy insurance."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10533,7 +10533,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is completely new for Elsa? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Singing/dancing", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Singing","dancing"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10921,7 +10921,7 @@ export const CARDS: SecCard[] = [
     questionText: "What kind of weather is expected in the Canaries? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sunny / clear skies / cloud", marks: 3, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["Sunny","clear skies","cloud"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
