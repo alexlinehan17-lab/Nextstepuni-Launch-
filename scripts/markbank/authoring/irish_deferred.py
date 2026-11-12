@@ -1632,6 +1632,8 @@ def strip_furniture(card):
             new, n = pattern.subn(' ', line)
             new, m = box.subn(r'\1', new)
             new, k = margin.subn('', new)
+            # SymbolMT's space (U+F020, Adobe Symbol 0x20) between two sample answers (2022 Ordinary Dís (v)): a space.
+            new = new.replace('\uf020', ' ')
             count += n + m + k
             lines.append(clean(new))
         c['guidance'] = [line for line in lines if line]
