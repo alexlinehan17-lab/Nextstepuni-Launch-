@@ -2064,8 +2064,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 273, '717615c37bfaafff4c76b0d83b5845656bce7a801d7743c16a40d265a0f3ba5c'],
-  ordinary: [DCG_ORDINARY, 192, '4f8acb08271b7adab11c2cdd48c86ed272e650be1efa91dd6081ac94cdc6779d'],
+  higher: [DCG_HIGHER, 396, '6c6503b5668af936a2af5746c53a507656a6c16e0388385740142fc6ae654d21'],
+  ordinary: [DCG_ORDINARY, 279, '3c74ae028f53f1678bd4ba6792c99a55c47f0e34116f4e99401a73d377d1a18a'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -2167,7 +2167,16 @@ describe('Mark Bank card preservation', () => {
     // its 25 (A-4 under two heads, C-5 in four named groups); 2013 Higher 44
     // for its 37 (B-2(b) under two heads, C-1(a) in four earthworks pieces,
     // C-5(a) in nine named groups; C-1(a)(i)-(ii) one unit); 2013 Ordinary
-    // 29 for its 24 (A-3 priced with no head, one card; C-5 in six groups).
+    // 29 for its 24 (A-3 priced with no head, one card; C-5 in six groups);
+    // 2012 Higher 42 for its 33 (A-3 priced with no head, one card; A-4 and
+    // B-2(c) under printed heads, C-1(a) in four pieces, C-5(a) in eight);
+    // 2012 Ordinary 29 for its 23 (A-4 priced with no head, one card; C-5 in
+    // seven named groups); 2011 Higher 40 for its 34 (A-3 priced with no head,
+    // one card; B-1(c) under three heads, C-1(a) in four pieces, C-5(a) in
+    // six named groups); 2011 Ordinary 28 for its 23 (C-5 in six groups);
+    // 2010 Higher 41 for its 31 (B-1(b) under three heads, C-1(a) in four
+    // pieces, C-5(a) in seven named groups); 2010 Ordinary 30 for its 23
+    // (B-1 under two heads, C-4(a) under two, C-5 in six named groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
