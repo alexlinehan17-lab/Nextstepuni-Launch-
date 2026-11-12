@@ -915,10 +915,10 @@ class EsPaper:
                     text.isupper()
                     # (an article set in lower case ahead of the capitals: the
                     # 2022 deferred Higher Q2(a) "El PRIMER VEHÍCULO SIN
-                    # CONDUCTOR LLEGA A LANZAROTE". Read in the deferred sitting
-                    # only: 2021 Ordinary Q2 "El JABALÍ: UN CERDO SALVAJE" is a
-                    # frozen card's, which names its instruction instead.)
-                    or (self.sitting and re.fullmatch(r'(?:El|La|Los|Las|Un|Una)\s+\S.*', text)
+                    # CONDUCTOR LLEGA A LANZAROTE" and 2021 Ordinary Q2 "El
+                    # JABALÍ: UN CERDO SALVAJE", whose five frozen cards named
+                    # their instruction until 2026-11-12)
+                    or (re.fullmatch(r'(?:El|La|Los|Las|Un|Una)\s+\S.*', text)
                         and text.split(None, 1)[1].isupper())):
                 region.title = text
                 region.lead_lines.append(text)

@@ -19872,7 +19872,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19896,7 +19896,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19920,7 +19920,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19944,7 +19944,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19968,7 +19968,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
