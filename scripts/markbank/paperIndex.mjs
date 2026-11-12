@@ -227,8 +227,12 @@ const byComponent = (papers, want) => {
   return hits.length === 1 ? hits[0] : null;
 };
 
-export function resolveCompanionFileid(subjectId, year, level, label) {
-  const entry = paperEntry(subjectId, year, level);
+export function resolveCompanionFileid(subjectId, year, level, label, sitting = 'main') {
+  // A deferred card's companion is in its own sitting's entry: a DCG deferred
+  // Geologic Geometry card opens the deferred Section A sheet's contour map.
+  const entry = sitting === 'deferred'
+    ? deferredPaperEntry(subjectId, year, level)
+    : paperEntry(subjectId, year, level);
   const want = String(label ?? '').trim().toLowerCase();
   if (!want || !entry?.papers?.length) return null;
   // DCG's Section A booklet carries the contour map Section C's Geologic
@@ -284,8 +288,12 @@ function dcgBookletFor(entry, section) {
  * Null rather than a guess: a wrong id sends a student to the wrong document,
  * and for the section-split subjects the nearest wrong answer is the scheme.
  */
-export function resolvePaperFileid(subjectId, year, level, section) {
-  const entry = paperEntry(subjectId, year, level);
+export function resolvePaperFileid(subjectId, year, level, section, sitting = 'main') {
+  // DCG's deferred sitting is two booklets as June's is, told apart the same
+  // way, by the questions each prints (dcgBookletFor).
+  const entry = sitting === 'deferred'
+    ? deferredPaperEntry(subjectId, year, level)
+    : paperEntry(subjectId, year, level);
   if (!entry?.papers?.length) return null;
   if (subjectId === 'dcg') return dcgBookletFor(entry, section);
   // One paper for the year means there is nothing to choose between.
