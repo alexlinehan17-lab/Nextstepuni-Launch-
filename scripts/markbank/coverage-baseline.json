@@ -380,15 +380,15 @@
   "german": {
     "cards": 264,
     "contentHash": "4cfabcd723419e57",
-    "coveragePct": 100.0,
+    "coveragePct": 31.9,
     "covered": 264,
     "excluded": 276,
-    "leaves": 540,
-    "open": 0,
+    "leaves": 1692,
+    "open": 1152,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "a5deb2d915c7c90e"
+      "count": 68,
+      "hash": "b2857d4207dfd1a8"
     },
     "refsHash": "39be4a22419bc8c6"
   },

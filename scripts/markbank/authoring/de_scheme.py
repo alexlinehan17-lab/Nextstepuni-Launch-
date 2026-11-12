@@ -598,6 +598,14 @@ class DeScheme:
         total = head_total(clause)
         letters, romans = parse_head_clause(clause)
         if not letters:
+            # A listening question split into romans with no letter above them:
+            # 2025 Higher First Part "2. (8 marks: (i) 2 x 2 marks; (ii) 4 x 1
+            # mark)", then "(i) What did Frau Glas do …" and "(ii) …". Each
+            # roman is an ask of its own, priced by its own clause.
+            tr = top_romans(clause)
+            if tr and total is not None and sum(tr.values()) == total:
+                self._read_letter(unit, q, None, total, clause, tr, word, block, line_no)
+                return
             self._emit(unit, q, None, None, total, clause, block, line_no, word)
             return
         if total is not None and sum(letters.values()) != total:
@@ -1084,6 +1092,33 @@ def _ordered_heads(block, pattern, expected):
         m = pattern.match(line.strip())
         if m and m.group(1).lower() == wanted[0]:
             out.append((i, wanted.pop(0), m.group(2)))
+    return out
+
+
+def top_romans(clause):
+    """{roman: marks} for a head that splits its question into romans with no
+    letter: "(8 marks: (i) 2 x 2 marks; (ii) 4 x 1 mark)", "(4 marks: (i) 2 +
+    2 marks; (ii) …)". Each roman's own clause states its worth: "N x M" is
+    N times M, "a + b" their sum, a single figure itself. {} where any roman's
+    worth is not stated."""
+    s = clause or ''
+    m = re.match(r'^\s*\(?\s*\d{1,3}\s*marks?\s*:?', s, re.I)
+    body = s[m.end():] if m else s
+    parts = re.split(r'\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)', body, flags=re.I)
+    if len(parts) < 3 or re.search(r'\(\s*[a-h]\s*\)', parts[0], re.I):
+        return {}
+    out = {}
+    for roman, seg in zip(parts[1::2], parts[2::2]):
+        seg = seg.split(';')[0]
+        times = re.search(r'(\d{1,2})\s*[x×]\s*(\d{1,2})', seg)
+        if times:
+            value = int(times.group(1)) * int(times.group(2))
+        else:
+            nums = [int(n) for n in re.findall(r'\d{1,3}', seg)]
+            if not nums:
+                return {}
+            value = sum(nums) if '+' in seg else nums[0]
+        out[roman.lower()] = value
     return out
 
 

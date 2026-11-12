@@ -312,6 +312,25 @@ class DePaper:
 
     @staticmethod
     def _unit_of(line):
+        unit = DePaper._unit_of_line(line)
+        if unit is None and line.startswith('TEXT T'):
+            # The 2011 booklets paint the last glyph of each text run twice,
+            # and their heads read "TEXT T II: LESEVE ERSTÄNDNI IS (60)": the
+            # doubled glyph and the gap after it are one printed character.
+            # The page beneath is read as printed; only the head is mended.
+            mended = line
+            for _ in range(3):
+                mended = re.sub(r'(\S) \1', r'\1', mended)
+            unit = DePaper._unit_of_line(mended)
+            if unit is None:
+                # (and a word the run broke without doubling: "LESE EVERSTÄN
+                # DNIS" mends to "LESEVERSTÄN DNIS")
+                joined = re.sub(r'(?<=[A-ZÄÖÜß]) (?=[A-ZÄÖÜß])', '', mended)
+                unit = DePaper._unit_of_line(re.sub(r'^TEXT(I{1,3})', r'TEXT \1', joined))
+        return unit
+
+    @staticmethod
+    def _unit_of_line(line):
         m = UNIT_LV.match(line)
         if m:
             return f'T{TEXT_NUM[m.group(1).lower()]}'
@@ -489,8 +508,13 @@ class DePaper:
                     continue
                 item = roman = rest = None
                 m = NUM_MARK.match(text)
+                if m and not m.group(3) and re.fullmatch(r'\d{2}', (m.group(4) or '').strip()):
+                    # A tick-box time, not an item: 2026 Ordinary Part 3 Q4
+                    # offers "09.00" and "19.00", read as items 9 and 19.
+                    m = None
                 if m:
                     item = int(m.group(1))
+                    item = AURAL_RENUMBER.get((self.year, self.level, part, item, side), item)
                     roman = (m.group(3) or '').lower() or None
                     rest = m.group(4)
                     state[side] = item
@@ -519,6 +543,12 @@ class DePaper:
         return [(p, i, r, seen[(p, i, r)])
                 for p, i, r in sorted(seen, key=lambda k: (k[0], k[1], k[2] or ''))
                 if r or (p, i) not in romanned]
+
+
+# An item the two columns number differently, the same ask: 2010 Higher Part 4
+# numbers its last item "5." in the Irish column and "6." in the English
+# (rendered and read; hand count, languages/handcount-german/aural.json).
+AURAL_RENUMBER = {(2010, 'hl', 4, 6, 'R'): 5}
 
 
 def main():
