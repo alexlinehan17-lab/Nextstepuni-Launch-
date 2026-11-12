@@ -3,7 +3,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { reviewedRussianJointTask, verifyRussianJointAnchors } from '../markbank/russianJointTasks.mjs';
+import { reviewedRussianJointTask, verifyRussianJointAnchors, mergeRussianQuestionTag, verifyRussianJointTags } from '../markbank/russianJointTasks.mjs';
+import { validateReviewedRussianQuestionTopics } from '../markbank/russianJointTopics.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
 const cards = read('components/MarkBank/cards/russian/reviewed.json');
@@ -14,6 +15,7 @@ const write = (file, data) => {
   fs.mkdirSync(path.dirname(path.join(ROOT, file)), { recursive: true });
   fs.writeFileSync(path.join(ROOT, file), JSON.stringify(data) + '\n');
 };
+await validateReviewedRussianQuestionTopics(ROOT, sources, cards);
 for (const fileid of new Set(sources.map(source => `${source.year}/${source.paperFileid}`))) {
   const tasks = sources.filter(source => `${source.year}/${source.paperFileid}` === fileid);
   const first = tasks[0];
@@ -45,11 +47,12 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
       const existing = map.q.find(row=>row.n===n);
       if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
       else map.q.push(question);
-      const questionTag={n,primary:task.topicId,...(card.additionalTopicIds?.length?{secondary:card.additionalTopicIds[0]}:{})};
       const existingTag=tag.q.find(row=>row.n===n);
-      if(existingTag)Object.assign(existingTag,questionTag);else tag.q.push(questionTag);
+      const questionTag=mergeRussianQuestionTag(existingTag,original,task,card);
+      if(!existingTag) tag.q.push(questionTag);
     }
     verifyRussianJointAnchors(task, card, map);
+    verifyRussianJointTags(task, card, tag);
   }
   map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
   write(file,map);
