@@ -4665,5 +4665,197 @@
       ]
     },
     "md5": "45715c1f7c136a6aac7537edd5d9ec2e"
+  },
+  "ja-2011-hl-1a": {
+    "src": "/exam-figures/japanese/ja-2011-hl-1a.png",
+    "alt": "A: On which page in the magazine would you find these music sections?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.04,
+        0.025,
+        0.97,
+        0.375
+      ]
+    },
+    "md5": "e37023c126578c17b897b9a7ca899245"
+  },
+  "ja-2011-hl-1d-1": {
+    "src": "/exam-figures/japanese/ja-2011-hl-1d-1.png",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 4,
+      "region": [
+        0.055,
+        0.345,
+        0.97,
+        0.535
+      ]
+    },
+    "md5": "404f548eab78417276848f67b22d2acf"
+  },
+  "ja-2011-hl-1d-2": {
+    "src": "/exam-figures/japanese/ja-2011-hl-1d-2.png",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 4,
+      "region": [
+        0.055,
+        0.535,
+        0.97,
+        0.72
+      ]
+    },
+    "md5": "bd0f1adc419687859a2fb244a8cbc976"
+  },
+  "ja-2011-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2011-hl-2a-1.png",
+    "alt": "Complete the table:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.205
+      ]
+    },
+    "md5": "e5bc84e774531a180b52b9d729462149"
+  },
+  "ja-2011-hl-2a-3": {
+    "src": "/exam-figures/japanese/ja-2011-hl-2a-3.png",
+    "alt": "Complete the table with the advice given.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.065,
+        0.445,
+        0.97,
+        0.625
+      ]
+    },
+    "md5": "e99e273baf5231e836cf63cb3cf4d3be"
+  },
+  "ja-2011-hl-2c": {
+    "src": "/exam-figures/japanese/ja-2011-hl-2c.png",
+    "alt": "C:  Write the correct non-past plain form of the verb. This form may be in the affirmative or negative.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.035,
+        0.025,
+        0.98,
+        0.86
+      ]
+    },
+    "md5": "caca8a72d461d37b50def246f8fe3d02"
+  },
+  "ja-2011-hl-3a-2": {
+    "src": "/exam-figures/japanese/ja-2011-hl-3a-2.png",
+    "alt": "Complete the following grid in English.\nWhy does Mr. Nakamura recommend it? Give details.\n(i) Human Japanese\n(ii) Pocket Japanese\n(iii) Kotoba\n(iv) ウェザー・ニュース・タッチ\n日本の観光地（かんこうち）リスト\n(vi) Japanese Food Recipe",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.035,
+        0.15,
+        0.98,
+        0.59
+      ]
+    },
+    "md5": "6c0c55bbfac6ad66df35675ccecae9f8"
+  },
+  "ja-2011-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2011-hl-3c.png",
+    "alt": "C:  Circle the correct reading for the following kanji as they appear in the reading section above. Give the meaning of the kanji in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.035,
+        0.025,
+        0.98,
+        0.365
+      ]
+    },
+    "md5": "2319fe3a3393ee28a201c5136bae6a7e"
+  },
+  "ja-2011-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2011-hl-3d.png",
+    "alt": "D:  Insert the correct particles (i) to (x). There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.035,
+        0.355,
+        0.98,
+        0.63
+      ]
+    },
+    "md5": "5bc7c10cf9533447f18f5a2d70dccf42"
+  },
+  "ja-2011-hl-4": {
+    "src": "/exam-figures/japanese/ja-2011-hl-4.png",
+    "alt": "Write about (a) OR  (b) in approximately 200 characters.\n(a) 今日は、友（とも）だちと一 緒（いっしょ）に遊（あそ）んで、とても 楽（たの）しかったです。 それについて、日記（にっき）に書いてください。 Today you had a great day together with friends. Write a diary entry about the day. You must cover the following points in your diary: - どこに行きましたか。 - 何をしましたか。 - どうして楽（たの）しかったですか。 OR (b) 今日は、大 変（たいへん）な一日でした。 それについて、日記（にっき）に書いてください。 Today was a terrible day. Write a diary entry about the day. You must cover the following points in your diary: - どこに行きましたか。 - 何をしましたか。 - どうして大 変（たいへん）でしたか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.04,
+        0.025,
+        0.97,
+        0.905
+      ]
+    },
+    "md5": "25abf63e0306f63e99ac5d7985d060c0"
+  },
+  "ja-2011-hl-la": {
+    "src": "/exam-figures/japanese/ja-2011-hl-la.png",
+    "alt": "Complete the table below in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.055,
+        0.025,
+        0.975,
+        0.92
+      ]
+    },
+    "md5": "b826a9ecf1c0b8eac4aee819fbd45e69"
+  },
+  "ja-2011-hl-lc-2-iii": {
+    "src": "/exam-figures/japanese/ja-2011-hl-lc-2-iii.png",
+    "alt": "What is Kabanet’s telephone number?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.505,
+        0.72,
+        0.965,
+        0.795
+      ]
+    },
+    "md5": "48e86bfa3af0b5e0086334d741837fbf"
   }
 }

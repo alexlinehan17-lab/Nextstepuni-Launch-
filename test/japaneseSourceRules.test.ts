@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import review2011 from '../scripts/markbank/authoring/reviews/japanese-2011-hl.json';
 import review2012 from '../scripts/markbank/authoring/reviews/japanese-2012-hl.json';
 import { assertJapaneseConditionLabel, matchesNamedLanguageCondition } from '../scripts/markbank/japanese-source-rules.mjs';
 
@@ -62,5 +63,32 @@ describe('2012 Higher Q3B exact combined source condition', () => {
   it('leaves earlier default rules unchanged and rejects a missing 2012 rule', () => {
     expect(() => assertJapaneseConditionLabel({ id: 'ja-2025-hl-3b-1', year: 2025, level: 'higher', extraneousMaterialRule: { multiplier: 0.5, sourceText: 'Original earlier rule', schemePages: [11] } }, {})).not.toThrow();
     expect(() => assertJapaneseConditionLabel({ ...original, extraneousMaterialRule: undefined }, review2012)).toThrow();
+  });
+});
+
+describe('2011 Higher exact local combined conditions', () => {
+  it('binds only the three Q1C, three Q2B and four Q3B tasks to their own original pages', () => {
+    const affected = review2011.cards.filter(card => card.extraneousMaterialRule);
+    expect(affected).toHaveLength(10);
+    for (const card of affected) expect(() => assertJapaneseConditionLabel(card, review2011)).not.toThrow();
+    expect(affected.map(card => card.extraneousMaterialRule!.schemePages[0])).toEqual([8, 8, 8, 10, 10, 10, 11, 11, 11, 11]);
+  });
+  it('rejects changed clauses, scope, selector coordinates, pages and source hashes', () => {
+    for (const id of ['ja-2011-hl-1c-1', 'ja-2011-hl-2b-1', 'ja-2011-hl-3b-1']) {
+      const original = review2011.cards.find(card => card.id === id)!;
+      const rule = original.extraneousMaterialRule!;
+      for (const patch of [
+        { conditionLabel: 'containing extraneous material' }, { conditionLabel: undefined },
+        { sourceText: rule.sourceText.replace('where manipulation required', '') },
+        { schemePages: [rule.schemePages[0] + 1] }, { multiplier: 0 },
+      ]) expect(() => assertJapaneseConditionLabel({ ...original, extraneousMaterialRule: { ...rule, ...patch } }, review2011)).toThrow();
+      expect(() => assertJapaneseConditionLabel({ ...original, id: 'ja-2011-hl-3a-1' }, review2011)).toThrow();
+      expect(() => assertJapaneseConditionLabel({ ...original, extraneousMaterialRule: undefined }, review2011)).toThrow();
+      expect(() => assertJapaneseConditionLabel(original, { ...review2011, selectors: review2011.selectors.filter(selector => selector.text !== rule.sourceText) })).toThrow();
+      expect(() => assertJapaneseConditionLabel(original, { ...review2011, selectors: review2011.selectors.map(selector => selector.text === rule.sourceText ? { ...selector, page: 19 } : selector) })).toThrow();
+      expect(() => assertJapaneseConditionLabel(original, { ...review2011, selectors: review2011.selectors.map(selector => selector.text === rule.sourceText ? { ...selector, parts: [{ row: 0, group: 0 }] } : selector) })).toThrow();
+      expect(() => assertJapaneseConditionLabel(original, { ...review2011, sources: review2011.sources.map(source => ({ ...source, sha256: 'changed' })) })).toThrow();
+      expect(() => assertJapaneseConditionLabel(original, review2012)).toThrow();
+    }
   });
 });

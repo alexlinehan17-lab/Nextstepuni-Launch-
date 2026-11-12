@@ -10,26 +10,45 @@ export function matchesNamedLanguageCondition(language, sourceText) {
     ].includes(sourceText));
 }
 
-/** The five 2012 Higher Q3B tasks share this exact combined printed condition.
- * This source-local binding does not authorize condition labels on other tasks.
+const combinedCondition = 'quotation without manipulation where manipulation required or containing extraneous material';
+const combinedBindings = [
+  {
+    year: 2012, section: '3B', count: 5, page: 11,
+    sha256: 'f976e52a9df6dfb58cd5887e5d003fe5fe2307907d71d0cf515f083fd184e6d5',
+    parts: [{ row: 14, group: 1 }, { row: 15, group: 0 }],
+    sourceText: `(Evidence needed that candidates have understood the text; ${combinedCondition}: half marks.`,
+  },
+  {
+    year: 2011, section: '1C', count: 3, page: 8,
+    sha256: 'b074b5846c2f41ce7a4476795922fd4570334c44536924c8484a4aed02238f81',
+    parts: [{ row: 0, group: 0 }, { row: 1, group: 0 }, { row: 2, group: 0 }],
+    sourceText: 'C:      (6 marks)  (Evidence needed that candidates have understood the text; quotation without manipulation where manipulation required or containing extraneous material: half marks.  (Half marks if answered in English)',
+  },
+  ...[{ section: '2B', count: 3, page: 10, row: 1 }, { section: '3B', count: 4, page: 11, row: 30 }].map(binding => ({
+    ...binding, year: 2011,
+    sha256: 'b074b5846c2f41ce7a4476795922fd4570334c44536924c8484a4aed02238f81',
+    parts: [0, 1, 2].map(offset => ({ row: binding.row + offset, group: 0 })),
+    sourceText: `(Evidence needed that candidates have understood the text; ${combinedCondition}: half marks. Answers in language not specified  = half marks)`,
+  })),
+];
+
+/** Exact local printed conditions, with immutable task, page, selector and PDF bindings.
+ * This does not authorize a condition label on any other Japanese task.
  */
 export function assertJapaneseConditionLabel(card, review) {
   const rule = card.extraneousMaterialRule;
-  const expectedTask = card.year === 2012 && card.level === 'higher'
-    && /^ja-2012-hl-3b-[1-5]$/.test(card.id);
-  if (!expectedTask && rule?.conditionLabel === undefined) return;
-  const condition = 'quotation without manipulation where manipulation required or containing extraneous material';
-  const sourceText = `(Evidence needed that candidates have understood the text; ${condition}: half marks.`;
-  const expectedParts = [{ row: 14, group: 1 }, { row: 15, group: 0 }];
-  const bound = review?.sitting === '2012-hl'
+  const binding = combinedBindings.find(item => card.year === item.year && card.level === 'higher'
+    && new RegExp(`^ja-${item.year}-hl-${item.section.toLowerCase()}-[1-${item.count}]$`).test(card.id));
+  if (!binding && rule?.conditionLabel === undefined) return;
+  const bound = binding && review?.sitting === `${binding.year}-hl`
     && review.sources?.some(source => source.document === 'scheme'
-      && source.sha256 === 'f976e52a9df6dfb58cd5887e5d003fe5fe2307907d71d0cf515f083fd184e6d5')
-    && review.selectors?.some(selector => selector.document === 'scheme' && selector.page === 11
-      && selector.text === sourceText && JSON.stringify(selector.parts) === JSON.stringify(expectedParts));
-  if (!expectedTask || card.questionRef !== `2012 HL Section 3B Q${card.id.slice(-1)}`
-    || rule?.conditionLabel !== condition || rule.sourceText !== sourceText || rule.multiplier !== 0.5
-    || JSON.stringify(rule.schemePages) !== '[11]'
-    || !card.sourceEvidence?.generalSchemePages?.includes(11) || !bound) {
-    throw new Error(`${card.id}: combined response condition is not bound to the exact 2012 Higher Q3B source`);
+      && source.sha256 === binding.sha256)
+    && review.selectors?.some(selector => selector.document === 'scheme' && selector.page === binding.page
+      && selector.text === binding.sourceText && JSON.stringify(selector.parts) === JSON.stringify(binding.parts));
+  if (!binding || card.questionRef !== `${binding.year} HL Section ${binding.section} Q${card.id.slice(-1)}`
+    || rule?.conditionLabel !== combinedCondition || rule.sourceText !== binding.sourceText || rule.multiplier !== 0.5
+    || JSON.stringify(rule.schemePages) !== JSON.stringify([binding.page])
+    || !card.sourceEvidence?.generalSchemePages?.includes(binding.page) || !bound) {
+    throw new Error(`${card.id}: combined response condition is not bound to the exact ${binding?.year ?? card.year} Higher local source`);
   }
 }
