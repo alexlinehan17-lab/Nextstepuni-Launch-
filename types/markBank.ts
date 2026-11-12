@@ -290,6 +290,9 @@ export interface LinkedReading {
 }
 
 export interface CardSourceMaterial {
+  /** The SEC never published the recording this listening paper was set to (Irish 2010 Foundation aural, whose
+   * ledger records the audio as 'unavailable'): the reader says so, in one plain line, above its trigger. */
+  recordingUnpublished?: boolean;
   kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
@@ -346,6 +349,18 @@ export interface CardAudioMaterial {
   presentationNote: string;
 }
 
+/** Examination levels Mark Bank decks are built at. 'common' is a level the
+ *  SEC prints for a subject examined at one level (LCVP); 'foundation' is the
+ *  third level of the subjects that set one (Irish). */
+export type MarkBankLevel = 'higher' | 'ordinary' | 'common' | 'foundation';
+
+export const MARK_BANK_LEVEL_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation',
+};
+export const MARK_BANK_LEVEL_SHORT_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'HL', ordinary: 'OL', common: 'CL', foundation: 'FL',
+};
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -360,7 +375,7 @@ interface CardBase {
    * would make every card cite a Higher Level paper that does not exist, and
    * would hide it from a student whose profile says anything else.
    */
-  level: 'higher' | 'ordinary' | 'common';
+  level: MarkBankLevel;
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
@@ -705,6 +720,10 @@ export interface IrishAnswerRow {
    * = 4 mharc + 4 mharc" places at 0, 4 or 8; "Tréith 1 = 13 mharc" with a
    * published band table places anywhere from 0 to 13. Including 0 and `marks`. */
   steps?: number[];
+  /** Rows sharing a group are the printed alternatives for ONE point: a slash-joined scheme row
+   * ("Tráchtaire spóirt/Gaeilgeoir/Ciarraíoch/…") cut into its items. A group counts once, at its
+   * best claimed row, so the part scores exactly as the joined row did. */
+  group?: string;
 }
 
 /** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
@@ -734,9 +753,13 @@ export interface IrishCriterion {
   label: string;
   /** Awards add to the mark; deductions are subtracted from it. */
   kind: 'award' | 'deduction';
+  /** A published penalty may reduce this award only, never another response. */
+  deductFrom?: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: IrishGuidanceKind;
+  /** The scheme prints only this part's tariff, no answer (2012 Ordinary): its chip says "Tariff". */
+  tariffOnly?: boolean;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
   /** The exact guidance as claimable rows, where cards/irish/answers.ts could
@@ -1284,6 +1307,10 @@ export interface FrenchCriterion {
   bands?: { label: string; marks: number[]; guidance: string[] }[];
   /** The SEC withholds language marks if no communicative task is attempted. */
   requiresAttempt?: boolean;
+  /** The id of another criterion whose 0 forces this one to 0, where the scheme
+   *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
+   *  rule; absent on every card that prints none. */
+  zeroWhenZero?: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a

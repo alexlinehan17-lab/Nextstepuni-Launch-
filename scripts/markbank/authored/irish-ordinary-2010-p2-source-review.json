@@ -1,0 +1,342 @@
+{
+  "year": 2010,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP200IV.pdf",
+  "schemeFileid": "LC001GLP000EV.pdf",
+  "paperSha256": "101e8324e9c748700c8ec041aef9b647e7c25c15187b9c70e34a525c1644efd2",
+  "schemeSha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "schemeScope": "Combined Ordinary scheme (12 pages; the file is named LC001GLP000EV, its text is the Irish scheme). PDF 1–4 belong to Páipéar I; 5 Páipéar II intro and Roinn A Ceist 1 Prós Ainmnithe (a) (the three prescribed works, each (i) and (ii) restated with prices, (ii) split “3 + 3 = 6 marc” and “Dhá fháth = 2 mharc × 2 = 4 marc” (An Bhean Óg “= 4 marc”) either side of “= 10 marc”; no language deduction printed); 6 (b) (i) “= 20 marc” and (ii) “(10 marc × 2) = 20 marc”, the 0–3 deduction and the examiner’s Nóta, then Ceist 2 Filíocht Ainmnithe (a) Jack and Faoiseamh a Gheobhadsa (each (i)–(iv) restated with prices, (iv) “2 marc” + “4 marc × 2 = 8 marc”); 7 the 0–5 deduction, (b) on Gealt? “2 + 9 + 9 = 20marc” and “7 + 7 =14 marc” + “Íomhá … = 6 marc”, the 0 - 3 deduction and the Nóta, then Roinn B Ceist 1 Prós Roghnach (a), the folk tale; 8 the short story, (b) (i) “9 + 9 = 18 marc” and (ii) “= 9 marc × 2 = 18 marc” + title 2, the 0–3 deduction and the Nóta, then Ceist 2 Filíocht Roghnach (a) first option; 9 the second option, the 0–5 deduction, (b) (i) “(9 + 9) = 18 marc” and (ii) “= 12 marc” + “= 6 marc”, each + title 2, the 0 - 3 deduction and the Nóta. 10 the listening test; 11 Socruithe Réasúnta; 12 empty.",
+  "reviewMethod": "Every paper page (1 instructions, 2 Prós Ainmnithe, 3–4 Filíocht Ainmnithe with the three poems, 5 Prós Roghnach, 6 Filíocht Roghnach, 7–8 “Leathanach Bán”) and every applicable scheme page read in the text layer and checked against the printed page; each prompt and scheme slice is asserted against the PDFs by the builder, which also asserts that the Paper II scheme pages print no sample answer, answer bullet or band table, counts the six printed language deductions and asserts there is none under either prose (a). The scheme sets its multiplication sign in SymbolMT (U+F0B4), read as ×.",
+  "selectionDecisions": [
+    {
+      "page": 1,
+      "raw": "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+      "decision": "Paper structure: one whole question ((a) and (b), both answered) in prose and one in poetry; every printed question of either course is its own card carrying this instruction."
+    },
+    {
+      "page": 1,
+      "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+      "decision": "Choice is not a route: prose is the prescribed course (Roinn A Ceist 1) or the optional course (Roinn B Ceist 1); every printed question of both is its own card carrying this instruction."
+    },
+    {
+      "page": 1,
+      "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+      "decision": "Choice is not a route: poetry is the prescribed course (Roinn A Ceist 2) or the optional course (Roinn B Ceist 2); every printed question of both is its own card carrying this instruction."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Prós Ainmnithe: both (a) and (b) are answered; not a selection between them."
+    },
+    {
+      "page": 2,
+      "raw": "Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh",
+      "decision": "Prós Ainmnithe (b)(i): the candidate chooses one of the other prescribed works (open content inside one card); the slash names alternative texts of the course."
+    },
+    {
+      "page": 2,
+      "raw": "Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh.",
+      "decision": "Prós Ainmnithe (b)(ii): the same choice of work, inside one card."
+    },
+    {
+      "page": 2,
+      "raw": "NÓ",
+      "decision": "The “NÓ” between the three prescribed works of (a) and between (b)(i) and (b)(ii): each printed option is its own card (different works; (b) priced differently)."
+    },
+    {
+      "page": 2,
+      "raw": "Tabhair cuntas gairid ar dhá rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat.",
+      "decision": "Prós Ainmnithe (b)(ii): two required answers (one liked, one not), priced 10 × 2; not a menu."
+    },
+    {
+      "page": 2,
+      "raw": "a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann. Tabhair cuntas gairid ar a bhfuil",
+      "decision": "Prós Ainmnithe (b)(i): one theme from the printed list, inside one card."
+    },
+    {
+      "page": 2,
+      "raw": "ar thaitin (nó nár thaitin) sé leat. (Is leor dhá fháth.)",
+      "decision": "Prós Ainmnithe (a)(ii), An Cearrbhach Mac Cába: liked or not, two reasons suffice; not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "cén fáth ar thaitin (nó nár thaitin) sé leat.",
+      "decision": "Prós Ainmnithe (a)(ii), Coileach Ghleann Phádraig: liked or not; not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "fáth ar thaitin (nó nár thaitin) sé leat.",
+      "decision": "Prós Ainmnithe (a)(ii), An Bhean Óg: liked or not; not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "greann grá (nó fuath) an óige (nó an tseanaois)",
+      "decision": "Prós Ainmnithe (b)(i): the printed theme list (first row); one theme is chosen inside one card."
+    },
+    {
+      "page": 2,
+      "raw": "sa saothar faoin téama atá roghnaithe agat.",
+      "decision": "Prós Ainmnithe (b)(i): the account of the chosen theme; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Filíocht Ainmnithe (a)(iv), Faoiseamh a Gheobhadsa: two reasons suffice; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Filíocht Ainmnithe (a)(iv), Jack: two reasons suffice; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Dob é an samhradh so mo rogha ’pháirtí é.",
+      "decision": "Poem text (Jack); not an instruction."
+    },
+    {
+      "page": 3,
+      "raw": "Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán.",
+      "decision": "Filíocht Ainmnithe (a)(ii), Faoiseamh a Gheobhadsa: describe the two emotions named; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Filíocht Ainmnithe: both (a) and (b) are answered; not a selection between them."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá mhothúchán atá sa dán.",
+      "decision": "Filíocht Ainmnithe (a)(ii), Faoiseamh a Gheobhadsa: two required answers inside one 8-mark sub-question; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin",
+      "decision": "Filíocht Ainmnithe (a)(ii), Jack: two required answers inside one 8-mark sub-question; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine.",
+      "decision": "Filíocht Ainmnithe (a)(iii), Faoiseamh a Gheobhadsa: three required answers inside one 9-mark sub-question; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "NÓ",
+      "decision": "The “NÓ” between the two prescribed poems of (a): each poem is its own card."
+    },
+    {
+      "page": 3,
+      "raw": "ar an dá íomhá sin sa dán.",
+      "decision": "Filíocht Ainmnithe (a)(ii), Jack: the two images named; not a selection."
+    },
+    {
+      "page": 4,
+      "raw": "Maidir leis an dán Gealt? (thíos), roghnaigh mothúchán amháin as an liosta seo a leanas agus",
+      "decision": "Filíocht Ainmnithe (b)(i): one emotion from the printed list, inside one card."
+    },
+    {
+      "page": 4,
+      "raw": "NÓ",
+      "decision": "The “NÓ” between (b)(i) and (b)(ii) on Gealt?: priced differently (2 + 9 + 9; 7 + 7 + 6), a card each."
+    },
+    {
+      "page": 4,
+      "raw": "agus ar íomhá (pictiúr) amháin sa dán sin a thaitin (nó nár thaitin) leat.",
+      "decision": "Filíocht Ainmnithe (b)(ii): one image, liked or not; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "an raibh an ghealt i mbaol nó tré thine nó in airde ar chrann",
+      "decision": "Poem text (Gealt?); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "tabhair cuntas gairid ar a bhfuil sa dán faoin mothúchán atá roghnaithe agat.",
+      "decision": "Filíocht Ainmnithe (b)(i): the account of the chosen emotion; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "(nó nár thaitin) sé leat. Is leor dhá fháth.",
+      "decision": "Prós Roghnach (a)(ii), short story: liked or not, two reasons suffice; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "Déan cur síos gairid ar charachtar amháin sa ghearrscéal sin agus inis cén fáth ar thaitin",
+      "decision": "Prós Roghnach (a)(ii), short story: one character; not a menu."
+    },
+    {
+      "page": 5,
+      "raw": "Déan cur síos gairid ar ghné amháin den scéal sin agus inis cén fáth ar thaitin (nó",
+      "decision": "Prós Roghnach (a)(ii), folk tale: one feature of the tale; not a menu."
+    },
+    {
+      "page": 5,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Prós Roghnach: both (a) and (b) are answered; not a selection between them."
+    },
+    {
+      "page": 5,
+      "raw": "NÓ",
+      "decision": "The “NÓ” between the folk tale and the short story of (a) (priced differently: a card each) and between (b)(i) and (b)(ii) (marked alike: one card)."
+    },
+    {
+      "page": 5,
+      "raw": "an óige (nó an tseanaois)",
+      "decision": "Prós Roghnach (b)(i): one entry of the printed theme list; one theme is chosen inside one card."
+    },
+    {
+      "page": 5,
+      "raw": "ar dhuine amháin de na carachtair ann.",
+      "decision": "Prós Roghnach (a)(i), folk tale: one character; not a menu."
+    },
+    {
+      "page": 5,
+      "raw": "atá roghnaithe agat.",
+      "decision": "Prós Roghnach (b)(i): the account of the chosen theme; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "grá (nó fuath)",
+      "decision": "Prós Roghnach (b)(i): one entry of the printed theme list; one theme is chosen inside one card."
+    },
+    {
+      "page": 5,
+      "raw": "nár thaitin) sí leat. Is leor dhá fháth.",
+      "decision": "Prós Roghnach (a)(ii), folk tale: liked or not, two reasons suffice; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat.",
+      "decision": "Prós Roghnach (b)(ii): two required answers (one liked, one not), priced 9 × 2; not a menu."
+    },
+    {
+      "page": 5,
+      "raw": "tú i gcuid (a) thuas, roghnaigh saothar amháin díobh a bhfuil ceann amháin de na",
+      "decision": "Prós Roghnach (b)(i): one other work, not used in (a), with one theme; open content inside one card."
+    },
+    {
+      "page": 5,
+      "raw": "tú i gcuid (a) thuas, roghnaigh saothar amháin díobh. Tabhair cuntas gairid ar dhá",
+      "decision": "Prós Roghnach (b)(ii): one other work, not used in (a); open content inside one card."
+    },
+    {
+      "page": 5,
+      "raw": "– CÚRSA ROGHNACH –",
+      "decision": "Section heading of Roinn B, the optional course; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "– PRÓS ROGHNACH –",
+      "decision": "Question heading of Roinn B Ceist 1; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "An dóigh leat go bhfuil teideal an dáin seo oiriúnach? Cuir fáth amháin le do fhreagra. (8 marc)",
+      "decision": "Filíocht Roghnach (a)(iii), first option: one reason; not a menu."
+    },
+    {
+      "page": 6,
+      "raw": "Ar thaitin an dán leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "decision": "Filíocht Roghnach (a)(iv), first option: two reasons suffice; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Filíocht Roghnach (a)(iv), second option: two reasons suffice; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "decision": "Question heading of Roinn B Ceist 2; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Filíocht Roghnach: both (a) and (b) are answered; not a selection between them."
+    },
+    {
+      "page": 6,
+      "raw": "Maidir le dán nua-aimseartha amháin a chum bean agus a ndearna tú staidéar air",
+      "decision": "Filíocht Roghnach (a), first option: one modern poem by a woman (open content inside one card)."
+    },
+    {
+      "page": 6,
+      "raw": "Maidir le dán nua-aimseartha amháin a chum fear nó bean agus a ndearna tú staidéar",
+      "decision": "Filíocht Roghnach (a), second option: one modern poem by a man or a woman (open content inside one card); the two options are priced differently, a card each."
+    },
+    {
+      "page": 6,
+      "raw": "NÓ",
+      "decision": "The “NÓ” between the two options of (a) and between (b)(i) and (b)(ii): priced differently, a card each."
+    },
+    {
+      "page": 6,
+      "raw": "Roghnaigh dhá íomhá (pictiúr) a úsáideann an file sa dán seo agus déan cur síos orthu",
+      "decision": "Filíocht Roghnach (a)(ii), first option: two required images, priced 4 × 2; not a menu."
+    },
+    {
+      "page": 6,
+      "raw": "Scríobh nóta gairid faoi rud amháin sa dán a bhí suimiúil, dar leat.",
+      "decision": "Filíocht Roghnach (a)(iii), second option: one thing; not a menu."
+    },
+    {
+      "page": 6,
+      "raw": "ar cheann amháin de na mothúcháin seo a leanas mar a léirítear é sa dán a roghnaigh tú.",
+      "decision": "Filíocht Roghnach (b)(i): one emotion from the printed list, inside one card."
+    },
+    {
+      "page": 6,
+      "raw": "fhreagra. (Is leor dhá fháth.)",
+      "decision": "Filíocht Roghnach (a)(i), second option: two reasons suffice; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid",
+      "decision": "Filíocht Roghnach (b)(i): one other poem by a woman, not used in (a); open content inside one card."
+    },
+    {
+      "page": 6,
+      "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid ar",
+      "decision": "Filíocht Roghnach (b)(ii): one other poem by a woman, not used in (a); open content inside one card."
+    },
+    {
+      "page": 6,
+      "raw": "phríomhsmaointe an dáin sin agus ar íomhá (pictiúr) sa dán a thaitin (nó nár thaitin) leat.",
+      "decision": "Filíocht Roghnach (b)(ii): the main ideas and one image, liked or not; not a menu."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Páipéar II (110) before 2012 is literature only: one whole question in prose and one in poetry, each from the prescribed course (Roinn A) or the optional course (Roinn B); each question is 55 = (a) 35 + (b) 20, both answered. Choice is not a route; no combination cards.",
+    "The scheme prints no answers: every ask restated with its price, and some prices split. Every award criterion is the restatement claimed at its printed price (or the totals its printed parts make), marked tariffOnly; each card says “The scheme prints no answer for this part.”",
+    "Language: one deduction per part where the scheme prints one (0–5 under Filíocht Ainmnithe (a) and Filíocht Roghnach (a); 0–3 under each (b)). The scheme prints none under Prós Ainmnithe (a) or Prós Roghnach (a) (its Nóta names an (a) deduction but prints no range): those cards carry no deduction criterion, and their note says so.",
+    "Cards: Prós Ainmnithe (a) a card per prescribed work (three), (b)(i) and (b)(ii) a card each (20 whole; 10 × 2); Filíocht Ainmnithe (a) a card per poem (two), (b)(i) and (b)(ii) a card each; Prós Roghnach (a) the folk tale and the short story a card each (priced differently), (b) one card carrying (i) and (ii) (9 + 9 and 9 × 2, marked alike); Filíocht Roghnach (a) a card per option (priced differently), (b)(i) and (b)(ii) a card each; and a practice card for every prescribed-course (a) sub-question (14)."
+  ],
+  "sourceFindings": [
+    "Páipéar II = 110: prose 55 (Roinn A Ceist 1 or Roinn B Ceist 1) and poetry 55 (Roinn A Ceist 2 or Roinn B Ceist 2); each (a) 35 + (b) 20.",
+    "Prós Roghnach (a), short story: the scheme restates (i) as “Cuntas ar an mothúchán is láidre sa ghearrscéal = 23 marc” where the paper asks “tabhair cuntas ar na príomhimeachtaí (rudaí) a tharla sa ghearrscéal sin”. Kept as printed; the card carries a source note.",
+    "Filíocht Roghnach (a), second option: the scheme numbers the title question “(iv)” (it is the paper’s (ii)) and prices “Teideal an dáin oiriúnach? = 4 marc” + “Fáth amháin le do fhreagra = 4 marc”, where the paper asks only whether the title suits (8). The criterion carries the scheme’s prices without its misprinted number; the card carries a source note.",
+    "An Bhean Óg (a)(ii): the scheme prices the reasons “Fáth ar/nár thaitin sé leat. = 4 marc” whole, where the other two works print “Dhá fháth = 2 marc × 2”.",
+    "No language deduction is printed under Prós Ainmnithe (a) or Prós Roghnach (a) (PDF 5, 7–8); the Nóta after each prose question names the (a) deduction without a range.",
+    "Scheme misprints kept as printed: “Fáth ar/nár thaitin ?”, “ghearrrscéil”, “20marc”, “=14 marc”, “Pearsa a thaitin(nó nár thaitin)leat”.",
+    "Paper and scheme differ in wording, each kept as printed: Faoiseamh a Gheobhadsa (iv) “An maith leat an dán seo?” (the scheme: “Ar thaitin an dán leat?”)."
+  ],
+  "remainingWork": []
+}

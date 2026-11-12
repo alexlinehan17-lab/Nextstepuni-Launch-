@@ -27,6 +27,7 @@ import sys
 DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, DIR)
 import tech_crops as TC                                      # noqa: E402
+import tech_degrees as TD                                    # noqa: E402
 from tech_scheme import TARIFF, BAND                         # noqa: E402
 
 PAGE_MARK = re.compile(r'^##\s*Page\s*(\d+)\s*$')
@@ -54,18 +55,63 @@ def clean(year, level):
                 page = int(pm.group(1)) - 1
                 out.append(raw)
                 continue
+            # tech_crops.MD_LINE_FIX: a drawing's lettering the row rule
+            # cannot place (rotated, or welded onto prose), a tariff printed
+            # beside an answer's first line, a head set on its neighbour's
+            # line -- each one named, and each one only moves or removes.
+            fixed = raw
+            for pattern, repl in TC.MD_LINE_FIX.get((year, level), ()):
+                fixed = re.sub(pattern, repl, fixed)
+            if fixed != raw:
+                changes.append((page + 1, raw.strip(), fixed.strip()))
+                for part in fixed.split('\n'):
+                    if part.strip():
+                        out.append(part)
+                continue
             text = raw.strip()
             rects = TC.scheme_zones(year, level, page) if text else []
-            if not rects or TARIFF.search(text) or BAND.search(text):
+            if not rects or TARIFF.search(text) or BAND.search(text) \
+                    or text in TC.MD_KEEP.get((year, level, page), ()):
                 out.append(raw)
                 continue
             got = TC.strip_row_labels(text, pdf, page, rects)
             if got is None or got == text:
                 out.append(raw)
                 continue
+            # The fixes once more on the stripped line, so a run over an
+            # already-cleaned .md does what a run over the raw one did.
+            for pattern, repl in TC.MD_LINE_FIX.get((year, level), ()):
+                got = re.sub(pattern, repl, got)
             changes.append((page + 1, text, got))
             if got:
-                out.append(got)
+                out.extend(part for part in got.split('\n') if part.strip())
+    # tech_degrees: the scheme's raised "o" degree signs, each proven from the
+    # PDF's spans on that page, written as the degree sign the page prints.
+    proven = TD.scheme_proofs(year, level)
+    if proven:
+        # Never more of one form on a page than the page proves.
+        page, seen = 0, {}
+        for line in out:
+            pm = PAGE_MARK.match(line)
+            if pm:
+                page = int(pm.group(1)) - 1
+            elif page in proven:
+                for key in proven[page]:
+                    seen[(page, key)] = seen.get((page, key), 0) + len(TD.pattern(*key).findall(line))
+        for (pg, key), n in seen.items():
+            if n > proven[pg][key]:
+                raise SystemExit(f'tech_mdclean: {year} {level} page {pg + 1}: {n} x {key[0]}o, {proven[pg][key]} proven')
+        page = 0
+        for i, line in enumerate(out):
+            pm = PAGE_MARK.match(line)
+            if pm:
+                page = int(pm.group(1)) - 1
+                continue
+            if page in proven:
+                got, n = TD.repair(line, proven[page])
+                if n:
+                    changes.append((page + 1, line.strip(), got.strip()))
+                    out[i] = got
     return '\n'.join(out), changes
 
 
@@ -74,6 +120,12 @@ def main():
     ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
     total = 0
+    cleaned = set(sittings())
+    for name in sorted(os.listdir(TC.SCHEMES)):
+        m = re.fullmatch(r'(\d{4})-(hl|ol)\.md', name)
+        if m and (int(m.group(1)), m.group(2)) not in cleaned \
+                and TD.scheme_proofs(int(m.group(1)), m.group(2)):
+            raise SystemExit(f'tech_mdclean: {name} prints degree signs but is not a cleaned sitting')
     for year, level in sittings():
         new, changes = clean(year, level)
         if new is None:

@@ -139,6 +139,253 @@ CORE = [
 
 CORE = [(t, re.compile('|'.join(words), re.I)) for t, words in CORE]
 
+# Cards whose first keyword hit is the wrong shelf, read one by one (2010-2019,
+# the Technology lane of 4 November 2026). The keyword order is right for most
+# asks and stays; these name a heading their words lose to an earlier list --
+# "Work Breakdown Structure" is project planning, not structures; a question
+# whose STEM is about solar panels can ask about structural strength.
+TOPIC_OVERRIDES = {
+    # 2019 Higher.
+    'tech-2019-hl-a1-i': 'tech-core-design',       # impact of technology on research,
+    'tech-2019-hl-a1-ii': 'tech-core-design',      # prototyping and manufacture of a product
+    'tech-2019-hl-a1-iii': 'tech-core-design',
+    'tech-2019-hl-a5': 'tech-core-project',        # work breakdown structure
+    'tech-2019-hl-a7': 'tech-core-design',         # product lifecycle phases
+    'tech-2019-hl-a12': 'tech-core-design',        # testing against a design specification
+    'tech-2019-hl-b2b-i': 'tech-core-structures',  # two-axis movement mechanism
+    'tech-2019-hl-b2d': 'tech-core-structures',    # techniques to enhance structural strength
+    'tech-2019-hl-b3b-iii': 'tech-core-materials', # joining the belt's sections
+    'tech-2019-hl-b3d-ii': 'tech-core-structures', # mechanism to adjust the incline
+    'tech-2019-hl-b3c-ii': 'tech-core-energy',     # a treadmill's sensing system
+    # 2019 Ordinary.
+    'tech-2019-ol-a1-i': 'tech-core-materials',    # safety signs (health and safety)
+    'tech-2019-ol-a1-ii': 'tech-core-materials',
+    'tech-2019-ol-a4-i': 'tech-core-ict',          # driverless cars
+    'tech-2019-ol-a4-ii': 'tech-core-ict',
+    'tech-2019-ol-a8': 'tech-core-design',         # universal design
+    'tech-2019-ol-b2a-ii': 'tech-core-materials',  # manufacturing by CAM
+    'tech-2019-ol-b2c-ii': 'tech-core-project',    # consequences of faulty goods (quality)
+    'tech-2019-ol-b3a-i': 'tech-core-ict',         # virtual technology in education
+    'tech-2019-ol-b3a-ii': 'tech-core-ict',
+    'tech-2019-ol-b3b-iii': 'tech-core-materials', # manufacturing the VR viewer
+    'tech-2019-ol-b3d-i': 'tech-core-energy',      # greenhouse gas emissions
+    # 2018 Higher.
+    'tech-2018-hl-a1-ii': 'tech-core-materials',   # computer aided manufacture
+    'tech-2018-hl-a13': 'tech-core-graphics',      # orthographic views (of an IC chip)
+    'tech-2018-hl-b2c-i': 'tech-core-ict',         # drone fleet giving on-line coverage
+    'tech-2018-hl-b3b-i': 'tech-core-materials',   # choosing the casing's plastic
+    'tech-2018-hl-b3c-i': 'tech-core-ict',         # paperless ticketing (computer control)
+    'tech-2018-hl-b3c-ii': 'tech-core-ict',
+    'tech-2018-hl-b3d-i': 'tech-core-materials',   # workplace and workshop safety
+    'tech-2018-hl-b3d-ii': 'tech-core-materials',
+    # 2018 Ordinary.
+    'tech-2018-ol-a1-i': 'tech-core-materials',    # PPE and its safety sign
+    'tech-2018-ol-a1-ii': 'tech-core-materials',
+    'tech-2018-ol-a2': 'tech-core-materials',      # air pollution, an air purifier
+    'tech-2018-ol-a3': 'tech-core-materials',      # 3D printing a product
+    'tech-2018-ol-b2a-i': 'tech-core-materials',   # a plastic wheelbarrow pan
+    'tech-2018-ol-b2a-ii': 'tech-core-structures', # two wheels: balance, load
+    'tech-2018-ol-b3a-i': 'tech-core-materials',   # plastic base, metal pole
+    'tech-2018-ol-b3a-ii': 'tech-core-materials',  # producing the plastic base
+    'tech-2018-ol-b3d-i': 'tech-core-design',      # prototypes
+    'tech-2018-ol-b3d-ii': 'tech-core-design',
+    'tech-2018-ol-a9': 'tech-core-materials',      # steps to manufacture a stand
+    # 2017 Higher.
+    'tech-2017-hl-a9-i': 'tech-core-ict',          # a wifi hotspot
+    'tech-2017-hl-a10': 'tech-core-materials',     # disposing of car materials
+    'tech-2017-hl-a14-i': 'tech-core-materials',   # CAM and CNC
+    'tech-2017-hl-a14-ii': 'tech-core-materials',  # pick and place in production
+    'tech-2017-hl-a15': 'tech-core-graphics',      # sketch the assembled phone
+    'tech-2017-hl-b2b-ii': 'tech-core-structures', # a 30:1 speed-up mechanism
+    'tech-2017-hl-b2b-iii': 'tech-core-structures',# bearings against friction
+    'tech-2017-hl-b2c-ii': 'tech-core-structures', # fixing a tower to its base
+    'tech-2017-hl-b2d': 'tech-core-materials',     # pillars of sustainability
+    'tech-2017-hl-b3a-i': 'tech-core-ict',         # wearable technology
+    'tech-2017-hl-b3b-i': 'tech-core-design',      # ergonomic design
+    'tech-2017-hl-b3b-ii': 'tech-core-ict',        # GPS monitoring
+    'tech-2017-hl-b3c-i': 'tech-core-materials',   # assembling the moulded casing
+    'tech-2017-hl-b3c-ii': 'tech-core-materials',  # a light yet durable casing
+    'tech-2017-hl-b3d-i': 'tech-core-project',     # quality characteristics
+    'tech-2017-hl-b3d-ii': 'tech-core-project',    # work breakdown structure
+    # 2017 Ordinary.
+    'tech-2017-ol-a1': 'tech-core-design',         # an accessible door handle
+    'tech-2017-ol-a2': 'tech-core-ict',            # remote heating control
+    'tech-2017-ol-a3': 'tech-core-materials',      # a portable washing machine
+    'tech-2017-ol-a5': 'tech-core-materials',      # safety signs
+    'tech-2017-ol-a8': 'tech-core-project',        # work breakdown structure
+    'tech-2017-ol-b2a-ii': 'tech-core-ict',        # wearable technologies
+    'tech-2017-ol-b2b-i': 'tech-core-materials',   # a plastic outer shell
+    'tech-2017-ol-b2b-ii': 'tech-core-materials',
+    'tech-2017-ol-b2b-iii': 'tech-core-materials', # vacuum forming
+    'tech-2017-ol-b2d-i': 'tech-core-project',     # the CE mark (quality)
+    'tech-2017-ol-b3a-i': 'tech-core-materials',   # hardwood for the base
+    'tech-2017-ol-b3a-ii': 'tech-core-materials',  # self-assembly products
+    'tech-2017-ol-b3d-i': 'tech-core-project',     # problem-solving tools
+    'tech-2017-ol-b3d-ii': 'tech-core-materials',  # tubular materials
+    # 2016 Higher.
+    'tech-2016-hl-a2-i': 'tech-core-ict',          # infrared communication
+    'tech-2016-hl-a2-ii': 'tech-core-ict',
+    'tech-2016-hl-a3': 'tech-core-materials',      # food miles (sustainability)
+    'tech-2016-hl-a4-i': 'tech-core-ict',          # remote monitoring
+    'tech-2016-hl-a4-ii': 'tech-core-materials',   # hardness
+    'tech-2016-hl-a7-i': 'tech-core-materials',    # environmental impact of soldering
+    'tech-2016-hl-a7-ii': 'tech-core-materials',
+    'tech-2016-hl-a8': 'tech-core-project',        # product reliability (quality)
+    'tech-2016-hl-a14': 'tech-core-design',        # ergonomic features
+    'tech-2016-hl-b2a-i': 'tech-core-ict',         # telemedicine
+    'tech-2016-hl-b2a-ii': 'tech-core-ict',
+    'tech-2016-hl-b2b-i': 'tech-core-structures',  # motion of the prosthetic hand
+    'tech-2016-hl-b2b-ii': 'tech-core-structures',
+    'tech-2016-hl-b2b-iii': 'tech-core-materials', # material for the linkages
+    'tech-2016-hl-b2c-i': 'tech-core-structures',  # factor of safety
+    'tech-2016-hl-b3c-ii': 'tech-core-structures', # chain and belt drives
+    'tech-2016-hl-b3d-i': 'tech-core-project',     # Gantt chart
+    'tech-2016-hl-b3d-ii': 'tech-core-project',
+    # 2016 Ordinary.
+    'tech-2016-ol-a5-i': 'tech-core-project',      # Gantt chart
+    'tech-2016-ol-a5-ii': 'tech-core-project',
+    'tech-2016-ol-a6': 'tech-core-materials',      # 3D printing a prototype
+    'tech-2016-ol-b2a-ii': 'tech-core-structures', # mechanism to adjust the container's height
+    'tech-2016-ol-b2c-i': 'tech-core-project',     # product recall (quality)
+    'tech-2016-ol-b2c-ii': 'tech-core-project',
+    'tech-2016-ol-b3b-ii': 'tech-core-structures', # mechanism to rotate the camera
+    # 2015 Higher.
+    'tech-2015-hl-a2-i': 'tech-core-design',       # researching a workstation design
+    'tech-2015-hl-a2-ii': 'tech-core-design',
+    'tech-2015-hl-a5': 'tech-core-materials',      # safety signs
+    'tech-2015-hl-a4': 'tech-core-materials',      # robotic materials handling
+    'tech-2015-hl-a11-i': 'tech-core-materials',   # CNC and CAM
+    'tech-2015-hl-a11-ii': 'tech-core-materials',
+    'tech-2015-hl-a14': 'tech-core-project',       # work breakdown structure
+    'tech-2015-hl-a12-ii': 'tech-core-materials',  # pillar drill safety features
+    'tech-2015-hl-b2a-i': 'tech-core-ict',         # self-driving cars
+    'tech-2015-hl-b2a-ii': 'tech-core-ict',
+    'tech-2015-hl-b2b-i': 'tech-core-ict',         # parking-space location systems
+    'tech-2015-hl-b2b-ii': 'tech-core-ict',        # bumper radar
+    'tech-2015-hl-b2c-i': 'tech-core-project',     # quality dimensions
+    'tech-2015-hl-b2c-ii': 'tech-core-project',    # problem-solving technique (quality)
+    'tech-2015-hl-b3a-i': 'tech-core-ict',         # technology staging sporting events
+    'tech-2015-hl-b3a-ii': 'tech-core-design',     # sponsorship (target market)
+    'tech-2015-hl-b3b-i': 'tech-core-structures',  # pulley system
+    'tech-2015-hl-b3b-ii': 'tech-core-structures',
+    'tech-2015-hl-b3b-iii': 'tech-core-structures',
+    'tech-2015-hl-b3c-i': 'tech-core-structures',  # tilting and locking mechanism
+    'tech-2015-hl-b3c-ii': 'tech-core-structures', # wheels turning in opposite directions
+    'tech-2015-hl-b3d-ii': 'tech-core-ict',        # video image quality
+    # 2015 Ordinary.
+    'tech-2015-ol-a1': 'tech-core-design',         # a multi-tool meeting a user's needs
+    'tech-2015-ol-a5': 'tech-core-materials',      # band saw safety
+    'tech-2015-ol-a6': 'tech-core-structures',     # lever
+    'tech-2015-ol-a7': 'tech-core-graphics',       # 2D sketch of the bench
+    'tech-2015-ol-a9': 'tech-core-structures',     # toothed belt drive
+    'tech-2015-ol-a12': 'tech-core-graphics',      # graphic techniques
+    'tech-2015-ol-b2b-iii': 'tech-core-materials', # a casing and its fixing
+    'tech-2015-ol-b2d-i': 'tech-core-project',     # quality attributes
+    'tech-2015-ol-b2d-ii': 'tech-core-project',    # costs of improving quality
+    'tech-2015-ol-b3a-ii': 'tech-core-materials',  # material for protective gloves
+    'tech-2015-ol-b3b-i': 'tech-core-materials',   # the PTO guard (safety)
+    'tech-2015-ol-b3b-ii': 'tech-core-structures', # universal joints
+    'tech-2015-ol-b3b-iii': 'tech-core-structures',# speed reduction mechanism
+    'tech-2015-ol-b3c-i': 'tech-core-graphics',    # CAD
+    'tech-2015-ol-b3c-ii': 'tech-core-materials',  # CAM
+    # 2014 Higher.
+    'tech-2014-hl-a1': 'tech-core-materials',      # incineration (waste, environment)
+    'tech-2014-hl-a2': 'tech-core-materials',      # smart fabrics
+    'tech-2014-hl-a3': 'tech-core-materials',      # HDPE, thermoplastics
+    'tech-2014-hl-a7': 'tech-core-design',         # ergonomic laptop stand
+    'tech-2014-hl-a10': 'tech-core-design',        # rapid prototyping
+    'tech-2014-hl-a14': 'tech-core-ict',           # social networking
+    'tech-2014-hl-b2d': 'tech-core-materials',     # shin guard materials and fastening
+    'tech-2014-hl-b3b': 'tech-core-structures',    # torque, drive mechanism
+    'tech-2014-hl-b3c': 'tech-core-ict',           # bitmap and vector images
+    # 2014 Ordinary.
+    'tech-2014-ol-a1': 'tech-core-materials',      # a gas pipeline (environment)
+    'tech-2014-ol-a2': 'tech-core-graphics',       # sketches of drilling terms
+    'tech-2014-ol-a3': 'tech-core-materials',      # a safety sign, printing it
+    'tech-2014-ol-a8': 'tech-core-structures',     # reciprocating motion
+    'tech-2014-ol-a10': 'tech-core-materials',     # steps to manufacture the fan
+    'tech-2014-ol-a11': 'tech-core-project',       # cost of quality
+    'tech-2014-ol-b2b': 'tech-core-structures',    # caissons, platform, triangulation
+    'tech-2014-ol-b2c': 'tech-core-ict',           # GPS
+    'tech-2014-ol-b3a': 'tech-core-materials',     # acrylic, battery access
+    'tech-2014-ol-b3d': 'tech-core-energy',        # PCB and soldering
+    # 2013 Higher.
+    'tech-2013-hl-a2': 'tech-core-design',         # toy safety criteria
+    'tech-2013-hl-a3': 'tech-core-structures',     # geodesic domes
+    'tech-2013-hl-a4': 'tech-core-design',         # model making, simulation, CAD
+    'tech-2013-hl-a5': 'tech-core-design',         # market research
+    'tech-2013-hl-a12': 'tech-core-project',       # process time, productivity
+    'tech-2013-hl-a14': 'tech-core-materials',     # materials for the bag's parts
+    'tech-2013-hl-b2b': 'tech-core-design',        # sustainability, ergonomics, marketing
+    # 2013 Ordinary.
+    'tech-2013-ol-a1': 'tech-core-ict',            # libraries' storage of information
+    'tech-2013-ol-a4': 'tech-core-energy',         # DPDT switch
+    'tech-2013-ol-a5': 'tech-core-materials',      # scroll saw safety
+    'tech-2013-ol-a8': 'tech-core-design',         # designed with sustainability in mind
+    'tech-2013-ol-a9': 'tech-core-structures',     # bevel gears
+    'tech-2013-ol-a11': 'tech-core-ict',           # QR codes
+    'tech-2013-ol-b2b': 'tech-core-materials',     # the alarm's casing and its manufacture
+    'tech-2013-ol-b2c': 'tech-core-project',       # work breakdown structure, Gantt chart
+    'tech-2013-ol-b3a': 'tech-core-materials',     # modern materials in sports equipment
+    'tech-2013-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
+    # 2011 Ordinary.
+    'tech-2011-ol-a2': 'tech-core-materials',      # concrete, a composite
+    'tech-2011-ol-a3': 'tech-core-energy',         # OR gate, truth table
+    'tech-2011-ol-a5': 'tech-core-design',         # design questions for the rescue pod
+    'tech-2011-ol-b2a': 'tech-core-materials',     # the torch body's material
+    'tech-2011-ol-b3a': 'tech-core-materials',     # vacuum formed housing, shell structure
+    'tech-2011-ol-b3c': 'tech-core-graphics',      # text and logos on the housing
+    'tech-2011-ol-b3d': 'tech-core-project',       # WBS, health and safety
+    # 2011 Higher.
+    'tech-2011-hl-a2': 'tech-core-materials',      # workshop safety, MDF and soldering
+    'tech-2011-hl-a6-i': 'tech-core-materials',    # smart materials
+    'tech-2011-hl-a6-ii': 'tech-core-materials',   # thermochromic indicator
+    'tech-2011-hl-a8': 'tech-core-project',        # work breakdown structure
+    'tech-2011-hl-a10': 'tech-core-design',        # ergonomics
+    'tech-2011-hl-a11': 'tech-core-materials',     # thermal properties of materials
+    'tech-2011-hl-b2a': 'tech-core-materials',     # mining, drilling a pilot hole
+    'tech-2011-hl-b2b': 'tech-core-design',        # rescue capsule design
+    'tech-2011-hl-b2d': 'tech-core-ict',           # satellite, internet, optical fibre
+    'tech-2011-hl-b3b': 'tech-core-structures',    # worm and wheel, tilt mechanism
+    'tech-2011-hl-b3d': 'tech-core-project',       # critical path, Gantt chart
+    # 2012 Ordinary.
+    'tech-2012-ol-a8': 'tech-core-ict',            # social media sites
+    'tech-2012-ol-a9': 'tech-core-materials',      # the EPA (environment)
+    'tech-2012-ol-a10': 'tech-core-project',       # work breakdown structure
+    'tech-2012-ol-b2a': 'tech-core-materials',     # thermoplastic, hardwood, joining
+    'tech-2012-ol-b2c': 'tech-core-project',       # Gantt chart
+    'tech-2012-ol-b3a': 'tech-core-materials',     # vacuum forming mould
+    'tech-2012-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
+    # 2012 Higher.
+    'tech-2012-hl-a2': 'tech-core-materials',      # corrugated cardboard
+    'tech-2012-hl-a4': 'tech-core-design',         # anthropometrics, a chrome finish
+    'tech-2012-hl-a8': 'tech-core-project',        # work breakdown structure
+    'tech-2012-hl-a9': 'tech-core-ict',            # barcode systems
+    'tech-2012-hl-a12': 'tech-core-structures',    # bearings, lubrication
+    'tech-2012-hl-b2a': 'tech-core-design',        # models of the stadium
+    'tech-2012-hl-b2c': 'tech-core-design',        # product life cycle
+    'tech-2012-hl-b2d': 'tech-core-ict',           # online advertising
+    'tech-2012-hl-b3a': 'tech-core-energy',        # hybrid cars
+    'tech-2012-hl-b3c': 'tech-core-design',        # simulation and prototypes
+    'tech-2012-hl-b3d': 'tech-core-structures',    # steering mechanism
+    # 2010 Higher.
+    'tech-2010-hl-a11': 'tech-core-project',       # table of tasks, critical path
+    'tech-2010-hl-a14': 'tech-core-materials',     # materials for a skateboard
+    'tech-2010-hl-b2c': 'tech-core-project',       # reliability, conformance (quality)
+    'tech-2010-hl-b2d': 'tech-core-materials',     # spheres of sustainability, waste
+    'tech-2010-hl-b3a': 'tech-core-design',        # designing for car safety
+    'tech-2010-hl-b3d': 'tech-core-materials',     # helmet shell and lining materials
+    # 2010 Ordinary.
+    'tech-2010-ol-a1': 'tech-core-materials',      # solder, soldering safety
+    'tech-2010-ol-a5': 'tech-core-design',         # research and investigation
+    'tech-2010-ol-a9': 'tech-core-graphics',       # 3D sketch of the socket
+    'tech-2010-ol-b2a': 'tech-core-materials',     # the buggy body's material and process
+    'tech-2010-ol-b2c': 'tech-core-ict',           # sketches into an electronic portfolio
+    'tech-2010-ol-b3a': 'tech-core-materials',     # processes for the acrylic holder
+    'tech-2010-ol-b3b': 'tech-core-materials',     # making the side, template, adhesive
+    'tech-2010-ol-b3c': 'tech-core-design',        # scale model, work breakdown structure
+}
+
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]
 
 

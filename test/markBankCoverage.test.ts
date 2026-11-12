@@ -51,6 +51,12 @@ import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/or
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
+// Irish ships authored.json plus one reviewed manifest per paper component;
+// mirror reconcile.py by reading exactly the manifests factory.ts imports.
+const irishManifests = (): string[] => [...readFileSync(resolve(
+  __dirname, '..', 'components', 'MarkBank', 'cards', 'irish', 'factory.ts'), 'utf8')
+  .matchAll(/^import \w+ from '\.\/([\w-]+\.json)';/gm)].map((m) => m[1]);
+
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   if (subject === 'french') {
@@ -206,7 +212,16 @@ describe('Mark Bank paper-coverage ratchet', () => {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?$/.test(ref);
         }
         if (subject === 'irish') {
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
+          // Generated 2021–2025 corpus plus the reviewed components: listening
+          // segments and their printed questions (the 2026 papers drop the
+          // "Cluastuiscint" prefix), reading parts down to an answer slot,
+          // and Irish-headed literature routes named after their text. A slot is
+          // named by the scheme's own unit (2023 HL A 6(b) prices "Tréith 1/2", 2020 HL A 6(b) "Aidhm 1/2", 2016 HL B 6(b) "Pointe eolais 1/2", 2014 HL B 6(b) "Ábhar imní 1/2", 2013 HL A 6(b) "Fáth 1/2"). The 2020
+          // Higher paper prints one question for each of 2A, 2B, 3A and 3B, so those routes carry no option letter.
+          // 2010-2011 print the listening as its own paper (Triail Chluastuisceana: "2011 OL Cluastuiscint Cuid A · Fógra a Trí")
+          // and the literature as Prós/Filíocht Ainmnithe or Roghnach (a)/(b); Higher Paper 2 prints Ceist 1 Prós, Ceist 2 Próstéacs
+          // Breise (A-D), Ceist 3 Filíocht (A-C) and Ceist 4 Stair na Gaeilge.
+          return !/^\d{4} (?:HL|OL) (?:Paper [12] |(?=Cluastuiscint ))(?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó|Trí)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní|Fáth) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós [12]|Próstéacs 2|Filíocht 3)[A-D](?:\([a-c]\))? · .+|Stair na Gaeilge 4|Litríocht 4[A-F](?: ·|\.) .+|(?:Prós|Filíocht) (?:Ainmnithe|Roghnach) \([ab]\)(?:\((?:i|ii)\))? · .+)$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
@@ -249,7 +264,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
         : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
           : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
             : subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts', 'corrections.ts', 'corrections.json']
-            : subject === 'irish' ? ['factory.ts', 'authored.json', 'answers.ts', 'tariffs.ts']
+            : subject === 'irish' ? ['factory.ts', ...irishManifests(), 'answers.ts', 'tariffs.ts']
             : subject === 'accounting' ? ['factory.ts', 'authored.json', 'rows.json']
             : ['factory.ts', 'authored.json'];
       for (const name of names) {

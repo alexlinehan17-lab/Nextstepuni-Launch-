@@ -20,7 +20,7 @@
  * so there is no cohort left for whom the old taxonomy is correct.
  */
 
-import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, type MarkBankLevel, type SecCard, type SecDiagramCard } from '../../types/markBank';
 import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
 
@@ -157,14 +157,14 @@ export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
   }));
 
 /**
- * The 2021–2025 Irish papers use the outgoing syllabus.  Keep the canonical
- * Gaeilge names and taxonomy; Mark Bank hides oral and 2027+ rows because this
- * completed written-paper corpus contains no card against them.
+ * Keep the canonical Gaeilge names and taxonomy. The board shows authored
+ * topics for the selected level; a hidden empty row makes no claim that the
+ * historical archive is complete.
  */
 export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => ({
   id: strand.id,
   label: strand.id === 'irish-1' || strand.id === 'irish-2' ? 'Páipéar 1' :
-    strand.id === 'irish-0' ? 'Béaltriail' : 'Páipéar 2',
+    strand.id === 'irish-0' ? 'Béaltriail' : strand.id === 'irish-9' ? 'Bonnleibhéal' : 'Páipéar 2',
   title: strand.name,
   topics: strand.subtopics
     .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
@@ -2037,6 +2037,7 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   irish: {
     higher: () => import('./cards/irish/higher'),
     ordinary: () => import('./cards/irish/ordinary'),
+    foundation: () => import('./cards/irish/foundation'),
   },
   art: {
     higher: () => import('./cards/art/higher'),
@@ -2203,11 +2204,11 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
  * level by everyone. `levelsFor` below is what the picker must use, so a
  * common-level subject never offers a Higher/Ordinary choice it does not have.
  */
-export type Level = 'higher' | 'ordinary' | 'common';
-export const LEVELS: Level[] = ['higher', 'ordinary', 'common'];
-export const LEVEL_LABEL: Record<Level, string> = {
-  higher: 'Higher', ordinary: 'Ordinary', common: 'Common',
-};
+export type Level = MarkBankLevel;
+/** Picker order. 'foundation' is the third level of a subject that sets one
+ *  (Irish); like 'common' it is offered only where a deck is built. */
+export const LEVELS: Level[] = ['higher', 'ordinary', 'foundation', 'common'];
+export const LEVEL_LABEL: Record<Level, string> = MARK_BANK_LEVEL_LABELS;
 
 /**
  * How many cards each deck holds, written by the build script.

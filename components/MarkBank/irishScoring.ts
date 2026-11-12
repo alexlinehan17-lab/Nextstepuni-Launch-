@@ -17,11 +17,26 @@ export const irishRowScoreId = (criterionId: string, partId: string, rowId: stri
 export const irishRowClaimed = (criterionId: string, part: IrishAnswerPart, rowId: string, scores: IrishScores) =>
   (scores[irishRowScoreId(criterionId, part.id, rowId)] ?? 0) > 0;
 
+/** A row's point: rows sharing a group are one point's printed alternatives; every other row is its own point. */
+export const irishRowPoint = (row: IrishAnswerPart['rows'][number]) => row.group ?? row.id;
+
+/** One entry per point, at its best row's marks (a group counts once). */
+const irishPoints = (part: IrishAnswerPart): number[] => {
+  const best = new Map<string, number>();
+  for (const row of part.rows) best.set(irishRowPoint(row), Math.max(best.get(irishRowPoint(row)) ?? 0, row.marks));
+  return [...best.values()];
+};
+
 /** How many answers a sub-question asks for: its tariff over its full answer, or its ladder's length. */
 export const irishPartCount = (part: IrishAnswerPart): number => {
   if (part.ladder) return part.ladder.length;
-  // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once.
-  if (part.rows.some(row => row.steps)) return part.rows.length;
+  // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once,
+  // and so are rows that are the tariff's components ("Tréith 1 a lua = 2 mharc", "sampla … = 4 mharc" of 6):
+  // an answer list prices alternatives, which never add up to the sub-question exactly when their marks differ.
+  // A group of one point's alternatives counts as that one point.
+  const points = irishPoints(part);
+  if (part.rows.some(row => row.steps)) return points.length;
+  if (points.length > 1 && points.reduce((sum, marks) => sum + marks, 0) === part.tariff) return points.length;
   const max = Math.max(0, ...part.rows.map(row => row.marks));
   return max > 0 ? Math.max(1, Math.floor(part.tariff / max)) : 1;
 };
@@ -38,11 +53,13 @@ export const irishRowValue = (criterionId: string, part: IrishAnswerPart, row: I
 export const irishPartMarks = (criterionId: string, part: IrishAnswerPart, scores: IrishScores): number => {
   const claimed = part.rows.filter(row => irishRowClaimed(criterionId, part, row.id, scores));
   if (part.ladder) {
-    const ticked = Math.min(claimed.length, part.ladder.length);
+    const ticked = Math.min(new Set(claimed.map(irishRowPoint)).size, part.ladder.length);
     return ticked > 0 ? part.ladder[ticked - 1] : 0;
   }
-  const values = claimed.map(row => irishRowValue(criterionId, part, row, scores));
-  return Math.min(part.tariff, bestClaimedMarks(values, irishPartCount(part)));
+  // A point counts once, at its best claimed row; the part takes its best points.
+  const best = new Map<string, number>();
+  for (const row of claimed) best.set(irishRowPoint(row), Math.max(best.get(irishRowPoint(row)) ?? 0, irishRowValue(criterionId, part, row, scores)));
+  return Math.min(part.tariff, bestClaimedMarks([...best.values()], irishPartCount(part)));
 };
 
 export const irishAllocationMarks = (criterionId: string, allocation: IrishAllocation, scores: IrishScores): number =>

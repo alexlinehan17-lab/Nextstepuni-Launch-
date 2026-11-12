@@ -31,6 +31,2279 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a1a", topicId: "design-and-communication-graphics-0-7", conceptId: "dcg-0-7",
+    section: "A", questionRef: "2016 HL Section A Q1(a)",
+    stem: "The images below show details of a curved metal shade from a set of traffic lights. The shade is based on a cylinder which is truncated and shaped as shown. The drawing shows the circular end view and the elevation of the shade. The incomplete surface development of the shade has been projected beneath the elevation.",
+    questionText: "Complete the surface development.",
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    rows: [
+    { id: "dcg-2016-hl-a1a-r1", kind: "criterion", verbatim: "Completion of surface development", marks: 16, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,16], parts: [{"id":"step-1","verbatim":"Projection of point m from elevation to development view","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Location of points m1 and m2 on development view","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Projection of “turning point” from elevation to development view","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Location of “turning points” on development view","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Projection of given points on underside of cylindrical surface to elevation","marks":1,"permittedMarks":[0,1]},{"id":"step-6","verbatim":"Projection of these points to development view","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Vertical sub-division to establish intermediate points on development view","marks":2,"permittedMarks":[0,2]},{"id":"step-8","verbatim":"Location of remaining points on development view","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Completion of surface development ……. (1,1,1)","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q1-art.png",
+          "srcHash": "64b970ad3ac9f2455ced341ed5d7b02f",
+          "alt": "Question A-1 as printed. Photographs of a set of traffic lights and of a curved metal shade from them, beside the circular end view and the elevation of the truncated cylindrical shade with the point P, and the incomplete surface development projected beneath the elevation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a1b", topicId: "design-and-communication-graphics-0-7", conceptId: "dcg-0-7",
+    section: "A", questionRef: "2016 HL Section A Q1(b)",
+    stem: "The images below show details of a curved metal shade from a set of traffic lights. The shade is based on a cylinder which is truncated and shaped as shown. The drawing shows the circular end view and the elevation of the shade. The incomplete surface development of the shade has been projected beneath the elevation.",
+    questionText: "A point P, on the surface of the cylinder, is shown in the elevation. Locate this point in the end view and on the surface development.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-a1b-r1", kind: "criterion", verbatim: "Projection of P to end view and surface development view .....(1,1)", marks: 2, permittedMarks: [0,1,2] },
+    { id: "dcg-2016-hl-a1b-r2", kind: "point", verbatim: "Location of point P on surface development view", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q1-art.png",
+          "srcHash": "64b970ad3ac9f2455ced341ed5d7b02f",
+          "alt": "Question A-1 as printed. Photographs of a set of traffic lights and of a curved metal shade from them, beside the circular end view and the elevation of the truncated cylindrical shade with the point P, and the incomplete surface development projected beneath the elevation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a2a", topicId: "design-and-communication-graphics-0-10", conceptId: "dcg-0-10",
+    section: "A", questionRef: "2016 HL Section A Q2(a)",
+    stem: "The image below shows a bar graph presentation on a paper flip chart. The drawing on the right shows the plan and incomplete elevation of a similar bar graph and flip chart.",
+    questionText: "Complete the elevation of the flip chart and bar graph.",
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    rows: [
+    { id: "dcg-2016-hl-a2a-r1", kind: "point", verbatim: "Projection of points to elevation", marks: 2 },
+    { id: "dcg-2016-hl-a2a-r2", kind: "point", verbatim: "Location of points on diagonal AB in elevation", marks: 3 },
+    { id: "dcg-2016-hl-a2a-r3", kind: "point", verbatim: "Location of top left hand points of “bars” in elevation", marks: 3 },
+    { id: "dcg-2016-hl-a2a-r4", kind: "point", verbatim: "Location of top point on vertical axis in elevation", marks: 1 },
+    { id: "dcg-2016-hl-a2a-r5", kind: "point", verbatim: "Completion of elevation", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q2-art.png",
+          "srcHash": "2d30082b4e8deea025ff5b4c01f77f3d",
+          "alt": "Question A-2 as printed. A photograph of a bar graph presentation on a paper flip chart, beside the incomplete elevation and the plan of a similar bar graph and flip chart with the diagonal AB marked in both views.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a2b", topicId: "design-and-communication-graphics-0-10", conceptId: "dcg-0-10",
+    section: "A", questionRef: "2016 HL Section A Q2(b)",
+    stem: "The image below shows a bar graph presentation on a paper flip chart. The drawing on the right shows the plan and incomplete elevation of a similar bar graph and flip chart.",
+    questionText: "Determine the true inclination of the diagonal AB to the horizontal plane.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2016-hl-a2b-r1", kind: "point", verbatim: "Rotation of AB in plan (or use of appropriate auxiliary view)", marks: 4 },
+    { id: "dcg-2016-hl-a2b-r2", kind: "point", verbatim: "Correct determination of required true inclination", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q2-art.png",
+          "srcHash": "2d30082b4e8deea025ff5b4c01f77f3d",
+          "alt": "Question A-2 as printed. A photograph of a bar graph presentation on a paper flip chart, beside the incomplete elevation and the plan of a similar bar graph and flip chart with the diagonal AB marked in both views.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a3a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2016 HL Section A Q3(a)",
+    stem: "The 3D graphic below shows a pencil in the form of a regular prism. When a conical top is applied to the pencil by the sharpener it results in a series of hyperbolic curves near the top of the pencil as shown. The drawing on the right shows the axis AA1, the directrix DD1 and a focus F for one such hyperbola. The hyperbola has an eccentricity of 3:2.",
+    questionText: "Locate the position of the vertex and draw a portion of the hyperbola. (Note: It is only necessary to draw one branch of the hyperbola.)",
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    rows: [
+    { id: "dcg-2016-hl-a3a-r1", kind: "point", verbatim: "Locate vertex", marks: 3 },
+    { id: "dcg-2016-hl-a3a-r2", kind: "criterion", verbatim: "Locate points on and outside latus rectum (2,4)", marks: 6, permittedMarks: [0,2,4,6] },
+    { id: "dcg-2016-hl-a3a-r3", kind: "point", verbatim: "Locate point inside latus rectum", marks: 3 },
+    { id: "dcg-2016-hl-a3a-r4", kind: "criterion", verbatim: "Draw curve (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q3-art.png",
+          "srcHash": "c9ee5ad806ad195410861f145f6e5cdc",
+          "alt": "Question A-3 as printed. A 3D graphic of a pencil in a sharpener, beside the drawing of the axis AA1, the directrix DD1 and the focus F of one hyperbola.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a3b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2016 HL Section A Q3(b)",
+    stem: "The 3D graphic below shows a pencil in the form of a regular prism. When a conical top is applied to the pencil by the sharpener it results in a series of hyperbolic curves near the top of the pencil as shown. The drawing on the right shows the axis AA1, the directrix DD1 and a focus F for one such hyperbola. The hyperbola has an eccentricity of 3:2.",
+    questionText: "Locate a point P on the curve which is 60mm from the focus and construct a tangent to the curve at point P.",
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    rows: [
+    { id: "dcg-2016-hl-a3b-r1", kind: "point", verbatim: "Identify point 60mm from focus", marks: 1 },
+    { id: "dcg-2016-hl-a3b-r2", kind: "criterion", verbatim: "Required correct construction and draw tangent ... (3,1)", marks: 4, permittedMarks: [0,1,3,4] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q3-art.png",
+          "srcHash": "c9ee5ad806ad195410861f145f6e5cdc",
+          "alt": "Question A-3 as printed. A 3D graphic of a pencil in a sharpener, beside the drawing of the axis AA1, the directrix DD1 and the focus F of one hyperbola.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a4a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
+    section: "A", questionRef: "2016 HL Section A Q4(a)",
+    stem: "The image below shows the Atomium structure, in Brussels, which is based on an inclined cube. The drawing on the right shows the incomplete projections of a similar inclined cube.",
+    questionText: "Complete the elevation of the cube.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2016-hl-a4a-r1", kind: "point", verbatim: "Projection of vertices from plan to elevation", marks: 2 },
+    { id: "dcg-2016-hl-a4a-r2", kind: "point", verbatim: "Transfer of heights from auxiliary view to establish vertices in elevation", marks: 2 },
+    { id: "dcg-2016-hl-a4a-r3", kind: "point", verbatim: "Draw outer edges of cube in elevation", marks: 5 },
+    { id: "dcg-2016-hl-a4a-r4", kind: "point", verbatim: "Draw inner detail of cube in elevation to include correct hidden detail", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q4-art.png",
+          "srcHash": "5d92d4109dc499155b15f1b75f9c67de",
+          "alt": "Question A-4 as printed. A photograph of the Atomium in Brussels, beside the incomplete projections of a similar inclined cube: an auxiliary view on X1Y1, the plan and the incomplete elevation on XY.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-a4b", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
+    section: "A", questionRef: "2016 HL Section A Q4(b)",
+    stem: "The image below shows the Atomium structure, in Brussels, which is based on an inclined cube. The drawing on the right shows the incomplete projections of a similar inclined cube.",
+    questionText: "Draw the plan and elevation of the smallest possible sphere that would contain the cube.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2016-hl-a4b-r1", kind: "point", verbatim: "Establish centre of required sphere in elevation", marks: 2 },
+    { id: "dcg-2016-hl-a4b-r2", kind: "point", verbatim: "Establish half of a true length of a “body diagonal” to determine radius", marks: 1 },
+    { id: "dcg-2016-hl-a4b-r3", kind: "criterion", verbatim: "Draw required sphere in elevation and plan ….. (3,3)", marks: 6, permittedMarks: [0,3,6] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q4-art.png",
+          "srcHash": "5d92d4109dc499155b15f1b75f9c67de",
+          "alt": "Question A-4 as printed. A photograph of the Atomium in Brussels, beside the incomplete projections of a similar inclined cube: an auxiliary view on X1Y1, the plan and the incomplete elevation on XY.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b1a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2016 HL Section B Q1(a)",
+    stem: "The image on the right shows a restaurant which consists of a series of intersecting triangular glass surfaces. Fig. B-1 shows the plan and elevation of four such intersecting planes. Data related to the horizontal and vertical coordinates for points A, B, C, D, E and F, defining the four planes, are also given. A: 130 --- 40 --- 80 B: 160 --- 85 --- 35 C: 100 --- 85 --- 35 D: 180 --- 30 --- 75 E: 210 --- 70 --- 25 F: 230 --- ? --- 55",
+    questionText: "Draw the given plan of the four triangular planes and complete the elevation of the intersecting planes ABC, ABD and DEB.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2016-hl-b1a-r1", kind: "point", verbatim: "Use given coordinates to draw required plan (connecting 6 correct points)", marks: 4 },
+    { id: "dcg-2016-hl-b1a-r2", kind: "point", verbatim: "Establish points A, B, C, D & E in elevation", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q1-art.png",
+          "srcHash": "863fecdb3f43d1faf3e76208a375373f",
+          "alt": "Question B-1 as printed. A photograph of a restaurant made of intersecting triangular glass surfaces, and Fig. B-1: the elevation and plan of the four intersecting planes defined by the points A, B, C, D, E and F, beside a table of their horizontal and vertical coordinates (F's second coordinate printed as a question mark). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b1b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2016 HL Section B Q1(b)",
+    stem: "The image on the right shows a restaurant which consists of a series of intersecting triangular glass surfaces. Fig. B-1 shows the plan and elevation of four such intersecting planes. Data related to the horizontal and vertical coordinates for points A, B, C, D, E and F, defining the four planes, are also given. A: 130 --- 40 --- 80 B: 160 --- 85 --- 35 C: 100 --- 85 --- 35 D: 180 --- 30 --- 75 E: 210 --- 70 --- 25 F: 230 --- ? --- 55",
+    questionText: "Determine the dihedral angle between the planes ABC and ABD.",
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    rows: [
+    { id: "dcg-2016-hl-b1b-r1", kind: "point", verbatim: "New X1Y1 parallel to line of intersection AB", marks: 3 },
+    { id: "dcg-2016-hl-b1b-r2", kind: "point", verbatim: "Projection of planes and line of intersection on new X1Y1", marks: 3 },
+    { id: "dcg-2016-hl-b1b-r3", kind: "point", verbatim: "Additional X2Y2 perpendicular to line of intersection AB", marks: 3 },
+    { id: "dcg-2016-hl-b1b-r4", kind: "point", verbatim: "Projection of ABC and ABD as lines and indicating dihedral angle", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q1-art.png",
+          "srcHash": "863fecdb3f43d1faf3e76208a375373f",
+          "alt": "Question B-1 as printed. A photograph of a restaurant made of intersecting triangular glass surfaces, and Fig. B-1: the elevation and plan of the four intersecting planes defined by the points A, B, C, D, E and F, beside a table of their horizontal and vertical coordinates (F's second coordinate printed as a question mark). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b1c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2016 HL Section B Q1(c)",
+    stem: "The image on the right shows a restaurant which consists of a series of intersecting triangular glass surfaces. Fig. B-1 shows the plan and elevation of four such intersecting planes. Data related to the horizontal and vertical coordinates for points A, B, C, D, E and F, defining the four planes, are also given. A: 130 --- 40 --- 80 B: 160 --- 85 --- 35 C: 100 --- 85 --- 35 D: 180 --- 30 --- 75 E: 210 --- 70 --- 25 F: 230 --- ? --- 55",
+    questionText: "Draw the elevation and plan of a horizontal line on the surface DEB and then determine the true inclination of surface DEB to the horizontal plane.",
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    rows: [
+    { id: "dcg-2016-hl-b1c-r1", kind: "criterion", verbatim: "Projections of required horizontal line on DEB … (2,1,2)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "dcg-2016-hl-b1c-r2", kind: "point", verbatim: "X1Y1 perpendicular to plan of correct horizontal line", marks: 5 },
+    { id: "dcg-2016-hl-b1c-r3", kind: "point", verbatim: "Projection of plane DEB to auxiliary view and indication of true inclination", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q1-art.png",
+          "srcHash": "863fecdb3f43d1faf3e76208a375373f",
+          "alt": "Question B-1 as printed. A photograph of a restaurant made of intersecting triangular glass surfaces, and Fig. B-1: the elevation and plan of the four intersecting planes defined by the points A, B, C, D, E and F, beside a table of their horizontal and vertical coordinates (F's second coordinate printed as a question mark). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b1d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2016 HL Section B Q1(d)",
+    stem: "The image on the right shows a restaurant which consists of a series of intersecting triangular glass surfaces. Fig. B-1 shows the plan and elevation of four such intersecting planes. Data related to the horizontal and vertical coordinates for points A, B, C, D, E and F, defining the four planes, are also given. A: 130 --- 40 --- 80 B: 160 --- 85 --- 35 C: 100 --- 85 --- 35 D: 180 --- 30 --- 75 E: 210 --- 70 --- 25 F: 230 --- ? --- 55",
+    questionText: "The dihedral angle between the planes DEB and DEF is 170°. Complete the projections of the surface DEF.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2016-hl-b1d-r1", kind: "point", verbatim: "New X1Y1 parallel to line of intersection DE", marks: 2 },
+    { id: "dcg-2016-hl-b1d-r2", kind: "point", verbatim: "Projection of plane DEB on new X1Y1", marks: 1 },
+    { id: "dcg-2016-hl-b1d-r3", kind: "point", verbatim: "Additional X2Y2 perpendicular to line of intersection DE", marks: 3 },
+    { id: "dcg-2016-hl-b1d-r4", kind: "point", verbatim: "Projection of DEB as edge view and drawing of dihedral angle at 170°", marks: 2 },
+    { id: "dcg-2016-hl-b1d-r5", kind: "point", verbatim: "Completion of elevation by projection of point F back to elevation incl. correct transfer of distances, etc", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q1-art.png",
+          "srcHash": "863fecdb3f43d1faf3e76208a375373f",
+          "alt": "Question B-1 as printed. A photograph of a restaurant made of intersecting triangular glass surfaces, and Fig. B-1: the elevation and plan of the four intersecting planes defined by the points A, B, C, D, E and F, beside a table of their horizontal and vertical coordinates (F's second coordinate printed as a question mark). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b2a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2016 HL Section B Q2(a)",
+    stem: "The image on the right shows a hotel located beside the river Shannon in Limerick. Two views of an architectural model of a similar structure are shown in the 3D graphics below. The outline projections of the structure are given in Fig. B-2. The plan is based on an ellipse, reflecting the city’s rugby tradition. The top of the structure is parabolic, as indicated by the curve ABC in the elevation. B is the vertex of the parabola. One side of the structure has been shaped to produce a flat vertical surface as shown.",
+    questionText: "Draw the given plan and elevation of the structure.",
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    rows: [
+    { id: "dcg-2016-hl-b2a-r1", kind: "point", verbatim: "Construction to draw ellipse in plan", marks: 3 },
+    { id: "dcg-2016-hl-b2a-r2", kind: "criterion", verbatim: "Draw elliptical curve …..(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    { id: "dcg-2016-hl-b2a-r3", kind: "point", verbatim: "Draw vertical surface (line) in plan", marks: 1 },
+    { id: "dcg-2016-hl-b2a-r4", kind: "point", verbatim: "Draw 2 vertical extreme edges in elevation", marks: 2 },
+    { id: "dcg-2016-hl-b2a-r5", kind: "point", verbatim: "Construction to draw parabola in elevation", marks: 6 },
+    { id: "dcg-2016-hl-b2a-r6", kind: "criterion", verbatim: "Draw required parabolic curve …..(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q2-art.png",
+          "srcHash": "e8cfef290cdf7ab1f20dae403346346a",
+          "alt": "Question B-2 as printed. A photograph of a curved hotel tower beside a river at night, two 3D graphics of a model of the structure with a red steel band around it, and Fig. B-2: the elevation (10m wide, 12m and 14m high with the parabolic top ABC rising 4m) and the elliptical plan (9m and 6m, flattened 2m from one end), with the traces VT and HT of the cutting plane and the arrow E. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b2b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2016 HL Section B Q2(b)",
+    stem: "The image on the right shows a hotel located beside the river Shannon in Limerick. Two views of an architectural model of a similar structure are shown in the 3D graphics below. The outline projections of the structure are given in Fig. B-2. The plan is based on an ellipse, reflecting the city’s rugby tradition. The top of the structure is parabolic, as indicated by the curve ABC in the elevation. B is the vertex of the parabola. One side of the structure has been shaped to produce a flat vertical surface as shown.",
+    questionText: "Project an end view in the direction of arrow E.",
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    rows: [
+    { id: "dcg-2016-hl-b2b-r1", kind: "point", verbatim: "Transfer of heights to end view", marks: 1 },
+    { id: "dcg-2016-hl-b2b-r2", kind: "point", verbatim: "Transfer of widths to end view", marks: 1 },
+    { id: "dcg-2016-hl-b2b-r3", kind: "point", verbatim: "Draw outline of end view", marks: 2 },
+    { id: "dcg-2016-hl-b2b-r4", kind: "point", verbatim: "Hidden detail in end view", marks: 4 },
+    { id: "dcg-2016-hl-b2b-r5", kind: "point", verbatim: "Establish points on “curve” in end view", marks: 2 },
+    { id: "dcg-2016-hl-b2b-r6", kind: "criterion", verbatim: "Draw required curve in end view ……(Any =1)", marks: 2, permittedMarks: [0,1,2] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q2-art.png",
+          "srcHash": "e8cfef290cdf7ab1f20dae403346346a",
+          "alt": "Question B-2 as printed. A photograph of a curved hotel tower beside a river at night, two 3D graphics of a model of the structure with a red steel band around it, and Fig. B-2: the elevation (10m wide, 12m and 14m high with the parabolic top ABC rising 4m) and the elliptical plan (9m and 6m, flattened 2m from one end), with the traces VT and HT of the cutting plane and the arrow E. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b2c", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2016 HL Section B Q2(c)",
+    stem: "The image on the right shows a hotel located beside the river Shannon in Limerick. Two views of an architectural model of a similar structure are shown in the 3D graphics below. The outline projections of the structure are given in Fig. B-2. The plan is based on an ellipse, reflecting the city’s rugby tradition. The top of the structure is parabolic, as indicated by the curve ABC in the elevation. B is the vertex of the parabola. One side of the structure has been shaped to produce a flat vertical surface as shown.",
+    questionText: "An architectural feature, in the form of a steel band, is to be constructed around the outside of the structure as shown in the 3D graphics. VT and HT are the traces of an inclined cutting plane used to define the position and shape of the steel band. Determine the true shape of the intersection between the structure and this inclined cutting plane. Note: It is not necessary to show the steel band in either the plan or the elevation. Only the true shape is required.",
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    rows: [
+    { id: "dcg-2016-hl-b2c-r1", kind: "point", verbatim: "Draw HT and VT in plan and elevation, as given", marks: 2 },
+    { id: "dcg-2016-hl-b2c-r2", kind: "point", verbatim: "Establish edge view of inclined plane", marks: 2 },
+    { id: "dcg-2016-hl-b2c-r3", kind: "point", verbatim: "Establish points on true shape of required intersection", marks: 3 },
+    { id: "dcg-2016-hl-b2c-r4", kind: "point", verbatim: "Draw true shape of circular portion of required intersection", marks: 6 },
+    { id: "dcg-2016-hl-b2c-r5", kind: "point", verbatim: "Draw straight line on true shape of required intersection", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q2-art.png",
+          "srcHash": "e8cfef290cdf7ab1f20dae403346346a",
+          "alt": "Question B-2 as printed. A photograph of a curved hotel tower beside a river at night, two 3D graphics of a model of the structure with a red steel band around it, and Fig. B-2: the elevation (10m wide, 12m and 14m high with the parabolic top ABC rising 4m) and the elliptical plan (9m and 6m, flattened 2m from one end), with the traces VT and HT of the cutting plane and the arrow E. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2016 HL Section B Q3(a)",
+    stem: "The image on the right, shows a sculpture located in Caherciveen, Co. Kerry, which celebrates the seafaring adventures of Brendan the Navigator. The plan and elevation of a model of part of the sculpture are shown in Fig. B-3(a) on the left below. In the plan, curves BCD and BAD are arcs of radius 90mm as shown. The model is generated by initially revolving the profile ABC about the axis AC through 360°. The structure is then completed by removing the top portion, EFGH, as shown in the elevation. This is also shown in the 3D view in Fig B-3(b) on the right below.",
+    questionText: "Draw the given elevation.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2016-hl-b3a-r1", kind: "criterion", verbatim: "Draw main (R 75mm) circle .....(1, 2, 2)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "dcg-2016-hl-b3a-r2", kind: "point", verbatim: "Locate points E & G and draw required ‘scalloped’ arc", marks: 4 },
+    { id: "dcg-2016-hl-b3a-r3", kind: "point", verbatim: "Draw outline of legs L1 & L2", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q3-art.png",
+          "srcHash": "b22e9fab51b29c6593b9928d514d29f5",
+          "alt": "Question B-3 as printed. A photograph of a boat-shaped sculpture on legs, Fig. B-3(a): the elevation of the model (diameter 150, heights 40 and 115) with the profile ABC, the top portion EFGH and the legs L1 and L2, and its plan with the arcs BCD and BAD of radius 90; and Fig. B-3(b): a 3D view of the top portion being removed. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b3b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2016 HL Section B Q3(b)",
+    stem: "The image on the right, shows a sculpture located in Caherciveen, Co. Kerry, which celebrates the seafaring adventures of Brendan the Navigator. The plan and elevation of a model of part of the sculpture are shown in Fig. B-3(a) on the left below. In the plan, curves BCD and BAD are arcs of radius 90mm as shown. The model is generated by initially revolving the profile ABC about the axis AC through 360°. The structure is then completed by removing the top portion, EFGH, as shown in the elevation. This is also shown in the 3D view in Fig B-3(b) on the right below.",
+    questionText: "Draw the arcs BCD and BAD in the plan.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2016-hl-b3b-r1", kind: "criterion", verbatim: "Draw centreline BD in plan …….(1,1,1)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2016-hl-b3b-r2", kind: "criterion", verbatim: "Establish centres and draw arcs BCD and BAD in plan ….(2,2,2×2)", marks: 8, permittedMarks: [0,2,4,6,8] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q3-art.png",
+          "srcHash": "b22e9fab51b29c6593b9928d514d29f5",
+          "alt": "Question B-3 as printed. A photograph of a boat-shaped sculpture on legs, Fig. B-3(a): the elevation of the model (diameter 150, heights 40 and 115) with the profile ABC, the top portion EFGH and the legs L1 and L2, and its plan with the arcs BCD and BAD of radius 90; and Fig. B-3(b): a 3D view of the top portion being removed. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2016 HL Section B Q3(c)",
+    stem: "The image on the right, shows a sculpture located in Caherciveen, Co. Kerry, which celebrates the seafaring adventures of Brendan the Navigator. The plan and elevation of a model of part of the sculpture are shown in Fig. B-3(a) on the left below. In the plan, curves BCD and BAD are arcs of radius 90mm as shown. The model is generated by initially revolving the profile ABC about the axis AC through 360°. The structure is then completed by removing the top portion, EFGH, as shown in the elevation. This is also shown in the 3D view in Fig B-3(b) on the right below.",
+    questionText: "Using vertical sections, or any other method, draw the inner curve in the plan as shown.",
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    rows: [
+    { id: "dcg-2016-hl-b3c-r1", kind: "point", verbatim: "Project ‘extremity’ points E & G to plan", marks: 2 },
+    { id: "dcg-2016-hl-b3c-r2", kind: "criterion", verbatim: "Use of vertical sections (or other correct method) to establish additional points on one quadrant of curve in plan (min. 3) …..(2, 2, 1)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "dcg-2016-hl-b3c-r3", kind: "point", verbatim: "Establish ‘turning points’ J & K", marks: 2 },
+    { id: "dcg-2016-hl-b3c-r4", kind: "point", verbatim: "Mirroring of points to other quadrants", marks: 2 },
+    { id: "dcg-2016-hl-b3c-r5", kind: "criterion", verbatim: "Draw correct curve …..(Any = 1) ... (Ellipse = 2)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2016-hl-b3c-r6", kind: "point", verbatim: "Complete plan (hidden and other inner detail)", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q3-art.png",
+          "srcHash": "b22e9fab51b29c6593b9928d514d29f5",
+          "alt": "Question B-3 as printed. A photograph of a boat-shaped sculpture on legs, Fig. B-3(a): the elevation of the model (diameter 150, heights 40 and 115) with the profile ABC, the top portion EFGH and the legs L1 and L2, and its plan with the arcs BCD and BAD of radius 90; and Fig. B-3(b): a 3D view of the top portion being removed. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-b3d", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2016 HL Section B Q3(d)",
+    stem: "The image on the right, shows a sculpture located in Caherciveen, Co. Kerry, which celebrates the seafaring adventures of Brendan the Navigator. The plan and elevation of a model of part of the sculpture are shown in Fig. B-3(a) on the left below. In the plan, curves BCD and BAD are arcs of radius 90mm as shown. The model is generated by initially revolving the profile ABC about the axis AC through 360°. The structure is then completed by removing the top portion, EFGH, as shown in the elevation. This is also shown in the 3D view in Fig B-3(b) on the right below.",
+    questionText: "The sculpture is supported on eight legs as shown in the image above. L1 and L2 represent two of the legs. Draw the plan and elevation of the two legs showing the constructions necessary to locate the penetration points.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2016-hl-b3d-r1", kind: "point", verbatim: "Draw outline of legs L1 & L2 in plan", marks: 2 },
+    { id: "dcg-2016-hl-b3d-r2", kind: "point", verbatim: "Use of any correct method to establish intersection points", marks: 2 },
+    { id: "dcg-2016-hl-b3d-r3", kind: "point", verbatim: "Location of intersection points in plan and elevation", marks: 1 },
+    { id: "dcg-2016-hl-b3d-r4", kind: "point", verbatim: "Completion of plan and elevation, incl. hidden detail", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q3-art.png",
+          "srcHash": "b22e9fab51b29c6593b9928d514d29f5",
+          "alt": "Question B-3 as printed. A photograph of a boat-shaped sculpture on legs, Fig. B-3(a): the elevation of the model (diameter 150, heights 40 and 115) with the profile ABC, the top portion EFGH and the legs L1 and L2, and its plan with the arcs BCD and BAD of radius 90; and Fig. B-3(b): a 3D view of the top portion being removed. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(a) — Earthworks for Eastern Pool Edge",
+    questionText: "The accompanying map, located on the back page of Section A, shows the plan of a garden with a swimming pool, similar to that in the image on the right. The ground contours are at 1 metre vertical intervals. On the map, ABCD is the edge of the pool and is level at an altitude of 5m. Using side slopes of 1 in 1 for both the cuttings and the embankments, show the earthworks necessary to accommodate the eastern edge of the pool. Note: The earthworks between A and B have already been completed for you.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-c1a-1-r1", kind: "point", verbatim: "Measure required 10mm distances perp. to pool edge", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(a) — Earthworks between B and C (Level) - Embankment",
+    questionText: "The accompanying map, located on the back page of Section A, shows the plan of a garden with a swimming pool, similar to that in the image on the right. The ground contours are at 1 metre vertical intervals. On the map, ABCD is the edge of the pool and is level at an altitude of 5m. Using side slopes of 1 in 1 for both the cuttings and the embankments, show the earthworks necessary to accommodate the eastern edge of the pool. Note: The earthworks between A and B have already been completed for you.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2016-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel arcs (centre O) at 10mm intervals", marks: 3 },
+    { id: "dcg-2016-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(a) — Earthworks between C and D (Level) - Cutting",
+    questionText: "The accompanying map, located on the back page of Section A, shows the plan of a garden with a swimming pool, similar to that in the image on the right. The ground contours are at 1 metre vertical intervals. On the map, ABCD is the edge of the pool and is level at an altitude of 5m. Using side slopes of 1 in 1 for both the cuttings and the embankments, show the earthworks necessary to accommodate the eastern edge of the pool. Note: The earthworks between A and B have already been completed for you.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2016-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 4 },
+    { id: "dcg-2016-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(b)",
+    questionText: "DE is the edge of a sloping pathway. At D, the pathway is at an altitude of 5m and it falls uniformly to an altitude of 4m at E. Using the same side slopes as above, show the earthworks (cuttings) necessary to accommodate the northern edge of the pathway.",
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    rows: [
+    { id: "dcg-2016-hl-c1b-r1", kind: "point", verbatim: "Draw required 10mm arc at E", marks: 3 },
+    { id: "dcg-2016-hl-c1b-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 4 },
+    { id: "dcg-2016-hl-c1b-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(c)",
+    questionText: "At the southern end, the floor slab of the pool is sloping and is of uniform thickness. R and S are two points on the floor and their altitudes are 4m and 3m respectively. A vertical borehole at S reveals the bottom surface of the pool floor slab at an altitude of 1.5m. The strike of the floor is north 55° east, as indicated by the line L. Determine the dip and the thickness of the floor slab.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2016-hl-c1c-r1", kind: "point", verbatim: "X1Y1 (or datum) perpendicular to “Strike Line”", marks: 2 },
+    { id: "dcg-2016-hl-c1c-r2", kind: "criterion", verbatim: "Draw R & S in Auxiliary view ...(2×1)", marks: 2, permittedMarks: [0,1,2] },
+    { id: "dcg-2016-hl-c1c-r3", kind: "point", verbatim: "Join R & S (in auxiliary view) to determine Dip", marks: 2 },
+    { id: "dcg-2016-hl-c1c-r4", kind: "point", verbatim: "Establish point on bottom of slab and determine required thickness", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c1d", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2016 HL Section C Q1(d)",
+    questionText: "There are four entrance steps to the pool as shown. The top step is level at an altitude of 4.8m. In the space provided draw the vertical section (profile) through the steps and the floor slab along the line PS. Show the steps to be of equal height. Note: The top step, PQ, has already been drawn for you, and is represented as P1Q1 in the section view.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2016-hl-c1d-r1", kind: "point", verbatim: "Projection of steps to profile view", marks: 1 },
+    { id: "dcg-2016-hl-c1d-r2", kind: "criterion", verbatim: "Drawing of steps in profile view ……(4×1)", marks: 4, permittedMarks: [0,1,2,3,4] },
+    { id: "dcg-2016-hl-c1d-r3", kind: "criterion", verbatim: "Drawing of top and bottom surfaces of floor slab.....(1,1)", marks: 2, permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+          "srcHash": "72c426aadee8b4dc557c0d7847e4dff1",
+          "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c2a", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2016 HL Section C Q2(a)",
+    stem: "The image on the right shows a low-energy building which is to be built in Abu Dhabi. Its architectural design includes a series of supporting towers. Each tower is based on half a hyperboloid of revolution, with a truncated cylinder on top, as shown. Fig. C-2 shows the plan, elevation and end view of one of the towers. A pictorial view is also given.",
+    questionText: "Draw the given plan of the tower and project the elevation as shown.",
+    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    rows: [
+    { id: "dcg-2016-hl-c2a-r1", kind: "criterion", verbatim: "Plan and Elevation", marks: 27, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,27], parts: [{"id":"step-1","verbatim":"Draw both circles in plan …(1,1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-2","verbatim":"Draw plan of triangular entrance (incl. point of tangency)…(2,2,1)","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"step-3","verbatim":"Location of base and ‘throat’ in elevation ….(2,2)","marks":4,"permittedMarks":[0,2,4]},{"id":"step-4","verbatim":"Draw cylindrical top in elevation …(1,1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-5","verbatim":"Construction to determine points on one branch of hyperbola in elevation","marks":5,"permittedMarks":[0,5]},{"id":"step-6","verbatim":"Determination of points on second branch in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Draw hyperbolic curves ….(Any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-8","verbatim":"Draw elevation of triangular entrance","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Draw horizontal bands in elevation and plan","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q2-art.png",
+          "srcHash": "8890a2889df74828ecf07834a88898cb",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a building supported on lattice towers, and Fig. C-2: the elevation and end view of one tower (half a hyperboloid of revolution, 10m high, with a truncated cylinder 3m high on top), its plan (diameters 12m and 5m) and a pictorial view. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c2b", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2016 HL Section C Q2(b)",
+    stem: "The image on the right shows a low-energy building which is to be built in Abu Dhabi. Its architectural design includes a series of supporting towers. Each tower is based on half a hyperboloid of revolution, with a truncated cylinder on top, as shown. Fig. C-2 shows the plan, elevation and end view of one of the towers. A pictorial view is also given.",
+    questionText: "Project an end view of the tower as shown.",
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    rows: [
+    { id: "dcg-2016-hl-c2b-r1", kind: "point", verbatim: "Projection (or transfer) of widths and heights to End View", marks: 2 },
+    { id: "dcg-2016-hl-c2b-r2", kind: "criterion", verbatim: "Draw required hyperbolic curves in end view ….(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    { id: "dcg-2016-hl-c2b-r3", kind: "point", verbatim: "Locate and draw end view of triangular entrance", marks: 3 },
+    { id: "dcg-2016-hl-c2b-r4", kind: "point", verbatim: "Construction to determine points on ellipse", marks: 3 },
+    { id: "dcg-2016-hl-c2b-r5", kind: "criterion", verbatim: "Draw elliptical curve ……(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q2-art.png",
+          "srcHash": "8890a2889df74828ecf07834a88898cb",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a building supported on lattice towers, and Fig. C-2: the elevation and end view of one tower (half a hyperboloid of revolution, 10m high, with a truncated cylinder 3m high on top), its plan (diameters 12m and 5m) and a pictorial view. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c2c", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2016 HL Section C Q2(c)",
+    stem: "The image on the right shows a low-energy building which is to be built in Abu Dhabi. Its architectural design includes a series of supporting towers. Each tower is based on half a hyperboloid of revolution, with a truncated cylinder on top, as shown. Fig. C-2 shows the plan, elevation and end view of one of the towers. A pictorial view is also given.",
+    questionText: "Determine the positions of the focal point and the directrix for one branch of the hyperbola in the elevation.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-c2c-r1", kind: "point", verbatim: "Construction to determine required focal point", marks: 2 },
+    { id: "dcg-2016-hl-c2c-r2", kind: "point", verbatim: "Construction to determine required directrix", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q2-art.png",
+          "srcHash": "8890a2889df74828ecf07834a88898cb",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a building supported on lattice towers, and Fig. C-2: the elevation and end view of one tower (half a hyperboloid of revolution, 10m high, with a truncated cylinder 3m high on top), its plan (diameters 12m and 5m) and a pictorial view. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c3a", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2016 HL Section C Q3(a)",
+    stem: "The image on the right shows a package for jelly beans. The package consists of a cardboard transition piece connecting a square base to a circular top. This transition is achieved using triangulation, as shown. Fig. C-3(a) shows the plan and elevation of the package and also shows the triangular divisions. A partial surface development of the triangulated transition piece is given in Fig. C-3(b).",
+    questionText: "Draw the given plan and elevation to include the straight line elements on the curved surfaces as shown.",
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    rows: [
+    { id: "dcg-2016-hl-c3a-r1", kind: "point", verbatim: "Draw plan and elevation of package to include square base and circular top", marks: 8 },
+    { id: "dcg-2016-hl-c3a-r2", kind: "point", verbatim: "Angular division of circle in plan into 12 equal parts", marks: 2 },
+    { id: "dcg-2016-hl-c3a-r3", kind: "point", verbatim: "Draw straight line elements in plan as given", marks: 4 },
+    { id: "dcg-2016-hl-c3a-r4", kind: "point", verbatim: "Draw straight line elements in elevation as given", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q3-art.png",
+          "srcHash": "4d770ae9127ff0f5b276a4c83f771fed",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a jelly bean package, Fig. C-3(a): the elevation (100 and 25 high) and plan (60 square, set at 60 degrees) of the transition piece with its triangular divisions and points A to H, and Fig. C-3(b): the partial surface development. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c3b", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2016 HL Section C Q3(b)",
+    stem: "The image on the right shows a package for jelly beans. The package consists of a cardboard transition piece connecting a square base to a circular top. This transition is achieved using triangulation, as shown. Fig. C-3(a) shows the plan and elevation of the package and also shows the triangular divisions. A partial surface development of the triangulated transition piece is given in Fig. C-3(b).",
+    questionText: "Draw the true shape of surface ACE and determine the true length of the straight line element AF, showing all necessary constructions.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2016-hl-c3b-r1", kind: "point", verbatim: "Draw AC as a true length in required view", marks: 1 },
+    { id: "dcg-2016-hl-c3b-r2", kind: "point", verbatim: "Draw true shape of ACE (construction to locate point E)", marks: 2 },
+    { id: "dcg-2016-hl-c3b-r3", kind: "point", verbatim: "Construction to locate true length of AF", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q3-art.png",
+          "srcHash": "4d770ae9127ff0f5b276a4c83f771fed",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a jelly bean package, Fig. C-3(a): the elevation (100 and 25 high) and plan (60 square, set at 60 degrees) of the transition piece with its triangular divisions and points A to H, and Fig. C-3(b): the partial surface development. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c3c", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2016 HL Section C Q3(c)",
+    stem: "The image on the right shows a package for jelly beans. The package consists of a cardboard transition piece connecting a square base to a circular top. This transition is achieved using triangulation, as shown. Fig. C-3(a) shows the plan and elevation of the package and also shows the triangular divisions. A partial surface development of the triangulated transition piece is given in Fig. C-3(b).",
+    questionText: "Hence, draw the given partial surface development of the transition piece.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2016-hl-c3c-r1", kind: "point", verbatim: "Use of true lengths to establish points F, G & H in development view", marks: 3 },
+    { id: "dcg-2016-hl-c3c-r2", kind: "point", verbatim: "Draw required development of transition piece", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q3-art.png",
+          "srcHash": "4d770ae9127ff0f5b276a4c83f771fed",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a jelly bean package, Fig. C-3(a): the elevation (100 and 25 high) and plan (60 square, set at 60 degrees) of the transition piece with its triangular divisions and points A to H, and Fig. C-3(b): the partial surface development. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c3d", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2016 HL Section C Q3(d)",
+    stem: "The image on the right shows a package for jelly beans. The package consists of a cardboard transition piece connecting a square base to a circular top. This transition is achieved using triangulation, as shown. Fig. C-3(a) shows the plan and elevation of the package and also shows the triangular divisions. A partial surface development of the triangulated transition piece is given in Fig. C-3(b).",
+    questionText: "As a design feature, the base is indented to form a pyramid, as indicated by the hidden detail. Determine the dihedral angle between the triangular surfaces ABC and ABD.",
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    rows: [
+    { id: "dcg-2016-hl-c3d-r1", kind: "criterion", verbatim: "Establish true length of line of intersection (AB) in auxiliary view ..(2,2,2)", marks: 6, permittedMarks: [0,2,4,6] },
+    { id: "dcg-2016-hl-c3d-r2", kind: "point", verbatim: "Establish plane perp. to AB (triangular lamina or X2Y2)", marks: 3 },
+    { id: "dcg-2016-hl-c3d-r3", kind: "point", verbatim: "Construction to determine required dihedral angle", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q3-art.png",
+          "srcHash": "4d770ae9127ff0f5b276a4c83f771fed",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a jelly bean package, Fig. C-3(a): the elevation (100 and 25 high) and plan (60 square, set at 60 degrees) of the transition piece with its triangular divisions and points A to H, and Fig. C-3(b): the partial surface development. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2016 HL Section C Q4(a)",
+    stem: "The image on the right shows a sculpture located on the M4 motorway in Co. Kildare. The design is based on concentric circles and an Archimedean spiral. A similar design is shown in Fig. C-4(a) below.",
+    questionText: "(i) Draw an Archimedean spiral which moves from point A to point B in one anticlockwise revolution. The spiral has an initial radius of 60mm and a final radius of 96mm as shown. (ii) Complete the drawing of the sculpture using the given information.",
+    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    rows: [
+    { id: "dcg-2016-hl-c4a-r1", kind: "criterion", verbatim: "Spiral Sculpture", marks: 24, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,24], parts: [{"id":"step-1","verbatim":"Draw concentric circles (R100 & R40) as given","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Divide circles into 12 equal parts as shown","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Establish start point A and end point B for spiral","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Establish intermediate radii on angular division lines","marks":5,"permittedMarks":[0,5]},{"id":"step-5","verbatim":"Draw Archimedean spiral through required points …(any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-6","verbatim":"Establish parallel lines 8mm from either side of angular division lines","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Completion of drawing","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q4-art.png",
+          "srcHash": "c377ceeffa8199643137f533951ccaa9",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a ring sculpture and Fig. C-4(a), the concentric circles and slots of a similar design (R100, R96, R60, R46, R40, 16 and 60 degrees) with the points A and B; part (b): a photograph of a toy tipper truck and Fig. C-4(b), the tipped truck body pivoting about A through 60 degrees, the tailgate TT1, and the wheel W of diameter 50 (102, 85, 55 and 45). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c4b", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2016 HL Section C Q4(b)",
+    questionText: "The graphic on the right shows a toy tipper truck. Details of the rear of the truck are given in Fig C-4(b) below. In its initial position the truck body is tipped open as indicated. The truck body then rotates through an angle of 60°, at a constant speed, about point A to its horizontal position as shown. The tailgate TT1 pivots about point T and remains in a vertical position at all times. At the same time, the truck moves forward, with the wheel W rolling clockwise for half of one revolution. Draw the given outline of the truck and plot the locus of point T1 for the combined movement.",
+    tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
+    rows: [
+    { id: "dcg-2016-hl-c4b-r1", kind: "point", verbatim: "(viii) Draw tipped truck body, tailgate and wheel in required relative positions", marks: 6 },
+    { id: "dcg-2016-hl-c4b-r2", kind: "point", verbatim: "(ix) Division of 60° angle into equal parts (min. 6)", marks: 2 },
+    { id: "dcg-2016-hl-c4b-r3", kind: "point", verbatim: "(x) Use of angular divisions to establish intermediate for bottom of Tailgate", marks: 2 },
+    { id: "dcg-2016-hl-c4b-r4", kind: "point", verbatim: "(xi) Divide wheel into corresponding number of equal parts", marks: 2 },
+    { id: "dcg-2016-hl-c4b-r5", kind: "point", verbatim: "(xii) Use of points established at (x) & (xi) above to determine points on locus", marks: 6 },
+    { id: "dcg-2016-hl-c4b-r6", kind: "criterion", verbatim: "(xiii) Draw required locus …(any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q4-art.png",
+          "srcHash": "c377ceeffa8199643137f533951ccaa9",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a ring sculpture and Fig. C-4(a), the concentric circles and slots of a similar design (R100, R96, R60, R46, R40, 16 and 60 degrees) with the points A and B; part (b): a photograph of a toy tipper truck and Fig. C-4(b), the tipped truck body pivoting about A through 60 degrees, the tailgate TT1, and the wheel W of diameter 50 (102, 85, 55 and 45). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Assembly",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2016-hl-c5a-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 7 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Base",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2016-hl-c5a-2-r1", kind: "point", verbatim: "Outline of section", marks: 3 },
+    { id: "dcg-2016-hl-c5a-2-r2", kind: "point", verbatim: "Cylindrical Boss for Vertical Slide Rod", marks: 2 },
+    { id: "dcg-2016-hl-c5a-2-r3", kind: "criterion", verbatim: "Inner detail (relief, fillets × 2 sets and hole) …..(4×1)", marks: 4, permittedMarks: [0,1,2,3,4] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Vertical Slide Rods",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
+    rows: [
+    { id: "dcg-2016-hl-c5a-3-r1", kind: "point", verbatim: "Rod", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Link Plate",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
+    rows: [
+    { id: "dcg-2016-hl-c5a-4-r1", kind: "criterion", verbatim: "Two vertical lines in required positions and top centre … (1, 1)", marks: 2, permittedMarks: [0,1,2] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Hinge Plate",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2016-hl-c5a-5-r1", kind: "point", verbatim: "Outline of Hinge Plate", marks: 5 },
+    { id: "dcg-2016-hl-c5a-5-r2", kind: "point", verbatim: "Inner detail", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Moving Jaw",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2016-hl-c5a-6-r1", kind: "point", verbatim: "Outline of moving jaw", marks: 5 },
+    { id: "dcg-2016-hl-c5a-6-r2", kind: "point", verbatim: "Inner detail", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Handle",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-c5a-7-r1", kind: "point", verbatim: "Establish correct height (or use of broken section)", marks: 1 },
+    { id: "dcg-2016-hl-c5a-7-r2", kind: "point", verbatim: "Establish correct width(s)", marks: 2 },
+    { id: "dcg-2016-hl-c5a-7-r3", kind: "point", verbatim: "Circular top", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5a-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(a) — Drawing Completion",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the moving jaw in its highest position and the link plates (part 5) vertical. (Unless otherwise stated all fillets are 6mm and chamfers 1×1mm. Unnecessary dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: Two tension springs, which are required for the device to work, are shown in the 3D graphic, but may be drawn by simplified representational convention.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-c5a-8-r1", kind: "point", verbatim: "Representation of tension springs, presentation, hatching and centrelines", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2016 Higher Level — © State Examinations Commission.",
+    id: "dcg-2016-hl-c5b", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2016 HL Section C Q5(b)",
+    stem: "Details of a Can Crusher are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the can crusher and its constituent parts.",
+    questionText: "Determine, and indicate on your drawing, the maximum angle of rotation of part 5 when the crusher is in use.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2016-hl-c5b-r1", kind: "point", verbatim: "Use of distance ‘QR’ in a horizontal orientation", marks: 2 },
+    { id: "dcg-2016-hl-c5b-r2", kind: "point", verbatim: "Correct use of 50mm arc to determine and indicate maximum rotation angle", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2016-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+          "srcHash": "c1ef59874e507f21317edd9f31f9f783",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "A", questionRef: "2017 HL Section A Q1(a)",
+    stem: "The image below shows a Bluetooth mini-speaker. The speaker is based on a cube, with its faces cut as shown. The drawing on the right shows an incomplete axonometric projection of a similar cube using the axonometric axes method. The planes of reference are also included. The elevation and plan are shown in their required positions with lines drawn on the three visible faces.",
+    questionText: "Complete the axonometric projection of the cube and the given lines.",
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    rows: [
+    { id: "dcg-2017-hl-a1a-r1", kind: "point", verbatim: "Location of required vertex on top of cube", marks: 6 },
+    { id: "dcg-2017-hl-a1a-r2", kind: "point", verbatim: "Complete outline of cube (3 lines)", marks: 4 },
+    { id: "dcg-2017-hl-a1a-r3", kind: "point", verbatim: "Determine axonometric projection of the six additional lines on the cube", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q1-art.png",
+          "srcHash": "ad1c89b7b876aa7c971a398e02169b6f",
+          "alt": "Question A-1 as printed. A photograph of a cube-shaped Bluetooth mini-speaker with its faces cut, beside an incomplete axonometric projection of a similar cube by the axonometric axes method, with the axes X, Y and Z, the elevation and plan shown in their required positions, and lines a-b and c-d drawn on the visible faces.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "A", questionRef: "2017 HL Section A Q1(b)",
+    stem: "The image below shows a Bluetooth mini-speaker. The speaker is based on a cube, with its faces cut as shown. The drawing on the right shows an incomplete axonometric projection of a similar cube using the axonometric axes method. The planes of reference are also included. The elevation and plan are shown in their required positions with lines drawn on the three visible faces.",
+    questionText: "Determine the true angle between the lines ab and cd.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2017-hl-a1b-r1", kind: "point", verbatim: "X1Y1 parallel to correct cube face in plan", marks: 1 },
+    { id: "dcg-2017-hl-a1b-r2", kind: "point", verbatim: "Projections perp. to X1Y1", marks: 1 },
+    { id: "dcg-2017-hl-a1b-r3", kind: "point", verbatim: "Location of points a, b, c and d in the required auxiliary view", marks: 1 },
+    { id: "dcg-2017-hl-a1b-r4", kind: "point", verbatim: "Drawing of lines to indicate required true angle", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q1-art.png",
+          "srcHash": "ad1c89b7b876aa7c971a398e02169b6f",
+          "alt": "Question A-1 as printed. A photograph of a cube-shaped Bluetooth mini-speaker with its faces cut, beside an incomplete axonometric projection of a similar cube by the axonometric axes method, with the axes X, Y and Z, the elevation and plan shown in their required positions, and lines a-b and c-d drawn on the visible faces.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a2a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2017 HL Section A Q2(a)",
+    stem: "The graphic below shows the logo for the Ladies Professional Golf Association. It contains a combination of geometric curves depicting a female golfer. The main curve is a parabola and the club shaft is a normal to the parabola. The drawing on the right shows the axis AA1, the directrix DD1 and the focus F, of a similar parabola.",
+    questionText: "Locate the vertex and draw a portion of the parabola.",
+    tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
+    rows: [
+    { id: "dcg-2017-hl-a2a-r1", kind: "point", verbatim: "Locate vertex", marks: 6 },
+    { id: "dcg-2017-hl-a2a-r2", kind: "criterion", verbatim: "Locate points outside latus rectum (2,4)", marks: 6, permittedMarks: [0,2,4,6] },
+    { id: "dcg-2017-hl-a2a-r3", kind: "point", verbatim: "Locate points inside latus rectum", marks: 2 },
+    { id: "dcg-2017-hl-a2a-r4", kind: "criterion", verbatim: "Draw curve (Any = 2)", marks: 3, permittedMarks: [0,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q2-art.png",
+          "srcHash": "db7b44e63f9b6ef1e9010210c21d5e84",
+          "alt": "Question A-2 as printed. A photograph of a female golfer beside the Ladies Professional Golf Association logo, and the drawing of the axis AA1, the directrix DD1 and the focus F of a similar parabola.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a2b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2017 HL Section A Q2(b)",
+    stem: "The graphic below shows the logo for the Ladies Professional Golf Association. It contains a combination of geometric curves depicting a female golfer. The main curve is a parabola and the club shaft is a normal to the parabola. The drawing on the right shows the axis AA1, the directrix DD1 and the focus F, of a similar parabola.",
+    questionText: "Locate a point P on the curve which is 30mm from the directrix and construct a normal to the curve at point P.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2017-hl-a2b-r1", kind: "point", verbatim: "Identify point 30mm from directrix", marks: 1 },
+    { id: "dcg-2017-hl-a2b-r2", kind: "criterion", verbatim: "Required correct construction and draw normal ... (1,1)", marks: 2, permittedMarks: [0,1,2] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q2-art.png",
+          "srcHash": "db7b44e63f9b6ef1e9010210c21d5e84",
+          "alt": "Question A-2 as printed. A photograph of a female golfer beside the Ladies Professional Golf Association logo, and the drawing of the axis AA1, the directrix DD1 and the focus F of a similar parabola.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a3a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "A", questionRef: "2017 HL Section A Q3(a)",
+    stem: "A design for a patio fireplace based on a regular solid is shown. The drawing shows the elevation and plan of a similar solid. All faces are regular pentagons.",
+    questionText: "Using the given X1Y1, draw the true length of the line of intersection between faces A and B, and hence determine the dihedral angle between the two faces.",
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    rows: [
+    { id: "dcg-2017-hl-a3a-r1", kind: "criterion", verbatim: "Dihedral angle", marks: 15, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,15], parts: [{"id":"step-1","verbatim":"Projections perp. to X1Y1","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"True length of line of intersection in required auxiliary view","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Locate another point on surface A and on B in the auxiliary view","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"X2Y2 perp. to line of intersection","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Projections perp. to X2Y2","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Location of points on surface A and B in 2nd Auxiliary","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Determination of required dihedral angle","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q3-art.png",
+          "srcHash": "cc054b983c031e4295e4939cd6030c11",
+          "alt": "Question A-3 as printed. A photograph of a patio fireplace based on a regular dodecahedron, beside the elevation and plan of a similar solid with faces A and B marked and the given X1Y1 line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a3b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "A", questionRef: "2017 HL Section A Q3(b)",
+    stem: "A design for a patio fireplace based on a regular solid is shown. The drawing shows the elevation and plan of a similar solid. All faces are regular pentagons.",
+    questionText: "Determine the centrepoint of face B in plan and draw the projections of a sphere which rests on the horizontal plane and is also in tangential contact with the centre point of face B.",
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    rows: [
+    { id: "dcg-2017-hl-a3b-r1", kind: "point", verbatim: "Construction to locate centre of face B in plan", marks: 1 },
+    { id: "dcg-2017-hl-a3b-r2", kind: "point", verbatim: "Determination of edge view of surface B", marks: 1 },
+    { id: "dcg-2017-hl-a3b-r3", kind: "point", verbatim: "Location of required centre in ‘edge view’", marks: 1 },
+    { id: "dcg-2017-hl-a3b-r4", kind: "point", verbatim: "Drawing of required circle in plan and elevation (incl. hidden detail)", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q3-art.png",
+          "srcHash": "cc054b983c031e4295e4939cd6030c11",
+          "alt": "Question A-3 as printed. A photograph of a patio fireplace based on a regular dodecahedron, beside the elevation and plan of a similar solid with faces A and B marked and the given X1Y1 line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a4a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "A", questionRef: "2017 HL Section A Q4(a)",
+    stem: "The plan, elevation and end view of an archery target are shown. The line PA represents the plan of an arrow just before it hits the target. The arrow travels horizontally in a straight flight path.",
+    questionText: "Draw the arrow PA in the end view and in the elevation.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2017-hl-a4a-r1", kind: "point", verbatim: "Draw line PA in end view and elevation", marks: 8 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q4-art.png",
+          "srcHash": "006b638880818175ee84c725ca6a1f2c",
+          "alt": "Question A-4 as printed. A photograph of an archery target with an arrow, beside the plan, elevation and end view of the elliptical target and the line PA representing the plan of an arrow, with the point P.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a4b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "A", questionRef: "2017 HL Section A Q4(b)",
+    stem: "The plan, elevation and end view of an archery target are shown. The line PA represents the plan of an arrow just before it hits the target. The arrow travels horizontally in a straight flight path.",
+    questionText: "Determine the projections of the arrow when it hits the target.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2017-hl-a4b-r1", kind: "point", verbatim: "Locate point of penetration in plan", marks: 4 },
+    { id: "dcg-2017-hl-a4b-r2", kind: "point", verbatim: "Draw arrow in required final position in plan", marks: 2 },
+    { id: "dcg-2017-hl-a4b-r3", kind: "point", verbatim: "Draw arrow in required final position in elevation", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q4-art.png",
+          "srcHash": "006b638880818175ee84c725ca6a1f2c",
+          "alt": "Question A-4 as printed. A photograph of an archery target with an arrow, beside the plan, elevation and end view of the elliptical target and the line PA representing the plan of an arrow, with the point P.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-a4c", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
+    section: "A", questionRef: "2017 HL Section A Q4(c)",
+    stem: "The plan, elevation and end view of an archery target are shown. The line PA represents the plan of an arrow just before it hits the target. The arrow travels horizontally in a straight flight path.",
+    questionText: "A second arrow, travelling in a straight line, also passes through point P and hits the target at the bull’s eye (centre point). Determine the true angle between the two flight paths.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2017-hl-a4c-r1", kind: "point", verbatim: "Join P to ‘bull’s eye’", marks: 2 },
+    { id: "dcg-2017-hl-a4c-r2", kind: "point", verbatim: "Correct construction to determine true angle between flight paths", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q4-art.png",
+          "srcHash": "006b638880818175ee84c725ca6a1f2c",
+          "alt": "Question A-4 as printed. A photograph of an archery target with an arrow, beside the plan, elevation and end view of the elliptical target and the line PA representing the plan of an arrow, with the point P.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b1a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2017 HL Section B Q1(a)",
+    stem: "The image shows ‘Cloud Gate’, an iconic sculpture located in Chicago’s Millennium Park. The drawing below shows a similar piece of sculpture. The main body of the sculpture is generated by revolving the semi-ellipse ABC, which is shown in elevation, about the axis AC, through an angle of 360°, as indicated by the arrow in the end view. A parabolic ‘extruded cut’, DEF, is then removed to complete the sculpture. The vertex of the parabola DEF is located at E in elevation. A 3D graphic of the completed sculpture is also given on the right below. For the purpose of clarity this 3D graphic is viewed from underneath.",
+    questionText: "Draw the given elevation, showing clearly the constructions for the ellipse and the parabola.",
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    rows: [
+    { id: "dcg-2017-hl-b1a-r1", kind: "point", verbatim: "Draw major and minor axes", marks: 2 },
+    { id: "dcg-2017-hl-b1a-r2", kind: "point", verbatim: "Use of correct construction to locate points on ellipse", marks: 5 },
+    { id: "dcg-2017-hl-b1a-r3", kind: "criterion", verbatim: "Draw elliptical curve ….(any = 2)", marks: 3, permittedMarks: [0,2,3] },
+    { id: "dcg-2017-hl-b1a-r4", kind: "point", verbatim: "Use of correct construction to draw parabola", marks: 5 },
+    { id: "dcg-2017-hl-b1a-r5", kind: "criterion", verbatim: "Draw parabolic curve ….(any = 2)", marks: 3, permittedMarks: [0,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q1-art.png",
+          "srcHash": "e113b2f6ab284b5d0fd00109e3b3d372",
+          "alt": "Question B-1 as printed. A photograph of the 'Cloud Gate' sculpture, and Fig. B-1: the elevation of the semi-ellipse ABC (18m across, 6m and 4m heights) with the parabolic cut DEF (10m), the end view with a rotation arrow, the elliptical plan, and a 3D graphic of the sculpture viewed from underneath. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b1b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2017 HL Section B Q1(b)",
+    stem: "The image shows ‘Cloud Gate’, an iconic sculpture located in Chicago’s Millennium Park. The drawing below shows a similar piece of sculpture. The main body of the sculpture is generated by revolving the semi-ellipse ABC, which is shown in elevation, about the axis AC, through an angle of 360°, as indicated by the arrow in the end view. A parabolic ‘extruded cut’, DEF, is then removed to complete the sculpture. The vertex of the parabola DEF is located at E in elevation. A 3D graphic of the completed sculpture is also given on the right below. For the purpose of clarity this 3D graphic is viewed from underneath.",
+    questionText: "Draw the elliptical outline of the sculpture in the plan as given.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-b1b-r1", kind: "point", verbatim: "Use of appropriate method to locate points on ellipse in plan", marks: 3 },
+    { id: "dcg-2017-hl-b1b-r2", kind: "criterion", verbatim: "Draw required elliptical curve in plan ….(any = 2)", marks: 3, permittedMarks: [0,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q1-art.png",
+          "srcHash": "e113b2f6ab284b5d0fd00109e3b3d372",
+          "alt": "Question B-1 as printed. A photograph of the 'Cloud Gate' sculpture, and Fig. B-1: the elevation of the semi-ellipse ABC (18m across, 6m and 4m heights) with the parabolic cut DEF (10m), the end view with a rotation arrow, the elliptical plan, and a 3D graphic of the sculpture viewed from underneath. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b1c", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2017 HL Section B Q1(c)",
+    stem: "The image shows ‘Cloud Gate’, an iconic sculpture located in Chicago’s Millennium Park. The drawing below shows a similar piece of sculpture. The main body of the sculpture is generated by revolving the semi-ellipse ABC, which is shown in elevation, about the axis AC, through an angle of 360°, as indicated by the arrow in the end view. A parabolic ‘extruded cut’, DEF, is then removed to complete the sculpture. The vertex of the parabola DEF is located at E in elevation. A 3D graphic of the completed sculpture is also given on the right below. For the purpose of clarity this 3D graphic is viewed from underneath.",
+    questionText: "Draw the outline end view.",
+    tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
+    rows: [
+    { id: "dcg-2017-hl-b1c-r1", kind: "point", verbatim: "Draw circular outline in end view", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q1-art.png",
+          "srcHash": "e113b2f6ab284b5d0fd00109e3b3d372",
+          "alt": "Question B-1 as printed. A photograph of the 'Cloud Gate' sculpture, and Fig. B-1: the elevation of the semi-ellipse ABC (18m across, 6m and 4m heights) with the parabolic cut DEF (10m), the end view with a rotation arrow, the elliptical plan, and a 3D graphic of the sculpture viewed from underneath. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b1d", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "B", questionRef: "2017 HL Section B Q1(d)",
+    stem: "The image shows ‘Cloud Gate’, an iconic sculpture located in Chicago’s Millennium Park. The drawing below shows a similar piece of sculpture. The main body of the sculpture is generated by revolving the semi-ellipse ABC, which is shown in elevation, about the axis AC, through an angle of 360°, as indicated by the arrow in the end view. A parabolic ‘extruded cut’, DEF, is then removed to complete the sculpture. The vertex of the parabola DEF is located at E in elevation. A 3D graphic of the completed sculpture is also given on the right below. For the purpose of clarity this 3D graphic is viewed from underneath.",
+    questionText: "Use appropriately spaced vertical sections to complete the plan and end view as shown.",
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
+    rows: [
+    { id: "dcg-2017-hl-b1d-r1", kind: "point", verbatim: "Use of vertical sections and their circular outlines to determine points on ‘inner’ curves in end view", marks: 4 },
+    { id: "dcg-2017-hl-b1d-r2", kind: "point", verbatim: "Draw ‘inner’ curves in end view …..(any = 2)", marks: 2 },
+    { id: "dcg-2017-hl-b1d-r3", kind: "point", verbatim: "Use of vertical sections to determine points on ‘horizontal cut’ in plan (min 5)", marks: 6 },
+    { id: "dcg-2017-hl-b1d-r4", kind: "point", verbatim: "Use of vertical sections to determine points on ‘parabolic cut’ in plan (min 3)", marks: 3 },
+    { id: "dcg-2017-hl-b1d-r5", kind: "point", verbatim: "Draw curves in plan….(any = 2)", marks: 2 },
+    { id: "dcg-2017-hl-b1d-r6", kind: "point", verbatim: "Completion of plan, incl. hidden detail", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q1-art.png",
+          "srcHash": "e113b2f6ab284b5d0fd00109e3b3d372",
+          "alt": "Question B-1 as printed. A photograph of the 'Cloud Gate' sculpture, and Fig. B-1: the elevation of the semi-ellipse ABC (18m across, 6m and 4m heights) with the parabolic cut DEF (10m), the end view with a rotation arrow, the elliptical plan, and a 3D graphic of the sculpture viewed from underneath. Scale 1:100.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b2a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2017 HL Section B Q2(a)",
+    stem: "The image on the right shows a playground unit incorporating two planar surfaces which intersect as shown to represent the bow of a boat. The unit also includes a triangular seat and two circular portholes. Fig. B-2 below shows the plan and elevation of a model of the unit. The horizontal and vertical coordinates of the two intersecting planes ABCD and ABEF are also given. A: 205 --- 0 --- 40 B: 235 --- 60 --- 10 C: 195 --- 20 --- 100 D: 185 --- 0 --- 110 E: 145 --- 20 --- 50 F: 135 --- 0 --- 60",
+    questionText: "Draw the plan and elevation of the two intersecting planes ABCD and ABEF.",
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    rows: [
+    { id: "dcg-2017-hl-b2a-r1", kind: "point", verbatim: "Use given coordinates to draw required plan", marks: 8 },
+    { id: "dcg-2017-hl-b2a-r2", kind: "point", verbatim: "Use given coordinates to draw required elevation", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q2-art.png",
+          "srcHash": "b1216e48e8bdf5a5573bd6006bccfcf9",
+          "alt": "Question B-2 as printed. A photograph of a blue playground unit shaped like the bow of a boat, Fig. B-2 giving the plan and elevation of the two intersecting planes ABCD and ABEF, and a table of the horizontal and vertical coordinates of A, B, C, D, E and F. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b2b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2017 HL Section B Q2(b)",
+    stem: "The image on the right shows a playground unit incorporating two planar surfaces which intersect as shown to represent the bow of a boat. The unit also includes a triangular seat and two circular portholes. Fig. B-2 below shows the plan and elevation of a model of the unit. The horizontal and vertical coordinates of the two intersecting planes ABCD and ABEF are also given. A: 205 --- 0 --- 40 B: 235 --- 60 --- 10 C: 195 --- 20 --- 100 D: 185 --- 0 --- 110 E: 145 --- 20 --- 50 F: 135 --- 0 --- 60",
+    questionText: "Determine the dihedral angle between the planes.",
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
+    rows: [
+    { id: "dcg-2017-hl-b2b-r1", kind: "point", verbatim: "X1Y1 parallel to line of intersection AB", marks: 5 },
+    { id: "dcg-2017-hl-b2b-r2", kind: "point", verbatim: "Projection of planes and line of intersection on new X1Y1", marks: 5 },
+    { id: "dcg-2017-hl-b2b-r3", kind: "point", verbatim: "New X2Y2 perpendicular to line of intersection AB", marks: 4 },
+    { id: "dcg-2017-hl-b2b-r4", kind: "point", verbatim: "Projection of ABCD and ABEF as lines and indicating dihedral angle", marks: 5 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q2-art.png",
+          "srcHash": "b1216e48e8bdf5a5573bd6006bccfcf9",
+          "alt": "Question B-2 as printed. A photograph of a blue playground unit shaped like the bow of a boat, Fig. B-2 giving the plan and elevation of the two intersecting planes ABCD and ABEF, and a table of the horizontal and vertical coordinates of A, B, C, D, E and F. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b2c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2017 HL Section B Q2(c)",
+    stem: "The image on the right shows a playground unit incorporating two planar surfaces which intersect as shown to represent the bow of a boat. The unit also includes a triangular seat and two circular portholes. Fig. B-2 below shows the plan and elevation of a model of the unit. The horizontal and vertical coordinates of the two intersecting planes ABCD and ABEF are also given. A: 205 --- 0 --- 40 B: 235 --- 60 --- 10 C: 195 --- 20 --- 100 D: 185 --- 0 --- 110 E: 145 --- 20 --- 50 F: 135 --- 0 --- 60",
+    questionText: "Determine the true shape of the surface ABCD. On the true shape include a Ø20mm circle for the porthole, given that its centre is 30mm from the line AB and 50mm from point D.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-b2c-r1", kind: "point", verbatim: "Use of appropriate construction to determine true shape", marks: 1 },
+    { id: "dcg-2017-hl-b2c-r2", kind: "point", verbatim: "Determination of true shape (four correct lines)", marks: 2 },
+    { id: "dcg-2017-hl-b2c-r3", kind: "criterion", verbatim: "Drawing of porthole in correct position …..(1,1,1)", marks: 3, permittedMarks: [0,1,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q2-art.png",
+          "srcHash": "b1216e48e8bdf5a5573bd6006bccfcf9",
+          "alt": "Question B-2 as printed. A photograph of a blue playground unit shaped like the bow of a boat, Fig. B-2 giving the plan and elevation of the two intersecting planes ABCD and ABEF, and a table of the horizontal and vertical coordinates of A, B, C, D, E and F. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b2d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
+    section: "B", questionRef: "2017 HL Section B Q2(d)",
+    stem: "The image on the right shows a playground unit incorporating two planar surfaces which intersect as shown to represent the bow of a boat. The unit also includes a triangular seat and two circular portholes. Fig. B-2 below shows the plan and elevation of a model of the unit. The horizontal and vertical coordinates of the two intersecting planes ABCD and ABEF are also given. A: 205 --- 0 --- 40 B: 235 --- 60 --- 10 C: 195 --- 20 --- 100 D: 185 --- 0 --- 110 E: 145 --- 20 --- 50 F: 135 --- 0 --- 60",
+    questionText: "The midpoints of the lines AB, AD and AF define the oblique plane which contains the seat. Draw the elevation and plan of the seat. Determine and indicate the horizontal and vertical traces of this oblique plane.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-b2d-r1", kind: "point", verbatim: "Joining of required midpoints in plan and elevation", marks: 2 },
+    { id: "dcg-2017-hl-b2d-r2", kind: "point", verbatim: "Completion of ‘seat’ in elevation and plan", marks: 2 },
+    { id: "dcg-2017-hl-b2d-r3", kind: "point", verbatim: "Drawing and indicating required horizontal trace", marks: 1 },
+    { id: "dcg-2017-hl-b2d-r4", kind: "point", verbatim: "Determine and indicate vertical trace", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q2-art.png",
+          "srcHash": "b1216e48e8bdf5a5573bd6006bccfcf9",
+          "alt": "Question B-2 as printed. A photograph of a blue playground unit shaped like the bow of a boat, Fig. B-2 giving the plan and elevation of the two intersecting planes ABCD and ABEF, and a table of the horizontal and vertical coordinates of A, B, C, D, E and F. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b3a-1", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
+    section: "B", questionRef: "2017 HL Section B Q3(a) — Required Plan",
+    stem: "Fig. B-3 shows the plan and elevation of a display box, similar to the one shown in the image on the right. The design is based on regular hexagonal prism which is truncated as shown. A pictorial view of the box is also shown.",
+    questionText: "Draw the given plan and make a perspective drawing of the box, given the following: The spectator point, S, is 1m from the surface B as shown The picture plane, PP, contains the vertical surface B as shown The horizon line is 1.2m above the ground line The sloping lines on the surfaces B and C are inclined at an angle of 15° to the horizontal plane. Use an auxiliary vanishing point to determine the sloping line on surface C in the perspective drawing.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2017-hl-b3a-1-r1", kind: "point", verbatim: "Draw hexagon as given", marks: 6 },
+    { id: "dcg-2017-hl-b3a-1-r2", kind: "criterion", verbatim: "Plan of required Picture Plane, Spectator Point and Vanishing Points ….(2,1,2)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q3-art.png",
+          "srcHash": "223a25a31844cb8c7fb3e5aefeef7be0",
+          "alt": "Question B-3 as printed. A photograph of a hexagonal display box, Fig. B-3: a pictorial view of the truncated hexagonal prism with surfaces A, B and C, its elevation (0.4m, 0.9m and 0.15m) and its hexagonal plan (0.4m side) against the picture plane PP, with the spectator point S. Scale 1:10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b3a-2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
+    section: "B", questionRef: "2017 HL Section B Q3(a) — Perspective Drawing of Prism",
+    stem: "Fig. B-3 shows the plan and elevation of a display box, similar to the one shown in the image on the right. The design is based on regular hexagonal prism which is truncated as shown. A pictorial view of the box is also shown.",
+    questionText: "Draw the given plan and make a perspective drawing of the box, given the following: The spectator point, S, is 1m from the surface B as shown The picture plane, PP, contains the vertical surface B as shown The horizon line is 1.2m above the ground line The sloping lines on the surfaces B and C are inclined at an angle of 15° to the horizontal plane. Use an auxiliary vanishing point to determine the sloping line on surface C in the perspective drawing.",
+    tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
+    rows: [
+    { id: "dcg-2017-hl-b3a-2-r1", kind: "criterion", verbatim: "Perspective Drawing of Prism", marks: 21, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,21], parts: [{"id":"step-1","verbatim":"Draw Ground Line and Horizon Line","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Establish VP1 and VP2 in Perspective Drawing","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Draw rectangular ‘Front Face’ in Perspective Drawing","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Complete Perspective of other two front faces","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Project and use height to establish perspective of point on back surface ..(1,1,1)","marks":3,"permittedMarks":[0,1,2,3]},{"id":"step-6","verbatim":"Draw perspective of top edges of back surfaces","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Complete Perspective Drawing of truncated prism …..(inner detail)","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q3-art.png",
+          "srcHash": "223a25a31844cb8c7fb3e5aefeef7be0",
+          "alt": "Question B-3 as printed. A photograph of a hexagonal display box, Fig. B-3: a pictorial view of the truncated hexagonal prism with surfaces A, B and C, its elevation (0.4m, 0.9m and 0.15m) and its hexagonal plan (0.4m side) against the picture plane PP, with the spectator point S. Scale 1:10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b3a-3", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
+    section: "B", questionRef: "2017 HL Section B Q3(a) — Perspective of required lines on surfaces B, A and C",
+    stem: "Fig. B-3 shows the plan and elevation of a display box, similar to the one shown in the image on the right. The design is based on regular hexagonal prism which is truncated as shown. A pictorial view of the box is also shown.",
+    questionText: "Draw the given plan and make a perspective drawing of the box, given the following: The spectator point, S, is 1m from the surface B as shown The picture plane, PP, contains the vertical surface B as shown The horizon line is 1.2m above the ground line The sloping lines on the surfaces B and C are inclined at an angle of 15° to the horizontal plane. Use an auxiliary vanishing point to determine the sloping line on surface C in the perspective drawing.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-b3a-3-r1", kind: "criterion", verbatim: "Perspective of 15° line on surface B and horizontal line on surface A ….(1,1)", marks: 2, permittedMarks: [0,1,2] },
+    { id: "dcg-2017-hl-b3a-3-r2", kind: "criterion", verbatim: "Use of AVP to establish and draw sloping line on surface C …(2,1,1)", marks: 4, permittedMarks: [0,1,2,3,4] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q3-art.png",
+          "srcHash": "223a25a31844cb8c7fb3e5aefeef7be0",
+          "alt": "Question B-3 as printed. A photograph of a hexagonal display box, Fig. B-3: a pictorial view of the truncated hexagonal prism with surfaces A, B and C, its elevation (0.4m, 0.9m and 0.15m) and its hexagonal plan (0.4m side) against the picture plane PP, with the spectator point S. Scale 1:10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-b3b", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
+    section: "B", questionRef: "2017 HL Section B Q3(b)",
+    stem: "Fig. B-3 shows the plan and elevation of a display box, similar to the one shown in the image on the right. The design is based on regular hexagonal prism which is truncated as shown. A pictorial view of the box is also shown.",
+    questionText: "On a separate diagram, draw a one-piece surface development of surfaces A, B and C. Include the lines on surfaces A, B and C on the development.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2017-hl-b3b-r1", kind: "criterion", verbatim: "Draw development of surfaces A, B and C ….(1,1,1)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2017-hl-b3b-r2", kind: "point", verbatim: "Lines on surfaces A, B and C in Development (incl. collinearity of 15° lines)", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q3-art.png",
+          "srcHash": "223a25a31844cb8c7fb3e5aefeef7be0",
+          "alt": "Question B-3 as printed. A photograph of a hexagonal display box, Fig. B-3: a pictorial view of the truncated hexagonal prism with surfaces A, B and C, its elevation (0.4m, 0.9m and 0.15m) and its hexagonal plan (0.4m side) against the picture plane PP, with the spectator point S. Scale 1:10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(a) — Earthworks between A and B (Level) - Cutting",
+    questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a proposed ski run. On the map, ABCD is the centreline of the ski run. The ski run has the following specifications: the portion of the ski run between A and B is level at an altitude of 65m the portion of the ski run from B to C is falling uniformly to a level of 50m at C the portion of the ski run from C to D is level at an altitude of 50m and is widened on its northern side as shown. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary for the ski run between A and D on the northern side. (You may ignore the southern side.)",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2017-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 4 },
+    { id: "dcg-2017-hl-c1a-1-r2", kind: "criterion", verbatim: "Identify intersections with contours and draw curve …..(4×1)", marks: 4, permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(a) — Earthworks between B and C (Falling) - Cutting",
+    questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a proposed ski run. On the map, ABCD is the centreline of the ski run. The ski run has the following specifications: the portion of the ski run between A and B is level at an altitude of 65m the portion of the ski run from B to C is falling uniformly to a level of 50m at C the portion of the ski run from C to D is level at an altitude of 50m and is widened on its northern side as shown. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary for the ski run between A and D on the northern side. (You may ignore the southern side.)",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2017-hl-c1a-2-r1", kind: "point", verbatim: "Draw required 22.5mm arc at edge of ski run at C (perp.)", marks: 3 },
+    { id: "dcg-2017-hl-c1a-2-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 5 },
+    { id: "dcg-2017-hl-c1a-2-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(a) — Earthworks between C and D (Level, widening portion) - Embankment",
+    questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a proposed ski run. On the map, ABCD is the centreline of the ski run. The ski run has the following specifications: the portion of the ski run between A and B is level at an altitude of 65m the portion of the ski run from B to C is falling uniformly to a level of 50m at C the portion of the ski run from C to D is level at an altitude of 50m and is widened on its northern side as shown. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary for the ski run between A and D on the northern side. (You may ignore the southern side.)",
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    rows: [
+    { id: "dcg-2017-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
+    { id: "dcg-2017-hl-c1a-3-r2", kind: "criterion", verbatim: "Identify intersections with contours and draw curve …..(2×1)", marks: 2, permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1a-4", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(a) — Earthworks between C and D (Level, wide portion) - Embankment",
+    questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a proposed ski run. On the map, ABCD is the centreline of the ski run. The ski run has the following specifications: the portion of the ski run between A and B is level at an altitude of 65m the portion of the ski run from B to C is falling uniformly to a level of 50m at C the portion of the ski run from C to D is level at an altitude of 50m and is widened on its northern side as shown. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary for the ski run between A and D on the northern side. (You may ignore the southern side.)",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-c1a-4-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
+    { id: "dcg-2017-hl-c1a-4-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
+    { id: "dcg-2017-hl-c1a-4-r3", kind: "point", verbatim: "Accurate Intersections between earthwork curves", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(b)",
+    questionText: "In the space provided at the top of the map, draw the vertical section (profile) through the ski run on the line EF. Vertical towers constructed at points E and F support a steel cable for a ski lift. The cable is 15m and 20m above the ground at points E and F respectively. Determine the maximum vertical distance between the cable and the ground. (Assume that the cable is a straight line.)",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-c1b-r1", kind: "point", verbatim: "Projectors from plan (3 points), establish heights and draw required profile", marks: 2 },
+    { id: "dcg-2017-hl-c1b-r2", kind: "point", verbatim: "Draw towers at E and F at 15m and 20m respectively", marks: 2 },
+    { id: "dcg-2017-hl-c1b-r3", kind: "point", verbatim: "Draw cable and establish required maximum height", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2017 HL Section C Q1(c)",
+    questionText: "On the map, P and Q are two points on the surface of the earth. Vertical boreholes at these points reveal the top surface of a stratum of ore at altitudes of 50m and 35m respectively. A skew borehole at Q is drilled in an easterly direction and has an inclination of 55° to the horizontal plane. It reveals the top surface of the stratum at an altitude of 30m. In the space provided at the top of the map, draw the elevation of this triangular portion of the top surface of the stratum. Draw the plan of the triangle and determine the strike and dip of the stratum.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2017-hl-c1c-r1", kind: "point", verbatim: "Establish points Ph, Qh and Rh in elevation and draw required triangle", marks: 4 },
+    { id: "dcg-2017-hl-c1c-r2", kind: "point", verbatim: "Draw required triangle in plan and establish Strike Line, S", marks: 2 },
+    { id: "dcg-2017-hl-c1c-r3", kind: "point", verbatim: "Establish required Dip", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+          "srcHash": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c2a", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2017 HL Section C Q2(a)",
+    stem: "The image on the right shows a sun canopy over an umpire’s chair at a tennis tournament. The canopy is based on a hyperbolic paraboloid. The projections of the canopy are shown in Fig. C-2 below. A pictorial view is also given. The surface of the hyperbolic paraboloid is generated by translating the parabola ABC, in a vertical position, along the parabola DBE. B is the vertex of both parabolas.",
+    questionText: "Draw the given plan of the canopy, showing all points of tangency.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2017-hl-c2a-r1", kind: "point", verbatim: "Draw four required arcs in plan", marks: 4 },
+    { id: "dcg-2017-hl-c2a-r2", kind: "point", verbatim: "Locate points of contact (eight) and draw required tangential edges", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q2-art.png",
+          "srcHash": "fbd3fe99f99373b7cc30d1c708c16342",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a sun canopy over an umpire's chair, and Fig. C-2: the elevation of the hyperbolic paraboloid canopy (C,A; B; D and E; 150), the end view of the generating parabola ABC (700 across, 200 deep), the plan (700 deep; 175, 700 and 175 across, with arcs of radius R and 60 degree angles at each end) and a pictorial view of the canopy. Scale 1:5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c2b", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2017 HL Section C Q2(b)",
+    stem: "The image on the right shows a sun canopy over an umpire’s chair at a tennis tournament. The canopy is based on a hyperbolic paraboloid. The projections of the canopy are shown in Fig. C-2 below. A pictorial view is also given. The surface of the hyperbolic paraboloid is generated by translating the parabola ABC, in a vertical position, along the parabola DBE. B is the vertex of both parabolas.",
+    questionText: "Draw the end view of the generating parabola ABC as shown.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2017-hl-c2b-r1", kind: "point", verbatim: "Establish required rectangular outline for curve ABC", marks: 2 },
+    { id: "dcg-2017-hl-c2b-r2", kind: "point", verbatim: "Construction to locate points on required parabola", marks: 4 },
+    { id: "dcg-2017-hl-c2b-r3", kind: "criterion", verbatim: "Draw parabolic curve ……(Any = 1-2)", marks: 3, permittedMarks: [0,1,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q2-art.png",
+          "srcHash": "fbd3fe99f99373b7cc30d1c708c16342",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a sun canopy over an umpire's chair, and Fig. C-2: the elevation of the hyperbolic paraboloid canopy (C,A; B; D and E; 150), the end view of the generating parabola ABC (700 across, 200 deep), the plan (700 deep; 175, 700 and 175 across, with arcs of radius R and 60 degree angles at each end) and a pictorial view of the canopy. Scale 1:5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c2c", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2017 HL Section C Q2(c)",
+    stem: "The image on the right shows a sun canopy over an umpire’s chair at a tennis tournament. The canopy is based on a hyperbolic paraboloid. The projections of the canopy are shown in Fig. C-2 below. A pictorial view is also given. The surface of the hyperbolic paraboloid is generated by translating the parabola ABC, in a vertical position, along the parabola DBE. B is the vertex of both parabolas.",
+    questionText: "Project the front elevation of the canopy.",
+    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    rows: [
+    { id: "dcg-2017-hl-c2c-r1", kind: "point", verbatim: "Establish required rectangular outline for curve DBE", marks: 2 },
+    { id: "dcg-2017-hl-c2c-r2", kind: "point", verbatim: "Construction to locate points on required parabola", marks: 4 },
+    { id: "dcg-2017-hl-c2c-r3", kind: "criterion", verbatim: "Draw parabolic curve ……(Any = 1-2)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2017-hl-c2c-r4", kind: "point", verbatim: "Use of appropriately spaced vertical sections and transfer of widths from plan to end view", marks: 5 },
+    { id: "dcg-2017-hl-c2c-r5", kind: "point", verbatim: "Transfer of heights from end view onto corresponding vertical section lines in elevation", marks: 5 },
+    { id: "dcg-2017-hl-c2c-r6", kind: "criterion", verbatim: "Draw required curve in elevation ……(Any = 1-2)", marks: 3, permittedMarks: [0,1,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q2-art.png",
+          "srcHash": "fbd3fe99f99373b7cc30d1c708c16342",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a sun canopy over an umpire's chair, and Fig. C-2: the elevation of the hyperbolic paraboloid canopy (C,A; B; D and E; 150), the end view of the generating parabola ABC (700 across, 200 deep), the plan (700 deep; 175, 700 and 175 across, with arcs of radius R and 60 degree angles at each end) and a pictorial view of the canopy. Scale 1:5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c2d", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2017 HL Section C Q2(d)",
+    stem: "The image on the right shows a sun canopy over an umpire’s chair at a tennis tournament. The canopy is based on a hyperbolic paraboloid. The projections of the canopy are shown in Fig. C-2 below. A pictorial view is also given. The surface of the hyperbolic paraboloid is generated by translating the parabola ABC, in a vertical position, along the parabola DBE. B is the vertex of both parabolas.",
+    questionText: "It has been decided to extend the surface of the canopy to provide more shade for the umpire. This will be achieved by extending the generating parabola ABC upwards and outwards, as indicated by the arrows in the end view, to a width of 900mm. On a separate diagram, draw a new end view of the extended parabola.",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2017-hl-c2d-r1", kind: "point", verbatim: "Redraw the required construction for parabola ABC", marks: 2 },
+    { id: "dcg-2017-hl-c2d-r2", kind: "point", verbatim: "Extend construction horizontally and vertically", marks: 2 },
+    { id: "dcg-2017-hl-c2d-r3", kind: "point", verbatim: "Draw required extended curve", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q2-art.png",
+          "srcHash": "fbd3fe99f99373b7cc30d1c708c16342",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a sun canopy over an umpire's chair, and Fig. C-2: the elevation of the hyperbolic paraboloid canopy (C,A; B; D and E; 150), the end view of the generating parabola ABC (700 across, 200 deep), the plan (700 deep; 175, 700 and 175 across, with arcs of radius R and 60 degree angles at each end) and a pictorial view of the canopy. Scale 1:5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c3a", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2017 HL Section C Q3(a)",
+    stem: "The image on the right shows a recycling bin in a shopping centre. The sloping top of the metal bin is a transition piece made up of two trapeziums and three rectangles as shown. Fig. C-3(a) shows the plan and elevation of the transition piece. (The two openings are not included.) A one-piece surface development of the transition piece is also given in Fig. C-3(b).",
+    questionText: "Draw the given plan and elevation of the five surfaces of the transition piece.",
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    rows: [
+    { id: "dcg-2017-hl-c3a-r1", kind: "point", verbatim: "Draw plan as given", marks: 10 },
+    { id: "dcg-2017-hl-c3a-r2", kind: "point", verbatim: "Draw elevation as given", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q3-art.png",
+          "srcHash": "0b93c524002dabddbab25d5b650fc61f",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a recycling bin with a sloping top, Fig. C-3(a): the elevation and plan of the transition piece made of surfaces A, B and C (360, 90, 120, 90, 360; 180; 60, 60 and 240), and Fig. C-3(b): its one-piece surface development. Scale 1:6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c3b", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2017 HL Section C Q3(b)",
+    stem: "The image on the right shows a recycling bin in a shopping centre. The sloping top of the metal bin is a transition piece made up of two trapeziums and three rectangles as shown. Fig. C-3(a) shows the plan and elevation of the transition piece. (The two openings are not included.) A one-piece surface development of the transition piece is also given in Fig. C-3(b).",
+    questionText: "Determine the dihedral angle between surfaces A and B.",
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    rows: [
+    { id: "dcg-2017-hl-c3b-r1", kind: "criterion", verbatim: "Establish true length of line of intersection in auxiliary view ..(3,3,3)", marks: 9, permittedMarks: [0,3,6,9] },
+    { id: "dcg-2017-hl-c3b-r2", kind: "point", verbatim: "Establish plane perp. to AB (X2Y2 or triangular lamina)", marks: 3 },
+    { id: "dcg-2017-hl-c3b-r3", kind: "point", verbatim: "Construction to determine required dihedral angle", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q3-art.png",
+          "srcHash": "0b93c524002dabddbab25d5b650fc61f",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a recycling bin with a sloping top, Fig. C-3(a): the elevation and plan of the transition piece made of surfaces A, B and C (360, 90, 120, 90, 360; 180; 60, 60 and 240), and Fig. C-3(b): its one-piece surface development. Scale 1:6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c3c", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2017 HL Section C Q3(c)",
+    stem: "The image on the right shows a recycling bin in a shopping centre. The sloping top of the metal bin is a transition piece made up of two trapeziums and three rectangles as shown. Fig. C-3(a) shows the plan and elevation of the transition piece. (The two openings are not included.) A one-piece surface development of the transition piece is also given in Fig. C-3(b).",
+    questionText: "Determine the true length of the shortest diagonal on surface C. Hence using triangulation, or otherwise, draw the given one-piece surface development of the transition piece as shown in Fig. C-3(b).",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2017-hl-c3c-r1", kind: "point", verbatim: "Construction to determine true length of required diagonal", marks: 2 },
+    { id: "dcg-2017-hl-c3c-r2", kind: "point", verbatim: "Draw development of surface A", marks: 2 },
+    { id: "dcg-2017-hl-c3c-r3", kind: "point", verbatim: "Use of true length (or alternative correct construction) to determine required development of surface C (or B)", marks: 2 },
+    { id: "dcg-2017-hl-c3c-r4", kind: "point", verbatim: "Draw development of attached rectangular portion", marks: 1 },
+    { id: "dcg-2017-hl-c3c-r5", kind: "point", verbatim: "Use of symmetry to complete development of Transition Piece", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q3-art.png",
+          "srcHash": "0b93c524002dabddbab25d5b650fc61f",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a recycling bin with a sloping top, Fig. C-3(a): the elevation and plan of the transition piece made of surfaces A, B and C (360, 90, 120, 90, 360; 180; 60, 60 and 240), and Fig. C-3(b): its one-piece surface development. Scale 1:6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c3d", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2017 HL Section C Q3(d)",
+    stem: "The image on the right shows a recycling bin in a shopping centre. The sloping top of the metal bin is a transition piece made up of two trapeziums and three rectangles as shown. Fig. C-3(a) shows the plan and elevation of the transition piece. (The two openings are not included.) A one-piece surface development of the transition piece is also given in Fig. C-3(b).",
+    questionText: "The openings in surfaces B and C are offset 60mm from the outside edges of the surfaces. Draw both openings in the plan and in the elevation.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2017-hl-c3d-r1", kind: "point", verbatim: "Offset edges 10mm inwards in True Shape view", marks: 1 },
+    { id: "dcg-2017-hl-c3d-r2", kind: "point", verbatim: "Locate opening on Surface C in plan and elevation using correct construction", marks: 2 },
+    { id: "dcg-2017-hl-c3d-r3", kind: "point", verbatim: "Use of symmetry to draw projections of second opening", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q3-art.png",
+          "srcHash": "0b93c524002dabddbab25d5b650fc61f",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a recycling bin with a sloping top, Fig. C-3(a): the elevation and plan of the transition piece made of surfaces A, B and C (360, 90, 120, 90, 360; 180; 60, 60 and 240), and Fig. C-3(b): its one-piece surface development. Scale 1:6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2017 HL Section C Q4(a)",
+    questionText: "Cams are used in the engines of quad bikes. Draw the displacement diagram and profile of a radial plate cam, which rotates in an anti-clockwise direction and imparts the following motion to an in-line roller follower of diameter 18mm: 0° to 120° rise 36mm with uniform acceleration and retardation 120° to 180° rise 24mm with uniform velocity 180° to 360° fall 60mm with simple harmonic motion. The nearest approach of the roller centre to the camshaft centre is 40mm. The camshaft diameter is 20mm. Use a distance of 12mm for each 30° interval on your displacement diagram.",
+    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    rows: [
+    { id: "dcg-2017-hl-c4a-r1", kind: "criterion", verbatim: "Cam and Displacement Diagram", marks: 25, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,25], parts: [{"id":"step-1","verbatim":"Draw camshaft","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Establish ‘nearest approach’ on diagram of cam","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Divide circle into 12 equal parts (30° divisions)","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Horizontal divisions on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Construction to determine U.A.R. on disp. diag. (min. 7 incl. end points)","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw Uniform Velocity on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Construction to determine S.H.M. on displacement diagram","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Transfer of heights from displacement diagram to cam diagram","marks":4,"permittedMarks":[0,4]},{"id":"step-9","verbatim":"Draw rollers on 30° division lines","marks":2,"permittedMarks":[0,2]},{"id":"step-10","verbatim":"Complete cam diagram","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q4-art.png",
+          "srcHash": "47c05bc046afcd7fbaede8d72ca18b51",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, part (a)'s cam motion listed in three bullets beside a photograph of a quad bike with its camshaft circled, then part (b): photographs of a robotic gripper arm, its three romans, and Fig. C-4(b): the line diagram of the jaw AB (60) and link BC at 30 degrees, with the arrow X and the points C1 and C2 (120 and 60 apart). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c4b", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2017 HL Section C Q4(b)",
+    stem: "The graphics on the right show an enlarged view of the gripper mechanism on a robotic arm. The details of part of the upper jaw of a similar gripper are shown in line diagram format in Fig C-4(b) below. Jaw AB is pin jointed at B to link BC. AB always remains horizontal.",
+    questionText: "(i) Draw the horizontal axis C-C2, the link BC and the horizontal jaw AB, as shown. (ii) The entire mechanism, ABC, moves to the right, as indicated by arrow X, until point C reaches point C1. At the same time, the link BC rotates clockwise about point C, through 60° to a vertical position. Plot the locus of point A for the combined movement. (iii) The entire mechanism, ABC, then moves further to the right, with point C now moving from point C1 to point C2. At the same time, the link BC rotates 60° anti-clockwise, about point C. On the same drawing, plot the locus of point A for this second combined movement.",
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    rows: [
+    { id: "dcg-2017-hl-c4b-r1", kind: "criterion", verbatim: "Combined Movement Locus", marks: 20, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,20], parts: [{"id":"step-1","verbatim":"(xi) Draw lines AB, BC and C-C2 (incl. point C1) as required","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"(xii) Division of first 60° angle into equal parts (min. 6)","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"(xiii) Division of C-C1 into corresponding no. of equal parts","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"(xiv) Use of points established at (xii) & (xiii) above to determine points on locus","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"(xv) Draw required locus …(any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-6","verbatim":"(xvi) Division of second 60° angle into equal parts (min. 6)","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"(xvii) Division of C1-C2 into corresponding no. of equal parts","marks":1,"permittedMarks":[0,1]},{"id":"step-8","verbatim":"(xviii) Use of points established at (xvi) & (xvii) above to determine points on locus","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"(xix) Draw required locus …(any = 1)","marks":3,"permittedMarks":[0,1,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q4-art.png",
+          "srcHash": "47c05bc046afcd7fbaede8d72ca18b51",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, part (a)'s cam motion listed in three bullets beside a photograph of a quad bike with its camshaft circled, then part (b): photographs of a robotic gripper arm, its three romans, and Fig. C-4(b): the line diagram of the jaw AB (60) and link BC at 30 degrees, with the arrow X and the points C1 and C2 (120 and 60 apart). Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Assembly",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2017-hl-c5a-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Base",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2017-hl-c5a-2-r1", kind: "point", verbatim: "Outline of base (excluding cylindrical boss)", marks: 3 },
+    { id: "dcg-2017-hl-c5a-2-r2", kind: "point", verbatim: "Cylindrical boss including detail at top", marks: 2 },
+    { id: "dcg-2017-hl-c5a-2-r3", kind: "point", verbatim: "Inner detail (relief, fillets and hole)", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — First Vertical Hinge Post & Pin",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2017-hl-c5a-3-r1", kind: "point", verbatim: "Outline of cylindrical portion", marks: 2 },
+    { id: "dcg-2017-hl-c5a-3-r2", kind: "point", verbatim: "Flange on RHS (incl. fillets and holes)", marks: 3 },
+    { id: "dcg-2017-hl-c5a-3-r3", kind: "point", verbatim: "Pin (incl. cylindrical hole)", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Parallel Arm Rails",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2017-hl-c5a-4-r1", kind: "point", verbatim: "Circles x 6", marks: 2 },
+    { id: "dcg-2017-hl-c5a-4-r2", kind: "point", verbatim: "Horizontal arms x 2", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Second Vertical Hinge Post",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2017-hl-c5a-5-r1", kind: "point", verbatim: "Outline of cylindrical portion", marks: 1 },
+    { id: "dcg-2017-hl-c5a-5-r2", kind: "point", verbatim: "Flange on LHS (incl. fillets)", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Top Cranked Arm and Pin",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    rows: [
+    { id: "dcg-2017-hl-c5a-6-r1", kind: "point", verbatim: "Cylindrical portion on LHS, incl. detail at bottom", marks: 1 },
+    { id: "dcg-2017-hl-c5a-6-r2", kind: "point", verbatim: "Cranked link bar", marks: 2 },
+    { id: "dcg-2017-hl-c5a-6-r3", kind: "point", verbatim: "Cylindrical portion on RHS, incl. hole and pin on LHS", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — LCD Mount Bracket",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2017-hl-c5a-7-r1", kind: "point", verbatim: "Hinged Portion", marks: 1 },
+    { id: "dcg-2017-hl-c5a-7-r2", kind: "point", verbatim: "Vertical ‘Face Plate’ portion", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5a-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(a) — Drawing Completion",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Parallel Arms horizontal and the LCD Mount Bracket vertical. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required. Springs, which are required for the device to operate, have been omitted for clarity.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2017-hl-c5a-8-r1", kind: "point", verbatim: "Presentation, hatching and centrelines", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC562ALP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2017 Higher Level — © State Examinations Commission.",
+    id: "dcg-2017-hl-c5b", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2017 HL Section C Q5(b)",
+    stem: "Details of a Desk Monitor Stand are shown in Fig. C-5. The parts list is given below together with a partially exploded 3D graphic of the stand and its constituent parts.",
+    questionText: "On your drawing determine the maximum rotation angle of the Parallel Arms as they rotate upwards about the left hand Parallel Arm Pins. Assuming that the monitor remains vertical, indicate also the horizontal distance through which the LCD Mount Bracket moves during this rotation.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2017-hl-c5b-r1", kind: "point", verbatim: "Determination of required internal tangent", marks: 1 },
+    { id: "dcg-2017-hl-c5b-r2", kind: "point", verbatim: "Use of distance ‘arm length’", marks: 1 },
+    { id: "dcg-2017-hl-c5b-r3", kind: "point", verbatim: "Establish and indicate required horizontal travel distance", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2017-HL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+          "srcHash": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC562ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Higher Level — © State Examinations Commission.",
@@ -2147,7 +4420,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Higher Level — © State Examinations Commission.",
     id: "dcg-2019-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2019 HL Section C Q4(a)",
-    questionText: "The image on the right shows a toy which uses a series of cams and inline flat followers to create linear vertical movement. Draw the displacement diagram for a similar cam mechanism which will impart the following motion to an inline follower given the following data: to 60° Rise 90mm with uniform velocity; 60° to 90° Dwell; 90° to 270° Fall 60mm with Uniform Acceleration and Retardation (UAR); 270° to 360° Return to initial position with uniform velocity. Note: It is not necessary to draw the cam profile. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.)",
+    questionText: "The image on the right shows a toy which uses a series of cams and inline flat followers to create linear vertical movement. Draw the displacement diagram for a similar cam mechanism which will impart the following motion to an inline follower given the following data: 0° to 60° Rise 90mm with uniform velocity; 60° to 90° Dwell; 90° to 270° Fall 60mm with Uniform Acceleration and Retardation (UAR); 270° to 360° Return to initial position with uniform velocity. Note: It is not necessary to draw the cam profile. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.)",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2019-hl-c4a-r1", kind: "point", verbatim: "Horizontal divisions at 15mm as required on displacement diagram", marks: 3 },
@@ -2198,7 +4471,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Higher Level — © State Examinations Commission.",
     id: "dcg-2019-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a Manual Coffee Grinder, for grinding coffee beans. The details of the grinder are given in Fig. C-5 below. The parts list is also given in two tables. Power is transmitted from the horizontal top spindle to the vertical spindle by means of two friction cones in contact. There is a 2mm space between the hopper and the grinding disc. Draw a sectional elevation on A-A, with the parts fully assembled. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Base Coffee Hopper Top Driver Housing Vertical Column Ø16 Bush for Top Spindle Vertical Spindle Bush Part Name Qty. 10 Vertical Spindle Ø8 Driver Friction Cone Handle Assembly 11 Hopper Anchor Pin Ø6 Bottom Grinding Disc 12 Top Spindle Ø8 13 Transparent Top Cover",
     questionText: "The 3D graphic on the right shows a Manual Coffee Grinder, for grinding coffee beans. The details of the grinder are given in Fig. C-5 below. The parts list is also given in two tables. Power is transmitted from the horizontal top spindle to the vertical spindle by means of two friction cones in contact. There is a 2mm space between the hopper and the grinding disc. Draw a sectional elevation on A-A, with the parts fully assembled. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(45)"}, totalMarks: 45,
     rows: [
@@ -2957,7 +5229,7 @@ export const CARDS: SecCard[] = [
     id: "dcg-2020-hl-c3d", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
     section: "C", questionRef: "2020 HL Section C Q3(d)",
     stem: "The image on the right shows a watch. The design includes transition pieces connecting an octagonal base to a square watch face. Fig. C-3 shows the elevation, plan and end view of a similar watch. A partial surface development of the watch face and two of the transition pieces is also shown.",
-    questionText: "The hour and minute hands are shown on the square watch face C in the development. Draw the hands on surface C in the development view and also in elevation and plan. Scale 4:1 (Enlarged scale)",
+    questionText: "The hour and minute hands are shown on the square watch face C in the development. Draw the hands on surface C in the development view and also in elevation and plan.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
     { id: "dcg-2020-hl-c3d-r1", kind: "point", verbatim: "Correct projections of hands on surface C", marks: 2 },
@@ -2980,7 +5252,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2020 HL Section C Q4(a)",
-    questionText: "The 3D graphic shows a radial plate cam. Fig C-4(a) shows the details of a similar cam. The cam rotates in a clockwise direction and has a ø20mm camshaft. Draw the cam profile and the displacement diagram given the following data: to 90° Rise as shown in the diagram 90° to 180° Dwell as shown in the diagram 180° to 360° Return to initial position with Simple Harmonic Motion. In the displacement diagram, use a distance of 12mm to represent each 30° interval.",
+    questionText: "The 3D graphic shows a radial plate cam. Fig C-4(a) shows the details of a similar cam. The cam rotates in a clockwise direction and has a ø20mm camshaft. Draw the cam profile and the displacement diagram given the following data: 0° to 90° Rise as shown in the diagram 90° to 180° Dwell as shown in the diagram 180° to 360° Return to initial position with Simple Harmonic Motion. In the displacement diagram, use a distance of 12mm to represent each 30° interval.",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2020-hl-c4a-r1", kind: "criterion", verbatim: "Can Profile and Displacement Diagram", marks: 23, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,23], parts: [{"id":"step-1","verbatim":"Draw camshaft and two circular arcs","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Horizontal divisions at 12mm as required on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Transfer of heights to displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Establish height at 90° interval and draw ‘Rise’ curve","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw correct horizontal ‘Dwell’ line","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Construction to determine S.H.M. (min. 7 incl. end points)","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Draw SHM curve … (any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
@@ -3026,7 +5298,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -3048,7 +5319,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Lower Bracket",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -3071,7 +5341,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Top Bracket",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -3095,7 +5364,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Swivel Mount",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -3118,7 +5386,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Swivel Arm and Swivel Arm Spindle",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -3142,7 +5409,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Phone Holder Body",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -3165,7 +5431,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Cam Lever Lock and Cam Lever Spindle",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -3189,7 +5454,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -3407,7 +5671,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Draw the given elevation and end view of the bridge.",
     tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
@@ -3429,7 +5693,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Project the given plan.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -3456,7 +5720,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1c", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Determine the true shape of the curve ABC.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -3480,7 +5744,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(a)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "Draw the given elevation and plan of the intersecting planes ABC, ABD, and BDE.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -3503,7 +5767,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(b)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "Determine the dihedral angle between the planes ABC and ABD.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
@@ -3528,7 +5792,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(c)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "A line is drawn from the point E. This line is parallel to the line AC and intersects the horizontal plane at a point P. Draw the projections of the line EP and determine its inclination to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -3552,7 +5816,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(d)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "The true lengths of the edges AF and CF of the plane ACF are 70mm and 80mm, respectively. Complete the projections of the triangle ACF.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -3646,7 +5910,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks on curved section between A and B (Level) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -3683,7 +5946,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks on curved section between A and B (Level) - Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -3720,7 +5982,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between B and C (Level) – Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -3757,7 +6018,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-4", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between C and D (falling embankment)",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -3795,7 +6055,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-5", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between C and D (falling cutting)",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -3833,7 +6092,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(b)",
-    stem: "and Section C on drawing paper. On a separate diagram on the map, the elevation and plan of three boreholes drawn from points P, Q and R are shown. They reveal the top surface of a stratum of ore at distances of 13m, 15m and 10m from P, Q and R, respectively.",
+    stem: "On a separate diagram on the map, the elevation and plan of three boreholes drawn from points P, Q and R are shown. They reveal the top surface of a stratum of ore at distances of 13m, 15m and 10m from P, Q and R, respectively.",
     questionText: "(i) Draw the elevation and plan of the top surface of the stratum. (ii) Determine the strike and dip of the stratum. (iii) The length of the borehole from P as it passes through the stratum is 15m. Determine the thickness of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -4068,7 +6327,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c4b", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2021 HL Section C Q4(b)",
-    questionText: "The graphic on the right shows a cam timer. This device is used in the automation industry to control repetitive operations. A series of cams, arranged on a shaft, are driven by a motor. Fig C-4(b) shows the details of one such cam. The cam rotates in an anti-clockwise direction and has an inline knife-edge follower. Draw the cam profile and the displacement diagram given the following data: 0° to 180° Rise as shown in the diagram 180° to 270° Fall as shown in the diagram 270° to 360° Fall with simple harmonic motion. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Scale 5:1",
+    questionText: "The graphic on the right shows a cam timer. This device is used in the automation industry to control repetitive operations. A series of cams, arranged on a shaft, are driven by a motor. Fig C-4(b) shows the details of one such cam. The cam rotates in an anti-clockwise direction and has an inline knife-edge follower. Draw the cam profile and the displacement diagram given the following data: 0° to 180° Rise as shown in the diagram 180° to 270° Fall as shown in the diagram 270° to 360° Fall with simple harmonic motion. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.)",
     tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
     { id: "dcg-2021-hl-c4b-r1", kind: "criterion", verbatim: "Cam Profile and Displacement Diagram", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw camshaft, two circular arcs and line as given","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Horizontal divisions at 15mm and vertical lines on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Establish heights in displacement diagram from 0° to 180°","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Draw ‘Rise’ curve","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw correct ‘Fall’ and ‘Dwell’","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Construction to determine S.H.M (min. 7 incl. end points)","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Draw S.H.M. curve … (any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
@@ -4089,7 +6348,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Assembly",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4111,7 +6369,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Main Body",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -4136,7 +6393,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Clamping Jaw",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
@@ -4161,7 +6417,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Clamp Coupling/M8 Stud",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -4184,7 +6439,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Jaw Clamping Nut/Washer",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -4207,7 +6461,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Camera Swivel",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -4230,7 +6483,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — GoPro Lock Nut and M6 Stud",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -4253,7 +6505,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Completion of drawing",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4466,7 +6717,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Draw the given elevation and plan of the intersecting planes ABC, ABD and EFG.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -4489,7 +6740,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Determine the dihedral angle between the planes ABC and ABD.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
@@ -4514,7 +6765,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Draw the elevation and plan of a horizontal line on the surface EFG and project an auxiliary elevation which will show an edge view of the plane EFG. Indicate the angle of inclination of the plane EFG to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -4539,7 +6790,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(d)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Locate the position of a point P on the plane EFG which is a distance of 40mm from the horizontal plane and 68mm from the vertical plane. Determine and indicate the true length of FP.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -4703,7 +6954,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between A and B (Level, Sloping edge) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -4740,7 +6990,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between B and C (Level) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -4777,7 +7026,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between B and C (Level) - Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -4814,7 +7062,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-4", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between C and D - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -4852,7 +7099,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(b)",
-    stem: "and Section C on drawing paper.",
     questionText: "In the space provided at the top of the map, draw a vertical section (profile) on the line EF after the earthworks for the path and the rest area have been completed.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -4892,7 +7138,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(c)",
-    stem: "and Section C on drawing paper.",
     questionText: "A mobile phone mast is to be built at point E. Determine, and indicate in metres, the maximum height for the mast if the top of the mast is not to be visible from the ground at point F on the rest area.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -5148,7 +7393,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -5170,7 +7414,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Base",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -5195,7 +7438,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Vertical Spindle",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -5218,7 +7460,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Vice Pivot",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -5241,7 +7482,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Lower Jaw Spindle",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -5264,7 +7504,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Clamping Jaw",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5287,7 +7526,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Rotating Boss & Dowel",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -5311,7 +7549,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Securing Screws",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5334,7 +7571,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-9", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -6261,7 +8497,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Higher Level — © State Examinations Commission.",
     id: "dcg-2023-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a rivet punch. The details of the punch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle inclined at an angle of 20° to the horizontal plane. Clearly show all points of contact. (Note: Unless otherwise stated, fillets are 2 mm and chamfers are 1 × 1 mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Punch Lower Support Pin Spring M6 × 20 Set Screw (Not Shown)",
     questionText: "The 3D graphic on the right shows a rivet punch. The details of the punch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle inclined at an angle of 20° to the horizontal plane. Clearly show all points of contact. (Note: Unless otherwise stated, fillets are 2 mm and chamfers are 1 × 1 mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -7247,7 +9482,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Higher Level — © State Examinations Commission.",
     id: "dcg-2024-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a clothes line winch. The details of the winch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle in the vertical position as shown. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Main Body Pawl Axle Bolt M6 × 20 Set Screw Ratchet Pulley M6 Plain Nut Pin Ø4 × 18 Handle Washer",
     questionText: "The 3D graphic on the right shows a clothes line winch. The details of the winch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle in the vertical position as shown. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -8022,7 +10256,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Higher Level — © State Examinations Commission.",
     id: "dcg-2025-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2025 HL Section C Q4(a)",
-    questionText: "The image on the right shows a pull-along frog toy. The frog toy has a cam and follower mechanism which causes the mouth to open and close as the toy moves. Draw the displacement diagram and profile of the radial plate cam which imparts the following motion to an inline knife edge follower. 120° rise of 36 mm with uniform acceleration and retardation 120° 180° rise 24 mm with uniform velocity 180° 360° fall 60 mm with simple harmonic motion. The nearest approach of the follower to the cam centre is 40 mm. The camshaft diameter is 20 mm. The cam rotates in an anticlockwise direction. Use a distance of 12 mm for each 30° interval on your displacement diagram.",
+    questionText: "The image on the right shows a pull-along frog toy. The frog toy has a cam and follower mechanism which causes the mouth to open and close as the toy moves. Draw the displacement diagram and profile of the radial plate cam which imparts the following motion to an inline knife edge follower. 0° to 120° rise of 36 mm with uniform acceleration and retardation 120° to 180° rise 24 mm with uniform velocity 180° to 360° fall 60 mm with simple harmonic motion. The nearest approach of the follower to the cam centre is 40 mm. The camshaft diameter is 20 mm. The cam rotates in an anticlockwise direction. Use a distance of 12 mm for each 30° interval on your displacement diagram.",
     tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
     rows: [
     { id: "dcg-2025-hl-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram and Cam Profile", marks: 35, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,35], parts: [{"id":"step-1","verbatim":"Draw camshaft","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Establish ‘nearest approach’ on diagram of cam","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Horizontal divisions on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Construction to determine U.A.R. on disp. diag. (min. 7 incl. end points)","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Draw Uniform Velocity on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Construction to determine S.H.M. on displacement diagram","marks":6,"permittedMarks":[0,6]},{"id":"step-7","verbatim":"Divide circle into 12 equal parts (30° divisions)","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Required intermediate divisions (U.A.R.) (20° divisions)","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Transfer of heights from displacement diagram to cam diagram","marks":6,"permittedMarks":[0,6]},{"id":"step-10","verbatim":"Complete diagram of cam","marks":3,"permittedMarks":[0,3]}] },
@@ -8070,7 +10304,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Higher Level — © State Examinations Commission.",
     id: "dcg-2025-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a potato chip maker. The details of the potato chip maker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the portion of the handle labelled X in a vertical position. Note: Any undimensioned holes are Ø4 mm. Any omitted dimensions may be estimated. Part Name Qty. Sliding Plunger End Cutter End Cap Handle Link Arm Plunger Guide Bar Potato Guide Bar M4 × 16 Set Screw Washer",
     questionText: "The 3D graphic on the right shows a potato chip maker. The details of the potato chip maker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the portion of the handle labelled X in a vertical position. Note: Any undimensioned holes are Ø4 mm. Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -8482,7 +10715,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(a)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Draw the given elevation and plan of the intersecting planes ABD, BCD, and CDE.",
     tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
@@ -8505,7 +10738,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(b)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Determine the dihedral angle between planes ABD and BCD.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -8530,7 +10763,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(c)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Determine and indicate the angle of inclination of the plane CDE to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -8554,7 +10787,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(d)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "The dihedral angle between the planes CDE and DEF is 150°. Complete the projections of the plane DEF.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
@@ -8934,7 +11167,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2026 HL Section C Q4(a)",
-    questionText: "The image on the right shows a peristaltic pump. A peristaltic pump uses a cam to compress a flexible tube which forces a liquid inside to move in one direction. Draw the displacement diagram and profile of the radial plate cam which imparts the following motion. to 180° rise of 60 mm with simple harmonic motion 180° to 300° dwell 300° to 360° fall 60 mm with uniform velocity. The nearest approach of the tube to the cam centre is 30 mm. The camshaft diameter is 24 mm. The cam rotates in a clockwise direction. Use a distance of 10 mm for each 30° interval on your displacement diagram.",
+    questionText: "The image on the right shows a peristaltic pump. A peristaltic pump uses a cam to compress a flexible tube which forces a liquid inside to move in one direction. Draw the displacement diagram and profile of the radial plate cam which imparts the following motion. 0° to 180° rise of 60 mm with simple harmonic motion 180° to 300° dwell 300° to 360° fall 60 mm with uniform velocity. The nearest approach of the tube to the cam centre is 30 mm. The camshaft diameter is 24 mm. The cam rotates in a clockwise direction. Use a distance of 10 mm for each 30° interval on your displacement diagram.",
     tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
     { id: "dcg-2026-hl-c4a-r1", kind: "criterion", verbatim: "Draw the displacement diagram and cam profile", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw camshaft","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Establish ‘nearest approach’ on diagram of cam","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Horizontal divisions on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Construction to determine S.H.M. on disp. diag. (min. 7 incl. end points)","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Draw dwell on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw uniform velocity on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Divide circle into 12 equal parts (30° divisions)","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Required intermediate divisions (uniform velocity) (15° divisions)","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Transfer of heights from displacement diagram to cam diagram","marks":6,"permittedMarks":[0,6]},{"id":"step-10","verbatim":"Complete diagram of cam","marks":3,"permittedMarks":[0,3]}] },
@@ -8981,7 +11214,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -9003,7 +11235,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Main Body",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -9026,7 +11257,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Lever Arm",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -9049,7 +11279,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Sliding Jaw Guide",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -9072,7 +11301,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Link Arm",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -9094,7 +11322,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Sliding Jaw",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -9116,7 +11343,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Adjustable Jaw Guide",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -9138,7 +11364,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Adjustable Jaw",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -9161,7 +11386,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-9", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — M3 x 14 Set Screws",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
     rows: [
@@ -9183,7 +11407,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-10", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — M4 x 14 Set Screws",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -9205,7 +11428,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-11", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
