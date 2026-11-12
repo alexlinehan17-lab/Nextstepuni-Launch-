@@ -5280,7 +5280,7 @@
         "Matching has ten2-mark answers. Grammar has eleven original bracketed prompts and15 separately priced bold/underlined forms; зимой/зимою is one accepted alternative."
       ],
       "validation": {
-        "status": "Draft original/source/canonical gates passed; actual generated runtime, preservation, required checks and deterministic cycles pending.",
+        "status": "Source checkpoint passed: all42 original asks represented. Five whole confidence tasks remain numerically unresolved. Root combined types/build/current-session integration pending.",
         "sourceQuoteGate": {
           "cards": 24,
           "slices": 239,
@@ -5295,8 +5295,8 @@
           "negativeMutations": 7,
           "passed": true
         },
-        "sourceCoverageComplete": false,
-        "sourceCheckpointPassed": false,
+        "sourceCoverageComplete": true,
+        "sourceCheckpointPassed": true,
         "sittingCompletion": false,
         "heldNumericTasks": [
           {
@@ -5337,7 +5337,51 @@
           "Allfive actual confidence cards save0/0 in both current layouts, with confidence labels and no numerical suggested maximum.",
           "Exclude allfive from numeric quiz selection while preserving known luggage/pet prices visibly.",
           "Keep all earlier Russian objects/anchors and all non-Russian Atlas records unchanged."
-        ]
+        ],
+        "sourceCommit": "f02c94a81499741a55aa5871b48d68d785a5019b",
+        "mandatoryOriginalCases": 13,
+        "requiredRuntimeCases": 251,
+        "russianCoverageCases": 3,
+        "localRuntimeFiles": {
+          "russian2020HigherReviewed.test": 18,
+          "markBankCardPreservation.test": 112,
+          "curriculumRegistry.test": 17,
+          "markBankDeck.test": 104
+        },
+        "targetedLintPassed": true,
+        "completeRuntimeOverlayLint": {
+          "cards": 1372,
+          "findings": 0
+        },
+        "preservation": {
+          "all1331PriorAuthoredAndRuntimeRecordsUnchanged": true,
+          "original199IdsAndFrozenRecordsPreserved": true,
+          "allPriorRussianAtlasQuestionsUnchanged": true,
+          "allOtherSubjectDecksBaselinesIndexAndFullDecodedAtlasUnchanged": true,
+          "allFivePriorJointTasksUnchanged": true
+        },
+        "determinism": {
+          "cycles": 2,
+          "filesPerCycle": 30486,
+          "byteIdentical": true,
+          "method": "Generator-only cycles after one mandatory original/source gate; no repeated corpus verification."
+        },
+        "reconciliation": {
+          "sittingCovered": 42,
+          "sittingAsks": 42,
+          "sittingOpen": 0,
+          "sittingExcluded": 0,
+          "wholeCovered": 1414,
+          "wholeAsks": 1465,
+          "wholeOpen": 25,
+          "wholeExcluded": 26,
+          "wholeStaleExclusions": 254,
+          "wholeOrphans": 0,
+          "wholeUnparsed": 0,
+          "exitCode": 120,
+          "explanation": "Expected min(open25 + unchanged historical stale exclusions254,120). This is not a whole-subject completion or a blanket exit0."
+        },
+        "resourceValidation": "One guarded stage at a time, two normal-pressure samples30seconds apart,2GiB start/1GiB stop, Node2048 and one Vitest worker. Passed logs retained; no full local app types/build were run for this checkpoint."
       }
     }
   ]
