@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
+import { existsSync } from 'node:fs';
 import { CARDS } from '../components/MarkBank/cards/home-economics/higher';
 import { tariffReconciles } from '../types/markBank';
-import { reviewedHomeEconomicsSource, homeEconomicsSourceMap } from '../scripts/markbank/homeEconomicsSources.mjs';
+import { reviewedHomeEconomicsSourceMetadata, homeEconomicsSourceMap } from '../scripts/markbank/homeEconomicsSources.mjs';
 import { resolveIndexedPaperFileid } from '../scripts/markbank/paperIndex.mjs';
 import review from '../scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json';
 import review2022 from '../scripts/markbank/authoring/home-economics/2022-hl-deferred-review.json';
@@ -14,6 +15,11 @@ import crosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-cros
 import { preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
+
+it.skipIf(![review2022, review].every(r => Object.values(r.sources).every(source => existsSync(source.path))))
+('verifies every available deferred Home Economics original against its pinned hash', () => {
+  for (const r of [review2022, review]) expect(homeEconomicsSourceMap(r).size).toBe(r.tasks.length);
+});
 
 const cards = CARDS.filter(c => c.id.startsWith('he-2023-hl-deferred-sa-'));
 const get = (suffix: string) => {
@@ -65,7 +71,7 @@ describe('Home Economics 2022 deferred Section A', () => {
       if (c.kind !== 'question') throw new Error(c.id);
       expect(tariffReconciles(c), c.id).toBe(true);
       expect(c.paperFileid).toBe('LC098ALP014EV-deferred');
-      const source = reviewedHomeEconomicsSource(c.id);
+      const source = reviewedHomeEconomicsSourceMetadata(c.id);
       expect(resolveIndexedPaperFileid('home-economics', 2022, 'higher', source)).toBe('LC098ALP014EV-deferred');
       const n = c.questionRef.match(/Q(\d+)/)![1];
       const mapping = runtime.questionMappings.find(r => r[0] === 'h' && r[1] === 'e' && r[2] === 2022 && r[4] === file && r[5] === n)!;
@@ -75,7 +81,7 @@ describe('Home Economics 2022 deferred Section A', () => {
     }
     const wrongYear = structuredClone(review2022); wrongYear.year = 2023;
     expect(() => homeEconomicsSourceMap(wrongYear)).toThrow(/archive identity/);
-    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sc-q99ai')).toThrow(/lacks reviewed sources/);
+    expect(() => reviewedHomeEconomicsSourceMetadata('he-2022-hl-deferred-sc-q99ai')).toThrow(/lacks reviewed sources/);
   });
 });
 
@@ -316,10 +322,10 @@ describe('Home Economics deferred source boundaries', () => {
     const bad = structuredClone(review); bad.sources.a.fileid = bad.sources.bc.fileid;
     expect(() => homeEconomicsSourceMap(bad)).toThrow(/archive identity/);
     expect(() => homeEconomicsSourceMap(review, () => Buffer.from('wrong document'))).toThrow(/bytes differ/);
-    expect(() => reviewedHomeEconomicsSource('he-2023-hl-deferred-sa-q99')).toThrow(/lacks reviewed sources/);
-    expect(reviewedHomeEconomicsSource('he-2023-hl-sa-q1')).toBeUndefined();
-    expect(resolveIndexedPaperFileid('home-economics', 2023, 'higher', reviewedHomeEconomicsSource(get('q1').id))).toBe('LC098ALP014EV-deferred');
-    expect(() => resolveIndexedPaperFileid('home-economics', 2023, 'ordinary', reviewedHomeEconomicsSource(get('q1').id))).toThrow(/No unique indexed/);
+    expect(() => reviewedHomeEconomicsSourceMetadata('he-2023-hl-deferred-sa-q99')).toThrow(/lacks reviewed sources/);
+    expect(reviewedHomeEconomicsSourceMetadata('he-2023-hl-sa-q1')).toBeUndefined();
+    expect(resolveIndexedPaperFileid('home-economics', 2023, 'higher', reviewedHomeEconomicsSourceMetadata(get('q1').id))).toBe('LC098ALP014EV-deferred');
+    expect(() => resolveIndexedPaperFileid('home-economics', 2023, 'ordinary', reviewedHomeEconomicsSourceMetadata(get('q1').id))).toThrow(/No unique indexed/);
   });
   it('maps every new task to its own deferred Atlas question and every canonical topic', () => {
     const file = 'LC098ALP014EV-deferred.pdf';
