@@ -193177,5 +193177,3676 @@
       "humanReviewedBy": "Codex source review; browser QA pending",
       "humanReviewedAt": "2026-11-06"
     }
+  },
+  {
+    "id": "ru-2019-hl-c1-1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "reasons-vadim-not-written-friend-before",
+    "questionRef": "2019 HL Section C1 Q1",
+    "questionText": "Give two reasons why Vadim has not written to his friend before now. (Section 1)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Was busy/had no time",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Had nothing interesting to tell / had no news / nothing interesting happened",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Wanted to write about something exciting/unusual",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-2-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "school-year-different-vadim-section",
+    "questionRef": "2019 HL Section C1 Q2(i)",
+    "questionText": "Give four details about how this school year is different for Vadim. (Section 2)",
+    "totalMarks": 8,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail.",
+        "4 x 2marks • Improved his grades in Physics and Chemistry • Does a lot studying on his own/by himself • Reads • Solves problems • Watches educational programmes/films • Asks his older brother for help when doesn’t understand something • Likes the subjects that seemed boring before Accept information relating to university preparations but if the same information is repeated in answer 2.(ii) it cannot be awarded marks again.",
+        "2 x 2 marks • exams in physics and maths • has to write an essay • grinds/tutor in Russian • literature"
+      ],
+      "count": 4,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-3",
+          "label": "Manual distinct detail 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-3-credit",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-4",
+          "label": "Manual distinct detail 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-4-credit",
+              "label": "Distinct detail 4",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess distinct details manually against the complete accepted pools and the source rule on repeated information. No automatic cross-question state is inferred. Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "vadim-preparations-university-examinations-hopes-take",
+    "questionRef": "2019 HL Section C1 Q2(ii)",
+    "questionText": "Give two details about Vadim’s preparations for the university examinations that he hopes to take in the future. (Section 2)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail.",
+        "4 x 2marks • Improved his grades in Physics and Chemistry • Does a lot studying on his own/by himself • Reads • Solves problems • Watches educational programmes/films • Asks his older brother for help when doesn’t understand something • Likes the subjects that seemed boring before Accept information relating to university preparations but if the same information is repeated in answer 2.(ii) it cannot be awarded marks again.",
+        "2 x 2 marks • exams in physics and maths • has to write an essay • grinds/tutor in Russian • literature"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [],
+              "limits": [
+                {
+                  "id": "detail-1-already-credited",
+                  "maxMarks": 0,
+                  "when": {
+                    "any": [
+                      {
+                        "flag": "detail-1-already-credited",
+                        "prompt": "This detail was already credited in Question 2(i)."
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Accept information relating to university preparations but if the same information is repeated in answer 2.(ii) it cannot be awarded marks again."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [],
+              "limits": [
+                {
+                  "id": "detail-2-already-credited",
+                  "maxMarks": 0,
+                  "when": {
+                    "any": [
+                      {
+                        "flag": "detail-2-already-credited",
+                        "prompt": "This detail was already credited in Question 2(i)."
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Accept information relating to university preparations but if the same information is repeated in answer 2.(ii) it cannot be awarded marks again."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess distinct details manually against the complete accepted pools and the source rule on repeated information. No automatic cross-question state is inferred. Set the already-credited condition only for the particular repeated detail. The other response remains independent. Follow the printed general instruction to accept the response giving the most marks; a condition does not move or alter the other card’s stored score. Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-3-i",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "moscow-university-vadim-first-choice-section",
+    "questionRef": "2019 HL Section C1 Q3(i)",
+    "questionText": "Why is Moscow State University Vadim’s first choice? Give two details. (Section 3)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "best sport facilities",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "compulsory PE classes for all the students",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "variety of sport clubs",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "students have won Olympic medals",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "sport is very important for Vadim",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-3-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "teachers-say-vadim-class-section",
+    "questionRef": "2019 HL Section C1 Q3(ii)",
+    "questionText": "What do the teachers say about Vadim’s class? Give one detail. (Section 3)",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail.",
+        "Assign no marks: good"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Friendly",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Teachers set Vadim’s class as an example",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-3-iii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "students-agree-masquerade-ball-section",
+    "questionRef": "2019 HL Section C1 Q3(iii)",
+    "questionText": "What did the students agree to do for the masquerade ball? Give two details. (Section 3)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Make/sew costumes/suits/gowns themselves",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Not to buy costumes",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It’s more interesting/unusual/colourful/ demanding this way",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "You could see who put effort in",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-3-iv",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "vadim-class-took-part-history-olympiad",
+    "questionRef": "2019 HL Section C1 Q3(iv)",
+    "questionText": "Vadim’s class took part in a History Olympiad. Give three details. (Section 3)",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Prize game at the end of Olympiad",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Quest on historical places in Moscow",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The game was not easy",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Consisted of two parts",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Was time restricted",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His class won",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They were proud/ delighted",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c1-4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "vadim-parents-currently-spend-evenings-section",
+    "questionRef": "2019 HL Section C1 Q4",
+    "questionText": "Give three details about how Vadim and his parents currently spend their evenings. (Section 4)",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "SECTION I – 120 MARKS Q.1. Comprehension • Accept answers to questions which supply evidence from sections not referred to in the question. • Where a candidate uses the same information in response to two or more questions, mark both answers and accept the one which gives the candidate the most marks. Put square brackets around the other answer to indicate that it is duplicating material for which marks have already been awarded. • Where an element of an answer is inferred but not stated, do not award marks for that element. • Where a candidate conflates two ideas/concepts into one [brother + sister = siblings], thereby demonstrating good synthesizing skills, award a mark for each concept. • Award 2 marks per detail."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Thinking of renovating the apartment/living room/sitting room",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Discuss walls/ floors",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Looking at wall paper/ paint/ floor materials (on internet)",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Argue sometimes",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": " Answer in English or Irish, as permitted by the original bilingual paper."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 4, 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c2-1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "georgiy-response-questions-asked-survey",
+    "questionRef": "2019 HL Section C2 Q1",
+    "questionText": "Give four details about Georgiy’s response to the questions asked in the survey.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C2",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6, 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)",
+        "10 marks Main points: • Life of a woman is hard • Sometimes very hard • No one can deprive a woman from doing a job she likes • His mother was a plant engineer + • His mother would had never agreed to be a housewife/to stay home • His mother loved her plant/her job Secondary details: • His mother said that she could only sleep peacefully at night when she had retired • Every night his mother was worried about the plant she worked at"
+      ],
+      "count": 4,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-3",
+          "label": "Manual distinct detail 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-3-credit",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-4",
+          "label": "Manual distinct detail 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-4-credit",
+              "label": "Distinct detail 4",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. Answer in English or Irish, as permitted by the original bilingual paper.",
+      "criteria": [
+        {
+          "id": "summary-skills",
+          "label": "Discretionary marks",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+          ],
+          "limits": [
+            {
+              "id": "incomplete-response",
+              "maxMarks": 1,
+              "when": {
+                "any": [
+                  {
+                    "flag": "incomplete-response",
+                    "prompt": "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+                  }
+                ]
+              },
+              "guidance": [
+                "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 6, 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c2-2",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "shokrat-response-questions-asked-survey",
+    "questionRef": "2019 HL Section C2 Q2",
+    "questionText": "Give four details about Shokrat’s response to the questions asked in the survey.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C2",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6, 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)",
+        "10 marks Main points: • When it comes to children’s upbringing the role of a woman is not to be compared to the role of a man • Upbringing must be main role/responsibility of a woman • Care for her husband and home • Women who work contribute to the low birth rate in many countries • Independent/self-sufficient women are the cause of divorces • Single parent families Secondary details: • Man/husband provides for his family • Man deserves care and attention from his wife"
+      ],
+      "count": 4,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-3",
+          "label": "Manual distinct detail 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-3-credit",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-4",
+          "label": "Manual distinct detail 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-4-credit",
+              "label": "Distinct detail 4",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. Answer in English or Irish, as permitted by the original bilingual paper.",
+      "criteria": [
+        {
+          "id": "summary-skills",
+          "label": "Discretionary marks",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+          ],
+          "limits": [
+            {
+              "id": "incomplete-response",
+              "maxMarks": 1,
+              "when": {
+                "any": [
+                  {
+                    "flag": "incomplete-response",
+                    "prompt": "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+                  }
+                ]
+              },
+              "guidance": [
+                "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 6, 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c2-3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "elvira-response-questions-asked-survey",
+    "questionRef": "2019 HL Section C2 Q3",
+    "questionText": "Give four details about Elvira’s response to the questions asked in the survey.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C2",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6, 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)",
+        "10 marks Main points: • Women must be able to decide when/how much they work • To work or stay home • Women decide what’s more important for them home or work • Women are represented in many professions teachers/doctors/engineers/ Economists/lawyers/politicians/pilots/police forces • Women should have a choice • Government must support working mothers Secondary details: • Time changed women • Women changed"
+      ],
+      "count": 4,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-3",
+          "label": "Manual distinct detail 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-3-credit",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-4",
+          "label": "Manual distinct detail 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-4-credit",
+              "label": "Distinct detail 4",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. Answer in English or Irish, as permitted by the original bilingual paper.",
+      "criteria": [
+        {
+          "id": "summary-skills",
+          "label": "Discretionary marks",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+          ],
+          "limits": [
+            {
+              "id": "incomplete-response",
+              "maxMarks": 1,
+              "when": {
+                "any": [
+                  {
+                    "flag": "incomplete-response",
+                    "prompt": "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+                  }
+                ]
+              },
+              "guidance": [
+                "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 6, 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-c2-4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "C2",
+    "topicId": "russian-3-1",
+    "conceptId": "alexander-response-questions-asked-survey",
+    "questionRef": "2019 HL Section C2 Q4",
+    "questionText": "Give four details about Alexander’s response to the questions asked in the survey.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — C2",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6, 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)",
+        "10 marks Main points: • Men’s decisions let to wars/social experiments/catastrophes • Women were not invited to discuss world problems • 21st century will be a century of women • Women’s values like care for the world / general wellbeing will take over"
+      ],
+      "count": 4,
+      "groups": [
+        {
+          "id": "detail-1",
+          "label": "Manual distinct detail 1",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-1-credit",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-2",
+          "label": "Manual distinct detail 2",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-2-credit",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-3",
+          "label": "Manual distinct detail 3",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-3-credit",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        },
+        {
+          "id": "detail-4",
+          "label": "Manual distinct detail 4",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "detail-4-credit",
+              "label": "Distinct detail 4",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": []
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. Answer in English or Irish, as permitted by the original bilingual paper.",
+      "criteria": [
+        {
+          "id": "summary-skills",
+          "label": "Discretionary marks",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "40 marks 2.1. Read the following blog. Write a summary in English of the content of each section as instructed. Marks are awarded for relevant content and for summary-writing skills. Award 2 marks for each of 4 details (up to 8 marks) AND 2 discretionary marks to reward candidates who: • Express/develop their ideas clearly • Provide evidence of an ability to synthesise. • Supply additional details. • Demonstrate the ability to distinguish main points from secondary details. Discretionary marks are withheld when the candidate shows global understanding but makes errors in/ omits the detail or where their answers contain the relevant information but lack coherence. No marks for details not included in the source text. No marks for details contained in the question. Single marks may be awarded for partial details only in such instances where the partial detail is intelligible to a monolingual speaker of English. Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers). If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+          ],
+          "limits": [
+            {
+              "id": "incomplete-response",
+              "maxMarks": 1,
+              "when": {
+                "any": [
+                  {
+                    "flag": "incomplete-response",
+                    "prompt": "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+                  }
+                ]
+              },
+              "guidance": [
+                "If a candidate fails to answer all sections/sub-sections of a question, no more than 1 discretionary mark can be awarded)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 6, 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-la1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "indicate-case-following-noun-phrases-may",
+    "questionRef": "2019 HL Section LA1 Q",
+    "questionText": "Indicate the case of the following noun phrases: (You may write your answer in Irish, English or Russian)",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — LA1",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Language awareness 6 marks Indicate the case of the following noun phrases 6 х 1 mark (You may write your answer in Irish, English or Russian): "
+      ],
+      "count": 6,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(рассказывать) о своей повседневной жизни — Prepositional Case / Предложный Падеж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(проблемы) с физикой и химией — Instrumental Case / Творительный падеж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(улучшить) свои оценки — Accusative Case / Винительный Падеж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(прошу) старшего брата — Accusative Case / Винительный Падеж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(экзамены) по физике — Dative Case / Дательный падеж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(сдать) вступительные экзамены — Accusative Case / Винительный Падеж",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "All six original noun phrases are required. Answers may be written in Irish, English or Russian. The printed example is not an additional claimable answer."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-ca1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "CA1",
+    "topicId": "russian-2-0",
+    "conceptId": "select-topics-listed-below-explaining-topic",
+    "questionRef": "2019 HL Section CA1 Q",
+    "questionText": "Select one of the topics listed below and give three details explaining the topic you have chosen. Answer in English or Russian. 1. Mocква 2. Олимпиадa 3. МГУ",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — CA1",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "topic-1",
+          "label": "Mocква",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "topic-1-detail-1",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-1-detail-2",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-1-detail-3",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "topic-2",
+          "label": "Олимпиадa",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "topic-2-detail-1",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-2-detail-2",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-2-detail-3",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "topic-3",
+          "label": "МГУ",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "topic-3-detail-1",
+              "label": "Distinct detail 1",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-3-detail-2",
+              "label": "Distinct detail 2",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            },
+            {
+              "id": "topic-3-detail-3",
+              "label": "Distinct detail 3",
+              "maxMarks": 2,
+              "permittedMarks": [
+                0,
+                2
+              ],
+              "guidance": [
+                "Cultural awareness 6 marks Select one of the topics listed below and give three details explaining the topic chosen. Answer in English or Russian. Assign two marks for each relevant detail. 3 x 2 marks 1. Mocква 2. Олимпиадa 3. МГУ"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Select one of the three original topics and assess three distinct relevant details. The scheme does not print an exemplar factual pool. English or Russian is explicitly permitted; retain the Irish column of the original paper without imposing an automatic language penalty."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 6 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-la2-1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "LA2",
+    "topicId": "russian-3-2",
+    "conceptId": "verbs-supply-infinitive-dictionary-form-following",
+    "questionRef": "2019 HL Section LA2 Q1",
+    "questionText": "Verbs: Supply the infinitive/dictionary form/инфинитив of the following verbs from the text (5 marks) 1. беспокоилась",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — LA2",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Q.2.2. Verbs: Supply the infinitive / dictionary form / инфинитив of the following verbs from the text. One mark for each correct answer. 5 x 1 mark Do not assign any marks where candidates translate the verb into English "
+      ],
+      "count": 5,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "беспокоилась — беспокоиться",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "согласилась — согласиться",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "зарабатывает — зарабатывать",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "расходятся — расходиться",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "встречаем — встречать",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Supply all five original infinitives. English translations receive no marks under the explicit source rule."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-la2-2",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "LA2",
+    "topicId": "russian-3-2",
+    "conceptId": "semantic-field-text-find-words-related",
+    "questionRef": "2019 HL Section LA2 Q2",
+    "questionText": "Semantic field/семaнтичеcкое поле: In the text find five words related to ‘family’ and list them in Russian. (5 marks)",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — LA2",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Q.2.3. Semantic field / семантическое поле: In the text find five words related to ‘family’ and list them in Russian. Give one mark for each correct answer. 5 x 1 mark "
+      ],
+      "count": 5,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "домашние дела",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "дом",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "воспитание",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "дети",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "мать",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "хозяйство",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "муж",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "содержание семьи",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "жена",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "рождаться",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "родители",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "отец",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "расходиться",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "расти",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-15",
+          "label": "Answer 15",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "материально самостоятельная",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Select five distinct source entries. Each complete printed multiword entry is one accepted response, not separately priced atoms."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 8 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-sd",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "SD",
+    "topicId": "russian-3-3",
+    "conceptId": "read-following-news-items-match-news",
+    "questionRef": "2019 HL Section SD Q3",
+    "questionText": "Read the following news items. Match the news item with the appropriate heading. Insert the number of the appropriate question in the box beside its answer. (20 marks)",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — SD",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Q.3 Structuring extended discourse 10 x 2 marks "
+      ],
+      "count": 10,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "6 — Традиция отмечать Всемирный день мотоциклиста появилась 22 июля 1992 года, когда сразу в нескольких странах энтузиасты, оставив автомобили в гаражах, отправились на работу на мотоциклах и скутерах. Изначально день так и назывался «На работу на мотоцикле», и лишь позже постепенно превратился в День мотоциклиста.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 — В Kалифорнии медведь пришёл в частный дом, поплавал в бассейне, выпил коктейль; вдоволь отдохнув, медведь в конечном итоге вышел из сада и скрылся внизу улицы.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4 — Британский врач Эми Хьюз пробежала 53 марафона за 53 дня и побила мировой рекорд американца Дина Карназеса, который преодолел 50 марафонов за 50 дней. Первый марафон Хьюз пробежала 6 августа в Честере, а последний — 27 сентября в Манчестере. Всего за 53 дня британка преодолела около 2236 километров.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "1 — Подростки должны спать не менее 8 часов в день. По словам ученых изменение этого графика опасно для организмa. Так, нарушение режима сна может привести к ожирению, сахарному диабету, а также депрессии.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "10 — В Японии будет построен первый в этой стране православный монастырь. Oбитель посвятят святителю Николаю Японскому - русскому священнослужителю, основавшему в конце XIX века Православную церковь в \"стране восходящего солнца\".",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "9 — Насыщенной обещает быть жизнь 2019 года. Выборы главы государства состоятся в Украине. В Турции запланированы всеобщие выборы. В Японии пройдет саммит большoй двадцатки. Состоится cледующий саммит НАТО.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "5 — Компания Merlin Entertainment ищет сотрудников, которые будут заниматься необычным делом. Им предстоит строить разнообразные объекты из конструктора LEGO в натуральную величину. В СМИ уже окрестили эту вакансию самой желаемой работой на планете.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "7 — Причиной сейсмологической активности на территории Баварии и Саксонии является вулкан, который потихоньку активизируется. Специалисты Германского геофизического центра исследований уже предупредили граждан об опасности.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "2/8 — Российские разработчики сообщили, что у них из лаборатории во второй раз сбежал робот. Как говорится в сообщении компании, которая занималась созданием устройства, робот даже создал пробку на дороге. Всего ему удалось пробежать около 50 метров по улице, после этого у него разрядилась батарея и он выключился.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "8/2 — Специалисты из Университета Британской Колумбии представили дешёвый и не зависящий от погоды способ перерабатывать солнечный свет в электроэнергию. Для этого ученые создали особый вид бактерий, обеспечивающих работу солнечных батарей.",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The ten answers follow the original news items in order. Preserve each printed slash alternative; no additional rule requiring unique section numbers is inferred."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 8 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-gr",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "GR",
+    "topicId": "russian-3-7",
+    "conceptId": "read-through-following-text-put-words",
+    "questionRef": "2019 HL Section GR Q1",
+    "questionText": "Read through the following text. Put the words in brackets into the correct form. All nouns, adjectives and pronouns are supplied in the nominative form; verbs are supplied in the infinitive of the appropriate aspect. No marks are awarded for incorrectly spelled words or substitute words.",
+    "totalMarks": 30,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — GR",
+      "pages": [
+        11
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 9.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Section II Grammar, Language Use and Guided writing 100 marks Q.1 Read through the following text. Put the words in brackets into the correct form. 30 marks TWO marks per correct form 15 x 2 marks In this exercise answers are either right or wrong: • If the word is mis-spelt/transcribed, do not award marks. • Do not award marks if the verb is supplied in the wrong tense "
+      ],
+      "count": 15,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "небольшом",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "пошла/шла",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "детствa",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "современную",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "музыку",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "училась",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "ходила",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "музыкальной",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "ей",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "закончила",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "прошлого",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "годa",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "химиком",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "школы",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-15",
+          "label": "Answer 15",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "своей",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The thirteen original gaps contain fifteen separately priced forms. Each word of the complete adjective/noun phrases receives the printed two-mark form allocation; the published пошла/шла alternatives are one response. Apply the exact spelling/transcription and wrong-tense zero rules."
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-gw",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "GW",
+    "topicId": "russian-3-9",
+    "conceptId": "piece-continuous-prose-russian-140-words",
+    "questionRef": "2019 HL Section GW Q3",
+    "questionText": "Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following ‐ Letter or Narrative or Discussion. In your answer make sure to include ALL the points listed. 1. LETTER Write a letter to your pen‐pal. In your letter make reference to the following: • How your exams have gone. • Your summer holiday plans. • Work and/or study plans for the next academic year. 2. NARRATIVE Write a story about a competition in which you took part. 3. DISCUSSION Discuss the role of women in modern society.",
+    "totalMarks": 40,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — GW",
+      "pages": [
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12, 13.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Q.3. Guided writing 40 marks Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. 1. LETTER Write a letter to your pen-pal. In your letter make reference to the following: • How your exams have gone. (B) • Your summer holiday plans. (C) • Work and/or study plans for the next academic year. (D) • Greeting (A) • Signing off (E) 2. NARRATIVE Write a story about a competition in which you took part. 3. DISCUSSION Discuss the role of women in modern society. ",
+        "Communication + content 15 marks Language + expression 15 marks Textual coherence 10 marks ",
+        "WRITTEN EXAMINATION - 220 MARKS Waivers: For those who have been granted a spelling and grammar waiver, errors in spelling and in certain grammatical elements, as explained at conference, are not penalised. In assessing the work of these candidates, a modified marking scheme will apply. Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks. Quality of English: The quality of the English will only be an assessment factor insofar as it impedes communication. 1. The examiner should not have to second guess what the candidate is thinking. Where the examiner has difficulty deciding what the English means, do not award marks. 2. The following usages are acceptable: • A modicum of “loan” words that occur in standard modern English (e.g. dacha, putsch, perestroika, glasnost…) • The use of acronyms of Russian origin (e.g. SSSR) • The use of a Russian technical term for the sake of clarity following an English version of the same term (e.g.) • Where the answer viewed as a whole demonstrates the appropriate use of both the structure and vocabulary of English 3. Material that is crossed out: if correct/relevant assign a mark. Marking: • Allocate a mark to every question/section of question, even if it is a mark of 0. Write marks above the material. In the right-hand margin total the marks for each question/sub-question and underline. • Correct all material. Where more material is supplied than is required, allocate a mark to that material and supply the mark in square brackets: [mark]. Do not include these marks in your totting up of that question. • Write the total number of marks obtained on page 1 at the bottom of the page in (round brackets). Thereafter, keep a running total at bottom of page in round brackets, e.g (27 + 12 = 39). • Total each question (Q.1., Q.2., Q.3.) as you go along and circle those marks at top of page where the Q begins. • Transfer Q. marks onto the spreadsheet. • Double check the final total by comparing the final tot at the bottom of page with the total of marks for each Q at the top of the page. Decoding the marking scheme: • Stroke [/] indicates alternatives, any one of which will do. • Round brackets () enclose information which is valid but not essential for marks."
+      ],
+      "markingGuideNote": "Manually assess the selected complete response against every original requirement. The source gives one mark per content detail and requires at least one from each specified category, without fixed category totals. Lower A permits 7–12, but its prose middle range 9/10 and table 9–11 disagree at 11, overlapping the table’s 11–12 range. Both exact versions remain visible; no descriptor is reassigned, no precedence is inferred and the range does not automatically award its minimum.",
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication/content (C)",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "• Award content marks first (ex 15). • Use the letters (A - E) when showing individual content points and, where applicable, superscript numbers for successive points within that content area (A1, A2, A3); at the end of the exercise display total content points (C = …). • No marks are awarded for additional information/content: use square brackets to bracket off irrelevant material […]; exclude when judging the expression mark. • Award 1 mark for each content detail/phrase/concept/idea. Ensure that at least ONE detail is provided from each of the categories where specified."
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language + expression (E)",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "• Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 7 or less, or the question is too short (less than 60 words), mark expression out of 10 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology)// errors in every 2nd or 3rd word, mark expression between 7 and 12 (7/8 + 9/10 + 11/12) and write ‘lower A’ to indicate this. • Put square box around repeated errors, do not re-penalise. • Use wavy line for spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 2 marks from candidates who randomly use/fail to use soft sign in present tense forms or infinitives."
+          ],
+          "bands": [
+            {
+              "label": "11-15",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Vocabulary use good – rich, idiomatic and appropriate. Spelling mistakes rare, grammar generally correct. Good level of accuracy in verb endings, agreements; correct use of tense…"
+              ]
+            },
+            {
+              "label": "6-10",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary use quite good – generally adequate and appropriate, with perhaps some Russian idiom. Not too many spelling mistakes. Few serious/frequent minor grammar errors: verb forms, tense, agreements, endings correct more often than not, especially at the upper end of the category."
+              ]
+            },
+            {
+              "label": "0-5",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Vocabulary very inadequate, possibly with English words and interference from English syntax. Many spelling mistakes, serious grammar errors: verb forms generally incorrect, tense inconsistent, inappropriate; few correct agreements."
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "scaleLabel": "Lower E",
+              "maxMarks": 10,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 7
+                  },
+                  {
+                    "length": "words",
+                    "below": 60
+                  }
+                ]
+              },
+              "guidance": [
+                "If the content mark is 7 or less, or the question is too short (less than 60 words), mark expression out of 10 and write ‘lower E’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "7-10",
+                  "marks": [
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Spelling mistakes rare, grammar generally correct. Good level of accuracy in verb endings, agreements; correct use of tense…"
+                  ]
+                },
+                {
+                  "label": "4-6",
+                  "marks": [
+                    4,
+                    5,
+                    6
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate, with perhaps some Russian idiom. Not too many spelling mistakes. Few serious/frequent minor grammar errors: verb forms, tense, agreements, endings correct more often than not, especially at the upper end of the category."
+                  ]
+                },
+                {
+                  "label": "0-3",
+                  "marks": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate, possibly with English words and interference from English syntax. Many spelling mistakes, serious grammar errors: verb forms generally incorrect, tense inconsistent, inappropriate; few correct agreements."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lower-a",
+              "scaleLabel": "Lower A",
+              "minMarks": 7,
+              "maxMarks": 12,
+              "when": {
+                "any": [
+                  {
+                    "flag": "lower-a",
+                    "prompt": "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology)// errors in every 2nd or 3rd word, mark expression between 7 and 12 (7/8 + 9/10 + 11/12) and write ‘lower A’ to indicate this."
+                  }
+                ]
+              },
+              "guidance": [
+                "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology)// errors in every 2nd or 3rd word, mark expression between 7 and 12 (7/8 + 9/10 + 11/12) and write ‘lower A’ to indicate this.",
+                "Lower A Expression 11-12 Vocabulary use good – rich, idiomatic and appropriate. No problem with use of tense, aspect and case. No difficulty with complex syntactical structures. Tone and register appropriate. Spelling mistakes common, problems with word boundaries 9-11 Vocabulary use quite good – generally adequate and appropriate, with perhaps some Russian idiom. Few complex syntactical structures. Tone and register not appropriate. OK use of aspect and tense. 7-8 Vocabulary use OK and idiomatic, though some interference form English. Interference from English language syntactical constructions. Problems with tense, aspect and case "
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence (TC)",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "3. Textual coherence: Take a global view of the textual coherence/cohesion (TC) to locate the candidate’s work in the most appropriate category. "
+          ],
+          "bands": [
+            {
+              "label": "9-10",
+              "marks": [
+                9,
+                10
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "7-8",
+              "marks": [
+                7,
+                8
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well- constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "5-6",
+              "marks": [
+                5,
+                6
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "3-4",
+              "marks": [
+                3,
+                4
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            },
+            {
+              "label": "1-2",
+              "marks": [
+                1,
+                2
+              ],
+              "guidance": [
+                "Very limited ability to organise material and develop ideas. Structure almost wholly lacking in coherence."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "So poorly-organised and lacking coherence that no credit can be given."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "soft-sign-penalty",
+          "label": "Soft sign penalty",
+          "kind": "deduction",
+          "deductFrom": "expression",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Deduct 2 marks from candidates who randomly use/fail to use soft sign in present tense forms or infinitives."
+          ]
+        }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 12, 13 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-se",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "SE",
+    "topicId": "russian-3-8",
+    "conceptId": "short-essay-words-russian-following-topics",
+    "questionRef": "2019 HL Section SE Q2",
+    "questionText": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою \nстатью включите пять страноведческих фактов. \n \n1. Spórt i gCónaidhm na Rúise / Sport in the Russian Federation/ Спорт в Российской Федерции  \n \n2. An t‐Oideachas i gCónaidhm na Rúise / Education in the Russian Federation / Oбразование в \nРоссийской Федерции  \n \n3. An teaghlach i gCónaidhm na Rúise / The family in the Russian Federation / Семья в Российской \nФедерции  \n \n4. Reiligiún i gCónaidhm na Rúise / Religion in the Russian Federation / Религия в Российской Федерции \n \n5. Tithíocht i gCónaidhm na Rúise / Housing in the Russian Federation / Жильё в Российской Федерции  \n \n",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "published-choice",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "Q.2. Cultural Awareness 30 marks Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. Sport in the Russian Federation/ Спорт в Российской Федерции 2. Education in the Russian Federation / Oбразование в Российской Федерции 3. The family in the Russian Federation / Семья в Российской Федерции 4. Religion in the Russian Federation / Религия в Российской Федерции 5. Housing in the Russian Federation / Жильё в Российской Федерции ",
+        "contextNote": "Confidence review: the complete question is printed as 30 marks, content 10 plus expression 20. The scheme’s literal soft-sign instruction says “Deduct 1/2 marks” without establishing whether this is a half-mark or one-or-two marks. Neither interpretation is selected. Every original choice and scoring rule is retained, but this task does not calculate a numerical score."
+      },
+      {
+        "id": "published-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "1. Content 10 marks 2. Language/expression 20 marks Mark content and language/expression separately 1. Communication/content (C) • Award content marks first (ex 10). No marks are awarded for irrelevant information/content. • Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. • Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. • Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). • Award two marks for each relevant content detail (up to a maximum of 10 marks). • Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score. 2. Expression (E) • Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives "
+      },
+      {
+        "id": "published-expression-grid",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "Mark Language: lexis, accuracy, fluency 18-20 lower A 13-14 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 11-12 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-10 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful. 6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — SE",
+      "pages": [
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 9, 10, 11.",
+    "kind": "question",
+    "source": "sec",
+    "paperFileid": "LC099ALP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 9, 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "taxi-driver-recommend-radisson-hotel-level",
+    "questionRef": "2019 HL Section L1 Q1–5 — complete section",
+    "questionText": "1. Why does the taxi driver recommend the Radisson hotel? Give two details.\n\n2(i). What level of English does this caller have?\n\n2(ii). How many people will be in her class?\n\n3. Give two details about the patient’s symptoms.\n\n4. Give two details about the plans these friends make for this evening.\n\n5(i). Where does this caller want to go?\n\n5(ii). How many passengers will be travelling in the taxi?",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
+      },
+      {
+        "id": "l1-1",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• New • Modern • Central location • Museum/theatre/department store not far from it • Park/river beside it",
+        "contextNote": "Why does the taxi driver recommend the Radisson hotel? Give two details."
+      },
+      {
+        "id": "l1-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Beginner",
+        "contextNote": "What level of English does this caller have?"
+      },
+      {
+        "id": "l1-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Five",
+        "contextNote": "How many people will be in her class?"
+      },
+      {
+        "id": "l1-3",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Headache • Sore throat • Fever/high temperature/38.8",
+        "contextNote": "Give two details about the patient’s symptoms."
+      },
+      {
+        "id": "l1-4",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Going to the theatre • Meeting at metro/underground exit • At 6.30 pm • Play begins at 7pm",
+        "contextNote": "Give two details about the plans these friends make for this evening."
+      },
+      {
+        "id": "l1-5-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Train station Assign one mark: station",
+        "contextNote": "Where does this caller want to go? Source numbering: English booklet prints5(ii) twice; Irish and scheme disambiguate destination5(i), passengers5(ii)."
+      },
+      {
+        "id": "l1-5-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• four",
+        "contextNote": "How many passengers will be travelling in the taxi?"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-3",
+      "russian-0-5",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l2",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "maria-first-experiences-irish-dancing-irish",
+    "questionRef": "2019 HL Section L2 Q1–4 — complete section",
+    "questionText": "1(i). Give two details about Maria’s first experiences of Irish dancing.\n\n2(i). Give two details about Irish Culture Day.\n\n2(ii). Give one detail about the age range of the dancers in the group.\n\n3(i). What does Maria say about her job? Give two details.\n\n3(ii). Name one other hobby apart from Irish dancing that Maria enjoys\n\n4. Give two details about Maria’s last holiday.",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
+      },
+      {
+        "id": "l2-1-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Four years ago • Her friend brought her • Didn’t take it seriously at that time • Thought she would not come back • It would only be that one time • Enjoyed the atmosphere • New friends helped her to make a right decision • She decided to stay/ get involved",
+        "contextNote": "Give two details about Maria’s first experiences of Irish dancing. Source numbering: English booklet 1(i); Irish and scheme 1. Preserve both original forms."
+      },
+      {
+        "id": "l2-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• 20th September • In Youth centre • First time • There will be dancing • Master classes • Art market • Irish culture lectures",
+        "contextNote": "Give two details about Irish Culture Day."
+      },
+      {
+        "id": "l2-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Different age range • 14 year old teens • Once there was a 60 year old man",
+        "contextNote": "Give one detail about the age range of the dancers in the group."
+      },
+      {
+        "id": "l2-3-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Works in a toy museum • Loves her work • It’s creative • Organisational/routine",
+        "contextNote": "What does Maria say about her job? Give two details."
+      },
+      {
+        "id": "l2-3-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Ice skating • ceramics Award one mark: skating",
+        "contextNote": "Name one other hobby apart from Irish dancing that Maria enjoys"
+      },
+      {
+        "id": "l2-4",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Lake (Svetloyar) • Nizhegorodskaya province • One week • Lived in the forest • Enjoyed nature",
+        "contextNote": "Give two details about Maria’s last holiday."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 15.",
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-7",
+      "russian-0-4",
+      "russian-0-8",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l3",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "festival-take-place-opening-ceremony-festival",
+    "questionRef": "2019 HL Section L3 Q1–3 — complete section",
+    "questionText": "1(i). Where and when will the festival take place?\n\n1(ii). Give two details about the opening ceremony of the festival.\n\n2(i). Give two details about the subject matter of the film ‘Zhili Bili.’\n\n2(ii). What format of this film will be shown?\n\n3. Give three details about the award ceremony.",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
+      },
+      {
+        "id": "l3-1-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• The Mill Theatre / Dundrum theatre / Dublin theatre • 21st and 22nd July • Award one mark for a partial detail e.g. Dublin/Dundrum",
+        "contextNote": "Where and when will the festival take place?"
+      },
+      {
+        "id": "l3-1-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• 2:00 pm • viewers will be able to watch the works of different schools • viewers would be able to take part in a secret vote/ballot • meet with young actors • meet the honoured guests of the festival Assign no marks: artists",
+        "contextNote": "Give two details about the opening ceremony of the festival."
+      },
+      {
+        "id": "l3-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Real Russian people • history of the whole generation • parents • grandmothers • grandfathers • nature • touches the soul Assign no marks: comedy",
+        "contextNote": "Give two details about the subject matter of the film ‘Zhili Bili.’"
+      },
+      {
+        "id": "l3-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• In Russian with English subtitles",
+        "contextNote": "What format of this film will be shown?"
+      },
+      {
+        "id": "l3-3",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• 22nd July • The Mill Theatre • 5:00 pm • Free admission",
+        "contextNote": "Give three details about the award ceremony."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 16.",
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2019-hl-l4",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2019,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "michael-family-part-time-job-michael",
+    "questionRef": "2019 HL Section L4 Q1–3 — complete section",
+    "questionText": "1(i). Give two details about Michael’s family.\n\n1(ii). Give two details about the part‐time job Michael had when he was young.\n\n2(i). Give one detail about the band that Michael formed during his teenage years.\n\n2(ii). Give two details about why Michael says the age of 19 was the most difficult time in his life.\n\n3(i). Give two details about Michael’s leading role in the film ‘300.’\n\n3(ii). Give one detail about why 2014 was a significant year in Michael’s career.",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "general-listening-guidance",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "LISTENING COMPREHENSION - 80 marks General: • There is no penalty for excess material which does not invalidate the answer. • Accept any formulation which communicates the information sought. • Accept answers to questions written in the wrong place. • Do not award marks for information contained within the question. • Accept answers written in Russian.",
+        "contextNote": "Confidence review of the complete 20-mark listening section. The scheme does not supply full per-answer tariffs. Every original question, full answer pool and explicitly printed partial or zero-credit clause remains available; no equal allocation or numeric score is inferred."
+      },
+      {
+        "id": "l4-1-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• His father is German • His mother was born in (Northern) Ireland • Has (an older) sister/Kathrine • Family moved to Ireland",
+        "contextNote": "Give two details about Michael’s family."
+      },
+      {
+        "id": "l4-1-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Michael worked as a waiter • General operator • In his father’s/family restaurant • Parents encouraged him to work hard",
+        "contextNote": "Give two details about the part‐time job Michael had when he was young. Source numbering: English booklet and scheme 1(ii); Irish column prints 2(ii) beside the same part-time-job question. Both original forms are retained."
+      },
+      {
+        "id": "l4-2-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Rock band • he played the guitar • played in clubs in Killarney",
+        "contextNote": "Give one detail about the band that Michael formed during his teenage years."
+      },
+      {
+        "id": "l4-2-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• Entered London Drama Centre • Rented a cold apartment • Worked and studied at the same time • In a few years he dropped out of Drama Centre • Went touring with the Oxford Stage Company",
+        "contextNote": "Give two details about why Michael says the age of 19 was the most difficult time in his life."
+      },
+      {
+        "id": "l4-3-i",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• 2006 • Trained for 4 hours a day • For 10 weeks",
+        "contextNote": "Give two details about Michael’s leading role in the film ‘300.’"
+      },
+      {
+        "id": "l4-3-ii",
+        "kind": "point",
+        "marks": null,
+        "verbatim": "• He was nominated for an Oscar for his role in “12 years a slave” • he didn’t win • Michael says that awards are not important for him/ are of no interest to him",
+        "contextNote": "Give one detail about why 2014 was a significant year in Michael’s career."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2019 Higher Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer all the original questions in this section. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14, 17.",
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-0-4",
+      "russian-0-5",
+      "russian-0-3",
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099ALPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2019 Higher Level marking scheme, pages 14, 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
   }
 ]
