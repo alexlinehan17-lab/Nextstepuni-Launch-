@@ -649,7 +649,8 @@ def _writing(year, level, P, section, q, letter):
             # 2021 and 2022 Higher mark the diary or note as a whole: "apply a
             # global mark to the best FOUR according to the criteria below".
             unit = 'piece'
-            criteria = [{'id': 'global', 'label': 'Global mark', 'maxMarks': g['per'],
+            # Labelled "Global": the panel adds "mark" ("Global mark").
+            criteria = [{'id': 'global', 'label': 'Global', 'maxMarks': g['per'],
                          'permittedMarks': list(range(g['per'] + 1)), 'guidance': []}]
         else:
             criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',

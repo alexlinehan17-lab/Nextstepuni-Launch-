@@ -10091,7 +10091,7 @@
    "criteria": [
     {
      "id": "global",
-     "label": "Global mark",
+     "label": "Global",
      "maxMarks": 25,
      "permittedMarks": [
       0,
@@ -10182,7 +10182,7 @@
    "criteria": [
     {
      "id": "global",
-     "label": "Global mark",
+     "label": "Global",
      "maxMarks": 25,
      "permittedMarks": [
       0,
@@ -16603,7 +16603,7 @@
    "criteria": [
     {
      "id": "global",
-     "label": "Global mark",
+     "label": "Global",
      "maxMarks": 25,
      "permittedMarks": [
       0,
@@ -16694,7 +16694,7 @@
    "criteria": [
     {
      "id": "global",
-     "label": "Global mark",
+     "label": "Global",
      "maxMarks": 25,
      "permittedMarks": [
       0,
