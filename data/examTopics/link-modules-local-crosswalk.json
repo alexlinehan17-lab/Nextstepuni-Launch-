@@ -7038,5 +7038,474 @@
       ]
     },
     "policy": "All original 1–17 identities retained. Complete paper ranges and matching scheme regions reviewed; canonical content topics and original assessment-format Atlas buckets retained. Numeric scoring holds and native playback QA are separate from source/task coverage."
+  },
+  "reviewedEnglish2019": {
+    "review": "scripts/markbank/authoring/lcvp/2019-cl-main-review.json",
+    "paperFileid": "LC462CLP000EV.pdf",
+    "sourceLeaves": 45,
+    "rawReaderLeaves": 45,
+    "practiceTasks": 45,
+    "physicalQuestions": 17,
+    "markBankMappings": [
+      {
+        "id": "lcvp-2019-cl-a1",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "1",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a2",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "2",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a3",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "3",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a4",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "4",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a5i",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "5",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a5ii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "5",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a6",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "6",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a7",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "7",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-a8",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "8",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-audio-visual"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b1",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "9",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b2i",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "10",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b2ii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "10",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b2iii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "10",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b3i",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "11",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-b3ii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "11",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-case-study"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c1a",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-4",
+        "atlasTopicIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c1b",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-1",
+        "atlasTopicIds": [
+          "link-modules-common-1-job-seeking-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c1c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c1di",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c1dii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2a",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2bi",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2bii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2di",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c2dii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3ai",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3aii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3b",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3di",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c3dii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "14",
+        "topicId": "lcvp-link-modules-1-0",
+        "atlasTopicIds": [
+          "link-modules-common-2-enterprise-skills"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c4a",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "15",
+        "topicId": "lcvp-link-modules-1-1",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c4b",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "15",
+        "topicId": "lcvp-link-modules-1-1",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c4c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "15",
+        "topicId": "lcvp-link-modules-1-1",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c4d",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "15",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c5ai",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c5aii",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c5b",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c5c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c5d",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c6a",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "17",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c6b",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "17",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c6c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "17",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      },
+      {
+        "id": "lcvp-2019-cl-c6d",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "17",
+        "topicId": "lcvp-link-modules-0-0",
+        "atlasTopicIds": [
+          "link-modules-common-1-introduction-to-working-life"
+        ]
+      }
+    ],
+    "originalAtlasTopicIds": {
+      "1": [
+        "link-modules-common-audio-visual"
+      ],
+      "2": [
+        "link-modules-common-audio-visual"
+      ],
+      "3": [
+        "link-modules-common-audio-visual"
+      ],
+      "4": [
+        "link-modules-common-audio-visual"
+      ],
+      "5": [
+        "link-modules-common-audio-visual"
+      ],
+      "6": [
+        "link-modules-common-audio-visual"
+      ],
+      "7": [
+        "link-modules-common-audio-visual"
+      ],
+      "8": [
+        "link-modules-common-audio-visual"
+      ],
+      "9": [
+        "link-modules-common-case-study"
+      ],
+      "10": [
+        "link-modules-common-case-study"
+      ],
+      "11": [
+        "link-modules-common-case-study"
+      ],
+      "12": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "13": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "14": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "15": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "16": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "17": [
+        "link-modules-common-2-enterprise-skills"
+      ]
+    },
+    "policy": "All original 1–17 identities retained. Complete paper ranges and matching scheme regions reviewed; canonical content topics and original assessment-format Atlas buckets retained. Numeric scoring holds and native playback QA are separate from source/task coverage."
   }
 }
