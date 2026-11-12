@@ -65,7 +65,8 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
           | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
              (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
-             (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol')})
+             (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
+             (2012, 'hl')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -359,7 +360,16 @@ def sub_ladder(text, marks):
         values = sorted({int(n.group(2)) for n in named})
         return [0, *values, marks] if all(0 < v < marks for v in values) \
             else None
-    for m in reversed(SUB_PRICE.findall(text)):
+    # Two printed prices on one step that do not name what earns them:
+    # 2012 Higher C-2(a) prints "Draw outline of hyperbolic curves .....(3,2)
+    # ....(any = 2)" against 5. Every value either price reaches is a value the
+    # SEC printed a route to, so the ladder is the union of the two.
+    groups = SUB_PRICE.findall(text)
+    if len(groups) >= 2:
+        each = [sub_ladder(f'({g})', marks) for g in groups]
+        if all(each):
+            return sorted(set().union(*each))
+    for m in reversed(groups):
         inner = m.strip()
         a = ANY_PRICE.match(inner)
         if a:

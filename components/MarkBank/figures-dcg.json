@@ -1,4 +1,136 @@
 {
+ "dcg-2012-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a speaker at a curved lectern, beside an incomplete trimetric projection of a similar lectern by the axonometric axes method, with the axes X, Y and Z, the end view and elevation in their positions, and construction lines in red, green and purple.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "95eaf0e88eafdd454964d19da6d7d1a7",
+  "questionRef": "2012 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secA-q1-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A graphic of a parallelogram road sign with an arrow on a tetrahedral frame, beside the incomplete elevation on XY and the plan of the structure.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "e4df4409529e8da1703f09990ea8d64d",
+  "questionRef": "2012 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secA-q2-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A photograph of a hairpin bend with a chevron sign, beside the plan of the U-shaped bend from A to B about the centre O (radius R), the car at P, the headlight beam L at 70 degrees, and the sign S.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "632d40c56160fe6b8aa3af500af8efde",
+  "questionRef": "2012 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secA-q3-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A graphic of a litter bin and its logo, beside a partially completed perspective view of the bin with the picture plane PP and the vanishing points VP1 and VP2.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "4022861b156c5776856b50a8b9f908ec",
+  "questionRef": "2012 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secA-q4-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of the Convention Centre in Dublin, and Fig. B-1: the elevation of the cylindrical glass front with the semi-elliptical curve ABC (3m, 12m and 3m; 18m) and the end view with the cylinder's axis at 60 degrees (30 degrees, 2m, 1.5m and 3m). Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "401ffdf0fce249dc9fe525d3c13d757f",
+  "questionRef": "2012 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secB-q1-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of an abstract metal sculpture of intersecting solids, and Fig. B-2: the incomplete elevation on XY of a triangular-based pyramid with its base at 30 degrees and an inclined equilateral triangular prism (130, 30, 75, 20 degrees, 60 and 30 degrees), the prism's 65mm triangular end, and the incomplete plan (60, 60, 30 and 20). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "195e744dfdd9c453f78e45f9aff11529",
+  "questionRef": "2012 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secB-q2-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of the Titanic Signature Building with an inset of the film, and Fig. B-3: the plan and elevation on XY of the two intersecting planes ABCD and ABEF, with the unknown height h, beside a table of the coordinates of A to F. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "d0be86ff4aa24516ff535a595c099d99",
+  "questionRef": "2012 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secB-q3-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text with the roadway's specification (i) and (ii). The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "5f486b2e744baaeee042f2507fa3a88e",
+  "questionRef": "2012 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secC-q1-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a graphic of a copper fireplace in the form of a cut semi-hyperboloid, and Fig. C-2: its elevation (2000 high; diameters 1200 and 600; 700, 600, 200, 100 and 50) and the semi-circular plan (diameter 1400) with the opening. Scale 1:10.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "0527e12189081b8521e74733a67d249c",
+  "questionRef": "2012 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secC-q2-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of the Arigna Mining Experience Centre, and Fig. C-3: the elevation and plan of the roof surfaces A, B, C and D with the dormer windows E and F (6m, 7m, 15m; 2m, 2.5m, 2.5m and 2m; 9m). Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "1de3590739d47b52d26f737cc6035f6d",
+  "questionRef": "2012 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secC-q3-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a pedal-operated weaving machine and Fig. C-4(a), the link mechanism with the arms OA and BC, the points C, B, D, A, O and P (135, 20; OA 32, BC 42, AD 80, CP 165); part (b): a photograph of a cutting head on a cylinder and Fig. C-4(b), the elevation of the cylinder (diameter 80, 120 high; 37, 80, 15 and 10) with the points A and B. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "a37af222a73cb8340d74b2d50388db0d",
+  "questionRef": "2012 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secC-q4-art.png",
+  "year": 2012
+ },
+ "dcg-2012-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a board game, the question text, Fig. C-5: dimensioned details of the ten numbered parts of a press for cutting discs with the section line A-A, the parts list naming Press Body, Top Hinge, Vertical Ram, Top Moving Die, Handle, four pins and the Fixed Bottom Die with their quantities, and an exploded 3D graphic of the parts.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "3c6102640dbf8e997e6045f6b20c9cc7",
+  "questionRef": "2012 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2012-HL-paper-secC-q5-art.png",
+  "year": 2012
+ },
  "dcg-2013-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a Rubik's Cube on its display stand, beside the incomplete projections of the cube and stand: the elevation and end view on XY and the plan.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
