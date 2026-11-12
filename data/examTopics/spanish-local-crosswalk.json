@@ -16,24 +16,23 @@
     "referenceOfficialAssociations": 471,
     "referenceMockAssociations": 351,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 397,
-    "sourceBlockedAssociations": 74,
+    "matchedAssociations": 411,
+    "sourceBlockedAssociations": 60,
     "sourceBlockedByReason": {
-      "deferred": 14,
       "preCorpus": 51,
       "oralBooklet": 9
     },
-    "matchedLocalCardLinks": 563,
-    "localPaperVariants": 136,
-    "localPhysicalMappings": 1244,
-    "distinctStudentFacingQuestions": 665,
-    "referenceMappedLocalQuestions": 462,
-    "retainedLocalQuestions": 782,
-    "hostedPaperAnchorMaps": 136,
+    "matchedLocalCardLinks": 583,
+    "localPaperVariants": 138,
+    "localPhysicalMappings": 1268,
+    "distinctStudentFacingQuestions": 689,
+    "referenceMappedLocalQuestions": 479,
+    "retainedLocalQuestions": 789,
+    "hostedPaperAnchorMaps": 138,
     "preservedBaselineVariants": 124,
     "preservedBaselineCards": 909,
-    "newlyAddedPaperVariants": 12,
-    "newlyAddedPhysicalMappings": 335,
+    "newlyAddedPaperVariants": 14,
+    "newlyAddedPhysicalMappings": 359,
     "emptyReferenceTopics": [
       "spanish-higher-oral-exam",
       "spanish-higher-write-a-dialogue",
@@ -139,8 +138,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "1"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-anuncio-announcement",
@@ -562,8 +570,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "4"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-descriptivo-description",
@@ -571,8 +588,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "5"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-descriptivo-description",
@@ -1232,8 +1258,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "2"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-dialogo-dialogue",
@@ -1241,8 +1276,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "3"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-dialogo-dialogue",
@@ -1812,8 +1856,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "6"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-el-tiempo-weather",
@@ -2145,8 +2198,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "aural",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "aural",
+        "fileid": "LC012ALPA00EV-deferred.pdf",
+        "questionNumbers": [
+          "7"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-aural-una-noticia-news",
@@ -2484,8 +2546,20 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "6",
+          "7",
+          "8",
+          "A1b4"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-journalistic-text",
@@ -2865,8 +2939,20 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-opinion-text",
@@ -3246,8 +3332,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "A2"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-short-comprehensions",
@@ -3255,8 +3350,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "A2"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-short-comprehensions",
@@ -3969,8 +4073,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "13"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-write-a-diary-entrynote",
@@ -3978,8 +4091,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "13"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-write-a-diary-entrynote",
@@ -4536,8 +4658,17 @@
       "year": 2022,
       "sitting": "deferred",
       "paperKey": "written",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC012ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "13"
+        ]
+      }
     },
     {
       "topicId": "spanish-higher-write-a-letteremail",
@@ -11735,6 +11866,229 @@
       "level": "higher",
       "lang": "ev",
       "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "1",
+      "topicIds": [
+        "spanish-higher-prescribed-literature-historic-texts"
+      ],
+      "provenance": "retained-local-historic-literature"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "2",
+      "topicIds": [
+        "spanish-higher-prescribed-literature-historic-texts"
+      ],
+      "provenance": "retained-local-historic-literature"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "3",
+      "topicIds": [
+        "spanish-higher-prescribed-literature-historic-texts"
+      ],
+      "provenance": "retained-local-historic-literature"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "4",
+      "topicIds": [
+        "spanish-higher-prescribed-literature-historic-texts"
+      ],
+      "provenance": "retained-local-historic-literature"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "5",
+      "topicIds": [
+        "spanish-higher-prescribed-literature-historic-texts"
+      ],
+      "provenance": "retained-local-historic-literature"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "6",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "7",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "8",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "A2",
+      "topicIds": [
+        "spanish-higher-short-comprehensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "9",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "10",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "11",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "12",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "B5",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "13",
+      "topicIds": [
+        "spanish-higher-write-a-dialogue",
+        "spanish-higher-write-a-diary-entrynote",
+        "spanish-higher-write-a-letteremail"
+      ],
+      "provenance": "reference+retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "C2",
+      "topicIds": [
+        "spanish-higher-write-a-diary-entrynote"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
       "fileid": "LC012ALP000EV.pdf",
       "paperKey": "single",
       "kind": "written",
@@ -11953,6 +12307,97 @@
         "spanish-higher-write-a-diary-entrynote"
       ],
       "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "1",
+      "topicIds": [
+        "spanish-higher-aural-anuncio-announcement"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "2",
+      "topicIds": [
+        "spanish-higher-aural-dialogo-dialogue"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "3",
+      "topicIds": [
+        "spanish-higher-aural-dialogo-dialogue"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "4",
+      "topicIds": [
+        "spanish-higher-aural-descriptivo-description"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "5",
+      "topicIds": [
+        "spanish-higher-aural-descriptivo-description"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "6",
+      "topicIds": [
+        "spanish-higher-aural-el-tiempo-weather"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALPA00EV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "aural",
+      "n": "7",
+      "topicIds": [
+        "spanish-higher-aural-una-noticia-news"
+      ],
+      "provenance": "reference"
     },
     {
       "level": "higher",
@@ -24297,7 +24742,9 @@
     "public/paper-anchors/2023/LC012GLPA00EV.pdf.json",
     "public/paper-anchors/2023/LC012GLP000IV.pdf.json",
     "public/paper-anchors/2023/LC012GLPA00IV.pdf.json",
+    "public/paper-anchors/2022/LC012ALP000EV-deferred.pdf.json",
     "public/paper-anchors/2022/LC012ALP000EV.pdf.json",
+    "public/paper-anchors/2022/LC012ALPA00EV-deferred.pdf.json",
     "public/paper-anchors/2022/LC012ALPA00EV.pdf.json",
     "public/paper-anchors/2022/LC012ALP000IV.pdf.json",
     "public/paper-anchors/2022/LC012ALPA00IV.pdf.json",

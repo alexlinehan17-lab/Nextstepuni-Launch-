@@ -40918,4 +40918,2382 @@ export const CARDS: SecCard[] = [
           "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-a", topicId: "spanish-3-0", conceptId: "theme-book-fair-this-year",
+    section: "L", questionRef: "2022 HL Section L Q1(a) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "What is the theme of the book fair this year? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":3,"perOption":2,"options":["Spanish/Hispanic literature","20th century","Colombian literature"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-b", topicId: "spanish-3-0", conceptId: "know-book-fair-has-become-more",
+    section: "L", questionRef: "2022 HL Section L Q1(b) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "How do we know the book fair has become more popular? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["increase in book sales","higher number of visitors","increase in book stands"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-c", topicId: "spanish-3-0", conceptId: "lucky-could-happen-book-fair",
+    section: "L", questionRef: "2022 HL Section L Q1(c) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "If you are lucky, what could happen at the book fair? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "You can meet your favourite author", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "get a book signed (with his autograph)", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-a", topicId: "spanish-3-2", conceptId: "did-miguel-start-cycling",
+    section: "L", questionRef: "2022 HL Section L Q2(a) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "How did Miguel start cycling? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His father gave him a mountain bicycle", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "when he turned 9 years old", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-b", topicId: "spanish-3-2", conceptId: "training-does-miguel-every-day",
+    section: "L", questionRef: "2022 HL Section L Q2(b) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What training does Miguel do every day? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Rides his bicycle (around) 100 km (does) 2 hours in the gym", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,2,4], parts: [{"id":"p1","verbatim":"Rides his bicycle (around) 100 km","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"(does) 2 hours in the gym","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-c", topicId: "spanish-3-2", conceptId: "makes-sacrifice-worthwhile",
+    section: "L", questionRef: "2022 HL Section L Q2(c) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What makes the sacrifice worthwhile? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["win races","receive medals","prizes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-d", topicId: "spanish-3-2", conceptId: "his-ambitions-future",
+    section: "L", questionRef: "2022 HL Section L Q2(d) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What are his ambitions for the future? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Win the Tour de/of France","Have his own (professional) cycling team","Open a cycling school in his town"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-a", topicId: "spanish-3-2", conceptId: "music-from-galicia-similar-irish-music",
+    section: "L", questionRef: "2022 HL Section L Q3(a) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Why is the music from Galicia similar to Irish music? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Play similar instruments", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "Celtic origin", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-b", topicId: "spanish-3-2", conceptId: "has-carlos-done-with-his-music",
+    section: "L", questionRef: "2022 HL Section L Q3(b) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "What has Carlos done with his music group Celtic Bandidos? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":3,"options":["Played all over the World","played in (mention one country)","recorded a (live) album"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-c", topicId: "spanish-3-2", conceptId: "does-like-living-ireland",
+    section: "L", questionRef: "2022 HL Section L Q3(c) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Why does he like living in Ireland? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["feels like home","great musical tradition","quiet life"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-d", topicId: "spanish-3-2", conceptId: "where-does-find-inspiration-his-songs",
+    section: "L", questionRef: "2022 HL Section L Q3(d) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Where does he find inspiration for his songs? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Daily life", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "landscape", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "countries that he has visited", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-a", topicId: "spanish-3-1", conceptId: "did-david-start-working-online-educator",
+    section: "L", questionRef: "2022 HL Section L Q4(a) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "Why did David start working as an online educator? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He lost his job/became unemployed", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "because of the economic crisis", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-b", topicId: "spanish-3-1", conceptId: "does-david-say-his-videos",
+    section: "L", questionRef: "2022 HL Section L Q4(b) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "What does David say about his videos? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["fun","free","aimed at secondary students","last between 5 and 10 minutes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-c", topicId: "spanish-3-1", conceptId: "know-david-dedicated-teacher",
+    section: "L", questionRef: "2022 HL Section L Q4(c) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "How do we know David is a dedicated teacher? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["explains very well","always available to answer questions","corrects their mistakes","available through e-mail"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-d", topicId: "spanish-3-1", conceptId: "skills-should-young-people-develop-according",
+    section: "L", questionRef: "2022 HL Section L Q4(d) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "What skills should young people develop, according to David? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "learn independently", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "resilience", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "goup work", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-a", topicId: "spanish-3-1", conceptId: "features-intelligent-fridge",
+    section: "L", questionRef: "2022 HL Section L Q5(a) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "Mention two features of the intelligent fridge.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shows you the food inside (without having to open the door)", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "Alerts you when you have to do the shopping", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-b", topicId: "spanish-3-1", conceptId: "recipe-books-longer-necessary",
+    section: "L", questionRef: "2022 HL Section L Q5(b) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "Why are recipe books no longer necessary?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["There is a (digital) screen on the (kitchen) table","You can see the recipe (on the table)","You can watch a video","You can see how to prepare the dish"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-c", topicId: "spanish-3-1", conceptId: "does-house-help-combat-global-warming",
+    section: "L", questionRef: "2022 HL Section L Q5(c) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "How does the house help to combat global warming? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Does not emit green house effect gases into the atmosphere","Uses solar energy to heat the water","Everything gets recycled"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-d", topicId: "spanish-3-1", conceptId: "advantage-residents-house",
+    section: "L", questionRef: "2022 HL Section L Q5(d) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "What is the advantage for the residents of the house? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "They save (an average of) €800 per year on light/gas (bills)", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3,4], parts: [{"id":"p1","verbatim":"They save (an average of) €800","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"per year","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on light/gas (bills)","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-a", topicId: "spanish-3-3", conceptId: "will-weather-like-north",
+    section: "L", questionRef: "2022 HL Section L Q6(a) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in the north? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cloudy", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "rainy", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(strong) winds", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-b", topicId: "spanish-3-3", conceptId: "will-weather-like-west-country",
+    section: "L", questionRef: "2022 HL Section L Q6(b) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in the west of the country? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(risk of) storms", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "hailstone", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(heavy) showers", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-c", topicId: "spanish-3-3", conceptId: "will-weather-like-madrid",
+    section: "L", questionRef: "2022 HL Section L Q6(c) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in Madrid? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Morning) fog", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "clear skies (in the afternoon)", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-a", topicId: "spanish-3-4", conceptId: "did-government-ask-people",
+    section: "L", questionRef: "2022 HL Section L Q7(a) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What did the Government ask people to do? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stay at home", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "avoid unnecessary trips", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-b", topicId: "spanish-3-4", conceptId: "transport-problems-did-heavy-snowfall-cause",
+    section: "L", questionRef: "2022 HL Section L Q7(b) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What transport problems did the heavy snowfall cause in Madrid? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Cancellation of (many) flights trains/ buses", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Cancellation of (many) flights","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"trains/ buses","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-c", topicId: "spanish-3-4", conceptId: "did-seven-volunteers-picos-europa",
+    section: "L", questionRef: "2022 HL Section L Q7(c) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What did seven volunteers do in the Picos de Europa? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "They skied 13 km to carry food/medicine/water to the inhabitants of a town", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3,4], parts: [{"id":"p1","verbatim":"They skied 13 km","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"to carry food/medicine/water","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"to the inhabitants of a town","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-d", topicId: "spanish-3-4", conceptId: "happened-dog-rholo-after-being-rescued",
+    section: "L", questionRef: "2022 HL Section L Q7(d) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What happened to the dog Rholo after being rescued? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was taken to the vet", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "returned with his family", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-a", topicId: "spanish-7-1", conceptId: "dude-momento",
+    section: "A", questionRef: "2022 HL Section A1a Q1(a) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "dudé un momento (lines 1‐10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vacilé un instante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-b", topicId: "spanish-7-1", conceptId: "mucho-tiempo",
+    section: "A", questionRef: "2022 HL Section A1a Q1(b) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "mucho tiempo\n(lines 11‐18)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "largas horas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-c", topicId: "spanish-7-1", conceptId: "sentimientos",
+    section: "A", questionRef: "2022 HL Section A1a Q1(c) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "sentimientos\n(lines 19‐24)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sensaciones", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-a", topicId: "spanish-7-1", conceptId: "imposible-describir-noche-balsa",
+    section: "A", questionRef: "2022 HL Section A1a Q2(a) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "Es imposible describir una noche en una balsa… (line 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It’s impossible to describe a night on a raft….", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-b", topicId: "spanish-7-1", conceptId: "habia-estado-mirando-horizonte-espera-aviones",
+    section: "A", questionRef: "2022 HL Section A1a Q2(b) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "… había estado mirando el horizonte en espera de los aviones… (line 12)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "...... I had been looking at the horizon waiting for the planes …..", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-c", topicId: "spanish-7-1", conceptId: "frio-fue-mas-intenso-horas-madrugada",
+    section: "A", questionRef: "2022 HL Section A1a Q2(c) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "El frío fue más intenso en las horas de la madrugada… (lines 17‐18)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The cold was more intense in the early hours of the morning …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-3", topicId: "spanish-7-1", conceptId: "describe-luis-alejandro-velasco-first-night",
+    section: "A", questionRef: "2022 HL Section A1a Q3 — Deferred sitting",
+    questionText: "Describe Luis Alejandro Velasco’s first night at sea.\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["Absolutely nothing happened","He looked at his watch every minute","It was a torture"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-4", topicId: "spanish-7-1", conceptId: "did-luis-feel-like-crying-english",
+    section: "A", questionRef: "2022 HL Section A1a Q4 — Deferred sitting",
+    questionText: "Why did Luis feel like crying?\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["He hadn’t slept for a second","He hadn’t even tried","He was looking for lights of boats","He watched the sea for hours","He didn’t see any lights"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-5", topicId: "spanish-7-1", conceptId: "discuss-theme-loneliness-novel-may-not",
+    section: "A", questionRef: "2022 HL Section A1a Q5 — Deferred sitting",
+    questionText: "Discuss the theme of loneliness in the novel.\nYou may not support your answer by reference to the extract. Answer in English on page 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “Discussion on any three relevant points” and “No marks given for answers supported by reference to the extract”, under the tariff “4 + 4 + 4 = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,4,8,12], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-a", topicId: "spanish-5-0", conceptId: "did-recent-study-reveal-spanish-adolescents",
+    section: "A", questionRef: "2022 HL Section A1b Q1(a) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What did a recent study reveal about Spanish adolescents? Give full details. (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They spend more time at home connected to the Internet and they don’t feel the need to go out and see their friends.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-b", topicId: "spanish-5-0", conceptId: "young-people-communicate-with-friends-nowadays",
+    section: "A", questionRef: "2022 HL Section A1b Q1(b) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How do young people communicate with their friends nowadays? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They communicate in a virtual way, by mobile phone instead of face to face.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-c", topicId: "spanish-5-0", conceptId: "have-new-technologies-benefitted-students-education",
+    section: "A", questionRef: "2022 HL Section A1b Q1(c) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How have new technologies benefitted students’ education? (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They facilitate access to online classes if they miss a day of school.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-d", topicId: "spanish-5-0", conceptId: "can-excessive-use-technology-problem-young",
+    section: "A", questionRef: "2022 HL Section A1b Q1(d) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Why can excessive use of technology be a problem for young people?\nGive full details. (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It takes away from other important activities like studying, doing exercise, social life and family time.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-e", topicId: "spanish-5-0", conceptId: "ways-jaime-life-has-changed",
+    section: "A", questionRef: "2022 HL Section A1b Q1(e) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Mention three ways in which Jaime’s life has changed. (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":3,"perOption":2,"options":["He has a more balanced life","He only spends one hour a day on social media","The rest of the time he spends with his friends","The rest of the time he spends walking his dog"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-a", topicId: "spanish-5-0", conceptId: "sin-embargo",
+    section: "A", questionRef: "2022 HL Section A1b Q2(a) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "sin embargo (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "no obstante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-b", topicId: "spanish-5-0", conceptId: "ventajas",
+    section: "A", questionRef: "2022 HL Section A1b Q2(b) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "ventajas (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "beneficios", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-c", topicId: "spanish-5-0", conceptId: "indispensable",
+    section: "A", questionRef: "2022 HL Section A1b Q2(c) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "indispensable (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fundamental", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-a", topicId: "spanish-5-0", conceptId: "nuevas-tecnologias-estan-presentes-nuestra-vida",
+    section: "A", questionRef: "2022 HL Section A1b Q3(a) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "Las nuevas tecnologías están presentes en nuestra vida cotidiana... (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "New technologies are present in our daily life….", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-b", topicId: "spanish-5-0", conceptId: "tiempo-ocio-cambiado-mucho-ultimos-anos",
+    section: "A", questionRef: "2022 HL Section A1b Q3(b) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… el tiempo de ocio ha cambiado mucho en los últimos años… (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… free time has changed a lot in the last few years.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-c", topicId: "spanish-5-0", conceptId: "contribuyen-aliviar-estres-mejorar-sueno",
+    section: "A", questionRef: "2022 HL Section A1b Q3(c) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… contribuyen a aliviar el estrés, mejorar el sueño… (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… they contribute to alleviating stress and improving sleep…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-4", topicId: "spanish-5-0", conceptId: "forma-diferente-madrileno",
+    section: "A", questionRef: "2022 HL Section A1b Q4 — Deferred sitting",
+    stem: "Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:",
+    questionText: "(a) ...de forma diferente… (para 2)\nO\n(b) …un madrileño… (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English.”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-i", topicId: "spanish-5-1", conceptId: "who-helped-create-this-bus",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(i) — Deferred sitting",
+    questionText: "Who helped to create this bus? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A team of university engineers", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "Spanish businesses", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-ii", topicId: "spanish-5-1", conceptId: "passengers-bus-service-aimed",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(ii) — Deferred sitting",
+    questionText: "What passengers is the bus service aimed at? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":0,"options":["Those with reduced mobility","Older people (who can’t walk much especially in areas of difficult access)."],"perOptionSteps":[0,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-iii", topicId: "spanish-5-1", conceptId: "creators-say-safety-bus",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(iii) — Deferred sitting",
+    questionText: "What do the creators say about the safety of the bus?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(It’s four times) safer than a traditional car.", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-i", topicId: "spanish-5-1", conceptId: "did-locals-molina-segura-call-police",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(i) — Deferred sitting",
+    questionText: "Why did locals in Molina de Segura call the police?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They had seen a lion walking around the village on its own", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-ii", topicId: "spanish-5-1", conceptId: "happened-animal-shelter",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(ii) — Deferred sitting",
+    questionText: "What happened at the animal shelter? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His microchip was checked, They found the contact details of his owner (Ramón Fernández)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-iii", topicId: "spanish-5-1", conceptId: "did-police-post-twitter",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(iii) — Deferred sitting",
+    questionText: "What did the police post on Twitter?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They posted that the animal in question wasn’t a lion but a large, loving dog called Bravo.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-a", topicId: "spanish-5-0", conceptId: "actualmente",
+    section: "B", questionRef: "2022 HL Section B Q1(a) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "actualmente (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "hoy en día", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-b", topicId: "spanish-5-0", conceptId: "vez",
+    section: "B", questionRef: "2022 HL Section B Q1(b) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "a la vez (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "al mismo tiempo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-c", topicId: "spanish-5-0", conceptId: "efectos-serios",
+    section: "B", questionRef: "2022 HL Section B Q1(c) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "efectos serios (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "consecuencias graves", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-d", topicId: "spanish-5-0", conceptId: "cercanias",
+    section: "B", questionRef: "2022 HL Section B Q1(d) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "las cercanías (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "los alrededores", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-e", topicId: "spanish-5-0", conceptId: "solucionar-tema",
+    section: "B", questionRef: "2022 HL Section B Q1(e) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "solucionar el tema (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "resolver el problema", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-a", topicId: "spanish-5-0", conceptId: "atrae-barcelona-tantos-turistas-todos-paises",
+    section: "B", questionRef: "2022 HL Section B Q2(a) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "¿Por qué atrae Barcelona a tantos turistas de todos los países del mundo? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Why does Barcelona attract so many tourists from all the countries of the world?", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-b", topicId: "spanish-5-0", conceptId: "comercios-adaptan-necesidades-turisticas",
+    section: "B", questionRef: "2022 HL Section B Q2(b) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… los comercios se adaptan a las necesidades turísticas... (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "... businesses adapt to tourist needs....", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-c", topicId: "spanish-5-0", conceptId: "han-obligado-muchos-vecinos-dejar-casas",
+    section: "B", questionRef: "2022 HL Section B Q2(c) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… han obligado a muchos vecinos a dejar sus casas... (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… they have obliged many neighbours to leave their houses", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-a", topicId: "spanish-5-0", conceptId: "transformarse",
+    section: "B", questionRef: "2022 HL Section B Q3(a) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "transformarse (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "convertirse", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-b", topicId: "spanish-5-0", conceptId: "especialmente",
+    section: "B", questionRef: "2022 HL Section B Q3(b) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "especialmente (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sobre todo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-c", topicId: "spanish-5-0", conceptId: "desempleo",
+    section: "B", questionRef: "2022 HL Section B Q3(c) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "desempleo (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-d", topicId: "spanish-5-0", conceptId: "duenos",
+    section: "B", questionRef: "2022 HL Section B Q3(d) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "dueños (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "propietarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-e", topicId: "spanish-5-0", conceptId: "desea",
+    section: "B", questionRef: "2022 HL Section B Q3(e) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "desea (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "quiere", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-a", topicId: "spanish-5-0", conceptId: "barcelona-perfect-city-holidays",
+    section: "B", questionRef: "2022 HL Section B Q4(a) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "Why is Barcelona the perfect city for holidays? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["it is the perfect size, neither too big nor too small","both the beach and the mountains are less than an hour from the centre","It has a perfect climate with sun and pleasant temperatures"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-b", topicId: "spanish-5-0", conceptId: "have-residents-tourist-behaviour",
+    section: "B", questionRef: "2022 HL Section B Q4(b) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What have the residents said about tourist behaviour? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["The tourists get drunk","They make noise during the whole night","They leave rubbish everywhere","They don’t respect anything","They shout on the streets"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-c", topicId: "spanish-5-0", conceptId: "measures-have-been-taken-town-hall",
+    section: "B", questionRef: "2022 HL Section B Q4(c) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What measures have been taken by the town hall? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["They have prohibited the construction of new hotels in the city centre","They have just authorised a project which will prevent houses being converted into tourist apartments","Imposing tourist taxes","Regulating the prices of rent"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.8 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-5", topicId: "spanish-6-0", conceptId: "espana-destino-perfecto-turismo-debemos-pasar",
+    section: "B", questionRef: "2022 HL Section B Q5 — Deferred sitting",
+    stem: "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+    questionText: "(a) España es el destino perfecto para el turismo.\nO\n(b) Debemos pasar las vacaciones en Irlanda.\nO\n(c) Es importante descubrir otros países.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where no marks are awarded for Content, (i.e. effort totally irrelevant), no marks will be awarded for Language.",
+                "No marks will be awarded for phrases taken directly from the article."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content/Communication",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "High level of coherence",
+                                        "Clear argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Comprehensible to Spanish speaker",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Lack of coherence",
+                                        "Spanish speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Idiomatic Spanish",
+                                        "Good level of vocabulary",
+                                        "Few grammatical/spelling mistakes",
+                                        "Correct usage of tenses"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Vocabulary quite good - generally adequate and appropriate",
+                                        "Verbs generally correct",
+                                        "Not too many spelling/grammatical mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Problems with vocabulary – limited range of vocabulary",
+                                        "Most verbs incorrect",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Choose a band for Content/Communication and one for Language, then the mark within each band."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.9 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-1-a", topicId: "spanish-6-1", conceptId: "alicante-looking-accommodation-rent-speak-property",
+    section: "C", questionRef: "2022 HL Section C Q1(a) — Deferred sitting",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You are in Alicante looking for accommodation to rent. You speak to a property owner. Complete in Spanish the dialogue. You should answer any five of the following points:\nSeñora: Buenos días, ¿en qué puedo ayudarte?\nTú: Explain that you have just arrived in Alicante and that you are going to spend a year here to improve your Spanish. You would like to rent an apartment with sea views.\nSeñora: Vale, ¿conoces bien la ciudad?\nTú: Say that you do not know the city because it is your first time in Alicante. Say you would prefer to live near the city centre because there is a lot to do there.\nSeñora: Pues, tengo un apartamento disponible a cinco minutos del centro a pie.\nTú: Ask if it would be possible to see the apartment tomorrow afternoon because you have classes in the language school in the morning. Ask where the apartment is.\nSeñora: Vale, el apartamento está en la calle Picasso, justo al lado del supermercado.\nTú: Say that you are looking forward to seeing the apartment. Ask how much it costs per month and if you have to pay a deposit.\nSeñora: Bueno, cuesta 300€ al mes más un depósito de 500€.\nTú: Say that is not very expensive, it’s cheaper than accommodation in Ireland. Tell her you are going to look for a part‐time job in a restaurant to earn some money.\nSeñora: ¿Has trabajado antes en un restaurante?\nTú: Say that you worked in an Italian restaurant in your town two years ago. Say that you loved the work because you met a lot of people but the hours were very long.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Six ‘turns’. Five to be answered. If all ‘turns’ are answered, mark all and award marks for the highest scoring FIVE. Allow a maximum of 5 marks each. (5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 mark: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "turn-1",
+                      "label": "First turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-2",
+                      "label": "Second turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-3",
+                      "label": "Third turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-4",
+                      "label": "Fourth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-5",
+                      "label": "Fifth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each turn you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (a) — answer in Spanish",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.9 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-1-b", topicId: "spanish-6-2", conceptId: "read-article-serious-litter-problem-beaches",
+    section: "C", questionRef: "2022 HL Section C Q1(b) — Deferred sitting",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You read an article about the serious litter problem on the beaches in Valencia. Write a LETTER/EMAIL in Spanish to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with them. You should make five relevant points out of the eight below and each of these points should be expanded and developed.)\n• The litter problem on the beaches is bad.\n• Litter is having a negative effect on tourism in Valencia.\n• Tourism creates a lot of jobs in Valencia.\n• Tourists like clean beaches while on holidays.\n• Litter on the beaches is dangerous for children.\n• There should be more litter bins near the beaches.\n• Local people can help to keep the area litter free.\n• We all should respect the environment.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "• There are five points to be made from a possible eight. Allow a maximum of 5 marks each.",
+                "If more than five points are answered, mark all and award marks for the highest scoring FIVE.",
+                "• Note that each point should be developed and expanded.",
+                "• Letter/email can be loosely based on the suggestions given.",
+                "• Candidates can make their own points and need not use the guidelines given.",
+                "(5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 mark: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (b) — answer in Spanish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, pp.9-10 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-2-a", topicId: "spanish-6-3", conceptId: "walking-trip-northern-spain-diary-entry",
+    section: "C", questionRef: "2022 HL Section C Q2(a) — Deferred sitting",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You are on a walking trip in northern Spain. Write a diary entry in Spanish mentioning any four of the following points:\n− Say that you are having a great time. Explain why.\n− Describe what the weather is like.\n− Describe one person you have met.\n− Say how you normally spend the evenings.\n− Mention what your plans are for the rest of the trip.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered. (25 marks)",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (a) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, pp.9-10 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-2-b", topicId: "spanish-6-4", conceptId: "staying-seville-with-spanish-friend-pilar",
+    section: "C", questionRef: "2022 HL Section C Q2(b) — Deferred sitting",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You are staying in Seville with your Spanish friend Pilar. Leave a note in Spanish for Pilar including any four of the following points:\n− Say you are going out for tapas tonight with your classmates.\n− Give one detail about the restaurant.\n− Mention one dish you would like to try.\n− Say that you will send a photo of the food.\n− You will return home by taxi before midnight.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered.",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (b) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
 ];

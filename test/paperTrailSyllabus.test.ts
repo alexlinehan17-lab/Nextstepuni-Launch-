@@ -69,8 +69,9 @@ describe('Paper Trail syllabus history', () => {
 
 // A deferred sitting joins the Atlas as its own paper only once it is carded
 // in the Mark Bank: Economics 2022 Higher (2026-11-04), History's four Later
-// Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04), and
-// Irish's carded deferred papers (from 2026-11-12), their
+// Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04),
+// Irish's carded deferred papers (from 2026-11-12) and Spanish's 2022 Higher
+// deferred sitting (2026-11-12), their
 // questions kept apart from June's by logicalQuestionIdentity.
 const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '2025|LC001ALP200IV-deferred.pdf', '2025|LC001GLP100IV-deferred.pdf', '2025|LC001GLP200IV-deferred.pdf', '2024|LC001ALP100IV-deferred.pdf', '2024|LC001ALP200IV-deferred.pdf', '2024|LC001GLP100IV-deferred.pdf', '2024|LC001GLP200IV-deferred.pdf', '2023|LC001ALP100IV-deferred.pdf', '2023|LC001ALP200IV-deferred.pdf', '2023|LC001GLP100IV-deferred.pdf', '2023|LC001GLP200IV-deferred.pdf', '2022|LC001GLP100IV-deferred.pdf', '2022|LC001GLP200IV-deferred.pdf'];
 const ADMITTED_DEFERRED = new Set([
@@ -80,6 +81,9 @@ const ADMITTED_DEFERRED = new Set([
   'history|2023|LC004ALP000EV-deferred.pdf',
   'history|2023|LC004GLP000EV-deferred.pdf',
   ...IRISH_DEFERRED_PAPERS.map(paper => `irish|${paper}`),
+  // Spanish 2022 Higher, the deferred sitting (2026-11-12): written and listening.
+  'spanish|2022|LC012ALP000EV-deferred.pdf',
+  'spanish|2022|LC012ALPA00EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

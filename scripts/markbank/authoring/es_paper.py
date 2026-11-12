@@ -92,9 +92,11 @@ ANSWER_LINE = re.compile(
     r'|^(?:\(\s*(?:i{1,3}|iv|v|[a-h])\s*\)\s*)+$'
     r'|^(?:Day|Date|Time)\s*:\s*(?:(?:Day|Date|Time)\s*:\s*)*$', re.I)
 
-# Page furniture the SEC prints on every page of every booklet.
+# Page furniture the SEC prints on every page of every booklet. (The 2022
+# deferred listening booklet sets its running head with U+2010, "Spanish ‐
+# Listening Comprehension Test ‐ Higher Level".)
 FURNITURE = re.compile(
-    r'^(?:Leaving Certificate Examination|Spanish\s*[–-]|Do not write on this page'
+    r'^(?:Leaving Certificate Examination|Spanish\s*[–‐-]|Do not write on this page'
     r'|This is space for extra work|This question continues on the next page'
     r'|Write your answer to Section|Copyright notice|Page \d+$|\d{1,3}$)', re.I)
 
@@ -247,7 +249,7 @@ ANSWER_LINES = re.compile(r'(?:\s*(?<!\d)\d{1,2}\s*\.)+\s*$')
 # The loose sheet: the title the SEC prints above the Section B article, which
 # is the same string the marking scheme prints above its Section B answers and
 # is therefore one of the three things the two documents are joined on.
-INSERT_SKIP = re.compile(r'^(?:SECTION\s+B|ROINN\s+B|Leaving Certificate|Spanish\s*[–-])',
+INSERT_SKIP = re.compile(r'^(?:SECTION\s+B|ROINN\s+B|Leaving Certificate|Spanish\s*[–‐-])',
                          re.I)
 
 
@@ -532,8 +534,11 @@ class Region:
 class EsPaper:
     """One sitting's booklets: the written paper, the loose sheet, the aural."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
+        # The SEC's deferred sitting (2022 Higher): its own booklets, read
+        # from the archive's deferredexams/ folder, never June's.
+        self.sitting = sitting
         self.path = self._path('000')
         # 2016 files its loose sheet under a letter O: LC012ALPO15EV.
         self.insert_path = (self._path('015', optional=True)
@@ -553,6 +558,12 @@ class EsPaper:
     def _path(self, component, optional=False):
         p = os.path.join(papers_dir(self.subject),
                          f'{self.year}-{self.level}-{component}-paper.pdf')
+        if self.sitting == 'deferred':
+            # The archive files a deferred booklet under the June file id:
+            # deferredexams/2022/LC012ALP000EV.pdf, LC012ALPA00EV.pdf, and the
+            # loose sheet LC012ALP015EV.pdf.
+            p = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(self.year),
+                             f'LC012{"A" if self.level == "hl" else "G"}LP{component}EV.pdf')
         if os.path.exists(p):
             return p
         if optional:

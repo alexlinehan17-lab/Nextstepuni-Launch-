@@ -92,6 +92,14 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 # they shipped with until a reviewed change re-cuts them; every later sitting
 # gets the claimable shapes below from its first commit.
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
+# The SEC's deferred sittings carded, each from its own booklets and scheme
+# (paper-trail-corpus/deferredexams/, schemes/<year>-<level>-deferred.md): the
+# archive holds one for Spanish, 2022 Higher. Its cards say so twice, as
+# Economics', Engineering's, History's and Irish's do: the id
+# ("es-2022-hl-deferred-a1a-1-a") and the citation ("... — Deferred sitting").
+# They take today's card shapes, never FROZEN_SHAPES (no deferred card shipped
+# before).
+DEFERRED_CARDED = {(2022, 'hl')}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
 DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl'), (2015, 'hl'), (2014, 'hl'), (2013, 'hl'), (2012, 'hl'), (2011, 'hl'), (2010, 'hl')}
@@ -167,8 +175,8 @@ AUDIO_EVIDENCE = (
     'card would be unanswerable from what it shows.')
 
 
-def card_id(year, level, section, q, letter, roman):
-    parts = ['es', str(year), level, section.lower()]
+def card_id(year, level, section, q, letter, roman, sitting=None):
+    parts = ['es', str(year), level, *([sitting] if sitting else []), section.lower()]
     if q is not None:
         parts.append(str(q))
     if letter:
@@ -264,9 +272,12 @@ def _stem_text(block):
 BORROWED_INSERT = {2020: 'LC012ALP015IV'}
 
 
-def source_material(P, token, region, language, level, year):
+def source_material(P, token, region, language, level, year, sitting=None):
     """The pages this card's text is printed on, in the booklet that prints it."""
-    if token == 'B' and level == 'hl' and not P.insert_pages and year in BORROWED_INSERT:
+    # A deferred card's booklets are the deferred sitting's: build-deck.mjs
+    # resolves its sourceLabel in that sitting's own index entry.
+    exam = 'deferred examination' if sitting else 'examination'
+    if token == 'B' and level == 'hl' and not P.insert_pages and year in BORROWED_INSERT and not sitting:
         fileid = BORROWED_INSERT[year]
         path = os.path.join(ROOT, 'paper-trail-corpus', 'exampapers', str(year),
                             f'{fileid}.pdf')
@@ -303,7 +314,7 @@ def source_material(P, token, region, language, level, year):
             # paper's own id would open the wrong booklet.
             'sourceLabel': 'Section B',
             'attribution': (f'SEC Spanish {year} {LEVEL_TITLE[level]} Level '
-                            f'examination — Section B text, printed on the loose '
+                            f'{exam} — Section B text, printed on the loose '
                             f'sheet supplied with the paper. '
                             f'© State Examinations Commission.'),
             'presentationNote': (
@@ -327,7 +338,7 @@ def source_material(P, token, region, language, level, year):
         'label': 'READING COMPREHENSION',
         'title': f'{title[:80]} — answer in {language}',
         'pages': list(pages),
-        'attribution': (f'SEC Spanish {year} {LEVEL_TITLE[level]} Level examination '
+        'attribution': (f'SEC Spanish {year} {LEVEL_TITLE[level]} Level {exam} '
                         f'paper — © State Examinations Commission.'),
         'presentationNote': ('Read the text exactly as the examination printed '
                              'it, then answer.'),
@@ -349,21 +360,23 @@ def build():
         for level in LEVELS:
             if (year, level) in CARDED:
                 _sitting(year, level, cards, refuse)
+    for year, level in sorted(DEFERRED_CARDED):
+        _sitting(year, level, cards, refuse, sitting='deferred')
     return cards, refused, examples, excluded
 
 
-def _sitting(year, level, cards, refuse):
-    P = EsPaper(year, level, SUBJECT)
-    S = EsScheme(year, level, SUBJECT)
+def _sitting(year, level, cards, refuse, sitting=None):
+    P = EsPaper(year, level, SUBJECT, sitting)
+    S = EsScheme(year, level, SUBJECT, sitting)
     by_key = S.by_key()
     grids = S.grids
     leaves = P.leaves()
 
     if (year, level) in LISTENING_CARDED:
-        _listening(year, level, P, S, cards, refuse)
+        _listening(year, level, P, S, cards, refuse, sitting)
     else:
         for q, letter, text, _page in P.aural_asks():
-            ref = ref_for(year, level, 'L', q, letter, None)
+            ref = ref_for(year, level, 'L', q, letter, None, sitting)
             refuse('the ask needs the recording, which no card can carry', ref,
                    f'{year} {level.upper()} Listening Comprehension Test, '
                    f'Question {q}: {AUDIO_EVIDENCE}')
@@ -372,7 +385,7 @@ def _sitting(year, level, cards, refuse):
     for key in sorted(leaves, key=lambda k: tuple(str(x) for x in k)):
         section, q, letter, roman = key
         text, token, block = leaves[key]
-        ref = ref_for(year, level, section, q, letter, roman)
+        ref = ref_for(year, level, section, q, letter, roman, sitting)
         region = P.regions[token]
         if (section, q) in whole_carded:
             continue
@@ -385,7 +398,7 @@ def _sitting(year, level, cards, refuse):
                     # One card for the printed choice of statements.
                     whole_carded.add((section, q))
                     letter = None
-                card = _writing(year, level, P, section, q, letter)
+                card = _writing(year, level, P, section, q, letter, sitting)
                 cards.append(card)
                 continue
             line = (grids.get(key) or grids.get((section, q, letter, None))
@@ -423,7 +436,7 @@ def _sitting(year, level, cards, refuse):
                 ask.roman, ask.points, ask.terms, ask.total = roman, [(text_n, marks_n)], [marks_n], marks_n
                 ask.bracket_parts = None
                 ask.answer_terms = None
-                one = ONE_DETAIL_CUTS.get((year, level, section, q, letter, roman))
+                one = ONE_DETAIL_CUTS.get((year, S.tlevel, section, q, letter, roman))
                 if one:
                     # A roman ask the paper prints for ONE answer, which the
                     # scheme prices as one, its items alternatives
@@ -464,7 +477,7 @@ def _sitting(year, level, cards, refuse):
         language = answer_language(question, stem, instruction)
         rule = S.unit_rules.get(CARD_SECTION.get(section, 'A'))
         rows = _rows_for(ask, language, rule,
-                         stepped=(year, level) not in FROZEN_SHAPES)
+                         stepped=(year, level) not in FROZEN_SHAPES or bool(sitting))
         if rows is None and (year, level) in DIRECTION_CARDED:
             rows = _direction_rows(ask, language, rule)
             if rows is not None and ask.key != key:
@@ -474,7 +487,7 @@ def _sitting(year, level, cards, refuse):
                 # question the scheme priced; every part it prints goes on it.
                 whole_carded.add((section, q))
                 letter = roman = None
-                ref = ref_for(year, level, section, q, None, None)
+                ref = ref_for(year, level, section, q, None, None, sitting)
                 parts = [(k, v) for k, v in sorted(leaves.items(),
                                                    key=lambda kv: tuple(str(x) for x in kv[0]))
                          if k[0] == section and k[1] == q]
@@ -519,7 +532,7 @@ def _sitting(year, level, cards, refuse):
             continue
 
         card = {
-            'id': card_id(year, level, section, q, letter, roman),
+            'id': card_id(year, level, section, q, letter, roman, sitting),
             'subjectId': SUBJECT,
             'level': LEVEL_WORD[level],
             'year': year,
@@ -539,7 +552,7 @@ def _sitting(year, level, cards, refuse):
         }
         if stem and len(stem) >= 15 and stem != question:
             card['stem'] = stem
-        source = source_material(P, token, region, language, level, year)
+        source = source_material(P, token, region, language, level, year, sitting)
         if source:
             card['sourceMaterial'] = source
         cards.append(card)
@@ -571,7 +584,7 @@ def _listening_rule(S):
     return ' '.join(out)
 
 
-def _listening(year, level, P, S, cards, refuse):
+def _listening(year, level, P, S, cards, refuse, sitting=None):
     """One card per listening ask, answered from the official recording.
 
     The ask is the booklet's, set out line by line as printed (a tick-box ask
@@ -584,15 +597,18 @@ def _listening(year, level, P, S, cards, refuse):
     """
     from es_atlas import tags_for
     with open(AUDIO, encoding='utf-8') as fh:
-        recording = next(r for r in json.load(fh) if r['year'] == year)
+        recording = next(r for r in json.load(fh)
+                         if r['year'] == year and r.get('sitting') == sitting)
     fileid = AURAL_FILEID[level]
+    if sitting:
+        fileid = fileid.replace('.pdf', f'-{sitting}.pdf')
     assert fileid in recording['paperFileids'], (year, fileid)
     tags = tags_for(year, LEVEL_WORD[level], fileid)
     heads = P.aural_heads()
     rule = _listening_rule(S)
     by_key = S.by_key()
     for q, letter, lines, page in P.aural_ask_lines():
-        ref = ref_for(year, level, 'L', q, letter, None)
+        ref = ref_for(year, level, 'L', q, letter, None, sitting)
         ask = by_key.get(('L', q, letter, None))
         if ask is None or ask.fault:
             refuse('the scheme prices no answer for this listening ask', ref,
@@ -638,7 +654,7 @@ def _listening(year, level, P, S, cards, refuse):
                       and not l.startswith('(')),
                      kind.group(1).strip() if kind else f'Question {q}')
         card = {
-            'id': card_id(year, level, 'L', q, letter, None),
+            'id': card_id(year, level, 'L', q, letter, None, sitting),
             'subjectId': SUBJECT,
             'level': LEVEL_WORD[level],
             'year': year,
@@ -663,6 +679,7 @@ def _listening(year, level, P, S, cards, refuse):
                 # listening booklet is its own SEC document.
                 'sourceLabel': 'Aural Paper',
                 'attribution': (f'SEC Spanish {year} {LEVEL_TITLE[level]} Level '
+                                f'{"deferred " if sitting else ""}'
                                 f'Listening Comprehension Test — © State '
                                 f'Examinations Commission.'),
                 'presentationNote': ('The question page of the listening booklet. '
@@ -692,17 +709,17 @@ WRITING_PLACE = {('hl', 'C', 1, 'a'): 'spanish-6-1', ('hl', 'C', 1, 'b'): 'spani
 ORDINALS = ('First', 'Second', 'Third', 'Fourth', 'Fifth')
 
 
-def _writing(year, level, P, section, q, letter):
+def _writing(year, level, P, section, q, letter, sitting=None):
     """A written-production ask as a rubric card on the scheme's own grid."""
     import es_writing as W
     t = W.task(P, section, q, letter)
-    ref = ref_for(year, level, section, q, letter, None)
+    ref = ref_for(year, level, section, q, letter, None, sitting)
     level_title = LEVEL_TITLE[level]
     practice = ['Write your answer in Spanish, then place it on the published grid. '
                 'You are marked on this task alone, and where it asks you to choose '
                 'statements, turns or points, on the ones you chose.']
     if level == 'hl' and section == 'B':
-        g = W.grid_b5(year, level)
+        g = W.grid_b5(year, level, sitting)
         topic = 'spanish-6-0'
         rubric = {'system': 'french', 'taskRequirements': g['requirements'],
                   'criteria': g['criteria'], 'markingGuideNote': ''}
@@ -711,12 +728,12 @@ def _writing(year, level, P, section, q, letter):
         pages = g['pages']
     else:
         if level == 'hl':
-            g = W.grid_c(year, level, q, letter)
+            g = W.grid_c(year, level, q, letter, sitting)
             requirements = (g['lead'] + g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
                             + g['notes'] + g['direction'])
             note = '\n'.join(g['guidelines'])
         else:
-            g = W.grid_ol_b(year, level, q, letter)
+            g = W.grid_ol_b(year, level, q, letter, sitting)
             requirements = g['lead'] + g['ladder']
             note = '\n'.join(g['section'])
         # The task names its own kind in its opening words; where it does not
@@ -747,7 +764,7 @@ def _writing(year, level, P, section, q, letter):
     rubric['practiceNotes'] = practice
     total = sum(c['maxMarks'] for c in rubric['criteria'])
     card = {
-        'id': card_id(year, level, section, q, letter, None),
+        'id': card_id(year, level, section, q, letter, None, sitting),
         'kind': 'rubric',
         'subjectId': SUBJECT,
         'level': LEVEL_WORD[level],
@@ -766,7 +783,7 @@ def _writing(year, level, P, section, q, letter):
     if level == 'hl' and section == 'B':
         # The opinion piece is linked to the article it follows.
         region = P.regions['B']
-        card['sourceMaterial'] = source_material(P, 'B', region, 'Spanish', level, year)
+        card['sourceMaterial'] = source_material(P, 'B', region, 'Spanish', level, year, sitting)
     else:
         card['sourceMaterial'] = {
             'kind': 'source-text',
@@ -774,7 +791,8 @@ def _writing(year, level, P, section, q, letter):
             'title': f'Section {section} Question {q}{f" ({letter})" if letter else ""} '
                      f'— answer in Spanish',
             'pages': t['pages'],
-            'attribution': (f'SEC Spanish {year} {level_title} Level examination '
+            'attribution': (f'SEC Spanish {year} {level_title} Level '
+                            f'{"deferred " if sitting else ""}examination '
                             f'paper — © State Examinations Commission.'),
             'presentationNote': 'The task exactly as the examination printed it.',
         }

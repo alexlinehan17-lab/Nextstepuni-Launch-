@@ -294,6 +294,10 @@ MISPRINTS = {
     # parts, "3 + (3 + 3) + (3 + 3)".
     (2010, 'ol'): [('Es la puerta ideal al mundo 5 marks)', 'Es la puerta ideal al mundo (5 marks)')],
     (2010, 'hl'): [('(a) Two of: (3+3marks)', '(c) Two of: (3+3marks)')],
+    # The 2022 deferred Higher scheme letters Section B Q4's third part "(b)"
+    # a second time (rendered and read, p7); the deferred paper prints (a)-(c),
+    # and the head prices three parts, "(3+2) + (3+2) + (3+2)".
+    (2022, 'hl-deferred'): [('(b) Two of:\n- They have prohibited', '(c) Two of:\n- They have prohibited')],
 }
 
 # Layouts the reader is taught by example, keyed by sitting, never content:
@@ -350,6 +354,11 @@ LAYOUTS = {
                     '\n- Three examples of good things that happened to Saíd in Barcelona. (3+3+3 marks)\n- Discussion of')],
     # 2010 Ordinary wraps Question 3's head, its tariff on the line under its
     # title; and Q5(a) wraps two of its four roman answers after a slash.
+    # The 2022 deferred Higher listening Q5(a) sets its two answers on two
+    # undashed lines under one "(2+1m)": "Shows you the food inside (…)" /
+    # "Alerts you when you have to do the shopping". Read as the two answers.
+    (2022, 'hl-deferred'): [('(a) Shows you the food inside (without having to open the door)\nAlerts you',
+                             '(a) - Shows you the food inside (without having to open the door)\n- Alerts you')],
     (2010, 'ol'): [('encontrado muerto en el laboratorio\n(20 marks)',
                     'encontrado muerto en el laboratorio (20 marks)'),
                    ('Drive very fast/\nDon´t leave cyclists', 'Drive very fast/ Don´t leave cyclists'),
@@ -389,6 +398,21 @@ MENU_CUTS = {
     # 2011 Ordinary listening Q2(b) "Two of: Green, blue or brown.": the "or"
     # parts the last two colours as the comma parts the first two.
     (2011, 'ol', 'L', 2, 'b', None): ('Green', 'blue', 'brown'),
+    # 2022 deferred Higher listening Q1(a) "Three of: Spanish/Hispanic
+    # literature" / "20th century [1m] Colombian literature [1m] (2+1+1m)": the
+    # brackets close the second and third answers on the line under the first.
+    (2022, 'hl-deferred', 'L', 1, 'a', None): ('Spanish/Hispanic literature', '20th century',
+                                                'Colombian literature'),
+    # … and Q2(d) "Two of: Win the Tour de/of France" / "Have his own
+    # (professional) cycling team" / "Open a cycling school in his town", and
+    # Q3(b) "One of: Played all over the World" / "played in (mention one
+    # country)" / "recorded a (live) album": one answer to a line, undashed.
+    (2022, 'hl-deferred', 'L', 2, 'd', None): ('Win the Tour de/of France',
+                                                'Have his own (professional) cycling team',
+                                                'Open a cycling school in his town'),
+    (2022, 'hl-deferred', 'L', 3, 'b', None): ('Played all over the World',
+                                                'played in (mention one country)',
+                                                'recorded a (live) album'),
     (2013, 'hl', 'L', 1, 'c', None): ('(By choosing) the petrol station brand', 'type of petrol',
                                       'maximum distance we want to/ can travel'),
     (2014, 'hl', 'B', 4, 'b', None): (
@@ -676,14 +700,22 @@ class Ask:
 class EsScheme:
     """One published Spanish marking scheme, read as a list of asks."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
-        self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
+        # The SEC's deferred sitting (2022 Higher) is a scheme of its own,
+        # "<year>-<level>-deferred.md", and every hand table below is keyed
+        # apart from June's by its level token ("hl-deferred"): a June repair
+        # never lands on the deferred scheme's ask at the same address.
+        self.sitting = sitting
+        self.tlevel = f'{level}-{sitting}' if sitting else level
+        stem = f'{year}-{level}' + (f'-{sitting}' if sitting else '')
+        self.path = os.path.join(schemes_dir(subject), f'{stem}.md')
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
-        if (year, level) in X_BULLETS:
+        tkey = (year, self.tlevel)
+        if tkey in X_BULLETS:
             raw = re.sub(r'(?m)^x (?=\S)', '- ', raw)
-        for old, new in GLYPHS.get((year, level), ()):
+        for old, new in GLYPHS.get(tkey, ()):
             raw = raw.replace(old, new)
         # The 2025 schemes set every space inside a heading as U+00A0, so
         # "DIALOGUE\u00a0CONSTRUCTION" is not the string "DIALOGUE CONSTRUCTION"
@@ -692,7 +724,7 @@ class EsScheme:
         # nobody writes. Folded to ordinary spaces: a whitespace normalisation,
         # never a change of content.
         raw = raw.replace('\u00a0', ' ').replace('\u2009', ' ').replace('\u202f', ' ')
-        for old, new in [*MISPRINTS.get((year, level), ()), *LAYOUTS.get((year, level), ())]:
+        for old, new in [*MISPRINTS.get(tkey, ()), *LAYOUTS.get(tkey, ())]:
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
         self.lines = [l.rstrip() for l in raw.split('\n')]
@@ -1326,16 +1358,16 @@ class EsScheme:
             # A line holding only the full stop that closed the list above it
             # (2015 Higher Q2(a)(iii) prints "." alone) is no answer.
             options = [o for o in options if re.search(r'\w', o)]
-            lead = MENU_LEADS.get((self.year, self.level, section, q, letter, roman))
+            lead = MENU_LEADS.get((self.year, self.tlevel, section, q, letter, roman))
             if lead:
                 assert options and options[0] == lead, (section, q, letter, options[:1])
                 notes.append(options.pop(0))
-            cut = MENU_CUTS.get((self.year, self.level, section, q, letter, roman))
+            cut = MENU_CUTS.get((self.year, self.tlevel, section, q, letter, roman))
             if cut:
                 joined = ' '.join(' '.join(answers).split())
                 assert all(o in joined for o in cut), (section, q, letter, cut)
                 options = list(cut)
-            key = (self.year, self.level, section, q, letter, roman)
+            key = (self.year, self.tlevel, section, q, letter, roman)
             if quota == 1 and len(options) == 1 and key not in ONE_OF_KEPT:
                 one = ONE_OF_CUTS.get(key)
                 if isinstance(one, tuple):
@@ -1371,13 +1403,16 @@ class EsScheme:
             # lists them: "- Fresh ingredients / - Traditional ways of cooking
             # (2+1m)" is two answers at 2 and 1, not one answer worth 3.
             points = list(zip(answers, terms))
-        elif self.year <= OLD_LETTERS_LAST and marked >= 2 and terms and len(terms) == 1 \
+        elif marked >= 2 and terms and len(terms) == 1 \
                 and len(answers) == marked \
                 and not re.search(r'\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]', ' '.join(b or '' for b in body)):
             # Numbered answers priced together: 2016 Ordinary Q5(a) "(i) it is
             # vandalism" / "(ii) it is a means of alternative expression (6
             # marks)". Both are asked for and the scheme prints no split: a
-            # menu of the two, paid its 6 when both are claimed.
+            # menu of the two, paid its 6 when both are claimed. (Read in every
+            # year: the 2022 deferred Higher Q2(a)(ii) prints "- Those with
+            # reduced mobility" / "- Older people (…) (3m)"; no June sitting
+            # since 2020 prints the shape.)
             quota = marked
             options = answers
         elif (self.year <= OLD_LETTERS_LAST and not marked and terms and len(terms) >= 2
@@ -1423,7 +1458,7 @@ class EsScheme:
                 if all(p for p, _n in pieces) and sum(n for _p, n in pieces) == total:
                     bracket_parts = pieces
 
-        one = ONE_DETAIL_CUTS.get((self.year, self.level, section, q, letter, roman))
+        one = ONE_DETAIL_CUTS.get((self.year, self.tlevel, section, q, letter, roman))
         if one and not quota and len(points) == 1:
             options = [o.strip() for o in points[0][0].split(one) if o.strip()]
             assert len(options) >= 2, (section, q, letter, options)
@@ -1456,7 +1491,7 @@ class EsScheme:
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):
         return ref_for(self.year, self.level, ask.section, ask.q, ask.letter,
-                       ask.roman)
+                       ask.roman, self.sitting)
 
     def by_key(self):
         return {a.key: a for a in self.asks}
@@ -1466,8 +1501,11 @@ def _clean_title(text):
     return ' '.join((text or '').replace('–', '-').split()).strip(' :-')
 
 
-def ref_for(year, level, section, q, letter, roman):
-    """The card's citation: the sitting, then the paper's own address."""
+def ref_for(year, level, section, q, letter, roman, sitting=None):
+    """The card's citation: the sitting, then the paper's own address. A card
+    of the SEC's deferred sitting says so at the end, "... — Deferred sitting",
+    as Economics', Engineering's, History's and Irish's do (reconcile.py reads
+    it beside the card id's "-deferred-")."""
     ref = f'{year} {level.upper()} Section {section} Q'
     if q is not None:
         ref += str(q)
@@ -1475,6 +1513,8 @@ def ref_for(year, level, section, q, letter, roman):
         ref += f'({letter})'
     if roman:
         ref += f'({roman})'
+    if sitting == 'deferred':
+        ref += ' — Deferred sitting'
     return ref
 
 
@@ -1483,8 +1523,8 @@ def audit(subject=SUBJECT):
     bad = 0
     for path in sorted(glob.glob(os.path.join(schemes_dir(subject), '*.md'))):
         stem = os.path.basename(path)[:-3]
-        year, level = int(stem[:4]), stem[5:]
-        S = EsScheme(year, level, subject)
+        year, level = int(stem[:4]), stem[5:7]
+        S = EsScheme(year, level, subject, 'deferred' if stem.endswith('-deferred') else None)
         priced = [a for a in S.asks if a.section != 'L']
         print(f'{stem}: {len(priced)} priced asks, '
               f'{len([a for a in S.asks if a.section == "L"])} listening asks, '

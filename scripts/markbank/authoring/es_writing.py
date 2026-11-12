@@ -38,9 +38,11 @@ from es_scheme import schemes_dir, X_BULLETS, GLYPHS as SCHEME_GLYPHS  # noqa: E
 # 2019 Ordinary sets the footer of its Section B page with every word twice:
 # "Leaving Leaving Certificate Certificate Examination Examination 2019 2019 8",
 # "Spanish Spanish – Written – Written – Ordinary – Ordinary Level Level", under
-# the page's number on a row of its own ("8").
+# the page's number on a row of its own ("8"). The 2022 deferred paper prints
+# its running head with no year, its page number on the same row:
+# "Leaving Certificate Examination 14".
 FURNITURE = re.compile(
-    r'^(?:Leaving Certificate Examination,?\s*\d{4}|Spanish\s*[–-]|_{6,}|\.{6,}|'
+    r'^(?:Leaving Certificate Examination(?:,?\s*\d{4}|\s+\d{1,2}$|$)|Spanish\s*[–‐-]|_{6,}|\.{6,}|'
     r'Do not write on this page|There is no examination material|'
     r'Leaving Leaving Certificate Certificate Examination|Spanish Spanish\s*[–-]|'
     r'\d{1,2}$)', re.I)
@@ -257,9 +259,10 @@ def task(P, section, q, letter):
 
 
 # --------------------------------------------------------------- the scheme -
-def scheme_lines(year, level):
-    """[(page, line)] of the scheme's text layer, blank lines dropped."""
-    path = os.path.join(schemes_dir(), f'{year}-{level}.md')
+def scheme_lines(year, level, sitting=None):
+    """[(page, line)] of the scheme's text layer, blank lines dropped. The
+    deferred sitting's scheme is its own, "<year>-<level>-deferred.md"."""
+    path = os.path.join(schemes_dir(), f'{year}-{level}' + (f'-{sitting}' if sitting else '') + '.md')
     out, page = [], 0
     with open(path, encoding='utf-8') as fh:
         for raw in fh:
@@ -268,9 +271,10 @@ def scheme_lines(year, level):
             # GLYPHS), and a symbol-font bullet read as "x" dropped, as the
             # ladders of the other sittings print no bullet (2010 Ordinary
             # "x Full message unequivocally conveyed: 8 marks").
-            for old, new in SCHEME_GLYPHS.get((year, level), ()):
+            tkey = (year, f'{level}-{sitting}' if sitting else level)
+            for old, new in SCHEME_GLYPHS.get(tkey, ()):
                 line = line.replace(old, new)
-            if (year, level) in X_BULLETS:
+            if tkey in X_BULLETS:
                 line = re.sub(r'^x (?=\S)', '', line)
             m = re.match(r'^## Page (\d+)$', line)
             if m:
@@ -328,9 +332,9 @@ def _span(lines, start, stop):
     return i, j
 
 
-def grid_b5(year, level):
+def grid_b5(year, level, sitting=None):
     """Higher Section B Q5: Content/Communication and Language, three bands each."""
-    L = scheme_lines(year, level)
+    L = scheme_lines(year, level, sitting)
     i, j = _span(L, lambda s: re.match(r'^Section B:?\s+Question 5\b', s, re.I),
                  lambda s: s.startswith('SECTION C'))
     block = L[i:j]
@@ -410,7 +414,7 @@ def _ladder(lines):
     return list(lines)
 
 
-def grid_c(year, level, q, letter):
+def grid_c(year, level, q, letter, sitting=None):
     """Higher Section C: a per-turn (dialogue) or per-point ladder.
 
     Read by region, because 2016-2026 lay the section out several ways: each
@@ -421,7 +425,7 @@ def grid_c(year, level, q, letter):
     "Note:" lines belong to the whole question; 2016 and 2017's letter notes
     ("1a) Letter/Email:" …) to the letter alone.
     """
-    L = scheme_lines(year, level)
+    L = scheme_lines(year, level, sitting)
     i, j = _span(L, lambda s: s.startswith('SECTION C'),
                  lambda s: s.startswith('APPENDIX') or s.startswith('LISTENING COMPREHENSION'))
     block = []
@@ -502,22 +506,28 @@ def grid_c(year, level, q, letter):
     # Question 1's page).
     pages = sorted({block[k][0] for k in [*range(r0, r1), *range(g0 or 0, g1), *letter_at]})
     l0 = next((k for k, s in enumerate(texts) if re.match(rf'^Question {q}\s*\(a\) and \(b\)', s)), None)
-    lead = _sentences(texts[l0:next(k for k in range(l0, len(texts)) if texts[k] == 'OR')]) if l0 is not None else []
+    # (to its "OR", or to the first alternative's head where none is printed
+    # between them: the 2022 deferred scheme)
+    lead = _sentences(texts[l0:next(k for k in range(l0 + 1, len(texts))
+                                    if texts[k] == 'OR' or OPT.match(texts[k]))]) if l0 is not None else []
     out = {'option': option, 'direction': direction, 'guidelines': guidelines, 'lead': lead,
            'criteriaHead': criteria_head, 'ladder': ladder, 'notes': notes, 'pages': pages}
     if times:
         n, per, total = times
         return {**out, 'n': n, 'per': per, 'total': total}
-    whole = re.search(r'\((\d{1,2})\s*marks\)', option[0])
+    # The piece's own tariff, on its head ("Question 2 (a) DIARY ENTRY (25
+    # marks)") or, in the 2022 deferred scheme, on the line under it ("Five
+    # points, FOUR to be answered. (25 marks)").
+    whole = next((m for o in option if (m := re.search(r'\((\d{1,2})\s*marks\)', o))), None)
     if any(re.search(r'\bglobal mark\b', s) for s in lead) and whole:
         # One mark for the whole piece, placed on the printed bands.
         return {**out, 'n': 1, 'per': int(whole.group(1)), 'total': int(whole.group(1)), 'global': True}
     raise ValueError(f'{year} {level} C Q{q}({letter}): no "(n x m = total)" tariff')
 
 
-def grid_ol_b(year, level, q, letter):
+def grid_ol_b(year, level, q, letter, sitting=None):
     """Ordinary Section B: a per-point ladder for the letter, then the note or diary."""
-    L = scheme_lines(year, level)
+    L = scheme_lines(year, level, sitting)
     i, j = _span(L, lambda s: s.startswith('SECTION B'),
                  lambda s: s.startswith('LISTENING') or s.startswith('APPENDIX'))
     block = [(p, s) for p, s in L[i:j] if not PAGE_NO.match(s)]

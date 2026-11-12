@@ -742,9 +742,20 @@ const DEFERRED_ID = {
   economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
   engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
   history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
+  spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
+/* A deferred Spanish card's documents are its sitting's own: the index's
+ * deferred entry labels them "Deferred · Exam Paper", "Deferred · Aural Paper"
+ * and "Deferred · Section B" (the loose sheet), and a card names the June
+ * label ("Aural Paper", "Section B"). Null where the entry has no such
+ * document, never June's. */
+const deferredDoc = (subjectId, card, label) => {
+  const entry = deferredPaperEntry(subjectId, card.year, card.level);
+  const hit = entry?.papers?.find(p => p.label === `Deferred · ${label}`);
+  return hit ? String(hit.doc?.f ?? '').replace(/\.pdf$/i, '') || null : null;
+};
 const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
@@ -1517,7 +1528,9 @@ for (const c of cards) {
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
     const source = c.sourceMaterial;
     if (source?.sourceLabel) {
-      const sourceFileid = resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
+      const sourceFileid = deferredCard(SUBJECT_ID, c)
+        ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+        : resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
       delete source.sourceLabel;
       if (!sourceFileid) { dropped.push(`${c.id}: source document "${source.label}" is not in the Paper Trail index`); continue; }
       source.sourceFileid = sourceFileid;
@@ -1527,7 +1540,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
-    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    const fileid = deferredCard(SUBJECT_ID, c)
+      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
     seenId.add(c.id);
@@ -1535,7 +1550,7 @@ for (const c of cards) {
     ...base, kind: "rubric",
     year: ${c.year}, level: ${q(c.level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredCard(SUBJECT_ID, c) ? ', deferred examination' : ''}, ${pages} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
@@ -1651,9 +1666,11 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = resolveCompanionFileid(
-      corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
-      c.level ?? 'higher', source.sourceLabel);
+    const fileid = deferredCard(SUBJECT_ID, c) && SUBJECT_ID === 'spanish'
+      ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+      : resolveCompanionFileid(
+        corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
+        c.level ?? 'higher', source.sourceLabel);
     delete source.sourceLabel;
     if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
     source.sourceFileid = fileid;
@@ -1876,7 +1893,9 @@ for (const c of cards) {
    * Comprehension Test, a separate SEC booklet the Paper Trail index labels
    * "Aural Paper": its paper is that booklet, never the written paper the
    * section-less resolver returns for a language. No other deck has an L. */
-  const fileid = deferredEntry
+  const fileid = deferredEntry && SUBJECT_ID === 'spanish'
+    ? deferredDoc(SUBJECT_ID, c, c.section === 'L' ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry
     ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
     : SUBJECT_ID === 'spanish' && c.section === 'L'
       ? resolveCompanionFileid('spanish', year, level, 'Aural Paper')
