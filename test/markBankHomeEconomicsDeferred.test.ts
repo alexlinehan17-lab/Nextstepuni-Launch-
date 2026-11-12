@@ -16,8 +16,8 @@ import { preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 
-it.skipIf(![review2022, review].every(r => Object.values(r.sources).every(source => existsSync(source.path))))
-('verifies every available deferred Home Economics original against its pinned hash', () => {
+it.skipIf(![review2022, review].every(r => Object.values(r.sources).every(source => existsSync(source.path))))(
+'verifies every available deferred Home Economics original against its pinned hash', () => {
   for (const r of [review2022, review]) expect(homeEconomicsSourceMap(r).size).toBe(r.tasks.length);
 });
 
