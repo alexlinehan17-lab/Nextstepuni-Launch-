@@ -131,6 +131,138 @@
   "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q5-art.png",
   "year": 2011
  },
+ "dcg-2011-OL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a traditional Irish telephone box, beside the isometric axes X, Y and Z and a partially completed drawing of the box, with its elevation and plan positioned relative to the axes.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "6fb5dd4abbc7bbccac46b7834ef640e4",
+  "questionRef": "2011 OL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secA-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a post box on a wall with its surfaces A and B marked, beside the incomplete elevation on XY and the plan of the box set at an angle, and the given X1Y1 line.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "96ed1f3119508b12c426f9503aac49b7",
+  "questionRef": "2011 OL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secA-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A night photograph of the Samuel Beckett Bridge in Dublin and its reflection, beside the rectangle ABCV with the vertex V and a portion of the semi-parabola inscribed.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "c69eb27a72dfa6d7fcf596115d424164",
+  "questionRef": "2011 OL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secA-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A 3D graphic of three candles, a cone and two cylinders, beside the elevation on XY of the cone A and the cylinder C, and the plan of the cone A and the cylinder B.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "c8d8216838b74805c1e21092a29f9c16",
+  "questionRef": "2011 OL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secA-q4-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of a bus shelter, the question text with its bulleted specification, and Fig. B-1: the elevation of the shelter (50 and 70) and its plan (110 by 60, at 30 degrees) with the corner A and the spectator S. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "e0edb8e5a53f8291f5865387fcb67329",
+  "questionRef": "2011 OL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secB-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A 3D graphic of playground equipment with a child, and Fig. B-2: the end of the tunnel (20, 75, 90 and 40), the incomplete elevation on XY (30, 30 and 100) and the plan of the square play area (80, at 30 degrees) with the tunnel. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "8b29d4a8d7fde9a772609cb43128857c",
+  "questionRef": "2011 OL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secB-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A 3D graphic of a model fireplace, and Fig. B-3: the elevation on XY (100 across, 75 high; the opening 20 and 20, 50 and 40; the hearth 10) and the plan (80, 10 and 30, with a 60 degree corner) with the surface A. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "cee37862222b3a83c43d86a1ba3c44fa",
+  "questionRef": "2011 OL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secB-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "e449f40daa810573328bbeb76eade956",
+  "questionRef": "2011 OL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secC-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a soap film on a bent wire hanger, and Fig. C-2: the elevation of the hyperbolic paraboloid surface ABCD, a square of side 80 at 45 degrees on XY, and its plan (80 and 30) with the elements and the curve. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "7a734c7b48294e03b91c8ebb4426d55d",
+  "questionRef": "2011 OL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secC-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a 3D graphic of a referee's whistle, and Fig. C-3: the elevation of the whistle (15, 70, 15 and R25) and its plan (20, 30, 40 and 10). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "7426c585c0990d786ab4e12a69a928d4",
+  "questionRef": "2011 OL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secC-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a remote control car with its engine, piston and crank circled, and Fig. C-4, the crank OA (45) and the arm AC (85, with B 40 from A); part (b): a photograph of the camshaft and the cam motion in three bullets. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "886ce8b5cbddd51d79ce114592b0acbc",
+  "questionRef": "2011 OL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secC-q4-art.png",
+  "year": 2011
+ },
+ "dcg-2011-OL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a hand on a brass door knocker, the question text, Fig. C-5: dimensioned views of the door plate (1), the swing arm (2), the spacers (3), the M8 washer (4), the M8 nut (5) and the M8 bolt (6), the parts list naming them with their quantities, and a 3D graphic of the parts.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "1bb9beb744a6bcdce5ed4dd864e8ed78",
+  "questionRef": "2011 OL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-OL-paper-secC-q5-art.png",
+  "year": 2011
+ },
  "dcg-2012-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a speaker at a curved lectern, beside an incomplete trimetric projection of a similar lectern by the axonometric axes method, with the axes X, Y and Z, the end view and elevation in their positions, and construction lines in red, green and purple.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",
