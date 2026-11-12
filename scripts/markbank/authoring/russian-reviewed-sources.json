@@ -26909,5 +26909,907 @@
     "questionPages": [
       3
     ]
+  },
+  {
+    "id": "ru-2018-hl-c1-1-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q1(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-1-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q1(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-1-iii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q1(iii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-2-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q2(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-2-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q2(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-3-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q3(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-3-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q3(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-4-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q4(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c1-4-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C1 Q4(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c2-1",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C2 Q1",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      6,
+      7
+    ],
+    "component": "000",
+    "questionPages": [
+      6
+    ],
+    "guidancePages": [
+      6
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c2-2",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C2 Q2",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      6,
+      7
+    ],
+    "component": "000",
+    "questionPages": [
+      7
+    ],
+    "guidancePages": [
+      6
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c2-3",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C2 Q3",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      6,
+      7
+    ],
+    "component": "000",
+    "questionPages": [
+      8
+    ],
+    "guidancePages": [
+      6
+    ]
+  },
+  {
+    "id": "ru-2018-hl-c2-4",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section C2 Q4",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      6,
+      7
+    ],
+    "component": "000",
+    "questionPages": [
+      9
+    ],
+    "guidancePages": [
+      6
+    ]
+  },
+  {
+    "id": "ru-2018-hl-la1",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section LA1 Q",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "schemePages": [
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ]
+  },
+  {
+    "id": "ru-2018-hl-la2",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section LA2 Q",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      7
+    ],
+    "component": "000",
+    "questionPages": [
+      9
+    ]
+  },
+  {
+    "id": "ru-2018-hl-sd",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section SD Q3",
+    "topicId": "russian-3-3",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      10
+    ],
+    "schemePages": [
+      8
+    ],
+    "component": "000",
+    "questionPages": [
+      10
+    ]
+  },
+  {
+    "id": "ru-2018-hl-gr",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section GR Q1",
+    "topicId": "russian-3-7",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      11,
+      12
+    ],
+    "schemePages": [
+      9
+    ],
+    "component": "000",
+    "questionPages": [
+      11
+    ]
+  },
+  {
+    "id": "ru-2018-hl-gw",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section GW Q3",
+    "topicId": "russian-3-9",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      14
+    ],
+    "schemePages": [
+      12,
+      13,
+      14
+    ],
+    "component": "000",
+    "questionPages": [
+      14
+    ],
+    "guidancePages": [
+      3
+    ]
+  },
+  {
+    "id": "ru-2018-hl-se",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section SE Q2",
+    "topicId": "russian-3-8",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      13
+    ],
+    "schemePages": [
+      10,
+      11
+    ],
+    "component": "000",
+    "questionPages": [
+      13
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-1-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q1(i)",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-1-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q1(ii)",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-2",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q2",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-3",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q3",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-4",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q4",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l1-5",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L1 Q5",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l2-1",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L2 Q1",
+    "topicId": "russian-0-4",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l2-2-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L2 Q2(i)",
+    "topicId": "russian-0-3",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l2-2-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L2 Q2(ii)",
+    "topicId": "russian-0-4",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l2-3",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L2 Q3",
+    "topicId": "russian-0-3",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l2-4",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L2 Q4",
+    "topicId": "russian-0-1",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      16
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l3-1-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L3 Q1(i)",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l3-1-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L3 Q1(ii)",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l3-2",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L3 Q2",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l3-3-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L3 Q3(i)",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l3-3-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L3 Q3(ii)",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l4-1-i",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L4 Q1(i)",
+    "topicId": "russian-0-4",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      5
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l4-1-ii",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L4 Q1(ii)",
+    "topicId": "russian-0-4",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      5
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l4-2",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L4 Q2",
+    "topicId": "russian-0-4",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      5
+    ],
+    "guidancePages": [
+      15
+    ]
+  },
+  {
+    "id": "ru-2018-hl-l4-3",
+    "year": 2018,
+    "level": "higher",
+    "questionRef": "2018 HL Section L4 Q3",
+    "topicId": "russian-2-3",
+    "paperFileid": "LC099ALPA00EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      5
+    ],
+    "guidancePages": [
+      15
+    ]
   }
 ]
