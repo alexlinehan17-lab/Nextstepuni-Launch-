@@ -160,6 +160,12 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
+  // "Dhá aidiacht as an téacs a lua = 2 mharc {1 + 1 = 2 mharc} Plé ar thábhacht na n-aidiachtaí = 5 mharc {3 + 2 mharc}"
+  // (2023 deferred Higher 3A(a)(iii)): a price followed by its own split in braces is the price in those printed parts,
+  // read as "= 1 mharc + 1 mharc", so the row steps through them as "Dhá phointe eolais = 4 mharc + 4 mharc" does.
+  text = text.replace(/=\s*(\d+)\s*(m?h?arc)\s*\{\s*(\d+)\s*(?:m?h?arc\s*)?\+\s*(\d+)\s*(?:m?h?arc\s*)?(?:=\s*\d+\s*m?h?arc\s*)?\}/g,
+    (whole: string, total: string, unit: string, first: string, second: string) =>
+      Number(first) + Number(second) === Number(total) ? `= ${first} mharc + ${second} mharc` : whole);
   // "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)" alone (2012 and 2013 Ordinary
   // 2B and 3B): the title line printed with its price and nothing under it is the ask that price is for, never a note: its own
   // words are the row, claimed whole (the scheme prints no split).

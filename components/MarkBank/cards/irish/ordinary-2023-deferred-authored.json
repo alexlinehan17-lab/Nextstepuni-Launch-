@@ -623,12 +623,11 @@
           "maxMarks": 3,
           "permittedMarks": [
             0,
-            2,
             3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "2. Cár chaith Darren tréimhse ag obair in RTÉ? 3 mharc Seomra Nuachta = 3 mharc Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 2 mharc Ábhar = 8 marc Cumas Gaeilge = 40 marc = 50 marc x 2 = 100 marc An Tasc (2 mharc) Tá 2 mharc le bronnadh má chomhlíontar an tasc, má éiríonn leis an iarrthóir Giota Leanúnach/ Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh. An tÁbhar (8 marc) Tá 8 marc ag dul don ábhar. Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainteach leis an teideal. An Cumas Gaeilge (40 marc) Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a léiriú."
+            "2. Cár chaith Darren tréimhse ag obair in RTÉ? 3 mharc Seomra Nuachta = 3 mharc"
           ]
         }
       ],
@@ -650,8 +649,7 @@
       ],
       "schemeFileid": "LC001GLP000IV-deferred",
       "schemePages": [
-        9,
-        10
+        9
       ],
       "sourceMaterial": {
         "kind": "source-text",

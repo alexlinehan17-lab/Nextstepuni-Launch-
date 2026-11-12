@@ -344,7 +344,9 @@ def listening(sitting, base):
     cursor = answers.start()
     # The answers end at the language note, the section's mark panel or the composition, whichever is first.
     stop_m = min((m for m in (s.find(r'Bainfear ó 0 go \d ar chaighdeán na Gaeilge\.', cursor),
-                              s.find(r'Eolas \(60\) =', cursor), s.find(r'Cuid II\b|An Mharcáil:', cursor)) if m),
+                              s.find(r'Eolas \(60\) =', cursor), s.find(r'Cuid II\b|An Mharcáil:', cursor),
+                              # 2023 Ordinary goes straight from the last answer to the composition's instruction.
+                              s.find(r'Freagair do rogha (?:dhá cheann|CEANN AMHÁIN) de A, B', cursor)) if m),
                  key=lambda m: m.start())
     plan = []
     for suffix, atlas, part, title, heading, topic in SEGMENTS[level]:
