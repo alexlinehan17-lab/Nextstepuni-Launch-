@@ -445,6 +445,8 @@ const HIGHER_WRITING_PAGES = {
   2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
   2026: { b5: 14, c2: 21 },
+  2010: { b5: 9, c2: 13 },
+  2011: { b5: 9, c2: 13 },
   2012: { b5: 9, c2: 13 },
   2013: { b5: 9, c2: 13 },
   2014: { b5: 9, c2: 13 },
@@ -490,6 +492,8 @@ for (const extra of [
   // 2014's Irish map anchors literature Q5 twice (n5, n6), so its journalistic Q3 is n9.
   { year: 2014, langs: ['iv'], after: '9', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
   { year: 2013, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2011's Irish map anchors neither text question by question.
+  { year: 2011, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
   // 2012's Irish booklet numbers this question "3. Explica …" (p5); it is the English "4.".
   { year: 2012, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
   // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)

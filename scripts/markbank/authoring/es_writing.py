@@ -26,12 +26,13 @@ prints under its own NextStepUni label.
 import os
 import re
 import sys
+from itertools import groupby
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
-from es_scheme import schemes_dir                               # noqa: E402
+from es_scheme import schemes_dir, X_BULLETS, GLYPHS as SCHEME_GLYPHS  # noqa: E402
 
 # ---------------------------------------------------------------- the paper -
 # 2019 Ordinary sets the footer of its Section B page with every word twice:
@@ -127,6 +128,13 @@ def _task_b5(rows, qheads, lo, hi):
     return {'question': '\n'.join(lines), 'stem': stem, 'pages': pages}
 
 
+# A paper that letters an alternative other than its own head names it: 2010
+# Higher Section C Q2 is headed "2. Answer either (a) DIARY ENTRY or (b) NOTE."
+# and prints the note as "(c) You are in Salamanca …". The census reads it as
+# (b), as the head does.
+PRINTED_LETTERS = {(2010, 'hl', 'C', 2): {'c': 'b'}}
+
+
 def task(P, section, q, letter):
     """{question, stem, pages} for one writing ask, from the paper's rows.
 
@@ -164,7 +172,9 @@ def task(P, section, q, letter):
         if m and not _summary(m.group(4)):
             qq = int(m.group(1) or m.group(2) or 0) or qnum
             qnum = qq
-            tasks.append((qq, m.group(3).lower(), i))
+            tok = m.group(3).lower()
+            tok = PRINTED_LETTERS.get((P.year, P.level, section, qq), {}).get(tok, tok)
+            tasks.append((qq, tok, i))
             continue
         h = QHEAD.match(t)
         if h and not m:
@@ -254,6 +264,14 @@ def scheme_lines(year, level):
     with open(path, encoding='utf-8') as fh:
         for raw in fh:
             line = raw.rstrip('\n')
+            # The scheme reader's own repairs of the text layer (es_scheme
+            # GLYPHS), and a symbol-font bullet read as "x" dropped, as the
+            # ladders of the other sittings print no bullet (2010 Ordinary
+            # "x Full message unequivocally conveyed: 8 marks").
+            for old, new in SCHEME_GLYPHS.get((year, level), ()):
+                line = line.replace(old, new)
+            if (year, level) in X_BULLETS:
+                line = re.sub(r'^x (?=\S)', '', line)
             m = re.match(r'^## Page (\d+)$', line)
             if m:
                 page = int(m.group(1))
@@ -519,8 +537,16 @@ def grid_ol_b(year, level, q, letter):
     ladder = _ladder(part[t + 1:])
     n, per, total = _times(part[t])
     pages = sorted({p for p, s in block if s in texts[o0:o1]})
+    # The section's own note, quoted a page at a time: 2010 prints "Candidates
+    # must attempt 1. LETTER/E-MAIL and either" at the foot of p8 and "2. (a)
+    # MESSAGE or 2 (b) DIARY ENTRY." at the head of p9, and its text layer sets
+    # the page number between them with control characters ("7\x03"), so the
+    # sentence joined across the page is not one the scheme's text holds.
+    k1 = next(k for k, s in enumerate(texts) if head.match(s) or re.match(r'^Q\.?\s*1\.', s))
+    section = [t for _p, run in groupby(block[1:k1], key=lambda ps: ps[0])
+               for t in _sentences([s for _q, s in run])]
     return {'n': n, 'per': per, 'total': total, 'head': texts[o0], 'lead': lead,
-            'ladder': ladder, 'section': _sentences(texts[1:next(k for k, s in enumerate(texts) if head.match(s) or re.match(r'^Q\.?\s*1\.', s))]),
+            'ladder': ladder, 'section': section,
             'pages': pages}
 
 
