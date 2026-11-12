@@ -76,6 +76,9 @@ const printedLabels = (text: string, matches: RegExpMatchArray[]): RegExpMatchAr
   let letterSinceRoman = false;
   for (const [index, match] of matches.entries()) {
     const label = match[1];
+    // "(a) thuas" / "(a) thíos" is Irish for "(a) above / below": a reference back to a part, never a part of its
+    // own (2010-2022 Ordinary Paper 2 "… agus nár úsáid tú i gcuid (a) thuas, roghnaigh …").
+    if (!isRomanPart(label) && /^(?:thuas|thíos)(?![\p{L}])/iu.test(text.slice((match.index ?? 0) + match[0].length))) continue;
     const before = text.slice(0, labelStart(match));
     const previous = kept[kept.length - 1];
     const atBoundary = /\n[^\S\n]*$/.test(before)

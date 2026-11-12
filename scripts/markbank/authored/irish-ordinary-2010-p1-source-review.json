@@ -1,0 +1,172 @@
+{
+  "year": 2010,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP100IV.pdf",
+  "schemeFileid": "LC001GLP000EV.pdf",
+  "paperSha256": "0893ef63546910af7e38afae234819002284e2a7692b6272e71be9122baa6ceb",
+  "schemeSha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    11
+  ],
+  "schemeScope": "Combined Ordinary scheme (12 pages; the file is named LC001GLP000EV, its text is the Irish scheme). PDF 1 cover; 2 blank; 3 general marking instruction (red ink, major errors underlined) and Páipéar I Ceist 1 composition marking (tariffs Tasc 3, Ábhar 9, Cumas Gaeilge 48 for each of two pieces, “= 60 marc × 2 = 120 marc”; the bracketed Cumas Gaeilge definition; the bracketed content note); 4 the examiner’s Nóta and a bracketed Nóta on “Gaeilge Lochtach”, then Ceist 2 reading (each question restated with one price, no answers; a 0–5 language deduction for each passage; the redundancy penalty and the closing Nóta after B); 5–9 Páipéar II; 10 the listening test; 11 Socruithe Réasúnta; 12 empty.",
+  "reviewMethod": "Every paper page (1 instructions, 2 composition, 3–4 reading, 5–8 “Leathanach Bán”) and every applicable scheme page read in the text layer and checked against the printed page. The builder reads each paper page glyph by glyph by origin (2011’s reader), keeping the two passage columns apart, and asserts every prompt, title and composition line against that reading. The scheme sets its multiplication sign (PDF 3, 5–9) and its PDF 11 bullets in SymbolMT (U+F0B4, U+F0B7), read as × and •; the paper’s one SymbolMT arrow (page 1, beside “THALL”) is on no card.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta seo a leanas",
+      "decision": "Composition B: write one story from one of the printed openings; each opening is its own title card."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+      "decision": "Ceist 1 choose two of A–D: choice is not a route; each printed title is its own 60-mark card carrying this instruction; no combination cards."
+    },
+    {
+      "page": 2,
+      "raw": "Níl an príomhoide róchinnte faoin smaoineamh. Scríobh an comhrá (leathleathanach nó",
+      "decision": "Content and length guidance of composition D(i); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoin",
+      "decision": "Content and length guidance of composition C(i) (the dó/di gender forms); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig iarscoláire saibhir ó do scoil",
+      "decision": "Content and length guidance of composition C(ii); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:",
+      "decision": "Composition A: one of the three printed titles; each title is its own card."
+    },
+    {
+      "page": 2,
+      "raw": "bpost agus ag moladh dó/di iarratas a chur isteach ar an bpost sin.",
+      "decision": "Content of composition C(i) (the dó/di gender form); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "chara na cláir spóirt. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh idir an",
+      "decision": "Content and length guidance of composition D(ii); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "nó",
+      "decision": "The “nó” between the printed alternatives of B, C and D; each alternative is its own title card."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair A agus B anseo.",
+      "decision": "Ceist 2: both passages A and B are compulsory; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Is maith le daoine uisce. Tabhair sampla amháin. (Alt 3)",
+      "decision": "Reading A 3(b): one required example inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá athrú a chaithfimid a dhéanamh sna blianta atá ag teacht. (Alt 5)",
+      "decision": "Reading A 5: two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá dhrochrud a bhain leis an aimsir in Éirinn in 2009. (Alt 4)",
+      "decision": "Reading A 4: two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh grúpa amháin daoine a chuireann spéis san aimsir. (Alt 1)",
+      "decision": "Reading A 1(a): one required answer; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh rud amháin a thaispeánann go bhfuil an aimsir ag athrú. (Alt 2)",
+      "decision": "Reading A 2(a): one required answer; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh rud maith amháin a dhéanann an bháisteach. (Alt 3)",
+      "decision": "Reading A 3(a): one required answer; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read passage A and answer every question with it; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Ní aireoidh tú uait an t-uisce nó go dtriomóidh an",
+      "decision": "Passage A text (Alt 5, the proverb); not an instruction."
+    },
+    {
+      "page": 3,
+      "raw": "dhaoine bogadh as a dtithe agus cónaí le cairde nó",
+      "decision": "Passage A text (Alt 4); not an instruction."
+    },
+    {
+      "page": 3,
+      "raw": "nGaillimh, bhí an t-uisce salach dhá shamhradh ó",
+      "decision": "Passage A text (Alt 4); not an instruction."
+    },
+    {
+      "page": 3,
+      "raw": "uisce. An iomarca uisce in áit amháin agus",
+      "decision": "Passage A text (Alt 4); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh na tíortha lasmuigh d’Éirinn ina raibh éisteoirí ag Raidió Rí-Rá. (Alt 4)",
+      "decision": "Reading B 4: every country named, inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read passage B and answer every question with it; not a selection."
+    },
+    {
+      "page": 4,
+      "raw": "Today FM nó Spin 103.8 nó RTÉ 2FM ach amháin",
+      "decision": "Passage B text (Alt 2); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "ngréasán domhanda amháin a bhí sé ar fáil.",
+      "decision": "Passage B text (Alt 1); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "nó RTÉ 2FM? (Alt 2)",
+      "decision": "Reading B 2 (the station names it compares with, “… Spin 103.8 nó RTÉ 2FM?”): one question; not a menu."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Páipéar I before 2012 is the composition and the reading (220); the listening test is a paper of its own (irish_ordinary_2010_aural.py).",
+    "Composition: each of the nine printed titles is one 60-mark card (Tasc 3, Ábhar 9, Cumas Gaeilge 48, as the scheme prices each of the two pieces); choose-two is a choice, not a route; no combination cards. The scheme prints no 48-mark table, so Cumas Gaeilge is judged on its printed aspects.",
+    "Reading: the scheme prints no answers, only each question’s asks restated and one 10-mark price; each question is one card with one 10-mark criterion claimed whole (0 or 10) and marked tariffOnly; no part is a practice card of its own, because the scheme prices only the whole question."
+  ],
+  "sourceFindings": [
+    "Páipéar I = 220: composition 120 (any two of A–D at 60: Tasc 3, Ábhar 9, Cumas Gaeilge 48) and reading 100 (A the weather and B Raidió Rí-Rá, five questions each at 10).",
+    "Reading (PDF 4): each question restated with one price and no answer. One 0–5 language deduction under each passage; after B the redundancy penalty (“[Gearrfar pionós i ngeall ar iomarcaíocht]”) and the Nóta on showing the marks; cards state them without applying them.",
+    "Composition (PDF 3–4): the examiner’s Nóta misprints “Tasc” as “Tásc”; kept as printed. No 48-mark table and no short-attempt columns."
+  ],
+  "remainingWork": []
+}

@@ -40,8 +40,9 @@
   "ordinary": 1947
  },
  "irish": {
-  "higher": 215,
-  "ordinary": 185
+  "higher": 1386,
+  "ordinary": 1181,
+  "foundation": 1006
  },
  "art": {
   "higher": 902,
