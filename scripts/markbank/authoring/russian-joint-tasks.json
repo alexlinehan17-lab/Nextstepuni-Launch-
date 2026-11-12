@@ -780,6 +780,588 @@
       "paperSha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
       "schemeSha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
       "independentSittingAsks": 44
+    },
+    {
+      "id": "ru-2020-hl-l1",
+      "year": 2020,
+      "level": "higher",
+      "section": "L1",
+      "questionRef": "2020 HL Section L1 Q1–5 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        17
+      ],
+      "questions": [
+        {
+          "n": "l1-1",
+          "questionRef": "2020 HL Section L1 Q1",
+          "questionText": "What do these people order to eat and drink? Give two details.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            1,
+            null,
+            null
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-2",
+          "questionRef": "2020 HL Section L1 Q2",
+          "questionText": "What luggage does this person have?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            2,
+            null,
+            null
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-3",
+          "questionRef": "2020 HL Section L1 Q3",
+          "questionText": "What is the weather like at the moment? Give two details.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            3,
+            null,
+            null
+          ],
+          "topicId": "russian-0-2",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-4",
+          "questionRef": "2020 HL Section L1 Q4",
+          "questionText": "Give two details about what this person wants to buy.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            4,
+            null,
+            null
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-i",
+          "questionRef": "2020 HL Section L1 Q5(i)",
+          "questionText": "Give two details about the classes Tanya will attend in St Petersburg.",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            5,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-3",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l1-5-ii",
+          "questionRef": "2020 HL Section L1 Q5(ii)",
+          "questionText": "What does Tanya plan to do in Russia after the two weeks of classes?",
+          "questionPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "leafKey": [
+            "L1",
+            5,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "paperSha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8",
+      "schemeSha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+      "independentSittingAsks": 42,
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-0-2",
+        "russian-0-3",
+        "russian-0-8",
+        "russian-0-9",
+        "russian-1-0"
+      ]
+    },
+    {
+      "id": "ru-2020-hl-l2",
+      "year": 2020,
+      "level": "higher",
+      "section": "L2",
+      "questionRef": "2020 HL Section L2 Q1–5 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "questions": [
+        {
+          "n": "l2-1-i",
+          "questionRef": "2020 HL Section L2 Q1(i)",
+          "questionText": "Give two details about Elena’s training as a gymnast.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            1,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-i",
+          "questionRef": "2020 HL Section L2 Q2(i)",
+          "questionText": "Why did Elena say she chose rhythmic gymnastics?",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-2-ii",
+          "questionRef": "2020 HL Section L2 Q2(ii)",
+          "questionText": "How does her participation in sport affect Elena’s life. Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-11",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-3",
+          "questionRef": "2020 HL Section L2 Q3",
+          "questionText": "What are Elena’s hopes for the future? Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            3,
+            null,
+            null
+          ],
+          "topicId": "russian-0-6",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-4",
+          "questionRef": "2020 HL Section L2 Q4",
+          "questionText": "How does Elena spend her free time? Give two details.",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            4,
+            null,
+            null
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l2-5",
+          "questionRef": "2020 HL Section L2 Q5",
+          "questionText": "What other sports is Elena interested in? Give one detail",
+          "questionPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ],
+          "leafKey": [
+            "L2",
+            5,
+            null,
+            null
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "paperSha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8",
+      "schemeSha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+      "independentSittingAsks": 42,
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-0-11",
+        "russian-0-5",
+        "russian-0-6",
+        "russian-1-0"
+      ]
+    },
+    {
+      "id": "ru-2020-hl-l3",
+      "year": 2020,
+      "level": "higher",
+      "section": "L3",
+      "questionRef": "2020 HL Section L3 Q1–3 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17,
+        19
+      ],
+      "questions": [
+        {
+          "n": "l3-1",
+          "questionRef": "2020 HL Section L3 Q1",
+          "questionText": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "leafKey": [
+            "L3",
+            1,
+            null,
+            null
+          ],
+          "topicId": "russian-0-8",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-i",
+          "questionRef": "2020 HL Section L3 Q2(i)",
+          "questionText": "How do we know that bikesbooking.com is a successful company? Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "leafKey": [
+            "L3",
+            2,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-2-ii",
+          "questionRef": "2020 HL Section L3 Q2(ii)",
+          "questionText": "What information needs to be provided to bikesbooking.com when making a booking. Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "leafKey": [
+            "L3",
+            2,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-3-i",
+          "questionRef": "2020 HL Section L3 Q3(i)",
+          "questionText": "Give two details about the pricing structure offered by this company.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "leafKey": [
+            "L3",
+            3,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l3-3-ii",
+          "questionRef": "2020 HL Section L3 Q3(ii)",
+          "questionText": "What additional services are offered by bikesbooking.com? Give two details.",
+          "questionPages": [
+            4
+          ],
+          "schemePages": [
+            19
+          ],
+          "leafKey": [
+            "L3",
+            3,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-9",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "paperSha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8",
+      "schemeSha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+      "independentSittingAsks": 42,
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-0-8",
+        "russian-0-9",
+        "russian-1-0"
+      ]
+    },
+    {
+      "id": "ru-2020-hl-l4",
+      "year": 2020,
+      "level": "higher",
+      "section": "L4",
+      "questionRef": "2020 HL Section L4 Q1–3 — complete section",
+      "component": "A00",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17,
+        20
+      ],
+      "questions": [
+        {
+          "n": "l4-1-i",
+          "questionRef": "2020 HL Section L4 Q1(i)",
+          "questionText": "Who is Katya? Give three details.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "leafKey": [
+            "L4",
+            1,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-7",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-1-ii",
+          "questionRef": "2020 HL Section L4 Q1(ii)",
+          "questionText": "What does Katya do every summer? Give two details.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "leafKey": [
+            "L4",
+            1,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-2",
+          "questionRef": "2020 HL Section L4 Q2",
+          "questionText": "Give two details about what Katya had accomplished by 2017.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "leafKey": [
+            "L4",
+            2,
+            null,
+            null
+          ],
+          "topicId": "russian-0-4",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-i",
+          "questionRef": "2020 HL Section L4 Q3(i)",
+          "questionText": "Give two details about the content of Katya’s videos.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "leafKey": [
+            "L4",
+            3,
+            null,
+            "i"
+          ],
+          "topicId": "russian-0-5",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        },
+        {
+          "n": "l4-3-ii",
+          "questionRef": "2020 HL Section L4 Q3(ii)",
+          "questionText": "Give one detail about Katya’s pets.",
+          "questionPages": [
+            5
+          ],
+          "schemePages": [
+            20
+          ],
+          "leafKey": [
+            "L4",
+            3,
+            null,
+            "ii"
+          ],
+          "topicId": "russian-0-1",
+          "additionalTopicIds": [
+            "russian-1-0"
+          ]
+        }
+      ],
+      "paperSha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8",
+      "schemeSha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+      "independentSittingAsks": 42,
+      "publishedTotal": 20,
+      "pricedRows": false,
+      "completeCardTopics": [
+        "russian-0-1",
+        "russian-0-4",
+        "russian-0-5",
+        "russian-0-7",
+        "russian-1-0"
+      ]
     }
   ]
 }

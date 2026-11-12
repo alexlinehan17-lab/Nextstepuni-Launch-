@@ -171,6 +171,25 @@ def reviewed_keys(year, level):
         keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None),(4,None)]]
         assert len(keys) == len(set(keys)) == 40
         return set(keys)
+    if (year, level) == (2020, 'hl'):
+        # Independent51-page visual census:20written+22listening asks.
+        # Four complete listening cards preserve all22 original question leaves.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {'papers/2020-hl-000-paper.pdf': '29eb6fbdfe4d43b0f85912a87ba9589710417a5e39794c630f0ff70949c37251',
+         'papers/2020-hl-A00-paper.pdf': 'd9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8',
+         'schemes/2020-hl.pdf': '7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f'}.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii')),(2,('i','ii','iii')),(3,('i','ii')),(4,('i','ii'))] for r in rs]
+        keys += [('LA1',q,None,None) for q in (1,2)]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]
+        keys += [('LA2',None,None,None)]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==20
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,None),(4,None),(5,'i'),(5,'ii')]]
+        keys += [('L2',q,None,r) for q,r in [(1,'i'),(2,'i'),(2,'ii'),(3,None),(4,None),(5,None)]]
+        keys += [('L3',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii')]]
+        assert len(keys)==len(set(keys))==42
+        return set(keys)
     if (year, level) == (2019, 'hl'):
         # Independent48-page visual census:20written and24listening asks.
         # Four listening section cards retain all24original leaves; no inferred tariffs.

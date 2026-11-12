@@ -28769,5 +28769,937 @@
         ]
       }
     ]
+  },
+  {
+    "id": "ru-2020-hl-c1-1-i",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q1(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-1-ii",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q1(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-2-i",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q2(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-2-ii",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q2(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-2-iii",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q2(iii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-3-i",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q3(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-3-ii",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q3(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-4-i",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q4(i)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c1-4-ii",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C1 Q4(ii)",
+    "topicId": "russian-3-0",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      4,
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      4
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c2-1",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C2 Q1",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8
+    ],
+    "schemePages": [
+      7,
+      8
+    ],
+    "component": "000",
+    "questionPages": [
+      6
+    ],
+    "guidancePages": [
+      7
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c2-2",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C2 Q2",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8
+    ],
+    "schemePages": [
+      7,
+      8
+    ],
+    "component": "000",
+    "questionPages": [
+      7
+    ],
+    "guidancePages": [
+      7
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c2-3",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C2 Q3",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8
+    ],
+    "schemePages": [
+      7,
+      8
+    ],
+    "component": "000",
+    "questionPages": [
+      8
+    ],
+    "guidancePages": [
+      7
+    ]
+  },
+  {
+    "id": "ru-2020-hl-c2-4",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section C2 Q4",
+    "topicId": "russian-3-1",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8
+    ],
+    "schemePages": [
+      7,
+      8
+    ],
+    "component": "000",
+    "questionPages": [
+      8
+    ],
+    "guidancePages": [
+      7
+    ]
+  },
+  {
+    "id": "ru-2020-hl-la1-1",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section LA1 Q1",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "schemePages": [
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ]
+  },
+  {
+    "id": "ru-2020-hl-la1-2",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section LA1 Q2",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "schemePages": [
+      6
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ]
+  },
+  {
+    "id": "ru-2020-hl-la2",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section LA2 Q",
+    "topicId": "russian-3-2",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemePages": [
+      9
+    ],
+    "component": "000",
+    "questionPages": [
+      9
+    ]
+  },
+  {
+    "id": "ru-2020-hl-sd",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section SD Q3",
+    "topicId": "russian-3-3",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      10
+    ],
+    "schemePages": [
+      10
+    ],
+    "component": "000",
+    "questionPages": [
+      10
+    ]
+  },
+  {
+    "id": "ru-2020-hl-gr",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section GR Q1",
+    "topicId": "russian-3-7",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      11
+    ],
+    "schemePages": [
+      11
+    ],
+    "component": "000",
+    "questionPages": [
+      11
+    ]
+  },
+  {
+    "id": "ru-2020-hl-gw",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section GW Q3",
+    "topicId": "russian-3-9",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      13
+    ],
+    "schemePages": [
+      15,
+      16
+    ],
+    "component": "000",
+    "questionPages": [
+      13
+    ],
+    "guidancePages": [
+      3
+    ]
+  },
+  {
+    "id": "ru-2020-hl-se",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section SE Q2",
+    "topicId": "russian-3-8",
+    "paperFileid": "LC099ALP000BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      12
+    ],
+    "schemePages": [
+      12,
+      13,
+      14
+    ],
+    "component": "000",
+    "questionPages": [
+      12
+    ]
+  },
+  {
+    "id": "ru-2020-hl-l1",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section L1 Q1–5 — complete section",
+    "topicId": "russian-0-9",
+    "paperFileid": "LC099ALPA00BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      17
+    ],
+    "component": "A00",
+    "questionPages": [
+      2
+    ],
+    "guidancePages": [
+      17
+    ],
+    "coveredQuestionRefs": [
+      "2020 HL Section L1 Q1",
+      "2020 HL Section L1 Q2",
+      "2020 HL Section L1 Q3",
+      "2020 HL Section L1 Q4",
+      "2020 HL Section L1 Q5(i)",
+      "2020 HL Section L1 Q5(ii)"
+    ],
+    "atlasQuestions": [
+      {
+        "n": "l1-1",
+        "questionRef": "2020 HL Section L1 Q1",
+        "questionText": "What do these people order to eat and drink? Give two details.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l1-2",
+        "questionRef": "2020 HL Section L1 Q2",
+        "questionText": "What luggage does this person have?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-8",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l1-3",
+        "questionRef": "2020 HL Section L1 Q3",
+        "questionText": "What is the weather like at the moment? Give two details.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-2",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l1-4",
+        "questionRef": "2020 HL Section L1 Q4",
+        "questionText": "Give two details about what this person wants to buy.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l1-5-i",
+        "questionRef": "2020 HL Section L1 Q5(i)",
+        "questionText": "Give two details about the classes Tanya will attend in St Petersburg.",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-3",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l1-5-ii",
+        "questionRef": "2020 HL Section L1 Q5(ii)",
+        "questionText": "What does Tanya plan to do in Russia after the two weeks of classes?",
+        "questionPages": [
+          2
+        ],
+        "schemePages": [
+          17
+        ],
+        "topicId": "russian-0-8",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ru-2020-hl-l2",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section L2 Q1–5 — complete section",
+    "topicId": "russian-0-5",
+    "paperFileid": "LC099ALPA00BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      3
+    ],
+    "schemePages": [
+      17,
+      18
+    ],
+    "component": "A00",
+    "questionPages": [
+      3
+    ],
+    "guidancePages": [
+      17
+    ],
+    "coveredQuestionRefs": [
+      "2020 HL Section L2 Q1(i)",
+      "2020 HL Section L2 Q2(i)",
+      "2020 HL Section L2 Q2(ii)",
+      "2020 HL Section L2 Q3",
+      "2020 HL Section L2 Q4",
+      "2020 HL Section L2 Q5"
+    ],
+    "atlasQuestions": [
+      {
+        "n": "l2-1-i",
+        "questionRef": "2020 HL Section L2 Q1(i)",
+        "questionText": "Give two details about Elena’s training as a gymnast.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l2-2-i",
+        "questionRef": "2020 HL Section L2 Q2(i)",
+        "questionText": "Why did Elena say she chose rhythmic gymnastics?",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l2-2-ii",
+        "questionRef": "2020 HL Section L2 Q2(ii)",
+        "questionText": "How does her participation in sport affect Elena’s life. Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-11",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l2-3",
+        "questionRef": "2020 HL Section L2 Q3",
+        "questionText": "What are Elena’s hopes for the future? Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-6",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l2-4",
+        "questionRef": "2020 HL Section L2 Q4",
+        "questionText": "How does Elena spend her free time? Give two details.",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l2-5",
+        "questionRef": "2020 HL Section L2 Q5",
+        "questionText": "What other sports is Elena interested in? Give one detail",
+        "questionPages": [
+          3
+        ],
+        "schemePages": [
+          18
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ru-2020-hl-l3",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section L3 Q1–3 — complete section",
+    "topicId": "russian-0-8",
+    "paperFileid": "LC099ALPA00BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      4
+    ],
+    "schemePages": [
+      17,
+      19
+    ],
+    "component": "A00",
+    "questionPages": [
+      4
+    ],
+    "guidancePages": [
+      17
+    ],
+    "coveredQuestionRefs": [
+      "2020 HL Section L3 Q1",
+      "2020 HL Section L3 Q2(i)",
+      "2020 HL Section L3 Q2(ii)",
+      "2020 HL Section L3 Q3(i)",
+      "2020 HL Section L3 Q3(ii)"
+    ],
+    "atlasQuestions": [
+      {
+        "n": "l3-1",
+        "questionRef": "2020 HL Section L3 Q1",
+        "questionText": "According to the advertisement, what does the bikesbooking.com scheme give tourists the freedom to do when visiting different cities? Give two details",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "topicId": "russian-0-8",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l3-2-i",
+        "questionRef": "2020 HL Section L3 Q2(i)",
+        "questionText": "How do we know that bikesbooking.com is a successful company? Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l3-2-ii",
+        "questionRef": "2020 HL Section L3 Q2(ii)",
+        "questionText": "What information needs to be provided to bikesbooking.com when making a booking. Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l3-3-i",
+        "questionRef": "2020 HL Section L3 Q3(i)",
+        "questionText": "Give two details about the pricing structure offered by this company.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l3-3-ii",
+        "questionRef": "2020 HL Section L3 Q3(ii)",
+        "questionText": "What additional services are offered by bikesbooking.com? Give two details.",
+        "questionPages": [
+          4
+        ],
+        "schemePages": [
+          19
+        ],
+        "topicId": "russian-0-9",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ru-2020-hl-l4",
+    "year": 2020,
+    "level": "higher",
+    "questionRef": "2020 HL Section L4 Q1–3 — complete section",
+    "topicId": "russian-0-7",
+    "paperFileid": "LC099ALPA00BV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      17,
+      20
+    ],
+    "component": "A00",
+    "questionPages": [
+      5
+    ],
+    "guidancePages": [
+      17
+    ],
+    "coveredQuestionRefs": [
+      "2020 HL Section L4 Q1(i)",
+      "2020 HL Section L4 Q1(ii)",
+      "2020 HL Section L4 Q2",
+      "2020 HL Section L4 Q3(i)",
+      "2020 HL Section L4 Q3(ii)"
+    ],
+    "atlasQuestions": [
+      {
+        "n": "l4-1-i",
+        "questionRef": "2020 HL Section L4 Q1(i)",
+        "questionText": "Who is Katya? Give three details.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "topicId": "russian-0-7",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l4-1-ii",
+        "questionRef": "2020 HL Section L4 Q1(ii)",
+        "questionText": "What does Katya do every summer? Give two details.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l4-2",
+        "questionRef": "2020 HL Section L4 Q2",
+        "questionText": "Give two details about what Katya had accomplished by 2017.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "topicId": "russian-0-4",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l4-3-i",
+        "questionRef": "2020 HL Section L4 Q3(i)",
+        "questionText": "Give two details about the content of Katya’s videos.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "topicId": "russian-0-5",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      },
+      {
+        "n": "l4-3-ii",
+        "questionRef": "2020 HL Section L4 Q3(ii)",
+        "questionText": "Give one detail about Katya’s pets.",
+        "questionPages": [
+          5
+        ],
+        "schemePages": [
+          20
+        ],
+        "topicId": "russian-0-1",
+        "additionalTopicIds": [
+          "russian-1-0"
+        ]
+      }
+    ]
   }
 ]
