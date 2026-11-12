@@ -1,0 +1,1231 @@
+{
+  "schemaVersion": 1,
+  "year": 2018,
+  "level": "common",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-authored; independent-sweep-complete; validation-pending",
+  "createdAt": "2026-11-12T12:07:47.761842+00:00",
+  "reviewedBy": "Codex",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "year": 2018,
+      "path": "paper-trail-corpus/exampapers/2018/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "3e7b2a2c14343b958d854641b637afca191a22ba6ae674e7d0fcfc81cd9c1276",
+      "pages": 36
+    },
+    {
+      "kind": "markingschemes",
+      "year": 2018,
+      "path": "paper-trail-corpus/markingschemes/2018/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "90aa2988c3fb84ca6fcea3ee15a371cb77b9b97da18ee1aad7dd3838c3ad7006",
+      "pages": 20
+    }
+  ],
+  "visualSweep": {
+    "paper": "All 36 original pages viewed: cover 1, instructions 2, audiovisual 3; A 4–8; complete Volunteering case 9; B 10–12; ruled 13; repeated overview 14–15; C1 16–18, C2 19–21, C3 22–24, C4 25–27, C5 28–30, C6 31–33; extra-work 34–35 and back cover 36. Overview repetitions are not extra tasks.",
+    "writtenScheme": "All 20 original pages viewed: cover 1, source-use note 2, written examination/160-mark total 3; A 4–5; B 6–8; C1 9–11, C2 12–13, C3 13–14, C4 15–16, C5 17–18, C6 18–19; back cover 20. Both cross-page case-study pools and all agency/definition models reviewed."
+  },
+  "evidence": [
+    {
+      "path": "tmp/lcvp-2018-visual-notes.md",
+      "sha256": "2e0490bab1e3cee24b3e9febe0c5bf62fd980c54c5cc25f730a7dccdb969e58f"
+    },
+    {
+      "path": "tmp/lcvp-2018-paper-ledger-draft.json",
+      "sha256": "17c2e33dced8f827fcbf82a49d4be6755e120a302f8143b4bbe8f9d1e20869dc"
+    },
+    {
+      "path": "tmp/lcvp-2018-scheme-tariffs-draft.json",
+      "sha256": "2d9e67d014732a5c617aa10d9a5449534bacd5ad8485e590dec12e8b39c8a58d"
+    }
+  ],
+  "manualOriginalLeaves": 43,
+  "manualSectionLeaves": {
+    "A": 8,
+    "B": 8,
+    "C": 27
+  },
+  "manualPricedTasks": 40,
+  "manualSectionTasks": {
+    "A": 8,
+    "B": 5,
+    "C": 27
+  },
+  "candidateWrittenMarks": 160,
+  "offeredPracticeMarks": 210,
+  "pricedTaskLedger": [
+    {
+      "key": "A1",
+      "schemePage": 4,
+      "marks": 1,
+      "allocation": "Bog Roots, 1 mark",
+      "poolCount": 1
+    },
+    {
+      "key": "A2",
+      "schemePage": 4,
+      "marks": 2,
+      "allocation": "Any 2 @ 1m",
+      "poolCount": 3
+    },
+    {
+      "key": "A3",
+      "schemePage": 4,
+      "marks": 3,
+      "allocation": "3 @ 1m",
+      "poolCount": 4
+    },
+    {
+      "key": "A4",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "2 @ 2m (0/2)",
+      "poolCount": 3
+    },
+    {
+      "key": "A5",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "4 @ 1 mark",
+      "poolCount": 5
+    },
+    {
+      "key": "A6",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "2 @ 2m (1+1)",
+      "poolCount": 4
+    },
+    {
+      "key": "A7",
+      "schemePage": 5,
+      "marks": 6,
+      "allocation": "3 @ 2m (1+1)",
+      "poolCount": 6
+    },
+    {
+      "key": "A8",
+      "schemePage": 5,
+      "marks": 6,
+      "allocation": "Question 1: 2 @ 1; Question 2: 2 @ 2 (1+1)",
+      "poolCount": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "B1",
+      "schemePage": 6,
+      "marks": 6,
+      "allocation": "3 @ 2m (0/2), choose three of four terms",
+      "poolCount": 4
+    },
+    {
+      "key": "B2i",
+      "schemePage": 6,
+      "marks": 8,
+      "allocation": "Influences 4 @ 1m each; gains (physical 7) 4 @ 1m each",
+      "poolCount": [
+        6,
+        6
+      ]
+    },
+    {
+      "key": "B2ii",
+      "schemePage": 7,
+      "marks": 4,
+      "allocation": "Recruitment steps 4 @ 1m each",
+      "poolCount": 9
+    },
+    {
+      "key": "B3i",
+      "schemePage": 8,
+      "marks": 6,
+      "allocation": "6 @ 1m; A minimum of 2 in each area (COMPARE/CONTRAST)",
+      "poolCount": [
+        4,
+        7
+      ]
+    },
+    {
+      "key": "B3ii",
+      "schemePage": 8,
+      "marks": 6,
+      "allocation": "3 @ 2m (0/2)",
+      "poolCount": 8
+    },
+    {
+      "key": "C1a",
+      "schemePage": 9,
+      "marks": 4,
+      "allocation": "2 @ 2m (0/2), complete original definition retained",
+      "poolCount": null
+    },
+    {
+      "key": "C1bi",
+      "schemePage": 9,
+      "marks": 2,
+      "allocation": "Household: 2 @ 1m; existing printed roman task retained with parent context",
+      "poolCount": 6
+    },
+    {
+      "key": "C1bii",
+      "schemePage": 9,
+      "marks": 2,
+      "allocation": "Local Community: 2 @ 1m; existing printed roman task retained with parent context",
+      "poolCount": 5
+    },
+    {
+      "key": "C1c",
+      "schemePage": 9,
+      "marks": 8,
+      "allocation": "Name of agency 2 @ 1m; type of support 2 @ 3m (1+1+1); pool continues physical 10",
+      "poolCount": 12
+    },
+    {
+      "key": "C1d",
+      "schemePage": 11,
+      "marks": 9,
+      "allocation": "Planning 3 @ 1m; good managerial skills 3 @ 1m; product development 3 @ 1m",
+      "poolCount": [
+        8,
+        8,
+        4
+      ]
+    },
+    {
+      "key": "C2a",
+      "schemePage": 12,
+      "marks": 3,
+      "allocation": "Name of career 1; appropriate skills/qualities 2 @ 1 each",
+      "poolCount": null
+    },
+    {
+      "key": "C2bi",
+      "schemePage": 12,
+      "marks": 2,
+      "allocation": "Methods 2 @ 1m",
+      "poolCount": 8
+    },
+    {
+      "key": "C2bii",
+      "schemePage": 12,
+      "marks": 3,
+      "allocation": "Any two advantages related to ONE named method; Any 2 relevant points given: 2m, 1m",
+      "poolCount": 5
+    },
+    {
+      "key": "C2c",
+      "schemePage": 12,
+      "marks": 9,
+      "allocation": "3 @ 3m (1+1+1)",
+      "poolCount": 7
+    },
+    {
+      "key": "C2d",
+      "schemePage": 13,
+      "marks": 8,
+      "allocation": "Influence/evaluation 2 @ 2m (1+1); Two Career Paths - 2 routes to same profession, 2 @ 2m (1+1)",
+      "poolCount": 5
+    },
+    {
+      "key": "C3a",
+      "schemePage": 13,
+      "marks": 2,
+      "allocation": "Any two workplaces named @ 1 mark each",
+      "poolCount": null
+    },
+    {
+      "key": "C3b",
+      "schemePage": 13,
+      "marks": 8,
+      "allocation": "4 @ 2m (1/1); 2 points under each heading; 1 specific point to tidy towns; no marks for headings; no repetition of points",
+      "poolCount": [
+        5,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "C3c",
+      "schemePage": 14,
+      "marks": 6,
+      "allocation": "6 @ 1m",
+      "poolCount": 10
+    },
+    {
+      "key": "C3d",
+      "schemePage": 14,
+      "marks": 9,
+      "allocation": "3 @ 3m (1+1+1)",
+      "poolCount": 5
+    },
+    {
+      "key": "C4ai",
+      "schemePage": 15,
+      "marks": 2,
+      "allocation": "Two trade unions 2 @ 1m",
+      "poolCount": 8
+    },
+    {
+      "key": "C4aii",
+      "schemePage": 15,
+      "marks": 3,
+      "allocation": "One complete shop-steward definition 3m; no internal split printed",
+      "poolCount": 1
+    },
+    {
+      "key": "C4b",
+      "schemePage": 15,
+      "marks": 8,
+      "allocation": "4 @ 2m (1+1)",
+      "poolCount": 8
+    },
+    {
+      "key": "C4c",
+      "schemePage": 15,
+      "marks": 6,
+      "allocation": "Benefits 3 @ 1m AND effects of poor relations 3 @ 1m",
+      "poolCount": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "C4d",
+      "schemePage": 16,
+      "marks": 6,
+      "allocation": "3 @ 2m (1+1)",
+      "poolCount": 8
+    },
+    {
+      "key": "C5a",
+      "schemePage": 17,
+      "marks": 4,
+      "allocation": "2 @ 2m (0/2)",
+      "poolCount": 9
+    },
+    {
+      "key": "C5b",
+      "schemePage": 17,
+      "marks": 6,
+      "allocation": "3 @ 2m (1+1)",
+      "poolCount": 8
+    },
+    {
+      "key": "C5c",
+      "schemePage": 17,
+      "marks": 6,
+      "allocation": "3 @ 2m (1+1)",
+      "poolCount": 9
+    },
+    {
+      "key": "C5d",
+      "schemePage": 18,
+      "marks": 9,
+      "allocation": "3 @ 3m (1+1+1)",
+      "poolCount": 7
+    },
+    {
+      "key": "C6a",
+      "schemePage": 18,
+      "marks": 3,
+      "allocation": "3 @ 1m",
+      "poolCount": 8
+    },
+    {
+      "key": "C6b",
+      "schemePage": 18,
+      "marks": 6,
+      "allocation": "A combination of 1m; Product, Price, Place and Promotion 4 @ 1m; to achieve goals, sell a product/service 1m",
+      "poolCount": [
+        1,
+        4,
+        1
+      ]
+    },
+    {
+      "key": "C6c",
+      "schemePage": 18,
+      "marks": 8,
+      "allocation": "Five numbered headings; 2 points under each heading; no marks for headings; 4 @ 2 (1+1). Unresolved five-versus-four allocation, whole-task confidence-only.",
+      "poolCount": 5
+    },
+    {
+      "key": "C6d",
+      "schemePage": 19,
+      "marks": 8,
+      "allocation": "4 @ 2 (1+1)m",
+      "poolCount": 7
+    }
+  ],
+  "numericHolds": [
+    {
+      "key": "C6c",
+      "marks": 8,
+      "reason": "Five printed headings, two points under each heading, but 4 @ 2 (1+1) and total8; no choose-four directive."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "key": "C2d",
+      "paperPage": 21,
+      "schemePage": 13,
+      "note": "Actual paper page omits the individual tariff; original scheme explicitly prints 8. No subtraction used as source."
+    },
+    {
+      "key": "C1d",
+      "paperPages": [
+        14,
+        18
+      ],
+      "note": "Overview adds good before product development; use actual question wording on physical18."
+    },
+    {
+      "key": "C6c",
+      "schemePage": 18,
+      "note": "Five headings and two points under each heading conflict with 4 @ 2 (1+1) and total8. No four selected and no research heading removed."
+    }
+  ],
+  "selectionAndContextReview": [
+    {
+      "key": "B1",
+      "classification": "One choose-three-of-four task",
+      "detail": "Retain Volunteer, Construction Industry, Placement Officer and Corporate Social Responsibility together, each 0/2; manual four options become one task."
+    },
+    {
+      "key": "C1b",
+      "classification": "Two existing separately priced printed roman tasks retained",
+      "detail": "Original paper physical16 explicitly prints roman(i) Household and(ii) Local Community. Scheme physical9 separately prices each context at2×1. Both existing IDs/concepts already exist on distinct canonical topics; retain the two separately practicable source-priced roman tasks, with full parent instruction on each. No new heading fan-out or deleted ID.",
+      "initialGrouping": "Household and Local Community each need two examples at 1 mark. Both printed roman leaves remain in the whole 4-mark task; no heading fan-out."
+    },
+    {
+      "key": "A8",
+      "classification": "One compound printed task",
+      "detail": "Question 1 has two 1-mark answers; Question 2 has two 2-mark answers (1+1). Keep both full questions and both model pools in one 6-mark task; independently confirmed by root."
+    },
+    {
+      "key": "B2i",
+      "classification": "Two required components",
+      "detail": "Influences 4×1 and gains 4×1, both six-model pools, one printed part; root confirmed."
+    },
+    {
+      "key": "B3i",
+      "classification": "Coupled selection with minima",
+      "detail": "Six points at 1, at least two compare and two contrast. Four compare plus seven contrast models. Source-faithful manual slots: two compare, two contrast, two further DISTINCT points from either; no repeated credit and no fixed3+3. Root confirmed original physical8."
+    },
+    {
+      "key": "C2bii",
+      "classification": "Unequal descending awards",
+      "detail": "Any two advantages related to ONE named method, explicit 2m,1m. Preserve five models and RP; do not divide evenly."
+    },
+    {
+      "key": "C3b",
+      "classification": "Four required SWOT headings",
+      "detail": "Two points per heading, each1; exact note 1 specific point to tidy towns, no marks for headings, no repetition. Preserve full S5/W3/O4/T5 pools without imposing an invented stronger quota."
+    },
+    {
+      "key": "C6c",
+      "classification": "Unresolved source allocation",
+      "detail": "Whole8 confidence-only; preserve all five printed headings and exact count/tariff conflict.",
+      "independentCoordinatorReview": "Root viewed original paper32 and scheme18; confirmed whole8 confidence-only, all five headings and both literal count/tariff instructions retained."
+    }
+  ],
+  "rawCensusClassification": {
+    "rawLeaves": 43,
+    "rawMarks": 210,
+    "continuityFlags": [],
+    "manualOriginalLeaves": 43,
+    "note": "All43 raw leaves match the manual paper ledger. B1 four printed options form one choose-three task, so43→40 final source-priced task units. Existing C1bi/C1bii remain separately priced2-mark roman tasks; source/preservation amendment explicitly recorded.",
+    "evidence": "tmp/lcvp-2018-census-preview.json",
+    "sha256": "787135ee52759fd8bc418f28afb695f4c382e4cf43dddbe955d4b4f1bf9c2dae"
+  },
+  "scoringScope": {
+    "pricedMarks": 202,
+    "heldWholeTaskMarks": 8,
+    "heldTaskKeys": [
+      "C6c"
+    ]
+  },
+  "validationProgress": {
+    "completed": [
+      "All 56 original pages viewed before parser/legacy inspection",
+      "Independent 43-leaf/39-task ledger with210offered/160candidate marks saved",
+      "Raw first census43 leaves/210 marks/zero continuity flags",
+      "Original32 IDs/concepts and17 Atlas memberships audited against saved/pre-lane state",
+      "Coordinator independently confirmed C1bi/C1bii preservation boundary, C6c whole8 confidence hold and all17 Atlas identity plan",
+      "Final cleaned source preview and original-PDF gate:40tasks/210marks;32original concepts retained",
+      "Source/deck/Atlas/tags/showcase/landing generation:398cards,zero drops",
+      "Cardlint:398cards,zero flags; target43/43leaves,zero open/excluded/orphans; prior identity proof",
+      "Nine portable2018/identity cases passed; full authored/emitted fields and original314concepts checked",
+      "All17 required curriculum cases passed;26 cases passed cumulatively with9 targeted/identity",
+      "Narrow lint of sitting regression, reviewed-ID fixture and preservation test passed separately while whole-bank checks awaited headroom",
+      "Final original-source build hash equals the published authored subset. Read-only proof preserves all 358 unrelated authored/emitted cards, 32 target IDs, original concept pairs, original Atlas identities and every other-subject full/decoded record."
+    ],
+    "remaining": [
+      "Required preservation/deck tests (remote validation being arranged by coordinator; local import pressure stops retained)",
+      "Measured baseline and three filtered coverage cases after required passes",
+      "Deterministic regeneration"
+    ],
+    "resourceRefusals": [
+      {
+        "stage": "targeted Vitest",
+        "memoryFreePercent": 49,
+        "kernelPressure": 1,
+        "childStarted": false
+      },
+      {
+        "stage": "targeted Vitest after fresh72percent prequeue",
+        "memoryFreePercent": 47,
+        "kernelPressure": 1,
+        "childStarted": false
+      }
+    ],
+    "runtimePressureStops": [
+      {
+        "file": "curriculumRegistry.test.ts",
+        "startFreePercent": 59,
+        "stoppedAtKernelPressure": 2,
+        "ownedGroup": 57109,
+        "cacheBytesRecovered": 253356621,
+        "processGroupAbsent": true
+      },
+      {
+        "file": "curriculumRegistry.test.ts",
+        "startFreePercent": 65,
+        "stoppedAtKernelPressure": 2,
+        "ownedGroup": 59113,
+        "cacheBytesRecovered": 258947646,
+        "processGroupAbsent": true
+      },
+      {
+        "file": "markBankCardPreservation.test.ts",
+        "startFreePercent": 58,
+        "stoppedAtKernelPressure": 2,
+        "ownedGroup": 70422,
+        "cacheBytesRecovered": 132172626,
+        "processGroupAbsent": true
+      }
+    ],
+    "finalReadOnlyProof": {
+      "path": "tmp/lcvp-2018-final-source-proof.json",
+      "sha256": "f446c79aad421623edd19fce05e91a229195fa8c7f7deae30e2262935a110951"
+    }
+  },
+  "legacyAudit": {
+    "existingCards": 32,
+    "existingOfferedMarks": 165,
+    "originalIds": [
+      "lcvp-2018-cl-a1",
+      "lcvp-2018-cl-a2",
+      "lcvp-2018-cl-a3",
+      "lcvp-2018-cl-a4",
+      "lcvp-2018-cl-a5",
+      "lcvp-2018-cl-a6",
+      "lcvp-2018-cl-a7",
+      "lcvp-2018-cl-a8",
+      "lcvp-2018-cl-b1",
+      "lcvp-2018-cl-b2i",
+      "lcvp-2018-cl-b2ii",
+      "lcvp-2018-cl-b3ii",
+      "lcvp-2018-cl-c1a",
+      "lcvp-2018-cl-c1bi",
+      "lcvp-2018-cl-c1bii",
+      "lcvp-2018-cl-c1d",
+      "lcvp-2018-cl-c2bi",
+      "lcvp-2018-cl-c2c",
+      "lcvp-2018-cl-c3a",
+      "lcvp-2018-cl-c3b",
+      "lcvp-2018-cl-c3c",
+      "lcvp-2018-cl-c3d",
+      "lcvp-2018-cl-c4ai",
+      "lcvp-2018-cl-c4b",
+      "lcvp-2018-cl-c4c",
+      "lcvp-2018-cl-c4d",
+      "lcvp-2018-cl-c5a",
+      "lcvp-2018-cl-c5b",
+      "lcvp-2018-cl-c5c",
+      "lcvp-2018-cl-c5d",
+      "lcvp-2018-cl-c6a",
+      "lcvp-2018-cl-c6c"
+    ],
+    "originalConcepts": {
+      "lcvp-2018-cl-a1": "evan-s-business",
+      "lcvp-2018-cl-a2": "well-product-other-elements-does-evan",
+      "lcvp-2018-cl-a3": "influenced-evan-his-decision-where-set",
+      "lcvp-2018-cl-a4": "reasons-does-evan-sponsoring-local-gaelic",
+      "lcvp-2018-cl-a5": "benefits-doing-feasibility-study",
+      "lcvp-2018-cl-a6": "evan-innovative-business-person-evidence-there",
+      "lcvp-2018-cl-a7": "has-evan-learned-his-self-evaluation",
+      "lcvp-2018-cl-a8": "evidence-there-evan-aware-positive-impact",
+      "lcvp-2018-cl-b1": "following-terms",
+      "lcvp-2018-cl-b2i": "might-have-influenced-tommy-when-choosing",
+      "lcvp-2018-cl-b2ii": "steps-recruitment-process-when-organisation-looking",
+      "lcvp-2018-cl-b3ii": "challenges-exist-new-voluntary-body-setting",
+      "lcvp-2018-cl-c1a": "understand-term-enterprise",
+      "lcvp-2018-cl-c1bi": "household",
+      "lcvp-2018-cl-c1bii": "local-community",
+      "lcvp-2018-cl-c1d": "planning-good-managerial-skills-product-development",
+      "lcvp-2018-cl-c2bi": "methods-finding-work-experience-work-shadowing",
+      "lcvp-2018-cl-c2c": "reasons-helpful-employee-have-clearly-defined",
+      "lcvp-2018-cl-c3a": "sources-employment-local-area",
+      "lcvp-2018-cl-c3b": "present-swot-analysis-organising-committee-draw",
+      "lcvp-2018-cl-c3c": "steps-should-be-taken-local-community",
+      "lcvp-2018-cl-c3d": "ways-local-community-will-benefit-participation",
+      "lcvp-2018-cl-c4ai": "trade-unions",
+      "lcvp-2018-cl-c4b": "reasons-individual-might-join-trade-union",
+      "lcvp-2018-cl-c4c": "benefits-business-good-industrial-relations-climate",
+      "lcvp-2018-cl-c4d": "obligations-employee-has-regarding-health-safety",
+      "lcvp-2018-cl-c5a": "role-chairperson-committee",
+      "lcvp-2018-cl-c5b": "skills-should-good-chairperson-have-each",
+      "lcvp-2018-cl-c5c": "consider-committee-have-taken-part-might",
+      "lcvp-2018-cl-c5d": "recommendations-students-planning-their-first-lcvp",
+      "lcvp-2018-cl-c6a": "methods-generating-idea-class-project",
+      "lcvp-2018-cl-c6c": "draft-marketing-section-have-included-report"
+    },
+    "preservationBoundaryReview": "Approved by coordinator after independent original paper/scheme view: retain c1bi/c1bii, both full parent contexts and original concepts. Final40 tasks restore eight omissions beside all32 old IDs."
+  },
+  "originalAtlasMemberships": {
+    "sourceCommit": "ecd7ff846",
+    "canonicalWaveTopics": {
+      "1": [
+        "lcvp-link-modules-1-1"
+      ],
+      "2": [
+        "lcvp-link-modules-1-1"
+      ],
+      "3": [
+        "lcvp-link-modules-1-1"
+      ],
+      "4": [
+        "lcvp-link-modules-1-1"
+      ],
+      "5": [
+        "lcvp-link-modules-1-1"
+      ],
+      "6": [
+        "lcvp-link-modules-1-0",
+        "lcvp-link-modules-1-1"
+      ],
+      "7": [
+        "lcvp-link-modules-1-1"
+      ],
+      "8": [
+        "lcvp-link-modules-1-1"
+      ],
+      "9": [
+        "lcvp-link-modules-1-2"
+      ],
+      "10": [
+        "lcvp-link-modules-1-2"
+      ],
+      "11": [
+        "lcvp-link-modules-1-2"
+      ],
+      "12": [
+        "lcvp-link-modules-1-0"
+      ],
+      "13": [
+        "lcvp-link-modules-0-3",
+        "lcvp-link-modules-0-2"
+      ],
+      "14": [
+        "lcvp-link-modules-1-4"
+      ],
+      "15": [
+        "lcvp-link-modules-0-0"
+      ],
+      "16": [
+        "lcvp-link-modules-1-0"
+      ],
+      "17": [
+        "lcvp-link-modules-1-3"
+      ]
+    },
+    "questionTopicIds": {
+      "1": [
+        "link-modules-common-audio-visual"
+      ],
+      "2": [
+        "link-modules-common-audio-visual"
+      ],
+      "3": [
+        "link-modules-common-audio-visual"
+      ],
+      "4": [
+        "link-modules-common-audio-visual"
+      ],
+      "5": [
+        "link-modules-common-audio-visual"
+      ],
+      "6": [
+        "link-modules-common-audio-visual"
+      ],
+      "7": [
+        "link-modules-common-audio-visual"
+      ],
+      "8": [
+        "link-modules-common-audio-visual"
+      ],
+      "10": [
+        "link-modules-common-case-study"
+      ],
+      "12": [
+        "link-modules-common-2-an-enterprise-activity"
+      ],
+      "13": [
+        "link-modules-common-1-work-placement"
+      ],
+      "14": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "15": [
+        "link-modules-common-1-introduction-to-working-life"
+      ]
+    },
+    "existingRuntimeIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "existingSidecarIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ]
+  },
+  "taskBoundaryAmendment": {
+    "recordedAt": "2026-11-12T12:27:29.504622+00:00",
+    "initialLogicalTasks": 39,
+    "finalReviewedTasks": 40,
+    "initialCombinedRecord": {
+      "key": "C1b",
+      "schemePage": 9,
+      "marks": 4,
+      "allocation": "Household 2 @ 1m AND Local Community 2 @ 1m; one whole fixed-heading task",
+      "poolCount": [
+        6,
+        5
+      ]
+    },
+    "reason": "Original paper physical16 explicitly prints roman(i) Household and(ii) Local Community. Scheme physical9 separately prices each context at2×1. Both existing IDs/concepts already exist on distinct canonical topics; retain the two separately practicable source-priced roman tasks, with full parent instruction on each. No new heading fan-out or deleted ID.",
+    "independentCoordinatorReview": "Root viewed original paper14/16 and scheme9, approved preservation of c1bi/c1bii and final40-task reconciliation."
+  },
+  "manualPaperLeaves": [
+    {
+      "key": "A1",
+      "page": 4,
+      "marks": 1
+    },
+    {
+      "key": "A2",
+      "page": 4,
+      "marks": 2
+    },
+    {
+      "key": "A3",
+      "page": 4,
+      "marks": 3
+    },
+    {
+      "key": "A4",
+      "page": 5,
+      "marks": 4
+    },
+    {
+      "key": "A5",
+      "page": 5,
+      "marks": 4
+    },
+    {
+      "key": "A6",
+      "page": 6,
+      "marks": 4
+    },
+    {
+      "key": "A7",
+      "page": 7,
+      "marks": 6
+    },
+    {
+      "key": "A8",
+      "page": 8,
+      "marks": 6
+    },
+    {
+      "key": "B1i",
+      "page": 10,
+      "marks": null,
+      "choiceGroup": "B1"
+    },
+    {
+      "key": "B1ii",
+      "page": 10,
+      "marks": null,
+      "choiceGroup": "B1"
+    },
+    {
+      "key": "B1iii",
+      "page": 10,
+      "marks": null,
+      "choiceGroup": "B1"
+    },
+    {
+      "key": "B1iv",
+      "page": 10,
+      "marks": null,
+      "choiceGroup": "B1"
+    },
+    {
+      "key": "B2i",
+      "page": 11,
+      "marks": null,
+      "printedParentMarks": 12
+    },
+    {
+      "key": "B2ii",
+      "page": 11,
+      "marks": null,
+      "printedParentMarks": 12
+    },
+    {
+      "key": "B3i",
+      "page": 12,
+      "marks": null,
+      "printedParentMarks": 12
+    },
+    {
+      "key": "B3ii",
+      "page": 12,
+      "marks": null,
+      "printedParentMarks": 12
+    },
+    {
+      "key": "C1a",
+      "page": 16,
+      "marks": 4
+    },
+    {
+      "key": "C1bi",
+      "page": 16,
+      "marks": null,
+      "printedParentMarks": 4
+    },
+    {
+      "key": "C1bii",
+      "page": 16,
+      "marks": null,
+      "printedParentMarks": 4
+    },
+    {
+      "key": "C1c",
+      "page": 17,
+      "marks": 8
+    },
+    {
+      "key": "C1d",
+      "page": 18,
+      "marks": 9
+    },
+    {
+      "key": "C2a",
+      "page": 19,
+      "marks": 3
+    },
+    {
+      "key": "C2c",
+      "page": 20,
+      "marks": 9
+    },
+    {
+      "key": "C2bi",
+      "page": 19,
+      "marks": null,
+      "printedParentMarks": 5
+    },
+    {
+      "key": "C2bii",
+      "page": 19,
+      "marks": null,
+      "printedParentMarks": 5
+    },
+    {
+      "key": "C2d",
+      "page": 21,
+      "marks": null,
+      "sourceNote": "No mark printed beside actual question; verify against scheme, do not derive tariff from subtraction."
+    },
+    {
+      "key": "C3a",
+      "page": 22,
+      "marks": 2
+    },
+    {
+      "key": "C3b",
+      "page": 22,
+      "marks": 8
+    },
+    {
+      "key": "C3c",
+      "page": 23,
+      "marks": 6
+    },
+    {
+      "key": "C3d",
+      "page": 24,
+      "marks": 9
+    },
+    {
+      "key": "C4ai",
+      "page": 25,
+      "marks": null,
+      "printedParentMarks": 5
+    },
+    {
+      "key": "C4aii",
+      "page": 25,
+      "marks": null,
+      "printedParentMarks": 5
+    },
+    {
+      "key": "C4b",
+      "page": 25,
+      "marks": 8
+    },
+    {
+      "key": "C4c",
+      "page": 26,
+      "marks": 6
+    },
+    {
+      "key": "C4d",
+      "page": 27,
+      "marks": 6
+    },
+    {
+      "key": "C5a",
+      "page": 28,
+      "marks": 4
+    },
+    {
+      "key": "C5b",
+      "page": 28,
+      "marks": 6
+    },
+    {
+      "key": "C5c",
+      "page": 29,
+      "marks": 6
+    },
+    {
+      "key": "C5d",
+      "page": 30,
+      "marks": 9
+    },
+    {
+      "key": "C6a",
+      "page": 31,
+      "marks": 3
+    },
+    {
+      "key": "C6b",
+      "page": 31,
+      "marks": 6
+    },
+    {
+      "key": "C6c",
+      "page": 32,
+      "marks": 8
+    },
+    {
+      "key": "C6d",
+      "page": 33,
+      "marks": 8
+    }
+  ],
+  "presentationReview": {
+    "finding": "The original examiner right-margin labels and page/running boxes interleave into a whole-width text extraction.",
+    "resolution": "Remove only exact examiner/page/running/footer text spans at their proved original coordinates; retain every other span. The guard caught that the C5 stem extends into the right margin, so rectangular clipping was rejected before publication. Question/stem regression rejects furniture and preserves the complete C5 stem.",
+    "evidence": "tmp/lcvp-2018-paper-geometry.json",
+    "sha256": "2ca09c0c025c10e58724b41ff0e660ea9bedde63926a8b16466ef393a8d1abc5",
+    "rawSourcesRetained": true
+  },
+  "tasks": [
+    {
+      "id": "lcvp-2018-cl-a1",
+      "questionRef": "2018 CL Section A Q1",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a2",
+      "questionRef": "2018 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a3",
+      "questionRef": "2018 CL Section A Q3",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a4",
+      "questionRef": "2018 CL Section A Q4",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a5",
+      "questionRef": "2018 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a6",
+      "questionRef": "2018 CL Section A Q6",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a7",
+      "questionRef": "2018 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-a8",
+      "questionRef": "2018 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-b1",
+      "questionRef": "2018 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-b2i",
+      "questionRef": "2018 CL Section B Q2(i)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-b2ii",
+      "questionRef": "2018 CL Section B Q2(ii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-b3i",
+      "questionRef": "2018 CL Section B Q3(i)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-b3ii",
+      "questionRef": "2018 CL Section B Q3(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c1a",
+      "questionRef": "2018 CL Section C Q1(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c1bi",
+      "questionRef": "2018 CL Section C Q1(b)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c1bii",
+      "questionRef": "2018 CL Section C Q1(b)(ii)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c1c",
+      "questionRef": "2018 CL Section C Q1(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-c1d",
+      "questionRef": "2018 CL Section C Q1(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c2a",
+      "questionRef": "2018 CL Section C Q2(a)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c2bi",
+      "questionRef": "2018 CL Section C Q2(b)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c2bii",
+      "questionRef": "2018 CL Section C Q2(b)(ii)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c2c",
+      "questionRef": "2018 CL Section C Q2(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c2d",
+      "questionRef": "2018 CL Section C Q2(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c3a",
+      "questionRef": "2018 CL Section C Q3(a)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2018-cl-c3b",
+      "questionRef": "2018 CL Section C Q3(b)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c3c",
+      "questionRef": "2018 CL Section C Q3(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c3d",
+      "questionRef": "2018 CL Section C Q3(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2018-cl-c4ai",
+      "questionRef": "2018 CL Section C Q4(a)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c4aii",
+      "questionRef": "2018 CL Section C Q4(a)(ii)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c4b",
+      "questionRef": "2018 CL Section C Q4(b)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c4c",
+      "questionRef": "2018 CL Section C Q4(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c4d",
+      "questionRef": "2018 CL Section C Q4(d)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c5a",
+      "questionRef": "2018 CL Section C Q5(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c5b",
+      "questionRef": "2018 CL Section C Q5(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c5c",
+      "questionRef": "2018 CL Section C Q5(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2018-cl-c5d",
+      "questionRef": "2018 CL Section C Q5(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c6a",
+      "questionRef": "2018 CL Section C Q6(a)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c6b",
+      "questionRef": "2018 CL Section C Q6(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c6c",
+      "questionRef": "2018 CL Section C Q6(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2018-cl-c6d",
+      "questionRef": "2018 CL Section C Q6(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-0"
+    }
+  ],
+  "sourceVerification": {
+    "evidence": "tmp/lcvp-2018-source-gate-final.json",
+    "sha256": "972b9cceace27559383da9840a4ad373e3579d61a4b490716d3c27aa9864447e",
+    "policy": "Mandatory original-source gate is separate from portable checkout tests. Final source build() equals the published authored subset; required preservation/deck tests, measured baseline and deterministic regeneration remain pending.",
+    "validatedAuthoringSha256": "9640495132de85c85ce45c6e00234638afd6e51380a5a31f1194062a57a2591b",
+    "validatedGateSha256": "7d44763585979cb4c0f1133082ba87d32f4d04b6189ae1bf9e9a3a71ea0f1b99"
+  }
+}
