@@ -33,6 +33,1726 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-1-a", topicId: "spanish-3-0", conceptId: "date-will-exhibition-arrive-madrid",
+    section: "L", questionRef: "2018 OL Section L Q1(a)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. EL MUNDO MÁGICO DE HARRY POTTER (THE MAGICAL WORLD OF HARRY POTTER)",
+    questionText: "On what date will the exhibition arrive in Madrid?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "18th November", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — EL MUNDO MÁGICO DE HARRY POTTER",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-1-b", topicId: "spanish-3-0", conceptId: "rooms-can-see-exhibition",
+    section: "L", questionRef: "2018 OL Section L Q1(b)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. EL MUNDO MÁGICO DE HARRY POTTER (THE MAGICAL WORLD OF HARRY POTTER)",
+    questionText: "Name two rooms you can see in the exhibition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":3,"options":["bedrooms","dining room/canteen","classrooms"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — EL MUNDO MÁGICO DE HARRY POTTER",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-1-c", topicId: "spanish-3-0", conceptId: "who-entitled-discount",
+    section: "L", questionRef: "2018 OL Section L Q1(c)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. EL MUNDO MÁGICO DE HARRY POTTER (THE MAGICAL WORLD OF HARRY POTTER)",
+    questionText: "Who is entitled to a discount? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["children/young people/those under 12, school groups"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — EL MUNDO MÁGICO DE HARRY POTTER",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-2-a", topicId: "spanish-3-2", conceptId: "where-zaragoza",
+    section: "L", questionRef: "2018 OL Section L Q2(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN SUPER PROFESOR (INTERVIEW WITH A TOP TEACHER)",
+    questionText: "Where is Zaragoza?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The North of Spain", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN SUPER PROFESOR",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-2-b", topicId: "spanish-3-2", conceptId: "does-cesar-say-textbooks",
+    section: "L", questionRef: "2018 OL Section L Q2(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN SUPER PROFESOR (INTERVIEW WITH A TOP TEACHER)",
+    questionText: "What does César say about textbooks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Textbooks) are not (very) important/prefers students to use imagination", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN SUPER PROFESOR",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-2-c", topicId: "spanish-3-2", conceptId: "does-cesar-say-parents",
+    section: "L", questionRef: "2018 OL Section L Q2(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN SUPER PROFESOR (INTERVIEW WITH A TOP TEACHER)",
+    questionText: "What does César say about parents?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He gets on well with them/parents should enjoy their children", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN SUPER PROFESOR",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-3-a", topicId: "spanish-3-2", conceptId: "old-elsa",
+    section: "L", questionRef: "2018 OL Section L Q3(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY (INTERVIEW WITH THE SPANISH ACTRESS, ELSA PATAKY)",
+    questionText: "How old is Elsa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "41", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-3-b", topicId: "spanish-3-2", conceptId: "completely-new-elsa",
+    section: "L", questionRef: "2018 OL Section L Q3(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY (INTERVIEW WITH THE SPANISH ACTRESS, ELSA PATAKY)",
+    questionText: "What is completely new for Elsa? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Singing/dancing", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-3-c", topicId: "spanish-3-2", conceptId: "where-elsa-her-children-live-australia",
+    section: "L", questionRef: "2018 OL Section L Q3(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY (INTERVIEW WITH THE SPANISH ACTRESS, ELSA PATAKY)",
+    questionText: "Where do Elsa and her children live in Australia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A farm/one of the most rural areas (of Australia)", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-3-d", topicId: "spanish-3-2", conceptId: "elsa-speaks-five-languages-them",
+    section: "L", questionRef: "2018 OL Section L Q3(d)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY (INTERVIEW WITH THE SPANISH ACTRESS, ELSA PATAKY)",
+    questionText: "Elsa speaks five languages. Mention three of them.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":0,"options":["Spanish","English","French","Romanian","Italian"],"perOptionSteps":[0,0,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — ENTREVISTA CON LA ACTRIZ ESPAÑOLA, ELSA PATAKY",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-4-a", topicId: "spanish-3-1", conceptId: "told-can-share-instagram",
+    section: "L", questionRef: "2018 OL Section L Q4(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RED SOCIAL DE INSTAGRAM (INSTAGRAM – THE SOCIAL NETWORK)",
+    questionText: "What are we told you can share on Instagram?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Photos/videos", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — LA RED SOCIAL DE INSTAGRAM",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-4-b", topicId: "spanish-3-1", conceptId: "instagram-popular-with-young-people",
+    section: "L", questionRef: "2018 OL Section L Q4(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RED SOCIAL DE INSTAGRAM (INSTAGRAM – THE SOCIAL NETWORK)",
+    questionText: "Why is Instagram so popular with young people?\nTick the correct answer:\nthey are used to taking photos of everything\ntheir parents are on Facebook\nyoung people don’t make phone calls.",
+    questionChoices: ["they are used to taking photos of everything","their parents are on Facebook","young people don’t make phone calls."],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) They are used to taking photographs of everything.", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — LA RED SOCIAL DE INSTAGRAM",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-4-c", topicId: "spanish-3-1", conceptId: "who-can-follow-instagram",
+    section: "L", questionRef: "2018 OL Section L Q4(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA RED SOCIAL DE INSTAGRAM (INSTAGRAM – THE SOCIAL NETWORK)",
+    questionText: "Who can you follow on Instagram? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":3,"options":["favourite footballers","favourite singers","strangers with the same interests"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — LA RED SOCIAL DE INSTAGRAM",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-5-a", topicId: "spanish-3-1", conceptId: "ibiza-ideal-holiday-destination",
+    section: "L", questionRef: "2018 OL Section L Q5(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES (IBIZA, THE PERFECT DESTINATION AFTER THE EXAMINATIONS)",
+    questionText: "Why is Ibiza an ideal holiday destination?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":3,"options":["lovely beaches","lots of sun","lots of parties","festivals","it has everything"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-5-b", topicId: "spanish-3-1", conceptId: "problem-might-students-have",
+    section: "L", questionRef: "2018 OL Section L Q5(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES (IBIZA, THE PERFECT DESTINATION AFTER THE EXAMINATIONS)",
+    questionText: "What problem might students have?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There are no youth hostels on this island/accommodation problems/need to be over 18 to reserve a hotel room/16-17 year olds must reserve hotels through travel agencies.", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-5-c", topicId: "spanish-3-1", conceptId: "can-cost-ten-euro",
+    section: "L", questionRef: "2018 OL Section L Q5(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES (IBIZA, THE PERFECT DESTINATION AFTER THE EXAMINATIONS)",
+    questionText: "What can cost ten euro?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A bottle of water", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — IBIZA, EL DESTINO PERFECTO DESPUÉS DE LOS EXÁMENES",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-6-a", topicId: "spanish-3-3", conceptId: "when-this-weather-forecast",
+    section: "L", questionRef: "2018 OL Section L Q6(a)",
+    stem: "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+    questionText: "For when is this weather forecast?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Day: Tuesday/today", marks: 3, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-2", kind: "point", verbatim: "Date: 19th June", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-6-b", topicId: "spanish-3-3", conceptId: "temperatures-forecast-today",
+    section: "L", questionRef: "2018 OL Section L Q6(b)",
+    stem: "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+    questionText: "What temperatures are forecast for today?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maximum: 35", marks: 3, contextNote: "The examination paper directs that this question be answered in English." },
+    { id: "r-2", kind: "point", verbatim: "Minimum: 18", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-6-c", topicId: "spanish-3-3", conceptId: "kind-weather-expected-canaries",
+    section: "L", questionRef: "2018 OL Section L Q6(c)",
+    stem: "EL TIEMPO: This will be played three times right through. There will be a long pause after the SECOND hearing.",
+    questionText: "What kind of weather is expected in the Canaries? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sunny / clear skies / cloud", marks: 3, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-7-a", topicId: "spanish-3-4", conceptId: "when-exactly-song-despacito-hit",
+    section: "L", questionRef: "2018 OL Section L Q7(a)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. DESPACITO Y JUSTIN BIEBER (Despacito and Justin Bieber)",
+    questionText: "When exactly was the song Despacito a hit?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Last summer", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — DESPACITO Y JUSTIN BIEBER",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-7-b", topicId: "spanish-3-4", conceptId: "where-justin-bieber-when-first-heard",
+    section: "L", questionRef: "2018 OL Section L Q7(b)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. DESPACITO Y JUSTIN BIEBER (Despacito and Justin Bieber)",
+    questionText: "Where was Justin Bieber when he first heard Despacito?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["Bogotá/Colombia/at a disco/after his concert/on tour"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — DESPACITO Y JUSTIN BIEBER",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-7-c", topicId: "spanish-3-4", conceptId: "did-justin-bieber-get-touch-with",
+    section: "L", questionRef: "2018 OL Section L Q7(c)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. DESPACITO Y JUSTIN BIEBER (Despacito and Justin Bieber)",
+    questionText: "How did Justin Bieber get in touch with Luis Fonsi?\nTick the correct answer:\nhe rang him\nhe sent him an e‐mail\nhe went to his office.",
+    questionChoices: ["he rang him","he sent him an e‐mail","he went to his office."],
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(√) He sent him an e-mail", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — DESPACITO Y JUSTIN BIEBER",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-l-7-d", topicId: "spanish-3-4", conceptId: "many-views-did-despacito-have-youtube",
+    section: "L", questionRef: "2018 OL Section L Q7(d)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. DESPACITO Y JUSTIN BIEBER (Despacito and Justin Bieber)",
+    questionText: "How many views did Despacito have on YouTube in 24 hours?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "More than 20 million", marks: 4, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — DESPACITO Y JUSTIN BIEBER",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2018 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "secFileid": "LC012ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC012ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-a", topicId: "spanish-5-2", conceptId: "hacia-eva-cuando-era-pequena",
+    section: "A", questionRef: "2018 OL Section A Q1(a)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Qué hacía Eva cuando era pequeña? (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Leía libros y veía películas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-b", topicId: "spanish-5-2", conceptId: "donde-conocieron-dos-mujeres",
+    section: "A", questionRef: "2018 OL Section A Q1(b)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Dónde se conocieron las dos mujeres? (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "En la universidad", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-c", topicId: "spanish-5-2", conceptId: "decidieron-hacer-viaje",
+    section: "A", questionRef: "2018 OL Section A Q1(c)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Por qué decidieron hacer el viaje? (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Para lograr un cambio de vida", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-2", kind: "point", verbatim: "salir de su zona de confort", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-d", topicId: "spanish-5-2", conceptId: "tipo-transporte-usaron-ana-eva",
+    section: "A", questionRef: "2018 OL Section A Q1(d)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Qué tipo de transporte usaron Ana y Eva? (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Un Citroen 2CV/un coche (de 23 años)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-e", topicId: "spanish-5-2", conceptId: "adonde-viajaron",
+    section: "A", questionRef: "2018 OL Section A Q1(e)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Adónde viajaron? (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Viajaron) al sur, este y centro de Europa / al Oriente Medio", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-f", topicId: "spanish-5-2", conceptId: "visitaron-sitios-turisticos",
+    section: "A", questionRef: "2018 OL Section A Q1(f)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Por qué no visitaron sitios turísticos? (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Querían ver aspectos más auténticos/Querían hacer un tipo de viaje distinto a lo normal.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-g", topicId: "spanish-5-2", conceptId: "cuantos-paises-recorrieron",
+    section: "A", questionRef: "2018 OL Section A Q1(g)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Cuántos países recorrieron? (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Veintiocho", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-h", topicId: "spanish-5-2", conceptId: "cual-fue-aspecto-mas-negativo-viaje",
+    section: "A", questionRef: "2018 OL Section A Q1(h)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Cuál fue el aspecto más negativo del viaje para Ana? (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Las colas y los retrasos (en las fronteras de los países)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,2,3,5], parts: [{"id":"p1","verbatim":"Las colas","marks":3,"permittedMarks":[0,3]},{"id":"p2","verbatim":"y los retrasos (en las fronteras de los países)","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-1-i", topicId: "spanish-5-2", conceptId: "planes-tiene-ana-ahora",
+    section: "A", questionRef: "2018 OL Section A Q1(i)",
+    stem: "Lee este artículo sobre un viaje extraordinario y contesta las preguntas en ESPAÑOL",
+    questionText: "¿Qué planes tiene Ana ahora? (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Piensa escribir un libro", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Dos mujeres intrépidas con un sueño — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-2-a", topicId: "spanish-5-2", conceptId: "long-did-renovation-castle-take",
+    section: "A", questionRef: "2018 OL Section A Q2(a)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "How long did the renovation of the castle take?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A year and a half", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un castillo en Cataluña — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-2-b", topicId: "spanish-5-2", conceptId: "hotel",
+    section: "A", questionRef: "2018 OL Section A Q2(b)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "Mention two details about the hotel. (i) (ii)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It’s on 12 acres / has 57 rooms / a wood / a swimming pool / with panoramic views/ Was a castle /a 4 star hotel /opened in 2001", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un castillo en Cataluña — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-2-c", topicId: "spanish-5-2", conceptId: "told-food-restaurant",
+    section: "A", questionRef: "2018 OL Section A Q2(c)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "What are we told about the food in the restaurant?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Delicious food/ from fresh seasonal local products / traditional (dishes)", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un castillo en Cataluña — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-2-d", topicId: "spanish-5-2", conceptId: "can-hotel-guests-area",
+    section: "A", questionRef: "2018 OL Section A Q2(d)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "What can hotel guests do in the area? (Give one detail)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["relax / golf / go cycling / hiking / visit Dalí museum"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un castillo en Cataluña — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-2-e", topicId: "spanish-5-2", conceptId: "does-experiencia-dali-offer",
+    section: "A", questionRef: "2018 OL Section A Q2(e)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "What does La Experiencia Dalí offer? (Give one detail)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["a night in the castle tower / a four course dinner / a guided tour of the castle"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un castillo en Cataluña — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-3-a", topicId: "spanish-5-2", conceptId: "chile-famous",
+    section: "A", questionRef: "2018 OL Section A Q3(a)",
+    stem: "Read the following item about viewing the stars and skies above Chile and answer in ENGLISH the accompanying questions.",
+    questionText: "What is Chile famous for? (Give one detail)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["active volcanos/driest desert in the world/ glacial lakes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Fuera de este mundo — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-3-b", topicId: "spanish-5-2", conceptId: "reason-north-chile-best-places-look",
+    section: "A", questionRef: "2018 OL Section A Q3(b)",
+    stem: "Read the following item about viewing the stars and skies above Chile and answer in ENGLISH the accompanying questions.",
+    questionText: "Give one reason why the north of Chile is one of the best places to look at the stars.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["no pollution/more than 300 nights a year with clear skies"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Fuera de este mundo — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-3-c", topicId: "spanish-5-2", conceptId: "telescope",
+    section: "A", questionRef: "2018 OL Section A Q3(c)",
+    stem: "Read the following item about viewing the stars and skies above Chile and answer in ENGLISH the accompanying questions.",
+    questionText: "Give two details about the telescope.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":5,"options":["it will: be built in the Andes","be the biggest in the world","be the size of a football stadium","weigh 5,000 tons","cost a fortune","be able to resist earthquakes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Fuera de este mundo — answer in English",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-4-a", topicId: "spanish-5-2", conceptId: "long-did-president-higgins-spend-his",
+    section: "A", questionRef: "2018 OL Section A Q4(a)",
+    stem: "Read the following article about President Michael D. Higgins’ trip to South America and answer in ENGLISH the accompanying questions.",
+    questionText: "How long did President Higgins spend on his tour of South America?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "11 days", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Reading comprehension — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-4-b", topicId: "spanish-5-2", conceptId: "who-presented-president-higgins-with-gran",
+    section: "A", questionRef: "2018 OL Section A Q4(b)",
+    stem: "Read the following article about President Michael D. Higgins’ trip to South America and answer in ENGLISH the accompanying questions.",
+    questionText: "Who presented President Higgins with the Gran Collar de la Orden del Sol?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Peruvian president", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Reading comprehension — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-4-c", topicId: "spanish-5-2", conceptId: "did-president-higgins-refer-his-speech",
+    section: "A", questionRef: "2018 OL Section A Q4(c)",
+    stem: "Read the following article about President Michael D. Higgins’ trip to South America and answer in ENGLISH the accompanying questions.",
+    questionText: "What did President Higgins refer to in his speech in Colombia? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["the importance of the process of reconciliation/ the Irish experience / the resolution of conflict, dialogue and peace"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Reading comprehension — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-4-d", topicId: "spanish-5-2", conceptId: "activity-undertook-during-his-visit-cuba",
+    section: "A", questionRef: "2018 OL Section A Q4(d)",
+    stem: "Read the following article about President Michael D. Higgins’ trip to South America and answer in ENGLISH the accompanying questions.",
+    questionText: "Name one activity he undertook during his visit to Cuba.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he visited the president Raúl Castro / he spoke in Revolution Square in Havana/ he opened the International book fair (in Havana) / he launched the Spanish version of Joseph O’Connor’s book / he went on a guided tour of Havana / he attended the National Dance School / he met members of the Irish community"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Reading comprehension — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-4-e", topicId: "spanish-5-2", conceptId: "language-course-that-president-higgins-took",
+    section: "A", questionRef: "2018 OL Section A Q4(e)",
+    stem: "Read the following article about President Michael D. Higgins’ trip to South America and answer in ENGLISH the accompanying questions.",
+    questionText: "Give two details about the language course that President Higgins took in Spain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":3,"options":["he spent three weeks","It took place in Santander (capital of Cantabria)","in August 2012","an intensive course in culture and language","He had 5 hours of classes per day","He had 4 teachers","He did a specialised programme with private classes"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Reading comprehension — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-a", topicId: "spanish-5-2", conceptId: "nationality-martin-garrix",
+    section: "A", questionRef: "2018 OL Section A Q5(a)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "What nationality is Martin Garrix?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dutch", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-b", topicId: "spanish-5-2", conceptId: "know-martin-successful",
+    section: "A", questionRef: "2018 OL Section A Q5(b)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "How do we know Martin is successful? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["he has a long list of hits / he has a personal fortune of 14 million US Dollars"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-c", topicId: "spanish-5-2", conceptId: "did-martin-decide-become",
+    section: "A", questionRef: "2018 OL Section A Q5(c)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "Why did Martin decide to become a DJ? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "After seeing Tiesto play at the Olympic Games in Athens", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-d", topicId: "spanish-5-2", conceptId: "spanish-speaking-countries-martin-has-visited",
+    section: "A", questionRef: "2018 OL Section A Q5(d)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "Name two Spanish‐speaking countries Martin has visited.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":3,"options":["Mexico","Panama","Paraguay"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-e", topicId: "spanish-5-2", conceptId: "ibiza-mentioned",
+    section: "A", questionRef: "2018 OL Section A Q5(e)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "Why is Ibiza mentioned? (Give one detail).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":5,"options":["in 2017, he became resident DJ there/ He played in Ushuaia Ibiza Beach Hotel Ibiza every Thursday from July to September."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-f", topicId: "spanish-5-2", conceptId: "does-charity-aldeas-infantiles-offer",
+    section: "A", questionRef: "2018 OL Section A Q5(f)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "What does the charity Aldeas Infantiles offer? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":5,"options":["a family","a stable home","a better education to abandoned/orphaned children"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2018 Ordinary Level — © State Examinations Commission.",
+    id: "es-2018-ol-a-5-g", topicId: "spanish-5-2", conceptId: "many-countries-does-aldeas-infantiles-work",
+    section: "A", questionRef: "2018 OL Section A Q5(g)",
+    stem: "Read the following article about the international DJ Martin Garrix and answer in ENGLISH the accompanying questions.",
+    questionText: "In how many countries does Aldeas Infantiles work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "134", marks: 5, contextNote: "The examination paper directs that this question be answered in English." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un mito internacional — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2018 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2018-ol-b-1", topicId: "spanish-6-2", conceptId: "spanish-friend-maria-lives-city-toledo",
+    section: "B", questionRef: "2018 OL Section B Q1",
+    questionText: "Your Spanish friend María lives in the city of Toledo, where you visited her last Easter. Write a letter / e‐mail to her in Spanish. Use all of the points mentioned below:\n‐ Thank her for the great holiday in April.\n‐ Say two things you like about Toledo.\n‐ Say that you loved the Spanish sunshine and describe the weather in Ireland.\n‐ Explain that your exams finished last week and say how you are going to celebrate.\n‐ Say that you want to find a job for the summer and why you need one.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "There are five points to be communicated.",
+                "Allow a maximum of 8 marks for each of these.",
+                "(0 – 8 marks may be awarded for each point.)",
+                "8 marks x 5 = 40 marks",
+                "Full message unequivocally conveyed: (8m)",
+                "Communication satisfactory: (6m)",
+                "Communication adequate: (5m)",
+                "Message comprehensible / some details missing: (4m)",
+                "Possible to extract some sense (2m)"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 8,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Candidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2. (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 1 — answer in Spanish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2018 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2018-ol-b-2-a", topicId: "spanish-6-4", conceptId: "spanish-friend-juan-who-ireland-has",
+    section: "B", questionRef: "2018 OL Section B Q2(a)",
+    stem: "Attempt either (a) or (b).",
+    questionText: "Your Spanish friend Juan, who is in Ireland, has left his phone in the house and you can’t text him. Leave him a note, in Spanish, that includes all of the following details:\n‐ Tell him you found his mobile and say where you left it.\n‐ Say that his mother rang about his flight to Madrid.\n‐ She wants to know on what day he will return.\n‐ Tell him she will be at the airport to meet him.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Identical allocation in each case.",
+                "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+                "(0 to 5 marks may be awarded for each point.)",
+                "5 marks x 4 = 20",
+                "Message fully conveyed (5m)",
+                "‘Gist’ of message clear (4m)",
+                "Message partly comprehensible (3m)",
+                "Possible to extract some sense (2m)"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Candidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2. (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 2 (a) — answer in Spanish",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2018 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "es-2018-ol-b-2-b", topicId: "spanish-6-3", conceptId: "have-job-campsite-costa-brava-spain",
+    section: "B", questionRef: "2018 OL Section B Q2(b)",
+    stem: "Attempt either (a) or (b).",
+    questionText: "You have a job on a campsite on the Costa Brava in Spain for the summer. Write a diary entry, in Spanish, including all of the following details:\n‐ Say that it’s a terrific job and the people are nice.\n‐ Describe someone interesting you have met.\n‐ Say that the food is great and what your favourite meal is.\n‐ Explain what you plan to do at the weekend.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Identical allocation in each case.",
+                "There are four points to be communicated. Allow a maximum of 5 marks for each of these.",
+                "(0 to 5 marks may be awarded for each point.)",
+                "5 marks x 4 = 20",
+                "Message fully conveyed (5m)",
+                "‘Gist’ of message clear (4m)",
+                "Message partly comprehensible (3m)",
+                "Possible to extract some sense (2m)"
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "Candidates must attempt:\n1. LETTER / E-MAIL and either 2. (a) NOTE or 2. (b) DIARY ENTRY.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section B Question 2 (b) — answer in Spanish",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC012GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2019 Ordinary Level — © State Examinations Commission.",
