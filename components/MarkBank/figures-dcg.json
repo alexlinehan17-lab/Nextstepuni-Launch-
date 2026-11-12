@@ -1,4 +1,136 @@
 {
+ "dcg-2014-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a goalkeeper diving at a penalty kick, beside the elevation and plan on XY of a set of goal posts, the ball at P, and the lines PS and PT showing the start of the two flight paths.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "d925f6a3c294a86408ffd2860652486a",
+  "questionRef": "2014 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secA-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A 3D graphic of a truncated hexagonal pencil against a ruler, beside the incomplete plan and elevation on XY of a similar hexagonal prism cut by the oblique plane VTH, and its auxiliary elevation on X1Y1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "6cb4d40034bbae97dc87616e0e97670b",
+  "questionRef": "2014 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secA-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A 3D graphic of a red clay tagine, beside the incomplete elevation of the tagine with the rectangles of the two semi-parabolas, the vertices V1 and V2, the semi-ellipse of the lower dish and the point P on it.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "432a2d82750d64679c5c4172176c3986",
+  "questionRef": "2014 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secA-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of a tennis player, beside the plan of a tennis court and net, the picture plane PP, the spectator point S, the vanishing point VP2 and a partially completed perspective projection of the court.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "88df6557eb5e0c577db431e154872408",
+  "questionRef": "2014 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secA-q4-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of the Halle Berry Reveal perfume bottle with its faceted cap circled, and Fig. B-1: the plan and elevation on XY of the intersecting planes ABCD and ABEFG, a table of the coordinates of A to G, and a 3D view of the cap with the hexagonal surface S and its side EF. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "1131e954064a8b37d969810516a2ca21",
+  "questionRef": "2014 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secB-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of a basketball backboard and hoop, and Fig. B-2: the axes X, Y and Z with the scalene triangle abc and its 110 degree angle, the incomplete trimetric projection of the backboard with the point P, and the elevation and end view (50, 40, 40 and 10, with the height h and the radius R). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "c24c34587f30f498089fe9508884bb33",
+  "questionRef": "2014 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secB-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A 3D graphic of two lollipops in cube-shaped packaging, and Fig. B-3: the elevation and plan on XY of a lollipop (sphere of diameter 40 on a stick at 45 degrees; 30 and 70) and its auxiliary view on X1Y1 with the cube packaging (80). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "8235c5fe838d7b0678964074fb8a7961",
+  "questionRef": "2014 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secB-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text with its bulleted specifications, a photograph of a golf course and a photograph of a golfer; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "afa395d104e4077d0a5483beaa2854f1",
+  "questionRef": "2014 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of the Dubai Creek golf club house, and Fig. C-2: the elevation on XY (6m, 15m and 12m; 7.5m high) with the parabolas EBD and ABC, the plan with the points A, B, C, D and E, and an isometric view of the curved surface. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "d0f6df59dc51a6641a1ff954cf84bf3c",
+  "questionRef": "2014 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a graphic of the proposed U.S. Marshals Museum and a marshal's star badge, and Fig. C-3: the elevation on XY (24m, 12m and 6m) and the regular pentagon plan (30m) of the three intersecting triangular surfaces A, B and C. Scale 1:500.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "ad9d6f2f8706f778cdaf5fc82c99a1ed",
+  "questionRef": "2014 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): photographs of a steam engine's crank and slider and Fig. C-4(a), the crank OA at 30 degrees, the link AB through the fixed point S (85 and 15); part (b): a 3D graphic of a radial plate cam with its follower and Fig. C-4(b), the cam based on an Archimedean spiral with the camshaft of diameter 18 and the line AB (18 and 72). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "9b8a818bc259d71334c8b6b38b7b97c9",
+  "questionRef": "2014 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q4-art.png",
+  "year": 2014
+ },
+ "dcg-2014-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, the question text, a 3D graphic of the parts of a miniature bench vice, the parts list naming Moving Jaw, Base, Clamping Nut, Swivel Shaft, Retaining Screw, Adjusting Screw, Crossbar Nut and Fixed Jaw with their quantities, and Fig. C-5: dimensioned details of the eight numbered parts with the section line A-A and the point P.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "00043913eb5d4fb819677ea93ff74857",
+  "questionRef": "2014 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q5-art.png",
+  "year": 2014
+ },
  "dcg-2015-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A 3D graphic of a display box of chocolate eggs based on a truncated prism, the incomplete pictorial projection of a square-based prism cut by the oblique plane VTH, and its incomplete orthographic projection on XY with the traces VT and TH.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",

@@ -186,6 +186,45 @@ PRIVATE_GLYPHS = str.maketrans({
 COORD_LABEL = re.compile(r'^[A-Z]$')
 
 
+def _parts_table(rows_, tol=2.5):
+    """The rows of an assembly's PARTS LIST, set as a table beside the text.
+
+    Its header "Part" / "Name" / "Qty." shares a baseline with the question's
+    own lines, so read across the page it lands in the middle of a sentence:
+    2014 Higher C-5(b) read "... the position of point P when the jaws are
+    Part Name Qty. fully closed and the vice is tilted fully to the left. 1
+    Moving Jaw 1 ...", and stripping the table from "Part Name Qty." to the
+    end took the rest of the sentence with it. The table is the header and
+    every run at or right of its left edge, down to its last numbered row
+    (and a name wrapped under it); the crop carries it as printed.
+    """
+    head = None
+    for row in rows_:
+        text = ' '.join(row[3].split())
+        if re.fullmatch(r'Part\s+Name\s+Qty\.?', text):
+            head = (row, row[1] + 24)          # one run: the number column
+            break
+        if text != 'Part':
+            continue
+        band = [r for r in rows_ if abs(r[0] - row[0]) <= tol]
+        name = [r for r in band if r[3].strip() == 'Name' and r[1] > row[1]]
+        qty = [r for r in band if r[3].strip().startswith('Qty')
+               and r[1] > row[1]]
+        if name and qty:
+            head = (row, name[0][1] - 2)
+            break
+    if head is None:
+        return set()
+    part, number_end = head
+    left = part[1] - 2
+    numbered = [r for r in rows_ if r[0] > part[0] + tol
+                and left <= r[1] < number_end
+                and re.fullmatch(r'\d{1,2}', r[3].strip())]
+    last = max((r[0] for r in numbered), default=part[0])
+    return {r for r in rows_ if part[0] - tol <= r[0] <= last + 14
+            and r[1] >= left}
+
+
 def _coordinate_rows(rows_, tol=2.5):
     out, i = [], 0
     while i < len(rows_):
@@ -429,7 +468,10 @@ class DcgPaper:
         13pt line, so no two printed lines can share one.
         """
         lines = []
+        table = _parts_table(_banded(owned))
         for row in _coordinate_rows(_banded(owned)):
+            if row in table:
+                continue
             text = ' '.join(row[3].split())
             if row == head:
                 text = QHEAD.sub('', text).strip()

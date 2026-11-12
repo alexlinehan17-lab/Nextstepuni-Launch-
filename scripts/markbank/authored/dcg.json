@@ -1,5 +1,2373 @@
 [
  {
+  "id": "dcg-2014-hl-a1a",
+  "topicId": "design-and-communication-graphics-0-0",
+  "conceptId": "dcg-0-0",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q1(a)",
+  "questionText": "The line PS, in plan, shows the start of the flight path of the ball for the 1st penalty kick. The ball crosses the goal line at a height that is halfway between the ground and the crossbar. Draw the projections of the full flight path.",
+  "stem": "The drawing shows the projections of a set of soccer goal posts. A ball is positioned at P for two penalty kicks during a World Cup match. The ball travels in a straight line and hits the net each time.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a1a-r1",
+    "kind": "point",
+    "verbatim": "Extend line PS in plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a1a-r2",
+    "kind": "point",
+    "verbatim": "Locate entry point at correct height in end view (or auxiliary view)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a1a-r3",
+    "kind": "point",
+    "verbatim": "Location of impact point on net in end view (or auxiliary view)",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-a1a-r4",
+    "kind": "criterion",
+    "verbatim": "Complete projections of path in plan and elevation … (2,2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'First Flight Path' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a1b",
+  "topicId": "design-and-communication-graphics-0-0",
+  "conceptId": "dcg-0-0",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q1(b)",
+  "questionText": "Similarly, the line PT, which makes an angle of 15° with the ground, shows the flight path of the ball for the 2nd penalty kick. Draw the projections of the full flight path.",
+  "stem": "The drawing shows the projections of a set of soccer goal posts. A ball is positioned at P for two penalty kicks during a World Cup match. The ball travels in a straight line and hits the net each time.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a1b-r1",
+    "kind": "point",
+    "verbatim": "Extend line PT in plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a1b-r2",
+    "kind": "point",
+    "verbatim": "Correct use of 15° angle in auxiliary view (or rotated view)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a1b-r3",
+    "kind": "point",
+    "verbatim": "Location of impact point on net in elevation",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-a1b-r4",
+    "kind": "point",
+    "verbatim": "Complete projections of line",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Second Flight Path' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a2a",
+  "topicId": "design-and-communication-graphics-0-10",
+  "conceptId": "dcg-0-10",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q2(a)",
+  "questionText": "Complete the plan and elevation of the cut prism.",
+  "stem": "The 3D graphic below shows a piece of play equipment from a science museum. It includes a truncated hexagonal prism. The drawing on the right shows the incomplete projections of a similar hexagonal prism which has been cut by the oblique plane VTH. An auxiliary elevation is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a2a-r1",
+    "kind": "criterion",
+    "verbatim": "Project required two points on top surface from auxiliary to plan ….(1,1)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-a2a-r2",
+    "kind": "point",
+    "verbatim": "Complete outline of cut surface in plan ….(1x3)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-a2a-r3",
+    "kind": "criterion",
+    "verbatim": "Complete plan incl. hidden detail ....(2,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-a2a-r4",
+    "kind": "point",
+    "verbatim": "Projection of required points to elevation",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-a2a-r5",
+    "kind": "point",
+    "verbatim": "Complete outline of cut surface in elevation ….(1x3)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-a2a-r6",
+    "kind": "point",
+    "verbatim": "Complete elevation",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of Plan and Elevation' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a2b",
+  "topicId": "design-and-communication-graphics-0-10",
+  "conceptId": "dcg-0-10",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q2(b)",
+  "questionText": "Determine the true shape of the cut surface.",
+  "stem": "The 3D graphic below shows a piece of play equipment from a science museum. It includes a truncated hexagonal prism. The drawing on the right shows the incomplete projections of a similar hexagonal prism which has been cut by the oblique plane VTH. An auxiliary elevation is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a2b-r1",
+    "kind": "point",
+    "verbatim": "Rotation of cut surface in auxiliary view (or correct use of 2nd auxiliary view)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a2b-r2",
+    "kind": "point",
+    "verbatim": "Projection to plan (or auxiliary view)",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-a2b-r3",
+    "kind": "point",
+    "verbatim": "Projections perp. to HT in plan (or widths in auxiliary)",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-a2b-r4",
+    "kind": "point",
+    "verbatim": "Draw required True Shape",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'True Shape of Cut Surface' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a3a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q3(a)",
+  "questionText": "V1 and V2 are the vertices of the semi-parabolas. P is a point on the semi-ellipse. Small portions of two of the curves have already been drawn. Complete the elevation of the tagine. Show clearly how the exact length of the base is obtained.",
+  "stem": "The 3D graphic below shows a tagine, which is a type of clay oven frequently used in North African cooking. The drawing on the right shows the incomplete elevation of the tagine. The upper “lid” is based on two semi-parabolas which are inscribed in rectangles and the lower dish is based on a semi-ellipse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a3a-r1",
+    "kind": "criterion",
+    "verbatim": "Completion of Elevation",
+    "marks": 14,
+    "permittedMarks": [
+     0,
+     14
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw remaining horizontal division lines",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw division lines radiating from V2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Locate points and draw curve … (Any = 1)",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Draw second parabola (mirror or otherwise)",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Locate additional points on ellipse (min. 3)",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw elliptical curve(s) …(Any = 1)",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Construction to accurately establish extremities of base",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of Elevation' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a3b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q3(b)",
+  "questionText": "Draw a tangent to the curve at the point P.",
+  "stem": "The 3D graphic below shows a tagine, which is a type of clay oven frequently used in North African cooking. The drawing on the right shows the incomplete elevation of the tagine. The upper “lid” is based on two semi-parabolas which are inscribed in rectangles and the lower dish is based on a semi-ellipse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a3b-r1",
+    "kind": "point",
+    "verbatim": "Locate focal points",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a3b-r2",
+    "kind": "point",
+    "verbatim": "Draw lines from P to foci and bisect angle",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a3b-r3",
+    "kind": "point",
+    "verbatim": "Draw required tangent",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Tangent at Point P' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a4a",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q4(a)",
+  "questionText": "The position of one of the vanishing points, VP2, is shown. Locate the other vanishing point.",
+  "stem": "The drawing on the right shows a partially completed perspective projection of a tennis court.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a4a-r1",
+    "kind": "point",
+    "verbatim": "Vertical line from S to establish VP1 in plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a4a-r2",
+    "kind": "point",
+    "verbatim": "Locate VP1 on Horizon Line in perspective view",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Determine second Vanishing Point' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a4b",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q4(b)",
+  "questionText": "Complete the perspective projection of the tennis court and the net.",
+  "stem": "The drawing on the right shows a partially completed perspective projection of a tennis court.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a4b-r1",
+    "kind": "point",
+    "verbatim": "Establish directions for Left and Right sides of court",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-a4b-r2",
+    "kind": "point",
+    "verbatim": "Join points to spectator in plan (min 4 required points)",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-a4b-r3",
+    "kind": "point",
+    "verbatim": "Project to perspective view (min 4 required projectors)",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-a4b-r4",
+    "kind": "point",
+    "verbatim": "Completion of 3 required lines to VP2",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-a4b-r5",
+    "kind": "point",
+    "verbatim": "Completion of remaining line to VP1",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective of Tennis Court' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-a4c",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q4(c)",
+  "questionText": "Determine the true height of the net.",
+  "stem": "The drawing on the right shows a partially completed perspective projection of a tennis court.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-a4c-r1",
+    "kind": "point",
+    "verbatim": "Determination of true height of net…… (1x3)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'True Height of Net' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b1a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(a)",
+  "questionText": "Draw the given elevation and plan of the two intersecting planes.",
+  "stem": "The image across shows the Halle Berry “Reveal” perfume bottle. The cap of the bottle includes intersecting planar faces. Fig. B-1 below shows the plan and elevation of two such intersecting planes, ABCD and ABEFG. The horizontal and vertical coordinates of the two planes are also given. A = 130 --- 55 --- 90 B = 140 --- 85 --- 50 C = 100 --- 85 --- 50 D = 110 --- 55 --- 90 E = 220 --- 45 --- 10 F = 220 --- 25 --- 30 G = 190 --- 25 --- 60",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b1a-r1",
+    "kind": "criterion",
+    "verbatim": "Use given coordinates to draw required elevation .....(5x1)",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b1a-r2",
+    "kind": "criterion",
+    "verbatim": "Use given coordinates to draw required plan .....(5x1)",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of Planes' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b1b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(b)",
+  "questionText": "Determine the dihedral angle between the planes.",
+  "stem": "The image across shows the Halle Berry “Reveal” perfume bottle. The cap of the bottle includes intersecting planar faces. Fig. B-1 below shows the plan and elevation of two such intersecting planes, ABCD and ABEFG. The horizontal and vertical coordinates of the two planes are also given. A = 130 --- 55 --- 90 B = 140 --- 85 --- 50 C = 100 --- 85 --- 50 D = 110 --- 55 --- 90 E = 220 --- 45 --- 10 F = 220 --- 25 --- 30 G = 190 --- 25 --- 60",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b1b-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection in plan (or elevation)",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-b1b-r2",
+    "kind": "point",
+    "verbatim": "Projection of planes onto auxiliary view",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-b1b-r3",
+    "kind": "point",
+    "verbatim": "X2Y2 perp. to true length of line of intersection",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-b1b-r4",
+    "kind": "point",
+    "verbatim": "Projection of planes onto 2nd auxiliary view",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b1b-r5",
+    "kind": "point",
+    "verbatim": "Indication of dihedral angle",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral Angle' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b1c",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(c)",
+  "questionText": "Determine the true shape of the surface ABCD.",
+  "stem": "The image across shows the Halle Berry “Reveal” perfume bottle. The cap of the bottle includes intersecting planar faces. Fig. B-1 below shows the plan and elevation of two such intersecting planes, ABCD and ABEFG. The horizontal and vertical coordinates of the two planes are also given. A = 130 --- 55 --- 90 B = 140 --- 85 --- 50 C = 100 --- 85 --- 50 D = 110 --- 55 --- 90 E = 220 --- 45 --- 10 F = 220 --- 25 --- 30 G = 190 --- 25 --- 60",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b1c-r1",
+    "kind": "point",
+    "verbatim": "Establish edge view of surface ABCD",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-b1c-r2",
+    "kind": "point",
+    "verbatim": "Rabattment of edge view of surface ABCD",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-b1c-r3",
+    "kind": "point",
+    "verbatim": "Draw required true shape",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'True shape of surface ABCD' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b1d",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(d)",
+  "questionText": "Another surface, S, on the bottle cap is a regular hexagon. EF is one of the sides of this hexagon. On a separate diagram draw, full size, the true shape of hexagon S.",
+  "stem": "The image across shows the Halle Berry “Reveal” perfume bottle. The cap of the bottle includes intersecting planar faces. Fig. B-1 below shows the plan and elevation of two such intersecting planes, ABCD and ABEFG. The horizontal and vertical coordinates of the two planes are also given. A = 130 --- 55 --- 90 B = 140 --- 85 --- 50 C = 100 --- 85 --- 50 D = 110 --- 55 --- 90 E = 220 --- 45 --- 10 F = 220 --- 25 --- 30 G = 190 --- 25 --- 60",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b1d-r1",
+    "kind": "point",
+    "verbatim": "Establish true length of side EF",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b1d-r2",
+    "kind": "point",
+    "verbatim": "Draw required hexagon",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'True shape of Hexagon S' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b2a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(a)",
+  "questionText": "Draw the axonometric axes X, Y and Z and the scalene triangle abc.",
+  "stem": "Fig. B-2 shows an incomplete trimetric projection, using the axonometric axes method, of a model of a basketball backboard, based on the 3D graphic on the right. The elevation and end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b2a-r1",
+    "kind": "criterion",
+    "verbatim": "Draw axonometric axes Y and Z orientated as shown .....(1,1)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b2a-r2",
+    "kind": "criterion",
+    "verbatim": "Draw scalene triangle ‘abc’.....(1,1,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b2a-r3",
+    "kind": "point",
+    "verbatim": "Draw X axis",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Axonometric axes and scalene triangle' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b2b-1",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(b) — Elevation and End view orientated as shown",
+  "questionText": "Draw the elevation and end view orientated as shown and complete the trimetric projection.",
+  "stem": "Fig. B-2 shows an incomplete trimetric projection, using the axonometric axes method, of a model of a basketball backboard, based on the 3D graphic on the right. The elevation and end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b2b-1-r1",
+    "kind": "point",
+    "verbatim": "Correct development of XY plane in required orientation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b2b-1-r2",
+    "kind": "point",
+    "verbatim": "Correct development of YZ plane in required orientation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b2b-1-r3",
+    "kind": "criterion",
+    "verbatim": "Draw top arc in elevation (on XY plane) ….(1,1)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b2b-1-r4",
+    "kind": "point",
+    "verbatim": "Establish widths and heights in elevation",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b2b-1-r5",
+    "kind": "point",
+    "verbatim": "Complete elevation",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-b2b-1-r6",
+    "kind": "point",
+    "verbatim": "Establish heights in end view",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and End view orientated as shown' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b2b-2",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(b) — Complete axonometric projection",
+  "questionText": "Draw the elevation and end view orientated as shown and complete the trimetric projection.",
+  "stem": "Fig. B-2 shows an incomplete trimetric projection, using the axonometric axes method, of a model of a basketball backboard, based on the 3D graphic on the right. The elevation and end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b2b-2-r1",
+    "kind": "point",
+    "verbatim": "Projections from elevation and end view",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-b2b-2-r2",
+    "kind": "point",
+    "verbatim": "Draw given axonometric projection (as presented)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-b2b-2-r3",
+    "kind": "point",
+    "verbatim": "Draw square ‘target area’ in axonometric view",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-b2b-2-r4",
+    "kind": "point",
+    "verbatim": "Determine points on curve in axonometric view …(min 5 points, incl. top)",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-b2b-2-r5",
+    "kind": "point",
+    "verbatim": "Draw curve",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme heads this 'Complete axonometric projection' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b2c",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(c)",
+  "questionText": "Draw the axonometric projection of a basketball in contact with the backboard at the point P. The radius of the ball is 12mm.",
+  "stem": "Fig. B-2 shows an incomplete trimetric projection, using the axonometric axes method, of a model of a basketball backboard, based on the 3D graphic on the right. The elevation and end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b2c-r1",
+    "kind": "criterion",
+    "verbatim": "Locate centre of sphere in axonometric view ….(1,1,3)",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b2c-r2",
+    "kind": "criterion",
+    "verbatim": "Draw correct radius sphere..(2,2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Tangential Sphere' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b3a",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(a)",
+  "questionText": "Draw the given plan and elevation of the lollipop.",
+  "stem": "The 3-D graphic on the right shows lollipops which are to be distributed as promotional gifts at a trade show. Each lollipop is packaged in a cube as shown. The cube is as small as possible and the stick emerges centrally from one of its faces. The plan and elevation of one of the lollipops is shown in Fig. B-3 below. An auxiliary view which includes the cube shaped packaging is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b3a-r1",
+    "kind": "criterion",
+    "verbatim": "Draw the plan and elevation of sphere .....(2x2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-b3a-r2",
+    "kind": "point",
+    "verbatim": "Projections of inclined ‘stick’",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b3b",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(b)",
+  "questionText": "Draw the given auxiliary elevation.",
+  "stem": "The 3-D graphic on the right shows lollipops which are to be distributed as promotional gifts at a trade show. Each lollipop is packaged in a cube as shown. The cube is as small as possible and the stick emerges centrally from one of its faces. The plan and elevation of one of the lollipops is shown in Fig. B-3 below. An auxiliary view which includes the cube shaped packaging is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b3b-r1",
+    "kind": "point",
+    "verbatim": "Draw X1Y1 parallel to ‘stick’",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-b3b-r2",
+    "kind": "point",
+    "verbatim": "Projections perp. to X1Y1",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-b3b-r3",
+    "kind": "point",
+    "verbatim": "Complete auxiliary elevation of lollypop",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-b3b-r4",
+    "kind": "point",
+    "verbatim": "Cube-shaped packaging tangential to sphere and correctly orientated",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Auxiliary Elevation' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-b3c",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(c)",
+  "questionText": "Complete the plan and elevation to include the cube-shaped packaging.",
+  "stem": "The 3-D graphic on the right shows lollipops which are to be distributed as promotional gifts at a trade show. Each lollipop is packaged in a cube as shown. The cube is as small as possible and the stick emerges centrally from one of its faces. The plan and elevation of one of the lollipops is shown in Fig. B-3 below. An auxiliary view which includes the cube shaped packaging is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(29)"
+  },
+  "totalMarks": 29,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-b3c-r1",
+    "kind": "criterion",
+    "verbatim": "Plan and elevation of cube-shaped packaging",
+    "marks": 29,
+    "permittedMarks": [
+     0,
+     29
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Projection from auxiliary elevation to plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Establishment of correct widths in plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Completion of correct plan of cube to include hidden detail",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Projections from plan to elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Transfer of heights to elevation (1x4)",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Completion of correct elevation of cube to include hidden detail …..(9,3)",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       3,
+       9,
+       12
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Hidden detail of stick in plan and elevation …..(2,2)",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and elevation of cube-shaped packaging' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1a-1",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a) — Earthworks between A and B (Level) - Embankment",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at 5 metre vertical intervals on a proposed golf course. ABC is the centreline of a proposed fairway and O is the centre of the circular curve which forms the putting green. The fairway ABC and putting green have the following specifications: the section of the fairway between A and B is level at an altitude of 75m; the putting green is also level at an altitude of 75m; the section of the fairway from B to C has a gradient of 1 in 20 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments complete the earthworks necessary to accommodate the putting green and the fairway on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1a-1-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c1a-1-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between A and B (Level) - Embankment' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1a-2",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a) — Earthworks between A and B (Level) - Cutting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at 5 metre vertical intervals on a proposed golf course. ABC is the centreline of a proposed fairway and O is the centre of the circular curve which forms the putting green. The fairway ABC and putting green have the following specifications: the section of the fairway between A and B is level at an altitude of 75m; the putting green is also level at an altitude of 75m; the section of the fairway from B to C has a gradient of 1 in 20 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments complete the earthworks necessary to accommodate the putting green and the fairway on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1a-2-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 5mm intervals",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c1a-2-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between A and B (Level) - Cutting' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1a-3",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a) — Earthworks for Putting Green (Level) - Embankment",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at 5 metre vertical intervals on a proposed golf course. ABC is the centreline of a proposed fairway and O is the centre of the circular curve which forms the putting green. The fairway ABC and putting green have the following specifications: the section of the fairway between A and B is level at an altitude of 75m; the putting green is also level at an altitude of 75m; the section of the fairway from B to C has a gradient of 1 in 20 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments complete the earthworks necessary to accommodate the putting green and the fairway on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1a-3-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel curves at 7.5mm intervals",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1a-3-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 2
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks for Putting Green (Level) - Embankment' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1a-4",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a) — Intersection between earthworks for Fairway and Putting Green",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at 5 metre vertical intervals on a proposed golf course. ABC is the centreline of a proposed fairway and O is the centre of the circular curve which forms the putting green. The fairway ABC and putting green have the following specifications: the section of the fairway between A and B is level at an altitude of 75m; the putting green is also level at an altitude of 75m; the section of the fairway from B to C has a gradient of 1 in 20 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments complete the earthworks necessary to accommodate the putting green and the fairway on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1a-4-r1",
+    "kind": "criterion",
+    "verbatim": "Extend curves to establish correct intersection point .....(2,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Intersection between earthworks for Fairway and Putting Green' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1a-5",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a) — Earthworks between B and C (Rising) - Embankment",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at 5 metre vertical intervals on a proposed golf course. ABC is the centreline of a proposed fairway and O is the centre of the circular curve which forms the putting green. The fairway ABC and putting green have the following specifications: the section of the fairway between A and B is level at an altitude of 75m; the putting green is also level at an altitude of 75m; the section of the fairway from B to C has a gradient of 1 in 20 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments complete the earthworks necessary to accommodate the putting green and the fairway on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1a-5-r1",
+    "kind": "point",
+    "verbatim": "Draw required arc",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c1a-5-r2",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1a-5-r3",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 3
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between B and C (Rising) - Embankment' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(b)",
+  "questionText": "In the space provided at the top of the map, draw a vertical section (profile) on the line DE after the earthworks for the fairway ABC have been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1b-r1",
+    "kind": "point",
+    "verbatim": "Measure and draw height lines at 5mm intervals",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1b-r2",
+    "kind": "point",
+    "verbatim": "Projections from intersections between line DE and contours",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1b-r3",
+    "kind": "point",
+    "verbatim": "Draw main right hand portion of profile",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c1b-r4",
+    "kind": "point",
+    "verbatim": "Draw level left hand portion of profile",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c1b-r5",
+    "kind": "point",
+    "verbatim": "Draw middle hyperbolic portion of profile",
+    "marks": 1
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Profile on DE' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c1c",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(c)",
+  "questionText": "A golf ball, positioned at the point E, is struck in a westerly direction. The path of the ball is a parabola which rises to a maximum altitude of 115m having travelled a horizontal distance of 100m (in plan). In the profile view, draw the parabola and determine the position of the point on the green where the ball initially lands.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c1c-r1",
+    "kind": "point",
+    "verbatim": "Establish highest point of ball on flight path",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1c-r2",
+    "kind": "point",
+    "verbatim": "Construction to determine points on parabola",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c1c-r3",
+    "kind": "point",
+    "verbatim": "Draw parabola and identify impact point",
+    "marks": 2
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Parabolic Flight Path' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(a)",
+  "questionText": "Draw the given elevation of the structure.",
+  "stem": "The graphic on the right shows the club house of the Dubai Creek golf and yacht club. The design of the building was inspired by the sails of a ship. The projections of part of the structure are shown in Fig. C-2 below. An isometric view is also given. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabola EBD. The generating parabola ABC is represented by a dotted line in the outline end view. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c2a-r1",
+    "kind": "point",
+    "verbatim": "Draw rectangular outline of parabola",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c2a-r2",
+    "kind": "point",
+    "verbatim": "Construction to determine points on parabola on RHS (or LHS)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c2a-r3",
+    "kind": "point",
+    "verbatim": "Mirror points to other side",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c2a-r4",
+    "kind": "criterion",
+    "verbatim": "Draw parabolic curve in elevation .... (any curve = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-c2a-r5",
+    "kind": "point",
+    "verbatim": "Complete elevation",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation of Structure' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(b)",
+  "questionText": "Draw the end view of the generating parabola ABC.",
+  "stem": "The graphic on the right shows the club house of the Dubai Creek golf and yacht club. The design of the building was inspired by the sails of a ship. The projections of part of the structure are shown in Fig. C-2 below. An isometric view is also given. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabola EBD. The generating parabola ABC is represented by a dotted line in the outline end view. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c2b-r1",
+    "kind": "point",
+    "verbatim": "Draw rectangular outline of parabola",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c2b-r2",
+    "kind": "point",
+    "verbatim": "Construction to determine points on parabola ABC",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c2b-r3",
+    "kind": "criterion",
+    "verbatim": "Draw parabolic curve .....(any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Outline End View' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c2c",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(c)",
+  "questionText": "Project the plan of the structure.",
+  "stem": "The graphic on the right shows the club house of the Dubai Creek golf and yacht club. The design of the building was inspired by the sails of a ship. The projections of part of the structure are shown in Fig. C-2 below. An isometric view is also given. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabola EBD. The generating parabola ABC is represented by a dotted line in the outline end view. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c2c-r1",
+    "kind": "point",
+    "verbatim": "Locate points A, C, E & D",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c2c-r2",
+    "kind": "point",
+    "verbatim": "Establish widths on curve on RHS in plan",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c2c-r3",
+    "kind": "criterion",
+    "verbatim": "Draw curve on RHS in plan .....(any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-c2c-r4",
+    "kind": "point",
+    "verbatim": "Establish widths on curve on LHS in plan",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c2c-r5",
+    "kind": "criterion",
+    "verbatim": "Draw curve on LHS in plan .....(any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Plan of Structure' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c2d",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(d)",
+  "questionText": "Determine the true shape of surface AEC.",
+  "stem": "The graphic on the right shows the club house of the Dubai Creek golf and yacht club. The design of the building was inspired by the sails of a ship. The projections of part of the structure are shown in Fig. C-2 below. An isometric view is also given. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabola EBD. The generating parabola ABC is represented by a dotted line in the outline end view. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c2d-r1",
+    "kind": "point",
+    "verbatim": "Establish widths on true shape (by rabattment or auxiliary view)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c2d-r2",
+    "kind": "point",
+    "verbatim": "Locate points on true shape of curve AEC",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c2d-r3",
+    "kind": "point",
+    "verbatim": "Draw true shape curve",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'True Shape of Surface AEC' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(a)",
+  "questionText": "Draw the regular pentagon and complete the given plan and elevation of surfaces A and B.",
+  "stem": "The concept design for the proposed U.S. Marshals Museum in America is shown in the graphic below. The plan of the building was inspired by the pentagonal star shape on a marshal’s badge. Fig. C-3 shows the plan and elevation of three intersecting triangular surfaces A, B and C, which form part of the structure. The outline plan is based on a regular pentagon.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c3a-r1",
+    "kind": "point",
+    "verbatim": "Draw outline of pentagon in plan",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2014-hl-c3a-r2",
+    "kind": "point",
+    "verbatim": "Identify surfaces A and B in plan",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c3a-r3",
+    "kind": "point",
+    "verbatim": "Determine surfaces A and B in elevation",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of surfaces A and B' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(b)",
+  "questionText": "Determine the dihedral angle between the surfaces A and B.",
+  "stem": "The concept design for the proposed U.S. Marshals Museum in America is shown in the graphic below. The plan of the building was inspired by the pentagonal star shape on a marshal’s badge. Fig. C-3 shows the plan and elevation of three intersecting triangular surfaces A, B and C, which form part of the structure. The outline plan is based on a regular pentagon.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c3b-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c3b-r2",
+    "kind": "point",
+    "verbatim": "View of surfaces showing true length of line of intersection",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c3b-r3",
+    "kind": "point",
+    "verbatim": "X2Y2 perpendicular to line of intersection",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c3b-r4",
+    "kind": "point",
+    "verbatim": "Determination of dihedral angle",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral angle between surfaces A and B' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c3c",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(c)",
+  "questionText": "Determine the vertical trace and the horizontal trace of the plane that contains surface B.",
+  "stem": "The concept design for the proposed U.S. Marshals Museum in America is shown in the graphic below. The plan of the building was inspired by the pentagonal star shape on a marshal’s badge. Fig. C-3 shows the plan and elevation of three intersecting triangular surfaces A, B and C, which form part of the structure. The outline plan is based on a regular pentagon.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c3c-r1",
+    "kind": "point",
+    "verbatim": "Construction to determine point on HT (or VT)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c3c-r2",
+    "kind": "point",
+    "verbatim": "Draw HT (by establishing 2nd point or identifying parallel relationship)",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c3c-r3",
+    "kind": "point",
+    "verbatim": "Draw VT (by establishing 2nd point or identifying parallel relationship)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Traces of plane containing surface B' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c3d",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(d)",
+  "questionText": "The dihedral angle between surfaces B and C is 160°. Complete the projections of surface C.",
+  "stem": "The concept design for the proposed U.S. Marshals Museum in America is shown in the graphic below. The plan of the building was inspired by the pentagonal star shape on a marshal’s badge. Fig. C-3 shows the plan and elevation of three intersecting triangular surfaces A, B and C, which form part of the structure. The outline plan is based on a regular pentagon.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c3d-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c3d-r2",
+    "kind": "point",
+    "verbatim": "View of surface B showing true length of line of intersection",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2014-hl-c3d-r3",
+    "kind": "point",
+    "verbatim": "X2Y2 perpendicular to line of intersection",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c3d-r4",
+    "kind": "point",
+    "verbatim": "Edge view of surface B",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c3d-r5",
+    "kind": "point",
+    "verbatim": "Draw surface C in 2nd auxiliary view (160° angle)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c3d-r6",
+    "kind": "point",
+    "verbatim": "Complete surface C in plan and elevation",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of surface C' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c4a",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(a)",
+  "questionText": "The graphic on the right shows a crank and slider mechanism in a steam engine. A similar link mechanism is shown, in line diagram format, in Fig. C-4(a) below. Crank OA, which is 35mm long, rotates at a constant speed in an anti-clockwise direction through 360° about point O. The link AB, which is 140mm long, is pin-jointed to the crank OA and is constrained to slide through the fixed point S. Plot the locus of point B for this movement.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(23)"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c4a-r1",
+    "kind": "criterion",
+    "verbatim": "Draw circular path, link OA, point S and link AB as given....(5x1)",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "dcg-2014-hl-c4a-r2",
+    "kind": "point",
+    "verbatim": "Divide circle into equal parts (min 12)",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c4a-r3",
+    "kind": "point",
+    "verbatim": "Draw arm AB in all positions",
+    "marks": 11
+   },
+   {
+    "id": "dcg-2014-hl-c4a-r4",
+    "kind": "criterion",
+    "verbatim": "Draw required locus (incl. turning points) ....(any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Link Mechanism' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(b)",
+  "questionText": "The 3D graphic on the right shows a radial plate cam, which is used in the steam engine. A 2D drawing of the cam is shown in Fig. C-4(b) below. The cam is based on an archimedian spiral which allows for a rapid fall of the inline, knife-edge follower. Draw the given cam profile and plot the follower displacement diagram for one anti-clockwise rotation of the cam. (In the displacement diagram, use a distance of 12mm to represent each 30° interval.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c4b-r1",
+    "kind": "criterion",
+    "verbatim": "Cam and Displacement Diagram",
+    "marks": 22,
+    "permittedMarks": [
+     0,
+     22
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw camshaft",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw line AB",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Divide circle into 12 equal parts",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Construction to determine points on archimedian spiral",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Draw spiral .... (any = 1)",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Horizontal divisions on displacement diagram",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Transfer of heights to displacement diagram",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Complete displacement diagram",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Cam and Displacement Diagram' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-1",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Assembly",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-1-r1",
+    "kind": "point",
+    "verbatim": "Relative positioning of components",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme heads this 'Assembly' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-2",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Base",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-2-r1",
+    "kind": "point",
+    "verbatim": "Outline of section",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2014-hl-c5a-2-r2",
+    "kind": "criterion",
+    "verbatim": "Inner detail (holes x 2, shell, chamfers and fillets) …..(4x1)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Base' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Swivel Shaft",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-3-r1",
+    "kind": "point",
+    "verbatim": "Outline of spherical base and upright bar",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c5a-3-r2",
+    "kind": "point",
+    "verbatim": "Threads",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Swivel Shaft' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Clamping Nut",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-4-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2014-hl-c5a-4-r2",
+    "kind": "criterion",
+    "verbatim": "Inner detail, External chamfers and Internal chamfers ...(1,1,2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Clamping Nut' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Fixed Jaw",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-5-r1",
+    "kind": "point",
+    "verbatim": "Outline of Rectangular portion",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c5a-5-r2",
+    "kind": "point",
+    "verbatim": "Outline of Jaw portion",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Fixed Jaw' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Moving Jaw and Crossbar Nut",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-6-r1",
+    "kind": "point",
+    "verbatim": "Outline of Rectangular portion",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c5a-6-r2",
+    "kind": "point",
+    "verbatim": "Outline of Jaw portion",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c5a-6-r3",
+    "kind": "point",
+    "verbatim": "Inner detail (Slot, two Holes & Crossbar Nut)",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Moving Jaw and Crossbar Nut' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-7",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Adjusting Screw",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-7-r1",
+    "kind": "criterion",
+    "verbatim": "Right hand end, Middle portion and threaded bar .....(1,1,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Adjusting Screw' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-8",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Retaining Screw",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-8-r1",
+    "kind": "criterion",
+    "verbatim": "Screw head, threaded portion & cylindrical end .....(1,1,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Retaining Screw' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5a-9",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a) — Drawing Completion",
+  "questionText": "Details of a miniature Bench Vice are shown in Fig. C-5. The vice is adjustable and can be tilted and rotated. A parts list and a 3D graphic of the parts are also given. Draw a full size sectional elevation, on A-A, of the vice in the horizontal position, showing the parts fully assembled and with the jaw faces 30mm apart. (All fillets are 6mm, all chamfers are 2×45º. Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5a-9-r1",
+    "kind": "criterion",
+    "verbatim": "Presentation, Hatching and Centrelines …(1,1,1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Drawing Completion' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2014-hl-c5b",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(b)",
+  "questionText": "Determine, on your drawing, the position of point P when the jaws are fully closed and the vice is tilted fully to the left.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2014-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2014-hl-c5b-r1",
+    "kind": "point",
+    "verbatim": "Establish P in Closed position",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2014-hl-c5b-r2",
+    "kind": "criterion",
+    "verbatim": "Location of P after rotation (rotation arc and final position) ...(1,1)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Position of P after Closing and Rotation' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
   "id": "dcg-2015-hl-a1a",
   "topicId": "design-and-communication-graphics-0-10",
   "conceptId": "dcg-0-10",
