@@ -1,0 +1,202 @@
+{
+  "year": 2014,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewDate": "2026-10-07",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Correct-answer/map-box selection, not alternative valid task routes."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil Óstán na Páirce? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Correct-answer/map-box selection, not alternative valid task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Cén rogha atá déanta ag Seosamh?",
+      "decision": "Narrative or source-retrieval wording, not a candidate task-choice menu."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna eile",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically generate AB,AC,BC with both full sources and all ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically generate AB,AC,BC with both full sources and all ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "chomh cáiliúil le Sliabh Fuji sa tSeapáin nó le Sliabh Sinai san Éigipt. Tagann na sluaite ó chian is ó chóngar",
+      "decision": "Narrative or source-retrieval wording, not a candidate task-choice menu."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu. (30 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 13,
+      "raw": "FREAGAIR GACH CEIST (4 AGUS 5)",
+      "decision": "Both Q4/Q5 required, one A/B in each. Three internal form jobs make four Q4 routes times two stories: eight90-mark writing products."
+    },
+    {
+      "page": 14,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4/Q5 required, one A/B in each. Three internal form jobs make four Q4 routes times two stories: eight90-mark writing products."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Both Q4/Q5 required, one A/B in each. Three internal form jobs make four Q4 routes times two stories: eight90-mark writing products."
+    },
+    {
+      "page": 15,
+      "raw": "Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: ……………………………………………………..",
+      "decision": "Five school subjects and three hobbies are open content. Scheme transport/social-media examples are indicative acceptable answers, not printed finite task pools."
+    },
+    {
+      "page": 15,
+      "raw": "Luaigh trí chaitheamh aimsire atá agat: ………………......…………………..…………………………..",
+      "decision": "Five school subjects and three hobbies are open content. Scheme transport/social-media examples are indicative acceptable answers, not printed finite task pools."
+    },
+    {
+      "page": 15,
+      "raw": "Cén post ba mhaith leat? Cuir tic le ceann amháin ():",
+      "decision": "Closed choose-one job pool: Cócaire,Doirseoir,Freastalaí. Three whole40-mark forms, each paired with both50-mark stories."
+    },
+    {
+      "page": 16,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4/Q5 required, one A/B in each. Three internal form jobs make four Q4 routes times two stories: eight90-mark writing products."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Both Q4/Q5 required, one A/B in each. Three internal form jobs make four Q4 routes times two stories: eight90-mark writing products."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2014/LC001BLP017IV.mp3",
+    "verification": "HTTP200 audio/mpeg, 35403117 bytes; browser readyState4, duration1475.056292seconds, playback advanced in both Bank and Atlas.",
+    "contentType": "audio/mpeg",
+    "contentLength": 35403117,
+    "durationSeconds": 1475.056292
+  },
+  "sourceFindings": [
+    "All20paper/24scheme pages swept. Total360=120aural+40matching+50Q2+60Q3+40Q4+50Q5. BothQ4/Q5 required. Three jobs in form→eightwritingproducts.",
+    "Listening14 exact0/full tasks,maptopright; matchingDCIHAGEJFB. All original pictures/map and officialrecording retained.",
+    "Q2 Woodiesletter,Aerfort Dhún na nGall brochure,Deartháireacha ar iarraidh i measc na sléibhte news. Q3 Réalta Spóirt TG4 Máire Treasa Ní Dhubhghaill,Talamh Beannaithe Stairiúil Cruach Phádraig,Mo Mhamó withfullthree stanzas/twoillustrations. Q3C schemePDF7.",
+    "Q3A4 Éadaí faiseanta/faiseanta/bothprintedfullsentences6. Q3B2 autumncelebration or homage tosun6,bareceiliúradh3. Q3C2 lastline orlasttwo lines6;oneextraline−2,wholeverse−4. Scores0/2/4/6 confined tooneanswer; readingpairs inherit.",
+    "NoticePDF14/scheme9–12. Music session inhotel,SharonShannon,moneyScoilLorcáin/sportshall.1+8+13+4+4+language10. Preserveprinted activity/place/date/pasttense/fee/guest/beneficiary partialrules. Guestbare−3/contextpartial−2; beneficiarycontextpartial−1,bareHallaSpóirtNua−2,bareHallaSpóirt/ScoilLorcáin−3.",
+    "FormPDF15/scheme13–14: Séamas Ó Néill,Óstán na Trá,Loch Garman. Cócaire/Doirseoir/Freastalaí are three finitechoices. Fields15 = doubled30 then÷2 roundedup once(21÷2=10½→11); paragraph15,language10shared. Schoolsubjects5,hobbies3andtransportanswer are open; atmostone socialmediahobby counted. SchemeacceptsArdteist,TeastasSóisearach,Meánteist.",
+    "Formparagraph40words; relevant15/offtopic5,proportionalparagraphaward deduction30words→25%. No2016-specific8ceiling. Wholeformlanguage10coversfields+paragraph.",
+    "5A Féile Cheoil scheme15;5B witnesscycling/car accident scheme16.37communication+13language,fivereferences/eachpicturecoveredin5B,−5communicationceilingpermissingreference.90words;45words→approximately50%offwholeawardedmark. Onefinalstorycriterion isolateslengthadjustmentinpairedroute.",
+    "GeneralstandardwritingPDF8includes spellingwithout excessiveemphasis. ModifiedschemePDF17 scalesfour-marklanguagescoreto10/13;notstandard. Transcripts18–21;22–23blank;24cover. Font-specific Cambriafooter/Calibri-space/Symbolarrowbulletdivision/Wingdingsbullet mappings visuallyreviewed;unknowncharactersfail,originalPDFuntouched.",
+    "Runtime visual comparison detected missing CCITT/JBIG2 illustrations in PDF.js. Versioned decoder assets now ship for every reader; source PDFs unchanged. Original artwork visually verified after repair."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": "390×844",
+    "bankRoutes": 17,
+    "atlasRoutes": 11,
+    "sourcePages": "All expected canvases rendered; navigation and close/focus passed; no horizontal overflow.",
+    "audio": "Official recording played in Bank and Atlas.",
+    "imageDecoding": "PDF.js6 requires decoder assets. Configured versioned assets for embedded readers and full Viewer; restored both Mo Mhamó illustrations (980/1323 dark pixels in independent image regions). All28 routes rerun with decoder warnings treated as errors; none. Poem-reader regression2015–2025 passed and screenshots visually inspected.",
+    "errors": []
+  }
+}

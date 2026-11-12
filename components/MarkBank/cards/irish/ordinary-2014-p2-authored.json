@@ -1,0 +1,4226 @@
+{
+  "review": {
+    "year": 2014,
+    "level": "ordinary",
+    "paperFileid": "LC001GLP200IV.pdf",
+    "schemeFileid": "LC001GLP000IV.pdf",
+    "paperSha256": "6411dc24c9591b142117751f10da553afd9e7dbc1bce403942435bbda9a443d4",
+    "schemeSha256": "c81408cfd36cef0f7ae4633e06a546ef0d23ea1ad2ded33a519c61c02dd5b09a",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reviewedSchemePages": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "schemeScope": "Combined Ordinary scheme. PDF 12–13 Léamhthuiscint A (with the Paper 2 heading; its language deduction and penalty note at the end of 13); 14–15 Léamhthuiscint B (its language deduction and penalty note on 16); 17 Prós Ainmnithe (2A); 18 Prós Roghnach (2B); 19–21 Filíocht Ainmnithe (3A, its language deduction and the examiner’s note on 21); 22–23 Filíocht Roghnach (3B); 24 modified marking (SMM, no bands). PDF 1–11 belong to Paper 1; 25–27 are blank and 28 empty.",
+    "reviewDate": "2026-11-05",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 3,
+        "raw": "FREAGAIR GACH CEIST (1, 2 AGUS 3).",
+        "decision": "Paper structure: every question (Ceist 1, 2 and 3) is required; Ceist 2 and Ceist 3 each offer A or B (classified on pages 8 and 10)."
+      },
+      {
+        "page": 3,
+        "raw": "nó",
+        "decision": "Names the alternative section in the instructions box (A or B); the choice itself is classified on pages 8 and 10."
+      },
+      {
+        "page": 3,
+        "raw": "ROGHNACH (B) (lch 9)",
+        "decision": "Page guide naming where each optional section is printed; not a task."
+      },
+      {
+        "page": 3,
+        "raw": "ROGHNACH (B) (lch 12)",
+        "decision": "Page guide naming where each optional section is printed; not a task."
+      },
+      {
+        "page": 4,
+        "raw": "Freagair A agus B anseo.",
+        "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is its own 5-mark practice card beside the whole question."
+      },
+      {
+        "page": 4,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Required reading instruction: every question on the passage is answered; no selection."
+      },
+      {
+        "page": 4,
+        "raw": "Tá stíl dhifriúil ag an dá shaghas rince seo.",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "cosúlacht mhór idir an dá ealaín. Is féidir scéal",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "deirfiúr amháin aici. Gaeilge a labhair a muintir",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "i mBaile Átha Cliath. Tá deartháir amháin agus",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 5,
+        "raw": "Ainmnigh an dá scoil ar fhreastail Sibéal orthu. (Alt 2)",
+        "decision": "Two required answers inside one printed reading part priced first correct 3, second 2 (“An chéad scoil atá cruinn = 3 mharc; an dara scoil luaite agus cruinn = 2 mharc”); the two schools are the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 5,
+        "raw": "Scríobh síos dhá phíosa eolais faoina céad scannán. (Alt 3)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 5,
+        "raw": "Tabhair dhá phíosa eolais faoin rince Gaelach. (Alt 4)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 6,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Required reading instruction: every question on the passage is answered; no selection."
+      },
+      {
+        "page": 6,
+        "raw": "fhaigheann sise obair mar aisteoir i Meiriceá nó",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "nár roghnaíodh Brian don",
+        "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+      },
+      {
+        "page": 7,
+        "raw": "Luaigh dhá scil atá ag Brian mar imreoir. (Alt 4)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (“Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc”); the scheme’s list of eight accepted skills is the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 7,
+        "raw": "Luaigh plean amháin atá ag Brian nuair a éireoidh sé as an rugbaí. (Alt 5)",
+        "decision": "One required answer inside one printed reading part; the scheme accepts either of two plans (each 5, with a 3-mark partial), the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 7,
+        "raw": "Scríobh síos rud amháin a tharla ar an ócáid speisialta do Bhrian ar an gcéad lá de Shamhain",
+        "decision": "One required answer inside one printed reading part (“Rud amháin as na rudaí seo a leanas:”); the scheme’s four accepted answers are the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 8,
+        "raw": "PRÓS – AINMNITHE nó ROGHNACH (50 marc)",
+        "decision": "Boxed question heading naming both sections (A or B); the choice is classified on the next line."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "decision": "Closed choose-one of two sections (A prescribed or B optional); each section’s printed questions are their own cards, and the instruction is each card’s task check. Choice is not a route: no combination cards."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+      },
+      {
+        "page": 8,
+        "raw": "Luaigh na pointí seo:",
+        "decision": "Required: the summary covers all five printed points (i)–(v) of 2A(a) Hurlamaboc, which the scheme prices “5 phointe eolais agus 5 mharc ar gach pointe eolais”; each point is its own 5-mark criterion and its own practice card."
+      },
+      {
+        "page": 9,
+        "raw": "B – PRÓS ROGHNACH –",
+        "decision": "Boxed section heading naming the section, not a separate route; it leads in to the section’s cards."
+      },
+      {
+        "page": 9,
+        "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+        "decision": "Restriction on content, not a route; it is the section cards’ printed lead-in and is in their task checks."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+      },
+      {
+        "page": 9,
+        "raw": "(a) Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route. “ainmnigh an príomhcharachtar” is its own printed ask, priced 1 mharc in the scheme and its own criterion."
+      },
+      {
+        "page": 9,
+        "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      },
+      {
+        "page": 10,
+        "raw": "FILÍOCHT – AINMNITHE nó ROGHNACH (50 marc)",
+        "decision": "Boxed question heading naming both sections (A or B); the choice is classified on the next line."
+      },
+      {
+        "page": 10,
+        "raw": "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "decision": "Closed choose-one of two sections (A prescribed or B optional); each section’s printed questions are their own cards, and the instruction is each card’s task check. Choice is not a route: no combination cards."
+      },
+      {
+        "page": 10,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+      },
+      {
+        "page": 10,
+        "raw": "Luaigh an rud is mó a theastaíonn ón ainmhí anois.",
+        "decision": "One required answer: the fourth of the four printed questions inside 3A(a)(i) Géibheann, priced (2 mharc); its own practice card."
+      },
+      {
+        "page": 10,
+        "raw": "Inis i d’fhocail féin, cén saghas ainmhí é an t-ainmhí seo. (Is leor dhá phointe eolais.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá phointe eolais = 4 mharc + 4 mharc”, “Dhá shampla den mhothúchán = 4 mharc + 4 mharc”) and its sample points, where it prints any, are the answer key for one task."
+      },
+      {
+        "page": 10,
+        "raw": "Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá phointe eolais = 4 mharc + 4 mharc”, “Dhá shampla den mhothúchán = 4 mharc + 4 mharc”) and its sample points, where it prints any, are the answer key for one task."
+      },
+      {
+        "page": 11,
+        "raw": "Cad is téama don dán Colscaradh (thíos), dar leat? Tabhair dhá phointe eolais faoin",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá phointe eolais = 4 mharc + 4 mharc”, “Dhá shampla den mhothúchán = 4 mharc + 4 mharc”) and its sample points, where it prints any, are the answer key for one task."
+      },
+      {
+        "page": 11,
+        "raw": "Inis i d’fhocail féin, cén saghas duine í an bhean sa dán. (Is leor dhá phointe eolais.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá phointe eolais = 4 mharc + 4 mharc”, “Dhá shampla den mhothúchán = 4 mharc + 4 mharc”) and its sample points, where it prints any, are the answer key for one task."
+      },
+      {
+        "page": 11,
+        "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá phointe eolais = 4 mharc + 4 mharc”, “Dhá shampla den mhothúchán = 4 mharc + 4 mharc”) and its sample points, where it prints any, are the answer key for one task."
+      },
+      {
+        "page": 12,
+        "raw": "B – FILÍOCHT ROGHNACH – (50 marc)",
+        "decision": "Boxed section heading naming the section, not a separate route; it leads in to the section’s cards."
+      },
+      {
+        "page": 12,
+        "raw": "Roghnach.",
+        "decision": "Last word of the printed restriction (“… ar an bhFilíocht Roghnach.”); restriction on content, not a route; it is the section cards’ printed lead-in and is in their task checks."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+      },
+      {
+        "page": 12,
+        "raw": "Maidir le dán roghnach nua-aimseartha amháin a scríobh bean agus a ndearna tú",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route. 3B(a) asks for a modern poem by a woman; the scheme’s Treoir gives an old poem 0."
+      },
+      {
+        "page": 12,
+        "raw": "Luaigh dhá íomhá (dhá phictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      },
+      {
+        "page": 12,
+        "raw": "(ar an dá phictiúr) sin sa dán.",
+        "decision": "Continuation of 3B(a)(ii) (“… ar an dá íomhá (ar an dá phictiúr) sin sa dán.”); required content inside one optional question, not a route."
+      },
+      {
+        "page": 12,
+        "raw": "(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      },
+      {
+        "page": 12,
+        "raw": "Maidir le dán roghnach nua-aimseartha amháin a scríobh fear agus a ndearna tú",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route. 3B(b) asks for a modern poem by a man; the scheme’s Treoir gives an old poem 0."
+      },
+      {
+        "page": 12,
+        "raw": "Tabhair dhá phointe eolais faoin téama sin sa dán.",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      },
+      {
+        "page": 12,
+        "raw": "Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin sa dán.",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      },
+      {
+        "page": 12,
+        "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+      }
+    ],
+    "practiceCardIds": [
+      "irish-2014-ol-p2-reading-a-q1-a",
+      "irish-2014-ol-p2-reading-a-q1-b",
+      "irish-2014-ol-p2-reading-a-q2-a",
+      "irish-2014-ol-p2-reading-a-q2-b",
+      "irish-2014-ol-p2-reading-a-q3-a",
+      "irish-2014-ol-p2-reading-a-q3-b",
+      "irish-2014-ol-p2-reading-a-q4-a",
+      "irish-2014-ol-p2-reading-a-q4-b",
+      "irish-2014-ol-p2-reading-a-q5-a",
+      "irish-2014-ol-p2-reading-a-q5-b",
+      "irish-2014-ol-p2-reading-b-q1-a",
+      "irish-2014-ol-p2-reading-b-q1-b",
+      "irish-2014-ol-p2-reading-b-q2-a",
+      "irish-2014-ol-p2-reading-b-q2-b",
+      "irish-2014-ol-p2-reading-b-q3-a",
+      "irish-2014-ol-p2-reading-b-q3-b",
+      "irish-2014-ol-p2-reading-b-q4-a",
+      "irish-2014-ol-p2-reading-b-q4-b",
+      "irish-2014-ol-p2-reading-b-q5-a",
+      "irish-2014-ol-p2-reading-b-q5-b",
+      "irish-2014-ol-p2-prose-2a-a-i",
+      "irish-2014-ol-p2-prose-2a-a-ii",
+      "irish-2014-ol-p2-prose-2a-a-iii",
+      "irish-2014-ol-p2-prose-2a-a-iv",
+      "irish-2014-ol-p2-prose-2a-a-v",
+      "irish-2014-ol-p2-poetry-3a-a-i",
+      "irish-2014-ol-p2-poetry-3a-a-i-a",
+      "irish-2014-ol-p2-poetry-3a-a-i-b",
+      "irish-2014-ol-p2-poetry-3a-a-i-c",
+      "irish-2014-ol-p2-poetry-3a-a-i-d",
+      "irish-2014-ol-p2-poetry-3a-a-ii",
+      "irish-2014-ol-p2-poetry-3a-a-iii",
+      "irish-2014-ol-p2-poetry-3a-b-i",
+      "irish-2014-ol-p2-poetry-3a-b-ii",
+      "irish-2014-ol-p2-poetry-3a-b-iii"
+    ],
+    "questionCardIds": [
+      "irish-2014-ol-p2-reading-a-q1",
+      "irish-2014-ol-p2-reading-a-q2",
+      "irish-2014-ol-p2-reading-a-q3",
+      "irish-2014-ol-p2-reading-a-q4",
+      "irish-2014-ol-p2-reading-a-q5",
+      "irish-2014-ol-p2-reading-b-q1",
+      "irish-2014-ol-p2-reading-b-q2",
+      "irish-2014-ol-p2-reading-b-q3",
+      "irish-2014-ol-p2-reading-b-q4",
+      "irish-2014-ol-p2-reading-b-q5",
+      "irish-2014-ol-p2-prose-2a-a",
+      "irish-2014-ol-p2-prose-2a-b",
+      "irish-2014-ol-p2-prose-2b-a",
+      "irish-2014-ol-p2-prose-2b-b",
+      "irish-2014-ol-p2-poetry-3a-a",
+      "irish-2014-ol-p2-poetry-3a-b",
+      "irish-2014-ol-p2-poetry-3b-a",
+      "irish-2014-ol-p2-poetry-3b-b"
+    ],
+    "readingWholeCardIds": [
+      "irish-2014-ol-p2-reading-a-q1",
+      "irish-2014-ol-p2-reading-a-q2",
+      "irish-2014-ol-p2-reading-a-q3",
+      "irish-2014-ol-p2-reading-a-q4",
+      "irish-2014-ol-p2-reading-a-q5",
+      "irish-2014-ol-p2-reading-b-q1",
+      "irish-2014-ol-p2-reading-b-q2",
+      "irish-2014-ol-p2-reading-b-q3",
+      "irish-2014-ol-p2-reading-b-q4",
+      "irish-2014-ol-p2-reading-b-q5"
+    ],
+    "examStructure": {
+      "readingA": 50,
+      "readingB": 50,
+      "prose": 50,
+      "poetry": 50,
+      "total": 200
+    },
+    "nonPoolDecisions": [
+      "Reading: all ten questions are required; each printed (a)/(b) part is a 5-mark practice card beside the whole question. Two-point items (“3 mharc + 2 mharc”, “An chéad … = 3 mharc; an dara … = 2 mharc”) are order-dependent (first correct point 3, second 2) and stay whole at 0/3/5; single answers allow 0/5, or 0/3/5 where the scheme prints a 3-mark partial answer.",
+      "Reading language: “Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.” is one deduction from each 50-mark passage total; cards state it without applying it inside a part.",
+      "Prescribed prose (2A): (a) Hurlamaboc asks for a summary covering five printed points (“Luaigh na pointí seo: (i) … (v)”) and the scheme prices it “5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)”: the whole question is a 25-mark card with each printed point its own 5-mark criterion, and every point is also a practice card. (b) Oisín i dTír na nÓg is a 25-mark card (five points at 2 + 3); 2014 prints no film or play in 2A.",
+      "Prescribed poetry (3A): each poem is a whole 25-mark card with its printed tariffs ((a) Géibheann: (i) 8, (ii) 8, (iii) 9; (b) Colscaradh: (i) 8, (ii) 8, (iii) 9) and one 0–4 Gaeilge deduction; every printed sub-question is also a practice card. 3A(a)(i) prints four questions (a)–(d) at 2 each: each question is also its own practice card.",
+      "Optional prose (2B) and optional poetry (3B) stay whole: the text is open content chosen by the candidate. 2B(a) is a novel extract (protagonist 1, five points 22, title and author 2); 2B(b) a folk tale (five points 23, title 2); 2014 prints no optional film or play. 3B(a) asks for a modern poem by a woman and 3B(b) a modern poem by a man.",
+      "Choice is not a route: Ceist 2 and Ceist 3 are each A or B; each printed question is one card carrying the printed choice and “Freagair (a) agus (b) anseo.”; no combination cards.",
+      "Literature language: “[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]” is one deduction from each 25-mark question, never inside one sub-question."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Paper 2 = 200: Ceist 1 reading 100 (A Sibéal Davitt – Rinceoir ar an Sean-Nós 50, B Brian Ó Drisceoil - Laoch Mór Rugbaí 50; ten questions at (a) 5 + (b) 5 each), Ceist 2 prose 50 (A Prós Ainmnithe: (a) Hurlamaboc 25 + (b) Oisín i dTír na nÓg 25; or B Prós Roghnach: (a) giota as úrscéal 25 + (b) scéal béaloidis 25), Ceist 3 poetry 50 (A Filíocht Ainmnithe: (a) Géibheann 25 + (b) Colscaradh 25; or B Filíocht Roghnach: (a) a modern poem by a woman 25 + (b) a modern poem by a man 25).",
+      "The scheme draws its bullets with the SymbolMT glyph “x” (PDF 12–15); Calibri draws one space inside text as glyph 3, which the text layer returns as U+0003 (PDF 13 “Isi nGaeltacht Chonamara”, printed “Is i nGaeltacht Chonamara”). The builder reads each span with its font, maps only the reviewed SymbolMT glyph, and reads glyph 3 as a space.",
+      "The scheme’s text layer stores ten boxed headings with the page body (“Páipéar II (200 marc)”, “CEIST 1 (A + B) - LÉAMHTHUISCINT - 100 marc”, “A (50 marc)”, “B (50 marc)”, the CEIST 2/3 and section boxes); the builder removes those exact strings (count pinned).",
+      "2014 prints no note above the reading questions; each part prints its own split (“3 mharc + 2 mharc”, “An chéad scoil atá cruinn = 3 mharc; an dara scoil luaite agus cruinn = 2 mharc”). Each passage closes with “[Gaeilge lochtach: 0 - 5 …]” and the penalty note (“Nóta: Gearrfar pionós i ngeall ar iomarcaíocht. … Taispeánfar go soiléir …”); the last part’s key ends before them.",
+      "Reading answers include refused answers printed at 0 (A 1(a) “Chun eolas faoin rince ar an sean-nós = 0”, A 4(a) “Sa Ghaeltacht = 0”), 3-mark partial answers (A 5(a), A 5(b), B 1(b), B 2(a), B 5(b)), and bare lists of accepted points under “Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc” (B 4(a)) and “Rud amháin as na rudaí seo a leanas:” (B 5(a)).",
+      "Hurlamaboc (2A(a)): the scheme reprints the five printed points and prices the answer once, “5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)”, with no sample answers; it does not tie a numbered point to a numbered price, so each printed point taken as one of the five points of information is the reading the cards make.",
+      "Oisín i dTír na nÓg (2A(b)) prints a quotation with its source line (“Oisín i dTír na nÓg”, set in italics at the right) before the question; the card keeps both as printed. The scheme prices it as Hurlamaboc, with no sample points.",
+      "2B(a) prices “Ainm an phríomhcharachtair (na príomhphearsan) = 1 mharc”, then “5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad dá phointe eolais + 4 mharc an ceann ar an trí phointe eolais eile)” (22), then title 1 + author 1, its title line reprinted as “… a scríobh síos go soiléir.” where the paper prints “go cruinn”. 2B(b) prices five points “(5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)” (23) and “Teideal an scéil bhéaloidis = 2 mharc”.",
+      "Géibheann: (i) prints four questions (a)–(d) at (2 mharc) each with “Freagraí samplacha:”; (ii) is priced “(2 phointe eolais ar 4 mharc an ceann)” and (iii) “An mothúchán is láidre a ainmniú = 1 mharc Dhá shampla den mhothúchán = 4 mharc + 4 mharc”; the scheme prints no (8 marc)/(9 marc) of its own for them. Colscaradh (iii) prints its split in brackets: “Is maith / Ní maith = (1 mharc) + dhá fháth = (4 mharc + 4 mharc)”.",
+      "Each 3B key closes with “Iomlán (25 marc)” (the question total, on no criterion) and “Treoir: Má roghnaítear dán seanaimseartha, bronnfar 0 ar an bhfreagra.”, carried as the second guidance line of (i), where the poem is chosen.",
+      "3A and 3B each close with an examiner’s instruction (“Nóta: Caithfidh an Scrúdaitheoir an marc don Ábhar … a thaispeáint go soiléir sna hionaid chuí ar an bhfreagarleabhar.”), where to record marks in the answer book; it is on no card.",
+      "Scheme misprints kept as printed in the guidance: “duais ( €3,500 …)” with a space inside the bracket (A 3(b), last answer); the title line of 2B(a) reprinted “… a scríobh síos go soiléir.” where the paper prints “go cruinn”; in the modified-marking text (PDF 24, on no card) “measunú” for “measúnú”.",
+      "The paper and scheme print ASCII hyphens (“t-ainmhí”, “nua-aimseartha”, “sean-nós”); cards keep them.",
+      "No 2014 Ordinary card existed before this review; the 53 cards are new."
+    ],
+    "choicePolicy": "Choice is not a route: Ceist 2 and Ceist 3 are each A or B, and each section prints two questions, (a) and (b), both to be answered; every printed question is one card carrying the printed choice and “Freagair (a) agus (b) anseo.”; no combination cards.",
+    "boundaries": "10 whole reading questions with their 20 published parts; 8 literature question cards (2A(a) Hurlamaboc, 2A(b) Oisín i dTír na nÓg, 2B(a), 2B(b), 3A(a) Géibheann, 3A(b) Colscaradh, 3B(a), 3B(b)); the 5 printed 2A(a) points, the 6 prescribed-poetry sub-questions and the 4 printed questions inside 3A(a)(i)."
+  },
+  "cards": [
+    {
+      "id": "irish-2014-ol-p2-reading-a-q1",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "1",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 1",
+      "questionText": "1. (a) Cén fáth a ritheann Sibéal ceardlanna rince ar an sean-nós i mBaile Átha Cliath? (Alt 1) (b) Cén post atá ag Sibéal ar an gclár Imeall? (Alt 1)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cén fáth a ritheann Sibéal ceardlanna rince ar an sean-nós i mBaile Átha Cliath? (Alt 1) 5 mharc • Ritheann sí ceardlanna i mBaile Átha Cliath chun eolas faoin rince ar an sean- nós a scaipeadh i measc phobal na cathrach = 5 mharc • Chun eolas faoin rince ar an sean-nós a scaipeadh = 5 mharc • Chun eolas faoin rince ar an sean-nós = 0"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén post atá ag Sibéal ar an gclár Imeall? (Alt 1) 5 mharc • Láithreoir = 5 mharc • Is láithreoir í = 5 mharc • Is moltóir í sa tsraith is déanaí de Glas Vegas agus is láithreoir í freisin ar an gclár Imeall ar TG4 = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q2",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "2",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 2",
+      "questionText": "2. (a) Cár rugadh Sibéal? (Alt 2) (b) Ainmnigh an dá scoil ar fhreastail Sibéal orthu. (Alt 2)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cár rugadh Sibéal? (Alt 2) 5 mharc • Rugadh agus tógadh Sibéal i Raghnallach i mBaile Átha Cliath = 5 mharc • Raghnallach = 5 mharc • Baile Átha Cliath = 5 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Ainmnigh an dá scoil ar fhreastail Sibéal orthu. (Alt 2) 5 mharc An chéad scoil atá cruinn = 3 mharc; an dara scoil luaite agus cruinn = 2 mharc • Scoil Bhríde agus Coláiste Íosagáin • Chuaigh sí ar an mbunscoil i Scoil Bhríde, Raghnallach agus ar an meánscoil i gColáiste Íosagáin ina dhiaidh sin. (Dhá scoil luaite san abairt seo) = 3 mharc + 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q3",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "3",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 3",
+      "questionText": "3. (a) Céard iad na hábhair a ndearna Sibéal staidéar orthu i gColáiste na Tríonóide? (Alt 3) (b) Scríobh síos dhá phíosa eolais faoina céad scannán. (Alt 3)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q3",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12,
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Céard iad na hábhair a ndearna Sibéal staidéar orthu i gColáiste na Tríonóide? (Alt 3) 5 mharc Dhá ábhar = 3 mharc + 2 mharc An chéad ábhar atá cruinn = 3 mharc; an dara hábhar = 2 mharc • Gaeilge agus Scannánaíocht = 5 mharc • Rinne sí staidéar ar an nGaeilge agus ar an scannánaíocht ansin = 5 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Scríobh síos dhá phíosa eolais faoina céad scannán. (Alt 3) 5 mharc Dhá phíosa eolais ag teastáil = 3 mharc + 2 mharc • Bhí sí ar an ollscoil fós nuair a rinne sí a céad scannán a stiúradh • Gearrscannán a bhí ann • Potaisiam an t-ainm a bhí air • A deirfiúr Anna a bhí sa phríomhpháirt • Bhuaigh an scannán seo duais ( €3,500 ag Oireachtas na Gaeilge in 2010)"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q4",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "4",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 4",
+      "questionText": "4. (a) Cá háit is mó a mbíonn an rince ar an sean-nós ar siúl? (Alt 4) (b) Tabhair dhá phíosa eolais faoin rince Gaelach. (Alt 4)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q4",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Cá háit is mó a mbíonn an rince ar an sean-nós ar siúl? (Alt 4) 5 mharc • Is i nGaeltacht Chonamara is mó a bhíonn an rince ar an sean-nós ar siúl = 5 mharc • Conamara = 5 mharc • I nGaeltacht Chonamara = 5 mharc • Sa Ghaeltacht = 0"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Tabhair dhá phíosa eolais faoin rince Gaelach. (Alt 4) 5 mharc Dhá phíosa eolais = 3 mharc + 2 mharc • Bíonn an corp díreach • Bíonn na rinceoirí ag gluaiseacht ar fud an urláir • Bíonn grúpaí ag rince le chéile • Bíonn na rinceoirí ag gluaiseacht = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q5",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "5",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 5",
+      "questionText": "5. (a) Cén chosúlacht mhór a fheiceann Sibéal idir an rince agus an scannánaíocht? (Alt 5) (b) Cén cúrsa atá á dhéanamh ag Sibéal faoi láthair? (Alt 5)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q5",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Cén chosúlacht mhór a fheiceann Sibéal idir an rince agus an scannánaíocht? (Alt 5) 5 mharc • Is féidir scéal a insint sa dá cheann acu gan teanga ar bith a úsáid = 5 mharc • Is féidir scéal a insint = 3 mharc • Is féidir scéal a insint sa dá cheann acu = 3 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén cúrsa atá á dhéanamh ag Sibéal faoi láthair? (Alt 5) 5 mharc • Cúrsa sa rince comhaimseartha = 5 mharc • Cúrsa sa rince = 3 mharc • Tá cúrsa sa rince comhaimseartha á dhéanamh ag Sibéal in Ollscoil Luimnigh faoi láthair = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q1",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "6",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 1",
+      "questionText": "1. (a) Cár rugadh Brian Ó Drisceoil? (Alt 1) (b) Cén comórtas a bhuaigh foireann Bhriain sa bhliain 1998? (Alt 1)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cár rugadh Brian Ó Drisceoil? (Alt 1) 5 mharc • I gCluain Tarbh i mBaile Átha Cliath = 5 mharc • I gCluain Tarbh i mBaile Átha Cliath a rugadh é ar an gcéad lá is fiche d’Eanáir 1979 = 5 mharc • I gCluain Tarbh = 5 mharc • I mBaile Átha Cliath = 5 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén comórtas a bhuaigh foireann Bhriain sa bhliain 1998? (Alt 1) 5 mharc • Corn Rugbaí an Domhain faoi naoi mbliana déag = 5 mharc • Bhí sé ar fhoireann na hÉireann nuair a bhuaigh siad Corn Rugbaí an Domhain faoi naoi mbliana déag sa bhliain 1998 = 5 mharc • Corn Rugbaí an Domhain = 3 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q2",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "7",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 2",
+      "questionText": "2. (a) Cén fáth ar bhliain thábhachtach í 1999 do Bhrian Ó Drisceoil? (Alt 2) (b) Cad a bhuaigh Éire in 2009 nuair a bhí Brian Ó Drisceoil ina chaptaen? (Alt 2)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cén fáth ar bhliain thábhachtach í 1999 do Bhrian Ó Drisceoil? (Alt 2) 5 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann ar leibhéal na sinsear den chéad uair = 5 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann ar leibhéal na sinsear = 3 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann = 0"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cad a bhuaigh Éire in 2009 nuair a bhí Brian Ó Drisceoil ina chaptaen? (Alt 2) 5 mharc • Bhuaigh Éire an ‘Grand Slam’ = 5 mharc • In 2009, nuair a bhí sé ina chaptaen, bhuaigh Éire an ‘Grand Slam’ den chéad uair ón mbliain 1948 = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q3",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "8",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 3",
+      "questionText": "3. (a) Cad a tharla do Bhrian sa chéad chluiche i gcoinne na All Blacks in 2005? (Alt 3) (b) Cén fáth a raibh fearg ar a lán de lucht leanúna an rugbaí anuraidh? (Alt 3)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q3",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14,
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Cad a tharla do Bhrian sa chéad chluiche i gcoinne na All Blacks in 2005? (Alt 3) 5 mharc • Gortaíodh go dona é = 5 mharc • Bhí sé ina chaptaen ar na Leoin sa Nua-Shéalainn in 2005 ach gortaíodh go dona é sa chéad chluiche i gcoinne na All Blacks = 5 mharc • Rinneadh drochionsaí air = 5 mharc • Cuireadh a ghualainn as alt = 5 mharc • B’éigean é a iompar den pháirc ar shínteán = 5 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth a raibh fearg ar a lán de lucht leanúna an rugbaí anuraidh? (Alt 3) 5 mharc • Nuair nár roghnaíodh Brian don mhórchluiche deireanach = 5 mharc • D’imir sé sa chéad dá mhórchluiche ansin ach bhí fearg ar a lán de lucht leanúna an rugbaí nuair nár roghnaíodh Brian don mhórchluiche deireanach = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q4",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "9",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 4",
+      "questionText": "4. (a) Luaigh dhá scil atá ag Brian mar imreoir. (Alt 4) (b) Cén fáth ar bhronn Comhairle Cathrach Bhaile Átha Cliath Saoirse na Cathrach air? (Alt 4)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Luaigh dhá scil atá ag Brian mar imreoir. (Alt 4) 5 mharc Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc • Tá sé láidir. • Tá sé cróga. • Is lúthchleasaí iontach é. • Captaen den scoth ba ea é. • Bhí tionchar láidir aige ar na himreoirí eile. • Spreag sé iad sa seomra gléasta agus ar pháirc na himeartha. • Sárimreoir rugbaí is ea Brian Ó Drisceoil. • Thuig sé gur ghá do na himreoirí a n-aigne a choimeád ar an imirt i gcónaí chun an cluiche a bhuachan."
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth ar bhronn Comhairle Cathrach Bhaile Átha Cliath Saoirse na Cathrach air? (Alt 4) 5 mharc • Thug siad aitheantas dó as a ról inspioráideach mar imreoir rugbaí = 5 mharc • Thug Comhairle Cathrach Bhaile Átha Cliath aitheantas dó as a ról inspioráideach mar imreoir rugbaí nuair a bhronn siad Saoirse na Cathrach air le déanaí = 5 mharc • Thug Comhairle Cathrach Bhaile Átha Cliath aitheantas dó as a ról inspioráideach = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q5",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "10",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 5",
+      "questionText": "5. (a) Scríobh síos rud amháin a tharla ar an ócáid speisialta do Bhrian ar an gcéad lá de Shamhain 2013. (Alt 5) (b) Luaigh plean amháin atá ag Brian nuair a éireoidh sé as an rugbaí. (Alt 5)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "(a) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Scríobh síos rud amháin a tharla ar an ócáid speisialta do Bhrian ar an gcéad lá de Shamhain 2013. (Alt 5) 5 mharc Rud amháin as na rudaí seo a leanas: • Tugadh onóir speisialta do Bhrian = 5 mharc • Bhí níos mó ná míle duine i láthair = 5 mharc • Taispeánadh cuid de ghaiscí rugbaí Bhriain ar an scáileán mór = 5 mharc • Bhí a lán daoine ag caint agus ag moladh a chuid tallann iontach rugbaí = 5 mharc"
+          ]
+        },
+        {
+          "id": "b",
+          "label": "(b) Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Luaigh plean amháin atá ag Brian nuair a éireoidh sé as an rugbaí. (Alt 5) 5 mharc • Rachaidh sé ag taisteal lena bhean chéile, Amy, má fhaigheann sise obair mar aisteoir i Meiriceá nó i Sasana = 5 mharc • Rachaidh sé ag taisteal lena bhean chéile = 3 mharc • Rachaidh sé ag taisteal = 0 • Ba mhaith leis obair charthanach a dhéanamh le cumainn a chabhraíonn le páistí = 5 mharc • Ba mhaith leis obair charthanach a dhéanamh = 3 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete printed question: (a) 5 + (b) 5, each scored separately at its SEC allocation. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q1-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 1(a)",
+      "questionText": "1(a) Cén fáth a ritheann Sibéal ceardlanna rince ar an sean-nós i mBaile Átha Cliath? (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q1-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cén fáth a ritheann Sibéal ceardlanna rince ar an sean-nós i mBaile Átha Cliath? (Alt 1) 5 mharc • Ritheann sí ceardlanna i mBaile Átha Cliath chun eolas faoin rince ar an sean- nós a scaipeadh i measc phobal na cathrach = 5 mharc • Chun eolas faoin rince ar an sean-nós a scaipeadh = 5 mharc • Chun eolas faoin rince ar an sean-nós = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q1-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 1(b)",
+      "questionText": "1(b) Cén post atá ag Sibéal ar an gclár Imeall? (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q1-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén post atá ag Sibéal ar an gclár Imeall? (Alt 1) 5 mharc • Láithreoir = 5 mharc • Is láithreoir í = 5 mharc • Is moltóir í sa tsraith is déanaí de Glas Vegas agus is láithreoir í freisin ar an gclár Imeall ar TG4 = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q2-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 2(a)",
+      "questionText": "2(a) Cár rugadh Sibéal? (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q2-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cár rugadh Sibéal? (Alt 2) 5 mharc • Rugadh agus tógadh Sibéal i Raghnallach i mBaile Átha Cliath = 5 mharc • Raghnallach = 5 mharc • Baile Átha Cliath = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q2-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 2(b)",
+      "questionText": "2(b) Ainmnigh an dá scoil ar fhreastail Sibéal orthu. (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q2-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Ainmnigh an dá scoil ar fhreastail Sibéal orthu. (Alt 2) 5 mharc An chéad scoil atá cruinn = 3 mharc; an dara scoil luaite agus cruinn = 2 mharc • Scoil Bhríde agus Coláiste Íosagáin • Chuaigh sí ar an mbunscoil i Scoil Bhríde, Raghnallach agus ar an meánscoil i gColáiste Íosagáin ina dhiaidh sin. (Dhá scoil luaite san abairt seo) = 3 mharc + 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q3-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 3(a)",
+      "questionText": "3(a) Céard iad na hábhair a ndearna Sibéal staidéar orthu i gColáiste na Tríonóide? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q3-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Céard iad na hábhair a ndearna Sibéal staidéar orthu i gColáiste na Tríonóide? (Alt 3) 5 mharc Dhá ábhar = 3 mharc + 2 mharc An chéad ábhar atá cruinn = 3 mharc; an dara hábhar = 2 mharc • Gaeilge agus Scannánaíocht = 5 mharc • Rinne sí staidéar ar an nGaeilge agus ar an scannánaíocht ansin = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q3-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 3(b)",
+      "questionText": "3(b) Scríobh síos dhá phíosa eolais faoina céad scannán. (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q3-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Scríobh síos dhá phíosa eolais faoina céad scannán. (Alt 3) 5 mharc Dhá phíosa eolais ag teastáil = 3 mharc + 2 mharc • Bhí sí ar an ollscoil fós nuair a rinne sí a céad scannán a stiúradh • Gearrscannán a bhí ann • Potaisiam an t-ainm a bhí air • A deirfiúr Anna a bhí sa phríomhpháirt • Bhuaigh an scannán seo duais ( €3,500 ag Oireachtas na Gaeilge in 2010)"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q4-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 4(a)",
+      "questionText": "4(a) Cá háit is mó a mbíonn an rince ar an sean-nós ar siúl? (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q4-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Cá háit is mó a mbíonn an rince ar an sean-nós ar siúl? (Alt 4) 5 mharc • Is i nGaeltacht Chonamara is mó a bhíonn an rince ar an sean-nós ar siúl = 5 mharc • Conamara = 5 mharc • I nGaeltacht Chonamara = 5 mharc • Sa Ghaeltacht = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q4-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 4(b)",
+      "questionText": "4(b) Tabhair dhá phíosa eolais faoin rince Gaelach. (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q4-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Tabhair dhá phíosa eolais faoin rince Gaelach. (Alt 4) 5 mharc Dhá phíosa eolais = 3 mharc + 2 mharc • Bíonn an corp díreach • Bíonn na rinceoirí ag gluaiseacht ar fud an urláir • Bíonn grúpaí ag rince le chéile • Bíonn na rinceoirí ag gluaiseacht = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q5-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 5(a)",
+      "questionText": "5(a) Cén chosúlacht mhór a fheiceann Sibéal idir an rince agus an scannánaíocht? (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q5-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Cén chosúlacht mhór a fheiceann Sibéal idir an rince agus an scannánaíocht? (Alt 5) 5 mharc • Is féidir scéal a insint sa dá cheann acu gan teanga ar bith a úsáid = 5 mharc • Is féidir scéal a insint = 3 mharc • Is féidir scéal a insint sa dá cheann acu = 3 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-a-q5-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint A · Ceist 5(b)",
+      "questionText": "5(b) Cén cúrsa atá á dhéanamh ag Sibéal faoi láthair? (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q5-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén cúrsa atá á dhéanamh ag Sibéal faoi láthair? (Alt 5) 5 mharc • Cúrsa sa rince comhaimseartha = 5 mharc • Cúrsa sa rince = 3 mharc • Tá cúrsa sa rince comhaimseartha á dhéanamh ag Sibéal in Ollscoil Luimnigh faoi láthair = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Sibéal Davitt – Rinceoir ar an Sean-Nós",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q1-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 1(a)",
+      "questionText": "1(a) Cár rugadh Brian Ó Drisceoil? (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q1-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cár rugadh Brian Ó Drisceoil? (Alt 1) 5 mharc • I gCluain Tarbh i mBaile Átha Cliath = 5 mharc • I gCluain Tarbh i mBaile Átha Cliath a rugadh é ar an gcéad lá is fiche d’Eanáir 1979 = 5 mharc • I gCluain Tarbh = 5 mharc • I mBaile Átha Cliath = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q1-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 1(b)",
+      "questionText": "1(b) Cén comórtas a bhuaigh foireann Bhriain sa bhliain 1998? (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q1-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén comórtas a bhuaigh foireann Bhriain sa bhliain 1998? (Alt 1) 5 mharc • Corn Rugbaí an Domhain faoi naoi mbliana déag = 5 mharc • Bhí sé ar fhoireann na hÉireann nuair a bhuaigh siad Corn Rugbaí an Domhain faoi naoi mbliana déag sa bhliain 1998 = 5 mharc • Corn Rugbaí an Domhain = 3 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q2-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 2(a)",
+      "questionText": "2(a) Cén fáth ar bhliain thábhachtach í 1999 do Bhrian Ó Drisceoil? (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q2-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Cén fáth ar bhliain thábhachtach í 1999 do Bhrian Ó Drisceoil? (Alt 2) 5 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann ar leibhéal na sinsear den chéad uair = 5 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann ar leibhéal na sinsear = 3 mharc • D’imir sé ar fhoireann idirnáisiúnta rugbaí na hÉireann = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q2-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 2(b)",
+      "questionText": "2(b) Cad a bhuaigh Éire in 2009 nuair a bhí Brian Ó Drisceoil ina chaptaen? (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q2-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cad a bhuaigh Éire in 2009 nuair a bhí Brian Ó Drisceoil ina chaptaen? (Alt 2) 5 mharc • Bhuaigh Éire an ‘Grand Slam’ = 5 mharc • In 2009, nuair a bhí sé ina chaptaen, bhuaigh Éire an ‘Grand Slam’ den chéad uair ón mbliain 1948 = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q3-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 3(a)",
+      "questionText": "3(a) Cad a tharla do Bhrian sa chéad chluiche i gcoinne na All Blacks in 2005? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q3-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Cad a tharla do Bhrian sa chéad chluiche i gcoinne na All Blacks in 2005? (Alt 3) 5 mharc • Gortaíodh go dona é = 5 mharc • Bhí sé ina chaptaen ar na Leoin sa Nua-Shéalainn in 2005 ach gortaíodh go dona é sa chéad chluiche i gcoinne na All Blacks = 5 mharc • Rinneadh drochionsaí air = 5 mharc • Cuireadh a ghualainn as alt = 5 mharc • B’éigean é a iompar den pháirc ar shínteán = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q3-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 3(b)",
+      "questionText": "3(b) Cén fáth a raibh fearg ar a lán de lucht leanúna an rugbaí anuraidh? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q3-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14,
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth a raibh fearg ar a lán de lucht leanúna an rugbaí anuraidh? (Alt 3) 5 mharc • Nuair nár roghnaíodh Brian don mhórchluiche deireanach = 5 mharc • D’imir sé sa chéad dá mhórchluiche ansin ach bhí fearg ar a lán de lucht leanúna an rugbaí nuair nár roghnaíodh Brian don mhórchluiche deireanach = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q4-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 4(a)",
+      "questionText": "4(a) Luaigh dhá scil atá ag Brian mar imreoir. (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q4-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Luaigh dhá scil atá ag Brian mar imreoir. (Alt 4) 5 mharc Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc • Tá sé láidir. • Tá sé cróga. • Is lúthchleasaí iontach é. • Captaen den scoth ba ea é. • Bhí tionchar láidir aige ar na himreoirí eile. • Spreag sé iad sa seomra gléasta agus ar pháirc na himeartha. • Sárimreoir rugbaí is ea Brian Ó Drisceoil. • Thuig sé gur ghá do na himreoirí a n-aigne a choimeád ar an imirt i gcónaí chun an cluiche a bhuachan."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q4-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 4(b)",
+      "questionText": "4(b) Cén fáth ar bhronn Comhairle Cathrach Bhaile Átha Cliath Saoirse na Cathrach air? (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q4-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth ar bhronn Comhairle Cathrach Bhaile Átha Cliath Saoirse na Cathrach air? (Alt 4) 5 mharc • Thug siad aitheantas dó as a ról inspioráideach mar imreoir rugbaí = 5 mharc • Thug Comhairle Cathrach Bhaile Átha Cliath aitheantas dó as a ról inspioráideach mar imreoir rugbaí nuair a bhronn siad Saoirse na Cathrach air le déanaí = 5 mharc • Thug Comhairle Cathrach Bhaile Átha Cliath aitheantas dó as a ról inspioráideach = 0"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q5-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-a",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 5(a)",
+      "questionText": "5(a) Scríobh síos rud amháin a tharla ar an ócáid speisialta do Bhrian ar an gcéad lá de Shamhain 2013. (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q5-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Scríobh síos rud amháin a tharla ar an ócáid speisialta do Bhrian ar an gcéad lá de Shamhain 2013. (Alt 5) 5 mharc Rud amháin as na rudaí seo a leanas: • Tugadh onóir speisialta do Bhrian = 5 mharc • Bhí níos mó ná míle duine i láthair = 5 mharc • Taispeánadh cuid de ghaiscí rugbaí Bhriain ar an scáileán mór = 5 mharc • Bhí a lán daoine ag caint agus ag moladh a chuid tallann iontach rugbaí = 5 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-reading-b-q5-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-b",
+      "questionRef": "2014 OL Paper 2 Léamhthuiscint B · Ceist 5(b)",
+      "questionText": "5(b) Luaigh plean amháin atá ag Brian nuair a éireoidh sé as an rugbaí. (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q5-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Luaigh plean amháin atá ag Brian nuair a éireoidh sé as an rugbaí. (Alt 5) 5 mharc • Rachaidh sé ag taisteal lena bhean chéile, Amy, má fhaigheann sise obair mar aisteoir i Meiriceá nó i Sasana = 5 mharc • Rachaidh sé ag taisteal lena bhean chéile = 3 mharc • Rachaidh sé ag taisteal = 0 • Ba mhaith leis obair charthanach a dhéanamh le cumainn a chabhraíonn le páistí = 5 mharc • Ba mhaith leis obair charthanach a dhéanamh = 3 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Brian Ó Drisceoil - Laoch Mór Rugbaí",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a",
+      "questionRef": "2014 OL Paper 2 Prose 2A(a)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(i) Cén fáth a mbeidh cóisir mhór i dteach Albright?\n(ii) Déan cur síos ar Phól, fear céile Lisín.\n(iii) Conas a réitíonn Ruán, an mac is sine, lena mháthair, Lisín?\n(iv) Cad iad na hullmhúcháin a dhéanann Lisín don chóisir?\n(v) Conas a chaitheann Lisín a cuid ama de ghnáth?\n(25 marc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-prose-2a-irish-4-5",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cén fáth a mbeidh cóisir mhór i dteach Albright?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Déan cur síos ar Phól, fear céile Lisín.",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Conas a réitíonn Ruán, an mac is sine, lena mháthair, Lisín?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "eolas-iv",
+          "label": "(iv) Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Cad iad na hullmhúcháin a dhéanann Lisín don chóisir?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "eolas-v",
+          "label": "(v) Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(v) Conas a chaitheann Lisín a cuid ama de ghnáth?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: a summary covering the five printed points, each a point of information at 5 (2 for the bare point + 3 for development), then the 0–4 Gaeilge deduction once. The scheme prints no sample answers for Hurlamaboc; each point is judged on merit against that split.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-b",
+      "questionRef": "2014 OL Paper 2 Prós 2A(b) · Oisín i dTír na nÓg",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(b) Oisín i dTír na nÓg\n“Ansin shuigh Oisín i bhfianaise Phádraig agus na cléire gur inis sé a scéal ar Thír na nÓg agus ar Niamh Chinn Óir a mheall ón Fhiann é.”\nOisín i dTír na nÓg\nDéan cur síos ar na scéalta a d’inis Oisín don slua faoi Thír na nÓg agus faoi Niamh Chinn Óir. (25 marc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-1",
+      "conceptId": "irish-prose-2a-irish-4-1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) Oisín i dTír na nÓg “Ansin shuigh Oisín i bhfianaise Phádraig agus na cléire gur inis sé a scéal ar Thír na nÓg agus ar Niamh Chinn Óir a mheall ón Fhiann é.” Oisín i dTír na nÓg Déan cur síos ar na scéalta a d’inis Oisín don slua faoi Thír na nÓg agus faoi Niamh Chinn Óir. (25 marc) 5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: five points at 5 (2 for the bare point + 3 for development); the 0–4 Gaeilge deduction applies once to this whole 25-mark answer. The answer is judged on merit against that allocation.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Oisín i dTír na nÓg",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2b-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2B-a",
+      "questionRef": "2014 OL Paper 2 Prose 2B(a)",
+      "stem": "B – PRÓS ROGHNACH – (50 marc)\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+      "questionText": "(a) Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) ann. Tabhair cuntas ar na himeachtaí (rudaí) a tharlaíonn don phríomhcharachtar (don phríomhphearsa) sa ghiota sin. (23 marc)\nNí mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (2 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-prose-2b-irish-4-7",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 9,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "priomhcharachtar",
+          "label": "Ainm an phríomhcharachtair",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ainm an phríomhcharachtair (na príomhphearsan) = 1 mharc"
+          ]
+        },
+        {
+          "id": "eolas",
+          "label": "Na himeachtaí",
+          "kind": "award",
+          "maxMarks": 22,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad dá phointe eolais + 4 mharc an ceann ar an trí phointe eolais eile) 5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt 4 mharc = 2 mharc ar lomphointe eolais + 2 mharc ar fhorbairt"
+          ]
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an údair",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go soiléir. Teideal an úrscéil = 1 mharc (2 mharc) Ainm an údair = 1 mharc"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ainm an phríomhcharachtair 1, Na himeachtaí 22, Teideal + ainm an údair 2, then the 0–4 Gaeilge deduction once. The optional text is open content chosen by the candidate; the scheme prints no sample points for it, so its points are judged on merit against these allocations (indicative rather than exhaustive).",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Roghnach",
+        "title": "Giota as úrscéal roghnach",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2b-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2B-b",
+      "questionRef": "2014 OL Paper 2 Prose 2B(b)",
+      "stem": "B – PRÓS ROGHNACH – (50 marc)\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+      "questionText": "(b) Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa scéal sin. (23 marc)\nNí mór teideal an scéil bhéaloidis sin a scríobh síos go cruinn. (2 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-prose-2b-irish-4-7",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 9,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Na príomhimeachtaí",
+          "kind": "award",
+          "maxMarks": 23,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile) 5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt 4 mharc = 2 mharc ar lomphointe eolais + 2 mharc ar fhorbairt."
+          ]
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal an scéil bhéaloidis",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Ní mór teideal an scéil bhéaloidis sin a scríobh síos go cruinn. (2 mharc)",
+            "Teideal an scéil bhéaloidis = 2 mharc"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Na príomhimeachtaí 23, Teideal an scéil bhéaloidis 2, then the 0–4 Gaeilge deduction once. The optional text is open content chosen by the candidate; the scheme prints no sample points for it, so its points are judged on merit against these allocations (indicative rather than exhaustive).",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Roghnach",
+        "title": "Scéal béaloidis roghnach",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a",
+      "questionRef": "2014 OL Paper 2 Poetry 3A(a)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (a) Cad as don ainmhí seo?\n(b) Cad a fheiceann an t-ainmhí trí leathshúil?\n(c) Cé a thagann ag féachaint ar an ainmhí anois?\n(d) Luaigh an rud is mó a theastaíonn ón ainmhí anois. (8 marc)\n(ii) Inis i d’fhocail féin, cén saghas ainmhí é an t-ainmhí seo. (Is leor dhá phointe eolais.) (8 marc)\n(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. (9 marc)",
+      "totalMarks": 25,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-poetry-3a-irish-5-2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Cad as don ainmhí seo? (2 mharc) Freagraí samplacha: “as na teochreasa”; an fiántas; tír theochreasach; an teochrios; ceann de na tíortha in aice leis an meánchiorcal; an fhoraois; timpeallacht nádúrtha; an Afraic; ainmhí as na teochreasa; ainmhí allta as na teochreasa… (b) Cad a fheiceann an t-ainmhí trí leathshúil? (2 mharc) Freagraí samplacha: “crann aonraic”; crann; an crann sin; an crann sin thall; aon chrann amháin atá in aice leis; na céadta daoine… “ agus breathnaím trí leathshúil ar an gcrann aonraic sin thall” = 2 mharc (c) Cé a thagann ag féachaint ar an ainmhí anois? (2 mharc) Freagraí samplacha: “na céadta daoine”; na céadta; daoine; cuairteoirí… (d) Luaigh an rud is mó a theastaíonn ón ainmhí anois. (2 mharc) Freagraí samplacha: “mé a ligean amach”; bheith saor; bheith ar ais san Afraic; bheith ar ais ina thimpeallacht féin…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Inis i d’fhocail féin, cén saghas ainmhí é an t-ainmhí seo. (Is leor dhá phointe eolais.) (2 phointe eolais ar 4 mharc an ceann) Freagraí samplacha: Leon/tíogar; mór; cumasach; sláintiúil; dainséarach; lán le fuinneamh/sprid nuair a bhí sé saor; ainmhí fiáin/allta; ainmhí bródúil; álainn; mór, láidir; cáiliúil toisc go bhfuil sé fiáin; bhí sé ag búiríl; bhí sé ag cur eagla ar gach ainmhí; brónach; níl fuinneamh ann; níl dínit aige anois; leadránach anois; míshona agus míshásta anois lena shaol… Nóta: Línte cuí díreach ón dán gan rian an iarrthóra ar na pointí eolais = 2/4 + 2/4"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. An mothúchán is láidre a ainmniú = 1 mharc Dhá shampla den mhothúchán = 4 mharc + 4 mharc Samplaí de mhothúcháin: Bród; uabhar; brón; cumha; tuirse chroí; easpa suime; briseadh croí; éadóchas; frustrachas; uaigneas; easpa fuinnimh; neamhspleáchas; easpa saoirse…"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (i) 8, (ii) 8, (iii) 9 at their printed tariffs, then the 0–4 Gaeilge deduction once. The sample answers are indicative rather than exhaustive; lines lifted straight from the poem without the candidate’s own words earn 2 + 2 where the scheme says so.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b",
+      "questionRef": "2014 OL Paper 2 Poetry 3A(b)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(b) Colscaradh\n(i) Cad is téama don dán Colscaradh (thíos), dar leat? Tabhair dhá phointe eolais faoin téama sin sa dán. (8 marc)\n(ii) Inis i d’fhocail féin, cén saghas duine í an bhean sa dán. (Is leor dhá phointe eolais.) (8 marc)\n(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "totalMarks": 25,
+      "topicId": "irish-5-5",
+      "conceptId": "irish-poetry-3a-irish-5-5",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 11,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20,
+        21
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cad is téama don dán Colscaradh, dar leat? Tabhair dhá phointe eolais faoin téama sin sa dán. Téama a ainmniú = 2 mharc Dhá phointe eolais faoin téama sin = 3 mharc + 3 mharc Téamaí samplacha: Grá; Easpa grá; Brón; Pósadh; Fadhbanna an phósta; Lánúin ag scaradh/briseadh suas; Colscaradh; Briseadh croí; Saint; Easaontas; Neamhspleáchas; Saoirse na mban; Leithleachas; Coimhlint; Saol traidisiúnta v Saol nua-aimseartha…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Inis i d’fhocail féin, cén saghas duine í an bhean sa dán. (Is leor dhá phointe eolais.) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: Is bean nua-aimseartha í; Bhí sí ag iarraidh neamhspleáchais; Bhí sí leithleach; Bhí sí santach; Bhí sí brónach; Bhí easpa grá ina saol; Bhí sí ag iarraidh cuid den chumhacht/áit chónaithe/grá/leath dá raibh ag a fear/laethanta saoire thar sáile/go mbeadh meas ag cuid mhór daoine uirthi… Nóta: Línte cuí díreach ón dán gan rian an iarrthóra ar na pointí eolais = 2/4 + 2/4"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) Is maith / Ní maith = (1 mharc) + dhá fháth = (4 mharc + 4 mharc)"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (i) 8, (ii) 8, (iii) 9 at their printed tariffs, then the 0–4 Gaeilge deduction once. The sample answers are indicative rather than exhaustive; lines lifted straight from the poem without the candidate’s own words earn 2 + 2 where the scheme says so.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Colscaradh",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3b-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3B-a",
+      "questionRef": "2014 OL Paper 2 Poetry 3B(a)",
+      "stem": "B – FILÍOCHT ROGHNACH – (50 marc)\nNíl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+      "questionText": "(a) (i) Maidir le dán roghnach nua-aimseartha amháin a scríobh bean agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad iad príomhsmaointe an dáin. (7 marc)\n(ii) Luaigh dhá íomhá (dhá phictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá (ar an dá phictiúr) sin sa dán. (7 marc)\n(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. (9 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn. (2 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-poetry-3b-irish-5-6",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 12,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 22,
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        12
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) (i) Maidir le dán roghnach nua-aimseartha amháin a scríobh bean agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad iad príomhsmaointe an dáin. 2 phointe eolais ag teastáil 2 Lomphointe = 2 mharc (1 mharc + 1 mharc) Forbairt = 5 mharc (3 mharc + 2 mharc) (7 marc)",
+            "Treoir: Má roghnaítear dán seanaimseartha, bronnfar 0 ar an bhfreagra."
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Luaigh dhá íomhá (dhá phictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá (ar an dá phictiúr) sin sa dán. 2 Íomhá / 2 phictiúr a lua = 2 mharc (1 mharc + 1 mharc) Forbairt = 5 mharc (3 mharc + 2 mharc) (7 marc)"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. Mothúchán a lua = 1 mharc 2 shampla = 8 marc (4 mharc + 4 mharc) (9 marc)"
+          ]
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn. Teideal an dáin = 1 mharc Ainm an fhile = 1 mharc (2 mharc)"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (i) 7, (ii) 7, (iii) 9, poem and poet 2, then the 0–4 Gaeilge deduction once. 3B(a) asks for a modern poem written by a woman; the scheme’s Treoir gives an old poem 0 for the whole answer. The optional poem is open content; the printed allocations are judged on merit (indicative rather than exhaustive).",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "3B(a) · Dán roghnach",
+        "pages": [
+          12
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3b-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3B-b",
+      "questionRef": "2014 OL Paper 2 Poetry 3B(b)",
+      "stem": "B – FILÍOCHT ROGHNACH – (50 marc)\nNíl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+      "questionText": "(b) (i) Maidir le dán roghnach nua-aimseartha amháin a scríobh fear agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad is téama don dán sin, dar leat. Tabhair dhá phointe eolais faoin téama sin sa dán. (7 marc)\n(ii) Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin sa dán. (7 marc)\n(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn. (2 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-poetry-3b-irish-5-6",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 12,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        12
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) (i) Maidir le dán roghnach nua-aimseartha amháin a scríobh fear agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad is téama don dán sin, dar leat. Tabhair dhá phointe eolais faoin téama sin sa dán. Téama a lua = 2 mharc Dhá phointe eolais faoin téama sin = 5 mharc (3 mharc + 2 mharc) (7 marc)",
+            "Treoir: Má roghnaítear dán seanaimseartha, bronnfar 0 ar an bhfreagra."
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin sa dán. Atmaisféar a lua = 1 mharc 2 shampla den atmaisféar sin = 6 mharc (3 mharc + 3 mharc) (7 marc)"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) Is maith/Ní maith = 1 mharc 2 fháth = 8 marc (4 mharc + 4 mharc) (9 marc)"
+          ]
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn. Teideal an dáin = 1 mharc Ainm an fhile = 1 mharc (2 mharc)"
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 4 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (i) 7, (ii) 7, (iii) 9, poem and poet 2, then the 0–4 Gaeilge deduction once. 3B(b) asks for a modern poem written by a man; the scheme’s Treoir gives an old poem 0 for the whole answer. The optional poem is open content; the printed allocations are judged on merit (indicative rather than exhaustive).",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "3B(b) · Dán roghnach",
+        "pages": [
+          12
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a-i",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-i",
+      "questionRef": "2014 OL Paper 2 Prós 2A(a) · Hurlamaboc · (i)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(i) Cén fáth a mbeidh cóisir mhór i dteach Albright?",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cén fáth a mbeidh cóisir mhór i dteach Albright?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One of the five printed points the summary covers, at the scheme’s 5 for each point of information. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "practiceFocus": "Point (i) of the five the summary must cover (5 marks: 2 for the bare point, 3 for developing it)"
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-ii",
+      "questionRef": "2014 OL Paper 2 Prós 2A(a) · Hurlamaboc · (ii)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(ii) Déan cur síos ar Phól, fear céile Lisín.",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Déan cur síos ar Phól, fear céile Lisín.",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One of the five printed points the summary covers, at the scheme’s 5 for each point of information. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "practiceFocus": "Point (ii) of the five the summary must cover (5 marks: 2 for the bare point, 3 for developing it)"
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-iii",
+      "questionRef": "2014 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iii)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(iii) Conas a réitíonn Ruán, an mac is sine, lena mháthair, Lisín?",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-iii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Conas a réitíonn Ruán, an mac is sine, lena mháthair, Lisín?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One of the five printed points the summary covers, at the scheme’s 5 for each point of information. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "practiceFocus": "Point (iii) of the five the summary must cover (5 marks: 2 for the bare point, 3 for developing it)"
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-iv",
+      "questionRef": "2014 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iv)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(iv) Cad iad na hullmhúcháin a dhéanann Lisín don chóisir?",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-iv",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Cad iad na hullmhúcháin a dhéanann Lisín don chóisir?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One of the five printed points the summary covers, at the scheme’s 5 for each point of information. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "practiceFocus": "Point (iv) of the five the summary must cover (5 marks: 2 for the bare point, 3 for developing it)"
+    },
+    {
+      "id": "irish-2014-ol-p2-prose-2a-a-v",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-v",
+      "questionRef": "2014 OL Paper 2 Prós 2A(a) · Hurlamaboc · (v)",
+      "stem": "A – PRÓS AINMNITHE – (50 marc)",
+      "questionText": "(a) Hurlamaboc\nTabhair achoimre ar na heachtraí is mó sa ghiota as an úrscéal Hurlamaboc.\nLuaigh na pointí seo:\n(v) Conas a chaitheann Lisín a cuid ama de ghnáth?",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-v",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 8,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(v) Conas a chaitheann Lisín a cuid ama de ghnáth?",
+            "5 phointe eolais agus 5 mharc ar gach pointe eolais. (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One of the five printed points the summary covers, at the scheme’s 5 for each point of information. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "practiceFocus": "Point (v) of the five the summary must cover (5 marks: 2 for the bare point, 3 for developing it)"
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-i",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (a) Cad as don ainmhí seo?\n(b) Cad a fheiceann an t-ainmhí trí leathshúil?\n(c) Cé a thagann ag féachaint ar an ainmhí anois?\n(d) Luaigh an rud is mó a theastaíonn ón ainmhí anois. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Cad as don ainmhí seo? (2 mharc) Freagraí samplacha: “as na teochreasa”; an fiántas; tír theochreasach; an teochrios; ceann de na tíortha in aice leis an meánchiorcal; an fhoraois; timpeallacht nádúrtha; an Afraic; ainmhí as na teochreasa; ainmhí allta as na teochreasa… (b) Cad a fheiceann an t-ainmhí trí leathshúil? (2 mharc) Freagraí samplacha: “crann aonraic”; crann; an crann sin; an crann sin thall; aon chrann amháin atá in aice leis; na céadta daoine… “ agus breathnaím trí leathshúil ar an gcrann aonraic sin thall” = 2 mharc (c) Cé a thagann ag féachaint ar an ainmhí anois? (2 mharc) Freagraí samplacha: “na céadta daoine”; na céadta; daoine; cuairteoirí… (d) Luaigh an rud is mó a theastaíonn ón ainmhí anois. (2 mharc) Freagraí samplacha: “mé a ligean amach”; bheith saor; bheith ar ais san Afraic; bheith ar ais ina thimpeallacht féin…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-i-a",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i-a",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)(a)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (a) Cad as don ainmhí seo?",
+      "totalMarks": 2,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i-a",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cad as don ainmhí seo? (2 mharc) Freagraí samplacha: “as na teochreasa”; an fiántas; tír theochreasach; an teochrios; ceann de na tíortha in aice leis an meánchiorcal; an fhoraois; timpeallacht nádúrtha; an Afraic; ainmhí as na teochreasa; ainmhí allta as na teochreasa…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed question inside 3A(a)(i), at its printed 2 mharc. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-i-b",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i-b",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)(b)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (b) Cad a fheiceann an t-ainmhí trí leathshúil?",
+      "totalMarks": 2,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cad a fheiceann an t-ainmhí trí leathshúil? (2 mharc) Freagraí samplacha: “crann aonraic”; crann; an crann sin; an crann sin thall; aon chrann amháin atá in aice leis; na céadta daoine… “ agus breathnaím trí leathshúil ar an gcrann aonraic sin thall” = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed question inside 3A(a)(i), at its printed 2 mharc. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-i-c",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i-c",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)(c)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (c) Cé a thagann ag féachaint ar an ainmhí anois?",
+      "totalMarks": 2,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i-c",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cé a thagann ag féachaint ar an ainmhí anois? (2 mharc) Freagraí samplacha: “na céadta daoine”; na céadta; daoine; cuairteoirí…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed question inside 3A(a)(i), at its printed 2 mharc. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-i-d",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i-d",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)(d)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(i) (d) Luaigh an rud is mó a theastaíonn ón ainmhí anois.",
+      "totalMarks": 2,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i-d",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Luaigh an rud is mó a theastaíonn ón ainmhí anois. (2 mharc) Freagraí samplacha: “mé a ligean amach”; bheith saor; bheith ar ais san Afraic; bheith ar ais ina thimpeallacht féin…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed question inside 3A(a)(i), at its printed 2 mharc. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-ii",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (ii)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(ii) Inis i d’fhocail féin, cén saghas ainmhí é an t-ainmhí seo. (Is leor dhá phointe eolais.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Inis i d’fhocail féin, cén saghas ainmhí é an t-ainmhí seo. (Is leor dhá phointe eolais.) (2 phointe eolais ar 4 mharc an ceann) Freagraí samplacha: Leon/tíogar; mór; cumasach; sláintiúil; dainséarach; lán le fuinneamh/sprid nuair a bhí sé saor; ainmhí fiáin/allta; ainmhí bródúil; álainn; mór, láidir; cáiliúil toisc go bhfuil sé fiáin; bhí sé ag búiríl; bhí sé ag cur eagla ar gach ainmhí; brónach; níl fuinneamh ann; níl dínit aige anois; leadránach anois; míshona agus míshásta anois lena shaol… Nóta: Línte cuí díreach ón dán gan rian an iarrthóra ar na pointí eolais = 2/4 + 2/4"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-iii",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(a) · Géibheann · (iii)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(a) Géibheann\n(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-a-iii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 10,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        10
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Scríobh síos an mothúchán is láidre sa dán dar leat. Tabhair dhá shampla den mhothúchán sin sa dán. An mothúchán is láidre a ainmniú = 1 mharc Dhá shampla den mhothúchán = 4 mharc + 4 mharc Samplaí de mhothúcháin: Bród; uabhar; brón; cumha; tuirse chroí; easpa suime; briseadh croí; éadóchas; frustrachas; uaigneas; easpa fuinnimh; neamhspleáchas; easpa saoirse…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-b-i",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-i",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(b) · Colscaradh · (i)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(b) Colscaradh\n(i) Cad is téama don dán Colscaradh (thíos), dar leat? Tabhair dhá phointe eolais faoin téama sin sa dán. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-5",
+      "conceptId": "irish-ol-p2-poetry-3a-b-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 11,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20,
+        21
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cad is téama don dán Colscaradh, dar leat? Tabhair dhá phointe eolais faoin téama sin sa dán. Téama a ainmniú = 2 mharc Dhá phointe eolais faoin téama sin = 3 mharc + 3 mharc Téamaí samplacha: Grá; Easpa grá; Brón; Pósadh; Fadhbanna an phósta; Lánúin ag scaradh/briseadh suas; Colscaradh; Briseadh croí; Saint; Easaontas; Neamhspleáchas; Saoirse na mban; Leithleachas; Coimhlint; Saol traidisiúnta v Saol nua-aimseartha…"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Colscaradh",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-ii",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(b) · Colscaradh · (ii)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(b) Colscaradh\n(ii) Inis i d’fhocail féin, cén saghas duine í an bhean sa dán. (Is leor dhá phointe eolais.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-5",
+      "conceptId": "irish-ol-p2-poetry-3a-b-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 11,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20,
+        21
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Inis i d’fhocail féin, cén saghas duine í an bhean sa dán. (Is leor dhá phointe eolais.) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: Is bean nua-aimseartha í; Bhí sí ag iarraidh neamhspleáchais; Bhí sí leithleach; Bhí sí santach; Bhí sí brónach; Bhí easpa grá ina saol; Bhí sí ag iarraidh cuid den chumhacht/áit chónaithe/grá/leath dá raibh ag a fear/laethanta saoire thar sáile/go mbeadh meas ag cuid mhór daoine uirthi… Nóta: Línte cuí díreach ón dán gan rian an iarrthóra ar na pointí eolais = 2/4 + 2/4"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Colscaradh",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2014-ol-p2-poetry-3a-b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-iii",
+      "questionRef": "2014 OL Paper 2 Filíocht 3A(b) · Colscaradh · (iii)",
+      "stem": "A – FILÍOCHT AINMNITHE – (50 marc)",
+      "questionText": "(b) Colscaradh\n(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-5",
+      "conceptId": "irish-ol-p2-poetry-3a-b-iii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 11,
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20,
+        21
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) Is maith / Ní maith = (1 mharc) + dhá fháth = (4 mharc + 4 mharc)"
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Colscaradh",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

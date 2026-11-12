@@ -290,6 +290,26 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   if (subjectId === 'dcg') return dcgBookletFor(entry, section);
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
+  // The older Foundation Irish sitting separates listening from the written
+  // paper. Bank sections remain 1=listening, 2=reading, 3=writing; "Paper One"
+  // therefore holds sections 2 and 3. Require the exact indexed pair so an
+  // unfamiliar multi-paper structure cannot silently inherit this mapping.
+  if (subjectId === 'irish' && level === 'foundation') {
+    const aural = entry.papers.filter(p => /^Aural Paper$/i.test(p.label));
+    const written = entry.papers.filter(p => /^Paper One$/i.test(p.label));
+    if (entry.papers.length === 2 && aural.length === 1 && written.length === 1) {
+      return section === '1' ? stripPdf(aural[0].doc?.f)
+        : ['2', '3'].includes(section) ? stripPdf(written[0].doc?.f) : null;
+    }
+  }
+  // The 2010-2011 Higher and Ordinary Irish sittings also print their listening as a paper of its own (the
+  // Triail Chluastuisceana, indexed "Aural Paper") beside Paper One (composition and reading) and Paper Two:
+  // their aural cards file under section 'A', the other sections are the papers' own numbers. Only the exact
+  // indexed three, and only Irish, so no other structure inherits it.
+  if (subjectId === 'irish' && level !== 'foundation' && section === 'A') {
+    const aural = entry.papers.filter(p => /^Aural Paper$/i.test(p.label));
+    if (entry.papers.length === 3 && aural.length === 1) return stripPdf(aural[0].doc?.f);
+  }
   // Art's separate illustration booklet is indexed as a second "paper" even
   // though every written section lives in the document explicitly labelled
   // Exam Paper. Treating both documents as section candidates made every Art

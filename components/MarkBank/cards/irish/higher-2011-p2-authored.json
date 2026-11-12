@@ -1,0 +1,1609 @@
+{
+  "review": {
+    "year": 2011,
+    "level": "higher",
+    "paperFileid": "LC001ALP200IV.pdf",
+    "schemeFileid": "LC001ALP000IV.pdf",
+    "paperSha256": "6e23d97e53e1545e79b77aa86ae869dd266bb06ac4f0cc2a879537d014f9371b",
+    "schemeSha256": "b5f7c77e673759308a08e4a8cdef08000045789921a3c64278c739bb510783b0",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reviewedSchemePages": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "schemeScope": "Combined Higher scheme LC001ALP000IV. PDF 15–16 Ceist 1 Prós (A: (a) three alternatives \"Ionramháil Ábhair = 22 marc\", (b) two \"= 13 marc\", \"Cumas Gaeilge – (a) agus (b) le chéile = 5 marc\"; B the same, with \"C. 1 (A) nó (B) = 40 marc (22 + 13 + 5)\", the examiner’s note and the title rule); PDF 17 Ceist 2 Próstéacs Breise (\"{ Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc}\") and Ceist 3A; PDF 18 Ceist 3B; PDF 19 Ceist 3C, Ceist 3’s \"Cumas Gaeilge (A nó B agus C le chéile) = 10 marc\" and Ceist 4 Stair (\"13 + 12 (Eolas) móide 5 marc ar an gCumas Gaeilge (sa dá cheann le chéile) = 30 marc\"). Páipéar II prints no supporting notes, band table or grade-to-mark table. PDF 3–14 belong to Páipéar 1, PDF 20–24 to the aural test, PDF 25–28 are blank.",
+    "reviewDate": "2026-11-05",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 2,
+        "raw": "AINMNITHE (A) nó ROGHNACH (B)",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "AINMNITHE agus AN CÚRSA ROGHNACH.",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "Ainmnithe a fhreagairt; agus i gcás Cheist 3, is féidir ceist ar an bhFilíocht Ainmnithe nó",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "FREAGAIR GACH CEIST (1, 2, 3 AGUS 4).",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "I gcás Cheist 1, mar shampla, is féidir ceist ar an bPrós Roghnach nó ar an bPrós",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "Nóta: I gcás Cheist 1 (Prós) agus Cheist 3 (Filíocht), tá rogha ann idir AN CÚRSA",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "PRÓSTÉACS BREISE: Do rogha idir A, B, C nó D",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 2,
+        "raw": "ar an bhFilíocht Roghnach a fhreagairt.",
+        "decision": "Paper structure (Treoracha): every question is answered; Ceist 1 and Ceist 3 offer the named course (A) or the optional course (B), Ceist 2 one of A–D. Each route is carded; no combination card."
+      },
+      {
+        "page": 3,
+        "raw": "(a) Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar chaidreamh",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 3,
+        "raw": "(a) Maidir leis an ngearrscéal An Bhean Óg, déan plé gairid ar do rogha dhá cheann de na gnéithe seo a leanas",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "(b) Maidir leis an scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid air",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 3,
+        "raw": "Déan plé gairid ar dhá choimhlint a léirítear sa sliocht.",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair (a) agus (b).",
+        "decision": "Both parts of the route are answered; each is a criterion of the route card."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach) anseo thíos.",
+        "decision": "Closed choice in Ceist 1: Prós Ainmnithe (A) or Prós Roghnach (B); each is one card."
+      },
+      {
+        "page": 3,
+        "raw": "Maidir le sliocht as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 3,
+        "raw": "Maidir leis an ngearrscéal Coileach Ghleann Phádraig, déan plé gairid ar do rogha dhá cheann de na gnéithe",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "Maidir leis an scéal béaloidis An Cearrbhach Mac Cába, scríobh nóta gairid ar dhá cheann díobh seo a leanas",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "Maidir leis an scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar dhá",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "ar an dá ghné den sliocht is mó a chuaigh i bhfeidhm ort. (25 mharc)",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 3,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 3,
+        "raw": "− PRÓS ROGHNACH −",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 4,
+        "raw": "(b) CNUASACH GEARRSCÉALTA ROGHNACH",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 4,
+        "raw": "An ráiteas sin a phlé maidir le do rogha scéal amháin díobh seo a leanas:",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 4,
+        "raw": "Freagair (a) nó (b).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 4,
+        "raw": "Freagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 4,
+        "raw": "Maidir le gearrscéal ar bith as do chnuasach roghnach, déan plé ar an gcaoi a gcuireann",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 4,
+        "raw": "Maidir le gearrscéal ar bith as do chnuasach roghnach, déan plé ar do rogha dhá cheann",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 4,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 5,
+        "raw": "(b) ÚRSCÉAL ROGHNACH",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 5,
+        "raw": "(i) dhá shuíomh sa scéal; (ii) forbairt an phlota; (iii) an eachtra is mó a chuireann casadh",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 5,
+        "raw": "Déan an t-úrscéal Máire Nic Artáin a phlé i gcás do rogha dhá cheann díobh seo a leanas:",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 5,
+        "raw": "Freagair (a) nó (b).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 5,
+        "raw": "Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan an t-úrscéal a phlé",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 5,
+        "raw": "Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan plé ar an tionchar",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 5,
+        "raw": "i gcás do rogha dhá cheann díobh seo a leanas:",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 5,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 6,
+        "raw": "(b) DÍRBHEATHAISNÉIS ROGHNACH",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 6,
+        "raw": "Freagair (a) nó (b).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 6,
+        "raw": "Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan plé ar an léiriú",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 6,
+        "raw": "Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan plé gairid",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 6,
+        "raw": "Maidir leis an leabhar A Thig Ná Tit Orm, déan plé gairid ar dhá cheann de na gnéithe",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 6,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 7,
+        "raw": "(b) DRÁMA ROGHNACH",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 7,
+        "raw": "Freagair (a) nó (b).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 7,
+        "raw": "Maidir leis an drama roghnach a ndearna tú staidéar air, déan plé ar an gcaoi a dtéann",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 7,
+        "raw": "Maidir leis an dráma roghnach a ndearna tú staidéar air, déan plé ar an gcaidreamh",
+        "decision": "Opening line of a printed alternative (the optional or named text); it is one route of its card."
+      },
+      {
+        "page": 7,
+        "raw": "gnéithe den saol sóisialta nó den saol polaitiúil i bhfeidhm ar an gcaidreamh idir beirt",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 7,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 7,
+        "raw": "‘Léiríonn na pearsana Pádraig Mac Cárthaigh agus Mailí sa dráma An Triail dhá thaobh",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 8,
+        "raw": "Dob é an samhradh so mo rogha ’pháirtí é.",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair (a) atá thíos agus (b) atá thall ar leathanach 10.",
+        "decision": "Both parts of Ceist 3A are answered; each is a criterion of the route card."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair A (Filíocht Ainmnithe) ar na leathanaigh 8, 9 agus 10 nó B (Filíocht Roghnach) ar leathanach 11",
+        "decision": "Ceist 3: A (Filíocht Ainmnithe) or B (Filíocht Roghnach), and C (Dánta Dualgais Breise): one card per route."
+      },
+      {
+        "page": 8,
+        "raw": "Luaigh an íomhá (pictiúr) is mó a chuaigh i bhfeidhm ort agus abair cén fáth.",
+        "decision": "Asks for one image/aspect, or two contrasts, inside one printed sub-question priced as a whole: one criterion."
+      },
+      {
+        "page": 8,
+        "raw": "Luaigh dhá cheann de na mothúcháin is mó, dar leat, sa dán Jack (thíos) agus déan cur",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 8,
+        "raw": "agus freagair C (Dánta Dualgais Breise) ar na leathanaigh 12 agus 13.",
+        "decision": "Ceist 3: A (Filíocht Ainmnithe) or B (Filíocht Roghnach), and C (Dánta Dualgais Breise): one card per route."
+      },
+      {
+        "page": 9,
+        "raw": "Luaigh an íomhá (pictiúr) is mó a chuaigh i bhfeidhm ort agus abair cén fáth.",
+        "decision": "Asks for one image/aspect, or two contrasts, inside one printed sub-question priced as a whole: one criterion."
+      },
+      {
+        "page": 9,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 10,
+        "raw": "an raibh an ghealt i mbaol nó tré thine nó in airde ar chrann",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 10,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 11,
+        "raw": "Freagair (a) agus (b).",
+        "decision": "Both parts of the route are answered; each is a criterion of the route card."
+      },
+      {
+        "page": 11,
+        "raw": "Luaigh an ghné den dán is mó a chuaigh i bhfeidhm ort agus mínigh do rogha.",
+        "decision": "Asks for one image/aspect, or two contrasts, inside one printed sub-question priced as a whole: one criterion."
+      },
+      {
+        "page": 11,
+        "raw": "agus nár úsáid tú i gcuid (a) thuas, déan plé gairid ar do rogha dhá cheann de na gnéithe seo:",
+        "decision": "A choice inside one printed question (two of the listed aspects, one of the listed stories, two conflicts or emotions, two aspects of the extract): the answer, not a route; one criterion."
+      },
+      {
+        "page": 11,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 11,
+        "raw": "− FILÍOCHT ROGHNACH −",
+        "decision": "Heading of an optional-text route (the student chooses the text): the route is one card."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair (a) nó (b).",
+        "decision": "Closed choice of route in Ceist 2: each of A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b) is one card; its (i) and (ii) are alternatives inside it."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair (i), (ii) agus (iii) thíos.",
+        "decision": "Ceist 3C: (a) Oíche Nollaig na mBan or (b) Dán do Mhelissa, each answered in full ((i), (ii), (iii)); one card carries both alternatives, marked alike."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair C (Dánta Dualgais Breise) ar na leathanaigh 12, 13 agus 14.",
+        "decision": "Ceist 3C: (a) Oíche Nollaig na mBan or (b) Dán do Mhelissa, each answered in full ((i), (ii), (iii)); one card carries both alternatives, marked alike."
+      },
+      {
+        "page": 13,
+        "raw": "(b) Freagair (i), (ii) agus (iii) thíos.",
+        "decision": "Ceist 3C: (a) Oíche Nollaig na mBan or (b) Dán do Mhelissa, each answered in full ((i), (ii), (iii)); one card carries both alternatives, marked alike."
+      },
+      {
+        "page": 13,
+        "raw": "Scríobh nóta gairid ar éifeacht dhá chodarsnacht i léiriú phríomhthéama an dáin.",
+        "decision": "Asks for one image/aspect, or two contrasts, inside one printed sub-question priced as a whole: one criterion."
+      },
+      {
+        "page": 13,
+        "raw": "duitse nach bhfuil fós ach a cúig nó a sé de bhlianta",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 13,
+        "raw": "is go seasfainn lem chorp féin idir dhá bhró an mhuilinn",
+        "decision": "Text of a poem or a question’s statement, not a selection directive."
+      },
+      {
+        "page": 13,
+        "raw": "nó",
+        "decision": "The printed \"nó\" between two alternatives of one route (one card carries both; marked alike, one Atlas heading)."
+      },
+      {
+        "page": 14,
+        "raw": "Do rogha beirt díobh seo a leanas:",
+        "decision": "Ceist 4 Stair na Gaeilge: two of (a)–(f) (and two items within (a), (b), (f)); one card carries the six options, priced 13 + 12 + Gaeilge 5 by the scheme."
+      },
+      {
+        "page": 14,
+        "raw": "Do rogha dhá cheann díobh seo a leanas:",
+        "decision": "Ceist 4 Stair na Gaeilge: two of (a)–(f) (and two items within (a), (b), (f)); one card carries the six options, priced 13 + 12 + Gaeilge 5 by the scheme."
+      },
+      {
+        "page": 14,
+        "raw": "Scríobh gearrchuntas ar DHÁ CHEANN díobh seo a leanas.",
+        "decision": "Ceist 4 Stair na Gaeilge: two of (a)–(f) (and two items within (a), (b), (f)); one card carries the six options, priced 13 + 12 + Gaeilge 5 by the scheme."
+      }
+    ],
+    "readingWholeCardIds": [],
+    "literatureRouteCardIds": [
+      "irish-2011-hl-p2-prose-1a",
+      "irish-2011-hl-p2-prose-1b",
+      "irish-2011-hl-p2-extra-2a-a",
+      "irish-2011-hl-p2-extra-2a-b",
+      "irish-2011-hl-p2-extra-2b-a",
+      "irish-2011-hl-p2-extra-2b-b",
+      "irish-2011-hl-p2-extra-2c-a",
+      "irish-2011-hl-p2-extra-2c-b",
+      "irish-2011-hl-p2-extra-2d-a",
+      "irish-2011-hl-p2-extra-2d-b",
+      "irish-2011-hl-p2-poetry-3a",
+      "irish-2011-hl-p2-poetry-3b",
+      "irish-2011-hl-p2-poetry-3c",
+      "irish-2011-hl-p2-history-4"
+    ],
+    "examStructure": {
+      "prose": 40,
+      "additionalProse": 40,
+      "poetry": 70,
+      "history": 30,
+      "total": 180
+    },
+    "nonPoolDecisions": [
+      "One card per printed route: Ceist 1 A (Prós Ainmnithe) and B (Prós Roghnach); Ceist 2 A(a), A(b), B(a), B(b), C(a), C(b), D(a), D(b); Ceist 3 A, B and C; Ceist 4. 14 cards.",
+      "A printed choice inside a route is one card (BRIEF rule 5): Ceist 1A(a)’s three texts, 1A(b)’s two questions, each Ceist 2 route’s (i) and (ii), 3A(a)’s two poems, 3A(b)’s (i) and (ii), 3B’s alternatives and 3C’s two poems are marked alike by the scheme and file under one Atlas heading (pre-2012 texts have no Atlas node of their own).",
+      "The scheme prices each answer with one Eolas figure and prints no scale for it (no band table, grade table or notes on Páipéar II): each judged answer is claimed whole (coordinator rulings 2 and 4). Where a criterion prints its alternatives each at that figure (\"(An Bhean Óg) Ionramháil Ábhair = 22 marc Nó … = 22 marc\"), each alternative is a row of its own at the full figure and the one answered is claimed (tariffs.ts parsePrintedAlternatives); an alternative printed again in the same words (3C(ii) \"Mínigh na línte\") is one row.",
+      "Ceist 2’s Eolas criterion reads \"Ionramháil Ábhair = 35 marc\" as printed inside its braces; the selection line before it and the Cumas Gaeilge rule after it are the Gaeilge criterion’s guidance.",
+      "Ceist 3’s Cumas Gaeilge is 10 for A or B and C together; each route card carries 5, its printed 35 less its printed Eolas 30, and says so.",
+      "Ceist 4 is one card: Eolas 25 and Cumas Gaeilge 5. The Eolas row is the scheme’s \"Dhá cheann le déanamh as (a), (b), (c), (d), (e), (f). 13 + 12 (Eolas)\", stepped only at the split it prints (0, 12, 13, 25); the \"= 30 marc\" total and the full rule are on the Gaeilge criterion."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Pre-2012 layout: the reading comprehension is in Páipéar 1; Páipéar 2 is literature and Stair na Gaeilge. Existing Atlas entries for this paper are section keys (1, 2, 3, 4, P-A, P-B, F-A, F-B, X); the route cards take P-A, P-B, F-A and F-B over (the 2010–2011 keys the crosswalk files on the prescribed and optional shelves) and add F-C (Dánta Dualgais Breise), X-2A-a … X-2D-b and X-4 beside them.",
+      "The scheme prints the paper’s \"Coileach Ghleann Phádraig\" as \"Coilleach\", \"tréidlia\" as \"tréadlia\", \"úrscéil\" as \"úirscéil\", and heads both 1B(b) options \"(Sceal Béaloidis) Teideal agus údar na dírbheathaisnéise\" (an autobiography’s title for a folk tale); kept as printed.",
+      "The paper prints \"drama\" without its fada in Ceist 2D(b)(ii); kept as printed."
+    ],
+    "boundaries": "14 route cards: Ceist 1 A and B; Ceist 2 A(a)–D(b), each (i) nó (ii); Ceist 3 A, B and C; Ceist 4 (two of (a)–(f)). 49 printed asks, each a printed alternative inside one of them."
+  },
+  "cards": [
+    {
+      "id": "irish-2011-hl-p2-prose-1a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A",
+      "questionRef": "2011 HL Paper 2 Prós 1A · Prós Ainmnithe",
+      "questionText": "A PRÓS AINMNITHE 40 marc\nFreagair (a) agus (b).\n(a) Maidir leis an ngearrscéal An Bhean Óg, déan plé gairid ar do rogha dhá cheann de na gnéithe seo a leanas den scéal: (i) an caidreamh idir an bhean óg agus a páistí; (ii) an modh inste; (iii) tréithe na mná óige; (iv) an t-atmaisféar i rith an scéil. (25 mharc)\nnó\nMaidir leis an ngearrscéal Coileach Ghleann Phádraig, déan plé gairid ar do rogha dhá cheann de na gnéithe seo a leanas den scéal: (i) páirt Sally Tom sa scéal; (ii) tréithe an tréidlia; (iii) tréithe mhuintir Ghleann Phádraig; (iv) an greann sa scéal. (25 mharc)\nnó\n‘Sa sliocht as an úrscéal Lig Sinn i gCathú faighimid léargas suimiúil ar choimhlintí idir na pearsana ann.’ Déan plé gairid ar dhá choimhlint a léirítear sa sliocht. (25 mharc)\n(b) ‘Is deacair trua a bheith againn don Chearrbhach sa scéal béaloidis An Cearrbhach Mac Cába.’ Déan plé gairid air sin. (15 mharc)\nnó\nMaidir leis an scéal béaloidis An Cearrbhach Mac Cába, scríobh nóta gairid ar dhá cheann díobh seo a leanas i gcomhthéacs an scéil: An t-osnádúr; an áibhéil; an greann; an tsaint. (15 mharc)",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-prose-1a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15,
+        16
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-a",
+          "label": "(a) Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 22,
+          "permittedMarks": [
+            0,
+            22
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) Dhá cheann de na gnéithe seo a leanas a phlé: (a) caidreamh idir an bhean óg agus a páistí; (b) an modh inste; (c) tréithe na mná óige; (d) atmaisféar i rith an scéil. (An Bhean Óg) Ionramháil Ábhair = 22 marc Nó Dhá cheann de na gnéithe seo a leanas a phlé: (a) páirt Sally Tom sa scéal; (b) tréithe an tréadlia; (c) tréithe mhuintir Ghleann Phádraig; (d) greann sa scéal. (Coilleach Ghleann Phádraig) Ionramháil Ábhair = 22 marc Nó Plé ar an léiriú a dhéantar ar dhá choimhlint. (Lig Sinn i gCathú) Ionramháil ábhair = 22 marc"
+          ]
+        },
+        {
+          "id": "eolas-b",
+          "label": "(b) Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 13,
+          "permittedMarks": [
+            0,
+            13
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) Plé ar thrua a bheith againn don Chearrbhach. (Cearrbhach Mac Cába) Ionramháil Ábhair = 13 marc Nó Plé ar Dhá cheann de: an t-osnádúr; an aibhéil; an greann; an tsaint. (Cearrbhach Mac Cába) Ionramháil Ábhair = 13 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Cumas Gaeilge – (a) agus (b) le chéile = 5 marc",
+            "Cumas Gaeilge - (a) agus (b) le chéile = 5 marc C. 1 (A) nó (B) = 40 marc (22 + 13 + 5) Nóta: Caithfidh an Scrúdaitheoir an marc as 22 (Ábhar) agus as 13 (Ábhar) agus as 5 (Gaeilge) a thaispeáint go soiléir sna hionaid chuí ar an bhfreagarleabhar. Ní bhronnfar marcanna ar theidil/ainmneacha údar a lua ach bainfear marcanna mura luaitear iad."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (a) Ionramháil Ábhair 22 and (b) Ionramháil Ábhair 13, each judged as a whole, and one shared 5-mark Cumas Gaeilge award for (a) and (b) together. The paper prints (a) at 25 and (b) at 15; the scheme prints Eolas 22 + 13 + Gaeilge 5. Each printed alternative of (a) and of (b) is one route of this card (marked alike, one Atlas heading). The scheme prints no notes, band table or grade table for Páipéar II, so each judged answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós",
+        "title": "Prós Ainmnithe",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 1\nPRÓS 40 MARC\nFreagair A (Prós Ainmnithe) nó B (Prós Roghnach) anseo thíos."
+    },
+    {
+      "id": "irish-2011-hl-p2-prose-1b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-B",
+      "questionRef": "2011 HL Paper 2 Prós 1B · Prós Roghnach",
+      "questionText": "B PRÓS ROGHNACH 40 marc\nFreagair (a) agus (b).\n(a) Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar chaidreamh na príomhphearsan le mórphearsa eile sa scéal. (25 mharc)\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn.\nnó\nMaidir le sliocht as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar an dá ghné den sliocht is mó a chuaigh i bhfeidhm ort. (25 mharc)\nNí mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn.\n(b) Maidir leis an scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid air mar shampla den chineál sin litríochta. (15 mharc)\nNí mór teideal an scéil bhéaloidis a scríobh síos go cruinn.\nnó\nMaidir leis an scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé gairid ar dhá cheann díobh seo i gcomhthéacs an scéil: An t-osnádúr; an áibhéil; an greann; an tsaint. (15 mharc)\nNí mór teideal an scéil bhéaloidis a scríobh síos go cruinn.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-prose-1b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-a",
+          "label": "(a) Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 22,
+          "permittedMarks": [
+            0,
+            22
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) Plé ar chaidreamh idir beirt phríomhphearsan. (Gearrscéal) Teideal an ghearrscéil agus ainm an údair. Ionramháil Ábhair = 22 marc Nó Dhá ghné den sliocht a chuaigh i bhfeidhm ort. (Úrscéal) Teideal an úirscéil agus ainm an údair. Ionramháil Ábhair = 22 marc"
+          ]
+        },
+        {
+          "id": "eolas-b",
+          "label": "(b) Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 13,
+          "permittedMarks": [
+            0,
+            13
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) Plé ar an scéal seo mar shampla den chinéal sin litríochta. (Sceal Béaloidis) Teideal agus údar na dírbheathaisnéise. Ionramháil Ábhair = 13 marc Nó Plé ar dhá cheann díobh seo i gcomhthéacs an scéil: An t-osnádúr; an áibhéil; an greann; an tsaint. (Sceal Béaloidis) Teideal agus údar na dírbheathaisnéise. Ionramháil Ábhair = 13 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Cumas Gaeilge - (a) agus (b) le chéile = 5 marc C. 1 (A) nó (B) = 40 marc (22 + 13 + 5) Nóta: Caithfidh an Scrúdaitheoir an marc as 22 (Ábhar) agus as 13 (Ábhar) agus as 5 (Gaeilge) a thaispeáint go soiléir sna hionaid chuí ar an bhfreagarleabhar. Ní bhronnfar marcanna ar theidil/ainmneacha údar a lua ach bainfear marcanna mura luaitear iad."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: (a) Ionramháil Ábhair 22 and (b) Ionramháil Ábhair 13, each judged as a whole, and one shared 5-mark Cumas Gaeilge award for (a) and (b) together. The paper prints (a) at 25 and (b) at 15; the scheme prints Eolas 22 + 13 + Gaeilge 5. Each printed alternative of (a) and of (b) is one route of this card (marked alike, one Atlas heading). The scheme prints no notes, band table or grade table for Páipéar II, so each judged answer is claimed whole. The scheme deducts marks where the title and author are not given; it awards none for giving them.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós",
+        "title": "Prós Roghnach",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 1\nPRÓS 40 MARC\nFreagair A (Prós Ainmnithe) nó B (Prós Roghnach) anseo thíos."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2a-a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2A-a",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2A(a) · Scothscéalta",
+      "questionText": "A GEARRSCÉALTA 40 marc\nFreagair (a) nó (b).\n(a) SCOTHSCÉALTA (40 marc)\n(i) ‘I ngearrscéalta Phádraic Uí Chonaire, is minic a bhíonn an bhean ag fulaingt ag lámha na bhfear.’\nAn ráiteas sin a phlé maidir le do rogha scéal amháin díobh seo a leanas: Neil; An Bhean a Ciapadh; Nóra Mharcais Bhig; Teatrarc na Gaililí.\nnó\n(ii) ‘Bíonn an pholaitíocht agus cás an duine aonair fite fuaite ina chéile i ngearrscéalta Phádraic Uí Chonaire.’\nAn ráiteas sin a phlé maidir le do rogha scéal amháin díobh seo a leanas: M’Fhile Caol Dubh; Beirt Bhan Misniúil; Anam an Easpaig.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2a-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Scothscéalta",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2a-b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2A-b",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2A(b) · Cnuasach gearrscéalta roghnach",
+      "questionText": "A GEARRSCÉALTA 40 marc\nFreagair (a) nó (b).\n(b) CNUASACH GEARRSCÉALTA ROGHNACH (40 marc)\n(i) Maidir le gearrscéal ar bith as do chnuasach roghnach, déan plé ar an gcaoi a gcuireann an choimhlint in aigne na príomhphearsan le forbairt an ghearrscéil.\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn.\nnó\n(ii) Maidir le gearrscéal ar bith as do chnuasach roghnach, déan plé ar do rogha dhá cheann díobh seo a leanas: (i) príomhthéama an scéil; (ii) príomhphearsa an scéil; (iii) buaicphointe an scéil; (iv) críoch an scéil.\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2a-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Cnuasach gearrscéalta roghnach",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2b-a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2B-a",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2B(a) · Máire Nic Artáin",
+      "questionText": "B ÚRSCÉALTA 40 marc\nFreagair (a) nó (b).\n(a) MÁIRE NIC ARTÁIN (40 marc)\n(i) Déan an t-úrscéal Máire Nic Artáin a phlé i gcás do rogha dhá cheann díobh seo a leanas: (i) dhá shuíomh sa scéal; (ii) forbairt an phlota; (iii) an eachtra is mó a chuireann casadh cinniúnach sa scéal; (iv) an ghné den úrscéal is mó a thaitin leat.\nnó\n(ii) ‘Ceann de na gnéithe is spéisiúla san úrscéal Máire Nic Artáin is ea an chodarsnacht idir óige shona Mháire i gContae an Dúin agus a saol achrannach i mBéal Feirste.’\nAn ráiteas sin a phlé.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2b-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        5
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Máire Nic Artáin",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2b-b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2B-b",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2B(b) · Úrscéal roghnach",
+      "questionText": "B ÚRSCÉALTA 40 marc\nFreagair (a) nó (b).\n(b) ÚRSCÉAL ROGHNACH (40 marc)\n(i) Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan an t-úrscéal a phlé i gcás do rogha dhá cheann díobh seo a leanas: (i) dhá shuíomh sa scéal; (ii) forbairt an phlota; (iii) an eachtra is mó a chuireann casadh cinniúnach sa scéal; (iv) an ghné den úrscéal is mó a thaitin leat.\nNí mór teideal an úrscéil, mar aon le hainm an údair, a scríobh síos go cruinn.\nnó\n(ii) Maidir leis an úrscéal roghnach a ndearna tú staidéar air, déan plé ar an tionchar a bhíonn ag beirt de na mionphearsana ar imeachtaí an scéil.\nNí mór teideal an úrscéil, mar aon le hainm an údair, a scríobh síos go cruinn.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2b-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        5
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Úrscéal roghnach",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2c-a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2C-a",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2C(a) · A Thig Ná Tit Orm",
+      "questionText": "C DÍRBHEATHAISNÉISÍ 40 marc\nFreagair (a) nó (b).\n(a) A THIG NÁ TIT ORM (40 marc)\n(i) ‘Is le súil ghéar agus le greann a thugann Maidhc Dainín cuntas ina dhírbheathaisnéis A Thig Ná Tit Orm ar na daoine ar bhuail sé leo agus é ar imirce i Sasana.’\nDéan plé ar an ráiteas sin.\nnó\n(ii) Maidir leis an leabhar A Thig Ná Tit Orm, déan plé gairid ar dhá cheann de na gnéithe seo a leanas: (i) cúrsaí oideachais le linn óige an údair; (ii) caitheamh aimsire na Gaeltachta agus an t-údar ag fás aníos ann; (iii) an imirce; (iv) an ciníochas i Meiriceá.",
+      "totalMarks": 40,
+      "topicId": "irish-6-1",
+      "conceptId": "irish-hl-p2-extra-2c-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "A Thig Ná Tit Orm",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2c-b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2C-b",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2C(b) · Dírbheathaisnéis roghnach",
+      "questionText": "C DÍRBHEATHAISNÉISÍ 40 marc\nFreagair (a) nó (b).\n(b) DÍRBHEATHAISNÉIS ROGHNACH (40 marc)\n(i) Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan plé ar an léiriú a dhéanann an t-údar inti ar na daoine ar bhuail sé/sí leo i rith tréimhse áirithe dá s(h)aol.\nNí mór teideal na dírbheathaisnéise sin, mar aon le hainm an údair, a scríobh síos go cruinn.\nnó\n(ii) Maidir leis an dírbheathaisnéis roghnach a ndearna tú staidéar uirthi, déan plé gairid ar an léiriú a dhéanann an t-údar ar an saol mar a bhí le linn a (h)óige.\nNí mór teideal na dírbheathaisnéise sin, mar aon le hainm an údair, a scríobh síos go cruinn.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2c-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Dírbheathaisnéis roghnach",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2d-a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2D-a",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2D(a) · An Triail",
+      "questionText": "D DRÁMAÍ 40 marc\nFreagair (a) nó (b).\n(a) AN TRIAIL (40 marc)\n(i) ‘Léiríonn na pearsana Pádraig Mac Cárthaigh agus Mailí sa dráma An Triail dhá thaobh chontrártha den saol inar mhair Máire Ní Chathasaigh.’\nDéan plé ar an ráiteas sin.\nnó\n(ii) ‘Cuireann príomhchoimhlintí an dráma An Triail go mór lenár dtuiscint ar shaol na hÉireann ag am a scríofa.’\nDéan plé ar an ráiteas sin.",
+      "totalMarks": 40,
+      "topicId": "irish-6-0",
+      "conceptId": "irish-hl-p2-extra-2d-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        7
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "An Triail",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-extra-2d-b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-2D-b",
+      "questionRef": "2011 HL Paper 2 Próstéacs 2D(b) · Dráma roghnach",
+      "questionText": "D DRÁMAÍ 40 marc\nFreagair (a) nó (b).\n(b) DRÁMA ROGHNACH (40 marc)\n(i) Maidir leis an dráma roghnach a ndearna tú staidéar air, déan plé ar an gcaidreamh atá ag an bpríomhphearsa le beirt eile sa dráma agus an tionchar a bhíonn ag an gcaidreamh sin ar imeachtaí an dráma.\nNí mór teideal an dráma sin, mar aon le hainm an údair, a scríobh síos go cruinn.\nnó\n(ii) Maidir leis an drama roghnach a ndearna tú staidéar air, déan plé ar an gcaoi a dtéann gnéithe den saol sóisialta nó den saol polaitiúil i bhfeidhm ar an gcaidreamh idir beirt de na príomhphearsana ann.\nNí mór teideal an dráma sin, mar aon le hainm an údair, a scríobh síos go cruinn.",
+      "totalMarks": 40,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-extra-2d-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        7
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Ionramháil Ábhair",
+          "kind": "award",
+          "maxMarks": 35,
+          "permittedMarks": [
+            0,
+            35
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Ionramháil Ábhair = 35 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 2 - PRÓSTÉACS BREISE - 40 marc [(a)(i) nó (a)(ii) nó (b)(i) nó (b)(ii) le déanamh as A nó B nó C nó D] { Ionramháil Ábhair = 35 marc} { Cumas Gaeilge = 5 marc} ═══════ C.2: 35 + 5: = 40 marc ═══════ Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Ábhar) agus an marc as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Ionramháil Ábhair 35, judged as a whole, and Cumas Gaeilge 5 (scheme PDF 17). (i) and (ii) are the printed alternatives of this route, marked alike. The scheme prints no notes, band table or grade table for Ceist 2, so the answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Próstéacs Breise",
+        "title": "Dráma roghnach",
+        "pages": [
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 2\nPRÓSTÉACS BREISE 40 MARC\nFreagair do rogha CEANN AMHÁIN AS A nó B nó C nó D ar na leathanaigh 4 (thíos) agus 5, 6, 7 (thall)."
+    },
+    {
+      "id": "irish-2011-hl-p2-poetry-3a",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A",
+      "questionRef": "2011 HL Paper 2 Filíocht 3A · Filíocht Ainmnithe",
+      "questionText": "A FILÍOCHT AINMNITHE 35 mharc\nFreagair (a) atá thíos agus (b) atá thall ar leathanach 10.\n(a) (i) Luaigh dhá cheann de na mothúcháin is mó, dar leat, sa dán Jack (thíos) agus déan cur síos ar an gcaoi a gcuirtear in iúl iad. (12 mharc)\n(ii) Luaigh an íomhá (pictiúr) is mó a chuaigh i bhfeidhm ort agus abair cén fáth. (8 marc)\nnó\n(i) Maidir leis an dán Bímse Buan ar Buairt Gach Ló (thíos) déan plé gairid ar an gcaoi a léirítear príomh-mhothúcháin an dáin. (12 mharc)\n(ii) Luaigh an íomhá (pictiúr) is mó a chuaigh i bhfeidhm ort agus abair cén fáth. (8 marc)\n(b) (i) Maidir leis an dán Gealt? (thíos), déan trácht ar na híomhánna (pictiúir) is mó a threisíonn le príomhthéama an dáin dar leat. (15 mharc)\nnó\n(ii) Maidir leis an dán Gealt? (thíos), cad a spreag eachtraí an dáin, dar leat, agus léirigh mar a d’fhorbair an file na heachtraí sin. (15 mharc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-hl-p2-poetry-3a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 17,
+      "schemePages": [
+        17,
+        19
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8,
+        9,
+        10
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-a-i",
+          "label": "(a)(i) Eolas",
+          "kind": "award",
+          "maxMarks": 11,
+          "permittedMarks": [
+            0,
+            11
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) (i) Dhá cheann de na mothúcháin is mó agus an chaoi a gcuirtear in iúl iad. (Jack) = 11 marc",
+            "Nó (i) Plé ar an gcaoi a léirítear príomh-mhothúcháin an dáin. (Bímse Buan ar Buairt Gach Ló) = 11 marc"
+          ]
+        },
+        {
+          "id": "eolas-a-ii",
+          "label": "(a)(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An íomhá is mó a chuaigh i bhfeidhm ort agus cén fáth. (Jack) = 6 marc",
+            "(ii) An íomhá is mó a chuaigh i bhfeidhm ort agus cén fáth. (Bímse Buan ar Buairt Gach Ló) = 6 marc"
+          ]
+        },
+        {
+          "id": "eolas-b",
+          "label": "(b) Eolas",
+          "kind": "award",
+          "maxMarks": 13,
+          "permittedMarks": [
+            0,
+            13
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) (i) Trácht ar na híomhánna a threisíonn leis an bpríomhthéama. (Gealt?) = 13 marc Nó (ii) Cad a spreag eachtraí an dáin agus léirigh an fhorbairt ar na heachtraí sin. (Gealt?) = 13 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Cumas Gaeilge (A nó B agus C le chéile) = 10 marc Nóta: Caithfidh an Scrúdaitheoir an marc as 17 (Ábhar) agus as 13 (Ábhar) agus as 30 (Ábhar) agus as 10 (Gaeilge) a thaispeáint sna hionaid chuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response to this route of Ceist 3. The paper prints the route at 35; the scheme prints its Eolas at 11 + 6 + 13 = 30 (the paper prints the sub-questions at 12, 8 and 15 with their Irish) and one Cumas Gaeilge award of 10 for the two routes of Ceist 3 together (A or B, and C): this card carries 5, the route’s share (its printed 35 less its printed Eolas 30). Each printed alternative is one route of this card, marked alike. The scheme prints no notes, band table or grade table for Ceist 3, so each judged answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht",
+        "title": "Filíocht Ainmnithe",
+        "pages": [
+          8,
+          9,
+          10
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 3\nFILÍOCHT 70 MARC\nFreagair A (Filíocht Ainmnithe) ar na leathanaigh 8, 9 agus 10 nó B (Filíocht Roghnach) ar leathanach 11 agus freagair C (Dánta Dualgais Breise) ar na leathanaigh 12 agus 13."
+    },
+    {
+      "id": "irish-2011-hl-p2-poetry-3b",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-B",
+      "questionRef": "2011 HL Paper 2 Filíocht 3B · Filíocht Roghnach",
+      "questionText": "B FILÍOCHT ROGHNACH 35 mharc\nFreagair (a) agus (b).\n(a) (i) Maidir le dán seanaimseartha a chum bean, agus a ndearna tú staidéar air le linn do chúrsa, déan plé ar aigne an fhile sa dán agus ar an gcaoi a léirítear í. (12 mharc)\n(ii) Luaigh an ghné den dán is mó a chuaigh i bhfeidhm ort agus mínigh do rogha. (8 marc)\nNí mór teideal an dáin, mar aon le hainm an fhile, a scríobh síos go cruinn.\nnó\n(i) Maidir le dán nua-aimseartha a chum fear, agus a ndearna tú staidéar air le linn do chúrsa, déan plé ar a éifeachtaí is a léiríonn na híomhánna an príomhthéama ann. (12 mharc)\n(ii) Déan trácht ar an mothúchán is treise sa dán dar leat. (8 marc)\nNí mór teideal an dáin, mar aon le hainm an fhile, a scríobh síos go cruinn.\n(b) (i) Maidir le dán nua-aimseartha a chum bean, agus a ndearna tú staidéar air le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, déan plé gairid ar phríomhthéama an dáin agus inis cén fáth a ndeachaigh an dán i bhfeidhm ort féin. (15 mharc)\nNí mór teideal an dáin, mar aon le hainm an fhile, a scríobh síos go cruinn.\nnó\n(ii) Maidir le dán nua-aimseartha a chum fear agus a ndearna tú staidéar air le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, déan plé gairid ar do rogha dhá cheann de na gnéithe seo: (a) na híomhánna; (b) an t-atmaisféar; (c) teideal an dáin; (d) an t-athrá. (15 mharc)\nNí mór teideal an dáin, mar aon le hainm an fhile, a scríobh síos go cruinn.",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-hl-p2-poetry-3b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-a-i",
+          "label": "(a)(i) Eolas",
+          "kind": "award",
+          "maxMarks": 11,
+          "permittedMarks": [
+            0,
+            11
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) (i) Plé ar aigne an fhile sa dán agus ar an gcaoi a léirítear í. (Dán seanaimseartha le bean.) = 11 marc (Teideal an dáin agus ainm an fhile.)",
+            "Nó (i) A éifeachtaí a léiríonn na híomhánna príomhthéama an dáin. (Dán nua-aimseartha le fear) = 11 marc (Teideal an dáin agus ainm an fhile.)"
+          ]
+        },
+        {
+          "id": "eolas-a-ii",
+          "label": "(a)(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An ghné den dán is mó a chuaigh i bhfeidhm ort féin agus an fáth. (Dán seanaimseartha le bean.) = 6 marc (Teideal an dáin agus ainm an fhile.)",
+            "(ii) Trácht ar an mothúchán is treise sa dán. (Dán nua-aimseartha le fear) = 6 marc"
+          ]
+        },
+        {
+          "id": "eolas-b",
+          "label": "(b) Eolas",
+          "kind": "award",
+          "maxMarks": 13,
+          "permittedMarks": [
+            0,
+            13
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) (i) Plé ar an bpríomhthéama agus an fáth a ndeachaigh an dán i bhfeidhm ort. (Dán Nua-aimseartha le bean nár roghnaíodh thuas): = 13 marc (Teideal an dáin agus ainm an fhile) Nó (ii) Plé ar dhá cheann díobh seo: Na híomhánna; an t-atmaisféar; teideal an dáin; an t-athrá. (Dán Nua-aimseartha le fear nár roghnaíodh thuas) = 13 marc (Teideal an dáin agus ainm an fhile)",
+            "Ní bhronnfar marcanna ar theidil/ainmneacha údar a lua ach bainfear marcanna mura luaitear iad."
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Cumas Gaeilge (A nó B agus C le chéile) = 10 marc Nóta: Caithfidh an Scrúdaitheoir an marc as 17 (Ábhar) agus as 13 (Ábhar) agus as 30 (Ábhar) agus as 10 (Gaeilge) a thaispeáint sna hionaid chuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response to this route of Ceist 3. The paper prints the route at 35; the scheme prints its Eolas at 11 + 6 + 13 = 30 (the paper prints the sub-questions at 12, 8 and 15 with their Irish) and one Cumas Gaeilge award of 10 for the two routes of Ceist 3 together (A or B, and C): this card carries 5, the route’s share (its printed 35 less its printed Eolas 30). Each printed alternative is one route of this card, marked alike. The scheme prints no notes, band table or grade table for Ceist 3, so each judged answer is claimed whole. The scheme deducts marks where the title and poet are not given; it awards none for giving them.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht",
+        "title": "Filíocht Roghnach",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 3\nFILÍOCHT 70 MARC\nFreagair A (Filíocht Ainmnithe) ar na leathanaigh 8, 9 agus 10 nó B (Filíocht Roghnach) ar leathanach 11 agus freagair C (Dánta Dualgais Breise) ar na leathanaigh 12 agus 13."
+    },
+    {
+      "id": "irish-2011-hl-p2-poetry-3c",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-C",
+      "questionRef": "2011 HL Paper 2 Filíocht 3C · Dánta Dualgais Breise",
+      "questionText": "C DÁNTA DUALGAIS BREISE 35 mharc\nFreagair (a) nó (b).\n(a) Freagair (i), (ii) agus (iii) thíos.\n(i) ‘Sa dán Oíche Nollaig na mBan baineann an file úsáid as íomhánna (pictiúir) láidre neamhghnácha lena smaointe agus a mhothúcháin a chur in iúl.’\nAn ráiteas sin a phlé maidir leis an dán thíos. (20 marc)\n(ii) Mínigh na línte seo:\nBa mhaith liom go dtiocfadh an stoirm sin féin\nAn oíche go mbeadsa go lag\nAg filleadh abhaile ó rince an tsaoil\nIs solas an pheaca ag dul as.\n(6 mharc)\n(iii) Scríobh nóta ar an úsáid a bhaineann an file as codarsnachtaí sa dán. (9 marc)\nnó\n(b) Freagair (i), (ii) agus (iii) thíos.\n(i) I gcás an dáin Dán do Mhelissa déan plé ar an bpríomhthéama atá sa dán agus ar an gcaoi a gcuirtear os ár gcomhair é. (20 marc)\n(ii) Mínigh na línte seo:\nBheadh an damh ag súgradh leis an madra,\nAn naíonán ag gleáchas leis an nathair nimhe,\nLuífeadh an leon síos leis an uan caorach.\n(6 mharc)\n(iii) Scríobh nóta gairid ar éifeacht dhá chodarsnacht i léiriú phríomhthéama an dáin. (9 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-hl-p2-poetry-3c",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        12,
+        13
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 18,
+          "permittedMarks": [
+            0,
+            18
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(a) Oíche Nollaig na mBan (i) “Íomhánna neamhghnáthacha ag an bhfile lena smaointe agus a mhothúcháin a chur in iúl.” É sin a phlé. = 18 marc",
+            "(b) Dán do Mhelissa (i) An príomhthéama a phlé agus an chaoi a gcuirtear os ár gcomhair é. = 18 marc"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Mínigh na línte. = 4 marc",
+            "(ii) Mínigh na línte = 4 marc"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Nóta ar an úsáid a bhaintear as codarsnachtaí sa dán. = 8 marc",
+            "(iii) Nóta ar éifeacht dhá chodarsnacht i léiriú an phríomhthéama. = 8 marc"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Cumas Gaeilge (A nó B agus C le chéile) = 10 marc Nóta: Caithfidh an Scrúdaitheoir an marc as 17 (Ábhar) agus as 13 (Ábhar) agus as 30 (Ábhar) agus as 10 (Gaeilge) a thaispeáint sna hionaid chuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response to this route of Ceist 3. The paper prints the route at 35; the scheme prints its Eolas at 18 + 4 + 8 = 30 (the paper prints the sub-questions at 20, 6 and 9 with their Irish) and one Cumas Gaeilge award of 10 for the two routes of Ceist 3 together (A or B, and C): this card carries 5, the route’s share (its printed 35 less its printed Eolas 30). Each printed alternative is one route of this card, marked alike. The scheme prints no notes, band table or grade table for Ceist 3, so each judged answer is claimed whole.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht",
+        "title": "Dánta Dualgais Breise",
+        "pages": [
+          12,
+          13
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Ceist 3\nFILÍOCHT 70 MARC\nFreagair A (Filíocht Ainmnithe) ar na leathanaigh 8, 9 agus 10 nó B (Filíocht Roghnach) ar leathanach 11 agus freagair C (Dánta Dualgais Breise) ar na leathanaigh 12 agus 13."
+    },
+    {
+      "id": "irish-2011-hl-p2-history-4",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "X-4",
+      "questionRef": "2011 HL Paper 2 Stair na Gaeilge 4",
+      "questionText": "Ceist 4\nSTAIR NA GAEILGE 30 MARC\nScríobh gearrchuntas ar DHÁ CHEANN díobh seo a leanas.\nI gcás (a), (b) agus (f), is pointí gearra eolais atá á lorg.\nI gcás (c), (d) agus (e), tá pointí níos faide á lorg.\n(a) Do rogha beirt díobh seo a leanas:\nLiam Ó Flaithearta\nMáirtín Ó Direáin\nMáire Mhac an tSaoi\nPeig Sayers\nBiddy Jenkinson\nNuala Ní Dhomhnaill\nCaitlín Maude\nSéamus Ó Grianna\n[Ní mór saol agus saothar gach duine díobh a lua.]\n(b) Do rogha dhá cheann díobh seo a leanas:\nAn Ghaeilge mar theanga Cheilteach; Annála na gCeithre Máistrí; Ogham; An Aisling Pholaitiúil.\n(c) An Fhiannaíocht.\n[Is leor trí mhórphointe.]\n(d) Filíocht na mBard.\n[Is leor trí mhórphointe.]\n(e) Na Cúirteanna Filíochta.\n[Is leor trí mhórphointe.]\n(f) Do rogha dhá cheann díobh seo a leanas:\nGael Linn; Oireachtas na Gaeilge; Drámaíocht na Gaeilge; Údarás na Gaeltachta.",
+      "totalMarks": 30,
+      "topicId": "irish-7-0",
+      "conceptId": "irish-hl-p2-history-4",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        14
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Dhá cheann le déanamh as (a), (b), (c), (d), (e), (f). 13 + 12 (Eolas) móide 5 marc ar an gCumas Gaeilge (sa dá cheann le chéile)",
+            "I gcás (a), (b), (f), tá cuntas le scríobh ar dhá cheann; pointí gearra eolais atá á lorg. I gcás (c), (d), (e), áit a bhfuil gné amháin le plé, lorgaítear pointí eolais níos faide. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 25 (Eolas) agus an marc a bhronntar as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Ceist 4 - STAIR - 30 marc Dhá cheann le déanamh as (a), (b), (c), (d), (e), (f). 13 + 12 (Eolas) móide 5 marc ar an gCumas Gaeilge (sa dá cheann le chéile) = 30 marc. I gcás (a), (b), (f), tá cuntas le scríobh ar dhá cheann; pointí gearra eolais atá á lorg. I gcás (c), (d), (e), áit a bhfuil gné amháin le plé, lorgaítear pointí eolais níos faide. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 25 (Eolas) agus an marc a bhronntar as 5 (Gaeilge) a thaispeáint go soiléir san ionad cuí ar an bhfreagarleabhar."
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: two of (a)–(f), Eolas 13 for one and 12 for the other (25, the scheme’s “an marc a bhronntar as 25 (Eolas)”) and Cumas Gaeilge 5 for the two together. Each printed option is one choice inside this card. The scheme prints no answer for Ceist 4 and no scale: the Eolas steps only at its printed split, 12 or 13 for one answer and 25 for both.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Stair na Gaeilge",
+        "title": "Ceist 4",
+        "pages": [
+          14
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}
