@@ -1,0 +1,73 @@
+name: Mark Bank checkpoint verification 12 November
+
+# Isolated validation branch: no deployment steps or secrets.
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [codex/markbank-verify-20261112]
+
+concurrency:
+  group: markbank-checkpoint-20261112
+  cancel-in-progress: false
+
+jobs:
+  verify-checkpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VITEST_MAX_WORKERS: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+
+      - name: Verify exact checkpoint and workflow-only change
+        id: integrity
+        shell: bash
+        run: |
+          test "$(git rev-parse HEAD^)" = '6875dbd9f52bd780b591a51fdbdf27ffaac9e3f3'
+          test "$(git diff --name-only HEAD^ HEAD)" = '.github/workflows/markbank-checkpoint-20261112.yml'
+          git show --no-patch --format=fuller HEAD
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        id: dependencies
+        run: npm ci
+
+      - name: Generate scoped test configuration
+        id: configuration
+        shell: bash
+        run: |
+          python3 - <<'PYCONFIG'
+          import json
+          from pathlib import Path
+          dest = Path('tmp/continuous-review/nov12-batch-test-tsconfig.json')
+          dest.parent.mkdir(parents=True, exist_ok=True)
+          dest.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/askThePapers.test.tsx', '../../test/curriculumRegistry.test.ts', '../../test/japanese2011HigherMarkBank.test.ts', '../../test/japanese2012HigherMarkBank.test.ts', '../../test/japanese2014HigherMarkBank.test.ts', '../../test/japanese2015HigherMarkBank.test.ts', '../../test/japanese2016HigherMarkBank.test.ts', '../../test/japanese2017HigherMarkBank.test.ts', '../../test/japanese2018HigherMarkBank.test.ts', '../../test/japanese2019HigherMarkBank.test.ts', '../../test/japanese2020HigherMarkBank.test.ts', '../../test/japanese2021HigherMarkBank.test.ts', '../../test/japanese2022HigherMarkBank.test.ts', '../../test/japanese2023HigherMarkBank.test.ts', '../../test/japanese2024HigherMarkBank.test.ts', '../../test/japanese2025HigherMarkBank.test.ts', '../../test/japanese2026MarkBank.test.ts', '../../test/japaneseSourceAnswers.test.ts', '../../test/japaneseSourceBank.test.ts', '../../test/japaneseSourceRules.test.ts', '../../test/markBankCardPreservation.test.ts', '../../test/markBankDeck.test.ts', '../../test/markBankLcvp2019.test.ts', '../../test/markBankLcvp2020.test.ts', '../../test/markBankLcvpIdentity.test.ts', '../../test/markBankLibraryConfidence.test.tsx', '../../test/markBankLibraryCoverage.test.ts', '../../test/markBankUnpricedSummary.test.tsx', '../../test/russian2010HigherReviewed.test.tsx', '../../test/russian2010OrdinaryReviewed.test.ts', '../../test/russian2012ConfidenceIntegration.test.tsx', '../../test/russian2012ConfidenceReview.test.tsx', '../../test/russian2012HigherReviewed.test.ts', '../../test/russianSummaryLanguageExceptions.test.ts', '../../test/subjectShowcase.test.ts', '../../vite-env.d.ts', '../../test/setup.ts']}, indent=2) + '\n')
+          PYCONFIG
+
+      - name: Full application type check
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}
+        run: npm run typecheck
+
+      - name: Scoped test type check (35 files)
+        if: ${{ !cancelled() && steps.configuration.outcome == 'success' && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}
+        run: node --max-old-space-size=8192 node_modules/typescript/lib/tsc.js --noEmit -p tmp/continuous-review/nov12-batch-test-tsconfig.json
+
+      - name: Full Mark Bank deck tests
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}
+        run: node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/markBankDeck.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism --reporter=default
+
+      - name: Normal production build
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}
+        run: npm run build
+
+      - name: Verify generated tracked files stayed unchanged
+        if: ${{ !cancelled() && steps.integrity.outcome == 'success' }}
+        run: git diff --exit-code
