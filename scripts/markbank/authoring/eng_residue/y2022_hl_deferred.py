@@ -735,4 +735,60 @@ CARDS = [
 
 TOPICS = {}
 
-ATLAS = {}
+# The Topic Atlas topic of each card the reference's headings do not settle
+# (eng_atlas.py). The reference heads no part of this paper's Q2 or Q7: their
+# cards are filed as June 2022's same questions are.
+_AI = ('Artificial intelligence and smart manufacturing (the 2022 Higher special '
+       'topic, set again in the deferred sitting), which the reference files June\'s '
+       'Q2 under and heads no part of this paper\'s Q2; the card\'s syllabus heading '
+       'is Technology, or Control technology and electronics.')
+_POLY = ('Polymers: the bumper\'s polymer and its moulding, copolymers, parisons, '
+         '3-D printing, fillers and stabilisers, thermosets against elastomers. The '
+         'reference files June 2022\'s polymers question (Q7) under Polymers and heads '
+         'no part of this paper\'s Q7.')
+
+ATLAS = {
+    'eng-2022-hl-deferred-q1-b': dict(
+        topics=['Materials: Properties and Uses'],
+        note='Adhesive bonding of windscreens and glass panels, which the reference '
+             'files Q1(b) under; the card\'s syllabus heading is Joining of '
+             'materials, where adhesives sit.'),
+    **{f'eng-2022-hl-deferred-q2-{p}': dict(topics=['Energy, Electronics & Robotics'], note=_AI)
+       for p in ('a-i', 'a-ii', 'b-i', 'b-ii', 'c', 'd', 'e')},
+    'eng-2022-hl-deferred-q3-b-ii': dict(
+        topics=['Testing of Materials and Products'],
+        note='Elastic against plastic deformation in metals, the behaviour a tensile '
+             'test measures, in the testing question the reference files whole under '
+             'Testing of Materials and Products.'),
+    'eng-2022-hl-deferred-q5-a-i': dict(
+        topics=['Heat Treatment'],
+        note='Strengthening sheet metal. The reference files Q5(a) under Corrosion of '
+             'Metals ((iii), sacrificial protection), The Structure of Materials ((ii) '
+             'and (iv)) and Heat Treatment, which is left to (i); the scheme answers '
+             'with profiling (corrugating, folding, ribbing), and the card\'s syllabus '
+             'heading is Manufacturing processes, which no outgoing-course topic covers.'),
+    'eng-2022-hl-deferred-q5-c-ii': dict(
+        topics=['The Structure of Materials'],
+        note='Grain boundaries are crystal structure; the reference files Q5(a) and '
+             '(b) under The Structure of Materials and heads no part (c). The card\'s '
+             'syllabus heading is Materials testing (ductility).'),
+    'eng-2022-hl-deferred-q6-c-i': dict(
+        topics=['Energy, Electronics & Robotics'],
+        note='Servo against DC motors in robotic control systems: the second (c), '
+             'which the reference does not head (it files Q6(a), (b) and the first '
+             '(c) under Welding). Energy, Electronics & Robotics, where it files the '
+             'second (c) of Q8 and Q9, covers the card\'s syllabus heading, Control '
+             'technology and electronics.'),
+    **{f'eng-2022-hl-deferred-q7-{p}': dict(topics=['Polymers'], note=_POLY)
+       for p in ('a-i', 'a-ii', 'b', 'c-i')},
+    'eng-2022-hl-deferred-q7-c-ii': dict(
+        topics=['Polymers', 'The Structure of Materials'],
+        note='Crystalline against amorphous polymers: polymer structure, filed as '
+             'June 2022\'s Q1(b) (amorphous against crystalline structures) is, under '
+             'Polymers and The Structure of Materials; the card\'s syllabus heading is '
+             'Structure of metals. ' + _POLY),
+    'eng-2022-hl-deferred-q8-b-ii': dict(
+        topics=['Health and Safety'],
+        note='Safety precautions for surface grinding are machine safety; Q8 is '
+             'otherwise filed under machining (as June 2022\'s Q8(b)(ii) and (v)).'),
+}

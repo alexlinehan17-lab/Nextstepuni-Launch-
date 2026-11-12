@@ -72,6 +72,7 @@ describe('Paper Trail syllabus history', () => {
 // Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04),
 // Irish's carded deferred papers (from 2026-11-12), and DCG's deferred Higher
 // booklets, a Section A sheet and a Sections B and C booklet a sitting (from
+// 2026-11-12), and Engineering's deferred Higher papers, 2022 and 2023 (from
 // 2026-11-12), their questions kept apart from June's by
 // logicalQuestionIdentity.
 const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
@@ -85,6 +86,8 @@ const ADMITTED_DEFERRED = new Set([
   'history|2023|LC004GLP000EV-deferred.pdf',
   ...IRISH_DEFERRED_PAPERS.map(paper => `irish|${paper}`),
   ...DCG_DEFERRED_PAPERS.map(paper => `design-and-communication-graphics|${paper}`),
+  'engineering|2022|LC027ALP000EV-deferred.pdf',
+  'engineering|2023|LC027ALP000EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {
@@ -130,5 +133,11 @@ describe('Topic Atlas stays on the reviewed June papers', () => {
     const dcgDeferred = questionsForTopics('design-and-communication-graphics', null).filter(q => q.fileid.endsWith('-deferred.pdf'));
     expect(dcgDeferred).toHaveLength(12 * DCG_DEFERRED_PAPERS.length / 2);
     expect(new Set(dcgDeferred.map(q => `${q.year}|${q.fileid}`))).toEqual(new Set(DCG_DEFERRED_PAPERS));
+    // Engineering's two deferred Higher papers surface as their own nine questions each.
+    const engineeringDeferred = questionsForTopics('engineering', null).filter(q => q.fileid.endsWith('-deferred.pdf'));
+    expect(engineeringDeferred.map(q => `${q.year}|${q.n}`).sort()).toEqual(
+      [2022, 2023].flatMap(year => Array.from({ length: 9 }, (_, i) => `${year}|${i + 1}`)).sort(),
+    );
+    expect(new Set(engineeringDeferred.map(q => q.fileid))).toEqual(new Set(['LC027ALP000EV-deferred.pdf']));
   });
 });
