@@ -1,0 +1,60 @@
+{
+  "name": "Mark Bank source access for remote reproducibility",
+  "permissions": {
+    "contents": "read"
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "codex/markbank-verify-source-access-20261112"
+      ]
+    }
+  },
+  "concurrency": {
+    "group": "codex/markbank-verify-source-access-20261112",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "verify-candidate": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 20,
+      "env": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "with": {
+            "fetch-depth": 2
+          }
+        },
+        {
+          "name": "Verify exact candidate and workflow-only change",
+          "id": "integrity",
+          "shell": "bash",
+          "run": "test \"$(git rev-parse HEAD^)\" = 40de513decc134b4f85ccde199c86583ee8ec8e5\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/markbank-source-access-20261112.yml\ngit show --no-patch --format=fuller HEAD"
+        },
+        {
+          "name": "Verify access to all20 pinned official originals",
+          "if": "${{ !cancelled() && steps.integrity.outcome == 'success' }}",
+          "run": "python3 - <<'PYSOURCES'\nimport datetime,hashlib,json,time,urllib.request,urllib.error\nfrom pathlib import Path\nrecords=[{'path': 'paper-trail-corpus/exampapers/2017/LC462CLPO00EV.pdf', 'sha256': '9a37c1d576ef1166a0343814c53d69ba9583d0bd0ac1ffbc22b1a712e56fca71', 'bytes': 300979}, {'path': 'paper-trail-corpus/markingschemes/2017/LC462CLP000EV.pdf', 'sha256': 'ea64635f6bdbebea17ce35fb814768be75a929aea94c0abe9900a86d8aa7d46f', 'bytes': 383191}, {'path': 'paper-trail-corpus/exampapers/2018/LC462CLP000EV.pdf', 'sha256': '3e7b2a2c14343b958d854641b637afca191a22ba6ae674e7d0fcfc81cd9c1276', 'bytes': 320258}, {'path': 'paper-trail-corpus/markingschemes/2018/LC462CLP000EV.pdf', 'sha256': '90aa2988c3fb84ca6fcea3ee15a371cb77b9b97da18ee1aad7dd3838c3ad7006', 'bytes': 426761}, {'path': 'paper-trail-corpus/exampapers/2019/LC462CLP000EV.pdf', 'sha256': '187deb870b2768baa94a541da83c0d0447a167bc7f0d7ed94fe80659007cd752', 'bytes': 933689}, {'path': 'paper-trail-corpus/markingschemes/2019/LC462CLP000EV.pdf', 'sha256': 'a342ee8e6a4394b8bb3e49e2809f165ebfb951dabe272783ee58129147037259', 'bytes': 486945}, {'path': 'paper-trail-corpus/exampapers/2020/LC462CLP000EV.pdf', 'sha256': '2834437686d332ead96ce729989f46b8018dd2b3348914b5e55c45a9beeeef37', 'bytes': 486980}, {'path': 'paper-trail-corpus/markingschemes/2020/LC462CLP000EV.pdf', 'sha256': '64a81c98ffb5ac3bd511c23e4f0215c8c5a06430c7332496123d8adcd9cf90c4', 'bytes': 445308}, {'path': 'paper-trail-corpus/exampapers/2021/LC462CLP000EV.pdf', 'sha256': '483769937547e57f5de2e552b0b850efb929cb1cfc3bf67fdc421665b6ea6445', 'bytes': 633771}, {'path': 'paper-trail-corpus/markingschemes/2021/LC462CLP000EV.pdf', 'sha256': '3ac15fb1ca2dc4c37401c3f5d9472323c51d07e04e285bd16905469efe37ca98', 'bytes': 1615488}, {'path': 'paper-trail-corpus/exampapers/2022/LC462CLP000EV.pdf', 'sha256': 'aed2d4bfd2d92123bb891bf3d139f0e256472209385b5884811ab1e1ef729600', 'bytes': 559715}, {'path': 'paper-trail-corpus/markingschemes/2022/LC462CLP000EV.pdf', 'sha256': '34482210d864fc13e7d0c4b86a058a03108545a067ace49b82973a4db84b9338', 'bytes': 334096}, {'path': 'paper-trail-corpus/exampapers/2023/LC462CLP000EV.pdf', 'sha256': 'b14f72edc63c2909a24bc0dc116c823cf8910ddb17e00eccf7afb1cbcf26b492', 'bytes': 562897}, {'path': 'paper-trail-corpus/markingschemes/2023/LC462CLP000EV.pdf', 'sha256': '6e8b6ebb225d2da4f49034a547c37310bc2b775772f81c7b663636508d5aaa67', 'bytes': 550437}, {'path': 'paper-trail-corpus/exampapers/2024/LC462CLP000EV.pdf', 'sha256': '59764baea4b1a88cfbe2be04276a3be6b21ff324ae113ec6da6bf1c4e9fecf74', 'bytes': 610506}, {'path': 'paper-trail-corpus/markingschemes/2024/LC462CLP000EV.pdf', 'sha256': '62fa33261a67ea4c80cea654d4e33d49380281db4d34d002013ae9139c7cb7d4', 'bytes': 412856}, {'path': 'paper-trail-corpus/exampapers/2025/LC462CLP000EV.pdf', 'sha256': '070e0bc008f187ce2fdb833997be0d9a640ded62a5c92282bf33de6fefa6c0ce', 'bytes': 521908}, {'path': 'paper-trail-corpus/markingschemes/2025/LC462CLP000EV.pdf', 'sha256': 'c1d5ecb2fae99f3b47d8c21e0ae5af69291efeb1b925203f2418a117642f29af', 'bytes': 401312}, {'path': 'paper-trail-corpus/exampapers/2026/LC462CLP000EV.pdf', 'sha256': 'c1b319abcee8521b3c272f87b0230768a9e5082dc2526958b16df1203e35bd50', 'bytes': 486785}, {'path': 'paper-trail-corpus/markingschemes/2026/LC462CLP000EV.pdf', 'sha256': '49251a890b2998d216ed02dacf5edd657c0918984a19f09a4db4f5a7579efb4e', 'bytes': 520597}]\nresults=[]\nfor item in records:\n url='https://www.examinations.ie/archive/'+item['path'].removeprefix('paper-trail-corpus/')\n report={'url':url,'expectedSha256':item['sha256']}\n try:\n  request=urllib.request.Request(url,headers={'User-Agent':'NextStepUni source reproducibility verification (public SEC exam materials)'})\n  with urllib.request.urlopen(request,timeout=30) as response:\n   data=response.read(item['bytes']+1)\n   report.update(status=response.status,contentType=response.headers.get('Content-Type'),bytes=len(data),sha256=hashlib.sha256(data).hexdigest())\n  assert data.startswith(b'%PDF-') and len(data)==item['bytes'] and report['sha256']==item['sha256'],'Original source mismatch'\n  report['passed']=True\n except Exception as error:\n  report.update(passed=False,error=str(error))\n results.append(report)\n print(json.dumps(report),flush=True)\n Path('source-access-proof.json').write_text(json.dumps({'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'limits':'Runner access only; no archive absence claim and no product/generation check.'},indent=2)+'\\n')\n if not report['passed']:raise SystemExit(1)\n time.sleep(1)\nassert len(results)==20\n\nPYSOURCES"
+        },
+        {
+          "name": "Verify tracked files stayed unchanged",
+          "if": "${{ !cancelled() && steps.integrity.outcome == 'success' }}",
+          "run": "git diff --exit-code"
+        },
+        {
+          "name": "Save source access evidence",
+          "if": "always()",
+          "uses": "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+          "with": {
+            "name": "source-access-proof",
+            "path": "source-access-proof.json",
+            "retention-days": 7
+          }
+        }
+      ]
+    }
+  }
+}
