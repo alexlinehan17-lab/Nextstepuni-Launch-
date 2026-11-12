@@ -88,8 +88,8 @@
   "ordinary": 153
  },
  "spanish": {
-  "higher": 351,
-  "ordinary": 249
+  "higher": 813,
+  "ordinary": 591
  },
  "italian": {
   "higher": 172,
@@ -181,8 +181,8 @@
   "higher": 20
  },
  "dcg": {
-  "higher": 444,
-  "ordinary": 337
+  "higher": 580,
+  "ordinary": 430
  },
  "physical-education": {
   "higher": 382,

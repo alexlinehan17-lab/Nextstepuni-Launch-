@@ -166,11 +166,12 @@ OLD_AURAL_Q = re.compile(
     r'^(\d)\s*\.\s*(?:ANUNCIO|DI[ÁA]LOGO|DESCRIPTIVO|EL\s+TIEMPO|UNA\s+NOTICIA)\s*:',
     re.I)
 
-# Page furniture the 2010-2020 booklets print and the 2021 redesign dropped:
+# Page furniture the 2010-2020 booklets print and the 2021 redesign dropped
+# (2016 Higher's loose-insert page leaves the word "Page" on a row alone):
 # "Page 2 of 16", "Page 7 of 16 / Lch 7 de 16", "OVER", "[Turn over", the
 # blank-page notices and the pointer to the loose sheet.
 OLD_FURNITURE = re.compile(
-    r'^(?:Page\s+\d+\s+of\s+\d+|Lch\s+\d+|OVER$|\[?\s*Turn over|See Loose Insert'
+    r'^(?:Page\s+\d+\s+of\s+\d+|Page$|Lch\s+\d+|OVER$|\[?\s*Turn over|See Loose Insert'
     r'|There is no examination material|THIS PAGE|BLANK PAGE|Do not write|\*?\s*PAUSE$'
     r'|N\.?B\.?\s+For use by Examiner|For use by Examiner)', re.I)
 
@@ -518,7 +519,9 @@ class EsPaper:
     def __init__(self, year, level, subject=SUBJECT):
         self.year, self.level, self.subject = year, level, subject
         self.path = self._path('000')
-        self.insert_path = self._path('015', optional=True)
+        # 2016 files its loose sheet under a letter O: LC012ALPO15EV.
+        self.insert_path = (self._path('015', optional=True)
+                            or self._path('O15', optional=True))
         self.aural_path = self._path('A00', optional=True)
         self.old = year <= OLD_ERA_LAST
         self.rows = _rows(self.path)

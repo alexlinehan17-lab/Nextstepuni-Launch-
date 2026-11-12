@@ -438,8 +438,17 @@ for (let year = 2010; year <= 2026; year++) {
 // … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
 // on both for every year listed.
 const HIGHER_WRITING_PAGES = {
+  2021: { b5: 12, c2: 19 },
+  2022: { b5: 14, c2: 21 },
+  2023: { b5: 14, c2: 21 },
+  2024: { b5: 14, c2: 21 },
+  2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
   2026: { b5: 14, c2: 21 },
+  2016: { b5: 9, c2: 13 },
+  2017: { b5: 9, c2: 13 },
+  2018: { b5: 9, c2: 13 },
+  2019: { b5: 9, c2: 13 },
 };
 for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
   for (const lang of ['ev', 'iv']) {
@@ -453,6 +462,36 @@ for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
       if (paper.q.some(question => question.n === n)) throw new Error(`${paperIdentity(paper)}: ${n} already exists`);
       paper.q.splice(at, 0, customQuestion({ n, label, semantic, page, year: Number(year) }));
     }
+  }
+}
+
+// Printed questions the classic maps never anchored. The journalistic text's
+// Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una de las
+// frases siguientes"), wherever a map anchors that text question by question
+// and stops at Q3: a card of its own after Q3, in each edition that does (an
+// edition anchoring the text as one card already holds it). Each page is
+// where the paper prints that head, checked in both booklets.
+for (const extra of [
+  { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2024, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2021, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 8 },
+  { year: 2022, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2019, langs: ['ev'], after: '8', n: 'A1b4', label: 'Sec A · Journ 1(b) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2018, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text (Mascotas y dueños) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2017, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2016, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)
+  // Answer EITHER (a) or (b) in ENGLISH.", p11); the Irish map has it (n 4).
+  { year: 2022, langs: ['ev'], after: 'A1b4', n: 'A2', label: 'Section A · Q2 (short texts)', semantic: 'higher-short', page: 11 },
+]) {
+  for (const lang of extra.langs) {
+    const paper = findPaper(extra.year, 'higher', lang, 'written');
+    const at = paper.q.findIndex(question => question.n === extra.after);
+    if (at < 0 || paper.q.some(question => question.n === extra.n)) {
+      throw new Error(`${paperIdentity(paper)}: cannot place ${extra.n} after ${extra.after}`);
+    }
+    paper.q.splice(at + 1, 0, customQuestion({ ...extra, year: extra.year }));
   }
 }
 

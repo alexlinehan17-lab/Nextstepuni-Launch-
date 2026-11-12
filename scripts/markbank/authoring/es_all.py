@@ -67,6 +67,14 @@ LEVELS = ('hl', 'ol')
 # once its cards have been read against the paper and the scheme.
 CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
     (2026, 'hl'), (2026, 'ol'), (2020, 'ol'), (2020, 'hl'),
+    (2019, 'hl'),
+    (2019, 'ol'),
+    (2018, 'hl'),
+    (2018, 'ol'),
+    (2017, 'hl'),
+    (2017, 'ol'),
+    (2016, 'hl'),
+    (2016, 'ol'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -74,15 +82,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -636,8 +644,8 @@ def _writing(year, level, P, section, q, letter):
     else:
         if level == 'hl':
             g = W.grid_c(year, level, q, letter)
-            requirements = (g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
-                            + g['direction'])
+            requirements = (g['lead'] + g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
+                            + g['notes'] + g['direction'])
             note = '\n'.join(g['guidelines'])
         else:
             g = W.grid_ol_b(year, level, q, letter)
@@ -645,14 +653,23 @@ def _writing(year, level, P, section, q, letter):
             note = '\n'.join(g['section'])
         topic = next(tid for rx, tid in WRITING_TOPIC if rx.search(t['question'][:200]))
         unit = 'turn' if topic == 'spanish-6-1' else 'point'
-        criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',
-                     'maxMarks': g['per'], 'permittedMarks': list(range(g['per'] + 1)),
-                     'guidance': []} for i in range(1, g['n'] + 1)]
+        if g.get('global'):
+            # 2021 and 2022 Higher mark the diary or note as a whole: "apply a
+            # global mark to the best FOUR according to the criteria below".
+            unit = 'piece'
+            # Labelled "Global": the panel adds "mark" ("Global mark").
+            criteria = [{'id': 'global', 'label': 'Global', 'maxMarks': g['per'],
+                         'permittedMarks': list(range(g['per'] + 1)), 'guidance': []}]
+        else:
+            criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',
+                         'maxMarks': g['per'], 'permittedMarks': list(range(g['per'] + 1)),
+                         'guidance': []} for i in range(1, g['n'] + 1)]
         assert g['n'] * g['per'] == g['total'], (ref, g['n'], g['per'], g['total'])
         rubric = {'system': 'french', 'taskRequirements': requirements,
                   'criteria': criteria, 'markingGuideNote': note}
-        practice.append(f'Mark each {unit} you wrote on its own against the scheme\'s '
-                        f'ladder above.')
+        practice.append('Place the whole piece on the scheme\'s bands above.' if unit == 'piece'
+                        else f'Mark each {unit} you wrote on its own against the scheme\'s '
+                             f'ladder above.')
         pages = g['pages']
     rubric['practiceNotes'] = practice
     total = sum(c['maxMarks'] for c in rubric['criteria'])
@@ -706,6 +723,19 @@ def _direction_rows(ask, language, rule):
     if ask.total is None:
         return None
     printed = [t for t, _m in (ask.points or [])] + list(ask.notes or [])
+    lines = [' '.join(l.split()) for l in (ask.answer_lines or []) if l and l.strip()]
+    if len(ask.points or []) == 1 and len(lines) > 1:
+        # Quoted line by line, as the scheme sets them: 2017 Higher prints
+        # "for any 4 relevant points" / "Discussion of one character 3 + 3m"
+        # / "Discussion of second character 3 + 3m" / …, a line going on in
+        # lower case being the one before it wrapped.
+        quoted_lines = []
+        for l in lines:
+            if quoted_lines and l[:1].islower():
+                quoted_lines[-1] = f'{quoted_lines[-1]} {l}'
+            else:
+                quoted_lines.append(l)
+        printed = quoted_lines + list(ask.notes or [])
     if not printed:
         return None
     m = next((ANY_MARK.search(t) for t in printed if ANY_MARK.search(t)), None)
@@ -740,8 +770,10 @@ ANSWER_LABEL = re.compile(r'\s+(?=[A-Z][a-z]{1,8}\.?\??:\s)')
 ROMAN_MARK = re.compile(r'\s*\((?:i|ii|iii|iv|v)\)\s*')
 
 
-PRICE_BRACKET = re.compile(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]')
-NOTE_BRACKET = re.compile(r'\[(?!\s*\d{1,2}\s*m(?:arks?)?\s*\])[^\]]*\]')
+# 2016-2019 also print the figure alone: "Las colas [3] y los retrasos [2] (en las
+# fronteras de los países) (3+2m)" (2018 Ordinary Q1(h)).
+PRICE_BRACKET = re.compile(r'\[\s*(\d{1,2})\s*(?:m(?:arks?)?)?\s*\]')
+NOTE_BRACKET = re.compile(r'\[(?!\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\])[^\]]*\]')
 
 
 def _bracketed(raw, text, marks):
@@ -760,9 +792,9 @@ def _bracketed(raw, text, marks):
     if not raw or not PRICE_BRACKET.search(raw):
         return None
     clean = NOTE_BRACKET.sub(' ', raw)
-    gap = r'\s*(?:\[\s*\d{1,2}\s*m(?:arks?)?\s*\]\s*)?'
+    gap = r'\s*(?:\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\]\s*)?'
     words = text.split()
-    m = re.search(gap.join(map(re.escape, words)) + r'(?:\s*\[\s*\d{1,2}\s*m(?:arks?)?\s*\])?',
+    m = re.search(gap.join(map(re.escape, words)) + r'(?:\s*\[\s*\d{1,2}\s*(?:m(?:arks?)?)?\s*\])?',
                   clean)
     if not m or not PRICE_BRACKET.search(m.group(0)):
         return None
@@ -771,7 +803,12 @@ def _bracketed(raw, text, marks):
              for i in range(0, len(segs) - 1, 2)]
     rest = ' '.join(segs[-1].split()).strip(' ,;.')
     used = sum(n for _t, n in parts)
-    if rest:
+    if rest and used == marks and parts and re.fullmatch(r'\([^()]*\)', rest):
+        # Words the scheme accepts but does not require, printed after the
+        # last bracket: they belong to the last component ("… y los retrasos
+        # [2] (en las fronteras de los países)").
+        parts[-1] = (f'{parts[-1][0]} {rest}', parts[-1][1])
+    elif rest:
         if marks - used <= 0:
             return None
         parts.append((rest, marks - used))
@@ -780,6 +817,69 @@ def _bracketed(raw, text, marks):
     if len(parts) < 2 or not all(t for t, _n in parts):
         return None
     return parts
+
+
+# 2016-2019 also price a component of ONE answer in a ROUND bracket set inside
+# the line: "Thousands of Cubans lined the quay (1m) full of joy (1m) making
+# everyone feel welcome in their country (1m). (3m)" (2017 Higher Q1(b)).
+PRICE_ROUND = re.compile(r'\(\s*(\d{1,2}(?:\s*\+\s*\d{1,2})*)\s*m\s*\)')
+
+
+def _round_components(ask):
+    """[(component, [terms])] where the scheme prices the parts of one answer
+    in round brackets inside its printed line, or None.
+
+    Each bracket closes a component at its own figures ("(1 + 1m)" is one
+    component worth 1 and 1 more); what follows the last bracket is priced at
+    what the part's printed tariff leaves: 2018 Higher Q1(a) "People share
+    their food with pets (2m) (for example) Two of: (a bit of) bread, omelette
+    or chicken (so they can taste it too) (4m)" is 2, and the 2 the tariff
+    leaves.
+    """
+    raw = ' '.join((ask.raw or '').split())
+    if not raw or not PRICE_ROUND.search(raw) or ask.total is None:
+        return None
+    if len(ask.points or []) > 1:
+        return None        # answers the scheme already prices one to a line
+    if (not ask.quota and ask.points and len(ask.terms or []) > 1
+            and _separate_answers(ask.points[0][0], len(ask.terms))):
+        return None        # answers the line's own separators already cut apart
+    segs = PRICE_ROUND.split(raw)
+    parts = []
+    for i in range(0, len(segs) - 1, 2):
+        text = segs[i].strip(' ,;')
+        terms = [int(t) for t in re.findall(r'\d{1,2}', segs[i + 1])]
+        if not text:
+            return None
+        parts.append((text, terms))
+    rest = segs[-1].strip(' ,;.')
+    used = sum(sum(t) for _x, t in parts)
+    if rest:
+        if ask.total - used <= 0:
+            return None
+        parts.append((rest, [ask.total - used]))
+    elif used != ask.total:
+        return None
+    if len(parts) < 2:
+        return None
+    return parts
+
+
+def _round_component_row(ask, parts, note):
+    """One criterion row: each component claimed at the values its own
+    bracket prints, the row at their sums."""
+    out = []
+    for i, (text, terms) in enumerate(parts, start=1):
+        steps = [0]
+        for t in terms:
+            steps.append(steps[-1] + t)
+        out.append({'id': f'p{i}', 'verbatim': text, 'marks': steps[-1], 'permittedMarks': steps})
+    sums = {0}
+    for p in out:
+        sums = {x + y for x in sums for y in p['permittedMarks']}
+    return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': ' '.join(t for t, _n in parts),
+             'marks': ask.total, 'permittedMarks': sorted(sums), 'parts': out,
+             'contextNote': note}]
 
 
 def _component_row(rid, text, marks, parts, note=None):
@@ -796,6 +896,9 @@ def _component_row(rid, text, marks, parts, note=None):
     return row
 
 
+INLINE_COUNT = re.compile(r'\b(?:one|two|three|four|five)\s+of\s*\)?\s*:', re.I)
+
+
 def _separate_answers(text, n):
     """The n answers one printed line holds, cut where the scheme separates
     them, or None where it prints one answer whose marks it splits.
@@ -806,7 +909,15 @@ def _separate_answers(text, n):
     18 (2+2m)"); romans ("(i) has the most days of sun in Europe (ii) cheap
     (2+1m)"); commas ("Children, elderly, people with illnesses (2+2+2m)").
     Each piece is a slice of the scheme's line, never reworded.
+
+    A line that states a count of its own is never cut inside the list the
+    count is over: 2019 Higher listening Q1(a) "150 members (including) two
+    of: men, women and children (2+2m)" pays the count over the list after it,
+    and a cut at the comma would make "men" one answer and "women and
+    children" another. A cut BEFORE the count stands: 2021 Higher listening
+    Q4(d) "It was eaten at the time (of the book); (made) with two of: …".
     """
+    counted = INLINE_COUNT.search(text)
     cuts = (
         [p.strip() for p in text.split(';')],
         ANSWER_LABEL.split(text),
@@ -817,33 +928,188 @@ def _separate_answers(text, n):
         # is one answer.
         [p for p in text.split(' and ')] if all(
             len(p.split()) <= 2 for p in text.split(' and ')) else [],
+        # Whole sentences, each closed by its full stop: 2019 Higher listening
+        # Q7(a) "It is the series that has won the most awards in the history
+        # of television." / "It is a cultural phenomenon (of the 21st
+        # Century). (2+1m)".
+        re.split(r'(?<=\.)\s+(?=[A-Z])', text) if text.rstrip().endswith('.') else [],
     )
     for pieces in cuts:
-        pieces = [p.strip() for p in pieces if p and p.strip()]
+        # A roman cut leaves the comma that closed the answer before it: "(i)
+        # It will cost half the price, (ii) no stress/ without stress (1+1m)".
+        pieces = [p.strip().rstrip(',').strip() for p in pieces if p and p.strip()]
+        if counted and not INLINE_COUNT.search(pieces[-1] if pieces else ''):
+            continue
         if len(pieces) == n:
             return pieces
     return None
 
 
 def _rows_for(ask, language, rule, stepped=False):
+    """The card's marking rows, or None (a direction) or a refusal string.
+
+    Every non-zero partial the scheme prints ("[degree = 2m]") is then made
+    claimable on the row it belongs to (_claimable_partials).
+    """
+    partials = _partials(ask)
+    rows = _rows_core(ask, language, rule, stepped,
+                      skip_notes={note for note, _p, whole in partials if whole})
+    if partials and isinstance(rows, list):
+        rows = _claimable_partials(ask, rows, partials)
+    return rows
+
+
+# A partial the scheme prices in a bracket: "degree = 2m", "studying hard =
+# 2m", "to understand the language =1m". Read up to its price; what follows it
+# ("if only correct information given") is a condition, kept quoted.
+PARTIAL = re.compile(r'^\s*(.*?\S)\s*=\s*(\d{1,2})\s*m(?:arks?)?\b\s*(.*)$', re.I)
+ORDER_NOTE = re.compile(r'first correct answer|for the first', re.I)
+STOPWORDS = {'the', 'and', 'with', 'that', 'this', 'their', 'they', 'them', 'from', 'about',
+             'have', 'into', 'there', 'were', 'what', 'when', 'only', 'more', 'than'}
+
+
+def _words(text):
+    return {w for w in re.findall(r'[a-záéíóúñü]+', text.lower()) if len(w) > 3 and w not in STOPWORDS}
+
+
+def _partials(ask):
+    """[(note, [(answer, marks)], whole)]: every NON-ZERO partial a note prices.
+
+    A note that only orders a menu's tariff ("[First correct answer = 2m]") is
+    not one. A zero ("[largest = 0m]") is the scheme ruling an answer out: it
+    stays a note on the row. `whole` is whether the note is nothing but
+    priced partials, so it need not also be quoted.
+    """
+    out = []
+    notes = list(ask.notes or [])
+    for k, note in enumerate(notes):
+        if ORDER_NOTE.search(note):
+            continue
+        # A lead-in printed on the line above a partial ("If only answering:"
+        # / "[there is a necessity to build more domes = 1m]") is the partial's
+        # own condition: it travels with it as one option.
+        flat = ' '.join((ask.raw or '').split())
+        lead = next((n for n in notes if n.rstrip().endswith(':')
+                     and f'{" ".join(n.split())} [{" ".join(note.split())}' in flat), '')
+        parsed, whole = [], True
+        for piece in [p for p in note.split(';') if p.strip()]:
+            m = PARTIAL.match(piece)
+            if not m:
+                whole = False
+                continue
+            text, marks, tail = m.group(1).strip(), int(m.group(2)), m.group(3).strip()
+            if tail or not marks:
+                whole = False
+            if marks:
+                parsed.append((f'{lead} {text}' if lead else text, marks))
+        if parsed:
+            out.append((note, parsed, whole))
+            if lead and whole:
+                out.append((lead, [], True))
+    return out
+
+
+def _claimable_partials(ask, rows, partials):
+    """The rows with every non-zero partial claimable (coordinator ruling, 12 Nov
+    2026): the answer it belongs to becomes a one-pick group of the full answer
+    at its price and each printed partial at its own (optionMarks), counted
+    once at the best one claimed. A partial for a menu's answer is one more
+    option of the menu at its own price.
+
+    Which answer a partial belongs to is read from where the scheme prints it:
+    straight after an answer, it is that answer's ("A recognised qualification;
+    [degree = 2m] to understand how …"); after the last answer, it is the one it
+    shares words with ("[to understand the language = 1m]"), or, sharing none
+    and priced like every answer, an alternative to any of them ("Metro; bus
+    (3+3m) [airport = 3m]"), or else the last answer's.
+    """
+    rows = [dict(r) for r in rows]
+    # One answer per printed line, where a frozen card read two printed answers
+    # as one ("(Several) zones … cameras (installed)" / "There was a problem
+    # with the alarm" (2+2m)) and a partial belongs to one of them.
+    if (len(rows) == 1 and rows[0]['kind'] == 'point' and ask.terms and len(ask.terms) > 1
+            and ask.answer_lines and len(ask.answer_lines) == len(ask.terms)):
+        note = rows[0].get('contextNote')
+        rows = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': text, 'marks': marks,
+                 **({'contextNote': note} if i == 1 and note else {})}
+                for i, (text, marks) in enumerate(zip(ask.answer_lines, ask.terms), start=1)]
+    raw = ' '.join((ask.raw or '').split())
+    for note, parsed, _whole in partials:
+        if not parsed:
+            continue
+        at = raw.find(' '.join(note.split()))
+        starts = [raw.find(' '.join(str(r.get('verbatim'))[:25].split())) for r in rows]
+        before = [i for i, st in enumerate(starts) if 0 <= st < at]
+        target = before[-1] if before else len(rows) - 1
+        if len(rows) > 1 and target == len(rows) - 1:
+            shared = [len(_words(r.get('verbatim') or '') & _words(' '.join(t for t, _m in parsed)))
+                      for r in rows]
+            prices = {r.get('marks') for r in rows}
+            if max(shared) > 0:
+                target = shared.index(max(shared))
+            elif (all(r['kind'] == 'point' for r in rows) and len(prices) == 1
+                    and all(m == next(iter(prices)) for _t, m in parsed)):
+                # An alternative to any one of the answers: one menu of them all.
+                price = next(iter(prices))
+                note_ = next((r.get('contextNote') for r in rows if r.get('contextNote')), None)
+                rows = [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts',
+                         'marks': None, **({'contextNote': note_} if note_ else {}),
+                         'group': {'claimMax': len(rows), 'perOption': price,
+                                   'options': [r['verbatim'] for r in rows] + [t for t, _m in parsed]}}]
+                continue
+        row = rows[target]
+        if row['kind'] == 'anyN':
+            g = dict(row['group'])
+            assert not g.get('perOptionSteps'), (ask, 'a partial beside a descending tariff')
+            marks = g.get('optionMarks') or [g['perOption']] * len(g['options'])
+            g['options'] = list(g['options']) + [t for t, _m in parsed]
+            g['optionMarks'] = list(marks) + [m for _t, m in parsed]
+            g['perOption'] = max(g['optionMarks'])
+            row['group'] = g
+        else:
+            # A point, or one answer placed at its printed split ("Sunnier (day)
+            # with clear (skies) (2+1m) [Sun = 2m]"): the one-pick group carries
+            # the full answer and the printed partial, each at its price.
+            assert row['kind'] in ('point', 'criterion') and not row.get('parts'), (ask, row)
+            full = row['marks']
+            assert all(m <= full for _t, m in parsed), (ask, parsed, full)
+            rows[target] = {'id': row['id'], 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts',
+                            'marks': None, **({'contextNote': row['contextNote']} if row.get('contextNote') else {}),
+                            'group': {'claimMax': 1, 'perOption': full,
+                                      'options': [row['verbatim']] + [t for t, _m in parsed],
+                                      'optionMarks': [full] + [m for _t, m in parsed]}}
+    return rows
+
+
+def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
     """The card's marking rows, or None (a direction) or a refusal string."""
     note = language_note(language, rule)
-    notes = list(ask.notes or [])
+    notes = [n for n in (ask.notes or []) if n not in skip_notes]
     if stepped:
         # A bracket that only states a price ("[2m]", "[1+1m]") is already on
         # the row as its marks; quoting it again says nothing.
         notes = [n for n in notes if not re.fullmatch(
-            r'\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*m(?:arks?)?\s*', n, re.I)]
+            r'\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m(?:arks?)?)?\s*', n, re.I)]
     if notes:
         note += (' The scheme adds: '
                  + '; '.join(f'“{n}”' for n in notes[:3]) + '.')
     if ask.total is None or not ask.terms:
         return None
+    if stepped:
+        parts = _round_components(ask)
+        if parts:
+            return _round_component_row(ask, parts, note)
     if ask.quota:
         if not ask.options:
             return None
         lead = list(ask.lead_points or [])
         terms = ask.terms[len(lead):]
+        if stepped and len(terms) == 1 and ask.quota > 1:
+            # "Three of: - accommodation - (qualified) instructor - … (3m)"
+            # (2022 Higher listening Q1(c); 2023 Q4(c)): the scheme prices the
+            # three answers together and prints no split. Paid at the printed
+            # value only, when the third is claimed: never an inferred 1 + 1 + 1.
+            terms = [0] * (ask.quota - 1) + terms
         if len(terms) != ask.quota:
             return ('the scheme asks for a number of answers its tariff does '
                     'not price')
@@ -885,7 +1151,11 @@ def _rows_for(ask, language, rule, stepped=False):
         sums = {0}
         for _t, m in ask.bracket_parts:
             sums |= {x + m for x in sums}
-        return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': points[0][0],
+        # The row reads as its components do: 2018 Higher listening Q4(a)
+        # prices "(i) Instagram has … [1m]" and "(ii) It is the most …
+        # [2m]", and its numbering stays where the scheme prints it.
+        return [{'id': 'r-1', 'kind': 'criterion',
+                 'verbatim': ' '.join(t for t, _m in ask.bracket_parts),
                  'marks': ask.total, 'permittedMarks': sorted(sums),
                  'parts': parts, 'contextNote': note}]
     if stepped and len(points) == 1 and not ask.bracket_parts:

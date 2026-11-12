@@ -1327,9 +1327,27 @@ const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
 const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 74, ordinary: 55 },
   2020: { higher: 73, ordinary: 51 },
+  2019: { higher: 74, ordinary: 55 },
+  2018: { higher: 74, ordinary: 55 },
+  2017: { higher: 74, ordinary: 53 },
+  2016: { higher: 75, ordinary: 53 },
 };
-const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
-const spanishAddedTotal = Object.values(SPANISH_ADDED)
+/* 2021-2025 shipped their reading cards before the lane; their listening,
+ * writing and direction asks were excluded then and are carded on top (batch
+ * 2, from 2026-11-12), one sitting per commit, pinned here per year and level.
+ * Those cards are known by their address: Section L, Higher B Q5 and Section C,
+ * Higher A1a Q5 and A1b Q4, Ordinary Section B. No frozen id has one. */
+const SPANISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 33, ordinary: 25 },
+  2024: { higher: 33, ordinary: 25 },
+  2023: { higher: 33, ordinary: 25 },
+  2022: { higher: 33, ordinary: 25 },
+  2021: { higher: 33, ordinary: 26 },
+};
+const SPANISH_ADDED_TO_FROZEN_ID = /^es-202[1-5]-(?:hl-(?:l-|b-5$|c-|a1a-5$|a1b-4$)|ol-(?:l-|b-))/;
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in SPANISH_ADDED
+  || (Number(id.slice(3, 7)) in SPANISH_ADDED_TO_FROZEN && SPANISH_ADDED_TO_FROZEN_ID.test(id)));
+const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPANISH_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
@@ -2042,8 +2060,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 137, '4e3331295e914061f96be14d55e3689082202227750adfc970c931059e56b34e'],
-  ordinary: [DCG_ORDINARY, 99, '9b331a5a62d3149d3bebb09ce1a20354f299be8b24efac627bd8b19037d1e29b'],
+  higher: [DCG_HIGHER, 273, '717615c37bfaafff4c76b0d83b5845656bce7a801d7743c16a40d265a0f3ba5c'],
+  ordinary: [DCG_ORDINARY, 192, '4f8acb08271b7adab11c2cdd48c86ed272e650be1efa91dd6081ac94cdc6779d'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -2137,7 +2155,15 @@ describe('Mark Bank card preservation', () => {
     // 33 for its 29 (C-5 in five named groups); 2016 Higher 43 for its 35
     // (C-1(a) in three earthworks pieces, C-5(a) in eight named groups);
     // 2016 Ordinary 32 for its 26 (A-2 in two printed heads, C-5 in six
-    // named groups).
+    // named groups); 2015 Higher 45 for its 33 (B-1(a) under three printed
+    // heads, B-2(c) two, C-1(a) four earthworks sections, C-5(a) eight);
+    // 2015 Ordinary 35 for its 28 (A-3 under two heads, C-5 in seven);
+    // 2014 Higher 47 for its 34 (B-2(b) under two heads, C-1(a) in five
+    // earthworks pieces, C-5(a) in nine named groups); 2014 Ordinary 29 for
+    // its 25 (A-4 under two heads, C-5 in four named groups); 2013 Higher 44
+    // for its 37 (B-2(b) under two heads, C-1(a) in four earthworks pieces,
+    // C-5(a) in nine named groups; C-1(a)(i)-(ii) one unit); 2013 Ordinary
+    // 29 for its 24 (A-3 priced with no head, one card; C-5 in six groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -2193,6 +2219,11 @@ describe('Mark Bank card preservation', () => {
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
       expect(added.every(card => card.id.startsWith(`es-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(SPANISH_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && SPANISH_ADDED_TO_FROZEN_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
     }
     expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);
