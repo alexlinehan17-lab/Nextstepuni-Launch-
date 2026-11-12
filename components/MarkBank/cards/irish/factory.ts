@@ -87,7 +87,7 @@ import ordinary2022Deferred from './ordinary-2022-deferred-authored.json';
 import higher2022Deferred from './higher-2022-deferred-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
 import { splitSlashRows } from './slashSplits';
-import { closeBrackets, irishTariffsFor, irishTariffsLastResort, stepPrintedScales } from './tariffs';
+import { closeBrackets, irishTariffsFor, irishTariffsLastResort, printedOrder, stepPrintedPartials, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -293,8 +293,10 @@ const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
         ? irishTariffsLastResort({ id: card.id, totalMarks: criterion.maxMarks, cardTotal: card.totalMarks, questionRef: card.questionRef,
           questionText: card.questionText, guidance: ownGuidance(criterion) })
         : undefined);
-    const allocation = found && splitSlashRows(card.id, criterion.id, closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found),
-      criterion.guidance, card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance));
+    const allocation = found && printedOrder(card.id, criterion.id, criterion.guidance, splitSlashRows(card.id, criterion.id,
+      stepPrintedPartials(closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance,
+        card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance), criterion.guidance, criterion.permittedMarks,
+      criterion.maxMarks)));
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

@@ -735,6 +735,9 @@ export interface IrishAnswerPart {
   tariff: number;
   /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
   ladder?: number[];
+  /** How many claimed rows count, as a Politics part's count, where the scheme's own lines say so and the rows' prices
+   * alone cannot (cards/irish/tariffs.ts printedOrder, which cites them): the part's best `count` rows, capped at its tariff. */
+  count?: number;
   rows: IrishAnswerRow[];
   /** "Freagraí samplacha: • …": the scheme's sample points for this
    * sub-question. Indicative, never a checklist; shown under the rows. */

@@ -719,6 +719,10 @@ def reading(sitting, base):
             chunk, pages = s.chunk(item[3], end)
             if not higher:
                 chunk = re.split(r'\s*\[Gaeilge lochtach', chunk)[0]
+                # A passage's last part runs on into the examiner's instructions for the whole passage ("Nóta: Gearrfar pionós
+                # i ngeall ar iomarcaíocht. Léireofar an pionós … Marc bronnta – marc bainte (iom.) = …", "Taispeánfar go soiléir
+                # na marcanna …"): they are the passage's, printed once for it, not this part's answers.
+                chunk = re.split(r'\s*(?:Nóta: Gearrfar pionós i ngeall ar iomarcaíocht\. Léireofar|Taispeánfar go soiléir na marcanna)', chunk)[0]
                 # The text layer can store a one-answer part's tariff after its answer ("(Alt 1) • Tugadh … nua 5 mharc"):
                 # the scheme prints it beside the question, so it is read there. No word changes.
                 late = re.fullmatch(r'(.*?\(Alt \d\))\s+(•[^=]*?)\s+(\d+ mharc)', chunk)
