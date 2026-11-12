@@ -12169,4 +12169,1181 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the complete original source and question in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "computer-games-business",
+    section: "A", questionRef: "2017 CL Section A Q1",
+    questionText: "What type of business is “Play It” productions?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "business", kind: "anyN", verbatim: "What type of business", marks: 1, openList: true, group: {"claimMax":1,"perOption":1,"options":["A computer games business.","Develops computer games."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a2", topicId: "lcvp-link-modules-0-3", conceptId: "internship-employer",
+    section: "A", questionRef: "2017 CL Section A Q2",
+    questionText: "Where did Emily do an internship?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "employer", kind: "point", verbatim: "Mixed Bag Gaming", marks: 2, contextNote: "The original scheme emphasises Gaming in bold and gives the complete answer 2 marks. No unprinted internal partial tariff is inferred." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a3", topicId: "lcvp-link-modules-0-3", conceptId: "employer-work-experience-reasons",
+    section: "A", questionRef: "2017 CL Section A Q3",
+    questionText: "Why does Emily like to take on work experience students?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "reasons", kind: "anyN", verbatim: "Why does Emily like to take on work experience students?", marks: 3, contextNote: "Original allocation: 2m + 1m. Credit two distinct reasons from the full three-model pool. The paper why-question is unchanged; the values are response slots, not fixed prices for particular model reasons.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Encourages positive links between schools and businesses/Give something back to the community.","Offers students a chance to develop/learn new skills.","Second year she is taking a student from the local school and it worked out well."],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a4", topicId: "lcvp-link-modules-0-3", conceptId: "work-experience-activities",
+    section: "A", questionRef: "2017 CL Section A Q4",
+    questionText: "What does Cathal see himself doing on work experience?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What does Cathal see himself doing on work experience?", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Using new software.","Using some new professional equipment.","Answering phones.","Making coffee.","Anything\\ to do whatever is needed."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a5", topicId: "lcvp-link-modules-0-2", conceptId: "realistic-career-path",
+    section: "A", questionRef: "2017 CL Section A Q5",
+    questionText: "Do you believe that Cathal has a realistic career path thought out for himself? Why?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "judgement", kind: "point", verbatim: "YES/NO", marks: 1 },
+    { id: "justification", kind: "anyN", verbatim: "Justification:", marks: 3, contextNote: "The source allows YES/NO (1m) plus three justification points (3@1m). Do not force a particular judgement.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Aware of his own strengths and aptitudes/has blog/loves gaming/DCG/has experience.","Keen to do a college course in games development which will help him in creating own games.","Aware of competition/hard business to get into.","Aware technology always changing.","Aware of associated costs to keep up to-date with changing technology."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "business-challenges",
+    section: "A", questionRef: "2017 CL Section A Q6",
+    questionText: "Outline the challenges facing businesses, according to Emily.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Outline the challenges facing businesses, according to Emily.", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Long hours.","Uncertain pay.","Getting good skilled team.","Not just about creating games but must be a motivator, negotiator, financial controller.","Optimistic in nature.","Perseverance."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a7", topicId: "lcvp-link-modules-0-1", conceptId: "interview-feedback",
+    section: "A", questionRef: "2017 CL Section A Q7",
+    questionText: "Cathal has asked for feedback on his interview. What feedback would be given to him?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Cathal has asked for feedback on his interview. What feedback would be given to him?", marks: 6, contextNote: "6 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Be more confident/develop ways to overcome his nervousness/handshake/take a few deep breaths.","His CV lets him down/make sure to include all relevant information/blog/studied film/interests and achievements.","His portfolio is very good/a lot of good work is in it.","Presentation of his portfolio could be much better/more professional.","He had prepared well for the interview/passionate/focused.","Quite realistic about the business itself/he knew there was more to the business than creating games.","He dressed well/presented himself well for the interview."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-a8", topicId: "lcvp-link-modules-0-3", conceptId: "employer-placement-benefits",
+    section: "A", questionRef: "2017 CL Section A Q8",
+    questionText: "Evaluate how the work placement experience would benefit Emily as a business owner.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Evaluate how the work placement experience would benefit Emily as a business owner.", marks: 6, contextNote: "6 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Her reputation/profile will improve in the area/develops positive links with the community/known as a business who takes Work Experience students.","Additional help at no extra cost- you do not have to pay students on work experience.","She could get local/potential future employees- may come back to work for her.","Develop existing employees/involve them in the placement- mentoring/providing potential management opportunities.","Achieve new perspective/ideas- young people often bring fresh ideas with them/help her with market research etc.","Gain an understanding of modern learning/increase your understanding of modern processes and current educational qualifications."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2017 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2017 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Work Experience sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b1", topicId: "lcvp-link-modules-1-1", conceptId: "market-research-methods",
+    section: "B", questionRef: "2017 CL Section B Q1",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "Name and explain three ways Amy may have carried out market research.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "methods", kind: "criterion", verbatim: "Name and explain three ways Amy may have carried out Market Research?", marks: 6, contextNote: "Original 3@2m (1+1); Field research pt 1/2/3/4, Desk research pt 5/6/7/8, Any valid expansion. Three responses from the entire pool; no required field/desk mix. Keep each response distinct and credit it only once. Complete original guidance: Interviewing potential customers/businesses – she can ask direct questions to find out what the customer will want. | Survey/questionnaire – Amy could have drawn up a list of questions to ask/survey people at the local country market to see if they would be willing to buy her product /using social media sites. | Food sampling/test marketing/focus groups – she could have set up a stand and asked customers opinions on the products to see what customers might be interested in/brainstorming with potential customers. | Observations in local shops/country markets to see what people are buying. | Using reports in existence- to review what is presently available and of what there is a shortage. | Internet – she could have looked up various websites to find out about the competition she has in the market place. | Central Statitistics Office – she could have got information from the CSO about the population in various locations around the country. | State agencies/LEO/Teagasc/Bord Bia/Enterprise Ireland – help to research and develop the product/information on marketing.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      9
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b2a", topicId: "lcvp-link-modules-1-0", conceptId: "business-innovation",
+    section: "B", questionRef: "2017 CL Section B Q2(a)",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "What evidence do we have that shows Amy is innovative in her business?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What evidence do we have that shows that Amy is innovative in her business?", marks: 2, contextNote: "2 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":2,"perOption":1,"options":["By diversifying into different areas e.g. hampers, Easter egg making, childrens parties.","Looking for new opportunities e.g. she approached a large retailer to stock her produce.","By spotting a gap in the market and selling her products at local country markets.","By winning awards for her products.","By her styling, packaging and presentation of her product/ by not accepting packaging that is already available on the market."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b2b", topicId: "lcvp-link-modules-1-1", conceptId: "starting-business-course",
+    section: "B", questionRef: "2017 CL Section B Q2(b)",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "State and explain three areas that would have been covered in the “Start Your Own Business” course.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "State and explain three areas that would have been covered in the “Start Your Own Business” course.", marks: 6, contextNote: "3 distinct relevant responses; 2 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Financial planning: What money is needed for, capital and day to day expenses, pricing, costing, budgeting,where capital will be sourced.","Legal issues: What documents are needed to register the business. What is required by law for yearly accounts/ employment law/ insurance /tax.","Grants/loans: What grants/loans are availablefor and how you apply for them. What conditions are associated with the grants/loans.","Market Research: Identifying / understanding and researching your target marget.","Promotion of your business: How to get your message across to customers and ways to do this/advertising.","Business Planning: Help on drawing up a plan so that all problems/challenges can be thought out in advance/used for banl loans/grants.","Provide Network Meetings to enable clients to meet up after the course is finished and network gaining more contacts for the business.","Provide Business Mentors to help with setting up the business, providing expertise in different areas.","Getting started: premises/location/equipment/staff."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b2c", topicId: "lcvp-link-modules-1-1", conceptId: "business-plan-objectives",
+    section: "B", questionRef: "2017 CL Section B Q2(c)",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "What objectives might Amy set in the preparation of her business plan?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What objectives might Amy set in the preparation of her Business Plan?", marks: 4, contextNote: "4 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Financial targets: What money she has available for setting up the business, buying machines/leasing. Setting budgets for marketing & sales.attracting investors.","Potential Profit: Amy will set out what income and expenditure she will expect in the first year so that she has a profit.","Employees: How many are needed and what qualifications or experience/training is required.","Sales: Potential sales levels of each product in a given time.","Production: What product will be produced and in what quantities/raw materials required. Quality products.","Marketing: What types will be used. Branding, what product names, what packaging to be used. How will she advertise the products.","Premises: She will set targets on what space is needed and what machines are needed.","Expansion plan: how she intends to grow the business/New business."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b3a", topicId: "lcvp-link-modules-1-0", conceptId: "entrepreneur-employee-contrast",
+    section: "B", questionRef: "2017 CL Section B Q3(a)",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "Explain how the role of entrepreneur differs from that of employee as experienced by Amy.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "contrasts", kind: "anyN", verbatim: "Contrast must be present", marks: 2, contextNote: "Two complete contrasts, 1 mark each. Each paired option reads ENTREPRENEUR — EMPLOYEE in the original table-column order. Both entrepreneur and employee sides must be present in each response; never award separate credit for the two cells. All ten original paired models remain available.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Comes up with an idea/sets up the business/makes all major decisions — Implements entrepeneur’s idea/decisions","Owns the business/personal satisfacton — Is an employee of the business","Takes a risk — Takes no personal/monetary risk","May make a large profit or make a loss — Earns a salary","May not have specific skills — Usually have a skill","Has to be innovative for business survival — Complete all duties relevant to the job","Future focused – always planning ahead — More focused on now and getting the job done.","Has to access finance — Gets their wage, doesn’t have to worry about how to finance the running of the business","Has to ensure the business is legally compliant in all areas e.g. Health & Safety — Must abide by the business Health and Safety statement","Long working hours/difficult to take holidays — Set holidays/hours of work"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-b3b", topicId: "lcvp-link-modules-1-1", conceptId: "business-success-planning",
+    section: "B", questionRef: "2017 CL Section B Q3(b)",
+    stem: "AMY’S CHOCOLATE Amy graduated from college with a languages degree and went to work in the marketing department of a large multinational company. She was very successful and was promoted several times. However, after a number of years she felt the need to reassess the direction her career was taking. Amy had always wanted to run her own business and drew on her lifelong hobby of cooking and baking for inspiration. Over the years, she has sold her produce at local country markets. Her chocolate and fudge confectionaries consistently proved most popular. Keen to explore new options, while still working, Amy completed a “Start Your Own Business” evening course which provided her with invaluable insight into running a business. After extensive market research, she decided to leave her marketing job and embark on a new career, thus “Amy’s Chocolate” was established. Initial financial support was provided both by her family and her own savings. Amy decided that working in her home was not a feasible option hence a suitable premises in her local town was found. This new premises allows for both the production and sales of her products on site. “Amy’s Chocolate” has won many awards both for the success of the business and the top quality product itself. Amy has diversified into different areas to develop her business: personalised gifts and hampers, children’s chocolate making parties, Easter egg making and decorating etc. She has put a lot of thought and research into her styling, packaging and presentation. Many of her ingredients have been sourced locally, thus supporting the local community and economy. She has recruited staff from a nearby college of further education and trained them in both production and sales. Amy prides herself on her positive approach to staff development. She considers herself and her staff to be a team that works well together ensuring a high quality final product. From the knowledge gained on the “Start Your Own Business” course Amy has come to realise that there are many elements to a successful business and each must be developed and strengthened. To further increase sales, Amy has approached a large retail outlet offering to supply her speciality chocolate; should she be successful she will have to expand her business. The existing premises would not be adequate to cope with such large orders. In addition, extra staff and equipment would be needed. A unit in a local enterprise centre has become available that would suit the business requirements. Further finance will have to be sourced if the business is to expand. She is presently looking at various options available to her, has started to prepare a new business plan and has talked to two agencies that help and support businesses and entrepreneurs. Amy has taken full advantage of the opportunities presented to her. She has tailored and personalised her approach to recruitment and training of staff and has been duly rewarded for this. Having built a loyal team, everyone employed by Amy delivers the highest standard of work and of produce thus helping the business reach its goals. The chocolate market is very competitive and this brings its own challenges. However, despite the hard work related to the management of a business, Amy never regrets moving from being an employee to owning her own business. This career change has given her personal and professional satisfaction despite the risks and challenges involved. Amy has developed new skills and is aware that she must continually develop both personally and professionally to ensure future business success.",
+    questionText: "Outline which areas Amy should focus on into the future to ensure business success.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 10,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline which areas Amy should focus on into the future to ensure business success?", marks: 10, contextNote: "Original allocation: 5 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Finances: always keep an eye of cash flow/day to day expenses/on possible grants. Keep detailed financial records/access finance/ capital planning/new equipment/getting payment from customers. | Quality of product/service: provide a great product/service to ensure returning customers/awards, customer satisfaction. | Staff: ensure she retains/recruits the right people as the personal touch is important. | Equipment: Investing in new technologies. Keeping equipment up to date. | Competition: study and learn from your competitors. Look for ways to improve the business, to make it stand out from the competition, be open to new approaches and ideas. | Marketing/Market Research: to ensure that she keeps ahead of trends, continued product development, advertising, sales promotion. | Resources/Ingredients: being able to get enough supply of her ingredients from the local area. Premises etc. | Expansion of business: finding new markets/new retail outlets/expansion abroad/exports/developing new products/merger/joint venture. | Up skilling herself: Amy should continue to up skill in various /different areas to ensure her business success. She may up skill in IT which would enable her to develop her own website etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]},{"id":"response-5","verbatim":"Response 5","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Amy’s Chocolate — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c1a", topicId: "lcvp-link-modules-0-2", conceptId: "career-choice-reason",
+    section: "C", questionRef: "2017 CL Section C Q1(a)",
+    stem: "The Career Investigation is a core LCVP activity.",
+    questionText: "Name a career you have investigated and outline one reason why you chose to investigate this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "component-1", kind: "point", verbatim: "Name the career", marks: 2, contextNote: "Name 2 marks and reason 2 marks. The source supplies criteria for the personal response; no model career or unprinted internal 1-mark split is invented." },
+    { id: "component-2", kind: "point", verbatim: "Outline of reason career was chosen", marks: 2, contextNote: "Name 2 marks and reason 2 marks. The source supplies criteria for the personal response; no model career or unprinted internal 1-mark split is invented." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c1b", topicId: "lcvp-link-modules-0-2", conceptId: "career-skill-quality",
+    section: "C", questionRef: "2017 CL Section C Q1(b)",
+    stem: "The Career Investigation is a core LCVP activity. Name a career you have investigated and outline one reason why you chose to investigate this career.",
+    questionText: "Explain one skill and one quality you have that make you suitable for this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "skill", kind: "criterion", verbatim: "Skill", marks: 2, contextNote: "ONE skill and ONE quality are required, each 2m(1+1), linked to the same career. Preserve the complete original example pool and its open ellipsis. Keep each response distinct and credit it only once. Complete original guidance: Communication skills, interpersonal skills, a technical skill, leadership,....", permittedMarks: [0,1,2] },
+    { id: "quality", kind: "criterion", verbatim: "Quality", marks: 2, contextNote: "ONE skill and ONE quality are required, each 2m(1+1), linked to the same career. Preserve the complete original example pool and its open ellipsis. Keep each response distinct and credit it only once. Complete original guidance: Patience, caring, committment, perseverance,....", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c1c", topicId: "lcvp-link-modules-0-2", conceptId: "career-information-sources",
+    section: "C", questionRef: "2017 CL Section C Q1(c)",
+    stem: "The Career Investigation is a core LCVP activity. Name a career you have investigated and outline one reason why you chose to investigate this career.",
+    questionText: "Outline four sources of information you used to investigate this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline four sources of information you used to investigate this career.", marks: 8, contextNote: "Original allocation: 4 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Review books/trade journals/college prospectus about specific careers/newspapers. | Self-assessment/DATs tests. | Careers portal/Qualifax/career search online/media clips. | Work experience/work shadowing. | Interview someone in the career area/networking. | Go to career fairs/college open days. | Career guidance teacher/subject teacher.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c1d", topicId: "lcvp-link-modules-0-2", conceptId: "career-investigation-evaluation",
+    section: "C", questionRef: "2017 CL Section C Q1(d)",
+    stem: "The Career Investigation is a core LCVP activity. Name a career you have investigated and outline one reason why you chose to investigate this career.",
+    questionText: "Describe three methods of evaluating your career investigation.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Describe three methods of evaluating your career investigation.", marks: 3, contextNote: "Response 1 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Review information received. Has this information helped you to make an informed decision about your future career. | Review the quantity of information. Did you get enough information to complete the portfolio item/get answers to a range of questions. | Ask for feedback from teachers/interviewee on the information/details you got/ how well did you work. | Outcome of the career investigation. Has this motivated you to work harder to attain this career/ be more realistic in your goals. | Review of skills improved or new skills learned from doing the career investigation.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Describe three methods of evaluating your career investigation.", marks: 3, contextNote: "Response 2 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Review information received. Has this information helped you to make an informed decision about your future career. | Review the quantity of information. Did you get enough information to complete the portfolio item/get answers to a range of questions. | Ask for feedback from teachers/interviewee on the information/details you got/ how well did you work. | Outcome of the career investigation. Has this motivated you to work harder to attain this career/ be more realistic in your goals. | Review of skills improved or new skills learned from doing the career investigation.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Describe three methods of evaluating your career investigation.", marks: 3, contextNote: "Response 3 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Review information received. Has this information helped you to make an informed decision about your future career. | Review the quantity of information. Did you get enough information to complete the portfolio item/get answers to a range of questions. | Ask for feedback from teachers/interviewee on the information/details you got/ how well did you work. | Outcome of the career investigation. Has this motivated you to work harder to attain this career/ be more realistic in your goals. | Review of skills improved or new skills learned from doing the career investigation.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c2a", topicId: "lcvp-link-modules-0-0", conceptId: "effective-communication",
+    section: "C", questionRef: "2017 CL Section C Q2(a)",
+    stem: "Communication and good presentation skills are key in the work place.",
+    questionText: "Why is it important to have good communication skills?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Why is it important to have good communication skills?", marks: 2, contextNote: "Original complete answer and 1m + 1m allocation. No fixed semantic division of the definition is invented. Keep each response distinct and credit it only once. Complete original guidance: This is the ability to get the right message across clearly and understood.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c2b", topicId: "lcvp-link-modules-0-0", conceptId: "workplace-communication-methods",
+    section: "C", questionRef: "2017 CL Section C Q2(b)",
+    stem: "Communication and good presentation skills are key in the work place.",
+    questionText: "Name and explain three methods of communicating in the work place.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Name and explain three methods of communicating in the work place.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Oral: face to face meetings/dealing with staff, customers, phone calls, intercom. | Online: Business letters/ reports /order forms/email/spreadsheets/taxes/video conferencing. | Written: Contract of employment, notices/posters/memos on staff notice boards/text messages. | Visual: logo, charts, maps, graphs, presentations. | Non visual: Body language, gestures, tone of voice. Original instruction: No repetition.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c2c", topicId: "lcvp-link-modules-0-0", conceptId: "poor-communication-effects",
+    section: "C", questionRef: "2017 CL Section C Q2(c)",
+    stem: "Communication and good presentation skills are key in the work place.",
+    questionText: "Explain three issues which may occur in a business as a result of poor communication skills?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Explain three issues which may occur in a business as a result of poor communication skills?", marks: 3, contextNote: "Response 1 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Bad customer relations when queries or complaints are not handled well/decrease in returning business. | Lowers efficiency/poor quality- slow and inefficient work/missed orders if records are not well kept/employee errors/task not completed. | Employee Morale- employees lack enthusiasm /industrial relations suffer if employees are not consulted or informed of changes/plans, absenteeism. | Decreased innovation- business ideas/improvements are not conveyed properly or acted on correctly. | Loss of sales/reduction in profits due to the job not being done correctly/on time due to poor communication to the employees. | Health and safety - Accidents may occur/insurance implications/training not understood.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Explain three issues which may occur in a business as a result of poor communication skills?", marks: 3, contextNote: "Response 2 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Bad customer relations when queries or complaints are not handled well/decrease in returning business. | Lowers efficiency/poor quality- slow and inefficient work/missed orders if records are not well kept/employee errors/task not completed. | Employee Morale- employees lack enthusiasm /industrial relations suffer if employees are not consulted or informed of changes/plans, absenteeism. | Decreased innovation- business ideas/improvements are not conveyed properly or acted on correctly. | Loss of sales/reduction in profits due to the job not being done correctly/on time due to poor communication to the employees. | Health and safety - Accidents may occur/insurance implications/training not understood.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Explain three issues which may occur in a business as a result of poor communication skills?", marks: 3, contextNote: "Response 3 of 3. THREE distinct responses. Original 3@3m(1+2(0/2)): each has a 1-mark component and a separately controlled binary 0/2 component; no 1-of-2 award. Complete original guidance: Bad customer relations when queries or complaints are not handled well/decrease in returning business. | Lowers efficiency/poor quality- slow and inefficient work/missed orders if records are not well kept/employee errors/task not completed. | Employee Morale- employees lack enthusiasm /industrial relations suffer if employees are not consulted or informed of changes/plans, absenteeism. | Decreased innovation- business ideas/improvements are not conveyed properly or acted on correctly. | Loss of sales/reduction in profits due to the job not being done correctly/on time due to poor communication to the employees. | Health and safety - Accidents may occur/insurance implications/training not understood.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c2d", topicId: "lcvp-link-modules-1-0", conceptId: "activity-presentation-skills",
+    section: "C", questionRef: "2017 CL Section C Q2(d)",
+    stem: "Communication and good presentation skills are key in the work place.",
+    questionText: "Consider a class activity in which you were involved where good presentation skills were evident. Describe three areas where good presentation skills enhanced the activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Consider a class activity in which you were involved where good presentation skills were evident. Describe three areas where good presentation skills enhanced the activity.", marks: 3, contextNote: "Response 1 of 3. Original allocation: 2@3m(1+2) and 1@2(1+1). THREE distinct responses use the printed 3,3,2 response slots. The two-mark components have no printed internal one-mark split; do not assign these unequal values to named models. Complete original guidance: Use of I.T. e.g. Power Point display/YouTube video/social media page. | Oral communication spoke well and knowledgeable. | Connect with your audience, smile, make eye contact, show passion, humour, tell stories, key message, gestures, body language. | Packaging/design of a product/ stand display/ posters. | Professional approach, uniform/hair neat /attention to detail/t-shirts.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Consider a class activity in which you were involved where good presentation skills were evident. Describe three areas where good presentation skills enhanced the activity.", marks: 3, contextNote: "Response 2 of 3. Original allocation: 2@3m(1+2) and 1@2(1+1). THREE distinct responses use the printed 3,3,2 response slots. The two-mark components have no printed internal one-mark split; do not assign these unequal values to named models. Complete original guidance: Use of I.T. e.g. Power Point display/YouTube video/social media page. | Oral communication spoke well and knowledgeable. | Connect with your audience, smile, make eye contact, show passion, humour, tell stories, key message, gestures, body language. | Packaging/design of a product/ stand display/ posters. | Professional approach, uniform/hair neat /attention to detail/t-shirts.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Consider a class activity in which you were involved where good presentation skills were evident. Describe three areas where good presentation skills enhanced the activity.", marks: 2, contextNote: "Response 3 of 3. Original allocation: 2@3m(1+2) and 1@2(1+1). THREE distinct responses use the printed 3,3,2 response slots. The two-mark components have no printed internal one-mark split; do not assign these unequal values to named models. Complete original guidance: Use of I.T. e.g. Power Point display/YouTube video/social media page. | Oral communication spoke well and knowledgeable. | Connect with your audience, smile, make eye contact, show passion, humour, tell stories, key message, gestures, body language. | Packaging/design of a product/ stand display/ posters. | Professional approach, uniform/hair neat /attention to detail/t-shirts.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c3a", topicId: "lcvp-link-modules-1-2", conceptId: "local-voluntary-organisation",
+    section: "C", questionRef: "2017 CL Section C Q3(a)",
+    stem: "Volunteers play a key role in the delivery of services both locally and nationally.",
+    questionText: "Name a voluntary organisation in your local area and outline the type of work they carry out.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Name of organisation", marks: 1 },
+    { id: "activity", kind: "point", verbatim: "Activity of organisation", marks: 2, contextNote: "Original activity 2m(0/2); no 1-mark step. Use the same named local organisation; no personal model is invented." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c3b", topicId: "lcvp-link-modules-1-2", conceptId: "volunteering-enquiries",
+    section: "C", questionRef: "2017 CL Section C Q3(b)",
+    stem: "Volunteers play a key role in the delivery of services both locally and nationally.",
+    questionText: "List three questions you might ask on a first meeting or visit to a voluntary organisation that you would like to join.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List three questions you might ask on a first meeting or visit to a voluntary organisation that you would like to join.", marks: 6, contextNote: "3 distinct relevant responses; 2 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":3,"perOption":2,"options":["What type of work will I do?","Any specific skills/qualities required?","Number of hours that they need a volunteer for each week?","Minimum age for volunteers?","Do I need to be garda vetted?","How long do they need the volunteer for/number of weeks?","Will training be provided?","Will I be working on my own or with other volunteers?"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c3c", topicId: "lcvp-link-modules-1-2", conceptId: "volunteer-responsibilities",
+    section: "C", questionRef: "2017 CL Section C Q3(c)",
+    stem: "Volunteers play a key role in the delivery of services both locally and nationally.",
+    questionText: "Discuss what a voluntary organisation will expect from a volunteer. Four points should be made.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss what a voluntary organisation will expect from a volunteer. Four points should be made.", marks: 8, contextNote: "Original allocation: 4 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Reliability and committment: Punctual/they need to turn up on time each day/ Aspire to do the tasks to the best of their ability. | Attend induction/training: opportunity for volunteer to meet fellow staff and to train/become familiar with the work of the organisation/policies and procedures/health and safety/first aid. | Confidentiality: volunteers need to be discreet when dealing with clients/data protection/data access/ volunteers should agree not to disclose information acquired while volunteering. | Flexibility: You may be needed to turn your hand to several jobs. | Client respect: Obligations to the client/members - respect/treat them with dignity/refrain from discrimination. | Refusal to accept benefits - volunteers should not benefit in any way from the voluntary bodies/clients/any other person. | Reporting unethical behaviour- including misappropriation of funds/unlawful conduct. | Be trustworthy/respect the voluntary body’s property/protect the voluntary body’s good standing/honest.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c3d", topicId: "lcvp-link-modules-1-2", conceptId: "promoting-volunteering",
+    section: "C", questionRef: "2017 CL Section C Q3(d)",
+    stem: "Volunteers play a key role in the delivery of services both locally and nationally.",
+    questionText: "State and explain four ways you would promote volunteering in your community.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "State and explain four ways you would promote volunteering in your community.", marks: 8, contextNote: "Original allocation: 4 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Flyers/notices- Hand out flyers at school/ local shopping centre. Put up notices in shops/school/community centres etc. These can include the organisations name and a brief description of what is needed as well as a contact number. | Speak or speaking about the work to other classes/at masses/other schools. You can take questions to explain their work further. | Design a website/facebook page and link it to community/local sites. This would be good as many young people use social media. | Give an interview on local radio/ Send in notice to be read out over the radio. This will reach many age groups in the locality. | Create good publicity - Letter/Photo or article in local paper requesting volunteers/ fundraising/celebrity endorsement. | Word of mouth- Speak to current volunteers to use personal contacts to promote volunteering.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c4a", topicId: "lcvp-link-modules-1-1", conceptId: "business-visit-objectives",
+    section: "C", questionRef: "2017 CL Section C Q4(a)",
+    stem: "Your class is organising a visit‐out to a business enterprise in your local area.",
+    questionText: "Name the business/enterprise you visited and briefly outline two objectives your class has for the proposed visit.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Name", marks: 1 },
+    { id: "objectives", kind: "anyN", verbatim: "two objectives", marks: 2, contextNote: "Name of the business 1m plus two objectives 1m each, for the same proposed visit.", openList: true, group: {"claimMax":2,"perOption":1,"options":["To work as part of a team.","Gain knowledge of the business/working world/of a particular job/H&S in the workplace.","Can find out about employment/career opportunities.","To interview the business person/ask questions.","To complete a portfolio item e.g. Action plan, Summary Report.","Improvement of skills."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c4b", topicId: "lcvp-link-modules-1-1", conceptId: "local-business-benefits",
+    section: "C", questionRef: "2017 CL Section C Q4(b)",
+    stem: "Your class is organising a visit‐out to a business enterprise in your local area. Name the business/enterprise you visited and briefly outline two objectives your class has for the proposed visit.",
+    questionText: "Outline three ways the local community benefit from this business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline three ways the local community benefit from this business.", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Employment given in the area. | Raise the standard of living in the area as employees have money to spend, other businesses will do well. | Support local area through sponsorship of local events/donations/facilities. | Fosters a spirit of entrepreneurship in an area/ Other businesses are attracted to the area. | May improve the infrastructure of the area. | Other services and supply businesses benefit such as hotels B&Bs, financial services, shops. | Opportunities provided to students – work experience, visits in, visits out, mentors for school projects. | Provides a service/product that was not available previously.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c4c", topicId: "lcvp-link-modules-1-1", conceptId: "business-visit-request-letter",
+    section: "C", questionRef: "2017 CL Section C Q4(c)",
+    stem: "Your class is organising a visit‐out to a business enterprise in your local area. Name the business/enterprise you visited and briefly outline two objectives your class has for the proposed visit.",
+    questionText: "Write a letter to the business requesting permission to visit them.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 10,
+    rows: [
+    { id: "letter", kind: "criterion", verbatim: "Write a letter to the business requesting permission to visit them.", marks: 10, contextNote: "One complete request letter. Retain all ten original one-mark criteria; Own address & Business address together receive ONE mark. Layout/neatness, spelling and grammar/paragraphs/punctuation each remain separate. No model letter is invented.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"criterion-1","verbatim":"Own address & Business address","marks":1,"permittedMarks":[0,1]},{"id":"criterion-2","verbatim":"Date","marks":1,"permittedMarks":[0,1]},{"id":"criterion-3","verbatim":"Opening & closing salutation","marks":1,"permittedMarks":[0,1]},{"id":"criterion-4","verbatim":"Introduction","marks":1,"permittedMarks":[0,1]},{"id":"criterion-5","verbatim":"Request for permission to visit","marks":1,"permittedMarks":[0,1]},{"id":"criterion-6","verbatim":"Layout/neatness","marks":1,"permittedMarks":[0,1]},{"id":"criterion-7","verbatim":"Date of visit","marks":1,"permittedMarks":[0,1]},{"id":"criterion-8","verbatim":"Spelling","marks":1,"permittedMarks":[0,1]},{"id":"criterion-9","verbatim":"Closing","marks":1,"permittedMarks":[0,1]},{"id":"criterion-10","verbatim":"Grammar/paragraphs/punctuation","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c4d", topicId: "lcvp-link-modules-1-0", conceptId: "teamwork-benefits",
+    section: "C", questionRef: "2017 CL Section C Q4(d)",
+    stem: "Your class is organising a visit‐out to a business enterprise in your local area. Name the business/enterprise you visited and briefly outline two objectives your class has for the proposed visit.",
+    questionText: "Identify and explain the benefits of working as part of a team in this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Identify and explain the benefits of working as part of a team in this activity", marks: 6, contextNote: "Original allocation: 3 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Creates a sense of bonding, pupils can work closely with those who have a common interest. Pupils more content, better motivation. | Team members will have a variety of stengths/skills/ideas/experience. Skills shared/more ideas. | Decisions can be made and/or problems can be solved quicker. | Disputes are avoided as communication is essential, everyone has a say to resolve the conflict. | Develops a sense of ownership in tasks, the responsibility is shared so no one person is under too much pressure. | Work gets done faster, more work is done as more than one person is working on the task. | Students can develop new friendships with students they haven’t interacted with before. | Communication/interpersonal skills are improved.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c5a", topicId: "lcvp-link-modules-0-0", conceptId: "responsible-work-ethic",
+    section: "C", questionRef: "2017 CL Section C Q5(a)",
+    stem: "Businesses are committed to employing the best candidate for all their vacancies.",
+    questionText: "What does having a good work ethic and being a responsible employee mean?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "What does having a good work ethic and being a responsible employee mean?", marks: 4, contextNote: "Original combined definition and 2m + 2m allocation. Two complete credited components; no fixed descriptor pairing or unprinted 1-mark step. Keep each response distinct and credit it only once. Complete original guidance: Being hardworking/reliable/trustworthy/diligent/you can be trusted to do your work to a high standard/committed to the organisation", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c5b", topicId: "lcvp-link-modules-0-0", conceptId: "employer-work-ethic-benefits",
+    section: "C", questionRef: "2017 CL Section C Q5(b)",
+    stem: "Businesses are committed to employing the best candidate for all their vacancies.",
+    questionText: "List the benefits that are brought to a business when employees have a good work ethic.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List the benefits that are brought to a business when employees have a good work ethic.", marks: 6, contextNote: "6 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Increased profits as sales will increase.","Staff will turn up on time.","Reputation of business will improve.","Output can improve/productivity/quality of work.","They may win prizes which will improve reputation/win awards.","Good place to work which means employees will not move on.","Good industrial relations/low absenteeism.","Less supervision/can be trusted."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26,
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c5c", topicId: "lcvp-link-modules-0-0", conceptId: "employment-contract-content",
+    section: "C", questionRef: "2017 CL Section C Q5(c)",
+    stem: "Businesses are committed to employing the best candidate for all their vacancies.",
+    questionText: "List six pieces of information that should be included in a contract of employment given to a new employee.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List six pieces of information that should be included in a contract of employment given to a new employee.", marks: 6, contextNote: "6 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Details of employer & employee clearly stated.","The contract should show the start date or duration of contract for employees.","Pay- It shows details on wages/salary, how much should be paid/when payments are made/ the method of payment/overtime and bonus payments/pension.","Holiday entitlements- no of day allowed/ when holidays can be taken.","Sick leave entitlements - no of days/details on sick pay.","Job description- The details of the job to be carried out/job title are clearly outlined/hours of work.","Code of conduct/grievance procedure e.g. the individual who deals with complaints and how a complaint should be made.","Details on statutory leave - parental leave/maternity leave.","The employee & employer must sign the contract."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c5d", topicId: "lcvp-link-modules-0-1", conceptId: "recruitment-factors",
+    section: "C", questionRef: "2017 CL Section C Q5(d)",
+    stem: "Businesses are committed to employing the best candidate for all their vacancies.",
+    questionText: "Describe in detail three important recruitment factors that employers look for in a potential employee.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Describe in detail three important recruitment factors that employers look for in a potential employee.", marks: 3, contextNote: "Response 1 of 3. THREE distinct factors, original 3@3m(1+2). Keep the separate 1-mark and 2-mark components; no unprinted subdivision of the latter. Complete original guidance: Education/Qualifications, do they have the basic requirements for the job. | Relevent work experience | Personal traits such as confidence, committment,willing to learn on the job, hard- working/productive, shows initiative, honest/trustworthy, reliable. | Good communicator/ good personality, customer orientated employee, people person/ individuals need to be able to communicate with managers, other workers and customers. | Skill set, do they have the necessary skills/variety of skills to do the job | Team-player – teamwork is a major feature of any work place. Workers need to get on with other team members and also perform their assigned tasks.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Describe in detail three important recruitment factors that employers look for in a potential employee.", marks: 3, contextNote: "Response 2 of 3. THREE distinct factors, original 3@3m(1+2). Keep the separate 1-mark and 2-mark components; no unprinted subdivision of the latter. Complete original guidance: Education/Qualifications, do they have the basic requirements for the job. | Relevent work experience | Personal traits such as confidence, committment,willing to learn on the job, hard- working/productive, shows initiative, honest/trustworthy, reliable. | Good communicator/ good personality, customer orientated employee, people person/ individuals need to be able to communicate with managers, other workers and customers. | Skill set, do they have the necessary skills/variety of skills to do the job | Team-player – teamwork is a major feature of any work place. Workers need to get on with other team members and also perform their assigned tasks.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Describe in detail three important recruitment factors that employers look for in a potential employee.", marks: 3, contextNote: "Response 3 of 3. THREE distinct factors, original 3@3m(1+2). Keep the separate 1-mark and 2-mark components; no unprinted subdivision of the latter. Complete original guidance: Education/Qualifications, do they have the basic requirements for the job. | Relevent work experience | Personal traits such as confidence, committment,willing to learn on the job, hard- working/productive, shows initiative, honest/trustworthy, reliable. | Good communicator/ good personality, customer orientated employee, people person/ individuals need to be able to communicate with managers, other workers and customers. | Skill set, do they have the necessary skills/variety of skills to do the job | Team-player – teamwork is a major feature of any work place. Workers need to get on with other team members and also perform their assigned tasks.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c6a", topicId: "lcvp-link-modules-0-2", conceptId: "career-exhibition-purpose",
+    section: "C", questionRef: "2017 CL Section C Q6(a)",
+    stem: "Your class is planning to organise a career exhibition evening in your school.",
+    questionText: "Why have a career exhibition?",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Why have a career exhibition?", marks: 2, contextNote: "2 distinct relevant responses; 1 or 0 marks each. All original alternatives remain visible.", openList: true, group: {"claimMax":2,"perOption":1,"options":["To inform students about the opportunities available to them to further their studies/careers/all information in the one place.","The class get experience of organising an event.","Teamwork skills are put into action.","They can build relationships with colleges. Helps with CAO applications.","To enable them to prepare a portfolio item."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c6b", topicId: "lcvp-link-modules-1-3", conceptId: "career-exhibition-plan",
+    section: "C", questionRef: "2017 CL Section C Q6(b)",
+    stem: "Your class is planning to organise a career exhibition evening in your school.",
+    questionText: "Set out, under three headings, a plan to organise a career exhibition.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Set out, under three headings, a plan to organise a careers exhibition.", marks: 2, contextNote: "Heading 1 of THREE open headings: any two valid points under this heading, no marks for headings. Original 3@2m(1+1). All seven model headings remain examples; no closed choose-three list or invented plan points. Keep each response distinct and credit it only once. Complete original guidance: Aims/Objectives | Research Methods | Analysis of Research | Action Steps | Schedule of Time | Schedule of Costs | Evaluation Methods", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Set out, under three headings, a plan to organise a careers exhibition.", marks: 2, contextNote: "Heading 2 of THREE open headings: any two valid points under this heading, no marks for headings. Original 3@2m(1+1). All seven model headings remain examples; no closed choose-three list or invented plan points. Keep each response distinct and credit it only once. Complete original guidance: Aims/Objectives | Research Methods | Analysis of Research | Action Steps | Schedule of Time | Schedule of Costs | Evaluation Methods", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Set out, under three headings, a plan to organise a careers exhibition.", marks: 2, contextNote: "Heading 3 of THREE open headings: any two valid points under this heading, no marks for headings. Original 3@2m(1+1). All seven model headings remain examples; no closed choose-three list or invented plan points. Keep each response distinct and credit it only once. Complete original guidance: Aims/Objectives | Research Methods | Analysis of Research | Action Steps | Schedule of Time | Schedule of Costs | Evaluation Methods", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c6c", topicId: "lcvp-link-modules-1-3", conceptId: "career-exhibition-challenges",
+    section: "C", questionRef: "2017 CL Section C Q6(c)",
+    stem: "Your class is planning to organise a career exhibition evening in your school.",
+    questionText: "Outline four challenges you and your class might encounter when organising the night.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline four challenges you and your class might encounter when organising the night.", marks: 8, contextNote: "Original allocation: 4 responses, each 2 marks in printed 1-mark components. No repeated credit. Keep each response distinct and credit it only once. Complete original guidance: Financing the exhibition, where will the money required to run/set-up the exhibition come from? | Teamwork within the class, is everyone doing their jobs on time? | Organising/confirmation of exhibitors/speakers. Delays in colleges or employers confirming their attendance, so you do not know who will be in attendance. Exhibitors pulling out at the last minute. | Marketing the event. | Location/ Venue/ Parking issues | Health and Safety issues | Finding suitable resources. e.g. tables, chairs, display stands etc.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "common",
+    paperFileid: "LC462CLPO00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2017 Common Level — © State Examinations Commission.",
+    id: "lcvp-2017-cl-c6d", topicId: "lcvp-link-modules-1-3", conceptId: "career-exhibition-evaluation",
+    section: "C", questionRef: "2017 CL Section C Q6(d)",
+    stem: "Your class is planning to organise a career exhibition evening in your school.",
+    questionText: "Describe three ways the success of the career exhibition night could be measured.",
+    tariffModel: {"kind":"fixed","notation":"Original 2017 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Describe three ways the success of the careers exhibition night could be measured.", marks: 3, contextNote: "Response 1 of 3. Original 3@3m(1+1+1), Method +2 statements. Three distinct complete responses, each method 1 and two statements 1 each; the method alone never earns all 3. Complete original guidance: Class discussion: Review how the class worked together to organise the exhibition. Were there any issues prior to the event and on the night. | Questionnaire to students: did they meet a large number of exhibitors and were arrangements satisfactory for them. | Feedback from Exhibitors/Principal/Teachers. | Were the aims objectives for the exhibition met: did the activity come in on budget/were problems overcome easily. | Large turnout to the exhibition.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Statement 1","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Statement 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Describe three ways the success of the careers exhibition night could be measured.", marks: 3, contextNote: "Response 2 of 3. Original 3@3m(1+1+1), Method +2 statements. Three distinct complete responses, each method 1 and two statements 1 each; the method alone never earns all 3. Complete original guidance: Class discussion: Review how the class worked together to organise the exhibition. Were there any issues prior to the event and on the night. | Questionnaire to students: did they meet a large number of exhibitors and were arrangements satisfactory for them. | Feedback from Exhibitors/Principal/Teachers. | Were the aims objectives for the exhibition met: did the activity come in on budget/were problems overcome easily. | Large turnout to the exhibition.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Statement 1","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Statement 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Describe three ways the success of the careers exhibition night could be measured.", marks: 3, contextNote: "Response 3 of 3. Original 3@3m(1+1+1), Method +2 statements. Three distinct complete responses, each method 1 and two statements 1 each; the method alone never earns all 3. Complete original guidance: Class discussion: Review how the class worked together to organise the exhibition. Were there any issues prior to the event and on the night. | Questionnaire to students: did they meet a large number of exhibitors and were arrangements satisfactory for them. | Feedback from Exhibitors/Principal/Teachers. | Were the aims objectives for the exhibition met: did the activity come in on budget/were problems overcome easily. | Large turnout to the exhibition.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Statement 1","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Statement 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2017 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
 ];
