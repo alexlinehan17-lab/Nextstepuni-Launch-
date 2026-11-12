@@ -50,7 +50,7 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher',)}
+SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',)}
 AUDIO = {2025: 'available', 2024: 'available', 2023: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
@@ -1376,7 +1376,10 @@ def literature_ordinary(sitting, base):
         lines = []
         for chunk in alternatives:
             at = chunk.index('Ní mór teideal')
-            lines.append(re.sub(r'(?:\s*\(\d+ m?h?arc\))+\s*$', '', chunk[at:]).strip())
+            # The title's own tariff after its lines stays ("… Ainm an scríbhneora = 1 mharc (2 mharc)", as June's cards keep it);
+            # another stored beside it does not (2022 2B(a): "… = 1 mharc (23 marc) (2 mharc)").
+            lines.append(re.sub(r'(?:\s*\(\d+ m?h?arc\))+\s*$',
+                                lambda m: f' ({marks} mharc)' if re.search(r'\(%d m?h?arc\)' % marks, m.group(0)) else '', chunk[at:]).strip())
         units = [[int(v) for v in re.findall(r'= (\d+) m?h?arc', line)] for line in lines]
         assert all(sum(u) == marks for u in units) and len({tuple(u) for u in units}) == 1, (key, lines)
         label = 'Teideal + ainm' if len(units[0]) > 1 else 'Teideal'
