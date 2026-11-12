@@ -133,6 +133,32 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     expect(marksClaimed(c, {}, { g: [0, 1, 2, 3, 4] })).toBe(12);
   });
 
+  test('options priced one by one pay the best claimed, once, at its own price', () => {
+    // Spanish 2020 HL listening Q5(b): "A recognised qualification" (2m)
+    // "[degree = 2m]", then "to understand how the language works" (2m)
+    // "[to understand the language = 1m]". The full answer and its partial are
+    // one pick: claiming both still earns the full answer once.
+    const c = card({
+      totalMarks: 4,
+      rows: [
+        row({ id: 'a', kind: 'anyN', marks: null, group: { claimMax: 1, perOption: 2, options: ['A recognised qualification', 'degree'], optionMarks: [2, 2] } }),
+        row({ id: 'b', kind: 'anyN', marks: null, group: { claimMax: 1, perOption: 2, options: ['to understand how the language works', 'to understand the language'], optionMarks: [2, 1] } }),
+      ],
+    });
+    expect(claimableTotal(c)).toBe(4);
+    expect(marksClaimed(c, {}, { b: [1] })).toBe(1);
+    expect(marksClaimed(c, {}, { b: [0] })).toBe(2);
+    expect(marksClaimed(c, {}, { b: [1, 0] })).toBe(2);
+    expect(marksClaimed(c, {}, { a: [1], b: [1] })).toBe(3);
+    // A menu of two answers with a partial option: the best two, each once.
+    const menu = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'anyN', marks: null, group: { claimMax: 2, perOption: 2, options: ['x', 'y', 'z', 'part of y'], optionMarks: [2, 2, 2, 1] } })],
+    });
+    expect(marksClaimed(menu, {}, { g: [0, 3] })).toBe(3);
+    expect(marksClaimed(menu, {}, { g: [3, 0, 1] })).toBe(4);
+  });
+
   test('an unclaimed asterisked row costs only its own marks', () => {
     // It does not zero the rest of the question — each asterisked item stands or
     // falls alone, per the scheme's own preamble.

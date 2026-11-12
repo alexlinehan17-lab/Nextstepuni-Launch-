@@ -704,6 +704,9 @@ function spanishGridFault(c, scheme) {
   return null;
 }
 
+/** Mirrors bestClaimedMarks() in types/markBank.ts: the best `count` values, added. */
+const bestOf = (values, count) => [...values].sort((a, b) => b - a).slice(0, count).reduce((n, m) => n + m, 0);
+
 /** The level tokens a deck may carry.
  *
  * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
@@ -1259,7 +1262,9 @@ function tariffFault(c) {
   // Mirrors groupMarks() in types/markBank.ts: a descending tariff pays its
   // steps, not claimMax times one value.
   const worth = (r) => (r.kind === 'anyN' && r.group
-    ? (r.group.perOptionSteps
+    ? (r.group.optionMarks
+        ? bestOf(r.group.optionMarks, r.group.claimMax)
+        : r.group.perOptionSteps
         ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
         : r.group.claimMax * r.group.perOption)
     : (r.marks ?? 0));
@@ -1327,9 +1332,18 @@ function groupFault(c) {
     }
     // The session prints "Any 2 of these — 7 marks each" from these two numbers,
     // so a group worth more than the question tells the student a false total.
-    const groupWorth = g.perOptionSteps
+    const groupWorth = g.optionMarks
+      ? bestOf(g.optionMarks, g.claimMax)
+      : g.perOptionSteps
       ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
       : g.claimMax * g.perOption;
+    // Options priced one by one (the scheme's partial credit): one positive
+    // whole price per option, perOption the highest, and never beside a
+    // descending tariff, which prices the ORDER of claiming instead.
+    if (g.optionMarks && (g.optionMarks.length !== g.options.length || g.perOptionSteps
+      || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0) || g.perOption !== Math.max(...g.optionMarks))) {
+      return `row "${r.id}" prices its options one by one inconsistently`;
+    }
     if (groupWorth > c.totalMarks) {
       return `row "${r.id}" offers ${groupWorth} marks on a ${c.totalMarks}-mark question`;
     }

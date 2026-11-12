@@ -24,6 +24,11 @@ describe('an any-N menu states its price in good English', () => {
     expect(anyNHeading({ claimMax: 1, perOption: 1, perOptionSteps: [1], options: ['a', 'b'] })).toBe('Any 1 of these — 1 mark');
   });
 
+  test('options priced one by one say so, and a single pick reads as one', () => {
+    expect(anyNHeading({ claimMax: 1, perOption: 2, options: ['full', 'partial'], optionMarks: [2, 1] })).toBe('One of these — each at its own marks');
+    expect(anyNHeading({ claimMax: 2, perOption: 3, options: ['a', 'b', 'c', 'd'], optionMarks: [3, 3, 3, 1] })).toBe('Any 2 of these — each at its own marks');
+  });
+
   test('a menu priced only as a whole states the choice alone', () => {
     expect(anyNHeading({ claimMax: 2, options: ['a', 'b', 'c'] } as never)).toBe('Any 2 of these');
   });

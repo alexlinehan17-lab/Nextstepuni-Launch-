@@ -158,6 +158,15 @@ def _writing_n(level, section, q, letter):
     return None
 
 
+# Printed questions the answer map never anchored, given an Atlas question of
+# their own numbered by their printed address (build-spanish-exam-topic-
+# crosswalk.mjs adds them): 2020 Higher journalistic Q4.
+EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
+           (2024, 'hl', 'A1b', 4): 'A1b4',
+           (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2',
+           (2021, 'hl', 'A1b', 4): 'A1b4'}
+
+
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',
           ('hl', 'aural'): 'LC012ALPA00EV.pdf', ('ol', 'aural'): 'LC012GLPA00EV.pdf'}
 REF = re.compile(r'^(\d{4}) (HL|OL) Section (\w+) Q(\d*)((?:\([a-z]+\))*)')
@@ -189,7 +198,8 @@ def resolve(cards):
         fileid = FILEID[(level, kind)]
         found = anchors(year, fileid)
         tags = tags_for(year, 'higher' if level == 'hl' else 'ordinary', fileid)
-        written_n = _writing_n(level, section, q, letter)
+        written_n = (_writing_n(level, section, q, letter)
+                     or EXTRA_N.get((year, level, section, q)))
         if kind == 'aural':
             hit = next((a for a in found if a['n'] == str(q)), None)
             reason = None if hit else f'no anchor n={q}'

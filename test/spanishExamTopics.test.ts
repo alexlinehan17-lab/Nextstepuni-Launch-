@@ -122,7 +122,7 @@ describe('Spanish exam-topic registry', () => {
       matchedAssociations: 397,
       sourceBlockedAssociations: 74,
       sourceBlockedByReason: { preCorpus: 51, deferred: 14, oralBooklet: 9 },
-      matchedLocalCardLinks: 547,
+      matchedLocalCardLinks: 553,
     });
     expect(spanishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = spanishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
@@ -138,10 +138,10 @@ describe('Spanish exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(621);
+    expect(references).toHaveLength(627);
     expect(actual).toEqual(expected);
-    expect(references.filter(reference => reference.fileid)).toHaveLength(547);
-    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(612);
+    expect(references.filter(reference => reference.fileid)).toHaveLength(553);
+    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(618);
     expect(references.filter(reference => reference.paperKey === 'oral')).toHaveLength(9);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(14);
   });
@@ -163,19 +163,20 @@ describe('Spanish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     expect(spanishCrosswalk.summary).toMatchObject({
       localPaperVariants: 136,
-      // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions.
-      localPhysicalMappings: 1163,
-      distinctStudentFacingQuestions: 620,
-      referenceMappedLocalQuestions: 446,
-      retainedLocalQuestions: 717,
+      // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions;
+      // +2: 2020 Higher A1b4 (journalistic Q4), both editions.
+      localPhysicalMappings: 1191,
+      distinctStudentFacingQuestions: 636,
+      referenceMappedLocalQuestions: 452,
+      retainedLocalQuestions: 739,
       hostedPaperAnchorMaps: 136,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
       newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 254,
+      newlyAddedPhysicalMappings: 282,
     });
     expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1163);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1191);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -183,7 +184,7 @@ describe('Spanish exam-topic registry', () => {
       .toEqual(['1', '2', '3', '4', '5', 'B1', 'B2A', 'B2B']);
     // Higher Section B Q5 and Section C Q2 are cards of their own wherever
     // the Mark Bank has carded the sitting (es_atlas.py files them there).
-    for (const year of [2020, 2026]) {
+    for (const year of [2020, 2026, 2025, 2024, 2023, 2022, 2021]) {
       expect(topicsForPaper('spanish', year, 'higher', 'ev', 'LC012ALP000EV.pdf')?.q)
         .toEqual(expect.arrayContaining([
           { n: 'B5', primary: 'spanish-6-0' },
@@ -240,7 +241,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,163 cards', () => {
+  it('ships a finite paper-only fallback for all 1,191 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -261,9 +262,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 620 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 636 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 620,
+      questions: 636,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,
