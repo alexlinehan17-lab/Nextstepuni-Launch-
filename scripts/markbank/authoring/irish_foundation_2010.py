@@ -191,14 +191,12 @@ def build():
             ('Cad a dhéanann gach canaerí?', 'Canann sé | Crochann sé | Ritheann sé', 'Canann sé.'),
             ('Cad a d’ith an t-éan go craosach?', None, 'Síol'),
             ('Cén dath a bhí ar an éan sa deireadh?', 'Buí | Donn | Dubh', 'Donn')])}
-    # Scheme PDF 5 special notes: accepted forms 6, published reduction 6−2=4, else 0.
+    # Scheme PDF 5 special notes: accepted forms 6, published reduction 6−2=4, else 0. The card shows them as rows and
+    # directions (cards/irish/foundationAnswers.ts), so its note is the shared Foundation one (2026-11-11).
     special = {
-        ('3A', 3): ('Ceist 3 (a) Mír 3', 'Ceist 3 (b) Mír 2',
-                    'Accepted forms 6. Ceol draíochta 6−2 = 4; Bosca ceoil and Ceol 0. Enter the final mark for this part only.'),
-        ('3B', 2): ('Ceist 3 (b) Mír 2', 'Ceist 3 (c) Mír 4',
-                    'Accepted forms 6; an answer with excess information 6−2 = 4. Enter the final mark for this part only.'),
-        ('3C', 4): ('Ceist 3 (c) Mír 4', None,
-                    'Accepted forms 6; two lines of the poem 6−2 = 4; the whole stanza 6−6 = 0. Enter the final mark for this part only.')}
+        ('3A', 3): ('Ceist 3 (a) Mír 3', 'Ceist 3 (b) Mír 2'),
+        ('3B', 2): ('Ceist 3 (b) Mír 2', 'Ceist 3 (c) Mír 4'),
+        ('3C', 4): ('Ceist 3 (c) Mír 4', None)}
     notes = clean(scheme_text(scheme[4]))
     reading_cards = {}
     for slot, (page, exam_topic, rows) in reading.items():
@@ -214,12 +212,12 @@ def build():
                        'irish-9-2', [exam_topic], [page], [3] if slot[0] == '2' else [4, 5] if rule else [4],
                        [criterion('answer', 'Freagra', 5 if slot[0] == '2' else 6, [answer], True)])
             if rule:
-                start, end, explanation = rule
+                start, end = rule
                 part = notes.split(start, 1)[1]
                 if end:
                     part = part.split(end, 1)[0]
                 card['criteria'][0]['permittedMarks'] = [0, 4, 6]
-                card['criteria'][0]['guidance'] += [clean(part), explanation]
+                card['criteria'][0]['guidance'] += [clean(part)]
             reading_cards[slot].append(card)
     assert sum(c['totalMarks'] for c in cards) == 40 + 3 * 25 + 3 * 30
 
