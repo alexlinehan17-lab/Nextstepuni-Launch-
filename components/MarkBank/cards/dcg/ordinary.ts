@@ -2785,7 +2785,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-b1b-1", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
-    section: "B", questionRef: "2019 OL Section B Q1(b) — Interpenetration Interpenetration on Left Hand Side",
+    section: "B", questionRef: "2019 OL Section B Q1(b) — Interpenetration on Left Hand Side",
     stem: "The 3D graphic on the right shows a piece of equipment from a children’s play area. It consists of a shaped main structure with a crawl tunnel passing through it. Fig. B-1 below shows the elevation and incomplete plan of a model of the structure. The outline profile of the tunnel is also shown on the left below.",
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,

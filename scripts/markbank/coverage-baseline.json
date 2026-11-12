@@ -244,7 +244,7 @@
   },
   "dcg": {
     "cards": 781,
-    "contentHash": "0995940c05e5261d",
+    "contentHash": "632ef2750b940a27",
     "coveragePct": 65.9,
     "covered": 673,
     "excluded": 0,
@@ -255,7 +255,7 @@
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "4a3ee9ae9c900006"
+    "refsHash": "875d0cca53e8f9be"
   },
   "dutch": {
     "cards": 42,

@@ -156,7 +156,11 @@ def pair(units, leaves, texts):
     # belongs to the letter printed above it. Where the letters do NOT match
     # (2021 Ordinary B-3 prices the paper's (b) under unlettered heads and
     # letters its (c) "(b)"), the alignment below decides, as before.
-    lettered = [u.letter for u in units if u.letter]
+    # A letter may open more than one priced head: 2019 Ordinary B-1 scopes
+    # "(b) Interpenetration" over two priced sub-heads, each read as a unit
+    # lettered (b). The letters agree with the paper once each is counted
+    # where it is first printed.
+    lettered = list(dict.fromkeys(u.letter for u in units if u.letter))
     if units[0].letter and lettered == paper_letters:
         out, letter = [], None
         for u in units:
