@@ -243,19 +243,19 @@
     "refsHash": "b8748a474c6a2507"
   },
   "dcg": {
-    "cards": 627,
-    "contentHash": "d22f5b28ca051c4c",
-    "coveragePct": 53.6,
-    "covered": 547,
+    "cards": 781,
+    "contentHash": "7a4840e51d280a42",
+    "coveragePct": 65.9,
+    "covered": 673,
     "excluded": 0,
     "leaves": 1021,
-    "open": 474,
+    "open": 348,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "9f9802673f3a0d7f"
+    "refsHash": "4a3ee9ae9c900006"
   },
   "dutch": {
     "cards": 42,
@@ -753,19 +753,19 @@
     "refsHash": "718ba95fb160a884"
   },
   "spanish": {
-    "cards": 347,
-    "contentHash": "67db6091348bf049",
-    "coveragePct": 100.0,
-    "covered": 347,
+    "cards": 600,
+    "contentHash": "d5cc67a313d9d029",
+    "coveragePct": 41.1,
+    "covered": 603,
     "excluded": 306,
-    "leaves": 653,
-    "open": 0,
+    "leaves": 2212,
+    "open": 1303,
     "orphans": 0,
     "papers": {
-      "count": 25,
-      "hash": "b66ea47a460f5d10"
+      "count": 84,
+      "hash": "8baadaedee0f39e2"
     },
-    "refsHash": "5da5beef5d9ac549"
+    "refsHash": "7721d4ca976f0245"
   },
   "swedish": {
     "cards": 121,
@@ -783,19 +783,19 @@
     "refsHash": "a952dfaa733dd380"
   },
   "technology": {
-    "cards": 1089,
-    "contentHash": "56dbe226ce68e3cb",
+    "cards": 2340,
+    "contentHash": "31a28ef01ec2005b",
     "coveragePct": 100.0,
-    "covered": 1092,
+    "covered": 2747,
     "excluded": 0,
-    "leaves": 1092,
+    "leaves": 2747,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ca3702486591454b"
     },
-    "refsHash": "0a88fb0456d99ad2"
+    "refsHash": "2f5d1d43deb026bd"
   },
   "ukrainian": {
     "cards": 20,

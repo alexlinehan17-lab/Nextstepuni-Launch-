@@ -446,6 +446,10 @@ export interface SecCardBase extends CardBase {
   // asks on it. So the section is that task, 'U1' to 'U3', and the old
   // examination's single-text I DALIS is 'U1'.
   | 'U1' | 'U2' | 'U3'
+  // Spanish's Listening Comprehension Test is a booklet of its own, Questions
+  // 1 to 7 at both levels, cited "2026 HL Section L Q1(a)": its cards file
+  // under 'L', apart from the written paper's A, B and C.
+  | 'L'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -1291,6 +1295,10 @@ export interface FrenchCriterion {
   bands?: { label: string; marks: number[]; guidance: string[] }[];
   /** The SEC withholds language marks if no communicative task is attempted. */
   requiresAttempt?: boolean;
+  /** The id of another criterion whose 0 forces this one to 0, where the scheme
+   *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
+   *  rule; absent on every card that prints none. */
+  zeroWhenZero?: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a

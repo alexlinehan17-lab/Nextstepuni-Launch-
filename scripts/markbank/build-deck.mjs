@@ -666,6 +666,44 @@ function historyEssayFault(c, scheme) {
   return null;
 }
 
+/**
+ * A Spanish written-production card (es_writing.py): a RUBRIC card on the
+ * scheme's own marking grid, in the French writing shape (types/markBank.ts
+ * FrenchRubric). Checked the way a point card's rows are: every string the
+ * card shows as the SEC's -- the grid's band descriptors, the ladder and the
+ * scheme's notes -- must be found in that year's scheme; the criteria must add
+ * up to the paper's total; each criterion is placed on every mark from 0 to its
+ * maximum, and its bands, where it has them, cover those marks exactly once.
+ * The criterion labels ("First turn") and practice notes are NextStepUni's and
+ * the panel says so. Returns the reason to drop the card, or null.
+ */
+function spanishGridFault(c, scheme) {
+  const r = c.rubric;
+  if (SUBJECT_ID !== 'spanish' || r?.system !== 'french') return 'a rubric card here must be a Spanish marking grid';
+  if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
+  const criteria = r.criteria ?? [];
+  if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
+  if (criteria.reduce((sum, k) => sum + k.maxMarks, 0) !== c.totalMarks) return `the criteria do not add up to the paper's ${c.totalMarks}`;
+  for (const k of criteria) {
+    const allowed = k.permittedMarks ?? [];
+    if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
+    if (k.bands) {
+      const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+      if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+    }
+  }
+  if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
+  const lifted = [
+    ...r.taskRequirements,
+    ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
+    ...criteria.flatMap(k => [...k.guidance, ...(k.bands ? [k.label] : []),
+      ...(k.bands ?? []).flatMap(b => [b.label, ...b.guidance])]),
+  ];
+  const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
+  if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
+  return null;
+}
+
 /** The level tokens a deck may carry.
  *
  * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
@@ -1435,6 +1473,43 @@ for (const c of cards) {
    * this loop applies to it. No other subject authors kind 'rubric' into its
    * JSON (Business's rubric cards arrive by rubric-authored.json), so every
    * other deck takes exactly the path it took before. */
+  if (c.kind === 'rubric' && SUBJECT_ID === 'spanish') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = spanishGridFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    const source = c.sourceMaterial;
+    if (source?.sourceLabel) {
+      const sourceFileid = resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
+      delete source.sourceLabel;
+      if (!sourceFileid) { dropped.push(`${c.id}: source document "${source.label}" is not in the Paper Trail index`); continue; }
+      source.sourceFileid = sourceFileid;
+    }
+    const badSource = source ? sourceMaterialFault(source, 'sourceMaterial') : null;
+    if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${JSON.stringify(c.rubric, null, 6).replace(/\[\s*(\d+(?:,\s*\d+)*)\s*\]/g, (_m, list) => `[${list.split(/,\s*/).join(',')}]`).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}
+  } as SecCard,` });
+    continue;
+  }
   if (c.kind === 'rubric') {
     if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
     const badQ = badQuestion(c.questionText, c);
@@ -1763,9 +1838,15 @@ for (const c of cards) {
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
   const deferredEntry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  /* A Spanish listening card (section L) is answered from the Listening
+   * Comprehension Test, a separate SEC booklet the Paper Trail index labels
+   * "Aural Paper": its paper is that booklet, never the written paper the
+   * section-less resolver returns for a language. No other deck has an L. */
   const fileid = deferredEntry
     ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
-    : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+    : SUBJECT_ID === 'spanish' && c.section === 'L'
+      ? resolveCompanionFileid('spanish', year, level, 'Aural Paper')
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
@@ -1775,11 +1856,11 @@ for (const c of cards) {
     schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
-    questionText: ${q(c.questionText)},
+    questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 

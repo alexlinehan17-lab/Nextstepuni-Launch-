@@ -74,7 +74,11 @@ const hasPyMuPDF = (() => {
     return false;
   }
 })();
-const canReadSecSources = hasEconomicsSources && hasPyMuPDF;
+// The reviewers also read the 2022 Higher deferred sitting; a tree with the June
+// papers but not that booklet would otherwise fail rather than skip.
+const hasDeferredSources = ['deferredexams', 'deferredmarkingschemes']
+  .every(folder => existsSync(`${CORPUS}/${folder}/2022/LC034ALP000EV.pdf`));
+const canReadSecSources = hasEconomicsSources && hasDeferredSources && hasPyMuPDF;
 
 // Every Economics card is a marking-point card (no rubric cards); narrowing
 // here keeps the assertions below typed against rows and figures, and the

@@ -68,8 +68,8 @@
   "common": 314
  },
  "technology": {
-  "higher": 588,
-  "ordinary": 501
+  "higher": 1239,
+  "ordinary": 1101
  },
  "history": {
   "higher": 1855,
@@ -88,8 +88,8 @@
   "ordinary": 153
  },
  "spanish": {
-  "higher": 204,
-  "ordinary": 143
+  "higher": 351,
+  "ordinary": 249
  },
  "italian": {
   "higher": 172,
@@ -181,8 +181,8 @@
   "higher": 20
  },
  "dcg": {
-  "higher": 355,
-  "ordinary": 272
+  "higher": 444,
+  "ordinary": 337
  },
  "physical-education": {
   "higher": 382,

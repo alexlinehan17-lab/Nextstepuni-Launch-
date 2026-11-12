@@ -20,11 +20,16 @@ export const MARK_BANK_SESSION_SIZE = 12;
  * sitting together so the reviewer can keep one recording mounted while every
  * question for it remains visible.
  */
+/** Subjects whose listening cards each carry one independently scored task,
+ *  shown with the recording above that card's own question. French and
+ *  Spanish; the Irish combined assessment path cannot assess their rows. */
+const LISTENING_SCORED_ALONE = new Set(['french', 'spanish']);
+export const listeningScoredAlone = (card: SecCard): boolean =>
+  Boolean(card.audioMaterial) && LISTENING_SCORED_ALONE.has(card.subjectId);
+
 export function listeningExerciseKey(card: SecCard): string | null {
   if (!card.audioMaterial) return null;
-  // French listening cards each carry one independently scored task. The Irish
-  // combined assessment path cannot assess their French rubric criteria.
-  if (card.subjectId === 'french') return null;
+  if (listeningScoredAlone(card)) return null;
   return [
     card.subjectId,
     card.year,
