@@ -10,10 +10,11 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 const slot=(id:string,value:number)=>({[languageGroupId(id)]:1,[languageScoreId(id)]:value});
 
 describe('Russian 2012 Higher supported source tasks',()=>{
-  it('keeps the arithmetic-conflict task open and publishes all thirty-nine supported tasks',()=>{
-    expect(sitting).toHaveLength(39);expect(sitting.some(c=>c.id==='ru-2012-hl-c1-2-ii')).toBe(false);
+  it('keeps the numeric conflict held within complete forty-task source coverage',()=>{
+    expect(sitting).toHaveLength(40);expect(sitting.some(c=>c.id==='ru-2012-hl-c1-2-ii')).toBe(true);
     expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
-    expect(sitting.reduce((s,c)=>s+c.totalMarks,0)).toBe(296);
+    expect(sitting.filter(c=>c.id!=='ru-2012-hl-c1-2-ii').reduce((s,c)=>s+c.totalMarks,0)).toBe(296);
+    expect(sitting.reduce((s,c)=>s+c.totalMarks,0)).toBe(302);
     expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(20);
     expect(sitting.filter(c=>c.audioMaterial).reduce((s,c)=>s+c.totalMarks,0)).toBe(80);
   });

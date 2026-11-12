@@ -176513,5 +176513,57 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
     }
+  },
+  {
+    "id": "ru-2012-hl-c1-2-ii",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2012,
+    "section": "C1",
+    "topicId": "russian-3-0",
+    "conceptId": "levashov-wife-feelings-leaving-old-house",
+    "questionRef": "2012 HL Section C1 Q2(ii)",
+    "questionText": "What were Levashov’s wife’s feelings about leaving their old house? Give two details. (Section 2)",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "published-guidance",
+        "kind": "point",
+        "verbatim": "COMPULSORY: reference must be made to how the mother felt: she is sad / unhappy / not happy 2 x 2 = 6 assign two marks: left grandmother/mother on Arbat + she is far from grandmother now + nice/good memories (about the old house) + two girls born (in the old house) + all the important events in life are connected/happened (in the old house) + knows that the new district is nice/fine/ splendid assign one mark: worried/anxious/ concerned + they have moved far + grannyy/mother no marks: bitter",
+        "marks": null,
+        "contextNote": "Source allocation ambiguity: the original question asks for two details. The scheme makes a reference to the mother’s feelings compulsory, prints “2 x 2 = 6”, and separately gives full and partial detail tariffs. The recorded 6 is the scheme’s printed result, not an agreed scoring maximum. The complete compulsory, full, partial and no-credit guidance is retained for review; this card does not calculate a numerical score. Do not infer a third requested detail or a separately priced compulsory response. The original bilingual paper allows English or Irish."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Higher Russian — C1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5, 6, 7.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        6
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ]
+    },
+    "kind": "question"
   }
 ]
