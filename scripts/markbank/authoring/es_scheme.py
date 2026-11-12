@@ -679,7 +679,18 @@ class EsScheme:
             kept = stripped
         else:
             last = max((i for i, t in enumerate(line_terms) if t), default=None)
-            if last is not None:
+            after = [k for k in stripped[last + 1:] if k] if last is not None else []
+            menu = last is not None and any(
+                QUOTA.match(' '.join(k.split())) for k in kept[:last + 1])
+            if menu and after and all(ANSWER_START.match(k) for k in after):
+                # A menu whose price is printed on an EARLY option's line:
+                # 2020 Ordinary listening Q3(c) "One of: - (99% comes) from his
+                # (daily) work in the hospital (in Spain/Valencia) (4m)" then
+                # "- people give/donate money". Dashed lines after the price
+                # are more options of the same menu, not guidance.
+                own_terms = line_terms[last]
+                kept = [k for k in stripped[:last + 1] if k] + after
+            elif last is not None:
                 own_terms = line_terms[last]
                 # Everything printed AFTER a part's price is examiner guidance
                 # for that part, not another answer: 2025 Higher Section A

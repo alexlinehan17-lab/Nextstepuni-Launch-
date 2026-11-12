@@ -1125,7 +1125,7 @@ const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
  * never folded into the frozen hashes. */
 const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 74, ordinary: 55 },
-  2020: { higher: 73, ordinary: 26 },
+  2020: { higher: 73, ordinary: 51 },
 };
 const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
 const spanishAddedTotal = Object.values(SPANISH_ADDED)
