@@ -438,19 +438,19 @@
     "refsHash": "65d66ad3a304022c"
   },
   "irish": {
-    "cards": 400,
-    "contentHash": "186eafb2efa5dee5",
+    "cards": 2567,
+    "contentHash": "ee829dbea48536f0",
     "coveragePct": 100.0,
-    "covered": 400,
+    "covered": 2567,
     "excluded": 0,
-    "leaves": 400,
+    "leaves": 2567,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 30,
       "hash": "9d84f99397f0fb11"
     },
-    "refsHash": "02b0f7ad91f8e59d"
+    "refsHash": "c816a15dd228a2d8"
   },
   "italian": {
     "cards": 350,
@@ -783,19 +783,19 @@
     "refsHash": "a952dfaa733dd380"
   },
   "technology": {
-    "cards": 1089,
-    "contentHash": "56dbe226ce68e3cb",
+    "cards": 2340,
+    "contentHash": "31a28ef01ec2005b",
     "coveragePct": 100.0,
-    "covered": 1092,
+    "covered": 2747,
     "excluded": 0,
-    "leaves": 1092,
+    "leaves": 2747,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ca3702486591454b"
     },
-    "refsHash": "0a88fb0456d99ad2"
+    "refsHash": "2f5d1d43deb026bd"
   },
   "ukrainian": {
     "cards": 20,

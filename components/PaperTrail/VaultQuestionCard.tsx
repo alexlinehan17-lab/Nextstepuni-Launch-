@@ -32,6 +32,7 @@ import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
 import { frenchAudioForPaper } from './frenchAudio';
 import FrenchPaperAudio from './FrenchPaperAudio';
+import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -245,6 +246,8 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
               <p className="text-[12px] mt-2 font-semibold">{state.q.practiceTask.marks} marks · Full figures and instructions {isAccountingTask ? 'in the source reader' : 'below'}</p>
             </div>
           )}
+          {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
+          {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold text-[#2a2520]">{state.q.practiceInstruction}</p>}
           {isAccountingTask ? (
             <div className="mark-bank-theme pb-3">
               <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}

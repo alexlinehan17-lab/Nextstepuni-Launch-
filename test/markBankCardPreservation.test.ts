@@ -43,6 +43,58 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
+import ordinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
+import ordinary2020P1 from '../components/MarkBank/cards/irish/ordinary-2020-p1-authored.json';
+import ordinary2020P2 from '../components/MarkBank/cards/irish/ordinary-2020-p2-authored.json';
+import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
+import higher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
+import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
+import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
+import higher2019P1 from '../components/MarkBank/cards/irish/higher-2019-p1-authored.json';
+import higher2019P2 from '../components/MarkBank/cards/irish/higher-2019-p2-authored.json';
+import ordinary2019P1 from '../components/MarkBank/cards/irish/ordinary-2019-p1-authored.json';
+import ordinary2019P2 from '../components/MarkBank/cards/irish/ordinary-2019-p2-authored.json';
+import higher2018P1 from '../components/MarkBank/cards/irish/higher-2018-p1-authored.json';
+import higher2018P2 from '../components/MarkBank/cards/irish/higher-2018-p2-authored.json';
+import ordinary2018P1 from '../components/MarkBank/cards/irish/ordinary-2018-p1-authored.json';
+import ordinary2018P2 from '../components/MarkBank/cards/irish/ordinary-2018-p2-authored.json';
+import higher2017P1 from '../components/MarkBank/cards/irish/higher-2017-p1-authored.json';
+import higher2017P2 from '../components/MarkBank/cards/irish/higher-2017-p2-authored.json';
+import ordinary2017P1 from '../components/MarkBank/cards/irish/ordinary-2017-p1-authored.json';
+import ordinary2017P2 from '../components/MarkBank/cards/irish/ordinary-2017-p2-authored.json';
+import higher2016P1 from '../components/MarkBank/cards/irish/higher-2016-p1-authored.json';
+import higher2016P2 from '../components/MarkBank/cards/irish/higher-2016-p2-authored.json';
+import ordinary2016P1 from '../components/MarkBank/cards/irish/ordinary-2016-p1-authored.json';
+import ordinary2016P2 from '../components/MarkBank/cards/irish/ordinary-2016-p2-authored.json';
+import higher2015P1 from '../components/MarkBank/cards/irish/higher-2015-p1-authored.json';
+import higher2015P2 from '../components/MarkBank/cards/irish/higher-2015-p2-authored.json';
+import ordinary2015P1 from '../components/MarkBank/cards/irish/ordinary-2015-p1-authored.json';
+import ordinary2015P2 from '../components/MarkBank/cards/irish/ordinary-2015-p2-authored.json';
+import higher2014P1 from '../components/MarkBank/cards/irish/higher-2014-p1-authored.json';
+import higher2014P2 from '../components/MarkBank/cards/irish/higher-2014-p2-authored.json';
+import ordinary2014P1 from '../components/MarkBank/cards/irish/ordinary-2014-p1-authored.json';
+import ordinary2014P2 from '../components/MarkBank/cards/irish/ordinary-2014-p2-authored.json';
+import higher2013P1 from '../components/MarkBank/cards/irish/higher-2013-p1-authored.json';
+import higher2013P2 from '../components/MarkBank/cards/irish/higher-2013-p2-authored.json';
+import ordinary2013P1 from '../components/MarkBank/cards/irish/ordinary-2013-p1-authored.json';
+import ordinary2013P2 from '../components/MarkBank/cards/irish/ordinary-2013-p2-authored.json';
+import higher2012P1 from '../components/MarkBank/cards/irish/higher-2012-p1-authored.json';
+import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-authored.json';
+import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
+import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-authored.json';
+import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
+import ordinary2011P1 from '../components/MarkBank/cards/irish/ordinary-2011-p1-authored.json';
+import ordinary2011P2 from '../components/MarkBank/cards/irish/ordinary-2011-p2-authored.json';
+import higher2011Aural from '../components/MarkBank/cards/irish/higher-2011-aural-authored.json';
+import higher2011P1 from '../components/MarkBank/cards/irish/higher-2011-p1-authored.json';
+import higher2011P2 from '../components/MarkBank/cards/irish/higher-2011-p2-authored.json';
+import ordinary2010Aural from '../components/MarkBank/cards/irish/ordinary-2010-aural-authored.json';
+import ordinary2010P1 from '../components/MarkBank/cards/irish/ordinary-2010-p1-authored.json';
+import ordinary2010P2 from '../components/MarkBank/cards/irish/ordinary-2010-p2-authored.json';
+import higher2010Aural from '../components/MarkBank/cards/irish/higher-2010-aural-authored.json';
+import higher2010P1 from '../components/MarkBank/cards/irish/higher-2010-p1-authored.json';
+import higher2010P2 from '../components/MarkBank/cards/irish/higher-2010-p2-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -127,6 +179,152 @@ import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+// Additive partial-review routes are checked separately while the original
+// Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
+// The 2022/2024 optional-drama routes were withdrawn on 2026-10-12 (branch-only, never
+// live): the live 2B(a) card now carries the optional film or play. The 2022 3B(a) device
+// routes (-iomhanna, -codarsnacht, -mothuchain) were withdrawn on 2026-11-04 the same way
+// (decision 4): the live 3B(a) card carries the printed choice.
+const addedIrishRoutes = new Set([
+  'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
+  ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
+    ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),
+  ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
+  ...['1-bi','4-bi','4-bii','5-bii'].flatMap(key => [1,2].map(slot => `irish-2024-hl-p2-reading-b-q${key}-${slot}`)),
+  ...[1,2].map(slot => `irish-2024-hl-p2-reading-b-q6-b-${slot}`),
+  // 2026 Higher Paper 1, paper-reviewed 2026-10-11: 23 listening questions and 9 composition titles.
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2','a-f1-q3','a-f2-q1','a-f2-q2','a-f2-q3',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-first-q3','b-c1-second-q1','b-c1-second-q2',
+    'b-c2-first-q1','b-c2-first-q2','b-c2-first-q3','b-c2-second-q1','b-c2-second-q2','b-c2-second-q3',
+    'c-p1-q1','c-p1-q2','c-p1-q3','c-p2-q1','c-p2-q2'].map(key => `irish-2026-hl-p1-listening-${key}`),
+  ...['a-a','a-b','a-c','a-d','a-e','b-a','b-b','c-a','c-b'].map(key => `irish-2026-hl-p1-composition-${key}`),
+  // 2026 Higher Paper 2, paper-reviewed 2026-10-11: 56 reading cards and 16 literature routes.
+  ...['a','b'].flatMap(passage => [1,2,3,4,5,6].flatMap(number => [
+    `irish-2026-hl-p2-reading-${passage}-q${number}`,
+    ...(number === 6 ? ['a','b'] : ['a','bi','bii']).map(part => `irish-2026-hl-p2-reading-${passage}-q${number}-${part}`),
+  ])),
+  ...['a-q6-b','b-q1-bii','b-q2-bi','b-q2-bii','b-q4-bii'].flatMap(key => [1,2].map(slot => `irish-2026-hl-p2-reading-${key}-${slot}`)),
+  ...['prose-2a-a-caca-milis','prose-2a-a-an-lasair-choille','prose-2a-b','prose-2b-a','prose-2b-b',
+    'poetry-3a-a','poetry-3a-b','poetry-3b-a','poetry-3b-b',
+    'literature-4-a','literature-4-b','literature-4-c','literature-4-d','literature-4-e','literature-4-f'].map(key => `irish-2026-hl-p2-${key}`),
+  // 2025 Higher Paper 2 (reviewed 2026-10-11): every published reading part beside the
+  // retained whole questions, the 1 + 1 answer slots and the 6 + 6 point slots.
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`, `reading-${p}-q6-b-1`, `reading-${p}-q6-b-2`]))
+    .concat(['reading-a-q5-bi','reading-b-q2-bi','reading-b-q4-bi','reading-b-q5-bi','reading-b-q5-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2025-hl-p2-${key}`),
+  // 2023 Higher Paper 2 (reviewed 2026-10-12): every published reading part, the 1 + 1 answer
+  // slots and the A 6(b) trait slots (B 6(b) is opinion + two points inside one response).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`]))
+    .concat(['reading-a-q6-b','reading-a-q3-bi','reading-a-q4-bi','reading-b-q2-bii','reading-b-q3-bi','reading-b-q3-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2023-hl-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...higher2022P2.cards.map(card => card.id),
+  ...higher2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...higher2020P1.cards.map(card => card.id),
+  ...higher2020P2.cards.map(card => card.id),
+  ...higher2019P1.cards.map(card => card.id),
+  ...higher2019P2.cards.map(card => card.id),
+  ...higher2018P1.cards.map(card => card.id),
+  ...higher2018P2.cards.map(card => card.id),
+  ...higher2017P1.cards.map(card => card.id),
+  ...higher2017P2.cards.map(card => card.id),
+  ...higher2016P1.cards.map(card => card.id),
+  ...higher2016P2.cards.map(card => card.id),
+  ...higher2015P1.cards.map(card => card.id),
+  ...higher2015P2.cards.map(card => card.id),
+  ...higher2014P1.cards.map(card => card.id),
+  ...higher2014P2.cards.map(card => card.id),
+  ...higher2013P1.cards.map(card => card.id),
+  ...higher2013P2.cards.map(card => card.id),
+  ...higher2012P1.cards.map(card => card.id),
+  ...higher2012P2.cards.map(card => card.id),
+  ...higher2011Aural.cards.map(card => card.id),
+  ...higher2011P1.cards.map(card => card.id),
+  ...higher2011P2.cards.map(card => card.id),
+  ...higher2010Aural.cards.map(card => card.id),
+  ...higher2010P1.cards.map(card => card.id),
+  ...higher2010P2.cards.map(card => card.id),
+]);
+
+// Paper-reviewed Ordinary additions are tracked the same way beside the frozen
+// 185-ID Ordinary hash (2026 Ordinary Papers 1 and 2, reviewed 2026-10-11).
+const addedIrishOrdinaryRoutes = new Set([
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
+    'c-p1-q1','c-p1-q2','c-p2-q1','c-p2-q2'].map(key => `irish-2026-ol-p1-listening-${key}`),
+  // Each printed title once (choice is not a route: no two-section combination cards).
+  ...['a-i','a-ii','a-iii','b-i','b-ii','c-i','c-ii','d-i','d-ii'].map(key => `irish-2026-ol-p1-composition-${key}`),
+  // 2026 Ordinary Paper 2: ten reading questions and their twenty parts, and the
+  // prescribed/optional literature routes with printed sub-questions (no combination cards).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}`, `reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .map(key => `irish-2026-ol-p2-${key}`),
+  ...(() => {
+    const parts = (route: string, labels: string[]) => [route, ...labels.map(label => `${route}-${label}`)];
+    const five = ['i','ii','iii','iv','v'], three = ['i','ii','iii'];
+    const routes = [
+      ...parts('prose-2a-a-caca-milis', five), ...parts('prose-2a-a-an-lasair-choille', five), 'prose-2a-b', ...parts('prose-2a-c', five),
+      // The optional film or play is one card (one grid, one Atlas heading).
+      'prose-2b-a', 'prose-2b-b', 'prose-2b-c',
+      ...parts('poetry-3a-a', three), ...parts('poetry-3a-b', [...three, 'i-a', 'i-b', 'i-c', 'i-d']), ...parts('poetry-3a-c', three),
+      'poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c',
+    ];
+    return routes.map(key => `irish-2026-ol-p2-${key}`);
+  })(),
+  // 2025 Ordinary Paper 2 (reviewed 2026-10-12): the twenty reading parts beside the retained
+  // whole questions, and each prescribed poem's printed sub-questions (3A(a)(i) has three).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c'].map(slot => `poetry-3a-a-i-${slot}`))
+    .map(key => `irish-2025-ol-p2-${key}`),
+  // 2024 Ordinary Paper 2 (reviewed 2026-10-12): reading parts, the printed 2A(a)/(b) and 3A
+  // sub-questions, the four 3A(b)(i) questions and the An Lasair Choille option of 2A(c).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b'].flatMap(text => ['i','ii','iii','iv','v'].map(part => `prose-2a-${text}-${part}`)))
+    .concat(['prose-2a-c-an-lasair-choille'])
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c','d'].map(slot => `poetry-3a-b-i-${slot}`))
+    .map(key => `irish-2024-ol-p2-${key}`),
+  // 2023 Ordinary Paper 2 (reviewed 2026-10-13): reading parts, the five 2A(a) Hurlamaboc and nine 3A
+  // sub-questions and the An Lasair Choille option of 2A(c).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['i','ii','iii','iv','v'].map(part => `prose-2a-a-${part}`))
+    .concat(['prose-2a-c-an-lasair-choille'])
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .map(key => `irish-2023-ol-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...ordinary2022P2.cards.map(card => card.id),
+  ...ordinary2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...ordinary2020P1.cards.map(card => card.id),
+  ...ordinary2020P2.cards.map(card => card.id),
+  ...ordinary2019P1.cards.map(card => card.id),
+  ...ordinary2019P2.cards.map(card => card.id),
+  ...ordinary2018P1.cards.map(card => card.id),
+  ...ordinary2018P2.cards.map(card => card.id),
+  ...ordinary2017P1.cards.map(card => card.id),
+  ...ordinary2017P2.cards.map(card => card.id),
+  ...ordinary2016P1.cards.map(card => card.id),
+  ...ordinary2016P2.cards.map(card => card.id),
+  ...ordinary2015P1.cards.map(card => card.id),
+  ...ordinary2015P2.cards.map(card => card.id),
+  ...ordinary2014P1.cards.map(card => card.id),
+  ...ordinary2014P2.cards.map(card => card.id),
+  ...ordinary2013P1.cards.map(card => card.id),
+  ...ordinary2013P2.cards.map(card => card.id),
+  ...ordinary2012P1.cards.map(card => card.id),
+  ...ordinary2012P2.cards.map(card => card.id),
+  ...ordinary2011Aural.cards.map(card => card.id),
+  ...ordinary2011P1.cards.map(card => card.id),
+  ...ordinary2011P2.cards.map(card => card.id),
+  ...ordinary2010Aural.cards.map(card => card.id),
+  ...ordinary2010P1.cards.map(card => card.id),
+  ...ordinary2010P2.cards.map(card => card.id),
+]);
+
 const decks = [
   // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
   // No prior Politics IDs existed. All prior subject preservation checks and
@@ -713,11 +911,10 @@ const decks = [
    * keys of the frozen form (frozenIds). Never rebaseline these two pins. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
-  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
-   * responses across 2021–2025 Higher and Ordinary are present, including
-   * listening audio and the real PDF pages for passages and printed poems. */
-  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
-  ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  /* Original 400 Irish identities. Their presence does not establish coverage
+   * of every task or route; the full 2010–2026 review remains in progress. */
+  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  ['irish:ordinary', IRISH_ORDINARY.filter(card => !addedIrishOrdinaryRoutes.has(card.id)), 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
    * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
@@ -1130,6 +1327,12 @@ const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
 const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
 const spanishAddedTotal = Object.values(SPANISH_ADDED)
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
+/* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
+ * addition on top of the frozen 2020-2026 set, never a replacement -- those
+ * sittings had no card at all before. Pinned per level, count and id hash,
+ * beside the frozen set (technologyAdditions below). */
+const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
 /* Design & Communication Graphics (the 2010-2018 lane, from 2026-11-05):
  * every 2010-2018 card is an addition on top of the frozen 2019-2026 set,
  * never a replacement -- those sittings had no card at all before. Pinned per
@@ -1765,8 +1968,9 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     // two independently priced tasks. Keep the old progress identity in the
     // frozen set through its alias; the two child IDs are additions.
     const splitIds = new Set(['tech-2024-hl-b3d-i', 'tech-2024-hl-b3d-ii']);
-    return [...ids.filter(id => !splitIds.has(id)), 'tech-2024-hl-b3d'];
+    return [...ids.filter(id => !splitIds.has(id) && !isTechnologyAdded(id)), 'tech-2024-hl-b3d'];
   }
+  if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
   if (name.startsWith('economics:')) {
@@ -1829,6 +2033,10 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
+const technologyAdditions = {
+  higher: [TECHNOLOGY_HIGHER, 651, 'ce17746e8c42370352bcd6cbc13f9c8cf09b69c1f62e3f5e91144b243f964563'],
+  ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
+} as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 48, '76123d0f8ce2e1b953849ddb63c80063dd3c9c28013e13f0f1fd805f36470e53'],
   ordinary: [DCG_ORDINARY, 34, '1993648c9d5f7831b1ffacc16a12804129515b8cefc589ce9fb4d0c7249c5e30'],
@@ -1845,6 +2053,19 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it.each(Object.entries(technologyAdditions))('pins the Technology %s 2010-2019 additions beside the frozen set', (_, [cards, count, hash]) => {
+    // Added sitting by sitting, each a card per printed ask the census reads
+    // (reconcile.py technology): 2019 Higher 84, 2019 Ordinary 83, 2018 Higher 85
+    // (83 cards: Q8 is a printed choice, one card for its three terms), 2018 Ordinary 82,
+    // 2017 Higher 86, 2017 Ordinary 82 (79 cards: Q2, Q5 and Q8 print tariffs
+    // that are not one term per roman, so each is one card), 2016 Higher 88
+    // (87 cards: Q3's "(2+2+2)" over two romans is one card).
+    const additions = cards.map(card => card.id).filter(isTechnologyAdded);
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
   });
 
   it('pins the Engineering lane additions beside the frozen set', () => {
@@ -2070,9 +2291,12 @@ describe('Mark Bank card preservation', () => {
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
+        // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
+        : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
-        // DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+    const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
+      .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
@@ -2090,7 +2314,7 @@ describe('Mark Bank card preservation', () => {
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
     ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + dcgAddedCount
+      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -2401,6 +2625,15 @@ describe('Mark Bank card preservation', () => {
     expect(live.filter(card => !constructionAdditionIds.has(card.id))).toHaveLength(255 + 250 - constructionAliasIds.length);
     expect(live).toHaveLength(255 + 250 - constructionAliasIds.length + constructionAdditionIds.size);
     for (const id of constructionAliasIds) expect(liveIds.has(id), `${id} should be withdrawn behind its alias`).toBe(false);
+  });
+
+  it('adds the reviewed Irish internal routes alongside the frozen 215-card Higher baseline', () => {
+    expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishRoutes].sort());
+    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size);
+    expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishOrdinaryRoutes].sort());
+    expect(IRISH_ORDINARY).toHaveLength(185 + addedIrishOrdinaryRoutes.size);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

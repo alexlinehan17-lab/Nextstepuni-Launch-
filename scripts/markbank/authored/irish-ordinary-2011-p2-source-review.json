@@ -1,0 +1,367 @@
+{
+  "year": 2011,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP200IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "8cca86282ac3c573b669dc23ff297808f2f8da68afaa81467bbfa13a2d43765f",
+  "schemeSha256": "6e73ff5b1d21c777f7d39b3731cb7d7e6b0156fe6043c00f4fea9291032e0ad3",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "schemeScope": "Combined Ordinary scheme (12 pages). PDF 1–4 belong to Páipéar I; 5 Páipéar II intro and Roinn A Ceist 1 Prós Ainmnithe (a) (the three prescribed works, each (i) and (ii) restated with prices, (ii) split “3 + 3 = 6 marc” and “Dhá fháth = 2 marc × 2 = 4 marc” either side of “= 10 marc”, the 0–5 deduction once); 6 (b) (i) “= 20 marc” and (ii) “(10 marc × 2) = 20 marc”, the 0–3 deduction and the examiner’s Nóta, then Ceist 2 Filíocht Ainmnithe (a) Gealt? and Bímse Buan (each (i)–(iv) restated with prices, (iv) “2 marc” + “4 marc × 2 = 8 marc”, the 0–5 deduction once); 7 (b) “2 + 9 + 9 = 20marc” and “7 + 7 =14 marc” + “Íomhá … = 6 marc”, the 0 - 3 deduction and the Nóta, then Roinn B Ceist 1 Prós Roghnach (a) autobiography and film; 8 the play (its (i) price printed beside (ii)), the 0–3 deduction, (b) (i) 9 + 9 and (ii) 9 marc × 2, each with title 2, the 0–3 deduction and the Nóta, then Ceist 2 Filíocht Roghnach (a) first option; 9 (a) second option, the 0–5 deduction, (b) (i) (9 + 9) and (ii) 12 + 6, each with title 2, the 0 - 3 deduction and the Nóta. PDF 10 is the listening test, 11 Socruithe Réasúnta, 12 empty. No answers, sample points or band tables anywhere.",
+  "reviewMethod": "Every paper page (1 instructions, 2 Prós Ainmnithe, 3–5 Filíocht Ainmnithe with the three poems, 6 Prós Roghnach, 7 Filíocht Roghnach, 8 “Leathanach Bán”) and every applicable scheme page read in the text layer and checked against the printed page (scheme PDF 5–9 rendered); each prompt and scheme slice is asserted against the PDFs by the builder, which also asserts that the Paper II scheme pages print no sample answer, answer bullet or band table, and counts the eight printed language deductions. The scheme sets its multiplication sign in SymbolMT (U+F0B4), read as ×.",
+  "selectionDecisions": [
+    {
+      "page": 1,
+      "raw": "Freagair Ceist Iomlán, ( (a) agus (b) ), sa Phrós agus san Fhilíocht.",
+      "decision": "Paper structure: one whole question ((a) and (b), both answered) in prose and one in poetry; every printed question of either course is its own card carrying this instruction."
+    },
+    {
+      "page": 1,
+      "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 6).",
+      "decision": "Choice is not a route: prose is the prescribed course (Roinn A Ceist 1) or the optional course (Roinn B Ceist 1); every printed question of both is its own card carrying this instruction."
+    },
+    {
+      "page": 1,
+      "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 3, 4 agus 5) agus an Cúrsa Roghnach (leathanach 7).",
+      "decision": "Choice is not a route: poetry is the prescribed course (Roinn A Ceist 2) or the optional course (Roinn B Ceist 2); every printed question of both is its own card carrying this instruction."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both (a) and (b) of Prós Ainmnithe are required; each printed option is its own card."
+    },
+    {
+      "page": 2,
+      "raw": "Abair cén fáth ar thaitin (nó nár thaitin) sé leat. (Is leor dhá fháth.)",
+      "decision": "Prós Ainmnithe (a)(ii) Fiche Blian ag Fás: an opinion, for or against, with reasons (two are enough) inside the one 10-mark sub-question (the scheme: the description 3 + 3, two reasons 2 × 2); a flexible form, not routes."
+    },
+    {
+      "page": 2,
+      "raw": "NÓ",
+      "decision": "Printed three times: between the three prescribed works of (a) (Fiche Blian ag Fás, Clare sa Spéir, Lá Buí Bealtaine), different works, a card each; and between (b)(i) and (b)(ii), priced differently (a theme whole at 20; two things 10 × 2), a card each."
+    },
+    {
+      "page": 2,
+      "raw": "Abair cén fáth ar thaitin (nó nár thaitin) sí leat. (Is leor dhá fháth.)",
+      "decision": "Prós Ainmnithe (a)(ii) Clare sa Spéir: an opinion, for or against, with reasons (two are enough) inside the one 10-mark sub-question (3 + 3, 2 × 2); a flexible form, not routes."
+    },
+    {
+      "page": 2,
+      "raw": "Déan cur síos gairid air. Abair cén fáth ar thaitin (nó nár thaitin) sé leat.",
+      "decision": "Prós Ainmnithe (a)(ii) Lá Buí Bealtaine: the description of Páid Ó Sé and an opinion, for or against, inside the one 10-mark sub-question (3 + 3, 2 × 2); a flexible form, not routes."
+    },
+    {
+      "page": 2,
+      "raw": "(Is leor dhá fháth.)",
+      "decision": "Prós Ainmnithe (a)(ii) Lá Buí Bealtaine: two reasons are enough, inside the same 10 marks (the scheme: 2 × 2); not routes."
+    },
+    {
+      "page": 2,
+      "raw": "An Bhean Óg / Coileach Ghleann Phádraig agus An Cearrbhach Mac Cába, roghnaigh",
+      "decision": "Printed twice, in (b)(i) and (b)(ii): one of the other prescribed works, chosen by the candidate; the scheme prices the account alike whatever the work, so the work is open content inside one card, not a card each."
+    },
+    {
+      "page": 2,
+      "raw": "saothar amháin díobh a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann.",
+      "decision": "Prós Ainmnithe (b)(i): one theme from the printed list of six, chosen by the candidate inside the one 20-mark answer; not routes."
+    },
+    {
+      "page": 2,
+      "raw": "Tabhair cuntas gairid ar a bhfuil sa saothar faoin téama atá roghnaithe agat.",
+      "decision": "Prós Ainmnithe (b)(i): the account of the chosen theme; the task itself, carded."
+    },
+    {
+      "page": 2,
+      "raw": "grá (nó fuath)",
+      "decision": "A theme in the (b)(i) list (love or hate); one printed option inside one answer, not a route."
+    },
+    {
+      "page": 2,
+      "raw": "saothar amháin díobh. Tabhair cuntas gairid ar dhá rud ann, rud amháin a thaitin leat",
+      "decision": "Prós Ainmnithe (b)(ii): two required things, one liked and one not, priced 10 × 2 inside the one 20-mark answer; not routes."
+    },
+    {
+      "page": 2,
+      "raw": "agus rud amháin nár thaitin leat.",
+      "decision": "Prós Ainmnithe (b)(ii), continued: the thing not liked, inside the same 20 marks."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both (a) and (b) of Filíocht Ainmnithe are required; each printed option is its own card."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin",
+      "decision": "Filíocht Ainmnithe (a) Gealt? (ii): two required images inside one 8-mark sub-question (no split printed); not routes."
+    },
+    {
+      "page": 3,
+      "raw": "ar an dá íomhá (pictiúr) sin sa dán.",
+      "decision": "Gealt? (ii), continued: the description of both images, inside the same 8 marks."
+    },
+    {
+      "page": 3,
+      "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Gealt? (iv): an opinion with reasons (two are enough), priced 2 + 4 × 2 inside one 10-mark sub-question; not routes."
+    },
+    {
+      "page": 3,
+      "raw": "an raibh an ghealt i mbaol nó tré thine nó in airde ar chrann",
+      "decision": "Poem text (Gealt?); not a task."
+    },
+    {
+      "page": 4,
+      "raw": "NÓ",
+      "decision": "Between the two prescribed poems of (a), Gealt? and Bímse Buan ar Buairt Gach Ló: different works, a card each."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh dhá mhothúchán atá sa dán.",
+      "decision": "Bímse Buan ar Buairt Gach Ló (ii): two required feelings inside one 8-mark sub-question (no split printed); not routes."
+    },
+    {
+      "page": 4,
+      "raw": "Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. (8 marc)",
+      "decision": "Bímse Buan ar Buairt Gach Ló (ii), continued: the description of both feelings, inside the same 8 marks."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh trí rud sa dán a thaispeánann go raibh an dúlra trína chéile.",
+      "decision": "Bímse Buan ar Buairt Gach Ló (iii): three required things inside one 9-mark sub-question (no split printed); not routes."
+    },
+    {
+      "page": 4,
+      "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Bímse Buan ar Buairt Gach Ló (iv): an opinion with reasons (two are enough), priced 2 + 4 × 2 inside one 10-mark sub-question; not routes."
+    },
+    {
+      "page": 5,
+      "raw": "Maidir leis an dán Faoiseamh a Gheobhadsa (thíos), roghnaigh mothúchán amháin",
+      "decision": "Filíocht Ainmnithe (b)(i): one feeling from the printed list of six, chosen by the candidate inside one 20-mark answer (the scheme: 2 + 9 + 9); not routes."
+    },
+    {
+      "page": 5,
+      "raw": "atá roghnaithe agat.",
+      "decision": "Filíocht Ainmnithe (b)(i), continued: the chosen feeling."
+    },
+    {
+      "page": 5,
+      "raw": "NÓ",
+      "decision": "Between (b)(i) and (b)(ii) on Faoiseamh a Gheobhadsa, priced differently (2 + 9 + 9; the main ideas 7 + 7 and an image 6): a card each."
+    },
+    {
+      "page": 5,
+      "raw": "an dáin agus ar íomhá (pictiúr) amháin sa dán a thaitin go mór leat.",
+      "decision": "Filíocht Ainmnithe (b)(ii): the main ideas (7 + 7) and one image the candidate liked (6), inside one 20-mark answer; the image is open content, not a route."
+    },
+    {
+      "page": 6,
+      "raw": "ROINN B – CÚRSA ROGHNACH –",
+      "decision": "Section heading of the optional course; the choice is classified on page 1."
+    },
+    {
+      "page": 6,
+      "raw": "CEIST 1 – PRÓS ROGHNACH – [55 mharc]",
+      "decision": "Heading of the optional prose; the choice is classified on page 1."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both (a) and (b) of Prós Roghnach are required; each is its own card."
+    },
+    {
+      "page": 6,
+      "raw": "Déan cur síos gairid ar phearsa amháin a thaitin (nó nár thaitin) leat.",
+      "decision": "Prós Roghnach (a) autobiography (ii): one character, liked or not, chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 6,
+      "raw": "Abair cén fáth ar thaitin (nó nár thaitin) sé/sí leat. (Is leor dhá fháth.) (10 marc)",
+      "decision": "Prós Roghnach (a) autobiography (ii), continued: reasons (two are enough) inside the same 10 marks (the scheme: “Cur síos gairid 5+ 5”); not routes."
+    },
+    {
+      "page": 6,
+      "raw": "NÓ",
+      "decision": "Printed three times. In (a), between the autobiography extract, a short film and a play: the scheme prices the film and the play in the same words ((i) 23, title 2, (ii) two reasons 5 + 5), one card carrying both; the autobiography’s (ii) prices a short description (“Cur síos gairid 5+ 5”), not two reasons, so it is a card of its own. In (b), between (i) a theme (9 + 9) and (ii) two characters (9 × 2), each with title 2: marked alike, one card carrying both."
+    },
+    {
+      "page": 6,
+      "raw": "tabhair cuntas ar an eachtra is mó a thaitin (nó nár thaitin) leat sa ghearrscannán sin.",
+      "decision": "Prós Roghnach (a) film (i): the event the candidate liked (or disliked) most, open content inside one route."
+    },
+    {
+      "page": 6,
+      "raw": "Déan cur síos gairid ar phearsa (carachtar) amháin sa ghearrscannán sin a thaitin",
+      "decision": "Prós Roghnach (a) film (ii): one character chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 6,
+      "raw": "(nó nár thaitin) leat. (Is leor dhá fháth.) (10 marc)",
+      "decision": "Printed twice, in the film’s and the play’s (ii): liked or not, with reasons (two are enough), priced 5 + 5 inside 10; not routes."
+    },
+    {
+      "page": 6,
+      "raw": "(ii) Déan cur síos gairid ar phearsa (carachtar) amháin sa dráma sin a thaitin",
+      "decision": "Prós Roghnach (a) play (ii): one character chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 6,
+      "raw": "agus nár úsáid tú i gcuid (a) thuas, roghnaigh saothar amháin díobh",
+      "decision": "Prós Roghnach (b)(i): one other prose work not used in (a), chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 6,
+      "raw": "a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann.",
+      "decision": "Prós Roghnach (b)(i): one theme from the printed six, chosen inside the one 18-mark account; not routes."
+    },
+    {
+      "page": 6,
+      "raw": "Tabhair cuntas gairid ar a bhfuil sa saothar faoin téama atá roghnaithe agat.",
+      "decision": "Prós Roghnach (b)(i): the account of the chosen theme; the task itself, carded."
+    },
+    {
+      "page": 6,
+      "raw": "saol na tuaithe grá (nó fuath) gliceas",
+      "decision": "A row of the (b)(i) theme list; printed options inside one answer, not routes."
+    },
+    {
+      "page": 6,
+      "raw": "agus nár úsáid tú i gcuid (a) thuas, roghnaigh saothar amháin díobh.",
+      "decision": "Prós Roghnach (b)(ii): one other prose work not used in (a), chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 6,
+      "raw": "Tabhair cuntas gairid ar dhá phearsa (carachtar) ann, pearsa (carachtar) amháin",
+      "decision": "Prós Roghnach (b)(ii): two required characters, one liked and one not, priced 9 × 2 inside the 18-mark account; not routes."
+    },
+    {
+      "page": 6,
+      "raw": "a thaitin leat agus pearsa (carachtar) amháin nár thaitin leat. (18 marc)",
+      "decision": "Prós Roghnach (b)(ii), continued: the character not liked, inside the same 18 marks."
+    },
+    {
+      "page": 7,
+      "raw": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "decision": "Heading of the optional poetry; the choice is classified on page 1."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both (a) and (b) of Filíocht Roghnach are required; each printed option is its own card."
+    },
+    {
+      "page": 7,
+      "raw": "Maidir le dán nua-aimseartha amháin a chum bean agus a ndearna tú staidéar air",
+      "decision": "Filíocht Roghnach (a), first option: a modern poem by a woman, chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá íomhá (pictiúr) atá sa dán seo agus déan cur síos orthu i d’fhocail féin. (8 marc)",
+      "decision": "Filíocht Roghnach (a) first option (ii): two required images, priced 4 × 2 inside 8; not routes."
+    },
+    {
+      "page": 7,
+      "raw": "An dóigh leat go bhfuil teideal an dáin seo oiriúnach? Cuir fáth amháin le do thuairim. (7 marc)",
+      "decision": "Filíocht Roghnach (a) first option (iii): an opinion on the title with one reason (the scheme: 4 + 4 = 8, where the paper prints 7; see sourceFindings); one answer, not routes."
+    },
+    {
+      "page": 7,
+      "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Filíocht Roghnach (a) first option (iv): an opinion with reasons (two are enough), priced 1 + 4 × 2 = 9 in the scheme where the paper prints 10 (see sourceFindings); not routes."
+    },
+    {
+      "page": 7,
+      "raw": "NÓ",
+      "decision": "Printed twice. In (a), between a woman’s poem and a woman’s or a man’s poem: priced differently ((i) 8 whole or 2 + 3 × 2; (iii) 4 + 4 or 8 whole), a card each. In (b), between (i) a feeling ((9 + 9) + title 2) and (ii) the main ideas and an image (12 + 6 + title 2): priced differently, a card each."
+    },
+    {
+      "page": 7,
+      "raw": "Maidir le dán nua-aimseartha amháin a chum bean nó fear agus a ndearna tú staidéar air",
+      "decision": "Filíocht Roghnach (a), second option: a modern poem by a woman or a man, chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 7,
+      "raw": "(Is leor dhá fháth.)",
+      "decision": "Filíocht Roghnach (a) second option (i): reasons for the main feeling (two are enough), priced 3 × 2 inside 8; not routes."
+    },
+    {
+      "page": 7,
+      "raw": "Roghnaigh dhá mheafar a úsáideann an file sa dán seo agus déan cur síos, i d’fhocail féin,",
+      "decision": "Filíocht Roghnach (a) second option (ii): two metaphors chosen by the candidate (2) and described (6), inside 8; not routes."
+    },
+    {
+      "page": 7,
+      "raw": "ar an dá mheafar sin. (8 marc)",
+      "decision": "Filíocht Roghnach (a) second option (ii), continued: the description, inside the same 8 marks."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh nóta gairid faoi rud amháin sa dán a bhí suimiúil, dar leat.",
+      "decision": "Filíocht Roghnach (a) second option (iii): one thing chosen by the candidate, priced whole at 8; not a selection."
+    },
+    {
+      "page": 7,
+      "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "decision": "Filíocht Roghnach (a) second option (iv): an opinion with reasons (two are enough), priced 1 + 4 × 2; not routes."
+    },
+    {
+      "page": 7,
+      "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum fear agus a bhfuil ceann amháin",
+      "decision": "Filíocht Roghnach (b)(i): one other poem by a man, not used in (a), with one feeling from the printed six; open content inside one route."
+    },
+    {
+      "page": 7,
+      "raw": "mothúchán sin atá roghnaithe agat.",
+      "decision": "Filíocht Roghnach (b)(i), continued: the chosen feeling."
+    },
+    {
+      "page": 7,
+      "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum fear. Tabhair cuntas gairid",
+      "decision": "Filíocht Roghnach (b)(ii): one other poem by a man, not used in (a), chosen by the candidate (open content inside one route)."
+    },
+    {
+      "page": 7,
+      "raw": "ar phríomhsmaointe an dáin agus ar íomhá (pictiúr) amháin sa dán a thaitin leat",
+      "decision": "Filíocht Roghnach (b)(ii): the main ideas (12) and one image (6), inside one 18-mark account; not routes."
+    },
+    {
+      "page": 7,
+      "raw": "(nó nár thaitin leat).",
+      "decision": "Filíocht Roghnach (b)(ii), continued: the image liked or not; a flexible form, not routes."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Páipéar II (110) before 2012 is literature only: one whole question in prose and one in poetry, each from the prescribed course (Roinn A) or the optional course (Roinn B); each question is 55 = (a) 35 + (b) 20, both answered. Choice is not a route; no combination cards.",
+    "The scheme prints no answers: every ask restated with its price, and some prices split. Every award criterion is the restatement claimed at its printed price (or the totals its printed parts make), marked tariffOnly; each card says “The scheme prints no answer for this part.”",
+    "Language: one deduction per part as printed (0–5 under Prós Ainmnithe (a), Filíocht Ainmnithe (a) and Filíocht Roghnach (a); 0–3 under Prós Roghnach (a) and under every (b)); cards state it once on the question card and never inside a practice card.",
+    "Practice cards: every prescribed-course (a) sub-question at its own printed price (Prós Ainmnithe (i) 25 and (ii) 10 for each of three works; Gealt? and Bímse Buan (i) 8, (ii) 8, (iii) 9, (iv) 10). The optional-course sub-questions are open content and stay inside their question cards."
+  ],
+  "sourceFindings": [
+    "Páipéar II = 110: prose 55 (Roinn A Ceist 1 or Roinn B Ceist 1) and poetry 55 (Roinn A Ceist 2 or Roinn B Ceist 2); each (a) 35 + (b) 20.",
+    "Filíocht Roghnach (a), first option: the paper prints (iii) “(7 marc)” and (iv) “(10 marc)”; the scheme prices (iii) “= 4 marc” + “= 4 marc” = 8 and (iv) “= 1 marc}” + “= 4 marc × 2 = 8 marc}” = 9 (“= 9 marc”). Both make 17 and 35 in all. The criteria carry the scheme’s prices and the card carries a source note.",
+    "Prós Roghnach (a): the autobiography’s (i)+title total “= 25 mharc” is printed beside (ii)’s first line, and the play’s (i) price “= 23 marc” beside (ii)’s first line (PDF 8). Read where the paper prints them ((i) 23, (ii) 10): the play’s “= 23 marc” is carried as its own slice after the play’s (i) line, and the autobiography’s “= 25 mharc” is not carried.",
+    "Prós Roghnach (a) carries a 0–3 language deduction where the other three (a) questions carry 0–5; kept as printed.",
+    "Scheme misprints kept as printed: “Páid ó Sé” (paper “Páid Ó Sé”), “Fáth ar/nár thaitin ?”, “ghearrrscannáin”, “20marc”, “=14 marc”, “tré chéile” (paper “trína chéile”), “Conas atá fhios agat” (paper “a fhios”), “Cén fáth a raibh an file ag gol?” (paper “a bhfuil”), “an - neirbhíseach”. The paper prints “Faoiseamh a Gheobadsa” in (b)(ii) (its title and (b)(i): “Gheobhadsa”); kept as printed.",
+    "The scheme’s Gealt? (i)(a) reprint omits “thíos” and the Bímse Buan reprint likewise; the cards carry the paper’s question text.",
+    "Guidance slices are verbatim scheme text but leave out the work’s bracketed name before a price (“(Fiche Blian ag Fás)”, “(Clare sa Spéir)”, “(Lá Buí Bealtaine)”, “(Dírbheathaisnéis)”, “(Dán nua a chum bean)”, “(Dán nua le fear/bean)”, “(Dráma)”), the brace totals “= 10 marc” printed beside “Fáth ar/nár thaitin …” between the 6 and the 4 they total, and the braces; the card names the work and the criterion carries the total."
+  ],
+  "remainingWork": []
+}

@@ -40,8 +40,9 @@
   "ordinary": 1947
  },
  "irish": {
-  "higher": 215,
-  "ordinary": 185
+  "higher": 1386,
+  "ordinary": 1181,
+  "foundation": 1006
  },
  "art": {
   "higher": 902,
@@ -67,8 +68,8 @@
   "common": 314
  },
  "technology": {
-  "higher": 588,
-  "ordinary": 501
+  "higher": 1239,
+  "ordinary": 1101
  },
  "history": {
   "higher": 1855,

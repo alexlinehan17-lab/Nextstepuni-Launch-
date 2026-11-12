@@ -120,7 +120,9 @@ const PRECACHE_IGNORES = [
   // pdf.js decoders and fonts, fetched by the worker only when a paper
   // needs them (vite.config.ts pdfjsResources).
   '**/pdfjs-*/**',
-  '**/higher-*.js', '**/ordinary-*.js',
+  // Foundation decks are the same lazy subject corpora; the Irish
+  // Foundation deck passed the 3 MiB precache ceiling with the 2010 paper.
+  '**/higher-*.js', '**/ordinary-*.js', '**/foundation-*.js',
   // Subject factories and Atlas registries are fetched with their lazy
   // tools and cached by app-chunks; keep growing corpora out of install.
   '**/factory-*.js', '**/reviewed-*.js',
