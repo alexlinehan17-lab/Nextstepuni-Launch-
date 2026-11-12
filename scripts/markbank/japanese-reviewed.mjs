@@ -6,13 +6,14 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
-import { assertJapaneseConditionLabel, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
-import { assertJapaneseVariantSources, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
+import { assertJapaneseConditionLabel, assertJapaneseNaebaException, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { assertJapaneseVariantSources, assertJapanese2011ListeningCorrection, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const reviewsDir = resolve(root, 'scripts/markbank/authoring/reviews');
 const figures = JSON.parse(readFileSync(resolve(root, 'components/MarkBank/figures-japanese.json'), 'utf8'));
 const audio = JSON.parse(readFileSync(resolve(root, 'data/japaneseAudio.json'), 'utf8'));
+const higher2011Review = JSON.parse(readFileSync(resolve(reviewsDir, 'japanese-2011-hl.json'), 'utf8'));
 const glyphs = JSON.parse(readFileSync(resolve(root, 'scripts/markbank/authoring/glyphmap.json'), 'utf8'));
 const repair = value => typeof value === 'string'
   ? [...value].map(character => LIGATURES[character] ?? glyphs[character] ?? character).join('').replace(/\u00a0/g, ' ')
@@ -61,6 +62,8 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
     const card = structuredClone(original);
     const evidence = card.sourceEvidence;
     assertJapaneseConditionLabel(card, review);
+    assertJapaneseNaebaException(card, review);
+    assertJapanese2011ListeningCorrection(card, review, higher2011Review, audio.find(record => record.year === 2011));
     if (card.answerLanguageRule) {
       const rule = card.answerLanguageRule;
       const sourceBound = review.selectors.some(selector => selector.document === 'scheme'

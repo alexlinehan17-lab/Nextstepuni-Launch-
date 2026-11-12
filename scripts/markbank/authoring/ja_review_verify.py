@@ -48,6 +48,30 @@ def verify(path):
                 asks = {ask.key: ask for ask in JaPaper(int(year), level).asks()}
             actual = asks[tuple(selector['ask'])].text
         assert actual == selector['text'], f'{path}: source selector changed: {selector}'
+    for correction in review.get('sourceCorrections', []):
+        # The publisher enforces the exact task/scope. This independent source
+        # gate also reopens the corroborating original, not just its JSON copy.
+        assert review['sitting'] == '2011-ol' and correction['cardId'] == 'ja-2011-ol-ld'
+        source = correction['corroboratingSource']
+        original = ROOT / source['path']
+        assert hashlib.sha256(original.read_bytes()).hexdigest() == source['sha256'], original
+        selector = source['selector']
+        with fitz.open(original) as doc:
+            groups = page_rows(doc[selector['page'] - 1])[selector['row']]
+            actual = ' '.join(group[2] for group in groups) if selector['group'] is None else groups[selector['group']][2]
+        assert actual == selector['text'], 'Corroborating original selector changed'
+        other = json.loads((ROOT / correction['corroboratingReview']).read_text())
+        assert selector in other['selectors']
+        other_card = next(card for card in other['cards'] if card['id'] == correction['corroboratingCardId'])
+        assert any('can use internet' in row.get('group', {}).get('options', []) for row in other_card['rows'])
+        audio = next(item for item in json.loads((ROOT / 'data/japaneseAudio.json').read_text()) if item['year'] == 2011)
+        expected_audio = correction['audio']
+        assert audio['paperFileids'] == expected_audio['paperFileids']
+        assert audio['source']['canonicalUrl'] == expected_audio['canonicalUrl']
+        assert audio['source']['secFileid'] == expected_audio['secFileid']
+        assert audio['verification']['sha256'] == expected_audio['sha256']
+        assert audio['verification']['status'] == 'full-file-verified'
+        print('2011-ol: cross-level correction reverified from original Higher scheme and shared recording registry; no direct audio-listening claim')
     print(f'{review["sitting"]}: {len(review["selectors"])} original selectors and every physical source page verified')
 
 

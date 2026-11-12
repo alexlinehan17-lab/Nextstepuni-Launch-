@@ -7,6 +7,7 @@ import census from '../scripts/markbank/authoring/reviews/japanese-2026-ol-censu
 import review from '../scripts/markbank/authoring/reviews/japanese-2026-ol.json';
 import census2014 from '../scripts/markbank/authoring/reviews/japanese-2014-ol-census.json';
 import census2012 from '../scripts/markbank/authoring/reviews/japanese-2012-ol-census.json';
+import census2011 from '../scripts/markbank/authoring/reviews/japanese-2011-ol-census.json';
 import census2013 from '../scripts/markbank/authoring/reviews/japanese-2013-ol-census.json';
 import census2015 from '../scripts/markbank/authoring/reviews/japanese-2015-ol-census.json';
 import { languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
@@ -61,11 +62,13 @@ describe('Japanese 2026 Ordinary independent source review', () => {
     }
     // Global frozen-ID/content and alias accounting is pinned independently by
     // markBankCardPreservation and the 2025/2026 Higher review tests.
-    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52 + census2015.tasks.length + census2014.tasks.length + census2013.tasks.length + census2012.tasks.length);
+    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52 + census2015.tasks.length + census2014.tasks.length + census2013.tasks.length + census2012.tasks.length + census2011.tasks.length);
     expect(census2015.tasks).toHaveLength(51);
     expect(census2014.tasks).toHaveLength(52);
     expect(census2013.tasks).toHaveLength(51);
     expect(census2012.tasks).toHaveLength(59);
+    expect(census2011.tasks).toHaveLength(49);
+    expect(ordinary.filter(card => card.year === 2011).map(card => card.id).sort()).toEqual(census2011.tasks.map(task => `ja-2011-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(ordinary.filter(card => card.year === 2012).map(card => card.id).sort()).toEqual(census2012.tasks.map(task => `ja-2012-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(ordinary.filter(card => card.year === 2013).map(card => card.id).sort()).toEqual(census2013.tasks.map(task => `ja-2013-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(ordinary.filter(card => card.year === 2014).map(card => card.id).sort()).toEqual(census2014.tasks.map(task => `ja-2014-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());

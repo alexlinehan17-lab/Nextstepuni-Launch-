@@ -52,3 +52,42 @@ export function assertJapaneseConditionLabel(card, review) {
     throw new Error(`${card.id}: combined response condition is not bound to the exact ${binding?.year ?? card.year} Higher local source`);
   }
 }
+
+const naebaException = 'Naeba (0 marks if written in Hiragana)';
+const naebaClauses = [
+  '(Half marks if not answered in the appropriate language)',
+  '2.  (5 marks) (half marks if answered in the non-specified language)',
+  'Naeba (0 marks if written', 'in Hiragana)',
+];
+const naebaManualGuidance = `${naebaClauses.join(' ')} — Award 1 for correct Naeba in the appropriate language; 0 for Hiragana or incorrect content. Award 0.5 only for otherwise correct content in another inappropriate language, excluding Hiragana. These are whole-response marks; apply no second language reduction.`;
+
+/** The sole explicit Hiragana-zero exception also carries a general half rule.
+ * Bind its manual whole-response steps to this original task and exact clauses;
+ * an automatic language flag must never override zero or reduce twice.
+ */
+export function assertJapaneseNaebaException(card, review) {
+  const named = card.id === 'ja-2011-ol-1-2-ii';
+  const carries = card.rows?.some(row => row.verbatim === naebaException);
+  if (!named && !carries) return;
+  const parts = [{ row: 2, group: null }, { row: 13, group: null }, { row: 15, group: 1 }, { row: 16, group: 0 }];
+  const bound = review?.sitting === '2011-ol'
+    && review.sources?.some(source => source.document === 'scheme'
+      && source.path === 'examiner-reports/japanese/schemes/2011-ol.pdf'
+      && source.sha256 === 'bd5bd566ecfa9376f427f74b7d727ad568ac2d948bddc6845a12eda9eefef2a4')
+    && review.selectors?.some(selector => selector.document === 'scheme' && selector.page === 6
+      && selector.text === naebaClauses.join(' ') && JSON.stringify(selector.parts) === JSON.stringify(parts));
+  const row = card.rows?.[0];
+  if (!named || !bound || card.year !== 2011 || card.level !== 'ordinary'
+    || card.questionRef !== '2011 OL Section 1 Q2(ii)'
+    || card.questionText !== 'At what ski resort will the festival take place?' || card.kind !== 'question'
+    || card.tariffModel?.kind !== 'fixed' || card.totalMarks !== 1 || card.rows.length !== 1
+    || row.id !== 'r-1' || row.kind !== 'criterion' || row.verbatim !== naebaException || row.marks !== 1
+    || JSON.stringify(row.permittedMarks) !== '[0,0.5,1]' || row.contextNote !== naebaManualGuidance
+    || card.answerLanguageRule !== undefined || card.extraneousMaterialRule !== undefined
+    || card.sourceEvidence?.component !== 'paper'
+    || JSON.stringify(card.sourceEvidence?.paperPages) !== '[3]'
+    || JSON.stringify(card.sourceEvidence?.schemePages) !== '[6]'
+    || JSON.stringify(card.sourceEvidence?.generalSchemePages) !== '[6]') {
+    throw new Error(`${card.id}: Naeba exception is not bound to the exact 2011 Ordinary source and manual tariff`);
+  }
+}
