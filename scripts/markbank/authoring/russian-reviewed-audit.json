@@ -4811,11 +4811,12 @@
           "rawArtifact": "All 20 original pages preserved as extracted from the pinned PDF, with a separate mechanically joined full-page form retaining standalone numeric allocations."
         },
         "runtimeTests": {
-          "completedCases": 244,
+          "completedCases": 245,
           "files": 4,
-          "allRequiredPassed": false,
-          "pendingCases": 1,
-          "deckRecovery": "102 completed assertions retained; scheme-exists passed after adding raw extraction. The remaining full-row provenance import was resource-guard stopped before assertions after the source artifact fix. No pass is claimed."
+          "allRequiredPassed": true,
+          "pendingCases": 0,
+          "deckRecovery": "103 completed local deck assertions retained. The final generic provenance assertion passed remotely against the unchanged b2df29d2 Russian source snapshot after root separated generic committed-metadata lookup from strict original-PDF generator validation. The isolated run reports1 passed/103 skipped; earlier assertions were not repeated.",
+          "finalProvenanceRun": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43231479108"
         },
         "preservation": {
           "all1268PriorAuthoredRecordsUnchanged": true,
@@ -4864,10 +4865,11 @@
           "Exclude actual Cultural Awareness task from numeric quiz selection.",
           "Preserve all prior cards/anchors and run combined full types/build."
         ],
-        "status": "Source-reviewed candidate; coverage3 and final provenance1 await isolated remote validation. Cultural Awareness numeric range remains held; root full types/build and confidence-label/quiz integration also remain required.",
+        "status": "Per-sitting source/runtime checkpoint passed, including all245 focused/required cases and3 coverage cases. Cultural Awareness numeric range remains held. Combined full types/build and current-root confidence-label/quiz integration remain separate root gates; native QA is not claimed.",
         "russianCoverageTests": {
           "cases": 3,
-          "status": "pending isolated remote validation"
+          "passed": true,
+          "run": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43228419183"
         },
         "targetedLint": "passed",
         "actualRuntimeOverlayLint": {
@@ -4899,8 +4901,17 @@
             "open": 0,
             "excluded": 0
           },
-          "baselineReason": "Baseline records independently reviewed39 asks, original-source proof and exact prior-record preservation; it was not changed to suppress any test failure. Runtime coverage remains pending.",
+          "baselineReason": "Baseline records independently reviewed39 asks, original-source proof and exact prior-record preservation; it was not changed to suppress any test failure. All3 runtime coverage cases subsequently passed remotely.",
           "explanation": "Expected nonzero subject-wide result: min(70 open +254 unchanged historical stale-exclusion records,120)=120. Target sitting is fully covered; other Russian source work remains."
+        },
+        "sourceCheckpointPassed": true,
+        "remoteEvidence": {
+          "sourceCandidate": "b2df29d2be08a4894efa158c4e8568db3f525c20",
+          "supportedCandidate": "bf3c4df311e5bc152f6155e1aba8b907edd822b0",
+          "workflowOnlyChild": "5d91f71be9e08fbaad37c711da34e00aa064da94",
+          "sourceSnapshotUnchanged": true,
+          "coordinatorReportedPassed": "2026-11-12",
+          "infrastructureScope": "Root generic source-metadata/test support only; strict original-PDF generator verification remains required."
         }
       }
     }
