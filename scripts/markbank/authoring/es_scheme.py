@@ -260,6 +260,12 @@ MISPRINTS = {
     # (Section B Q4(b)'s "(between the ages of 6 and 18}" is what the page
     # prints, rendered and read: it is kept as printed.)
     (2017, 'hl'): [('- boats adrift/ in difficulty. 2+2+2m)', '- boats adrift/ in difficulty. (2+2+2m)')],
+    # 2013 prints two tariffs with a bracket astray (rendered and read: the
+    # page prints them so): Higher listening Q3(b) "(1+1+1) marks)", Ordinary
+    # Q1(c) "El marido de María Josefa 5 marks)". Only the tariff's bracket
+    # is repaired; no word a card shows changes.
+    (2013, 'hl'): [('he had a good time. (1+1+1) marks)', 'he had a good time. (1+1+1 marks)')],
+    (2013, 'ol'): [('El marido de María Josefa 5 marks)', 'El marido de María Josefa (5 marks)')],
 }
 
 # Layouts the reader is taught by example, keyed by sitting, never content:
@@ -316,6 +322,9 @@ MENU_CUTS = {
     # line break ("Bookings used to be two months in advance," / "now (the
     # industry) doesn't know …"; "… with their own house, looking for" /
     # "(long) stays abroad"): each sentence is one answer.
+    # 2013 Higher listening Q1(c): "we want to/ can travel" is one answer's slash.
+    (2013, 'hl', 'L', 1, 'c', None): ('(By choosing) the petrol station brand', 'type of petrol',
+                                      'maximum distance we want to/ can travel'),
     (2014, 'hl', 'B', 4, 'b', None): (
         'Uncertainty is attacking the nerves of all sectors /tourist industry',
         'Bookings used to be two months in advance, now (the industry) doesn’t know how season/August will end',
@@ -414,6 +423,7 @@ ONE_OF_CUTS = {
     (2014, 'ol', 'L', 5, 'c', None): ',',
     (2014, 'ol', 'L', 7, 'c', None): ',',        # "breathing /respiratory complications" is one
     (2014, 'ol', 'A', 3, 'b', None): '/',
+    (2013, 'hl', 'A2', None, 'b', 'iii'): '/',
     (2013, 'ol', 'L', 5, 'b', None): '/',
     (2013, 'ol', 'L', 5, 'c', None): '/',
     (2013, 'ol', 'L', 7, 'd', None): ('photos', 'videos', 'messages.'),   # "photos, videos and messages."
@@ -713,6 +723,14 @@ class EsScheme:
         if not heads:
             heads = [(i, m) for i, m in
                      ((i, Q2_LETTER_UNPRICED.match(l.strip())) for i, l in enumerate(block)) if m]
+        if len(heads) < 2:
+            # 2013 sets the titles in ordinary case, with no tariff: "(a)
+            # Aumentan los desplazamientos en bicicleta" over "(i) …". A
+            # lettered line with a roman part on the line under it is a title.
+            heads = [(i, m) for i, m in
+                     ((i, re.match(r'^\(\s*([ab])\s*\)\s*(\S.*?)\s*$', l.strip()))
+                      for i, l in enumerate(block))
+                     if m and i + 1 < len(block) and re.match(r'^\(\s*i\s*\)', (block[i + 1] or '').strip())]
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             letter = m.group(1).lower()
@@ -1273,6 +1291,9 @@ class EsScheme:
             # congratulate her," / "(ii) …". The connective at a cut is the
             # list's, not the answer's: each answer is the slice without it.
             def trim(a):
+                # (a stray full stop printed on a line of its own, joined to
+                # the answer above it, is no part of it: 2013 Higher Q4)
+                a = re.sub(r'(?<=\.)\s+\.$', '', a.strip())
                 a = re.sub(r'\s+(?:and|or|y|o)$', '', a.strip().rstrip(',/').strip())
                 return re.sub(r'^(?:and|y)\s+', '', a)
             options = [trim(o) for o in options]

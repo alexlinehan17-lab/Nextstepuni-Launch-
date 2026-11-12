@@ -1333,6 +1333,7 @@ const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2016: { higher: 75, ordinary: 53 },
   2015: { higher: 76, ordinary: 57 },
   2014: { higher: 76, ordinary: 54 },
+  2013: { higher: 76, ordinary: 0 },
 };
 /* 2021-2025 shipped their reading cards before the lane; their listening,
  * writing and direction asks were excluded then and are carded on top (batch

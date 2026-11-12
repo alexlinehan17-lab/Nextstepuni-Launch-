@@ -79,6 +79,7 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
     (2015, 'ol'),
     (2014, 'hl'),
     (2014, 'ol'),
+    (2013, 'hl'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -86,15 +87,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl'), (2015, 'hl'), (2014, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl'), (2024, 'hl'), (2023, 'hl'), (2022, 'hl'), (2021, 'hl'), (2019, 'hl'), (2018, 'hl'), (2017, 'hl'), (2016, 'hl'), (2015, 'hl'), (2014, 'hl'), (2013, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -949,6 +950,12 @@ def _separate_answers(text, n):
         # of television." / "It is a cultural phenomenon (of the 21st
         # Century). (2+1m)".
         re.split(r'(?<=\.)\s+(?=[A-Z])', text) if text.rstrip().endswith('.') else [],
+        # Last, and only on a line with no comma and no "and": slashes, where
+        # they part exactly as many answers as the tariff prices. 2013 Higher
+        # listening Q3(c) "Share a flat/ do the shopping/ manage money
+        # (1+1+1 marks)"; but "in her shops and online/ internet (2+2)" is
+        # one answer's two words, and its "and" gives that away.
+        [p for p in text.split('/')] if not re.search(r',|\band\b', text) else [],
     )
     for pieces in cuts:
         # A roman cut leaves the comma that closed the answer before it: "(i)
