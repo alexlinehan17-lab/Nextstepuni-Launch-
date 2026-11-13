@@ -178,6 +178,15 @@ def rate_line(s):
         got = _steps(m.group(1))
         if got is not None:
             return got, m.group(2).strip()
+    # "(Any two: 2 x 3 marks: allow apt German quotation):" (2015 Higher):
+    # the remark after a colon, inside the bracket.
+    bare = s.rstrip(':').strip()
+    bare = bare[1:-1].strip() if bare.startswith('(') and bare.endswith(')') else bare
+    m = re.match(r'^(Any\b.*?\bmarks?)\s*:\s*(allow\b.*?)\.?$', bare, re.I)
+    if m:
+        got = _steps(m.group(1))
+        if got is not None:
+            return got, m.group(2)[0].upper() + m.group(2)[1:] + '.'
     return None, None
 
 
@@ -365,6 +374,8 @@ def _components(text):
         pieces.append((words, int(m.group(1))))
         pos = m.end()
     rest = text[pos:].strip()
+    if len(pieces) >= 2 and rest in ('.', ';'):
+        rest = ''                          # "… in the Walachei (1)." (2016)
     if len(pieces) >= 2 and re.fullmatch(r'\([^()\d]*\)', rest):
         # "120 (3) million (1) (Euro)" (2018 Ordinary): the unit the answer
         # may name, in brackets after the last price, belongs to the last part.
@@ -394,6 +405,71 @@ def _own_price(text):
 BRACKETED_LABEL = re.compile(r'\(([A-ZÄÖÜ][A-Za-zÄÖÜäöüß’\']*)\s*:\s*(any\s+\w+\s*:\s*[^()]+)\)', re.I)
 COMPONENTS_NB = re.compile(r'^(.*\(\s*\d{1,2}\s*(?:marks?)?\s*\))\s+(N\.?\s?B\b.*)$', re.I)
 OR_LINE = re.compile(r'^OR$')
+
+
+PAIRED_RATE = re.compile(r'^\(\s*\d{1,2}\s*marks?:\s*(\w+):\s*\((\d),\s*(\d)\)\s*\+\s*(\w+):\s*\((\d),\s*(\d)\)\s*\)$', re.I)
+
+
+def _paired_lists(body):
+    """(items, notes) for an ask priced on two halves of every answer, else
+    None. 2015 Higher L4 Q2(ii) "Name two household chores that men like to
+    do and give the percentages" prices "(4 marks: chores: (1,1) +
+    Percentages: (1,1))" over "(a) Shopping – 77%" …: two chores at 1 each,
+    and each one's percentage at 1 — two lists, the first the chores alone,
+    the second the chore with its percentage."""
+    at = next((k for k, x in enumerate(body) if PAIRED_RATE.match(' '.join(x.split()))), None)
+    if at is None:
+        return _paired_table(body)
+    m = PAIRED_RATE.match(' '.join(body[at].split()))
+    pairs = []
+    for x in body[at + 1:]:
+        mk = MARKER.match(' '.join(x.split()))
+        if mk is None and not pairs:
+            continue
+        both = re.match(r'^(.+?)\s+[–-]\s+(\S.*)$', mk.group(4)) if mk else None
+        if not both:
+            return None
+        pairs.append((both.group(1), mk.group(4)))
+    if len(pairs) < 2:
+        return None
+    opt = lambda t: {'kind': 'option', 'text': t, 'notes': [], 'marked': True, 'width': len(t)}  # noqa: E731
+    first = {'kind': 'group', 'steps': [int(m.group(2)), int(m.group(3))], 'label': m.group(1).capitalize(),
+             'notes': [], 'rated': True, 'options': [opt(a) for a, _b in pairs]}
+    second = {'kind': 'group', 'steps': [int(m.group(5)), int(m.group(6))], 'label': m.group(4).capitalize(),
+              'notes': [], 'rated': True, 'options': [opt(b) for _a, b in pairs]}
+    line = ' '.join(body[at].split())
+    return [first, second], [line[1:-1] if line.startswith('(') and line.endswith(')') else line]
+
+
+PAIRED_EACH = re.compile(
+    r'^(\d{1,2}) marks? each for any (\w+) correct (.+?) AND (\d{1,2}) marks? each for the '
+    r'correctly corresponding (\w+)\.?$')
+PAIRED_ROW = re.compile(r'^(.+?)\s+(\d{1,3}\s*%)$')
+
+
+def _paired_table(body):
+    """The same two lists, as 2015 Ordinary L4 Q2(ii) prints them: "4 marks
+    each for any TWO correct household chores AND" / "1 mark each for the
+    correctly corresponding percentages." over a two-column table, "Household
+    chore Percentage" / "Go shopping 77%" / …. The chores are the first
+    list, each row whole (the chore with its percentage) the second."""
+    lines = [' '.join(x.split()) for x in body if x.strip()]
+    for k in range(len(lines) - 1):
+        m = PAIRED_EACH.match(f'{lines[k]} {lines[k + 1]}')
+        if m:
+            break
+    else:
+        return None
+    n = {'one': 1, 'two': 2, 'three': 3}.get(m.group(2).lower())
+    rows = [PAIRED_ROW.match(x) for x in lines[k + 3:]]
+    if n is None or not rows or None in rows or len(rows) < n:
+        return None
+    opt = lambda t: {'kind': 'option', 'text': t, 'notes': [], 'marked': True, 'width': len(t)}  # noqa: E731
+    first = {'kind': 'group', 'steps': [int(m.group(1))] * n, 'label': m.group(3).capitalize(),
+             'notes': [], 'rated': True, 'options': [opt(r.group(1)) for r in rows]}
+    second = {'kind': 'group', 'steps': [int(m.group(4))] * n, 'label': m.group(5).capitalize(),
+              'notes': [], 'rated': True, 'options': [opt(r.group(0)) for r in rows]}
+    return [first, second], [f'{lines[k]} {lines[k + 1]}']
 
 
 def _or_answers(body):
@@ -433,7 +509,8 @@ def _or_answers(body):
 
 FORM_FIELD_TAIL = re.compile(
     r'(?<=\S)\s+(?:(?:Rufnummer|Rückruf|Kontaktnummer|Anruf von|Grund des Anrufs|Der Anrufer|Die Anruferin)'
-    r'\b[:\s_]*|[A-Z][a-z]+:\s*_{3,}\s*)$')     # … or "Date: ______" (2017)
+    r'\b[:\s_]*|[A-Z][a-z]+:\s*_{3,}\s*'
+    r'|Céatadán\s*/\s*Percentage(?:\s*%)*\s*)$')     # … or "Date: ______" (2017), the % boxes (2015)
 
 
 def _self_priced(it):
@@ -496,6 +573,13 @@ def leaf_rows(leaf, asked_text):
     """(rows, notes) for one leaf, or a str naming why it cannot be carded."""
     asked = _words(asked_text)
     body = [s for s in leaf.lines if s.strip() and not PAGE.match(s.strip())]
+    # The question with the ask's tariff after it on its line: "How many
+    # times has he given blood? (3 marks)" (2016 Higher). The tariff is the
+    # head's, not an answer.
+    if body:
+        tail = re.fullmatch(r'(.*\?)\s*\(\s*\d{1,2}\s*marks?\s*\)', body[0].strip())
+        if tail and _is_cue(tail.group(1), _words(asked_text)):
+            body = [tail.group(1)] + body[1:]
     # The reprinted question opens the block.
     k = 0
     # A question the scheme begins on its head line ("2. (6 marks) Write down
@@ -530,6 +614,18 @@ def leaf_rows(leaf, asked_text):
         body = [x for x in body if x not in must]
         general.extend(' '.join(x.split()).removeprefix('(') for x in must)
     body = _or_answers(body)
+    # (Read over the whole block: the paired rate names the question's own
+    # words, "chores", "Percentages", and the cue reader takes it for a cue.)
+    paired = _paired_lists([x for x in leaf.lines if x.strip() and not PAGE.match(x.strip())])
+    if paired:
+        # The rate's own total prices the ask: "(4 marks: chores: (1,1) +
+        # Percentages: (1,1))", where the head's clause read only its first
+        # half ("(ii) chores 2 x 1 mark; percentages 2 x 1 mark").
+        own = sum(sum(g['steps']) for g in paired[0])
+        lead = re.match(r'^(\d{1,2})\s*marks?:', paired[1][0])
+        if leaf.total != own and lead is not None and int(lead.group(1)) == own:
+            leaf.total = own
+        return paired
     pending = []
     label = None
     group = None
@@ -987,9 +1083,17 @@ def mark_rows(items, language_note, general=()):
             of = max(range(len(comps)), key=lambda k: (comps[k][1], k))
             assert int(alt.group(2)) <= comps[of][1], it
             notes = [x for x in notes if not _nb_partial(x, it['marks'])]
-            notes.append(f'The scheme prints this answer as “{it["text"]}” and, after it, '
-                         f'“{nb_note}”: “{alt.group(1)}” is paid in place of '
-                         f'“{comps[of][0]}”, never beside it.')
+            if re.search(r'\bonly\b', nb_note, re.I):
+                # "Two (2) days (2)" / "N.B.: On Tuesday: 2 marks only" (2016
+                # Ordinary L4 Q1(ii)): not a stand-in for one component but a
+                # whole answer the scheme pays less. It is claimed alone.
+                notes.append(f'The scheme prints this answer as “{it["text"]}” and, after it, '
+                             f'“{nb_note}”: “{alt.group(1)}” is a whole answer on its own, '
+                             f'claimed in place of the answer above, never beside any part of it.')
+            else:
+                notes.append(f'The scheme prints this answer as “{it["text"]}” and, after it, '
+                             f'“{nb_note}”: “{alt.group(1)}” is paid in place of '
+                             f'“{comps[of][0]}”, never beside it.')
             marks = [m for _w, m in comps] + [int(alt.group(2))]
             row = {'id': f'r-{n}', 'kind': 'anyN',
                    'verbatim': 'The answers the scheme accepts in full', 'marks': None,

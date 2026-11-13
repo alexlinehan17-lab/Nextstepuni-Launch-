@@ -969,7 +969,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2017 Ordinary Level, pp.18-22 — © State Examinations Commission.",
     id: "de-2017-ol-sp-a", topicId: "german-7-2", conceptId: "classmates-planning-trip-after-leaving-certificate",
     section: "SP", questionRef: "2017 OL Section SP Q(a)",
-    questionText: "You and your classmates are planning to go on a trip after your Leaving Certificate. Write a letter to your\nGerman friend, Anton/Antonia, telling him/her about it. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\ndie letzten Prüfungen in zwei Wochen An Cóbh/Cobh, 25. Mai 2017\n• Say that you and your class mates are going on a trip (Abi‐Tour) after your Leaving Certificate.\nGive details about the trip (when you are going/ for how long)\n• Mention how many are going (boys/girls), where you are going (town/resort/country)\nand how you are getting there (bus/plane …)\n• Give two reasons why you decided to go there\n• Tell Anton/Antonia, that you have to organise the trip and what is involved (booking bus/plane tickets/hotel/hostel/…)\n• Ask Anton/Antonia what his/her plans are for the summer\n• Write a suitable closing sentence.",
+    questionText: "You and your classmates are planning to go on a trip after your Leaving Certificate. Write a letter to your German friend, Anton/Antonia, telling him/her about it. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\ndie letzten Prüfungen in zwei Wochen An Cóbh/Cobh, 25. Mai 2017\n• Say that you and your class mates are going on a trip (Abi‐Tour) after your Leaving Certificate.\nGive details about the trip (when you are going/ for how long)\n• Mention how many are going (boys/girls), where you are going (town/resort/country)\nand how you are getting there (bus/plane …)\n• Give two reasons why you decided to go there\n• Tell Anton/Antonia, that you have to organise the trip and what is involved (booking bus/plane tickets/hotel/hostel/…)\n• Ask Anton/Antonia what his/her plans are for the summer\n• Write a suitable closing sentence.",
     totalMarks: 25,
     rubric: {
           "system": "french",
@@ -2802,7 +2802,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2018 Ordinary Level, pp.16-18 — © State Examinations Commission.",
     id: "de-2018-ol-at-a", topicId: "german-7-0", conceptId: "imagine-that-talking-dagi-bee-mirko",
     section: "AT", questionRef: "2018 OL Section AT Q(a)",
-    questionText: "Imagine that you are talking to Dagi Bee and Mirko at the Games Convention in\nCologne. Complete Dagi Bee’s and Mirko’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+    questionText: "Imagine that you are talking to Dagi Bee and Mirko at the Games Convention in Cologne. Complete Dagi Bee’s and Mirko’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -5009,7 +5009,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2019 Ordinary Level, pp.17-21 — © State Examinations Commission.",
     id: "de-2019-ol-at-a", topicId: "german-7-0", conceptId: "imagine-that-skyping-with-johanna-during",
     section: "AT", questionRef: "2019 OL Section AT Q(a)",
-    questionText: "Imagine that you are skyping with Johanna during her challenge trip. You want to get information about the challenge. Complete\nJohanna’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+    questionText: "Imagine that you are skyping with Johanna during her challenge trip. You want to get information about the challenge. Complete Johanna’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -5152,7 +5152,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2019 Ordinary Level, pp.18-21 — © State Examinations Commission.",
     id: "de-2019-ol-at-b", topicId: "german-7-0", conceptId: "see-advertisement-below-want-apply-job",
     section: "AT", questionRef: "2019 OL Section AT Q(b)",
-    questionText: "You see the advertisement below and want to apply for a job accompanying a challenge group in Germany. Apply by e‐mail, in\nGerman, using the following points to guide you:\n• Introduce yourself (name/where you are from/…)\n• State that you are over 18\n• Mention two special qualities you have (sporty/friendly/swimmer/…)\n• Explain what previous experience you have (worked with youth groups/did a challenge yourself/…)\n• Ask for details about the group you would accompany (age?/how many girls?/boys?…)\n(Write 25 – 30 words.)",
+    questionText: "You see the advertisement below and want to apply for a job accompanying a challenge group in Germany. Apply by e‐mail, in German, using the following points to guide you:\n• Introduce yourself (name/where you are from/…)\n• State that you are over 18\n• Mention two special qualities you have (sporty/friendly/swimmer/…)\n• Explain what previous experience you have (worked with youth groups/did a challenge yourself/…)\n• Ask for details about the group you would accompany (age?/how many girls?/boys?…)\n(Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -7523,7 +7523,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2020 Ordinary Level, pp.21-23 — © State Examinations Commission.",
     id: "de-2020-ol-sp-a", topicId: "german-7-2", conceptId: "inviting-friend-come-ireland-attend-festival",
     section: "SP", questionRef: "2020 OL Section SP Q(a)",
-    questionText: "You are inviting your friend to come to\nIreland to attend a festival with you.\nWrite a letter telling him/her about the details and your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below. Write 80 – 100 words.\nnach Irland eine super Idee Cill Chainnigh/Kilkenny, 5. Mai 2020 Ireland (name, location, when)\ngoing to camp and how you are going to pay for them clothes to bring summer (two things)",
+    questionText: "You are inviting your friend to come to Ireland to attend a festival with you.\nWrite a letter telling him/her about the details and your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below. Write 80 – 100 words.\nnach Irland eine super Idee Cill Chainnigh/Kilkenny, 5. Mai 2020 Ireland (name, location, when)\ngoing to camp and how you are going to pay for them clothes to bring summer (two things)",
     totalMarks: 25,
     rubric: {
           "system": "french",
@@ -9815,7 +9815,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2021 Ordinary Level, pp.21-23 — © State Examinations Commission.",
     id: "de-2021-ol-sp-a", topicId: "german-7-2", conceptId: "cousin-daniel-from-america-coming-visit",
     section: "SP", questionRef: "2021 OL Section SP Q(a)",
-    questionText: "Your cousin Daniel from America is coming to visit in the summer. Write a letter to your German friend Martin/\nMartina telling him/her about it. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\ndie Sommerferien Bun Dobhráin/Bundoran, 15. Mai 2021 say how far the airport is two details about the course (every morning/ at the beach/what time/how much/…)\n(meet your friends/play sports/go out/…)(two details)\nSay that Daniel is a nice guy and you would like to visit him in America next year shopping/big cities/…) (three details)",
+    questionText: "Your cousin Daniel from America is coming to visit in the summer. Write a letter to your German friend Martin/ Martina telling him/her about it. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\ndie Sommerferien Bun Dobhráin/Bundoran, 15. Mai 2021 say how far the airport is two details about the course (every morning/ at the beach/what time/how much/…)\n(meet your friends/play sports/go out/…)(two details)\nSay that Daniel is a nice guy and you would like to visit him in America next year shopping/big cities/…) (three details)",
     totalMarks: 26,
     rubric: {
           "system": "french",
@@ -11739,7 +11739,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Ordinary Level — © State Examinations Commission.",
     id: "de-2022-ol-t3-5", topicId: "german-6-0", conceptId: "complete-following-sentences-based-article-text",
     section: "T3", questionRef: "2022 OL Section T3 Q5",
-    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter",
+    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter\n(a), (b), (c) or (d) in the box provided.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":2,"options":["1 — C","2 — D","3 — A","4 — D","5 — B"]} },
@@ -11843,7 +11843,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Ordinary Level, pp.12-14 — © State Examinations Commission.",
     id: "de-2022-ol-at-a", topicId: "german-7-0", conceptId: "imagine-that-skyping-with-laura-during",
     section: "AT", questionRef: "2022 OL Section AT Q(a)",
-    questionText: "Imagine that you are skyping with Laura during her interrail trip. You want to get information about the trip. Complete\nLaura’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+    questionText: "Imagine that you are skyping with Laura during her interrail trip. You want to get information about the trip. Complete Laura’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -11981,7 +11981,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Ordinary Level, pp.13-14 — © State Examinations Commission.",
     id: "de-2022-ol-at-b", topicId: "german-7-0", conceptId: "see-advertisement-below-want-apply-job",
     section: "AT", questionRef: "2022 OL Section AT Q(b)",
-    questionText: "You see the advertisement below and want to apply for a job at a tourist information office in Germany. Apply by email, in\nGerman, using the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/open/you like to travel/…)\n• Say why you are perfect for the job (you worked as a tour guide before/you have been to Germany/…) Give one reason\n• Say what languages you speak\n• Say when you can start working (Write 25 – 30 words.)",
+    questionText: "You see the advertisement below and want to apply for a job at a tourist information office in Germany. Apply by email, in German, using the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/open/you like to travel/…)\n• Say why you are perfect for the job (you worked as a tour guide before/you have been to Germany/…) Give one reason\n• Say what languages you speak\n• Say when you can start working (Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -14060,7 +14060,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2023 Ordinary Level — © State Examinations Commission.",
     id: "de-2023-ol-t3-5", topicId: "german-6-0", conceptId: "complete-following-sentences-based-article-text",
     section: "T3", questionRef: "2023 OL Section T3 Q5",
-    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter",
+    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter\n(a), (b), (c) or (d) in the box provided.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":2,"options":["1 — C","2 — A","3 — C","4 — D","5 — B"]} },
@@ -14424,7 +14424,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2023 Ordinary Level, pp.14-19 — © State Examinations Commission.",
     id: "de-2023-ol-sp-a", topicId: "german-7-2", conceptId: "planning-year-out-after-leaving-cert",
     section: "SP", questionRef: "2023 OL Section SP Q(a)",
-    questionText: "You are planning a year out after your\nLeaving Cert. Tell your friend Toni in Austria about your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\nein Jahr lang ich habe nur noch Na Cealla Beaga/Killybegs, 20. Juni 2023 Answer any 5 of the following 6 points:\n• Say you have a job for the summer and where you are going to work (restaurant/office/sport centre…)\n• Say how much you are going to earn and that you want to save/spend the money to travel\n• Say where you want to go (countries/ towns…) and how you want to travel\n• Mention three things you would like to do on your trip (sightseeing/learn a language/make new friends…)\n• Say you want to travel with a friend/on your own and explain why (one reason)\n• Say where you are going to stay (camp sites/hostels/hotels…) and what you need to pack (two details)\nAnd Write a suitable closing sentence.",
+    questionText: "You are planning a year out after your Leaving Cert. Tell your friend Toni in Austria about your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\nein Jahr lang ich habe nur noch Na Cealla Beaga/Killybegs, 20. Juni 2023 Answer any 5 of the following 6 points:\n• Say you have a job for the summer and where you are going to work (restaurant/office/sport centre…)\n• Say how much you are going to earn and that you want to save/spend the money to travel\n• Say where you want to go (countries/ towns…) and how you want to travel\n• Mention three things you would like to do on your trip (sightseeing/learn a language/make new friends…)\n• Say you want to travel with a friend/on your own and explain why (one reason)\n• Say where you are going to stay (camp sites/hostels/hotels…) and what you need to pack (two details)\nAnd Write a suitable closing sentence.",
     totalMarks: 26,
     rubric: {
           "system": "french",
@@ -16458,7 +16458,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Ordinary Level — © State Examinations Commission.",
     id: "de-2024-ol-t3-5", topicId: "german-6-0", conceptId: "complete-following-sentences-based-article-text",
     section: "T3", questionRef: "2024 OL Section T3 Q5",
-    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter",
+    questionText: "Complete the following sentences which are\nbased on the article (TEXT III). Indicate your\nanswer in all cases by writing the correct letter\n(a), (b), (c) or (d) in the box provided.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":2,"options":["1 — C","2 — D","3 — A","4 — D","5 — A"]} },
@@ -16703,7 +16703,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2024 Ordinary Level, pp.14-15 — © State Examinations Commission.",
     id: "de-2024-ol-at-b", topicId: "german-7-0", conceptId: "see-advertisement-below-want-apply-job",
     section: "AT", questionRef: "2024 OL Section AT Q(b)",
-    questionText: "You see the advertisement below and want to apply for a job as an event assistant in\nGermany. Apply by email, in German, using a the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/team worker/flexible/you are a musician/dancer/…)\n• Say what previous experience you have (you worked at festivals/concerts/…)\nMention one.\n• Say what languages you speak (German/…)\n• Say when you can start working (Write 25 – 30 words.)",
+    questionText: "You see the advertisement below and want to apply for a job as an event assistant in Germany. Apply by email, in German, using a the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/team worker/flexible/you are a musician/dancer/…)\n• Say what previous experience you have (you worked at festivals/concerts/…)\nMention one.\n• Say what languages you speak (German/…)\n• Say when you can start working (Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",
@@ -18816,7 +18816,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2025 Ordinary Level, pp.13-15 — © State Examinations Commission.",
     id: "de-2025-ol-at-a", topicId: "german-7-0", conceptId: "doing-project-young-people-who-work",
     section: "AT", questionRef: "2025 OL Section AT Q(a)",
-    questionText: "You are doing a project on young people who work as influencers. You interview\nElisabeth, a #BookTok creator. Complete Elisabeth’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+    questionText: "You are doing a project on young people who work as influencers. You interview Elisabeth, a #BookTok creator. Complete Elisabeth’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
     totalMarks: 15,
     rubric: {
           "system": "french",

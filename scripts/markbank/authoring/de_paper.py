@@ -179,7 +179,12 @@ def _unsweep(groups):
                     out.append((x + 1, 'R', text[at:].strip()))
                     continue
             nxt = rows[i + 1] if i + 1 < len(rows) else None
-            if nxt and nxt[1] == 'R' and not MARKER_START.match(nxt[2]):
+            # (Never where the English group goes on in lower case: that is
+            # the English sentence's own second line, and the number ended
+            # the Irish one — "an eolais as ailt 4, 5 agus 6." beside "from
+            # paragraphs 4, 5 and 6.", 2015 Ordinary.)
+            if (nxt and nxt[1] == 'R' and not MARKER_START.match(nxt[2])
+                    and not re.match(r'^[a-zäöüß]', nxt[2].strip())):
                 m = SWEPT_MARKER.search(text)
                 if m:
                     out.append((x, 'L', text[:m.start()].rstrip()))
@@ -305,6 +310,10 @@ class DePaper:
                     # English rendering of question 3 under question 2, which is
                     # the rendering the scheme marks.
                     m = LETTER_MARK.match(text)
+                    # "(a), (b), (c) or (d) in the box provided." (2015
+                    # Ordinary) names the letters; it opens no part.
+                    if m and re.match(r'^\(\s*[a-h]\s*\)\s*,', text):
+                        m = None
                     if m and current:
                         q = current[0]
                         letter = m.group(1)
@@ -696,7 +705,7 @@ AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[�
                         r'Leaving Certificate Examination|Scr[úu]d[úu] na|'
                         # "8/Page 2 of 8" (2017), the end of "Leathanach 2 de
                         # 8/Page 2 of 8" across the column bound.
-                        r'(?:de\s+)?(?:\d{1,2}/)?Page\s+\d+\s+of\s+\d+$)', re.I)
+                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
 # numbers its last item "5." in the Irish column and "6." in the English
