@@ -78,7 +78,7 @@ LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (202
 # The sittings whose written production (Äußerung zum Thema, Schriftliche
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
-WRITING_CARDED = {(2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl')}
+WRITING_CARDED = {(2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'hl')}
 # The sittings whose uncarded listening and writing asks are refused with
 # evidence (exclusions/german.json): the five the bank was first built on.
 # Every other sitting's uncarded asks stay OPEN in the census until carded.

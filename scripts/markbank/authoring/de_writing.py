@@ -339,9 +339,23 @@ def higher_cards(year, card_id, question_ref, concept_for):
     a_at, b_at = _find(S, r'^\(a\) ', sp), _find(S, r'^\(b\) ', sp + 1)
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, sp_at))):
         lines = [l for l in _lines(S, lo, hi) if l not in ('OR',)]
+        if letter == 'a':
+            # (b)'s own note and its "Where a candidate …" line, printed
+            # above "(b)", are not (a)'s.
+            cut = next((k for k, l in enumerate(lines) if k > 0 and l.startswith('Note: Answer any')
+                        and 'Dis.:' in ' '.join(lines[:k])), None)
+            if cut is not None:
+                lines = lines[:cut]
+        if letter == 'b' and lo > 0:
+            lead = [l for l in _lines(S, lo - 4, lo) if l.startswith('Note: Answer any') or l.startswith('Where a candidate')]
+            lines = lead + lines
         head, labelled = _labelled(lines, r'^(Op|Cl|[A-F])\. \((\d)\)')
         dis = next(l for l in lines if l.startswith('Dis.:'))
-        want = re.search(r'Answer any (\w+) of the', ' '.join(head))
+        # 2023 prints (b)'s "Note: Answer any five …" above its "(b)" line,
+        # so it closes (a)'s block: the task's own note is the first in its
+        # block, or else the one printed just above it.
+        want = re.search(r'Answer any (\w+) of the', ' '.join(head)) or re.search(
+            r'Answer any (\w+) of the', ' '.join(_lines(S, lo - 4, lo)))
         n = {'four': 4, 'five': 5}[want.group(1).lower()]
         criteria, reqs = [], [l for l in head if not l.startswith('Dis.:')]
         for label, marks, block in labelled:
@@ -440,7 +454,7 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         st_marks = int(re.match(r'^St\. \((\d)\)', lines[st_at]).group(1))
         assert sum(m for _p, m in phrases) == st_marks, (year, letter, phrases)
         rest = lines[:st_at] + lines[k:]
-        ex_line = next(l for l in rest if l.startswith('Ex.'))
+        ex_line = next((l for l in rest if l.startswith('Ex.')), None)
         if letter == 'a':
             head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(Cl|[A-F])\.? \((\d)\)')
             cl = [x for x in labelled if x[0] == 'Cl']
@@ -449,12 +463,12 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             n = (content_total - sum(x[1] for x in cl)) // points[0][1]
             assert all(x[1] == points[0][1] for x in points) and len(points) >= n
             criteria = _points(n, points[0][1]) + [_criterion('cl', 'Cl', x[1], x[2]) for x in cl]
-            reqs = head + [l for x in points for l in x[2]] + [ex_line]
+            reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
         else:
             c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(12\)', l))
             guide = [l for l in rest[c_at:] if not l.startswith('Ex.')]
             criteria = [_criterion('content', 'C', 12, guide)]
-            reqs = [l for l in rest[:c_at]] + [ex_line]
+            reqs = [l for l in rest[:c_at]] + ([ex_line] if ex_line else [])
         content = [k_['id'] for k_ in criteria]
         criteria.append(_expression(10, two, {
             'label': 'Lower Ex.', 'maxMarks': 7, 'permittedMarks': list(range(8)), 'bands': one,
