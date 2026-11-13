@@ -27,6 +27,7 @@ import {
   resolveSibling,
 } from './vaultResolve';
 import { questionLabel, type TopicSibling } from './topics';
+import { sittingLabel } from './sitting';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
@@ -189,6 +190,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
 
   const meta = [
     LVL[sibling.level] ?? sibling.level,
+    sittingLabel(sibling.fileid),
     sibling.paperKey === 'p1' ? 'Paper 1' : sibling.paperKey === 'p2' ? 'Paper 2' : null,
     sibling.lang === 'iv' ? 'Gaeilge' : null,
   ].filter(Boolean) as string[];

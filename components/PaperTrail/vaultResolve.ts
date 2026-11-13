@@ -7,9 +7,10 @@
  */
 
 import { type PaperAnswerMap } from '../../types/paperTrail';
-import { PAPER_TRAIL_INDEX, PAPER_TRAIL_SUBJECTS } from '../../paperTrailData';
+import { PAPER_TRAIL_SUBJECTS } from '../../paperTrailData';
 import { paperAnswersPath, paperStoragePath, paperUrl } from './storage';
 import { type TopicSibling } from './topics';
+import { findIndexedItem } from './indexLookup';
 import accountingTaskRuntime from '../../data/examTopics/accounting-task-runtime.json';
 
 export interface ResolvedSibling {
@@ -519,10 +520,11 @@ export function resolveSibling(t: TopicSibling): ResolvedSibling | null {
   const key = `${t.subjectId}|${t.year}|${t.level}|${t.lang}|${t.fileid}`;
   if (memo.has(key)) return memo.get(key)!;
   const cycle = cycleById.get(t.subjectId);
-  const entry = (PAPER_TRAIL_INDEX[t.subjectId] ?? []).find(
-    e => e.year === t.year && e.level === t.level && e.lang === t.lang,
-  );
-  const item = entry?.papers.find(p => p.doc.f === t.fileid);
+  // The entry that holds this paper, not the first for the year, level and
+  // language: a deferred sitting is an entry of its own listed after June's,
+  // and looking for "…-deferred.pdf" among June's papers found nothing, so
+  // all 927 deferred Atlas questions fell back to "can't be shown as a crop".
+  const item = findIndexedItem(t.subjectId, t.year, t.level, t.lang, t.fileid)?.item;
   const out: ResolvedSibling | null = cycle && item
     ? {
         paperUrl: paperUrl(paperStoragePath(cycle, t.subjectId, t.year, 'paper', item.doc.f)),

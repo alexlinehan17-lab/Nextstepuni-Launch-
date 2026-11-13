@@ -25,6 +25,7 @@ import {
   type ReviewGrade,
 } from './reviewStore';
 import { questionLabel, siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
+import { sittingLabel } from './sitting';
 import { allMarks } from './attemptStore';
 import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
@@ -224,7 +225,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
                     {subjectLabel(c.subjectId)}{c.topicId ? ` · ${topicLabel(c.topicId)}` : ''}
                   </span>
                   <span className="block text-[11.5px]" style={{ color: '#7a7068' }}>
-                    {c.year} · {LVL[c.level] ?? c.level} · {questionLabel(c, { short: true })} · {c.lastTs === 0 ? 'new' : dueText(c.dueTs)}
+                    {c.year} · {LVL[c.level] ?? c.level}{sittingLabel(c.fileid) ? ` · ${sittingLabel(c.fileid)}` : ''} · {questionLabel(c, { short: true })} · {c.lastTs === 0 ? 'new' : dueText(c.dueTs)}
                   </span>
                 </button>
                 <button
@@ -418,7 +419,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
             {subjectLabel(card.subjectId)}{topic ? ` · ${topic}` : ''}
           </p>
           <p className="text-[19px] font-semibold leading-snug mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-            {card.year} · {LVL[card.level] ?? card.level} · Question {card.n}
+            {card.year} · {LVL[card.level] ?? card.level}{sittingLabel(card.fileid) ? ` · ${sittingLabel(card.fileid)}` : ''} · Question {card.n}
           </p>
           <p className="text-[13.5px] leading-relaxed mt-3" style={{ color: '#5a5550' }}>
             Try to recall how you’d earn full marks on this question — the structure of the answer, the key points, the method. Then check yourself against the marking scheme.
