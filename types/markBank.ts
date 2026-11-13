@@ -476,6 +476,9 @@ export interface SecCardBase extends CardBase {
   // "2026 HL Section L2 Q1" files under 'L2'.
   | 'L'
   | 'L1' | 'L2' | 'L3' | 'L4'
+  // German's two written-production sections, each a choice of (a) or (b):
+  // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
+  | 'AT' | 'SP'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -1325,6 +1328,30 @@ export interface FrenchCriterion {
    *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
    *  rule; absent on every card that prints none. */
   zeroWhenZero?: string;
+  /** The reduced scale the scheme prints beside this criterion's full one, and
+   *  the rule that switches to it — German's "Lower E": "If the content mark is
+   *  8 or less, or the answer is too short (less than 60 words), mark
+   *  expression out of 7". It applies when the criteria named in
+   *  `contentCriteria` add up to `contentAtMost` or less, or when the student
+   *  says the answer is shorter than `wordsUnder` words; the criterion is then
+   *  placed on these marks and bands instead of its own. Set only from a
+   *  printed rule; absent on every card that prints none, and those score
+   *  exactly as before (frenchCriterionMark). */
+  lowerScale?: FrenchLowerScale;
+}
+
+/** See FrenchCriterion.lowerScale. Every string is the scheme's own. */
+export interface FrenchLowerScale {
+  /** The scheme's name for the scale ("Lower E"). */
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  bands: { label: string; marks: number[]; guidance: string[] }[];
+  contentCriteria: string[];
+  contentAtMost: number;
+  wordsUnder?: number;
+  /** The printed rule, verbatim. */
+  rule: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a

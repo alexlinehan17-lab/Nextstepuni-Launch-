@@ -1,9 +1,9 @@
-import type { FrenchAllocation, FrenchAnswerRow, SecRubricCard } from '../../types/markBank';
+import type { FrenchAllocation, FrenchAnswerRow, FrenchCriterion, SecRubricCard } from '../../types/markBank';
 
 /** The language a card on the French marking grid is examined in. Spanish
  *  writing is marked on the same grid shape (Communication/Language bands), so
  *  the panel names the scheme by the card's own subject. */
-const RUBRIC_LANGUAGE: Record<string, string> = { french: 'French', spanish: 'Spanish' };
+const RUBRIC_LANGUAGE: Record<string, string> = { french: 'French', spanish: 'Spanish', german: 'German' };
 export const rubricLanguage = (subjectId: string): string => RUBRIC_LANGUAGE[subjectId] ?? 'French';
 
 export type FrenchScoreId = `french:${string}`;
@@ -45,15 +45,39 @@ export function frenchAllocationMarks(total: number, allocation: FrenchAllocatio
   return Math.max(0, Math.min(total, earned - deductions));
 }
 
+/** The student's "my answer is under N words" toggle for a lower scale. */
+export const frenchShortId = (criterionId: string): FrenchScoreId => `french:${criterionId}:short`;
+
+/** Whether a criterion's printed lower scale applies: the content it names
+ *  adds up to its threshold or less, or the student says the answer is short.
+ *  False for every criterion without one. */
+export function lowerScaleActive(criteria: readonly FrenchCriterion[], criterion: FrenchCriterion, scores: FrenchScores): boolean {
+  const lower = criterion.lowerScale;
+  if (!lower) return false;
+  if (lower.wordsUnder && scores[frenchShortId(criterion.id)] === 1) return true;
+  const content = lower.contentCriteria.reduce((sum, id) => {
+    const named = criteria.find(other => other.id === id);
+    return sum + (named && !named.lowerScale ? frenchCriterionMark(criteria, named, scores) : 0);
+  }, 0);
+  return content <= lower.contentAtMost;
+}
+
+/** The marks one criterion earns as placed. Unchanged for every criterion
+ *  without a lower scale; one with it is read against the scale that applies. */
+export function frenchCriterionMark(criteria: readonly FrenchCriterion[], criterion: FrenchCriterion, scores: FrenchScores): number {
+  if (criterion.requiresAttempt && scores[FRENCH_ATTEMPT_ID] !== 1) return 0;
+  if (criterion.zeroWhenZero && (scores[frenchScoreId(criterion.zeroWhenZero)] ?? 0) === 0) return 0;
+  const selected = scores[frenchScoreId(criterion.id)] ?? 0;
+  const permitted = criterion.lowerScale && lowerScaleActive(criteria, criterion, scores)
+    ? criterion.lowerScale.permittedMarks : criterion.permittedMarks;
+  return permitted.includes(selected) ? selected : 0;
+}
+
 /** An attempted but unclear task can earn zero communication marks. The SEC's
  * no-attempt rule must therefore use an explicit check, not a positive score. */
 export function frenchMarks(card: SecRubricCard, scores: FrenchScores): number {
   if (card.rubric.system !== 'french') return 0;
   if (card.rubric.allocation) return frenchAllocationMarks(card.totalMarks, card.rubric.allocation, scores);
-  return card.rubric.criteria.reduce((total, criterion) => {
-    if (criterion.requiresAttempt && scores[FRENCH_ATTEMPT_ID] !== 1) return total;
-    if (criterion.zeroWhenZero && (scores[frenchScoreId(criterion.zeroWhenZero)] ?? 0) === 0) return total;
-    const selected = scores[frenchScoreId(criterion.id)] ?? 0;
-    return total + (criterion.permittedMarks.includes(selected) ? selected : 0);
-  }, 0);
+  const { criteria } = card.rubric;
+  return criteria.reduce((total, criterion) => total + frenchCriterionMark(criteria, criterion, scores), 0);
 }

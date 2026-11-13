@@ -677,9 +677,13 @@ function historyEssayFault(c, scheme) {
  * The criterion labels ("First turn") and practice notes are NextStepUni's and
  * the panel says so. Returns the reason to drop the card, or null.
  */
+/** The decks whose writing is a rubric card on the French grid shape, gated
+ *  by spanishGridFault: Spanish, and German (whose expression criterion may
+ *  carry a printed lower scale). */
+const GRID_SUBJECTS = new Set(['spanish', 'german']);
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (SUBJECT_ID !== 'spanish' || r?.system !== 'french') return 'a rubric card here must be a Spanish marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish or German marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -702,12 +706,36 @@ function spanishGridFault(c, scheme) {
       return `${k.label} is zeroed by ${k.zeroWhenZero} but the card prints no such rule`;
     }
   }
+  // A lower scale (German "Lower E", FrenchCriterion.lowerScale): smaller than
+  // the criterion's own, placed on every mark from 0 to its maximum, its bands
+  // covering them once, switched on by content criteria the card has, and its
+  // rule and band descriptors lifted from the scheme like every other line.
+  for (const k of criteria) {
+    const lower = k.lowerScale;
+    if (!lower) continue;
+    if (SUBJECT_ID !== 'german') return `${k.label} carries a lower scale, which only German prints`;
+    if (!(lower.maxMarks > 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
+    const allowed = lower.permittedMarks ?? [];
+    if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
+    const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
+    if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
+    if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
+      return `${k.label}'s lower scale counts a criterion the card does not have`;
+    }
+    const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
+    if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    if (lower.wordsUnder !== undefined && !(Number.isInteger(lower.wordsUnder) && lower.wordsUnder > 0)) return `${k.label}'s lower scale word count is not a count`;
+    if (!String(lower.rule ?? '').trim()) return `${k.label}'s lower scale prints no rule`;
+  }
   if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
   const lifted = [
     ...r.taskRequirements,
     ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
     ...criteria.flatMap(k => [...k.guidance, ...(k.bands ? [k.label] : []),
-      ...(k.bands ?? []).flatMap(b => [b.label, ...b.guidance])]),
+      // German prints its expression categories unnamed ("CATEGORY
+      // DESCRIPTION"): "Category 1" is the card's own label, never traced.
+      ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
+      ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
   ];
   const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
@@ -1518,7 +1546,7 @@ for (const c of cards) {
    * this loop applies to it. No other subject authors kind 'rubric' into its
    * JSON (Business's rubric cards arrive by rubric-authored.json), so every
    * other deck takes exactly the path it took before. */
-  if (c.kind === 'rubric' && SUBJECT_ID === 'spanish') {
+  if (c.kind === 'rubric' && GRID_SUBJECTS.has(SUBJECT_ID)) {
     if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
     const badQ = badQuestion(c.questionText, c);
     if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
@@ -1530,7 +1558,7 @@ for (const c of cards) {
     if (source?.sourceLabel) {
       const sourceFileid = deferredCard(SUBJECT_ID, c)
         ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
-        : resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
+        : resolveCompanionFileid(SUBJECT_ID, c.year, c.level, source.sourceLabel);
       delete source.sourceLabel;
       if (!sourceFileid) { dropped.push(`${c.id}: source document "${source.label}" is not in the Paper Trail index`); continue; }
       source.sourceFileid = sourceFileid;
