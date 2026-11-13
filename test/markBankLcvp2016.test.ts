@@ -102,7 +102,7 @@ describe('LCVP 2016: complete source tasks and original Atlas identities', () =>
     expect(get('b3b').rows.map(r => r.marks)).toEqual([1, 5]);
     expect(get('b3b').rows[1].group?.options).toHaveLength(11);
     expect(get('b3b').questionText).toContain('short and long term success');
-    const priced = all.filter(c => c.tariffModel.kind === 'fixed');
+    const priced = all.filter(c => c.kind === 'question' && c.tariffModel.kind === 'fixed');
     expect(priced.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(195);
   });
 
