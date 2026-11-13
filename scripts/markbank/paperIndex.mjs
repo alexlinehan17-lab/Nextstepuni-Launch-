@@ -178,6 +178,11 @@ const TEXT_ONLY_COMPANION = {
   // different relationship to the questions, and guessing at one that does not
   // exist is how the wrong booklet gets bound.
   spanish: /^Section B$/i,
+  // LCVP's separately indexed Case Study repeats reading material from the
+  // Exam Paper, which contains the questions for all three written sections.
+  // In 2016 the official filenames use O00/O16, so numeric component fallback
+  // cannot replace these explicit, unique document labels.
+  lcvp: /^Case Study$/i,
 };
 
 /**
