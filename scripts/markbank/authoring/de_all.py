@@ -282,10 +282,22 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
                    f'{year} {level.upper()} paper: "{question[:110]}"')
             continue
 
+        # A note naming points the first list does not have — "(Allow: “Give
+        # tents to people in need” if points 5-8 not given)" under the eight
+        # "Solutions" of 2023 Higher, whose "Why" list has five — belongs to
+        # the list that has them.
+        placed = []
+        for n in ask.notes:
+            pts = re.search(r'\bpoints?\s+\d{1,2}\s*[-–]\s*(\d{1,2})\b', n)
+            size = lambda r: len((r.get('group') or {}).get('options', []))  # noqa: E731
+            home = next((r for r in rows[1:] if pts and size(rows[0]) < int(pts.group(1)) <= size(r)), None)
+            if home is not None:
+                home['contextNote'] = ' '.join(x for x in (home.get('contextNote'), n) if x)
+                placed.append(n)
         rows[0]['contextNote'] = ' '.join(
             [language_note(ask.language)]
             + ([rows[0]['contextNote']] if rows[0].get('contextNote') else [])
-            + [n for n in ask.notes]).strip()
+            + [n for n in ask.notes if n not in placed]).strip()
         # A priced alternative the scheme prints beside an answer is a claim of
         # its own, paid in place of that answer (optionOf), as in listening.
         rows = de_listen._partials(rows)
@@ -454,6 +466,9 @@ def _grammar(P, S, year, level, cards, refuse):
             (f'The scheme prints no mark on these lines; it prices the question '
              f'"{ask.notation}" and says: "{ask.notes[0]}". '
              if ask.notes else
+             f'Every gap is answered; the scheme prints no mark on these lines and '
+             f'prices them together, "{ask.notation}". '
+             if ask.by_rate else
              'Every gap is answered; the scheme prints the mark it pays on each. ')
             + language_note('German'))
         source = {

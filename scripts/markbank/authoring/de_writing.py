@@ -138,7 +138,7 @@ def theme_grid(S, letter):
     [(id, label, marks, [printed lines])] for A, B, C and Dis."""
     starts = [i for i, l in enumerate(S.lines) if re.match(r'^Content = 13 \(A = 3; B = 4; C = 4; Dis\. 2\)', l.strip())]
     at = starts['ab'.index(letter)]
-    end = _find(S, r'^Dis\. 2 marks', at)
+    end = _find(S, r'^Dis\.:? 2 marks', at)       # "Dis.: 2 marks" (2018)
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
@@ -147,7 +147,7 @@ def theme_grid(S, letter):
             cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
             points.append(cur)
             continue
-        if line.startswith('Dis. 2 marks'):
+        if re.match(r'^Dis\.:? 2 marks', line):
             points.append({'id': 'dis', 'label': 'Dis.', 'marks': 2, 'lines': [line]})
             cur = None
             continue
@@ -438,7 +438,11 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     out = []
     # The one expression table: column one is Äußerung's 7 and Schriftliche
     # Produktion's "Lower Ex." 7, column two the full 10.
-    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung zum Thema')
+    # 2018 prints the head over three lines, "Guidelines for marking
+    # Expression in:" / "Äußerung zum Thema (a) and (b)" / "Schriftliche …";
+    # 2017 sets "Äuβerung" with a Greek beta.
+    one, two, nb, ex_at = expression_scale(
+        S, r'^Guidelines for marking Expression in(?:\s+[ÄA]u[ßsβ]{1,2}erung zum Thema|:\s*$)')
     # "… (0-7) for expression." (2022-2026) or "… for expression and write
     # “Lower Ex.” to indicate this." (2021).
     sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark in the Schriftliche',
@@ -459,7 +463,8 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     lines = _lines(S, a_at, a_end)
     head, crit, prompt = [], [], []
     for line in lines:
-        m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line)
+        # "(A2) Jan Kammann: …", or in 2018 "A 2: Dagi Bee: …" / "E 1 Mirko: …".
+        m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line) or re.match(r'^([A-F]) (\d)\b:?\s*(.*)$', line)
         if m:
             crit.append(_criterion(m.group(1).lower(), m.group(1), int(m.group(2)), prompt + [line]))
             prompt = []

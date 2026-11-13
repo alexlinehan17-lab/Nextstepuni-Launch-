@@ -9044,7 +9044,7 @@ export const CARDS: SecCard[] = [
     questionText: "How is he travelling? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “Triathlon” for 2 marks if other answers are not given, in place of “cycling”, never beside it.", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling","Triathlon"],"optionMarks":[2,2,2,2],"optionOf":[null,null,null,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “Triathlon” for 2 marks, in place of “cycling”, never beside it, and only on the condition it prints: “if other answers are not given”.", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling","Triathlon"],"optionMarks":[2,2,2,2],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -80,9 +80,11 @@ def schemes_dir(subject=SUBJECT):
 # "TEXT I: LESEVERSTÄNDNIS (60 marks) (14, 18, 18, 10)" and, at Ordinary,
 # "TEXT I: LESEVERSTÄNDNIS: (60 marks) (17, 22, 16, 5)" — the colon after the
 # word is the Ordinary house style, in all five Ordinary sittings.
+# 2018 Ordinary prints its first total unbracketed: "TEXT I: LESEVERSTÄNDNIS:
+# 60 marks (21, 18, 16, 5)".
 UNIT_LV = re.compile(
     r'^TEXT\s+(I{1,3}|[123])\s*:?\s*LESEVERST[ÄA]NDNIS\s*:?\s*'
-    r'\((\d{1,3})(?:\s*marks?)?\)\s*(?:\(([^)]*)\))?', re.I)
+    r'\(?(\d{1,3})(?:\s*marks?)?\)?\s*(?:\(([^)]*)\))?', re.I)
 # "TEXT I: ANGEWANDTE GRAMMATIK (25)" / "TEXT 1: ANGEWANDTE GRAMMATIK (15 marks)".
 # The SEC sets the text number as a Roman numeral in some years and an Arabic
 # digit in others, inside one document.
@@ -232,7 +234,8 @@ MARK_BOXES = re.compile(r'^(?:\(\d{1,2}\)\s*){2,}$')
 
 # "Any three", "Any THREE details", "Any 3" — the claim count, wherever the SEC
 # puts it in the rate line.
-ANY_N = re.compile(r'^(?:Plus\s+)?Any\s+(\w+)\s*'
+# "(Any TWO of the following details: 3 marks: 2, 1)" (2018 Ordinary).
+ANY_N = re.compile(r'^(?:Plus\s+)?Any\s+(\w+)\s*(?:of\s+the\s+following\s+)?'
                    r'(?:details?|examples?|points?|of)?\s*:?\s*', re.I)
 # A rate spec, in every shape the ten schemes print.
 SPEC_TIMES = re.compile(r'^(\d{1,2})\s*[x×]\s*(\d{1,2})(?:\s*marks?)?$', re.I)
@@ -402,7 +405,9 @@ def read_rate_line(text):
             return got, cnt, m.group(2)
     remark = []
     while True:
-        m = re.search(r'\s*(\([^()]*\))\s*$', s)
+        # One bracket level inside the aside: "(Allow: Er sagt(e) followed
+        # by direct quote.)" (2018 Higher).
+        m = re.search(r'\s*(\((?:[^()]|\([^()]*\))*\))\s*$', s)
         if not m:
             return None, None, None
         remark.insert(0, m.group(1))
@@ -507,7 +512,7 @@ class Ask:
     """One leaf ask, exactly as the scheme prices it."""
 
     __slots__ = ('unit', 'q', 'letter', 'roman', 'total', 'segments', 'notation',
-                 'cue', 'notes', 'language', 'line', 'head_word', 'exhaustive')
+                 'cue', 'notes', 'language', 'line', 'head_word', 'exhaustive', 'by_rate')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -811,6 +816,14 @@ class DeScheme:
                 sum(int(n) for n in re.findall(r'\d{1,2}', g))
                 for g in re.findall(r'\(\s*(\d[\d,\s\-]*)\)', body_text))
         notes = []
+        by_rate = False
+        if (items and not any(i['marks'] for i in items) and steps
+                and len(steps) == len(items) and not COMPOUND_HALVES.search(' '.join(preamble))):
+            # 2018 Ordinary prints the five prepositions bare, "(i) vor",
+            # under "(5 marks: 5 x 1 mark)": five answers, one mark each.
+            for i, step in zip(items, steps):
+                i['marks'] = step
+            by_rate = True
         halves = COMPOUND_HALVES.search(' '.join(' '.join(preamble).split()))
         if (items and not any(i['marks'] for i in items) and halves
                 and steps and set(steps) == {1} and len(steps) == 2 * len(items)
@@ -844,7 +857,7 @@ class DeScheme:
             unit=unit, q=q, letter=None, roman=None, total=total,
             segments=segments, notation=notation,
             cue=' '.join(' '.join(cue).split()), notes=notes, language='German',
-            line=line_no, head_word=None, exhaustive=True))
+            line=line_no, head_word=None, exhaustive=True, by_rate=by_rate))
 
     # -- the leaf -----------------------------------------------------------
     def _emit(self, unit, q, letter, roman, total, clause, block, line_no, word):
@@ -939,6 +952,11 @@ class DeScheme:
                 inline = False
             if m:
                 tail = m.group(2).strip()
+                if inline and re.fullmatch(r'\((?:Allow|Accept|N\.?\s?B)\b[^()]*\)', tail, re.I):
+                    # "Stella: (Allow: sie)" (2018 Higher): the half's heading
+                    # with an aside, the rate printed above it.
+                    notes.append(tail)
+                    tail = ''
                 got, _cnt = read_rate(tail)
                 if got is None and tail:
                     # "Gründe: (Any three: 3 x 2 marks) (Allow Present Tense)"
@@ -946,6 +964,11 @@ class DeScheme:
                     got, _cnt, aside = read_rate_line(tail)
                     if got is not None and aside:
                         notes.append(aside)
+                bare = re.fullmatch(r'\(\s*(\d{1,2})\s*(?:marks?)?\s*\)', tail)
+                if got is None and bare and not inline:
+                    # "Warum? (2)" over "Stella möchte Jason wiedersehen. (2)"
+                    # (2018 Higher): the half priced by a bare mark.
+                    got = [int(bare.group(1))]
                 mark = TRAIL_MARK.search(tail) if inline else None
                 last_seg = segments[-1]
                 if (not tail and got is None and pending is None
@@ -956,6 +979,17 @@ class DeScheme:
                     # heading names the list that rate opened.
                     last_seg['label'] = m.group(1)
                     phase = 'answers'
+                    continue
+                if (got is None and not mark and tail and inline and phase == 'answers'
+                        and not re.match(r'^Any\b', m.group(1), re.I)
+                        and segments[-1]['answers'] == [] and segments[-1]['steps'] is not None
+                        and not NOTE.match(tail) and not MARK_BOXES.match(tail)):
+                    # "Was: Sie möchte sich neben ihn setzen …" / "neben Ihnen
+                    # sitzen?“ (1)" (2018 Higher): a half whose one answer
+                    # starts on its heading's line and is priced where it wraps.
+                    new_segment(m.group(1), None, tentative=True)
+                    cur = {'text': tail, 'n': None}
+                    segments[-1]['answers'].append(cur)
                     continue
                 if got is not None or mark or not tail:
                     phase = 'answers'

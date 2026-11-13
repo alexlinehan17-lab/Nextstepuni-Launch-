@@ -55,6 +55,7 @@ AUDIO = os.path.join(ROOT, 'data', 'germanAudio.json')
 MAX_OPTIONS = 16
 
 Q_HEAD = re.compile(r'^(\d{1,2})\s*\.\s*(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
+Q_ROMAN_HEAD = re.compile(r'^(\d{1,2})\s*\.\s*(\(\s*i\s*\)\s*\(\s*\d{1,3}\s*marks?\b.*)$', re.I)
 R_HEAD = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.*)$', re.I)
 ROMANS = ('i', 'ii', 'iii', 'iv', 'v', 'vi')
 PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$)')
@@ -261,6 +262,14 @@ def scheme_leaves(S, keys):
             cur = (part, int(m.group(1)))
             questions[cur] = [m.group(2), [], i]
             continue
+        # "3. (i) (6 marks: 3 x 2 marks)" (2018 Higher): the question's head
+        # and its first roman's on one line; the question prints no total of
+        # its own, and "(i)" opens its block with its rate.
+        m = Q_ROMAN_HEAD.match(s)
+        if m:
+            cur = (part, int(m.group(1)))
+            questions[cur] = ['', [m.group(2)], i]
+            continue
         if cur is None:
             if s and not PAGE.match(s) and re.search(r'answers?\b.*\bin\b|half marks', s, re.I):
                 rules[part].append(s)
@@ -312,7 +321,10 @@ def scheme_leaves(S, keys):
             if i < 0 and end > 0 and re.match(r'^\(\s*\d{1,3}\s*marks?\s*:', block[end - 1].strip(), re.I):
                 end -= 1
             body = ([rest] if rest.strip() else []) + block[i + 1:end]
-            out[(p, q, roman)] = Leaf(part=p, q=q, roman=roman, total=totals.get(roman),
+            total = totals.get(roman)
+            if total is None and not clause and body and head_total(body[0]) is not None:
+                total = head_total(body[0])      # the roman's own "(6 marks: …)"
+            out[(p, q, roman)] = Leaf(part=p, q=q, roman=roman, total=total,
                                       lines=body, default=defaults.get(roman), rule=rule,
                                       line=line_no + 2 + i, q_total=head_total(clause),
                                       q_split=_steps(clause))
@@ -347,7 +359,13 @@ def _components(text):
             return None
         pieces.append((words, int(m.group(1))))
         pos = m.end()
-    if len(pieces) < 2 or text[pos:].strip():
+    rest = text[pos:].strip()
+    if len(pieces) >= 2 and re.fullmatch(r'\([^()\d]*\)', rest):
+        # "120 (3) million (1) (Euro)" (2018 Ordinary): the unit the answer
+        # may name, in brackets after the last price, belongs to the last part.
+        pieces[-1] = (f'{pieces[-1][0]} {rest}', pieces[-1][1])
+        rest = ''
+    if len(pieces) < 2 or rest:
         return None
     return pieces
 
@@ -406,6 +424,33 @@ def _or_answers(body):
             return body
         out.append(f'• {m.group(1)}')
     return body[:at + 1] + out
+
+
+def _self_priced(it):
+    """A rate whose answers are all required and each prints its own price,
+    as points: "(1+ 2 marks)" over "(a) She wants to do something nice with
+    Max. (1)" and "(b) She wants to have dinner/ meal (1) in (their) favourite
+    restaurant. (1)" (2018 Higher L3 Q4) is a point at 1 and an answer whose
+    two components pay 1 each — not a menu paying 1 for the first claim and 2
+    for the second, whichever they are."""
+    if (it['kind'] != 'group' or not it['steps'] or len(set(it['steps'])) == 1
+            or len(it['options']) != len(it['steps'])):
+        return [it]
+    out = []
+    for opt, step in zip(it['options'], it['steps']):
+        text = ' '.join(opt['text'].split())
+        comps = _components(text)
+        own = _own_price(text)
+        if comps and sum(m for _w, m in comps) == step:
+            out.append({'kind': 'parts', 'text': text, 'marks': step, 'parts': comps,
+                        'label': it['label'], 'notes': list(opt['notes'])})
+        elif own and own[1] == step:
+            out.append({'kind': 'point', 'text': own[0], 'marks': step,
+                        'label': it['label'], 'notes': list(opt['notes'])})
+        else:
+            return [it]
+    out[0]['notes'] = list(it['notes']) + out[0]['notes']
+    return out
 
 
 def _one_of(items, got, total):
@@ -571,7 +616,11 @@ def leaf_rows(leaf, asked_text):
             if m and not re.search(r'\d', m.group(1)) and not re.match(r'^Any\b', m.group(1), re.I):
                 rest = m.group(2).strip()
                 got, _r = rate_line(rest) if rest else (None, None)
-                summary = re.match(r'^\(?\s*\d{1,3}\s*marks?\b', rest, re.I)
+                # "Problem: (1 + (2 x 1) mark)" (2018 Higher) states the
+                # half's whole tariff over a priced answer and the rate below.
+                summary = (re.match(r'^\(?\s*\d{1,3}\s*marks?\b', rest, re.I)
+                           or re.fullmatch(r'\(\s*\d{1,2}\s*\+\s*\(\s*\d\s*x\s*\d\s*\)\s*marks?\s*\)',
+                                           rest, re.I))
                 if got is None and not summary and re.fullmatch(r'\((?!\s*\d)[^()]*\)', rest):
                     # "Das Problem: (Answer in English/Irish: half marks)": a
                     # heading with its remark, which governs the rows under it.
@@ -700,6 +749,7 @@ def leaf_rows(leaf, asked_text):
         sum(sum(x['steps']) for x in items if x['kind'] == 'group')
     if not items:
         return 'the scheme prints no answers this reads for the ask'
+    items = [x for it in items for x in _self_priced(it)]
     if leaf.total is not None and got != leaf.total:
         items, got = _one_of(items, got, leaf.total)
     if leaf.total is None:
@@ -752,6 +802,15 @@ PARTIAL_INLINE = re.compile(
     # points 4-6 not given)" (2020 Higher). A conditional alternative may pay
     # as much as the answer it stands in for.
     r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\))\s*$', re.I)
+
+
+ALLOW_PRICED_NOTE = re.compile(r'\(Allow:?\s*“([^”]+)”\s*for\s+(\w+)\s+marks?\s+(if\b[^()]*?)\)', re.I)
+NUMBER_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
+
+
+def _number_word(word):
+    """2 for "2" or "two", else None."""
+    return int(word) if word.isdigit() else NUMBER_WORDS.get(word.lower())
 
 
 def _inline(m):
@@ -811,6 +870,17 @@ def _partials(rows):
                     alt, n, cond = _inline(m)
                     if int(n) < g['perOption'] or (cond and int(n) <= g['perOption']):
                         said.append((alt, n, len(options) - 1, cond))
+            # A priced alternative printed under the whole list, with the
+            # condition it is paid on: "(Allow “everything” for two marks if
+            # only answer given)" (2021 Higher). It is claimed beside the last
+            # answer printed above it, as an "alone" alternative is.
+            whole = ALLOW_PRICED_NOTE.search(note) if options else None
+            if whole and _number_word(whole.group(2)) is not None:
+                n_ = _number_word(whole.group(2))
+                if n_ <= g['perOption']:
+                    said.append((whole.group(1), str(n_), len(options) - 1, whole.group(3)))
+                    row = {**row, 'contextNote': ' '.join(
+                        (note[:whole.start()] + note[whole.end():]).split())}
             if said:
                 for alt, n, of, _cond in said:
                     options.append(alt)
@@ -818,9 +888,12 @@ def _partials(rows):
                     parents.append(of)
                 row = dict(row)
                 row['group'] = {**g, 'options': options, 'optionMarks': marks, 'optionOf': parents}
-                text = ' '.join(f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}'
-                                f'{f" {cond}" if cond else ""}, in '
-                                f'place of “{options[of]}”, never beside it.' for alt, n, of, cond in said)
+                # The condition is quoted word for word (coordinator ruling,
+                # 13 Nov): the claim cap cannot enforce it, the student must.
+                text = ' '.join(f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}, in '
+                                f'place of “{options[of]}”, never beside it'
+                                + (f', and only on the condition it prints: “{cond}”.' if cond else '.')
+                                for alt, n, of, cond in said)
                 row['contextNote'] = ' '.join(x for x in (row.get('contextNote'), text) if x)
         out.append(row)
     return out
