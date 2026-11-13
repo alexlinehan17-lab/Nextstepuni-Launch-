@@ -58,7 +58,8 @@ sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 from de_paper import DePaper                                   # noqa: E402
-from de_scheme import DeScheme, scheme_grid, GRID_ASK          # noqa: E402
+from de_scheme import DeScheme, scheme_grid, GRID_ASK, _language_of  # noqa: E402
+from paper_census import census_de                             # noqa: E402
 from de_topics import (topic_for, concept_for, language_note,   # noqa: E402
                        TEXT_TITLE)
 from paper_census import census_subject                        # noqa: E402
@@ -67,18 +68,18 @@ import de_writing                                              # noqa: E402
 import cardlint                                                # noqa: E402
 
 SUBJECT = 'german'
-YEARS = (2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+YEARS = (2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
 # The sittings whose reading and grammar asks are carded, and those whose
 # listening asks are (de_listen.py, answered from the SEC recording). A sitting
 # opts in once its cards have been read against its scheme, one commit each.
 READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
-    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol')}
-LISTENING_CARDED = {(2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol')}
+LISTENING_CARDED = {(2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
 # The sittings whose written production (Äußerung zum Thema, Schriftliche
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
-WRITING_CARDED = {(2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+WRITING_CARDED = {(2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
 # The SEC's deferred sittings carded (2022 Higher, the only one the archive
 # holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
 # cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
@@ -122,6 +123,9 @@ INSTRUCTION_WORDS = {
     'corresponds', 'correspond', 'numbers', 'sentences', 'article', 'given',
     'suitable', 'numbered', 'belongs', 'together', 'english', 'whether',
     'irish', 'german', 'text', 'also', 'again', 'one', 'two', 'three',
+    # The Higher matching task's German instruction (2016): "Welche
+    # Satzhälften passen zusammen? Tragen Sie die passenden Buchstaben …"
+    'welche', 'satzhälften', 'passen', 'zusammen', 'tragen', 'buchstaben',
 }
 
 
@@ -144,7 +148,12 @@ def clean_question(text):
 def _fragment_of(part, whole):
     """True where `part` is a line cut out of the longer printed `whole`."""
     a, b = ' '.join(part.split()), ' '.join(whole.split())
-    return len(a) < len(b) and a in b and not re.search(r'[.?!)]$', a)
+    # (Or one cut at its start: "level education. What did Antonia Mandel
+    # decide to do …?" out of "According to Text III, young people have to
+    # make big decisions when they start third level education. …", 2016
+    # Ordinary — the scheme reprints only the second sentence.)
+    return len(a) < len(b) and a in b and (not re.search(r'[.?!)]$', a)
+                                           or bool(re.match(r'^[a-zäöüß]', a)))
 
 
 def instruction_only(printed):
@@ -156,7 +165,10 @@ def instruction_only(printed):
         # English instruction words, but its sentence is not finished: "…
         # Sätze bilden, die auf dem Inhalt von Text II" / "basieren. …"
         # (2017 Higher).
-        unfinished = kept and not re.search(r'[.?!:)]\s*$', kept[-1]) and re.match(r'^[a-zäöüß]', line)
+        # Nor does the one German noun that ends an English one: "Give a
+        # detailed description of Johannes’s" / "Liveprüfung." (2015 Higher).
+        unfinished = kept and not re.search(r'[.?!:)]\s*$', kept[-1]) and (
+            re.match(r'^[a-zäöüß]', line) or re.fullmatch(r'[A-ZÄÖÜ][\wäöüß’-]+\.\s*', line))
         if kept and not (words & INSTRUCTION_WORDS) and not unfinished:
             break
         kept.append(line)
@@ -220,6 +232,8 @@ def build():
             S = DeScheme(year, level, SUBJECT)
             if (year, level) in READING_CARDED:
                 _reading(P, S, year, level, cards, refuse, pairs, by_address)
+                if S.refused_leaves:
+                    _grids(P, S, year, level, cards, set(census_de(SUBJECT, year, level)[0]))
                 _grammar(P, S, year, level, cards, refuse)
             if (year, level) in WRITING_CARDED:
                 cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for))
@@ -314,7 +328,17 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
         # "Solutions" of 2023 Higher, whose "Why" list has five — belongs to
         # the list that has them.
         placed = []
+        for i, seg in enumerate(ask.segments, start=1):
+            if i == 1 or not seg.get('answers'):
+                continue
+            home = next((r for r in rows if r['id'] == f'r-{i}' or r['id'].startswith(f'r-{i}-')), None)
+            for n in seg.get('notes_here', []):
+                if home is not None and n in ask.notes and n not in placed:
+                    home['contextNote'] = ' '.join(x for x in (home.get('contextNote'), n) if x)
+                    placed.append(n)
         for n in ask.notes:
+            if n in placed:
+                continue
             pts = re.search(r'\bpoints?\s+\d{1,2}\s*[-–]\s*(\d{1,2})\b', n)
             size = lambda r: len((r.get('group') or {}).get('options', []))  # noqa: E731
             home = next((r for r in rows[1:] if pts and size(rows[0]) < int(pts.group(1)) <= size(r)), None)
@@ -375,7 +399,29 @@ def _rows_for(ask):
             # them: "(i) 2 marks: 1, 1" over "To travel to Africa (1) when
             # he is 18. (1)" (2019 Ordinary) — each claimed at its price.
             parts = de_listen._components(options[0])
-            if parts and [m for _w, m in parts] == steps:
+            alt = _component_alternative(ask, parts)
+            if alt:
+                # … and the scheme's own cheaper form of one component under
+                # it: "He is not invited (3) to Tatjana's (1) birthday (1)
+                # party (1)" / "N.B.: He is not going (1) to Tatjana's (1) …"
+                # (2016 Ordinary). Each component a claim at its price, the
+                # alternative a partial of the one it replaces (optionOf), as
+                # 2025 Ordinary's "in summer".
+                note, k, (alt_w, alt_m) = alt
+                ask.notes.remove(note)
+                marks = [m for _w, m in parts] + [alt_m]
+                rows.append({'id': f'r-{i}', 'kind': 'anyN',
+                             'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                             'group': {'claimMax': len(parts), 'perOption': max(marks),
+                                       'options': [w for w, _m in parts] + [alt_w],
+                                       'optionMarks': marks,
+                                       'optionOf': [None] * len(parts) + [k]},
+                             'contextNote': (f'The scheme prints this answer as “{options[0]}” and, '
+                                             f'under it, “{note}”: “{alt_w}” is paid in place of '
+                                             f'“{parts[k][0]}”, never beside it.')})
+                continue
+            if parts and ([m for _w, m in parts] == steps or (
+                    len(steps) > 1 and sum(m for _w, m in parts) == sum(steps))):
                 rows.append({'id': f'r-{i}', 'kind': 'criterion',
                              'verbatim': options[0], 'marks': sum(steps),
                              **({'contextNote': f'The scheme heads this answer “{label}”.'}
@@ -408,7 +454,7 @@ def _rows_for(ask):
                 heads = seg.get('labels') or []
                 for k, (kind, text, ps) in enumerate(own, start=1):
                     note = (f'The scheme heads this answer “{heads[k - 1]}”.'
-                            if len(heads) == len(own) else None)
+                            if len(heads) == len(own) and heads[k - 1] else None)
                     row = {'id': f'r-{i}-{k}', 'kind': 'criterion' if kind == 'parts' else 'point',
                            'verbatim': text, 'marks': sum(m for _w, m in ps),
                            **({'contextNote': note} if note else {})}
@@ -485,11 +531,17 @@ def _rows_for(ask):
         notes = []
         if label:
             notes.append(f'The scheme heads this list “{label}”.')
-        elif seg.get('labels'):
-            heads = '”, “'.join(dict.fromkeys(seg['labels']))
-            notes.append(f'The scheme prints these under the headings “{heads}”, '
-                         f'in the order shown; the paper says an answer may draw '
-                         f'on any of them.')
+        elif seg.get('labels') and any(seg['labels']):
+            heads = '”, “'.join(dict.fromkeys(x for x in seg['labels'] if x))
+            if all(re.match(r'^\([a-h]\) ', x) for x in seg['labels'] if x):
+                # Lettered categories (2015 Ordinary TEXT III Q3): what the
+                # answer may draw from them is the scheme's own N.B., quoted.
+                notes.append(f'The scheme prints these under the headings “{heads}”, '
+                             f'in the order shown.')
+            else:
+                notes.append(f'The scheme prints these under the headings “{heads}”, '
+                             f'in the order shown; the paper says an answer may draw '
+                             f'on any of them.')
         if len(steps) == len(options) and trimmed <= 0 and ask.exhaustive:
             notes.append('The scheme pays every one of these; none is optional.')
         if trimmed > 0:
@@ -505,6 +557,101 @@ def _rows_for(ask):
             **({'contextNote': ' '.join(notes)} if notes else {}),
         })
     return rows
+
+
+def _component_alternative(ask, parts):
+    """(note, index, (words, marks)) where a note under a components answer
+    prints the same answer with ONE component cheaper, else None."""
+    if not parts:
+        return None
+    for note in ask.notes:
+        m = re.match(r'^N\.?\s?B\.?:?\s*(.+)$', note)
+        alt = de_listen._components(m.group(1)) if m else None
+        if not alt or len(alt) != len(parts):
+            continue
+        differ = [k for k, (a, b) in enumerate(zip(alt, parts)) if a[0] != b[0]]
+        if (len(differ) == 1 and alt[differ[0]][1] < parts[differ[0]][1]
+                and all(a[1] == b[1] for k, (a, b) in enumerate(zip(alt, parts)) if k not in differ)):
+            return note, differ[0], alt[differ[0]]
+    return None
+
+
+def _grid_rows(grid):
+    """The rows of an answer-grid card: per column, its fixed cells as one
+    criterion ("field — answer" parts at their marks), and each cell that
+    prints a choice of its own as a menu at its own rate."""
+    rows = []
+    for name, cells in grid:
+        fixed = [c for c in cells if c[1] is not None]
+        if fixed:
+            marks = sum(m for _l, _a, m in fixed)
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': name,
+                         'marks': marks, 'permittedMarks': list(range(marks + 1)),
+                         'parts': [{'id': f'p{k}', 'verbatim': f'{label} — {answer}', 'marks': m,
+                                    'permittedMarks': list(range(m + 1))}
+                                   for k, (label, answer, m) in enumerate(fixed, start=1)]})
+        for label, _none, (rate, steps, answers) in (c for c in cells if c[1] is None):
+            group = {'claimMax': len(steps), 'perOption': steps[0], 'options': answers}
+            if len(set(steps)) > 1:
+                group['perOptionSteps'] = steps
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'anyN',
+                         'verbatim': f'{name} — {label} the answers the scheme accepts',
+                         'marks': None, 'group': group,
+                         'contextNote': f'The scheme prints, in {name}’s column: “{rate}”.'})
+    rows[0]['contextNote'] = ' '.join(x for x in (
+        'The scheme answers this in a table, a column for each person and a row for each field; '
+        'each column is a row here, each of its cells a part at its printed mark, and a cell '
+        'that prints a choice of its own is a list.', rows[0].get('contextNote')) if x)
+    return rows
+
+
+def _grids(P, S, year, level, cards, keys):
+    """Cards for the reading asks the scheme answers with a GRID the reader
+    refused (2016 Ordinary TEXT II Q1, 2015 Ordinary TEXT II Q3): found by
+    the grid's own column-head line in the refused block, believed only where
+    every column adds to the share it prints and the columns to the ask."""
+    have = {c['id'] for c in cards}
+    credit = {unit: P.credit(unit) for unit in P.unit_pages if unit.startswith('T')}
+    for key, (total, _clause, block) in sorted(S.refused_leaves.items(), key=str):
+        unit, q, letter, roman = key
+        if not unit.startswith('T') or key not in keys or card_id(year, level, *key) in have:
+            continue
+        grid = None
+        for line in [b.strip() for b in block if b.strip()][:6]:
+            grid = scheme_grid(year, level, None, header=line)
+            if grid:
+                break
+        if not grid or sum((m if a is not None else sum(m[1])) for _n, cells in grid
+                           for _l, a, m in cells) != total:
+            continue
+        hit = P.by_key(unit, q, letter, roman)
+        if hit is None:
+            continue
+        text, page, _s = hit
+        flat = ' '.join(text.split())
+        cut = GRID_ASK.search(flat)
+        end = flat.find('.', cut.end()) + 1 if cut else 0
+        question = clean_question(flat[:end or cut.end()] if cut else instruction_only(text))
+        rows = _grid_rows(grid)
+        language = _language_of(question, None)
+        rows[0]['contextNote'] = f"{language_note(language)} {rows[0]['contextNote']}"
+        card = {
+            'id': card_id(year, level, unit, q, letter, roman),
+            'subjectId': SUBJECT, 'level': LEVEL_WORD[level], 'year': year, 'section': unit,
+            'topicId': topic_for(unit, credit.get(unit)),
+            'conceptId': concept_for(question),
+            'questionRef': question_ref(year, level, unit, q, letter, roman),
+            'questionText': question,
+            'tariffModel': {'kind': 'fixed'},
+            'totalMarks': total,
+            'rows': rows,
+            'notes': (f'The scheme answers this ask with a table, read by its columns; it prices '
+                      f'the ask {total}, and each column the share it prints over itself.'),
+        }
+        source = reading_source(P, unit, language, level, year)
+        if source:
+            card['sourceMaterial'] = source
+        cards.append(card)
 
 
 # ------------------------------------------------------ applied grammar ----
@@ -527,6 +674,10 @@ def _grammar(P, S, year, level, cards, refuse):
             (f'The scheme prints no mark on these lines; it prices the question '
              f'"{ask.notation}" and says: "{ask.notes[0]}". '
              if ask.notes else
+             (f'Every gap is answered; the scheme reprints each sentence with the '
+             f'right preposition in bold, prices them together, "{ask.notation}", '
+             f'and each answer is shown here after its sentence\'s opening words. ')
+             if ask.bold else
              f'Every gap is answered; the scheme prints no mark on these lines and '
              f'prices them together, "{ask.notation}". '
              if ask.by_rate else
