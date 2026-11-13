@@ -109,7 +109,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId === 'maths' ? 'mathematics' : subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
+    'lc', subjectId === 'maths' ? 'mathematics' : subjectId === 'applied-maths' || subjectId === 'lcvp' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
     isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
   )), [paperFileid, source.sourceFileid, source.sourceYear, subjectId, year, isScheme]);
   const regions = useMemo(
