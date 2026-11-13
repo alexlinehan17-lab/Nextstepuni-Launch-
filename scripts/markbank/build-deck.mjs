@@ -761,7 +761,7 @@ const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
 /* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
- * "eng-2022-hl-deferred-q1-a",
+ * "eng-2022-hl-deferred-q1-a", "dcg-2022-hl-deferred-a2a",
  * "hist-2023-hl-deferred-lm-s1-q1a", cited "... — Deferred sitting"): its own
  * paper, scheme and index entry. Physics, Home Economics and Maths mark theirs
  * the same way on codex/home-economics-continuation-20261101. No other
@@ -771,6 +771,7 @@ const DEFERRED_ID = {
   engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
   history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
+  dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1698,7 +1699,8 @@ for (const c of cards) {
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
-        c.level ?? 'higher', source.sourceLabel);
+        c.level ?? 'higher', source.sourceLabel,
+        deferredCard(SUBJECT_ID, c) ? 'deferred' : 'main');
     delete source.sourceLabel;
     if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
     source.sourceFileid = fileid;
@@ -1924,10 +1926,14 @@ for (const c of cards) {
    * the same booklet in four parts, filed L1 to L4. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
+  /* A DCG deferred sitting is two booklets, as June's is: its card opens the
+   * one that prints its section, never simply the entry's first. */
   const fileid = deferredEntry && SUBJECT_ID === 'spanish'
     ? deferredDoc(SUBJECT_ID, c, c.section === 'L' ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
-    ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+    ? (SUBJECT_ID === 'dcg'
+      ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')
+      : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);

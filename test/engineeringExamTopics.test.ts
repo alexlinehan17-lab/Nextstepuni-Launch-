@@ -139,16 +139,20 @@ describe('Engineering exam-topic registry', () => {
       referenceOfficialAssociations: 2921,
       referenceMockAssociations: 1760,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 2287,
-      sourceBlockedAssociations: 634,
+      // The 173 deferred headings (2022 and 2023 Higher) resolve to the
+      // deferred papers since those joined the Atlas: 2287 + 173 matched.
+      matchedAssociations: 2460,
+      sourceBlockedAssociations: 461,
       sourceBlockedBreakdown: {
         beforeLocalCorpus: 363,
-        deferred: 173,
+        deferred: 0,
         sample: 98,
       },
-      matchedLogicalCards: 254,
-      matchedQuestionTopicLinks: 1568,
+      matchedLogicalCards: 270,
+      matchedQuestionTopicLinks: 1675,
       retainedLocalLogicalCards: 0,
+      deferredMatchedAssociations: 173,
+      deferredQuestionsFromReviewOnly: ['2022|2', '2022|7'],
     });
     expect(
       engineeringEvidence.summary.referenceOfficialAssociations
@@ -159,6 +163,13 @@ describe('Engineering exam-topic registry', () => {
     expect(engineeringEvidence.associations.filter(item => (
       item.resolution === 'source-blocked' && item.sitting === 'main'
     )).every(item => item.year < 2010)).toBe(true);
+    // A deferred heading names the deferred paper's question, never June's.
+    const deferredHeadings = engineeringEvidence.associations.filter(item => item.sitting === 'deferred');
+    expect(deferredHeadings).toHaveLength(173);
+    for (const item of deferredHeadings) {
+      expect(item.resolution, item.heading).toBe('matched');
+      expect(item.target?.fileid, item.heading).toBe('LC027ALP000EV-deferred.pdf');
+    }
     expect(engineeringEvidence.summary.emptyReferenceTopics).toEqual([
       'engineering-higher-practical-exam',
       'engineering-higher-project',
@@ -204,21 +215,27 @@ describe('Engineering exam-topic registry', () => {
     }
   });
 
-  it('adds all four 2026 editions without replacing any existing paper', () => {
+  it('adds all four 2026 editions and the two deferred papers without replacing any existing paper', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'engineering');
     expect(engineeringEvidence.summary).toMatchObject({
-      localPaperVariants: 66,
-      localPhysicalMappings: 508,
-      distinctStudentFacingQuestions: 254,
+      localPaperVariants: 68,
+      localPhysicalMappings: 526,
+      distinctStudentFacingQuestions: 272,
       newlyAddedPaperVariants: 4,
       newlyAddedPhysicalMappings: 32,
+      deferredPaperVariants: 2,
+      deferredPhysicalMappings: 18,
       verifiedSchemeMaps: 64,
-      verifiedPaperOnlyMaps: 2,
+      verifiedPaperOnlyMaps: 4,
       preservedBaselineVariants: 62,
       preservedBaselineCards: 476,
     });
-    expect(papers).toHaveLength(66);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(508);
+    expect(papers).toHaveLength(68);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(526);
+    // The SEC's deferred 2022 and 2023 Higher sittings, each its own paper.
+    expect(papers.filter(paper => paper.fileid === 'LC027ALP000EV-deferred.pdf')
+      .map(paper => `${paper.year}|${paper.level}|${paper.lang}|${paper.q.length}`).sort())
+      .toEqual(['2022|higher|ev|9', '2023|higher|ev|9']);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     expect(papers.filter(paper => paper.year === 2026)).toHaveLength(4);
@@ -235,15 +252,36 @@ describe('Engineering exam-topic registry', () => {
         expect(ids.every(id => topics.get(id)?.level === paper.level), (
           `${paperIdentity(paper)} Q${question.n}: ${ids.join(', ')}`
         )).toBe(true);
+        // A deferred paper's questions join on its own file id: without it
+        // the lookup is June's question of the same number.
         expect(examTopicIdsForQuestion(
           'engineering', paper.level, paper.year, 'main', question.n,
-          'single', paper.lang,
+          'single', paper.lang, paper.fileid.endsWith('-deferred.pdf') ? paper.fileid : undefined,
         )).toEqual(ids);
       }
     }
   });
 
-  it('ships finite paper crops and honest scheme boundaries for all 508 cards', () => {
+  it('files each deferred question under its own topics, apart from June\'s', () => {
+    const topicsOf = (fileid: string, year: number, n: string) => {
+      const paper = topicsForPaper('engineering', year, 'higher', 'ev', fileid)!;
+      return browseTopicIdsForQuestion(paper, paper.q.find(question => question.n === n)!);
+    };
+    // The reference heads no part of 2022's deferred Q7 (polymers): its card
+    // review files it, apart from June 2022's Q7.
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7')).toEqual([
+      'engineering-higher-polymers',
+      'engineering-higher-the-structure-of-materials',
+    ]);
+    expect(topicsOf('LC027ALP000EV.pdf', 2022, '7')).not.toEqual(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7'));
+    // Deferred 2023 Q2 (Extended Reality) carries its card review's Health and Safety.
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2023, '2')).toEqual([
+      'engineering-higher-energy-electronics-robotics',
+      'engineering-higher-health-and-safety',
+    ]);
+  });
+
+  it('ships finite paper crops and honest scheme boundaries for all 526 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'engineering');
     let schemeMaps = 0;
     let paperOnlyMaps = 0;
@@ -273,12 +311,13 @@ describe('Engineering exam-topic registry', () => {
         }
       }
     }
-    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 2 });
+    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 4 });
   });
 
-  it('surfaces 254 written questions and preserves all 2269 Mark Bank cards', () => {
+  it('surfaces 272 written questions and preserves all 2269 Mark Bank cards', () => {
+    // 254 June questions and the two deferred papers' 18.
     expect(subjectAtlasStats('engineering')).toMatchObject({
-      questions: 254,
+      questions: 272,
       topics: 74,
       yearMin: 2010,
       yearMax: 2026,

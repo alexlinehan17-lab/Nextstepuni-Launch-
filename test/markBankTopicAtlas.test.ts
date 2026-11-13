@@ -82,7 +82,7 @@ describe('paired Mark Bank / Topic Atlas source reviews', () => {
     expect(reviews.length).toBeGreaterThan(0);
   });
   for (const review of reviews) {
-    describe(`${review.subjectId} ${review.year} ${review.level}`, () => {
+    describe(`${review.subjectId} ${review.year} ${review.level}${review.sitting === 'deferred' ? ' deferred' : ''}`, () => {
       // The pinned sources are the SEC PDFs in the local, gitignored
       // paper-trail-corpus; CI has none. Wherever the corpus is present every
       // pinned file must exist and match, so a missing paper still fails.

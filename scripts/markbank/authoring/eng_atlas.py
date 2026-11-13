@@ -3,6 +3,7 @@
 
     python3 scripts/markbank/authoring/eng_atlas.py 2021 hl            # report
     python3 scripts/markbank/authoring/eng_atlas.py 2021 hl --write    # write the review
+    python3 scripts/markbank/authoring/eng_atlas.py 2022 hl-deferred   # a deferred sitting
 
 The Atlas files each printed QUESTION under topics from a factual reference
 whose headings are part-level ("2021 - Question 1 - Part K"), and each of
@@ -20,6 +21,13 @@ the question (build-engineering-exam-topic-crosswalk.mjs reads the review this
 writes). The review is what test/markBankTopicAtlas.test.ts checks: every card
 of the sitting is bound, every bound topic is the card's level, and the Atlas
 really lists the card's question under it.
+
+A deferred sitting (level token "hl-deferred", eng_deferred) is its own paper
+in the Atlas, "LC027ALP000EV-deferred.pdf": its review binds only its own
+cards ("eng-<year>-hl-deferred-..."), reads only the reference headings the
+crosswalk matched to that paper, and is written as
+engineering-<year>-<level>-deferred.json, sitting "deferred". A June review
+binds only the June cards of its year.
 """
 import argparse
 import collections
@@ -34,6 +42,7 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
+import eng_deferred                                         # noqa: E402
 import eng_residue                                          # noqa: E402
 
 FILEID = {'hl': 'LC027ALP000EV.pdf', 'ol': 'LC027GLP000EV.pdf'}
@@ -76,11 +85,21 @@ def sha(path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('year', type=int)
-    ap.add_argument('level', choices=('hl', 'ol'))
+    ap.add_argument('level', choices=('hl', 'ol', 'hl-deferred', 'ol-deferred'))
     ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
     year, level = args.year, args.level
-    lvl = LEVEL[level]
+    deferred = eng_deferred.is_deferred(level)
+    base = eng_deferred.base_level(level)
+    lvl = LEVEL[base]
+    fileid = FILEID[base].replace('.pdf', '-deferred.pdf') if deferred else FILEID[base]
+    sitting = 'deferred' if deferred else 'main'
+
+    def in_sitting(card_id):
+        # June's ids "eng-2022-hl-..." are a prefix of the deferred sitting's
+        # "eng-2022-hl-deferred-...": a June review leaves those out.
+        return (card_id.startswith(f'eng-{year}-{level}-')
+                and (deferred or not card_id.startswith(f'eng-{year}-{base}-deferred-')))
 
     reference = load('data/examTopics/engineering.json')
     crosswalk = load('data/examTopics/engineering-curriculum-crosswalk.json')
@@ -97,15 +116,17 @@ def main():
         if a['resolution'] != 'matched':
             continue
         tg = a['target']
-        if tg['year'] == year and tg['level'] == lvl and tg['lang'] == 'ev':
+        if (tg['year'] == year and tg['level'] == lvl and tg['lang'] == 'ev'
+                and tg['fileid'] == fileid):
             assoc[tg['questionNumber']].append((a['topicId'], tail_letters(a.get('tail'))))
 
     mod = eng_residue.module(year, level)
     choices = getattr(mod, 'ATLAS', {}) if mod else {}
-    live = deck_ids(level)
+    live = deck_ids(base)
     cards = [c for c in load('scripts/markbank/authored/engineering.json')
-             if c['year'] == year and c['level'] == lvl and c['id'] in live]
-    unbuilt = sorted(i for i in live if i.startswith(f'eng-{year}-{level}-')
+             if c['year'] == year and c['level'] == lvl and c['id'] in live
+             and in_sitting(c['id'])]
+    unbuilt = sorted(i for i in live if in_sitting(i)
                      and i not in {c['id'] for c in cards})
     if unbuilt:
         raise SystemExit(f'deck holds cards the authored file does not: {unbuilt}')
@@ -156,27 +177,29 @@ def main():
             for t, _ in old))
     if review or not args.write:
         return 1 if review else 0
-    paper = f'paper-trail-corpus/exampapers/{year}/{FILEID[level]}'
-    scheme = f'paper-trail-corpus/markingschemes/{year}/{FILEID[level]}'
+    papers, schemes = (('deferredexams', 'deferredmarkingschemes') if deferred
+                       else ('exampapers', 'markingschemes'))
+    paper = f'paper-trail-corpus/{papers}/{year}/{FILEID[base]}'
+    scheme = f'paper-trail-corpus/{schemes}/{year}/{FILEID[base]}'
     added = sum(1 for b in bindings if b.get('addedToQuestion'))
     out = {
         'schemaVersion': 1, 'subjectId': 'engineering', 'year': year, 'level': lvl,
-        'lang': 'ev', 'sitting': 'main', 'paperKey': 'single',
+        'lang': 'ev', 'sitting': sitting, 'paperKey': 'single',
         'reviewedAt': datetime.date.today().isoformat(),
-        'authoringReview': f'scripts/markbank/authoring/eng_residue/y{year}_{level}.py',
+        'authoringReview': f'scripts/markbank/authoring/eng_residue/y{year}_{level.replace("-", "_")}.py',
         'sourceHashes': {paper: sha(paper), scheme: sha(scheme)},
         'expectedRuntimeCards': len(bindings),
-        'reason': (f'{year} {lvl.capitalize()} main English written paper: every one of the '
+        'reason': (f'{year} {lvl.capitalize()} {sitting} English written paper: every one of the '
                    f'{len(bindings)} Mark Bank cards bound to its printed question and to the '
                    f'Atlas topics whose syllabus headings include the card\'s own; {added} '
                    f'bound under a topic the reference did not give the question, each with '
                    f'its review.'),
-        'questions': [{'n': n, 'fileid': FILEID[level], 'topicIds': sorted(questions[n])}
+        'questions': [{'n': n, 'fileid': fileid, 'topicIds': sorted(questions[n])}
                       for n in sorted(questions, key=int)],
         'cards': bindings,
     }
     path = os.path.join(ROOT, 'scripts/markbank/atlas-reviews',
-                        f'engineering-{year}-{lvl}.json')
+                        f'engineering-{year}-{lvl}{"-deferred" if deferred else ""}.json')
     with open(path, 'w', encoding='utf-8') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
         fh.write('\n')

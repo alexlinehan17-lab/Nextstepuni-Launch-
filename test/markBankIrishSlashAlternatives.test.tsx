@@ -42,7 +42,8 @@ describe('slash-joined alternatives as option rows', () => {
         const one = { [irishRowScoreId(criterion.id, part.id, members[0].id)]: 1 };
         const both = { ...one, [irishRowScoreId(criterion.id, part.id, members[1].id)]: 1 };
         expect(irishPartMarks(criterion.id, part, both), card.id).toBe(irishPartMarks(criterion.id, part, one));
-        expect(irishPartMarks(criterion.id, part, one), card.id).toBe(Math.min(part.tariff, members[0].marks));
+        // A ladder prices the point by the ladder (2013 OL A4(b): each printed list is one point), not by its rows' marks.
+        expect(irishPartMarks(criterion.id, part, one), card.id).toBe(part.ladder ? part.ladder[0] : Math.min(part.tariff, members[0].marks));
       }
     }
   });

@@ -243,19 +243,19 @@
     "refsHash": "b8748a474c6a2507"
   },
   "dcg": {
-    "cards": 1220,
-    "contentHash": "d5fef9e9ce4c95e4",
+    "cards": 1284,
+    "contentHash": "5c9495ca47f289d4",
     "coveragePct": 100.0,
-    "covered": 1021,
+    "covered": 1083,
     "excluded": 0,
-    "leaves": 1021,
+    "leaves": 1083,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "0c3fc992a99558ce"
+    "refsHash": "0ffa06bee95d8270"
   },
   "dutch": {
     "cards": 42,
@@ -438,19 +438,19 @@
     "refsHash": "65d66ad3a304022c"
   },
   "irish": {
-    "cards": 3147,
-    "contentHash": "207a7aaa3244dbee",
-    "coveragePct": 97.1,
-    "covered": 3157,
+    "cards": 3231,
+    "contentHash": "5584cdb260e59a87",
+    "coveragePct": 100.0,
+    "covered": 3252,
     "excluded": 0,
     "leaves": 3252,
-    "open": 95,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 30,
       "hash": "9d84f99397f0fb11"
     },
-    "refsHash": "28cf9dd01283648b"
+    "refsHash": "55377fc06aab0b52"
   },
   "italian": {
     "cards": 350,

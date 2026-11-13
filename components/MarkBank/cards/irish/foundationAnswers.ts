@@ -146,10 +146,33 @@ export const foundationAllocation = (cardId: string, criterion: IrishCriterion):
 /** Answer criteria whose guidance is not cut into rows (listed, never guessed). */
 export const FOUNDATION_UNCUT: string[] = [];
 
+/** What a right answer with too much in it earns, as the scheme prints it: "(6 - 2) i gcás freagra ina bhfuil eolas
+ *  iomarcach" (2010), "Iomarcaíocht: abairt sa bhreis: -2 ; dhá abairt sa bhreis: - 4; trí abairt sa bhreis: -6" (2011),
+ *  "Iomarcaíocht: abairt bhreise — pionós −2." (2012), "pionós −2; Véarsa3 ar fad: pionós −4." (2013), "Líne bhreise amháin:
+ *  pionós −2; An véarsa ar fad (-4)." (2014). A row priced whole steps at those marks, where the criterion permits them (set
+ *  from the scheme) and its rows cannot yet reach them (coordinator, 12 Nov: fix the rows, never the permitted marks). */
+const penaltySteps = (allocation: IrishAllocation, permitted: number[]): IrishAllocation => {
+  const notes = allocation.directions.join(' ');
+  const penalties = [...notes.matchAll(/\(\s*(\d+)\s*-\s*(\d+)\s*\)\s*i gcás freagra ina bhfuil eolas iomarcach|(?:sa bhreis:|pionós|ar fad)\s*\(?\s*[-−]\s*(\d+)/g)]
+    .map(match => (match[3] !== undefined ? Number(match[3]) : Number(match[2])));
+  if (!penalties.length) return allocation;
+  const reach = new Set([0, ...allocation.parts.flatMap(part => part.rows.map(row => row.marks))]);
+  const parts = allocation.parts.map(part => ({
+    ...part,
+    rows: part.rows.map(row => {
+      if (row.steps || row.marks !== part.tariff) return row;
+      const added = penalties.map(penalty => row.marks - penalty).filter(value => value > 0 && permitted.includes(value) && !reach.has(value));
+      return added.length ? { ...row, steps: [...new Set([0, ...added, row.marks])].sort((x, y) => x - y) } : row;
+    }),
+  }));
+  return { ...allocation, parts };
+};
+
 /** A Foundation criterion as the bank shows it: an answer criterion with rows is the scheme's official answer. */
 export const foundationCriterion = (cardId: string, criterion: IrishCriterion): IrishCriterion => {
   if ((criterion.guidanceKind as string) !== 'exact-answer') return criterion;
-  const allocation = foundationAllocation(cardId, criterion);
+  const cut = foundationAllocation(cardId, criterion);
+  const allocation = cut && penaltySteps(cut, criterion.permittedMarks);
   if (!allocation) FOUNDATION_UNCUT.push(`${cardId}/${criterion.id}`);
   return { ...criterion, guidanceKind: 'exact', ...(allocation ? { allocation: splitSlashRows(cardId, criterion.id, allocation) } : {}) };
 };

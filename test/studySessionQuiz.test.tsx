@@ -41,6 +41,7 @@ vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new 
 import { CURRICULUM_SPECIFICATIONS } from '@/curriculumRegistry';
 import { CARDS as politicsCards } from '@/components/MarkBank/cards/politics-and-society/higher';
 import StudySessionQuiz from '@/components/study/quiz/StudySessionQuiz';
+import StudySessionCompletion from '@/components/study/StudySessionCompletion';
 import { studyPlannerSample } from '@/data/studyPlannerSamples';
 import { createStudyPlan, readStudyPlan } from '@/services/studyPlanStore';
 import { profilePlanSettings } from '@/services/studyPlanEngine';
@@ -76,6 +77,20 @@ beforeEach(() => {
 });
 
 describe('the quick check', () => {
+  test.each(['leave', 'finish'])('returns focus to the saved confirmation after the real quiz: %s', async action => {
+    mocks.loadCards.mockResolvedValue(cards.slice(0, 1));
+    render(<StudySessionCompletion uid="student-a" subject="Chemistry" seconds={1500} points={30} topicSelection={selection} profileSubjects={profile} quizEnabled onStudyAgain={vi.fn()} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Yes, test me' }));
+    if (action === 'leave') fireEvent.click(await screen.findByRole('button', { name: 'Close practice' }));
+    else {
+      fireEvent.click(await screen.findByRole('button', { name: 'Skip question' }));
+      fireEvent.click(await screen.findByRole('button', { name: /^Done/ }));
+    }
+    await waitFor(() => expect(screen.getByRole('heading', { name: 'Session saved.' })).toHaveFocus());
+    expect(screen.getByLabelText('Session details')).toHaveTextContent('+30JP');
+    expect(mocks.commitReview).not.toHaveBeenCalled();
+  });
+
   test('answers first, then marks against the scheme, then returns to the saved session', async () => {
     const onDone = vi.fn();
     render(<StudySessionQuiz uid="student-a" subject="Chemistry" topicSelection={selection} profileSubjects={profile} onDone={onDone} onSkip={vi.fn()} now={() => 1_700_000_000_000} />);

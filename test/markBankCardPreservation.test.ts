@@ -1392,9 +1392,11 @@ const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMA
 const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
 /* Design & Communication Graphics (the 2010-2018 lane, from 2026-11-05):
  * every 2010-2018 card is an addition on top of the frozen 2019-2026 set,
- * never a replacement -- those sittings had no card at all before. Pinned per
- * level, count and id hash, beside the frozen set (dcgAdditions below). */
-const isDcgAdded = (id: string) => /^dcg-201[0-8]-/.test(id);
+ * never a replacement -- those sittings had no card at all before. So is
+ * every card of the SEC's deferred sittings ("dcg-2022-hl-deferred-...",
+ * from 2026-11-12), each its own paper. Pinned per level, count and id hash,
+ * beside the frozen set (dcgAdditions below). */
+const isDcgAdded = (id: string) => /^dcg-201[0-8]-/.test(id) || /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
   .reduce((sum, counts) => sum + counts[level], 0);
 
@@ -2096,7 +2098,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 396, '6c6503b5668af936a2af5746c53a507656a6c16e0388385740142fc6ae654d21'],
+  higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
   ordinary: [DCG_ORDINARY, 279, '3c74ae028f53f1678bd4ba6792c99a55c47f0e34116f4e99401a73d377d1a18a'],
 } as const;
 const peAdditions = {
@@ -2181,7 +2183,7 @@ describe('Mark Bank card preservation', () => {
     for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
   });
 
-  it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 additions beside the frozen set', (_, [cards, count, hash]) => {
+  it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 and deferred additions beside the frozen set', (_, [cards, count, hash]) => {
     // Added sitting by sitting, each a card per priced unit of the scheme
     // against the census's printed asks (reconcile.py dcg): 2018 Higher 48
     // cards for its 39 asks (B-1(a), C-1(a) and C-5(a) are priced in named
@@ -2209,6 +2211,10 @@ describe('Mark Bank card preservation', () => {
     // 2010 Higher 41 for its 31 (B-1(b) under three heads, C-1(a) in four
     // pieces, C-5(a) in seven named groups); 2010 Ordinary 30 for its 23
     // (B-1 under two heads, C-4(a) under two, C-5 in six named groups).
+    // The deferred sittings, Higher only: 2022 32 cards for its 30 asks
+    // (B-3 priced whole, one card for (a) and (b); C-5 in seven named groups);
+    // 2023 32 for its 32 (C-1(a) in four earthworks pieces; C-4(a)(i)-(ii)
+    // one unit, C-1(b)(i)-(iii) one unit).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -2741,7 +2747,7 @@ describe('Mark Bank card preservation', () => {
     expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishRoutes].sort());
     const deferred = (cards: readonly { id: string }[]) => cards.filter(card => irishDeferredIds.has(card.id)).length;
-    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([280, 300]);
+    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([364, 300]);
     expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size + deferred(IRISH_HIGHER));
     expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishOrdinaryRoutes].sort());
