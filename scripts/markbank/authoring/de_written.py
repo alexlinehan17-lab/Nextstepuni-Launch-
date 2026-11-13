@@ -162,6 +162,22 @@ def _leaf(unit, q, letter, roman, total, default, body, keys, remap, out):
                       default=default, rule='', line=0, q_total=None, q_split=None)
 
 
+# The place in the text an ask is answered from closes it: "(Par. 6)".
+ADDRESS_END = re.compile(r'\((?:Par\.|Alt|lines?|Zeilen?|Absatz|Abschnitt)[^)]*\)\s*$', re.I)
+
+
+def _to_address(text):
+    """The ask up to its address, where a lettered list printed after it is the
+    next question's: the deferred 2022 Q3(b) "… (Par. 6)" ran on into Q4's
+    sentence halves "a. bis er das Gemüse ernten kann. b. …", set in the same
+    column on the page below."""
+    lines = text.split('\n')
+    for i, line in enumerate(lines[:-1]):
+        if ADDRESS_END.search(line) and re.match(r'^[a-h]\.\s', lines[i + 1].strip()):
+            return '\n'.join(lines[:i + 1])
+    return text
+
+
 def cards(year, level, sitting, card_id, question_ref, concept_for, refuse, keys):
     """Reading cards for one sitting's census keys (T units)."""
     from de_all import reading_source, UNIT_NAME
@@ -187,6 +203,8 @@ def cards(year, level, sitting, card_id, question_ref, concept_for, refuse, keys
         from de_all import instruction_only, clean_question
         # One line, as June's reading cards are; a matching task keeps its
         # instruction only (the table is on the pages the card carries).
+        if not isinstance(leaf, tuple):
+            text = _to_address(text)
         text = (instruction_only(text) if isinstance(leaf, tuple) else ' '.join(text.split()))
         text = clean_question(text.replace('\uf0b7', '•'))
         rows = None

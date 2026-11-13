@@ -229,7 +229,7 @@ export const CARDS: SecCard[] = [
     questionText: "What happens on Easter Sunday and how might this help Leonora? (lines 73 – 84)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “What”.", group: {"claimMax":1,"perOption":2,"options":["Her aunt/Inge and uncle/Gerhard visit N.B. Only 1 person mentioned: 1 mark","Her aunt/Inge asks Leonora what she thinks about Texas / her parents’ plan.","Leonora says she is staying / not going to Texas with her parents.","Her mother decorated the table with small chocolate eggs.","She baked an Easter cake. / They have an Easter cake."]} },
+    { id: "r-1", kind: "anyN", verbatim: "What: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “What”. The scheme allows “Only 1 person mentioned” for 1 mark, in place of “Her aunt/Inge and uncle/Gerhard visit”, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Her aunt/Inge and uncle/Gerhard visit","Her aunt/Inge asks Leonora what she thinks about Texas / her parents’ plan.","Leonora says she is staying / not going to Texas with her parents.","Her mother decorated the table with small chocolate eggs.","She baked an Easter cake. / They have an Easter cake.","Only 1 person mentioned"],"optionMarks":[2,2,2,2,2,1],"optionOf":[null,null,null,null,null,0]} },
     { id: "r-2", kind: "point", verbatim: "(Her aunt suggests) Leonora could move in with Sabine.", marks: 2, contextNote: "The scheme heads this answer “How”." },
     ],
     sourceMaterial: {
@@ -468,7 +468,7 @@ export const CARDS: SecCard[] = [
     questionText: "How can you keep fit and save money? Give details. (Tipp 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":4,"options":["Any THREE details: 9 marks: 4, 3, 2,","Don’t go to the gym/a fitness centre.","Play sport/exercise outside.","Go running/jogging.","Universities/colleges offer free sport programmes.","Play in a team.","Try out a new sport.","Eat healthy food.","You don’t need expensive protein shakes.","Eat meat/vegetables/fruit/tofu/nuts. N.B. TWO correct items needed"],"perOptionSteps":[4,3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":4,"options":["Don’t go to the gym/a fitness centre.","Play sport/exercise outside.","Go running/jogging.","Universities/colleges offer free sport programmes.","Play in a team.","Try out a new sport.","Eat healthy food.","You don’t need expensive protein shakes.","Eat meat/vegetables/fruit/tofu/nuts. N.B. TWO correct items needed"],"perOptionSteps":[4,3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -706,7 +706,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is her overall feeling about where she lives? (Par. 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She feels at home. N.B. She likes it: 1 mark", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme allows “She likes it” for 1 mark, in place of the answer above, never beside it.", group: {"claimMax":1,"perOption":2,"options":["She feels at home.","She likes it"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1591,7 +1591,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe Frau Faller’s cuckoo clocks. Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":3,"options":["(They come in) different sizes","They run for one day / for eight days","They have to be wound up","A cuckoo calls every hour/on the hour","(There are also clocks) with music","(There are clocks with) a dance group/ with (four) dancing figurines/figures","(There are clocks with) a Black Forest house/ forest animals","People can make individual requests","A client wanted a clock with dinosaurs"],"perOptionSteps":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” N.B. Allow points (a), (b) and (e) from Q.3 if marks not already awarded for these points in Q. 3.", group: {"claimMax":2,"perOption":3,"options":["(They come in) different sizes","They run for one day / for eight days","They have to be wound up","A cuckoo calls every hour/on the hour","(There are also clocks) with music","(There are clocks with) a dance group/ with (four) dancing figurines/figures","(There are clocks with) a Black Forest house/ forest animals","People can make individual requests","A client wanted a clock with dinosaurs"],"perOptionSteps":[3,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1626,7 +1626,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where can Frau Faller’s cuckoo clocks be purchased? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":4,"options":["In her/their (2) shop (2)","In the clock (2) museum (2)","On their/her website // falleruhren.de N.B. Fully correct web address must be given"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme allows “Website/online” for 2 marks, in place of “On their/her website // falleruhren.de N.B. Fully correct web address must be given”, never beside it.", group: {"claimMax":2,"perOption":4,"options":["In her/their (2) shop (2)","In the clock (2) museum (2)","On their/her website // falleruhren.de N.B. Fully correct web address must be given","Website/online"],"optionMarks":[4,4,4,2],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1799,7 +1799,7 @@ export const CARDS: SecCard[] = [
     id: "de-2021-ol-l2-3", topicId: "german-4-1", conceptId: "phone-number-caller",
     section: "L2", questionRef: "2021 OL Section L2 Q3",
     stem: "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
-    questionText: "What is the name and the phone number of the caller? – ________________________________________",
+    questionText: "What is the name and the phone number of the caller?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "W-E-B-E-R", marks: 4, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme heads this answer “Name”. Deduct 1 mark for each incorrect/missing letter.", permittedMarks: [0,1,2,3,4] },
@@ -3991,7 +3991,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why are youth hostels so popular? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “cheap” for 1 mark, in place of “(Usually) cheaper than hotels”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["(Usually) cheaper than hotels","Central / in the centre","In a nice area","Meeting place","Meet/get to know people from all over the world/many countries","Come into contact with other culture(s)","Learn respect","Learn tolerance","cheap"],"optionMarks":[3,3,3,3,3,3,3,3,1],"optionOf":[null,null,null,null,null,null,null,null,0]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “cheap” for 1 mark, in place of “(Usually) cheaper than hotels”, never beside it. The scheme allows “meet new people/friends” for 1 mark, in place of “Meet/get to know people from all over the world/many countries”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["(Usually) cheaper than hotels","Central / in the centre","In a nice area","Meeting place","Meet/get to know people from all over the world/many countries","Come into contact with other culture(s)","Learn respect","Learn tolerance","cheap","meet new people/friends"],"optionMarks":[3,3,3,3,3,3,3,3,1,1],"optionOf":[null,null,null,null,null,null,null,null,0,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4521,7 +4521,7 @@ export const CARDS: SecCard[] = [
     questionText: "How is he travelling? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “Triathlon” for 2 marks if other answers are not given, in place of “cycling”, never beside it.", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling","Triathlon"],"optionMarks":[2,2,2,2],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7692,7 +7692,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Hallstatt a place of interest for tourists and what is the result of this? Give details. (Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hallstatt was used as the inspiration / an idea for Elsa’s kingdom.", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Why”. N.B. Because of Frozen II = 1 mark only N.B. Frozen II was filmed / made there = 0 marks" },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Why”. N.B. Frozen II was filmed / made there = 0 marks. The scheme allows “Because of Frozen II” for 1 mark, in place of the answer above, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Hallstatt was used as the inspiration / an idea for Elsa’s kingdom.","Because of Frozen II"],"optionMarks":[2,1],"optionOf":[null,0]} },
     { id: "r-2", kind: "anyN", verbatim: "What: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “What”.", group: {"claimMax":1,"perOption":2,"options":["Lots of / many / 10.000 tourists / visitors / people.","… squeeze through narrow streets / alley ways.","… wearing Elsa/ice princess costumes / Elsa’s dress."]} },
     ],
     sourceMaterial: {

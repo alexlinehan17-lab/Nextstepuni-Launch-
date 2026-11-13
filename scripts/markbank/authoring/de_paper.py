@@ -109,7 +109,11 @@ FURNITURE = re.compile(
     r'Thall\s*/|Page \d+$|\d{1,3}$|Bileog|Freagair\b|Answer\s+(?:Question|Text|'
     r'either|question|Questions)|Treoracha\s*$|Instructions\s*$|N[ÓO]/OR\s*$|'
     r'ODER\s*$|OR\s*$|N[óo]ta\s*:|Note\s*:|Sampla\b|Example\s*:|Beispiel\s*:|'
-    r'Lesen Sie\b|Bearbeiten Sie\b|Quellen\s*:|Nach\s*:)', re.I)
+    r'Lesen Sie\b|Bearbeiten Sie\b|Quellen\s*:|Nach\s*:|'
+    # The blank page's title and the running head of 2021, read into the ask
+    # above them. (Never a rule of underscores: a gap-fill line opens with its
+    # gap, "________ hat, ist in Gefahr.")
+    r'Leathanach\s+B[áa]n|Blank\s+Page|(?:An\s+)?Ardteistim[ée]ireacht,?\s*\d{4})', re.I)
 
 # The instruction line that names the language an ask must be answered in. The
 # paper states it, in both of its own languages, above the questions it governs.
@@ -602,7 +606,7 @@ class DePaper:
                     text = ' '.join(w for _x, w in ws)
                     for glyph, char in GLYPHS.items():
                         text = text.replace(glyph, char)
-                    if re.fullmatch(r'[_.\s]+', text) or NOW_ANSWER.match(text):
+                    if re.fullmatch(r'[–\-]?[_.\s]+', text) or NOW_ANSWER.match(text):
                         continue             # an answer rule; "Now answer Question 2."
                     out.append((pno + 1, text, [x for x, _w in ws]))
         return out
@@ -684,8 +688,9 @@ GLYPHS = {'\uf0fc': '✓', '\uf050': '✓', '\uf0b7': '•'}
 BLANK_PAGE = re.compile(r'There is no examination material on this page|'
                         r'Do not write on this page|Copyright notice|Blank\s+Page|Leathanach\s+B[áa]n', re.I)
 NOW_ANSWER = re.compile(r'^Now answer Question\b', re.I)
-# The running foot of every listening page.
-AURAL_FOOT = re.compile(r'^(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'
+# The running foot of every listening page — in 2020 with the page number
+# before it on the same line ("3 Scrúdú na hArdteistiméireachta, 2020").
+AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'
                         r'Leaving Certificate Examination|Scr[úu]d[úu] na)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
