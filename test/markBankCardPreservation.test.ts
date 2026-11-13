@@ -1373,7 +1373,9 @@ const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPA
 const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 45, ordinary: 57 },
 };
-const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {};
+const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 23, ordinary: 0 },
+};
 const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-l[1-4]-/;
 const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (
   Number(id.slice(3, 7)) in GERMAN_ADDED
