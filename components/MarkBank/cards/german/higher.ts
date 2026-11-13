@@ -2568,6 +2568,783 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-1-i", topicId: "german-4-0", conceptId: "wladimir-kaminer-author-about-his-personal",
+    section: "L1", questionRef: "2024 HL Section L1 Q1(i)",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Wladimir Kaminer is an author. Give details about his personal life.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":4,"perOption":1,"options":["He is Russian/from Russia/from Moscow","He studied drama/theatre studies.","He worked in radio/theatre.","He lives in Berlin/ Here for 35 years/since 1990.","He is married.","He has 2 children/a son and a daughter"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-1-ii", topicId: "german-4-0", conceptId: "language-does-wladimir-kaminer-use-his",
+    section: "L1", questionRef: "2024 HL Section L1 Q1(ii)",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What language does Wladimir Kaminer use for his writing and why?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "German", marks: 1, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme heads this answer “Language”." },
+    { id: "r-2", kind: "anyN", verbatim: "Why: the answers the scheme accepts", marks: null, group: {"claimMax":3,"perOption":1,"options":["He has been living in Berlin for (almost) 35 years.","He has learned German.","He has integrated into German society.","It’s normal for him to speak German/ write in German.","He can express German humour better in German.","Most of his readers are Germans"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-2", topicId: "german-4-0", conceptId: "wladimir-kaminer-deals-with-different-themes",
+    section: "L1", questionRef: "2024 HL Section L1 Q2",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Wladimir Kaminer deals with different themes in his books. Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":4,"perOption":1,"options":["life / experiences of Russians (immigrants) in Germany","migration","identity","cultural differences","history","politics"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-3", topicId: "german-4-0", conceptId: "people-wladimir-kaminer-books-often-face",
+    section: "L1", questionRef: "2024 HL Section L1 Q3",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "The people in Wladimir Kaminer’s books often face serious issues. Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["People don’t have an easy life // Life is hard","…face / experience prejudices","… clichés","… stereotyping"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-4", topicId: "german-4-0", conceptId: "about-wladimir-kaminer-book-russendisko",
+    section: "L1", questionRef: "2024 HL Section L1 Q4",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Give details about Wladimir Kaminer’s book Russendisko.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":4,"perOption":1,"options":["made him famous","his first book","published in 2000","set in Berlin/shortly after the fall of the Berlin Wall","very successful","about friendship","about love","about adventure","about dreams","about the search for happiness (luck = 0)","was made into a film in 2012"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l1-5", topicId: "german-4-0", conceptId: "wladimir-kaminer-books-very-popular-internationally",
+    section: "L1", questionRef: "2024 HL Section L1 Q5",
+    stem: "(Interview with Wladimir Kaminer) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Wladimir Kaminer’s books are very popular internationally. Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme pays every one of these; none is optional.", group: {"claimMax":2,"perOption":2,"options":["They have been translated into more than 60 languages / English, French, Spanish, Italian, Greek (must have 3 languages). (It is = 0)","They are often on bestseller lists. (It is = 0)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l2-1", topicId: "german-4-1", conceptId: "down-german-key-information-recipient-call",
+    section: "L2", questionRef: "2024 HL Section L2 Q1",
+    stem: "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "Write down in German the key information the recipient of the call puts in her note of the conversation. Write key phrases, not full sentences. The note should contain:\n• the name of the person making the call\n• details of the problem the caller reports\n• details regarding the outcome\n• the caller’s phone number",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "K-A-I-S-E-R", marks: 2, contextNote: "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” The scheme heads this answer “Anruf von”. All or nothing." },
+    { id: "r-2", kind: "point", verbatim: "Nachbarn", marks: 1, contextNote: "The scheme heads this answer “Problem”." },
+    { id: "r-3", kind: "anyN", verbatim: "Problem: the answers the scheme accepts", marks: null, group: {"claimMax":3,"perOption":1,"options":["Es ist laut /So ein Lärm","haben/feiern laute Partys/feiern die ganze Nacht durch","Partys jede Nacht","jedes Wochenende Leute zu Besuch","laute Musik","Gäste laufen ständig Treppe rauf und runter","Gäste plaudern/lachen laut","Ruhestörung","kann (nachts) nicht schlafen","muss morgens früh aufstehen/muss zur Arbeit gehen (fahren)","hat versucht, mit den Nachbarn zu sprechen","Nachbarn nehmen keine Rücksicht","(Nachbarn) verstehen das Problem nicht"]} },
+    { id: "r-4", kind: "point", verbatim: "bekommt einen Besuch von der Polizei", marks: 2, contextNote: "The scheme heads this answer “Der Anrufer”." },
+    { id: "r-5", kind: "point", verbatim: "0173 - 56 42 908", marks: 2, contextNote: "The scheme heads this answer “Kontaktnummer”. All or nothing." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l2-2", topicId: "german-4-1", conceptId: "listening-phone-call-third-time-down",
+    section: "L2", questionRef: "2024 HL Section L2 Q2",
+    stem: "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "In listening to the phone call for the third time, write down three examples of the language used (= expressions and phrases) which show that the caller is annoyed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” For the whole question the scheme prints: “Any three; no marks for tone of voice/intonation without reference to specific expressions and phrases. Allow: accurate/exact phrase or accurate paraphrase of expressions in translation:”.", group: {"claimMax":3,"perOption":2,"options":["Ich möchte mich (über meine neuen Nachbarn) beschweren. / I want to make a complaint (about my new neighbours).","(Es ist) schrecklich laut. / (It is) terribly loud.","So ein Lärm! / Such noise!","Wegen dieser Ruhestörung… / Because of this disturbance of the peace…","Es ist wirklich schrecklich. / It is really terrible.","Einfach unerträglich! / Simply unbearable!","Noch schlimmer... / Even worse...","Das kann so nicht weitergehen! / That cannot continue!","Ich halte es nicht mehr aus. / I can‘t stand it any longer.","Ich brauche Hilfe von der Polizei! / I need help from the police!","Sie nehmen keine Rücksicht / They show no consideration.","Ich habe die Nase voll!/ I am sick of this! / I am fed up with this!","Das ist die (reinste) Hölle! / It’s (pure) hell!"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-1-i", topicId: "german-4-2", conceptId: "conversation-between",
+    section: "L3", questionRef: "2024 HL Section L3 Q1(i)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Tick (✓) the correct box. Tick one box only. The conversation is between:",
+    questionChoices: ["two neighbours","a university lecturer and","student","two university students","a father and daughter"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A father and daughter", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-1-ii", topicId: "german-4-2", conceptId: "find-indications-conversation-support-choice",
+    section: "L3", questionRef: "2024 HL Section L3 Q1(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Find two indications in the conversation to support your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. (Allow apt German quotation)", group: {"claimMax":2,"perOption":2,"options":["calls him ‘’Papa’’/dad (Oh Papa)","I really thought (Heidi) I could trust my child (Ich dachte wirklich Heidi, ich könnte meinem Kind vertrauen)","Don’t get angry, dad (Reg‘ dich bitte nicht auf, Papa)","...that my father is not home (…, dass mein Vater nicht zu Hause ist…)","my daughter...(Meine Tochter...)","(I’m) Sorry, dad (Tut mir leid, Vati)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-2-i", topicId: "german-4-2", conceptId: "following-words-best-describes-man-feelings",
+    section: "L3", questionRef: "2024 HL Section L3 Q2(i)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Tick (✓) the correct box. Tick one box only. Which of the following words best describes the man’s feelings about the situation?",
+    questionChoices: ["angry","worried","happy","relieved"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "angry", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-2-ii", topicId: "german-4-2", conceptId: "down-from-conversation-support-choice",
+    section: "L3", questionRef: "2024 HL Section L3 Q2(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Write down two details from the conversation to support your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. (Allow apt German quotation.)", group: {"claimMax":2,"perOption":2,"options":["Oh no, what’s going on here? (Oh je! Was ist denn hier los?)","What’s with the rubbish//empty pizza boxes/crips bags/beer bottlers/cans/cigarette butts/full ashtrays (Two details needed) (Was ist mit dem Müll, der hier überall rumliegt? Leere Pizzakartons und Chipstüten, Bierflaschen und Getränkedosen, Zigarettenkippen in den Blumentöpfen und volle Aschenbecher...)","(House) stinks/smells of smoke/beer (Das ganze Haus stinkt nach Rauch/Bier)","That’s the last straw (Das ist die (absolute) Höhe)","Heidi, I really thought that I could trust my child (Ich dachte wirklich Heidi, ich könnte meinem Kind vertrauen)","I shouldn‘t be angry? (Ich soll mich nicht aufregen?)","Why are all these people lying around in the sitting room/on the floor/on the sofa/ (Warum liegen all diese Leute hier im Wohnzimmer herum? Und hier auf dem Boden? Auf dem Sofa?","And they’re still sleeping at 4 pm in the afternoon! Und sie schlafen alle noch. Und das um 4 Uhr nachmittags.)","This is not on/You cannot carry on like this (Aber so geht das wirklich nicht, Heidi)","This is a disgrace. (Das ist eine Unverschämtheit!)","(And now all this) chaos (here) (Und jetzt dieses Chaos hier)","This is all very annoying (Das nervt mich alles)","I am so annoyed. (Ich bin so sauer)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-3-i", topicId: "german-4-2", conceptId: "does-man-find-returning-home",
+    section: "L3", questionRef: "2024 HL Section L3 Q3(i)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What does the man find on returning home? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":1,"options":["There is rubbish everywhere. // (Empty) pizza boxes, crisp bags, beer bottles, drink cans. (NB: Two details needed)","cigarette butts in flower pots","full ashtrays (on the ground)","It smells/stinks of smoke and beer.","People are lying around/ sleeping in the sitting room/on the floor/on the sofa (at 4 pm in afternoon)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 3(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-3-ii", topicId: "german-4-2", conceptId: "does-woman-explain-situation",
+    section: "L3", questionRef: "2024 HL Section L3 Q3(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "How does the woman explain the situation? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":1,"options":["They are her friends (from university). (a friend = 0)","There were no late trains/trains after the concert.","He/her father was away/wasn’t at home.","Her friends needed a place to stay // She invited friends to come home with her."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 3(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l3-4", topicId: "german-4-2", conceptId: "situation-resolved",
+    section: "L3", questionRef: "2024 HL Section L3 Q4",
+    stem: "You will now hear a conversation between a man and a woman. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "How is the situation resolved? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["She and her friends are going to get the house back in order","…pick up/take out the rubbish (to the (rubbish) bin)","…tidy up sitting room","…clean the (whole) house","He/the dad/father is going to/visit a neighbour/Christian // He’ll be back in an hour and expects the house to be tidy","He expects her friends to be gone","They’ll talk about it tomorrow"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 4",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-1-i", topicId: "german-4-3", conceptId: "can-new-app-help-with-growing",
+    section: "L4", questionRef: "2024 HL Section L4 Q1(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "How can a new app help with a growing problem in German cities?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "finding a (perfect) flatmate / person to share with", marks: 2, contextNote: "Answer this one in German." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-1-ii", topicId: "german-4-3", conceptId: "information-required-register-app",
+    section: "L4", questionRef: "2024 HL Section L4 Q1(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "What information is required to register on the app? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["age","job / profession","hobbies","taste in music"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-2", topicId: "german-4-3", conceptId: "karneval-kulturen-festival-taking-place-berlin",
+    section: "L4", questionRef: "2024 HL Section L4 Q2",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "The Karneval der Kulturen festival is taking place in Berlin. Give details about the event.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["is back after the pandemic","since 1996","It’s a street festival","held every year","at the end of May","four days long","street theatre","parades","food from around the world","music from around the world","celebrates cultural diversity / tolerance","(approx.) one million visitors (expected)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-3-i", topicId: "german-4-3", conceptId: "has-german-couple-decided-spend-retirement",
+    section: "L4", questionRef: "2024 HL Section L4 Q3(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "Why has a German couple decided to spend their retirement on a cruise ship? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It’s cheaper than renting","One never has to cook/prepare a meal.","It never gets boring// live shows/Hula Hoop dancing/swimming pool/sauna/gym or fitness studio on board (NB: Two details needed)","no housework/housekeeping // no cleaning, making beds and mowing lawns. (NB: Two details)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-3-ii", topicId: "german-4-3", conceptId: "disadvantages",
+    section: "L4", questionRef: "2024 HL Section L4 Q3(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "What are the disadvantages? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["visiting the same places again and again. // They have visited Barcelona 23 times (already)","discussing/talking about the same topics again and again (in the evening/at the dinner table)","having to say goodbye to any nice people (they met on board) after a week"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-4-i", topicId: "german-4-3", conceptId: "weather-forecast-northern-germany",
+    section: "L4", questionRef: "2024 HL Section L4 Q4(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast for Northern Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":1,"options":["storm warning","(strong) winds from Northeast","up to 120 km/h","Day: 8 to 10 degrees","Night: 4 degrees","might be / possibly heavy showers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2024 Higher Level — © State Examinations Commission.",
+    id: "de-2024-hl-l4-4-ii", topicId: "german-4-3", conceptId: "weather-forecast-southern-germany",
+    section: "L4", questionRef: "2024 HL Section L4 Q4(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast for Southern Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":1,"options":["sunshine/sunny","dry","Day/Max. (around) 14 degrees","night: fog/foggy","night: mild"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2024 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2024 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC011ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2025 Higher Level — © State Examinations Commission.",

@@ -78,7 +78,8 @@ TICK_LINE = re.compile(r'Tick\s*\(✓\)\s*the correct (?:box|answer)\.?\s*(?:Tic
 # countries: 185 (1)", "Day: Saturday/20th January (3 marks)". At most four
 # words, the first capitalised, no digit.
 LABEL = re.compile(r'^([A-ZÄÖÜ][A-Za-zÄÖÜäöüß’\']*(?:\s+[A-Za-zÄÖÜäöüß’\']+){0,3})\s*:\s*(.*)$')
-LABEL_ALONE = re.compile(r'^(Der Anrufer|Die Anruferin|Problem|Grund des Anrufs)\s*:?\s*$')
+LABEL_ALONE = re.compile(r'^(Der Anrufer|Die Anruferin|Problem|Grund des Anrufs|'
+                         r'Why|What|How|Where|When|Who)\s*[?:]?\s*$')
 
 # A list marker at the head of an answer line.
 MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–])|(\d{1,2})\s*\.(?!\d))\s*(.*)$')
@@ -97,7 +98,7 @@ def _term(seg):
     """What one printed term of a split is worth: "2 x 2 marks" 4, "3, 1" 4,
     "1 + 3x1 marks" 4, "4 marks (1, 1 mark, 2 marks)" 4."""
     s = ' '.join((seg or '').split()).strip(' :;,.()')
-    m = re.match(r'^(\d{1,3})\s*marks?\b', s, re.I)
+    m = re.match(r'^(\d{1,3})\s*marks?\s*(?:[(:.]|$)', s, re.I)
     if m:
         return int(m.group(1))
     s = re.sub(r'^Any\s+(?:other\s+)?\w+\s*:?\s*', '', s, flags=re.I)
@@ -146,6 +147,13 @@ def rate_line(s):
     if got is not None:
         return got, None
     inner = s[1:-1].strip() if s.startswith('(') and s.endswith(')') else s
+    # "(Any two. Allow apt German quotation: 2 x 2 marks)" (2023 Higher): the
+    # remark sits between the claim count and its rate.
+    m = re.match(r'^(Any\s+\w+)\s*\.\s*(.+?)\s*:\s*(\d.*\bmarks?)$', inner, re.I)
+    if m:
+        got = _steps(f'{m.group(1)}: {m.group(3)}')
+        if got is not None:
+            return got, m.group(2).strip() + '.'
     m = re.match(r'^(.*?\bmarks?)\s*\.\s+(\S.*?)\.?$', inner, re.I)
     if m:
         got = _steps(m.group(1))
@@ -172,6 +180,12 @@ def clause_split(clause, romans):
     body = re.sub(r'\)\s*$', '', body)
     totals, steps = {}, {}
     parts = re.split(r'\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)', body, flags=re.I)
+    if (len(parts) >= 3 and romans and romans[0] == 'i' and parts[1].lower() == 'ii'
+            and parts[0].strip(' ,;:')):
+        # "(6 marks: 1+1 mark, (ii) 2 x 2 marks)" (2023 Higher L1 Q2): the
+        # split prints (ii)'s marker and not (i)'s; what comes before it
+        # prices (i).
+        parts = ['', 'i', parts[0]] + parts[1:]
     if len(parts) >= 3:
         for roman, seg in zip(parts[1::2], parts[2::2]):
             seg = seg.split(';')[0]
@@ -252,8 +266,28 @@ def scheme_leaves(S, keys):
             m = R_HEAD.match(s)
             if want and m and m.group(1).lower() == want[0]:
                 heads.append((i, want.pop(0), m.group(2)))
+        if not heads and len(romans) > 1 and romans[0] == 'i':
+            # The scheme prints no "(i)" over the first ask (2024 Higher L1
+            # Q1: "Wladimir Kaminer is an author. Give details …" straight
+            # under the head): the first ask runs from the head to "(ii)".
+            want = list(romans[1:])
+            for i, s in enumerate(block):
+                m = R_HEAD.match(s)
+                if want and m and m.group(1).lower() == want[0]:
+                    heads.append((i, want.pop(0), m.group(2)))
+            if heads and not want:
+                end = heads[0][0]
+                # A tariff line just above "(ii)" prices (ii), not (i).
+                if end > 0 and re.match(r'^\(\s*\d{1,3}\s*marks?\s*:', block[end - 1].strip(), re.I):
+                    end -= 1
+                heads.insert(0, (-1, 'i', ''))
+                block = list(block)
+            else:
+                heads = []
         for n, (i, roman, rest) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
+            if i < 0 and end > 0 and re.match(r'^\(\s*\d{1,3}\s*marks?\s*:', block[end - 1].strip(), re.I):
+                end -= 1
             body = ([rest] if rest.strip() else []) + block[i + 1:end]
             out[(p, q, roman)] = Leaf(part=p, q=q, roman=roman, total=totals.get(roman),
                                       lines=body, default=defaults.get(roman), rule=rule,
@@ -329,6 +363,17 @@ def leaf_rows(leaf, asked_text):
             continue
         last_note = None
         steps, remark = rate_line(s)
+        if (steps is not None and len(steps) == 1 and re.fullmatch(r'\(\s*\d{1,2}\s*marks?\s*\)', s, re.I)
+                and group is not None and group['steps'] is None and len(group['options']) == 1):
+            # The answer's own price, wrapped onto a line of its own:
+            # "Wasserrohr gebrochen // … alles voller Wasser" / "(2 marks)".
+            opt = group['options'][0]
+            group = None
+            last = {'kind': 'point', 'text': opt['text'], 'marks': steps[0], 'label': label,
+                    'notes': list(pending)}
+            pending = []
+            items.append(last)
+            continue
         if steps is not None and not MARKER.match(s):
             close()
             group = {'kind': 'group', 'steps': steps, 'options': [], 'label': label,
@@ -361,6 +406,15 @@ def leaf_rows(leaf, asked_text):
                 rest = m.group(2).strip()
                 got, _r = rate_line(rest) if rest else (None, None)
                 summary = re.match(r'^\(?\s*\d{1,3}\s*marks?\b', rest, re.I)
+                if got is not None and not summary:
+                    # "Where: (Any two: 2 x 2 marks)" — the half's own list.
+                    close()
+                    label = m.group(1)
+                    group = {'kind': 'group', 'steps': got, 'options': [], 'label': label,
+                             'notes': ([_r] if _r else []) + pending}
+                    pending = []
+                    last = None
+                    continue
                 if not rest or got is not None or summary:
                     close()
                     label = m.group(1)
