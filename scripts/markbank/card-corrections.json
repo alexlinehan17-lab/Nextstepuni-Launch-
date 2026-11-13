@@ -1330,6 +1330,29 @@
      }
     ]
    }
+  },
+  "tech-2021-hl-c4a-ii": {
+   "reason": "The question asks for either Fairtrade or CE marked products, and the scheme answers each; the two rows are the two branches, so each is a route of its own and a student claims the one answered (rows unchanged, each given its route).",
+   "set": {
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Fairtrade seeks to create a stable market with producers expected to maintain standards and be sure of getting a fair price for their produce. Fairtrade contributes to sustainable development by offering better trading conditions to marginalised producers and workers.",
+      "marks": null,
+      "openList": true,
+      "route": "a"
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "CE products must meet European standards to ensure that products are safe and meet environmental standards. Some insurers will demand CE mark for this level of quality control.",
+      "marks": null,
+      "openList": true,
+      "route": "b"
+     }
+    ]
+   }
   }
  }
 }

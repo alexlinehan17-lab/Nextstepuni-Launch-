@@ -1096,6 +1096,9 @@ def main():
     eng_lists.vertical_lists(cards)
     eng_lists.table_cells(cards)
     eng_lists.degree_signs(cards)
+    # Two (c) branches either side of an OR on a card priced as a whole:
+    # each branch a route, so a student claims the branch they answered.
+    eng_lists.or_routes(cards)
     # Alternatives the session would run together with "or" in one row: each
     # its own option in a count-1 menu at the row's price.
     eng_lists.alternative_menus(cards)
