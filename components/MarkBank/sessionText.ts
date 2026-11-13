@@ -17,20 +17,55 @@ export const marksWord = (n: number) => (n === 1 ? 'mark' : 'marks');
  * A descending tariff is stated as it is paid ("6 then 4 marks"); a menu the
  * scheme prices only as a whole has no per-option value, so it states the
  * choice alone.
+ *
+ * A one-pick menu reads "One of these — 2 marks": "Any 1 of these — 2 marks
+ * each" (1,965 menus on main, Spanish 2010 HL Section L Q2(b) among them) said "each"
+ * of a single answer. A menu of one option offers no choice at all ("All 1 of
+ * these — 5 marks each", 172 menus), so it states just its marks.
  */
 export function anyNHeading(group: NonNullable<MarkRow['group']>): string {
-  const choice = group.claimMax === group.options.length
-    ? `All ${group.claimMax} of these` : `Any ${group.claimMax} of these`;
+  const price = (marks: number) => `${marks} ${marksWord(marks)}`;
+  if (group.options.length === 1) {
+    const only = group.optionMarks?.[0] ?? group.perOptionSteps?.[0] ?? group.perOption;
+    if (Number.isFinite(only)) return price(only);
+  }
+  const one = group.claimMax === 1;
+  const choice = one ? 'One of these'
+    : group.claimMax === group.options.length ? `All ${group.claimMax} of these` : `Any ${group.claimMax} of these`;
   // Options priced one by one (a full answer and the part of it the scheme
   // also credits): the menu pays the best one claimed, at its own marks.
   if (group.optionMarks) {
-    return `${group.claimMax === 1 ? 'One of these' : `Any ${group.claimMax} of these`} — each at its own marks`;
+    return `${one ? 'One of these' : `Any ${group.claimMax} of these`} — each at its own marks`;
   }
   if (group.perOptionSteps) {
     const steps = group.perOptionSteps.slice(0, group.claimMax);
-    return `${choice} — ${steps.join(' then ')} ${steps.length === 1 ? marksWord(steps[0]) : 'marks'}`;
+    return `${choice} — ${steps.length === 1 ? price(steps[0]) : `${steps.join(' then ')} marks`}`;
   }
-  return Number.isFinite(group.perOption) ? `${choice} — ${group.perOption} ${marksWord(group.perOption)} each` : choice;
+  if (!Number.isFinite(group.perOption)) return choice;
+  return one ? `${choice} — ${price(group.perOption)}` : `${choice} — ${price(group.perOption)} each`;
+}
+
+/**
+ * The label a menu row carries of its own, shown above the menu's heading:
+ * "For — any one" over one Economics menu and "Against — any one" over its
+ * neighbour, which otherwise read as two identical "One of these" lists.
+ *
+ * Shown exactly as the card prints it, and only where it is a label: never
+ * where the row's text is one of its options or the options run together
+ * (the menu already shows those), and never the generic "The answers the
+ * scheme accepts…" the language decks give their menus, or LCVP's "Any 3 of
+ * the answers the scheme states", which only repeat the heading.
+ */
+const GENERIC_MENU_LABEL = /^(?:The answers the scheme accepts|Any \d+ of the answers the scheme states)\b/;
+
+export function menuLabel(row: Pick<MarkRow, 'verbatim' | 'group'>): string | null {
+  const label = row.verbatim.trim();
+  const options = (row.group?.options ?? []).map(option => option.trim());
+  if (!label || !options.length) return null;
+  if (options.includes(label)) return null;
+  if (label.startsWith(options[0].slice(0, 30))) return null;
+  if (GENERIC_MENU_LABEL.test(label)) return null;
+  return label;
 }
 
 /** The most a "Not claimed yet" name runs to before it is cut at a word. */

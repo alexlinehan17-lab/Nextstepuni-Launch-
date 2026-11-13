@@ -141,7 +141,7 @@ export const splitForEmphasis = (text: string): QuestionEmphasis => {
   // mark over a whole two-line question is the same slab either way.
   if (!cmd) {
     const [marked, scope] = toOneLine(q);
-    return { before: '', marked, after: scope };
+    return endAtLineBreak({ before: '', marked, after: scope });
   }
 
   const before = q.slice(0, cmd.index);
@@ -160,5 +160,22 @@ export const splitForEmphasis = (text: string): QuestionEmphasis => {
   // Second cut: whatever scope is still riding on the end of a clause that would
   // wrap. Most questions have nothing to do here.
   const [marked, scope] = toOneLine(clause);
-  return { before, marked, after: scope + after };
+  return endAtLineBreak({ before, marked, after: scope + after });
 };
+
+/**
+ * The mark never runs past a line the paper printed.
+ *
+ * A question in a language with no English command or scope word has nowhere
+ * to cut, so the whole body was marked, line breaks and all: Spanish 2010 HL
+ * Section B Q5 underlined "El invento más importante del siglo pasado.", then
+ * the printed "O" on a line of its own, then the second statement. The mark now
+ * stops at the first printed line break and the rest reads plain. Nothing in
+ * the text changes; `before + marked + after` is still the input.
+ */
+function endAtLineBreak(split: QuestionEmphasis): QuestionEmphasis {
+  const start = split.marked.search(/\S/);
+  const cut = start < 0 ? -1 : split.marked.indexOf('\n', start);
+  if (cut < 0) return split;
+  return { before: split.before, marked: split.marked.slice(0, cut), after: split.marked.slice(cut) + split.after };
+}

@@ -18,6 +18,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ChevronRight, Download, FileStack, Play, RefreshCw, Check, Clock3 } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { questionLabel, questionsForTopics, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
+import { sittingLabel } from './sitting';
 import { buildSet, clearSet, loadSet, saveSet, startWriting, toggleDone, type MockSet } from './mockSetStore';
 import { addCard } from './reviewStore';
 import { downloadPack } from './revisionPack';
@@ -204,7 +205,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
               <button onClick={() => onOpenQuestion(it.q)} className="flex-1 flex items-center gap-2.5 py-2.5 pl-1 text-left transition-transform active:translate-y-0.5">
                 <span className="shrink-0 w-6 text-[13px] font-bold tabular-nums" style={{ color: '#9e9186', fontFamily: "'Source Serif 4', serif" }}>{i + 1}</span>
                 <span className="flex-1 text-[12.5px]" style={{ color: it.done ? '#9e9186' : '#5a5550', textDecoration: it.done ? 'line-through' : 'none' }}>
-                  {it.q.year} · {LVL[it.q.level] ?? it.q.level}{paperAbbr(it.q.paperKey) ? ` · ${paperAbbr(it.q.paperKey)}` : ''}{it.q.lang === 'iv' ? ' · Gaeilge' : ''} · {questionLabel(it.q)}
+                  {it.q.year} · {LVL[it.q.level] ?? it.q.level}{sittingLabel(it.q.fileid) ? ` · ${sittingLabel(it.q.fileid)}` : ''}{paperAbbr(it.q.paperKey) ? ` · ${paperAbbr(it.q.paperKey)}` : ''}{it.q.lang === 'iv' ? ' · Gaeilge' : ''} · {questionLabel(it.q)}
                 </span>
                 {set.rehearsal && !it.done && (
                   <span

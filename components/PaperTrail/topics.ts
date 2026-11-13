@@ -21,6 +21,7 @@ import {
 } from '../../data/examTopics/registry';
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 import { physicalEducationTask, withPhysicalEducationAtlasTasks } from './physicalEducationTasks';
+import { isDeferredFileid } from './sitting';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -52,7 +53,7 @@ export const logicalQuestionIdentity = (question: Pick<
   question.paperKey,
   question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
     ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
-    : /-deferred\.pdf$/i.test(question.fileid) ? 'deferred' : '',
+    : isDeferredFileid(question.fileid) ? 'deferred' : '',
   question.n,
 ].join('|');
 

@@ -21,7 +21,22 @@ describe('an any-N menu states its price in good English', () => {
 
   test('a descending tariff is stated as it is paid, and a single step of one is singular', () => {
     expect(anyNHeading({ claimMax: 2, perOption: 6, perOptionSteps: [6, 4], options: ['a', 'b', 'c'] })).toBe('Any 2 of these — 6 then 4 marks');
-    expect(anyNHeading({ claimMax: 1, perOption: 1, perOptionSteps: [1], options: ['a', 'b'] })).toBe('Any 1 of these — 1 mark');
+    expect(anyNHeading({ claimMax: 1, perOption: 1, perOptionSteps: [1], options: ['a', 'b'] })).toBe('One of these — 1 mark');
+  });
+
+  test('a one-pick menu reads "One of these" and does not say "each" of one answer', () => {
+    // Spanish 2010 HL Section L Q2(b) read "Any 1 of these — 2 marks each".
+    expect(anyNHeading({ claimMax: 1, perOption: 2, options: ['a', 'b', 'c'] })).toBe('One of these — 2 marks');
+    expect(anyNHeading({ claimMax: 1, perOption: 1, options: ['a', 'b'] })).toBe('One of these — 1 mark');
+    expect(anyNHeading({ claimMax: 1, options: ['a', 'b'] } as never)).toBe('One of these');
+  });
+
+  test('a menu of one option offers no choice, so it states just its marks', () => {
+    // Biology 2012 OL Q7(a)(i) read "All 1 of these — 5 marks each".
+    expect(anyNHeading({ claimMax: 1, perOption: 5, options: ['Asthma'] })).toBe('5 marks');
+    expect(anyNHeading({ claimMax: 1, perOption: 1, options: ['a'] })).toBe('1 mark');
+    expect(anyNHeading({ claimMax: 1, perOption: 3, perOptionSteps: [3], options: ['a'] })).toBe('3 marks');
+    expect(anyNHeading({ claimMax: 1, perOption: 2, optionMarks: [2], options: ['a'] })).toBe('2 marks');
   });
 
   test('options priced one by one say so, and a single pick reads as one', () => {

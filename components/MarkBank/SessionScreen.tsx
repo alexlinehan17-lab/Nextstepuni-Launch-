@@ -68,7 +68,7 @@ import {
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
-import { anyNHeading, marksWord, unclaimedName } from './sessionText';
+import { anyNHeading, marksWord, menuLabel, unclaimedName } from './sessionText';
 import RouteHeading from './RouteHeading';
 import FigureZoom from './FigureZoom';
 import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
@@ -289,15 +289,30 @@ export function claimableTotal(card: SecCard): number {
 export const showsRowMarks = (card: SecCard) =>
   isPointCard(card) && card.tariffModel.kind === 'fixed';
 
+/** How many of a menu row's options the student has picked; 0 for any other row. */
+const menuPicks = (row: MarkRow, picks: Record<string, number[]>, id: string) =>
+  row.kind === 'anyN' && row.group ? (picks[id] ?? []).filter(oi => oi >= 0 && oi < row.group!.options.length).length : 0;
+
 /**
  * Which mutually exclusive answer route the student has committed to, if any.
  * The SEC's double solidus separates routes that may not be mixed.
+ *
+ * A pick in a menu commits its route as a tick does. It used to commit
+ * nothing, so on Engineering 2015 HL Q7(c)(i) a student could pick in route
+ * B's menu and then tick route A, and the picks were silently dropped from
+ * the score; picked after a route A tick, they were accepted and scored
+ * nothing.
  */
-export function committedRoute(card: SecCard, claims: Record<string, RowClaim>): string | null {
+export function committedRoute(
+  card: SecCard,
+  claims: Record<string, RowClaim>,
+  picks: Record<string, number[]> = {},
+): string | null {
   if (!isPointCard(card)) return null;
   for (let i = 0; i < card.rows.length; i++) {
     const r = card.rows[i];
-    if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+    const id = rowId(r, i);
+    if (r.route && (isClaimed(claims, id) || menuPicks(r, picks, id) > 0)) return r.route;
   }
   return null;
 }
@@ -309,7 +324,7 @@ export function marksClaimed(
 ): number {
   if (!isPointCard(card)) return 0;
   if (!showsRowMarks(card)) return 0;
-  const route = committedRoute(card, claims);
+  const route = committedRoute(card, claims, picks);
   const bonus = card.questionBonus;
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
@@ -357,9 +372,26 @@ export function suggestGrade(
   const total = claimableTotal(card);
   const got = marksClaimed(card, claims, picks);
   if (!showsRowMarks(card)) {
-    const claimedRows = card.rows.filter((r, i) => isClaimed(claims, rowId(r, i))).length;
-    if (claimedRows === 0) return 'missed';
-    return claimedRows === card.rows.length ? 'got' : 'shaky';
+    // A card the scheme prices only as a whole has no marks to add, so the
+    // suggestion reads how much of the answer was there. A menu counts by its
+    // picks, full at its cap: counting ticks alone told a student who picked
+    // both effects on Economics 2010 OL Section A Q9 "That looks like Missed
+    // it". Only the chosen route counts, so a branch answered in full is not
+    // marked down for the branch the paper offered instead.
+    const route = committedRoute(card, claims, picks);
+    const state = card.rows.map((r, i) => {
+      const id = rowId(r, i);
+      if (r.kind === 'anyN' && r.group) {
+        const n = menuPicks(r, picks, id);
+        return n === 0 ? 'none' : n >= Math.min(r.group.claimMax, r.group.options.length) ? 'full' : 'part';
+      }
+      return isClaimed(claims, id) ? 'full' : 'none';
+    });
+    if (state.every(st => st === 'none')) return 'missed';
+    const routed = card.rows.some(r => r.route);
+    const complete = (!routed || route !== null)
+      && card.rows.every((r, i) => (r.route && r.route !== route) || state[i] === 'full');
+    return complete ? 'got' : 'shaky';
   }
   if (got <= 0) return 'missed';
   return got >= total ? 'got' : 'shaky';
@@ -620,6 +652,16 @@ const ProgressRail: React.FC<{ total: number; done: number; current: number }> =
 
 /* ---------------------------------------------------------------- the row ---- */
 
+/** Keeps a line break the scheme printed inside answer or note text, which
+ *  plain white-space collapses: Economics 2021 HL Q16(a)(i) printed its trend
+ *  as two paragraphs and showed one. Text with no break is left as it was. */
+const printedLines = (text?: string) => (text?.includes('\n') ? 'pre-line' as const : undefined);
+
+/** A row the scheme printed as a bulleted list, lifted with its bullets inline
+ *  ("Low melting point • Allows for easy moulding • …"), goes back to one
+ *  bullet a line. Only the space before each bullet changes. */
+const bulletLines = (text: string) => text.replace(/ • /g, '\n• ');
+
 const MarkRowView: React.FC<{
   row: MarkRow;
   id: string;
@@ -652,10 +694,10 @@ const MarkRowView: React.FC<{
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
           <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
         </div>
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
           {row.parts.map(part => {
             const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
@@ -687,9 +729,9 @@ const MarkRowView: React.FC<{
     const selected = criterionMarksClaimed(row, claim);
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
         {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {row.permittedMarks.map(mark => (
             <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
@@ -716,6 +758,7 @@ const MarkRowView: React.FC<{
     const chosen = Math.min(picks.length, g.claimMax);
     const atCap = chosen >= g.claimMax;
     const requiresAll = g.claimMax === g.options.length;
+    const label = menuLabel(row);
     return (
       <MotionDiv
         /* The rows arrive one after another, and the stagger IS the message:
@@ -732,6 +775,13 @@ const MarkRowView: React.FC<{
           background: 'var(--mb-paper)',
         }}
       >
+        {/* The row's own label ("For — any one"), as the card prints it, so
+            two menus on one card can be told apart (sessionText.menuLabel). */}
+        {label && (
+          <p dir="auto" style={{ margin: '0 0 5px', font: `600 13.5px/1.4 ${SANS}`, color: INK, whiteSpace: label.includes('\n') ? 'pre-line' : undefined }}>
+            {label}
+          </p>
+        )}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
           <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
@@ -763,7 +813,9 @@ const MarkRowView: React.FC<{
             // two of those menus, which banked one answer twice and told the
             // student they had scored marks the examiner never gave.
             const usedAlready = !on && takenElsewhere?.has(option);
-            const disabled = !on && (atCap || Boolean(usedAlready));
+            // A menu on a route the student did not take is locked like a
+            // row is: its picks would score nothing (routes.ts).
+            const disabled = blocked || (!on && (atCap || Boolean(usedAlready)));
             return (
               <button
                 key={oi}
@@ -831,8 +883,13 @@ const MarkRowView: React.FC<{
             that would not fit an option put it here, believing it showed. Silent
             loss of marking content is worse than a crowded card. */}
         {row.contextNote && (
-          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED, whiteSpace: printedLines(row.contextNote) }}>
             {row.contextNote}
+          </p>
+        )}
+        {blocked && (
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+            {blockedReason ?? 'This mark only counts if the point above was right.'}
           </p>
         )}
         {atCap && (
@@ -846,6 +903,8 @@ const MarkRowView: React.FC<{
     );
   }
 
+  const shownVerbatim = wholeResponse ? row.verbatim.replace(/ • /g, '\n\n')
+    : keepLines ? row.verbatim : bulletLines(row.verbatim);
   return (
     <MotionDiv
       /* The rows arrive one after another, and the stagger IS the message:
@@ -899,14 +958,16 @@ const MarkRowView: React.FC<{
 
         <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
           {/* A marking point takes its direction from its own text, so an
-              Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : undefined }}>
-            {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
+              Arabic answer reads and aligns the way the scheme printed it.
+              Printed line breaks are kept for every subject; History's rows
+              keep exactly the text and pre-line they always had. */}
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : printedLines(shownVerbatim) }}>
+            {shownVerbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
@@ -916,7 +977,7 @@ const MarkRowView: React.FC<{
             ) : null}
           </span>
           {!wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
+            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
@@ -2461,7 +2522,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
    */
   const unclaimed = useMemo(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return [];
-    const route = committedRoute(assessmentCard, rowClaims);
+    const route = committedRoute(assessmentCard, rowClaims, picks);
     return assessmentCard.rows
       .filter((r, i) => {
         if (r.route && route && r.route !== route) return false;
@@ -2473,7 +2534,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       // The scheme's own wording, minus an unambiguous "Label — " prefix;
       // working, dates and ranges keep their minus signs (see sessionText).
       .map(r => unclaimedName(r.verbatim));
-  }, [assessmentCard, rowClaims]);
+  }, [assessmentCard, rowClaims, picks]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */
   const unclaimedNames = unclaimed.slice(0, 3);
@@ -2501,7 +2562,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'business' ? 'Business allocation'
       : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
     : 'rubric';
-  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
+  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims, picks) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
     studyReview?.onCue('tap');
