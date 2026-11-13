@@ -32,6 +32,2284 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-1-a", topicId: "german-6-1", conceptId: "learn-about-narrator-parents",
+    section: "T1", questionRef: "2020 OL Section T1 Q1(a)",
+    questionText: "What do you learn about the narrator’s parents? (lines 1 – 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":4,"options":["Her mother is a nurse.","Her father is an electrician.","They/Her parents work in a hospital."],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-1-b", topicId: "german-6-1", conceptId: "narrator-parents-think-life-perfect",
+    section: "T1", questionRef: "2020 OL Section T1 Q1(b)",
+    questionText: "Why do the narrator’s parents think their life is perfect? Give details. (lines 5 – 20)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["The/Their house is only five minutes away from work/their workplace/the hospital//work is nearby.","They live in a small house.","It has a small garden.","… with strawberries/a lawn.","The narrator/She played there/in the garden.","The area/it is quiet.","The area/it is green.","Their child/The narrator/Luise/She can cycle to school.","It only takes her fifteen minutes/quarter of an hour (to get to school).","A bus goes every ten minutes.","The narrator/Luise /She is able go into town. // She can go out with her friends.","Luise is a big girl now/is grown up."],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-1-c", topicId: "german-6-1", conceptId: "about-luise-narrator",
+    section: "T1", questionRef: "2020 OL Section T1 Q1(c)",
+    questionText: "Give details about Luise, the narrator. (lines 21 – 29)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":4,"options":["Her name/She is Luise Helene Waldmann.","Her grandmother calls her ‘Luischen’.","Her friends call her Lu/Lulu.","She is in 10th class.","She has no siblings. // She is an only child.","She is seventeen years old.","She is old enough to get a driving licence / take driving lessons.","She does not know who is going to pay for the driving licence/lessons.","She does not want to ask her parents."],"perOptionSteps":[4,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-1-d", topicId: "german-6-1", conceptId: "describe-luise-home-life",
+    section: "T1", questionRef: "2020 OL Section T1 Q1(d)",
+    questionText: "Describe in detail Luise’s home life. (lines 29 – 40)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":1,"options":["Her parents do shift work.","They are occasionally/rarely/sometimes at home.","They are tired (most of the time).","Sometimes one of them lies down on the sofa/on bed.","When one of them comes back from shopping he/she has to go back to work again.","The bathroom is cleaned once a week.","The kitchen is cleaned once a week.","Sometimes/rarely somebody cleans the windows.","Somebody cuts the grass/mows the lawn.","They don’t talk a lot."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-2-a", topicId: "german-6-1", conceptId: "questions-luise-friends-ask-her-school",
+    section: "T1", questionRef: "2020 OL Section T1 Q2(a)",
+    questionText: "What questions do Luise’s friends ask her in school? (lines 41 – 46)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. N.B. Allow use of past tense", group: {"claimMax":2,"perOption":3,"options":["(Questions) about the summer holidays / her holiday plans.","How about you?","Are you going away?","… to the sea?","… to see / stay with friends?","… to do a language course?","… hang around the swimming pool?","… to a festival?"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-2-b-i", topicId: "german-6-1", conceptId: "does-luise-want-this-summer",
+    section: "T1", questionRef: "2020 OL Section T1 Q2(b)(i)",
+    questionText: "What does Luise want to do this summer? (lines 47 – 48)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["None of these/of the above.","She wants to earn money.","She wants to take driving classes/lessons."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-2-b-ii", topicId: "german-6-1", conceptId: "luise-grandmother-offers-her-job",
+    section: "T1", questionRef: "2020 OL Section T1 Q2(b)(ii)",
+    questionText: "Luise’s grandmother offers her a job. Give details. (lines 48 – 55)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["To look after her dog.","She will pay 50% / half the cost of the driving licence.","(The job/It lasts) for four weeks.","(The job/It) starts on Monday."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-2-c", topicId: "german-6-1", conceptId: "luise-gets-second-job-describe-this",
+    section: "T1", questionRef: "2020 OL Section T1 Q2(c)",
+    questionText: "Luise gets a second job. Describe this job. (lines 56 – 70)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":4,"options":["(It’s) in a bakery","(It’s) part-time","(It’s) for the summer","(It) starts at 5.30 am","She has to put away/stack bread/bread rolls/shelves","She will work until 1 pm","She will work five times a week","She will earn 6 Euro per hour","She will begin work on Monday"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-2-d", topicId: "german-6-1", conceptId: "end-text-luise-has-jobs-does",
+    section: "T1", questionRef: "2020 OL Section T1 Q2(d)",
+    questionText: "At the end of the text Luise has three jobs. How does she try to do all three? Give details. (lines 81 – 96)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":1,"options":["She has a plan","She gets up at 3.30 am","She puts Bonnie on a leash","She goes out onto the street","She collects / picks up the newspapers","She has a list with names/ house numbers","She drags/brings Bonnie home","She gives food and water to the dog// She feeds the dog","She washes her hands","She cycles to work/the bakery"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-3", topicId: "german-6-1", conceptId: "choose-suitable-heading-from-box-numbered",
+    section: "T1", questionRef: "2020 OL Section T1 Q3",
+    questionText: "Choose a suitable heading from the box\nfor each numbered paragraph of TEXT I.\nExplain briefly in English what the\nheading for each paragraph means.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":8,"perOption":2,"options":["Bei uns zu Hause","At home/our house","Sommer und Ferienpläne","Summer and holiday plans","Der zweite Job","The second job","Kein guter Anfang","Not a good start"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t1-4", topicId: "german-6-1", conceptId: "belongs-together-indicate-answer-all-cases",
+    section: "T1", questionRef: "2020 OL Section T1 Q4",
+    questionText: "What belongs together?\nIndicate your answer in all cases by\ninserting the letters which correspond\nto the numbers in the box below.\nIn case of doubt, check with TEXT I.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":1,"options":["2 — e","3 — b","4 — a","5 — f","6 — c"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                2,
+                3,
+                4,
+                5,
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-1", topicId: "german-6-0", conceptId: "who-jan-kammann-introduction",
+    section: "T2", questionRef: "2020 OL Section T2 Q1",
+    questionText: "Who is Jan Kammann? Give details. (Introduction)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme allows “Only one subject correct” for 3 marks, in place of “… of English and Geography.”, never beside it.", group: {"claimMax":3,"perOption":6,"options":["He is a teacher","… of English and Geography.","He is 37 years old.","He teaches at the ‘Europaschule’ in Hamburg.","He teaches 30 students.","His students come from many/different nations (Allow: countries)","He wants to understand them better.","He visited 14 of his students’ (home) countries.","Only one subject correct"],"optionMarks":[6,6,6,6,6,6,6,6,3],"optionOf":[null,null,null,null,null,null,null,null,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-2", topicId: "german-6-0", conceptId: "about-pupils-jan-kammann-international-class",
+    section: "T2", questionRef: "2020 OL Section T2 Q2",
+    questionText: "Give details about the pupils in Jan Kammann’s international class. (Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":6,"options":["(They/His students) are from 22 different nations. (Allow: countries)","(Some) came to Hamburg to study.","(Some) came because their parents work there.","(Others) came as refugees of war/terror.","(Most of them) have little/no German.","They have been living in Germany for a few months.","They learn German.","They’ll get a diploma. N.B. Use of past tense: 0 marks"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-3-a", topicId: "german-6-0", conceptId: "did-jan-decide-unusual-trip",
+    section: "T2", questionRef: "2020 OL Section T2 Q3(a)",
+    questionText: "Why did Jan decide to go on an unusual trip? (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["He found it exciting when his students talked about their (home) countries. // He liked hearing his students talk about their (home) countries.","To see their/the countries.","To experience / to learn about the cultures (of these countries)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-3-b", topicId: "german-6-0", conceptId: "his-pupils-help-him-prepare-this",
+    section: "T2", questionRef: "2020 OL Section T2 Q3(b)",
+    questionText: "How do his pupils help him to prepare for this trip? (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["They draw/drew maps for him.","They write/wrote travel guides.","(They gave him) tips about tourist attractions.","(They gave him) tips about food.","(They gave him) tips about accommodation.","They gave him vocabulary.","(They gave him vocabulary) for restaurants.","(They gave him vocabulary) for buses/trains.","(All these tips) make/made it easy for him to contact the locals."],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-4-a", topicId: "german-6-0", conceptId: "does-jan-learn-during-his-trip",
+    section: "T2", questionRef: "2020 OL Section T2 Q4(a)",
+    questionText: "What does Jan learn during his trip? (Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["(He learns about) languages (in his students’ countries).","(He learns) how schools operate (there).","(He learns about) the weather.","(He learns that) people are welcoming/friendly.","(He learns that) we can learn a lot from the world.","(He learns that) we should be open to other people/cultures."],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-4-b", topicId: "german-6-0", conceptId: "end-his-trip-jan-sees-his",
+    section: "T2", questionRef: "2020 OL Section T2 Q4(b)",
+    questionText: "At the end of his trip Jan sees his pupils differently. Give details. (Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["He understands them/their situation (better).","Many of his students cannot return home/ to their (home) countries.","(He understands) they have to settle in Germany.","(He understands) they have to learn the language.","(He understands) they have to accept the culture.","He has (an even greater) respect for them now."],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t2-5", topicId: "german-6-0", conceptId: "based-text-indicate-whether-following-statements",
+    section: "T2", questionRef: "2020 OL Section T2 Q5",
+    questionText: "Based on TEXT II, indicate whether the\nfollowing statements are true or false.\nPut a tick ( ) in the appropriate boxes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "False", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The answer to statement 1, in the order the examination prints them." },
+    { id: "r-1-2", kind: "point", verbatim: "False", marks: 2, contextNote: "The answer to statement 2, in the order the examination prints them." },
+    { id: "r-1-3", kind: "point", verbatim: "True", marks: 2, contextNote: "The answer to statement 3, in the order the examination prints them." },
+    { id: "r-1-4", kind: "point", verbatim: "True", marks: 2, contextNote: "The answer to statement 4, in the order the examination prints them." },
+    { id: "r-1-5", kind: "point", verbatim: "True", marks: 2, contextNote: "The answer to statement 5, in the order the examination prints them." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                8,
+                9,
+                10,
+                11
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-1-a", topicId: "german-6-1", conceptId: "did-german-school-make-headlines-2019",
+    section: "T3", questionRef: "2020 OL Section T3 Q1(a)",
+    questionText: "Why did a German school make headlines in 2019? (Introduction)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["Students rated their school.","The Puschkin Secondary School in Brandenburg got marks/grades from 1 to 6.","The school got a report/grades from their students."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-1-b", topicId: "german-6-1", conceptId: "does-christian-rate-highest",
+    section: "T3", questionRef: "2020 OL Section T3 Q1(b)",
+    questionText: "What does Christian rate highest and why? Give details. (Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The teachers.", marks: 5, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “What”." },
+    { id: "r-2", kind: "anyN", verbatim: "Why: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Why”.", group: {"claimMax":1,"perOption":2,"options":["They are helpful/willing to help.","Students can go to them with problems.","Students can talk to them.","When a maths test is unfair they resolve the problem.","Teachers give advice on private matters/questions/problems. // Christian got good advice from teachers on private matters/problems.","The door to the principal’s office is always open."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-2-a", topicId: "german-6-1", conceptId: "does-student-council-get-good-report",
+    section: "T3", questionRef: "2020 OL Section T3 Q2(a)",
+    questionText: "Why does the Student Council get a good report? Give details. (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["They organised a project week.","They organised the ‘Abi-Ball’/graduation ball/ the Debs/Grads.","They set up an Instagram account.","They inform (the students) about important events.","They collect ideas (from students).","They want to improve their school."],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-2-b", topicId: "german-6-1", conceptId: "does-neda-only-organisation-planning",
+    section: "T3", questionRef: "2020 OL Section T3 Q2(b)",
+    questionText: "Why does Neda only give a ‘3’ for organisation and planning? (Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["(Students sometimes have) three foreign languages on the same day.","Planning/organising a festival is done too quickly.","Planning a class trip is done too quickly.","Many things are forgotten.","(These) things could improve/be better."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-3", topicId: "german-6-1", conceptId: "brandon-not-happy-with-changing-rooms",
+    section: "T3", questionRef: "2020 OL Section T3 Q3",
+    questionText: "Brandon is not happy with the changing rooms. What are his reasons? (Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["(They are) too small.","Jumpers/trousers/rucksacks are all over the place.","The hair dryer is broken.","Toilets should be cleaned.","The door of the girl’s cubicle/changing room cannot be locked."],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-4-a-i", topicId: "german-6-1", conceptId: "does-school-courtyard-get-bad-rating",
+    section: "T3", questionRef: "2020 OL Section T3 Q4(a)(i)",
+    questionText: "Why does the school’s courtyard get a bad rating?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["There are only three trees.","There are only two benches.","There are no tables.","There is no shade.","There is no roof/shelter from rain."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-4-a-ii", topicId: "german-6-1", conceptId: "could-improved",
+    section: "T3", questionRef: "2020 OL Section T3 Q4(a)(ii)",
+    questionText: "How could it be improved? (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":1,"options":["The students could help.","(They would like more) colour.","(They would like more/a few) flowers.","(They would like) covered seats."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-4-b", topicId: "german-6-1", conceptId: "cafeteria-fails-completely-reasons",
+    section: "T3", questionRef: "2020 OL Section T3 Q4(b)",
+    questionText: "The cafeteria fails completely. Give reasons. (Par. 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":4,"options":["The cafeteria/it is too small.","There are queues.","Students have (only) 15 minutes to eat.","Food is fatty.","Food is salty.","Food is sweet.","They want healthier food.","They want more salads.","They want more fruit.","Desserts would be nice // Desserts are not served."],"perOptionSteps":[4,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-t3-5", topicId: "german-6-1", conceptId: "complete-following-sentences-based-article-text",
+    section: "T3", questionRef: "2020 OL Section T3 Q5",
+    questionText: "Complete the following sentences which\nare based on the article (TEXT III).\nIndicate your answer in all cases by writing\nthe correct letter (a), (b), (c) or (d) in the\nbox provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":2,"options":["1 — B","2 — D","3 — A","4 — C","5 — D"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT III: LESEVERSTÄNDNIS",
+          "title": "TEXT III — answer in English or Irish",
+          "pages": [
+                14,
+                15,
+                16,
+                17
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-ag-1", topicId: "german-3-4", conceptId: "look-compound-words-below-underlined-text",
+    section: "AG", questionRef: "2020 OL Section AG Q1",
+    questionText: "Look at the compound words below, which are underlined in TEXT I. Say which two words each compound is made up of and what the underlined words in the text mean. (i) Innenstadt (Abschnitt 1) (ii) Einkaufstüte(n) (Abschnitt 2) (iii) Sprachkurs (Abschnitt 3) (iv) Hausnummer(n) (Abschnitt 5) (v) Hundefutter (Abschnitt 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":5,"perOption":2,"options":["(i) Innen + Stadt (1) inner city/city centre (1)","(ii) Einkauf(s) + Tüte(n) (1) shopping bag(s) (1)","(iii) Sprach(e) + Kurs (1) language course (1)","(iv) Haus + Nummer(n) (1) house number(s) (1)","(v) Hunde + Futter (1) dog food (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "TEXT I: LESEVERSTÄNDNIS",
+                "title": "TEXT I — the passage this exercise is drawn from",
+                "pages": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                ],
+                "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+                "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-ag-2", topicId: "german-3-4", conceptId: "sentences-below-based-content-text-sentence",
+    section: "AG", questionRef: "2020 OL Section AG Q2",
+    questionText: "The sentences below are based on the content of TEXT I. Each sentence requires a preposition. Four prepositions are given in each case. Circle the correct preposition. (i) Sie kann mit dem Fahrrad bei / im / zur / nach Schule fahren. (ii) Ihre Eltern kommen oft sehr müde zu / nach / in / am Hause. (iii) Luise will in / an / bei / aus den Ferien arbeiten. (iv) Ihr Job bei / um / zu / an Bäcker Reinhardt beginnt sehr früh morgens. (v) Und über / um / zu / in vier Uhr trägt sie Zeitungen aus.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":5,"perOption":1,"options":["(i) zur (1)","(ii) nach (1)","(iii) in (1)","(iv) bei (1)","(v) um (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "TEXT I: LESEVERSTÄNDNIS",
+                "title": "TEXT I — the passage this exercise is drawn from",
+                "pages": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                ],
+                "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+                "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2020 Ordinary Level, pp.16-21 — © State Examinations Commission.",
+    id: "de-2020-ol-at-a", topicId: "german-7-0", conceptId: "imagine-that-interviewing-jan-kammann-before",
+    section: "AT", questionRef: "2020 OL Section AT Q(a)",
+    questionText: "Imagine that you are interviewing Jan\nKammann before he goes on his trip.\nComplete his part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+    totalMarks: 15,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(Content = 8, expression = 7)",
+                "Content (C) and Expression (Ex) to be marked consecutively.",
+                "(a) Imagine that you are interviewing Jan Kammann before he goes on his trip. Complete his part of",
+                "the dialogue below based on the information given in TEXT II. (Write 25 – 30 words)",
+                "Sie: Gute Reise, Herr Kammann! Und danke für das Interview!",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Sie: Herr Kammann, was sind Sie von Beruf?",
+                            "(A2) Jan Kammann: Ich bin Lehrer (A1) für Englisch und Erdkunde. (A1)"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Sie: Warum kommen Ihre Schüler und Schülerinnen nach Hamburg?",
+                            "(B2) Jan Kammann: Any TWO of the following for B1 + B1",
+                            "Sie wollen in Hamburg/hier studieren.",
+                            "Ihre Eltern arbeiten in Hamburg/hier.",
+                            "Sie fliehen vor Krieg/Terror.",
+                            "Sie sind Flüchtlinge.",
+                            "Es gibt in ihren Ländern Krieg und Terror.",
+                            "Warum?"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Sie: Herr Kammann, Sie wollen die Heimatländer Ihrer Schüler besuchen.",
+                            "(C1) Jan Kammann: Any ONE of the following for C1",
+                            "Ich fand es spannend, wenn die jungen Leute von ihren",
+                            "Heimatländern erzählten.",
+                            "Ich möchte ihre Länder/ihre Heimat sehen.",
+                            "Ich möchte ihre/die Kulturen erleben."
+                      ]
+                },
+                {
+                      "id": "d",
+                      "label": "D",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Sie: Wie helfen Ihnen die Schüler bei der Vorbereitung der Reise?",
+                            "(D2)..Jan Kammann: Any TWO of the following for D1 + D1",
+                            "Sie zeichnen Landkarten.",
+                            "Sie schreiben Reiseführer.",
+                            "Sie schreiben/geben mir Tipps für Sehenswürdigkeiten/typisches",
+                            "Essen/Unterkunft.",
+                            "Sie schreiben Vokabeln auf/geben mir Vokabeln, die in",
+                            "Büssen/Zügen/Restaurants wichtig sind."
+                      ]
+                },
+                {
+                      "id": "e",
+                      "label": "E",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Sie: Was möchten Sie nach der Reise machen?",
+                            "(E1) Jan Kammann: (Ich möchte/werde) ein Buch schreiben/veröffentlichen."
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                        "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                        "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings and agreements."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (a) — answer in German",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2020 Ordinary Level, pp.17-21 — © State Examinations Commission.",
+    id: "de-2020-ol-at-b", topicId: "german-7-0", conceptId: "while-berlin-find-advertisement-looking-dog",
+    section: "AT", questionRef: "2020 OL Section AT Q(b)",
+    questionText: "While in Berlin you find an advertisement looking for a dog sitter. Apply for the job, in German, using the following points:\n• Introduce yourself (name/age/where you are from…)\n• Mention why you are in Berlin (Erasmus year/on exchange/…) (one reason)\n• Explain why you would like the job (you like dogs very much/you have two dogs yourself…)\n• Ask how much you will earn\n• Say when you can work (evenings/at weekends…)\n(Write 25 – 30 words.)",
+    totalMarks: 15,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(b) E-Mail schreiben (25 – 30 words) (15 marks)",
+                "(Content = 8, expression = 7)",
+                "Content (C) and Expression (Ex) to be marked consecutively.",
+                "While in Berlin you find an advertisement looking for a dog sitter. Apply for the job, in German,",
+                "using the following points:",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "A. (2) Introduce yourself (name/age/where you are from …)",
+                            "Any two: A1+A1",
+                            "Ich heiße ...",
+                            "Ich bin ... (Jahre alt)",
+                            "Ich komme aus ..."
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "B. (1) Mention why you are in Berlin (Erasmus year/on exchange/…)",
+                            "Any reason: (B1)",
+                            "Ich mache ein Erasmus-Jahr.",
+                            "Ich mache einen Austausch."
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "C. (1) Explain why you would like the job (you like dogs very much/you have two dogs",
+                            "yourself…)",
+                            "Any reason: (C1)",
+                            "Ich mag Hunde sehr/ich liebe Hunde.",
+                            "Ich habe zwei Hunde."
+                      ]
+                },
+                {
+                      "id": "d",
+                      "label": "D",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "D. (2) Ask how much you will earn",
+                            "Wie viel/Was (D1) werde ich verdienen (D1)? N.B. Allow present tense"
+                      ]
+                },
+                {
+                      "id": "e",
+                      "label": "E",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "E. (2) Say when you can work (evenings/at weekends…)",
+                            "Ich kann … arbeiten. (E1)",
+                            "morgens/abends/am Wochenende/zweimal ... pro Woche/ ... (E1)"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                        "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                        "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings and agreements."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (b) — answer in German",
+          "pages": [
+                12,
+                13
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2020 Ordinary Level, pp.21-23 — © State Examinations Commission.",
+    id: "de-2020-ol-sp-a", topicId: "german-7-2", conceptId: "inviting-friend-come-ireland-attend-festival",
+    section: "SP", questionRef: "2020 OL Section SP Q(a)",
+    questionText: "You are inviting your friend to come to\nIreland to attend a festival with you.\nWrite a letter telling him/her about the details and your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below. Write 80 – 100 words.\nnach Irland eine super Idee Cill Chainnigh/Kilkenny, 5. Mai 2020 Ireland (name, location, when)\ngoing to camp and how you are going to pay for them clothes to bring summer (two things)",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(a) Letter",
+                "Ex. (10) Use the grid on page 21 to calculate expression mark in relation to C (Content).",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "A. (3) Tell your friend about a summer festival in Ireland:",
+                            "its name (A1)",
+                            "its location (A1)",
+                            "when it is on (A1)"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "B. (2) Say what bands are playing (B1)",
+                            "and that you are going to camp (B1)"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "C. (2) Tell your friend how much the tickets are (C1)",
+                            "and how you are going to pay for them (C1)"
+                      ]
+                },
+                {
+                      "id": "d",
+                      "label": "D",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "D. (3) Say what the weather is like (D1)",
+                            "and say what clothes to bring (D1 + D1) D1 for use of a suitable verb",
+                            "D1 for two items of clothing"
+                      ]
+                },
+                {
+                      "id": "e",
+                      "label": "E",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "E. (4) Tell your friend what else you can do in the summer",
+                            "E2 + E2 for two different activities"
+                      ]
+                },
+                {
+                      "id": "cl",
+                      "label": "Cl",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Cl. (1) Write a suitable closing sentence (CL 1)",
+                            "Add Start, Content and Expression to give overall total."
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                        "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                        "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings and agreements."
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower Ex.",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                              "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                              "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [6,7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings and agreements."
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "a",
+                                  "b",
+                                  "c",
+                                  "d",
+                                  "e",
+                                  "cl"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced scale (0-7) for expression and write “Lower Ex.” to indicate this."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (a) — answer in German",
+          "pages": [
+                18,
+                19
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-sp-a-fill", topicId: "german-7-2", conceptId: "firstly-complete-first-paragraph-letter-correctly",
+    section: "SP", questionRef: "2020 OL Section SP Q(a) — the phrases in the box",
+    questionText: "Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "eine super Idee", marks: 1, contextNote: "The scheme prices the phrases on their own line: “St. (5) Completing the first paragraph. Insertion of appropriate sentences. (5 x 1 mark)”" },
+    { id: "r-2", kind: "point", verbatim: "haben wir sehr viele", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "fast jede Stadt", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "für die Ferien", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "nach Irland", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (a) — answer in German",
+          "pages": [
+                18,
+                19
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2020 Ordinary Level, pp.21-24 — © State Examinations Commission.",
+    id: "de-2020-ol-sp-b", topicId: "german-7-4", conceptId: "story-german-describes-happens-pictures-below",
+    section: "SP", questionRef: "2020 OL Section SP Q(b)",
+    questionText: "Write a story, in German, which describes what happens in the pictures below.\nFirstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page. Then give a short account of the remaining pictures in 80 – 100 words. You may use the present tense.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(b) Picture Story",
+                "(Start = 5, Content = 15, Expression = 10)",
+                "Put St. mark in right hand margin, at the bottom of the picture story.",
+                "Ex. (10) Use the grid on page 21 to calculate expression mark in relation to C (Content).",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "C",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "C (15) (pictures 2 – 6): 15 marks as indicated below.",
+                            "Guidelines for marking of content:",
+                            "(i) THREE relevant points of information per picture.",
+                            "(ii) Each point of information must contain a verb.",
+                            "1. (A3) Picture 2: three relevant points of information 3 x 1 mark",
+                            "2. (B3) Picture 3: three relevant points of information 3 x 1 mark",
+                            "3. (C3) Picture 4: three relevant points of information 3 x 1 mark",
+                            "4. (D3) Picture 5: three relevant points of information 3 x 1 mark",
+                            "5. (E3) Picture 6: three relevant points of information 3 x 1 mark",
+                            "Put C. mark in right hand margin, at the bottom of the picture story.",
+                            "Add St., C and Ex. to give overall total."
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                        "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                        "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings and agreements."
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower Ex.",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position, very frequently",
+                                              "wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors;",
+                                              "cases, agreements, endings correct more often than not, especially at upper end of category."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [6,7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings and agreements."
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced scale (0-7) for expression and write “Lower Ex.” to indicate this."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (b) — answer in German",
+          "pages": [
+                20,
+                21
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-sp-b-fill", topicId: "german-7-4", conceptId: "firstly-complete-account-first-picture-correctly",
+    section: "SP", questionRef: "2020 OL Section SP Q(b) — the phrases in the box",
+    questionText: "Firstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "seiner Klasse", marks: 1, contextNote: "The scheme prices the phrases on their own line: “St. (5) Completing the first paragraph. Insertion of appropriate sentences. (5 x 1 mark)”" },
+    { id: "r-2", kind: "point", verbatim: "Globale Küche 2020", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "die gerne kochen", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "interessieren sich sehr", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "500 Euro gewinnen", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (b) — answer in German",
+          "pages": [
+                20,
+                21
+          ],
+          "attribution": "SEC German 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-1-i", topicId: "german-4-0", conceptId: "kind-school-does-herr-hees-run",
+    section: "L1", questionRef: "2020 OL Section L1 Q1(i)",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What kind of school does Herr Hees run?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a dance school", marks: 3, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-1-ii", topicId: "german-4-0", conceptId: "old-school",
+    section: "L1", questionRef: "2020 OL Section L1 Q1(ii)",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "How old is the school?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "27 years old / It opened in 1993", marks: 3, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-2", topicId: "german-4-0", conceptId: "did-herr-hees-decide-open-this",
+    section: "L1", questionRef: "2020 OL Section L1 Q2",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Why did Herr Hees decide to open this type of school? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["He grew up with dance.","His parents were dancers.","He did his first dance course (1) when he was 8 years old. (1) // He learned to dance (1) when he was 8 years old. (1)","He has taken part in competitions.","He has won competitions.","The lifestyle interested him."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-3", topicId: "german-4-0", conceptId: "did-herr-hees-after-finishing-his",
+    section: "L1", questionRef: "2020 OL Section L1 Q3",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What did Herr Hees do after finishing his Abitur?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["He trained as a nurse /He became a nurse/ He worked as a nurse.","He studied (1) for three years. (1)","He worked (1) in a hospital. (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-4", topicId: "german-4-0", conceptId: "who-can-attend-classes-school",
+    section: "L1", questionRef: "2020 OL Section L1 Q4",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Who can attend classes in the school?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":3,"perOption":4,"options":["Disabled people/people with special needs","Children","Old people/senior citizens","Everyone","Men","Women","Good (dancers)","Not so good (dancers)","Beginners","Advanced"],"perOptionSteps":[4,4,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-5-i", topicId: "german-4-0", conceptId: "herr-hees-planning-world-record-attempt",
+    section: "L1", questionRef: "2020 OL Section L1 Q5(i)",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Herr Hees is planning a world record attempt. When and where will this attempt take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme heads this answer “When”. The scheme prints this answer as “5th (2) of August (2)” and, after it, “N.B: Next month: 2 marks”: “Next month” is paid in place of “of August”, never beside it.", group: {"claimMax":2,"perOption":2,"options":["5th","of August","Next month"],"optionMarks":[2,2,2],"optionOf":[null,null,1]} },
+    { id: "r-2", kind: "point", verbatim: "Cologne", marks: 2, contextNote: "The scheme heads this answer “Where”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 5(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l1-5-ii", topicId: "german-4-0", conceptId: "where-can-listeners-get-more-information",
+    section: "L1", questionRef: "2020 OL Section L1 Q5(ii)",
+    stem: "(Interview with Herr Hees) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Where can listeners get more information about this event?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On internet / online / website / tanzschulehees.de", marks: 4, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 5(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l2-1", topicId: "german-4-1", conceptId: "long-had-caller-planned-stay-holiday",
+    section: "L2", questionRef: "2020 OL Section L2 Q1",
+    stem: "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+    questionText: "How long had the caller planned to stay in the holiday home?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two weeks", marks: 2, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l2-2", topicId: "german-4-1", conceptId: "problems-does-caller-have-with-holiday",
+    section: "L2", questionRef: "2020 OL Section L2 Q2",
+    stem: "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+    questionText: "What problems does the caller have with the holiday home?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["He is very disappointed/dissatisfied/unhappy/not impressed with it","It’s different to the photos online","Kitchen is small","Living room is small","There are not enough chairs / four chairs for six people // They can’t sit together at the table.","It’s far from the shops","It’s far from the hiking trails","It’s not central","They have to drive everywhere // They have to always use the car","They can’t sleep","Dogs bark all night"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l2-3", topicId: "german-4-1", conceptId: "phone-number-caller",
+    section: "L2", questionRef: "2020 OL Section L2 Q3",
+    stem: "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+    questionText: "What is the name and the phone number of the caller?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "M-E-I-N-H-A-R-D-T", marks: 4, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme heads this answer “Name”. N.B. Deduct 1 mark for each incorrect/missing letter.", permittedMarks: [0,1,2,3,4] },
+    { id: "r-2", kind: "point", verbatim: "17 28 493", marks: 3, contextNote: "The scheme heads this answer “Phone number”. N.B. All or nothing." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l2-4", topicId: "german-4-1", conceptId: "phone-call-tourist-office-dog-shelter",
+    section: "L2", questionRef: "2020 OL Section L2 Q4",
+    stem: "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+    questionText: "The phone call is to (a) a tourist office (b) a dog shelter (c) the owner of a holiday home (d) a neighbour Indicate your choice by writing a, b, c, or d in the box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the owner of a holiday home", marks: 3, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l3-1", topicId: "german-4-2", conceptId: "man-reports-theft-woman-stolen",
+    section: "L3", questionRef: "2020 OL Section L3 Q1",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "The man reports a theft to the woman. What was stolen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(his rental) bike", marks: 2, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l3-2-i", topicId: "german-4-2", conceptId: "where-man-when-theft-occurred",
+    section: "L3", questionRef: "2020 OL Section L3 Q2(i)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Where was the man when the theft occurred?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["In Zell an der Mosel","30 Km. (1) away (1)","In a souvenir (1) shop (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l3-2-ii", topicId: "german-4-2", conceptId: "describe-thief",
+    section: "L3", questionRef: "2020 OL Section L3 Q2(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Describe the thief. Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", group: {"claimMax":2,"perOption":3,"options":["Blonde","Male/man","(wearing) a jacket","(wearing) jeans","(wearing) a baseball cap","(driving) a van"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l3-3", topicId: "german-4-2", conceptId: "does-woman-tell-man-end",
+    section: "L3", questionRef: "2020 OL Section L3 Q3",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What does the woman tell the man to do in the end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "report the theft / go to the police", marks: 2, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l3-4", topicId: "german-4-2", conceptId: "conversation-takes-place-bike-rental-shop",
+    section: "L3", questionRef: "2020 OL Section L3 Q4",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "The conversation takes place in (a) a bike rental shop (b) a police station (c) a bakery (d) a clothes shop Indicate your choice by putting a, b, c, or d in the box provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a bike rental shop", marks: 3, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-1-i", topicId: "german-4-3", conceptId: "has-launched-interrail-project-age-group",
+    section: "L4", questionRef: "2020 OL Section L4 Q1(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "The EU has launched an Interrail project. What age group will benefit from this?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "18-year olds", marks: 3, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-1-ii", topicId: "german-4-3", conceptId: "many-people-will-benefit-from-free",
+    section: "L4", questionRef: "2020 OL Section L4 Q1(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "How many people will benefit from the free Interrail tickets?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "20,000", marks: 2, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-2-i", topicId: "german-4-3", conceptId: "did-boy-throw-out-window-his",
+    section: "L4", questionRef: "2020 OL Section L4 Q2(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What did the boy throw out the window of his room? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” N.B. Allow singular/plural in points (a) – (e)", group: {"claimMax":2,"perOption":4,"options":["Toys","Books","A lamp","Shoes","Furry/cuddly/soft toys","Everything except his bed and wardrobe"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-2-ii", topicId: "german-4-3", conceptId: "cost-damage",
+    section: "L4", questionRef: "2020 OL Section L4 Q2(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What was the cost of the damage?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4,500 Euro", marks: 2, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-3-i", topicId: "german-4-3", conceptId: "when-will-trio-blind-musicians-perform",
+    section: "L4", questionRef: "2020 OL Section L4 Q3(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "When will the trio of blind musicians perform on TV?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Saturday (4) evening/night (2)", marks: 6, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"p1","verbatim":"Saturday","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"p2","verbatim":"evening/night","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-3-ii", topicId: "german-4-3", conceptId: "events-can-trio-booked",
+    section: "L4", questionRef: "2020 OL Section L4 Q3(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "For what events can the trio be booked?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":3,"options":["Concerts","Weddings","Birthdays","(Family) celebrations/parties/gatherings"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-4-i", topicId: "german-4-3", conceptId: "weather-forecast-northern-germany",
+    section: "L4", questionRef: "2020 OL Section L4 Q4(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+    questionText: "What is the weather forecast for Northern Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":4,"options":["Showers","(between) 5 degrees (2) (and) 9 degrees (2)","Night (2) 0 degrees (2)","Ice/icy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC011GLPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2020 Ordinary Level — © State Examinations Commission.",
+    id: "de-2020-ol-l4-4-ii", topicId: "german-4-3", conceptId: "weather-forecast-southern-germany",
+    section: "L4", questionRef: "2020 OL Section L4 Q4(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+    questionText: "What is the weather forecast for Southern Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":4,"options":["Dry","Cool","Snow","Wind"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2020 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011GLPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2020 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "secFileid": "LC011ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC011GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2021 Ordinary Level — © State Examinations Commission.",
