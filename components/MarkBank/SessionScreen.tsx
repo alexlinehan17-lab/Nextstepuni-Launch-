@@ -43,6 +43,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
   optionGroupMarks,
+  ladderGroupMarks,
   MARK_BANK_LEVEL_LABELS,
   MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
@@ -334,6 +335,13 @@ export function marksClaimed(
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
+      // A descending tariff pays its steps in falling order, each claimed answer
+      // capped at its own price where it carries one (ladderGroupMarks): a
+      // "1 mark only" option in a "3 + 1" menu earns 1 alone, and 3 + 1 with a
+      // full answer. Without option prices it is the first steps, as before.
+      if (r.group.perOptionSteps) {
+        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, picks[id] ?? []);
+      }
       // Options priced one by one: every answer once, at the best of it claimed.
       const optionMarks = r.group.optionMarks;
       if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, picks[id] ?? []);

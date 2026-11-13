@@ -223,6 +223,11 @@ export interface MarkRow {
      * (bestClaimedMarks), the rule an Irish slash-alternative part already
      * follows (irishScoring.ts): a student who claims the full answer and its
      * partial earns the full answer, once. perOption is the highest price.
+     *
+     * Beside perOptionSteps each price is that option's cap on the ladder
+     * (ladderGroupMarks): "N.B. X = 1 mark only" under a "3 + 1" menu pays 1
+     * for X alone and 3 + 1 for X with a full answer. There perOption stays
+     * the first step and no price exceeds the top step.
      */
     optionMarks?: number[];
     /**
@@ -1770,9 +1775,43 @@ export function optionGroupMarks(
   return bestClaimedMarks([...best.values()], g.claimMax);
 }
 
+/**
+ * What a menu priced by a descending tariff pays when some of its options
+ * carry a lower price of their own: "N.B. X = 1 mark only" under a "3 + 1"
+ * menu, or a "[2]" partial inside a "4 + 3 + 3" one.
+ *
+ * Each answer counts once, at the best of it claimed (its own option or one of
+ * its partials, optionOf, as optionGroupMarks reads them), and an option with
+ * no price of its own is uncapped. The claimed answers, sorted by that cap,
+ * are paired with the steps in falling order, and each earns the lesser of
+ * its step and its cap; claimMax answers at most. So in a "3 + 1" menu the
+ * 1-mark option claimed alone earns 1, and with a full answer, in either
+ * order, 3 + 1. A menu with no option priced on its own pays its first steps
+ * as printed, exactly as before (claimedMarks).
+ */
+export function ladderGroupMarks(
+  g: { claimMax: number; perOptionSteps: readonly number[]; optionMarks?: readonly number[]; optionOf?: readonly (number | null)[] },
+  picked: readonly number[],
+): number {
+  if (!g.optionMarks) {
+    return g.perOptionSteps.slice(0, Math.min(new Set(picked).size, g.claimMax)).reduce((n, m) => n + m, 0);
+  }
+  const best = new Map<number, number>();
+  for (const i of new Set(picked)) {
+    const answer = g.optionOf?.[i] ?? i;
+    const cap = g.optionMarks[i] ?? Infinity;
+    best.set(answer, Math.max(best.get(answer) ?? 0, cap));
+  }
+  const caps = [...best.values()].sort((a, b) => b - a).slice(0, Math.max(0, g.claimMax));
+  const steps = [...g.perOptionSteps].sort((a, b) => b - a);
+  return caps.reduce((sum, cap, k) => sum + Math.min(steps[k] ?? 0, cap), 0);
+}
+
 /** What one bounded group is worth when fully claimed. */
 export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[]; optionMarks?: number[]; optionOf?: (number | null)[] }): number {
-  if (g.optionMarks) return optionGroupMarks({ ...g, optionMarks: g.optionMarks }, g.optionMarks.map((_m, i) => i));
+  const all = (g.optionMarks ?? []).map((_m, i) => i);
+  if (g.optionMarks && g.perOptionSteps) return ladderGroupMarks({ ...g, perOptionSteps: g.perOptionSteps }, all);
+  if (g.optionMarks) return optionGroupMarks({ ...g, optionMarks: g.optionMarks }, all);
   return g.perOptionSteps
     ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
     : g.claimMax * g.perOption;
