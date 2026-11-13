@@ -1374,7 +1374,7 @@ const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 49, ordinary: 63 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2025: { higher: 23, ordinary: 26 },
+  2025: { higher: 27, ordinary: 26 },
   2024: { higher: 22, ordinary: 23 },
   2023: { higher: 24, ordinary: 25 },
 };
