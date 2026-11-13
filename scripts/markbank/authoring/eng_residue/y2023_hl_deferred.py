@@ -703,7 +703,12 @@ CARDS = [
          notes="The scheme prints '6'. " + _OR9),
 ]
 
-TOPICS = {}
+TOPICS = {
+    'eng-2023-hl-deferred-q9-b-iv': ('eng-2-16', 'a transformer in a mobile phone charger, as Q9(c) '
+                                                 'is filed; "transformer" filed it under welding, '
+                                                 'where every June transformer card is the arc '
+                                                 'welding transformer'),
+}
 
 # The Topic Atlas topic of each card the reference's headings do not settle
 # (eng_atlas.py).
@@ -751,5 +756,5 @@ ATLAS = {
     'eng-2023-hl-deferred-q9-b-iv': dict(
         topics=['Energy, Electronics & Robotics'],
         note='A transformer in a mobile phone charger, which the reference files '
-             'Q9(b)(iv) under; the card\'s syllabus heading is Joining of materials.'),
+             'Q9(b)(iv) under; the card\'s syllabus heading is Electricity and electronics.'),
 }

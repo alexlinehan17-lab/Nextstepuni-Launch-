@@ -6,7 +6,7 @@
  "lang": "ev",
  "sitting": "deferred",
  "paperKey": "single",
- "reviewedAt": "2026-11-12",
+ "reviewedAt": "2026-11-13",
  "authoringReview": "scripts/markbank/authoring/eng_residue/y2022_hl_deferred.py",
  "sourceHashes": {
   "paper-trail-corpus/deferredexams/2022/LC027ALP000EV.pdf": "45b8f176279f7e9d117e30ca1b8cce125dec3c73e55a270fa4dafb859f68dd91",
@@ -311,7 +311,7 @@
   },
   {
    "cardId": "eng-2022-hl-deferred-q3-b-ii",
-   "markBankTopicId": "eng-1-9",
+   "markBankTopicId": "eng-3-8",
    "questionNumber": "3",
    "atlasTopicIds": [
     "engineering-higher-testing-of-materials-and-products"

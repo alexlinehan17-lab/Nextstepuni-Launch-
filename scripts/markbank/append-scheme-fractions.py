@@ -44,6 +44,10 @@ ROOT = Path(__file__).resolve().parents[2]
 START = '<!-- markbank:fractions -->'
 END = '<!-- /markbank:fractions -->'
 
+# A scheme's markdown is '<year>-<level>.md', or '<year>-<level>-deferred.md'
+# for a deferred sitting, which this tool does not append to.
+SCHEME_STEM = re.compile(r'^(\d{4})-(hl|ol|fl|cl)(-deferred)?$')
+
 # A fraction bar is a filled rule a few points high at most.
 BAR_MAX_HEIGHT = 3.0
 # Under this it is a stray tick; over it, on these schemes, it is always a table
@@ -240,7 +244,11 @@ def main() -> None:
     if sys.argv[1:2] == ['--all']:
         for md in sorted((ROOT / 'examiner-reports').glob('*/schemes/*.md')):
             subject = md.parents[1].name
-            year, level = md.stem.split('-')
+            stem = SCHEME_STEM.match(md.stem)
+            if stem is None or stem.group(3):
+                print(f'{md.parents[1].name} {md.stem}: ' + ('deferred, skipped' if stem else 'not a sitting, skipped'))
+                continue
+            year, level = stem.group(1), stem.group(2)
             if pdf_for(subject, int(year), level) is None:
                 print(f'{subject} {year} {level}: no PDF, skipped')
                 continue

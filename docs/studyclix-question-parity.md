@@ -1,6 +1,6 @@
 # StudyClix official-question parity ledger
 
-Generated: 2026-11-04T13:21:40.437Z
+Generated: 2026-11-13T14:50:10.613Z
 
 This is the question-level completion ledger. Mock questions are excluded. A
 topic is complete only when every factual StudyClix State-exam heading points
@@ -19,14 +19,14 @@ paper/marking-scheme boundary has been visually checked.
 | classical-studies | 16 | 353 | 277 | 76 | 0 | 16 |
 | computer-science | 45 | 302 | 253 | 49 | 0 | 26 |
 | construction-studies | 103 | 1,396 | 1,031 | 365 | 0 | 74 |
-| design-and-communication-graphics | 29 | 427 | 386 | 41 | 0 | 20 |
-| economics | 40 | 1,120 | 822 | 217 | 0 | 34 |
-| engineering | 74 | 2,921 | 2,287 | 634 | 0 | 63 |
+| design-and-communication-graphics | 29 | 427 | 410 | 17 | 0 | 17 |
+| economics | 40 | 1,120 | 699 | 179 | 0 | 34 |
+| engineering | 74 | 2,921 | 2,460 | 461 | 0 | 61 |
 | english | 86 | 566 | 392 | 174 | 0 | 52 |
 | french | 33 | 739 | 486 | 234 | 0 | 32 |
 | geography | 96 | 5,475 | 3,791 | 1,684 | 0 | 91 |
 | german | 25 | 479 | 379 | 100 | 0 | 22 |
-| history | 24 | 466 | 405 | 59 | 0 | 24 |
+| history | 24 | 466 | 428 | 36 | 0 | 24 |
 | home-economics-s-and-s | 54 | 1,561 | 1,172 | 389 | 0 | 49 |
 | irish | 62 | 842 | 532 | 308 | 0 | 35 |
 | italian | 24 | 340 | 317 | 23 | 0 | 14 |
@@ -39,11 +39,11 @@ paper/marking-scheme boundary has been visually checked.
 | physics-and-chemistry | 28 | 706 | 626 | 80 | 0 | 22 |
 | politics-and-society | 20 | 524 | 445 | 79 | 0 | 17 |
 | religious-education | 20 | 366 | 276 | 90 | 0 | 20 |
-| spanish | 33 | 471 | 397 | 74 | 0 | 27 |
+| spanish | 33 | 471 | 411 | 60 | 0 | 27 |
 | technology | 37 | 1,190 | 1,118 | 72 | 0 | 26 |
 
 Total: **1,611 topics**, **37,105 official topic associations**, 
-**26,904 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
+**27,015 matched**, **9,584 source blocked**, and **0 awaiting exact crosswalk review**.
 
 The machine-readable companion contains every non-matched heading under its
 exact subject and topic: `data/examTopics/studyclix-question-parity.json`.

@@ -158,6 +158,14 @@ def step_counted(card):
         return card
     if per * n != total:
         return card
+    # A bare split printed after the answer, "Any TWO of Beethoven's
+    # compositions 3 + 3" (2016 Ordinary), is the tariff the steps now carry,
+    # not words of the answer, and comes off the end of the row. A price
+    # written with its M ("3M + 3M"), or one inside the row, is left as printed.
+    if plus and not each and not (times and int(times.group(2)) == n):
+        tail = text[count.end() + plus.start():]
+        if re.fullmatch(r'\s*\d+(?:\s*\+\s*\d+)+\s*', tail):
+            row = {**row, 'verbatim': text[:count.end() + plus.start()].rstrip()}
     rows[:] = [{**row, 'kind': 'criterion', 'permittedMarks': [per * k for k in range(n + 1)]}]
     return card
 

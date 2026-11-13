@@ -163,6 +163,15 @@ CARDS = [
              '(a); scheme p27 lists three advantages for "4 + 4".',
          use=[0, 1, 2], tariff='orderedSplit', notation='4 + 4', ladder=8,
          question_figure='engineering-2022-HL-paper-q9a-crop'),
+    dict(key=(9, 'b', 'v'),
+         replaces='the shipped card\'s fourth row was the two drawings\' captions '
+                  '"Spur gear Helical gear" run into the part tariff "(Any three) 6 + 6 '
+                  '+ 6", claimable as an answer',
+         why='Scheme p28 answers in three sentences beside two captioned drawings; '
+             'the captions and the "(Any three) 6 + 6 + 6" that prices (b) are left '
+             'out.',
+         use=[0, 1, 2], tariff='questionTotal', total=6,
+         notes="The scheme prints '6 marks'."),
     dict(key=(1, 'b', None),
          replaces='the shipped card ran the two drawings\' captions, "Crystalline Structures '
                   'Amorphous Structures", on at the end of the crystalline answer',
