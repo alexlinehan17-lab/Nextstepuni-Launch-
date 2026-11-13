@@ -181,6 +181,7 @@ SEGMENT = re.compile(rf'^({_LABEL})\s*:\s*(.*)$')
 # one inside its own answer list: "Texas? Without me! (2)" is the English of the
 # paragraph heading above it, not a two-mark half of the ask.
 SEGMENT_Q = re.compile(rf'^({_LABEL})\s*\?\s*:?\s*(.*)$')
+SEGMENT_ASK = re.compile(r'^((?:Why|What|How|Where|When|Who|Which)\b[^:()]{0,40}?)\s*:\s*(\(.*\))\s*$')
 # The Higher theme question lists its points under two headings and says on the
 # paper that an answer may draw on either: "(Can be language use and/or
 # content.)" So these label the list, they do not divide it.
@@ -713,6 +714,14 @@ class DeScheme:
                 items.append(cur)
                 continue
             if cur is not None:
+                if re.fullmatch(r'\(\d{1,2}\)', s):
+                    # A mark the line wrap left on a line of its own: "…
+                    # hundred percent/ 100%" / "(1)" (2026 Ordinary). It is
+                    # the item's price; the scheme's text layer keeps no
+                    # bare "(1)" line to quote, so the answer is shown to
+                    # the end of its words and priced with it.
+                    cur['wrapped'] = cur.get('wrapped', '') + ' ' + s
+                    continue
                 cur['text'] = ' '.join(f"{cur['text']} {s}".split())
             elif steps is None:
                 cue.append(s)
@@ -722,7 +731,7 @@ class DeScheme:
             # one, priced five, and counting its marker would price it six.
             # Only a bracket holding nothing but digits is a mark — "(Abschnitt
             # 1)" names the paragraph the compound was printed in.
-            body_text = AG_ITEM.match(item['text']).group(2)
+            body_text = AG_ITEM.match(item['text']).group(2) + item.get('wrapped', '')
             item['marks'] = sum(
                 sum(int(n) for n in re.findall(r'\d{1,2}', g))
                 for g in re.findall(r'\(\s*(\d[\d,\s\-]*)\)', body_text))
@@ -808,6 +817,15 @@ class DeScheme:
             inline = m is not None
             if m is None:
                 m = SEGMENT_Q.match(s)
+                inline = False
+            if m is None:
+                # A half headed by its own question, with its rate on the
+                # line: "Why is it not realistic: (Any ONE detail: 2 marks)"
+                # (2026 Ordinary TEXT I Q1(d)). Only where what follows the
+                # colon IS a rate.
+                m = SEGMENT_ASK.match(s)
+                if m and read_rate(m.group(2))[0] is None:
+                    m = None
                 inline = False
             if m:
                 tail = m.group(2).strip()

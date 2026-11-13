@@ -1371,7 +1371,7 @@ const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPA
  * and level and never folded into the frozen hashes: new sittings whole, and
  * the 2021-2025 listening asks (Section L1-L4) the bank excluded until then. */
 const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 45, ordinary: 0 },
+  2026: { higher: 45, ordinary: 57 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {};
 const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-l[1-4]-/;
