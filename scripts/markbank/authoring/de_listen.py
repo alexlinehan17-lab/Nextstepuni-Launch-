@@ -152,6 +152,11 @@ def rate_line(s):
     s = ' '.join(s.split())
     if not re.search(r'\bmarks?\b|\bAny\b|[x×]\s*\d', s, re.I):
         return None, None
+    # "Either one of the following details: 3 marks: 2, 1" (2017 Ordinary):
+    # one answer at 3, each pricing its own parts 2 and 1.
+    either = re.fullmatch(r'Either one of the following details:\s*(\d{1,2})\s*marks?:\s*[\d,\s]+', s, re.I)
+    if either:
+        return [int(either.group(1))], None
     got = _steps(s)
     if got is not None:
         return got, None
@@ -426,6 +431,11 @@ def _or_answers(body):
     return body[:at + 1] + out
 
 
+FORM_FIELD_TAIL = re.compile(
+    r'(?<=\S)\s+(?:(?:Rufnummer|Rückruf|Kontaktnummer|Anruf von|Grund des Anrufs|Der Anrufer|Die Anruferin)'
+    r'\b[:\s_]*|[A-Z][a-z]+:\s*_{3,}\s*)$')     # … or "Date: ______" (2017)
+
+
 def _self_priced(it):
     """A rate whose answers are all required and each prints its own price,
     as points: "(1+ 2 marks)" over "(a) She wants to do something nice with
@@ -538,6 +548,9 @@ def leaf_rows(leaf, asked_text):
         s = ' '.join(raw.split())
         if CONNECTOR.match(s):
             last = last_note = None
+            continue
+        if s == 'OR' and group is not None and group['steps'] and group['options']:
+            last = last_note = None          # between two lettered alternatives
             continue
         # "AND (Any two: 2 x 1 mark)": the connector and the rate on one line.
         s = re.sub(r'^(?:AND|PLUS)\s+(?=\()', '', s)
@@ -793,8 +806,8 @@ PARTIAL_INLINE = re.compile(
     # Website/online: 2 marks", 2021 Ordinary), and with the condition it is
     # paid on where one follows ("NB: He repeats the word 'help' = 2 marks if
     # no other marks are awarded", 2026 Higher).
-    r'\s+(?:N\.?\s?B\.?:?\s*(?P<a1>(?:(?!N\.?\s?B\b).)+?)\s*[:=]\s*(?P<n1>[1-9])\s*marks?'
-    r'(?:\s+(?P<c1>if\b[^()]*?))?'
+    r'\s+(?:N\.?\s?B\.?:?\s*(?P<a1>(?:(?!N\.?\s?B\b).)+?)(?:\s*[:=]|(?<=”))\s*(?P<n1>[1-9])\s*marks?'
+    r'(?:\s+only)?(?:\s+(?P<c1>if\b[^()]*?))?'
     r'|\(Allow:?\s*(?P<a2>.+?)\s*[:=]\s*(?P<n2>[1-9])\s*marks?\)'
     # "(Allow: Triathlon if other answers are not given (2))" (2022 Ordinary).
     r'|\(Allow:?\s*(?P<a4>[^()]+?)\s+(?P<c4>if\b[^()]*?)\s*\((?P<n4>[1-9])\)\)'
@@ -1219,6 +1232,10 @@ def cards(year, level, refuse, card_id, question_ref, concept_for, sitting=None)
         said = ([it['text'] for it in items if it['kind'] == 'point']
                 + [o['text'] for it in items if it['kind'] == 'group' for o in it['options']])
         text, choices = question_text(lines, said)
+        # The note form's own field, set on the row of the ask that names it:
+        # "• the caller's phone number Rufnummer ______" (2017), "… phone
+        # number Rückruf" (2021 Higher).
+        text = '\n'.join(FORM_FIELD_TAIL.sub('', line) for line in text.split('\n'))
         tag = tags.get(str(part))
         if tag is None:
             refuse('the Topic Atlas holds no question for this listening part', ref,
@@ -1292,6 +1309,10 @@ def main():
                 + [o['text'] for it in got[0] if it['kind'] == 'group' for o in it['options']]
                 if isinstance(got, tuple) else [])
         text, choices = question_text(lines, said)
+        # The note form's own field, set on the row of the ask that names it:
+        # "• the caller's phone number Rufnummer ______" (2017), "… phone
+        # number Rückruf" (2021 Higher).
+        text = '\n'.join(FORM_FIELD_TAIL.sub('', line) for line in text.split('\n'))
         print(f'== L{key[0]} Q{key[1]}{f"({key[2]})" if key[2] else ""} p{page}: {text[:100]!r}'
               + (f' CHOICES {choices}' if choices else ''))
         if leaf is None:

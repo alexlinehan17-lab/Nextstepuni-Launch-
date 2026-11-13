@@ -168,7 +168,8 @@ def _question_total(block):
 # only ever collected inside a block a head has closed.
 ANSWER_NUM = re.compile(r'^(\d{1,2})\s*\.\s*(.*)$')
 ANSWER_LETTER = re.compile(r'^\(\s*([a-z])\s*\)\s*(.+)$')
-BULLET = re.compile(r'^[•\uf0b7]\s*(.+)$')
+# (2017 Ordinary lists with hyphens: "- Warm clothing".)
+BULLET = re.compile(r'^(?:[•\uf0b7]|-(?=\s))\s*(.+)$')
 # The continuation the SEC prints for details sharing one opening: "2. … war
 # sehr klein / hatte nur 30 Quadratmeter". The ellipsis stands in for the first
 # answer's subject and is kept verbatim.
@@ -187,12 +188,14 @@ INNER_MARK = re.compile(r'\((\d{1,2})(?:\s*marks?)?\)')
 # rebel 500 years ago (2) NB. '…for 500 years' is incorrect". It is an
 # instruction, not part of the answer, and left attached it hid the mark that
 # precedes it and cost the whole ask its tariff.
-TAIL_NOTE = re.compile(r'(\(\d{1,2}(?:\s*marks?)?\))\s*((?:N\.?B\.?|Note|Allow|'
+# (Or bracketed: "My real interest (2) (Allow: main)", 2017 Ordinary.)
+TAIL_NOTE = re.compile(r'(\(\d{1,2}(?:\s*marks?)?\))\s*((?:\(\s*)?(?:N\.?B\.?|Note|Allow|'
                        r'Accept|Penalise|Deduct)\b.*)$', re.I)
 
 # The named halves of one ask: "How:" over a two-mark list, "What:" over
 # another. Both are answered — they are not alternatives.
-_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}' \
+# (A name may carry a digit, "MrWissen2go:", 2018 Ordinary.)
+_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}(?:\d[a-z]{1,4})?' \
          r'(?:\s+[a-z]{1,14}|\s+[A-Z][a-z\u00e4\u00f6\u00fc\u00df]{2,10})?'
 # A segment label with a colon may carry its own answer on the same line:
 # "Where: to the swimming pool (1)", "Wie lange: (etwas) mehr als ein Jahr
@@ -213,7 +216,10 @@ DIRECTIVE = re.compile(r'^(?:Allow|Accept|Either|Or)\s*:?\s*$', re.I)
 NOTE = re.compile(r'^\(?\s*(?:N\.?B\.?|Note|Allow\b|Accept\b|Penalise|Deduct|'
                   r'Where answers|Answers in|Evidence needed|Quotation without|'
                   r'Award|Any three; no marks)\b'
-                  r'|^\([^)]*\b(?:needed|required|only)\)\s*$', re.I)
+                  r'|^\([^)]*\b(?:needed|required|only)\)\s*$'
+                  # "(Incorrect pronoun = Penalise once; incorrect tense =
+                  # penalise once)" (2017 Higher).
+                  r'|^\((?=[^)]*\bpenalise\b)[^)]*\)\s*$', re.I)
 PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$)')
 # Where a reprinted German reading question STOPS. Every one of them closes
 # with the place in the text its answer is found — "(Zeile 1 – 9)", "(lines 30
@@ -234,9 +240,17 @@ MARK_BOXES = re.compile(r'^(?:\(\d{1,2}\)\s*){2,}$')
 
 # "Any three", "Any THREE details", "Any 3" — the claim count, wherever the SEC
 # puts it in the rate line.
+SEGMENT_RATED = re.compile(r'^([A-Z][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,4})\s*:\s*(.+)$')
+BRACKET_HEADING = re.compile(r'^\((?!(?:Must|Allow|Accept|Any|Only|Not|No|Both|One|Two|Three|Plus|Also)\b)'
+                             r'([A-Z][a-z]+(?:\s+[a-z]+){0,3}(?:\s+[A-Z][a-z]+)?)\)$')
+# (Or the quoted answer straight before its price: "N.B. “I want to become an
+# actor.” 1 mark only", 2017 Ordinary.)
+NB_PARTIAL = re.compile(r'^N\.?\s?B\.?:?\s*(.+?)(?:\s*[:=]|(?<=”))\s*([1-9])\s*marks?(?:\s+only)?\.?$', re.I)
+LABELLED_SUMMARY = re.compile(r'^\(\s*\d{1,3}\s*marks?\s*:\s*[A-Z][a-z]+\s*:\s*\d.*\)$')
+INSTRUCTION_DE = re.compile(r'^(?:Schreiben|Geben|Nennen|Beschreiben|Erklären|Begründen|Finden)\s+Sie\b')
 # "(Any TWO of the following details: 3 marks: 2, 1)" (2018 Ordinary).
 ANY_N = re.compile(r'^(?:Plus\s+)?Any\s+(\w+)\s*(?:of\s+the\s+following\s+)?'
-                   r'(?:details?|examples?|points?|of)?\s*:?\s*', re.I)
+                   r'(?:details?|examples?|points?|items?|reasons?|of)?\s*:?\s*', re.I)
 # A rate spec, in every shape the ten schemes print.
 SPEC_TIMES = re.compile(r'^(\d{1,2})\s*[x×]\s*(\d{1,2})(?:\s*marks?)?$', re.I)
 SPEC_PLUS = re.compile(r'^\d{1,2}(?:\s*marks?)?(?:\s*\+\s*\d{1,2}(?:\s*marks?)?)+$', re.I)
@@ -881,6 +895,11 @@ class DeScheme:
         marks)": under the fixed answer it is adding to.
         """
         cue_lines, notes = [], []
+        # The halves the part's own head prices by name: "(c) 9 marks:
+        # Incident: 5 marks: 2, 3; Outcome: 4 marks: 2, 2" (2017 Ordinary).
+        named = {lab: [int(n) for n in re.findall(r'\d{1,2}', split)]
+                 for lab, split in re.findall(
+                     r'\b([A-Z][a-z]+):\s*\d{1,2}\s*marks?:\s*([\d,\s]+?)\s*(?:;|$)', clause or '')}
         segments = [{'label': None, 'steps': None, 'answers': [],
                      'tentative': False}]
         overview = None
@@ -932,9 +951,29 @@ class DeScheme:
             if SUBLIST.match(s) or DIRECTIVE.match(s):
                 cur = None
                 continue
+            if (NOTE.match(s) and cur is not None and segments[-1]['steps'] is not None
+                    and NB_PARTIAL.match(s)):
+                # "N.B. “What do you want to do?”: 1 mark only" under the answer
+                # it is a cheaper form of (2017 Ordinary): carried on that
+                # answer, where it is claimed in its place.
+                cur['text'] = f"{cur['text']} {s}"
+                cur = None
+                continue
             if NOTE.match(s):
                 notes.append(s)
                 cur = None
+                continue
+            if LABELLED_SUMMARY.match(s):
+                # "(6 marks: What: 3 marks; How: 3 marks)" (2017 Ordinary):
+                # the halves' tariffs, each printed again on its own half.
+                continue
+            # The question's own second sentence, after a first that ended
+            # on its line reference: "… beschreiben? (Zeile 1 – 19 / 25 –
+            # 27)" / "Schreiben Sie je drei kurze informative Sätze …" (2017
+            # Higher), before any rate or answer.
+            if (phase == 'answers' and cue_lines and INSTRUCTION_DE.match(s)
+                    and all(g['steps'] is None and not g['answers'] for g in segments)):
+                cue_lines.append(s)
                 continue
             m = SEGMENT.match(s)
             inline = m is not None
@@ -950,11 +989,28 @@ class DeScheme:
                 if m and read_rate(m.group(2))[0] is None:
                     m = None
                 inline = False
+            if m is None:
+                # A longer heading, as long as a rate follows its colon:
+                # "Planned for the summer: Any ONE detail: 2 marks" (2017
+                # Ordinary).
+                m = SEGMENT_RATED.match(s)
+                if m and read_rate(m.group(2))[0] is None:
+                    m = None
+                inline = False
+            if (m is None and phase == 'cue' and cue_lines and cue_lines[-1].endswith('?')
+                    and BRACKET_HEADING.match(s)):
+                phase = 'answers'            # the heading ends the question
+            if m is None and phase == 'answers' and BRACKET_HEADING.match(s):
+                # "(Holiday Plans)" / "(After his holidays)" over the answers
+                # each half prints (2017 Ordinary): a heading, priced nowhere.
+                new_segment(BRACKET_HEADING.match(s).group(1), None, tentative=True)
+                continue
             if m:
                 tail = m.group(2).strip()
-                if inline and re.fullmatch(r'\((?:Allow|Accept|N\.?\s?B)\b[^()]*\)', tail, re.I):
-                    # "Stella: (Allow: sie)" (2018 Higher): the half's heading
-                    # with an aside, the rate printed above it.
+                if re.fullmatch(r'\((?:Allow|Accept|N\.?\s?B)\b[^()]*\)', tail, re.I):
+                    # "Stella: (Allow: sie)" (2018 Higher), "Was? (Allow
+                    # Perfect / Imperfect)" (2017 Higher): the half's heading
+                    # with an aside.
                     notes.append(tail)
                     tail = ''
                 got, _cnt = read_rate(tail)
@@ -988,6 +1044,16 @@ class DeScheme:
                     # sitzen?“ (1)" (2018 Higher): a half whose one answer
                     # starts on its heading's line and is priced where it wraps.
                     new_segment(m.group(1), None, tentative=True)
+                    cur = {'text': tail, 'n': None}
+                    segments[-1]['answers'].append(cur)
+                    continue
+                if got is None and not mark and tail and inline and m.group(1) in named:
+                    # "Incident: He cut Mrs. Pawlik's … hair (2) AND" / "he
+                    # ruined/wrecked it/did a bad job. (3)": priced by the
+                    # part's head, its answer begun on the heading's line.
+                    phase = 'answers'
+                    new_segment(m.group(1), named[m.group(1)])
+                    pending = None
                     cur = {'text': tail, 'n': None}
                     segments[-1]['answers'].append(cur)
                     continue
@@ -1139,6 +1205,22 @@ class DeScheme:
         segments = [g for g in merged if g['steps'] is not None or g['answers']]
         if not segments:
             return 'the scheme prints no rate line and no answers for this ask'
+        if len(segments) > 1 and any(g['steps'] is None for g in segments):
+            # Halves under bracketed headings, each answer pricing itself, the
+            # part's head the whole split: "(b) 6 marks: 1, 1, 1, 1, 2" over
+            # "(Holiday Plans)" / "… Croatia (1) … (1) … (1) … (1)" and
+            # "(After his holidays)" / "Work experience … (2)" (2017
+            # Ordinary). One list, every answer required, read in order.
+            want, _cnt = read_rate(clause or '')
+            flat = []
+            for g in segments:
+                for a in g['answers']:
+                    flat += ([a['marks']] if a['marks'] is not None
+                             else [int(n) for n in INNER_MARK.findall(a['text'])])
+            if want and flat == want and all(g['answers'] for g in segments):
+                segments = [{'label': None, 'steps': want, 'tentative': False,
+                             'labels': [g['label'] for g in segments],
+                             'answers': [a for g in segments for a in g['answers']]}]
 
         exhaustive = False
         if len(segments) == 1 and segments[0]['steps'] is None:
@@ -1318,10 +1400,11 @@ def top_romans(clause):
 
 
 def split_romans(clause):
-    """The roman split a part head prints: "(i) 4 marks; (ii) 6 marks"."""
+    """The roman split a part head prints: "(i) 4 marks; (ii) 6 marks", or
+    "(i) = 4 marks; (ii) = 6 marks" (2017 Higher)."""
     out = {}
     for roman, marks in re.findall(
-            r'\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)\s*:?\s*(\d{1,3})', clause or '', re.I):
+            r'\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)\s*[:=]?\s*(\d{1,3})', clause or '', re.I):
         out.setdefault(roman.lower(), int(marks))
     return out
 
@@ -1405,3 +1488,107 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+
+
+# ---------------------------------------------------------- answer grids ----
+GRID_ASK = re.compile(r'Fill in the information required in the box below', re.I)
+GRID_PRICE = re.compile(r'\(\s*(\d{1,2})\s*\)')
+
+
+def scheme_grid(year, level, steps, subject=SUBJECT, sitting=None):
+    """[(column, [(row label, answer, marks)])] for an answer GRID, read off
+    the scheme PDF by position, or None.
+
+    2018 Ordinary TEXT II Q1 answers "Fill in the information required in the
+    box below" with a table: a column per YouTuber ("Julien Bam", "Dagi Bee",
+    "MrWissen2go", "Lisa Sophie") and a row per field ("Age?", "Born in?", …),
+    each cell priced "(1)". The text layer interleaves the columns, so the
+    cells are read by their x position under the column heads and their y
+    position between the row labels. Believed only where every column's
+    cells add to that column's printed share of the ask (the head's split,
+    `steps`), and no cell carries a choice of its own ("Any ONE …").
+    """
+    import pymupdf
+    path = os.path.join(schemes_dir(subject),
+                        f'{year}-{level}{"-deferred" if sitting == "deferred" else ""}.pdf')
+    if not os.path.exists(path):
+        return None
+    with pymupdf.open(path) as doc:
+        for pno in range(doc.page_count):
+            if GRID_ASK.search(' '.join(doc[pno].get_text().split())):
+                words = doc[pno].get_text('words')
+                break
+        else:
+            return None
+    lines, right = {}, {}
+    for x0, y0, x1, _y1, w, *_ in words:
+        lines.setdefault(round(y0), []).append((x0, w))
+        right[(round(y0), x0)] = x1
+    ys = sorted(lines)
+    at = next(y for y in ys if GRID_ASK.search(' '.join(w for _x, w in sorted(lines[y]))))
+    # The column heads: the first line under the ask, its words clustered
+    # by the gaps between them.
+    head_y = next((y for y in ys if y > at), None)
+    if head_y is None:
+        return None
+    heads = []
+    for x, w in sorted(lines[head_y]):
+        if heads and x - heads[-1]['end'] < 20:
+            heads[-1]['name'] += f' {w}'
+        else:
+            heads.append({'x': x, 'name': w})
+        heads[-1]['end'] = right[(head_y, x)]
+    if len(heads) != len(steps) or len(heads) < 2:
+        return None
+    left = heads[0]['x'] - 8
+    edges = [h['x'] - 8 for h in heads[1:]] + [10 ** 6]
+    # The row labels: the words left of the first column, a label running
+    # on until it ends in "?" or ":".
+    rows, cur = [], None
+    end_y = ys[-1] + 1
+    for y in ys:
+        if y <= head_y:
+            continue
+        label = ' '.join(w for x, w in sorted(lines[y]) if x < left)
+        if not label:
+            continue
+        if re.match(r'^\d{1,2}\.\s', label):        # the next question
+            end_y = y - 4
+            break
+        if cur is None:
+            cur = {'y': y, 'last': y, 'label': label}
+            rows.append(cur)
+        else:
+            cur['label'] += f' {label}'
+            cur['last'] = y
+        if re.search(r'[?:]$', cur['label']):
+            cur = None
+    if not rows or cur is not None:
+        return None
+    out = [(h['name'], []) for h in heads]
+    # A row runs from halfway after the label above to halfway before the
+    # label below: 2018 sets a field's answers both above and below the
+    # middle of its label ("Details / about / his/her / followers:").
+    bounds = [(head_y + 12 + rows[0]['y']) / 2] + [
+        (rows[n]['last'] + rows[n + 1]['y']) / 2 for n in range(len(rows) - 1)] + [end_y]
+    for n, row in enumerate(rows):
+        lo, hi = bounds[n], bounds[n + 1]
+        for c, (_name, cells) in enumerate(out):
+            x_lo = heads[c]['x'] - 8
+            text = ' '.join(w for y in ys if lo <= y < hi
+                            for x, w in sorted(lines[y]) if x_lo <= x < edges[c])
+            text = ' '.join(text.replace('•', ' ').split())
+            if re.search(r'\bAny\b', text):
+                return None
+            pos = 0
+            for m in GRID_PRICE.finditer(text):
+                answer = text[pos:m.start()].strip(' /')
+                if not answer:
+                    return None
+                cells.append((row['label'], answer, int(m.group(1))))
+                pos = m.end()
+            if text[pos:].strip():
+                return None
+    if [sum(m for _l, _a, m in cells) for _name, cells in out] != list(steps):
+        return None
+    return out

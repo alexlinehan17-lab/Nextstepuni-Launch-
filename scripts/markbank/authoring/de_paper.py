@@ -106,14 +106,16 @@ SWEPT_MARKER = re.compile(
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate|Scr[úu]d[úu] na hArdteistim|German\s*[–‒-]|'
     r'Gearm[áa]inis\s*[–‒-]|N[íi]l aon [áa]bhar|There is no examination|'
-    r'Thall\s*/|Page \d+$|\d{1,3}$|Bileog|Freagair\b|Answer\s+(?:Question|Text|'
+    r'Thall\s*/|Page \d+(?: of \d+)?$|\d{1,3}$|Bileog|Freagair\b|Answer\s+(?:Question|Text|'
     r'either|question|Questions)|Treoracha\s*$|Instructions\s*$|N[ÓO]/OR\s*$|'
     r'ODER\s*$|OR\s*$|N[óo]ta\s*:|Note\s*:|Sampla\b|Example\s*:|Beispiel\s*:|'
     r'Lesen Sie\b|Bearbeiten Sie\b|Quellen\s*:|Nach\s*:|'
     # The blank page's title and the running head of 2021, read into the ask
     # above them. (Never a rule of underscores: a gap-fill line opens with its
     # gap, "________ hat, ist in Gefahr.")
-    r'Leathanach\s+B[áa]n|Blank\s+Page|(?:An\s+)?Ardteistim[ée]ireacht,?\s*\d{4})', re.I)
+    r'Leathanach\s+B[áa]n|Blank\s+Page|(?:An\s+)?Ardteistim[ée]ireacht,?\s*\d{4}|'
+    # The Irish page foot of 2017, "Lch 5 de 20".
+    r'Lch\.?\s+\d+\s+de\s+\d+)', re.I)
 
 # The instruction line that names the language an ask must be answered in. The
 # paper states it, in both of its own languages, above the questions it governs.
@@ -691,7 +693,10 @@ NOW_ANSWER = re.compile(r'^Now answer Question\b', re.I)
 # The running foot of every listening page — in 2020 with the page number
 # before it on the same line ("3 Scrúdú na hArdteistiméireachta, 2020").
 AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'
-                        r'Leaving Certificate Examination|Scr[úu]d[úu] na)', re.I)
+                        r'Leaving Certificate Examination|Scr[úu]d[úu] na|'
+                        # "8/Page 2 of 8" (2017), the end of "Leathanach 2 de
+                        # 8/Page 2 of 8" across the column bound.
+                        r'(?:de\s+)?(?:\d{1,2}/)?Page\s+\d+\s+of\s+\d+$)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
 # numbers its last item "5." in the Irish column and "6." in the English

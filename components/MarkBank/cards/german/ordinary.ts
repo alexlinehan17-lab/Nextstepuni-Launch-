@@ -844,7 +844,7 @@ export const CARDS: SecCard[] = [
                 "Content (C) and Expression (Ex) to be marked consecutively.",
                 "(a) Complete Johanna’s part of the dialogue below based on the information given.",
                 "(Write 25 – 30 words)",
-                "Sie: Oh, cool – dann sehen wir uns in Berlin! Mach’s gut und lass dich nicht",
+                "Sie: Oh, cool – dann sehen wir uns in Berlin! Mach’s gut und lass dich nicht nerven!",
                 "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category."
           ],
           "criteria": [
@@ -914,8 +914,7 @@ export const CARDS: SecCard[] = [
                       "guidance": [
                             "Sie: Wann kommt ihr wieder zurück?",
                             "(F1) Johanna: Wir kommen in siebzehn Tagen zurück. (F1)",
-                            "N.B. Allow fewer days than siebzehn/nächste Woche.",
-                            "nerven!"
+                            "N.B. Allow fewer days than siebzehn/nächste Woche."
                       ]
                 },
                 {
@@ -3113,8 +3112,7 @@ export const CARDS: SecCard[] = [
                             "Ihre Eltern arbeiten in Hamburg/hier.",
                             "Sie fliehen vor Krieg/Terror.",
                             "Sie sind Flüchtlinge.",
-                            "Es gibt in ihren Ländern Krieg und Terror.",
-                            "Warum?"
+                            "Es gibt in ihren Ländern Krieg und Terror."
                       ]
                 },
                 {
@@ -3123,7 +3121,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Herr Kammann, Sie wollen die Heimatländer Ihrer Schüler besuchen.",
+                            "Sie: Herr Kammann, Sie wollen die Heimatländer Ihrer Schüler besuchen. Warum?",
                             "(C1) Jan Kammann: Any ONE of the following for C1",
                             "Ich fand es spannend, wenn die jungen Leute von ihren",
                             "Heimatländern erzählten.",
@@ -5406,8 +5404,7 @@ export const CARDS: SecCard[] = [
                             "Wenn man einen Laptop kauft.",
                             "Wenn man eine Ferienreise bucht.",
                             "Wenn man Schuhe/ Brillen/Zeitschriften kauft.",
-                            "Wenn man zum Park/zum Museum/ins Theater/auf Konzerte geht.",
-                            "dahin?"
+                            "Wenn man zum Park/zum Museum/ins Theater/auf Konzerte geht."
                       ]
                 },
                 {
@@ -5416,7 +5413,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Ich möchte meine Freundin in Berlin besuchen. Wie komme ich am billigsten",
+                            "Sie: Ich möchte meine Freundin in Berlin besuchen. Wie komme ich am billigsten dahin?",
                             "(D1) Jens: Mit dem Bus./ Mit einem Studententicket. (D1)"
                       ]
                 },
@@ -7681,7 +7678,6 @@ export const CARDS: SecCard[] = [
                 "Content (C) and Expression (Exp) to be marked consecutively.",
                 "(a) Complete Laura’s part of the dialogue below based on the information given in Text II.",
                 "(Write 25 – 30 words)",
-                "Freunden?",
                 "Sie: Oh, das hört sich alles gut an! Gute Reise, Laura!!",
                 "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
           ],
@@ -7692,7 +7688,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Hallo, Laura! Du bist gerade auf Interrail-Tour. Reist du allein oder mit",
+                            "Sie: Hallo, Laura! Du bist gerade auf Interrail-Tour. Reist du allein oder mit Freunden?",
                             "(A1) Laura: Any ONE of the following for A1",
                             "Ich reise mit meinen/vier Schulfreunden.",
                             "Ich reise mit Sophie, Nikolas und Leon. (A1)"
@@ -7748,8 +7744,7 @@ export const CARDS: SecCard[] = [
                       "guidance": [
                             "Sie: Was macht ihr abends?",
                             "(F2) Laura: Abends sitzen wir vorm Zelt. / Wir grillen Würstchen. / Wir gehen aus. /",
-                            "Wir gehen in die Kneipe. / ... (F2)",
-                            "OR"
+                            "Wir gehen in die Kneipe. / ... (F2)"
                       ]
                 },
                 {
@@ -10004,7 +9999,6 @@ export const CARDS: SecCard[] = [
                 "Content (C) and Expression (Ex) to be marked consecutively.",
                 "(a) Complete Otto’s part of the dialogue below based on the information given.",
                 "(Write 25 – 30 words)",
-                "Wie findest du das?",
                 "Sie: Oh, danke, Otto! Das hilft mir bei der Planung! Wir sehen uns bald!",
                 "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
           ],
@@ -10015,7 +10009,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Hallo, Otto! Ich soll eine Berlinreise organisieren.",
+                            "Sie: Hallo, Otto! Ich soll eine Berlinreise organisieren. Wie findest du das?",
                             "(A1) Otto: Das finde ich ... /Ich finde das ... (A1)"
                       ]
                 },
@@ -10046,8 +10040,7 @@ export const CARDS: SecCard[] = [
                       "permittedMarks": [0,1],
                       "guidance": [
                             "Sie: Und meine kleine Schwester? Was sollte sie machen?",
-                            "(D1) Otto: Sie kann... Any ONE activity (D1)",
-                            "Any ONE tip"
+                            "(D1) Otto: Sie kann... Any ONE activity (D1)"
                       ]
                 },
                 {
@@ -10056,7 +10049,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Welchen Tipp hast du für mich?",
+                            "Sie: Welchen Tipp hast du für mich? Any ONE tip",
                             "(E1) Otto: Du kannst eine Untergrund-Tour machen.",
                             "Du kannst .... (E1)"
                       ]
@@ -10068,10 +10061,7 @@ export const CARDS: SecCard[] = [
                       "permittedMarks": [0,1,2],
                       "guidance": [
                             "Sie: Was sollten wir in Berlin essen? Und wo?",
-                            "(F2) Otto: Was? (F1) Wo? (F1)",
-                            "E-Mail (25-30 words) (15 marks)",
-                            "(Content = 8, expression = 7)",
-                            "Content (C) and Expression (Ex) to be marked consecutively."
+                            "(F2) Otto: Was? (F1) Wo? (F1)"
                       ]
                 },
                 {
@@ -10139,6 +10129,9 @@ export const CARDS: SecCard[] = [
     rubric: {
           "system": "french",
           "taskRequirements": [
+                "E-Mail (25-30 words) (15 marks)",
+                "(Content = 8, expression = 7)",
+                "Content (C) and Expression (Ex) to be marked consecutively.",
                 "(b) You want to spend the summer in Austria. You find the advertisement below and want to",
                 "apply for the job by email, in German, using the following points to guide you:",
                 "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
@@ -12404,7 +12397,6 @@ export const CARDS: SecCard[] = [
                 "Content (C) and Expression (Ex) to be marked consecutively.",
                 "(a) Complete Laura-Marie’s part of the dialogue below based on the information given in TEXT II.",
                 "(Write 25 – 30 words)",
-                "gefahren bist?",
                 "Sie: Viel Glück bei deinem nächsten Rennen, Laura-Marie!",
                 "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
           ],
@@ -12415,7 +12407,7 @@ export const CARDS: SecCard[] = [
                       "maxMarks": 1,
                       "permittedMarks": [0,1],
                       "guidance": [
-                            "Sie: Hey, Laura-Marie! Wie alt warst du, als du zum ersten Mal Go-Kart",
+                            "Sie: Hey, Laura-Marie! Wie alt warst du, als du zum ersten Mal Go-Kart gefahren bist?",
                             "(A1) Laura-Marie: Ich war zehn Jahre alt. (A1)"
                       ]
                 },
@@ -14659,7 +14651,7 @@ export const CARDS: SecCard[] = [
                 "Content (C) and Expression (Ex) to be marked consecutively.",
                 "(a) Complete Elisabeth’s part of the dialogue below based on the information given in Text II.",
                 "(Write 25 – 30 words)",
-                "Sie: Vielen Dank für das Interview, Elisabeth! Ich freue mich auf das nächste",
+                "Sie: Vielen Dank für das Interview, Elisabeth! Ich freue mich auf das nächste Video!",
                 "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
           ],
           "criteria": [
@@ -14723,8 +14715,7 @@ export const CARDS: SecCard[] = [
                       "permittedMarks": [0,1],
                       "guidance": [
                             "Sie: Warst du schon immer #BookTok Kreatorin?",
-                            "(F1) Elisabeth: Nein, ich bin (gelernte) Buchhändlerin. (F1)",
-                            "Video!"
+                            "(F1) Elisabeth: Nein, ich bin (gelernte) Buchhändlerin. (F1)"
                       ]
                 },
                 {
@@ -16751,7 +16742,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Ordinary Level — © State Examinations Commission.",
     id: "de-2026-ol-t2-5", topicId: "german-6-0", conceptId: "based-text-indicate-whether-following-statements",
     section: "T2", questionRef: "2026 OL Section T2 Q5",
-    questionText: "Based on TEXT II, indicate whether\nthe following statements are true or",
+    questionText: "Based on TEXT II, indicate whether\nthe following statements are true or\nfalse.\nPut a tick ( ) in the appropriate boxes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1-1", kind: "point", verbatim: "False", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The answer to statement 1, in the order the examination prints them." },
