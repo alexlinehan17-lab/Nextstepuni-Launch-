@@ -25537,7 +25537,7 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "The release mechanism should release quickly in case of emergency.", marks: null, route: "a" },
     { id: "r-4", kind: "point", verbatim: "Configuration of the harness should be adjustable to fit and may have multiple points of attachment.", marks: null, route: "a" },
     { id: "r-5", kind: "point", verbatim: "Ergonomic design, straps should be wide enough for comfort.", marks: null, route: "a" },
-    { id: "r-6", kind: "point", verbatim: "Harness is required to comply with safety standards. 4 + 4", marks: null, route: "a" },
+    { id: "r-6", kind: "point", verbatim: "Harness is required to comply with safety standards.", marks: null, route: "a" },
     { id: "r-7", kind: "point", verbatim: "LED lights use less power to run than traditional lighting.", marks: null, route: "b" },
     { id: "r-8", kind: "point", verbatim: "These lights have a long life in operation.", marks: null, route: "b" },
     { id: "r-9", kind: "point", verbatim: "LED lights can be controlled by sensors to turn off or change colour.", marks: null, route: "b" },

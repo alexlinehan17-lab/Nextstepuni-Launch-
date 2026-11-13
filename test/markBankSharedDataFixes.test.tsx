@@ -8,6 +8,8 @@
  *  - the 2021-2025 Higher Engineering OR cards priced as a whole, and
  *    Technology 2021 HL C4(a)(ii), carry one route per branch;
  *  - the eight Engineering rows held back from menus are menus;
+ *  - a split the scheme prints after an answer's full stop is not part of it
+ *    (Engineering 2024 HL Q9(c)(i));
  *  - Paper Trail names the Technology and DCG -015- booklets for the two
  *    sections they hold.
  */
@@ -93,6 +95,19 @@ describe('an OR card priced as a whole carries one route per branch', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Fairtrade seeks/ }));
     expect(guidance()).toContain('That looks like Got it.');
     expect(screen.getByRole('button', { name: /^CE products must/ })).toBeDisabled();
+  });
+});
+
+describe('a split printed after an answer is not part of it', () => {
+  test('eng-2024-hl-q9-c-i r-6 ends at its full stop, without the "4 + 4" the scheme printed after it', () => {
+    expect(card(ENGINEERING_HIGHER, 'eng-2024-hl-q9-c-i').rows.find(r => r.id === 'r-6')?.verbatim)
+      .toBe('Harness is required to comply with safety standards.');
+  });
+
+  test('no Engineering answer ends in a split after its full stop', () => {
+    const tail = /[.!?]\s+\d{1,2}(?:\s*\+\s*\d{1,2})+\s*$/;
+    const rows = ENGINEERING_HIGHER.flatMap(c => ('rows' in c ? c.rows : []).map(r => `${c.id} ${r.id}: ${r.verbatim}`));
+    expect(rows.filter(r => tail.test(r))).toEqual([]);
   });
 });
 
