@@ -15519,6 +15519,1510 @@
   ]
  },
  {
+  "id": "de-2025-ol-l1-1-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "many-children-school-without-breakfast-according",
+  "questionRef": "2025 OL Section L1 Q1(i)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. How many children go to school without breakfast, according to a radio report?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5000",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 1(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-1-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "effect-does-this-situation-have-children",
+  "questionRef": "2025 OL Section L1 Q1(ii)",
+  "questionText": "What effect does this situation have on the children?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "find it difficult to concentrate (in class/school)//lack concentration",
+      "get/achieve poorer grades"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 1(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-2-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "did-frau-glas-after-hearing-radio",
+  "questionRef": "2025 OL Section L1 Q2(i)",
+  "questionText": "What did Frau Glas do after hearing the radio report? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "told her husband/spoke to her husband",
+      "did research (online/on the internet) go on the internet/online = 0",
+      "asked/contacted 113 schools",
+      "got confirmation that some students/pupils come to school without breakfast",
+      "selected four of the schools",
+      "spoke to four principals",
+      "they told Frau Glas how her organisation can best help students",
+      "founded the organisation / BrotZeit"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (2 + 1); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-2-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "foods-were-lunchboxes",
+  "questionRef": "2025 OL Section L1 Q2(ii)",
+  "questionText": "What foods were in the lunchboxes?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "muesli",
+      "yogurt",
+      "bread",
+      "cheese",
+      "ham",
+      "fruit"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-3-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "from-where-does-frau-glas-organisation",
+  "questionRef": "2025 OL Section L1 Q3(i)",
+  "questionText": "From where does Frau Glas’ organisation get the food?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Supermarket(s)",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-3-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "frau-glas-organisation-began-delivering-breakfast",
+  "questionRef": "2025 OL Section L1 Q3(ii)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. Frau Glas’ organisation began delivering breakfast to six schools.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "True",
+   "False"
+  ]
+ },
+ {
+  "id": "de-2025-ol-l1-4-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "organisation-needs-helpers-who",
+  "questionRef": "2025 OL Section L1 Q4(i)",
+  "questionText": "The organisation needs helpers. Who are they?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "senior citizens",
+      "willing to/want to do voluntary work"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks (1); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 4(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-4-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "helpers-benefit",
+  "questionRef": "2025 OL Section L1 Q4(ii)",
+  "questionText": "How do the helpers benefit? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "from contact with children",
+      "from contact with other helpers/senior citizens/old(er) people",
+      "friendships develop/new friends made",
+      "meet up for walks",
+      "go to theatre",
+      "(some) go on holidays together"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (2 + 1); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 4(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l1-5",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "positive-effects-does-free-breakfast-have",
+  "questionRef": "2025 OL Section L1 Q5",
+  "questionText": "What positive effects does the free breakfast have on the children? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "strengthens/supports feeling/sense of being part of a community",
+      "children talk/speak to each other",
+      "helps integration",
+      "strengthens/supports team spirit",
+      "reduces / less (social) conflict"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (2 + 1); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Frau Glas) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 5",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l2-1-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "positive-feedback-does-man-woman",
+  "questionRef": "2025 OL Section L2 Q1(i)",
+  "questionText": "What positive feedback does the man give to the woman? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "The holiday was great // Austria was great",
+      "The holiday home / They had a balcony/great view.",
+      "...was near/(very) close to the ski lifts",
+      "The holiday home had everything that they needed.",
+      "...a modern kitchen",
+      "…wi-fi/internet",
+      "…a tv",
+      "… lots of space",
+      "They also enjoyed/liked the pool/great pool",
+      "…loved/really liked the skiing instructors//skiing instructors were lovely.",
+      "The teachers/instructors were helpful/ friendly.",
+      "The children were well able to ski at the end of the week...",
+      "…and did not want to go home",
+      "He was happy with everything from start to finish",
+      "… good value/reasonable.",
+      "definitely going to book this holiday home again for next January."
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3, the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 1(i)",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l2-1-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "end-week-children-were-able-ski",
+  "questionRef": "2025 OL Section L2 Q1(ii)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. At the end of the week, the children were able to ski.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3, the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 1(ii)",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "True",
+   "False"
+  ]
+ },
+ {
+  "id": "de-2025-ol-l2-2",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "much-can-man-win-completing-questionnaire",
+  "questionRef": "2025 OL Section L2 Q2",
+  "questionText": "How much can the man win by completing the questionnaire?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€250",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3, the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l2-3",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "phone-number-caller",
+  "questionRef": "2025 OL Section L2 Q3",
+  "questionText": "What is the name and the phone number of the caller?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "S – T – E – I – N – E – R",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Answer in English or Irish. The scheme heads this answer “Name”. Deduct 1 mark for each incorrect/missing letter."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "63 72 9 1 0",
+    "marks": 3,
+    "contextNote": "The scheme heads this answer “Phone number”. All or nothing: 3 marks."
+   }
+  ],
+  "notes": "The scheme prices this ask 7 marks (4 + 3); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3, the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l2-4",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "phone-call",
+  "questionRef": "2025 OL Section L2 Q4",
+  "questionText": "Tick (✓) the correct box. Tick one box only. The phone call is to:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a travel agency",
+    "marks": 3,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (3); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3, the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 4",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "a tourist information office",
+   "a travel agency",
+   "a ski school",
+   "an airport"
+  ]
+ },
+ {
+  "id": "de-2025-ol-l3-1",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "items-did-lina-recently-get-clothes",
+  "questionRef": "2025 OL Section L3 Q1",
+  "questionText": "What items did Lina recently get at a clothes swap party?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "jumper/sweater/pullover hoodie = 0",
+      "pants/trousers"
+     ],
+     "perOptionSteps": [
+      6,
+      2
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme pays every one of these; none is optional."
+   }
+  ],
+  "notes": "The scheme prices this ask 8 marks (6 + 2); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 1",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l3-2",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "everybody-has-bring-seven-items-clothing",
+  "questionRef": "2025 OL Section L3 Q2",
+  "questionText": "Tick (✓) the correct box. Tick one box only. Everybody has to bring seven items of clothing to the clothes swap party.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 2",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "True",
+   "False"
+  ]
+ },
+ {
+  "id": "de-2025-ol-l3-3",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "day-time-next-party",
+  "questionRef": "2025 OL Section L3 Q3",
+  "questionText": "On what day and at what time is the next party?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Saturday/20th January",
+    "marks": 3,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme heads this answer “Day”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6.00 pm/18.00",
+    "marks": 1,
+    "contextNote": "The scheme heads this answer “Time”."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (3 + 1); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 3",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l3-4",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "end-conversation",
+  "questionRef": "2025 OL Section L3 Q4",
+  "questionText": "Tick (✓) the correct box. Tick one box only. At the end of the conversation,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lina says she’ll send her address",
+    "marks": 6,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (6); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 4",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "Lina says she’ll send her address.",
+   "Moritz goes to a party.",
+   "Lina says Moritz can not come to the party.",
+   "Moritz asks for Lina’s phone number."
+  ]
+ },
+ {
+  "id": "de-2025-ol-l4-1-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "when-does-kieler-woche-sailing-event",
+  "questionRef": "2025 OL Section L4 Q1(i)",
+  "questionText": "When does the ‘Kieler Woche’ sailing event take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "21st (1) to 29th (1) June (2 marks)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "21st",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "to 29th",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p3",
+      "verbatim": "June",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” allow: in summer (1 mark only)"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 1(i)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-1-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "workshops-offer-children-event",
+  "questionRef": "2025 OL Section L4 Q1(ii)",
+  "questionText": "What workshops are on offer for children at the event?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "painting",
+      "arts and crafts/make and do",
+      "cooking",
+      "water sports"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 1(ii)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-2-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "according-recent-survey-men-eat-more",
+  "questionRef": "2025 OL Section L4 Q2(i)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. According to a recent survey, men eat more healthily than women.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(i)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "True",
+   "False"
+  ]
+ },
+ {
+  "id": "de-2025-ol-l4-2-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "learn-about-participants-survey",
+  "questionRef": "2025 OL Section L4 Q2(ii)",
+  "questionText": "What do you learn about the participants in the survey?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "women eat healthier (than men)",
+      "women eat more fruit/veg",
+      "people do not eat more healthily than 30 years ago",
+      "people eat more beans / nuts/meat/ salt /sugar",
+      "Between 16 (1 mark) and 80 (1 mark)",
+      "from 185 countries"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(ii)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-3-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "were-opening-times-lost-found-office",
+  "questionRef": "2025 OL Section L4 Q3(i)",
+  "questionText": "What were the opening times of the lost and found office during the Munich Oktoberfest?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "1.00 pm/13.00 (1 mark) to 10.00 pm/22.00 (1 mark)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "1.00 pm/13.00",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "to 10.00 pm/22.00",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(i)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-3-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "example-items-were-handed-into-lost",
+  "questionRef": "2025 OL Section L4 Q3(ii)",
+  "questionText": "Give one example of the items which were handed into the lost and found office at the Munich Oktoberfest.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "leather trousers/pants / Lederhosen",
+      "ladies’/women’s shoes",
+      "wedding rings",
+      "(mobile) phones",
+      "false teeth",
+      "bank cards",
+      "key(s)",
+      "umbrellas"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” NB Allow in singular."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(ii)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-4-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "weather-forecast-today",
+  "questionRef": "2025 OL Section L4 Q4(i)",
+  "questionText": "What is the weather forecast for today? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "cloudy",
+      "shower(s)",
+      "12 degrees (1 mark) to 14 degrees (1 mark) by day (1 mark)",
+      "2 degrees (2 marks) at night (1 mark)",
+      "light wind",
+      "from Southwest"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 4(i)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2025-ol-l4-4-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "weather-forecast-tomorrow",
+  "questionRef": "2025 OL Section L4 Q4(ii)",
+  "questionText": "What is the weather forecast for tomorrow? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "bright",
+      "dry",
+      "13 degrees to 17 degrees (2, 1 marks for correct temperature values)",
+      "sunshine/sunny",
+      "high pressure (over South)",
+      "ideal weather for hiking"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 4(ii)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2025 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
   "id": "de-2026-hl-t1-1-a",
   "subjectId": "german",
   "level": "higher",
