@@ -298,6 +298,14 @@ class DePaper:
                             roman = m.group(1).lower()
                             rest = m.group(2)
                 if q is None:
+                    if (side == 'L' and _x0 >= ENGLISH_X and cur.get('R') is not None
+                            and cur['R'].page == pno):
+                        # An English line the row reader filed left: 2026
+                        # Higher p12 fuses both columns' "2. (a)" into one
+                        # Irish group, so the page measures no bound, and "current
+                        # accommodation? (Par. 4)" — the English ask's second
+                        # line, at x 333 — went to the Irish block.
+                        side = 'R'
                     if cur.get(side) is not None:
                         cur[side].lines.append(text)
                     continue
@@ -544,6 +552,127 @@ class DePaper:
                 for p, i, r in sorted(seen, key=lambda k: (k[0], k[1], k[2] or ''))
                 if r or (p, i) not in romanned]
 
+
+    # -- the listening booklet's English column, line by line ---------------
+    def aural_english(self):
+        """[(page, text, [x of each word])] — the English column of the
+        listening booklet.
+
+        Read word by word against the column bound rather than through the
+        row grouper: where an Irish line runs long the two columns close up
+        and group together ("… faoi dhó. the phone call will be played
+        twice, with a"), and the English words would be lost inside the
+        Irish group. Every English column in the 34 booklets opens at x 290
+        or later and every Irish one closes before it.
+        """
+        out = []
+        if not self.aural_path:
+            return out
+        with pymupdf.open(self.aural_path) as doc:
+            for pno in range(doc.page_count):
+                if BLANK_PAGE.search(doc[pno].get_text()):
+                    continue                 # a page that prints no question
+                rows = []
+                for x0, y0, x1, y1, word, *_ in doc[pno].get_text('words'):
+                    if x0 < ENGLISH_X or not word.strip():
+                        continue
+                    mid = (y0 + y1) / 2
+                    for row in rows:
+                        if abs(row['mid'] - mid) <= 3:
+                            row['w'].append((x0, word))
+                            break
+                    else:
+                        rows.append({'mid': mid, 'w': [(x0, word)]})
+                for row in sorted(rows, key=lambda r: r['mid']):
+                    ws = sorted(row['w'])
+                    text = ' '.join(w for _x, w in ws)
+                    for glyph, char in GLYPHS.items():
+                        text = text.replace(glyph, char)
+                    if re.fullmatch(r'[_.\s]+', text) or NOW_ANSWER.match(text):
+                        continue             # an answer rule; "Now answer Question 2."
+                    out.append((pno + 1, text, [x for x, _w in ws]))
+        return out
+
+    def aural_ask_lines(self):
+        """({(part, item, roman): ([(line, x)], page)}, {part: (head lines, page)},
+        {(part, item): item label}) — each listening ask in English, with the
+        booklet's own line breaks, the head its part prints above the first
+        question (what is played and how often, the answer language), and the
+        item label a news part prints above an item ("(Item 4: Weather
+        forecast)").
+
+        The keys are aural_asks()'s, which the census reads; a key this walk
+        finds and the census does not is ignored, and one the census has and
+        this walk misses is the caller's to refuse.
+        """
+        asks, heads, items = {}, {}, {}
+        part = cur = None
+        state = None
+        label = None
+        for page, text, xs in self.aural_english():
+            s = text.strip()
+            m = AURAL_PART.match(s)
+            if m:
+                token = (m.group(1) or m.group(2) or '').lower()
+                part = PART_NAMES.get(token)
+                heads[part] = ([s], page)
+                cur, state, label = None, None, None
+                continue
+            if part is None:
+                continue
+            if AURAL_END.match(s) or FURNITURE.match(s) or AURAL_FOOT.match(s):
+                continue
+            if re.match(r'^\(\s*Item\b[^)]*\)\s*$', s, re.I):
+                label = s
+                cur = None
+                continue
+            item = roman = rest = None
+            m = NUM_MARK.match(s)
+            if m and not m.group(3) and re.fullmatch(r'\d{2}', (m.group(4) or '').strip()):
+                m = None                     # a tick-box time ("09.00"), not an item
+            if m:
+                item = int(m.group(1))
+                item = AURAL_RENUMBER.get((self.year, self.level, part, item, 'R'), item)
+                roman = (m.group(3) or '').lower() or None
+                rest = m.group(4)
+                state = item
+                if label:
+                    items[(part, item)] = label
+                    label = None
+            else:
+                m = ROMAN_MARK.match(s)
+                if m and state:
+                    item, roman, rest = state, m.group(1).lower(), m.group(2)
+            if item is not None:
+                cur = (part, item, roman)
+                lead = len(s[:len(s) - len(rest)].split())
+                at = xs[lead] if lead < len(xs) else None
+                asks[cur] = ([(rest.strip(), at)] if rest.strip() else [], page)
+                continue
+            if cur is not None:
+                asks[cur][0].append((s, xs[0]))
+            elif part in heads:
+                heads[part][0].append(s)
+        # A head whose romans are the asks prints only the shared lead-in
+        # under its own number ("1. (i) …" opens both); keep the asks.
+        return asks, heads, items
+
+
+# The English column of the listening booklet opens at x 290 or later in all
+# 34 booklets (measured on every "1." English marker, 2010-2026), and the
+# Irish column closes before it.
+ENGLISH_X = 288
+# The private-use glyphs the booklet's symbol fonts reach the text layer as:
+# the tick in "Tick (✓) the correct box" (Wingdings 0xFC; 2025 Ordinary sets
+# it in Wingdings 2, 0x50) and the bullet of the phone note's checklist.
+GLYPHS = {'\uf0fc': '✓', '\uf050': '✓', '\uf0b7': '•'}
+# Pages with no question on them: the blank verso, the back cover.
+BLANK_PAGE = re.compile(r'There is no examination material on this page|'
+                        r'Do not write on this page|Copyright notice', re.I)
+NOW_ANSWER = re.compile(r'^Now answer Question\b', re.I)
+# The running foot of every listening page.
+AURAL_FOOT = re.compile(r'^(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'
+                        r'Leaving Certificate Examination|Scr[úu]d[úu] na)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
 # numbers its last item "5." in the Irish column and "6." in the English

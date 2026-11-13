@@ -3196,4 +3196,1441 @@ export const CARDS: SecCard[] = [
           }
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-1-a", topicId: "german-6-1", conceptId: "erfahren-beginn-textes-ber-mia-erz",
+    section: "T1", questionRef: "2026 HL Section T1 Q1(a)",
+    questionText: "Was erfahren Sie zu Beginn des Textes über Mia, die Erzählerin? (Zeile 1 – 10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":4,"perOption":2,"options":["Sie findet sich nicht interessant. //Sie sagt, sie sei/ist nicht interessant.","... zwölf Jahre alt.","... ist (für ihr Alter) ziemlich klein","... ist schüchtern.","... fast nie/selten mit Freundinnen // hat nicht viele Freundinnen.","... geht nicht in die Stadtbibliothek.","Viele glauben, dass sie viel liest. (Sie liest viel = 0)","Sie geht gern in die Schule/mag die Schule","... aber hat lieber Ferien. / Ferien sind ihr lieber."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-1-b", topicId: "german-6-1", conceptId: "macht-mia-hrend-ferien",
+    section: "T1", questionRef: "2026 HL Section T1 Q1(b)",
+    questionText: "Was macht Mia während der Ferien? (Zeile 11 – 16)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Sie sitzt (meistens) allein vor ihrem/dem Elternhaus.","... auf der Treppe.","... schaut den Menschen/den Autos/den Blättern nach. (Any two: 1,1) (Schaut only=0)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-1-c", topicId: "german-6-1", conceptId: "mia-wartete-auf-jemanden-erfahren-ber",
+    section: "T1", questionRef: "2026 HL Section T1 Q1(c)",
+    questionText: "Mia wartete auf jemanden. Was erfahren Sie über diese Person?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. (Allow Present or Past Tense)", group: {"claimMax":2,"perOption":3,"options":["Sie heißt/hieß Frau Sommer.","... wohnte (mit ihrer Familie) in einer Villa/am Ende der Straße.","... kam täglich / zur selben Zeit / seit zwei Jahren.","... war Mutter. // ... war Mutter geworden// ... hat(te) ein Kind.","... hatte einen Kinderwagen. // ... kam mit einem Kinderwagen."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-2-a", topicId: "german-6-1", conceptId: "descriptions-does-mia-frau-sommer-her",
+    section: "T1", questionRef: "2026 HL Section T1 Q2(a)",
+    questionText: "What descriptions does Mia give of Frau Sommer, her mother and her father? (lines 35 – 43)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Frau Sommer: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Frau Sommer”.", group: {"claimMax":1,"perOption":1,"options":["beautiful","rich","smells good"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Mia’s mother: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Mia’s mother”.", group: {"claimMax":1,"perOption":1,"options":["smells of cigarettes (Allow: she smokes)","bad humoured /mood"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Mia’s father: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Mia’s father”.", group: {"claimMax":1,"perOption":1,"options":["smells of oil","smells of petrol (Benzin=0)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-2-b", topicId: "german-6-1", conceptId: "leads-mia-becoming-wilhelm-babysitter",
+    section: "T1", questionRef: "2026 HL Section T1 Q2(b)",
+    questionText: "What leads to Mia becoming Wilhelm’s babysitter? Give details. (lines 44 – 57)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["He stopped crying cried when(ever) he saw Mia. // He was delighted to see Mia.","Frau Sommer held out her hand/ … held her hand.","Frau Sommer asked if she would mind/babysit Wilhelm.","Mia thinks yes! // She nods.","Mia is asked to come/she should come to the (Sommers’) villa/house/mansion."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-2-c-i", topicId: "german-6-1", conceptId: "describe-interior-sommers-villa",
+    section: "T1", questionRef: "2026 HL Section T1 Q2(c)(i)",
+    questionText: "Describe the interior of the Sommers’ villa. (lines 58 – 70)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":4,"perOption":1,"options":["Big entrance/big front door","(everything) dark.","big cupboard/cabinet/wardrobe/press","black/leather armchairs (Plural needed) (chairs=0)","paintings/portraits/pictures (Plural needed)","dark hallway","heavy doors","Last door opens to the children’s room/playroom/Wilhelm’s room."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-2-c-ii", topicId: "german-6-1", conceptId: "describe-scene-wilhelm-room",
+    section: "T1", questionRef: "2026 HL Section T1 Q2(c)(ii)",
+    questionText: "Describe the scene in Wilhelm’s room. (lines 71 – 76)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. (Allow Present or Past Tense)", group: {"claimMax":2,"perOption":2,"options":["Wilhelm is sitting","(… surrounded by/among) toys/small/toy cars","… on a bright/light carpet/rug.","… looks like an angel.","He smiles (laughs = 0)","He stretches/stretched out his arms (towards her)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-3-a-i", topicId: "german-6-1", conceptId: "where-sommers-going",
+    section: "T1", questionRef: "2026 HL Section T1 Q3(a)(i)",
+    questionText: "Where are the Sommers going? (lines 77 – 79)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To the opera", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Where”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-3-a-ii", topicId: "german-6-1", conceptId: "does-frau-sommer-say-good-bye",
+    section: "T1", questionRef: "2026 HL Section T1 Q3(a)(ii)",
+    questionText: "How does Frau Sommer say good bye to Wilhelm and how does he react? (lines 79 – 84)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She kisses him", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Frau Sommer”. (Allow Present or Past tense)" },
+    { id: "r-2", kind: "anyN", verbatim: "Wilhelm: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Wilhelm”.", group: {"claimMax":1,"perOption":2,"options":["He follows her with his eyes/watches her leave","He cries"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-3-b", topicId: "german-6-1", conceptId: "does-mia-calm-wilhelm-down-104",
+    section: "T1", questionRef: "2026 HL Section T1 Q3(b)",
+    questionText: "What does Mia do to calm Wilhelm down? Give details. (lines 85 – 104)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. (Allow Present or Past Tense)", group: {"claimMax":3,"perOption":2,"options":["She lifts him up.","She walks with him through the villa/from room to room.","They get to the library.","Mia/she finds a children’s book.//She begins to read (to him)","She sits Wilhelm on the floor (in the library).","She says/repeats “Pippi Langstrumpf”.","They laugh (until they are exhausted)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-3-c", topicId: "german-6-1", conceptId: "explanation-does-herr-sommer-happened-105",
+    section: "T1", questionRef: "2026 HL Section T1 Q3(c)",
+    questionText: "What explanation does Herr Sommer give for what happened? (lines 105 – 121)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. (Allow Present or Past Tense)", group: {"claimMax":1,"perOption":3,"options":["When reading a book one/you forget(s) everything around you.","(When reading) one starts/begins to dream./ Reading books makes you dream."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t1-4", topicId: "german-6-1", conceptId: "narrator-mia-comes-across-girl-who",
+    section: "T1", questionRef: "2026 HL Section T1 Q4",
+    questionText: "The narrator, Mia, comes across as a girl who is shy and withdrawn. Give two examples from the text. (Can be language use and/or content.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme lists 6 further accepted answer(s) for this ask, in the order it prints them; a valid answer of your own counts.", openList: true, group: {"claimMax":2,"perOption":5,"options":["She describes herself as shy.","She is rarely seen with friends/comes across as a loner. (She doesn’t have friends=0)","She does not like to go to the library.","She spends her holidays sitting alone.","She spends her time watching people (rather than meeting them).","She gazes at cars (as they pass)","She watches falling autumn leaves.","People think she’s not waiting for someone/something.","It took her a few weeks before she was brave enough/able to ask Frau Sommer, if she can look at the baby.","It makes her happy/proud that somebody (Frau Sommer) would stop to talk to her.","She nods rather than replies with words when Frau Sommer asks her to babysit.","She hesitates at the door of the mansion.","Herr Sommer has to rescue her from his angry/annoyed wife / helps her to explain the situation.","(“Es gibt nichts Interessantes über mich“) ‒ she believes there is nothing interesting about her.","(“ein eher schüchternes Mädchen”) ‒ she refers to herself as a shy/timid girl.","(“Man sieht mich fast nie mit Freundinnen“) – she says that she is hardly ever seen with friends."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-1-a", topicId: "german-6-0", conceptId: "war-her-bei-wahl-studienortes-wichtig",
+    section: "T2", questionRef: "2026 HL Section T2 Q1(a)",
+    questionText: "Was war früher bei der Wahl des Studienortes wichtig? Geben Sie Details. (Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Was ist in Wohnortnähe","die Uni mit dem besten Ruf","das beste Lehrpersonal / wo gibt es das beste Lehrpersonal/die besten Professoren"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-1-b", topicId: "german-6-0", conceptId: "heute-anders",
+    section: "T2", questionRef: "2026 HL Section T2 Q1(b)",
+    questionText: "Was ist heute anders? Geben Sie Details. (Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Die Mietpreise sind oft wichtig./Das individuelle Budget ist oft entscheidend.","WGs /WG-Zimmer (für Studenten) sind zu teuer/...nicht bezahlbar.","Die Mieten für WG-Zimmer sind (in München und Berlin) um 50% gestiegen.","Man sucht/Studenten suchen nach Alternativen (zur WG)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-1-c-i", topicId: "german-6-0", conceptId: "erfahren-wir-ber-matilda-arganeses-aktuelle",
+    section: "T2", questionRef: "2026 HL Section T2 Q1(c)(i)",
+    questionText: "Was erfahren wir über Matilda Arganeses aktuelle Wohnsituation? (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["Sie hat ein Zimmer über (das Projekt) „Wohnen für Hilfe“ bekommen.","Sie wohnt in einem kleinen Ort//im Schwarzwald.","... (hat) ein Zimmer mit Balkon.","... zahlt 100 Euro/es kostet 100 Euro im Monat.","wohnt zusammen mit zwei älteren Menschen/mit zwei über 80-Jährigen","hilft im Garten/staubsaugt/räumt die Spülmaschine aus/füttert die Katzen. (Any two: 1,1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-1-c-ii", topicId: "german-6-0", conceptId: "matildas-weitere",
+    section: "T2", questionRef: "2026 HL Section T2 Q1(c)(ii)",
+    questionText: "Was sind Matildas weitere Pläne? (Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Sie will im Schwarzwald bleiben","Sie will nicht zurück in eine Großstadt.","Sie würde gern im Nachbarort arbeiten.","Sie würde (dort) gern/möchte an einer bilingualen Grundschule arbeiten/unterrichten."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-2-a", topicId: "german-6-0", conceptId: "learn-about-fabio-his-current-accommodation",
+    section: "T2", questionRef: "2026 HL Section T2 Q2(a)",
+    questionText: "What do you learn about Fabio and his current accommodation? (Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Fabio: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Fabio”.", group: {"claimMax":2,"perOption":1,"options":["He is 25 years old.","He studies/is studying political science/politics. (studied=0)","He came to/studies at Heidelberg University/lives in Heidelberg. (studied=0)","… doing a Bachelor’s/degree"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Current accommodation: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Current accommodation”.", group: {"claimMax":3,"perOption":2,"options":["He lives in a self-governing project /in self-governing ‘Collegium Academicum’.","It belongs to those who live there./Residents own their accommodation.","He pays €375 a month.","heating/electricity/internet included (Any two: 1,1) (WLAN=0)","Accommodation is provided for students/apprentices/trainees","There is also social/council housing."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-2-b-i", topicId: "german-6-0", conceptId: "did-students-get-project-off-ground",
+    section: "T2", questionRef: "2026 HL Section T2 Q2(b)(i)",
+    questionText: "How did the students get the project off the ground? (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["They took out bank loans.","They helped with the construction.","… built furniture.","… installed the kitchens. (Past Tense and Plural needed)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-2-b-ii", topicId: "german-6-0", conceptId: "makes-this-particular-project-different-from",
+    section: "T2", questionRef: "2026 HL Section T2 Q2(b)(ii)",
+    questionText: "What makes this particular project so different from traditional student accommodation? Give details. (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["Residents are their own landlords.","… their own caretakers.","… make important decisions (by voting) democratically","There is a ‘multi-function’ room/a meeting room","There’s a hall/aula","… (Aula used) for conferences/concerts/theatre performances/film showings there. (Must have two)","There is a bicycle repair workshop.","They do not have to use/ … don’t need cars. (They don’t have cars=0)","They are/the project is not profit-driven"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-3", topicId: "german-6-0", conceptId: "other-examples-accommodation-alternatives-mentioned",
+    section: "T2", questionRef: "2026 HL Section T2 Q3",
+    questionText: "What other examples of accommodation alternatives are mentioned? Give details. (Par. 6, 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Denmark: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Denmark”.", group: {"claimMax":3,"perOption":2,"options":["Urban Rigger/It is/floats on water","… consists of (converted) shipping containers (Plural needed)","… with 72 one-room apartments","There are terraces/gardens /solar panels. (Any two: 1,1)","(complex/scheme) looks/is optically attractive","(complex/scheme) is eco-friendly."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Netherlands: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Netherlands”.", group: {"claimMax":3,"perOption":2,"options":["(In Deventer) in a (renovated/refurbished) church.","accommodation in a retirement home/home for senior citizens/old people (Seniors’ home=0)","free/in return for 30 hours help for the elderly per month","prepare dinner together/talk to each other/listen to each other/dialogue between old and young. (Any two: 1,1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-t2-4", topicId: "german-6-0", conceptId: "passt-zusammen",
+    section: "T2", questionRef: "2026 HL Section T2 Q4",
+    questionText: "Was passt zusammen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":5,"perOption":2,"options":["2 — D","3 — E","4 — F","5 — C","6 — A"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-ag-1", topicId: "german-3-4", conceptId: "sehen-unten-tze-denen-nomen-substantive",
+    section: "AG", questionRef: "2026 HL Section AG Q1",
+    questionText: "Sie sehen unten Sätze, in denen Nomen/Substantive unterstrichen sind. Sehen Sie sich das Beispiel an. Geben Sie nun für die anderen fünf Nomen/Substantive an: ob Singular oder Plural bei Singular das Geschlecht (maskulin, feminin, neutrum) den Fall (Nominativ, Akkusativ, Dativ, Genitiv) Singular, feminin, Dativ (1) Jetzt im Herbst fallen die Blätter von den Bäumen. (2) Die Villa von Familie Sommer ist am Ende der Straße. (3) Wilhelms Großvater hat die Villa gebaut. (4) Das Innere des Hauses war ziemlich dunkel. (5) Ein großer Schrank aus dunklem Holz stand im Flur.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":5,"perOption":5,"options":["(1) Plural (2), Dativ (3)","(2) Singular (1), feminin (2), Genitiv (2)","(3) Singular (1), feminin (2), Akkusativ (2)","(4) Singular (1), neutrum (2), Genitiv (2)","(5) Singular (1), maskulin (2), Nominativ (2)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "TEXT I: LESEVERSTÄNDNIS",
+                "title": "TEXT I — the passage this exercise is drawn from",
+                "pages": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                ],
+                "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+                "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-ag-2", topicId: "german-3-4", conceptId: "lesen-folgenden-text-sehen-sich-beispiel",
+    section: "AG", questionRef: "2026 HL Section AG Q2",
+    questionText: "Lesen Sie den folgenden Text und sehen Sie sich das Beispiel an. Setzen Sie dann die fehlenden Präpositionen ein. (1) Frau Sommer Mutter geworden ist, geht sie täglich spazieren. Ihr Sohn Wilhelm sitzt (2) Kinderwagen und weint viel. Nach ein paar Monaten fragt Frau Sommer, ob Mia (3) Wilhelm aufpassen will. Mia beginnt schon (4) gleichen Tag. Wilhelm und Mia schlafen (5) der Bibliothek ein. während auf in im am seit",
+    tariffModel: {"kind":"fixed"}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":5,"perOption":5,"options":["(1) seit (5)","(2) im (5)","(3) auf (5)","(4) am (5)","(5) in (5)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "TEXT I: LESEVERSTÄNDNIS",
+                "title": "TEXT I — the passage this exercise is drawn from",
+                "pages": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                ],
+                "attribution": "SEC German 2026 Higher Level examination paper — © State Examinations Commission.",
+                "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-1-i", topicId: "german-4-0", conceptId: "gave-frau-arnold-idea-become-lorry",
+    section: "L1", questionRef: "2026 HL Section L1 Q1(i)",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What gave Frau Arnold the idea to become a lorry driver? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Her dad was one","She loved going/travelling with him (as a child)","became unemployed in 2020/ due to Corona/Covid/Pandemic","sat at home for weeks","thought about her career plans","wanted to do something new","wanted to see the world","saw an article/read in paper about jobs for truck/lorry drivers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-1-ii", topicId: "german-4-0", conceptId: "training-did-she-become-lorry-driver",
+    section: "L1", questionRef: "2026 HL Section L1 Q1(ii)",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What training did she do to become a lorry driver? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":3,"perOption":1,"options":["three year training/apprenticeship","at/with a trucking/transport/haulage company","had to do theory test/exam","had to do practical /driving test"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-2", topicId: "german-4-0", conceptId: "does-typical-working-day-look-like",
+    section: "L1", questionRef: "2026 HL Section L1 Q2",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What does a typical working day look like for Frau Arnold? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":3,"perOption":1,"options":["From 6 am till 4 pm /16.00 hours","Mondays to Fridays","sometimes home late due to chaotic traffic/ many cars on the roads//can only drive slowly due to (chaotic) traffic","she only drives regionally/in Bavaria/Bayern"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-3", topicId: "german-4-0", conceptId: "tasks-does-frau-arnold-part-her",
+    section: "L1", questionRef: "2026 HL Section L1 Q3",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What tasks does Frau Arnold do as part of her job?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["delivers/transports fruit and vegetables (to supermarkets)","plans routes","plans driving times","plans regular breaks","communicates with company","communicates with clients/customers","solves/looks after/deals with technical problems/issues","looks after/deals with repairs"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-4", topicId: "german-4-0", conceptId: "important-work-lorry-driver",
+    section: "L1", questionRef: "2026 HL Section L1 Q4",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What is important for the work of a lorry driver? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["be able to handle/cope with stress","be patient/ have patience","concentration","punctuality","technical knowledge"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l1-5", topicId: "german-4-0", conceptId: "does-frau-arnold-like-about-her",
+    section: "L1", questionRef: "2026 HL Section L1 Q5",
+    stem: "(Interview with Frau Arnold) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What does Frau Arnold like about her job? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["getting to know new places","the feeling/sense of adventure","the feeling/sense of freedom","she is her own boss","she is on her own//nobody annoys her/gets on her nerves","she can listen to music/podcasts","meeting/chatting to other truck/lorry drivers","they/truck/lorry drivers are like one big family","pay is good"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l2-1", topicId: "german-4-1", conceptId: "down-german-key-information-recipient-call",
+    section: "L2", questionRef: "2026 HL Section L2 Q1",
+    stem: "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "Write down in German the key information the recipient of the call puts in her note of the conversation. Write key phrases, not full sentences. The note should contain:\n• the name of the person making the call\n• details of the problem the caller reports\n• details regarding the outcome\n• the caller’s phone number",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Alexander) K – A – I – S – E – R", marks: 2, contextNote: "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” The scheme heads this answer “Anruf von”. All or nothing." },
+    { id: "r-2", kind: "point", verbatim: "schafft den Termin (um 9 Uhr) nicht/Kommt zu spät", marks: 2, contextNote: "The scheme heads this answer “Grund des Anrufs”." },
+    { id: "r-3", kind: "anyN", verbatim: "Grund des Anrufs: the answers the scheme accepts", marks: null, group: {"claimMax":2,"perOption":1,"options":["Bus steckt im Stau/sitzt im Bus fest (sitzt im Bus=0)","Baustelle am Bahnhof","braucht noch/später eine Fahrstunde","hat morgen Fahrprüfung","muss (Ein)parken üben"]} },
+    { id: "r-4", kind: "point", verbatim: "Erhält einen Rückruf", marks: 2, contextNote: "The scheme heads this answer “Der Anrufer”." },
+    { id: "r-5", kind: "point", verbatim: "(0176) – 31 85 624", marks: 2, contextNote: "The scheme heads this answer “Kontaktnummer”. All or nothing." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l2-2", topicId: "german-4-1", conceptId: "listening-phone-call-third-time-down",
+    section: "L2", questionRef: "2026 HL Section L2 Q2",
+    stem: "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "In listening to the phone call for the third time, write down three examples of the language used (= expressions and phrases) which show that the caller needs help.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” For the whole question the scheme prints: “Any three; no marks for tone of voice/intonation without reference to specific expressions and phrases. Allow: accurate/exact phrase or accurate paraphrase of expression in translation.”", group: {"claimMax":3,"perOption":2,"options":["Sie müssen mir helfen! (You must help me!)","Ich hoffe, dass Sie mir helfen können. (I hope you can help me.)","… ich brauche unbedingt vorher noch eine Fahrstunde (I really need a lesson before that)","Ohne diese Fahrstunde habe ich keine Chance meinen Führerschein zu bekommen. (I haven’t got a hope of getting my licence without this lesson)","Da kann ich morgen gleich zu Hause bleiben. (I may as well stay at home)","Ich bitte Sie, mir zu helfen. (I am begging you to help me.)","Ansonsten werde ich morgen bestimmt durchfallen (Otherwise I’m going to fail (my test) tomorrow)","Helfen Sie mir, bitte. (Please, help me.)","Ich bitte Sie mit Herrn Wagner zu sprechen. (I am begging you to speak with Mr Wagner.)","Könnten Sie bitte bei ihm ein gutes Wort für mich einlegen? (Could you please put in a word for me?)","Könnten Sie Herrn Wagner die Situation erklären? (Could you explain the situation to Mr Wagner?)","Ich brauche wirklich … Hilfe! (I really need … help!)","Bitte tun Sie Ihr Bestes! (Please do your best!)","Hoffentlich können Sie mir helfen! (I hope you can help me!)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-1-i", topicId: "german-4-2", conceptId: "conversation-between",
+    section: "L3", questionRef: "2026 HL Section L3 Q1(i)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Tick (✓) the correct box. Tick one box only. The conversation is between",
+    questionChoices: ["a boyfriend and girlfriend","a brother and sister","a father and daughter","two students"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "two students", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-1-ii", topicId: "german-4-2", conceptId: "find-indications-conversation-support-choice",
+    section: "L3", questionRef: "2026 HL Section L3 Q1(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Find two indications in the conversation to support your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. Allow apt German quotation.", group: {"claimMax":2,"perOption":2,"options":["… here in the student accommodation. (...hier im Studentenwohnheim)","(I moved in last week) for the new semester. ((Ich bin letzte Woche) zum neuen Semester (eingezogen))","…I am studying languages…(…studiere Sprachen) //here at the university. (...an der Universität)","I’m studying medicine. (Ich studiere Medizin…)","…during the semester/university holidays/break…(…in den Semesterferien)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-2-i", topicId: "german-4-2", conceptId: "following-words-best-describes-man-feels",
+    section: "L3", questionRef: "2026 HL Section L3 Q2(i)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Tick (✓) the correct box. Tick one box only. Which of the following words best describes how the man feels about the running group?",
+    questionChoices: ["afraid","bored","disappointed","enthusiastic"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "enthusiastic", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-2-ii", topicId: "german-4-2", conceptId: "down-from-conversation-support-choice",
+    section: "L3", questionRef: "2026 HL Section L3 Q2(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Write down two details from the conversation to support your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. Allow apt German quotation.", group: {"claimMax":2,"perOption":2,"options":["That would be great! (Das wäre toll!)","I could meet new people. (So könnte ich neue Leute kennenlernen.)","That sounds great! (Das hört sich gut an!)","Yes, great/class! (Ja, klasse!)","I definitely want to take part in/join... (the running group). (Da will ich auf jeden Fall mitmachen.)","I will (definitely) be there!/Count me in! (Ich bin ganz bestimmt dabei!)","See you Wednesday...(Dann bis Mittwoch...)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-3", topicId: "german-4-2", conceptId: "does-group-saturdays",
+    section: "L3", questionRef: "2026 HL Section L3 Q3",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What does the group do on Saturdays? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["go running","meet/go for lunch/at a pizzeria","they sit and chat","meet new people"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-4-i", topicId: "german-4-2", conceptId: "does-group-during-holidays",
+    section: "L3", questionRef: "2026 HL Section L3 Q4(i)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What does the group do during the holidays? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["go running for the weekend/at weekends //in mountains/woods/along coast","stay at a (youth) hostel","cook","go swimming","go to a sauna"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 4(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l3-4-ii", topicId: "german-4-2", conceptId: "arrangement-man-woman-make-end-conversation",
+    section: "L3", questionRef: "2026 HL Section L3 Q4(ii)",
+    stem: "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What arrangement do the man and the woman make at the end of the conversation? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme pays every one of these; none is optional.", group: {"claimMax":2,"perOption":1,"options":["Meet on Wednesday at 7.00 (pm)/19.00","outside/at the front door"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 4(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-1-i", topicId: "german-4-3", conceptId: "happened-dresden-thursday-morning",
+    section: "L4", questionRef: "2026 HL Section L4 Q1(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "What happened in Dresden on Thursday morning?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a 100 meter/large section of a bridge fell into river/the Elbe", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-1-ii", topicId: "german-4-3", conceptId: "information-does-spokesperson-fire-department",
+    section: "L4", questionRef: "2026 HL Section L4 Q1(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "What information does the spokesperson for the fire department give? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["were called around 3 am","no casualties/injuries","the cause is unclear","repairs will cost/amount to 170 million Euro"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-2-i", topicId: "german-4-3", conceptId: "learn-about-coffee-house-sch-tting",
+    section: "L4", questionRef: "2026 HL Section L4 Q2(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What do we learn about the coffee house Schütting in Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":1,"options":["opened in 1673","(the) first one in Germany","(located) in Bremen","started coffee culture in Germany"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-2-ii", topicId: "german-4-3", conceptId: "has-study-german-coffee-association-revealed",
+    section: "L4", questionRef: "2026 HL Section L4 Q2(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What has the study by the German Coffee Association revealed? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Germans love (their) coffee","they like (to drink their) coffee at home/ in cafés/bakeries/restaurants (any two: 1,1)","… drink (on average) 164 litres coffee per year","… drink four cups a day/daily/every day","coffee is the most popular hot drink (in Germany)","coffee comes mainly (1) from Brazil and Vietnam (1) (Two countries needed)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-3", topicId: "german-4-3", conceptId: "according-experts-can-dangerous-shop-assistants",
+    section: "L4", questionRef: "2026 HL Section L4 Q3",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "According to experts, what can be dangerous for shop assistants at work? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(listening to) Christmas music/carols/songs morning to evening/night/constantly/all the time", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "(Christmas music) can affect mental health", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(Christmas music can make you) feel stressed/bored/annoyed", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-4-i", topicId: "german-4-3", conceptId: "weather-forecast-south-germany",
+    section: "L4", questionRef: "2026 HL Section L4 Q4(i)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast for the South of Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":1,"options":["hot","32 to 35 degrees","Cloudy","(severe) thunderstorms at night (Storms=0)","heavy rainfall","hail(stones) in mountainous areas/mountains"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC011ALPA00BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2026 Higher Level — © State Examinations Commission.",
+    id: "de-2026-hl-l4-4-ii", topicId: "german-4-3", conceptId: "weather-forecast-north-germany",
+    section: "L4", questionRef: "2026 HL Section L4 Q4(ii)",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast for the North of Germany? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":1,"options":["temperatures rise/31 degrees","dry","sunny","(temperatures drop to) 15 degrees at night","light wind","(wind) from the East"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2026 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2026 German · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
 ];

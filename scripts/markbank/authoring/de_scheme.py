@@ -145,6 +145,7 @@ AG_ITEM = re.compile(r'^\(\s*(\d{1,2}|i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.+)$', re.I)
 # only ever collected inside a block a head has closed.
 ANSWER_NUM = re.compile(r'^(\d{1,2})\s*\.\s*(.*)$')
 ANSWER_LETTER = re.compile(r'^\(\s*([a-z])\s*\)\s*(.+)$')
+BULLET = re.compile(r'^[•\uf0b7]\s*(.+)$')
 # The continuation the SEC prints for details sharing one opening: "2. … war
 # sehr klein / hatte nur 30 Quadratmeter". The ellipsis stands in for the first
 # answer's subject and is kept verbatim.
@@ -168,8 +169,8 @@ TAIL_NOTE = re.compile(r'(\(\d{1,2}(?:\s*marks?)?\))\s*((?:N\.?B\.?|Note|Allow|'
 
 # The named halves of one ask: "How:" over a two-mark list, "What:" over
 # another. Both are answered — they are not alternatives.
-_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df]{1,14}' \
-         r'(?:\s+[a-z]{1,10})?'
+_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}' \
+         r'(?:\s+[a-z]{1,14}|\s+[A-Z][a-z\u00e4\u00f6\u00fc\u00df]{2,10})?'
 # A segment label with a colon may carry its own answer on the same line:
 # "Where: to the swimming pool (1)", "Wie lange: (etwas) mehr als ein Jahr
 # (2 marks)".
@@ -304,6 +305,10 @@ def read_rate(text):
     s = ' '.join((text or '').split()).strip()
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
+    # 2026 Higher prints "(Any four: 4 x 2 marks" with its bracket never
+    # closed; the opening one alone is not part of the rate.
+    if s.startswith('(') and s.count('(') == s.count(')') + 1:
+        s = s[1:].strip()
     if not s:
         return None, None
     claimed = None
@@ -808,6 +813,16 @@ class DeScheme:
                 tail = m.group(2).strip()
                 got, _cnt = read_rate(tail)
                 mark = TRAIL_MARK.search(tail) if inline else None
+                last_seg = segments[-1]
+                if (not tail and got is None and pending is None
+                        and last_seg['steps'] is not None and not last_seg['answers']
+                        and last_seg['label'] is None and cue_lines):
+                    # The rate printed ABOVE its own heading: "(Any three: 3 x
+                    # 2 marks)" then "Denmark:" (2026 Higher TEXT II Q3). The
+                    # heading names the list that rate opened.
+                    last_seg['label'] = m.group(1)
+                    phase = 'answers'
+                    continue
                 if got is not None or mark or not tail:
                     phase = 'answers'
                     steps = got if got is not None else (
@@ -851,6 +866,10 @@ class DeScheme:
                 # prints "1. C / 2. D / 3. A" — and a card offering four
                 # options reading "C", "D", "A", "D" says nothing at all.
                 number = int(m.group(1))
+            elif BULLET.match(s) and not unit.startswith('L'):
+                # 2026 sets a reading ask's answers behind bullets, under a
+                # named half: "Frau Sommer: (Any one: 1 mark)" / "• beautiful".
+                answer = BULLET.match(s).group(1).strip()
             elif unit.startswith('L') and ANSWER_LETTER.match(s):
                 # Only the listening test letters its answers. A reading scheme
                 # numbers them, and 2023 Higher reprints the PART MARKER above

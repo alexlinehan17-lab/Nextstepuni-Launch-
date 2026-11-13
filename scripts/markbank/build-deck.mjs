@@ -1892,13 +1892,16 @@ for (const c of cards) {
   /* A Spanish listening card (section L) is answered from the Listening
    * Comprehension Test, a separate SEC booklet the Paper Trail index labels
    * "Aural Paper": its paper is that booklet, never the written paper the
-   * section-less resolver returns for a language. No other deck has an L. */
+   * section-less resolver returns for a language. German's listening test is
+   * the same booklet in four parts, filed L1 to L4. No other deck has these. */
+  const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
+    || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
   const fileid = deferredEntry && SUBJECT_ID === 'spanish'
     ? deferredDoc(SUBJECT_ID, c, c.section === 'L' ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
     ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
-    : SUBJECT_ID === 'spanish' && c.section === 'L'
-      ? resolveCompanionFileid('spanish', year, level, 'Aural Paper')
+    : listening
+      ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 

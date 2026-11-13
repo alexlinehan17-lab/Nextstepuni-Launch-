@@ -1,0 +1,461 @@
+[
+ {
+  "year": 2026,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2026 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2026/",
+   "sha256": "c699a63ee441703bb8f97f8b1829e1698139aaa24224beb3cb54af3fa15762e5",
+   "bytes": 80914840,
+   "durationSeconds": 2528.58875,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2025,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2025 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2025/",
+   "sha256": "d7d582b3a63ac37dcbbc80721296efd055e28070f082e174862f047adbce2bdb",
+   "bytes": 79748345,
+   "durationSeconds": 2492.135781,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2024,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2024 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2024/",
+   "sha256": "33ac1e78c031ed1618a8e78436ae7091466aaa137ad3c403e5109df0cf9393fa",
+   "bytes": 76386635,
+   "durationSeconds": 2387.082344,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2023,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2023 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2023/",
+   "sha256": "1d52df7e38de029f9f1bb8db8408ba72ca3c3e4f9908d0f94894474911e909b6",
+   "bytes": 80641795,
+   "durationSeconds": 2520.056094,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2022,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2022/",
+   "sha256": "c36db40a78ec0a980781afa730ad4f2ad3b58f15525bbabd042d362ede2226bc",
+   "bytes": 80035585,
+   "durationSeconds": 2501.112031,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2021,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2021 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2021/",
+   "sha256": "7730e5df2542ed1495b07a15d05a78a1bd67aaa7a786b0d9b2320ab6fdff9691",
+   "bytes": 82381100,
+   "durationSeconds": 2574.409375,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2020,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2020 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2020/",
+   "sha256": "e2c6b0fad4e3a059cf12c1f32674e1e161fab2240b32c58e5b5e5bafa7d83696",
+   "bytes": 79464445,
+   "durationSeconds": 2483.263906,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2019,
+  "paperFileids": [
+   "LC011ALPA00BV.pdf",
+   "LC011GLPA00BV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2019 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2019/",
+   "sha256": "f5f6bc1d510f59a52ba4565bd52a071ae9be0f719d05a13d2faac29224ad1011",
+   "bytes": 76807826,
+   "durationSeconds": 2400.182844,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2018,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2018 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2018/",
+   "sha256": "cb7b42c2d6a53ba6ccfd89cd417d7c601c4ec05e87e83e4ea3615eb18d496443",
+   "bytes": 79276293,
+   "durationSeconds": 2477.322437,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2017,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2017/",
+   "sha256": "f59dc0333ece9b4743c7f7e47ee4f1aa24c942f1eafe2af30bcac3a59a58be5f",
+   "bytes": 9127247,
+   "durationSeconds": 2446.28898,
+   "bitRate": 29844,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2016,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2016 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2016/",
+   "sha256": "80b555141473a7bfabf4f5ee88d96200cc0448282a121cc6cd29e14ef85fb5fb",
+   "bytes": 19894452,
+   "durationSeconds": 2486.64,
+   "bitRate": 64000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2015,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2015 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2015/",
+   "sha256": "952258771470ef594de1a03c5e41ed305d542c1ac73d5f527599e35900d14e4c",
+   "bytes": 84342794,
+   "durationSeconds": 2635.650594,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2014,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2014 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2014/",
+   "sha256": "dc5c3c7f0e880328b69341511174a6f1a55bb86786c9ea45d1ebe0beff830c35",
+   "bytes": 60146510,
+   "durationSeconds": 2506.031,
+   "bitRate": 192000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2013,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2013 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2013/",
+   "sha256": "1509c7c878cc6bc60b5097868e33127a356473a9ffcfc7ecd188380033828095",
+   "bytes": 56973573,
+   "durationSeconds": 2373.825292,
+   "bitRate": 192000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2012,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2012 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC011ZLPO17EV.mp3",
+   "secFileid": "LC011ZLPO17EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC011ZLPO17EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2012/",
+   "sha256": "aa372ce309287ee3cdf22254ce2fea88ca2ad40de11295eb6fa6330f3214546b",
+   "bytes": 38792348,
+   "durationSeconds": 2424.424438,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2011,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2011 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2011/",
+   "sha256": "9ac878a91ed47cbace6f783105ca4295c16da1c0b857105c0fa658ce6d57b1a1",
+   "bytes": 36878931,
+   "durationSeconds": 2304.835875,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
+  "year": 2010,
+  "paperFileids": [
+   "LC011ALPA00EV.pdf",
+   "LC011GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2010 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2010/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/exampapers/2010/",
+   "sha256": "4b610459c2e0298c6e0ba53e2637b873895d84ad8d99f3c6a9c34d5c02b1884e",
+   "bytes": 36060567,
+   "durationSeconds": 2253.688125,
+   "bitRate": 128000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ }
+]

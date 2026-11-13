@@ -1026,8 +1026,8 @@ export const CARDS: SecCard[] = [
     questionText: "How do the students and Herr Utz react to this? Give details. (lines 79 – 87)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Students: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Students”.", group: {"claimMax":1,"perOption":2,"options":["They panic. / Panic breaks out.","They try to / want to find the phone.","They try / want to switch the phone off.","They try to hide the phone.","They get very quiet / still. Herr Utz:"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, group: {"claimMax":1,"perOption":2,"options":["He gets / rushes to the back of the bus.","He is looking for/wants the phone.","He shouts/gets mad.","He wants to know who owns the phone.","He counts to three."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Students: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Students”.", group: {"claimMax":1,"perOption":2,"options":["They panic. / Panic breaks out.","They try to / want to find the phone.","They try / want to switch the phone off.","They try to hide the phone.","They get very quiet / still."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Herr Utz: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Herr Utz”.", group: {"claimMax":1,"perOption":2,"options":["He gets / rushes to the back of the bus.","He is looking for/wants the phone.","He shouts/gets mad.","He wants to know who owns the phone.","He counts to three."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
