@@ -667,7 +667,7 @@ def reconcile_subject(subject, census=None):
                 continue
             if hist_deferred:
                 ref['paper'] = 'Deferred'
-        if subject in ('economics', 'engineering', 'dcg', 'spanish'):
+        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...") and the
@@ -677,7 +677,8 @@ def reconcile_subject(subject, census=None):
             deferred = bool(re.match({'economics': r'^econ-\d{4}-(?:hl|ol)-deferred-',
                                       'engineering': r'^eng-\d{4}-(?:hl|ol)-deferred-',
                                       'dcg': r'^dcg-\d{4}-(?:hl|ol)-deferred-',
-                                      'spanish': r'^es-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'spanish': r'^es-\d{4}-(?:hl|ol)-deferred-',
+                                      'german': r'^de-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue

@@ -772,6 +772,7 @@ const DEFERRED_ID = {
   history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
+  german: /^de-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1695,7 +1696,7 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = deferredCard(SUBJECT_ID, c) && SUBJECT_ID === 'spanish'
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
@@ -1928,8 +1929,8 @@ for (const c of cards) {
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
   /* A DCG deferred sitting is two booklets, as June's is: its card opens the
    * one that prints its section, never simply the entry's first. */
-  const fileid = deferredEntry && SUBJECT_ID === 'spanish'
-    ? deferredDoc(SUBJECT_ID, c, c.section === 'L' ? 'Aural Paper' : 'Exam Paper')
+  const fileid = deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
     ? (SUBJECT_ID === 'dcg'
       ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')

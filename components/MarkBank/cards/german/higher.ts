@@ -13625,4 +13625,2215 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-1-a", topicId: "german-6-1", conceptId: "war-traum-eltern-ihre-tochter-lila",
+    section: "T1", questionRef: "2022 HL Section T1 Q1(a) — Deferred sitting",
+    questionText: "Was war der Traum der Eltern für ihre Tochter Lila? Geben Sie Details. (Zeile 1 – 15)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["Lila macht das Abitur.","Sie studiert in Bielefeld","Sie studiert Jura.","(In fünf Jahren) wird sie Anwältin.","Sie trägt blassrosa Kostüme.","Sie wird ein Handy am Ohr haben","Sie hat noch eins in ihrer Prada Handtasche.","Sie fährt ein schickes Auto"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-1-b", topicId: "german-6-1", conceptId: "war-erz-hlerin-ber-ihren-studienplatz",
+    section: "T1", questionRef: "2022 HL Section T1 Q1(b) — Deferred sitting",
+    questionText: "Warum war die Erzählerin über ihren Studienplatz so erstaunt? (Zeile 16 – 26)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Sie hatte sich nicht auf die Warteliste gesetzt","Sie wusste nicht, dass sie auf der Warteliste war.","Ihre Abinote war nicht gut.","Sie sollte Jura studieren./ Sie hatte nicht vor, Jura zu studieren."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-1-c", topicId: "german-6-1", conceptId: "hatte-vater-schon-alles-erz-hlerin",
+    section: "T1", questionRef: "2022 HL Section T1 Q1(c) — Deferred sitting",
+    questionText: "Was hatte der Vater schon alles für die Erzählerin organisiert?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["die Einschreibung","ein Zimmer/ eine Wohnung/einen Mietvertrag","die ICE-Karte"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-1-d", topicId: "german-6-1", conceptId: "machte-erz-hlerin-nachdem-durchsage-bochum",
+    section: "T1", questionRef: "2022 HL Section T1 Q1(d) — Deferred sitting",
+    questionText: "Was machte die Erzählerin, nachdem sie die Durchsage „Bochum Hauptbahnhof“ hӧrte?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Sie stand auf","nahm ihren Rücksack","stand im Eingang des Bahnhofs","starrte hinaus in den Regen"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in German",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-2-a", topicId: "german-6-1", conceptId: "did-narrator-show-she-annoyed-with",
+    section: "T1", questionRef: "2022 HL Section T1 Q2(a) — Deferred sitting",
+    questionText: "How did the narrator show she was annoyed with her parents? Give details. (lines 37 – 50)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["she ground her teeth","she smoked (because her father had forbidden it)","she wore her hair in a Punk-style","she refused to study for a biology test","she went to a party the night before the test"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-2-b-i", topicId: "german-6-1", conceptId: "preparations-had-narrator-made-her-journey",
+    section: "T1", questionRef: "2022 HL Section T1 Q2(b)(i) — Deferred sitting",
+    questionText: "What preparations had the narrator made for her journey? Give details. (lines 56 – 62)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["100 Euro","clothes for a week","a rucksack / backback"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-2-b-ii", topicId: "german-6-1", conceptId: "narrator-had-intention-going-bochum-support",
+    section: "T1", questionRef: "2022 HL Section T1 Q2(b)(ii) — Deferred sitting",
+    questionText: "The narrator had no intention of going to Bochum. Give details in support of this statement. (lines 51 – 56, 68 – 75)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":1,"options":["She didn’t know where the train was going","She took down her rucksack, as if she had been waiting for the announcement","She said to herself “What in God’s name am I doing here?”"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-3-a", topicId: "german-6-1", conceptId: "thoughts-were-going-through-narrator-mind",
+    section: "T1", questionRef: "2022 HL Section T1 Q3(a) — Deferred sitting",
+    questionText: "What thoughts were going through the narrator’s mind as she left the train station? (lines 79 – 89)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":4,"perOption":3,"options":["Where to now?","I haven’t a clue/ have no idea.","I could go back into the station.","…take a train somewhere else.","This place is as good as any other.","What good is it to change trains aimlessly / without having a definite goal?","At least nobody would/will look for me here."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-3-b", topicId: "german-6-1", conceptId: "did-narrator-know-that-she-had",
+    section: "T1", questionRef: "2022 HL Section T1 Q3(b) — Deferred sitting",
+    questionText: "How did the narrator know that she had left the inner city? Give details. (lines 104 – 107)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":1,"options":["The houses were low(er)","The streets were narrow(er)","The footpaths were dirty"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-3-c", topicId: "german-6-1", conceptId: "narrator-considers-returning-home-but-decides",
+    section: "T1", questionRef: "2022 HL Section T1 Q3(c) — Deferred sitting",
+    questionText: "The narrator considers returning home but decides against it. Give details. (lines 110 – 123)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Her parents wouldn’t understand why she didn’t want to go to university / get a degree.","…that she needed more time.","…that she might want to go to America for a year.","… that she needed to find herself.","Her parents insisted that their children have a diploma / degree at 25","… and a doctorate at age 30."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t1-4", topicId: "german-6-1", conceptId: "read-text-again-feelings-doubt-uncertainty",
+    section: "T1", questionRef: "2022 HL Section T1 Q4 — Deferred sitting",
+    questionText: "Read TEXT I again. Feelings of doubt/ uncertainty feature in this story. Give two examples from the text. (Can be language use and/or content)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme lists 1 further accepted answer(s) for this ask, in the order it prints them; a valid answer of your own counts.", openList: true, group: {"claimMax":2,"perOption":5,"options":["She doesn’t object when her father chooses what she is going to study.","She doesn’t pick a definite destination.","She questions why she got out of the train in Bochum.","She doesn’t know where to go / stay in Bochum","She considers getting another train","She thinks Bochum is as good as anywhere else.","When she saw the woman begging she thought she could still go back","Maybe her mother would understand her reasons","She thinks that a doctorate is better than having no qualification (Language use)","I hadn’t a clue where the train was going. (Ich hatte keine Ahnung, wohin der Zug fuhr).","What in God’s name am I doing here? (Was zum Teufel sollte ich hier?)","Where to now? I had no idea. (Wohin jetzt? Ich hatte keine Ahnung.)","But where to? (Nur wohin?)","… if I didn’t know where I wanted to get to (... wenn ich nicht wusste, wohin ich wollte.)","I could still go back. (Noch konnte ich zurück.)","Maybe I could talk to mum about it. (Vielleicht könnte ich mit Mama darüber reden...)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT I: LESEVERSTÄNDNIS",
+          "title": "TEXT I — answer in English or Irish",
+          "pages": [
+                4,
+                5,
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-1-a", topicId: "german-6-0", conceptId: "stellen-sich-vor-axel-drei-kurze",
+    section: "T2", questionRef: "2022 HL Section T2 Q1(a) — Deferred sitting",
+    questionText: "Stellen Sie sich vor, Sie sind Axel. Schreiben Sie drei kurze Sätze in der Ich‐Form mit Details über sich selbst. (Introduction & Par. 1) Hallo, ich heiße Axel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":3,"options":["Ich habe eine Sehschwäche./ Ich leide an einer Sehschwäche.","Ich bin fast blind./Ich kann die Planzen nicht sehen","Ich kann nur Hell und Dunkel unterscheiden.","Ich habe (trotzdem) einen Garten.","Ich habe eine Freundin.","Ich möchte mit meiner Freundin/ihr einen Bauernhof führen.","Ich werde im Sommer Gemüse ernten.","Ich habe Geduld."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-1-b", topicId: "german-6-0", conceptId: "axel-kann-seinen-garten-nicht-sehen",
+    section: "T2", questionRef: "2022 HL Section T2 Q1(b) — Deferred sitting",
+    questionText: "Axel kann seinen Garten nicht sehen. Wie schafft er es trotzdem den Garten zu genießen? (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":2,"options":["Er kann die Pflanzen riechen","Er kann (sie) fühlen","Doro beschreibt ihm alles."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-1-c", topicId: "german-6-0", conceptId: "woher-kommt-axels-interesse-gartenarbeit",
+    section: "T2", questionRef: "2022 HL Section T2 Q1(c) — Deferred sitting",
+    questionText: "Woher kommt Axels Interesse an der Gartenarbeit? Geben Sie Details. (Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["Er ist auf einem Bauernhof aufgewachsen.","Als Kind hatte er seinen eigenen Garten.","Als Teenager wollte er lieber draußen sein.","Er wühlte gern in der Erde.","Answer Question 2 and 3 in English."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-2-a", topicId: "german-6-0", conceptId: "future-plans-doro-axel-have",
+    section: "T2", questionRef: "2022 HL Section T2 Q2(a) — Deferred sitting",
+    questionText: "What future plans do Doro and Axel have? (Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["They want to have their own farm.","They want to supply/produce their own food","(Axel could) work as an adviser","in the food sector / industry."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-2-b-i", topicId: "german-6-0", conceptId: "did-doro-axel-get-know-another",
+    section: "T2", questionRef: "2022 HL Section T2 Q2(b)(i) — Deferred sitting",
+    questionText: "How did Doro and Axel get to know one another? Give details. (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":3,"options":["It began in 2011","Axel was a student at a Berufsfachschule/(Vocational) College (in Hanover).","Doro was doing a volunteer year there.","He gave her a present of a pumpkin"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-2-b-ii", topicId: "german-6-0", conceptId: "qualities-did-axel-doro-admire-other",
+    section: "T2", questionRef: "2022 HL Section T2 Q2(b)(ii) — Deferred sitting",
+    questionText: "What qualities did Axel and Doro admire in each other? (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":1,"perOption":4,"options":["(Axel: any one: 2 marks)","Axel’s / his openness","Axel’s / his self-confidence (Doro: any one: 2 marks)","Doro’s / her patience","Doro’s / her empathy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-3-a", topicId: "german-6-0", conceptId: "axel-did-his-abitur-doro-have",
+    section: "T2", questionRef: "2022 HL Section T2 Q3(a) — Deferred sitting",
+    questionText: "Axel did his Abitur. Give details of what he and Doro have been doing since. (Par. 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":3,"perOption":2,"options":["went to Canada for a year","worked on various farms","harvested fruit","worked with cows / chickens","studied (Ecological) Agricultural Science (in Kassel)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-3-b", topicId: "german-6-0", conceptId: "doro-helps-axel-ways-she-helps",
+    section: "T2", questionRef: "2022 HL Section T2 Q3(b) — Deferred sitting",
+    questionText: "Doro helps Axel. Give two details of the ways in which she helps him. (Par. 6) a. bis er das Gemüse ernten kann. b. um sich selbst versorgen zu können. c. wo sie auf Farmen arbeiteten. d. obwohl er fast blind ist. e. damit Axel sie per Brailleschrift lesen kann. f. mit der er einen Bauernhof führen möchte.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["helps him climb mountains","adapts board-games for him","converts books into Braille books.","… and audio-books"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-t2-4", topicId: "german-6-0", conceptId: "passt-zusammen",
+    section: "T2", questionRef: "2022 HL Section T2 Q4 — Deferred sitting",
+    questionText: "Was passt zusammen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional. It prints only the key, so each pair is the number and the letter it prints.", group: {"claimMax":5,"perOption":2,"options":["2 — f","3 — a","4 — b","5 — c","6 — e"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in German",
+          "pages": [
+                10,
+                11,
+                12,
+                13
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-ag-1", topicId: "german-3-4", conceptId: "sehen-unten-tze-denen-verben-unterstrichen",
+    section: "AG", questionRef: "2022 HL Section AG Q1 — Deferred sitting",
+    questionText: "Sie sehen unten Sätze, in denen Verben unterstrichen sind. Sehen Sie sich das Beispiel an. Geben Sie nun für die anderen fünf Verben an: (a) den Infinitiv des Verbs, (b) Die Zeitform (Präsens, Perfekt, Imperfekt/Präteritum, Plusquamperfekt, Futur) und (c) ob Singular oder Plural (1) Das war kein Problem für meinen Vater. (2) Meine Eltern hatten einen Studienplatz für mich organisiert. (3) Mein Vater verbot mir das Rauchen. (4) Ich dachte über meine Möglichkeiten nach. (5) Eine Bettlerin hat im Eingang eines Lokals gestanden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "sein (2) Imperfekt (2) Singular (1)", marks: 5, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The sentence the scheme prints: (1) Das war kein Problem für meinen Vater", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"p1","verbatim":"sein","marks":2,"permittedMarks":[0,1,2]},{"id":"p2","verbatim":"Imperfekt","marks":2,"permittedMarks":[0,1,2]},{"id":"p3","verbatim":"Singular","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-2", kind: "criterion", verbatim: "organisieren (2) Plusquamperfekt (2) Plural (1)", marks: 5, contextNote: "The sentence the scheme prints: (2) Meine Eltern hatten einen Studienplatz für mich organisiert.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"p1","verbatim":"organisieren","marks":2,"permittedMarks":[0,1,2]},{"id":"p2","verbatim":"Plusquamperfekt","marks":2,"permittedMarks":[0,1,2]},{"id":"p3","verbatim":"Plural","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-3", kind: "criterion", verbatim: "verbieten (2) Imperfekt (2) Singular (1)", marks: 5, contextNote: "The sentence the scheme prints: (3) Mein Vater verbot mir das Rauchen.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"p1","verbatim":"verbieten","marks":2,"permittedMarks":[0,1,2]},{"id":"p2","verbatim":"Imperfekt","marks":2,"permittedMarks":[0,1,2]},{"id":"p3","verbatim":"Singular","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-4", kind: "criterion", verbatim: "nachdenken (2) Imperfekt (2) Singular (1)", marks: 5, contextNote: "The sentence the scheme prints: (4) Ich dachte über meine Möglichkeiten nach.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"p1","verbatim":"nachdenken","marks":2,"permittedMarks":[0,1,2]},{"id":"p2","verbatim":"Imperfekt","marks":2,"permittedMarks":[0,1,2]},{"id":"p3","verbatim":"Singular","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-5", kind: "criterion", verbatim: "stehen (2) Perfekt (2) Singular (1)", marks: 5, contextNote: "The sentence the scheme prints: (5) Eine Bettlerin hat im Eingang eines Lokals gestanden.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"p1","verbatim":"stehen","marks":2,"permittedMarks":[0,1,2]},{"id":"p2","verbatim":"Perfekt","marks":2,"permittedMarks":[0,1,2]},{"id":"p3","verbatim":"Singular","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-ag-2", topicId: "german-3-4", conceptId: "sehen-unten-tze-denen-wortgruppe-unterstrichen",
+    section: "AG", questionRef: "2022 HL Section AG Q2 — Deferred sitting",
+    questionText: "Sie sehen unten fünf Sätze, in denen eine Wortgruppe unterstrichen ist. Welche Fragen würden Sie stellen, um die folgenden Antworten zu erhalten? Schreiben Sie die jeweilige Frage auf! (1) Sie hat immer ein Handy am Ohr. (2) Vor zwei Wochen hatte sie einen Studienplatz bekommen. (3) Der Vater hat den Studienplatz für sie erledigt. (4) Sie sollte zur Uni fahren, um sich einzuschreiben. (5) Der Vater hat seiner Tochter verboten zu rauchen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Was (5) hat sie (immer) am Ohr?", marks: 5, contextNote: "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The sentence the scheme prints: (1) Sie hat immer ein Handy am Ohr." },
+    { id: "r-2", kind: "point", verbatim: "Wann/ vor wie vielen Wochen (5) hatte sie einen Studienplatz bekommen?", marks: 5, contextNote: "The sentence the scheme prints: (2) Vor zwei Wochen hatte sie einen Studienplatz bekommen." },
+    { id: "r-3", kind: "point", verbatim: "Wer (5) hat den Studienplatz für sie erledigt.", marks: 5, contextNote: "The sentence the scheme prints: (3) Der Vater hat den Studienplatz für sie erledigt." },
+    { id: "r-4", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The sentence the scheme prints: (4) Sie sollte zur Uni fahren um sich einzuschreiben. The scheme allows “Wo” for 3 marks, in place of the answer, never beside it.", group: {"claimMax":1,"perOption":5,"options":["Wohin (5) sollte sie fahren, (um sich einzuschreiben)?","Wo"],"optionMarks":[5,3],"optionOf":[null,0]} },
+    { id: "r-5", kind: "point", verbatim: "Wem (5) hat der Vater verboten zu rauchen/ zu rauchen verboten/ das Rauchen verboten?", marks: 5, contextNote: "The sentence the scheme prints: (5) Der Vater hat seiner Tochter verboten zu rauchen." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANGEWANDTE GRAMMATIK",
+          "title": "Angewandte Grammatik — the printed exercise",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination, pp.13-15 — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-at-a", topicId: "german-7-0", conceptId: "freien-sehen-sich-foto-rechts-foto",
+    section: "AT", questionRef: "2022 HL Section AT Q(a) — Deferred sitting",
+    questionText: "Im Freien\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto in drei bis vier Sätzen.\n• Sie treffen Axel und unterhalten sich mit ihm.\nWelche vier Fragen stellen Sie ihm über sein Leben?\n• Was halten Sie von Gartenarbeit? Würden Sie gern einen eigenen Garten haben? Warum/warum nicht?\nGlauben Sie, dass heutzutage junge Leute zu wenig Zeit im Freien verbringen?\nWarum ist das so? (zwei Sätze)\n(100 Wörter)",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+                "Expression = 12",
+                "Bearbeiten Sie (a) oder (b):",
+                "(a) Im Freien Award content marks first;",
+                "Two discretionary marks (1, 1) are available to be awarded under any of the points A-C for additional relevant content, elaboration or comment.",
+                "Indicate discretionary marks with +1 in margin i.e. A = 3+1 Show as (A,B,C +1) in body of script at relevant spot.",
+                "Bracket (A,B,C+1) the first additional discretionary mark only.",
+                "Put irrelevant content in square brackets [..]; exclude when judging the expression mark.",
+                "NB: Non-use of ‘ich’ where required: penalise in each subsection (A, B, C) once only"
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Beschreiben Sie das Foto in drei bis vier Sätzen.",
+                            "Satz 1 (1)",
+                            "Satz 2 (1)",
+                            "Satz 3 (1)"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Sie treffen Axel und unterhalten sich mit ihm. Welche vier Fragen stellen Sie ihm über sein",
+                            "Leben?",
+                            "Frage 1 (1)",
+                            "Frage 2 (1)",
+                            "Frage 3 (1)",
+                            "Frage 4 (1)"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Was halten Sie von Gartenarbeit? Würden Sie gern einen eigenen Garten haben?",
+                            "Warum/warum nicht?",
+                            "Satz 1 (1)",
+                            "Satz 2 (1)",
+                            "Glauben Sie, dass heutzutage junge Leute zu wenig Zeit im Freien verbringen?",
+                            "Warum ist das so? (zwei Sätze)",
+                            "Satz 1 (1)",
+                            "Satz 2 (1)"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Dis. 2 marks"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interfer from English syntax; word order, esp. verb position, very frequently w",
+                                        "verb usage/forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally inco few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate",
+                                        "– with some interference from English; word order mistakes evident. Verb usage/forms/tense occasionally incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [7,8,9],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, With perhaps some German idiom. Only occasional word order mista Few errors in verb usage/forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interfer from English syntax; word order, esp. verb position, very frequently w",
+                                              "verb usage/forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally inco few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate",
+                                              "– with some interference from English; word order mistakes evident. Verb usage/forms/tense occasionally incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [5,6],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, With perhaps some German idiom. Only occasional word order mista Few errors in verb usage/forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "a",
+                                  "b",
+                                  "c",
+                                  "dis"
+                            ],
+                            "contentAtMost": 8,
+                            "wordsUnder": 60,
+                            "rule": "If the content mark is 12 or less, or the question is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (a) — answer in German",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination, pp.14-15 — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-at-b", topicId: "german-7-0", conceptId: "freunde-freundschaften-sehen-sich-foto-rechts",
+    section: "AT", questionRef: "2022 HL Section AT Q(b) — Deferred sitting",
+    questionText: "Freunde und Freundschaften\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto in drei bis vier Sätzen.\n• Die meisten Menschen haben ein paar sehr gute Freunde. Was bedeutet Freundschaft für Sie?\nSchreiben Sie vier Sätze.\n• Freundschaften, die fürs Leben halten. Ist das möglich?\nWarum/warum nicht? (zwei Sätze)\nManchmal enden Freundschaften einfach. Warum passiert das? Schreiben Sie zwei Sätze.\n(100 Wörter)",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+                "Expression = 12",
+                "Award content marks first;",
+                "Two discretionary marks (1, 1) are available to be awarded under any of the points A-C for additional relevant content, elaboration or comment.",
+                "Indicate discretionary marks with +1 in margin i.e. A = 3+1 Show as (A,B,C+1 in body of script at relevant spot.",
+                "Bracket (A,B,C+1) the first additional discretionary mark only.",
+                "Put irrelevant content in square brackets [..]; exclude when judging the expression mark NB: Non-use of ‘ich’ where required: penalise in each subsection (A, B, C) once only"
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Beschreiben Sie das Foto in drei bis vier Sätzen.",
+                            "Satz 1 (1)",
+                            "Satz 2 (1)",
+                            "Satz 3 (1)"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Die meisten Menschen haben ein paar sehr gute Freunde. Was bedeutet Freundschaft für",
+                            "Sie? Schreiben Sie vier Sätze.",
+                            "(Allow two elaborations)",
+                            "Satz 1: (1)",
+                            "Satz 2: (1)",
+                            "Satz 3: (1)",
+                            "Satz 4: (1)"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Freundschaften, die fürs Leben halten. Ist das möglich? Warum/warum nicht? (zwei",
+                            "Sätze)",
+                            "Satz 1: (1)",
+                            "Satz 2: (1)",
+                            "Manchmal enden Freundschaften einfach. Warum passiert das? Schreiben Sie zwei",
+                            "Sätze.",
+                            "Satz 1: (1)",
+                            "Satz 2: (1)"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Dis. 2 marks"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interfer from English syntax; word order, esp. verb position, very frequently w",
+                                        "verb usage/forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally inco few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate",
+                                        "– with some interference from English; word order mistakes evident. Verb usage/forms/tense occasionally incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [7,8,9],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, With perhaps some German idiom. Only occasional word order mista Few errors in verb usage/forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interfer from English syntax; word order, esp. verb position, very frequently w",
+                                              "verb usage/forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally inco few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate",
+                                              "– with some interference from English; word order mistakes evident. Verb usage/forms/tense occasionally incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [5,6],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, With perhaps some German idiom. Only occasional word order mista Few errors in verb usage/forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "a",
+                                  "b",
+                                  "c",
+                                  "dis"
+                            ],
+                            "contentAtMost": 8,
+                            "wordsUnder": 60,
+                            "rule": "If the content mark is 12 or less, or the question is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (b) — answer in German",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination, pp.16-18 — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-sp-a", topicId: "german-7-2", conceptId: "german-friend-frank-franka-has-written",
+    section: "SP", questionRef: "2022 HL Section SP Q(a) — Deferred sitting",
+    questionText: "Your German friend, Frank/Franka has written to you. Reply in German to the letter, giving detailed answers to four of the five topic areas he/she has asked about, expressing your personal opinion.\n(Write approximately 160 words.)\nMainz, 15. Mai",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(a) Letter Note: Answer any four of the five points which follow.",
+                "Content = 25 marks Expression = 25 marks",
+                "Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C, D or E",
+                "for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+                "NB: Non-use of ‘ich’ where required: penalise in each subsection (A, B, C, D or E) once only.",
+                "A. (4)",
+                "Bei uns ist man normalerweise neunzehn oder sogar zwanzig, wenn man das Abi macht. Ich",
+                "finde das besser. Aber wahrscheinlich bist du da anderer Meinung, oder? Schreib mir, was du",
+                "für besser hältst (1) und warum. (1,1,1)",
+                "B. (4)",
+                "Ein neuer Trend hier in Deutschland ist ein Jahr Auszeit zu nehmen. Machen viele Schüler in",
+                "Irland das auch? (1) Würdest du auch gern so was machen? (1) Warum/warum nicht? (1,1)",
+                "C. (4)",
+                "...eine zweiwöchige Fahrradtour machen, am Rhein entlang. Wie findest du diese Idee? (1)",
+                "Kannst du mir eine interessante Radtour empfehlen? (1)",
+                "Würdest du auch mitkommen? Warum/warum nicht? (1,1)",
+                "D. (4)",
+                "Ein paar aus meiner Klasse sind jetzt Veganer oder Vegetarier. Ist das auch so ein Esstrend bei",
+                "euch? (1)",
+                "Ich esse gern Fleisch und möchte nicht darauf verzichten. Du auch nicht, oder? (1)",
+                "Wie findest du diesen Trend? (1,1)",
+                "E. (4)",
+                "Stell dir vor, zwei Abiturienten an meiner Schule wollen im Sommer heiraten! Mit neunzehn",
+                "Jahren! Was sagst du dazu? (1) Heiraten viele junge Menschen unter zwanzig bei euch in",
+                "Irland? Warum/warum nicht? (1)",
+                "Möchtest du irgendwann mal heiraten? Warum/warum nicht? (1,1)",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "op",
+                      "label": "Op.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Op. (2)",
+                            "Suitable opening:",
+                            "Bare minimum (1 mark)",
+                            "Appropriate elaboration OR reference to contents of letter. (1 mark)"
+                      ]
+                },
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "cl",
+                      "label": "Cl.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Cl. (2)",
+                            "Suitable transition to ending/reference to letter (1)",
+                            "Appropriate closing formula (1)",
+                            "(NB: Allow the best four of A, B, C, D or E)"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": [
+                            "Dis.: (5 marks: 5x1) Have you awarded the five discretionary marks?"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4,5,6],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, v",
+                                        "frequently wrong; verb usage/forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect; few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [7,8,9,10,11,12,13,14],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate",
+                                        "– with some interference from English; word order mistakes evident. Verb usage/forms/tense frequently incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [15,16,17,18,19],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate With perhaps some German idiom. Only occasional word order mistakes. Few errors in verb usage/forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 18,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2,3,4],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, v",
+                                              "frequently wrong; verb usage/forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect; few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [5,6,7,8,9,10],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate",
+                                              "– with some interference from English; word order mistakes evident. Verb usage/forms/tense frequently incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [11,12,13],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate With perhaps some German idiom. Only occasional word order mistakes. Few errors in verb usage/forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [14,15,16,17,18],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "op",
+                                  "point-1",
+                                  "point-2",
+                                  "point-3",
+                                  "point-4",
+                                  "cl",
+                                  "dis"
+                            ],
+                            "contentAtMost": 12,
+                            "wordsUnder": 100,
+                            "rule": "If the content mark is 12 or less, or the question is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it.",
+                "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (a) — answer in German",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALP000BV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination, pp.17-18 — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-sp-b", topicId: "german-7-1", conceptId: "schauen-sich-foto-genau-vier-tzen",
+    section: "SP", questionRef: "2022 HL Section SP Q(b) — Deferred sitting",
+    questionText: "Schauen Sie sich das Foto genau an.\n• Beschreiben Sie in vier Sätzen, was Sie auf dem Foto sehen.\n• Sie müssen sich bald entscheiden, was Sie nach dem Abitur vorhaben. Was sind Ihre Pläne für die Zukunft? Haben Sie diese Entscheidung allein getroffen oder haben andere Leute Sie beeinflusst? Wenn ja, wie?\n• Manchmal wohnen junge Leute zusammen in einer Wohngemeinschaft (WG). Welche Vorteile und Nachteile hat eine WG? Manche Studenten haben einen schlechten Ruf, weil sie oft in den WGs Partys feiern und laute Musik spielen. Wie finden Sie dieses Benehmen?\n• In manchen anderen Ländern muss man nach dem Abi ein Jahr Militärdienst oder Zivildienst leisten. Wie finden Sie die Idee? Sollte das auch in Irland Pflicht sein?\nWarum/warum nicht?\n• Im Zeitalter von Computern und sozialen Medien kann man fast alles online machen. Was finden Sie besser, den Präsenzunterricht oder den Onlineunterricht? Geben Sie Ihre Meinung in zwei Sätzen. Ein neuer Trend ist, wenn mӧglich, zu Hause im Homeoffice zu arbeiten. Welche Vorteile und/oder Nachteile hat dieser Trend? (zwei Sätze)\n• Viele Menschen arbeiten nur um Geld zu verdienen. Wie finden Sie das? (zwei Sätze).\nWelche anderen Faktoren spielen bei der Berufswahl eine Rolle? Schreiben Sie Ihre Meinung. (zwei Sätze)\n(Scríobh tuairim is 160 focal.)\n(Write approximately 160 words.)\nSpás le haghaidh obair bhreise.\nDéan gach píosa oibre a lipéadú go soiléir le huimhir na ceiste agus leis an gcuid den cheist.\nThis is space for extra work. Label any such extra work clearly with the question number and part.\nSpás le haghaidh obair bhreise.\nDéan gach píosa oibre a lipéadú go soiléir le huimhir na ceiste agus leis an gcuid den cheist.\nThis is space for extra work. Label any such extra work clearly with the question number and part.\nNá scríobh ar an leathanach seo Do not write on this page Fógra cóipchirt D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit úinéir an chóipchirt ina leith, agus d’fhéadfadh sé gur athchóiríodh iad, chun críche measúnaithe, gan cead na n-údar a fháil roimh ré. Ullmhaíodh an scrúdpháipéar seo de réir Alt 53(5) den Acht um Chóipcheart agus Cearta Gaolmhara, (2000). Ní údaraítear aon úsáid dá éis chun aon chríoch ach amháin chun na críche dá bhfuil sé beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh nó úsáid neamhúdaraithe an scrúdpháipéir seo.\nCopyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.\nThe Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.\nArdleibhéal Higher Level Gearmáinis German 2 uair 30 nóiméad 2 hours 30 minutes",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(b) Schen Sie sich das Foto genau an.",
+                "Content = 25 marks Expression = 25 marks",
+                "* Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C, D, E or F",
+                "for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+                "(NB: Where candidates attempt more than five, mark all and award marks for the best five!!!)",
+                "NB: Non-use of ‘ich’ where required: penalise in each subsection (A, B, C, D, E or F) once only",
+                "A. (4)",
+                "Beschreiben Sie in vier Sätzen, was Sie auf dem Foto sehen.",
+                "Satz 1",
+                "Satz 2",
+                "Satz 3",
+                "Satz 4",
+                "B. (4)",
+                "Sie müssen sich bald entscheiden, was Sie nach dem Abitur vorhaben. Was sind Ihre Pläne für",
+                "die Zukunft? (1,1)",
+                "Haben Sie diese Entscheidung allein getroffen, oder haben andere Leute Sie beeinflusst?",
+                "Wenn ja, wie? (1,1)",
+                "C. (4)",
+                "Manchmal wohnen junge Leute zusammen in einer Wohngemeinschaft (WG). Welche Vorteile",
+                "und Nachteile hat eine WG? (1,1)",
+                "Manche Studenten haben einen schlechten Ruf, weil sie oft in den WGs Partys feiern und",
+                "laute Musik spielen. Wie finden Sie dieses Benehmen? (1,1)",
+                "D. (4)",
+                "In manchen anderen Ländern muss man nach dem Abi ein Jahr Militärdienst oder Zivildienst",
+                "leisten. Wie finden Sie die Idee? (1,1)",
+                "Sollte das auch in Irland Pflicht sein? Warum/warum nicht? (1,1)",
+                "E. (4)",
+                "Im Zeitalter von Computern und sozialen Medien kann man fast alles online machen. Was",
+                "finden Sie besser, den Präsenzunterricht oder den Onlineunterricht? Geben Sie ihre Meinung",
+                "in zwei Sätzen. (1,1)",
+                "Ein neuer Trend ist, wenn möglich, zu Hause im Homeoffice zu arbeiten. Welche Vorteile",
+                "und/oder Nachteile hat dieser Trend? (zwei Sätze) (1,1)",
+                "F. (4)",
+                "Viele Menschen arbeiten nur, um Geld zu verdienen. Wie finden Sie das? (zwei Sätze) (1,1)",
+                "Welche anderen Faktoren spielen bei der Berufswahl eine Rolle? Schreiben Sie Ihre Meinung",
+                "in zwei Sätzen.(1,1)",
+                "(NB: Allow the best five of A, B, C, D, E or F)",
+                "Have you awarded the five discretionary marks?",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": [
+                            "Dis.: (5 marks: 5x1)"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4,5,6],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, v",
+                                        "frequently wrong; verb usage/forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect; few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [7,8,9,10,11,12,13,14],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate",
+                                        "– with some interference from English; word order mistakes evident. Verb usage/forms/tense frequently incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [15,16,17,18,19],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate With perhaps some German idiom. Only occasional word order mistakes. Few errors in verb usage/forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 18,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2,3,4],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, v",
+                                              "frequently wrong; verb usage/forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect; few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [5,6,7,8,9,10],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate",
+                                              "– with some interference from English; word order mistakes evident. Verb usage/forms/tense frequently incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [11,12,13],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate With perhaps some German idiom. Only occasional word order mistakes. Few errors in verb usage/forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [14,15,16,17,18],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb usage/forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "point-1",
+                                  "point-2",
+                                  "point-3",
+                                  "point-4",
+                                  "point-5",
+                                  "dis"
+                            ],
+                            "contentAtMost": 12,
+                            "wordsUnder": 100,
+                            "rule": "If the content mark is 12 or less, or the question is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it.",
+                "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (b) — answer in German",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-1-i", topicId: "german-4-0", conceptId: "does-mareike-wish-study-university",
+    section: "L1", questionRef: "2022 HL Section L1 Q1(i) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What does Mareike wish to study at university?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Computers/IT", marks: 1, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-1-ii", topicId: "german-4-0", conceptId: "does-she-think-she-suited-this",
+    section: "L1", questionRef: "2022 HL Section L1 Q1(ii) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Why does she think she is suited to this area of study? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”", group: {"claimMax":3,"perOption":2,"options":["good at maths","good at physics","has own computer since 8 years old","spends hours on Internet","finds solving problems great","thinks she would be good at team-work"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 1(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-2-i", topicId: "german-4-0", conceptId: "advantages-does-she-see-making-her",
+    section: "L1", questionRef: "2022 HL Section L1 Q2(i) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "What advantages does she see in making her career in this area of work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”", group: {"claimMax":2,"perOption":2,"options":["her dream job","wants to earn good money","be financially independent","can find work abroad","job prospects good","varied job prospects / variety of jobs"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 2(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-2-ii", topicId: "german-4-0", conceptId: "involved-her-course-study",
+    section: "L1", questionRef: "2022 HL Section L1 Q2(ii) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Give two details of what is involved in her course of study.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”", group: {"claimMax":2,"perOption":1,"options":["total of 8 terms / semesters of study","work experience","(maybe) spend term in the USA / in GB"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 2(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-3-i", topicId: "german-4-0", conceptId: "where-does-she-want-study",
+    section: "L1", questionRef: "2022 HL Section L1 Q3(i) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Where does she want to study?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks” The scheme allows “Small university” for 1 mark, in place of the answer above, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Martin-Luther university // in Halle","Small university"],"optionMarks":[2,1],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 3(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-3-ii", topicId: "german-4-0", conceptId: "reasons-this-choice-university",
+    section: "L1", questionRef: "2022 HL Section L1 Q3(ii) — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "Give three reasons for this choice of university.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”", group: {"claimMax":3,"perOption":1,"options":["Small (NB: Do not award a second time if already given in (i))","has a good name / reputation","need not live with parents // would like to move away from home","big cities anonymous // you don’t know anybody there","rents lower (in small cities/towns)","Halle is in Sachsen-Anhalt // her family (originally) from Sachsen-Anhalt"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 3(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l1-4", topicId: "german-4-0", conceptId: "does-mareike-intend-pay-her-way",
+    section: "L1", questionRef: "2022 HL Section L1 Q4 — Deferred sitting",
+    stem: "Mareike is having a chat with her class teacher about her career and study plans. The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+    questionText: "How does Mareike intend to pay her way through university? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Answers in German: half marks”", group: {"claimMax":3,"perOption":1,"options":["€ 350 a month from parents","work during the holidays","give grinds","writing computer programs (for a firm/company)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "First Part — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "First Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l2-1", topicId: "german-4-1", conceptId: "out-german-note-frau-schulze-will",
+    section: "L2", questionRef: "2022 HL Section L2 Q1 — Deferred sitting",
+    stem: "You will now hear a telephone conversation. Frau Schulze takes a message from the caller. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "Write out in German the note which Frau Schulze will leave. (key words, not full sentences). The note should contain:\n• name of caller\n• problem caller wishes to discuss\n• message regarding further contact\n• telephone number of caller",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Harald) S-E-I-F-E-R-T", marks: 2, contextNote: "Answer this one in German. The scheme heads this answer “Anruf von”. (All or nothing)" },
+    { id: "r-2", kind: "point", verbatim: "sucht ein Buch / (das Buch) Kindpsychologie für Grundschullehrer", marks: 2, contextNote: "The scheme heads this answer “Das Problem”. Answer in English/Irish: half marks." },
+    { id: "r-3", kind: "anyN", verbatim: "Das Problem: the answers the scheme accepts", marks: null, group: {"claimMax":2,"perOption":1,"options":["(an der Uni schon) ausgeliehen","nicht in einer Buchhandlung zu kaufen / erhältlich","für seine Examensarbeit","er muss es lesen"]} },
+    { id: "r-4", kind: "point", verbatim: "erwartet einen Rückruf", marks: 2, contextNote: "The scheme heads this answer “Der Anrufer”." },
+    { id: "r-5", kind: "point", verbatim: "(0173) 93 45 6 7 4 (all or nothing)", marks: 2, contextNote: "The scheme heads this answer “Rufnummer”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l2-2", topicId: "german-4-1", conceptId: "listening-phone-call-third-time-down",
+    section: "L2", questionRef: "2022 HL Section L2 Q2 — Deferred sitting",
+    stem: "You will now hear a telephone conversation. Frau Schulze takes a message from the caller. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+    questionText: "In listening to the phone call for the third time, write down three examples of the language (= expressions and phrases) used which convey the urgency of the matter in question.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. For the whole question the scheme prints: “No marks for tone of voice/ intonation without reference to specific expressions and phrases.” For the whole question the scheme prints: “Accept: accurate/ exact phrase or accurate paraphrase of expressions in translation.”", group: {"claimMax":3,"perOption":2,"options":["Ich brauche dringend ein Buch (I need a book urgently)","Es ist wirklich wichtig. (It’s really important)","Ich sollte das Buch unbedingt lesen. (I absolutely have to read the book)","Sie sind meine allerletzte Hoffnung. (You are my last hope)","Es ist für meine Examensarbeit. (It’s for an exam)","Vergessen Sie aber nicht mich zurückzurufen! (Don’t forget to ring me back!)","Ich brauche das Buch wirklich dringend! (I need the book really urgently!)","Ich warte auf seinen Anruf. (I’ll wait for him to call.)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Second Part — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Second Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-1-i", topicId: "german-4-2", conceptId: "conversation-between-teacher-pupil-mother-son",
+    section: "L3", questionRef: "2022 HL Section L3 Q1(i) — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "The conversation is between (a) teacher and pupil (b) mother and son (c) husband and wife (d) brother and sister Indicate your choice by putting a, b, c or d in the box provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(1)", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-1-ii", topicId: "german-4-2", conceptId: "find-indications-conversation-support-choice",
+    section: "L3", questionRef: "2022 HL Section L3 Q1(ii) — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Find two indications in the conversation to support your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Ich muss die Geschenke für die Kinder besorgen. (I have to buy the presents for the children.)","Ich muss auch für meine Eltern // die Geschwister von uns beiden die Geschenke kaufen (I have to buy the presents for my parents // for brothers and sisters of us both)","Deine Mutter schenkt uns jedes Jahr € 500 (your mother gives us €500 every year)","...deshalb sollst du dir Gedanken machen, was wir ihr schenken. (so you should think about what to buy her)","Du kommst früher als ich nach Hause (You get home earlier than I do)","Wir sind jetzt seit 8 Jahren verheiratet (We have been married for eight years)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 1(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-2-i", topicId: "german-4-2", conceptId: "following-words-best-describes-anke-attitude",
+    section: "L3", questionRef: "2022 HL Section L3 Q2(i) — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Which of the following words best describes Anke’s attitude during the conversation? (a) patient (b) annoyed (c) enthusiastic (d) delighted Indicate your choice by writing a, b, c or d in the box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(annoyed)", marks: 1, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-2-ii", topicId: "german-4-2", conceptId: "reasons-choice",
+    section: "L3", questionRef: "2022 HL Section L3 Q2(ii) — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Give two reasons for your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Na hör mal, es sind nur noch zehn Tage bis Weihnachten! (Listen here, there are only 10 days left to Christmas!)","Es ist ja schließlich deine Mutter! (She is your mother after all!)","Du überlässt mir immer das Ganze. (You always leave everything up to me)","Das ist einfach nicht fair! (That is simply/just not fair)","Was? Du machst Überstunden? (What? You are doing/working overtime?)","Und wer soll die ganzen Vorbereitungen für Weihnachten machen? (And who is supposed to do all the preparations for Christmas?)","Das ist ja wohl die Höhe (That is just the pits!)","Es ist immer dasselbe. (It’s always the same!)","Jedes Jahr muss ich zu Weihnachten alles machen, ... (Every Christmas I have to do everything …)","Mir reicht’s (I’ve had enough)","Das ist aber das letzte Mal! (But this is the last time!)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 2(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-3", topicId: "german-4-2", conceptId: "does-frank-not-want-buy-his",
+    section: "L3", questionRef: "2022 HL Section L3 Q3 — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "Why does Frank not want to go to buy his mother a present? Give two reasons.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He doesn’t know what to buy / get her / doesn’t know what she likes","She has everything she needs.","Doesn’t want to risk (losing) his job","Is doing overtime"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 3",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l3-4", topicId: "german-4-2", conceptId: "solution-come-with-end",
+    section: "L3", questionRef: "2022 HL Section L3 Q4 — Deferred sitting",
+    stem: "You will now hear a conversation between Frank and Anke. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+    questionText: "What solution do they come up with in the end? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["on Saturday shops open until 6 p.m.","she will collect him at 2 p.m. / after work","go together to buy / get / look for the present (for his mother)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Third Part — Question 4",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Third Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-1-i", topicId: "german-4-3", conceptId: "where-when-did-robbery-take-place",
+    section: "L4", questionRef: "2022 HL Section L4 Q1(i) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "Where and when did the robbery take place? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)” The scheme allows “Munich” for 1 mark, in place of the answer above, never beside it.", group: {"claimMax":1,"perOption":2,"options":["at a filling / petrol station / BP-Filling station // in Hechtstraße","Munich"],"optionMarks":[2,1],"optionOf":[null,0]} },
+    { id: "r-2", kind: "point", verbatim: "Sunday night // (around) 11 p.m.", marks: 2, contextNote: "The scheme heads this answer “When”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-1-ii", topicId: "german-4-3", conceptId: "describe-robber",
+    section: "L4", questionRef: "2022 HL Section L4 Q1(ii) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+    questionText: "Describe the robber. Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":2,"perOption":2,"options":["1.70m","between 45-55","black / leather jacket","dark / corduroy pants"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 1(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-2-i", topicId: "german-4-3", conceptId: "were-findings-itu-report-relation-internet",
+    section: "L4", questionRef: "2022 HL Section L4 Q2(i) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What were the findings of the ITU report in relation to Internet use? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":2,"perOption":1,"options":["54% of people in the world // 4.1 billion people are online","In the poorest countries only two out of 10/ 20%","In industrialised/ developed countries: 88%"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-2-ii", topicId: "german-4-3", conceptId: "does-itu-want-governments-improve-situation",
+    section: "L4", questionRef: "2022 HL Section L4 Q2(ii) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+    questionText: "What does the ITU want governments to do to improve the situation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":1,"perOption":2,"options":["Invest more money / more investment","Prepare people better for digital age"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 2(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-3-i", topicId: "german-4-3", conceptId: "did-woman-come-attention-customs-officers",
+    section: "L4", questionRef: "2022 HL Section L4 Q3(i) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "Why did the woman come to the attention of the customs officers at the Russia‐China border?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":1,"perOption":2,"options":["She seemed (very) nervous","Her walk / gait was not natural"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-3-ii", topicId: "german-4-3", conceptId: "did-find-when-woman-searched",
+    section: "L4", questionRef: "2022 HL Section L4 Q3(ii) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+    questionText: "What did they find when the woman was searched? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":2,"perOption":2,"options":["eight (small) gold bars / 1.6 kg of gold (2) (Any one other detail: 2 marks)","in her shoe(s)","valued at € 71000"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 3(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-4-i", topicId: "german-4-3", conceptId: "weather-forecast-until-wednesday-southern-bavaria",
+    section: "L4", questionRef: "2022 HL Section L4 Q4(i) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast until Wednesday for Southern Bavaria? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":4,"perOption":1,"options":["sunny","becoming / later cloudy","shower(s)","thunderstorm(s)","strong wind(s)//south-westerly wind(s)","day: 23-26 degrees","night: 13 degrees"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC011ALPA00BV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "de-2022-hl-deferred-l4-4-ii", topicId: "german-4-3", conceptId: "weather-forecast-until-wednesday-northern-bavaria",
+    section: "L4", questionRef: "2022 HL Section L4 Q4(ii) — Deferred sitting",
+    stem: "You will now hear three news items taken from radio, followed by the weather forecast. The news will be played three times; the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather forecast)",
+    questionText: "What is the weather forecast until Wednesday for Northern Bavaria? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: half marks)”", group: {"claimMax":3,"perOption":1,"options":["cloudy","bright(er) later","moderate wind","south-westerly wind","day: 22-25 C / degrees","night: 14-16 C / degrees"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Fourth Part — Question 4(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC German 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC011ALPA00BV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Fourth Part · listening",
+          "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "secFileid": "LC011CLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
 ];

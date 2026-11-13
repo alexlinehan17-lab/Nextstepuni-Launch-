@@ -490,9 +490,11 @@ class Ask:
 class DeScheme:
     """One published German marking scheme, read as a list of priced leaves."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
-        self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
+        self.sitting = sitting
+        self.path = os.path.join(schemes_dir(subject),
+                                 f'{year}-{level}{"-deferred" if sitting == "deferred" else ""}.md')
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
         for old, new in MISPRINTS.get((year, level), ()):

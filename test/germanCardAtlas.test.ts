@@ -73,7 +73,7 @@ describe('German cards in the Topic Atlas', () => {
   it('files every listening card in the listening booklet, never the written paper', () => {
     const wrong = cards
       .filter(card => /^L[1-4]$/.test(card.section))
-      .filter(card => !/^LC011[AG]LPA00[BE]V$/.test(String(card.paperFileid)))
+      .filter(card => !/^LC011[AG]LPA00[BE]V(?:-deferred)?$/.test(String(card.paperFileid)))
       .map(card => `${card.id}: ${card.paperFileid}`);
     expect(wrong).toEqual([]);
   });

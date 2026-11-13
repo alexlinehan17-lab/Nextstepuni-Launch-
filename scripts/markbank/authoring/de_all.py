@@ -79,6 +79,10 @@ LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (202
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
 WRITING_CARDED = {(2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+# The SEC's deferred sittings carded (2022 Higher, the only one the archive
+# holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
+# cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
+DEFERRED_CARDED = {(2022, 'hl')}
 # The sittings whose uncarded listening and writing asks are refused with
 # evidence (exclusions/german.json): the five the bank was first built on.
 # Every other sitting's uncarded asks stay OPEN in the census until carded.
@@ -215,6 +219,18 @@ def build():
                                              concept_for))
             elif (year, level) in REFUSED_SITTINGS:
                 _listening(P, year, level, refuse)
+    for year, level in sorted(DEFERRED_CARDED, reverse=True):
+        import de_written
+        from paper_census import census_german_deferred
+        paper = next(p for p in census_german_deferred() if (p['year'], p['level']) == (year, level))
+        keys = [tuple(x['key']) for x in paper['leaves']]
+        cards.extend(de_written.cards(year, level, 'deferred', card_id, question_ref, concept_for,
+                                      refuse, keys))
+        cards.extend(de_written.grammar_cards(year, level, 'deferred', card_id, question_ref,
+                                              concept_for, refuse))
+        cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for, 'deferred'))
+        cards.extend(de_listen.cards(year, level, refuse, card_id, question_ref, concept_for,
+                                     'deferred'))
     return cards, refused, examples, excluded, pairs, by_address
 
 

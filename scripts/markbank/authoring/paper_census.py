@@ -2413,7 +2413,7 @@ def ja_flags(P, S):
     return flags
 
 
-def census_de(subject, year, level):
+def census_de(subject, year, level, sitting=None):
     """German: the written booklet and the listening booklet, read together.
 
     THE DENOMINATOR IS THE PAPER. The reading asks are the printed blocks the
@@ -2438,8 +2438,8 @@ def census_de(subject, year, level):
     from de_paper import DePaper                               # noqa: E402
     from de_scheme import DeScheme                             # noqa: E402
 
-    P = DePaper(year, level, subject)
-    S = DeScheme(year, level, subject)
+    P = DePaper(year, level, subject, sitting)
+    S = DeScheme(year, level, subject, sitting)
     texts = {}
     claimed = set()
     for ask in S.reading():
@@ -4402,6 +4402,8 @@ def census_subject(subject):
         papers.extend(census_dcg_deferred())
     if subject == 'spanish':
         papers.extend(census_spanish_deferred())
+    if subject == 'german':
+        papers.extend(census_german_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4539,6 +4541,35 @@ def census_economics_deferred():
 # listening booklet LC012ALPA00EV, deferredmarkingschemes/2022 LC012ALP000EV; no
 # Ordinary, no Irish version, nothing for 2023-2025).
 ES_DEFERRED_PAPERS = ((2022, 'hl'),)
+
+
+# The SEC's deferred German sittings in the archive: 2022 Higher only
+# (deferredexams/2022 holds LC011ALP000BV and the listening booklet
+# LC011ALPA00BV, deferredmarkingschemes/2022 LC011ALP000EV; no Ordinary).
+DE_DEFERRED_PAPERS = ((2022, 'hl'),)
+
+
+def _census_de_paper(subject, year, level, sitting):
+    parts, texts, _files, P_, S_, claimed_ = census_de(subject, year, level, sitting)
+    leaves = list(leaves_of(parts))
+    return {'year': year, 'level': level, 'paper': None,
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, subject),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'flags': de_flags(P_, S_, claimed_)}
+
+
+def census_german_deferred():
+    """The deferred German sitting, read as June's are and keyed 'Deferred',
+    as Spanish's is (census_spanish_deferred), so a deferred ask never lands on
+    a June leaf with the same address."""
+    papers = []
+    for year, level in DE_DEFERRED_PAPERS:
+        paper = _census_de_paper('german', year, level, 'deferred')
+        paper['paper'] = 'Deferred'
+        paper['marksSum'], paper['marksQuestions'] = None, 0
+        papers.append(paper)
+    return papers
 
 
 def census_spanish_deferred():

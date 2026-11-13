@@ -57,7 +57,12 @@ def expression_scale(S, head, columns=2):
     # table as well as below it: the table ends at the one after its first
     # category.
     first = _find(S, r'^Vocabulary', start)
-    stop = _find(S, r'^N\.B\. Take a global view', first)
+    # It ends at the N.B. under it, or (deferred 2022, which prints that N.B.
+    # above the table only) at whatever the scheme prints next.
+    stops = [_find(S, rx, first) for rx in (
+        r'^N\.B\. Take a global view', r'^SCHRIFTLICHE PRODUKTION', r'^Marking Written Expression',
+        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b')]
+    stop = min((x for x in stops if x is not None), default=None)
     lines = _lines(S, start + 1, stop)
     cats = []
     for line in lines:
@@ -73,8 +78,13 @@ def expression_scale(S, head, columns=2):
             # ("… Verb" / "4 – 6 forms/tense …"): the words either side are
             # kept apart, as the scheme's text has them.
             cats[-1]['lines'].append(None)
-            if m.group(5):
+            if m.group(5) and not re.fullmatch(r'\*+', m.group(5).strip()):
                 cats[-1]['lines'].append(m.group(5).strip())
+            continue
+        if re.fullmatch(r'\*+', line):
+            # (deferred 2022) the asterisk row the scheme sets between a
+            # category's upper and lower descriptors: a rule, not words.
+            cats[-1]['lines'].append(None)
             continue
         cats[-1]['lines'].append(line)
     one, two = [], []
@@ -132,7 +142,7 @@ def theme_grid(S, letter):
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
-        m = re.match(r'^([ABC]):? \((\d) marks\)$', line)
+        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)$', line)
         if m:
             cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
             points.append(cur)
@@ -222,10 +232,11 @@ def _expression(maxm, bands, lower=None):
     return k
 
 
-def atlas_written(year, level):
+def atlas_written(year, level, sitting=None):
     with open(TAGS, encoding='utf-8') as fh:
         papers = json.load(fh)
-    fileid = f'LC011{"A" if level == "hl" else "G"}LP000{"BV" if year >= 2019 else "EV"}.pdf'
+    fileid = f'LC011{"A" if level == "hl" else "G"}LP000{"BV" if year >= 2019 else "EV"}' \
+             f'{"-deferred" if sitting else ""}.pdf'
     for p in papers:
         if p['year'] == year and p['level'] == LEVEL_WORD[level] and p['lang'] == 'ev' and p['fileid'] == fileid:
             return {q['n']: q for q in p['q']}
@@ -308,10 +319,10 @@ def _page_span(S, a, b):
 
 
 # ------------------------------------------------------------- Higher -----
-def higher_cards(year, card_id, question_ref, concept_for):
-    P = DePaper(year, 'hl', 'german')
-    S = DeScheme(year, 'hl', 'german')
-    tags = atlas_written(year, 'hl')
+def higher_cards(year, card_id, question_ref, concept_for, sitting=None):
+    P = DePaper(year, 'hl', 'german', sitting)
+    S = DeScheme(year, 'hl', 'german', sitting)
+    tags = atlas_written(year, 'hl', sitting)
     out = []
     # Äußerung zum Thema: A, B, C, Dis. as printed; Expression 12, Lower E 7.
     at_one, at_two, at_nb, at_at = expression_scale(S, r'^Marking Written Expression in [ÄA]u[ßs]{1,2}erung')
@@ -358,9 +369,11 @@ def higher_cards(year, card_id, question_ref, concept_for):
         # 2023 prints (b)'s "Note: Answer any five …" above its "(b)" line,
         # so it closes (a)'s block: the task's own note is the first in its
         # block, or else the one printed just above it.
-        want = re.search(r'Answer any (\w+) of the', ' '.join(head)) or re.search(
-            r'Answer any (\w+) of the', ' '.join(_lines(S, lo - 4, lo)))
-        n = {'four': 4, 'five': 5}[want.group(1).lower()]
+        # The deferred 2022 photo task prints no "Answer any five …" but "mark
+        # all and award marks for the best five".
+        rx = r'Answer any (\w+) of the|for the best (\w+)\b'
+        want = re.search(rx, ' '.join(head)) or re.search(rx, ' '.join(_lines(S, lo - 4, lo)))
+        n = {'four': 4, 'five': 5}[(want.group(1) or want.group(2)).lower()]
         criteria, reqs = [], [l for l in head if not l.startswith('Dis.:')]
         for label, marks, block in labelled:
             block = [l for l in block if not l.startswith('Dis.:')]
@@ -518,8 +531,18 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     return out
 
 
-def cards(year, level, card_id, question_ref, concept_for):
-    return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+def cards(year, level, card_id, question_ref, concept_for, sitting=None):
+    if not sitting:
+        return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+    # A deferred sitting's cards are "de-2022-hl-deferred-…", cited "… —
+    # Deferred sitting", on the deferred booklet.
+    out = higher_cards(year, card_id, lambda *a: f'{question_ref(*a)} — Deferred sitting',
+                       concept_for, sitting)
+    for card in out:
+        card['id'] = card['id'].replace(f'de-{year}-{level}-', f'de-{year}-{level}-deferred-', 1)
+        src = card['sourceMaterial']
+        src['attribution'] = src['attribution'].replace('examination paper', 'deferred examination paper')
+    return out
 
 
 def _page_of(S, text):
