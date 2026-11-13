@@ -672,14 +672,22 @@ def question_text(lines, answers=()):
                         and (sentence or not t.endswith('.'))
                         # a lead-in breaks off on its article or preposition
                         # ("The telephone call is to a")
-                        and not re.search(r'\b(?:a|an|the|to|is|are|of|between|for)$', t, re.I))
+                        and not re.search(r'\b(?:a|an|the|to|is|are|of|between|for|says)$', t, re.I))
             lo = hi = anchor
             while lo - 1 > tick and near(lo, lo - 1):
                 lo -= 1
             while hi + 1 < len(lines) and near(hi, hi + 1):
                 hi += 1
             if hi > lo:
-                choices = [' '.join(t.split()) for t, _x in lines[lo:hi + 1]]
+                choices = []
+                for t, _x in lines[lo:hi + 1]:
+                    t = ' '.join(t.split())
+                    # A choice the booklet wraps onto a second line: "he
+                    # should discuss this with her" / "and his father".
+                    if choices and re.match(r'^(?:and|or|und|oder)\b', t):
+                        choices[-1] = f'{choices[-1]} {t}'
+                    else:
+                        choices.append(t)
                 lines = lines[:lo] + lines[hi + 1:]
     paras = []
     for text, _x in lines:

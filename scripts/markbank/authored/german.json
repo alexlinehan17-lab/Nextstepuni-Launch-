@@ -8080,6 +8080,2272 @@
   ]
  },
  {
+  "id": "de-2022-ol-at-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "imagine-that-skyping-with-laura-during",
+  "questionRef": "2022 OL Section AT Q(a)",
+  "questionText": "Imagine that you are skyping with Laura during her interrail trip. You want to get information about the trip. Complete\nLaura’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+  "totalMarks": 15,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(Content = 8, expression = 7)",
+    "Content (C) and Expression (Exp) to be marked consecutively.",
+    "(a) Complete Laura’s part of the dialogue below based on the information given in Text II.",
+    "(Write 25 – 30 words)",
+    "Freunden?",
+    "Sie: Oh, das hört sich alles gut an! Gute Reise, Laura!!",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Hallo, Laura! Du bist gerade auf Interrail-Tour. Reist du allein oder mit",
+      "(A1) Laura: Any ONE of the following for A1",
+      "Ich reise mit meinen/vier Schulfreunden.",
+      "Ich reise mit Sophie, Nikolas und Leon. (A1)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Wie lange dauert eure Reise?",
+      "(B1) Laura: Die Reise dauert 25 Tage / 3.611 Minuten (B1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Wohin fahrt ihr heute?",
+      "(C1) Laura: Heute fahren wir nach Frankreich / Südfrankreich / Bordeaux / an die Côte",
+      "d’Azur / nach Belgien / Brüssel / Hamburg. (C1)"
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Wie ist das Wetter dort?",
+      "(D1) Laura: Das Wetter / Es ist sehr warm / heiß. / .... (D1)"
+     ]
+    },
+    {
+     "id": "e",
+     "label": "E",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Sie: Wo übernachtet ihr?",
+      "(E2) Laura: Wir übernachten in einer Ferienwohnung / auf dem Campingplatz /",
+      "im Hostel. (E2)"
+     ]
+    },
+    {
+     "id": "f",
+     "label": "F",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Sie: Was macht ihr abends?",
+      "(F2) Laura: Abends sitzen wir vorm Zelt. / Wir grillen Würstchen. / Wir gehen aus. /",
+      "Wir gehen in die Kneipe. / ... (F2)",
+      "OR"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+        "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid."
+   ]
+  },
+  "schemePages": [
+   12,
+   13,
+   14
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (a) — answer in German",
+   "pages": [
+    14,
+    15
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-at-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "see-advertisement-below-want-apply-job",
+  "questionRef": "2022 OL Section AT Q(b)",
+  "questionText": "You see the advertisement below and want to apply for a job at a tourist information office in Germany. Apply by email, in\nGerman, using the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/open/you like to travel/…)\n• Say why you are perfect for the job (you worked as a tour guide before/you have been to Germany/…) Give one reason\n• Say what languages you speak\n• Say when you can start working (Write 25 – 30 words.)",
+  "totalMarks": 15,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "E-Mail schreiben (25 – 30 words) (15 marks)",
+    "(Content = 8, expression = 7)",
+    "Content (C) and Expression (Exp) to be marked consecutively.",
+    "(b) You see the advertisement below and want to apply for a job at a tourist information office",
+    "in Germany. Apply by email, in German, using the following points to guide you:",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": [
+      "A. (3) Introduce yourself (name/age/where you are from).",
+      "Ich heiße ............ (A1)",
+      "Ich bin ....... Jahre alt. (A1)",
+      "Ich wohne in ... / komme aus .......... (A1)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "B. (2) Any TWO of the following for B1 + B1",
+      "Mention two special qualities you have (friendly/open/you like to travel/ …)",
+      "Ich bin freundlich",
+      "Ich bin offen.",
+      "Ich reise gern."
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "C. (1) Any ONE of the following",
+      "Say why you are perfect for the job (you worked as a tourist guide before/you have been to",
+      "Germany/… ) Give one reason.",
+      "Ich habe (schon/letztes Jahr/...) als Fremdenführer/Touristenführer gearbeitet. /",
+      "Ich war (schon/letztes Jahr/...) Touristenführer.",
+      "Ich war (schon/letztes Jahr/...) in Deutschland."
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "D. (1) Say what languages you speak",
+      "Ich spreche Deutsch und Englisch/Irisch/Französich/Spanisch/..."
+     ]
+    },
+    {
+     "id": "e",
+     "label": "E",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "E. (1) Say when you can start working",
+      "Ich kann am.../im.../... anfangen/beginnen zu arbeiten.",
+      "Ich kann ab ... arbeiten. / Ich kann vom/von ... an arbeiten."
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+        "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid."
+   ]
+  },
+  "schemePages": [
+   13,
+   14
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (b) — answer in German",
+   "pages": [
+    14,
+    15
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-sp-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "SP",
+  "topicId": "german-7-2",
+  "conceptId": "grandparents-gave-old-camper-van-18th",
+  "questionRef": "2022 OL Section SP Q(a)",
+  "questionText": "Your grandparents gave you their old camper van for your 18th birthday.\nWrite a letter to your friend Paul/Paula telling him/her about your plans. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\nmit dem sie habe ich Gaillimh/Galway, 8. Juni 2022 Answer any 5 of the following 6 points:\n• Describe the van (age/colour/size/make…)\n(three details)\n• Say what is inside the van (bed/ kitchen/toilet…) and what you still have to buy (table/chairs/glasses…)\n• Say that you want to travel to a festival in summer and say where it will take place\n• Say that you will go to university in September and say where you will live (with friends/family…)\n• Say what you will study and why (two reasons)\n• Say you will go to Germany next year to visit Paul/Paula And Write a suitable closing sentence.",
+  "totalMarks": 26,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(a) Letter",
+    "Candidates to answer any FIVE points from points A – F below.",
+    "Where a candidate has answered more than five, mark all.",
+    "A. (3) Describe the van (age/colour/size/make…) (three details)",
+    "(A1 + A1 + A1)",
+    "B. (3) Say what is inside the van (bed/kitchen/toilet…) (B1) and what you still have to buy",
+    "(table/chairs/glasses…) (B1 + B1)",
+    "C. (3) Say that you want to travel (C1) to a festival in summer (C1)",
+    "and say where it will take place (C1)",
+    "D. (3) Say that you will go to university (D1) in September (D1)",
+    "and say where you will live (with friends/family…) (D1)",
+    "E. (3) Say what you will study (E1) and why (two reasons) (E1 + E1)",
+    "F. (3) Say you will go to Germany (F1) next year (F1) to visit Paul/Paula (F1)",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-5",
+     "label": "Fifth point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "cl",
+     "label": "Cl",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Cl (1) Write a suitable closing sentence (1)",
+      "Exp. (10) Use the grid on page 14 to calculate expression mark in relation to C (Content)."
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+        "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower Ex.",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+         "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4,
+         5
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         6,
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings and agreements."
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "point-1",
+       "point-2",
+       "point-3",
+       "point-4",
+       "point-5",
+       "cl"
+      ],
+      "contentAtMost": 7,
+      "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced “Lower Ex.” scale (0-7) for expression."
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it.",
+    "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+   ]
+  },
+  "schemePages": [
+   14,
+   17,
+   18
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (a) — answer in German",
+   "pages": [
+    20,
+    21
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-sp-a-fill",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "SP",
+  "topicId": "german-7-2",
+  "conceptId": "firstly-complete-first-paragraph-letter-correctly",
+  "questionRef": "2022 OL Section SP Q(a) — the phrases in the box",
+  "questionText": "Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "habe ich",
+    "marks": 1,
+    "contextNote": "The scheme prices the phrases on their own line: “St. (4) Completing the first paragraph. Insertion of appropriate sentences. (4 x 1 mark)”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "von meinen Großeltern",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mit dem sie",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "der Welt",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this part 4 on its own line, apart from Content and Expression; the paper prints it inside task (a).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (a) — answer in German",
+   "pages": [
+    20,
+    21
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-sp-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "SP",
+  "topicId": "german-7-4",
+  "conceptId": "story-german-describes-happens-pictures-below",
+  "questionRef": "2022 OL Section SP Q(b)",
+  "questionText": "Write a story, in German, which describes what happens in the pictures below.\nFirstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page. Then give a short account of the remaining pictures in 80 – 100 words. You may use the present tense.",
+  "totalMarks": 22,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(b) Picture Story: 30 marks (St. = 8, C = 12, Exp. = 10)",
+    "Write 3 sentences on two of the pictures and 2 sentences on three of the pictures",
+    "(total 12 sentences)",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "C",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [
+      "C (12) (pictures 2 – 6) … 12 marks as indicated below.",
+      "Guidelines for marking of content:",
+      "(i) THREE relevant points of information for any TWO pictures.",
+      "AND TWO relevant points of information for remaining THREE pictures.",
+      "(ii) Each relevant point of information = 1 mark",
+      "Each point of information must contain a verb.",
+      "N.B. Where a candidate has answered in excess of what is required:",
+      "Mark all and pick the best i.e. the best 3 sentences on any 2 of the pictures",
+      "AND the best 2 sentences on any 3 of the pictures for final content mark.",
+      "Exp. (10) Use the grid on page 14 to calculate expression mark in relation to C (Content)."
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+        "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower Ex.",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb position,",
+         "very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4,
+         5
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         6,
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings and agreements."
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced “Lower Ex.” scale (0-7) for expression."
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   14,
+   18,
+   19
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (b) — answer in German",
+   "pages": [
+    22,
+    23
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-sp-b-fill",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "SP",
+  "topicId": "german-7-4",
+  "conceptId": "firstly-complete-account-first-picture-correctly",
+  "questionRef": "2022 OL Section SP Q(b) — the phrases in the box",
+  "questionText": "Firstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "und ihr Freund",
+    "marks": 2,
+    "contextNote": "The scheme prices the phrases on their own line: “St. (8) Completing the first paragraph. Insertion of appropriate sentences. (4 x 2 marks)”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ist voll im Trend",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "möchten zusammen",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "nach Informationen",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this part 8 on its own line, apart from Content and Expression; the paper prints it inside task (b).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (b) — answer in German",
+   "pages": [
+    22,
+    23
+   ],
+   "attribution": "SEC German 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-1-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "year-first-youth-hostel-germany-opened",
+  "questionRef": "2022 OL Section L1 Q1(i)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. In what year was the first youth hostel in Germany opened?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1912",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 1(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "1902",
+   "1912",
+   "1921",
+   "1922"
+  ]
+ },
+ {
+  "id": "de-2022-ol-l1-1-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "where-this-youth-hostel",
+  "questionRef": "2022 OL Section L1 Q1(ii)",
+  "questionText": "Where was this youth hostel?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "In Altena",
+      "Northrhine-Westphalia / Nordrhein-Westfalen.",
+      "Western (Germany)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 1(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-2-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "richard-schirrmann-job",
+  "questionRef": "2022 OL Section L1 Q2(i)",
+  "questionText": "What was Richard Schirrmann’s job?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Teacher",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-2-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "where-did-richard-schirrmann-his-group",
+  "questionRef": "2022 OL Section L1 Q2(ii)",
+  "questionText": "Where did Richard Schirrmann and his group have to sleep while on their trip?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In a school",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 4.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-3-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "many-youth-hostels-there-germany-worldwide",
+  "questionRef": "2022 OL Section L1 Q3(i)",
+  "questionText": "How many youth hostels are there in Germany and worldwide?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "450 hostels",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme heads this answer “Germany”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "4000 hostels",
+    "marks": 2,
+    "contextNote": "The scheme heads this answer “Worldwide”."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-3-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "who-can-stay-youth-hostels",
+  "questionRef": "2022 OL Section L1 Q3(ii)",
+  "questionText": "Who can stay in youth hostels?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Children / young people / teenagers / adults / everyone",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-4",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "youth-hostels-popular",
+  "questionRef": "2022 OL Section L1 Q4",
+  "questionText": "Why are youth hostels so popular? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(Usually) cheaper than hotels (Allow: cheap = 1 mark)",
+      "Central / in the centre",
+      "In a nice area",
+      "Meeting place",
+      "Meet/get to know people from all over the world/many countries",
+      "Come into contact with other culture(s)",
+      "Learn respect",
+      "Learn tolerance"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l1-5",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "facilities-youth-hostels-have",
+  "questionRef": "2022 OL Section L1 Q5",
+  "questionText": "What facilities do youth hostels have? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Modern",
+      "Double rooms with shower and toilet / ensuite.",
+      "Canteen",
+      "Kitchen",
+      "Common room",
+      "Internet",
+      "(Swimming) pool(s)",
+      "Sport(s) (facilities)",
+      "Bike hire",
+      "Holiday programmes",
+      "Courses for adults / children / sports / music / adventure / nature"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 9 marks (3 + 3 + 3); the listening booklet prints it on page 5.",
+  "stem": "(Interview with Herr Hoffmann) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 5",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l2-1",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "caller-reports-accident",
+  "questionRef": "2022 OL Section L2 Q1",
+  "questionText": "The caller reports an accident. Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Hiking (Allow: walking) / in the mountains.",
+      "Emma/his (girl)friend fell.",
+      "She can’t walk any more",
+      "Hurt leg",
+      "Leg is bleeding",
+      "Leg is swollen",
+      "Leg might be broken. (Allow: she broke her leg/her leg is broken)",
+      "She is in pain",
+      "Cannot carry her",
+      "It’s getting dark.",
+      "He doesn’t know the area",
+      "Emma / girlfriend needs a doctor",
+      "She is very cold",
+      "She is shivering"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (3 + 3); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 1",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l2-2",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "does-lady-tell-man",
+  "questionRef": "2022 OL Section L2 Q2",
+  "questionText": "What does the lady tell the man to do?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "to stay where he is",
+      "to keep her/Emma/girlfriend warm",
+      "to give phone number"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (4); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 2",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l2-3",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "phone-number-caller",
+  "questionRef": "2022 OL Section L2 Q3",
+  "questionText": "What is the name and the phone number of the caller?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "K-R-A-U-S-E",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme heads this answer “Name”. N.B. Deduct 1 mark for each incorrect/missing letter."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(0163) 56 24 728",
+    "marks": 3,
+    "contextNote": "The scheme heads this answer “Phone number”. N.B. All or nothing."
+   }
+  ],
+  "notes": "The scheme prices this ask 7 marks (4 + 3); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 3",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l2-4",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "phone-call",
+  "questionRef": "2022 OL Section L2 Q4",
+  "questionText": "Tick (✓) the correct box. Tick one box only. The phone call is to:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a mountain rescue",
+    "marks": 3,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (3); the listening booklet prints it on page 6.",
+  "stem": "(Telephone Call) To allow you to answer Questions 1, 2 and 3 the phone call will be played twice, with a pause after each playing. The phone call will then be played for a third and final time to allow you to answer Question 4. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 4",
+   "pages": [
+    6
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "A tour company",
+   "A police station",
+   "A mountain rescue",
+   "A taxi service"
+  ]
+ },
+ {
+  "id": "de-2022-ol-l3-1",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "noah-mother-concerned-about-him",
+  "questionRef": "2022 OL Section L3 Q1",
+  "questionText": "Why is Noah’s mother concerned about him?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(He looks) tired. (2) (Allow: he hasn’t been sleeping / he cannot sleep)",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 1",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l3-2",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "noah-studying-medicine-university-does-think",
+  "questionRef": "2022 OL Section L3 Q2",
+  "questionText": "Noah is studying medicine in university. What does he think about his course? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "His studies/ medicine course not going well.",
+      "He had different expectations.",
+      "He finds it dry",
+      "(He finds it) difficult",
+      "(He finds it) boring.",
+      "Too much theory.",
+      "He has to study all the time.",
+      "He gets bad grades/marks",
+      "It’s not right for him / he doesn’t like it.",
+      "He can’t continue with it."
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 8 marks (4 + 4); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 2",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l3-3",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "languages-does-want-study",
+  "questionRef": "2022 OL Section L3 Q3",
+  "questionText": "What languages does he want to study?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "English (4) and Spanish (4)",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "English",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "and Spanish",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 8 marks (8); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 3",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l3-4",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "end-conversation-noah-mother-says",
+  "questionRef": "2022 OL Section L3 Q4",
+  "questionText": "Tick (✓) the correct box. Tick one box only. At the end of the conversation, Noah’s mother says",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "he should discuss this with her and his father",
+    "marks": 3,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (3); the listening booklet prints it on page 7.",
+  "stem": "You will now hear a conversation between a man and a woman. The conversation will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 4",
+   "pages": [
+    7
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "he should phone his father",
+   "he should discuss this with her and his father",
+   "he should move home",
+   "he should not go to university"
+  ]
+ },
+ {
+  "id": "de-2022-ol-l4-1-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "much-does-blind-booking-ticket-cost",
+  "questionRef": "2022 OL Section L4 Q1(i)",
+  "questionText": "How much does a Blind Booking ticket cost?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "69 Euro",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 1(i)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-1-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "passengers-can-choose-from-different-holiday",
+  "questionRef": "2022 OL Section L4 Q1(ii)",
+  "questionText": "Passengers can choose from different holiday categories. Name two.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Sun / beach",
+      "City / town (tours)",
+      "Art / culture",
+      "Party"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 8 marks (4 + 4); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 1)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 1(ii)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-2-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "when-where-did-recent-protest-take",
+  "questionRef": "2022 OL Section L4 Q2(i)",
+  "questionText": "When and where did the recent protest take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(last) Friday",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme heads this answer “When”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Frankfurt",
+    "marks": 2,
+    "contextNote": "The scheme heads this answer “Where”."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(i)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-2-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "protest-organised-highlight",
+  "questionRef": "2022 OL Section L4 Q2(ii)",
+  "questionText": "Tick (✓) the correct box. Tick one box only. The protest was organised to highlight:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "the finance sector’s role in the climate crisis",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 8.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(ii)",
+   "pages": [
+    8
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "questionChoices": [
+   "police brutality",
+   "the finance sector’s role in the",
+   "climate crisis",
+   "high energy costs",
+   "corruption in the finance sector"
+  ]
+ },
+ {
+  "id": "de-2022-ol-l4-3-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "jonas-deichmann-travelling-around-world-many",
+  "questionRef": "2022 OL Section L4 Q3(i)",
+  "questionText": "Jonas Deichmann is travelling around the world. How many months will his journey take?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "14",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(i)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-3-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "travelling",
+  "questionRef": "2022 OL Section L4 Q3(ii)",
+  "questionText": "How is he travelling? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "swimming",
+      "running",
+      "cycling"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(ii)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-4-i",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "weather-forecast-southern-germany",
+  "questionRef": "2022 OL Section L4 Q4(i)",
+  "questionText": "What is the weather forecast for southern Germany? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Sunny",
+      "Rising temperatures",
+      "12 to 16 degrees",
+      "Wind from southwest",
+      "Mild at night"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 4(i)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2022-ol-l4-4-ii",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "weather-forecast-northern-germany",
+  "questionRef": "2022 OL Section L4 Q4(ii)",
+  "questionText": "What is the weather forecast for northern Germany? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Rain",
+      "Wind from west",
+      "(Day:) 10 to 14 degrees",
+      "(Night:) 6 to 8 degrees"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 9.",
+  "stem": "You will now hear three news items taken from radio, followed by the weather forecast. The four items will be played three times: the first time right through, then in four segments with pauses, and finally right through again. Answer in English. (Item 4: Weather Forecast)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 4(ii)",
+   "pages": [
+    9
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2022 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2022 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
   "id": "de-2023-hl-t1-1-a",
   "subjectId": "german",
   "level": "higher",
