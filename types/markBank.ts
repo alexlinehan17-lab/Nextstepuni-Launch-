@@ -1669,9 +1669,12 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // Part 2 Q2 answers a six-mark "three examples of the language used" with
 // fourteen phrases, and Part 1 Q5 a four-mark ask with nine. Its four part
 // tokens 'L1' to 'L4' belong here for the reason TEXT I-III do.
+// German's applied grammar ('AG', no other deck uses the token) is one printed
+// exercise whose every gap is answered: 2019 Higher Q2 prints ten adjective
+// endings at two marks each, and all ten are the answer.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
   'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5',
-  'U1', 'U2', 'U3', 'L1', 'L2', 'L3', 'L4']);
+  'U1', 'U2', 'U3', 'L1', 'L2', 'L3', 'L4', 'AG']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 
