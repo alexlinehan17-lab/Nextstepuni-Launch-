@@ -499,19 +499,40 @@ class DePaper:
         second column to join.
         """
         by_side = {}
+        lines_of = {}
         pages = {}
         for q, lines, page, side in self.grammar:
             text = ' '.join(' '.join(lines).split())
             if len(text) > len(by_side.get((q, side), '')):
                 by_side[(q, side)] = text
+                lines_of[(q, side)] = lines
             pages.setdefault(q, page)
         out = []
         for q in sorted({k[0] for k in by_side}):
+            # A sentence of the left column whose last words run past the
+            # gutter into the right one: "Er war jeden Morgen am / bei / um /
+            # in" / … "acht Uhr im Geschäft." (2013 Ordinary). Put back.
+            left, right = list(lines_of.get((q, 'L'), [])), list(lines_of.get((q, 'R'), []))
+            open_at = [k for k, l in enumerate(left) if l.count(' / ') >= 2 and not re.search(r'[.?!]\s*$', l)]
+            spill = [k for k, l in enumerate(right) if k > 0 and re.match(r'^[a-zäöü]', l.strip())
+                     and re.search(r'[.?!]\s*$', l) and re.search(r'[.?!]\s*$', right[k - 1])]
+            if len(open_at) == 1 and len(spill) == 1:
+                left[open_at[0]] = f'{left[open_at[0]]} {right[spill[0]].strip()}'
+                del right[spill[0]]
+                lines_of[(q, 'L')], lines_of[(q, 'R')] = left, right
+                by_side[(q, 'L')] = ' '.join(' '.join(left).split())
+                by_side[(q, 'R')] = ' '.join(' '.join(right).split())
             english = by_side.get((q, 'R'), '')
             irish = by_side.get((q, 'L'), '')
             if english:
                 m = ITEM_RUN.search(irish)
-                text = f'{english} {irish[m.start():]}'.strip() if m else english
+                # (2014 Ordinary numbers no sentence: the items begin at the
+                # first line offering its choices, "Er fuhr mit / zu / auf /
+                # nach dem Lift …".)
+                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if ' / ' in l), None)
+                items = (irish[m.start():] if m else
+                         ' '.join(lines_of[(q, 'L')][first:]) if first is not None else '')
+                text = f'{english} {items}'.strip()
             else:
                 text = irish
             out.append((q, ' '.join(text.split()), pages[q]))
@@ -608,12 +629,19 @@ class DePaper:
                     mid = (y0 + y1) / 2
                     for row in rows:
                         if abs(row['mid'] - mid) <= 3:
-                            row['w'].append((x0, word))
+                            row['w'].append((x0, word, x1))
                             break
                     else:
-                        rows.append({'mid': mid, 'w': [(x0, word)]})
+                        rows.append({'mid': mid, 'w': [(x0, word, x1)]})
                 for row in sorted(rows, key=lambda r: r['mid']):
                     ws = sorted(row['w'])
+                    # The Irish line's last word, run past the bound: "… nuair
+                    # a" ends at x 295 beside "(ii) What should parents …"
+                    # at 340 (2013 Higher). A word that far from the next is
+                    # not the English column's.
+                    while len(ws) > 1 and ws[0][0] < 300 and ws[1][0] - ws[0][2] > 25:
+                        ws = ws[1:]
+                    ws = [(x, w) for x, w, _x1 in ws]
                     text = ' '.join(w for _x, w in ws)
                     for glyph, char in GLYPHS.items():
                         text = text.replace(glyph, char)

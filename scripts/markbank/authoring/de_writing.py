@@ -40,7 +40,19 @@ SCALE_ONE = re.compile(rf'^{RANGE}(?:\s+(.*))?$')
 
 
 def _lines(S, start, stop):
-    return [l.strip() for l in S.lines[start:stop] if l.strip() and not PAGE.match(l.strip())]
+    return [x for x in (_readable(l.strip()) for l in S.lines[start:stop]
+                        if l.strip() and not PAGE.match(l.strip())) if x]
+
+
+# 2014 Ordinary sets a few words in a font whose text layer is shifted into
+# control characters: ",FK\x03KHLȕH\x03\x11\x11.. Ich bin ... Jahre alt." for
+# "Ich heiße .. Ich bin …". Those words cannot be lifted; the line keeps only
+# the words after them, as printed.
+SHIFTED = re.compile(r'^.*[\x00-\x08\x0b-\x1f][\s.]*')
+
+
+def _readable(line):
+    return SHIFTED.sub('', line).strip() if SHIFTED.match(line) else line
 
 
 def _find(S, pattern, start=0):
@@ -60,7 +72,9 @@ def expression_scale(S, head, columns=2):
     # 2021 Higher prints the "N.B. Take a global view …" line above the
     # table as well as below it: the table ends at the one after its first
     # category.
-    first = _find(S, r'^Vocabulary', start)
+    # (2014 sets the ranges at the head of the category's first line: "0 – 2
+    # 0 – 4 Vocabulary very inadequate …".)
+    first = _find(S, r'^(?:[\d\s–-]+\s)?Vocabulary', start)
     # It ends at the N.B. under it, or (deferred 2022, which prints that N.B.
     # above the table only) at whatever the scheme prints next.
     stops = [_find(S, rx, first) for rx in (
@@ -73,11 +87,11 @@ def expression_scale(S, head, columns=2):
     lines = _lines(S, start + 1, stop)
     cats = []
     for line in lines:
-        if line.startswith('Vocabulary'):
+        m = SCALE_ROW.match(line)
+        if line.startswith('Vocabulary') or (m and (m.group(5) or '').startswith('Vocabulary')):
             cats.append({'lines': [], 'one': None, 'two': None})
         if not cats:
             continue
-        m = SCALE_ROW.match(line)
         if m and cats[-1]['one'] is None:
             cats[-1]['one'] = (int(m.group(1)), int(m.group(2) or m.group(1)))
             cats[-1]['two'] = (int(m.group(3)), int(m.group(4) or m.group(3)))
@@ -538,11 +552,12 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     # Expression in:" / "Äußerung zum Thema (a) and (b)" / "Schriftliche …";
     # 2017 sets "Äuβerung" with a Greek beta.
     one, two, nb, ex_at = expression_scale(
-        S, r'^Guidelines for marking Expression in(?:\s+[ÄA]u[ßsβ]{1,2}erung zum Thema|:\s*$)')
+        S, r'^Guidelines for marking Expression in(?:\s+[ÄA]u[ßsβ]{1,2}erung zum Thema|:\s*$'
+           r'|\s+Schriftliche Produktion \(a\) and \(b\)$)')     # (the last, 2013)
     # "… (0-7) for expression." (2022-2026) or "… for expression and write
-    # “Lower Ex.” to indicate this." (2021).
-    sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark in the Schriftliche',
-                        r'for expression(?:\.| and write .*?to indicate this\.)')
+    # “Lower Ex.” to indicate this." (2021); 2014 capitalises "Expression".
+    sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark (?:in the Schriftliche|is \d)',
+                        r'for [Ee]xpression(?:\.| and write .*?to indicate this\.)')
     at = _find(S, r'^TEXT II: [ÄA]U[ßS]{1,2}ERUNG ZUM THEMA')
     a_at = _find(S, r'^\(a\) ', at)
     # (2023 heads it "E-Mail (25-30 words) (15 marks)".)
@@ -563,14 +578,21 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         if line == 'OR':
             continue                  # 2018 prints "OR" between (a) and the e-mail
         # "(A2) Jan Kammann: …", in 2018 "A 2: Dagi Bee: …" / "E 1 Mirko: …",
-        # in 2017 "A: 2 Florian: …", in 2015 "E2: Julia: …".
+        # in 2017 "A: 2 Florian: …", in 2015 "E2: Julia: …", in 2014 "A. (2)
+        # Kristina: …".
         m = (re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line) or re.match(r'^([A-F]):? (\d)\b:?\s*(.*)$', line)
-             or re.match(r'^([A-F])(\d):\s*(.*)$', line))
+             or re.match(r'^([A-F])(\d):\s*(.*)$', line)
+             or re.match(r'^([A-F])\.\s*\((\d)\)\s*(.*)$', line))     # "A. (2) Kristina: …" (2014)
         if m:
             crit.append(_criterion(m.group(1).lower(), m.group(1), int(m.group(2)), prompt + [line]))
             prompt = []
         elif line.startswith('Sie:'):
             prompt.append(line)
+        elif prompt and line.startswith('N.B.'):
+            # (2014 prints its "N.B. Bracket off irrelevant content …" under
+            # the closing prompt: a requirement of the task, not the prompt's
+            # second line.)
+            head.append(line)
         elif prompt:
             # The prompt's own second line: "Sie: … Welche Kleidung soll man
             # auf ein Festival" / "mitnehmen?" (2017), "Sie: Herr Kammann, …" /
@@ -617,14 +639,34 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         st_at = next(k for k, l in enumerate(lines) if l.startswith('St.'))
         phrases = []
         k = st_at + 1
-        # (2016's text layer carries its bullet as a control character, \x02.)
-        while k < len(lines) and re.match(r'^[•\uf0b7●\x02]\s*(.+?)\s*\((\d)\)\s*$', lines[k]):
-            m = re.match(r'^[•\uf0b7●\x02]\s*(.+?)\s*\((\d)\)\s*$', lines[k])
+        # 2014 prints "St. (5)" alone and its instruction on the line below:
+        # "Complete the first paragraph by inserting … (5 x 1 mark)".
+        st_line = lines[st_at]
+        # (2013 prints its price on the line below: "St. (5) Complete the
+        # first paragraph …" / "(5 x 1 mark)".)
+        if k < len(lines) and (
+                (re.fullmatch(r'St\. \(\d\)', st_line) and re.search(r'\(\d x 1\s*mark\)', lines[k]))
+                or (not re.search(r'\(\d x 1\s*mark\)', st_line) and re.fullmatch(r'\(\d x 1\s*mark\)', lines[k]))):
+            st_line = f'{st_line} {lines[k]}'
+            k += 1
+        # (2016's text layer carries its bullet as a control character, \x02;
+        # 2014 sets a hyphen.)
+        bullet = r'^(?:[•\uf0b7●\x02]|-(?=\s))\s*(.+?)\s*\((\d)\)\s*$'
+        while k < len(lines) and re.match(bullet, lines[k]):
+            m = re.match(bullet, lines[k])
             phrases.append((m.group(1), int(m.group(2))))
             k += 1
         st_marks = int(re.match(r'^St\. \((\d)\)', lines[st_at]).group(1))
         assert sum(m for _p, m in phrases) == st_marks, (year, letter, phrases)
         rest = lines[:st_at] + lines[k:]
+        # "Ex. (10) Use the grid on Page 19 to calculate expression mark in
+        # relation to" / "C (Content)" (2014): the line's own end, wrapped.
+        # Or "Ex. (10)" alone over "Use the grid on Page 19 …" (2014 (b)).
+        for j in range(len(rest) - 1):
+            if ((rest[j].startswith('Ex.') and rest[j].endswith(' to') and rest[j + 1].startswith('C (Content)'))
+                    or (re.fullmatch(r'Ex\. \(\d{1,2}\)', rest[j]) and rest[j + 1].startswith('Use the grid'))):
+                rest = rest[:j] + [f'{rest[j]} {rest[j + 1]}'] + rest[j + 2:]
+                break
         ex_line = next((l for l in rest if l.startswith('Ex.')), None)
         if letter == 'a':
             head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(C[lL]|[A-F])\.? \((\d)\)')
@@ -690,7 +732,7 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             'tariffModel': {'kind': 'fixed'}, 'totalMarks': st_marks,
             'rows': [{'id': f'r-{n_}', 'kind': 'point', 'verbatim': phrase, 'marks': m,
                       **({'contextNote': (f'The scheme prices the phrases on their own line: '
-                                          f'“{lines[st_at]}”')} if n_ == 1 else {})}
+                                          f'“{st_line}”')} if n_ == 1 else {})}
                      for n_, (phrase, m) in enumerate(phrases, start=1)],
             'notes': (f'The scheme prices this part {st_marks} on its own line, apart from '
                       f'Content and Expression; the paper prints it inside task ({letter}).'),
