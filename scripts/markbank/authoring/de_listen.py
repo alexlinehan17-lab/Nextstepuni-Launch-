@@ -84,7 +84,9 @@ LABEL_ALONE = re.compile(r'^(Der Anrufer|Die Anruferin|Problem|Grund des Anrufs|
                          r'Why|What|How|Where|When|Who)\s*[?:]?\s*$')
 
 # A list marker at the head of an answer line.
-MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–*])|(\d{1,2})\s*\.(?!\d))\s*(.*)$')
+# (2010 and 2014 print the bullet as an "x": "x erhält innerhalb einer Stunde
+# einen Rückruf. (2)".)
+MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–*]|x(?=\s+[a-zäöü]))|(\d{1,2})\s*\.(?!\d))\s*(.*)$')
 # A price at the end of an answer: "(2 marks)", "(1)", "(2 marks)" followed by
 # an examiner's remark ("All or nothing", "– all or nothing", "(Are healthier
 # = 0)", "[All or nothing]") that is kept as the row's note.
@@ -94,6 +96,7 @@ TRAIL = re.compile(r'^(.*?)\s*\(\s*(\d{1,2})\s*(?:marks?)?\s*\)\s*'
                    r'\([^()]*=\s*[1-9]\s*(?:marks?)?\)|'
                    r'N\.?\s?B\b.*|Allow\b.*|\(.*\b(?:only|needed|required)\)))?\s*$', re.I)
 BRACKET_NOTE = re.compile(r'\s*\[\s*All or nothing\s*\]\s*', re.I)
+ENDS_PRICED = re.compile(r'\(\s*\d{1,2}\s*(?:marks?)?\s*\)\s*\.?$', re.I)
 
 
 # ----------------------------------------------------------------- tariffs --
@@ -103,6 +106,10 @@ def _term(seg):
     s = ' '.join((seg or '').split()).strip(' :;,.()')
     m = re.match(r'^(\d{1,3})\s*marks?\s*(?:[(:.]|$)', s, re.I)
     if m:
+        return int(m.group(1))
+    # "12 marks 6, 6 marks" (2013 Ordinary): the total, then its split.
+    m = re.match(r'^(\d{1,3})\s*marks?\s+(\d{1,2}(?:\s*,\s*\d{1,2})+)\s*marks?$', s, re.I)
+    if m and sum(int(n) for n in re.findall(r'\d{1,2}', m.group(2))) == int(m.group(1)):
         return int(m.group(1))
     s = re.sub(r'^Any\s+(?:other\s+)?\w+\s*:?\s*', '', s, flags=re.I)
     total = 0
@@ -160,6 +167,12 @@ def rate_line(s):
     got = _steps(s)
     if got is not None:
         return got, None
+    # "Any one: 6 marks: 4, 2" (2013-2014 Ordinary): ONE answer, its own
+    # components priced 4 and 2 ("During the breaks (4) use the Internet.
+    # (2)"). The split is inside the answer, not a count of answers.
+    one = re.fullmatch(r'\(?Any\s+one\b[^:()]*:\s*(\d{1,2})\s*marks?\s*[:;]\s*(\d{1,2}(?:\s*,\s*\d{1,2})+)\)?', s, re.I)
+    if one and sum(int(n) for n in re.findall(r'\d{1,2}', one.group(2))) == int(one.group(1)):
+        return [int(one.group(1))], None
     inner = s[1:-1].strip() if s.startswith('(') and s.endswith(')') else s
     # "(Any two. Allow apt German quotation: 2 x 2 marks)" (2023 Higher): the
     # remark sits between the claim count and its rate.
@@ -173,11 +186,14 @@ def rate_line(s):
         got = _steps(m.group(1))
         if got is not None:
             return got, m.group(2).strip() + '.'
-    m = re.match(r'^(\((?:[^()]|\([^()]*\))*\)|Any\b[^()]*?\bmarks?\)?:?)\s+(\S.*)$', s, re.I)
+    # (Or with a full stop after the bracket: "(Any two: 2x2 marks). Accept
+    # apt German quotation:", 2013 Higher.)
+    m = re.match(r'^(\((?:[^()]|\([^()]*\))*\)|Any\b[^()]*?\bmarks?\)?:?)\.?\s+(\S.*)$', s, re.I)
     if m:
         got = _steps(m.group(1))
         if got is not None:
-            return got, m.group(2).strip()
+            remark = m.group(2).strip()
+            return got, (remark[:-1] + '.' if remark.endswith(':') else remark)
     # "(Any two: 2 x 3 marks: allow apt German quotation):" (2015 Higher):
     # the remark after a colon, inside the bracket.
     bare = s.rstrip(':').strip()
@@ -589,6 +605,11 @@ def leaf_rows(leaf, asked_text):
         k = 1
     while k < len(body) and _is_cue(body[k], asked) and not PRICE.search(body[k]):
         k += 1
+    # The scheme's own instruction where the paper prints another: "Give
+    # details." beside the paper's "Mention three events." (2013 Ordinary).
+    if (k > 0 and k < len(body) - 1 and re.fullmatch(r'(?:Give|Mention|Name)\s+[\w\s]{1,30}\.', body[k].strip())
+            and rate_line(' '.join(body[k + 1].split()))[0] is not None):
+        k += 1
     body = body[k:]
     # The ask's own tariff restated above its question ("(ii) (6 marks: 3 x 2
     # marks)" then the question, deferred 2022) is its head, not a rate over
@@ -711,6 +732,14 @@ def leaf_rows(leaf, asked_text):
             label = m.group(1)
             last = None
             continue
+        # A longer field heading of its own, "Im Falle einer Verspätung wird
+        # die Anruferin:" (2013 Higher), over the answer it heads.
+        m = re.fullmatch(r'([A-ZÄÖÜ][\wäöüß’\']*(?:\s+[\wäöüß’\']+){4,8})\s*:', s)
+        if m and not MARKER.match(s) and not PRICE.search(s):
+            close()
+            label = m.group(1)
+            last = None
+            continue
         marker = MARKER.match(s)
         text = s
         if marker:
@@ -764,7 +793,11 @@ def leaf_rows(leaf, asked_text):
         # A wrapped line follows a full one (the scheme's lines run to some
         # 75-90 characters); a short line under a short one is an answer of
         # its own — "jumper/sweater/pullover hoodie = 0" / "pants/trousers".
+        # (Never after an answer that has closed on its own price: "…
+        # (zurückfliegen) (1)" / "Sollte/ will morgen … (fliegen) (1)." is two
+        # answers, 2014 Higher.)
         if (not marker and last is not None and last['kind'] == 'option'
+                and not (ENDS_PRICED.search(last['text']) and ENDS_PRICED.search(text))
                 and (re.fullmatch(r'\(.*\)', text) or last['width'] >= 60
                      or (last['marked'] and re.match(r'^[a-zäöü(…./]', text)))):
             last['text'] = f"{last['text']} {text}"
@@ -795,7 +828,8 @@ def leaf_rows(leaf, asked_text):
             text = nb.group(1)
             comps = _components(text)
             pending = pending + [nb.group(2)]
-        tm = TRAIL.match(text)
+        # A price with the sentence's full stop after it: "… (fliegen) (1)."
+        tm = TRAIL.match(text) or TRAIL.match(re.sub(r'(\(\s*\d{1,2}\s*\))\s*\.$', r'\1', text))
         if comps:
             close()
             last = {'kind': 'parts', 'text': text, 'marks': sum(m for _w, m in comps),
@@ -826,7 +860,16 @@ def leaf_rows(leaf, asked_text):
     # setzen// (2 marks)". Under no rate, it is a priced answer of its own.
     for n, it in enumerate(items):
         if it['kind'] == 'group' and it['steps'] is None and len(it['options']) == 1:
-            tm = TRAIL.match(' '.join(it['options'][0]['text'].split()))
+            joined = ' '.join(it['options'][0]['text'].split())
+            comps = _components(joined)
+            if comps:
+                # … or prices its components there: "She says she will ring/
+                # contact his parents (2) if she catches him talking again.//
+                # if he" / "continues to talk (1)" (2013 Higher).
+                items[n] = {'kind': 'parts', 'text': joined, 'marks': sum(m for _w, m in comps),
+                            'parts': comps, 'label': it['label'], 'notes': it['notes']}
+                continue
+            tm = TRAIL.match(joined)
             if tm and tm.group(1).strip():
                 items[n] = {'kind': 'point', 'text': tm.group(1).strip(), 'marks': int(tm.group(2)),
                             'label': it['label'],
@@ -915,6 +958,9 @@ PARTIAL_INLINE = re.compile(
 
 ALLOW_UNPRICED_NOTE = re.compile(r'\(Allow:?\s*[“"]([^“”"]+)[”"]\s+(if\b[^()]*?)\)', re.I)
 ALLOW_PRICED_NOTE = re.compile(r'\(Allow:?\s*“([^”]+)”\s*for\s+(\w+)\s+marks?\s+(if\b[^()]*?)\)', re.I)
+# The same, as an N.B.: "(NB: From all over the world: 1 mark if only answer
+# given)" (2013 Higher).
+NB_PRICED_NOTE = re.compile(r'\(N\.?\s?B\.?:?\s*([^():]+?)\s*:\s*(\w+)\s+marks?\s+(if\b[^()]*?)\)', re.I)
 NUMBER_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 
 
@@ -984,7 +1030,7 @@ def _partials(rows):
             # condition it is paid on: "(Allow “everything” for two marks if
             # only answer given)" (2021 Higher). It is claimed beside the last
             # answer printed above it, as an "alone" alternative is.
-            whole = ALLOW_PRICED_NOTE.search(note) if options else None
+            whole = (ALLOW_PRICED_NOTE.search(note) or NB_PRICED_NOTE.search(note)) if options else None
             if whole and _number_word(whole.group(2)) is not None:
                 n_ = _number_word(whole.group(2))
                 if n_ <= g['perOption']:
@@ -1021,7 +1067,9 @@ def _partials(rows):
                     (f'The scheme allows “{alt}”, paid as one answer of this list ({n} '
                      f'mark{"s" if n != "1" else ""})' if loose and alt == loose.group(1) else
                      f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}')
-                    + f', in place of “{options[of]}”, never beside it'
+                    + (', in place of the answer it is given for, never beside it'
+                       if re.match(r'In points? \(', alt) else      # "In points (a) – (d) …" (2013)
+                       f', in place of “{options[of]}”, never beside it')
                     + (f', and only on the condition it prints: “{cond}”.' if cond else '.')
                     for alt, n, of, cond in said)
                 row['contextNote'] = ' '.join(x for x in (row.get('contextNote'), text) if x)
@@ -1368,6 +1416,18 @@ def cards(year, level, refuse, card_id, question_ref, concept_for, sitting=None)
             continue
         lang = language_of(leaf.rule, printed)
         rows = mark_rows(items, language_note(lang, leaf.rule), general)
+        # The paper asks for a number of answers the scheme does not pay:
+        # "Mention three events." over "Any two: 12 marks: 6, 6" (2013
+        # Ordinary). The scheme's count is what the card claims; say so.
+        asked_n = re.search(r'\b(?:Mention|Give|Name|Write down)\s+(one|two|three|four|five)\b', text, re.I)
+        menus = [r for r in rows if r['kind'] == 'anyN']
+        if (asked_n and len(rows) == 1 and len(menus) == 1
+                and NUMBER_WORDS[asked_n.group(1).lower()] != menus[0]['group']['claimMax']):
+            n_ = menus[0]['group']['claimMax']
+            menus[0]['contextNote'] = ' '.join(x for x in (
+                menus[0].get('contextNote'),
+                f'The paper asks for {asked_n.group(1).lower()}; the scheme pays any '
+                f'{[k for k, v in NUMBER_WORDS.items() if v == n_][0]}.') if x)
         head_lines, _hp = heads.get(part, ([], page))
         # The part's own heading ("Second Part") is the source's title; the
         # stem is what the booklet says is played, how often, and in what

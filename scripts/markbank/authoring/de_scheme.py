@@ -126,7 +126,9 @@ TEXT_NUM = {'i': 1, 'ii': 2, 'iii': 3, '1': 1, '2': 2, '3': 3}
 # comprehension uses both.
 Q_HEAD_HL = re.compile(r'^(Frage|Question|Ceist)\s*(\d{1,2})\s*:?\s*'
                        r'(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
-Q_HEAD_OL = re.compile(r'^(\d{1,2})\s*\.\s*(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
+# (2013 Ordinary names a question's kind before its tariff: "4. True / False
+# 10 marks: 5 x 2 marks".)
+Q_HEAD_OL = re.compile(r'^(\d{1,2})\s*\.\s*(?:True\s*/\s*False\s+)?(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
 # A lettered head. Higher wraps its tariff in its own brackets — "(a) (6
 # marks)" — Ordinary does not — "(a) 6 marks: (i) 4 marks, (ii) 2 marks)",
 # whose trailing bracket is unbalanced in the SEC's own file — and 2023
@@ -145,7 +147,8 @@ AG_ITEM = re.compile(r'^\(\s*(\d{1,2}|i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.+)$', re.I)
 # The scheme's own statement that the two questions are alternatives.
 GRAMMAR_OR = re.compile(r'^(?:OR|N[ÓO]/OR)$|\bquestion\s+1\s+OR\s+question\s+2\b', re.I)
 # A grammar question's own head: "(15 marks: 5 x 3)", "1. (10 marks: 10 x 1 mark)".
-QUESTION_TOTAL = re.compile(r'^(?:\d\.\s*)?\((\d{1,2})\s+marks?\b', re.I)
+# (2013 Ordinary prints the second unbracketed: "5 marks: 5 x 1 mark".)
+QUESTION_TOTAL = re.compile(r'^(?:\d\.\s*)?(?:\((\d{1,2})\s+marks?\b|(\d{1,2})\s+marks?\s*:\s*\d)', re.I)
 
 
 # "Compound words … say what words each compound word is made up of (5 marks)
@@ -161,7 +164,7 @@ def _question_total(block):
     for line in block:
         m = QUESTION_TOTAL.match(line.strip())
         if m:
-            return int(m.group(1))
+            return int(m.group(1) or m.group(2))
     return None
 
 # A numbered answer line. The list restarts at 1 under every ask, so answers are
@@ -236,15 +239,19 @@ CUE_END = re.compile(
     r'Einleitung|R[ée]amhr[áa]|Headline|Tipp|Schlagzeile)[^)]*\)\s*\??\s*$', re.I)
 # The answer to a matching question, printed as the key alone: "2 d 3 a 4 c 5 f
 # 6 b". Nothing else in a scheme block looks like this.
-MATCH_KEY = re.compile(r'^(?:\d{1,2}\s*[-–—]?\s*[A-Fa-f](?:\s|$)[\s,]*){3,}$')
-MATCH_PAIR = re.compile(r'(\d{1,2})\s*[-–—]?\s*([A-Fa-f])(?=\s|$)')
+# (2014 Ordinary separates the pairs with semicolons: "2 E; 3 F; 4 B; 5 A; 6 C".)
+MATCH_KEY = re.compile(r'^(?:\d{1,2}\s*[-–—]?\s*[A-Fa-f](?=[\s;,]|$)[\s,;]*){3,}$')
+MATCH_PAIR = re.compile(r'(\d{1,2})\s*[-–—]?\s*([A-Fa-f])(?=[\s;,]|$)')
 # The row of empty mark boxes an Ordinary matching question prints above its
 # key: "(1) (1) (1) (1) (1)". It is the examiner's tally, not an answer.
 MARK_BOXES = re.compile(r'^(?:\(\d{1,2}\)\s*){2,}$')
 
 # "Any three", "Any THREE details", "Any 3" — the claim count, wherever the SEC
 # puts it in the rate line.
-SEGMENT_RATED = re.compile(r'^([A-Z][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,4})\s*:\s*(.+)$')
+# ("Herr Seldersen’s reaction: (4 marks: 2, 2)", 2013 Ordinary, names a person.)
+SEGMENT_RATED = re.compile(r'^([A-Z][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,4}'
+                           r'|(?!Any\b)[A-Z][a-zäöüß][\w’\']*\s+[A-Z][a-zäöüß][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,3})'
+                           r'\s*:\s*(.+)$')
 BRACKET_HEADING = re.compile(r'^\((?!(?:Must|Allow|Accept|Any|Only|Not|No|Both|One|Two|Three|Plus|Also)\b)'
                              r'([A-Z][a-z]+(?:\s+[a-z]+){0,3}(?:\s+[A-Z][a-z]+)?)\)$')
 # (Or the quoted answer straight before its price: "N.B. “I want to become an
@@ -256,7 +263,7 @@ LABELLED_SUMMARY = re.compile(r'^\(\s*\d{1,3}\s*marks?\s*:\s*[A-Z][a-z]+\s*:\s*\
 INSTRUCTION_DE = re.compile(r'^(?:Schreiben|Geben|Nennen|Beschreiben|Erklären|Begründen|Finden)\s+Sie\b')
 # "(Any TWO of the following details: 3 marks: 2, 1)" (2018 Ordinary).
 ANY_N = re.compile(r'^(?:Plus\s+)?Any\s+(\w+)\s*(?:of\s+the\s+following\b\s*)?'
-                   r'(?:details?|examples?|points?|items?|reasons?|countr(?:y|ies)|of)?\s*:?\s*', re.I)
+                   r'(?:details?|examples?|points?|items?|reasons?|countr(?:y|ies)|questions?|of)?\s*:?\s*', re.I)
 COUNT_POINTS = re.compile(r'^(one|two|three|four|five)\s+(?:points?|details?)\s*:\s*(?=\d)', re.I)
 # A rate spec, in every shape the ten schemes print.
 SPEC_TIMES = re.compile(r'^(\d{1,2})\s*[x×]\s*(\d{1,2})(?:\s*marks?)?$', re.I)
@@ -266,7 +273,9 @@ SPEC_ONE = re.compile(r'^(\d{1,2})\s*marks?$', re.I)
 # "(10 marks. 2 x 2 marks; 3 x 2 marks)" — the SEC separates a total from its
 # spec with a colon almost always, a full stop once, and a semicolon once.
 # "(4 marks 2 + 2 marks)" (2020 Higher) drops the colon before its split.
-TOTAL_THEN = re.compile(r'^(\d{1,3}|\w+)\s*marks?\s*(?:[:.;]\s*|\s+(?=\d{1,2}\s*[+x×,]))(.+)$', re.I)
+# (Or the split in brackets after the total: "9 marks (4, 3, 2)", 2014 Ordinary.)
+TOTAL_THEN = re.compile(r'^(\d{1,3}|\w+)\s*marks?\s*(?:[:.;]\s*|\s+(?=\d{1,2}\s*[+x×,])'
+                        r'|\s*(?=\(\s*\d{1,2}\s*[+x×,]))(.+)$', re.I)
 
 # The words a reprinted question is written in. Both signals are read and they
 # must agree; the reprint wins, because it is the ask itself.
@@ -484,6 +493,9 @@ def parse_head_clause(clause):
     m = re.match(r'^\s*\(?\s*\d{1,3}\s*marks?\s*', s, re.I)
     if m:
         s = s[m.end():]
+    # A letter's own breakdown in brackets after its total, "b = 8 marks (4 +
+    # 4)" (2014 Higher), restates that total; it adds nothing to it.
+    s = re.sub(r'(\d{1,3}\s*marks?)\s*\(\s*\d{1,2}(?:\s*[+x×]\s*\d{1,2})+\s*\)', r'\1', s, flags=re.I)
     letters, romans = {}, {}
     cur_letter = cur_roman = None
     pos = 0
@@ -593,6 +605,9 @@ class DeScheme:
         # 2016's text layer carries its bullet as a control character, \x02
         # ("\x02 200 times (3)"): read as the bullet it prints.
         raw = raw.replace('\x02', '•')
+        # 2010 and 2014 set the bullet as a letter "x": "x Award content marks
+        # first.", "x erhält innerhalb einer Stunde einen Rückruf. (2)".
+        raw = re.sub(r'(?m)^x (?=[A-Za-zÄÖÜäöü(])', '• ', raw)
         self.lines = ['' if SECTION_LANGUAGE.match(l.strip()) else l.rstrip()
                       for l in raw.split('\n')]
         self.asks = []
@@ -699,6 +714,9 @@ class DeScheme:
                                 start + 1 + i)
 
     def _read_question(self, unit, q, clause, word, block, line_no):
+        # The question's own number before its first lettered head: "1. (a)
+        # Describe the hotel manager." (2014 Ordinary).
+        block = [re.sub(rf'^(\s*){q}\s*\.\s*(?=\(\s*[a-h]\s*\))', r'\1', b) for b in block]
         total = head_total(clause)
         letters, romans = parse_head_clause(clause)
         if not letters:
@@ -884,15 +902,17 @@ class DeScheme:
         notes = []
         by_rate = False
         bold = None
-        if not items and steps and preamble and len(preamble) == len(steps):
+        if not items and steps and preamble:
             # 2015 Ordinary reprints each sentence whole, unlabelled, under
             # "(5 marks: 5 x 1 mark)", and sets the right preposition in bold:
-            # "Sie will lieber zu / in / **nach** / auf Hause gehen, …". The
-            # text layer keeps no bold, so the choice is read off the PDF.
-            bold = self._bold_choices(preamble)
-            if bold is not None:
+            # "Sie will lieber zu / in / **nach** / auf Hause gehen, …"; 2014
+            # circles it. The text layer keeps neither, so the choice is read
+            # off the PDF.
+            marked = self._marked_choices(preamble)
+            if marked is not None and len(marked[1]) == len(steps):
+                bold = marked[0]
                 items = [{'text': f'{stem} — {word}', 'marks': step}
-                         for (stem, word), step in zip(bold, steps)]
+                         for (stem, word), step in zip(marked[1], steps)]
                 by_rate = True
         if (items and not any(i['marks'] for i in items) and steps
                 and len(steps) == len(items) and not COMPOUND_HALVES.search(' '.join(preamble))):
@@ -940,21 +960,37 @@ class DeScheme:
             segments=segments, notation=notation,
             cue=' '.join(' '.join(cue).split()), notes=notes, language='German',
             line=line_no, head_word=None, exhaustive=True, by_rate=by_rate,
-            bold=bold is not None))
+            bold=bold))
 
-    def _bold_choices(self, lines):
-        """[(stem, word)] for sentences the scheme reprints with the right
-        choice in bold, read off the PDF, or None.
+    def _marked_choices(self, lines):
+        """((how, [(stem, word)]) for sentences the scheme reprints with the
+        right choice marked on the page, read off the PDF, or None.
 
-        Each line must be one printed line of the PDF, offer its choices as
-        "w / w / w / w", and set exactly one of them, and nothing else, in a
-        bold face. The stem is the sentence's own words before its choices
-        ("Sie will lieber"), which the card shows beside the bold word."""
+        2015 Ordinary sets the choice in bold ("Sie will lieber zu / in /
+        **nach** / auf Hause gehen"); 2014 Ordinary draws a circle round it,
+        as the candidate is told to. The text layer keeps neither, so the PDF
+        is read: each sentence's first printed line (the one offering its
+        choices "w / w / w / w") is found by its text, and exactly one choice
+        on it must be bold, or ringed by exactly one drawn circle. Lines
+        before the first sentence are the reprinted instruction; a line
+        without choices after an unfinished sentence is its second line
+        ("… auf dem / am / neben dem / zu dem" / "Tisch sitzen."). The stem is
+        the sentence's own words before its choices, which the card shows
+        beside the marked word."""
+        sentences = []
+        for line in (' '.join(l.split()) for l in lines):
+            if ' / ' in line:
+                sentences.append(line)
+            elif sentences and not re.search(r'[.?!]$', sentences[-1]):
+                continue                  # the sentence's second printed line
+            elif sentences:
+                return None
+        if not sentences:
+            return None
         pdf = self.path[:-len('.md')] + '.pdf'
         if not os.path.exists(pdf):
             return None
         import pymupdf
-        want = [' '.join(l.split()) for l in lines]
         found = {}
         with pymupdf.open(pdf) as doc:
             for page in doc:
@@ -968,22 +1004,101 @@ class DeScheme:
                                 row = [y, []]
                                 rows.append(row)
                             row[1].append(span)
-                for _y, spans in rows:
+                rings = None
+                for y, spans in rows:
                     spans.sort(key=lambda sp: sp['bbox'][0])
                     text = ' '.join(''.join(sp['text'] for sp in spans).split())
-                    if text in want and text not in found:
-                        found[text] = [sp['text'].strip() for sp in spans
-                                       if sp['flags'] & 16 and sp['text'].strip()]
-        out = []
-        for text in want:
-            m = re.match(r'^(.*?)\s*(\S+(?:\s*/\s*\S+){2,})\s', text)
-            if text not in found or m is None or not m.group(1).strip():
+                    if text not in sentences or text in found:
+                        continue
+                    bold = [sp['text'].strip() for sp in spans if sp['flags'] & 16 and sp['text'].strip()]
+                    if rings is None:
+                        # Each circle is drawn as four curves; its box is the ring.
+                        rings = []
+                        for d in page.get_drawings():
+                            curves = [it for it in d['items'] if it[0] == 'c']
+                            for k in range(0, len(curves) - 3, 4):
+                                pts = [pt for it in curves[k:k + 4] for pt in it[1:]]
+                                rings.append((min(pt.x for pt in pts), min(pt.y for pt in pts),
+                                              max(pt.x for pt in pts), max(pt.y for pt in pts)))
+                    top = min(sp['bbox'][1] for sp in spans)
+                    bottom = max(sp['bbox'][3] for sp in spans)
+                    ringed = []
+                    for x0, y0, x1, y1 in rings:
+                        if not (y0 <= (top + bottom) / 2 <= y1):
+                            continue
+                        # A ring is drawn loosely and takes in the slashes
+                        # beside its word, sometimes the next word's edge.
+                        inside = [w[4] for w in page.get_text('words')
+                                  if x0 <= (w[0] + w[2]) / 2 <= x1 and y0 <= (w[1] + w[3]) / 2 <= y1
+                                  and w[4] != '/']
+                        ringed.append(inside)
+                    found[text] = (bold, ringed)
+        out, how = [], set()
+        for text in sentences:
+            if text not in found:
                 return None
-            choices = [c.strip() for c in m.group(2).split('/')]
-            if len(found[text]) != 1 or found[text][0] not in choices:
+            head = text.split(' / ')
+            middle = head[1:-1]
+            k = max(len(c.split()) for c in middle) if middle else 1
+            words = head[0].split()
+            if len(words) <= k:
                 return None
-            out.append((m.group(1).strip(), found[text][0]))
-        return out
+            stem, first = ' '.join(words[:-k]), ' '.join(words[-k:])
+            choices = [first] + [c.strip() for c in middle] + [' '.join(head[-1].split()[:k])]
+            bold, rings_here = found[text]
+            ringed = []
+            for inside in rings_here:
+                hit = [c for c in choices if all(t in inside for t in c.split())]
+                hit = [c for c in hit if not any(c != o and c in o.split() for o in hit)]
+                if len(hit) != 1:
+                    return None
+                ringed.append(hit[0])
+            # (2015 both sets it in bold and rings it; the two must agree.)
+            if len(bold) == 1 and bold[0] in choices and ringed in ([], [bold[0]]):
+                out.append((stem, bold[0]))
+                how.add('bold')
+            elif not bold and len(ringed) == 1 and ringed[0] in choices:
+                out.append((stem, ringed[0]))
+                how.add('circled')
+            else:
+                return None
+        return (how.pop(), out) if len(how) == 1 else None
+
+    def _tick_columns(self, statements):
+        """['True'|'False'] for each statement, from the column its X stands
+        in on the scheme PDF, or None."""
+        pdf = self.path[:-len('.md')] + '.pdf'
+        if not os.path.exists(pdf):
+            return None
+        import pymupdf
+        with pymupdf.open(pdf) as doc:
+            for page in doc:
+                words = page.get_text('words')
+                heads = {w[4]: (w[0] + w[2]) / 2 for w in words if w[4] in ('True', 'False')}
+                if len(heads) != 2:
+                    continue
+                rows = {}
+                for w in words:
+                    key = next((k for k in rows if abs(k - w[1]) <= 3), w[1])
+                    rows.setdefault(key, []).append(w)
+                out = []
+                for st in statements:
+                    want = ' '.join(st.split()[:4])
+                    row = next((sorted(r, key=lambda w: w[0]) for r in rows.values()
+                                if want in ' '.join(w[4] for w in sorted(r, key=lambda w: w[0]))), None)
+                    marks = [w for w in row or [] if w[4] == 'X']
+                    if len(marks) != 1:
+                        out = None
+                        break
+                    x = (marks[0][0] + marks[0][2]) / 2
+                    near = sorted(heads, key=lambda h: abs(heads[h] - x))
+                    if abs(heads[near[0]] - x) * 2 > abs(heads[near[1]] - x):
+                        out = None            # not clearly under one column
+                        break
+                    out.append(near[0])
+                if out:
+                    return out
+        return None
 
     # -- the leaf -----------------------------------------------------------
     def _emit(self, unit, q, letter, roman, total, clause, block, line_no, word):
@@ -1034,12 +1149,63 @@ class DeScheme:
                                  'tentative': tentative})
             cur = None
 
+        # A true/false table's statement wrapped past its X: "Yvonne macht
+        # zum ersten Mal Campingurlaub mit ihren X (2)" / "Freundinnen."
+        # (2013 Ordinary) is one statement, its X after it.
+        if any(re.fullmatch(r'True\s+False', b.strip()) for b in block):
+            joined = []
+            for b in block:
+                t = b.strip()
+                prev = joined[-1] if joined else ''
+                m = re.match(r'^(.*?\S)\s+(X(?:\s*\(\s*\d{1,2}\s*\))?)$', prev)
+                if (m and t and not PAGE.match(t) and ' X' not in f' {t}'
+                        and re.match(r'^[a-zäöüA-ZÄÖÜ]', t) and re.search(r'[.?!]$', t)):
+                    joined[-1] = f'{m.group(1)} {t} {m.group(2)}'
+                    continue
+                joined.append(b)
+            block = joined
+        # Two lists priced by name in a summary above them: "8 marks: (4
+        # marks: 2, 1, 1; and" / "4 marks: 2, 1, 1)" / "Any SIX details: Any
+        # three food items: (4 marks: 2, 1, 1) and" / "Any three drink items:
+        # (4 marks: 2, 1, 1)", then "Food: Any THREE" and "Drinks: Any THREE"
+        # over their lists (2014 Ordinary TEXT II Q2(b)). Each heading takes
+        # the rate its noun is named with; the summary is the card's note.
+        named_rates, summary = {}, []
+        flat = [' '.join(b.split()) for b in block]
+        for k, line in enumerate(flat):
+            for cnt, noun, tot, split in re.findall(
+                    r'Any (\w+) (\w+) items?:\s*\((\d{1,2}) marks?:\s*([\d,\s]+?)\)', line, re.I):
+                steps_ = [int(n) for n in re.findall(r'\d{1,2}', split)]
+                if _number(cnt) == len(steps_) and sum(steps_) == int(tot):
+                    named_rates[noun.lower()] = steps_
+        if len(named_rates) > 1:
+            heads_ = [k for k, line in enumerate(flat)
+                      if re.fullmatch(r'([A-ZÄÖÜ][a-zäöü]+):\s*Any\s+\w+', line)
+                      and any(line.lower().startswith(n) for n in named_rates)]
+            if len(heads_) == len(named_rates):
+                lead = [k for k in range(heads_[0]) if re.search(r'\bmarks?\b', flat[k])
+                        and not CUE_END.search(flat[k])]
+                summary = [k for k in lead if k >= min(lead)] if lead else []
+            else:
+                named_rates = {}
+        if summary:
+            notes.append(' '.join(flat[k] for k in summary if re.search(r'\bitems?:', flat[k])))
         for at, raw in enumerate(block):
             s = raw.strip()
             if not s or PAGE.match(s):
                 continue
             if MARK_BOXES.match(s):
                 continue
+            if at in summary:
+                phase = 'answers'
+                continue
+            head_ = re.fullmatch(r'([A-ZÄÖÜ][a-zäöü]+):\s*Any\s+(\w+)', ' '.join(s.split()))
+            if head_ and named_rates:
+                rate_ = next((v for n, v in named_rates.items() if head_.group(1).lower().startswith(n)), None)
+                if rate_ is not None and _number(head_.group(2)) == len(rate_):
+                    new_segment(head_.group(1), rate_)
+                    phase = 'answers'
+                    continue
             # A note's sentence runs on over lines of its own: "N.B. The four
             # details cannot all come from the same category (a) and (b) i.e.
             # only a" / "maximum of three details is allowed from one
@@ -1128,6 +1294,22 @@ class DeScheme:
             if wq and phase == 'answers' and read_rate_line(following)[0] is not None:
                 new_segment(wq.group(1), None)
                 continue
+            # … or under the rate it heads: "(8 marks: 4 x 2 marks)" / "What
+            # they do:" (2014 Higher).
+            if (wq and phase == 'answers' and segments[-1]['steps'] is not None
+                    and not segments[-1]['answers'] and segments[-1]['label'] is None):
+                segments[-1]['label'] = wq.group(1)
+                continue
+            # An examiner's aside opened in a bracket that its own lines never
+            # close: "(General statements not sufficient: candidates must give
+            # an example … and must" / "have contrast. The list below is not
+            # exhaustive." (2014 Higher). A note, run on as notes are.
+            if (phase == 'answers' and re.match(r'^\((?![a-h]\)|[ivx]{1,4}\))[A-Z][a-z]+\s', s)
+                    and ')' not in s and read_rate_line(s)[0] is None):
+                notes.append(s)
+                note_open = not re.search(r'[.!?)”"]$', s)
+                cur = None
+                continue
             cat = CATEGORY_HEAD.fullmatch(s)
             if cat and phase == 'answers' and any(g['steps'] is not None for g in segments):
                 new_segment(f'({cat.group(1)}) {cat.group(2)}', None, tentative=True)
@@ -1138,7 +1320,9 @@ class DeScheme:
             # rules/consequences" over "a. does not buy a ticket" (2016 Higher
             # TEXT I Q4): the list's heading, priced nowhere.
             if (phase == 'answers' and unit.startswith('T') and following
-                    and (re.match(r'^1\.\s*[.…]', following) or LETTER_ITEM.match(following))
+                    and (re.match(r'^1\.\s*[.…]', following) or LETTER_ITEM.match(following)
+                         or (re.search(r'(?:…|\.\.\.)$', s) and re.match(r'^1\.\s', following)
+                             and not any(g['answers'] for g in segments)))
                     and not ANSWER_NUM.match(s) and not LETTER_ITEM.match(s)
                     and (cur is None or re.search(r'[.!?)]$', cur['text']))
                     and read_rate_line(s)[0] is None and not NOTE.match(s)
@@ -1238,6 +1422,16 @@ class DeScheme:
                         segments[-1]['answers'].append(cur)
                     continue
             got, _cnt, remark = read_rate_line(s)
+            rate_here = next((g['steps'] for g in reversed(segments) if g['steps']), None)
+            if (got is not None and cur is not None and cur.get('n') and rate_here
+                    and len(set(rate_here)) == 1 and sum(got) == rate_here[0]
+                    and re.match(rf'^{cur["n"] + 1}\.\s', following)):
+                # "5. give information/ brochure about house/ neighbours/
+                # beautiful destinations." / "(Any two: 1+1)" / "6. …" (2013
+                # Higher): how answer 5's own two marks are earned, printed
+                # under it, inside a list that goes on.
+                cur['text'] = f"{cur['text']} {s}"
+                continue
             if got is not None:
                 if remark:
                     notes.append(remark)
@@ -1349,6 +1543,22 @@ class DeScheme:
                 else:
                     a['marks'] = None
             seg['answers'] = [a for a in seg['answers'] if a['text']]
+        # A true/false key printed as a table, "True False" over "1. 23
+        # Mädchen und Jungen hatten die Idee für die Mini-Firma. X (1)"
+        # (2012-2014 Ordinary): the X stands in the column it answers, which
+        # the text layer loses. Read off the PDF by position.
+        # (A statement wrapped past its X runs on after it: "Yvonne macht zum
+        # ersten Mal Campingurlaub mit ihren X (2)" / "Freundinnen.", 2013.)
+        answers_ = [a for g in segments for a in g['answers']]
+        tick = re.compile(r'^(.*?\S)\s+X(?:\s*\(\s*\d{1,2}\s*\))?(?:\s+(\S.*))?$')
+        if (answers_ and all(tick.match(a['text']) for a in answers_)
+                and any(re.fullmatch(r'True\s+False', b.strip()) for b in block)):
+            said = [' '.join(x for x in tick.match(a['text']).groups() if x) for a in answers_]
+            cols = self._tick_columns(said)
+            if cols is None:
+                return 'the scheme marks each statement with an X whose column this cannot read'
+            for a, text, col in zip(answers_, said, cols):
+                a['text'] = f'{text} — {col}'
         for seg in segments:
             if seg['steps'] is None:
                 marks = [a['marks'] for a in seg['answers']]
@@ -1709,6 +1919,68 @@ def _grid_words(path, find_page):
                 rows.setdefault(round(y0), []).append((x0, w))
             if any(find_page(' '.join(w for _x, w in sorted(r))) for r in rows.values()):
                 return words
+    return None
+
+
+FIELD_ASK = re.compile(r'\bFill in the information required\b', re.I)
+
+
+def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None):
+    """[(field, [answer lines])] for a two-column answer table, or None.
+
+    2013 Ordinary TEXT II Q1 ("Fill in the information required.") answers
+    in a ruled table: the field down the left ("Means of transport (1
+    mark)"), its answer on the right ("Train (1)", or "Any TWO of the
+    following details: 4 marks: 2, 2" over a numbered list). The text layer
+    interleaves the two columns, so the table is read by position: its rows
+    between the drawn rules under the ask, its columns either side of the
+    one inner vertical rule. Believed only where the fields' printed marks
+    add to the ask's total."""
+    path = os.path.join(schemes_dir(subject),
+                        f'{year}-{level}{"-deferred" if sitting == "deferred" else ""}.pdf')
+    if not os.path.exists(path):
+        return None
+    import pymupdf
+    want = ' '.join((cue or '').split())
+    with pymupdf.open(path) as doc:
+        for page in doc:
+            words = page.get_text('words')
+            rows = {}
+            for w in words:
+                key = next((k for k in rows if abs(k - w[1]) <= 3), w[1])
+                rows.setdefault(key, []).append(w)
+            top = next((k for k, r in rows.items()
+                        if ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])) in want and len(r) > 3
+                        and want.startswith(' '.join(x[4] for x in sorted(r, key=lambda x: x[0])))), None)
+            if top is None:
+                continue
+            draws = page.get_drawings()
+            hs = sorted({round(d['rect'].y0) for d in draws
+                         if d['rect'].height < 2 and d['rect'].width > 50 and d['rect'].y0 > top})
+            vs = sorted({round(d['rect'].x0) for d in draws
+                         if d['rect'].width < 2 and d['rect'].height > 20 and d['rect'].y0 > top})
+            if len(vs) != 3 or len(hs) < 3:
+                return None
+            left, gutter, right = vs
+            out = []
+            for y0, y1 in zip(hs, hs[1:]):
+                cell = [w for w in words if y0 < (w[1] + w[3]) / 2 < y1 and left < w[0] < right]
+                if not cell:
+                    continue
+
+                def lines(ws):
+                    got = {}
+                    for w in sorted(ws, key=lambda x: (x[1], x[0])):
+                        k = next((k for k in got if abs(k - w[1]) <= 3), w[1])
+                        got.setdefault(k, []).append(w)
+                    return [' '.join(x[4] for x in sorted(v, key=lambda x: x[0])) for _k, v in sorted(got.items())]
+                field = ' '.join(lines([w for w in cell if w[0] < gutter]))
+                answer = lines([w for w in cell if w[0] >= gutter])
+                out.append((' '.join(field.split()), answer))
+            priced = [re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', f) for f, _a in out]
+            if not out or None in priced or sum(int(m.group(1)) for m in priced) != total:
+                return None
+            return out
     return None
 
 
