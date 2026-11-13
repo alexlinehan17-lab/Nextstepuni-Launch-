@@ -31,7 +31,8 @@ export interface RouteHead {
    * Whether headings are drawn. Where every route is a single row the row IS
    * the branch, often printed with its own label ("Scald — Inflammation …"),
    * so the routes are told apart by "OR" alone; a heading over each would
-   * only repeat it.
+   * only repeat it. A route that is a menu is not such a row, so a card with
+   * one draws every heading.
    */
   titled: boolean;
 }
@@ -88,7 +89,11 @@ export function routeHeads(rows: readonly MarkRow[]): Map<string, RouteHead> {
     const printed = printedHeadings(rows, routes);
     const lettered = routes.every(route => /^[a-z]$/i.test(route));
     const counts = routes.map(route => rows.filter(r => r.route === route).length);
-    const titled = counts.some(n => n > 1);
+    // A menu is never its own label: a route that is one menu ("One of these —
+    // 8 marks" over three conversions, Engineering 2016 HL Q8(c)(i)) needs the
+    // heading a route of several rows gets, so every route on the card has one.
+    const titled = counts.some(n => n > 1)
+      || rows.some(r => r.route && r.kind === 'anyN' && r.group);
     routes.forEach((route, ordinal) => heads.set(route, {
       route,
       label: printed ? printed[ordinal] : lettered ? `Route ${route.toUpperCase()}` : `Route ${ordinal + 1}`,
