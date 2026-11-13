@@ -1911,6 +1911,838 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2023 Higher Level, pp.13-15 — © State Examinations Commission.",
+    id: "de-2023-hl-at-a", topicId: "german-7-0", conceptId: "festival-saison-sehen-sich-foto-rechts",
+    section: "AT", questionRef: "2023 HL Section AT Q(a)",
+    questionText: "Festival-Saison\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto in drei bis vier Sätzen.\n• Sind Sie ein Fan von Festivals? Begründen Sie warum/warum nicht in zwei Sätzen.\nWas nehmen Sie zu einem Festival mit und was ganz sicher nicht? Schreiben Sie zwei Sätze.\n• Welche Probleme entstehen bei Festivals durch Drogen und Alkohol? (zwei Sätze)\nWelches Festival in Irland würden Sie empfehlen? Und warum? (zwei Sätze)\n(100 Wörter)",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+                "Expression = 12",
+                "Award content marks first;",
+                "Two discretionary marks (1, 1) are available to be awarded under any of the points A-C for additional relevant content, elaboration or comment.",
+                "Put irrelevant content in square brackets [...]; exclude when judging the expression mark.",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Beschreiben Sie das Foto in drei bis vier Sätzen.",
+                            "Satz 1: 1 mark",
+                            "Satz 2: 1 mark",
+                            "Satz 3: 1 mark"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Sind Sie ein Fan von Festivals? Begründen Sie warum/warum nicht in zwei Sätzen. (man=0)",
+                            "Begründung 1: 1 mark",
+                            "Begründung 2: 1 mark",
+                            "Was nehmen Sie zu einem Festival mit und was ganz sicher nicht? Schreiben Sie zwei Sätze.",
+                            "Was: 1 mark",
+                            "Was nicht: 1 mark"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Welche Probleme entstehen bei Festivals durch Drogen und Alkohol? (zwei Sätze)",
+                            "Problem 1: 1 mark",
+                            "Problem 2: 1 mark",
+                            "Welches Festival in Irland würden Sie empfehlen? Und warum? (zwei Sätze)",
+                            "Festival: 1 mark",
+                            "Warum: 1 mark"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Dis. 2 marks"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                        "verb forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                        "few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb",
+                                        "forms/tense occasionally incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [7,8,9],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                              "verb forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                              "few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb",
+                                              "forms/tense occasionally incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [5,6],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "a",
+                                  "b",
+                                  "c",
+                                  "dis"
+                            ],
+                            "contentAtMost": 8,
+                            "wordsUnder": 60,
+                            "rule": "If the content mark is 8 or less, or the answer is too short (less than 60 words), mark expression out of 7"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (a) — answer in German",
+          "pages": [
+                16,
+                17
+          ],
+          "attribution": "SEC German 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2023 Higher Level, pp.14-15 — © State Examinations Commission.",
+    id: "de-2023-hl-at-b", topicId: "german-7-0", conceptId: "computerspiele-sehen-sich-foto-rechts-foto",
+    section: "AT", questionRef: "2023 HL Section AT Q(b)",
+    questionText: "Computerspiele\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto in drei bis vier Sätzen.\n• Spielen Sie Computerspiele? Warum/ warum nicht? (zwei Sätze).\nSetzen Sie sich persönlich Regeln für die Zeit, die Sie online verbringen? (zwei Sätze)\n• Es gibt viele IT-Firmen in Irland.\nWelche Vorteile/Nachteile bringt das mit sich? (vier Sätze)\n(100 Wörter)",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+                "Expression = 12",
+                "Award content marks first;",
+                "Two discretionary marks (1, 1) are available to be awarded under any of the points A-C for additional relevant content, elaboration or comment.",
+                "Put irrelevant content in square brackets [...]; exclude when judging the expression mark.",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "a",
+                      "label": "A",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Beschreiben Sie das Foto in drei bis vier Sätzen.",
+                            "Satz 1: 1 mark",
+                            "Satz 2: 1 mark",
+                            "Satz 3: 1 mark"
+                      ]
+                },
+                {
+                      "id": "b",
+                      "label": "B",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Spielen Sie Computerspiele? Warum/warum nicht? (zwei Sätze).",
+                            "Grund 1: 1 mark",
+                            "Grund 2: 1 mark",
+                            "Setzen Sie sich persönlich Regeln für die Zeit, die Sie online verbringen? (zwei Sätze)",
+                            "Satz 1: 1 mark",
+                            "Satz 2: 1 mark"
+                      ]
+                },
+                {
+                      "id": "c",
+                      "label": "C",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Es gibt viele IT-Firmen in Irland. Welche Vorteile/Nachteile bringt das mit sich? (vier Sätze)",
+                            "Satz 1: 1 mark",
+                            "Satz 2: 1 mark",
+                            "Satz 3: 1 mark",
+                            "Satz 4: 1 mark"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Dis. 2 marks"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                        "verb forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                        "few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb",
+                                        "forms/tense occasionally incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [7,8,9],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 7,
+                            "permittedMarks": [0,1,2,3,4,5,6,7],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                              "verb forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                              "few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [3,4],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb",
+                                              "forms/tense occasionally incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [5,6],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [7],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "a",
+                                  "b",
+                                  "c",
+                                  "dis"
+                            ],
+                            "contentAtMost": 8,
+                            "wordsUnder": 60,
+                            "rule": "If the content mark is 8 or less, or the answer is too short (less than 60 words), mark expression out of 7"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ÄUSSERUNG ZUM THEMA",
+          "title": "Äußerung zum Thema (b) — answer in German",
+          "pages": [
+                16,
+                17
+          ],
+          "attribution": "SEC German 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2023 Higher Level, pp.16-18 — © State Examinations Commission.",
+    id: "de-2023-hl-sp-a", topicId: "german-7-2", conceptId: "german-friend-jan-jana-has-written",
+    section: "SP", questionRef: "2023 HL Section SP Q(a)",
+    questionText: "Your German friend, Jan/Jana has written to you. Reply in German to the letter, giving detailed answers to four out of the five topic areas he/she has asked about, expressing your personal opinion.\n(Write approximately 160 words.)",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "(a) Letter",
+                "Note: Answer any four of the five topic areas.",
+                "Where a candidate has answered more than four, mark all and pick the best four for final mark.",
+                "Your German friend, Jan/Jana has written to you. Reply in German to the letter, giving detailed",
+                "answers to the four out of the five topic areas he/she has asked about, expressing your personal",
+                "opinion. (Write approximately 160 words.)",
+                "Content = 25 marks Expression = 25 marks",
+                "Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C, D or E",
+                "for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+                "A. (4)",
+                "... im Stress, weil ich zusammen mit Freunden einen Jugendtreff plane. ... was sollten wir unbedingt",
+                "organisieren, damit sich alle dort wohlfühlen? Wie kann man am besten chillen? (Allow „ich“",
+                "answers) (1+1) Wo treffen sich junge Leute in deiner Gegend? (1) Und was machst du, wenn du",
+                "allein relaxen möchtest? (1)",
+                "B. (4)",
+                "...Wenn du an die letzten Schuljahre denkst: woran erinnerst du dich besonders gern? (1) Und",
+                "warum? (1) Welche Regeln an deiner Schule nerven dich? (1) (One rule enough) Warum? (1)",
+                "C. (4)",
+                "...Welchen Effekt hat der Klimawandel in Irland? Und welche Probleme resultieren daraus? (1 + 1)",
+                "Seit dem letzten Winter versuchen wir hier unseren Energieverbrauch zu reduzieren. Was macht ihr",
+                "zu Hause, um Energie zu sparen? (1 + 1)",
+                "D. (4)",
+                "Ich habe gerade gelesen, dass die irischen Kneipen bald länger aufhaben und Nachtclubs bis 6 Uhr",
+                "morgens geöffnet sein dürfen. Ganz schön lange, finde ich! Wie ist deine Meinung dazu (1) Welche",
+                "Vorteile siehst du darin? Und welche Nachteile (darin)? (1+1+1)",
+                "E. (4)",
+                "... (ich) kann abends nichts einschlafen. Ich glaube, es liegt daran, dass mein Freund Andy nicht mehr",
+                "mit mir spricht. Hast du manchmal auch Probleme mit deinen Freunden? (1) Was sind die Gründe",
+                "dafür? (1 + 1: Can be reason and eleboration) Und was machst du, wenn du nicht einschlafen",
+                "kannst? (1)",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "op",
+                      "label": "Op.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Op. (2)",
+                            "Suitable opening:",
+                            "Bare minimum (1 mark)",
+                            "Appropriate elaboration OR reference to contents of letter. (1 mark)"
+                      ]
+                },
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "cl",
+                      "label": "Cl.",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Cl. (2)",
+                            "Suitable transition to ending/reference to letter (1)",
+                            "Appropriate closing formula (1)"
+                      ]
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": [
+                            "Dis.: (5 marks: 5 x 1) Have you awarded the five discretionary marks?"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4,5,6],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                        "verb forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                        "few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [7,8,9,10,11,12,13,14],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb forms/tense",
+                                        "frequently incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [15,16,17,18,19],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 18,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2,3,4],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                              "verb forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                              "few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [5,6,7,8,9,10],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb forms/tense",
+                                              "frequently incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [11,12,13],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [14,15,16,17,18],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "op",
+                                  "point-1",
+                                  "point-2",
+                                  "point-3",
+                                  "point-4",
+                                  "cl",
+                                  "dis"
+                            ],
+                            "contentAtMost": 12,
+                            "wordsUnder": 100,
+                            "rule": "If the content mark is 12 or less, or the answer is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it.",
+                "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (a) — answer in German",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC German 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC011ALP000BV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, German 2023 Higher Level, pp.17-18 — © State Examinations Commission.",
+    id: "de-2023-hl-sp-b", topicId: "german-7-1", conceptId: "schauen-sich-foto-genau-vier-tzen",
+    section: "SP", questionRef: "2023 HL Section SP Q(b)",
+    questionText: "Schauen Sie sich das Foto genau an.\n• Beschreiben Sie in vier Sätzen, was Sie auf dem Foto sehen.\n• Immer mehr Menschen in Deutschland essen weniger Fleisch. Wie ist das in Irland?\n(zwei Sätze) Vegetarisch oder vegan ‒ können Sie sich vorstellen, kein Fleisch mehr zu essen? Warum/warum nicht? (zwei Sätze)\n• 25% der 18-29 Jahre alten Deutschen bestellen ihr Essen einmal pro Woche bei einem Lieferdienst. Bestellen Sie Essen online? Warum/warum nicht? (zwei Sätze)\nFood Blogs sind aber auch populär. Kochen Sie selbst zu Hause? (zwei Sätze)\n• In Deutschland bekommt jede Arbeiterin/jeder Arbeiter seit Oktober 2022 mindestens 12 Euro pro Stunde. Glauben Sie, dieser Mindestlohn ist fair? Erklären Sie Ihre Meinung in zwei Sätzen. In welchen Jobs wird Ihrer Meinung nach zu wenig verdient? Und in welchen Jobs zu viel? (zwei Sätze)\n• Im letzten Sommer konnte man mit einem 9-Euro-Ticket drei Monate lang mit Bus und Bahn durch Deutschland fahren. Wäre das für Irland auch eine attraktive Idee?\nWarum/warum nicht? (zwei Sätze)\nNie wieder mit dem Flugzeug zu reisen ‒ halten Sie das für realistisch? (zwei Sätze)\n• In welchem Land dieser Welt möchten Sie am liebsten leben? Begründen Sie Ihre Meinung in zwei Sätzen. In welchem Land würden Sie nie wohnen wollen? Warum? (zwei Sätze)\n(Scríobh tuairim is 160 focal.)\n(Write approximately 160 words.)\nSpás le haghaidh obair bhreise.\nDéan gach píosa oibre a lipéadú go soiléir le huimhir na ceiste agus leis an gcuid den cheist.\nThis is space for extra work. Label any such extra work clearly with the question number and part.\nSpás le haghaidh obair bhreise.\nDéan gach píosa oibre a lipéadú go soiléir le huimhir na ceiste agus leis an gcuid den cheist.\nThis is space for extra work. Label any such extra work clearly with the question number and part.\nNá scríobh ar an leathanach seo Do not write on this page Fógra cóipchirt D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit úinéir an chóipchirt ina leith, agus d’fhéadfadh sé gur athchóiríodh iad, chun críche measúnaithe, gan cead na n-údar a fháil roimh ré. Ullmhaíodh an scrúdpháipéar seo de réir Alt 53(5) den Acht um Chóipcheart agus Cearta Gaolmhara, (2000). Ní údaraítear aon úsáid dá éis chun aon chríoch ach amháin chun na críche dá bhfuil sé beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh nó úsáid neamhúdaraithe an scrúdpháipéir seo.\nCopyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.\nThe Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.\nArdleibhéal Higher Level Gearmáinis German Dé hAoine 16 Meitheamh Friday 16 June Maidin 9:30 – 12:00 Morning 9:30 – 12:00",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Note: Answer any five of the six bullet points that follow.",
+                "Where a candidate has answered more than five, mark all and pick the best five for final mark.",
+                "(b) Schauen Sie sich das Foto genau an.",
+                "Content = 25 marks",
+                "Expression = 25 marks",
+                "* Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C, D, E or F",
+                "for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+                "A. (4)",
+                "Beschreiben Sie in vier Sätzen, was Sie auf dem Foto sehen.",
+                "Satz 1: (1)",
+                "Satz 2: (1)",
+                "Satz 3: (1)",
+                "Satz 4: (1)",
+                "B. (4)",
+                "Immer mehr Menschen in Deutschland essen weniger Fleisch. Wie ist das in Irland? (zwei Sätze) (1, 1)",
+                "Vegetarisch oder vegan ‒ können Sie sich vorstellen, kein Fleisch mehr zu essen? Warum/warum nicht?",
+                "Grund 1: (1)",
+                "Grund 2: (1)",
+                "C. (4)",
+                "25% der 18-29 Jahre alten Deutschen bestellen ihr Essen einmal pro Woche bei einem Lieferdienst.",
+                "Bestellen Sie Essen online? Warum/warum nicht? (zwei Sätze). (1, 1)",
+                "Grund 1: (1)",
+                "Grund 2: (1)",
+                "Food Blogs sind aber auch populär. Kochen Sie selbst zu Hause? (zwei Sätze) (1, 1)",
+                "D. (4)",
+                "In Deutschland bekommt jede Arbeiterin/jeder Arbeiter seit Oktober 2022 mindestens 12 Euro pro",
+                "Stunde. Glauben Sie, dieser Mindestlohn ist fair? Erklären Sie Ihre Meinung in zwei Sätzen. (1, 1)",
+                "Erklärung 1: (1)",
+                "Erklärung 2: (1) (or elaboration of Erklärung)",
+                "In welchen Jobs wird Ihrer Meinung nach zu wenig verdient? (1) Und in welchen Jobs zu viel? (1)",
+                "(zwei Sätze)",
+                "E. (4)",
+                "Im letzten Sommer konnte man mit einem 9-Euro-Ticket drei Monate lang mit Bus und Bahn durch",
+                "Deutschland fahren. Wäre das für Irland auch eine attraktive Idee? Warum/warum nicht? (zwei",
+                "Sätze)",
+                "Grund 1: (1)",
+                "Grund 2: (1)",
+                "Nie wieder mit dem Flugzeug zu reisen ‒ halten Sie das für realistisch? (zwei Sätze) (1, 1)",
+                "F. (4)",
+                "In welchem Land dieser Welt möchten Sie am liebsten leben? Begründen Sie Ihre Meinung in zwei",
+                "Sätzen.",
+                "Begründung 1: (1)",
+                "Begründung 2: (1)",
+                "In welchem Land würden Sie nie wohnen wollen? (1)",
+                "Warum? (1)",
+                "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "dis",
+                      "label": "Dis.",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": [
+                            "Dis.: (5 marks: 5 x 1) Have you awarded the five discretionary marks"
+                      ]
+                },
+                {
+                      "id": "expression",
+                      "label": "Expression",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Category 1",
+                                  "marks": [0,1,2,3,4,5,6],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                        "verb forms/tense generally incorrect.",
+                                        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                        "few correct agreements."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 2",
+                                  "marks": [7,8,9,10,11,12,13,14],
+                                  "guidance": [
+                                        "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb forms/tense",
+                                        "frequently incorrect.",
+                                        "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                        "Cases, agreements, incorrect endings."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 3",
+                                  "marks": [15,16,17,18,19],
+                                  "guidance": [
+                                        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                        "Few errors in verb forms/tenses.",
+                                        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                  ]
+                            },
+                            {
+                                  "label": "Category 4",
+                                  "marks": [20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                        "Spelling mistakes rare, grammar generally correct:",
+                                        "Good level of accuracy in cases, verb endings, agreements…"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower E",
+                            "maxMarks": 18,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                            "bands": [
+                                  {
+                                        "label": "Category 1",
+                                        "marks": [0,1,2,3,4],
+                                        "guidance": [
+                                              "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, esp. verb position, very frequently wrong;",
+                                              "verb forms/tense generally incorrect.",
+                                              "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+                                              "few correct agreements."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 2",
+                                        "marks": [5,6,7,8,9,10],
+                                        "guidance": [
+                                              "Vocabulary use limited – at times inadequate and inappropriate – with some interference from English; word order mistakes evident. Verb forms/tense",
+                                              "frequently incorrect.",
+                                              "Frequent spelling mistakes. Occasional serious grammar errors:",
+                                              "Cases, agreements, incorrect endings."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 3",
+                                        "marks": [11,12,13],
+                                        "guidance": [
+                                              "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+                                              "Few errors in verb forms/tenses.",
+                                              "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+                                        ]
+                                  },
+                                  {
+                                        "label": "Category 4",
+                                        "marks": [14,15,16,17,18],
+                                        "guidance": [
+                                              "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+                                              "Spelling mistakes rare, grammar generally correct:",
+                                              "Good level of accuracy in cases, verb endings, agreements…"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [
+                                  "point-1",
+                                  "point-2",
+                                  "point-3",
+                                  "point-4",
+                                  "point-5",
+                                  "dis"
+                            ],
+                            "contentAtMost": 12,
+                            "wordsUnder": 100,
+                            "rule": "If the content mark is 12 or less, or the answer is too short (less than 100 words), mark expression out of 18"
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in German, then place it on the published grid.",
+                "Place the content first: which expression scale applies depends on it.",
+                "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SCHRIFTLICHE PRODUKTION",
+          "title": "Schriftliche Produktion (b) — answer in German",
+          "pages": [
+                19,
+                20
+          ],
+          "attribution": "SEC German 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC011ALPA00BV",
