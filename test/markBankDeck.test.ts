@@ -25,6 +25,7 @@ import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
 import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
+import { japaneseBoundBankAnswers } from '../scripts/markbank/japanese-source-answers.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { reviewedPhysicsSource } from '../scripts/markbank/physicsSources.mjs';
 import { reviewedHomeEconomicsSource } from '../scripts/markbank/homeEconomicsSources.mjs';
@@ -255,6 +256,15 @@ describe('every card traces to the marking scheme on disk', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       const scheme = schemeText(card);
+      // This one approved paper/scheme discrepancy has an exact source-bound
+      // correction. Validate the emitted card against the original review and
+      // literal quantity/option selectors; all other claims stay scheme-bound.
+      let boundAnswers = new Set<string>();
+      if (card.id === 'ja-2010-ol-1-3-iii') {
+        const review = JSON.parse(readFileSync(resolve(__dirname, '../scripts/markbank/authoring/reviews/japanese-2010-ol.json'), 'utf8'));
+        const original = review.cards.find((item: { id: string }) => item.id === card.id);
+        boundAnswers = japaneseBoundBankAnswers({ ...original, ...card }, review);
+      }
       for (const row of card.rows) {
         if (row.unprinted) {
           // An unprinted row claims nothing from the scheme: the scheme prints
@@ -281,7 +291,7 @@ describe('every card traces to the marking scheme on disk', () => {
           // As the build: a menu option pairing a label with its value, read
           // from a scheme table ("thoracic — 12"), traces when each half does.
           const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
-          if (!claimMatches(scheme, claim)
+          if (!claimMatches(scheme, claim) && !boundAnswers.has(claim)
             && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
             bad.push(`${card.questionRef}: "${claim}"`);
           }
