@@ -16698,6 +16698,925 @@
   ]
  },
  {
+  "id": "de-2024-ol-at-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "imagine-that-talking-with-laura-marie",
+  "questionRef": "2024 OL Section AT Q(a)",
+  "questionText": "Imagine that you are talking with Laura-\nMarie. You want to get information about her career. Complete Laura- Marie’s part of the dialogue below based on the information given in TEXT II.\n(Write 25 – 30 words.)",
+  "totalMarks": 15,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(Content = 8, expression = 7)",
+    "Content (C) and Expression (Ex) to be marked consecutively.",
+    "(a) Complete Laura-Marie’s part of the dialogue below based on the information given in TEXT II.",
+    "(Write 25 – 30 words)",
+    "gefahren bist?",
+    "Sie: Viel Glück bei deinem nächsten Rennen, Laura-Marie!",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Hey, Laura-Marie! Wie alt warst du, als du zum ersten Mal Go-Kart",
+      "(A1) Laura-Marie: Ich war zehn Jahre alt. (A1)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Und wie lange fährst du schon große Rennen für Porsche?",
+      "(B1) Laura-Marie: Seit 2022. / Seit zwei Jahren. (B1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Sie: Warum willst du unbedingt Karriere im Motorsport machen?",
+      "(C2) Laura-Marie: Any TWO reasons (C1 + C1)",
+      "Es ist mein Traum. / Ich will mit Männern konkurrieren. / Ich will, dass",
+      "Frauen (im Rennsport) akzeptiert werden. / Es gibt nur Männer in",
+      "meinem Team."
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Sie: Welche Probleme gibt es für Frauen im Rennsport?",
+      "(D2) Laura-Marie: Any TWO problems (D1 + D1)",
+      "Es ist sehr teuer / es ist schwieriger für Frauen, Sponsorship zu",
+      "bekommen. / Es gibt keine Rennanzüge für Frauen."
+     ]
+    },
+    {
+     "id": "e",
+     "label": "E",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Wie viele Rennen fährst du so im Jahr?",
+      "(E1) Laura-Marie: Ich fahre etwa fünf Rennen im Jahr. (E1)"
+     ]
+    },
+    {
+     "id": "f",
+     "label": "F",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Sie: Und wie gehst du mit Rennstress um?",
+      "(F1) Laura-Marie: Any One suggestion: (F1)",
+      "Ich mache Yoga. / Ich mache Urlaub. / Ich fahre nach Österreich. / Ich",
+      "finde meine Ruhe."
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+        "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+        "mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid."
+   ]
+  },
+  "schemePages": [
+   13,
+   14,
+   15
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (a) — answer in German",
+   "pages": [
+    14,
+    15
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2024-ol-at-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "see-advertisement-below-want-apply-job",
+  "questionRef": "2024 OL Section AT Q(b)",
+  "questionText": "You see the advertisement below and want to apply for a job as an event assistant in\nGermany. Apply by email, in German, using a the following points to guide you:\n• Introduce yourself (name/age/where you are from)\n• Mention two special qualities you have (friendly/team worker/flexible/you are a musician/dancer/…)\n• Say what previous experience you have (you worked at festivals/concerts/…)\nMention one.\n• Say what languages you speak (German/…)\n• Say when you can start working (Write 25 – 30 words.)",
+  "totalMarks": 15,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "E-Mail schreiben (25 – 30 words) (15 marks)",
+    "(Content = 8, expression = 7)",
+    "Content (C) and Expression (Ex) to be marked consecutively.",
+    "You see the advertisement below and want to apply for a job as an event assistant in Germany.",
+    "Apply by email, in German, using the following points to guide you:",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "A. (2) Introduce yourself (name/age/where you are from)",
+      "Ich heiße ........... (A1)",
+      "Ich bin .......... und (ich) komme aus / wohne in ……… (A1)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "B. (2) Mention two special qualities you have (friendly/team worker/flexible/",
+      "you are a musician/dancer/…)",
+      "Any TWO qualities. (B1 + B1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "C. (1) Say what previous experience you have",
+      "(you worked at festivals/concerts/…) Mention one.",
+      "Ich habe ……… gearbeitet (C1) Any ONE experience."
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "D. (2) Say what languages you speak (German/…)",
+      "Any TWO languages. (D1 + D1)"
+     ]
+    },
+    {
+     "id": "e",
+     "label": "E",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "E. (1) Say when you can start working.",
+      "Ich kann im/am ……….. anfangen/beginnen. (E1)"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+        "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+        "mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid."
+   ]
+  },
+  "schemePages": [
+   14,
+   15
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (b) — answer in German",
+   "pages": [
+    14,
+    15
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2024-ol-sp-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "SP",
+  "topicId": "german-7-2",
+  "conceptId": "going-start-university-september-letter-friend",
+  "questionRef": "2024 OL Section SP Q(a)",
+  "questionText": "You are going to start university in\nSeptember. Write a letter to your friend Antonia/Anton telling her/him about the problems you face. Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below. Then complete the second part of the letter following the guidelines below.\nWrite 80 – 100 words.\nich organisieren muss von mir gehört Luimneach/Limerick, 10. Juni 2024 Answer any 5 of the following 6 points:\n• Say when your examinations end and what your last subject is\n• Say what you are going to study and where\n• Mention two problems you have (accommodation difficult to find/very expensive/your friends not there…)\n• Say you will have to stay with family members (uncle/aunt/grandparents…)\nand mention one advantage (cheaper/no rent/do not have to cook yourself…)\n• Mention two house rules you will have to observe (no loud music/no late nights/…)\n• Mention two chores you will have to do (go shopping/garden work/dog walking…)\nAnd Write a suitable closing sentence.",
+  "totalMarks": 26,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(a) Letter (Candidates to answer any FIVE points)",
+    "A. (3) Say when your examinations (A1) are over (A1) and what your last subject is (A1)",
+    "B. (3) Say what (B1) you are going to study (B1) and where (B1)",
+    "C. (3) Mention two problems you have (accommodation difficult to find/very",
+    "expensive/your friend not there (C2 + C1)",
+    "D. (3) Say you have to stay (D1) with family members (uncle / aunt / grandparents …) (D1)",
+    "and mention one advantage (D1) (cheaper / no rent / do not have to cook yourself…)",
+    "E. (3) Mention two house rules you have to observe (no loud music / no late nights /…)",
+    "(E2 + E1)",
+    "F. (3) Mention two chores you have to do (go shopping / garden work / dog walking / …)",
+    "(F2 + F1)",
+    "Ex. (10) Use the grid on page 15 to calculate expression mark in relation to C (Content).",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-5",
+     "label": "Fifth point",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": []
+    },
+    {
+     "id": "cl",
+     "label": "Cl",
+     "maxMarks": 1,
+     "permittedMarks": [
+      0,
+      1
+     ],
+     "guidance": [
+      "Cl (1) Write a suitable closing sentence (1)"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+        "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+        "mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower Ex.",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+         "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4,
+         5
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+         "mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         6,
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings and agreements."
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "point-1",
+       "point-2",
+       "point-3",
+       "point-4",
+       "point-5",
+       "cl"
+      ],
+      "contentAtMost": 7,
+      "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced “Lower Ex.” scale (0-7) for expression."
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it.",
+    "You are marked on the points you chose; mark each one you wrote on its own against the points the scheme lists."
+   ]
+  },
+  "schemePages": [
+   15,
+   19,
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (a) — answer in German",
+   "pages": [
+    20,
+    21
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2024-ol-sp-a-fill",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "SP",
+  "topicId": "german-7-2",
+  "conceptId": "firstly-complete-first-paragraph-letter-correctly",
+  "questionRef": "2024 OL Section SP Q(a) — the phrases in the box",
+  "questionText": "Firstly, complete the first paragraph of the letter by correctly inserting the phrases given in the box below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "von mir gehört",
+    "marks": 1,
+    "contextNote": "The scheme prices the phrases on their own line: “St. (4) Completing the first paragraph. Insertion of appropriate sentences. (4 x 1 mark)”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "wie viel Stress",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "in den Prüfungen",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "ich organisieren muss",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this part 4 on its own line, apart from Content and Expression; the paper prints it inside task (a).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (a) — answer in German",
+   "pages": [
+    20,
+    21
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2024-ol-sp-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "SP",
+  "topicId": "german-7-4",
+  "conceptId": "story-german-describes-happens-pictures-below",
+  "questionRef": "2024 OL Section SP Q(b)",
+  "questionText": "Write a story, in German, which describes what happens in the pictures below.\nFirstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page. Then give a short account of the remaining pictures in 80 – 100 words. You may use the present tense.",
+  "totalMarks": 22,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(b) Picture Story: 30 marks (St. = 8, C = 12, Ex. = 10)",
+    "Ex. (10) Use the grid on page 15 to calculate expression mark in relation to C (Content).",
+    "N.B. Take a global view of the language use (Exp = Expression) to locate the candidate’s work in the most appropriate category."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "C",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [
+      "C (12) (pictures 2 – 6) … 12 marks as indicated below.",
+      "Guidelines for marking of content:",
+      "(i) THREE relevant points of information for any TWO pictures.",
+      "TWO relevant points of information for THREE pictures.",
+      "Each relevant point of information = 1 mark",
+      "(ii) Each point of information must contain a verb.",
+      "N.B. Where a candidate has answered in excess of what is required:",
+      "Choose the best i.e. the best 3 sentences on any 2 of the pictures",
+      "AND the best 2 sentences on any 3 of the pictures."
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+        "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+        "mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings and agreements."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower Ex.",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference from English syntax; word order, especially verb",
+         "position, very frequently wrong; verb forms/tense generally incorrect Many spelling mistakes, serious grammar errors; cases generally incorrect; few correct agreements"
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4,
+         5
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps, some German idiom. Only occasional word order",
+         "mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors; cases, agreements, endings correct more often than not, especially at upper end of category."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         6,
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings and agreements."
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "N.B. If the content mark in the Schriftliche Produktion is 7 or less, use the reduced “Lower Ex.” scale (0-7) for expression."
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   15,
+   20,
+   21
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (b) — answer in German",
+   "pages": [
+    22,
+    23
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2024-ol-sp-b-fill",
+  "subjectId": "german",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "SP",
+  "topicId": "german-7-4",
+  "conceptId": "firstly-complete-account-first-picture-correctly",
+  "questionRef": "2024 OL Section SP Q(b) — the phrases in the box",
+  "questionText": "Firstly, complete the account of the first picture by correctly inserting the phrases from the box on the facing page.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Geld für sein Studium",
+    "marks": 2,
+    "contextNote": "The scheme prices the phrases on their own line: “St. (8) Completing the first paragraph. Insertion of appropriate sentences. (4 x 2 marks)”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "für die Pizzeria",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Rucksack und Fahrrad",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "bestellt haben",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this part 8 on its own line, apart from Content and Expression; the paper prints it inside task (b).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (b) — answer in German",
+   "pages": [
+    22,
+    23
+   ],
+   "attribution": "SEC German 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
   "id": "de-2024-ol-l1-1-i",
   "subjectId": "german",
   "level": "ordinary",
