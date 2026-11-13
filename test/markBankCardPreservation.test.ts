@@ -1376,6 +1376,7 @@ const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 23, ordinary: 26 },
   2024: { higher: 22, ordinary: 23 },
+  2023: { higher: 24, ordinary: 0 },
 };
 const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-l[1-4]-/;
 const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (
