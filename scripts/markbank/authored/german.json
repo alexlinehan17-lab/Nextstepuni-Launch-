@@ -1,5 +1,3614 @@
 [
  {
+  "id": "de-2017-hl-t1-1-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "rde-markus-mehring-sein-leben-seinen",
+  "questionRef": "2017 HL Section T1 Q1(a)",
+  "questionText": "Wie würde Markus Mehring sein Leben und seinen Beruf beschreiben? (Zeile 1 – 19 / 25 – 27) Schreiben Sie je drei kurze informative Sätze (Präsens) in Ich‐Form. Mein Leben:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Mein Leben: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Ich bin vier- oder fünfunddreißig Jahre alt.",
+      "Ich wohne / lebe in einer Zweizimmerwohnung.",
+      "Ich habe / die Wohnung hat eine Kochecke/ einen Balkon.",
+      "Ich habe keinen Fernseher.",
+      "Ich lese Abenteuerromane. // Am liebsten lese ich Moby Dick. // Moby Dick habe ich schon viermal gelesen.",
+      "Ich fahre einmal im Jahr (mit dem Zug) für zwei Wochen in eine Ferienpension. // Ich mache einmal im Jahr zwei Wochen Urlaub auf dem Lande.",
+      "Ich habe keine Zeitung abonniert.",
+      "Ich bin Mitglied in einem Buchklub. // Ich bekomme viermal im Jahr den Buchklub-Katalog.",
+      "Ich lebe ein ruhiges Leben."
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Mein Leben”. (Incorrect pronoun = Penalise once; incorrect tense = penalise once)"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Mein Beruf: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Ich arbeite in einem Amt / Amtsgebäude.",
+      "Ich habe einen Schreibtisch.",
+      "Ich sehe Formulare durch / muss Formulare durchsehen.",
+      "Ich suche (darin) nach Fehlern / muss (darin) nach Fehlern suchen.",
+      "Ich schicke/ sende die Formulare an eine andere Abteilung / muss sie ... senden.",
+      "Es gibt schlimmere/ schlechtere Jobs als meinen.",
+      "Ich bin Staatsangestellter // ich bin unkündbar. // Als Staatsbeamter bin ich unkündbar. / Ich kann meinen Job nicht verlieren."
+     ]
+    },
+    "contextNote": "The scheme heads this list “Mein Beruf”."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 6, as 'Mein Leben: 1 + 1 + 1; Mein Beruf: 1 + 1 + 1'; the paper prints it on page 3 of the question booklet. Paper/scheme wording agreement 0.95.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in German",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-1-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "erfahren-wir-ber-markus-mehrings-familie",
+  "questionRef": "2017 HL Section T1 Q1(b)",
+  "questionText": "Was erfahren wir über Markus Mehrings Familie? Nennen Sie Details. (Zeile 20 – 24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Er hat einen Großonkel.",
+      "Der Großonkel ist taub.",
+      "Sein Großonkel war früher Lokomotivführer / ist ein ehemaliger Lokführer.",
+      "Weihnachten feiert er mit ihm / seinem Großonkel.",
+      "Er hat eine Schwester.",
+      "Sie ist verheiratet / hat einen Mann.",
+      "Sie hat / die haben Kinder// Er hat Neffen/ Nichten.",
+      "Er besucht sie einmal im Monat."
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. (Allow Perfect / Imperfect)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 6, as '2 + 2 + 2'; the paper prints it on page 3 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in German",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-1-c",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "elvira-schmidt-zwei",
+  "questionRef": "2017 HL Section T1 Q1(c)",
+  "questionText": "Wer ist Elvira Schmidt? Geben Sie zwei Details. (Zeile 28 – 41)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Sie ist jung / eine junge Frau",
+      "arbeitet bei der Kreditbank/ ist Bankangestellte",
+      "ist verlobt // Ihr Verlobter ist der Chef einer Getränkefabrik"
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. (Allow Perfect / Imperfect)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 2, as '1 + 1'; the paper prints it on page 3 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in German",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-1-d",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "elvira-macht-fehler-macht",
+  "questionRef": "2017 HL Section T1 Q1(d)",
+  "questionText": "Elvira macht einen Fehler. Was macht sie und warum? (Zeile 28 – 41) Was: Warum:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "drückt eine falsche Taste",
+    "marks": 2,
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Was”. (Allow Perfect / Imperfect) (Allow Perfect / Imperfect)"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Warum: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Streit (mit ihrem Verlobten.)",
+      "Sie ist traurig// hat traurige Gedanken",
+      "ist halbblind von Tränen/ hat Tränen in den Augen/ weint"
+     ]
+    },
+    "contextNote": "The scheme heads this list “Warum”."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 6, as 'Was: 2; Warum: 2 + 2'; the paper prints it on page 3 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in German",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-2-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "does-weather-change-after-markus-comes",
+  "questionRef": "2017 HL Section T1 Q2(a)",
+  "questionText": "How does the weather change after Markus comes home from work? Give details. (lines 42 – 54)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "starts to rain // first drops of rain are falling",
+      "there is thunder / lightning",
+      "storm(y)",
+      "wind(y)"
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 4, as '2 + 2'; the paper prints it on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in English or Irish",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-2-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "markus-receives-bank-statement-post-describe",
+  "questionRef": "2017 HL Section T1 Q2(b)",
+  "questionText": "Markus receives a bank statement in the post. Describe his reaction and his thoughts. (lines 55 – 72)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "opens the envelope",
+      "is not really surprised",
+      "(he thinks) even banks can make mistakes",
+      "is confused",
+      "can’t breathe",
+      "feels hot",
+      "world around him starts to sway",
+      "stares at the statement / paper",
+      "sees all the zeros // sees the figure/ amount growing // sees all the money",
+      "(he thinks) it can’t be his money // it must be a mistake / a misprint / typo",
+      "plans to attempt to take money/ close account",
+      "just as a joke (nothing risky)",
+      "thinks they/ the bank might notice it or might not."
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 10, as '2 + 2 + 2 + 2 + 2'; the paper prints it on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in English or Irish",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-3-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "action-does-markus-eventually-take",
+  "questionRef": "2017 HL Section T1 Q3(a)",
+  "questionText": "What action does Markus eventually take? Give details. (lines 73 – 90)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "goes to the bank building // enters the bank.",
+      "goes to the counter/ cashier/ teller.",
+      "says he wishes to close his account.",
+      "Requests/ withdraws (the) cash. (money = 1 mark)"
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 6, as '2 + 2 + 2'; the paper prints it on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in English or Irish",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-3-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "does-markus-after-leaving-bank-101",
+  "questionRef": "2017 HL Section T1 Q3(b)",
+  "questionText": "What does Markus do after leaving the bank? Give details. (lines 91 – 101)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "wonders where to go",
+      "stares at the taxi/ Mercedes",
+      "reaches for door of/ gets into taxi",
+      "thinks about/ decides against going home",
+      "considers they might be looking for him there",
+      "decides to go to the airport / tells the driver to go to the airport."
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 8, as '2 + 2 + 2 + 2'; the paper prints it on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in English or Irish",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t1-4",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T1",
+  "topicId": "german-6-1",
+  "conceptId": "this-text-markus-changes-from-being",
+  "questionRef": "2017 HL Section T1 Q4",
+  "questionText": "Read TEXT I again. In this text Markus changes from being predictable to becoming spontaneous. Give four examples illustrating this change. (Can be language use and/or content.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Looks for mistakes every day. Now overlooks a mistake.// Used to pass on mistakes to others. Now he himself exploits a mistake.",
+      "Normally goes home every day. Now decides not to/ decides to go to the airport.",
+      "Went on same holiday every year. Now his destination is unknown/ open.",
+      "Life used to be calm. Now he is confused// doesn’t know in which direction to go.",
+      "NB: His world used to be very regular, routine, slow. Now he acts quickly/impulsively (giving an example awarding each example separately)",
+      "Never won money in Lotto. Now he gets money without having bought a ticket.",
+      "Never took risks. Now decides to risk getting the money.",
+      "Used to head straight to work. Now he goes to the bank.// Now he doesn’t.",
+      "Used to show no emotion. Now he can’t breathe/ feels hot/ his heart pounds.",
+      "Before he left decisions to others. Now he makes decisions.",
+      "Before he read about adventures. Now he sets out on an adventure. (Language: Candidates must indicate that they are making a point re language use!)",
+      "But then... (Aber dann…) signifies a change (l. 28)",
+      "The world swayed wildly. (Die Welt schwankte hektisch) (ll. 60-61)",
+      "Change from Indicative to use of Subjunctive (könnte (l. 68); wäre (l. 69) suggests new possibilities).",
+      "Repetition of “Geld”: …das Geld. Geld! Geld auf… (l. 65)",
+      "Contrast of “vielleicht” and “vielleicht auch nicht” (Aber vielleicht, vielleicht – ja vielleicht auch nicht) (ll. 71-72)"
+     ]
+    },
+    "openList": true,
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme lists 2 further accepted answer(s) for this ask, in the order it prints them; a valid answer of your own counts. (NB: Answers must have element of contrast)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT I down to it and prices it 12, as '3 + 3 + 3 + 3'; the paper prints it on page 5 of the question booklet. Paper/scheme wording agreement 0.70.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT I: LESEVERSTÄNDNIS",
+   "title": "TEXT I — answer in English or Irish",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-1-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "artikel-findet-man-allgemeine-informationen-ber",
+  "questionRef": "2017 HL Section T2 Q1(a)",
+  "questionText": "Im Artikel findet man allgemeine Informationen über Straßenkinder in Deutschland und speziell in Hamburg. Geben Sie Details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "29.000 (Straßenkinder/ obdachlose Kinder und Jugendliche/ unter 18.)",
+      "In Hamburg gibt es ein Zentrum/ ein Projekt namens KIDS/ eine Anlaufstelle für sie.",
+      "Hamburger Straßenkinder sind eine bunte/ punkige/ gemischte Gruppe.",
+      "mit Dreadlocks/ Piercings/ gefärbten Haaren. (Any two: 1,1)",
+      "tief sitzende Hosen/ Baseballmützen / Hotpants/ Pferdeschwanz. (Any two:1,1)"
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 8, as '2 + 2 + 2 + 2'; the paper prints it on page 9 of the question booklet. Paper/scheme wording agreement 0.93.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in German",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-1-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "mit-welchem-problem-sieht-sich-projekt",
+  "questionRef": "2017 HL Section T2 Q1(b)",
+  "questionText": "Mit welchem Problem sieht sich das Projekt KIDS konfrontiert?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "KIDS / die Anlaufstelle wird obdachlos./ KIDS muss aus dem Haus./ Die Anlaufstelle könnte schließen// kein Platz mehr für KIDS.",
+      "Das Haus wurde verkauft.",
+      "Das Haus/ Gebäude/ Dach/ die Fassade soll modernisiert/ umgebaut werden/ wird modernisiert/ umgebaut.",
+      "Umbau dauert zwei Jahre./ Haus zwei Jahre lang geschlossen."
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. (Incorrect tense = penalise once)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 4, as '2 + 2'; the paper prints it on page 9 of the question booklet. Paper/scheme wording agreement 0.90.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in German",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-1-c",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "protest-stra-enkinder-ihres-leiters",
+  "questionRef": "2017 HL Section T2 Q1(c)",
+  "questionText": "Beschreiben Sie den Protest der Straßenkinder und ihres Leiters.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Sie protestieren zusammen.",
+      "Sie protestieren auf der Straße.",
+      "Sie haben Sofas/ Tische/ Möbel/ Einrichtung auf die Straße gebracht.",
+      "Sie zeigen, wie es ist, wenn das Projekt obdachlos wird."
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. (Allow Perfect/ Imperfect)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 4, as '2 + 2'; the paper prints it on page 9 of the question booklet. Paper/scheme wording agreement 0.90.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in German",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-2-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "describe-impact-kids-has-had-anna",
+  "questionRef": "2017 HL Section T2 Q2(a)",
+  "questionText": "Describe the impact KIDS has had on Anna’s life. Give details. (lines 53 – 75)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Used it for two years",
+      "very important role for her",
+      "got all the essential things/ necessities of life there",
+      "got food",
+      "could take a shower",
+      "got emotional help// could always talk to someone",
+      "convinced/ got her to go to youth (welfare) office",
+      "got off the street/ no longer homeless// got a place in an apartment."
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. (Incorrect Tense: Penalise once)"
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 8, as '2 + 2 + 2 + 2'; the paper prints it on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-2-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "detailed-description-team-kids-explain-help",
+  "questionRef": "2017 HL Section T2 Q2(b)",
+  "questionText": "Give a detailed description of the team at KIDS and explain what they do to help the street children. (lines 87 – 121)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Team: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "twelve people/social workers",
+      "women and men",
+      "all qualified",
+      "a nurse"
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Team”."
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "What: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "(together) they help them get off the street",
+      "listen to worries/ problems",
+      "(try to) build up trust",
+      "show patience",
+      "give their time",
+      "help the street children to talk to adults again",
+      "help them to get/ gain a perspective again",
+      "go with them to the youth (welfare) office",
+      "help them get therapy",
+      "help them get a place to sleep/ accommodation",
+      "give advice in conflict situations",
+      "want to meet the street children where they live"
+     ]
+    },
+    "contextNote": "The scheme heads this list “What”."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 12, as 'Team: 2 + 2; What: 2 + 2 + 2 + 2'; the paper prints it on page 10 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-3-a-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "can-kids-not-relocated-122-139",
+  "questionRef": "2017 HL Section T2 Q3(a)(i)",
+  "questionText": "Why can KIDS not be relocated? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "cannot find a (suitable) premises",
+      "shops, restaurants and theatres (Any two)/ all buildings near station/ nearby belong to investors",
+      "nobody wants to make space for the (homeless) children / KIDS"
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 4, as '2 + 2'; the paper prints it on page 10 of the question booklet. Paper/scheme wording agreement 0.86.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-3-a-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "who-has-supported-kids-122-139",
+  "questionRef": "2017 HL Section T2 Q3(a)(ii)",
+  "questionText": "Who has supported KIDS and how? (lines 122 – 139)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "6 000 people (1) from Hamburg (1)",
+    "marks": 2,
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “Who”.",
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "6 000 people",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "from Hamburg",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "How: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(signed/ by means of) a petition",
+      "requesting/ calling on the (Lord) Mayor (1) and a senator (1)",
+      "to let KIDS/ project stay at station."
+     ]
+    },
+    "contextNote": "The scheme heads this list “How”."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 6, as 'Who: 2; How: 2 + 2'; the paper prints it on page 10 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-3-b",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "provisional-solution-has-been-offered-140",
+  "questionRef": "2017 HL Section T2 Q3(b)",
+  "questionText": "What provisional solution has been offered? Give details. (lines 140 – 148)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "KIDS can stay at station.",
+      "four containers to be provided.",
+      "in a car park// near tracks/ platforms."
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 4, as '2 + 2'; the paper prints it on page 10 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-t2-4",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "welche-satzh-lften-passen-zusammen",
+  "questionRef": "2017 HL Section T2 Q4",
+  "questionText": "Was passt zusammen?\nUnten sehen Sie zwei Reihen von Satzhälften, die zusammen Sätze bilden, die auf dem Inhalt von Text II\nbasieren. Welche Satzhälften passen zusammen? Tragen Sie die passenden Buchstaben zu den Zahlen\nim Kasten ganz unten ein. Jeder Buchstabe passt nur einmal!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "2 — E",
+      "3 — B",
+      "4 — F",
+      "5 — D",
+      "6 — A"
+     ]
+    },
+    "contextNote": "This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 10, as '2 + 2 + 2 + 2 + 2'; the paper prints it on page 11 of the question booklet. The scheme reprints no wording for this ask — it prints only the answer key — so paper and scheme are paired on the printed address they both state, and the table the question works on is on the examination pages carried with this card.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in German",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
+  "id": "de-2017-hl-ag-1",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "AG",
+  "topicId": "german-3-4",
+  "conceptId": "sehen-unten-tze-denen-bestimmte-artikel",
+  "questionRef": "2017 HL Section AG Q1",
+  "questionText": "Sie sehen unten Sätze, in denen bestimmte Artikel unterstrichen sind. Sehen Sie sich das Beispiel an. Geben Sie nun für die anderen fünf bestimmten Artikel jeweils an: ob Singular oder Plural bei Singular das Geschlecht (feminin, maskulin, neutrum) den Fall (Nominativ, Akkusativ, Dativ, Genitiv) Markus musste das Formular an eine andere Abteilung weitersenden. das: Singular, neutrum, Akkusativ (1) Als Mitglied des Buchklubs bekam er viermal im Jahr einen Katalog. (2) Elvira tippte Reihen von Zahlen in den Computer. (3) Als Markus von der Arbeit kam, fing es an zu regnen. (4) Der Regen trommelte gegen die Scheiben. (5) Markus legte die Hände auf den kalten Marmor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "(1) des: Singular (1), maskulin (1), Genitiv (1)",
+      "(2) den: Singular (1), maskulin (1), Akkusativ (1)",
+      "(3) der: Singular (1), feminin (1), Dativ (1)",
+      "(4) der: Singular (1), maskulin (1), Nominativ (1)",
+      "(5) die: Plural (2), Akkusativ (1)"
+     ]
+    },
+    "contextNote": "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANGEWANDTE GRAMMATIK",
+   "title": "Angewandte Grammatik — the printed exercise",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  },
+  "notes": "The paper sets questions 1 and 2 here and a candidate answers both; the scheme prices question 1 15, as '(15 marks: 5 x 3)'.",
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-text",
+    "label": "TEXT I: LESEVERSTÄNDNIS",
+    "title": "TEXT I — the passage this exercise is drawn from",
+    "pages": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+    "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+   }
+  ]
+ },
+ {
+  "id": "de-2017-hl-ag-2",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "AG",
+  "topicId": "german-3-4",
+  "conceptId": "folgenden-unterstrichenen-verben-sens-beispiel-markus",
+  "questionRef": "2017 HL Section AG Q2",
+  "questionText": "Schreiben Sie die folgenden unterstrichenen Verben im Präsens wie im Beispiel. Markus Mehring ist vier‐ oder fünfunddreißig Jahre alt. (1) Am liebsten las er Abenteuerromane. Am liebsten er Abenteuerromane. (2) Er arbeitete in einem Amtsgebäude an einem Schreibtisch. Er in einem Amtsgebäude an einem Schreibtisch. (3) Es gab aber schlimmere Jobs als seinen. Es aber schlimmere Jobs als seinen. (4) Einmal im Jahr fuhr er in eine Ferienpension. Einmal im Jahr er in eine Ferienpension. (5) Im Lotto gewann er nie. Im Lotto er nie.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "(1) ... liest (2)",
+      "(2) ... arbeitet (2)",
+      "(3) ... gibt (2)",
+      "(4) ... fährt (2)",
+      "(5) ... gewinnt (2)"
+     ]
+    },
+    "contextNote": "Every gap is answered; the scheme prints the mark it pays on each. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANGEWANDTE GRAMMATIK",
+   "title": "Angewandte Grammatik — the printed exercise",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Work from the sentences exactly as the examination printed them. This question is printed in German and must be answered in German; the marking scheme halves the marks for an answer given in the language not specified."
+  },
+  "notes": "The paper sets questions 1 and 2 here and a candidate answers both; the scheme prices question 2 10, as '(10 marks: 5 x 2)'.",
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-text",
+    "label": "TEXT I: LESEVERSTÄNDNIS",
+    "title": "TEXT I — the passage this exercise is drawn from",
+    "pages": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+    "presentationNote": "The exercise cites this passage by section, so it is carried beside it."
+   }
+  ]
+ },
+ {
+  "id": "de-2017-hl-at-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "protest-sehen-sich-foto-rechts-foto",
+  "questionRef": "2017 HL Section AT Q(a)",
+  "questionText": "Protest!\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto rechts in drei bis vier Sätzen.\n• In Ihrem Wohnort soll das Jugendzentrum geschlossen werden. Was machen Sie (drei Sätze)? Und warum machen Sie das?\n• Straßenkinder gibt es in vielen Großstädten. Geben Sie zwei mögliche Gründe dafür an. Beschreiben Sie bitte die Situation in Irland in zwei Sätzen.\n(100 Wörter)",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+    "Expression = 12",
+    "Award content marks first.",
+    "Two discretionary marks (1, 1) are available to be awarded under any of the points A – C for additional relevant content, elaboration or comment.",
+    "Indicate discretionary marks with +1 in margin i.e. A = 3+1",
+    "Show as A +1 in body of script at relevant spot.",
+    "Bracket A +1 the first additional discretionary mark only.",
+    "Put irrelevant content in square brackets [ ... ]; exclude when judging the expression mark.",
+    "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": [
+      "Beschreiben Sie das Foto rechts in drei bis vier Sätzen.",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark",
+      "Satz 3: 1 mark"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "In Ihrem Wohnort soll das Jugendzentrum geschlossen werden. Was machen Sie (drei Sätze)?",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark",
+      "Satz 3: 1 mark",
+      "Und warum machen Sie das?",
+      "Satz 4: 1 mark"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "Straßenkinder gibt es in vielen Großstädten. Geben Sie zwei mögliche Gründe dafür an.",
+      "Grund 1: 1 mark",
+      "Grund 2: 1 mark",
+      "Beschreiben Sie bitte die Situation in Irland in zwei Sätzen.",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark"
+     ]
+    },
+    {
+     "id": "dis",
+     "label": "Dis.",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Dis. 2 marks"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference",
+        "from English syntax; word order, esp. verb position, very frequently wrong;",
+        "verb forms/tense generally incorrect.",
+        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+        "few correct agreements."
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Vocabulary use limited – at times inadequate and inappropriate – with some",
+        "interference from English; word order mistakes evident. Verb forms/tense occasionally incorrect.",
+        "Frequent spelling mistakes. Occasional serious grammar errors:",
+        "Cases, agreements, incorrect endings."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        7,
+        8,
+        9
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate,with perhaps some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+       ]
+      },
+      {
+       "label": "Category 4",
+       "marks": [
+        10,
+        11,
+        12
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+        "mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings, agreements…"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower E",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference",
+         "from English syntax; word order, esp. verb position, very frequently wrong;",
+         "verb forms/tense generally incorrect.",
+         "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+         "few correct agreements."
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4
+        ],
+        "guidance": [
+         "Vocabulary use limited – at times inadequate and inappropriate – with some",
+         "interference from English; word order mistakes evident. Verb forms/tense occasionally incorrect.",
+         "Frequent spelling mistakes. Occasional serious grammar errors:",
+         "Cases, agreements, incorrect endings."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         5,
+         6
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate,with perhaps some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+        ]
+       },
+       {
+        "label": "Category 4",
+        "marks": [
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+         "mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings, agreements…"
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "a",
+       "b",
+       "c",
+       "dis"
+      ],
+      "contentAtMost": 8,
+      "wordsUnder": 60,
+      "rule": "If the content mark is 6 or less, or the question is too short (less than 60 words), mark expression out of 7"
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   19,
+   21
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (a) — answer in German",
+   "pages": [
+    12,
+    13
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2017-hl-at-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "AT",
+  "topicId": "german-7-0",
+  "conceptId": "gehabt-sehen-sich-foto-rechts-foto",
+  "questionRef": "2017 HL Section AT Q(b)",
+  "questionText": "Glück gehabt!\nSehen Sie sich das Foto rechts an.\n• Beschreiben Sie das Foto in drei bis vier Sätzen.\n• Was würden Sie machen, wenn Sie plötzlich viel Geld hätten?\nBeschreiben Sie Ihre Ideen in vier Sätzen.\n• Täglich gibt es Millionen neuer Fotos im Internet zu sehen.\nNennen Sie zwei Gründe, warum Menschen so gern fotografieren. Was halten Sie von Selfies? Geben Sie Ihre Meinung in zwei Sätzen.\n(100 Wörter)",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Content = 13 (A = 3; B = 4; C = 4; Dis. 2)",
+    "Expression = 12",
+    "Award content marks first.",
+    "Two discretionary marks (1, 1) are available to be awarded under any of the points A – C for additional relevant content, elaboration or comment.",
+    "Indicate discretionary marks with +1 in margin i.e. A = 3+1",
+    "Show as A +1 in body of script at relevant spot.",
+    "Bracket A+1 the first additional discretionary mark only.",
+    "Put irrelevant content in square brackets [ ... ]; exclude when judging the expression mark.",
+    "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "guidance": [
+      "Beschreiben Sie das Foto in drei bis vier Sätzen.",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark",
+      "Satz 3: 1 mark"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "Was würden Sie machen, wenn Sie plötzlich viel Geld hätten? Beschreiben Sie Ihre Ideen in vier",
+      "Sätzen.",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark",
+      "Satz 3: 1 mark",
+      "Satz 4: 1 mark",
+      "(Minimum of two ideas (1,1) followed by explanation/ suitable elaboration (1,1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "Täglich gibt es Millionen neuer Fotos im Internet zu sehen.",
+      "Nennen Sie zwei Gründe, warum Menschen so gern fotografieren.",
+      "Grund 1: 1 mark",
+      "Grund 2: 1 mark",
+      "Was halten Sie von Selfies? Geben Sie Ihre Meinung in zwei Sätzen.",
+      "Satz 1: 1 mark",
+      "Satz 2: 1 mark"
+     ]
+    },
+    {
+     "id": "dis",
+     "label": "Dis.",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Dis. 2 marks"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 12,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference",
+        "from English syntax; word order, esp. verb position, very frequently wrong;",
+        "verb forms/tense generally incorrect.",
+        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+        "few correct agreements."
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Vocabulary use limited – at times inadequate and inappropriate – with some",
+        "interference from English; word order mistakes evident. Verb forms/tense occasionally incorrect.",
+        "Frequent spelling mistakes. Occasional serious grammar errors:",
+        "Cases, agreements, incorrect endings."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        7,
+        8,
+        9
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate,with perhaps some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+       ]
+      },
+      {
+       "label": "Category 4",
+       "marks": [
+        10,
+        11,
+        12
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+        "mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings, agreements…"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower E",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference",
+         "from English syntax; word order, esp. verb position, very frequently wrong;",
+         "verb forms/tense generally incorrect.",
+         "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+         "few correct agreements."
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         3,
+         4
+        ],
+        "guidance": [
+         "Vocabulary use limited – at times inadequate and inappropriate – with some",
+         "interference from English; word order mistakes evident. Verb forms/tense occasionally incorrect.",
+         "Frequent spelling mistakes. Occasional serious grammar errors:",
+         "Cases, agreements, incorrect endings."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         5,
+         6
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate,with perhaps some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+        ]
+       },
+       {
+        "label": "Category 4",
+        "marks": [
+         7
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+         "mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings, agreements…"
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "a",
+       "b",
+       "c",
+       "dis"
+      ],
+      "contentAtMost": 8,
+      "wordsUnder": 60,
+      "rule": "If the content mark is 6 or less, or the question is too short (less than 60 words), mark expression out of 7"
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   20,
+   21
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ÄUSSERUNG ZUM THEMA",
+   "title": "Äußerung zum Thema (b) — answer in German",
+   "pages": [
+    12,
+    13
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2017-hl-sp-a",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "SP",
+  "topicId": "german-7-2",
+  "conceptId": "swiss-pen-friend-martin-has-written",
+  "questionRef": "2017 HL Section SP Q(a)",
+  "questionText": "Your Swiss pen friend, Martin(a), has written to you. Reply in German to the letter, giving detailed answers to the four topic areas he/she has asked about, expressing your personal opinion.\n(Write approximately 160 words.)",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(a) Letter",
+    "Your Swiss pen friend, Martin(a), has written to you. Reply in German to the letter, giving",
+    "detailed answers to the four topic areas he/she has asked about, expressing your personal",
+    "opinion. (Write approximately 160 words.)",
+    "Content = 25 marks Expression = 25 marks",
+    "Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C or D",
+    "for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+    "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+   ],
+   "criteria": [
+    {
+     "id": "op",
+     "label": "Op.",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Op. (2)",
+      "Suitable opening:",
+      "Bare minimum (1 mark)",
+      "Appropriate elaboration OR reference to contents of letter. (1 mark)"
+     ]
+    },
+    {
+     "id": "a",
+     "label": "A.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "A. (4)",
+      "...Welchen Film hast du auf Deutsch gesehen? (1)",
+      "Wie können Filme im Unterricht helfen? (1)",
+      "Wir haben an unserer Schule einen Film-Klub und eine Theatergruppe.",
+      "Welche Extra-Angebote und Aktivitäten gibt es an deiner Schule? (1, 1) (One mark may be",
+      "awarded for elaboration)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "B. (4)",
+      "... Tanzunterricht – so richtig mit Tango, Cha Cha Cha und Walzer.",
+      "Total doof oder cool – was denkst du? (1)",
+      "Hättest du Spaß an solch einem Tanzkurs? Warum – warum nicht? (1,1)",
+      "Ist Tanzen bei euch in Irland populär? (1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "C. (4)",
+      "... Alle haben freiwillig ihre Smartphones zu Hause gelassen! Was meinst du, wird das ohne",
+      "Handys gut gehen oder wird es Probleme geben? (1)",
+      "Erklär mir, warum du so denkst. (1) (must be linked to previous question)",
+      "Welche anderen Ideen für eine „Challenge Week“ hättest du? (1)",
+      "Und was wäre für dich besonders schwierig dabei? (1)"
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "D. (4)",
+      "... Für viele meiner Freunde ist der perfekte Plan: Erst Abi, dann sofort studieren, dann",
+      "arbeiten. Was ist deine Meinung dazu? (1) Nenn mir die Gründe warum. (1)",
+      "Was sind deine konkreten Pläne für den September nach dem Abi? (1,1)"
+     ]
+    },
+    {
+     "id": "cl",
+     "label": "Cl.",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0,
+      1,
+      2
+     ],
+     "guidance": [
+      "Cl. (2)",
+      "Suitable transition to ending/reference to letter (1)",
+      "Appropriate closing formula (1)"
+     ]
+    },
+    {
+     "id": "dis",
+     "label": "Dis.",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": [
+      "Dis.: (5 marks: 5 x 1) Have you awarded the five discretionary marks?"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference",
+        "from English syntax; word order, esp. verb position, very frequently wrong;",
+        "verb forms/tense generally incorrect.",
+        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+        "few correct agreements."
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+       ],
+       "guidance": [
+        "Vocabulary use limited – at times inadequate and inappropriate – with some",
+        "interference from English; word order mistakes evident. Verb forms/tense frequently incorrect.",
+        "Frequent spelling mistakes. Occasional serious grammar errors:",
+        "Cases, agreements, incorrect endings."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        15,
+        16,
+        17,
+        18,
+        19
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+       ]
+      },
+      {
+       "label": "Category 4",
+       "marks": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+        "mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings, agreements…"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower E",
+      "maxMarks": 18,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference",
+         "from English syntax; word order, esp. verb position, very frequently wrong;",
+         "verb forms/tense generally incorrect.",
+         "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+         "few correct agreements."
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "guidance": [
+         "Vocabulary use limited – at times inadequate and inappropriate – with some",
+         "interference from English; word order mistakes evident. Verb forms/tense frequently incorrect.",
+         "Frequent spelling mistakes. Occasional serious grammar errors:",
+         "Cases, agreements, incorrect endings."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         11,
+         12,
+         13
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+        ]
+       },
+       {
+        "label": "Category 4",
+        "marks": [
+         14,
+         15,
+         16,
+         17,
+         18
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+         "mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings, agreements…"
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "op",
+       "a",
+       "b",
+       "c",
+       "d",
+       "cl",
+       "dis"
+      ],
+      "contentAtMost": 12,
+      "wordsUnder": 100,
+      "rule": "If the content mark is 12 or less, or the answer is too short (less than 100 words), mark expression out of 18"
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   22,
+   23,
+   24
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (a) — answer in German",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2017-hl-sp-b",
+  "kind": "rubric",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "SP",
+  "topicId": "german-7-1",
+  "conceptId": "schauen-sich-foto-genau-vier-tzen",
+  "questionRef": "2017 HL Section SP Q(b)",
+  "questionText": "Schauen Sie sich das Foto genau an.\n• Beschreiben Sie in vier Sätzen, was Sie auf dem Bild sehen.\n• Ein Interrail‐Ticket für junge Europäer – diese Idee wird im EU‐Parlament diskutiert.\nZum 18. Geburtstag soll jeder Europäer einen Free Interrail‐Gutschein bekommen. Was halten Sie von dieser Idee? Begründen Sie Ihre Meinung. In welches europäische Land würden Sie gerne fahren und warum?\n• Im letzten Jahr haben in Deutschland 12% weniger Jugendliche den Führerschein gemacht als im Jahr davor. Warum, glauben Sie, ist das so? Nennen Sie zwei mögliche Gründe. Wie sieht die Situation in Irland aus? Schreiben Sie zwei Sätze.\n• Wo Freunde sind, ist Zuhause. Erklären Sie in zwei Sätzen Ihre Meinung zu diesem Satz. Welchen Effekt haben soziale Netzwerke auf Freundschaft? Und wie verbringen Sie Zeit mit Ihren Freunden?\n• Seit Januar 2016 wird Netflix in Deutschland angeboten, aber nur wenige benutzen die Plattform.\nWie populär sind Plattformen wie Netflix in Ihrer Altersgruppe? Beantworten Sie die Frage in zwei Sätzen. Spielen Kino und Fernsehen heute noch eine Rolle? Nennen Sie zwei Gründe, warum oder warum nicht.\n(Scríobh tuairim is 160 focal.)\n(Write approximately 160 words.)",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "(b) Schauen Sie sich das Foto genau an.",
+    "Content = 25 marks Expression = 25 marks",
+    "* Five discretionary marks (1+1+1+1+1) are available to be awarded under any of A, B, C,",
+    "D or E for additional relevant elaboration or comment. Follow rules as per Äußerung.",
+    "N.B. Take a global view of the language use (E = Expression) to locate the candidate’s work in the most appropriate category, including over-reliance on stimuli."
+   ],
+   "criteria": [
+    {
+     "id": "a",
+     "label": "A.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "A. (4)",
+      "Beschreiben Sie in vier Sätzen, was Sie auf dem Bild sehen.",
+      "Satz 1: (1)",
+      "Satz 2: (1)",
+      "Satz 3: (1)",
+      "Satz 4: (1)"
+     ]
+    },
+    {
+     "id": "b",
+     "label": "B.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "B. (4)",
+      "Ein Interrail-Ticket für junge Europäer – diese Idee wird im EU-Parlament diskutiert.",
+      "Zum 18. Geburtstag soll jeder Europäer einen Free Interrail-Gutschein bekommen.",
+      "Was halten Sie von dieser Idee? (1) Begründen Sie Ihre Meinung. (1)",
+      "In welches europäische Land würden Sie gerne fahren (1) und warum? (1)"
+     ]
+    },
+    {
+     "id": "c",
+     "label": "C.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "C. (4)",
+      "Im letzten Jahr haben in Deutschland 12% weniger Jugendliche den Führerschein gemacht als",
+      "im Jahr davor. Warum, glauben Sie, ist das so? Nennen Sie zwei mögliche Gründe. (1, 1)",
+      "Wie sieht die Situation in Irland aus? Schreiben Sie zwei Sätze. (1, 1)"
+     ]
+    },
+    {
+     "id": "d",
+     "label": "D.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "D. (4)",
+      "Wo Freunde sind, ist Zuhause. Erklären Sie in zwei Sätzen Ihre Meinung zu diesem Satz. (1, 1)",
+      "Welchen Effekt haben soziale Netzwerke auf Freundschaft? (1)",
+      "Und wie verbringen Sie Zeit mit Ihren Freunden? (1)"
+     ]
+    },
+    {
+     "id": "e",
+     "label": "E.",
+     "maxMarks": 4,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "guidance": [
+      "E. (4)",
+      "Seit Januar 2016 wird Netflix in Deutschland angeboten, aber nur wenige benutzen die Plattform.",
+      "Wie populär sind Plattformen wie Netflix in Ihrer Altersgruppe? Beantworten Sie die Frage",
+      "in zwei Sätzen. (1, 1)",
+      "Spielen Kino und Fernsehen heute noch eine Rolle? Nennen Sie zwei Gründe, warum oder",
+      "warum nicht. (1, 1)"
+     ]
+    },
+    {
+     "id": "dis",
+     "label": "Dis.",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": [
+      "Dis.: (5 marks: 5 x 1) Have you awarded the five discretionary marks?"
+     ]
+    },
+    {
+     "id": "expression",
+     "label": "Expression",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Category 1",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Vocabulary very inadequate, possibly with English words and interference",
+        "from English syntax; word order, esp. verb position, very frequently wrong;",
+        "verb forms/tense generally incorrect.",
+        "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+        "few correct agreements."
+       ]
+      },
+      {
+       "label": "Category 2",
+       "marks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+       ],
+       "guidance": [
+        "Vocabulary use limited – at times inadequate and inappropriate – with some",
+        "interference from English; word order mistakes evident. Verb forms/tense frequently incorrect.",
+        "Frequent spelling mistakes. Occasional serious grammar errors:",
+        "Cases, agreements, incorrect endings."
+       ]
+      },
+      {
+       "label": "Category 3",
+       "marks": [
+        15,
+        16,
+        17,
+        18,
+        19
+       ],
+       "guidance": [
+        "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+        "Few errors in verb forms/tenses.",
+        "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+       ]
+      },
+      {
+       "label": "Category 4",
+       "marks": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+        "mistakes. Good verb forms/tense formation.",
+        "Spelling mistakes rare, grammar generally correct:",
+        "Good level of accuracy in cases, verb endings, agreements…"
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower E",
+      "maxMarks": 18,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18
+      ],
+      "bands": [
+       {
+        "label": "Category 1",
+        "marks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "guidance": [
+         "Vocabulary very inadequate, possibly with English words and interference",
+         "from English syntax; word order, esp. verb position, very frequently wrong;",
+         "verb forms/tense generally incorrect.",
+         "Many spelling mistakes, serious grammar errors: cases generally incorrect;",
+         "few correct agreements."
+        ]
+       },
+       {
+        "label": "Category 2",
+        "marks": [
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "guidance": [
+         "Vocabulary use limited – at times inadequate and inappropriate – with some",
+         "interference from English; word order mistakes evident. Verb forms/tense frequently incorrect.",
+         "Frequent spelling mistakes. Occasional serious grammar errors:",
+         "Cases, agreements, incorrect endings."
+        ]
+       },
+       {
+        "label": "Category 3",
+        "marks": [
+         11,
+         12,
+         13
+        ],
+        "guidance": [
+         "Vocabulary use quite good – generally adequate and appropriate, with perhaps some German idiom. Only occasional word order mistakes.",
+         "Few errors in verb forms/tenses.",
+         "Not too many spelling mistakes. Few serious/frequent minor grammar errors: Cases, agreements, endings correct more often than not."
+        ]
+       },
+       {
+        "label": "Category 4",
+        "marks": [
+         14,
+         15,
+         16,
+         17,
+         18
+        ],
+        "guidance": [
+         "Vocabulary use good – rich, idiomatic and appropriate. Few word order",
+         "mistakes. Good verb forms/tense formation.",
+         "Spelling mistakes rare, grammar generally correct:",
+         "Good level of accuracy in cases, verb endings, agreements…"
+        ]
+       }
+      ],
+      "contentCriteria": [
+       "a",
+       "b",
+       "c",
+       "d",
+       "e",
+       "dis"
+      ],
+      "contentAtMost": 12,
+      "wordsUnder": 100,
+      "rule": "If the content mark is 12 or less, or the answer is too short (less than 100 words), mark expression out of 18"
+     }
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in German, then place it on the published grid.",
+    "Place the content first: which expression scale applies depends on it."
+   ]
+  },
+  "schemePages": [
+   23,
+   24
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SCHRIFTLICHE PRODUKTION",
+   "title": "Schriftliche Produktion (b) — answer in German",
+   "pages": [
+    15,
+    16
+   ],
+   "attribution": "SEC German 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-1",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "herr-sch-charge-german-helpline-called",
+  "questionRef": "2017 HL Section L1 Q1",
+  "questionText": "Herr Schütz is in charge of a German helpline called ‘Nummer gegen Kummer’. Give details about the service.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "free",
+      "nationwide",
+      "for children / young people",
+      "with worries / problems // want to talk to somebody",
+      "available Monday to Saturday",
+      "from 2 to 8 pm",
+      "number is 116 111",
+      "(around) one million callers / young people call each year"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (2 + 2 + 2); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 1",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-2-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "this-service-used-many-people",
+  "questionRef": "2017 HL Section L1 Q2(i)",
+  "questionText": "Why is this service used by so many people? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "anonymous / not obliged to give their names",
+      "callers’ number cannot be seen",
+      "can be confident that information won’t be passed on",
+      "callers decide what problem / issue to discuss",
+      "determine the length of the call",
+      "decide what happens next",
+      "feel that somebody there to listen // someone has time for them"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (2 + 2 + 2); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(i)",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-2-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "issues-users-raise",
+  "questionRef": "2017 HL Section L1 Q2(ii)",
+  "questionText": "What issues do users raise? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "first love",
+      "sexuality",
+      "lovesickness",
+      "conflicts in the family",
+      "arguments with friends",
+      "drugs",
+      "pressure to perform in school / get good grades",
+      "anxiety about the future",
+      "bullying in school / on social networks/ cyberbullying"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (2 + 2 + 2); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 2(ii)",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-3-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "information-given-about-members-staff",
+  "questionRef": "2017 HL Section L1 Q3(i)",
+  "questionText": "What information is given about members of staff?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "4000 staff",
+      "volunteers",
+      "specially trained",
+      "in 96 towns/ cities",
+      "300 members of staff are young people / aged 16-21 years"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(i)",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-3-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "some-callers-open-conversation",
+  "questionRef": "2017 HL Section L1 Q3(ii)",
+  "questionText": "How do some callers open the conversation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "order a pizza (Word ‘pizza’ only = 0)",
+      "sing (loudly)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (2); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 3(ii)",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l1-4",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L1",
+  "topicId": "german-4-0",
+  "conceptId": "can-users-access-this-service-online",
+  "questionRef": "2017 HL Section L1 Q4",
+  "questionText": "How can users access this service online? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "call them up online / via website / nummergegenkummer.de",
+      "open a (user) account (with a safe password / login)",
+      "use Live Chat",
+      "email"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 2.",
+  "stem": "(Interview with Herr Schütz) The interview will be played three times: first right through, then in segments with pauses, and finally right through again. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "First Part — Question 4",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "First Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l2-1",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "down-german-key-information-recipient-call",
+  "questionRef": "2017 HL Section L2 Q1",
+  "questionText": "Write down in German the key information the recipient of the call puts in his note of the conversation (key phrases, not full sentences). The note should contain:\n• the name of the caller\n• the reason for the call\n• details regarding further contact\n• the caller’s phone number",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Birgit) H–A–L–L–H–U–B–E–R",
+    "marks": 2,
+    "contextNote": "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” The scheme heads this answer “Anruf von”. (All or nothing)"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Doppelbuchung // Feier / Party nicht wie geplant möglich",
+    "marks": 1,
+    "contextNote": "The scheme heads this answer “Problem”."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Feier verschieben// Sonntag / 28. Juli statt Samstag / 27. Juli",
+    "marks": 1,
+    "contextNote": "The scheme heads this answer “Problem”."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "erhält bis zum Ende des Tages einen Rückruf",
+    "marks": 2,
+    "contextNote": "The scheme heads this answer “Die Anruferin”."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "0165–35 99 722",
+    "marks": 2,
+    "contextNote": "The scheme heads this answer “Kontaktnummer”. All or nothing."
+   }
+  ],
+  "notes": "The scheme prices this ask 8 marks (2 + 1 + 1 + 2 + 2); the listening booklet prints it on page 3.",
+  "stem": "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 1",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l2-2",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L2",
+  "topicId": "german-4-1",
+  "conceptId": "listening-phone-call-third-time-down",
+  "questionRef": "2017 HL Section L2 Q2",
+  "questionText": "In listening to the phone call for the third time, write down three examples of the language used (= expressions and phrases) which show that the caller accepts responsibility.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Es tut mir (schrecklich) Leid. / I am (really) sorry.",
+      "(Der) Fehler liegt ganz auf unserer Seite. / It’s our mistake entirely.",
+      "...da haben wir aus Versehen zwei Feiern reserviert/ We took two bookings by mistake.",
+      "Ich habe schon mit dem Besitzer gesprochen. / I have already spoken to the owner.",
+      "Machen Sie sich (darüber) keine Sorgen. / Don’t worry about that.",
+      "Darum kümmern wir uns... / ... we will look after that.",
+      "Bus auf Kosten unseres Hauses natürlich / Bus on the house/ at our expense.",
+      "Entschuldigen Sie (nochmals die Planänderung). / Apologies (once again for the change of plan)."
+     ],
+     "perOptionSteps": [
+      4,
+      1,
+      1
+     ]
+    },
+    "contextNote": "Answer this one in German. The scheme reads: “Where answers are in English/Irish, award half marks.” For the whole question the scheme prints: “Any three; no marks for tone of voice/intonation without reference to specific expressions and phrases. Accept: accurate/exact phrase or accurate paraphrase of expressions in translation:”."
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (4 + 1 + 1); the listening booklet prints it on page 3.",
+  "stem": "You will now hear a telephone conversation. To allow you to answer Question 1 (the note), the phone call will be played twice, with a pause after each playing during which you should fill in the box. The phone call will then be played for a third and final time to allow you to answer Question 2 (the language of the phone call).",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Second Part — Question 2",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Second Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-1-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "conversation-between-dog-walkers-tour-guide",
+  "questionRef": "2017 HL Section L3 Q1(i)",
+  "questionText": "The conversation is between (a) two dog walkers (b) a tour guide and a tourist (c) two students (d) a brother and sister Indicate your choice by putting a, b, c or d in the box provided.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "two students",
+    "marks": 1,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks (1); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 1(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-1-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "find-indications-conversation-support-choice",
+  "questionRef": "2017 HL Section L3 Q1(ii)",
+  "questionText": "Find two indications in the conversation to support your choice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "“ …our holiday during semester/ term holidays. (… unseres Urlaubs in den Semesterferien.)",
+      "She refers to their exams. (Nach den Prüfungen…)",
+      "“I was talking to another student.” (Ich habe… mit einem anderen Studenten gesprochen.)",
+      "He says “ …here at the university (bei uns an der Uni).”"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. (Allow apt German quotation)"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 1(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-2",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "discussing",
+  "questionRef": "2017 HL Section L3 Q2",
+  "questionText": "What are they discussing? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "holiday(s)",
+    "marks": 1,
+    "contextNote": "Answer in English or Irish. The scheme heads this answer “Topic”."
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Details: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "She wants to go to Spain / to the beach / on a sun holiday.",
+      "He wants to go on an adventure.",
+      "walking / hiking through Poland / from border to Warsaw.",
+      "stay in tent.",
+      "cook using gas.",
+      "do a survival course beforehand.",
+      "take train if it rains.",
+      "stay/ relax with his brother in Warsaw.",
+      "enjoy Warsaw / capital of Poland."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 7 marks (1 + 2 + 2 + 2); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 2",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-3-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "word-best-describes-female-speaker-reaction",
+  "questionRef": "2017 HL Section L3 Q3(i)",
+  "questionText": "Which word best describes the female speaker’s reaction to the male speaker’s idea? (a) angry (b) sceptical (c) offended (d) enthusiastic Indicate your choice by putting a, b, c or d in the box provided.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sceptical",
+    "marks": 1,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks (1); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 3(i)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-3-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "down-from-conversation-support-choice",
+  "questionRef": "2017 HL Section L3 Q3(ii)",
+  "questionText": "Write down three details from the conversation to support your choice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "What do you mean – an adventure? (Wie – Abenteuer?)",
+      "I beg your pardon?! (Wie bitte?!)",
+      "You are not fit at all! (Du bist doch überhaupt nicht fit!)",
+      "When was the last time that you did sports? (Wann hast du das letzte Mal Sport getrieben?)",
+      "You are always sitting in front of your PC // partying. (Du hängst doch ständig vor deinem PC oder bist auf Partys.)",
+      "I think you’re mad! (Ich glaube, du spinnst!)",
+      "Do you even know how far that is? (Weißt du überhaupt, wie weit das ist? // She mentions the distance involved)",
+      "We will never manage that! (Das schaffen wir nie!)",
+      "Camping isn’t all that easy either. (Zelten ist auch nicht so einfach.)",
+      "Do you know how to put up a tent / do you even have a tent? (Weißt du z. B., wie man ein Zelt aufbaut? Hast du überhaupt ein Zelt?)",
+      "What will we eat? (Was werden wir essen?)",
+      "How will we cook? (Wie werden wir kochen?)",
+      "I don’t think you thought this through. (Ich glaube, du hast das nicht bis zum Ende durchdacht.)",
+      "But what will we do if it rains (all the time)? (Aber was machen wir, wenn es (die ganze Zeit) regnet?)"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. (Allow apt German quotation)"
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (2 + 2 + 2); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 3(ii)",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l3-4",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L3",
+  "topicId": "german-4-2",
+  "conceptId": "does-male-speaker-explain-his-choice",
+  "questionRef": "2017 HL Section L3 Q4",
+  "questionText": "How does the male speaker explain his choice?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Feels like doing something different/ an adventure.",
+      "Another student walked from Hamburg to Munich.",
+      "He always wanted to go to Poland.",
+      "Can borrow tent / gas cooker/ hiking equipment.",
+      "There is a survival course starting the following week.",
+      "can take the train if it rains.",
+      "can stay with/ relax with his brother (in Warsaw).",
+      "can enjoy Warsaw/ the capital city for a few days."
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 4.",
+  "stem": "You will now hear a conversation between a female and a male speaker. The dialogue will be played three times, with a pause after each playing. Answer in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Third Part — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Third Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-1",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "news-item-reports-about-unusual-initiative",
+  "questionRef": "2017 HL Section L4 Q1",
+  "questionText": "The news item reports about an unusual initiative against racism. Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "happened Wednesday night / from Wednesday to Thursday",
+      "in Hamburg suburbs/outskirts/area",
+      "(unknown) artist did it",
+      "put up posters (against racism) // replaced advertisements / posters (at bus stops).",
+      "to show solidarity with / in support of refugees",
+      "had been right-wing demonstrations in the area."
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks (2 + 2); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 1)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 1",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-2-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "germany-hosting-quidditch-sporting-event",
+  "questionRef": "2017 HL Section L4 Q2(i)",
+  "questionText": "Germany is hosting a Quidditch sporting event. Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "the World Championship(s) (Allow: World Cup)",
+      "at end of / in late June",
+      "in Frankfurt",
+      "first time in Germany",
+      "players carry a broom (between their legs)",
+      "have different types of balls",
+      "try to score goals",
+      "teams are mixed",
+      "25 teams to participate"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-2-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "has-popularity-this-sport-developed",
+  "questionRef": "2017 HL Section L4 Q2(ii)",
+  "questionText": "How has the popularity of this sport developed? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "inspired by the Harry Potter books",
+      "played in many countries",
+      "world championships held",
+      "teams increased from 7 to 25 in last two years"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks (1 + 1 + 1); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 2)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 2(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-3-i",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "mitsou-took-unexpected-trip",
+  "questionRef": "2017 HL Section L4 Q3(i)",
+  "questionText": "Mitsou took an unexpected trip. Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "travelled eight days",
+      "over 500km / from Dresden to Dortmund",
+      "without food or water",
+      "in a parcel / package / by post",
+      "slipped in unnoticed."
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(i)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-3-ii",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "happened-her-destination",
+  "questionRef": "2017 HL Section L4 Q3(ii)",
+  "questionText": "What happened at her destination?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "arrived in a weak(ened) state",
+      "doctor examined cat",
+      "cat had microchip// owner was found",
+      "cat was returned home"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 3)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 3(ii)",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "de-2017-hl-l4-4",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2017,
+  "section": "L4",
+  "topicId": "german-4-3",
+  "conceptId": "weather-forecast-tomorrow-weekend",
+  "questionRef": "2017 HL Section L4 Q4",
+  "questionText": "What is the weather forecast for tomorrow and for the weekend? Give details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Tomorrow: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "little/ not much change",
+      "26 degrees",
+      "humidity high",
+      "slack / light wind",
+      "(wind) from the south-east"
+     ]
+    },
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Weekend: the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Cooler",
+      "23 degrees",
+      "Showers/ rain in the evening",
+      "Night: 16 degrees"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks (1 + 1 + 1 + 1 + 1 + 1); the listening booklet prints it on page 5.",
+  "stem": "You will now hear three news items taken from na radio, followed by the weather forecast. The four items will be played three times: the first time tar right through, then in four segments with pauses, an and finally right through again. Answer in English. (Item 4: Weather forecast)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Fourth Part — Question 4",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC German 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Fourth Part · listening",
+   "title": "2017 German · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "secFileid": "LC011ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC011ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Parts 1–4, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
   "id": "de-2018-hl-t1-1-a",
   "subjectId": "german",
   "level": "higher",
