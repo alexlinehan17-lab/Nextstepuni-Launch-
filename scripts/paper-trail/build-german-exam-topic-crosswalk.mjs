@@ -234,6 +234,19 @@ const existingHigherReading = (year, fileid) => {
   return parsed.length === 8 ? parsed : [];
 };
 
+/* Reading questions the paper prints that its answer map
+ * (scripts/paper-trail/answers/<year>/<fileid>.json) does not anchor. 2026
+ * Ordinary prints TEXT II Question 5, the five true/false statements (10
+ * marks), on page 13 at 23% of the page height, under "5. Based on TEXT II,
+ * indicate whether the following statements are true or false"; its answer
+ * map stops at Text II · Q4, so the Mark Bank's TEXT II Q5 card had no
+ * question of its own. */
+const UNANCHORED_READINGS = {
+  '2026|ordinary|LC011GLP000BV.pdf': [
+    { n: 'II5', label: 'Text II · Q5', section: 2, after: 'II4', page: 13, y: 0.2307 },
+  ],
+};
+
 const higherLayout = year => {
   if (year <= 2014) return { grammar: 5, theme: 9, production: 10 };
   if (year === 2015) return { grammar: 6, theme: 12, production: 13 };
@@ -339,6 +352,25 @@ for (const source of rawSidecars) {
     question.baseTopicIds = baseTopicIds;
     question.anchor = reading.anchor;
     if (!baselineQuestion) addQuestion(paper, question);
+  }
+
+  // A reading question the paper prints and its answer map does not anchor.
+  // Placed after its own text's last anchored question, from the page and
+  // height the paper prints it at (rendered and read; see UNANCHORED_READINGS).
+  for (const extra of UNANCHORED_READINGS[`${paper.year}|${paper.level}|${paper.fileid}`] ?? []) {
+    const baseTopicIds = [extra.section === 1 ? levelIds.novel : levelIds.magazine];
+    const question = {
+      n: extra.n,
+      ...canonicalForTopicIds(baseTopicIds),
+      label: extra.label,
+      referenceSlot: ['I', 'II', 'III'][extra.section - 1],
+      baseTopicIds,
+      anchor: { n: extra.n, label: extra.label, pP: extra.page, pY: [extra.y, 1] },
+    };
+    const after = paper.q.findIndex(existing => existing.n === extra.after);
+    if (after < 0) throw new Error(`${identity}: no question ${extra.after} to place ${extra.n} after`);
+    if (paper.q.some(existing => existing.n === extra.n)) throw new Error(`${identity}: duplicate card ${extra.n}`);
+    paper.q.splice(after + 1, 0, question);
   }
 
   const layout = paper.level === 'higher' ? higherLayout(paper.year) : ordinaryLayout(paper.year);

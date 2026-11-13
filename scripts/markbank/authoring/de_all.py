@@ -62,11 +62,27 @@ from de_scheme import DeScheme                                 # noqa: E402
 from de_topics import (topic_for, concept_for, language_note,   # noqa: E402
                        TEXT_TITLE)
 from paper_census import census_subject                        # noqa: E402
+import de_listen                                               # noqa: E402
+import de_writing                                              # noqa: E402
 import cardlint                                                # noqa: E402
 
 SUBJECT = 'german'
-YEARS = (2021, 2022, 2023, 2024, 2025)
+YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
+# The sittings whose reading and grammar asks are carded, and those whose
+# listening asks are (de_listen.py, answered from the SEC recording). A sitting
+# opts in once its cards have been read against its scheme, one commit each.
+READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
+    (2026, 'hl'), (2026, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol')}
+# The sittings whose written production (Äußerung zum Thema, Schriftliche
+# Produktion) is carded on the scheme's grid (de_writing.py), with the printed
+# lower expression scale and, at Ordinary, the fill-in phrases as their own card.
+WRITING_CARDED = {(2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl')}
+# The sittings whose uncarded listening and writing asks are refused with
+# evidence (exclusions/german.json): the five the bank was first built on.
+# Every other sitting's uncarded asks stay OPEN in the census until carded.
+REFUSED_SITTINGS = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')}
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 
@@ -187,10 +203,18 @@ def build():
         for level in LEVELS:
             P = DePaper(year, level, SUBJECT)
             S = DeScheme(year, level, SUBJECT)
-            _reading(P, S, year, level, cards, refuse, pairs, by_address)
-            _grammar(P, S, year, level, cards, refuse)
-            _written(P, year, level, refuse)
-            _listening(P, year, level, refuse)
+            if (year, level) in READING_CARDED:
+                _reading(P, S, year, level, cards, refuse, pairs, by_address)
+                _grammar(P, S, year, level, cards, refuse)
+            if (year, level) in WRITING_CARDED:
+                cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for))
+            elif (year, level) in REFUSED_SITTINGS:
+                _written(P, year, level, refuse)
+            if (year, level) in LISTENING_CARDED:
+                cards.extend(de_listen.cards(year, level, refuse, card_id, question_ref,
+                                             concept_for))
+            elif (year, level) in REFUSED_SITTINGS:
+                _listening(P, year, level, refuse)
     return cards, refused, examples, excluded, pairs, by_address
 
 
@@ -301,6 +325,19 @@ def _rows_for(ask):
                 continue
         label = seg['label']
         if len(steps) == 1 and len(options) == 1:
+            parts = de_listen._components(options[0])
+            if parts and sum(m for _w, m in parts) == steps[0]:
+                # One answer the scheme prices in its own components — "Three
+                # years (1) ago (1)" — each claimed at its printed mark.
+                rows.append({'id': f'r-{i}', 'kind': 'criterion',
+                             'verbatim': options[0], 'marks': steps[0],
+                             **({'contextNote': f'The scheme heads this answer “{label}”.'}
+                                if label else {}),
+                             'permittedMarks': list(range(steps[0] + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m,
+                                        'permittedMarks': list(range(m + 1))}
+                                       for k, (w, m) in enumerate(parts, start=1)]})
+                continue
             rows.append({'id': f'r-{i}', 'kind': 'point',
                          'verbatim': options[0], 'marks': steps[0],
                          **({'contextNote': f'The scheme heads this answer “{label}”.'}

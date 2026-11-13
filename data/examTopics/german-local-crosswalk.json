@@ -20,17 +20,17 @@
       "deferred": 10,
       "preCorpus": 90
     },
-    "matchedLocalCardLinks": 652,
+    "matchedLocalCardLinks": 653,
     "localPaperVariants": 100,
-    "localPhysicalMappings": 970,
-    "distinctStudentFacingQuestions": 664,
-    "referenceMappedLocalQuestions": 631,
+    "localPhysicalMappings": 971,
+    "distinctStudentFacingQuestions": 665,
+    "referenceMappedLocalQuestions": 632,
     "retainedLocalQuestions": 339,
     "hostedPaperAnchorMaps": 100,
     "preservedBaselineVariants": 20,
     "preservedBaselineCards": 220,
     "newlyAddedPaperVariants": 80,
-    "newlyAddedPhysicalMappings": 750,
+    "newlyAddedPhysicalMappings": 751,
     "emptyOfficialReferenceTopics": [
       "german-ordinary-write-a-blog"
     ]
@@ -5558,7 +5558,8 @@
           "II1",
           "II2",
           "II3",
-          "II4"
+          "II4",
+          "II5"
         ]
       }
     },
@@ -8832,6 +8833,19 @@
       "paperKey": "single",
       "kind": "written",
       "n": "II4",
+      "topicIds": [
+        "german-ordinary-comprehension-magazine-or-newspaper"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2026,
+      "fileid": "LC011GLP000BV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "II5",
       "topicIds": [
         "german-ordinary-comprehension-magazine-or-newspaper"
       ],

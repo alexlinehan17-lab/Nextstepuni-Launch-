@@ -106,7 +106,7 @@ describe('German exam-topic registry', () => {
       matchedAssociations: 379,
       sourceBlockedAssociations: 100,
       sourceBlockedByReason: { preCorpus: 90, deferred: 10 },
-      matchedLocalCardLinks: 652,
+      matchedLocalCardLinks: 653,
     });
     expect(germanCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = germanCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
@@ -122,7 +122,9 @@ describe('German exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(752);
+    // 753 from 13 Nov 2026: 2026 Ordinary TEXT II Q5, which its answer map
+    // never anchored, is a question of its own (UNANCHORED_READINGS).
+    expect(references).toHaveLength(753);
     expect(actual).toEqual(expected);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(10);
   });
@@ -144,19 +146,19 @@ describe('German exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'german');
     expect(germanCrosswalk.summary).toMatchObject({
       localPaperVariants: 100,
-      localPhysicalMappings: 970,
-      distinctStudentFacingQuestions: 664,
-      referenceMappedLocalQuestions: 631,
+      localPhysicalMappings: 971,
+      distinctStudentFacingQuestions: 665,
+      referenceMappedLocalQuestions: 632,
       retainedLocalQuestions: 339,
       hostedPaperAnchorMaps: 100,
       preservedBaselineVariants: 20,
       preservedBaselineCards: 220,
       newlyAddedPaperVariants: 80,
-      newlyAddedPhysicalMappings: 750,
+      newlyAddedPhysicalMappings: 751,
       emptyOfficialReferenceTopics: ['german-ordinary-write-a-blog'],
     });
     expect(papers).toHaveLength(100);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(970);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(971);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -164,7 +166,7 @@ describe('German exam-topic registry', () => {
       .toContain('P-B');
     expect(topicsForPaper('german', 2026, 'ordinary', 'ev', 'LC011GLP000BV.pdf')?.q.map(q => q.n))
       .toEqual([
-        'I1', 'I2', 'I3', 'I4', 'II1', 'II2', 'II3', 'II4',
+        'I1', 'I2', 'I3', 'I4', 'II1', 'II2', 'II3', 'II4', 'II5',
         'III1', 'III2', 'III3', 'III4', 'III5', 'G', 'T-A', 'T-B', 'P-A', 'P-B',
       ]);
     expect(topicsForPaper('german', 2013, 'ordinary', 'iv', 'LC011GLP000IV.pdf')?.q.map(q => q.n))
@@ -247,9 +249,9 @@ describe('German exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 664 distinct questions and only leaves the mock-only blog bucket empty', () => {
+  it('surfaces all 665 distinct questions and only leaves the mock-only blog bucket empty', () => {
     expect(subjectAtlasStats('german')).toMatchObject({
-      questions: 664,
+      questions: 665,
       topics: 25,
       yearMin: 2010,
       yearMax: 2026,

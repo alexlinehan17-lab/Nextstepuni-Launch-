@@ -145,6 +145,7 @@ AG_ITEM = re.compile(r'^\(\s*(\d{1,2}|i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.+)$', re.I)
 # only ever collected inside a block a head has closed.
 ANSWER_NUM = re.compile(r'^(\d{1,2})\s*\.\s*(.*)$')
 ANSWER_LETTER = re.compile(r'^\(\s*([a-z])\s*\)\s*(.+)$')
+BULLET = re.compile(r'^[•\uf0b7]\s*(.+)$')
 # The continuation the SEC prints for details sharing one opening: "2. … war
 # sehr klein / hatte nur 30 Quadratmeter". The ellipsis stands in for the first
 # answer's subject and is kept verbatim.
@@ -168,8 +169,8 @@ TAIL_NOTE = re.compile(r'(\(\d{1,2}(?:\s*marks?)?\))\s*((?:N\.?B\.?|Note|Allow|'
 
 # The named halves of one ask: "How:" over a two-mark list, "What:" over
 # another. Both are answered — they are not alternatives.
-_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df]{1,14}' \
-         r'(?:\s+[a-z]{1,10})?'
+_LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}' \
+         r'(?:\s+[a-z]{1,14}|\s+[A-Z][a-z\u00e4\u00f6\u00fc\u00df]{2,10})?'
 # A segment label with a colon may carry its own answer on the same line:
 # "Where: to the swimming pool (1)", "Wie lange: (etwas) mehr als ein Jahr
 # (2 marks)".
@@ -180,6 +181,7 @@ SEGMENT = re.compile(rf'^({_LABEL})\s*:\s*(.*)$')
 # one inside its own answer list: "Texas? Without me! (2)" is the English of the
 # paragraph heading above it, not a two-mark half of the ask.
 SEGMENT_Q = re.compile(rf'^({_LABEL})\s*\?\s*:?\s*(.*)$')
+SEGMENT_ASK = re.compile(r'^((?:Why|What|How|Where|When|Who|Which)\b[^:()]{0,40}?)\s*:\s*(\(.*\))\s*$')
 # The Higher theme question lists its points under two headings and says on the
 # paper that an answer may draw on either: "(Can be language use and/or
 # content.)" So these label the list, they do not divide it.
@@ -304,6 +306,10 @@ def read_rate(text):
     s = ' '.join((text or '').split()).strip()
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
+    # 2026 Higher prints "(Any four: 4 x 2 marks" with its bracket never
+    # closed; the opening one alone is not part of the rate.
+    if s.startswith('(') and s.count('(') == s.count(')') + 1:
+        s = s[1:].strip()
     if not s:
         return None, None
     claimed = None
@@ -598,6 +604,14 @@ class DeScheme:
         total = head_total(clause)
         letters, romans = parse_head_clause(clause)
         if not letters:
+            # A listening question split into romans with no letter above them:
+            # 2025 Higher First Part "2. (8 marks: (i) 2 x 2 marks; (ii) 4 x 1
+            # mark)", then "(i) What did Frau Glas do …" and "(ii) …". Each
+            # roman is an ask of its own, priced by its own clause.
+            tr = top_romans(clause)
+            if tr and total is not None and sum(tr.values()) == total:
+                self._read_letter(unit, q, None, total, clause, tr, word, block, line_no)
+                return
             self._emit(unit, q, None, None, total, clause, block, line_no, word)
             return
         if total is not None and sum(letters.values()) != total:
@@ -700,6 +714,14 @@ class DeScheme:
                 items.append(cur)
                 continue
             if cur is not None:
+                if re.fullmatch(r'\(\d{1,2}\)', s):
+                    # A mark the line wrap left on a line of its own: "…
+                    # hundred percent/ 100%" / "(1)" (2026 Ordinary). It is
+                    # the item's price; the scheme's text layer keeps no
+                    # bare "(1)" line to quote, so the answer is shown to
+                    # the end of its words and priced with it.
+                    cur['wrapped'] = cur.get('wrapped', '') + ' ' + s
+                    continue
                 cur['text'] = ' '.join(f"{cur['text']} {s}".split())
             elif steps is None:
                 cue.append(s)
@@ -709,7 +731,7 @@ class DeScheme:
             # one, priced five, and counting its marker would price it six.
             # Only a bracket holding nothing but digits is a mark — "(Abschnitt
             # 1)" names the paragraph the compound was printed in.
-            body_text = AG_ITEM.match(item['text']).group(2)
+            body_text = AG_ITEM.match(item['text']).group(2) + item.get('wrapped', '')
             item['marks'] = sum(
                 sum(int(n) for n in re.findall(r'\d{1,2}', g))
                 for g in re.findall(r'\(\s*(\d[\d,\s\-]*)\)', body_text))
@@ -796,10 +818,29 @@ class DeScheme:
             if m is None:
                 m = SEGMENT_Q.match(s)
                 inline = False
+            if m is None:
+                # A half headed by its own question, with its rate on the
+                # line: "Why is it not realistic: (Any ONE detail: 2 marks)"
+                # (2026 Ordinary TEXT I Q1(d)). Only where what follows the
+                # colon IS a rate.
+                m = SEGMENT_ASK.match(s)
+                if m and read_rate(m.group(2))[0] is None:
+                    m = None
+                inline = False
             if m:
                 tail = m.group(2).strip()
                 got, _cnt = read_rate(tail)
                 mark = TRAIL_MARK.search(tail) if inline else None
+                last_seg = segments[-1]
+                if (not tail and got is None and pending is None
+                        and last_seg['steps'] is not None and not last_seg['answers']
+                        and last_seg['label'] is None and cue_lines):
+                    # The rate printed ABOVE its own heading: "(Any three: 3 x
+                    # 2 marks)" then "Denmark:" (2026 Higher TEXT II Q3). The
+                    # heading names the list that rate opened.
+                    last_seg['label'] = m.group(1)
+                    phase = 'answers'
+                    continue
                 if got is not None or mark or not tail:
                     phase = 'answers'
                     steps = got if got is not None else (
@@ -843,6 +884,10 @@ class DeScheme:
                 # prints "1. C / 2. D / 3. A" — and a card offering four
                 # options reading "C", "D", "A", "D" says nothing at all.
                 number = int(m.group(1))
+            elif BULLET.match(s) and not unit.startswith('L'):
+                # 2026 sets a reading ask's answers behind bullets, under a
+                # named half: "Frau Sommer: (Any one: 1 mark)" / "• beautiful".
+                answer = BULLET.match(s).group(1).strip()
             elif unit.startswith('L') and ANSWER_LETTER.match(s):
                 # Only the listening test letters its answers. A reading scheme
                 # numbers them, and 2023 Higher reprints the PART MARKER above
@@ -1084,6 +1129,33 @@ def _ordered_heads(block, pattern, expected):
         m = pattern.match(line.strip())
         if m and m.group(1).lower() == wanted[0]:
             out.append((i, wanted.pop(0), m.group(2)))
+    return out
+
+
+def top_romans(clause):
+    """{roman: marks} for a head that splits its question into romans with no
+    letter: "(8 marks: (i) 2 x 2 marks; (ii) 4 x 1 mark)", "(4 marks: (i) 2 +
+    2 marks; (ii) …)". Each roman's own clause states its worth: "N x M" is
+    N times M, "a + b" their sum, a single figure itself. {} where any roman's
+    worth is not stated."""
+    s = clause or ''
+    m = re.match(r'^\s*\(?\s*\d{1,3}\s*marks?\s*:?', s, re.I)
+    body = s[m.end():] if m else s
+    parts = re.split(r'\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)', body, flags=re.I)
+    if len(parts) < 3 or re.search(r'\(\s*[a-h]\s*\)', parts[0], re.I):
+        return {}
+    out = {}
+    for roman, seg in zip(parts[1::2], parts[2::2]):
+        seg = seg.split(';')[0]
+        times = re.search(r'(\d{1,2})\s*[x×]\s*(\d{1,2})', seg)
+        if times:
+            value = int(times.group(1)) * int(times.group(2))
+        else:
+            nums = [int(n) for n in re.findall(r'\d{1,3}', seg)]
+            if not nums:
+                return {}
+            value = sum(nums) if '+' in seg else nums[0]
+        out[roman.lower()] = value
     return out
 
 

@@ -1365,6 +1365,26 @@ const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPA
   ...Object.values(SPANISH_DEFERRED)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* German keeps its 264 2021-2025 reading IDs frozen (111 Higher + 153
+ * Ordinary, the identity hashes above). The languages lane (2026-11-12) cards
+ * every further sitting on top, one sitting per commit, pinned here per year
+ * and level and never folded into the frozen hashes: new sittings whole, and
+ * the 2021-2025 listening asks (Section L1-L4) the bank excluded until then. */
+const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 49, ordinary: 63 },
+};
+const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 27, ordinary: 32 },
+  2024: { higher: 22, ordinary: 23 },
+  2023: { higher: 24, ordinary: 25 },
+};
+const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-(?:l[1-4]-|at-|sp-)/;
+const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (
+  Number(id.slice(3, 7)) in GERMAN_ADDED
+  || (Number(id.slice(3, 7)) in GERMAN_ADDED_TO_FROZEN && GERMAN_ADDED_TO_FROZEN_ID.test(id)));
+const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMAN_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -2021,6 +2041,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
+  if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2242,6 +2263,23 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further German sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...GERMAN_HIGHER, ...GERMAN_ORDINARY];
+    for (const [year, counts] of Object.entries(GERMAN_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`de-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(GERMAN_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && GERMAN_ADDED_TO_FROZEN_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isGermanAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   it('adds each further Spanish sitting on top of the frozen 2021-2025 identity', () => {
     const cards = [...SPANISH_HIGHER, ...SPANISH_ORDINARY];
     for (const [year, counts] of Object.entries(SPANISH_ADDED)) {
@@ -2368,6 +2406,7 @@ describe('Mark Bank card preservation', () => {
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
+        : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -2400,7 +2439,7 @@ describe('Mark Bank card preservation', () => {
         + chemistryAdded.size - chemistryWithdrawnShipped.length
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
-        + historyEssayIds.size + spanishAddedTotal);
+        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

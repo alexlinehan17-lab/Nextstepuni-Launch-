@@ -2450,6 +2450,30 @@ def census_de(subject, year, level):
             continue
         texts[ask.key] = hit[0]
         claimed.add(ask.key)
+    # Printed reading asks the scheme reader has not stated: the census is the
+    # PAPER, and an old scheme the reader cannot yet walk (2010-2019) must not
+    # shrink it. A printed block counts where it reads as an ask (a question
+    # mark, the place in the text it is answered from, or an instruction
+    # verb), never a matching or gap-fill item, a multiple-choice option or a
+    # labelled answer line, which carry none (hand-counted, 2026-11-12:
+    # languages/handcount-german/written.json).
+    # (Not the passage itself, where a numbered line opens a diary day, a time
+    # or a figure — "7. Tag Wir reisen …", "5.30: Berge. … dabei?": an ask is
+    # short, the passage runs on.)
+    grids = {(b.unit, b.q) for b in P.blocks if b.letter is None and GRID_ASK_DE.search(b.text)}
+    for block in P.blocks:
+        if not block.unit.startswith('T') or block.key in texts:
+            continue
+        if block.letter is not None and (block.unit, block.q) in grids:
+            continue
+        sides = [b.text for b in P.blocks if b.key == block.key]
+        if any(ASK_CUE_DE.search(t) and len(re.sub(r'_+', '', t)) < 300
+               and not re.match(r'^(?:Tag\b|\d|\d*:)', t) for t in sides):
+            texts.setdefault(block.key, block.text)
+    # A question printed with lettered parts is answered in its parts.
+    for key in [k for k in texts if k[0].startswith('T') and k[2] is None and k[3] is None]:
+        if any(o[:2] == key[:2] and o[2] is not None for o in texts):
+            del texts[key]
     for q, text, _page in P.grammar_alternatives():
         texts[('AG', q, None, None)] = text
     for unit in ('AT', 'SP'):
@@ -2459,6 +2483,21 @@ def census_de(subject, year, level):
         texts[(f'L{part}', item, None, roman)] = text
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
+
+
+# What a printed German reading ask carries and a matching item, a gap-fill
+# sentence, a multiple-choice option or a labelled answer line does not.
+ASK_CUE_DE = re.compile(
+    r'\?|\((?:Zeile[n]?|line|lines|na l[íi]nte|l[íi]ne|Par\.|Absatz|Abschnitt|Alt|Introduction|'
+    r'Einleitung|R[ée]amhr[áa]|Headline|Tipp)[^)]*\)|\b(?:Nennen|Geben|Beschreiben|Erkl[äa]ren|'
+    r'Begr[üu]nden|Finden|Schreiben|Erstellen|Listen)\s+Sie\b|\b(?:Give|Explain|Describe|Name|Mention|'
+    r'List|Write|State|Indicate|Choose|Fill in|Tabhair|Luaigh|M[íi]nigh|Scr[íi]obh|Roghnaigh|'
+    r'L[íi]on isteach|Cuir in i[úu]l)\b|(?i:true or false|f[íi]or n[óo] br[ée]agach|correct letter|'
+    r'an litir cheart)')
+# A question whose answer is a grid the candidate fills — true or false,
+# the correct letter in a box — prints its statements or options lettered
+# beneath it; those letters are the grid, not asks.
+GRID_ASK_DE = re.compile(r'(?i:true or false|f[íi]or n[óo] br[ée]agach|correct letter|an litir cheart)')
 
 
 # A printed block that reads like a question rather than a stray fragment: it

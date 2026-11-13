@@ -50,8 +50,9 @@ LISTENING = 'german-3-1'         # Listening Comprehension (Hörverständnis)
 # The source credit the paper prints at the foot of a passage.
 CREDIT = re.compile(r'^\s*(?:Nach|Quellen?|Aus|Adaptiert)\s*:\s*(.+)$', re.I)
 # A credit that names a website or a magazine rather than an author.
+# 2026 Ordinary credits its TEXT III to the magazine alone, "Der Spiegel".
 DOMAIN = re.compile(r'https?://|\bwww\.|\.(?:de|ch|at|com|net|org|eu)\b'
-                    r'|\bmagazin\b|\bZEIT ?Campus\b', re.I)
+                    r'|\bmagazin\b|\bZEIT ?Campus\b|\bDer Spiegel\b', re.I)
 
 
 def topic_for(unit, credit):

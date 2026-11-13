@@ -32,9 +32,12 @@ export const MAX_LONG_OPTION_ROWS = 25;
 // Jonas does in New York" with thirteen. One task is one printed text with up to
 // eleven asks on it, which is what makes the examiner print a long menu, so the
 // task tokens 'U1' to 'U3' (užduotis — the paper's own word for it) belong here.
+// German's listening parts print the longest menus of the test: 2026 Higher
+// Part 2 Q2 answers a six-mark "three examples of the language used" with
+// fourteen phrases. Its four part tokens 'L1' to 'L4' belong here too.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
   'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1',
-  'U1', 'U2', 'U3']);
+  'U1', 'U2', 'U3', 'L1', 'L2', 'L3', 'L4']);
 
 export const optionCapFor = (section) =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;

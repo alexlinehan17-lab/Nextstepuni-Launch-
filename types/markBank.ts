@@ -471,8 +471,14 @@ export interface SecCardBase extends CardBase {
   | 'U1' | 'U2' | 'U3'
   // Spanish's Listening Comprehension Test is a booklet of its own, Questions
   // 1 to 7 at both levels, cited "2026 HL Section L Q1(a)": its cards file
-  // under 'L', apart from the written paper's A, B and C.
+  // under 'L', apart from the written paper's A, B and C. German's prints
+  // four parts and numbers each from 1, so the part is in the address:
+  // "2026 HL Section L2 Q1" files under 'L2'.
   | 'L'
+  | 'L1' | 'L2' | 'L3' | 'L4'
+  // German's two written-production sections, each a choice of (a) or (b):
+  // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
+  | 'AT' | 'SP'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -1325,6 +1331,30 @@ export interface FrenchCriterion {
    *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
    *  rule; absent on every card that prints none. */
   zeroWhenZero?: string;
+  /** The reduced scale the scheme prints beside this criterion's full one, and
+   *  the rule that switches to it — German's "Lower E": "If the content mark is
+   *  8 or less, or the answer is too short (less than 60 words), mark
+   *  expression out of 7". It applies when the criteria named in
+   *  `contentCriteria` add up to `contentAtMost` or less, or when the student
+   *  says the answer is shorter than `wordsUnder` words; the criterion is then
+   *  placed on these marks and bands instead of its own. Set only from a
+   *  printed rule; absent on every card that prints none, and those score
+   *  exactly as before (frenchCriterionMark). */
+  lowerScale?: FrenchLowerScale;
+}
+
+/** See FrenchCriterion.lowerScale. Every string is the scheme's own. */
+export interface FrenchLowerScale {
+  /** The scheme's name for the scale ("Lower E"). */
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  bands: { label: string; marks: number[]; guidance: string[] }[];
+  contentCriteria: string[];
+  contentAtMost: number;
+  wordsUnder?: number;
+  /** The printed rule, verbatim. */
+  rule: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a
@@ -1635,9 +1665,13 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // Jonas does in New York" with thirteen. One task is one printed text with up to
 // eleven asks on it, which is what makes the examiner print a long menu, so the
 // task tokens 'U1' to 'U3' (užduotis — the paper's own word for it) belong here.
+// German's listening parts print the longest menus of the test: 2026 Higher
+// Part 2 Q2 answers a six-mark "three examples of the language used" with
+// fourteen phrases, and Part 1 Q5 a four-mark ask with nine. Its four part
+// tokens 'L1' to 'L4' belong here for the reason TEXT I-III do.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
   'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5',
-  'U1', 'U2', 'U3']);
+  'U1', 'U2', 'U3', 'L1', 'L2', 'L3', 'L4']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 
