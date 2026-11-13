@@ -682,7 +682,8 @@ class DePaper:
                 continue
             if AURAL_END.match(s) or FURNITURE.match(s) or AURAL_FOOT.match(s):
                 continue
-            if re.match(r'^\(\s*Item\b[^)]*\)\s*$', s, re.I):
+            # ("(Item2)", 2010 Ordinary, with no space before its number.)
+            if re.match(r'^\(\s*Item(?:\b|(?=\d))[^)]*\)\s*$', s, re.I):
                 label = s
                 cur = None
                 continue

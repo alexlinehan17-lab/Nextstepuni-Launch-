@@ -378,19 +378,19 @@
     "refsHash": "3616d976252aed5a"
   },
   "german": {
-    "cards": 1728,
-    "contentHash": "8e3e6b6b0b028a23",
-    "coveragePct": 97.4,
-    "covered": 1696,
+    "cards": 1775,
+    "contentHash": "4501c688df7d3ebe",
+    "coveragePct": 99.9,
+    "covered": 1741,
     "excluded": 0,
     "leaves": 1742,
-    "open": 46,
+    "open": 1,
     "orphans": 0,
     "papers": {
       "count": 68,
       "hash": "b2857d4207dfd1a8"
     },
-    "refsHash": "a2c43fac9ac88e27"
+    "refsHash": "af6ca331986ea48f"
   },
   "history": {
     "cards": 4943,

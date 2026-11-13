@@ -49,7 +49,7 @@ sys.path.insert(0, HERE)
 from de_paper import DePaper                                     # noqa: E402
 from de_scheme import (DeScheme, UNIT_LISTEN, LISTEN_PART, TRANSCRIPT,   # noqa: E402
                        PART_NAMES, read_rate, head_total, UNIT_LV, UNIT_AG, UNIT_AT,
-                       UNIT_SP)
+                       UNIT_SP, _number)
 
 AUDIO = os.path.join(ROOT, 'data', 'germanAudio.json')
 MAX_OPTIONS = 16
@@ -87,7 +87,8 @@ LABEL_ALONE = re.compile(r'^(Der Anrufer|Die Anruferin|Problem|Grund des Anrufs|
 # A list marker at the head of an answer line.
 # (2010 and 2014 print the bullet as an "x": "x erhält innerhalb einer Stunde
 # einen Rückruf. (2)".)
-MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–*]|x(?=\s+[a-zäöü]))|(\d{1,2})\s*\.(?!\d))\s*(.*)$')
+# (Or a number: "x 5 49 83 16", 2010 Ordinary.)
+MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–*]|x(?=\s+[a-zäöü\d]))|(\d{1,2})\s*\.(?!\d))\s*(.*)$')
 # A price at the end of an answer: "(2 marks)", "(1)", "(2 marks)" followed by
 # an examiner's remark ("All or nothing", "– all or nothing", "(Are healthier
 # = 0)", "[All or nothing]") that is kept as the row's note.
@@ -109,7 +110,9 @@ def _term(seg):
     if m:
         return int(m.group(1))
     # "= 3 (1 + (2x1)" (2011 Higher): the total, then its split in brackets.
-    m = re.match(r'^=\s*(\d{1,3})\s*(?:marks?)?\s*\(', s, re.I)
+    # (Or "= 6 marks: 3, 3 marks", 2010 Ordinary: the total, then its split
+    # after a colon.)
+    m = re.match(r'^=\s*(\d{1,3})\s*(?:marks?)?\s*[(:]', s, re.I)
     if m:
         return int(m.group(1))
     # "12 marks 6, 6 marks" (2013 Ordinary): the total, then its split.
@@ -151,6 +154,10 @@ def _steps(seg):
     got, _cnt = read_rate(s)
     if got is not None:
         return got
+    # "Any THREE of the following details: 1 mark each" (2010 Ordinary).
+    each = re.fullmatch(r'Any\s+(\w+)\b[^:]*:\s*(\d{1,2})\s*marks?\s+each', s, re.I)
+    if each and _number(each.group(1)):
+        return [int(each.group(2))] * _number(each.group(1))
     m = re.match(r'^(?:\d{1,3}\s*marks?\s*[:.;]?\s*)?(\d{1,2}(?:\s*,\s*\d{1,2})+)\s*(?:marks?)?$', s, re.I)
     if m:
         return [int(n) for n in re.findall(r'\d{1,2}', m.group(1))]
@@ -710,8 +717,11 @@ def leaf_rows(leaf, asked_text):
                   and rate_line(' '.join(body[0].split()))[0] is not None
                   and not MARKER.match(body[1].strip()) and re.search(r'[?]', body[1])
                   and MARKER.match(body[2].strip()))
+    # (Or the roman's bare tariff, "2 marks", over its question and the rate
+    # "2 marks:" (2010 Ordinary L4 Q1(i)).)
     if k == 0 and len(body) > 1 and (again or rate_first
-                                     or re.match(r'^\(\s*\d{1,3}\s*marks?\s*[:)]', body[0].strip())) \
+                                     or re.match(r'^\(\s*\d{1,3}\s*marks?\s*[:)]', body[0].strip())
+                                     or re.fullmatch(r'\d{1,2}\s*marks?', body[0].strip())) \
             and _is_cue(body[1], asked):
         k2 = 1
         while k2 < len(body) and _is_cue(body[k2], asked) and not PRICE.search(body[k2]):
@@ -786,6 +796,10 @@ def leaf_rows(leaf, asked_text):
                 and group.get('rated') and not group['options'] and group['label'] is None):
             group['label'] = s[1:-1]
             continue
+        # "(i) 1 mark:" under "(i) What is special about the programme …?"
+        # (2010 Ordinary): the ask's own marker over its rate.
+        if leaf.roman:
+            s = re.sub(rf'^\(\s*{leaf.roman}\s*\)\s+(?=\d{{1,2}}\s*marks?\s*:?$)', '', s)
         # "AND (Any two: 2 x 1 mark)": the connector and the rate on one line.
         s = re.sub(r'^(?:AND|PLUS)\s+(?=\()', '', s)
         # A named half's rate inside one bracket, "(Axel: any one: 2 marks)"
@@ -1070,9 +1084,33 @@ def leaf_rows(leaf, asked_text):
         return 'the scheme prints no total this reads for the ask'
     if got != leaf.total:
         return f'the scheme prices this ask {leaf.total} and its own rows add to {got}'
+    for n_, it in enumerate(items):
+        # One answer pricing its own two halves under a rate that counts two:
+        # "2 marks: 1,1" over "Sent job application / sent photos (1)/
+        # hasn’t heard anything (1)" (2010 Ordinary L2 Q1). Both halves are
+        # the answer, each at its printed mark.
+        if it['kind'] == 'group' and len(it['options']) == 1 < len(it['steps']):
+            text_ = it['options'][0]['text']
+            comps = _components(text_)
+            if comps and [m for _w, m in comps] == it['steps']:
+                items[n_] = {'kind': 'parts', 'text': text_, 'marks': sum(it['steps']),
+                             'parts': [(re.sub(r'^/\s*', '', w).strip(), m) for w, m in comps],
+                             'label': it['label'],
+                             'notes': list(it['notes']) + list(it['options'][0]['notes'])}
     for it in items:
         if it['kind'] == 'group' and len(it['options']) < len(it['steps']):
             return 'the scheme prices more answers than it states'
+    for it in items:
+        # "Till: Sport/P.E. (2) Daniela: Biology (2)" (2010 Ordinary): two
+        # named halves on one line. The first name read as the line's label
+        # left "Daniela: Biology" named and "Sport/P.E." not; both keep their
+        # names, as printed.
+        if (it['kind'] == 'parts' and it.get('label') and len(it['parts']) > 1
+                and all(re.match(r'^[A-ZÄÖÜ][a-zäöüß]+:\s', w) for w, _m in it['parts'][1:])
+                and not re.match(r'^[A-ZÄÖÜ][a-zäöüß]+:\s', it['parts'][0][0])):
+            it['parts'][0] = (f"{it['label']}: {it['parts'][0][0]}", it['parts'][0][1])
+            it['text'] = f"{it['label']}: {it['text']}"
+            it['label'] = None
     return items, general
 
 
@@ -1419,6 +1457,11 @@ def question_text(lines, answers=()):
                     else:
                         choices.append(t)
                 lines = lines[:lo] + lines[hi + 1:]
+    # An answer field the booklet rules across both its columns, "Till
+    # ______ Daniela ______" (2010 Ordinary): the English column holds only
+    # its second half, a name and a rule. It is the answer space, not the ask.
+    while lines and re.fullmatch(r'[A-ZÄÖÜ][\w’\'-]*\s*_{3,}', ' '.join(lines[-1][0].split())):
+        lines = lines[:-1]
     paras = []
     for text, _x in lines:
         t = ' '.join(text.split())

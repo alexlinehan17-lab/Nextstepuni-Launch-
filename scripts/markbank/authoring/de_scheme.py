@@ -378,6 +378,9 @@ def read_rate(text):
     s = re.sub(r'(?<=\))\s*:$', '', s)
     # "Any THREE: 9 marks: 3, 3, 3 marks." (2012 Ordinary): a full stop.
     s = re.sub(r'(?<=marks)\.$', '', s)
+    # "Any THREE of the following details: 3 marks, 1, 1, 1" (2010
+    # Ordinary): a comma for the colon between the total and its split.
+    s = re.sub(r'\b(\d{1,2})\s*marks?\s*,\s*(?=\d{1,2}(?:\s*,\s*\d{1,2})+\s*$)', r'\1 marks: ', s)
     # "(10 marks) 5 x 2 marks" (2011 Ordinary): the total bracketed, its spec
     # after it.
     m = re.fullmatch(r'\((\d{1,3})\s*marks?\)\s+(\d.*)', s, re.I)
@@ -1202,6 +1205,13 @@ class DeScheme:
         with pymupdf.open(pdf) as doc:
             for page in doc:
                 words = page.get_text('words')
+                # (2010 draws its tick in Marlett, which the text layer reports
+                # as a control character and the word list drops: read it off
+                # the characters, as an X.)
+                words = list(words) + [
+                    (*c['bbox'], 'X') for b in page.get_text('rawdict')['blocks']
+                    for l in b.get('lines', []) for sp in l['spans'] if 'Marlett' in sp['font']
+                    for c in sp['chars'] if ord(c['c']) < 32]
                 heads = {w[4].rstrip('/'): (w[0] + w[2]) / 2 for w in words if w[4].rstrip('/') in ('True', 'False')}
                 if len(heads) != 2:
                     continue
@@ -1729,6 +1739,14 @@ class DeScheme:
                 # "1. renovated *****" (2011 Higher): a run of stars the
                 # scheme prints after an answer and keys nowhere.
                 a['text'] = re.sub(r'\s*\*{3,}\s*$', '', a['text'])
+                # "9. Both in the same theatre group/ Both liked theatre
+                # Accept singular in points 9 to 12" (2010 Ordinary): the
+                # scheme's note on a run of answers, printed on the first.
+                acc = re.search(r'\s+(Accept\b[^()]*?\bpoints?\s+\d{1,2}(?:\s*(?:to|-|–|and)\s*\d{1,2})?\.?)$',
+                                a['text'])
+                if acc:
+                    notes.append(acc.group(1))
+                    a['text'] = a['text'][:acc.start()]
                 # "She started up her own web site (5 marks)." (2012
                 # Ordinary): the price with the sentence's stop after it.
                 stop = TRAIL_MARK_STOP.search(a['text'])
@@ -1748,6 +1766,22 @@ class DeScheme:
         # (A statement wrapped past its X runs on after it: "Yvonne macht zum
         # ersten Mal Campingurlaub mit ihren X (2)" / "Freundinnen.", 2013.)
         answers_ = [a for g in segments for a in g['answers']]
+        # (2010 prints the statements alone, unnumbered, the tick in its
+        # column a glyph the text layer drops: "True/ False/" / "Fíor
+        # Bréagach" over "Er hat kein eigenes Fahrradtaxi." Each statement is
+        # an answer, its column read off the PDF.)
+        tf_head = next((k for k, b in enumerate(block) if re.fullmatch(r'True\s*/?\s+False\s*/?', b.strip())), None)
+        if not answers_ and tf_head is not None and len(segments) == 1:
+            stmts = [b.strip() for b in block[tf_head + 1:] if b.strip() and not PAGE.match(b.strip())
+                     and not re.fullmatch(r'F[íi]or\s+Br[ée]agach', b.strip())]
+            if stmts and all(re.search(r'[.!?]$', x) for x in stmts):
+                cols = self._tick_columns(stmts)
+                if cols is None:
+                    return 'the scheme marks each statement with a tick whose column this cannot read'
+                segments[0]['answers'] = [{'text': f'{x} — {c}', 'n': None, 'marks': None}
+                                          for x, c in zip(stmts, cols)]
+                cue_lines = [x for x in cue_lines if x.strip() not in stmts]
+                answers_ = []
         # (2011 sets the mark as a symbol-font tick, U+F062, not an X.)
         tick = re.compile(r'^(.*?\S)\s+[X\uf062](?:\s*\(\s*\d{1,2}\s*\))?(?:\s+(\S.*))?$')
         if (answers_ and all(tick.match(a['text']) for a in answers_)
@@ -2103,7 +2137,10 @@ if __name__ == '__main__':
 # ---------------------------------------------------------- answer grids ----
 GRID_ASK = re.compile(r'Fill in the information required in the box below|Fill in the grid below', re.I)
 GRID_PRICE = re.compile(r'\(\s*(\d{1,2})\s*\)')
-GRID_MENU = re.compile(r'^(Any\s+(?:\w+)\s+details?:\s*\d{1,2}\s*marks?(?::\s*\d(?:\s*,\s*\d)*)?)\s*(.*)$', re.I)
+# (2010 Ordinary: "Any TWO of the following details: 1,1", "Any ONE of the
+# following details: 2 marks".)
+GRID_MENU = re.compile(r'^(Any\s+(?:\w+)\s+(?:of\s+the\s+following\s+)?details?:\s*'
+                       r'(?:\d{1,2}\s*marks?(?::\s*\d(?:\s*,\s*\d)*)?|\d(?:\s*,\s*\d)+))\s*(.*)$', re.I)
 
 
 def _grid_words(path, find_page):
@@ -2336,6 +2373,19 @@ def scheme_grid(year, level, steps=None, subject=SUBJECT, sitting=None, header=N
                 got.setdefault(col(x0), int(w[1:]))
         if len(got) == len(heads):
             shares = [got[k] for k in range(len(heads))]
+    else:
+        # (2010 Ordinary prints each column's share UNDER it, "7 marks 7
+        # marks", on the grid's last line.)
+        foot = [y for y in band if re.fullmatch(r'(?:\d{1,2}\s*marks?\s*){%d}' % len(heads), text_of(y).strip())]
+        if foot:
+            got = {}
+            ws = sorted(lines[foot[-1]])
+            for (x0, _x1, w), (_a, _b, unit) in zip(ws, ws[1:]):
+                if re.fullmatch(r'\d{1,2}', w) and re.fullmatch(r'marks?', unit):
+                    got.setdefault(col(x0), int(w))
+            if len(got) == len(heads):
+                shares = [got[k] for k in range(len(heads))]
+                band = [y for y in band if y != foot[-1]]
     # The rows: a label down the left edge runs on until it ends in "?" or
     # ":", and a row runs halfway to the labels above and below it.
     rows, cur = [], None
@@ -2353,7 +2403,9 @@ def scheme_grid(year, level, steps=None, subject=SUBJECT, sitting=None, header=N
             cur['last'] = y
         if re.search(r'[?:]$', cur['label']):
             cur = None
-    if not rows or cur is not None:
+    # (The last label may close on neither: "One positive" / "aspect of the
+    # job", 2010 Ordinary, where the grid's own foot ends it.)
+    if not rows or (cur is not None and not (shares is not None and cur is rows[-1])):
         return None
     top = (sub[0] if sub else head_y) + 6
     bounds = [(top + rows[0]['y']) / 2 if rows[0]['y'] - top > 12 else top] + [
@@ -2373,13 +2425,16 @@ def scheme_grid(year, level, steps=None, subject=SUBJECT, sitting=None, header=N
                 # The list is numbered 1., 2., …: split at the next number
                 # only ("Can go home at 3/ 3:30" is one answer).
                 rest, answers, k = ' ' + menu.group(2), [], 1
-                cut = re.search(rf'(?:^|\s){k}\.\s+', rest)
+                # (Or set against its answer, "1.Street musician/busker",
+                # 2010 Ordinary.)
+                num = lambda n: rf'{n}\.(?:\s+|(?=[A-ZÄÖÜ]))'  # noqa: E731
+                cut = re.search(rf'(?:^|\s){num(k)}', rest)
                 while cut:
-                    nxt = re.search(rf'\s{k + 1}\.\s+', rest[cut.end():])
+                    nxt = re.search(rf'\s{num(k + 1)}', rest[cut.end():])
                     end = cut.end() + nxt.start() if nxt else len(rest)
                     answers.append(rest[cut.end():end].strip(' /'))
                     rest, k = rest[end:], k + 1
-                    cut = re.search(rf'(?:^|\s){k}\.\s+', rest)
+                    cut = re.search(rf'(?:^|\s){num(k)}', rest)
                 if got is None or len(answers) < len(got):
                     return None
                 cells.append((row['label'], None, (menu.group(1), got, answers)))
