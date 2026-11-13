@@ -46158,29 +46158,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2021-hl-q7-b-v",
-  "topicId": "eng-1-9",
-  "conceptId": "polymer-manufacturing-process-vacuum-forming",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q7(b)(v)",
-  "questionText": "Explain the polymer manufacturing process of vacuum forming.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "(Any three) 6 + 6 + 6",
-    "marks": 6
-   }
-  ]
- },
- {
   "id": "eng-2021-hl-q7-c-ii",
   "topicId": "eng-1-9",
   "conceptId": "identify-polymer-additives-may-be-used",
@@ -46443,42 +46420,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2021-hl-q8-b-v",
-  "topicId": "eng-2-11",
-  "conceptId": "reasons-dressing-grinding-wheel",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q8(b)(v)",
-  "questionText": "Outline two reasons for dressing a grinding wheel.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "In the grinding process, wheel dressing is used to restore the cutting surface of any irregularities. Grinding wheels are designed to have a self-dressing action in which grains should break free and expose sharp edges. Wheel dressing will renew a sharp cutting face and correct irregularities such as wheel concentricity, loaded and glazed wheels.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "The process can remove any undulations from the wheel.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "(Any three) 6 + 6 + 6",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2021-hl-q8-c-i",
   "topicId": "eng-2-11",
   "conceptId": "aid-diagram-s-precision-surface-grinding",
@@ -46678,36 +46619,6 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "Gear wheels need to be securely attached to drive shafts due to high speeds.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2021-hl-q9-b-v",
-  "topicId": "eng-2-15",
-  "conceptId": "aid-diagram-operation-universal-joint",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q9(b)(v)",
-  "questionText": "Explain, with the aid of a diagram, the operation of a universal joint.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A universal joint is a mechanical device that allows one or more rotating shafts to be linked together, allowing the transmission of torque and/or rotary motion. It also allows for transmission of power between two points that are not in line with each other.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "(Any three) 6 + 6 + 6",
     "marks": null
    }
   ],
@@ -47356,6 +47267,114 @@
   ],
   "stem": "Answer all of the following:",
   "notes": "The scheme prints 'Any two @ 5 + 5'."
+ },
+ {
+  "id": "eng-2021-hl-q7-b-v",
+  "topicId": "eng-1-9",
+  "conceptId": "polymer-manufacturing-process-vacuum-forming",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(b)(v)",
+  "questionText": "Explain the polymer manufacturing process of vacuum forming.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wood/plastic mould is made.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The mould is put into former.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The vacuum forming sheet is placed in the machine.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Heater is turned on and warms the plastic sheet.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The thermoplastic sheet becomes flexible when heated.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The pump removes the air and draws the plastic sheet onto the mould.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6' for (b)."
+ },
+ {
+  "id": "eng-2021-hl-q8-b-v",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-dressing-grinding-wheel",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q8(b)(v)",
+  "questionText": "Outline two reasons for dressing a grinding wheel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In the grinding process, wheel dressing is used to restore the cutting surface of any irregularities. Grinding wheels are designed to have a self-dressing action in which grains should break free and expose sharp edges. Wheel dressing will renew a sharp cutting face and correct irregularities such as wheel concentricity, loaded and glazed wheels.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The process can remove any undulations from the wheel.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-operation-universal-joint",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(b)(v)",
+  "questionText": "Explain, with the aid of a diagram, the operation of a universal joint.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A universal joint is a mechanical device that allows one or more rotating shafts to be linked together, allowing the transmission of torque and/or rotary motion. It also allows for transmission of power between two points that are not in line with each other.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2021-ol-q1-a",
@@ -51582,48 +51601,6 @@
   ]
  },
  {
-  "id": "eng-2022-hl-q9-b-v",
-  "topicId": "eng-2-15",
-  "conceptId": "distinguish-between-spur-gears-helical-gears",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q9(b)(v)",
-  "questionText": "Distinguish between spur gears and helical gears.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Spur gears are the most common type of gear.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "They have straight teeth that are produced parallel to the axis of the gear.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Helical Gears have teeth that are set on an angle to the gear axis. Since the teeth engage more gradually, they have a smoother and quieter operation than spur gears.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Spur gear Helical gear (Any three) 6 + 6 + 6",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2022-hl-q9-c-i",
   "topicId": "eng-2-15",
   "conceptId": "aid-diagram-suitable-variable-speed-drive",
@@ -52192,6 +52169,42 @@
   ],
   "questionFigureKey": "engineering-2022-HL-paper-q9a-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "distinguish-between-spur-gears-helical-gears",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q9(b)(v)",
+  "questionText": "Distinguish between spur gears and helical gears.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Spur gears are the most common type of gear.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "They have straight teeth that are produced parallel to the axis of the gear.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Helical Gears have teeth that are set on an angle to the gear axis. Since the teeth engage more gradually, they have a smoother and quieter operation than spur gears.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2022-hl-q1-b",

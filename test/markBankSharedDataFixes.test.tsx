@@ -10,6 +10,9 @@
  *  - the eight Engineering rows held back from menus are menus;
  *  - a split the scheme prints after an answer's full stop is not part of it
  *    (Engineering 2024 HL Q9(c)(i));
+ *  - a part's tariff, "(Any three) 6 + 6 + 6", is never a claimable answer
+ *    (Engineering 2021 HL Q7-Q9(b)(v), 2022 HL Q9(b)(v)), and History's
+ *    "Any TWO of Beethoven's compositions 3 + 3" loses its printed split;
  *  - Paper Trail names the Technology and DCG -015- booklets for the two
  *    sections they hold.
  */
@@ -20,6 +23,8 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import SessionScreen from '@/components/MarkBank/SessionScreen';
 import { CARDS as ENGINEERING_HIGHER } from '@/components/MarkBank/cards/engineering/higher';
 import { CARDS as TECHNOLOGY_HIGHER } from '@/components/MarkBank/cards/technology/higher';
+import { CARDS as ENGINEERING_ORDINARY } from '@/components/MarkBank/cards/engineering/ordinary';
+import { CARDS as HISTORY_ORDINARY } from '@/components/MarkBank/cards/history/ordinary';
 import { PAPER_TRAIL_INDEX } from '@/paperTrailData';
 import type { SecCard, SecQuestionCard } from '@/types/markBank';
 
@@ -108,6 +113,38 @@ describe('a split printed after an answer is not part of it', () => {
     const tail = /[.!?]\s+\d{1,2}(?:\s*\+\s*\d{1,2})+\s*$/;
     const rows = ENGINEERING_HIGHER.flatMap(c => ('rows' in c ? c.rows : []).map(r => `${c.id} ${r.id}: ${r.verbatim}`));
     expect(rows.filter(r => tail.test(r))).toEqual([]);
+  });
+});
+
+describe('a part\'s tariff is never a claimable answer', () => {
+  const part = /\(Any\s+\w+\)\s*\d{1,2}(?:\s*\+\s*\d{1,2})+/i;
+  const rowsOf = (id: string) => card(ENGINEERING_HIGHER, id).rows.map(r => [r.id, r.verbatim]);
+
+  test('eng-2021-hl-q7-b-v answers with the six captions the scheme prints under its drawings', () => {
+    const c = card(ENGINEERING_HIGHER, 'eng-2021-hl-q7-b-v');
+    expect(c.tariffModel.kind).toBe('questionTotal');
+    expect(c.rows.map(r => r.verbatim)).toEqual([
+      'Wood/plastic mould is made.', 'The mould is put into former.',
+      'The vacuum forming sheet is placed in the machine.', 'Heater is turned on and warms the plastic sheet.',
+      'The thermoplastic sheet becomes flexible when heated.', 'The pump removes the air and draws the plastic sheet onto the mould.',
+    ]);
+  });
+
+  test('the other three keep their answers and lose the tariff row', () => {
+    expect(rowsOf('eng-2021-hl-q8-b-v').map(([id]) => id)).toEqual(['r-1', 'r-2']);
+    expect(rowsOf('eng-2021-hl-q9-b-v').map(([id]) => id)).toEqual(['r-1']);
+    expect(rowsOf('eng-2022-hl-q9-b-v').map(([id]) => id)).toEqual(['r-1', 'r-2', 'r-3']);
+  });
+
+  test('no Engineering row is a part tariff', () => {
+    const rows = [...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].flatMap(c => ('rows' in c ? c.rows : [])
+      .flatMap(r => [r.verbatim, ...(r.group?.options ?? []), ...(r.accepts ?? [])].map(t => `${c.id} ${r.id}: ${t}`)));
+    expect(rows.filter(r => part.test(r))).toEqual([]);
+  });
+
+  test('hist-2016-ol-em-s3t6a-q5 keeps its steps and loses the "3 + 3" printed after the answer', () => {
+    const row = card(HISTORY_ORDINARY, 'hist-2016-ol-em-s3t6a-q5').rows[0];
+    expect(row).toMatchObject({ id: 'r-1', verbatim: 'Any TWO of Beethoven’s compositions', permittedMarks: [0, 3, 6] });
   });
 });
 
