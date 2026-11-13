@@ -14,7 +14,7 @@ import { FRENCH_ATTEMPT_ID, frenchMarks, frenchScoreId, frenchShortId, lowerScal
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
 import { CARDS as SPANISH_ORDINARY } from '../components/MarkBank/cards/spanish/ordinary';
 import frenchWriting from '../components/MarkBank/cards/french/writing.json';
-import type { FrenchCriterion, SecCard, SecRubricCard } from '../types/markBank';
+import type { FrenchCriterion, FrenchRubric, SecCard, SecRubricCard } from '../types/markBank';
 
 /** frenchMarks as it was before lowerScale, for the criteria path. */
 function previousMarks(card: SecRubricCard, scores: FrenchScores): number {
@@ -35,8 +35,8 @@ function random(seed: number) {
 
 const grids = [...frenchWriting, ...SPANISH_HIGHER, ...SPANISH_ORDINARY]
   .filter((card): card is SecRubricCard => (card as SecCard).kind === 'rubric'
-    && (card as SecRubricCard).rubric.system === 'french' && !('allocation' in (card as SecRubricCard).rubric
-      && (card as SecRubricCard).rubric.allocation));
+    && (card as SecRubricCard).rubric.system === 'french'
+    && !((card as SecRubricCard).rubric as FrenchRubric).allocation);
 
 describe('a grid card without a lower scale scores as before', () => {
   it('matches the previous scoring on every French and Spanish grid card', () => {
