@@ -741,9 +741,18 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     return out
 
 
+# A line of the scheme its text layer cannot give (see SHIFTED), shown as the
+# SEC printed it: the crop's key in components/MarkBank/figures-german.json.
+SCHEME_CROPS = {'de-2014-ol-at-b': 'german-2014-OL-scheme-p18-AT-b'}
+
+
 def cards(year, level, card_id, question_ref, concept_for, sitting=None):
     if not sitting:
-        return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+        out = (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+        for c in out:
+            if c['id'] in SCHEME_CROPS:
+                c['figureKey'] = SCHEME_CROPS[c['id']]
+        return out
     # A deferred sitting's cards are "de-2022-hl-deferred-…", cited "… —
     # Deferred sitting", on the deferred booklet.
     out = higher_cards(year, card_id, lambda *a: f'{question_ref(*a)} — Deferred sitting',

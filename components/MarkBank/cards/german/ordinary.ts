@@ -2929,6 +2929,7 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC German 2014 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "The task exactly as the examination printed it."
     },
+    figure: {"candId":"german-2014-OL-scheme-p18-AT-b","src":"/exam-figures/german/markbank/german-2014-OL-scheme-p18-AT-b.png","srcHash":"1a772c4100acf458be1421ea9e1c7b2a","alt":"The marking scheme's printed model answer for point A of the 2014 Ordinary Level Äußerung zum Thema (b) e-mail, with the N.B. under it on the three pieces of information, cropped from page 18 of the scheme as the State Examinations Commission set it.","attribution":"SEC Leaving Certificate German 2014 Ordinary Level marking scheme — © State Examinations Commission","solution":true,"lettersVisible":[]},
   } as SecCard,
   {
     ...base, kind: "rubric",
