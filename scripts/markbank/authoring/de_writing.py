@@ -85,8 +85,19 @@ def expression_scale(S, head, columns=2):
     # above the table only) at whatever the scheme prints next.
     stops = [_find(S, rx, first) for rx in (
         r'^N\.B\. Take a global view', r'^SCHRIFTLICHE PRODUKTION', r'^Marking Written Expression',
-        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b')]
+        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b',
+        # (2010 Higher ends on it: the Irish-language bonus table the SEC
+        # appends to the scheme, "B" / "Coimisiún na Scrúduithe Stáit" /
+        # "Marcanna Breise as ucht freagairt trí Ghaeilge".)
+        r'^Coimisi[úu]n na Scr[úu]duithe St[áa]it')]
     stop = min((x for x in stops if x is not None), default=None)
+    if stop is not None and stop == stops[-1]:
+        # (with the appendix's letter "B" set above its title)
+        back = stop - 1
+        while back > first and not S.lines[back].strip():
+            back -= 1
+        if re.fullmatch(r'[A-Z]', S.lines[back].strip()):
+            stop = back
     single = _single_column(S, start, stop)
     if single is not None:
         return single
@@ -711,7 +722,20 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     b_at = _find(S, r'^\(b\) ', a_at + 1)
     # The listening test follows, or (2021, which prints it first) its
     # transcript, or the document ends.
-    end = _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1)\b)', b_at) or len(S.lines)
+    # (2011 and 2012 print the listening test first and end on what follows
+    # this section: the transcript, headed "Teil Eins" (2012), or the
+    # Irish-language bonus table, "C" / "Coimisiún na Scrúduithe Stáit"
+    # (2011); and nothing after the column runs appended to a scheme's text
+    # is the section's.)
+    end = min((x for x in (
+        _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1|Eins)\b)', b_at),
+        _find(S, r'^Coimisi[úu]n na Scr[úu]duithe St[áa]it$', b_at),
+        _find(S, r'^<!-- markbank:column-runs -->', b_at)) if x is not None), default=len(S.lines))
+    back = end - 1
+    while back > b_at and (not S.lines[back].strip() or PAGE.match(S.lines[back].strip())):
+        back -= 1
+    if end < len(S.lines) and re.fullmatch(r'[A-Z]', S.lines[back].strip()):
+        end = back                  # the appendix's letter, set above its title
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, end))):
         lines = [l for l in _lines(S, lo, hi) if l != 'OR']
         # 2012 names the parts in full: "START (5): Completing the first

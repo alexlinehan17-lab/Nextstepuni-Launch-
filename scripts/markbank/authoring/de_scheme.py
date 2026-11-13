@@ -256,7 +256,10 @@ MARK_BOXES = re.compile(r'^(?:\(\d{1,2}\)\s*){2,}$')
 SEGMENT_RATED = re.compile(r'^([A-Z][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,4}'
                            r'|(?!Any\b)[A-Z][a-zäöüß][\w’\']*\s+[A-Z][a-zäöüß][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,3})'
                            r'\s*:\s*(.+)$')
-BRACKET_RATED = re.compile(r'\((Any\s+\w+\s+[a-z][^:()]*?|[A-Z][a-z]+)\s*:\s*([^()]+)\)')
+# (A count is not a heading: "(Two details: 2 x 2)", 2011 Higher, is a rate.)
+BRACKET_RATED = re.compile(r'\((Any\s+\w+\s+[a-z][^:()]*?'
+                           r'|(?!(?:One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Both|Plus|Also|Only|Each)\b)'
+                           r'[A-Z][a-z]+(?:\s+[a-z]+){0,2})\s*:\s*([^()]+)\)')
 BRACKET_HEADING = re.compile(r'^\((?!(?:Must|Allow|Accept|Any|Only|Not|No|Both|One|Two|Three|Plus|Also)\b)'
                              r'([A-Z][a-z]+(?:\s+[a-z]+){0,3}(?:\s+[A-Z][a-z]+)?)\)$')
 # (Or the quoted answer straight before its price: "N.B. “I want to become an
@@ -269,7 +272,8 @@ INSTRUCTION_DE = re.compile(r'^(?:Schreiben|Geben|Nennen|Beschreiben|Erklären|B
 # "(Any TWO of the following details: 3 marks: 2, 1)" (2018 Ordinary).
 ANY_N = re.compile(r'^(?:Plus\s+)?Any\s+(\w+)\s*(?:of\s+the\s+following\b\s*)?'
                    r'(?:details?|examples?|points?|items?|reasons?|countr(?:y|ies)|questions?|of)?\s*:?\s*', re.I)
-COUNT_POINTS = re.compile(r'^(one|two|three|four|five)\s+(?:points?|details?)\s*:\s*(?=\d)', re.I)
+# (Or the count alone: "(Two: 2x3 marks)", 2010 Higher.)
+COUNT_POINTS = re.compile(r'^(one|two|three|four|five)(?:\s+(?:points?|details?))?\s*:\s*(?=\d)', re.I)
 # A rate spec, in every shape the ten schemes print.
 SPEC_TIMES = re.compile(r'^(\d{1,2})\s*[x×]\s*(\d{1,2})(?:\s*marks?)?$', re.I)
 SPEC_PLUS = re.compile(r'^\d{1,2}(?:\s*marks?)?(?:\s*\+\s*\d{1,2}(?:\s*marks?)?)+$', re.I)
@@ -748,10 +752,33 @@ class DeScheme:
                 if m and int(m.group(1)) == split[0]:
                     heads.insert(0, (i, 1, line.strip(), None))
                     break
+        # "N.B. Re questions 2, 3 and 4 below: Incorrect gender: Penalise once
+        # only (minus 1)" (2010 Higher), printed over Question 2: the note of
+        # the questions it names. Left where it stands, it rode on the last
+        # ask of Question 1.
+        carried = {}
+        body = list(body)
+        for i, line in enumerate(body):
+            m = re.match(r'^N\.?\s?B\.?:?\s*Re questions?\s+([\d,\sand]+?)\s+below\b', line.strip(), re.I)
+            if m:
+                for qn in re.findall(r'\d{1,2}', m.group(1)):
+                    carried[int(qn)] = ' '.join(line.split())
+                body[i] = ''
+        before = len(self.asks)
         for n, (i, q, clause, word) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(body)
             self._read_question(unit, q, clause, word, body[i + 1:end],
                                 start + 1 + i)
+        # The same remark run on after a question's own tariff: "Frage 1 (18
+        # marks: 4, 4, 4, 6) Incorrect gender: penalise once only (minus 1)"
+        # (2010 Higher) is Question 1's.
+        for _i, q, clause, _w in heads:
+            m = re.match(r'^\s*\([^()]*\)\s*(\S.*)$', clause or '')
+            if m and re.search(r'\b(?:penalise|deduct)\b', m.group(1), re.I) and q not in carried:
+                carried[q] = ' '.join(m.group(1).split())
+        for ask in self.asks[before:]:
+            if ask.unit == unit and ask.q in carried:
+                ask.notes = list(ask.notes or []) + [carried[ask.q]]
 
     def _read_question(self, unit, q, clause, word, block, line_no):
         # The question's own number before its first lettered head: "1. (a)
@@ -764,8 +791,13 @@ class DeScheme:
             # bare list, the letters only on the heads beneath it. Believed
             # where the heads run (a), (b), … one per printed share and each
             # head's own total is that share.
-            shares = [int(n) for n in re.findall(r'\d{1,3}', (clause or '').split(':', 1)[1])] \
-                if ':' in (clause or '') and not re.search(r'[a-h]\s*[:=)]|\bx\b', clause or '') else []
+            # (Only the bracket's own list: "Frage 1 (18 marks: 4, 4, 4, 6)
+            # Incorrect gender: penalise once only (minus 1)", 2010 Higher,
+            # runs a remark on after it with a number of its own.)
+            own = re.match(r'^\s*\(([^()]*)\)', clause or '')
+            own = own.group(1) if own else (clause or '')
+            shares = [int(n) for n in re.findall(r'\d{1,3}', own.split(':', 1)[1])] \
+                if ':' in own and not re.search(r'[a-h]\s*[:=)]|\bx\b', own) else []
             if len(shares) > 1 and total is not None and sum(shares) == total:
                 names = 'abcdefgh'[:len(shares)]
                 found = _ordered_heads(block, L_HEAD, list(names))
@@ -877,9 +909,21 @@ class DeScheme:
         # section's: "(15 marks: 5 x 3)" / "1. Relativpronomen." It is that
         # question's, where the question prints none of its own.
         lead = [b for b in body[:heads[0][0]] if QUESTION_TOTAL.match(b.strip())] if heads else []
+        owns = []
         for n, (i, q, rest) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(body)
-            own_lines = ([rest] if rest.strip() else []) + body[i + 1:end]
+            owns.append(([rest] if rest.strip() else []) + body[i + 1:end])
+        # 2010 Higher prints EVERY question's tariff above its head: "(10
+        # marks: 5 x 2)" closes question 1's block and opens question 2. A
+        # tariff that is the last line before a head whose question prints
+        # none of its own is that question's.
+        for n in range(len(owns) - 1):
+            tail = [k for k, b in enumerate(owns[n]) if b.strip() and not PAGE.match(b.strip())]
+            if (tail and QUESTION_TOTAL.match(owns[n][tail[-1]].strip())
+                    and _question_total(owns[n + 1]) is None):
+                owns[n + 1] = [owns[n][tail[-1]]] + owns[n + 1]
+                owns[n] = owns[n][:tail[-1]] + owns[n][tail[-1] + 1:]
+        for n, ((i, q, _rest), own_lines) in enumerate(zip(heads, owns)):
             if n == 0 and len(lead) == 1 and _question_total(own_lines) is None:
                 own_lines = lead + own_lines
             blocks.append((q, own_lines, start + 1 + i))
@@ -1438,7 +1482,11 @@ class DeScheme:
                 if m and read_rate(m.group(2))[0] is None:
                     m = None
                 inline = False
-            if (m is None and phase == 'cue' and cue_lines and cue_lines[-1].endswith('?')
+            # (Or with its line cue, "(Z. 27 – 37)" over "(Gemeinsamkeit)",
+            # 2010 Higher: a cue CUE_END does not name.)
+            if (m is None and phase == 'cue' and cue_lines
+                    and (cue_lines[-1].endswith('?')
+                         or re.search(r'\(Z\.\s*\d[^()]*\)\s*$', cue_lines[-1]))
                     and BRACKET_HEADING.match(s)):
                 phase = 'answers'            # the heading ends the question
             if m is None and phase == 'answers' and BRACKET_HEADING.match(s):

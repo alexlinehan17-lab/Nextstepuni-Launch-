@@ -69,18 +69,18 @@ import de_writing                                              # noqa: E402
 import cardlint                                                # noqa: E402
 
 SUBJECT = 'german'
-YEARS = (2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+YEARS = (2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
 # The sittings whose reading and grammar asks are carded, and those whose
 # listening asks are (de_listen.py, answered from the SEC recording). A sitting
 # opts in once its cards have been read against its scheme, one commit each.
 READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
-    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol')}
-LISTENING_CARDED = {(2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'), (2010, 'hl')}
+LISTENING_CARDED = {(2010, 'hl'), (2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
 # The sittings whose written production (Äußerung zum Thema, Schriftliche
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
-WRITING_CARDED = {(2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+WRITING_CARDED = {(2010, 'hl'), (2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
 # The SEC's deferred sittings carded (2022 Higher, the only one the archive
 # holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
 # cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
@@ -132,7 +132,10 @@ INSTRUCTION_WORDS = {
 
 # The answer rules the paper prints beside the question so a candidate can
 # write on them. They are the answer space, not the ask.
-ANSWER_RULE = re.compile(r'_{3,}')
+# (With the full stop the paper sets at its end, "____________. " under each
+# sentence of 2010 Higher's grammar question; never the stop of a gap inside
+# a quotation, "„________.“".)
+ANSWER_RULE = re.compile(r'_{3,}(?:\s*\.(?=\s|$))?')
 # A Wingdings bullet, which reaches the text layer as a private-use codepoint.
 # It is a printed BULLET, not a word: the SEC sets its worked example behind
 # one and the glyph gate would refuse the card for carrying an unrepairable
@@ -806,6 +809,15 @@ def _grammar(P, S, year, level, cards, refuse):
              if ask.by_rate else
              'Every gap is answered; the scheme prints the mark it pays on each. ')
             + language_note('German'))
+        # 2010 Higher numbers question 2's answers (2) to (6), counting the
+        # worked example as (1); the paper numbers its sentences (1) to (5).
+        opts = [o for r in rows for o in ((r.get('group') or {}).get('options') or [])]
+        said = [int(m.group(1)) for m in (re.match(r'^\((\d{1,2})\)', o) for o in opts) if m]
+        printed = [int(n) for n in re.findall(r'\((\d{1,2})\)', clean_question(text) or '')]
+        if said and len(said) == len(opts) and said == [n + 1 for n in printed]:
+            rows[0]['contextNote'] += (f' The scheme numbers these answers ({said[0]}) to '
+                                       f'({said[-1]}); the paper numbers the sentences '
+                                       f'({printed[0]}) to ({printed[-1]}).')
         source = {
             'kind': 'source-text',
             'label': TEXT_TITLE['AG'],

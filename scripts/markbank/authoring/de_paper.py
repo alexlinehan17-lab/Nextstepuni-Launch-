@@ -736,7 +736,9 @@ AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[�
                         r'Leaving Certificate Examination|Scr[úu]d[úu] na|'
                         # "8/Page 2 of 8" (2017), the end of "Leathanach 2 de
                         # 8/Page 2 of 8" across the column bound.
-                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$)', re.I)
+                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$'
+                        # "2 of 8" (2010), the same foot cut after "Page".
+                        r'|\d{1,2}\s+of\s+\d{1,2}$)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
 # numbers its last item "5." in the Irish column and "6." in the English
