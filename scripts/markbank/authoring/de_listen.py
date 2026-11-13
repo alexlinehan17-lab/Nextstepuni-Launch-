@@ -48,7 +48,8 @@ sys.path.insert(0, HERE)
 
 from de_paper import DePaper                                     # noqa: E402
 from de_scheme import (DeScheme, UNIT_LISTEN, LISTEN_PART, TRANSCRIPT,   # noqa: E402
-                       PART_NAMES, read_rate, head_total)
+                       PART_NAMES, read_rate, head_total, UNIT_LV, UNIT_AG, UNIT_AT,
+                       UNIT_SP)
 
 AUDIO = os.path.join(ROOT, 'data', 'germanAudio.json')
 MAX_OPTIONS = 16
@@ -88,7 +89,7 @@ MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–])|(\d{1,2})\s*\.(?!
 # = 0)", "[All or nothing]") that is kept as the row's note.
 PRICE = re.compile(r'\(\s*(\d{1,2})\s*(?:marks?)?\s*\)')
 TRAIL = re.compile(r'^(.*?)\s*\(\s*(\d{1,2})\s*(?:marks?)?\s*\)\s*'
-                   r'((?:[–\-]\s*)?(?:\[?\s*All or nothing\s*\]?|\(.*=\s*0\s*\)|'
+                   r'((?:[–\-]\s*)?(?:\[?\s*All or nothing\s*\]?|\(\s*All or nothing\s*\)|\(.*=\s*0\s*\)|'
                    r'N\.?\s?B\b.*|Allow\b.*|\(.*\b(?:only|needed|required)\)))?\s*$', re.I)
 BRACKET_NOTE = re.compile(r'\s*\[\s*All or nothing\s*\]\s*', re.I)
 
@@ -204,7 +205,8 @@ def clause_split(clause, romans):
 
 # ------------------------------------------------------------ the scheme --
 class Leaf:
-    __slots__ = ('part', 'q', 'roman', 'total', 'lines', 'default', 'rule', 'line')
+    __slots__ = ('part', 'q', 'roman', 'total', 'lines', 'default', 'rule', 'line',
+                 'q_total', 'q_split')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -223,7 +225,9 @@ def scheme_leaves(S, keys):
     cur = None
     for i in range(start + 1, len(lines)):
         s = lines[i].strip()
-        if TRANSCRIPT.match(s):
+        # The listening test ends at its transcript, or where the scheme
+        # prints it first (2021 Ordinary) at the written paper's first unit.
+        if TRANSCRIPT.match(s) or any(rx.match(s) for rx in (UNIT_LV, UNIT_AG, UNIT_AT, UNIT_SP)):
             break
         m = LISTEN_PART.match(s)
         if m:
@@ -291,7 +295,8 @@ def scheme_leaves(S, keys):
             body = ([rest] if rest.strip() else []) + block[i + 1:end]
             out[(p, q, roman)] = Leaf(part=p, q=q, roman=roman, total=totals.get(roman),
                                       lines=body, default=defaults.get(roman), rule=rule,
-                                      line=line_no + 2 + i)
+                                      line=line_no + 2 + i, q_total=head_total(clause),
+                                      q_split=_steps(clause))
     return out, rules
 
 
@@ -423,6 +428,10 @@ def leaf_rows(leaf, asked_text):
                 close()
                 label = m.group(1)
                 text = rest
+                # A field opens here: the line is its own answer, never the
+                # second line of the list above it ("… zurück" / "Anrufer:
+                # erhält … einen Rückruf (2 marks)", 2021 Higher).
+                last = None
         # An unmarked line under a marked answer is that answer's second line,
         # and a bracket alone ("(Two details)") is a remark on it.
         # A wrapped line follows a full one (the scheme's lines run to some
@@ -515,6 +524,14 @@ def leaf_rows(leaf, asked_text):
     if not items:
         return 'the scheme prints no answers this reads for the ask'
     if leaf.total is None:
+        # The head prints its split only as a list of answer prices — "3. 6
+        # marks: 2, 2, 2 marks" over "(i)" with two answers priced "(2)" each
+        # and "(ii)" with one (2022 Ordinary L1 Q3). Where every row of the
+        # roman prices itself, its total is those printed prices; cards()
+        # then checks that the romans' prices, in order, are the head's list.
+        if leaf.q_split and all(x['kind'] == 'point' for x in items):
+            leaf.total = got
+            return items, general
         return 'the scheme prints no total this reads for the ask'
     if got != leaf.total:
         return f'the scheme prices this ask {leaf.total} and its own rows add to {got}'
@@ -737,6 +754,29 @@ def cards(year, level, refuse, card_id, question_ref, concept_for):
     fileid = aural_fileid(year, level)
     assert fileid in rec['paperFileids'], (year, level, fileid)
     out = []
+    # Romans priced only by the head's list of answer prices: read each, and
+    # card them only where their printed prices, in order, are that list.
+    derived = {}
+    for key, leaf in leaves.items():
+        if key[2] and leaf.total is None and leaf.q_split:
+            lines_, _pg = asks.get(key, ([], None))
+            got_ = leaf_rows(leaf, ' '.join(t for t, _x in lines_))
+            derived.setdefault(key[:2], []).append((key[2], got_))
+    bad_q = set()
+    for qkey, romans in derived.items():
+        flat = []
+        for roman, got_ in sorted(romans, key=lambda r: ROMANS.index(r[0])):
+            if isinstance(got_, str):
+                flat = None
+                break
+            flat += [x['marks'] for x in got_[0]]
+        leaf0 = leaves[(qkey[0], qkey[1], romans[0][0])]
+        romans_in_q = [k for k in keys if k[:2] == qkey and k[2]]
+        if (flat is None or flat != list(leaf0.q_split) or sum(flat) != leaf0.q_total
+                or len(romans) != len(romans_in_q)):
+            bad_q.add(qkey)
+            for roman, _g in romans:
+                leaves[(qkey[0], qkey[1], roman)].total = None
     for part, q, roman in keys:
         unit = f'L{part}'
         ref = question_ref(year, level, unit, q, None, roman)
@@ -749,6 +789,10 @@ def cards(year, level, refuse, card_id, question_ref, concept_for):
         if leaf is None:
             refuse('the scheme prints no block for this listening ask', ref,
                    f'{year} {level.upper()} scheme, listening part {part} Q{q}')
+            continue
+        if (part, q) in bad_q:
+            refuse('the head prints its split as a list of prices the romans\' own rows do not '
+                   'match', ref, f'{year} {level.upper()} scheme, listening part {part} Q{q}')
             continue
         printed = ' '.join(t for t, _x in lines)
         got = leaf_rows(leaf, printed)

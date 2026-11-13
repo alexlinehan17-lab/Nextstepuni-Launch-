@@ -393,16 +393,25 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     out = []
     # The one expression table: column one is Äußerung's 7 and Schriftliche
     # Produktion's "Lower Ex." 7, column two the full 10.
-    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung')
+    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung zum Thema')
+    # "… (0-7) for expression." (2022-2026) or "… for expression and write
+    # “Lower Ex.” to indicate this." (2021).
     sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark in the Schriftliche',
-                        r'for expression\.')
+                        r'for expression(?:\.| and write .*?to indicate this\.)')
     at = _find(S, r'^TEXT II: [ÄA]U[ßS]{1,2}ERUNG ZUM THEMA')
     a_at = _find(S, r'^\(a\) ', at)
     b_at = _find(S, r'^E-?Mail schreiben|^E-mail schreiben|^\(b\) ', a_at + 1)
     head_lines = _lines(S, at, a_at)
     # (a) the dialogue: one criterion per printed turn, "(A1)" … "(F2)", with
     # the prompt printed above it.
-    lines = _lines(S, a_at, b_at)
+    # 2021 prints a short "Guidelines for marking expression in ÄUSSERUNG"
+    # after each option and TEXT III's questions before the expression table:
+    # an option's block ends at whichever comes first.
+    def _end(after, limit):
+        stop = _find(S, r'^(?:Guidelines for marking expression|TEXT III)', after + 1)
+        return min(x for x in (stop, limit) if x is not None)
+    a_end, b_end = _end(a_at, b_at), _end(b_at, ex_at)
+    lines = _lines(S, a_at, a_end)
     head, crit, prompt = [], [], []
     for line in lines:
         m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line)
@@ -423,10 +432,10 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     text, _p = task_text(P, 'AT', 'a')
     out.append(_card(year, 'ol', 'AT', 'a', 15, _rubric(reqs, criteria), text,
                      _source(P, year, 'ol', 'AT', 'a', 'Äußerung zum Thema'),
-                     tags['T-A']['primary'], sorted(set(_page_span(S, a_at, b_at) + _page_span(S, ex_at, ex_at + 1))),
+                     tags['T-A']['primary'], sorted(set(_page_span(S, a_at, a_end) + _page_span(S, ex_at, ex_at + 1))),
                      concept_for, question_ref, [PRACTICE]))
     # (b) the e-mail: one criterion per printed point, "A. (2) Introduce …".
-    lines = _lines(S, b_at, ex_at)
+    lines = _lines(S, b_at, b_end)
     head, labelled = _labelled(lines, r'^([A-F])\. \((\d)\)')
     criteria = [_criterion(label.lower(), label, marks, block) for label, marks, block in labelled]
     criteria.append(_expression(7, one))
@@ -434,14 +443,16 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     text, _p = task_text(P, 'AT', 'b')
     out.append(_card(year, 'ol', 'AT', 'b', 15, _rubric(reqs, criteria), text,
                      _source(P, year, 'ol', 'AT', 'b', 'Äußerung zum Thema'),
-                     tags['T-B']['primary'], sorted(set(_page_span(S, b_at, ex_at) + _page_span(S, ex_at, ex_at + 1))),
+                     tags['T-B']['primary'], sorted(set(_page_span(S, b_at, b_end) + _page_span(S, ex_at, ex_at + 1))),
                      concept_for, question_ref, [PRACTICE]))
     # Schriftliche Produktion: the fill-in phrases ("St.") are their own
     # claim card (coordinator ruling 2); the grid holds Content and Expression.
     sp = _find(S, r'^SCHRIFTLICHE PRODUKTION')
     a_at = _find(S, r'^\(a\) ', sp)
     b_at = _find(S, r'^\(b\) ', a_at + 1)
-    end = _find(S, r'^LISTENING COMPREHENSION', b_at)
+    # The listening test follows, or (2021, which prints it first) its
+    # transcript, or the document ends.
+    end = _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1)\b)', b_at) or len(S.lines)
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, end))):
         lines = [l for l in _lines(S, lo, hi) if l != 'OR']
         st_at = next(k for k, l in enumerate(lines) if l.startswith('St.'))
