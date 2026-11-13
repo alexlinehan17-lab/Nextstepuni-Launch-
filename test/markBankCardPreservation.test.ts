@@ -1371,14 +1371,14 @@ const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPA
  * and level and never folded into the frozen hashes: new sittings whole, and
  * the 2021-2025 listening asks (Section L1-L4) the bank excluded until then. */
 const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 45, ordinary: 57 },
+  2026: { higher: 49, ordinary: 57 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 23, ordinary: 26 },
   2024: { higher: 22, ordinary: 23 },
   2023: { higher: 24, ordinary: 25 },
 };
-const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-l[1-4]-/;
+const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-(?:l[1-4]-|at-|sp-)/;
 const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (
   Number(id.slice(3, 7)) in GERMAN_ADDED
   || (Number(id.slice(3, 7)) in GERMAN_ADDED_TO_FROZEN && GERMAN_ADDED_TO_FROZEN_ID.test(id)));
