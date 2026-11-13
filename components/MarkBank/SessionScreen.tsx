@@ -38,7 +38,7 @@ import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
 import KobraScope, { Button, Dialog, DialogContent, DialogTitle, DialogDescription } from '../approved-ui-runtime';
 import './mark-bank-session-paper.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
-import { splitForEmphasis } from './questionEmphasis';
+import { emphasisSegments } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
@@ -68,7 +68,7 @@ import {
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
-import { anyNHeading, marksWord, menuLabel, unclaimedName } from './sessionText';
+import { anyNHeading, marksWord, menuLabel, unclaimedName, uniformSplit } from './sessionText';
 import RouteHeading from './RouteHeading';
 import FigureZoom from './FigureZoom';
 import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
@@ -669,6 +669,7 @@ const MarkRowView: React.FC<{
   claim: RowClaim;
   showMarks: boolean;
   blocked: boolean;
+  /** Why the row is locked; '' when the lock is stated elsewhere (a route's heading). */
   blockedReason?: string;
   reduced: boolean;
   picks: number[];
@@ -887,7 +888,7 @@ const MarkRowView: React.FC<{
             {row.contextNote}
           </p>
         )}
-        {blocked && (
+        {blocked && blockedReason !== '' && (
           <p style={{ margin: '8px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
             {blockedReason ?? 'This mark only counts if the point above was right.'}
           </p>
@@ -1000,7 +1001,7 @@ const MarkRowView: React.FC<{
         )}
       </button>
 
-      {blocked && (
+      {blocked && blockedReason !== '' && (
         <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
           {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
@@ -1943,16 +1944,14 @@ const RULE_STYLE: React.CSSProperties = {
  * scope — stays plain, which is what keeps the mark sleek on a question that
  * runs to two or three lines.
  */
-const Clause: React.FC<{ text: string }> = ({ text }) => {
-  const { before, marked, after } = splitForEmphasis(text);
-  return (
-    <>
-      {before}
-      <span style={EMPHASIS === 'rule' ? RULE_STYLE : MARKER_STYLE}>{marked}</span>
-      {after}
-    </>
-  );
-};
+const Clause: React.FC<{ text: string }> = ({ text }) => (
+  <>
+    {/* One mark, or one per alternative of an either/or choice (questionEmphasis). */}
+    {emphasisSegments(text).map((segment, i) => (segment.marked
+      ? <span key={i} style={EMPHASIS === 'rule' ? RULE_STYLE : MARKER_STYLE}>{segment.text}</span>
+      : <React.Fragment key={i}>{segment.text}</React.Fragment>))}
+  </>
+);
 
 const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ children, nested = false }) => (
   <span style={{
@@ -3299,8 +3298,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                               || (!!row.route && !!routeTaken && row.route !== routeTaken)
                             }
                             blockedReason={
+                              // A route the student did not take says so once, under
+                              // its heading (RouteHeading), not under every row.
                               !!row.route && !!routeTaken && row.route !== routeTaken
-                                ? 'The examiner marks one route or the other — not a mix of both.'
+                                ? ''
                                 : undefined
                             }
                             reduced={reduced}
@@ -3332,7 +3333,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         </div>
                       )}
 
-                      {assessmentCard.tariffModel.kind === 'orderedSplit' && (
+                      {/* Said only of a split that falls: "4 + 4" pays every answer
+                          the same, and "higher than the rest" would be false of it. */}
+                      {assessmentCard.tariffModel.kind === 'orderedSplit' && !uniformSplit(assessmentCard.tariffModel.notation) && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           The examiner marks the first correct answers higher than the rest
                           ({assessmentCard.tariffModel.notation}) — so what these are worth depends on how many you got.

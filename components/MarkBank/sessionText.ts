@@ -68,6 +68,40 @@ export function menuLabel(row: Pick<MarkRow, 'verbatim' | 'group'>): string | nu
   return label;
 }
 
+/**
+ * The marks an orderedSplit notation pays, answer by answer, or null where
+ * the notation is not one this can read. "2(5) + 5(2)" is two answers at 5
+ * and five at 2; "4 + 4" two at 4; "5 + (5 + 5)" three at 5; "5 × 1" five
+ * at 1; square brackets and grouping parentheses only group.
+ */
+export function splitSteps(notation: string): number[] | null {
+  const text = notation.trim().replace(/\.$/, '')
+    .replace(/(\d+)\s*\(\s*(\d+)\s*\)/g, '$1×$2')
+    .replace(/[[\]()]/g, '');
+  const steps: number[] = [];
+  for (const term of text.split('+').map(t => t.trim())) {
+    const times = /^(\d+)\s*[×x]\s*(\d+)$/.exec(term);
+    if (times) {
+      for (let k = 0; k < Number(times[1]); k++) steps.push(Number(times[2]));
+    } else if (/^\d+$/.test(term)) {
+      steps.push(Number(term));
+    } else {
+      return null;
+    }
+  }
+  return steps.length ? steps : null;
+}
+
+/**
+ * Whether an orderedSplit pays every answer the same ("4 + 4", "10 + 10 +
+ * 10"). The session's "the examiner marks the first correct answers higher
+ * than the rest" is false of such a split, so it is not said.
+ */
+export const uniformSplit = (notation: string): boolean => {
+  const steps = splitSteps(notation);
+  return !!steps && steps.length > 1 && steps.every(step => step === steps[0]);
+};
+
 /** The most a "Not claimed yet" name runs to before it is cut at a word. */
 export const UNCLAIMED_NAME_MAX = 64;
 

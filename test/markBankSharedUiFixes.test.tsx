@@ -10,8 +10,13 @@
  *  - printed line breaks and bullets inside a row are kept (Economics 2021 HL
  *    Q16(a)(i), Engineering 2013 HL Q1(p)), History's rows exactly as before;
  *  - a menu shows its own label (Economics 2020 HL Section B Q7(b)(iii));
- *  - the question's mark stops at the first printed line break (Spanish 2010
- *    HL Section B Q5);
+ *  - the question's mark stops at the first printed line break, and a choice
+ *    printed either side of a line holding only "O"/"or"/"nó" marks each
+ *    alternative (Spanish 2010 HL Section B Q5);
+ *  - a route not taken says so once, under its heading; a route that is a
+ *    menu gets a heading (Engineering 2015 HL Q7(c)(i), 2014 HL Q5(c)(i));
+ *  - an equal split ("4 + 4") is not said to mark the first answers higher
+ *    (Engineering 2024 HL Q8(c)(ii));
  *  - on a card priced only as a whole, menu picks count towards the grade
  *    suggestion, within the chosen route (Economics 2010 OL Section A Q9).
  */
@@ -20,13 +25,15 @@ import { afterEach, describe, expect, test, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 
 import SessionScreen, { suggestGrade } from '@/components/MarkBank/SessionScreen';
-import { splitForEmphasis } from '@/components/MarkBank/questionEmphasis';
-import { menuLabel } from '@/components/MarkBank/sessionText';
+import { emphasisSegments, splitForEmphasis } from '@/components/MarkBank/questionEmphasis';
+import { menuLabel, splitSteps, uniformSplit } from '@/components/MarkBank/sessionText';
+import { ROUTE_LOCKED_NOTE } from '@/components/MarkBank/RouteHeading';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
 import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '@/components/MarkBank/cards/engineering/higher';
 import { CARDS as SPANISH_HIGHER } from '@/components/MarkBank/cards/spanish/higher';
 import { CARDS as HISTORY_HIGHER } from '@/components/MarkBank/cards/history/higher';
+import { CARDS as BIOLOGY_HIGHER } from '@/components/MarkBank/cards/biology/higher';
 import type { MarkRow, SecCard, SecQuestionCard } from '@/types/markBank';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
@@ -77,7 +84,8 @@ describe('eng-2015-hl-q7-c-i: a menu on an answer route', () => {
     fireEvent.click(screen.getByRole('button', { name: chip }));
     expect(option(menuOption)).toBeDisabled();
     expect(option('More expensive to purchase and repair.')).toBeDisabled();
-    expect(screen.getAllByText('The examiner marks one route or the other — not a mix of both.').length).toBeGreaterThanOrEqual(2);
+    // Said once, under route B's heading, not under each of its menus.
+    expect(screen.getAllByText(ROUTE_LOCKED_NOTE)).toHaveLength(1);
     fireEvent.click(option(menuOption));
     expect(option(menuOption)).toHaveAttribute('aria-pressed', 'false');
     expect(guidance()).toContain('You claimed 2 of 8 marks');
@@ -96,6 +104,16 @@ describe('eng-2015-hl-q7-c-i: a menu on an answer route', () => {
     expect(guidance()).toContain('You claimed 2 of 8 marks');
     fireEvent.click(option('More expensive to purchase and repair.'));
     expect(guidance()).toContain('You claimed 4 of 8 marks');
+    // Route A's four rows are locked, and say so once.
+    expect(screen.getAllByText(ROUTE_LOCKED_NOTE)).toHaveLength(1);
+  });
+
+  test('eng-2014-hl-q5-c-i: a route that is one menu gets its heading, with no "Select all" for one row', () => {
+    renderSession(card(ENGINEERING_HIGHER, 'eng-2014-hl-q5-c-i'));
+    reveal();
+    expect(screen.getByRole('heading', { name: 'Route A' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Route B' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^Select all in/ })).not.toBeInTheDocument();
   });
 });
 
@@ -154,12 +172,31 @@ describe('econ-2020-hl-sb-q7-b-iii: a menu shows its own label', () => {
 });
 
 describe('es-2010-hl-b-5: the mark stops at the first printed line break', () => {
-  test('only the first statement is underlined; the printed "O" and the second statement read plain', () => {
+  test('each of the two statements is underlined; the printed "O" between them reads plain', () => {
     renderSession(card(SPANISH_HIGHER, 'es-2010-hl-b-5'));
     const question = screen.getByTestId('mark-bank-question-text');
     const marked = [...question.querySelectorAll('span')].filter(span => span.style.textDecorationLine === 'underline' || span.style.backgroundImage);
-    expect(marked.map(span => span.textContent)).toEqual(['El invento más importante del siglo pasado.']);
+    expect(marked.map(span => span.textContent)).toEqual(['El invento más importante del siglo pasado.', 'El silencio no existe en el mundo moderno.']);
     expect(question.textContent).toContain('El invento más importante del siglo pasado.\nO\nEl silencio no existe en el mundo moderno.');
+  });
+
+  test('an either/or choice: one mark per alternative, the lead-in and the connector plain', () => {
+    const marks = (text: string) => emphasisSegments(text).filter(s => s.marked).map(s => s.text);
+    // es-2010-hl-a1b-4: the instruction stays plain, both phrases are marked.
+    expect(marks('Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:\n...es de suma importancia... (paragraph 1)\nO\n…los voluntarios se encargan de que los ancianos se alimenten correctamente. (paragraph 5)'))
+      .toEqual(['...es de suma importancia... (paragraph 1)', '…los voluntarios se encargan de que los ancianos se alimenten correctamente. (paragraph 5)']);
+    // An alternative of two lines is marked on its first; the other branch takes as many lines.
+    expect(marks('Lead-in.\nAlpha first.\nAlpha second.\nnó\nBeta first.\nBeta second.')).toEqual(['Alpha first.', 'Beta first.']);
+    // A command word in an alternative is marked by the usual rule.
+    expect(marks('Explain any two of the following metal properties: (i) Toughness.\nOR\n(i) Describe one application for robotics.'))
+      .toEqual(['Explain any two of the following metal properties:', 'Describe one application for robotics.']);
+    // No connector line: one mark, as before.
+    expect(marks('El invento.\nEl silencio.')).toEqual(['El invento.']);
+    // A connector with nothing after it is not a choice.
+    expect(marks('A Private Company Limited by shares (LTD company).\nor')).toEqual(['A Private Company Limited by shares (LTD company).']);
+    for (const text of ['A.\nO\nB.', 'x\n\nnó\n\ny\nz', 'Lead.\nA\nOR\nB\nor\nC']) {
+      expect(emphasisSegments(text).map(s => s.text).join('')).toBe(text);
+    }
   });
 
   test('the split never drops or adds a character', () => {
@@ -174,6 +211,30 @@ describe('es-2010-hl-b-5: the mark stops at the first printed line break', () =>
       expect(marked.trim()).not.toContain('\n');
       expect(marked.trim()).not.toBe('');
     }
+  });
+});
+
+describe('the falling-split sentence is said only of a split that falls', () => {
+  test('eng-2024-hl-q8-c-ii ("4 + 4") no longer says the first answers are marked higher', () => {
+    renderSession(card(ENGINEERING_HIGHER, 'eng-2024-hl-q8-c-ii'));
+    reveal();
+    expect(screen.queryByText(/higher than the rest/)).not.toBeInTheDocument();
+  });
+
+  test('a falling split keeps it (bio-2023-hl-q2-f, "2(5) + 5(2)")', () => {
+    renderSession(card(BIOLOGY_HIGHER, 'bio-2023-hl-q2-f'));
+    reveal();
+    expect(screen.getByText(/higher than the rest/)).toBeInTheDocument();
+  });
+
+  test('reading the notation', () => {
+    expect(splitSteps('2(5) + 5(2)')).toEqual([5, 5, 2, 2, 2, 2, 2]);
+    expect(splitSteps('5 + (5 + 5)')).toEqual([5, 5, 5]);
+    expect(splitSteps('[2 × 3]')).toEqual([3, 3]);
+    expect(splitSteps('5+5.')).toEqual([5, 5]);
+    expect(splitSteps('5+5 (two examples)')).toBeNull();
+    expect(['4 + 4', '10 + 10 + 10', '5 × 1', '[3 + 3]'].map(uniformSplit)).toEqual([true, true, true, true]);
+    expect(['4 + 3', '2(5) + 5(2)', '6(3) + 2', '4 + 2 + 2', '5 + 5 (two examples)'].map(uniformSplit)).toEqual([false, false, false, false, false]);
   });
 });
 

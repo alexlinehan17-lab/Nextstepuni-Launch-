@@ -179,3 +179,68 @@ function endAtLineBreak(split: QuestionEmphasis): QuestionEmphasis {
   if (cut < 0) return split;
   return { before: split.before, marked: split.marked.slice(0, cut), after: split.marked.slice(cut) + split.after };
 }
+
+/**
+ * A line that holds nothing but the paper's word for "or" between two
+ * alternatives. The words are the ones the decks print alone on a line:
+ * Spanish "O" and "ó", Irish "nó" and "NÓ", Engineering "OR", Business "or".
+ */
+const CONNECTOR_LINE = /^[ \t]*(?:o|ó|or|nó)[ \t]*$/i;
+
+/** One run of a question's text, marked or plain. */
+export interface EmphasisSegment {
+  text: string;
+  marked: boolean;
+}
+
+const asSegments = ({ before, marked, after }: QuestionEmphasis): EmphasisSegment[] =>
+  [{ text: before, marked: false }, { text: marked, marked: true }, { text: after, marked: false }]
+    .filter(segment => segment.text !== '');
+
+/**
+ * The question's runs, marked and plain, in order; joined they are the input.
+ *
+ * Most questions take one mark (splitForEmphasis). A question that offers a
+ * choice, its alternatives either side of a line holding only the paper's
+ * "or", takes one mark per alternative instead: the first line of each,
+ * by the same command and one-line rules, with the "or" and any lead-in
+ * plain. Spanish 2010 HL Section B Q5 underlined its first statement only,
+ * which made one of the two choices look like the task.
+ *
+ * The last alternative runs from its "or" to the end; the first takes as
+ * many lines before the first "or" as the last one has, so a lead-in such
+ * as "Explica ... una de las frases siguientes:" stays outside both.
+ */
+export function emphasisSegments(text: string): EmphasisSegment[] {
+  const q = text ?? '';
+  const lines = q.split('\n');
+  const content = (i: number) => lines[i].trim() !== '' && !CONNECTOR_LINE.test(lines[i]);
+  const connectors = lines
+    .map((line, i) => (CONNECTOR_LINE.test(line)
+      && lines.slice(0, i).some((_, j) => content(j))
+      && lines.slice(i + 1).some((_, j) => content(i + 1 + j)) ? i : -1))
+    .filter(i => i >= 0);
+  if (!connectors.length) return asSegments(splitForEmphasis(q));
+
+  // The content lines of each alternative after an "or", up to the next one.
+  const after = connectors.map((c, k) => lines
+    .map((_, i) => i)
+    .filter(i => i > c && i < (connectors[k + 1] ?? lines.length) && content(i)));
+  const lastSize = Math.max(1, after[after.length - 1].length);
+  const firstAlternative = lines.map((_, i) => i).filter(i => i < connectors[0] && content(i)).slice(-lastSize);
+  const markedLines = new Set([firstAlternative[0], ...after.map(alternative => alternative[0])]);
+
+  const segments: EmphasisSegment[] = [];
+  const push = (segment: EmphasisSegment) => {
+    if (!segment.text) return;
+    const last = segments[segments.length - 1];
+    if (last && last.marked === segment.marked) last.text += segment.text;
+    else segments.push({ ...segment });
+  };
+  lines.forEach((line, i) => {
+    if (i > 0) push({ text: '\n', marked: false });
+    if (markedLines.has(i)) asSegments(splitForEmphasis(line)).forEach(push);
+    else push({ text: line, marked: false });
+  });
+  return segments;
+}
