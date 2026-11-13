@@ -659,7 +659,8 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         # Kristina: …".
         m = (re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line) or re.match(r'^([A-F]):? (\d)\b:?\s*(.*)$', line)
              or re.match(r'^([A-F])(\d):\s*(.*)$', line)
-             or re.match(r'^([A-F])\.\s*\((\d)\)\s*(.*)$', line))     # "A. (2) Kristina: …" (2014)
+             or re.match(r'^([A-F])\.\s*\((\d)\)\s*(.*)$', line)      # "A. (2) Kristina: …" (2014)
+             or re.match(r'^\(([A-F])\)\s*\((\d)\)\s*(.*)$', line))   # "(E) (1) Frau Rahm: …" (2011)
         if m:
             crit.append(_criterion(m.group(1).lower(), m.group(1), int(m.group(2)), prompt + [line]))
             prompt = []

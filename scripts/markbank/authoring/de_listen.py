@@ -712,6 +712,7 @@ def leaf_rows(leaf, asked_text):
     label = None
     group = None
     last = None
+    field_price = None
 
     def close():
         nonlocal group
@@ -803,6 +804,27 @@ def leaf_rows(leaf, asked_text):
             close()
             label = m.group(1)
             last = None
+            continue
+        # A field heading in capitals with its price, its answer unpriced
+        # below it: "NAME (4 marks)" / "• (4 marks: Deduct 1 mark for each
+        # incorrect/missing letter)" / "SCHUSTER" (2011 Ordinary).
+        m = re.fullmatch(r'([A-ZÄÖÜ][A-ZÄÖÜ ]{2,30})\s*\((\d{1,2})\s*marks?\)', s)
+        if m:
+            close()
+            label, field_price = m.group(1).strip(), int(m.group(2))
+            last = None
+            continue
+        m = re.fullmatch(r'(?:[•▪◦\-–*]\s*)?\((\d{1,2})\s*marks?\s*:\s*(.+)\)', s)
+        if m and field_price is not None and int(m.group(1)) == field_price:
+            pending.append(m.group(2).strip())
+            continue
+        if field_price is not None and not PRICE.search(s) and not NOTE.match(s):
+            text_ = MARKER.match(s).group(4).strip() if MARKER.match(s) else s
+            last = {'kind': 'point', 'text': text_, 'marks': field_price, 'label': label,
+                    'notes': pending}
+            pending = []
+            field_price = None
+            items.append(last)
             continue
         # A lead-in over the list a rate has just opened: "(Any three: 2+2+1
         # marks)" / "Pupils learn" / "1. about film history" (2012 Higher).

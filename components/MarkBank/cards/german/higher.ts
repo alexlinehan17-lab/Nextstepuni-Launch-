@@ -167,7 +167,8 @@ export const CARDS: SecCard[] = [
     questionText: "Mention three features relating to the interior of the hairdressing salon and, in addition, the approach to dealing with customers. (lines 33 – 42)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":4,"perOption":2,"options":["(Any three features relating to interior: 3 x 2 marks)","renovated *****","bright","(almost) minimalist","(customers sit in front of) a long mirror(s)","mirror(s) is indirectly lit","a shelf at the cash desk","trophies (he won in London are on shelf). (Approach: 2 marks)","patient/ polite/ courteous / obliging / accommodating"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any three features relating to interior: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “Any three features relating to interior”.", group: {"claimMax":3,"perOption":2,"options":["renovated","bright","(almost) minimalist","(customers sit in front of) a long mirror(s)","mirror(s) is indirectly lit","a shelf at the cash desk","trophies (he won in London are on shelf)."]} },
+    { id: "r-2", kind: "point", verbatim: "patient/ polite/ courteous / obliging / accommodating", marks: 2, contextNote: "The scheme heads this answer “Approach”." },
     ],
     sourceMaterial: {
           "kind": "source-text",

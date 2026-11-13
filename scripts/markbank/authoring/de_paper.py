@@ -516,7 +516,7 @@ class DePaper:
             # gutter into the right one: "Er war jeden Morgen am / bei / um /
             # in" / … "acht Uhr im Geschäft." (2013 Ordinary). Put back.
             left, right = list(lines_of.get((q, 'L'), [])), list(lines_of.get((q, 'R'), []))
-            open_at = [k for k, l in enumerate(left) if l.count(' / ') >= 2 and not re.search(r'[.?!]\s*$', l)]
+            open_at = [k for k, l in enumerate(left) if l.count('/') >= 2 and not re.search(r'[.?!]\s*$', l)]
             spill = [k for k, l in enumerate(right) if k > 0 and re.match(r'^[a-zäöü]', l.strip())
                      and re.search(r'[.?!]\s*$', l) and re.search(r'[.?!]\s*$', right[k - 1])]
             if len(open_at) == 1 and len(spill) == 1:
@@ -532,7 +532,7 @@ class DePaper:
                 # (2014 Ordinary numbers no sentence: the items begin at the
                 # first line offering its choices, "Er fuhr mit / zu / auf /
                 # nach dem Lift …".)
-                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if ' / ' in l), None)
+                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if l.count('/') >= 2), None)
                 items = (irish[m.start():] if m else
                          ' '.join(lines_of[(q, 'L')][first:]) if first is not None else '')
                 text = f'{english} {items}'.strip()

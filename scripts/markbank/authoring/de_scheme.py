@@ -128,7 +128,7 @@ Q_HEAD_HL = re.compile(r'^(Frage|Question|Ceist)\s*(\d{1,2})\s*[:.]?\s*'
                        r'(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
 # (2013 Ordinary names a question's kind before its tariff: "4. True / False
 # 10 marks: 5 x 2 marks".)
-Q_HEAD_OL = re.compile(r'^(\d{1,2})\s*\.\s*(?:True\s*/\s*False\s+)?(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
+Q_HEAD_OL = re.compile(r'^(\d{1,2})\s*\.\s*(?:True\s*/\s*False\s+|Sentences\s+)?(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
 # A lettered head. Higher wraps its tariff in its own brackets — "(a) (6
 # marks)" — Ordinary does not — "(a) 6 marks: (i) 4 marks, (ii) 2 marks)",
 # whose trailing bracket is unbalanced in the SEC's own file — and 2023
@@ -182,6 +182,7 @@ ELLIPSIS = re.compile(r'^[.…]{1,4}\s')
 # the SEC did not number it — joining it to the line above welded a paragraph
 # heading to its own English translation and priced the pair at one of the two.
 TRAIL_MARK = re.compile(r'\s*\((\d{1,2})(?:\s*marks?)?\)\s*$', re.I)
+TRAIL_MARK_STOP = re.compile(r'\s*\((\d{1,2})\s*marks?\)\.\s*$', re.I)
 # Any bracketed bare number anywhere in a line. Where one survives after the
 # trailing mark is taken off, the mark was part of the ANSWER's own wording —
 # "Three years (1) ago (1)" prices two elements of one answer — and taking it
@@ -255,6 +256,7 @@ MARK_BOXES = re.compile(r'^(?:\(\d{1,2}\)\s*){2,}$')
 SEGMENT_RATED = re.compile(r'^([A-Z][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,4}'
                            r'|(?!Any\b)[A-Z][a-zäöüß][\w’\']*\s+[A-Z][a-zäöüß][\w’\']*(?:\s+[a-zäöüß][\w’\']*){1,3})'
                            r'\s*:\s*(.+)$')
+BRACKET_RATED = re.compile(r'\((Any\s+\w+\s+[a-z][^:()]*?|[A-Z][a-z]+)\s*:\s*([^()]+)\)')
 BRACKET_HEADING = re.compile(r'^\((?!(?:Must|Allow|Accept|Any|Only|Not|No|Both|One|Two|Three|Plus|Also)\b)'
                              r'([A-Z][a-z]+(?:\s+[a-z]+){0,3}(?:\s+[A-Z][a-z]+)?)\)$')
 # (Or the quoted answer straight before its price: "N.B. “I want to become an
@@ -372,6 +374,13 @@ def read_rate(text):
     s = re.sub(r'(?<=\))\s*:$', '', s)
     # "Any THREE: 9 marks: 3, 3, 3 marks." (2012 Ordinary): a full stop.
     s = re.sub(r'(?<=marks)\.$', '', s)
+    # "(10 marks) 5 x 2 marks" (2011 Ordinary): the total bracketed, its spec
+    # after it.
+    m = re.fullmatch(r'\((\d{1,3})\s*marks?\)\s+(\d.*)', s, re.I)
+    if m:
+        steps_ = parse_spec(m.group(2))
+        if steps_ is not None and sum(steps_) == int(m.group(1)):
+            return steps_, len(steps_)
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
     # 2026 Higher prints "(Any four: 4 x 2 marks" with its bracket never
@@ -565,6 +574,10 @@ MISPRINTS = {
     # 4 + 1 + 6. The "5" beside "(i) =" is the misprint.
     (2011, 'hl'): [('2. (5 marks: (i) = 5 (1 + (2x1); (ii) = 2)',
                     '2. (5 marks: (i) = 3 (1 + (2x1); (ii) = 2)')],
+    # 2011 Ordinary prints "Any TW0" with a zero for the letter O, under a
+    # split it states in words beside it: "6 marks: 4, 2", two answers.
+    (2011, 'ol'): [('Any TW0 of the following details: 6 marks: 4, 2',
+                    'Any TWO of the following details: 6 marks: 4, 2')],
 }
 
 
@@ -616,6 +629,11 @@ class DeScheme:
         # 2016's text layer carries its bullet as a control character, \x02
         # ("\x02 200 times (3)"): read as the bullet it prints.
         raw = raw.replace('\x02', '•')
+        # 2011 Ordinary sets four question numbers in a symbol font whose
+        # digits and full stop reach the text layer in the private-use range
+        # (U+F030-F039, U+F02E = "0"-"9", "."): "\uf031\uf02e (18 marks: …)"
+        # is "1. (18 marks: …)". Only those eleven code points are read.
+        raw = re.sub('[\uf030-\uf039\uf02e]', lambda m: chr(ord(m.group()) - 0xF000), raw)
         # 2010 and 2014 set the bullet as a letter "x": "x Award content marks
         # first.", "x erhält innerhalb einer Stunde einen Rückruf. (2)".
         raw = re.sub(r'(?m)^x (?=[A-Za-zÄÖÜäöü(])', '• ', raw)
@@ -719,6 +737,17 @@ class DeScheme:
             m = Q_HEAD_OL.match(s)
             if m:
                 heads.append((i, int(m.group(1)), m.group(2), None))
+        # Question 1's head printed without its number, under the unit's own
+        # split: " (18 marks: (a) 4; (b) 6; (c) 8;)" (2011 Ordinary). The
+        # line's total must be the split's first share, and question 2 the
+        # first head this reads.
+        split = self.unit_splits.get(unit) or []
+        if heads and heads[0][1] == 2 and split:
+            for i, line in enumerate(body[:heads[0][0]]):
+                m = re.match(r'^\(\s*(\d{1,3})\s*marks?\s*:.*\)$', line.strip())
+                if m and int(m.group(1)) == split[0]:
+                    heads.insert(0, (i, 1, line.strip(), None))
+                    break
         for n, (i, q, clause, word) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(body)
             self._read_question(unit, q, clause, word, body[i + 1:end],
@@ -926,6 +955,9 @@ class DeScheme:
             # circles it. The text layer keeps neither, so the choice is read
             # off the PDF.
             marked = self._marked_choices(preamble)
+            if marked is not None and len(marked[1]) != len(steps) and steps == [len(marked[1])]:
+                # "(5 marks: 1 x 5)" (2011 Ordinary): one mark, five times.
+                steps = [1] * len(marked[1])
             if marked is not None and len(marked[1]) == len(steps):
                 bold = marked[0]
                 items = [{'text': f'{stem} — {word}', 'marks': step}
@@ -995,7 +1027,16 @@ class DeScheme:
         the sentence's own words before its choices, which the card shows
         beside the marked word."""
         sentences = []
+        example = False
         for line in (' '.join(l.split()) for l in lines):
+            # The worked example opens the sentences (2011): it and its own
+            # second line are not asks.
+            if re.match(r'^(?:Sampla|Example)\b', line):
+                example = not re.search(r'[.?!]$', line)
+                continue
+            if example:
+                example = not re.search(r'[.?!]$', line)
+                continue
             if line.count('/') >= 2:
                 sentences.append(line)
             elif sentences and not re.search(r'[.?!]$', sentences[-1]):
@@ -1049,26 +1090,43 @@ class DeScheme:
                                   if x0 <= (w[0] + w[2]) / 2 <= x1 and y0 <= (w[1] + w[3]) / 2 <= y1
                                   and w[4] != '/']
                         ringed.append(inside)
-                    found[text] = (bold, ringed)
+                    # The choices set in italic, where the scheme so sets
+                    # them, bound the stem exactly ("Sie geht dort" / "aufs/
+                    # im / in die / zur", 2011): (before, choices, after).
+                    flags_ = [bool(sp['flags'] & 2) and sp['text'].strip() for sp in spans]
+                    italic = None
+                    if any(flags_):
+                        at = [k for k, f in enumerate(flags_) if f]
+                        first_, last_ = at[0], at[-1]
+                        italic = (' '.join(''.join(sp['text'] for sp in spans[:first_]).split()),
+                                  ' '.join(''.join(sp['text'] for sp in spans[first_:last_ + 1]).split()),
+                                  ' '.join(''.join(sp['text'] for sp in spans[last_ + 1:]).split()))
+                    found[text] = (bold, ringed, italic)
         out, how = [], set()
         for text in sentences:
             if text not in found:
                 return None
             # (2012 sets "auf/ zwischen / neben / vor", a slash with no space.)
-            head = re.split(r'\s*/\s*', text)
-            middle = head[1:-1]
-            k = max(len(c.split()) for c in middle) if middle else 1
-            words = head[0].split()
-            if len(words) < k:
-                return None
-            stem, first = ' '.join(words[:-k]), ' '.join(words[-k:])
-            choices = [first] + [c.strip() for c in middle] + [' '.join(head[-1].split()[:k])]
-            if not stem:
-                # The choices open the sentence: "Mit / auf / nach / bei der
-                # Straße nach Schlitz sind viele Autos." (2012 Ordinary). The
-                # card shows the words after them instead.
-                stem = '… ' + ' '.join(head[-1].split()[k:])
-            bold, rings_here = found[text]
+            bold, rings_here, italic = found[text]
+            if italic and italic[1].count('/') >= 2:
+                stem = italic[0]
+                choices = [c.strip() for c in re.split(r'\s*/\s*', italic[1]) if c.strip()]
+                if not stem:
+                    stem = '… ' + italic[2]
+            else:
+                head = re.split(r'\s*/\s*', text)
+                middle = head[1:-1]
+                k = max(len(c.split()) for c in middle) if middle else 1
+                words = head[0].split()
+                if len(words) < k:
+                    return None
+                stem, first = ' '.join(words[:-k]), ' '.join(words[-k:])
+                choices = [first] + [c.strip() for c in middle] + [' '.join(head[-1].split()[:k])]
+                if not stem:
+                    # The choices open the sentence: "Mit / auf / nach / bei der
+                    # Straße nach Schlitz sind viele Autos." (2012 Ordinary). The
+                    # card shows the words after them instead.
+                    stem = '… ' + ' '.join(head[-1].split()[k:])
             ringed = []
             # (A ring drawn twice round one word, 2012: one ring.)
             rings_here = [list(x) for x in dict.fromkeys(tuple(r) for r in rings_here)]
@@ -1100,7 +1158,7 @@ class DeScheme:
         with pymupdf.open(pdf) as doc:
             for page in doc:
                 words = page.get_text('words')
-                heads = {w[4]: (w[0] + w[2]) / 2 for w in words if w[4] in ('True', 'False')}
+                heads = {w[4].rstrip('/'): (w[0] + w[2]) / 2 for w in words if w[4].rstrip('/') in ('True', 'False')}
                 if len(heads) != 2:
                     continue
                 rows = {}
@@ -1112,7 +1170,7 @@ class DeScheme:
                     want = ' '.join(st.split()[:4])
                     row = next((sorted(r, key=lambda w: w[0]) for r in rows.values()
                                 if want in ' '.join(w[4] for w in sorted(r, key=lambda w: w[0]))), None)
-                    marks = [w for w in row or [] if w[4] == 'X']
+                    marks = [w for w in row or [] if w[4] in ('X', '\uf062')]
                     if len(marks) != 1:
                         out = None
                         break
@@ -1175,10 +1233,11 @@ class DeScheme:
                                  'tentative': tentative})
             cur = None
 
+        tf_table = any(re.fullmatch(r'True\s*/?\s+False\s*/?', b.strip()) for b in block)
         # A true/false table's statement wrapped past its X: "Yvonne macht
         # zum ersten Mal Campingurlaub mit ihren X (2)" / "Freundinnen."
         # (2013 Ordinary) is one statement, its X after it.
-        if any(re.fullmatch(r'True\s+False', b.strip()) for b in block):
+        if any(re.fullmatch(r'True\s*/?\s+False\s*/?', b.strip()) for b in block):
             joined = []
             for b in block:
                 t = b.strip()
@@ -1468,6 +1527,21 @@ class DeScheme:
                         cur = {'text': TRAIL_MARK.sub('', tail).strip(), 'priced': True}
                         segments[-1]['answers'].append(cur)
                     continue
+            # "(Any three features relating to interior: 3 x 2 marks)" over
+            # one list, "(Approach: 2 marks)" over the next (2011 Higher): a
+            # bracketed head that names and prices the list under it. Read as
+            # a rate alone, the first went to a student as an answer and the
+            # second rode on the last answer above it.
+            bh = BRACKET_RATED.fullmatch(' '.join(s.split()))
+            if bh and cue_lines:
+                steps_ = read_rate(bh.group(2))[0]
+                any_ = ANY_N.match(bh.group(1))
+                if steps_ is not None and (
+                        any_ is None or (bh.group(1)[any_.end():].strip()
+                                         and _number(any_.group(1)) == len(steps_))):
+                    new_segment(bh.group(1), steps_)
+                    phase = 'answers'
+                    continue
             got, _cnt, remark = read_rate_line(s)
             rate_here = next((g['steps'] for g in reversed(segments) if g['steps']), None)
             if (got is not None and cur is not None and cur.get('n') and rate_here
@@ -1549,6 +1623,9 @@ class DeScheme:
                 answer = s
             elif ELLIPSIS.match(s) and segments[-1]['answers']:
                 answer = s
+            elif tf_table and re.search(r'\s[X\uf062]$', s):
+                # A true/false statement with its unpriced tick (2011 Ordinary).
+                answer = s
             elif MATCH_KEY.match(s):
                 for pair in MATCH_PAIR.finditer(s):
                     segments[-1]['answers'].append(
@@ -1576,6 +1653,14 @@ class DeScheme:
                 cue_lines.append(s)
                 if CUE_END.search(s):
                     phase = 'answers'
+            elif (cur is not None and re.search(r'per heading', clause or '', re.I)
+                    and TRAIL_MARK.search(cur['text']) and re.match(r'^[A-ZÄÖÜ]', s)):
+                # A heading's explanation printed unpriced, its price on the
+                # last of its "OR" lines: "4. Zwischen Minirock und Tradition
+                # (2)" / "Between mini skirt(s) and tradition" / "OR … (2)"
+                # (2011 Ordinary). A new answer, never the heading's second line.
+                cur = {'text': s, 'n': None}
+                segments[-1]['answers'].append(cur)
             elif cur is not None:
                 # A wrapped answer: the SEC breaks a long marking point across
                 # two printed lines and numbers the first only.
@@ -1593,6 +1678,14 @@ class DeScheme:
             overview['steps'] = None
         for seg in segments:
             for a in seg['answers']:
+                # "1. renovated *****" (2011 Higher): a run of stars the
+                # scheme prints after an answer and keys nowhere.
+                a['text'] = re.sub(r'\s*\*{3,}\s*$', '', a['text'])
+                # "She started up her own web site (5 marks)." (2012
+                # Ordinary): the price with the sentence's stop after it.
+                stop = TRAIL_MARK_STOP.search(a['text'])
+                if stop:
+                    a['text'] = a['text'][:stop.start()] + f' ({stop.group(1)} marks)'
                 m = TRAIL_MARK.search(a['text'])
                 stripped = TRAIL_MARK.sub('', a['text']).strip()
                 if m and not INNER_MARK.search(stripped):
@@ -1607,9 +1700,10 @@ class DeScheme:
         # (A statement wrapped past its X runs on after it: "Yvonne macht zum
         # ersten Mal Campingurlaub mit ihren X (2)" / "Freundinnen.", 2013.)
         answers_ = [a for g in segments for a in g['answers']]
-        tick = re.compile(r'^(.*?\S)\s+X(?:\s*\(\s*\d{1,2}\s*\))?(?:\s+(\S.*))?$')
+        # (2011 sets the mark as a symbol-font tick, U+F062, not an X.)
+        tick = re.compile(r'^(.*?\S)\s+[X\uf062](?:\s*\(\s*\d{1,2}\s*\))?(?:\s+(\S.*))?$')
         if (answers_ and all(tick.match(a['text']) for a in answers_)
-                and any(re.fullmatch(r'True\s+False', b.strip()) for b in block)):
+                and any(re.fullmatch(r'True\s*/?\s+False\s*/?', b.strip()) for b in block)):
             said = [' '.join(x for x in tick.match(a['text']).groups() if x) for a in answers_]
             cols = self._tick_columns(said)
             if cols is None:
@@ -2013,7 +2107,7 @@ def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None, a
                 # (2012 Ordinary reprints no question over its table: found by
                 # the question's own head, "1. (13 marks)".)
                 top = next((k for k, r in rows.items()
-                            if ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])) == anchor), None)
+                            if ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])).startswith(anchor)), None)
             if top is None:
                 continue
             draws = page.get_drawings()
@@ -2022,7 +2116,7 @@ def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None, a
             vs = sorted({round(d['rect'].x0) for d in draws
                          if d['rect'].width < 2 and d['rect'].height > 20 and d['rect'].y0 > top})
             if len(vs) != 3 or len(hs) < 3:
-                return None
+                continue          # (another question's head reads the same: "1. (10 marks)")
             left, gutter, right = vs
             out = []
             for y0, y1 in zip(hs, hs[1:]):
@@ -2036,12 +2130,59 @@ def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None, a
                         k = next((k for k in got if abs(k - w[1]) <= 3), w[1])
                         got.setdefault(k, []).append(w)
                     return [' '.join(x[4] for x in sorted(v, key=lambda x: x[0])) for _k, v in sorted(got.items())]
-                field = ' '.join(lines([w for w in cell if w[0] < gutter]))
-                answer = lines([w for w in cell if w[0] >= gutter])
-                out.append((' '.join(field.split()), answer))
-            priced = [re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', f) for f, _a in out]
-            if not out or None in priced or sum(int(m.group(1)) for m in priced) != total:
-                return None
+                left_ws = [w for w in cell if w[0] < gutter]
+                if not left_ws:
+                    continue              # a heading row over the answers ("Max Kepler Rozychi")
+                # 2011 rules two fields into one band ("Lived in…? Berlin (1)" /
+                # "Name of school? John F. Kennedy School (1)"): its labels,
+                # each closed by "?", take the answer lines nearest them.
+                label_rows = lines(left_ws)
+                ys = sorted({round(w[1]) for w in left_ws})
+                groups, cur_g = [], []
+                for y in ys:
+                    row_ws = [w for w in left_ws if abs(round(w[1]) - y) <= 3]
+                    if not row_ws or any(row_ws[0] in g for g in groups + [cur_g]):
+                        continue
+                    cur_g += [w for w in row_ws if w not in cur_g]
+                    if ' '.join(x[4] for x in sorted(row_ws, key=lambda x: x[0])).rstrip().endswith('?'):
+                        groups.append(cur_g)
+                        cur_g = []
+                if cur_g:
+                    groups.append(cur_g)
+                # A label's own price under its question mark is the label's:
+                # "What made them … life?" / "(3 marks)" (2012).
+                for k in range(len(groups) - 1, 0, -1):
+                    if re.fullmatch(r'\(\s*\d{1,2}\s*marks?\s*\)',
+                                    ' '.join(' '.join(lines(groups[k])).split())):
+                        groups[k - 1] += groups.pop(k)
+                right_ws = [w for w in cell if w[0] >= gutter]
+                if len(groups) < 2:
+                    out.append((' '.join(' '.join(label_rows).split()), lines(right_ws)))
+                    continue
+                spans = [(min(w[1] for w in g), max(w[3] for w in g)) for g in groups]
+                owned = [[] for _g in groups]
+                for w in right_ws:
+                    mid = (w[1] + w[3]) / 2
+                    at = min(range(len(spans)), key=lambda k: 0 if spans[k][0] <= mid <= spans[k][1]
+                             else min(abs(mid - spans[k][0]), abs(mid - spans[k][1])))
+                    owned[at].append(w)
+                for g, ws_ in zip(groups, owned):
+                    out.append((' '.join(' '.join(lines(g)).split()), lines(ws_)))
+
+            def worth(field, answer):
+                m = re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field)
+                if m:
+                    return int(m.group(1))
+                got, _c = read_rate(answer[0]) if answer else (None, None)
+                if got is None and answer and ':' in answer[0]:
+                    got, _c = read_rate(answer[0].split(':', 1)[1].strip())
+                if got is not None:
+                    return sum(got)
+                prices = [int(n) for n in re.findall(r'\(\s*(\d{1,2})\s*\)', ' '.join(answer))]
+                return sum(prices) if prices else None
+            worths = [worth(f, a) for f, a in out]
+            if not out or None in worths or sum(worths) != total:
+                continue
             return out
     return None
 

@@ -75,12 +75,12 @@ LEVELS = ('hl', 'ol')
 # listening asks are (de_listen.py, answered from the SEC recording). A sitting
 # opts in once its cards have been read against its scheme, one commit each.
 READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
-    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol'), (2011, 'hl')}
-LISTENING_CARDED = {(2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol')}
+LISTENING_CARDED = {(2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
 # The sittings whose written production (Äußerung zum Thema, Schriftliche
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
-WRITING_CARDED = {(2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+WRITING_CARDED = {(2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
 # The SEC's deferred sittings carded (2022 Higher, the only one the archive
 # holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
 # cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
@@ -144,7 +144,8 @@ def clean_question(text):
     """The printed question, without the blank answer rules or bullet glyphs,
     nor the head of the tick table under it ("Fíor / True Bréagach / False",
     2014 Ordinary)."""
-    text = re.sub(r'\s*Fíor\s*/\s*True\s+Bréagach\s*/\s*False\s*$', '', text or '')
+    text = re.sub(r'\s*(?:Fíor\s*/\s*True\s+Bréagach\s*/\s*False|True\s*/\s*False\s*/\s*Fíor\s+Bréagach)\s*$',
+                  '', text or '')
     return re.sub(r'[ \t]{2,}', ' ',
                   PRIVATE_USE.sub(' ', ANSWER_RULE.sub(' ', text))).strip()
 
@@ -646,7 +647,11 @@ def _field_rows(table, scheme_path=None):
         text = ' '.join(l for l in answer if l not in notes)
         alts = re.findall(r'\s+OR\s+([^()]+?)\s*\((\d)\)', text)
         text = re.sub(r'\s+OR\s+[^()]+?\s*\(\d\)', '', text)
-        field_total = int(re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field).group(1))
+        priced_field = re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field)
+        # (A field the table prices nowhere but in its answer: "Lived in…?" /
+        # "Berlin (1)", 2011.)
+        field_total = (int(priced_field.group(1)) if priced_field
+                       else sum(int(n) for n in re.findall(r'\(\s*(\d{1,2})\s*\)', text)))
         comps = de_listen._components(text)
         said = ([x if re.search(r'[.!?)]$', x) else f'{x}.' for x in notes]
                 + [f'The scheme prints “OR {a.strip()} ({n})” beside these.' for a, n in alts])
@@ -655,8 +660,11 @@ def _field_rows(table, scheme_path=None):
             # holds it: a label the answer column splits ("Family" / "Father
             # … (1)" / "members …", 2012) keeps its first printed line.
             title = name
-            if scheme_path and _norm_words(name) not in _norm_words(open(scheme_path, encoding='utf-8').read()):
-                title = name.split()[0]
+            if scheme_path:
+                printed = _norm_words(open(scheme_path, encoding='utf-8').read())
+                words_ = name.split()
+                title = next((' '.join(words_[:n]) for n in range(len(words_), 0, -1)
+                              if _norm_words(' '.join(words_[:n])) in printed), words_[0])
             rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
                          'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
                          'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
