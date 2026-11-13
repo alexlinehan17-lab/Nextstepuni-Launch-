@@ -13,8 +13,13 @@
  *   Angewandte Grammatik  -> "G"
  *   Listening, Part 3     -> "3" in the listening booklet
  *   Äußerung (a), Schriftliche Produktion (b) -> "T-A", "P-B"
- * The 2010-2018 written booklets number their reading questions straight
- * through instead ("1" to "14"); no card of those sittings is in the bank yet.
+ * The 2010-2018 written booklets are named straight through in the Atlas
+ * instead ("1" to "13"), though the paper restarts its numbering under each
+ * text, as the cards cite it: TEXT II Question 1 of a sitting whose TEXT I
+ * prints four questions is Atlas question "5". The offset is the number of
+ * questions the earlier texts print, read from the sitting's own cards, which
+ * carry every printed reading question; a guard checks the texts' questions
+ * add to the Atlas's numbered ones.
  */
 
 import { describe, expect, it } from 'vitest';
@@ -41,7 +46,42 @@ function atlasQuestion(questionRef: string): string | null {
   return null;
 }
 
+/** For each sitting, how many questions each text prints (its highest
+ *  question number on a card). */
+const printedPerText = new Map<string, Record<string, number>>();
+for (const card of cards) {
+  const m = REF.exec(card.questionRef);
+  if (!m || !TEXT[m[1]] || !m[2]) continue;
+  const key = `${card.year}|${card.level}|${card.paperFileid}`;
+  const counts = printedPerText.get(key) ?? {};
+  counts[m[1]] = Math.max(counts[m[1]] ?? 0, Number(m[2]));
+  printedPerText.set(key, counts);
+}
+
+/** The straight-through Atlas name of a reading card's question (2010-2018). */
+function straightThrough(card: (typeof cards)[number]): string | null {
+  const m = REF.exec(card.questionRef);
+  if (!m || !TEXT[m[1]] || !m[2]) return null;
+  const counts = printedPerText.get(`${card.year}|${card.level}|${card.paperFileid}`) ?? {};
+  const before = ['T1', 'T2', 'T3'].slice(0, ['T1', 'T2', 'T3'].indexOf(m[1]));
+  return String(before.reduce((sum, unit) => sum + (counts[unit] ?? 0), 0) + Number(m[2]));
+}
+
 describe('German cards in the Topic Atlas', () => {
+  it('reads a straight-through Atlas paper only where its texts add up to it', () => {
+    const wrong: string[] = [];
+    for (const [key, counts] of printedPerText) {
+      const [year, level, fileid] = key.split('|');
+      const paper = topicsForPaper('german', Number(year), level as 'higher' | 'ordinary', 'ev',
+        `${fileid.replace(/\.pdf$/i, '')}.pdf`);
+      const numbered = paper?.q.filter(item => /^\d+$/.test(item.n)).length ?? 0;
+      const printed = Object.values(counts).reduce((sum, n) => sum + n, 0);
+      if (numbered && numbered !== printed) wrong.push(`${key}: Atlas ${numbered}, texts ${printed}`);
+    }
+    expect(wrong).toEqual([]);
+  });
+
+
   it('names an Atlas question for every card', () => {
     expect(cards.filter(card => !atlasQuestion(card.questionRef)).map(card => card.id)).toEqual([]);
   });
@@ -53,7 +93,8 @@ describe('German cards in the Topic Atlas', () => {
       if (!n) continue;
       const fileid = `${String(card.paperFileid).replace(/\.pdf$/i, '')}.pdf`;
       const paper = topicsForPaper('german', card.year, card.level, 'ev', fileid);
-      const question = paper?.q.find(item => item.n === n);
+      const question = paper?.q.find(item => item.n === n)
+        ?? (paper?.q.some(item => item.n === '1') ? paper.q.find(item => item.n === straightThrough(card)) : undefined);
       if (!paper || !question) {
         missing.push(`${card.id}: ${fileid} has no question ${n}`);
         continue;

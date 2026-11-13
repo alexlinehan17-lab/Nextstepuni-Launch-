@@ -55,7 +55,12 @@ CREDIT = re.compile(r'^\s*(?:Nach|Quellen?|Aus|Adaptiert)\s*:\s*(.+)$', re.I)
 # "Deutschlandfunk / ZEIT ONLINE" — a paper and a broadcaster.
 DOMAIN = re.compile(r'https?://|\bwww\.|\.(?:de|ch|at|com|net|org|eu)\b'
                     r'|\bmagazin\b|\bZEIT ?(?:Campus|Chancen|ONLINE)\b|\bDer Spiegel\b'
-                    r'|\bDeutschlandfunk\b', re.I)
+                    r'|\bDeutschlandfunk\b'
+                    # 2018 credits newspapers by name: "Die Zeit Abitur, Oktober
+                    # 2017", "Süddeutsche Zeitung", "Tagesspiegel u. Augsburger
+                    # Allgemeine".
+                    r'|\bZeitung\b|\bDie Zeit\b|\bTagesspiegel\b|\b(?:Augsburger|Frankfurter) Allgemeine\b',
+                    re.I)
 
 
 def topic_for(unit, credit):

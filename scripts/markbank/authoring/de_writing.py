@@ -138,7 +138,7 @@ def theme_grid(S, letter):
     [(id, label, marks, [printed lines])] for A, B, C and Dis."""
     starts = [i for i, l in enumerate(S.lines) if re.match(r'^Content = 13 \(A = 3; B = 4; C = 4; Dis\. 2\)', l.strip())]
     at = starts['ab'.index(letter)]
-    end = _find(S, r'^Dis\. 2 marks', at)
+    end = _find(S, r'^Dis\.:? 2 marks', at)       # "Dis.: 2 marks" (2018)
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
@@ -147,7 +147,7 @@ def theme_grid(S, letter):
             cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
             points.append(cur)
             continue
-        if line.startswith('Dis. 2 marks'):
+        if re.match(r'^Dis\.:? 2 marks', line):
             points.append({'id': 'dis', 'label': 'Dis.', 'marks': 2, 'lines': [line]})
             cur = None
             continue
@@ -438,14 +438,19 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     out = []
     # The one expression table: column one is Äußerung's 7 and Schriftliche
     # Produktion's "Lower Ex." 7, column two the full 10.
-    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung zum Thema')
+    # 2018 prints the head over three lines, "Guidelines for marking
+    # Expression in:" / "Äußerung zum Thema (a) and (b)" / "Schriftliche …";
+    # 2017 sets "Äuβerung" with a Greek beta.
+    one, two, nb, ex_at = expression_scale(
+        S, r'^Guidelines for marking Expression in(?:\s+[ÄA]u[ßsβ]{1,2}erung zum Thema|:\s*$)')
     # "… (0-7) for expression." (2022-2026) or "… for expression and write
     # “Lower Ex.” to indicate this." (2021).
     sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark in the Schriftliche',
                         r'for expression(?:\.| and write .*?to indicate this\.)')
     at = _find(S, r'^TEXT II: [ÄA]U[ßS]{1,2}ERUNG ZUM THEMA')
     a_at = _find(S, r'^\(a\) ', at)
-    b_at = _find(S, r'^E-?Mail schreiben|^E-mail schreiben|^\(b\) ', a_at + 1)
+    # (2023 heads it "E-Mail (25-30 words) (15 marks)".)
+    b_at = _find(S, r'^E-?Mail schreiben|^E-mail schreiben|^E-?Mail \(\d|^\(b\) ', a_at + 1)
     head_lines = _lines(S, at, a_at)
     # (a) the dialogue: one criterion per printed turn, "(A1)" … "(F2)", with
     # the prompt printed above it.
@@ -459,12 +464,21 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     lines = _lines(S, a_at, a_end)
     head, crit, prompt = [], [], []
     for line in lines:
-        m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line)
+        if line == 'OR':
+            continue                  # 2018 prints "OR" between (a) and the e-mail
+        # "(A2) Jan Kammann: …", in 2018 "A 2: Dagi Bee: …" / "E 1 Mirko: …",
+        # in 2017 "A: 2 Florian: …".
+        m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line) or re.match(r'^([A-F]):? (\d)\b:?\s*(.*)$', line)
         if m:
             crit.append(_criterion(m.group(1).lower(), m.group(1), int(m.group(2)), prompt + [line]))
             prompt = []
         elif line.startswith('Sie:'):
             prompt.append(line)
+        elif prompt:
+            # The prompt's own second line: "Sie: … Welche Kleidung soll man
+            # auf ein Festival" / "mitnehmen?" (2017), "Sie: Herr Kammann, …" /
+            # "Warum?" (2020).
+            prompt[-1] = f'{prompt[-1]} {line}'
         elif crit:
             crit[-1]['guidance'].append(line)
         else:
@@ -492,7 +506,9 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
                      concept_for, question_ref, [PRACTICE]))
     # Schriftliche Produktion: the fill-in phrases ("St.") are their own
     # claim card (coordinator ruling 2); the grid holds Content and Expression.
-    sp = _find(S, r'^SCHRIFTLICHE PRODUKTION')
+    # The section head, priced — never "Schriftliche Produktion (a) and (b)"
+    # inside the expression guidelines printed above it (2018).
+    sp = _find(S, r'^SCHRIFTLICHE PRODUKTION\s*:?\s*\(?\d')
     a_at = _find(S, r'^\(a\) ', sp)
     b_at = _find(S, r'^\(b\) ', a_at + 1)
     # The listening test follows, or (2021, which prints it first) its
@@ -512,15 +528,18 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         rest = lines[:st_at] + lines[k:]
         ex_line = next((l for l in rest if l.startswith('Ex.')), None)
         if letter == 'a':
-            head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(Cl|[A-F])\.? \((\d)\)')
+            head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(C[lL]|[A-F])\.? \((\d)\)')
+            labelled = [['Cl' if x[0] == 'CL' else x[0]] + x[1:] for x in labelled]   # "CL. (1)", 2017
             cl = [x for x in labelled if x[0] == 'Cl']
             points = [x for x in labelled if x[0] != 'Cl']
             # The content total the section prints, "(St. = 4, C = 16, Ex. =
             # 10)" (2021-2026) or "(St. = 5, C = 15, Ex. = 10)" (2019-2020).
             # 2022 prints the closing apart, "(St. = 4, C = 15, CL = 1, Ex. =
             # 10)": the content the grid holds is then C and CL together.
-            sp_head = ' '.join(_lines(S, sp, lo + 1))
-            content_total = int(re.search(r'\bC\s*=\s*(\d+)', sp_head).group(1))
+            # (2017 prints it under "(a) Letter": "(Start = 5, Content = 15,
+            # Expression = 10)".)
+            sp_head = ' '.join(_lines(S, sp, lo + 3))
+            content_total = int(re.search(r'\bC(?:ontent)?\s*=\s*(\d+)', sp_head).group(1))
             cl_apart = re.search(r'\bCL\s*=\s*(\d+)', sp_head)
             content_total += int(cl_apart.group(1)) if cl_apart else 0
             # Until 2020 the candidate wrote EVERY point, priced as printed
