@@ -733,7 +733,11 @@ CARDS = [
          notes="The scheme prints '4 + 4'. " + _OR9),
 ]
 
-TOPICS = {}
+TOPICS = {
+    'eng-2022-hl-deferred-q3-b-ii': ('eng-3-8', 'elastic against plastic deformation in metals, the '
+                                                'behaviour a tensile test measures, as the rest of '
+                                                'Q3 is filed; "plastic" filed it under plastics'),
+}
 
 # The Topic Atlas topic of each card the reference's headings do not settle
 # (eng_atlas.py). The reference heads no part of this paper's Q2 or Q7: their

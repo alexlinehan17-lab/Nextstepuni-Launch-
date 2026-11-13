@@ -621,6 +621,10 @@ def topic_for_part(A, q, letter, roman, ask):
     return topic
 
 
+# The tariff a scheme prints under a part's last roman, "(Any three) 6 + 6 + 6".
+PART_TARIFF = re.compile(r'\(Any\s+\w+\)\s*\d{1,2}(?:\s*\+\s*\d{1,2})+', re.I)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--report', action='store_true')
@@ -1096,6 +1100,9 @@ def main():
     eng_lists.vertical_lists(cards)
     eng_lists.table_cells(cards)
     eng_lists.degree_signs(cards)
+    # Two (c) branches either side of an OR on a card priced as a whole:
+    # each branch a route, so a student claims the branch they answered.
+    eng_lists.or_routes(cards)
     # Alternatives the session would run together with "or" in one row: each
     # its own option in a count-1 menu at the row's price.
     eng_lists.alternative_menus(cards)
@@ -1103,6 +1110,15 @@ def main():
     # + 11" price, a reading of the scheme, scheme text no row carries, a
     # misprint) goes on the row it qualifies, as the row's contextNote.
     eng_rownotes.promote(cards)
+    # A part's tariff is never an answer. "(Any three) 6 + 6 + 6", printed under
+    # (b)'s last roman, shipped as a claimable row on four 2021-2022 Higher cards.
+    for c in cards:
+        for r in c.get('rows') or []:
+            texts = [r.get('verbatim') or ''] + list((r.get('group') or {}).get('options') or []) \
+                + list(r.get('accepts') or [])
+            if any(PART_TARIFF.search(t) for t in texts):
+                raise SystemExit(f'{c["id"]} {r["id"]}: a part tariff is not an answer: '
+                                 f'{r.get("verbatim")!r}')
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:

@@ -16903,8 +16903,8 @@ export const CARDS: SecCard[] = [
     questionText: "Businesses that achieve quality standards generally have a competitive advantage over other businesses. Explain the competitive sales advantages for either Fairtrade ® or CE marked products.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Fairtrade seeks to create a stable market with producers expected to maintain standards and be sure of getting a fair price for their produce. Fairtrade contributes to sustainable development by offering better trading conditions to marginalised producers and workers.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "CE products must meet European standards to ensure that products are safe and meet environmental standards. Some insurers will demand CE mark for this level of quality control.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Fairtrade seeks to create a stable market with producers expected to maintain standards and be sure of getting a fair price for their produce. Fairtrade contributes to sustainable development by offering better trading conditions to marginalised producers and workers.", marks: null, openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "CE products must meet European standards to ensure that products are safe and meet environmental standards. Some insurers will demand CE mark for this level of quality control.", marks: null, openList: true, route: "b" },
     ],
     questionFigure: {
           "candId": "technology-2021-HL-paper-secC-q4a-art",

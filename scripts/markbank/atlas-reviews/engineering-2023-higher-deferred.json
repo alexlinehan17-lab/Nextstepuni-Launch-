@@ -6,7 +6,7 @@
  "lang": "ev",
  "sitting": "deferred",
  "paperKey": "single",
- "reviewedAt": "2026-11-12",
+ "reviewedAt": "2026-11-13",
  "authoringReview": "scripts/markbank/authoring/eng_residue/y2023_hl_deferred.py",
  "sourceHashes": {
   "paper-trail-corpus/deferredexams/2023/LC027ALP000EV.pdf": "7f253af45af6f6753c95fcd3652ff4ae6650b0a01a915d7179896caa5ac46b6e",
@@ -734,12 +734,12 @@
   },
   {
    "cardId": "eng-2023-hl-deferred-q9-b-iv",
-   "markBankTopicId": "eng-2-10",
+   "markBankTopicId": "eng-2-16",
    "questionNumber": "9",
    "atlasTopicIds": [
     "engineering-higher-energy-electronics-robotics"
    ],
-   "canonicalTopicReview": "A transformer in a mobile phone charger, which the reference files Q9(b)(iv) under; the card's syllabus heading is Joining of materials."
+   "canonicalTopicReview": "A transformer in a mobile phone charger, which the reference files Q9(b)(iv) under; the card's syllabus heading is Electricity and electronics."
   },
   {
    "cardId": "eng-2023-hl-deferred-q9-b-v",
