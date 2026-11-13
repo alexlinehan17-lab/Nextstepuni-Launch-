@@ -51,6 +51,12 @@ def _lines(S, start, stop):
 SHIFTED = re.compile(r'^.*[\x00-\x08\x0b-\x1f][\s.]*')
 
 
+def IS_EX(line):
+    """The Expression line of Schriftliche Produktion: "Ex. (10) …", or in 2012
+    "EXPRESSION (10): Use the grid …"."""
+    return line.startswith('Ex.') or line.startswith('EXPRESSION (')
+
+
 def _readable(line):
     return SHIFTED.sub('', line).strip() if SHIFTED.match(line) else line
 
@@ -636,7 +642,9 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     end = _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1)\b)', b_at) or len(S.lines)
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, end))):
         lines = [l for l in _lines(S, lo, hi) if l != 'OR']
-        st_at = next(k for k, l in enumerate(lines) if l.startswith('St.'))
+        # 2012 names the parts in full: "START (5): Completing the first
+        # paragraph …", "CONTENT (15)", "EXPRESSION (10): Use the grid …".
+        st_at = next(k for k, l in enumerate(lines) if l.startswith('St.') or l.startswith('START ('))
         phrases = []
         k = st_at + 1
         # 2014 prints "St. (5)" alone and its instruction on the line below:
@@ -656,20 +664,21 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             m = re.match(bullet, lines[k])
             phrases.append((m.group(1), int(m.group(2))))
             k += 1
-        st_marks = int(re.match(r'^St\. \((\d)\)', lines[st_at]).group(1))
+        st_marks = int(re.match(r'^(?:St\.|START) \((\d)\)', lines[st_at]).group(1))
         assert sum(m for _p, m in phrases) == st_marks, (year, letter, phrases)
         rest = lines[:st_at] + lines[k:]
         # "Ex. (10) Use the grid on Page 19 to calculate expression mark in
         # relation to" / "C (Content)" (2014): the line's own end, wrapped.
         # Or "Ex. (10)" alone over "Use the grid on Page 19 …" (2014 (b)).
         for j in range(len(rest) - 1):
-            if ((rest[j].startswith('Ex.') and rest[j].endswith(' to') and rest[j + 1].startswith('C (Content)'))
+            if ((IS_EX(rest[j]) and rest[j].endswith(' to') and rest[j + 1].startswith('C (Content)'))
+                    or (IS_EX(rest[j]) and rest[j].endswith(' to C') and rest[j + 1].startswith('(Content)'))
                     or (re.fullmatch(r'Ex\. \(\d{1,2}\)', rest[j]) and rest[j + 1].startswith('Use the grid'))):
                 rest = rest[:j] + [f'{rest[j]} {rest[j + 1]}'] + rest[j + 2:]
                 break
-        ex_line = next((l for l in rest if l.startswith('Ex.')), None)
+        ex_line = next((l for l in rest if IS_EX(l)), None)
         if letter == 'a':
-            head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(C[lL]|[A-F])\.? \((\d)\)')
+            head, labelled = _labelled([l for l in rest if not IS_EX(l)], r'^(C[lL]|[A-F])\.? \((\d)\)')
             labelled = [['Cl' if x[0] == 'CL' else x[0]] + x[1:] for x in labelled]   # "CL. (1)", 2017
             cl = [x for x in labelled if x[0] == 'Cl']
             points = [x for x in labelled if x[0] != 'Cl']
@@ -702,9 +711,9 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
                 reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
         else:
             every = False
-            c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(\d{1,2}\)', l))
-            c_marks = int(re.match(r'^C \((\d{1,2})\)', rest[c_at]).group(1))
-            guide = [l for l in rest[c_at:] if not l.startswith('Ex.')]
+            c_at = next(k for k, l in enumerate(rest) if re.match(r'^(?:C|CONTENT) \(\d{1,2}\)', l))
+            c_marks = int(re.match(r'^(?:C|CONTENT) \((\d{1,2})\)', rest[c_at]).group(1))
+            guide = [l for l in rest[c_at:] if not IS_EX(l)]
             criteria = [_criterion('content', 'C', c_marks, guide)]
             reqs = [l for l in rest[:c_at]] + ([ex_line] if ex_line else [])
         content = [k_['id'] for k_ in criteria]

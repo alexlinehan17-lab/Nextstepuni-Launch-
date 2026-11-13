@@ -1380,7 +1380,7 @@ const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2015: { higher: 46, ordinary: 51 },
   2014: { higher: 46, ordinary: 52 },
   2013: { higher: 44, ordinary: 49 },
-  2012: { higher: 44, ordinary: 0 },
+  2012: { higher: 44, ordinary: 47 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 27, ordinary: 32 },

@@ -975,7 +975,7 @@ PARTIAL_INLINE = re.compile(
     # "doesn't have his phone number (No contact details for him = 2 marks if
     # points 4-6 not given)" (2020 Higher). A conditional alternative may pay
     # as much as the answer it stands in for.
-    r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\))\s*$', re.I)
+    r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\))\.?\s*$', re.I)
 
 
 ALLOW_UNPRICED_NOTE = re.compile(r'\(Allow:?\s*[“"]([^“”"]+)[”"]\s+(if\b[^()]*?)\)', re.I)

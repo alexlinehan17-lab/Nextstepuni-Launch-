@@ -75,12 +75,12 @@ LEVELS = ('hl', 'ol')
 # listening asks are (de_listen.py, answered from the SEC recording). A sitting
 # opts in once its cards have been read against its scheme, one commit each.
 READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
-    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl')}
-LISTENING_CARDED = {(2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol')}
+LISTENING_CARDED = {(2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
 # The sittings whose written production (Äußerung zum Thema, Schriftliche
 # Produktion) is carded on the scheme's grid (de_writing.py), with the printed
 # lower expression scale and, at Ordinary, the fill-in phrases as their own card.
-WRITING_CARDED = {(2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+WRITING_CARDED = {(2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
 # The SEC's deferred sittings carded (2022 Higher, the only one the archive
 # holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
 # cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
@@ -339,12 +339,13 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
                                         'row here, each of its cells a part at its printed mark.'}
                         if n == 1 else {})}
                     for n, (name, cells) in enumerate(grid, start=1)]
-        table = (scheme_field_table(year, level, ask.cue, ask.total)
-                 if isinstance(rows, str) and FIELD_ASK.search(ask.cue or '') else None)
+        table = (scheme_field_table(year, level, ask.cue, ask.total,
+                                    anchor=f'{ask.q}. ({ask.total} marks)' if not ask.letter else None)
+                 if isinstance(rows, str) and FIELD_ASK.search(ask.cue or question or '') else None)
         if table:
             # A field table (2013 Ordinary TEXT II Q1): one row per field, a
             # priced answer as "field — answer", a rated list as a menu.
-            rows = _field_rows(table)
+            rows = _field_rows(table, S.path)
         if isinstance(rows, str):
             refuse(rows, ref, f'{year} {level.upper()} scheme, tariff '
                               f'"{ask.notation}" over {len(ask.answers)} stated '
@@ -610,7 +611,11 @@ def _component_alternative(ask, parts):
     return None
 
 
-def _field_rows(table):
+def _norm_words(text):
+    return re.sub(r'[^0-9a-zäöüß]+', '', (text or '').lower())
+
+
+def _field_rows(table, scheme_path=None):
     """The rows of a field-table card: a field whose answer prices itself
     ("Train (1)") is "field — answer" at that price; a field answered by a
     rate over a numbered list is that list as a menu, the field its heading."""
@@ -634,12 +639,39 @@ def _field_rows(table):
                                    **({'perOptionSteps': steps} if len(set(steps)) > 1 else {})},
                          'contextNote': f'The scheme heads this list “{name}” and prices it “{answer[0]}”.'})
             continue
-        text = ' '.join(answer)
+        # The field's N.B. is its note; an "OR" alternative printed beside a
+        # priced answer ("Mother / Wife/ Helene (1) OR Parents (2)", 2012) is
+        # quoted on the row: it stands in for more than one part.
+        notes = [l for l in answer if re.match(r'^N\.?\s?B\b', l)]
+        text = ' '.join(l for l in answer if l not in notes)
+        alts = re.findall(r'\s+OR\s+([^()]+?)\s*\((\d)\)', text)
+        text = re.sub(r'\s+OR\s+[^()]+?\s*\(\d\)', '', text)
+        field_total = int(re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field).group(1))
+        comps = de_listen._components(text)
+        said = ([x if re.search(r'[.!?)]$', x) else f'{x}.' for x in notes]
+                + [f'The scheme prints “OR {a.strip()} ({n})” beside these.' for a, n in alts])
+        if comps and len(comps) > 1 and sum(m_ for _w, m_ in comps) == field_total:
+            # The row's own heading is the field as the scheme's text layer
+            # holds it: a label the answer column splits ("Family" / "Father
+            # … (1)" / "members …", 2012) keeps its first printed line.
+            title = name
+            if scheme_path and _norm_words(name) not in _norm_words(open(scheme_path, encoding='utf-8').read()):
+                title = name.split()[0]
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+                         'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
+                         'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
+                                    'permittedMarks': list(range(m_ + 1))}
+                                   for k, (w, m_) in enumerate(comps, start=1)],
+                         **({'contextNote': ' '.join(said)} if said else {})})
+            continue
         m = re.match(r'^(.*?)\s*\(\s*(\d{1,2})\s*\)\s*$', text)
-        if not m:
+        if not m or int(m.group(2)) != field_total:
             return 'the scheme answers this in a table this cannot read'
         rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
-                     'verbatim': f'{name} — {m.group(1)}', 'marks': int(m.group(2))})
+                     'verbatim': f'{name} — {m.group(1)}', 'marks': int(m.group(2)),
+                     **({'contextNote': ' '.join(said)} if said else {})})
+    if isinstance(rows, str):
+        return rows
     rows[0]['contextNote'] = ('The scheme answers this in a table, a row for each field; each '
                               'field is one row here, at its printed mark.'
                               + (f" {rows[0]['contextNote']}" if rows[0].get('contextNote') else ''))
@@ -691,9 +723,17 @@ def _grids(P, S, year, level, cards, keys):
             grid = scheme_grid(year, level, None, header=line)
             if grid:
                 break
+        table = None
         if not grid or sum((m if a is not None else sum(m[1])) for _n, cells in grid
                            for _l, a, m in cells) != total:
-            continue
+            # A field table the scheme reprints no question over (2012
+            # Ordinary TEXT II Q1, "1. (13 marks)"), the paper's ask naming it.
+            asked = P.by_key(unit, q, letter, roman)
+            table = (scheme_field_table(year, level, '', total,
+                                        anchor=f'{q}. ({total} marks)' if not letter else None)
+                     if asked is not None and FIELD_ASK.search(' '.join(asked[0].split())) else None)
+            if not table:
+                continue
         hit = P.by_key(unit, q, letter, roman)
         if hit is None:
             continue
@@ -702,7 +742,9 @@ def _grids(P, S, year, level, cards, keys):
         cut = GRID_ASK.search(flat)
         end = flat.find('.', cut.end()) + 1 if cut else 0
         question = clean_question(flat[:end or cut.end()] if cut else instruction_only(text))
-        rows = _grid_rows(grid)
+        rows = _grid_rows(grid) if grid else _field_rows(table, S.path)
+        if isinstance(rows, str):
+            continue
         language = _language_of(question, None)
         rows[0]['contextNote'] = f"{language_note(language)} {rows[0]['contextNote']}"
         card = {
@@ -715,8 +757,10 @@ def _grids(P, S, year, level, cards, keys):
             'tariffModel': {'kind': 'fixed'},
             'totalMarks': total,
             'rows': rows,
-            'notes': (f'The scheme answers this ask with a table, read by its columns; it prices '
-                      f'the ask {total}, and each column the share it prints over itself.'),
+            'notes': ((f'The scheme answers this ask with a table, read by its columns; it prices '
+                       f'the ask {total}, and each column the share it prints over itself.') if grid else
+                      (f'The scheme answers this ask with a ruled table, a field to a row, read by '
+                       f'position; it prices the ask {total}, and its fields add to that.')),
         }
         source = reading_source(P, unit, language, level, year)
         if source:

@@ -124,7 +124,7 @@ TEXT_NUM = {'i': 1, 'ii': 2, 'iii': 3, '1': 1, '2': 2, '3': 3}
 # The head WORD is kept: "Frage" is the SEC saying this question is answered in
 # German and "Question" that it is answered in English or Irish, and one
 # comprehension uses both.
-Q_HEAD_HL = re.compile(r'^(Frage|Question|Ceist)\s*(\d{1,2})\s*:?\s*'
+Q_HEAD_HL = re.compile(r'^(Frage|Question|Ceist)\s*(\d{1,2})\s*[:.]?\s*'
                        r'(\(?\s*\d{1,3}\s*marks?\b.*)$', re.I)
 # (2013 Ordinary names a question's kind before its tariff: "4. True / False
 # 10 marks: 5 x 2 marks".)
@@ -368,6 +368,8 @@ def read_rate(text):
     # closing the list; "(2 marks):" (2019 Higher): a colon after the bracket.
     s = re.sub(r'(?<=\d),$', '', s)
     s = re.sub(r'(?<=\))\s*:$', '', s)
+    # "Any THREE: 9 marks: 3, 3, 3 marks." (2012 Ordinary): a full stop.
+    s = re.sub(r'(?<=marks)\.$', '', s)
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
     # 2026 Higher prints "(Any four: 4 x 2 marks" with its bracket never
@@ -980,7 +982,7 @@ class DeScheme:
         beside the marked word."""
         sentences = []
         for line in (' '.join(l.split()) for l in lines):
-            if ' / ' in line:
+            if line.count('/') >= 2:
                 sentences.append(line)
             elif sentences and not re.search(r'[.?!]$', sentences[-1]):
                 continue                  # the sentence's second printed line
@@ -1029,7 +1031,7 @@ class DeScheme:
                             continue
                         # A ring is drawn loosely and takes in the slashes
                         # beside its word, sometimes the next word's edge.
-                        inside = [w[4] for w in page.get_text('words')
+                        inside = [w[4].strip('/') for w in page.get_text('words')
                                   if x0 <= (w[0] + w[2]) / 2 <= x1 and y0 <= (w[1] + w[3]) / 2 <= y1
                                   and w[4] != '/']
                         ringed.append(inside)
@@ -1038,22 +1040,31 @@ class DeScheme:
         for text in sentences:
             if text not in found:
                 return None
-            head = text.split(' / ')
+            # (2012 sets "auf/ zwischen / neben / vor", a slash with no space.)
+            head = re.split(r'\s*/\s*', text)
             middle = head[1:-1]
             k = max(len(c.split()) for c in middle) if middle else 1
             words = head[0].split()
-            if len(words) <= k:
+            if len(words) < k:
                 return None
             stem, first = ' '.join(words[:-k]), ' '.join(words[-k:])
             choices = [first] + [c.strip() for c in middle] + [' '.join(head[-1].split()[:k])]
+            if not stem:
+                # The choices open the sentence: "Mit / auf / nach / bei der
+                # Straße nach Schlitz sind viele Autos." (2012 Ordinary). The
+                # card shows the words after them instead.
+                stem = '… ' + ' '.join(head[-1].split()[k:])
             bold, rings_here = found[text]
             ringed = []
+            # (A ring drawn twice round one word, 2012: one ring.)
+            rings_here = [list(x) for x in dict.fromkeys(tuple(r) for r in rings_here)]
             for inside in rings_here:
                 hit = [c for c in choices if all(t in inside for t in c.split())]
                 hit = [c for c in hit if not any(c != o and c in o.split() for o in hit)]
                 if len(hit) != 1:
                     return None
                 ringed.append(hit[0])
+            ringed = list(dict.fromkeys(ringed))
             # (2015 both sets it in bold and rings it; the two must agree.)
             if len(bold) == 1 and bold[0] in choices and ringed in ([], [bold[0]]):
                 out.append((stem, bold[0]))
@@ -1939,7 +1950,7 @@ def _grid_words(path, find_page):
 FIELD_ASK = re.compile(r'\bFill in the information required\b', re.I)
 
 
-def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None):
+def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None, anchor=None):
     """[(field, [answer lines])] for a two-column answer table, or None.
 
     2013 Ordinary TEXT II Q1 ("Fill in the information required.") answers
@@ -1964,8 +1975,13 @@ def scheme_field_table(year, level, cue, total, subject=SUBJECT, sitting=None):
                 key = next((k for k in rows if abs(k - w[1]) <= 3), w[1])
                 rows.setdefault(key, []).append(w)
             top = next((k for k, r in rows.items()
-                        if ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])) in want and len(r) > 3
+                        if want and ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])) in want and len(r) > 3
                         and want.startswith(' '.join(x[4] for x in sorted(r, key=lambda x: x[0])))), None)
+            if top is None and anchor:
+                # (2012 Ordinary reprints no question over its table: found by
+                # the question's own head, "1. (13 marks)".)
+                top = next((k for k, r in rows.items()
+                            if ' '.join(x[4] for x in sorted(r, key=lambda x: x[0])) == anchor), None)
             if top is None:
                 continue
             draws = page.get_drawings()
