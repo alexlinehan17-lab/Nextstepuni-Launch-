@@ -14,6 +14,7 @@ import VaultQuestionCard from '@/components/PaperTrail/VaultQuestionCard';
 import { buildPackHtml } from '@/components/PaperTrail/revisionPack';
 import { isDeferredFileid, sittingLabel } from '@/components/PaperTrail/sitting';
 import { logicalQuestionIdentity, type TopicSibling } from '@/components/PaperTrail/topics';
+import { resolveSibling } from '@/components/PaperTrail/vaultResolve';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 vi.mock('@/components/PaperTrail/CropView', () => ({ default: () => <div>Official PDF page</div> }));
@@ -59,5 +60,31 @@ describe('the deferred sitting is named', () => {
     expect(sittingLabel('LC001ALP100IV.pdf')).toBeNull();
     expect(logicalQuestionIdentity(engineering2022('LC027ALP000EV-deferred.pdf')))
       .not.toBe(logicalQuestionIdentity(engineering2022('LC027ALP000EV.pdf')));
+  });
+});
+
+describe('a deferred Atlas question resolves to the deferred entry, so its crop can be shown', () => {
+  const sibling = (o: Partial<TopicSibling>): TopicSibling => ({ ...engineering2022('LC027ALP000EV-deferred.pdf'), ...o });
+
+  it('Engineering 2022 Higher deferred Q3 opens the deferred paper', () => {
+    const r = resolveSibling(sibling({}));
+    expect(r?.paperLabel).toBe('Deferred · Exam Paper');
+    expect(r?.paperUrl).toContain('LC027ALP000EV-deferred.pdf');
+    expect(r?.anchorsUrl).toBe('/paper-anchors/2022/LC027ALP000EV-deferred.pdf.json');
+  });
+
+  it('Irish 2025 Higher deferred Paper 1 Q1 opens the deferred paper', () => {
+    const r = resolveSibling(sibling({ subjectId: 'irish', year: 2025, lang: 'iv', fileid: 'LC001ALP100IV-deferred.pdf', paperKey: 'p1', n: '1' }));
+    expect(r?.paperLabel).toBe('Deferred · Paper One');
+    expect(r?.paperUrl).toContain('LC001ALP100IV-deferred.pdf');
+  });
+
+  it('June questions of the same year and level still open June\'s paper', () => {
+    const june = resolveSibling(engineering2022('LC027ALP000EV.pdf'));
+    expect(june?.paperLabel).toBe('Exam Paper');
+    expect(june?.paperUrl).toContain('%2FLC027ALP000EV.pdf');
+    const irishJune = resolveSibling(sibling({ subjectId: 'irish', year: 2025, lang: 'iv', fileid: 'LC001ALP100IV.pdf', paperKey: 'p1', n: '1' }));
+    expect(irishJune?.paperUrl).toContain('%2FLC001ALP100IV.pdf');
+    expect(irishJune?.paperLabel).not.toMatch(/Deferred/);
   });
 });

@@ -67,6 +67,23 @@ const MIN_CLAUSE = 20;
 const MAX_CLAUSE = 62;
 
 /**
+ * The longest mark the no-command fallback may draw (characters, trimmed).
+ *
+ * With no command word to anchor on, the fallback marks from the start of the
+ * question to its first printed line break, and in a passage that is a whole
+ * paragraph: Irish 2026 HL Paper 2 Prós 2B(a) underlined nine phone lines of
+ * "Maidir leis an scannán roghnach …". Read off the bank's 24,381 fallback
+ * marks: they bunch under 100 (the wh-questions and the statements a choice
+ * offers, Spanish "El silencio no existe en el mundo moderno." at 43, every
+ * Spanish alternative at 90 or under) and thin out past it, where half as many
+ * marks run each further ten characters and most are passages of two or more
+ * sentences. 100 is also about one and a half lines of the desktop column
+ * (MAX_CLAUSE above) and three on a phone. A longer fallback mark is not
+ * drawn at all: the question reads plain rather than as a slab.
+ */
+export const FALLBACK_MAX = 100;
+
+/**
  * Words that open a trailing phrase — scope, place, time, condition — and so are
  * safe places to stop marking.
  *
@@ -120,7 +137,8 @@ const toOneLine = (clause: string): [string, string] => {
 export interface QuestionEmphasis {
   /** Method or scope printed before the command. Often empty. */
   before: string;
-  /** The command clause. Carries the mark. Never empty. */
+  /** The command clause. Carries the mark. Empty only where the fallback's
+   *  mark would run past FALLBACK_MAX, and then nothing is marked. */
   marked: string;
   /** Method or scope printed after the command. Often empty. */
   after: string;
@@ -141,7 +159,8 @@ export const splitForEmphasis = (text: string): QuestionEmphasis => {
   // mark over a whole two-line question is the same slab either way.
   if (!cmd) {
     const [marked, scope] = toOneLine(q);
-    return endAtLineBreak({ before: '', marked, after: scope });
+    const split = endAtLineBreak({ before: '', marked, after: scope });
+    return split.marked.trim().length > FALLBACK_MAX ? { before: '', marked: '', after: q } : split;
   }
 
   const before = q.slice(0, cmd.index);
@@ -210,6 +229,9 @@ const asSegments = ({ before, marked, after }: QuestionEmphasis): EmphasisSegmen
  * The last alternative runs from its "or" to the end; the first takes as
  * many lines before the first "or" as the last one has, so a lead-in such
  * as "Explica ... una de las frases siguientes:" stays outside both.
+ *
+ * The alternatives are marked all or none: where one of them is too long to
+ * mark (FALLBACK_MAX), none is, so no choice is singled out as the task.
  */
 export function emphasisSegments(text: string): EmphasisSegment[] {
   const q = text ?? '';
@@ -229,6 +251,8 @@ export function emphasisSegments(text: string): EmphasisSegment[] {
   const lastSize = Math.max(1, after[after.length - 1].length);
   const firstAlternative = lines.map((_, i) => i).filter(i => i < connectors[0] && content(i)).slice(-lastSize);
   const markedLines = new Set([firstAlternative[0], ...after.map(alternative => alternative[0])]);
+  const splits = new Map([...markedLines].map(i => [i, splitForEmphasis(lines[i])]));
+  if ([...splits.values()].some(split => !split.marked)) return [{ text: q, marked: false }];
 
   const segments: EmphasisSegment[] = [];
   const push = (segment: EmphasisSegment) => {
@@ -239,7 +263,8 @@ export function emphasisSegments(text: string): EmphasisSegment[] {
   };
   lines.forEach((line, i) => {
     if (i > 0) push({ text: '\n', marked: false });
-    if (markedLines.has(i)) asSegments(splitForEmphasis(line)).forEach(push);
+    const split = splits.get(i);
+    if (split) asSegments(split).forEach(push);
     else push({ text: line, marked: false });
   });
   return segments;

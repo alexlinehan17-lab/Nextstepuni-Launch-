@@ -25,7 +25,7 @@ import { afterEach, describe, expect, test, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 
 import SessionScreen, { suggestGrade } from '@/components/MarkBank/SessionScreen';
-import { emphasisSegments, splitForEmphasis } from '@/components/MarkBank/questionEmphasis';
+import { emphasisSegments, FALLBACK_MAX, splitForEmphasis } from '@/components/MarkBank/questionEmphasis';
 import { menuLabel, splitSteps, uniformSplit } from '@/components/MarkBank/sessionText';
 import { ROUTE_LOCKED_NOTE } from '@/components/MarkBank/RouteHeading';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
@@ -34,6 +34,8 @@ import { CARDS as ENGINEERING_HIGHER } from '@/components/MarkBank/cards/enginee
 import { CARDS as SPANISH_HIGHER } from '@/components/MarkBank/cards/spanish/higher';
 import { CARDS as HISTORY_HIGHER } from '@/components/MarkBank/cards/history/higher';
 import { CARDS as BIOLOGY_HIGHER } from '@/components/MarkBank/cards/biology/higher';
+import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '@/components/MarkBank/cards/irish/ordinary';
 import type { MarkRow, SecCard, SecQuestionCard } from '@/types/markBank';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
@@ -210,6 +212,40 @@ describe('es-2010-hl-b-5: the mark stops at the first printed line break', () =>
       expect(before + marked + after).toBe(text);
       expect(marked.trim()).not.toContain('\n');
       expect(marked.trim()).not.toBe('');
+    }
+  });
+
+  test('a fallback mark longer than FALLBACK_MAX is not drawn; the either/or alternatives go all or none', () => {
+    const long = `${'Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, '.repeat(2)}déan plé.`;
+    expect(long.length).toBeGreaterThan(FALLBACK_MAX);
+    expect(splitForEmphasis(long)).toEqual({ before: '', marked: '', after: long });
+    expect(splitForEmphasis(`${long}\nNí mór teideal an scannáin a scríobh.`).marked).toBe('');
+    // A command word keeps its own one-line rule, whatever follows it.
+    expect(splitForEmphasis(`Explain ${long}`).marked).not.toBe('');
+    // One alternative too long to mark: neither is marked.
+    const choice = `La vida puede ser sencilla.\nó\n${long}`;
+    expect(emphasisSegments(choice)).toEqual([{ text: choice, marked: false }]);
+    for (const text of [long, choice]) expect(emphasisSegments(text).map(s => s.text).join('')).toBe(text);
+  });
+
+  test('Irish prose and poetry passages read plain; the Spanish statements keep their marks', () => {
+    const marks = (c: SecCard) => {
+      renderSession(c);
+      const question = screen.getByTestId('mark-bank-question-text');
+      const marked = [...question.querySelectorAll('span')].filter(span => span.style.textDecorationLine === 'underline' || span.style.backgroundImage).map(span => span.textContent);
+      cleanup();
+      return marked;
+    };
+    // irish-2026-hl-p2-prose-2b-a underlined two whole paragraphs (nine phone lines each).
+    expect(marks(card(IRISH_HIGHER, 'irish-2026-hl-p2-prose-2b-a'))).toEqual([]);
+    expect(marks(card(IRISH_ORDINARY, 'irish-2023-ol-p2-poetry-3b-a'))).toEqual([]);
+    expect(marks(card(SPANISH_HIGHER, 'es-2010-hl-b-5'))).toEqual(['El invento más importante del siglo pasado.', 'El silencio no existe en el mundo moderno.']);
+  });
+
+  test('nothing else changes in the split', () => {
+    for (const text of ['Describe the process.']) {
+      const { before, marked, after } = splitForEmphasis(text);
+      expect(before + marked + after).toBe(text);
     }
   });
 });
