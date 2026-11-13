@@ -25284,10 +25284,27 @@
       "old/senior citizens and young/children",
       "good or not so good (dancers)",
       "beginners or advanced",
-      "(Allow: ”disabled people/people with special needs” if not given in Q. 3(i))"
+      "(Allow: ”disabled people/people with special needs” if not given in Q. 3(i))",
+      "everyone"
+     ],
+     "optionMarks": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "optionOf": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      3
      ]
     },
-    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” (Allow “everyone” if it is the only answer given)"
+    "contextNote": "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme allows “everyone”, paid as one answer of this list (1 mark), in place of “beginners or advanced”, never beside it, and only on the condition it prints: “if it is the only answer given”."
    }
   ],
   "notes": "The scheme prices this ask 2 marks (1 + 1); the listening booklet prints it on page 3.",
@@ -46346,10 +46363,33 @@
       "Give / donate tents to homeless.",
       "Donate to Red Cross",
       "Use them in crisis areas.",
-      "Use them in refugee camps."
+      "Use them in refugee camps.",
+      "Give tents to people in need"
+     ],
+     "optionMarks": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "optionOf": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4
      ]
     },
-    "contextNote": "The scheme heads this list “Solutions”. (Allow: “Give tents to people in need” if points 5-8 not given)"
+    "contextNote": "The scheme heads this list “Solutions”. The scheme allows “Give tents to people in need”, paid as one answer of this list (2 marks), in place of “Give / donate tents to homeless.”, never beside it, and only on the condition it prints: “if points 5-8 not given”."
    }
   ],
   "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 10, as 'Why: 2 + 2; Solutions: 2 + 2 + 2'; the paper prints it on page 12 of the question booklet. Paper/scheme wording agreement 1.00.",

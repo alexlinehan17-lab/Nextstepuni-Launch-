@@ -817,6 +817,7 @@ PARTIAL_INLINE = re.compile(
     r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\))\s*$', re.I)
 
 
+ALLOW_UNPRICED_NOTE = re.compile(r'\(Allow:?\s*[“"]([^“”"]+)[”"]\s+(if\b[^()]*?)\)', re.I)
 ALLOW_PRICED_NOTE = re.compile(r'\(Allow:?\s*“([^”]+)”\s*for\s+(\w+)\s+marks?\s+(if\b[^()]*?)\)', re.I)
 NUMBER_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 
@@ -894,6 +895,23 @@ def _partials(rows):
                     said.append((whole.group(1), str(n_), len(options) - 1, whole.group(3)))
                     row = {**row, 'contextNote': ' '.join(
                         (note[:whole.start()] + note[whole.end():]).split())}
+            # An answer the scheme ALLOWS under the list, on a condition and
+            # with no price of its own: "(Allow “everyone” if it is the only
+            # answer given)" (2020 Higher), "(Allow: “Give tents to people in
+            # need” if points 5-8 not given)" (2023 Higher). "Allow X" accepts X
+            # for a point, so it earns what the list pays an answer
+            # (coordinator ruling, 13 Nov), claimed in place of the point it
+            # names, else of the last answer above it.
+            loose = (ALLOW_UNPRICED_NOTE.search(row.get('contextNote') or '')
+                     if options and not said else None)
+            if loose:
+                named = re.search(r'\bpoints?\s+(\d{1,2})', loose.group(2))
+                of = (int(named.group(1)) - 1 if named and int(named.group(1)) <= len(options)
+                      else max(k for k, o in enumerate(options)
+                               if not o.startswith('(Allow') or k == 0))
+                said.append((loose.group(1), str(g['perOption']), of, loose.group(2)))
+                row = {**row, 'contextNote': ' '.join(
+                    (row['contextNote'][:loose.start()] + row['contextNote'][loose.end():]).split())}
             if said:
                 for alt, n, of, _cond in said:
                     options.append(alt)
@@ -903,10 +921,13 @@ def _partials(rows):
                 row['group'] = {**g, 'options': options, 'optionMarks': marks, 'optionOf': parents}
                 # The condition is quoted word for word (coordinator ruling,
                 # 13 Nov): the claim cap cannot enforce it, the student must.
-                text = ' '.join(f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}, in '
-                                f'place of “{options[of]}”, never beside it'
-                                + (f', and only on the condition it prints: “{cond}”.' if cond else '.')
-                                for alt, n, of, cond in said)
+                text = ' '.join(
+                    (f'The scheme allows “{alt}”, paid as one answer of this list ({n} '
+                     f'mark{"s" if n != "1" else ""})' if loose and alt == loose.group(1) else
+                     f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}')
+                    + f', in place of “{options[of]}”, never beside it'
+                    + (f', and only on the condition it prints: “{cond}”.' if cond else '.')
+                    for alt, n, of, cond in said)
                 row['contextNote'] = ' '.join(x for x in (row.get('contextNote'), text) if x)
         out.append(row)
     return out
