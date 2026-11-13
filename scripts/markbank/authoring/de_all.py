@@ -73,7 +73,7 @@ LEVELS = ('hl', 'ol')
 # opts in once its cards have been read against its scheme, one commit each.
 READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
     (2026, 'hl'), (2026, 'ol')}
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol')}
 # The sittings whose uncarded listening and writing asks are refused with
 # evidence (exclusions/german.json): the five the bank was first built on.
 # Every other sitting's uncarded asks stay OPEN in the census until carded.
