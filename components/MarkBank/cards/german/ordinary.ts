@@ -4874,7 +4874,7 @@ export const CARDS: SecCard[] = [
     questionText: "When does the ‘Kieler Woche’ sailing event take place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "21st (1) to 29th (1) June (2 marks)", marks: 4, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” allow: in summer (1 mark only)", permittedMarks: [0,1,2,3,4], parts: [{"id":"p1","verbatim":"21st","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"to 29th","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"June","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where answers are in German, award half marks.” The scheme prints this answer as “21st (1) to 29th (1) June (2 marks)” and, under it, “allow: in summer (1 mark only)”: “in summer” is paid in place of “June”, never beside it.", group: {"claimMax":3,"perOption":2,"options":["21st","to 29th","June","in summer"],"optionMarks":[1,1,2,1],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

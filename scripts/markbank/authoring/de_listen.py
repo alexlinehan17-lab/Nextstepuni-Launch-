@@ -66,6 +66,8 @@ NOTE = re.compile(
     r'Note\b|Any (?:two|three|four); no marks|Evidence|Penalise|Do not\b|'
     r'Ignore\b|All or nothing\b|\[?All or nothing\]?)', re.I)
 ALL_OR_NOTHING = re.compile(r'^\[?\s*All or nothing\s*\]?\s*:?.*$', re.I)
+# A priced alternative printed under an answer: "allow: in summer (1 mark only)".
+ALLOW_ONLY = re.compile(r'^allow:?\s*(.+?)\s*\((\d)\s*marks?\s*only\)\s*$', re.I)
 DEDUCT_EACH = re.compile(r'\bDeduct\s+(\d)\s+marks?\s+for\s+each\b', re.I)
 CONNECTOR = re.compile(r'^(?:AND|PLUS|UND)\s*:?$', re.I)
 TICK = re.compile(r'^Tick\b|^\(?Tick\b', re.I)
@@ -487,6 +489,30 @@ def mark_rows(items, language_note, general=()):
             else:
                 row = {'id': f'r-{n}', 'kind': 'point', 'verbatim': it['text'],
                        'marks': it['marks']}
+        elif it['kind'] == 'parts' and any(ALLOW_ONLY.match(x) for x in it['notes']):
+            # A components answer with a priced alternative printed under it:
+            # "21st (1) to 29th (1) June (2 marks)" / "allow: in summer (1 mark
+            # only)" (2025 Ordinary L4 Q1(i)). Parts must add to their row, so
+            # the alternative cannot be one; instead each component is an
+            # answer of a menu at its own printed price, and the alternative a
+            # partial of the component it stands in for — the dearest, the
+            # month — paid once at the better of the two (optionOf). Both dates
+            # pay 2, "in summer" alone 1, the whole never more than the ask.
+            allow = next(ALLOW_ONLY.match(x) for x in it['notes'] if ALLOW_ONLY.match(x))
+            comps = it['parts']
+            of = max(range(len(comps)), key=lambda k: (comps[k][1], k))
+            assert int(allow.group(2)) <= comps[of][1], it
+            notes = [x for x in notes if not ALLOW_ONLY.match(x.rstrip('.'))]
+            notes.append(f'The scheme prints this answer as “{it["text"]}” and, under it, '
+                         f'“{allow.group(0)}”: “{allow.group(1)}” is paid in place of '
+                         f'“{comps[of][0]}”, never beside it.')
+            marks = [m for _w, m in comps] + [int(allow.group(2))]
+            row = {'id': f'r-{n}', 'kind': 'anyN',
+                   'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                   'group': {'claimMax': len(comps), 'perOption': max(marks),
+                             'options': [w for w, _m in comps] + [allow.group(1)],
+                             'optionMarks': marks,
+                             'optionOf': [None] * len(comps) + [of]}}
         elif it['kind'] == 'parts':
             row = {'id': f'r-{n}', 'kind': 'criterion', 'verbatim': it['text'],
                    'marks': it['marks'], 'permittedMarks': list(range(it['marks'] + 1)),
