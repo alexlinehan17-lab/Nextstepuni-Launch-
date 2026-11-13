@@ -206,6 +206,7 @@ _LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}(?
 SEGMENT = re.compile(rf'^({_LABEL})\s*:\s*(.*)$')
 WQ_HEAD = re.compile(r'((?:Was|Wie|Wo|Warum|Wer|Welche[rsnm]?|Wann|Why|What|How|Where|When|Who|Which)'
                      r'\b[^:()?]{0,40}?)\s*:')
+ORDINAL_HEAD = re.compile(r'^(\d(?:st|nd|rd|th)\s+[A-Z][a-z]+)\s*:\s*(.*)$')
 LETTER_ITEM = re.compile(r'^([a-h])\.\s+(\S.*)$')
 CATEGORY_HEAD = re.compile(r'\(([a-h])\)\s+([A-Z][^:()]{1,40}):')
 # A segment label written as a question — "Why? (2 marks)", "Where?" — may
@@ -1329,7 +1330,7 @@ class DeScheme:
                     and any(g['steps'] is not None for g in segments)):
                 new_segment(s, None, tentative=True)
                 continue
-            m = SEGMENT.match(s)
+            m = SEGMENT.match(s) or ORDINAL_HEAD.match(s)     # (or "1st Day:", 2012 Higher)
             inline = m is not None
             if m is None:
                 m = SEGMENT_Q.match(s)
@@ -1410,6 +1411,19 @@ class DeScheme:
                     pending = None
                     cur = {'text': tail, 'n': None}
                     segments[-1]['answers'].append(cur)
+                    continue
+                # "Arbeitskleidung: schwarze Hose (1) weiβes Hemd (1)" (2012
+                # Higher): two answers on the heading's line, each priced.
+                both = (re.fullmatch(r'(?:[^()]+?\s*\(\s*\d\s*\)\s*){2,}', tail)
+                        if inline and mark and got is None else None)
+                if both:
+                    priced = re.findall(r'([^()]+?)\s*\(\s*(\d)\s*\)', tail)
+                    phase = 'answers'
+                    new_segment(m.group(1), [int(n) for _t, n in priced])
+                    pending = None
+                    for t, _n in priced:
+                        cur = {'text': f'{t.strip()} ({_n})'}
+                        segments[-1]['answers'].append(cur)
                     continue
                 if got is not None or mark or not tail:
                     phase = 'answers'

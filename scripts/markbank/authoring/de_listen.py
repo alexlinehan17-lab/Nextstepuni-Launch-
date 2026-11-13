@@ -605,6 +605,11 @@ def leaf_rows(leaf, asked_text):
         k = 1
     while k < len(body) and _is_cue(body[k], asked) and not PRICE.search(body[k]):
         k += 1
+    # The answer to a choice question is one of the options the paper prints,
+    # so it reads as the question's own words: "(c) a mother and son" with no
+    # price beside it (2012 Higher). The last line is never the question.
+    if 0 < k == len(body) and re.match(r'^\(\s*[a-d]\s*\)\s+\S', body[k - 1].strip()):
+        k -= 1
     # The scheme's own instruction where the paper prints another: "Give
     # details." beside the paper's "Mention three events." (2013 Ordinary).
     if (k > 0 and k < len(body) - 1 and re.fullmatch(r'(?:Give|Mention|Name)\s+[\w\s]{1,30}\.', body[k].strip())
@@ -663,6 +668,15 @@ def leaf_rows(leaf, asked_text):
     last_note = None
     for raw in body:
         s = ' '.join(raw.split())
+        # "(1: all or nothing)" (2012 Higher) is the price and its remark.
+        s = re.sub(r'\(\s*(\d{1,2})\s*:\s*all or nothing\s*\)$', r'(\1) All or nothing', s, flags=re.I)
+        # "Any two; accept apt German quotation." (2012 Higher): the count the
+        # head already prices, and the scheme's remark.
+        m = re.fullmatch(r'Any\s+\w+\s*;\s*(accept\b.*)', s, re.I)
+        if m:
+            s = m.group(1)[0].upper() + m.group(1)[1:]
+        # "Any three; 3x1" (2012 Higher): the rate, a semicolon for a colon.
+        s = re.sub(r'^(Any\s+\w+)\s*;\s*(\d\s*[x×]\s*\d)$', r'(\1: \2 marks)', s, flags=re.I)
         if CONNECTOR.match(s):
             last = last_note = None
             continue
@@ -731,6 +745,14 @@ def leaf_rows(leaf, asked_text):
             close()
             label = m.group(1)
             last = None
+            continue
+        # A lead-in over the list a rate has just opened: "(Any three: 2+2+1
+        # marks)" / "Pupils learn" / "1. about film history" (2012 Higher).
+        nxt = body[body.index(raw) + 1] if body.index(raw) + 1 < len(body) else ''
+        if (group is not None and group.get('rated') and not group['options'] and not MARKER.match(s)
+                and not PRICE.search(s) and len(s.split()) <= 4 and not re.search(r'[.?!:)]$', s)
+                and re.match(r'^1\.\s+[a-z]', nxt.strip())):
+            group['label'] = s
             continue
         # A longer field heading of its own, "Im Falle einer Verspätung wird
         # die Anruferin:" (2013 Higher), over the answer it heads.

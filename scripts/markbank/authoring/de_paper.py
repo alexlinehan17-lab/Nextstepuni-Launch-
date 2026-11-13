@@ -284,7 +284,10 @@ class DePaper:
             for _x0, side, text in groups:
                 if LANG_LINE.search(text):
                     self.language_lines.append((unit, ' '.join(text.split())))
-                if FURNITURE.match(text):
+                # (Never the grammar exercise's own instruction: "Lesen Sie
+                # den folgenden Text und setzen Sie die fehlenden Präpositionen
+                # … ein!", 2012 Higher, is the ask, not the passage's rubric.)
+                if FURNITURE.match(text) and not (unit == 'AG' and re.match(r'^Lesen Sie den folgenden\b', text)):
                     continue
                 if unit in ('AT', 'SP'):
                     self._alternative(unit, side, text, pno)
