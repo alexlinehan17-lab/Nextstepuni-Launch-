@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
-import { assertJapaneseConditionLabel, assertJapaneseNaebaException, assertJapaneseSelectedContent, assertJapanese2010ManualResponses, assertJapaneseSourceOnlyFigure, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { assertJapaneseConditionLabel, assertJapaneseNaebaException, assertJapaneseSelectedContent, assertJapanese2010ManualResponses, assertJapanese2010OrdinaryRules, assertJapaneseSourceOnlyFigure, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
 import { assertJapaneseVariantSources, assertJapanese2011ListeningCorrection, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -65,6 +65,7 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
     assertJapaneseNaebaException(card, review);
     assertJapaneseSelectedContent(card, review);
     assertJapanese2010ManualResponses(card, review);
+    assertJapanese2010OrdinaryRules(card, review);
     assertJapaneseSourceOnlyFigure(card, review, figures[card.questionFigureKey]);
     assertJapanese2011ListeningCorrection(card, review, higher2011Review, audio.find(record => record.year === 2011));
     if (card.answerLanguageRule) {

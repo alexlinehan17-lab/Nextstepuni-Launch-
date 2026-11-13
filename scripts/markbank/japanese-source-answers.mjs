@@ -9,6 +9,7 @@ export const japaneseAnswerRows = card => [
 /** Explicit reviewed cloze-bank spellings, never a general normalization. */
 export function japaneseBoundBankAnswers(card, review) {
   const bindings = (review.sourceAnswerBindings ?? []).filter(binding => binding.cardId === card.id);
+  if (card.id === 'ja-2010-ol-1-3-iii') return japanese2010WebQuantityAnswer(card, review, bindings);
   if (card.id === 'ja-2011-ol-2c') return japanese2011KanjiAnswer(card, review, bindings);
   if (!bindings.length) return new Set();
   if (card.id === 'ja-2013-ol-4') return japanese2013BankAnswers(card, review, bindings);
@@ -38,6 +39,41 @@ export function japaneseBoundBankAnswers(card, review) {
       && row.contextNote.includes('日本料理') && row.contextNote.includes('only once'))
     || !matching[1].contextNote.includes(expected.schemeSelectors[1].text)) {
     throw new Error(`${card.id}: bank spelling lost its row scope or visible original wording`);
+  }
+  return new Set([expected.answer]);
+}
+
+/** One option-letter discrepancy, resolved by the paper quantity and scheme10.
+ * Preserve both literal option strings; never remap another multiple-choice key.
+ */
+function japanese2010WebQuantityAnswer(card, review, bindings) {
+  const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
+  const expected = {
+    cardId: 'ja-2010-ol-1-3-iii', answer: '(c)  10', rowIds: ['r-1'],
+    paperSelector: { document: 'paper', page: 3, row: 23, group: 2, text: '(c)  10' },
+    corroboratingPaperSelector: { document: 'paper', page: 2, row: 9, group: null, text: '＊＊こちらの 商 品（しょうひん） は 全（すべ） て 1 ケース十本です。＊＊' },
+    schemeSelectors: [{ document: 'scheme', page: 5, row: 18, group: 0, text: '(iii) (d) 10' }],
+  };
+  const sources = [
+    ['paper', 'examiner-reports/japanese/papers/2010-ol-000-paper.pdf', 'd82e39c9a0e6745f641ca6eab9b6750722a605f878c28750bdd674c15e3d20bc'],
+    ['scheme', 'examiner-reports/japanese/schemes/2010-ol.pdf', '096c546ef66b119647c04d4e401ad0845819859fba602e9e2ca8d237a14ac080'],
+  ];
+  const row = card.rows?.[0];
+  if (!same(bindings, [expected]) || review.sitting !== '2010-ol'
+    || card.year !== 2010 || card.level !== 'ordinary' || card.kind !== 'question'
+    || card.tariffModel?.kind !== 'fixed' || card.totalMarks !== 2 || card.rows?.length !== 1
+    || card.answerVariants?.length || card.questionRef !== '2010 OL Section 1 Q3(iii)'
+    || card.sourceEvidence?.component !== 'paper'
+    || !same(card.sourceEvidence?.paperPages, [3]) || !same(card.sourceEvidence?.schemePages, [5])
+    || row?.id !== 'r-1' || row.kind !== 'point' || row.verbatim !== expected.answer || row.marks !== 2
+    || !row.contextNote?.includes(expected.paperSelector.text)
+    || !row.contextNote.includes(expected.schemeSelectors[0].text)
+    || !row.contextNote.includes(expected.corroboratingPaperSelector.text)
+    || !row.contextNote.includes('(d) is 24')
+    || !sources.every(([document, path, sha256]) => review.sources?.some(source => source.document === document && source.path === path && source.sha256 === sha256))
+    || ![expected.paperSelector, expected.corroboratingPaperSelector, ...expected.schemeSelectors]
+      .every(selector => review.selectors.some(actual => same(actual, selector)))) {
+    throw new Error(`${card.id}: quantity correction is not bound to both exact 2010 Ordinary sources`);
   }
   return new Set([expected.answer]);
 }

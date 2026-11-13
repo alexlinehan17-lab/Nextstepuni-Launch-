@@ -13,6 +13,10 @@ import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import japaneseCrosswalkJson from '../data/examTopics/japanese-local-crosswalk.json';
 import japaneseBaselineJson from './fixtures/japaneseTopicQuestionBaseline.json';
 import ordinary2023Census from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import higher2011Census from '../scripts/markbank/authoring/reviews/japanese-2011-hl-census.json';
+import ordinary2011Census from '../scripts/markbank/authoring/reviews/japanese-2011-ol-census.json';
+import higher2010Census from '../scripts/markbank/authoring/reviews/japanese-2010-hl-census.json';
+import ordinary2010Census from '../scripts/markbank/authoring/reviews/japanese-2010-ol-census.json';
 import {
   browseTopicIdsForQuestion,
   subjectAtlasStats,
@@ -69,6 +73,21 @@ type MatchedAssociation = {
 const crosswalk = japaneseCrosswalkJson;
 const baseline = japaneseBaselineJson as Baseline;
 
+// Additions are explicit original-source groups, never a refreshed baseline.
+const reviewedAtlasAdditions = [
+  { year: 2023, level: 'ordinary', fileid: 'LC058GLP000BV.pdf', questions: ['25'], census: ordinary2023Census },
+  { year: 2011, level: 'higher', fileid: 'LC058ALP000EV.pdf', questions: ['12', '13', '14'], census: higher2011Census },
+  { year: 2011, level: 'ordinary', fileid: 'LC058GLP000EV.pdf', questions: ['6', '7', '8', '9'], census: ordinary2011Census },
+  { year: 2010, level: 'higher', fileid: 'LC058ALP000EV.pdf', questions: ['4', '5', '6', '7', '8', '9', '10'], census: higher2010Census },
+  { year: 2010, level: 'ordinary', fileid: 'LC058GLP000EV.pdf', questions: ['11', '12', '13', '14', '15'], census: ordinary2010Census },
+  { year: 2011, level: 'higher', fileid: 'LC058ALPA00EV.pdf', questions: ['1', '2', '3', '4'], census: higher2011Census },
+  { year: 2011, level: 'ordinary', fileid: 'LC058GLPA00EV.pdf', questions: ['1', '2', '3', '4'], census: ordinary2011Census },
+  { year: 2010, level: 'higher', fileid: 'LC058ALPA00EV.pdf', questions: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'], census: higher2010Census },
+  { year: 2010, level: 'ordinary', fileid: 'LC058GLPA00EV.pdf', questions: ['1', '2', '3', '4'], census: ordinary2010Census },
+] as const;
+const paperIdentity = (paper: { year: number; level: string; lang: string; fileid: string }) => `${paper.year}|${paper.level}|${paper.lang}|${paper.fileid}`;
+
+
 describe('Japanese exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('japanese')!;
 
@@ -98,7 +117,7 @@ describe('Japanese exam-topic registry', () => {
       matchedHeadingAssociations: 230,
       sourceBlockedHeadingAssociations: 2,
       matchedLocalCardLinks: 436,
-      hostedPaperAnchorMaps: 93,
+      hostedPaperAnchorMaps: 97,
     });
     expect(crosswalk.policy.excludedContent).toContain('No commercial mock question');
 
@@ -141,25 +160,46 @@ describe('Japanese exam-topic registry', () => {
       const live = topicsForPaper('japanese', expected.year, expected.level, expected.lang, expected.fileid);
       expect(live, `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`).not.toBeNull();
       expect(live!.paperKey).toBe(expected.paperKey);
-      // The frozen 1,329 identities remain intact. The independently reviewed
-      // 2023 Ordinary culture response appends one previously omitted task.
-      const culture = ordinary2023Census.tasks.find(task => task.key[0] === '3B')!;
-      const additions = expected.year === 2023 && expected.level === 'ordinary'
-        && expected.fileid === culture.atlas.fileid ? [culture.atlas.questionNumber] : [];
-      expect(additions).toEqual(additions.length ? ['25'] : []);
+      // Preserve the frozen order and append only independently reviewed groups.
+      const additions = expected.lang === 'ev' ? reviewedAtlasAdditions.find(item => item.year === expected.year
+        && item.level === expected.level && item.fileid === expected.fileid)?.questions ?? [] : [];
       expect(live!.q.map(question => question.n)).toEqual([...expected.questions, ...additions]);
     }
   });
 
-  it('classifies every one of the 1,329 preserved identities and the new source-reviewed culture task explicitly', () => {
+  it('binds all45 added groups and four new aural variants to independent original-source censuses', () => {
+    expect(reviewedAtlasAdditions.reduce((sum, item) => sum + item.questions.length, 0)).toBe(45);
+    for (const item of reviewedAtlasAdditions) {
+      const supported = new Set(item.census.tasks.filter(task => task.atlas.fileid === item.fileid).map(task => task.atlas.questionNumber));
+      if (item.year === 2010 && item.level === 'higher' && item.fileid === 'LC058ALPA00EV.pdf') {
+        // These nine frozen source anchors are retained alongside the four
+        // complete listening tasks; they are not extra priced Mark Bank cards.
+        const anchors = higher2010Census.originalAtlasAnchors[item.fileid];
+        expect(anchors.map(anchor => anchor.n)).toEqual(['1', '2', '3', '4', '5', '6', '7', '8', '9']);
+        for (const anchor of anchors) supported.add(anchor.n);
+      }
+      for (const number of item.questions) expect(supported.has(number), `${item.year}|${item.fileid}|${number}`).toBe(true);
+    }
+    const frozenKeys = new Set(baseline.map(paperIdentity));
+    const newPapers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'japanese' && !frozenKeys.has(paperIdentity(paper)));
+    const expectedNew = reviewedAtlasAdditions.filter(item => !frozenKeys.has(paperIdentity({ ...item, lang: 'ev' })));
+    expect(newPapers.map(paperIdentity).sort()).toEqual(expectedNew.map(item => paperIdentity({ ...item, lang: 'ev' })).sort());
+    expect(newPapers).toHaveLength(4);
+    for (const item of expectedNew) {
+      const live = newPapers.find(paper => paperIdentity(paper) === paperIdentity({ ...item, lang: 'ev' }))!;
+      expect(live.q.map(question => question.n)).toEqual(item.questions);
+    }
+  });
+
+  it('classifies every one of the1,329 frozen identities and45 source-reviewed added groups explicitly', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'japanese');
-    expect(papers).toHaveLength(93);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1_330);
+    expect(papers).toHaveLength(97);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1_329 + 45);
     expect(crosswalk.summary).toMatchObject({
-      localPaperVariants: 93,
-      localQuestionMappings: 1_330,
+      localPaperVariants: 97,
+      localQuestionMappings: 1_374,
       referenceMappedLocalQuestions: 388,
-      retainedLocalQuestions: 942,
+      retainedLocalQuestions: 986,
     });
 
     const validTopicIds = new Set(taxonomy.topics.map(topic => topic.id));
@@ -200,9 +240,9 @@ describe('Japanese exam-topic registry', () => {
     ]);
   });
 
-  it('surfaces all 969 distinct local cards without inflating translations', () => {
+  it('surfaces all1,002 distinct local source groups without inflating translations', () => {
     expect(subjectAtlasStats('japanese')).toMatchObject({
-      questions: 969,
+      questions: 1002,
       topics: 14,
       yearMin: 2010,
       yearMax: 2026,

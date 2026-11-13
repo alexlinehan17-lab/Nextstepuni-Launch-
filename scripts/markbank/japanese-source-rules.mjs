@@ -94,21 +94,75 @@ export function assertJapaneseNaebaException(card, review) {
 
 const selectedContentScheme = '7a71fa81c9f4dcdf00223ec1774c8e8c1fe86ce8ddffa61c04cb207c896d6628';
 
-/** This webpage is stimulus only; its seven questions are on the next page.
+/** The 2010 Ordinary language clauses are local to Q2 and listening D.
+ * The food partial/language intersection has no published numeric combination.
+ */
+export function assertJapanese2010OrdinaryRules(card, review) {
+  if (review?.sitting !== '2010-ol' && !card.id?.startsWith('ja-2010-ol-')) return;
+  const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
+  const scheme = review.sources?.some(source => source.document === 'scheme'
+    && source.path === 'examiner-reports/japanese/schemes/2010-ol.pdf'
+    && source.sha256 === '096c546ef66b119647c04d4e401ad0845819859fba602e9e2ca8d237a14ac080');
+  const reading = /^ja-2010-ol-2-(?:1|2-(?:i|ii|iii|iv)|3-(?:i|ii)|4-(?:i|ii|iii|iv)|5-(?:i|ii|iii))$/.test(card.id);
+  const listening = /^ja-2010-ol-ld-[3-9]$/.test(card.id);
+  const selector = listening
+    ? { document: 'scheme', page: 4, row: 12, group: null, text: '(1/2 marks if answered in Japanese, romaji or Japanese script)' }
+    : { document: 'scheme', page: 6, row: 1, group: null, text: '(Half marks if answered in the inappropriate language)' };
+  const expectedRule = { otherLanguageMultiplier: 0.5,
+    ...(listening ? { penalizedLanguage: 'Japanese' } : {}), sourceText: selector.text, schemePages: [selector.page] };
+  if (review.sitting !== '2010-ol' || card.year !== 2010 || card.level !== 'ordinary' || !scheme
+    || ((reading || listening) && (!same(card.answerLanguageRule, expectedRule)
+      || !card.sourceEvidence?.generalSchemePages?.includes(selector.page)
+      || !review.selectors.some(actual => same(actual, selector))))
+    || (!(reading || listening) && card.answerLanguageRule !== undefined)) {
+    throw new Error(`${card.id}: language rule exceeds its exact 2010 Ordinary local source`);
+  }
+  if (card.id === 'ja-2010-ol-2-3-iii') {
+    const quota = '2 names of the following food (2 marks each)';
+    const partial = '(chicken, fish, salad;  half marks)';
+    const answers = ['Steak', 'Teriyaki Chicken', 'Raw fish', 'Potato fries', 'Ceaser salad', partial];
+    if (card.kind !== 'question' || card.tariffModel?.kind !== 'questionTotal' || card.totalMarks !== 4
+      || card.rubric || card.answerVariants || card.extraneousMaterialRule
+      || !same(card.sourceEvidence?.paperPages, [5]) || !same(card.sourceEvidence?.schemePages, [6])
+      || !same(card.rows?.map(row => row.verbatim), answers)
+      || !card.rows.every(row => row.kind === 'point' && row.marks === null
+        && row.contextNote?.includes(quota) && row.contextNote.includes(partial)
+        && row.contextNote.includes(selector.text) && row.contextNote.includes('marks are not calculated'))
+      || ![{ document: 'scheme', page: 6, row: 24, group: null, text: quota },
+        { document: 'scheme', page: 6, row: 27, group: null, text: partial }, selector]
+        .every(bound => review.selectors.some(actual => same(actual, bound)))) {
+      throw new Error(`${card.id}: food partial/language intersection must remain the complete source-bound confidence task`);
+    }
+  }
+  for (const [id, groups, rowsPerGroup, mark] of [['ja-2010-ol-3a-2', 6, 2, 1], ['ja-2010-ol-lb', 10, 1, 3]]) {
+    if (card.id !== id) continue;
+    if (card.kind !== 'question' || card.tariffModel?.kind !== 'fixed'
+      || card.totalMarks !== groups * rowsPerGroup * mark
+      || card.rows?.length !== groups * rowsPerGroup || card.taskGroups?.length !== groups
+      || !card.rows.every(row => row.kind === 'point' && row.marks === mark)
+      || !card.taskGroups.every((group, index) => group.marks === mark * rowsPerGroup
+        && same(group.rowIds, card.rows.slice(index * rowsPerGroup, (index + 1) * rowsPerGroup).map(row => row.id)))) {
+      throw new Error(`${card.id}: complete required true/false exercise was split, capped or truncated`);
+    }
+  }
+}
+
+/** These webpages are stimulus only; their printed questions are on the next page.
  * Requiring the explicit false value prevents a missing field hiding prompts.
  */
 export function assertJapaneseSourceOnlyFigure(card, review, figure) {
-  const named = card.id === 'ja-2010-hl-1aa';
+  const ordinary = card.id === 'ja-2010-ol-1-1';
+  const named = card.id === 'ja-2010-hl-1aa' || ordinary;
   if (!named && card.questionFigureIncludesPrompt === undefined) return;
-  if (!named || card.questionFigureIncludesPrompt !== false || card.year !== 2010 || card.level !== 'higher'
-    || card.totalMarks !== 7 || card.questionFigureKey !== 'ja-2010-hl-web-buttons'
+  if (!named || card.questionFigureIncludesPrompt !== false || card.year !== 2010 || card.level !== (ordinary ? 'ordinary' : 'higher')
+    || card.totalMarks !== (ordinary ? 5 : 7) || card.questionFigureKey !== (ordinary ? 'ja-2010-ol-web' : 'ja-2010-hl-web-buttons')
     || figure?.source?.document !== 'paper' || figure.source.page !== 2
     || JSON.stringify(card.sourceEvidence?.paperPages) !== '[3]'
     || JSON.stringify(card.sourceMaterial?.pages) !== '[2]'
-    || !card.questionText?.trim() || review?.sitting !== '2010-hl'
+    || !card.questionText?.trim() || review?.sitting !== (ordinary ? '2010-ol' : '2010-hl')
     || !review.sources?.some(source => source.document === 'paper'
-      && source.path === 'examiner-reports/japanese/papers/2010-hl-000-paper.pdf'
-      && source.sha256 === 'a8431333d349dc9c686ae8bad56a92ea1800e1e0186af3c6850ea4599b28f629')) {
+      && source.path === `examiner-reports/japanese/papers/2010-${ordinary ? 'ol' : 'hl'}-000-paper.pdf`
+      && source.sha256 === (ordinary ? 'd82e39c9a0e6745f641ca6eab9b6750722a605f878c28750bdd674c15e3d20bc' : 'a8431333d349dc9c686ae8bad56a92ea1800e1e0186af3c6850ea4599b28f629'))) {
     throw new Error(`${card.id}: source-only figure is not bound to the original 2010 webpage task`);
   }
 }

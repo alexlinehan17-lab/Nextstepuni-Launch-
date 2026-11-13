@@ -5129,5 +5129,101 @@
       ]
     },
     "md5": "b7a55a0e3773b20a19d29a9e9d0b6e69"
+  },
+  "ja-2010-ol-web": {
+    "src": "/exam-figures/japanese/ja-2010-ol-web.png",
+    "alt": "Original shopping webpage, all five buttons and product prices",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 2,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.985
+      ]
+    },
+    "md5": "e907d23fe8410a08d25d2920508f4e8d"
+  },
+  "ja-2010-ol-3a-1": {
+    "src": "/exam-figures/japanese/ja-2010-ol-3a-1.png",
+    "alt": "Complete Nakamura’s training schedule in English:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.377
+      ]
+    },
+    "md5": "2d0cc9f6edd9503a675fac991b188646"
+  },
+  "ja-2010-ol-3a-2": {
+    "src": "/exam-figures/japanese/ja-2010-ol-3a-2.png",
+    "alt": "2. Write whether the following sentences are True or False. Choose a phrase or sentence from the text to support your answer as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.055,
+        0.375,
+        0.97,
+        0.89
+      ]
+    },
+    "md5": "747b77ebb895c8ab1232cae28b1c9986"
+  },
+  "ja-2010-ol-3b": {
+    "src": "/exam-figures/japanese/ja-2010-ol-3b.png",
+    "alt": "Circle the correct particle (i), (ii) (iii) or (iv) below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.025,
+        0.985,
+        0.34
+      ]
+    },
+    "md5": "104254edc2c6a6a8810c2c5a625662d9"
+  },
+  "ja-2010-ol-3c": {
+    "src": "/exam-figures/japanese/ja-2010-ol-3c.png",
+    "alt": "C. Write the following sentences in the negative form.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.345,
+        0.985,
+        0.68
+      ]
+    },
+    "md5": "52a4b1f5837e9f44394b8681c3ac0151"
+  },
+  "ja-2010-ol-3d": {
+    "src": "/exam-figures/japanese/ja-2010-ol-3d.png",
+    "alt": "D. Circle the correct reading for the following Kanji:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.055,
+        0.025,
+        0.975,
+        0.44
+      ]
+    },
+    "md5": "9e5e94287b497c17ec5181d1c9f5e00e"
   }
 }
