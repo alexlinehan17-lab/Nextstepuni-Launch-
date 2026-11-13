@@ -1372,6 +1372,12 @@ const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPA
  * the 2021-2025 listening asks (Section L1-L4) the bank excluded until then. */
 const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 49, ordinary: 63 },
+  2020: { higher: 48, ordinary: 59 },
+  2019: { higher: 46, ordinary: 58 },
+  2018: { higher: 46, ordinary: 53 },
+  2017: { higher: 44, ordinary: 52 },
+  2016: { higher: 45, ordinary: 53 },
+  2015: { higher: 46, ordinary: 51 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 27, ordinary: 32 },
@@ -1381,10 +1387,18 @@ const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number 
   2021: { higher: 26, ordinary: 30 },
 };
 const GERMAN_ADDED_TO_FROZEN_ID = /^de-202[1-5]-(?:hl|ol)-(?:l[1-4]-|at-|sp-)/;
-const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (
-  Number(id.slice(3, 7)) in GERMAN_ADDED
+/* The SEC's deferred sitting (de_all.py DEFERRED_CARDED, from 2026-11-13,
+ * "de-2022-hl-deferred-…", cited "… — Deferred sitting") joins as additions,
+ * its own sitting and every id new, pinned per year and level. */
+const GERMAN_DEFERRED: Record<number, { higher: number; ordinary: number }> = {
+  2022: { higher: 49, ordinary: 0 },
+};
+const GERMAN_DEFERRED_ID = /^de-\d{4}-(?:hl|ol)-deferred-/;
+const isGermanAdded = (id: string) => /^de-\d{4}-/.test(id) && (GERMAN_DEFERRED_ID.test(id)
+  || Number(id.slice(3, 7)) in GERMAN_ADDED
   || (Number(id.slice(3, 7)) in GERMAN_ADDED_TO_FROZEN && GERMAN_ADDED_TO_FROZEN_ID.test(id)));
-const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMAN_ADDED_TO_FROZEN)]
+const germanAddedTotal = [...Object.values(GERMAN_ADDED), ...Object.values(GERMAN_ADDED_TO_FROZEN),
+  ...Object.values(GERMAN_DEFERRED)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
@@ -2277,6 +2291,12 @@ describe('Mark Bank card preservation', () => {
       const added = cards.filter(card => card.year === Number(year) && GERMAN_ADDED_TO_FROZEN_ID.test(card.id));
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    for (const [year, counts] of Object.entries(GERMAN_DEFERRED)) {
+      const added = cards.filter(card => card.year === Number(year) && GERMAN_DEFERRED_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), `${year} deferred`).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), `${year} deferred`).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.questionRef.endsWith(' — Deferred sitting'))).toBe(true);
     }
     expect(cards.filter(card => !isGermanAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);

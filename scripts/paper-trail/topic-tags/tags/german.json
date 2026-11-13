@@ -956,6 +956,80 @@
     "level": "higher",
     "lang": "ev",
     "year": 2022,
+    "fileid": "LC011ALP000BV-deferred.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2022,
     "fileid": "LC011ALP000BV.pdf",
     "paperKey": "single",
     "q": [
@@ -1022,6 +1096,36 @@
         "n": "P-B",
         "primary": "german-7-1",
         "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2022,
+    "fileid": "LC011ALPA00BV-deferred.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
       }
     ]
   },

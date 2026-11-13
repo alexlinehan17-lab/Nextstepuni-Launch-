@@ -234,6 +234,8 @@ interface GermanRuntime {
   partReferences: Array<[number, number, 'h' | 'o', 's' | 'a', 'm' | 'd', string, string]>;
   /** [h/o, e/i, year-2000, single/aural, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, single/aural, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, string, number[]]>;
 }
 
 interface MusicRuntime {
@@ -4151,6 +4153,19 @@ for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of g
       germanRuntimePaperKey(paperKeyCode),
       langCode === 'e' ? 'ev' : 'iv',
     ),
+    topicIndexes.map(topicIndex => {
+      const topicId = germanRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown German runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+// A deferred German sitting's questions are keyed by their own booklet
+// ("LC011ALP000BV-deferred.pdf"), never June's, as Spanish keys its own.
+for (const [levelCode, langCode, yearOffset, paperKeyCode, fileid, n, topicIndexes] of germanRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(germanRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000,
+      'main', fileid, n, germanRuntimePaperKey(paperKeyCode), langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = germanRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown German runtime topic index: ${topicIndex}`);

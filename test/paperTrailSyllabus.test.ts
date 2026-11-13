@@ -91,6 +91,9 @@ const ADMITTED_DEFERRED = new Set([
   // Spanish 2022 Higher, the deferred sitting (2026-11-12): written and listening.
   'spanish|2022|LC012ALP000EV-deferred.pdf',
   'spanish|2022|LC012ALPA00EV-deferred.pdf',
+  // German 2022 Higher, the deferred sitting (2026-11-13): written and listening.
+  'german|2022|LC011ALP000BV-deferred.pdf',
+  'german|2022|LC011ALPA00BV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

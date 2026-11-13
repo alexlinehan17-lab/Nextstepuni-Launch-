@@ -464,14 +464,56 @@ for (const source of rawSidecars) {
   paperMap.set(identity, paper);
 }
 
+// The SEC's deferred 2022 Higher sitting: its own papers, indexed by Paper
+// Trail as "LC011ALP000BV-deferred.pdf" (Deferred · Exam Paper) and
+// "LC011ALPA00BV-deferred.pdf" (Deferred · Aural Paper). They join the Atlas
+// once carded in the Mark Bank (de_all.py DEFERRED_CARDED), as Spanish's
+// deferred papers did: each its own entry, with its own hosted anchors. The
+// deferred booklets print the June sitting's question set in the June
+// layout, so each takes June's questions (number, label, slot, so its
+// canonical topics), placed on the pages the deferred booklet prints them:
+// read from the booklets themselves (de_paper.DePaper(2022, 'hl', sitting=
+// 'deferred'): TEXT I Q1-Q4 pp5-8, TEXT II Q1 p11, Q2-Q3 p12, Q4 p13, the
+// grammar p9, Äußerung p14, the letter p16, the photo p17; the listening
+// booklet's four parts on pp4, 6, 8, 10).
+const DEFERRED_PAGES = {
+  '2022|higher|written': {
+    I1: 5, I2: 6, I3: 7, I4: 8, II1: 11, II2: 12, II3: 12, II4: 13,
+    G: 9, 'T-A': 14, 'T-B': 14, 'P-A': 16, 'P-B': 17,
+  },
+  '2022|higher|aural': { 1: 4, 2: 6, 3: 8, 4: 10 },
+};
+const isDeferredPaper = paper => String(paper.fileid).endsWith('-deferred.pdf');
+for (const [key, pages] of Object.entries(DEFERRED_PAGES)) {
+  const [year, level, kind] = key.split('|');
+  const june = [...paperMap.values()].find(paper => paper.year === Number(year) && paper.level === level
+    && paper.kind === kind && paper.lang === 'ev' && !isDeferredPaper(paper));
+  if (!june || june.q.map(question => question.n).sort().join() !== Object.keys(pages).sort().join()) {
+    throw new Error(`${key}: the deferred page table does not list June's questions`);
+  }
+  const paper = {
+    ...june,
+    fileid: june.fileid.replace(/\.pdf$/, '-deferred.pdf'),
+    q: june.q.map(question => ({
+      ...question,
+      baseline: undefined,
+      anchor: { n: question.n, label: question.label, pP: pages[question.n], pY: [0, 1],
+        paperRegion: fullPages(pages[question.n]) },
+    })),
+  };
+  const identity = paperIdentity(paper);
+  if (paperMap.has(identity)) throw new Error(`Unexpected existing German paper: ${identity}`);
+  paperMap.set(identity, paper);
+}
+
 const localPapers = [...paperMap.values()].sort((a, b) => (
   b.year - a.year
   || a.level.localeCompare(b.level)
   || a.lang.localeCompare(b.lang)
   || a.fileid.localeCompare(b.fileid)
 ));
-if (localPapers.length !== 100) {
-  throw new Error(`Expected 100 German local paper variants, found ${localPapers.length}`);
+if (localPapers.length !== 102) {
+  throw new Error(`Expected 102 German local paper variants (100 June, 2 deferred), found ${localPapers.length}`);
 }
 
 let preservedBaselineCards = 0;
@@ -558,9 +600,10 @@ const referenceSlot = (topic, heading) => topic.level === 'higher'
   ? higherReferenceSlot(topic, heading)
   : ordinaryReferenceSlot(topic, heading);
 
-const findPaper = (year, level, kind) => {
+const findPaper = (year, level, kind, sitting = 'main') => {
   const matches = localPapers.filter(paper => (
     paper.year === year && paper.level === level && paper.kind === kind && paper.lang === 'ev'
+    && isDeferredPaper(paper) === (sitting === 'deferred')
   ));
   if (matches.length !== 1) {
     throw new Error(`${year} ${level} ${kind}: expected one German reference paper, found ${matches.length}`);
@@ -590,10 +633,14 @@ const resolveHeading = (topic, heading) => {
   if (year < 2010) {
     return blocked('The entitled local SEC question corpus begins in 2010. The factual heading is retained, but no StudyClix-hosted question, solution, image or PDF is copied.');
   }
-  if (sitting === 'deferred') {
+  // A deferred heading resolves to that sitting's own paper where it is
+  // carded (the 2022 Higher deferred sitting, from 2026-11-13).
+  const deferredCarded = localPapers.some(paper => isDeferredPaper(paper)
+    && paper.year === year && paper.level === topic.level && paper.kind === kind);
+  if (sitting === 'deferred' && !deferredCarded) {
     return blocked('The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus.');
   }
-  const paper = findPaper(year, topic.level, kind);
+  const paper = findPaper(year, topic.level, kind, sitting);
   const candidates = candidatesForSlot(paper, slot);
   if (!candidates.length) throw new Error(`${topic.id}: no local German card resolves ${heading} (${slot})`);
   return {
@@ -623,7 +670,9 @@ if (associations.length !== 479) {
 }
 const matched = associations.filter(association => association.resolution === 'matched');
 const sourceBlocked = associations.filter(association => association.resolution === 'source-blocked');
-if (matched.length !== 379 || sourceBlocked.length !== 100) {
+// 379/100 until 2026-11-13; the ten deferred headings ("2022 - Deferred Aural
+// Paper - …") now resolve to the carded 2022 Higher deferred sitting.
+if (matched.length !== 389 || sourceBlocked.length !== 90) {
   throw new Error(`German source boundary mismatch: matched=${matched.length}, blocked=${sourceBlocked.length}`);
 }
 
@@ -769,8 +818,10 @@ for (const paper of localPapers) {
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 
+// A deferred question is keyed apart from June's question of the same number.
 const logicalQuestions = new Set(localQuestionMappings.map(mapping => [
-  mapping.level, mapping.year, mapping.paperKey, mapping.n,
+  mapping.level, mapping.year, mapping.paperKey,
+  ...(String(mapping.fileid).endsWith('-deferred.pdf') ? ['deferred'] : []), mapping.n,
 ].join('|')));
 const blockedByReason = sourceBlocked.reduce((counts, association) => {
   const key = association.year < 2010 ? 'preCorpus' : 'deferred';
@@ -877,14 +928,27 @@ const runtime = {
     topic.reportedQuestionCount,
   ]),
   partReferences: runtimePartReferences,
-  questionMappings: localQuestionMappings.map(mapping => [
-    mapping.level === 'higher' ? 'h' : 'o',
-    mapping.lang === 'ev' ? 'e' : 'i',
-    mapping.year - 2000,
-    paperKeyCode(mapping.paperKey),
-    mapping.n,
-    mapping.topicIds.map(id => topicIndex.get(id)),
-  ]),
+  questionMappings: localQuestionMappings.filter(mapping => !String(mapping.fileid).endsWith('-deferred.pdf'))
+    .map(mapping => [
+      mapping.level === 'higher' ? 'h' : 'o',
+      mapping.lang === 'ev' ? 'e' : 'i',
+      mapping.year - 2000,
+      paperKeyCode(mapping.paperKey),
+      mapping.n,
+      mapping.topicIds.map(id => topicIndex.get(id)),
+    ]),
+  // A deferred sitting's questions carry their own booklet's file id: June's
+  // (level, edition, year, paper, number) key would collide with them.
+  deferredQuestionMappings: localQuestionMappings.filter(mapping => String(mapping.fileid).endsWith('-deferred.pdf'))
+    .map(mapping => [
+      mapping.level === 'higher' ? 'h' : 'o',
+      mapping.lang === 'ev' ? 'e' : 'i',
+      mapping.year - 2000,
+      paperKeyCode(mapping.paperKey),
+      mapping.fileid,
+      mapping.n,
+      mapping.topicIds.map(id => topicIndex.get(id)),
+    ]),
 };
 fs.writeFileSync(RUNTIME_PATH, `${JSON.stringify(runtime)}\n`);
 

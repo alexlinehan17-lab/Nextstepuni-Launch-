@@ -18,7 +18,10 @@ const listening = [...GERMAN_HIGHER, ...GERMAN_ORDINARY].filter(card => /^L[1-4]
 describe('German listening cards', () => {
   it('carry the SEC recording of their own year', () => {
     const wrong = listening.filter((card: SecCard) => {
-      const recording = recordings.find(r => r.year === card.year);
+      // A deferred card ("de-2022-hl-deferred-…") carries its own sitting's recording.
+      const sitting = /-deferred-/.test(card.id) ? 'deferred' : undefined;
+      const recording = recordings.find(r => r.year === card.year
+        && (r as { sitting?: string }).sitting === sitting);
       return !recording || card.audioMaterial?.playbackUrl !== recording.source.playbackUrl;
     }).map(card => card.id);
     expect(listening.length).toBeGreaterThan(0);
