@@ -53,7 +53,11 @@ def expression_scale(S, head, columns=2):
     start = _find(S, head)
     if start is None:
         return None
-    stop = _find(S, r'^N\.B\. Take a global view', start)
+    # 2021 Higher prints the "N.B. Take a global view …" line above the
+    # table as well as below it: the table ends at the one after its first
+    # category.
+    first = _find(S, r'^Vocabulary', start)
+    stop = _find(S, r'^N\.B\. Take a global view', first)
     lines = _lines(S, start + 1, stop)
     cats = []
     for line in lines:
