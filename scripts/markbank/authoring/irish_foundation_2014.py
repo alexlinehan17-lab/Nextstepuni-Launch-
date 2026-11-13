@@ -299,7 +299,9 @@ def build():
                 card['criteria'][0]['permittedMarks'] = [0,2,4,6]
                 card['criteria'][0]['guidance'] += [
                     '6 mharc: Is deir sí linn go minic / Nach mbeidh sí óg arís (an dá líne).',
-                    'Líne bhreise amháin: pionós −2; an véarsa ar fad: pionós −4. Enter the resulting mark for this answer only.']
+                    # Scheme p7: "Líne bhreise amháin (-2) … An véarsa ar fad (-4)"; the second penalty in the scheme's words,
+                    # which the lift check keeps (it had moved our "pionós −4" out of the guidance).
+                    'Líne bhreise amháin: pionós −2; An véarsa ar fad (-4). Enter the resulting mark for this answer only.']
             reading_cards[slot].append(card)
 
     def combine(key,ref,members,pool_quote):

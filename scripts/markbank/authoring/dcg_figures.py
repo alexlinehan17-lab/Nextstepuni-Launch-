@@ -114,8 +114,11 @@ FOOT_BANNER = re.compile(
     r'This examination paper must be returned|Do not hand this up', re.I)
 
 
-def key_for(year, level, section, q):
-    return f'{SUBJECT}-{year}-{level.upper()}-paper-sec{section}-q{q}-art'
+def key_for(year, level, section, q, sitting='main'):
+    # A deferred sitting's crop carries the sitting in its key, so it can
+    # never stand in for June's question of the same number.
+    deferred = '-deferred' if sitting == 'deferred' else ''
+    return f'{SUBJECT}-{year}-{level.upper()}{deferred}-paper-sec{section}-q{q}-art'
 
 
 def _render_box(page, rows_):
@@ -345,21 +348,24 @@ def _thin(values, gap):
     return out
 
 
-def cut(census=None, sitting=None):
+def cut(census=None, sitting=None, deferred=False):
     """Write one PNG per question. Returns [(key, path, year, level, sec, q)].
 
-    `sitting` = (year, level) cuts that sitting alone. A crop already shipped
-    is pinned by its md5 in the manifest, so re-cutting the whole corpus to add
-    one sitting risks every catalogued crop for nothing.
+    `sitting` = (year, level) cuts that sitting alone: its June papers, or with
+    `deferred` its deferred sitting's. A crop already shipped is pinned by its
+    md5 in the manifest, so re-cutting the whole corpus to add one sitting
+    risks every catalogued crop for nothing.
     """
     os.makedirs(OUT_DIR, exist_ok=True)
     census = census or PC.census_subject(SUBJECT)
     made = []
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
-        if sitting and (year, level) != sitting:
+        paper_sitting = 'deferred' if paper.get('paper') == 'Deferred' else 'main'
+        if sitting and ((year, level) != sitting
+                        or (paper_sitting == 'deferred') != deferred):
             continue
-        P = DP.load(year, level, SUBJECT)
+        P = DP.load(year, level, SUBJECT, paper_sitting)
         for path in P.files:
             doc = pymupdf.open(path)
             for page in doc:
@@ -374,7 +380,7 @@ def cut(census=None, sitting=None):
                 else:
                     boxes = quadrants(page)
                 for (section, q), rect in boxes.items():
-                    key = key_for(year, level, section, q)
+                    key = key_for(year, level, section, q, paper_sitting)
                     out = os.path.join(OUT_DIR, f'{key}.png')
                     if len(heads) == 1:
                         # Painted on the in-memory page only; the PDF on
@@ -433,9 +439,13 @@ def catalogue(alt_path):
         if not os.path.exists(path):
             missing.append(key)
             continue
-        m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)-paper-sec([ABC])-q(\d)-art', key)
+        m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)(-deferred)?-paper-sec([ABC])'
+                         r'-q(\d)-art', key)
         year, level, section, q = (int(m.group(1)), m.group(2).lower(),
-                                   m.group(3), int(m.group(4)))
+                                   m.group(4), int(m.group(5)))
+        cite = ' — Deferred sitting' if m.group(3) else ''
+        sitting = ', deferred examination' if m.group(3) else ''
+
         with open(path, 'rb') as fh:
             md5 = hashlib.md5(fh.read()).hexdigest()
         manifest[key] = {
@@ -444,11 +454,11 @@ def catalogue(alt_path):
             'alt': ' '.join(text.split()),
             'lettersVisible': [],
             'labelMeanings': [],
-            'questionRef': f'{year} {level.upper()} Section {section} Q{q}',
+            'questionRef': f'{year} {level.upper()} Section {section} Q{q}{cite}',
             'year': year,
             'level': 'higher' if level == 'hl' else 'ordinary',
             'attribution': (f'SEC Leaving Certificate {TITLE} {year} '
-                            f'{LEVEL_WORD[level]} Level '
+                            f'{LEVEL_WORD[level]} Level{sitting} '
                             '— © State Examinations Commission'),
         }
         written += 1
@@ -482,10 +492,12 @@ def main():
     ap.add_argument('--worklist', action='store_true')
     ap.add_argument('--catalogue')
     ap.add_argument('--sitting', nargs=2, metavar=('YEAR', 'LEVEL'))
+    ap.add_argument('--deferred', action='store_true',
+                    help='with --sitting: cut its deferred sitting, not June')
     args = ap.parse_args()
     if args.cut or args.sheets:
         made = cut(sitting=(int(args.sitting[0]), args.sitting[1])
-                   if args.sitting else None)
+                   if args.sitting else None, deferred=args.deferred)
         print(f'{len(made)} question crop(s) written to {OUT_DIR}')
         by = collections.Counter((r[2], r[3]) for r in made)
         for k in sorted(by):

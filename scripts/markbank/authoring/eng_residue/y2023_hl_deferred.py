@@ -705,4 +705,51 @@ CARDS = [
 
 TOPICS = {}
 
-ATLAS = {}
+# The Topic Atlas topic of each card the reference's headings do not settle
+# (eng_atlas.py).
+_XR = ('Extended Reality (the 2023 Higher special topic, set again in the deferred '
+       'sitting), which the reference files Q2 under; the card\'s syllabus heading is '
+       'Technology.')
+
+ATLAS = {
+    'eng-2023-hl-deferred-q1-b': dict(
+        topics=['Graphics and Design'],
+        note='Prototyping in the design process, which the reference files Q1(b) '
+             'under; the card\'s syllabus heading is Manufacturing processes.'),
+    'eng-2023-hl-deferred-q1-g': dict(
+        topics=['Machining & Metrology'],
+        note='The benefits of CAM in manufacturing, which the reference files Q1(g) '
+             'under; the card\'s syllabus heading is Manufacturing processes.'),
+    **{f'eng-2023-hl-deferred-q2-{p}': dict(topics=['Energy, Electronics & Robotics'], note=_XR)
+       for p in ('a-i', 'a-ii', 'b', 'c', 'd', 'e-ii')},
+    'eng-2023-hl-deferred-q2-e-i': dict(
+        topics=['Energy, Electronics & Robotics', 'Health and Safety'],
+        note='The safety concerns of using XR technology: Extended Reality, the special '
+             'topic the reference files Q2 under, and Health and Safety, which covers '
+             'the card\'s syllabus heading, Health and safety.'),
+    **{f'eng-2023-hl-deferred-q4-a-{p}': dict(
+        topics=['Heat Treatment'],
+        note=f'{what} of the car wheel rims, which the reference files Q4(a) under; the '
+             'card\'s syllabus heading is Manufacturing processes, which no '
+             'outgoing-course topic covers.')
+       for p, what in (('i', 'Forging'), ('ii', 'Casting defects'))},
+    'eng-2023-hl-deferred-q6-c-i': dict(
+        topics=['Energy, Electronics & Robotics'],
+        note='Robotic technology in farming, the second (c), which the reference '
+             'files under Energy, Electronics & Robotics; the card\'s syllabus heading '
+             'is Technology.'),
+    'eng-2023-hl-deferred-q7-b-ii': dict(
+        topics=['Polymers'],
+        note='Recycling against upcycling, in the polymers question the reference '
+             'files whole under Polymers (as June 2022\'s Q7(b)(iv)); the card\'s '
+             'syllabus heading is Technology (recycling and sustainability).'),
+    'eng-2023-hl-deferred-q7-c-i': dict(
+        topics=['Polymers'],
+        note='3-D printing customised objects for medicine, in the polymers question '
+             'the reference files whole under Polymers; the card\'s syllabus heading '
+             'is Manufacturing processes.'),
+    'eng-2023-hl-deferred-q9-b-iv': dict(
+        topics=['Energy, Electronics & Robotics'],
+        note='A transformer in a mobile phone charger, which the reference files '
+             'Q9(b)(iv) under; the card\'s syllabus heading is Joining of materials.'),
+}

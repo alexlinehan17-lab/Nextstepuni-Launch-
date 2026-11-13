@@ -70,14 +70,48 @@ const paperIdentity = paper => [
   paper.fileid,
 ].join('|');
 
+/* A deferred sitting's booklet ("LC562ALP014EV-deferred.pdf") is its own
+ * paper, numbered as June's. Its questions join on the booklet
+ * (deferredQuestionMappings), never on June's year and number, so they
+ * neither replace nor merge with June's question of the same number. */
+const isDeferred = paper => /-deferred\.pdf$/i.test(paper.fileid);
+const junePapers = localPapers.filter(paper => !isDeferred(paper));
+const deferredPapers = localPapers.filter(isDeferred);
+
 const paperIds = localPapers.map(paperIdentity);
 const duplicatePaperIds = paperIds.filter((identity, index) => paperIds.indexOf(identity) !== index);
 if (duplicatePaperIds.length) {
   throw new Error(`Duplicate DCG paper variants: ${[...new Set(duplicatePaperIds)].join(', ')}`);
 }
-if (localPapers.length !== 132) {
-  throw new Error(`Expected 132 DCG variants, found ${localPapers.length}`);
+if (junePapers.length !== 132) {
+  throw new Error(`Expected 132 DCG variants, found ${junePapers.length}`);
 }
+/* The deferred sittings in the Atlas (each joins with its Mark Bank cards):
+ * a Section A sheet and a Sections B and C booklet each, English, Higher.
+ * Per sitting, the reference's deferred headings it matches, the logical
+ * questions they name, and the questions it heads none of (C-5, retained
+ * under Assemblies by design_and_communication_graphics.py). */
+const DEFERRED_EXPECTED = new Map([
+  [2022, { matched: 13, logical: 11, retained: 1 }],
+  [2023, { matched: 11, logical: 11, retained: 1 }],
+]);
+const deferredYears = [...new Set(deferredPapers.map(paper => paper.year))].sort();
+for (const year of deferredYears) {
+  const booklets = deferredPapers.filter(paper => paper.year === year);
+  if (!DEFERRED_EXPECTED.has(year) || booklets.length !== 2
+      || booklets.some(paper => paper.level !== 'higher' || paper.lang !== 'ev')
+      || new Set(booklets.map(paper => paper.paperKey)).size !== 2) {
+    throw new Error(`${year}: expected the deferred Section A sheet and Sections B and C booklet, English, Higher`);
+  }
+}
+const deferredExpected = deferredYears.reduce((sum, year) => {
+  const expected = DEFERRED_EXPECTED.get(year);
+  return {
+    matched: sum.matched + expected.matched,
+    logical: sum.logical + expected.logical,
+    retained: sum.retained + expected.retained,
+  };
+}, { matched: 0, logical: 0, retained: 0 });
 
 for (const paper of localPapers) {
   if (!LEVELS.includes(paper.level) || !['ev', 'iv'].includes(paper.lang)) {
@@ -130,8 +164,8 @@ const localSlot = ({ section, printedQuestionNumber }) => {
   throw new Error(`Unexpected DCG section ${section}`);
 };
 
-const EnglishPaper = (level, year, paperKey) => {
-  const candidates = localPapers.filter(paper => (
+const EnglishPaper = (level, year, paperKey, sitting = 'main') => {
+  const candidates = (sitting === 'deferred' ? deferredPapers : junePapers).filter(paper => (
     paper.level === level
     && paper.lang === 'ev'
     && paper.year === year
@@ -147,7 +181,8 @@ const blockedReason = parsed => {
   if (parsed.year < 2010) {
     return 'The entitled local SEC DCG corpus currently begins at 2010. This factual heading is retained pending acquisition and independent verification of the official paper; no StudyClix-hosted question image or PDF is copied.';
   }
-  if (parsed.sitting === 'deferred') {
+  if (parsed.sitting === 'deferred'
+      && !deferredPapers.some(paper => paper.year === parsed.year)) {
     return 'The entitled Paper Trail corpus does not currently contain this deferred-sitting DCG booklet. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
   }
   return null;
@@ -160,7 +195,7 @@ for (const level of LEVELS) {
       const parsed = parseHeading(heading);
       const slot = localSlot(parsed);
       const explicitBlock = blockedReason(parsed);
-      const paper = explicitBlock ? null : EnglishPaper(level, parsed.year, slot.paperKey);
+      const paper = explicitBlock ? null : EnglishPaper(level, parsed.year, slot.paperKey, parsed.sitting);
       const localQuestion = paper?.q.find(question => question.n === slot.questionNumber);
       if (explicitBlock || !paper || !localQuestion) {
         associations.push({
@@ -216,14 +251,23 @@ if (
   throw new Error('DCG factual audit totals changed unexpectedly');
 }
 
+// A deferred question's key carries its sitting; June's is unchanged.
+const logicalKeyFor = (level, year, sitting, paperKey, questionNumber) => [
+  level,
+  year,
+  ...(sitting === 'deferred' ? ['deferred'] : []),
+  paperKey,
+  questionNumber,
+].join('|');
 const exactTopicsByCard = new Map();
 for (const association of associations.filter(item => item.resolution === 'matched')) {
-  const key = [
+  const key = logicalKeyFor(
     association.level,
     association.year,
+    association.sitting,
     association.paperKey,
     association.questionNumber,
-  ].join('|');
+  );
   const indexes = exactTopicsByCard.get(key) ?? [];
   const index = topicIndex.get(association.topicId);
   if (index === undefined) throw new Error(`Unknown DCG topic ${association.topicId}`);
@@ -244,11 +288,13 @@ const fallbackTopicForNode = (level, nodeId) => {
 };
 
 const questionMappings = [];
+const deferredQuestionMappings = [];
 const retainedLocalCards = [];
 const retainedLogical = new Set();
 for (const paper of localPapers) {
+  const sitting = isDeferred(paper) ? 'deferred' : 'main';
   for (const question of paper.q) {
-    const logicalKey = [paper.level, paper.year, paper.paperKey, question.n].join('|');
+    const logicalKey = logicalKeyFor(paper.level, paper.year, sitting, paper.paperKey, question.n);
     let indexes = exactTopicsByCard.get(logicalKey);
     if (!indexes) {
       indexes = [...new Set(
@@ -261,6 +307,7 @@ for (const paper of localPapers) {
         retainedLocalCards.push({
           level: paper.level,
           year: paper.year,
+          ...(sitting === 'deferred' ? { sitting, fileid: paper.fileid } : {}),
           paperKey: paper.paperKey,
           questionNumber: question.n,
           canonicalNodeIds: [question.primary, question.secondary].filter(Boolean),
@@ -271,6 +318,18 @@ for (const paper of localPapers) {
       }
     }
     if (!indexes.length) throw new Error(`${paperIdentity(paper)} Q${question.n}: empty topic mapping`);
+    if (sitting === 'deferred') {
+      deferredQuestionMappings.push([
+        paper.level === 'higher' ? 'h' : 'o',
+        paper.lang === 'ev' ? 'e' : 'i',
+        paper.year,
+        paper.paperKey === 'section-a' ? 'a' : 's',
+        paper.fileid,
+        question.n,
+        indexes,
+      ]);
+      continue;
+    }
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.lang === 'ev' ? 'e' : 'i',
@@ -288,6 +347,7 @@ const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId,
   item.level,
   item.year,
+  ...(item.sitting === 'deferred' ? ['deferred'] : []),
   item.paperKey,
   item.questionNumber,
 ].join('|'))).size;
@@ -296,13 +356,23 @@ const distinctStudentFacingQuestions = localPapers
   .filter(paper => paper.lang === 'ev')
   .reduce((sum, paper) => sum + paper.q.length, 0);
 
-if (matchedAssociations.length !== 386 || sourceBlockedAssociations.length !== 41) {
+// June: 386 matched (41 blocked), 347 logical cards, 49 retained, 792
+// mappings. Each deferred sitting in the Atlas moves its headings from blocked
+// to matched and adds its own twelve questions (DEFERRED_EXPECTED).
+const expectedMatched = 386 + deferredExpected.matched;
+if (matchedAssociations.length !== expectedMatched
+    || sourceBlockedAssociations.length !== 427 - expectedMatched) {
   throw new Error(`Unexpected DCG reconciliation split: ${matchedAssociations.length}/${sourceBlockedAssociations.length}`);
 }
-if (exactTopicsByCard.size !== 347 || retainedLocalCards.length !== 49) {
-  throw new Error(`Expected 347 matched + 49 retained logical cards, found ${exactTopicsByCard.size} + ${retainedLocalCards.length}`);
+if (exactTopicsByCard.size !== 347 + deferredExpected.logical
+    || retainedLocalCards.length !== 49 + deferredExpected.retained) {
+  throw new Error(`Expected ${347 + deferredExpected.logical} matched + ${49 + deferredExpected.retained} retained logical cards, found ${exactTopicsByCard.size} + ${retainedLocalCards.length}`);
 }
-if (physicalMappings !== 792 || distinctStudentFacingQuestions !== 396 || questionMappings.length !== 792) {
+const deferredQuestions = 12 * deferredYears.length;
+if (physicalMappings !== 792 + deferredQuestions
+    || distinctStudentFacingQuestions !== 396 + deferredQuestions
+    || questionMappings.length !== 792
+    || deferredQuestionMappings.length !== deferredQuestions) {
   throw new Error('DCG local corpus totals changed unexpectedly');
 }
 
@@ -388,6 +458,7 @@ const runtime = {
   topics: runtimeTopics,
   partReferences,
   questionMappings,
+  ...(deferredQuestionMappings.length ? { deferredQuestionMappings } : {}),
   summary,
 };
 

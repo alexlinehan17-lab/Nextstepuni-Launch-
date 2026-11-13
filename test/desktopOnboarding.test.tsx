@@ -18,7 +18,7 @@ const grades = (): SetupDraft => ({
   step: "grades",
   year: "5th",
   date: "2030-06-05",
-  dateConfirmed: true,
+  dateEdited: true,
   rest: ["Sunday"],
   category: "college-learning",
   vision: ["campus"],

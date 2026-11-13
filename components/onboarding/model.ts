@@ -1,7 +1,7 @@
 import { DAYS_OF_WEEK, JC_BANDS, LC_SUBJECTS, catalogueForProgramme, subjectProgramme, subjectLevels, subjectUsesExamGrades, getGradesForLevel, getPointsForGrade, targetGradesFor, type Grade, type JCBand, type Level, type StudentSubject, type StudentSubjectProfile, type YearGroup } from '../subjectData';
 import { getActiveCategories, getVisionCardsForLevel } from '../../northStarData';
 import { isLcaYear, yearGroupToCurriculumLevel } from '../../utils/authUtils';
-import { getDefaultExamDate } from '../../utils/examDates';
+import { getDefaultExamDate, getDefaultExamDateForYear } from '../../utils/examDates';
 import type { NorthStar, NorthStarCategory } from '../../types';
 
 export type SetupStep = 'welcome' | 'year' | 'north' | 'vision' | 'subjects' | 'grades' | 'schedule' | 'summary';
@@ -17,7 +17,7 @@ export interface SetupDraft {
   configs: Record<string, SubjectChoice>;
   rest: string[];
   date: string;
-  dateConfirmed: boolean;
+  dateEdited: boolean;
   gradeSubject: string | null;
   appearance: 'dark' | 'light';
 }
@@ -68,7 +68,7 @@ export function pointsFor(draft: SetupDraft) {
   return { count: known.length, current: sum('current'), target: sum('target') };
 }
 export function initialDraft(targetYear?: 'TY' | '5th'): SetupDraft {
-  return { version: 2, step: targetYear ? 'subjects' : 'welcome', year: targetYear ?? null, category: null, vision: [], subjects: [], configs: {}, rest: [...DAYS_OF_WEEK], date: getDefaultExamDate(), dateConfirmed: false, gradeSubject: null, appearance: 'dark' };
+  return { version: 2, step: targetYear ? 'subjects' : 'welcome', year: targetYear ?? null, category: null, vision: [], subjects: [], configs: {}, rest: [...DAYS_OF_WEEK], date: getDefaultExamDateForYear(targetYear), dateEdited: false, gradeSubject: null, appearance: 'dark' };
 }
 /** Untrusted local storage is validated, including legacy drafts. Legacy auto-filled
  * grades are retained for review, never silently treated as confirmed answers. */
@@ -111,11 +111,15 @@ export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', 
     if (targetYear && ['welcome', 'year'].includes(step)) step = 'subjects';
     const gradeSubjects = subjects.filter(name => requiresGradeSetup(year, name));
     if (step === 'grades' && !gradeSubjects.length) step = 'subjects';
+    const savedDate = saved.date ?? saved.examDate;
+    const dateEdited = saved.dateEdited === true || saved.dateConfirmed === true;
+    // Upgrade untouched defaults from older drafts; retain chosen dates.
+    const useSavedDate = typeof savedDate === 'string' && (dateEdited || savedDate !== getDefaultExamDate());
     return { ...base, year, step, category, vision, subjects, configs,
       appearance: saved.appearance === 'light' ? 'light' : 'dark',
       rest: DAYS_OF_WEEK.filter(day => (saved.rest ?? saved.restDays ?? base.rest).includes?.(day)),
-      date: typeof (saved.date ?? saved.examDate) === 'string' ? saved.date ?? saved.examDate : base.date,
-      dateConfirmed: raw ? saved.dateConfirmed === true : false,
+      date: useSavedDate ? savedDate : getDefaultExamDateForYear(year),
+      dateEdited,
       gradeSubject: gradeSubjects.includes(saved.gradeSubject) ? saved.gradeSubject : gradeSubjects[0] ?? null };
   } catch { return base; }
 }

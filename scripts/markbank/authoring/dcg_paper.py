@@ -357,8 +357,9 @@ class Ask:
 class DcgPaper:
     """One sitting: the Section A booklet and the Sections B and C booklet."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting='main'):
         self.year, self.level, self.subject = year, level, subject
+        self.sitting = sitting
         self.flags = []
         self.files = self._find_files()
         self.questions = {}          # (section, q) -> {'stem', 'option', 'parts'}
@@ -369,6 +370,20 @@ class DcgPaper:
 
     # ---------------------------------------------------------------- files
     def _find_files(self):
+        if self.sitting == 'deferred':
+            # The SEC's deferred sitting is its own two booklets, read from
+            # the archive where it keeps them, never from the June papers
+            # folder: deferredexams/<year>/LC562ALP014EV.pdf and
+            # LC562ALP039EV.pdf for 2022 and 2023 Higher (no Ordinary).
+            code = {'hl': 'A', 'ol': 'G'}[self.level]
+            found = sorted(glob.glob(os.path.join(
+                ROOT, 'paper-trail-corpus', 'deferredexams', str(self.year),
+                f'LC562{code}LP*EV.pdf')))
+            if len(found) != 2:
+                raise FileNotFoundError(
+                    f'{self.subject} {self.year} {self.level} deferred: '
+                    f'{len(found)} booklet(s) in the archive, expected two')
+            return found
         found = sorted(glob.glob(os.path.join(
             papers_dir(self.subject),
             f'{self.year}-{self.level}-*-paper.pdf')))
@@ -569,7 +584,7 @@ class DcgPaper:
 _LOADED = {}
 
 
-def load(year, level, subject=SUBJECT):
+def load(year, level, subject=SUBJECT, sitting='main'):
     """One DcgPaper per sitting per process.
 
     Reading a DCG booklet means parsing a page of dense vector graphics for
@@ -577,10 +592,17 @@ def load(year, level, subject=SUBJECT):
     figure worklist all want the same 33 sittings. Cached so the three make
     one pass rather than three.
     """
-    key = (subject, year, level)
+    key = (subject, year, level, sitting)
     if key not in _LOADED:
-        _LOADED[key] = DcgPaper(year, level, subject)
+        _LOADED[key] = DcgPaper(year, level, subject, sitting)
     return _LOADED[key]
+
+
+# The SEC's deferred DCG sittings in the archive (deferredexams/ and
+# deferredmarkingschemes/): 2022 and 2023 Higher, two booklets and one scheme
+# each; no Ordinary, nothing for 2024 or 2025. 2023's booklets are also in
+# Irish, deferred with every Irish-version paper.
+DEFERRED_SITTINGS = ((2022, 'hl'), (2023, 'hl'))
 
 
 # The SAME markers, read a completely different way: a regex over the page's

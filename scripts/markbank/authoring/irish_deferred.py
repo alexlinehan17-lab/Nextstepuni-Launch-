@@ -51,7 +51,7 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',), 2022: ('ordinary',)}
+SITTINGS = {2025: ('higher', 'ordinary',), 2024: ('higher', 'ordinary',), 2023: ('higher', 'ordinary',), 2022: ('ordinary', 'higher',)}
 AUDIO = {2025: 'available', 2024: 'available', 2023: 'available', 2022: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
@@ -344,7 +344,9 @@ def listening(sitting, base):
     cursor = answers.start()
     # The answers end at the language note, the section's mark panel or the composition, whichever is first.
     stop_m = min((m for m in (s.find(r'Bainfear ó 0 go \d ar chaighdeán na Gaeilge\.', cursor),
-                              s.find(r'Eolas \(60\) =', cursor), s.find(r'Cuid II\b|An Mharcáil:', cursor)) if m),
+                              s.find(r'Eolas \(60\) =', cursor), s.find(r'Cuid II\b|An Mharcáil:', cursor),
+                              # 2023 Ordinary goes straight from the last answer to the composition's instruction.
+                              s.find(r'Freagair do rogha (?:dhá cheann|CEANN AMHÁIN) de A, B', cursor)) if m),
                  key=lambda m: m.start())
     plan = []
     for suffix, atlas, part, title, heading, topic in SEGMENTS[level]:
@@ -717,11 +719,24 @@ def reading(sitting, base):
             chunk, pages = s.chunk(item[3], end)
             if not higher:
                 chunk = re.split(r'\s*\[Gaeilge lochtach', chunk)[0]
+                # A passage's last part runs on into the examiner's instructions for the whole passage ("Nóta: Gearrfar pionós
+                # i ngeall ar iomarcaíocht. Léireofar an pionós … Marc bronnta – marc bainte (iom.) = …", "Taispeánfar go soiléir
+                # na marcanna …"): they are the passage's, printed once for it, not this part's answers.
+                chunk = re.split(r'\s*(?:Nóta: Gearrfar pionós i ngeall ar iomarcaíocht\. Léireofar|Taispeánfar go soiléir na marcanna)', chunk)[0]
                 # The text layer can store a one-answer part's tariff after its answer ("(Alt 1) • Tugadh … nua 5 mharc"):
                 # the scheme prints it beside the question, so it is read there. No word changes.
                 late = re.fullmatch(r'(.*?\(Alt \d\))\s+(•[^=]*?)\s+(\d+ mharc)', chunk)
                 if late:
                     chunk = f'{late.group(1)} {late.group(3)} {late.group(2)}'
+            else:
+                # 2022 prints a question's total after its last part ("… spallaí cloch ar dhíon na pictiúrlainne. (1 mharc + 1
+                # mharc) (7 marc)"): the question's, not the part's.
+                chunk = re.sub(r'\s+\(7 marc\)$', '', chunk) if item[0] < 6 else chunk
+                # … and a part's price in the right margin beside its answer, which the text layer stores after it ("(Alt 4)
+                # Ba shin é an chéad uair … (pointe amháin eolais) {2 mharc}"): read beside the question. No word changes.
+                margin = re.fullmatch(r'(.*?\(Alt \d\))\s+([^{}•]+?)\s+((?:\((?:pointe amháin eolais|\d \w+)\)\s*)?\{[^{}]*\})', chunk)
+                if margin:
+                    chunk = f'{margin.group(1)} {margin.group(3)} {margin.group(2)}'
             item += [chunk, pages]
         if not higher:
             # 2022 prints B 3(b)'s "5 mharc" in the margin beside it, but the text layer stores it at the head of the next part
@@ -796,6 +811,9 @@ def reading(sitting, base):
                         split |= {int(v) for m in re.finditer(r'\((\d) ?mharc \+ (\d) ?mharc\)', chunk) for v in m.groups() if int(v) < marks}
                         # … and a reduced award for an incomplete answer ("Gan ‘le móramh’ (3-1) =2").
                         split |= {int(m.group(1)) for m in re.finditer(r'\(\d ?- ?\d\) ?= ?(\d)\b', chunk) if int(m.group(1)) < marks}
+                        # … or for half an answer ("An dá rud de dhíth. Rud amháin (2-1)").
+                        split |= {int(m.group(1)) - int(m.group(2)) for m in re.finditer(r'Rud amháin\s*\((\d) ?- ?(\d)\)', chunk)
+                                  if 0 < int(m.group(1)) - int(m.group(2)) < marks}
                     crits = [criterion(part, 'Freagra', marks, [chunk, general], permitted=sorted(set(printed_values(chunk, marks)) | split))]
                 here = 'irish-3-3' if mode == 'grammar' else topic
                 extra_topics = [topic] if mode == 'grammar' else None
@@ -1058,10 +1076,26 @@ def literature_higher(sitting, base):
             # its "Eolas 13 + 12 = 25" for two headings, and its "an marc as 25 [(13 + 12)] (Eolas)" under an optional option.
             assert (re.search(r'Eolas = 25 m?h?arc|Eolas – 25|Eolas \(25 marc\)|Eolas 13 \+ 12 = 25|an marc as 25 (?:\(13 \+ 12\) )?\(Eolas\)', chunk)
                     and 'Gaeilge (5 mharc) Sárchumas' not in chunk), (key, chunk[:200])
-            guidance, pages = [chunk] + ([prose_table] if prose_table not in chunk else []) + [notes], set(pages) | band_pages
+            if prose_table in chunk:
+                # 2022 prints the section's band table inside its first option's key, under its own heading ("… Déan plé ar an
+                # ráiteas sin. (30 marc) – PRÓS AINMNITHE nó PRÓS ROGHNACH – (30 marc) Catagóir Eolas (25 marc) …"): the
+                # option's words, then the table as its own line, as every other option carries it.
+                # Its heading is the section's label, as on every other page that prints the table: the table line is the table.
+                heading = re.search(r'\s*– PRÓS AINMNITHE nó PRÓS ROGHNACH – \(30 marc\)\s*$', chunk[:chunk.index(prose_table)])
+                cut = heading.start() if heading else chunk.index(prose_table)
+                chunk = clean(chunk[:cut] + ' ' + chunk[chunk.index(prose_table) + len(prose_table):])
+                guidance = [chunk, prose_table, notes]
+            else:
+                guidance = [chunk, prose_table, notes]
+            pages = set(pages) | band_pages
         two_heads = starts[index] is not None and 'an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12' in guidance[0]
         if two_heads:
             # 2022: two of three printed headings, "an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12".
+            # The option's own 13/12 rule and table are its marking (June 2016's two-heading options read the same way): not the
+            # section's 25-mark table, nor the examiner's note on where to record the 25 ("Caithfidh an Scrúdaitheoir an marc as 25
+            # (13 + 12) (Eolas) … a thaispeáint … Eolas = 25 marc Eolas (25) = Gaeilge (5) =").
+            own = re.split(r'\s*(?:Nóta: )?Caithfidh an Scrúdaitheoir an marc as 25', guidance[0])[0]
+            guidance = [own, notes]
             eolas = [criterion('eolas-1', 'An ceann is fearr', 13, guidance, 'indicative'), criterion('eolas-2', 'An ceann eile', 12, guidance, 'indicative')]
         else:
             eolas = [criterion('eolas', 'Eolas', 25, guidance, 'indicative')]
@@ -1076,7 +1110,9 @@ def literature_higher(sitting, base):
                'single shared 5-mark Gaeilge award.' + (notes_line + '.' if notes_line else '') if two_heads else
                'One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award.' + notes_line
                + ('; with only one of the required aspects discussed, the scheme marks the Eolas out of 18.' if out_of_18 else '.' if notes_line else ''))
-              + ((' The deferred scheme prints no notes for the optional prose: its Treoir and band table are the marking.'
+              + ((' The deferred scheme prints no notes for the optional prose: its 13 + 12 rule is the marking.'
+                  if two_heads else
+                  ' The deferred scheme prints no notes for the optional prose: its Treoir and band table are the marking.'
                   if starts[index] is not None and 'Treoir' in guidance[0] else
                   ' The deferred scheme prints no notes for the optional prose: its band table is the marking.') if noteless else ''))
 
@@ -1105,6 +1141,10 @@ def literature_higher(sitting, base):
             end = min(end, sec3b.start())
         chunk, pages = s.chunk(starts[index], end)
         chunk = re.sub(r'^nó ', '', lifted_table_out(chunk, table)).strip()
+        # The shared Gaeilge table can sit inside a poem's key in a form the exact lift misses (2022 3B(b), split by its
+        # page): it is the Gaeilge award's, not the Eolas's.
+        chunk = clean(re.sub(r'Gaeilge \(5 mharc\)\s*Sárchumas maidir leis na príomhghnéithe.*?Cumas lag/an-lag maidir leis na príomhghnéithe de '
+                             r'cheart na teanga \(gramadach, comhréir, struchtúr, deilbhíocht\)\.?\s*1\b', ' ', chunk))
         pieces = sub_pieces(chunk, by_key[key]['questionText'])
         caps = [eolas_cap(p) for p in pieces]
         assert None not in caps and sum(caps) == 25, (key, caps)
@@ -1153,6 +1193,18 @@ def literature_higher(sitting, base):
             pieces = sub_pieces(chunk, by_key[key]['questionText'])
             caps = [eolas_cap(p) for p in pieces]
             assert None not in caps and sum(caps) == 35, (key, caps)
+            # 2022 prints 4F's three band tables together after (iii) ("Eolas (35) agus Gaeilge (5) Catagóir Eolas (17 marc) …
+            # Catagóir Marc as 7 … Catagóir Marc as 4 …"); each is headed by the marks it bands: (i)'s discussion (17), (ii)'s
+            # Míniú (7), each of (iii)'s two points (4). Each is read with its own part. No word changes.
+            block = re.search(r'\s*Eolas \(35\) agus Gaeilge \(5\)\s+(Catagóir .*)$', pieces[2])
+            if block:
+                tables = re.split(r'\s+(?=Catagóir\s)', block.group(1))
+                pieces[2] = pieces[2][:block.start()]
+                for table in tables:
+                    head = re.match(r'Catagóir\s+(?:Eolas\s*\((\d+) marc\)|Marc as (\d+))', table)
+                    marks = int(head.group(1) or head.group(2))
+                    owner = next(i for i, piece in enumerate(pieces) if re.search(r'\(%d\)\s*=\s*%d marc|[–-]\s*%d marc|%d mharc \+ %d mharc' % (marks, marks, marks, marks, marks), piece))
+                    pieces[owner] = f'{pieces[owner]} {table}'
             stamp(key, atlas, set(pages), [criterion(f'eolas-{r}', f'({r}) Eolas', cap, [piece], 'indicative')
                                            for r, cap, piece in zip(('i', 'ii', 'iii'), caps, pieces)] + [gaeilge()],
                   f'One complete SEC response with one shared five-mark Gaeilge award. The Eolas criteria keep the printed caps ({", ".join(map(str, caps))}). '
