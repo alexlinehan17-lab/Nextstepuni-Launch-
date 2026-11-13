@@ -1,0 +1,77 @@
+{
+  "name": "Mark Bank fifth test narrowing 13 November",
+  "permissions": {
+    "contents": "read"
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "codex/markbank-verify-fifth-type-fix-20261113"
+      ]
+    }
+  },
+  "concurrency": {
+    "group": "codex/markbank-verify-fifth-type-fix-20261113",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "verify-candidate": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 20,
+      "env": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "with": {
+            "fetch-depth": 2
+          }
+        },
+        {
+          "name": "Verify exact candidate and workflow-only change",
+          "id": "integrity",
+          "shell": "bash",
+          "run": "test \"$(git rev-parse HEAD^)\" = 2511607ad3c27713ee848c971f8634c0e1b5fff3\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/markbank-fifth-type-fix-20261113.yml\ngit show --no-patch --format=fuller HEAD"
+        },
+        {
+          "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "with": {
+            "node-version": 22,
+            "cache": "npm"
+          }
+        },
+        {
+          "name": "Install dependencies",
+          "id": "dependencies",
+          "run": "npm ci"
+        },
+        {
+          "name": "Generate scoped test type configuration",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "python3 - <<'PYCONFIG'\nimport json\nfrom pathlib import Path\np=Path('tmp/continuous-review/nov12-fifth-batch-test-tsconfig.json')\np.parent.mkdir(parents=True,exist_ok=True)\np.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/curriculumRegistry.test.ts', '../../test/markBankCardPreservation.test.ts', '../../test/markBankDeck.test.ts', '../../test/japanese2010HigherMarkBank.test.ts', '../../test/japaneseSourceRules.test.ts', '../../test/japaneseSourceAnswers.test.ts', '../../test/japaneseSourceBank.test.ts', '../../test/japanese2011OrdinaryMarkBank.test.ts', '../../test/japanese2026MarkBank.test.ts', '../../test/japanese2026OrdinaryMarkBank.test.ts', '../../test/russian2020HigherReviewed.test.tsx', '../../test/russian2020ConfidenceIntegration.test.tsx', '../../test/markBankLcvp2016.test.ts', '../../test/lcvp2016ConfidenceIntegration.test.tsx', '../../test/markBankLcvpIdentity.test.ts', '../../test/linkModulesExamTopics.test.ts', '../../test/markBankUnpricedSummary.test.tsx', '../../test/markBankLibraryCoverage.test.ts', '../../test/markBankLibraryConfidence.test.tsx', '../../test/subjectShowcase.test.ts', '../../test/askThePapers.test.tsx', '../../test/markBankCoverage.test.ts', '../../vite-env.d.ts', '../../test/setup.ts']},indent=2)+'\\n')\nPYCONFIG"
+        },
+        {
+          "name": "Scoped test types",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=8192 node_modules/typescript/lib/tsc.js --noEmit -p tmp/continuous-review/nov12-fifth-batch-test-tsconfig.json"
+        },
+        {
+          "name": "Affected LCVP 2016 test",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/markBankLcvp2016.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism --reporter=default"
+        },
+        {
+          "name": "Changed test lint",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node node_modules/eslint/bin/eslint.js test/markBankLcvp2016.test.ts --max-warnings 0"
+        },
+        {
+          "name": "Verify tracked files stayed unchanged",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "git diff --exit-code"
+        }
+      ]
+    }
+  }
+}
