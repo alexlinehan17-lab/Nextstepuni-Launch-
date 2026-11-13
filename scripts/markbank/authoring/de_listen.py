@@ -128,6 +128,9 @@ def _steps(seg):
         s = s[1:-1].strip()
     s = re.sub(r'^(Any\s+(?:other\s+)?\w+(?:\s+details?)?)\s*\((.*)\)\s*:?$', r'\1: \2', s, flags=re.I)
     s = re.sub(r'^Any\s+other\s+', 'Any ', s, flags=re.I)
+    # "Any one reaction: 3 marks" (2021 Ordinary): the noun names what is
+    # counted, as "details" does.
+    s = re.sub(r'^(Any\s+\w+)\s+(?!details?\b|examples?\b|points?\b|of\b)[A-Za-z]+(?=\s*:)', r'\1', s, flags=re.I)
     got, _cnt = read_rate(s)
     if got is not None:
         return got
@@ -405,9 +408,14 @@ def leaf_rows(leaf, asked_text):
         text = s
         if marker:
             text = marker.group(4).strip()
+            if marker.group(1) and re.fullmatch(r'\(\s*\d{1,2}\s*marks?\s*\)', text, re.I):
+                # The answer is the letter itself: "(d) (2 marks)" for a
+                # choice printed "(a) … (d)" in the question (2021 Ordinary).
+                text = f'({marker.group(1)}) {text}'
+                marker = None
         else:
             m = LABEL.match(s)
-            if m and not re.search(r'\d', m.group(1)):
+            if m and not re.search(r'\d', m.group(1)) and not re.match(r'^Any\b', m.group(1), re.I):
                 rest = m.group(2).strip()
                 got, _r = rate_line(rest) if rest else (None, None)
                 summary = re.match(r'^\(?\s*\d{1,3}\s*marks?\b', rest, re.I)
@@ -541,6 +549,61 @@ def leaf_rows(leaf, asked_text):
     return items, general
 
 
+# A priced alternative the scheme prints beside an answer: "N.B. Crime: 1
+# mark" under it, "… N.B. She got a (new/another) dress: 1 mark" or "(Allow:
+# cheap = 1 mark)" inside it. Paid in place of the answer, never beside it.
+PARTIAL_NOTE = re.compile(r'^N\.?\s?B\.?:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?\.?$', re.I)
+PARTIAL_INLINE = re.compile(r'\s+(?:N\.?\s?B\.?:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?|'
+                            r'\(Allow:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?\))\s*$', re.I)
+
+
+def _partials(rows):
+    """Each priced alternative made claimable through optionOf, as the
+    Spanish deck's partials are: an answer and its alternative are one pick,
+    paid once at the better of the two claimed."""
+    out = []
+    for row in rows:
+        note = row.get('contextNote') or ''
+        if row['kind'] == 'point':
+            parts = [x for x in re.split(r'(?<=[.)”])\s+(?=N\.?\s?B\b)', note)]
+            hit = next((PARTIAL_NOTE.match(x.strip()) for x in parts if PARTIAL_NOTE.match(x.strip())), None)
+            if hit and int(hit.group(2)) < row['marks']:
+                keep = ' '.join(x for x in parts if not PARTIAL_NOTE.match(x.strip()))
+                said = (f'The scheme allows “{hit.group(1)}” for {hit.group(2)} '
+                        f'mark{"s" if hit.group(2) != "1" else ""}, in place of the answer above, never beside it.')
+                row = {'id': row['id'], 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                       'marks': None,
+                       'group': {'claimMax': 1, 'perOption': row['marks'],
+                                 'options': [row['verbatim'], hit.group(1)],
+                                 'optionMarks': [row['marks'], int(hit.group(2))],
+                                 'optionOf': [None, 0]},
+                       'contextNote': ' '.join(x for x in (keep, said) if x)}
+        elif row['kind'] == 'anyN' and not row['group'].get('perOptionSteps') and not row['group'].get('optionMarks'):
+            g = row['group']
+            options, marks, parents, said = [], [], [], []
+            for o in g['options']:
+                m = PARTIAL_INLINE.search(o)
+                options.append(o[:m.start()].strip() if m else o)
+                marks.append(g['perOption'])
+                parents.append(None)
+                if m:
+                    alt, n = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
+                    if int(n) < g['perOption']:
+                        said.append((alt, n, len(options) - 1))
+            if said:
+                for alt, n, of in said:
+                    options.append(alt)
+                    marks.append(int(n))
+                    parents.append(of)
+                row = dict(row)
+                row['group'] = {**g, 'options': options, 'optionMarks': marks, 'optionOf': parents}
+                text = ' '.join(f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}, in '
+                                f'place of “{options[of]}”, never beside it.' for alt, n, of in said)
+                row['contextNote'] = ' '.join(x for x in (row.get('contextNote'), text) if x)
+        out.append(row)
+    return out
+
+
 def mark_rows(items, language_note, general=()):
     """The card's MarkRows from the read items. What the scheme prints for the
     whole ask ("Any three; no marks for tone of voice …") rides on the first
@@ -620,7 +683,7 @@ def mark_rows(items, language_note, general=()):
         if notes:
             row['contextNote'] = ' '.join(notes)
         rows.append(row)
-    return rows
+    return _partials(rows)
 
 
 # ------------------------------------------------------------- the paper ---
