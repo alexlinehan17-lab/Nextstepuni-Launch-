@@ -113,7 +113,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did President da Silva think the Olympic Games should take place in South America?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They have never taken place in South America. (It is a question of justice.)","They were held 30 times in Europe"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They have never taken place in South America. (It is a question of justice.)","They were held 30 times in Europe"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -253,7 +253,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two reasons why the teacher thinks that uniforms are not expensive.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “comparison for full marks”.", group: {"claimMax":2,"perOption":2,"options":["school uniforms are cheaper than designer clothes","uniforms can be passed on from one sister to another","they can also be washed many times.","they last a long time"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “comparison for full marks”.", group: {"claimMax":2,"perOption":2,"options":["school uniforms are cheaper than designer clothes","uniforms can be passed on from one sister to another","they can also be washed many times.","they last a long time"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -288,7 +288,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does the teacher think that uniforms are good for discipline?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["(Because) they help the pupils to respect the school rules","Respects the school norms"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["(Because) they help the pupils to respect the school rules","Respects the school norms"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1902,7 +1902,7 @@ export const CARDS: SecCard[] = [
     questionText: "preparados (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "listos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "listos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1927,7 +1927,7 @@ export const CARDS: SecCard[] = [
     questionText: "todos los días (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diariamente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "diariamente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1952,7 +1952,7 @@ export const CARDS: SecCard[] = [
     questionText: "accidentes (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "atropellos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "atropellos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1977,7 +1977,7 @@ export const CARDS: SecCard[] = [
     questionText: "desde (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a partir de", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "a partir de", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2002,7 +2002,7 @@ export const CARDS: SecCard[] = [
     questionText: "proponer (9)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "plantear", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "plantear", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2078,7 +2078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Juan think the electric car is not the car of the future? (Give two details)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “must have comparison”.", group: {"claimMax":2,"perOption":3,"options":["Not as practical ( as combustion engine)","You need ten hours/too long to recharge it.","In an emergency it is not much use.","Because of the lack of new technology, only a few hundred cars are being manufactured in Spain.","A viable battery is difficult to find.","not practical on it’s own"],"optionMarks":[3,3,3,3,3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The scheme adds: “must have comparison”.", group: {"claimMax":2,"perOption":3,"options":["Not as practical ( as combustion engine)","You need ten hours/too long to recharge it.","In an emergency it is not much use.","Because of the lack of new technology, only a few hundred cars are being manufactured in Spain.","A viable battery is difficult to find.","not practical on it’s own"],"optionMarks":[3,3,3,3,3,1],"optionOf":[null,null,null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4277,7 +4277,7 @@ export const CARDS: SecCard[] = [
     questionText: "ingresos (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "salarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "salarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4302,7 +4302,7 @@ export const CARDS: SecCard[] = [
     questionText: "sin salida (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bloqueadas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "bloqueadas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4327,7 +4327,7 @@ export const CARDS: SecCard[] = [
     questionText: "responsabilidades (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cargas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "cargas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4352,7 +4352,7 @@ export const CARDS: SecCard[] = [
     questionText: "una pareja (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un matrimonio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un matrimonio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4377,7 +4377,7 @@ export const CARDS: SecCard[] = [
     questionText: "desempleo (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6726,7 +6726,7 @@ export const CARDS: SecCard[] = [
     questionText: "incrementa (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aumenta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "aumenta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6751,7 +6751,7 @@ export const CARDS: SecCard[] = [
     questionText: "habitantes (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ciudadanos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "ciudadanos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6776,7 +6776,7 @@ export const CARDS: SecCard[] = [
     questionText: "una cantidad (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un número", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un número", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6801,7 +6801,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocultados (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "escondidos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "escondidos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6826,7 +6826,7 @@ export const CARDS: SecCard[] = [
     questionText: "sitios (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lugares/ zonas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "lugares/ zonas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8567,7 +8567,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to the text, what are two uses of the iPad? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late.","alarm"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["taking notes (but with multimedia accessories)","coordinate timetable","an alarm to avoid arriving late.","alarm"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9168,7 +9168,7 @@ export const CARDS: SecCard[] = [
     questionText: "sedativos (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "calmantes", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "calmantes", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9193,7 +9193,7 @@ export const CARDS: SecCard[] = [
     questionText: "percibe (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ve", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "ve", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9218,7 +9218,7 @@ export const CARDS: SecCard[] = [
     questionText: "obligaciones (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responsabilidades", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "responsabilidades", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9243,7 +9243,7 @@ export const CARDS: SecCard[] = [
     questionText: "extiendan (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "amplién", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "amplién", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9268,7 +9268,7 @@ export const CARDS: SecCard[] = [
     questionText: "empresas (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "compañías", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "compañías", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9293,7 +9293,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is addiction to work hard to identify? (Give full details)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity.","it is sometimes hidden"],"optionMarks":[2,2,2,2,2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["people are not aware of their addiction","working hard can be considered responsible","it is sometimes hidden by the use of stimulants / sedatives","(legal and illegal) medication can also be used to stay active","dedication to work is seen as something positive","dedication to work can be associated with success in work","(where there is no defined working day) it is easy to confuse addiction with productivity.","it is sometimes hidden"],"optionMarks":[2,2,2,2,2,2,2,1],"optionOf":[null,null,null,null,null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10384,7 +10384,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the Teatro Romano? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["tourists show special interest in visiting it","dates from the first century BC","It’s a monument"],"optionMarks":[3,3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["tourists show special interest in visiting it","dates from the first century BC","It’s a monument"],"optionMarks":[3,3,1],"optionOf":[null,null,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11617,7 +11617,7 @@ export const CARDS: SecCard[] = [
     questionText: "tal vez (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "quizá / quizás", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "quizá / quizás", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11642,7 +11642,7 @@ export const CARDS: SecCard[] = [
     questionText: "señala (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "apunta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "apunta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11667,7 +11667,7 @@ export const CARDS: SecCard[] = [
     questionText: "gangas (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "chollos / ofertas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "chollos / ofertas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11692,7 +11692,7 @@ export const CARDS: SecCard[] = [
     questionText: "ahorrar (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "guardar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "guardar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11717,7 +11717,7 @@ export const CARDS: SecCard[] = [
     questionText: "una tapa (8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "un pinchito", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "un pinchito", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13433,7 +13433,7 @@ export const CARDS: SecCard[] = [
     questionText: "What message have Spanish children heard for many years? (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["How important learning English is for life.","Learning languages has always been valuable"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["How important learning English is for life.","Learning languages has always been valuable"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14059,7 +14059,7 @@ export const CARDS: SecCard[] = [
     questionText: "las doce (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el mediodía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el mediodía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14084,7 +14084,7 @@ export const CARDS: SecCard[] = [
     questionText: "distinta (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diferente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "diferente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14109,7 +14109,7 @@ export const CARDS: SecCard[] = [
     questionText: "tiendas (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comercios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "comercios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14134,7 +14134,7 @@ export const CARDS: SecCard[] = [
     questionText: "introducir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aplicar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "aplicar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14159,7 +14159,7 @@ export const CARDS: SecCard[] = [
     questionText: "tradición (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "costumbre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "costumbre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16461,7 +16461,7 @@ export const CARDS: SecCard[] = [
     questionText: "asistieron (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "acudieron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "acudieron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16486,7 +16486,7 @@ export const CARDS: SecCard[] = [
     questionText: "en el campo (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en una zona rural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "en una zona rural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16511,7 +16511,7 @@ export const CARDS: SecCard[] = [
     questionText: "iniciador (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fundador", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fundador", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16536,7 +16536,7 @@ export const CARDS: SecCard[] = [
     questionText: "escapadas (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fugas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fugas", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16561,7 +16561,7 @@ export const CARDS: SecCard[] = [
     questionText: "escogido (para 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "elegido", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "elegido", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18847,7 +18847,7 @@ export const CARDS: SecCard[] = [
     questionText: "el interés (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la atención", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "la atención", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18872,7 +18872,7 @@ export const CARDS: SecCard[] = [
     questionText: "cincuenta por ciento (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(la) mitad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(la) mitad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18897,7 +18897,7 @@ export const CARDS: SecCard[] = [
     questionText: "enseñanza (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "educación/ formación", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "educación/ formación", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18922,7 +18922,7 @@ export const CARDS: SecCard[] = [
     questionText: "los remedios (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "las soluciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "las soluciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18947,7 +18947,7 @@ export const CARDS: SecCard[] = [
     questionText: "fantástica (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fenomenal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "fenomenal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20052,7 +20052,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about 16 and 17 year olds?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["They must book hotel rooms through specialist agencies which specialise in trips for under 18s/ minors","they can’t book a hotel room"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["They must book hotel rooms through specialist agencies which specialise in trips for under 18s/ minors","they can’t book a hotel room"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20641,7 +20641,7 @@ export const CARDS: SecCard[] = [
     questionText: "What stands out most, according to María López? (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(In a lot of cases) the obese pets also have obese owners.","(The rate of) obesity in humans is similar to that in pets"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":4,"options":["(In a lot of cases) the obese pets also have obese owners.","(The rate of) obesity in humans is similar to that in pets"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21244,7 +21244,7 @@ export const CARDS: SecCard[] = [
     questionText: "salieron de (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dejaron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "dejaron", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21269,7 +21269,7 @@ export const CARDS: SecCard[] = [
     questionText: "diferentes (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "distintos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "distintos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21294,7 +21294,7 @@ export const CARDS: SecCard[] = [
     questionText: "cree (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "considera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "considera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21319,7 +21319,7 @@ export const CARDS: SecCard[] = [
     questionText: "comenzar (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "emprender", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "emprender", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21344,7 +21344,7 @@ export const CARDS: SecCard[] = [
     questionText: "parientes (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "familiares", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "familiares", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22261,7 +22261,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the Erasmus programme? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["(a European programme which) allows students to spend a year studying in another European university","Spain receives 40,000 Erasmus students"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["(a European programme which) allows students to spend a year studying in another European university","Spain receives 40,000 Erasmus students"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22332,7 +22332,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about the European Union grant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["It only covers half the cost of accommodation","it helps you"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["It only covers half the cost of accommodation","it helps you"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23319,7 +23319,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Ireland’s attitude?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They can play every game with a winning mentality.","it has served them well"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":2,"options":["They can play every game with a winning mentality.","it has served them well"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23635,7 +23635,7 @@ export const CARDS: SecCard[] = [
     questionText: "inesperado (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sorprendente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "sorprendente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23660,7 +23660,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocurrido (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pasado", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "pasado", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23685,7 +23685,7 @@ export const CARDS: SecCard[] = [
     questionText: "sobre todo (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "principalmente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "principalmente", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23710,7 +23710,7 @@ export const CARDS: SecCard[] = [
     questionText: "la posibilidad (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el riesgo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el riesgo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23735,7 +23735,7 @@ export const CARDS: SecCard[] = [
     questionText: "responsable (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "encargada", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "encargada", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “Extra words no marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24475,7 +24475,7 @@ export const CARDS: SecCard[] = [
     questionText: "What has Ana done to show she is worried about climate change? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["She recorded a programme about its effects","watched a programme about its effects"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["She recorded a programme about its effects","watched a programme about its effects"],"optionMarks":[2,1],"optionOf":[null,0]} },
     { id: "r-2", kind: "point", verbatim: "attended the (World) Climate Summit (in Madrid last December)", marks: 2 },
     ],
     sourceMaterial: {
@@ -24833,8 +24833,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is needed to teach English well?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["A recognised qualification","degree"],"optionMarks":[2,2]} },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["to understand how the language works","to understand the language"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":2,"options":["A recognised qualification","degree"],"optionMarks":[2,2],"optionOf":[null,0]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["to understand how the language works","to understand the language"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24905,7 +24905,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "publish your profile on-line", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["put an advertisement in supermarkets/cafes/universities","locations on their own"],"optionMarks":[2,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["put an advertisement in supermarkets/cafes/universities","locations on their own"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25189,7 +25189,7 @@ export const CARDS: SecCard[] = [
     questionText: "llena (lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cargada", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "cargada", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25213,7 +25213,7 @@ export const CARDS: SecCard[] = [
     questionText: "contesta (lines 10-20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responde", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "responde", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25237,7 +25237,7 @@ export const CARDS: SecCard[] = [
     questionText: "casuales (lines 20-26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ocasionales", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ocasionales", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25523,7 +25523,7 @@ export const CARDS: SecCard[] = [
     questionText: "medio (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mitad", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "mitad", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25547,7 +25547,7 @@ export const CARDS: SecCard[] = [
     questionText: "todavía hay (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aún quedan", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "aún quedan", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25571,7 +25571,7 @@ export const CARDS: SecCard[] = [
     questionText: "cifras (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "estadísticas", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "estadísticas", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25805,7 +25805,7 @@ export const CARDS: SecCard[] = [
     questionText: "tal vez (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "quizás", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "quizás", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25830,7 +25830,7 @@ export const CARDS: SecCard[] = [
     questionText: "sueldo razonable (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "salario justo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "salario justo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25855,7 +25855,7 @@ export const CARDS: SecCard[] = [
     questionText: "compró más o menos (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "adquirió unos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "adquirió unos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25880,7 +25880,7 @@ export const CARDS: SecCard[] = [
     questionText: "los alumnos recomiendan (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los estudiantes proponen", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "los estudiantes proponen", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -25905,7 +25905,7 @@ export const CARDS: SecCard[] = [
     questionText: "intentan crear (para 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "planean establecer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "planean establecer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26005,7 +26005,7 @@ export const CARDS: SecCard[] = [
     questionText: "coste (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "precio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "precio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26030,7 +26030,7 @@ export const CARDS: SecCard[] = [
     questionText: "riesgo (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "peligro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "peligro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26055,7 +26055,7 @@ export const CARDS: SecCard[] = [
     questionText: "así que (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "por eso", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "por eso", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26080,7 +26080,7 @@ export const CARDS: SecCard[] = [
     questionText: "modo (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "manera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "manera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26105,7 +26105,7 @@ export const CARDS: SecCard[] = [
     questionText: "resuelven (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "solucionan", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "solucionan", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “If extra words are added or words are omitted no marks will be awarded”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26130,7 +26130,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do we learn about many of the factory workers? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "they work long days", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "they work long days", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”." },
     { id: "r-2", kind: "point", verbatim: "for low wages", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "in unhealthy conditions", marks: 1 },
     ],
@@ -26157,7 +26157,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the aim of the project launched by the students and Daniel Sánchez?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to find ways to generate awareness", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "to find ways to generate awareness", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”." },
     { id: "r-2", kind: "point", verbatim: "about the consumption of fast fashion", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "and its impact on the planet", marks: 1 },
     ],
@@ -26184,7 +26184,7 @@ export const CARDS: SecCard[] = [
     questionText: "Julia Ferrer makes suggestions for when we go clothes shopping. Explain one in detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a) and (b) the first two correct answers = 2+2m, the third answer =1m”.", group: {"claimMax":1,"perOption":5,"options":["To buy less, we all have a lot of clothes that we don’t use; we should always consider if we really need that shirt/ item","Buy intelligently, quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it","To buy less","To buy less, we all have a lot of clothes that we don’t use","Buy intelligently","Don’t throw clothing in the rubbish","Don’t throw clothing in the rubbish sell it"],"optionMarks":[5,5,5,2,4,2,2,4],"optionOf":[null,null,null,0,0,1,2,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27206,7 +27206,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why do people who travel a lot choose to have plants?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the whole test/whole section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["It’s more difficult to look after a pet (than a plant)","It’s difficult to look after a pet","You can look after a plant"],"optionMarks":[4,3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the whole test/whole section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["It’s more difficult to look after a pet (than a plant)","It’s difficult to look after a pet","You can look after a plant"],"optionMarks":[4,3,2],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27563,7 +27563,7 @@ export const CARDS: SecCard[] = [
     questionText: "arriesgada\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "peligrosa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "peligrosa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27587,7 +27587,7 @@ export const CARDS: SecCard[] = [
     questionText: "expresaba (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "manifestaba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "manifestaba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27611,7 +27611,7 @@ export const CARDS: SecCard[] = [
     questionText: "agotado (lines 21‐27)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fatigado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "fatigado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27872,7 +27872,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do PE teachers want? Give full details. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["(Their) students to include sport in their lifestyle, thereby creating healthy citizens in society","To create a healthy society"],"optionMarks":[4,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["(Their) students to include sport in their lifestyle, thereby creating healthy citizens in society","To create a healthy society"],"optionMarks":[4,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27896,7 +27896,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocio (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiempo libre/ descanso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tiempo libre/ descanso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27920,7 +27920,7 @@ export const CARDS: SecCard[] = [
     questionText: "los jóvenes sufren (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los adolescentes padecen", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "los adolescentes padecen", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27944,7 +27944,7 @@ export const CARDS: SecCard[] = [
     questionText: "bajada (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "descenso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "descenso", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28179,7 +28179,7 @@ export const CARDS: SecCard[] = [
     questionText: "el planeta que habitamos(1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el mundo donde vivimos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "el mundo donde vivimos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28204,7 +28204,7 @@ export const CARDS: SecCard[] = [
     questionText: "se calcula (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se estima", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "se estima", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28229,7 +28229,7 @@ export const CARDS: SecCard[] = [
     questionText: "dijo adiós (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se despidió (de)", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "se despidió (de)", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28254,7 +28254,7 @@ export const CARDS: SecCard[] = [
     questionText: "revelación más grande (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mayor descubrimiento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "mayor descubrimiento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28279,7 +28279,7 @@ export const CARDS: SecCard[] = [
     questionText: "varias razones (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "muchos motivos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "muchos motivos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28379,7 +28379,7 @@ export const CARDS: SecCard[] = [
     questionText: "una ocasión (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "una oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "una oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28404,7 +28404,7 @@ export const CARDS: SecCard[] = [
     questionText: "dejar (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "abandonar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "abandonar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28429,7 +28429,7 @@ export const CARDS: SecCard[] = [
     questionText: "comenzó (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "empezó", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "empezó", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28454,7 +28454,7 @@ export const CARDS: SecCard[] = [
     questionText: "elegir (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "escoger", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "escoger", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28479,7 +28479,7 @@ export const CARDS: SecCard[] = [
     questionText: "sucede (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ocurre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ocurre", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29503,7 +29503,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pedestrianised (street)", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
-    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["one of the narrowest in the capital","one of the narrowest","narrow"],"optionMarks":[2,2,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["one of the narrowest in the capital","one of the narrowest","narrow"],"optionMarks":[2,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29573,7 +29573,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about a tradition in Madrid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["(It is a tradition) to visit (the chocolate café) with grandparents at Christmas","to visit with grandparents","to visit (the chocolate café) at Christmas","to visit the (chocolate) café"],"optionMarks":[3,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["(It is a tradition) to visit (the chocolate café) with grandparents at Christmas","to visit with grandparents","to visit (the chocolate café) at Christmas","to visit the (chocolate) café"],"optionMarks":[3,2,2,1],"optionOf":[null,0,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29713,7 +29713,7 @@ export const CARDS: SecCard[] = [
     questionText: "What will the weather be like tomorrow? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Sunnier (day) with clear (skies)","Sun"],"optionMarks":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Sunnier (day) with clear (skies)","Sun"],"optionMarks":[3,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29888,7 +29888,7 @@ export const CARDS: SecCard[] = [
     questionText: "sufrimiento\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tortura", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tortura", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29912,7 +29912,7 @@ export const CARDS: SecCard[] = [
     questionText: "no sabía (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ignoraba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "ignoraba", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -29936,7 +29936,7 @@ export const CARDS: SecCard[] = [
     questionText: "reconocí (lines 21‐26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "identifiqué", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "identifiqué", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30197,7 +30197,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does she say she achieved her dream? (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["Effort and dedication to her studies","studying hard","studying"],"optionMarks":[4,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["Effort and dedication to her studies","studying hard","studying"],"optionMarks":[4,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30221,7 +30221,7 @@ export const CARDS: SecCard[] = [
     questionText: "el programa en vivo (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la transmisión en directo", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "la transmisión en directo", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30245,7 +30245,7 @@ export const CARDS: SecCard[] = [
     questionText: "niñez (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "infancia", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "infancia", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30269,7 +30269,7 @@ export const CARDS: SecCard[] = [
     questionText: "el objetivo de (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el fin de", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "el fin de", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30293,7 +30293,7 @@ export const CARDS: SecCard[] = [
     questionText: "… creció con una pasión por los viajes espaciales … (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… she grew up with a passion for space journeys …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… she grew up with a passion for space journeys …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30317,7 +30317,7 @@ export const CARDS: SecCard[] = [
     questionText: "El camino profesional de Diana ha sido impresionante. (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diana’s career path has been impressive", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Diana’s career path has been impressive", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30341,7 +30341,7 @@ export const CARDS: SecCard[] = [
     questionText: "“una joven que no tenía ni idea de cómo hablar inglés.’’ (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "“a young girl who had no idea how to speak English”", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "“a young girl who had no idea how to speak English”", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30434,7 +30434,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Tiberio’s campaign, Collecting Dust.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":2,"options":["15 volunteers","(they) meet every Saturday in his house","(they) repair (broken) mobiles","donates repaired phones to schools"],"optionMarks":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":2,"options":["15 volunteers","(they) meet every Saturday in his house","(they) repair (broken) mobiles","donates repaired phones to schools"],"optionMarks":[2,2,2,1],"optionOf":[null,null,null,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30457,7 +30457,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the Greek police find last summer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["A painting by the Spanish artist/ Pablo Picasso","A Picasso","a painting"],"optionMarks":[2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["A painting by the Spanish artist/ Pablo Picasso","A Picasso","a painting"],"optionMarks":[2,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30480,7 +30480,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the police say after the robbery? Give full details .",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["(Several) zones of the museum didn’t have security cameras (installed)","the museum didn’t have security cameras (installed)"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":2,"options":["(Several) zones of the museum didn’t have security cameras (installed)","the museum didn’t have security cameras (installed)"],"optionMarks":[2,1],"optionOf":[null,0]} },
     { id: "r-2", kind: "point", verbatim: "There was a problem with the alarm", marks: 2 },
     ],
     sourceMaterial: {
@@ -30528,7 +30528,7 @@ export const CARDS: SecCard[] = [
     questionText: "muchas modificaciones (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "numerosos cambios", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "numerosos cambios", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30554,7 +30554,7 @@ export const CARDS: SecCard[] = [
     questionText: "abruptamente (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "de repente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "de repente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30580,7 +30580,7 @@ export const CARDS: SecCard[] = [
     questionText: "tomar parte (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "participar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "participar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30606,7 +30606,7 @@ export const CARDS: SecCard[] = [
     questionText: "planea introducir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "propone lanzar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "propone lanzar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30632,7 +30632,7 @@ export const CARDS: SecCard[] = [
     questionText: "debe ir (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiene que viajar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "tiene que viajar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30658,7 +30658,7 @@ export const CARDS: SecCard[] = [
     questionText: "… quizás uno de los más revolucionarios … (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… perhaps one of the most revolutionary...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… perhaps one of the most revolutionary...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30684,7 +30684,7 @@ export const CARDS: SecCard[] = [
     questionText: "… empecé a echar de menos a mis compañeros de trabajo … (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… I started to miss my work colleagues", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… I started to miss my work colleagues", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30710,7 +30710,7 @@ export const CARDS: SecCard[] = [
     questionText: "… le preocupó un poco la reducción de salario ... (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… the reduction in salary worried him a little...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "… the reduction in salary worried him a little...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30736,7 +30736,7 @@ export const CARDS: SecCard[] = [
     questionText: "provisional (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "temporal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "temporal", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30762,7 +30762,7 @@ export const CARDS: SecCard[] = [
     questionText: "compañía (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "empresa", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "empresa", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30788,7 +30788,7 @@ export const CARDS: SecCard[] = [
     questionText: "posibilidad (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "opción", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "opción", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30814,7 +30814,7 @@ export const CARDS: SecCard[] = [
     questionText: "fortuna (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suerte", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "suerte", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30840,7 +30840,7 @@ export const CARDS: SecCard[] = [
     questionText: "incremento (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aumento", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "aumento", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -30892,7 +30892,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Alcarez say Desigual have been doing for many years? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["listened to the opinions of their employees","(looked for ways to) help them improve their professional lives","(looked for ways to) help them improve their personal lives","to help them","to improve","to improve their working conditions"],"optionMarks":[3,3,3,1,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["listened to the opinions of their employees","(looked for ways to) help them improve their professional lives","(looked for ways to) help them improve their personal lives","to help them","to improve","to improve their working conditions"],"optionMarks":[3,3,3,1,1,1],"optionOf":[null,null,null,1,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32113,7 +32113,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is said about Julio and Meena’s combined age?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["More than 200 years/two centuries","Impressive"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["More than 200 years/two centuries","Impressive"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32253,7 +32253,7 @@ export const CARDS: SecCard[] = [
     questionText: "muy cansado\n(lines 1‐10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "agotado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "agotado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32277,7 +32277,7 @@ export const CARDS: SecCard[] = [
     questionText: "abundante (lines 11‐20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "espesa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "espesa", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32301,7 +32301,7 @@ export const CARDS: SecCard[] = [
     questionText: "pocos minutos (lines 21‐26)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "breves momentos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "breves momentos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32586,7 +32586,7 @@ export const CARDS: SecCard[] = [
     questionText: "ciudadanos (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "habitantes", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "habitantes", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32610,7 +32610,7 @@ export const CARDS: SecCard[] = [
     questionText: "es posible relajarse (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se puede descansar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "se puede descansar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32634,7 +32634,7 @@ export const CARDS: SecCard[] = [
     questionText: "altera la conducta (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "modifica el comportamiento", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "modifica el comportamiento", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32892,7 +32892,7 @@ export const CARDS: SecCard[] = [
     questionText: "en el medio (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a la mitad", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a la mitad", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32918,7 +32918,7 @@ export const CARDS: SecCard[] = [
     questionText: "quehaceres domésticos (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tareas del hogar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "tareas del hogar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32944,7 +32944,7 @@ export const CARDS: SecCard[] = [
     questionText: "admite (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "reconoce", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "reconoce", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32970,7 +32970,7 @@ export const CARDS: SecCard[] = [
     questionText: "bastante (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suficiente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "suficiente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -32996,7 +32996,7 @@ export const CARDS: SecCard[] = [
     questionText: "periodos difíciles (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tiempos adversos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "tiempos adversos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33022,7 +33022,7 @@ export const CARDS: SecCard[] = [
     questionText: "El alto coste del alquiler suele ser otro gran obstáculo… (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The high cost of rent is usually another big obstacle", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "The high cost of rent is usually another big obstacle", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33048,7 +33048,7 @@ export const CARDS: SecCard[] = [
     questionText: "…la fuerte conexión familiar que caracteriza a los españoles. (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The strong family connection that characterises the Spanish people", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "The strong family connection that characterises the Spanish people", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33074,7 +33074,7 @@ export const CARDS: SecCard[] = [
     questionText: "Educan a los niños para ser autosuficientes y establecer su propia casa. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They educate the children to be self-sufficient and to establish their own home", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "They educate the children to be self-sufficient and to establish their own home", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33100,7 +33100,7 @@ export const CARDS: SecCard[] = [
     questionText: "por el contrario (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sin embargo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "sin embargo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33126,7 +33126,7 @@ export const CARDS: SecCard[] = [
     questionText: "murió (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "falleció", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "falleció", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33152,7 +33152,7 @@ export const CARDS: SecCard[] = [
     questionText: "cambiarme (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mudarme", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "mudarme", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33178,7 +33178,7 @@ export const CARDS: SecCard[] = [
     questionText: "normal (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "natural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "natural", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33204,7 +33204,7 @@ export const CARDS: SecCard[] = [
     questionText: "indica (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "señala", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "señala", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -33840,7 +33840,7 @@ export const CARDS: SecCard[] = [
     questionText: "When exactly did Charo decide to host women in her home?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Shortly before retiring","She got sick"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Shortly before retiring","She got sick"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34365,7 +34365,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does the Director of Tourism think about the ‘break-up’ theory?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Silly","‘couples/people break up because things go badly’"],"optionMarks":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["Silly","‘couples/people break up because things go badly’"],"optionMarks":[2,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34645,7 +34645,7 @@ export const CARDS: SecCard[] = [
     questionText: "aguantar\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "soportar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "soportar", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34669,7 +34669,7 @@ export const CARDS: SecCard[] = [
     questionText: "extraño (lines 11-20)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "raro", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "raro", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34693,7 +34693,7 @@ export const CARDS: SecCard[] = [
     questionText: "recuperado (lines 21-27)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "restablecido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "restablecido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34858,7 +34858,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Leila Cobo say has happened in the last decade? (para 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Music in Spanish has gone through/had a growth and visibility (without precedent) outside of Central and South America/Latin America","Music in Spanish has become popular outside of Central & South America"],"optionMarks":[4,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Music in Spanish has gone through/had a growth and visibility (without precedent) outside of Central and South America/Latin America","Music in Spanish has become popular outside of Central & South America"],"optionMarks":[4,3],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34978,7 +34978,7 @@ export const CARDS: SecCard[] = [
     questionText: "increíble (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "alucinante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "alucinante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35002,7 +35002,7 @@ export const CARDS: SecCard[] = [
     questionText: "auge (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "éxito/fama", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "éxito/fama", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35026,7 +35026,7 @@ export const CARDS: SecCard[] = [
     questionText: "negar (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ignorar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "ignorar", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35285,7 +35285,7 @@ export const CARDS: SecCard[] = [
     questionText: "detalle sorprendente (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dato curioso", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "dato curioso", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35311,7 +35311,7 @@ export const CARDS: SecCard[] = [
     questionText: "levantó mucho interés (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "generó afición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "generó afición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35337,7 +35337,7 @@ export const CARDS: SecCard[] = [
     questionText: "porvenir prometedor (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "futuro brillante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "futuro brillante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35363,7 +35363,7 @@ export const CARDS: SecCard[] = [
     questionText: "desde entonces (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a partir de ese momento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a partir de ese momento", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35389,7 +35389,7 @@ export const CARDS: SecCard[] = [
     questionText: "salieron a saludarlo (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fueron a hablar con él", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "fueron a hablar con él", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35415,7 +35415,7 @@ export const CARDS: SecCard[] = [
     questionText: "… la migración masiva de irlandeses a mediados del siglo diecinueve. (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… the massive migration of Irish in the middle of the nineteenth century", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… the massive migration of Irish in the middle of the nineteenth century", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35441,7 +35441,7 @@ export const CARDS: SecCard[] = [
     questionText: "… decidieron adaptar sus habilidades y formar un equipo masculino … (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they decided to adapt their skills and form a male team …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they decided to adapt their skills and form a male team …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35467,7 +35467,7 @@ export const CARDS: SecCard[] = [
     questionText: "… han alcanzado un nivel que les permite competir ... (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they have reached a level that allows them to compete ...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they have reached a level that allows them to compete ...", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35493,7 +35493,7 @@ export const CARDS: SecCard[] = [
     questionText: "famosa (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "conocida", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "conocida", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35519,7 +35519,7 @@ export const CARDS: SecCard[] = [
     questionText: "orígenes (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "raíces", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "raíces", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35545,7 +35545,7 @@ export const CARDS: SecCard[] = [
     questionText: "alternativas (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(otras) opciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "(otras) opciones", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35571,7 +35571,7 @@ export const CARDS: SecCard[] = [
     questionText: "competiciones (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "torneos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "torneos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -35597,7 +35597,7 @@ export const CARDS: SecCard[] = [
     questionText: "socios (8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "miembros", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "miembros", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -36236,7 +36236,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is the colour red an essential element in his films?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “red is/it is his favourite colour =1m if only correct information given”.", group: {"claimMax":1,"perOption":3,"options":["He doesn’t remember the colour (red) in the clothes of his childhood","red is/it is his favourite colour"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “red is/it is his favourite colour =1m if only correct information given”.", group: {"claimMax":1,"perOption":3,"options":["He doesn’t remember the colour (red) in the clothes of his childhood","red is/it is his favourite colour"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -36306,7 +36306,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does he say he is lucky? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["People 40 years younger than him are choosing his films","people watch/choose his movies","younger people/generations are choosing/watching his movies"],"optionMarks":[3,1,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["People 40 years younger than him are choosing his films","people watch/choose his movies","younger people/generations are choosing/watching his movies"],"optionMarks":[3,1,2],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37042,7 +37042,7 @@ export const CARDS: SecCard[] = [
     questionText: "de nuevo\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "otra vez", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "otra vez", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37066,7 +37066,7 @@ export const CARDS: SecCard[] = [
     questionText: "observé (lines 11-18)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vi", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "vi", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37090,7 +37090,7 @@ export const CARDS: SecCard[] = [
     questionText: "un corto tiempo (lines 19-24)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "breves minutos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "breves minutos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37351,7 +37351,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why should we enjoy these cultural differences in Spain? (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Because they are what make Spain a unique/welcoming country that continues to attract so many people from abroad","It makes Spain unique/welcoming","Spain is unique only"],"optionMarks":[4,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["Because they are what make Spain a unique/welcoming country that continues to attract so many people from abroad","It makes Spain unique/welcoming","Spain is unique only"],"optionMarks":[4,2,1],"optionOf":[null,0,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37375,7 +37375,7 @@ export const CARDS: SecCard[] = [
     questionText: "aún se escucha (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "todavía existe", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "todavía existe", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37399,7 +37399,7 @@ export const CARDS: SecCard[] = [
     questionText: "causa asombro (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sorprende", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "sorprende", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37423,7 +37423,7 @@ export const CARDS: SecCard[] = [
     questionText: "destacan (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "llaman la atención", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "llaman la atención", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37657,7 +37657,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the difference between playing padel in Spain and in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":3,"options":["In Spain padel is (normally) played outdoors but in Ireland everything is more complicated because of the climate/weather","If only answering: there is a necessity to build more domes"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":3,"options":["In Spain padel is (normally) played outdoors but in Ireland everything is more complicated because of the climate/weather","If only answering: there is a necessity to build more domes"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37681,7 +37681,7 @@ export const CARDS: SecCard[] = [
     questionText: "empiezan a tener (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comienzan a ejercer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "comienzan a ejercer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37707,7 +37707,7 @@ export const CARDS: SecCard[] = [
     questionText: "le encantan (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "es apasionada de", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "es apasionada de", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37733,7 +37733,7 @@ export const CARDS: SecCard[] = [
     questionText: "un carácter abierto (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "una personalidad extrovertida", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "una personalidad extrovertida", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37759,7 +37759,7 @@ export const CARDS: SecCard[] = [
     questionText: "explica los obstáculos (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "da a conocer los problemas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "da a conocer los problemas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37785,7 +37785,7 @@ export const CARDS: SecCard[] = [
     questionText: "considerando (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "teniendo en cuenta", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "teniendo en cuenta", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37811,7 +37811,7 @@ export const CARDS: SecCard[] = [
     questionText: "Es guapísima, elegante y muy maja. (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She is very pretty, elegant and very nice", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "She is very pretty, elegant and very nice", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37837,7 +37837,7 @@ export const CARDS: SecCard[] = [
     questionText: "Alba parece salida de una película de ciencia ficción. (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Alba seems like something from a science fiction film", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Alba seems like something from a science fiction film", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37863,7 +37863,7 @@ export const CARDS: SecCard[] = [
     questionText: "… cobran unos ocho mil euros por publicación. (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… they charge about 8,000 euro per post/publication", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… they charge about 8,000 euro per post/publication", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37889,7 +37889,7 @@ export const CARDS: SecCard[] = [
     questionText: "representante (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "portavoz", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "portavoz", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37915,7 +37915,7 @@ export const CARDS: SecCard[] = [
     questionText: "aprecia (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "respeta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "respeta", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37941,7 +37941,7 @@ export const CARDS: SecCard[] = [
     questionText: "colaborar (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "trabajar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "trabajar", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37967,7 +37967,7 @@ export const CARDS: SecCard[] = [
     questionText: "desplazarse (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "viajar (de un sitio a otro)", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "viajar (de un sitio a otro)", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -37993,7 +37993,7 @@ export const CARDS: SecCard[] = [
     questionText: "contesta (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "responde", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "responde", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39440,7 +39440,7 @@ export const CARDS: SecCard[] = [
     questionText: "vuelto\n(lines 1-10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "regresado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "regresado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39464,7 +39464,7 @@ export const CARDS: SecCard[] = [
     questionText: "sin duda (lines 11-19)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "seguramente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "seguramente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39488,7 +39488,7 @@ export const CARDS: SecCard[] = [
     questionText: "permaneció (lines 20-25)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se quedó", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "se quedó", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if extra words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39512,7 +39512,7 @@ export const CARDS: SecCard[] = [
     questionText: "… sólo sus ropas habían sido repartidas entre algunos hombres del poblado. (line 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "…only his clothes had been divided out among some of the men of the village", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "…only his clothes had been divided out among some of the men of the village", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39536,7 +39536,7 @@ export const CARDS: SecCard[] = [
     questionText: "… sin saber muy bien lo que significa todo el ritual. (line 11)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… without knowing very well what the whole ritual means …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… without knowing very well what the whole ritual means …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39560,7 +39560,7 @@ export const CARDS: SecCard[] = [
     questionText: "… iba a ser mi habitación durante mi estancia en Gabón, … (line 23)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… it was going to be my room during my stay in Gabon …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… it was going to be my room during my stay in Gabon …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39774,7 +39774,7 @@ export const CARDS: SecCard[] = [
     questionText: "da alegría a la gente (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hace a las personas felices", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "hace a las personas felices", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39798,7 +39798,7 @@ export const CARDS: SecCard[] = [
     questionText: "alrededor de (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en torno a", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "en torno a", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39822,7 +39822,7 @@ export const CARDS: SecCard[] = [
     questionText: "el personal (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la tripulación", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "la tripulación", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39846,7 +39846,7 @@ export const CARDS: SecCard[] = [
     questionText: "… en una empresa financiera situada en ... (para 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… in a finance company situated in …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… in a finance company situated in …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39870,7 +39870,7 @@ export const CARDS: SecCard[] = [
     questionText: "… mientras sigue con su trabajo y dirige su negocio … (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "… while he continues with his job and runs his business…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "… while he continues with his job and runs his business…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -39894,7 +39894,7 @@ export const CARDS: SecCard[] = [
     questionText: "… me tratan como a la realeza. (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "... they treat me like royalty", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "... they treat me like royalty", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40080,7 +40080,7 @@ export const CARDS: SecCard[] = [
     questionText: "cantidad (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cifra", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "cifra", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40106,7 +40106,7 @@ export const CARDS: SecCard[] = [
     questionText: "habilidad imprescindible (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "destreza necesaria", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "destreza necesaria", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40132,7 +40132,7 @@ export const CARDS: SecCard[] = [
     questionText: "frecuentemente (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a menudo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "a menudo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40158,7 +40158,7 @@ export const CARDS: SecCard[] = [
     questionText: "renunciar al objetivo (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "abandonar la ambición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "abandonar la ambición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40184,7 +40184,7 @@ export const CARDS: SecCard[] = [
     questionText: "fuera de lo común (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "poco convencional", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "poco convencional", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40210,7 +40210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Aunque yo trataba de evitarlo, ... (para 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Even though I tried to avoid it …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Even though I tried to avoid it …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40236,7 +40236,7 @@ export const CARDS: SecCard[] = [
     questionText: "… no le importaba quedar en ridículo. (para 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "…he didn’t mind making a fool of himself", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "…he didn’t mind making a fool of himself", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40262,7 +40262,7 @@ export const CARDS: SecCard[] = [
     questionText: "Luego, mediante su empleo de periodista, … (para 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Later by way of his job as a journalist", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "Later by way of his job as a journalist", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “Correct tense required for full marks”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40288,7 +40288,7 @@ export const CARDS: SecCard[] = [
     questionText: "por otro lado (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en cambio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "en cambio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40314,7 +40314,7 @@ export const CARDS: SecCard[] = [
     questionText: "ocasión (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40340,7 +40340,7 @@ export const CARDS: SecCard[] = [
     questionText: "conseguir (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lograr", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "lograr", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40366,7 +40366,7 @@ export const CARDS: SecCard[] = [
     questionText: "errores (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fallos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "fallos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40392,7 +40392,7 @@ export const CARDS: SecCard[] = [
     questionText: "cariño (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "simpatía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-1", kind: "point", verbatim: "simpatía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -40915,6 +40915,2384 @@ export const CARDS: SecCard[] = [
                 21
           ],
           "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-a", topicId: "spanish-3-0", conceptId: "theme-book-fair-this-year",
+    section: "L", questionRef: "2022 HL Section L Q1(a) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "What is the theme of the book fair this year? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":3,"perOption":2,"options":["Spanish/Hispanic literature","20th century","Colombian literature"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-b", topicId: "spanish-3-0", conceptId: "know-book-fair-has-become-more",
+    section: "L", questionRef: "2022 HL Section L Q1(b) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "How do we know the book fair has become more popular? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["increase in book sales","higher number of visitors","increase in book stands"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-1-c", topicId: "spanish-3-0", conceptId: "lucky-could-happen-book-fair",
+    section: "L", questionRef: "2022 HL Section L Q1(c) — Deferred sitting",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. LA FERIA DEL LIBRO DE MADRID (MADRID BOOK FAIR)",
+    questionText: "If you are lucky, what could happen at the book fair? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "You can meet your favourite author", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "get a book signed (with his autograph)", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — LA FERIA DEL LIBRO DE MADRID",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-a", topicId: "spanish-3-2", conceptId: "did-miguel-start-cycling",
+    section: "L", questionRef: "2022 HL Section L Q2(a) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "How did Miguel start cycling? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His father gave him a mountain bicycle", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "when he turned 9 years old", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-b", topicId: "spanish-3-2", conceptId: "training-does-miguel-every-day",
+    section: "L", questionRef: "2022 HL Section L Q2(b) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What training does Miguel do every day? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Rides his bicycle (around) 100 km (does) 2 hours in the gym", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,2,4], parts: [{"id":"p1","verbatim":"Rides his bicycle (around) 100 km","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"(does) 2 hours in the gym","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-c", topicId: "spanish-3-2", conceptId: "makes-sacrifice-worthwhile",
+    section: "L", questionRef: "2022 HL Section L Q2(c) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What makes the sacrifice worthwhile? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["win races","receive medals","prizes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-2-d", topicId: "spanish-3-2", conceptId: "his-ambitions-future",
+    section: "L", questionRef: "2022 HL Section L Q2(d) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON UN CICLISTA PROFESIONAL (INTERVIEW WITH A PROFESSIONAL CYCLIST)",
+    questionText: "What are his ambitions for the future? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Win the Tour de/of France","Have his own (professional) cycling team","Open a cycling school in his town"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON UN CICLISTA PROFESIONAL",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-a", topicId: "spanish-3-2", conceptId: "music-from-galicia-similar-irish-music",
+    section: "L", questionRef: "2022 HL Section L Q3(a) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Why is the music from Galicia similar to Irish music? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Play similar instruments", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "Celtic origin", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-b", topicId: "spanish-3-2", conceptId: "has-carlos-done-with-his-music",
+    section: "L", questionRef: "2022 HL Section L Q3(b) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "What has Carlos done with his music group Celtic Bandidos? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":3,"options":["Played all over the World","played in (mention one country)","recorded a (live) album"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-c", topicId: "spanish-3-2", conceptId: "does-like-living-ireland",
+    section: "L", questionRef: "2022 HL Section L Q3(c) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Why does he like living in Ireland? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["feels like home","great musical tradition","quiet life"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-3-d", topicId: "spanish-3-2", conceptId: "where-does-find-inspiration-his-songs",
+    section: "L", questionRef: "2022 HL Section L Q3(d) — Deferred sitting",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON UN MÚSICO ESPAÑOL (SPEAKING WITH A SPANISH MUSICIAN)",
+    questionText: "Where does he find inspiration for his songs? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Daily life", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "landscape", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "countries that he has visited", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON UN MÚSICO ESPAÑOL",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-a", topicId: "spanish-3-1", conceptId: "did-david-start-working-online-educator",
+    section: "L", questionRef: "2022 HL Section L Q4(a) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "Why did David start working as an online educator? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He lost his job/became unemployed", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "because of the economic crisis", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-b", topicId: "spanish-3-1", conceptId: "does-david-say-his-videos",
+    section: "L", questionRef: "2022 HL Section L Q4(b) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "What does David say about his videos? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["fun","free","aimed at secondary students","last between 5 and 10 minutes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-c", topicId: "spanish-3-1", conceptId: "know-david-dedicated-teacher",
+    section: "L", questionRef: "2022 HL Section L Q4(c) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "How do we know David is a dedicated teacher? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["explains very well","always available to answer questions","corrects their mistakes","available through e-mail"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-4-d", topicId: "spanish-3-1", conceptId: "skills-should-young-people-develop-according",
+    section: "L", questionRef: "2022 HL Section L Q4(d) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (DAVID CALLE, EDUCADOR EN LÍNEA) (DAVID CALLE, AN ONLINE EDUCATOR)",
+    questionText: "What skills should young people develop, according to David? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "learn independently", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "resilience", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "goup work", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — DESCRIPTIVO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-a", topicId: "spanish-3-1", conceptId: "features-intelligent-fridge",
+    section: "L", questionRef: "2022 HL Section L Q5(a) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "Mention two features of the intelligent fridge.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shows you the food inside (without having to open the door)", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "Alerts you when you have to do the shopping", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-b", topicId: "spanish-3-1", conceptId: "recipe-books-longer-necessary",
+    section: "L", questionRef: "2022 HL Section L Q5(b) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "Why are recipe books no longer necessary?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":1,"options":["There is a (digital) screen on the (kitchen) table","You can see the recipe (on the table)","You can watch a video","You can see how to prepare the dish"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-c", topicId: "spanish-3-1", conceptId: "does-house-help-combat-global-warming",
+    section: "L", questionRef: "2022 HL Section L Q5(c) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "How does the house help to combat global warming? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Does not emit green house effect gases into the atmosphere","Uses solar energy to heat the water","Everything gets recycled"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-5-d", topicId: "spanish-3-1", conceptId: "advantage-residents-house",
+    section: "L", questionRef: "2022 HL Section L Q5(d) — Deferred sitting",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. (LA CASA DEL FUTURO) (THE HOUSE OF THE FUTURE)",
+    questionText: "What is the advantage for the residents of the house? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "They save (an average of) €800 per year on light/gas (bills)", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3,4], parts: [{"id":"p1","verbatim":"They save (an average of) €800","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"per year","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on light/gas (bills)","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — DESCRIPTIVO",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-a", topicId: "spanish-3-3", conceptId: "will-weather-like-north",
+    section: "L", questionRef: "2022 HL Section L Q6(a) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in the north? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cloudy", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "rainy", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(strong) winds", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-b", topicId: "spanish-3-3", conceptId: "will-weather-like-west-country",
+    section: "L", questionRef: "2022 HL Section L Q6(b) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in the west of the country? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(risk of) storms", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "hailstone", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(heavy) showers", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-6-c", topicId: "spanish-3-3", conceptId: "will-weather-like-madrid",
+    section: "L", questionRef: "2022 HL Section L Q6(c) — Deferred sitting",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in Madrid? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Morning) fog", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "clear skies (in the afternoon)", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-a", topicId: "spanish-3-4", conceptId: "did-government-ask-people",
+    section: "L", questionRef: "2022 HL Section L Q7(a) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What did the Government ask people to do? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stay at home", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "avoid unnecessary trips", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-b", topicId: "spanish-3-4", conceptId: "transport-problems-did-heavy-snowfall-cause",
+    section: "L", questionRef: "2022 HL Section L Q7(b) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What transport problems did the heavy snowfall cause in Madrid? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Cancellation of (many) flights trains/ buses", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Cancellation of (many) flights","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"trains/ buses","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-c", topicId: "spanish-3-4", conceptId: "did-seven-volunteers-picos-europa",
+    section: "L", questionRef: "2022 HL Section L Q7(c) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What did seven volunteers do in the Picos de Europa? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "They skied 13 km to carry food/medicine/water to the inhabitants of a town", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", permittedMarks: [0,1,2,3,4], parts: [{"id":"p1","verbatim":"They skied 13 km","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"to carry food/medicine/water","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"to the inhabitants of a town","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-l-7-d", topicId: "spanish-3-4", conceptId: "happened-dog-rholo-after-being-rescued",
+    section: "L", questionRef: "2022 HL Section L Q7(d) — Deferred sitting",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA TORMENTA FILOMENA (STORM FILOMENA)",
+    questionText: "What happened to the dog Rholo after being rescued? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was taken to the vet", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”" },
+    { id: "r-2", kind: "point", verbatim: "returned with his family", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — LA TORMENTA FILOMENA",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV-deferred"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+          "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-a", topicId: "spanish-7-1", conceptId: "dude-momento",
+    section: "A", questionRef: "2022 HL Section A1a Q1(a) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "dudé un momento (lines 1‐10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vacilé un instante", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-b", topicId: "spanish-7-1", conceptId: "mucho-tiempo",
+    section: "A", questionRef: "2022 HL Section A1a Q1(b) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "mucho tiempo\n(lines 11‐18)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "largas horas", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-1-c", topicId: "spanish-7-1", conceptId: "sentimientos",
+    section: "A", questionRef: "2022 HL Section A1a Q1(c) — Deferred sitting",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "sentimientos\n(lines 19‐24)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sensaciones", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if extra words are added. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-a", topicId: "spanish-7-1", conceptId: "imposible-describir-noche-balsa",
+    section: "A", questionRef: "2022 HL Section A1a Q2(a) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "Es imposible describir una noche en una balsa… (line 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It’s impossible to describe a night on a raft….", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-b", topicId: "spanish-7-1", conceptId: "habia-estado-mirando-horizonte-espera-aviones",
+    section: "A", questionRef: "2022 HL Section A1a Q2(b) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "… había estado mirando el horizonte en espera de los aviones… (line 12)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "...... I had been looking at the horizon waiting for the planes …..", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-2-c", topicId: "spanish-7-1", conceptId: "frio-fue-mas-intenso-horas-madrugada",
+    section: "A", questionRef: "2022 HL Section A1a Q2(c) — Deferred sitting",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "El frío fue más intenso en las horas de la madrugada… (lines 17‐18)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The cold was more intense in the early hours of the morning …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-3", topicId: "spanish-7-1", conceptId: "describe-luis-alejandro-velasco-first-night",
+    section: "A", questionRef: "2022 HL Section A1a Q3 — Deferred sitting",
+    questionText: "Describe Luis Alejandro Velasco’s first night at sea.\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["Absolutely nothing happened","He looked at his watch every minute","It was a torture"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-4", topicId: "spanish-7-1", conceptId: "did-luis-feel-like-crying-english",
+    section: "A", questionRef: "2022 HL Section A1a Q4 — Deferred sitting",
+    questionText: "Why did Luis feel like crying?\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["He hadn’t slept for a second","He hadn’t even tried","He was looking for lights of boats","He watched the sea for hours","He didn’t see any lights"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1a-5", topicId: "spanish-7-1", conceptId: "discuss-theme-loneliness-novel-may-not",
+    section: "A", questionRef: "2022 HL Section A1a Q5 — Deferred sitting",
+    questionText: "Discuss the theme of loneliness in the novel.\nYou may not support your answer by reference to the extract. Answer in English on page 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “Discussion on any three relevant points” and “No marks given for answers supported by reference to the extract”, under the tariff “4 + 4 + 4 = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,4,8,12], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-a", topicId: "spanish-5-0", conceptId: "did-recent-study-reveal-spanish-adolescents",
+    section: "A", questionRef: "2022 HL Section A1b Q1(a) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What did a recent study reveal about Spanish adolescents? Give full details. (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They spend more time at home connected to the Internet and they don’t feel the need to go out and see their friends.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-b", topicId: "spanish-5-0", conceptId: "young-people-communicate-with-friends-nowadays",
+    section: "A", questionRef: "2022 HL Section A1b Q1(b) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How do young people communicate with their friends nowadays? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They communicate in a virtual way, by mobile phone instead of face to face.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-c", topicId: "spanish-5-0", conceptId: "have-new-technologies-benefitted-students-education",
+    section: "A", questionRef: "2022 HL Section A1b Q1(c) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How have new technologies benefitted students’ education? (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They facilitate access to online classes if they miss a day of school.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-d", topicId: "spanish-5-0", conceptId: "can-excessive-use-technology-problem-young",
+    section: "A", questionRef: "2022 HL Section A1b Q1(d) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Why can excessive use of technology be a problem for young people?\nGive full details. (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It takes away from other important activities like studying, doing exercise, social life and family time.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-1-e", topicId: "spanish-5-0", conceptId: "ways-jaime-life-has-changed",
+    section: "A", questionRef: "2022 HL Section A1b Q1(e) — Deferred sitting",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Mention three ways in which Jaime’s life has changed. (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":3,"perOption":2,"options":["He has a more balanced life","He only spends one hour a day on social media","The rest of the time he spends with his friends","The rest of the time he spends walking his dog"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-a", topicId: "spanish-5-0", conceptId: "sin-embargo",
+    section: "A", questionRef: "2022 HL Section A1b Q2(a) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "sin embargo (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "no obstante", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-b", topicId: "spanish-5-0", conceptId: "ventajas",
+    section: "A", questionRef: "2022 HL Section A1b Q2(b) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "ventajas (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "beneficios", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-2-c", topicId: "spanish-5-0", conceptId: "indispensable",
+    section: "A", questionRef: "2022 HL Section A1b Q2(c) — Deferred sitting",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "indispensable (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fundamental", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-a", topicId: "spanish-5-0", conceptId: "nuevas-tecnologias-estan-presentes-nuestra-vida",
+    section: "A", questionRef: "2022 HL Section A1b Q3(a) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "Las nuevas tecnologías están presentes en nuestra vida cotidiana... (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "New technologies are present in our daily life….", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-b", topicId: "spanish-5-0", conceptId: "tiempo-ocio-cambiado-mucho-ultimos-anos",
+    section: "A", questionRef: "2022 HL Section A1b Q3(b) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… el tiempo de ocio ha cambiado mucho en los últimos años… (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… free time has changed a lot in the last few years.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-3-c", topicId: "spanish-5-0", conceptId: "contribuyen-aliviar-estres-mejorar-sueno",
+    section: "A", questionRef: "2022 HL Section A1b Q3(c) — Deferred sitting",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… contribuyen a aliviar el estrés, mejorar el sueño… (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… they contribute to alleviating stress and improving sleep…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a1b-4", topicId: "spanish-5-0", conceptId: "forma-diferente-madrileno",
+    section: "A", questionRef: "2022 HL Section A1b Q4 — Deferred sitting",
+    stem: "Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:",
+    questionText: "(a) ...de forma diferente… (para 2)\nO\n(b) …un madrileño… (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English.”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LOS JÓVENES ESPAÑOLES Y LA TECNOLOGÍA — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-i", topicId: "spanish-5-1", conceptId: "who-helped-create-this-bus",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(i) — Deferred sitting",
+    questionText: "Who helped to create this bus? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A team of university engineers", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "Spanish businesses", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-ii", topicId: "spanish-5-1", conceptId: "passengers-bus-service-aimed",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(ii) — Deferred sitting",
+    questionText: "What passengers is the bus service aimed at? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":0,"options":["Those with reduced mobility","Older people (who can’t walk much especially in areas of difficult access)."],"perOptionSteps":[0,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-a-iii", topicId: "spanish-5-1", conceptId: "creators-say-safety-bus",
+    section: "A", questionRef: "2022 HL Section A2 Q(a)(iii) — Deferred sitting",
+    questionText: "What do the creators say about the safety of the bus?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(It’s four times) safer than a traditional car.", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-i", topicId: "spanish-5-1", conceptId: "did-locals-molina-segura-call-police",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(i) — Deferred sitting",
+    questionText: "Why did locals in Molina de Segura call the police?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They had seen a lion walking around the village on its own", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-ii", topicId: "spanish-5-1", conceptId: "happened-animal-shelter",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(ii) — Deferred sitting",
+    questionText: "What happened at the animal shelter? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His microchip was checked, They found the contact details of his owner (Ramón Fernández)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-a2-b-iii", topicId: "spanish-5-1", conceptId: "did-police-post-twitter",
+    section: "A", questionRef: "2022 HL Section A2 Q(b)(iii) — Deferred sitting",
+    questionText: "What did the police post on Twitter?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They posted that the animal in question wasn’t a lion but a large, loving dog called Bravo.", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "UN PERRO CAUSA EL PÁNICO EN UN PUEBLO DE MURCIA — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-a", topicId: "spanish-5-0", conceptId: "actualmente",
+    section: "B", questionRef: "2022 HL Section B Q1(a) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "actualmente (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "hoy en día", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-b", topicId: "spanish-5-0", conceptId: "vez",
+    section: "B", questionRef: "2022 HL Section B Q1(b) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "a la vez (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "al mismo tiempo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-c", topicId: "spanish-5-0", conceptId: "efectos-serios",
+    section: "B", questionRef: "2022 HL Section B Q1(c) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "efectos serios (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "consecuencias graves", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-d", topicId: "spanish-5-0", conceptId: "cercanias",
+    section: "B", questionRef: "2022 HL Section B Q1(d) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "las cercanías (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "los alrededores", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-1-e", topicId: "spanish-5-0", conceptId: "solucionar-tema",
+    section: "B", questionRef: "2022 HL Section B Q1(e) — Deferred sitting",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "solucionar el tema (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "resolver el problema", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-a", topicId: "spanish-5-0", conceptId: "atrae-barcelona-tantos-turistas-todos-paises",
+    section: "B", questionRef: "2022 HL Section B Q2(a) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "¿Por qué atrae Barcelona a tantos turistas de todos los países del mundo? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Why does Barcelona attract so many tourists from all the countries of the world?", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-b", topicId: "spanish-5-0", conceptId: "comercios-adaptan-necesidades-turisticas",
+    section: "B", questionRef: "2022 HL Section B Q2(b) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… los comercios se adaptan a las necesidades turísticas... (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "... businesses adapt to tourist needs....", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-2-c", topicId: "spanish-5-0", conceptId: "han-obligado-muchos-vecinos-dejar-casas",
+    section: "B", questionRef: "2022 HL Section B Q2(c) — Deferred sitting",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… han obligado a muchos vecinos a dejar sus casas... (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… they have obliged many neighbours to leave their houses", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Correct tense required for full marks”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-a", topicId: "spanish-5-0", conceptId: "transformarse",
+    section: "B", questionRef: "2022 HL Section B Q3(a) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "transformarse (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "convertirse", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-b", topicId: "spanish-5-0", conceptId: "especialmente",
+    section: "B", questionRef: "2022 HL Section B Q3(b) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "especialmente (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sobre todo", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-c", topicId: "spanish-5-0", conceptId: "desempleo",
+    section: "B", questionRef: "2022 HL Section B Q3(c) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "desempleo (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "paro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-d", topicId: "spanish-5-0", conceptId: "duenos",
+    section: "B", questionRef: "2022 HL Section B Q3(d) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "dueños (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "propietarios", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-3-e", topicId: "spanish-5-0", conceptId: "desea",
+    section: "B", questionRef: "2022 HL Section B Q3(e) — Deferred sitting",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "desea (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "quiere", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “No marks awarded if words are added or omitted. Exact transcription required”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-a", topicId: "spanish-5-0", conceptId: "barcelona-perfect-city-holidays",
+    section: "B", questionRef: "2022 HL Section B Q4(a) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "Why is Barcelona the perfect city for holidays? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["it is the perfect size, neither too big nor too small","both the beach and the mountains are less than an hour from the centre","It has a perfect climate with sun and pleasant temperatures"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-b", topicId: "spanish-5-0", conceptId: "have-residents-tourist-behaviour",
+    section: "B", questionRef: "2022 HL Section B Q4(b) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What have the residents said about tourist behaviour? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["The tourists get drunk","They make noise during the whole night","They leave rubbish everywhere","They don’t respect anything","They shout on the streets"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-4-c", topicId: "spanish-5-0", conceptId: "measures-have-been-taken-town-hall",
+    section: "B", questionRef: "2022 HL Section B Q4(c) — Deferred sitting",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What measures have been taken by the town hall? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “In (a), (b) and (c) the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["They have prohibited the construction of new hotels in the city centre","They have just authorised a project which will prevent houses being converted into tourist apartments","Imposing tourist taxes","Regulating the prices of rent"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.8 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-b-5", topicId: "spanish-6-0", conceptId: "espana-destino-perfecto-turismo-debemos-pasar",
+    section: "B", questionRef: "2022 HL Section B Q5 — Deferred sitting",
+    stem: "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+    questionText: "(a) España es el destino perfecto para el turismo.\nO\n(b) Debemos pasar las vacaciones en Irlanda.\nO\n(c) Es importante descubrir otros países.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where no marks are awarded for Content, (i.e. effort totally irrelevant), no marks will be awarded for Language.",
+                "No marks will be awarded for phrases taken directly from the article."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content/Communication",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "High level of coherence",
+                                        "Clear argumentation",
+                                        "Communicative intention fulfilled",
+                                        "Little or no irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Comprehensible to Spanish speaker",
+                                        "Communicative intention more or less respected",
+                                        "Some irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Lack of coherence",
+                                        "Spanish speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled",
+                                        "A lot of irrelevant material"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Idiomatic Spanish",
+                                        "Good level of vocabulary",
+                                        "Few grammatical/spelling mistakes",
+                                        "Correct usage of tenses"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Vocabulary quite good - generally adequate and appropriate",
+                                        "Verbs generally correct",
+                                        "Not too many spelling/grammatical mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Problems with vocabulary – limited range of vocabulary",
+                                        "Most verbs incorrect",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "zeroWhenZero": "content"
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Choose a band for Content/Communication and one for Language, then the mark within each band."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "BARCELONA: EL PROBLEMA DEL TURISMO MASIVO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV-deferred"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.9 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-1-a", topicId: "spanish-6-1", conceptId: "alicante-looking-accommodation-rent-speak-property",
+    section: "C", questionRef: "2022 HL Section C Q1(a) — Deferred sitting",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You are in Alicante looking for accommodation to rent. You speak to a property owner. Complete in Spanish the dialogue. You should answer any five of the following points:\nSeñora: Buenos días, ¿en qué puedo ayudarte?\nTú: Explain that you have just arrived in Alicante and that you are going to spend a year here to improve your Spanish. You would like to rent an apartment with sea views.\nSeñora: Vale, ¿conoces bien la ciudad?\nTú: Say that you do not know the city because it is your first time in Alicante. Say you would prefer to live near the city centre because there is a lot to do there.\nSeñora: Pues, tengo un apartamento disponible a cinco minutos del centro a pie.\nTú: Ask if it would be possible to see the apartment tomorrow afternoon because you have classes in the language school in the morning. Ask where the apartment is.\nSeñora: Vale, el apartamento está en la calle Picasso, justo al lado del supermercado.\nTú: Say that you are looking forward to seeing the apartment. Ask how much it costs per month and if you have to pay a deposit.\nSeñora: Bueno, cuesta 300€ al mes más un depósito de 500€.\nTú: Say that is not very expensive, it’s cheaper than accommodation in Ireland. Tell her you are going to look for a part‐time job in a restaurant to earn some money.\nSeñora: ¿Has trabajado antes en un restaurante?\nTú: Say that you worked in an Italian restaurant in your town two years ago. Say that you loved the work because you met a lot of people but the hours were very long.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Six ‘turns’. Five to be answered. If all ‘turns’ are answered, mark all and award marks for the highest scoring FIVE. Allow a maximum of 5 marks each. (5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 mark: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "turn-1",
+                      "label": "First turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-2",
+                      "label": "Second turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-3",
+                      "label": "Third turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-4",
+                      "label": "Fourth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-5",
+                      "label": "Fifth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each turn you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (a) — answer in Spanish",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, p.9 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-1-b", topicId: "spanish-6-2", conceptId: "read-article-serious-litter-problem-beaches",
+    section: "C", questionRef: "2022 HL Section C Q1(b) — Deferred sitting",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You read an article about the serious litter problem on the beaches in Valencia. Write a LETTER/EMAIL in Spanish to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with them. You should make five relevant points out of the eight below and each of these points should be expanded and developed.)\n• The litter problem on the beaches is bad.\n• Litter is having a negative effect on tourism in Valencia.\n• Tourism creates a lot of jobs in Valencia.\n• Tourists like clean beaches while on holidays.\n• Litter on the beaches is dangerous for children.\n• There should be more litter bins near the beaches.\n• Local people can help to keep the area litter free.\n• We all should respect the environment.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "• There are five points to be made from a possible eight. Allow a maximum of 5 marks each.",
+                "If more than five points are answered, mark all and award marks for the highest scoring FIVE.",
+                "• Note that each point should be developed and expanded.",
+                "• Letter/email can be loosely based on the suggestions given.",
+                "• Candidates can make their own points and need not use the guidelines given.",
+                "(5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 mark: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (b) — answer in Spanish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, pp.9-10 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-2-a", topicId: "spanish-6-3", conceptId: "walking-trip-northern-spain-diary-entry",
+    section: "C", questionRef: "2022 HL Section C Q2(a) — Deferred sitting",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You are on a walking trip in northern Spain. Write a diary entry in Spanish mentioning any four of the following points:\n− Say that you are having a great time. Explain why.\n− Describe what the weather is like.\n− Describe one person you have met.\n− Say how you normally spend the evenings.\n− Mention what your plans are for the rest of the trip.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered. (25 marks)",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (a) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV-deferred",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, deferred examination, pp.9-10 — © State Examinations Commission.",
+    id: "es-2022-hl-deferred-c-2-b", topicId: "spanish-6-4", conceptId: "staying-seville-with-spanish-friend-pilar",
+    section: "C", questionRef: "2022 HL Section C Q2(b) — Deferred sitting",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You are staying in Seville with your Spanish friend Pilar. Leave a note in Spanish for Pilar including any four of the following points:\n− Say you are going out for tapas tonight with your classmates.\n− Give one detail about the restaurant.\n− Mention one dish you would like to try.\n− Say that you will send a photo of the food.\n− You will return home by taxi before midnight.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered.",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (b) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level deferred examination paper — © State Examinations Commission.",
           "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,

@@ -1351,9 +1351,18 @@ const SPANISH_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number
   2021: { higher: 33, ordinary: 26 },
 };
 const SPANISH_ADDED_TO_FROZEN_ID = /^es-202[1-5]-(?:hl-(?:l-|b-5$|c-|a1a-5$|a1b-4$)|ol-(?:l-|b-))/;
-const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (Number(id.slice(3, 7)) in SPANISH_ADDED
+/* The SEC's deferred sittings (es_all.py DEFERRED_CARDED, from 2026-11-12,
+ * "es-2022-hl-deferred-…", cited "… — Deferred sitting") join as additions,
+ * each its own sitting and every id new, pinned per year and level. */
+const SPANISH_DEFERRED: Record<number, { higher: number; ordinary: number }> = {
+  2022: { higher: 74, ordinary: 0 },
+};
+const SPANISH_DEFERRED_ID = /^es-\d{4}-(?:hl|ol)-deferred-/;
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && (SPANISH_DEFERRED_ID.test(id)
+  || Number(id.slice(3, 7)) in SPANISH_ADDED
   || (Number(id.slice(3, 7)) in SPANISH_ADDED_TO_FROZEN && SPANISH_ADDED_TO_FROZEN_ID.test(id)));
-const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPANISH_ADDED_TO_FROZEN)]
+const spanishAddedTotal = [...Object.values(SPANISH_ADDED), ...Object.values(SPANISH_ADDED_TO_FROZEN),
+  ...Object.values(SPANISH_DEFERRED)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
@@ -2245,6 +2254,12 @@ describe('Mark Bank card preservation', () => {
       const added = cards.filter(card => card.year === Number(year) && SPANISH_ADDED_TO_FROZEN_ID.test(card.id));
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    for (const [year, counts] of Object.entries(SPANISH_DEFERRED)) {
+      const added = cards.filter(card => card.year === Number(year) && SPANISH_DEFERRED_ID.test(card.id));
+      expect(added.filter(card => card.level === 'higher'), `${year} deferred`).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), `${year} deferred`).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.questionRef.endsWith(' — Deferred sitting'))).toBe(true);
     }
     expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);

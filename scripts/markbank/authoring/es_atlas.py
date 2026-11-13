@@ -68,6 +68,27 @@ def tags_for(year, level, fileid):
     return {}
 
 
+HOSTED = os.path.join(ROOT, 'public', 'paper-anchors')
+
+
+def hosted_anchors(year, fileid):
+    """A deferred paper's Atlas questions, where its hosted anchor map (written
+    by build-spanish-exam-topic-crosswalk.mjs) places them: the deferred sitting
+    has no answer map of its own. Each question is anchored at its page."""
+    path = os.path.join(HOSTED, str(year), f'{fileid}.json')
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding='utf-8') as fh:
+        data = json.load(fh)
+    # Only the running-order questions, as June's answer maps hold them: the
+    # questions numbered by printed address ("A1b4", "A2", "B5", "C2") are
+    # filed by that address (_writing_n, EXTRA_N), never placed by position.
+    return sorted(({'n': q['n'], 'page': q['pP'], 'y': (q.get('pY') or [0])[0],
+                    'label': q.get('label') or ''} for q in data['q']
+                   if q.get('pP') is not None and str(q['n']).isdigit()),
+                  key=lambda a: (a['page'], a['y']))
+
+
 def place(found, page, y, section, q, letter=None):
     """The Atlas question a card printed at (page, y) belongs to, or a reason."""
     # A tolerance of a hundredth of the page: the anchor and the ask are
@@ -203,16 +224,21 @@ def resolve(cards):
     papers, out, refused = {}, {}, []
     for card in cards:
         year, level, section, q, letter, roman = parse_ref(card['questionRef'])
-        key = (year, level)
+        # A card of the SEC's deferred sitting files under that sitting's own
+        # Atlas papers ("LC012ALP000EV-deferred.pdf"), never June's.
+        deferred = card['id'].startswith(f'es-{year}-{level}-deferred-')
+        key = (year, level, deferred)
         if key not in papers:
-            papers[key] = EsPaper(year, level)
+            papers[key] = EsPaper(year, level, sitting='deferred' if deferred else None)
         P = papers[key]
         if section == 'L':
             kind = 'aural'
         else:
             kind = 'written'
         fileid = FILEID[(level, kind)]
-        found = anchors(year, fileid)
+        if deferred:
+            fileid = fileid.replace('.pdf', '-deferred.pdf')
+        found = hosted_anchors(year, fileid) if deferred else anchors(year, fileid)
         tags = tags_for(year, 'higher' if level == 'hl' else 'ordinary', fileid)
         written_n = (_writing_n(level, section, q, letter)
                      or EXTRA_N.get((year, level, section, q)))

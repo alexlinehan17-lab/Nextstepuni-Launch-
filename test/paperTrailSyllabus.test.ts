@@ -73,7 +73,7 @@ describe('Paper Trail syllabus history', () => {
 // Irish's carded deferred papers (from 2026-11-12), and DCG's deferred Higher
 // booklets, a Section A sheet and a Sections B and C booklet a sitting (from
 // 2026-11-12), and Engineering's deferred Higher papers, 2022 and 2023 (from
-// 2026-11-12), their questions kept apart from June's by
+// 2026-11-12), and Spanish's 2022 Higher deferred sitting (2026-11-12), their questions kept apart from June's by
 // logicalQuestionIdentity.
 const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
   '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf'];
@@ -88,6 +88,9 @@ const ADMITTED_DEFERRED = new Set([
   ...DCG_DEFERRED_PAPERS.map(paper => `design-and-communication-graphics|${paper}`),
   'engineering|2022|LC027ALP000EV-deferred.pdf',
   'engineering|2023|LC027ALP000EV-deferred.pdf',
+  // Spanish 2022 Higher, the deferred sitting (2026-11-12): written and listening.
+  'spanish|2022|LC012ALP000EV-deferred.pdf',
+  'spanish|2022|LC012ALPA00EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

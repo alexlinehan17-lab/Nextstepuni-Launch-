@@ -119,14 +119,16 @@ describe('Spanish exam-topic registry', () => {
       referenceOfficialAssociations: 471,
       referenceMockAssociations: 351,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 397,
-      sourceBlockedAssociations: 74,
-      sourceBlockedByReason: { preCorpus: 51, deferred: 14, oralBooklet: 9 },
-      matchedLocalCardLinks: 563,
+      // The 14 "2022 - Deferred …" headings resolve to the 2022 Higher deferred
+      // sitting's own papers since it was carded (2026-11-12).
+      matchedAssociations: 411,
+      sourceBlockedAssociations: 60,
+      sourceBlockedByReason: { preCorpus: 51, oralBooklet: 9 },
+      matchedLocalCardLinks: 583,
     });
     expect(spanishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = spanishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
-    expect(blocked).toHaveLength(74);
+    expect(blocked).toHaveLength(60);
     expect(blocked.every(item => 'reason' in item && item.reason.length > 0)).toBe(true);
   });
 
@@ -138,12 +140,13 @@ describe('Spanish exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(637);
+    expect(references).toHaveLength(643);
     expect(actual).toEqual(expected);
     expect(references.filter(reference => reference.fileid)).toHaveLength(563);
-    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(628);
+    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(634);
     expect(references.filter(reference => reference.paperKey === 'oral')).toHaveLength(9);
-    expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(14);
+    // The 14 deferred headings now name the deferred papers' own questions.
+    expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(20);
   });
 
   it('preserves all 124 frozen variants and every original card and tag verbatim', () => {
@@ -162,7 +165,9 @@ describe('Spanish exam-topic registry', () => {
   it('adds every reviewed sidecar, 2026 and the missing Ordinary writing choices', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     expect(spanishCrosswalk.summary).toMatchObject({
-      localPaperVariants: 136,
+      localPaperVariants: 138,
+      // +2 (2026-11-12): the 2022 Higher deferred sitting's written and
+      // listening papers ("…-deferred.pdf"), 17 and 7 questions.
       // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions;
       // +2: 2020 Higher A1b4 (journalistic Q4), both editions.
       // +5: 2019 Higher B5 and C2, both editions, and A1b4 (English edition).
@@ -173,18 +178,18 @@ describe('Spanish exam-topic registry', () => {
       // +6: 2014 Higher B5, C2 and A1b4, both editions.
       // +5: 2013 Higher B5 and C2, both editions, and A1b4 (English edition).
       // +6: 2012 Higher B5, C2 and A1b4, both editions.
-      localPhysicalMappings: 1244,
-      distinctStudentFacingQuestions: 665,
-      referenceMappedLocalQuestions: 462,
-      retainedLocalQuestions: 782,
-      hostedPaperAnchorMaps: 136,
+      localPhysicalMappings: 1268,
+      distinctStudentFacingQuestions: 689,
+      referenceMappedLocalQuestions: 479,
+      retainedLocalQuestions: 789,
+      hostedPaperAnchorMaps: 138,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
-      newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 335,
+      newlyAddedPaperVariants: 14,
+      newlyAddedPhysicalMappings: 359,
     });
-    expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1244);
+    expect(papers).toHaveLength(138);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1268);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -249,7 +254,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,244 cards', () => {
+  it('ships a finite paper-only fallback for all 1,268 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -270,9 +275,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 665 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 689 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 665,
+      questions: 689,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,

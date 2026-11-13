@@ -312,6 +312,8 @@ interface SpanishRuntime {
   partReferences: Array<[number, number, 'h' | 'o', 'w' | 'a' | 'o', 'm' | 'd', string, string]>;
   /** [h/o, e/i, year-2000, written/aural, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 'w' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, written/aural, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 'w' | 'a', string, string, number[]]>;
 }
 
 interface HistoryRuntime {
@@ -4276,6 +4278,20 @@ for (const [
       'single',
       lang,
     ),
+    topicIndexes.map(topicIndex => {
+      const topicId = spanishRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Spanish runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+
+// A deferred Spanish sitting's questions are keyed by their own booklet
+// ("LC012ALP000EV-deferred.pdf"), never June's, as Irish keys its own.
+for (const [levelCode, langCode, yearOffset, _kindCode, fileid, n, topicIndexes] of spanishRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(spanishRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000,
+      'main', fileid, n, 'single', langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = spanishRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Spanish runtime topic index: ${topicIndex}`);

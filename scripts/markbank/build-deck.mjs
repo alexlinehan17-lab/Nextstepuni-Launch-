@@ -716,6 +716,9 @@ function spanishGridFault(c, scheme) {
 
 /** Mirrors bestClaimedMarks() in types/markBank.ts: the best `count` values, added. */
 const bestOf = (values, count) => [...values].sort((a, b) => b - a).slice(0, count).reduce((n, m) => n + m, 0);
+// Mirrors optionGroupMarks() in types/markBank.ts: fully claimed, a menu priced
+// option by option pays its answers, never an answer's part beside it.
+const answerMarks = (g) => g.optionMarks.filter((_m, i) => g.optionOf?.[i] === null || g.optionOf?.[i] === undefined);
 
 /** The level tokens a deck may carry.
  *
@@ -739,10 +742,21 @@ const DEFERRED_ID = {
   economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
   engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
   history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
+  spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
+/* A deferred Spanish card's documents are its sitting's own: the index's
+ * deferred entry labels them "Deferred · Exam Paper", "Deferred · Aural Paper"
+ * and "Deferred · Section B" (the loose sheet), and a card names the June
+ * label ("Aural Paper", "Section B"). Null where the entry has no such
+ * document, never June's. */
+const deferredDoc = (subjectId, card, label) => {
+  const entry = deferredPaperEntry(subjectId, card.year, card.level);
+  const hit = entry?.papers?.find(p => p.label === `Deferred · ${label}`);
+  return hit ? String(hit.doc?.f ?? '').replace(/\.pdf$/i, '') || null : null;
+};
 const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
@@ -1274,7 +1288,7 @@ function tariffFault(c) {
   // steps, not claimMax times one value.
   const worth = (r) => (r.kind === 'anyN' && r.group
     ? (r.group.optionMarks
-        ? bestOf(r.group.optionMarks, r.group.claimMax)
+        ? bestOf(answerMarks(r.group), r.group.claimMax)
         : r.group.perOptionSteps
         ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
         : r.group.claimMax * r.group.perOption)
@@ -1344,7 +1358,7 @@ function groupFault(c) {
     // The session prints "Any 2 of these — 7 marks each" from these two numbers,
     // so a group worth more than the question tells the student a false total.
     const groupWorth = g.optionMarks
-      ? bestOf(g.optionMarks, g.claimMax)
+      ? bestOf(answerMarks(g), g.claimMax)
       : g.perOptionSteps
       ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
       : g.claimMax * g.perOption;
@@ -1354,6 +1368,13 @@ function groupFault(c) {
     if (g.optionMarks && (g.optionMarks.length !== g.options.length || g.perOptionSteps
       || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0) || g.perOption !== Math.max(...g.optionMarks))) {
       return `row "${r.id}" prices its options one by one inconsistently`;
+    }
+    // A partial points at the answer it credits (optionOf): an answer of its
+    // own, never itself, and never one priced below it.
+    if (g.optionOf && (!g.optionMarks || g.optionOf.length !== g.options.length
+      || g.optionOf.some((of, i) => of !== null && (!Number.isInteger(of) || of < 0 || of >= g.options.length
+        || of === i || g.optionOf[of] !== null || g.optionMarks[of] < g.optionMarks[i])))) {
+      return `row "${r.id}" ties a partial to its answer inconsistently`;
     }
     if (groupWorth > c.totalMarks) {
       return `row "${r.id}" offers ${groupWorth} marks on a ${c.totalMarks}-mark question`;
@@ -1508,7 +1529,9 @@ for (const c of cards) {
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
     const source = c.sourceMaterial;
     if (source?.sourceLabel) {
-      const sourceFileid = resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
+      const sourceFileid = deferredCard(SUBJECT_ID, c)
+        ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+        : resolveCompanionFileid('spanish', c.year, c.level, source.sourceLabel);
       delete source.sourceLabel;
       if (!sourceFileid) { dropped.push(`${c.id}: source document "${source.label}" is not in the Paper Trail index`); continue; }
       source.sourceFileid = sourceFileid;
@@ -1518,7 +1541,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
-    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    const fileid = deferredCard(SUBJECT_ID, c)
+      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
     seenId.add(c.id);
@@ -1526,7 +1551,7 @@ for (const c of cards) {
     ...base, kind: "rubric",
     year: ${c.year}, level: ${q(c.level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredCard(SUBJECT_ID, c) ? ', deferred examination' : ''}, ${pages} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
@@ -1642,10 +1667,12 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = resolveCompanionFileid(
-      corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
-      c.level ?? 'higher', source.sourceLabel,
-      deferredCard(SUBJECT_ID, c) ? 'deferred' : 'main');
+    const fileid = deferredCard(SUBJECT_ID, c) && SUBJECT_ID === 'spanish'
+      ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+      : resolveCompanionFileid(
+        corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
+        c.level ?? 'higher', source.sourceLabel,
+        deferredCard(SUBJECT_ID, c) ? 'deferred' : 'main');
     delete source.sourceLabel;
     if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
     source.sourceFileid = fileid;
@@ -1870,7 +1897,9 @@ for (const c of cards) {
    * section-less resolver returns for a language. No other deck has an L. */
   /* A DCG deferred sitting is two booklets, as June's is: its card opens the
    * one that prints its section, never simply the entry's first. */
-  const fileid = deferredEntry
+  const fileid = deferredEntry && SUBJECT_ID === 'spanish'
+    ? deferredDoc(SUBJECT_ID, c, c.section === 'L' ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry
     ? (SUBJECT_ID === 'dcg'
       ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)

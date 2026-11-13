@@ -135,6 +135,33 @@
   }
  },
  {
+  "year": 2022,
+  "sitting": "deferred",
+  "paperFileids": [
+   "LC012ALPA00EV-deferred.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Spanish listening",
+   "title": "2022 Spanish · Listening Comprehension Test (deferred sitting)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+   "secFileid": "LC012ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC012ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording of the deferred sitting · Questions 1–7, Higher Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-12",
+   "discoveredAt": "https://www.examinations.ie/archive/deferredexams/2022/ (the June recording's file id under the deferred archive)",
+   "sha256": "c22409c146ccfe7d9ff886f7521f3b0fce42e52ead8aeeb442eace9a4bb1c8a1",
+   "bytes": 77072170,
+   "durationSeconds": 2408.505312,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
   "year": 2021,
   "paperFileids": [
    "LC012ALPA00EV.pdf",

@@ -99,7 +99,9 @@ export function taskGroupsFault(card) {
       if (group.tariffModel || group.responseCounts) return 'fixed task cannot contain a shared response tariff';
       const worth = row => row.group
         ? (row.group.optionMarks
-          ? [...row.group.optionMarks].sort((a, b) => b - a).slice(0, row.group.claimMax).reduce((sum, mark) => sum + mark, 0)
+          // its answers, never an answer's part beside it (optionOf; optionGroupMarks)
+          ? row.group.optionMarks.filter((_mark, i) => row.group.optionOf?.[i] === null || row.group.optionOf?.[i] === undefined)
+            .sort((a, b) => b - a).slice(0, row.group.claimMax).reduce((sum, mark) => sum + mark, 0)
           : row.group.perOptionSteps?.reduce((sum, mark) => sum + mark, 0) ?? row.group.claimMax * row.group.perOption)
         : row.marks;
       if (rows.some(row => !Number.isFinite(worth(row)))

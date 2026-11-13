@@ -4361,6 +4361,8 @@ def census_subject(subject):
         papers.extend(census_economics_deferred())
     if subject == 'dcg':
         papers.extend(census_dcg_deferred())
+    if subject == 'spanish':
+        papers.extend(census_spanish_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4487,6 +4489,44 @@ def census_economics_deferred():
             'year': year, 'level': level, 'paper': 'Deferred',
             'leafCount': len(leaves),
             'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Spanish sittings in the archive: 2022 Higher only
+# (deferredexams/2022 holds LC012ALP000EV, its loose sheet LC012ALP015EV and the
+# listening booklet LC012ALPA00EV, deferredmarkingschemes/2022 LC012ALP000EV; no
+# Ordinary, no Irish version, nothing for 2023-2025).
+ES_DEFERRED_PAPERS = ((2022, 'hl'),)
+
+
+def census_spanish_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Spanish's deferred sitting (ES_DEFERRED_PAPERS) is a paper of its own, keyed
+    'Deferred' as Economics keys its own (census_economics_deferred): the
+    written paper and the listening booklet read by es_paper.EsPaper(..., sitting=
+    'deferred') exactly as census_es reads June's, so a deferred ask never lands
+    on a June leaf with the same address. The checksum is not run on it.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from es_paper import EsPaper                              # noqa: E402
+    from es_scheme import EsScheme                            # noqa: E402
+    papers = []
+    for year, level in ES_DEFERRED_PAPERS:
+        P = EsPaper(year, level, 'spanish', 'deferred')
+        S = EsScheme(year, level, 'spanish', 'deferred')
+        texts = {k: v[0] for k, v in P.leaves().items()}
+        for q, letter, text, _page in P.aural_asks():
+            texts[('L', q, letter, None)] = text
+        leaves = list(leaves_of(set(texts)))
+        flags = es_flags(P, S)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'spanish'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })

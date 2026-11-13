@@ -182,7 +182,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Luisa’s uniform.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["White blouse (shirt)","green jersey","grey skirt","White","blouse (shirt)","green","jersey","grey","skirt"],"optionMarks":[2,2,2,1,1,1,1,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":2,"perOption":2,"options":["White blouse (shirt)","green jersey","grey skirt","White","blouse (shirt)","green","jersey","grey","skirt"],"optionMarks":[2,2,2,1,1,1,1,1,1],"optionOf":[null,null,null,0,0,1,1,2,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -540,7 +540,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where was the survey carried out?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["Granada","city"],"optionMarks":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":1,"perOption":3,"options":["Granada","city"],"optionMarks":[3,1],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -823,7 +823,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué incapacidades tiene Gennet Corcuera?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Es sordociega / no puede ni ver ni oír", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Es sordociega / no puede ni ver ni oír", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -847,7 +847,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hará Gennet dentro de tres meses?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "estuduará en una universidad española", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "estuduará en una universidad española", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -871,7 +871,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde la abandonaron sus padres?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en un orfanato (de monjas)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "en un orfanato (de monjas)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -895,7 +895,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hizo Carmen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "la adoptó y la llevó a Madrid", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,3,5] },
+    { id: "r-1", kind: "criterion", verbatim: "la adoptó y la llevó a Madrid", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -919,7 +919,7 @@ export const CARDS: SecCard[] = [
     questionText: "En la lengua de signos, ¿cuántos movimientos de la mano tienen las palabras “buenos días”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diez movimientos de la mano", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "diez movimientos de la mano", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -943,7 +943,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo se comunicaron los profesores y los alumnos con Gennet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aprendieron la lengua de signos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "aprendieron la lengua de signos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -967,7 +967,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo sabe Gennet si alguien entra en el cuarto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el aire se agita", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el aire se agita", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -991,7 +991,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo sabemos que Gennet era buena estudiante?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Es muy lista./ Hizo los mismos exámenes que sus compañeros / Sacó muy buenas notas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Es muy lista./ Hizo los mismos exámenes que sus compañeros / Sacó muy buenas notas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1015,7 +1015,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué dice Gennet del Internet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Es la puerta ideal al mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Es la puerta ideal al mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1039,7 +1039,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué le gustaría estudiar la Educación Especial?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(su sueño es dedicarse a) ayudar a los niños sordociegos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(su sueño es dedicarse a) ayudar a los niños sordociegos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2598,7 +2598,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿En septiembre, qué harán Alberto y Ana?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Estudiarán en casa, (enseñados por sus padres)/No van a ir a ningún centro educativo.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Estudiarán en casa, (enseñados por sus padres)/No van a ir a ningún centro educativo.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2622,7 +2622,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Según la Señora Font, cuál es el problema más grande que tienen los institutos?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "El acoso escolar.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "El acoso escolar.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2646,7 +2646,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué no optan unos padres por el sistema de educación tradicional?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Falta (por completo) la educación a nivel emocional, espiritual y social.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Falta (por completo) la educación a nivel emocional, espiritual y social.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2670,7 +2670,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál es una de las ventajas de estudiar en casa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":1,"perOption":5,"options":["No hay estrés","no hay horario fijo (que marque el ritmo de estudio)."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":1,"perOption":5,"options":["No hay estrés","no hay horario fijo (que marque el ritmo de estudio)."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2694,7 +2694,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuales son las asignaturas favoritas de:\n(i) Ana?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "La contabilidad.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "La contabilidad.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2718,7 +2718,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuales son las asignaturas favoritas de:\n(ii) Alberto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Las ciencias.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Las ciencias.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2742,7 +2742,7 @@ export const CARDS: SecCard[] = [
     questionText: "Las universidades aceptan más a los homeschoolers. ¿Por qué?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Son más independientes que los alumnos en los institutos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Son más independientes que los alumnos en los institutos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2766,7 +2766,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo sabemos que Ana y Alberto son buenos estudiantes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sacan muy buenas notas en los exámenes estatales./Les gusta estudiar/ (cuando tienen tiempo libre) estudian por sí mismos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Sacan muy buenas notas en los exámenes estatales./Les gusta estudiar/ (cuando tienen tiempo libre) estudian por sí mismos.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2790,7 +2790,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué opinan los expertos sobre el nivel de enseñanza que imparten los señores Font?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No es tan bueno como el nivel que tienen los profesores en el colegio.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "No es tan bueno como el nivel que tienen los profesores en el colegio.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2814,7 +2814,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué valores sociales aprenden los alumnos en un colegio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "La tolerancia", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "La tolerancia", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     { id: "r-2", kind: "point", verbatim: "el respeto por los demás.", marks: 2 },
     ],
     sourceMaterial: {
@@ -4345,7 +4345,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Además de la música, qué otros pasatiempos tiene Justin Bieber? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "El hockey/el fútbol/el ajedrez", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,3,5] },
+    { id: "r-1", kind: "criterion", verbatim: "El hockey/el fútbol/el ajedrez", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4369,7 +4369,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué cantante le influyó? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Michael Jackson", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Michael Jackson", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4393,7 +4393,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hizo su madre para ayudarle? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Decidió) publicar un video de él en Youtube", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(Decidió) publicar un video de él en Youtube", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4417,7 +4417,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De qué trata su primera canción? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(De) amor", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(De) amor", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4441,7 +4441,7 @@ export const CARDS: SecCard[] = [
     questionText: "Según Barak Obama, ¿a qué se parece la voz de Justin? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Un ángel", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Un ángel", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4465,7 +4465,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué no están contentos los fans con Justin? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(no les gusta la idea de) que Justin se haya enamorado/ Justin tiene una novia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(no les gusta la idea de) que Justin se haya enamorado/ Justin tiene una novia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4489,7 +4489,7 @@ export const CARDS: SecCard[] = [
     questionText: "Durante el verano, ¿adónde van de vacaciones Justin y Selena? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Monterrey en México", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Monterrey en México", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4513,7 +4513,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo ha cambiado Justin? (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Ha perdido su acento canadiense y tiene tatuajes en el cuerpo", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,5,10] },
+    { id: "r-1", kind: "criterion", verbatim: "Ha perdido su acento canadiense y tiene tatuajes en el cuerpo", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4537,7 +4537,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Quiénes comprenden su música? (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Los jóvenes y la gente adulta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,3,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Los jóvenes y la gente adulta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6035,7 +6035,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Adónde iba el Titanic cuando chocó con el iceberg?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nueva York", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Nueva York", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6059,7 +6059,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos españoles sobrevivieron?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Siete", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Siete", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6083,7 +6083,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Quién era Víctor Peñasco?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "El marido de María Josefa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "El marido de María Josefa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6107,7 +6107,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué se sentía segura María Josefa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Porque viajaba en el mejor barco del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Porque viajaba en el mejor barco del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6131,7 +6131,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Quiénes se embarcaron en Queenstown?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Los pasajeros irlandeses", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Los pasajeros irlandeses", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6155,7 +6155,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo cambió el tiempo durante el viaje?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Se puso excepcionalmente frío", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Se puso excepcionalmente frío", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6179,7 +6179,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué abandonaron la cabina María Josefa y Víctor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Porque el agua entraba por debajo de la puerta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Porque el agua entraba por debajo de la puerta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6203,7 +6203,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué descubrieron cuando salieron a la cubierta del Titanic?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Descubrieron) que todos los botes estaban llenos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(Descubrieron) que todos los botes estaban llenos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6227,7 +6227,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo salvó el hombre desconocido la vida de María Josefa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Invitó a María Josefa que tomara su puesto en el bote", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Invitó a María Josefa que tomara su puesto en el bote", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6251,7 +6251,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué se sintió infeliz María Josefa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Porque sabía que Víctor y el hombre desconocido iban a morirse (en las aguas glaciales del mar).", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Porque sabía que Víctor y el hombre desconocido iban a morirse (en las aguas glaciales del mar).", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7793,7 +7793,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué escribe Julia en su blog? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Nos cuenta) sus experiencias/sus opiniones sobre la crisis económica (en España).", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(Nos cuenta) sus experiencias/sus opiniones sobre la crisis económica (en España).", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7817,7 +7817,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos jóvenes no tienen trabajo en España? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Más de un millón.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Más de un millón.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7841,7 +7841,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué planes tiene Julia para el verano? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Le encantaría pasar los meses de julio y agosto en Marbella.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Le encantaría pasar los meses de julio y agosto en Marbella.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7865,7 +7865,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué no ha estudiado mucho? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No le gusta el colegio/No le importa no sacar buenas notas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "No le gusta el colegio/No le importa no sacar buenas notas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7889,7 +7889,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hacen Julia y sus amigas los sábados? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Suelen ir a bailar y de copas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Suelen ir a bailar y de copas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7913,7 +7913,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué trabajo hace Julia en su tiempo libre? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ayuda a su tía en su peluquería/Trabaja como peluquera.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Ayuda a su tía en su peluquería/Trabaja como peluquera.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7937,7 +7937,7 @@ export const CARDS: SecCard[] = [
     questionText: "Menciona dos de las actividades de Julia en la peluquería. (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":2,"perOption":5,"options":["Corta el pelo","Pone tintes","Limpia los peines","Contesta el teléfono","Habla con la clientela"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":2,"perOption":5,"options":["Corta el pelo","Pone tintes","Limpia los peines","Contesta el teléfono","Habla con la clientela"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7961,7 +7961,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué dice Julia que la profesión de peluquera es un arte? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Ofrecen un servicio creativo y estilos nuevos a sus clientas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,3,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Ofrecen un servicio creativo y estilos nuevos a sus clientas.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7985,7 +7985,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es importante la peluquería de Elena en la vida de sus clientas? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "La luz, la música, la charla les ayudan a relajarse/ Tiene un ambiente especial/ las señoras pueden escapar del estrés diario.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "La luz, la música, la charla les ayudan a relajarse/ Tiene un ambiente especial/ las señoras pueden escapar del estrés diario.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers.Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9514,7 +9514,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué piensan los estudiantes de los deberes? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "una pérdida de tiempo o un castigo inútil.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "una pérdida de tiempo o un castigo inútil.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9538,7 +9538,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué se quejó un grupo de padres al Ministerio de Educación? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los deberes no les permiten pasar más tiempo con sus hijos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The scheme adds: “(en el hogar familiar)”." },
+    { id: "r-1", kind: "point", verbatim: "los deberes no les permiten pasar más tiempo con sus hijos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The scheme adds: “(en el hogar familiar)”. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9562,7 +9562,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué beneficios tienen los deberes? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la disciplina, el esfuerzo y el aprendizaje independiente", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "la disciplina, el esfuerzo y el aprendizaje independiente", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9586,7 +9586,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál es la opinión de los profesores? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "son esenciales para completar el trabajo realizado en clase.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "son esenciales para completar el trabajo realizado en clase.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9610,7 +9610,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué tipo de ayuda pueden pagar algunos padres? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "profesores particulares", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "profesores particulares", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9634,7 +9634,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿En qué condiciones se puede estudiar mejor? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tener una habitación con suficiente luz y un ambiente tranquilo en casa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Tener una habitación con suficiente luz y un ambiente tranquilo en casa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9658,7 +9658,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué distracciones es importante evitar? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el móvil, la televisión y la radio", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el móvil, la televisión y la radio", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9682,7 +9682,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hacía una madre en un foro de Internet? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "estaba haciendo los deberes de su hija de dieciocho años (buscándole un proyecto completo de geografía.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "estaba haciendo los deberes de su hija de dieciocho años (buscándole un proyecto completo de geografía.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9706,7 +9706,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué piensa Andrea que este tipo de ayuda es negativa? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "el estudiante se acostumbra a depender de otros para resolver sus dificultades y no desarrolla su capacidad de iniciativa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "el estudiante se acostumbra a depender de otros para resolver sus dificultades y no desarrolla su capacidad de iniciativa", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9730,7 +9730,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es recomendable el uso de un despertador? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "para limitar el tiempo que los estudiantes pasan haciendo los deberes", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "para limitar el tiempo que los estudiantes pasan haciendo los deberes", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for fullmarks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11214,7 +11214,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué inspiró la película ‘Lo imposible’? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(la historia de) María Belón/el tsunami/ Su historia (inspiró la película)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(la historia de) María Belón/el tsunami/ Su historia (inspiró la película)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11238,7 +11238,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál era la profesión de María Belón antes del tsunami? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "médica", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "médica", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11262,7 +11262,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué estaban en Asia? (2 or 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "de vacaciones navideñas/ pasar las Navidades en Tailandia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "de vacaciones navideñas/ pasar las Navidades en Tailandia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11286,7 +11286,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hacía María justo antes de la llegada del tsunami? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "leía un libro / leía La Sombra del Viento", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "leía un libro / leía La Sombra del Viento", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11310,7 +11310,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde estaba su marido en ese momento? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(estaba / se bañaba / jugaba) en la piscina", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(estaba / se bañaba / jugaba) en la piscina", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11334,7 +11334,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿A qué hora llegó el tsunami? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(llegó) a las diez menos cuarto (de la mañana)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(llegó) a las diez menos cuarto (de la mañana)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11358,7 +11358,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué acababa de aprender el pequeño de la familia? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nadar", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "nadar", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11382,7 +11382,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles fueron las heridas que sufrió María? (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(i) (sufrió serios) daños en los órganos internos (ii) (y en) la pierna derecha", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,5,10], parts: [{"id":"p1","verbatim":"(i) (sufrió serios) daños en los órganos internos","marks":5,"permittedMarks":[0,5]},{"id":"p2","verbatim":"(ii) (y en) la pierna derecha","marks":5,"permittedMarks":[0,5]}] },
+    { id: "r-1", kind: "criterion", verbatim: "(i) (sufrió serios) daños en los órganos internos (ii) (y en) la pierna derecha", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,5,10], parts: [{"id":"p1","verbatim":"(i) (sufrió serios) daños en los órganos internos","marks":5,"permittedMarks":[0,5]},{"id":"p2","verbatim":"(ii) (y en) la pierna derecha","marks":5,"permittedMarks":[0,5]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11406,7 +11406,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿A qué se dedica María ahora? (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(se dedica a trabajar como) abogada/da charlas motivadoras (compartiendo sus experiencias extraordinarias)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(se dedica a trabajar como) abogada/da charlas motivadoras (compartiendo sus experiencias extraordinarias)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12868,7 +12868,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos años lleva Carlos bailando? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tres décadas / treinta años", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "tres décadas / treinta años", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12892,7 +12892,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué sabemos de su familia? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Carlos y sus diez hermanos crecieron en la pobreza de La Habana", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Carlos y sus diez hermanos crecieron en la pobreza de La Habana", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12916,7 +12916,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué introdujo su padre a Carlos a la danza? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pensó que clases de ballet serían buenas para su disciplina", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "pensó que clases de ballet serían buenas para su disciplina", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12940,7 +12940,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son las dos cosas que le ayudaron a destruir las barreras de raza y clase social? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "su dedicación y disciplina a la danza", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "su dedicación y disciplina a la danza", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12964,7 +12964,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál ha sido el aspecto más difícil de su vida? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la soledad/echaba de menos a su familia (en Cuba)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "la soledad/echaba de menos a su familia (en Cuba)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12988,7 +12988,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde viven Carlos y su familia ahora? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Londres", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Londres", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13012,7 +13012,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué recibió un honor en el palacio de Buckingham? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "por su contribución a la danza", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "por su contribución a la danza", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13036,7 +13036,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los temas más importantes de su libro Pata de puerco? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":2,"perOption":5,"options":["la revolución","la independencia","la dictadura"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":2,"perOption":5,"options":["la revolución","la independencia","la dictadura"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13060,7 +13060,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué planes tiene Carlos para el futuro? (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":1,"perOption":5,"options":["Quiere volver a vivir en Cuba","enseñar a una nueva generación de bailarines","pasar más tiempo con su familia","quizás escribir otra novela."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":1,"perOption":5,"options":["Quiere volver a vivir en Cuba","enseñar a una nueva generación de bailarines","pasar más tiempo con su familia","quizás escribir otra novela."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14587,7 +14587,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hacía Eva cuando era pequeña? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Leía libros y veía películas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Leía libros y veía películas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14611,7 +14611,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde se conocieron las dos mujeres? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "En la universidad", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "En la universidad", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14635,7 +14635,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué decidieron hacer el viaje? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Para lograr un cambio de vida", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Para lograr un cambio de vida", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     { id: "r-2", kind: "point", verbatim: "salir de su zona de confort", marks: 5 },
     ],
     sourceMaterial: {
@@ -14660,7 +14660,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué tipo de transporte usaron Ana y Eva? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Un Citroen 2CV/un coche (de 23 años)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Un Citroen 2CV/un coche (de 23 años)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14684,7 +14684,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Adónde viajaron? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Viajaron) al sur, este y centro de Europa / al Oriente Medio", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(Viajaron) al sur, este y centro de Europa / al Oriente Medio", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14708,7 +14708,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué no visitaron sitios turísticos? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Querían ver aspectos más auténticos/Querían hacer un tipo de viaje distinto a lo normal.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Querían ver aspectos más auténticos/Querían hacer un tipo de viaje distinto a lo normal.", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14732,7 +14732,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos países recorrieron? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Veintiocho", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Veintiocho", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14756,7 +14756,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál fue el aspecto más negativo del viaje para Ana? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Las colas y los retrasos (en las fronteras de los países)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish.", permittedMarks: [0,2,3,5], parts: [{"id":"p1","verbatim":"Las colas","marks":3,"permittedMarks":[0,3]},{"id":"p2","verbatim":"y los retrasos (en las fronteras de los países)","marks":2,"permittedMarks":[0,2]}] },
+    { id: "r-1", kind: "criterion", verbatim: "Las colas y los retrasos (en las fronteras de los países)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", permittedMarks: [0,2,3,5], parts: [{"id":"p1","verbatim":"Las colas","marks":3,"permittedMarks":[0,3]},{"id":"p2","verbatim":"y los retrasos (en las fronteras de los países)","marks":2,"permittedMarks":[0,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14780,7 +14780,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué planes tiene Ana ahora? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Piensa escribir un libro", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Piensa escribir un libro", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16309,7 +16309,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde puedes trabajar como representante de vacaciones? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":3,"perOption":2,"options":["en la playa","un hotel","un camping","un crucero"],"perOptionSteps":[2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":3,"perOption":2,"options":["en la playa","un hotel","un camping","un crucero"],"perOptionSteps":[2,2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16334,7 +16334,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De dónde es Natalia? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Es mexicana/ de Méjico", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Es mexicana/ de Méjico", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16359,7 +16359,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es esencial para Natalia hablar lenguas extranjeras? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(porque) la comunicación es clave en su trabajo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "(porque) la comunicación es clave en su trabajo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16384,7 +16384,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué le gusta a Natalia de su trabajo? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":2,"perOption":5,"options":["es divertido","es gratificante","(le encanta) pasar muchas horas al aire libre","conocer a gente de otras nacionalidades"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":2,"perOption":5,"options":["es divertido","es gratificante","(le encanta) pasar muchas horas al aire libre","conocer a gente de otras nacionalidades"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16409,7 +16409,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál es (i) el destino preferido de Natalia? y (ii) por qué le gustó tanto? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dubai", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "Dubai", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     { id: "r-2", kind: "point", verbatim: "es una maravilla/ tiene una cultura diferente", marks: 2 },
     ],
     sourceMaterial: {
@@ -16435,7 +16435,7 @@ export const CARDS: SecCard[] = [
     questionText: "Menciona dos características negativas del trabajo de representante de vacaciones. (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":2,"perOption":3,"options":["las horas largas","(sólo) un día libre por semana","un sueldo (muy) bajo","el calor"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":2,"perOption":3,"options":["las horas largas","(sólo) un día libre por semana","un sueldo (muy) bajo","el calor"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16460,7 +16460,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De qué se quejaban los clientes de Patricia? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "la mala calidad del hotel (y) la falta de aire acondicionado", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish." },
+    { id: "r-1", kind: "point", verbatim: "la mala calidad del hotel (y) la falta de aire acondicionado", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16485,7 +16485,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hay muchos aspectos positivos del trabajo. Menciona dos. (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish.", group: {"claimMax":2,"perOption":5,"options":["ganan confianza en sí mismos","aprenden a trabajar en equipo","hacen (muchos) amigos"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words. A forward slash indicates a choice of possible answers. Award 5 or 0 marks unless otherwise stated.”", group: {"claimMax":2,"perOption":5,"options":["ganan confianza en sí mismos","aprenden a trabajar en equipo","hacen (muchos) amigos"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17652,7 +17652,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one place where you can give English classes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies","schools"],"optionMarks":[4,4,4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies","schools"],"optionMarks":[4,4,4,2],"optionOf":[null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18003,7 +18003,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué van cientos de personas al Himalaya cada año? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Para llegar a la cumbre del Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Para llegar a la cumbre del Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18028,7 +18028,7 @@ export const CARDS: SecCard[] = [
     questionText: "Alberto ganó un récord. ¿De qué? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(de ser el) alpinista más joven en la cima del Everest, sin oxígeno artificial", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(de ser el) alpinista más joven en la cima del Everest, sin oxígeno artificial", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18053,7 +18053,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántas mujeres españolas han escalado el monte Everest? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tres", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Tres", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18078,7 +18078,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es más seguro subir la montaña en mayo? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(porque normalmente) las temperaturas son más cálidas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(porque normalmente) las temperaturas son más cálidas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     { id: "r-2", kind: "point", verbatim: "los vientos más ligeros", marks: 5 },
     ],
     sourceMaterial: {
@@ -18104,7 +18104,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué son los ‘ochomiles’? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(son) las catorce montañas más altas del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(son) las catorce montañas más altas del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18129,7 +18129,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿A qué grupos da charlas Edurne Pasabán? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(Organizaciones) deportivas, culturales y educativas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 2m”.", permittedMarks: [0,2,4,5] },
+    { id: "r-1", kind: "criterion", verbatim: "(Organizaciones) deportivas, culturales y educativas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 2m”. For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", permittedMarks: [0,2,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18154,7 +18154,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hacen unos ochocientos alpinistas cada año? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Intentan escalar la montaña de Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Intentan escalar la montaña de Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18179,7 +18179,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hay problemas que existen para los alpinistas. Menciona dos. (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":5,"options":["la cantidad de personas (esperando subir la montaña)","(unas) colas muy largas","la falta de experiencia (de muchas personas)","(las toneladas de) basura"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":2,"perOption":5,"options":["la cantidad de personas (esperando subir la montaña)","(unas) colas muy largas","la falta de experiencia (de muchas personas)","(las toneladas de) basura"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18204,7 +18204,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two qualities of a good chorizo.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["(quality of the) meat","colour","fat (content)","aroma/smell","texture","flavour"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (a) and (b), the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["(quality of the) meat","colour","fat (content)","aroma/smell","texture","flavour"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18228,7 +18228,7 @@ export const CARDS: SecCard[] = [
     questionText: "What two local food products were on sale during the event?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cheese", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "cheese", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (a) and (b), the first correct answer = 3m”." },
     { id: "r-2", kind: "point", verbatim: "honey", marks: 2 },
     ],
     sourceMaterial: {
@@ -18253,7 +18253,7 @@ export const CARDS: SecCard[] = [
     questionText: "What took place on Saturday? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There were music groups", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "There were music groups", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (a) and (b), the first correct answer = 3m”." },
     { id: "r-2", kind: "point", verbatim: "(a group of) women performing a traditional dance/jota", marks: 5 },
     ],
     sourceMaterial: {
@@ -18278,7 +18278,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is it recommended to limit the amount of red meat in the Spanish diet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To lead a healthy life", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "To lead a healthy life", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (a) and (b), the first correct answer = 3m”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18374,7 +18374,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where were the princesses Leonor and Sofía when they spoke to the press?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In their summer home in Mallorca", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "In their summer home in Mallorca", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (b) – (e), the first correct answer = 3m”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18398,7 +18398,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from sport, what else did the girls do in the summer camp? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "they practised their English", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "they practised their English", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (b) – (e), the first correct answer = 3m”." },
     { id: "r-2", kind: "point", verbatim: "they met children of other nationalities/of similar ages", marks: 2 },
     ],
     sourceMaterial: {
@@ -18423,7 +18423,7 @@ export const CARDS: SecCard[] = [
     questionText: "What two sports did Leonor particularly like?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "water-skiing", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "water-skiing", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (b) – (e), the first correct answer = 3m”." },
     { id: "r-2", kind: "point", verbatim: "sailing", marks: 2 },
     ],
     sourceMaterial: {
@@ -18448,7 +18448,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do you need to play the game ‘Ga-Ga’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a ball", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "a ball", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (b) – (e), the first correct answer = 3m”." },
     { id: "r-2", kind: "point", verbatim: "a minimum of 5 people", marks: 2 },
     ],
     sourceMaterial: {
@@ -18473,7 +18473,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where are the princesses spending the rest of the summer holidays? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["In Marivent Palace","outskirts of Palma, Mallorca","with their grandmother"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “Questions (b) – (e), the first correct answer = 3m”.", group: {"claimMax":2,"perOption":3,"options":["In Marivent Palace","outskirts of Palma, Mallorca","with their grandmother"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19666,7 +19666,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué ocurrió en el año 2018? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "El Ayuntamiento de Valencia nombró el día 20 de septiembre como el Día Mundial de la Paella", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "El Ayuntamiento de Valencia nombró el día 20 de septiembre como el Día Mundial de la Paella", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19691,7 +19691,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuál es el objetivo del día? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Compartir la receta tradicional valenciana de la paella con el resto del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Compartir la receta tradicional valenciana de la paella con el resto del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19716,7 +19716,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo se comía tradicionalmente la paella? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Con una cuchara de madera y directamente de la sartén", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Con una cuchara de madera y directamente de la sartén", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19741,7 +19741,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué ha revelado un estudio reciente sobre la paella? Menciona dos cosas. (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "es el cuarto plato más importante del planeta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "es el cuarto plato más importante del planeta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     { id: "r-2", kind: "point", verbatim: "recibe 8 millones de búsquedas anuales en Internet", marks: 5 },
     ],
     sourceMaterial: {
@@ -19767,7 +19767,7 @@ export const CARDS: SecCard[] = [
     questionText: "Menciona tres sitios donde se servirá la paella el 20 de septiembre. (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":3,"perOption":1,"options":["restaurantes","colegios","hospitales","comedores de empresas"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":3,"perOption":1,"options":["restaurantes","colegios","hospitales","comedores de empresas"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19792,7 +19792,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hay en el menú especial? Menciona tres cosas. (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. primer plato 2. paella 3. postre", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "1. primer plato 2. paella 3. postre", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19817,7 +19817,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué harán los cocineros de ocho países? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Competirán en un concurso internacional de paella con su propia receta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Competirán en un concurso internacional de paella con su propia receta", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19842,7 +19842,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué está incluido en el precio del curso de paella? Menciona dos cosas. (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["ingredientes frescos","clases con un maestro de paella","un gorro de cocina","delantal","un diploma (de la escuela de paella)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":2,"perOption":3,"options":["ingredientes frescos","clases con un maestro de paella","un gorro de cocina","delantal","un diploma (de la escuela de paella)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19872,7 +19872,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19896,7 +19896,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19920,7 +19920,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19944,7 +19944,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -19968,7 +19968,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Read the item on wild boar and answer the questions in English — answer in English",
+          "title": "El JABALÍ: UN CERDO SALVAJE — answer in English",
           "pages": [
                 4
           ],
@@ -21366,7 +21366,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué ofrece el Ayuntamiento de Griegos? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Ofrece) trabajo y una casa gratis a las familias que quieren vivir en su pueblo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(Ofrece) trabajo y una casa gratis a las familias que quieren vivir en su pueblo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21391,7 +21391,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es famoso Griegos? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Por ser el segundo pueblo más alto de España", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "Por ser el segundo pueblo más alto de España", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21416,7 +21416,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hizo el alcalde? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Realizó) un vídeo promocional para invitar a familias a irse a vivir allí", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(Realizó) un vídeo promocional para invitar a familias a irse a vivir allí", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21441,7 +21441,7 @@ export const CARDS: SecCard[] = [
     questionText: "Menciona dos cosas que hicieron los niños de la escuela. (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["Aparecieron en el vídeo promocional","Dibujaron pósteres (para animar a las familias)","Colgaron los pósteres por todo el pueblo"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":2,"perOption":3,"options":["Aparecieron en el vídeo promocional","Dibujaron pósteres (para animar a las familias)","Colgaron los pósteres por todo el pueblo"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21466,7 +21466,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son las ventajas de vivir en un pueblo pequeño? Menciona tres. (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(hay) menos ruido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(hay) menos ruido", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     { id: "r-2", kind: "point", verbatim: "(menos) tráfico", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "el coste de vida es más bajo", marks: 3 },
     ],
@@ -21493,7 +21493,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué es fácil trabajar a distancia en Griegos? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Porque el pueblo) cuenta con excelente acceso a Internet", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(Porque el pueblo) cuenta con excelente acceso a Internet", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21518,7 +21518,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De qué informaron las autoridades en Facebook? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Que) ya habían elegido a dos familias como nuevos habitantes (del pueblo)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-1", kind: "point", verbatim: "(Que) ya habían elegido a dos familias como nuevos habitantes (del pueblo)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21543,7 +21543,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los trabajadores que se buscan? Menciona tres. (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":3,"perOption":2,"options":["electricistas","fontaneros","mecánicos","pastores"],"perOptionSteps":[2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":3,"perOption":2,"options":["electricistas","fontaneros","mecánicos","pastores"],"perOptionSteps":[2,2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -22478,7 +22478,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of transport is mentioned?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["Bicycle","aeroplane"],"optionMarks":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["Bicycle","aeroplane"],"optionMarks":[4,2],"optionOf":[null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23043,7 +23043,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo es una experiencia en globo aerostático? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Original, diferente, inolvidable", marks: 9, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Original, diferente, inolvidable", marks: 9, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23068,7 +23068,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué un viaje en globo quedará en la memoria? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Porque) se puede ver la naturaleza desde las alturas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Porque) se puede ver la naturaleza desde las alturas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23093,7 +23093,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué se dice sobre la empresa Gloobo.es? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tiene más de treinta años de experiencia (ofreciendo viajes en globo)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Tiene más de treinta años de experiencia (ofreciendo viajes en globo)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23118,7 +23118,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Para quiénes es un viaje ideal? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Amigos, familiares, parejas (o) compañeros de trabajo", marks: 8, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Amigos, familiares, parejas (o) compañeros de trabajo", marks: 8, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23143,7 +23143,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo se describe el parque natural de Doñana? (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["Es la zona natural protegida más importante de Europa","Se pueden ver los árboles de pinos y olivares, además de varias especies de aves y reptiles"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":1,"perOption":5,"options":["Es la zona natural protegida más importante de Europa","Se pueden ver los árboles de pinos y olivares, además de varias especies de aves y reptiles"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23168,7 +23168,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué se dice de los pasajeros que quieren viajar en globo? Menciona dos cosas. (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Deben estar en buena salud y no tener miedo a volar", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Deben estar en buena salud y no tener miedo a volar", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23193,7 +23193,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué está prohibido hacer en el globo? Menciona dos cosas. (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":2,"perOption":4,"options":["Beber alcohol","Tomar drogas","Fumar tabaco"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":2,"perOption":4,"options":["Beber alcohol","Tomar drogas","Fumar tabaco"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23218,7 +23218,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuándo tienen lugar los viajes en globo? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De lunes a viernes pero no en días festivos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "De lunes a viernes pero no en días festivos", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24744,7 +24744,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué merece la pena visitar La Habana? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Porque) hay interesantes museos, monumentos históricos y coloridos murales", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Porque) hay interesantes museos, monumentos históricos y coloridos murales", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24769,7 +24769,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué se dice de Cuba en los años cincuenta? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Era el mayor importador de coches estadounidenses", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Era el mayor importador de coches estadounidenses", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24794,7 +24794,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cómo se recomienda conocer La Habana Vieja? (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pasear a pie por sus calles para admirar los edificios", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Pasear a pie por sus calles para admirar los edificios", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24819,7 +24819,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De qué trata el libro de Hemingway, El viejo y el mar? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Es una bonita historia sobre) un viejo pescador cubano", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Es una bonita historia sobre) un viejo pescador cubano", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24844,7 +24844,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los animales que se pueden ver en Cayo Largo? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":2,"perOption":3,"options":["delfines","estrellas de mar","tortugas marinas (en su hábitat natural)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":2,"perOption":3,"options":["delfines","estrellas de mar","tortugas marinas (en su hábitat natural)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24869,7 +24869,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué tiempo hace entre los meses de junio y octubre? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Hace) un calor sofocante", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Hace) un calor sofocante", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24894,7 +24894,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué se recomienda quedarse en una casa particular? (párrafo 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Porque) le permite al turista conocer la vida cubana con su gente amable y abierta", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Porque) le permite al turista conocer la vida cubana con su gente amable y abierta", marks: 10, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -24919,7 +24919,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los ingredientes del plato “Moros y Cristianos”? (párrafo 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":3,"perOption":3,"options":["arroz","alubias","cebolla","ajo"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Language manipulation is not tested and transcription (relevant and within reasonable limits) is acceptable. There are no penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for irrelevant material or for the omission of material essential to the answer.”", group: {"claimMax":3,"perOption":3,"options":["arroz","alubias","cebolla","ajo"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26423,7 +26423,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Para qué tipo de viajero es ideal Holbox? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Para) los viajeros que buscan un lugar relajado y sereno para disfrutar de la belleza natural", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "(Para) los viajeros que buscan un lugar relajado y sereno para disfrutar de la belleza natural", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26448,7 +26448,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde es posible alojarse en Holbox? (1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Campings, casas rurales, hoteles de lujo", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Campings, casas rurales, hoteles de lujo", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26473,7 +26473,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué son populares los deportes acuáticos allí? (2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Debido a las aguas claras (de la isla), perfectas para practicar natación y buceo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Debido a las aguas claras (de la isla), perfectas para practicar natación y buceo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26498,7 +26498,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los mejores medios de transporte para viajar por la isla? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "En bicicleta, en moto, en carrito de golf", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "En bicicleta, en moto, en carrito de golf", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26523,7 +26523,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué está incluido en la visita diurna a la isla? (3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "El ferry de ida y vuelta, el almuerzo y un paseo por la isla", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "El ferry de ida y vuelta, el almuerzo y un paseo por la isla", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26548,7 +26548,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué se recomienda llevar dinero en efectivo? (4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":1,"perOption":5,"options":["no existen los bancos","a veces la conexión de Internet no funciona correctamente"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”", group: {"claimMax":1,"perOption":5,"options":["no existen los bancos","a veces la conexión de Internet no funciona correctamente"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26573,7 +26573,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos flamencos rojos visitan Holbox? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cuatrocientos mil", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "Cuatrocientos mil", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26598,7 +26598,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuándo es mejor nadar con los tiburones ballena? (5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De junio a septiembre", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "De junio a septiembre", marks: 6, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26623,7 +26623,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué debes meter en la maleta? (6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”", group: {"claimMax":3,"perOption":2,"options":["protector solar","repelente de insectos","sombrero","gafas de sol"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub‐parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”", group: {"claimMax":3,"perOption":2,"options":["protector solar","repelente de insectos","sombrero","gafas de sol"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28134,7 +28134,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde está situada la estación de tren del Fin del Mundo? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a ocho kilómetros del centro de la ciudad de Ushuaia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "a ocho kilómetros del centro de la ciudad de Ushuaia", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28159,7 +28159,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuántos días al año funciona el tren? (párrafo 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "los trescientos sesenta y cinco (días del año)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "los trescientos sesenta y cinco (días del año)", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28184,7 +28184,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué hizo el gobierno argentino en 1902? (párrafo 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "construyó un ferrocarril conectando Ushuaia con Tierra del Fuego", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "construyó un ferrocarril conectando Ushuaia con Tierra del Fuego", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28209,7 +28209,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Cuáles son los materiales de construcción que transportaba el tren? (párrafo 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rocas, arena y leña", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "rocas, arena y leña", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28234,7 +28234,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿De qué pueden disfrutar los pasajeros desde los grandes ventanales del tren? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "las vistas y la belleza del parque natural", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "las vistas y la belleza del parque natural", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28259,7 +28259,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿En qué lenguas están las audioguías? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "español, portugués e inglés", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "español, portugués e inglés", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28284,7 +28284,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Qué reciben los pasajeros en los vagones Premium? (párrafo 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comida, bebida y un regalo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "comida, bebida y un regalo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28309,7 +28309,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Por qué están cerradas la mayoría de zonas de interés en invierno? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "por la nieve", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "por la nieve", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28334,7 +28334,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Dónde se pueden comprar los billetes? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "en la estación o en Internet", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "en la estación o en Internet", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -28359,7 +28359,7 @@ export const CARDS: SecCard[] = [
     questionText: "¿Para quiénes hay descuento? (párrafo 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "para ciudadanos argentinos y jubilados", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”" },
+    { id: "r-1", kind: "point", verbatim: "para ciudadanos argentinos y jubilados", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” For the whole question the scheme prints: “All answers must be in Spanish. Transcription (relevant and within reasonable limits) is acceptable. Language manipulation is not tested. No penalties for spelling inaccuracies. Words in brackets are accepted for full marks but are not essential for correct answer. Marks will be deducted for extra irrelevant words.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -42,7 +42,7 @@ import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
-  bestClaimedMarks,
+  optionGroupMarks,
   MARK_BANK_LEVEL_LABELS,
   MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
@@ -319,9 +319,9 @@ export function marksClaimed(
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
-      // Options priced one by one: the best claimed, each once, at its own price.
+      // Options priced one by one: every answer once, at the best of it claimed.
       const optionMarks = r.group.optionMarks;
-      if (optionMarks) return n + bestClaimedMarks((picks[id] ?? []).map(oi => optionMarks[oi] ?? 0), r.group.claimMax);
+      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, picks[id] ?? []);
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
