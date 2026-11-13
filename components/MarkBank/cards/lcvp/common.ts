@@ -14598,4 +14598,1303 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the complete original source and question in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "recording-studio-business",
+    section: "A", questionRef: "2015 CL Section A Q1",
+    questionText: "What type of business did Sylvia initially want to set up?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "business", kind: "point", verbatim: "She wanted to set up a recording studio.", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a2", topicId: "lcvp-link-modules-1-1", conceptId: "business-suitability",
+    section: "A", questionRef: "2015 CL Section A Q2",
+    questionText: "Why was this type of business suited to Sylvia?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Why was this type of business suited to Sylvia?", marks: 2, contextNote: "Response 1 of 1. Original total 2m (1+1). Keep the why-question and all three model reasons; no prescribed count of reasons or fixed semantic split is added. Complete original guidance: She had studied sound engineering in Pulse College, Galway. | She had worked in a radio station for two and a half years. | She always had an interest in music and music production.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"1m","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a3", topicId: "lcvp-link-modules-1-1", conceptId: "wedding-band-niche-market",
+    section: "A", questionRef: "2015 CL Section A Q3",
+    questionText: "State the niche market identified by Sylvia as a result of her feasibility study. Outline why this market might be successful for Sylvia.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "market", kind: "point", verbatim: "To record professional wedding bands playing live at a wedding.", marks: 1 },
+    { id: "reason", kind: "anyN", verbatim: "State the niche market identified by Sylvia as a result of her feasibility study. Outline why this market might be successful for Sylvia.", marks: 2, contextNote: "One complete compound task: niche market 1m plus reason 2m (0/2). All four reason models remain; no 1-mark partial for the reason.", openList: true, group: {"claimMax":1,"perOption":2,"options":["There are not many bands which have a good professional recording of themselves playing at a wedding.","Sylvia and her friend already have the equipment to record the wedding bands.","Bands would be willing to pay for a good professional recording of themselves.","It saves time and money to record bands at a wedding and remaster the recording in the studio later."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a4", topicId: "lcvp-link-modules-1-1", conceptId: "previous-business-learning",
+    section: "A", questionRef: "2015 CL Section A Q4",
+    questionText: "What has Sylvia learned from her previous experience in running a business?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What has Sylvia learned from her previous experience in running a business?", marks: 4, contextNote: "Original 2 responses at 2 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["She was involved in a minicompany in LCVP/where she learned the importance of good advertising.","She also learned how to control finances/e.g. she will collect a deposit from each band before the recording and the balance will be paid when the recording is completed."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a5", topicId: "lcvp-link-modules-1-1", conceptId: "local-enterprise-office-support",
+    section: "A", questionRef: "2015 CL Section A Q5",
+    questionText: "Explain the types of support the Local Enterprise Office could offer Sylvia.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Explain the type of supports the Local Enterprise Office could offer Sylvia.", marks: 4, contextNote: "Original 2 responses at 2 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["They can provide grants for start-up costs such as equipment/feasibility study.","They have a rural development programme if the business is to be located in a rural area.","The Local Enterprise Office run a ‘Start Your Own Business’ course every Monday night for six months/covers all aspects of setting up a new business/business plan/supports for a new business."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "business-idea-problems",
+    section: "A", questionRef: "2015 CL Section A Q6",
+    questionText: "Outline the potential problems that need to be resolved before Sylvia can proceed with her business idea.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Outline the potential problems that need to be resolved before Sylvia can proceed with her business idea.", marks: 4, contextNote: "Original 2 responses at 2 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["It is a one off service she is providing and a wedding band will only need one recording/use the service once.","She needs to determine how many wedding bands are performing to show she has a target market.","Finances need to be confirmed e.g. how much would a wedding band be willing to pay for the recording.","Needs to improve her business plan to answer specific questions asked relating to the demand/to get support from the Local Enterprise Office."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a7", topicId: "lcvp-link-modules-1-1", conceptId: "business-plan-importance-improvements",
+    section: "A", questionRef: "2015 CL Section A Q7",
+    questionText: "Seán was critical of some aspects of Sylvia’s business plan. Explain the importance of a business plan. Suggest how Sylvia could improve her business plan for the next meeting with Seán.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "importance", kind: "anyN", verbatim: "Explain the importance of a business plan.", marks: 2, contextNote: "Original importance 1@2m (0/2); retain all four models.", openList: true, group: {"claimMax":1,"perOption":2,"options":["A business plan is important to show the viability of the business/highlights problems/weaknesses.","It is an important document to encourage investors.","It is a good guide to managing a business/staffing/resources.","Setting aims/objectives/can be used to check progress."]} },
+    { id: "improvements", kind: "anyN", verbatim: "Suggest how Sylvia could improve her business plan for the next meeting with Seán.", marks: 4, contextNote: "Original improvements 2@2m (0/2); retain all five models. The complete two-part paper question remains one 6-mark task.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sylvia needs to demonstrate that there is a demand for professional live performance and that there is repeat business/write down the names of actual bands/how much they are willing to pay.","She needs to show how income will be earned/their website could sell advertisement space to other wedding services/there is a click per view option on YouTube.","They need to emphasis their profile on Facebook and Twitter.","The product, finance and marketing sections of the plan require more development.","Record the band before the next meeting to show a sample of their work."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-a8", topicId: "lcvp-link-modules-1-1", conceptId: "enterprise-mentoring-benefits",
+    section: "A", questionRef: "2015 CL Section A Q8",
+    questionText: "Explain the benefits of the Mentoring Programme offered by the Local Enterprise Office.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain the benefits of the Mentoring Programme offered by the Local Enterprise Office.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components. The fourth original model includes all six printed business-support areas; they are not discarded or substituted for the full pool. Keep each response distinct and credit it only once. Complete original guidance: The Mentoring Programme offers practical, sound, one to one advice and guidance from an experienced business person/advice/assist on applying for grants. | They can listen/help to identify problems areas which need improvement. | They contribute by giving independent, informed observations/to aid a company in its decision making process. | They can get involved in the following areas: General management Corporate Organisation Finance Business plan Marketing Website planning and design", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2015 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC462CLPO31EV.mp4",
+          "secFileid": "LC462CLPO31EV.mp4",
+          "attribution": "State Examinations Commission — original 2015 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      2
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b1", topicId: "lcvp-link-modules-1-1", conceptId: "business-case-definitions",
+    section: "B", questionRef: "2015 CL Section B Q1",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Based on your reading of this case study explain three of the following terms: • Mission Statement • Stakeholders • Equality of opportunity • Entrepreneur • CV",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Based on your reading of this case study explain three of the following terms: • Mission Statement • Stakeholders • Equality of opportunity • Entrepreneur • CV", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components. Explain THREE of the FIVE printed terms. All five full definitions remain visible in one task. Keep each response distinct and credit it only once. Complete original guidance: A Mission Statement is a offical document that sets out the goals, purpose, values, beliefs and work of a company or organisation. | Stakeholders – this is a person, group or organisation (customers, employees, local community, interests groups, suppliers, investors, government, entrepeneurs)/that has an interest or concern in an organisation/it is anyone who can affect or is affected by an organisation, strategy or project. | Equality of opportunity means that all applicants for new jobs or promotion opportunities are treated fairly/equally with no discrimination (race, religion or example of discrimination). | Entrepreneur – a person who uses their initiative/comes up with a business opportunity/idea, takes the risk and starts a new business with a view to making a profit. | CV – Curriculum Vitae, a document used to apply for a job/used when seeking employment/showing the personal details, qualifications and employment experience of an individual.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      9
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "corporate-social-responsibility-definition",
+    section: "B", questionRef: "2015 CL Section B Q2(i)",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Explain the term ‘Corporate Social Responsibility’ (CSR).",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Explain the term ‘Corporate Social Responsibility’.", marks: 4, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2@2m (0/2); no 1-mark intermediate or fixed descriptor pairing. Keep each response distinct and credit it only once. Complete original guidance: Corporate Social Responsibility is a business practice which involves participation in initiatives/that benefit society/local community.", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b2ii", topicId: "lcvp-link-modules-1-1", conceptId: "csr-policy-alternatives",
+    section: "B", questionRef: "2015 CL Section B Q2(ii)",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Outline a corporate social responsibility policy implemented by Robert and Maria in Recruit Me Ltd.",
+    tariffModel: {"kind":"questionTotal","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "careers-policy", kind: "point", verbatim: "Robert and Maria have set up a free Careers Programme 2m (0/2) includes developing a professional profile/preparing a CV/practising successful interview techniques/they also provide employment/job matching supports. 2 @ 1m", marks: null, contextNote: "Numeric scoring held. One complete 4-mark policy task. The first route prints 2m (0/2) for the Careers Programme plus 2@1m for details. The complete OR alternative for start-up enterprises has no printed internal allocation. The parent 12 marks, with 4 for (i) and 4 for (iii), binds this whole total. Keep both alternatives and the literal first-route tariffs; confidence review only pending authoritative clarification. Do not transfer the split to the second alternative or offer only the priced route." },
+    { id: "startup-policy", kind: "point", verbatim: "They offer support to new start-up enterprises as follows: fully serviced desks for a nominal rent/access to printing, broadband & communications facilities/support when applying for grants/help with legal and tax issues.", marks: null, contextNote: "or — Complete second policy alternative. No internal tariff is printed for this route; retain its full text in this whole-task confidence review." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b2iii", topicId: "lcvp-link-modules-1-1", conceptId: "csr-strategy-areas",
+    section: "B", questionRef: "2015 CL Section B Q2(iii)",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Outline the areas that Recruit Me Ltd would recommend for inclusion in a corporate social responsibility strategy for another company.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Outline the areas that Recruit Me Ltd would recommend for inclusion in a corporate social responsibility strategy for another company.", marks: 4, contextNote: "Original 2 responses at 2 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["The need to deliver a level of social responsibility - get involved with the local community whenever possible - (mentors/sponsorship/visit in/out/work experience/etc.)","This will require consultation with staff/the local community about the CSR policy/to help decide on an appropriate CSR policy.","Environmental awareness (plant trees, water treatment, monitoring waste).","Working conditions for employees, recruitment procedures, training and promotions practices/need to recognise the importance of fairness, equality of opportunity and the value of all types of work."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10,
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "case-diversification-definition",
+    section: "B", questionRef: "2015 CL Section B Q3(i)",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Explain the term ‘diversification’ as used in the case study.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Explain the term ‘diversification’ as used in the case study.", marks: 4, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2@2m (0/2). Keep the full definition and all three case examples; no unprinted fixed definition/example weighting. Keep each response distinct and credit it only once. Complete original guidance: Diversification is a business strategy which is designed to reduce risk by spotting and exploiting new market opportunities for their products/services by using their existing skills to offer complimentary services or expanding into a completely different market. In the case study Robert and Maria were too dependant on the business of four large multinational companies so they diversified into other areas such as: 1. Expanding their CSR strategy to provide supports for jobseekers in the Irish market. 2. Advising other companies on a CSR strategy. 3. Providing supports to start-up enterprises.", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-b3ii", topicId: "lcvp-link-modules-1-1", conceptId: "diversification-reasons",
+    section: "B", questionRef: "2015 CL Section B Q3(ii)",
+    stem: "Recruit Me Ltd Robert and Maria Nolan established a recruitment agency, Recruit Me Ltd, in 1998. The company is well known and respected in the recruitment industry in Ireland. The main office is located in Dublin but there are also six sub offices throughout the country. The company has been quite successful. However, the economic downturn has had a very serious impact on the business. The core business for Recruit Me Ltd is recruitment for four large multinational companies. Robert and Maria know that in order to survive, a major change of direction is required. A restructuring programme within the company has just been completed. Employees were offered voluntary redundancy packages and job sharing opportunities. Having reduced the workforce the task of reinventing the company began in earnest. A meeting of the senior management team was held to assess the situation and to discuss the future direction of the company. A SWOT analysis of the business was conducted. There were very detailed discussions of new ideas and ways to diversify in the new economic environment. This led to the development of a new business plan and mission statement. Corporate Social Responsibility (CSR) is a business practice which involves participating in initiatives that benefit society. Recruit Me Ltd has always had a very strong CSR programme. To further their CSR strategy they have decided to try to meet the needs of a new type of jobseeker in the Irish market i.e. the professional, skilled person, who having been employed for many years, is now struggling to find work. To achieve this, Recruit Me Ltd has introduced a free Careers Programme, provided by staff volunteers, which is available to jobseekers one day each week. They provide a range of services including, developing a professional profile, preparing a CV and practising successful interview techniques. They also offer free employment search and job matching supports. Another potential growth area identified by Recruit Me Ltd is a programme to assist other companies to develop a CSR strategy. While output and profitability continue to be priorities for any successful company, the stakeholders in those companies also need to deliver a level of social responsibility which will impact on business practice. Recruit Me Ltd will emphasise to these companies that a CSR strategy will require consultation with staff and with the local community, as well as environmental awareness. Significantly, working conditions for employees, recruitment procedures, training and promotion practices and people management need to recognise the importance of fairness, equality of opportunity and the value of all types of work including volunteer work. Recruit Me Ltd has also taken the opportunity to offer support for new start-up enterprises. With excess space available in their offices, they now offer fully serviced desks for a nominal rent. It is a professional space where entrepreneurs have access to printing, broadband and communication facilities, while being surrounded by likeminded people. Recruit Me Ltd offer these fledgling businesses support in accessing grants from government agencies, as well as dealing with the legal and tax implications of starting a business. It is hoped that once these businesses are established they will move to their own premises and employ more workers. Recruit Me Ltd believes that even though this aspect of the business is currently non-profit making it should generate more clients for them in the future. Robert and Maria believe that the strategy of diversification has had a huge impact on themselves, their employees and their company. They were prepared to take measured risks and to make a commitment to change. They saw the value of drawing on innovation and creativity within the company. They consider that their action plan for job creation is a positive way to help society. The highly effective, talented and committed team at Recruit Me Ltd, led by Robert and Maria, have weathered the worst of the downturn in the economy. Because of their visionary leadership and the supports they have given to employees, individuals and other companies they have been nominated for a national social entrepreneur’s award.",
+    questionText: "Discuss the reasons why it is important for a business to diversify.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss the reasons why it is important for a business to diversify.", marks: 8, contextNote: "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: To protect the company in an economic downturn + valid expansion. | Spread the risk of the company by not relying on one or two products/depending on just one or two sources of income/e.g. if one supplier goes out of business they still have enough business to remain profitable. | To avoid relying on products which have seasonal fluctuations by producing goods/services which have different demand cycles. | To enable the company to expand so that greater profits are earned. | To provide protection from competing firms e.g. Tesco and Dunnes Stores expanded into offers on electrical goods to compete with the special offers made by Aldi/Lidl/competition. | To make better use of the existing resources of the firm. The firm may not be using all its staff and equipment to the full potential.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Recruit Me Ltd — complete case study",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context. Preserve the original Social Entrepreneurs Ireland logo and full five-paragraph context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11,
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c1a", topicId: "lcvp-link-modules-1-3", conceptId: "planned-lcvp-activity",
+    section: "C", questionRef: "2015 CL Section C Q1(a)",
+    stem: "Planning is an essential element to the success of any activity.",
+    questionText: "Name and give a brief outline of an LCVP activity that involved planning.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Name", marks: 2, contextNote: "Name 2m has no internal 1-mark split." },
+    { id: "outline", kind: "criterion", verbatim: "Outline of activity", marks: 2, contextNote: "Original Outline of activity 2m (1+1). Use the same named activity; no personal example is invented.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c1b", topicId: "lcvp-link-modules-1-3", conceptId: "activity-planning-benefits",
+    section: "C", questionRef: "2015 CL Section C Q1(b)",
+    stem: "Planning is an essential element to the success of any activity. Name and give a brief outline of an LCVP activity that involved planning.",
+    questionText: "Explain three benefits of planning for this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three benefits of planning for this activity.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: It defines the goals/aims/objectives/targets/so people know what they are working towards. | Any weaknesses can be identified and addressed. | Planning brings order and clarity to an activity/allows for a time frame and deadlines which keeps everyone on track. | The needs/resources required can be anticipated e.g. finances, staff, premises, materials etc. | The roles and duties of each team member are clearly defined/everyone knows what they are working towards. | Planning provides a basis for monitoring results/measuring success/check the progress of the activity against the plan/to see if any changes are needed/make decisions.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c1c", topicId: "lcvp-link-modules-1-3", conceptId: "activity-research-methods",
+    section: "C", questionRef: "2015 CL Section C Q1(c)",
+    stem: "Planning is an essential element to the success of any activity. Name and give a brief outline of an LCVP activity that involved planning.",
+    questionText: "Outline three different research methods used to obtain the necessary information for this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline three different research methods used to obtain the necessary information for this activity.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components. The method of research must be specific to the activity named in part (a). Keep each response distinct and credit it only once. Complete original guidance: Internet | Personal interview | Telephone/letter/email to organisation/Principal | Surveys/questionaires | Library | Brainstorming/class discussion", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c1d", topicId: "lcvp-link-modules-1-3", conceptId: "activity-evaluation-methods",
+    section: "C", questionRef: "2015 CL Section C Q1(d)",
+    stem: "Planning is an essential element to the success of any activity. Name and give a brief outline of an LCVP activity that involved planning.",
+    questionText: "Discuss three methods used to evaluate this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 9,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Discuss three methods used to evaluate this activity.", marks: 3, contextNote: "Response 1 of 3. Original explicit components: Method 1m, Explanation 1m, Why 1m. All six original methods and every nested bullet remain, including the continuation onto scheme physical9. Complete original guidance: Questionnaire – can be given to the whole class/persons involved. • It is easy to administer/collate results. • It can be completed anonymously. • It is generally inexpensive. • Response rates tend to be good. • If correctly designed it can be objective. | Ask the teacher/person involved for their opinion. • This allows the class to practise communication skills. • If questions are unclear they can be explained. • It is very easy to organise and carry out. • There is no cost involved. • Honest feedback/review of the activity can be received. | A written report can be produced. • The information provided in the report allows the reader to get a good insight into the activity. • This is an easy method to use as class members must produce a report for the Portfolio of Coursework. • Reports can be discussed/compared for quality and content. | Review teamwork – what teamwork elements worked well/didn’t work well? • Did all team members work well as a team? • Were all class members aware of their role and function? • How were any conflicts handled? | Class discussion – opinions and discussions on the activity. • It is easy to organise. • A variety of opinions/views can be given. • Everyone has a chance to speak. | Review of the aims/objectives • Have we achieved what we set out to do e.g. profit? • To measure the results against the aims/objectives.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Why","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Discuss three methods used to evaluate this activity.", marks: 3, contextNote: "Response 2 of 3. Original explicit components: Method 1m, Explanation 1m, Why 1m. All six original methods and every nested bullet remain, including the continuation onto scheme physical9. Complete original guidance: Questionnaire – can be given to the whole class/persons involved. • It is easy to administer/collate results. • It can be completed anonymously. • It is generally inexpensive. • Response rates tend to be good. • If correctly designed it can be objective. | Ask the teacher/person involved for their opinion. • This allows the class to practise communication skills. • If questions are unclear they can be explained. • It is very easy to organise and carry out. • There is no cost involved. • Honest feedback/review of the activity can be received. | A written report can be produced. • The information provided in the report allows the reader to get a good insight into the activity. • This is an easy method to use as class members must produce a report for the Portfolio of Coursework. • Reports can be discussed/compared for quality and content. | Review teamwork – what teamwork elements worked well/didn’t work well? • Did all team members work well as a team? • Were all class members aware of their role and function? • How were any conflicts handled? | Class discussion – opinions and discussions on the activity. • It is easy to organise. • A variety of opinions/views can be given. • Everyone has a chance to speak. | Review of the aims/objectives • Have we achieved what we set out to do e.g. profit? • To measure the results against the aims/objectives.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Why","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Discuss three methods used to evaluate this activity.", marks: 3, contextNote: "Response 3 of 3. Original explicit components: Method 1m, Explanation 1m, Why 1m. All six original methods and every nested bullet remain, including the continuation onto scheme physical9. Complete original guidance: Questionnaire – can be given to the whole class/persons involved. • It is easy to administer/collate results. • It can be completed anonymously. • It is generally inexpensive. • Response rates tend to be good. • If correctly designed it can be objective. | Ask the teacher/person involved for their opinion. • This allows the class to practise communication skills. • If questions are unclear they can be explained. • It is very easy to organise and carry out. • There is no cost involved. • Honest feedback/review of the activity can be received. | A written report can be produced. • The information provided in the report allows the reader to get a good insight into the activity. • This is an easy method to use as class members must produce a report for the Portfolio of Coursework. • Reports can be discussed/compared for quality and content. | Review teamwork – what teamwork elements worked well/didn’t work well? • Did all team members work well as a team? • Were all class members aware of their role and function? • How were any conflicts handled? | Class discussion – opinions and discussions on the activity. • It is easy to organise. • A variety of opinions/views can be given. • Everyone has a chance to speak. | Review of the aims/objectives • Have we achieved what we set out to do e.g. profit? • To measure the results against the aims/objectives.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Why","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                15,
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c2ai", topicId: "lcvp-link-modules-1-2", conceptId: "named-voluntary-body",
+    section: "C", questionRef: "2015 CL Section C Q2(a)(i)",
+    stem: "Voluntary bodies carry out an important role in our local communities.",
+    questionText: "Name a local voluntary body in your area.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Name of voluntary body", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c2aii", topicId: "lcvp-link-modules-1-2", conceptId: "volunteer-definition",
+    section: "C", questionRef: "2015 CL Section C Q2(a)(ii)",
+    stem: "Voluntary bodies carry out an important role in our local communities.",
+    questionText: "Explain the term ‘volunteer’.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Explain the term ‘volunteer’.", marks: 2, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2m (1+1). Keep each response distinct and credit it only once. Complete original guidance: Definition of volunteer: a person who works for the benefit of other individuals/particular cause/society without expecting any financial reward for their work.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c2b", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-commercial-comparison",
+    section: "C", questionRef: "2015 CL Section C Q2(b)",
+    stem: "Voluntary bodies carry out an important role in our local communities. Name a local voluntary body in your area.",
+    questionText: "Explain how a local voluntary body differs from a commercial business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "comparisons", kind: "criterion", verbatim: "Explain how a local voluntary body differs from a commercial business.", marks: 6, contextNote: "Original 3@2m (1+1). Each paired model reads Voluntary Bodies — Commercial Business. Keep both complete table cells for each comparison, all six pairs and every wrapped line. Keep each response distinct and credit it only once. Complete original guidance: Rely on people who work for nothing e.g. volunteers. — Employ staff and pay wages to workers. | Non profit making/concerned with social issues. — Motivated by making profit. | They are financed by donations/grants/fundraising. — Raise funds through loans, investors. | They are accountable to those who avail of services/clients. — They are accountable to shareholders/owners. | Aim is to help others. — Aim is to produce a product/supply service. | Benefits the community. — Benefits owners/investors", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c2c", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-body-community-benefits",
+    section: "C", questionRef: "2015 CL Section C Q2(c)",
+    stem: "Voluntary bodies carry out an important role in our local communities. Name a local voluntary body in your area.",
+    questionText: "Outline four ways a local community benefits from the presence of a voluntary body in the area.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline four ways a local community benefits from the presence of a voluntary body in the area.", marks: 8, contextNote: "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: They provide services to the community/to help people in need/support a local cause. | They can create employment by hiring full time staff/give volunteers an opportunity to upskill. | Young people can get work experience with them and can experience the work of the voluntary body. | Local amenities or environment can be improved/tidy towns. | A good community spirit is generated/fosters pride in the local area/there might be an increase in the number of volunteers/ provides an opportunity for people to volunteer. | Grants received could be used locally e.g. improving local resources or facilities.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c2d", topicId: "lcvp-link-modules-1-2", conceptId: "volunteer-ethical-obligations",
+    section: "C", questionRef: "2015 CL Section C Q2(d)",
+    stem: "Voluntary bodies carry out an important role in our local communities. Name a local voluntary body in your area.",
+    questionText: "Explain the ethical obligations of volunteers when working for a voluntary body.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain the ethical obligations of volunteers when working for a voluntary body.", marks: 8, contextNote: "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Volunteers must be reliable and committed to the voluntary body/aspire to do the tasks assigned to them to the best of their ability/act according to the voluntary body’s goals. | Confidentiality - volunteers should agree not to disclose information acquired while volunteering. | Refusal to accept benefits - volunteers should not benefit in any way from the voluntary bodies clients or any other person. | Avoid a conflict of interest - between their activity, position within the voluntary body in which they are engaged. | Reporting unethical behavior - including misappropriation of funds/unlawful conduct. | Obligations to the client/members - respect/treat them with dignity/be responsible/patient/tolerant/refrain from discrimination/respect individual difference. | Be trustworthy/respect the voluntary body’s property/protect the voluntary body’s good standing/punctual/honest/dependable. | Ensure they have the necessary skills to the job/to attend all training sessions and to put information received into practice.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c3a", topicId: "lcvp-link-modules-0-3", conceptId: "finding-work-placement",
+    section: "C", questionRef: "2015 CL Section C Q3(a)",
+    stem: "Work experience/work shadowing gives you an important insight into the world of work.",
+    questionText: "State three methods of finding a work placement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "State three methods of finding a work placement.", marks: 3, contextNote: "Original 3 responses at 1 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Personal contacts/family/teachers/word of mouth","Sending out CVs/letters to potential employers","Personal visit","Telephone","From part time work","Use the internet/national newspapers","Send emails."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c3b", topicId: "lcvp-link-modules-0-3", conceptId: "work-placement-request-letter",
+    section: "C", questionRef: "2015 CL Section C Q3(b)",
+    stem: "Work experience/work shadowing gives you an important insight into the world of work.",
+    questionText: "Write a letter to an employer of your choice requesting a three day work placement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 10,
+    rows: [
+    { id: "letter", kind: "criterion", verbatim: "Write a letter to an employer of your choice requesting a three day work placement.", marks: 10, contextNote: "One complete letter requesting a THREE DAY placement. Retain all seven source criteria and their 1/1/1/2/1/2/2 allocations. * compulsory item: CV enclosure in the closing paragraph. The source supplies no internal 1-mark intermediate for its 2-mark criteria; do not invent one. Addresses together receive one mark.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"criterion-1","verbatim":"Addresses","marks":1,"permittedMarks":[0,1]},{"id":"criterion-2","verbatim":"Date","marks":1,"permittedMarks":[0,1]},{"id":"criterion-3","verbatim":"Opening/closing salutation","marks":1,"permittedMarks":[0,1]},{"id":"criterion-4","verbatim":"Introduction","marks":2,"permittedMarks":[0,2]},{"id":"criterion-5","verbatim":"Dates of work experience/work shadowing","marks":1,"permittedMarks":[0,1]},{"id":"criterion-6","verbatim":"Closing paragraph (*CV enc)","marks":2,"permittedMarks":[0,2]},{"id":"criterion-7","verbatim":"Layout - Paragraphs/address position/overall impression","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20,
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c3c", topicId: "lcvp-link-modules-0-0", conceptId: "employability-characteristics",
+    section: "C", questionRef: "2015 CL Section C Q3(c)",
+    stem: "Work experience/work shadowing gives you an important insight into the world of work.",
+    questionText: "Explain three characteristics that make a person more employable.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three characteristics that make a person more employable.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components. This list is not exhaustive. Keep each response distinct and credit it only once. Complete original guidance: Hard-working – productive, hard-working people are better for a business. | Good communicator – individuals need to be able to communicate with managers, other workers and customers. | Punctuality – It is essential that all workers are on time for work. | Team-player – teamwork is a major feature of any work place. Workers need to get on with other team members and also perform their assigned tasks. | Shows initiative – Employers need workers who can work by themselves and do not need constant direction/positive attitude. | Honest/trustworthy – It is essential that workers do an honest day’s work for their remuneration. They will not damage or steal any of the employer’s property. This list is not exhaustive", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21,
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c3d", topicId: "lcvp-link-modules-0-3", conceptId: "placement-working-world-preparation",
+    section: "C", questionRef: "2015 CL Section C Q3(d)",
+    stem: "Work experience/work shadowing gives you an important insight into the world of work.",
+    questionText: "Describe three ways your participation in work experience has prepared you for the working world.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways your participation in work experience has prepared you for the working world.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: It gives practical experience of the job/career you are interested in pursuing. | The world of work/what new behavior/attitude is expected from you e.g. good time-keeping, length of working day/certain qualities required. | New skills are developed such as teamwork and interpersonal skills. | Self-esteem/confidence can be improved. As a result of participating in work experience and handling different situations your self-esteem/confidence can be boosted/interaction with adults other than teachers. | It can help with CV preparation/completing application forms/good interview techniques as all of this must be done in order to get work experience.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4ai", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-definition",
+    section: "C", questionRef: "2015 CL Section C Q4(a)(i)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "What is a trade union?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "What is a trade union?", marks: 3, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 3@1m. Keep each response distinct and credit it only once. Complete original guidance: A trade union is an organisation of workers/who try to improve the pay/working conditions of its workers/represent workers in disputes.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4aii", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-examples",
+    section: "C", questionRef: "2015 CL Section C Q4(a)(ii)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "Name two trade unions.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "names", kind: "anyN", verbatim: "Name two trade unions.", marks: 2, contextNote: "Name ANY TWO trade unions, 2@1m. Preserve all nine original alternatives; the list is open.", openList: true, group: {"claimMax":2,"perOption":1,"options":["TUI","ASTI","INTO","INMO","SIPTU","IMPACT","UNITE","MANDATE","NBRU"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4b", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-member-benefits",
+    section: "C", questionRef: "2015 CL Section C Q4(b)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "Outline four benefits of being a member of a trade union.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline four benefits of being a member of a trade union.", marks: 8, contextNote: "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Trade unions negotiate agreements with employers on pay and conditions. | The trade union will represent members during major changes to the work place such as large scale redundancies. | The can provide their members with information, advice and support. | They can provide education facilities and training. | They mediate with employers to resolve disputes/bullying incidents. | Trade unions lead to greater solidarity among workers. | Consumer benefits/ such as discounted insurance/VHI.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23,
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4ci", topicId: "lcvp-link-modules-0-0", conceptId: "employment-contract-definition",
+    section: "C", questionRef: "2015 CL Section C Q4(c)(i)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "Explain a contract of employment.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Explain a contract of employment.", marks: 2, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2m (1+1). The source stars “written document” and states “* compulsory item”; this required wording remains visible with the full definition. Keep each response distinct and credit it only once. Complete original guidance: A written document*/between an employer and employee specifying the terms and conditions under which a person consents to perform the work they are employed to do/in return for an agreed wage or salary.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4cii", topicId: "lcvp-link-modules-0-0", conceptId: "employment-contract-content",
+    section: "C", questionRef: "2015 CL Section C Q4(c)(ii)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "Identify four items which should be included in a contract of employment.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Identify four items which should be included in a contract of employment.", marks: 4, contextNote: "Original 4 responses at 1 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["It shows details on wages/salary, how much should be paid/when payments are made/the method of payment/overtime bonus.","Holiday entitlements such as when work year begins/when holidays can be taken/the number of days allowed are clearly stated.","It includes sick leave entitlements such as the number of days before a cert is needed/details on the amount to be paid when ill.","The details of the job to be carried out/job title are clearly outlined.","It should show a code of conduct/grievance procedure e.g. the individual who deals with complaints and how a complaint should be made.","The contract should give details on statutory leave such as parental leave/maternity leave.","The employers’ name/address and the employees’ name/address should all be clearly stated.","The contract should show the start date or duration of contract for employees.","The employee must sign the contract."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "employer-safety-responsibilities",
+    section: "C", questionRef: "2015 CL Section C Q4(d)",
+    stem: "Well regulated businesses have an impact on employers, employees and the environment.",
+    questionText: "Describe three responsibilities of an employer in relation to health and safety regulations.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe three responsibilities of an employer in relation to health and safety regulations.", marks: 6, contextNote: "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: They must prepare a safety statement (a document that outlines how a company manages health and safety/ensure risks are assessed). | To provide safe working condition/proper facilities/breaks/holidays/working machines correctly etc. The employer must ensure that equipment is safe and workable/to provide proper training/instruction. | Provide P.P.E. (Personal Protective Equipment) where necessary e.g. goggles, steel-toe cap boots, helmets, hard hats, ear plugs, gloves, aprons, hair nets etc. | Adequate signs displayed/fire drills/fire equipment/fire exits. | Take steps to prevent bullying. There should be procedures in place to deal with harassment, these issues should be dealt with immediately. | Appoint a Safety Officer/report accidents to Health and Safety Officer", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c5a", topicId: "lcvp-link-modules-0-2", conceptId: "career-investigation-definition",
+    section: "C", questionRef: "2015 CL Section C Q5(a)",
+    stem: "You have been asked to complete an investigation on a career of your choice.",
+    questionText: "What is a career investigation?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "What is a career investigation?", marks: 2, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2m (1+1). Keep each response distinct and credit it only once. Complete original guidance: A career investigation is/research carried out to get information about a particular job/career/including the skills and qualities necessary to carry out the job/as well as the entry pathways into the job/career.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c5bi", topicId: "lcvp-link-modules-0-2", conceptId: "investigated-career-name",
+    section: "C", questionRef: "2015 CL Section C Q5(b)(i)",
+    stem: "You have been asked to complete an investigation on a career of your choice.",
+    questionText: "Name a career you investigated.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "career", kind: "point", verbatim: "Name of career.", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c5bii", topicId: "lcvp-link-modules-0-2", conceptId: "career-investigation-steps",
+    section: "C", questionRef: "2015 CL Section C Q5(b)(ii)",
+    stem: "You have been asked to complete an investigation on a career of your choice. Name a career you investigated.",
+    questionText: "List the steps that could be used to investigate this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List the steps that could be used to investigate this career.", marks: 4, contextNote: "Original 4 responses at 1 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Description of the career/duties involved","Skills/qualities required for the career","Careers Guidance Teacher","Self-assessment stage/skills interests/DATS/LC subjects","Course search/education options e.g. Careers Portal, Qualifax","Out of class learning-interview a person in the career/attend open days/work place learning","Evaluation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c5c", topicId: "lcvp-link-modules-0-2", conceptId: "career-subjects-relevance",
+    section: "C", questionRef: "2015 CL Section C Q5(c)",
+    stem: "You have been asked to complete an investigation on a career of your choice. Name a career you investigated.",
+    questionText: "State two Leaving Certificate subjects required for this career. Explain the relevance of these subjects to your career choice.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "subject-1", kind: "criterion", verbatim: "State two Leaving Certificate subjects required for this career. Explain the relevance of these subjects to your career choice.", marks: 3, contextNote: "Subject/relevance profile 1 of 2 for the SAME named career. Source: State the two subjects 2@1m; Explain the relevance of the subjects 2@2m (1+1). Keep both complete profiles; no specific subjects are invented.", permittedMarks: [0,1,2,3], parts: [{"id":"subject","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"relevance","verbatim":"Relevance","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "subject-2", kind: "criterion", verbatim: "State two Leaving Certificate subjects required for this career. Explain the relevance of these subjects to your career choice.", marks: 3, contextNote: "Subject/relevance profile 2 of 2 for the SAME named career. Source: State the two subjects 2@1m; Explain the relevance of the subjects 2@2m (1+1). Keep both complete profiles; no specific subjects are invented.", permittedMarks: [0,1,2,3], parts: [{"id":"subject","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"relevance","verbatim":"Relevance","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c5d", topicId: "lcvp-link-modules-0-2", conceptId: "two-career-pathways",
+    section: "C", questionRef: "2015 CL Section C Q5(d)",
+    stem: "You have been asked to complete an investigation on a career of your choice. Name a career you investigated.",
+    questionText: "Describe two pathways into your chosen career, using suitable headings.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 12,
+    rows: [
+    { id: "pathway-1", kind: "criterion", verbatim: "Describe two pathways into your chosen career, using suitable headings.", marks: 6, contextNote: "Pathway 1 of TWO complete pathways to the same chosen career. Original [6@1m]x2; every one of the six named headings receives one mark in each pathway. No choose-some rule or invented course is introduced.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"heading-1","verbatim":"Course Title","marks":1,"permittedMarks":[0,1]},{"id":"heading-2","verbatim":"Duration","marks":1,"permittedMarks":[0,1]},{"id":"heading-3","verbatim":"College name/location","marks":1,"permittedMarks":[0,1]},{"id":"heading-4","verbatim":"Entry points/requirements","marks":1,"permittedMarks":[0,1]},{"id":"heading-5","verbatim":"Details of course","marks":1,"permittedMarks":[0,1]},{"id":"heading-6","verbatim":"End qualification/name of qualification","marks":1,"permittedMarks":[0,1]}] },
+    { id: "pathway-2", kind: "criterion", verbatim: "Describe two pathways into your chosen career, using suitable headings.", marks: 6, contextNote: "Pathway 2 of TWO complete pathways to the same chosen career. Original [6@1m]x2; every one of the six named headings receives one mark in each pathway. No choose-some rule or invented course is introduced.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"heading-1","verbatim":"Course Title","marks":1,"permittedMarks":[0,1]},{"id":"heading-2","verbatim":"Duration","marks":1,"permittedMarks":[0,1]},{"id":"heading-3","verbatim":"College name/location","marks":1,"permittedMarks":[0,1]},{"id":"heading-4","verbatim":"Entry points/requirements","marks":1,"permittedMarks":[0,1]},{"id":"heading-5","verbatim":"Details of course","marks":1,"permittedMarks":[0,1]},{"id":"heading-6","verbatim":"End qualification/name of qualification","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27,
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c6a", topicId: "lcvp-link-modules-1-3", conceptId: "loom-band-idea-generation",
+    section: "C", questionRef: "2015 CL Section C Q6(a)",
+    stem: "Your LCVP class has decided to set up a new Loom Band enterprise to raise funds for a local charity.",
+    questionText: "List four methods of idea generation.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List four methods of idea generation.", marks: 4, contextNote: "Original 4 responses at 1 or 0 marks each. All alternatives remain. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Brainstorming/suggestion box/mind map/class discussion/placemats/ask teacher.","Copy idea from a previous business.","Do market research/internet/surveys/questionnaires.","Study hobbies/interests.","Look at what is on sale in shops.","Adapt competitor’s ideas/ideas from abroad.","Finding solutions to problems.","Identifying gaps in the market."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c6bi", topicId: "lcvp-link-modules-1-3", conceptId: "market-research-definition",
+    section: "C", questionRef: "2015 CL Section C Q6(b)(i)",
+    stem: "Your LCVP class has decided to set up a new Loom Band enterprise to raise funds for a local charity. Questionnaires will be used as part of the market research for this product.",
+    questionText: "What is market research?",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "What is market research?", marks: 2, contextNote: "Preserve the full original definition. No fixed semantic division is inferred. Original 2@1m. Keep each response distinct and credit it only once. Complete original guidance: Market research is the collection, recording and analysis of information gathered/allows you to make decisions of how to proceed in business.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c6bii", topicId: "lcvp-link-modules-1-3", conceptId: "other-market-research-tools",
+    section: "C", questionRef: "2015 CL Section C Q6(b)(ii)",
+    stem: "Your LCVP class has decided to set up a new Loom Band enterprise to raise funds for a local charity. Questionnaires will be used as part of the market research for this product.",
+    questionText: "Identify three methods, other than questionnaires, used as market research tools.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "methods", kind: "anyN", verbatim: "Identify three methods, other than questionnaires, used as market research tools.", marks: 3, contextNote: "Original 3@1m. The paper excludes questionnaires; retain all eight slash-separated source methods.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Interviews","sampling","panel studies","observation","internet","telephone","existing records","government publications"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c6c", topicId: "lcvp-link-modules-1-3", conceptId: "questionnaire-disadvantages",
+    section: "C", questionRef: "2015 CL Section C Q6(c)",
+    stem: "Your LCVP class has decided to set up a new Loom Band enterprise to raise funds for a local charity.",
+    questionText: "Explain four disadvantages of using a questionnaire as a market research tool.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Explain four disadvantages of using a questionnaire as a market research tool.", marks: 2, contextNote: "Response 1 of 4. Original explicit components: Statement 1m, Disadvantage 1m.  Complete original guidance: If a question is omitted it may not be possible to ask the respondent again especially if there is anonymity. | Respondents may not answer the questions honestly/biased questions/answers/leading questions/closed questions. | It can be difficult to get an adequate response to a postal questionnaire or one that requires the respondent to return it. | Respondents can ignore certain questions; they may not be willing to answer a question as they do not want to reveal information about themselves. | Respondents may misinterpret questions due to poor design and ambiguous language therefore skewing the results. | If a questionnaire is too long complex, questionnaire fatigue may set in/time consuming. | Questionnaires are not suitable for the visually impaired. | Can be difficult to get an appropriate sample to complete/to reflect your target market/sample may not be representative of the target market. | Questionnaires are expensive to administer/print/distribute.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Statement","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Disadvantage","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Explain four disadvantages of using a questionnaire as a market research tool.", marks: 2, contextNote: "Response 2 of 4. Original explicit components: Statement 1m, Disadvantage 1m.  Complete original guidance: If a question is omitted it may not be possible to ask the respondent again especially if there is anonymity. | Respondents may not answer the questions honestly/biased questions/answers/leading questions/closed questions. | It can be difficult to get an adequate response to a postal questionnaire or one that requires the respondent to return it. | Respondents can ignore certain questions; they may not be willing to answer a question as they do not want to reveal information about themselves. | Respondents may misinterpret questions due to poor design and ambiguous language therefore skewing the results. | If a questionnaire is too long complex, questionnaire fatigue may set in/time consuming. | Questionnaires are not suitable for the visually impaired. | Can be difficult to get an appropriate sample to complete/to reflect your target market/sample may not be representative of the target market. | Questionnaires are expensive to administer/print/distribute.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Statement","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Disadvantage","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Explain four disadvantages of using a questionnaire as a market research tool.", marks: 2, contextNote: "Response 3 of 4. Original explicit components: Statement 1m, Disadvantage 1m.  Complete original guidance: If a question is omitted it may not be possible to ask the respondent again especially if there is anonymity. | Respondents may not answer the questions honestly/biased questions/answers/leading questions/closed questions. | It can be difficult to get an adequate response to a postal questionnaire or one that requires the respondent to return it. | Respondents can ignore certain questions; they may not be willing to answer a question as they do not want to reveal information about themselves. | Respondents may misinterpret questions due to poor design and ambiguous language therefore skewing the results. | If a questionnaire is too long complex, questionnaire fatigue may set in/time consuming. | Questionnaires are not suitable for the visually impaired. | Can be difficult to get an appropriate sample to complete/to reflect your target market/sample may not be representative of the target market. | Questionnaires are expensive to administer/print/distribute.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Statement","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Disadvantage","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-4", kind: "criterion", verbatim: "Explain four disadvantages of using a questionnaire as a market research tool.", marks: 2, contextNote: "Response 4 of 4. Original explicit components: Statement 1m, Disadvantage 1m.  Complete original guidance: If a question is omitted it may not be possible to ask the respondent again especially if there is anonymity. | Respondents may not answer the questions honestly/biased questions/answers/leading questions/closed questions. | It can be difficult to get an adequate response to a postal questionnaire or one that requires the respondent to return it. | Respondents can ignore certain questions; they may not be willing to answer a question as they do not want to reveal information about themselves. | Respondents may misinterpret questions due to poor design and ambiguous language therefore skewing the results. | If a questionnaire is too long complex, questionnaire fatigue may set in/time consuming. | Questionnaires are not suitable for the visually impaired. | Can be difficult to get an appropriate sample to complete/to reflect your target market/sample may not be representative of the target market. | Questionnaires are expensive to administer/print/distribute.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Statement","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Disadvantage","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "common",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
+    id: "lcvp-2015-cl-c6d", topicId: "lcvp-link-modules-1-3", conceptId: "loom-band-ict-uses",
+    section: "C", questionRef: "2015 CL Section C Q6(d)",
+    stem: "Your LCVP class has decided to set up a new Loom Band enterprise to raise funds for a local charity.",
+    questionText: "Describe how Information and Communications Technology (ICT) could be used effectively in this enterprise.",
+    tariffModel: {"kind":"fixed","notation":"Original 2015 marking scheme allocation."}, totalMarks: 8,
+    rows: [
+    { id: "response-1", kind: "criterion", verbatim: "Describe how Information and Communications Technology (ICT) could be used effectively in this enterprise.", marks: 2, contextNote: "Response 1 of 4. Original explicit components: Method 1m, Use 1m.  Complete original guidance: Desk-top publishing could be used to make posters for promoting and advertising the enterprise/printing labels/posters. | A social media presence could be created such as Facebook, Twitter to provide information and updates about the loom bands. It could also be used to take orders. | The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement etc. | E-mail/mobile phone/instant messaging could be used to contact individuals involved/used by class to keep in contact. | Wordprocessing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending correspondence. | A database programme could be used to set up the details for all customers. | Speadsheets could be used for budgeting purposes as well as presenting fianancial statements. | CAD/CAM - product design. | Powerpoint - can be used to make a slide presentation about their enterprise/to show presentations at enterprise competitions.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-2", kind: "criterion", verbatim: "Describe how Information and Communications Technology (ICT) could be used effectively in this enterprise.", marks: 2, contextNote: "Response 2 of 4. Original explicit components: Method 1m, Use 1m.  Complete original guidance: Desk-top publishing could be used to make posters for promoting and advertising the enterprise/printing labels/posters. | A social media presence could be created such as Facebook, Twitter to provide information and updates about the loom bands. It could also be used to take orders. | The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement etc. | E-mail/mobile phone/instant messaging could be used to contact individuals involved/used by class to keep in contact. | Wordprocessing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending correspondence. | A database programme could be used to set up the details for all customers. | Speadsheets could be used for budgeting purposes as well as presenting fianancial statements. | CAD/CAM - product design. | Powerpoint - can be used to make a slide presentation about their enterprise/to show presentations at enterprise competitions.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-3", kind: "criterion", verbatim: "Describe how Information and Communications Technology (ICT) could be used effectively in this enterprise.", marks: 2, contextNote: "Response 3 of 4. Original explicit components: Method 1m, Use 1m.  Complete original guidance: Desk-top publishing could be used to make posters for promoting and advertising the enterprise/printing labels/posters. | A social media presence could be created such as Facebook, Twitter to provide information and updates about the loom bands. It could also be used to take orders. | The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement etc. | E-mail/mobile phone/instant messaging could be used to contact individuals involved/used by class to keep in contact. | Wordprocessing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending correspondence. | A database programme could be used to set up the details for all customers. | Speadsheets could be used for budgeting purposes as well as presenting fianancial statements. | CAD/CAM - product design. | Powerpoint - can be used to make a slide presentation about their enterprise/to show presentations at enterprise competitions.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use","marks":1,"permittedMarks":[0,1]}] },
+    { id: "response-4", kind: "criterion", verbatim: "Describe how Information and Communications Technology (ICT) could be used effectively in this enterprise.", marks: 2, contextNote: "Response 4 of 4. Original explicit components: Method 1m, Use 1m.  Complete original guidance: Desk-top publishing could be used to make posters for promoting and advertising the enterprise/printing labels/posters. | A social media presence could be created such as Facebook, Twitter to provide information and updates about the loom bands. It could also be used to take orders. | The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement etc. | E-mail/mobile phone/instant messaging could be used to contact individuals involved/used by class to keep in contact. | Wordprocessing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending correspondence. | A database programme could be used to set up the details for all customers. | Speadsheets could be used for budgeting purposes as well as presenting fianancial statements. | CAD/CAM - product design. | Powerpoint - can be used to make a slide presentation about their enterprise/to show presentations at enterprise competitions.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
 ];
