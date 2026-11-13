@@ -668,7 +668,7 @@ ENGLISH_X = 288
 GLYPHS = {'\uf0fc': '✓', '\uf050': '✓', '\uf0b7': '•'}
 # Pages with no question on them: the blank verso, the back cover.
 BLANK_PAGE = re.compile(r'There is no examination material on this page|'
-                        r'Do not write on this page|Copyright notice', re.I)
+                        r'Do not write on this page|Copyright notice|Blank\s+Page|Leathanach\s+B[áa]n', re.I)
 NOW_ANSWER = re.compile(r'^Now answer Question\b', re.I)
 # The running foot of every listening page.
 AURAL_FOOT = re.compile(r'^(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'

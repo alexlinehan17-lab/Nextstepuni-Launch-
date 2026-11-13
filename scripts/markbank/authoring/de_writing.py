@@ -53,7 +53,11 @@ def expression_scale(S, head, columns=2):
     start = _find(S, head)
     if start is None:
         return None
-    stop = _find(S, r'^N\.B\. Take a global view', start)
+    # 2021 Higher prints the "N.B. Take a global view …" line above the
+    # table as well as below it: the table ends at the one after its first
+    # category.
+    first = _find(S, r'^Vocabulary', start)
+    stop = _find(S, r'^N\.B\. Take a global view', first)
     lines = _lines(S, start + 1, stop)
     cats = []
     for line in lines:
@@ -339,9 +343,23 @@ def higher_cards(year, card_id, question_ref, concept_for):
     a_at, b_at = _find(S, r'^\(a\) ', sp), _find(S, r'^\(b\) ', sp + 1)
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, sp_at))):
         lines = [l for l in _lines(S, lo, hi) if l not in ('OR',)]
+        if letter == 'a':
+            # (b)'s own note and its "Where a candidate …" line, printed
+            # above "(b)", are not (a)'s.
+            cut = next((k for k, l in enumerate(lines) if k > 0 and l.startswith('Note: Answer any')
+                        and 'Dis.:' in ' '.join(lines[:k])), None)
+            if cut is not None:
+                lines = lines[:cut]
+        if letter == 'b' and lo > 0:
+            lead = [l for l in _lines(S, lo - 4, lo) if l.startswith('Note: Answer any') or l.startswith('Where a candidate')]
+            lines = lead + lines
         head, labelled = _labelled(lines, r'^(Op|Cl|[A-F])\. \((\d)\)')
         dis = next(l for l in lines if l.startswith('Dis.:'))
-        want = re.search(r'Answer any (\w+) of the', ' '.join(head))
+        # 2023 prints (b)'s "Note: Answer any five …" above its "(b)" line,
+        # so it closes (a)'s block: the task's own note is the first in its
+        # block, or else the one printed just above it.
+        want = re.search(r'Answer any (\w+) of the', ' '.join(head)) or re.search(
+            r'Answer any (\w+) of the', ' '.join(_lines(S, lo - 4, lo)))
         n = {'four': 4, 'five': 5}[want.group(1).lower()]
         criteria, reqs = [], [l for l in head if not l.startswith('Dis.:')]
         for label, marks, block in labelled:
@@ -379,16 +397,25 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     out = []
     # The one expression table: column one is Äußerung's 7 and Schriftliche
     # Produktion's "Lower Ex." 7, column two the full 10.
-    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung')
+    one, two, nb, ex_at = expression_scale(S, r'^Guidelines for marking Expression in [ÄA]u[ßs]{1,2}erung zum Thema')
+    # "… (0-7) for expression." (2022-2026) or "… for expression and write
+    # “Lower Ex.” to indicate this." (2021).
     sp_rule = rule_text(S, ex_at, r'^N\.B\. If the content mark in the Schriftliche',
-                        r'for expression\.')
+                        r'for expression(?:\.| and write .*?to indicate this\.)')
     at = _find(S, r'^TEXT II: [ÄA]U[ßS]{1,2}ERUNG ZUM THEMA')
     a_at = _find(S, r'^\(a\) ', at)
     b_at = _find(S, r'^E-?Mail schreiben|^E-mail schreiben|^\(b\) ', a_at + 1)
     head_lines = _lines(S, at, a_at)
     # (a) the dialogue: one criterion per printed turn, "(A1)" … "(F2)", with
     # the prompt printed above it.
-    lines = _lines(S, a_at, b_at)
+    # 2021 prints a short "Guidelines for marking expression in ÄUSSERUNG"
+    # after each option and TEXT III's questions before the expression table:
+    # an option's block ends at whichever comes first.
+    def _end(after, limit):
+        stop = _find(S, r'^(?:Guidelines for marking expression|TEXT III)', after + 1)
+        return min(x for x in (stop, limit) if x is not None)
+    a_end, b_end = _end(a_at, b_at), _end(b_at, ex_at)
+    lines = _lines(S, a_at, a_end)
     head, crit, prompt = [], [], []
     for line in lines:
         m = re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line)
@@ -409,10 +436,10 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     text, _p = task_text(P, 'AT', 'a')
     out.append(_card(year, 'ol', 'AT', 'a', 15, _rubric(reqs, criteria), text,
                      _source(P, year, 'ol', 'AT', 'a', 'Äußerung zum Thema'),
-                     tags['T-A']['primary'], sorted(set(_page_span(S, a_at, b_at) + _page_span(S, ex_at, ex_at + 1))),
+                     tags['T-A']['primary'], sorted(set(_page_span(S, a_at, a_end) + _page_span(S, ex_at, ex_at + 1))),
                      concept_for, question_ref, [PRACTICE]))
     # (b) the e-mail: one criterion per printed point, "A. (2) Introduce …".
-    lines = _lines(S, b_at, ex_at)
+    lines = _lines(S, b_at, b_end)
     head, labelled = _labelled(lines, r'^([A-F])\. \((\d)\)')
     criteria = [_criterion(label.lower(), label, marks, block) for label, marks, block in labelled]
     criteria.append(_expression(7, one))
@@ -420,14 +447,16 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     text, _p = task_text(P, 'AT', 'b')
     out.append(_card(year, 'ol', 'AT', 'b', 15, _rubric(reqs, criteria), text,
                      _source(P, year, 'ol', 'AT', 'b', 'Äußerung zum Thema'),
-                     tags['T-B']['primary'], sorted(set(_page_span(S, b_at, ex_at) + _page_span(S, ex_at, ex_at + 1))),
+                     tags['T-B']['primary'], sorted(set(_page_span(S, b_at, b_end) + _page_span(S, ex_at, ex_at + 1))),
                      concept_for, question_ref, [PRACTICE]))
     # Schriftliche Produktion: the fill-in phrases ("St.") are their own
     # claim card (coordinator ruling 2); the grid holds Content and Expression.
     sp = _find(S, r'^SCHRIFTLICHE PRODUKTION')
     a_at = _find(S, r'^\(a\) ', sp)
     b_at = _find(S, r'^\(b\) ', a_at + 1)
-    end = _find(S, r'^LISTENING COMPREHENSION', b_at)
+    # The listening test follows, or (2021, which prints it first) its
+    # transcript, or the document ends.
+    end = _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1)\b)', b_at) or len(S.lines)
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, end))):
         lines = [l for l in _lines(S, lo, hi) if l != 'OR']
         st_at = next(k for k, l in enumerate(lines) if l.startswith('St.'))
@@ -440,7 +469,7 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         st_marks = int(re.match(r'^St\. \((\d)\)', lines[st_at]).group(1))
         assert sum(m for _p, m in phrases) == st_marks, (year, letter, phrases)
         rest = lines[:st_at] + lines[k:]
-        ex_line = next(l for l in rest if l.startswith('Ex.'))
+        ex_line = next((l for l in rest if l.startswith('Ex.')), None)
         if letter == 'a':
             head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(Cl|[A-F])\.? \((\d)\)')
             cl = [x for x in labelled if x[0] == 'Cl']
@@ -449,12 +478,12 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             n = (content_total - sum(x[1] for x in cl)) // points[0][1]
             assert all(x[1] == points[0][1] for x in points) and len(points) >= n
             criteria = _points(n, points[0][1]) + [_criterion('cl', 'Cl', x[1], x[2]) for x in cl]
-            reqs = head + [l for x in points for l in x[2]] + [ex_line]
+            reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
         else:
             c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(12\)', l))
             guide = [l for l in rest[c_at:] if not l.startswith('Ex.')]
             criteria = [_criterion('content', 'C', 12, guide)]
-            reqs = [l for l in rest[:c_at]] + [ex_line]
+            reqs = [l for l in rest[:c_at]] + ([ex_line] if ex_line else [])
         content = [k_['id'] for k_ in criteria]
         criteria.append(_expression(10, two, {
             'label': 'Lower Ex.', 'maxMarks': 7, 'permittedMarks': list(range(8)), 'bands': one,

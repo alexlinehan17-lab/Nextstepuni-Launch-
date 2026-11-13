@@ -48,7 +48,8 @@ sys.path.insert(0, HERE)
 
 from de_paper import DePaper                                     # noqa: E402
 from de_scheme import (DeScheme, UNIT_LISTEN, LISTEN_PART, TRANSCRIPT,   # noqa: E402
-                       PART_NAMES, read_rate, head_total)
+                       PART_NAMES, read_rate, head_total, UNIT_LV, UNIT_AG, UNIT_AT,
+                       UNIT_SP)
 
 AUDIO = os.path.join(ROOT, 'data', 'germanAudio.json')
 MAX_OPTIONS = 16
@@ -88,7 +89,7 @@ MARKER = re.compile(r'^(?:\(\s*([a-z])\s*\)|([•▪◦\-–])|(\d{1,2})\s*\.(?!
 # = 0)", "[All or nothing]") that is kept as the row's note.
 PRICE = re.compile(r'\(\s*(\d{1,2})\s*(?:marks?)?\s*\)')
 TRAIL = re.compile(r'^(.*?)\s*\(\s*(\d{1,2})\s*(?:marks?)?\s*\)\s*'
-                   r'((?:[–\-]\s*)?(?:\[?\s*All or nothing\s*\]?|\(.*=\s*0\s*\)|'
+                   r'((?:[–\-]\s*)?(?:\[?\s*All or nothing\s*\]?|\(\s*All or nothing\s*\)|\(.*=\s*0\s*\)|'
                    r'N\.?\s?B\b.*|Allow\b.*|\(.*\b(?:only|needed|required)\)))?\s*$', re.I)
 BRACKET_NOTE = re.compile(r'\s*\[\s*All or nothing\s*\]\s*', re.I)
 
@@ -127,6 +128,9 @@ def _steps(seg):
         s = s[1:-1].strip()
     s = re.sub(r'^(Any\s+(?:other\s+)?\w+(?:\s+details?)?)\s*\((.*)\)\s*:?$', r'\1: \2', s, flags=re.I)
     s = re.sub(r'^Any\s+other\s+', 'Any ', s, flags=re.I)
+    # "Any one reaction: 3 marks" (2021 Ordinary): the noun names what is
+    # counted, as "details" does.
+    s = re.sub(r'^(Any\s+\w+)\s+(?!details?\b|examples?\b|points?\b|of\b)[A-Za-z]+(?=\s*:)', r'\1', s, flags=re.I)
     got, _cnt = read_rate(s)
     if got is not None:
         return got
@@ -204,7 +208,8 @@ def clause_split(clause, romans):
 
 # ------------------------------------------------------------ the scheme --
 class Leaf:
-    __slots__ = ('part', 'q', 'roman', 'total', 'lines', 'default', 'rule', 'line')
+    __slots__ = ('part', 'q', 'roman', 'total', 'lines', 'default', 'rule', 'line',
+                 'q_total', 'q_split')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -223,7 +228,9 @@ def scheme_leaves(S, keys):
     cur = None
     for i in range(start + 1, len(lines)):
         s = lines[i].strip()
-        if TRANSCRIPT.match(s):
+        # The listening test ends at its transcript, or where the scheme
+        # prints it first (2021 Ordinary) at the written paper's first unit.
+        if TRANSCRIPT.match(s) or any(rx.match(s) for rx in (UNIT_LV, UNIT_AG, UNIT_AT, UNIT_SP)):
             break
         m = LISTEN_PART.match(s)
         if m:
@@ -291,7 +298,8 @@ def scheme_leaves(S, keys):
             body = ([rest] if rest.strip() else []) + block[i + 1:end]
             out[(p, q, roman)] = Leaf(part=p, q=q, roman=roman, total=totals.get(roman),
                                       lines=body, default=defaults.get(roman), rule=rule,
-                                      line=line_no + 2 + i)
+                                      line=line_no + 2 + i, q_total=head_total(clause),
+                                      q_split=_steps(clause))
     return out, rules
 
 
@@ -400,9 +408,14 @@ def leaf_rows(leaf, asked_text):
         text = s
         if marker:
             text = marker.group(4).strip()
+            if marker.group(1) and re.fullmatch(r'\(\s*\d{1,2}\s*marks?\s*\)', text, re.I):
+                # The answer is the letter itself: "(d) (2 marks)" for a
+                # choice printed "(a) … (d)" in the question (2021 Ordinary).
+                text = f'({marker.group(1)}) {text}'
+                marker = None
         else:
             m = LABEL.match(s)
-            if m and not re.search(r'\d', m.group(1)):
+            if m and not re.search(r'\d', m.group(1)) and not re.match(r'^Any\b', m.group(1), re.I):
                 rest = m.group(2).strip()
                 got, _r = rate_line(rest) if rest else (None, None)
                 summary = re.match(r'^\(?\s*\d{1,3}\s*marks?\b', rest, re.I)
@@ -423,6 +436,10 @@ def leaf_rows(leaf, asked_text):
                 close()
                 label = m.group(1)
                 text = rest
+                # A field opens here: the line is its own answer, never the
+                # second line of the list above it ("… zurück" / "Anrufer:
+                # erhält … einen Rückruf (2 marks)", 2021 Higher).
+                last = None
         # An unmarked line under a marked answer is that answer's second line,
         # and a bracket alone ("(Two details)") is a remark on it.
         # A wrapped line follows a full one (the scheme's lines run to some
@@ -515,6 +532,14 @@ def leaf_rows(leaf, asked_text):
     if not items:
         return 'the scheme prints no answers this reads for the ask'
     if leaf.total is None:
+        # The head prints its split only as a list of answer prices — "3. 6
+        # marks: 2, 2, 2 marks" over "(i)" with two answers priced "(2)" each
+        # and "(ii)" with one (2022 Ordinary L1 Q3). Where every row of the
+        # roman prices itself, its total is those printed prices; cards()
+        # then checks that the romans' prices, in order, are the head's list.
+        if leaf.q_split and all(x['kind'] == 'point' for x in items):
+            leaf.total = got
+            return items, general
         return 'the scheme prints no total this reads for the ask'
     if got != leaf.total:
         return f'the scheme prices this ask {leaf.total} and its own rows add to {got}'
@@ -522,6 +547,61 @@ def leaf_rows(leaf, asked_text):
         if it['kind'] == 'group' and len(it['options']) < len(it['steps']):
             return 'the scheme prices more answers than it states'
     return items, general
+
+
+# A priced alternative the scheme prints beside an answer: "N.B. Crime: 1
+# mark" under it, "… N.B. She got a (new/another) dress: 1 mark" or "(Allow:
+# cheap = 1 mark)" inside it. Paid in place of the answer, never beside it.
+PARTIAL_NOTE = re.compile(r'^N\.?\s?B\.?:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?\.?$', re.I)
+PARTIAL_INLINE = re.compile(r'\s+(?:N\.?\s?B\.?:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?|'
+                            r'\(Allow:?\s*(.+?)\s*[:=]\s*([1-9])\s*marks?\))\s*$', re.I)
+
+
+def _partials(rows):
+    """Each priced alternative made claimable through optionOf, as the
+    Spanish deck's partials are: an answer and its alternative are one pick,
+    paid once at the better of the two claimed."""
+    out = []
+    for row in rows:
+        note = row.get('contextNote') or ''
+        if row['kind'] == 'point':
+            parts = [x for x in re.split(r'(?<=[.)”])\s+(?=N\.?\s?B\b)', note)]
+            hit = next((PARTIAL_NOTE.match(x.strip()) for x in parts if PARTIAL_NOTE.match(x.strip())), None)
+            if hit and int(hit.group(2)) < row['marks']:
+                keep = ' '.join(x for x in parts if not PARTIAL_NOTE.match(x.strip()))
+                said = (f'The scheme allows “{hit.group(1)}” for {hit.group(2)} '
+                        f'mark{"s" if hit.group(2) != "1" else ""}, in place of the answer above, never beside it.')
+                row = {'id': row['id'], 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                       'marks': None,
+                       'group': {'claimMax': 1, 'perOption': row['marks'],
+                                 'options': [row['verbatim'], hit.group(1)],
+                                 'optionMarks': [row['marks'], int(hit.group(2))],
+                                 'optionOf': [None, 0]},
+                       'contextNote': ' '.join(x for x in (keep, said) if x)}
+        elif row['kind'] == 'anyN' and not row['group'].get('perOptionSteps') and not row['group'].get('optionMarks'):
+            g = row['group']
+            options, marks, parents, said = [], [], [], []
+            for o in g['options']:
+                m = PARTIAL_INLINE.search(o)
+                options.append(o[:m.start()].strip() if m else o)
+                marks.append(g['perOption'])
+                parents.append(None)
+                if m:
+                    alt, n = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
+                    if int(n) < g['perOption']:
+                        said.append((alt, n, len(options) - 1))
+            if said:
+                for alt, n, of in said:
+                    options.append(alt)
+                    marks.append(int(n))
+                    parents.append(of)
+                row = dict(row)
+                row['group'] = {**g, 'options': options, 'optionMarks': marks, 'optionOf': parents}
+                text = ' '.join(f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}, in '
+                                f'place of “{options[of]}”, never beside it.' for alt, n, of in said)
+                row['contextNote'] = ' '.join(x for x in (row.get('contextNote'), text) if x)
+        out.append(row)
+    return out
 
 
 def mark_rows(items, language_note, general=()):
@@ -603,7 +683,7 @@ def mark_rows(items, language_note, general=()):
         if notes:
             row['contextNote'] = ' '.join(notes)
         rows.append(row)
-    return rows
+    return _partials(rows)
 
 
 # ------------------------------------------------------------- the paper ---
@@ -655,14 +735,22 @@ def question_text(lines, answers=()):
                         and (sentence or not t.endswith('.'))
                         # a lead-in breaks off on its article or preposition
                         # ("The telephone call is to a")
-                        and not re.search(r'\b(?:a|an|the|to|is|are|of|between|for)$', t, re.I))
+                        and not re.search(r'\b(?:a|an|the|to|is|are|of|between|for|says)$', t, re.I))
             lo = hi = anchor
             while lo - 1 > tick and near(lo, lo - 1):
                 lo -= 1
             while hi + 1 < len(lines) and near(hi, hi + 1):
                 hi += 1
             if hi > lo:
-                choices = [' '.join(t.split()) for t, _x in lines[lo:hi + 1]]
+                choices = []
+                for t, _x in lines[lo:hi + 1]:
+                    t = ' '.join(t.split())
+                    # A choice the booklet wraps onto a second line: "he
+                    # should discuss this with her" / "and his father".
+                    if choices and re.match(r'^(?:and|or|und|oder)\b', t):
+                        choices[-1] = f'{choices[-1]} {t}'
+                    else:
+                        choices.append(t)
                 lines = lines[:lo] + lines[hi + 1:]
     paras = []
     for text, _x in lines:
@@ -737,6 +825,29 @@ def cards(year, level, refuse, card_id, question_ref, concept_for):
     fileid = aural_fileid(year, level)
     assert fileid in rec['paperFileids'], (year, level, fileid)
     out = []
+    # Romans priced only by the head's list of answer prices: read each, and
+    # card them only where their printed prices, in order, are that list.
+    derived = {}
+    for key, leaf in leaves.items():
+        if key[2] and leaf.total is None and leaf.q_split:
+            lines_, _pg = asks.get(key, ([], None))
+            got_ = leaf_rows(leaf, ' '.join(t for t, _x in lines_))
+            derived.setdefault(key[:2], []).append((key[2], got_))
+    bad_q = set()
+    for qkey, romans in derived.items():
+        flat = []
+        for roman, got_ in sorted(romans, key=lambda r: ROMANS.index(r[0])):
+            if isinstance(got_, str):
+                flat = None
+                break
+            flat += [x['marks'] for x in got_[0]]
+        leaf0 = leaves[(qkey[0], qkey[1], romans[0][0])]
+        romans_in_q = [k for k in keys if k[:2] == qkey and k[2]]
+        if (flat is None or flat != list(leaf0.q_split) or sum(flat) != leaf0.q_total
+                or len(romans) != len(romans_in_q)):
+            bad_q.add(qkey)
+            for roman, _g in romans:
+                leaves[(qkey[0], qkey[1], roman)].total = None
     for part, q, roman in keys:
         unit = f'L{part}'
         ref = question_ref(year, level, unit, q, None, roman)
@@ -749,6 +860,10 @@ def cards(year, level, refuse, card_id, question_ref, concept_for):
         if leaf is None:
             refuse('the scheme prints no block for this listening ask', ref,
                    f'{year} {level.upper()} scheme, listening part {part} Q{q}')
+            continue
+        if (part, q) in bad_q:
+            refuse('the head prints its split as a list of prices the romans\' own rows do not '
+                   'match', ref, f'{year} {level.upper()} scheme, listening part {part} Q{q}')
             continue
         printed = ' '.join(t for t, _x in lines)
         got = leaf_rows(leaf, printed)
