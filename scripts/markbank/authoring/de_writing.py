@@ -57,7 +57,12 @@ def expression_scale(S, head, columns=2):
     # table as well as below it: the table ends at the one after its first
     # category.
     first = _find(S, r'^Vocabulary', start)
-    stop = _find(S, r'^N\.B\. Take a global view', first)
+    # It ends at the N.B. under it, or (deferred 2022, which prints that N.B.
+    # above the table only) at whatever the scheme prints next.
+    stops = [_find(S, rx, first) for rx in (
+        r'^N\.B\. Take a global view', r'^SCHRIFTLICHE PRODUKTION', r'^Marking Written Expression',
+        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b')]
+    stop = min((x for x in stops if x is not None), default=None)
     lines = _lines(S, start + 1, stop)
     cats = []
     for line in lines:
@@ -73,8 +78,13 @@ def expression_scale(S, head, columns=2):
             # ("… Verb" / "4 – 6 forms/tense …"): the words either side are
             # kept apart, as the scheme's text has them.
             cats[-1]['lines'].append(None)
-            if m.group(5):
+            if m.group(5) and not re.fullmatch(r'\*+', m.group(5).strip()):
                 cats[-1]['lines'].append(m.group(5).strip())
+            continue
+        if re.fullmatch(r'\*+', line):
+            # (deferred 2022) the asterisk row the scheme sets between a
+            # category's upper and lower descriptors: a rule, not words.
+            cats[-1]['lines'].append(None)
             continue
         cats[-1]['lines'].append(line)
     one, two = [], []
@@ -132,7 +142,7 @@ def theme_grid(S, letter):
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
-        m = re.match(r'^([ABC]):? \((\d) marks\)$', line)
+        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)$', line)
         if m:
             cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
             points.append(cur)
@@ -144,6 +154,13 @@ def theme_grid(S, letter):
         (cur['lines'] if cur else head).append(line)
     assert [p['marks'] for p in points] == [3, 4, 4, 2], (S.year, S.level, letter, points)
     return head, points
+
+
+# The furniture of the extra-work pages that close the Higher booklet (2022-
+# 2026), read on as if it were the last task's: "Spás le haghaidh obair
+# bhreise. / Lipéadaigh aon obair bhreise … / This is space for extra work.
+# Label any such extra work clearly with the question number and part."
+EXTRA_WORK = re.compile(r'^(?:Spás le haghaidh obair bhreise|This is space for extra work)', re.I)
 
 
 def task_text(P, unit, letter):
@@ -161,6 +178,10 @@ def task_text(P, unit, letter):
         t = ' '.join(raw.replace('\uf0b7', '•').split())
         if not t:
             continue
+        if EXTRA_WORK.match(t):
+            break                    # the booklet's extra-work pages, never the task
+        if re.fullmatch(r'[_\s]+', t):
+            continue                 # the ruled lines the answer is written on (2020)
         title = len(out) == 1 and not re.search(r'[.?!:)]$', out[0]) and t[:1].isupper()
         if out and not t.startswith('•') and not re.search(r'[.?!:)]$', out[-1]) and not title:
             out[-1] = f'{out[-1]} {t}'
@@ -222,10 +243,11 @@ def _expression(maxm, bands, lower=None):
     return k
 
 
-def atlas_written(year, level):
+def atlas_written(year, level, sitting=None):
     with open(TAGS, encoding='utf-8') as fh:
         papers = json.load(fh)
-    fileid = f'LC011{"A" if level == "hl" else "G"}LP000{"BV" if year >= 2019 else "EV"}.pdf'
+    fileid = f'LC011{"A" if level == "hl" else "G"}LP000{"BV" if year >= 2019 else "EV"}' \
+             f'{"-deferred" if sitting else ""}.pdf'
     for p in papers:
         if p['year'] == year and p['level'] == LEVEL_WORD[level] and p['lang'] == 'ev' and p['fileid'] == fileid:
             return {q['n']: q for q in p['q']}
@@ -308,10 +330,10 @@ def _page_span(S, a, b):
 
 
 # ------------------------------------------------------------- Higher -----
-def higher_cards(year, card_id, question_ref, concept_for):
-    P = DePaper(year, 'hl', 'german')
-    S = DeScheme(year, 'hl', 'german')
-    tags = atlas_written(year, 'hl')
+def higher_cards(year, card_id, question_ref, concept_for, sitting=None):
+    P = DePaper(year, 'hl', 'german', sitting)
+    S = DeScheme(year, 'hl', 'german', sitting)
+    tags = atlas_written(year, 'hl', sitting)
     out = []
     # Äußerung zum Thema: A, B, C, Dis. as printed; Expression 12, Lower E 7.
     at_one, at_two, at_nb, at_at = expression_scale(S, r'^Marking Written Expression in [ÄA]u[ßs]{1,2}erung')
@@ -323,8 +345,12 @@ def higher_cards(year, card_id, question_ref, concept_for):
             'label': 'Lower E', 'maxMarks': 7, 'permittedMarks': list(range(8)), 'bands': at_one,
             'contentCriteria': [p['id'] for p in points], 'contentAtMost': 8, 'wordsUnder': 60,
             'rule': at_rule}))
+        # A bullet opens an instruction of its own: an instruction printed
+        # without a full stop ("• Award content marks first", 2019-2020) is
+        # never joined to the bullet below it.
         reqs = ['Content = 13 (A = 3; B = 4; C = 4; Dis. 2)', 'Expression = 12'] + _join(
-            [l.lstrip('•\uf0b7 ').strip() for l in head if not re.match(r'^(Content|Expression) =', l)])
+            [x for l in head if not re.match(r'^(Content|Expression) =', l)
+             for x in ([None] if re.match(r'^[•\uf0b7]', l) else []) + [l.lstrip('•\uf0b7 ').strip()]])
         if at_nb:
             reqs.append(at_nb)
         text, _page = task_text(P, 'AT', letter)
@@ -358,9 +384,20 @@ def higher_cards(year, card_id, question_ref, concept_for):
         # 2023 prints (b)'s "Note: Answer any five …" above its "(b)" line,
         # so it closes (a)'s block: the task's own note is the first in its
         # block, or else the one printed just above it.
-        want = re.search(r'Answer any (\w+) of the', ' '.join(head)) or re.search(
-            r'Answer any (\w+) of the', ' '.join(_lines(S, lo - 4, lo)))
-        n = {'four': 4, 'five': 5}[want.group(1).lower()]
+        # The deferred 2022 photo task prints no "Answer any five …" but "mark
+        # all and award marks for the best five".
+        rx = r'Answer any (\w+) of the|for the best (\w+)\b'
+        want = re.search(rx, ' '.join(head)) or re.search(rx, ' '.join(_lines(S, lo - 4, lo)))
+        points = [x for x in labelled if x[0] not in ('Op', 'Cl')]
+        # Until 2020 the candidate answered EVERY point: the scheme prints no
+        # "Answer any four …" and its content adds up only with all of them
+        # ("Content = 25 marks": Op. 2 + A-D 4 each + Cl. 2 + Dis. 5). Each
+        # point is then a criterion of its own, as Op. and Cl. are.
+        every = want is None
+        n = len(points) if every else {'four': 4, 'five': 5}[(want.group(1) or want.group(2)).lower()]
+        if every:
+            # The content must add up with every point: "Content = 25 marks".
+            assert sum(x[1] for x in labelled) + 5 == 25, (year, letter, labelled)
         criteria, reqs = [], [l for l in head if not l.startswith('Dis.:')]
         for label, marks, block in labelled:
             block = [l for l in block if not l.startswith('Dis.:')]
@@ -368,10 +405,14 @@ def higher_cards(year, card_id, question_ref, concept_for):
                 criteria.append(_criterion(label.lower(), f'{label}.', marks, block))
             else:
                 assert marks == 4, (year, letter, label)
-                reqs.extend(block)
-        points = [x for x in labelled if x[0] not in ('Op', 'Cl')]
+                if every:
+                    criteria.append(_criterion(label.lower(), f'{label}.', marks, block))
+                else:
+                    reqs.extend(block)
         cl = [k for k in criteria if k['id'] == 'cl']
-        criteria = [k for k in criteria if k['id'] == 'op'] + _points(n, 4) + cl + [
+        chosen = ([k for k in criteria if k['id'] not in ('op', 'cl')] if every
+                  else _points(n, 4))
+        criteria = [k for k in criteria if k['id'] == 'op'] + chosen + cl + [
             _criterion('dis', 'Dis.', 5, [dis])]
         content = [k['id'] for k in criteria]
         criteria.append(_expression(25, sp_two, {
@@ -385,7 +426,7 @@ def higher_cards(year, card_id, question_ref, concept_for):
         out.append(_card(year, 'hl', 'SP', letter, 50, _rubric(reqs, criteria), text,
                          _source(P, year, 'hl', 'SP', letter, 'Schriftliche Produktion'),
                          tags[f'P-{letter.upper()}']['primary'], pages, concept_for, question_ref,
-                         [PRACTICE, PRACTICE_LOWER, PRACTICE_POINTS]))
+                         [PRACTICE, PRACTICE_LOWER] + ([] if every else [PRACTICE_POINTS])))
     return out
 
 
@@ -474,15 +515,37 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(Cl|[A-F])\.? \((\d)\)')
             cl = [x for x in labelled if x[0] == 'Cl']
             points = [x for x in labelled if x[0] != 'Cl']
-            content_total = 16
-            n = (content_total - sum(x[1] for x in cl)) // points[0][1]
-            assert all(x[1] == points[0][1] for x in points) and len(points) >= n
-            criteria = _points(n, points[0][1]) + [_criterion('cl', 'Cl', x[1], x[2]) for x in cl]
-            reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
+            # The content total the section prints, "(St. = 4, C = 16, Ex. =
+            # 10)" (2021-2026) or "(St. = 5, C = 15, Ex. = 10)" (2019-2020).
+            # 2022 prints the closing apart, "(St. = 4, C = 15, CL = 1, Ex. =
+            # 10)": the content the grid holds is then C and CL together.
+            sp_head = ' '.join(_lines(S, sp, lo + 1))
+            content_total = int(re.search(r'\bC\s*=\s*(\d+)', sp_head).group(1))
+            cl_apart = re.search(r'\bCL\s*=\s*(\d+)', sp_head)
+            content_total += int(cl_apart.group(1)) if cl_apart else 0
+            # Until 2020 the candidate wrote EVERY point, priced as printed
+            # ("A. (3)", "E. (4)"): no "answer any FIVE points" is printed and
+            # the points and Cl. add to C exactly (2025 prints no "any five"
+            # either, but its six points of 3 and Cl. 1 are 19 against C = 16:
+            # a choice). Each point is then a criterion of its own.
+            every = (not re.search(r'\bany\s+\w+\s+points?\b', ' '.join(head), re.I)
+                     and sum(x[1] for x in points + cl) == content_total)
+            if every:
+                criteria = ([_criterion(x[0].lower(), x[0], x[1], x[2]) for x in points]
+                            + [_criterion('cl', 'Cl', x[1], x[2]) for x in cl])
+                assert sum(k_['maxMarks'] for k_ in criteria) == content_total, (year, letter)
+                reqs = head + ([ex_line] if ex_line else [])
+            else:
+                n = (content_total - sum(x[1] for x in cl)) // points[0][1]
+                assert all(x[1] == points[0][1] for x in points) and len(points) >= n
+                criteria = _points(n, points[0][1]) + [_criterion('cl', 'Cl', x[1], x[2]) for x in cl]
+                reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
         else:
-            c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(12\)', l))
+            every = False
+            c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(\d{1,2}\)', l))
+            c_marks = int(re.match(r'^C \((\d{1,2})\)', rest[c_at]).group(1))
             guide = [l for l in rest[c_at:] if not l.startswith('Ex.')]
-            criteria = [_criterion('content', 'C', 12, guide)]
+            criteria = [_criterion('content', 'C', c_marks, guide)]
             reqs = [l for l in rest[:c_at]] + ([ex_line] if ex_line else [])
         content = [k_['id'] for k_ in criteria]
         criteria.append(_expression(10, two, {
@@ -497,7 +560,7 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         total = sum(k_['maxMarks'] for k_ in criteria)
         out.append(_card(year, 'ol', 'SP', letter, total, _rubric(reqs, criteria), text,
                          _source(P, year, 'ol', 'SP', letter, title), topic, pages, concept_for,
-                         question_ref, [PRACTICE, PRACTICE_LOWER] + ([PRACTICE_POINTS] if letter == 'a' else [])))
+                         question_ref, [PRACTICE, PRACTICE_LOWER] + ([PRACTICE_POINTS] if letter == 'a' and not every else [])))
         # The fill-in phrases: one claim row per phrase at its printed price.
         ask = re.search(r'(Firstly, complete[^.]*\.)', ' '.join(text.split('\n')))
         out.append({
@@ -518,8 +581,18 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     return out
 
 
-def cards(year, level, card_id, question_ref, concept_for):
-    return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+def cards(year, level, card_id, question_ref, concept_for, sitting=None):
+    if not sitting:
+        return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+    # A deferred sitting's cards are "de-2022-hl-deferred-…", cited "… —
+    # Deferred sitting", on the deferred booklet.
+    out = higher_cards(year, card_id, lambda *a: f'{question_ref(*a)} — Deferred sitting',
+                       concept_for, sitting)
+    for card in out:
+        card['id'] = card['id'].replace(f'de-{year}-{level}-', f'de-{year}-{level}-deferred-', 1)
+        src = card['sourceMaterial']
+        src['attribution'] = src['attribution'].replace('examination paper', 'deferred examination paper')
+    return out
 
 
 def _page_of(S, text):

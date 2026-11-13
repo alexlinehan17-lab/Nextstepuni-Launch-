@@ -103,14 +103,16 @@ describe('German exam-topic registry', () => {
       referenceOfficialAssociations: 479,
       referenceMockAssociations: 341,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 379,
-      sourceBlockedAssociations: 100,
-      sourceBlockedByReason: { preCorpus: 90, deferred: 10 },
-      matchedLocalCardLinks: 653,
+      // 2026-11-13: the ten 2022 deferred headings resolve to the carded
+      // deferred sitting (379/100 before).
+      matchedAssociations: 389,
+      sourceBlockedAssociations: 90,
+      sourceBlockedByReason: { preCorpus: 90 },
+      matchedLocalCardLinks: 670,
     });
     expect(germanCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = germanCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
-    expect(blocked).toHaveLength(100);
+    expect(blocked).toHaveLength(90);
     expect(blocked.every(item => 'reason' in item && item.reason.length > 0)).toBe(true);
   });
 
@@ -124,9 +126,11 @@ describe('German exam-topic registry', () => {
     )))].sort();
     // 753 from 13 Nov 2026: 2026 Ordinary TEXT II Q5, which its answer map
     // never anchored, is a question of its own (UNANCHORED_READINGS).
-    expect(references).toHaveLength(753);
+    // 760 from 2026-11-13: the deferred sitting's own questions.
+    expect(references).toHaveLength(760);
     expect(actual).toEqual(expected);
-    expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(10);
+    // The ten deferred headings now name the carded deferred questions they resolve to: 17 part references.
+    expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(17);
   });
 
   it('preserves all 20 frozen variants and every original card and tag verbatim', () => {
@@ -145,20 +149,21 @@ describe('German exam-topic registry', () => {
   it('adds every reviewed sidecar and all verified writing choices', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'german');
     expect(germanCrosswalk.summary).toMatchObject({
-      localPaperVariants: 100,
-      localPhysicalMappings: 971,
-      distinctStudentFacingQuestions: 665,
-      referenceMappedLocalQuestions: 632,
+      // 102 from 2026-11-13: June's 100 and the 2022 Higher deferred sitting's two.
+      localPaperVariants: 102,
+      localPhysicalMappings: 988,
+      distinctStudentFacingQuestions: 682,
+      referenceMappedLocalQuestions: 649,
       retainedLocalQuestions: 339,
-      hostedPaperAnchorMaps: 100,
+      hostedPaperAnchorMaps: 102,
       preservedBaselineVariants: 20,
       preservedBaselineCards: 220,
-      newlyAddedPaperVariants: 80,
-      newlyAddedPhysicalMappings: 751,
+      newlyAddedPaperVariants: 82,
+      newlyAddedPhysicalMappings: 768,
       emptyOfficialReferenceTopics: ['german-ordinary-write-a-blog'],
     });
-    expect(papers).toHaveLength(100);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(971);
+    expect(papers).toHaveLength(102);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(988);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -249,9 +254,9 @@ describe('German exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 665 distinct questions and only leaves the mock-only blog bucket empty', () => {
+  it('surfaces all 682 distinct questions and only leaves the mock-only blog bucket empty', () => {
     expect(subjectAtlasStats('german')).toMatchObject({
-      questions: 665,
+      questions: 682,
       topics: 25,
       yearMin: 2010,
       yearMax: 2026,

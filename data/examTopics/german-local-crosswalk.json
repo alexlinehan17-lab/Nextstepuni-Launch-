@@ -14,23 +14,22 @@
     "referenceOfficialAssociations": 479,
     "referenceMockAssociations": 341,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 379,
-    "sourceBlockedAssociations": 100,
+    "matchedAssociations": 389,
+    "sourceBlockedAssociations": 90,
     "sourceBlockedByReason": {
-      "deferred": 10,
       "preCorpus": 90
     },
-    "matchedLocalCardLinks": 653,
-    "localPaperVariants": 100,
-    "localPhysicalMappings": 971,
-    "distinctStudentFacingQuestions": 665,
-    "referenceMappedLocalQuestions": 632,
+    "matchedLocalCardLinks": 670,
+    "localPaperVariants": 102,
+    "localPhysicalMappings": 988,
+    "distinctStudentFacingQuestions": 682,
+    "referenceMappedLocalQuestions": 649,
     "retainedLocalQuestions": 339,
-    "hostedPaperAnchorMaps": 100,
+    "hostedPaperAnchorMaps": 102,
     "preservedBaselineVariants": 20,
     "preservedBaselineCards": 220,
-    "newlyAddedPaperVariants": 80,
-    "newlyAddedPhysicalMappings": 751,
+    "newlyAddedPaperVariants": 82,
+    "newlyAddedPhysicalMappings": 768,
     "emptyOfficialReferenceTopics": [
       "german-ordinary-write-a-blog"
     ]
@@ -138,8 +137,17 @@
       "sitting": "deferred",
       "paperKey": "aural",
       "referenceSlot": "A3",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "aural",
+        "kind": "aural",
+        "fileid": "LC011ALPA00BV-deferred.pdf",
+        "questionNumbers": [
+          "3"
+        ]
+      }
     },
     {
       "topicId": "german-higher-aural-dialogue",
@@ -491,8 +499,17 @@
       "sitting": "deferred",
       "paperKey": "aural",
       "referenceSlot": "A1",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "aural",
+        "kind": "aural",
+        "fileid": "LC011ALPA00BV-deferred.pdf",
+        "questionNumbers": [
+          "1"
+        ]
+      }
     },
     {
       "topicId": "german-higher-aural-interview",
@@ -844,8 +861,17 @@
       "sitting": "deferred",
       "paperKey": "aural",
       "referenceSlot": "A4",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "aural",
+        "kind": "aural",
+        "fileid": "LC011ALPA00BV-deferred.pdf",
+        "questionNumbers": [
+          "4"
+        ]
+      }
     },
     {
       "topicId": "german-higher-aural-news-pieces",
@@ -1197,8 +1223,17 @@
       "sitting": "deferred",
       "paperKey": "aural",
       "referenceSlot": "A2",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "aural",
+        "kind": "aural",
+        "fileid": "LC011ALPA00BV-deferred.pdf",
+        "questionNumbers": [
+          "2"
+        ]
+      }
     },
     {
       "topicId": "german-higher-aural-phone-call",
@@ -1609,8 +1644,18 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "T",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "T-A",
+          "T-B"
+        ]
+      }
     },
     {
       "topicId": "german-higher-aeusserung-zum-thema-write-on-a-theme",
@@ -2213,8 +2258,20 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "II",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "II1",
+          "II2",
+          "II3",
+          "II4"
+        ]
+      }
     },
     {
       "topicId": "german-higher-comprehension-magazine-or-newspaper",
@@ -2664,8 +2721,20 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "I",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "I1",
+          "I2",
+          "I3",
+          "I4"
+        ]
+      }
     },
     {
       "topicId": "german-higher-comprehension-novel-or-short-story",
@@ -3100,8 +3169,17 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "G",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "G"
+        ]
+      }
     },
     {
       "topicId": "german-higher-grammatik-grammar",
@@ -3503,8 +3581,17 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "P-B",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "P-B"
+        ]
+      }
     },
     {
       "topicId": "german-higher-schriftliche-produktion-picture",
@@ -3867,8 +3954,17 @@
       "sitting": "deferred",
       "paperKey": "single",
       "referenceSlot": "P-A",
-      "resolution": "source-blocked",
-      "reason": "The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "kind": "written",
+        "fileid": "LC011ALP000BV-deferred.pdf",
+        "questionNumbers": [
+          "P-A"
+        ]
+      }
     },
     {
       "topicId": "german-higher-schriftliche-produktion-write-a-letter",
@@ -10604,6 +10700,175 @@
       "level": "higher",
       "lang": "ev",
       "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "I1",
+      "topicIds": [
+        "german-higher-comprehension-novel-or-short-story"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "I2",
+      "topicIds": [
+        "german-higher-comprehension-novel-or-short-story"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "I3",
+      "topicIds": [
+        "german-higher-comprehension-novel-or-short-story"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "I4",
+      "topicIds": [
+        "german-higher-comprehension-novel-or-short-story"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "II1",
+      "topicIds": [
+        "german-higher-comprehension-magazine-or-newspaper"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "II2",
+      "topicIds": [
+        "german-higher-comprehension-magazine-or-newspaper"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "II3",
+      "topicIds": [
+        "german-higher-comprehension-magazine-or-newspaper"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "II4",
+      "topicIds": [
+        "german-higher-comprehension-magazine-or-newspaper"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "G",
+      "topicIds": [
+        "german-higher-grammatik-grammar"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "T-A",
+      "topicIds": [
+        "german-higher-aeusserung-zum-thema-write-on-a-theme"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "T-B",
+      "topicIds": [
+        "german-higher-aeusserung-zum-thema-write-on-a-theme"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "P-A",
+      "topicIds": [
+        "german-higher-schriftliche-produktion-write-a-letter"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALP000BV-deferred.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "P-B",
+      "topicIds": [
+        "german-higher-schriftliche-produktion-picture"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
       "fileid": "LC011ALP000BV.pdf",
       "paperKey": "single",
       "kind": "written",
@@ -10766,6 +11031,58 @@
       "n": "P-B",
       "topicIds": [
         "german-higher-schriftliche-produktion-picture"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALPA00BV-deferred.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "1",
+      "topicIds": [
+        "german-higher-aural-interview"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALPA00BV-deferred.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "2",
+      "topicIds": [
+        "german-higher-aural-phone-call"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALPA00BV-deferred.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "3",
+      "topicIds": [
+        "german-higher-aural-dialogue"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC011ALPA00BV-deferred.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "4",
+      "topicIds": [
+        "german-higher-aural-news-pieces"
       ],
       "provenance": "reference"
     },
@@ -21189,7 +21506,9 @@
     "public/paper-anchors/2023/LC011ALPA00BV.pdf.json",
     "public/paper-anchors/2023/LC011GLP000BV.pdf.json",
     "public/paper-anchors/2023/LC011GLPA00BV.pdf.json",
+    "public/paper-anchors/2022/LC011ALP000BV-deferred.pdf.json",
     "public/paper-anchors/2022/LC011ALP000BV.pdf.json",
+    "public/paper-anchors/2022/LC011ALPA00BV-deferred.pdf.json",
     "public/paper-anchors/2022/LC011ALPA00BV.pdf.json",
     "public/paper-anchors/2022/LC011GLP000BV.pdf.json",
     "public/paper-anchors/2022/LC011GLPA00BV.pdf.json",

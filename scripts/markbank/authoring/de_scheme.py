@@ -140,6 +140,27 @@ R_HEAD = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.*)$', re.I)
 # the tariff is on the head. Both are read.
 AG_HEAD = re.compile(r'^(\d)\s*\.\s*(.*)$')
 AG_ITEM = re.compile(r'^\(\s*(\d{1,2}|i{1,3}|iv|vi{0,3}|v)\s*\)\s*(.+)$', re.I)
+# The scheme's own statement that the two questions are alternatives.
+GRAMMAR_OR = re.compile(r'^(?:OR|N[ÓO]/OR)$|\bquestion\s+1\s+OR\s+question\s+2\b', re.I)
+# A grammar question's own head: "(15 marks: 5 x 3)", "1. (10 marks: 10 x 1 mark)".
+QUESTION_TOTAL = re.compile(r'^(?:\d\.\s*)?\((\d{1,2})\s+marks?\b', re.I)
+
+
+# "Compound words … say what words each compound word is made up of (5 marks)
+# and what the underlined words mean. (5 marks)" — the only place a scheme that
+# prints no mark on its compounds states what each is worth.
+COMPOUND_HALVES = re.compile(
+    r'(Compound words\b.*?made up of \((\d{1,2}) marks\).*?mean\.?\s*\((\d{1,2}) marks\))',
+    re.I)
+
+
+def _question_total(block):
+    """The total a compulsory grammar question prints on its own head."""
+    for line in block:
+        m = QUESTION_TOTAL.match(line.strip())
+        if m:
+            return int(m.group(1))
+    return None
 
 # A numbered answer line. The list restarts at 1 under every ask, so answers are
 # only ever collected inside a block a head has closed.
@@ -220,7 +241,8 @@ SPEC_LIST = re.compile(r'^\d{1,2}(?:\s*,\s*\d{1,2})+(?:\s*marks?)?$', re.I)
 SPEC_ONE = re.compile(r'^(\d{1,2})\s*marks?$', re.I)
 # "(10 marks. 2 x 2 marks; 3 x 2 marks)" — the SEC separates a total from its
 # spec with a colon almost always, a full stop once, and a semicolon once.
-TOTAL_THEN = re.compile(r'^(\d{1,3}|\w+)\s*marks?\s*[:.;]\s*(.+)$', re.I)
+# "(4 marks 2 + 2 marks)" (2020 Higher) drops the colon before its split.
+TOTAL_THEN = re.compile(r'^(\d{1,3}|\w+)\s*marks?\s*(?:[:.;]\s*|\s+(?=\d{1,2}\s*[+x×,]))(.+)$', re.I)
 
 # The words a reprinted question is written in. Both signals are read and they
 # must agree; the reprint wins, because it is the ask itself.
@@ -254,6 +276,10 @@ def parse_spec(text):
         "2 x 2 marks; 3 x 2 marks" two menus of one ask        [2, 2, 2, 2, 2]
     """
     s = ' '.join((text or '').split()).strip()
+    # "Any THREE details: 9 marks: 4, 3, 2," (2021 Ordinary): a stray comma
+    # closing the list; "(2 marks):" (2019 Higher): a colon after the bracket.
+    s = re.sub(r'(?<=\d),$', '', s)
+    s = re.sub(r'(?<=\))\s*:$', '', s)
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
     if not s:
@@ -304,6 +330,10 @@ def read_rate(text):
     marks" would be one — is refused instead of being half believed.
     """
     s = ' '.join((text or '').split()).strip()
+    # "Any THREE details: 9 marks: 4, 3, 2," (2021 Ordinary): a stray comma
+    # closing the list; "(2 marks):" (2019 Higher): a colon after the bracket.
+    s = re.sub(r'(?<=\d),$', '', s)
+    s = re.sub(r'(?<=\))\s*:$', '', s)
     while s.startswith('(') and s.endswith(')'):
         s = s[1:-1].strip()
     # 2026 Higher prints "(Any four: 4 x 2 marks" with its bracket never
@@ -363,6 +393,13 @@ def read_rate_line(text):
     got, cnt = read_rate(s)
     if got is not None:
         return got, cnt, None
+    # "Any TWO details: 3, 2 N.B. Allow use of past tense" (2020 Ordinary):
+    # the aside runs on after the rate with no bracket round it.
+    m = re.match(r'^(.*?\d)\s+(N\.\s?B\.?\s.+)$', s)
+    if m:
+        got, cnt = read_rate(m.group(1))
+        if got is not None:
+            return got, cnt, m.group(2)
     remark = []
     while True:
         m = re.search(r'\s*(\([^()]*\))\s*$', s)
@@ -399,6 +436,7 @@ def parse_head_clause(clause):
         "(22 marks: (a) (i) 8 marks; (ii) 6 marks; (b) 8 marks)"
         "(18 marks: a: 4 marks; b: 6 marks; c: 8 marks)"
         "(17 marks: (a) 6; (b) 2; (c) 5; (d) 4)"
+        "(16 marks: a = 10 marks; b = 6 marks)"     (2019 Higher)
 
     A clause naming no letter is a LEAF question and returns ({}, {}): "(10
     marks: Any two: 2 x 5 marks)" prices one ask, not two lettered ones.
@@ -411,7 +449,7 @@ def parse_head_clause(clause):
     cur_letter = cur_roman = None
     pos = 0
     pattern = re.compile(
-        r'\(\s*(?P<let>[a-h])\s*\)|(?:^|[:;,(]\s*)(?P<let2>[a-h])\s*:'
+        r'\(\s*(?P<let>[a-h])\s*\)|(?:^|[:;,(]\s*)(?P<let2>[a-h])\s*[:=]'
         r'|\(\s*(?P<rom>i{1,3}|iv|vi{0,3}|v)\s*\)|(?P<num>\d{1,3})', re.I)
     for m in pattern.finditer(s):
         if m.group('let') or m.group('let2'):
@@ -487,21 +525,34 @@ class Ask:
         return f'<Ask {self.unit} {self.q}{self.letter or ""}{self.roman or ""}>'
 
 
+SECTION_LANGUAGE = re.compile(
+    r'^Answer Questions? \d+(?:,\s*\d+)*(?:\s+and\s+(?:Question\s+)?\d+)? in (?:English|German|Irish)\.?$',
+    re.I)
+
+
 class DeScheme:
     """One published German marking scheme, read as a list of priced leaves."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
-        self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
+        self.sitting = sitting
+        self.path = os.path.join(schemes_dir(subject),
+                                 f'{year}-{level}{"-deferred" if sitting == "deferred" else ""}.md')
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
         for old, new in MISPRINTS.get((year, level), ()):
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
-        self.lines = [l.rstrip() for l in raw.split('\n')]
+        # "Answer Question 2 and Question 3 in English." heads the English half
+        # of a reading text and states no answer; read as text it ran on into
+        # the last answer above it ("… Sie radeln, um Energie zu produzieren.
+        # Answer Question 2"). It is blanked, keeping every line's place.
+        self.lines = ['' if SECTION_LANGUAGE.match(l.strip()) else l.rstrip()
+                      for l in raw.split('\n')]
         self.asks = []
         self.refused = []
         self.flags = []
+        self.grammar_compulsory = False
         self.unit_totals = {}      # unit token -> the total it prints
         self.unit_splits = {}      # unit token -> [the question totals it prints]
         self.written = []          # ('AT'|'SP', line, head) — read, never carded
@@ -691,13 +742,35 @@ class DeScheme:
             m = AG_HEAD.match(s)
             if m and m.group(1) in '12' and int(m.group(1)) not in [h[1] for h in heads]:
                 heads.append((i, int(m.group(1)), m.group(2)))
+        # Until 2020 the section set TWO questions and a candidate answered
+        # both: "TEXT I: ANGEWANDTE GRAMMATIK (25)" over "(15 marks: 5 x 3)"
+        # and "(10 marks: 5 x 2 marks)", with no "OR" between them. Each is
+        # then priced by its own head, and the two heads must add to the
+        # section's. The choice is read from the scheme's own "OR" line.
+        choice = any(GRAMMAR_OR.search(line.strip()) for line in body)
+        self.grammar_compulsory = bool(heads) and not choice
+        blocks = []
         for n, (i, q, rest) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(body)
-            block = ([rest] if rest.strip() else []) + body[i + 1:end]
-            self._emit_grammar(unit, q, block, start + 1 + i)
+            blocks.append((q, ([rest] if rest.strip() else []) + body[i + 1:end],
+                           start + 1 + i))
+        own = None
+        if self.grammar_compulsory:
+            own = {q: _question_total(block) for q, block, _ in blocks}
+            section = self.unit_totals.get('AG')
+            if None in own.values() or sum(own.values()) != section:
+                for q, _block, line_no in blocks:
+                    self._refuse(f'{unit} Q{q}', line_no,
+                                 f'the section prices both questions {section} and '
+                                 f'their own heads print {sorted(own.items())}')
+                return
+        for q, block, line_no in blocks:
+            self._emit_grammar(unit, q, block, line_no,
+                               own[q] if own is not None else None)
 
-    def _emit_grammar(self, unit, q, block, line_no):
+    def _emit_grammar(self, unit, q, block, line_no, own=None):
         cue, items, steps, notation = [], [], None, None
+        preamble = []
         cur = None
         for raw in block:
             s = raw.strip()
@@ -725,6 +798,8 @@ class DeScheme:
                 cur['text'] = ' '.join(f"{cur['text']} {s}".split())
             elif steps is None:
                 cue.append(s)
+            elif not items:
+                preamble.append(s)
         for item in items:
             # The marks the SEC prints ON the item, with its own marker taken
             # off first: "(1) Singular, maskulin, Akkusativ (1, 2, 2)" is item
@@ -735,7 +810,22 @@ class DeScheme:
             item['marks'] = sum(
                 sum(int(n) for n in re.findall(r'\d{1,2}', g))
                 for g in re.findall(r'\(\s*(\d[\d,\s\-]*)\)', body_text))
-        total = self.unit_totals.get('AG')
+        notes = []
+        halves = COMPOUND_HALVES.search(' '.join(' '.join(preamble).split()))
+        if (items and not any(i['marks'] for i in items) and halves
+                and steps and set(steps) == {1} and len(steps) == 2 * len(items)
+                and int(halves.group(2)) == int(halves.group(3)) == len(items)):
+            # 2019 Ordinary prints the compounds with no mark on any line:
+            # "(i) Piratenschiff (Abschnitt 1) Piraten + Schiff pirate ship",
+            # under "(10 marks: 10 x 1 mark)" and "say what words each
+            # compound word is made up of (5 marks) and what the underlined
+            # words mean. (5 marks)". Ten answers at one mark are the five
+            # pairs of words and the five meanings, so each compound is two —
+            # and the card carries the scheme's own sentence saying so.
+            for i in items:
+                i['marks'] = 2
+            notes.append(halves.group(1))
+        total = own if own is not None else self.unit_totals.get('AG')
         if not items or steps is None:
             self._refuse(f'{unit} Q{q}', line_no,
                          'the scheme prints no rate line and no priced items for '
@@ -753,7 +843,7 @@ class DeScheme:
         self.asks.append(Ask(
             unit=unit, q=q, letter=None, roman=None, total=total,
             segments=segments, notation=notation,
-            cue=' '.join(' '.join(cue).split()), notes=[], language='German',
+            cue=' '.join(' '.join(cue).split()), notes=notes, language='German',
             line=line_no, head_word=None, exhaustive=True))
 
     # -- the leaf -----------------------------------------------------------
@@ -796,11 +886,31 @@ class DeScheme:
                                  'tentative': tentative})
             cur = None
 
-        for raw in block:
+        for at, raw in enumerate(block):
             s = raw.strip()
             if not s or PAGE.match(s):
                 continue
             if MARK_BOXES.match(s):
+                continue
+            # The ask's own marker restated over its rate: "(i) What is the
+            # narrator's plan? (lines 74 – 77)" / "(i) 2 marks: 1, 1" (2019
+            # Ordinary). The second "(i)" is that roman's rate line.
+            if roman:
+                again = re.match(rf'^\(\s*{roman}\s*\)\s*(.+)$', s)
+                if again and read_rate(again.group(1))[0] is not None:
+                    s = again.group(1)
+            # A theme heading printed bare, "Uncertainty" over "1. During her
+            # school years …" (2019 Higher), is "Uncertainty:".
+            following = next((x.strip() for x in block[at + 1:]
+                              if x.strip() and not PAGE.match(x.strip())), '')
+            if (phase == 'answers' and re.fullmatch(r'[A-ZÄÖÜ][a-zäöüß]{3,14}', s)
+                    and re.match(r'^1\.\s', following)):
+                s = f'{s}:'
+            # A wrapped answer's last word with its question mark, "… Why was
+            # Johnny alone in" / "Berlin?", is that answer's end, not a heading.
+            if (cur is not None and SEGMENT_Q.fullmatch(s) and not SEGMENT_Q.match(s).group(2)
+                    and not re.search(r'[.?!:)]$', cur['text'])):
+                cur['text'] = f"{cur['text']} {s}"
                 continue
             m = TAIL_NOTE.search(s)
             if m:
@@ -830,6 +940,12 @@ class DeScheme:
             if m:
                 tail = m.group(2).strip()
                 got, _cnt = read_rate(tail)
+                if got is None and tail:
+                    # "Gründe: (Any three: 3 x 2 marks) (Allow Present Tense)"
+                    # (2019 Higher): the half's rate with an aside beside it.
+                    got, _cnt, aside = read_rate_line(tail)
+                    if got is not None and aside:
+                        notes.append(aside)
                 mark = TRAIL_MARK.search(tail) if inline else None
                 last_seg = segments[-1]
                 if (not tail and got is None and pending is None
@@ -877,6 +993,10 @@ class DeScheme:
             answer = None
             number = None
             m = ANSWER_NUM.match(s)
+            if m is None and cur is not None and cur.get('n'):
+                # "1. He travels alone." / "2 He provokes the girls." (2019
+                # Ordinary): the next number in the list, its full stop lost.
+                m = re.match(rf'^({cur["n"] + 1})\s+([A-ZÄÖÜ(…].*)$', s)
             if m and not re.match(r'^\(?\s*\d{1,3}\s*marks?\b', m.group(2), re.I):
                 answer = m.group(2).strip()
                 # The number the SEC printed in front of it. Kept because some
@@ -936,7 +1056,11 @@ class DeScheme:
                 # two printed lines and numbers the first only.
                 cur['text'] = ' '.join(f"{cur['text']} {s}".split())
 
-        if overview is not None and len(segments) > 1:
+        # (Only where a half HAS declared a rate: under "(Any three: 3 x 4
+        # marks)" the 2019 Higher theme question prints bare headings —
+        # "Mystery:", "Darkness:" — which label its list and price nothing.)
+        if overview is not None and len(segments) > 1 and any(
+                g['steps'] is not None for g in segments if g is not overview):
             # The rate the SEC prints above a divided ask states the WHOLE of
             # it — "(2 marks + (2 x 2) marks)" over a fixed answer and a menu —
             # so once the halves have declared their own rates it is a summary,

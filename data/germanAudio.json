@@ -135,6 +135,33 @@
   }
  },
  {
+  "year": 2022,
+  "sitting": "deferred",
+  "paperFileids": [
+   "LC011ALPA00BV-deferred.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "German listening",
+   "title": "2022 German · Listening Comprehension Test (deferred sitting)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+   "secFileid": "LC011CLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC011CLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording of the deferred sitting · Parts 1–4, Higher Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "verifiedAt": "2026-11-13",
+   "discoveredAt": "https://www.examinations.ie/archive/deferredexams/2022/ (the June recording's file id under the deferred archive)",
+   "sha256": "4d9dcdf49c55b85ade4e5d3fccc2d94ffec2e1b8e0e798e005587ea7b13ac8ac",
+   "bytes": 74953775,
+   "durationSeconds": 2344.881633,
+   "bitRate": 256000,
+   "contentType": "audio/mpeg",
+   "acceptRanges": "bytes"
+  }
+ },
+ {
   "year": 2021,
   "paperFileids": [
    "LC011ALPA00BV.pdf",
