@@ -227,9 +227,12 @@ def theme_grid(S, letter):
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
-        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)$', line)
+        # (2011 prints the point's ask on its own head: "A (3 marks) Beschreiben
+        # Sie das Foto in drei bis vier Sätzen.")
+        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)(?:\s+(\S.*))?$', line)
         if m:
-            cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
+            cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)),
+                   'lines': [m.group(3)] if m.group(3) else []}
             points.append(cur)
             continue
         if re.match(r'^Dis\.:? 2 marks', line):
@@ -253,6 +256,14 @@ def task_text(P, unit, letter):
     rows = [r for r in P.alternatives if r[0] == unit and r[1] == letter]
     rows.sort(key=lambda r: (r[4] == 'R', len(' '.join(r[2]))), reverse=True)
     lines, page = rows[0][2], rows[0][3]
+    if sum(len(GARBLED.findall(' '.join(r[2]))) for r in rows[:1]) >= 2:
+        # (2011 Higher sets these pages as overlapping blocks of text, so the
+        # row reader returns "S Sehen Sie sich h das Foto re echts an."; the
+        # page is read again by position, a word cut at a block's edge joined
+        # back to its other half.)
+        rebuilt = _overlap_task(P.path, page, letter)
+        if rebuilt:
+            lines = rebuilt
     if rows[0][4] == 'R' and len(' '.join(lines)) < 60:
         # The two columns fused on this page (2026 Higher p18: the English
         # "Your German friend, Karl/Karla, has" alone in its column, the rest
@@ -284,6 +295,66 @@ def task_text(P, unit, letter):
         else:
             out.append(t)
     return '\n'.join(out), page
+
+
+GARBLED = re.compile(r'(?:^|\s)(\w)\s\1\w')
+
+
+def _overlap_rows(path, page):
+    """The page's rows, its words merged where one block's edge cut a word
+    in two and the next block repeated a letter of it ("Sätze" + "en." is
+    "Sätzen.", "b" + "bis" is "bis")."""
+    import pymupdf
+    with pymupdf.open(path) as doc:
+        words = [w for w in doc[page - 1].get_text('words') if w[4].strip()]
+    rows = []
+    for w in sorted(words, key=lambda w: (w[1], w[0])):
+        row = next((r for r in rows if abs(r[0] - w[1]) <= 2), None)
+        if row is None:
+            row = [w[1], []]
+            rows.append(row)
+        row[1].append(w)
+    out = []
+    for _y, row in sorted(rows, key=lambda r: r[0]):
+        row.sort(key=lambda w: (w[0], -w[2]))
+        merged = []
+        for w in row:
+            if merged and w[0] - merged[-1][2] < 0.8:
+                p = merged[-1]
+                if abs(w[0] - p[0]) < 0.5:
+                    if len(w[4]) > len(p[4]):
+                        merged[-1] = w
+                    continue
+                if w[2] <= p[2] + 0.5:
+                    continue
+                # The letters both halves print: the longest tail of the first
+                # that opens the second, nearest the overlap measured.
+                cw = (p[2] - p[0]) / max(len(p[4]), 1)
+                est = max(0, (p[2] - w[0]) / cw) if cw else 0
+                ks = [k for k in range(0, min(4, len(w[4]), len(p[4])) + 1)
+                      if k == 0 or p[4].endswith(w[4][:k])]
+                k = min(ks, key=lambda k: abs(k - est))
+                merged[-1] = (p[0], p[1], w[2], w[3], p[4] + w[4][k:])
+                continue
+            merged.append(w)
+        out.append(' '.join(w[4] for w in merged))
+    return out
+
+
+def _overlap_task(path, page, letter):
+    """Task (a) or (b) of a page _overlap_rows reads: from its own marker to
+    the next marker, the answer rules or the page foot, its word count kept."""
+    rows = _overlap_rows(path, page)
+    start = next((k for k, r in enumerate(rows) if r.startswith(f'({letter}) ')), None)
+    if start is None:
+        return None
+    out = [rows[start][len(f'({letter}) '):]]
+    for r in rows[start + 1:]:
+        if (re.match(r'^\([a-b]\)\s', r) or re.fullmatch(r'[_\s]+', r) or re.match(r'^Lch\s', r)
+                or re.fullmatch(r'(?:ODER|OR|N[ÓO](?:\s*/\s*OR)?)', r.strip())):
+            break
+        out.append(r)
+    return out
 
 
 def _english_column(path, page, first):

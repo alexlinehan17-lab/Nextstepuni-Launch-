@@ -79,7 +79,8 @@ TICK_LINE = re.compile(r'Tick\s*\(✓\)\s*the correct (?:box|answer)\.?\s*(?:Tic
 # line: "Anruf von: …", "Grund des Anrufs:", "Der Anrufer:", "How many
 # countries: 185 (1)", "Day: Saturday/20th January (3 marks)". At most four
 # words, the first capitalised, no digit.
-LABEL = re.compile(r'^([A-ZÄÖÜ][A-Za-zÄÖÜäöüß’\']*(?:\s+[A-Za-zÄÖÜäöüß’\']+){0,3})\s*:\s*(.*)$')
+# (2011 Higher heads a field "Der/die Anrufer/in:".)
+LABEL = re.compile(r'^([A-ZÄÖÜ][A-Za-zÄÖÜäöüß’\'/]*(?:\s+[A-Za-zÄÖÜäöüß’\'/]+){0,3})\s*:\s*(.*)$')
 LABEL_ALONE = re.compile(r'^(Der Anrufer|Die Anruferin|Problem|Grund des Anrufs|'
                          r'Why|What|How|Where|When|Who)\s*[?:]?\s*$')
 
@@ -105,6 +106,10 @@ def _term(seg):
     "1 + 3x1 marks" 4, "4 marks (1, 1 mark, 2 marks)" 4."""
     s = ' '.join((seg or '').split()).strip(' :;,.()')
     m = re.match(r'^(\d{1,3})\s*marks?\s*(?:[(:.]|$)', s, re.I)
+    if m:
+        return int(m.group(1))
+    # "= 3 (1 + (2x1)" (2011 Higher): the total, then its split in brackets.
+    m = re.match(r'^=\s*(\d{1,3})\s*(?:marks?)?\s*\(', s, re.I)
     if m:
         return int(m.group(1))
     # "12 marks 6, 6 marks" (2013 Ordinary): the total, then its split.
@@ -536,24 +541,64 @@ def _self_priced(it):
     restaurant. (1)" (2018 Higher L3 Q4) is a point at 1 and an answer whose
     two components pay 1 each — not a menu paying 1 for the first claim and 2
     for the second, whichever they are."""
-    if (it['kind'] != 'group' or not it['steps'] or len(set(it['steps'])) == 1
-            or len(it['options']) != len(it['steps'])):
+    steps = it.get('steps') or []
+    # "(Four marks: 2 + (1+1)" over two answers (2011 Higher L1 Q5): the
+    # bracket is ONE answer's split, so the rate names two answers, 2 and 2.
+    grouped = _grouped_terms(it.get('rate') or '')
+    if (it['kind'] == 'group' and grouped and len(grouped) == len(it['options']) != len(steps)
+            and sum(grouped) == sum(steps)):
+        steps = grouped
+    if (it['kind'] != 'group' or not steps or len(set(steps)) == 1 and steps == it['steps']
+            or len(it['options']) != len(steps)):
         return [it]
     out = []
-    for opt, step in zip(it['options'], it['steps']):
+    for opt, step in zip(it['options'], steps):
         text = ' '.join(opt['text'].split())
         comps = _components(text)
         own = _own_price(text)
+        once = re.findall(r'\(\s*(\d{1,2})\s*\)', text)
         if comps and sum(m for _w, m in comps) == step:
             out.append({'kind': 'parts', 'text': text, 'marks': step, 'parts': comps,
                         'label': it['label'], 'notes': list(opt['notes'])})
         elif own and own[1] == step:
             out.append({'kind': 'point', 'text': own[0], 'marks': step,
                         'label': it['label'], 'notes': list(opt['notes'])})
+        elif steps is not it['steps'] and len(once) == 1 and int(once[0]) == step:
+            # Its one price printed mid-answer: "employers/ companies/
+            # interviewers (2) can see/ view them". Shown as printed.
+            out.append({'kind': 'point', 'text': text, 'marks': step,
+                        'label': it['label'], 'notes': list(opt['notes'])})
         else:
             return [it]
     out[0]['notes'] = list(it['notes']) + out[0]['notes']
     return out
+
+
+def _grouped_terms(rate):
+    """The top-level terms of a rate whose brackets group one answer's split:
+    "(Four marks: 2 + (1+1)" -> [2, 2]; else None."""
+    m = re.search(r':\s*(\d.*?)\)?\s*$', rate or '')
+    if not m or '(' not in m.group(1):
+        return None
+    terms, depth, cur = [], 0, ''
+    for ch in m.group(1):
+        if ch == '(':
+            depth += 1
+        elif ch == ')':
+            depth -= 1
+        if ch == '+' and depth == 0:
+            terms.append(cur)
+            cur = ''
+        else:
+            cur += ch
+    terms.append(cur)
+    out = []
+    for t in terms:
+        nums = re.findall(r'\d{1,2}', t)
+        if not nums:
+            return None
+        out.append(sum(int(n) for n in nums))
+    return out if len(out) > 1 else None
 
 
 def _one_of(items, got, total):
@@ -596,6 +641,11 @@ def leaf_rows(leaf, asked_text):
         tail = re.fullmatch(r'(.*\?)\s*\(\s*\d{1,2}\s*marks?\s*\)', body[0].strip())
         if tail and _is_cue(tail.group(1), _words(asked_text)):
             body = [tail.group(1)] + body[1:]
+        # … or the ask's rate after it: "Two indications to support choice
+        # (Any two: 2+2 marks)" (2011 Higher). The question, then its rate.
+        rated = re.fullmatch(r'(.*?\S)\s*(\((?:Any|Two|Three|Four)\b[^()]*\))', body[0].strip(), re.I)
+        if rated and rate_line(rated.group(2))[0] is not None and _is_cue(rated.group(1), _words(asked_text)):
+            body = [rated.group(1), rated.group(2)] + body[1:]
     # The reprinted question opens the block.
     k = 0
     # A question the scheme begins on its head line ("2. (6 marks) Write down
@@ -619,7 +669,13 @@ def leaf_rows(leaf, asked_text):
     # The ask's own tariff restated above its question ("(ii) (6 marks: 3 x 2
     # marks)" then the question, deferred 2022) is its head, not a rate over
     # answers: the question beneath it is read as the question.
-    if k == 0 and len(body) > 1 and re.match(r'^\(\s*\d{1,3}\s*marks?\s*[:)]', body[0].strip()) \
+    # (Or the very rate the block prints again under its question: "(Any two:
+    # 2 x 2 marks)" / "What solution does the man offer? …" / "(Any two: 2 x 2
+    # marks)", 2011 Higher.)
+    again = (k == 0 and len(body) > 2 and rate_line(' '.join(body[0].split()))[0] is not None
+             and _is_cue(body[1], asked)
+             and any(' '.join(x.split()) == ' '.join(body[0].split()) for x in body[2:5]))
+    if k == 0 and len(body) > 1 and (again or re.match(r'^\(\s*\d{1,3}\s*marks?\s*[:)]', body[0].strip())) \
             and _is_cue(body[1], asked):
         k2 = 1
         while k2 < len(body) and _is_cue(body[k2], asked) and not PRICE.search(body[k2]):
@@ -670,6 +726,8 @@ def leaf_rows(leaf, asked_text):
         s = ' '.join(raw.split())
         # "(1: all or nothing)" (2012 Higher) is the price and its remark.
         s = re.sub(r'\(\s*(\d{1,2})\s*:\s*all or nothing\s*\)$', r'(\1) All or nothing', s, flags=re.I)
+        # … or the remark before its price: "… 8300425 (all or nothing) (1)" (2011).
+        s = re.sub(r'\s*\(\s*all or nothing\s*\)\s*\((\d{1,2})\)$', r' (\1) All or nothing', s, flags=re.I)
         # "Any two; accept apt German quotation." (2012 Higher): the count the
         # head already prices, and the scheme's remark.
         m = re.fullmatch(r'Any\s+\w+\s*;\s*(accept\b.*)', s, re.I)

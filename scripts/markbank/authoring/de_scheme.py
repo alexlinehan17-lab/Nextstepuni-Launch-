@@ -206,6 +206,8 @@ _LABEL = r'[A-Z][A-Za-z\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u2019]{1,14}(?
 SEGMENT = re.compile(rf'^({_LABEL})\s*:\s*(.*)$')
 WQ_HEAD = re.compile(r'((?:Was|Wie|Wo|Warum|Wer|Welche[rsnm]?|Wann|Why|What|How|Where|When|Who|Which)'
                      r'\b[^:()?]{0,40}?)\s*:')
+WQ_INLINE = re.compile(r'^((?:Wem|Wen|Woher|Wohin|Was|Wie|Wo|Warum|Wer|Welche[rsnm]?|Wann)\b[^:()?]{0,40}?)'
+                       r'\s*:\s*(\S[^:]*\(\s*\d{1,2}\s*\))$')
 ORDINAL_HEAD = re.compile(r'^(\d(?:st|nd|rd|th)\s+[A-Z][a-z]+)\s*:\s*(.*)$')
 LETTER_ITEM = re.compile(r'^([a-h])\.\s+(\S.*)$')
 CATEGORY_HEAD = re.compile(r'\(([a-h])\)\s+([A-Z][^:()]{1,40}):')
@@ -557,6 +559,12 @@ MISPRINTS = {
     # alternative beside it is "(15 marks: 15 x 1 mark)", and the 2021, 2022,
     # 2023 and 2025 Ordinary schemes all print "2. (15 marks: 5 x 3 marks)".
     (2024, 'ol'): [('2. (5 marks: 5 x 3 marks)', '2. (15 marks: 5 x 3 marks)')],
+    # 2011 Higher prices Fourth Part Q2 "(5 marks: (i) = 5 (1 + (2x1); (ii) =
+    # 2)". Its own bracket makes (i) 1 + 2 x 1 = 3, its (ii) is 2, and the
+    # question's 5 is 3 + 2; so does the part head "(26 marks)" over 10 + 5 +
+    # 4 + 1 + 6. The "5" beside "(i) =" is the misprint.
+    (2011, 'hl'): [('2. (5 marks: (i) = 5 (1 + (2x1); (ii) = 2)',
+                    '2. (5 marks: (i) = 3 (1 + (2x1); (ii) = 2)')],
 }
 
 
@@ -836,10 +844,16 @@ class DeScheme:
         choice = any(GRAMMAR_OR.search(line.strip()) for line in body)
         self.grammar_compulsory = bool(heads) and not choice
         blocks = []
+        # 2011 Higher prints question 1's tariff above its head, under the
+        # section's: "(15 marks: 5 x 3)" / "1. Relativpronomen." It is that
+        # question's, where the question prints none of its own.
+        lead = [b for b in body[:heads[0][0]] if QUESTION_TOTAL.match(b.strip())] if heads else []
         for n, (i, q, rest) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(body)
-            blocks.append((q, ([rest] if rest.strip() else []) + body[i + 1:end],
-                           start + 1 + i))
+            own_lines = ([rest] if rest.strip() else []) + body[i + 1:end]
+            if n == 0 and len(lead) == 1 and _question_total(own_lines) is None:
+                own_lines = lead + own_lines
+            blocks.append((q, own_lines, start + 1 + i))
         own = None
         if self.grammar_compulsory:
             own = {q: _question_total(block) for q, block, _ in blocks}
@@ -1341,7 +1355,9 @@ class DeScheme:
                     and any(g['steps'] is not None for g in segments)):
                 new_segment(s, None, tentative=True)
                 continue
-            m = SEGMENT.match(s) or ORDINAL_HEAD.match(s)     # (or "1st Day:", 2012 Higher)
+            m = SEGMENT.match(s) or ORDINAL_HEAD.match(s) or WQ_INLINE.match(s)
+            # (or "1st Day:", 2012 Higher; or "Wem machte es Spaß: den
+            # Zwillingen … (1)", 2011 Higher, a question heading its answer)
             inline = m is not None
             if m is None:
                 m = SEGMENT_Q.match(s)
@@ -1373,6 +1389,12 @@ class DeScheme:
                 continue
             if m:
                 tail = m.group(2).strip()
+                # "Hobby: Miniatur-Züge … (1) (Accept singular)" (2011
+                # Higher): the aside after the price is the half's note.
+                aside = re.search(r'(?<=\))\s*(\((?:Accept|Allow)\b[^()]*\))\s*$', tail)
+                if aside and inline:
+                    notes.append(aside.group(1))
+                    tail = tail[:aside.start()].strip()
                 if re.fullmatch(r'\((?:Allow|Accept|N\.?\s?B)\b[^()]*\)', tail, re.I):
                     # "Stella: (Allow: sie)" (2018 Higher), "Was? (Allow
                     # Perfect / Imperfect)" (2017 Higher): the half's heading
@@ -1443,7 +1465,7 @@ class DeScheme:
                     new_segment(m.group(1), steps, tentative=steps is None)
                     pending = None
                     if got is None and mark:
-                        cur = {'text': TRAIL_MARK.sub('', tail).strip()}
+                        cur = {'text': TRAIL_MARK.sub('', tail).strip(), 'priced': True}
                         segments[-1]['answers'].append(cur)
                     continue
             got, _cnt, remark = read_rate_line(s)
@@ -1481,6 +1503,7 @@ class DeScheme:
                 continue
             answer = None
             number = None
+            carry_priced = False
             m = ANSWER_NUM.match(s)
             if m is None and unit.startswith('T') and LETTER_ITEM.match(s) and any(
                     g.get('label') and g['tentative'] for g in segments[-1:]):
@@ -1509,6 +1532,13 @@ class DeScheme:
                 # the question itself in the answer list and left the ask with
                 # no rate line at all.
                 answer = ANSWER_LETTER.match(s).group(2).strip()
+            elif TRAIL_MARK.search(s) and not MATCH_KEY.match(s) and cur is not None and cur.get('priced'):
+                # A second priced answer under a half whose first was priced
+                # on the heading's line: "Wetter: sehr heiβ / Hitze (1)" / "Der
+                # Himmel ist (milchig)blau/ wolkenlos/klar (1)" (2011 Higher).
+                answer = s
+                segments[-1]['steps'] = (segments[-1]['steps'] or []) + [int(TRAIL_MARK.search(s).group(1))]
+                carry_priced = True
             elif TRAIL_MARK.search(s) and not MATCH_KEY.match(s) and (
                     cur is None or TRAIL_MARK.search(cur['text'])):
                 # A line closing with its own mark is its own answer — unless
@@ -1537,6 +1567,8 @@ class DeScheme:
                     new_segment(None, pending)
                     pending = None
                 cur = {'text': answer, 'n': number}
+                if carry_priced:
+                    cur['priced'] = True
                 segments[-1]['answers'].append(cur)
                 phase = 'answers'
                 continue
