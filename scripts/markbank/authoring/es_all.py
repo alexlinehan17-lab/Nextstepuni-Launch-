@@ -1108,18 +1108,22 @@ def _menu_component_partials(ask, rows):
     stimulants / sedatives" in a "Two of:" menu at 2 each. The slice before
     the bracket is one more option of the menu at the bracket's price
     (optionMarks), as a partial printed in a note already is
-    (_claimable_partials). A menu paid in descending steps has no price per
-    option to set it against, and is left as it is."""
+    (_claimable_partials). A menu paid in descending steps ("4 + 3 + 3") sets
+    it against its top step: each full answer is priced at that step and the
+    slice at its bracket, and the menu pays by the ladder (types/markBank.
+    ladderGroupMarks, #366): 2015 Higher Section A1(a) Q3 "Leaves a tip [2] of
+    100 million" offers "Leaves a tip" at 2."""
     raw = ' '.join((ask.raw or '').split())
     if not PRICE_BRACKET.search(raw):
         return rows
     out = []
     for row in rows:
         g = row.get('group')
-        if row.get('kind') != 'anyN' or not g or g.get('perOptionSteps'):
+        if row.get('kind') != 'anyN' or not g or (g.get('perOptionSteps') and g.get('optionMarks')):
             out.append(row)
             continue
-        marks = list(g.get('optionMarks') or [g['perOption']] * len(g['options']))
+        steps = g.get('perOptionSteps')
+        marks = list(g.get('optionMarks') or [max(steps) if steps else g['perOption']] * len(g['options']))
         parents = list(g.get('optionOf') or [None] * len(g['options']))
         extra = []
         for oi, (option, price) in enumerate(zip(g['options'], marks)):
@@ -1153,7 +1157,8 @@ def _menu_component_partials(ask, rows):
             g['options'] = list(g['options']) + [t for t, _n, _of in extra]
             g['optionMarks'] = marks + [n for _t, n, _of in extra]
             g['optionOf'] = parents + [of for _t, _n, of in extra]
-            g['perOption'] = max(g['optionMarks'])
+            # (A ladder's perOption stays its first step.)
+            g['perOption'] = steps[0] if steps else max(g['optionMarks'])
             row = {**row, 'group': g}
         out.append(row)
     return out

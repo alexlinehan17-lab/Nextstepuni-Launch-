@@ -24,7 +24,7 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { groupMarks, isRubricCard, optionGroupMarks, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { groupMarks, isRubricCard, ladderGroupMarks, optionGroupMarks, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 import { irishPartCount } from '@/components/MarkBank/irishScoring';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
@@ -200,13 +200,19 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
         if (!gr?.optionMarks) continue;
         expect(gr.optionOf, `${c.id} links its partials`).toHaveLength(gr.options.length);
         const marks = gr.optionMarks;
+        // A menu paid in falling steps pays by the ladder (#366: es-2015-hl-a1a-3,
+        // "Leaves a tip [2] of 100 million" in a 4 + 3 + 3 menu).
+        const steps = gr.perOptionSteps;
+        const pay = (picked: number[]) => (steps
+          ? ladderGroupMarks({ ...gr, perOptionSteps: steps, optionMarks: marks }, picked)
+          : optionGroupMarks({ ...gr, optionMarks: marks }, picked));
         gr.optionOf!.forEach((of, i) => {
           if (of === null) return;
           partials += 1;
           expect(gr.optionOf![of], `${c.id} option ${i} credits an answer`).toBeNull();
-          expect(optionGroupMarks({ ...gr, optionMarks: marks }, [of, i]), `${c.id} option ${i} with its answer`).toBe(marks[of]);
+          expect(pay([of, i]), `${c.id} option ${i} with its answer`).toBe(steps ? Math.min(marks[of], Math.max(...steps)) : marks[of]);
         });
-        expect(optionGroupMarks({ ...gr, optionMarks: marks }, gr.options.map((_o, i) => i))).toBe(groupMarks(gr));
+        expect(pay(gr.options.map((_o, i) => i))).toBe(groupMarks(gr));
         expect(groupMarks(gr)).toBeLessThanOrEqual(c.totalMarks);
       }
     }
