@@ -287,7 +287,13 @@ class DePaper:
                 # (Never the grammar exercise's own instruction: "Lesen Sie
                 # den folgenden Text und setzen Sie die fehlenden Präpositionen
                 # … ein!", 2012 Higher, is the ask, not the passage's rubric.)
-                if FURNITURE.match(text) and not (unit == 'AG' and re.match(r'^Lesen Sie den folgenden\b', text)):
+                # (Nor a worked example printed behind its label, "BEISPIEL:
+                # Oma überlieβ ihrem Enkel den Bauernhof." (2010 Higher): the
+                # sentence the example's answer under it is made from. Dropped
+                # with the label, 24 Higher grammar cards showed the example's
+                # answer and not the sentence it answers.)
+                if FURNITURE.match(text) and not (unit == 'AG' and re.match(r'^Lesen Sie den folgenden\b', text)) \
+                        and not (unit == 'AG' and re.match(r'^Beispiel\s*:\s*\S', text, re.I)):
                     continue
                 if unit in ('AT', 'SP'):
                     self._alternative(unit, side, text, pno)

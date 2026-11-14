@@ -66,6 +66,9 @@ from de_topics import (topic_for, concept_for, language_note,   # noqa: E402
 from paper_census import census_subject                        # noqa: E402
 import de_listen                                               # noqa: E402
 
+# Every shipped German card's conceptId, frozen (see build()).
+CONCEPT_PINS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'german-concept-ids.json')
+
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
 UNPRINTED = 'The scheme prints no answer for this part.'
@@ -273,6 +276,18 @@ def build():
         cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for, 'deferred'))
         cards.extend(de_listen.cards(year, level, refuse, card_id, question_ref, concept_for,
                                      'deferred'))
+    # A card's conceptId is its level-independent identity, the key a
+    # student's progress is carried on between Higher and Ordinary
+    # (types/markBank.ts: it "cannot be retrofitted"). It is derived from the
+    # question text, so a reader that reads a question more fully would move
+    # it: every card already in the deck keeps the conceptId it shipped with
+    # (coordinator ruling, 14 Nov). test/markBankCardPreservation.test.ts
+    # holds the deck to this file and the file to its frozen hash.
+    with open(CONCEPT_PINS, encoding='utf-8') as fh:
+        pinned = json.load(fh)
+    for card in cards:
+        if card['id'] in pinned:
+            card['conceptId'] = pinned[card['id']]
     return cards, refused, examples, excluded, pairs, by_address
 
 
