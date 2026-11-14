@@ -26,15 +26,19 @@ export const marksWord = (n: number) => (n === 1 ? 'mark' : 'marks');
 export function anyNHeading(group: NonNullable<MarkRow['group']>): string {
   const price = (marks: number) => `${marks} ${marksWord(marks)}`;
   if (group.options.length === 1) {
-    const only = group.optionMarks?.[0] ?? group.perOptionSteps?.[0] ?? group.perOption;
+    const step = group.perOptionSteps?.[0] ?? group.perOption;
+    const only = group.optionMarks?.[0] !== undefined && Number.isFinite(step)
+      ? Math.min(group.optionMarks[0], step) : group.optionMarks?.[0] ?? step;
     if (Number.isFinite(only)) return price(only);
   }
   const one = group.claimMax === 1;
   const choice = one ? 'One of these'
     : group.claimMax === group.options.length ? `All ${group.claimMax} of these` : `Any ${group.claimMax} of these`;
   // Options priced one by one (a full answer and the part of it the scheme
-  // also credits): the menu pays the best one claimed, at its own marks.
-  if (group.optionMarks) {
+  // also credits): the menu pays the best one claimed, at its own marks. A
+  // menu with steps states its steps; an option's own lower price shows on
+  // the option (ladderGroupMarks).
+  if (group.optionMarks && !group.perOptionSteps) {
     return `${one ? 'One of these' : `Any ${group.claimMax} of these`} — each at its own marks`;
   }
   if (group.perOptionSteps) {
