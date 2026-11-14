@@ -1175,6 +1175,83 @@ def _inline(m):
     raise AssertionError(m)
 
 
+# A condition that makes an alternative an answer paid ALONE: "if only answer
+# given" (2013, 2021 Higher), "if it is the only answer given" (2020 Higher),
+# "if other answers are not given" (2022 Ordinary), "if no other marks are
+# awarded" (2026 Higher). Conditions that exclude named points ("if points 5-8
+# not given") leave the other answers claimable and stay a menu option.
+ALONE_CONDITION = re.compile(r'\bonly answer\b|\bother answers are not given\b|\bno other marks are awarded\b', re.I)
+ALLOWED_ON = re.compile(r'The scheme allows “(?P<alt>.+?)”[^“]*?(?:“[^”]*”[^“]*?)?'
+                        r'only on the condition it prints: “(?P<cond>[^”]+)”\.')
+WHOLE_ANSWER = re.compile(r'The scheme prints this answer as “(?P<printed>.+?)” and, after it, “(?P<nb>.+?)”: '
+                          r'“(?P<alt>.+?)” is a whole answer on its own, claimed in place of the answer above, '
+                          r'never beside any part of it\.')
+
+
+def _alone_routes(rows):
+    """An answer the scheme pays only ALONE, made a route of its own.
+
+    "(Allow “everything” for two marks if only answer given)" (2021 Higher)
+    and "N.B.: On Tuesday: 2 marks only" (2016 Ordinary) were options of the
+    list they stand beside (optionOf), and nothing stopped a student claiming
+    them beside the list's other answers. Route a is the list; route b the
+    alternative at its price, its condition quoted word for word; a claim on
+    one locks the other (coordinator ruling, 14 Nov; menu route locks, #363).
+    A route b worth less than the list is `alone`: it may fall short of the
+    tariff (types/markBank.ts)."""
+    out = []
+    for row in rows:
+        g = row.get('group') or {}
+        note = row.get('contextNote') or ''
+        hit = None
+        if row['kind'] == 'anyN' and g.get('optionOf') and not row.get('route'):
+            for m in ALLOWED_ON.finditer(note):
+                if ALONE_CONDITION.search(m.group('cond')) and m.group('alt') in g['options']:
+                    hit = m
+                    break
+            if hit is None:
+                m = WHOLE_ANSWER.search(note)
+                if m and m.group('alt') in g['options']:
+                    hit = m
+        if hit is None:
+            out.append(row)
+            continue
+        alt = hit.group('alt')
+        j = g['options'].index(alt)
+        if g['optionOf'][j] is None:
+            out.append(row)
+            continue
+        price = g['optionMarks'][j]
+        keep = [k for k in range(len(g['options'])) if k != j]
+        group = {k: v for k, v in g.items() if k not in ('options', 'optionMarks', 'optionOf')}
+        group['options'] = [g['options'][k] for k in keep]
+        marks = [g['optionMarks'][k] for k in keep]
+        parents = [g['optionOf'][k] for k in keep]
+        parents = [p if p is None or p < j else p - 1 for p in parents]
+        if any(p is not None for p in parents) or any(m_ != g['perOption'] for m_ in marks):
+            group['optionMarks'], group['optionOf'] = marks, parents
+        route_a = {**row, 'group': group, 'route': 'a'}
+        rest = ' '.join(note.replace(hit.group(0), ' ').split())
+        if rest:
+            route_a['contextNote'] = rest
+        else:
+            route_a.pop('contextNote', None)
+        steps = g.get('perOptionSteps')
+        worth_a = sum(steps[:g['claimMax']]) if steps else g['claimMax'] * g['perOption']
+        if 'cond' in hit.groupdict():
+            said = (f'The scheme allows “{alt}” for {price} mark{"s" if price != 1 else ""}, '
+                    f'only on the condition it prints: “{hit.group("cond")}”. It is a route of its own: '
+                    f'claimed alone, never beside the answers above.')
+        else:
+            said = (f'The scheme prints this answer as “{hit.group("printed")}” and, after it, '
+                    f'“{hit.group("nb")}”: “{alt}” is a whole answer on its own, a route of its own, '
+                    f'never claimed beside any part of the answer above.')
+        route_b = {'id': f'{row["id"]}-b', 'kind': 'point', 'verbatim': alt, 'marks': price,
+                   'route': 'b', **({'alone': True} if price < worth_a else {}), 'contextNote': said}
+        out += [route_a, route_b]
+    return out
+
+
 def _partials(rows):
     """Each priced alternative made claimable through optionOf, as the
     Spanish deck's partials are: an answer and its alternative are one pick,
@@ -1412,7 +1489,7 @@ def mark_rows(items, language_note, general=()):
         if notes:
             row['contextNote'] = ' '.join(notes)
         rows.append(row)
-    return _partials(rows)
+    return _alone_routes(_partials(rows))
 
 
 # ------------------------------------------------------------- the paper ---

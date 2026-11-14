@@ -430,7 +430,7 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
             rows[0]['contextNote'] = f"{rows[0]['contextNote']} {field_note}"
         # A priced alternative the scheme prints beside an answer is a claim of
         # its own, paid in place of that answer (optionOf), as in listening.
-        rows = de_listen._partials(rows)
+        rows = de_listen._alone_routes(de_listen._partials(rows))
         source = reading_source(P, ask.unit, ask.language, level, year)
         note = (f'The scheme reaches this ask by splitting {UNIT_NAME.get(ask.unit, ask.unit)}'
                 f' down to it and prices it {ask.total}, as {ask.notation!r}; '
@@ -689,6 +689,11 @@ def _field_rows(table, scheme_path=None):
         notes = [l for l in answer if re.match(r'^N\.?\s?B\b', l)]
         text = ' '.join(l for l in answer if l not in notes)
         alts = re.findall(r'\s+OR\s+([^()]+?)\s*\((\d)\)', text)
+        or_at = re.search(r'\s+OR\s+[^()]+?\s*\(\d\)', text)
+        # How many priced answers the scheme prints before its "OR": the
+        # alternative stands in for the run of them that ends there.
+        before_or = len(re.findall(r'\(\s*\d{1,2}\s*\)', text[:or_at.start()])) if or_at else 0
+        or_line = next((' '.join(l.split()) for l in answer if re.search(r'\sOR\s', l)), '')
         text = re.sub(r'\s+OR\s+[^()]+?\s*\(\d\)', '', text)
         priced_field = re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field)
         # (A field the table prices nowhere but in its answer: "Lived in…?" /
@@ -708,6 +713,37 @@ def _field_rows(table, scheme_path=None):
                 words_ = name.split()
                 title = next((' '.join(words_[:n]) for n in range(len(words_), 0, -1)
                               if _norm_words(' '.join(words_[:n])) in printed), words_[0])
+            run = None
+            if len(alts) == 1 and before_or:
+                # "Father/Husband/ Richard (1)" / "Mother / Wife/ Helene (1) OR
+                # Parents (2)" / "Daughter (1)" (2012 Ordinary): "Parents" is
+                # paid in place of the parts it equals, ending where the "OR"
+                # is printed. Route a is those parts, route b the alternative
+                # (coordinator ruling, 14 Nov: a menu route lock, never both).
+                alt_w, alt_n = alts[0][0].strip(), int(alts[0][1])
+                for start in range(before_or):
+                    if sum(m_ for _w, m_ in comps[start:before_or]) == alt_n:
+                        run = (start, before_or)
+                        break
+            if run and run[1] - run[0] >= 2:
+                lo, hi = run
+                said_a = [x for x in said if not x.startswith('The scheme prints “OR ')]
+                rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+                             'marks': alt_n, 'permittedMarks': list(range(alt_n + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
+                                        'permittedMarks': list(range(m_ + 1))}
+                                       for k, (w, m_) in enumerate(comps[lo:hi], start=1)],
+                             'route': 'a',
+                             **({'contextNote': ' '.join(said_a)} if said_a else {})})
+                named = ' and '.join(f'“{w}”' for w, _m in comps[lo:hi])
+                rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
+                             'verbatim': f'{title} — {alt_w}', 'marks': alt_n, 'route': 'b',
+                             'contextNote': (f'The scheme prints “{or_line}”: “{alt_w}” is paid {alt_n} '
+                                             f'in place of {named}, never beside them.')})
+                for w, m_ in comps[:lo] + comps[hi:]:
+                    rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
+                                 'verbatim': f'{title} — {w}', 'marks': m_})
+                continue
             rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
                          'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
                          'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,

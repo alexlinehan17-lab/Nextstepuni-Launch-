@@ -1322,17 +1322,27 @@ function tariffFault(c) {
         ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
         : r.group.claimMax * r.group.perOption)
     : (r.marks ?? 0));
+  // A route the scheme pays ALONE for less (`alone` on all its rows, types/
+  // markBank.ts) falls short of the tariff; every other route reaches it.
+  if (c.rows.some(r => r.alone && !r.route)) return 'an alone row must sit on a route';
   const byRoute = new Map();
+  const aloneRoute = new Map();
   let common = 0;
   for (const r of c.rows) {
     if (!r.route) common += worth(r);
-    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+    else {
+      byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+      aloneRoute.set(r.route, (aloneRoute.get(r.route) ?? true) && !!r.alone);
+    }
   }
   common += c.questionBonus?.marks ?? 0;
   if (!byRoute.size) {
     return common === c.totalMarks ? null : `rows sum to ${common}, tariff is ${c.totalMarks}`;
   }
-  const short = [...byRoute.entries()].filter(([, n]) => common + n !== c.totalMarks);
+  const routes = [...byRoute.entries()];
+  if (!routes.some(([k]) => !aloneRoute.get(k))) return 'every route is an alone route; one must reach the tariff';
+  const short = routes.filter(([k, n]) => (aloneRoute.get(k)
+    ? !(n > 0 && common + n < c.totalMarks) : common + n !== c.totalMarks));
   return short.length
     ? `route ${short.map(([k, n]) => `"${k}" sums to ${common + n}`).join(', ')}, tariff is ${c.totalMarks}`
     : null;
@@ -1919,6 +1929,7 @@ for (const c of cards) {
     if (r.unprinted) parts.push('unprinted: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
     if (r.route) parts.push(`route: ${q(r.route)}`);
+    if (r.alone) parts.push('alone: true');
     if (r.dependsOn) parts.push(`dependsOn: ${q(r.dependsOn)}`);
     if (r.group) parts.push(`group: ${JSON.stringify(r.group)}`);
     return `    { ${parts.join(', ')} },`;

@@ -4355,10 +4355,12 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 13,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name of the family — Zimmendorf", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme answers this in a table, a row for each field; each field is one row here, at its printed mark." },
-    { id: "r-2", kind: "criterion", verbatim: "Family", marks: 3, contextNote: "N.B: Accept 3 (people) for 3 marks. The scheme prints “OR Parents (2)” beside these.", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Father/Husband/ Richard","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"Mother / Wife/ Helene","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"Daughter","marks":1,"permittedMarks":[0,1]}] },
-    { id: "r-3", kind: "criterion", verbatim: "Live in", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Hannover","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"In a semi-detached house","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "r-4", kind: "anyN", verbatim: "Aim in life: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Aim in life” and prices it “Any ONE of the following details: 2 marks”.", group: {"claimMax":1,"perOption":2,"options":["Produce less/no (1) rubbish (1)","Reduce (1) rubbish (1)","An empty rubbish bin","Recycle more"]} },
-    { id: "r-5", kind: "criterion", verbatim: "What made them change their way of life?", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"They saw a dolphin","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"suffocate on a plastic bag","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on a documentary/on TV","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-2", kind: "criterion", verbatim: "Family", marks: 2, contextNote: "N.B: Accept 3 (people) for 3 marks.", permittedMarks: [0,1,2], parts: [{"id":"p1","verbatim":"Father/Husband/ Richard","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"Mother / Wife/ Helene","marks":1,"permittedMarks":[0,1]}], route: "a" },
+    { id: "r-3", kind: "point", verbatim: "Family — Parents", marks: 2, contextNote: "The scheme prints “Mother / Wife/ Helene (1) OR Parents (2)”: “Parents” is paid 2 in place of “Father/Husband/ Richard” and “Mother / Wife/ Helene”, never beside them.", route: "b" },
+    { id: "r-4", kind: "point", verbatim: "Family — Daughter", marks: 1 },
+    { id: "r-5", kind: "criterion", verbatim: "Live in", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Hannover","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"In a semi-detached house","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "r-6", kind: "anyN", verbatim: "Aim in life: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Aim in life” and prices it “Any ONE of the following details: 2 marks”.", group: {"claimMax":1,"perOption":2,"options":["Produce less/no (1) rubbish (1)","Reduce (1) rubbish (1)","An empty rubbish bin","Recycle more"]} },
+    { id: "r-7", kind: "criterion", verbatim: "What made them change their way of life?", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"They saw a dolphin","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"suffocate on a plastic bag","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on a documentary/on TV","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13699,7 +13701,8 @@ export const CARDS: SecCard[] = [
     questionText: "How long is the strike to last?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The scheme prints this answer as “Two (2) days (2)” and, after it, “N.B.: On Tuesday: 2 marks only”: “On Tuesday” is a whole answer on its own, claimed in place of the answer above, never beside any part of it.", group: {"claimMax":2,"perOption":2,"options":["Two","days","On Tuesday"],"optionMarks":[2,2,2],"optionOf":[null,null,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", route: "a", group: {"claimMax":2,"perOption":2,"options":["Two","days"]} },
+    { id: "r-1-b", kind: "point", verbatim: "On Tuesday", marks: 2, contextNote: "The scheme prints this answer as “Two (2) days (2)” and, after it, “N.B.: On Tuesday: 2 marks only”: “On Tuesday” is a whole answer on its own, a route of its own, never claimed beside any part of the answer above.", route: "b", alone: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27081,7 +27084,8 @@ export const CARDS: SecCard[] = [
     questionText: "How is he travelling? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “Triathlon” for 2 marks, in place of “cycling”, never beside it, and only on the condition it prints: “if other answers are not given”.", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling","Triathlon"],"optionMarks":[2,2,2,2],"optionOf":[null,null,null,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", route: "a", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling"]} },
+    { id: "r-1-b", kind: "point", verbatim: "Triathlon", marks: 2, contextNote: "The scheme allows “Triathlon” for 2 marks, only on the condition it prints: “if other answers are not given”. It is a route of its own: claimed alone, never beside the answers above.", route: "b", alone: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
