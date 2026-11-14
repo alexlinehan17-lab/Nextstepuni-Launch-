@@ -52,8 +52,12 @@ for (const c of cards) {
     // build also requires a scheme solution figure, which this file cannot see).
     if (r.unprinted) {
       checked++;
-      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || c.rows.length !== 1 || c.answerVariants?.length || !c.rows.includes(r)) {
-        bad++; console.log(`UNTRACEABLE ${c.id} :: an unprinted row must be the card's one criterion row, reading "${UNPRINTED_ANSWER}"`);
+      // (Or the card's last row after the rows the scheme prints, where it
+      // prices more answers than it prints, as the build allows.)
+      const last = c.rows.length > 1 && c.rows[c.rows.length - 1] === r
+        && c.rows.slice(0, -1).every(x => !x.unprinted && !x.ask);
+      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || (c.rows.length !== 1 && !last) || c.answerVariants?.length || !c.rows.includes(r)) {
+        bad++; console.log(`UNTRACEABLE ${c.id} :: an unprinted row must be the card's one criterion row, or its last after printed rows, reading "${UNPRINTED_ANSWER}"`);
       }
       continue;
     }

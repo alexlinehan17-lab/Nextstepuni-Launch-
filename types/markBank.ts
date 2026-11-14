@@ -165,7 +165,10 @@ export interface MarkRow {
    * card exists all the same. The row claims nothing from the scheme: its
    * verbatim is exactly UNPRINTED_ANSWER, it is a criterion, and it is the
    * card's only row; its contextNote says what the scheme prints instead. The
-   * build and the deck test hold it to all three.
+   * build and the deck test hold it to all three. One exception: where the
+   * scheme prices more answers than it prints (German 2011 Higher TEXT II
+   * Q3(a), "(6 marks: 3 x 2 marks)" over two answers), it is the card's LAST
+   * row, after the rows the scheme does print, priced at what is missing.
    */
   unprinted?: boolean;
   /**

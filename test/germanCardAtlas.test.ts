@@ -19,7 +19,8 @@
  * prints four questions is Atlas question "5". The offset is the number of
  * questions the earlier texts print, read from the sitting's own cards, which
  * carry every printed reading question; a guard checks the texts' questions
- * add to the Atlas's numbered ones.
+ * add to the Atlas's numbered ones. The 2011 Higher booklet is named by its
+ * texts alone ("I", "II"): every question of a text is that Atlas question.
  */
 
 import { describe, expect, it } from 'vitest';
@@ -67,6 +68,13 @@ function straightThrough(card: (typeof cards)[number]): string | null {
   return String(before.reduce((sum, unit) => sum + (counts[unit] ?? 0), 0) + Number(m[2]));
 }
 
+/** The text a reading card's question is printed under, where the Atlas
+ *  names a booklet's texts and not their questions (2011 Higher). */
+function wholeText(questionRef: string): string | null {
+  const m = REF.exec(questionRef);
+  return m && TEXT[m[1]] ? TEXT[m[1]] : null;
+}
+
 describe('German cards in the Topic Atlas', () => {
   it('reads a straight-through Atlas paper only where its texts add up to it', () => {
     const wrong: string[] = [];
@@ -94,7 +102,8 @@ describe('German cards in the Topic Atlas', () => {
       const fileid = `${String(card.paperFileid).replace(/\.pdf$/i, '')}.pdf`;
       const paper = topicsForPaper('german', card.year, card.level, 'ev', fileid);
       const question = paper?.q.find(item => item.n === n)
-        ?? (paper?.q.some(item => item.n === '1') ? paper.q.find(item => item.n === straightThrough(card)) : undefined);
+        ?? (paper?.q.some(item => item.n === '1') ? paper.q.find(item => item.n === straightThrough(card)) : undefined)
+        ?? paper?.q.find(item => item.n === wholeText(card.questionRef));
       if (!paper || !question) {
         missing.push(`${card.id}: ${fileid} has no question ${n}`);
         continue;

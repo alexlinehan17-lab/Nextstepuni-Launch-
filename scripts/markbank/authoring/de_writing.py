@@ -51,6 +51,12 @@ def _lines(S, start, stop):
 SHIFTED = re.compile(r'^.*[\x00-\x08\x0b-\x1f][\s.]*')
 
 
+def IS_EX(line):
+    """The Expression line of Schriftliche Produktion: "Ex. (10) …", or in 2012
+    "EXPRESSION (10): Use the grid …"."""
+    return line.startswith('Ex.') or line.startswith('EXPRESSION (')
+
+
 def _readable(line):
     return SHIFTED.sub('', line).strip() if SHIFTED.match(line) else line
 
@@ -79,8 +85,19 @@ def expression_scale(S, head, columns=2):
     # above the table only) at whatever the scheme prints next.
     stops = [_find(S, rx, first) for rx in (
         r'^N\.B\. Take a global view', r'^SCHRIFTLICHE PRODUKTION', r'^Marking Written Expression',
-        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b')]
+        r'^Reasonable Accommodations', r'^LISTENING COMPREHENSION', r'^TEXT\s+(?:I{1,3}|[123])\b',
+        # (2010 Higher ends on it: the Irish-language bonus table the SEC
+        # appends to the scheme, "B" / "Coimisiún na Scrúduithe Stáit" /
+        # "Marcanna Breise as ucht freagairt trí Ghaeilge".)
+        r'^Coimisi[úu]n na Scr[úu]duithe St[áa]it')]
     stop = min((x for x in stops if x is not None), default=None)
+    if stop is not None and stop == stops[-1]:
+        # (with the appendix's letter "B" set above its title)
+        back = stop - 1
+        while back > first and not S.lines[back].strip():
+            back -= 1
+        if re.fullmatch(r'[A-Z]', S.lines[back].strip()):
+            stop = back
     single = _single_column(S, start, stop)
     if single is not None:
         return single
@@ -221,9 +238,12 @@ def theme_grid(S, letter):
     lines = _lines(S, at, end + 1)
     head, points, cur = [], [], None
     for line in lines:
-        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)$', line)
+        # (2011 prints the point's ask on its own head: "A (3 marks) Beschreiben
+        # Sie das Foto in drei bis vier Sätzen.")
+        m = re.match(r'^([ABC])[.:]? \((\d)(?: marks)?\)(?:\s+(\S.*))?$', line)
         if m:
-            cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)), 'lines': []}
+            cur = {'id': m.group(1).lower(), 'label': m.group(1), 'marks': int(m.group(2)),
+                   'lines': [m.group(3)] if m.group(3) else []}
             points.append(cur)
             continue
         if re.match(r'^Dis\.:? 2 marks', line):
@@ -247,6 +267,14 @@ def task_text(P, unit, letter):
     rows = [r for r in P.alternatives if r[0] == unit and r[1] == letter]
     rows.sort(key=lambda r: (r[4] == 'R', len(' '.join(r[2]))), reverse=True)
     lines, page = rows[0][2], rows[0][3]
+    if sum(len(GARBLED.findall(' '.join(r[2]))) for r in rows[:1]) >= 2:
+        # (2011 Higher sets these pages as overlapping blocks of text, so the
+        # row reader returns "S Sehen Sie sich h das Foto re echts an."; the
+        # page is read again by position, a word cut at a block's edge joined
+        # back to its other half.)
+        rebuilt = _overlap_task(P.path, page, letter)
+        if rebuilt:
+            lines = rebuilt
     if rows[0][4] == 'R' and len(' '.join(lines)) < 60:
         # The two columns fused on this page (2026 Higher p18: the English
         # "Your German friend, Karl/Karla, has" alone in its column, the rest
@@ -278,6 +306,66 @@ def task_text(P, unit, letter):
         else:
             out.append(t)
     return '\n'.join(out), page
+
+
+GARBLED = re.compile(r'(?:^|\s)(\w)\s\1\w')
+
+
+def _overlap_rows(path, page):
+    """The page's rows, its words merged where one block's edge cut a word
+    in two and the next block repeated a letter of it ("Sätze" + "en." is
+    "Sätzen.", "b" + "bis" is "bis")."""
+    import pymupdf
+    with pymupdf.open(path) as doc:
+        words = [w for w in doc[page - 1].get_text('words') if w[4].strip()]
+    rows = []
+    for w in sorted(words, key=lambda w: (w[1], w[0])):
+        row = next((r for r in rows if abs(r[0] - w[1]) <= 2), None)
+        if row is None:
+            row = [w[1], []]
+            rows.append(row)
+        row[1].append(w)
+    out = []
+    for _y, row in sorted(rows, key=lambda r: r[0]):
+        row.sort(key=lambda w: (w[0], -w[2]))
+        merged = []
+        for w in row:
+            if merged and w[0] - merged[-1][2] < 0.8:
+                p = merged[-1]
+                if abs(w[0] - p[0]) < 0.5:
+                    if len(w[4]) > len(p[4]):
+                        merged[-1] = w
+                    continue
+                if w[2] <= p[2] + 0.5:
+                    continue
+                # The letters both halves print: the longest tail of the first
+                # that opens the second, nearest the overlap measured.
+                cw = (p[2] - p[0]) / max(len(p[4]), 1)
+                est = max(0, (p[2] - w[0]) / cw) if cw else 0
+                ks = [k for k in range(0, min(4, len(w[4]), len(p[4])) + 1)
+                      if k == 0 or p[4].endswith(w[4][:k])]
+                k = min(ks, key=lambda k: abs(k - est))
+                merged[-1] = (p[0], p[1], w[2], w[3], p[4] + w[4][k:])
+                continue
+            merged.append(w)
+        out.append(' '.join(w[4] for w in merged))
+    return out
+
+
+def _overlap_task(path, page, letter):
+    """Task (a) or (b) of a page _overlap_rows reads: from its own marker to
+    the next marker, the answer rules or the page foot, its word count kept."""
+    rows = _overlap_rows(path, page)
+    start = next((k for k, r in enumerate(rows) if r.startswith(f'({letter}) ')), None)
+    if start is None:
+        return None
+    out = [rows[start][len(f'({letter}) '):]]
+    for r in rows[start + 1:]:
+        if (re.match(r'^\([a-b]\)\s', r) or re.fullmatch(r'[_\s]+', r) or re.match(r'^Lch\s', r)
+                or re.fullmatch(r'(?:ODER|OR|N[ÓO](?:\s*/\s*OR)?)', r.strip())):
+            break
+        out.append(r)
+    return out
 
 
 def _english_column(path, page, first):
@@ -582,7 +670,8 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
         # Kristina: …".
         m = (re.match(r'^\(([A-F])(\d)\)\s*(.*)$', line) or re.match(r'^([A-F]):? (\d)\b:?\s*(.*)$', line)
              or re.match(r'^([A-F])(\d):\s*(.*)$', line)
-             or re.match(r'^([A-F])\.\s*\((\d)\)\s*(.*)$', line))     # "A. (2) Kristina: …" (2014)
+             or re.match(r'^([A-F])\.\s*\((\d)\)\s*(.*)$', line)      # "A. (2) Kristina: …" (2014)
+             or re.match(r'^\(([A-F])\)\s*\((\d)\)\s*(.*)$', line))   # "(E) (1) Frau Rahm: …" (2011)
         if m:
             crit.append(_criterion(m.group(1).lower(), m.group(1), int(m.group(2)), prompt + [line]))
             prompt = []
@@ -633,10 +722,25 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     b_at = _find(S, r'^\(b\) ', a_at + 1)
     # The listening test follows, or (2021, which prints it first) its
     # transcript, or the document ends.
-    end = _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1)\b)', b_at) or len(S.lines)
+    # (2011 and 2012 print the listening test first and end on what follows
+    # this section: the transcript, headed "Teil Eins" (2012), or the
+    # Irish-language bonus table, "C" / "Coimisiún na Scrúduithe Stáit"
+    # (2011); and nothing after the column runs appended to a scheme's text
+    # is the section's.)
+    end = min((x for x in (
+        _find(S, r'^(?:LISTENING COMPREHENSION|Teil\s+(?:I|1|Eins)\b)', b_at),
+        _find(S, r'^Coimisi[úu]n na Scr[úu]duithe St[áa]it$', b_at),
+        _find(S, r'^<!-- markbank:column-runs -->', b_at)) if x is not None), default=len(S.lines))
+    back = end - 1
+    while back > b_at and (not S.lines[back].strip() or PAGE.match(S.lines[back].strip())):
+        back -= 1
+    if end < len(S.lines) and re.fullmatch(r'[A-Z]', S.lines[back].strip()):
+        end = back                  # the appendix's letter, set above its title
     for letter, (lo, hi) in (('a', (a_at, b_at)), ('b', (b_at, end))):
         lines = [l for l in _lines(S, lo, hi) if l != 'OR']
-        st_at = next(k for k, l in enumerate(lines) if l.startswith('St.'))
+        # 2012 names the parts in full: "START (5): Completing the first
+        # paragraph …", "CONTENT (15)", "EXPRESSION (10): Use the grid …".
+        st_at = next(k for k, l in enumerate(lines) if l.startswith('St.') or l.startswith('START ('))
         phrases = []
         k = st_at + 1
         # 2014 prints "St. (5)" alone and its instruction on the line below:
@@ -656,20 +760,21 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
             m = re.match(bullet, lines[k])
             phrases.append((m.group(1), int(m.group(2))))
             k += 1
-        st_marks = int(re.match(r'^St\. \((\d)\)', lines[st_at]).group(1))
+        st_marks = int(re.match(r'^(?:St\.|START) \((\d)\)', lines[st_at]).group(1))
         assert sum(m for _p, m in phrases) == st_marks, (year, letter, phrases)
         rest = lines[:st_at] + lines[k:]
         # "Ex. (10) Use the grid on Page 19 to calculate expression mark in
         # relation to" / "C (Content)" (2014): the line's own end, wrapped.
         # Or "Ex. (10)" alone over "Use the grid on Page 19 …" (2014 (b)).
         for j in range(len(rest) - 1):
-            if ((rest[j].startswith('Ex.') and rest[j].endswith(' to') and rest[j + 1].startswith('C (Content)'))
+            if ((IS_EX(rest[j]) and rest[j].endswith(' to') and rest[j + 1].startswith('C (Content)'))
+                    or (IS_EX(rest[j]) and rest[j].endswith(' to C') and rest[j + 1].startswith('(Content)'))
                     or (re.fullmatch(r'Ex\. \(\d{1,2}\)', rest[j]) and rest[j + 1].startswith('Use the grid'))):
                 rest = rest[:j] + [f'{rest[j]} {rest[j + 1]}'] + rest[j + 2:]
                 break
-        ex_line = next((l for l in rest if l.startswith('Ex.')), None)
+        ex_line = next((l for l in rest if IS_EX(l)), None)
         if letter == 'a':
-            head, labelled = _labelled([l for l in rest if not l.startswith('Ex.')], r'^(C[lL]|[A-F])\.? \((\d)\)')
+            head, labelled = _labelled([l for l in rest if not IS_EX(l)], r'^(C[lL]|[A-F])\.? \((\d)\)')
             labelled = [['Cl' if x[0] == 'CL' else x[0]] + x[1:] for x in labelled]   # "CL. (1)", 2017
             cl = [x for x in labelled if x[0] == 'Cl']
             points = [x for x in labelled if x[0] != 'Cl']
@@ -702,9 +807,9 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
                 reqs = head + [l for x in points for l in x[2]] + ([ex_line] if ex_line else [])
         else:
             every = False
-            c_at = next(k for k, l in enumerate(rest) if re.match(r'^C \(\d{1,2}\)', l))
-            c_marks = int(re.match(r'^C \((\d{1,2})\)', rest[c_at]).group(1))
-            guide = [l for l in rest[c_at:] if not l.startswith('Ex.')]
+            c_at = next(k for k, l in enumerate(rest) if re.match(r'^(?:C|CONTENT) \(\d{1,2}\)', l))
+            c_marks = int(re.match(r'^(?:C|CONTENT) \((\d{1,2})\)', rest[c_at]).group(1))
+            guide = [l for l in rest[c_at:] if not IS_EX(l)]
             criteria = [_criterion('content', 'C', c_marks, guide)]
             reqs = [l for l in rest[:c_at]] + ([ex_line] if ex_line else [])
         content = [k_['id'] for k_ in criteria]
@@ -741,9 +846,18 @@ def ordinary_cards(year, card_id, question_ref, concept_for):
     return out
 
 
+# A line of the scheme its text layer cannot give (see SHIFTED), shown as the
+# SEC printed it: the crop's key in components/MarkBank/figures-german.json.
+SCHEME_CROPS = {'de-2014-ol-at-b': 'german-2014-OL-scheme-p18-AT-b'}
+
+
 def cards(year, level, card_id, question_ref, concept_for, sitting=None):
     if not sitting:
-        return (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+        out = (higher_cards if level == 'hl' else ordinary_cards)(year, card_id, question_ref, concept_for)
+        for c in out:
+            if c['id'] in SCHEME_CROPS:
+                c['figureKey'] = SCHEME_CROPS[c['id']]
+        return out
     # A deferred sitting's cards are "de-2022-hl-deferred-…", cited "… —
     # Deferred sitting", on the deferred booklet.
     out = higher_cards(year, card_id, lambda *a: f'{question_ref(*a)} — Deferred sitting',

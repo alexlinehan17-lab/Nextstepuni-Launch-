@@ -269,9 +269,13 @@ describe('every card traces to the marking scheme on disk', () => {
       for (const row of card.rows) {
         if (row.unprinted) {
           // An unprinted row claims nothing from the scheme: the scheme prints
-          // no answer row for the ask, and the card's one row says so.
-          if (row.verbatim !== UNPRINTED_ANSWER || row.kind !== 'criterion' || card.rows.length !== 1) {
-            bad.push(`${card.questionRef}: unprinted row "${row.verbatim}" is not the card's one "${UNPRINTED_ANSWER}" criterion`);
+          // no answer row for the ask, and the card's one row says so -- or it
+          // prices more answers than it prints, and the card's last row, after
+          // the rows it does print, says so (German 2011 Higher TEXT II Q3(a)).
+          const last = card.rows.length > 1 && card.rows[card.rows.length - 1] === row
+            && card.rows.slice(0, -1).every(x => !x.unprinted && !x.ask);
+          if (row.verbatim !== UNPRINTED_ANSWER || row.kind !== 'criterion' || (card.rows.length !== 1 && !last)) {
+            bad.push(`${card.questionRef}: unprinted row "${row.verbatim}" is not the card's one "${UNPRINTED_ANSWER}" criterion, nor its last after printed rows`);
           }
           continue;
         }

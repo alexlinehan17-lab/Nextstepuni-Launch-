@@ -1380,6 +1380,9 @@ const GERMAN_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2015: { higher: 46, ordinary: 51 },
   2014: { higher: 46, ordinary: 52 },
   2013: { higher: 44, ordinary: 49 },
+  2012: { higher: 44, ordinary: 47 },
+  2011: { higher: 43, ordinary: 48 },
+  2010: { higher: 44, ordinary: 47 },
 };
 const GERMAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 27, ordinary: 32 },
@@ -2302,6 +2305,28 @@ describe('Mark Bank card preservation', () => {
     }
     expect(cards.filter(card => !isGermanAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
       .toBe(true);
+  });
+
+  /* A German card's conceptId is its level-independent identity, the key a
+   * student's progress is carried on between Higher and Ordinary
+   * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
+   * card id. It is derived from the question text, and reading a question more
+   * fully (2010-2026 Higher grammar, "BEISPIEL: <sentence>") would move it;
+   * de_all.py keeps every shipped card on the conceptId frozen in
+   * german-concept-ids.json, and this holds the deck to that file and the file
+   * to its own hash, so neither can be refreshed to hide a move. */
+  it('keeps every shipped German card on the conceptId it shipped with', () => {
+    const pinned = JSON.parse(readFileSync(resolve(__dirname, '../scripts/markbank/authoring/german-concept-ids.json'),
+      'utf8')) as Record<string, string>;
+    const lines = Object.keys(pinned).sort().map(id => `${id}\t${pinned[id]}\n`).join('');
+    expect(Object.keys(pinned)).toHaveLength(1776);
+    expect(createHash('sha256').update(lines).digest('hex'))
+      .toBe('6ea73b04aee241ee522f86aeb5d287ef7d3dbe7cf5264b271d417d56c9445bb2');
+    const deck = new Map([...GERMAN_HIGHER, ...GERMAN_ORDINARY].map(card => [card.id, card.conceptId]));
+    const moved = Object.entries(pinned)
+      .filter(([id, conceptId]) => deck.get(id) !== conceptId)
+      .map(([id, conceptId]) => `${id}: ${conceptId} -> ${deck.get(id) ?? '(gone)'}`);
+    expect(moved).toEqual([]);
   });
 
   it('adds each further Spanish sitting on top of the frozen 2021-2025 identity', () => {

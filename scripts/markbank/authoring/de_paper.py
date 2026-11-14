@@ -284,7 +284,16 @@ class DePaper:
             for _x0, side, text in groups:
                 if LANG_LINE.search(text):
                     self.language_lines.append((unit, ' '.join(text.split())))
-                if FURNITURE.match(text):
+                # (Never the grammar exercise's own instruction: "Lesen Sie
+                # den folgenden Text und setzen Sie die fehlenden Präpositionen
+                # … ein!", 2012 Higher, is the ask, not the passage's rubric.)
+                # (Nor a worked example printed behind its label, "BEISPIEL:
+                # Oma überlieβ ihrem Enkel den Bauernhof." (2010 Higher): the
+                # sentence the example's answer under it is made from. Dropped
+                # with the label, 24 Higher grammar cards showed the example's
+                # answer and not the sentence it answers.)
+                if FURNITURE.match(text) and not (unit == 'AG' and re.match(r'^Lesen Sie den folgenden\b', text)) \
+                        and not (unit == 'AG' and re.match(r'^Beispiel\s*:\s*\S', text, re.I)):
                     continue
                 if unit in ('AT', 'SP'):
                     self._alternative(unit, side, text, pno)
@@ -513,7 +522,7 @@ class DePaper:
             # gutter into the right one: "Er war jeden Morgen am / bei / um /
             # in" / … "acht Uhr im Geschäft." (2013 Ordinary). Put back.
             left, right = list(lines_of.get((q, 'L'), [])), list(lines_of.get((q, 'R'), []))
-            open_at = [k for k, l in enumerate(left) if l.count(' / ') >= 2 and not re.search(r'[.?!]\s*$', l)]
+            open_at = [k for k, l in enumerate(left) if l.count('/') >= 2 and not re.search(r'[.?!]\s*$', l)]
             spill = [k for k, l in enumerate(right) if k > 0 and re.match(r'^[a-zäöü]', l.strip())
                      and re.search(r'[.?!]\s*$', l) and re.search(r'[.?!]\s*$', right[k - 1])]
             if len(open_at) == 1 and len(spill) == 1:
@@ -529,7 +538,7 @@ class DePaper:
                 # (2014 Ordinary numbers no sentence: the items begin at the
                 # first line offering its choices, "Er fuhr mit / zu / auf /
                 # nach dem Lift …".)
-                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if ' / ' in l), None)
+                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if l.count('/') >= 2), None)
                 items = (irish[m.start():] if m else
                          ' '.join(lines_of[(q, 'L')][first:]) if first is not None else '')
                 text = f'{english} {items}'.strip()
@@ -679,7 +688,8 @@ class DePaper:
                 continue
             if AURAL_END.match(s) or FURNITURE.match(s) or AURAL_FOOT.match(s):
                 continue
-            if re.match(r'^\(\s*Item\b[^)]*\)\s*$', s, re.I):
+            # ("(Item2)", 2010 Ordinary, with no space before its number.)
+            if re.match(r'^\(\s*Item(?:\b|(?=\d))[^)]*\)\s*$', s, re.I):
                 label = s
                 cur = None
                 continue
@@ -733,7 +743,9 @@ AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[�
                         r'Leaving Certificate Examination|Scr[úu]d[úu] na|'
                         # "8/Page 2 of 8" (2017), the end of "Leathanach 2 de
                         # 8/Page 2 of 8" across the column bound.
-                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$)', re.I)
+                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$'
+                        # "2 of 8" (2010), the same foot cut after "Page".
+                        r'|\d{1,2}\s+of\s+\d{1,2}$)', re.I)
 
 # An item the two columns number differently, the same ask: 2010 Higher Part 4
 # numbers its last item "5." in the Irish column and "6." in the English

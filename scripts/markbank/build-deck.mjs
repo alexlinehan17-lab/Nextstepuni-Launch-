@@ -1591,6 +1591,21 @@ for (const c of cards) {
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
+    /* A crop of the scheme's own print, where its text layer cannot be lifted:
+     * German 2014 Ordinary Äußerung (b) sets "Ich heiße .." in a font shifted
+     * into control characters, so the guidance line keeps only the words after
+     * it and the line itself is shown as the SEC printed it. A solution crop:
+     * held back until the reveal. Only a card that names a figureKey takes
+     * this path, so every other grid deck is emitted exactly as before. */
+    let gridFigure = null;
+    if (c.figureKey) {
+      const rec = figureRecord(c.figureKey);
+      if (rec.error) { dropped.push(`${c.id}: ${rec.error}`); continue; }
+      const prev = seenHash.get(rec.srcHash);
+      if (prev && prev !== c.figureKey) { dropped.push(`${c.id}: crop already bound as "${prev}"`); continue; }
+      seenHash.set(rec.srcHash, c.figureKey);
+      gridFigure = { ...rec, lettersVisible: [] };
+    }
     seenId.add(c.id);
     out.push({ id: c.id, level: c.level, code: `  {
     ...base, kind: "rubric",
@@ -1601,7 +1616,7 @@ for (const c of cards) {
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
     totalMarks: ${c.totalMarks},
-    rubric: ${JSON.stringify(c.rubric, null, 6).replace(/\[\s*(\d+(?:,\s*\d+)*)\s*\]/g, (_m, list) => `[${list.split(/,\s*/).join(',')}]`).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}
+    rubric: ${JSON.stringify(c.rubric, null, 6).replace(/\[\s*(\d+(?:,\s*\d+)*)\s*\]/g, (_m, list) => `[${list.split(/,\s*/).join(',')}]`).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}${gridFigure ? `\n    figure: ${JSON.stringify(gridFigure)},` : ''}
   } as SecCard,` });
     continue;
   }
@@ -1818,10 +1833,15 @@ for (const c of cards) {
        * Q11(c)(vii)): every printed ask gets a card, and this row says the
        * scheme prints no answer -- a direction, never an answer, so it claims
        * nothing from the scheme. It must read exactly UNPRINTED_ANSWER, be a
-       * criterion, and be the card's only row (types/markBank.ts). */
-      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || c.rows.length !== 1
+       * criterion, and be the card's only row (types/markBank.ts) -- or, where
+       * the scheme prices more answers than it prints (German 2011 Higher TEXT
+       * II Q3(a), "(6 marks: 3 x 2 marks)" over two answers), the card's LAST
+       * row, every row above it one the scheme prints. */
+      const last = c.rows.length > 1 && c.rows[c.rows.length - 1] === r
+        && c.rows.slice(0, -1).every(x => !x.unprinted && !x.ask);
+      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || (c.rows.length !== 1 && !last)
         || c.answerVariants?.length || !c.rows.includes(r)) {
-        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, reading "${UNPRINTED_ANSWER}")`);
+        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, or its last after the rows the scheme prints, reading "${UNPRINTED_ANSWER}")`);
       }
       continue;
     }
