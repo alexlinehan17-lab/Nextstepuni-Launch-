@@ -1817,10 +1817,15 @@ for (const c of cards) {
        * Q11(c)(vii)): every printed ask gets a card, and this row says the
        * scheme prints no answer -- a direction, never an answer, so it claims
        * nothing from the scheme. It must read exactly UNPRINTED_ANSWER, be a
-       * criterion, and be the card's only row (types/markBank.ts). */
-      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || c.rows.length !== 1
+       * criterion, and be the card's only row (types/markBank.ts) -- or, where
+       * the scheme prices more answers than it prints (German 2011 Higher TEXT
+       * II Q3(a), "(6 marks: 3 x 2 marks)" over two answers), the card's LAST
+       * row, every row above it one the scheme prints. */
+      const last = c.rows.length > 1 && c.rows[c.rows.length - 1] === r
+        && c.rows.slice(0, -1).every(x => !x.unprinted && !x.ask);
+      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || (c.rows.length !== 1 && !last)
         || c.answerVariants?.length || !c.rows.includes(r)) {
-        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, reading "${UNPRINTED_ANSWER}")`);
+        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, or its last after the rows the scheme prints, reading "${UNPRINTED_ANSWER}")`);
       }
       continue;
     }

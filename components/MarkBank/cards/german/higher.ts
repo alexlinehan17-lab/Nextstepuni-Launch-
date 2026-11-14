@@ -2438,6 +2438,32 @@ export const CARDS: SecCard[] = [
     year: 2011, level: "higher",
     paperFileid: "LC011ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, German 2011 Higher Level — © State Examinations Commission.",
+    id: "de-2011-hl-t2-3-a", topicId: "german-6-0", conceptId: "makes-miniatur-wunderland-such-special-experience",
+    section: "T2", questionRef: "2011 HL Section T2 Q3(a)",
+    questionText: "What makes Miniatur Wunderland such a special experience for visitors? Give details. (lines 101 – 108)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional.", group: {"claimMax":2,"perOption":2,"options":["Visitors can watch technicians/ model builders (at work)","Can experience how the Wonderland is expanding/ growing"]} },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme prices this ask “(6 marks: 3 x 2 marks)” and prints two answers; it prints no answer for the rest.", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TEXT II: LESEVERSTÄNDNIS",
+          "title": "TEXT II — answer in English or Irish",
+          "pages": [
+                6,
+                7,
+                8
+          ],
+          "attribution": "SEC German 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC011ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, German 2011 Higher Level — © State Examinations Commission.",
     id: "de-2011-hl-t2-3-b", topicId: "german-6-0", conceptId: "there-lot-high-tech-involved-making",
     section: "T2", questionRef: "2011 HL Section T2 Q3(b)",
     questionText: "There is a lot of high-tech involved in making Miniatur Wunderland operate. Give details. (lines 110 – 123)",

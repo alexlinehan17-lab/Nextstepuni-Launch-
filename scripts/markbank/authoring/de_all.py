@@ -65,6 +65,11 @@ from de_topics import (topic_for, concept_for, language_note,   # noqa: E402
                        TEXT_TITLE)
 from paper_census import census_subject                        # noqa: E402
 import de_listen                                               # noqa: E402
+
+# The one row text a card may carry that is not a slice of the scheme, from
+# UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
+UNPRINTED = 'The scheme prints no answer for this part.'
+NUMBER_WORDS = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
 import de_writing                                              # noqa: E402
 import cardlint                                                # noqa: E402
 
@@ -364,6 +369,17 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
                               f'"{ask.notation}" over {len(ask.answers)} stated '
                               f'answer(s) for "{ask.cue[:80]}"')
             continue
+        if ask.short:
+            # What the scheme prices and does not print (2011 Higher TEXT II
+            # Q3(a), "(6 marks: 3 x 2 marks)" over two answers): a row of its
+            # own in the house wording, claiming nothing from the scheme.
+            n_ = ask.short['printed']
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': UNPRINTED,
+                         'marks': ask.short['marks'], 'unprinted': True,
+                         'permittedMarks': list(range(ask.short['marks'] + 1)),
+                         'contextNote': (f'The scheme prices this ask “{ask.short["rate"]}” and prints '
+                                         f'{NUMBER_WORDS.get(n_, n_)} answer{"s" if n_ != 1 else ""}; '
+                                         f'it prints no answer for the rest.')})
         if cardlint.NAMES_LETTERS.search(question):
             refuse('the ask points at printed matter the card cannot carry', ref,
                    f'{year} {level.upper()} paper: "{question[:110]}"')

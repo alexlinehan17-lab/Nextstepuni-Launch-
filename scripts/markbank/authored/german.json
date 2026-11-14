@@ -7498,6 +7498,64 @@
   }
  },
  {
+  "id": "de-2011-hl-t2-3-a",
+  "subjectId": "german",
+  "level": "higher",
+  "year": 2011,
+  "section": "T2",
+  "topicId": "german-6-0",
+  "conceptId": "makes-miniatur-wunderland-such-special-experience",
+  "questionRef": "2011 HL Section T2 Q3(a)",
+  "questionText": "What makes Miniatur Wunderland such a special experience for visitors? Give details. (lines 101 – 108)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Visitors can watch technicians/ model builders (at work)",
+      "Can experience how the Wonderland is expanding/ growing"
+     ]
+    },
+    "contextNote": "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme pays every one of these; none is optional."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 2,
+    "unprinted": true,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme prices this ask “(6 marks: 3 x 2 marks)” and prints two answers; it prints no answer for the rest."
+   }
+  ],
+  "notes": "The scheme reaches this ask by splitting TEXT II down to it and prices it 6, as '2 + 2'; the paper prints it on page 8 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TEXT II: LESEVERSTÄNDNIS",
+   "title": "TEXT II — answer in English or Irish",
+   "pages": [
+    6,
+    7,
+    8
+   ],
+   "attribution": "SEC German 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the passage exactly as the examination printed it, then answer. This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified."
+  }
+ },
+ {
   "id": "de-2011-hl-t2-3-b",
   "subjectId": "german",
   "level": "higher",

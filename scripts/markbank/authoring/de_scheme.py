@@ -593,7 +593,7 @@ class Ask:
 
     __slots__ = ('unit', 'q', 'letter', 'roman', 'total', 'segments', 'notation',
                  'cue', 'notes', 'language', 'line', 'head_word', 'exhaustive', 'by_rate',
-                 'bold')
+                 'bold', 'short')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -1864,6 +1864,21 @@ class DeScheme:
             # paragraph-headings question, and it is not a menu.
             exhaustive = True
         got = sum(sum(g['steps']) for g in segments)
+        # The scheme prices more answers than it prints: "(a) (6 marks: 3 x 2
+        # marks)" over two answers at "(2)" each and no third (2011 Higher
+        # TEXT II Q3(a); the paper says "Give details."). The answers it
+        # prints are claimed at their prices, and what it does not print is a
+        # row of its own saying so (coordinator ruling, 14 Nov).
+        short = None
+        if total is not None and got < total and len(segments) == 1:
+            rate, _cnt = read_rate(clause or '')
+            prices = [a['marks'] for a in segments[0]['answers']]
+            if (rate and len(set(rate)) == 1 and prices and all(m == rate[0] for m in prices)
+                    and len(prices) < len(rate) and sum(rate) == total
+                    and got + rate[0] * (len(rate) - len(prices)) == total):
+                short = {'rate': ' '.join((clause or '').split()), 'printed': len(prices),
+                         'marks': rate[0] * (len(rate) - len(prices))}
+                got = total
         if total is not None and got != total:
             return (f'the head prices this ask {total} and its own rate line(s) '
                     f'add to {got}')
@@ -1876,7 +1891,7 @@ class DeScheme:
                        + ' + '.join(str(n) for n in g['steps'])
                        for g in segments),
                    cue=cue, notes=notes, language=_language_of(cue, word),
-                   line=line_no, head_word=word, exhaustive=exhaustive)
+                   line=line_no, head_word=word, exhaustive=exhaustive, short=short)
 
     def _refuse(self, ref, line, why):
         self.refused.append((ref, why, line))
