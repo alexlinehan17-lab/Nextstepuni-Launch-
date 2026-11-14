@@ -401,6 +401,12 @@ describe('War Room minimalist workspace', () => {
   });
 
   test('does not count an early-ended study record as a completed weekly session', async () => {
+    // The weekly queue plans the days left in the week, so on a Saturday it
+    // planned two sessions and no Mathematics, and the completed Mathematics
+    // record counted 0 (CI failed from 00:00 on Saturday 14 November 2026).
+    // Pin a midweek day so the test checks what it names, not the day it runs.
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-11-11T12:00:00'));
     const now = new Date();
     const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     firestoreState.sessions = [
