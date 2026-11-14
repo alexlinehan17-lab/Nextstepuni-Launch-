@@ -379,7 +379,7 @@
   },
   "german": {
     "cards": 1776,
-    "contentHash": "9d2b109d5f53b926",
+    "contentHash": "e33cbe5eaf5e5f10",
     "coveragePct": 100.0,
     "covered": 1742,
     "excluded": 0,
@@ -754,7 +754,7 @@
   },
   "spanish": {
     "cards": 2268,
-    "contentHash": "ea075a1a086bec56",
+    "contentHash": "ccdbad54cf38c83f",
     "coveragePct": 100.0,
     "covered": 2289,
     "excluded": 0,

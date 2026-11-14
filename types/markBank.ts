@@ -195,6 +195,15 @@ export interface MarkRow {
    * to that route and locks the others.
    */
   route?: string;
+  /**
+   * The rows of this route are a whole answer the scheme pays ALONE, and for
+   * less than the question: "(Allow “everything” for two marks if only answer
+   * given)" (German 2021 Higher TEXT II Q2(b)), "N.B.: On Tuesday: 2 marks
+   * only" (German 2016 Ordinary L4 Q1(ii)). Such a route may total less than
+   * the tariff (tariffReconciles); every other route must still reach it. Set
+   * only with `route`, on every row of that route.
+   */
+  alone?: boolean;
   /** `anyN` only: how many of the listed options may be claimed, and for how much. */
   group?: {
     claimMax: number;
@@ -2095,13 +2104,23 @@ export function tariffReconciles(card: SecCard): boolean {
     r.kind === 'anyN' && r.group ? groupMarks(r.group) : (r.marks ?? 0);
   // Mutually exclusive routes are counted ONCE, and each must reach the tariff on
   // its own — a student takes one route or the other, never a total of both.
+  // A route the scheme pays ALONE for less (`alone` on all its rows) falls
+  // short of it, and must: at least one other route reaches the tariff.
+  if (rows.some(r => r.alone && !r.route)) return false;
   const byRoute = new Map<string, number>();
+  const aloneRoute = new Map<string, boolean>();
   let common = 0;
   for (const r of rows) {
     if (!r.route) common += worth(r);
-    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+    else {
+      byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+      aloneRoute.set(r.route, (aloneRoute.get(r.route) ?? true) && !!r.alone);
+    }
   }
   common += bonus?.marks ?? 0;
   if (!byRoute.size) return common === totalMarks;
-  return [...byRoute.values()].every(n => common + n === totalMarks);
+  const routes = [...byRoute.entries()];
+  const full = routes.filter(([route]) => !aloneRoute.get(route));
+  return full.length > 0 && full.every(([, n]) => common + n === totalMarks)
+    && routes.filter(([route]) => aloneRoute.get(route)).every(([, n]) => n > 0 && common + n < totalMarks);
 }

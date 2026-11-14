@@ -4355,10 +4355,14 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 13,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name of the family — Zimmendorf", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme answers this in a table, a row for each field; each field is one row here, at its printed mark." },
-    { id: "r-2", kind: "criterion", verbatim: "Family", marks: 3, contextNote: "N.B: Accept 3 (people) for 3 marks. The scheme prints “OR Parents (2)” beside these.", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Father/Husband/ Richard","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"Mother / Wife/ Helene","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"Daughter","marks":1,"permittedMarks":[0,1]}] },
-    { id: "r-3", kind: "criterion", verbatim: "Live in", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Hannover","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"In a semi-detached house","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "r-4", kind: "anyN", verbatim: "Aim in life: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Aim in life” and prices it “Any ONE of the following details: 2 marks”.", group: {"claimMax":1,"perOption":2,"options":["Produce less/no (1) rubbish (1)","Reduce (1) rubbish (1)","An empty rubbish bin","Recycle more"]} },
-    { id: "r-5", kind: "criterion", verbatim: "What made them change their way of life?", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"They saw a dolphin","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"suffocate on a plastic bag","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on a documentary/on TV","marks":1,"permittedMarks":[0,1]}] },
+    { id: "r-2", kind: "criterion", verbatim: "Family", marks: 2, permittedMarks: [0,1,2], parts: [{"id":"p1","verbatim":"Father/Husband/ Richard","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"Mother / Wife/ Helene","marks":1,"permittedMarks":[0,1]}], route: "a" },
+    { id: "r-3", kind: "point", verbatim: "Family — Parents", marks: 2, contextNote: "The scheme prints “Mother / Wife/ Helene (1) OR Parents (2)”: “Parents” is paid 2 in place of “Father/Husband/ Richard” and “Mother / Wife/ Helene”, never beside them.", route: "b" },
+    { id: "r-4", kind: "point", verbatim: "Family — Daughter", marks: 1, route: "a" },
+    { id: "r-4-b", kind: "point", verbatim: "Family — Daughter", marks: 1, route: "b" },
+    { id: "r-2-c", kind: "point", verbatim: "Family — 3 (people)", marks: 3, contextNote: "The scheme prints “N.B: Accept 3 (people) for 3 marks”: “3 (people)” is paid 3, the whole of this field, in place of every part of it, never beside any.", route: "c" },
+    { id: "r-5", kind: "criterion", verbatim: "Live in", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"Hannover","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"In a semi-detached house","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "r-6", kind: "anyN", verbatim: "Aim in life: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “Aim in life” and prices it “Any ONE of the following details: 2 marks”.", group: {"claimMax":1,"perOption":2,"options":["Produce less/no (1) rubbish (1)","Reduce (1) rubbish (1)","An empty rubbish bin","Recycle more"]} },
+    { id: "r-7", kind: "criterion", verbatim: "What made them change their way of life?", marks: 3, permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"They saw a dolphin","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"suffocate on a plastic bag","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"on a documentary/on TV","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5436,7 +5440,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Andi want to go in June? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: award half marks)”", group: {"claimMax":2,"perOption":6,"options":["To a music festival / \"Rock am Ring\".","At the Nürburgring .","With Tobias/three classmates.","They will sleep in a tent/camping facilities are provided","From 14.-17. June. N. B: For 4 days = 2 marks only.","His favourite bands are playing.","One has to be 17 years of age."],"perOptionSteps":[6,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: award half marks)” The scheme prints “N. B: For 4 days = 2 marks only” after “From 14.-17. June.”: “For 4 days” is paid 2 marks, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":6,"options":["To a music festival / \"Rock am Ring\".","At the Nürburgring .","With Tobias/three classmates.","They will sleep in a tent/camping facilities are provided","From 14.-17. June.","His favourite bands are playing.","One has to be 17 years of age.","For 4 days"],"perOptionSteps":[6,3],"optionMarks":[6,6,6,6,6,6,6,2],"optionOf":[null,null,null,null,null,null,null,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5471,7 +5475,7 @@ export const CARDS: SecCard[] = [
     questionText: "Andi's mother is skeptical. Explain why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: award half marks)”", group: {"claimMax":2,"perOption":6,"options":["He is too young/only 17.","The concert is too long/Three nights are too long","Camping may not be a good idea.","He might get hurt/have an accident. N. B: She is worried = 1 mark only","He might come in contact with/take drugs.","It may be too dangerous."],"perOptionSteps":[6,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “(Answers in German: award half marks)” The scheme prints “N. B: She is worried = 1 mark only” after “He might get hurt/have an accident.”: “She is worried” is paid 1 mark, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":6,"options":["He is too young/only 17.","The concert is too long/Three nights are too long","Camping may not be a good idea.","He might get hurt/have an accident.","He might come in contact with/take drugs.","It may be too dangerous.","She is worried"],"perOptionSteps":[6,2],"optionMarks":[6,6,6,6,6,6,1],"optionOf":[null,null,null,null,null,null,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8081,7 +8085,7 @@ export const CARDS: SecCard[] = [
     questionText: "The EssBar is not just an alternative to the canteen. Name two other ways in which it is successful. (Par. 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":5,"options":["They deliver/bring coffee to the staff room/teachers during break. N.B. If “during break” is missing: 2 marks only","Catering for parents’ evenings.","Catering for school concerts.","They had a Christmas market."],"perOptionSteps":[5,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme prints “N.B. If “during break” is missing: 2 marks only” after “They deliver/bring coffee to the staff room/teachers during break.”: “They deliver/bring coffee to the staff room/teachers” is paid 2 marks, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":5,"options":["They deliver/bring coffee to the staff room/teachers during break.","Catering for parents’ evenings.","Catering for school concerts.","They had a Christmas market.","They deliver/bring coffee to the staff room/teachers"],"perOptionSteps":[5,3],"optionMarks":[5,5,5,5,2],"optionOf":[null,null,null,null,0]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10138,7 +10142,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "What: the answers the scheme accepts", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this list “What”.", group: {"claimMax":1,"perOption":2,"options":["To travel","A social project"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “How”. Allow global “he asks himself questions” = 1 mark", group: {"claimMax":2,"perOption":3,"options":["He searches the internet/on ausland.org.","(He wonders) where he should travel to.","(He wonders) what kind of a project he wants to do.","(He wonders) how long he wants to stay."],"perOptionSteps":[3,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "How: the answers the scheme accepts", marks: null, contextNote: "The scheme heads this list “How”. The scheme prints “Allow global “he asks himself questions” = 1 mark”: “he asks himself questions” is one of these answers, paid 1 mark.", group: {"claimMax":2,"perOption":3,"options":["He searches the internet/on ausland.org.","(He wonders) where he should travel to.","(He wonders) what kind of a project he wants to do.","(He wonders) how long he wants to stay.","he asks himself questions"],"perOptionSteps":[3,1],"optionMarks":[3,3,3,3,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10242,7 +10246,7 @@ export const CARDS: SecCard[] = [
     questionText: "During his time as a teacher, Benedikt learns a lot from his pupils. Give two examples. (Par. 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["He learns about the country.","He learns about the people / the population.","He learns about the lifestyle of the Kenyans/the European immigrants.","He learns about problems. N.B. Problem = 1 mark only","He learns about the discrepancy between poverty and wealth.","He gets a new impression of Kenya.","He has learned to say ‘thank you’ in the local language."],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme prints “N.B. Problem = 1 mark only” after “He learns about problems.”: “Problem” is paid 1 mark, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":3,"options":["He learns about the country.","He learns about the people / the population.","He learns about the lifestyle of the Kenyans/the European immigrants.","He learns about problems.","He learns about the discrepancy between poverty and wealth.","He gets a new impression of Kenya.","He has learned to say ‘thank you’ in the local language.","Problem"],"perOptionSteps":[3,2],"optionMarks":[3,3,3,3,3,3,3,1],"optionOf":[null,null,null,null,null,null,null,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12057,7 +12061,7 @@ export const CARDS: SecCard[] = [
     questionText: "What motivates Cynthia to embark on a professional career in Germany? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified.", group: {"claimMax":2,"perOption":3,"options":["She always/as a child she wanted to be a doctor.","She likes a challenge.","She wants people to say: You did well, Cynthia!","In Syria it is not normal that women get the job they want.","There are rules for what women and men can do in Syria.","In Germany things are different than in Syria.","A woman has to be able to do everything in Germany.","Her mother wasn’t allowed to / couldn’t work in Syria. N.B. : Mother had no job = 1 mark only"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme prints “N.B. : Mother had no job = 1 mark only” after “Her mother wasn’t allowed to / couldn’t work in Syria.”: “Mother had no job” is paid 1 mark, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":3,"options":["She always/as a child she wanted to be a doctor.","She likes a challenge.","She wants people to say: You did well, Cynthia!","In Syria it is not normal that women get the job they want.","There are rules for what women and men can do in Syria.","In Germany things are different than in Syria.","A woman has to be able to do everything in Germany.","Her mother wasn’t allowed to / couldn’t work in Syria.","Mother had no job"],"perOptionSteps":[3,2],"optionMarks":[3,3,3,3,3,3,3,3,1],"optionOf":[null,null,null,null,null,null,null,null,7]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13138,7 +13142,7 @@ export const CARDS: SecCard[] = [
     questionText: "Sven Asendorf has been a blood donor for many years. What does he say about himself?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":2,"perOption":4,"options":["He doesn’t consider himself a hero/he is a normal person.","He is 54.","He lives near Munich.","He is married.","He has two daughters. N.B.: He has 2 children = 1 mark only","He works in a factory"],"perOptionSteps":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The scheme prints “N.B.: He has 2 children = 1 mark only” after “He has two daughters.”: “He has 2 children” is paid 1 mark, in place of that answer, never beside it.", group: {"claimMax":2,"perOption":4,"options":["He doesn’t consider himself a hero/he is a normal person.","He is 54.","He lives near Munich.","He is married.","He has two daughters.","He works in a factory","He has 2 children"],"perOptionSteps":[4,2],"optionMarks":[4,4,4,4,4,4,1],"optionOf":[null,null,null,null,null,null,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13699,7 +13703,8 @@ export const CARDS: SecCard[] = [
     questionText: "How long is the strike to last?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The scheme prints this answer as “Two (2) days (2)” and, after it, “N.B.: On Tuesday: 2 marks only”: “On Tuesday” is a whole answer on its own, claimed in place of the answer above, never beside any part of it.", group: {"claimMax":2,"perOption":2,"options":["Two","days","On Tuesday"],"optionMarks":[2,2,2],"optionOf":[null,null,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", route: "a", group: {"claimMax":2,"perOption":2,"options":["Two","days"]} },
+    { id: "r-1-b", kind: "point", verbatim: "On Tuesday", marks: 2, contextNote: "The scheme prints this answer as “Two (2) days (2)” and, after it, “N.B.: On Tuesday: 2 marks only”: “On Tuesday” is a whole answer on its own, a route of its own, never claimed beside any part of the answer above.", route: "b", alone: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -27081,7 +27086,8 @@ export const CARDS: SecCard[] = [
     questionText: "How is he travelling? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.” The scheme allows “Triathlon” for 2 marks, in place of “cycling”, never beside it, and only on the condition it prints: “if other answers are not given”.", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling","Triathlon"],"optionMarks":[2,2,2,2],"optionOf":[null,null,null,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German, award half marks.”", route: "a", group: {"claimMax":2,"perOption":2,"options":["swimming","running","cycling"]} },
+    { id: "r-1-b", kind: "point", verbatim: "Triathlon", marks: 2, contextNote: "The scheme allows “Triathlon” for 2 marks, only on the condition it prints: “if other answers are not given”. It is a route of its own: claimed alone, never beside the answers above.", route: "b", alone: true },
     ],
     sourceMaterial: {
           "kind": "source-text",

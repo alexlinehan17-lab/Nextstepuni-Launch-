@@ -34363,12 +34363,25 @@
      "options": [
       "Pays bill in restaurant.",
       "Leaves a tip of 100 million",
-      "Buys new ‘shoes’ (skis)"
+      "Buys new ‘shoes’ (skis)",
+      "Leaves a tip"
      ],
      "perOptionSteps": [
       4,
       3,
       3
+     ],
+     "optionMarks": [
+      4,
+      4,
+      4,
+      2
+     ],
+     "optionOf": [
+      null,
+      null,
+      null,
+      1
      ]
     }
    }

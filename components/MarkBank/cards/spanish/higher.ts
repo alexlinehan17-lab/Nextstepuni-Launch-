@@ -13363,7 +13363,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does the alien do with his money?\nGive three details from the extract. (Answer in ENGLISH.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":4,"options":["Pays bill in restaurant.","Leaves a tip of 100 million","Buys new ‘shoes’ (skis)"],"perOptionSteps":[4,3,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English.", group: {"claimMax":3,"perOption":4,"options":["Pays bill in restaurant.","Leaves a tip of 100 million","Buys new ‘shoes’ (skis)","Leaves a tip"],"perOptionSteps":[4,3,3],"optionMarks":[4,4,4,2],"optionOf":[null,null,null,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

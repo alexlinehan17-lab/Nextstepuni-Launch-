@@ -430,7 +430,7 @@ def _reading(P, S, year, level, cards, refuse, pairs, by_address):
             rows[0]['contextNote'] = f"{rows[0]['contextNote']} {field_note}"
         # A priced alternative the scheme prints beside an answer is a claim of
         # its own, paid in place of that answer (optionOf), as in listening.
-        rows = de_listen._partials(rows)
+        rows = de_listen._alone_routes(de_listen._partials(rows))
         source = reading_source(P, ask.unit, ask.language, level, year)
         note = (f'The scheme reaches this ask by splitting {UNIT_NAME.get(ask.unit, ask.unit)}'
                 f' down to it and prices it {ask.total}, as {ask.notation!r}; '
@@ -659,6 +659,12 @@ def _norm_words(text):
     return re.sub(r'[^0-9a-zäöüß]+', '', (text or '').lower())
 
 
+def _numbered(rows):
+    """How many rows carry a plain number id ("r-4"), not a route's second
+    copy ("r-4-b") or a route of its own ("r-2-c"): the next row's number."""
+    return sum(1 for r in rows if r['id'].count('-') == 1)
+
+
 def _field_rows(table, scheme_path=None):
     """The rows of a field-table card: a field whose answer prices itself
     ("Train (1)") is "field — answer" at that price; a field answered by a
@@ -677,7 +683,7 @@ def _field_rows(table, scheme_path=None):
                     options.append(m.group(1).strip())
                 elif options:
                     options[-1] = f'{options[-1]} {line}'
-            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'anyN',
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'anyN',
                          'verbatim': f'{name}: the answers the scheme accepts', 'marks': None,
                          'group': {'claimMax': len(steps), 'perOption': max(steps), 'options': options,
                                    **({'perOptionSteps': steps} if len(set(steps)) > 1 else {})},
@@ -689,6 +695,11 @@ def _field_rows(table, scheme_path=None):
         notes = [l for l in answer if re.match(r'^N\.?\s?B\b', l)]
         text = ' '.join(l for l in answer if l not in notes)
         alts = re.findall(r'\s+OR\s+([^()]+?)\s*\((\d)\)', text)
+        or_at = re.search(r'\s+OR\s+[^()]+?\s*\(\d\)', text)
+        # How many priced answers the scheme prints before its "OR": the
+        # alternative stands in for the run of them that ends there.
+        before_or = len(re.findall(r'\(\s*\d{1,2}\s*\)', text[:or_at.start()])) if or_at else 0
+        or_line = next((' '.join(l.split()) for l in answer if re.search(r'\sOR\s', l)), '')
         text = re.sub(r'\s+OR\s+[^()]+?\s*\(\d\)', '', text)
         priced_field = re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field)
         # (A field the table prices nowhere but in its answer: "Lived in…?" /
@@ -708,7 +719,64 @@ def _field_rows(table, scheme_path=None):
                 words_ = name.split()
                 title = next((' '.join(words_[:n]) for n in range(len(words_), 0, -1)
                               if _norm_words(' '.join(words_[:n])) in printed), words_[0])
-            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+            run = None
+            if len(alts) == 1 and before_or:
+                # "Father/Husband/ Richard (1)" / "Mother / Wife/ Helene (1) OR
+                # Parents (2)" / "Daughter (1)" (2012 Ordinary): "Parents" is
+                # paid in place of the parts it equals, ending where the "OR"
+                # is printed. Route a is those parts, route b the alternative
+                # (coordinator ruling, 14 Nov: a menu route lock, never both).
+                alt_w, alt_n = alts[0][0].strip(), int(alts[0][1])
+                for start in range(before_or):
+                    if sum(m_ for _w, m_ in comps[start:before_or]) == alt_n:
+                        run = (start, before_or)
+                        break
+            if run and run[1] - run[0] >= 2:
+                lo, hi = run
+                # "(3 marks) N.B: Accept 3 (people) for 3 marks" (2012
+                # Ordinary): an answer priced at the whole field, paid in place
+                # of every part of it. A third route, standing alone
+                # (coordinator ruling, 14 Nov).
+                whole = next((re.match(r'^(N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?)\.?$', x)
+                              for x in notes
+                              if re.match(r'^N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?\.?$', x)), None)
+                if whole and int(whole.group(3)) != field_total:
+                    whole = None
+                said_a = [x for x in said if not x.startswith('The scheme prints “OR ')
+                          and not (whole and x.rstrip('.') == whole.group(1))]
+                rest = comps[:lo] + comps[hi:]
+                n_ = _numbered(rows) + 1
+                rows.append({'id': f'r-{n_}', 'kind': 'criterion', 'verbatim': title,
+                             'marks': alt_n, 'permittedMarks': list(range(alt_n + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
+                                        'permittedMarks': list(range(m_ + 1))}
+                                       for k, (w, m_) in enumerate(comps[lo:hi], start=1)],
+                             'route': 'a',
+                             **({'contextNote': ' '.join(said_a)} if said_a else {})})
+                named = ' and '.join(f'“{w}”' for w, _m in comps[lo:hi])
+                rows.append({'id': f'r-{n_ + 1}', 'kind': 'point',
+                             'verbatim': f'{title} — {alt_w}', 'marks': alt_n, 'route': 'b',
+                             'contextNote': (f'The scheme prints “{or_line}”: “{alt_w}” is paid {alt_n} '
+                                             f'in place of {named}, never beside them.')})
+                # The field's other parts ("Daughter (1)") are paid on routes a
+                # and b alike; with a whole-field route beside them they sit on
+                # each of those two, never on the third (it would pay 4 of 3).
+                for k, (w, m_) in enumerate(rest):
+                    base = f'r-{n_ + 2 + k}'
+                    rows.append({'id': base, 'kind': 'point', 'verbatim': f'{title} — {w}', 'marks': m_,
+                                 **({'route': 'a'} if whole else {})})
+                    if whole:
+                        rows.append({'id': f'{base}-b', 'kind': 'point', 'verbatim': f'{title} — {w}',
+                                     'marks': m_, 'route': 'b'})
+                if whole:
+                    rows.append({'id': f'r-{n_}-c', 'kind': 'point',
+                                 'verbatim': f'{title} — {whole.group(2)}', 'marks': int(whole.group(3)),
+                                 'route': 'c',
+                                 'contextNote': (f'The scheme prints “{whole.group(1)}”: “{whole.group(2)}” is '
+                                                 f'paid {whole.group(3)}, the whole of this field, in place of '
+                                                 f'every part of it, never beside any.')})
+                continue
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
                          'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
                          'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
                                     'permittedMarks': list(range(m_ + 1))}
@@ -718,7 +786,7 @@ def _field_rows(table, scheme_path=None):
         m = re.match(r'^(.*?)\s*\(\s*(\d{1,2})\s*\)\s*$', text)
         if not m or int(m.group(2)) != field_total:
             return 'the scheme answers this in a table this cannot read'
-        rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
+        rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'point',
                      'verbatim': f'{name} — {m.group(1)}', 'marks': int(m.group(2)),
                      **({'contextNote': ' '.join(said)} if said else {})})
     if isinstance(rows, str):
