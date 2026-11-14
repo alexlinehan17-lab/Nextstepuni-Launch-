@@ -1210,7 +1210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Frau Dankwerth is a journalist. Give two details about her.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme allows “Once a week” for 2 marks, in place of “Her programme is on once a week/she appears on TV once a week”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["She works for television","She works for WDR / Westdeutscher Rundfunk","She works in Köln/ Cologne","A news programme","Her programme is on once a week/she appears on TV once a week","Once a week"],"optionMarks":[3,3,3,3,3,2],"optionOf":[null,null,null,null,null,4]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The scheme allows “Once a week” for 2 marks, in place of “Her programme is on once a week/she appears on TV once a week”, never beside it.", group: {"claimMax":2,"perOption":3,"options":["She works for television","She works for WDR / Westdeutscher Rundfunk","She works in Köln/ Cologne","A news programme","Her programme is on once a week/she appears on TV once a week","Once a week"],"optionMarks":[3,3,3,3,3,2],"optionOf":[null,null,null,null,null,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1245,7 +1245,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is special about the programme Frau Dankwerth presents?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It is for young people/teenagers N.B. children/kids: 0 marks", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "It is for young people/teenagers N.B. children/kids: 0 marks", marks: 1, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1280,7 +1280,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two further details about the programme.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["It’s a news programme","It explains important items","From all over the world","It is called ‘nine and a half’","9,5 minutes","Once a week","On Saturday","At 11.50","It is recorded on Friday","It is recorded with a team"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":2,"perOption":3,"options":["It’s a news programme","It explains important items","From all over the world","It is called ‘nine and a half’","9,5 minutes","Once a week","On Saturday","At 11.50","It is recorded on Friday","It is recorded with a team"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1315,7 +1315,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how the idea for the programme developed. Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["She got the idea herself","News programmes were too complicated for young people","She wanted to do something specially for young people","She developed the concept with a television company"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":2,"perOption":3,"options":["She got the idea herself","News programmes were too complicated for young people","She wanted to do something specially for young people","She developed the concept with a television company"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1350,7 +1350,7 @@ export const CARDS: SecCard[] = [
     questionText: "What qualities does a presenter need to have, according to Frau Dankwerth? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["Talent","Speak clearly/ well","Not camera shy/not afraid of the camera"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":1,"perOption":2,"options":["Talent","Speak clearly/ well","Not camera shy/not afraid of the camera"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1385,7 +1385,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe a typical working week in Frau Dankwerth’s life. Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":1,"options":["She goes to the studio on Friday","She works with a team/15 people","She works/is in an office","She does research","She writes texts"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":3,"perOption":1,"options":["She goes to the studio on Friday","She works with a team/15 people","She works/is in an office","She does research","She writes texts"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1420,7 +1420,7 @@ export const CARDS: SecCard[] = [
     questionText: "What response does Frau Dankwerth’s programme get? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Very good","E-mails","Ideas","Photographs","Mobile phone videos/clips","Video films","Written texts for the programme"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":2,"perOption":2,"options":["Very good","E-mails","Ideas","Photographs","Mobile phone videos/clips","Video films","Written texts for the programme"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3168,7 +3168,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to Herr Holler, why are social network sites so popular in Germany? Give two reasons.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":5,"options":["American","Modern","A way for people to communicate/ connect/ stay in contact with friends","One knows what is going on in their lives","One can get to know/meet new people"],"perOptionSteps":[5,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":2,"perOption":5,"options":["American","Modern","A way for people to communicate/ connect/ stay in contact with friends","One knows what is going on in their lives","One can get to know/meet new people"],"perOptionSteps":[5,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3203,7 +3203,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to Herr Holler, what problems are associated with social network sites? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The paper asks for two; the scheme pays any one.", group: {"claimMax":1,"perOption":5,"options":["Young people are naïve/ Young people don’t realise/think","Strangers can see/read what is written (on facebook)","(Cyber) bullying"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The paper asks for two; the scheme pays any one.", group: {"claimMax":1,"perOption":5,"options":["Young people are naïve/ Young people don’t realise/think","Strangers can see/read what is written (on facebook)","(Cyber) bullying"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3238,7 +3238,7 @@ export const CARDS: SecCard[] = [
     questionText: "How can facebook users protect themselves according to Herr Holler? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The paper asks for three; the scheme pays any two.", group: {"claimMax":2,"perOption":5,"options":["They should only allow friends access to their profile/ keep page private/ Don’t accept anyone you don’t know","Don’t/Never give details of their location","Give very little/not much personal information","Don’t/Never give their telephone number","Don’t/Never give their address"],"perOptionSteps":[5,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.” The paper asks for three; the scheme pays any two.", group: {"claimMax":2,"perOption":5,"options":["They should only allow friends access to their profile/ keep page private/ Don’t accept anyone you don’t know","Don’t/Never give details of their location","Give very little/not much personal information","Don’t/Never give their telephone number","Don’t/Never give their address"],"perOptionSteps":[5,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3273,7 +3273,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to the interview, what should one keep in mind when choosing photos for facebook? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["Only put up photos that they would show their parents","Never put up embarrassing photos","Never put up photos of others (2) without permission (1)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":1,"perOption":3,"options":["Only put up photos that they would show their parents","Never put up embarrassing photos","Never put up photos of others (2) without permission (1)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3308,7 +3308,7 @@ export const CARDS: SecCard[] = [
     questionText: "How can social network sites become problematic when looking for work? Give details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Employers (3) use/see them to find out about people (3)","Photos (3) of parties (3)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme reads: “Where all answers are in German: Award half marks.”", group: {"claimMax":1,"perOption":6,"options":["Employers (3) use/see them to find out about people (3)","Photos (3) of parties (3)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

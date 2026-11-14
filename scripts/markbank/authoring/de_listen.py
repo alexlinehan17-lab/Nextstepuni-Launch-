@@ -283,6 +283,10 @@ def scheme_leaves(S, keys):
     # (2010, 2011 Higher), printed under the part's head: (part, q, roman) ->
     # the line, for the asks it names.
     only_if = {}
+    # The rule the scheme prints once under the test's own head, before any
+    # part: "Where all answers are in German: Award half marks." (2010, 2011
+    # Ordinary). A part that prints no rule of its own is under it.
+    whole_test = []
     cur = None
     for i in range(start + 1, len(lines)):
         s = lines[i].strip()
@@ -302,6 +306,8 @@ def scheme_leaves(S, keys):
             cur = None
             continue
         if part is None:
+            if s and not PAGE.match(s) and re.search(r'answers?\b.*\bin\b.*half marks', s, re.I):
+                whole_test.append(s)
             continue
         m = Q_HEAD.match(s)
         if m:
@@ -335,7 +341,7 @@ def scheme_leaves(S, keys):
             continue
         clause, block, line_no = entry
         romans = [r for r in romans if r]
-        rule = ' '.join(rules.get(p, []))
+        rule = ' '.join(rules.get(p, []) or whole_test)
         # The question head's own aside, "(5 marks: 1+2+2) (Accept apt German
         # quotation)" (2010, 2011 Higher): the scheme's, for the whole question.
         asides = re.findall(r'\((?:Accept|Allow)\b[^()]*\)', clause or '', re.I)
@@ -1137,10 +1143,18 @@ PARTIAL_INLINE = re.compile(
     # "doesn't have his phone number (No contact details for him = 2 marks if
     # points 4-6 not given)" (2020 Higher). A conditional alternative may pay
     # as much as the answer it stands in for.
-    r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\))\.?\s*$', re.I)
+    r'|\((?!Allow)(?P<a3>[^()]+?)\s*=\s*(?P<n3>[1-9])\s*marks?\s+(?P<c3>if\b[^()]*)\)'
+    # "Be able to speak clearly/ well. (Speak German well/ clearly: 2 marks
+    # only)" (2010 Higher): the cheaper answer in a bracket of its own.
+    r'|\((?!Allow)(?P<a5>[^():]+?)\s*:\s*(?P<n5>[1-9])\s*marks?\s+only\))\.?\s*$', re.I)
 
 
 ALLOW_UNPRICED_NOTE = re.compile(r'\(Allow:?\s*[“"]([^“”"]+)[”"]\s+(if\b[^()]*?)\)', re.I)
+# The same allowance with its condition first: "N.B. Where none of 1 – 3
+# above are given, allow a global statement of regret once only e.g. She says
+# “Es tut mir leid / she is sorry // she apologises" (2011 Higher).
+NB_WHERE_NONE = re.compile(r'N\.?\s?B\.?:?\s*(Where none of (\d{1,2})\s*[-–]\s*\d{1,2} above (?:are|is) given),'
+                           r'\s*allow\s+(.+?)\s*$', re.I)
 ALLOW_PRICED_NOTE = re.compile(r'\(Allow:?\s*“([^”]+)”\s*for\s+(\w+)\s+marks?\s+(if\b[^()]*?)\)', re.I)
 # The same, as an N.B.: "(NB: From all over the world: 1 mark if only answer
 # given)" (2013 Higher).
@@ -1155,10 +1169,9 @@ def _number_word(word):
 
 def _inline(m):
     """(alternative, marks, condition or None) of a PARTIAL_INLINE match."""
-    for n in '1234':
+    for n in '12345':
         if m.group(f'a{n}'):
-            return (m.group(f'a{n}'), m.group(f'n{n}'),
-                    m.group(f'c{n}') if n != '2' else None)
+            return (m.group(f'a{n}'), m.group(f'n{n}'), m.groupdict().get(f'c{n}'))
     raise AssertionError(m)
 
 
@@ -1230,14 +1243,25 @@ def _partials(rows):
             # names, else of the last answer above it.
             loose = (ALLOW_UNPRICED_NOTE.search(row.get('contextNote') or '')
                      if options and not said else None)
+            loose_alt = None
             if loose:
                 named = re.search(r'\bpoints?\s+(\d{1,2})', loose.group(2))
                 of = (int(named.group(1)) - 1 if named and int(named.group(1)) <= len(options)
                       else max(k for k, o in enumerate(options)
                                if not o.startswith('(Allow') or k == 0))
+                loose_alt = loose.group(1)
                 said.append((loose.group(1), str(g['perOption']), of, loose.group(2)))
                 row = {**row, 'contextNote': ' '.join(
                     (row['contextNote'][:loose.start()] + row['contextNote'][loose.end():]).split())}
+            where = (NB_WHERE_NONE.search(row.get('contextNote') or '')
+                     if options and not said else None)
+            if where and int(where.group(2)) <= len(options):
+                # Claimed in place of the first of the points it excludes.
+                # (The row note closes the scheme's open line with a stop the
+                # scheme does not print; the answer is its own words.)
+                loose_alt = re.sub(r'(?<=\w)\.$', '', where.group(3))
+                said.append((loose_alt, str(g['perOption']), int(where.group(2)) - 1, where.group(1)))
+                row = {**row, 'contextNote': ' '.join(row['contextNote'][:where.start()].split())}
             if said:
                 for alt, n, of, _cond in said:
                     options.append(alt)
@@ -1249,7 +1273,7 @@ def _partials(rows):
                 # 13 Nov): the claim cap cannot enforce it, the student must.
                 text = ' '.join(
                     (f'The scheme allows “{alt}”, paid as one answer of this list ({n} '
-                     f'mark{"s" if n != "1" else ""})' if loose and alt == loose.group(1) else
+                     f'mark{"s" if n != "1" else ""})' if loose_alt is not None and alt == loose_alt else
                      f'The scheme allows “{alt}” for {n} mark{"s" if n != "1" else ""}')
                     + (', in place of the answer it is given for, never beside it'
                        if re.match(r'In points? \(', alt) else      # "In points (a) – (d) …" (2013)
