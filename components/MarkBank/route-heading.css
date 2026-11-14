@@ -14,3 +14,5 @@
   font: 600 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2);
 }
 .mb-route-title button:hover { border-bottom-color: var(--mb-ink-2); }
+/* The one line a route not taken carries, in the muted note type the rows use. */
+.mb-route-locked { margin: 4px 0 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }

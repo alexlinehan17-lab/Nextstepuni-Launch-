@@ -215,6 +215,35 @@ CARDS = [
          question_lift=P(4, 95, 666, 570, 753),
          use=[[0, 1, 2]], row_kind='anyN', group=(2, 5), marks=[10],
          tariff='fixed', total=10, notes="The scheme prints 'Any two @ 5 + 5'."),
+    # Three (b)(v)s whose shipped rows included the line "(Any three) 6 + 6 + 6"
+    # the scheme prints under the part: (b)'s tariff, any three romans at 6,
+    # never an answer. Each is rebuilt from the answer the scheme prints.
+    dict(key=(7, 'b', 'v'),
+         replaces='the shipped card\'s only row was the part tariff "(Any three) '
+                  '6 + 6 + 6", claimable as the answer',
+         why='Scheme p22 answers vacuum forming with six drawings, each captioned '
+             'with one step of the process; the captions are lifted by rectangle in '
+             'the order the drawings run, and the tariff printed under them is left '
+             'out. The scheme prices the part 6 and splits it no further.',
+         lifted=[S(22, 70, 183, 215, 201), S(22, 244, 184, 385, 202),
+                 S(22, 408, 185, 548, 214), S(22, 70, 313, 220, 342),
+                 S(22, 239, 312, 390, 341), S(22, 412, 312, 558, 354)],
+         tariff='questionTotal', total=6,
+         notes="The scheme prints '(Any three) 6 + 6 + 6' for (b)."),
+    dict(key=(8, 'b', 'v'),
+         replaces='the shipped card\'s third row was the part tariff "(Any three) '
+                  '6 + 6 + 6", claimable as an answer',
+         why='Scheme p23 answers wheel dressing in two paragraphs; the "(Any three) '
+             '6 + 6 + 6" under them prices (b) and is left out.',
+         use=[0, 1], tariff='questionTotal', total=6,
+         notes="The scheme prints '6 marks'."),
+    dict(key=(9, 'b', 'v'),
+         replaces='the shipped card\'s second row was the part tariff "(Any three) '
+                  '6 + 6 + 6", claimable as an answer',
+         why='Scheme p26 answers the universal joint in one paragraph; the "(Any '
+             'three) 6 + 6 + 6" under it prices (b) and is left out.',
+         use=[0], tariff='questionTotal', total=6,
+         notes="The scheme prints '6 marks'."),
 ]
 
 # Cards the automatic author files under the wrong syllabus heading.

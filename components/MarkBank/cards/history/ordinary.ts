@@ -27521,7 +27521,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two of Beethoven’s compositions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Any TWO of Beethoven’s compositions 3 + 3", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO of Beethoven’s compositions", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",

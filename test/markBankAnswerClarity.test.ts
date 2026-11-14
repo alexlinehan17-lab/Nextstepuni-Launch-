@@ -539,7 +539,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['An attempt to bring guns into Northern Ireland (through Dublin Airport)', 6, [0, 3, 6], '„To bring in guns‟ only = 3M'],
       ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
-      ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO of Beethoven’s compositions', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims from the war @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any two valid countries of destination (3M + 3M)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],

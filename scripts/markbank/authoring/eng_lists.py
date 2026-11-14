@@ -42,10 +42,21 @@ drops or moves a word: each only restores a piece of LAYOUT the page prints.
   own in an any-N menu, the kind the any-N tariffs already use, claimed
   once at the row's price: count 1, each option the row's marks. The
   options are the row's own lifted strings, unchanged and in order; no
-  text is split. Not converted: a row on an OR route (the session commits a
-  route by a claimed row, not by a menu pick, so a menu would let the
-  branches mix) and a row the scheme prices only with its question (a menu
-  states a price per option).
+  text is split. A row on an OR route keeps its route (a menu pick commits
+  the route as a tick does, since the shared session fix of 13 November),
+  and a row the scheme prices only with its question becomes a menu with no
+  price of its own, as its card states the question's total.
+
+* or_routes -- a 2021-2025 Higher card that prints two (c) branches either
+  side of an OR ("Outline how weld cracks ... form. OR Explain the following
+  terms in relation to the autonomous mobile robots") and is priced only as
+  a whole ('4 + 4', or the question's total) listed both branches' answers
+  as one list, so a student who answered one branch in full read as having
+  missed half. Each branch becomes a route of its own: the rows before the
+  OR are route 'a', the rows from the one named in OR_BRANCH_B on are route
+  'b'. One card (2024 HL Q8(c)(ii)) carried no row for the branch before its
+  OR although the scheme prints one; that row is lifted from the scheme's
+  extracted text, checked there word for word, and opens route 'a'.
 """
 import json
 import os
@@ -432,12 +443,13 @@ def alternative_menus(cards):
     """Each alt row with listed alternatives becomes a count-1 any-N menu."""
     changed = []
     for card in cards:
-        if card['tariffModel'].get('kind') != 'fixed':
+        whole = card['tariffModel'].get('kind') == 'questionTotal'
+        if card['tariffModel'].get('kind') != 'fixed' and not whole:
             continue
         for i, row in enumerate(card['rows']):
             accepts = row.get('accepts') or []
-            if row.get('kind') != 'alt' or not accepts or row.get('route') \
-                    or row.get('marks') is None:
+            if row.get('kind') != 'alt' or not accepts \
+                    or (row.get('marks') is None) != whole:
                 continue
             options = [row['verbatim']] + list(accepts)
             if len(set(options)) != len(options):
@@ -453,6 +465,63 @@ def alternative_menus(cards):
             if card['id'] not in changed:
                 changed.append(card['id'])
     return changed
+
+
+
+# The first row of route 'b' on each OR card, read off the card's own rows
+# against the question's two branches (rows before it are the first branch).
+OR_BRANCH_B = {
+    'eng-2021-hl-q8-c-i': 'r-3', 'eng-2021-hl-q8-c-ii': 'r-5',
+    'eng-2021-hl-q9-c-i': 'r-3', 'eng-2021-hl-q9-c-ii': 'r-2',
+    'eng-2022-hl-q6-c-i': 'r-4', 'eng-2022-hl-q6-c-ii': 'r-3',
+    'eng-2022-hl-q8-c-i': 'r-7', 'eng-2022-hl-q8-c-ii': 'r-3',
+    'eng-2022-hl-q9-c-i': 'r-2', 'eng-2022-hl-q9-c-ii': 'r-4',
+    'eng-2023-hl-q6-c-i': 'r-4', 'eng-2023-hl-q6-c-ii': 'r-2',
+    'eng-2023-hl-q8-c-i': 'r-2', 'eng-2023-hl-q8-c-ii': 'r-5',
+    'eng-2023-hl-q9-c-i': 'r-3', 'eng-2023-hl-q9-c-ii': 'r-4',
+    'eng-2024-hl-q8-c-i': 'r-5', 'eng-2024-hl-q8-c-ii': 'r-1',
+    'eng-2024-hl-q9-c-i': 'r-7', 'eng-2024-hl-q9-c-ii': 'r-5',
+    'eng-2025-hl-q8-c-i': 'r-3', 'eng-2025-hl-q8-c-ii': 'r-4',
+}
+
+# A first branch the scheme answers and the card carried no row for:
+# card id -> (new row id, the scheme's own words). 2024 HL Q8(c)(ii) asks
+# "Identify any two lubricants commonly used when machining. OR Outline two
+# safety features ..."; the scheme prints "(ii) Lubricating materials: Oil,
+# grease, graphite, PTFE, etc." and then the safety features.
+OR_BRANCH_A_LIFTED = {
+    'eng-2024-hl-q8-c-ii': ('r-5', 'Lubricating materials: Oil, grease, graphite, PTFE, etc.'),
+}
+
+
+def or_routes(cards):
+    """Each branch of a 2021-2025 Higher OR card becomes a route of its own."""
+    by_id = {c['id']: c for c in cards}
+    missing = sorted(set(OR_BRANCH_B) - set(by_id))
+    if missing:
+        raise SystemExit(f'or_routes: no card {missing}')
+    for cid, first_b in OR_BRANCH_B.items():
+        card = by_id[cid]
+        if card['tariffModel'].get('kind') == 'fixed' or ' OR ' not in card['questionText']:
+            raise SystemExit(f'or_routes {cid}: not a whole-priced OR card')
+        if any(r.get('route') for r in card['rows']):
+            raise SystemExit(f'or_routes {cid}: already has routes')
+        if cid in OR_BRANCH_A_LIFTED:
+            rid, text = OR_BRANCH_A_LIFTED[cid]
+            md = os.path.join(eng_lift.ROOT, 'examiner-reports', 'engineering', 'schemes',
+                              f'{card["year"]}-{LEVEL[card["level"]]}.md')
+            if text not in open(md, encoding='utf-8').read():
+                raise SystemExit(f'or_routes {cid}: {text!r} is not in {md}')
+            if any(r['id'] == rid for r in card['rows']):
+                raise SystemExit(f'or_routes {cid}: row {rid} exists')
+            card['rows'].insert(0, {'id': rid, 'kind': 'point', 'verbatim': text, 'marks': None})
+        ids = [r['id'] for r in card['rows']]
+        if first_b not in ids or ids.index(first_b) == 0:
+            raise SystemExit(f'or_routes {cid}: {first_b} does not open a second branch')
+        cut = ids.index(first_b)
+        for i, row in enumerate(card['rows']):
+            row['route'] = 'a' if i < cut else 'b'
+    return sorted(OR_BRANCH_B)
 
 
 if __name__ == '__main__':
