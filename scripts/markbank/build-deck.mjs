@@ -747,6 +747,13 @@ const bestOf = (values, count) => [...values].sort((a, b) => b - a).slice(0, cou
 // Mirrors optionGroupMarks() in types/markBank.ts: fully claimed, a menu priced
 // option by option pays its answers, never an answer's part beside it.
 const answerMarks = (g) => g.optionMarks.filter((_m, i) => g.optionOf?.[i] === null || g.optionOf?.[i] === undefined);
+// Mirrors ladderGroupMarks() in types/markBank.ts, fully claimed: the answers'
+// own prices, largest first, each paid the lesser of it and its step.
+const ladderOf = (g) => {
+  const steps = [...g.perOptionSteps].sort((a, b) => b - a);
+  return [...answerMarks(g)].sort((a, b) => b - a).slice(0, g.claimMax)
+    .reduce((n, cap, k) => n + Math.min(steps[k] ?? 0, cap), 0);
+};
 
 /** The level tokens a deck may carry.
  *
@@ -1316,7 +1323,9 @@ function tariffFault(c) {
   // Mirrors groupMarks() in types/markBank.ts: a descending tariff pays its
   // steps, not claimMax times one value.
   const worth = (r) => (r.kind === 'anyN' && r.group
-    ? (r.group.optionMarks
+    ? (r.group.optionMarks && r.group.perOptionSteps
+        ? ladderOf(r.group)
+        : r.group.optionMarks
         ? bestOf(answerMarks(r.group), r.group.claimMax)
         : r.group.perOptionSteps
         ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
@@ -1396,16 +1405,23 @@ function groupFault(c) {
     }
     // The session prints "Any 2 of these — 7 marks each" from these two numbers,
     // so a group worth more than the question tells the student a false total.
-    const groupWorth = g.optionMarks
+    const groupWorth = g.optionMarks && g.perOptionSteps
+      ? ladderOf(g)
+      : g.optionMarks
       ? bestOf(answerMarks(g), g.claimMax)
       : g.perOptionSteps
       ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
       : g.claimMax * g.perOption;
     // Options priced one by one (the scheme's partial credit): one positive
-    // whole price per option, perOption the highest, and never beside a
-    // descending tariff, which prices the ORDER of claiming instead.
-    if (g.optionMarks && (g.optionMarks.length !== g.options.length || g.perOptionSteps
-      || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0) || g.perOption !== Math.max(...g.optionMarks))) {
+    // whole price per option. Without steps perOption is the highest price;
+    // beside a descending tariff each price caps its option's step
+    // (ladderGroupMarks: "N.B. X = 1 mark only" under "3 + 1"), so none may
+    // exceed the top step, and perOption stays the first step.
+    if (g.optionMarks && (g.optionMarks.length !== g.options.length
+      || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0)
+      || (g.perOptionSteps
+        ? g.optionMarks.some(m => m > Math.max(...g.perOptionSteps))
+        : g.perOption !== Math.max(...g.optionMarks)))) {
       return `row "${r.id}" prices its options one by one inconsistently`;
     }
     // A partial points at the answer it credits (optionOf): an answer of its
