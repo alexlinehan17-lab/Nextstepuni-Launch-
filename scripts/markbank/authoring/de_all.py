@@ -659,6 +659,12 @@ def _norm_words(text):
     return re.sub(r'[^0-9a-zäöüß]+', '', (text or '').lower())
 
 
+def _numbered(rows):
+    """How many rows carry a plain number id ("r-4"), not a route's second
+    copy ("r-4-b") or a route of its own ("r-2-c"): the next row's number."""
+    return sum(1 for r in rows if r['id'].count('-') == 1)
+
+
 def _field_rows(table, scheme_path=None):
     """The rows of a field-table card: a field whose answer prices itself
     ("Train (1)") is "field — answer" at that price; a field answered by a
@@ -677,7 +683,7 @@ def _field_rows(table, scheme_path=None):
                     options.append(m.group(1).strip())
                 elif options:
                     options[-1] = f'{options[-1]} {line}'
-            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'anyN',
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'anyN',
                          'verbatim': f'{name}: the answers the scheme accepts', 'marks': None,
                          'group': {'claimMax': len(steps), 'perOption': max(steps), 'options': options,
                                    **({'perOptionSteps': steps} if len(set(steps)) > 1 else {})},
@@ -727,8 +733,20 @@ def _field_rows(table, scheme_path=None):
                         break
             if run and run[1] - run[0] >= 2:
                 lo, hi = run
-                said_a = [x for x in said if not x.startswith('The scheme prints “OR ')]
-                rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+                # "(3 marks) N.B: Accept 3 (people) for 3 marks" (2012
+                # Ordinary): an answer priced at the whole field, paid in place
+                # of every part of it. A third route, standing alone
+                # (coordinator ruling, 14 Nov).
+                whole = next((re.match(r'^(N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?)\.?$', x)
+                              for x in notes
+                              if re.match(r'^N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?\.?$', x)), None)
+                if whole and int(whole.group(3)) != field_total:
+                    whole = None
+                said_a = [x for x in said if not x.startswith('The scheme prints “OR ')
+                          and not (whole and x.rstrip('.') == whole.group(1))]
+                rest = comps[:lo] + comps[hi:]
+                n_ = _numbered(rows) + 1
+                rows.append({'id': f'r-{n_}', 'kind': 'criterion', 'verbatim': title,
                              'marks': alt_n, 'permittedMarks': list(range(alt_n + 1)),
                              'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
                                         'permittedMarks': list(range(m_ + 1))}
@@ -736,15 +754,29 @@ def _field_rows(table, scheme_path=None):
                              'route': 'a',
                              **({'contextNote': ' '.join(said_a)} if said_a else {})})
                 named = ' and '.join(f'“{w}”' for w, _m in comps[lo:hi])
-                rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
+                rows.append({'id': f'r-{n_ + 1}', 'kind': 'point',
                              'verbatim': f'{title} — {alt_w}', 'marks': alt_n, 'route': 'b',
                              'contextNote': (f'The scheme prints “{or_line}”: “{alt_w}” is paid {alt_n} '
                                              f'in place of {named}, never beside them.')})
-                for w, m_ in comps[:lo] + comps[hi:]:
-                    rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
-                                 'verbatim': f'{title} — {w}', 'marks': m_})
+                # The field's other parts ("Daughter (1)") are paid on routes a
+                # and b alike; with a whole-field route beside them they sit on
+                # each of those two, never on the third (it would pay 4 of 3).
+                for k, (w, m_) in enumerate(rest):
+                    base = f'r-{n_ + 2 + k}'
+                    rows.append({'id': base, 'kind': 'point', 'verbatim': f'{title} — {w}', 'marks': m_,
+                                 **({'route': 'a'} if whole else {})})
+                    if whole:
+                        rows.append({'id': f'{base}-b', 'kind': 'point', 'verbatim': f'{title} — {w}',
+                                     'marks': m_, 'route': 'b'})
+                if whole:
+                    rows.append({'id': f'r-{n_}-c', 'kind': 'point',
+                                 'verbatim': f'{title} — {whole.group(2)}', 'marks': int(whole.group(3)),
+                                 'route': 'c',
+                                 'contextNote': (f'The scheme prints “{whole.group(1)}”: “{whole.group(2)}” is '
+                                                 f'paid {whole.group(3)}, the whole of this field, in place of '
+                                                 f'every part of it, never beside any.')})
                 continue
-            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
                          'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
                          'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
                                     'permittedMarks': list(range(m_ + 1))}
@@ -754,7 +786,7 @@ def _field_rows(table, scheme_path=None):
         m = re.match(r'^(.*?)\s*\(\s*(\d{1,2})\s*\)\s*$', text)
         if not m or int(m.group(2)) != field_total:
             return 'the scheme answers this in a table this cannot read'
-        rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point',
+        rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'point',
                      'verbatim': f'{name} — {m.group(1)}', 'marks': int(m.group(2)),
                      **({'contextNote': ' '.join(said)} if said else {})})
     if isinstance(rows, str):

@@ -51,10 +51,10 @@ const ROUTED: Array<[string, string, string, number, string]> = [
 describe('German route locks: route b ticked, route a locked', () => {
   test.each(ROUTED)('%s: route b "%s" locks route a', (id, routeB, routeA, marks, condition) => {
     const c = card(id);
-    // The data: two routes, b the alternative alone at its printed price.
-    const b = c.rows.filter(r => r.route === 'b');
+    // The data: route b holds the alternative at its printed price, its
+    // condition quoted (on 2012 OL beside the field's other part, "Daughter").
+    const b = c.rows.filter(r => r.route === 'b' && r.verbatim === routeB);
     expect(b).toHaveLength(1);
-    expect(b[0].verbatim).toBe(routeB);
     expect(b[0].marks).toBe(marks);
     expect(b[0].contextNote).toContain(condition);
     expect(c.rows.some(r => r.route === 'a')).toBe(true);
@@ -70,6 +70,34 @@ describe('German route locks: route b ticked, route a locked', () => {
     fireEvent.click(a);
     expect(button(routeA)).toHaveAttribute('aria-pressed', 'false');
     expect(guidance()).toContain(`You claimed ${marks} of ${c.totalMarks} marks`);
-    expect(screen.getAllByText(ROUTE_LOCKED_NOTE)).toHaveLength(1);
+    // Said once under each route not taken.
+    expect(screen.getAllByText(ROUTE_LOCKED_NOTE)).toHaveLength(new Set(c.rows.map(r => r.route).filter(Boolean)).size - 1);
+  });
+
+  test('de-2012-ol-t2-1: route c "3 (people)" locks routes a and b, and claims 3', () => {
+    const c = card('de-2012-ol-t2-1');
+    const routeC = c.rows.filter(r => r.route === 'c');
+    expect(routeC.map(r => [r.verbatim, r.marks, r.alone])).toEqual([['Family — 3 (people)', 3, undefined]]);
+    expect(routeC[0].contextNote).toContain('“N.B: Accept 3 (people) for 3 marks”');
+    // "Daughter" is paid on routes a and b, never beside route c: no route pays more than the field's 3.
+    expect(c.rows.filter(r => r.verbatim === 'Family — Daughter').map(r => [r.id, r.route]))
+      .toEqual([['r-4', 'a'], ['r-4-b', 'b']]);
+    expect(tariffReconciles(c)).toBe(true);
+
+    render(<SessionScreen cards={[c]} subjectLabel="German" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    reveal();
+    fireEvent.click(button('Family — 3 (people)'));
+    expect(button('Family — 3 (people)')).toHaveAttribute('aria-pressed', 'true');
+    expect(guidance()).toContain(`You claimed 3 of ${c.totalMarks} marks`);
+    for (const other of ['Father/Husband/ Richard', 'Family — Parents', 'Family — Daughter']) {
+      for (const b of screen.getAllByRole('button').filter(x => x.getAttribute('aria-pressed') !== null
+        && (x.textContent?.includes(other) || (x.getAttribute('aria-label') ?? '').startsWith(`Award 1 marks for ${other} · `)))) {
+        expect(b).toBeDisabled();
+        fireEvent.click(b);
+        expect(b).toHaveAttribute('aria-pressed', 'false');
+      }
+    }
+    expect(guidance()).toContain(`You claimed 3 of ${c.totalMarks} marks`);
+    expect(screen.getAllByText(ROUTE_LOCKED_NOTE)).toHaveLength(2);
   });
 });
