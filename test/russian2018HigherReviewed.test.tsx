@@ -1,27 +1,27 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBank/SessionScreen';
+import SessionScreen from '../components/MarkBank/SessionScreen';
 import LanguageRubricPanel from '../components/MarkBank/LanguageRubricPanel';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageMarks, languageScoreId, languageGroupId, languageRowId, languageFlagId, languageLengthId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
-import { isRubricCard, tariffReconciles } from '../types/markBank';
+import { isRubricCard, tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2018&&c.level==='higher');
 const get=(suffix:string)=>{const c=sitting.find(c=>c.id===`ru-2018-hl-${suffix}`);if(!c)throw new Error(suffix);return c;};
 const points=(suffix:string)=>{const c=get(suffix);if(!isRubricCard(c)||c.rubric.system!=='language-points')throw new Error(suffix);return {...c,rubric:c.rubric};};
 const writing=()=>{const c=get('gw');if(!isRubricCard(c)||c.rubric.system!=='language-writing')throw new Error('gw');return {...c,rubric:c.rubric};};
-const confidence=()=>{const c=get('se');if(isRubricCard(c))throw new Error('se');return c;};
+const essay=()=>{const c=get('se');if(!isRubricCard(c)||c.rubric.system!=='language-writing')throw new Error('se');return {...c,rubric:c.rubric};};
 const slot=(n:number,value:number)=>({[languageGroupId(`detail-${n}`)]:1,[languageScoreId(`detail-${n}-credit`)]:value});
 const row=(id:string)=>({[languageGroupId(id)]:1,[languageRowId(id,'full')]:1});
 afterEach(cleanup);
 
 describe('Russian 2018 Higher original tasks',()=>{
-  it('represents all 39 asks while leaving the complete 30-mark essay numerically held',()=>{
+  it('represents all 39 asks with the printed writing grids available for scoring',()=>{
     expect(sitting).toHaveLength(39);expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(20);
     expect(sitting.reduce((sum,c)=>sum+c.totalMarks,0)).toBe(300);
     expect(sitting.filter(c=>c.id!=='ru-2018-hl-se').reduce((sum,c)=>sum+c.totalMarks,0)).toBe(270);
     expect(sitting.every(tariffReconciles)).toBe(true);
-    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(17);
+    expect(sitting.filter(c=>c.answerLanguageRule)).toHaveLength(18);
     expect(sitting.filter(c=>c.audioMaterial).every(c=>!c.answerLanguageRule)).toBe(true);
   });
   it('retains named partials manually without inventing associations or broader partial tariffs',()=>{
@@ -89,24 +89,37 @@ describe('Russian 2018 Higher original tasks',()=>{
     expect(c.rubric.taskRequirements.join(' ')).toContain('no marks for museums');
     expect(c.rubric.markingGuideNote).toContain('does not fill both two-mark slots');
   });
-  it('retains the whole conflicting essay and every original choice without scoring rows',()=>{
-    const c=confidence();expect(c.tariffModel).toEqual({kind:'questionTotal'});
-    expect(c.rows.every(r=>r.marks===null)).toBe(true);expect(c.answerLanguageRule).toBeUndefined();
+  it('retains every essay choice and both conflicting Lower A statements alongside the printed grid',()=>{
+    const c=essay();expect(c.answerLanguageRule?.otherLanguageMultiplier).toBe(0);
     expect(c.questionText).toContain('5.');expect(c.questionText).toContain('Cities in the Russian Federation');
-    expect(c.rows[0].verbatim).toContain('between 9 and 14 (9-11; 12-14; 15-16)');
-    expect(c.rows[1].verbatim).toContain('lower A 15-16');
-    expect(showsRowMarks(c)).toBe(false);expect(marksClaimed(c,{'published-guidance':'yes'},{})).toBe(0);
+    expect(c.rubric.taskRequirements[0]).toContain('between 9 and 14 (9-11; 12-14; 15-16)');
+    expect(c.rubric.taskRequirements[1]).toContain('lower A 15-16');
+    expect(c.rubric.criteria.flatMap(x=>x.limits??[]).some(x=>x.id==='lower-a')).toBe(false);
+    expect(c.rubric.markingGuideNote).toContain(UNPRINTED_ANSWER);
+    expect(writing().rubric.markingGuideNote).toContain(UNPRINTED_ANSWER);
   });
-  it.each([false,true])('renders both literal limits and saves confidence at zero/zero in paper layout=%s',async paperLayout=>{
-    const c=confidence(),onGrade=vi.fn();render(<SessionScreen paperLayout={paperLayout} cards={[c]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
+  it('scores 10+20, title and explicit soft-sign deductions, and only the unambiguous source limits',()=>{
+    const c=essay(),full={[languageScoreId('content')]:10,[languageScoreId('expression')]:20,[languageLengthId('words')]:50};
+    expect(languageMarks(c,full)).toBe(30);
+    expect(languageMarks(c,{...full,[languageScoreId('title-penalty')]:1})).toBe(29);
+    expect(languageMarks(c,{...full,[languageScoreId('soft-sign-penalty')]:1})).toBe(29);
+    expect(languageMarks(c,{...full,[languageScoreId('soft-sign-penalty')]:2})).toBe(28);
+    expect(languageMarks(c,{...full,[languageLengthId('words')]:24})).toBe(24);
+    expect(languageMarks(c,{...full,[languageScoreId('content')]:4})).toBe(18);
+    expect(languageMarks(c,{...full,[languageScoreId('content')]:6,[languageScoreId('title-penalty')]:1})).toBe(25);
+    expect(languageMarks(c,{...full,[languageScoreId('content')]:0})).toBe(0);
+    expect(languageMarks(c,{...full,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...full,[languageScoreId('expression')]:16})).toBe(26);
+  });
+  it.each([false,true])('renders both literal limits and saves the printed essay maximum in paper layout=%s',async paperLayout=>{
+    const c=essay(),onGrade=vi.fn();render(<SessionScreen paperLayout={paperLayout} cards={[c]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()}/>);
     fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
-    await waitFor(()=>expect(screen.getByText(/Confidence review: the whole question/)).toBeVisible());
+    await waitFor(()=>expect(screen.getByText(/The scheme prints no answer for this part\./)).toBeVisible());
     expect(screen.getAllByText(/between 9 and 14 \(9-11; 12-14; 15-16\)/)[0]).toBeVisible();
     await waitFor(()=>expect(screen.getAllByText(/lower A 15-16 lower E 12-14/)[0]).toBeVisible());
-    expect(screen.queryByRole('button',{name:/^Claim \d+ marks/})).not.toBeInTheDocument();
+    expect(screen.getByText('Communication/content (C)')).toBeVisible();
+    expect(screen.getByText('Language/expression (E)')).toBeVisible();
     fireEvent.click(screen.getByRole('button',{name:'Got it'}));
-    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,grade:'got',marksClaimed:0,marksAvailable:0}));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({cardId:c.id,grade:'got',marksClaimed:0,marksAvailable:30}));
   });
 });
-// Root's newer confidence labels and numeric quiz exclusion require their own
-// integration test; the older lane SessionScreen is intentionally unchanged.

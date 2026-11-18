@@ -109,3 +109,58 @@ describe('Russian 2017 Ordinary written asks', () => {
     expect(screen.getAllByText(new RegExp(UNPRINTED_ANSWER.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))).length).toBeGreaterThan(0);
   });
 });
+
+const listening = REVIEWED_CARDS.filter(c => c.year === 2017 && c.level === 'ordinary' && c.audioMaterial);
+const listeningPoints = (suffix: string) => {
+  const card = listening.find(c => c.id === `ru-2017-ol-${suffix}`);
+  if (!card || !isRubricCard(card) || card.rubric.system !== 'language-points') throw new Error(suffix);
+  return { ...card, rubric: card.rubric };
+};
+
+describe('Russian 2017 Ordinary approved listening allocation', () => {
+  it('covers 18 asks and reconciles each original 25-mark section', () => {
+    expect(listening).toHaveLength(18);
+    expect([...written, ...listening]).toHaveLength(51);
+    for (const section of ['L1', 'L2', 'L3', 'L4']) {
+      expect(listening.filter(c => c.section === section).reduce((n, c) => n + c.totalMarks, 0)).toBe(25);
+    }
+    expect(listening.filter(c => !tariffReconciles(c)).map(c => c.id)).toEqual([]);
+    expect(listening.every(c => c.audioMaterial?.secFileid === 'LC099ZLP017EV.mp3')).toBe(true);
+    expect(listening.every(c => c.sourceMaterial?.kind === 'source-question')).toBe(true);
+  });
+
+  it('gives five per complete detail, only up to the number requested', () => {
+    for (const original of listening) {
+      const c = listeningPoints(original.id.replace('ru-2017-ol-', ''));
+      expect(languageMarks(c, selected(c.rubric.groups[0].id, 'full', 1))).toBe(5);
+      const all = Object.assign({}, ...c.rubric.groups.map(g => selected(g.id, 'full', 1)));
+      expect(languageMarks(c, all)).toBe(c.totalMarks);
+    }
+    for (const suffix of ['l2-1', 'l3-2']) {
+      const c = listeningPoints(suffix);
+      expect(c.totalMarks).toBe(10);
+      expect(languageMarks(c, { ...selected('answer-1', 'full', 1), ...selected('answer-2', 'full', 1) })).toBe(10);
+    }
+  });
+
+  it('keeps all six named three-mark answers and never adds them to a full answer', () => {
+    let partials = 0;
+    for (const original of listening) {
+      const c = listeningPoints(original.id.replace('ru-2017-ol-', ''));
+      for (const group of c.rubric.groups.filter(g => g.rows[0].marks === 3)) {
+        partials++;
+        expect(languageMarks(c, selected(group.id, 'full', 1))).toBe(3);
+        expect(languageMarks(c, { ...selected(group.id, 'full', 1), ...selected('answer-1', 'full', 1) })).toBe(5);
+      }
+    }
+    expect(partials).toBe(6);
+  });
+
+  it('shows both conflicting source awards beside the approved inferred mark', () => {
+    const c = listeningPoints('l1-3-i');
+    render(<LanguageRubricPanel card={c} scores={{}} onScore={vi.fn()} />);
+    expect(screen.getByText(/five is not a printed per-detail award/)).toBeTruthy();
+    expect(screen.getAllByText(/Award two marks for each correct\/relevant point/).length).toBeGreaterThan(0);
+    expect(screen.getByText('34 (people)')).toBeTruthy();
+  });
+});

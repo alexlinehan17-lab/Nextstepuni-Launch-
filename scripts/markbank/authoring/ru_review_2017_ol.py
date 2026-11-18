@@ -1,5 +1,5 @@
-"""Russian 2017 Ordinary: pinned originals and 33 written asks.
-Listening allocations await Alex under the 18 November plan.
+"""Russian 2017 Ordinary: 51 asks from pinned originals.
+The listening source conflict follows Alex’s explicit 18 November approval.
 """
 from pathlib import Path
 import hashlib,json,re,sys
@@ -96,9 +96,9 @@ def source_records():
         for (i,r,b),(qi,qr,q),start in zip(blocks,asks,firsts[n]):
             assert (i,r)==(qi,qr),(section,i,r,qi,qr)
             cue,pool=source_split(b,start);assert score(bag(q),bag(cue))>.7,(q,cue)
-            record(f'L{section}',i,r,q,[section+1],pool,[12,13] if section==2 else [12 if section==1 else 13],None,sharedAward=f'L{section}-section25',sourceNote='Allocation pending Alex: literal general two-mark rule conflicts with section totals and explicit three-mark clauses. One printed ask will be one card.')
+            record(f'L{section}',i,r,q,[section+1],pool,[12,13] if section==2 else [12 if section==1 else 13],None,sharedAward=f'L{section}-section25',sourceNote='Literal two-mark guidance conflicts with section totals and explicit three-mark clauses. The separate approval record authorises five per requested detail; publishedTotal stays unset because five is inferred.')
     assert len(records)==51 and len({r['id'] for r in records})==51
-    return docs,dict(status='Original hashes and native bindings checked; listening marks await Alex',sources=METADATA,independentTasks=51,writtenTasks=33,listeningTasks=18,printedWrittenTotal=220,printedListeningTotal=100,generalWrittenGuidance=squash(page(S,3)),ir1Guidance=squash('Allocate 2 marks '+between(page(S,4),'Allocate 2 marks','i.')),ir2Guidance=squash('Allocate 2 marks '+between(page(S,5),'Allocate 2 marks','i.')),comprehensionGuidance=squash(page(S,8).split('1.i.')[0]),listeningGuidance=squash(listening[:heads[0].start()]),tasks=records)
+    return docs,dict(status='Original hashes and native bindings checked; approved listening inference retained separately from printed source values',sources=METADATA,independentTasks=51,writtenTasks=33,listeningTasks=18,printedWrittenTotal=220,printedListeningTotal=100,generalWrittenGuidance=squash(page(S,3)),ir1Guidance=squash('Allocate 2 marks '+between(page(S,4),'Allocate 2 marks','i.')),ir2Guidance=squash('Allocate 2 marks '+between(page(S,5),'Allocate 2 marks','i.')),comprehensionGuidance=squash(page(S,8).split('1.i.')[0]),listeningGuidance=squash(listening[:heads[0].start()]),tasks=records)
 
 
 """Unpublished builder components; import only after original selectors pass."""
@@ -193,8 +193,7 @@ def reading(source):
     assert len(cards)==27 and sum(c['totalMarks'] for c in cards)==88
     return cards
 
-# Native page/table checks precede adding the six language, matching and writing
-# cards. Do not publish this draft or reinstate the superseded listening holds.
+# Native page/table checks bind the language, matching and writing cards.
 
 from ru_review_2026_hl import mark_range
 
@@ -299,6 +298,63 @@ def build_written():
         for doc in docs.values():doc.close()
 
 
+def approved_listening(source):
+    evidence=ROOT/'scripts/markbank/authoring/reviews/russian-2017-ol-sec-20261118'
+    approval=json.loads((evidence/'listening-approval.json').read_text())
+    proposal_path=evidence/'listening-allocation-proposal.json'
+    assert approval['answer']=='Approve 5 marks per detail'
+    assert hashlib.sha256(proposal_path.read_bytes()).hexdigest()==approval['proposalSha256']
+    proposal=json.loads(proposal_path.read_text())
+    assert proposal['conflict']['sectionTotals']==[25]*4
+    assert proposal['conflict']['requestedDetailsPerSection']==[5]*4
+    assert proposal['conflict']['generalLine'] in source['listeningGuidance']
+    audio=next(r['source'] for r in json.loads((ROOT/'data/russianAudio.json').read_text()) if r['year']==2017)
+    records=[r for r in source['tasks'] if r['component']=='aural']
+    assert len(records)==len(proposal['cards'])==18
+    topics=[['russian-0-5','russian-0-7','russian-0-7','russian-0-7','russian-0-5'],['russian-0-8','russian-0-8','russian-0-5','russian-0-3'],['russian-0-5','russian-0-5','russian-0-5','russian-0-8'],['russian-0-7','russian-0-3','russian-0-3','russian-2-11','russian-0-7']]
+    pools=[6,9,10,5,8,15,2,5,1,3,2,7,5,3,1,9,3,8]
+    partial_expected={'ru-2017-ol-l1-3-i':['34 (people)'],'ru-2017-ol-l1-4':['winner','Azerbaijan'],'ru-2017-ol-l2-2':['kids up to the age of …'],'ru-2017-ol-l2-3-ii':['friendship'],'ru-2017-ol-l4-3':['Facebook']}
+    position={f'L{s}':0 for s in range(1,5)};cards=[]
+    for r,pool,approved in zip(records,pools,proposal['cards']):
+        count=approved['requestedDetails'];assert count in (1,2)
+        assert r['item'] is not None
+        part=str(r['item'])+(f"({r['roman']})" if r['roman'] else '')
+        assert part==approved['part']
+        assert approved['proposedMaximum']==count*5
+        body=r['publishedSourceBlock'];match=re.search(r'Assign 3 marks(?: for)?:',body)
+        full=body[:match.start()] if match else body
+        partial=answer_pool(body[match.end():]) if match else []
+        answers=answer_pool(full)
+        assert len(answers)==pool,(r['id'],answers)
+        assert partial==partial_expected.get(r['id'],[]),(r['id'],partial)
+        c=as_points(source_card({**r,'publishedTotal':count*5}),answers+partial,count)
+        for i,g in enumerate(c['rubric']['groups']):g['rows'][0]['marks']=5 if i<len(answers) else 3
+        c['rubric']['taskRequirements']=[source['listeningGuidance'],body]
+        c['rubric']['markingGuideNote']='Source conflict: the scheme says “Award two marks for each correct/relevant point.” It also prints 25 marks for each of four sections, with five requested details per section, and named three-mark answers. This card uses five marks per complete requested detail, inferred from the section totals and approved on 18 November 2026; five is not a printed per-detail award. The explicitly printed three-mark answers remain worth three. Select distinct details up to the number requested.'
+        c['review']['allocationApproval']='reviews/russian-2017-ol-sec-20261118/listening-approval.json'
+        c['review']['sourceConflict']={'printedGeneralMarksPerDetail':2,'printedSectionTotal':25,'requestedDetailsInSection':5,'approvedInferredMarksPerDetail':5,'explicitPartialMarks':3}
+        c['review']['guidancePages']=[12]
+        section=r['unit'];c['topicId']=topics[int(section[1:])-1][position[section]];position[section]+=1
+        c['additionalTopicIds']=['russian-1-0']
+        c['sourceMaterial']['kind']='source-question'
+        c['sourceMaterial']['presentationNote']='Listen to the official recording and answer the printed question. The transcript is not shown before answering.'
+        c['audioMaterial']=audio
+        cards.append(c)
+    assert len(cards)==18 and sum(c['totalMarks'] for c in cards)==100
+    assert all(sum(c['totalMarks'] for c in cards if c['section']==f'L{s}')==25 for s in range(1,5))
+    return cards
+
+
+def build():
+    docs,source=source_records()
+    try:
+        cards=reading(source)+language_and_matching(docs,source)+writing(docs,source)+approved_listening(source)
+        assert len(cards)==len({c['id'] for c in cards})==51
+        assert sum(c['totalMarks'] for c in cards)==320
+        return cards
+    finally:
+        for doc in docs.values():doc.close()
+
 def raw_scheme_text():
     path=ROOT/'examiner-reports/russian/schemes/2017-ol.pdf'
     assert hashlib.sha256(path.read_bytes()).hexdigest()==METADATA['scheme']['sha256']
@@ -309,8 +365,6 @@ def raw_scheme_text():
     return raw+'\n# Original pages with line wraps joined\n\n'+joined+'\n'
 
 if __name__=='__main__':
-    if '--written-only' not in sys.argv:
-        raise SystemExit('Use --written-only for the 33 verified written asks. Listening allocations await Alex; no inferred marks may be published.')
     from ru_review_2026_hl import save_reviewed
-    save_reviewed(build_written())
+    save_reviewed(build_written() if '--written-only' in sys.argv else build())
     (ROOT/'examiner-reports/russian/schemes/2017-ol.md').write_text(raw_scheme_text())

@@ -1,4 +1,4 @@
-"""Bind the 2017 Ordinary written cards to the independent printed census."""
+"""Bind all2017 Ordinary cards to originals and the explicitly approved listening allocation."""
 import copy,json,re,sys,unittest
 from pathlib import Path
 import fitz
@@ -90,7 +90,7 @@ class Original2017OrdinarySources(unittest.TestCase):
         self.assertEqual([b['marks'] for b in extended['rubric']['criteria'][1]['bands']],[[12],[10,11],[7,8,9],[4,5,6],[1,2,3],[0]])
         self.assertEqual([b['marks'] for b in extended['rubric']['criteria'][2]['bands']],[[6],[4,5],[2,3],[1],[0]])
         self.assertEqual(len(extended['rubric']['taskRequirements']),2)
-    def test_no_listening_allocation_is_inferred_without_approval(self):
+    def test_printed_source_does_not_mislabel_the_approved_inference_as_a_printed_award(self):
         listening=[r for r in self.source['tasks'] if r['component']=='aural']
         self.assertEqual(len(listening),18);self.assertTrue(all(r['publishedTotal'] is None for r in listening))
         self.assertFalse(any(c.get('audioMaterial') for c in self.cards))
@@ -98,5 +98,57 @@ class Original2017OrdinarySources(unittest.TestCase):
     def test_raw_scheme_preserves_every_original_page(self):
         raw=raw_scheme_text()
         for n,page in enumerate(self.docs['scheme'],1):self.assertIn(f'## Page {n}\n\n'+page.get_text(),raw)
+
+class Approved2017OrdinaryListeningSources(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from ru_review_2017_ol import build
+        cls.cards=build();cls.listening=[c for c in cls.cards if c.get('audioMaterial')]
+        cls.docs,cls.source=source_records()
+    @classmethod
+    def tearDownClass(cls):
+        for doc in cls.docs.values():doc.close()
+    def test_all51_printed_asks_and_source_addresses(self):
+        self.assertEqual(len(self.cards),51);self.assertEqual(sum(c['totalMarks'] for c in self.cards),320)
+        self.assertEqual(len(self.listening),18)
+        actual=set()
+        for c in self.cards:
+            ref=parse_ref(c['questionRef']);self.assertIsNotNone(ref)
+            actual.update((ref['section'],ref['q'],letter,roman) for letter,roman in ref['paths'])
+        self.assertEqual(actual,reviewed_keys(2017,'ol'))
+        records={r['id']:r for r in self.source['tasks'] if r['component']=='aural'}
+        for c in self.listening:
+            r=records[c['id']];self.assertEqual(c['questionText'],r['question'])
+            self.assertEqual(c['review']['questionPages'],r['questionPages'])
+            self.assertEqual(c['review']['schemePages'],r['schemePages'])
+            raw=' '.join(self.docs['aural'][p-1].get_text(clip=fitz.Rect(295,30,580,793)) for p in r['questionPages'])
+            self.assertIn(normal(c['questionText']),normal(raw))
+        verify(self.cards)
+    def test_inferred_marks_require_exact_approval_and_all_section_totals_reconcile(self):
+        from ru_review_2017_ol import approved_listening
+        for section in ('L1','L2','L3','L4'):
+            self.assertEqual(sum(c['totalMarks'] for c in self.listening if c['section']==section),25)
+        for c in self.listening:
+            self.assertIn('five is not a printed per-detail award',c['rubric']['markingGuideNote'])
+            self.assertIn('Award two marks',c['rubric']['markingGuideNote'])
+            self.assertEqual(c['review']['sourceConflict']['approvedInferredMarksPerDetail'],5)
+            self.assertEqual(c['totalMarks'],c['rubric']['count']*5)
+        bad=copy.deepcopy(self.source);bad['listeningGuidance']=bad['listeningGuidance'].replace('Award two marks','Award three marks')
+        with self.assertRaises(AssertionError):approved_listening(bad)
+    def test_all_six_explicit_three_mark_alternatives_are_preserved(self):
+        partials=[(c['id'],r['text'],r['marks']) for c in self.listening for g in c['rubric']['groups'] for r in g['rows'] if r['marks']==3]
+        self.assertEqual(partials,[('ru-2017-ol-l1-3-i','34 (people)',3),('ru-2017-ol-l1-4','winner',3),('ru-2017-ol-l1-4','Azerbaijan',3),('ru-2017-ol-l2-2','kids up to the age of …',3),('ru-2017-ol-l2-3-ii','friendship',3),('ru-2017-ol-l4-3','Facebook',3)])
+        allrows=[r for c in self.listening for g in c['rubric']['groups'] for r in g['rows']]
+        self.assertEqual(len(allrows),108)
+        self.assertTrue(all(r['marks'] in (3,5) for r in allrows))
+        bad=copy.deepcopy(self.listening[0]);bad['rubric']['groups'][0]['rows'][0]['text']='Invented studio answer'
+        with self.assertRaises(AssertionError):verify([bad])
+    def test_each_listening_card_has_the_verified2017_official_recording(self):
+        for c in self.listening:
+            self.assertEqual(c['audioMaterial']['secFileid'],'LC099ZLP017EV.mp3')
+            self.assertEqual(c['audioMaterial']['canonicalUrl'],'https://www.examinations.ie/archive/exampapers/2017/LC099ZLP017EV.mp3')
+            self.assertEqual(c['sourceMaterial']['kind'],'source-question')
+            self.assertEqual(c['review']['component'],'A00')
+            self.assertEqual(c['additionalTopicIds'],['russian-1-0'])
 
 if __name__=='__main__':unittest.main(verbosity=2)

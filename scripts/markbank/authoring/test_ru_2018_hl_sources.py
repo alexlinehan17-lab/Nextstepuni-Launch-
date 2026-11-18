@@ -43,39 +43,58 @@ class Original2018HigherSources(unittest.TestCase):
         self.assertEqual({c['id']:c for c in cards if c['year']==2018 and c['level']=='higher'},
                          {c['id']:c for c in self.cards})
 
-    def verify_confidence(self,card):
+    def verify_essay(self,card):
         docs,source=source_records()
         try:
             r=next(r for r in source['tasks'] if r['unit']=='SE')
-            self.assertEqual(card['tariffModel'],{'kind':'questionTotal'});self.assertEqual(card['totalMarks'],30)
-            self.assertNotIn('rubric',card);self.assertNotIn('answerLanguageRule',card)
+            self.assertEqual(card['rubric']['system'],'language-writing');self.assertEqual(card['totalMarks'],30)
+            self.assertNotIn('tariffModel',card);self.assertNotIn('rows',card)
+            self.assertEqual(card['answerLanguageRule']['otherLanguageMultiplier'],0)
             self.assertEqual(card['review']['schemePages'],[10,11]);self.assertEqual(card['review']['questionPages'],[13])
-            self.assertTrue(all(row['marks'] is None for row in card['rows']))
-            self.assertEqual(normal(' '.join(row['verbatim'] for row in card['rows'])),normal(r['publishedSourceBlock']))
-            self.assertIn('between 9 and 14 (9-11; 12-14; 15-16)',card['rows'][0]['verbatim'])
-            self.assertIn('lower A 15-16',card['rows'][1]['verbatim'])
-            self.assertIn('No Lower A ceiling is selected',card['rows'][0]['contextNote'])
+            blocks=card['rubric']['taskRequirements'];self.assertEqual(len(blocks),2)
+            self.assertEqual(normal(' '.join(blocks)),normal(r['publishedSourceBlock']))
+            self.assertIn('between 9 and 14 (9-11; 12-14; 15-16)',blocks[0])
+            self.assertIn('lower A 15-16',blocks[1])
+            self.assertIn('no single Lower A ceiling is imposed',card['rubric']['markingGuideNote'])
+            criteria={c['id']:c for c in card['rubric']['criteria']}
+            self.assertEqual(criteria['content']['maxMarks'],10)
+            self.assertEqual(criteria['expression']['maxMarks'],20)
+            self.assertEqual(criteria['content']['permittedMarks'],[0,2,4,6,8,10])
+            self.assertEqual(criteria['soft-sign-penalty']['permittedMarks'],[0,1,2])
+            self.assertEqual(criteria['title-penalty']['permittedMarks'],[0,1])
+            self.assertFalse(any(l['id']=='lower-a' for l in criteria['expression']['limits']))
+            self.assertEqual([b['marks'] for b in criteria['expression']['bands']],[[18,19,20],[14,15,16,17],[10,11,12,13],[6,7,8,9],[1,2,3,4,5],[0]])
             self.assertIn(normal(card['questionText']),normal(docs['paper'][12].get_text()))
             for phrase in ['Russian music and/or musicians','Russian literature','Housing in the Russian Federation','Irish‐Russian links','Cities in the Russian Federation']:
                 self.assertIn(phrase,card['questionText'])
             for phrase in ['maximum of two content marks','deduct ONE penalty mark','less than 25 words','(– 1 OR – 2)','no marks for language']:
-                self.assertIn(phrase,card['rows'][0]['verbatim'])
+                self.assertIn(phrase,blocks[0])
         finally:
             for d in docs.values():d.close()
 
     def test_conflicting_whole_choice_preserves_every_instruction(self):
-        card=self.get('se');self.verify_confidence(card);verify([card])
+        card=self.get('se');self.verify_essay(card);verify([card])
 
     def test_missing_choice_range_grid_or_invented_price_fails(self):
-        changes=[lambda c:c['rows'][0].update(marks=30),
-                 lambda c:c['rows'].pop(),
-                 lambda c:c['rows'][0].update(verbatim=c['rows'][0]['verbatim'].replace('15-16','13-14')),
+        changes=[lambda c:c['rubric']['criteria'][0].update(maxMarks=12),
+                 lambda c:c['rubric']['taskRequirements'].pop(),
+                 lambda c:c['rubric']['taskRequirements'].__setitem__(0,c['rubric']['taskRequirements'][0].replace('15-16','13-14')),
                  lambda c:c.update(questionText=c['questionText'].replace('Russian literature','')),
-                 lambda c:c.update(answerLanguageRule={'otherLanguageMultiplier':0}),
+                 lambda c:c['rubric']['criteria'][2]['limits'].append({'id':'lower-a','maxMarks':14}),
                  lambda c:c['review'].update(schemePages=[11])]
         for change in changes:
             c=self.get('se');change(c)
-            with self.assertRaises(AssertionError):self.verify_confidence(c)
+            with self.assertRaises(AssertionError):self.verify_essay(c)
+
+    def test_both_writing_tasks_have_the_fixed_no_answer_line_and_fresh_sec_evidence(self):
+        root=Path(__file__).resolve().parents[3]
+        evidence=json.loads((root/'scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json').read_text())
+        self.assertTrue(evidence['exactMatch']);self.assertEqual(evidence['sha256'],'3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a')
+        self.assertEqual({c['id'] for c in evidence['cardsWithNoPrintedAnswer']},{'ru-2018-hl-se','ru-2018-hl-gw'})
+        for suffix in ['se','gw']:
+            c=self.get(suffix)
+            self.assertIn('The scheme prints no answer for this part.',c['rubric']['markingGuideNote'])
+            self.assertEqual(c['review']['noPrintedAnswer']['fixedLine'],'The scheme prints no answer for this part.')
 
     def test_summary_discretion_exception_is_bound_to_physical_page_six(self):
         for n in range(1,5):

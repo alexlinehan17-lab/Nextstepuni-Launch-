@@ -27344,7 +27344,17 @@
     ],
     "guidancePages": [
       3
-    ]
+    ],
+    "reviewedAt": "2026-11-18",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json"
+    }
   },
   {
     "id": "ru-2018-hl-se",
@@ -27364,7 +27374,16 @@
     "component": "000",
     "questionPages": [
       13
-    ]
+    ],
+    "reviewedAt": "2026-11-18",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        10,
+        11
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-2018-hl-sec-20261118/archive-recheck.json"
+    }
   },
   {
     "id": "ru-2018-hl-l1-1-i",
