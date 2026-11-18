@@ -40486,5 +40486,3244 @@
    "attribution": "SEC LCVP Link Modules 2015 Common Level — © State Examinations Commission.",
    "presentationNote": "Read the complete original source and question in context."
   }
+ },
+ {
+  "id": "lcvp-2014-cl-a1",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "student-social-enterprise-awards",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q1",
+  "questionText": "What competition has Aoife and her classmates entered?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "competition",
+    "kind": "point",
+    "verbatim": "Student Social Enterprise Awards",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a2",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "prior-enterprise-entrants-advice",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q2",
+  "questionText": "Explain why Aoife’s class decided to speak to the students who entered the competition last year.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Explain why Aoife’s class decided to speak to the students who entered the competition last year.",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "They did very well in the competition and came 4th.",
+      "They gave great encouragement to go for the competition.",
+      "To get advice."
+     ]
+    },
+    "contextNote": "Original 2 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a3",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "enterprise-presentation-preparation",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q3",
+  "questionText": "Describe how Aoife prepared for the presentation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Describe how Aoife prepared for the presentation?",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "She rehearsed non-stop for the last three weeks.",
+      "She used her knowledge of public speaking as she has several awards.",
+      "She spoke with last year’s class.",
+      "Her presentation was prepared on her iPad."
+     ]
+    },
+    "contextNote": "Original 2 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "enterprise-project-funding",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q4",
+  "questionText": "Outline how the class intends to successfully complete such a costly project.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Outline how the class intends to successfully complete such a costly project.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "They have found a local contractor who will work for free if they provide the raw materials.",
+      "They intend to set up a charity pop up shop called ‘Second Helpings’ to raise the €2,000 required/local people donating goods",
+      "They will try to make second hand items more attractive to teenagers.",
+      "Manager from the local shopping centre will provide a unit, for the cost of the electricity and insurance.",
+      "Three parents with vans will collect the goods/reduce costs."
+     ]
+    },
+    "contextNote": "Original 4 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a5",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "charity-shop-target-market",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q5",
+  "questionText": "Explain how the class can ensure that their charity shop appeals to teenagers and young people.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Explain how the class can ensure that their charity shop appeals to teenagers and young people.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "They have come up with a catchy and attractive name for the shop.",
+      "They can offer ‘pre-loved’ items at reasonable prices.",
+      "They need to make sure that their stock appeals to teenagers and young people e.g. DVD’s, sports equipment, and computer games.",
+      "They should choose a suitable location for the shop e.g. central, near shopping areas.",
+      "They could carry out research to see what teenagers and young people expect from the shop.",
+      "They will promote their charity shop through social media/newspapers/flyers/posters."
+     ]
+    },
+    "contextNote": "Original 4 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a6",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "enterprise-planning-skills",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q6",
+  "questionText": "Describe two planning skills demonstrated by Aoife and her classmates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Describe two planning skills demonstrated by Aoife and her classmates.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Carried out research by talking to/surveying people in their school.",
+      "They have met with the manager of the local shopping centre and negotiated for a space in the local shopping centre.",
+      "They have divided the class into groups of five sets of three/share work load/cleaning rota.",
+      "They have planned their opening hours/staff rosters/shifts covered/ipad presentation.",
+      "They have a stock control plan/they will keep a record of everything donated.",
+      "They have a plan to deal with left over stock/donate to other charity shops.",
+      "They have planned for advertising and marketing using social media, flyers, posters and a photo opportunity with the special needs school.",
+      "They are forward thinking and anticipating issues/they have arranged for parents to collect donated goods."
+     ]
+    },
+    "contextNote": "Original 2 responses at 2 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a7",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "presentation-judges-feedback",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q7",
+  "questionText": "How did the judges react to Aoife’s presentation?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "How did the judges react to Aoife’s presentation?",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "They praised her communication skills and her ability to think on her feet.",
+      "They were impressed with the team’s ability to run a business and organise themselves.",
+      "They felt that the class needed to do more market research on pricing and competition.",
+      "The business plan was very impressive and her pitch was hard to beat."
+     ]
+    },
+    "contextNote": "Original 3 responses at 2 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-a8",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "enterprise-project-evaluation",
+  "level": "common",
+  "year": 2014,
+  "section": "A",
+  "questionRef": "2014 CL Section A Q8",
+  "questionText": "Describe how the project should be evaluated by the class.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Describe how the project should be evaluated by the class.",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "Review the aims and objectives of the project. If they raised the money required/win the award (competition) and were able to donate extra finance to the special education school.",
+      "They should have a class discussion involving everyone to review the activity and to get feedback.",
+      "They should carry out a survey/swot analysis/use questions/to review feedback from those involved.",
+      "They could carry out a review of career options + valid expansion (mention of career area, in light of their role in the team and or in light of experience gained).",
+      "Review skills developed/team, financial, marketing.",
+      "Ask the teacher or other relevant parties their opinion on the activity."
+     ]
+    },
+    "contextNote": "Original 6 responses at 1 or 0 marks each. All alternatives remain. Keep the full fourth model: review of career options + valid expansion in light of the role or experience. The skills model includes team, financial and marketing skills."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2014 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC462CLP031EV.mp4",
+   "secFileid": "LC462CLP031EV.mp4",
+   "attribution": "State Examinations Commission — original 2014 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original enterprise sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     2
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-b1",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "corobawn-visitor-reasons",
+  "level": "common",
+  "year": 2014,
+  "section": "B",
+  "questionRef": "2014 CL Section B Q1",
+  "questionText": "Outline three reasons why visitors might come to Corobawn.",
+  "stem": "COROBAWN SUMMER FESTIVAL Corobawn is a small town located in the North West of Ireland with a population of 4,000 people. The town has always attracted hiking and activity enthusiasts due to its location on the Great Western Greenway. Located six kilometres from the town centre is the Corobawn Hotel and Golf Resort. It has managed to prosper in the difficult economic environment by targeting golfers from the UK and US markets. Other than the ruins of an old Abbey, which is currently being restored, there are not many other tourist attractions to lure visitors from the larger towns and the coastline. The Gathering was designed to encourage local communities to plan special events and highlight what is great about their community and about Ireland. Corobawn had a very successful Gathering weekend in 2013. The weekend Gathering Festival had a variety of events including a 1940’s street pageant and dance, a walking festival, guided tours of the town and local area, archive photos and family record displays. The Gathering Festival attracted nearly 5,000 visitors to Corobawn with local bed and breakfasts, the hotel and golf resort, local shops, cafes and restaurants all benefiting from the increase in footfall to the local area. The town festival committee is meeting to evaluate the success of the previous year’s festival and to plan for 2014. As part of the evaluation of last year’s festival the committee carried out a visitor survey over the summer months. It was facilitated by local bed and breakfasts and the Corobawn Hotel and Golf Resort. The results of the survey are shown in the graph opposite. The town festival committee members are determined to build on the success of last year’s Gathering Festival and attract new as well as repeat visitors. The committee, representing the local community, is made up of ten enthusiastic members with a variety of skills and experience. They are currently brainstorming ideas for this year’s summer festival. Some of the ideas generated include a week-long walking festival with events in the evenings for the hikers, an artisan food festival promoting local food produce and a genealogy presentation called ‘Exploring Your Roots in Corobawn’. They would like to develop a web site for the area as well as a social media presence. They also believe that local businesses should be encouraged to take advantage of opportunities to market themselves with Fáilte Ireland. The festival committee members know from last year’s experience that planning is key to ensuring that any community festival is a success. Many committee members believe that Corobawn’s location on the Great Western Greenway has not been fully exploited. They also believe that the opening of the Wild Atlantic Way presents significant opportunities for Corobawn. These members believe that there should be a greater emphasis on attracting more hiking and activity enthusiasts to the area. This move has led to some conflict on the committee as other committee members feel that they should simply focus on holding a summer festival.\n\nReasons for Visiting Corobawn in 2013: Visiting Family 6%; Hiking/Hill Walking 38%; Golf 24%; Gathering Festival 32%.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline three reasons why visitors might come to Corobawn.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: It is a great hiking and activity location e.g. Great Western Greenway/Wild Atlantic Way. | To play golf because there is a golf hotel and resort. | For historical reasons e.g. to visit the old Abbey. | To participate in the Gathering Festival/Summer festival. | Visiting family.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL SOURCE",
+   "title": "Corobawn Summer Festival — complete case study and chart",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context. Read all five paragraphs and the original 2013 visitor-reasons pie chart. Population 4,000 and nearly 5,000 visitors are distinct figures."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     9
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-b2i",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "visitor-survey-reasons",
+  "level": "common",
+  "year": 2014,
+  "section": "B",
+  "questionRef": "2014 CL Section B Q2(i)",
+  "questionText": "Explain why the festival committee decided to carry out a survey of visitors to the town in 2013.",
+  "stem": "COROBAWN SUMMER FESTIVAL Corobawn is a small town located in the North West of Ireland with a population of 4,000 people. The town has always attracted hiking and activity enthusiasts due to its location on the Great Western Greenway. Located six kilometres from the town centre is the Corobawn Hotel and Golf Resort. It has managed to prosper in the difficult economic environment by targeting golfers from the UK and US markets. Other than the ruins of an old Abbey, which is currently being restored, there are not many other tourist attractions to lure visitors from the larger towns and the coastline. The Gathering was designed to encourage local communities to plan special events and highlight what is great about their community and about Ireland. Corobawn had a very successful Gathering weekend in 2013. The weekend Gathering Festival had a variety of events including a 1940’s street pageant and dance, a walking festival, guided tours of the town and local area, archive photos and family record displays. The Gathering Festival attracted nearly 5,000 visitors to Corobawn with local bed and breakfasts, the hotel and golf resort, local shops, cafes and restaurants all benefiting from the increase in footfall to the local area. The town festival committee is meeting to evaluate the success of the previous year’s festival and to plan for 2014. As part of the evaluation of last year’s festival the committee carried out a visitor survey over the summer months. It was facilitated by local bed and breakfasts and the Corobawn Hotel and Golf Resort. The results of the survey are shown in the graph opposite. The town festival committee members are determined to build on the success of last year’s Gathering Festival and attract new as well as repeat visitors. The committee, representing the local community, is made up of ten enthusiastic members with a variety of skills and experience. They are currently brainstorming ideas for this year’s summer festival. Some of the ideas generated include a week-long walking festival with events in the evenings for the hikers, an artisan food festival promoting local food produce and a genealogy presentation called ‘Exploring Your Roots in Corobawn’. They would like to develop a web site for the area as well as a social media presence. They also believe that local businesses should be encouraged to take advantage of opportunities to market themselves with Fáilte Ireland. The festival committee members know from last year’s experience that planning is key to ensuring that any community festival is a success. Many committee members believe that Corobawn’s location on the Great Western Greenway has not been fully exploited. They also believe that the opening of the Wild Atlantic Way presents significant opportunities for Corobawn. These members believe that there should be a greater emphasis on attracting more hiking and activity enthusiasts to the area. This move has led to some conflict on the committee as other committee members feel that they should simply focus on holding a summer festival.\n\nReasons for Visiting Corobawn in 2013: Visiting Family 6%; Hiking/Hill Walking 38%; Golf 24%; Gathering Festival 32%.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Explain why the festival committee decided to carry out a survey of visitors to the town in 2013.",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: To find out the reasons why people visited Corobawn, use the information to make decisions/develop a plan/action after the survey. | To get some ideas on what facilities visitors might require for the future and to assist with planning of this year’s festival/attract new as well as repeat visitors. | To get feedback on the services/festivals currently provided in the area/value for money. | Identify gaps in the services available and how they might be improved. | To include the information in their business plan when seeking finance. | To ensure that they spend money on the correct type of advertising/promotion.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL SOURCE",
+   "title": "Corobawn Summer Festival — complete case study and chart",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context. Read all five paragraphs and the original 2013 visitor-reasons pie chart. Population 4,000 and nearly 5,000 visitors are distinct figures."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     10,
+     11
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-b2ii",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "local-business-promotion",
+  "level": "common",
+  "year": 2014,
+  "section": "B",
+  "questionRef": "2014 CL Section B Q2(ii)",
+  "questionText": "Outline how local businesses in Corobawn could promote themselves.",
+  "stem": "COROBAWN SUMMER FESTIVAL Corobawn is a small town located in the North West of Ireland with a population of 4,000 people. The town has always attracted hiking and activity enthusiasts due to its location on the Great Western Greenway. Located six kilometres from the town centre is the Corobawn Hotel and Golf Resort. It has managed to prosper in the difficult economic environment by targeting golfers from the UK and US markets. Other than the ruins of an old Abbey, which is currently being restored, there are not many other tourist attractions to lure visitors from the larger towns and the coastline. The Gathering was designed to encourage local communities to plan special events and highlight what is great about their community and about Ireland. Corobawn had a very successful Gathering weekend in 2013. The weekend Gathering Festival had a variety of events including a 1940’s street pageant and dance, a walking festival, guided tours of the town and local area, archive photos and family record displays. The Gathering Festival attracted nearly 5,000 visitors to Corobawn with local bed and breakfasts, the hotel and golf resort, local shops, cafes and restaurants all benefiting from the increase in footfall to the local area. The town festival committee is meeting to evaluate the success of the previous year’s festival and to plan for 2014. As part of the evaluation of last year’s festival the committee carried out a visitor survey over the summer months. It was facilitated by local bed and breakfasts and the Corobawn Hotel and Golf Resort. The results of the survey are shown in the graph opposite. The town festival committee members are determined to build on the success of last year’s Gathering Festival and attract new as well as repeat visitors. The committee, representing the local community, is made up of ten enthusiastic members with a variety of skills and experience. They are currently brainstorming ideas for this year’s summer festival. Some of the ideas generated include a week-long walking festival with events in the evenings for the hikers, an artisan food festival promoting local food produce and a genealogy presentation called ‘Exploring Your Roots in Corobawn’. They would like to develop a web site for the area as well as a social media presence. They also believe that local businesses should be encouraged to take advantage of opportunities to market themselves with Fáilte Ireland. The festival committee members know from last year’s experience that planning is key to ensuring that any community festival is a success. Many committee members believe that Corobawn’s location on the Great Western Greenway has not been fully exploited. They also believe that the opening of the Wild Atlantic Way presents significant opportunities for Corobawn. These members believe that there should be a greater emphasis on attracting more hiking and activity enthusiasts to the area. This move has led to some conflict on the committee as other committee members feel that they should simply focus on holding a summer festival.\n\nReasons for Visiting Corobawn in 2013: Visiting Family 6%; Hiking/Hill Walking 38%; Golf 24%; Gathering Festival 32%.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline how businesses in Corobawn could promote themselves.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Original 2 responses, each 2 marks in printed 1-mark components. The third model includes both special promotions and niche products such as packed lunches for walkers. Keep each response distinct and credit it only once. Complete original guidance: They could use the new website to give information/advertise their business. | Use social media such as Facebook, Twitter, Internet mobile phone apps. | They could organise special promotions e.g. kids under 5 free, free bicycle hire, transport. Come up with niche products to take advantage of opportunities i.e. packed lunches for walkers. | They could set up stands/give talks at trade fairs/festivals/outdoor markets. | Advertise in newspapers/tourist brochures/flyers/billboards/signs/in businesses on the Great Western Gateway/Wild Atlantic Way | Sponsorship of local teams/festival events. | Use the help available from Fáilte Ireland/promote themselves on associated sites. | Local businesses could work together e.g. hairdressers advertising in B & B’s.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL SOURCE",
+   "title": "Corobawn Summer Festival — complete case study and chart",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context. Read all five paragraphs and the original 2013 visitor-reasons pie chart. Population 4,000 and nearly 5,000 visitors are distinct figures."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     10,
+     11
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-b3i",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "effective-festival-meetings",
+  "level": "common",
+  "year": 2014,
+  "section": "B",
+  "questionRef": "2014 CL Section B Q3(i)",
+  "questionText": "Explain how the Corobawn festival committee can ensure that meetings are effective.",
+  "stem": "COROBAWN SUMMER FESTIVAL Corobawn is a small town located in the North West of Ireland with a population of 4,000 people. The town has always attracted hiking and activity enthusiasts due to its location on the Great Western Greenway. Located six kilometres from the town centre is the Corobawn Hotel and Golf Resort. It has managed to prosper in the difficult economic environment by targeting golfers from the UK and US markets. Other than the ruins of an old Abbey, which is currently being restored, there are not many other tourist attractions to lure visitors from the larger towns and the coastline. The Gathering was designed to encourage local communities to plan special events and highlight what is great about their community and about Ireland. Corobawn had a very successful Gathering weekend in 2013. The weekend Gathering Festival had a variety of events including a 1940’s street pageant and dance, a walking festival, guided tours of the town and local area, archive photos and family record displays. The Gathering Festival attracted nearly 5,000 visitors to Corobawn with local bed and breakfasts, the hotel and golf resort, local shops, cafes and restaurants all benefiting from the increase in footfall to the local area. The town festival committee is meeting to evaluate the success of the previous year’s festival and to plan for 2014. As part of the evaluation of last year’s festival the committee carried out a visitor survey over the summer months. It was facilitated by local bed and breakfasts and the Corobawn Hotel and Golf Resort. The results of the survey are shown in the graph opposite. The town festival committee members are determined to build on the success of last year’s Gathering Festival and attract new as well as repeat visitors. The committee, representing the local community, is made up of ten enthusiastic members with a variety of skills and experience. They are currently brainstorming ideas for this year’s summer festival. Some of the ideas generated include a week-long walking festival with events in the evenings for the hikers, an artisan food festival promoting local food produce and a genealogy presentation called ‘Exploring Your Roots in Corobawn’. They would like to develop a web site for the area as well as a social media presence. They also believe that local businesses should be encouraged to take advantage of opportunities to market themselves with Fáilte Ireland. The festival committee members know from last year’s experience that planning is key to ensuring that any community festival is a success. Many committee members believe that Corobawn’s location on the Great Western Greenway has not been fully exploited. They also believe that the opening of the Wild Atlantic Way presents significant opportunities for Corobawn. These members believe that there should be a greater emphasis on attracting more hiking and activity enthusiasts to the area. This move has led to some conflict on the committee as other committee members feel that they should simply focus on holding a summer festival.\n\nReasons for Visiting Corobawn in 2013: Visiting Family 6%; Hiking/Hill Walking 38%; Golf 24%; Gathering Festival 32%.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Explain how the Corobawn festival committee can ensure that meetings are effective.",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Meeting should be well planned in advance e.g. dates should be decided to ensure good attendance by members/prepare the venue/notice of the meeting sent out in advance. | Draw up an agenda to clarify the purpose of the meeting/ensure each item on the agenda is followed. | The minutes of previous meetings and agreed actions should be circulated by the secretary in advance, as well as any essential documentation. | Have members who are representative of all the interested parties. | Elect a good chairperson who will ensure that the meeting is run smoothly. | All decisions/voting should be made by consensus with the committee members. | Clearly define the roles and responsibilities of each team member and make sure there is delegation of work to the members. | Committee members should listen, value, respect the contribution of everyone’s opinions and ideas.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL SOURCE",
+   "title": "Corobawn Summer Festival — complete case study and chart",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context. Read all five paragraphs and the original 2013 visitor-reasons pie chart. Population 4,000 and nearly 5,000 visitors are distinct figures."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     11,
+     12
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-b3ii",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "festival-conflict-resolution",
+  "level": "common",
+  "year": 2014,
+  "section": "B",
+  "questionRef": "2014 CL Section B Q3(ii)",
+  "questionText": "Outline the methods the Corobawn festival committee could use to resolve the conflict which has arisen.",
+  "stem": "COROBAWN SUMMER FESTIVAL Corobawn is a small town located in the North West of Ireland with a population of 4,000 people. The town has always attracted hiking and activity enthusiasts due to its location on the Great Western Greenway. Located six kilometres from the town centre is the Corobawn Hotel and Golf Resort. It has managed to prosper in the difficult economic environment by targeting golfers from the UK and US markets. Other than the ruins of an old Abbey, which is currently being restored, there are not many other tourist attractions to lure visitors from the larger towns and the coastline. The Gathering was designed to encourage local communities to plan special events and highlight what is great about their community and about Ireland. Corobawn had a very successful Gathering weekend in 2013. The weekend Gathering Festival had a variety of events including a 1940’s street pageant and dance, a walking festival, guided tours of the town and local area, archive photos and family record displays. The Gathering Festival attracted nearly 5,000 visitors to Corobawn with local bed and breakfasts, the hotel and golf resort, local shops, cafes and restaurants all benefiting from the increase in footfall to the local area. The town festival committee is meeting to evaluate the success of the previous year’s festival and to plan for 2014. As part of the evaluation of last year’s festival the committee carried out a visitor survey over the summer months. It was facilitated by local bed and breakfasts and the Corobawn Hotel and Golf Resort. The results of the survey are shown in the graph opposite. The town festival committee members are determined to build on the success of last year’s Gathering Festival and attract new as well as repeat visitors. The committee, representing the local community, is made up of ten enthusiastic members with a variety of skills and experience. They are currently brainstorming ideas for this year’s summer festival. Some of the ideas generated include a week-long walking festival with events in the evenings for the hikers, an artisan food festival promoting local food produce and a genealogy presentation called ‘Exploring Your Roots in Corobawn’. They would like to develop a web site for the area as well as a social media presence. They also believe that local businesses should be encouraged to take advantage of opportunities to market themselves with Fáilte Ireland. The festival committee members know from last year’s experience that planning is key to ensuring that any community festival is a success. Many committee members believe that Corobawn’s location on the Great Western Greenway has not been fully exploited. They also believe that the opening of the Wild Atlantic Way presents significant opportunities for Corobawn. These members believe that there should be a greater emphasis on attracting more hiking and activity enthusiasts to the area. This move has led to some conflict on the committee as other committee members feel that they should simply focus on holding a summer festival.\n\nReasons for Visiting Corobawn in 2013: Visiting Family 6%; Hiking/Hill Walking 38%; Golf 24%; Gathering Festival 32%.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the methods the Corobawn festival committee could use to resolve the conflict which has arisen.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Original 2 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Regular meetings to discuss the issue in dispute. Consider the pro’s and con’s of each point of conflict/take a vote. | Appoint a strong Chairperson/leader to make sure that there is good respect and dialogue between the members. | Set a timeframe in which to make decisions. | Sub committees or small teams could be established to investigate the different suggestions. They would then report back to the full committee. | Bring in an outside facilitator/third party to help the members. | Ask for feedback from the local community so that the best decision can be made. | Provide training for committee members/team building excercise.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL SOURCE",
+   "title": "Corobawn Summer Festival — complete case study and chart",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context. Read all five paragraphs and the original 2013 visitor-reasons pie chart. Population 4,000 and nearly 5,000 visitors are distinct figures."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     11,
+     12
+    ],
+    "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2014-cl-c1a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-2",
+  "conceptId": "investigated-career-title",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q1(a)",
+  "questionText": "Name the career you investigated as part of your LCVP Link Modules.",
+  "stem": "Career Investigation introduces the skills of research and planning.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "career",
+    "kind": "point",
+    "verbatim": "Title of career investigated",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c1b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-2",
+  "conceptId": "career-interview-preparation",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q1(b)",
+  "questionText": "As part of your Career Investigation you interviewed a person working in this career area. Explain how you prepared for this interview.",
+  "stem": "Career Investigation introduces the skills of research and planning. Name the career you investigated as part of your LCVP Link Modules.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "As part of your Career Investigation you interviewed a person working in this career area. Explain how you prepared for this interview.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Researched the person and their career. | Made initial contact with the person to arrange a time, date and location. | Prepared questions to ask. Made sure that the questions were useful in writing the Career Investigation. | Asked the teacher/Career guidance teacher for advice and to review questions before doing the interview. | Confirmed the arrangements, time, date, arrange transport, prepare room/equipment/suitable clothing. | Practised asking the questions. Did a mock interview to help with confidence.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c1c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-2",
+  "conceptId": "career-qualities-skills-relevance",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q1(c)",
+  "questionText": "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.",
+  "stem": "Career Investigation introduces the skills of research and planning. Name the career you investigated as part of your LCVP Link Modules.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Quality/skill",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Reason relevant to this career",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career."
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Quality/skill",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Reason relevant to this career",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 2 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career."
+   },
+   {
+    "id": "profile-3",
+    "kind": "criterion",
+    "verbatim": "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Quality/skill",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Reason relevant to this career",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 3 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c1d",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-2",
+  "conceptId": "career-research-method-evaluation",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q1(d)",
+  "questionText": "Evaluate the different methods of research used in your Career Investigation.",
+  "stem": "Career Investigation introduces the skills of research and planning. Name the career you investigated as part of your LCVP Link Modules.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "response-1",
+    "kind": "criterion",
+    "verbatim": "Evaluate the different methods of research used in your Career Investigation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 1 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "response-2",
+    "kind": "criterion",
+    "verbatim": "Evaluate the different methods of research used in your Career Investigation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 2 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "response-3",
+    "kind": "criterion",
+    "verbatim": "Evaluate the different methods of research used in your Career Investigation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 3 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c2a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "visited-local-business",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q2(a)",
+  "questionText": "Name the business your LCVP class visited. Outline the type of work carried out by this business.",
+  "stem": "A visit out to a local business is a valuable learning experience for LCVP students.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Name the business your LCVP class visited. Outline the type of work carried out by this business.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Name",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Outline",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 1. One complete name-and-outline task; 1m for naming and 1m for outline. Keep each response distinct and credit it only once. Complete original guidance: Name the business and give a brief outline of the work."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    17
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c2b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "business-visit-student-benefits",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q2(b)",
+  "questionText": "Outline the benefits to an LCVP class of visiting a local business.",
+  "stem": "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited. Outline the type of work carried out by this business.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the benefits to an LCVP class of visiting a local business.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: To learn about the business and its benefit to the local area. | It gives the students an opportunity to practise interviewing/communication skills/interact with business owners. | It gives the class an opportunity to put teamwork into practice. | It can be used to prepare a portfolio item e.g. Summary Report. | They can find out about employment/career opportunities in the local area. | May develop links with the local business and get an opportunity to do work experience as a result of the visit. | To learn about the world of work/health and safety.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    17
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c2c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "business-visit-subject-connections",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q2(c)",
+  "questionText": "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.",
+  "stem": "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited. Outline the type of work carried out by this business.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Subject",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Use in organisation/planning",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills"
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Subject",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Use in organisation/planning",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 2 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills"
+   },
+   {
+    "id": "profile-3",
+    "kind": "criterion",
+    "verbatim": "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Subject",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Use in organisation/planning",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 3 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c2d",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
+  "conceptId": "business-visit-host-preparation",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q2(d)",
+  "questionText": "Describe the steps the business owner/manager can take to ensure the LCVP student visit is a success.",
+  "stem": "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited. Outline the type of work carried out by this business.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe the steps the business owner/manager can take to ensure the LCVP student visit is a success.",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Original 4 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: Be clear on the aims/information needs of the LCVP class. Find out in advance any questions students want to ask. | Confirm the number of students so that they can cater for them. Make sure that when the groups are getting a tour of the business they are in sufficiently small groups to see and hear everything. Confirm the time/date of the visit. | Have an information pack/presentation prepared. | Have someone appointed to meet and greet. | Have personal protective equipment for each person if required/health and safety instruction. | Provide a variety of experiences in the business e.g. make sure there are a number of speakers who will describe different aspects of the business. | Allow the appropriate time for the tour and questions and answers. Make sure the visit is well planned and organised/set up in advance/ review previous evaluations/inform workers of the student visit.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    19
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c3a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
+  "conceptId": "upskilling-definition",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q3(a)",
+  "questionText": "Explain what is meant by the term ‘Upskilling’.",
+  "stem": "Upskilling, JobBridge and Teamwork are part of modern working life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "criterion",
+    "verbatim": "Explain what is meant by the term ‘Upskilling’.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Original whole definition 2m (1+1). Preserve the complete definition without inventing a fixed semantic split. Keep each response distinct and credit it only once. Complete original guidance: When workers learn new skills/update existing skills/engage in extra training to develop their capabilities.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c3b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
+  "conceptId": "worker-upskilling-reasons",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q3(b)",
+  "questionText": "Outline the reasons why it is important for a worker to engage in upskilling.",
+  "stem": "Upskilling, JobBridge and Teamwork are part of modern working life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Outline the reasons why it is important for a worker to engage in upskilling",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "To do their job better.",
+      "To have extra skills to offer in the workplace.",
+      "To improve chances of promotion.",
+      "To make themselves more attractive to employers.",
+      "To keep up to date with the modern working environment/new technology which is always changing.",
+      "Self satisfaction/actualisation/keep challenged/motivated etc.",
+      "In order to change career.",
+      "Improve their CV.",
+      "For job security.",
+      "Higher pay/wages."
+     ]
+    },
+    "contextNote": "Original 6 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c3c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
+  "conceptId": "jobbridge-jobseeker-benefits",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q3(c)",
+  "questionText": "‘JobBridge, the National Internship Scheme, provides work experience opportunities for unemployed people’. Explain the benefits for a job seeker of participating in the ‘JobBridge’ scheme.",
+  "stem": "Upskilling, JobBridge and Teamwork are part of modern working life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "‘JobBridge, the National Internship Scheme, provides work experience opportunities for unemployed people’ Explain the benefits for a job seeker of participating in the ‘JobBridge’ Scheme.",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Original 4 responses, each 2 marks in printed 1-mark components. Original historical JobBridge question and model guidance; retain the full quoted paper context. Keep each response distinct and credit it only once. Complete original guidance: They gain work experience in a relevant career/world of work/gets you into a routine. | They may learn new skills/develop existing skills/training opportunities. | It may lead to employment, contacts for the future. | It improves your CV so you have a better chance of getting a job in your chosen career. | Good for your self esteem as it is a positive use of your time/social aspect. | You receive extra payment for participating in the scheme. | It can provide the job seeker with a reference that could be used in a job application.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c3d",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
+  "conceptId": "employer-effective-teamwork",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q3(d)",
+  "questionText": "Describe the ways in which an employer can ensure effective teamwork in his/her organisation.",
+  "stem": "Upskilling, JobBridge and Teamwork are part of modern working life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "response-1",
+    "kind": "criterion",
+    "verbatim": "Describe the ways in which an employer can ensure effective teamwork in his/her organisation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 1 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Ensure that the each member of the team understands the tasks/goals/targets. Make sure that all roles and responsibilities in the team are clearly defined. | Rotate the roles regularly so that that the workers become multiskilled/challenged/not bored/flexible. | Set realistic deadlines for the assigned tasks so work is done on time/on target. | Ensure that the team have adequate resources/training for the task to enable the task to be completed. | Review the work regularly. Have regular meetings to monitor progress. | Have a range of talents or strengths on the team/variety of skills/making the best use of aptitudes or abilities/workers learn from each other. | Make sure that all ideas and opinions are heard and valued so every one feels part of the team. | Appoint a strong team leader to motivate and encourage team members. Good communication with the team. | Have conflict/disagreement resolution procedures in place so that conflicts can be resolved quickly/have team building excercises/resolve conflict quickly. | Rewards/incentives/bonus offered to the most successful/effective team to motivate them to work hard and win.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "response-2",
+    "kind": "criterion",
+    "verbatim": "Describe the ways in which an employer can ensure effective teamwork in his/her organisation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 2 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Ensure that the each member of the team understands the tasks/goals/targets. Make sure that all roles and responsibilities in the team are clearly defined. | Rotate the roles regularly so that that the workers become multiskilled/challenged/not bored/flexible. | Set realistic deadlines for the assigned tasks so work is done on time/on target. | Ensure that the team have adequate resources/training for the task to enable the task to be completed. | Review the work regularly. Have regular meetings to monitor progress. | Have a range of talents or strengths on the team/variety of skills/making the best use of aptitudes or abilities/workers learn from each other. | Make sure that all ideas and opinions are heard and valued so every one feels part of the team. | Appoint a strong team leader to motivate and encourage team members. Good communication with the team. | Have conflict/disagreement resolution procedures in place so that conflicts can be resolved quickly/have team building excercises/resolve conflict quickly. | Rewards/incentives/bonus offered to the most successful/effective team to motivate them to work hard and win.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "response-3",
+    "kind": "criterion",
+    "verbatim": "Describe the ways in which an employer can ensure effective teamwork in his/her organisation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Response 3 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Ensure that the each member of the team understands the tasks/goals/targets. Make sure that all roles and responsibilities in the team are clearly defined. | Rotate the roles regularly so that that the workers become multiskilled/challenged/not bored/flexible. | Set realistic deadlines for the assigned tasks so work is done on time/on target. | Ensure that the team have adequate resources/training for the task to enable the task to be completed. | Review the work regularly. Have regular meetings to monitor progress. | Have a range of talents or strengths on the team/variety of skills/making the best use of aptitudes or abilities/workers learn from each other. | Make sure that all ideas and opinions are heard and valued so every one feels part of the team. | Appoint a strong team leader to motivate and encourage team members. Good communication with the team. | Have conflict/disagreement resolution procedures in place so that conflicts can be resolved quickly/have team building excercises/resolve conflict quickly. | Rewards/incentives/bonus offered to the most successful/effective team to motivate them to work hard and win.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "1m",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c4a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "mini-company-first-agenda",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q4(a)",
+  "questionText": "Draft the agenda for the first meeting held to plan this activity.",
+  "stem": "Your LCVP class has decided to run a mini company making plant pot holders.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "heading",
+    "kind": "point",
+    "verbatim": "Heading",
+    "marks": 1
+   },
+   {
+    "id": "election",
+    "kind": "point",
+    "verbatim": "Election of officers* (Chairperson/Managing Director/Secretary/Treasurer)",
+    "marks": 1,
+    "contextNote": "* Compulsory item: election of officers. Keep the complete source examples; no unprinted whole-question penalty is added."
+   },
+   {
+    "id": "other-items",
+    "kind": "anyN",
+    "verbatim": "Draft the agenda for the first meeting held to plan this activity.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Draw up a plan of work",
+      "Finance",
+      "Permission from Principal",
+      "Assigning tasks/roles",
+      "Date/time of the next meeting",
+      "AOB"
+     ]
+    },
+    "contextNote": "Original Heading 1m + 5 items@1m. Election of officers is compulsory and priced separately; choose four other distinct items from the full remaining pool. No repeated credit."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c4b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "enterprise-action-plan-benefits",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q4(b)",
+  "questionText": "An Action Plan will help ensure the success of this activity. Outline the benefits of having an Action Plan for this activity.",
+  "stem": "Your LCVP class has decided to run a mini company making plant pot holders.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "An Action Plan will help ensure the success of this activity. Outline the benefits of having an Action Plan for this activity.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "You have to set goals/objectives which is good planning.",
+      "Research and analysis provides focus to the activity.",
+      "It sets out a schedule of time and deadlines e.g. action steps.",
+      "It helps with the delegation of the tasks to be done/duties/responsibilities.",
+      "You have to plan out what resources are required.",
+      "Gives a clear idea in relation to costings and finance needed to complete the task.",
+      "It will help you decide if the activity is worth doing.",
+      "Will show methods/ways to evaluate the activity."
+     ]
+    },
+    "contextNote": "Original 4 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c4c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "mini-company-resources",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q4(c)",
+  "questionText": "Identify the resources needed to run this activity and outline why each resource is needed.",
+  "stem": "Your LCVP class has decided to run a mini company making plant pot holders.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Identify the resources needed to run this activity and outline why each resource is needed.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Resource",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Explanation",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence"
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "Identify the resources needed to run this activity and outline why each resource is needed.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Resource",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Explanation",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 2 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence"
+   },
+   {
+    "id": "profile-3",
+    "kind": "criterion",
+    "verbatim": "Identify the resources needed to run this activity and outline why each resource is needed.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Resource",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Explanation",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 3 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c4d",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-3",
+  "conceptId": "enterprise-feedback-definition-types",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q4(d)",
+  "questionText": "Explain the term ‘feedback’. In relation to an enterprise activity explain the type of feedback you could expect to receive.",
+  "stem": "Your LCVP class has decided to run a mini company making plant pot holders.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "criterion",
+    "verbatim": "Explain the term ‘feedback’. In relation to an enterprise activity explain the type of feedback you could expect to receive",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "One whole task: definition 3@1m plus three types 2m (1+1) each. No fixed semantic division of the full definition is invented. Keep each response distinct and credit it only once. Complete original guidance: Feedback is information or advice/given after the completion of a task/activity/which can be positive or negative/of what can be done to improve future performance.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "types",
+    "kind": "criterion",
+    "verbatim": "Explain the term ‘feedback’. In relation to an enterprise activity explain the type of feedback you could expect to receive",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original types 3@2m (1+1). Preserve all six models and every continuation; no required positive/negative mix. Keep each response distinct and credit it only once. Complete original guidance: Teacher/judges/business person could give their opinion on how the activity/teamwork went. | Financial – the level of profits will indicate how successful the activity was. | Feedback from the members involved in the activity – this will indicate their satisfaction. | Customer satisfaction – quality of plant pot holder and quantity made will indicate how the activity went. | General advice from school Principal – organisation/disruption around the school/on what to change the next time you have an activity. | Brainstorming in the class for individual feedback.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    25
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "local-voluntary-organisation",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(a)",
+  "questionText": "Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "stem": "Voluntary groups/organisations carry out important work in local communities.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Name of group",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Outline of the type of work",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 1. Original name 1m + outline 2m (0/2). Same voluntary group; no 1-mark partial for outline and no invented personal example. Keep each response distinct and credit it only once. Complete original guidance: Name of group | Outline of the type of work"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    26
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "choosing-voluntary-organisation",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(b)",
+  "questionText": "A young person wishes to engage in volunteering. Outline the factors must be considered when choosing an organisation to volunteer with.",
+  "stem": "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "A young person wishes to engage in volunteering. Outline the factors that must be considered when choosing an organisation to volunteer with.",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Find out what the organisation does. Is this something they are interested in?",
+      "Time: What commitment is needed and can you meet this?",
+      "Skills: Do you have the required skills to do the tasks needed?",
+      "Practicalities: Will the organisation provide transport/clothing/location convenient, near to their home?",
+      "Social aspect: Will you meet others thus developing your interpersonal skills?",
+      "Is Garda clearance required to work with the organisation/age requirement?",
+      "Can the voluntary work be used as a reference for a CV?"
+     ]
+    },
+    "contextNote": "Original 4 responses at 1 or 0 marks each. All alternatives remain. "
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    26
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5ci",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "voluntary-swot-benefits",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(c)(i)",
+  "questionText": "Voluntary groups/organisations should carry out a SWOT analysis. Explain why a SWOT analysis is beneficial to a voluntary group/organisation.",
+  "stem": "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "benefit",
+    "kind": "criterion",
+    "verbatim": "Voluntary groups/organisations should carry out a SWOT analysis. Explain why a SWOT analysis is beneficial to a voluntary group/organisation.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Original 2@1m. Preserve the full SWOT purpose/benefit statement; no fixed semantic split is inferred. Keep each response distinct and credit it only once. Complete original guidance: A SWOT Analysis highlights the strengths, weaknesses, opportunities and threats facing the voluntary organisation/this means that strengths/opportunities can be exploited/they can take steps/some action to overcome the weaknesses and threats.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5cii",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "voluntary-organisation-swot",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(c)(ii)",
+  "questionText": "Complete a SWOT analysis of the voluntary group/organisation referred to in part (a).",
+  "stem": "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "strengths",
+    "kind": "criterion",
+    "verbatim": "Complete a SWOT analysis of the voluntary group/organisation referred to in part (a)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Strengths: A relevant statement for each. Original 4@2m (1+1), one complete statement under EACH category. No marks for headings. No repetition of points. Keep the same organisation named in part (a). Keep each response distinct and credit it only once. Complete original guidance: Volunteers | Reputation | Good Service | Location"
+   },
+   {
+    "id": "weaknesses",
+    "kind": "criterion",
+    "verbatim": "Complete a SWOT analysis of the voluntary group/organisation referred to in part (a)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Weaknesses: A relevant statement for each. Original 4@2m (1+1), one complete statement under EACH category. No marks for headings. No repetition of points. Keep the same organisation named in part (a). Keep each response distinct and credit it only once. Complete original guidance: Lack of finance | Not enough volunteers/age profile of volunteers | Out of date premises/equipment"
+   },
+   {
+    "id": "opportunities",
+    "kind": "criterion",
+    "verbatim": "Complete a SWOT analysis of the voluntary group/organisation referred to in part (a)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Opportunities: A relevant statement for each. Original 4@2m (1+1), one complete statement under EACH category. No marks for headings. No repetition of points. Keep the same organisation named in part (a). Keep each response distinct and credit it only once. Complete original guidance: Internship schemes can be used to attract those who are unemployed | Provide additional services | Set up a charity shop | Social Media"
+   },
+   {
+    "id": "threats",
+    "kind": "criterion",
+    "verbatim": "Complete a SWOT analysis of the voluntary group/organisation referred to in part (a)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Threats: A relevant statement for each. Original 4@2m (1+1), one complete statement under EACH category. No marks for headings. No repetition of points. Keep the same organisation named in part (a). Keep each response distinct and credit it only once. Complete original guidance: Bad publicity (recent controversy around salaries and payments) | Recession | Immigration/no volunteers"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5di",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "business-support-voluntary-group",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(d)(i)",
+  "questionText": "Describe two ways a local business can support a voluntary group/organisation in its community.",
+  "stem": "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe two ways a local business can support a voluntary group/organisation in its community.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Original 2 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: By giving them funding/sponsorship/donation of goods – to enable them to offer a service. | Giving the use of facilities/equipment. To reduce costs. | By encouraging their own staff to volunteer with the group. To provide expertise/improve Corporate Social Responsibilty. | They can offer advice on management/finance/marketing. To supplement a lack of skills.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    28
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c5dii",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-2",
+  "conceptId": "business-reasons-voluntary-support",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q5(d)(ii)",
+  "questionText": "Analyse the reasons why a business might support a local voluntary group/organisation.",
+  "stem": "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Analyse the reasons why a business might support a local voluntary group/organisation",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Original 2 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: It is good public relations for their own business. Improves image/sales. | They have the satisfaction of helping in the community. It encourages social responsibility/feel valued/giving back to society. | There may be tax advantages. Donations to charity can be written off against tax expenses. | Personal experience – due to personal/family member/staff member engaging with the voluntary organisation. | To allow the voluntary organisation to put donation boxes/leaflets/posters/collection points on business premises.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    28
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c6a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "explained-entrepreneur-characteristics",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q6(a)",
+  "questionText": "State and explain four personal characteristics of an entrepreneur.",
+  "stem": "Enterprise",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "characteristics",
+    "kind": "criterion",
+    "verbatim": "State and explain four personal characteristics of an entrepreneur.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Original 4@1m each. Each must be explained for the mark. A bare trait name receives no mark; manually assess each complete distinct characteristic/explanation. All seven source traits remain; no explanation is invented. Keep each response distinct and credit it only once. Complete original guidance: Hard working | Innovative/creative | Risk taker | Communicator | Adaptible | Flexible | Self Confident",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    29
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c6b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "entrepreneurs-society-benefits",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q6(b)",
+  "questionText": "Discuss three benefits entrepreneurs bring to society.",
+  "stem": "Enterprise",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Discuss three benefits entrepreneurs bring to society.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original 3 responses, each 2 marks in printed 1-mark components.  Keep each response distinct and credit it only once. Complete original guidance: They create new or improved products – improve the variety of goods and services. | They create jobs and employment – provide an income. | They bring prosperity – as they will attract other businesses. | They improve the standard of living – as they pay wages/spin off industries. | They provide services in the local community – which might not otherwise be available/sponsorship of local events/work experience for students. | They generate more tax revenue for the government – so they can provide services. | Creates a spirit of entrepreneurship/community spirit in the area – encourages others to set up their own businesses. | Creates healthy competition – this brings down prices for the consumer.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    29
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c6c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "entrepreneur-startup-problems",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q6(c)",
+  "questionText": "Describe three possible problems that an entrepreneur may face when starting a business for the first time.",
+  "stem": "Enterprise",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Describe three possible problems that an entrepreneur may face when starting a business for the first time.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Heading",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Expansion",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 1 of 3. Original 3@1m (Heading) + 3@(1+1) expansion. Keep three complete problem/expansion profiles and all eight source models. Keep each response distinct and credit it only once. Complete original guidance: Finance: Availability of start up capital and cash flow until the business shows a profit. | Location: Finding the best location from which to operate/good infrastructure/proximity to markets. | Staffing: Finding the correct staff i.e. those who have the correct skills and work ethic. | Marketing: Competitors are a challenge as customers need to be convinced about a new product. | Legal issues: Around the start up of a company/planning/health and safety/ownership. | Product/Service: Getting it right/good quality sevice or product/to encourage sales/customer satisfaction. | Skill set: May not have all the required business management skills/need to develop skills. | Insufficient time: Due to existing job or commitment"
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "Describe three possible problems that an entrepreneur may face when starting a business for the first time.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Heading",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Expansion",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 2 of 3. Original 3@1m (Heading) + 3@(1+1) expansion. Keep three complete problem/expansion profiles and all eight source models. Keep each response distinct and credit it only once. Complete original guidance: Finance: Availability of start up capital and cash flow until the business shows a profit. | Location: Finding the best location from which to operate/good infrastructure/proximity to markets. | Staffing: Finding the correct staff i.e. those who have the correct skills and work ethic. | Marketing: Competitors are a challenge as customers need to be convinced about a new product. | Legal issues: Around the start up of a company/planning/health and safety/ownership. | Product/Service: Getting it right/good quality sevice or product/to encourage sales/customer satisfaction. | Skill set: May not have all the required business management skills/need to develop skills. | Insufficient time: Due to existing job or commitment"
+   },
+   {
+    "id": "profile-3",
+    "kind": "criterion",
+    "verbatim": "Describe three possible problems that an entrepreneur may face when starting a business for the first time.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Heading",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Expansion",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "contextNote": "Complete profile 3 of 3. Original 3@1m (Heading) + 3@(1+1) expansion. Keep three complete problem/expansion profiles and all eight source models. Keep each response distinct and credit it only once. Complete original guidance: Finance: Availability of start up capital and cash flow until the business shows a profit. | Location: Finding the best location from which to operate/good infrastructure/proximity to markets. | Staffing: Finding the correct staff i.e. those who have the correct skills and work ethic. | Marketing: Competitors are a challenge as customers need to be convinced about a new product. | Legal issues: Around the start up of a company/planning/health and safety/ownership. | Product/Service: Getting it right/good quality sevice or product/to encourage sales/customer satisfaction. | Skill set: May not have all the required business management skills/need to develop skills. | Insufficient time: Due to existing job or commitment"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2014-cl-c6d",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "entrepreneur-manager-role-comparison",
+  "level": "common",
+  "year": 2014,
+  "section": "C",
+  "questionRef": "2014 CL Section C Q6(d)",
+  "questionText": "Explain how the role of an entrepreneur differs from that of a manager in a business.",
+  "stem": "Enterprise",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "contrasts",
+    "kind": "criterion",
+    "verbatim": "Explain how the role of an entrepreneur differs from that of a manager in a business.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Original 3@2m (1+1). Each paired model reads Entrepreneur — Manager. Retain both complete cells for all six contrasts, including every wrapped line. Keep each response distinct and credit it only once. Complete original guidance: Comes up with an idea/sets up the business — Implements entrepeneur’s idea/runs the business on a daily basis | Owns the business — Is an employee of the business | Takes a risk — Manages the risk/takes no personal/monetary risk | May make a large profit or make a loss — Earns a set salary | May not have specific skills — Usually have a skill or qualification in management | Long term planning — Implements short term plan",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2014 marking scheme allocation."
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    31
+   ],
+   "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  }
 ]
