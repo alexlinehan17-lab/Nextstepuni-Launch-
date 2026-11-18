@@ -265,7 +265,11 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
           return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
         }
-        const core = ref.split(/\s+[—–-]\s+/)[0];
+        // As reconcile.py reads a Mathematics citation: the booklet is pinned by
+        // its review, so "— Deferred" and "(Project Maths)" before the address go.
+        const cited = subject === 'maths'
+          ? ref.replace(' — Deferred Q', ' Q').replace(' (Project Maths) Q', ' Q') : ref;
+        const core = cited.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
         return !m || !TAIL.test(core.slice(m[0].length));
       })
