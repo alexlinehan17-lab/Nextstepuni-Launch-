@@ -137,7 +137,8 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   const out: { id: string; ref: string }[] = [];
   // 'common' is the level a one-level subject ships under — LCVP's Link
   // Modules. Leaving it out of this walk reported the whole deck as missing.
-  for (const level of ['higher', 'ordinary', 'common']) {
+  // Mathematics also ships Foundation, and reconcile.py counts it.
+  for (const level of ['higher', 'ordinary', 'common', ...(subject === 'maths' ? ['foundation'] : [])]) {
     const path = resolve(
       __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
     let text: string;
@@ -162,7 +163,8 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // What CANNOT pass is a ref with no parseable address at all.
 // The question number is OPTIONAL: Religious Education's Sections B-J print
 // none, so its citations read "2023 HL Section E Q(b)(ii)".
-// CL is LCVP's common level, the third the SEC prints.
+// CL is LCVP's common level, the third the SEC prints; FL is Mathematics'
+// Foundation level.
 // History adds two things. Its two FIELDS OF STUDY are separate papers a
 // candidate chooses between, so the citation names one — "2021 HL Early
 // Modern ...". And its Sections 2 and 3 restart their numbering inside every
@@ -176,7 +178,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // the citation reads "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers
 // Questions 1-16 straight through Sections A and B and cites "2024 HL Q3(b)".
 const ADDRESS =
-  '^(\\d{4}) (HL|OL|CL)'
+  '^(\\d{4}) (HL|OL|CL|FL)'
   + '(?: (?:Later|Early) Modern)?'
   + '(?: Paper (\\d))?'
   + '(?: Topic \\d{1,2}\\((?:i{1,3}|iv|v)\\))?'
@@ -300,7 +302,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // The refs hash pins addresses; this pins everything else — questionText,
     // rows, figure bindings. A card gutted in place trips here.
     const h = createHash('sha256');
-    for (const level of ['higher', 'ordinary', 'common']) {
+    for (const level of ['higher', 'ordinary', 'common', ...(subject === 'maths' ? ['foundation'] : [])]) {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }

@@ -2082,9 +2082,6 @@ const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
     || card.id.includes('-deferred-'))
   .map(card => card.id));
-const frozenIds = (name: string, cards: readonly { id: string }[]) => {
-  const ids = cards.map(card => card.id);
-  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
 const russianFrozen = new Set([...russianOriginalCardIds.higher, ...russianOriginalCardIds.ordinary]);
 const russianAdditionIds = new Set(russianReviewedSources.map(card => card.id).filter(id => !russianFrozen.has(id)));
 const mathsFrozen = new Set([...mathsLaunchBaseline.higher, ...mathsLaunchBaseline.ordinary]);
@@ -2664,6 +2661,7 @@ const japaneseAdditionIds = new Set([japanese2010OrdinaryCensus, japanese2010Hig
 const lcvpAdditionIds = new Set<string>([...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'lcvp:common') return ids.filter(id => !lcvpAdditionIds.has(id));
   if (name.startsWith('russian:')) {
     const published = new Set(ids);

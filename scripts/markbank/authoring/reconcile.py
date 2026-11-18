@@ -41,7 +41,7 @@ import sys
 import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
+from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label, maths_booklet_label  # noqa: E402
 from ja_review_refs import reviewed_japanese_refs, bind_japanese_ref  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -52,7 +52,9 @@ EXCLUSIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exclusion
 HEAD = re.compile(
     # CL is the COMMON level: LCVP's Link Modules paper is sat at one level by
     # everyone and the SEC prints "Common Level" on its front cover.
-    r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL)'
+    # FL is Foundation: Mathematics cites "2025 FL Q1(a)" (Irish keeps its own
+    # manifest ledger and is not read through this grammar).
+    r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL|FL)'
     r'(?:\s+Paper\s+(?P<paper>\d))?'
     # History is examined in two FIELDS OF STUDY, printed as separate papers a
     # candidate chooses between, and the citation names which — without it the
@@ -168,7 +170,8 @@ def shipped_cards(subject):
         return shipped
 
     out = []
-    for level in ('higher', 'ordinary', 'common'):
+    # Mathematics ships a Foundation deck, and its ledger counts it.
+    for level in ('higher', 'ordinary', 'common') + (('foundation',) if subject == 'maths' else ()):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
@@ -655,13 +658,10 @@ def reviewed_maths_paper_keys():
     for path in glob.glob(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', '*.json')):
         with open(path) as source:
             review = json.load(source)
-        m = re.search(r'LP(\d{3})EV', review['paperFileid'])
-        if not m:
+        if not re.search(r'LP(\d{3})EV', review['paperFileid']):
             continue
-        component = m.group(1)
-        label = {'100': 'Paper 1', '200': 'Paper 2'}.get(component, component)
-        if review['year'] == 2014:
-            label = {'130': 'Paper 1', '230': 'Paper 2'}.get(component, label)
+        # One naming with the census: a deferred booklet is its own paper.
+        label = maths_booklet_label(review)
         for task in review['cards']:
             result[task['id']] = label
     return result
@@ -699,7 +699,12 @@ def reconcile_subject(subject, census=None):
     exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
     exact_japanese_refs = reviewed_japanese_refs() if subject == 'japanese' else {}
     for cid, refstr in coverage_refs:
-        ref = parse_ref(refstr)
+        # A Mathematics deferred card cites "2025 HL Paper 1 — Deferred Q1(a)",
+        # and a 2014 Foundation card "2014 FL Paper 1 (Project Maths) Q1(a)":
+        # the booklet is already pinned by reviewed_maths_paper_keys, so read
+        # the address after it whole.
+        ref = parse_ref(refstr.replace(' — Deferred Q', ' Q').replace(' (Project Maths) Q', ' Q')
+                        if subject == 'maths' else refstr)
         if subject == 'japanese':
             ref = bind_japanese_ref(cid, refstr, ref, exact_japanese_refs)
         if subject == 'chemistry':
@@ -875,7 +880,7 @@ def content_hash(subject):
     exactly that edit passing every mechanism."""
     import hashlib
     h = hashlib.sha256()
-    for level in ('higher', 'ordinary', 'common'):
+    for level in ('higher', 'ordinary', 'common') + (('foundation',) if subject == 'maths' else ()):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())

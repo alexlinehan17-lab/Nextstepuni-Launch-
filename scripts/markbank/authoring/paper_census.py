@@ -4626,6 +4626,8 @@ def census_subject(subject):
         papers.extend(census_spanish_deferred())
     if subject == 'german':
         papers.extend(census_german_deferred())
+    if subject == 'maths':
+        papers.extend(census_maths_reviewed_booklets())
     if subject == 'physics':
         papers.extend(census_physics_deferred())
     if subject == 'home-economics':
@@ -4900,6 +4902,64 @@ def census_home_economics_deferred():
         papers.append(dict(year=year, level=level, paper='Deferred', leafCount=len(leaves),
             leaves=[dict(key=list(k), label=key_label(k, 'home-economics'), text=texts.get(k, '')[:160]) for k in leaves],
             marksSum=None, marksQuestions=0, flags=continuity_flags(parts, texts, 'home-economics')))
+    return papers
+
+
+def maths_booklet_label(review):
+    """The census paper name of one reviewed Mathematics booklet.
+
+    Older sittings print a standard and a Project Maths booklet with the same
+    paper numbers, so a booklet is named by its SEC component; a deferred
+    booklet is its own paper ("Deferred Paper 1"), never June's. reconcile.py
+    keys every reviewed card by this same name (reviewed_maths_paper_keys).
+    """
+    component = re.search(r'LP(\d{3})EV', review['paperFileid']).group(1)
+    label = {'100': 'Paper 1', '200': 'Paper 2'}.get(component, component)
+    if review['year'] == 2014:
+        label = {'130': 'Paper 1', '230': 'Paper 2'}.get(component, label)
+    return f'Deferred {label}' if review.get('sitting') == 'deferred' else label
+
+
+def census_maths_reviewed_booklets():
+    """Mathematics Foundation and deferred booklets, read from the archive.
+
+    The June Higher and Ordinary booklets are linked under examiner-reports
+    and read by sittings(); Foundation (29 booklets, 2010-2026) and the
+    deferred sittings (16 booklets, 2022-2025) are read here, one reviewed
+    booklet at a time, straight from paper-trail-corpus, the way the Physics
+    and Home Economics deferred papers are. Each is a paper of its own, so no
+    ask lands on a June or Higher leaf with the same address. Only Mathematics
+    calls this; no other subject's census changes.
+    """
+    import glob as _glob
+    papers = []
+    for path in sorted(_glob.glob(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', '*.json'))):
+        with open(path, encoding='utf-8') as fh:
+            review = json.load(fh)
+        deferred = review.get('sitting') == 'deferred'
+        if review['level'] != 'foundation' and not deferred:
+            continue
+        level = {'higher': 'hl', 'ordinary': 'ol', 'foundation': 'fl'}[review['level']]
+        component = re.search(r'LP(\d{3})EV', review['paperFileid']).group(1)
+        folder = 'deferredexams' if deferred else 'exampapers'
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', folder, str(review['year']),
+                           review['paperFileid'].replace('-deferred.pdf', '.pdf'))
+        label = maths_booklet_label(review)
+        try:
+            parts, texts, _ = census_merged('maths', review['year'], level, component, files=[pdf])
+        except Exception as e:                       # noqa: BLE001
+            papers.append({'year': review['year'], 'level': level, 'paper': label,
+                           'error': f'{type(e).__name__}: {e}'})
+            continue
+        leaves = leaves_of(parts)
+        papers.append({
+            'year': review['year'], 'level': level, 'paper': label,
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'maths'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0,
+            'flags': continuity_flags(parts, texts, 'maths'),
+        })
     return papers
 
 
