@@ -225,7 +225,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two differences between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Excerpt 1 — Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 1 and the music” “Answers must refer to both excerpts and the same point of difference for full marks.” “Partially correct difference = 1m”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Flute and oboe playing theme — Woodwind playing theme","Slower — Faster","Pizzicato strings — No pizzicato strings/ Arco strings / tremolo strings","Theme — Different version of theme","No timpani — Timpani","Dynamics p and mf / Softer — Dynamics f and ff / Louder","Different keys (F minor) — Different keys (E minor)","No change of tempo — Gets faster / slower at end / changes tempo","No antiphonal dialogue — Antiphonal dialogue"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 1 — Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 1 and the music in excerpt 2” “Answers must refer to both excerpts and the same point of difference for full marks.” “Any valid difference” “Partially correct difference = 1m”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Flute and oboe playing theme — Woodwind playing theme","Slower — Faster","Pizzicato strings — No pizzicato strings/ Arco strings / tremolo strings","Theme — Different version of theme","No timpani — Timpani","Dynamics p and mf / Softer — Dynamics f and ff / Louder","Different keys (F minor) — Different keys (E minor)","No change of tempo — Gets faster / slower at end / changes tempo","No antiphonal dialogue — Antiphonal dialogue"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -271,7 +271,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify three features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Features of the music in Excerpt 3", marks: null, contextNote: "The scheme reads: “Up to 2m each for identification of each of three features of the music in Excerpt 3” “Partially correct answer = 1m”", openList: true, group: {"claimMax":3,"perOption":2,"options":["Minor tonality","dynamics f / loud","repeated notes","repetition","syncopation","(semiquaver) scalic movement / scales","semitone / chromatic motif","sequences","dotted rhythm","descending chromatic line/scale","antiphonal dialogue"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Features of the music in Excerpt 3", marks: null, contextNote: "The scheme reads: “Up to 2m each for identification of each of three features of the music in Excerpt 3” “Any valid answer” “Partially correct answer = 1m”", openList: true, group: {"claimMax":3,"perOption":2,"options":["Minor tonality","dynamics f / loud","repeated notes","repetition","syncopation","(semiquaver) scalic movement / scales","semitone / chromatic motif","sequences","dotted rhythm","descending chromatic line/scale","antiphonal dialogue"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -317,7 +317,7 @@ export const CARDS: SecCard[] = [
     questionText: "Insert the four missing notes at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Mark the first four notes from left to right.", marks: 4, contextNote: "The scheme reads: “Pitch 1 X 4.” “If the pitch is incorrect but the note moves in the correct direction from the preceding” The four notes are printed on a stave: see the scheme’s print below.", permittedMarks: [0,0.5,1,1.5,2,2.5,3,3.5,4] },
+    { id: "r-1", kind: "criterion", verbatim: "Mark the first four notes from left to right.", marks: 4, contextNote: "The scheme reads: “Pitch 1 X 4.” “If the pitch is incorrect but the note moves in the correct direction from the preceding note allow 0.5” The scheme prints the four notes on a stave: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5,3,3.5,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -519,7 +519,7 @@ export const CARDS: SecCard[] = [
     questionText: "Insert the missing time signatures at X and Y on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Correct time signature at X", marks: 1, contextNote: "The scheme prints this time signature in music notation (see its print below). The scheme reads: “Allow 4/8”" },
+    { id: "r-1", kind: "criterion", verbatim: "Correct time signature at X", marks: 1, contextNote: "The scheme prints this time signature in music notation: its print is shown on this card. The scheme reads: “Allow 4/8”" },
     { id: "r-2", kind: "point", verbatim: "Correct time signature at Y = 5/8", marks: 1 },
     ],
     sourceMaterial: {
@@ -630,7 +630,7 @@ export const CARDS: SecCard[] = [
     questionText: "A compositional technique used in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "canon", marks: 1, contextNote: "The scheme reads: “1m for correct identification of the compositional technique, canon, used in”" },
+    { id: "r-1", kind: "point", verbatim: "canon", marks: 1, contextNote: "The scheme reads: “1m for correct identification of the compositional technique, canon, used in the excerpt”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -676,7 +676,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the compositional technique which you have identified above as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3m for a description of the correct compositional technique identified” “Partially correct description = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3m for a description of the correct compositional technique identified with reference to the music in the excerpt” “Partially correct description = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -722,7 +722,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tick three boxes in bars 2–4 where a chord change is heard.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "1m for each chord change correctly identified in bars 2, 3 and 4", marks: 3, contextNote: "The ticks are printed on the score: see the scheme’s print below.", permittedMarks: [0,1,2,3] },
+    { id: "r-1", kind: "criterion", verbatim: "1m for each chord change correctly identified in bars 2, 3 and 4", marks: 3, contextNote: "The scheme marks the chord changes with ticks on the score: its print is shown on this card.", permittedMarks: [0,1,2,3] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -786,7 +786,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two features of the vocal music heard in lines 1–5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Features of the vocal music", marks: null, contextNote: "The scheme reads: “Any valid answer”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Falsetto","repeated notes","dialogue","voices 5th apart","overlapping","a capella","chromatic","block chords","syllabic","descending chords","harmony"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Features of the vocal music", marks: null, contextNote: "The scheme reads: “1m each for identification of each of two features of the vocal music in lines 1 – 5 of the excerpt” “Any valid answer”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Falsetto","repeated notes","dialogue","voices 5th apart","overlapping","a capella","chromatic","block chords","syllabic","descending chords","harmony"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -833,7 +833,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A recording technique", marks: null, contextNote: "The scheme reads: “1m for correct identification of a recording technique used in the excerpt”", openList: true, group: {"claimMax":1,"perOption":1,"options":["Multitracking","overdubbing","panning","reverb"]} },
-    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2m for a description of the recording technique identified with reference to the” “Partially correct description = 1m”", permittedMarks: [0,1,2], unprinted: true },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2m for a description of the recording technique identified with reference to the music in the excerpt” “Partially correct description = 1m”", permittedMarks: [0,1,2], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -879,7 +879,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2m for describing how the words ‘for me’ are emphasized in the music towards” “Partially correct description = 1m”", permittedMarks: [0,1,2], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2m for describing how the words ‘for me’ are emphasized in the music towards the end of the excerpt.” “Partially correct description = 1m”", permittedMarks: [0,1,2], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -971,7 +971,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify a feature of the music played by the continuo in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A feature of the continuo", marks: null, contextNote: "The scheme reads: “Up to 2m for a correct identification of a feature of the music played by the” “Partially correct answer = 1m”", openList: true, group: {"claimMax":1,"perOption":2,"options":["8ve leap","figured bass","the ground bass / chaconne / ostinato theme","a descending chromatic pattern","theme is repeated with a slight change in the ending","perfect cadence","repeated notes","stepwise/scalic movement"]} },
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the continuo", marks: null, contextNote: "The scheme reads: “Up to 2m for a correct identification of a feature of the music played by the continuo in the excerpt” “Any valid answer” “Partially correct answer = 1m”", openList: true, group: {"claimMax":1,"perOption":2,"options":["8ve leap","figured bass","the ground bass / chaconne / ostinato theme","a descending chromatic pattern","theme is repeated with a slight change in the ending","perfect cadence","repeated notes","stepwise/scalic movement"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1112,7 +1112,7 @@ export const CARDS: SecCard[] = [
     questionText: "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie with reference to the music in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Tierce de Picardie occurs when a piece in the minor key ends on a major tonic chord. This piece is in G Minor and ends in G major.", marks: 3, contextNote: "The scheme gives this “For example:”. The scheme reads: “Up to 3m for a description of Tierce de Picardie with reference to the music in the” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3] },
+    { id: "r-1", kind: "criterion", verbatim: "Tierce de Picardie occurs when a piece in the minor key ends on a major tonic chord. This piece is in G Minor and ends in G major.", marks: 3, contextNote: "The scheme gives this “For example:”. The scheme reads: “Up to 3m for a description of Tierce de Picardie with reference to the music in the excerpt” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1297,7 +1297,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Slip Jig", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Give its time signature", marks: 1, contextNote: "The scheme prints the time signature in music notation: see its print below.", ask: true },
+    { id: "r-2", kind: "point", verbatim: "Give its time signature", marks: 1, contextNote: "The scheme prints the time signature in music notation: its print is shown on this card.", ask: true },
     { id: "r-3", kind: "criterion", verbatim: "Any correct bar of slip jig rhythm", marks: 2 },
     ],
     sourceMaterial: {
@@ -1981,7 +1981,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the accompaniment in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3m for the quality of the description of the accompaniment in the” “Any valid answer” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3m for the quality of the description of the accompaniment in the excerpt.” “Any valid answer” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2027,7 +2027,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3 marks for the quality of the description of the texture of the music in” “A correct identification of the texture without a description = 1” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3 marks for the quality of the description of the texture of the music in the excerpt.” “A correct identification of the texture without a description = 1” “Partially correct answer = 1m/2m”", permittedMarks: [0,1,2,3], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2073,7 +2073,7 @@ export const CARDS: SecCard[] = [
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The missing notes at X on the score are", marks: 2, contextNote: "The scheme prints its answer in music notation: see its print below.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "The missing notes at X on the score are", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2137,7 +2137,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the key of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Identify the key of the music in this excerpt.", marks: 1, contextNote: "The scheme prints its answer in music notation: see its print below.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "Identify the key of the music in this excerpt.", marks: 1, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2284,7 +2284,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two differences between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Excerpt 4 — Excerpt 5", marks: null, contextNote: "The scheme reads: “Answers must refer to both excerpts and the same point of difference for full” “Any valid answer” “Partially correct answer = 1m”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Introduction — No introduction","No choir — Choir","Softer — Louder","No vocal harmony — Vocal harmony","No postlude — (Choir) postlude","Lower register — Higher register"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 4 — Excerpt 5", marks: null, contextNote: "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 4 and the music in excerpt 5” “Answers must refer to both excerpts and the same point of difference for full marks.” “Any valid answer” “Partially correct answer = 1m”", openList: true, group: {"claimMax":2,"perOption":2,"options":["Introduction — No introduction","No choir — Choir","Softer — Louder","No vocal harmony — Vocal harmony","No postlude — (Choir) postlude","Lower register — Higher register"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

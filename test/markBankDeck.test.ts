@@ -595,10 +595,16 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
+    const { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        // Music is sat in separate booklets; a card's section names its booklet
+        // by the Paper Trail label, as build-deck's MUSIC_BOOKLET does.
+        if (c.subjectId === 'music') {
+          const label = ({ L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' } as Record<string, string>)[c.section];
+          return !label || c.paperFileid !== resolveCompanionFileid('music', c.year, c.level, label);
+        }
         // Irish prints two papers a sitting, in Irish: a deferred card's paper is the one its section names in the
         // year's deferred entry ("Deferred · Paper One" for section 1).
         if (deferredCard(c) && c.subjectId === 'irish') {

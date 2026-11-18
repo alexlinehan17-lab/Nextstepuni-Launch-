@@ -274,7 +274,7 @@
     "verbatim": "Excerpt 1 — Excerpt 2",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 1 and the music” “Answers must refer to both excerpts and the same point of difference for full marks.” “Partially correct difference = 1m”",
+    "contextNote": "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 1 and the music in excerpt 2” “Answers must refer to both excerpts and the same point of difference for full marks.” “Any valid difference” “Partially correct difference = 1m”",
     "group": {
      "claimMax": 2,
      "perOption": 2,
@@ -347,7 +347,7 @@
     "verbatim": "Features of the music in Excerpt 3",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme reads: “Up to 2m each for identification of each of three features of the music in Excerpt 3” “Partially correct answer = 1m”",
+    "contextNote": "The scheme reads: “Up to 2m each for identification of each of three features of the music in Excerpt 3” “Any valid answer” “Partially correct answer = 1m”",
     "group": {
      "claimMax": 3,
      "perOption": 2,
@@ -432,7 +432,7 @@
      3.5,
      4
     ],
-    "contextNote": "The scheme reads: “Pitch 1 X 4.” “If the pitch is incorrect but the note moves in the correct direction from the preceding” The four notes are printed on a stave: see the scheme’s print below."
+    "contextNote": "The scheme reads: “Pitch 1 X 4.” “If the pitch is incorrect but the note moves in the correct direction from the preceding note allow 0.5” The scheme prints the four notes on a stave: its print is shown on this card."
    }
   ],
   "tariffModel": {
@@ -669,7 +669,7 @@
     "kind": "criterion",
     "verbatim": "Correct time signature at X",
     "marks": 1,
-    "contextNote": "The scheme prints this time signature in music notation (see its print below). The scheme reads: “Allow 4/8”"
+    "contextNote": "The scheme prints this time signature in music notation: its print is shown on this card. The scheme reads: “Allow 4/8”"
    },
    {
     "id": "r-2",
@@ -791,7 +791,7 @@
     "kind": "point",
     "verbatim": "canon",
     "marks": 1,
-    "contextNote": "The scheme reads: “1m for correct identification of the compositional technique, canon, used in”"
+    "contextNote": "The scheme reads: “1m for correct identification of the compositional technique, canon, used in the excerpt”"
    }
   ],
   "tariffModel": {
@@ -855,7 +855,7 @@
      3
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Up to 3m for a description of the correct compositional technique identified” “Partially correct description = 1m/2m”"
+    "contextNote": "The scheme reads: “Up to 3m for a description of the correct compositional technique identified with reference to the music in the excerpt” “Partially correct description = 1m/2m”"
    }
   ],
   "tariffModel": {
@@ -918,7 +918,7 @@
      2,
      3
     ],
-    "contextNote": "The ticks are printed on the score: see the scheme’s print below."
+    "contextNote": "The scheme marks the chord changes with ticks on the score: its print is shown on this card."
    }
   ],
   "tariffModel": {
@@ -979,7 +979,7 @@
     "verbatim": "Features of the vocal music",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme reads: “Any valid answer”",
+    "contextNote": "The scheme reads: “1m each for identification of each of two features of the vocal music in lines 1 – 5 of the excerpt” “Any valid answer”",
     "group": {
      "claimMax": 2,
      "perOption": 1,
@@ -1077,7 +1077,7 @@
      2
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Up to 2m for a description of the recording technique identified with reference to the” “Partially correct description = 1m”"
+    "contextNote": "The scheme reads: “Up to 2m for a description of the recording technique identified with reference to the music in the excerpt” “Partially correct description = 1m”"
    }
   ],
   "tariffModel": {
@@ -1140,7 +1140,7 @@
      2
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Up to 2m for describing how the words ‘for me’ are emphasized in the music towards” “Partially correct description = 1m”"
+    "contextNote": "The scheme reads: “Up to 2m for describing how the words ‘for me’ are emphasized in the music towards the end of the excerpt.” “Partially correct description = 1m”"
    }
   ],
   "tariffModel": {
@@ -1254,7 +1254,7 @@
     "verbatim": "A feature of the continuo",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme reads: “Up to 2m for a correct identification of a feature of the music played by the” “Partially correct answer = 1m”",
+    "contextNote": "The scheme reads: “Up to 2m for a correct identification of a feature of the music played by the continuo in the excerpt” “Any valid answer” “Partially correct answer = 1m”",
     "group": {
      "claimMax": 1,
      "perOption": 2,
@@ -1468,7 +1468,7 @@
      2,
      3
     ],
-    "contextNote": "The scheme gives this “For example:”. The scheme reads: “Up to 3m for a description of Tierce de Picardie with reference to the music in the” “Partially correct answer = 1m/2m”"
+    "contextNote": "The scheme gives this “For example:”. The scheme reads: “Up to 3m for a description of Tierce de Picardie with reference to the music in the excerpt” “Partially correct answer = 1m/2m”"
    }
   ],
   "tariffModel": {
@@ -1711,7 +1711,7 @@
     "verbatim": "Give its time signature",
     "marks": 1,
     "ask": true,
-    "contextNote": "The scheme prints the time signature in music notation: see its print below."
+    "contextNote": "The scheme prints the time signature in music notation: its print is shown on this card."
    },
    {
     "id": "r-3",
@@ -2640,7 +2640,7 @@
      3
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Up to 3m for the quality of the description of the accompaniment in the” “Any valid answer” “Partially correct answer = 1m/2m”"
+    "contextNote": "The scheme reads: “Up to 3m for the quality of the description of the accompaniment in the excerpt.” “Any valid answer” “Partially correct answer = 1m/2m”"
    }
   ],
   "tariffModel": {
@@ -2704,7 +2704,7 @@
      3
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Up to 3 marks for the quality of the description of the texture of the music in” “A correct identification of the texture without a description = 1” “Partially correct answer = 1m/2m”"
+    "contextNote": "The scheme reads: “Up to 3 marks for the quality of the description of the texture of the music in the excerpt.” “A correct identification of the texture without a description = 1” “Partially correct answer = 1m/2m”"
    }
   ],
   "tariffModel": {
@@ -2762,7 +2762,7 @@
     "verbatim": "The missing notes at X on the score are",
     "marks": 2,
     "ask": true,
-    "contextNote": "The scheme prints its answer in music notation: see its print below."
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
    }
   ],
   "tariffModel": {
@@ -2823,7 +2823,7 @@
     "verbatim": "Identify the key of the music in this excerpt.",
     "marks": 1,
     "ask": true,
-    "contextNote": "The scheme prints its answer in music notation: see its print below."
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
    }
   ],
   "tariffModel": {
@@ -3010,7 +3010,7 @@
     "verbatim": "Excerpt 4 — Excerpt 5",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme reads: “Answers must refer to both excerpts and the same point of difference for full” “Any valid answer” “Partially correct answer = 1m”",
+    "contextNote": "The scheme reads: “Up to 2m for each of two valid differences between the music in excerpt 4 and the music in excerpt 5” “Answers must refer to both excerpts and the same point of difference for full marks.” “Any valid answer” “Partially correct answer = 1m”",
     "group": {
      "claimMax": 2,
      "perOption": 2,

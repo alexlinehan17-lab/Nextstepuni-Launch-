@@ -153,17 +153,17 @@ def listening_rows(r):
     RULES = {
         'Q1(h)': (['Up to 4m for a correct description of the texture of the music heard in the excerpt.',
                    'Partially correct answer = 1m/2m/3m'], [1, 2, 3]),
-        'Q2(e)(ii)': (['Up to 3m for a description of the correct compositional technique identified',
+        'Q2(e)(ii)': (['Up to 3m for a description of the correct compositional technique identified with reference to the music in the excerpt',
                        'Partially correct description = 1m/2m'], [1, 2]),
-        'Q3(d)': (['Up to 2m for describing how the words ‘for me’ are emphasized in the music towards',
+        'Q3(d)': (['Up to 2m for describing how the words ‘for me’ are emphasized in the music towards the end of the excerpt.',
                    'Partially correct description = 1m'], [1]),
         'Q4(c)': (['Up to 2m for a description of a feature of Baroque music as heard in the excerpt',
                    'Partially correct answer = 1m'], [1]),
         'Q5 A(f)': (['Up to 4 marks for correct reference to the fusion in the excerpt',
                      'Partially correct answer = 1m/2m/3m'], [1, 2, 3]),
-        'Q6(b)': (['Up to 3m for the quality of the description of the accompaniment in the', 'Any valid answer',
+        'Q6(b)': (['Up to 3m for the quality of the description of the accompaniment in the excerpt.', 'Any valid answer',
                    'Partially correct answer = 1m/2m'], [1, 2]),
-        'Q6(c)': (['Up to 3 marks for the quality of the description of the texture of the music in',
+        'Q6(c)': (['Up to 3 marks for the quality of the description of the texture of the music in the excerpt.',
                    'A correct identification of the texture without a description = 1',
                    'Partially correct answer = 1m/2m'], [1, 2]),
     }
@@ -175,19 +175,20 @@ def listening_rows(r):
                  'contextNote': quote(*lines)}], {'kind': 'fixed'}
     # Example menus: "For example: ... Any valid answer".
     MENUS = {
-        'Q1(e)': (2, 2, True, ['Up to 2m for each of two valid differences between the music in excerpt 1 and the music',
+        'Q1(e)': (2, 2, True, ['Up to 2m for each of two valid differences between the music in excerpt 1 and the music in excerpt 2',
                                'Answers must refer to both excerpts and the same point of difference for full marks.',
-                               'Partially correct difference = 1m'], 'Excerpt 1 — Excerpt 2'),
+                               'Any valid difference', 'Partially correct difference = 1m'], 'Excerpt 1 — Excerpt 2'),
         'Q1(f)': (3, 2, True, ['Up to 2m each for identification of each of three features of the music in Excerpt 3',
-                               'Partially correct answer = 1m'], 'Features of the music in Excerpt 3'),
-        'Q3(b)': (2, 1, True, ['Any valid answer'], 'Features of the vocal music'),
-        'Q4(b)': (1, 2, True, ['Up to 2m for a correct identification of a feature of the music played by the',
-                               'Partially correct answer = 1m'], 'A feature of the continuo'),
+                               'Any valid answer', 'Partially correct answer = 1m'], 'Features of the music in Excerpt 3'),
+        'Q3(b)': (2, 1, True, ['1m each for identification of each of two features of the vocal music in lines 1 – 5 of the excerpt', 'Any valid answer'], 'Features of the vocal music'),
+        'Q4(b)': (1, 2, True, ['Up to 2m for a correct identification of a feature of the music played by the continuo in the excerpt',
+                               'Any valid answer', 'Partially correct answer = 1m'], 'A feature of the continuo'),
         'Q5 A(b)': (2, 1, True, ['1m for each of two features of sean-nós singing heard in the excerpt'], 'Features of sean-nós singing'),
         'Q5 A(e)': (2, 1, False, ['Any 2 correct instruments'], 'Instruments'),
         'Q6(g)': (2, 2, True, ['Up to 2m each for any two features of the vocal music in the excerpt.',
                                'Partially correct answer = 1m'], 'Features of the vocal music'),
-        'Q6(h)': (2, 2, True, ['Answers must refer to both excerpts and the same point of difference for full',
+        'Q6(h)': (2, 2, True, ['Up to 2m for each of two valid differences between the music in excerpt 4 and the music in excerpt 5',
+                               'Answers must refer to both excerpts and the same point of difference for full marks.',
                                'Any valid answer', 'Partially correct answer = 1m'], 'Excerpt 4 — Excerpt 5'),
     }
     if a in MENUS:
@@ -205,40 +206,40 @@ def listening_rows(r):
                  'group': {'claimMax': 1, 'perOption': 1, 'options': [x['text'] for x in ans]}},
                 {'id': 'r-2', 'kind': 'criterion', 'verbatim': UNPRINTED, 'marks': 2, 'permittedMarks': [0, 1, 2],
                  'unprinted': True,
-                 'contextNote': quote('Up to 2m for a description of the recording technique identified with reference to the',
+                 'contextNote': quote('Up to 2m for a description of the recording technique identified with reference to the music in the excerpt',
                                       'Partially correct description = 1m')}], {'kind': 'fixed'}
     # Notation and music-font answers: the scheme's print beside its words.
     if a == 'Q1(g)':
         return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': scheme('Mark the first four notes from left to right.'),
                  'marks': 4, 'permittedMarks': [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
-                 'contextNote': quote('Pitch 1 X 4.', 'If the pitch is incorrect but the note moves in the correct direction from the preceding')
-                 + ' The four notes are printed on a stave: see the scheme’s print below.'}], {'kind': 'fixed'}
+                 'contextNote': quote('Pitch 1 X 4.', 'If the pitch is incorrect but the note moves in the correct direction from the preceding note allow 0.5')
+                 + ' The scheme prints the four notes on a stave: its print is shown on this card.'}], {'kind': 'fixed'}
     if a == 'Q3(a)':
         return [{'id': 'r-1', 'kind': 'criterion',
                  'verbatim': scheme('1m for each chord change correctly identified in bars 2, 3 and 4'),
                  'marks': 3, 'permittedMarks': [0, 1, 2, 3],
-                 'contextNote': 'The ticks are printed on the score: see the scheme’s print below.'}], {'kind': 'fixed'}
+                 'contextNote': 'The scheme marks the chord changes with ticks on the score: its print is shown on this card.'}], {'kind': 'fixed'}
     if a == 'Q2(c)':
         return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': scheme('Correct time signature at X'), 'marks': 1,
-                 'contextNote': 'The scheme prints this time signature in music notation (see its print below). '
+                 'contextNote': 'The scheme prints this time signature in music notation: its print is shown on this card. '
                                 + quote('Allow 4/8')},
                 {'id': 'r-2', 'kind': 'point', 'verbatim': scheme('Correct time signature at Y = 5/8'), 'marks': 1}], {'kind': 'fixed'}
     if a == 'Q5 A(d)':
         return [{'id': 'r-1', 'kind': 'point', 'verbatim': scheme('Slip Jig'), 'marks': 1},
                 {'id': 'r-2', 'kind': 'point', 'verbatim': 'Give its time signature', 'marks': 1, 'ask': True,
-                 'contextNote': 'The scheme prints the time signature in music notation: see its print below.'},
+                 'contextNote': 'The scheme prints the time signature in music notation: its print is shown on this card.'},
                 {'id': 'r-3', 'kind': 'criterion', 'verbatim': scheme('Any correct bar of slip jig rhythm'), 'marks': 2}], {'kind': 'fixed'}
     if a in ('Q6(d)', 'Q6(e)'):
         return [{'id': 'r-1', 'kind': 'point', 'verbatim': r['questionText'], 'marks': r['schemeMarks'], 'ask': True,
-                 'contextNote': 'The scheme prints its answer in music notation: see its print below.'}], {'kind': 'fixed'}
+                 'contextNote': 'The scheme prints its answer in music notation: its print is shown on this card.'}], {'kind': 'fixed'}
     if a == 'Q2(e)(i)':
         return [{'id': 'r-1', 'kind': 'point', 'verbatim': scheme('canon'), 'marks': 1,
-                 'contextNote': quote('1m for correct identification of the compositional technique, canon, used in')}], {'kind': 'fixed'}
+                 'contextNote': quote('1m for correct identification of the compositional technique, canon, used in the excerpt')}], {'kind': 'fixed'}
     if a == 'Q4(e)':
         return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': scheme(ans[0]['text']), 'marks': 3,
                  'permittedMarks': [0, 1, 2, 3],
                  'contextNote': 'The scheme gives this “For example:”. '
-                                + quote('Up to 3m for a description of Tierce de Picardie with reference to the music in the',
+                                + quote('Up to 3m for a description of Tierce de Picardie with reference to the music in the excerpt',
                                         'Partially correct answer = 1m/2m')}], {'kind': 'fixed'}
     if a == 'Q4(d)':
         return [{'id': f'r-{i + 1}', 'kind': 'point', 'verbatim': scheme(x['text']), 'marks': 0.5} for i, x in enumerate(ans)] , {'kind': 'fixed'}
