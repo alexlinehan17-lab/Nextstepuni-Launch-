@@ -86,7 +86,7 @@ export async function runAtlasModelChecks(): Promise<CheckResult> {
       for (const lang of ['ev', 'iv'] as PaperLang[]) { paper = topicsForPaper(atlas, card.year, card.level as PaperLevel, lang, a.fileid); if (paper) break; }
       let headings: string[]; let n: string; let identity: string;
       if (a.peTask) {
-        const task = physicalEducationTask({ subjectId: atlas, level: card.level as PaperLevel, year: card.year, lang: 'ev', fileid: a.fileid, paperKey: 'single', n: String(a.cands[0]) });
+        const task = physicalEducationTask({ subjectId: atlas, level: card.level as PaperLevel, year: card.year, lang: 'ev', fileid: a.fileid, n: String(a.cands[0]) });
         if (!task) { miss('no-atlas-question', card.id); continue; }
         n = task.n; headings = browseTopicIdsForQuestion(task, { n: task.n, primary: '' });
         identity = logicalQuestionIdentity({ subjectId: atlas, level: task.level, year: task.year, paperKey: task.paperKey, fileid: task.fileid, n: task.n });
