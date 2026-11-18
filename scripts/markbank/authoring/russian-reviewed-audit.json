@@ -5383,6 +5383,166 @@
         },
         "resourceValidation": "One guarded stage at a time, two normal-pressure samples30seconds apart,2GiB start/1GiB stop, Node2048 and one Vitest worker. Passed logs retained; no full local app types/build were run for this checkpoint."
       }
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "reviewedAt": "2026-11-13",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "sourceHashes": {
+        "paper": {
+          "pages": 16,
+          "sha256": "cc1ccca7e039ac3d38af858cdf842bd549c42183c392684f368e67cc952cca22"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "b635aff4288709c732cc1cdc18e891ab13517d8ee21643f8578ff363266b5bf4"
+        },
+        "scheme": {
+          "pages": 28,
+          "sha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41"
+        }
+      },
+      "independentSourceAsks": 41,
+      "independentPracticeTasks": 41,
+      "writtenTasks": 21,
+      "listeningTasks": 20,
+      "sourceReviewedSupportedTasks": 41,
+      "publishedPracticeCards": 41,
+      "publishedListeningPracticeCards": 20,
+      "numericallySupportedPracticeCards": 40,
+      "confidenceOnlyPracticeCards": 1,
+      "printedWrittenMarks": 170,
+      "printedListeningMarks": 80,
+      "selectedExaminationMarks": 250,
+      "allPracticeAlternativeMarks": 320,
+      "publishedPracticeMarks": 290,
+      "confidenceOnlyPrintedMarks": 30,
+      "newCards": 24,
+      "correctedCards": 17,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All 41 original asks are represented by complete tasks. The essay retains its unresolved literal deduction as confidence review. Source coverage is distinct from numerical resolution.",
+      "diagnosedReaderIssues": [
+        "Independent 52-page visual census replaces historical 43 with 41 asks: three guided-writing genre headings share one complete 40-mark choice containing all six alternatives. The repeated Irish LA2(i) label below OR is separately disclosed and does not create a task.",
+        "All 17 original card identities and primary topics are retained. Four old 8-mark summaries are explicitly corrected to the published 10 each. Original Q2.1 heading50 and direction40 labels remain visible with the scheme40 boundary.",
+        "The one 11-классницу school-year fact has two literal accepted scheme wordings under one detail quota. Age and city are independent. C1Q3(iii) retains one required advantage and one required disadvantage.",
+        "Music keeps all22 printed entries and21 distinct credit opportunities under choose10; синтезатор entries5/10 earn once. YouTube receives0 in either language. Primary russian-2-0 stays, with reviewed meaning/leisure secondary topics.",
+        "Summaries keep complete main/secondary pools, four manual0/1/2 details plus discretion0/1/2, literal intelligible-partial rule and p7 discretion language exception. Incomplete response caps discretion1; missing either required certain/uncertain aspect triggers the same cap without invented content allocations. Irish permission and exact English-quality/loanword rules remain visible.",
+        "Five infinitives preserve both language-permission and English-translation-zero clauses without automatic language penalty. Grammar has13 bracketed prompts/15 priced native forms; first past/present slash pair is one alternative response.",
+        "Essay30 keeps all five choices and complete pages13–15, with literal Deduct1/2marks unresolved. Guided writing retains six choices, C15/E15/TC10, explicit2 soft-sign deduction and literal LowerA prose/table overlap at11 without descriptor reassignment.",
+        "All20 listening asks retain explicit local tariffs and Russian/excess-material acceptance. Boat1 stays under the one-answer quota, Economics1 remains exclusive to its full education detail, and plus-linked bullets remain complete2-mark responses. The two-detail crew prompt retains the explicit scheme1x4 rather than an invented2+2 split."
+      ],
+      "replacedHistoricalExclusionCount": 26,
+      "validation": {
+        "status": "Draft original/source/canonical gates passed; generated runtime, preservation, required gates and deterministic cycles pending.",
+        "sourceQuoteGate": {
+          "cards": 41,
+          "slices": 351,
+          "passed": true
+        },
+        "draftOriginalTests": {
+          "cases": 16,
+          "passed": true
+        },
+        "canonicalTopics": {
+          "status": "Passed actual year-aware canonical registry and runtime tariff validator",
+          "specificationId": "russian:current",
+          "year": 2021,
+          "level": "higher",
+          "cards": 41,
+          "retainedOriginalPrimaries": 17,
+          "sourceBoundListeningTopics": 20,
+          "rejectedMutations": [
+            "unknown topic",
+            "duplicate topic",
+            "wrong year",
+            "wrong level",
+            "lost original primary",
+            "wrong listening topic",
+            "missing source question",
+            "unknown source question",
+            "duplicate source question",
+            "missing approved secondary",
+            "unsupported tariff"
+          ]
+        },
+        "sourceCoverageComplete": false,
+        "sourceCheckpointPassed": false,
+        "sittingCompletion": false,
+        "heldNumericTasks": [
+          {
+            "id": "ru-2021-hl-se",
+            "questionRef": "2021 HL Section SE Q2",
+            "printedMarks": 30,
+            "reason": "Literal soft-sign deduction1/2 is unresolved; complete five-choice confidence task."
+          }
+        ],
+        "appTypes": "pending root combined integration",
+        "build": "pending root combined integration",
+        "browserQA": "coordinator-owned; not claimed",
+        "rootIntegrationRequirements": [
+          "Actual essay confidence saves0/0 in both current layouts, with confidence labels and no suggested numerical maximum.",
+          "Exclude the confidence essay from numeric quiz selection.",
+          "Retain all prior reviewed objects, original199 identities and all non-Russian Atlas records; retain old2021 anchors under independently reviewed corrections."
+        ]
+      }
     }
   ]
 }
