@@ -4969,10 +4969,10 @@ def census_physics_deferred():
     """Read deferred PDFs independently; never reuse main-sitting leaves."""
     import hashlib
     from types import SimpleNamespace
-    from phys_sources import source_path
     path = os.path.join(ROOT, 'scripts/markbank/authored/physics-review-audit.json')
     if not os.path.exists(path):
         return []                       # no reviewed deferred Physics in this tree
+    from phys_sources import source_path
     with open(path, encoding='utf-8') as fh:
         audit = json.load(fh)
     papers = []
