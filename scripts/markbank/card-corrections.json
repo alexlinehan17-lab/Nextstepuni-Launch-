@@ -456,6 +456,31 @@
    "reason": "Never shipped: the figureless twin of phys-2024-ol-q6-c-fig, which carries the reviewed task and the diagram.",
    "drop": true,
    "replacementId": "phys-2024-ol-q6-c-fig"
+  },
+  "phys-2021-ol-q6-i": {
+   "reason": "Never shipped: the figureless twin of phys-2021-ol-q6i-fig, which carries the reviewed task and the X-ray tube photograph.",
+   "drop": true,
+   "replacementId": "phys-2021-ol-q6i-fig"
+  },
+  "phys-2021-ol-q9-iii": {
+   "reason": "Never shipped: the figureless twin of phys-2021-ol-q9iii-fig, which carries the reviewed task and the rheostat photograph.",
+   "drop": true,
+   "replacementId": "phys-2021-ol-q9iii-fig"
+  },
+  "phys-2021-ol-q9ix-fig": {
+   "reason": "Never shipped: a figure twin of phys-2021-ol-q9-ix, which carries the reviewed task and the labelled plug.",
+   "drop": true,
+   "replacementId": "phys-2021-ol-q9-ix"
+  },
+  "phys-2021-ol-q14d-iii-fig": {
+   "reason": "Never shipped: a figure twin of phys-2021-ol-q14d-iii, which carries the reviewed task and the sonometer photograph.",
+   "drop": true,
+   "replacementId": "phys-2021-ol-q14d-iii"
+  },
+  "phys-2021-ol-q14d-iv-v": {
+   "reason": "Bundled Q14(d)(iv) and (v), which the scheme prices apart and which are carded on their own (phys-2021-ol-q14d-iv-fig, phys-2021-ol-q14d-v-fig).",
+   "drop": true,
+   "replacementId": "phys-2021-ol-q14d-iv-fig"
   }
  },
  "business": {

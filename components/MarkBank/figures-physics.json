@@ -220,6 +220,538 @@
    222
   ]
  },
+ "physics-2021-ol-q10iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-question.png",
+  "md5": "dcb5d630540cc1a66a4cc68e462d8548",
+  "alt": "The printed question: (iv) Copy the ray diagram below into your answerbook and complete it to show how a real image is formed in a concave mirror. Below it, an upright arrow labelled Object stands on a dashed principal axis, a point f is marked on the axis, and a curved concave mirror is drawn on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   224,
+   545,
+   420
+  ]
+ },
+ "physics-2021-ol-q10iv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-scheme.png",
+  "md5": "6a30fb84ac9216809dfdc226a30e101d",
+  "alt": "The marking scheme's ray diagram: from the top of the Object arrow a blue ray runs parallel to the axis to the mirror and is reflected back through the point f, and a red ray passes through f to the mirror and is reflected back parallel to the axis; they meet below the axis at the tip of an inverted blue arrow labelled Image.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   250,
+   449,
+   482,
+   536
+  ],
+  "maskedFurniture": [
+   [
+    250,
+    449,
+    274,
+    491
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q11-garden": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q11-garden.png",
+  "md5": "c992ecec9c5778243bfb3be95d4b69c1",
+  "alt": "Diagram of a rectangular garden drawn as a grey rectangle, a dashed arrow above it marked 6 m and a dashed arrow beside it marked 9 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q11(ix)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   438,
+   318,
+   540,
+   432
+  ]
+ },
+ "physics-2021-ol-q12x-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q12x-question.png",
+  "md5": "bfd9bf647e801c5397afb437437d38f3",
+  "alt": "The printed question: (x) One isotope of curium is Cm with 247 written above and 96 below after the symbol. How many neutrons are in this isotope? (28)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(x)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   518,
+   545,
+   542
+  ]
+ },
+ "physics-2021-ol-q13e-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q13e-scheme.png",
+  "md5": "a4dd6ff1d06002aa483abd6a139dfdea",
+  "alt": "The marking scheme's drawing of a circuit symbol: a pair of long and short parallel plates, a dashed line, and a second pair of long and short plates, with a wire leading out at each end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(e)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   298,
+   512,
+   420,
+   542
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q13g-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q13g-scheme.png",
+  "md5": "73cde786b96a896bb6ac7a02cc78613d",
+  "alt": "The marking scheme's drawing: two parallel plates, the left one marked with red plus signs and the right one with red minus signs, joined by straight blue field lines with arrows pointing from the plus plate to the minus plate.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(g)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   236,
+   636,
+   356,
+   683
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14bi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14bi-scheme.png",
+  "md5": "8c19c6f51e3d5d78ee1bcb2d7e7e27fb",
+  "alt": "The marking scheme's drawing: two objects on stands, A on the left with red plus signs around it and B on the right with none.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   190,
+   136,
+   312,
+   209
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14biii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14biii-scheme.png",
+  "md5": "a90d12c0813c3053876d6e8abc3b382c",
+  "alt": "The marking scheme's drawing: a pear-shaped conductor outlined in grey with blue plus signs around it, more of them bunched at the pointed end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   372,
+   436.5,
+   488,
+   508
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14ciii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14ciii-scheme.png",
+  "md5": "662d7219e079ff3d6b7803857ef9ff04",
+  "alt": "The marking scheme's drawing: a vertical orange arrow labelled current carrying conductor passes through three dashed concentric ellipses labelled magnetic field, each with an arrowhead showing direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(c)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   230,
+   273,
+   468,
+   389
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14d-sonometer": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-sonometer.png",
+  "md5": "376414813e4410d6a3c028ea48e910f5",
+  "alt": "Photograph of a sonometer: a long wooden box with a wire stretched along its top over two bridges, a tension key at one end and pegs at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(d)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: indiamart.com; State Examinations Commission (images on page 14)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   214,
+   328,
+   452,
+   449
+  ]
+ },
+ "physics-2021-ol-q14d-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-wave.png",
+  "md5": "584408a8e5ebb32b810d6eb2ae599439",
+  "alt": "Diagram of a stationary wave: two curves cross at a point near each end and bow apart between them, with a dashed double-headed arrow below marked 40 cm running between the two crossing points.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(d)(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   165,
+   517,
+   520,
+   598
+  ]
+ },
+ "physics-2021-ol-q1v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q1v-question.png",
+  "md5": "16ba7d19f32c7f578f870dd9779ff24b",
+  "alt": "The printed question: (v) From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s over t squared, set as a fraction, to calculate a value for g.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q1(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   380,
+   545,
+   421
+  ]
+ },
+ "physics-2021-ol-q2iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2iv-question.png",
+  "md5": "c1f9e6861c9b099439455b01a3323f52",
+  "alt": "The printed question: (iv) Boyle's law states that for a fixed mass of gas, pressure is inversely proportional to volume. For each value of V in the table above, calculate 1 over V, set as a fraction, to three decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   260,
+   545,
+   300
+  ]
+ },
+ "physics-2021-ol-q2v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-question.png",
+  "md5": "5fb503323310c7b89f4f24281c8a786b",
+  "alt": "The printed question: (v) Plot a graph on graph paper of p against 1 over V, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   305,
+   545,
+   328
+  ]
+ },
+ "physics-2021-ol-q2v-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-scheme-graph.png",
+  "md5": "52e5cf623222f7f054672bc30d5d32e3",
+  "alt": "The marking scheme's graph titled Pressure against 1/Volume: 1/V from 0 to 0.12 on the vertical axis against pressure in kPa from 0 to 250, six points on a straight line through the origin, and red dashed arrows reading 1/V at 140 kPa.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   96,
+   493,
+   515,
+   692
+  ],
+  "maskedFurniture": [
+   [
+    96,
+    493,
+    332,
+    513
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q4-calc": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q4-calc.png",
+  "md5": "7d8fb3a6aa47c07f012378d0231ad57f",
+  "alt": "The printed calculation: Heat lost by steam = Heat gained by water and calorimeter; m(steam) l + m(steam) c(water) Δθ(steam) = m(water) c(water) Δθ(water) + m(cal.) c(copper) Δθ(cal.); B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C; then the specific heat capacities of water (4200 J kg⁻¹ K⁻¹) and copper (390 J kg⁻¹ K⁻¹).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(vi)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   60,
+   335,
+   540,
+   430
+  ]
+ },
+ "physics-2021-ol-q5iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q5iv-scheme-graph.png",
+  "md5": "85277116b8e3a72ace0ba79a44480911",
+  "alt": "The marking scheme's graph: I / A from 0 to 0.4 on the vertical axis against V / V from 0 to 7, six points on a straight red line through the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q5(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   100,
+   413,
+   492,
+   578
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q6a-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6a-question.png",
+  "md5": "e65aedf12d4af16cacf3907b030648c4",
+  "alt": "The printed question: (a) A student arranges a metre stick so that it is in equilibrium, the word equilibrium underlined. Explain the underlined term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   192,
+   412,
+   228
+  ]
+ },
+ "physics-2021-ol-q6f-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6f-scheme.png",
+  "md5": "c7a7e9b25b59a7d4786f9e6b204852eb",
+  "alt": "The marking scheme's diagram: a red ray enters an optical fibre drawn as two parallel black lines and zigzags along it, reflecting off each side in turn before leaving at the far end, labelled Light ray and Optic fibre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(f)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   283,
+   372,
+   500,
+   430
+  ],
+  "maskedFurniture": [
+   [
+    283,
+    413,
+    345,
+    430
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q6g-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6g-question.png",
+  "md5": "9ad1fc06e3d90da6281ba8f975d58cf6",
+  "alt": "The printed question: (g) Coulomb's law may be written as F = 1 over 4πε times q₁q₂ over d squared, set as fractions. What do the letters F, q, and d stand for in this expression?",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(g)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   420,
+   545,
+   461
+  ]
+ },
+ "physics-2021-ol-q6i-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6i-xray.png",
+  "md5": "571fe8103f45ad18e85e04fc38dfca2e",
+  "alt": "Photograph of an X-ray tube: a long glass envelope with a metal electrode assembly inside, a cylinder at one end and a coiled lead at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: illustoon.com; orau.org (images on page 5)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   398,
+   476,
+   542,
+   552
+  ]
+ },
+ "physics-2021-ol-q6k-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6k-scheme.png",
+  "md5": "a76655c1bb9230fbccf4d52e436d50b5",
+  "alt": "The marking scheme's drawing: a red dot at the centre ringed in green, two dashed circles around it, and blue dots on the circles.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(k)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   398,
+   640,
+   478,
+   712
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q8vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-question.png",
+  "md5": "4c402a2bc1dbdab7b1a96e3ca843b66d",
+  "alt": "The printed question: (vii) The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction. Below it, four curved grey wave fronts approach a black barrier with a gap in its middle.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(vii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   352,
+   545,
+   590
+  ]
+ },
+ "physics-2021-ol-q8vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-scheme.png",
+  "md5": "c8e7f4a06d6a0e2d392a592fe8524d3b",
+  "alt": "The marking scheme's drawing: three vertical black lines, the last with a gap, and three blue semicircular arcs on the far side of the gap, centred on it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(vii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   112,
+   520,
+   158,
+   592
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q9-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-circuit.png",
+  "md5": "a11aa6b2b478bb9beff198af1df97efb",
+  "alt": "Circuit diagram: a 12 V supply and an ammeter A in series with a resistor R₄ = 3 Ω and three resistors in parallel, R₁ = 5 Ω, R₂ = 2 Ω and R₃ = 4 Ω.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(vi)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   334,
+   302,
+   542,
+   470
+  ]
+ },
+ "physics-2021-ol-q9-rheostat": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-rheostat.png",
+  "md5": "c896da18a00c0f08b3e14a84b65ca6e2",
+  "alt": "Photograph of a laboratory rheostat: a coil of wire wound on a tube between two end mounts, with a sliding contact on a bar above it and terminals at the ends.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electronics-tutorials.ws; State Examinations Commission; shutterstock.com (images on page 8)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   427,
+   146,
+   542,
+   226
+  ]
+ },
  "physics-2022-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2022-hl-q1-table.png",
   "md5": "d49e8f197e710a48c5a00aa373b4abbb",

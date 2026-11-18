@@ -56,6 +56,8 @@ const PINS: Record<string, [number, number, number, string, string]> = {
     '7fd0309754396d9091b6dd2d15523d099a469c8d09078a43f145ef2c775e64b3'],
   '2021-hl': [123, 123, 121, '877a47fe07317037cee6147a35ec8648b91052b4748b3580dbf156c60e2c2d39',
     '7184b7194b479b4ee5129ea50847ff6f3a827df37a39f962fc5ccbe85a4b380d'],
+  '2021-ol': [130, 130, 130, 'd31e6b959913c35b4700d5d1ec83b554dd1c3e00a7adbe642fdd032204145c1e',
+    '228f3336be97ed97331f782625f8238c94b8bd19513519721cf261141c2f7686'],
 };
 
 type Card = (typeof PHYS_HIGHER)[number] & {

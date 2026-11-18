@@ -368,6 +368,18 @@ INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
 # paper's reading may move because of it.
 INLINE_SENTENCE_MARKERS = {('physics', 2023, 'hl'): ['(ii) cool the water,', '(iii) dry the steam?',
                                                      '(iv) cool the water,', '(v) dry the steam?']}
+# 2020 HL Physics prints romans inside a sentence three times (rendered and looked at):
+# Q6 (paper page 5) "Calculate (v) how long the ball was in the air," before its (vi) and
+# (vii); Q8 (page 7) "Define (i) radioactivity, (ii) the becquerel. (9)" before its (iii);
+# Q9 (page 7) "Calculate (iv) the tension in the string, (v) the speed of sound in the
+# string. (24)" between its (iii) and (vi). The scheme (PDF pages 10, 12, 13) prices each of
+# Q6(v), Q8(i), Q8(ii), Q9(iv) and Q9(v) on its own ("6", "6", "3", "12", "6"). Each
+# reached the walker inside one block opening in a word, so the census read Q6 without
+# (v), Q8 from (iii), Q9 without (iv) and (v) (flags roman-gap).
+INLINE_SENTENCE_MARKERS[('physics', 2020, 'hl')] = [
+    '(v) how long the ball was in the air,',
+    '(i) radioactivity,', '(ii) the becquerel.',
+    '(iv) the tension in the string,', '(v) the speed of sound in the string.']
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion
@@ -621,6 +633,16 @@ DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small pa
 FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
     '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
     '(iii) CH3(CH2)6CH3 (l) → (l)']}
+# 2020 OL Physics Q3 (paper page 3, rendered and looked at) prints a graph between its (ii) and
+# (iii): 1/length (m-1) from 0 to 4.5 against frequency (Hz) from 0 to 600. Its vertical axis
+# labels reach the walker as blocks of their own ("4.5", "4", "3.5", ...), and the lone "4"
+# (its neighbours "4.5" and "3.5" are no bare integers, so the axis rule missed it) was read
+# as the head of Question 4: Q3(iii)-(vi) were filed under Q4's keys, the real "4." was taken
+# for words of Q4(vi), and the census read Q3(i)-(ii) and Q4(i)-(vi) where the paper prints
+# Q3(i)-(vi) and Q4(i)-(vi). The axis labels are a figure's, not words of any part. Each is
+# printed once on this paper. Gated to the sitting.
+FIGURE_BLOCKS[('physics', 2020, 'ol')] = ['4.5', '4', '3.5', '3', '1/length (m–1)', '2.5', '2', '1.5', '1',
+                                          '0.5', '0', '0 100 200 300 400 500 600', 'frequency (Hz)']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 

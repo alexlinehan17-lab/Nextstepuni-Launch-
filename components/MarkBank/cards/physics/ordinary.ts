@@ -38,7 +38,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student measure the distance s?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "metre stick", marks: 6, accepts: ["ruler","measuring tape"] },
+    { id: "r1", kind: "point", verbatim: "metre stick / ruler / measuring tape", marks: 6, contextNote: "Partial credit (3): partial answer e.g. from the bottom of the ball to the trapdoor" },
     ],
   } as SecCard,
   {
@@ -52,7 +52,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student measure the time t for the object to fall?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "timer", marks: 5, contextNote: "Key word. The scheme's partial credit (3) went to a description such as 'from when ball starts falling to when it hits trapdoor'." },
+    { id: "r1", kind: "point", verbatim: "timer", marks: 5, contextNote: "Partial credit (3): partial e.g. from when ball starts falling to when it hits trapdoor" },
     ],
   } as SecCard,
   {
@@ -66,7 +66,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student improve the accuracy of the time t that was used?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "take the smallest time for t", marks: 3, accepts: ["repeat","took average","place a paper between the ball and magnet","use large distance/s","used a more accurate timer","electronic timer"], openList: true },
+    { id: "r1", kind: "anyN", verbatim: "take the smallest time for t / repeat / took average / place a paper between the ball and magnet / use large distance/s / used a more accurate timer / electronic timer", marks: null, openList: true, group: {"claimMax":1,"perOption":3,"options":["take the smallest time for t","repeat","took average","place a paper between the ball and magnet","use large distance/s","used a more accurate timer / electronic timer"]} },
     ],
   } as SecCard,
   {
@@ -74,14 +74,22 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q1-v", topicId: "phys-u2", conceptId: "calculating-g-from-fall-data",
+    id: "phys-2021-ol-q1-v", topicId: "phys-1-5", conceptId: "calculating-g-from-fall-data",
     section: "A", questionRef: "2021 OL Q1(v)",
-    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The student recorded the following results. s (m): 0.4, 0.5, 0.6, 0.7, 0.8, 0.9. t (s): 0.29, 0.32, 0.35, 0.38, 0.40, 0.43. The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s−2.",
-    questionText: "From these results, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s/t² to calculate a value for g.",
+    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The student recorded the following results. s (m) 0.4 0.5 0.6 0.7 0.8 0.9 t (s) 0.29 0.32 0.35 0.38 0.40 0.43 The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s⁻².",
+    questionText: "From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "9.5 m s-2", marks: 6, contextNote: "The unit is part of the answer — the preamble deducts one mark for omitted or incorrect units in a final answer." },
+    { id: "r1", kind: "point", verbatim: "(g= 2s/t² = 2(0.4)/(0.29)² = 0.8/0.0841 =)9.5 m s⁻²", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q1v-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q1v-question.png",
+          "srcHash": "16ba7d19f32c7f578f870dd9779ff24b",
+          "alt": "The printed question: (v) From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s over t squared, set as a fraction, to calculate a value for g.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -94,7 +102,7 @@ export const CARDS: SecCard[] = [
     questionText: "The maximum distance used is 0.9 m. Why does the student not use a greater distance?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "difficult to measure with metre stick", marks: 2, accepts: ["difficult to align the ball with the trapdoor"], openList: true },
+    { id: "r1", kind: "anyN", verbatim: "difficult to measure with metre stick / difficult to align the ball with the trapdoor", marks: null, openList: true, group: {"claimMax":1,"perOption":2,"options":["difficult to measure with metre stick","difficult to align the ball with the trapdoor"]} },
     ],
   } as SecCard,
   {
@@ -104,12 +112,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-ii", topicId: "phys-u2", conceptId: "varying-pressure-boyles-law",
     section: "A", questionRef: "2021 OL Q2(ii)",
-    stem: "A student performed an experiment to verify Boyle's law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
     questionText: "How is the pressure varied in this experiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "pump", marks: 3, accepts: ["valve"], route: "a" },
-    { id: "r-2", kind: "point", verbatim: "piston", marks: 3, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "pump / valve / piston", marks: null, group: {"claimMax":1,"perOption":3,"options":["pump / valve","piston"]} },
     ],
   } as SecCard,
   {
@@ -119,11 +126,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-iii", topicId: "phys-u2", conceptId: "gas-settling-before-reading",
     section: "A", questionRef: "2021 OL Q2(iii)",
-    stem: "A student performed an experiment to verify Boyle's law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
     questionText: "Each time the pressure is changed, the student must wait before taking the reading for volume. Explain why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to allow the gas to settle (to room temperature/ to cool)", marks: 3, contextNote: "The solidus inside the bracket gives two equally acceptable elaborations: to room temperature, or to cool." },
+    { id: "r1", kind: "point", verbatim: "to allow the gas to settle (to room temperature/ to cool)", marks: 3 },
     ],
   } as SecCard,
   {
@@ -136,7 +143,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the instrument used to measure the object distance and the image distance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "metre stick", marks: 3, accepts: ["measuring tape","optical bench with scale","ruler"] },
+    { id: "r1", kind: "anyN", verbatim: "metre stick / measuring tape / optical bench with scale / ruler", marks: null, group: {"claimMax":1,"perOption":3,"options":["metre stick","measuring tape","optical bench with scale","ruler"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -160,21 +167,31 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student know that the correct image distance had been found?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "image in sharp focus", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "image in sharp focus", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q3-v", topicId: "phys-u2", conceptId: "lens-formula",
+    id: "phys-2021-ol-q3-v", topicId: "phys-2-3", conceptId: "lens-formula",
     section: "A", questionRef: "2021 OL Q3(v)",
     stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
-    questionText: "Calculate the focal length of this lens.",
+    questionText: "State the formula used to calculate f.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "( 1/16 + 1/48 = 1/12 ⇒ f =) 12 cm", marks: 6, contextNote: "The formula is 1/u + 1/v = 1/f. The scheme prices the substitution and the answer; a correct substitution alone is a partial answer worth 3." },
+    { id: "r1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 6, contextNote: "The scheme gives (3) for \"one error\"." },
     ],
   } as SecCard,
   {
@@ -182,13 +199,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q3-vi", topicId: "phys-u2", conceptId: "focal-length-calculation",
+    id: "phys-2021-ol-q3-vi", topicId: "phys-2-3", conceptId: "focal-length-calculation",
     section: "A", questionRef: "2021 OL Q3(vi)",
-    stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "The student placed an object 16 cm in front of the converging lens. It produced an image at a distance of 48 cm from the lens. Calculate the focal length of this lens.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "12 cm", marks: 6, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit in a final answer." },
+    { id: "r1", kind: "point", verbatim: "( 1/16 + 1/48 = 1/12 ⇒ f =) 12 cm", marks: 6, contextNote: "Partial credit (3): partial answer e.g. correct substitution" },
     ],
   } as SecCard,
   {
@@ -196,13 +212,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q3-vii", topicId: "phys-u2", conceptId: "virtual-image-close-object",
+    id: "phys-2021-ol-q3-vii", topicId: "phys-2-3", conceptId: "virtual-image-close-object",
     section: "A", questionRef: "2021 OL Q3(vii)",
     stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "Why will this experiment not work if the object is placed very close to the lens?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "virtual image", marks: 4, accepts: ["cannot form image on screen"], contextNote: "Scheme states the condition alongside the key word: virtual image (formed when u < f)." },
+    { id: "r1", kind: "point", verbatim: "virtual image (formed when u< f ), cannot form image on screen", marks: 4, contextNote: "The scheme gives (2) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -212,11 +228,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q4-ii", topicId: "phys-u2", conceptId: "mass-of-cold-water",
     section: "A", questionRef: "2021 OL Q4(ii)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg. Mass of calorimeter and cold water = 0.1327 kg. Initial temperature of calorimeter and cold water = 20 °C. Final temperature of calorimeter, water and added steam = 36 °C. Final mass of calorimeter, water and added steam = 0.1341 kg.",
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg",
     questionText: "Calculate the mass of the cold water (A).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.0433 kg", marks: 4, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit." },
+    { id: "r1", kind: "point", verbatim: "(0.1327 – 0.0894 = ) 0.0433 kg", marks: 4 },
     ],
   } as SecCard,
   {
@@ -226,11 +242,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q4-iii", topicId: "phys-u2", conceptId: "mass-of-added-steam",
     section: "A", questionRef: "2021 OL Q4(iii)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg. Mass of calorimeter and cold water = 0.1327 kg. Initial temperature of calorimeter and cold water = 20 °C. Final temperature of calorimeter, water and added steam = 36 °C. Final mass of calorimeter, water and added steam = 0.1341 kg.",
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg",
     questionText: "Calculate the mass of the added steam (B).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.0014 kg", marks: 4, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit." },
+    { id: "r1", kind: "point", verbatim: "(0.1341 – 0.1327 = ) 0.0014 kg", marks: 4 },
     ],
   } as SecCard,
   {
@@ -240,11 +256,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q4-iv", topicId: "phys-u2", conceptId: "temperature-rise-calorimeter",
     section: "A", questionRef: "2021 OL Q4(iv)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg. Mass of calorimeter and cold water = 0.1327 kg. Initial temperature of calorimeter and cold water = 20 °C. Final temperature of calorimeter, water and added steam = 36 °C. Final mass of calorimeter, water and added steam = 0.1341 kg.",
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg",
     questionText: "Calculate the increase in temperature of the calorimeter and cold water (C).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "16 °C", marks: 4, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit." },
+    { id: "r1", kind: "point", verbatim: "(36 – 20 =) 16 °C", marks: 4 },
     ],
   } as SecCard,
   {
@@ -254,11 +270,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q4-v", topicId: "phys-u2", conceptId: "temperature-fall-steam",
     section: "A", questionRef: "2021 OL Q4(v)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg. Mass of calorimeter and cold water = 0.1327 kg. Initial temperature of calorimeter and cold water = 20 °C. Final temperature of calorimeter, water and added steam = 36 °C. Final mass of calorimeter, water and added steam = 0.1341 kg.",
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg",
     questionText: "Calculate the decrease in temperature of the steam (D).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "64 °C", marks: 4, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit." },
+    { id: "r1", kind: "point", verbatim: "(100 – 36 = ) 64 °C", marks: 4 },
     ],
   } as SecCard,
   {
@@ -272,7 +288,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the instrument used to measure voltage.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "voltmeter", marks: 6, contextNote: "'multimeter' earns only the scheme's 3-mark partial." },
+    { id: "r1", kind: "point", verbatim: "voltmeter", marks: 6, contextNote: "Partial credit (3): partial answer e.g. multimeter" },
     ],
   } as SecCard,
   {
@@ -286,7 +302,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the instrument used to measure current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ammeter", marks: 6, contextNote: "'multimeter' earns only the scheme's 3-mark partial." },
+    { id: "r1", kind: "point", verbatim: "ammeter", marks: 6, contextNote: "Partial credit (3): partial answer e.g. multimeter" },
     ],
   } as SecCard,
   {
@@ -300,8 +316,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student change the voltage across the conductor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "adjust variable voltage", marks: 6, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "adjust the variable resistor", marks: 6, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "adjust variable voltage / adjust the variable resistor", marks: null, contextNote: "The scheme gives (3) for a partial answer.", group: {"claimMax":1,"perOption":6,"options":["adjust variable voltage","adjust the variable resistor"]} },
     ],
   } as SecCard,
   {
@@ -309,14 +324,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q5-v", topicId: "phys-u2", conceptId: "ohms-law-relationship",
+    id: "phys-2021-ol-q5-v", topicId: "phys-3-3", conceptId: "ohms-law-relationship",
     section: "A", questionRef: "2021 OL Q5(v)",
     stem: "A student performed an experiment to investigate the variation of current I with potential difference (voltage) V for a metallic conductor.",
     questionText: "Describe the relationship between current and voltage for this conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "V ∝ I", marks: 6, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "proportional", marks: 6, contextNote: "Key word — must appear in the correct context (current is proportional to voltage). 'linear' alone earns only the 3-mark partial.", route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "V ∝ I / proportional", marks: null, contextNote: "Partial credit (3): partial answer e.g. linear", group: {"claimMax":1,"perOption":6,"options":["V ∝ I","proportional"]} },
     ],
   } as SecCard,
   {
@@ -324,14 +338,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q5-vi", topicId: "phys-u2", conceptId: "filament-bulb-non-ohmic",
+    id: "phys-2021-ol-q5-vi", topicId: "phys-3-3", conceptId: "filament-bulb-non-ohmic",
     section: "A", questionRef: "2021 OL Q5(vi)",
     stem: "A student performed an experiment to investigate the variation of current I with potential difference (voltage) V for a metallic conductor.",
     questionText: "What would you notice if the experiment was repeated using a filament bulb instead of a metallic conductor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bulb would get hot", marks: 4, route: "a" },
-    { id: "r-2", kind: "alt", verbatim: "not proportional", marks: 4, accepts: ["curved graph"], route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "bulb would get hot / not proportional/curved graph", marks: null, contextNote: "The scheme gives (2) for a partial answer.", group: {"claimMax":1,"perOption":4,"options":["bulb would get hot","not proportional/curved graph"]} },
     ],
   } as SecCard,
   {
@@ -341,12 +354,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6-a", topicId: "phys-1-2", conceptId: "equilibrium",
     section: "B", questionRef: "2021 OL Q6(a)",
-    stem: "The underlined term is equilibrium.",
     questionText: "A student arranges a metre stick so that it is in equilibrium. Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "no movement", marks: 7, accepts: ["no acceleration","nett force zero","balanced"] },
+    { id: "r1", kind: "point", verbatim: "no movement / no acceleration / nett force zero / balanced", marks: 7, contextNote: "Partial credit (4): partial answer e.g. no force acts" },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q6a-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q6a-question.png",
+          "srcHash": "e65aedf12d4af16cacf3907b030648c4",
+          "alt": "The printed question: (a) A student arranges a metre stick so that it is in equilibrium, the word equilibrium underlined. Explain the underlined term.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -355,10 +375,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6-b", topicId: "phys-1-1", conceptId: "equations-of-motion-distance",
     section: "B", questionRef: "2021 OL Q6(b)",
-    questionText: "A car starts from rest and has an acceleration of 6 m s–2. Calculate the distance it travels in 12 s.",
+    questionText: "A car starts from rest and has an acceleration of 6 m s⁻². Calculate the distance it travels in 12 s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "432 m", marks: 7, contextNote: "The unit is part of the answer — one mark is deducted for an omitted or incorrect unit. Merely stating the equation of motion earns only the 4-mark partial." },
+    { id: "r1", kind: "point", verbatim: "(s= ut+ ½ at² = 0 + ½ (6)(12)² =)432 m", marks: 7, contextNote: "Partial credit (4): partial answer e.g. states equation of motion" },
     ],
   } as SecCard,
   {
@@ -368,10 +388,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6-c", topicId: "phys-1-2", conceptId: "pressure-in-a-liquid",
     section: "B", questionRef: "2021 OL Q6(c)",
-    questionText: "Water has a density of 997 kg m−3. Calculate the pressure due to water at a depth of 214 m.",
+    questionText: "Water has a density of 997 kg m⁻³. Calculate the pressure due to water at a depth of 214 m.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2.1 × 106 Pa", marks: 7, contextNote: "Read as 2.1 × 10⁶ Pa — the extractor flattened the superscript. The unit is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(P= ℎρg= (214)(997)(9.8) =) 2.1 × 10⁶ Pa", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -384,7 +404,7 @@ export const CARDS: SecCard[] = [
     questionText: "Complimentary colours mix to form white light. Name the secondary colour which mixes with red light to form white light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "turquoise", marks: 7, accepts: ["cyan"] },
+    { id: "r1", kind: "point", verbatim: "turquoise / cyan", marks: 7 },
     ],
   } as SecCard,
   {
@@ -397,7 +417,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the Doppler effect?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(apparent) change in (wave) frequency /wavelength due to moving source/observer", marks: 7, contextNote: "The solidi mark equally acceptable substitutions inside one statement: frequency or wavelength; a moving source or a moving observer." },
+    { id: "r1", kind: "point", verbatim: "(apparent) change in (wave) frequency /wavelength due to moving source/observer", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -407,23 +427,31 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6-g", topicId: "phys-3-1", conceptId: "coulombs-law-symbols",
     section: "B", questionRef: "2021 OL Q6(g)",
-    questionText: "Coulomb's law may be written as F = (1/4πε)(q₁q₂/d²). What do the letters F, q, and d stand for in this expression?",
+    questionText: "Coulomb’s law may be written as What do the letters F, q, and d stand for in this expression?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "allOf", verbatim: "force, charge and distance (between charges)", marks: 7, contextNote: "All three correct scores the full 7; any one correct earns only the 4-mark partial." },
+    { id: "r1", kind: "point", verbatim: "force, charge and distance (between charges) three correct", marks: 7, contextNote: "Partial credit (4): any one correct" },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q6g-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q6g-question.png",
+          "srcHash": "9ad1fc06e3d90da6281ba8f975d58cf6",
+          "alt": "The printed question: (g) Coulomb's law may be written as F = 1 over 4πε times q₁q₂ over d squared, set as fractions. What do the letters F, q, and d stand for in this expression?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q6-h", topicId: "phys-3-4", conceptId: "si-units-flux-density-capacitance",
+    id: "phys-2021-ol-q6-h", topicId: "phys-3-2", conceptId: "si-units-flux-density-capacitance",
     section: "B", questionRef: "2021 OL Q6(h)",
     questionText: "State the SI unit of (i) magnetic flux density, (ii) capacitance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "allOf", verbatim: "(i) tesla/T (ii) farad/F", marks: 7, contextNote: "Both units are needed for the full 7; the solidus in each means the unit name or its symbol is equally acceptable. One correct earns only the 4-mark partial." },
+    { id: "r1", kind: "point", verbatim: "(i) tesla/T (ii) farad/F", marks: 7, contextNote: "Partial credit (4): partial answer e.g. one correct" },
     ],
   } as SecCard,
   {
@@ -436,7 +464,7 @@ export const CARDS: SecCard[] = [
     questionText: "Silicon is an example of a semiconductor. What is a semiconductor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "substance whose resistivity/conductivity is between that of a conductor and insulator", marks: 7, contextNote: "The solidus makes resistivity and conductivity equally acceptable inside the one statement." },
+    { id: "r1", kind: "point", verbatim: "substance whose resistivity/conductivity is between that of a conductor and insulator", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -449,7 +477,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the photoelectric effect?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "emission of electrons (from a metal surface) by (incident) light", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "emission of electrons (from a metal surface) by (incident) light", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -459,11 +487,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-i", topicId: "phys-1-2", conceptId: "momentum-definition",
     section: "B", questionRef: "2021 OL Q7(i)",
-    stem: "The Bagger 293 excavator is the world's largest land vehicle, with a mass of 14200 tonnes. (1 tonne = 1000 kg) Bagger 293 has a maximum speed of 0.17 m s−1.",
     questionText: "Bagger 293 has a large momentum. What is meant by momentum?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "mass multiplied by velocity", marks: 6, accepts: ["mv"] },
+    { id: "r1", kind: "point", verbatim: "mass multiplied by velocity / mv", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -476,8 +503,8 @@ export const CARDS: SecCard[] = [
     questionText: "State the principle of conservation of momentum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(in a closed system the total) momentum before (interaction) = (the total)momentum after", marks: 6, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "m1u1 + m2u2 =m1v1 + m2v2", marks: 6, route: "b" },
+    { id: "r1", kind: "point", verbatim: "(in a closed system the total) momentum before (interaction) = (the total)momentum after", marks: 6, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side.", route: "side-a" },
+    { id: "r2", kind: "point", verbatim: "m₁u₁ + m₂u₂ =m₁v₁ + m₂v₂", marks: 6, contextNote: "The scheme gives (3) for a partial answer.", route: "side-b" },
     ],
   } as SecCard,
   {
@@ -487,11 +514,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-iii", topicId: "phys-1-2", conceptId: "newtons-second-law-and-momentum",
     section: "B", questionRef: "2021 OL Q7(iii)",
-    questionText: "Explain why Newton's second law of motion is consistent with the principle of conservation of momentum.",
+    questionText: "Explain why Newton’s second law of motion is consistent with the principle of conservation of momentum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "no force acting implies no change in momentum", marks: 4, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "states Newton's second law of motion", marks: 4, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "no force acting implies no change in momentum / states Newton’s second law of motion", marks: null, contextNote: "The scheme gives (2) for a partial answer.", group: {"claimMax":1,"perOption":4,"options":["no force acting implies no change in momentum","states Newton’s second law of motion"]} },
     ],
   } as SecCard,
   {
@@ -501,11 +527,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-iv", topicId: "phys-1-2", conceptId: "momentum-calculation",
     section: "B", questionRef: "2021 OL Q7(iv)",
-    stem: "The Bagger 293 excavator is the world's largest land vehicle, with a mass of 14200 tonnes. (1 tonne = 1000 kg) Bagger 293 has a maximum speed of 0.17 m s−1.",
+    stem: "The Bagger 293 excavator is the world’s largest land vehicle, with a mass of 14200 tonnes. (1 tonne = 1000 kg) Bagger 293 has a maximum speed of 0.17 m s⁻¹.",
     questionText: "Calculate the momentum of Bagger 293 when it is moving at its maximum speed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2.4 × 106 kg m s-1", marks: 6, contextNote: "Read as 2.4 × 10⁶ kg m s⁻¹ — the extractor flattened the superscripts. The unit is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(mv = (14200 × 10³)(0.17) = ) 2.4 × 10⁶ kg m s⁻¹", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -515,11 +541,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-v", topicId: "phys-1-2", conceptId: "momentum-mass-speed-tradeoff",
     section: "B", questionRef: "2021 OL Q7(v)",
-    stem: "The Bagger 293 excavator has a mass of 14200 tonnes and a maximum speed of 0.17 m s−1.",
+    stem: "The Bagger 293 excavator is the world’s largest land vehicle, with a mass of 14200 tonnes. (1 tonne = 1000 kg) Bagger 293 has a maximum speed of 0.17 m s⁻¹.",
     questionText: "Bagger 293 is moving when it picks up a stationary load of 2700 tonnes. Would this cause its speed to increase or to decrease? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "decrease due to extra mass", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "decrease due to extra mass", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -529,11 +555,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-vi", topicId: "phys-1-2", conceptId: "initial-momentum-calculation",
     section: "B", questionRef: "2021 OL Q7(vi)",
-    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s−1 to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
+    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s⁻¹ to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
     questionText: "Calculate the initial momentum of train X.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "6.65 × 10-3 kg m s-1", marks: 6, contextNote: "Read as 6.65 × 10⁻³ kg m s⁻¹ — the extractor flattened the superscripts. The unit is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(mv = (0.133)(0.05) = ) 6.65 × 10⁻³ kg m s⁻¹", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -543,11 +569,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-vii", topicId: "phys-1-2", conceptId: "velocity-after-collision",
     section: "B", questionRef: "2021 OL Q7(vii)",
-    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s−1 to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
+    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s⁻¹ to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
     questionText: "Calculate the speed of the two trains immediately after the collision.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.037 m s-1", marks: 6, contextNote: "Read as 0.037 m s⁻¹. Adding the masses alone earns only the 3-mark partial. The unit is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(6.65 × 10⁻³ = (0.179)v ⇒ v =) 0.037 m s⁻¹", marks: 6, contextNote: "Partial credit (3): partial answer e.g. addition of masses" },
     ],
   } as SecCard,
   {
@@ -557,12 +583,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-viii", topicId: "phys-1-2", conceptId: "direction-after-collision",
     section: "B", questionRef: "2021 OL Q7(viii)",
-    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s−1 to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
+    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s⁻¹ to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
     questionText: "In which direction do the two trains move after the collision?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to the right", marks: 4, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "in the same direction as the moving train", marks: 4, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "to the right / in the same direction as the moving train", marks: null, group: {"claimMax":1,"perOption":4,"options":["to the right","in the same direction as the moving train"]} },
     ],
   } as SecCard,
   {
@@ -572,13 +597,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-ix", topicId: "phys-1-4", conceptId: "kinetic-energy-loss-collision",
     section: "B", questionRef: "2021 OL Q7(ix)",
-    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s−1 to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together at 0.037 m s−1.",
+    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s⁻¹ to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
     questionText: "Calculate the loss in kinetic energy during this collision.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "KE before — 1.66 × 10−4 J", marks: 3, contextNote: "Read as 1.66 × 10⁻⁴ J. The unit is part of the answer." },
-    { id: "r-2", kind: "point", verbatim: "KE after — 1.22 × 10−4 J", marks: 3, contextNote: "Read as 1.22 × 10⁻⁴ J. The unit is part of the answer." },
-    { id: "r-3", kind: "point", verbatim: "kinetic energy lost — 0.44 × 10-4 J", marks: 3, contextNote: "Read as 0.44 × 10⁻⁴ J. The unit is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "KE before = ½ (0.133)(0.05)² = 1.66 × 10⁻⁴ J", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "KE after = ½ (0.179)(0.037)² = 1.22 × 10⁻⁴ J", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "kinetic energy lost = 0.44 × 10⁻⁴ J", marks: 3, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -588,12 +613,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q7-x", topicId: "phys-1-4", conceptId: "fate-of-lost-kinetic-energy",
     section: "B", questionRef: "2021 OL Q7(x)",
-    stem: "Toy train X collides with toy train Y, the two trains stick together, and kinetic energy is lost in the collision.",
+    stem: "Toy train X has a mass of 133 g and is moving along a track at a velocity of 0.05 m s⁻¹ to the right. It collides with toy train Y of mass 46 g which is at rest. The two trains stick together and move down the track together.",
     questionText: "What happened to the kinetic energy that was lost in the collision?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "converted into heat", marks: 3, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "converted into other forms", marks: 3, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "converted into heat / converted into other forms", marks: null, group: {"claimMax":1,"perOption":3,"options":["converted into heat","converted into other forms"]} },
     ],
   } as SecCard,
   {
@@ -601,15 +625,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q8-i", topicId: "phys-u2", conceptId: "sound-needs-a-medium-experiment",
+    id: "phys-2021-ol-q8-i", topicId: "phys-2-5", conceptId: "sound-needs-a-medium-experiment",
     section: "B", questionRef: "2021 OL Q8(i)",
-    stem: "A wave can be described as a travelling disturbance that transports energy from one point to another.",
     questionText: "Describe an experiment to show that sound waves need a medium to travel through.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "bell jar with electric bell", marks: null, contextNote: "Apparatus: any two of the listed items, 3 marks each. The scheme adds 'accept valid alternatives'.", openList: true, group: {"claimMax":2,"perOption":3,"options":["bell jar with electric bell","battery","vacuum pump"]} },
-    { id: "r-2", kind: "point", verbatim: "turn on pump", marks: 3 },
-    { id: "r-3", kind: "alt", verbatim: "no sound heard when air removed", marks: 3, accepts: ["sound needs a medium"] },
+    { id: "r1", kind: "anyN", verbatim: "bell jar with electric bell / battery / vacuum pump", marks: null, contextNote: "The scheme prints \"any two\" (2 × 3) against the apparatus line.", group: {"claimMax":2,"perOption":3,"options":["bell jar with electric bell","battery","vacuum pump"]} },
+    { id: "r2", kind: "point", verbatim: "procedure: turn on pump", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: no sound heard when air removed / sound needs a medium", marks: 3, contextNote: "accept valid alternatives a labelled diagram may merit full marks" },
     ],
   } as SecCard,
   {
@@ -622,7 +645,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of waves do not need a medium to travel through?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "light", marks: 4, accepts: ["electromagnetic"] },
+    { id: "r1", kind: "point", verbatim: "light / electromagnetic", marks: 4 },
     ],
   } as SecCard,
   {
@@ -635,8 +658,8 @@ export const CARDS: SecCard[] = [
     questionText: "Waves can be classified as either transverse or longitudinal. Distinguish between transverse and longitudinal waves. (A labelled diagram may help your answer.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the disturbance is parallel to the direction of motion for longitudinal waves", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "the disturbance is perpendicular to the direction of motion for transverse waves", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "the disturbance is parallel to the direction of motion for longitudinal waves", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "the disturbance is perpendicular to the direction of motion for transverse waves", marks: 3, contextNote: "partial answer e.g. longitudinal waves need a medium//transverse waves may be polarised (3)" },
     ],
   } as SecCard,
   {
@@ -649,7 +672,7 @@ export const CARDS: SecCard[] = [
     questionText: "The frequency of a certain radio station is 107 MHz. It broadcasts waves of length 2.804 m. Calculate the speed of the radio waves.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3 × 108 m s-1", marks: 6, contextNote: "Scheme working: (v = f λ = (107 × 106)(2.804) = ). The whole 6 marks are for the final answer with its unit. Superscripts are flattened in the extracted scheme text — read as 3 × 10^8 m s^-1 (and 107 × 10^6 Hz in the working)." },
+    { id: "r1", kind: "point", verbatim: "(v = f λ = (107 × 10⁶ )(2.804) = ) 3 × 10⁸ m s⁻¹", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -657,13 +680,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q8-v", topicId: "phys-2-3", conceptId: "reflection-of-sound-echo",
+    id: "phys-2021-ol-q8-v", topicId: "phys-2-5", conceptId: "reflection-of-sound-echo",
     section: "B", questionRef: "2021 OL Q8(v)",
-    stem: "Light and sound waves both display the properties of reflection, refraction, diffraction and interference.",
     questionText: "Describe one example of the reflection of sound waves.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(When sound is reflected from a distant obstacle it produces) an echo", marks: 4, openList: true },
+    { id: "r1", kind: "point", verbatim: "(When sound is reflected from a distant obstacle it produces) an echo", marks: 4 },
     ],
   } as SecCard,
   {
@@ -676,7 +698,7 @@ export const CARDS: SecCard[] = [
     questionText: "Light strikes a glass block with an angle of incidence of 23°. The light undergoes refraction as it travels from the air into the glass. The angle of refraction is 15°. Calculate the refractive index of the glass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.51", marks: 6, contextNote: "Scheme working: (n = sin i / sin r = 0.3907 / 0.2588 = ). Refractive index has no unit, so no unit is expected in the final answer." },
+    { id: "r1", kind: "point", verbatim: "(n= sini/(sinr) = 0.3907/0.2588 = ) 1.51", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -684,13 +706,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q8-viii", topicId: "phys-u2", conceptId: "sound-interference-experiment",
+    id: "phys-2021-ol-q8-viii", topicId: "phys-2-6", conceptId: "sound-interference-experiment",
     section: "B", questionRef: "2021 OL Q8(viii)",
     questionText: "Describe an experiment to show that sound undergoes interference.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "slowly rotate vibrating tuning fork near the ear", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "change in loudness due to interference", marks: 3, openList: true },
+    { id: "r1", kind: "point", verbatim: "method: e.g. slowly rotate vibrating tuning fork near the ear", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "observation/conclusion: e.g. change in loudness due to interference", marks: 3, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -700,11 +722,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q9-i", topicId: "phys-3-3", conceptId: "definition-of-resistance",
     section: "B", questionRef: "2021 OL Q9(i)",
-    stem: "As electrons move through a metal, the metal resists this movement. The electrons collide with atoms of the metal and lose kinetic energy. This lost energy is converted into heat.",
     questionText: "Define resistance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "R = V/I", marks: 6, contextNote: "Printed in the scheme as the fraction R = V over I." },
+    { id: "r1", kind: "point", verbatim: "R = V/I", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -712,12 +733,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q9-ii", topicId: "phys-u2", conceptId: "ohmmeter",
+    id: "phys-2021-ol-q9-ii", topicId: "phys-3-3", conceptId: "ohmmeter",
     section: "B", questionRef: "2021 OL Q9(ii)",
     questionText: "Name the instrument used to measure resistance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "'multimeter' is listed only as a partial answer (3), not as an equivalent.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "Partial credit (3): partial answer e.g. multimeter" },
     ],
   } as SecCard,
   {
@@ -726,14 +747,93 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q9-iv-v", topicId: "phys-3-3", conceptId: "resistivity-and-resistance-of-a-wire",
-    section: "B", questionRef: "2021 OL Q9(iv)-(v)",
-    stem: "A 4.8 m length of circular nichrome wire has a radius of 0.2 mm. Nichrome has a resistivity of 1.1 × 10−6 Ω m.",
-    questionText: "(iv) Calculate the circular cross-sectional area of the wire. (v) Calculate the resistance of the wire.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    section: "B", questionRef: "2021 OL Q9(iv)",
+    stem: "A 4.8 m length of circular nichrome wire has a radius of 0.2 mm. Nichrome has a resistivity of 1.1 × 10⁻⁶ Ω m.",
+    questionText: "Calculate the circular cross‐sectional area of the wire.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.26 × 10-7 m2", marks: 6, contextNote: "Scheme working: (A = πr² = π(0.2 × 10−3)² = ). Superscripts are flattened in the extracted scheme text — read as 1.26 × 10^-7 m^2." },
-    { id: "r-2", kind: "point", verbatim: "42 Ω", marks: 6, contextNote: "Scheme working: (R = ρl/A = (1.1 × 10−6)(4.8) / 1.2566 × 10−7 = )." },
+    { id: "r1", kind: "point", verbatim: "(A= πr² = π(0.2 × 10⁻³)² =) 1.26 × 10⁻⁷ m²", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-v", topicId: "phys-3-3", conceptId: "resistance-of-wire",
+    section: "B", questionRef: "2021 OL Q9(v)",
+    stem: "A 4.8 m length of circular nichrome wire has a radius of 0.2 mm. Nichrome has a resistivity of 1.1 × 10⁻⁶ Ω m.",
+    questionText: "Calculate the resistance of the wire.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(R= ρl/A = ((1.1 ×10⁻⁶)(4.8))/(1.2566×10⁻⁷) = ) 42 Ω", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-vi", topicId: "phys-3-3", conceptId: "resistors-in-parallel",
+    section: "B", questionRef: "2021 OL Q9(vi)",
+    stem: "Examine the circuit diagram shown on the right.",
+    questionText: "Show that the combined resistance of the three resistors in parallel (i.e. resistors R₁, R₂ and R₃) is 1.05 Ω.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "( 1/R = ⅕ + ½ + ¼ = 19/20 ⇒) R= 1.05 Ω", marks: 6, contextNote: "Partial credit (3): partial answer e.g. correct equation" },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q9-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-circuit.png",
+          "srcHash": "a11aa6b2b478bb9beff198af1df97efb",
+          "alt": "Circuit diagram: a 12 V supply and an ammeter A in series with a resistor R₄ = 3 Ω and three resistors in parallel, R₁ = 5 Ω, R₂ = 2 Ω and R₃ = 4 Ω.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-vii", topicId: "phys-3-3", conceptId: "total-resistance",
+    section: "B", questionRef: "2021 OL Q9(vii)",
+    stem: "Examine the circuit diagram shown on the right.",
+    questionText: "Calculate the total resistance in the circuit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "RT = 3 + 1.05 = 4.05 Ω", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q9-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-circuit.png",
+          "srcHash": "a11aa6b2b478bb9beff198af1df97efb",
+          "alt": "Circuit diagram: a 12 V supply and an ammeter A in series with a resistor R₄ = 3 Ω and three resistors in parallel, R₁ = 5 Ω, R₂ = 2 Ω and R₃ = 4 Ω.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-viii", topicId: "phys-3-3", conceptId: "current-through-ammeter",
+    section: "B", questionRef: "2021 OL Q9(viii)",
+    stem: "Examine the circuit diagram shown on the right.",
+    questionText: "Calculate the current flowing through the ammeter, A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(I= V/R = 12/4.05 =) 2.96 A", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q9-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-circuit.png",
+          "srcHash": "a11aa6b2b478bb9beff198af1df97efb",
+          "alt": "Circuit diagram: a 12 V supply and an ammeter A in series with a resistor R₄ = 3 Ω and three resistors in parallel, R₁ = 5 Ω, R₂ = 2 Ω and R₃ = 4 Ω.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -742,11 +842,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q9-ix", topicId: "phys-3-3", conceptId: "earth-wire-function",
     section: "B", questionRef: "2021 OL Q9(ix)",
-    stem: "The parts of an electrical plug.",
+    stem: "The diagram on the left shows the parts of an electrical plug.",
     questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "safety", marks: 4, accepts: ["earth (the equipment)"] },
+    { id: "r1", kind: "point", verbatim: "safety/ earth (the equipment)", marks: 4 },
     ],
     figure: {
           "candId": "physics-2021-ol-paper-p008-i1",
@@ -755,11 +855,10 @@ export const CARDS: SecCard[] = [
           "alt": "Labelled line diagram of the inside of a three-pin mains plug with its cover removed: rounded plug body outline, grey-shaded internal metalwork, two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp and fan out to screw terminals - one arcs up to the top terminal, one runs left to a terminal on the left-hand side, one runs right to a terminal beside a cartridge fuse held in clips. Six leader lines label the drawing: 'P' to the wire running up to the top terminal, 'Q' to the wire running to the right-hand terminal, 'Neutral' to the wire running to the left terminal, 'Fuse' to the cartridge fuse, 'Cable grip' to the clamp, and 'Cable' to the sheathed cable leaving the bottom. Diagram only - the right-hand column of printed question text on the page has been cropped away.",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
-                "P",
-                "Q"
+                "P"
           ]
     },
-    labelKey: [{"letter":"P","meaning":"safety/ earth (the equipment)","askedInThisQuestion":true},{"letter":"Q","meaning":"live","askedInThisQuestion":false}],
+    labelKey: [{"letter":"P","meaning":"safety/ earth (the equipment)","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -771,8 +870,8 @@ export const CARDS: SecCard[] = [
     questionText: "State the laws of reflection of light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the incident ray, the normal and the reflected ray are in the same plane", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "the angle of incidence is equal to the angle of reflection", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "the incident ray, the normal and the reflected ray are in the same plane", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "the angle of incidence is equal to the angle of reflection", marks: 3, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -780,16 +879,45 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q10-iii", topicId: "phys-u2", conceptId: "laws-of-reflection-experiment",
+    id: "phys-2021-ol-q10-iii", topicId: "phys-2-3", conceptId: "laws-of-reflection-experiment",
     section: "B", questionRef: "2021 OL Q10(iii)",
     questionText: "Describe an experiment to demonstrate the laws of reflection.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "plane mirror", marks: null, contextNote: "Apparatus: any two of the four listed items, 3 marks each (any one 3). \"raybox / pins\" is ONE item — the scheme's solidus makes them equally acceptable alternatives, so naming both still counts once.", group: {"claimMax":2,"perOption":3,"options":["plane mirror","sheet of paper","raybox / pins","protractor"]} },
-    { id: "r-2", kind: "point", verbatim: "draw the incident ray, normal and reflected ray", marks: 3, route: "a" },
-    { id: "r-3", kind: "point", verbatim: "measure I and r", marks: 3, route: "b" },
-    { id: "r-4", kind: "point", verbatim: "the angle of incidence is always equal to the angle of reflection", marks: 3 },
+    { id: "r1", kind: "anyN", verbatim: "plane mirror / sheet of paper / raybox / pins / protractor", marks: null, contextNote: "The scheme prints \"any two (2 × 3)\" against the apparatus line, and \"any one (3)\".", group: {"claimMax":2,"perOption":3,"options":["plane mirror","sheet of paper","raybox / pins","protractor"]} },
+    { id: "r2", kind: "point", verbatim: "procedure: draw the incident ray, normal and reflected ray // measure I and r", marks: 3, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
+    { id: "r3", kind: "point", verbatim: "observation / conclusion: the angle of incidence is always equal to the angle of reflection", marks: 3 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q10-iv", topicId: "phys-2-3", conceptId: "real-image-in-concave-mirror",
+    section: "B", questionRef: "2021 OL Q10(iv)",
+    questionText: "Copy the ray diagram below into your answerbook and complete it to show how a real image is formed in a concave mirror.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "correct diagram showing two correct rays and an inverted image", marks: 10, contextNote: "The scheme gives (7) for \"one error\" and (4) for a partial answer." },
+    ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q10iv-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-question.png",
+          "srcHash": "dcb5d630540cc1a66a4cc68e462d8548",
+          "alt": "The printed question: (iv) Copy the ray diagram below into your answerbook and complete it to show how a real image is formed in a concave mirror. Below it, an upright arrow labelled Object stands on a dashed principal axis, a point f is marked on the axis, and a curved concave mirror is drawn on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2021-ol-q10iv-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-scheme.png",
+          "srcHash": "6a30fb84ac9216809dfdc226a30e101d",
+          "alt": "The marking scheme's ray diagram: from the top of the Object arrow a blue ray runs parallel to the axis to the mirror and is reflected back through the point f, and a red ray passes through f to the mirror and is reflected back parallel to the axis; they meet below the axis at the tip of an inverted blue arrow labelled Image.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -797,13 +925,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q10-vii-viii", topicId: "phys-2-3", conceptId: "uses-of-spherical-mirrors",
-    section: "B", questionRef: "2021 OL Q10(vii)-(viii)",
-    stem: "Light can also be reflected from spherical mirrors. Two types of spherical mirrors are concave mirrors and convex mirrors.",
-    questionText: "(vii) State one use of a concave mirror. (viii) State one use of a convex mirror.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    section: "B", questionRef: "2021 OL Q10(vii)",
+    questionText: "State one use of a concave mirror.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "cosmetics", marks: 3, accepts: ["shaving mirror","dentist"], openList: true },
-    { id: "r-2", kind: "alt", verbatim: "car mirror", marks: 3, accepts: ["security mirror in shops","road reflectors"], openList: true },
+    { id: "r1", kind: "anyN", verbatim: "cosmetics / shaving mirror / dentist", marks: null, openList: true, group: {"claimMax":1,"perOption":3,"options":["cosmetics","shaving mirror","dentist"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q10-viii", topicId: "phys-2-3", conceptId: "use-of-convex-mirror",
+    section: "B", questionRef: "2021 OL Q10(viii)",
+    questionText: "State one use of a convex mirror.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "anyN", verbatim: "car mirror / security mirror in shops / road reflectors", marks: null, openList: true, group: {"claimMax":1,"perOption":3,"options":["car mirror","security mirror in shops","road reflectors"]} },
     ],
   } as SecCard,
   {
@@ -816,7 +955,7 @@ export const CARDS: SecCard[] = [
     questionText: "Heat may be transferred by radiation and by conduction. Name the other way in which heat may be transferred.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "convection", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "convection", marks: 3 },
     ],
   } as SecCard,
   {
@@ -829,7 +968,7 @@ export const CARDS: SecCard[] = [
     questionText: "Distinguish between heat and temperature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "heat is a measure of the energy in a body while temperature is a degree of hotness", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "heat is a measure of the energy in a body while temperature is a degree of hotness", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -839,11 +978,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q11-iii", topicId: "phys-2-1", conceptId: "celsius-to-kelvin",
     section: "B", questionRef: "2021 OL Q11(iii)",
-    stem: "The normal human body temperature is 37 °C.",
-    questionText: "Convert the normal human body temperature from degrees Celsius (°C) into kelvin (K).",
+    stem: "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection.",
+    questionText: "Convert the normal human body temperature from degrees Celcius (°C) into kelvin (K).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "310 K", marks: 6, contextNote: "Scheme working: (37 °C = 37 + 273 = ). Subtracting instead of adding (37 − 273) is listed only as a partial answer (3). The unit K is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(37 °C = 37 + 273 = ) 310 K", marks: 6, contextNote: "Partial credit (3): partial answer e.g. 37-273" },
     ],
   } as SecCard,
   {
@@ -852,12 +991,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q11-iv-v", topicId: "phys-2-1", conceptId: "thermometric-property",
-    section: "B", questionRef: "2021 OL Q11(iv)-(v)",
-    questionText: "(iv) Thermometers are designed to make use of thermometric properties. What is a thermometric property? (v) State one example of a thermometric property.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    section: "B", questionRef: "2021 OL Q11(iv)",
+    questionText: "Thermometers are designed to make use of thermometric properties. What is a thermometric property?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(measurable) property which changes with temperature change", marks: 6 },
-    { id: "r-2", kind: "alt", verbatim: "colour", marks: 3, accepts: ["voltage","volume","pressure","resistance"], openList: true },
+    { id: "r1", kind: "point", verbatim: "(measurable) property which changes with temperature change", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q11-v", topicId: "phys-2-1", conceptId: "example-of-thermometric-property",
+    section: "B", questionRef: "2021 OL Q11(v)",
+    questionText: "State one example of a thermometric property.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "anyN", verbatim: "colour / voltage / volume / pressure / resistance", marks: null, contextNote: "any one", openList: true, group: {"claimMax":1,"perOption":3,"options":["colour","voltage","volume","pressure","resistance"]} },
     ],
   } as SecCard,
   {
@@ -870,7 +1021,7 @@ export const CARDS: SecCard[] = [
     questionText: "Two thermometers may not give the same reading for a person’s temperature, even though both thermometers are working correctly. Explain why this is the case.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "different thermometric properties behave differently with changing temperature", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "different thermometric properties behave differently with changing temperature", marks: 4, contextNote: "The scheme gives (2) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -883,7 +1034,7 @@ export const CARDS: SecCard[] = [
     questionText: "U−value is a measure of the rate of heat loss through walls and windows. Describe two ways of reducing heat loss from a building.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "allOf", verbatim: "Insulation and double glazing", marks: 6, contextNote: "One of the two ways alone is the scheme's partial answer (3).", openList: true },
+    { id: "r1", kind: "point", verbatim: "Insulation and double glazing", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -893,11 +1044,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-i", topicId: "phys-4-6", conceptId: "nuclear-fission-definition",
     section: "B", questionRef: "2021 OL Q12(i)",
-    stem: "In 1938, Lise Meitner, together with chemist Otto Hahn, discovered nuclear fission.",
     questionText: "What is nuclear fission?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "splitting up of a nucleus ( into two parts) with the emission of particles", marks: 6, accepts: ["splitting up of a nucleus ( into two parts) with the emission of energy"], contextNote: "The scheme's solidus falls on the last term only: '...emission of particles / energy'." },
+    { id: "r1", kind: "point", verbatim: "splitting up of a nucleus ( into two parts) with the emission of particles /energy", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -907,12 +1057,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-ii", topicId: "phys-4-6", conceptId: "control-rods",
     section: "B", questionRef: "2021 OL Q12(ii)",
-    stem: "Fission reactors are used to generate electricity.",
     questionText: "What is the function of the control rods in a fission reactor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "absorb neutrons", marks: 6, route: "a" },
-    { id: "r-2", kind: "alt", verbatim: "slow down the rate of fission", marks: 6, accepts: ["slow down the rate of reaction"], route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "absorb neutrons / slow down the rate of fission/reaction", marks: null, contextNote: "The scheme gives (3) for a partial answer.", group: {"claimMax":1,"perOption":6,"options":["absorb neutrons","slow down the rate of fission/reaction"]} },
     ],
   } as SecCard,
   {
@@ -925,8 +1073,8 @@ export const CARDS: SecCard[] = [
     questionText: "A fission reactor is surrounded by shielding. What is the purpose of the shielding? What material is used as shielding?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "protection", marks: 3, accepts: ["safety","prevent radiation escaping"] },
-    { id: "r-2", kind: "alt", verbatim: "lead", marks: 3, accepts: ["concrete"] },
+    { id: "r1", kind: "point", verbatim: "protection / safety /prevent radiation escaping", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "lead / concrete", marks: 3 },
     ],
   } as SecCard,
   {
@@ -939,7 +1087,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one disadvantage of nuclear fission.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "radioactive waste", marks: 6, accepts: ["explosions","nuclear accidents"], openList: true },
+    { id: "r1", kind: "point", verbatim: "radioactive waste/ explosions/nuclear accidents", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -949,10 +1097,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-vi", topicId: "phys-4-4", conceptId: "radioactivity-definition",
     section: "B", questionRef: "2021 OL Q12(vi)",
+    stem: "Marie Curie also has an element named after her, curium, Cm. Curie was the first woman to win a Nobel Prize, which was for her study into radioactivity.",
     questionText: "What is meant by radioactivity?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(spontaneous) emission of (alpha and beta particles and gamma) rays from unstable nuclei", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "(spontaneous) emission of (alpha and beta particles and gamma) rays from unstable nuclei", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -962,10 +1111,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-vii", topicId: "phys-4-4", conceptId: "gamma-most-penetrating",
     section: "B", questionRef: "2021 OL Q12(vii)",
-    questionText: "There are three types of nuclear radiation: alpha, beta and gamma. Which type of nuclear radiation is the most penetrating?",
+    stem: "There are three types of nuclear radiation: alpha, beta and gamma.",
+    questionText: "Which type of nuclear radiation is the most penetrating?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "gamma", marks: 4, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "gamma", marks: 4 },
     ],
   } as SecCard,
   {
@@ -973,15 +1123,15 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q12-viii", topicId: "phys-u2", conceptId: "penetrating-power-experiment",
+    id: "phys-2021-ol-q12-viii", topicId: "phys-4-4", conceptId: "penetrating-power-experiment",
     section: "B", questionRef: "2021 OL Q12(viii)",
+    stem: "There are three types of nuclear radiation: alpha, beta and gamma.",
     questionText: "Describe an experiment to compare the penetrating power of the three types of nuclear radiation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "radioactive sources, barriers, detector", marks: 3, accepts: ["GM tube"], contextNote: "Apparatus: naming any two of these three items scores the full 3 marks. Unlike the other apparatus lists in this paper the scheme does NOT award 3 marks per item here, so there is no per-item value. The detector may be named as a GM tube." },
-    { id: "r-2", kind: "point", verbatim: "place different barriers between the sources and the detector", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "alpha is stopped first", marks: 3, route: "a" },
-    { id: "r-4", kind: "point", verbatim: "gamma penetrates best", marks: 3, route: "b" },
+    { id: "r1", kind: "point", verbatim: "apparatus: radioactive sources, barriers, detector/GM tube any two", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "procedure: place different barriers between the sources and the detector", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: alpha is stopped first // gamma penetrates best", marks: 3, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
     ],
   } as SecCard,
   {
@@ -991,11 +1141,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-ix", topicId: "phys-4-4", conceptId: "isotopes-definition",
     section: "B", questionRef: "2021 OL Q12(ix)",
-    stem: "Marie Curie developed techniques for isolating radioactive isotopes.",
     questionText: "What are isotopes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "atoms of the same element with different numbers of neutrons", marks: 6, contextNote: "Naming an isotope instead of defining the term is listed only as a partial answer (3)." },
+    { id: "r1", kind: "point", verbatim: "atoms of the same element with different numbers of neutrons", marks: 6, contextNote: "Partial credit (3): partial answer e.g. named isotope" },
     ],
   } as SecCard,
   {
@@ -1005,11 +1154,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q12-x", topicId: "phys-4-4", conceptId: "neutron-number-from-nuclide-notation",
     section: "B", questionRef: "2021 OL Q12(x)",
-    questionText: "One isotope of curium is Cm96 247. How many neutrons are in this isotope?",
+    questionText: "One isotope of curium is Cm₉₆ ²⁴⁷. How many neutrons are in this isotope?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "151 neutrons", marks: 3, contextNote: "Scheme working: (247 – 96 = ). The nuclide notation is flattened in the extracted text — read it as curium-247 with atomic number 96, so neutrons = mass number − atomic number." },
+    { id: "r1", kind: "point", verbatim: "(247 – 96 =) 151 neutrons", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q12x-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q12x-question.png",
+          "srcHash": "bfd9bf647e801c5397afb437437d38f3",
+          "alt": "The printed question: (x) One isotope of curium is Cm with 247 written above and 96 below after the symbol. How many neutrons are in this isotope? (28)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1018,11 +1175,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q13-a", topicId: "phys-4-1", conceptId: "millikan-oil-drop-result",
     section: "B", questionRef: "2021 OL Q13(a)",
-    stem: "An experiment performed by Robert Millikan in 1909 involved putting a charge on a tiny drop of oil and measuring how strong an applied electric field had to be in order to stop the oil drop from falling.",
     questionText: "What did Millikan determine with his 1909 oil drop experiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "size of the charge on an electron", marks: 7, accepts: ["there was a smallest unit charge"] },
+    { id: "r1", kind: "point", verbatim: "size of the charge on an electron/there was a smallest unit charge", marks: 7 },
     ],
   } as SecCard,
   {
@@ -1035,7 +1191,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the size of the charge on one electron?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.6 × 10-19 C", marks: 7, contextNote: "Superscripts are flattened in the extracted scheme text — read as 1.6 × 10^-19 C. The unit C is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "1.6 × 10⁻¹⁹ C", marks: 7 },
     ],
   } as SecCard,
   {
@@ -1045,11 +1201,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q13-c", topicId: "phys-4-2", conceptId: "thermionic-emission-in-xray-tube",
     section: "B", questionRef: "2021 OL Q13(c)",
-    questionText: "X-rays are made by accelerating electrons across an X-ray tube. How are the electrons produced in an X-ray tube?",
+    questionText: "X‐rays are made by accelerating electrons across an X‐ray tube. How are the electrons produced in an X‐ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "thermionic emission", marks: 7, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "hot cathode", marks: 7, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "thermionic emission / hot cathode", marks: null, contextNote: "The scheme gives (4) for a partial answer.", group: {"claimMax":1,"perOption":7,"options":["thermionic emission","hot cathode"]} },
     ],
   } as SecCard,
   {
@@ -1059,11 +1214,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q13-d", topicId: "phys-4-1", conceptId: "mass-from-density-and-volume",
     section: "B", questionRef: "2021 OL Q13(d)",
-    questionText: "A drop has a volume of 2.03 × 10−17 m3 and a density of 886 kg m−3. Calculate the mass of the drop.",
+    questionText: "A drop has a volume of 2.03 × 10⁻¹⁷ m³ and a density of 886 kg m⁻³. Calculate the mass of the drop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.8 × 10-14 kg", marks: 7, contextNote: "Scheme working: (M = ρV = (886)(2.03 × 10-17) = ). Superscripts are flattened — read as 1.8 × 10^-14 kg from a volume of 2.03 × 10^-17 m^3." },
+    { id: "r1", kind: "point", verbatim: "(M = ρV = (886)(2.03 × 10⁻¹⁷) = ) 1.8 × 10⁻¹⁴ kg", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q13-e", topicId: "phys-3-3", conceptId: "battery-symbol",
+    section: "B", questionRef: "2021 OL Q13(e)",
+    questionText: "Draw the circuit symbol for a battery.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "Draw the circuit symbol for a battery.", marks: 7, contextNote: "The scheme draws the symbol (shown at the reveal) and prices it 7; it prints no words for it. It gives (4) for \"partial answer e.g. capacitor //supply symbol\".", ask: true },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q13e-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q13e-scheme.png",
+          "srcHash": "a4dd6ff1d06002aa483abd6a139dfdea",
+          "alt": "The marking scheme's drawing of a circuit symbol: a pair of long and short parallel plates, a dashed line, and a second pair of long and short plates, with a wire leading out at each end.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1075,8 +1252,30 @@ export const CARDS: SecCard[] = [
     questionText: "In the oil drop experiment, Millikan applied an electric field between the plates until the drop no longer moved up or down. What is an electric field?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "region/space around a charge in which another charged particle will experience a force", marks: 7, accepts: ["space around a charge in which another charged particle will experience a force"], contextNote: "The scheme's solidus is on the opening word only: 'region / space around a charge...'." },
+    { id: "r1", kind: "point", verbatim: "region/space around a charge in which another charged particle will experience a force", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q13-g", topicId: "phys-3-2", conceptId: "field-between-plates",
+    section: "B", questionRef: "2021 OL Q13(g)",
+    questionText: "Sketch the electric field that is formed between two oppositely charged parallel plates.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "correct diagram", marks: 7, contextNote: "The scheme prints no answer here, only what earns the marks. The scheme gives (4) for a partial answer." },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q13g-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q13g-scheme.png",
+          "srcHash": "73cde786b96a896bb6ac7a02cc78613d",
+          "alt": "The marking scheme's drawing: two parallel plates, the left one marked with red plus signs and the right one with red minus signs, joined by straight blue field lines with arrows pointing from the plus plate to the minus plate.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1086,10 +1285,10 @@ export const CARDS: SecCard[] = [
     id: "phys-2021-ol-q14a-i", topicId: "phys-1-1", conceptId: "average-speed-distance-over-time",
     section: "B", questionRef: "2021 OL Q14(a)(i)",
     stem: "A SpaceX Falcon 9 rocket carrying two astronauts launched from the Kennedy Space Centre in Florida on 30th May 2020. The rocket was headed for the International Space Station (ISS).",
-    questionText: "The rocket was visible in Irish skies 15 minutes after take-off. At that time it had travelled a distance of 6484 km. Calculate the rocket’s average speed during this part of the journey.",
+    questionText: "The rocket was visible in Irish skies 15 minutes after take‐off. At that time it had travelled a distance of 6484 km. Calculate the rocket’s average speed during this part of the journey.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7.2 km s-1", marks: 6, contextNote: "Scheme working: (v = s/t = 6484 × 10^3 / (15)(60) = ). The unit is flattened in the extracted text — read as 7.2 km s^-1." },
+    { id: "r1", kind: "point", verbatim: "(v= s/t = (6484 ×10³)/((15)(60)) =) 7.2 km s⁻¹", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -1097,12 +1296,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14a-ii", topicId: "phys-1-6", conceptId: "orbits-per-day-from-period",
+    id: "phys-2021-ol-q14a-ii", topicId: "phys-1-5", conceptId: "orbits-per-day-from-period",
     section: "B", questionRef: "2021 OL Q14(a)(ii)",
+    stem: "A SpaceX Falcon 9 rocket carrying two astronauts launched from the Kennedy Space Centre in Florida on 30th May 2020. The rocket was headed for the International Space Station (ISS).",
     questionText: "The rocket later docked on the ISS. The ISS orbits the Earth every 93 minutes. How many full orbits of the Earth does the ISS complete each day?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "15", marks: 6, contextNote: "Scheme working: (number of orbits = (24)(60) / 93 = 15.48 = ). The answer is the number of FULL orbits, so 15.48 is rounded down." },
+    { id: "r1", kind: "point", verbatim: "(number of orbits = (24)(60)/93 = 15.48 = ) 15", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -1115,7 +1315,9 @@ export const CARDS: SecCard[] = [
     questionText: "Newton’s law of universal gravitation describes the force of attraction between the ISS and the Earth. State Newton’s law of universal gravitation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Force of attraction between two point masses is proportional to the product of the masses and inversely proportional to the square of the distance between them", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "Force of attraction between two point masses is proportional to the product of the masses and inversely proportional to the square of the distance between them", marks: 6, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side.", route: "side-a" },
+    { id: "r2", kind: "point", verbatim: "// F∝ m₁m₂/d²", marks: 6, route: "side-b" },
+    { id: "r3", kind: "point", verbatim: "//F= G m₁m₂/d²", marks: 6, contextNote: "The scheme gives (3) for a partial answer.", route: "side-c" },
     ],
   } as SecCard,
   {
@@ -1124,14 +1326,40 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14a-iv-vi", topicId: "phys-1-5", conceptId: "weight-and-mass-at-altitude",
-    section: "B", questionRef: "2021 OL Q14(a)(iv)-(vi)",
-    stem: "The ISS is located 400 km above the Earth’s surface. At this altitude, the acceleration due to gravity is 90% as strong as it is on the Earth’s surface. Before travelling to the ISS, the mass of one of the astronauts was measured to be 85 kg.",
-    questionText: "(iv) Calculate the astronaut’s weight on Earth. (v) What is the astronaut’s mass at the altitude of the ISS? (vi) Calculate the astronaut’s weight at the altitude of the ISS.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    section: "B", questionRef: "2021 OL Q14(a)(iv)",
+    stem: "The ISS is located 400 km above the Earth’s surface. At this altitude, the acceleration due to gravity is 90% as strong as it is on the Earth’s surface. Before travelling to the ISS, the mass of one of the astronauts was measured to be 85 kg. (acceleration due to gravity on Earth’s surface = 9.8 m s⁻²)",
+    questionText: "Calculate the astronaut’s weight on Earth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "833 N", marks: 4, contextNote: "Scheme working: (weight = mg = (85)(9.8) = )." },
-    { id: "r-2", kind: "point", verbatim: "(mass does not change) 85 kg", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "749.7 N", marks: 3, contextNote: "Scheme working: ((0.9)(833) = )." },
+    { id: "r1", kind: "point", verbatim: "(weight = mg = (85)(9.8) = ) 833 N", marks: 4, contextNote: "The scheme gives (2) for a partial answer." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14-a-v", topicId: "phys-1-5", conceptId: "mass-at-altitude",
+    section: "B", questionRef: "2021 OL Q14(a)(v)",
+    stem: "The ISS is located 400 km above the Earth’s surface. At this altitude, the acceleration due to gravity is 90% as strong as it is on the Earth’s surface. Before travelling to the ISS, the mass of one of the astronauts was measured to be 85 kg.",
+    questionText: "What is the astronaut’s mass at the altitude of the ISS?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(mass does not change) 85 kg", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14-a-vi", topicId: "phys-1-5", conceptId: "weight-at-altitude",
+    section: "B", questionRef: "2021 OL Q14(a)(vi)",
+    stem: "The ISS is located 400 km above the Earth’s surface. At this altitude, the acceleration due to gravity is 90% as strong as it is on the Earth’s surface. Before travelling to the ISS, the mass of one of the astronauts was measured to be 85 kg. (acceleration due to gravity on Earth’s surface = 9.8 m s⁻²)",
+    questionText: "Calculate the astronaut’s weight at the altitude of the ISS.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "((0.9)(833) = ) 749.7 N", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1143,11 +1371,19 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Q14(b)(i)",
     stem: "Lightning is a naturally occurring electrostatic discharge. It is caused by an imbalance between two electrically charged regions, usually a cloud and the ground.",
     questionText: "As charge builds up on a cloud, the cloud induces a charge on objects on Earth. Explain how objects can be charged by induction. (A labelled diagram may help your answer.)",
-    tariffModel: {"kind":"orderedSplit","notation":"10 or 7 or 4"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a charged object A is brought near to but not touching a neutral conducting object B", marks: null },
-    { id: "r-2", kind: "point", verbatim: "object B is then earthed.", marks: null },
+    { id: "r1", kind: "point", verbatim: "a charged object A is brought near to but not touching a neutral conducting object B object B is then earthed.", marks: 10, contextNote: "The scheme gives 10 for \"three lines correct\", (7) for \"two lines correct\" and (4) for a partial answer; marks may be obtained from a diagram." },
     ],
+    figure: {
+          "candId": "physics-2021-ol-q14bi-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14bi-scheme.png",
+          "srcHash": "8c19c6f51e3d5d78ee1bcb2d7e7e27fb",
+          "alt": "The marking scheme's drawing: two objects on stands, A on the left with red plus signs around it and B on the right with none.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1160,7 +1396,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the power generated when lightning discharges.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3× 1012 W", marks: 6, contextNote: "Scheme working: (P = E/t = 0.9 × 10^9 / 3 × 10^-4 = ). Superscripts are flattened in the extracted text — read as 3 × 10^12 W. The unit W is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "(P= E/t = (0.9 ×10⁹)/(3 × 10⁻⁴) =) 3× 10¹² W", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -1168,14 +1404,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14b-iv", topicId: "phys-u2", conceptId: "charge-resides-on-outside-experiment",
+    id: "phys-2021-ol-q14b-iv", topicId: "phys-3-1", conceptId: "charge-resides-on-outside-experiment",
     section: "B", questionRef: "2021 OL Q14(b)(iv)",
     questionText: "Describe an experiment to show that static charge accumulates on the outside of a metal object.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "allOf", verbatim: "charged hollow conductor, proof plane, GLE", marks: 2, openList: true },
-    { id: "r-2", kind: "point", verbatim: "touch the proof plane against the inside of the charged conductor and then against the cap of the GLE. Repeat touching the proof plane against the outside of the charged conductor.", marks: 2, openList: true },
-    { id: "r-3", kind: "alt", verbatim: "the leaf of the GLE deflects/moves when the proof plane was touched against the outside of the conductor but not the inside", marks: 2, accepts: ["the leaf of the GLE moves when the proof plane was touched against the outside of the conductor but not the inside."], contextNote: "The scheme's solidus is on the verb only: 'the leaf of the GLE deflects / moves...'." },
+    { id: "r1", kind: "point", verbatim: "apparatus: e.g. charged hollow conductor, proof plane, GLE", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "procedure: e.g. touch the proof plane against the inside of the charged conductor and then against the cap of the GLE. Repeat touching the proof plane against the outside of the charged conductor.", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: the leaf of the GLE deflects/moves when the proof plane was touched against the outside of the conductor but not the inside.", marks: 2 },
     ],
   } as SecCard,
   {
@@ -1189,7 +1425,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is a magnetic field?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "region/space around a magnet where magnetic forces act", marks: 6, accepts: ["space around a magnet where magnetic forces act"], contextNote: "The scheme's solidus is on the opening word only: 'region / space around a magnet...'." },
+    { id: "r1", kind: "point", verbatim: "region/space around a magnet where magnetic forces act", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -1197,16 +1433,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14c-ii", topicId: "phys-u2", conceptId: "plotting-the-field-of-a-bar-magnet",
+    id: "phys-2021-ol-q14c-ii", topicId: "phys-3-4", conceptId: "plotting-the-field-of-a-bar-magnet",
     section: "B", questionRef: "2021 OL Q14(c)(ii)",
     questionText: "Describe an experiment to plot the magnetic field around a bar magnet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "magnet, (plotting) compass", marks: 2, accepts: ["magnet, iron filings"] },
-    { id: "r-2", kind: "point", verbatim: "(place the compass on the paper and) mark the dots", marks: 2, route: "a" },
-    { id: "r-3", kind: "point", verbatim: "sprinkle filings", marks: 2, route: "b" },
-    { id: "r-4", kind: "alt", verbatim: "join the dots", marks: 2, accepts: ["show field lines","lines go from north to south","field lines are concentrated at the magnet poles"], route: "a" },
-    { id: "r-5", kind: "point", verbatim: "tap filings", marks: 2, route: "b" },
+    { id: "r1", kind: "point", verbatim: "apparatus: magnet, plotting) compass / iron filings", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "procedure: use the apparatus to locate the field lines e.g. (place the compass on the paper and) mark the dots // sprinkle filings", marks: 2, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: join the dots/ show field lines / lines go from north to south/ field lines are concentrated at the magnet poles // tap filings", marks: 2, contextNote: "marks may be obtained from a diagram" },
     ],
   } as SecCard,
   {
@@ -1214,14 +1448,36 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14c-iv", topicId: "phys-u2", conceptId: "force-on-a-current-carrying-conductor-demo",
-    section: "B", questionRef: "2021 OL Q14(c)(iv)",
-    questionText: "How could a student show that a current-carrying conductor experiences a force in a magnetic field?",
+    id: "phys-2021-ol-q14-c-iii", topicId: "phys-3-4", conceptId: "field-around-a-conductor",
+    section: "B", questionRef: "2021 OL Q14(c)(iii)",
+    questionText: "Draw a diagram to show the magnetic field around a current‐carrying conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "allOf", verbatim: "current carrying conductor e.g. 6V battery, tin foil, magnet, leads", marks: 2, openList: true },
-    { id: "r-2", kind: "point", verbatim: "(briefly) connect the circuit", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "tin foil moves when magnet is near", marks: 2, openList: true },
+    { id: "r1", kind: "criterion", verbatim: "correct diagram", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. The scheme gives (3) for a partial answer." },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q14ciii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14ciii-scheme.png",
+          "srcHash": "662d7219e079ff3d6b7803857ef9ff04",
+          "alt": "The marking scheme's drawing: a vertical orange arrow labelled current carrying conductor passes through three dashed concentric ellipses labelled magnetic field, each with an arrowhead showing direction.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14c-iv", topicId: "phys-3-5", conceptId: "force-on-a-current-carrying-conductor-demo",
+    section: "B", questionRef: "2021 OL Q14(c)(iv)",
+    questionText: "How could a student show that a current‐carrying conductor experiences a force in a magnetic field?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "apparatus: current carrying conductor e.g. 6V battery, tin foil, magnet, leads", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "procedure: (briefly) connect the circuit", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: e.g. tin foil moves when magnet is near", marks: 2, contextNote: "marks may be obtained from a diagram" },
     ],
   } as SecCard,
   {
@@ -1234,7 +1490,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one use of magnets.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "in compass for direction", marks: 4, accepts: ["to seal fridge door"], contextNote: "A SPECIFIC use scores the full 4; a general use (e.g. in radio, cars) scores only 2.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "in compass for direction / to seal fridge door", marks: null, contextNote: "Partial credit (2): general use e.g. in radio, cars, etc The scheme prints them as \"specific use e.g. ...\".", openList: true, group: {"claimMax":1,"perOption":4,"options":["in compass for direction","to seal fridge door"]} },
     ],
   } as SecCard,
   {
@@ -1244,11 +1500,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14d-i", topicId: "phys-2-5", conceptId: "unit-of-sound-intensity-level",
     section: "B", questionRef: "2021 OL Q14(d)(i)",
-    stem: "Sounds are produced when something vibrates.",
     questionText: "What is the unit of sound intensity level?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "bel", marks: 3, accepts: ["B","decibel","dB"] },
+    { id: "r1", kind: "point", verbatim: "bel / B / decibel / dB", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1256,14 +1511,15 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14d-ii", topicId: "phys-u2", conceptId: "resonance-experiment",
+    id: "phys-2021-ol-q14d-ii", topicId: "phys-2-6", conceptId: "resonance-experiment",
     section: "B", questionRef: "2021 OL Q14(d)(ii)",
+    stem: "Sounds are produced when something vibrates.",
     questionText: "Resonance is the transfer of energy between two bodies with the same natural frequency. Describe an experiment to demonstrate resonance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "two objects with the same natural frequency e.g. two mounted tuning forks (of the same frequency)", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "set one vibrating and bring the other close", marks: 3, openList: true },
-    { id: "r-3", kind: "point", verbatim: "energy transfer e.g. the second tuning fork vibrates", marks: 3, openList: true },
+    { id: "r1", kind: "point", verbatim: "apparatus: two objects with the same natural frequency e.g. two mounted tuning forks (of the same frequency)", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "procedure: e.g. set one vibrating and bring the other close", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "observation/conclusion: energy transfer e.g. the second tuning fork vibrates", marks: 3, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -1276,32 +1532,16 @@ export const CARDS: SecCard[] = [
     questionText: "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frequency is inversely proportional to the length", marks: 6, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "fl = k", marks: 6, route: "b" },
+    { id: "r1", kind: "anyN", verbatim: "frequency is inversely proportional to the length / fl = k / f∝ 1/l", marks: null, contextNote: "The scheme gives (3) for a partial answer.", group: {"claimMax":1,"perOption":6,"options":["frequency is inversely proportional to the length","fl = k","f∝ 1/l"]} },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p14-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i0.png",
-          "srcHash": "4a81ff781d90775641631b0d91b025ce",
-          "alt": "A grey-scale photograph of a sonometer seen at an angle from the lower left: a long rectangular wooden sound box with a circular sound hole in its near face and a second hole further along, a wire stretched along its top surface passing over two movable wedge-shaped bridges, a peg or tensioning assembly with two uprights at the far right end, and a metal end-piece at the near left end from which a cord hangs down. The photograph is centred on the page between the sliced last line of Q14(d)(ii) above it and the line of Q14(d)(iii) below it, which reads \"A sonometer, shown above, can be used to investigate the relationship between\".",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q14d-sonometer",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-sonometer.png",
+          "srcHash": "376414813e4410d6a3c028ea48e910f5",
+          "alt": "Photograph of a sonometer: a long wooden box with a wire stretched along its top over two bridges, a tension key at one end and pegs at the other.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: indiamart.com; State Examinations Commission (images on page 14)",
           "lettersVisible": []
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14d-iv-v", topicId: "phys-2-6", conceptId: "stationary-wave-nodes-wavelength-and-frequency",
-    section: "B", questionRef: "2021 OL Q14(d)(iv)-(v)",
-    stem: "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
-    questionText: "(iv) Calculate the wavelength of the wave. (v) Calculate the frequency of the wave.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "0.8 m", marks: 6, contextNote: "Scheme working: (λ = 2(0.4) = ) — adjacent nodes are half a wavelength apart, so the 40 cm is doubled and converted to metres." },
-    { id: "r-2", kind: "point", verbatim: "475 Hz", marks: 4, contextNote: "Scheme working: (f = v/λ = 380 / 0.8 = )." },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7004,20 +7244,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6i-fig", topicId: "phys-4-2", conceptId: "x-ray-tube-target-tungsten",
     section: "B", questionRef: "2021 OL Q6(i)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
-    questionText: "The picture on the right is an X-ray tube. The target in an X-ray tube is usually made of tungsten. What property of tungsten makes it suitable for this use?",
+    questionText: "The picture on the right is an X‐ray tube. The target in an X‐ray tube is usually made of tungsten. What property of tungsten makes it suitable for this use?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "high melting point", marks: 7, contextNote: "Any one of the three routes scores the full 7. The scheme also allows 'partial answer (4)' as a fallback.", route: "melting-point" },
-    { id: "r-2", kind: "point", verbatim: "high atomic number", marks: 7, route: "atomic-number" },
-    { id: "r-3", kind: "point", verbatim: "high density", marks: 7, route: "density" },
+    { id: "r1", kind: "anyN", verbatim: "high melting point / high atomic number / high density", marks: null, contextNote: "The scheme gives (4) for a partial answer.", group: {"claimMax":1,"perOption":7,"options":["high melting point","high atomic number","high density"]} },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p05-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p05-i0.png",
-          "srcHash": "b0085890f2fae0bac5fa28d7dfbe14c6",
-          "alt": "On the right of the crop is a grey-scale photograph of an X-ray tube lying at an angle: a sealed glass envelope with a long cylindrical metal insert running down its axis, a ribbed metal collar around the middle, a dark cap on the right-hand end, and a thin curled wire lead trailing away from the lower-left end. To the left of the photograph is the printed exam text for Q6(g) (Coulomb's law written as F = (1/4pi.epsilon)(q1q2/d^2), asking what F, q and d stand for), Q6(h) (SI unit of magnetic flux density and of capacitance) and Q6(i), which refers to \"the picture on the right\".",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q6i-xray",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q6i-xray.png",
+          "srcHash": "571fe8103f45ad18e85e04fc38dfca2e",
+          "alt": "Photograph of an X-ray tube: a long glass envelope with a metal electrode assembly inside, a cylinder at one end and a coiled lead at the other.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: illustoon.com; orau.org (images on page 5)",
           "lettersVisible": []
     },
   } as SecCard,
@@ -7032,14 +7269,14 @@ export const CARDS: SecCard[] = [
     questionText: "State the relationship between resistance and length.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "R ∝ l / proportional", marks: 6, contextNote: "Single solidus = equally acceptable phrasings of the same point. The scheme also allows 'partial answer (3)' as a fallback." },
+    { id: "r1", kind: "point", verbatim: "R ∝ l / proportional", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p08-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i0.png",
-          "srcHash": "c5d9c184f37ea9f746fedcf53b2ba702",
-          "alt": "On the right is a grey-scale photograph of a laboratory rheostat: a long ceramic tube closely wound with resistance wire, mounted horizontally between two metal end-plates on a small stand with terminals, and a sliding contact riding on a bar above the winding, with a lead running off the right-hand end. To the left is the printed text explaining that the photograph shows a rheostat (a variable resistor) whose resistance changes when the sliding contact is moved, followed by Q9(iii).",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q9-rheostat",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-rheostat.png",
+          "srcHash": "c896da18a00c0f08b3e14a84b65ca6e2",
+          "alt": "Photograph of a laboratory rheostat: a coil of wire wound on a tube between two end mounts, with a sliding contact on a bar above it and terminals at the ends.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electronics-tutorials.ws; State Examinations Commission; shutterstock.com (images on page 8)",
           "lettersVisible": []
     },
   } as SecCard,
@@ -7054,24 +7291,19 @@ export const CARDS: SecCard[] = [
     questionText: "Name the wire labelled Q.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "live", marks: 4, contextNote: "The scheme allows 'partial answer e.g. brown (2)' as a fallback." },
+    { id: "r1", kind: "point", verbatim: "live", marks: 4, contextNote: "Partial credit (2): partial answer e.g. brown" },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p08-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i1.png",
-          "srcHash": "a2a55b69ae712a5fa98f5ebd449b29d7",
-          "alt": "On the left of the crop is a labelled line diagram of the inside of a three-pin mains plug with its cover removed, drawn as a rounded outline with grey-shaded internal metalwork and two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp, and fan out to screw terminals: one arcs up to the terminal at the top, one goes left to a terminal on the left-hand side, and one goes right to a terminal beside a cartridge fuse held in clips on the right. Leader lines label: \"P\" to the wire running up to the top terminal, \"Neutral\" to the wire running to the left terminal, \"Fuse\" to the cartridge fuse, \"Q\" to the wire running to the right-hand terminal, \"Cable grip\" to the clamp at the bottom, and \"Cable\" to the sheathed cable leaving the bottom. To the right is the printed text for Q9(ix) and Q9(x) and the mark allocation (8).",
+          "candId": "physics-2021-ol-paper-p008-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p008-i1.png",
+          "srcHash": "1c4f670e679ef7e1b25684ff5c84c326",
+          "alt": "Labelled line diagram of the inside of a three-pin mains plug with its cover removed: rounded plug body outline, grey-shaded internal metalwork, two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp and fan out to screw terminals - one arcs up to the top terminal, one runs left to a terminal on the left-hand side, one runs right to a terminal beside a cartridge fuse held in clips. Six leader lines label the drawing: 'P' to the wire running up to the top terminal, 'Q' to the wire running to the right-hand terminal, 'Neutral' to the wire running to the left terminal, 'Fuse' to the cartridge fuse, 'Cable grip' to the clamp, and 'Cable' to the sheathed cable leaving the bottom. Diagram only - the right-hand column of printed question text on the page has been cropped away.",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
-                "P",
-                "Q",
-                "Fuse",
-                "Neutral",
-                "Cable grip",
-                "Cable"
+                "Q"
           ]
     },
-    labelKey: [{"letter":"P","meaning":"The earth wire (yellow and green insulation) — its function is asked in part (ix)","askedInThisQuestion":false},{"letter":"Q","meaning":"The live wire (brown insulation)","askedInThisQuestion":true},{"letter":"Fuse","meaning":"Printed label — the cartridge fuse on the live side of the plug","askedInThisQuestion":false},{"letter":"Neutral","meaning":"Printed label — the neutral wire and its terminal on the left of the plug","askedInThisQuestion":false},{"letter":"Cable grip","meaning":"Printed label — the clamp holding the cable where it enters the plug","askedInThisQuestion":false},{"letter":"Cable","meaning":"Printed label — the three-core flex entering the plug from below","askedInThisQuestion":false}],
+    labelKey: [{"letter":"Q","meaning":"live","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7080,70 +7312,64 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14b-iii-fig", topicId: "phys-3-1", conceptId: "charge-distribution-pointed-conductor",
     section: "B", questionRef: "2021 OL Q14(b)(iii)",
-    stem: "Lightning is a naturally occurring electrostatic discharge. It is caused by an imbalance between two electrically charged regions, usually a cloud and the ground.",
     questionText: "Draw a diagram to show the distribution of charge on a pear shaped conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram showing more concentration at point", marks: 6, contextNote: "The scheme allows 'partial answer (3)' as a fallback." },
+    { id: "r1", kind: "point", verbatim: "diagram showing more concentration at point", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p13-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p13-i1.png",
-          "srcHash": "1c811f7968384d5774ae432554916a48",
-          "alt": "On the right of the crop is a single closed pear-shaped outline drawn as a thin grey line on white: rounded and broad at the left, narrowing to a blunt point at the right. Nothing is drawn inside it, and it has no labels, charges or arrows. To the left is the printed text for Q14(b) parts (ii), (iii) and (iv), and the mark allocation (18) at the lower right.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q14biii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14biii-scheme.png",
+          "srcHash": "a90d12c0813c3053876d6e8abc3b382c",
+          "alt": "The marking scheme's drawing: a pear-shaped conductor outlined in grey with blue plus signs around it, more of them bunched at the pointed end.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14d-iv-fig", topicId: "phys-2-6", conceptId: "stationary-wave-wavelength-from-nodes",
     section: "B", questionRef: "2021 OL Q14(d)(iv)",
-    stem: "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+    stem: "Waves on a stretched string travel at a speed of 380 m s⁻¹. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
     questionText: "Calculate the wavelength of the wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(𝜆 = 2(0.4) = ) 0.8 m", marks: 6, contextNote: "The scheme allows 'partial answer (3)' as a fallback." },
+    { id: "r1", kind: "point", verbatim: "(λ = 2(0.4) = ) 0.8 m", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p14-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
-          "srcHash": "af8f66319b999e70b5604693adb032ac",
-          "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "40 cm"
-          ]
+          "candId": "physics-2021-ol-q14d-wave",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-wave.png",
+          "srcHash": "584408a8e5ebb32b810d6eb2ae599439",
+          "alt": "Diagram of a stationary wave: two curves cross at a point near each end and bow apart between them, with a dashed double-headed arrow below marked 40 cm running between the two crossing points.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"40 cm","meaning":"The distance between two adjacent nodes of the stationary wave — one loop of the standing-wave envelope, equal to half a wavelength","askedInThisQuestion":true}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14d-v-fig", topicId: "phys-2-6", conceptId: "stationary-wave-frequency",
     section: "B", questionRef: "2021 OL Q14(d)(v)",
-    stem: "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+    stem: "Waves on a stretched string travel at a speed of 380 m s⁻¹. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
     questionText: "Calculate the frequency of the wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(𝑓= 𝜆 = 0.8 =) 475 Hz", marks: 4, contextNote: "Extraction flattened the fractions: the printed scheme reads f = v/λ = 380/0.8 = 475 Hz — the numerators '𝑣 380' sit on the previous line of the extracted markdown. The scheme also allows 'partial answer (2)' as a fallback." },
+    { id: "r1", kind: "point", verbatim: "(f= v/λ = 380/0.8 =) 475 Hz", marks: 4, contextNote: "The scheme gives (2) for a partial answer." },
     ],
     figure: {
-          "candId": "physics-2021-OL-paper-p14-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
-          "srcHash": "af8f66319b999e70b5604693adb032ac",
-          "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "40 cm"
-          ]
+          "candId": "physics-2021-ol-q14d-wave",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-wave.png",
+          "srcHash": "584408a8e5ebb32b810d6eb2ae599439",
+          "alt": "Diagram of a stationary wave: two curves cross at a point near each end and bow apart between them, with a dashed double-headed arrow below marked 40 cm running between the two crossing points.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"40 cm","meaning":"The distance between two adjacent nodes of the stationary wave (half a wavelength) — used in part (iv) to find the wavelength this part relies on","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7381,19 +7607,27 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q8-vii", topicId: "phys-2-3", conceptId: "what-diffraction-through-a-gap-looks-like",
-    section: "A", questionRef: "2021 OL Q8(vii)",
-    stem: "A wave can be described as a travelling disturbance that transports energy from one point to another.",
+    section: "B", questionRef: "2021 OL Q8(vii)",
     questionText: "The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction.",
-    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "waves spreading out from the slit", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "diagram to show: waves spreading out from the slit", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q8vii-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-question.png",
+          "srcHash": "4c402a2bc1dbdab7b1a96e3ca843b66d",
+          "alt": "The printed question: (vii) The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction. Below it, four curved grey wave fronts approach a black barrier with a gap in its middle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
     figure: {
-          "candId": "physics-2021-ol-paper-p007-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p007-i0.png",
-          "srcHash": "6b95c659e4e54499841fffaa2fbd3fd9",
-          "alt": "Four curved vertical wave fronts, drawn as thin grey lines and evenly spaced, travelling left to right towards a barrier drawn as two thick black vertical bars with a narrow gap between them at mid-height. The space to the right of the barrier is empty white, since the candidate is asked to copy the diagram and complete it to show diffraction through the gap. No lettering.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q8vii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-scheme.png",
+          "srcHash": "c8e7f4a06d6a0e2d392a592fe8524d3b",
+          "alt": "The marking scheme's drawing: three vertical black lines, the last with a gap, and three blue semicircular arcs on the far side of the gap, centred on it.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -7404,14 +7638,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q1-i", topicId: "phys-u2", conceptId: "apparatus-for-the-free-fall-experiment",
     section: "A", questionRef: "2021 OL Q1(i)",
-    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s−2. s (m) 0.4 0.5 0.6 0.7 0.8 0.9 t (s) 0.29 0.32 0.35 0.38 0.40 0.43",
-    questionText: "Draw a labelled diagram of the apparatus used in this experiment. (12)",
-    tariffModel: {"kind":"fixed","notation":"4 × 3"}, totalMarks: 12,
+    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured.",
+    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "falling object e.g. (metal) ball", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "starting mechanism e.g. release mechanism", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "stopping mechanism e.g. trapdoor", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "means of measuring time e.g. timing circuit/ (electronic) timer", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "falling object e.g. (metal) ball", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "starting mechanism e.g. release mechanism", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "stopping mechanism e.g. trapdoor", marks: 3 },
+    { id: "r4", kind: "point", verbatim: "means of measuring time e.g. timing circuit/ (electronic) timer", marks: 3, contextNote: "NOTE: no labels deduct 2 The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -7419,14 +7653,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q1-vi", topicId: "phys-u2", conceptId: "more-values-for-g-and-their-average",
+    id: "phys-2021-ol-q1-vi", topicId: "phys-1-5", conceptId: "more-values-for-g-and-their-average",
     section: "A", questionRef: "2021 OL Q1(vi)",
-    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s−2. s (m) 0.4 0.5 0.6 0.7 0.8 0.9 t (s) 0.29 0.32 0.35 0.38 0.40 0.43",
+    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The student recorded the following results. s (m) 0.4 0.5 0.6 0.7 0.8 0.9 t (s) 0.29 0.32 0.35 0.38 0.40 0.43",
     questionText: "Use the results to calculate two other values for g and calculate their average.",
-    tariffModel: {"kind":"fixed","notation":"2 × 3"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "9.76 m s-2, 9.8 m s-2, 9.69 m s-2, 10 m s-2, 9.73 m s-2 any two", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "average of any two above", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "9.76 m s⁻², 9.8 m s⁻², 9.69 m s⁻², 10 m s⁻², 9.73 m s⁻² any two", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "average of any two above", marks: 3 },
     ],
   } as SecCard,
   {
@@ -7436,14 +7670,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-i", topicId: "phys-u2", conceptId: "apparatus-for-the-boyles-law-experiment",
     section: "A", questionRef: "2021 OL Q2(i)",
-    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm3) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"4 × 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "enclosed volume of gas", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "means of measuring/reading the volume scale", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "means of measuring/ reading the pressure e.g. pressure gauge", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "means of altering the pressure/volume e.g. pump", marks: 3 },
+    { id: "r1", kind: "anyN", verbatim: "enclosed volume of gas / means of measuring/reading the volume scale / means of measuring/ reading the pressure e.g. pressure gauge / means of altering the pressure/volume e.g. pump / detail e.g. correct arrangement", marks: null, contextNote: "NOTE: no labels deduct 2, accept valid alternatives", group: {"claimMax":4,"perOption":3,"options":["enclosed volume of gas","means of measuring/reading the volume scale","means of measuring/ reading the pressure e.g. pressure gauge","means of altering the pressure/volume e.g. pump","detail e.g. correct arrangement"]} },
     ],
   } as SecCard,
   {
@@ -7453,12 +7684,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-iv", topicId: "phys-u2", conceptId: "calculating-one-over-v-for-boyles-law",
     section: "A", questionRef: "2021 OL Q2(iv)",
-    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm3) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
-    questionText: "Boyle’s law states that for a fixed mass of gas, pressure is inversely proportional to volume. For each value of V in the table above, calculate 1 𝑉 to three decimal places.",
-    tariffModel: {"kind":"fixed","notation":"6 × 1"}, totalMarks: 6,
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm³) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
+    questionText: "Boyle’s law states that for a fixed mass of gas, pressure is inversely proportional to volume. For each value of V in the table above, calculate",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.053 0.059 0.067 0.077 0.091 0.111", marks: 6, contextNote: "One value per row of the table, in the printed order of V: 19, 17, 15, 13, 11, 9 cm3." },
+    { id: "r1", kind: "point", verbatim: "19 — 0.053", marks: 1, contextNote: "The scheme prints the six values of 1/V (cm⁻³), (6 × 1), each under its volume V (cm³): 1 mark each." },
+    { id: "r2", kind: "point", verbatim: "17 — 0.059", marks: 1 },
+    { id: "r3", kind: "point", verbatim: "15 — 0.067", marks: 1 },
+    { id: "r4", kind: "point", verbatim: "13 — 0.077", marks: 1 },
+    { id: "r5", kind: "point", verbatim: "11 — 0.091", marks: 1 },
+    { id: "r6", kind: "point", verbatim: "9 — 0.111", marks: 1 },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q2iv-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q2iv-question.png",
+          "srcHash": "c1f9e6861c9b099439455b01a3323f52",
+          "alt": "The printed question: (iv) Boyle's law states that for a fixed mass of gas, pressure is inversely proportional to volume. For each value of V in the table above, calculate 1 over V, set as a fraction, to three decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7467,14 +7711,31 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-v", topicId: "phys-u2", conceptId: "plotting-pressure-against-one-over-volume",
     section: "A", questionRef: "2021 OL Q2(v)",
-    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm3) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
-    questionText: "Plot a graph on graph paper of p against 1 𝑉.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm³) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
+    questionText: "Plot a graph on graph paper of p against",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "label axes correctly,", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "plot six points correctly", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "straight line", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "label axes correctly, (name / symbol / unit acceptable)", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "plot six points correctly", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them (6 × 1): 1 mark per point." },
+    { id: "r3", kind: "point", verbatim: "straight line", marks: 3, contextNote: "if graph paper is not used, maximum mark 3 × 3" },
     ],
+    questionFigure: {
+          "candId": "physics-2021-ol-q2v-question",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-question.png",
+          "srcHash": "5fb503323310c7b89f4f24281c8a786b",
+          "alt": "The printed question: (v) Plot a graph on graph paper of p against 1 over V, set as a fraction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2021-ol-q2v-scheme-graph",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-scheme-graph.png",
+          "srcHash": "52e5cf623222f7f054672bc30d5d32e3",
+          "alt": "The marking scheme's graph titled Pressure against 1/Volume: 1/V from 0 to 0.12 on the vertical axis against pressure in kPa from 0 to 250, six points on a straight line through the origin, and red dashed arrows reading 1/V at 140 kPa.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7483,13 +7744,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q2-vi", topicId: "phys-u2", conceptId: "volume-at-a-given-pressure-from-the-graph",
     section: "A", questionRef: "2021 OL Q2(vi)",
-    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas. The student recorded the following results. V (cm3) 19 17 15 13 11 9 p (kPa) 106 118 133 154 181 223",
-    questionText: "Use your graph to calculate the volume of the gas when its pressure is 140 kPa. (22)",
-    tariffModel: {"kind":"fixed","notation":"2 × 2"}, totalMarks: 4,
+    stem: "A student performed an experiment to verify Boyle’s law by investigating how the volume V varied with pressure p of a fixed mass of gas.",
+    questionText: "Use your graph to calculate the volume of the gas when its pressure is 140 kPa.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1 𝑉 value from graph e.g. 0.07", marks: 2, contextNote: "The scheme's row reads \"reads 1/V value from graph\" — the leading \"1 𝑉\" is the flattened fraction 1/V." },
-    { id: "r-2", kind: "point", verbatim: "invert value to get V e.g. V= 14.3 cm3", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "reads 1/V value from graph e.g. 0.07", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "invert value to get V e.g. V= 14.3 cm³", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7500,13 +7771,37 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q3(i)",
     stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"4 × 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "object e.g. crosswire, raybox", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "(converging) lens", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "screen", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "detail e.g. correct arrangement, optical bench, metre stick, etc.", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "object e.g. crosswire, raybox", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "(converging) lens", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "screen", marks: 3 },
+    { id: "r4", kind: "point", verbatim: "detail e.g. correct arrangement, optical bench, metre stick, etc.", marks: 3, contextNote: "NOTE: no labels deduct 2, accept valid alternatives" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q3-ii", topicId: "phys-u2", conceptId: "marking-u-and-v",
+    section: "A", questionRef: "2021 OL Q3(ii)",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens. (i) Draw a labelled diagram of the apparatus used in this experiment.",
+    questionText: "On your diagram, indicate and label the object distance u and the image distance v.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "correctly marked u and v distances", marks: 6, contextNote: "Partial credit (3): partial answer e.g. one correct The scheme prints no answer here, only what earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7515,11 +7810,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q4-i", topicId: "phys-u2", conceptId: "apparatus-for-the-latent-heat-experiment",
     section: "A", questionRef: "2021 OL Q4(i)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C (specific heat capacity of water = 4200 J kg–1 K–1; specific heat capacity of copper = 390 J kg–1 K–1)",
-    questionText: "Draw a labelled diagram of the apparatus used in this experiment. (12)",
-    tariffModel: {"kind":"fixed","notation":"4 × 3"}, totalMarks: 12,
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter.",
+    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "calorimeter with water steam source thermometer insulation steam trap", marks: 12 },
+    { id: "r1", kind: "anyN", verbatim: "calorimeter with water / steam source / thermometer / insulation / steam trap", marks: null, contextNote: "NOTE: no labels deduct 2, incorrect experiment maximum mark 3× 3", group: {"claimMax":4,"perOption":3,"options":["calorimeter with water","steam source","thermometer","insulation","steam trap"]} },
     ],
   } as SecCard,
   {
@@ -7527,15 +7822,26 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q4-vi", topicId: "phys-u2", conceptId: "completing-the-latent-heat-calculation",
+    id: "phys-2021-ol-q4-vi", topicId: "phys-2-1", conceptId: "completing-the-latent-heat-calculation",
     section: "A", questionRef: "2021 OL Q4(vi)",
-    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C (specific heat capacity of water = 4200 J kg–1 K–1; specific heat capacity of copper = 390 J kg–1 K–1)",
-    questionText: "Use your values for A, B, C and D to complete the following calculations to find l. (12) Heat lost by steam = Heat gained by water and calorimeter msteaml + msteamcwaterΔϴsteam = mwatercwaterΔϴwater + mcal.ccopperΔϴcal.",
-    tariffModel: {"kind":"fixed","notation":"4 × 2 + 4"}, totalMarks: 12,
+    stem: "A student carried out an experiment to measure l, the specific latent heat of vaporisation of water. Steam at 100 °C was passed into cold water in a copper calorimeter. The student recorded the following results. Mass of empty calorimeter = 0.0894 kg Mass of calorimeter and cold water = 0.1327 kg Initial temperature of calorimeter and cold water = 20 °C Final temperature of calorimeter, water and added steam = 36 °C Final mass of calorimeter, water and added steam = 0.1341 kg",
+    questionText: "Use your values for A, B, C and D to complete the following calculations to find l.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C", marks: 8, contextNote: "With the measured values in place the scheme's line reads: (0.0014) l + (0.0014)(4200)(64) = (0.0433)(4200)(16) + (0.0894)(390)(16) — i.e. A = 0.0433 kg, B = 0.0014 kg, C = 16 °C, D = 64 °C." },
-    { id: "r-2", kind: "point", verbatim: "(0.0014) l = 3090 ⇒ l = 2.2 × 106 J kg-1", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "(0.0014) l +", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "(0.0014)(4200)(64)", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "= (0.0433)(4200)(16)", marks: 2 },
+    { id: "r4", kind: "point", verbatim: "+ (0.0894)(390)(16)", marks: 2, contextNote: "correct substitutions" },
+    { id: "r5", kind: "point", verbatim: "(0.0014) l = 3090 ⇒ l = 2.2 × 10⁶ J kg⁻¹", marks: 4 },
     ],
+    figure: {
+          "candId": "physics-2021-ol-q4-calc",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q4-calc.png",
+          "srcHash": "7d8fb3a6aa47c07f012378d0231ad57f",
+          "alt": "The printed calculation: Heat lost by steam = Heat gained by water and calorimeter; m(steam) l + m(steam) c(water) Δθ(steam) = m(water) c(water) Δθ(water) + m(cal.) c(copper) Δθ(cal.); B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C; then the specific heat capacities of water (4200 J kg⁻¹ K⁻¹) and copper (390 J kg⁻¹ K⁻¹).",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7544,14 +7850,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q5-iv", topicId: "phys-u2", conceptId: "plotting-current-against-voltage",
     section: "A", questionRef: "2021 OL Q5(iv)",
-    stem: "A student performed an experiment to investigate the variation of current I with potential difference (voltage) V for a metallic conductor. I (A) 0 0.06 0.12 0.18 0.24 0.36 V (V) 0 1 2 3 4 6",
+    stem: "A student performed an experiment to investigate the variation of current I with potential difference (voltage) V for a metallic conductor. The student recorded the following results. I (A) 0 0.06 0.12 0.18 0.24 0.36 V (V) 0 1 2 3 4 6",
     questionText: "Use the data to plot a graph on graph paper to show the relationship between I and V.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "label axes correctly,", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "plot six points correctly", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "straight line", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "label axes correctly, (name / symbol / unit acceptable)", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "plot six points correctly", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them (6 × 1): 1 mark per point." },
+    { id: "r3", kind: "point", verbatim: "straight line", marks: 3, contextNote: "if graph paper is not used, maximum mark 3 × 3" },
     ],
+    figure: {
+          "candId": "physics-2021-ol-q5iv-scheme-graph",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q5iv-scheme-graph.png",
+          "srcHash": "85277116b8e3a72ace0ba79a44480911",
+          "alt": "The marking scheme's graph: I / A from 0 to 0.4 on the vertical axis against V / V from 0 to 7, six points on a straight red line through the origin.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7559,12 +7874,21 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6f", topicId: "phys-2-3", conceptId: "light-along-an-optical-fibre",
-    section: "A", questionRef: "2021 OL Q6(f)",
+    section: "B", questionRef: "2021 OL Q6(f)",
     questionText: "Draw a diagram to show how light is transmitted along an optical fibre.",
-    tariffModel: {"kind":"fixed","notation":"7, or 4 for a partial answer"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram showing fibre and multiple internal reflections", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "diagram showing fibre and multiple internal reflections", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
+    figure: {
+          "candId": "physics-2021-ol-q6f-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q6f-scheme.png",
+          "srcHash": "c7a7e9b25b59a7d4786f9e6b204852eb",
+          "alt": "The marking scheme's diagram: a red ray enters an optical fibre drawn as two parallel black lines and zigzags along it, reflecting off each side in turn before leaving at the far end, labelled Light ray and Optic fibre.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7572,12 +7896,21 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6k", topicId: "phys-4-3", conceptId: "bohr-model-of-the-atom",
-    section: "A", questionRef: "2021 OL Q6(k)",
+    section: "B", questionRef: "2021 OL Q6(k)",
     questionText: "Draw a diagram to outline the Bohr model of the atom.",
-    tariffModel: {"kind":"fixed","notation":"7, or 4 for a partial answer"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram showing nucleus, electron shell, another electron shell any two", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "diagram showing nucleus, electron shell, another electron shell any two", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
+    figure: {
+          "candId": "physics-2021-ol-q6k-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q6k-scheme.png",
+          "srcHash": "a76655c1bb9230fbccf4d52e436d50b5",
+          "alt": "The marking scheme's drawing: a red dot at the centre ringed in green, two dashed circles around it, and blue dots on the circles.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7585,12 +7918,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q8-ix", topicId: "phys-2-7", conceptId: "what-polarisation-looks-like",
-    section: "A", questionRef: "2021 OL Q8(ix)",
-    stem: "A wave can be described as a travelling disturbance that transports energy from one point to another.",
-    questionText: "Light waves undergo polarisation but sound waves do not. Explain with the aid of a labelled diagram what is meant by polarisation. (28)",
-    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    section: "B", questionRef: "2021 OL Q8(ix)",
+    questionText: "Light waves undergo polarisation but sound waves do not. Explain with the aid of a labelled diagram what is meant by polarisation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled diagram to show the restriction of (transverse) wave vibrations to a single plane", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "labelled diagram to show the restriction of (transverse) wave vibrations to a single plane", marks: 6, contextNote: "NOTE: no labels deduct 2 The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -7599,11 +7931,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q10-i", topicId: "phys-2-3", conceptId: "how-a-periscope-works",
-    section: "A", questionRef: "2021 OL Q10(i)",
+    section: "B", questionRef: "2021 OL Q10(i)",
+    stem: "A periscope is used on a submarine. The periscope uses plane mirrors to allow a person on the submarine to see above the surface of the water.",
     questionText: "Describe how a periscope works. Your answer should include a labelled diagram showing the path of a ray of light through the periscope.",
-    tariffModel: {"kind":"fixed","notation":"10, or 7 or 4 for a partial answer"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram showing incident ray, two reflections and emerging ray", marks: 10 },
+    { id: "r1", kind: "point", verbatim: "diagram showing incident ray, two reflections and emerging ray", marks: 10, contextNote: "Note: no labels deduct 2, no diagram maximum mark 7 The scheme gives (7) for \"one error\" and (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -7611,12 +7944,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q13h", topicId: "phys-3-2", conceptId: "forces-on-a-balanced-oil-drop",
+    id: "phys-2021-ol-q13h", topicId: "phys-1-2", conceptId: "forces-on-a-balanced-oil-drop",
     section: "B", questionRef: "2021 OL Q13(h)",
-    questionText: "Show the forces acting on the drop when it is not moving up or down. (7)",
-    tariffModel: {"kind":"fixed","notation":"7, or 4 for a partial answer"}, totalMarks: 7,
+    questionText: "Show the forces acting on the drop when it is not moving up or down.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled diagram to show electric force acting up and gravity down", marks: 7, contextNote: "\"The drop\" is the charged oil drop of Millikan's experiment, held stationary between the plates by the applied electric field." },
+    { id: "r1", kind: "point", verbatim: "labelled diagram to show electric force acting up and gravity down", marks: 7, contextNote: "The scheme gives (4) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -7625,12 +7958,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q10-v", topicId: "phys-2-3", conceptId: "magnification-from-image-and-object-height",
-    section: "A", questionRef: "2021 OL Q10(v)",
-    stem: "A periscope is used on a submarine. The periscope uses plane mirrors to allow a person on the submarine to see above the surface of the water. f ● Object An object of height 2 cm is placed 17 cm in front of a concave mirror. An image with a height of 3 cm is formed.",
+    section: "B", questionRef: "2021 OL Q10(v)",
+    stem: "An object of height 2 cm is placed 17 cm in front of a concave mirror. An image with a height of 3 cm is formed.",
     questionText: "Calculate the magnification.",
-    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3 2", marks: 6, contextNote: "Scheme working: (M = v/u =). The extracted scheme flattens the fraction: \"3 2\" reads 3/2 = 1.5, the image height over the object height." },
+    { id: "r1", kind: "point", verbatim: "(M = v/u =) 3/2", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
   } as SecCard,
   {
@@ -7639,11 +7972,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q10-vi", topicId: "phys-2-3", conceptId: "image-distance-from-magnification",
-    section: "A", questionRef: "2021 OL Q10(vi)",
+    section: "B", questionRef: "2021 OL Q10(vi)",
     questionText: "Calculate the image distance.",
-    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "25. 5 cm", marks: 6, contextNote: "Scheme working: (v/u = 3/2 ⟹ v = 1.5u = (1.5)(17) = ). The extracted scheme splits the decimal: \"25. 5 cm\" reads 25.5 cm." },
+    { id: "r1", kind: "point", verbatim: "( v/u = 3/2 ⟹v= 1.5u= (1.5)(17) = ) 25.5 cm", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -7661,42 +7994,55 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q11-viii", topicId: "phys-2-1", conceptId: "seconds-in-twelve-hours",
-    section: "A", questionRef: "2021 OL Q11(viii)",
-    stem: "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m",
+    id: "phys-2021-ol-q11-vii", topicId: "phys-2-4", conceptId: "area-of-the-garden",
+    section: "B", questionRef: "2021 OL Q11(vii)",
+    stem: "The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours.",
+    questionText: "Calculate the area of the garden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(A=(6)(9) = ) 54 m²", marks: 4 },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-q11-garden",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q11-garden.png",
+          "srcHash": "c992ecec9c5778243bfb3be95d4b69c1",
+          "alt": "Diagram of a rectangular garden drawn as a grey rectangle, a dashed arrow above it marked 6 m and a dashed arrow beside it marked 9 m.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q11-viii", topicId: "phys-2-4", conceptId: "seconds-in-twelve-hours",
+    section: "B", questionRef: "2021 OL Q11(viii)",
     questionText: "Calculate how many seconds there are in 12 hours.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "((12)(60)(60)= ) 43200 s", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "((12)(60)(60)= ) 43200 s", marks: 3 },
     ],
-    figure: {
-          "candId": "physics-2021-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p10-i0.png",
-          "srcHash": "7fdf8619e1127d7b33a920f04b59fb15",
-          "alt": "On the right is a grey-scale photograph of a woman shown in three-quarter profile with her eyes closed, while a gloved hand holds a hand-held infrared thermometer - a pistol-shaped instrument with a small rectangular digital display on top - close to her forehead. The background is dark. To the left is the printed Q11 stem stating that normal human body temperature is 37 degrees C and that the thermometer in the photograph measures infrared radiation emitted from a person's forehead.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q11-ix", topicId: "phys-2-1", conceptId: "energy-from-the-solar-constant",
-    section: "A", questionRef: "2021 OL Q11(ix)",
-    stem: "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m",
+    id: "phys-2021-ol-q11-ix", topicId: "phys-2-4", conceptId: "energy-from-the-solar-constant",
+    section: "B", questionRef: "2021 OL Q11(ix)",
+    stem: "The solar constant (solar irradiance) is a measure of how much radiation from the Sun falls on each square metre of the Earth’s surface in one second. It has a value of 1.36 kW m⁻². The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours.",
     questionText: "Calculate how much energy will fall on the garden in the 12 hours.",
-    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "E=(1.36 × 103)(43200)(54) = 3.17 × 109 J", marks: 6, contextNote: "The paper gives the solar constant as 1.36 kW m−2 — energy = solar constant × time in seconds × area, using the answers to (vii) and (viii). \"103\" and \"109\" are the flattened 10³ and 10⁹." },
+    { id: "r1", kind: "point", verbatim: "E=(1.36 × 10³)(43200)(54) = 3.17 × 10⁹ J", marks: 6, contextNote: "The scheme gives (3) for a partial answer." },
     ],
     figure: {
-          "candId": "physics-2021-ol-paper-p010-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p010-i0.png",
-          "srcHash": "ba9b37f461051a980452a096de896f1e",
-          "alt": "Scale diagram of a rectangular garden: a grey-shaded rectangle, taller than it is wide, drawn in a thick black outline. A dashed double-headed arrow above the rectangle spans its width and is labelled '6 m'; a dashed double-headed arrow to the right of it spans its height and is labelled '9 m'. Nothing else is printed.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2021-ol-q11-garden",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-q11-garden.png",
+          "srcHash": "c992ecec9c5778243bfb3be95d4b69c1",
+          "alt": "Diagram of a rectangular garden drawn as a grey rectangle, a dashed arrow above it marked 6 m and a dashed arrow beside it marked 9 m.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -7705,13 +8051,28 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q12-v", topicId: "phys-4-3", conceptId: "electrons-in-an-atom-from-the-atomic-number",
-    section: "A", questionRef: "2021 OL Q12(v)",
-    stem: "Lise Meitner was an Austrian physicist who was the first woman to become a full professor of physics in Germany. In 1938, together with chemist Otto Hahn, she discovered nuclear fission. Fission reactors are used to generate electricity. Meitner never won a Nobel Prize for her discovery, although Hahn did. She was honoured after she died by having an element named after her. The element is called meitnerium, Mt. There are three types of nuclear radiation: alpha, beta and gamma. Curie also developed techniques for isolating radioactive isotopes.",
-    questionText: "How many electrons are in an atom of Mt?",
+    id: "phys-2021-ol-q11-x", topicId: "phys-2-1", conceptId: "comparing-conduction",
+    section: "B", questionRef: "2021 OL Q11(x)",
+    questionText: "Heat is transferred at different rates depending on the material it is moving through. Describe an experiment to compare the rate of conduction through different solids.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation/conclusion", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks. The scheme gives (3) for a partial answer." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q12-v", topicId: "phys-4-4", conceptId: "electrons-in-an-atom-from-the-atomic-number",
+    section: "B", questionRef: "2021 OL Q12(v)",
+    stem: "Meitner never won a Nobel Prize for her discovery, although Hahn did. She was honoured after she died by having an element named after her. The element is called meitnerium, Mt.",
+    questionText: "How many electrons are in an atom of Mt? (Refer to page 79 of the Formulae and Tables booklet.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "109 electrons", marks: 4, contextNote: "Scheme working: (Mt109 268 = ) — meitnerium's atomic number, 109, read from page 79 of the Formulae and Tables booklet; a neutral atom has one electron per proton." },
+    { id: "r1", kind: "point", verbatim: "(Mt²⁶⁸₁₀₉ = ) 109 electrons", marks: 4 },
     ],
   } as SecCard,
   {
