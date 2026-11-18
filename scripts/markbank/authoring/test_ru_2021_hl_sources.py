@@ -54,7 +54,7 @@ class Original2021HigherSources(unittest.TestCase):
         bind_original_cards(self.cards,self.source['tasks'],self.docs)
         self.assertEqual(set(KEYS),reviewed_keys(2021,'hl'))
         self.assertEqual(sum(c['totalMarks'] for c in self.cards),320)
-        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),290)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['kind']=='rubric'),320)
         for mutated in ['question','year','page','ref','price','duplicate']:
             bad=copy.deepcopy(self.cards)
             if mutated=='question':bad[0]['questionText']='An invented question'
@@ -77,7 +77,9 @@ class Original2021HigherSources(unittest.TestCase):
         old={c['id']:c for c in legacy if c['year']==2021 and c['level']=='higher'}
         corrected={c['id']:c for c in self.cards if c['review'].get('correctsExisting')}
         self.assertEqual(set(old),set(corrected));self.assertEqual(len(old),17)
-        for identifier,c in corrected.items():self.assertEqual(c['topicId'],old[identifier]['topicId'])
+        for identifier,c in corrected.items():
+            self.assertEqual(c['topicId'],old[identifier]['topicId'])
+            self.assertEqual(c['conceptId'],old[identifier]['conceptId'])
         for n in range(1,5):
             self.assertEqual(old[f'ru-2021-hl-c2-{n}']['totalMarks'],8)
             self.assertEqual(corrected[f'ru-2021-hl-c2-{n}']['totalMarks'],10)
@@ -107,7 +109,11 @@ class Original2021HigherSources(unittest.TestCase):
             r=next(r for r in self.source['tasks'] if r['unit']=='C2' and r['item']==n);card=self.get(f'c2-{n}')
             for block in r['sourcePageBlocks']:self.assertIn(block,card['rubric']['taskRequirements'])
             self.assertEqual(normal(' '.join(r['sourcePageBlocks'])),normal(r['publishedSourceBlock']))
-            self.assertEqual([g['criteria'][0]['permittedMarks'] for g in card['rubric']['groups']],[[0,1,2]]*4)
+            rows=[g['rows'][0] for g in card['rubric']['groups']]
+            self.assertEqual(len(rows),{1:13,2:11,3:15,4:13}[n])
+            self.assertTrue(all(row['steps']==[0,1,2] and row['marks']==2 for row in rows))
+            self.assertTrue(all('Secondary details' not in row['text'] for row in rows))
+            self.assertEqual(card['rubric']['count'],4)
             self.assertIn('intelligible to a monolingual speaker of English',' '.join(card['rubric']['taskRequirements']))
             e=NS['summary_tariff'](self.docs['scheme'],n);self.assertEqual(e['text'],'10 marks')
         first=self.get('c2-1');limit=next(l for l in first['rubric']['criteria'][0]['limits'] if l['id']=='missing-certain-or-uncertain')
@@ -145,11 +151,23 @@ class Original2021HigherSources(unittest.TestCase):
         self.assertEqual((lower['minMarks'],lower['maxMarks']),(7,12));self.assertNotIn('bands',lower)
         guide=' '.join(lower['guidance']);self.assertIn('9/10',guide);self.assertIn('9-11',guide);self.assertIn('11-12',guide)
         penalty=next(c for c in card['rubric']['criteria'] if c['id']=='soft-sign-penalty');self.assertEqual(penalty['permittedMarks'],[0,2])
-    def test_whole_essay_confidence_retains_every_original_page(self):
+    def test_essay_uses_printed_content_expression_grid_and_retains_every_original_page(self):
         card=self.get('se');record=next(r for r in self.source['tasks'] if r['unit']=='SE')
-        self.assertEqual(card['totalMarks'],30);self.assertEqual(card['tariffModel'],{'kind':'questionTotal'});self.assertTrue(all(r['marks'] is None for r in card['rows']))
-        self.assertEqual([r['verbatim'] for r in card['rows']],record['sourcePageBlocks'])
-        self.assertIn('Deduct 1/2 marks',' '.join(r['verbatim'] for r in card['rows']))
+        self.assertEqual(card['totalMarks'],30);self.assertEqual(card['rubric']['system'],'language-writing')
+        self.assertEqual(card['rubric']['taskRequirements'],record['sourcePageBlocks'])
+        content,title,expression=card['rubric']['criteria']
+        self.assertEqual((content['maxMarks'],expression['maxMarks']),(10,20))
+        self.assertEqual(content['permittedMarks'],[0,2,4,6,8,10])
+        self.assertEqual(title['permittedMarks'],[0,1]);self.assertEqual(title['deductFrom'],'content')
+        self.assertEqual([b['marks'] for b in expression['bands']],[[18,19,20],[14,15,16,17],[10,11,12,13],[6,7,8,9],[1,2,3,4,5],[0]])
+        lower_e=next(l for l in expression['limits'] if l['id']=='lower-e')
+        lower_a=next(l for l in expression['limits'] if l['id']=='lower-a')
+        self.assertEqual([b['marks'] for b in lower_e['bands']],[[12,13,14],[10,11],[7,8,9],[4,5,6],[1,2,3],[0]])
+        self.assertEqual([b['marks'] for b in lower_a['bands']],[[13,14],[11,12],[9,10]])
+        self.assertIn('Deduct 1/2 marks',' '.join(expression['guidance']))
+        self.assertNotIn('soft-sign-penalty',[c['id'] for c in card['rubric']['criteria']])
+        self.assertTrue(card['rubric']['markingGuideNote'].startswith('The scheme prints no answer for this part.'))
+        self.assertEqual(card['review']['noPrintedAnswer']['schemePages'],[13,14,15])
         self.assertEqual(card['questionText'].count('•'),5);self.assertNotIn('answerLanguageRule',card)
     def test_twenty_listening_local_prices_and_named_partials(self):
         cards=[c for c in self.cards if c.get('audioMaterial')];self.assertEqual(len(cards),20);self.assertEqual(sum(c['totalMarks'] for c in cards),80)

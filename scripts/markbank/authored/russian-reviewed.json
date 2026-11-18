@@ -190423,7 +190423,7 @@
     "year": 2021,
     "section": "C1",
     "topicId": "russian-3-0",
-    "conceptId": "lisa-fans-respond",
+    "conceptId": "lisa-fans-respond-answer-following",
     "questionRef": "2021 HL Section C1 Q4(ii)",
     "questionText": "Give two details about how Lisa’s fans respond to her.",
     "totalMarks": 4,
@@ -190596,79 +190596,228 @@
       "count": 4,
       "groups": [
         {
-          "id": "detail-1",
-          "label": "Manual distinct detail 1",
-          "rows": [],
-          "criteria": [
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-1-credit",
-              "label": "Distinct detail 1",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "At 17 years of age a person cannot give a definitive answer about what they want to become",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-2",
-          "label": "Manual distinct detail 2",
-          "rows": [],
-          "criteria": [
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-2-credit",
-              "label": "Distinct detail 2",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "Today he likes one thing, tomorrow it will be something different",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-3",
-          "label": "Manual distinct detail 3",
-          "rows": [],
-          "criteria": [
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-3-credit",
-              "label": "Distinct detail 3",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "He wants to be everywhere",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-4",
-          "label": "Manual distinct detail 4",
-          "rows": [],
-          "criteria": [
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-4-credit",
-              "label": "Distinct detail 4",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "He wants to develop/continue with his music band",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wants to star in films",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wants to ballot for president",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He doubts he can get a place in state management",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He considers acting (faculty) and journalism",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He doesn’t mind which institute to study as long as it is not in Volgograd",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He will try to move to St Petersburg",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He is taking grinds in literature/he likes to read",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Nothing to do in Volgograd",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Pleasant atmosphere and a lot of opportunities in St Petersburg",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
             }
           ]
         }
       ],
-      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The source requires at least one certain and one uncertain aspect for full marks. Manually flag an omitted aspect to apply the printed incomplete-response discretionary cap; no fixed content-category allocation is invented. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
+      "markingGuideNote": "Choose up to four distinct accepted details. Each printed answer has its own claimable row. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The source requires at least one certain and one uncertain aspect for full marks. Manually flag an omitted aspect to apply the printed incomplete-response discretionary cap; no fixed content-category allocation is invented. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -190789,79 +190938,194 @@
       "count": 4,
       "groups": [
         {
-          "id": "detail-1",
-          "label": "Manual distinct detail 1",
-          "rows": [],
-          "criteria": [
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-1-credit",
-              "label": "Distinct detail 1",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "She plans to develop/progress in architecture",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-2",
-          "label": "Manual distinct detail 2",
-          "rows": [],
-          "criteria": [
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-2-credit",
-              "label": "Distinct detail 2",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "She wants to study Architecture – Construction (university/third level college)",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-3",
-          "label": "Manual distinct detail 3",
-          "rows": [],
-          "criteria": [
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-3-credit",
-              "label": "Distinct detail 3",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "She doesn’t know exactly what she will work as but everything in architecture attracts her",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-4",
-          "label": "Manual distinct detail 4",
-          "rows": [],
-          "criteria": [
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-4-credit",
-              "label": "Distinct detail 4",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "She would like to study in a more prestigious university, for example in Moscow or St Petersburg",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "If she doesn’t get a place in Moscow, she will go to the capital after graduating",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She dreams about going to Barcelona",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She wants to see her favourite Gaudi’s projects",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Moscow is the best place for young and ambitious people who are only starting their lives",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Katya’s parents approve of her choice",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her father says money isn’t everything",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her parents influenced her choices.",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
             }
           ]
         }
       ],
-      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
+      "markingGuideNote": "Choose up to four distinct accepted details. Each printed answer has its own claimable row. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -190968,79 +191232,262 @@
       "count": 4,
       "groups": [
         {
-          "id": "detail-1",
-          "label": "Manual distinct detail 1",
-          "rows": [],
-          "criteria": [
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-1-credit",
-              "label": "Distinct detail 1",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "Igor does not want to be a doctor",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-2",
-          "label": "Manual distinct detail 2",
-          "rows": [],
-          "criteria": [
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-2-credit",
-              "label": "Distinct detail 2",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "He doesn’t want to spend all day with his textbooks and suffer from lack of sleep",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-3",
-          "label": "Manual distinct detail 3",
-          "rows": [],
-          "criteria": [
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-3-credit",
-              "label": "Distinct detail 3",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "He wants to choose a job that will be exciting and very interesting",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-4",
-          "label": "Manual distinct detail 4",
-          "rows": [],
-          "criteria": [
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-4-credit",
-              "label": "Distinct detail 4",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "He wants to spend time with people and help them",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wants to choose what he wants to do in his life and love his job",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wants to be useful not just to himself but to the community/society",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He will choose a job he likes",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He will enjoy his work",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He moved to a school with intensive study of Chemistry and Biology",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Igor believes it is important not to be afraid of the truth about oneself",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Fear of not getting enough points kills all the desire to study",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Everyone can do much more",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "One has to follow a schedule and personal plan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He doesn’t want to say where he is going to study",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-15",
+          "label": "Answer 15",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He has to do his best and get enough knowledge to enter and study his chosen career",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
             }
           ]
         }
       ],
-      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
+      "markingGuideNote": "Choose up to four distinct accepted details. Each printed answer has its own claimable row. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -191145,79 +191592,228 @@
       "count": 4,
       "groups": [
         {
-          "id": "detail-1",
-          "label": "Manual distinct detail 1",
-          "rows": [],
-          "criteria": [
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-1-credit",
-              "label": "Distinct detail 1",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "It all started with a computer game where you had to build a house",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-2",
-          "label": "Manual distinct detail 2",
-          "rows": [],
-          "criteria": [
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-2-credit",
-              "label": "Distinct detail 2",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "Her father said it was best to enter the Architecture faculty and get two professions",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-3",
-          "label": "Manual distinct detail 3",
-          "rows": [],
-          "criteria": [
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-3-credit",
-              "label": "Distinct detail 3",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "She should not have any problems with earning money",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
             }
           ]
         },
         {
-          "id": "detail-4",
-          "label": "Manual distinct detail 4",
-          "rows": [],
-          "criteria": [
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
             {
-              "id": "detail-4-credit",
-              "label": "Distinct detail 4",
-              "maxMarks": 2,
-              "permittedMarks": [
+              "id": "full",
+              "text": "Her parents support her choice",
+              "marks": 2,
+              "steps": [
                 0,
                 1,
                 2
-              ],
-              "guidance": []
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She is getting ready for her leaving certificate examinations/Unified State Examination",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She will need to take up an additional technical drawing course after entering college",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She needs to get 430 points to get a grant",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She gets ready for her exams from 7am to 4pm",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She does previous papers/tests",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She has been interested in design for a long time",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her parents studied in technical colleges",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In her free time she reads thematic/topic/discipline-related magazines to be aware of the tendencies in construction",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her cousin works for a construction company and promised her a work placement there",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
             }
           ]
         }
       ],
-      "markingGuideNote": "Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
+      "markingGuideNote": "Choose up to four distinct accepted details. Each printed answer has its own claimable row. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content. The original Q2.1 heading prints 50 marks in both columns, while the same directions print 40 marks. The scheme explicitly assigns 40 to the four summaries, at ten marks each; both original paper labels are retained without an extra award. Answer in English or Irish, as explicitly permitted by the two original paper columns. Irish is not a disallowed answer language.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -191817,7 +192413,7 @@
     "year": 2021,
     "section": "LA2",
     "topicId": "russian-3-2",
-    "conceptId": "match-words-all-selected-text-names",
+    "conceptId": "insert-appropriate-number-right-hand-column",
     "questionRef": "2021 HL Section LA2 Q(ii)",
     "questionText": "Match the words, which are all selected from the text, with the names of parts of speech. Insert the appropriate number in the right-hand column of the table entitled WORDS.",
     "totalMarks": 10,
@@ -192660,31 +193256,7 @@
     "conceptId": "short-essay-words-russian-following-topics",
     "questionRef": "2021 HL Section SE Q2",
     "questionText": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих \nтем. В свою статью включите пять страноведческих фактов. \n \n• \nCathair i gCónaidhm na Rúise / A city in the Russian Federation / Город в РФ  \n \n \n \n• \nCeangail/Caidrimh Rúiseacha-Éireannacha / Russian-Irish links / Российско-ирландские \nсвязи   \n \n• \nDuine cáiliúil sa pholaitíocht i gCónaidhm na Rúise / A famous political figure in the Russian \nFederation / Известный политический деятель РФ \n \n• \nLaethanta saoire/féilte i gCónaidhm na Rúise / Holidays/festivals in the Russian Federation / \nПраздники/фестивали в РФ  \n \n \n \n• \nCóras na Scoileanna i gCónaidhm na Rúise / School system in the Russian Federation / \nШкола в РФ \n \n \n \n \n \n",
-    "tariffModel": {
-      "kind": "questionTotal"
-    },
     "totalMarks": 30,
-    "rows": [
-      {
-        "id": "published-choice",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "Q.2. Cultural Awareness 30 marks Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. A city in the Russian Federation/Город в РФ 2. Russian-Irish links/Российско-ирландские связи 3. A famous political figure in the Russian Federation/Известный политический деятель РФ 4. Holidays/festivals in the Russian Federation/Праздники/фестивали в РФ 5. School system in the Russian Federation/Школа в РФ 1. Content 10 marks 2. Language/expression 20 marks Mark content and language/expression separately 1. Communication/content (C) • Award content marks first (ex 10). No marks are awarded for irrelevant information/content. • Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. • Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. • Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). • Award two marks for each relevant content detail (up to a maximum of 10 marks). • Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score.",
-        "contextNote": "Confidence review: the complete question is printed as 30 marks, content 10 plus expression 20. The scheme’s literal soft-sign instruction says “Deduct 1/2 marks” without establishing whether this is a half-mark or one-or-two marks. Neither interpretation is selected. All five original choices and every published scoring rule are retained; this task does not calculate a numerical score."
-      },
-      {
-        "id": "published-guidance",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "2. Expression (E) • Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives Mark Language: lexis, accuracy, fluency 18-20 lower A 13-14 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 11-12 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-10 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
-      },
-      {
-        "id": "published-expression-grid",
-        "kind": "point",
-        "marks": null,
-        "verbatim": "6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question."
-      }
-    ],
     "sourceMaterial": {
       "kind": "source-text",
       "label": "Official question and source",
@@ -192708,9 +193280,323 @@
       "component": "000",
       "questionPages": [
         12
-      ]
+      ],
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14,
+          15
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-2021-hl-sec-20261118/archive-recheck.json"
+      }
     },
-    "kind": "question"
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Q.2. Cultural Awareness 30 marks Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title. Напишите небольшую статью по–русски размером 50 слов на одну из следующих тем. В свою статью включите пять страноведческих фактов. 1. A city in the Russian Federation/Город в РФ 2. Russian-Irish links/Российско-ирландские связи 3. A famous political figure in the Russian Federation/Известный политический деятель РФ 4. Holidays/festivals in the Russian Federation/Праздники/фестивали в РФ 5. School system in the Russian Federation/Школа в РФ 1. Content 10 marks 2. Language/expression 20 marks Mark content and language/expression separately 1. Communication/content (C) • Award content marks first (ex 10). No marks are awarded for irrelevant information/content. • Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark. • Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language. • Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail). • Award two marks for each relevant content detail (up to a maximum of 10 marks). • Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score.",
+        "2. Expression (E) • Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives Mark Language: lexis, accuracy, fluency 18-20 lower A 13-14 lower E 12-14 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language. 14-17 lower A 11-12 lower E 10-11 Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse. 10-13 lower A 9-10 lower E 7-9 Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful.",
+        "6-9 lower E 4-6 Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication. 1-5 lower E 1-3 Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language. 0 Knowledge and range so limited that no mark can be awarded Add the marks for communication/content (C) and expression (E/ lower E) to give the total marks for the question."
+      ],
+      "markingGuideNote": "The scheme prints no answer for this part. Use its printed content and expression criteria to assess the selected essay. The soft-sign direction is printed as “Deduct 1/2 marks”; apply the published direction when selecting the expression mark. The app does not infer a separate deduction from that notation.",
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication/content (C)",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidance": [
+            "Award content marks first (ex 10). No marks are awarded for irrelevant information/content.",
+            "Use square brackets to bracket off irrelevant material [ … ]; exclude when judging the expression mark.",
+            "Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language.",
+            "Award a maximum of two content marks for an introductory/contextual remark or judgment (not a factual detail).",
+            "Award two marks for each relevant content detail (up to a maximum of 10 marks).",
+            "Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "title-penalty",
+          "label": "Essay title penalty",
+          "kind": "deduction",
+          "deductFrom": "content",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "Candidates are required to indicate which question they are answering. If a candidate does not indicate which question they are answering deduct ONE penalty mark from the overall content score."
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language/expression (E)",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "• Take a global view of the language. • Use (E = Expression) to locate the candidate’s work in the most appropriate category. • If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this. • If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this. • Put a square box around repeated errors, do not re-penalise. • Use a wavy line to underline spelling mistakes and errors of vocabulary. • Underline serious mistakes. • Deduct 1/2 marks from candidates who randomly use/fail to use soft signs in present tense forms or infinitives"
+          ],
+          "bands": [
+            {
+              "label": "18-20",
+              "marks": [
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "14-17",
+              "marks": [
+                14,
+                15,
+                16,
+                17
+              ],
+              "guidance": [
+                "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+              ]
+            },
+            {
+              "label": "10-13",
+              "marks": [
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+              ]
+            },
+            {
+              "label": "6-9",
+              "marks": [
+                6,
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-5",
+              "marks": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "scaleLabel": "Lower E",
+              "maxMarks": 14,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 5,
+                    "ignoreDeductions": true
+                  },
+                  {
+                    "length": "words",
+                    "below": 25
+                  }
+                ]
+              },
+              "guidance": [
+                "If the content mark is 5 or less [excepting where a penalty mark has been deducted and brought the content marks down to 5], or the question is too short (less than 25 words), mark expression out of 14 and write ‘lower E’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "12-14",
+                  "marks": [
+                    12,
+                    13,
+                    14
+                  ],
+                  "guidance": [
+                    "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "10-11",
+                  "marks": [
+                    10,
+                    11
+                  ],
+                  "guidance": [
+                    "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+                  ]
+                },
+                {
+                  "label": "7-9",
+                  "marks": [
+                    7,
+                    8,
+                    9
+                  ],
+                  "guidance": [
+                    "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+                  ]
+                },
+                {
+                  "label": "4-6",
+                  "marks": [
+                    4,
+                    5,
+                    6
+                  ],
+                  "guidance": [
+                    "Some basic knowledge of lexis but lacks variety. Lexis often inappropriate with frequent Anglicism and wrong words. Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+                  ]
+                },
+                {
+                  "label": "1-3",
+                  "marks": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Very limited knowledge and range of lexis. Very basic, inappropriate or wrong words. Much Anglicism. Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+                  ]
+                },
+                {
+                  "label": "0",
+                  "marks": [
+                    0
+                  ],
+                  "guidance": [
+                    "Knowledge and range so limited that no mark can be awarded"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lower-a",
+              "scaleLabel": "Lower A",
+              "minMarks": 9,
+              "maxMarks": 14,
+              "when": {
+                "any": [
+                  {
+                    "flag": "lower-a",
+                    "prompt": "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this."
+                  }
+                ]
+              },
+              "guidance": [
+                "If the expression is very fluent, with a high degree of lexical, syntactic and idiomatic variety but serious problems with basic accuracy (spelling, word boundaries + inflectional morphology); error in every 2nd or 3rd word, mark expression between 9 and 14 (9+10; 11+12; 13+14) and write ‘lower A’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "13-14",
+                  "marks": [
+                    13,
+                    14
+                  ],
+                  "guidance": [
+                    "Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy. Fluent, showing a high degree of sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "11-12",
+                  "marks": [
+                    11,
+                    12
+                  ],
+                  "guidance": [
+                    "Uses a good range of appropriate lexis, with minor lexical errors only. Tone and register usually suited to task. A few errors, mostly of a minor nature. Successful manipulation of the language. Adventurous use of complex structures, with the occasional lapse."
+                  ]
+                },
+                {
+                  "label": "9-10",
+                  "marks": [
+                    9,
+                    10
+                  ],
+                  "guidance": [
+                    "Uses an adequate but predictable range of lexis. A number of significant lexical errors. A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language. Attempts to handle complex structures not always successful."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "no-content",
+              "maxMarks": 0,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 0,
+                    "ignoreDeductions": true
+                  }
+                ]
+              },
+              "guidance": [
+                "Answers which are completely irrelevant or contain no rewardable material for content will be awarded no marks for language."
+              ]
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "ru-2021-hl-l1-1",

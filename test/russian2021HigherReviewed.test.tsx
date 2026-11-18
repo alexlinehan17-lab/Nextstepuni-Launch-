@@ -1,10 +1,10 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBank/SessionScreen';
+import SessionScreen from '../components/MarkBank/SessionScreen';
 import LanguageRubricPanel from '../components/MarkBank/LanguageRubricPanel';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageMarks, languageScoreId, languageGroupId, languageRowId, languageFlagId, languageLengthId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
-import { isRubricCard, tariffReconciles } from '../types/markBank';
+import { isRubricCard, tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 
 const sitting = REVIEWED_CARDS.filter(card => card.year === 2021 && card.level === 'higher');
 function get(suffix: string) {
@@ -22,23 +22,24 @@ function writing() {
   if (!isRubricCard(card) || card.rubric.system !== 'language-writing') throw new Error('gw');
   return { ...card, rubric: card.rubric };
 }
-function confidence() {
+function essay() {
   const card = get('se');
-  if (isRubricCard(card)) throw new Error('se');
-  return card;
+  if (!isRubricCard(card) || card.rubric.system !== 'language-writing') throw new Error('se');
+  return { ...card, rubric: card.rubric };
 }
 const row = (group: string, id = 'full') => ({ [languageGroupId(group)]: 1, [languageRowId(group, id)]: 1 });
-const detail = (n: number, mark: number) => ({ [languageGroupId(`detail-${n}`)]: 1, [languageScoreId(`detail-${n}-credit`)]: mark });
+const detail = (n: number, mark: number) => ({ [languageGroupId(`answer-${n}`)]: 1, [languageRowId(`answer-${n}`, 'full')]: mark });
 afterEach(cleanup);
 
 describe('Russian 2021 Higher original tasks and source-specific scoring', () => {
-  it('represents all 41 source asks, retaining 290 priced practice marks and one complete confidence task', () => {
+  it('represents all 41 source asks with their 320 printed practice marks', () => {
     expect(sitting).toHaveLength(41);
     expect(sitting.every(tariffReconciles)).toBe(true);
-    expect(sitting.filter(isRubricCard).reduce((sum, card) => sum + card.totalMarks, 0)).toBe(290);
+    expect(sitting.filter(isRubricCard).reduce((sum, card) => sum + card.totalMarks, 0)).toBe(320);
     expect(sitting.filter(card => card.audioMaterial)).toHaveLength(20);
     expect(sitting.filter(card => card.answerLanguageRule)).toHaveLength(16);
-    expect(confidence().totalMarks).toBe(30);
+    expect(essay().totalMarks).toBe(30);
+    expect(sitting.every(isRubricCard)).toBe(true);
   });
 
   it('counts the two published school-year wordings as one fact, with separate age and city details', () => {
@@ -94,6 +95,18 @@ describe('Russian 2021 Higher original tasks and source-specific scoring', () =>
     expect(languageMarks(card, { ...detail(1, 1), [languageFlagId('missing-certain-or-uncertain')]: 1 })).toBe(1);
     render(<LanguageRubricPanel card={card} scores={flagged} onScore={vi.fn()} />);
     expect(screen.getAllByText(/at least one uncertain and one certain aspect/)[0]).toBeVisible();
+  });
+
+  it.each([1, 2, 3, 4])('shows every accepted summary %i answer as a claimable row', number => {
+    const card = points(`c2-${number}`);
+    expect(card.rubric.groups).toHaveLength([13, 11, 15, 13][number - 1]);
+    expect(card.rubric.groups.every(group => group.rows.length === 1 && group.rows[0].marks === 2
+      && JSON.stringify(group.rows[0].steps) === '[0,1,2]')).toBe(true);
+    const all = Object.assign({}, ...card.rubric.groups.map((_, i) => detail(i + 1, 2)));
+    expect(languageMarks(card, all)).toBe(8);
+    render(<LanguageRubricPanel card={card} scores={{}} onScore={vi.fn()} />);
+    expect(screen.getByText(card.rubric.groups[0].rows[0].text, { exact: true })).toBeVisible();
+    expect(card.rubric.groups.some(group => group.rows[0].text.includes('Secondary details'))).toBe(false);
   });
 
   it.each([1, 2, 3, 4])('keeps summary %i manual discretion available under the literal Russian-word exception and its cap', number => {
@@ -190,24 +203,31 @@ describe('Russian 2021 Higher original tasks and source-specific scoring', () =>
     }
   });
 
-  it('keeps the complete five-choice essay unpriced with the literal ambiguous deduction', () => {
-    const card = confidence();
-    expect(card.tariffModel).toEqual({ kind: 'questionTotal' });
-    expect(card.rows.every(item => item.marks === null)).toBe(true);
+  it('scores the five-choice essay on its printed 10+20 grid with the exact no-answer line', () => {
+    const card = essay();
     expect(card.questionText.match(/•/g)).toHaveLength(5);
-    expect(card.rows.map(item => item.verbatim).join(' ')).toContain('Deduct 1/2 marks');
-    expect(showsRowMarks(card)).toBe(false);
-    expect(marksClaimed(card, Object.fromEntries(card.rows.map(item => [item.id, 'yes'])), {})).toBe(0);
+    expect(card.rubric.markingGuideNote).toContain(UNPRINTED_ANSWER);
+    expect(card.rubric.taskRequirements.join(' ')).toContain('Deduct 1/2 marks');
+    expect(card.rubric.criteria.map(item => item.id)).not.toContain('soft-sign-penalty');
+    const full = { [languageScoreId('content')]: 10, [languageScoreId('expression')]: 20, [languageLengthId('words')]: 50 };
+    expect(languageMarks(card, full)).toBe(30);
+    expect(languageMarks(card, { ...full, [languageScoreId('title-penalty')]: 1 })).toBe(29);
+    expect(languageMarks(card, { ...full, [languageLengthId('words')]: 24 })).toBe(24);
+    expect(languageMarks(card, { ...full, [languageScoreId('content')]: 4 })).toBe(18);
+    expect(languageMarks(card, { ...full, [languageScoreId('content')]: 6, [languageScoreId('title-penalty')]: 1 })).toBe(25);
+    expect(languageMarks(card, { ...full, [languageScoreId('content')]: 0 })).toBe(0);
+    expect(languageMarks(card, { ...full, [languageFlagId('lower-a')]: 1 })).toBe(24);
+    expect(languageMarks(card, { ...full, [languageFlagId('lower-a')]: 1, [languageScoreId('expression')]: 8 })).toBe(10);
   });
 
-  it.each([false, true])('saves complete essay confidence 0/0 with paper layout=%s', async paperLayout => {
-    const card = confidence(), onGrade = vi.fn();
+  it.each([false, true])('shows the essay grid and saves its printed total with paper layout=%s', async paperLayout => {
+    const card = essay(), onGrade = vi.fn();
     render(<SessionScreen paperLayout={paperLayout} cards={[card]} subjectLabel="Russian" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
     fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
-    await waitFor(() => expect(screen.getByText(/Neither interpretation is selected/)).toBeVisible());
-    expect(screen.queryByRole('button', { name: /^Claim \d+ marks/ })).not.toBeInTheDocument();
+    await waitFor(() => expect(screen.getByText(new RegExp(UNPRINTED_ANSWER.replace('.', '\\.')))).toBeVisible());
+    expect(screen.getByText('Communication/content (C)')).toBeVisible();
+    expect(screen.getByText('Language/expression (E)')).toBeVisible();
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
-    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: card.id, grade: 'got', marksClaimed: 0, marksAvailable: 0 }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: card.id, grade: 'got', marksClaimed: 0, marksAvailable: 30 }));
   });
 });
-// Current-root confidence headings and numeric-quiz exclusion are integration gates.

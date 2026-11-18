@@ -30211,7 +30211,16 @@
     "component": "000",
     "questionPages": [
       12
-    ]
+    ],
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-2021-hl-sec-20261118/archive-recheck.json"
+    }
   },
   {
     "id": "ru-2021-hl-l1-1",

@@ -105,7 +105,7 @@ def source_records():
     q='Read through the following text. '+question_text(between(page(Q,11,True),'Read through the following text.'));q=q[:q.index('substitute words.')+len('substitute words.')]
     records.append(record('GR',None,None,q,[11],page(S,12),[12],30,reviewNote='Thirteen bracketed prompts/fifteen separately priced forms; first printed past/present pair remains one answer. Bold/underlined original spans need guarded extraction.'))
     q='Write a short essay '+squash(between(page(Q,12,True),'Write a short essay'));q=q[:q.index('essay title.')+len('essay title.')]
-    records.append(record('SE',None,None,q,[12],'\n'.join(page(S,p) for p in (13,14,15)),[13,14,15],30,fullQuestionPage=page(Q,12),sourcePageBlocks=[squash(page(S,p)) for p in (13,14,15)],pending='Complete30 confidence; literal Deduct1/2marks unresolved. Five complete choices and allC10/E20guidance retained.'))
+    records.append(record('SE',None,None,q,[12],'\n'.join(page(S,p) for p in (13,14,15)),[13,14,15],30,fullQuestionPage=page(Q,12),sourcePageBlocks=[squash(page(S,p)) for p in (13,14,15)],reviewNote='Printed content10/expression20 rubric. Five choices and every printed direction retained; literal Deduct1/2marks is shown without an inferred automatic deduction.'))
     q='Write a piece '+question_text(between(page(Q,13,True),'Write a piece'))
     records.append(record('GW',None,None,q,[13],'\n'.join(page(S,p) for p in (16,17,18)),[16,17,18],40,sourcePageBlocks=[squash(page(S,p)) for p in (16,17,18)],reviewNote='Six actual alternatives; C15/E15/TC10. Explicit deduction2. Literal overlapping LowerA table kept, no normalized descriptor boundary.'))
     assert len(records)==21 and sum(r['publishedTotal'] for r in records)==240
@@ -159,21 +159,20 @@ def source_card(r):
     c['review']['questionPages']=r['questionPages'];return c
 
 
-def manual_details(r,count,steps,guidance,note):
-    c=as_points(source_card(r),[],count)
-    c['rubric']['groups']=[{'id':f'detail-{i}','label':f'Manual distinct detail {i}','rows':[],
-        'criteria':[{'id':f'detail-{i}-credit','label':f'Distinct detail {i}','maxMarks':2,'permittedMarks':steps,'guidance':[]}]} for i in range(1,count+1)]
-    c['rubric']['taskRequirements']=guidance;c['rubric']['markingGuideNote']=note
-    return c
-
-
 def summaries(source):
     result=[];general=source['summaryGuidance']
     incomplete=re.search(r'If a candidate fails.*?discretionary mark can be awarded\)',general).group()
     for r in source['tasks']:
         if r['unit']!='C2':continue
-        c=manual_details(r,4,[0,1,2],[general,*r['sourcePageBlocks']],
-            'Assess four distinct details manually against the complete published pool. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content.')
+        # Heading text is not an accepted answer, including the unpunctuated
+        # Secondary details heading after Sveta's previous-papers answer.
+        pool_source=re.sub(r'Secondary details:?\s*','',r['publishedSourceBlock'])
+        pool=[squash(item) for item in pool_source.split('•')[1:]]
+        assert len(pool)=={1:13,2:11,3:15,4:13}[r['item']]
+        assert len(set(pool))==len(pool)
+        c=as_points(source_card(r),pool,4,steps=[0,1,2])
+        c['rubric']['taskRequirements']=[general,*r['sourcePageBlocks']]
+        c['rubric']['markingGuideNote']='Choose up to four distinct accepted details. Each printed answer has its own claimable row. One mark applies only to a partial detail intelligible to a monolingual English speaker, under the printed general rule. Discretionary marks remain separate from content.'
         if r['printedTariffSource'] not in r['publishedSourceBlock']:
             c['rubric']['taskRequirements'].append(r['printedTariffSource'])
         c['rubric']['criteria']=[{'id':'summary-skills','label':'Discretionary marks','maxMarks':2,'permittedMarks':[0,1,2],'guidance':[general],
@@ -219,17 +218,62 @@ def reading(source):
     return result
 
 
-def cultural_confidence(source):
+def cultural_writing(docs,source):
+    from ru_review_2017_hl import band
     r=next(r for r in source['tasks'] if r['unit']=='SE');c=source_card(r)
     choices='Напишите'+between(r['fullQuestionPage'],'Напишите').split('Teideal/Title:')[0]
     assert choices.count('•')==5
     c['questionText']+='\n\n'+choices
-    c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
     blocks=r['sourcePageBlocks'];assert len(blocks)==3
     assert squash(' '.join(blocks))==r['publishedSourceBlock']
-    c['rows']=[{'id':identifier,'kind':'point','marks':None,'verbatim':text}
-        for identifier,text in zip(['published-choice','published-guidance','published-expression-grid'],blocks)]
-    c['rows'][0]['contextNote']='Confidence review: the complete question is printed as 30 marks, content 10 plus expression 20. The scheme’s literal soft-sign instruction says “Deduct 1/2 marks” without establishing whether this is a half-mark or one-or-two marks. Neither interpretation is selected. All five original choices and every published scoring rule are retained; this task does not calculate a numerical score.'
+    body=r['publishedSourceBlock']
+    content=between(body,'Communication/content (C)','2. Expression (E)')
+    expression=between(body,'2. Expression (E)','Mark Language:')
+    content_bullets=[squash(x) for x in content.split('•')[1:]]
+    assert len(content_bullets)==6
+    title=next(x for x in content_bullets if 'ONE penalty mark' in x)
+    no_content=next(x for x in content_bullets if 'no marks for language' in x)
+    lower_e=re.search(r'If the content mark.*?indicate this\.',expression).group()
+    lower_a=re.search(r'If the expression is very fluent.*?indicate this\.',expression).group()
+    soft=re.search(r'Deduct 1/2 marks.*?infinitives',expression).group()
+    normal=[];lower=[];accuracy=[]
+    for page_number in (14,15):
+        tables=docs['scheme'][page_number-1].find_tables().tables
+        assert len(tables)==1
+        for price,description in tables[0].extract():
+            if price=='Mark':continue
+            full=re.split(r'lower [AE]',price)[0].strip()
+            normal.append(band(full,description))
+            low=price.split('lower E')[-1].strip()
+            lower.append(band(low,description))
+            if 'lower A' in price:
+                accuracy.append(band(between(price,'lower A','lower E'),description))
+    assert [x['marks'] for x in normal]==[[18,19,20],[14,15,16,17],[10,11,12,13],[6,7,8,9],[1,2,3,4,5],[0]]
+    assert [x['marks'] for x in lower]==[[12,13,14],[10,11],[7,8,9],[4,5,6],[1,2,3],[0]]
+    assert [x['marks'] for x in accuracy]==[[13,14],[11,12],[9,10]]
+    c.pop('rows');c.pop('tariffModel');c['kind']='rubric'
+    c['rubric']={'system':'language-writing','taskRequirements':blocks,
+        'markingGuideNote':'The scheme prints no answer for this part. Use its printed content and expression criteria to assess the selected essay. The soft-sign direction is printed as “Deduct 1/2 marks”; apply the published direction when selecting the expression mark. The app does not infer a separate deduction from that notation.',
+        'criteria':[
+            {'id':'content','label':'Communication/content (C)','maxMarks':10,
+             'permittedMarks':[0,2,4,6,8,10],'guidance':content_bullets},
+            {'id':'title-penalty','label':'Essay title penalty','kind':'deduction','deductFrom':'content',
+             'maxMarks':1,'permittedMarks':[0,1],'guidance':[title]},
+            {'id':'expression','label':'Language/expression (E)','maxMarks':20,
+             'permittedMarks':list(range(21)),'guidance':[squash(expression)],'bands':normal,
+             'limits':[
+                 {'id':'lower-e','scaleLabel':'Lower E','maxMarks':14,
+                  'when':{'any':[{'criterionIds':['content'],'atMost':5,'ignoreDeductions':True},
+                                 {'length':'words','below':25}]},'guidance':[lower_e],'bands':lower},
+                 {'id':'lower-a','scaleLabel':'Lower A','minMarks':9,'maxMarks':14,
+                  'when':{'any':[{'flag':'lower-a','prompt':lower_a}]},'guidance':[lower_a],'bands':accuracy},
+                 {'id':'no-content','maxMarks':0,
+                  'when':{'any':[{'criterionIds':['content'],'atMost':0,'ignoreDeductions':True}]},
+                  'guidance':[no_content]}]}]}
+    c['review']['noPrintedAnswer']={'fixedLine':'The scheme prints no answer for this part.',
+        'schemePages':[13,14,15],
+        'evidence':'scripts/markbank/authoring/reviews/russian-2021-hl-sec-20261118/archive-recheck.json'}
+    assert soft in c['rubric']['criteria'][-1]['guidance'][0]
     return c
 
 
@@ -369,15 +413,17 @@ def source_language_rules(cards,source):
 def build():
     docs,source=source_records()
     try:
-        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[writing(docs,source),cultural_confidence(source)]+listening(source)
+        cards=reading(source)+summaries(source)+language_and_matching(docs,source)+[writing(docs,source),cultural_writing(docs,source)]+listening(source)
         source_language_rules(cards,source)
-        old={c['id'] for c in json.loads((ROOT/'scripts/markbank/authored/russian.json').read_text()) if c['year']==2021 and c['level']=='higher'}
-        assert len(old)==17 and old<={c['id'] for c in cards}
+        old={c['id']:c for c in json.loads((ROOT/'scripts/markbank/authored/russian.json').read_text()) if c['year']==2021 and c['level']=='higher'}
+        assert len(old)==17 and old.keys()<={c['id'] for c in cards}
         for c in cards:
-            if c['id'] in old:c['review']['correctsExisting']=True
+            if c['id'] in old:
+                c['review']['correctsExisting']=True
+                c['conceptId']=old[c['id']]['conceptId']
         assert len(cards)==len({c['id'] for c in cards})==41
         assert sum(c['totalMarks'] for c in cards)==320
-        assert sum(c['totalMarks'] for c in cards if c.get('kind')=='rubric')==290
+        assert sum(c['totalMarks'] for c in cards if c.get('kind')=='rubric')==320
         assert sum(bool(c.get('answerLanguageRule')) for c in cards)==16
         assert sum(c['review'].get('correctsExisting',False) for c in cards)==17
         return cards

@@ -5387,7 +5387,7 @@
     {
       "year": 2021,
       "level": "higher",
-      "reviewedAt": "2026-11-13",
+      "reviewedAt": "2026-11-18",
       "paperPagesInspected": [
         1,
         2,
@@ -5467,34 +5467,34 @@
       "sourceReviewedSupportedTasks": 41,
       "publishedPracticeCards": 41,
       "publishedListeningPracticeCards": 20,
-      "numericallySupportedPracticeCards": 40,
-      "confidenceOnlyPracticeCards": 1,
+      "numericallySupportedPracticeCards": 41,
+      "confidenceOnlyPracticeCards": 0,
       "printedWrittenMarks": 170,
       "printedListeningMarks": 80,
       "selectedExaminationMarks": 250,
       "allPracticeAlternativeMarks": 320,
-      "publishedPracticeMarks": 290,
-      "confidenceOnlyPrintedMarks": 30,
+      "publishedPracticeMarks": 320,
+      "confidenceOnlyPrintedMarks": 0,
       "newCards": 24,
       "correctedCards": 17,
       "previousIdsPreserved": 199,
-      "sourceReview": "All 41 original asks are represented by complete tasks. The essay retains its unresolved literal deduction as confidence review. Source coverage is distinct from numerical resolution.",
+      "sourceReview": "41 of 41 asks from the original papers have cards. Every card uses the printed marks; the essay uses the printed content10/expression20 grid and the fixed no-answer line. Alex approved all17 live-card corrections on18November; every live id and conceptId is preserved.",
       "diagnosedReaderIssues": [
-        "Independent 52-page visual census replaces historical 43 with 41 asks: three guided-writing genre headings share one complete 40-mark choice containing all six alternatives. The repeated Irish LA2(i) label below OR is separately disclosed and does not create a task.",
-        "All 17 original card identities and primary topics are retained. Four old 8-mark summaries are explicitly corrected to the published 10 each. Original Q2.1 heading50 and direction40 labels remain visible with the scheme40 boundary.",
-        "The one 11-классницу school-year fact has two literal accepted scheme wordings under one detail quota. Age and city are independent. C1Q3(iii) retains one required advantage and one required disadvantage.",
-        "Music keeps all22 printed entries and21 distinct credit opportunities under choose10; синтезатор entries5/10 earn once. YouTube receives0 in either language. Primary russian-2-0 stays, with reviewed meaning/leisure secondary topics.",
-        "Summaries keep complete main/secondary pools, four manual0/1/2 details plus discretion0/1/2, literal intelligible-partial rule and p7 discretion language exception. Incomplete response caps discretion1; missing either required certain/uncertain aspect triggers the same cap without invented content allocations. Irish permission and exact English-quality/loanword rules remain visible.",
-        "Five infinitives preserve both language-permission and English-translation-zero clauses without automatic language penalty. Grammar has13 bracketed prompts/15 priced native forms; first past/present slash pair is one alternative response.",
-        "Essay30 keeps all five choices and complete pages13–15, with literal Deduct1/2marks unresolved. Guided writing retains six choices, C15/E15/TC10, explicit2 soft-sign deduction and literal LowerA prose/table overlap at11 without descriptor reassignment.",
-        "All20 listening asks retain explicit local tariffs and Russian/excess-material acceptance. Boat1 stays under the one-answer quota, Economics1 remains exclusive to its full education detail, and plus-linked bullets remain complete2-mark responses. The two-detail crew prompt retains the explicit scheme1x4 rather than an invented2+2 split."
+        "Independent52-page visual census counts41 asks: three guided-writing genre headings share one complete40-mark printed choice containing all six alternatives. The repeated Irish LA2(i) label below OR is disclosed and does not create another ask.",
+        "All17 existing2021 card ids and conceptIds are retained. Twenty-four new asks are added. The 1355 earlier reviewed card objects are unchanged.",
+        "C1Q3(iii) requires one advantage and one disadvantage, each2. The two school-year descriptions share one two-mark fact group; neither can earn a second credit for the same fact.",
+        "All22 printed music entries remain visible, with21 distinct claimable words because синтезатор is repeated. YouTube receives0 as printed. The preserved cultural-awareness primary and reviewed meaning/leisure secondary topics remain explicit.",
+        "Each summary has13,11,15 or13 claimable accepted-answer rows, respectively. At most four details earn0/1/2 each, plus0/1/2 discretionary marks. The fixed incomplete-answer/certain-uncertain condition limits discretion to1 without inventing content allocations. Exact Irish permission and language-quality directions remain visible.",
+        "Five infinitives retain both the language-permission and English-translation-zero clauses without an automatic language multiplier. Grammar has13 bracketed prompts and15 separately marked forms; the first past/present slash pair remains one alternative answer.",
+        "The short essay retains all five options and the full printed content10/expression20 grid, title deduction, lower-expression thresholds and LowerA range. The literal Deduct1/2marks direction stays visible without an inferred automatic deduction. It carries The scheme prints no answer for this part. The guided-writing choice retains all six options and content15/expression15/textual-coherence10.",
+        "All20 listening asks retain their own source boundaries and printed marks. Boat1 stays within its one-answer quota, Economics1 is alternative credit for its full education detail, and plus-linked bullets stay complete responses. The crew ask retains the printed1x4 allocation without an invented2+2 split."
       ],
       "replacedHistoricalExclusionCount": 26,
       "validation": {
-        "status": "Draft original/source/canonical gates passed; generated runtime, preservation, required gates and deterministic cycles pending.",
+        "status": "Source and focused runtime checks passed; wider checks interrupted by removed shared dependencies. Final checks and push in progress.",
         "sourceQuoteGate": {
           "cards": 41,
-          "slices": 351,
+          "slices": 429,
           "passed": true
         },
         "draftOriginalTests": {
@@ -5523,25 +5523,24 @@
             "unsupported tariff"
           ]
         },
-        "sourceCoverageComplete": false,
+        "sourceCoverageComplete": true,
         "sourceCheckpointPassed": false,
         "sittingCompletion": false,
-        "heldNumericTasks": [
-          {
-            "id": "ru-2021-hl-se",
-            "questionRef": "2021 HL Section SE Q2",
-            "printedMarks": 30,
-            "reason": "Literal soft-sign deduction1/2 is unresolved; complete five-choice confidence task."
-          }
-        ],
-        "appTypes": "pending root combined integration",
-        "build": "pending root combined integration",
-        "browserQA": "coordinator-owned; not claimed",
+        "heldNumericTasks": [],
+        "appTypes": "pending batch check",
+        "build": "pending batch check",
+        "browserQA": "Native browser available; browser-host unavailable. Batch review pending.",
         "rootIntegrationRequirements": [
-          "Actual essay confidence saves0/0 in both current layouts, with confidence labels and no suggested numerical maximum.",
-          "Exclude the confidence essay from numeric quiz selection.",
-          "Retain all prior reviewed objects, original199 identities and all non-Russian Atlas records; retain old2021 anchors under independently reviewed corrections."
-        ]
+          "Verify approved17 corrected cards on current shared screens, preserving every live id and conceptId.",
+          "Verify all41 card-to-Atlas bindings under the same primary heading."
+        ],
+        "focusedRuntime": {
+          "files": 4,
+          "cases": 107,
+          "passed": true
+        },
+        "sourceEvidence": "reviews/russian-2021-hl-sec-20261118/archive-recheck.json",
+        "splitCategoryReport": "reviews/russian-2021-hl-sec-20261118/split-and-category.json"
       }
     }
   ]
