@@ -5,16 +5,17 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as higher } from '../components/MarkBank/cards/japanese/higher';
 import rawCards from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2010-hl-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2010-hl.json';
-import glyphs from '../scripts/markbank/authoring/glyphmap-japanese-2010-hl.json';
-import glyphProof from '../scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json';
 import { assertJapaneseSelectedContent, assertJapanese2010ManualResponses, assertJapaneseSourceOnlyFigure } from '../scripts/markbank/japanese-source-rules.mjs';
 import { assertJapaneseVariantSources } from '../scripts/markbank/japanese-source-answers.mjs';
-import figures from '../components/MarkBank/figures-japanese.json';
 import { tariffReconciles } from '../types/markBank';
 import { marksClaimed } from '../components/MarkBank/SessionScreen';
 import { languageMarks, languagePointsAllocation, type LanguageScores } from '../components/MarkBank/languageScoring';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2010-hl.json', import.meta.url), 'utf8'));
+const glyphs = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/glyphmap-japanese-2010-hl.json', import.meta.url), 'utf8'));
+const glyphProof = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2010-hl-glyph-proof.json', import.meta.url), 'utf8'));
+const figures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-japanese.json', import.meta.url), 'utf8'));
 
 const cards = higher.filter(card => card.year === 2010);
 const idFor = (key: (string | number | null)[]) => `ja-2010-hl-${key.filter(part => part !== null).join('-').toLowerCase()}`;
@@ -52,7 +53,7 @@ describe('Japanese 2010 Higher original-source review', () => {
     const digest = (path: string) => createHash('sha256').update(readFileSync(resolve(__dirname, '..', path))).digest('hex');
     expect(review.glyphRecovery.sha256).toBe(digest(review.glyphRecovery.path));
     expect(glyphs.sha256).toBe(review.sources.find(source => source.document === 'scheme')!.sha256);
-    expect(Object.values(glyphs.repairs).reduce((sum, font) => sum + Object.keys(font).length, 0)).toBe(314);
+    expect(Object.values(glyphs.repairs as Record<string, object>).reduce((sum, font) => sum + Object.keys(font).length, 0)).toBe(314);
     expect(glyphs.unresolvedImageOnly).toEqual([]);
     expect(glyphProof.glyphs).toHaveLength(311);
     expect(glyphProof.blankGlyphs).toHaveLength(3);

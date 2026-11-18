@@ -6,11 +6,12 @@ import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinar
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import aliases from '../components/MarkBank/cards/japanese/aliases.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2016-ol-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2016-ol.json';
 import { languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { marksClaimed } from '../components/MarkBank/SessionScreen';
 import { tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2016-ol.json', import.meta.url), 'utf8'));
 
 const cards = ordinary.filter(card => card.year === 2016);
 const idFor = (key: (string | number | null)[]) => `ja-2016-ol-${key.filter(part => part !== null).join('-').toLowerCase()}`;

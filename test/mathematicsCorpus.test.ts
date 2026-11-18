@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import foundation2010project2 from '../scripts/markbank/mathematics/reviews/2010-foundation-p2-project.json';
 import foundation2010p2 from '../scripts/markbank/mathematics/reviews/2010-foundation-p2.json';
 import foundation2010p1 from '../scripts/markbank/mathematics/reviews/2010-foundation-p1.json';
@@ -37,7 +38,6 @@ import ordinary2013phase2p2 from '../scripts/markbank/mathematics/reviews/2013-o
 import ordinary2013phase2p1 from '../scripts/markbank/mathematics/reviews/2013-ordinary-p1.json';
 import higher2013phase2p2 from '../scripts/markbank/mathematics/reviews/2013-higher-p2.json';
 import higher2013phase2p1 from '../scripts/markbank/mathematics/reviews/2013-higher-p1.json';
-import mathsSchemeCatalogue from '../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json';
 import foundation2013project2 from '../scripts/markbank/mathematics/reviews/2013-foundation-p2-project.json';
 import foundation2013project1 from '../scripts/markbank/mathematics/reviews/2013-foundation-p1-project.json';
 import ordinary2013project2 from '../scripts/markbank/mathematics/reviews/2013-ordinary-p2-project.json';
@@ -52,14 +52,13 @@ import ordinary2015p2 from '../scripts/markbank/mathematics/reviews/2015-ordinar
 import ordinary2015p1 from '../scripts/markbank/mathematics/reviews/2015-ordinary-p1.json';
 import higher2015p2 from '../scripts/markbank/mathematics/reviews/2015-higher-p2.json';
 import higher2015p1 from '../scripts/markbank/mathematics/reviews/2015-higher-p1.json';
-import questionCropOverrides from '../scripts/markbank/authoring/maths_qfig_overrides.json';
-import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
+import { CARDS as ORDINARY_DECK } from '../components/MarkBank/cards/maths/ordinary';
 import ordinary1 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p1.json';
 import ordinary2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2.json';
 import { describe, expect, it } from 'vitest';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { logicalQuestionIdentity, topicsForPaper } from '../components/PaperTrail/topics';
-import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
+import { CARDS as FOUNDATION_DECK } from '../components/MarkBank/cards/maths/foundation';
 import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-single.json';
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
@@ -75,7 +74,8 @@ import foundation2019 from '../scripts/markbank/mathematics/reviews/2019-foundat
 import foundation2020 from '../scripts/markbank/mathematics/reviews/2020-foundation-single.json';
 import foundation2021 from '../scripts/markbank/mathematics/reviews/2021-foundation-single.json';
 import foundation2022 from '../scripts/markbank/mathematics/reviews/2022-foundation-single.json';
-import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as HIGHER_DECK } from '../components/MarkBank/cards/maths/higher';
+import type { SecQuestionCard } from '../types/markBank';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
 import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json';
@@ -109,7 +109,6 @@ import ordinary2018p2 from '../scripts/markbank/mathematics/reviews/2018-ordinar
 import ordinary2018p1 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p1.json';
 import higher2018p2 from '../scripts/markbank/mathematics/reviews/2018-higher-p2.json';
 import higher2018p1 from '../scripts/markbank/mathematics/reviews/2018-higher-p1.json';
-import schemeRowFigures from '../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json';
 import ordinary2019p2 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p2.json';
 import ordinary2019p1 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p1.json';
 import higher2019p2 from '../scripts/markbank/mathematics/reviews/2019-higher-p2.json';
@@ -122,6 +121,14 @@ import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
 import ordinary2026p2 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p2.json';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+// The Mathematics decks hold question cards only; typed so, the tests read their point-card fields.
+const HIGHER = HIGHER_DECK as SecQuestionCard[];
+const ORDINARY = ORDINARY_DECK as SecQuestionCard[];
+const FOUNDATION = FOUNDATION_DECK as SecQuestionCard[];
+const mathsSchemeCatalogue = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json', import.meta.url), 'utf8'));
+const questionCropOverrides = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/maths_qfig_overrides.json', import.meta.url), 'utf8'));
+const schemeRowFigures = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json', import.meta.url), 'utf8'));
 
 describe('2012 Higher Project Maths Phase 3 Paper 1', () => {
   const cards = HIGHER.filter(c => c.id.startsWith('maths-2012-hl-p1-project-'));

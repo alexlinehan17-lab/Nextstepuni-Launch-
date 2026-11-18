@@ -1,13 +1,15 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '../components/MarkBank/cards/lcvp/common';
 import { tariffReconciles } from '../types/markBank';
-import authored from '../scripts/markbank/authored/lcvp.json';
 import review from '../scripts/markbank/authoring/lcvp/2018-cl-main-review.json';
 import anchors from '../scripts/paper-trail/answers/2018/LC462CLP000EV.pdf.json';
-import local from '../data/examTopics/link-modules-local-crosswalk.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const authored = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/lcvp.json', import.meta.url), 'utf8'));
+const local = JSON.parse(readFileSync(new URL('../data/examTopics/link-modules-local-crosswalk.json', import.meta.url), 'utf8'));
 
 const all = CARDS.filter(c => c.id.startsWith('lcvp-2018-cl-'));
 const get = (suffix: string) => {
@@ -160,7 +162,7 @@ describe('LCVP 2018: full source tasks, preserved identities and marketing alloc
     expect(local.reviewedEnglish2018.canonicalTopicIdsByQuestion['12']).toEqual(['lcvp-link-modules-1-0', 'lcvp-link-modules-1-1', 'lcvp-link-modules-1-2']);
     expect(local.reviewedEnglish2018.canonicalTopicIdsByQuestion['13']).toEqual(['lcvp-link-modules-0-0', 'lcvp-link-modules-0-2', 'lcvp-link-modules-0-3']);
     const paper = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'link-modules' && p.year === 2018 && p.lang === 'ev' && p.fileid === 'LC462CLP000EV.pdf')!;
-    for (const [n, topics] of Object.entries(local.reviewedEnglish2018.originalAtlasTopicIds)) expect(browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(topics));
+    for (const [n, topics] of Object.entries(local.reviewedEnglish2018.originalAtlasTopicIds as Record<string, string[]>)) expect(browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(topics));
     for (const mapping of local.reviewedEnglish2018.markBankMappings) {
       const topics = browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === mapping.n)!);
       expect(topics, mapping.id).toEqual(expect.arrayContaining(mapping.atlasTopicIds));

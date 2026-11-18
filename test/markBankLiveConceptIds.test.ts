@@ -14,11 +14,13 @@
  * time (scripts/markbank/liveConceptIds.mjs). Never refresh this fixture to
  * make a change pass: a live conceptId only moves on Alex's say-so.
  */
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import pins from './fixtures/markBankLiveConceptIds.json';
 import overrides from '../scripts/markbank/live-concept-ids.json';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { loadCards, levelsFor } from '../components/MarkBank/deck';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const pins = JSON.parse(readFileSync(new URL('./fixtures/markBankLiveConceptIds.json', import.meta.url), 'utf8'));
 
 const SUBJECTS = ['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp'];
 const live = pins as Record<string, string>;

@@ -1,8 +1,9 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { CARDS } from '../components/MarkBank/cards/maths/ordinary';
-import { CARDS as HIGHER_CARDS } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as ORDINARY_DECK } from '../components/MarkBank/cards/maths/ordinary';
+import { CARDS as HIGHER_DECK } from '../components/MarkBank/cards/maths/higher';
+import type { SecQuestionCard } from '../types/markBank';
 import { browseTopicIdsForQuestion, questionsForTopics, topicsForPaper } from '../components/PaperTrail/topics';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { isAnswerMap, preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
@@ -18,6 +19,9 @@ import review2024HL2 from '../scripts/markbank/mathematics/reviews/2024-higher-p
 
 import review2023HL1 from '../scripts/markbank/mathematics/reviews/2023-higher-p1-deferred.json';
 
+// The Mathematics decks hold question cards only; typed so, the tests read their point-card fields.
+const CARDS = ORDINARY_DECK as SecQuestionCard[];
+const HIGHER_CARDS = HIGHER_DECK as SecQuestionCard[];
 const prefix = 'maths-2025-ol-p1-deferred-q';
 const cards = CARDS.filter(c => c.id.startsWith(prefix));
 

@@ -6,12 +6,13 @@ import { CARDS as higher } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinary';
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2026-hl.json';
 import aliases from '../components/MarkBank/cards/japanese/aliases.json';
-import figures from '../components/MarkBank/figures-japanese.json';
 import { languageCriterionValue, languagePointsMarks, languageWritingMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, type LanguageWritingRubric, type LanguagePointsRubric } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2026-hl.json', import.meta.url), 'utf8'));
+const figures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-japanese.json', import.meta.url), 'utf8'));
 
 const idFor = (key: (string | number | null)[]) => `ja-2026-hl-${key.filter(part => part !== null).join('-').toLowerCase()}`;
 const cards = higher.filter(card => card.year === 2026);
@@ -97,7 +98,7 @@ describe('Japanese 2026 Higher source review', () => {
     expect(writing('4').taskRequirements.join(' ')).toContain('1 OR 2 OR 3');
     expect(writing('5').criteria.filter(criterion => criterion.id.startsWith('heading-'))).toHaveLength(4);
     expect(cards.filter(card => 'questionFigure' in card && card.questionFigure)).toHaveLength(8);
-    for (const figure of Object.values(figures)) {
+    for (const figure of Object.values(figures as Record<string, { src: string; md5: string }>)) {
       expect(createHash('md5').update(readFileSync(resolve(__dirname, '../public', figure.src.slice(1)))).digest('hex')).toBe(figure.md5);
     }
   });

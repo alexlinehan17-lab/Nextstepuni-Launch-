@@ -13,14 +13,16 @@
  * silently drop or reshape a reviewed sitting. One PINS row per sitting,
  * added when the sitting is written.
  */
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CARDS as PHYS_HIGHER } from '../components/MarkBank/cards/physics/higher';
 import { CARDS as PHYS_ORDINARY } from '../components/MarkBank/cards/physics/ordinary';
-import audit from '../scripts/markbank/authored/physics-review-audit.json';
 import exclusions from '../scripts/markbank/authoring/exclusions/physics.json';
-import physicsFigures from '../components/MarkBank/figures-physics.json';
-import sharedFigures from '../components/MarkBank/figures.json';
 import { tariffReconciles } from '../types/markBank';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const audit = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/physics-review-audit.json', import.meta.url), 'utf8'));
+const physicsFigures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-physics.json', import.meta.url), 'utf8'));
+const sharedFigures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures.json', import.meta.url), 'utf8'));
 
 type Task = { id: string; questionRef: string; total: number; route: string | null; status: string;
   evidence?: string; cells?: { printed: string[]; sum: number | null; waiver?: string } };
@@ -109,8 +111,10 @@ const PINS: Record<string, [number, number, number, string, string]> = {
 };
 
 type Card = (typeof PHYS_HIGHER)[number] & {
-  rows: Array<{ verbatim?: string; contextNote?: string; marks?: number | null }>;
+  rows: Array<{ verbatim?: string; contextNote?: string; marks?: number | null; route?: string;
+    group?: { options: string[]; claimMax?: number; perOption?: number } }>;
   figure?: { candId: string }; questionFigure?: { candId: string };
+  labelKey?: Array<{ letter: string; meaning: string; askedInThisQuestion?: boolean }>;
 };
 const deck = [...PHYS_HIGHER, ...PHYS_ORDINARY] as unknown as Card[];
 const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(sharedFigures)]);

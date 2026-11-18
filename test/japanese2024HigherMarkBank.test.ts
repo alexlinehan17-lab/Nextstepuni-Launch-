@@ -8,12 +8,13 @@ import rawCards from '../components/MarkBank/cards/japanese/reviewed.json';
 import aliases from '../components/MarkBank/cards/japanese/aliases.json';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import census from '../scripts/markbank/authoring/reviews/japanese-2024-hl-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2024-hl.json';
 import resolvedExclusions from '../scripts/markbank/authoring/reviews/japanese-2024-hl-resolved-exclusions.json';
 import activeExclusions from '../scripts/markbank/authoring/exclusions/japanese.json';
 import { tariffReconciles } from '../types/markBank';
 import { languageCriterionValue, languagePointsMarks, languageWritingMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2024-hl.json', import.meta.url), 'utf8'));
 
 const cards = higher.filter(card => card.year === 2024);
 const idFor = (key: (string | number | null)[]) => `ja-2024-hl-${key.filter(part => part !== null).join('-').toLowerCase()}`;

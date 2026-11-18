@@ -19,6 +19,7 @@ import reviewedOmissions from '../data/examTopics/physics-reference-omissions-to
 import markBankCoverage from '../scripts/markbank/coverage-baseline.json';
 import markBankExclusions from '../scripts/markbank/authoring/exclusions/physics.json';
 import { CARDS as higherMarkBankCards } from '../components/MarkBank/cards/physics/higher';
+import type { SecQuestionCard } from '../types/markBank';
 import { CARDS as ordinaryMarkBankCards } from '../components/MarkBank/cards/physics/ordinary';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import {
@@ -482,7 +483,7 @@ describe('Physics exam-topic registry', () => {
   });
 
   it('preserves shared electronics totals, supplementary context, and alternative calculation routes', () => {
-    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2023-hl-deferred-${suffix}`)!;
+    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2023-hl-deferred-${suffix}`)! as SecQuestionCard;
     for (const [suffix, total] of [['i-ii', 12], ['iii-v', 16], ['vi-vii', 15], ['viii-ix', 13]] as const) {
       const shared = card(`q12-b-${suffix}`);
       expect(shared.totalMarks).toBe(total);
@@ -511,7 +512,7 @@ describe('Physics exam-topic registry', () => {
   });
 
   it('retains the deferred capacitor plate signs and the separately priced diagram labels', () => {
-    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2022-hl-deferred-${suffix}`)!;
+    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2022-hl-deferred-${suffix}`)! as SecQuestionCard;
     const a = card('q14-c-iii-plate-a');
     const b = card('q14-c-iv-plate-b');
     expect(a.totalMarks).toBe(3);

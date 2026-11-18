@@ -4,8 +4,6 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
-import legacy from '../scripts/markbank/authored/russian.json';
-import sources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
 import audio from '../data/russianAudio.json';
 import { languageMarks, languageScoreId, languageLengthId, languageGroupId, languageRowId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
@@ -13,6 +11,9 @@ import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { HOSTED_ANSWER_OVERRIDES } from '../components/PaperTrail/vaultResolve';
 import { reviewedRussianJointTask } from '../scripts/markbank/russianJointTasks.mjs';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const legacy = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/russian.json', import.meta.url), 'utf8'));
+const sources = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/russian-reviewed-sources.json', import.meta.url), 'utf8'));
 
 const get = (suffix: string) => {
   const card = REVIEWED_CARDS.find(card=>card.id===`ru-2026-hl-${suffix}`);
@@ -108,10 +109,18 @@ describe('Russian 2026 Higher independent source review', () => {
         expect(question.region.map((region:{p:number})=>region.p)).toEqual(original.schemePages);
         expect(question.pP).toBe(original.questionPages[0]);
         if(joint)expect(question.markBankCardId).toBe(source.id);
-        expect(PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.some(q=>q.n===original.n&&q.primary===source.topicId)).toBe(true);
+        // A joint task's printed questions carry their own topics (as Codex's Russian branch reads them, 989a1a4).
+        const topic = PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.find(q=>q.n===original.n);
+        const ownTopics = original as { topicId?: string; additionalTopicIds?: string[] };
+        expect(topic?.primary, `${source.id}/${original.n}`).toBe(ownTopics.topicId ?? source.topicId);
+        const secondary = (ownTopics.additionalTopicIds ?? card.additionalTopicIds)?.[0];
+        if (ownTopics.additionalTopicIds !== undefined || secondary !== undefined) {
+          expect(topic?.secondary, `${source.id}/${original.n} secondary`).toBe(secondary);
+        }
       }
       expect(map.schemeFileid).toBe(source.schemeFileid);
-      expect(HOSTED_ANSWER_OVERRIDES.has(`russian|${source.year}|${source.paperFileid}`)).toBe(true);
+      const hostedKey = `russian|${source.year}|${source.paperFileid}`;
+      expect(HOSTED_ANSWER_OVERRIDES.has(hostedKey), hostedKey).toBe(true);
       expect(PAPER_TRAIL_INDEX.russian.find(p=>p.year===source.year&&p.level===source.level&&p.lang==='ev')?.papers.find(p=>p.doc.f===source.paperFileid)?.answers).toBe(1);
     }
   });

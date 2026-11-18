@@ -1,9 +1,11 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/russian/higher';
-import legacy from '../scripts/markbank/authored/russian.json';
 import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const legacy = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/russian.json', import.meta.url), 'utf8'));
 
 const sitting=REVIEWED_CARDS.filter(card=>card.year===2022 && card.level==='higher');
 const get=(suffix:string)=>{

@@ -5,16 +5,17 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinary';
 import rawCards from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2010-ol-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2010-ol.json';
 import glyphs from '../scripts/markbank/authoring/glyphmap-japanese-2010-ol.json';
 import glyphProof from '../scripts/markbank/authoring/reviews/japanese-2010-ol-glyph-proof.json';
-import figures from '../components/MarkBank/figures-japanese.json';
 import { assertJapanese2010OrdinaryRules, assertJapaneseSourceOnlyFigure } from '../scripts/markbank/japanese-source-rules.mjs';
 import { japaneseBoundBankAnswers } from '../scripts/markbank/japanese-source-answers.mjs';
 import { marksClaimed } from '../components/MarkBank/SessionScreen';
 import { languageCriterionValue, languageLengthId, languageWritingMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2010-ol.json', import.meta.url), 'utf8'));
+const figures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-japanese.json', import.meta.url), 'utf8'));
 
 const cards = ordinary.filter(card => card.year === 2010);
 const idFor = (key: (string | number | null)[]) => `ja-2010-ol-${key.filter(part => part !== null).join('-').toLowerCase()}`;

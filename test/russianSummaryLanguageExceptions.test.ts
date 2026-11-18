@@ -4,7 +4,8 @@ import { languageFlagId, languageGroupId, languageMarks, languageOtherLanguageId
 import { tariffReconciles, type LanguagePointsRubric, type SecRubricCard } from '../types/markBank';
 
 type PointsCard = SecRubricCard & { rubric: LanguagePointsRubric };
-const pages = new Map([[2010,7],[2013,6],[2014,6],[2015,7],[2016,6],[2017,6],[2022,7],[2023,7],[2024,8],[2025,7],[2026,7]]);
+// 2018-2020 as Codex's reviewed decks carry them (its Russian branch adds 2021 with the 2021 Higher sitting).
+const pages = new Map([[2010,7],[2013,6],[2014,6],[2015,7],[2016,6],[2017,6],[2018,6],[2019,6],[2020,7],[2022,7],[2023,7],[2024,8],[2025,7],[2026,7]]);
 const ids = [...pages.keys()].flatMap(year => (year === 2010 ? [1,2,3,4,5] : [1,2,3,4]).map(number => `ru-${year}-hl-c2-${number}`));
 const get = (id: string): PointsCard => {
   const card = REVIEWED_CARDS.find(card => card.id === id);
@@ -21,7 +22,7 @@ const placement = (card: PointsCard): LanguageScores => {
 };
 
 describe('source-reviewed Russian manual summary language exceptions', () => {
-  it('publishes only the forty prior and five 2010 source-reviewed summary exceptions', () => {
+  it('publishes only the individually source-reviewed summary exceptions, including 2018–2020', () => {
     const actual = REVIEWED_CARDS.filter(card => card.answerLanguageRule?.manualCriterionExceptions).map(card => card.id);
     expect(actual.sort()).toEqual([...ids].sort());
     expect(REVIEWED_CARDS.find(card => card.id === 'ru-2011-hl-c2')?.answerLanguageRule).toBeUndefined();

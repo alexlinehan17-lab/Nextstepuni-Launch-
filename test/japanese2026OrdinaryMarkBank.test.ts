@@ -4,7 +4,6 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinary';
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
-import review from '../scripts/markbank/authoring/reviews/japanese-2026-ol.json';
 import census2014 from '../scripts/markbank/authoring/reviews/japanese-2014-ol-census.json';
 import census2012 from '../scripts/markbank/authoring/reviews/japanese-2012-ol-census.json';
 import census2010 from '../scripts/markbank/authoring/reviews/japanese-2010-ol-census.json';
@@ -14,6 +13,8 @@ import census2015 from '../scripts/markbank/authoring/reviews/japanese-2015-ol-c
 import { languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, UNPRINTED_ANSWER, type LanguagePointsRubric } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2026-ol.json', import.meta.url), 'utf8'));
 
 const idFor = (key: (string | number | null)[]) => `ja-2026-ol-${key.filter(part => part !== null).join('-').toLowerCase()}`;
 const cards = ordinary.filter(card => card.year === 2026);

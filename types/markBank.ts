@@ -1792,6 +1792,22 @@ export type SecCard = SecPointCard | SecRubricCard;
 export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
 export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'question' || c.kind === 'diagram';
 export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
+
+/** Subjects whose reviewed decks (released from Codex on 18 Nov 2026) hold a
+ *  task as a confidence review. Elsewhere a question-total card keeps the
+ *  mark-total assessment it has always had. */
+const CONFIDENCE_REVIEW_SUBJECTS = new Set(['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp']);
+
+/**
+ * A "confidence-only" hold: the reviewed scheme gives this task no settled
+ * per-answer tariff (or its sources disagree on the total), so it is shown and
+ * self-assessed but never scored: no mark total is offered, no numeric accuracy
+ * is recorded, and the close screen leaves it out of its totals. These cards
+ * stay as reviewed until they are converted under R3/R4.
+ */
+export const isConfidenceReviewCard = (c: SecCard): boolean =>
+  isPointCard(c) && c.tariffModel.kind === 'questionTotal' && !c.mathematicsScale
+  && CONFIDENCE_REVIEW_SUBJECTS.has(c.subjectId);
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 

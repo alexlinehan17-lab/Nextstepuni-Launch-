@@ -1,13 +1,15 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '../components/MarkBank/cards/lcvp/common';
 import { tariffReconciles } from '../types/markBank';
 import review from '../scripts/markbank/authoring/lcvp/2019-cl-main-review.json';
-import authored from '../scripts/markbank/authored/lcvp.json';
 import anchors from '../scripts/paper-trail/answers/2019/LC462CLP000EV.pdf.json';
-import local from '../data/examTopics/link-modules-local-crosswalk.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const authored = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/lcvp.json', import.meta.url), 'utf8'));
+const local = JSON.parse(readFileSync(new URL('../data/examTopics/link-modules-local-crosswalk.json', import.meta.url), 'utf8'));
 
 const all = CARDS.filter(c => c.id.startsWith('lcvp-2019-cl-'));
 const get = (suffix: string) => {
@@ -148,7 +150,7 @@ describe('LCVP 2019: complete original tasks and unresolved ICT allocation', () 
     expect(anchors.q.find(q => q.n === '17')?.region.map(r => r.p)).toEqual([17, 18]);
     expect(local.reviewedEnglish2019.markBankMappings).toHaveLength(45);
     const paper = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'link-modules' && p.year === 2019 && p.lang === 'ev' && p.fileid === 'LC462CLP000EV.pdf')!;
-    for (const [n, original] of Object.entries(local.reviewedEnglish2019.originalAtlasTopicIds)) {
+    for (const [n, original] of Object.entries(local.reviewedEnglish2019.originalAtlasTopicIds as Record<string, string[]>)) {
       expect(browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(original));
     }
     for (const mapping of local.reviewedEnglish2019.markBankMappings) {

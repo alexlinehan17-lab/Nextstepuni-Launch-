@@ -47,7 +47,17 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
-  // 2026 Russian: independently reviewed written and listening task pools.
+  // Russian: independently reviewed written and listening task pools (the
+  // 2010 and 2018-2020 Higher entries as Codex 465e0c377 binds them; its 2021
+  // entries wait for the 2021 Higher sitting).
+  'russian|2010|LC099ALP000EV.pdf',
+  'russian|2010|LC099ALPA00EV.pdf',
+  'russian|2018|LC099ALP000EV.pdf',
+  'russian|2018|LC099ALPA00EV.pdf',
+  'russian|2019|LC099ALP000BV.pdf',
+  'russian|2019|LC099ALPA00BV.pdf',
+  'russian|2020|LC099ALP000BV.pdf',
+  'russian|2020|LC099ALPA00BV.pdf',
   'russian|2026|LC099ALP000BV.pdf',
   'russian|2026|LC099ALPA00BV.pdf',
   'russian|2026|LC099GLP000BV.pdf',

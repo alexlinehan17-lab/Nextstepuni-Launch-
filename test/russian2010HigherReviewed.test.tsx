@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import LanguageRubricPanel from '../components/MarkBank/LanguageRubricPanel';
@@ -5,7 +6,8 @@ import SessionScreen from '../components/MarkBank/SessionScreen';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageFlagId, languageGroupId, languageLengthId, languageMarks, languageOtherLanguageId, languageRowId, languageScoreId, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
-import sources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const sources = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/russian-reviewed-sources.json', import.meta.url), 'utf8'));
 
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2010&&c.level==='higher');
 const card=(suffix:string)=>{const c=sitting.find(c=>c.id===`ru-2010-hl-${suffix}`);if(!c)throw new Error(suffix);return c;};

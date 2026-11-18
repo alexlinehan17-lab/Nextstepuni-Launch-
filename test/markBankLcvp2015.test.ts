@@ -1,13 +1,15 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '../components/MarkBank/cards/lcvp/common';
 import { tariffReconciles } from '../types/markBank';
-import authored from '../scripts/markbank/authored/lcvp.json';
 import review from '../scripts/markbank/authoring/lcvp/2015-cl-main-review.json';
 import anchors from '../scripts/paper-trail/answers/2015/LC462CLP000EV.pdf.json';
-import local from '../data/examTopics/link-modules-local-crosswalk.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const authored = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/lcvp.json', import.meta.url), 'utf8'));
+const local = JSON.parse(readFileSync(new URL('../data/examTopics/link-modules-local-crosswalk.json', import.meta.url), 'utf8'));
 
 const all = CARDS.filter(c => c.id.startsWith('lcvp-2015-cl-'));
 const get = (suffix: string) => {
@@ -173,7 +175,7 @@ describe('LCVP 2015: all original tasks, choices and Atlas identities', () => {
     expect(Object.keys(crosswalk.originalAtlasTopicIds)).toHaveLength(10);
     const paper = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'link-modules' && p.year === 2015 && p.lang === 'ev' && p.fileid === 'LC462CLP000EV.pdf')!;
     expect(paper.q).toHaveLength(17);
-    for (const [n, topics] of Object.entries(crosswalk.originalAtlasTopicIds)) expect(browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(topics));
+    for (const [n, topics] of Object.entries(crosswalk.originalAtlasTopicIds as Record<string, string[]>)) expect(browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(topics));
     for (const [n, nodes] of Object.entries(review.originalAtlasMemberships.canonicalWaveTopics)) expect(crosswalk.canonicalTopicIdsByQuestion[n as keyof typeof crosswalk.canonicalTopicIdsByQuestion]).toEqual(expect.arrayContaining(nodes));
     for (const mapping of crosswalk.markBankMappings) {
       const topics = browseTopicIdsForQuestion(paper, paper.q.find(q => q.n === mapping.n)!);

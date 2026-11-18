@@ -270,7 +270,9 @@ describe('Russian source directions visible in the practice session',()=>{
   it('shows both 2015 printed job questions under the published joint allocation',async()=>{
     reveal('l3-3','hl',2015);
     await waitFor(()=>expect(screen.getByText(/Both printed questions are practised together/)).toBeVisible());
-    expect(screen.getByText(/Give one detail/)).toHaveTextContent('Give three details');
+    // Both printed questions are shown, each on its own printed line.
+    expect(screen.getByText(/Give one detail/)).toBeVisible();
+    expect(screen.getByText(/Give three details/)).toBeVisible();
     expect(screen.getByText(/single eight-mark maximum/)).toBeVisible();
   });
   it('keeps each 2015 complete admission explanation as one four-mark claim',async()=>{

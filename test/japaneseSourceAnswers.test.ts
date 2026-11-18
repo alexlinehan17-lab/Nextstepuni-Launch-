@@ -1,7 +1,9 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { assertJapaneseVariantSources, japaneseAnswerRows } from '../scripts/markbank/japanese-source-answers.mjs';
-import review from '../scripts/markbank/authoring/reviews/japanese-2015-hl.json';
 import { UNPRINTED_ANSWER } from '../types/markBank';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2015-hl.json', import.meta.url), 'utf8'));
 
 // Portable committed selectors are checked here; the mandatory source verifier
 // separately rereads their exact bytes, physical pages and source PDF hashes.

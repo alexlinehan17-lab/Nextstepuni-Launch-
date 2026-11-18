@@ -267,8 +267,10 @@ describe('Mark Bank paper-coverage ratchet', () => {
         }
         // As reconcile.py reads a Mathematics citation: the booklet is pinned by
         // its review, so "— Deferred" and "(Project Maths)" before the address go.
+        // Foundation 2010 and 2012 Paper 1 Q7 end with an unlettered graph the
+        // scheme marks on its own, cited "Q7(graph)"; reconcile.py reads Q7.
         const cited = subject === 'maths'
-          ? ref.replace(' — Deferred Q', ' Q').replace(' (Project Maths) Q', ' Q') : ref;
+          ? ref.replace(' — Deferred Q', ' Q').replace(' (Project Maths) Q', ' Q').replace(/\(graph\)$/, '') : ref;
         const core = cited.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
         return !m || !TAIL.test(core.slice(m[0].length));

@@ -1,12 +1,14 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '../components/MarkBank/cards/lcvp/common';
 import { tariffReconciles } from '../types/markBank';
 import review from '../scripts/markbank/authoring/lcvp/2021-cl-main-review.json';
 import anchors from '../scripts/paper-trail/answers/2021/LC462CLP000EV.pdf.json';
-import local from '../data/examTopics/link-modules-local-crosswalk.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
+// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
+const local = JSON.parse(readFileSync(new URL('../data/examTopics/link-modules-local-crosswalk.json', import.meta.url), 'utf8'));
 
 const all = CARDS.filter(c => c.id.startsWith('lcvp-2021-cl-'));
 const get = (suffix: string) => {

@@ -47,6 +47,7 @@ import {
   MARK_BANK_LEVEL_LABELS,
   MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
+  isConfidenceReviewCard,
   isPointCard,
   isRubricCard,
   pclmCapRule,
@@ -315,10 +316,11 @@ export const showsRowMarks = (card: SecCard) =>
 /** A menu's saved picks that still name distinct, published options, at most
  *  the number the examiner marks. A duplicated or stale saved index never
  *  counts twice or manufactures credit. */
-const selectedOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
+const validOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
   [...new Set(picks)]
-    .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length)
-    .slice(0, group.claimMax);
+    .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length);
+const selectedOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
+  validOptionIndices(group, picks).slice(0, group.claimMax);
 
 /** How many of a menu row's options the student has picked; 0 for any other row. */
 const menuPicks = (row: MarkRow, picks: Record<string, number[]>, id: string) =>
@@ -340,10 +342,16 @@ export function committedRoute(
   picks: Record<string, number[]> = {},
 ): string | null {
   if (!isPointCard(card)) return null;
+  // A ticked point commits first, so reopened work keeps the route its ticks
+  // were scored on; a menu pick commits only where nothing is ticked.
+  for (let i = 0; i < card.rows.length; i++) {
+    const r = card.rows[i];
+    if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+  }
   for (let i = 0; i < card.rows.length; i++) {
     const r = card.rows[i];
     const id = rowId(r, i);
-    if (r.route && (isClaimed(claims, id) || menuPicks(r, picks, id) > 0)) return r.route;
+    if (r.route && menuPicks(r, picks, id) > 0) return r.route;
   }
   return null;
 }
@@ -380,11 +388,11 @@ export function marksClaimed(
             * answerCreditMultiplier(card, claims, id, option), 0);
       }
       if (r.group.perOptionSteps) {
-        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, picks[id] ?? []);
+        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, validOptionIndices(r.group, picks[id]));
       }
       // Options priced one by one: every answer once, at the best of it claimed.
       const optionMarks = r.group.optionMarks;
-      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, picks[id] ?? []);
+      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, validOptionIndices(r.group, picks[id]));
       // Distinct published options only: a duplicated saved index never pays twice.
       return n + claimedMarks(r.group, selected.length);
     }
@@ -2564,6 +2572,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   }, [answerVariantId, baseAssessmentCard]);
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
+  // A held task (isConfidenceReviewCard) is reviewed against its guidance with
+  // no mark total: the reviewed sources do not settle one.
+  const confidenceReview = Boolean(assessmentCard && isConfidenceReviewCard(assessmentCard));
   const mathematicsCard = assessmentCard && isPointCard(assessmentCard) && assessmentCard.mathematicsScale
     ? assessmentCard as MathematicsScaleCard : undefined;
   useEffect(() => {
@@ -2939,7 +2950,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} {marksWord(assessmentCard.totalMarks)} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -3154,7 +3165,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 11.5px/1 ${MONO}`, background: INK, color: 'var(--mb-paper)',
                 borderRadius: 6, padding: '5px 8px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
               }}>
-                {assessmentCard.totalMarks}m
+                {confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks}m`}
               </span>
             </div>
 
@@ -3487,8 +3498,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       )}
                       {assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
-                          Check the required parts above, then choose how securely you answered.
+                          {confidenceReview ? <>
+                            Review your complete answer against the source guidance and required parts above,
+                            then choose how securely you answered.
+                          </> : <>
+                            Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
+                            Check the required parts above, then choose how securely you answered.
+                          </>}
                         </p>
                       )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
@@ -3666,7 +3682,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       : !schemeInteracted
                       ? isRubricCard(assessmentCard)
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
-                        : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
+                        : confidenceReview
+                          ? <>Compare your response with the scheme, then choose how securely you answered. Marks are not calculated for this task.</>
+                          : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
                         ? placementPending
                           ? <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
