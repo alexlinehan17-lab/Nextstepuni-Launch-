@@ -108,10 +108,17 @@ describe('Russian 2026 Higher independent source review', () => {
         expect(question.region.map((region:{p:number})=>region.p)).toEqual(original.schemePages);
         expect(question.pP).toBe(original.questionPages[0]);
         if(joint)expect(question.markBankCardId).toBe(source.id);
-        expect(PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.some(q=>q.n===original.n&&q.primary===source.topicId)).toBe(true);
+        const topic = PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.find(q=>q.n===original.n);
+        const ownTopics = original as { topicId?: string; additionalTopicIds?: string[] };
+        expect(topic?.primary, `${source.id}/${original.n}`).toBe(ownTopics.topicId ?? source.topicId);
+        const secondary = (ownTopics.additionalTopicIds ?? card.additionalTopicIds)?.[0];
+        if (ownTopics.additionalTopicIds !== undefined || secondary !== undefined) {
+          expect(topic?.secondary, `${source.id}/${original.n} secondary`).toBe(secondary);
+        }
       }
       expect(map.schemeFileid).toBe(source.schemeFileid);
-      expect(HOSTED_ANSWER_OVERRIDES.has(`russian|${source.year}|${source.paperFileid}`)).toBe(true);
+      const hostedKey = `russian|${source.year}|${source.paperFileid}`;
+      expect(HOSTED_ANSWER_OVERRIDES.has(hostedKey), hostedKey).toBe(true);
       expect(PAPER_TRAIL_INDEX.russian.find(p=>p.year===source.year&&p.level===source.level&&p.lang==='ev')?.papers.find(p=>p.doc.f===source.paperFileid)?.answers).toBe(1);
     }
   });
