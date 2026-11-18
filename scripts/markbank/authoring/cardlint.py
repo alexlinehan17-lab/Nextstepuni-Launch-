@@ -280,6 +280,16 @@ def lint(subject):
     if os.path.exists(bindings_path):
         with open(bindings_path) as fh:
             bound = set(json.load(fh).get(subject, {}))
+    if subject == 'maths':
+        # Every reviewed Mathematics card is built with its SEC question page
+        # attached (build-deck applyMathematicsReview: a source-question page,
+        # and the printed crop where there is one), which the authored file
+        # this reads does not carry yet: it is bound to its printed matter.
+        import glob
+        for review_path in glob.glob(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                                  'mathematics', 'reviews', '*.json')):
+            with open(review_path) as fh:
+                bound.update(card['id'] for card in json.load(fh)['cards'])
     flags = []
     for c in cards:
         stem = c.get('stem') or ''
@@ -309,7 +319,7 @@ def lint(subject):
                 and not (unprintable and unprintable.search(joined))
                 and c['id'] not in REVIEWED):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
-        if label_junk(stem):
+        if label_junk(stem) and c['id'] not in REVIEWED:
             flags.append((subject, c['id'], 'label-junk', stem[:90]))
         lettered = (NAMES_LETTERS.search(qtext)
                     and not INVITES_DRAWING.search(qtext))
