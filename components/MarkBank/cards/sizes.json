@@ -108,7 +108,7 @@
   "ordinary": 276
  },
  "latin": {
-  "higher": 145,
+  "higher": 149,
   "ordinary": 82
  },
  "polish": {
@@ -141,7 +141,7 @@
  },
  "ancient-greek": {
   "higher": 369,
-  "ordinary": 14
+  "ordinary": 35
  },
  "modern-greek": {
   "higher": 79
@@ -198,5 +198,8 @@
  "accounting": {
   "higher": 721,
   "ordinary": 644
+ },
+ "music": {
+  "higher": 46
  }
 }

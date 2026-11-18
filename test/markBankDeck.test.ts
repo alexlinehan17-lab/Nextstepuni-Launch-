@@ -105,6 +105,7 @@ import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
 import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
@@ -148,6 +149,8 @@ const SAMPLE_CARDS = [
   ...LATVIAN_HIGHER, ...CZECH_HIGHER,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
+  // Review pack 1 prototype: Music 2025 Higher only.
+  ...MUSIC_HIGHER,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
   ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
   // Higher only: Modern Greek is examined at ONE level and there is no
@@ -163,6 +166,7 @@ const SAMPLE_CARDS = [
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
   rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS, UNPRINTED_ANSWER,
+  NO_SCHEME_PUBLISHED, isRubricCard,
 } from '../types/markBank';
 
 /**
@@ -251,8 +255,43 @@ describe('every card traces to the marking scheme on disk', () => {
   });
 
   test('every year and level the deck draws on has its scheme present', () => {
-    const missing = [...new Set(SAMPLE_CARDS.map(schemeFor))].filter(p => !existsSync(p));
+    // A card whose paper has no published scheme draws on none (PLAN R4).
+    const missing = [...new Set(SAMPLE_CARDS.filter(c => !(isPointCard(c) && c.noScheme)).map(schemeFor))]
+      .filter(p => !existsSync(p));
     expect(missing, show(missing)).toEqual([]);
+  });
+
+  /* PLAN-2026-11-18 R4: a paper with no published scheme is carded as the
+   * question, its printed marks and one fixed line, and nothing claimable.
+   * The flag can never stand in for a scheme the SEC did publish. */
+  test('a no-scheme card says so, claims nothing, and its sitting really has no scheme', () => {
+    const bad = SAMPLE_CARDS.filter(isPointCard).filter(c => c.noScheme).filter(c =>
+      c.tariffModel.kind !== 'questionTotal' || c.rows.length !== 1
+      || c.rows[0].kind !== 'criterion' || c.rows[0].verbatim !== NO_SCHEME_PUBLISHED || c.rows[0].marks !== null
+      || !(c.totalMarks > 0) || existsSync(schemeFor(c)) || existsSync(schemeFor(c).replace(/\.md$/, '.pdf'))
+      || !/^No marking scheme: the SEC published none for /.test(c.schemeCitation))
+      .map(c => c.questionRef);
+    expect(bad, show(bad)).toEqual([]);
+    // The fixed line appears on no card that has a scheme.
+    const stray = SAMPLE_CARDS.filter(isPointCard).filter(c => !c.noScheme
+      && c.rows.some(r => r.verbatim === NO_SCHEME_PUBLISHED)).map(c => c.questionRef);
+    expect(stray, show(stray)).toEqual([]);
+  });
+
+  /* An unseen translation marked unit by unit: every unit is the scheme's own
+   * cut of the passage, and the units make the question's total. */
+  test('every translation unit and rule line is in its own scheme', () => {
+    const bad: string[] = [];
+    for (const card of SAMPLE_CARDS.filter(isRubricCard)) {
+      if (card.rubric.system !== 'translation') continue;
+      const scheme = schemeText(card);
+      for (const text of [...card.rubric.units.map(u => u.text), ...card.rubric.schemeGuidance]) {
+        if (!claimMatches(scheme, text)) bad.push(`${card.questionRef}: "${text}"`);
+      }
+      const sum = card.rubric.units.reduce((n, u) => n + u.marks, 0);
+      if (sum !== card.totalMarks) bad.push(`${card.questionRef}: units sum to ${sum}, not ${card.totalMarks}`);
+    }
+    expect(bad, show(bad)).toEqual([]);
   });
 
   /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
@@ -265,6 +304,9 @@ describe('every card traces to the marking scheme on disk', () => {
   test('every marking point appears in its own scheme', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
+      // A no-scheme card claims nothing from a scheme; its one row is checked
+      // by the no-scheme test above.
+      if (card.noScheme) continue;
       const scheme = schemeText(card);
       for (const row of card.rows) {
         if (row.unprinted) {
@@ -553,10 +595,16 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
+    const { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        // Music is sat in separate booklets; a card's section names its booklet
+        // by the Paper Trail label, as build-deck's MUSIC_BOOKLET does.
+        if (c.subjectId === 'music') {
+          const label = ({ L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' } as Record<string, string>)[c.section];
+          return !label || c.paperFileid !== resolveCompanionFileid('music', c.year, c.level, label);
+        }
         // Irish prints two papers a sitting, in Irish: a deferred card's paper is the one its section names in the
         // year's deferred entry ("Deferred · Paper One" for section 1).
         if (deferredCard(c) && c.subjectId === 'irish') {

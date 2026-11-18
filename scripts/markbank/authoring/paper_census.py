@@ -152,6 +152,9 @@ SUBJECTS = {
     # 2012-2018 and 014 + 039 from 2019 -- read off each booklet's own cover.
     'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2010},
     'politics-and-society': {'mode': 'politics'},
+    # Review pack 1 prototype: the reviewed ask census of 2025 Higher
+    # (authored/music-census.json), read off the three booklets page by page.
+    'music': {'mode': 'music'},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
     # filed under the level token 'cl'. Three sections that each restart at
@@ -3956,6 +3959,24 @@ def census_subject(subject):
                     'key': [ask['id']], 'label': ask['questionRef'],
                     'text': ask['title'], 'status': ask['status'],
                 } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+    if cfg['mode'] == 'music':
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'music-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        papers = []
+        for source in payload['papers']:
+            asks = source['asks']
+            if source.get('expectedAsks') != len(asks):
+                raise AssertionError(
+                    f"Music {source['year']} {source['level']} {source['paper']} census count is stale")
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': source['paper'], 'leafCount': len(asks),
+                'leaves': [{'key': [ask['id']], 'label': ask['questionRef'],
+                            'text': ask.get('text', ''), 'status': 'printed'}
+                           for ask in asks],
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
