@@ -2,7 +2,7 @@ import React from 'react';
 import SubjectAvatar from './SubjectAvatar';
 import CrewEmptyState from './CrewEmptyState';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import { type StudyBlock } from './subjectData';
+import { getBlockId, type StudyBlock } from './subjectData';
 import { generateWeeklyGoals, getWeekNumber, type GamificationState } from '../gamificationConfig';
 import './home-next-step.css';
 
@@ -23,14 +23,14 @@ export default function HomeNextStep({ blocks, completions, hasProfile, ready = 
   const goal = gamification ? generateWeeklyGoals(gamification.currentRank.id, getWeekNumber()).find(item => item.metric === 'sessions') : undefined;
   const current = gamification?.weeklyGoalProgress.sessions ?? 0;
   const remaining = goal ? Math.max(0, goal.target - current) : 0;
-  const done = blocks.filter((_block, index) => completions.includes(`block-${index}`)).length;
-  const nextIndex = blocks.findIndex((_block, index) => !completions.includes(`block-${index}`));
+  const done = blocks.filter((block, index) => (completions.includes(getBlockId(block, index)) || ('status' in block && block.status === 'completed'))).length;
+  const nextIndex = blocks.findIndex((block, index) => !(completions.includes(getBlockId(block, index)) || ('status' in block && block.status === 'completed')));
   return <>
     <section className="home-today" data-coach="study" aria-labelledby="home-today-title">
       <div className="home-section-heading"><h2 id="home-today-title">Today’s plan</h2>{onPlan && <button type="button" onClick={onPlan}>Your plan <ArrowRight size={14} aria-hidden="true" /></button>}</div>
       {!ready ? <p role="status" className="home-supporting">Getting your plan ready…</p> : error ? <div className="home-empty-plan"><p role="status">Your plan couldn’t load.</p><span>Try opening your plan, or start a session without it.</span>{onPlan && <button type="button" className="home-text-action" onClick={onPlan}>Open your plan <ArrowRight size={15} aria-hidden="true" /></button>}{onStudy && <button type="button" className="home-text-action" onClick={onStudy}>Start a session <ArrowRight size={15} aria-hidden="true" /></button>}</div> : blocks.length ? <>
         {blocks.slice(0, 4).map((block, index) => {
-          const complete = completions.includes(`block-${index}`);
+          const complete = (completions.includes(getBlockId(block, index)) || ('status' in block && block.status === 'completed'));
           const type = block.sessionType === 'new-learning' ? 'New learning' : block.sessionType === 'practice' ? 'Practice' : 'Revision';
           return <button type="button" className="home-plan-row" key={`${block.subjectName}-${index}`} onClick={() => onPlannedStudy ? onPlannedStudy(block, index) : onStudy?.()} disabled={!onStudy && !onPlannedStudy} aria-label={`${complete ? 'Review' : 'Study'} ${block.subjectName}: ${type}, ${block.durationMinutes} minutes`}>
             <SubjectAvatar subject={block.subjectName} />

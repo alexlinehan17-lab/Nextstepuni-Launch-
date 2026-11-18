@@ -42,6 +42,10 @@ ROOT = Path(__file__).resolve().parents[2]
 START = '<!-- markbank:furigana-folded -->'
 END = '<!-- /markbank:furigana-folded -->'
 
+# A scheme's markdown is '<year>-<level>.md', or '<year>-<level>-deferred.md'
+# for a deferred sitting, which this tool does not append to.
+SCHEME_STEM = re.compile(r'^(\d{4})-(hl|ol|fl|cl)(-deferred)?$')
+
 
 def folded(pdf: Path) -> list[str]:
     out = []
@@ -78,7 +82,11 @@ def main() -> None:
     if args[:1] == ['--all']:
         for md in sorted((ROOT / 'examiner-reports' / 'japanese' / 'schemes')
                          .glob('*.md')):
-            year, level = md.stem.split('-')
+            stem = SCHEME_STEM.match(md.stem)
+            if stem is None or stem.group(3):
+                print(f'japanese {md.stem}: ' + ('deferred, skipped' if stem else 'not a sitting, skipped'))
+                continue
+            year, level = stem.group(1), stem.group(2)
             apply('japanese', int(year), level)
         return
     if len(args) < 3:

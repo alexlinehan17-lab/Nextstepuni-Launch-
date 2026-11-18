@@ -180,6 +180,11 @@ LEADING_PUA = re.compile(r'^\s*[\uf0a7\uf0b7\uf0d8\uf0fc\uf06c]\s*')
 # The running footer arrives the same way and welds onto the end of a point:
 # "Stepper motors are driven by control circuits Page 18".
 PAGE_FOOT = re.compile(r'\s*\bPage\s+\d{1,3}\b\s*', re.I)
+# The part's split printed at the end of its last answer, in the answer's own
+# type: "Harness is required to comply with safety standards. 4 + 4" (2024
+# Higher Q9(c)(i)). A split after the answer's closing full stop is the
+# tariff, never a word of the answer, and comes off the end of the line.
+TRAILING_SPLIT = re.compile(r'(?<=[.!?])\s+\d{1,2}(?:\s*\+\s*\d{1,2})+\s*$')
 # "A - 1120°C", "B = Eutectoid point", "C: Pearlite" -- the scheme answering
 # a label printed on its diagram. lib.LABELLED_POINT reads the same shape to
 # build a card's label key.
@@ -200,8 +205,8 @@ WRITTEN_PAGE = re.compile(r'\bWritten\s+Examination\b')
 
 def _clean(text):
     """One line of the scheme with the page's own furniture taken out of it."""
-    return ' '.join(PUA_BULLET.sub(
-        ' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', text or ''))).split())
+    return TRAILING_SPLIT.sub('', ' '.join(PUA_BULLET.sub(
+        ' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', text or ''))).split()))
 
 
 

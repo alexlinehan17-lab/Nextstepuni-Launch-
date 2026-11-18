@@ -181,9 +181,24 @@ try {
   await capture('mark-bank-subject-picker', 1024, 'light');
   await page.keyboard.press('Escape');
 
-  await open('view=tree', 1024, 'dark', '.student-home', true);
-  assert.equal(await frame.locator('.student-sidebar-shell').count(), 0, 'Tablets keep the established mobile app navigation');
-  await capture('tablet-home', 1024, 'dark');
+  // iPads use mobile screen designs but must have the same persistent sidebar
+  // as desktop at 768px+. Previously both navigation bars disappeared here.
+  for (const width of [768, 820, 1024, 1366]) {
+    await open('view=tree', width, 'dark', '.student-home', true);
+    const navigation = frame.getByRole('navigation', { name: 'Main navigation' });
+    await frame.getByRole('button', { name: 'Collapse sidebar', exact: true }).waitFor();
+    assert.equal(await navigation.isVisible(), true, 'Tablet sidebar is visible');
+    assert.equal(await frame.locator('.editorial-bottom-nav').isVisible(), false, 'Only one primary navigation bar');
+    await capture('tablet-home', width, 'dark');
+    await navigation.getByRole('button', { name: 'Mark Bank', exact: true }).click();
+    await frame.locator('[aria-label="Choose subject"]').waitFor();
+    assert.equal(await navigation.isVisible(), true, 'Tablet navigation persists inside tools');
+    await capture('tablet-mark-bank', width, 'dark');
+  }
+  await open('view=tree', 540, 'light', '.student-home', true);
+  assert.equal(await frame.locator('.student-sidebar-shell').count(), 0, 'Narrow iPad Split View does not crowd the content');
+  assert.equal(await frame.locator('.editorial-bottom-nav').isVisible(), true, 'Narrow iPad Split View retains navigation');
+  await capture('tablet-split-view', 540, 'light');
   assert.deepEqual(errors, [], 'No uncaught app errors');
   assert.deepEqual(writes, [], 'Sample account never writes to Firestore');
   console.log(`Passed ${results.length} integrated desktop/phone and theme checks.`);

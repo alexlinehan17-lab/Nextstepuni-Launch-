@@ -7,7 +7,8 @@
  * deck writes are no-ops for the demo uid) over a REAL Mark Bank deck, because
  * a real session has to run for five minutes before it can be saved:
  * `npx vite`, then open /study-quiz-dev.html. Query options:
- *   ?subject=Chemistry&level=ordinary   which deck (defaults shown)
+ *   ?subject=Politics%20and%20Society&level=higher   which deck (defaults shown)
+ *   &topics=politics-and-society-0-0    saved canonical topic IDs, comma-separated
  *   ?theme=dark                         dark mode
  * Never part of the production build (vite.config.ts lists its HTML inputs
  * explicitly).
@@ -16,13 +17,18 @@ import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import StudySessionQuiz from './components/study/quiz/StudySessionQuiz';
 import type { QuizResult } from './components/study/quiz/studyQuizPlan';
+import { getStudyTopicOptions, studyTopicSelection } from './services/studyTopicHistory';
 import { DEMO_STUDENT_UID } from './data/devStudent';
 import './index.css';
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('theme') === 'dark') document.documentElement.classList.add('dark');
-const subject = params.get('subject') ?? 'Chemistry';
-const level = params.get('level') ?? 'ordinary';
+const subject = params.get('subject') ?? 'Politics and Society';
+const level = params.get('level') ?? 'higher';
+
+const topicIds = params.get('topics')?.split(',').filter(Boolean)
+  ?? getStudyTopicOptions(subject, undefined, level).filter(option => option.kind === 'topic').slice(0, 1).map(option => option.id);
+const selectedTopics = studyTopicSelection(subject, topicIds, undefined, level);
 
 function Harness() {
   const [outcome, setOutcome] = useState<string | null>(null);
@@ -39,10 +45,11 @@ function Harness() {
       uid={DEMO_STUDENT_UID}
       subject={subject}
       profileSubjects={[{ subjectName: subject, level: level as 'higher' | 'ordinary' | 'common' }]}
-      character="star-crew:maker"
+      topicSelection={selectedTopics}
+      seconds={1500}
       onDone={(results: QuizResult[]) => setOutcome(results.length
         ? `Done: ${results.reduce((n, r) => n + r.marksClaimed, 0)} of ${results.reduce((n, r) => n + r.marksAvailable, 0)} marks over ${results.length} questions.`
-        : 'Nothing to quiz for this deck (no short cards, or no deck).')}
+        : 'No questions were marked for these topics.')}
       onSkip={() => setOutcome('Skipped.')}
     />
   );

@@ -46,8 +46,12 @@ import pymupdf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
-TARGET = os.path.join(ROOT, 'examiner-reports/technology/schemes/2022-hl.pdf')
-OUT_MD = os.path.join(ROOT, 'examiner-reports/technology/schemes/2022-hl.md')
+# The sitting to rebuild: 2022 Higher by default; 2020 Higher drops the glyphs
+# r, w, v and g from one of its fonts ("cu ent d a n by the moto") and is
+# repaired the same way (2026-10-28).
+SITTING = (sys.argv[1], sys.argv[2]) if len(sys.argv) >= 3 and sys.argv[1].isdigit() else ('2022', 'hl')
+TARGET = os.path.join(ROOT, f'examiner-reports/technology/schemes/{SITTING[0]}-{SITTING[1]}.pdf')
+OUT_MD = os.path.join(ROOT, f'examiner-reports/technology/schemes/{SITTING[0]}-{SITTING[1]}.md')
 
 # The row-and-span logic that produced every other .md in this repo. Loaded
 # rather than reimplemented: an extraction that lays its lines out differently
@@ -176,6 +180,14 @@ def rebuild(truth, by_family, unknown):
             # space at glyph id 3, and the extractor drops "\\x03" entirely, so
             # a sound font's words were running together too.
             if font not in broken and ord(ch) >= 0x20:
+                # A sound font can still map a few glyphs to a SPACE: the
+                # 2020 Higher scheme's Calibri draws r, w, v and g and reports
+                # U+0020 for each ("cu ent d a n by the moto"). Where the
+                # corpus agrees the glyph id is a letter, the letter it is.
+                real = truth.get((font, gid))
+                if ch == ' ' and real and real != ' ':
+                    fixed[key] = real
+                    continue
                 fixed[key] = ch
                 continue
             real = (truth.get((font, gid)) or by_family[family(font)].get(gid)
@@ -221,6 +233,8 @@ def rebuild(truth, by_family, unknown):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument('year', nargs='?')
+    ap.add_argument('level', nargs='?')
     ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
 

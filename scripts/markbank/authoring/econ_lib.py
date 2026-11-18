@@ -19,7 +19,7 @@ from markbank_authoring import (  # noqa: F401  (re-exported for the econ_*.py s
     make_semis, point, tidy,
 )
 
-MAX_OPTIONS = 14          # optionCapFor('B') in scripts/markbank/optionCap.mjs
+MAX_OPTIONS = 25          # optionCapFor('B') in scripts/markbank/optionCap.mjs (MAX_LONG_OPTION_ROWS; was 14 before that cap rose)
 
 
 # A segment that is not a marking point. The provenance gate cannot catch these

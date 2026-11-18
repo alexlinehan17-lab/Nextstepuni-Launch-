@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck } from 'lucide-react';
+import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck } from 'lucide-react';
 
 export type ToolIconKey =
   | 'meet-tools'
@@ -231,8 +231,7 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
   'coursework-companion': {
     blob: '#EFD3A8',
     blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
-    icon: FolderCheck,
-    iconColor: '#B54D14',
+    iconPath: '/assets/tools/coursework-companion.png',
     iconScale: 1.0,
   },
 };

@@ -1,16 +1,18 @@
 /** Keep both pages painted until the bloom and its content have settled. */
-export function animateStudyChange({ from, to, origin, reduced, returning = false, mascot, onFinish }: {
+export function animateStudyChange({ from, to, origin, reduced, returning = false, fadeOut = false, mascot, onFinish }: {
   from: HTMLElement;
   to: HTMLElement;
   origin: { x: number; y: number };
   reduced: boolean;
   returning?: boolean;
+  fadeOut?: boolean;
   mascot?: { from: SVGSVGElement; to: SVGSVGElement };
   onFinish: () => void;
 }) {
   const animations: Animation[] = [];
   const pending: Promise<unknown>[] = [];
   let cancelled = false;
+  let longest = 0;
   let restoreMascot = () => {};
   const mascotBounds = mascot ? { from: mascot.from.getBoundingClientRect(), to: mascot.to.getBoundingClientRect() } : undefined;
   const animate = (element: Element, frames: Keyframe[], duration: number, delay = 0) => {
@@ -18,10 +20,12 @@ export function animateStudyChange({ from, to, origin, reduced, returning = fals
     const animation = element.animate(frames, { duration, delay, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both' });
     animations.push(animation);
     pending.push(animation.finished.catch(() => {}));
+    longest = Math.max(longest, duration + delay);
   };
 
   if (reduced) {
     animate(returning ? from : to, [{ opacity: returning ? 1 : 0 }, { opacity: returning ? 0 : 1 }], 120);
+    if (fadeOut) animate(from, [{ opacity: 1 }, { opacity: 0 }], 120);
   } else {
     if (returning) animate(from, [{ opacity: 1 }, { opacity: 0 }], 620);
     else {
@@ -29,7 +33,7 @@ export function animateStudyChange({ from, to, origin, reduced, returning = fals
       const x = origin.x - bounds.left, y = origin.y - bounds.top;
       const radius = Math.ceil(Math.hypot(Math.max(x, bounds.width - x), Math.max(y, bounds.height - y))) + 2;
       animate(to, [{ clipPath: `circle(0px at ${x}px ${y}px)` }, { clipPath: `circle(${radius}px at ${x}px ${y}px)` }], 850);
-      animate(from, [{ opacity: 1 }, { opacity: .65 }], 650);
+      animate(from, [{ opacity: 1 }, { opacity: fadeOut ? 0 : .65 }], fadeOut ? 850 : 650);
       to.querySelectorAll<HTMLElement>('[data-study-arrive]').forEach((element, index) => {
         // Artwork stays sharp throughout: only position and opacity animate.
         animate(element, [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'translateY(0)' }], 500, 265 + index * 35);
@@ -54,9 +58,13 @@ export function animateStudyChange({ from, to, origin, reduced, returning = fals
       }
     }
   }
-  const clean = () => { animations.forEach(animation => animation.cancel()); restoreMascot(); };
+  const clean = () => { window.clearTimeout(settleTimer); animations.forEach(animation => animation.cancel()); restoreMascot(); };
   if (!pending.length) { onFinish(); return () => {}; }
-  void Promise.all(pending).then(() => { if (!cancelled) { clean(); onFinish(); } });
+  const finish = () => { if (!cancelled) { cancelled = true; clean(); onFinish(); } };
+  // Some background browser windows suspend animation timelines. The real
+  // clock and the next screen must not remain blocked waiting for a repaint.
+  const settleTimer = window.setTimeout(finish, longest + 200);
+  void Promise.all(pending).then(finish);
   return () => { cancelled = true; clean(); };
 }
 

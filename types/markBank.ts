@@ -165,7 +165,10 @@ export interface MarkRow {
    * card exists all the same. The row claims nothing from the scheme: its
    * verbatim is exactly UNPRINTED_ANSWER, it is a criterion, and it is the
    * card's only row; its contextNote says what the scheme prints instead. The
-   * build and the deck test hold it to all three.
+   * build and the deck test hold it to all three. One exception: where the
+   * scheme prices more answers than it prints (German 2011 Higher TEXT II
+   * Q3(a), "(6 marks: 3 x 2 marks)" over two answers), it is the card's LAST
+   * row, after the rows the scheme does print, priced at what is missing.
    */
   unprinted?: boolean;
   /**
@@ -192,6 +195,15 @@ export interface MarkRow {
    * to that route and locks the others.
    */
   route?: string;
+  /**
+   * The rows of this route are a whole answer the scheme pays ALONE, and for
+   * less than the question: "(Allow “everything” for two marks if only answer
+   * given)" (German 2021 Higher TEXT II Q2(b)), "N.B.: On Tuesday: 2 marks
+   * only" (German 2016 Ordinary L4 Q1(ii)). Such a route may total less than
+   * the tariff (tariffReconciles); every other route must still reach it. Set
+   * only with `route`, on every row of that route.
+   */
+  alone?: boolean;
   /** `anyN` only: how many of the listed options may be claimed, and for how much. */
   group?: {
     claimMax: number;
@@ -213,6 +225,34 @@ export interface MarkRow {
      * reading only that is never wrong by more than the tail.
      */
     perOptionSteps?: number[];
+    /**
+     * Each option's own printed price, where the scheme credits a different
+     * answer, or part of the answer, at a price of its own: "A recognised
+     * qualification (2m) [degree = 2m]", "to understand how the language works
+     * (2m) [to understand the language = 1m]". One entry per option, in option
+     * order; the full answer comes first. The group pays its best `claimMax`
+     * claimed options, each at its own price and each once
+     * (bestClaimedMarks), the rule an Irish slash-alternative part already
+     * follows (irishScoring.ts): a student who claims the full answer and its
+     * partial earns the full answer, once. perOption is the highest price.
+     *
+     * Beside perOptionSteps each price is that option's cap on the ladder
+     * (ladderGroupMarks): "N.B. X = 1 mark only" under a "3 + 1" menu pays 1
+     * for X alone and 3 + 1 for X with a full answer. There perOption stays
+     * the first step and no price exceeds the top step.
+     */
+    optionMarks?: number[];
+    /**
+     * Which answer each priced option credits in part: the index of that
+     * answer's option, or null for an answer of its own. One entry per option,
+     * beside optionMarks. A menu that pays two answers lists each answer's
+     * partials beside the answers ("White blouse (shirt)" 2, "White" 1,
+     * "blouse (shirt)" 1), and without this a student who ticked a full answer
+     * and its partial was paid both: 3 for an answer worth 2. With it every
+     * answer counts once, at the best of it claimed (optionGroupMarks), as an
+     * Irish point counts once at its best claimed row (irishPartMarks).
+     */
+    optionOf?: (number | null)[];
   };
 }
 
@@ -278,6 +318,9 @@ export interface LinkedReading {
 }
 
 export interface CardSourceMaterial {
+  /** The SEC never published the recording this listening paper was set to (Irish 2010 Foundation aural, whose
+   * ledger records the audio as 'unavailable'): the reader says so, in one plain line, above its trigger. */
+  recordingUnpublished?: boolean;
   kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
@@ -334,6 +377,18 @@ export interface CardAudioMaterial {
   presentationNote: string;
 }
 
+/** Examination levels Mark Bank decks are built at. 'common' is a level the
+ *  SEC prints for a subject examined at one level (LCVP); 'foundation' is the
+ *  third level of the subjects that set one (Irish). */
+export type MarkBankLevel = 'higher' | 'ordinary' | 'common' | 'foundation';
+
+export const MARK_BANK_LEVEL_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation',
+};
+export const MARK_BANK_LEVEL_SHORT_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'HL', ordinary: 'OL', common: 'CL', foundation: 'FL',
+};
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -348,7 +403,7 @@ interface CardBase {
    * would make every card cite a Higher Level paper that does not exist, and
    * would hide it from a student whose profile says anything else.
    */
-  level: 'higher' | 'ordinary' | 'common';
+  level: MarkBankLevel;
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
@@ -431,6 +486,16 @@ export interface SecCardBase extends CardBase {
   // asks on it. So the section is that task, 'U1' to 'U3', and the old
   // examination's single-text I DALIS is 'U1'.
   | 'U1' | 'U2' | 'U3'
+  // Spanish's Listening Comprehension Test is a booklet of its own, Questions
+  // 1 to 7 at both levels, cited "2026 HL Section L Q1(a)": its cards file
+  // under 'L', apart from the written paper's A, B and C. German's prints
+  // four parts and numbers each from 1, so the part is in the address:
+  // "2026 HL Section L2 Q1" files under 'L2'.
+  | 'L'
+  | 'L1' | 'L2' | 'L3' | 'L4'
+  // German's two written-production sections, each a choice of (a) or (b):
+  // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
+  | 'AT' | 'SP'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -689,6 +754,10 @@ export interface IrishAnswerRow {
    * = 4 mharc + 4 mharc" places at 0, 4 or 8; "Tréith 1 = 13 mharc" with a
    * published band table places anywhere from 0 to 13. Including 0 and `marks`. */
   steps?: number[];
+  /** Rows sharing a group are the printed alternatives for ONE point: a slash-joined scheme row
+   * ("Tráchtaire spóirt/Gaeilgeoir/Ciarraíoch/…") cut into its items. A group counts once, at its
+   * best claimed row, so the part scores exactly as the joined row did. */
+  group?: string;
 }
 
 /** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
@@ -700,6 +769,9 @@ export interface IrishAnswerPart {
   tariff: number;
   /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
   ladder?: number[];
+  /** How many claimed rows count, as a Politics part's count, where the scheme's own lines say so and the rows' prices
+   * alone cannot (cards/irish/tariffs.ts printedOrder, which cites them): the part's best `count` rows, capped at its tariff. */
+  count?: number;
   rows: IrishAnswerRow[];
   /** "Freagraí samplacha: • …": the scheme's sample points for this
    * sub-question. Indicative, never a checklist; shown under the rows. */
@@ -718,9 +790,13 @@ export interface IrishCriterion {
   label: string;
   /** Awards add to the mark; deductions are subtracted from it. */
   kind: 'award' | 'deduction';
+  /** A published penalty may reduce this award only, never another response. */
+  deductFrom?: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: IrishGuidanceKind;
+  /** The scheme prints only this part's tariff, no answer (2012 Ordinary): its chip says "Tariff". */
+  tariffOnly?: boolean;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
   /** The exact guidance as claimable rows, where cards/irish/answers.ts could
@@ -1037,6 +1113,86 @@ export interface PoliticsRubric {
   schemeFileid: string;
 }
 
+/** One band of a Religious Education grid, as the scheme prints it: "EXCELLENT"
+ *  at 20-17, with the grid's cells for that band where it prints any. */
+export interface ReligiousEducationBand {
+  /** "EXCELLENT", "Very Good", "NO GRADE"; a label the scheme sets over several
+   *  ranges (2010's "Weak" over 7-5, 4-2 and 1-0) is repeated on each. */
+  label: string;
+  /** The band's range as printed: "20-17", "34 - 40", "7". */
+  printed: string;
+  /** Every mark the band permits, low to high. */
+  marks: number[];
+  /** The grid's cells for this band, verbatim, each with its criterion where
+   *  the grid names one ("Relevance: clearly relevant"); absent where the
+   *  scheme prints labels and ranges only (2010-2014). */
+  descriptor?: string[];
+}
+
+/** A grid's second marks row (2022 prints "40 Marks" AND "20 Marks x2" under
+ *  one grid): the scheme's other way of marking the same answer, on the same
+ *  band cells. The student picks the way they wrote; only that way scores. */
+export interface ReligiousEducationWay {
+  /** The row's own head, as printed: "20 Marks x2". */
+  gridHead: string;
+  answers: number;
+  answerMax: number;
+  /** The row's range under each band, in the card's band order. */
+  bands: Array<{ printed: string; marks: number[] }>;
+}
+
+/** A ceiling a question's Note prints for an answer that does less than it
+ *  asks: "If a candidate gives an accurate account ... mark on its merits -
+ *  Max 10 marks." */
+export interface ReligiousEducationCeiling {
+  /** The Note's own words for when it applies, verbatim. */
+  when: string;
+  max: number;
+}
+
+/**
+ * A Religious Education answer, marked the way the SEC marks every RE ask from
+ * 2010 to 2026: placed on ONE printed band grid (one grid per answer where the
+ * scheme prints "20 Marks x2"). The scheme's points of reference are examples
+ * ("e.g.", "Possible Points") and carry no marks of their own, so they show as
+ * an indicative list, never as rows to claim. Every string here is the
+ * scheme's own except `markingGuideNote`.
+ *
+ * Scoring (religiousEducationScoring.ts): each answer is one mark inside one
+ * band; a ceiling the student ticks caps each answer at its max.
+ */
+export interface ReligiousEducationRubric {
+  system: 'religious-education';
+  /** "An excellent answer will show ..." -- the Marking Criteria, verbatim. */
+  criteria: string;
+  /** The points of reference, verbatim, without the closing "Etc.". */
+  points: string[];
+  /** The scheme ends its list with "Etc.": not exhaustive. */
+  openList: boolean;
+  /** 1, or 2 where the grid prints "x2". */
+  answers: number;
+  /** The grid's total for ONE answer: `answers * answerMax` is the card. */
+  answerMax: number;
+  /** The grid's own marks heading, as printed: "10 Marks x2", "40M". */
+  gridHead: string;
+  /** High to low, as printed. */
+  bands: ReligiousEducationBand[];
+  /** The grid prints no 0 range (seven 2014-2016 Ordinary 10-mark grids print
+   *  Weak as "3  > 2  > 1"): its bands cover 1 to the maximum, and an answer
+   *  that earns nothing is simply left unplaced, which scores 0. */
+  noZero?: boolean;
+  /** The grid's other marks row, where it prints two. The card's own
+   *  answers/answerMax/gridHead/bands are the way its scheme head names first,
+   *  and the student's default. */
+  otherWay?: ReligiousEducationWay;
+  ceilings?: ReligiousEducationCeiling[];
+  /** The scheme's other Notes for this ask, verbatim. */
+  directions: string[];
+  markingGuideNote: string;
+  schemePages: number[];
+  schemeFileid: string;
+}
+
 /** PE mixes exact allocations, descending tariffs and quality bands. The
  * original scheme remains available after reveal, including answer diagrams
  * and tick tables which must not be flattened into a guessed text answer. */
@@ -1188,6 +1344,34 @@ export interface FrenchCriterion {
   bands?: { label: string; marks: number[]; guidance: string[] }[];
   /** The SEC withholds language marks if no communicative task is attempted. */
   requiresAttempt?: boolean;
+  /** The id of another criterion whose 0 forces this one to 0, where the scheme
+   *  prints the rule ("If Content = 0, Language = 0"). Set only from a printed
+   *  rule; absent on every card that prints none. */
+  zeroWhenZero?: string;
+  /** The reduced scale the scheme prints beside this criterion's full one, and
+   *  the rule that switches to it — German's "Lower E": "If the content mark is
+   *  8 or less, or the answer is too short (less than 60 words), mark
+   *  expression out of 7". It applies when the criteria named in
+   *  `contentCriteria` add up to `contentAtMost` or less, or when the student
+   *  says the answer is shorter than `wordsUnder` words; the criterion is then
+   *  placed on these marks and bands instead of its own. Set only from a
+   *  printed rule; absent on every card that prints none, and those score
+   *  exactly as before (frenchCriterionMark). */
+  lowerScale?: FrenchLowerScale;
+}
+
+/** See FrenchCriterion.lowerScale. Every string is the scheme's own. */
+export interface FrenchLowerScale {
+  /** The scheme's name for the scale ("Lower E"). */
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  bands: { label: string; marks: number[]; guidance: string[] }[];
+  contentCriteria: string[];
+  contentAtMost: number;
+  wordsUnder?: number;
+  /** The printed rule, verbatim. */
+  rule: string;
 }
 
 /** One answer of a French listening, reading or cloze scheme, cut from a
@@ -1241,7 +1425,114 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
+/** One band of a History CM or OE ladder, as the scheme prints it. */
+export interface HistoryEssayBand {
+  /** "Excellent", "Very good" … */
+  label: string;
+  /** Every mark the band permits, low to high: "8-10 marks" is [8, 9, 10]. */
+  marks: number[];
+  /** The band and its range as printed: "Very good: 8-10 marks". */
+  printed: string;
+  /** The band's descriptor, verbatim; absent where the scheme prints none
+   *  (the documents question's OE grading table). */
+  descriptor?: string;
+}
+
+/** A ceiling a question's NOTE prints for an answer that covers less than it
+ *  asks: "If only ONE" at 50. A NOTE may print several ("If only ONE, Max. CM
+ *  = 40 If only TWO, Max. CM = 50"). */
+export interface HistoryEssayCap {
+  /** The scheme's own words for when it applies: "If only ONE". */
+  when: string;
+  max: number;
+}
+
+interface HistoryEssayCmBase {
+  /** The printed Max. CM: 60 for a Higher essay, 24 for Higher Q4; 20 or 30
+   *  for an Ordinary part B or C, 20 for Ordinary Q4. */
+  max: number;
+  /** The question's own NOTE, verbatim, and the ceilings it prints. Only
+   *  where the scheme prints a NOTE for this question. */
+  elementRule?: { note: string; caps: HistoryEssayCap[] };
+  definition: string;
+  /** Examiner directions, verbatim: the summation cap, the excess-paragraph
+   *  annotation, a question's own note ("Note that the question is looking
+   *  for ..."). */
+  directions: string[];
+}
+
+/** Higher Level: each paragraph placed on one band of the paragraph ladder. */
+export interface HistoryParagraphCm extends HistoryEssayCmBase {
+  mode: 'paragraph';
+  /** "A paragraph or paragraph equivalent may be one of the following:" */
+  paragraphLead: string;
+  /** (i) … (vii), verbatim. */
+  paragraphKinds: string[];
+  bands: HistoryEssayBand[];
+}
+
+/** Ordinary Level: Core Statements, each completed one at a printed value,
+ *  and an incomplete last one at one of the printed marks below it. */
+export interface HistoryCoreStatementCm extends HistoryEssayCmBase {
+  mode: 'core-statement';
+  /** "A Core Statement may be defined as one of the following:" */
+  statementLead: string;
+  statementKinds: string[];
+  /** "To apply the principle of marking by Core Statement, examiners will
+   *  proceed as follows:" and its steps, verbatim. */
+  procedureLead: string;
+  procedure: string[];
+  /** Read from "Each completed Core Statement is awarded 5 marks." */
+  perStatement: number;
+  /** Read from "An incomplete Core Statement at the end of an answer may
+   *  merit 1-4 marks.": every mark it may take. */
+  incomplete: number[];
+}
+
+/**
+ * A History essay — a Higher Section 2 or 3 essay, an Ordinary part B or C,
+ * or the documents question's contextualisation part — marked the way the SEC
+ * marks it.
+ *
+ * The scheme prints no model answer for these. At Higher Level it prints a
+ * Cumulative Mark built paragraph by paragraph from a band ladder up to a
+ * printed maximum; at Ordinary Level a Cumulative Mark of Core Statements at a
+ * printed value each. Both add an Overall Evaluation on one band, except
+ * Ordinary Q4, which the scheme marks by Core Statement alone. Every string
+ * here is the scheme's own; the card adds no indicative content.
+ *
+ * Scoring (historyEssayScoring.ts): the CM is the sum of what the student
+ * places, in order, capped at the printed maximum — or at a NOTE's ceiling
+ * when the student judges it applies — so material past the maximum counts
+ * zero, as the scheme's annotation for an excess paragraph says. The OE is one
+ * mark inside one band.
+ */
+export interface HistoryEssayRubric {
+  system: 'history-essay';
+  /** The scheme's own words for how the answer is marked, verbatim. */
+  schemeGuidance: string[];
+  cm: HistoryParagraphCm | HistoryCoreStatementCm;
+  /** Absent where the scheme prints no Overall Evaluation (Ordinary Q4). */
+  oe?: {
+    max: number;
+    definition?: string;
+    /** The scheme's lead to its OE table, where it prints one. */
+    lead?: string;
+    bands: HistoryEssayBand[];
+    directionsLead?: string;
+    directions: string[];
+  };
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
+/** The one line on a History essay card that is NextStepUni's, not the SEC's:
+ *  the scheme prints no model answer for these questions. Mirrored in
+ *  build-deck.mjs, which refuses any other wording. */
+export const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1391,9 +1682,16 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // Jonas does in New York" with thirteen. One task is one printed text with up to
 // eleven asks on it, which is what makes the examiner print a long menu, so the
 // task tokens 'U1' to 'U3' (užduotis — the paper's own word for it) belong here.
+// German's listening parts print the longest menus of the test: 2026 Higher
+// Part 2 Q2 answers a six-mark "three examples of the language used" with
+// fourteen phrases, and Part 1 Q5 a four-mark ask with nine. Its four part
+// tokens 'L1' to 'L4' belong here for the reason TEXT I-III do.
+// German's applied grammar ('AG', no other deck uses the token) is one printed
+// exercise whose every gap is answered: 2019 Higher Q2 prints ten adjective
+// endings at two marks each, and all ten are the answer.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
   'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5',
-  'U1', 'U2', 'U3']);
+  'U1', 'U2', 'U3', 'L1', 'L2', 'L3', 'L4', 'AG']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 
@@ -1458,8 +1756,74 @@ export function isContentFreeRow(verbatim: string): boolean {
  * the scheme does not define per-row values — so we assert the rows carry none
  * rather than pretending.
  */
+/**
+ * The best `count` claimed values, added: an answer the scheme credits in
+ * more than one way earns once, at the most it is worth. Shared by an Irish
+ * slash-alternative part (irishPartMarks) and a menu whose options carry
+ * their own printed prices (MarkRow.group.optionMarks).
+ */
+export function bestClaimedMarks(values: readonly number[], count: number): number {
+  return [...values].sort((a, b) => b - a).slice(0, Math.max(0, count)).reduce((sum, value) => sum + value, 0);
+}
+
+/**
+ * What a menu priced option by option pays for the options claimed: every
+ * answer once, at the best of it claimed (the answer itself or one of its
+ * partials, optionOf), and the best `claimMax` answers added. "White blouse
+ * (shirt)" with "White" pays 2, not 3. It never pays more than the scheme: two
+ * partials of one answer still pay that answer once, at the better partial.
+ * Without optionOf every option is an answer of its own, and this is
+ * bestClaimedMarks over the claimed prices, as before.
+ */
+export function optionGroupMarks(
+  g: { claimMax: number; optionMarks: readonly number[]; optionOf?: readonly (number | null)[] },
+  picked: readonly number[],
+): number {
+  const best = new Map<number, number>();
+  for (const i of new Set(picked)) {
+    const answer = g.optionOf?.[i] ?? i;
+    best.set(answer, Math.max(best.get(answer) ?? 0, g.optionMarks[i] ?? 0));
+  }
+  return bestClaimedMarks([...best.values()], g.claimMax);
+}
+
+/**
+ * What a menu priced by a descending tariff pays when some of its options
+ * carry a lower price of their own: "N.B. X = 1 mark only" under a "3 + 1"
+ * menu, or a "[2]" partial inside a "4 + 3 + 3" one.
+ *
+ * Each answer counts once, at the best of it claimed (its own option or one of
+ * its partials, optionOf, as optionGroupMarks reads them), and an option with
+ * no price of its own is uncapped. The claimed answers, sorted by that cap,
+ * are paired with the steps in falling order, and each earns the lesser of
+ * its step and its cap; claimMax answers at most. So in a "3 + 1" menu the
+ * 1-mark option claimed alone earns 1, and with a full answer, in either
+ * order, 3 + 1. A menu with no option priced on its own pays its first steps
+ * as printed, exactly as before (claimedMarks).
+ */
+export function ladderGroupMarks(
+  g: { claimMax: number; perOptionSteps: readonly number[]; optionMarks?: readonly number[]; optionOf?: readonly (number | null)[] },
+  picked: readonly number[],
+): number {
+  if (!g.optionMarks) {
+    return g.perOptionSteps.slice(0, Math.min(new Set(picked).size, g.claimMax)).reduce((n, m) => n + m, 0);
+  }
+  const best = new Map<number, number>();
+  for (const i of new Set(picked)) {
+    const answer = g.optionOf?.[i] ?? i;
+    const cap = g.optionMarks[i] ?? Infinity;
+    best.set(answer, Math.max(best.get(answer) ?? 0, cap));
+  }
+  const caps = [...best.values()].sort((a, b) => b - a).slice(0, Math.max(0, g.claimMax));
+  const steps = [...g.perOptionSteps].sort((a, b) => b - a);
+  return caps.reduce((sum, cap, k) => sum + Math.min(steps[k] ?? 0, cap), 0);
+}
+
 /** What one bounded group is worth when fully claimed. */
-export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[] }): number {
+export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[]; optionMarks?: number[]; optionOf?: (number | null)[] }): number {
+  const all = (g.optionMarks ?? []).map((_m, i) => i);
+  if (g.optionMarks && g.perOptionSteps) return ladderGroupMarks({ ...g, perOptionSteps: g.perOptionSteps }, all);
+  if (g.optionMarks) return optionGroupMarks({ ...g, optionMarks: g.optionMarks }, all);
   return g.perOptionSteps
     ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
     : g.claimMax * g.perOption;
@@ -1481,6 +1845,35 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'religious-education') {
+      // One grid per answer: its bands cover 0..answerMax, and the answers
+      // make the card's printed total.
+      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay, noZero } = card.rubric;
+      // Every mark from 0 to the maximum is printed in some band and none
+      // outside it. A mark may sit in two bands where the scheme prints it so
+      // (overlapping ranges, or one range cell set beside several bands). A
+      // grid that prints no 0 covers 1 to the maximum, and only such a grid.
+      const covers = (ranges: Array<{ printed: string; marks: number[] }>, max: number) => {
+        const marks = [...new Set(ranges.flatMap(band => band.marks))].sort((a, b) => a - b);
+        const first = noZero ? 1 : 0;
+        return ranges.every(band => band.marks.length > 0 && band.printed.trim()
+          && band.marks.every(mark => Number.isInteger(mark)))
+          && marks.length === max + 1 - first && marks.every((mark, index) => mark === index + first);
+      };
+      return Boolean(schemeFileid)
+        && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && Number.isInteger(answers) && answers >= 1 && answers * answerMax === card.totalMarks
+        && bands.length > 1 && bands.every(band => band.label.trim()) && covers(bands, answerMax)
+        // The other marks row is the same grid at other ranges: a band each,
+        // 0..its own maximum, the same printed total. A ceiling is written for
+        // one row's maximum, so a card with two ways carries none.
+        && (!otherWay || (Boolean(otherWay.gridHead.trim()) && otherWay.bands.length === bands.length
+          && Number.isInteger(otherWay.answers) && otherWay.answers >= 1
+          && otherWay.answers * otherWay.answerMax === card.totalMarks
+          && covers(otherWay.bands, otherWay.answerMax) && !(ceilings ?? []).length))
+        && (ceilings ?? []).every(ceiling => ceiling.when.trim()
+          && Number.isInteger(ceiling.max) && ceiling.max > 0 && ceiling.max < answerMax);
+    }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;
       return Boolean(schemeFileid)
@@ -1597,6 +1990,35 @@ export function tariffReconciles(card: SecCard): boolean {
             && marks.every(mark => allowed.includes(mark));
         });
     }
+    if (card.rubric.system === 'history-essay') {
+      const { cm, oe, schemeFileid, schemePages } = card.rubric;
+      // A ladder covers 0..top exactly once, every band a run of whole marks.
+      const ladder = (bands: HistoryEssayBand[], top: number) => {
+        const marks = bands.flatMap(band => band.marks).sort((a, b) => a - b);
+        return bands.length > 0
+          && bands.every(band => band.marks.length > 0
+            && band.marks.every((mark, index) => Number.isInteger(mark)
+              && (index === 0 || mark === band.marks[index - 1] + 1)))
+          && marks.length === top + 1
+          && marks.every((mark, index) => mark === index);
+      };
+      const cmFits = cm.mode === 'paragraph'
+        ? ladder(cm.bands, Math.max(...cm.bands.flatMap(band => band.marks)))
+          && Math.max(...cm.bands.flatMap(band => band.marks)) <= cm.max
+        : Number.isInteger(cm.perStatement) && cm.perStatement > 0 && cm.perStatement <= cm.max
+          && cm.incomplete.length > 0
+          && cm.incomplete.every((mark, index) => Number.isInteger(mark) && mark > 0
+            && mark < cm.perStatement && (index === 0 || mark === cm.incomplete[index - 1] + 1));
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && cm.max + (oe?.max ?? 0) === card.totalMarks
+        && cmFits
+        && (!oe || ladder(oe.bands, oe.max))
+        && (!cm.elementRule || (cm.elementRule.caps.length > 0
+          && cm.elementRule.caps.every(cap => Number.isInteger(cap.max) && cap.max > 0
+            && cap.max < cm.max && cap.when.trim().length > 0)));
+    }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
       const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;
       // A printed remainder the scheme prices on no line is declared, never derived.
@@ -1682,13 +2104,23 @@ export function tariffReconciles(card: SecCard): boolean {
     r.kind === 'anyN' && r.group ? groupMarks(r.group) : (r.marks ?? 0);
   // Mutually exclusive routes are counted ONCE, and each must reach the tariff on
   // its own — a student takes one route or the other, never a total of both.
+  // A route the scheme pays ALONE for less (`alone` on all its rows) falls
+  // short of it, and must: at least one other route reaches the tariff.
+  if (rows.some(r => r.alone && !r.route)) return false;
   const byRoute = new Map<string, number>();
+  const aloneRoute = new Map<string, boolean>();
   let common = 0;
   for (const r of rows) {
     if (!r.route) common += worth(r);
-    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+    else {
+      byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+      aloneRoute.set(r.route, (aloneRoute.get(r.route) ?? true) && !!r.alone);
+    }
   }
   common += bonus?.marks ?? 0;
   if (!byRoute.size) return common === totalMarks;
-  return [...byRoute.values()].every(n => common + n === totalMarks);
+  const routes = [...byRoute.entries()];
+  const full = routes.filter(([route]) => !aloneRoute.get(route));
+  return full.length > 0 && full.every(([, n]) => common + n === totalMarks)
+    && routes.filter(([route]) => aloneRoute.get(route)).every(([, n]) => n > 0 && common + n < totalMarks);
 }

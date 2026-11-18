@@ -1,0 +1,208 @@
+{
+  "year": 2020,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewDate": "2026-10-07",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Select a correct answer/map box. Distractors are not independently valid task routes."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil siopa an phoitigéara? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Select a correct answer/map box. Distractors are not independently valid task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 5,
+      "raw": "Tae nó caife uait?",
+      "decision": "Text inside a sign to be matched, not a candidate task-selection instruction."
+    },
+    {
+      "page": 5,
+      "raw": "Rogha na bhFaisean",
+      "decision": "Text inside a sign to be matched, not a candidate task-selection instruction."
+    },
+    {
+      "page": 6,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Closed choose-two of A/B/C: AB, AC, BC. Each route retains ten answers and both source pages. Q2 is 50 marks; Q3 is 60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 8,
+      "raw": "soicind. ‘An bhfuil cat nó luch sa seomra suí?’",
+      "decision": "Source-story dialogue, not a task-selection instruction."
+    },
+    {
+      "page": 9,
+      "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos. (60 marc)",
+      "decision": "Closed choose-two of A/B/C: AB, AC, BC. Each route retains ten answers and both source pages. Q2 is 50 marks; Q3 is 60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (30 marc)",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 10,
+      "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi. (30 marc)",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu. (30 marc)",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 13,
+      "raw": "FREAGAIR GACH CEIST (4 AGUS 5)",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    },
+    {
+      "page": 14,
+      "raw": "Ceist 4 Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    },
+    {
+      "page": 14,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    },
+    {
+      "page": 15,
+      "raw": "I do fhreagra, luaigh na pointí seo:",
+      "decision": "All seven listed reply instructions are required; the invitation image is source context. Ruairí and Áine are prescribed roles, not recipient choices."
+    },
+    {
+      "page": 15,
+      "raw": "Dhá rud faoin gcluiche",
+      "decision": "Two open details about the match. No finite printed list of alternative task prompts."
+    },
+    {
+      "page": 16,
+      "raw": "Ceist 5 Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 are required; choose one A/B in each. Four whole tasks and four writing products: 4A+5A, 4A+5B, 4B+5A, 4B+5B. Q4=40, Q5=50; each product=90."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2020/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 58509285,
+    "verified": "2026-10-07",
+    "browserReadyState": 4,
+    "durationSeconds": 1828.415156,
+    "playbackAdvanced": true
+  },
+  "sourceFindings": [
+    "2020 requires one 40-mark Q4 response and one 50-mark Q5 response. Total 360:120+40+50+60+40+50. Four writing products, not any two from four.",
+    "All 14 listening awards are exact 0/full-mark. Matching answers GEIFABJDCH.",
+    "Q3A(5): I dTeach na Gaeilge / I dTeach na Gaeilge ar an gcampas=6; I dteach ar an gcampas / I dteach san ollscoil=4; Ar an gcampas=3; I dteach=1. Q3A(4) printed option Sa Phuball Gaeilge and scheme Sa Phuball Gaeilge are checked exactly.",
+    "Q3C(5): Brostóidh an file/mé/sé/sí ar bord=6; Beidh an file/mé/sé/sí compordach istigh=3; lines5+6 of stanza3=6; whole stanza overquote=4. Carry partial-credit rules into paired tasks.",
+    "Q2C is explicitly a scéal nuachta in both paper and scheme. The poem An Taistealaí Aonair has three complete stanzas and a train image; retain all.",
+    "4A table-quiz notice, Micheál D. Ó hUiginn, Green Schools committee. Layout1+picture1=8(4+4)+picture2=13(4+3+3+3)+picture3=4+picture4=4+language10. Preserve activity/place partial credit, -1 past-tense day/date rules, -2 amount-only fee and -3 uncontextualized guest name.",
+    "4B is Freagra ar chuireadh, not a form. Ruairí replies to Áine. Layout3(1+1+1),picture1=7(4+3),picture3=9(3+3+3),picture4=11(4+4+3),language10. Picture2 is the invitation source. All seven reply instructions compulsory; two match details open. No address/date or length rule. Use the existing correspondence curriculum/topic with the precise reply label.",
+    "5A Seó Tallainne / schemePDF13; 5B dolphin boat-trip incident / schemePDF14–15. Each communication37+language13. Minus5 from communication ceiling per missing reference. 5B needs all four pictures plus a fifth reference. Approx90words; if short, proportional reduction of awarded mark (45 words: deduct50%). No later-year fixed table. Whole-response scoring preserves proportional assessment and prevents a deduction affecting the paired Q4.",
+    "No standard language band table is printed. PDF16 table belongs only to the modified scheme. Retain ordinary language criteria from PDF7 and explicit10/13 awards, not SMM bands. TranscriptsPDF17–19 are answer material."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 14,
+    "atlasRoutesChecked": 5,
+    "sourceReader": "All source formats, invitation reply, both stories, paired reading and writing pages rendered. Navigation, close/focus return and horizontal overflow checks passed.",
+    "atlas": "All source/scheme pages rendered, including both writing sources and four scheme pages for reply + boat-trip story.",
+    "audio": "Official SEC Foundation2020 recording played in Bank and Atlas, readyState4,duration1828.415156 seconds.",
+    "browserErrors": []
+  }
+}

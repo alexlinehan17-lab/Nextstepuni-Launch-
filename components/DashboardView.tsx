@@ -42,6 +42,8 @@ import {
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import MountainLandscape, { type WorldProgress } from './MountainLandscape';
 import { type WorldId } from './WorldIconBlob';
+import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
+import { getBlockId } from './subjectData';
 import {
   allocateSessions,
   computeSubjectPriorities,
@@ -354,7 +356,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     [],
   );
 
+  const dated = useDatedStudyPlan(studentProfile, uid);
   const todayPlan = useMemo(() => {
+    if (dated.enabled) return dated.timetable?.[(new Date().getDay()+6)%7]?.blocks ?? [];
     if (!studentProfile?.subjects.length) return [];
     try {
       const priorities = computeSubjectPriorities(studentProfile.subjects, undefined, studentProfile.examStartDate);
@@ -372,10 +376,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     } catch {
       return [];
     }
-  }, [studentProfile]);
+  }, [studentProfile, dated.enabled, dated.timetable, dated.today]);
 
-  const completedToday = timetableCompletions[todayKey]?.length ?? 0;
-  const nextBlock = completedToday < todayPlan.length ? todayPlan[completedToday] : undefined;
+  const nextBlock = todayPlan.find((block,index) => !(timetableCompletions[todayKey] ?? []).includes(getBlockId(block,index)) && !dated.saved?.plan.tasks.some(t=>t.id===block.id&&t.status==='completed'));
 
   const activityPanel = <ProgressActivity className="lg:col-span-8" buckets={activityBuckets} metric={metric}
     onMetricChange={setMetric} period={rangeBounds.label} subjectLabel={subjectLabel} onStartStudy={onStartStudy}

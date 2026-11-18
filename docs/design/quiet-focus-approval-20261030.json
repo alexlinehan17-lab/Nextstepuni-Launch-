@@ -1,0 +1,36 @@
+{
+  "approvedBy": "Alex",
+  "date": "2026-10-30",
+  "direction": "Quiet white",
+  "scope": "App-wide and future work",
+  "stylesheet": "design/quiet-focus.css",
+  "tokens": {
+    "dark": "#e4e2db",
+    "light": "#383833"
+  },
+  "fields": "Close border plus 1px inset, no outer glow or orange ring",
+  "keyboard": "Neutral 2px outline for other controls; wrapper-owned focus for grouped controls",
+  "loadedBy": [
+    "index.css",
+    "approved-ui-runtime.js",
+    "account-ui-runtime.js",
+    "kobra-navigation-runtime.js"
+  ],
+  "regeneration": "All three runtime build scripts retain the shared stylesheet import",
+  "manualChecks": [
+    "Original coursework dialog input",
+    "Legacy product field and textarea",
+    "Native select",
+    "Kobra input",
+    "Composite input group has one focus edge",
+    "Invalid input retains error border",
+    "Account field",
+    "Keyboard button and checkbox",
+    "Dark and light themes"
+  ],
+  "preferenceRecords": [
+    "AGENTS.md",
+    "/Users/alexlinehan/Documents/Nextstepuni-Module-Brand-Review-20261005/AGENTS.md"
+  ],
+  "comparison": "focus-directions.html remains an explicitly isolated historical design comparison"
+}

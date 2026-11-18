@@ -1,0 +1,151 @@
+{
+  "year": 2013,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP100IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "bf0982de0c76e921cd319b16eac0e6a71a7cdabc693b0dfba61b95c0c95d5797",
+  "schemeSha256": "52406fccffb57cc291d43ab1c4d7ae89fea9dbf246e702125c567bbbccfeeff1",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    29
+  ],
+  "schemeScope": "Combined Ordinary scheme. PDF 1–2 cover and note; 3 title page; 4 general marking instruction (red ink, major errors underlined); 5 listening tariffs (3 mharc × 4 for each Cuid A and B extract, 3 mharc × 2 for each Cuid C piece; the Cuid C line misprints its total as “20 marc (Eolas)” above “6 + 6 = 12 mharc”; the only print of the 0–6 language deduction in Paper 1's pages); 6–10 transcript (never shown to students; Píosa a Dó on PDF 10); 11–13 listening answers in the paper's order, the Fógra a hAon grid first, ending with the mark-total boxes on PDF 13; 14 composition marking (tariffs, the bracketed Cumas Gaeilge definition, the bracketed content note, the examiner's Nóta, and a bracketed Nóta defining “Gaeilge Lochtach” for the questions that follow, i.e. Paper 2). The 2013 scheme prints no 40-mark table; 29 modified marking (SMM; text only, no bands). PDF 15–28 are Paper 2; 30–31 are blank and 32 empty.",
+  "reviewMethod": "Every paper page (the 2013 Paper 1 is an 8-page question booklet; page 8 is blank) and every applicable scheme page read in the text layer and checked against the printed page (scheme PDF 5, 11, 12, 13 and 14 rendered); each listening prompt and scheme slice is asserted against the PDFs by the builder. The scheme sets its tariff multiplication sign and its bullets in SymbolMT, which the text layer returns as the private-use code points U+F0B4 and U+F0B7; the builder maps exactly those glyphs to × and •, in its slices and in the scheme text it writes to examiner-reports/irish/schemes/2013-ol.md. No other private-use or control character occurs in the scheme's text layer.",
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2013/LC001ZLP017IV.mp3",
+    "verified": "2026-11-05",
+    "evidence": "HTTP 200 audio/mpeg, 34,462,709 bytes, last modified 21 June 2013 (curl -I on examinations.ie); downloaded and measured: 1,435.9 s at 192 kbit/s (afinfo), SHA-256 c1a35f1ddae1a77b61bc7dab40664ba1948802147fd6ba5306b8e478eacf466d. The scheme transcript (PDF 6–10) is the Cuid A–C script the paper's questions follow.",
+    "note": "One SEC recording serves the Higher and Ordinary 2013 listening test (LC001ZLP017IV, the common file); Ordinary asks different questions on the same extracts. Not yet in irish-listening-audio-verification.json (2021–2025); never substituted from another year."
+  },
+  "selectionDecisions": [
+    {
+      "page": 1,
+      "raw": "Nuair a bheidh Cuid I, an Chluastuiscint, críochnaithe agat lean ar aghaidh agus freagair Cuid II,",
+      "decision": "Paper order instruction (answer Cuid I, then Cuid II); both parts required, not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair gach cuid - A, B, C - sa fhreagarleabhar seo.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 2,
+      "raw": "Caithfidh do chuid freagraí uile sa triail seo a bheith i nGaeilge, ach amháin nuair",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra raidió sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann leis na freagraí",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
+      "raw": "Breac síos dhá rannóg a bheidh sa chomórtas.",
+      "decision": "One required grid question (Fógra a hAon, second row) asking for two answers on the printed lines (i) and (ii); the scheme prices them 2 mharc + 1 mharc inside the question’s 3. One criterion, not a selection."
+    },
+    {
+      "page": 4,
+      "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú an comhrá ó thosach",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann leis na freagraí a scríobh tar éis gach míre",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 5,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos ann leis na freagraí",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 6,
+      "raw": "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus",
+      "decision": "Instruction to keep the chosen title connected; selection classified on page 7."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta seo a leanas oiriúnach",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "nó",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an litir / an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; chuige/chuici; leis/léi); not a separate card."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an litir / an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuige / chuici ag gabháil",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; chuige/chuici; leis/léi); not a separate card."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do thuismitheoirí faoi sin.",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; chuige/chuici; leis/léi); not a separate card."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do chara faoi sin.",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; chuige/chuici; leis/léi); not a separate card."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Listening answers with alternatives (e.g. Deichiú Márta nó 10 Márta; 160 nó céad seasca; raidió nó i-pod) are accepted answers to one task, not routes.",
+    "Card unit for listening: six segment cards, because the Bank plays one recording section as one exercise; every printed question is a separate criterion (20 questions at 3; the four Fógra a hAon grid questions included; 60 marks). Separate question cards are not added: they would repeat the same prompts inside that exercise.",
+    "Two-answer listening questions (the grid's “Breac síos dhá rannóg …” and Comhrá a Dó's “Cén dá rud …”) are one printed question each, priced inside their 3 marks as the scheme prints (2 mharc + 1 mharc); each is one criterion.",
+    "Composition: closed choose-two of four sections; each printed title is a 50-mark card. Choice is not a route: no two-section combination cards are published; the choose-two instruction is in each title card’s task requirements. Letter/email, dó/di, chuige/chuici and leis/léi wording stay inside one response.",
+    "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "sourceFindings": [
+    "Paper 1 = 160: listening 60 (Cuid A 24 = Fógra 1 12 + Fógra 2 12; Cuid B 24 = Comhrá 1 12 + Comhrá 2 12; Cuid C 12 = Píosa 1 6 + Píosa 2 6) and composition 100 (any two of A–D at 50: Tasc 2, Ábhar 8, Cumas Gaeilge 40).",
+    "Listening language: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge” is printed on scheme PDF 5 (and the modified-marking list on PDF 29 repeats it as “Gaeilge lochtach: 0-6”); it is one section-level deduction, and cards state it without applying it.",
+    "Scheme misprint kept as printed and not used for marks: PDF 5's Cuid C line reads “20 marc (Eolas)”, while its two pieces print 3 mharc × 2 = 6 mharc each and its sum “6 + 6 = 12 mharc” (and the key heads Cuid C “(12 mharc)”, PDF 13).",
+    "Fógra a hAon is a printed grid (“Líon isteach an t-eolas atá á lorg sa ghreille anseo.”) of four unnumbered questions; the key prints them first on PDF 11, each with its answer and price in the grid's right column. The second row asks for two divisions of the competition on the printed lines (i) and (ii) and prints only its split, “2 mharc + 1 mharc”: one 3-mark criterion.",
+    "Comhrá a Dó, An Chéad Mhír 2 (“Cén dá rud …”) prints “2 mharc+1 mharc=3 mharc”; Píosa a hAon 2 prints the full answer at 3 and a 1-mark partial, “Dún na nGall 1 mharc”.",
+    "The 2013 composition marking prints no headed Tasc, Ábhar and Cumas Gaeilge sections and no 40-mark table: the tariff block (Leathleathanach nó breis: Tasc 2, Ábhar 8, Cumas Gaeilge 40) is the Tasc criterion's text; the bracketed note “[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]” is the content guidance, lifted as the Ábhar criterion's text; the bracketed Cumas Gaeilge definition ((i) Stór Gaeilge 40%, (ii) beachtas 50% agus litriú 10%) and the examiner's Nóta are the Gaeilge criterion's text, as two lines. The last bracketed Nóta defines “Gaeilge Lochtach” for “na ceisteanna ina dhiaidh seo” (Paper 2's deductions) and is not composition guidance.",
+    "Modified marking (PDF 29) names the 40-mark Cumas Gaeilge assessment but prints no bands for it.",
+    "Paper prints “t-” with ASCII hyphens and “d’iarrthóirí” with U+2019; cards keep the paper's characters.",
+    "No 2013 Ordinary card existed before this review; the 15 cards are new."
+  ],
+  "remainingWork": []
+}

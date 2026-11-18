@@ -1,0 +1,79 @@
+{
+  "feature": "Coursework Studio",
+  "reviewedAt": "2026-10-30",
+  "entry": {
+    "component": "components/CourseworkStudio/CourseworkStudio.tsx",
+    "launchpadToolId": "coursework-companion",
+    "preview": "/coursework-review.html"
+  },
+  "design": {
+    "source": "Purchased Kobra.Systems components through existing approved-ui-runtime",
+    "visited": [
+      "https://kobra.systems/components/task-list",
+      "https://kobra.systems/components/plan-card",
+      "https://kobra.systems/components/attachment",
+      "https://kobra.systems/components/tabs"
+    ],
+    "components": [
+      "KobraScope",
+      "PlanCard",
+      "Tabs",
+      "Dialog",
+      "Button",
+      "Checkbox",
+      "Input",
+      "Textarea",
+      "Attachment"
+    ],
+    "treatment": "NextStepUni serif headings, brand wordmark in preview, charcoal and white, restrained orange, visible outlined controls"
+  },
+  "research": {
+    "sourceFolder": "Nextstepuni-Coursework-Research-20261029",
+    "overlay": "data/curriculum/courseworkResearch.json",
+    "cohorts": [
+      2027,
+      2028
+    ],
+    "identity": "Canonical curriculum registry subject and specification IDs",
+    "annualLimits": "Verified 2027 briefs only; no automatic official deadlines",
+    "boundaries": [
+      "Oral practice deferred; no Oral Trainer dependency",
+      "LCA requirements not mapped",
+      "Unknown cohorts do not inherit current annual requirements"
+    ]
+  },
+  "storage": {
+    "engine": "IndexedDB",
+    "scope": "Per user ID within this browser; no cloud sync",
+    "conflicts": "Revision checked atomically before writing",
+    "backup": "Validated JSON including original attachments; import adds copies",
+    "limits": {
+      "workspaceMB": 80,
+      "fileMB": 8,
+      "filesPerNote": 20,
+      "projects": 100
+    }
+  },
+  "exports": {
+    "review": "Escaped HTML discussion pack; not an official submission",
+    "calendar": "Personal unfinished dated milestones; not SEC deadlines"
+  },
+  "verification": {
+    "browser": [
+      "Desktop dark and light",
+      "390px phone layout with no page overflow",
+      "Mobile capture dialog",
+      "IndexedDB checkpoint survives reload"
+    ],
+    "automated": [
+      "Coursework model and UI smoke tests",
+      "Curriculum registry",
+      "Mark Bank card preservation and deck",
+      "Launchpad guidance",
+      "ESLint",
+      "TypeScript",
+      "Production build"
+    ]
+  },
+  "release": "Implemented locally; not deployed. Existing unrelated Command Word Reflex changes preserved."
+}

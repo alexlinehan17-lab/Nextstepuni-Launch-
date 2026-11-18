@@ -38,10 +38,14 @@ import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
 import KobraScope, { Button, Dialog, DialogContent, DialogTitle, DialogDescription } from '../approved-ui-runtime';
 import './mark-bank-session-paper.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
-import { splitForEmphasis } from './questionEmphasis';
+import { emphasisSegments } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
+  optionGroupMarks,
+  ladderGroupMarks,
+  MARK_BANK_LEVEL_LABELS,
+  MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
   isPointCard,
   isRubricCard,
@@ -49,6 +53,7 @@ import {
   rowId,
   type ArtRubric,
   type CardAudioMaterial,
+  type CardSourceMaterial,
   type GeographyCriterion,
   type GeographyRubric,
   type IrishCriterion,
@@ -64,6 +69,10 @@ import {
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
+import { anyNHeading, marksWord, menuLabel, unclaimedName, uniformSplit } from './sessionText';
+import RouteHeading from './RouteHeading';
+import FigureZoom from './FigureZoom';
+import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 import WaysInPanel, {
   WaysInAttemptReview,
   emptyWaysInWork,
@@ -78,6 +87,7 @@ import GeographyAllocationPanel from './GeographyAllocationPanel';
 import GeographyChoicePanel from './GeographyChoicePanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
 import IrishAllocationPanel from './IrishAllocationPanel';
+import ListeningPromptOptions, { listeningPromptParts } from './ListeningPromptOptions';
 import { irishCriterionMarks } from './irishScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
@@ -90,11 +100,14 @@ import type { AccountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
+import ReligiousEducationRubricPanel, { religiousEducationMarks, type ReligiousEducationScoreId } from './ReligiousEducationRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
-import { frenchMarks, type FrenchScoreId } from './frenchRubric';
-import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
+import { frenchMarks, rubricLanguage, type FrenchScoreId } from './frenchRubric';
+import HistoryEssayPanel from './HistoryEssayPanel';
+import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
+import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
-import { stemWithListBreaks } from './stemText';
+import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -104,9 +117,10 @@ const MUTED = 'var(--mb-muted)';
 const LABEL = 'var(--mb-label)';
 const MUTED_BORDER = 'var(--mb-border)';
 const PLATE = 'var(--mb-plate)';
-const SUCCESS = 'var(--mb-success)';
 const SUCCESS_TINT = 'var(--mb-success-tint)';
 const SUCCESS_TEXT = 'var(--mb-success-text)';
+const CLAIM = 'var(--mb-claim)';
+const ON_CLAIM = 'var(--mb-on-claim)';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
 /** How far the frame layers sit off the card, and the stroke's weight. */
@@ -182,9 +196,31 @@ export interface SessionCardResult {
   marksAvailable: number;
 }
 
+/** In-memory work retained while checking the post-study recap. */
+export interface SessionResponse {
+  claims: Record<string, RowClaim>;
+  picks: Record<string, number[]>;
+  rubricScores: RubricScores;
+  draft: string;
+  requirementChecks: Record<number, boolean>;
+  answerVariantId: string | null;
+  waysInWork: WaysInWork;
+}
+
 export interface SessionScreenProps {
   /** Approved compact paper surface with a state-preserving full-screen view. */
   paperLayout?: boolean;
+  /** A finite post-study check using this same question and scoring surface. */
+  studyReview?: {
+    banner: React.ReactNode;
+    topicTitle: (card: SecCard) => string;
+    onCue: (cue: 'tap' | 'swipe' | 'skip' | 'complete') => void;
+    onResponse: (cardId: string, response: SessionResponse) => void;
+    responses?: Record<string, SessionResponse>;
+    revisit?: boolean;
+    /** Starting-point checks need an attempt before exposing an answer. */
+    requireAttempt?: boolean;
+  };
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
@@ -254,15 +290,30 @@ export function claimableTotal(card: SecCard): number {
 export const showsRowMarks = (card: SecCard) =>
   isPointCard(card) && card.tariffModel.kind === 'fixed';
 
+/** How many of a menu row's options the student has picked; 0 for any other row. */
+const menuPicks = (row: MarkRow, picks: Record<string, number[]>, id: string) =>
+  row.kind === 'anyN' && row.group ? (picks[id] ?? []).filter(oi => oi >= 0 && oi < row.group!.options.length).length : 0;
+
 /**
  * Which mutually exclusive answer route the student has committed to, if any.
  * The SEC's double solidus separates routes that may not be mixed.
+ *
+ * A pick in a menu commits its route as a tick does. It used to commit
+ * nothing, so on Engineering 2015 HL Q7(c)(i) a student could pick in route
+ * B's menu and then tick route A, and the picks were silently dropped from
+ * the score; picked after a route A tick, they were accepted and scored
+ * nothing.
  */
-export function committedRoute(card: SecCard, claims: Record<string, RowClaim>): string | null {
+export function committedRoute(
+  card: SecCard,
+  claims: Record<string, RowClaim>,
+  picks: Record<string, number[]> = {},
+): string | null {
   if (!isPointCard(card)) return null;
   for (let i = 0; i < card.rows.length; i++) {
     const r = card.rows[i];
-    if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+    const id = rowId(r, i);
+    if (r.route && (isClaimed(claims, id) || menuPicks(r, picks, id) > 0)) return r.route;
   }
   return null;
 }
@@ -274,7 +325,7 @@ export function marksClaimed(
 ): number {
   if (!isPointCard(card)) return 0;
   if (!showsRowMarks(card)) return 0;
-  const route = committedRoute(card, claims);
+  const route = committedRoute(card, claims, picks);
   const bonus = card.questionBonus;
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
@@ -284,6 +335,16 @@ export function marksClaimed(
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
+      // A descending tariff pays its steps in falling order, each claimed answer
+      // capped at its own price where it carries one (ladderGroupMarks): a
+      // "1 mark only" option in a "3 + 1" menu earns 1 alone, and 3 + 1 with a
+      // full answer. Without option prices it is the first steps, as before.
+      if (r.group.perOptionSteps) {
+        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, picks[id] ?? []);
+      }
+      // Options priced one by one: every answer once, at the best of it claimed.
+      const optionMarks = r.group.optionMarks;
+      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, picks[id] ?? []);
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
@@ -319,9 +380,26 @@ export function suggestGrade(
   const total = claimableTotal(card);
   const got = marksClaimed(card, claims, picks);
   if (!showsRowMarks(card)) {
-    const claimedRows = card.rows.filter((r, i) => isClaimed(claims, rowId(r, i))).length;
-    if (claimedRows === 0) return 'missed';
-    return claimedRows === card.rows.length ? 'got' : 'shaky';
+    // A card the scheme prices only as a whole has no marks to add, so the
+    // suggestion reads how much of the answer was there. A menu counts by its
+    // picks, full at its cap: counting ticks alone told a student who picked
+    // both effects on Economics 2010 OL Section A Q9 "That looks like Missed
+    // it". Only the chosen route counts, so a branch answered in full is not
+    // marked down for the branch the paper offered instead.
+    const route = committedRoute(card, claims, picks);
+    const state = card.rows.map((r, i) => {
+      const id = rowId(r, i);
+      if (r.kind === 'anyN' && r.group) {
+        const n = menuPicks(r, picks, id);
+        return n === 0 ? 'none' : n >= Math.min(r.group.claimMax, r.group.options.length) ? 'full' : 'part';
+      }
+      return isClaimed(claims, id) ? 'full' : 'none';
+    });
+    if (state.every(st => st === 'none')) return 'missed';
+    const routed = card.rows.some(r => r.route);
+    const complete = (!routed || route !== null)
+      && card.rows.every((r, i) => (r.route && r.route !== route) || state[i] === 'full');
+    return complete ? 'got' : 'shaky';
   }
   if (got <= 0) return 'missed';
   return got >= total ? 'got' : 'shaky';
@@ -338,7 +416,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | ReligiousEducationScoreId | HistoryEssayScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -481,8 +559,16 @@ export const irishScoreId = (criterionId: string) =>
  *  claimed rows; any other is worth the mark placed on it. */
 export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system !== 'irish') return 0;
-  const total = card.rubric.criteria.reduce((sum, criterion) => {
+  const criteria = card.rubric.criteria;
+  const total = criteria.reduce((sum, criterion) => {
     const value = irishCriterionMarks(criterion, scores);
+    // A published penalty that names its award reduces that award only, never below 0.
+    if (criterion.kind === 'deduction' && criterion.deductFrom) return sum;
+    if (criterion.kind === 'award') {
+      const penalty = criteria.filter(item => item.kind === 'deduction' && item.deductFrom === criterion.id)
+        .reduce((amount, item) => amount + irishCriterionMarks(item, scores), 0);
+      return sum + Math.max(0, value - penalty);
+    }
     return criterion.kind === 'deduction' ? sum - value : sum + value;
   }, 0);
   return Math.max(0, Math.min(card.totalMarks, total));
@@ -502,6 +588,8 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
   if (card.rubric.system === 'politics') return politicsMarks(card, scores);
+  if (card.rubric.system === 'religious-education') return religiousEducationMarks(card, scores);
+  if (card.rubric.system === 'history-essay') return historyEssayMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -572,6 +660,16 @@ const ProgressRail: React.FC<{ total: number; done: number; current: number }> =
 
 /* ---------------------------------------------------------------- the row ---- */
 
+/** Keeps a line break the scheme printed inside answer or note text, which
+ *  plain white-space collapses: Economics 2021 HL Q16(a)(i) printed its trend
+ *  as two paragraphs and showed one. Text with no break is left as it was. */
+const printedLines = (text?: string) => (text?.includes('\n') ? 'pre-line' as const : undefined);
+
+/** A row the scheme printed as a bulleted list, lifted with its bullets inline
+ *  ("Low melting point • Allows for easy moulding • …"), goes back to one
+ *  bullet a line. Only the space before each bullet changes. */
+const bulletLines = (text: string) => text.replace(/ • /g, '\n• ');
+
 const MarkRowView: React.FC<{
   row: MarkRow;
   id: string;
@@ -579,6 +677,7 @@ const MarkRowView: React.FC<{
   claim: RowClaim;
   showMarks: boolean;
   blocked: boolean;
+  /** Why the row is locked; '' when the lock is stated elsewhere (a route's heading). */
   blockedReason?: string;
   reduced: boolean;
   picks: number[];
@@ -589,7 +688,10 @@ const MarkRowView: React.FC<{
   wholeResponse?: boolean;
   /** The claims on a row's parts, by part id; only a row with parts has them. */
   partClaims?: Record<string, RowClaim>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
+  /** Keep the printed line breaks inside a row's text (History: a verdict on
+   *  its own line above its first reason). */
+  keepLines?: boolean;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, keepLines }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -601,10 +703,10 @@ const MarkRowView: React.FC<{
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
           <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
         </div>
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
           {row.parts.map(part => {
             const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
@@ -616,9 +718,9 @@ const MarkRowView: React.FC<{
                     <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
                       aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
                       onClick={() => onClaim(partClaimId(id, part.id), mark)}
-                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? SUCCESS : MUTED_BORDER}`,
-                        background: selected === mark ? SUCCESS : 'var(--mb-paper)',
-                        color: selected === mark ? '#fff' : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
+                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? CLAIM : MUTED_BORDER}`,
+                        background: selected === mark ? CLAIM : 'var(--mb-paper)',
+                        color: selected === mark ? ON_CLAIM : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
                       {mark}
                     </button>
                   ))}
@@ -636,9 +738,9 @@ const MarkRowView: React.FC<{
     const selected = criterionMarksClaimed(row, claim);
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
         {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {row.permittedMarks.map(mark => (
             <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
@@ -665,6 +767,7 @@ const MarkRowView: React.FC<{
     const chosen = Math.min(picks.length, g.claimMax);
     const atCap = chosen >= g.claimMax;
     const requiresAll = g.claimMax === g.options.length;
+    const label = menuLabel(row);
     return (
       <MotionDiv
         /* The rows arrive one after another, and the stagger IS the message:
@@ -677,28 +780,33 @@ const MarkRowView: React.FC<{
         transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
-          border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
-          background: chosen ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${MUTED_BORDER}`,
+          background: 'var(--mb-paper)',
         }}
       >
+        {/* The row's own label ("For — any one"), as the card prints it, so
+            two menus on one card can be told apart (sessionText.menuLabel). */}
+        {label && (
+          <p dir="auto" style={{ margin: '0 0 5px', font: `600 13.5px/1.4 ${SANS}`, color: INK, whiteSpace: label.includes('\n') ? 'pre-line' : undefined }}>
+            {label}
+          </p>
+        )}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
-          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
+          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
                 each" of a 6-then-4 split is wrong for both halves. A menu the
                 scheme prices only as a whole (an orderedSplit or questionTotal
                 card) has no value per option, and printed "undefined marks
                 each" on 34 shipped cards; it states the choice alone and the
                 card's footnote says how the marks are given. */}
-            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`}{g.perOptionSteps
-              ? ` — ${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
-              : Number.isFinite(g.perOption) ? ` — ${g.perOption} marks each` : ''}
+            {anyNHeading(g)}
           </span>
           {showMarks && (
             <span style={{
               font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
               fontVariantNumeric: 'tabular-nums',
-              background: chosen ? SUCCESS_TINT : 'var(--mb-raised)',
-              color: chosen ? SUCCESS_TEXT : MUTED,
+              background: 'var(--mb-raised)',
+              color: INK_2,
             }}>
               {chosen} of {g.claimMax}
             </span>
@@ -714,7 +822,9 @@ const MarkRowView: React.FC<{
             // two of those menus, which banked one answer twice and told the
             // student they had scored marks the examiner never gave.
             const usedAlready = !on && takenElsewhere?.has(option);
-            const disabled = !on && (atCap || Boolean(usedAlready));
+            // A menu on a route the student did not take is locked like a
+            // row is: its picks would score nothing (routes.ts).
+            const disabled = blocked || (!on && (atCap || Boolean(usedAlready)));
             return (
               <button
                 key={oi}
@@ -724,24 +834,24 @@ const MarkRowView: React.FC<{
                 aria-pressed={on}
                 style={{
                   width: '100%', textAlign: 'left', display: 'grid',
-                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'start',
+                  gridTemplateColumns: g.optionMarks && showMarks ? '16px 1fr auto' : '16px 1fr', gap: 8, alignItems: 'center',
                   padding: '7px 9px', borderRadius: 9,
-                  border: `1px solid ${on ? SUCCESS : '#e4e0da'}`,
-                  background: on ? 'var(--mb-paper)' : 'transparent',
+                  border: `1px solid ${on ? CLAIM : MUTED_BORDER}`,
+                  background: on ? CLAIM : 'transparent',
                   cursor: disabled ? 'not-allowed' : 'pointer',
                   opacity: disabled ? 0.45 : 1,
-                  font: `500 12.5px/1.4 ${SANS}`, color: on ? SUCCESS_TEXT : INK_2,
+                  font: `500 12.5px/1.4 ${SANS}`, color: on ? ON_CLAIM : INK_2,
                 }}
               >
                 <span style={{
-                  width: 14, height: 14, borderRadius: 4, marginTop: 2, flex: 'none',
-                  background: on ? SUCCESS : 'transparent',
+                  width: 14, height: 14, borderRadius: 4, flex: 'none',
+                  background: on ? ON_CLAIM : 'transparent', color: CLAIM,
                   border: on ? 'none' : `1.5px solid ${MUTED_BORDER}`,
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   {on && (
                     <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   )}
                 </span>
@@ -753,7 +863,7 @@ const MarkRowView: React.FC<{
                   {option.includes('\n')
                     ? option.split('\n').map((line, li) => (
                         <span key={li} style={{ display: 'grid', gridTemplateColumns: '10px 1fr', gap: 6, marginTop: li ? 3 : 0 }}>
-                          <span aria-hidden="true" style={{ color: MUTED }}>&middot;</span>
+                          <span aria-hidden="true" style={{ color: on ? ON_CLAIM : MUTED }}>&middot;</span>
                           <span>{line}</span>
                         </span>
                       ))
@@ -764,6 +874,15 @@ const MarkRowView: React.FC<{
                     </em>
                   )}
                 </span>
+                {g.optionMarks && showMarks && (
+                  <span style={{
+                    font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
+                    fontVariantNumeric: 'tabular-nums',
+                    background: on ? ON_CLAIM : 'var(--mb-raised)', color: on ? CLAIM : INK_2,
+                  }}>
+                    {g.optionMarks[oi]}m
+                  </span>
+                )}
               </button>
             );
           })}
@@ -773,8 +892,13 @@ const MarkRowView: React.FC<{
             that would not fit an option put it here, believing it showed. Silent
             loss of marking content is worse than a crowded card. */}
         {row.contextNote && (
-          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED, whiteSpace: printedLines(row.contextNote) }}>
             {row.contextNote}
+          </p>
+        )}
+        {blocked && blockedReason !== '' && (
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+            {blockedReason ?? 'This mark only counts if the point above was right.'}
           </p>
         )}
         {atCap && (
@@ -788,6 +912,8 @@ const MarkRowView: React.FC<{
     );
   }
 
+  const shownVerbatim = wholeResponse ? row.verbatim.replace(/ • /g, '\n\n')
+    : keepLines ? row.verbatim : bulletLines(row.verbatim);
   return (
     <MotionDiv
       /* The rows arrive one after another, and the stagger IS the message:
@@ -807,13 +933,13 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'center',
           padding: '11px 12px', borderRadius: 12,
-          border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
-          background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${claimed ? CLAIM : MUTED_BORDER}`,
+          background: claimed ? CLAIM : 'var(--mb-paper)',
           cursor: blocked ? 'not-allowed' : 'pointer',
           opacity: blocked ? 0.5 : 1,
-          font: `500 13.5px/1.42 ${SANS}`, color: INK_2,
+          font: `500 13.5px/1.42 ${SANS}`, color: claimed ? ON_CLAIM : INK_2,
           transition: reduced ? 'none' : 'background 160ms, border-color 160ms',
         }}
       >
@@ -824,8 +950,8 @@ const MarkRowView: React.FC<{
             // A circle is a RADIO — one of many. Every marking point here is
             // claimed independently, so the control is a checkbox: rounded
             // square, not round.
-            width: 18, height: 18, borderRadius: 5, marginTop: 1,
-            background: claimed ? SUCCESS : 'transparent',
+            width: 18, height: 18, borderRadius: 5,
+            background: claimed ? ON_CLAIM : 'transparent', color: CLAIM,
             border: claimed ? 'none' : `1.5px solid ${MUTED_BORDER}`,
             display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: 'none',
           }}
@@ -834,31 +960,33 @@ const MarkRowView: React.FC<{
               on some platforms, and this app bans emoji as UI furniture. */}
           {claimed && (
             <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           )}
         </MotionSpan>
 
         <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
           {/* A marking point takes its direction from its own text, so an
-              Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
-            {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
+              Arabic answer reads and aligns the way the scheme printed it.
+              Printed line breaks are kept for every subject; History's rows
+              keep exactly the text and pre-line they always had. */}
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : printedLines(shownVerbatim) }}>
+            {shownVerbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
-              <span style={{ color: MUTED }}>
+              <span style={{ color: claimed ? ON_CLAIM : MUTED }}>
                 {' or '}{row.accepts.join(' or ')}
               </span>
             ) : null}
           </span>
           {!wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
@@ -873,20 +1001,21 @@ const MarkRowView: React.FC<{
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
-            background: claimed ? SUCCESS_TINT : 'var(--mb-raised)',
-            color: claimed ? SUCCESS_TEXT : MUTED,
+            background: claimed ? CLAIM : 'var(--mb-raised)',
+            color: claimed ? ON_CLAIM : MUTED,
           }}>
             {claimed ? `${marks}m` : `${marks}m`}
           </span>
         )}
       </button>
 
-      {blocked && (
+      {blocked && blockedReason !== '' && (
         <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
           {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
       )}
-      {canSynonym && !claimed && (
+      {/* Not on a locked row: claiming it would switch the card to the route it belongs to. */}
+      {canSynonym && !claimed && !blocked && (
         <button
           type="button"
           onClick={() => onClaim(id, 'synonym')}
@@ -968,16 +1097,16 @@ const PclmRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)', color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)', color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   font: `800 12px/1 ${SANS}`,
                 }}>
                   {checked ? (
@@ -1224,10 +1353,15 @@ const IrishRubricPanel: React.FC<{
   const total = irishMarks(card, scores);
 
   const guidanceLabel = (criterion: IrishCriterion) => {
+    if (criterion.tariffOnly) return 'Tariff';
     if (criterion.guidanceKind === 'exact') return 'Official answers and tariff';
     if (criterion.guidanceKind === 'quality') return 'Published quality description';
     return 'Possible directions — not a checklist';
   };
+  // A listening sheet namespaces each card's criteria ("<card>/<criterion>") and labels them "<extract> · <box>":
+  // one run per extract, so the 2026 one-question cards of an announcement share its chip too.
+  const chipRun = (criterion: IrishCriterion) => (criterion.id.includes('/')
+    ? criterion.label.split(/\s+·\s+/).slice(0, -1).join(' · ') : '');
 
   const scoreControl = (criterion: IrishCriterion) => {
     const id = irishScoreId(criterion.id);
@@ -1244,6 +1378,7 @@ const IrishRubricPanel: React.FC<{
                 key={mark}
                 type="button"
                 aria-pressed={active}
+                aria-label={`Set ${criterion.label} to ${mark} marks`}
                 onClick={() => onScore(id, mark)}
                 style={{
                   minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
@@ -1291,7 +1426,7 @@ const IrishRubricPanel: React.FC<{
               key={mark}
               type="button"
               onClick={() => onScore(id, mark)}
-              aria-label={`Set ${criterion.label} to ${mark}`}
+              aria-label={`Set ${criterion.label} to ${mark} marks`}
               style={{
                 border: 0, background: 'none', padding: '2px 0', color: LABEL,
                 font: `650 9.5px/1 ${MONO}`, cursor: 'pointer',
@@ -1325,17 +1460,17 @@ const IrishRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                  color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)',
+                  color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                 }}>
                   {checked ? <span style={{
                     width: 6, height: 10, borderRight: '2px solid currentColor',
@@ -1361,7 +1496,7 @@ const IrishRubricPanel: React.FC<{
         </p>
 
         <div style={{ display: 'grid', gap: 10 }}>
-          {rubric.criteria.map(criterion => (
+          {rubric.criteria.map((criterion, index) => (
             <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
                 <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
@@ -1371,13 +1506,17 @@ const IrishRubricPanel: React.FC<{
                   {criterion.kind === 'deduction' ? '0 to −' : '/ '}{criterion.maxMarks}
                 </span>
               </div>
-              <span style={{
-                display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
-                background: 'var(--mb-raised)', color: LABEL,
-                font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
-              }}>
-                {guidanceLabel(criterion)}
-              </span>
+              {/* One chip per run: an announcement's question boxes share one "Official answers" label. */}
+              {(index === 0 || guidanceLabel(rubric.criteria[index - 1]) !== guidanceLabel(criterion)
+                || chipRun(rubric.criteria[index - 1]) !== chipRun(criterion)) && (
+                <span style={{
+                  display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
+                  background: 'var(--mb-raised)', color: LABEL,
+                  font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
+                }}>
+                  {guidanceLabel(criterion)}
+                </span>
+              )}
               {criterion.allocation ? (
                 <div style={{ marginTop: 10 }}>
                   <IrishAllocationPanel
@@ -1518,17 +1657,17 @@ const GeographyRubricPanel: React.FC<{
                   onClick={() => onRequirement(index)}
                   style={{
                     display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                    alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                    borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                    color: checked ? SUCCESS_TEXT : INK_2,
+                    alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                    borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                    background: checked ? CLAIM : 'var(--mb-paper)',
+                    color: checked ? ON_CLAIM : INK_2,
                     font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                   }}
                 >
                   <span aria-hidden style={{
                     display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                    border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS : 'transparent', color: '#fff',
+                    border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                    background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   }}>
                     {checked ? <span style={{
                       width: 6, height: 10, borderRight: '2px solid currentColor',
@@ -1645,6 +1784,11 @@ const RubricPanel: React.FC<{
       rubric: Extract<SecRubricCard['rubric'], { system: 'politics' }>;
     }} />;
   }
+  if (props.card.rubric.system === 'religious-education') {
+    return <ReligiousEducationRubricPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'religious-education' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
   if (props.card.rubric.system === 'physical-education') {
     return <PhysicalEducationRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'physical-education' }>;
@@ -1686,6 +1830,11 @@ const RubricPanel: React.FC<{
     return <GeographyRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: GeographyRubric;
     }} />;
+  }
+  if (props.card.rubric.system === 'history-essay') {
+    return <HistoryEssayPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'history-essay' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
   }
   return (
     <PclmRubricPanel
@@ -1803,16 +1952,14 @@ const RULE_STYLE: React.CSSProperties = {
  * scope — stays plain, which is what keeps the mark sleek on a question that
  * runs to two or three lines.
  */
-const Clause: React.FC<{ text: string }> = ({ text }) => {
-  const { before, marked, after } = splitForEmphasis(text);
-  return (
-    <>
-      {before}
-      <span style={EMPHASIS === 'rule' ? RULE_STYLE : MARKER_STYLE}>{marked}</span>
-      {after}
-    </>
-  );
-};
+const Clause: React.FC<{ text: string }> = ({ text }) => (
+  <>
+    {/* One mark, or one per alternative of an either/or choice (questionEmphasis). */}
+    {emphasisSegments(text).map((segment, i) => (segment.marked
+      ? <span key={i} style={EMPHASIS === 'rule' ? RULE_STYLE : MARKER_STYLE}>{segment.text}</span>
+      : <React.Fragment key={i}>{segment.text}</React.Fragment>))}
+  </>
+);
 
 const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ children, nested = false }) => (
   <span style={{
@@ -1953,7 +2100,9 @@ const listeningNumberedPrompts = (body: string): ListeningPromptGroup => {
   );
   const instruction = withInstruction?.[1].trim();
   const questionBlock = (withInstruction?.[2] ?? body).trim();
-  const questions = questionBlock.match(/[^?]+\?/g)?.map(question => question.trim()) ?? [];
+  // Each printed field ends at its "?", or at a "." where the paper prints a statement (2020 OL "Scríobh síos lá
+  // amháin … gach seachtain."), before the next field's capital.
+  const questions = questionBlock.split(/(?<=[?.])\s+(?=[A-ZÁÉÍÓÚ])/).map(question => question.trim()).filter(Boolean);
   return {
     instruction,
     prompts: (questions.length > 0 ? questions : [questionBlock]).map((text, index) => ({
@@ -2086,7 +2235,8 @@ const ListeningQuestionSet: React.FC<{ cards: ListeningQuestionCard[] }> = ({ ca
                           {prompt.label}
                         </span>
                         <div style={{ minWidth: 0, font: `500 16.5px/1.48 ${SERIF}`, color: INK }}>
-                          <Clause text={prompt.text} />
+                          <Clause text={listeningPromptParts(prompt.text).question} />
+                          <ListeningPromptOptions text={prompt.text} />
                         </div>
                       </div>
                     ))}
@@ -2133,13 +2283,28 @@ const listeningCriterionId = (cardId: string, criterionId: string) =>
  * extracts which both use `eolas` can be placed independently on one screen.
  * This object is presentation-only; the commit path still writes every real id.
  */
-const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+export const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+  const shownDirections = new Set<string>();
   const first = cards[0];
+  const sourceDocuments = new Map<string, CardSourceMaterial>();
+  for (const card of cards) {
+    for (const source of [card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]) {
+      if (!source) continue;
+      const key = source.sourceFileid ?? card.paperFileid ?? '';
+      const existing = sourceDocuments.get(key);
+      sourceDocuments.set(key, { ...source,
+        pages: [...new Set([...(existing?.pages ?? []), ...source.pages])].sort((a, b) => a - b),
+      });
+    }
+  }
+  const sources = [...sourceDocuments.values()];
   const questionRef = sharedListeningLabel(cards.map(card => card.questionRef)) || first.questionRef;
   const audioLabel = sharedListeningLabel(cards.map(card => card.audioMaterial.label))
     || first.audioMaterial.label;
   return {
     ...first,
+    sourceMaterial: sources[0] ? { ...sources[0], label: audioLabel, title: first.audioMaterial.title } : undefined,
+    additionalSourceMaterials: sources.slice(1),
     questionRef,
     questionText: cards
       .map(card => `${listeningSectionLabel(card)}\n${card.questionText}`)
@@ -2157,7 +2322,11 @@ const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListenin
       criteria: cards.flatMap(card => card.rubric.criteria.map(criterion => ({
         ...criterion,
         id: listeningCriterionId(card.id, criterion.id),
+        ...(criterion.deductFrom ? { deductFrom: listeningCriterionId(card.id, criterion.deductFrom) } : {}),
         label: `${listeningSectionLabel(card)} · ${criterion.label}`,
+        // The scheme's general note, repeated on every one-question card, is shown once on the sheet.
+        ...(criterion.allocation ? { allocation: { ...criterion.allocation,
+          directions: criterion.allocation.directions.filter(note => !shownDirections.has(note) && Boolean(shownDirections.add(note))) } } : {}),
       }))),
       markingGuideNote: [...new Set(cards.map(card => card.rubric.markingGuideNote))].join(' '),
     },
@@ -2214,11 +2383,14 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
   const [expanded, setExpanded] = useState(false);
+  const advancedStudyCard = useRef<string | null>(null);
+  const studyTitleRef = useRef<HTMLHeadingElement>(null);
   const [drafts, setDrafts] = useState<Record<string,string>>({});
+  const [paperAttempts, setPaperAttempts] = useState<Record<string, boolean>>({});
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
   /* The scroller has to reserve exactly as much room as the action rail takes,
@@ -2269,6 +2441,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
 
   const card = byId.get(queue[position]);
+  const isStudyReview = Boolean(studyReview);
+  useEffect(() => {
+    if (!isStudyReview) return;
+    studyTitleRef.current?.focus({ preventScroll: true });
+  }, [card?.id, isStudyReview]);
+  const savedResponse = card && studyReview?.responses?.[card.id];
+  const revisit = Boolean(studyReview?.revisit);
+  const needsAttempt = Boolean(studyReview?.requireAttempt && card && !revisit
+    && !drafts[card.id]?.trim() && !paperAttempts[card.id]);
+  useEffect(() => {
+    if (!revisit || !card) return;
+    setClaims(savedResponse?.claims ?? {});
+    setPicks(savedResponse?.picks ?? {});
+    setRubricScores(savedResponse?.rubricScores ?? {});
+    setRequirementChecks(savedResponse?.requirementChecks ?? {});
+    setDrafts(previous => ({ ...previous, [card.id]: savedResponse?.draft ?? '' }));
+    setWaysInWork(savedResponse?.waysInWork ?? emptyWaysInWork());
+    setRevealed(true);
+  }, [card, revisit, savedResponse]);
   const listeningKey = card ? listeningExerciseKey(card) : null;
   const listeningCards = useMemo(() => listeningKey
     ? cards.filter((candidate): candidate is SecCard & { audioMaterial: CardAudioMaterial } =>
@@ -2302,8 +2493,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
   useEffect(() => {
-    setAnswerVariantId(null);
-  }, [baseAssessmentCard?.id]);
+    setAnswerVariantId(revisit ? savedResponse?.answerVariantId ?? null : null);
+  }, [baseAssessmentCard?.id, revisit, savedResponse]);
   const exerciseTotal = visibleSessionExercises(cards).length;
   const distinctDone = new Set(results.map(result => {
     const resultCard = byId.get(result.cardId);
@@ -2338,7 +2529,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
    */
   const unclaimed = useMemo(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return [];
-    const route = committedRoute(assessmentCard, rowClaims);
+    const route = committedRoute(assessmentCard, rowClaims, picks);
     return assessmentCard.rows
       .filter((r, i) => {
         if (r.route && route && r.route !== route) return false;
@@ -2347,16 +2538,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         if (r.parts) return partsMarksClaimed(r, rowId(r, i), rowClaims) === 0;
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
-      // The scheme's own wording, minus any "Label — " prefix the card carries.
-      // Except on a matching or true/false card, where the scheme's whole answer
-      // IS the prefix's tail — a letter or a verdict. "e · a · d" and
-      // "false · false · false" name nothing; there the label is the content.
-      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
-      .map(r => {
-        const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return tail.trim().length <= 6 ? r.verbatim : tail;
-      });
-  }, [assessmentCard, rowClaims]);
+      // The scheme's own wording, minus an unambiguous "Label — " prefix;
+      // working, dates and ranges keep their minus signs (see sessionText).
+      .map(r => unclaimedName(r.verbatim));
+  }, [assessmentCard, rowClaims, picks]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */
   const unclaimedNames = unclaimed.slice(0, 3);
@@ -2364,25 +2549,36 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const suggested = assessmentCard
     ? isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
+  /* A History essay is placed in two halves, paragraph by paragraph and then
+     as a whole. Until the whole answer is placed on an OE band its marks are a
+     running total, and a grade suggested from them preselected "Missed it"
+     after two paragraphs. Every other rubric is placed in one go. */
+  const placementPending = Boolean(assessmentCard && isRubricCard(assessmentCard)
+    && assessmentCard.rubric.system === 'history-essay'
+    && !historyEssayPlacementComplete(assessmentCard.rubric, rubricScores));
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
       : assessmentCard.rubric.system === 'politics' ? 'Politics and Society'
+      : assessmentCard.rubric.system === 'religious-education' ? 'Religious Education band grid'
       : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
       : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
-      : assessmentCard.rubric.system === 'french' ? 'French marking grid'
-      : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'french' ? `${rubricLanguage(assessmentCard.subjectId)} marking grid`
+      : assessmentCard.rubric.system === 'business' ? 'Business allocation'
+      : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
     : 'rubric';
-  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
+  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims, picks) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setClaims(prev => ({ ...prev, [id]: next }));
-  }, []);
+  }, [studyReview]);
 
   const setRubricScore = useCallback((id: RubricScoreId, marks: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
@@ -2395,7 +2591,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       }
       return next;
     });
-  }, []);
+  }, [studyReview]);
 
   const toggleRequirement = useCallback((index: number) => {
     setRequirementChecks(prev => ({ ...prev, [index]: !prev[index] }));
@@ -2427,6 +2623,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   /** Toggle one option inside a bounded "Any N" group. */
   const togglePick = useCallback((id: string, optionIndex: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setPicks(prev => {
       const current = prev[id] ?? [];
@@ -2435,10 +2632,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         : [...current, optionIndex];
       return { ...prev, [id]: next };
     });
-  }, []);
+  }, [studyReview]);
 
   const claimAll = useCallback(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     const all: Record<string, RowClaim> = {};
     const allPicks: Record<string, number[]> = {};
@@ -2452,10 +2650,42 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
-  }, [assessmentCard]);
+  }, [assessmentCard, studyReview]);
+
+  /** "Select all" on one answer route: only one route scores (routes.ts). */
+  const claimRoute = useCallback((route: string) => {
+    if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
+    setSchemeInteracted(true);
+    const chosen = routeSelection(assessmentCard.rows, route);
+    if (assessmentCard.questionBonus) chosen.claims[assessmentCard.questionBonus.id] = 'yes';
+    setClaims(prev => ({ ...prev, ...chosen.claims }));
+    setPicks(prev => ({ ...prev, ...chosen.picks }));
+  }, [assessmentCard, studyReview]);
+
+  const advanceStudy = useCallback((result?: SessionCardResult) => {
+    if (!card || !studyReview || advancedStudyCard.current === card.id) return;
+    advancedStudyCard.current = card.id;
+    if (!revisit) {
+      studyReview.onResponse(card.id, { claims, picks, rubricScores, requirementChecks, answerVariantId, draft: drafts[card.id] ?? '', waysInWork });
+      if (result) onGrade(result);
+    }
+    const nextResults = result ? [...results, result] : results;
+    setResults(nextResults);
+    studyReview.onCue(result || revisit ? 'swipe' : 'skip');
+    if (position + 1 >= queue.length) { onFinish(nextResults); return; }
+    setClaims({}); setPicks({}); setRubricScores({}); setRequirementChecks({});
+    setAnswerVariantId(null); setRevealed(false); setWaysInOpen(false);
+    setWaysInFocusMode(false); setWaysInWork(emptyWaysInWork()); setSchemeInteracted(false);
+    setPosition(position + 1);
+  }, [card, studyReview, revisit, claims, picks, rubricScores, requirementChecks, answerVariantId, drafts, waysInWork, onGrade, results, position, queue.length, onFinish]);
 
   const commit = useCallback((grade: MarkBankGrade) => {
     if (!card) return;
+    if (studyReview) {
+      advanceStudy({ cardId: card.id, grade, marksClaimed: got, marksAvailable: total });
+      return;
+    }
     const gradedCards: SecCard[] = hasCombinedListeningAssessment
       ? listeningAssessmentCards
       : [card];
@@ -2522,7 +2752,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     else setPosition(position + 1);
   }, [
     card, got, hasCombinedListeningAssessment, listeningAssessmentCards,
-    rubricScores, onGrade, results, queue, position, onFinish,
+    rubricScores, onGrade, results, queue, position, onFinish, studyReview, advanceStudy, total,
   ]);
 
   useEffect(() => {
@@ -2542,8 +2772,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     // Do not send focus back to the background entry while the modal is open.
     setWaysInOpen(false);
     setWaysInFocusMode(false);
+    if (studyReview) { onExit(); return; }
     setConfirmExit(true);
-  }, []);
+  }, [studyReview, onExit]);
 
   const closeExitConfirmation = useCallback(() => {
     setConfirmExit(false);
@@ -2552,8 +2783,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL'
-    : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = `${MARK_BANK_LEVEL_LABELS[assessmentCard.level].toUpperCase()} LEVEL`;
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const printedQuestionReplacesText = Boolean(questionFigure && questionFigure.includesPrompt !== false);
@@ -2562,6 +2792,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     ...(sourceMaterial ? [sourceMaterial] : []),
     ...(assessmentCard.additionalSourceMaterials ?? []),
   ];
+  const sourceReaders = sourceMaterials.map((source, index) => {
+    const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
+    return sourceFileid ? (
+      <SourceMaterialReader
+        key={`${sourceFileid}-${source.label}-${index}`}
+        source={source}
+        subjectId={assessmentCard.subjectId}
+        year={assessmentCard.year}
+        paperFileid={sourceFileid}
+      />
+    ) : null;
+  });
   const audioMaterial = assessmentCard.audioMaterial;
   const labelKey = assessmentCard.kind === 'diagram' ? assessmentCard.labelKey : undefined;
 
@@ -2597,8 +2839,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
+      {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle>{reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} {marksWord(assessmentCard.totalMarks)} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -2609,12 +2852,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           <span>{subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}</span>
           <strong aria-label={`${Math.min(distinctDone + 1, exerciseTotal)} of ${exerciseTotal} this review`}>{Math.min(distinctDone + 1, exerciseTotal)} <small>/ {exerciseTotal}</small></strong>
         </div> : (
-        <div style={{
+        <div className="mb-session-bar" style={{
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
-          <ActionButton ref={leaveButtonRef} intent="secondary" onClick={openExitConfirmation}>
-            <LogOut size={16} aria-hidden="true" /> Leave review
+          {/* Icon-only on a phone (mark-bank-session-paper.css): the words wrapped
+              to two lines there and squeezed the subject to "Econo…". */}
+          <ActionButton ref={leaveButtonRef} intent="secondary" className="mb-session-leave" aria-label="Leave review" onClick={openExitConfirmation}>
+            <LogOut size={16} aria-hidden="true" /><span className="mb-session-leave-label">Leave review</span>
           </ActionButton>
 
           {/* One line where four stacked headings used to be. */}
@@ -2627,7 +2872,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 1, minWidth: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
+            {subjectLabel} · {MARK_BANK_LEVEL_SHORT_LABELS[assessmentCard.level]}
           </span>
 
           <span style={{ flex: 1 }} />
@@ -2637,10 +2882,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap', textAlign: 'right',
           }}>
             <span style={{ display: 'block' }}>
-              {Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review
+              <span className="mb-session-count-long">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review</span>
+              <span className="mb-session-count-short">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal}</span>
             </span>
             {reviewPoolTotal !== undefined && reviewPoolLabel && (
-              <span style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
+              <span className="mb-session-pool" style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
                 {reviewPoolTotal} {reviewPoolTotal === 1 ? 'card' : 'cards'} in {reviewPoolLabel}
               </span>
             )}
@@ -2801,7 +3047,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
               }}>
-                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
+                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL|FL)\s+/, '')}
               </span>
               {/* Inverted chip: ink as the fill. The text must flip WITH it --
                   --mb-ink goes near-white in dark mode, so hard-coded white
@@ -2815,9 +3061,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
-              /* A printed bullet list keeps one item to a line; see stemText. */
+              /* A printed bullet list keeps one item to a line; a History stem
+                 keeps the paper's own paragraph breaks. See stemText. */
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
-                {stemWithListBreaks(assessmentCard.stem)}
+                {assessmentCard.subjectId === 'history'
+                  ? stemWithPrintedBreaks(assessmentCard.stem)
+                  : stemWithListBreaks(assessmentCard.stem)}
               </p>
             )}
 
@@ -2827,17 +3076,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  stem AND the retyped ask: re-telling either alongside the
                  print could only duplicate or contradict it. */
               <figure style={{ margin: '14px 0 0' }}>
-                <img
+                {/* Opens full screen to zoom: a wide crop sets 7.5-10 px text on a phone. */}
+                <FigureZoom
                   src={figureUrl(questionFigure.src)} alt={questionFigure.alt}
-                  style={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  kicker={printedQuestionReplacesText ? 'Printed question' : 'Figure'}
+                  caption={questionFigure.attribution}
+                  captionStyle={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
                 />
-                <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {questionFigure.attribution}
-                </figcaption>
               </figure>
             )}
 
-            {!printedQuestionReplacesText && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+            {!printedQuestionReplacesText && (audioMaterial && listeningScoredAlone(assessmentCard) ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
@@ -2846,6 +3096,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             ) : audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
+                {sourceReaders}
                 <ListeningQuestionSet cards={listeningCards} />
               </>
             ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
@@ -2865,35 +3116,24 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  answer printed in the question area answers the question for
                  the student before they have tried it. */
               <figure style={{ margin: '16px -18px 0', padding: '14px 18px 0', borderTop: `1px solid ${HAIRLINE_2}` }}>
-                <div style={{ textAlign: 'center' }}>
-                  <img
-                    src={figureUrl(figure.src)} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
-                    /* 640, not 340: a Maths figure is a worked solution to be READ, and
-                       a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
-                       shrink an image, so a wide diagram -- already limited by width --
-                       is unaffected and nothing is upscaled into blur. */
-                  />
-                </div>
-                <figcaption style={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {figure.attribution}
-                </figcaption>
+                <FigureZoom
+                  src={figureUrl(figure.src)} alt={figure.alt}
+                  imgWrapStyle={{ textAlign: 'center' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
+                  /* 640, not 340: a Maths figure is a worked solution to be READ, and
+                     a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
+                     shrink an image, so a wide diagram -- already limited by width --
+                     is unaffected and nothing is upscaled into blur. */
+                  kicker={figure.solution ? 'Marking scheme' : 'Figure'}
+                  caption={figure.attribution}
+                  captionStyle={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
+                />
               </figure>
             )}
 
             {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
-            {sourceMaterials.map((source, index) => {
-              const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
-              return sourceFileid ? (
-                <SourceMaterialReader
-                  key={`${sourceFileid}-${source.label}-${index}`}
-                  source={source}
-                  subjectId={assessmentCard.subjectId}
-                  year={assessmentCard.year}
-                  paperFileid={sourceFileid}
-                />
-              ) : null;
-            })}
+            {/* Irish listening cards show their readers beside the recording, above. */}
+            {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
             {answerVariants.length > 0 && (
               <fieldset style={{
@@ -2959,7 +3199,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
-          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
+          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" readOnly={revisit} value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
           {!revealed && !waysInOpen && (
             <div className="mb-wi-entry">
               <span>Before the scheme</span>
@@ -3001,7 +3241,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 exit={{ opacity: 0 }}
                 transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
-                <div style={{ padding: '4px 18px 18px' }}>
+                <fieldset disabled={revisit} style={{ padding: '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
                   <WaysInAttemptReview work={waysInWork} card={assessmentCard} subjectLabel={subjectLabel} />
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -3013,7 +3253,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3037,23 +3277,28 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
                           {wholeResponseAssessment
                             ? 'Compare your answer with the guidance and examples below. Tick each part you completed, then choose your grade for the full response.'
+                            : studyReview ? 'Tap every point that appeared in your answer, then continue to the next question.'
                             : 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'}
                         </p>
                       </div>
 
-                      {assessmentCard.rows.map((row, i) => {
+                      {routeDisplayOrder(assessmentCard.rows).map(i => {
+                        const row = assessmentCard.rows[i];
                         const id = rowId(row, i);
                         const taskGroup = assessmentCard.taskGroups?.find(group => group.rowIds[0] === id);
+                        const routeHead = routeHeadAt(assessmentCard.rows, i);
                         return (
                           <React.Fragment key={id}>
                           {taskGroup && (
                             <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
-                              {taskGroup.label} · {taskGroup.marks} marks
+                              {taskGroup.label} · {taskGroup.marks} {marksWord(taskGroup.marks)}
                             </h3>
                           )}
+                          {routeHead && <RouteHeading head={routeHead} taken={routeTaken} onSelectAll={claimRoute} />}
                           <MarkRowView
                             row={row} id={id} index={i}
                             wholeResponse={wholeResponseAssessment}
+                            keepLines={assessmentCard.subjectId === 'history'}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
                             blocked={
@@ -3061,8 +3306,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                               || (!!row.route && !!routeTaken && row.route !== routeTaken)
                             }
                             blockedReason={
+                              // A route the student did not take says so once, under
+                              // its heading (RouteHeading), not under every row.
                               !!row.route && !!routeTaken && row.route !== routeTaken
-                                ? 'The examiner marks one route or the other — not a mix of both.'
+                                ? ''
                                 : undefined
                             }
                             reduced={reduced}
@@ -3094,7 +3341,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         </div>
                       )}
 
-                      {assessmentCard.tariffModel.kind === 'orderedSplit' && (
+                      {/* Said only of a split that falls: "4 + 4" pays every answer
+                          the same, and "higher than the rest" would be false of it. */}
+                      {assessmentCard.tariffModel.kind === 'orderedSplit' && !uniformSplit(assessmentCard.tariffModel.notation) && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           The examiner marks the first correct answers higher than the rest
                           ({assessmentCard.tariffModel.notation}) — so what these are worth depends on how many you got.
@@ -3109,7 +3358,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
-                          {' '}{assessmentCard.tariffModel.perPart} marks each.
+                          {' '}{assessmentCard.tariffModel.perPart} {marksWord(assessmentCard.tariffModel.perPart)} each.
                         </p>
                       )}
                     </>
@@ -3128,7 +3377,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
                     {assessmentCard.schemeCitation}
                   </p>
-                </div>
+                </fieldset>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -3173,10 +3422,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         {!revealed && (
           <div style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
             <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
+              {studyReview?.requireAttempt && <label className="mb-starting-attempt">
+                <input type="checkbox" checked={paperAttempts[card.id] ?? false}
+                  onChange={event => setPaperAttempts(previous => ({ ...previous, [card.id]: event.target.checked }))} />
+                I tried this on paper or in my head, even if I couldn’t recall an answer.
+              </label>}
               <button
                 type="button"
                 autoFocus={answerVariants.length === 0}
-                disabled={answerVariants.length > 0 && !answerVariantId}
+                disabled={needsAttempt || (answerVariants.length > 0 && !answerVariantId)}
                 // Clear any lingering whisper so the schedule note for the card
                 // just graded does not hang over the one now in front of them.
                 onClick={() => {
@@ -3184,6 +3438,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   setWaysInOpen(false);
                   setWaysInFocusMode(false);
                   setSchemeInteracted(false);
+                  studyReview?.onCue('complete');
                   setRevealed(true);
                 }}
                 style={{
@@ -3191,11 +3446,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   background: ACCENT, color: '#FFFFFF', border: 'none',
                   boxShadow: '0 5px 14px rgba(181,77,20,.22)',
                   font: `650 15px/1 ${SANS}`,
-                  cursor: answerVariants.length > 0 && !answerVariantId ? 'not-allowed' : 'pointer',
-                  opacity: answerVariants.length > 0 && !answerVariantId ? .48 : 1,
+                  cursor: needsAttempt || (answerVariants.length > 0 && !answerVariantId) ? 'not-allowed' : 'pointer',
+                  opacity: needsAttempt || (answerVariants.length > 0 && !answerVariantId) ? .48 : 1,
                 }}
               >
-                {answerVariants.length > 0 && !answerVariantId
+                {needsAttempt ? 'Try the question first'
+                  : answerVariants.length > 0 && !answerVariantId
                   ? 'Choose your answer route first'
                   : 'Reveal the marking scheme'}
               </button>
@@ -3203,9 +3459,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         )}
 
+      {studyReview && <div className="sq-question-actions">
+        <span aria-live="polite">{revisit ? 'Reviewing your answers' : revealed ? `${got} / ${total} self-assessed marks` : 'Try the question before revealing the scheme.'}</span>
+        <div>
+          {!revisit && <Button variant="outline" onClick={() => advanceStudy()}>Skip question</Button>}
+          {revealed && <Button className="sq-primary" onClick={() => revisit ? advanceStudy() : commit(suggested)}>
+            {position + 1 < queue.length ? 'Next question' : revisit ? 'Back to summary' : 'See review summary'}
+          </Button>}
+        </div>
+      </div>}
+
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
-      {revealed && (
+      {revealed && !studyReview && (
         <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
           <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
             {showsRowMarks(assessmentCard) && (
@@ -3218,11 +3484,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
-                // Whole-response criteria can be paragraphs long. This is a
-                // summary; the full wording remains in the scheme above.
-                display: '-webkit-box', WebkitBoxOrient: 'vertical',
-                WebkitLineClamp: 3, overflow: 'hidden',
               }}>
+                {/* Whole-response criteria can be paragraphs long. This is a
+                    summary; the full wording remains in the scheme above. The
+                    clamp sits INSIDE the padding: clamped on the padded box, a
+                    fourth line showed through the bottom padding. */}
+                <div data-testid="mark-bank-unclaimed-summary" style={{
+                  display: '-webkit-box', WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: 3, overflow: 'hidden',
+                }}>
                 {left === 0 ? (
                   <span style={{
                     font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
@@ -3245,6 +3515,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     )}
                   </>
                 )}
+                </div>
               </div>
             )}
 
@@ -3257,7 +3528,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
-                        ? <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                        ? placementPending
+                          ? <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
+                          : <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(assessmentCard)
                         ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : <>That looks like {GRADE_COPY[suggested]}.</>}
@@ -3269,7 +3542,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = schemeInteracted && g === suggested;
+                      const isSuggested = schemeInteracted && !placementPending && g === suggested;
                       return (
                         <button
                           key={g}

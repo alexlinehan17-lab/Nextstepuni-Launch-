@@ -49,6 +49,8 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
 from strip_pages import strip_cut, strip_lines  # noqa: E402
+from econ_legacy_census import LEGACY_LAST_YEAR as ECON_LEGACY_LAST_YEAR  # noqa: E402
+from econ_legacy_census import census_legacy as census_econ_legacy  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -80,7 +82,16 @@ SUBJECTS = {
     # to the merged default, and reconcile --all iterates SUBJECTS and so
     # walked straight past 466 shipping cards. Registering it puts Engineering
     # under the same ratchet as every other subject.
-    'engineering': {'mode': 'merged'},
+    #
+    # Question 1 is set as thirteen short parts, (a) to (m), in every sitting
+    # 2010-2026, and the continuity check's default run stops at (l): each of
+    # the 34 papers reported a letter-gap on a question with no gap in it
+    # ("letters found: ['a', ... 'l', 'm']"). The run is stated here rather
+    # than widened for everyone, because widening the default would move
+    # other subjects' flag counts. (m) is the last letter of Question 1's
+    # Section A; the 2010-2020 Higher papers go on to a Section B, (n) to (r),
+    # which the paper reader keys where paper.LETTER_RUNS lets it (2020 HL).
+    'engineering': {'mode': 'merged', 'letters': 'abcdefghijklmnopqr'},
     # One booklet per sitting numbered Q1..Q18 straight through its three
     # sections — Section A short questions, Section B the case study,
     # Section C the long questions — so the generic merged walker reads it.
@@ -127,17 +138,19 @@ SUBJECTS = {
     # does not say which booklet is which -- 2011 swaps 000 and 014 -- so the
     # booklet is identified by the markers it prints, not by its file name.
     #
-    # The window is 2019 and later, and it is a decision, not the file
-    # listing: the corpus on disk holds 2010-2026 and every sitting of it
-    # reads, but Paper Trail labels the second booklet "Section B" in
-    # 2012-2018 and "Exam Paper" in 2010-2011 where the SEC's cover says
-    # "Sections B and C" -- so a Section C card from those years resolves to
-    # no paper at all, and roughly 270 cards would ship with no link to the
-    # document they came from. 2019 is where the SEC settled the pair of
-    # components the index names correctly, 014 "Section A" and 039 "Section
-    # B&C". It is three years wider than the bank's 2021-2025 default and it
-    # includes 2026, whose scheme is published and on disk.
-    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
+    # The window is the whole corpus, 2010-2026: 33 sittings, 66 booklets.
+    # It stood at 2019 until November 2026 because Paper Trail labels the
+    # second booklet "Section B" in 2012-2018 and "Exam Paper" in 2010-2011
+    # where the SEC's cover says "Sections B and C", so a Section C card of
+    # those years resolved to no paper at all. That is a fault in CARDING,
+    # not in counting, and a window that hides 543 printed asks is the
+    # "100%" this census exists to prevent. The census now counts every
+    # sitting, the ledger shows the uncarded ones as OPEN, and dcg_all.py
+    # cards a sitting only once its paper link is settled (paperIndex.mjs).
+    # The SEC's component codes are 014 + 000 in 2010 (000 holds B and C),
+    # 000 + 014 in 2011 (swapped: 000 holds Section A), 014 + 015 in
+    # 2012-2018 and 014 + 039 from 2019 -- read off each booklet's own cover.
+    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2010},
     'politics-and-society': {'mode': 'politics'},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
@@ -159,7 +172,16 @@ SUBJECTS = {
     # and 039 carries Section B (two core long questions) and Section C (five
     # options, one answered). The sections are named on the page, and each
     # section restarts its numbering at 1, so the census reads the sections.
-    'technology': {'mode': 'sections'},
+    # The window is the whole archive, 2010-2026 (the archive holds no 2020
+    # Ordinary paper). It was narrowed to the reviewed sittings while 2020
+    # Higher and 2021-2026 were carded (2026-10-28, #314), which hid about
+    # 1,650 printed asks of 2010-2019 from the ledger and the ratchet; every
+    # one of those sittings was then read against its rendered pages (hand
+    # counts of 2010 OL, 2011 HL, 2019 HL and 2019 OL agree leaf for leaf) and
+    # admitted on 4 November 2026, so an uncarded sitting now reads as OPEN.
+    # The -014- booklet is Section A; -015- (2010-2018) and -039- (2019-) are
+    # the same Sections B and C booklet under the SEC's two file ids.
+    'technology': {'mode': 'sections', 'from': 2010},
     # Religious Education restarts nothing and numbers almost nothing: three
     # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
     # "Question 1..3" at all. Sections B-J address their asks by part alone,
@@ -178,8 +200,20 @@ SUBJECTS = {
     # and C (Ordinary), so a bare question number addresses nothing: the
     # section token carries the topic and the Ordinary part with it, and a key
     # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
+    #
+    # One sitting sets only ONE of the two papers. The 2020 examination was
+    # the November 2020 sitting (the June examinations were replaced by
+    # calculated grades), and the SEC set no Early Modern paper for it:
+    # paperTrailData.ts lists `history-early-modern` for 2019 and 2021 and no
+    # 2020 edition at either level or in either language; the archive's
+    # exampapers/2020/ holds LC004 (Later Modern) at both levels and no LC096;
+    # and the 2020 Higher and Ordinary schemes (16 and 12 pages) print a Later
+    # Modern half only, where 2019's prints both. `absent` names that sitting
+    # and that field and nothing else, so a missing Early Modern paper in any
+    # other year still stops the census.
     'history': {'mode': 'sections', 'walker': 'history',
-                'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
+                'components': {'lm': 'Later Modern', 'em': 'Early Modern'},
+                'absent': {(2020, 'hl'): ('em',), (2020, 'ol'): ('em',)}},
     # French sits TWO booklets at one sitting — the written paper and a
     # separate Listening Comprehension Test with its own SEC file id — and
     # numbers both from 1 inside every section, so the section carries the
@@ -505,13 +539,9 @@ def sittings(subject):
 
     A subject may state a window anyway, with `'from'` in SUBJECTS, and then
     the window is a DECISION rather than a side effect of what happened to be
-    fetched. DCG needs one: its corpus holds 2010-2026, and the papers before
-    2019 cannot be linked to the document they were printed in, because Paper
-    Trail labels the second booklet of those years "Section B" (2012-2018) or
-    "Exam Paper" (2010-2011) where the SEC's own cover says "Sections B and
-    C". Every Section C card of those years would ship with no paper link at
-    all. Stating the bound here keeps the census, the ledger and the deck
-    measuring the same thing; deleting the older papers would hide it.
+    fetched. A window must never be the way a sitting's asks stop counting:
+    DCG's stood at 2019 for a paper-LINK fault and hid nine years of printed
+    questions behind a "100%", until it was widened to the whole corpus.
     """
     root = PP.papers_dir(subject)
     first = SUBJECTS.get(subject, {}).get('from')
@@ -558,6 +588,11 @@ def _letter_run(subject):
         run = cfg(subject, 'letters')
     except Exception:                                          # noqa: BLE001
         run = None
+    # A subject may state its run in SUBJECTS too (Engineering's (a)-(m)).
+    # continuity_flags also calls this with a LIST of letters (its result is
+    # overwritten on the next line there), so only a subject name is looked up.
+    if not run and isinstance(subject, str):
+        run = SUBJECTS.get(subject, {}).get('letters')
     return list(run) if run else [chr(ord('a') + i) for i in range(12)]
 
 
@@ -599,13 +634,320 @@ SHORT_ASKS = {
                                                    'genetics:"'),
     ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
                                                      'used in ecology:"'),
+    # Engineering, 2021-2025, each opened on its page. Two layouts, both the
+    # paper's: a lead-in over a list of one-word items set as romans, and a
+    # row of photographs captioned (i) to (iv) with no words at all. Every
+    # Ordinary Q7(c) prints four instrument photographs, then OR, then a
+    # second (c) whose own romans stop at (iii), so its (iv) is a caption.
+    ('engineering', 2021, 'ol', 'Q2(d)(iii)'): ('Brass.', 'p3: the alloy "Brass." in "(i) Solder, (ii) Bronze, '
+                                                          '(iii) Brass." under "Name the metals used to produce any two '
+                                                          'of the alloys listed below:"'),
+    ('engineering', 2021, 'ol', 'Q5(c)(i)'): ('Basin', 'p6: the caption "(i) Basin" under the first of three household '
+                                                       'items, under "Select any two of the household items shown '
+                                                       'below and name a plastic material which is suitable to produce '
+                                                       'each:"'),
+    **{('engineering', 2021, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part '
+                                                        'photographs, under "Identify any three of the lathe parts '
+                                                        'shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2021, 'ol', f'Q7(c)({r})'): ('', f'p8: the caption "({r})" under the {n} of four instrument '
+                                                        'photographs, under "Name any three of the instruments shown '
+                                                        'and give one application of each instrument named:"; the OR '
+                                                        'branch\'s (c) sets only (i) and (ii)')
+       for r, n in (('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2022, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to the machining of metals:"'),
+    ('engineering', 2023, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to machining:"'),
+    ('engineering', 2023, 'ol', 'Q7(c)(iv)'): ('', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                   'photographs (a try square), under "Name any three of the '
+                                                   'instruments shown and give one application of each instrument '
+                                                   'named."; the OR branch\'s (c) sets only (i) to (iii)'),
+    ('engineering', 2024, 'ol', 'Q1(m)(i)'): ('Swarf,', 'p2: the term "(i) Swarf," under "Explain any one of the '
+                                                        'following:"'),
+    ('engineering', 2024, 'ol', 'Q5(b)(ii)'): ('Nylon,', 'p6: the material "Nylon," in the list under "Select any two '
+                                                         'of the plastic materials listed below and identify one '
+                                                         'suitable product which can be manufactured from each of the '
+                                                         'plastic materials selected."'),
+    ('engineering', 2024, 'ol', 'Q7(c)(iv)'): ('', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                   'photographs (a protractor), under "Name any three of the '
+                                                   'instruments shown and give one application of each instrument '
+                                                   'named."; the OR branch\'s (c) sets only (i) to (iii)'),
+    ('engineering', 2025, 'ol', 'Q5(d)(iv)'): ('Gears.', 'p6: the item "(iv) Gears." under "Select any two of the '
+                                                         'items shown below and name a suitable plastic material for '
+                                                         'each of the parts identified."'),
+    ('engineering', 2025, 'ol', 'Q6(b)(iv)'): ('Swarf.', 'p7: the term "(iv) Swarf." under "Explain any three of the '
+                                                         'following in relation to machining:"'),
+    ('engineering', 2025, 'ol', 'Q7(c)(iv)'): ('PCB', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                      'photographs (a protractor), under "Name any three of the '
+                                                      'instruments shown and give one application of each '
+                                                      'instrument named."; the OR branch\'s (c) sets only (i) to '
+                                                      '(iii), and the word read is the callout "PCB" printed on that '
+                                                      'branch\'s circuit-board photograph'),
+    # 2010-2019, the census audit of 2026-11-04: every one opened on its page.
+    # 2010 HL Q1(g) and Q1(o) print one-word items; the Ordinary entries are
+    # photograph and drawing captions with no words, recovered for 2010, 2013 and
+    # 2016-2019 by paper.BARE_ROMAN_RUNS.
+    **{('engineering', 2010, 'hl', f'Q1(g)({r})'): (w, f'p3: the abbreviation "({r}) {w.rstrip(".")}" under "Select any '
+                                                   'two of the abbreviations shown and explain their meaning:"')
+       for r, w in (('i', 'LED'), ('ii', 'IC'), ('iii', 'http'), ('iv', 'DVD.'))},
+    **{('engineering', 2010, 'hl', f'Q1(o)({r})'): (w, f'p4: the movement "({r}) {w}" under "Explain, with the aid of '
+                                                   'suitable diagrams, any three of the following types of movement used '
+                                                   'in an accelerometer:"')
+       for r, w in (('iii', 'Shock;'), ('iv', 'Tilt;'))},
+    **{('engineering', 2010, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-part drawings, '
+                                                       'under "Identify any three of the lathe parts shown:"')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2010, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four tool drawings, '
+                                                       'under "Name and give one application for any three of the tools shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'ol', f'Q4(b)({r})'): ('', f'p4: the caption "({r})" under the {n} of three flame drawings, '
+                                                       'under "Name and describe the three types of oxy-acetylene flame shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-operation drawings, '
+                                                       'under "Name any three of the lathe operations shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2013, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument drawings, '
+                                                       'under "Name any three of the instruments shown and give one application for each instrument named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    # 2014 OL, each opened on its page (2026-11-04).
+    **{('engineering', 2014, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application of each instrument named."; the OR branch\'s (c) '
+                                                       'captions only (i) to (iii)')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    # 2013 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2013, 'hl', f'Q1(b)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'hl', f'Q1(l)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) IC (ii) LCD (iii) GRP '
+                                                       '(iv) CAM." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'IC'), ('ii', 'LCD'), ('iii', 'GRP'), ('iv', 'CAM.'))},
+    ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
+    # 2022 HL deferred sitting, opened on its page (2026-11-05): census_engineering_deferred
+    # reads it at the June key (2022, 'hl'), and June 2022 HL has no such flag.
+    ('engineering', 2022, 'hl', 'Q2(d)(i)'): ('Wi-Fi;', 'deferred paper p4: the term "(i) Wi-Fi;" in "(i) Wi-Fi; (ii) '
+                                                       'Industrial internet of things (IIoT); (iii) Sensor technology." '
+                                                       'under "Describe the function of any two of the following, with '
+                                                       'regard to smart manufacturing."'),
+    # 2010 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2010, 'ol', k): (t, w) for k, t, w in (
+        ('Q2(b)(iii)', 'Brass,', 'p3: the alloy "(iii) Brass," in "(i) Soft solder, (ii) Stainless steel, (iii) Brass, '
+                                 '(iv) Bronze." under "Select any three from the alloys listed below and state the '
+                                 'metals used to produce each:"'),
+        ('Q5(c)(iii)', 'PVC,', 'p4: the term "(iii) PVC," in "(i) Thermosetting plastic, (ii) Elastic memory, (iii) '
+                               'PVC, (iv) Former." under "Describe any three of the following terms associated with '
+                               'plastic technology:"'),
+        ('Q6(b)(ii)', 'Feed,', 'p5: the term "(ii) Feed," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) Clearance '
+                               'angle." under "Explain any three of the following in relation to machining:"'),
+        ('Q6(b)(iii)', 'Swarf,', 'p5: the term "(iii) Swarf," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) '
+                                 'Clearance angle." under "Explain any three of the following in relation to '
+                                 'machining:"'))},
+    # 2010 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2010, 'hl', f'Q1(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2010, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism pictures, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown:"'),
+    # 2011 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2011, 'hl', f'Q1(h)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) LCD (ii) PCB (iii) HSS '
+                                                       '(iv) DPDT switch." under "Select any two of the abbreviations shown '
+                                                       'and explain their meaning:"')
+       for r, t in (('i', 'LCD'), ('ii', 'PCB'), ('iii', 'HSS'))},
+    **{('engineering', 2011, 'hl', f'Q1(k)({r})'): ('', f'p3: the caption "({r})" under the {n} of two pneumatic component '
+                                                       'photographs, under "Identify any one of the pneumatic components '
+                                                       'illustrated."')
+       for r, n in (('i', 'first'), ('ii', 'second'))},
+    # 2012 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'hl', f'Q1(c)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2012, 'hl', f'Q1(j)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) ISP (ii) LDR (iii) RAM '
+                                                       '(iv) CAD." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'ISP'), ('ii', 'LDR'), ('iii', 'RAM'), ('iv', 'CAD.'))},
+    ('engineering', 2012, 'hl', 'Q6(c)(iv)'): ('GRP;', 'p9: the term "(iv) GRP;" in the list "(i) Elastomer; (ii) Catalyst; '
+                                                      '(iii) Blow moulding; (iv) GRP; (v) Laminate." under "Explain in '
+                                                      'detail any three of the following:"'),
+    ('engineering', 2012, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
+    # 2011 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2011, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of four furnace drawings, '
+                                                       'under "Name and state the functions of any three of the following '
+                                                       'furnaces."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2011, 'ol', 'Q2(c)(iii)'): ('Lead,', 'p3: the metal "(iii) Lead," in "(i) Aluminium, (ii) Cast iron, '
+                                                        '(iii) Lead, (iv) High-speed steel." under "Name suitable components '
+                                                        'manufactured from any three of the following metals:"'),
+    **{('engineering', 2011, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe work-holding '
+                                                       'photographs, under "Name any three of the lathe work-holding '
+                                                       'methods shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2011, 'ol', f'Q7(c)({r})'): (t, f'p6: the component "({r}) {t}" in the OR branch\'s "(i) LED, (ii) '
+                                                       'Fixed resistor, (iii) Motor, (iv) Transistor." under "Draw the '
+                                                       'circuit symbols for any three of the following electronic '
+                                                       'components:"')
+       for r, t in (('i', 'LED,'), ('iii', 'Motor,'))},
+    # 2012 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'ol', f'Q2(c)({r})'): (t, f'p3: the metal "({r}) {t}" in "(i) Stainless steel, (ii) Zinc, '
+                                                       '(iii) Tungsten, (iv) Lead." under "Select any three of the metals '
+                                                       'below and state if they are ferrous or non-ferrous:"')
+       for r, t in (('ii', 'Zinc,'), ('iv', 'Lead.'))},
+    ('engineering', 2012, 'ol', 'Q5(c)(iv)'): ('PVC.', 'p4: the term "(iv) PVC." in "(i) Thermosetting plastic, (ii) '
+                                                      'Elastic memory, (iii) Thermoplastic, (iv) PVC." under "Explain any '
+                                                      'three of the following terms used in plastic technology:"'),
+    ('engineering', 2012, 'ol', 'Q6(b)(iii)'): ('Feed,', 'p5: the term "(iii) Feed," in "(i) Cutting speed, (ii) Depth of '
+                                                        'cut, (iii) Feed, (iv) Clearance angle." under "Describe any three '
+                                                        'of the following in relation to machining:"'),
+    ('engineering', 2012, 'ol', 'Q7(c)(i)'): ('Bulb,', 'p6: the component "(i) Bulb," in the OR branch\'s "(i) Bulb, (ii) '
+                                                      'Battery, (iii) Switch, (iv) Variable resistor." under "Draw the '
+                                                      'circuit symbols for any three of the following electronic '
+                                                      'components:"'),
+    # 2013 OL, each opened on its page (2026-11-05).
+    ('engineering', 2013, 'ol', 'Q2(a)(ii)'): ('Brass,', 'p3: the alloy "(ii) Brass," in "(i) Stainless steel, (ii) '
+                                                        'Brass, (iii) High speed steel, (iv) Bronze." under "Select any '
+                                                        'three of the metal alloys listed below"'),
+    **{('engineering', 2013, 'ol', f'Q6(b)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-part '
+                                                       'photographs, under "Name any three of the lathe parts shown and '
+                                                       'give one use for each part named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2013, 'ol', 'Q5(c)(i)'): ('DVDs,', 'p4: the item "(i) DVDs," in "(i) DVDs, (ii) Mobile phones." under '
+                                                       '"Name a plastic used in the manufacture of each of the following:"'),
+    # 2015 OL, each opened on its page (2026-11-04).
+    **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
+                                                       'under "Name each of the furnaces shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2015, 'ol', 'Q2(d)(i)'): ('Brass,', 'p3: the alloy "(i) Brass," in "(i) Brass, (ii) Solder." under '
+                                                        '"Name the metals used to produce each of the alloys listed below:"'),
+    ('engineering', 2015, 'ol', 'Q4(a)(i)'): ('Flux,', 'p4: the term "(i) Flux," in "(i) Flux, (ii) Sweating, (iii) Cored '
+                                                       'solder, (iv) Tinning." under "Describe any three of the following '
+                                                       'soft soldering terms:"'),
+    **{('engineering', 2015, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-component '
+                                                       'photographs, under "Identify any three of the lathe components shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2015, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p5: the term "(iv) Feed." in "(i) Taper turning, (ii) Spindle '
+                                                        'speed, (iii) Cutting fluids, (iv) Feed." under "Explain any three of '
+                                                        'the following in relation to machining:"'),
+    **{('engineering', 2015, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application for each instrument named."; the OR branch\'s (c) '
+                                                       'captions only (i) to (iii)')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    **{('engineering', 2016, 'ol', f'Q6(a)({r})'): ('', f'p6: the caption "({r})" under the {n} of four lathe-operation drawings, '
+                                                       'under "Name any three of the lathe operations shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2016, 'ol', 'Q2(b)(i)'): ('Steel', 'p3: the metal "(i) Steel" in "(i) Steel (ii) Pig iron (iii) '
+                                                       'Cast iron." under "For each of the metals listed below, name a '
+                                                       'suitable furnace used in the production of the metal:"'),
+    ('engineering', 2016, 'ol', 'Q6(b)(iv)'): ('Swarf.', 'p6: the term "(iv) Swarf." in "(i) Four jaw chuck (ii) '
+                                                         'Clearance angle (iii) Pilot hole (iv) Swarf." under "Describe '
+                                                         'any three of the following in relation to machining:"'),
+    **{('engineering', 2016, 'ol', f'Q7(c)({r})'): ('', f'p7: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application for each instrument named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    ('engineering', 2017, 'ol', 'Q1(h)(i)'): ('', 'p2: the caption "(i)" under the first of two safety symbols, under '
+                                                  '"Identify each of the safety symbols shown."'),
+    ('engineering', 2017, 'ol', 'Q7(c)(iii)'): ('', 'p8: the caption "(iii)" under the third of four instrument photographs, '
+                                                    'under "Name any three of the instruments shown and give one '
+                                                    'application for each instrument named."'),
+    ('engineering', 2017, 'ol', 'Q7(c)(iv)'): ('B C', 'p8: the caption "(iv)" under the fourth instrument photograph; the '
+                                                      'words read are the labels "B" and "C" of the OR branch\'s circuit '
+                                                      'photograph'),
+    ('engineering', 2017, 'ol', 'Q4(b)(iii)'): ('Flux,', 'p5: the term "(iii) Flux," in "(i) Electric soldering iron, '
+                                                         '(ii) A sweated joint, (iii) Flux, (iv) Oxides." under "Describe '
+                                                         'any three of the following in relation to soft soldering:"'),
+    ('engineering', 2017, 'ol', 'Q5(c)(iii)'): ('PVC.', 'p6: the plastic "(iii) PVC." in "(i) Polyethylene, (ii) '
+                                                        'Polystyrene, (iii) PVC." under "Identify a suitable application '
+                                                        'for any two of the following plastics:"'),
+    **{('engineering', 2017, 'ol', f'Q6(b)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
+                                                       'under "Indentify any three of the lathe parts shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2018, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three furnace drawings, '
+                                                       'under "Name and state the functions of each of the following furnaces."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2018, 'ol', 'Q7(c)(iii)'): ('', 'p8: the caption "(iii)" under the third of four instrument photographs, '
+                                                    'under "Name any three of the instruments shown and give one '
+                                                    'application of each instrument named."'),
+    ('engineering', 2018, 'ol', 'Q7(c)(iv)'): ('A', 'p8: the caption "(iv)" under the fourth instrument photograph; the word '
+                                                    'read is the label "A" of the OR branch\'s circuit photograph'),
+    ('engineering', 2018, 'ol', 'Q6(c)(iv)'): ('CAM.', 'p7: the term "(iv) CAM." in "(i) Safety guard (ii) Stepper motor '
+                                                       '(iii) Part programme (iv) CAM." under the OR branch\'s "Describe any '
+                                                       'three of the following in relation to the operation of a CNC lathe:"'),
+    **{('engineering', 2019, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
+                                                       'under "Name any three of the lathe parts shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2019, 'ol', 'Q4(b)(iii)'): ('Flux,', 'p5: the caption "(iii) Flux," under the third of four welding-item '
+                                                     'photographs, under "Give one suitable use for any three of the following:"'),
+    **{('engineering', 2019, 'ol', f'Q7(c)({r})'): ('', f'p8: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one application of '
+                                                       'each instrument named."; the OR branch\'s (c) sets only (i) and (ii)')
+       for r, n in (('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2026, 'ol', 'Q1(k)(iii)'): ('5G.', 'p2: the term "(iii) 5G." in "(i) Smart technology, (ii) '
+                                                       'Cybersecurity, (iii) 5G." under "Explain any one of the '
+                                                       'following:"'),
+    ('engineering', 2026, 'ol', 'Q2(b)(ii)'): ('Brass,', 'p3: the alloy "Brass," in "(i) Cast iron, (ii) Brass, '
+                                                         '(iii) Solder." under "Name the metals used to produce any two '
+                                                         'of the alloys listed below:"'),
+    **{('engineering', 2026, 'ol', f'Q2(d)({r})'): ('', f'p3: the caption "({r})" under the {n} of three mechanism '
+                                                        'photographs, under "Name any two of the mechanisms shown, and '
+                                                        'give one application of each mechanism named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2026, 'ol', 'Q4(b)(i)'): ('Flux,', 'p5: the term "(i) Flux," under "Describe any two of the '
+                                                       'following soft soldering terms:"'),
+    ('engineering', 2026, 'ol', 'Q6(b)(ii)'): ('Swarf,', 'p7: the term "(ii) Swarf," under "Explain any three of the '
+                                                         'following in relation to machining:"'),
+    ('engineering', 2026, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to machining:"'),
+    ('economics', 2010, 'ol', 'Section A Q1(i)'): ('IMF', 'p2: the initials "IMF" under "What economic institutions '
+                                                          'do the following initials stand for?"'),
+    ('economics', 2014, 'ol', 'Section B Q6(a)(ii)'): ('Money;', 'p8: the term "Money;" under "(a) Explain the '
+                                                                 'following terms:"'),
 }
+
+
+# A paper whose question marks add up to a different total from its sitting's
+# other years because its FORMAT differs, each total checked on the paper's
+# own question heads. Engineering Ordinary 2010-2019 print Question 1 at
+# "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
+# seven questions at 50 (350). The checksum stands down only while the reader
+# sums exactly the printed total.
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2010, 2011, 2012, 2013, 2014, 2015, 2016,
+                                                           2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
     """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
     entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
     return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
+
+
+# Parts the paper prints COMPLETED for the candidate, as the worked example of
+# the ask beside them. The page numbers them like any part, so the reader keys
+# them, but nothing is asked: they are printed matter, not asks, and a leaf the
+# candidate cannot answer is not in the denominator. Each was rendered and read
+# on its page, and on its scheme page, which prices the ask and not the example.
+# Keyed (subject, year, level, census label) -> (the exact text the census
+# extracts, the evidence). The leaf stands down only while the reader extracts
+# exactly that text; a change in what it reads puts the leaf back and flags it.
+PRINTED_EXAMPLES = {
+    ('economics', 2024, 'hl', 'Q10(a)(i)'): (
+        '= Gross National Product (GNP) at Current Market Prices Ans: €325 bn Relationships / Workings:',
+        'paper p12: (a) reads "use the information above to calculate part (ii). Part (i) has been '
+        'completed for you." and the ladder prints (i) worked to "Ans: €325 bn"; scheme p14 prices (a) '
+        'at 6 for the (ii) calculation (GNI €326.5 bn) and nothing for (i).'),
+}
+
+
+def printed_example(subject, year, level, key, texts):
+    """Is this leaf a part the paper completes for the candidate (PRINTED_EXAMPLES)?"""
+    entry = PRINTED_EXAMPLES.get((subject, year, level, key_label(key, subject)))
+    return bool(entry) and texts.get(key, '') == entry[0]
 
 
 def continuity_flags(parts, texts, subject=None, continuous=False):
@@ -822,7 +1164,32 @@ def key_label(k, subject=None):
     return head + tail
 
 
-def marks_by_question(P_files, subject):
+# Subjects whose papers may print a question's tariff BEFORE its head in the
+# text layer ("(50 marks) Question 4."); see marks_by_question.
+TARIFF_FIRST_HEADS = {'engineering'}
+# A head set at the END of the block that carries the previous question's last
+# ask, its tariff after it: 2016 OL Engineering page 3 reads "(d) Name two
+# ferrous metals and two non-ferrous metals. Question 3. (45 marks)" as one
+# block, so the head was never at a block start, Question 3's 45 was offered to
+# Question 2 (already priced) and dropped, and the paper summed to 290 over six
+# questions where it prints 335 over seven. The part reader splits the head
+# off already (INLINE_QHEAD). Keyed by sitting, read for that sitting alone.
+TRAILING_HEAD_MARKS = {('engineering', 2016, 'ol')}
+TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)\s*$', re.I)
+# A head set INSIDE a block, between one question's last ask and the next
+# question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
+# to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
+# 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
+# page 4 the same for Question 5; 2010, 2011, 2012, 2013 and 2014 OL do it for Questions 3 and 5 as
+# well. Neither head was ever at a block start, both 45s were dropped, and each
+# paper summed to 245 over five questions where it prints 335 over seven.
+# Every head in such a block is read, with the tariff printed straight after
+# it. Keyed by sitting, read for those sittings alone.
+INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2010, 2011, 2012, 2013, 2014, 2015)}
+INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
+
+
+def marks_by_question(P_files, subject, sitting=None):
     """{(section?, q): marks} read independently of the part reader.
 
     An independent pass on purpose: if this map and the part reader disagree
@@ -839,12 +1206,42 @@ def marks_by_question(P_files, subject):
                 section = s.group(1)
             h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))',
                          block.strip())
+            # The tariff can come FIRST in the block that carries the head:
+            # 2024 HL Engineering sets "(50 marks)" at the right of the
+            # "Question 4." and "Question 5." lines, and the text layer reads
+            # those two lines as "(50 marks) Question 4." -- so the head was
+            # missed, the 50 was offered to Question 3, and the paper summed
+            # to 350 over seven questions where it prints 450 over nine.
+            # Engineering only (TARIFF_FIRST_HEADS): read for every subject it
+            # moved 2024 Ordinary Home Economics from 80 over four questions
+            # to 110 over six, a reading no one has checked.
+            if not h and subject in TARIFF_FIRST_HEADS:
+                lead = re.match(r'^\(\s*\d{1,3}\s*marks?\)\s*(?=Question\s+\d)',
+                                block.strip(), re.I)
+                if lead:
+                    h = re.match(r'^Question\s+(\d{1,2})\b()',
+                                 block.strip()[lead.end():])
             if not h:
                 un = PP.RUBRIC_HEAD.sub('', block.strip())
                 if un != block.strip():
                     h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+)',
                                  un)
                     block = un
+            if sitting in INLINE_HEAD_MARKS:
+                heads = list(INLINE_HEAD.finditer(block))
+                if heads:
+                    for m in heads:
+                        q = int(m.group(1))
+                        if (section, q) not in out:
+                            out[(section, q)] = int(m.group(2))
+                    continue
+            if not h and sitting in TRAILING_HEAD_MARKS:
+                tail = TRAILING_HEAD.search(block.strip())
+                if tail:
+                    q = int(tail.group(1))
+                    if (section, q) not in out:
+                        out[(section, q)] = int(tail.group(2))
+                    continue
             if h:
                 q = int(h.group(1) or h.group(2))
             m = MARKS.search(block)
@@ -1061,8 +1458,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -1240,6 +1637,33 @@ def _paragraph_heads(raw):
     return chunks
 
 
+# Technology, Sections B and C: a block that continues the roman part above it
+# (see the walker). Prose, not lettering.
+TECH_CONTINUES = re.compile(
+    r'^(?:\u2022|\d{1,2}\.\s)'
+    r'|^(?:\S+\s+){4,}\S*[.?:]\s*$'
+    # The tail of a wrapped sentence: "2(b) above." after "...the Adibot
+    # robot, shown in", or "above." on its own.
+    r'|^(?:\d\([a-d]\)\s+)?[a-z][^.?!]{0,40}[.?!]\s*$')
+TECH_ASKS = re.compile(
+    r'^(?:\u2022|(?:briefly\s+)?(?:calculate|compare|complete|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give|identify'
+    r'|indicate|label|list|name|outline|redraw|sketch|state|suggest|show'
+    r'|select|using|use|what|why|write)\b)', re.I)
+TECH_PAGE_FURNITURE = re.compile(
+    r'Leaving Certificate|Please turn over|Do not write on this page', re.I)
+
+
+# Technology questions whose romans are CAPTIONS under a row of pictures, not
+# asks -- a layout fact about one printed page, so a table keyed like
+# MISPRINTS rather than a heuristic. 2012 Higher Q14 sets four safety signs
+# captioned "(i) Yellow - caution" ... "(iv) Green - positive action" and then
+# asks, unnumbered, "State the meaning of the signs shown at (i) and (ii)
+# above" and "Outline the importance of colour in safety sign design." The
+# question is one numbered ask; read as parts its captions were four.
+TECH_CAPTION_ROMANS = {(2012, 'hl', 'A', 14)}
+
+
 def census_sections(subject, year, level):
     """The section-restart walker: Business and Home Economics.
 
@@ -1302,7 +1726,12 @@ def census_sections(subject, year, level):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else [block])
-            for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
+            # Technology's older Section A booklets set the next head straight
+            # after the last ruled answer line in one block: 2012 Higher reads
+            # "(ii) An electric motor ____ 8. A design for a wooden toy is
+            # shown.", and Question 8 was lost into Question 7(ii).
+            qsplit = PP.INLINE_QHEAD_AFTER_LINE if subject == 'technology' else PP.INLINE_QHEAD
+            for text in (part for chunk in chunks for part in qsplit.split(chunk)):
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not
                     # independent printed asks. Keep actual roman prose.
@@ -1464,10 +1893,17 @@ def census_sections(subject, year, level):
             # B 130 marks Answer Question 1...'), and following that listing
             # walked the tracker to C before the paper had begun, filing all
             # of Section A under C.
+            # Technology's older Ordinary papers (2010, 2011) set every
+            # Section A question as a single ask with no part markers, so the
+            # section holds STEMS and no parts at all -- and its Section B
+            # heading never opened, filing Questions 2 and 3 under Section A
+            # and losing Section B whole. A section holding a stem has begun.
             if sh.group(1) != section and (section is None
                                            or sh.group(1) > section) \
                     and (section is None
-                         or any(k[0] == section for k in parts)):
+                         or any(k[0] == section for k in parts)
+                         or (subject == 'technology'
+                             and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
@@ -1489,7 +1925,16 @@ def census_sections(subject, year, level):
                 q, letter, roman = int(op.group(1)), None, None
                 continue
             nl = re.match(r'(\d{1,2})\(([a-d])\)\s*', text)
-            if nl and section in ('B', 'C'):
+            # A head opens a part; a reference to one mid-sentence does not.
+            # 2023 Ordinary 1(c) says "...the novelty light in 1(b) above." and
+            # wraps so that "1(b) above." starts a block, which re-opened 1(b)
+            # and welded 1(c)'s two asks onto 1(b)'s cards.
+            # Nor one followed by a roman and a lower-case word: 2021 Ordinary
+            # 3(b)(ii) wraps "...the processes at" / "3(b) (i) has the lesser
+            # environmental impact." and read as a head it cut the ask at "at".
+            after = re.sub(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s*', '', text[nl.end():].strip()) if nl else ''
+            if nl and section in ('B', 'C') \
+                    and (not after or not after[:1].islower()):
                 q, letter, roman = int(nl.group(1)), nl.group(2), None
                 key = (section, q, letter, None)
                 parts.setdefault(key, [])
@@ -1530,6 +1975,17 @@ def census_sections(subject, year, level):
                 # Q1 under Q2. A part heading is not a question head.
                 if subject == 'business' and m and re.match(r'\d{1,2}\.\s+PART\s+\d\b', un):
                     m = None
+        if not m and q is None and subject == 'technology' and section \
+                and re.fullmatch(r'1\.?', text.strip()) \
+                and index + 1 < len(blocks) and blocks[index + 1] is not FILE_BREAK \
+                and PP._leading(blocks[index + 1])[:2] != (None, None):
+            # The first head of a Technology booklet set alone, "1." over
+            # "(i) Solder is an alloy...", as the 2010 and 2011 papers print
+            # it. The bare-number rule below opens only the NEXT number due,
+            # so with no question open yet Question 1 was lost whole and its
+            # parts keyed to no question at all.
+            q, letter, roman = 1, None, None
+            continue
         if not m and isinstance(q, int):
             # Business Section 1 sets some heads as a bare '6.' in a block of
             # its own, the ask following. Only the next number due, never one
@@ -1589,6 +2045,21 @@ def census_sections(subject, year, level):
         if u:
             text = f'({u.group(1).lower()}) ' + text[u.end():]
         fl, fr, rest = PP._leading(text)
+        if subject == 'technology' and fr and not fl \
+                and (year, level, section, q) in TECH_CAPTION_ROMANS:
+            # Romans the paper prints as picture CAPTIONS, read as parts.
+            stems.setdefault((section, q, letter), []).append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and fl and not fr \
+                and not rest.strip() and q is not None \
+                and not (letter and len(fl) == 1 and ord(fl) == ord(letter) + 1):
+            # Sections B and C head their parts "4(d)", so a bare "(a)"
+            # standing alone there that is not the NEXT letter due is a
+            # caption: 2011 Higher Option 4(d) labels its three capacity
+            # graphs "(a)", "(b)" and "(c)", and reading them as parts filed
+            # 4(d)(i) and (ii) under 4(c). The next letter due stays a head --
+            # 2010 Ordinary sets Option 1's third part as "1" and "(c)" apart.
+            continue
         if fl or fr:
             if fl:
                 letter, roman = fl, fr
@@ -1600,6 +2071,68 @@ def census_sections(subject, year, level):
                 parts[key].append(rest)
             continue
         if PP.FURNITURE.match(text):
+            continue
+        if subject == 'technology' and section == 'A' and roman \
+                and (section, q, None, roman) in parts \
+                and (text[:1].islower() or text.startswith('\u2022')
+                     or TECH_CONTINUES.match(text) or TECH_ASKS.match(text)
+                     or text.startswith('Note:')) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # ...and a sentence of its own under the roman: 2024 Ordinary
+            # 9(ii) is "The hairdryer has a power rating of 2 kW." and then
+            # "Calculate how much it will cost..." in the next block, 2022
+            # Ordinary 11(ii) the same with "Note: V = I x R" under it. Read
+            # as the question's stem, (ii) lost its ask and (i) gained it.
+            # Section A wraps a roman's ask into a block of its own too: 2024
+            # Higher 11(i) is "...a mass of 1800 kg with" / "an effort force of
+            # 200 N. Assume g = 9.81 m/s2", and the second block was its stem.
+            parts[(section, q, None, roman)].append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and not roman and (section, q, letter, None) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # The same, for the lettered part itself before any roman has
+            # opened: 3(d) wraps its one ask over two blocks ("...by air
+            # (planes)," / "land (trucks), and sea (ships)..."), 4(d) prints
+            # its context, a picture, and only then "Describe, with annotated
+            # sketches...", and 5(d) ends "in terms of:" above three bullets.
+            # Read as a stem, each ask shipped cut in half. Where romans do
+            # follow, the letter's text is their stimulus either way.
+            parts[(section, q, letter, None)].append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and roman and (section, q, letter, roman) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # A stimulus is printed ABOVE the parts it introduces. Prose
+            # that arrives after a roman has opened, under the same letter,
+            # is that roman's own text continuing in a block of its own:
+            # 2026 Higher 2(b)(iii) sets its data in one paragraph and
+            # "Calculate the time to fully discharge the battery." in the
+            # next, and 4(b)(i)'s three bullets follow its colon. Read as
+            # a stem, the ask lost its question and its siblings gained
+            # it. Only prose qualifies -- a bulleted or numbered list, or
+            # five words closed by a full stop, question mark or colon.
+            # A figure's caption ("Print head module"), its labels ("A D B
+            # Motor") and a table's cells carry no sentence and stay out,
+            # as does the page's own furniture.
+            # A roman whose own sentence is still open is being finished, not
+            # given data: 2019 Ordinary 3(b)(ii) wraps "...outlined at" /
+            # "3(b) above in relation to USB Type-C.", and that tail was also
+            # filed as the stem of (i) and (iii).
+            open_sentence = bool(parts[(section, q, letter, roman)]) and not re.search(
+                r'[.?!:]\s*$', parts[(section, q, letter, roman)][-1]) \
+                and bool(text[:1].islower() or re.match(r'\d{1,2}\s?\([a-d]\)', text))
+            parts[(section, q, letter, roman)].append(text)
+            if not TECH_ASKS.match(text) and not open_sentence:
+                # Data printed under (i) -- "Option A - Use skilled labour
+                # to assemble: Cost: EUR 8.50 per unit" -- is what (ii)
+                # and (iii) calculate from as well, so it is the letter's
+                # stem too; the author drops a stem its own ask repeats. A
+                # follow-on ask ("Name an electronic component...") and a
+                # bulleted enumeration belong to their roman alone.
+                stems.setdefault((section, q, letter), []).append(text)
             continue
         stems.setdefault((section, q, letter), []).append(text)
 
@@ -1617,6 +2150,24 @@ def census_sections(subject, year, level):
     # whole questions — the order matters, because a phantom part suppresses
     # adoption for its whole question.
     parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
+    if subject == 'technology':
+        # A roman that OPENS on a ruled answer line -- "(ii) ________" -- is a
+        # numbered answer SLOT under "Outline three benefits ..." (2010 Higher
+        # Q3 and Q14, 2011 Higher Q1 and Q2), not an ask. The newer papers
+        # draw those rules as graphics and the slot is empty; the older ones
+        # set them as underscores, which kept the slot alive as a part and
+        # its question's single ask out of the census. What follows the rule
+        # under the slot is the question's own text -- 2011 Higher Q2 heads
+        # its second pair of slots "Soldering components onto a printed
+        # circuit board (PCB):" -- so it goes back to the question's stem.
+        rule = re.compile(r'[_.\s\u2026]*')
+        for k in [k for k in parts if k[-1] is not None]:
+            chunks = [x for x in parts[k] if x.strip()]
+            if chunks and rule.fullmatch(re.sub(r'^\(\s*[ivx]+\s*\)', '', chunks[0])):
+                rest = [x for x in chunks[1:] if not rule.fullmatch(x)]
+                if rest:
+                    stems.setdefault(k[:3], []).extend(rest)
+                del parts[k]
     scaffold_text = re.compile(
         r'^(?:(?:Question|Part|Start each question on a new page|SECTION'
         r'\s+\d|Section\s+\w|and Answerbook)\s*)+$')
@@ -1862,7 +2413,7 @@ def ja_flags(P, S):
     return flags
 
 
-def census_de(subject, year, level):
+def census_de(subject, year, level, sitting=None):
     """German: the written booklet and the listening booklet, read together.
 
     THE DENOMINATOR IS THE PAPER. The reading asks are the printed blocks the
@@ -1887,8 +2438,8 @@ def census_de(subject, year, level):
     from de_paper import DePaper                               # noqa: E402
     from de_scheme import DeScheme                             # noqa: E402
 
-    P = DePaper(year, level, subject)
-    S = DeScheme(year, level, subject)
+    P = DePaper(year, level, subject, sitting)
+    S = DeScheme(year, level, subject, sitting)
     texts = {}
     claimed = set()
     for ask in S.reading():
@@ -1899,6 +2450,30 @@ def census_de(subject, year, level):
             continue
         texts[ask.key] = hit[0]
         claimed.add(ask.key)
+    # Printed reading asks the scheme reader has not stated: the census is the
+    # PAPER, and an old scheme the reader cannot yet walk (2010-2019) must not
+    # shrink it. A printed block counts where it reads as an ask (a question
+    # mark, the place in the text it is answered from, or an instruction
+    # verb), never a matching or gap-fill item, a multiple-choice option or a
+    # labelled answer line, which carry none (hand-counted, 2026-11-12:
+    # languages/handcount-german/written.json).
+    # (Not the passage itself, where a numbered line opens a diary day, a time
+    # or a figure — "7. Tag Wir reisen …", "5.30: Berge. … dabei?": an ask is
+    # short, the passage runs on.)
+    grids = {(b.unit, b.q) for b in P.blocks if b.letter is None and GRID_ASK_DE.search(b.text)}
+    for block in P.blocks:
+        if not block.unit.startswith('T') or block.key in texts:
+            continue
+        if block.letter is not None and (block.unit, block.q) in grids:
+            continue
+        sides = [b.text for b in P.blocks if b.key == block.key]
+        if any(ASK_CUE_DE.search(t) and len(re.sub(r'_+', '', t)) < 300
+               and not re.match(r'^(?:Tag\b|\d|\d*:)', t) for t in sides):
+            texts.setdefault(block.key, block.text)
+    # A question printed with lettered parts is answered in its parts.
+    for key in [k for k in texts if k[0].startswith('T') and k[2] is None and k[3] is None]:
+        if any(o[:2] == key[:2] and o[2] is not None for o in texts):
+            del texts[key]
     for q, text, _page in P.grammar_alternatives():
         texts[('AG', q, None, None)] = text
     for unit in ('AT', 'SP'):
@@ -1908,6 +2483,21 @@ def census_de(subject, year, level):
         texts[(f'L{part}', item, None, roman)] = text
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
+
+
+# What a printed German reading ask carries and a matching item, a gap-fill
+# sentence, a multiple-choice option or a labelled answer line does not.
+ASK_CUE_DE = re.compile(
+    r'\?|\((?:Zeile[n]?|line|lines|na l[íi]nte|l[íi]ne|Par\.|Absatz|Abschnitt|Alt|Introduction|'
+    r'Einleitung|R[ée]amhr[áa]|Headline|Tipp)[^)]*\)|\b(?:Nennen|Geben|Beschreiben|Erkl[äa]ren|'
+    r'Begr[üu]nden|Finden|Schreiben|Erstellen|Listen)\s+Sie\b|\b(?:Give|Explain|Describe|Name|Mention|'
+    r'List|Write|State|Indicate|Choose|Fill in|Tabhair|Luaigh|M[íi]nigh|Scr[íi]obh|Roghnaigh|'
+    r'L[íi]on isteach|Cuir in i[úu]l)\b|(?i:true or false|f[íi]or n[óo] br[ée]agach|correct letter|'
+    r'an litir cheart)')
+# A question whose answer is a grid the candidate fills — true or false,
+# the correct letter in a box — prints its statements or options lettered
+# beneath it; those letters are the grid, not asks.
+GRID_ASK_DE = re.compile(r'(?i:true or false|f[íi]or n[óo] br[ée]agach|correct letter|an litir cheart)')
 
 
 # A printed block that reads like a question rather than a stray fragment: it
@@ -3314,6 +3904,22 @@ def census_lcvp(subject, year, level):
     stems = {k: PP.unligature(' '.join(' '.join(v).split()))
              for k, v in stems.items()}
     return set(parts), texts, files, marks, stems
+IRISH_DECK = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'irish')
+
+
+def irish_manifest_files():
+    """Every card manifest the Irish Higher/Ordinary decks ship, in import order.
+
+    authored.json carries the generated 2021-2025 corpus; each reviewed paper
+    component lives in its own *-authored.json that factory.ts imports beside
+    it. Reading the imports (not a hand list) keeps the ledger on exactly what
+    ships. Foundation is a separate deck with no coverage ledger.
+    """
+    text = open(os.path.join(IRISH_DECK, 'factory.ts'), encoding='utf-8').read()
+    names = re.findall(r"^import \w+ from '\./([\w-]+\.json)';", text, re.M)
+    if not names or names[0] != 'authored.json':
+        raise AssertionError('Irish factory.ts no longer imports authored.json first')
+    return names
 
 
 def census_subject(subject):
@@ -3397,6 +4003,27 @@ def census_subject(subject):
             })
         if payload.get('cardUnitCount') != sum(p['leafCount'] for p in papers):
             raise AssertionError('Irish authored census count is stale')
+        papers.extend(census_irish_deferred())
+        # Reviewed components ship from their own manifests. Each card there is
+        # one reviewed, independently practicable unit of that paper, so it
+        # joins the same paper's leaves (2025 HL Paper 2 spans both files).
+        short = {'higher': 'hl', 'ordinary': 'ol'}
+        by_key = {(p['year'], p['level'], p['paper']): p for p in papers}
+        for name in irish_manifest_files()[1:]:
+            for card in json.load(open(os.path.join(IRISH_DECK, name), encoding='utf-8'))['cards']:
+                # A deferred sitting's card is not a leaf of June's paper: its printed asks are read above
+                # (census_irish_deferred) and the card lists the ones it covers.
+                if re.match(r'^irish-\d{4}-(?:hl|ol)-deferred-', card['id']):
+                    continue
+                key = (card['year'], short[card['level']], f"Paper {card['paper']}")
+                if key not in by_key:
+                    by_key[key] = {'year': key[0], 'level': key[1], 'paper': key[2],
+                                   'leafCount': 0, 'leaves': [], 'marksSum': None,
+                                   'marksQuestions': 0, 'flags': []}
+                    papers.append(by_key[key])
+                by_key[key]['leaves'].append({'key': [card['id']], 'label': card['questionRef'],
+                                              'text': '', 'status': 'reviewed'})
+                by_key[key]['leafCount'] += 1
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     if cfg['mode'] == 'english':
         # Import lazily so the ordinary census remains independent of PyMuPDF
@@ -3451,7 +4078,16 @@ def census_subject(subject):
             # chooses between, rather than two booklets of one paper. Each is
             # censused whole and named in the citation.
             units = sorted((cfg['components'][c], c) for c in comps if c)
-            missing = sorted(set(cfg['components']) - {c for c in comps if c})
+            present = {c for c in comps if c}
+            # A paper the SEC never set for this sitting (see the subject's
+            # 'absent' entry and its evidence) is not missing. One that is
+            # declared absent and yet on disk is a wrong declaration.
+            absent = set(cfg.get('absent', {}).get((year, level), ()))
+            if absent & present:
+                raise AssertionError(
+                    f'{subject} {year} {level}: declared absent but on disk: '
+                    f'{", ".join(cfg["components"][c] for c in sorted(absent & present))}')
+            missing = sorted(set(cfg['components']) - present - absent)
             if missing:
                 raise AssertionError(
                     f'{subject} {year} {level}: no paper on disk for '
@@ -3461,6 +4097,7 @@ def census_subject(subject):
         for label, comp in units:
             marks = None
             cover = None
+            legacy_flags = []
             try:
                 if cfg.get('walker') == 'history':
                     parts, texts, files, marks, cover = census_history(
@@ -3521,17 +4158,34 @@ def census_subject(subject):
                     parts, texts, files = census_sections(subject, year, level)
                 elif subject == 'agricultural-science' and year <= AGRI_LEGACY_LAST_YEAR:
                     parts, texts, files = census_agri_legacy(year, level)
+                elif subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR:
+                    # The old-syllabus paper restarts Section B at Question 1
+                    # (econ_legacy_census.py); its own marks checks come back
+                    # with it, and its printed marks feed the checksum below.
+                    parts, texts, files, marks, legacy_flags = census_econ_legacy(year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
             except Exception as e:                       # noqa: BLE001
                 papers.append({'year': year, 'level': level, 'paper': label,
                                'error': f'{type(e).__name__}: {e}'})
                 continue
-            leaves = leaves_of(parts)
+            leaves = [k for k in leaves_of(parts)
+                      if not printed_example(subject, year, level, k, texts)]
             flags = continuity_flags(
                 parts, texts, subject,
                 continuous=cfg.get('numbering') == 'continuous')
             flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
+            flags += legacy_flags
+            for (s_, y_, l_, where), (want, _evidence) in PRINTED_EXAMPLES.items():
+                if (s_, y_, l_) == (subject, year, level) and not any(
+                        key_label(k, subject) == where and texts.get(k, '') == want for k in parts):
+                    flags.append({'type': 'printed-example', 'where': where,
+                                  'detail': 'recorded as printed matter, but the reader no longer '
+                                            'extracts the recorded text: read the page again'})
+            # The old-syllabus Economics paper is its own kind (748 printed
+            # marks over nine short and eight long questions); the checksum
+            # compares it with its own era, never with the 2021 paper.
+            era = 'old-syllabus' if subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR else None
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed
@@ -3686,7 +4340,8 @@ def census_subject(subject):
                 marks = {(None, 0): total} if total else {}
             elif marks is None:
                 marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                          [f for f in files], subject)
+                                          [f for f in files], subject,
+                                          sitting=(subject, year, level))
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),
@@ -3695,27 +4350,299 @@ def census_subject(subject):
                 'marksSum': sum(marks.values()) if marks else None,
                 'marksQuestions': len(marks),
                 'flags': flags,
+                **({'era': era} if era else {}),
             })
     # The checksum: a paper's total does not change year to year, so the mode
     # is the expectation and a deviating year has lost or invented content.
     sums = collections.Counter()
     for p in papers:
-        if p.get('marksSum'):
-            sums[(p['level'], p.get('paper'), p['marksSum'])] += 1
+        # A paper in PRINTED_TOTALS has a format of its own, its total checked
+        # on its own heads, so it is no evidence about the other years': with
+        # Engineering Ordinary 2013-2019 at 335 and 2021-2026 at 350, counting
+        # them made the mode a six-six tie, and the tie flagged every 350 paper.
+        if p.get('marksSum') and \
+                (subject, p['year'], p['level']) not in PRINTED_TOTALS:
+            sums[(p['level'], p.get('paper'), p.get('era'), p['marksSum'])] += 1
     expected = {}
-    for (level, label, total), n in sums.items():
-        cur = expected.get((level, label))
+    for (level, label, era, total), n in sums.items():
+        cur = expected.get((level, label, era))
         if cur is None or n > cur[1]:
-            expected[(level, label)] = (total, n)
+            expected[(level, label, era)] = (total, n)
     for p in papers:
-        if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want = expected[(p['level'], p.get('paper'))][0]
-            if p['marksSum'] != want:
+        if p.get('marksSum') and expected.get((p['level'], p.get('paper'), p.get('era'))):
+            want, n = expected[(p['level'], p.get('paper'), p.get('era'))]
+            # Two sittings that disagree name no expectation: Technology 2020
+            # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
+            if n < 2:
+                continue
+            # Technology prints no tariff on any question: Section A's rubric
+            # prices them all at once and Sections B and C print their totals
+            # on the heading. What marks_by_question finds is those heading
+            # totals glued to the last Section A question ("Section B - Core
+            # (48 marks)", plus Section C's 80 wherever the PDF splits the
+            # heading into its own block), so the "sum" measures the block
+            # layout of the cover, not the paper. Admitting 2010-2019 made 48
+            # the mode and flagged 2020 Higher (128) and the 2021 Covid
+            # papers (64, 24) for a difference in how a heading extracts.
+            if subject == 'technology':
+                continue
+            if p['marksSum'] != want and \
+                    PRINTED_TOTALS.get((subject, p['year'], p['level'])) != p['marksSum']:
                 p['flags'].append({
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'engineering':
+        papers.extend(census_engineering_deferred())
+    if subject == 'history':
+        papers.extend(census_history_deferred())
+    if subject == 'economics':
+        papers.extend(census_economics_deferred())
+    if subject == 'dcg':
+        papers.extend(census_dcg_deferred())
+    if subject == 'spanish':
+        papers.extend(census_spanish_deferred())
+    if subject == 'german':
+        papers.extend(census_german_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Engineering sittings in the archive: 2022 and 2023 Higher
+# (deferredexams/ and deferredmarkingschemes/ hold LC027ALP000EV for both years;
+# 2023's paper also in Irish, LC027ALP000IV, which is deferred with every Irish
+# version; no Ordinary, nothing for 2024-2025).
+ENG_DEFERRED_PAPERS = ((2022, 'hl', 'LC027ALP000EV'), (2023, 'hl', 'LC027ALP000EV'))
+
+
+def census_engineering_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Engineering sitting (ENG_DEFERRED_PAPERS) is a paper of its
+    own, keyed 'Deferred' as Economics keys its own (census_economics_deferred
+    on claude/economics-lane-20261104, bb793c616), History its (c1306cc45) and
+    Physics and Home Economics theirs (codex/home-economics-continuation-
+    20261101), so a deferred ask never lands on a June leaf with the same
+    address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ENG_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('engineering', year, level, files=[pdf])
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'engineering')
+                 if not short_ask_ok('engineering', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'engineering'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+def census_history_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    History's deferred sittings (hist_paper.DEFERRED_PAPERS: 2022 and 2023,
+    Later Modern, both levels) are papers of their own, keyed 'Deferred' as
+    Physics and Home Economics key theirs (codex/home-economics-continuation-
+    20261101, census_physics_deferred), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on them.
+    """
+    from hist_paper import HistPaper, DEFERRED_PAPERS          # noqa: E402
+    papers = []
+    for year, level, field in DEFERRED_PAPERS:
+        P = HistPaper(year, level, field, 'deferred')
+        parts, texts = set(P.asks), dict(P.asks)
+        leaves = list(leaves_of(parts))
+        flags = [f for f in continuity_flags(parts, texts, 'history')
+                 if not short_ask_ok('history', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'history'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+def census_dcg_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    DCG's deferred sittings (dcg_paper.DEFERRED_SITTINGS: 2022 and 2023
+    Higher, each two booklets, Section A and Sections B and C) are papers of
+    their own, keyed 'Deferred' as Engineering keys its own
+    (census_engineering_deferred), so a deferred ask never lands on a June leaf
+    with the same address. They are read by the June reader (dcg_paper.DcgPaper
+    pointed at deferredexams/) and checked against their own scheme
+    (deferredmarkingschemes/) by the June flags (dcg_flags). The cross-year
+    checksum is not run on them.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import dcg_paper as DP                                      # noqa: E402
+    from dcg_scheme import DcgScheme, has_scheme                # noqa: E402
+    papers = []
+    for year, level in DP.DEFERRED_SITTINGS:
+        P = DP.load(year, level, 'dcg', 'deferred')
+        S = DcgScheme(year, level, 'dcg', 'deferred') \
+            if has_scheme(year, level, 'dcg', 'deferred') else None
+        texts = {ask.key: ask.full_text for ask in P.asks()}
+        parts = set(texts)
+        leaves = list(leaves_of(parts))
+        flags = [f for f in continuity_flags(parts, texts, 'dcg')
+                 if not short_ask_ok('dcg', year, level, f)]
+        flags += dcg_flags(P, S)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'dcg'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+# The SEC's deferred Economics sittings in the archive: 2022 Higher only
+# (deferredexams/ and deferredmarkingschemes/ hold LC034ALP000EV for 2022 and no
+# other Economics paper for 2022-2025; no Ordinary).
+ECON_DEFERRED_PAPERS = ((2022, 'hl', 'LC034ALP000EV'),)
+
+
+def census_economics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Economics' deferred sitting (ECON_DEFERRED_PAPERS) is a paper of its own,
+    keyed 'Deferred' as Physics and Home Economics key theirs (codex/home-
+    economics-continuation-20261101, census_physics_deferred) and History keys
+    its own (census_history_deferred), so a deferred ask never lands on a June
+    leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ECON_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('economics', year, level, files=[pdf])
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('economics', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'economics')
+                 if not short_ask_ok('economics', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Spanish sittings in the archive: 2022 Higher only
+# (deferredexams/2022 holds LC012ALP000EV, its loose sheet LC012ALP015EV and the
+# listening booklet LC012ALPA00EV, deferredmarkingschemes/2022 LC012ALP000EV; no
+# Ordinary, no Irish version, nothing for 2023-2025).
+ES_DEFERRED_PAPERS = ((2022, 'hl'),)
+
+
+# The SEC's deferred German sittings in the archive: 2022 Higher only
+# (deferredexams/2022 holds LC011ALP000BV and the listening booklet
+# LC011ALPA00BV, deferredmarkingschemes/2022 LC011ALP000EV; no Ordinary).
+DE_DEFERRED_PAPERS = ((2022, 'hl'),)
+
+
+def _census_de_paper(subject, year, level, sitting):
+    parts, texts, _files, P_, S_, claimed_ = census_de(subject, year, level, sitting)
+    leaves = list(leaves_of(parts))
+    return {'year': year, 'level': level, 'paper': None,
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, subject),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'flags': de_flags(P_, S_, claimed_)}
+
+
+def census_german_deferred():
+    """The deferred German sitting, read as June's are and keyed 'Deferred',
+    as Spanish's is (census_spanish_deferred), so a deferred ask never lands on
+    a June leaf with the same address."""
+    papers = []
+    for year, level in DE_DEFERRED_PAPERS:
+        paper = _census_de_paper('german', year, level, 'deferred')
+        paper['paper'] = 'Deferred'
+        paper['marksSum'], paper['marksQuestions'] = None, 0
+        papers.append(paper)
+    return papers
+
+
+def census_spanish_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Spanish's deferred sitting (ES_DEFERRED_PAPERS) is a paper of its own, keyed
+    'Deferred' as Economics keys its own (census_economics_deferred): the
+    written paper and the listening booklet read by es_paper.EsPaper(..., sitting=
+    'deferred') exactly as census_es reads June's, so a deferred ask never lands
+    on a June leaf with the same address. The checksum is not run on it.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from es_paper import EsPaper                              # noqa: E402
+    from es_scheme import EsScheme                            # noqa: E402
+    papers = []
+    for year, level in ES_DEFERRED_PAPERS:
+        P = EsPaper(year, level, 'spanish', 'deferred')
+        S = EsScheme(year, level, 'spanish', 'deferred')
+        texts = {k: v[0] for k, v in P.leaves().items()}
+        for q, letter, text, _page in P.aural_asks():
+            texts[('L', q, letter, None)] = text
+        leaves = list(leaves_of(set(texts)))
+        flags = es_flags(P, S)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'spanish'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Irish sittings in the archive: 2022-2025, Higher and Ordinary, Paper 1 (listening and
+# composition) and Paper 2 (reading and literature) each (deferredexams/ holds LC001[AG]LP[12]00IV for every year,
+# deferredmarkingschemes/ LC001[AG]LP000IV; no Foundation).
+IRISH_DEFERRED_PAPERS = tuple((year, level, component, f'LC001{"A" if level == "hl" else "G"}LP{component}00IV')
+                              for year in (2022, 2023, 2024, 2025) for level in ('hl', 'ol') for component in (1, 2))
+
+
+def census_irish_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Irish paper is a census paper of its own, keyed 'Deferred Paper 1' / 'Deferred Paper 2' (Irish
+    keys its June papers 'Paper 1' / 'Paper 2'), as Economics keys its deferred sitting 'Deferred'
+    (census_economics_deferred). Its leaves are the paper's printed asks, read from its own text layer by
+    irish_paper_asks.py, each with the id a deferred card for it will carry ("irish-2023-hl-deferred-p1-…") and the
+    citation it will print ("… — Deferred sitting"). A paper absent from the local corpus is skipped.
+    """
+    import unicodedata
+    from irish_paper_asks import paper1_asks, paper2_asks
+
+    def slug(text):
+        plain = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode().lower()
+        return re.sub(r'[^a-z0-9]+', '-', plain).strip('-')
+
+    papers = []
+    for year, level, component, fileid in IRISH_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        if not os.path.exists(pdf):
+            continue
+        asks = paper1_asks(pdf) if component == 1 else paper2_asks(pdf)
+        leaves = [{'key': [f'irish-{year}-{level}-deferred-p{component}-{slug(section)}-{slug(address)}'],
+                   'label': f'{year} {level.upper()} Paper {component} {section} · {address} — Deferred sitting',
+                   'text': '', 'status': 'printed'} for section, address in asks]
+        if len({leaf['key'][0] for leaf in leaves}) != len(leaves):
+            raise AssertionError(f'Irish deferred {year} {level} Paper {component}: two asks share an address')
+        papers.append({
+            'year': year, 'level': level, 'paper': f'Deferred Paper {component}',
+            'leafCount': len(leaves), 'leaves': leaves,
+            'marksSum': None, 'marksQuestions': 0, 'flags': [],
+        })
+    return papers
 
 
 def report(result):

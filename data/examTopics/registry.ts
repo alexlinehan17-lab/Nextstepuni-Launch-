@@ -234,6 +234,8 @@ interface GermanRuntime {
   partReferences: Array<[number, number, 'h' | 'o', 's' | 'a', 'm' | 'd', string, string]>;
   /** [h/o, e/i, year-2000, single/aural, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, single/aural, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, string, number[]]>;
 }
 
 interface MusicRuntime {
@@ -295,6 +297,8 @@ interface IrishRuntime {
     string,
     number[],
   ]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, paper key, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, '1' | '2', string, string, number[]]>;
 }
 
 interface SpanishRuntime {
@@ -310,6 +314,8 @@ interface SpanishRuntime {
   partReferences: Array<[number, number, 'h' | 'o', 'w' | 'a' | 'o', 'm' | 'd', string, string]>;
   /** [h/o, e/i, year-2000, written/aural, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 'w' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, e/i, year-2000, written/aural, booklet file id, card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 'w' | 'a', string, string, number[]]>;
 }
 
 interface HistoryRuntime {
@@ -444,7 +450,10 @@ interface ConstructionStudiesRuntime {
   questionMappings: Array<['h' | 'o', number, string, number[]]>;
 }
 
-interface EngineeringRuntime extends ConstructionStudiesRuntime {}
+interface EngineeringRuntime extends ConstructionStudiesRuntime {
+  /** The SEC's deferred sittings: [h/o, year-2000, paper file id, printed question number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
+}
 
 interface TechnologyRuntime {
   v: 1;
@@ -490,6 +499,8 @@ interface DesignAndCommunicationGraphicsRuntime {
   partReferences: Array<[number, number, 'm' | 'd', 's' | 'a', string, string]>;
   /** [h/o, e/i, year, B-C/Section-A, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, number[]]>;
+  /** The SEC's deferred sittings: [h/o, e/i, year, B-C/Section-A, booklet file id, local card number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, 's' | 'a', string, string, number[]]>;
 }
 
 interface PhysicsAndChemistryRuntime {
@@ -3761,6 +3772,17 @@ for (const [levelCode, langCode, year, n, topicIndexes] of economicsRuntime.ques
 }
 
 for (const [levelCode, langCode, year, fileid, n, indexes] of economicsRuntime.secReviewedQuestionMappings) {
+  // A deferred sitting ("LC034ALP000EV-deferred.pdf") is its own booklet,
+  // numbered 1-16 like June's: its reviews join on the booklet, so they never
+  // replace June's review of the question with the same number.
+  if (/-deferred\.pdf$/i.test(fileid)) {
+    FILE_QUESTION_TOPICS.set(
+      fileQuestionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year, 'main', fileid, n,
+        'single', langCode === 'e' ? 'ev' : 'iv'),
+      indexes.map(index => economicsRuntime.topics[index][0]),
+    );
+    continue;
+  }
   SEC_REVIEWED_QUESTION_TOPICS.set(
     questionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year,
       'main', n, 'single', langCode === 'e' ? 'ev' : 'iv'),
@@ -3916,6 +3938,25 @@ for (const [levelCode, yearOffset, n, topicIndexes] of engineeringRuntime.questi
     topicIndexes.map(topicIndex => engineeringTopicIdentity(topicIndex).id),
   );
 }
+// A deferred sitting's paper ("LC027ALP000EV-deferred.pdf") is numbered as
+// June's: its questions join on the paper, so they never replace or merge with
+// June's question of the same number (DCG and Irish do the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of (
+  engineeringRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      engineeringRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      yearOffset + 2000,
+      'main',
+      fileid,
+      n,
+      'single',
+    ),
+    topicIndexes.map(topicIndex => engineeringTopicIdentity(topicIndex).id),
+  );
+}
 
 // Technology maps the complete SEC Section A and Section B/C corpus. Reference
 // omissions remain available through reviewed or existing canonical mappings;
@@ -3932,6 +3973,49 @@ for (const [levelCode, yearOffset, n, topicIndexes] of technologyRuntime.questio
     ),
     topicIndexes.map(topicIndex => technologyTopicIdentity(topicIndex).id),
   );
+}
+
+// A Technology option question belongs on its option's page: Section C prints
+// Option 1 Applied Control Systems, 2 Electronics and Control, 3 ICT,
+// 4 Manufacturing Systems and 5 Materials Technology as Questions 1 to 5 in
+// every sitting 2010-2026. The factual file-scoped headings file seven of
+// them by content alone (2014 Higher C2, 2015 Ordinary C1, 2017 Higher C4 and
+// C5, 2017 Ordinary C3, 2019 Ordinary C3, 2026 Higher C3), and an exact file
+// match shadows the question-level mapping, so a student revising that option
+// never met them. The option is added beside the reference's own headings,
+// which stay, in every year.
+const TECHNOLOGY_OPTION_TOPICS: Record<PaperLevel, string[]> = {
+  higher: [
+    'technology-higher-option-applied-control-systems',
+    'technology-higher-option-electronics-control',
+    'technology-higher-option-information-communications-technology',
+    'technology-higher-option-manufacturing-systems',
+    'technology-higher-option-materials-technology',
+  ],
+  ordinary: [
+    'technology-ordinary-option-1-applied-control-systems',
+    'technology-ordinary-option-2-electronics-control',
+    'technology-ordinary-option-3-information-communications-technology',
+    'technology-ordinary-option-4-manufacturing-systems',
+    'technology-ordinary-option-5-materials-technology',
+  ],
+} as Record<PaperLevel, string[]>;
+for (const reference of technologyPartReferences) {
+  const option = /^C([1-5])$/.exec(reference.n);
+  if (!reference.fileid || !option) continue;
+  const topicId = TECHNOLOGY_OPTION_TOPICS[reference.level][Number(option[1]) - 1];
+  if (!TOPICS_BY_ID.has(topicId)) throw new Error(`Unknown Technology option topic: ${topicId}`);
+  for (const fileid of new Set([
+    reference.fileid,
+    reference.fileid.replace(/EV(?=\.pdf$)/i, 'IV'),
+    reference.fileid.replace(/IV(?=\.pdf$)/i, 'EV'),
+  ])) {
+    const key = fileQuestionKey(
+      reference.subjectId, reference.level, reference.year, 'main', fileid, reference.n, reference.paperKey,
+    );
+    const ids = FILE_QUESTION_TOPICS.get(key) ?? [];
+    if (!ids.includes(topicId)) FILE_QUESTION_TOPICS.set(key, [...ids, topicId]);
+  }
 }
 
 // Chemistry shares the audited mapping between both official-language
@@ -3979,6 +4063,30 @@ for (const [levelCode, langCode, year, paperKeyCode, n, topicIndexes] of (
       levelCode === 'h' ? 'higher' : 'ordinary',
       year,
       'main',
+      n,
+      dcgPaperKey(paperKeyCode),
+      langCode === 'e' ? 'ev' : 'iv',
+    ),
+    topicIndexes.map(topicIndex => {
+      const topicId = designAndCommunicationGraphicsRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown DCG runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+// A deferred sitting's booklet ("LC562ALP039EV-deferred.pdf") is numbered as
+// June's: its questions join on the booklet, so they never replace or merge
+// with June's question of the same number (Irish and Economics do the same).
+for (const [levelCode, langCode, year, paperKeyCode, fileid, n, topicIndexes] of (
+  designAndCommunicationGraphicsRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      designAndCommunicationGraphicsRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      year,
+      'main',
+      fileid,
       n,
       dcgPaperKey(paperKeyCode),
       langCode === 'e' ? 'ev' : 'iv',
@@ -4052,6 +4160,19 @@ for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of g
     }),
   );
 }
+// A deferred German sitting's questions are keyed by their own booklet
+// ("LC011ALP000BV-deferred.pdf"), never June's, as Spanish keys its own.
+for (const [levelCode, langCode, yearOffset, paperKeyCode, fileid, n, topicIndexes] of germanRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(germanRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000,
+      'main', fileid, n, germanRuntimePaperKey(paperKeyCode), langCode === 'e' ? 'ev' : 'iv'),
+    topicIndexes.map(topicIndex => {
+      const topicId = germanRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown German runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
 
 // Music composing, listening, elective and unprepared-test booklets all use
 // the historical `single` paper key and restart their printed question runs.
@@ -4086,20 +4207,37 @@ for (const [
   );
 }
 
-// Irish spans three levels and four live paper slots. The generated join is
-// authoritative for all 979 local cards, including the frozen reading cards
-// and the two preservation-only archive shelves.
+// Irish's generated local joins are authoritative for the indexed paper slots.
+// Replace a matching language-neutral reference association as well: merging
+// it back would reintroduce known errors such as 2024 Foundation's form tagged
+// as a letter. The original factual headings remain in part-reference metadata.
 for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of irishRuntime.questionMappings) {
+  const topicIds = topicIndexes.map(topicIndex => {
+    const topicId = irishRuntime.topics[topicIndex]?.[0];
+    if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
+    return topicId;
+  });
+  const level = irishLevel(levelCode);
+  const year = yearOffset + 2000;
+  const paperKey = irishRuntimePaperKey(paperKeyCode);
   QUESTION_TOPICS.set(
-    questionKey(
-      irishRuntime.subjectId,
-      irishLevel(levelCode),
-      yearOffset + 2000,
-      'main',
-      n,
-      irishRuntimePaperKey(paperKeyCode),
-      langCode === 'e' ? 'ev' : 'iv',
-    ),
+    questionKey('irish', level, year, 'main', n, paperKey, langCode === 'e' ? 'ev' : 'iv'),
+    topicIds,
+  );
+  const sharedKey = questionKey('irish', level, year, 'main', n, paperKey);
+  const shared = QUESTION_TOPICS.get(sharedKey);
+  if (shared) {
+    QUESTION_TOPICS.set(sharedKey, [...new Set([
+      ...shared.filter(id => topicIds.includes(id)), ...topicIds,
+    ])]);
+  }
+}
+// A deferred sitting ("LC001ALP100IV-deferred.pdf") is its own booklet, numbered as June's: its cards join on the
+// booklet, so they never replace or merge with June's card of the same number (Economics' deferred paper does the same).
+for (const [levelCode, langCode, yearOffset, paperKeyCode, fileid, n, topicIndexes] of irishRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey('irish', irishLevel(levelCode), yearOffset + 2000, 'main', fileid, n,
+      irishRuntimePaperKey(paperKeyCode), langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = irishRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
@@ -4155,6 +4293,20 @@ for (const [
       'single',
       lang,
     ),
+    topicIndexes.map(topicIndex => {
+      const topicId = spanishRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Spanish runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+
+// A deferred Spanish sitting's questions are keyed by their own booklet
+// ("LC012ALP000EV-deferred.pdf"), never June's, as Irish keys its own.
+for (const [levelCode, langCode, yearOffset, _kindCode, fileid, n, topicIndexes] of spanishRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(spanishRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000,
+      'main', fileid, n, 'single', langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = spanishRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Spanish runtime topic index: ${topicIndex}`);

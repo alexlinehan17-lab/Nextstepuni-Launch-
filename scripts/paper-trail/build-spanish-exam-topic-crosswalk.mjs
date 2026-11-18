@@ -269,6 +269,8 @@ const canonicalForSemantic = (semantic, year) => {
   if (semantic === 'higher-short') return { primary: 'spanish-5-1' };
   if (semantic === 'higher-opinion') return { primary: 'spanish-5-0', secondary: 'spanish-1-1' };
   if (semantic === 'higher-writing-all') return { primary: 'spanish-6-1', secondary: 'spanish-6-2' };
+  if (semantic === 'higher-opinion-writing') return { primary: 'spanish-6-0' };
+  if (semantic === 'higher-writing-diary-note') return { primary: 'spanish-6-3', secondary: 'spanish-6-4' };
   if (semantic === 'ordinary-comprehension') return { primary: 'spanish-5-2' };
   if (semantic === 'ordinary-writing-letter') return { primary: 'spanish-6-2' };
   if (semantic === 'ordinary-writing-note') return { primary: 'spanish-6-4' };
@@ -351,9 +353,13 @@ const addCustom = (paper, spec) => {
   paper.q.push(customQuestion({ ...spec, year: paper.year }));
 };
 
-const findPaper = (year, level, lang, kind) => {
+// A deferred sitting's paper ("…-deferred.pdf") is never June's: asked for
+// by sitting.
+const isDeferredPaper = paper => String(paper.fileid).endsWith('-deferred.pdf');
+const findPaper = (year, level, lang, kind, sitting = 'main') => {
   const matches = [...paperMap.values()].filter(paper => (
     paper.year === year && paper.level === level && paper.lang === lang && paper.kind === kind
+    && isDeferredPaper(paper) === (sitting === 'deferred')
   ));
   if (matches.length !== 1) {
     throw new Error(`${year} ${level} ${lang} ${kind}: expected one Spanish paper, found ${matches.length}`);
@@ -424,6 +430,90 @@ for (let year = 2010; year <= 2026; year++) {
   }
 }
 
+// Higher Section B Question 5 (the opinion piece on the article's theme) and
+// Section C Question 2 (a diary entry or a note) are printed questions of
+// their own, but the classic Higher maps anchor Section B by its four reading
+// questions and Section C as one "Written production" card tagged to Q1's
+// dialogue and letter. Each gets its own card, placed in print order (B5 after
+// the reading questions, C2 after Section C's card), for every sitting whose
+// Mark Bank cards file under it (scripts/markbank/authoring/es_atlas.py). The
+// pages are where es_writing.py reads each question's head on the English
+// booklet; the Irish booklet prints the same head on the same page ("5. Scríobh
+// … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
+// on both for every year listed.
+const HIGHER_WRITING_PAGES = {
+  2021: { b5: 12, c2: 19 },
+  2022: { b5: 14, c2: 21 },
+  2023: { b5: 14, c2: 21 },
+  2024: { b5: 14, c2: 21 },
+  2025: { b5: 14, c2: 21 },
+  2020: { b5: 9, c2: 13 },
+  2026: { b5: 14, c2: 21 },
+  2010: { b5: 9, c2: 13 },
+  2011: { b5: 9, c2: 13 },
+  2012: { b5: 9, c2: 13 },
+  2013: { b5: 9, c2: 13 },
+  2014: { b5: 9, c2: 13 },
+  2015: { b5: 9, c2: 13 },
+  2016: { b5: 9, c2: 13 },
+  2017: { b5: 9, c2: 13 },
+  2018: { b5: 9, c2: 13 },
+  2019: { b5: 9, c2: 13 },
+};
+for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
+  for (const lang of ['ev', 'iv']) {
+    const paper = findPaper(Number(year), 'higher', lang, 'written');
+    const sectionC = paper.q.findIndex(question => question.semantic === 'higher-writing-all');
+    if (sectionC < 0) throw new Error(`${paperIdentity(paper)}: no Section C card to place B5 and C2 around`);
+    for (const [n, label, semantic, page, at] of [
+      ['B5', 'Section B · Question 5 · Opinion', 'higher-opinion-writing', pages.b5, sectionC],
+      ['C2', 'Section C · Question 2 · Diary Entry / Note', 'higher-writing-diary-note', pages.c2, sectionC + 2],
+    ]) {
+      if (paper.q.some(question => question.n === n)) throw new Error(`${paperIdentity(paper)}: ${n} already exists`);
+      paper.q.splice(at, 0, customQuestion({ n, label, semantic, page, year: Number(year) }));
+    }
+  }
+}
+
+// Printed questions the classic maps never anchored. The journalistic text's
+// Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una de las
+// frases siguientes"), wherever a map anchors that text question by question
+// and stops at Q3: a card of its own after Q3, in each edition that does (an
+// edition anchoring the text as one card already holds it). Each page is
+// where the paper prints that head, checked in both booklets.
+for (const extra of [
+  { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2024, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2021, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 8 },
+  { year: 2022, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2019, langs: ['ev'], after: '8', n: 'A1b4', label: 'Sec A · Journ 1(b) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2018, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text (Mascotas y dueños) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2017, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2016, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2015, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2014, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2014's Irish map anchors literature Q5 twice (n5, n6), so its journalistic Q3 is n9.
+  { year: 2014, langs: ['iv'], after: '9', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2013, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2011's Irish map anchors neither text question by question.
+  { year: 2011, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2012's Irish booklet numbers this question "3. Explica …" (p5); it is the English "4.".
+  { year: 2012, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)
+  // Answer EITHER (a) or (b) in ENGLISH.", p11); the Irish map has it (n 4).
+  { year: 2022, langs: ['ev'], after: 'A1b4', n: 'A2', label: 'Section A · Q2 (short texts)', semantic: 'higher-short', page: 11 },
+]) {
+  for (const lang of extra.langs) {
+    const paper = findPaper(extra.year, 'higher', lang, 'written');
+    const at = paper.q.findIndex(question => question.n === extra.after);
+    if (at < 0 || paper.q.some(question => question.n === extra.n)) {
+      throw new Error(`${paperIdentity(paper)}: cannot place ${extra.n} after ${extra.after}`);
+    }
+    paper.q.splice(at + 1, 0, customQuestion({ ...extra, year: extra.year }));
+  }
+}
+
 // A few legacy language-edition sidecars omit a whole component even though
 // the indexed SEC booklet contains it. Both editions share their page layout,
 // so restore one umbrella card from the reviewed sibling edition's boundaries.
@@ -469,6 +559,68 @@ restoreMissingHigherSection({
   label: 'Section B · Opinion Text · Questions 1–5',
   nextSemantic: 'higher-writing-all',
 });
+
+// The SEC's deferred 2022 Higher sitting: its own papers, indexed by Paper
+// Trail as "LC012ALP000EV-deferred.pdf" (Deferred · Exam Paper) and
+// "LC012ALPA00EV-deferred.pdf" (Deferred · Aural Paper), English only. They
+// join the Atlas once carded in the Mark Bank (es_all.py DEFERRED_CARDED), as
+// Economics', History's and Irish's deferred papers do: each its own entry,
+// fileid "…-deferred.pdf", with its own hosted anchors. The deferred booklets
+// print the June sitting's questions in the June layout, so each paper takes
+// the June paper's cards (number, label, kind of question, so its canonical
+// topics), placed on the pages the deferred booklet prints them: read from the
+// deferred booklets themselves (es_paper.EsPaper(2022, 'hl', sitting=
+// 'deferred'): Section A Q1(a) Q1 p4, Q2-Q5 p5, Q1(b) Q1 p8, Q2 p9, Q3 and Q4
+// p10, Q2 p11, Section B Q1-Q2 p13, Q3-Q5 p14, Section C Q1 p17, Q2 p21; the
+// listening booklet's Questions 1-7 on pp3-9).
+const DEFERRED_PAGES = {
+  '2022|higher|written': {
+    1: 4, 2: 5, 3: 5, 4: 5, 5: 5, 6: 8, 7: 9, 8: 10, A1b4: 10, A2: 11,
+    9: 13, 10: 13, 11: 14, 12: 14, B5: 14, 13: 17, C2: 21,
+  },
+  '2022|higher|aural': { 1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 8, 7: 9 },
+};
+// The kind of each deferred question, read from its label in the order that
+// names the task first: June's literature "Q2" and journalistic "Q2" carry
+// frozen tags of their own, but a label test that reads "Q2" as Question 2's
+// short texts would file them under short comprehension.
+const deferredSemantic = (kind, question, label) => {
+  if (kind === 'aural') return question.semantic;
+  if (question.n === 'C2') return 'higher-writing-diary-note';
+  if (question.n === 'B5') return 'higher-opinion-writing';
+  if (/Section C|Written production/i.test(label)) return 'higher-writing-all';
+  if (/Section B/i.test(label)) return 'higher-opinion';
+  if (/Literature|Q1\s*\(a\)/i.test(label)) return 'higher-prescribed-historic';
+  if (/Journalistic/i.test(label)) return 'higher-journalistic';
+  if (question.n === 'A2' || /short/i.test(label)) return 'higher-short';
+  throw new Error(`2022 deferred Q${question.n}: no kind for "${label}"`);
+};
+for (const [key, pages] of Object.entries(DEFERRED_PAGES)) {
+  const [year, level, kind] = key.split('|');
+  const june = findPaper(Number(year), level, 'ev', kind);
+  if (june.q.map(question => question.n).sort().join() !== Object.keys(pages).sort().join()) {
+    throw new Error(`${paperIdentity(june)}: the deferred page table does not list June's questions`);
+  }
+  const paper = {
+    subjectId: 'spanish', level, lang: 'ev', year: Number(year),
+    fileid: june.fileid.replace(/\.pdf$/, '-deferred.pdf'),
+    paperKey: 'single', kind,
+    q: june.q.map(question => {
+      const label = question.label ?? question.anchor?.label;
+      const page = pages[question.n];
+      const semantic = deferredSemantic(kind, question, label);
+      return {
+        n: question.n, label, semantic,
+        ...canonicalForSemantic(semantic, Number(year)),
+        anchor: { n: question.n, label, pP: page, pY: [0, 1], paperRegion: fullPages(page) },
+      };
+    }),
+    answerMap: null,
+  };
+  const identity = paperIdentity(paper);
+  if (paperMap.has(identity)) throw new Error(`Unexpected existing Spanish paper: ${identity}`);
+  paperMap.set(identity, paper);
+}
 
 const localPapers = [...paperMap.values()].sort((a, b) => (
   b.year - a.year
@@ -539,13 +691,17 @@ const resolveHeading = (topic, heading) => {
   if (year < 2010) {
     return blocked('The entitled local SEC question corpus begins in 2010. The factual heading is retained, but no StudyClix-hosted question, solution, image or PDF is copied.');
   }
-  if (sitting === 'deferred') {
+  // A deferred heading resolves to that sitting's own paper where it is
+  // carded (the 2022 Higher deferred sitting, from 2026-11-12).
+  const deferredCarded = [...paperMap.values()].some(paper => isDeferredPaper(paper)
+    && paper.year === year && paper.level === topic.level && paper.kind === kind);
+  if (sitting === 'deferred' && !deferredCarded) {
     return blocked('The factual deferred-paper heading is retained, but the corresponding entitled deferred booklet is not present in the local corpus.');
   }
   if (kind === 'oral') {
     return blocked('The factual official role-play heading is retained, but the published oral booklet is not present in the local Paper Trail corpus.');
   }
-  const paper = findPaper(year, topic.level, 'ev', kind);
+  const paper = findPaper(year, topic.level, 'ev', kind, sitting);
   const semantic = topicSemantic(topic.id);
   let candidates = paper.q.filter(question => question.semantic === semantic);
   if (kind === 'aural') {
@@ -613,6 +769,8 @@ const fallbackTopicIds = (paper, question) => {
   if (question.semantic === 'higher-prescribed-historic') return [IDS.higher.prescribedHistoric];
   if (question.semantic === 'higher-journalistic') return [IDS.higher.journalistic];
   if (question.semantic === 'higher-opinion') return [IDS.higher.opinion];
+  if (question.semantic === 'higher-opinion-writing') return [IDS.higher.opinion];
+  if (question.semantic === 'higher-writing-diary-note') return [IDS.higher.diaryNote];
   if (question.semantic === 'higher-short') return [IDS.higher.short];
   if (question.semantic === 'higher-writing-all') {
     return [IDS.higher.dialogueWritten, IDS.higher.diaryNote, IDS.higher.letter];
@@ -712,8 +870,10 @@ for (const paper of localPapers) {
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 
+// A deferred question is keyed apart from June's question of the same number.
 const logicalQuestions = new Set(localQuestionMappings.map(mapping => [
-  mapping.level, mapping.year, mapping.kind, mapping.n,
+  mapping.level, mapping.year, mapping.kind,
+  ...(String(mapping.fileid).endsWith('-deferred.pdf') ? ['deferred'] : []), mapping.n,
 ].join('|')));
 const blockedByReason = sourceBlocked.reduce((counts, association) => {
   const key = association.year < 2010
@@ -826,14 +986,27 @@ const runtime = {
     topic.reportedQuestionCount,
   ]),
   partReferences: runtimePartReferences,
-  questionMappings: localQuestionMappings.map(mapping => [
-    mapping.level === 'higher' ? 'h' : 'o',
-    mapping.lang === 'ev' ? 'e' : 'i',
-    mapping.year - 2000,
-    kindCode(mapping.kind),
-    mapping.n,
-    mapping.topicIds.map(id => topicIndex.get(id)),
-  ]),
+  questionMappings: localQuestionMappings.filter(mapping => !String(mapping.fileid).endsWith('-deferred.pdf'))
+    .map(mapping => [
+      mapping.level === 'higher' ? 'h' : 'o',
+      mapping.lang === 'ev' ? 'e' : 'i',
+      mapping.year - 2000,
+      kindCode(mapping.kind),
+      mapping.n,
+      mapping.topicIds.map(id => topicIndex.get(id)),
+    ]),
+  // A deferred sitting's questions carry their own booklet's file id: June's
+  // (level, edition, year, kind, number) key would collide with them.
+  deferredQuestionMappings: localQuestionMappings.filter(mapping => String(mapping.fileid).endsWith('-deferred.pdf'))
+    .map(mapping => [
+      mapping.level === 'higher' ? 'h' : 'o',
+      mapping.lang === 'ev' ? 'e' : 'i',
+      mapping.year - 2000,
+      kindCode(mapping.kind),
+      mapping.fileid,
+      mapping.n,
+      mapping.topicIds.map(id => topicIndex.get(id)),
+    ]),
 };
 fs.writeFileSync(RUNTIME_PATH, `${JSON.stringify(runtime)}\n`);
 

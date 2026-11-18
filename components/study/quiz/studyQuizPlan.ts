@@ -1,44 +1,23 @@
 /**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- *
- * Which Mark Bank questions an end-of-session quiz asks, and how it scores
- * them. Pure, so it can be tested without the page.
- *
- * Selection, in order:
- *   1. The session's subject names a Mark Bank deck at the student's level
- *      (the same rule Mark Bank itself uses to open on the right deck).
- *   2. The session's topics narrow the deck through the curriculum registry,
- *      so a whole area expands to its topics and an older cohort's ids still
- *      reach the cards. No topics, or too few cards on them: the whole subject.
- *   3. Only SHORT, self-contained questions qualify: a fixed tariff of ten
- *      marks or fewer, no source booklet, no audio, no alternative routes. A
- *      quick check should take five minutes, not become a second session.
- *   4. Mark Bank's own scheduler orders them — due cards and weak memories
- *      first, then new ones — so the quiz is also spaced repetition.
- *
- * Fewer than three qualifying cards means no quiz at all. Padding with
- * invented questions is never an option: everything shown is lifted from a
- * paper and its scheme.
- *
- * Scoring mirrors Mark Bank's `marksClaimed` / `suggestGrade` for the subset of
- * cards this module admits (fixed tariff, no routes, no bonus). A test pins
- * that parity, so a tick here is worth exactly what it is worth there.
+ * End-of-session questions use the saved canonical topic selection and the
+ * student's Mark Bank deck. Never broaden a sparse topic to the whole subject.
+ * Native Mark Bank renders and scores every selected question.
  */
 
 import { SUBJECTS, deckSize, levelsFor, loadCards, type Level } from '../../MarkBank/deck';
 import { cardsForCurriculumNode } from '../../MarkBank/curriculumMenu';
 import { resolveSessionQueue } from '../../MarkBank/sessionPlanning';
 import { readLocal } from '../../MarkBank/store';
-import type { CardMemory, MarkBankGrade } from '../../MarkBank/scheduler';
+import type { CardMemory } from '../../MarkBank/scheduler';
 import { CURRICULUM_SPECIFICATIONS, findCanonicalTopic, resolveSubjectId, type CanonicalCurriculumSpecification } from '../../../curriculumRegistry';
-import { sameStudySubject } from '../../../services/studyTopicHistory';
-import { groupMarks, isPointCard, rowId, type MarkRow, type SecCard, type SecQuestionCard } from '../../../types/markBank';
+import { canonicalNodeIds, sameStudySubject } from '../../../services/studyTopicHistory';
+import { isPointCard, type SecCard } from '../../../types/markBank';
+import { libraryTopicIds } from '../../MarkBank/libraryGroups';
+import type { SessionCardResult } from '../../MarkBank/SessionScreen';
 import type { StudyTopicSelection } from '../../../types/studyTopics';
 
 /** Questions per quiz, and the fewest worth asking. */
 export const QUIZ_SIZE = 4;
-export const QUIZ_MIN = 3;
 /** A "short" question: this many marks or fewer, this many scheme rows or fewer. */
 export const QUIZ_MAX_MARKS = 10;
 export const QUIZ_MAX_ROWS = 6;
@@ -80,16 +59,20 @@ export function resolveQuizDeck(
   return { subjectId: subject.id, level, title: subject.title, deckId: `${subject.id}-${level}` };
 }
 
-/** A question short and self-contained enough for a five-minute check. */
-export function isQuizCard(card: SecCard): card is SecQuestionCard {
-  if (!isPointCard(card) || card.kind !== 'question') return false;
-  if (card.tariffModel.kind !== 'fixed') return false;
-  if (card.totalMarks <= 0 || card.totalMarks > QUIZ_MAX_MARKS) return false;
-  if (card.sourceMaterial || card.additionalSourceMaterials?.length || card.audioMaterial) return false;
-  if (card.answerVariants?.length || card.taskGroups?.length || card.questionBonus) return false;
-  if (!card.rows.length || card.rows.length > QUIZ_MAX_ROWS) return false;
-  // Mutually exclusive routes and unpriced rows need Mark Bank's full screen.
-  return card.rows.every(row => !row.route && (row.marks !== null || (row.kind === 'anyN' && !!row.group)));
+/** Questions with native numeric marking controls, including full rubric tasks. */
+export function isQuizCard(card: SecCard): boolean {
+  if (card.totalMarks <= 0 || card.audioMaterial) return false;
+  // Long listening exercises do not fit a quick check. All other question,
+  // source and scoring formats are handled by the native Mark Bank screen.
+  return !isPointCard(card) || (card.tariffModel.kind === 'fixed' && card.rows.length > 0
+    && card.rows.every(row => row.marks !== null || Boolean(row.group)));
+}
+
+/** Prefer quick questions, but keep a full task when that is what a topic offers. */
+export function preferShortQuestions(pool: SecCard[]): SecCard[] {
+  const short = pool.filter(card => card.totalMarks <= QUIZ_MAX_MARKS
+    && (!isPointCard(card) || card.rows.length <= QUIZ_MAX_ROWS));
+  return short.length ? short : pool;
 }
 
 function dedupe(cards: SecCard[]): SecCard[] {
@@ -98,21 +81,35 @@ function dedupe(cards: SecCard[]): SecCard[] {
 }
 
 /** The quiz-worthy cards on the given topics (every card when no topics are given). */
-export function quizPool(cards: SecCard[], topicIds: readonly string[], spec?: CanonicalCurriculumSpecification): SecQuestionCard[] {
+export function quizPool(cards: SecCard[], topicIds: readonly string[], spec?: CanonicalCurriculumSpecification): SecCard[] {
   const scoped = topicIds.length ? dedupe(topicIds.flatMap(id => cardsForCurriculumNode(id, cards, spec))) : cards;
   return scoped.filter(isQuizCard);
 }
 
-/** Order by Mark Bank's scheduler and take the quiz's worth; nothing if too few. */
+/** Give each selected topic a turn, then fill in scheduler order, without duplicates. */
 export function planQuiz(
-  pool: SecQuestionCard[],
+  pool: SecCard[],
   memories: Record<string, CardMemory | undefined>,
   now: number,
   examTs?: number,
   size = QUIZ_SIZE,
-): SecQuestionCard[] {
-  if (pool.length < QUIZ_MIN) return [];
-  return resolveSessionQueue(pool, memories, now, examTs, size).filter(isQuizCard);
+  topicPools: SecCard[][] = [],
+): SecCard[] {
+  if (!pool.length || size <= 0) return [];
+  const picked: SecCard[] = [];
+  const seen = new Set<string>();
+  const add = (card?: SecCard) => {
+    if (card && !seen.has(card.id) && picked.length < size) {
+      seen.add(card.id);
+      picked.push(card);
+    }
+  };
+  for (const topicPool of topicPools) {
+    if (topicPool.some(card => seen.has(card.id))) continue;
+    add(resolveSessionQueue(topicPool, memories, now, examTs, 1)[0]);
+  }
+  resolveSessionQueue(pool, memories, now, examTs, size).forEach(add);
+  return picked;
 }
 
 export function specificationFor(selection?: StudyTopicSelection): CanonicalCurriculumSpecification | undefined {
@@ -131,77 +128,27 @@ export function quizTopicLabel(selection?: StudyTopicSelection): string | null {
   return `${names[0]} and ${names.length - 1} more topics`;
 }
 
-// ─── Scoring ────────────────────────────────────────────────────────────────
-
-/** 'yes' for a ticked row, a number for a stepped criterion, 'no' otherwise. */
-export type QuizClaim = 'no' | 'yes' | number;
-
-export interface QuizAnswer {
-  claims: Record<string, QuizClaim>;
-  /** `anyN` groups: which options were ticked, by index. */
-  picks: Record<string, number[]>;
-}
-
-export const EMPTY_ANSWER: QuizAnswer = { claims: {}, picks: {} };
-
-export interface QuizResult {
-  cardId: string;
+export interface QuizResult extends SessionCardResult {
   questionRef: string;
-  marksClaimed: number;
-  marksAvailable: number;
-  grade: MarkBankGrade;
 }
 
-export const rowKey = rowId;
-
-/** What a row is worth when fully claimed (`anyN` groups: their claimable max). */
-export function rowValue(row: MarkRow): number {
-  if (row.kind === 'anyN' && row.group) return groupMarks(row.group);
-  return row.marks ?? 0;
-}
-
-/** Marks a student can claim on the card — the fixed tariff's rows, summed. */
-export function cardMarks(card: SecQuestionCard): number {
-  return card.rows.reduce((sum, row) => sum + rowValue(row), 0);
-}
-
-function groupClaimed(group: NonNullable<MarkRow['group']>, chosen: number): number {
-  if (!group.perOptionSteps) return chosen * group.perOption;
-  return group.perOptionSteps.slice(0, chosen).reduce((sum, marks) => sum + marks, 0);
-}
-
-export function marksEarned(card: SecQuestionCard, answer: QuizAnswer): number {
-  return card.rows.reduce((sum, row, index) => {
-    const key = rowKey(row, index);
-    if (row.kind === 'anyN' && row.group) {
-      const chosen = Math.min(answer.picks[key]?.length ?? 0, row.group.claimMax);
-      return sum + groupClaimed(row.group, chosen);
-    }
-    const claim = answer.claims[key] ?? 'no';
-    if (row.permittedMarks) {
-      if (claim === 'yes') return sum + (row.marks ?? 0);
-      return sum + (typeof claim === 'number' && row.permittedMarks.includes(claim) ? claim : 0);
-    }
-    const claimed = typeof claim === 'number' ? claim > 0 : claim !== 'no';
-    return claimed ? sum + rowValue(row) : sum;
-  }, 0);
-}
-
-/** The grade the ticks point at: all the marks, some, or none. */
-export function quizGrade(card: SecQuestionCard, answer: QuizAnswer): MarkBankGrade {
-  const got = marksEarned(card, answer);
-  if (got <= 0) return 'missed';
-  return got >= cardMarks(card) ? 'got' : 'shaky';
+/** The displayed title comes from the same registry used to join the cards. */
+export function quizCardTopic(card: SecCard, selection?: StudyTopicSelection): string {
+  const spec = specificationFor(selection);
+  const matched = selection?.topicIds.find(id => cardsForCurriculumNode(id, [card], spec).length);
+  const selectedNodes = spec && matched ? new Set(canonicalNodeIds(spec, matched)) : undefined;
+  const topic = libraryTopicIds(card, spec).filter(id => !selectedNodes || selectedNodes.has(id)).map(id => spec && findCanonicalTopic(spec, id)).find(Boolean);
+  return topic?.title ?? (matched && spec?.groups.find(group => group.id === matched)?.title) ?? 'Session topic';
 }
 
 // ─── Loading ────────────────────────────────────────────────────────────────
 
 export interface LoadedQuiz {
   deck: QuizDeck;
-  cards: SecQuestionCard[];
+  cards: SecCard[];
   /** How many quiz-worthy cards the scope holds, so four never poses as the lot. */
   poolTotal: number;
-  /** The studied topics by name, or null when the quiz had to widen to the subject. */
+  /** The studied topics by name, or null when unavailable. */
   topicLabel: string | null;
 }
 
@@ -213,15 +160,22 @@ export async function loadQuiz(input: {
   examDate?: string | null;
   now: number;
 }): Promise<LoadedQuiz | null> {
+  const topicIds = input.topicSelection?.topicIds ?? [];
+  const spec = specificationFor(input.topicSelection);
+  if (!topicIds.length || !spec || spec.subjectId !== resolveSubjectId(input.subjectName)
+    || spec.subjectId !== resolveSubjectId(input.topicSelection?.subjectId ?? '')) return null;
   const deck = resolveQuizDeck(input.subjectName, input.topicSelection?.subjectId, input.profileSubjects);
   if (!deck) return null;
   const cards = await loadCards(deck.subjectId, deck.level);
-  const topicIds = input.topicSelection?.topicIds ?? [];
-  let pool = quizPool(cards, topicIds, specificationFor(input.topicSelection));
-  let onTopics = topicIds.length > 0;
-  if (pool.length < QUIZ_MIN) { pool = quizPool(cards, []); onTopics = false; }
+  const topicPools = topicIds.map(id => preferShortQuestions(quizPool(cards, [id], spec)));
+  const pool = dedupe(topicPools.flat());
   const local = readLocal(input.uid, deck.deckId);
-  const picked = planQuiz(pool, local.cards, input.now, local.examTs);
+  const examTs = input.examDate ? new Date(input.examDate).getTime() : local.examTs;
+  // A full essay/rubric task deserves room: one question per available topic,
+  // still capped at four. Short-only checks can fill the usual small queue.
+  const hasLongTask = pool.some(card => card.totalMarks > QUIZ_MAX_MARKS);
+  const size = hasLongTask ? Math.min(QUIZ_SIZE, topicPools.filter(topic => topic.length).length) : QUIZ_SIZE;
+  const picked = planQuiz(pool, local.cards, input.now, Number.isFinite(examTs) ? examTs : undefined, size, topicPools);
   if (!picked.length) return null;
-  return { deck, cards: picked, poolTotal: pool.length, topicLabel: onTopics ? quizTopicLabel(input.topicSelection) : null };
+  return { deck, cards: picked, poolTotal: pool.length, topicLabel: quizTopicLabel(input.topicSelection) };
 }

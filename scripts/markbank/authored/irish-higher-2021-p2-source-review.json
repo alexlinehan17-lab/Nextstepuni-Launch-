@@ -1,0 +1,408 @@
+{
+  "year": 2021,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "4c2a95b59493aed0bef9ca4298116de2757008bf5c148f84d631b4d18b58e239",
+  "schemeSha256": "7482066da1b9dbe0494b79c1d769008484c9e28f106d83f3858bf02a310bc337",
+  "reviewDate": "2026-11-04",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 17 reading marking instructions; 18–22 Léamhthuiscint A; 22–26 Léamhthuiscint B; 27 literature notes, Gaeilge 5 note and the prose Eolas/Gaeilge table; 28–31 prose; 32–39 poetry; 40 Ceist 4 instructions and its Eolas/Gaeilge table; 41–49 additional literature; 50 modified marking (SMM). PDF 1–16 belong to Paper 1; 51–52 blank.",
+  "reviewMethod": "Every paper page (1 cover, 2 and 14–16 blank or acknowledgements, 3 instructions) and every applicable scheme page read in the text layer and checked against the printed page; each prompt and scheme slice is asserted against the PDFs by the builder.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "Ceist 2 (30 marc) nó Ceist 3 (30 marc)",
+      "decision": "Paper structure (2021 adjusted paper, 120 marks): Ceist 1, then Ceist 2 or Ceist 3, then Ceist 4."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Léamhthuiscint A (50 marc) nó Léamhthuiscint B (50 marc).",
+      "decision": "Closed choice of one reading passage (2021 adjusted paper): both passages and every question in each are carded; each printed part is also a practice card."
+    },
+    {
+      "page": 3,
+      "raw": "Tá Ceist 1 ‐ 5 ar aon mharc. Glacfar le freagraí i d’fhocail féin nó",
+      "decision": "Equal 7-mark questions 1–5; answer-language rule, not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Ceist 2 (30 marc) nó Ceist 3 (30 marc).",
+      "decision": "Closed choice of prose (Ceist 2) or poetry (Ceist 3): every printed route of each is carded."
+    },
+    {
+      "page": 3,
+      "raw": "Ceist 2: Freagair Ceist 2A (30 marc) nó Ceist 2B (30 marc).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de, 2A (a) nó 2A (b).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+    },
+    {
+      "page": 3,
+      "raw": "2B. Prós Roghnach",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de, 2B (a) nó 2B (b).",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+    },
+    {
+      "page": 3,
+      "raw": "NÓ",
+      "decision": "Separates printed alternatives (Léamhthuiscint A/B, Ceist 2/3, 2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+    },
+    {
+      "page": 3,
+      "raw": "Ceist 3: Freagair Ceist 3A (30 marc) nó Ceist 3B (30 marc).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de, 3A (a) nó 3A (b).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "3B. Filíocht Roghnach",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair ceist amháin as do rogha de, 3B (a) nó 3B (b).",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F).",
+      "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair Léamhthuiscint A nó Léamhthuiscint B anseo.",
+      "decision": "Closed choice of one reading passage, as on page 3; both are carded."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "(b) (i) Scríobh síos cúis amháin ar bronnadh Duais Nobel na Síochána ar John Hume sa bhliain 1998.",
+      "decision": "One required answer; the accepted list is the key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "2. (a) Scríobh síos dhá phointe eolais faoi thuismitheoirí John Hume. (Alt 2)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "(b) (i) Tabhair pointe amháin eolais faoi oideachas dara leibhéal John Hume. (Alt 2)",
+      "decision": "One required answer; the accepted list is the key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "(ii) Luaigh dhá phointe eolais faoin bpobal náisiúnach i gcathair Dhoire nuair a d’fhill John abhaile",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 5,
+      "raw": "3. (a) Scríobh síos dhá chúis a mbeadh cathair Dhoire oiriúnach mar láthair don ollscoil nua. (Alt 3)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "5. (a) Scríobh síos dhá rud a dúirt an tUachtarán Bill Clinton ina óráid nuair a thug sé cuairt",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+    },
+    {
+      "page": 5,
+      "raw": "(ii) Luaigh dhá rud a dúirt mac John Hume faoina athair ag Aifreann a shochraide. (Alt 5)",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid John Hume, dar leat.",
+      "decision": "Two independent six-mark traits (trait 2 + support 4 each): practice slots plus the whole part; own words required."
+    },
+    {
+      "page": 5,
+      "raw": "Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú",
+      "decision": "One supporting example per trait, inside each six-mark trait award; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "Scéal amháin díobh sin ba ea an Breatimeacht.",
+      "decision": "Source-text wording inside a reading passage, not a candidate instruction."
+    },
+    {
+      "page": 7,
+      "raw": "1. (a) Tabhair dhá phointe eolais faoin mBreatimeacht. (Alt 1)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh pointe amháin eolais faoi thoghadh Kamala Harris, an Leas‐Uachtarán nua ar Stáit",
+      "decision": "One required answer; the accepted list is the key for one task."
+    },
+    {
+      "page": 7,
+      "raw": "2. (a) Scríobh síos dhá phointe eolais faoin easpa dídine sa tír seo, de réir na dtuairiscí sa nuacht",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá bheartas de chuid an rialtais chun dul i ngleic le fadhb na heaspa dídine.",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos toradh fiúntach amháin a bhfuiltear ag súil leis ar bheartais an rialtais. (Alt 2)",
+      "decision": "One required answer; the accepted list is the key for one task."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá chuspóir a bhíonn le misin choimeádta síochána na Náisiún Aontaithe. (Alt 3)",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos dhá chúis a bhfuil gá le toil na rialtas agus na bpobal uile ar fud an domhain,",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá chúis a gcuirtear an comórtas Aistritheoirí Óga ar siúl. (Alt 5)",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Conas a chuaigh an sliocht seo i bhfeidhm ort? Tabhair dhá phointe eolais, i d’fhocail féin, as an",
+      "decision": "Response (2) and two supported points (5 + 5) stay inside one response, as in 2023 B 6(b); own words required."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair Ceist 2 (Prós) nó Ceist 3 (Filíocht).",
+      "decision": "Closed choice of prose (Ceist 2) or poetry (Ceist 3), as on page 3."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "decision": "Closed choice of (a) or (b) inside 2A, 2B (page 8), 3A (page 9) and 3B (page 11); each is a whole route."
+    },
+    {
+      "page": 8,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (Léamhthuiscint A/B, Ceist 2/3, 2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+    },
+    {
+      "page": 8,
+      "raw": "Prós Roghnach",
+      "decision": "Section heading (2B. Prós Roghnach), not a separate route."
+    },
+    {
+      "page": 8,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Optional folktale chosen by the candidate: open content inside one route (two traits of the main character, 13 + 12)."
+    },
+    {
+      "page": 8,
+      "raw": "an dá thréith is mó a bhaineann leis an bpríomhcharachtar (leis an bpríomhphearsa) sa scéal",
+      "decision": "Optional folktale chosen by the candidate: open content inside one route (two traits of the main character, 13 + 12)."
+    },
+    {
+      "page": 8,
+      "raw": "béaloidis sin. Déan plé ar an léargas a thugtar dúinn ar an dá thréith sin ó thús deireadh an scéil",
+      "decision": "Optional folktale chosen by the candidate: open content inside one route (two traits of the main character, 13 + 12)."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Optional short story chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 8,
+      "raw": "– PRÓS AINMNITHE nó PRÓS ROGHNACH – (30 marc)",
+      "decision": "Section heading / structure statement, not a separate route."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair Ceist 3A (Filíocht Ainmnithe) nó Ceist 3B (Filíocht Roghnach) thíos.",
+      "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "decision": "Closed choice of (a) or (b) inside 2A, 2B (page 8), 3A (page 9) and 3B (page 11); each is a whole route."
+    },
+    {
+      "page": 9,
+      "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "– FILÍOCHT AINMNITHE nó FILÍOCHT ROGHNACH – (30 marc)",
+      "decision": "Section heading / structure statement, not a separate route."
+    },
+    {
+      "page": 10,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (Léamhthuiscint A/B, Ceist 2/3, 2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+    },
+    {
+      "page": 10,
+      "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 10,
+      "raw": "Cén mheadaracht atá sa dán seo? Scríobh pointe amháin eolais faoin meadaracht seo agus léirigh",
+      "decision": "3A(b)(iii): name the metre and one point with an accurate example, inside one 7-mark part; not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "Filíocht Roghnach",
+      "decision": "Section heading (3B. Filíocht Roghnach), not a separate route."
+    },
+    {
+      "page": 11,
+      "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "decision": "Closed choice of (a) or (b) inside 2A, 2B (page 8), 3A (page 9) and 3B (page 11); each is a whole route."
+    },
+    {
+      "page": 11,
+      "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 11,
+      "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 11,
+      "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "nó",
+      "decision": "Separates printed alternatives (Léamhthuiscint A/B, Ceist 2/3, 2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+    },
+    {
+      "page": 11,
+      "raw": "Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850) a ndearna tú",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 11,
+      "raw": "Scríobh síos dhá phointe eolais faoin teicníc sin sa dán.",
+      "decision": "Required content within the selected poem route (technique 1 + two points 3 + 3); not a selection."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
+      "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair (i), (ii) agus (iii) thíos.",
+      "decision": "4F: all three parts required in one route."
+    },
+    {
+      "page": 12,
+      "raw": "Cén t‐atmaisféar atá sa dán seo, dar leat? Tabhair dhá phointe eolais faoin atmaisféar sin.",
+      "decision": "4F(iii): two required points inside one 9-mark part (5 + 4); not a selection."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading (2021 adjusted paper: Léamhthuiscint A or B): all twelve questions of both passages are carded; each printed part is a practice card at its published tariff. “1 mharc + 1 mharc” answers expose one-mark slots (A2(b)(ii), A5(b)(ii), B2(b)(i), B3(b)(i), B4(b)(ii), B5(b)(ii)); “2 mharc + 1 mharc” items (A2(a), A3(a), A5(a), B1(a), B2(a) and both 6(a)) stay whole as 0/2/3.",
+    "A 6(b) has two independent six-mark traits (trait 2 + support 4) with practice slots; B 6(b) is a response (2) and two supported points (5 + 5) inside one response (no slots, as in 2023 B 6(b)). Both must be in the candidate’s own words.",
+    "Single-answer parts allow only the mark values the scheme prints for them (0, the printed partials and the full tariff).",
+    "Prose, poetry and Q4 choices are closed printed routes (4 + 4 + 6) and were already carded (IDs retained); the optional folktale, short story or poem itself is open content chosen inside one route."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 120 (2021 adjusted paper): Ceist 1 one reading passage, A or B, 50 (Q1–5 at 7 = (a) 3 + (b)(i) 2 + (b)(ii) 2; Q6 at 15 = (a) 3 + (b) 12); Ceist 2 Prós 30 or Ceist 3 Filíocht 30; Ceist 4 Litríocht Bhreise 40.",
+    "Reading A “John Hume – Laoch na Síochána” (paper 4–5, scheme PDF 18–22); B “Scéalta ón mbliain 2020” (paper 6–7, scheme PDF 22–26).",
+    "Literature language: 5 marks for Gaeilge in every literature answer (scheme PDF 27); prose 25 Eolas (2B(a) two traits 13 + 12, 2B(b) theme 2 + development 23); poetry printed (i) 15, (ii) 6, (iii) 9 on the paper, assessed as Eolas 13, 5, 7 plus Gaeilge 5 once; Q4 Eolas 35 (4A with one person only: 35 − 10); 4F printed (i) 20, (ii) 10, (iii) 10, assessed as Eolas 19, 7, 9 (5 + 4) plus Gaeilge 5.",
+    "Text layer: the prose and Q4 band tables print the Eolas and Gaeilge columns side by side (scheme PDF 27 and 40); each literature answer closes with the examiner’s marking-panel note, after which the Marc as 4/3/7/5 tables of the sub-questions above are stored (PDF 35, 39, 48). The builder returns each table to the sub-question it prices and ends each answer at that note.",
+    "Paper vs scheme wording: A6(b) the paper says “Bíodh sampla amháin ón sliocht agat”, the scheme omits “ón sliocht”. Cards keep the paper’s wording.",
+    "Legacy corrections (IDs, totals and topics unchanged): each whole reading question had one undivided criterion; each poem one Eolas criterion of 25. All now carry the lifted 2021 scheme text with per-part and per-sub-question tariffs."
+  ],
+  "remainingWork": []
+}

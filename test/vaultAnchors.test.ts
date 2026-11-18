@@ -36,6 +36,7 @@ import {
 import { paperRegionFor, questionsInDisplayOrder, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
 import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
+import { IRISH_ANSWER_OVERRIDES } from './fixtures/irishArchiveProgress';
 
 const ANCHORS_DIR = path.resolve(__dirname, '../public/paper-anchors');
 const HOSTED_ANSWERS_DIR = path.resolve(__dirname, '../public/paper-answers');
@@ -83,6 +84,22 @@ describe('audited hosted answer maps', () => {
     for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['agricultural-science', 'art', 'english', 'physics']).toContain(subjectId);
+      const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
+      const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
+      expect(existsSync(hosted), hosted).toBe(true);
+      expect(existsSync(source), source).toBe(true);
+      expect(readFileSync(hosted, 'utf8')).toBe(readFileSync(source, 'utf8'));
+      expect(isAnswerMap(JSON.parse(readFileSync(hosted, 'utf8')))).toBe(true);
+    }
+  });
+
+  it('keeps the reviewed Irish overrides byte-identical to their reviewed source maps', () => {
+    // The reviewed Higher/Ordinary paper components (batch 2 adds one per reviewed paper) and 18 Foundation
+    // components 2010-2026 (fixtures/irishArchiveProgress.ts).
+    const irishOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('irish|'));
+    expect(irishOverrides).toHaveLength(IRISH_ANSWER_OVERRIDES);
+    for (const key of irishOverrides) {
+      const [, year, fileid] = key.split('|');
       const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
       const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
       expect(existsSync(hosted), hosted).toBe(true);

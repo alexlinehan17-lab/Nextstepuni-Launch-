@@ -1,0 +1,890 @@
+{
+  "subjectId": "economics",
+  "year": 2010,
+  "level": "ordinary",
+  "lang": "ev",
+  "fileid": "LC034GLP000EV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef",
+  "schemeSha256": "37797a04ce05b9787f4fe173b65d4f60684d67832b1d0861b20fd1ae810618c2",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        4
+      ],
+      "tasks": [
+        {
+          "key": "i/ii",
+          "marks": 16,
+          "cardId": "econ-2010-ol-sa-q1",
+          "topicId": "economics-4-1"
+        }
+      ],
+      "boundaryReason": "One card for the two names, the paper numbering them (i)-(ii): each name 8, the scheme printing 4 + 2 + 2 beside its three words.",
+      "canonicalNodeIds": [
+        "economics-4-1"
+      ],
+      "topicReason": "The IMF and the WTO are Globalisation (4-1), as 2017 OL files them."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        4
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2010-ol-sa-q2",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "boundaryReason": "One organisation 8 from six + one measure 8 from seven: one card, two rows.",
+      "canonicalNodeIds": [
+        "economics-4-0"
+      ],
+      "topicReason": "Aid to LDCs and measures to help them are Growth & Development (4-0), as 2013 OL files aid to LDCs."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "i/ii/iii",
+          "marks": 16,
+          "cardId": "econ-2010-ol-sa-q3",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "One card for the three statements, the paper numbering them (i)-(iii): the 1st correct answer 8, the 2nd and 3rd 4 each.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Product differentiation, homogeneous goods and control over price are Market Structures (2-0)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2010-ol-sa-q4",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "The explanation (either of two) and an example, priced 16 together without a split: one questionTotal card.",
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "topicReason": "Opportunity cost is Scarcity & Choice (0-1), as 2012 OL files it."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2010-ol-sa-q5",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Two effects from eight at 8: one card.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "topicReason": "The current budget deficit is Fiscal Policy & the Budget (3-1); rising unemployment is also Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2010-ol-sa-q6",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "Two advantages from seven: the 1st correct 10, the 2nd 7.",
+      "canonicalNodeIds": [
+        "economics-3-5"
+      ],
+      "topicReason": "The advantages of more people in third-level education (a better educated workforce, productivity, FDI) are Economic Growth (3-5), as 2017 OL files the advantages of education."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2010-ol-sa-q7",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "The four items placed as substitutes or complements: the 1st correct 5, the 2nd, 3rd and 4th 4 each: one card, the item table as the crop.",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "Substitute and complementary goods are The Consumer (Demand) (1-1), as 2013 OL files them."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2010-ol-sa-q8",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "The explanation 10 + one reason 7 from nine: one card, two rows.",
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "topicReason": "Entrepreneurship is Scarcity & Choice (0-1), as 2012 OL files the entrepreneur."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2010-ol-sa-q9",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Two effects from seven, priced 17 together without a split: one questionTotal card.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "topicReason": "Cross-border shopping is International Trade & Competitiveness (4-2), as 2017 OL files it; its effect on tax revenue is also Fiscal Policy & the Budget (3-1), and on jobs Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "B1",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        9,
+        10,
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2010-ol-sb-q1-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 9,
+          "cardId": "econ-2010-ol-sb-q1-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b",
+          "marks": 24,
+          "cardId": "econ-2010-ol-sb-q1-b",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q1-c-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q1-c-ii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q1-c-iii",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) the three lines at 4 (2 + 2); a(ii) P1 and C1, the 1st correct 5 and the 2nd 4 (hidden solution diagram, the paper’s diagram beside the ask). b the three barriers, each explained with an example, the 1st correct explanation 12 and the 2nd and 3rd 6 (the scheme’s table of explanations and examples as the hidden solution). c(i) 2 at 5 (3 + 2) from five; c(ii) 2 at 5 from three; c(iii) 2 at 5 from four.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-1",
+        "economics-3-2"
+      ],
+      "topicReason": "Monopoly, its equilibrium and barriers to entry are Market Structures (2-0), as 2011 OL files them; the falling demand for letter-post is The Consumer (Demand) (1-1); the closure of rural post offices and its effects on jobs and communities are Employment & Unemployment (3-2), as 2019 OL files them."
+    },
+    {
+      "n": "B2",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 7,
+          "cardId": "econ-2010-ol-sb-q2-a-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2010-ol-sb-q2-a-ii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q2-a-iii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q2-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q2-b-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2010-ol-sb-q2-b-iii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q2-c-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q2-c-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q2-c-iii",
+          "topicId": "economics-1-2"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) 7, the scheme printing 5 and 2 beneath the two halves of its sentence; a(ii) the good 5 from three + the explanation 3 from three; a(iii) the three marginal utilities at 2, the point 2 and its explanation 2 (hidden solution table, the paper’s table beside the ask). b(i) 6, either explanation; b(ii) 6; b(iii) 2 at 4 from four. c(i) 2 at 5 (3 + 2) from five; c(ii) 2 at 5 from five; c(iii) 2 at 5 from four.",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-2",
+        "economics-4-2"
+      ],
+      "topicReason": "Marginal utility and diminishing marginal utility are The Consumer (Demand) (1-1); a fixed supply of seats and a black market for tickets are The Market Economy (1-0), as 2012 OL files a fixed supply of tickets; the falling demand for hotel accommodation is The Consumer (Demand) (1-1), its effects for the hotel industry The Market Economy (1-0), and the industry’s measures to reverse it The Firm (Supply) (1-2), as 2011 OL files Irish Rail’s actions to raise demand; tourism is also International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "B3",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        15,
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2010-ol-sb-q3-a",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q3-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q3-b-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 18,
+          "cardId": "econ-2010-ol-sb-q3-b-iii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2010-ol-sb-q3-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii",
+          "marks": 13,
+          "cardId": "econ-2010-ol-sb-q3-c-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a 4 at 5 (2 + 3) from eight. b(i) the two lines at 3; b(ii) P1 3 + Q1 3; b(iii) the new labelled supply curve 6 (3 + 3), its explanation 8, P2 2 and Q2 2 (hidden solution diagram for (ii) and (iii), the paper’s diagram beside the ask). c(i) the answer 8 + the two halves of its explanation 2 + 2; c(ii) one answer for each good, the 1st correct 8 (6 + 2) and the 2nd 5 (3 + 2).",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-2",
+        "economics-1-4",
+        "economics-1-3"
+      ],
+      "topicReason": "The determinants of demand are The Consumer (Demand) (1-1); market demand, supply and equilibrium are The Market Economy (1-0); a subsidy shifting supply is The Firm (Supply) (1-2), and the subsidy also Government Intervention (1-3); price elasticity of demand, luxuries and necessities are Elasticity (1-4)."
+    },
+    {
+      "n": "B4",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2010-ol-sb-q4-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 13,
+          "cardId": "econ-2010-ol-sb-q4-a-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2010-ol-sb-q4-b-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2010-ol-sb-q4-b-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q4-c-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q4-c-ii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q4-c-iii",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) the four lines at 3 (lines 1 and 2 at 2 + 1); a(ii) households and firms 5 (either), households and foreign markets 4, firms and foreign markets 4. b(i) the working 10 (five underlined components at 2) + the answer 2 (hidden solution working); b(ii) 8. c(i) each term 5, its two halves at 3 and 2; c(ii) 2 at 5 (2 + 3) from six; c(iii) one effect each on the labour market and on the demand for state services at 5 (2 + 3).",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-2"
+      ],
+      "topicReason": "The circular flow, national income with trade and the multiplier are National Income (3-0); emigration and immigration, their causes and effects are Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "B5",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        21,
+        22
+      ],
+      "tasks": [
+        {
+          "key": "a/i-iii",
+          "marks": 20,
+          "cardId": "econ-2010-ol-sb-q5-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 20,
+          "cardId": "econ-2010-ol-sb-q5-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 5,
+          "cardId": "econ-2010-ol-sb-q5-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q5-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q5-c-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q5-c-iii",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Six cards for eight asks totalling 75. a(i)-(iii) one card, the scheme printing (7 marks +7 marks +6 marks) beneath its three terms without saying which earns which: one ladder, one explanation per term. b(i) each canon 5; b(ii) one principle 5 from four. c(i), (ii) and (iii) each 2 at 5 from the scheme’s points for that proposal (3 x 10).",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3",
+        "economics-2-1"
+      ],
+      "topicReason": "Direct tax, capital spending, the national debt, the canons of taxation, the retirement age and a household property tax are Fiscal Policy & the Budget (3-1), as 2012 OL files the household charge; third-level fees are Government Intervention (1-3), as 2011 OL files them; the retirement age’s effect on jobs is also The Labour Market (2-1), as 2015 HL files it."
+    },
+    {
+      "n": "B6",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        23,
+        24,
+        25
+      ],
+      "tasks": [
+        {
+          "key": "a/i-iii",
+          "marks": 20,
+          "cardId": "econ-2010-ol-sb-q6-a",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q6-b-i",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q6-b-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/iii",
+          "marks": 4,
+          "cardId": "econ-2010-ol-sb-q6-b-iii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q6-c-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 15,
+          "cardId": "econ-2010-ol-sb-q6-c-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q6-c-iii",
+          "topicId": "economics-3-4"
+        }
+      ],
+      "boundaryReason": "Seven cards for nine asks totalling 75. a(i)-(iii) one card, the scheme printing (7 marks +7 marks + 6 marks) beneath its three terms without saying which earns which: one ladder, one explanation per term. b(i) 2 banks at 3 from four; b(ii) 2 at 5 (3 + 2) from six; b(iii) 4 (2 + 2) from five; the paper prints b as “(i) ... (i) ... (ii)”, an SEC misprint, and the scheme and the reader number them (i)-(iii). c(i) 10; c(ii) one effect each on borrowers, savers and the Irish economy at 5 (3 + 2); c(iii) 2 at 5 (3 + 2) from eight.",
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3"
+      ],
+      "topicReason": "Barter, interest rates, creditworthiness, commercial banks and the Central Bank’s functions are Financial Sector (3-4), as 2017 OL files money, barter and interest rates; the ECB and a rise in its interest rate are Monetary Policy & Inflation (3-3)."
+    },
+    {
+      "n": "B7",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q7-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 4,
+          "cardId": "econ-2010-ol-sb-q7-a-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/iii",
+          "marks": 15,
+          "cardId": "econ-2010-ol-sb-q7-a-iii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2010-ol-sb-q7-b-i",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/ii",
+          "marks": 4,
+          "cardId": "econ-2010-ol-sb-q7-b-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2010-ol-sb-q7-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q7-c-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q7-c-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2010-ol-sb-q7-c-iii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) 6; a(ii) 4; a(iii) one effect each on social welfare recipients, savers and employees at 5 (3 + 2). b(i) 8; b(ii) 4 (2 + 2) from four; b(iii) 2 at 4 (2 + 2) from five. c(i) the explanation 4 + one other example 6, either of two; c(ii) 2 at 5 (3 + 2) from six; c(iii) 2 at 5 from seven.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-3",
+        "economics-3-4",
+        "economics-3-1"
+      ],
+      "topicReason": "The CSO is National Income (3-0), as 2016 OL files it; deflation and its effects are Monetary Policy & Inflation (3-3); savings and why they rise are Financial Sector (3-4), as 2017 OL files savings; spending rather than saving is National Income (3-0); the black economy and cigarette smuggling are National Income (3-0), as earlier reviews file the black economy, and the lost tax revenue also Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "B8",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        30,
+        31,
+        32
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 7,
+          "cardId": "econ-2010-ol-sb-q8-a-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 18,
+          "cardId": "econ-2010-ol-sb-q8-a-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2010-ol-sb-q8-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2010-ol-sb-q8-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 12,
+          "cardId": "econ-2010-ol-sb-q8-b-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/i-iii",
+          "marks": 25,
+          "cardId": "econ-2010-ol-sb-q8-c",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Six cards for eight asks totalling 75. a(i) an open economy 5 + economic growth 2; a(ii) three reasons from five, the 1st correct 10 and the 2nd and 3rd 4. b(i) 7, the scheme printing 5 and 2 beneath the two halves of its sentence; b(ii) 2 examples at 3 from three; b(iii) two reasons from eight, the 1st correct 8 and the 2nd 4. c(i)-(iii) one card, the scheme pricing one effect per group on one ladder: the 1st correct 11 (6 + 5), the 2nd and 3rd 7 (4 + 3).",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-5",
+        "economics-3-2"
+      ],
+      "topicReason": "The open economy, exports, invisible imports, restricting imports and the euro’s exchange rate against sterling are International Trade & Competitiveness (4-2); economic growth is also Economic Growth (3-5), and employment within Ireland Employment & Unemployment (3-2)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 1,
+      "text": "Answer four questions. 5",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B, cover; read with the examiner box’s \"5\"); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six of the nine short response type questions in the spaces Q. Mark",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A, cover; read with the examiner box’s heads); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six questions from Section A and four questions from Section B. Credit will be",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Page 1 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 2,
+      "text": "(iii) Firm has complete control over price or",
+      "classification": "not-a-task-selection",
+      "reason": "Section A Q3(iii) statement, read on \"or\"; not a selection."
+    },
+    {
+      "page": 2,
+      "text": "3. Name the market structure (Perfect Competition, Imperfect Competition or Monopoly) to which each",
+      "classification": "answer-classification",
+      "reason": "Section A Q3 the market structure is the answer for each statement; one card, three answers."
+    },
+    {
+      "page": 2,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Page 2 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 3,
+      "text": "7. The following items are either substitutes or complements for Mobile Phones. From the list below,",
+      "classification": "answer-classification",
+      "reason": "Section A Q7 substitute or complement is the answer for each item; one card, four answers."
+    },
+    {
+      "page": 3,
+      "text": "Page 3 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 4,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 4,
+      "text": "Page 4 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "No. of seats",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q2(b) diagram axis label, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Page 5 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "marginal utility sets in and explain your choice.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q2(a)(iii) \"explain your choice\" asks for the reason behind the answer; not a selection."
+    },
+    {
+      "page": 6,
+      "text": "3. (a) State and explain four factors which affect the demand for a good or service.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q3(a) \"a good or service\", read on \"or\"; not a selection."
+    },
+    {
+      "page": 6,
+      "text": "Page 6 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 7,
+      "text": "Page 7 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "Page 8 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 9,
+      "text": "Page 9 of 9",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    }
+  ],
+  "reviewNote": "Review 2026-11-04 from a paired visual sweep of all 12 paper and 33 scheme pages (paper pages 10-12 are blank; scheme pages 1-3 are the SEC cover, a blank page and the title page with the index and support notes, and page 33 the back cover; scheme page numbers here are the PDF’s, one ahead of the printed ones; this scheme prints no Summary of Mark Allocations, so every tariff is read beside its part; its cover prints the level in capitals, ORDINARY LEVEL, so its scheme file was built with the appenders’ cover check pointed at the file). The old-syllabus paper: Section A nine short questions (answer six), Section B eight long questions (answer four) numbered 1-8 again, keyed B1-B8 as the Atlas numbers them. 65 routes for 74 printed asks (12 Section A + 62 Section B), 20 raw directive lines classified. Every stem and ask is sliced from the paper and every marking point from the scheme (econ_2010_ol.py). Section A Q1(i)-(ii) and Q3(i)-(iii), and Section B Q5(a)(i)-(iii), Q6(a)(i)-(iii) and Q8(c)(i)-(iii) are one card each, as the scheme prices them together. Section B Q6(b) is printed “(i) Name ... (i) Discuss ... (ii) Outline ...”, an SEC misprint; the scheme numbers the three parts (i)-(iii) and so does the reader, so the cards cite (b)(i)-(iii). Section A Q4 and Q9 print one total over their answer without dividing it, so each is a questionTotal card. No printed choice is credited with a list for each side.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "curriculumNote": "Sat on the outgoing syllabus. Its questions are filed under the Economics Topic Atlas taxonomy the Atlas uses for every sitting 2010-2026, whose canonical nodes are those of the 2019 specification; no Syllabus X-Ray link is claimed."
+}

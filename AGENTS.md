@@ -118,3 +118,10 @@
   reading period plus three recall tests. Reading lasted 5 minutes per period;
   tests lasted 10 minutes. Do not describe these as equal study time.
 - New instructions from Alex supersede these recorded decisions.
+
+## Approved focus treatment — 30 October 2026
+
+- Alex approved **Quiet white** as the app-wide and future focus treatment. Use a crisp, close warm-white edge (`#e4e2db`) on dark fields and a charcoal equivalent (`#383833`) on light fields. No orange focus beam, outer glow or stacked rings.
+- Use the shared `design/quiet-focus.css` policy for native and Kobra controls, including portals and lazy-loaded tools. Text fields, selects and textareas use a border plus 1px inset edge without layout movement. Composite input groups get one edge on the containing control.
+- Keep keyboard focus visible on buttons, links and other controls with the same neutral colour. Preserve error, success and selected-state semantics. Orange remains available for restrained brand accents, not focus outlines.
+- This supersedes older orange focus instructions. Isolated comparison pages may retain explicitly labelled alternatives; production controls must follow the approved treatment.

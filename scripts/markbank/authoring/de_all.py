@@ -58,15 +58,45 @@ sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 from de_paper import DePaper                                   # noqa: E402
-from de_scheme import DeScheme                                 # noqa: E402
+from de_scheme import (DeScheme, scheme_grid, GRID_ASK, _language_of,  # noqa: E402
+                       scheme_field_table, FIELD_ASK, read_rate)
+from paper_census import census_de                             # noqa: E402
 from de_topics import (topic_for, concept_for, language_note,   # noqa: E402
                        TEXT_TITLE)
 from paper_census import census_subject                        # noqa: E402
+import de_listen                                               # noqa: E402
+
+# Every shipped German card's conceptId, frozen (see build()).
+CONCEPT_PINS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'german-concept-ids.json')
+
+# The one row text a card may carry that is not a slice of the scheme, from
+# UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
+UNPRINTED = 'The scheme prints no answer for this part.'
+NUMBER_WORDS = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
+import de_writing                                              # noqa: E402
 import cardlint                                                # noqa: E402
 
 SUBJECT = 'german'
-YEARS = (2021, 2022, 2023, 2024, 2025)
+YEARS = (2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
+# The sittings whose reading and grammar asks are carded, and those whose
+# listening asks are (de_listen.py, answered from the SEC recording). A sitting
+# opts in once its cards have been read against its scheme, one commit each.
+READING_CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')} | {
+    (2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2019, 'hl'), (2019, 'ol'), (2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'), (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'), (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'), (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'), (2010, 'hl'), (2010, 'ol')}
+LISTENING_CARDED = {(2010, 'ol'), (2010, 'hl'), (2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'hl'), (2026, 'ol'), (2025, 'hl'), (2025, 'ol'), (2024, 'hl'), (2024, 'ol'), (2023, 'hl'), (2023, 'ol'), (2022, 'hl'), (2022, 'ol'), (2021, 'hl'), (2021, 'ol')}
+# The sittings whose written production (Äußerung zum Thema, Schriftliche
+# Produktion) is carded on the scheme's grid (de_writing.py), with the printed
+# lower expression scale and, at Ordinary, the fill-in phrases as their own card.
+WRITING_CARDED = {(2010, 'ol'), (2010, 'hl'), (2011, 'ol'), (2011, 'hl'), (2012, 'ol'), (2012, 'hl'), (2013, 'ol'), (2013, 'hl'), (2014, 'ol'), (2014, 'hl'), (2015, 'ol'), (2015, 'hl'), (2016, 'ol'), (2016, 'hl'), (2017, 'ol'), (2017, 'hl'), (2018, 'ol'), (2018, 'hl'), (2019, 'ol'), (2019, 'hl'), (2020, 'ol'), (2020, 'hl'), (2026, 'ol'), (2026, 'hl'), (2025, 'ol'), (2025, 'hl'), (2024, 'ol'), (2024, 'hl'), (2023, 'ol'), (2023, 'hl'), (2022, 'ol'), (2022, 'hl'), (2021, 'ol'), (2021, 'hl')}
+# The SEC's deferred sittings carded (2022 Higher, the only one the archive
+# holds: paper_census.DE_DEFERRED_PAPERS): ids "de-2022-hl-deferred-…",
+# cited "… — Deferred sitting", on the deferred booklets, scheme and recording.
+DEFERRED_CARDED = {(2022, 'hl')}
+# The sittings whose uncarded listening and writing asks are refused with
+# evidence (exclusions/german.json): the five the bank was first built on.
+# Every other sitting's uncarded asks stay OPEN in the census until carded.
+REFUSED_SITTINGS = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in ('hl', 'ol')}
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 
@@ -102,12 +132,18 @@ INSTRUCTION_WORDS = {
     'corresponds', 'correspond', 'numbers', 'sentences', 'article', 'given',
     'suitable', 'numbered', 'belongs', 'together', 'english', 'whether',
     'irish', 'german', 'text', 'also', 'again', 'one', 'two', 'three',
+    # The Higher matching task's German instruction (2016): "Welche
+    # Satzhälften passen zusammen? Tragen Sie die passenden Buchstaben …"
+    'welche', 'satzhälften', 'passen', 'zusammen', 'tragen', 'buchstaben',
 }
 
 
 # The answer rules the paper prints beside the question so a candidate can
 # write on them. They are the answer space, not the ask.
-ANSWER_RULE = re.compile(r'_{3,}')
+# (With the full stop the paper sets at its end, "____________. " under each
+# sentence of 2010 Higher's grammar question; never the stop of a gap inside
+# a quotation, "„________.“".)
+ANSWER_RULE = re.compile(r'_{3,}(?:\s*\.(?=\s|$))?')
 # A Wingdings bullet, which reaches the text layer as a private-use codepoint.
 # It is a printed BULLET, not a word: the SEC sets its worked example behind
 # one and the glyph gate would refuse the card for carrying an unrepairable
@@ -116,9 +152,28 @@ PRIVATE_USE = re.compile(r'[\ue000-\uf8ff]')
 
 
 def clean_question(text):
-    """The printed question, without the blank answer rules or bullet glyphs."""
+    """The printed question, without the blank answer rules or bullet glyphs,
+    nor the head of the tick table under it ("Fíor / True Bréagach / False",
+    2014 Ordinary)."""
+    text = re.sub(r'\s*(?:Fíor\s*/\s*True\s+Bréagach\s*/\s*False|True\s*/\s*False\s*/\s*Fíor\s+Bréagach)\s*$',
+                  '', text or '')
     return re.sub(r'[ \t]{2,}', ' ',
-                  PRIVATE_USE.sub(' ', ANSWER_RULE.sub(' ', text or ''))).strip()
+                  PRIVATE_USE.sub(' ', ANSWER_RULE.sub(' ', text))).strip()
+
+
+def _fragment_of(part, whole):
+    """True where `part` is a line cut out of the longer printed `whole`."""
+    a, b = ' '.join(part.split()), ' '.join(whole.split())
+    # (Or one cut at its start: "level education. What did Antonia Mandel
+    # decide to do …?" out of "According to Text III, young people have to
+    # make big decisions when they start third level education. …", 2016
+    # Ordinary — the scheme reprints only the second sentence.)
+    # (Or the title alone of a longer instruction: "Was passt zusammen?" over
+    # "Unten sehen Sie zwei Reihen von Satzhälften …", 2014 Higher.)
+    return len(a) < len(b) and a in b and (not re.search(r'[.?!)]$', a)
+                                           or bool(re.match(r'^[a-zäöüß]', a))
+                                           or (b.startswith(a) and len(a.split()) <= 4
+                                               and len(b) > len(a) + 40))
 
 
 def instruction_only(printed):
@@ -126,7 +181,15 @@ def instruction_only(printed):
     kept = []
     for line in printed.split('\n'):
         words = {w.strip(".,;:!?()").lower() for w in line.split()}
-        if kept and not (words & INSTRUCTION_WORDS):
+        # A German instruction wrapped mid-sentence carries none of the
+        # English instruction words, but its sentence is not finished: "…
+        # Sätze bilden, die auf dem Inhalt von Text II" / "basieren. …"
+        # (2017 Higher).
+        # Nor does the one German noun that ends an English one: "Give a
+        # detailed description of Johannes’s" / "Liveprüfung." (2015 Higher).
+        unfinished = kept and not re.search(r'[.?!:)]\s*$', kept[-1]) and (
+            re.match(r'^[a-zäöüß]', line) or re.fullmatch(r'[A-ZÄÖÜ][\wäöüß’-]+\.\s*', line))
+        if kept and not (words & INSTRUCTION_WORDS) and not unfinished:
             break
         kept.append(line)
     return '\n'.join(kept).strip() or printed
@@ -187,10 +250,44 @@ def build():
         for level in LEVELS:
             P = DePaper(year, level, SUBJECT)
             S = DeScheme(year, level, SUBJECT)
-            _reading(P, S, year, level, cards, refuse, pairs, by_address)
-            _grammar(P, S, year, level, cards, refuse)
-            _written(P, year, level, refuse)
-            _listening(P, year, level, refuse)
+            if (year, level) in READING_CARDED:
+                _reading(P, S, year, level, cards, refuse, pairs, by_address)
+                if S.refused_leaves:
+                    _grids(P, S, year, level, cards, set(census_de(SUBJECT, year, level)[0]))
+                _grammar(P, S, year, level, cards, refuse)
+            if (year, level) in WRITING_CARDED:
+                cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for))
+            elif (year, level) in REFUSED_SITTINGS:
+                _written(P, year, level, refuse)
+            if (year, level) in LISTENING_CARDED:
+                cards.extend(de_listen.cards(year, level, refuse, card_id, question_ref,
+                                             concept_for))
+            elif (year, level) in REFUSED_SITTINGS:
+                _listening(P, year, level, refuse)
+    for year, level in sorted(DEFERRED_CARDED, reverse=True):
+        import de_written
+        from paper_census import census_german_deferred
+        paper = next(p for p in census_german_deferred() if (p['year'], p['level']) == (year, level))
+        keys = [tuple(x['key']) for x in paper['leaves']]
+        cards.extend(de_written.cards(year, level, 'deferred', card_id, question_ref, concept_for,
+                                      refuse, keys))
+        cards.extend(de_written.grammar_cards(year, level, 'deferred', card_id, question_ref,
+                                              concept_for, refuse))
+        cards.extend(de_writing.cards(year, level, card_id, question_ref, concept_for, 'deferred'))
+        cards.extend(de_listen.cards(year, level, refuse, card_id, question_ref, concept_for,
+                                     'deferred'))
+    # A card's conceptId is its level-independent identity, the key a
+    # student's progress is carried on between Higher and Ordinary
+    # (types/markBank.ts: it "cannot be retrofitted"). It is derived from the
+    # question text, so a reader that reads a question more fully would move
+    # it: every card already in the deck keeps the conceptId it shipped with
+    # (coordinator ruling, 14 Nov). test/markBankCardPreservation.test.ts
+    # holds the deck to this file and the file to its frozen hash.
+    with open(CONCEPT_PINS, encoding='utf-8') as fh:
+        pinned = json.load(fh)
+    for card in cards:
+        if card['id'] in pinned:
+            card['conceptId'] = pinned[card['id']]
     return cards, refused, examples, excluded, pairs, by_address
 
 
@@ -198,40 +295,142 @@ def build():
 def _reading(P, S, year, level, cards, refuse, pairs, by_address):
     credit = {unit: P.credit(unit) for unit in P.unit_pages if unit.startswith('T')}
     for ask in S.reading():
+        field_note = None
         ref = question_ref(year, level, ask.unit, ask.q, ask.letter, ask.roman)
         hit = P.find(ask.unit, ask.q, ask.letter, ask.roman, ask.cue)
         by_key = False
+        whole = P.by_key(ask.unit, ask.q, ask.letter, ask.roman) if hit is not None else None
+        if whole is not None and _fragment_of(hit[0], whole[0]):
+            # The scheme reprints one sentence of a longer printed instruction
+            # ("Welche Satzhälften passen zusammen?") and the match is the
+            # paper line holding it, cut mid-sentence ("von Text II basieren.
+            # Welche Satzhälften passen zusammen? Tragen Sie die passenden"):
+            # the ask is the whole block the paper prints at its address.
+            hit = (' '.join(whole[0].split()), whole[1], hit[2])
         if hit is None:
             hit = P.by_key(ask.unit, ask.q, ask.letter, ask.roman)
             by_key = True
             if hit is not None:
                 hit = (instruction_only(hit[0]), hit[1], hit[2])
+            # The scheme splits a question the paper prints whole, its parts
+            # the answer fields under it: "Who is giving away a barbecue party
+            # and for whom? (Introduction)" over "Who?" and "For whom?" (2013
+            # Ordinary), priced "(a) 2 marks; (b) 1 mark". The paper's own
+            # "(a)" at this address is a page later, inside another question
+            # ("für alle." under question 4's "Das Gewinnspiel ist ___"): the
+            # question printed at the number is the ask.
+            whole_q = P.by_key(ask.unit, ask.q, None, ask.roman) if ask.letter else None
+            if (hit is not None and whole_q is not None and whole_q[1] < hit[1]
+                    and not any(b.side == 'R' for b in P.candidates(ask.unit, ask.q, ask.letter, ask.roman))):
+                hit = (instruction_only(whole_q[0]), whole_q[1], whole_q[2])
+                # The answer field this part is: "Cé? / Who?____" is (a).
+                fields = [f for b in P.candidates(ask.unit, ask.q, None, ask.roman) if b.side == 'L'
+                          for f in re.findall(r'/\s*([A-Z][\w ]{0,20}\?)\s*_', ' '.join(b.lines))]
+                at = 'abcdefgh'.index(ask.letter)
+                if at < len(fields):
+                    field_note = f'This part is the answer the paper asks for under “{fields[at]}”.'
         if hit is None:
             refuse('the paper prints no block this scheme ask can be matched to',
                    ref, f'{year} {level.upper()} scheme cue: "{ask.cue[:110]}"')
             continue
         question, page, score = hit
         question = clean_question(question)
+        # A part the paper prints as a label alone under its question's
+        # stem: "According to the consultants, how might the students improve
+        # their jobs? …" over "(a) Comhairle Sven Wandres / Sven Wandres’
+        # advice:" (2010 Ordinary). The stem is the ask; the label names the
+        # part.
+        stem = P.by_key(ask.unit, ask.q, None, ask.roman) if ask.letter else None
+        if (stem is not None and question.endswith(':') and len(question.split()) <= 8
+                and stem[1] <= page and clean_question(stem[0]) not in question):
+            question = f'{clean_question(instruction_only(stem[0]))} {question}'
         if by_key:
             by_address.append(ref)
         else:
             pairs.append((ref, score))
 
         rows = _rows_for(ask)
+        grid = (scheme_grid(year, level, [n for g in ask.segments for n in g['steps']])
+                if GRID_ASK.search(ask.cue or '') else None)
+        if grid:
+            # The table's own column heads, read into the ask as its last
+            # words, are not the question.
+            cut = GRID_ASK.search(question)
+            if cut:
+                question = question[:cut.end()] + '.'
+            # An answer grid (2018 Ordinary TEXT II Q1): a column per person,
+            # a row per field, each cell priced. One row per column, its cells
+            # the parts, "field — answer" as the scheme sets them.
+            rows = [{'id': f'r-{n}', 'kind': 'criterion', 'verbatim': name,
+                     'marks': sum(m for _l, _a, m in cells),
+                     'permittedMarks': list(range(sum(m for _l, _a, m in cells) + 1)),
+                     'parts': [{'id': f'p{k}', 'verbatim': f'{label} — {answer}', 'marks': m,
+                                'permittedMarks': list(range(m + 1))}
+                               for k, (label, answer, m) in enumerate(cells, start=1)],
+                     **({'contextNote': 'The scheme answers this in a table, a column for each '
+                                        'person and a row for each field; each column is one '
+                                        'row here, each of its cells a part at its printed mark.'}
+                        if n == 1 else {})}
+                    for n, (name, cells) in enumerate(grid, start=1)]
+        table = (scheme_field_table(year, level, ask.cue, ask.total,
+                                    anchor=f'{ask.q}. ({ask.total} marks)' if not ask.letter else None)
+                 if isinstance(rows, str) and FIELD_ASK.search(ask.cue or question or '') else None)
+        if table:
+            # A field table (2013 Ordinary TEXT II Q1): one row per field, a
+            # priced answer as "field — answer", a rated list as a menu.
+            rows = _field_rows(table, S.path)
         if isinstance(rows, str):
             refuse(rows, ref, f'{year} {level.upper()} scheme, tariff '
                               f'"{ask.notation}" over {len(ask.answers)} stated '
                               f'answer(s) for "{ask.cue[:80]}"')
             continue
+        if ask.short:
+            # What the scheme prices and does not print (2011 Higher TEXT II
+            # Q3(a), "(6 marks: 3 x 2 marks)" over two answers): a row of its
+            # own in the house wording, claiming nothing from the scheme.
+            n_ = ask.short['printed']
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': UNPRINTED,
+                         'marks': ask.short['marks'], 'unprinted': True,
+                         'permittedMarks': list(range(ask.short['marks'] + 1)),
+                         'contextNote': (f'The scheme prices this ask “{ask.short["rate"]}” and prints '
+                                         f'{NUMBER_WORDS.get(n_, n_)} answer{"s" if n_ != 1 else ""}; '
+                                         f'it prints no answer for the rest.')})
         if cardlint.NAMES_LETTERS.search(question):
             refuse('the ask points at printed matter the card cannot carry', ref,
                    f'{year} {level.upper()} paper: "{question[:110]}"')
             continue
 
+        # A note naming points the first list does not have — "(Allow: “Give
+        # tents to people in need” if points 5-8 not given)" under the eight
+        # "Solutions" of 2023 Higher, whose "Why" list has five — belongs to
+        # the list that has them.
+        placed = []
+        for i, seg in enumerate(ask.segments, start=1):
+            if i == 1 or not seg.get('answers'):
+                continue
+            home = next((r for r in rows if r['id'] == f'r-{i}' or r['id'].startswith(f'r-{i}-')), None)
+            for n in seg.get('notes_here', []):
+                if home is not None and n in ask.notes and n not in placed:
+                    home['contextNote'] = ' '.join(x for x in (home.get('contextNote'), n) if x)
+                    placed.append(n)
+        for n in ask.notes:
+            if n in placed:
+                continue
+            pts = re.search(r'\bpoints?\s+\d{1,2}\s*[-–]\s*(\d{1,2})\b', n)
+            size = lambda r: len((r.get('group') or {}).get('options', []))  # noqa: E731
+            home = next((r for r in rows[1:] if pts and size(rows[0]) < int(pts.group(1)) <= size(r)), None)
+            if home is not None:
+                home['contextNote'] = ' '.join(x for x in (home.get('contextNote'), n) if x)
+                placed.append(n)
         rows[0]['contextNote'] = ' '.join(
             [language_note(ask.language)]
             + ([rows[0]['contextNote']] if rows[0].get('contextNote') else [])
-            + [n for n in ask.notes]).strip()
+            + [n for n in ask.notes if n not in placed]).strip()
+        if field_note:
+            rows[0]['contextNote'] = f"{rows[0]['contextNote']} {field_note}"
+        # A priced alternative the scheme prints beside an answer is a claim of
+        # its own, paid in place of that answer (optionOf), as in listening.
+        rows = de_listen._alone_routes(de_listen._partials(rows))
         source = reading_source(P, ask.unit, ask.language, level, year)
         note = (f'The scheme reaches this ask by splitting {UNIT_NAME.get(ask.unit, ask.unit)}'
                 f' down to it and prices it {ask.total}, as {ask.notation!r}; '
@@ -273,6 +472,78 @@ def _rows_for(ask):
         steps = seg['steps']
         answers = seg['answers']
         options = [a['text'] for a in answers]
+        label = seg['label']
+        if len(options) == 1 < len(steps):
+            # One answer pricing its own components under a split naming
+            # them: "(i) 2 marks: 1, 1" over "To travel to Africa (1) when
+            # he is 18. (1)" (2019 Ordinary) — each claimed at its price.
+            parts = de_listen._components(options[0])
+            alt = _component_alternative(ask, parts)
+            if alt:
+                # … and the scheme's own cheaper form of one component under
+                # it: "He is not invited (3) to Tatjana's (1) birthday (1)
+                # party (1)" / "N.B.: He is not going (1) to Tatjana's (1) …"
+                # (2016 Ordinary). Each component a claim at its price, the
+                # alternative a partial of the one it replaces (optionOf), as
+                # 2025 Ordinary's "in summer".
+                note, k, (alt_w, alt_m) = alt
+                ask.notes.remove(note)
+                marks = [m for _w, m in parts] + [alt_m]
+                rows.append({'id': f'r-{i}', 'kind': 'anyN',
+                             'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                             'group': {'claimMax': len(parts), 'perOption': max(marks),
+                                       'options': [w for w, _m in parts] + [alt_w],
+                                       'optionMarks': marks,
+                                       'optionOf': [None] * len(parts) + [k]},
+                             'contextNote': (f'The scheme prints this answer as “{options[0]}” and, '
+                                             f'under it, “{note}”: “{alt_w}” is paid in place of '
+                                             f'“{parts[k][0]}”, never beside it.')})
+                continue
+            if parts and ([m for _w, m in parts] == steps or (
+                    len(steps) > 1 and sum(m for _w, m in parts) == sum(steps))):
+                rows.append({'id': f'r-{i}', 'kind': 'criterion',
+                             'verbatim': options[0], 'marks': sum(steps),
+                             **({'contextNote': f'The scheme heads this answer “{label}”.'}
+                                if label else {}),
+                             'permittedMarks': list(range(sum(steps) + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m,
+                                        'permittedMarks': list(range(m + 1))}
+                                       for k, (w, m) in enumerate(parts, start=1)]})
+                continue
+        whole = len(steps) == 1 and len(options) > 1
+        if 1 < len(options) < len(steps) or whole:
+            # Several answers, each pricing itself, whose prices in order are
+            # the split: "(b) 6 marks: 1, 1, 1, 1, 2" over "He is going to
+            # Croatia (1) for his LC trip/ Abi-tour (1) and … (1) with his
+            # family (1)" and "Work experience/an internship / become a
+            # journalist. (2)" (2017 Ordinary). Every answer is required.
+            own = []
+            for a in answers:
+                parts = de_listen._components(a['text'])
+                own.append(('parts', a['text'], parts) if parts else
+                           ('point', a['text'], [(a['text'], a['marks'])]) if a.get('marks') else None)
+            prices = [m for _k, _t, ps in own for _w, m in ps] if all(own) else None
+            # (Or the head prints the whole only, "(6 marks)", over "Nicolas:
+            # Food (1) and drink (1)", "Merle: …", "Björn: …", 2017 Ordinary:
+            # every answer required where their own prices make the whole and
+            # each is less than it.)
+            if prices and (prices == steps or (whole and sum(prices) == steps[0]
+                                               and all(sum(m for _w, m in ps) < steps[0]
+                                                       for _k, _t, ps in own))):
+                heads = seg.get('labels') or []
+                for k, (kind, text, ps) in enumerate(own, start=1):
+                    note = (f'The scheme heads this answer “{heads[k - 1]}”.'
+                            if len(heads) == len(own) and heads[k - 1] else None)
+                    row = {'id': f'r-{i}-{k}', 'kind': 'criterion' if kind == 'parts' else 'point',
+                           'verbatim': text, 'marks': sum(m for _w, m in ps),
+                           **({'contextNote': note} if note else {})}
+                    if kind == 'parts':
+                        row['permittedMarks'] = list(range(row['marks'] + 1))
+                        row['parts'] = [{'id': f'p{j}', 'verbatim': w, 'marks': m,
+                                         'permittedMarks': list(range(m + 1))}
+                                        for j, (w, m) in enumerate(ps, start=1)]
+                    rows.append(row)
+                continue
         if len(options) < len(steps):
             return 'the scheme prices more answers than it states'
         if not options:
@@ -301,10 +572,34 @@ def _rows_for(ask):
                 continue
         label = seg['label']
         if len(steps) == 1 and len(options) == 1:
+            parts = de_listen._components(options[0])
+            if parts and sum(m for _w, m in parts) == steps[0]:
+                # One answer the scheme prices in its own components — "Three
+                # years (1) ago (1)" — each claimed at its printed mark.
+                rows.append({'id': f'r-{i}', 'kind': 'criterion',
+                             'verbatim': options[0], 'marks': steps[0],
+                             **({'contextNote': f'The scheme heads this answer “{label}”.'}
+                                if label else {}),
+                             'permittedMarks': list(range(steps[0] + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m,
+                                        'permittedMarks': list(range(m + 1))}
+                                       for k, (w, m) in enumerate(parts, start=1)]})
+                continue
+            # The answer's restated price with the scheme's asides after it:
+            # "… beside hers. (2) (She found out where he lives only=1 mark)
+            # (He lives next door=0)" (2019 Higher). The asides are notes —
+            # and a priced one the alternative claimed in its place.
+            tail = re.fullmatch(r'(.+?)\s*\(\s*(\d{1,2})\s*(?:marks?)?\s*\)\s*((?:\([^()]*\)\s*)+)',
+                                options[0])
+            asides = None
+            if tail and int(tail.group(2)) == steps[0]:
+                options[0] = tail.group(1).strip()
+                asides = ' '.join(tail.group(3).split())
+            note = ' '.join(x for x in (f'The scheme heads this answer “{label}”.' if label else '',
+                                        asides or '') if x)
             rows.append({'id': f'r-{i}', 'kind': 'point',
                          'verbatim': options[0], 'marks': steps[0],
-                         **({'contextNote': f'The scheme heads this answer “{label}”.'}
-                            if label else {})})
+                         **({'contextNote': note} if note else {})})
             continue
         trimmed = len(options) - MAX_OPTIONS
         group = {'claimMax': len(steps), 'perOption': steps[0],
@@ -315,11 +610,17 @@ def _rows_for(ask):
         notes = []
         if label:
             notes.append(f'The scheme heads this list “{label}”.')
-        elif seg.get('labels'):
-            heads = '”, “'.join(dict.fromkeys(seg['labels']))
-            notes.append(f'The scheme prints these under the headings “{heads}”, '
-                         f'in the order shown; the paper says an answer may draw '
-                         f'on any of them.')
+        elif seg.get('labels') and any(seg['labels']):
+            heads = '”, “'.join(dict.fromkeys(x for x in seg['labels'] if x))
+            if all(re.match(r'^\([a-h]\) ', x) for x in seg['labels'] if x):
+                # Lettered categories (2015 Ordinary TEXT III Q3): what the
+                # answer may draw from them is the scheme's own N.B., quoted.
+                notes.append(f'The scheme prints these under the headings “{heads}”, '
+                             f'in the order shown.')
+            else:
+                notes.append(f'The scheme prints these under the headings “{heads}”, '
+                             f'in the order shown; the paper says an answer may draw '
+                             f'on any of them.')
         if len(steps) == len(options) and trimmed <= 0 and ask.exhaustive:
             notes.append('The scheme pays every one of these; none is optional.')
         if trimmed > 0:
@@ -335,6 +636,255 @@ def _rows_for(ask):
             **({'contextNote': ' '.join(notes)} if notes else {}),
         })
     return rows
+
+
+def _component_alternative(ask, parts):
+    """(note, index, (words, marks)) where a note under a components answer
+    prints the same answer with ONE component cheaper, else None."""
+    if not parts:
+        return None
+    for note in ask.notes:
+        m = re.match(r'^N\.?\s?B\.?:?\s*(.+)$', note)
+        alt = de_listen._components(m.group(1)) if m else None
+        if not alt or len(alt) != len(parts):
+            continue
+        differ = [k for k, (a, b) in enumerate(zip(alt, parts)) if a[0] != b[0]]
+        if (len(differ) == 1 and alt[differ[0]][1] < parts[differ[0]][1]
+                and all(a[1] == b[1] for k, (a, b) in enumerate(zip(alt, parts)) if k not in differ)):
+            return note, differ[0], alt[differ[0]]
+    return None
+
+
+def _norm_words(text):
+    return re.sub(r'[^0-9a-zäöüß]+', '', (text or '').lower())
+
+
+def _numbered(rows):
+    """How many rows carry a plain number id ("r-4"), not a route's second
+    copy ("r-4-b") or a route of its own ("r-2-c"): the next row's number."""
+    return sum(1 for r in rows if r['id'].count('-') == 1)
+
+
+def _field_rows(table, scheme_path=None):
+    """The rows of a field-table card: a field whose answer prices itself
+    ("Train (1)") is "field — answer" at that price; a field answered by a
+    rate over a numbered list is that list as a menu, the field its heading."""
+    rows = []
+    for field, answer in table:
+        name = re.sub(r'\s*\(\s*\d{1,2}\s*marks?\s*\)\s*$', '', field).rstrip(' :')
+        steps, _cnt = read_rate(answer[0]) if answer else (None, None)
+        if steps is None and answer and re.search(r':\s*\d{1,2}\s*marks?\s*:', answer[0]):
+            steps, _cnt = read_rate(answer[0].split(':', 1)[1].strip())
+        if steps is not None:
+            options, cur = [], None
+            for line in answer[1:]:
+                m = re.match(r'^\d{1,2}\.\s*(.+)$', line)
+                if m:
+                    options.append(m.group(1).strip())
+                elif options:
+                    options[-1] = f'{options[-1]} {line}'
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'anyN',
+                         'verbatim': f'{name}: the answers the scheme accepts', 'marks': None,
+                         'group': {'claimMax': len(steps), 'perOption': max(steps), 'options': options,
+                                   **({'perOptionSteps': steps} if len(set(steps)) > 1 else {})},
+                         'contextNote': f'The scheme heads this list “{name}” and prices it “{answer[0]}”.'})
+            continue
+        # The field's N.B. is its note; an "OR" alternative printed beside a
+        # priced answer ("Mother / Wife/ Helene (1) OR Parents (2)", 2012) is
+        # quoted on the row: it stands in for more than one part.
+        notes = [l for l in answer if re.match(r'^N\.?\s?B\b', l)]
+        text = ' '.join(l for l in answer if l not in notes)
+        alts = re.findall(r'\s+OR\s+([^()]+?)\s*\((\d)\)', text)
+        or_at = re.search(r'\s+OR\s+[^()]+?\s*\(\d\)', text)
+        # How many priced answers the scheme prints before its "OR": the
+        # alternative stands in for the run of them that ends there.
+        before_or = len(re.findall(r'\(\s*\d{1,2}\s*\)', text[:or_at.start()])) if or_at else 0
+        or_line = next((' '.join(l.split()) for l in answer if re.search(r'\sOR\s', l)), '')
+        text = re.sub(r'\s+OR\s+[^()]+?\s*\(\d\)', '', text)
+        priced_field = re.search(r'\(\s*(\d{1,2})\s*marks?\s*\)\s*$', field)
+        # (A field the table prices nowhere but in its answer: "Lived in…?" /
+        # "Berlin (1)", 2011.)
+        field_total = (int(priced_field.group(1)) if priced_field
+                       else sum(int(n) for n in re.findall(r'\(\s*(\d{1,2})\s*\)', text)))
+        comps = de_listen._components(text)
+        said = ([x if re.search(r'[.!?)]$', x) else f'{x}.' for x in notes]
+                + [f'The scheme prints “OR {a.strip()} ({n})” beside these.' for a, n in alts])
+        if comps and len(comps) > 1 and sum(m_ for _w, m_ in comps) == field_total:
+            # The row's own heading is the field as the scheme's text layer
+            # holds it: a label the answer column splits ("Family" / "Father
+            # … (1)" / "members …", 2012) keeps its first printed line.
+            title = name
+            if scheme_path:
+                printed = _norm_words(open(scheme_path, encoding='utf-8').read())
+                words_ = name.split()
+                title = next((' '.join(words_[:n]) for n in range(len(words_), 0, -1)
+                              if _norm_words(' '.join(words_[:n])) in printed), words_[0])
+            run = None
+            if len(alts) == 1 and before_or:
+                # "Father/Husband/ Richard (1)" / "Mother / Wife/ Helene (1) OR
+                # Parents (2)" / "Daughter (1)" (2012 Ordinary): "Parents" is
+                # paid in place of the parts it equals, ending where the "OR"
+                # is printed. Route a is those parts, route b the alternative
+                # (coordinator ruling, 14 Nov: a menu route lock, never both).
+                alt_w, alt_n = alts[0][0].strip(), int(alts[0][1])
+                for start in range(before_or):
+                    if sum(m_ for _w, m_ in comps[start:before_or]) == alt_n:
+                        run = (start, before_or)
+                        break
+            if run and run[1] - run[0] >= 2:
+                lo, hi = run
+                # "(3 marks) N.B: Accept 3 (people) for 3 marks" (2012
+                # Ordinary): an answer priced at the whole field, paid in place
+                # of every part of it. A third route, standing alone
+                # (coordinator ruling, 14 Nov).
+                whole = next((re.match(r'^(N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?)\.?$', x)
+                              for x in notes
+                              if re.match(r'^N\.?\s?B\.?:?\s*Accept\s+(.+?)\s+for\s+(\d{1,2})\s+marks?\.?$', x)), None)
+                if whole and int(whole.group(3)) != field_total:
+                    whole = None
+                said_a = [x for x in said if not x.startswith('The scheme prints “OR ')
+                          and not (whole and x.rstrip('.') == whole.group(1))]
+                rest = comps[:lo] + comps[hi:]
+                n_ = _numbered(rows) + 1
+                rows.append({'id': f'r-{n_}', 'kind': 'criterion', 'verbatim': title,
+                             'marks': alt_n, 'permittedMarks': list(range(alt_n + 1)),
+                             'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
+                                        'permittedMarks': list(range(m_ + 1))}
+                                       for k, (w, m_) in enumerate(comps[lo:hi], start=1)],
+                             'route': 'a',
+                             **({'contextNote': ' '.join(said_a)} if said_a else {})})
+                named = ' and '.join(f'“{w}”' for w, _m in comps[lo:hi])
+                rows.append({'id': f'r-{n_ + 1}', 'kind': 'point',
+                             'verbatim': f'{title} — {alt_w}', 'marks': alt_n, 'route': 'b',
+                             'contextNote': (f'The scheme prints “{or_line}”: “{alt_w}” is paid {alt_n} '
+                                             f'in place of {named}, never beside them.')})
+                # The field's other parts ("Daughter (1)") are paid on routes a
+                # and b alike; with a whole-field route beside them they sit on
+                # each of those two, never on the third (it would pay 4 of 3).
+                for k, (w, m_) in enumerate(rest):
+                    base = f'r-{n_ + 2 + k}'
+                    rows.append({'id': base, 'kind': 'point', 'verbatim': f'{title} — {w}', 'marks': m_,
+                                 **({'route': 'a'} if whole else {})})
+                    if whole:
+                        rows.append({'id': f'{base}-b', 'kind': 'point', 'verbatim': f'{title} — {w}',
+                                     'marks': m_, 'route': 'b'})
+                if whole:
+                    rows.append({'id': f'r-{n_}-c', 'kind': 'point',
+                                 'verbatim': f'{title} — {whole.group(2)}', 'marks': int(whole.group(3)),
+                                 'route': 'c',
+                                 'contextNote': (f'The scheme prints “{whole.group(1)}”: “{whole.group(2)}” is '
+                                                 f'paid {whole.group(3)}, the whole of this field, in place of '
+                                                 f'every part of it, never beside any.')})
+                continue
+            rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'criterion', 'verbatim': title,
+                         'marks': field_total, 'permittedMarks': list(range(field_total + 1)),
+                         'parts': [{'id': f'p{k}', 'verbatim': w, 'marks': m_,
+                                    'permittedMarks': list(range(m_ + 1))}
+                                   for k, (w, m_) in enumerate(comps, start=1)],
+                         **({'contextNote': ' '.join(said)} if said else {})})
+            continue
+        m = re.match(r'^(.*?)\s*\(\s*(\d{1,2})\s*\)\s*$', text)
+        if not m or int(m.group(2)) != field_total:
+            return 'the scheme answers this in a table this cannot read'
+        rows.append({'id': f'r-{_numbered(rows) + 1}', 'kind': 'point',
+                     'verbatim': f'{name} — {m.group(1)}', 'marks': int(m.group(2)),
+                     **({'contextNote': ' '.join(said)} if said else {})})
+    if isinstance(rows, str):
+        return rows
+    rows[0]['contextNote'] = ('The scheme answers this in a table, a row for each field; each '
+                              'field is one row here, at its printed mark.'
+                              + (f" {rows[0]['contextNote']}" if rows[0].get('contextNote') else ''))
+    return rows
+
+
+def _grid_rows(grid):
+    """The rows of an answer-grid card: per column, its fixed cells as one
+    criterion ("field — answer" parts at their marks), and each cell that
+    prints a choice of its own as a menu at its own rate."""
+    rows = []
+    for name, cells in grid:
+        fixed = [c for c in cells if c[1] is not None]
+        if fixed:
+            marks = sum(m for _l, _a, m in fixed)
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'criterion', 'verbatim': name,
+                         'marks': marks, 'permittedMarks': list(range(marks + 1)),
+                         'parts': [{'id': f'p{k}', 'verbatim': f'{label} — {answer}', 'marks': m,
+                                    'permittedMarks': list(range(m + 1))}
+                                   for k, (label, answer, m) in enumerate(fixed, start=1)]})
+        for label, _none, (rate, steps, answers) in (c for c in cells if c[1] is None):
+            group = {'claimMax': len(steps), 'perOption': steps[0], 'options': answers}
+            if len(set(steps)) > 1:
+                group['perOptionSteps'] = steps
+            rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'anyN',
+                         'verbatim': f'{name} — {label} the answers the scheme accepts',
+                         'marks': None, 'group': group,
+                         'contextNote': f'The scheme prints, in {name}’s column: “{rate}”.'})
+    rows[0]['contextNote'] = ' '.join(x for x in (
+        'The scheme answers this in a table, a column for each person and a row for each field; '
+        'each column is a row here, each of its cells a part at its printed mark, and a cell '
+        'that prints a choice of its own is a list.', rows[0].get('contextNote')) if x)
+    return rows
+
+
+def _grids(P, S, year, level, cards, keys):
+    """Cards for the reading asks the scheme answers with a GRID the reader
+    refused (2016 Ordinary TEXT II Q1, 2015 Ordinary TEXT II Q3): found by
+    the grid's own column-head line in the refused block, believed only where
+    every column adds to the share it prints and the columns to the ask."""
+    have = {c['id'] for c in cards}
+    credit = {unit: P.credit(unit) for unit in P.unit_pages if unit.startswith('T')}
+    for key, (total, _clause, block) in sorted(S.refused_leaves.items(), key=str):
+        unit, q, letter, roman = key
+        if not unit.startswith('T') or key not in keys or card_id(year, level, *key) in have:
+            continue
+        grid = None
+        for line in [b.strip() for b in block if b.strip()][:6]:
+            grid = scheme_grid(year, level, None, header=line)
+            if grid:
+                break
+        table = None
+        if not grid or sum((m if a is not None else sum(m[1])) for _n, cells in grid
+                           for _l, a, m in cells) != total:
+            # A field table the scheme reprints no question over (2012
+            # Ordinary TEXT II Q1, "1. (13 marks)"), the paper's ask naming it.
+            asked = P.by_key(unit, q, letter, roman)
+            table = (scheme_field_table(year, level, '', total,
+                                        anchor=f'{q}. ({total} marks)' if not letter else None)
+                     if asked is not None and FIELD_ASK.search(' '.join(asked[0].split())) else None)
+            if not table:
+                continue
+        hit = P.by_key(unit, q, letter, roman)
+        if hit is None:
+            continue
+        text, page, _s = hit
+        flat = ' '.join(text.split())
+        cut = GRID_ASK.search(flat)
+        end = flat.find('.', cut.end()) + 1 if cut else 0
+        question = clean_question(flat[:end or cut.end()] if cut else instruction_only(text))
+        rows = _grid_rows(grid) if grid else _field_rows(table, S.path)
+        if isinstance(rows, str):
+            continue
+        language = _language_of(question, None)
+        rows[0]['contextNote'] = f"{language_note(language)} {rows[0]['contextNote']}"
+        card = {
+            'id': card_id(year, level, unit, q, letter, roman),
+            'subjectId': SUBJECT, 'level': LEVEL_WORD[level], 'year': year, 'section': unit,
+            'topicId': topic_for(unit, credit.get(unit)),
+            'conceptId': concept_for(question),
+            'questionRef': question_ref(year, level, unit, q, letter, roman),
+            'questionText': question,
+            'tariffModel': {'kind': 'fixed'},
+            'totalMarks': total,
+            'rows': rows,
+            'notes': ((f'The scheme answers this ask with a table, read by its columns; it prices '
+                       f'the ask {total}, and each column the share it prints over itself.') if grid else
+                      (f'The scheme answers this ask with a ruled table, a field to a row, read by '
+                       f'position; it prices the ask {total}, and its fields add to that.')),
+        }
+        source = reading_source(P, unit, language, level, year)
+        if source:
+            card['sourceMaterial'] = source
+        cards.append(card)
 
 
 # ------------------------------------------------------ applied grammar ----
@@ -354,8 +904,28 @@ def _grammar(P, S, year, level, cards, refuse):
                               f'ANGEWANDTE GRAMMATIK {q}: "{ask.notation}"')
             continue
         rows[0]['contextNote'] = (
-            'Every gap is answered; the scheme prints the mark it pays on each. '
+            (f'The scheme prints no mark on these lines; it prices the question '
+             f'"{ask.notation}" and says: "{ask.notes[0]}". '
+             if ask.notes else
+             (f'Every gap is answered; the scheme reprints each sentence with the '
+             f'right preposition {"in bold" if ask.bold == "bold" else "circled"}, '
+             f'prices them together, "{ask.notation}", '
+             f'and each answer is shown here after its sentence\'s opening words. ')
+             if ask.bold else
+             f'Every gap is answered; the scheme prints no mark on these lines and '
+             f'prices them together, "{ask.notation}". '
+             if ask.by_rate else
+             'Every gap is answered; the scheme prints the mark it pays on each. ')
             + language_note('German'))
+        # 2010 Higher numbers question 2's answers (2) to (6), counting the
+        # worked example as (1); the paper numbers its sentences (1) to (5).
+        opts = [o for r in rows for o in ((r.get('group') or {}).get('options') or [])]
+        said = [int(m.group(1)) for m in (re.match(r'^\((\d{1,2})\)', o) for o in opts) if m]
+        printed = [int(n) for n in re.findall(r'\((\d{1,2})\)', clean_question(text) or '')]
+        if said and len(said) == len(opts) and said == [n + 1 for n in printed]:
+            rows[0]['contextNote'] += (f' The scheme numbers these answers ({said[0]}) to '
+                                       f'({said[-1]}); the paper numbers the sentences '
+                                       f'({printed[0]}) to ({printed[-1]}).')
         source = {
             'kind': 'source-text',
             'label': TEXT_TITLE['AG'],
@@ -381,9 +951,13 @@ def _grammar(P, S, year, level, cards, refuse):
             'totalMarks': ask.total,
             'rows': rows,
             'sourceMaterial': source,
-            'notes': (f'The paper sets question 1 OR question 2 here and this is '
-                      f'alternative {q}; the scheme prices it {ask.total}, as '
-                      f'{ask.notation!r}.'),
+            'notes': ((f'The paper sets questions 1 and 2 here and a candidate '
+                       f'answers both; the scheme prices question {q} '
+                       f'{ask.total}, as {ask.notation!r}.')
+                      if S.grammar_compulsory else
+                      (f'The paper sets question 1 OR question 2 here and this is '
+                       f'alternative {q}; the scheme prices it {ask.total}, as '
+                       f'{ask.notation!r}.')),
         }
         if extra:
             card['additionalSourceMaterials'] = [{

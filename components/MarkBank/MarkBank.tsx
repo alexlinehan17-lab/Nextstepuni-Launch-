@@ -23,6 +23,7 @@ import { resolveSubjectId } from '../../curriculumRegistry';
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MarkBankLibrary from './MarkBankLibrary';
+import StartingPointCheck from './StartingPointCheck';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
@@ -39,7 +40,7 @@ import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
-import type { SecCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, type SecCard } from '../../types/markBank';
 
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid } from '../ui/ProductPatterns';
@@ -64,6 +65,7 @@ const HAIRLINE = 'var(--mb-hairline)';
 
 type Screen =
   | { name: 'board' }
+  | { name: 'starting-point' }
   | { name: 'session'; cards: SecCard[]; topicId?: string }
   | { name: 'close'; results: SessionCardResult[]; topicId?: string };
 
@@ -115,10 +117,13 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     if (!subject) continue;
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
-    // The bank has no Foundation decks, so a Foundation student practises Ordinary.
+    // A Foundation student practises the Foundation deck where one is built
+    // (Irish), and Ordinary everywhere else.
     const levels = levelsFor(subject.id);
+    const stated = profileSubject.level?.toLowerCase() ?? '';
     const level: Level = levels.length === 1 ? levels[0]
-      : /^(ordinary|foundation)/.test(profileSubject.level?.toLowerCase() ?? '') ? 'ordinary' : 'higher';
+      : stated.startsWith('foundation') ? (levels.includes('foundation') ? 'foundation' : 'ordinary')
+      : stated.startsWith('ordinary') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -270,6 +275,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
 
   /* ------------------------------------------------------------ session ---- */
 
+  if (screen.name === 'starting-point') return <StartingPointCheck
+    subjectLabel={subject.title} level={level} spec={cohortMenu.spec} cards={cards}
+    memories={memories} now={now} examTs={deck.examTs} onGrade={handleGrade}
+    onClose={() => setScreen({ name: 'board' })}
+    onPractice={(topicId, card) => startSession(topicId, [card])}
+  />;
+
   if (screen.name === 'session') {
     const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const reviewPoolLabel = screen.topicId
@@ -339,7 +351,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
             {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
-            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {MARK_BANK_LEVEL_LABELS[level]} level
           </p>
 
           <ResultStatGrid items={[
@@ -388,6 +400,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
+    onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}
     loading={cardsLoading} error={cardsError} onRetry={()=>setCardsAttempt(value=>value+1)} online={online}/>;
 };

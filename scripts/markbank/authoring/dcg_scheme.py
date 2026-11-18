@@ -103,6 +103,27 @@ LEADER = re.compile(r'[\s.…·]{2,}$')
 # A marker at the head of a logical entry, whether or not its mark has arrived.
 OPENS = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)')
 
+# The degree sign as the 2018 schemes print it: a raised small letter o after
+# the digits, which the markdown flattens to "0o to 120o, Uniform Velocity".
+# append-scheme-degrees.py writes every line the PDF shows a raised o in, with
+# a degree sign, into a block at the foot of the markdown. A line here takes
+# the degree sign only where that block holds it -- compared without the
+# leading marker, which the Ordinary scheme sets as a line of its own -- so
+# nothing becomes a degree sign on the strength of a pattern alone.
+DEGREE_BLOCK = re.compile(r'<!-- markbank:degree-signs -->\n(.*?)'
+                          r'<!-- /markbank:degree-signs -->\n?', re.S)
+# The markdown sometimes sets a space before the o as well: 2017 Ordinary
+# B-2(b) reads "Semicircle in plan (or 45 o lines)" where the PDF prints 45°.
+DEGREE_O = re.compile(r'(\d) ?o(?=[\s,.;:)]|$)')
+MARKER = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)\s*')
+
+
+def _degrees(line, confirmed):
+    candidate = DEGREE_O.sub(r'\1°', line)
+    if candidate != line and MARKER.sub('', candidate) in confirmed:
+        return candidate
+    return line
+
 # Where the SEC's own arithmetic contradicts itself, keyed (year, level,
 # section, question, letter) and never inferred. Each entry records the mark
 # the scheme PRINTS, the mark its own steps and its own "Total =" line
@@ -137,6 +158,53 @@ HEAD_MISPRINTS = {
                'never opened as units at all',
     },
 }
+
+# The deferred sittings' own misprints, kept apart from the June tables so a
+# June scheme is read exactly as before. Each is a HEAD whose printed mark
+# disagrees with the steps printed under it; the card follows the printed
+# steps, every one claimable at its printed value, and the disagreement stays
+# on the census as a flag. Where the question's printed "Total =" does not
+# settle which of the two is wrong, the arithmetic flag stays too.
+DEFERRED_MISPRINTS = {
+    (2022, 'hl', 'C', 2, 'b'): {
+        'printed': 23, 'corrected': 22,
+        'why': 'the part\'s own five steps price 3+6+6+4+3 = 22, and with '
+               '(c)\'s four steps at 3+3+4+3 = 13 the question\'s steps sum to '
+               'its printed "Total = 60"; the heads (23) and (12) also sum to '
+               '60, so the scheme moves one mark between (b) and (c) without '
+               'saying which step carries it',
+    },
+    (2022, 'hl', 'C', 2, 'c'): {
+        'printed': 12, 'corrected': 13,
+        'why': 'the part\'s own four steps price 3+3+4+3 = 13; read at the '
+               'printed 12 its last step, "Draw required curvature", fell off '
+               'the part into the question\'s trailer',
+    },
+    (2023, 'hl', 'C', 2, 'b'): {
+        'printed': 9, 'corrected': 12,
+        'why': 'the part\'s own three steps price 3+6+3 = 12 (its third, '
+               '"Draw parabolic curve (Any = 1)", is printed the way (a) prints '
+               'its own); read at the printed 9 that step fell off the part. '
+               'The heads sum to the printed "Total = 60" and the steps to 63',
+    },
+}
+
+DEFERRED_HEAD_MISPRINTS = {
+    (2023, 'hl', 'C', 5, 'Sectional Elevation'): {
+        'printed': 60, 'corrected': 61,
+        'why': 'the question\'s own twelve steps price 61: its component heads '
+               'sum to the printed 60, but "Base (16)" prices its three steps '
+               'at 4+9+4 = 17. Read at the printed 60, the last step, '
+               '"Presentation, hatching and centrelines", fell off the drawing '
+               'into the question\'s trailer',
+    },
+}
+
+
+def _repeats_scope(opener, line):
+    """Does `line` open with the whole of the opener's own words?"""
+    words = OPENS.sub('', opener).strip().lower()
+    return bool(words) and line.strip().lower().startswith(words + ' ')
 
 
 def _entries(lines):
@@ -179,6 +247,15 @@ def _entries(lines):
                 out.append(pending)
                 pending = None
                 # fall through: the opener below is re-examined on its own
+            elif HEAD.match(line) and _repeats_scope(pending, line):
+                # The sub-head opens with the scope's own words: 2019
+                # Ordinary B-1 prints "(b) Interpenetration" over
+                # "Interpenetration on Left Hand Side (5)" and "...Right Hand
+                # Side (6)". Joined, the first read "Interpenetration
+                # Interpenetration on Left Hand Side", a title the SEC never
+                # printed. The opener stands alone as the letter's scope.
+                out.append(pending)
+                pending = None
             elif STEP.match(joined) or PART.match(joined):
                 out.append(joined)
                 pending = None
@@ -328,19 +405,24 @@ class Question:
         return f'<{self.section}-{self.q} {self.total}>'
 
 
-def scheme_path(year, level, subject=SUBJECT):
+def scheme_path(year, level, subject=SUBJECT, sitting='main'):
+    # A deferred sitting's scheme is "<year>-<level>-deferred.md", the name
+    # build-deck reads for a deferred card.
+    tail = '-deferred' if sitting == 'deferred' else ''
     return os.path.join(ROOT, 'examiner-reports', subject, 'schemes',
-                        f'{year}-{level}.md')
+                        f'{year}-{level}{tail}.md')
 
 
-def has_scheme(year, level, subject=SUBJECT):
-    return os.path.exists(scheme_path(year, level, subject))
+def has_scheme(year, level, subject=SUBJECT, sitting='main'):
+    return os.path.exists(scheme_path(year, level, subject, sitting))
 
 
 class DcgScheme:
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting='main'):
         self.year, self.level, self.subject = year, level, subject
-        self.path = scheme_path(year, level, subject)
+        self.sitting = sitting
+        self._tail = ' deferred' if sitting == 'deferred' else ''
+        self.path = scheme_path(year, level, subject, sitting)
         self.questions = {}
         self.flags = []
         self._read()
@@ -354,7 +436,14 @@ class DcgScheme:
         stopped = False
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
+        block = DEGREE_BLOCK.search(raw)
+        confirmed = {MARKER.sub('', ' '.join(l.split()))
+                     for l in (block.group(1).split('\n') if block else [])
+                     if l.strip()}
+        raw = DEGREE_BLOCK.sub('', raw)
         lines = [' '.join(l.split()) for l in raw.split('\n')]
+        if confirmed:
+            lines = [_degrees(l, confirmed) for l in lines]
         for line in _entries([l for l in lines if l]):
             if line.startswith('## Page'):
                 page = int(line.split()[-1])
@@ -403,14 +492,15 @@ class DcgScheme:
             if p:
                 letter_scope = None
                 marks = int(p.group(3))
-                fix = MISPRINTS.get((self.year, self.level, cur.section, cur.q,
-                                     p.group(1).lower()))
+                fix = (DEFERRED_MISPRINTS if self.sitting == 'deferred'
+                       else MISPRINTS).get((self.year, self.level, cur.section,
+                                            cur.q, p.group(1).lower()))
                 if fix and fix['printed'] == marks:
                     marks = fix['corrected']
                     self.flags.append({
                         'type': 'sec-misprint',
-                        'where': f'{self.year} {self.level} {cur.section}-'
-                                 f'{cur.q}({p.group(1)})',
+                        'where': f'{self.year} {self.level}{self._tail} '
+                                 f'{cur.section}-{cur.q}({p.group(1)})',
                         'detail': f'the scheme prints ({fix["printed"]}) where '
                                   f'{fix["corrected"]} is required: '
                                   f'{fix["why"]}'})
@@ -430,14 +520,15 @@ class DcgScheme:
             h = HEAD.match(line)
             if h:
                 title, marks = _clean(h.group(1)), int(h.group(2))
-                fix = HEAD_MISPRINTS.get((self.year, self.level, cur.section,
-                                          cur.q, title))
+                fix = (DEFERRED_HEAD_MISPRINTS if self.sitting == 'deferred'
+                       else HEAD_MISPRINTS).get((self.year, self.level,
+                                                 cur.section, cur.q, title))
                 if fix and fix['printed'] == marks:
                     marks = fix['corrected']
                     self.flags.append({
                         'type': 'sec-misprint',
-                        'where': f'{self.year} {self.level} {cur.section}-'
-                                 f'{cur.q} "{title}"',
+                        'where': f'{self.year} {self.level}{self._tail} '
+                                 f'{cur.section}-{cur.q} "{title}"',
                         'detail': f'the scheme prints ({fix["printed"]}) where '
                                   f'{fix["corrected"]} is required: '
                                   f'{fix["why"]}'})

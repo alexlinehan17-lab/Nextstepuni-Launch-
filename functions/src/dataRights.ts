@@ -31,6 +31,7 @@ interface CascadeReport {
   progressDeleted: number;
   sessionsDeleted: number;
   srsDeleted: number;
+  studyPlansDeleted: number;
   settingsDeleted: number;
   responsesDeleted: number;
   notificationsDeleted: number;
@@ -122,7 +123,7 @@ async function cascadeDeleteUser(
   uid: string,
 ): Promise<CascadeReport> {
   const r: CascadeReport = {
-    legalAgreementRecordsDeleted: 0, usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, settingsDeleted: 0,
+    legalAgreementRecordsDeleted: 0, usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, studyPlansDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
     gcFlagsDeleted: 0, islandPublicDeleted: 0, staffMembershipsDeleted: 0,
     accessRecordsDeleted: 0, rateLimitsDeleted: 0, analyticsEventsDeleted: 0,
@@ -166,17 +167,20 @@ async function cascadeDeleteUser(
   // explicitly — add the next one at the same time you add the feature.
   r.srsDeleted = await deleteAll(db, db.collection("progress").doc(uid).collection("srs"));
 
+  r.studyPlansDeleted = await deleteAll(db, db.collection("progress").doc(uid).collection("studyPlans"));
+
   // Single docs keyed by uid.
   const singles: Array<[string, keyof CascadeReport]> = [
     ["progress", "progressDeleted"],
     ["settings", "settingsDeleted"],
     ["responses", "responsesDeleted"],
     ["notifications", "notificationsDeleted"],
+    ["browserNotifications", "notificationsDeleted"],
     ["islandPublic", "islandPublicDeleted"],
   ];
   for (const [coll, key] of singles) {
     const ref = db.collection(coll).doc(uid);
-    if ((await ref.get()).exists) { await ref.delete(); (r[key] as number) = 1; }
+    if ((await ref.get()).exists) { await ref.delete(); (r[key] as number) += 1; }
   }
 
   // Peer-feature docs sent by or to this student.
@@ -432,6 +436,7 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
   data.settings = await get1("settings");
   data.responses = await get1("responses");
   data.notifications = await get1("notifications");
+  data.browserNotifications = await get1("browserNotifications");
   // The classmate-visible copy of the island (year islands), so the student
   // can see exactly what their year group sees. Null when it is hidden.
   data.islandSharedWithYear = await get1("islandPublic");
@@ -439,6 +444,7 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
   // Mark Bank spaced-repetition memory, one document per deck. Held in a
   // SUBCOLLECTION of progress/{uid}, so data.progress above does not contain
   // it — an Article 15 export that omitted this would be incomplete.
+  data.studyPlans = (await db.collection("progress").doc(targetUid).collection("studyPlans").get()).docs.map(d => ({ planId: d.id, ...d.data() }));
   data.markBankMemory = (await db.collection("progress").doc(targetUid).collection("srs").get())
     .docs.map((d) => ({ deckId: d.id, ...d.data() }));
 

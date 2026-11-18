@@ -1,0 +1,772 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2022,
+ "level": "higher",
+ "lang": "ev",
+ "sitting": "main",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-04",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2022_hl.py",
+ "sourceHashes": {
+  "paper-trail-corpus/exampapers/2022/LC027ALP000EV.pdf": "c815ddd627053c4c24519bdc4a4c1eea0fb7ec75fc229cd3d974cafdfccc9e80",
+  "paper-trail-corpus/markingschemes/2022/LC027ALP000EV.pdf": "d18fdc8caa0e66638fa805df0b1cacf6ff9c4b55d156a941134029fb07c1fd17"
+ },
+ "expectedRuntimeCards": 80,
+ "reason": "2022 Higher main English written paper: every one of the 80 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 4 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-inventors-and-engineers-in-society",
+    "engineering-higher-machining-metrology",
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-mechanisms",
+    "engineering-higher-the-structure-of-materials",
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-heat-treatment",
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-metallurgy",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "n": "8",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-health-and-safety",
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "n": "9",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2022-hl-q1-a",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-b",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-c",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-d",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-e",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-f",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-g",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-h",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-i",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-j",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-k",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-l",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q1-m",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q2-a-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q2-a-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q2-b",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q2-c",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q2-d",
+   "markBankTopicId": "eng-2-13",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q2-e",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Artificial intelligence and smart manufacturing (the 2022 Higher special topic), which the reference files Q2 under; the card's syllabus heading is Technology, or Manufacturing processes for smart manufacturing."
+  },
+  {
+   "cardId": "eng-2022-hl-q3-a-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-a-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-a-iii",
+   "markBankTopicId": "eng-2-13",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ],
+   "canonicalTopicReview": "Quality control: inspecting and testing products against a standard, which the reference files Q3(a) under."
+  },
+  {
+   "cardId": "eng-2022-hl-q3-b-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-b-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-b-iii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-c-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q3-c-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-a-i",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-a-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-a-iii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-b-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-b-iii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-c-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q4-c-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-a-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-a-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-b-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-b-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-c",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials",
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-metallurgy"
+   ],
+   "canonicalTopicReview": "Any two of dislocations (structure), the environment's corrosive effects (corrosion) and the refining of aluminium (metallurgy); Q5 is otherwise filed under structure and equilibrium diagrams only.",
+   "addedToQuestion": [
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-metallurgy"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-c-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q5-c-ii",
+   "markBankTopicId": "eng-3-7",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-corrosion-of-metals"
+   ],
+   "canonicalTopicReview": "The corrosive effects of the environment on metal objects.",
+   "addedToQuestion": [
+    "engineering-higher-corrosion-of-metals"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-b-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-b-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-b-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-b-iv",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-c-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q6-c-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-a-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-b-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-b-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-b-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-b-iv",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Recycling plastic mobile phone covers, which the reference files Q7(b) under; the card's syllabus heading is Technology (recycling and sustainability)."
+  },
+  {
+   "cardId": "eng-2022-hl-q7-b-v",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q7-c-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "Glass against polycarbonate for screen protectors: a polymer's properties, which the reference files Q7(c) under."
+  },
+  {
+   "cardId": "eng-2022-hl-q7-c-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-a-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-a-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-a-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-b-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-b-ii",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-health-and-safety"
+   ],
+   "canonicalTopicReview": "Interlocking guards and electrical isolating switches are machine and workshop safety; Q8 is otherwise filed under machining.",
+   "addedToQuestion": [
+    "engineering-higher-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-b-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-b-iv",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-b-v",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-health-and-safety"
+   ],
+   "canonicalTopicReview": "Interlocking guards and electrical isolating switches are machine and workshop safety; Q8 is otherwise filed under machining.",
+   "addedToQuestion": [
+    "engineering-higher-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-c-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q8-c-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-a-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-a-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-b-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-b-ii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-b-iii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-b-iv",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-b-v",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-c-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2022-hl-q9-c-ii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  }
+ ]
+}

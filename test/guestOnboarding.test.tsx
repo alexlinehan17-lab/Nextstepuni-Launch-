@@ -145,7 +145,7 @@ const GUEST_DESKTOP_DRAFT_KEY = 'nextstepuni:onboarding-draft:v2:guest:fresh';
 const reviewDraft = () => ({
  version:2,step:'summary',year:'6th',category:'college-learning',vision:['campus'],subjects:['English','Mathematics'],
  configs:{English:{level:'higher',current:'H4',target:'H2',reviewed:true},Mathematics:{level:'ordinary',current:'O3',target:'O1',reviewed:true}},
- date:'2030-06-05',dateConfirmed:true,rest:['Sunday'],gradeSubject:'English',
+ date:'2030-06-05',dateEdited:true,rest:['Sunday'],gradeSubject:'English',
 });
 
 const { collection: _collectionStub, ...firestoreWrites } = firestoreSpies;

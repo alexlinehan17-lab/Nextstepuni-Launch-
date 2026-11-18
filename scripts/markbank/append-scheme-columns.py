@@ -52,6 +52,10 @@ ROOT = Path(__file__).resolve().parents[2]
 START = '<!-- markbank:column-runs -->'
 END = '<!-- /markbank:column-runs -->'
 
+# A scheme's markdown is '<year>-<level>.md', or '<year>-<level>-deferred.md'
+# for a deferred sitting, which this tool does not append to.
+SCHEME_STEM = re.compile(r'^(\d{4})-(hl|ol|fl|cl)(-deferred)?$')
+
 # Split at any gap wider than an ordinary word space, which measures 2.7pt across
 # every SEC scheme here. Deliberately low: the SEC sets some tables with a gutter
 # of only 5pt, and a threshold set to clear justified text (Business 2023 stretches
@@ -283,7 +287,11 @@ def main() -> None:
     if sys.argv[1:2] == ['--all']:
         for md in sorted((ROOT / 'examiner-reports').glob('*/schemes/*.md')):
             subject = md.parents[1].name
-            year, level = md.stem.split('-')
+            stem = SCHEME_STEM.match(md.stem)
+            if stem is None or stem.group(3):
+                print(f'{md.parents[1].name} {md.stem}: ' + ('deferred, skipped' if stem else 'not a sitting, skipped'))
+                continue
+            year, level = stem.group(1), stem.group(2)
             if pdf_for(subject, int(year), level) is None:
                 print(f'{subject} {year} {level}: no PDF, skipped')
                 continue

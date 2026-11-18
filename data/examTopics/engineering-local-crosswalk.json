@@ -13,7 +13,7 @@
     "examAuthority": "State Examinations Commission",
     "commercialReferenceUse": "Factual topic labels, hierarchy, headings, and counts only.",
     "excludedCommercialContent": "Question text, solutions, notes, videos, images, PDFs, and mock content.",
-    "preservation": "Every frozen Engineering card remains present; the four 2026 official-language editions are added from entitled SEC PDFs."
+    "preservation": "Every frozen Engineering card remains present; the four 2026 official-language editions are added from entitled SEC PDFs, and the 2022 and 2023 Higher deferred sittings as papers of their own."
   },
   "summary": {
     "referenceTopics": 74,
@@ -23,23 +23,32 @@
     "referenceOfficialAssociations": 2921,
     "referenceMockAssociations": 1760,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 2287,
-    "sourceBlockedAssociations": 634,
+    "matchedAssociations": 2460,
+    "sourceBlockedAssociations": 461,
     "sourceBlockedBreakdown": {
       "beforeLocalCorpus": 363,
-      "deferred": 173,
+      "deferred": 0,
       "sample": 98
     },
-    "matchedLogicalCards": 254,
-    "matchedQuestionTopicLinks": 1568,
+    "matchedLogicalCards": 270,
+    "matchedQuestionTopicLinks": 1675,
+    "reviewedQuestionTopicAdditions": 11,
     "retainedLocalLogicalCards": 0,
-    "localPaperVariants": 66,
-    "localPhysicalMappings": 508,
-    "distinctStudentFacingQuestions": 254,
+    "localPaperVariants": 68,
+    "localPhysicalMappings": 526,
+    "distinctStudentFacingQuestions": 272,
+    "deferredPaperVariants": 2,
+    "deferredPhysicalMappings": 18,
+    "deferredMatchedAssociations": 173,
+    "deferredReviewedQuestionTopicAdditions": 6,
+    "deferredQuestionsFromReviewOnly": [
+      "2022|2",
+      "2022|7"
+    ],
     "newlyAddedPaperVariants": 4,
     "newlyAddedPhysicalMappings": 32,
     "verifiedSchemeMaps": 64,
-    "verifiedPaperOnlyMaps": 2,
+    "verifiedPaperOnlyMaps": 4,
     "preservedBaselineVariants": 62,
     "preservedBaselineCards": 476,
     "emptyReferenceTopics": [
@@ -581,8 +590,15 @@
       "tail": " - Part C",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-corrosion-of-metals",
@@ -596,8 +612,15 @@
       "tail": " - Part C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-corrosion-of-metals",
@@ -633,8 +656,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-corrosion-of-metals",
@@ -1426,8 +1456,15 @@
       "tail": "",
       "n": "2",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "2"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1441,8 +1478,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1456,8 +1500,15 @@
       "tail": " - Part B - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1471,8 +1522,15 @@
       "tail": " - Part B - (iv)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1486,8 +1544,15 @@
       "tail": " - Part E",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1501,8 +1566,15 @@
       "tail": " - Part I",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1516,8 +1588,15 @@
       "tail": " - Part L",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1531,8 +1610,15 @@
       "tail": " - Part C - Part 2",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1546,8 +1632,15 @@
       "tail": " - Part C - Part 2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1561,8 +1654,15 @@
       "tail": " - Part C - Part 2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1774,8 +1874,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1789,8 +1896,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1804,8 +1918,15 @@
       "tail": " - Part B - (iv)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1819,8 +1940,15 @@
       "tail": " - Part E",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1834,8 +1962,15 @@
       "tail": " - Part G",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1849,8 +1984,15 @@
       "tail": " - Part I",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1864,8 +2006,15 @@
       "tail": " - Part M",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1879,8 +2028,15 @@
       "tail": " - Part C2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -1894,8 +2050,15 @@
       "tail": " - Part C2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-energy-electronics-robotics",
@@ -3049,8 +3212,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-equilibrium-diagrams",
@@ -3064,8 +3234,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-equilibrium-diagrams",
@@ -3123,8 +3300,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-equilibrium-diagrams",
@@ -3138,8 +3322,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-equilibrium-diagrams",
@@ -3153,8 +3344,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-equilibrium-diagrams",
@@ -3955,8 +4153,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-graphics-and-design",
@@ -4520,8 +4725,15 @@
       "tail": " - Part A - (ii)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-health-and-safety",
@@ -4535,8 +4747,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-health-and-safety",
@@ -5543,8 +5762,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -5558,8 +5784,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -5573,8 +5806,15 @@
       "tail": " - Part C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -5632,8 +5872,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -5647,8 +5894,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -5662,8 +5916,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-heat-treatment",
@@ -6272,8 +6533,15 @@
       "tail": " - Part J",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-inventors-and-engineers-in-society",
@@ -6309,8 +6577,15 @@
       "tail": " - Part J",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-inventors-and-engineers-in-society",
@@ -6941,8 +7216,15 @@
       "tail": " - Part G",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -6956,8 +7238,15 @@
       "tail": " - Part C - Part 1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -6971,8 +7260,15 @@
       "tail": " - Part C - Part 2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -6986,8 +7282,15 @@
       "tail": " - Part A",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -7001,8 +7304,15 @@
       "tail": " - Part B",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -7104,8 +7414,15 @@
       "tail": " - Part A,B,C1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-machining-metrology",
@@ -8148,8 +8465,15 @@
       "tail": " - Part A - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-materials-properties-and-uses",
@@ -8163,8 +8487,15 @@
       "tail": " - Part M",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-materials-properties-and-uses",
@@ -8244,8 +8575,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-materials-properties-and-uses",
@@ -8259,8 +8597,15 @@
       "tail": " - Part H",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-materials-properties-and-uses",
@@ -9264,8 +9609,15 @@
       "tail": " - Part A - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9279,8 +9631,15 @@
       "tail": " - Part A - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9294,8 +9653,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9309,8 +9675,15 @@
       "tail": " - Part B - (iii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9324,8 +9697,15 @@
       "tail": " - Part B - (v)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9339,8 +9719,15 @@
       "tail": " - Part H",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9354,8 +9741,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9479,8 +9873,15 @@
       "tail": " - Part B - (iii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9494,8 +9895,15 @@
       "tail": " - Part B - (v)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -9509,8 +9917,15 @@
       "tail": " - Part C1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-mechanisms",
@@ -10046,8 +10461,15 @@
       "tail": " - Part C",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-metallurgy",
@@ -10304,8 +10726,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-pneumatics",
@@ -10319,8 +10748,15 @@
       "tail": " - Part B - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-pneumatics",
@@ -10922,8 +11358,15 @@
       "tail": "",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "engineering-higher-polymers",
@@ -10937,8 +11380,15 @@
       "tail": " - Part K",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-polymers",
@@ -10996,8 +11446,15 @@
       "tail": " - Part F",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-polymers",
@@ -11981,8 +12438,15 @@
       "tail": " - Part A - (i)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -11996,8 +12460,15 @@
       "tail": " - Part A - (ii)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -12011,8 +12482,15 @@
       "tail": " - Part B",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -12026,8 +12504,15 @@
       "tail": " - Part C",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -12063,8 +12548,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -12078,8 +12570,15 @@
       "tail": " - Part L",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-testing-of-materials-and-products",
@@ -12990,8 +13489,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13005,8 +13511,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13020,8 +13533,15 @@
       "tail": " - Part C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13123,8 +13643,15 @@
       "tail": " - Part D",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13138,8 +13665,15 @@
       "tail": " - Part K",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13153,8 +13687,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13168,8 +13709,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13183,8 +13731,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-the-structure-of-materials",
@@ -13919,8 +14474,15 @@
       "tail": " - Part F",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-welding",
@@ -13934,8 +14496,15 @@
       "tail": " - Part C - Part 1",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-welding",
@@ -13949,8 +14518,15 @@
       "tail": " - Part A",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-welding",
@@ -13964,8 +14540,15 @@
       "tail": " - Part B",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-welding",
@@ -14023,8 +14606,15 @@
       "tail": " - Part A,B,C1",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-welding",
@@ -27893,8 +28483,15 @@
       "tail": " - Part G",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-cadcam",
@@ -27908,8 +28505,15 @@
       "tail": " - Part C - Part 2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-cadcam",
@@ -27945,8 +28549,15 @@
       "tail": " - Part E",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-cadcam",
@@ -27960,8 +28571,15 @@
       "tail": " - Part C2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-cadcam",
@@ -28438,8 +29056,15 @@
       "tail": " - Part J",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-in-society",
@@ -28519,8 +29144,15 @@
       "tail": " - Part G",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-in-society",
@@ -28534,8 +29166,15 @@
       "tail": " - Part J",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-in-society",
@@ -28549,8 +29188,15 @@
       "tail": " - Part M",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-in-society",
@@ -29511,8 +30157,15 @@
       "tail": "",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29526,8 +30179,15 @@
       "tail": " - Part A - (ii)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29541,8 +30201,15 @@
       "tail": " - Part F",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29556,8 +30223,15 @@
       "tail": " - Part K",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29571,8 +30245,15 @@
       "tail": " - Part C - Part 1",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29586,8 +30267,15 @@
       "tail": " - Part C - Part 1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29601,8 +30289,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29616,8 +30311,15 @@
       "tail": " - Part C - Part 2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29631,8 +30333,15 @@
       "tail": " - Part A",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29646,8 +30355,15 @@
       "tail": " - Part B",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29661,8 +30377,15 @@
       "tail": " - Part A",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29676,8 +30399,15 @@
       "tail": " - Part B",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29933,8 +30663,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29948,8 +30685,15 @@
       "tail": " - Part A,B,C1",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -29963,8 +30707,15 @@
       "tail": " - Part A,B,C1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-manufacturing-skills",
@@ -32736,8 +33487,15 @@
       "tail": "",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -32751,8 +33509,15 @@
       "tail": " - Part A - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -32766,8 +33531,15 @@
       "tail": " - Part M",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -32847,8 +33619,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -32862,8 +33641,15 @@
       "tail": " - Part F",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -32877,8 +33663,15 @@
       "tail": " - Part H",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials-processing-and-selection",
@@ -34412,8 +35205,15 @@
       "tail": " - Part E",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-measurement-quality-and-automation",
@@ -34427,8 +35227,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-measurement-quality-and-automation",
@@ -34508,8 +35315,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-measurement-quality-and-automation",
@@ -34523,8 +35337,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-measurement-quality-and-automation",
@@ -34538,8 +35359,15 @@
       "tail": " - Part C2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-measurement-quality-and-automation",
@@ -35016,8 +35844,15 @@
       "tail": " - Part C - Part 2",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-advanced-and-autonomous-system",
@@ -35650,8 +36485,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-control-system-design",
@@ -35834,8 +36676,15 @@
       "tail": " - Part B - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-control-systems",
@@ -35849,8 +36698,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-control-systems",
@@ -36062,8 +36918,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36077,8 +36940,15 @@
       "tail": " - Part E",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36092,8 +36962,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36107,8 +36984,15 @@
       "tail": " - Part C - Part 2",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36122,8 +37006,15 @@
       "tail": " - Part C - Part 2",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36159,8 +37050,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36174,8 +37072,15 @@
       "tail": " - Part B - (iv)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36189,8 +37094,15 @@
       "tail": " - Part C2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-sensors-actuators-and-energy",
@@ -36755,8 +37667,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-specification-and-prototyping",
@@ -36770,8 +37689,15 @@
       "tail": " - Part C - Part 2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-specification-and-prototyping",
@@ -36807,8 +37733,15 @@
       "tail": " - Part A,B,C1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-engineering-specification-and-prototyping",
@@ -37522,8 +38455,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-functionality-and-human-centred-design",
@@ -37537,8 +38477,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-functionality-and-human-centred-design",
@@ -38243,8 +39190,15 @@
       "tail": " - Part B - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -38258,8 +39212,15 @@
       "tail": " - Part B - (iv)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -38273,8 +39234,15 @@
       "tail": " - Part C - Part 2",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -38288,8 +39256,15 @@
       "tail": " - Part B",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -38303,8 +39278,15 @@
       "tail": " - Part B - (ii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -38318,8 +39300,15 @@
       "tail": " - Part I",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems",
@@ -39484,8 +40473,15 @@
       "tail": " - Part I",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-energy-and-power",
@@ -39499,8 +40495,15 @@
       "tail": " - Part L",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-energy-and-power",
@@ -40731,8 +41734,15 @@
       "tail": "",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40746,8 +41756,15 @@
       "tail": " - Part A - (i)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40761,8 +41778,15 @@
       "tail": " - Part C",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40776,8 +41800,15 @@
       "tail": " - Part C - Part 1",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40791,8 +41822,15 @@
       "tail": " - Part B",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40806,8 +41844,15 @@
       "tail": " - Part C",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40821,8 +41866,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40836,8 +41888,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40851,8 +41910,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40866,8 +41932,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40881,8 +41954,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -40896,8 +41976,15 @@
       "tail": " - Part C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41131,8 +42218,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41146,8 +42240,15 @@
       "tail": " - Part C",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41161,8 +42262,15 @@
       "tail": " - Part D",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41176,8 +42284,15 @@
       "tail": " - Part K",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41191,8 +42306,15 @@
       "tail": " - Part L",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41206,8 +42328,15 @@
       "tail": " - Part A",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41221,8 +42350,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41236,8 +42372,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41251,8 +42394,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -41266,8 +42416,15 @@
       "tail": " - Part B",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-materials",
@@ -44954,8 +46111,15 @@
       "tail": " - Part A - (i)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -44969,8 +46133,15 @@
       "tail": " - Part A - (ii)",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -44984,8 +46155,15 @@
       "tail": " - Part B - (iii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -44999,8 +46177,15 @@
       "tail": " - Part B - (v)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -45014,8 +46199,15 @@
       "tail": " - Part H",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -45029,8 +46221,15 @@
       "tail": " - Part C - Part 1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -45154,8 +46353,15 @@
       "tail": " - Part B - (iii)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -45169,8 +46375,15 @@
       "tail": " - Part B - (v)",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",
@@ -45184,8 +46397,15 @@
       "tail": " - Part C1",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC027ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "engineering-higher-new-course-mechanisms-motion-and-structures",

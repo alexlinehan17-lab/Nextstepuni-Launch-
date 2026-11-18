@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
-import { daysUntil, gradeBarHeight, needsDate, type GradeChoice } from "./model";
+import { daysUntil, gradeBarHeight, needsDate, requiresGradeSetup, type GradeChoice } from "./model";
 import {
   useSetupFlow,
   PointsCount,
@@ -581,7 +581,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                             >
                               <span className="setup-subject-name">
                                 <SubjectAvatar subject={item.name} />
-                                <span>{item.name}</span>
+                                <span>{item.label ?? item.name}</span>
                               </span>
                               <span className="setup-subject-state" aria-hidden="true">
                                 {draft.subjects.includes(item.name) ? "Added" : "Add"}
@@ -683,21 +683,12 @@ export default function DesktopSetup(props: OnboardingProps) {
                               onChange={(event) =>
                                 patch({
                                   date: event.target.value,
-                                  dateConfirmed: false,
+                                  dateEdited: true,
                                 })
                               }
                             />
                           </label>
-                          <label className="setup-confirm">
-                            <input
-                              type="checkbox"
-                              checked={draft.dateConfirmed}
-                              onChange={(event) =>
-                                patch({ dateConfirmed: event.target.checked })
-                              }
-                            />
-                            <span>This is the right date for me.</span>
-                          </label>
+                          <p className="setup-description">Your exam date is filled in for you. You can change it here or later in Your setup.</p>
                         </>
                       )}
                       <fieldset className="setup-week-field">
@@ -762,9 +753,9 @@ export default function DesktopSetup(props: OnboardingProps) {
                           <div className="setup-review-subject" key={name}>
                             <span>
                               {name}
-                              {!lca && <small>{gradeLabel(name)}</small>}
+                              {requiresGradeSetup(draft.year, name) && <small>{gradeLabel(name)}</small>}
                             </span>
-                            {!lca && (
+                            {requiresGradeSetup(draft.year, name) && (
                               <button
                                 type="button"
                                 className="setup-text"
@@ -819,7 +810,6 @@ export default function DesktopSetup(props: OnboardingProps) {
                                       year: "numeric",
                                     })
                                   : "Choose a date"}
-                                {!draft.dateConfirmed && " · Not confirmed"}
                               </dd>
                             </div>
                           )}

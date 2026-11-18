@@ -21,6 +21,7 @@ import {
 } from '../../data/examTopics/registry';
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 import { physicalEducationTask, withPhysicalEducationAtlasTasks } from './physicalEducationTasks';
+import { isDeferredFileid } from './sitting';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -39,7 +40,9 @@ export const paperKeyOf = (label: string): string =>
  * Music have independently selectable components that restart at Q1; legacy
  * Spanish uses one paper slot for both written and aural cards. Their
  * normalised booklet id must therefore remain in the logical key to prevent
- * false deduplication. */
+ * false deduplication. The SEC's deferred sitting ("...-deferred.pdf") is a
+ * paper of its own numbered like June's, so its questions are never collapsed
+ * into June's; no other booklet's key changes. */
 export const logicalQuestionIdentity = (question: Pick<
   TopicSibling,
   'subjectId' | 'level' | 'year' | 'paperKey' | 'fileid' | 'n'
@@ -50,7 +53,7 @@ export const logicalQuestionIdentity = (question: Pick<
   question.paperKey,
   question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
     ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
-    : '',
+    : isDeferredFileid(question.fileid) ? 'deferred' : '',
   question.n,
 ].join('|');
 

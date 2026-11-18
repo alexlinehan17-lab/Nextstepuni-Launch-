@@ -1,0 +1,545 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2023,
+ "level": "ordinary",
+ "lang": "ev",
+ "sitting": "main",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-04",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2023_ol.py",
+ "sourceHashes": {
+  "paper-trail-corpus/exampapers/2023/LC027GLP000EV.pdf": "c84631bbd4e8f96c5ecede972128f6cffee6389c75395be08ee1a676ed7b2155",
+  "paper-trail-corpus/markingschemes/2023/LC027GLP000EV.pdf": "3b59840db8e455b11af4bbaa5f9317084b46489bc1fb63866e73c309468ecdd0"
+ },
+ "expectedRuntimeCards": 54,
+ "reason": "2023 Ordinary main English written paper: every one of the 54 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 0 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-design-project-management",
+    "engineering-ordinary-health-and-safety",
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-materials-properties-and-uses",
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-polymers",
+    "engineering-ordinary-tools-mechanisms",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-furnaces",
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-energy-electronics-robotics",
+    "engineering-ordinary-health-and-safety",
+    "engineering-ordinary-heat-treatment",
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-tools-mechanisms",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-materials-properties-and-uses",
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-energy-electronics-robotics",
+    "engineering-ordinary-machining-metrology"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2023-ol-q1-a",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-design-project-management"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-b",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-c",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-d",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-mechanical-joining-assembly"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-e",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-f",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-g",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-h",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-design-project-management"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-design-project-management"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-j",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-k",
+   "markBankTopicId": "eng-1-2",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-l",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q1-m",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q2-a",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q2-b",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q2-c-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ],
+   "canonicalTopicReview": "Choosing a material for each part of the go-kart, and why, which the reference files Q2(c) under; the card's syllabus heading is Technology, the electric go-kart being the question's subject."
+  },
+  {
+   "cardId": "eng-2023-ol-q2-c-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ],
+   "canonicalTopicReview": "Choosing a material for each part of the go-kart, and why, which the reference files Q2(c) under; the card's syllabus heading is Technology, the electric go-kart being the question's subject."
+  },
+  {
+   "cardId": "eng-2023-ol-q2-d-i",
+   "markBankTopicId": "eng-1-2",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces",
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q2-d-ii",
+   "markBankTopicId": "eng-1-2",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces",
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-a",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-b-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-b-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-c",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-d",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q3-d-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Robotics in health care and exoskeleton suits (the OR branch of Q3(d)); the card's syllabus heading is Technology, where the syllabus places robotics."
+  },
+  {
+   "cardId": "eng-2023-ol-q3-d-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Robotics in health care and exoskeleton suits (the OR branch of Q3(d)); the card's syllabus heading is Technology, where the syllabus places robotics."
+  },
+  {
+   "cardId": "eng-2023-ol-q4-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-a-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-b",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-c-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-c-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-c-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-mechanical-joining-assembly",
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-c-iv",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q4-d",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q5-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q5-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q5-b",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q5-c",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q5-d",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q6-a",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q6-b",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q6-c-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q6-c-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q6-c-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-a",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-b-i",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-b-ii",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-b-iii",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-b-iv",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-c",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe",
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-c-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-c-ii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2023-ol-q7-c-iii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ]
+  }
+ ]
+}

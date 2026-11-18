@@ -24,11 +24,15 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { isRubricCard, tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { groupMarks, isRubricCard, ladderGroupMarks, optionGroupMarks, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { irishPartCount } from '@/components/MarkBank/irishScoring';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '@/components/MarkBank/cards/irish/ordinary';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
 import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
+import { CARDS as SPANISH_HIGHER } from '@/components/MarkBank/cards/spanish/higher';
+import { CARDS as SPANISH_ORDINARY } from '@/components/MarkBank/cards/spanish/ordinary';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({
   // Source-reader interaction is independent of PDF rasterisation. Keep the
@@ -66,6 +70,26 @@ const renderSession = (cards: SecCard[], reviewPool?: { total: number; label: st
     />,
   );
   return { ...utils, onGrade, onFinish, onExit };
+};
+
+/** Full marks on one Irish criterion through its revealed box: each sub-question's best rows claimed (a stepped
+ *  row at its top step, a ladder's rows ticked), or the mark itself where the scheme is not cut into rows. */
+const claimIrishCriterion = (criterion: IrishCriterion, label = criterion.label) => {
+  const scope = screen.getByText(label, { selector: 'strong' }).closest('section')!;
+  if (!criterion.allocation) {
+    fireEvent.click(within(scope).getByRole('button', { name: `Set ${label} to ${criterion.maxMarks} marks` }));
+    return;
+  }
+  const clicked = new Set<HTMLElement>();
+  for (const part of criterion.allocation.parts) {
+    const rows = part.ladder ? part.rows.slice(0, part.ladder.length) : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, irishPartCount(part));
+    for (const row of rows) {
+      const name = row.steps ? `Claim ${row.steps.at(-1)} marks for ${row.text}` : part.ladder ? row.text : `${row.text} · ${row.marks}m`;
+      const button = within(scope).getAllByRole('button', { name }).find(candidate => !clicked.has(candidate))!;
+      clicked.add(button);
+      fireEvent.click(button);
+    }
+  }
 };
 
 /* ------------------------------------------------------------ mark logic ---- */
@@ -109,6 +133,90 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     expect(marksClaimed(c, {}, { g: [0, 1, 2, 3] })).toBe(12);
     // Never more than the examiner marks, however many are ticked.
     expect(marksClaimed(c, {}, { g: [0, 1, 2, 3, 4] })).toBe(12);
+  });
+
+  test('options priced one by one pay the best claimed, once, at its own price', () => {
+    // Spanish 2020 HL listening Q5(b): "A recognised qualification" (2m)
+    // "[degree = 2m]", then "to understand how the language works" (2m)
+    // "[to understand the language = 1m]". The full answer and its partial are
+    // one pick: claiming both still earns the full answer once.
+    const c = card({
+      totalMarks: 4,
+      rows: [
+        row({ id: 'a', kind: 'anyN', marks: null, group: { claimMax: 1, perOption: 2, options: ['A recognised qualification', 'degree'], optionMarks: [2, 2] } }),
+        row({ id: 'b', kind: 'anyN', marks: null, group: { claimMax: 1, perOption: 2, options: ['to understand how the language works', 'to understand the language'], optionMarks: [2, 1] } }),
+      ],
+    });
+    expect(claimableTotal(c)).toBe(4);
+    expect(marksClaimed(c, {}, { b: [1] })).toBe(1);
+    expect(marksClaimed(c, {}, { b: [0] })).toBe(2);
+    expect(marksClaimed(c, {}, { b: [1, 0] })).toBe(2);
+    expect(marksClaimed(c, {}, { a: [1], b: [1] })).toBe(3);
+    // A menu of two answers with a partial option: the best two, each once.
+    const menu = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'anyN', marks: null, group: { claimMax: 2, perOption: 2, options: ['x', 'y', 'z', 'part of y'], optionMarks: [2, 2, 2, 1] } })],
+    });
+    expect(marksClaimed(menu, {}, { g: [0, 3] })).toBe(3);
+    expect(marksClaimed(menu, {}, { g: [3, 0, 1] })).toBe(4);
+  });
+
+  test('a full answer and its own partial in one menu pay once, at the best of them', () => {
+    // Spanish 2010 OL listening Q2(b) "Two of: White [1m] blouse (shirt) [1m]/
+    // green [1m] jersey[1m]/ grey [1m] skirt[1m] (1+1+1+1 marks)": each garment
+    // answer at 2 and its colour or garment alone at 1. Before optionOf the
+    // menu paid its best two TICKS, so "White blouse (shirt)" with "White" paid
+    // 3 for an answer worth 2. Each answer now counts once.
+    const shipped = SPANISH_ORDINARY.find(c => c.id === 'es-2010-ol-l-2-b') as SecQuestionCard;
+    const group = shipped.rows[0].group!;
+    expect(group.options.slice(0, 4)).toEqual(['White blouse (shirt)', 'green jersey', 'grey skirt', 'White']);
+    expect(group.optionOf).toEqual([null, null, null, 0, 0, 1, 1, 2, 2]);
+    const g = 'r-1';
+    expect(marksClaimed(shipped, {}, { [g]: [0, 3] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 3, 4] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: [3, 4] })).toBe(1);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 1] })).toBe(4);
+    expect(marksClaimed(shipped, {}, { [g]: [0, 5] })).toBe(3);
+    expect(marksClaimed(shipped, {}, { [g]: [3, 5, 7] })).toBe(2);
+    expect(marksClaimed(shipped, {}, { [g]: group.options.map((_o, i) => i) })).toBe(4);
+    // The same group read without its links pays the double claim: the defect.
+    expect(optionGroupMarks({ ...group, optionMarks: group.optionMarks!, optionOf: undefined }, [0, 3])).toBe(3);
+    // Three partials of one answer pay that answer once, at the best partial
+    // (2022 HL B Q4(b) "[to help them = 1m; to improve = 1m; to improve their
+    // working conditions =1m]").
+    const desigual = SPANISH_HIGHER.find(c => c.id === 'es-2022-hl-b-4-b') as SecQuestionCard;
+    expect(marksClaimed(desigual, {}, { 'r-1': [3, 4, 5] })).toBe(1);
+    expect(marksClaimed(desigual, {}, { 'r-1': [1, 3] })).toBe(3);
+    expect(marksClaimed(desigual, {}, { 'r-1': [0, 1, 3] })).toBe(6);
+  });
+
+  test('every Spanish menu priced option by option ties each partial to an answer it cannot raise', () => {
+    // Claiming an answer with any of its partials pays the answer alone, and the
+    // whole menu claimed pays what the group is worth, never more.
+    let partials = 0;
+    for (const c of [...SPANISH_HIGHER, ...SPANISH_ORDINARY] as SecQuestionCard[]) {
+      for (const r of c.rows ?? []) {
+        const gr = r.group;
+        if (!gr?.optionMarks) continue;
+        expect(gr.optionOf, `${c.id} links its partials`).toHaveLength(gr.options.length);
+        const marks = gr.optionMarks;
+        // A menu paid in falling steps pays by the ladder (#366: es-2015-hl-a1a-3,
+        // "Leaves a tip [2] of 100 million" in a 4 + 3 + 3 menu).
+        const steps = gr.perOptionSteps;
+        const pay = (picked: number[]) => (steps
+          ? ladderGroupMarks({ ...gr, perOptionSteps: steps, optionMarks: marks }, picked)
+          : optionGroupMarks({ ...gr, optionMarks: marks }, picked));
+        gr.optionOf!.forEach((of, i) => {
+          if (of === null) return;
+          partials += 1;
+          expect(gr.optionOf![of], `${c.id} option ${i} credits an answer`).toBeNull();
+          expect(pay([of, i]), `${c.id} option ${i} with its answer`).toBe(steps ? Math.min(marks[of], Math.max(...steps)) : marks[of]);
+        });
+        expect(pay(gr.options.map((_o, i) => i))).toBe(groupMarks(gr));
+        expect(groupMarks(gr)).toBeLessThanOrEqual(c.totalMarks);
+      }
+    }
+    expect(partials).toBeGreaterThanOrEqual(59);
   });
 
   test('an unclaimed asterisked row costs only its own marks', () => {
@@ -366,11 +474,32 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByText(/Príomhoifig Staidrimh/)).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/ }));
     expect(screen.getByRole('dialog', { name: /Irish question 2/ })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Open the original illustration sheet/ }))
+    // The Irish edition is the question paper, not an illustration sheet.
+    expect(screen.getByRole('link', { name: /Open the original paper/ }))
       .toHaveAttribute('href', expect.stringContaining('LC034GLP000IV.pdf'));
     fireEvent.keyDown(document.body, { key: 'Escape' });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/POS stands for Príomhoifig Staidrimh/)).toBeInTheDocument();
+  });
+
+  test('does not lose a rapid Next click to an intermediate source-page scroll', async () => {
+    renderSession([card({ sourceMaterial: {
+      kind: 'source-text', label: 'Listening pictures', title: 'Three printed pages',
+      pages: [3, 4, 5], attribution: 'SEC', presentationNote: 'Original pages.',
+    } })]);
+    fireEvent.click(screen.getByRole('button', { name: /Read Listening pictures/i }));
+    const track = screen.getByLabelText('Listening pictures pages');
+    Object.defineProperty(track, 'clientWidth', { value: 390 });
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    track.scrollLeft = 40;
+    await act(async () => {
+      fireEvent.scroll(track);
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    });
+    expect(screen.getByLabelText('Page 2 of 3')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    expect(screen.getByLabelText('Page 3 of 3')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=5'));
   });
 
   test('opens Art imagery from the companion booklet, not the question paper', () => {
@@ -383,6 +512,33 @@ describe('the question comes first and stays', () => {
     const original = screen.getByRole('link', { name: /Open the original illustration sheet/i });
     expect(original).toHaveAttribute('href', expect.stringContaining('LC014ALP004BV.pdf'));
     expect(original).not.toHaveAttribute('href', expect.stringContaining('LC014ALP000EV.pdf'));
+  });
+
+  test('keeps every Irish additional-poetry part when opening and closing both printed versions', () => {
+    const irish = IRISH_HIGHER.find(entry => entry.id === 'irish-2025-hl-p2-literature-4-f')!;
+    renderSession([irish]);
+    const prompt = screen.getByTestId('mark-bank-question-text');
+    expect(prompt).toHaveTextContent('Tabhair sampla amháin');
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Read Litríocht Bhreise/i }));
+    expect(screen.getByRole('dialog', { name: /Caoineadh Airt Uí Laoghaire/i })).toBeInTheDocument();
+    // The reader shows the paper's own pages 13 and 14, page for page.
+    expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=13'));
+    fireEvent.click(screen.getByRole('button', { name: /Next source page/i }));
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=14'));
+    fireEvent.click(screen.getByRole('button', { name: /Close source text/i }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    // (i), (ii) and (iii) are each cut into the scheme's rows; Gaeilge is one placed mark.
+    if (!isRubricCard(irish) || irish.rubric.system !== 'irish') throw new Error('not an Irish card');
+    expect(irish.rubric.criteria.map(criterion => [criterion.label, criterion.maxMarks, Boolean(criterion.allocation)])).toEqual([
+      ['(i) Eolas', 17, true], ['(ii) Eolas', 9, true], ['(iii) Eolas', 9, true], ['Gaeilge', 5, false],
+    ]);
+    for (const criterion of irish.rubric.criteria) claimIrishCriterion(criterion);
+    expect(screen.getByText('40 / 40')).toBeInTheDocument();
   });
 
   test('renders and scores the published Art descriptor bands', () => {
@@ -452,6 +608,16 @@ describe('the question comes first and stays', () => {
     expect(parts[2]).toHaveTextContent('Justify your answer at part (b) above.');
   });
 
+  test('keeps the Irish "(a) thuas" (part (a) above) in the part that refers to it', () => {
+    // 2010 Ordinary Paper 2, Filíocht Roghnach (b)(ii): the "(a)" is a reference back to part (a), not a sub-part.
+    const printed = IRISH_ORDINARY.find(entry => entry.id === 'irish-2010-ol-p2-poetry-roghnach-b-ii')!;
+    renderSession([printed]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(0);
+    expect(rendered).toHaveTextContent('agus nár úsáid tú i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean.');
+  });
+
   test('sets a printed bullet list in the stem one item to a line', () => {
     // Synthetic, shaped like Art 2018 OL Q4.
     renderSession([card({ stem: 'Choose one of the following and answer (a), (b) and (c):\n• First building\n• Second building.' })]);
@@ -488,8 +654,9 @@ describe('the question comes first and stays', () => {
   });
 
   test('shows and grades an Irish listening section once, then advances past every child card', () => {
+    // June's two fógraí (the deferred sitting's play their own recording: markBankIrishDeferred.test.ts).
     const listening = IRISH_HIGHER.filter(entry =>
-      entry.year === 2025 && entry.topicId === 'irish-1-0');
+      entry.year === 2025 && entry.topicId === 'irish-1-0' && !entry.id.includes('-deferred-'));
     const next = card({ id: 'after-listening', questionText: 'The next visible exercise.' });
     const { onGrade, onFinish } = renderSession([...listening, next]);
 
@@ -513,23 +680,16 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('1 of 2 this review')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
-    const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    // Each fógra's scheme is cut into sub-questions and rows: claim the full
-    // answers of every sub-question so each extract earns its whole tariff.
-    const claimFullMarks = (scope: HTMLElement, card: SecCard) => {
-      if (!isRubricCard(card) || card.rubric.system !== 'irish') throw new Error('not an Irish card');
-      for (const part of card.rubric.criteria[0].allocation!.parts) {
-        const rows = part.ladder
-          ? part.rows.slice(0, part.ladder.length)
-          : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, Math.max(1, Math.floor(part.tariff / Math.max(...part.rows.map(row => row.marks)))));
-        for (const row of rows) {
-          fireEvent.click(within(scope).getByRole('button', { name: part.ladder ? row.text : `${row.text} · ${row.marks}m` }));
-        }
-      }
-    };
-    claimFullMarks(firstScheme, listening[0]);
-    claimFullMarks(secondScheme, listening[1]);
+    // Each fógra keeps one box per printed question ("Fógra a hAon · Ceist 1(a)"), cut into the scheme's
+    // answers: claim the full answers of every question so each extract earns its whole tariff.
+    for (const [index, section] of ['Fógra a hAon', 'Fógra a Dó'].entries()) {
+      const member = listening[index];
+      if (!isRubricCard(member) || member.rubric.system !== 'irish') throw new Error('not an Irish card');
+      expect(member.rubric.criteria.every(criterion => criterion.allocation)).toBe(true);
+      for (const criterion of member.rubric.criteria) claimIrishCriterion(criterion, `${section} · ${criterion.label}`);
+    }
+    // The "Official answers and tariff" chip heads each fógra's run of boxes once, not every box.
+    expect(screen.getAllByText('Official answers and tariff')).toHaveLength(2);
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);
@@ -543,6 +703,15 @@ describe('the question comes first and stays', () => {
     expect(document.querySelector('audio')).not.toBeInTheDocument();
     expect(screen.getByText('The next visible exercise.')).toBeInTheDocument();
     expect(screen.queryByTestId('mark-bank-listening-questions')).not.toBeInTheDocument();
+  });
+
+  test('heads each announcement\'s run of one-question listening boxes with one guidance chip', () => {
+    // 2026 Higher Cuid A ships one card per printed question; the sheet still reads as two announcements.
+    const listening = IRISH_HIGHER.filter(entry => entry.year === 2026 && /^irish-2026-hl-p1-listening-a-f[12]-/.test(entry.id));
+    expect(listening).toHaveLength(7);
+    renderSession(listening);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getAllByText('Official answers and tariff')).toHaveLength(2);
   });
 
   test('reads numbered question parts with their wording instead of as isolated numbers', () => {

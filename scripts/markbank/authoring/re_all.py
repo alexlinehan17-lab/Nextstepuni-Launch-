@@ -107,8 +107,13 @@ def build(verbose=False):
         refused[reason] += 1
         examples[reason].append(ref)
 
+    # A sitting rebuilt as band-grid cards (re_lane.py) is carded there, once.
+    from re_lane import sittings_built
+    rebuilt = set(sittings_built())
     for year in YEARS:
         for level in LEVELS:
+            if (year, level) in rebuilt:
+                continue
             P = RePaper(year, level)
             S = ReScheme(year, level)
             pkeys = list(P.asks)

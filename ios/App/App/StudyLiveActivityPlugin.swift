@@ -141,10 +141,10 @@ enum StudyActivityController {
         return true
     }
 
-    /// A running countdown goes stale when it ends, so the Lock Screen can say
-    /// "Time's up" even if the app is not running to tell it.
+    /// The system can show completion at the countdown deadline or stopwatch
+    /// cap even while the app is suspended.
     private static func staleDate(for state: StudyTimerAttributes.ContentState) -> Date? {
-        state.phase == .running && state.countsDown ? state.endsAt : nil
+        state.timerEndsAt
     }
 
     private static func request(_ state: StudyTimerAttributes.ContentState) throws {

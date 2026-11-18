@@ -65,7 +65,7 @@ struct StudyTimerLiveActivity: Widget {
                 DynamicIslandExpandedRegion(.trailing) {
                     VStack(alignment: .trailing, spacing: 1) {
                         if state.phase == .done || stale {
-                            Text(state.phase == .done ? state.doneLabel : "Time’s up")
+                            Text(state.completionLabel)
                                 .font(.system(size: 20, weight: .semibold, design: .serif))
                                 .foregroundColor(.white)
                                 .minimumScaleFactor(0.7)
@@ -114,7 +114,7 @@ struct StudyTimerLiveActivity: Widget {
                     Image(systemName: "checkmark")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(Palette.dark.success)
-                        .accessibilityLabel(state.phase == .done ? state.doneLabel : "Time’s up")
+                        .accessibilityLabel(state.completionLabel)
                 } else {
                     TimerText(state: state)
                         .font(.system(size: 15, weight: .semibold).monospacedDigit())
@@ -165,7 +165,7 @@ private struct LockScreenView: View {
                 Spacer(minLength: 6)
                 VStack(alignment: .trailing, spacing: 1) {
                     if finished {
-                        Text(state.phase == .done ? state.doneLabel : "Time’s up")
+                        Text(state.completionLabel)
                             .font(.system(size: 24, weight: .semibold, design: .serif))
                             .foregroundColor(palette.ink)
                     } else {
@@ -239,7 +239,11 @@ private struct TimerText: View {
                 Text("0:00")
             }
         } else {
-            Text(timerInterval: state.startedAt...state.startedAt.addingTimeInterval(8 * 3600), countsDown: false)
+            if let end = state.timerEndsAt, state.startedAt < end {
+                Text(timerInterval: state.startedAt...end, countsDown: false)
+            } else {
+                Text(Clock.format(state.totalSeconds))
+            }
         }
     }
 }

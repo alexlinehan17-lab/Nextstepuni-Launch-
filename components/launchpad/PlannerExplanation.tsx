@@ -28,7 +28,7 @@ export default function PlannerExplanation({ open, onClose, priorities, allocati
   return (
     <ModalFrame open={open} onClose={onClose} width="xl" eyebrow="The Planner · Behind your plan" title="A little more time where it counts." labelledBy="planner-explanation-title">
       <div className="lp-plan-explanation">
-        <p className="lp-plan-intro">Your targets set the direction. Your topic confidence helps decide where to spend the time. Every subject keeps a place in the week.</p>
+        <p className="lp-plan-intro">Your targets set the direction. Due reviews and recent subject contact help decide where to spend the time. The plan fits within its time limit.</p>
         {active && <div className="lp-plan-inspector">
           <nav className="lp-plan-subjects" aria-label="Inspect a subject’s allocation">
             <p className="lp-eyebrow">Your subjects <span>Blocks</span></p>
@@ -62,7 +62,7 @@ export default function PlannerExplanation({ open, onClose, priorities, allocati
             <ol>{bestSix.map(p => <li key={p.subjectName}><i aria-hidden="true" style={{ background: getSubjectFill(p.subjectName) }} /><span>{p.subjectName}</span><small>{p.targetGrade}</small><b>{p.targetPoints}</b></li>)}</ol>
             {outside.length > 0 && <p className="lp-plan-outside"><strong>Outside this projected six:</strong> {outside.map(p => `${p.subjectName} (${p.targetGrade}, ${p.targetPoints} pts)`).join('; ')}. These subjects still receive study time.</p>}
           </section>
-          <section className="lp-plan-week"><p className="lp-eyebrow">Room for the whole week</p><h3>{totalSessions} focused blocks.<br />{Math.floor(totalMinutes / 60)}h{totalMinutes % 60 ? ` ${totalMinutes % 60}m` : ''} of study.</h3><p>{workloadExplanation}</p><p>Blocks are spread across your available days, with repeat sessions spaced apart. The plan keeps maintenance time for every subject.</p><p className="lp-plan-footnote">Change your grades, topic confidence or available days and the plan adjusts with you.</p></section>
+          <section className="lp-plan-week"><p className="lp-eyebrow">Room for the whole week</p><h3>{totalSessions} focused blocks.<br />{Math.floor(totalMinutes / 60)}h{totalMinutes % 60 ? ` ${totalMinutes % 60}m` : ''} of study.</h3><p>{workloadExplanation}</p><p>Blocks are spread across your chosen days, with repeat sessions spaced apart. Subject coverage is balanced within the time limit.</p><p className="lp-plan-footnote">Change your grades or available days and the plan adjusts with you. Completed sessions and confidence alone do not prove recall.</p></section>
         </div>
       </div>
     </ModalFrame>

@@ -1,0 +1,158 @@
+{
+  "year": 2011,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP100IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "4fbb004b58e224398f9978613175c4db0ae28fc611701c6b7670cc5dfcc5176d",
+  "schemeSha256": "6e73ff5b1d21c777f7d39b3731cb7d7e6b0156fe6043c00f4fea9291032e0ad3",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    11
+  ],
+  "schemeScope": "Combined Ordinary scheme (12 pages). PDF 1 cover; 2 blank; 3 general marking instruction (red ink, major errors underlined) and Páipéar I Ceist 1 composition marking (tariffs Tasc 3, Ábhar 9, Cumas Gaeilge 48 for each of two pieces, “= 60 marc × 2 = 120 marc”; the bracketed Cumas Gaeilge definition; the bracketed content note; the examiner’s Nóta; a bracketed Nóta on “Gaeilge Lochtach”); 4 Ceist 2 reading (each question restated with one price, no answers; a 0–5 language deduction for each passage; B’s closing note on redundancy and language); 5–9 Páipéar II; 10 the listening test; 11 Socruithe Réasúnta; 12 empty.",
+  "reviewMethod": "Every paper page (1 instructions, 2 composition, 3–4 reading, 5–8 “Leathanach Bán”) and every applicable scheme page read in the text layer and checked against the printed page. The reading pages are typeset in tiles whose edges repeat the boundary glyph in the text layer (“John Hum me”, “C Cén”); the builder reads each page glyph by glyph by origin, draws a repeated glyph once and keeps the two passage columns apart, and asserts every prompt, title and composition line against that reading. The scheme sets its multiplication sign (PDF 3, 5, 6, 8, 9) and its PDF 11 bullets in SymbolMT (U+F0B4, U+F0B7), read as × and •.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "(leathleathanach nó mar sin) a bheadh idir an bheirt agaibh faoin ábhar sin.",
+      "decision": "Length guidance inside composition D(i) (“leathleathanach nó mar sin”); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Bhí gach rud go breá ach amháin an bia san óstán. Scríobh an litir (leathleathanach nó",
+      "decision": "Content of composition C(ii) and its length guidance; not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta",
+      "decision": "Composition B: write one story from one of the printed openings; each opening is its own title card."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+      "decision": "Ceist 1 choose two of A–D: choice is not a route; each printed title is its own 60-mark card carrying this instruction; no combination cards."
+    },
+    {
+      "page": 2,
+      "raw": "Is maith leatsa am a chaitheamh ar Facebook nó ar Twitter ach ceapann do chara",
+      "decision": "Content of composition D(ii); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig an gcara sin ag gabháil",
+      "decision": "Content and length guidance of composition C(i); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:",
+      "decision": "Composition A: one of the three printed titles; each title is its own card."
+    },
+    {
+      "page": 2,
+      "raw": "buíochais leis/léi agus ag insint dó/di faoin úsáid a bhaineann tú as an mbronntanas.",
+      "decision": "Content of composition C(i) (the leis/léi, dó/di gender forms); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "gur cur amú ama iad. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh",
+      "decision": "Content and length guidance of composition D(ii); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "nó",
+      "decision": "The “nó” between the printed alternatives of B, C and D; each alternative is its own title card."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair A agus B anseo.",
+      "decision": "Ceist 2: both passages A and B are compulsory; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá ghearán a rinne daoine laistigh dá pháirtí faoi John Hume. (Alt 4)",
+      "decision": "Reading A 4: two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá thoradh a bhí ar na cainteanna i dTuaisceart na hÉireann sna nóchaidí. (Alt 3)",
+      "decision": "Reading A 3: two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh na trí ghradam a bhuaigh John Hume. (Alt 5)",
+      "decision": "Reading A 5(b): three required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read passage A and answer every question with it; not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "tíre tar éis vótáil dá rogha duine as cúigear a bhí",
+      "decision": "Passage A text (Alt 5); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "1. Is í Sinéad Ahearne an peileadóir a d’ainmnigh",
+      "decision": "Passage B text (Alt 1); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh dhá ghrúpa a mhol Sinéad. (Alt 5)",
+      "decision": "Reading B 5(b): two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh dhá rud a rinne Sinéad sa chluiche leathcheannais i gcoinne Chontae Laoise. (Alt 3)",
+      "decision": "Reading B 3: two required answers inside one 10-mark question priced whole; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh duine amháin a bhí an-tógtha le himirt Shinéad sa chluiche ceannais. (Alt 4)",
+      "decision": "Reading B 4(b): one required answer; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read passage B and answer every question with it; not a selection."
+    },
+    {
+      "page": 4,
+      "raw": "duine nuair a theipeann air nó uirthi. Is sampla",
+      "decision": "Passage B text (Alt 5); not an instruction."
+    },
+    {
+      "page": 4,
+      "raw": "gcoinne Chontae Laoise, níor scóráil sí ach dhá",
+      "decision": "Passage B text (Alt 3); not an instruction."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Páipéar I before 2012 is the composition and the reading (220); the listening test is a paper of its own (irish_ordinary_2011_aural.py).",
+    "Composition: each of the nine printed titles is one 60-mark card (Tasc 3, Ábhar 9, Cumas Gaeilge 48, as the scheme prices each of the two pieces); choose-two is a choice, not a route; no combination cards. The scheme prints no 48-mark table, so Cumas Gaeilge is judged on its printed aspects.",
+    "Reading: the scheme prints no answers, only each question’s asks restated and one 10-mark price; each question is one card with one 10-mark criterion claimed whole (0 or 10) and marked tariffOnly; no part is a practice card of its own, because the scheme prices no part on its own. The card says “The scheme prints no answer for this part.”"
+  ],
+  "sourceFindings": [
+    "Páipéar I = 220: composition 120 (any two of A–D at 60: Tasc 3, Ábhar 9, Cumas Gaeilge 48) and reading 100 (A John Hume and B Sinéad Ahearne, five questions each at 10).",
+    "Reading (PDF 4): each question restated with one price and no answer; B 2’s price is printed “= 10 mar”, kept as printed. One 0–5 language deduction for each passage, and B’s closing Nóta on redundancy (“Gearrfar pionós i ngeall ar iomarcaíocht.”); cards state them without applying them.",
+    "Composition (PDF 3): the examiner’s Nóta misprints “Tasc” as “Tásc”; kept as printed. No 48-mark table and no short-attempt columns.",
+    "The reading pages’ text layer is tiled (each tile repeats its boundary glyph); the printed page reads normally, and every carded line is read from glyph origins with each repeated glyph drawn once."
+  ],
+  "remainingWork": []
+}

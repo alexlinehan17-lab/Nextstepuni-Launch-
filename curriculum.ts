@@ -145,7 +145,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-3-3",
-            "name": "Cruinneas Teanga (Grammar within Léamhthuiscint B)"
+            "name": "Cruinneas Teanga (Grammar within Léamhthuiscint)"
           }
         ]
       },

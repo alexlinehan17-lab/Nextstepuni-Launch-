@@ -204,6 +204,14 @@ TRAILING_FURNITURE = re.compile(
     # question may well end on one.
     r'|(?-i:(?:\s+[A-H]){2,})\s*$', re.I)
 
+# The fixed wording of the two rows that claim nothing from the scheme's text
+# (see Author._special). UNPRINTED_ANSWER mirrors types/markBank.ts and
+# build-deck.mjs, which refuse any other wording; ASK_NOTE is the note the
+# Chemistry deck's drawn-answer rows already carry.
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
+ASK_NOTE = ('The scheme answers this part with a drawing or notation its text '
+            'cannot carry; its own print is shown with the answer.')
+
 # Which subjects get the question-text handling below. It is deliberately an
 # ALLOWLIST rather than a default. The work it does -- taking the page's
 # furniture off the end of an ask, joining a cue's children across letters as
@@ -406,10 +414,28 @@ class Author:
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
-             tick=None, first_sentence=False, ladder=None):
+             tick=None, first_sentence=False, ladder=None, lifted=None,
+             special=None, question_lift=None, group=None, routes=None,
+             ref_note=None, ref_also=()):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         clean = self.subject in QUESTION_CLEANING
+        # The second branch of a printed OR that the scheme prices differently
+        # is a card of its own; the deck keeps one card per questionRef, so
+        # its reference carries the branch after a dash, which reconcile
+        # reads as the same part ("Q6(c)(ii) — CNC laser cutting").
+        if ref_note:
+            if not clean:
+                raise Refused(f'{ref}: ref_note= is for reviewed cleaning-subject parts')
+            ref = f'{ref} \u2014 {ref_note}'
+        # Two printed asks one scheme answer serves ("plot the graph", then
+        # "indicate these points on your graph", both answered by the one
+        # graph): one card citing both romans, "Q3(b)(i), (ii)", which
+        # reconcile reads as covering each.
+        if ref_also:
+            if not clean or ref_note:
+                raise Refused(f'{ref}: ref_also= is for reviewed cleaning-subject parts')
+            ref = ref + ''.join(f', ({r})' for r in ref_also)
         question = self.paper.text(q, letter, roman)
         if not clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')
@@ -546,8 +572,18 @@ class Author:
             # child that does not carries its parent's cue. The one exception
             # is a card whose text an OR-branch merge had already garbled.
             above = ' '.join((self.paper.text(q, letter, None) or '').split())
-            if above.endswith(':'):
+            # ... unless the roman-cue join at the top of card() has already
+            # put it there. Both fired on the same roman and seventeen
+            # Engineering cards printed their instruction twice: "Select any
+            # two from (i), (ii) or (iii) below and explain the difference
+            # between the terms in each: Select any two from (i), (ii) or
+            # (iii) below and explain the difference between the terms in
+            # each: Upper critical temperature (UCT) and lower critical
+            # temperature (LCT)."
+            if above.endswith(':') and not cue.startswith(above):
                 question = f'{above} {cue}'
+                joined_kids = True
+            elif above.endswith(':'):
                 joined_kids = True
 
         # The page's own furniture, taken back off the end of the ask.
@@ -555,6 +591,21 @@ class Author:
             without = _without_furniture(question)
             if without:
                 question, furniture_removed = without, True
+
+        # The paper's own words for this part, lifted off the page by
+        # rectangle (eng_lift.lift on the PAPER), where the reader's block is
+        # wrong -- a caption swept into the middle of the sentence, which no
+        # trailing-furniture strip reaches. Replaces the reader's text whole;
+        # nothing is joined on, because the rectangle already says what the
+        # part prints.
+        if question_lift is not None:
+            src = getattr(question_lift, 'source', None)
+            if not clean or not src or src[2] != 'paper':
+                raise Refused(f'{ref}: question_lift takes a rectangle lifted from '
+                              f'the paper (eng_lift.lift), for a cleaning subject')
+            question, flagged_override = str(question_lift), True
+        else:
+            flagged_override = False
 
         if clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')
@@ -587,12 +638,29 @@ class Author:
         if flagged and (furniture_removed or joined_kids) \
                 and PAPER_TERMINAL.search(question.strip()):
             flagged = False
+        if flagged_override:
+            flagged = False
         if not first_sentence and flagged and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
 
         scheme = self._source(source)
+
+        # The two rows a card may carry that claim nothing from the scheme's
+        # text, for a cleaning subject's reviewed parts (eng_residue): the ask
+        # itself, where the scheme answers with a drawing held back as the
+        # solution crop, and UNPRINTED_ANSWER, where the scheme prints no
+        # answer row at all for a printed ask. The build and the deck test
+        # hold both to their shapes.
+        if special is not None:
+            if not clean:
+                raise Refused(f'{ref}: special rows are for reviewed cleaning-subject parts')
+            return self._special(ref, question, q, letter, roman, special,
+                                 topic=topic, concept=concept, total=total,
+                                 figure=figure, question_figure=question_figure,
+                                 notes=notes, stem=stem, suffix=suffix,
+                                 card_id=card_id, cue_stem=cue_stem)
 
         # A tick in a True/False column is an answer the text layer does not
         # carry: the glyph leaves an empty block behind, so no parser can read
@@ -659,6 +727,24 @@ class Author:
                                   f'{token_index}')
                 candidates = [_unstar(tokens[token_index])]
             use = [0] if use is None else use
+        elif lifted is not None:
+            # Rows lifted off the scheme page by rectangle (eng_lift.lift):
+            # each entry a Lift, or a list of them meaning one answer and the
+            # scheme's alternatives for it. A plain string is refused -- the
+            # rectangle is the selection, and the words are the SEC's.
+            if not clean:
+                raise Refused(f'{ref}: lifted= is for reviewed cleaning-subject parts')
+            candidates, picks = [], []
+            for entry in lifted:
+                grp = list(entry) if isinstance(entry, (list, tuple)) else [entry]
+                for item in grp:
+                    if not hasattr(item, 'source'):
+                        raise Refused(f'{ref}: lifted= takes rectangles lifted by '
+                                      f'eng_lift.lift, not {type(item).__name__} {item!r:.40}')
+                picks.append(list(range(len(candidates), len(candidates) + len(grp))))
+                candidates.extend(str(item) for item in grp)
+            if use is None:
+                use = [p if len(p) > 1 else p[0] for p in picks]
         elif tick is None:
             candidates = scheme.points(q, letter, roman)
         if not candidates:
@@ -727,6 +813,20 @@ class Author:
             computed = total
         elif ladder is not None:
             computed = ladder
+        elif clean and routes:
+            # Each branch of a printed OR makes the tariff on its own; rows
+            # outside every route count toward both.
+            if len(routes) != len(marks):
+                raise Refused(f'{ref}: {len(routes)} routes for {len(marks)} rows')
+            common = sum(m for m, r in zip(marks, routes) if not r)
+            by_route = {}
+            for m, r in zip(marks, routes):
+                if r:
+                    by_route[r] = by_route.get(r, 0) + m
+            sums = sorted({common + n for n in by_route.values()})
+            if len(sums) != 1 or (total is not None and sums[0] != total):
+                raise Refused(f'{ref}: the routes sum to {sums}, not the {total} given')
+            computed = sums[0]
         else:
             computed = sum(marks)
             if total is not None and total != computed:
@@ -755,15 +855,41 @@ class Author:
                 spare = [c for c in spare if c in fine]
 
         rows = []
-        for i, (group, m) in enumerate(zip(groups, marks), start=1):
+        for i, (opts, m) in enumerate(zip(groups, marks), start=1):
             row = {'id': f'r-{i}',
-                   'kind': 'alt' if len(group) > 1 and not spread else row_kind,
-                   'verbatim': group[0], 'marks': m}
-            accepts = group[1:] + spare
+                   'kind': 'alt' if len(opts) > 1 and not spread else row_kind,
+                   'verbatim': opts[0], 'marks': m}
+            accepts = opts[1:] + spare
+            # "Any two @ 5": the student claims up to two of the scheme's
+            # options at five each. As an alt row the list was ONE claim worth
+            # the whole ten, so a student who knew one answer scored both
+            # marks. A cleaning subject's choice rule becomes the anyN group
+            # every other deck uses (claimMax, perOption, the options), where
+            # it names two or more; "any one" stays the alt row it already is.
+            # A tuple is the card's one choice, on its first row; a list
+            # prices each row (None where a row is no choice), as "Name Award
+            # 3 @ 3, Application Award 3 @ 3" sets two choices on one part.
+            if isinstance(group, list):
+                grp_i = group[i - 1] if i - 1 < len(group) else None
+            else:
+                grp_i = group if len(rows) == 0 else None
+            if clean and grp_i and grp_i[0] > 1 and row_kind == 'anyN' \
+                    and len(opts) >= grp_i[0]:
+                n_claim, per = grp_i
+                row = {'id': f'r-{i}', 'kind': 'anyN', 'verbatim': opts[0],
+                       'marks': n_claim * per,
+                       'group': {'claimMax': n_claim, 'perOption': per,
+                                 'options': list(opts)}}
+                accepts = []
             if accepts:
                 row['accepts'] = accepts
             if i == 1 and context:
                 row['contextNote'] = context
+            # The two answers either side of a printed OR, on one card: a row
+            # belongs to the branch it answers, and the session counts one
+            # branch, never a mix (the deck checks each sums to the tariff).
+            if clean and routes and routes[i - 1]:
+                row['route'] = routes[i - 1]
             rows.append(row)
 
         card = {
@@ -802,6 +928,13 @@ class Author:
         # has already answered.
         if question_figure:
             card['questionFigureKey'] = question_figure
+            # A cleaning subject's question crop is the PICTURE printed beside
+            # the prose, never the printed question itself, so the session
+            # must keep the written stem and ask on screen. Without this the
+            # session reads the crop as the whole printed question and hides
+            # both: 2021 Higher Q1(j) showed a selfie stick and no question.
+            if clean:
+                card['questionFigureIncludesPrompt'] = False
         if labels == 'auto':
             labels = {}
             for point in chosen:
@@ -816,6 +949,57 @@ class Author:
                 {'letter': k, 'meaning': v, 'askedInThisQuestion': True}
                 if isinstance(v, str) else dict(letter=k, **v)
                 for k, v in labels.items()]
+        self.cards.append(card)
+        return card
+
+    def _special(self, ref, question, q, letter, roman, special, *, topic,
+                 concept, total, figure, question_figure, notes, stem, suffix,
+                 card_id, cue_stem):
+        """A card whose one row is the ask (a drawn answer) or UNPRINTED_ANSWER."""
+        kind = special.get('kind')
+        if total is None:
+            raise Refused(f'{ref}: a {kind} row needs the printed tariff as total')
+        if kind == 'ask':
+            if not figure:
+                raise Refused(f'{ref}: an ask row needs the scheme\'s solution '
+                              f'crop as the answer-side figure')
+            row = {'id': 'r-1', 'kind': 'point', 'verbatim': question,
+                   'marks': total, 'contextNote': ASK_NOTE, 'ask': True}
+        elif kind == 'unprinted':
+            note = (special.get('note') or '').strip()
+            if not note:
+                raise Refused(f'{ref}: an unprinted row must say what the scheme prints instead')
+            row = {'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER,
+                   'marks': total, 'unprinted': True, 'contextNote': note}
+        else:
+            raise Refused(f'{ref}: unknown special row {kind!r}')
+        card = {
+            'id': card_id or part_id(self.subject, self.year, self.level, q, letter, roman, suffix),
+            'topicId': topic,
+            'conceptId': concept,
+            'level': self.long_level,
+            'year': self.year,
+            'subjectId': self.subject,
+            'section': 'A' if q <= 12 else 'B',
+            'questionRef': ref,
+            'questionText': question,
+            'tariffModel': {'kind': 'fixed'},
+            'totalMarks': total,
+            'rows': [row],
+        }
+        if stem:
+            text = (self.paper.stem(q) if cue_stem
+                    else self.paper.stem(q, letter) or self.paper.stem(q))
+            text = _clean_stem(text)
+            if text:
+                card['stem'] = text
+        if notes:
+            card['notes'] = notes
+        if figure:
+            card['figureKey'] = figure
+        if question_figure:
+            card['questionFigureKey'] = question_figure
+            card['questionFigureIncludesPrompt'] = False
         self.cards.append(card)
         return card
 

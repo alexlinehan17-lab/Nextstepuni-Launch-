@@ -318,6 +318,26 @@ export const claimMatches = (scheme, claim) => {
 };
 
 /**
+ * The build's whole provenance rule for one claim, as build-deck.mjs applies
+ * it: the claim appears in the scheme, or -- for a MENU option only -- it
+ * pairs a label with its value ("thoracic — 12", "Negative — Will increase
+ * inflation: …") and each half appears. Such an option was read from a
+ * scheme TABLE, names in one row and values in the next (2017 HL Biology
+ * Q15(b)(i)), so the two halves are never adjacent in the text layer.
+ *
+ * provcheck.mjs, the authoring pre-check, uses this; build-deck.mjs keeps its
+ * inline copy of the same lines (see its provenance loop). The pre-check
+ * lacked the halves rule and reported 24 such Economics 2019 Ordinary options
+ * as untraceable that the build accepted and shipped.
+ */
+export const claimTraces = (scheme, claim, { menuOption = false } = {}) => {
+  if (claimMatches(scheme, claim)) return true;
+  if (!menuOption) return false;
+  const halves = String(claim).split(/\s—\s/);
+  return halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half));
+};
+
+/**
  * The tariff cell an SEC scheme prints IN THE MIDDLE of what it is pricing, in
  * a language whose word for a mark is not "mark".
  *

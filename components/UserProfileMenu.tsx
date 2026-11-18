@@ -197,6 +197,7 @@ interface MobileProfileSheetProps {
   onGoToYourSetup?: () => void;
   onOpenSiteGuide: () => void;
   onOpenFeedback: () => void;
+  onUnreadCountChange?: (count: number) => void;
   completedCount: number;
   totalCount: number;
   onOpenNorthStar: () => void;
@@ -204,7 +205,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onGoToYourSetup, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onGoToYourSetup, onOpenSiteGuide, onOpenFeedback, onUnreadCountChange, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   const sheetRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, sheetRef);
@@ -335,7 +336,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                 <section aria-labelledby="profile-support-heading">
                   <p id="profile-support-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Support</p>
                   <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
-                    <NotificationBell uid={user.uid} variant="menu" />
+                    <NotificationBell uid={user.uid} variant="menu" onUnreadCountChange={onUnreadCountChange} />
                     <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                       <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
                       <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>

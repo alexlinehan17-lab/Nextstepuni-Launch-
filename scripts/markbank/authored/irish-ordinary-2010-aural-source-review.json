@@ -1,0 +1,78 @@
+{
+  "year": 2010,
+  "level": "ordinary",
+  "paperFileid": "LC001GLPA00IV.pdf",
+  "schemeFileid": "LC001GLP000EV.pdf",
+  "paperSha256": "ec1458dce528897d862339bdcee11df79330fd6c2cb15a1b33e819507ef3412c",
+  "schemeSha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "reviewedSchemePages": [
+    10
+  ],
+  "schemeScope": "Combined Ordinary scheme (12 pages; the file is named LC001GLP000EV, its text is the Irish scheme). PDF 1 cover; 2 blank; 3 general marking instruction and Páipéar I Ceist 1 (composition); 4 the composition’s closing notes and Páipéar I Ceist 2 (reading); 5–9 Páipéar II (literature); 10 the listening test (“- CLUASTUISCINT - (120 marc)”): for each item its questions’ tariffs in print order and the one 0–12 language deduction, and no answer key; 11 Socruithe Réasúnta; 12 empty.",
+  "reviewMethod": "Every page of the four-page listening booklet and the listening page of the scheme read in the text layer and checked against the printed page; each prompt, each item’s tariff line and its count of questions is asserted against the PDFs by the builder, which also asserts that no listening question is reprinted anywhere in the scheme (it prints no key). The booklet’s glyphs in private-use code points (page 1 Wingdings U+F046 beside the examiner’s box; SymbolMT U+F0AE beside “THALL” on pages 1 and 3) are on no card.",
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2010/LC001ZLP017IV.mp3",
+    "verified": "2026-11-05",
+    "evidence": "HTTP 200 audio/mpeg, 38,471,356 bytes, last modified 24 June 2010 (curl -I on examinations.ie); downloaded and measured: 2,404.4 s at 128 kbit/s (afinfo), SHA-256 b7c119e99e57a5f7e1d3445a167f4860752e07b75c81aee63295936610e02184.",
+    "note": "One SEC recording serves the Higher and Ordinary 2010 listening test (the common file); Ordinary asks its own questions. Never substituted from another year."
+  },
+  "selectionDecisions": [
+    {
+      "page": 1,
+      "raw": "[Caithfidh do chuid freagraí uile sa Triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.]",
+      "decision": "Answer-language rule (answers in Irish except where not needed); not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Luaigh rud amháin is gá a chur ar fáil láithreach.",
+      "decision": "Fógra a Trí grid field 4: one required answer; not a menu."
+    },
+    {
+      "page": 2,
+      "raw": "Cloisfidh tú an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú é ina dhá mhír. Beidh",
+      "decision": "Cuid B listening instruction (how often each conversation is heard and in two parts); not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh áis amháin a bhí san áit.",
+      "decision": "Comhrá a hAon, second mír, question 2: one required answer; not a menu."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh ábhar amháin a dhéanfaidh Sinéad dá céim in Ollscoil Luimnigh.",
+      "decision": "Comhrá a Dó, second mír, question 2: one required answer; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh cineál amháin ailt a bheadh in iris Ghaeilge-Bhéarla, dar le Máire.",
+      "decision": "Comhrá a Trí, second mír, question 1: one required answer; not a menu."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh rud amháin atá ar díol sa siopa.",
+      "decision": "Píosa a Dó question 2: one required answer; not a menu."
+    }
+  ],
+  "nonPoolDecisions": [
+    "The 2010 Ordinary scheme prints no listening answer key: only each item’s question tariffs in print order (PDF 10: “Fógra a hAon 4 + 2 + 4 + 4” …) and the one 0–12 language deduction. Every printed question is still carded (every printed ask gets a card): its own criterion at the price its place in that line gives it, its guidance the question as the paper prints it and the item’s tariff line, claimed whole (no partial is printed) and marked tariffOnly. The card says “The scheme prints no answer for this part.”",
+    "Card unit, as the reviewed 2011–2026 Ordinary listening: one card per printed item (the Bank plays one recording item as one exercise): three announcements, three conversations (both míreanna on one card) and three pieces, 9 cards; each printed question its own criterion (34).",
+    "Each tariff line’s count of addends equals its item’s printed questions and the lines add to the test’s 120, so the n-th addend prices the item’s n-th printed question (grid fields top to bottom, numbered questions in order).",
+    "Questions priced at 6 (Comhrá a hAon, first mír question 1 and second mír question 2) are claimed whole like every other: the scheme prints no split for them."
+  ],
+  "sourceFindings": [
+    "Before 2012 the listening test is a paper of its own (Triail Chluastuisceana, 120 marks, Monday 14 June 2010, 4.30–5.10, after Páipéar I), with three items in each part.",
+    "Listening tariffs (PDF 10), in print order: Fógra a hAon 4 + 2 + 4 + 4; Fógra a Dó 2 + 4 + 4 + 4; Fógra a Trí 3 + 3 + 4 + 4; Comhrá a hAon 6 + 2 + 2 + 6; Comhrá a Dó 4 + 4 + 4 + 4 + 4 + 4; Comhrá a Trí 4 + 2 + 4 + 2; Píosa a hAon 4 + 4 + 2 + 4; Píosa a Dó 4 + 2; Píosa a Trí 4 + 2 (= 120).",
+    "Listening language: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” (PDF 10) is one test-level deduction; cards state it without applying it.",
+    "The scheme prints no listening script and no key for this test.",
+    "Paper misprint kept as printed: Comhrá a Trí, second mír, question 2 ends with a full stop (“Cad a deir Eoin faoin nuachtán Foinse.”)."
+  ],
+  "remainingWork": []
+}

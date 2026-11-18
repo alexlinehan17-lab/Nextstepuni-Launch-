@@ -1,0 +1,714 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2017,
+ "level": "higher",
+ "lang": "ev",
+ "sitting": "main",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-04",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2017_hl.py",
+ "sourceHashes": {
+  "paper-trail-corpus/exampapers/2017/LC027ALP000EV.pdf": "a1220c8763c0b539eb287ed4a74e8b7510b8a7597464b8376b208843bebf9974",
+  "paper-trail-corpus/markingschemes/2017/LC027ALP000EV.pdf": "607d37e114aba3eb2d10e0161706cd3b14e700d04d75d343ca0ca1fe4d1ab3a4"
+ },
+ "expectedRuntimeCards": 76,
+ "reason": "2017 Higher main English written paper: every one of the 76 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 0 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society",
+    "engineering-higher-machining-metrology",
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-pneumatics",
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-heat-treatment",
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-heat-treatment",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "n": "8",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2017-hl-q1-a",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-b",
+   "markBankTopicId": "eng-3-7",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-corrosion-of-metals"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-c",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-d",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-e",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-f",
+   "markBankTopicId": "eng-2-13",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ],
+   "canonicalTopicReview": "Quality control during manufacture: checking and testing the product (dimensions, X-ray, mechanical and stress tests), which the reference files Q1 under; the card's syllabus heading is Manufacturing systems."
+  },
+  {
+   "cardId": "eng-2017-hl-q1-g",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-h",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-j",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-k",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-l",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-m",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-n-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-n-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-o",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Robotic welding in car manufacture (Section B's robotics topic); the card's syllabus heading is Welding and joining, the method the scheme gives."
+  },
+  {
+   "cardId": "eng-2017-hl-q1-p-i",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-p-ii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-p-iii",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-q",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q1-r",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-a-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-a-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-b-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-b-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-b-iii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-c-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q2-c-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-a-i",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-a-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-b-i",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-b-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-b-iii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-c-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q3-c-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-a-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-a-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-b-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-b-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q4-c",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-b-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-b-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-b-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-b-iv",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-b-v",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-c",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q5-c-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "The robotic vacuum cleaner (the OR branch of Q5(c)); the card's syllabus heading is Technology, where the syllabus places robotics."
+  },
+  {
+   "cardId": "eng-2017-hl-q5-c-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "The robotic vacuum cleaner (the OR branch of Q5(c)); the card's syllabus heading is Technology, where the syllabus places robotics."
+  },
+  {
+   "cardId": "eng-2017-hl-q6-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-a-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-b-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-b-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-b-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q6-c",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-a-i",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-a-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-a-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-a-iv",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-a-v",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-b-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-b-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-c-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q7-c-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-a-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-a-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-b-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-b-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-b-iii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-b-iv",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-b-v",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-c-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2017-hl-q8-c-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  }
+ ]
+}

@@ -76,6 +76,15 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "chem-2025-ol-q6-c": "chem-2025-ol-q6-c-fig",
   "chem-2025-ol-q7-c-iii": "chem-2025-ol-q7-c-i-ii",
   "chem-2025-ol-q7-c-iv": "chem-2025-ol-q7-c-i-ii",
+  "cs-2021-ol-q15": "cs-2021-ol-q15-b-i",
+  "cs-2021-ol-q16": "cs-2021-ol-q16-a-i",
+  "cs-2022-hl-q14": "cs-2022-hl-q14-a-i",
+  "cs-2022-ol-q16": "cs-2022-ol-q16-a-i",
+  "cs-2023-ol-q13": "cs-2023-ol-q13-b-i",
+  "cs-2024-ol-q16": "cs-2024-ol-q16-a-i",
+  "cs-2025-ol-q13": "cs-2025-ol-q13-a-ii",
+  "cs-2025-ol-q14": "cs-2025-ol-q14-c",
+  "cs-2025-ol-q15": "cs-2025-ol-q15-b-i",
   "english-2021-hl-p2-comparative-a-q1": "english-2021-hl-p2-comparative-a-q1-a",
   "english-2021-hl-p2-comparative-b-q1": "english-2021-hl-p2-comparative-b-q1-a",
   "english-2021-hl-p2-comparative-c-q1": "english-2021-hl-p2-comparative-c-q1-a",
@@ -560,4 +569,12 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "geography-2026-hl-p2-q5c-transport-raw-materials": "geography-2026-hl-p2-q5c-labour-transport",
   "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
   "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+  // Technology 2022 OL C2(d): the shipped card held both romans in one row, the
+  // truth table's cells welded to the asks; now (i) names the gates and (ii) draws
+  // the table against the scheme's crop. Progress on the old id reads from (i).
+  "tech-2022-ol-c2d": "tech-2022-ol-c2d-i",
+  // Technology 2024 HL B3(d): the scheme heads its two parts "(i)" and "(iii)",
+  // so the shipped card covered both asks; now read in printed order against
+  // the paper's (i) and (ii). Progress on the old id reads from (i).
+  "tech-2024-hl-b3d": "tech-2024-hl-b3d-i",
 };

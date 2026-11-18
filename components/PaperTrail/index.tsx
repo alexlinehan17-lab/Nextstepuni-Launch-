@@ -1,3 +1,5 @@
+import { catalogueSubject, subjectHasWrittenExam, LCA_SUBJECTS } from '../subjectData';
+import { examinationYearFromDate, resolveSubjectId } from '../../curriculumRegistry';
 import { peekTopicPractice, clearTopicPractice } from '../../utils/topicLaunch';
 /**
  * @license
@@ -130,11 +132,31 @@ export const paperTrailSubjectVisibleForProfile = (
   ? subject.cycle === 'jc'
   : subject.cycle === 'lc' || (isLca && subject.cycle === 'lca');
 
+// A separately examined LC subject selected through the LCA catalogue keeps
+// its canonical LC paper id. Same-named common-level LCA courses stay separate.
+const lcaEstablishedSubjects = LCA_SUBJECTS.filter(course => course.levels?.some(level => level !== 'common'));
+export const paperTrailSubjectMatchesStudentName = (
+  subject: Pick<PaperTrailSubject, 'name' | 'aliases' | 'cycle' | 'id'>, name: string, examYear?: number,
+) => {
+  const course = catalogueSubject(subject.cycle, name);
+  if (course) {
+    if (!subjectHasWrittenExam(course, examYear)) return false;
+    if (course.paperSubjectId) return course.paperSubjectId === subject.id;
+    if (subject.cycle === 'lca' && course.establishedSubject) return false;
+  }
+  const established = catalogueSubject('lca', name)?.establishedSubject;
+  if (established) return subject.cycle === 'lc' && resolveSubjectId(established) === subject.id;
+  return baseName(name) === baseName(subject.name) || (subject.aliases ?? []).some(alias => baseName(alias) === baseName(name));
+};
+
 export const paperTrailSubjectMatchesProfileCycle = (
-  subject: Pick<PaperTrailSubject, 'cycle'>,
+  subject: Pick<PaperTrailSubject, 'cycle'> & Partial<Pick<PaperTrailSubject, 'id'>>,
   junior: boolean,
   isLca: boolean,
-) => subject.cycle === (junior ? 'jc' : isLca ? 'lca' : 'lc');
+  studentSubjects: readonly string[] = [],
+) => subject.cycle === (junior ? 'jc' : isLca ? 'lca' : 'lc') ||
+  (!junior && isLca && subject.cycle === 'lc' && lcaEstablishedSubjects.some(course =>
+    studentSubjects.some(name => baseName(name) === baseName(course.name)) && resolveSubjectId(course.name) === subject.id));
 
 const subjectLabelForId = (id: string) => {
   const subject = subjectById.get(id);
@@ -200,7 +222,6 @@ type View =
     };
 
 interface PaperTrailProps {
-  onBack?: () => void;
   uid?: string;
   studentSubjects?: string[];
   /** Subject name → chosen level, from the subject profile. */
@@ -227,11 +248,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   isLca = false,
   onboardingExamDate,
   onOpenTool,
-  onBack,
   initialView,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
   const { state, isLoaded, recordRecent, updatePage, setFilters, finishReading } = usePaperFinder(uid);
+  const profileExamYear = examinationYearFromDate(onboardingExamDate);
   const junior = studentCycle === 'junior-cycle';
 
   const [view, setView] = useState<View>(() => {
@@ -289,12 +310,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   // ── matching the student's profile to paper subjects ──
   const matchesStudent = useCallback(
     (s: PaperTrailSubject, names: Set<string>) =>
-      names.has(baseName(s.name)) || (s.aliases ?? []).some(a => names.has(baseName(a))),
-    [],
+      [...names].some(name => paperTrailSubjectMatchesStudentName(s, name, profileExamYear)),
+    [profileExamYear],
   );
 
   const groups = useMemo(() => {
-    const mineNames = new Set((studentSubjects ?? []).map(baseName));
+    const mineNames = new Set(studentSubjects ?? []);
     const inCycle = PAPER_TRAIL_SUBJECTS.filter(s =>
       junior ? s.cycle === 'jc' : s.cycle !== 'jc',
     );
@@ -307,7 +328,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)),
     );
     const mineIds = [
-      ...main.filter(s => !isLca && matchesStudent(s, mineNames)).map(s => s.id),
+      ...main.filter(s => paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects) && matchesStudent(s, mineNames)).map(s => s.id),
       ...lca.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
     ];
     return { main, lca, mineIds };
@@ -317,15 +338,15 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const profileLevelFor = useCallback(
     (subj: PaperTrailSubject): PaperLevel | null => {
       for (const sl of studentLevels ?? []) {
-        const n = baseName(sl.name);
-        if (n === baseName(subj.name) || (subj.aliases ?? []).some(a => baseName(a) === n)) {
+        const n = sl.name;
+        if (paperTrailSubjectMatchesStudentName(subj, n, profileExamYear)) {
           const lv = sl.level.toLowerCase();
           if (subj.levels.includes(lv as PaperLevel)) return lv as PaperLevel;
         }
       }
       return null;
     },
-    [studentLevels],
+    [studentLevels, profileExamYear],
   );
 
   // ── search accelerator ("english 2022 hl") ──
@@ -626,12 +647,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         !!s && paperTrailSubjectVisibleForProfile(s, junior, isLca)
       ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
-    const mineNames = new Set((studentSubjects ?? []).map(baseName));
+    const mineNames = new Set(studentSubjects ?? []);
     return studySurface(
       <ReviseByTopic
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => (
-          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects)
           && matchesStudent(s, mineNames)
         )).map(s => s.id)}
         uid={uid}
@@ -651,14 +672,14 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         !!s && paperTrailSubjectVisibleForProfile(s, junior, isLca)
       ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
-    const mineNames = new Set((studentSubjects ?? []).map(baseName));
+    const mineNames = new Set(studentSubjects ?? []);
     return studySurface(
       <MockExamBuilder
         uid={uid}
         now={Date.now()}
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => (
-          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects)
           && matchesStudent(s, mineNames)
         )).map(s => s.id)}
         subjectLabel={subjectLabelForId}
@@ -763,7 +784,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
 
     return <KobraScope className="pt-kobra"><section className="pt-archive pt-master-detail">
-      <nav className="pt-toolbar"><button className="pt-text-button" onClick={onBack}><ArrowLeft size={18} /> Tools</button><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
+      <nav className="pt-toolbar"><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
       <div className="pt-desktop-mast"><ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." /></div>
       <div className="pt-master-grid">
         <aside className="pt-subject-rail">
@@ -948,7 +969,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   return <KobraScope className="pt-kobra"><section className="pt-archive pt-home" aria-label="Paper Trail archive">
     {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
     <nav className="pt-toolbar" aria-label="Paper Trail">
-      {mobileAppDesign ? <p className="pt-page-intro">Exam papers & marking schemes.</p> : <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>}
+      {mobileAppDesign && <p className="pt-page-intro">Exam papers & marking schemes.</p>}
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
     <header className="pt-find-heading">

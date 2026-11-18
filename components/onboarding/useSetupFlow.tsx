@@ -15,6 +15,7 @@ import {
 } from "../../northStarData";
 import { isLcaYear } from "../../utils/authUtils";
 import { trackFunnel } from "../../utils/funnel";
+import { getDefaultExamDateForYear } from "../../utils/examDates";
 import type { NorthStar } from "../../types";
 import {
   buildNorthStar,
@@ -32,6 +33,7 @@ import {
   needsDate,
   pointsFor,
   readDraft,
+  requiresGradeSetup,
   subjectsFor,
   type SetupDraft,
   type SetupStep,
@@ -132,33 +134,35 @@ export function useSetupFlow(
   const visions = getVisionCardsForLevel(cycleFor(draft.year));
   const maxVision = junior ? 3 : 5;
   const subjectList = subjectsFor(draft.year);
+  const gradeSubjects = draft.subjects.filter(name => requiresGradeSetup(draft.year, name));
+  const skipGrades = gradeSubjects.length === 0;
   const currentSubject =
-    draft.gradeSubject && draft.subjects.includes(draft.gradeSubject)
+    draft.gradeSubject && gradeSubjects.includes(draft.gradeSubject)
       ? draft.gradeSubject
-      : draft.subjects[0];
-  const subjectIndex = draft.subjects.indexOf(currentSubject);
-  const nextSubject = draft.subjects[subjectIndex + 1];
+      : gradeSubjects[0];
+  const subjectIndex = gradeSubjects.indexOf(currentSubject);
+  const nextSubject = gradeSubjects[subjectIndex + 1];
   const gradeStepSubject = draft.step === "grades" ? currentSubject : null;
   const config =
     draft.configs[currentSubject] ?? emptyChoice(draft.year, currentSubject);
-  const gradeChoices = choicesFor(draft.year, config.level);
-  const targetChoices = targetChoicesFor(draft.year, config.level);
+  const gradeChoices = choicesFor(draft.year, config.level, currentSubject);
+  const targetChoices = targetChoicesFor(draft.year, config.level, currentSubject);
   const levelChoices = levelOptions(draft.year, currentSubject);
   const levelNote = junior || lca || !currentSubject ? null : fixedLevelNote(currentSubject);
-  const unreviewed = draft.subjects.filter(
+  const unreviewed = gradeSubjects.filter(
     (name) => !draft.configs[name]?.reviewed,
   );
   const points = pointsFor(draft);
   const studyDays = DAYS_OF_WEEK.filter((day) => !draft.rest.includes(day));
   const route: SetupStep[] = transition
-    ? ["subjects", "grades", "north", "vision", "schedule", "summary"]
+    ? ["subjects", ...(skipGrades ? [] : ["grades" as const]), "north", "vision", "schedule", "summary"]
     : [
         "welcome",
         "year",
         "north",
         "vision",
         "subjects",
-        ...(lca ? [] : ["grades" as const]),
+        ...(skipGrades ? [] : ["grades" as const]),
         "schedule",
         "summary",
       ];
@@ -171,10 +175,10 @@ export function useSetupFlow(
         vision: 3,
         subjects: 4,
         grades: 5,
-        schedule: lca ? 5 : 6,
-        summary: lca ? 6 : 7,
+        schedule: skipGrades ? 5 : 6,
+        summary: skipGrades ? 6 : 7,
       }[draft.step];
-  const stages = transition ? route.length : lca ? 6 : 7;
+  const stages = transition ? route.length : skipGrades ? 6 : 7;
   const surface =
     draft.step === "summary"
       ? draft.appearance === "light" ? "paper" : "ink"
@@ -274,11 +278,12 @@ export function useSetupFlow(
         category: null,
         vision: [],
         gradeSubject: null,
-        dateConfirmed: false,
+        date: getDefaultExamDateForYear(year),
+        dateEdited: false,
       });
       setSubjectGroup("languages");
       setVisionGroup("");
-    } else patch({ year, dateConfirmed: false });
+    } else patch({ year, ...(draft.year !== year ? { date: getDefaultExamDateForYear(year), dateEdited: false } : {}) });
     setPendingYear(null);
   };
   const selectYear = (year: YearGroup) => {
@@ -319,7 +324,7 @@ export function useSetupFlow(
         ...prev,
         configs: {
           ...prev.configs,
-          [name]: { ...updated, reviewed: choiceReady(prev.year, updated) },
+          [name]: { ...updated, reviewed: choiceReady(prev.year, updated, name) },
         },
       };
     });
@@ -336,7 +341,7 @@ export function useSetupFlow(
           };
           return [
             name,
-            { ...updated, reviewed: choiceReady(prev.year, updated) },
+            { ...updated, reviewed: choiceReady(prev.year, updated, name) },
           ];
         }),
       ),
@@ -347,7 +352,7 @@ export function useSetupFlow(
       ...(later ? { current: "later" as const, target: "later" as const } : {}),
       reviewed: true,
     };
-    if (!choiceReady(draft.year, nextConfig)) return;
+    if (!choiceReady(draft.year, nextConfig, currentSubject)) return;
     const nextName = nextSubject;
     patch({
       configs: { ...draft.configs, [currentSubject]: nextConfig },
@@ -366,11 +371,11 @@ export function useSetupFlow(
   };
   const validation = () => {
     if (bulkGrades) {
-      const missingLevels = draft.subjects.filter(
+      const missingLevels = gradeSubjects.filter(
         (name) => !draft.configs[name]?.level,
       );
-      const unfinished = draft.subjects.filter(
-        (name) => !choiceReady(draft.year, draft.configs[name]),
+      const unfinished = gradeSubjects.filter(
+        (name) => !choiceReady(draft.year, draft.configs[name], name),
       );
       if (missingLevels.length)
         return `Choose a level for ${missingLevels.length} ${missingLevels.length === 1 ? "subject" : "subjects"}. Grades can wait.`;
@@ -389,7 +394,7 @@ export function useSetupFlow(
       return "Choose at least one subject.";
     if (draft.step === "grades" && !config.level)
       return "Choose your level. Grades can be added later.";
-    if (draft.step === "grades" && !choiceReady(draft.year, config))
+    if (draft.step === "grades" && !choiceReady(draft.year, config, currentSubject))
       return "Choose your grades, or set them later.";
     if (draft.step === "schedule" && !studyDays.length)
       return "Choose at least one study day.";
@@ -399,12 +404,6 @@ export function useSetupFlow(
       !(daysUntil(draft.date) > 0)
     )
       return "Choose a future exam date.";
-    if (
-      draft.step === "schedule" &&
-      needsDate(draft.year) &&
-      !draft.dateConfirmed
-    )
-      return "Confirm your exam date to continue.";
     if (draft.step === "summary") {
       if (
         !draft.year ||
@@ -413,12 +412,12 @@ export function useSetupFlow(
         !draft.vision.length
       )
         return "Finish your year, subjects and motivation before starting.";
-      if (!lca && unreviewed.length)
+      if (unreviewed.length)
         return `Review ${unreviewed.length === 1 ? "the remaining subject" : `${unreviewed.length} remaining subjects`}. Grades can be set later.`;
       if (
         !studyDays.length ||
         (needsDate(draft.year) &&
-          (!draft.dateConfirmed || !(daysUntil(draft.date) > 0)))
+          !(daysUntil(draft.date) > 0))
       )
         return "Review your study days and exam date.";
     }
@@ -432,7 +431,7 @@ export function useSetupFlow(
         configs: Object.fromEntries(
           Object.entries(draft.configs).map(([name, c]) => [
             name,
-            { ...c, reviewed: choiceReady(draft.year, c) },
+            { ...c, reviewed: choiceReady(draft.year, c, name) },
           ]),
         ),
         step: editSnapshot ? "summary" : transition ? "north" : "schedule",
@@ -475,7 +474,7 @@ export function useSetupFlow(
     patch({
       step,
       ...(step === "grades"
-        ? { gradeSubject: unreviewed[0] ?? draft.subjects[0] }
+        ? { gradeSubject: unreviewed[0] ?? gradeSubjects[0] }
         : {}),
     });
   };
@@ -485,7 +484,7 @@ export function useSetupFlow(
       return;
     }
     if (draft.step === "grades" && !bulkGrades && subjectIndex > 0) {
-      patch({ gradeSubject: draft.subjects[subjectIndex - 1] });
+      patch({ gradeSubject: gradeSubjects[subjectIndex - 1] });
       return;
     }
     if (draft.step === "welcome") {
@@ -519,7 +518,7 @@ export function useSetupFlow(
     north: "Your North Star · 1 of 2",
     vision: "Your North Star · 2 of 2",
     subjects: "Your subjects",
-    grades: `Subject ${Math.max(1, draft.subjects.indexOf(currentSubject) + 1)} of ${draft.subjects.length}`,
+    grades: `Subject ${Math.max(1, gradeSubjects.indexOf(currentSubject) + 1)} of ${gradeSubjects.length}`,
     schedule: "A rhythm that works for you",
     summary: "This is your starting line",
   }[draft.step];
@@ -527,7 +526,7 @@ export function useSetupFlow(
     const value = draft.configs[name];
     if (!value?.reviewed) return "Not reviewed";
     const format = (grade: string) => (grade === "later" ? "Set later" : grade);
-    return hasGrades(draft.year, value)
+    return hasGrades(draft.year, value, name)
       ? `${value.current} → ${value.target}`
       : `${format(value.current)} → ${format(value.target)}`;
   };

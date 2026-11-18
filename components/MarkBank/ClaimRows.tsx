@@ -58,7 +58,7 @@ export const ClaimRow: React.FC<{
               aria-label={`${value === step ? 'Clear' : 'Claim'} ${step} marks for ${text}`}
               onClick={() => onStep(step)}
             >
-              {step}m
+              {value === step && <Tick />}{step}m
             </button>
           ))}
         </span>

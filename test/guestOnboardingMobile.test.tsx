@@ -28,7 +28,7 @@ const key = draftKey(GUEST_USER_ID, 'fresh');
 const reviewDraft = (): SetupDraft => ({
   ...initialDraft(), step: 'summary', year: '6th', category: 'college-learning', vision: ['campus'], subjects: ['English', 'Irish'],
   configs: { English: { level: 'ordinary', current: 'O2', target: 'O1', reviewed: true }, Irish: { level: 'higher', current: 'H3', target: 'H1', reviewed: true } },
-  date: '2030-06-05', dateConfirmed: true, rest: ['Sunday'], gradeSubject: 'English',
+  date: '2030-06-05', dateEdited: true, rest: ['Sunday'], gradeSubject: 'English',
 });
 
 beforeEach(() => {

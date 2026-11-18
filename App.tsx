@@ -1,3 +1,4 @@
+import { preparePlannedStudy } from './services/plannedStudyLaunch';
 
 /**
  * @license
@@ -466,9 +467,10 @@ const App: React.FC = () => {
   }), []);
 
   const handleStudyFromTimetable = useCallback((block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => {
+    if(user?.uid)preparePlannedStudy(user.uid,block.blockId,block.dateKey);
     setTimetableBlockContext(block);
     nav.navigateToStudySession();
-  }, [nav]);
+  }, [nav,user?.uid]);
 
   const handleGoToInsights = useCallback(() => { nav.navigateToInsights(); }, [nav]);
 
@@ -930,7 +932,7 @@ const App: React.FC = () => {
 
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
-    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'}>
+    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'} identityReady={authResolved}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Achievements remain available while account controls live in the sidebar. */}
@@ -984,6 +986,7 @@ const App: React.FC = () => {
       {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileProfileSheet
           isOpen={mobileProfileOpen}
+          onUnreadCountChange={setUnreadNotificationCount}
           onClose={() => setMobileProfileOpen(false)}
           user={user}
           onLogout={handleLogout}

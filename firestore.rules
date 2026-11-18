@@ -237,6 +237,14 @@ service cloud.firestore {
             || request.resource.data.gamification.unlockedAchievements
                  .hasAll(resource.data.gamification.unlockedAchievements));
 
+      // A private, bounded working plan. Mutations never touch points or card memory.
+      match /studyPlans/{planId} {
+        allow read: if request.auth != null && request.auth.uid == userId && hasActiveSession();
+        allow create, update: if request.auth != null && request.auth.uid == userId && hasActiveSession()
+          && planId == 'current' && request.resource.data.version == 1
+          && request.resource.data.keys().hasOnly(['version', 'settings', 'requirements', 'deadlines', 'evidence', 'tasks']);
+      }
+
       // Study sessions subcollection. Firestore rules are non-hierarchical, so
       // this must be declared explicitly — otherwise it falls through to the
       // default-deny at the bottom and every session save AND reload is denied,
@@ -347,6 +355,15 @@ service cloud.firestore {
       allow read: if request.auth != null
                   && isSchoolStaff()
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
+    }
+
+    // Browser-only release announcements. Separate documents keep older native
+    // clients from displaying or overwriting announcements before app release.
+    match /browserNotifications/{userId} {
+      allow read, update: if request.auth != null
+                          && request.auth.uid == userId
+                          && hasActiveSession();
+      // Announcements are created by the owner through the Admin SDK.
     }
 
     // Kudos collection: peer encouragement notes

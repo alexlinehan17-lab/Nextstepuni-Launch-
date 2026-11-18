@@ -18,3 +18,17 @@ const BULLET = /[•●▪◦‣]/;
 export const stemWithListBreaks = (stem: string): string =>
   stem.replace(/[^\S\n]*\n\s*/g, (gap: string, offset: number) =>
     (BULLET.test(stem.charAt(offset + gap.length)) ? '\n' : ' '));
+
+/**
+ * History's stems carry the paper's own breaks (scripts/markbank/authoring/
+ * hist_paper.py, `paragraphs`): a blank line where the paper leaves a gap
+ * between its instruction and the extract, and a new line where the paper
+ * starts one — an indented paragraph, a dated diary entry, a bulleted item, a
+ * row of a printed table. The words are the lifted words; only the breaks are
+ * the paper's. Only History's reader records breaks like these, so only a
+ * History stem is shown through this; every other subject keeps
+ * stemWithListBreaks, unchanged.
+ */
+export const stemWithPrintedBreaks = (stem: string): string =>
+  stem.trim().replace(/[^\S\n]*\n\s*/g, (gap: string) =>
+    ((gap.match(/\n/g) ?? []).length > 1 ? '\n\n' : '\n'));

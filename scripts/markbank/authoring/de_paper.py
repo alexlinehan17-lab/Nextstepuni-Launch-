@@ -106,10 +106,16 @@ SWEPT_MARKER = re.compile(
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate|Scr[úu]d[úu] na hArdteistim|German\s*[–‒-]|'
     r'Gearm[áa]inis\s*[–‒-]|N[íi]l aon [áa]bhar|There is no examination|'
-    r'Thall\s*/|Page \d+$|\d{1,3}$|Bileog|Freagair\b|Answer\s+(?:Question|Text|'
+    r'Thall\s*/|Page \d+(?: of \d+)?$|\d{1,3}$|Bileog|Freagair\b|Answer\s+(?:Question|Text|'
     r'either|question|Questions)|Treoracha\s*$|Instructions\s*$|N[ÓO]/OR\s*$|'
     r'ODER\s*$|OR\s*$|N[óo]ta\s*:|Note\s*:|Sampla\b|Example\s*:|Beispiel\s*:|'
-    r'Lesen Sie\b|Bearbeiten Sie\b|Quellen\s*:|Nach\s*:)', re.I)
+    r'Lesen Sie\b|Bearbeiten Sie\b|Quellen\s*:|Nach\s*:|'
+    # The blank page's title and the running head of 2021, read into the ask
+    # above them. (Never a rule of underscores: a gap-fill line opens with its
+    # gap, "________ hat, ist in Gefahr.")
+    r'Leathanach\s+B[áa]n|Blank\s+Page|(?:An\s+)?Ardteistim[ée]ireacht,?\s*\d{4}|'
+    # The Irish page foot of 2017, "Lch 5 de 20".
+    r'Lch\.?\s+\d+\s+de\s+\d+)', re.I)
 
 # The instruction line that names the language an ask must be answered in. The
 # paper states it, in both of its own languages, above the questions it governs.
@@ -173,7 +179,12 @@ def _unsweep(groups):
                     out.append((x + 1, 'R', text[at:].strip()))
                     continue
             nxt = rows[i + 1] if i + 1 < len(rows) else None
-            if nxt and nxt[1] == 'R' and not MARKER_START.match(nxt[2]):
+            # (Never where the English group goes on in lower case: that is
+            # the English sentence's own second line, and the number ended
+            # the Irish one — "an eolais as ailt 4, 5 agus 6." beside "from
+            # paragraphs 4, 5 and 6.", 2015 Ordinary.)
+            if (nxt and nxt[1] == 'R' and not MARKER_START.match(nxt[2])
+                    and not re.match(r'^[a-zäöüß]', nxt[2].strip())):
                 m = SWEPT_MARKER.search(text)
                 if m:
                     out.append((x, 'L', text[:m.start()].rstrip()))
@@ -215,8 +226,11 @@ class Block:
 class DePaper:
     """One sitting's written booklet, plus the listening booklet beside it."""
 
-    def __init__(self, year, level, subject=SUBJECT):
+    def __init__(self, year, level, subject=SUBJECT, sitting=None):
         self.year, self.level, self.subject = year, level, subject
+        # The SEC's deferred sitting (2022 Higher): its own booklets, read
+        # from the archive's deferredexams/ folder, never June's.
+        self.sitting = sitting
         self.path = self._written_path()
         self.aural_path = self._aural_path()
         self.blocks = []
@@ -227,9 +241,18 @@ class DePaper:
         self._read()
 
     # -- files --------------------------------------------------------------
+    def _deferred(self, component):
+        # The archive files a deferred booklet under the June file id:
+        # deferredexams/2022/LC011ALP000BV.pdf and LC011ALPA00BV.pdf.
+        return os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(self.year),
+                            f'LC011{"A" if self.level == "hl" else "G"}LP{component}'
+                            f'{"BV" if self.year >= 2019 else "EV"}.pdf')
+
     def _written_path(self):
         p = os.path.join(papers_dir(self.subject),
                          f'{self.year}-{self.level}-000-paper.pdf')
+        if self.sitting == 'deferred':
+            p = self._deferred('000')
         if not os.path.exists(p):
             raise FileNotFoundError(p)
         return p
@@ -237,6 +260,8 @@ class DePaper:
     def _aural_path(self):
         p = os.path.join(papers_dir(self.subject),
                          f'{self.year}-{self.level}-A00-paper.pdf')
+        if self.sitting == 'deferred':
+            p = self._deferred('A00')
         return p if os.path.exists(p) else None
 
     # -- the walk -----------------------------------------------------------
@@ -259,7 +284,16 @@ class DePaper:
             for _x0, side, text in groups:
                 if LANG_LINE.search(text):
                     self.language_lines.append((unit, ' '.join(text.split())))
-                if FURNITURE.match(text):
+                # (Never the grammar exercise's own instruction: "Lesen Sie
+                # den folgenden Text und setzen Sie die fehlenden Präpositionen
+                # … ein!", 2012 Higher, is the ask, not the passage's rubric.)
+                # (Nor a worked example printed behind its label, "BEISPIEL:
+                # Oma überlieβ ihrem Enkel den Bauernhof." (2010 Higher): the
+                # sentence the example's answer under it is made from. Dropped
+                # with the label, 24 Higher grammar cards showed the example's
+                # answer and not the sentence it answers.)
+                if FURNITURE.match(text) and not (unit == 'AG' and re.match(r'^Lesen Sie den folgenden\b', text)) \
+                        and not (unit == 'AG' and re.match(r'^Beispiel\s*:\s*\S', text, re.I)):
                     continue
                 if unit in ('AT', 'SP'):
                     self._alternative(unit, side, text, pno)
@@ -285,6 +319,10 @@ class DePaper:
                     # English rendering of question 3 under question 2, which is
                     # the rendering the scheme marks.
                     m = LETTER_MARK.match(text)
+                    # "(a), (b), (c) or (d) in the box provided." (2015
+                    # Ordinary) names the letters; it opens no part.
+                    if m and re.match(r'^\(\s*[a-h]\s*\)\s*,', text):
+                        m = None
                     if m and current:
                         q = current[0]
                         letter = m.group(1)
@@ -298,6 +336,14 @@ class DePaper:
                             roman = m.group(1).lower()
                             rest = m.group(2)
                 if q is None:
+                    if (side == 'L' and _x0 >= ENGLISH_X and cur.get('R') is not None
+                            and cur['R'].page == pno):
+                        # An English line the row reader filed left: 2026
+                        # Higher p12 fuses both columns' "2. (a)" into one
+                        # Irish group, so the page measures no bound, and "current
+                        # accommodation? (Par. 4)" — the English ask's second
+                        # line, at x 333 — went to the Irish block.
+                        side = 'R'
                     if cur.get(side) is not None:
                         cur[side].lines.append(text)
                     continue
@@ -312,6 +358,25 @@ class DePaper:
 
     @staticmethod
     def _unit_of(line):
+        unit = DePaper._unit_of_line(line)
+        if unit is None and line.startswith('TEXT T'):
+            # The 2011 booklets paint the last glyph of each text run twice,
+            # and their heads read "TEXT T II: LESEVE ERSTÄNDNI IS (60)": the
+            # doubled glyph and the gap after it are one printed character.
+            # The page beneath is read as printed; only the head is mended.
+            mended = line
+            for _ in range(3):
+                mended = re.sub(r'(\S) \1', r'\1', mended)
+            unit = DePaper._unit_of_line(mended)
+            if unit is None:
+                # (and a word the run broke without doubling: "LESE EVERSTÄN
+                # DNIS" mends to "LESEVERSTÄN DNIS")
+                joined = re.sub(r'(?<=[A-ZÄÖÜß]) (?=[A-ZÄÖÜß])', '', mended)
+                unit = DePaper._unit_of_line(re.sub(r'^TEXT(I{1,3})', r'TEXT \1', joined))
+        return unit
+
+    @staticmethod
+    def _unit_of_line(line):
         m = UNIT_LV.match(line)
         if m:
             return f'T{TEXT_NUM[m.group(1).lower()]}'
@@ -443,19 +508,40 @@ class DePaper:
         second column to join.
         """
         by_side = {}
+        lines_of = {}
         pages = {}
         for q, lines, page, side in self.grammar:
             text = ' '.join(' '.join(lines).split())
             if len(text) > len(by_side.get((q, side), '')):
                 by_side[(q, side)] = text
+                lines_of[(q, side)] = lines
             pages.setdefault(q, page)
         out = []
         for q in sorted({k[0] for k in by_side}):
+            # A sentence of the left column whose last words run past the
+            # gutter into the right one: "Er war jeden Morgen am / bei / um /
+            # in" / … "acht Uhr im Geschäft." (2013 Ordinary). Put back.
+            left, right = list(lines_of.get((q, 'L'), [])), list(lines_of.get((q, 'R'), []))
+            open_at = [k for k, l in enumerate(left) if l.count('/') >= 2 and not re.search(r'[.?!]\s*$', l)]
+            spill = [k for k, l in enumerate(right) if k > 0 and re.match(r'^[a-zäöü]', l.strip())
+                     and re.search(r'[.?!]\s*$', l) and re.search(r'[.?!]\s*$', right[k - 1])]
+            if len(open_at) == 1 and len(spill) == 1:
+                left[open_at[0]] = f'{left[open_at[0]]} {right[spill[0]].strip()}'
+                del right[spill[0]]
+                lines_of[(q, 'L')], lines_of[(q, 'R')] = left, right
+                by_side[(q, 'L')] = ' '.join(' '.join(left).split())
+                by_side[(q, 'R')] = ' '.join(' '.join(right).split())
             english = by_side.get((q, 'R'), '')
             irish = by_side.get((q, 'L'), '')
             if english:
                 m = ITEM_RUN.search(irish)
-                text = f'{english} {irish[m.start():]}'.strip() if m else english
+                # (2014 Ordinary numbers no sentence: the items begin at the
+                # first line offering its choices, "Er fuhr mit / zu / auf /
+                # nach dem Lift …".)
+                first = next((k for k, l in enumerate(lines_of.get((q, 'L'), [])) if l.count('/') >= 2), None)
+                items = (irish[m.start():] if m else
+                         ' '.join(lines_of[(q, 'L')][first:]) if first is not None else '')
+                text = f'{english} {items}'.strip()
             else:
                 text = irish
             out.append((q, ' '.join(text.split()), pages[q]))
@@ -489,8 +575,13 @@ class DePaper:
                     continue
                 item = roman = rest = None
                 m = NUM_MARK.match(text)
+                if m and not m.group(3) and re.fullmatch(r'\d{2}', (m.group(4) or '').strip()):
+                    # A tick-box time, not an item: 2026 Ordinary Part 3 Q4
+                    # offers "09.00" and "19.00", read as items 9 and 19.
+                    m = None
                 if m:
                     item = int(m.group(1))
+                    item = AURAL_RENUMBER.get((self.year, self.level, part, item, side), item)
                     roman = (m.group(3) or '').lower() or None
                     rest = m.group(4)
                     state[side] = item
@@ -519,6 +610,147 @@ class DePaper:
         return [(p, i, r, seen[(p, i, r)])
                 for p, i, r in sorted(seen, key=lambda k: (k[0], k[1], k[2] or ''))
                 if r or (p, i) not in romanned]
+
+
+    # -- the listening booklet's English column, line by line ---------------
+    def aural_english(self):
+        """[(page, text, [x of each word])] — the English column of the
+        listening booklet.
+
+        Read word by word against the column bound rather than through the
+        row grouper: where an Irish line runs long the two columns close up
+        and group together ("… faoi dhó. the phone call will be played
+        twice, with a"), and the English words would be lost inside the
+        Irish group. Every English column in the 34 booklets opens at x 290
+        or later and every Irish one closes before it.
+        """
+        out = []
+        if not self.aural_path:
+            return out
+        with pymupdf.open(self.aural_path) as doc:
+            for pno in range(doc.page_count):
+                if BLANK_PAGE.search(doc[pno].get_text()):
+                    continue                 # a page that prints no question
+                rows = []
+                for x0, y0, x1, y1, word, *_ in doc[pno].get_text('words'):
+                    if x0 < ENGLISH_X or not word.strip():
+                        continue
+                    mid = (y0 + y1) / 2
+                    for row in rows:
+                        if abs(row['mid'] - mid) <= 3:
+                            row['w'].append((x0, word, x1))
+                            break
+                    else:
+                        rows.append({'mid': mid, 'w': [(x0, word, x1)]})
+                for row in sorted(rows, key=lambda r: r['mid']):
+                    ws = sorted(row['w'])
+                    # The Irish line's last word, run past the bound: "… nuair
+                    # a" ends at x 295 beside "(ii) What should parents …"
+                    # at 340 (2013 Higher). A word that far from the next is
+                    # not the English column's.
+                    while len(ws) > 1 and ws[0][0] < 300 and ws[1][0] - ws[0][2] > 25:
+                        ws = ws[1:]
+                    ws = [(x, w) for x, w, _x1 in ws]
+                    text = ' '.join(w for _x, w in ws)
+                    for glyph, char in GLYPHS.items():
+                        text = text.replace(glyph, char)
+                    if re.fullmatch(r'[–\-]?[_.\s]+', text) or NOW_ANSWER.match(text):
+                        continue             # an answer rule; "Now answer Question 2."
+                    out.append((pno + 1, text, [x for x, _w in ws]))
+        return out
+
+    def aural_ask_lines(self):
+        """({(part, item, roman): ([(line, x)], page)}, {part: (head lines, page)},
+        {(part, item): item label}) — each listening ask in English, with the
+        booklet's own line breaks, the head its part prints above the first
+        question (what is played and how often, the answer language), and the
+        item label a news part prints above an item ("(Item 4: Weather
+        forecast)").
+
+        The keys are aural_asks()'s, which the census reads; a key this walk
+        finds and the census does not is ignored, and one the census has and
+        this walk misses is the caller's to refuse.
+        """
+        asks, heads, items = {}, {}, {}
+        part = cur = None
+        state = None
+        label = None
+        for page, text, xs in self.aural_english():
+            s = text.strip()
+            m = AURAL_PART.match(s)
+            if m:
+                token = (m.group(1) or m.group(2) or '').lower()
+                part = PART_NAMES.get(token)
+                heads[part] = ([s], page)
+                cur, state, label = None, None, None
+                continue
+            if part is None:
+                continue
+            if AURAL_END.match(s) or FURNITURE.match(s) or AURAL_FOOT.match(s):
+                continue
+            # ("(Item2)", 2010 Ordinary, with no space before its number.)
+            if re.match(r'^\(\s*Item(?:\b|(?=\d))[^)]*\)\s*$', s, re.I):
+                label = s
+                cur = None
+                continue
+            item = roman = rest = None
+            m = NUM_MARK.match(s)
+            if m and not m.group(3) and re.fullmatch(r'\d{2}', (m.group(4) or '').strip()):
+                m = None                     # a tick-box time ("09.00"), not an item
+            if m:
+                item = int(m.group(1))
+                item = AURAL_RENUMBER.get((self.year, self.level, part, item, 'R'), item)
+                roman = (m.group(3) or '').lower() or None
+                rest = m.group(4)
+                state = item
+                if label:
+                    items[(part, item)] = label
+                    label = None
+            else:
+                m = ROMAN_MARK.match(s)
+                if m and state:
+                    item, roman, rest = state, m.group(1).lower(), m.group(2)
+            if item is not None:
+                cur = (part, item, roman)
+                lead = len(s[:len(s) - len(rest)].split())
+                at = xs[lead] if lead < len(xs) else None
+                asks[cur] = ([(rest.strip(), at)] if rest.strip() else [], page)
+                continue
+            if cur is not None:
+                asks[cur][0].append((s, xs[0]))
+            elif part in heads:
+                heads[part][0].append(s)
+        # A head whose romans are the asks prints only the shared lead-in
+        # under its own number ("1. (i) …" opens both); keep the asks.
+        return asks, heads, items
+
+
+# The English column of the listening booklet opens at x 290 or later in all
+# 34 booklets (measured on every "1." English marker, 2010-2026), and the
+# Irish column closes before it.
+ENGLISH_X = 288
+# The private-use glyphs the booklet's symbol fonts reach the text layer as:
+# the tick in "Tick (✓) the correct box" (Wingdings 0xFC; 2025 Ordinary sets
+# it in Wingdings 2, 0x50) and the bullet of the phone note's checklist.
+GLYPHS = {'\uf0fc': '✓', '\uf050': '✓', '\uf0b7': '•'}
+# Pages with no question on them: the blank verso, the back cover.
+BLANK_PAGE = re.compile(r'There is no examination material on this page|'
+                        r'Do not write on this page|Copyright notice|Blank\s+Page|Leathanach\s+B[áa]n', re.I)
+NOW_ANSWER = re.compile(r'^Now answer Question\b', re.I)
+# The running foot of every listening page — in 2020 with the page number
+# before it on the same line ("3 Scrúdú na hArdteistiméireachta, 2020").
+AURAL_FOOT = re.compile(r'^(?:\d{1,2}\s+)?(?:German\s*[–-]\s*Listening|Gearm[áa]inis\s*[–-]|'
+                        r'Leaving Certificate Examination|Scr[úu]d[úu] na|'
+                        # "8/Page 2 of 8" (2017), the end of "Leathanach 2 de
+                        # 8/Page 2 of 8" across the column bound.
+                        r'(?:de\s+)?(?:\d{1,2}\s*/\s*)?Page\s+\d+\s+of\s+\d+$'
+                        # "2 of 8" (2010), the same foot cut after "Page".
+                        r'|\d{1,2}\s+of\s+\d{1,2}$)', re.I)
+
+# An item the two columns number differently, the same ask: 2010 Higher Part 4
+# numbers its last item "5." in the Irish column and "6." in the English
+# (rendered and read; hand count, languages/handcount-german/aural.json).
+AURAL_RENUMBER = {(2010, 'hl', 4, 6, 'R'): 5}
 
 
 def main():

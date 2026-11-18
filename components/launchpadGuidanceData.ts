@@ -77,6 +77,12 @@ export const TOOL_GUIDANCE: Record<string, ToolGuidance> = {
     whatItDoes: 'Keeps SEC past papers beside their official marking schemes and maps answers to questions.',
     outcome: 'The right paper, the right question and the official evidence needed to review your answer.',
   },
+  'coursework-companion': {
+    bestWhen: 'your project has notes and evidence but needs a clear next step',
+    useWhen: 'You are working on coursework and want to keep track of sources, decisions, findings and teacher checkpoints.',
+    whatItDoes: 'Connects your own evidence to conclusions and limitations, with requirements matched to your subject and examination year.',
+    outcome: 'A traceable record of your work, an editable plan and a pack for discussing it with your teacher.',
+  },
   'command-word-reflex': {
     bestWhen: 'you misread what exam questions are asking',
     useWhen: 'Words such as explain, evaluate or compare keep costing you marks.',

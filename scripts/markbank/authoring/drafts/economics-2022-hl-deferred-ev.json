@@ -1,0 +1,1013 @@
+{
+  "subjectId": "economics",
+  "year": 2022,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV-deferred",
+  "sitting": "deferred",
+  "status": "independent-census-before-authoring",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "dbaecfedad834433926f5b80fbf5a808e6efa91e8c6b59daf15de478db19f484",
+  "schemeSha256": "4c41a20ad80ed22a5717e998fe47748f85b8cf38249315ee961211f771878a12",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2022-hl-deferred-sa-q1-a",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "b",
+          "marks": 9,
+          "cardId": "econ-2022-hl-deferred-sa-q1-b",
+          "topicId": "economics-4-1"
+        }
+      ],
+      "boundaryReason": "a two positive consequences of FDI from six, 3 each; b reasons to invest abroad, three from five at 3 (1 + 2). The scheme prints \"1 x 6 (3+3)\" and \"3 x 3 (1+2)\" together beside (a) and nothing beside (b): (a) asks for two, so it takes the 6 and (b) the 3 x 3, the question's 15.",
+      "canonicalNodeIds": [
+        "economics-4-1",
+        "economics-3-5",
+        "economics-4-2"
+      ],
+      "topicReason": "Foreign direct investment and why firms invest abroad are Globalisation (4-1); the consequences the scheme names include economic growth (3-5) and exports (4-2)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-sa-q2-a",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b",
+          "marks": 5,
+          "cardId": "econ-2022-hl-deferred-sa-q2-b",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "a diagram 7 (seven labels at 1, hidden solution; the blank axes are the question figure) + explanation 3 x 1. b 5 scarcity, three wordings.",
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-0-1",
+        "economics-1-2"
+      ],
+      "topicReason": "A fall in supply on the market diagram is The Market Economy (1-0), the supply side The Firm (Supply) (1-2); scarcity is Scarcity & Choice (0-1)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-sa-q3-a",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 5,
+          "cardId": "econ-2022-hl-deferred-sa-q3-b",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "a 5 x 2, the five figures of the YED working (+7.35). b 1 x 3 + 1 x 2 beside two headings, the sign 3 and the number 2.",
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "topicReason": "Income elasticity of demand is Elasticity (1-4)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q4-a",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q4-b",
+          "topicId": "economics-1-2"
+        }
+      ],
+      "boundaryReason": "a 2 x 4 (2 + 2) two reasons from three. b printed Yes/No; the scheme answers No only: diagram 3 x 1 (hidden solution) + 2 x 2 explanation, one card.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-1-2",
+        "economics-1-0"
+      ],
+      "topicReason": "Banning ticket touting is Government Intervention (1-3); a supply fixed by capacity is The Firm (Supply) (1-2), on The Market Economy's diagram (1-0)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        7,
+        8
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q5-a",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q5-b",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q5-c",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "a 1 x 4 (2 + 2), 1 x 3 (1 + 2) two sources from four. Answer (b) 2 x 4 (2 + 2) two benefits from six OR (c) 2 x 4 (2 + 2) two reasons from six; the alternatives count once.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-5"
+      ],
+      "topicReason": "Comparative advantage is International Trade & Competitiveness (4-2); rural broadband and balanced regional development are Economic Growth (3-5)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        9,
+        10
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 9,
+          "cardId": "econ-2022-hl-deferred-sa-q6-a",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2022-hl-deferred-sa-q6-b",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "a \"Any 3 x 3\" beside one definition with three parts in bold, 3 each. b ANY TWO of A, B or C at 3 (2 x 3), one card; the data table and answer grid are the figure.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "GNP, GNI and GNI* are National Income (3-0)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q7-a",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q7-b",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q7-c",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "boundaryReason": "a 1 x 4 (2 + 2), 1 x 3 (1 + 2) two measures from four. Answer (b) 2 x 4 (2 + 2) two reasons from seven OR (c) 2 x 4 (2 + 2) two challenges from six; the alternatives count once.",
+      "canonicalNodeIds": [
+        "economics-0-2",
+        "economics-4-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Protecting the environment is Sustainability (0-2) and the government's measures (a carbon tax, grants) Government Intervention (1-3); aid to less developed nations is Growth & Development (4-0)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q8-a",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q8-b",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "boundaryReason": "a printed \"Do you agree?\"; the scheme answers Yes only, 7. b printed True/False; the scheme ticks True 2 + explanation 6.",
+      "canonicalNodeIds": [
+        "economics-0-2",
+        "economics-2-2"
+      ],
+      "topicReason": "A world of 8 billion is Sustainability (0-2); electric cars as a market failure are Market Failure (2-2)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        12
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q9-a",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q9-b",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q9-c",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "a 7 x 1, four totals and three marginal revenues (hidden completed table; the blank table is the question figure). Answer (b) one benefit OR (c) one disadvantage, each priced \"2 x 4 (2+2)\", 8: the one response is assessed against the 8; the alternatives count once.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "Total and marginal revenue and specialisation are Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        13
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-sa-q10-a",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-sa-q10-b",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "a 2 x 4 (2 + 2) two trends from four periods. b \"7 (4+3)\" one developed effect from five, as the same price is one response beside Q12(c)(ii) and (iii).",
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "topicReason": "The benchmark interest rate and its effect on borrowers are Monetary Policy & Inflation (3-3)."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q11-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q11-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2022-hl-deferred-q11-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q11-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q11-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 13,
+          "cardId": "econ-2022-hl-deferred-q11-c-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q11-c-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-deferred-q11-c-iii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 2018 4 + 2019 3; a(ii) 4 x 3; a(iii) printed Expansionary/Contractionary, the scheme ticks Expansionary 1 + explanation 5, one card. b(i) US and GB 4 (2 x 2) each; b(ii) one benefit 6 (3 + 3) AND one challenge 6 (3 + 3), one card. c(i) 13 x 1 (hidden solution); c(ii) 2 + 2 x 2 + 2 + 2 x 2; c(iii) 5.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-4-2",
+        "economics-3-0"
+      ],
+      "topicReason": "The budget surplus, the 2020 deficit and expansionary policy are Fiscal Policy & the Budget (3-1); trade with the US and Great Britain and imports International Trade & Competitiveness (4-2); the circular flow, injections and leakages National Income (3-0)."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "schemePages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q12-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q12-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 17,
+          "cardId": "econ-2022-hl-deferred-q12-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-q12-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q12-b-iii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q12-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q12-c-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q12-c-iii",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 2008 6 (3 + 3) + 2021 6 (3 + 3) (the scheme heads the second \"2001\"); a(ii) 1 x 4, 1 x 3. b(i) 9 labels + 8 marked points (hidden solution); b(ii) one advantage AND one disadvantage, \"1 x 6 (3+3)\" and \"1 x 4 (2+2)\", read in order, one card; b(iii) printed Agree/Disagree, the scheme ticks Agree only, 2 x 4 (2 + 2). c(i), c(ii), c(iii) 7 (4 + 3) each, one response.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Market concentration, perfect competition and monopoly power are Market Structures (2-0); regulating markets is Government Intervention (1-3)."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "schemePages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-q13-a-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-deferred-q13-a-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q13-a-iii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q13-b-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 21,
+          "cardId": "econ-2022-hl-deferred-q13-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2022-hl-deferred-q13-c-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q13-c-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 6,
+          "cardId": "econ-2022-hl-deferred-q13-c-iii",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 2020-2021 5 + 2022-2023 5; a(ii) 5 (3 + 2) one reason from five; a(iii) 2 x 4 (2 + 2) from six. b(i) 7; b(ii) one effect each on employees, businesses and the government, 7 (4 + 3) each, one card with three groups. c(i) the scheme answers No, 6 (3 + 3); c(ii) 2 x 6 (3 + 3) from eight; c(iii) 1 x 6 (3 + 3) from three.",
+      "canonicalNodeIds": [
+        "economics-3-2",
+        "economics-2-1",
+        "economics-3-3",
+        "economics-3-1"
+      ],
+      "topicReason": "Unemployment and its effects are Employment & Unemployment (3-2); labour shortages and the living wage The Labour Market (2-1); pensioners and inflation and the ECB's measures Monetary Policy & Inflation (3-3); the government's measures against inflation Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "schemePages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q14-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2022-hl-deferred-q14-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 7,
+          "cardId": "econ-2022-hl-deferred-q14-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q14-b-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q14-b-ii",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q14-c-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q14-c-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/iii",
+          "marks": 9,
+          "cardId": "econ-2022-hl-deferred-q14-c-iii",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 4 x 2 the parts of the working (0.6%); a(ii) 3 x 5 (2 + 3) from eight; a(iii) printed progressive or regressive, the scheme answers regressive, 7. b(i) diagram 4 + explanation 4; b(ii) diagram 4 + 2 x 2 (hidden solutions; the printed PPFs are question figures). c(i) 4 x 3 diagram (hidden solution); c(ii) downward 4 (2 + 2) + upward 4 (2 x 2); c(iii) 3 x 3.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-0-1",
+        "economics-1-5"
+      ],
+      "topicReason": "Revenue's costs, the principles of taxation and LPT are Fiscal Policy & the Budget (3-1); the PPF and opportunity cost Scarcity & Choice (0-1); SRAC and MC Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "schemePages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 16,
+          "cardId": "econ-2022-hl-deferred-q15-a-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q15-a-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 14,
+          "cardId": "econ-2022-hl-deferred-q15-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 14,
+          "cardId": "econ-2022-hl-deferred-q15-b-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 5,
+          "cardId": "econ-2022-hl-deferred-q15-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-q15-c-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q15-c-iii",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) diagram 8 (four labels at 2, hidden solution) + 2 x 2 + 2 x 2; a(ii) 2 x 4 (2 + 2) from six (two bare headings). b(i) and b(ii) diagram 3 x 2 (hidden solution) + 4 x 2, one card each. c(i) 5; c(ii) one argument for 5 (2 + 3) AND one against 5 (2 + 3), one card; c(iii) 2 x 4 (2 + 2) from four.",
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-1-2",
+        "economics-1-3"
+      ],
+      "topicReason": "The market for electric vehicles and shifts in its equilibrium are The Market Economy (1-0); the cost of producing them The Firm (Supply) (1-2); subsidies and intervention Government Intervention (1-3)."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "schemePages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q16-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-deferred-q16-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 15,
+          "cardId": "econ-2022-hl-deferred-q16-b-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-q16-b-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q16-b-iii",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 4,
+          "cardId": "econ-2022-hl-deferred-q16-c-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-deferred-q16-c-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-deferred-q16-c-iii",
+          "topicId": "economics-1-0"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 2 x 4 (2 + 2) from three periods; a(ii) one positive AND one negative effect, \"1 x 8 (4+4)\" and \"1 x 4 (2+2)\", read in order, one card. b(i) diagram 9 (hidden solution) + \"6 (2 x 3)\" any two of three effects; b(ii) 2 x 5 (2 + 3) from five; b(iii) 2 x 4 (2 + 2) from four. c(i) 4; c(ii) 2 x 5 (3 + 2) from four; c(iii) diagram 4 x 1 (hidden solution) + 2 + 2.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3",
+        "economics-2-2",
+        "economics-1-1",
+        "economics-1-2",
+        "economics-1-0",
+        "economics-0-1"
+      ],
+      "topicReason": "Corporation tax receipts and the 15% rate are Fiscal Policy & the Budget (3-1); minimum pricing and other strategies against alcohol Government Intervention (1-3); its social costs Market Failure (2-2); derived demand The Consumer (1-1), the characteristics of land The Firm (Supply) (1-2) and the market for land The Market Economy (1-0), land a factor of production as earlier reviews file them under Scarcity & Choice (0-1)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 2,
+      "text": "Answer 3 out of 6 questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every independently practicable task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Answer 5 out of 10 questions from this section.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every independently practicable task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Write your answers in blue or black pen.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction."
+    },
+    {
+      "page": 2,
+      "text": "end of the booklet. Label any such extra work clearly with the question number and part.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction about extra pages."
+    },
+    {
+      "page": 3,
+      "text": "Answer 5 out of 10 questions",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every independently practicable task stays in the census."
+    },
+    {
+      "page": 6,
+      "text": "Yes: No:",
+      "classification": "answer-classification",
+      "reason": "Q4(b) the scheme answers No only; one card."
+    },
+    {
+      "page": 7,
+      "text": "Answer (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 7,
+      "text": "Ireland has one of the fastest growing data centre markets in Europe. Currently, most data centres",
+      "classification": "not-a-task-selection",
+      "reason": "Stem wording (\"most data centres\"), not a selection."
+    },
+    {
+      "page": 7,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 9,
+      "text": "use the information above to calculate ANY TWO of the following terms A, B, OR C.",
+      "classification": "finite-route",
+      "reason": "Q6(b) any two of A, B or C: one card claimed twice at 3."
+    },
+    {
+      "page": 10,
+      "text": "Answer (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 10,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 11,
+      "text": "In your opinion, is the statement above true or false? Explain your choice.",
+      "classification": "answer-classification",
+      "reason": "Q8(b) the scheme ticks True only; one card."
+    },
+    {
+      "page": 11,
+      "text": "unsustainable. Do you agree with this statement? Explain your answer.",
+      "classification": "answer-classification",
+      "reason": "Q8(a) the scheme answers Yes only and prints no case for disagreeing; one card."
+    },
+    {
+      "page": 12,
+      "text": "Answer (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 12,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 15,
+      "text": "Answer 3 out of 6 questions",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every independently practicable task stays in the census."
+    },
+    {
+      "page": 15,
+      "text": "Explain your choice using a relevant example to illustrate your understanding.",
+      "classification": "answer-classification",
+      "reason": "Q11(a)(iii) tail of the tick instruction; Expansionary only."
+    },
+    {
+      "page": 15,
+      "text": "Tick () your choice: Expansionary: Contractionary:",
+      "classification": "answer-classification",
+      "reason": "Q11(a)(iii) the scheme ticks Expansionary only; one card."
+    },
+    {
+      "page": 21,
+      "text": "Agree: Disagree:",
+      "classification": "answer-classification",
+      "reason": "Q12(b)(iii) the scheme ticks Agree and prints no disagree answer; one card."
+    },
+    {
+      "page": 21,
+      "text": "Do you agree or disagree with this statement?",
+      "classification": "answer-classification",
+      "reason": "Q12(b)(iii) Agree only in the scheme."
+    },
+    {
+      "page": 27,
+      "text": "Is LPT a progressive tax or a regressive tax? Justify your answer.",
+      "classification": "answer-classification",
+      "reason": "Q14(a)(iii) the scheme answers regressive only; one card."
+    },
+    {
+      "page": 37,
+      "text": "Outline two of these possible social costs.",
+      "classification": "not-a-task-selection",
+      "reason": "Q16(b)(iii) \"two of these\" is an open count of social costs, not a printed pool."
+    },
+    {
+      "page": 40,
+      "text": "Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "The Commission does not accept liability for any infringement of third-party rights arising from unauthorised",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "This examination paper may contain text or images for which the State Examinations Commission is not the",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "distribution or use of this examination paper.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    }
+  ],
+  "reviewNote": "The 2022 deferred Higher sitting, read 2026-11-04 from a paired visual sweep of all 40 paper and 40 scheme pages (scheme PDF page = printed page; PDF pages 37-40 blank and the back cover). The hand count of the printed asks is 70 (Section A 23, Section B 47), equal to the reader's. 70 routes (23 Section A + 47 Section B), one per printed ask: every printed choice the scheme answers on one side only is one card on that side, and each two-sided ask with one priced response per side (\"one advantage and one disadvantage\") is one card. 27 raw directive lines classified. Stems and asks are sliced from the deferred paper and every marking point from the deferred scheme (econ_2022_hl_deferred.py). Choose-N rule checked: Q6(b) ANY TWO of A, B or C is one card claimed twice.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf"
+}

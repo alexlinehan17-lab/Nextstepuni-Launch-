@@ -6,6 +6,10 @@
 .study-room-page { position: absolute; inset: 0; min-height: 100dvh; background: #fff; }
 .study-room-page[data-front='true'] { z-index: 2; }
 .study-room-page[hidden] { display: none; }
+.ss-timer-view.ss-timer-complete { position: relative; inset: auto; overflow: visible; }
+.ss-timer-complete .study-room-page:not(.study-room-complete-page) { position: fixed; }
+.study-room-complete-page { position: relative; }
+.study-room-complete-page h1:focus { outline: none; }
 .study-room-tools { display: flex; align-items: center; gap: 12px; }
 .study-room-stage .study-sound-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; width: auto; min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid #d4d7cf; border-radius: 7px; background: transparent; color: #494e40; font: 400 12px/1.4 'Study Diatype', sans-serif; cursor: pointer; }
 .ss-room-ink .study-sound-toggle { border-color: #55594e; color: #c1c8b5; }

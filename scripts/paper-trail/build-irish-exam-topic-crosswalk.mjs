@@ -30,6 +30,19 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json', 'higher-2019-p1-authored.json', 'higher-2019-p2-authored.json', 'ordinary-2019-p1-authored.json', 'ordinary-2019-p2-authored.json', 'higher-2018-p1-authored.json', 'higher-2018-p2-authored.json', 'ordinary-2018-p1-authored.json', 'ordinary-2018-p2-authored.json', 'higher-2017-p1-authored.json', 'higher-2017-p2-authored.json', 'ordinary-2017-p1-authored.json', 'ordinary-2017-p2-authored.json', 'higher-2016-p1-authored.json', 'higher-2016-p2-authored.json', 'ordinary-2016-p1-authored.json', 'ordinary-2016-p2-authored.json', 'higher-2015-p1-authored.json', 'higher-2015-p2-authored.json', 'ordinary-2015-p1-authored.json', 'ordinary-2015-p2-authored.json', 'higher-2014-p1-authored.json', 'higher-2014-p2-authored.json', 'ordinary-2014-p1-authored.json', 'ordinary-2014-p2-authored.json', 'higher-2013-p1-authored.json', 'higher-2013-p2-authored.json', 'ordinary-2013-p1-authored.json', 'ordinary-2013-p2-authored.json', 'higher-2012-p1-authored.json', 'higher-2012-p2-authored.json', 'ordinary-2012-p1-authored.json', 'ordinary-2012-p2-authored.json', 'ordinary-2011-aural-authored.json', 'ordinary-2011-p1-authored.json', 'ordinary-2011-p2-authored.json', 'higher-2011-aural-authored.json', 'higher-2011-p1-authored.json', 'higher-2011-p2-authored.json', 'ordinary-2010-aural-authored.json', 'ordinary-2010-p1-authored.json', 'ordinary-2010-p2-authored.json', 'higher-2010-aural-authored.json', 'higher-2010-p1-authored.json', 'higher-2010-p2-authored.json']
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
+  .filter(card => card.reviewedAt && card.atlasQuestionId);
+const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
+// The SEC's deferred sittings, carded in the Mark Bank (scripts/markbank/authoring/irish_deferred.py): each paper joins the
+// Atlas as its own booklet ("LC001ALP100IV-deferred.pdf"), as History's and Economics' deferred papers do, with the
+// June paper's section entries and one entry per reviewed card. Their questions never join June's (logicalQuestionIdentity,
+// and the runtime keys them by booklet). June's outputs do not change.
+const DEFERRED_MANIFESTS = ['higher-2025-deferred-authored.json', 'ordinary-2025-deferred-authored.json', 'higher-2024-deferred-authored.json', 'ordinary-2024-deferred-authored.json', 'higher-2023-deferred-authored.json', 'ordinary-2023-deferred-authored.json', 'ordinary-2022-deferred-authored.json', 'higher-2022-deferred-authored.json'];
+const deferredTasks = DEFERRED_MANIFESTS
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
+  .filter(card => card.reviewedAt && card.atlasQuestionId);
+const DEFERRED_SUFFIX = ' — Deferred sitting';
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -64,6 +77,56 @@ const EXTENSIONS = [
     extractedQuestionCount: 0,
     referenceTopic: false,
   },
+  {
+    id: 'irish-higher-prescribed-prose-archive',
+    label: 'Prescribed Prose (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-prose',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
+  {
+    id: 'irish-higher-prescribed-poetry-archive',
+    label: 'Prescribed Poetry (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-poetry',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
+  // Ordinary Level prescribed works are not optional prose/poetry either;
+  // reviewed Ordinary routes get their own same-level shelves.
+  {
+    id: 'irish-ordinary-prescribed-prose-archive',
+    label: 'Prescribed Prose (NextStepUni archive)',
+    level: 'ordinary',
+    sourcePath: '/nextstepuni-preservation/irish/ordinary/prescribed-prose',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
+  {
+    id: 'irish-ordinary-prescribed-poetry-archive',
+    label: 'Prescribed Poetry (NextStepUni archive)',
+    level: 'ordinary',
+    sourcePath: '/nextstepuni-preservation/irish/ordinary/prescribed-poetry',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
 ];
 const allTopics = [...referenceTopics, ...EXTENSIONS];
 const topicById = new Map(allTopics.map(topic => [topic.id, topic]));
@@ -90,6 +153,8 @@ const H = {
   story: topicId('higher', 'Write a Story..'),
   essay: topicId('higher', 'Write an Essay..'),
   historic: EXTENSIONS[0].id,
+  prescribedProse: EXTENSIONS[2].id,
+  prescribedPoetry: EXTENSIONS[3].id,
 };
 const O = {
   conversation: topicId('ordinary', 'AURAL - Comhrá (Conversation)'),
@@ -104,6 +169,8 @@ const O = {
   letter: topicId('ordinary', 'Write a Letter/Email...'),
   story: topicId('ordinary', 'Write a Story..'),
   folktale: topicId('ordinary', 'Write About a Studied Folktale...'),
+  prescribedProse: EXTENSIONS[4].id,
+  prescribedPoetry: EXTENSIONS[5].id,
   poetry: topicId('ordinary', 'Write About a Studied Poem (Optional)...'),
   prose: topicId('ordinary', 'Write About a Studied Prose (Optional)...'),
 };
@@ -144,12 +211,19 @@ const setCurriculum = (id, nodes) => { CURRICULUM_CROSSWALK[id] = nodes; };
 setCurriculum(H.conversation, ['irish-1-1', 'irish-1-3']);
 setCurriculum(H.announcement, ['irish-1-0', 'irish-1-3']);
 setCurriculum(H.news, ['irish-1-2', 'irish-1-3']);
-setCurriculum(H.extraPoetry, ['irish-6-5']);
+setCurriculum(H.extraPoetry, [...new Set(['irish-6-5', ...reviewedHigherTasks
+  .filter(card => card.atlasQuestionId === 'X-4F').map(card => card.topicId)])]);
 setCurriculum(H.grammar, ['irish-3-3', 'irish-8-4']);
 setCurriculum(H.oral, ['irish-0-0', 'irish-0-1', 'irish-0-2', 'irish-0-3', 'irish-0-4', 'irish-0-5', 'irish-0-6']);
 setCurriculum(H.reading, ['irish-3-0', 'irish-3-1', 'irish-3-2']);
 setCurriculum(H.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
+// Reuse the reviewed cards' existing canonical nodes; this archive shelf does
+// not define a second syllabus or relabel prescribed works as optional prose.
+setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'higher' && /^P-2?A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
+setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'higher' && /^F-3?A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -169,6 +243,10 @@ setCurriculum(O.story, ['irish-2-3']);
 setCurriculum(O.folktale, ['irish-4-7', 'irish-7-1']);
 setCurriculum(O.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(O.prose, ['irish-4-7', 'irish-7-0']);
+setCurriculum(O.prescribedProse, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'ordinary' && /^P-2?A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+setCurriculum(O.prescribedPoetry, [...new Set(reviewedHigherTasks
+  .filter(card => card.level === 'ordinary' && /^F-3?A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(F.form, ['irish-9-0']);
 setCurriculum(F.match, ['irish-9-1']);
 for (const id of [F.brochure, F.extract, F.letterReading, F.news, F.poem]) {
@@ -189,6 +267,12 @@ for (const topic of referenceTopics) {
     const title = topic.label.replace(/^Prose - /, '');
     setCurriculum(topic.id, [NEW_PROSE[title]]);
   }
+}
+for (const card of deferredTasks.filter(card => card.paper === 2 && /^[PF]-[23]A(?:-|$)/.test(card.atlasQuestionId))) {
+  const shelf = card.level === 'higher'
+    ? (card.atlasQuestionId.startsWith('P-') ? H.prescribedProse : H.prescribedPoetry)
+    : (card.atlasQuestionId.startsWith('P-') ? O.prescribedProse : O.prescribedPoetry);
+  if (!CURRICULUM_CROSSWALK[shelf].includes(card.topicId)) throw new Error('Deferred text off its June shelf: ' + card.id + ' ' + card.topicId);
 }
 for (const topic of allTopics) {
   if (!CURRICULUM_CROSSWALK[topic.id]?.filter(Boolean).length) {
@@ -228,7 +312,9 @@ const cloneAnchor = (source, fallbackPage, label) => {
 
 const baselineByFile = new Map(preservationBaseline.map(paper => [paper.year + '|' + paper.fileid, paper]));
 const paperFiles = fs.readdirSync(PAPERS_ROOT, { withFileTypes: true })
-  .filter(entry => entry.isDirectory() && /^20\d\d$/.test(entry.name))
+  // The local archive now reaches back to 1995; the entitled corpus this
+  // crosswalk covers is 2010-2026, so older years are never counted here.
+  .filter(entry => entry.isDirectory() && /^20\d\d$/.test(entry.name) && Number(entry.name) >= 2010)
   .flatMap(entry => fs.readdirSync(path.join(PAPERS_ROOT, entry.name))
     .filter(file => /^LC001[AGB]LP(?:100|200|A00|000)IV\.pdf$/i.test(file))
     .map(file => ({ year: Number(entry.name), file })))
@@ -339,13 +425,34 @@ const fallbackLayout = paper => {
 };
 
 const papers = paperFiles.map(parsePaper);
+const deferredPapers = [...new Map(deferredTasks.map(card => [card.year + '|' + card.paperFileid, card])).values()]
+  .sort((a, b) => b.year - a.year || a.paperFileid.localeCompare(b.paperFileid))
+  .map(first => {
+    const match = (first.paperFileid + '.pdf').match(/^LC001([AG])LP([12])00IV-deferred\.pdf$/);
+    if (!match) throw new Error('Unexpected Irish deferred paper: ' + first.paperFileid);
+    const cards = deferredTasks.filter(card => card.year === first.year && card.paperFileid === first.paperFileid);
+    const page = test => {
+      const pages = cards.filter(card => test.test(card.atlasQuestionId)).map(card => card.reviewedPaperPages[0]);
+      if (!pages.length) throw new Error(first.paperFileid + ' ' + first.year + ': no reviewed card for ' + test);
+      return Math.min(...pages);
+    };
+    const kind = match[2] === '1' ? 'p1' : 'p2';
+    const level = match[1] === 'A' ? 'higher' : 'ordinary';
+    const layout = kind === 'p1'
+      ? { aural: [page(/^L-A-/), page(/^L-B-/), page(/^L-C-/)], writing: page(/^W-/) }
+      : { reading: [page(/^R-A-/), page(/^R-B-/)], prose: page(/^P-2A-/), proseOptional: page(/^P-2B-/),
+        poetry: page(/^F-3A-/), poetryOptional: page(/^F-3B-/), ...(level === 'higher' ? { extra: page(/^X-/) } : {}) };
+    return { subjectId: 'irish', year: first.year, level, lang: 'iv', fileid: first.paperFileid + '.pdf', component: match[2] + '00',
+      paperKey: kind, kind, baseline: undefined, deferred: true, layout };
+  });
+papers.push(...deferredPapers);
 const paperByIdentity = new Map();
 for (const paper of papers) {
   const sidecarPath = path.join(ANSWERS_ROOT, String(paper.year), paper.fileid + '.json');
-  paper.sidecar = fs.existsSync(sidecarPath) ? readJson(sidecarPath) : null;
+  paper.sidecar = !paper.deferred && fs.existsSync(sidecarPath) ? readJson(sidecarPath) : null;
   const hostedPath = path.join(HOSTED_ROOT, String(paper.year), paper.fileid + '.json');
-  paper.existingHosted = fs.existsSync(hostedPath) ? readJson(hostedPath) : null;
-  paper.layout = fallbackLayout(paper);
+  paper.existingHosted = !paper.deferred && fs.existsSync(hostedPath) ? readJson(hostedPath) : null;
+  paper.layout = paper.deferred ? paper.layout : fallbackLayout(paper);
   paper.q = [];
   paperByIdentity.set(paper.level + '|' + paper.year + '|' + paper.kind, paper);
 }
@@ -500,6 +607,12 @@ for (const paper of papers) {
       const generic = paper.sidecar.q;
       for (const source of generic) {
         const n = String(source.n);
+        // A reviewed task written to the sidecar by an earlier run is re-added
+        // by the reviewed-task pass with its own same-level topics.
+        if (reviewedTaskKeys.has(paper.year + '|' + paper.fileid + '|' + n)) continue;
+        // 2010-2011 Ordinary Paper 2 maps print no numbered question: a numbered one read back is an answer-map parent the
+        // reviewed-task pass added, never an Atlas question.
+        if (source.addedParent || (paper.year <= 2011 && paper.level === 'ordinary')) continue;
         let baseTopicIds;
         if (n === '1') baseTopicIds = [ids.reading];
         else if (n === '2') baseTopicIds = paper.level === 'higher' ? [H.prose] : [O.prose, O.folktale];
@@ -661,6 +774,196 @@ for (const paper of papers) {
   }
 }
 
+// Reviewed task boundaries override generic section guesses for this exact
+// paper. Frozen baseline identities remain below; new parts/routes are additive.
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json', 'foundation-2010-aural-authored.json', 'foundation-2026-authored.json']
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
+for (const card of foundationTasks.cards) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Foundation task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  if (existing?.baseline) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^\d{4} FL /, ''),
+    referenceSlots: existing?.referenceSlots ?? [],
+    baseTopicIds: card.examTopicKeys.map(key => F[key]),
+    anchor: { pP: card.sourceMaterial.pages[0], pY: [0, 1],
+      paperRegion: card.sourceMaterial.pages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  paper.q.at(-1).reviewedSchemePages = card.schemePages;
+  paper.q.at(-1).audioMaterial = card.audioMaterial;
+  // What the task practises, in English: a practice line is ours, and the bank prints no Irish of its own.
+  if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Practise: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
+  paper.hasReviewedFoundationTasks = true;
+  paper.reviewedFoundationSchemeFileid = (card.schemeFileid ?? card.paperFileid) + '.pdf';
+}
+for (const card of [...reviewedHigherTasks, ...deferredTasks]) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  // Paper 1: listening questions keep their recording-section family; each
+  // composition title keeps its printed writing form(s).
+  const paperOneTopics = card.level === 'higher' ? {
+    'irish-1-0': [H.announcement], 'irish-1-1': [H.conversation], 'irish-1-2': [H.news],
+    'irish-2-0': [H.essay, H.article], 'irish-2-1': [H.article], 'irish-2-3': [H.story], 'irish-2-4': [H.debate], 'irish-2-5': [H.debate],
+  } : {
+    'irish-1-0': [O.announcement], 'irish-1-1': [O.conversation], 'irish-1-2': [O.news],
+    'irish-2-6': [O.blog], 'irish-2-3': [O.story], 'irish-2-8': [O.letter], 'irish-2-9': [O.writtenConversation],
+  };
+  // 2012 Higher prints its articles as a section of their own (Ceapadóireacht C, irish-2-1): the article shelf.
+  // A two-composition selection covers every member's writing form.
+  const paperOneIds = card.memberCardIds ? [card.topicId, ...(card.additionalTopicIds ?? [])] : [card.topicId];
+  // 2010-2011 print the reading on Paper 1 (their listening is a paper of its own): it goes to the reading shelf, as Paper 2's
+  // does from 2012; their prescribed prose and poetry are keyed P-A and F-A (2012 on: P-2A, F-3A).
+  const baseTopicIds = card.paper === 1 && !card.id.includes('-reading-')
+    ? [...new Set(paperOneIds.flatMap(id => paperOneTopics[id] ?? (id === 'irish-2-2' ? [] : (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id + ' ' + id); })())))]
+    : card.level === 'ordinary'
+    // Ordinary Paper 2: reading, prescribed prose/poetry shelves, optional prose/poetry.
+    ? [card.id.includes('-reading-') ? O.reading
+      : /^F-3?A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedPoetry
+      : /^P-2?A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? O.prose : O.poetry]
+    : card.id.includes('-reading-')
+    ? card.topicId === 'irish-3-3' ? [H.grammar]
+      : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
+    : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
+    : [card.atlasQuestionId.startsWith('X-') ? H.historic
+      : /^F-3?A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedPoetry
+      : /^P-2?A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
+  if (existing?.baseline) {
+    // Frozen reading identities/tags remain. The additive regions restore the
+    // entire passage and the reviewed scheme without renumbering the question.
+    if (!card.id.includes('-reading-')) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+    existing.anchor.paperRegion = card.reviewedPaperPages.map(p => ({p,r:[0,0,1,1]}));
+    existing.reviewedSchemePages = card.schemePages;
+    existing.baseTopicIds = [...new Set([...existing.baseTopicIds,...baseTopicIds])];
+    paper.hasReviewedHigherTasks = true;
+    continue;
+  }
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^\d{4} [HO]L (?:Paper [12] )?/, '').replace(DEFERRED_SUFFIX, ''),
+    // A reviewed card keyed as the paper's own section (2010-2011 Higher Paper 2's P-A, P-B, F-A, F-B) keeps the reference
+    // headings that section answered, as a reviewed Foundation task does.
+    referenceSlots: existing?.referenceSlots ?? [],
+    baseTopicIds,
+    anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
+      paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  const question = paper.q.at(-1);
+  question.primary = card.topicId;
+  delete question.secondary;
+  question.reviewedSchemePages = card.schemePages;
+  question.practiceInstruction = 'Practise: ' + question.label + (card.practiceFocus ? ' · ' + card.practiceFocus : '') + '.'
+    + (card.selectedRoute ? ' Answer (i), (ii) and (iii).' : '');
+  if (card.audioMaterial) question.audioMaterial = card.audioMaterial;
+  if (card.schemeFileid) paper.reviewedHigherSchemeFileid = card.schemeFileid + '.pdf';
+  paper.hasReviewedHigherTasks = true;
+}
+for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
+  const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year && c.paperFileid + '.pdf' === reviewedFoundation.fileid);
+  if (reviewedFoundation.kind === 'foundation-aural') {
+    // Retain the twelve frozen whole-question identities alongside each newly
+    // reviewed mark boundary, all linked to this separate aural paper.
+    for (const question of reviewedFoundation.q) {
+      if (/^\d+$/.test(question.n)) {
+        const parts = reviewedCards.filter(c => new RegExp('^A-' + question.n + '[ab]?$').test(c.atlasQuestionId));
+        if (!parts.length) throw new Error('Unreviewed Foundation listening question: ' + question.n);
+        question.reviewedSchemePages = [...new Set(parts.flatMap(c => c.schemePages))].sort((a,b) => a-b);
+        question.anchor.paperRegion = [...new Set(parts.flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b).map(p => ({ p, r: [0,0,1,1] }));
+        // 2010 has no published Foundation recording: its parts carry none, so its questions get none either
+        // (a label alone rendered an empty player).
+        if (parts[0].audioMaterial) question.audioMaterial = { ...parts[0].audioMaterial, label: 'Cluastuiscint · Ceist ' + question.n };
+      }
+      if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation aural scheme: ' + question.n);
+    }
+    continue;
+  }
+  // Older papers may never have had an answer sidecar. Add their reviewed
+  // whole-section entries before attaching the complete paper/scheme regions.
+  for (const [n, label] of [['2', 'Léamhthuiscint'], ['3', 'Scríbhneoireacht']]) {
+    if (reviewedFoundation.q.some(q => q.n === n)) continue;
+    const sectionCards = reviewedCards.filter(c => c.section === n);
+    addQuestion(reviewedFoundation, {
+      n, label,
+      baseTopicIds: [...new Set(sectionCards.flatMap(c => c.examTopicKeys.map(key => F[key])))],
+      fallbackPage: Math.min(...sectionCards.flatMap(c => c.sourceMaterial.pages)) - (n === '3' ? 1 : 0),
+    });
+  }
+  const passage = reviewedCards.find(c => c.atlasQuestionId === 'R-2C-1');
+  const formSlot = reviewedFoundation.year <= 2011 ? 'W-5B' : 'W-4B';
+  const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === formSlot || c.atlasQuestionId.startsWith(formSlot + '-'));
+  const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
+  for (const [n, label, topics] of [
+    ['R-2C', passage.examTopicKeys.includes('news') ? 'Léamhthuiscint · Scéal Nuachta' : 'Léamhthuiscint · Scéal', passage.examTopicKeys.map(key => F[key])],
+    [formSlot, letterOrForm.taskFormatLabel ? 'Scríobh · ' + letterOrForm.taskFormatLabel : letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
+  ]) {
+    const q = reviewedFoundation.q.find(q => q.n === n);
+    q.label = label;
+    q.baseTopicIds = topics;
+    q.reviewedTopicIds = topics;
+    const { secondary: ignored, ...previous } = q;
+    Object.keys(q).forEach(key => delete q[key]);
+    Object.assign(q, previous, canonicalForTopicIds(topics));
+  }
+
+  // Whole-section archive entries retain their identities, but only advertise
+  // writing formats actually printed in this reviewed year's four choices.
+  const writingSection = reviewedFoundation.q.find(q => q.n === '3');
+  writingSection.baseTopicIds = writingTopics;
+  writingSection.reviewedTopicIds = writingTopics;
+  const writingCanonical = [...new Set(writingTopics.flatMap(id => CURRICULUM_CROSSWALK[id]))];
+  if (!writingCanonical.includes(writingSection.primary)) {
+    delete writingSection.secondary;
+    Object.assign(writingSection, canonicalForTopicIds(writingTopics));
+  }
+
+  const reviewedSchemeUnion = predicate => [...new Set(reviewedCards.filter(predicate).flatMap(c => c.schemePages))].sort((a,b) => a-b);
+  const writingSchemePages = reviewedSchemeUnion(c => c.section === '3');
+  const foundationSchemeSections = {
+    '1': reviewedSchemeUnion(c => c.section === '1'),
+    '2': reviewedSchemeUnion(c => c.section === '2'),
+    // Standard writing guidance precedes the first writing-task scheme page.
+    '3': [writingSchemePages[0] - 1, ...writingSchemePages],
+    ...Object.fromEntries(['R-1', 'R-2A', 'R-2B', 'R-2C', 'R-3A', 'R-3B', 'R-3C', formSlot]
+      .map(n => [n, reviewedSchemeUnion(c => !c.memberCardIds && (c.atlasQuestionId === n || c.atlasQuestionId.startsWith(n + '-')))])),
+  };
+  for (const n of ['1', '2', '3'].filter(n => reviewedCards.some(c => c.section === n))) {
+    const sourcePages = [...new Set(reviewedCards.filter(c => c.section === n).flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b);
+    // The writing choice instruction occupies the preceding page in these
+    // reviewed papers. Listening/reading start one page earlier in 2022.
+    if (n === '3') sourcePages.unshift(sourcePages[0] - 1);
+    reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
+      sourcePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+  }
+  for (const question of reviewedFoundation.q) {
+    question.reviewedSchemePages ??= foundationSchemeSections[question.n];
+    if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
+  }
+  // Carry a documented source/key mismatch into the atomic task, its passage,
+  // whole section and every mechanically generated route containing that task.
+  for (const issue of reviewedCards.filter(c => c.sourceDiscrepancyNotice)) {
+    const affected = new Set([issue.atlasQuestionId, issue.section, issue.atlasQuestionId.replace(/-\d+$/, ''), issue.atlasQuestionId.replace(/^(W-\d+[A-Z])-.*/, '$1')]);
+    reviewedCards.filter(c => c.memberCardIds?.includes(issue.id)).forEach(c => affected.add(c.atlasQuestionId));
+    for (const question of reviewedFoundation.q.filter(q => affected.has(q.n))) {
+      if (!question.practiceInstruction?.includes(issue.sourceDiscrepancyNotice)) {
+        question.practiceInstruction = (question.practiceInstruction ?? ('Practise: ' + question.label + '.'))
+          + ' ' + issue.sourceDiscrepancyNotice;
+      }
+    }
+  }
+  const listeningCard = reviewedCards.find(card => card.audioMaterial);
+  if (listeningCard) reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
+    ...listeningCard.audioMaterial, label: 'Cluastuiscint · Ceisteanna 1–8',
+  };
+}
+
 let preservedBaselineCards = 0;
 for (const expected of preservationBaseline) {
   const paper = papers.find(candidate => candidate.year === expected.year && candidate.fileid === expected.fileid);
@@ -753,7 +1056,7 @@ const blockedPaperKey = (topic, year) => {
 };
 const findPaper = (topic, year) => {
   const kind = topicKind(topic, year);
-  const matches = papers.filter(paper => paper.year === year && paper.level === topic.level && paper.kind === kind);
+  const matches = papers.filter(paper => !paper.deferred && paper.year === year && paper.level === topic.level && paper.kind === kind);
   if (matches.length !== 1) {
     throw new Error(year + ' ' + topic.level + ' ' + kind + ': expected one Irish paper, found ' + matches.length);
   }
@@ -839,7 +1142,7 @@ for (const association of matched) {
 const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
   const key = [paper.level, paper.year, paper.fileid, question.n].join('|');
   const referenced = referenceTopicsByLocalQuestion.get(key) ?? [];
-  const topicIds = [...new Set([...referenced, ...question.baseTopicIds])]
+  const topicIds = [...new Set(question.reviewedTopicIds ?? [...referenced, ...question.baseTopicIds])]
     .sort((a, b) => topicIndex.get(a) - topicIndex.get(b));
   if (!topicIds.length || topicIds.some(id => !topicById.has(id))) {
     throw new Error(paper.fileid + ' Q' + question.n + ': invalid Irish topic mapping');
@@ -856,6 +1159,12 @@ const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
     kind: paper.kind,
     n: question.n,
     topicIds,
+    ...(question.reviewedTopicIds && referenced.some(id => !topicIds.includes(id)) ? {
+      sourceTopicCorrection: {
+        excludedReferenceTopicIds: referenced.filter(id => !topicIds.includes(id)),
+        reason: `SEC ${paper.year} Foundation PDF page ${question.anchor.pP} identifies this task as ${question.label}; the retained external heading is mis-grouped.`,
+      },
+    } : {}),
     provenance: referenced.length
       ? question.baseTopicIds.some(id => !referenced.includes(id))
         ? 'reference+retained-local'
@@ -863,6 +1172,24 @@ const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
       : 'retained-local',
   };
 }));
+
+// A matched heading whose every local target the SEC paper itself files under another topic
+// (sourceTopicCorrection) is the reference's mis-grouping, not a parity gap: it is recorded as a
+// reference anomaly with the paper's own reason, as other subjects record theirs. The local tags
+// and the retained part-reference metadata are unchanged.
+const correctedQuestions = new Map(localQuestionMappings.filter(mapping => mapping.sourceTopicCorrection)
+  .map(mapping => [[mapping.level, mapping.year, mapping.fileid, mapping.n].join('|'), mapping]));
+for (const association of matched) {
+  const corrections = association.target.questionNumbers.map(number => correctedQuestions.get(
+    [association.target.level, association.year, association.target.fileid, number].join('|')));
+  if (corrections.every(mapping => mapping?.sourceTopicCorrection.excludedReferenceTopicIds.includes(association.topicId))) {
+    association.resolution = 'reference-anomaly';
+    association.reason = `StudyClix files this ${association.year} ${association.target.level} heading under ${association.topicId}. `
+      + corrections[0].sourceTopicCorrection.reason;
+  }
+}
+const parityMatched = associations.filter(association => association.resolution === 'matched');
+const referenceAnomalies = associations.filter(association => association.resolution === 'reference-anomaly');
 
 const mappingIdentities = localQuestionMappings.map(mapping => [
   mapping.level, mapping.lang, mapping.year, mapping.fileid, mapping.n,
@@ -888,10 +1215,130 @@ const tagPapers = papers
   }));
 fs.writeFileSync(TAGS_PATH, JSON.stringify(tagPapers, null, 2) + '\n');
 
+
+// Main's answer-map contract (components/PaperTrail/paperRegion.ts, test/paperTrailAnswers.test.ts):
+// a printed question anchor is numeric; every reviewed practice task inside it names that printed
+// question as parentN and supplies its own audited paperRegion, so it never shortens a printed
+// question's derived crop. Each lettered task is rooted by the PRINTED question it sits in, matched
+// by the printed anchor's own label. 2022-2025 Paper 2 maps anchor only the twelve (Ordinary: ten)
+// reading questions, so the literature questions the paper prints (Ceist 2 Prós, Ceist 3 Filíocht,
+// Higher Ceist 4 Litríocht Bhreise) are added as printed anchors, labelled as the 2026 maps label
+// them, numbered on from the reading run, at the paper's existing section anchors (P-A, F-A, X).
+const LITERATURE_PARENTS = [
+  { prefix: 'P-', label: 'Ceist 2 · Prós', section: 'P-A', test: /^Ceist 2 · Prós\b/ },
+  { prefix: 'F-', label: 'Ceist 3 · Filíocht', section: 'F-A', test: /^Ceist 3 · Filíocht\b/ },
+  { prefix: 'X-', label: 'Ceist 4 · Litríocht Bhreise', section: 'X', test: /^Ceist 4\b/ },
+];
+function rootReviewedTasks(paper, artifact, input) {
+  const numeric = q => /^\d+$/.test(q.n);
+  // The storage sidecar read back on the next run already holds the literature anchors this
+  // function added; rebuild them every run so the output does not depend on the last one.
+  const own = new Set(artifact.q.map(q => q.n));
+  // So does a 2010-2011 printed question this function added (the paper's own map has none of them), whatever its label.
+  const entries = input.filter(q => !(numeric(q) && (q.addedParent || (!own.has(q.n)
+    && (LITERATURE_PARENTS.some(item => item.label === q.label) || (paper.year <= 2011 && paper.level !== 'foundation'))))));
+  const printed = () => entries.filter(numeric);
+  const byLabel = test => printed().find(q => test.test(q.label ?? ''));
+  const added = [];
+  const parentFor = task => {
+    const n = task.n;
+    let m;
+    if ((m = n.match(/^L-([ABC])-/))) return byLabel(new RegExp(`Cuid ${m[1]}$`));
+    if (paper.level !== 'foundation' && n.startsWith('W-')) return byLabel(/Cheapadóireacht(?: · all choices)?$/);
+    if ((m = n.match(/^R-([AB])-(\d+)/)) || (m = n.match(/^R-([AB])$/))) {
+      return (m[2] && byLabel(new RegExp(`^Léamhthuiscint ${m[1]} · Ceist ${m[2]}$`))) || byLabel(/^Ceist 1 · Léamhthuiscint\b/);
+    }
+    if (/^G-[AB]$/.test(n)) return byLabel(/^Ceist 1 · Léamhthuiscint\b/);
+    if (paper.level === 'foundation') {
+      if ((m = n.match(/^A-(\d+)/))) return byLabel(/^Cluastuiscint$/) || byLabel(new RegExp(`^Question ${m[1]}$`));
+      if (n.startsWith('R-')) return byLabel(/^Léamhthuiscint$/);
+      if (n.startsWith('W-')) return byLabel(/^Scríbhneoireacht$/);
+    }
+    const literature = LITERATURE_PARENTS.find(item => n.startsWith(item.prefix));
+    if (literature) {
+      const existing = byLabel(literature.test);
+      if (existing) return existing;
+      const section = artifact.q.find(q => q.n === literature.section);
+      if (!section) throw new Error(`${paper.year} ${paper.fileid}: no ${literature.section} section anchor for ${n}`);
+      const anchor = {
+        n: String(Math.max(...printed().map(q => Number(q.n))) + 1),
+        label: literature.label, pP: section.pP, pY: section.pY,
+        region: [], mode: 'crop', conf: 1, printOrder: 0, children: [],
+      };
+      entries.push(anchor); added.push(anchor);
+      return anchor;
+    }
+    return undefined;
+  };
+  // 2010-2011 number their questions otherwise, and their maps hold only section anchors (R-A, W-A, P-A, F-A): Paper 1 prints
+  // Ceist 1 Ceapadóireacht and Ceist 2 Léamhthuiscint, Ordinary Paper 2 Ceist 1 Prós and Ceist 2 Filíocht. The printed
+  // question is found by its own number, or added at its first section anchor, as the literature anchors are.
+  const PRE_2012 = paper.year <= 2011 && paper.level !== 'foundation' ? [
+    ...(/P100IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'W-', n: '1', label: 'Ceist 1 · Ceapadóireacht', section: 'W-A' },
+      { prefix: 'R-', n: '2', label: 'Ceist 2 · Léamhthuiscint', section: 'R-A' }] : []),
+    // Ordinary Paper 2 prints each course's questions apart: "CEIST 1 – PRÓS AINMNITHE", "CEIST 2 – FILÍOCHT AINMNITHE", then
+    // "CEIST 1 – PRÓS ROGHNACH", "CEIST 2 – FILÍOCHT ROGHNACH" (2010 and 2011): four printed questions, numbered here in print order.
+    ...(paper.level === 'ordinary' && /P200IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'P-A', n: '1', label: 'Ceist 1 · Prós Ainmnithe', section: 'P-A' },
+      { prefix: 'F-A', n: '2', label: 'Ceist 2 · Filíocht Ainmnithe', section: 'F-A' },
+      { prefix: 'P-B', n: '3', label: 'Ceist 1 · Prós Roghnach', section: 'P-B' },
+      { prefix: 'F-B', n: '4', label: 'Ceist 2 · Filíocht Roghnach', section: 'F-B' }] : []),
+    // Higher Paper 2: Ceist 1 Prós, Ceist 2 Próstéacs Breise, Ceist 3 Filíocht, Ceist 4 Stair na Gaeilge (2010 and 2011).
+    ...(paper.level === 'higher' && /P200IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'P-', n: '1', label: 'Ceist 1 · Prós', section: 'P-A' },
+      { prefix: 'X-2', n: '2', label: 'Ceist 2 · Próstéacs Breise', section: 'X' }, { prefix: 'F-', n: '3', label: 'Ceist 3 · Filíocht', section: 'F-A' },
+      { prefix: 'X-4', n: '4', label: 'Ceist 4 · Stair na Gaeilge', section: 'X' }] : []),
+  ] : [];
+  const pre2012Parent = task => {
+    const item = PRE_2012.find(entry => task.n.startsWith(entry.prefix));
+    if (!item) return undefined;
+    const existing = printed().find(q => q.n === item.n);
+    if (existing) return existing;
+    const section = artifact.q.find(q => q.n === item.section);
+    if (!section) throw new Error(`${paper.year} ${paper.fileid}: no ${item.section} section anchor for ${task.n}`);
+    // The 2010-2011 section anchors are page jumps, not always on the question's own page: the printed question starts on the
+    // first page its own tasks are printed on.
+    const first = Math.min(...entries.filter(q => q.n.startsWith(item.prefix) && q.paperRegion?.length).map(q => q.paperRegion[0].p));
+    // addedParent marks it as an answer-map parent rebuilt every run: never read back as one of the paper's own questions.
+    const anchor = { n: item.n, label: item.label, pP: Number.isFinite(first) ? first : section.pP, pY: section.pY, region: [], mode: 'crop', conf: 1, printOrder: 0, children: [], addedParent: true };
+    entries.push(anchor); added.push(anchor);
+    return anchor;
+  };
+  for (const task of entries.filter(q => !numeric(q))) {
+    const parent = pre2012Parent(task) ?? parentFor(task);
+    if (!parent) throw new Error(`${paper.year} ${paper.fileid}: reviewed task ${task.n} has no printed parent question`);
+    if (!task.paperRegion?.length) throw new Error(`${paper.year} ${paper.fileid}: reviewed task ${task.n} has no audited paper region`);
+    task.parentN = parent.n;
+    parent.children?.push(task);
+  }
+  for (const anchor of added) {
+    // The added printed question spans its tasks: scheme pages and paper pages as whole pages.
+    const schemePages = [...new Set(anchor.children.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p)))].sort((a, b) => a - b);
+    const lastPage = Math.max(...anchor.children.flatMap(q => q.paperRegion.map(r => r.p)));
+    anchor.region = schemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+    anchor.paperRegion = Array.from({ length: lastPage - anchor.pP + 1 }, (_, i) => ({ p: anchor.pP + i, r: [0, 0, 1, 1] }));
+    const first = Math.min(...anchor.children.map(q => q.printOrder));
+    anchor.printOrder = first - 0.5;
+    delete anchor.children;
+  }
+  if (added.length) {
+    // Renumber the physical order as a unique integer run with the added questions before their tasks.
+    const ordered = [...entries].sort((a, b) => a.printOrder - b.printOrder);
+    ordered.forEach((q, i) => { q.printOrder = i + 1; });
+    // Keep printed anchors in ascending n order in the array (main's numeric-order gate).
+    const tasks = entries.filter(q => !numeric(q));
+    return [...printed().sort((a, b) => Number(a.n) - Number(b.n)), ...tasks];
+  }
+  return entries;
+}
+
 const hostedAnchorMaps = [];
 for (const paper of papers) {
+  // Reviewed Foundation regions override older section anchors that sometimes
+  // matched a numbered answer inside a reading passage (2022 writing section).
+  // Keep those frozen crop fields, but order using the actual displayed page.
+  const pageForOrder = q => paper.hasReviewedFoundationTasks
+    ? (q.anchor.paperRegion?.[0]?.p ?? q.anchor.pP) : q.anchor.pP;
   const physicalOrder = [...paper.q].sort((a, b) => (
-    a.anchor.pP - b.anchor.pP
+    pageForOrder(a) - pageForOrder(b)
     || a.anchor.pY[0] - b.anchor.pY[0]
     || paper.q.indexOf(a) - paper.q.indexOf(b)
   ));
@@ -909,6 +1356,7 @@ for (const paper of papers) {
     band: [1, 1],
     copyright: '© State Examinations Commission',
     paperOnly: 1,
+    ...(paper.hasReviewedFoundationTasks ? { maxCropPages: 10 } : {}),
     q: paper.q.map(question => {
       const collision = anchorCounts.get(question.anchor.pP + '|' + question.anchor.pY[0]) > 1;
       return {
@@ -917,6 +1365,8 @@ for (const paper of papers) {
         printOrder: printOrder.get(question),
         pP: question.anchor.pP,
         pY: question.anchor.pY,
+        ...(question.audioMaterial ? { audioMaterial: question.audioMaterial } : {}),
+        ...(question.practiceInstruction ? { practiceInstruction: question.practiceInstruction } : {}),
         ...(question.anchor.paperRegion
           ? { paperRegion: question.anchor.paperRegion }
           : collision
@@ -934,6 +1384,54 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
+  if ((paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) && !paper.deferred) {
+    const { paperOnly, ...answerMap } = artifact;
+    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid
+      : paper.reviewedHigherSchemeFileid ?? 'LC001ALP000IV.pdf';
+    answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
+    answerMap.maxCropPages = 10;
+    if (paper.hasReviewedHigherTasks && !paper.sidecar) {
+      // A reviewed paper the Paper Trail never mapped (2022 Ordinary Paper 1, filed as LC001GLP000IV) has no
+      // frozen section entries to keep: each printed section takes the scheme pages of the reviewed tasks it holds.
+      const sectionOf = n => (/^L-A-/.test(n) ? '1' : /^L-B-/.test(n) ? '2' : /^L-C-/.test(n) ? '3' : /^W-/.test(n) ? '4' : null);
+      for (const question of paper.q.filter(q => /^\d+$/.test(q.n) && !q.reviewedSchemePages)) {
+        const pages = [...new Set(paper.q.filter(q => sectionOf(q.n) === question.n).flatMap(q => q.reviewedSchemePages ?? []))].sort((a, b) => a - b);
+        if (pages.length) question.reviewedSchemePages = pages;
+      }
+    }
+    answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {
+      const question = paper.q.find(question => question.n === q.n);
+      const region = question.reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+      const previous = (question.baseline || (paper.hasReviewedFoundationTasks && /^\d+$/.test(question.n)))
+        && paper.sidecar?.q.find(old => old.n === q.n);
+      return previous
+        // The practice line is this build's display text, not a frozen identity: it is always the current one.
+        ? { ...Object.fromEntries(Object.entries(previous).filter(([key]) => key !== 'practiceInstruction')),
+            ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
+            ...(q.practiceInstruction ? { practiceInstruction: q.practiceInstruction } : {}),
+            paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
+        : { ...q, region, mode: 'crop', conf: 1 };
+    });
+    if (paper.hasReviewedHigherTasks) {
+      // Preserve every prior answer identity. Frozen fields remain intact;
+      // reviewed display corrections use the additive region fields above.
+      const reviewedIds = new Set(answerMap.q.map(q => q.n));
+      answerMap.q = [...(paper.sidecar?.q ?? []).filter(q => !reviewedIds.has(q.n)), ...answerMap.q];
+      answerMap.band = [Math.min(paper.sidecar?.band?.[0] ?? 27, 27), Math.max(paper.sidecar?.band?.[1] ?? 41, 41)];
+    }
+    // Mixed numeric/lettered task identities use explicit physical order.
+    // The band must include every reviewed scheme page, including Q4's tail.
+    const orderFor = new Map(artifact.q.map(q => [q.n,q.printOrder]));
+    answerMap.q = answerMap.q.map(q => ({...q,printOrder:orderFor.get(q.n)}));
+    answerMap.q = rootReviewedTasks(paper, artifact, answerMap.q);
+    const schemePages = answerMap.q.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p));
+    answerMap.band = [Math.min(...schemePages),Math.max(...schemePages)+1];
+    for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
+      const directory = path.join(folder, String(paper.year));
+      fs.mkdirSync(directory, { recursive: true });
+      fs.writeFileSync(path.join(directory, paper.fileid + '.json'), JSON.stringify(answerMap) + '\n');
+    }
+  }
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 
@@ -943,6 +1441,7 @@ const blockedByReason = sourceBlocked.reduce((counts, association) => {
 }, {});
 const logicalQuestions = new Set(localQuestionMappings.map(mapping => [
   mapping.level, mapping.year, mapping.paperKey, mapping.n,
+  ...(/-deferred\.pdf$/.test(mapping.fileid) ? ['deferred'] : []),
 ].join('|')));
 const summary = {
   referenceTopics: referenceTopics.length,
@@ -952,10 +1451,11 @@ const summary = {
   referenceOfficialAssociations: associations.length,
   referenceMockAssociations: referenceTopics.reduce((sum, topic) => sum + topic.mockQuestionCount, 0),
   referenceProviderSampleAssociations: referenceTopics.reduce((sum, topic) => sum + topic.providerSampleQuestionCount, 0),
-  matchedAssociations: matched.length,
+  matchedAssociations: parityMatched.length,
   sourceBlockedAssociations: sourceBlocked.length,
   sourceBlockedByReason: blockedByReason,
-  matchedLocalCardLinks: matched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
+  referenceAnomalyAssociations: referenceAnomalies.length,
+  matchedLocalCardLinks: parityMatched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
   localPaperVariants: papers.length,
   localPhysicalMappings: localQuestionMappings.length,
   distinctStudentFacingQuestions: logicalQuestions.size,
@@ -978,7 +1478,7 @@ const output = {
     matchedSource: 'Entitled local State Examinations Commission corpus only.',
     excludedContent: 'No commercial mock question, solution, note, question text, StudyClix image or StudyClix-hosted PDF is copied.',
     restoredCards: 'Missing listening, composition, literature and Foundation choices use section/page boundaries checked in the official SEC booklets.',
-    preservationExtensions: 'Two explicitly labelled local archive topics retain Higher additional literature and Foundation listening omitted by the reference menu.',
+    preservationExtensions: 'Explicit local archive topics retain Higher additional literature, Foundation listening and reviewed prescribed prose/poetry omitted by the reference menu.',
     referenceOmissions: 'Valid local tasks omitted or mis-grouped by the reference retain truthful Irish curriculum tags and retained-local provenance.',
   },
   summary,
@@ -995,7 +1495,8 @@ const paperKeyCode = paperKey => ({ single: 's', p1: '1', p2: '2', aural: 'a', o
 const sittingCode = sitting => ({ main: 'm', deferred: 'd', sample: 'x' })[sitting];
 const runtimePartReferences = associations.flatMap(association => {
   const index = topicIndex.get(association.topicId);
-  if (association.resolution === 'matched') {
+  // A reference anomaly keeps its local target: its heading stays part-aware metadata on that question.
+  if (association.target) {
     return association.target.questionNumbers.map(number => [
       index,
       association.year - 2000,
@@ -1039,11 +1540,21 @@ const runtime = {
     topic.referenceTopic ? 1 : 0,
   ]),
   partReferences: runtimePartReferences,
-  questionMappings: localQuestionMappings.map(mapping => [
+  questionMappings: localQuestionMappings.filter(mapping => !/-deferred\.pdf$/.test(mapping.fileid)).map(mapping => [
     levelCode(mapping.level),
     'i',
     mapping.year - 2000,
     paperKeyCode(mapping.paperKey),
+    mapping.n,
+    mapping.topicIds.map(id => topicIndex.get(id)),
+  ]),
+  // [h/o, lang, year-2000, paper slot, booklet file id, card number, topic indexes]: the deferred sittings' cards.
+  deferredQuestionMappings: localQuestionMappings.filter(mapping => /-deferred\.pdf$/.test(mapping.fileid)).map(mapping => [
+    levelCode(mapping.level),
+    'i',
+    mapping.year - 2000,
+    paperKeyCode(mapping.paperKey),
+    mapping.fileid,
     mapping.n,
     mapping.topicIds.map(id => topicIndex.get(id)),
   ]),

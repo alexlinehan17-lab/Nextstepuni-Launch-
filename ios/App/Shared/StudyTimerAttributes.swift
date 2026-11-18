@@ -39,10 +39,23 @@ public struct StudyTimerAttributes: ActivityAttributes {
         public var endsAt: Date?
         /// While paused: seconds left (countdown) or studied (count-up).
         public var pausedSeconds: Int
-        /// The countdown's full length, for the progress bar.
+        /// The countdown's full length or the open-ended session's safety cap.
         public var totalSeconds: Int
         /// "Time’s up" or "Ready to log".
         public var doneLabel: String
+
+        /// One deadline for the system-drawn clock and ActivityKit's stale state.
+        /// The fallback supports an activity created by an older client which
+        /// sent zero for an open-ended session's four-hour cap.
+        public var timerEndsAt: Date? {
+            guard phase == .running else { return nil }
+            if countsDown { return endsAt }
+            return startedAt.addingTimeInterval(TimeInterval(totalSeconds > 0 ? totalSeconds : 4 * 3600))
+        }
+
+        public var completionLabel: String {
+            phase == .done ? doneLabel : (countsDown ? "Time’s up" : "Ready to log")
+        }
 
         public init(subject: String, detail: String, phase: Phase, countsDown: Bool, startedAt: Date,
                     endsAt: Date?, pausedSeconds: Int, totalSeconds: Int, doneLabel: String) {

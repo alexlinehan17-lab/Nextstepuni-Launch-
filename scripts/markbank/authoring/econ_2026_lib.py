@@ -10,7 +10,7 @@ import re
 
 import fitz
 
-from econ_lib import _load, anyN, as_option, block, card, defurnish, load, tidy
+from econ_lib import APPENDED, _load, anyN, as_option, block, card, defurnish, load, tidy
 from econ_glyphfill import fill
 
 CORPUS = 'paper-trail-corpus'
@@ -24,16 +24,37 @@ def sheet(year, level, fileid):
 
 
 class Sheet:
-    def __init__(self, year, level, fileid):
+    def __init__(self, year, level, fileid, deferred=False):
         self.year, self.level = year, level
         self.lvl = 'hl' if level == 'higher' else 'ol'
-        self.scheme_md = load(year, level)
-        # The whole file, appended renderings included (table cells, columns,
-        # fractions, filled glyphs): what the provenance gate compares against.
-        self.full_md = _load(year, level)
-        self.scheme_pdf = fitz.open(f'{CORPUS}/markingschemes/{year}/{fileid}.pdf')
-        self.paper_pdf = fitz.open(f'{CORPUS}/exampapers/{year}/{fileid}.pdf')
+        self.deferred = deferred
+        if deferred:
+            # The SEC's deferred sitting is a paper and scheme of its own,
+            # filed under deferredexams/ and deferredmarkingschemes/ with the
+            # June file id; its scheme text is "<year>-<level>-deferred.md",
+            # the file build-deck reads for a deferred card.
+            raw = open(f'examiner-reports/economics/schemes/{year}-{self.lvl}-deferred.md').read()
+            self.full_md = '\n'.join(
+                line for line in raw.split('\n')
+                if not re.match(r'^##\s*Page\s*\d+\s*$', line) and not re.match(r'^\s*\d+\s*$', line))
+            cut = self.full_md.find(APPENDED)
+            self.scheme_md = self.full_md if cut < 0 else self.full_md[:cut]
+            self.scheme_pdf = fitz.open(f'{CORPUS}/deferredmarkingschemes/{year}/{fileid}.pdf')
+            self.paper_pdf = fitz.open(f'{CORPUS}/deferredexams/{year}/{fileid}.pdf')
+        else:
+            self.scheme_md = load(year, level)
+            # The whole file, appended renderings included (table cells, columns,
+            # fractions, filled glyphs): what the provenance gate compares against.
+            self.full_md = _load(year, level)
+            self.scheme_pdf = fitz.open(f'{CORPUS}/markingschemes/{year}/{fileid}.pdf')
+            self.paper_pdf = fitz.open(f'{CORPUS}/exampapers/{year}/{fileid}.pdf')
         self._bold = {}
+
+    def fill(self, text):
+        """The June scheme's derived glyph repairs. The deferred scheme draws
+        every glyph it prints (econ_glyphfill finds no damaged line in it), and
+        June's repairs are not its own."""
+        return text if self.deferred else fill(text, self.year, self.lvl)
 
     # ── the paper ──────────────────────────────────────────────────────────
     def page_text(self, page):
@@ -148,21 +169,25 @@ class Sheet:
             o = as_option(tidy(raw[at:stop]))
             if trim:
                 o = o.split(trim)[0].strip()
-            opts.append(fill(o, self.year, self.lvl))
+            opts.append(self.fill(o))
         return opts
 
     def run(self, start, end, occ=None):
         """One contiguous scheme run from `start` up to (not including) `end`."""
-        return fill(defurnish(self.chunk(start, end, occ)), self.year, self.lvl)
+        return self.fill(defurnish(self.chunk(start, end, occ)))
 
 
 class Deck:
     """The card constructors one 2026 paper script uses, bound to its level."""
 
-    def __init__(self, year, level):
+    def __init__(self, year, level, deferred=False):
         self.year, self.level = year, level
         self.lvl = 'HL' if level == 'higher' else 'OL'
-        self.prefix = f'econ-{year}-{self.lvl.lower()}-'
+        # A deferred sitting's card says so twice, in its id and its citation
+        # ("econ-2022-hl-deferred-...", "... — Deferred sitting"), and
+        # reconcile.py reads the two together.
+        self.deferred = deferred
+        self.prefix = f'econ-{year}-{self.lvl.lower()}-' + ('deferred-' if deferred else '')
         self.cards = []
 
     def add(self, cid, topic, concept, ref, qtext, notation, total, rows, *, kind='fixed',
@@ -188,7 +213,8 @@ class Deck:
 
     def ref(self, q, parts='', route='', sa=False):
         r = f'{self.year} {self.lvl}{" Section A" if sa else ""} Q{q}{parts}'
-        return f'{r} — {route}' if route else r
+        r = f'{r} — {route}' if route else r
+        return f'{r} — Deferred sitting' if self.deferred else r
 
     def stance(self, prefix, choices, topic, concept, q, parts, qtext, per, *, sa=False,
                stem='', section='B'):

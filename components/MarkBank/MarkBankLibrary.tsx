@@ -42,8 +42,9 @@ interface Props {
  examDate?:string|null; subjectId:string; level:Level; cards:SecCard[]; state:DeckState; now:()=>number;
  chooseSubject:(id:string)=>void; chooseLevel:(level:Level)=>void; canSelectSubject:(name:string)=>boolean;
  onStart:(topicId?:string,queue?:SecCard[])=>void; busy:boolean; ready:boolean; loading:boolean; error:boolean; onRetry:()=>void; online:boolean;
+ onStartingPoint?:()=>void;
 }
-export default function MarkBankLibrary({examDate,subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,busy,ready,loading,error,onRetry,online}:Props){
+export default function MarkBankLibrary({examDate,subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,onStartingPoint,busy,ready,loading,error,onRetry,online}:Props){
  const base=SUBJECTS.find(item=>item.id===subjectId) ?? SUBJECTS[0];
  const menu=useMemo(()=>markBankCurriculumMenu(subjectId,level,examDate,cards),[subjectId,level,examDate,cards]);
  const groups=menu.strands;
@@ -120,6 +121,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
         </div>
       </div>
       <p className="mb-source-note">{menu.current ? `Your syllabus: ${menu.spec?.title}.` : "Your cohort map is being verified."} Questions retain their original paper year. Archived topics are labelled in the index.</p>
+      {onStartingPoint && <Button variant="outline" disabled={busy || !ready} onClick={onStartingPoint}>Where should I start?</Button>}
       {loading && <p className="mb-sr" role="status">Loading this question bank…</p>}
       {!online && <p className="mb-source-note">You’re offline. Reviews save on this device and sync when your connection returns.</p>}
 

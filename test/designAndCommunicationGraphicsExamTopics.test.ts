@@ -116,19 +116,21 @@ describe('Design & Communication Graphics exam-topic registry', () => {
       referenceReportedAssociations: 787,
       referenceOfficialAssociations: 427,
       referenceMockAssociations: 360,
-      matchedAssociations: 386,
-      sourceBlockedAssociations: 41,
-      matchedLogicalCards: 347,
-      matchedQuestionTopicLinks: 373,
-      retainedLocalLogicalCards: 49,
+      // June 386 matched; each deferred sitting carded joins with its own
+      // headings (2022 Higher: 13 over 11 questions; 2023 Higher: 11 over 11;
+      // C-5, which neither heads, retained).
+      matchedAssociations: 410,
+      sourceBlockedAssociations: 17,
+      matchedLogicalCards: 369,
+      matchedQuestionTopicLinks: 397,
+      retainedLocalLogicalCards: 51,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
     const blocked = evidence.associations.filter(association => association.resolution === 'source-blocked');
-    expect(new Set(blocked.map(association => association.year))).toEqual(new Set([2009, 2022, 2023]));
-    expect(new Set(blocked.map(association => association.sitting))).toEqual(new Set(['main', 'deferred']));
-    expect(blocked.filter(association => association.year === 2009)).toHaveLength(17);
-    expect(blocked.filter(association => association.year === 2022)).toHaveLength(13);
-    expect(blocked.filter(association => association.year === 2023)).toHaveLength(11);
+    // Only the 2009 headings, before the entitled corpus begins.
+    expect(new Set(blocked.map(association => association.year))).toEqual(new Set([2009]));
+    expect(new Set(blocked.map(association => association.sitting))).toEqual(new Set(['main']));
+    expect(blocked).toHaveLength(17);
     expect(evidence.summary.emptyReferenceTopics).toEqual([
       'design-and-communication-graphics-higher-assemblies',
       'design-and-communication-graphics-ordinary-conic-sections',
@@ -166,21 +168,28 @@ describe('Design & Communication Graphics exam-topic registry', () => {
   });
 
   it('exposes every A-sheet quadrant and every B1-B3/C1-C5 drawing task', () => {
+    // 132 June booklets (792 questions), and each deferred sitting carded,
+    // its own two booklets (2022 and 2023 Higher).
     expect(evidence.summary).toMatchObject({
-      localPaperVariants: 132,
-      localPhysicalMappings: 792,
-      distinctStudentFacingQuestions: 396,
-      hostedAnchorMaps: 132,
+      localPaperVariants: 136,
+      localPhysicalMappings: 816,
+      distinctStudentFacingQuestions: 420,
+      hostedAnchorMaps: 136,
       preservedBaselineVariants: 62,
       preservedBaselineCards: 496,
     });
     const papers = PAPER_TOPIC_TAGS.filter(
       paper => paper.subjectId === 'design-and-communication-graphics',
     );
-    expect(papers).toHaveLength(132);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(792);
-    expect(papers.filter(paper => paper.paperKey === 'section-a')).toHaveLength(66);
-    expect(papers.filter(paper => paper.paperKey === 'single')).toHaveLength(66);
+    expect(papers).toHaveLength(136);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(816);
+    expect(papers.filter(paper => paper.paperKey === 'section-a')).toHaveLength(68);
+    expect(papers.filter(paper => paper.paperKey === 'single')).toHaveLength(68);
+    expect(papers.filter(paper => paper.fileid.endsWith('-deferred.pdf')).map(paper => `${paper.year}|${paper.fileid}`).sort())
+      .toEqual([
+        '2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
+        '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf',
+      ]);
     for (const paper of papers) {
       expect(paper.q.map(question => question.n)).toEqual(
         paper.paperKey === 'section-a'
@@ -233,6 +242,35 @@ describe('Design & Communication Graphics exam-topic registry', () => {
     ]);
   });
 
+  it('joins a deferred question on its own booklet, never on June\'s of the same number', () => {
+    expect(examTopicIdsForQuestion(
+      'design-and-communication-graphics', 'higher', 2022, 'main', '1', 'section-a', 'ev',
+      'LC562ALP014EV-deferred.pdf',
+    )).toEqual(['design-and-communication-graphics-higher-developments-envelopments']);
+    expect(examTopicIdsForQuestion(
+      'design-and-communication-graphics', 'higher', 2022, 'main', '1', 'section-a', 'ev',
+      'LC562ALP014EV.pdf',
+    )).toEqual(['design-and-communication-graphics-higher-skew-lines']);
+    expect(examTopicIdsForQuestion(
+      'design-and-communication-graphics', 'higher', 2022, 'main', '2', 'single', 'ev',
+      'LC562ALP039EV-deferred.pdf',
+    )).toEqual([
+      'design-and-communication-graphics-higher-intersecting-planes-laminiar-planes',
+      'design-and-communication-graphics-higher-the-oblique-plane',
+    ]);
+    expect(examTopicIdsForQuestion(
+      'design-and-communication-graphics', 'higher', 2023, 'main', '4', 'section-a', 'ev',
+      'LC562ALP014EV-deferred.pdf',
+    )).toEqual(['design-and-communication-graphics-higher-skew-lines']);
+    // C-5, which the reference does not head, is retained under Assemblies.
+    for (const year of [2022, 2023]) {
+      expect(examTopicIdsForQuestion(
+        'design-and-communication-graphics', 'higher', year, 'main', '8', 'single', 'ev',
+        'LC562ALP039EV-deferred.pdf',
+      )).toEqual(['design-and-communication-graphics-higher-assemblies']);
+    }
+  });
+
   it('keeps reference omissions visible under reviewed same-level topics', () => {
     expect(examTopicIdsForQuestion(
       'design-and-communication-graphics', 'higher', 2025, 'main', '8', 'single', 'ev',
@@ -248,7 +286,7 @@ describe('Design & Communication Graphics exam-topic registry', () => {
     )).toEqual(['design-and-communication-graphics-ordinary-interpenetration']);
   });
 
-  it('ships a valid, finite crop for every one of the 792 physical cards', () => {
+  it('ships a valid, finite crop for every one of the 816 physical cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(
       paper => paper.subjectId === 'design-and-communication-graphics',
     );
@@ -282,9 +320,9 @@ describe('Design & Communication Graphics exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 396 entitled tasks through the 29-topic menu', () => {
+  it('surfaces all 420 entitled tasks through the 29-topic menu', () => {
     expect(subjectAtlasStats('design-and-communication-graphics')).toMatchObject({
-      questions: 396,
+      questions: 420,
       topics: 29,
       yearMin: 2010,
       yearMax: 2026,

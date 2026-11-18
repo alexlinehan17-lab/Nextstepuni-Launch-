@@ -13,11 +13,15 @@ import React from 'react';
 import type { FrenchAllocation, FrenchAnswerRow, FrenchCriterion, FrenchRubric, SecRubricCard } from '../../types/markBank';
 import {
   FRENCH_ATTEMPT_ID,
+  frenchCriterionMark,
   frenchMarks,
   frenchRowClaimed,
   frenchRowScoreId,
   frenchRowValue,
   frenchScoreId,
+  frenchShortId,
+  lowerScaleActive,
+  rubricLanguage,
   type FrenchScoreId,
   type FrenchScores,
 } from './frenchRubric';
@@ -146,7 +150,7 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
   const guided = !!rubric.answerGuide?.length;
   const allocation = rubric.allocation;
   return <div className="mb-french-rubric">
-    <p className="mb-french-eyebrow">SEC French marking scheme</p>
+    <p className="mb-french-eyebrow">SEC {rubricLanguage(card.subjectId)} marking scheme</p>
     <h3>{allocation ? 'Claim each answer you gave, as the scheme prices it.' : 'Assess your response'}</h3>
     {!guided && rubric.taskRequirements.length > 0 && <ul className="mb-french-requirements">
       {rubric.taskRequirements.map((text, index) => <li key={index}>{text}</li>)}
@@ -163,19 +167,48 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
       </button>}
     {!allocation && rubric.criteria.map(criterion => {
       const id = frenchScoreId(criterion.id);
-      const disabled = !!criterion.requiresAttempt && !attempted;
-      const selected = disabled ? 0 : scores[id] ?? 0;
+      const gate = criterion.zeroWhenZero ? rubric.criteria.find(other => other.id === criterion.zeroWhenZero) : undefined;
+      const gated = !!gate && (scores[frenchScoreId(gate.id)] ?? 0) === 0;
+      const attemptBlocked = !!criterion.requiresAttempt && !attempted;
+      const disabled = attemptBlocked || gated;
+      // A printed lower scale ("Lower E") replaces the criterion's own marks
+      // and bands while its rule applies; every other criterion is as it was.
+      const lower = criterion.lowerScale;
+      const lowered = lowerScaleActive(rubric.criteria, criterion, scores);
+      const scale: FrenchCriterion = lower && lowered
+        ? { ...criterion, maxMarks: lower.maxMarks, permittedMarks: lower.permittedMarks, bands: lower.bands }
+        : criterion;
+      const placed = scores[id] ?? 0;
+      const selected = disabled ? 0 : lower ? (scale.permittedMarks.includes(placed) ? placed : 0) : placed;
+      const content = lower ? lower.contentCriteria.reduce((sum, other) => {
+        const named = rubric.criteria.find(k => k.id === other);
+        return sum + (named ? frenchCriterionMark(rubric.criteria, named, scores) : 0);
+      }, 0) : 0;
+      const short = lower ? scores[frenchShortId(criterion.id)] === 1 : false;
       return <section key={criterion.id} className="mb-french-criterion">
-        <div className="mb-french-criterion-heading"><h4>{criterion.label}</h4><span>/ {criterion.maxMarks}</span></div>
+        <div className="mb-french-criterion-heading"><h4>{criterion.label}</h4><span>/ {scale.maxMarks}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
-        {disabled && <p>Language marks require an attempted communicative task.</p>}
-        {criterion.bands?.map(band => <div key={band.label} className="mb-french-band">
+        {attemptBlocked && <p>Language marks require an attempted communicative task.</p>}
+        {gated && !attemptBlocked && <p>{criterion.label} marks require a {gate!.label} mark above 0.</p>}
+        {lower && <div className="mb-french-lower" aria-live="polite">
+          <p className="mb-french-lower-rule">{lower.rule}</p>
+          {lower.wordsUnder !== undefined && <button type="button" className="mb-french-attempt" aria-pressed={short}
+            onClick={() => onScore(frenchShortId(criterion.id), short ? 0 : 1)}>
+            {short ? `Recorded: my answer is under ${lower.wordsUnder} words` : `My answer is under ${lower.wordsUnder} words`}
+          </button>}
+          <p className="mb-french-lower-status">
+            <strong>{lowered ? `${lower.label} scale applies` : 'Full scale applies'}</strong>
+            {` · your content marks add to ${content}${short ? ', and your answer is under ' + lower.wordsUnder + ' words' : ''}. `}
+            {lowered ? `${criterion.label} is placed out of ${lower.maxMarks}.` : `${criterion.label} is placed out of ${criterion.maxMarks}.`}
+          </p>
+        </div>}
+        {scale.bands?.map(band => <div key={band.label + band.marks[0]} className="mb-french-band">
           <strong>{band.label} · {band.marks[0]}–{band.marks.at(-1)} marks</strong>
           <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
         </div>)}
         <div className="mb-french-score">
           <span>{criterion.label} mark</span>
-          <CriterionMarks criterion={criterion} selected={selected} disabled={disabled} onSelect={mark => onScore(id, mark)} />
+          <CriterionMarks criterion={scale} selected={selected} disabled={disabled} onSelect={mark => onScore(id, mark)} />
         </div>
       </section>;
     })}

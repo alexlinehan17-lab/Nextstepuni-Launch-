@@ -1,0 +1,1131 @@
+{
+  "review": {
+    "year": 2011,
+    "level": "ordinary",
+    "paperFileid": "LC001GLPA00IV.pdf",
+    "schemeFileid": "LC001GLP000IV.pdf",
+    "paperSha256": "187f6a5098bd6e11d6a991d7c7abd9f5c913b5ee245539596fd5ebd02c12942e",
+    "schemeSha256": "6e73ff5b1d21c777f7d39b3731cb7d7e6b0156fe6043c00f4fea9291032e0ad3",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reviewedSchemePages": [
+      10
+    ],
+    "schemeScope": "Combined Ordinary scheme (12 pages). PDF 1 cover; 2 blank; 3 Páipéar I Ceist 1 (composition); 4 Páipéar I Ceist 2 (reading); 5–9 Páipéar II (literature); 10 the listening test (“- CLUASTUISCINT - (120 marc)”): for each item its questions’ tariffs in print order and the one 0–12 language deduction, and no answer key; 11 Socruithe Réasúnta; 12 empty.",
+    "reviewDate": "2026-11-05",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 1,
+        "raw": "Rud amháin is gá a bheith ag duine don phost",
+        "decision": "Fógra a hAon grid field 3 (“Rud amháin is gá a bheith ag duine don phost seo.”): one required answer; not a menu."
+      },
+      {
+        "page": 1,
+        "raw": "[Caithfidh do chuid freagraí uile sa Triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.]",
+        "decision": "Answer-language rule (answers in Irish except where not needed); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "Cloisfidh tú an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú é ina dhá mhír. Beidh",
+        "decision": "Cuid B listening instruction (how often each conversation is heard and in two parts); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "Luaigh imeacht pléisiúir amháin a bheidh ar siúl.",
+        "decision": "Fógra a Trí grid field 4: one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Clár amháin atá luaite anseo.",
+        "decision": "Comhrá a Dó, first mír, grid field 1: one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh buntáiste amháin a bhaineann leis an mbaile, dar le hAindriú.",
+        "decision": "Comhrá a hAon, second mír, question 2: one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Oíche amháin a mbíonn na cláir theilifíse seo ar siúl.",
+        "decision": "Comhrá a Dó, first mír, grid field 2: one required answer; not a menu."
+      },
+      {
+        "page": 4,
+        "raw": "Luaigh ceann amháin de na himeachtaí Gaeilge atá sé i gceist ag Ritchie a eagrú.",
+        "decision": "Píosa a Trí question 2: one required answer; not a menu."
+      },
+      {
+        "page": 4,
+        "raw": "Rud amháin a scríobh Micheál roimhe",
+        "decision": "Píosa a hAon grid field 2 (“Rud amháin a scríobh Micheál roimhe seo.”): one required answer; not a menu."
+      },
+      {
+        "page": 4,
+        "raw": "Tabhair píosa amháin eolais faoin múinteoir nua Gaeilge.",
+        "decision": "Comhrá a Trí, second mír, question 2: one required answer; not a menu."
+      }
+    ],
+    "cardIds": [
+      "irish-2011-ol-listening-a-f1",
+      "irish-2011-ol-listening-a-f2",
+      "irish-2011-ol-listening-a-f3",
+      "irish-2011-ol-listening-b-c1",
+      "irish-2011-ol-listening-b-c2",
+      "irish-2011-ol-listening-b-c3",
+      "irish-2011-ol-listening-c-p1",
+      "irish-2011-ol-listening-c-p2",
+      "irish-2011-ol-listening-c-p3"
+    ],
+    "listeningSegmentCardIds": [
+      "irish-2011-ol-listening-a-f1",
+      "irish-2011-ol-listening-a-f2",
+      "irish-2011-ol-listening-a-f3",
+      "irish-2011-ol-listening-b-c1",
+      "irish-2011-ol-listening-b-c2",
+      "irish-2011-ol-listening-b-c3",
+      "irish-2011-ol-listening-c-p1",
+      "irish-2011-ol-listening-c-p2",
+      "irish-2011-ol-listening-c-p3"
+    ],
+    "printedListeningQuestions": 34,
+    "examStructure": {
+      "listening": 120,
+      "total": 120
+    },
+    "nonPoolDecisions": [
+      "The 2011 Ordinary scheme prints no listening answer key: only each item’s question tariffs in print order (PDF 10: “Fógra a hAon 4 + 2 + 6 + 2” …) and the one 0–12 language deduction. Every printed question is still carded (every printed ask gets a card): its own criterion at the price its place in that line gives it, its guidance the question as the paper prints it and the item’s tariff line, claimed whole (no partial is printed) and marked tariffOnly. The card says “The scheme prints no answer for this part.”",
+      "Card unit, as the reviewed 2012–2026 Ordinary listening: one card per printed item (the Bank plays one recording item as one exercise): three announcements, three conversations (both míreanna on one card) and three pieces, 9 cards; each printed question its own criterion (34).",
+      "Each tariff line’s count of addends equals its item’s printed questions and the lines add to the test’s 120, so the n-th addend prices the item’s n-th printed question (grid fields top to bottom, numbered questions in order).",
+      "Questions priced at 6 (Fógra a hAon grid field 3, Fógra a Dó 2(a), Comhrá a Dó first mír grid field 4 and second mír question 2) are claimed whole like every other: the scheme prints no split for them."
+    ],
+    "openIssues": [],
+    "audio": {
+      "url": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+      "verified": "2026-11-05",
+      "evidence": "HTTP 200 audio/mpeg, 39,464,427 bytes, last modified 24 June 2011 (curl -I on examinations.ie); downloaded and measured: 2,466.4 s at 128 kbit/s (afinfo), SHA-256 6b14783218531eb6db398fd7df8539582c09062dbd523db8b816cacd0f5030d3.",
+      "note": "One SEC recording serves the Higher and Ordinary 2011 listening test (the common file); Ordinary asks its own questions. Never substituted from another year."
+    },
+    "caveats": [
+      "Before 2012 the listening test is a paper of its own (Triail Chluastuisceana, 120 marks, Monday 13 June 2011, 4.30–5.10, after Páipéar I), with three items in each part.",
+      "Listening tariffs (PDF 10), in print order: Fógra a hAon 4 + 2 + 6 + 2; Fógra a Dó 4 + 2 + 6 + 2; Fógra a Trí 4 + 4 + 2 + 4; Comhrá a hAon 4 + 4 + 4 + 4; Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6; Comhrá a Trí 4 + 2 + 4 + 2; Píosa a hAon 2 + 4 + 4 + 4; Píosa a Dó 2 + 4; Píosa a Trí 2 + 4 (= 120).",
+      "Listening language: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” (PDF 10) is one test-level deduction; cards state it without applying it.",
+      "The scheme prints no listening script and no key for this test."
+    ],
+    "boundaries": "9 listening item cards (three announcements, three conversations, three pieces) carrying all 34 printed questions as separate criteria at their printed prices (120; the scheme prints no answer key)."
+  },
+  "cards": [
+    {
+      "id": "irish-2011-ol-listening-a-f1",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid A · Fógra a hAon",
+      "questionText": "Líon isteach an t-eolas atá á lorg sa ghreille anseo. Cén dream a chuir an fógra seo amach? Cén Ghaeltacht atá luaite anseo? Rud amháin is gá a bheith ag duine don phost seo. Cén baile a bhfuil Coiste Forbartha na Gaeltachta ann?",
+      "totalMarks": 14,
+      "topicId": "irish-1-0",
+      "conceptId": "irish-listening-a-f1",
+      "paperPage": 1,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "g1",
+          "label": "Greille 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén dream a chuir an fógra seo amach?",
+            "Fógra a hAon 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g2",
+          "label": "Greille 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén Ghaeltacht atá luaite anseo?",
+            "Fógra a hAon 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g3",
+          "label": "Greille 3",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Rud amháin is gá a bheith ag duine don phost seo.",
+            "Fógra a hAon 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g4",
+          "label": "Greille 4",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén baile a bhfuil Coiste Forbartha na Gaeltachta ann?",
+            "Fógra a hAon 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (4 + 2 + 6 + 2, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid A · Fógra a hAon"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-A-F1",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid A · Fógra a hAon",
+        "pages": [
+          1
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-a-f2",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid A · Fógra a Dó",
+      "questionText": "1. (a) Cad a bheidh á sheoladh in oifigí Fhoras na Gaeilge? (b) Cá bhfuil oifigí an Fhorais? 2. (a) Cé mhéad téarma atá aistrithe ó Bhéarla go Gaeilge? (b) Cé a thug moladh mór don rud nua seo?",
+      "totalMarks": 14,
+      "topicId": "irish-1-0",
+      "conceptId": "irish-listening-a-f2",
+      "paperPage": 2,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "q1a",
+          "label": "Ceist 1(a)",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cad a bheidh á sheoladh in oifigí Fhoras na Gaeilge?",
+            "Fógra a Dó 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "q1b",
+          "label": "Ceist 1(b)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cá bhfuil oifigí an Fhorais?",
+            "Fógra a Dó 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "q2a",
+          "label": "Ceist 2(a)",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé mhéad téarma atá aistrithe ó Bhéarla go Gaeilge?",
+            "Fógra a Dó 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "q2b",
+          "label": "Ceist 2(b)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé a thug moladh mór don rud nua seo?",
+            "Fógra a Dó 4 + 2 + 6 + 2"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (4 + 2 + 6 + 2, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid A · Fógra a Dó"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-A-F2",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid A · Fógra a Dó",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-a-f3",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid A · Fógra a Trí",
+      "questionText": "Líon isteach an t-eolas atá á lorg sa ghreille anseo. Cén lá a bheidh an lá spóirt ar siúl? Cén áit a mbeidh sé ar siúl? Cad é an táille iontrála do dhaoine fásta? Luaigh imeacht pléisiúir amháin a bheidh ar siúl.",
+      "totalMarks": 14,
+      "topicId": "irish-1-0",
+      "conceptId": "irish-listening-a-f3",
+      "paperPage": 2,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "g1",
+          "label": "Greille 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén lá a bheidh an lá spóirt ar siúl?",
+            "Fógra a Trí 4 + 4 + 2 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g2",
+          "label": "Greille 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén áit a mbeidh sé ar siúl?",
+            "Fógra a Trí 4 + 4 + 2 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g3",
+          "label": "Greille 3",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cad é an táille iontrála do dhaoine fásta?",
+            "Fógra a Trí 4 + 4 + 2 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g4",
+          "label": "Greille 4",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Luaigh imeacht pléisiúir amháin a bheidh ar siúl.",
+            "Fógra a Trí 4 + 4 + 2 + 4"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (4 + 4 + 2 + 4, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid A · Fógra a Trí"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-A-F3",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a Trí",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid A · Fógra a Trí",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-b-c1",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid B · Comhrá a hAon",
+      "questionText": "An Chéad Mhír 1. Cé mhéad lá atá an rialtas nua in oifig, dar le hAindriú? 2. Cá bhfuil na daoine óga ag dul, dar le Síle? An Dara Mír 1. Conas atá ag éirí leis an gcuid is mó de na hÉireannaigh óga a fhágann an tír, dar le Síle? 2. Luaigh buntáiste amháin a bhaineann leis an mbaile, dar le hAindriú.",
+      "totalMarks": 16,
+      "topicId": "irish-1-1",
+      "conceptId": "irish-listening-b-c1",
+      "paperPage": 2,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "m1-q1",
+          "label": "An Chéad Mhír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé mhéad lá atá an rialtas nua in oifig, dar le hAindriú?",
+            "Comhrá a hAon 4+ 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m1-q2",
+          "label": "An Chéad Mhír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cá bhfuil na daoine óga ag dul, dar le Síle?",
+            "Comhrá a hAon 4+ 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q1",
+          "label": "An Dara Mír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Conas atá ag éirí leis an gcuid is mó de na hÉireannaigh óga a fhágann an tír, dar le Síle?",
+            "Comhrá a hAon 4+ 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q2",
+          "label": "An Dara Mír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Luaigh buntáiste amháin a bhaineann leis an mbaile, dar le hAindriú.",
+            "Comhrá a hAon 4+ 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (4+ 4 + 4 + 4, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid B · Comhrá a hAon"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-B-C1",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2,
+        3
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid B · Comhrá a hAon",
+        "pages": [
+          2,
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-b-c2",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid B · Comhrá a Dó",
+      "questionText": "An Chéad Mhír Líon isteach an t-eolas atá á lorg sa ghreille anseo. Clár amháin atá luaite anseo. Oíche amháin a mbíonn na cláir theilifíse seo ar siúl. Cén uirlis cheoil a sheinneann Pádraig? Cé hiad na daoine nach maith le Máire iad? An Dara Mír 1. Cén fáth nach maith le Máire na daoine sin ar an teilifís? 2. Cén fáth a raibh Simon Cowell ar tí tosú ag magadh faoi Susan Boyle, dar le Pádraig?",
+      "totalMarks": 24,
+      "topicId": "irish-1-1",
+      "conceptId": "irish-listening-b-c2",
+      "paperPage": 3,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "m1-g1",
+          "label": "An Chéad Mhír · Greille 1",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Clár amháin atá luaite anseo.",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m1-g2",
+          "label": "An Chéad Mhír · Greille 2",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Oíche amháin a mbíonn na cláir theilifíse seo ar siúl.",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m1-g3",
+          "label": "An Chéad Mhír · Greille 3",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén uirlis cheoil a sheinneann Pádraig?",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m1-g4",
+          "label": "An Chéad Mhír · Greille 4",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé hiad na daoine nach maith le Máire iad?",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q1",
+          "label": "An Dara Mír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén fáth nach maith le Máire na daoine sin ar an teilifís?",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q2",
+          "label": "An Dara Mír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén fáth a raibh Simon Cowell ar tí tosú ag magadh faoi Susan Boyle, dar le Pádraig?",
+            "Comhrá a Dó 3 + 3 + 3 + 6 + 3 + 6"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (3 + 3 + 3 + 6 + 3 + 6, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid B · Comhrá a Dó"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-B-C2",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid B · Comhrá a Dó",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-b-c3",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid B · Comhrá a Trí",
+      "questionText": "An Chéad Mhír 1. Cén fáth ar chuir Des Bishop na seónna ar ceal, dar le Ciarán? 2. Cén aois a bhí Des Bishop nuair a tháinig sé go hÉirinn, dar le Ciarán? An Dara Mír 1. Cé mhéad ama a thóg sé ar Des Bishop an Ghaeilge a fhoghlaim, dar le Nóirín? 2. Tabhair píosa amháin eolais faoin múinteoir nua Gaeilge.",
+      "totalMarks": 12,
+      "topicId": "irish-1-1",
+      "conceptId": "irish-listening-b-c3",
+      "paperPage": 3,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "m1-q1",
+          "label": "An Chéad Mhír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén fáth ar chuir Des Bishop na seónna ar ceal, dar le Ciarán?",
+            "Comhrá a Trí 4 + 2 + 4 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m1-q2",
+          "label": "An Chéad Mhír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén aois a bhí Des Bishop nuair a tháinig sé go hÉirinn, dar le Ciarán?",
+            "Comhrá a Trí 4 + 2 + 4 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q1",
+          "label": "An Dara Mír · Ceist 1",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé mhéad ama a thóg sé ar Des Bishop an Ghaeilge a fhoghlaim, dar le Nóirín?",
+            "Comhrá a Trí 4 + 2 + 4 + 2"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "m2-q2",
+          "label": "An Dara Mír · Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Tabhair píosa amháin eolais faoin múinteoir nua Gaeilge.",
+            "Comhrá a Trí 4 + 2 + 4 + 2"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (4 + 2 + 4 + 2, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid B · Comhrá a Trí"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-B-C3",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3,
+        4
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a Trí",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid B · Comhrá a Trí",
+        "pages": [
+          3,
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-c-p1",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid C · Píosa a hAon",
+      "questionText": "Líon isteach an t-eolas atá á lorg sa ghreille anseo. An chathair inar léiríodh an dráma. Rud amháin a scríobh Micheál roimhe seo. An t-ainm atá ar an sobaldráma. An dáta a dtosóidh Féile Ealaíon na Gaillimhe.",
+      "totalMarks": 14,
+      "topicId": "irish-1-2",
+      "conceptId": "irish-listening-c-p1",
+      "paperPage": 4,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "g1",
+          "label": "Greille 1",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "An chathair inar léiríodh an dráma.",
+            "Píosa a hAon 2 + 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g2",
+          "label": "Greille 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Rud amháin a scríobh Micheál roimhe seo.",
+            "Píosa a hAon 2 + 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g3",
+          "label": "Greille 3",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "An t-ainm atá ar an sobaldráma.",
+            "Píosa a hAon 2 + 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "g4",
+          "label": "Greille 4",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "An dáta a dtosóidh Féile Ealaíon na Gaillimhe.",
+            "Píosa a hAon 2 + 4 + 4 + 4"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (2 + 4 + 4 + 4, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid C · Píosa a hAon"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-C-P1",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a hAon",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid C · Píosa a hAon",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-c-p2",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid C · Píosa a Dó",
+      "questionText": "1. Cén post atá ag Peadar Mac Suibhne? 2. Cé mhéad bliain atá caite aige ag obair ar an Chlochán Liath?",
+      "totalMarks": 6,
+      "topicId": "irish-1-2",
+      "conceptId": "irish-listening-c-p2",
+      "paperPage": 4,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "q1",
+          "label": "Ceist 1",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén post atá ag Peadar Mac Suibhne?",
+            "Píosa a Dó 2 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cé mhéad bliain atá caite aige ag obair ar an Chlochán Liath?",
+            "Píosa a Dó 2 + 4"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (2 + 4, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid C · Píosa a Dó"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-C-P2",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a Dó",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid C · Píosa a Dó",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2011-ol-listening-c-p3",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "A",
+      "questionRef": "2011 OL Cluastuiscint Cuid C · Píosa a Trí",
+      "questionText": "1. Cén contae a mbeidh Ritchie Ó hEadhra ag obair ann? 2. Luaigh ceann amháin de na himeachtaí Gaeilge atá sé i gceist ag Ritchie a eagrú.",
+      "totalMarks": 6,
+      "topicId": "irish-1-2",
+      "conceptId": "irish-listening-c-p3",
+      "paperPage": 4,
+      "schemePage": 10,
+      "taskRequirements": [
+        "Listen to the official recording.",
+        "Answer every item printed on the card."
+      ],
+      "criteria": [
+        {
+          "id": "q1",
+          "label": "Ceist 1",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Cén contae a mbeidh Ritchie Ó hEadhra ag obair ann?",
+            "Píosa a Trí 2 + 4"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Luaigh ceann amháin de na himeachtaí Gaeilge atá sé i gceist ag Ritchie a eagrú.",
+            "Píosa a Trí 2 + 4"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "Each printed question is marked at its own published tariff (2 + 4, in print order), from the 2011 SEC marking scheme. The scheme prints no answer for this part. The 2011 scheme prints each item’s question tariffs in print order (PDF 10) and no answer key: each printed question is claimed whole at its own printed price. Scheme PDF 10: “[Gaeilge lochtach : 0 – 12 a bhaint den iomlán a gnóthaíodh]” This 0–12 deduction applies once to the whole listening test (120), never inside a single question.",
+      "audioMaterial": {
+        "kind": "source-audio",
+        "title": "Triail Chluastuisceana 2011",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "secFileid": "LC001ZLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001ZLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part.",
+        "label": "Cuid C · Píosa a Trí"
+      },
+      "paperFileid": "LC001GLPA00IV",
+      "atlasQuestionId": "L-C-P3",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemeFileid": "LC001GLP000IV",
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a Trí",
+        "title": "Gaeilge Gnáthleibhéal 2011 · Triail Chluastuisceana · Cluastuiscint Cuid C · Píosa a Trí",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

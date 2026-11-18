@@ -1,0 +1,948 @@
+{
+  "reviewedAt": "2026-10-29",
+  "rows": {
+    "accounting": {
+      "category": "Written examination only",
+      "assessment2027": "No externally assessed coursework. Written examination.",
+      "assessment2028": "No externally assessed coursework. Written examination.",
+      "work": "Class assignments are preparation for the examination, not an SEC coursework submission.",
+      "notes": "The new course starts in September 2027: first examination 2029, not 2028.",
+      "sources": [
+        "census",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "agricultural-science": {
+      "category": "Investigation",
+      "assessment2027": "25% Individual Investigative Study; 75% written.",
+      "assessment2028": "25% Individual Investigative Study; 75% written.",
+      "work": "Investigate a question within the annual theme; research, plan, conduct practical investigation, collect evidence, analyse and report. Keep records of the process. The course’s specified practical activities are distinct from the submitted investigative study.",
+      "notes": "Use the outgoing specification for both cohorts. The replacement starts September 2027, for examination 2029.",
+      "sources": [
+        "ag",
+        "rollout"
+      ]
+    },
+    "ancient-greek": {
+      "category": "Research",
+      "assessment2027": "40% Research Study – Text in Context; 60% written.",
+      "assessment2028": "40% Research Study – Text in Context; 60% written.",
+      "work": "A language-centred investigation using close reading of a manageable original-language text and its context; submit an individual report with rationale, findings, reflection and bibliography.",
+      "notes": "2027: theme xenia (guest-friendship / hospitality); the entire capstone text Euripides’ Medea is excluded. Maximum 1,700 words, with the brief’s exclusions. Completion to teacher: 27 November 2026. These annual details are not the 2028 brief.",
+      "sources": [
+        "greekBrief",
+        "rollout"
+      ]
+    },
+    "applied-mathematics": {
+      "category": "Modelling",
+      "assessment2027": "20% modelling project; 80% written.",
+      "assessment2028": "20% modelling project; 80% written.",
+      "work": "Use the SEC brief to identify a real problem, make assumptions, develop a mathematical model, obtain and interpret results, test/refine the model and evaluate its limitations in a report.",
+      "notes": "The 2027 brief is scheduled for November 2026; do not recycle an older brief or its dates.",
+      "sources": [
+        "applied",
+        "adjust"
+      ]
+    },
+    "arabic": {
+      "category": "Oral / aural; learning portfolio",
+      "assessment2027": "No submitted coursework. Higher: oral 30%, aural 25%, written 45%; Ordinary: oral 25%, aural 30%, written 45%.",
+      "assessment2028": "No submitted coursework. Higher: oral 30%, aural 25%, written 45%; Ordinary: oral 25%, aural 30%, written 45%.",
+      "work": "Maintain a language portfolio as part of learning and oral preparation; it is not a separately marked coursework submission.",
+      "notes": "Redeveloped specification applies from examination 2027.",
+      "sources": [
+        "arabic",
+        "rollout"
+      ]
+    },
+    "art": {
+      "category": "Making / performance",
+      "assessment2027": "50% coursework; 20% invigilated practical; 30% written Visual Studies.",
+      "assessment2028": "50% coursework; 20% invigilated practical; 30% written Visual Studies.",
+      "work": "Respond to the brief through visual research and development in a coursework workbook. Realise one artefact during coursework and prepare for the second artefact made in the practical examination.",
+      "notes": "2027 adjustment: final proposal/artist-statement pages removed; the practical remains five hours. Do not turn the workbook into a generic essay.",
+      "sources": [
+        "art",
+        "adjust"
+      ]
+    },
+    "biology": {
+      "category": "Investigation",
+      "assessment2027": "40% Biology in Practice Investigation; 60% written.",
+      "assessment2028": "40% Biology in Practice Investigation; 60% written.",
+      "work": "Research and plan an investigation; conduct an experiment and collect primary data under direct teacher supervision; analyse results and communicate conclusions. Keep a working log, but submit the report rather than the entire log.",
+      "notes": "2027 topic: osmosis, membranes and food preservation. Report: maximum 1,500 words and 20 images; specified exclusions apply, no video. Completion to teacher: 26 February 2027. The 2028 annual brief must be checked separately.",
+      "sources": [
+        "bio",
+        "bioBrief"
+      ]
+    },
+    "business": {
+      "category": "Research",
+      "assessment2027": "40% Business Alive Investigative Study; 60% written.",
+      "assessment2028": "40% Business Alive Investigative Study; 60% written.",
+      "work": "Develop a focused question, plan and gather appropriate primary and/or secondary evidence, analyse competing perspectives and draw a supported conclusion. Submit the final report; the investigative folder is retained for the process.",
+      "notes": "2027: investigate the effect of a digitally enabled work practice on employers or employees. Maximum 1,500 words and 10 images, with specified exclusions; completion 12 March 2027. Do not make primary interviews compulsory when the brief permits secondary evidence.",
+      "sources": [
+        "business",
+        "businessBrief"
+      ]
+    },
+    "chemistry": {
+      "category": "Investigation",
+      "assessment2027": "40% Chemistry in Practice Investigation; 60% written.",
+      "assessment2028": "40% Chemistry in Practice Investigation; 60% written.",
+      "work": "Research and plan an investigation; conduct an experiment and collect primary data under direct teacher supervision; analyse results and communicate conclusions. Keep a working log, but submit the report rather than the entire log.",
+      "notes": "2027 topic: factors affecting reaction rates. Report: maximum 1,500 words and 20 images; specified exclusions apply, no video. Completion to teacher: 23 April 2027. The 2028 annual brief must be checked separately.",
+      "sources": [
+        "chem",
+        "chemBrief"
+      ]
+    },
+    "classical-studies": {
+      "category": "Research",
+      "assessment2027": "20% Research Study; 80% written.",
+      "assessment2028": "20% Research Study; 80% written.",
+      "work": "Select and investigate a focused topic within the annual brief. Present rationale and approach, findings in an extended essay, and review/reflection.",
+      "notes": "This is distinct from the new Ancient Greek and Latin language-centred studies; their 40% weights and word limits must not be copied here.",
+      "sources": [
+        "classical"
+      ]
+    },
+    "climate-action-and-sustainable-development": {
+      "category": "Action",
+      "assessment2027": "40% Action Project; 60% written.",
+      "assessment2028": "40% Action Project; 60% written.",
+      "work": "Investigate a sustainability issue, plan and carry out action, examine its impact and reflect. Collaborative activity must still yield an individual account and evidence of contribution.",
+      "notes": "2027: action concerning reduction of Ireland’s greenhouse-gas emissions. Individual journal: maximum 1,800 words and 10 images; no video. Completion 12 March 2027.",
+      "sources": [
+        "casd",
+        "casdBrief"
+      ]
+    },
+    "computer-science": {
+      "category": "Making / performance",
+      "assessment2027": "30% coursework; 70% end-of-course examination.",
+      "assessment2028": "30% coursework; 70% end-of-course examination.",
+      "work": "Develop a computational artefact against the SEC brief and document planning, design, implementation, testing and evaluation in the required report and supporting evidence. Course Applied Learning Tasks are preparation, not interchangeable final submissions.",
+      "notes": "2027: 12 school weeks, with brief in December 2026 and completion in March 2027. Annual brief controls exact deliverables. Replacement course first examined in 2029.",
+      "sources": [
+        "cs",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "construction-studies": {
+      "category": "Making / performance",
+      "assessment2027": "2027 Construction Studies: Higher 25% project + 25% practical test + 50% written; Ordinary 30% + 30% + 40%.",
+      "assessment2028": "2028 Construction Technology: 30% Exploring the Constructed Environment + 20% Craft Skills Assessment + 50% written, both levels.",
+      "work": "2027: construct an artefact and supporting design/report work, plus a separate skills test. 2028: Exploring the Constructed Environment requires an artefact and folio, alongside a separate Craft Skills Assessment.",
+      "notes": "2027: experiments requirement removed; artefact and folio are equal halves of the project. 2028: project guidance envisages about 35 hours, brief in term 1 of sixth year.",
+      "sources": [
+        "constructionOld",
+        "constructionNew",
+        "constructionGuide",
+        "adjust"
+      ]
+    },
+    "design-and-communication-graphics": {
+      "category": "Making / performance",
+      "assessment2027": "40% Student Assignment; 60% written.",
+      "assessment2028": "40% Student Assignment; 60% written.",
+      "work": "Respond to the level-specific assignment through research, freehand exploration, design communication and CAD modelling. Assemble the required portfolio and native digital files.",
+      "notes": "2027: Higher maximum 10 pages and 5–10 parts; Ordinary 8 pages and 3–6 parts; seven outputs, no photorealistic output. Applied Graphics and Design replaces DCG for examination 2029.",
+      "sources": [
+        "dcg",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "drama-film-and-theatre-studies": {
+      "category": "Making / performance",
+      "assessment2027": "50% Creativity in Practice Project; 50% written.",
+      "assessment2028": "50% Creativity in Practice Project; 50% written.",
+      "work": "Create theatre or film work, realise/present it and evaluate the process, making each student’s contribution visible. The individual journal and specified recorded evidence support assessment.",
+      "notes": "2027 colour stimulus: present/screen to a live audience; journal maximum 1,700 words and 20 images, with a continuous two-minute excerpt. Completion 23 April 2027. Follow the brief’s media instructions.",
+      "sources": [
+        "dfts",
+        "dftsBrief"
+      ]
+    },
+    "economics": {
+      "category": "Research",
+      "assessment2027": "20% Research Study; 80% written.",
+      "assessment2028": "20% Research Study; 80% written.",
+      "work": "Use the annual brief to frame a question, gather relevant economic evidence and data, apply economic concepts, analyse findings and communicate an evidence-based conclusion.",
+      "notes": "Do not treat Business Alive as the same project: brief, weighting and report rules differ. Final 2027 date not verified in this review.",
+      "sources": [
+        "econ"
+      ]
+    },
+    "engineering": {
+      "category": "Making / performance",
+      "assessment2027": "2027: Higher 25% project + 25% practical examination + 50% written; Ordinary 30% + 30% + 40%.",
+      "assessment2028": "2028: 50% Design and Manufacture Project + 50% written, both levels.",
+      "work": "2027: make the prescribed project with supporting work and sit a separate practical examination. 2028: complete a Design and Manufacture Project, including working model and folio, using research, design, manufacture, testing and evaluation.",
+      "notes": "2028 project: about 45 hours, brief in term 1 of sixth year. The outgoing separate practical test must not be carried over. In 2027 the school prepares practical-test materials.",
+      "sources": [
+        "engineeringOld",
+        "engineeringNew",
+        "engineeringGuide",
+        "adjust"
+      ]
+    },
+    "english": {
+      "category": "Written examination only",
+      "assessment2027": "No externally assessed coursework; written examinations.",
+      "assessment2028": "No externally assessed coursework; written examinations.",
+      "work": "Essays, comparative work and portfolios assigned by the teacher are learning activities, not a separately submitted SEC component.",
+      "notes": "Redevelopment starts no earlier than September 2028; it does not create a coursework component for either cohort here.",
+      "sources": [
+        "census",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "french": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langFrench",
+        "adjust"
+      ]
+    },
+    "geography": {
+      "category": "Investigation",
+      "assessment2027": "2027: 20% Geographical Investigation report; 80% written.",
+      "assessment2028": "2028: 40% Applied Geography Project; 60% written.",
+      "work": "2027: choose from prescribed investigations, plan and conduct fieldwork, process evidence and evaluate results in an individual report. 2028: complete an Applied Geography Project using enquiry, evidence collection, analysis and communication.",
+      "notes": "2028 guidance: approximately 20 hours; brief in term 2 of fifth year. Group collection does not make the submitted report a group-authored document.",
+      "sources": [
+        "geoOld",
+        "geoNew",
+        "geoGuide"
+      ]
+    },
+    "german": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langGerman",
+        "adjust"
+      ]
+    },
+    "hebrew-studies": {
+      "category": "Written examination only",
+      "assessment2027": "No externally submitted coursework; written examination.",
+      "assessment2028": "No externally submitted coursework; written examination.",
+      "work": "Study prescribed language, texts and cultural material for the examination.",
+      "notes": "Future redevelopment incorporates Hebrew Studies within Religious Education; this must not change current cohorts’ requirements.",
+      "sources": [
+        "census",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "history": {
+      "category": "Research",
+      "assessment2027": "20% Research Study Report; 80% written.",
+      "assessment2028": "20% Research Study Report; 80% written.",
+      "work": "Choose a suitable historical enquiry, research and evaluate sources, produce an outline plan and an extended essay with review. Keep the research trail as well as the final report.",
+      "notes": "Level-specific source and length rules must come from the applicable instructions; do not apply a Higher-level marking grid to every student. New specification starts September 2027, first examination 2029.",
+      "sources": [
+        "history",
+        "rollout"
+      ]
+    },
+    "home-economics": {
+      "category": "Investigation",
+      "assessment2027": "20% Food Studies coursework + 80% written; Textiles elective route: 20% Food Studies + 10% Textiles coursework + 70% written.",
+      "assessment2028": "20% Food Studies coursework + 80% written; Textiles elective route: 20% Food Studies + 10% Textiles coursework + 70% written.",
+      "work": "Research, plan, carry out and evaluate Food Studies assignments in the journal. The Textiles elective additionally requires a garment and design folder, rather than only a written elective answer.",
+      "notes": "2027 Food Studies: two assignments under adjustments. Oide confirms two for examination 2028, due 1 November 2027. Textiles 2027 completion date is unresolved: brief 6 April versus provisional calendar 16 April. Do not schedule automatically.",
+      "sources": [
+        "home",
+        "adjust",
+        "food2028",
+        "textiles"
+      ]
+    },
+    "irish": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langIrish",
+        "adjust"
+      ]
+    },
+    "italian": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langItalian",
+        "adjust"
+      ]
+    },
+    "japanese": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langJapanese",
+        "adjust"
+      ]
+    },
+    "lcvp-link-modules": {
+      "category": "Portfolio",
+      "assessment2027": "2027 LCVP: 60% portfolio; 40% written, common level.",
+      "assessment2028": "2028 LCW: 60% Portfolio in Action; 40% written, common level.",
+      "work": "LCVP develops career, enterprise and work-related evidence. LCW uses four Applied Learning Tasks and an ongoing digital portfolio; that entire portfolio is not submitted. Students use their learning/evidence to respond to the SEC Portfolio in Action brief.",
+      "notes": "2027 adjusted LCVP: CV + two of the other three core items + one optional item. LCW brief in term 1 of sixth year; start evidence collection in fifth year.",
+      "sources": [
+        "lcvp",
+        "lcw",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "latin": {
+      "category": "Research",
+      "assessment2027": "40% Research Study – Text in Context; 60% written.",
+      "assessment2028": "40% Research Study – Text in Context; 60% written.",
+      "work": "A language-centred investigation using close reading of a manageable original-language text and its context; submit an individual report with rationale, findings, reflection and bibliography.",
+      "notes": "2027: theme the divine; the entire capstone text Virgil’s Aeneid is excluded. Maximum 1,700 words, with the brief’s exclusions. Completion to teacher: 27 November 2026. These annual details are not the 2028 brief.",
+      "sources": [
+        "latinBrief",
+        "rollout"
+      ]
+    },
+    "lithuanian": {
+      "category": "Oral / aural; learning portfolio",
+      "assessment2027": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "assessment2028": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "work": "Develop a language portfolio over the course to support learning, reflection and oral preparation. It is a learning resource, not a coursework mark in its own right.",
+      "notes": "Do not label the learning portfolio “submitted coursework”, or assume the entire portfolio may be taken into the oral examination.",
+      "sources": [
+        "langLithuanian",
+        "polish"
+      ]
+    },
+    "mandarin-chinese": {
+      "category": "Oral / aural; learning portfolio",
+      "assessment2027": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "assessment2028": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "work": "Develop a language portfolio over the course to support learning, reflection and oral preparation. It is a learning resource, not a coursework mark in its own right.",
+      "notes": "Do not label the learning portfolio “submitted coursework”, or assume the entire portfolio may be taken into the oral examination.",
+      "sources": [
+        "langMandarin Chinese",
+        "mandarin"
+      ]
+    },
+    "mathematics": {
+      "category": "Written examination only",
+      "assessment2027": "No externally assessed coursework; written examinations.",
+      "assessment2028": "No externally assessed coursework; written examinations.",
+      "work": "Class investigations and modelling exercises are learning activities, not the Applied Mathematics project.",
+      "notes": "Redevelopment starts no earlier than September 2028.",
+      "sources": [
+        "census",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "music": {
+      "category": "Making / performance",
+      "assessment2027": "Higher: 25% each Performing, Composing and Listening, plus a 25% elective in one area. Ordinary: strongest area weighted 50%, others 25% each.",
+      "assessment2028": "Higher: 25% each Performing, Composing and Listening, plus a 25% elective in one area. Ordinary: strongest area weighted 50%, others 25% each.",
+      "work": "Performing is a practical examination. The Higher Composing elective involves a submitted composition portfolio. The Higher Listening elective involves a special study examined in the written assessment; it is not a submitted coursework portfolio.",
+      "notes": "There is no universal “50% music project”. The exact annual composition submission/media requirements need checking. New specification first examined in 2029.",
+      "sources": [
+        "music",
+        "rollout"
+      ]
+    },
+    "physical-education": {
+      "category": "Making / performance",
+      "assessment2027": "2027: 20% Physical Activity Project + 30% Performance Assessment + 50% written.",
+      "assessment2028": "2028: 50% Physical Education Project; 50% written.",
+      "work": "2027: assess a starting performance, plan and carry out a development programme and evaluate progress; undertake performance assessment in a different activity. 2028: a single Physical Education Project integrates planning, participation, skill analysis and evaluation.",
+      "notes": "2027 PAP uses three performance goals. 2028 brief is scheduled in term 2 of fifth year; its evidence rules replace the old two-component package.",
+      "sources": [
+        "peOld",
+        "peNew",
+        "peGuide",
+        "adjust"
+      ]
+    },
+    "physics": {
+      "category": "Investigation",
+      "assessment2027": "40% Physics in Practice Investigation; 60% written.",
+      "assessment2028": "40% Physics in Practice Investigation; 60% written.",
+      "work": "Research and plan an investigation; conduct an experiment and collect primary data under direct teacher supervision; analyse results and communicate conclusions. Keep a working log, but submit the report rather than the entire log.",
+      "notes": "2027 topic: domestic sustainability: energy sources, use and/or losses. Report: maximum 1,500 words and 20 images; specified exclusions apply, no video. Completion to teacher: 11 December 2026. The 2028 annual brief must be checked separately.",
+      "sources": [
+        "physics",
+        "physicsBrief"
+      ]
+    },
+    "physics-and-chemistry": {
+      "category": "Written examination only",
+      "assessment2027": "No externally submitted coursework; written examination.",
+      "assessment2028": "No externally submitted coursework; written examination.",
+      "work": "Practical learning supports the course but is not the separate 40% investigation used in the redeveloped individual sciences.",
+      "notes": "Chemical and Physical Science replaces this course for entrants in September 2027, first examination 2029.",
+      "sources": [
+        "census",
+        "adjust",
+        "rollout"
+      ]
+    },
+    "polish": {
+      "category": "Oral / aural; learning portfolio",
+      "assessment2027": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "assessment2028": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "work": "Develop a language portfolio over the course to support learning, reflection and oral preparation. It is a learning resource, not a coursework mark in its own right.",
+      "notes": "Do not label the learning portfolio “submitted coursework”, or assume the entire portfolio may be taken into the oral examination.",
+      "sources": [
+        "langPolish",
+        "polish"
+      ]
+    },
+    "politics-and-society": {
+      "category": "Action",
+      "assessment2027": "20% Citizenship Project Report; 80% written.",
+      "assessment2028": "20% Citizenship Project Report; 80% written.",
+      "work": "Research a citizenship issue within the annual brief, undertake action, document its execution and reflect critically on learning and outcomes in an individual report.",
+      "notes": "A polished essay without actual action does not fulfil the process. Group activity must retain individual authorship of the report.",
+      "sources": [
+        "politics"
+      ]
+    },
+    "portuguese": {
+      "category": "Oral / aural; learning portfolio",
+      "assessment2027": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "assessment2028": "No separately marked coursework portfolio; oral, aural and written examinations.",
+      "work": "Develop a language portfolio over the course to support learning, reflection and oral preparation. It is a learning resource, not a coursework mark in its own right.",
+      "notes": "Do not label the learning portfolio “submitted coursework”, or assume the entire portfolio may be taken into the oral examination.",
+      "sources": [
+        "langPortuguese",
+        "polish"
+      ]
+    },
+    "religious-education": {
+      "category": "Research",
+      "assessment2027": "20% coursework; 80% written.",
+      "assessment2028": "20% coursework; 80% written.",
+      "work": "Research a title from the annually designated coursework choices and complete the required summary and personal reflection in the coursework booklet.",
+      "notes": "This is the examined LCE subject, not a school’s non-examination religious-education programme. Do not reuse old titles as current instructions.",
+      "sources": [
+        "re"
+      ]
+    },
+    "russian": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langRussian",
+        "adjust"
+      ]
+    },
+    "spanish": {
+      "category": "Oral / aural",
+      "assessment2027": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "assessment2028": "No externally submitted coursework portfolio. Oral/aural/written assessment as specified for the level.",
+      "work": "Prepare language skills and any prescribed oral-support material; school writing assignments are not separately marked coursework.",
+      "notes": "Oral documents, permitted stimuli and annual arrangements remain language- and level-specific.",
+      "sources": [
+        "langSpanish",
+        "adjust"
+      ]
+    },
+    "technology": {
+      "category": "Making / performance",
+      "assessment2027": "50% project; 50% written.",
+      "assessment2028": "50% project; 50% written.",
+      "work": "Design and realise an artefact against the annual brief, with a folio showing investigation, design development, planning, manufacture, testing and evaluation.",
+      "notes": "Keep distinct from Engineering and Construction: similar workflow does not mean identical brief, weightings or assessment criteria.",
+      "sources": [
+        "tech"
+      ]
+    }
+  },
+  "sources": {
+    "census": {
+      "title": "Curriculum Online: senior-cycle subject directory",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "rollout": {
+      "title": "NCCA: current redevelopment schedule",
+      "url": "https://ncca.ie/en/senior-cycle/senior-cycle-redevelopment/schedule-of-senior-cycle-subjects-for-redevelopment/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "adjust": {
+      "title": "Department: Assessment Arrangements 2027",
+      "url": "https://assets.gov.ie/static/documents/54a1450c/FINAL_v2_English_Assessment_Arrangements_2027.pdf",
+      "where": "Subject pages; LCVP pp.80–81",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "rules": {
+      "title": "SEC: Coursework Rules and Procedures 2025–2026, applying also to subsequent years",
+      "url": "https://www.wexfordcbs.ie/wp-content/uploads/2025/11/Coursework-Rules-and-Procedures-2025-26.pdf",
+      "where": "Sections 6, 15, 17; Appendices 1, 2, 9",
+      "kind": "SEC document, school-hosted mirror",
+      "checked": "2026-10-29"
+    },
+    "provisional": {
+      "title": "SEC: provisional 2027 completion calendar",
+      "url": "https://www.scoilpol.ie/Downloads/Examinations/2027/LeavingCertificateExaminationProvisionalSchedule_of_Examination-and_Completion_Dates_2026.2027.pdf",
+      "where": "Provisional only",
+      "kind": "SEC document, school-hosted mirror",
+      "checked": "2026-10-29"
+    },
+    "ag": {
+      "title": "Agricultural Science specification",
+      "url": "https://www.curriculumonline.ie/getmedia/9ad3071d-b58d-4988-9afc-f4e229ceb864/NCCA-Specification-for-Leaving-Cert-Agricultural-Science.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "applied": {
+      "title": "Applied Mathematics modelling guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/8f2d896c-d95f-47a6-b41a-af045cffc851/21042-Leaving-Cert-Applied-Maths-Guidance-for-Modelling-v3.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "arabic": {
+      "title": "Arabic specification, introduced September 2025",
+      "url": "https://www.curriculumonline.ie/getmedia/ca3539e8-068d-4dda-9734-bccb04eb5144/SC_Arabic_Curriculum_Specification_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "art": {
+      "title": "Art specification",
+      "url": "https://www.curriculumonline.ie/getmedia/d809df63-51e4-43dc-b091-3c5f18a8312d/Leaving-Certificate-Art-Specification_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "bio": {
+      "title": "Biology investigation guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/fc6493fa-f5d7-4c8e-9c82-3fcd268ce1ba/AAC_Guidelines_Biology_Final.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "business": {
+      "title": "Business Alive guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/875b16f7-be29-4fc0-acec-42eefcb88f75/AAC_Guidelines_LCBusiness_November-2024_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "chem": {
+      "title": "Chemistry investigation guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/fbcaa25e-596b-4269-a9ed-cdfcd281ee9c/AAC_Guidelines_Chemistry_Final.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "physics": {
+      "title": "Physics investigation guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/661fe09e-2b93-4f55-b548-ff87d7e38331/AAC_Guidelines_Physics_Final.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "latin": {
+      "title": "Latin research-study guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/4c045030-1cdd-4c07-a680-a1195a518b0f/AAC_Guidelines-Latin-English-Version.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "casd": {
+      "title": "Climate Action and Sustainable Development AAC guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/73252104-823e-4a8f-9650-af1144adf110/AAC_Guidelines_LC-CASD_Final.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "dfts": {
+      "title": "Drama, Film and Theatre Studies AAC guidelines",
+      "url": "https://www.curriculumonline.ie/getmedia/5a12aa18-f032-4dc6-b340-0746bdbe9f09/AAC_Guidelines_DFTS_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "classical": {
+      "title": "Classical Studies specification",
+      "url": "https://www.curriculumonline.ie/getmedia/4f756b6f-29c2-4651-bf1e-06739dee2106/Leaving_Certificate_Specification-Classical_Studies_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "cs": {
+      "title": "Computer Science coursework guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/b5e9833d-6842-4c85-b46e-a0897b72891e/CS-Coursework-Assessment-Guidelines-en.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "dcg": {
+      "title": "Design and Communication Graphics syllabus",
+      "url": "https://www.curriculumonline.ie/getmedia/c288dafe-12a9-4641-b5bb-382b99871423/SCSEC33_Design_Comm_Graphics_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "econ": {
+      "title": "Economics research-study guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/bb757072-78d6-46a2-bb06-ee8d66dc7ed8/LCEconomics_GL_1119.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "history": {
+      "title": "History syllabus, applicable through examination 2028",
+      "url": "https://www.curriculumonline.ie/getmedia/da556505-f5fb-4921-869f-e0983fd80e50/SCSEC20_History_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "home": {
+      "title": "Home Economics syllabus",
+      "url": "https://www.curriculumonline.ie/getmedia/b9bc688f-3a5d-48a7-90f1-b60063f49c74/SCSEC21_Home_Economics_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "food2028": {
+      "title": "Oide: Food Studies assignments for examination 2028",
+      "url": "https://oide.ie/post-primary-news/copy_-preparation-for-teaching-and-learning/",
+      "where": "October 2026 notice",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "textiles": {
+      "title": "SEC: Home Economics Textiles 2027 brief",
+      "url": "https://exams.ie/project-files/lc/home-economics/2026-27-elective-assignment-brief.pdf",
+      "where": "Completion date conflicts with provisional calendar",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "music": {
+      "title": "Music syllabus",
+      "url": "https://www.curriculumonline.ie/getmedia/85bfed8e-207e-4fbc-b8ed-3120cd979a4b/SCSEC26_Music_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "politics": {
+      "title": "Politics and Society specification",
+      "url": "https://www.curriculumonline.ie/getmedia/ee597f5d-180a-4531-ba50-2f4c966f2df3/Politics-and-Society-new.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "re": {
+      "title": "Religious Education syllabus",
+      "url": "https://www.curriculumonline.ie/getmedia/55900bde-5836-4eef-b94c-d569b31d5b70/SCSEC29_Religious_Ed_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "tech": {
+      "title": "Technology syllabus",
+      "url": "https://www.curriculumonline.ie/getmedia/da63d79a-b84f-4b8c-ba06-a4cb1fd21e07/SCSEC34_Technology_syllabus_eng.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "constructionOld": {
+      "title": "NCCA: Construction Studies background paper",
+      "url": "https://ncca.ie/media/2kag2yri/lc-construction-studies_background-paper-and-brief.pdf",
+      "where": "Current syllabus assessment table",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "engineeringOld": {
+      "title": "SEC: Engineering chief examiner report",
+      "url": "https://pdst.ie/sites/default/files/11%20CER.pdf",
+      "where": "Assessment structure",
+      "kind": "SEC document, PDST-hosted mirror",
+      "checked": "2026-10-29"
+    },
+    "geoOld": {
+      "title": "Geography syllabus, examination through 2027",
+      "url": "https://www.curriculumonline.ie/getmedia/9da21be1-3f99-4f50-88ee-ba7ce6638e1a/SCSEC17_Geography_syllabus_eng.pdf",
+      "where": "Printed p.6; investigation unit",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "peOld": {
+      "title": "Physical Education specification, examination through 2027",
+      "url": "https://www.curriculumonline.ie/getmedia/41817053-8f40-4365-8893-dba1a68508f3/LCPE_Specification_en.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "geoNew": {
+      "title": "Geography specification, first examination 2028",
+      "url": "https://www.curriculumonline.ie/getmedia/837bf939-b559-4b45-8c94-5590d8710083/SC-Geography-Spec-ENG-INT.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "geoGuide": {
+      "title": "Applied Geography Project guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/e59372b0-ef87-44a4-8db0-bff434e54a29/Guidelines-to-support-the-Applied-Geography-Project.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "constructionNew": {
+      "title": "Construction Technology specification, first examination 2028",
+      "url": "https://www.curriculumonline.ie/getmedia/8a5f525f-b3d4-4d0d-ae60-11fed5c4076c/SC-Construction-Technology-Spec-ENG.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "constructionGuide": {
+      "title": "Construction Technology AAC guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/237bfb25-4205-4c6f-9e4f-298530e1e603/Guidelines-to-support-the-Additional-Assessment-Components-in-Leaving-Certificate-Construction-Technology.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "engineeringNew": {
+      "title": "Engineering specification, first examination 2028",
+      "url": "https://www.curriculumonline.ie/getmedia/2e897923-e0dc-4f3b-ac42-f8501226c8ab/SC-Engineering-Spec-ENG-INT.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "engineeringGuide": {
+      "title": "Engineering design and manufacture project guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/1ebe54a8-d8f7-4fb4-ae0f-3d6159e4e175/AAC_Guidelines_Engineering_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "peNew": {
+      "title": "Physical Education specification, first examination 2028",
+      "url": "https://www.curriculumonline.ie/getmedia/e3c33f7c-a88b-4050-bed3-c892ec995ba2/SC-PE-Spec-ENG-INT.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "peGuide": {
+      "title": "Physical Education Project guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/2acfd0b3-f9b4-416c-a711-fd7f6428d8cf/GuidelinesAAC_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "lcvp": {
+      "title": "LCVP programme statement",
+      "url": "https://www.curriculumonline.ie/getmedia/997056e3-2792-4ef6-8b6c-ef80c0dfccd8/Revised-LCVP-Programme-Statement_June-22_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "lcw": {
+      "title": "Life, Community and Work: Portfolio in Action guidance",
+      "url": "https://www.curriculumonline.ie/getmedia/f28c9dd5-236d-4336-a7e8-2ce4fd6a0c58/Guidelines-to-complete-the-Portfolio-in-Action-AAC-EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "polish": {
+      "title": "Language portfolio guidance: Polish",
+      "url": "https://www.curriculumonline.ie/getmedia/a1016f56-3b2f-45e8-8651-007b8dd69f8f/Language-Portfolio-Guidelines_Polish_July-2021_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "mandarin": {
+      "title": "Language portfolio guidance: Mandarin Chinese",
+      "url": "https://www.curriculumonline.ie/getmedia/c933b84b-c6fb-4a67-a3fe-b9990243f874/Language-Portfolio-Guidelines_Mandarin_July-2021_EN.pdf",
+      "where": "Assessment section",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "languages": {
+      "title": "Languages Connect / PPLI: Leaving Certificate languages information",
+      "url": "https://languagesconnect.ie/wp-content/uploads/2025/03/Leaving-Certificate-Languages-Information-Sheet-1.pdf",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "lca": {
+      "title": "LCA programme statement, entrants from September 2025",
+      "url": "https://www.curriculumonline.ie/getmedia/7a48fd2a-c208-40c4-a541-f71e0044394e/LCA-Programme-Statement_Dec-2024.pdf",
+      "where": "Assessment and certification tables",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "bioBrief": {
+      "title": "SEC: Biology 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/biology/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "chemBrief": {
+      "title": "SEC: Chemistry 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/chemistry/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "physicsBrief": {
+      "title": "SEC: Physics 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/physics/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "businessBrief": {
+      "title": "SEC: Business 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/business/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "casdBrief": {
+      "title": "SEC: Climate Action And Sustainable Development 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/climate-action-and-sustainable-development/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "dftsBrief": {
+      "title": "SEC: Drama Film And Theatre Studies 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/drama-film-and-theatre-studies/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "latinBrief": {
+      "title": "SEC: Latin 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/latin/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "greekBrief": {
+      "title": "SEC: Ancient Greek 2027 coursework brief",
+      "url": "https://exams.ie/project-files/lc/ancient-greek/2026-27-project-brief.pdf",
+      "where": "Sections 1, 4–7",
+      "kind": "SEC document, exams.ie mirror",
+      "checked": "2026-10-29"
+    },
+    "langFrench": {
+      "title": "French: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/french/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langGerman": {
+      "title": "German: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/german/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langIrish": {
+      "title": "Irish: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/gaeilge/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langItalian": {
+      "title": "Italian: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/italian/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langJapanese": {
+      "title": "Japanese: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/japanese/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langRussian": {
+      "title": "Russian: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/russian/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langSpanish": {
+      "title": "Spanish: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/spanish/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langLithuanian": {
+      "title": "Lithuanian: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/lithuanian/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langPolish": {
+      "title": "Polish: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/polish/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langPortuguese": {
+      "title": "Portuguese: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/portuguese/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    },
+    "langMandarin Chinese": {
+      "title": "Mandarin Chinese: Curriculum Online subject page",
+      "url": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/mandarin-chinese/",
+      "where": "",
+      "kind": "Official",
+      "checked": "2026-10-29"
+    }
+  }
+}

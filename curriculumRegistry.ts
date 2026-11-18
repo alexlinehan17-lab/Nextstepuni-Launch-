@@ -2386,7 +2386,7 @@ const SUBJECT_ALIASES: Record<string, string> = {
 };
 
 export function resolveSubjectId(subject: string): string | undefined {
-  const key = normalise(subject);
+  const key = normalise(subject).replace(/^leaving cert /, '');
   const direct = CURRICULUM.find((entry) => normalise(entry.id) === key || normalise(entry.name) === key);
   return direct?.id ?? SUBJECT_ALIASES[key] ?? CURRICULUM_SPECIFICATIONS.find(spec => normalise(spec.subjectId) === key || normalise(spec.subjectName) === key)?.subjectId;
 }

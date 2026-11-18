@@ -1,0 +1,1291 @@
+{
+  "review": {
+    "year": 2010,
+    "level": "foundation",
+    "paperFileid": "LC001BLPA00IV.pdf",
+    "schemeFileid": "LC001BLP000IV.pdf",
+    "paperSha256": "e6e21527a147acb955fd6485c970724127f7fc60976b15b0288f3c26693938d3",
+    "schemeSha256": "a29bb58dc74195783c6e67b36ea6eea22b027aa838907c014a2d26a18f410be0",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reviewedSchemePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reviewDate": "2026-11-11",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+        "decision": "Separate listening paper: every answer required; tick/map instructions select the correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+        "decision": "Separate listening paper: every answer required; tick/map instructions select the correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 3,
+        "raw": "Cá bhfuil Oifig an Phoist? (Cuir tic sa bhosca ceart.)",
+        "decision": "Separate listening paper: every answer required; tick/map instructions select the correct answer, not alternative tasks."
+      }
+    ],
+    "atomicPracticeCardIds": [
+      "irish-2010-fl-a-1a",
+      "irish-2010-fl-a-1b",
+      "irish-2010-fl-a-2a",
+      "irish-2010-fl-a-2b",
+      "irish-2010-fl-a-3a",
+      "irish-2010-fl-a-3b",
+      "irish-2010-fl-a-4",
+      "irish-2010-fl-a-5",
+      "irish-2010-fl-a-6a",
+      "irish-2010-fl-a-6b",
+      "irish-2010-fl-a-7a",
+      "irish-2010-fl-a-7b",
+      "irish-2010-fl-a-8a",
+      "irish-2010-fl-a-8b",
+      "irish-2010-fl-a-9a",
+      "irish-2010-fl-a-9b",
+      "irish-2010-fl-a-10a",
+      "irish-2010-fl-a-10b",
+      "irish-2010-fl-a-11a",
+      "irish-2010-fl-a-11b",
+      "irish-2010-fl-a-12a",
+      "irish-2010-fl-a-12b"
+    ],
+    "pairedRouteCardIds": [],
+    "examStructure": {
+      "listening": 180,
+      "total": 180
+    },
+    "nonPoolDecisions": [
+      "Multiple-choice distractors are candidate answers to one question, not independently valid task routes.",
+      "Notice picture prompts and all six reply details to Phil are compulsory; they are required headings, not alternatives. The supplied handwritten invitation (picture 2) is task context.",
+      "Letter: open friend and flexible dó/di; three work points in picture 2, one customer reference in picture 3 and two depicted activities in picture 4 are required content, and the scheme’s activity examples are illustrative, not a closed menu.",
+      "Form: five school subjects and three sports are open content; the three printed interview dates are a finite selection.",
+      "Story five-reference requirement and scheme example lists are not a choose-five finite menu. 2010 prints no fixed missing-reference penalty.",
+      "Story 6(b) picture captions (faoin tuath, marcach óg; ag tafann, geit; chabhraigh, stop; ar ais ar an gcapall, áthas) are vocabulary support, not a selection.",
+      "Reasonable-accommodation guidance (scheme PDF 17) changes marking for eligible candidates, not task selection."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Full visual sweep 2026-10-08, re-checked 2026-10-11: 16 written + 8 listening + 17 scheme pages, including covers and blank pages (written 16, aural 7–8 blank). Written 270 = 40 matching + 50 Q2 + 60 Q3 + 30 Q4 + 40 Q5 + 50 Q6; separate listening 180.",
+      "2010 raw PDF text is readable; no duplicate-glyph reconstruction is needed. Private-use tick/checkbox glyphs on PDF 13 (form) and aural PDF 2 are kept in the raw directive guard; the original PDFs are unchanged.",
+      "Matching key EHDGAFBJCI on written PDF 2 / scheme PDF 3, 10 × 4 marks.",
+      "Q2 BSL letter (PDF 3), Féile na hÉigse brochure (PDF 4), road-accident news (PDF 5): answers scheme PDF 3, 5 marks each. Q3 Cailín Ceolmhar article (PDF 6), Gráinne Mhaol extract (PDF 7), poem An Canaerí (PDF 8, four stanzas, 16 lines, cage and two bird illustrations): answers scheme PDF 4, 6 marks each.",
+      "Q3 special notes on scheme PDF 5: 3(a)(3) accepts Ceol traidisiúnta / traidisiúnta / the full sentence / an t-alt iomlán at 6; Ceol draíochta 6−2 = 4; Bosca ceoil and Ceol 0. 3(b)(2) accepts the chun dul ar bord loinge forms at 6, excess information 6−2. 3(c)(4) accepts Síol forms at 6; two lines 6−2 = 4; whole stanza 6−6 = 0. Permitted marks therefore [0, 4, 6], not 2011’s [0, 2, 4, 6].",
+      "Notice Q4(a) written PDF 10 / scheme PDF 7–9: layout 1 + pictures 6/9/3/3 + language 8 = 30. General −1 for an inappropriate tense (PDF 8). The paper numbers its panels 1, 2, an unnumbered photograph, 3; the scheme counts four pictures, so scheme Pictiúr 3 is the photograph and scheme Pictiúr 4 is the panel printed 3. Scheme PDF 9 asks “Cé a chuirfidh tús leis an rás?” where the paper says “turas”; original wording kept.",
+      "Reply Q4(b) written PDF 11 / scheme PDF 10–11: greeting 2 + reply attempt 1 + signature 1; six required details 3 each across pictures 1, 3, 4; language 8 = 30. Candidate is Helen (handwritten invitation in picture 2, signed Phil). Past-tense penalty −1 printed for picture 3/4 points.",
+      "Hardware-store letter Q5(a) written PDF 12 / scheme PDF 12–14: layout 6 (2+1+1+2), pictures 4/12/4/4, language 10 = 40. Picture 3 needs one customer reference; picture 4 needs two depicted activities, −1 for an activity not in the picture. Scheme PDF 13 picture-2 heading says “san óstán” although the paper and examples concern the Ollstór; original wording kept with an explicit notice.",
+      "K-Club form Q5(b) written PDF 13 / scheme PDF 14–15, Áine Bhreathnach, interview dates 21 Iúil / 28 Iúil / 4 Lúnasa. Fields 15 by the printed doubled column 30 ÷ 2, rounding up once (21 ÷ 2 = 10½ → 11). Published table conflict: undoubled birth-date row ½ vs doubled 2; undoubled column sums 14½ against printed 15. Both columns preserved; the explicit doubled method is used. Relevant paragraph /15, off-topic /5; 20 words → 50%, about 32 words → one-fifth reduction of the paragraph award only; language 10.",
+      "Stories Q6(a) beach day with Club Óige (written PDF 14 / scheme PDF 15–16) and Q6(b) cycling/horse incident (written PDF 15 / scheme PDF 16): communication 37 with proportional length adjustment, language 13. Five references required (6(b): one per picture plus one more). No fixed −5 missing-reference penalty and no four-point conversion table are printed. Reasonable accommodation on scheme PDF 17; no aural transcript in this scheme."
+    ],
+    "boundaries": "22 individually marked listening parts.",
+    "audio": {
+      "status": "unavailable",
+      "expectedComponent": "2010|foundation|LC001BLPA00IV.pdf",
+      "checkedUrls": [
+        {
+          "url": "https://www.examinations.ie/archive/exampapers/2010/LC001BLP017IV.mp3",
+          "result": "HTTP 404 (2026-10-08, 2026-11-04, 2026-11-11)"
+        },
+        {
+          "url": "https://www.examinations.ie/archive/exampapers/2010/LC001BLPO17IV.mp3",
+          "result": "HTTP 404 (2026-10-08, 2026-11-11)"
+        },
+        {
+          "url": "https://www.examinations.ie/archive/exampapers/2010/LC001BLPA17IV.mp3",
+          "result": "HTTP 404 (2026-11-04)"
+        },
+        {
+          "url": "https://www.examinations.ie/archive/exampapers/2010/LC001BLP017EV.mp3",
+          "result": "HTTP 404 (2026-11-11)"
+        }
+      ],
+      "secArchiveListing": "The SEC archive lists “Sound File / Foundation Level (IV)” for every Irish sitting 2011–2026 (LC001BLP017IV.mp3; 2012 LC001BLPO17IV.mp3) and, for 2010, only “Sound File (IV)”, LC001ZLP017IV.mp3 (the archive enumeration, scripts/paper-trail/out/manifest.jsonl).",
+      "sharedRecording": {
+        "url": "https://www.examinations.ie/archive/exampapers/2010/LC001ZLP017IV.mp3",
+        "result": "HTTP 200, 38,471,356 bytes (2026-10-08, 2026-11-11)",
+        "decision": "The Higher/Ordinary recording, never substituted: it is the size of 2011’s shared file (39,464,427 bytes), whose Foundation recording is a separate 29,851,366-byte file, and the Foundation paper asks different questions (Sorcha, Ciarán, Cluain Eois, mionmharatón, FÁS)."
+      },
+      "corroboration": "St Munchin’s College Irish aural page labels the 2010 Foundation recording unavailable: https://stmunchinscollege.com/academics/leaving-cert-programme/irish/",
+      "scheme": "Scheme PDF 2 gives the full listening key: 22 parts, 180 marks; Q1–3 (a)/(b) 7 each; Q4, Q5 7 each; Q6–9 (a)/(b) 8 each; Q10–12 (a)/(b) 10 each; map answer bottom right.",
+      "decision": "Alex, 2026-11-11: every printed listening part is carded without audio: its question and printed options from the paper, its answer and tariff from the scheme’s key (PDF 2). No transcript and no substitute audio."
+    }
+  },
+  "cards": [
+    {
+      "id": "irish-2010-fl-a-1a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-1a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 1(a)",
+      "questionText": "1. (a) Cén post a bheidh ag Sorcha ag deireadh an chúrsa?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-1a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Fáilteoir = an tríú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 1(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 1(a)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-1b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-1b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 1(b)",
+      "questionText": "1. (b) Cá háit ar mhaith le Sorcha post mar bhainisteoir?\n\nAn Fhrainc\nAn Iodáil\nGaillimh",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-1b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Gaillimh"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 1(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 1(b)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-2a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-2a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 2(a)",
+      "questionText": "2. (a) Cén post atá ag Ciarán?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-2a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Feirmeoir = an dara pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 2(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 2(a)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-2b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-2b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 2(b)",
+      "questionText": "2. (b) Cá dtéann Ciarán ar saoire i rith an gheimhridh?\n\nAn Afraic Theas\nCill Chainnigh\nLoch Garman",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-2b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An Afraic Theas"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 2(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 2(b)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-3a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-3a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 3(a)",
+      "questionText": "3. (a) Cad a osclófar i gCluain Eois an mhí seo chugainn?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-3a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Ionad Sláinte = an chéad phictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 3(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 3(a)",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-3b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-3b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 3(b)",
+      "questionText": "3. (b) Cén folúntas atá san áit faoi láthair?\n\nDochtúir\nBanaltra\nRúnaí",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-3b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Rúnaí"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 3(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 3(b)",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-4",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-4",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 4",
+      "questionText": "4. Cá bhfuil an bhean ag dul?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-4",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Gruagaire = an ceathrú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 4",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 4",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-5",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-5",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 5",
+      "questionText": "5. Cá bhfuil Oifig an Phoist? (Cuir tic sa bhosca ceart.)",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-5",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An bosca ag an mbun ar dheis. (tic nó saighead)"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 5",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 5",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-6a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-6a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 6(a)",
+      "questionText": "6. (a) Cén chaoi a mbeidh an aimsir don mhionmharatón Dé Domhnaigh?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-6a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Fliuch = an ceathrú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 6(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 6(a)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-6b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-6b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 6(b)",
+      "questionText": "6. (b) Cé mhéad duine a bheidh páirteach sa mhionmharatón?\n\n5,000\n10,000\n15,000",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-6b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "15,000"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 6(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 6(b)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-7a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-7a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 7(a)",
+      "questionText": "7. (a) Cén comórtas a bheidh ann an tseachtain seo chugainn?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-7a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Leadóg = an dara pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 7(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 7(a)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-7b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-7b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 7(b)",
+      "questionText": "7. (b) Cé a bhronnfaidh na duaiseanna ag deireadh an chomórtais?\n\nAn Leas-Phríomhoide\nMúinteoir Corpoideachais\nRúnaí na Scoile",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-7b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An Leas-Phríomhoide"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 7(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 7(b)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-8a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-8a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 8(a)",
+      "questionText": "8. (a) Cén cúrsa a chuirfidh FÁS ar siúl i Leitir Ceanainn?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-8a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Cúrsa Garraíodóireachta = an tríú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 8(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 8(a)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-8b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-8b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 8(b)",
+      "questionText": "8. (b) Cé mhéad folúntas atá ar an gcúrsa seo?\n\n3\n20\n80",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-8b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "20"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 8(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 8(b)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-9a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-9a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 9(a)",
+      "questionText": "9. (a) Cén cumann atá i gceist anseo?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-9a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Sábháilteacht Uisce na hÉireann = an chéad phictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 9(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 9(a)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-9b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-9b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 9(b)",
+      "questionText": "9. (b) Cathain a fhoilseofar na póstaeir is fearr?\n\nAibreán\nBealtaine\nMeitheamh",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-9b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Meitheamh"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 9(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 9(b)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-10a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-10a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 10(a)",
+      "questionText": "10. (a) Cá mbeidh Cáit Dé Sathairn?\n\nAg baile\nAg dioscó\nI Luimneach",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-10a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "I Luimneach"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 10(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 10(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-10b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-10b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 10(b)",
+      "questionText": "10. (b) Cén cluiche ina mbeidh Síle ag imirt Dé Sathairn?\n\nAn Poc Fada\nCluiche Camógaíochta\nCluiche Rugbaí",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-10b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Cluiche Camógaíochta"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 10(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 10(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-11a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-11a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 11(a)",
+      "questionText": "11. (a) Cén fáth a raibh Lisa san oifig thaistil? Bhí sí …\n\nag dul thar lear ar saoire\nag lorg obair shamhraidh\nag dul go Caisleán an Bharraigh",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-11a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Ag lorg obair shamhraidh"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 11(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 11(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-11b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-11b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 11(b)",
+      "questionText": "11. (b) Cén áit a bhfuil Colm ag obair?\n\nIonad Spóirt\nBialann McDonalds\nSiopa Gruagaire",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-11b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Ionad Spóirt"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 11(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 11(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-12a",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-12a",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 12(a)",
+      "questionText": "12. (a) Cén aois atá Nuala inniu?\n\n17\n18\n19",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-12a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "18"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 12(a)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 12(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    },
+    {
+      "id": "irish-2010-fl-a-12b",
+      "year": 2010,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-12b",
+      "questionRef": "2010 FL Cluastuiscint · Ceist 12(b)",
+      "questionText": "12. (b) Cén áit a mbeidh an chóisir ag Nuala?\n\nSa bhaile\nSa Spáinn\nSa teach tábhairne",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-12b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000IV",
+      "schemePage": 2,
+      "schemePages": [
+        2
+      ],
+      "taskRequirements": [
+        "Cuir tic (✓) leis an bhfreagra ceart i ngach cás."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Sa Spáinn"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 12(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Cluastuiscint · Ceist 12(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      }
+    }
+  ]
+}

@@ -55,7 +55,10 @@ export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasU
       <span className="student-eyebrow">{now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</span>
       <div className="sh-home-actions">
         {onOpenFeedback && <button type="button" className="sh-feedback" onClick={onOpenFeedback} aria-haspopup="dialog">Feedback <ArrowUpRight size={16} aria-hidden="true" /></button>}
-        {onOpenMobileProfile && <button type="button" className="sh-profile" onClick={onOpenMobileProfile} aria-label="Open profile and settings"><Avatar seed={userAvatarSeed || userName || 'student'} className="h-10 w-10" />{hasUnreadNotifications && <i aria-label="Unread notifications" />}</button>}
+        {onOpenMobileProfile && <button type="button" className="sh-profile" data-unread={hasUnreadNotifications || undefined} onClick={onOpenMobileProfile} aria-label={hasUnreadNotifications ? 'Open account, new updates available' : 'Open profile and settings'}>
+          <Avatar seed={userAvatarSeed || userName || 'student'} className="sh-profile-avatar" />
+          <span className="sh-profile-copy"><strong>Account</strong>{hasUnreadNotifications && <small>New updates</small>}</span>
+        </button>}
       </div>
     </div>
     <section className="sh-hero" aria-label="Welcome home">

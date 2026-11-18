@@ -236,6 +236,36 @@ describe('Technology exam-topic registry', () => {
     )).toContain('technology-ordinary-option-5-materials-technology');
   });
 
+  it('files every 2010-2026 option question on its own option page', () => {
+    // Section C prints Options 1-5 as Questions 1-5 in every sitting. Seven of
+    // them were filed by content alone, so the option page never showed them.
+    const optionSlugs = {
+      higher: ['option-applied-control-systems', 'option-electronics-control',
+        'option-information-communications-technology', 'option-manufacturing-systems',
+        'option-materials-technology'],
+      ordinary: ['option-1-applied-control-systems', 'option-2-electronics-control',
+        'option-3-information-communications-technology', 'option-4-manufacturing-systems',
+        'option-5-materials-technology'],
+    } as const;
+    let checked = 0;
+    for (const paper of PAPER_TOPIC_TAGS) {
+      if (paper.subjectId !== 'technology') continue;
+      for (const question of paper.q) {
+        const option = /^C([1-5])$/.exec(question.n);
+        if (!option) continue;
+        const level = paper.level as 'higher' | 'ordinary';
+        const topicId = `technology-${level}-${optionSlugs[level][Number(option[1]) - 1]}`;
+        expect(browseTopicIdsForQuestion(paper, question), `${paperIdentity(paper)} ${question.n}`)
+          .toContain(topicId);
+        checked += 1;
+      }
+    }
+    // Every Section C question of every indexed Technology paper: 2010-2026,
+    // Higher and Ordinary, English and Irish editions, 5 options each
+    // (16 x 4 x 5 = 320), and 2020's single Higher sitting (2 x 5 = 10).
+    expect(checked).toBe(330);
+  });
+
   it('ships a finite paper crop and honest scheme boundary for all 1,356 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'technology');
     let schemeMaps = 0;

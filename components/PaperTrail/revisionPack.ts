@@ -11,6 +11,7 @@
  */
 
 import { type TopicSibling } from './topics';
+import { sittingLabel } from './sitting';
 
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 const paperAbbr = (k: string) => (k === 'p1' ? 'Paper 1' : k === 'p2' ? 'Paper 2' : '');
@@ -37,7 +38,7 @@ export function buildPackHtml(o: PackOptions): string {
   const years = new Set(o.questions.map(q => q.year));
   const rows = o.questions
     .map(q => {
-      const bits = [LVL[q.level] ?? q.level, paperAbbr(q.paperKey), q.lang === 'iv' ? 'Gaeilge' : ''].filter(Boolean);
+      const bits = [LVL[q.level] ?? q.level, sittingLabel(q.fileid), paperAbbr(q.paperKey), q.lang === 'iv' ? 'Gaeilge' : ''].filter(Boolean);
       return `      <tr><td class="yr">${q.year}</td><td>${esc(bits.join(' · '))}</td><td>Question ${esc(q.n)}</td><td class="chk"></td></tr>`;
     })
     .join('\n');

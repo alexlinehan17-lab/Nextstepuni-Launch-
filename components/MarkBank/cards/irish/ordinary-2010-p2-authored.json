@@ -1,0 +1,2844 @@
+{
+  "review": {
+    "year": 2010,
+    "level": "ordinary",
+    "paperFileid": "LC001GLP200IV.pdf",
+    "schemeFileid": "LC001GLP000EV.pdf",
+    "paperSha256": "101e8324e9c748700c8ec041aef9b647e7c25c15187b9c70e34a525c1644efd2",
+    "schemeSha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reviewedSchemePages": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "schemeScope": "Combined Ordinary scheme (12 pages; the file is named LC001GLP000EV, its text is the Irish scheme). PDF 1–4 belong to Páipéar I; 5 Páipéar II intro and Roinn A Ceist 1 Prós Ainmnithe (a) (the three prescribed works, each (i) and (ii) restated with prices, (ii) split “3 + 3 = 6 marc” and “Dhá fháth = 2 mharc × 2 = 4 marc” (An Bhean Óg “= 4 marc”) either side of “= 10 marc”; no language deduction printed); 6 (b) (i) “= 20 marc” and (ii) “(10 marc × 2) = 20 marc”, the 0–3 deduction and the examiner’s Nóta, then Ceist 2 Filíocht Ainmnithe (a) Jack and Faoiseamh a Gheobhadsa (each (i)–(iv) restated with prices, (iv) “2 marc” + “4 marc × 2 = 8 marc”); 7 the 0–5 deduction, (b) on Gealt? “2 + 9 + 9 = 20marc” and “7 + 7 =14 marc” + “Íomhá … = 6 marc”, the 0 - 3 deduction and the Nóta, then Roinn B Ceist 1 Prós Roghnach (a), the folk tale; 8 the short story, (b) (i) “9 + 9 = 18 marc” and (ii) “= 9 marc × 2 = 18 marc” + title 2, the 0–3 deduction and the Nóta, then Ceist 2 Filíocht Roghnach (a) first option; 9 the second option, the 0–5 deduction, (b) (i) “(9 + 9) = 18 marc” and (ii) “= 12 marc” + “= 6 marc”, each + title 2, the 0 - 3 deduction and the Nóta. 10 the listening test; 11 Socruithe Réasúnta; 12 empty.",
+    "reviewDate": "2026-11-05",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 1,
+        "raw": "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "decision": "Paper structure: one whole question ((a) and (b), both answered) in prose and one in poetry; every printed question of either course is its own card carrying this instruction."
+      },
+      {
+        "page": 1,
+        "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "decision": "Choice is not a route: prose is the prescribed course (Roinn A Ceist 1) or the optional course (Roinn B Ceist 1); every printed question of both is its own card carrying this instruction."
+      },
+      {
+        "page": 1,
+        "raw": "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "decision": "Choice is not a route: poetry is the prescribed course (Roinn A Ceist 2) or the optional course (Roinn B Ceist 2); every printed question of both is its own card carrying this instruction."
+      },
+      {
+        "page": 2,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Prós Ainmnithe: both (a) and (b) are answered; not a selection between them."
+      },
+      {
+        "page": 2,
+        "raw": "Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh",
+        "decision": "Prós Ainmnithe (b)(i): the candidate chooses one of the other prescribed works (open content inside one card); the slash names alternative texts of the course."
+      },
+      {
+        "page": 2,
+        "raw": "Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh.",
+        "decision": "Prós Ainmnithe (b)(ii): the same choice of work, inside one card."
+      },
+      {
+        "page": 2,
+        "raw": "NÓ",
+        "decision": "The “NÓ” between the three prescribed works of (a) and between (b)(i) and (b)(ii): each printed option is its own card (different works; (b) priced differently)."
+      },
+      {
+        "page": 2,
+        "raw": "Tabhair cuntas gairid ar dhá rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat.",
+        "decision": "Prós Ainmnithe (b)(ii): two required answers (one liked, one not), priced 10 × 2; not a menu."
+      },
+      {
+        "page": 2,
+        "raw": "a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann. Tabhair cuntas gairid ar a bhfuil",
+        "decision": "Prós Ainmnithe (b)(i): one theme from the printed list, inside one card."
+      },
+      {
+        "page": 2,
+        "raw": "ar thaitin (nó nár thaitin) sé leat. (Is leor dhá fháth.)",
+        "decision": "Prós Ainmnithe (a)(ii), An Cearrbhach Mac Cába: liked or not, two reasons suffice; not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "cén fáth ar thaitin (nó nár thaitin) sé leat.",
+        "decision": "Prós Ainmnithe (a)(ii), Coileach Ghleann Phádraig: liked or not; not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "fáth ar thaitin (nó nár thaitin) sé leat.",
+        "decision": "Prós Ainmnithe (a)(ii), An Bhean Óg: liked or not; not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "greann grá (nó fuath) an óige (nó an tseanaois)",
+        "decision": "Prós Ainmnithe (b)(i): the printed theme list (first row); one theme is chosen inside one card."
+      },
+      {
+        "page": 2,
+        "raw": "sa saothar faoin téama atá roghnaithe agat.",
+        "decision": "Prós Ainmnithe (b)(i): the account of the chosen theme; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Filíocht Ainmnithe (a)(iv), Faoiseamh a Gheobhadsa: two reasons suffice; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Filíocht Ainmnithe (a)(iv), Jack: two reasons suffice; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Dob é an samhradh so mo rogha ’pháirtí é.",
+        "decision": "Poem text (Jack); not an instruction."
+      },
+      {
+        "page": 3,
+        "raw": "Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán.",
+        "decision": "Filíocht Ainmnithe (a)(ii), Faoiseamh a Gheobhadsa: describe the two emotions named; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Filíocht Ainmnithe: both (a) and (b) are answered; not a selection between them."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh dhá mhothúchán atá sa dán.",
+        "decision": "Filíocht Ainmnithe (a)(ii), Faoiseamh a Gheobhadsa: two required answers inside one 8-mark sub-question; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin",
+        "decision": "Filíocht Ainmnithe (a)(ii), Jack: two required answers inside one 8-mark sub-question; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine.",
+        "decision": "Filíocht Ainmnithe (a)(iii), Faoiseamh a Gheobhadsa: three required answers inside one 9-mark sub-question; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "NÓ",
+        "decision": "The “NÓ” between the two prescribed poems of (a): each poem is its own card."
+      },
+      {
+        "page": 3,
+        "raw": "ar an dá íomhá sin sa dán.",
+        "decision": "Filíocht Ainmnithe (a)(ii), Jack: the two images named; not a selection."
+      },
+      {
+        "page": 4,
+        "raw": "Maidir leis an dán Gealt? (thíos), roghnaigh mothúchán amháin as an liosta seo a leanas agus",
+        "decision": "Filíocht Ainmnithe (b)(i): one emotion from the printed list, inside one card."
+      },
+      {
+        "page": 4,
+        "raw": "NÓ",
+        "decision": "The “NÓ” between (b)(i) and (b)(ii) on Gealt?: priced differently (2 + 9 + 9; 7 + 7 + 6), a card each."
+      },
+      {
+        "page": 4,
+        "raw": "agus ar íomhá (pictiúr) amháin sa dán sin a thaitin (nó nár thaitin) leat.",
+        "decision": "Filíocht Ainmnithe (b)(ii): one image, liked or not; not a menu."
+      },
+      {
+        "page": 4,
+        "raw": "an raibh an ghealt i mbaol nó tré thine nó in airde ar chrann",
+        "decision": "Poem text (Gealt?); not an instruction."
+      },
+      {
+        "page": 4,
+        "raw": "tabhair cuntas gairid ar a bhfuil sa dán faoin mothúchán atá roghnaithe agat.",
+        "decision": "Filíocht Ainmnithe (b)(i): the account of the chosen emotion; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "(nó nár thaitin) sé leat. Is leor dhá fháth.",
+        "decision": "Prós Roghnach (a)(ii), short story: liked or not, two reasons suffice; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "Déan cur síos gairid ar charachtar amháin sa ghearrscéal sin agus inis cén fáth ar thaitin",
+        "decision": "Prós Roghnach (a)(ii), short story: one character; not a menu."
+      },
+      {
+        "page": 5,
+        "raw": "Déan cur síos gairid ar ghné amháin den scéal sin agus inis cén fáth ar thaitin (nó",
+        "decision": "Prós Roghnach (a)(ii), folk tale: one feature of the tale; not a menu."
+      },
+      {
+        "page": 5,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Prós Roghnach: both (a) and (b) are answered; not a selection between them."
+      },
+      {
+        "page": 5,
+        "raw": "NÓ",
+        "decision": "The “NÓ” between the folk tale and the short story of (a) (priced differently: a card each) and between (b)(i) and (b)(ii) (marked alike: one card)."
+      },
+      {
+        "page": 5,
+        "raw": "an óige (nó an tseanaois)",
+        "decision": "Prós Roghnach (b)(i): one entry of the printed theme list; one theme is chosen inside one card."
+      },
+      {
+        "page": 5,
+        "raw": "ar dhuine amháin de na carachtair ann.",
+        "decision": "Prós Roghnach (a)(i), folk tale: one character; not a menu."
+      },
+      {
+        "page": 5,
+        "raw": "atá roghnaithe agat.",
+        "decision": "Prós Roghnach (b)(i): the account of the chosen theme; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "grá (nó fuath)",
+        "decision": "Prós Roghnach (b)(i): one entry of the printed theme list; one theme is chosen inside one card."
+      },
+      {
+        "page": 5,
+        "raw": "nár thaitin) sí leat. Is leor dhá fháth.",
+        "decision": "Prós Roghnach (a)(ii), folk tale: liked or not, two reasons suffice; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat.",
+        "decision": "Prós Roghnach (b)(ii): two required answers (one liked, one not), priced 9 × 2; not a menu."
+      },
+      {
+        "page": 5,
+        "raw": "tú i gcuid (a) thuas, roghnaigh saothar amháin díobh a bhfuil ceann amháin de na",
+        "decision": "Prós Roghnach (b)(i): one other work, not used in (a), with one theme; open content inside one card."
+      },
+      {
+        "page": 5,
+        "raw": "tú i gcuid (a) thuas, roghnaigh saothar amháin díobh. Tabhair cuntas gairid ar dhá",
+        "decision": "Prós Roghnach (b)(ii): one other work, not used in (a); open content inside one card."
+      },
+      {
+        "page": 5,
+        "raw": "– CÚRSA ROGHNACH –",
+        "decision": "Section heading of Roinn B, the optional course; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "– PRÓS ROGHNACH –",
+        "decision": "Question heading of Roinn B Ceist 1; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "An dóigh leat go bhfuil teideal an dáin seo oiriúnach? Cuir fáth amháin le do fhreagra. (8 marc)",
+        "decision": "Filíocht Roghnach (a)(iii), first option: one reason; not a menu."
+      },
+      {
+        "page": 6,
+        "raw": "Ar thaitin an dán leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+        "decision": "Filíocht Roghnach (a)(iv), first option: two reasons suffice; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Filíocht Roghnach (a)(iv), second option: two reasons suffice; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+        "decision": "Question heading of Roinn B Ceist 2; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "Freagair (a) agus (b) anseo.",
+        "decision": "Filíocht Roghnach: both (a) and (b) are answered; not a selection between them."
+      },
+      {
+        "page": 6,
+        "raw": "Maidir le dán nua-aimseartha amháin a chum bean agus a ndearna tú staidéar air",
+        "decision": "Filíocht Roghnach (a), first option: one modern poem by a woman (open content inside one card)."
+      },
+      {
+        "page": 6,
+        "raw": "Maidir le dán nua-aimseartha amháin a chum fear nó bean agus a ndearna tú staidéar",
+        "decision": "Filíocht Roghnach (a), second option: one modern poem by a man or a woman (open content inside one card); the two options are priced differently, a card each."
+      },
+      {
+        "page": 6,
+        "raw": "NÓ",
+        "decision": "The “NÓ” between the two options of (a) and between (b)(i) and (b)(ii): priced differently, a card each."
+      },
+      {
+        "page": 6,
+        "raw": "Roghnaigh dhá íomhá (pictiúr) a úsáideann an file sa dán seo agus déan cur síos orthu",
+        "decision": "Filíocht Roghnach (a)(ii), first option: two required images, priced 4 × 2; not a menu."
+      },
+      {
+        "page": 6,
+        "raw": "Scríobh nóta gairid faoi rud amháin sa dán a bhí suimiúil, dar leat.",
+        "decision": "Filíocht Roghnach (a)(iii), second option: one thing; not a menu."
+      },
+      {
+        "page": 6,
+        "raw": "ar cheann amháin de na mothúcháin seo a leanas mar a léirítear é sa dán a roghnaigh tú.",
+        "decision": "Filíocht Roghnach (b)(i): one emotion from the printed list, inside one card."
+      },
+      {
+        "page": 6,
+        "raw": "fhreagra. (Is leor dhá fháth.)",
+        "decision": "Filíocht Roghnach (a)(i), second option: two reasons suffice; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid",
+        "decision": "Filíocht Roghnach (b)(i): one other poem by a woman, not used in (a); open content inside one card."
+      },
+      {
+        "page": 6,
+        "raw": "i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid ar",
+        "decision": "Filíocht Roghnach (b)(ii): one other poem by a woman, not used in (a); open content inside one card."
+      },
+      {
+        "page": 6,
+        "raw": "phríomhsmaointe an dáin sin agus ar íomhá (pictiúr) sa dán a thaitin (nó nár thaitin) leat.",
+        "decision": "Filíocht Roghnach (b)(ii): the main ideas and one image, liked or not; not a menu."
+      }
+    ],
+    "practiceCardIds": [
+      "irish-2010-ol-p2-prose-ainmnithe-a-1-i",
+      "irish-2010-ol-p2-prose-ainmnithe-a-1-ii",
+      "irish-2010-ol-p2-prose-ainmnithe-a-2-i",
+      "irish-2010-ol-p2-prose-ainmnithe-a-2-ii",
+      "irish-2010-ol-p2-prose-ainmnithe-a-3-i",
+      "irish-2010-ol-p2-prose-ainmnithe-a-3-ii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-1-i",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-1-ii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-1-iii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-1-iv",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-2-i",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-2-ii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-2-iii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-2-iv"
+    ],
+    "questionCardIds": [
+      "irish-2010-ol-p2-prose-ainmnithe-a-1",
+      "irish-2010-ol-p2-prose-ainmnithe-a-2",
+      "irish-2010-ol-p2-prose-ainmnithe-a-3",
+      "irish-2010-ol-p2-prose-ainmnithe-b-i",
+      "irish-2010-ol-p2-prose-ainmnithe-b-ii",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-1",
+      "irish-2010-ol-p2-poetry-ainmnithe-a-2",
+      "irish-2010-ol-p2-poetry-ainmnithe-b-i",
+      "irish-2010-ol-p2-poetry-ainmnithe-b-ii",
+      "irish-2010-ol-p2-prose-roghnach-a-1",
+      "irish-2010-ol-p2-prose-roghnach-a-2",
+      "irish-2010-ol-p2-prose-roghnach-b",
+      "irish-2010-ol-p2-poetry-roghnach-a-1",
+      "irish-2010-ol-p2-poetry-roghnach-a-2",
+      "irish-2010-ol-p2-poetry-roghnach-b-i",
+      "irish-2010-ol-p2-poetry-roghnach-b-ii"
+    ],
+    "readingWholeCardIds": [],
+    "examStructure": {
+      "prose": 55,
+      "poetry": 55,
+      "total": 110
+    },
+    "nonPoolDecisions": [
+      "Páipéar II (110) before 2012 is literature only: one whole question in prose and one in poetry, each from the prescribed course (Roinn A) or the optional course (Roinn B); each question is 55 = (a) 35 + (b) 20, both answered. Choice is not a route; no combination cards.",
+      "The scheme prints no answers: every ask restated with its price, and some prices split. Every award criterion is the restatement claimed at its printed price (or the totals its printed parts make), marked tariffOnly; each card says “The scheme prints no answer for this part.”",
+      "Language: one deduction per part where the scheme prints one (0–5 under Filíocht Ainmnithe (a) and Filíocht Roghnach (a); 0–3 under each (b)). The scheme prints none under Prós Ainmnithe (a) or Prós Roghnach (a) (its Nóta names an (a) deduction but prints no range): those cards carry no deduction criterion, and their note says so.",
+      "Cards: Prós Ainmnithe (a) a card per prescribed work (three), (b)(i) and (b)(ii) a card each (20 whole; 10 × 2); Filíocht Ainmnithe (a) a card per poem (two), (b)(i) and (b)(ii) a card each; Prós Roghnach (a) the folk tale and the short story a card each (priced differently), (b) one card carrying (i) and (ii) (9 + 9 and 9 × 2, marked alike); Filíocht Roghnach (a) a card per option (priced differently), (b)(i) and (b)(ii) a card each; and a practice card for every prescribed-course (a) sub-question (14)."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Páipéar II = 110: prose 55 (Roinn A Ceist 1 or Roinn B Ceist 1) and poetry 55 (Roinn A Ceist 2 or Roinn B Ceist 2); each (a) 35 + (b) 20.",
+      "Prós Roghnach (a), short story: the scheme restates (i) as “Cuntas ar an mothúchán is láidre sa ghearrscéal = 23 marc” where the paper asks “tabhair cuntas ar na príomhimeachtaí (rudaí) a tharla sa ghearrscéal sin”. Kept as printed; the card carries a source note.",
+      "Filíocht Roghnach (a), second option: the scheme numbers the title question “(iv)” (it is the paper’s (ii)) and prices “Teideal an dáin oiriúnach? = 4 marc” + “Fáth amháin le do fhreagra = 4 marc”, where the paper asks only whether the title suits (8). The criterion carries the scheme’s prices without its misprinted number; the card carries a source note.",
+      "An Bhean Óg (a)(ii): the scheme prices the reasons “Fáth ar/nár thaitin sé leat. = 4 marc” whole, where the other two works print “Dhá fháth = 2 marc × 2”.",
+      "No language deduction is printed under Prós Ainmnithe (a) or Prós Roghnach (a) (PDF 5, 7–8); the Nóta after each prose question names the (a) deduction without a range.",
+      "Scheme misprints kept as printed: “Fáth ar/nár thaitin ?”, “ghearrrscéil”, “20marc”, “=14 marc”, “Pearsa a thaitin(nó nár thaitin)leat”.",
+      "Paper and scheme differ in wording, each kept as printed: Faoiseamh a Gheobhadsa (iv) “An maith leat an dán seo?” (the scheme: “Ar thaitin an dán leat?”)."
+    ],
+    "choicePolicy": "Choice is not a route: prose and poetry are each the prescribed or the optional course, and each question prints (a) and (b), both answered; every printed option is one card unless the scheme marks the options alike (Prós Roghnach (b)), where one card carries both; no combination cards.",
+    "boundaries": "16 question cards (Prós Ainmnithe (a) x3, (b) x2; Filíocht Ainmnithe (a) x2, (b) x2; Prós Roghnach (a) x2, (b); Filíocht Roghnach (a) x2, (b) x2) and 14 practice cards (every prescribed-course (a) sub-question)."
+  },
+  "cards": [
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-1",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Cearrbhach Mac Cába",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “Ansin chuaigh an Cearrbhach chuig an Bhás agus dúirt leis go bhfuair sé achainí mhaith an iarraidh seo. ‘Cad é an achainí í?’ arsa an Bás. ‘Chan insím sin do dhuine ar bith,’ arsa an Cearrbhach.” (An Cearrbhach Mac Cába)\nTabhair cuntas ar ar tharla don Chearrbhach ina dhiaidh sin go dtí go ndeachaigh sé go hIfreann. (25 mharc)\n(ii) Cén sórt duine é Dia sa scéal seo, dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Ón am a bhfuair an Cearrbhach an achainí nó go ndeachaigh sé go hIfreann.",
+            "= 25 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é Dia, dar leat. Cur síos gairid air 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin?",
+            "Dhá fháth = 2 mharc × 2 = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 25 and (ii) 10 (the character 3 + 3 and two reasons 2 × 2). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Cearrbhach Mac Cába",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-1-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-1-i",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Cearrbhach Mac Cába · (i)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “Ansin chuaigh an Cearrbhach chuig an Bhás agus dúirt leis go bhfuair sé achainí mhaith an iarraidh seo. ‘Cad é an achainí í?’ arsa an Bás. ‘Chan insím sin do dhuine ar bith,’ arsa an Cearrbhach.” (An Cearrbhach Mac Cába)\nTabhair cuntas ar ar tharla don Chearrbhach ina dhiaidh sin go dtí go ndeachaigh sé go hIfreann. (25 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-1-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Ón am a bhfuair an Cearrbhach an achainí nó go ndeachaigh sé go hIfreann.",
+            "= 25 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (25). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Cearrbhach Mac Cába",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-1-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-1-ii",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Cearrbhach Mac Cába · (ii)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(ii) Cén sórt duine é Dia sa scéal seo, dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 10,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-1-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é Dia, dar leat. Cur síos gairid air 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin?",
+            "Dhá fháth = 2 mharc × 2 = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (10). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Cearrbhach Mac Cába",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-2",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Bhean Óg",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “Máthair mhaith agus bean chéile mhaith í an bhean sa ghearrscéal An Bhean Óg.” Do thuairim uait faoi sin. (25 mharc)\n(ii) Cén sórt duine é an fear céile sa scéal dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cur síos ar an mbean óg: máthair mhaith agus céile maith.",
+            "= 25 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            3,
+            4,
+            6,
+            7,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é an fear sa scéal. Cur síos gairid air. 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin sé leat. = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 25 and (ii) 10 (the character 3 + 3 and the reasons 4). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Bhean Óg",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-2-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-2-i",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Bhean Óg · (i)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “Máthair mhaith agus bean chéile mhaith í an bhean sa ghearrscéal An Bhean Óg.” Do thuairim uait faoi sin. (25 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-2-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cur síos ar an mbean óg: máthair mhaith agus céile maith.",
+            "= 25 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (25). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Bhean Óg",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-2-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-2-ii",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · An Bhean Óg · (ii)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(ii) Cén sórt duine é an fear céile sa scéal dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (10 marc)",
+      "totalMarks": 10,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-2-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            3,
+            4,
+            6,
+            7,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é an fear sa scéal. Cur síos gairid air. 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin sé leat. = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (10). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Bhean Óg",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-3",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-3",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · Coileach Ghleann Phádraig",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “ ‘Agus conas tá coileach Sally Tom?’ a d’fhiafraigh fear an bheáir. Tháinig cuma dhuairc ar aghaidh an Choilichín. ‘Faraor,’ ar seisean, ‘ní dócha go mbuafaidh sé bonn ar bith eile mura n-éireoidh leis an vet tarrtháil a dhéanamh air.’ ” (Coileach Ghleann Phádraig)\nTabhair cuntas ar ar tharla nuair a thug an tréidlia agus Jim cuairt ar Ghleann Phádraig. (25 mharc)\n(ii) Cén sórt duine é an Coilichín sa scéal seo, dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-3",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas ar ar tharla nuair a thug an tréidlia agus Jim cuairt ar Ghleann Phádraig.",
+            "= 25 mharc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é an Coilichín, dar leat. Cur síos gairid air 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin ?",
+            "Dhá fháth = 2 marc × 2 = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 25 and (ii) 10 (the character 3 + 3 and two reasons 2 × 2). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Coileach Ghleann Phádraig",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-3-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-3-i",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · Coileach Ghleann Phádraig · (i)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(i) “ ‘Agus conas tá coileach Sally Tom?’ a d’fhiafraigh fear an bheáir. Tháinig cuma dhuairc ar aghaidh an Choilichín. ‘Faraor,’ ar seisean, ‘ní dócha go mbuafaidh sé bonn ar bith eile mura n-éireoidh leis an vet tarrtháil a dhéanamh air.’ ” (Coileach Ghleann Phádraig)\nTabhair cuntas ar ar tharla nuair a thug an tréidlia agus Jim cuairt ar Ghleann Phádraig. (25 mharc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-3-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas ar ar tharla nuair a thug an tréidlia agus Jim cuairt ar Ghleann Phádraig.",
+            "= 25 mharc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (25). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Coileach Ghleann Phádraig",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-a-3-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-a-3-ii",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (a) · Coileach Ghleann Phádraig · (ii)",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(a)\n(ii) Cén sórt duine é an Coilichín sa scéal seo, dar leat? Déan cur síos gairid air agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. (10 marc)",
+      "totalMarks": 10,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-a-3-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 5,
+      "schemePages": [
+        5
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An sórt duine é an Coilichín, dar leat. Cur síos gairid air 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin ?",
+            "Dhá fháth = 2 marc × 2 = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (10). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Coileach Ghleann Phádraig",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-b-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-b-i",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (b)(i) · Téama",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(b)\n(i) Maidir leis na saothair eile a ndearna tú staidéar orthu le linn do chúrsa – Fiche Blian ag Fás, Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann.\nTabhair cuntas gairid ar a bhfuil sa saothar faoin téama atá roghnaithe agat.\ngreann\ngrá (nó fuath)\nan óige (nó an tseanaois)\naiféala\nsaol na hollscoile\nsaol na tuaithe (20 marc)",
+      "totalMarks": 20,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-b-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            20
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cuntas gairid ar a bhfuil i gceann amháin de na saothair a luadh faoin téama atá roghnaithe agat as na téamaí atá luaite. = 20 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Prós Ainmnithe (b)(i)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-ainmnithe-b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-A-b-ii",
+      "questionRef": "2010 OL Paper 2 Prós Ainmnithe (b)(ii) · Dhá rud",
+      "stem": "ROINN A – CÚRSA AINMNITHE –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS AINMNITHE – [55 mharc]",
+      "questionText": "(b)\n(ii) Maidir leis na saothair eile a ndearna tú staidéar orthu le linn do chúrsa – Fiche Blian ag Fás, Lá Buí Bealtaine / Clare sa Spéir agus Lig Sinn i gCathú – roghnaigh saothar amháin díobh. Tabhair cuntas gairid ar dhá rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat. (20 marc)",
+      "totalMarks": 20,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-ainmnithe-b-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 2,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        2
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            10,
+            20
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cuntas gairid ar dhá rud i gceann amháin de na saothair a luadh, Rud amháin a thaitin leat agus rud amháin nár thaitin leat. (10 marc × 2) = 20 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Prós Ainmnithe (b)(ii)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-1",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Jack",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Jack\n(i) (a) Conas atá a fhios agat nach raibh Jack beag? (Jack thíos).\n(b) Cén post a bhí ag athair Jack?\n(c) Conas atá a fhios agat nár thit Jack i ngrá leis an bhfile an oíche sin?\n(d) Cén saghas urláir a bhí fúthu nuair a bhí siad ag rince? (8 marc)\n(ii) Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá sin sa dán. (8 marc)\n(iii) (a) Conas a léirítear sa dán go mbeidh a athair fial le Jack?\n(b) Conas a léirítear sa dán go dtitfidh Jack i ngrá le bean eile?\n(c) Conas a léirítear sa dán gurbh fhearr leis an bhfile Jack ná fear ar bith eile an samhradh sin? (9 marc)\n(iv) Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Conas atá a fhios agat nach raibh Jack beag? (Jack). (b) Cén post a bhí ag athair Jack? (c) Conas atá a fhios agat nár thit Jack i ngrá leis an bhfile an oíche sin? (d) Cén saghas urláir a bhí fúthu nuair a bhí siad ag rince? = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá sin sa dán. = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) (a) Conas a léirítear sa dán go mbeidh a athair fial le Jack? (b) Conas a léirítear sa dán go dtitfidh Jack i ngrá le bean eile? (c) Conas a léirítear sa dán gurbh fhearr leis an bhfile Jack ná fear ar bith eile an samhradh sin? = 9 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iv",
+          "label": "(iv) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 2 marc",
+            "Dhá fháth. = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 5 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 8, (ii) 8, (iii) 9, (iv) 10, then the 0–5 Gaeilge deduction once. The four questions of (i) and the three of (iii) are priced together. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Jack",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-1-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-1-i",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Jack · (i)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Jack\n(i) (a) Conas atá a fhios agat nach raibh Jack beag? (Jack thíos).\n(b) Cén post a bhí ag athair Jack?\n(c) Conas atá a fhios agat nár thit Jack i ngrá leis an bhfile an oíche sin?\n(d) Cén saghas urláir a bhí fúthu nuair a bhí siad ag rince? (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-1-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Conas atá a fhios agat nach raibh Jack beag? (Jack). (b) Cén post a bhí ag athair Jack? (c) Conas atá a fhios agat nár thit Jack i ngrá leis an bhfile an oíche sin? (d) Cén saghas urláir a bhí fúthu nuair a bhí siad ag rince? = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (8). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Jack",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-1-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-1-ii",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Jack · (ii)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Jack\n(ii) Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá sin sa dán. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-1-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Luaigh dhá íomhá (pictiúr) atá sa dán. Déan cur síos i d’fhocail féin ar an dá íomhá sin sa dán. = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (8). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Jack",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-1-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-1-iii",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Jack · (iii)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Jack\n(iii) (a) Conas a léirítear sa dán go mbeidh a athair fial le Jack?\n(b) Conas a léirítear sa dán go dtitfidh Jack i ngrá le bean eile?\n(c) Conas a léirítear sa dán gurbh fhearr leis an bhfile Jack ná fear ar bith eile an samhradh sin? (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-1-iii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) (a) Conas a léirítear sa dán go mbeidh a athair fial le Jack? (b) Conas a léirítear sa dán go dtitfidh Jack i ngrá le bean eile? (c) Conas a léirítear sa dán gurbh fhearr leis an bhfile Jack ná fear ar bith eile an samhradh sin? = 9 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (9). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Jack",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-1-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-1-iv",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Jack · (iv)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Jack\n(iv) Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 10,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-1-iv",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 2 marc",
+            "Dhá fháth. = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (10). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Jack",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-2",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Faoiseamh a Gheobhadsa",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Faoiseamh a Gheobhadsa\n(i) (a) Cad a gheobhaidh an file nuair a bheidh sé i measc a dhaoine? (Faoiseamh a Gheobhadsa thíos)\n(b) Cá bhfuil cónaí ar a dhaoine?\n(c) Cad a dhéanfaidh sé gach maidin is tráthnóna?\n(d) Cá fhad a bheidh sé ar an oileán? (8 marc)\n(ii) Luaigh dhá mhothúchán atá sa dán.\nDéan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. (8 marc)\n(iii) Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine. (9 marc)\n(iv) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6,
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Cad a gheobhaidh an file nuair a bheidh sé i measc a dhaoine? (Faoiseamh a Gheobhadsa) (b) Cá bhfuil cónaí ar a dhaoine? (c) Cad a dhéanfaidh sé gach maidin is tráthnóna? (d) Cá fhad a bheidh sé ar an oileán? = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Luaigh dhá mhothúchán atá sa dán. Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine. = 9 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iv",
+          "label": "(iv) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 2 marc",
+            "Dhá fháth = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 5 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 8, (ii) 8, (iii) 9, (iv) 10, then the 0–5 Gaeilge deduction once. The four questions of (i) and the three of (iii) are priced together. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Faoiseamh a Gheobhadsa",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-2-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-2-i",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Faoiseamh a Gheobhadsa · (i)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Faoiseamh a Gheobhadsa\n(i) (a) Cad a gheobhaidh an file nuair a bheidh sé i measc a dhaoine? (Faoiseamh a Gheobhadsa thíos)\n(b) Cá bhfuil cónaí ar a dhaoine?\n(c) Cad a dhéanfaidh sé gach maidin is tráthnóna?\n(d) Cá fhad a bheidh sé ar an oileán? (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-2-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6,
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) (a) Cad a gheobhaidh an file nuair a bheidh sé i measc a dhaoine? (Faoiseamh a Gheobhadsa) (b) Cá bhfuil cónaí ar a dhaoine? (c) Cad a dhéanfaidh sé gach maidin is tráthnóna? (d) Cá fhad a bheidh sé ar an oileán? = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (8). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Faoiseamh a Gheobhadsa",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-2-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-2-ii",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Faoiseamh a Gheobhadsa · (ii)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Faoiseamh a Gheobhadsa\n(ii) Luaigh dhá mhothúchán atá sa dán.\nDéan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-2-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6,
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Luaigh dhá mhothúchán atá sa dán. Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (8). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Faoiseamh a Gheobhadsa",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-2-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-2-iii",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Faoiseamh a Gheobhadsa · (iii)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Faoiseamh a Gheobhadsa\n(iii) Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine. (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-2-iii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6,
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Luaigh trí rud a bhfaighidh sé faoiseamh uathu nuair a bheidh sé lena dhaoine. = 9 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (9). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Faoiseamh a Gheobhadsa",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-a-2-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-a-2-iv",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (a) · Faoiseamh a Gheobhadsa · (iv)",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(a) Faoiseamh a Gheobhadsa\n(iv) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (10 marc)",
+      "totalMarks": 10,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-a-2-iv",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 6,
+      "schemePages": [
+        6,
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 2 marc",
+            "Dhá fháth = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff (10). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The 0–5 Gaeilge deduction applies once to the whole 35-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Faoiseamh a Gheobhadsa",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-b-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-b-i",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (b)(i) · Gealt? · Mothúchán",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(b)\n(i) Maidir leis an dán Gealt? (thíos), roghnaigh mothúchán amháin as an liosta seo a leanas agus tabhair cuntas gairid ar a bhfuil sa dán faoin mothúchán atá roghnaithe agat.\neagla\nfearg\nionadh\náthas\nfaoiseamh\nimní (20 marc)",
+      "totalMarks": 20,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-b-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 7,
+      "schemePages": [
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            2,
+            11,
+            20
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cuntas gairid ar a bhfuil sa dán, Gealt? faoin mothúchán atá roghnaithe agat as na mothúcháin atá luaite. 2 + 9 + 9 = 20marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 - 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Gealt?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-ainmnithe-b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-A-b-ii",
+      "questionRef": "2010 OL Paper 2 Filíocht Ainmnithe (b)(ii) · Gealt? · Príomhsmaointe agus íomhá",
+      "stem": "CEIST 2 – FILÍOCHT AINMNITHE – [55 mharc]",
+      "questionText": "(b)\n(ii) Maidir leis an dán Gealt? (thíos), tabhair cuntas gairid ar phríomhsmaointe an dáin agus ar íomhá (pictiúr) amháin sa dán sin a thaitin (nó nár thaitin) leat. (20 marc)",
+      "totalMarks": 20,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-ainmnithe-b-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 7,
+      "schemePages": [
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            6,
+            7,
+            13,
+            14,
+            20
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cuntas gairid ar phríomhsmaointe an dáin, Gealt? 7 + 7 =14 marc",
+            "Íomhá a thaitin leat (nó nár thaitin leat) = 6 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 - 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Gealt?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-roghnach-a-1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-B-a-1",
+      "questionRef": "2010 OL Paper 2 Prós Roghnach (a) · Scéal béaloidis",
+      "stem": "ROINN B – CÚRSA ROGHNACH –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS ROGHNACH – [55 mharc]",
+      "questionText": "(a)\n(i) Maidir le scéal béaloidis a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar dhuine amháin de na carachtair ann. (23 mharc)\nNí mór teideal an scéil sin a scríobh síos go soiléir. (2 mharc)\n(ii) Déan cur síos gairid ar ghné amháin den scéal sin agus inis cén fáth ar thaitin (nó nár thaitin) sí leat. Is leor dhá fháth. (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-roghnach-a-1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 5,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 7,
+      "schemePages": [
+        7
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        5
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 23,
+          "permittedMarks": [
+            0,
+            23
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas ar dhuine de na carachtair sa sliocht",
+            "= 23 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal an scéil",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an scéil = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) An Ghné den scéal is mó a thaitin leat. Cur síos gairid 3 + 3 = 6 marc",
+            "Fáth ar/nár thaitin sí leat 2 + 2 = 4 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 23, the title 2, (ii) 10 (the feature 3 + 3 and the reasons 2 + 2). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The text is open content chosen by the candidate. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Roghnach",
+        "title": "Scéal béaloidis",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-roghnach-a-2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-B-a-2",
+      "questionRef": "2010 OL Paper 2 Prós Roghnach (a) · Gearrscéal",
+      "stem": "ROINN B – CÚRSA ROGHNACH –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS ROGHNACH – [55 mharc]",
+      "questionText": "(a)\n(i) Maidir le gearrscéal a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (rudaí) a tharla sa ghearrscéal sin. (23 mharc)\nNí mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go soiléir. (2 mharc)\n(ii) Déan cur síos gairid ar charachtar amháin sa ghearrscéal sin agus inis cén fáth ar thaitin (nó nár thaitin) sé leat. Is leor dhá fháth. (10 marc)",
+      "totalMarks": 35,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-roghnach-a-2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 5,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 8,
+      "schemePages": [
+        8
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        5
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 23,
+          "permittedMarks": [
+            0,
+            23
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas ar an mothúchán is láidre sa ghearrscéal = 23 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an údair",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an ghearrrscéil/ ainm an údair. = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            5,
+            10
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Pearsa a thaitin(nó nár thaitin)leat. Dhá fháth ar/nár thaitin sé leat. 5 + 5 = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 23, the title and writer 2, (ii) 10 (5 + 5). The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The text is open content chosen by the candidate. The scheme prints no language deduction under this (a): its Nóta after the question names one for (a) but prints no range, so none is shown.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Roghnach",
+        "title": "Gearrscéal",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "sourceDiscrepancyNotice": "Source note: the scheme restates (i) as “Cuntas ar an mothúchán is láidre sa ghearrscéal” (an account of the strongest emotion in the short story) where the paper asks for the main events of the short story; the price (23) is the same. The criterion carries the scheme’s words. See both sources."
+    },
+    {
+      "id": "irish-2010-ol-p2-prose-roghnach-b",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-B-b",
+      "questionRef": "2010 OL Paper 2 Prós Roghnach (b) · Téama nó dhá rud",
+      "stem": "ROINN B – CÚRSA ROGHNACH –\nChun an chuid seo a fhreagairt féach ar na treoracha atá ar leathanach 1.\nCEIST 1 – PRÓS ROGHNACH – [55 mharc]",
+      "questionText": "(b)\n(i) Maidir leis na saothair eile a ndearna tú staidéar orthu le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, roghnaigh saothar amháin díobh a bhfuil ceann amháin de na téamaí seo a leanas i gceist ann.\nTabhair cuntas gairid ar a bhfuil sa saothar faoin téama atá roghnaithe agat.\ngreann\ngrá (nó fuath)\nan óige (nó an tseanaois)\naiféala\nsaol na hollscoile\nsaol na tuaithe (18 marc)\nNí mór teideal an tsaothair sin, mar aon le hainm an údair, a scríobh síos go soiléir. (2 mharc)\nNÓ\n(ii) Maidir leis na saothair eile a ndearna tú staidéar orthu le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, roghnaigh saothar amháin díobh.\nTabhair cuntas gairid ar dhá rud ann, rud amháin a thaitin leat agus rud amháin nár thaitin leat. (18 marc)\nNí mór teideal an tsaothair sin, mar aon le hainm an údair, a scríobh síos go soiléir. (2 mharc)",
+      "totalMarks": 20,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-ol-p2-prose-roghnach-b",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 5,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 8,
+      "schemePages": [
+        8
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        5
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (leathanach 2) agus an Cúrsa Roghnach (leathanach 5).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 18,
+          "permittedMarks": [
+            0,
+            9,
+            18
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas gairid ar a bhfuil i gceann amháin de na saothair eile nár úsáid tú i gcuid (a) faoin téama atá roghnaithe agat as na téamaí atá luaite. 9 + 9 = 18 marc",
+            "NÓ",
+            "(ii) Cuntas gairid ar dhá rud i gceann amháin de na saothair eile nár úsáid tú i gcuid (a). Rud amháin a thaitin leat agus rud amháin nár thaitin. = 9 marc × 2 = 18 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an údair",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an tsaothair /ainm an údair = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20: the account 18 (9 + 9, or 9 × 2 for two things) and the title and author 2, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Roghnach",
+        "title": "Prós Roghnach (b)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-roghnach-a-1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-B-a-1",
+      "questionRef": "2010 OL Paper 2 Filíocht Roghnach (a) · Dán nua-aimseartha a chum bean",
+      "stem": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "questionText": "(a)\n(i) Maidir le dán nua-aimseartha amháin a chum bean agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad is téama don dán sin, dar leat. (8 marc)\n(ii) Roghnaigh dhá íomhá (pictiúr) a úsáideann an file sa dán seo agus déan cur síos orthu i d’fhocail féin. (8 marc)\n(iii) An dóigh leat go bhfuil teideal an dáin seo oiriúnach? Cuir fáth amháin le do fhreagra. (8 marc)\n(iv) Ar thaitin an dán leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-roghnach-a-1",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 8,
+      "schemePages": [
+        8
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Téama i d’fhocail féin.",
+            "= 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            4,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Cur síos i d’fhocail féin ar dhá íomhá = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            4,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Teideal an dáin oiriúnach? = 4 marc",
+            "Fáth amháin le do fhreagra = 4 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iv",
+          "label": "(iv) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            4,
+            5,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 1 marc",
+            "Dhá fháth. = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an dáin/file a chum. = 2 mharc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 5 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 8, (ii) 8, (iii) 8, (iv) 9, the poem and poet 2, then the 0–5 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The poem is open content chosen by the candidate.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "Dán nua-aimseartha a chum bean",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-roghnach-a-2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-B-a-2",
+      "questionRef": "2010 OL Paper 2 Filíocht Roghnach (a) · Dán nua-aimseartha a chum fear nó bean",
+      "stem": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "questionText": "(a)\n(i) Maidir le dán nua-aimseartha amháin a chum fear nó bean agus a ndearna tú staidéar air le linn do chúrsa, inis cén mothúchán is mó atá sa dán, dar leat. Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (8 marc)\n(ii) An dóigh leat go bhfuil teideal an dáin seo oiriúnach? (8 marc)\n(iii) Scríobh nóta gairid faoi rud amháin sa dán a bhí suimiúil, dar leat. (8 marc)\n(iv) Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)",
+      "totalMarks": 35,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-roghnach-a-2",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 9,
+      "schemePages": [
+        9
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas-i",
+          "label": "(i) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Mothúchán is mó.",
+            "= 2 marc",
+            "Dhá fháth. 3 marc × 2 = 6 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            4,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an dáin oiriúnach? = 4 marc",
+            "Fáth amháin le do fhreagra = 4 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Rud amháin sa dán a bhí suimiúil = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "eolas-iv",
+          "label": "(iv) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            4,
+            5,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Ar thaitin an dán leat? = 1 marc",
+            "Dhá fháth. = 4 marc × 2 = 8 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an dáin/ainm an fhile. = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 – 5 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 35: (i) 8, (ii) 8, (iii) 8, (iv) 9, the poem and poet 2, then the 0–5 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part. The poem is open content chosen by the candidate.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "Dán nua-aimseartha a chum fear nó bean",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "sourceDiscrepancyNotice": "Source note: the scheme numbers this option’s (ii) “(iv)” and prices it “Teideal an dáin oiriúnach? = 4 marc” and “Fáth amháin le do fhreagra = 4 marc”, where the paper asks only whether the title suits the poem (8 marks). The criterion carries the scheme’s prices. See both sources."
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-roghnach-b-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-B-b-i",
+      "questionRef": "2010 OL Paper 2 Filíocht Roghnach (b)(i) · Mothúchán",
+      "stem": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "questionText": "(b)\n(i) Maidir leis na dánta eile a ndearna tú staidéar orthu le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid ar cheann amháin de na mothúcháin seo a leanas mar a léirítear é sa dán a roghnaigh tú.\neagla\nfearg\nionadh\náthas\nfaoiseamh\nimní (18 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)",
+      "totalMarks": 20,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-roghnach-b-i",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 9,
+      "schemePages": [
+        9
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 18,
+          "permittedMarks": [
+            0,
+            9,
+            18
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cuntas gairid ar a bhfuil i ndán a chum bean agus nár úsáid tú i gcuid (a) faoi mhothúchán amháin atá roghnaithe agat as na mothúcháin atá luaite. (9 + 9) = 18 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an dáin/ainm an fhile = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 - 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20: the account 18 and the poem and poet 2, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "Filíocht Roghnach (b)(i)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p2-poetry-roghnach-b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-B-b-ii",
+      "questionRef": "2010 OL Paper 2 Filíocht Roghnach (b)(ii) · Príomhsmaoineamh agus íomhá",
+      "stem": "CEIST 2 – FILÍOCHT ROGHNACH – [55 mharc]",
+      "questionText": "(b)\n(ii) Maidir leis na dánta eile a ndearna tú staidéar orthu le linn do chúrsa, agus nár úsáid tú i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean. Tabhair cuntas gairid ar phríomhsmaointe an dáin sin agus ar íomhá (pictiúr) sa dán a thaitin (nó nár thaitin) leat. (18 marc)\nNí mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)",
+      "totalMarks": 20,
+      "topicId": "irish-5-6",
+      "conceptId": "irish-ol-p2-poetry-roghnach-b-ii",
+      "paperFileid": "LC001GLP200IV",
+      "paperPage": 6,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 9,
+      "schemePages": [
+        9
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        6
+      ],
+      "taskRequirements": [
+        "Freagair Ceist Iomlán, (a) agus (b), sa Phrós agus san Fhilíocht.",
+        "Tá rogha ann idir an Cúrsa Ainmnithe (na leathanaigh 3 agus 4) agus an Cúrsa Roghnach (leathanach 6).",
+        "Freagair (a) agus (b) anseo.",
+        "Answer every sub-part printed in this option.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 18,
+          "permittedMarks": [
+            0,
+            6,
+            12,
+            18
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Cuntas gairid ar phríomhsmaoineamh an dáin a chum bean agus nár úsáid tú i gcuid (a). = 12 marc",
+            "Cuntas gairid ar íomhá a thaitin/nár thaitin leat = 6 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "teideal",
+          "label": "Teideal + ainm an fhile",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Teideal an dáin/ainm an fhile = 2 marc"
+          ],
+          "tariffOnly": true
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0 - 3 a bhaint den iomlán a gnóthaíodh.]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response at 20: the account 18 and the poem and poet 2, then the 0–3 Gaeilge deduction once. The scheme prints each price, and some splits, but no answers or sample points: each row is the scheme’s restatement of the ask, claimed at its printed price or the totals its printed parts make. The scheme prints no answer for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Roghnach",
+        "title": "Filíocht Roghnach (b)(ii)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

@@ -26,6 +26,7 @@ import fitz
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 CORPUS = ROOT / "paper-trail-corpus" / "exampapers"
+DEFERRED_CORPUS = ROOT / "paper-trail-corpus" / "deferredexams"
 INDEX_PATH = ROOT / "paperTrailData.ts"
 TAGS_PATH = HERE / "topic-tags" / "tags" / "economics.json"
 REFERENCE_PATH = ROOT / "data" / "examTopics" / "economics.json"
@@ -39,8 +40,16 @@ HOSTED_ROOT = ROOT / "public" / "paper-anchors"
 ANSWERS_ROOT = HERE / "answers"
 
 COPYRIGHT = "© State Examinations Commission"
-EXPECTED_VARIANTS = 66
-EXPECTED_CARDS = 1098
+EXPECTED_VARIANTS = 67
+EXPECTED_CARDS = 1114
+
+# The SEC's deferred sittings in the Atlas, each its own paper (the index entry
+# is marked "sitting": "deferred" and its fileid is "...-deferred.pdf", as
+# Physics, Home Economics and History file theirs), English edition only,
+# admitted as each is carded in the Mark Bank. The archive holds one deferred
+# Economics sitting, 2022 Higher. Its tags come from the reference's "Deferred
+# Exam Paper" headings, never from the June paper that shares its numbers.
+DEFERRED_SITTINGS: set[tuple[int, str]] = {(2022, "higher")}
 
 # The factual reference omits 32 entitled old-format cards.  Eleven already
 # carry reviewed canonical tags in the frozen local corpus; these 21 are the
@@ -83,10 +92,13 @@ def paper_index() -> list[dict]:
     )
     if not match:
         raise RuntimeError("Could not locate Economics in paperTrailData.ts")
-    # Reviewed window only: June sittings from 2010. The deferred sitting and the
-    # 1995-2009 archive papers carry no answer maps or Mark Bank cards.
+    # Reviewed window: June sittings from 2010, and the deferred sittings in
+    # DEFERRED_SITTINGS. The 1995-2009 archive papers carry no answer maps or
+    # Mark Bank cards.
     return [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
-            if not entry.get("sitting") and entry["year"] >= 2010]
+            if (not entry.get("sitting") and entry["year"] >= 2010)
+            or (entry.get("sitting") == "deferred" and entry["lang"] == "ev"
+                and (entry["year"], entry["level"]) in DEFERRED_SITTINGS)]
 
 
 def identity(item: dict) -> str:
@@ -299,17 +311,22 @@ def local_number(parsed: dict) -> str:
     return str(parsed["question"])
 
 
-def reference_topics(reference: dict) -> dict[tuple[str, int, str], list[str]]:
-    result: dict[tuple[str, int, str], list[str]] = {}
+def reference_topics(reference: dict) -> dict[tuple, list[str]]:
+    """Reference topics per question: (level, year, number) for a June sitting,
+    (level, year, number, "deferred") for an admitted deferred one."""
+    result: dict[tuple, list[str]] = {}
     for level, level_data in reference["levels"].items():
         for topic in level_data["topics"]:
             for heading in topic["officialQuestionHeadings"]:
                 parsed = parse_reference_heading(heading)
                 if parsed["year"] < 2010:
                     continue
-                if "sample" in parsed["edition"] or "deferred" in parsed["edition"]:
+                if "sample" in parsed["edition"]:
                     continue
-                key = (level, parsed["year"], local_number(parsed))
+                deferred = "deferred" in parsed["edition"]
+                if deferred and (parsed["year"], level) not in DEFERRED_SITTINGS:
+                    continue
+                key = (level, parsed["year"], local_number(parsed)) + (("deferred",) if deferred else ())
                 topics = result.setdefault(key, [])
                 if topic["id"] not in topics:
                     topics.append(topic["id"])
@@ -328,6 +345,8 @@ def main() -> None:
     existing_by_id = {identity(paper): paper for paper in existing}
     existing_logical: dict[tuple[str, int, str], dict[str, str]] = {}
     for paper in existing:
+        if paper["fileid"].endswith("-deferred.pdf"):
+            continue  # a deferred paper's numbers are not June's questions
         for question in paper["q"]:
             key = (paper["level"], paper["year"], question["n"])
             tags = {
@@ -342,8 +361,8 @@ def main() -> None:
             # first reviewed legacy tag is a safe preservation fallback.
             existing_logical.setdefault(key, tags)
 
-    def tags_for(level: str, year: int, number: str) -> dict[str, str]:
-        key = (level, year, number)
+    def tags_for(level: str, year: int, number: str, deferred: bool = False) -> dict[str, str]:
+        key = (level, year, number) + (("deferred",) if deferred else ())
         topics = reference_by_card.get(key, [])
         nodes: list[str] = []
         for topic_id in topics:
@@ -353,6 +372,8 @@ def main() -> None:
                 if node not in nodes:
                     nodes.append(node)
         if not nodes:
+            if deferred:
+                raise RuntimeError(f"No reference heading for deferred {key}")
             if key in existing_logical:
                 return copy.deepcopy(existing_logical[key])
             manual = MANUAL_TAGS.get(key)
@@ -375,7 +396,9 @@ def main() -> None:
             )
         item = entry["papers"][0]
         fileid = item["doc"]["f"]
-        paper_path = CORPUS / str(entry["year"]) / fileid
+        deferred = entry.get("sitting") == "deferred"
+        paper_path = (DEFERRED_CORPUS / str(entry["year"]) / fileid.replace("-deferred", "")
+                      if deferred else CORPUS / str(entry["year"]) / fileid)
         if not paper_path.exists():
             raise FileNotFoundError(paper_path)
 
@@ -401,7 +424,7 @@ def main() -> None:
                 if old_question is not None
                 else {
                     "n": anchor["n"],
-                    **tags_for(entry["level"], entry["year"], anchor["n"]),
+                    **tags_for(entry["level"], entry["year"], anchor["n"], deferred),
                 }
             )
             if question["primary"] not in canonical_ids or (

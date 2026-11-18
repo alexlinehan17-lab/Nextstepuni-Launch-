@@ -33,14 +33,28 @@ def indexed_papers() -> list[dict]:
     if not match:
         raise ValueError("Economics Paper Trail index was not found")
     entries = [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
-               # reviewed window only: June sittings from 2010
-               if not entry.get("sitting") and entry["year"] >= 2010]
+               # reviewed window: June sittings from 2010, and the SEC's
+               # deferred sittings in English (2022 Higher, the only one the
+               # archive holds), each its own paper ("LC034ALP000EV-deferred")
+               if entry["year"] >= 2010 and (not entry.get("sitting") or (
+                   entry["sitting"] == "deferred" and entry["lang"] == "ev"))]
     return [
         {"year": entry["year"], "level": entry["level"], "lang": entry["lang"],
          "fileid": paper["doc"]["f"], "label": paper["label"],
-         "schemeFileid": paper.get("scheme", {}).get("f")}
+         "schemeFileid": paper.get("scheme", {}).get("f"),
+         **({"sitting": "deferred"} if entry.get("sitting") == "deferred" else {})}
         for entry in entries for paper in entry["papers"]
     ]
+
+
+def corpus_path(kind: str, year: int, fileid: str) -> Path:
+    """An indexed paper or scheme in the local archive. A deferred sitting's
+    index id ends "-deferred"; the archive files it under deferredexams/ and
+    deferredmarkingschemes/ with the June file id."""
+    if fileid.removesuffix(".pdf").endswith("-deferred"):
+        folder = {"exampapers": "deferredexams", "markingschemes": "deferredmarkingschemes"}[kind]
+        return ROOT / "paper-trail-corpus" / folder / str(year) / fileid.replace("-deferred", "")
+    return ROOT / "paper-trail-corpus" / kind / str(year) / fileid
 
 
 def shipped_cards() -> list[dict]:
@@ -74,7 +88,7 @@ def shipped_cards() -> list[dict]:
 
 
 def pdf_record(folder: str, year: int, fileid: str) -> dict:
-    path = ROOT / "paper-trail-corpus" / folder / str(year) / fileid
+    path = corpus_path(folder, year, fileid)
     if not path.is_file():
         raise FileNotFoundError(path)
     with fitz.open(path) as document:

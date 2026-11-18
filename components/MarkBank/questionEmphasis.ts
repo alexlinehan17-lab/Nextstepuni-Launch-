@@ -67,6 +67,23 @@ const MIN_CLAUSE = 20;
 const MAX_CLAUSE = 62;
 
 /**
+ * The longest mark the no-command fallback may draw (characters, trimmed).
+ *
+ * With no command word to anchor on, the fallback marks from the start of the
+ * question to its first printed line break, and in a passage that is a whole
+ * paragraph: Irish 2026 HL Paper 2 Prós 2B(a) underlined nine phone lines of
+ * "Maidir leis an scannán roghnach …". Read off the bank's 24,381 fallback
+ * marks: they bunch under 100 (the wh-questions and the statements a choice
+ * offers, Spanish "El silencio no existe en el mundo moderno." at 43, every
+ * Spanish alternative at 90 or under) and thin out past it, where half as many
+ * marks run each further ten characters and most are passages of two or more
+ * sentences. 100 is also about one and a half lines of the desktop column
+ * (MAX_CLAUSE above) and three on a phone. A longer fallback mark is not
+ * drawn at all: the question reads plain rather than as a slab.
+ */
+export const FALLBACK_MAX = 100;
+
+/**
  * Words that open a trailing phrase — scope, place, time, condition — and so are
  * safe places to stop marking.
  *
@@ -120,7 +137,8 @@ const toOneLine = (clause: string): [string, string] => {
 export interface QuestionEmphasis {
   /** Method or scope printed before the command. Often empty. */
   before: string;
-  /** The command clause. Carries the mark. Never empty. */
+  /** The command clause. Carries the mark. Empty only where the fallback's
+   *  mark would run past FALLBACK_MAX, and then nothing is marked. */
   marked: string;
   /** Method or scope printed after the command. Often empty. */
   after: string;
@@ -141,7 +159,8 @@ export const splitForEmphasis = (text: string): QuestionEmphasis => {
   // mark over a whole two-line question is the same slab either way.
   if (!cmd) {
     const [marked, scope] = toOneLine(q);
-    return { before: '', marked, after: scope };
+    const split = endAtLineBreak({ before: '', marked, after: scope });
+    return split.marked.trim().length > FALLBACK_MAX ? { before: '', marked: '', after: q } : split;
   }
 
   const before = q.slice(0, cmd.index);
@@ -160,5 +179,93 @@ export const splitForEmphasis = (text: string): QuestionEmphasis => {
   // Second cut: whatever scope is still riding on the end of a clause that would
   // wrap. Most questions have nothing to do here.
   const [marked, scope] = toOneLine(clause);
-  return { before, marked, after: scope + after };
+  return endAtLineBreak({ before, marked, after: scope + after });
 };
+
+/**
+ * The mark never runs past a line the paper printed.
+ *
+ * A question in a language with no English command or scope word has nowhere
+ * to cut, so the whole body was marked, line breaks and all: Spanish 2010 HL
+ * Section B Q5 underlined "El invento más importante del siglo pasado.", then
+ * the printed "O" on a line of its own, then the second statement. The mark now
+ * stops at the first printed line break and the rest reads plain. Nothing in
+ * the text changes; `before + marked + after` is still the input.
+ */
+function endAtLineBreak(split: QuestionEmphasis): QuestionEmphasis {
+  const start = split.marked.search(/\S/);
+  const cut = start < 0 ? -1 : split.marked.indexOf('\n', start);
+  if (cut < 0) return split;
+  return { before: split.before, marked: split.marked.slice(0, cut), after: split.marked.slice(cut) + split.after };
+}
+
+/**
+ * A line that holds nothing but the paper's word for "or" between two
+ * alternatives. The words are the ones the decks print alone on a line:
+ * Spanish "O" and "ó", Irish "nó" and "NÓ", Engineering "OR", Business "or".
+ */
+const CONNECTOR_LINE = /^[ \t]*(?:o|ó|or|nó)[ \t]*$/i;
+
+/** One run of a question's text, marked or plain. */
+export interface EmphasisSegment {
+  text: string;
+  marked: boolean;
+}
+
+const asSegments = ({ before, marked, after }: QuestionEmphasis): EmphasisSegment[] =>
+  [{ text: before, marked: false }, { text: marked, marked: true }, { text: after, marked: false }]
+    .filter(segment => segment.text !== '');
+
+/**
+ * The question's runs, marked and plain, in order; joined they are the input.
+ *
+ * Most questions take one mark (splitForEmphasis). A question that offers a
+ * choice, its alternatives either side of a line holding only the paper's
+ * "or", takes one mark per alternative instead: the first line of each,
+ * by the same command and one-line rules, with the "or" and any lead-in
+ * plain. Spanish 2010 HL Section B Q5 underlined its first statement only,
+ * which made one of the two choices look like the task.
+ *
+ * The last alternative runs from its "or" to the end; the first takes as
+ * many lines before the first "or" as the last one has, so a lead-in such
+ * as "Explica ... una de las frases siguientes:" stays outside both.
+ *
+ * The alternatives are marked all or none: where one of them is too long to
+ * mark (FALLBACK_MAX), none is, so no choice is singled out as the task.
+ */
+export function emphasisSegments(text: string): EmphasisSegment[] {
+  const q = text ?? '';
+  const lines = q.split('\n');
+  const content = (i: number) => lines[i].trim() !== '' && !CONNECTOR_LINE.test(lines[i]);
+  const connectors = lines
+    .map((line, i) => (CONNECTOR_LINE.test(line)
+      && lines.slice(0, i).some((_, j) => content(j))
+      && lines.slice(i + 1).some((_, j) => content(i + 1 + j)) ? i : -1))
+    .filter(i => i >= 0);
+  if (!connectors.length) return asSegments(splitForEmphasis(q));
+
+  // The content lines of each alternative after an "or", up to the next one.
+  const after = connectors.map((c, k) => lines
+    .map((_, i) => i)
+    .filter(i => i > c && i < (connectors[k + 1] ?? lines.length) && content(i)));
+  const lastSize = Math.max(1, after[after.length - 1].length);
+  const firstAlternative = lines.map((_, i) => i).filter(i => i < connectors[0] && content(i)).slice(-lastSize);
+  const markedLines = new Set([firstAlternative[0], ...after.map(alternative => alternative[0])]);
+  const splits = new Map([...markedLines].map(i => [i, splitForEmphasis(lines[i])]));
+  if ([...splits.values()].some(split => !split.marked)) return [{ text: q, marked: false }];
+
+  const segments: EmphasisSegment[] = [];
+  const push = (segment: EmphasisSegment) => {
+    if (!segment.text) return;
+    const last = segments[segments.length - 1];
+    if (last && last.marked === segment.marked) last.text += segment.text;
+    else segments.push({ ...segment });
+  };
+  lines.forEach((line, i) => {
+    if (i > 0) push({ text: '\n', marked: false });
+    const split = splits.get(i);
+    if (split) asSegments(split).forEach(push);
+    else push({ text: line, marked: false });
+  });
+  return segments;
+}

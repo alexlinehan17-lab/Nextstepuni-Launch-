@@ -1,0 +1,420 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2010,
+ "level": "ordinary",
+ "lang": "ev",
+ "sitting": "main",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-05",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2010_ol.py",
+ "sourceHashes": {
+  "paper-trail-corpus/exampapers/2010/LC027GLP000EV.pdf": "b7617fd66f176eba2481a741f6b72a858d930008d65d9a4006c82064a025d48c",
+  "paper-trail-corpus/markingschemes/2010/LC027GLP000EV.pdf": "b56b221e4a3825e5fddc87a0f335ee35bc839ff85cf69451bd0fd474cf4e3cca"
+ },
+ "expectedRuntimeCards": 42,
+ "reason": "2010 Ordinary main English written paper: every one of the 42 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 0 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-energy-electronics-robotics",
+    "engineering-ordinary-health-and-safety",
+    "engineering-ordinary-ict",
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-materials-properties-and-uses",
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-furnaces",
+    "engineering-ordinary-materials-properties-and-uses",
+    "engineering-ordinary-non-ferrous-metals-alloys"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-health-and-safety",
+    "engineering-ordinary-heat-treatment",
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-health-and-safety",
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-cnc-centre-lathe"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027GLP000EV.pdf",
+   "topicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2010-ol-q1-a",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-b",
+   "markBankTopicId": "eng-2-16",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-c",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-d",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-e",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-f",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology",
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-g",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-ict"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-h",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-j",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-ict"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-k",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-l",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-energy-electronics-robotics",
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q1-m",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-ordinary-tools-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q2-a-i",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q2-a-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-furnaces"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q2-b",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-non-ferrous-metals-alloys"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q2-c",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q2-d",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-ordinary-non-ferrous-metals-alloys"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q3-a-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q3-a-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q3-b",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q3-c",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q3-d",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-ordinary-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-b-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-b-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-b-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-b-iv",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ],
+   "canonicalTopicReview": "A safety precaution for gas welding, one of Q4(b)'s gas welding parts, under Q4's Welding & Soldering; the card's syllabus heading is Safety."
+  },
+  {
+   "cardId": "eng-2010-ol-q4-c",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q4-d",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-ordinary-welding-soldering"
+   ],
+   "canonicalTopicReview": "Ventilation when bonding with adhesives, a joining process, under Q4's Welding & Soldering; the card's syllabus heading is Safety."
+  },
+  {
+   "cardId": "eng-2010-ol-q5-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q5-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q5-b",
+   "markBankTopicId": "eng-3-1",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-health-and-safety"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q5-c",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q5-d",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-ordinary-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q6-a",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q6-b",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q6-c",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-ordinary-cnc-centre-lathe"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q7-a",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q7-b",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2010-ol-q7-c",
+   "markBankTopicId": "eng-3-12",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-ordinary-machining-metrology"
+   ]
+  }
+ ]
+}

@@ -18,6 +18,7 @@ import React, { createContext, memo, useContext, useLayoutEffect, useState } fro
 import { useStudySession } from '../hooks/useStudySession';
 import { useStudyTimerAlerts } from '../hooks/useStudyTimerAlerts';
 import { useStudyNotifications } from '../hooks/useStudyNotifications';
+import { useStudyFocusSession } from '../hooks/useStudyFocus';
 import type { UserProgress } from '../types';
 import type { CourseData } from '../components/Library';
 
@@ -33,30 +34,34 @@ interface EngineProps {
   allCourses: CourseData[];
   roomOpen: boolean;
   notify: boolean;
+  identityReady: boolean;
   onSession: (session: StudySessionState) => void;
 }
 
 // Memoised: it re-renders on its own clock ticks, not on every publish.
-const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, roomOpen, notify, onSession }: EngineProps) {
+const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, roomOpen, notify, identityReady, onSession }: EngineProps) {
   const session = useStudySession(uid, userProgress, allCourses);
   useStudyTimerAlerts(session, { uid, roomOpen, enabled: notify });
+  useStudyFocusSession(session, uid, identityReady);
   useLayoutEffect(() => { onSession(session); });
   return null;
 });
 
-export function StudySessionProvider({ uid, userProgress, allCourses, roomOpen = true, children }: {
+export function StudySessionProvider({ uid, userProgress, allCourses, roomOpen = true, identityReady = true, children }: {
   uid: string | undefined;
   userProgress: UserProgress;
   allCourses: CourseData[];
   /** The study room is on screen (its own "Time's up" needs no banner). */
   roomOpen?: boolean;
+  /** Wait for native auth restoration before clearing account-owned Screen Time choices. */
+  identityReady?: boolean;
   children: React.ReactNode;
 }) {
   const [session, setSession] = useState<StudySessionState | null>(null);
   const { enabled: notify } = useStudyNotifications();
   return (
     <StudySessionContext.Provider value={{ session }}>
-      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} roomOpen={roomOpen} notify={notify} onSession={setSession} />
+      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} roomOpen={roomOpen} notify={notify} identityReady={identityReady} onSession={setSession} />
       {children}
     </StudySessionContext.Provider>
   );

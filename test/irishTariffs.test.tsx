@@ -38,23 +38,44 @@ describe('an Irish tariff cut into rows', () => {
 
   test('a poetry option with three sub-questions keeps each tariff and its sample points', () => {
     const card = byId('irish-2024-ol-p2-poetry-3b-a');
-    const eolas = card.rubric.criteria.find(criterion => criterion.id === 'eolas')!;
-    const parts = eolas.allocation!.parts;
+    // One criterion per printed sub-question, and the title and poet's 2 on its own (the reviewed card).
+    const priced = card.rubric.criteria.filter(criterion => criterion.allocation);
+    expect(priced.map(criterion => criterion.id)).toEqual(['eolas-i', 'eolas-ii', 'eolas-iii', 'teideal']);
+    const parts = priced.flatMap(criterion => criterion.allocation!.parts);
     expect(parts.map(part => part.tariff)).toEqual([9, 7, 7, 2]);
     expect(parts[0].rows[0]).toMatchObject({ text: 'Dhá phríomhsmaoineamh', marks: 9, steps: [0, 5, 9] });
     expect(parts[3].rows.map(row => [row.text, row.marks])).toEqual([['Ainm an dáin', 1], ['Ainm an fhile', 1]]);
   });
 
+  test('rows that are the tariff\'s components can all be claimed, so full marks are reachable', () => {
+    // "Tréith 1 a lua = 2 mharc", "sampla … = 4 mharc", twice: 12. An answer list would cap the claims at
+    // tariff over best answer (3 here), which left 10 of 12 the most a student could place.
+    // Since the 2021 Higher paper review each 6(b) trait is its own criterion: "lua" 2 and its sample 4, twice.
+    const card = byId('irish-2021-hl-p2-reading-a-q6');
+    const traits = card.rubric.criteria.filter(criterion => criterion.id.startsWith('trait-'));
+    expect(traits.map(trait => trait.allocation!.parts[0].rows.map(row => row.marks))).toEqual([[2, 4], [2, 4]]);
+    const marks = traits.map(trait => {
+      const part = trait.allocation!.parts[0];
+      return irishCriterionMarks(trait, Object.fromEntries(part.rows.map(row => [irishRowScoreId(trait.id, part.id, row.id), 1])));
+    });
+    expect(marks).toEqual([6, 6]);
+  });
+
   test('the last reading question: a grammar ladder over the printed examples and a two-trait composite', () => {
+    // Since the 2021 Higher paper review, (a) and each priced piece of (b) are their own criteria.
     const card = byId('irish-2021-hl-p2-reading-b-q6');
-    const eolas = card.rubric.criteria[0];
-    const parts = eolas.allocation!.parts;
+    const [grammar, ...rest] = card.rubric.criteria;
+    const parts = grammar.allocation!.parts;
     expect(parts[0]).toMatchObject({ tariff: 3, ladder: [2, 3] });
     // The printed examples, one row per "Sampla …:" phrase, priced by the ladder.
     expect(parts[0].rows.length).toBeGreaterThanOrEqual(2);
     expect(parts[0].rows.every(row => /^Sampla/.test(row.text))).toBe(true);
-    expect(parts[1].tariff).toBe(12);
-    expect(parts[1].rows.reduce((sum, row) => sum + row.marks, 0)).toBe(12);
+    // The 12-mark (b): an opinion 2 and two supported points 5 + 5, each row priced at its part's tariff.
+    expect(rest.map(criterion => criterion.allocation!.parts[0].tariff)).toEqual([2, 5, 5]);
+    for (const criterion of rest) {
+      const part = criterion.allocation!.parts[0];
+      expect(part.rows.reduce((sum, row) => sum + row.marks, 0), criterion.id).toBe(part.tariff);
+    }
   });
 
   test('refuses a tariff whose parts do not reach the criterion', () => {

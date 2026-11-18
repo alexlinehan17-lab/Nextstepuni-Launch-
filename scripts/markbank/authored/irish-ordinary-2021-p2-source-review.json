@@ -1,0 +1,432 @@
+{
+  "year": 2021,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP200IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "8f89837075781146bb6304ee1b90c150ea2e2bbead4a049b461c4e94544266c1",
+  "schemeSha256": "b66d6097fa351c6038776c1e7d8c41ca2f5b6597aa131c8dc7a7d6272697cf9c",
+  "reviewDate": "2026-11-04",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemeScope": "Combined Ordinary scheme. PDF 12–14 Léamhthuiscint A with the Paper 2 notes; 15–17 Léamhthuiscint B and its deduction panel; 18–22 Prós Ainmnithe (2A); 23–24 Prós Roghnach (2B); 25–28 Filíocht Ainmnithe (3A); 29–30 Filíocht Roghnach (3B); 31–32 modified marking (SMM; 32 is its Paper 1 table). PDF 1–11 belong to Paper 1; 33–35 blank.",
+  "reviewMethod": "Every paper page (1 cover, 2 and 15–16 blank or acknowledgements, 3 instructions, 8 literature directions) and every applicable scheme page read in the text layer and checked against the printed page; each prompt and scheme slice is asserted against the PDFs by the builder.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "Freagair Ceist 1 agus dhá cheist as Roinn na Litríochta (Ceist 2 agus",
+      "decision": "Paper structure (2021 adjusted paper, 150 marks): Ceist 1 (both passages) and two literature questions."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+    },
+    {
+      "page": 3,
+      "raw": "2B. Prós Roghnach",
+      "decision": "Section name in the instructions box, not a separate route."
+    },
+    {
+      "page": 3,
+      "raw": "3B. Filíocht Roghnach",
+      "decision": "Section name in the instructions box, not a separate route."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair dhá cheist as an roinn seo.",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "Ní mór duit tabhairt faoi dhá cheist, mar seo a leanas:",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "Dhá cheist as 2A nó Dhá cheist as 2B",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "nó",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "Dhá cheist as 3A nó Dhá cheist as 3B",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "Ceist amháin as 2A agus Ceist amháin as 3A nó as 3B",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 3,
+      "raw": "Ceist amháin as 2B agus Ceist amháin as 3A nó as 3B",
+      "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair A agus B anseo.",
+      "decision": "Both reading passages required, as on page 3."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 4,
+      "raw": "Is féidir féachaint ar fhíseáin nó éisteacht",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 4,
+      "raw": "ar na meáin Ghaeilge ar líne nó éisteacht leo.",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 5,
+      "raw": "1. (a) Tabhair dhá úsáid a bhaintear as an idirlíon. (Alt 1)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Scríobh síos dhá bhuntáiste a bhaineann leis an bhfón cliste. (Alt 1)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "2. (a) Scríobh síos dhá rud a dhéanann daoine ar na líonraí sóisialta éagsúla. (Alt 2)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Luaigh dhá phíosa eolais faoi YouTube. (Alt 2)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "4. (a) Scríobh síos dhá úsáid a bhaineann eagraíochtaí Gaeilge as na meáin shóisialta. (Alt 4)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 5,
+      "raw": "5. (a) Scríobh síos dhá rud atá le fáil ar shuíomh an fhoclóra Béarla‐Gaeilge, www.foclóir.ie. (Alt 5)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "Sam Bennett, dhá ghaisce sa rás mór",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "D’ainmnigh Cumann Dornálaíochta",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "ar feadh dhá bhliain is seasca. Tá a ainm",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "amháin, Michael Hogan as Tiobraid Árann,",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 7,
+      "raw": "1. (a) Scríobh síos an dá ghaisce a rinne an rothaí proifisiúnta Éireannach, Sam Bennett, sa rás mór",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Tabhair dhá chúis mhórtais a bhí ag an réalta spóirt, Katie Taylor, in 2020. (Alt 1)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "2. (a) Luaigh dhá phíosa eolais faoin gcaoi ar éirigh le foireann sacair Phoblacht na hÉireann",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Scríobh síos an dá chúis ar moladh Caoimhín Kelleher, cúl báire fhoireann sacair Learphoill,",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Scríobh síos dhá rud a tharla ag an searmanas cuimhneacháin i bPáirc an Chrócaigh",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "5. (a) Tabhair dhá rud atá ar fáil san iris nua Cuaille a sheol Cumann Lúthchleas Gael. (Alt 5)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Luaigh dhá phíosa eolais a tugadh faoi na laochra spóirt sa tsraith Laochra Gael ar TG4.",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+    },
+    {
+      "page": 8,
+      "raw": "Tá 2B. Prós Roghnach (a), (b), (c) ar leathanach 10.",
+      "decision": "Page directions to the literature options (2B on page 10, 3B on page 14), not a selection."
+    },
+    {
+      "page": 8,
+      "raw": "Tá 3B. Filíocht Roghnach (a), (b), (c) ar leathanach 14.",
+      "decision": "Page directions to the literature options (2B on page 10, 3B on page 14), not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.",
+      "decision": "Names one printed option inside the closed choice; the option is one whole 25-mark card with its printed sub-questions as practice cards."
+    },
+    {
+      "page": 9,
+      "raw": "(iii) Tabhair dhá phointe eolais faoi na mná eile ar Ascaill na Fuinseoige.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 9,
+      "raw": "(iv) Scríobh síos dhá phointe eolais faoi Phól, fear céile Lisín.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 9,
+      "raw": "Scríobh síos dhá phointe eolais faoin gcuid sin de shaol Lisín.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.",
+      "decision": "Choose-one inside 2A(b): the film Cáca Milis or the play An Lasair Choille. Different syllabus texts (topics irish-4-6 and irish-4-8) with their own sample answers, so each is its own 25-mark card (the legacy 2A(b) card is Cáca Milis; An Lasair Choille is added)."
+    },
+    {
+      "page": 9,
+      "raw": "nó",
+      "decision": "Choose-one inside 2A(b): the film Cáca Milis or the play An Lasair Choille. Different syllabus texts (topics irish-4-6 and irish-4-8) with their own sample answers, so each is its own 25-mark card (the legacy 2A(b) card is Cáca Milis; An Lasair Choille is added)."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair an cheist thíos faoin ngearrscéal Dís.",
+      "decision": "Names one printed option inside the closed choice: 2A(c) Dís is one whole 25-mark question (five points at 2 + 3) and one card."
+    },
+    {
+      "page": 10,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 10,
+      "raw": "Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.",
+      "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+    },
+    {
+      "page": 10,
+      "raw": "Maidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+    },
+    {
+      "page": 10,
+      "raw": "nó",
+      "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+    },
+    {
+      "page": 10,
+      "raw": "Maidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+    },
+    {
+      "page": 10,
+      "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+      "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+    },
+    {
+      "page": 10,
+      "raw": "2B – PRÓS ROGHNACH",
+      "decision": "Boxed section heading, not a separate route."
+    },
+    {
+      "page": 11,
+      "raw": "i véarsa a haon den dán. (Is leor dhá phointe eolais.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 11,
+      "raw": "(Is leor dhá phointe eolais, i d’fhocail féin.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 11,
+      "raw": "Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an spailpín mar sin.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "Scríobh síos dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "(Is leor dhá phointe eolais, i d’fhocail féin.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "Cuir fáthanna, i d’fhocail féin, le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 12,
+      "raw": "(nó ar chrann ar bith)",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 13,
+      "raw": "(Is leor dhá phointe eolais.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 13,
+      "raw": "Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an t‐ainmhí mar sin.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 13,
+      "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 14,
+      "raw": "Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850)",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 14,
+      "raw": "Mínigh an íomhá (an pictiúr) sin i d’fhocail féin. (Is leor dhá phointe eolais.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Tabhair dhá shampla den mhothúchán sin sa dán.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 14,
+      "raw": "scríobh síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais,",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Luaigh íomhá (pictiúr) amháin ón dán atá suimiúil, dar leat.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Déan cur síos ar an mothúchán is láidre sa dán, dar leat. Is leor dhá phointe eolais.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa",
+      "decision": "Optional poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 14,
+      "raw": "Cén t‐atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+    },
+    {
+      "page": 14,
+      "raw": "3B – FILÍOCHT ROGHNACH",
+      "decision": "Boxed section heading, not a separate route."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading: all ten questions are required (both passages); each printed (a)/(b) part is a 5-mark practice card. “3 mharc + 2 mharc” items are order-dependent (first correct point 3, second 2) and stay whole at 0/3/5; single answers with a printed partial (“= 3 mharc”) allow 0/3/5, otherwise 0/5.",
+    "Reading language: “Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh” is one deduction from each 50-mark passage total; cards state it without applying it inside a part.",
+    "Prescribed prose (2A): Hurlamaboc (a) prints five 5-mark sub-questions: the whole option is a 25-mark card and every sub-question is also a practice card (“3 mharc + 2 mharc” sub-questions keep 0/3/5). 2A(b) offers the film Cáca Milis or the play An Lasair Choille: one 25-mark card each. Dís (c) is one 25-mark question and one card.",
+    "Optional prose (2B): (a) novel extract: naming 1 + events 22 + title/author 2; (b) film or play: events 23 + title/writer 2, one card for both alternatives; (c) short story: theme 1 + events 22 + title/author 2.",
+    "Poetry: each prescribed poem (3A) prints (i) 8, (ii) 8, (iii) 9: the poem is one card and each sub-question a practice card. Each optional poem (3B) prints (i) 9, (ii) 7, (iii) 7 and title/poet 2 inside one card.",
+    "Literature language: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” is one deduction from each 25-mark answer; cards state it without applying it inside a sub-question."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 150 (2021 adjusted paper): Léamhthuiscint A 50 + B 50 (five questions of 10, each (a) 5 + (b) 5), Roinn na Litríochta 50 (any two questions at 25 in the combinations printed on page 3).",
+    "Reading A “An Nua-theicneolaíocht agus an Ghaeilge” (paper pages 4–5, scheme PDF 12–14) and B “Scéalta ó shaol an spóirt in 2020” (paper 6–7, scheme PDF 15–17).",
+    "Prescribed prose (paper 9): Hurlamaboc (i)–(v) at 5 each; Cáca Milis or An Lasair Choille one 25-mark question each; Dís one 25-mark question (five points at 2 + 3). Optional prose (paper 10): (a) 1 + 22 + 2; (b) 23 + 2 (film or play); (c) 1 + 22 + 2.",
+    "Prescribed poetry (paper 11–13): An Spailpín Fánach, Mo ghrá-sa (idir lúibíní), Géibheann at (i) 8, (ii) 8, (iii) 9. Optional poetry (paper 14): (i) 9, (ii) 7, (iii) 7, title and poet 2.",
+    "Text layer: the scheme stores its boxed headings (“CEIST 1 (A + B) - LÉAMHTHUISCINT - 100 marc”, “A – (50 marc)”, “B – (50 marc)”, “2A/2B/3A/3B – …”) at the edge of each page; they are removed before slicing. Each reading passage ends at its penalty note (“Nóta: Gearrfar pionós … Léireofar …”).",
+    "Legacy corrections (IDs, totals and topics unchanged): each whole reading question and each literature option had one undivided Eolas criterion; reading A Q2 and B Q5 had no claimable rows. All now carry the lifted 2021 scheme with per-part and per-sub-question tariffs."
+  ],
+  "remainingWork": []
+}

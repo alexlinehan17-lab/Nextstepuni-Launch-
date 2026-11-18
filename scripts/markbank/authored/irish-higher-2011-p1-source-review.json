@@ -1,0 +1,192 @@
+{
+  "year": 2011,
+  "level": "higher",
+  "paperFileid": "LC001ALP100IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "210ba6909b768d0b1970cc6bee72d8ca53197bf76919280d238b95e61df76691",
+  "schemeSha256": "b5f7c77e673759308a08e4a8cdef08000045789921a3c64278c739bb510783b0",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "schemeScope": "Combined Higher scheme LC001ALP000IV. PDF 1 the cover, 2 blank; PDF 3–5 Páipéar I Ceist 1 Ceapadóireacht (Ionramháil Ábhair 20 + Cumas Gaeilge 80, the examiner’s note, the Cumas Gaeilge definition, the 80-mark grade table on PDF 4 and the 20-mark Ábhar bands on PDF 5); PDF 5–6 the reading rules (Eolas + Ionramháil 2 + 1; P1 + P2 + Ionramháil 2 + 1 + 1) and passage A’s summary of tariffs; PDF 7–10 passage A’s key and its totals; PDF 10–11 passage B’s summary; PDF 11–14 passage B’s key and the Ceist 2 totals. PDF 15–19 belong to Páipéar II, PDF 20–24 to the aural test, PDF 25–28 are blank. No modified marking scheme is printed.",
+  "reviewMethod": "Every paper page (1 cover, 2 the Treoracha, 3 the composition titles, 4–7 the passages and their questions, 8 blank) and scheme PDF 3–14 read in the text layer and checked against the rendered page; the passage pages are read by glyph position. Each prompt line and scheme slice is asserted against the PDFs by the builder, and every line of each part’s key goes to exactly one criterion.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "FREAGAIR CEIST 1 (leathanach 3) AGUS",
+      "decision": "Paper structure (Treoracha): both questions are answered, Ceist 1 (composition) and Ceist 2 (reading A and B). No combination card."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair do rogha CEANN AMHÁIN de A, B, C nó D anseo thíos.",
+      "decision": "Ceist 1 offers one of four composition groups, A–D; each printed title inside them is its own 100-mark route card. No combination card."
+    },
+    {
+      "page": 3,
+      "raw": "Scríobh AISTE ar CHEANN AMHÁIN de na hábhair seo.",
+      "decision": "Choice of one title inside a composition group: each printed title is its own 100-mark route card (W-<group>-<letter>)."
+    },
+    {
+      "page": 3,
+      "raw": "Ceap SCÉAL a mbeadh do rogha CEANN AMHÁIN díobh seo oiriúnach mar theideal air.",
+      "decision": "Choice of one title inside a composition group: each printed title is its own 100-mark route card (W-<group>-<letter>)."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair do rogha CEANN AMHÁIN díobh seo.",
+      "decision": "Choice of one title inside a composition group: each printed title is its own 100-mark route card (W-<group>-<letter>)."
+    },
+    {
+      "page": 3,
+      "raw": "Mo rogha duine mar Uachtarán na hÉireann.",
+      "decision": "The title of composition C(b) (the competition’s subject), not a selection directive."
+    },
+    {
+      "page": 3,
+      "raw": "(a) Scríobh an chaint a dhéanfá i ndíospóireacht scoile ar son an rúin seo a leanas nó ina aghaidh:",
+      "decision": "Composition D(a): “ar son … nó ina aghaidh” is the speaker’s stance inside one speech, marked identically either way; one route card."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair A ar na leathanaigh 4 (thíos) agus 5 (thall), agus B ar na leathanaigh 6 agus 7.",
+      "decision": "Ceist 2: both passages are answered (A and B, 35 marks each); every printed part of each is carded, and every printed question whole."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna a ghabhann leis.",
+      "decision": "Reading instruction for the passage; carded with every question on it."
+    },
+    {
+      "page": 4,
+      "raw": "Lublin in oirthear na Polainne murach go raibh mí nÉireannach. Tá an-chuid cosúlachtaí idir stair an dá",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 4,
+      "raw": "léinn rogha a dhéanamh idir an Ghaeilge agus an oirthear na Polainne. Nuair a bhí an Pholainn faoi",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 4,
+      "raw": "déanann siad staidéar ar an ábhar a roghnaíonn siad. an bhfreasúra Caitliceach frithchumannach. B’ábhar",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 5,
+      "raw": "dom lá amháin ach b’fhéidir gur léiriú é freisin ar",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Luaigh dhá bhuntáiste a bhainfeadh an t-údar as an bpost a bheith aige. (Alt 1) (4 mharc)",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Luaigh dhá dhearcadh atá ag na Polannaigh faoi fhoghlaim na Gaeilge. (Alt 2) (4 mharc)",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 5,
+      "raw": "3 (a) Luaigh cosúlacht amháin idir Vársá agus Baile Átha Cliath. (Alt 3) (3 mharc)",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Luaigh dhá thréith a bhaineann le muintir na Polainne, agus luaigh céard is bun",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Luaigh dhá phointe eolais faoin bPápa Eoin Pól II. (Alt 4) (4 mharc)",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 6,
+      "raw": "Freagair B ar na leathanaigh 6 (thíos) agus 7 (thall).",
+      "decision": "Ceist 2: both passages are answered (A and B, 35 marks each); every printed part of each is carded, and every printed question whole."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna a ghabhann leis.",
+      "decision": "Reading instruction for the passage; carded with every question on it."
+    },
+    {
+      "page": 6,
+      "raw": "raibh ach bean amháin ina measc. Tá cuimhne fós ar bunreachtúil agus í os comhair na gcúirteanna sin,",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 7,
+      "raw": "airde i Meiriceá uirthi ansin, tá rud amháin cinnte: ní chuirfear Máire Mhic",
+      "decision": "Passage text (two columns read across by position), not a selection directive."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Luaigh eachtra amháin óna tréimhse mar Uachtarán a bhfuil cuimhne air agus cén míniú",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Luaigh cúis aighnis a bhí ag Máire (i) lena tuismitheoirí; (ii) le Bardas Bhaile Átha Cliath.",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Luaigh dhá shampla de na cearta a bhuaigh Máire Mhic Róibín do mhná os comhair na",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Luaigh dhá shampla den chaoi ar thaispeáin Máire Mhic Róibín a neamhspleáchas",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Cén obair a bhíonn ar siúl ag Máire Mhic Róibín leis na Elders? (Dhá pointe). (Alt 5)",
+      "decision": "A printed reading part asking for the points it names; carded as its own part card and inside its whole question, each term of its printed split a criterion."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Composition: one 100-mark card per printed title, A(a)–(c), B(a)–(b), C(a)–(b), D(a)–(b): 9 cards, criteria Ionramháil Ábhair 20 and Cumas Gaeilge 80 (quality, judged as one unit).",
+    "Reading: each of the 20 printed parts is a card, and each of the 10 printed questions a whole card carrying both parts’ criteria (7 marks).",
+    "A part’s criteria are the terms of the split the key prints for it: (2+1) Eolas 2 + Ionramháil 1; (2+1+1) P1 + P2 3 (a ladder, 2 then 3) + Ionramháil 1; “Pointe amháin(2+1)” as (2+1); “3 mharc gan ionramháil” one Eolas criterion at 3; A 3(b) “Dhá thréith =1+1” 2 + “céard is bun leis na tréithe” 2; A 5(b) “(2+2) gan ionramháil” Eachtra 2 + Míniú 2; B 1(b) “(2+1+1) (Eachtra+Míniú+Ionramháil)” Eachtra 2 + Míniú 1 + Ionramháil 1.",
+    "Rows: the answers quoted from the passage at the term’s price; answers the key prices itself at that price (“= 3 - 1 = 2 mharc”, “= 1 + 1 = 2 mharc”, “= 0”); the key’s own-words versions are samples. The Ionramháil criterion’s row is the key’s rule “Is ionann “ionramháil” agus …”, at 1.",
+    "Steps only where the key prints a split: “=1+1” (two traits, 0/1/2), “= 1 + 1 = 2 mharc” (Míniú, 0/1/2), a sentence of two points “= 2 + 1” (0/2/3). Nothing else steps.",
+    "The passage-level Gaeilge deduction “[Gaeilge lochtach: 0 - 3 a bhaint den iomlán a gnóthaíodh.]” (E(35) − Gge.(0-3)) is in every reading card’s note, never a criterion of one part."
+  ],
+  "sourceFindings": [
+    "Pre-2012 layout: Páipéar 1 is composition and reading (170); the listening test is a separate component (LC001ALPA00IV) and Páipéar 2 is literature and Stair na Gaeilge.",
+    "Existing Atlas entries for this paper are section keys (R-A, R-B, W-A … W-D); the cards add R-A-1 … R-B-5, R-A-1-a … R-B-5-b and W-A-a … W-D-b beside them, the 2012 convention.",
+    "Paper misprints, carded as printed: B 5(b) “(Dhá pointe).” (the scheme “(Dhá phointe)”).",
+    "Scheme variants beside the paper (the cards show the paper’s question): A 2(b) restated without “(Alt 2)”; A 3(b) “muintir naPolainne” with no tariff after it; A 4(b) “Eoin Pól 11” for “II”; B 1(a) “Cé a bheidh” for “Cé a bheadh”; B 2(a) “David McWilliams” for “David Mc Williams”; B’s summary “Eachta óna huachtaránacht”.",
+    "The reading key prints the passage A rules on PDF 5–6 and each passage’s tariff summary before its key; neither summary is a card’s guidance.",
+    "Wingdings U+F0E0 on PDF 5 (the Ábhar band arrow) is repaired to →; SymbolMT bullets U+F0B7 to •."
+  ],
+  "remainingWork": [
+    "Integration (parent): factory, register, inventory and crosswalk file lists, the reader patches, archive review test row, inventory row."
+  ]
+}

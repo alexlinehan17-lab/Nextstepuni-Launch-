@@ -1,0 +1,2075 @@
+{
+  "review": {
+    "year": 2010,
+    "level": "ordinary",
+    "paperFileid": "LC001GLP100IV.pdf",
+    "schemeFileid": "LC001GLP000EV.pdf",
+    "paperSha256": "0893ef63546910af7e38afae234819002284e2a7692b6272e71be9122baa6ceb",
+    "schemeSha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reviewedSchemePages": [
+      1,
+      2,
+      3,
+      4,
+      11
+    ],
+    "schemeScope": "Combined Ordinary scheme (12 pages; the file is named LC001GLP000EV, its text is the Irish scheme). PDF 1 cover; 2 blank; 3 general marking instruction (red ink, major errors underlined) and Páipéar I Ceist 1 composition marking (tariffs Tasc 3, Ábhar 9, Cumas Gaeilge 48 for each of two pieces, “= 60 marc × 2 = 120 marc”; the bracketed Cumas Gaeilge definition; the bracketed content note); 4 the examiner’s Nóta and a bracketed Nóta on “Gaeilge Lochtach”, then Ceist 2 reading (each question restated with one price, no answers; a 0–5 language deduction for each passage; the redundancy penalty and the closing Nóta after B); 5–9 Páipéar II; 10 the listening test; 11 Socruithe Réasúnta; 12 empty.",
+    "reviewDate": "2026-11-05",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 2,
+        "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta seo a leanas",
+        "decision": "Composition B: write one story from one of the printed openings; each opening is its own title card."
+      },
+      {
+        "page": 2,
+        "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "decision": "Ceist 1 choose two of A–D: choice is not a route; each printed title is its own 60-mark card carrying this instruction; no combination cards."
+      },
+      {
+        "page": 2,
+        "raw": "Níl an príomhoide róchinnte faoin smaoineamh. Scríobh an comhrá (leathleathanach nó",
+        "decision": "Content and length guidance of composition D(i); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "Scríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoin",
+        "decision": "Content and length guidance of composition C(i) (the dó/di gender forms); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "Scríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig iarscoláire saibhir ó do scoil",
+        "decision": "Content and length guidance of composition C(ii); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "Scríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:",
+        "decision": "Composition A: one of the three printed titles; each title is its own card."
+      },
+      {
+        "page": 2,
+        "raw": "bpost agus ag moladh dó/di iarratas a chur isteach ar an bpost sin.",
+        "decision": "Content of composition C(i) (the dó/di gender form); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "chara na cláir spóirt. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh idir an",
+        "decision": "Content and length guidance of composition D(ii); not a selection."
+      },
+      {
+        "page": 2,
+        "raw": "nó",
+        "decision": "The “nó” between the printed alternatives of B, C and D; each alternative is its own title card."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair A agus B anseo.",
+        "decision": "Ceist 2: both passages A and B are compulsory; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Is maith le daoine uisce. Tabhair sampla amháin. (Alt 3)",
+        "decision": "Reading A 3(b): one required example inside one 10-mark question priced whole; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh dhá athrú a chaithfimid a dhéanamh sna blianta atá ag teacht. (Alt 5)",
+        "decision": "Reading A 5: two required answers inside one 10-mark question priced whole; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh dhá dhrochrud a bhain leis an aimsir in Éirinn in 2009. (Alt 4)",
+        "decision": "Reading A 4: two required answers inside one 10-mark question priced whole; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh grúpa amháin daoine a chuireann spéis san aimsir. (Alt 1)",
+        "decision": "Reading A 1(a): one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh rud amháin a thaispeánann go bhfuil an aimsir ag athrú. (Alt 2)",
+        "decision": "Reading A 2(a): one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Luaigh rud maith amháin a dhéanann an bháisteach. (Alt 3)",
+        "decision": "Reading A 3(a): one required answer; not a menu."
+      },
+      {
+        "page": 3,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Instruction to read passage A and answer every question with it; not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Ní aireoidh tú uait an t-uisce nó go dtriomóidh an",
+        "decision": "Passage A text (Alt 5, the proverb); not an instruction."
+      },
+      {
+        "page": 3,
+        "raw": "dhaoine bogadh as a dtithe agus cónaí le cairde nó",
+        "decision": "Passage A text (Alt 4); not an instruction."
+      },
+      {
+        "page": 3,
+        "raw": "nGaillimh, bhí an t-uisce salach dhá shamhradh ó",
+        "decision": "Passage A text (Alt 4); not an instruction."
+      },
+      {
+        "page": 3,
+        "raw": "uisce. An iomarca uisce in áit amháin agus",
+        "decision": "Passage A text (Alt 4); not an instruction."
+      },
+      {
+        "page": 4,
+        "raw": "Luaigh na tíortha lasmuigh d’Éirinn ina raibh éisteoirí ag Raidió Rí-Rá. (Alt 4)",
+        "decision": "Reading B 4: every country named, inside one 10-mark question priced whole; not a menu."
+      },
+      {
+        "page": 4,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Instruction to read passage B and answer every question with it; not a selection."
+      },
+      {
+        "page": 4,
+        "raw": "Today FM nó Spin 103.8 nó RTÉ 2FM ach amháin",
+        "decision": "Passage B text (Alt 2); not an instruction."
+      },
+      {
+        "page": 4,
+        "raw": "ngréasán domhanda amháin a bhí sé ar fáil.",
+        "decision": "Passage B text (Alt 1); not an instruction."
+      },
+      {
+        "page": 4,
+        "raw": "nó RTÉ 2FM? (Alt 2)",
+        "decision": "Reading B 2 (the station names it compares with, “… Spin 103.8 nó RTÉ 2FM?”): one question; not a menu."
+      }
+    ],
+    "cardIds": [
+      "irish-2010-ol-p1-composition-a-i",
+      "irish-2010-ol-p1-composition-a-ii",
+      "irish-2010-ol-p1-composition-a-iii",
+      "irish-2010-ol-p1-composition-b-i",
+      "irish-2010-ol-p1-composition-b-ii",
+      "irish-2010-ol-p1-composition-c-i",
+      "irish-2010-ol-p1-composition-c-ii",
+      "irish-2010-ol-p1-composition-d-i",
+      "irish-2010-ol-p1-composition-d-ii",
+      "irish-2010-ol-p1-reading-a-q1",
+      "irish-2010-ol-p1-reading-a-q2",
+      "irish-2010-ol-p1-reading-a-q3",
+      "irish-2010-ol-p1-reading-a-q4",
+      "irish-2010-ol-p1-reading-a-q5",
+      "irish-2010-ol-p1-reading-b-q1",
+      "irish-2010-ol-p1-reading-b-q2",
+      "irish-2010-ol-p1-reading-b-q3",
+      "irish-2010-ol-p1-reading-b-q4",
+      "irish-2010-ol-p1-reading-b-q5"
+    ],
+    "compositionRouteCardIds": [
+      "irish-2010-ol-p1-composition-a-i",
+      "irish-2010-ol-p1-composition-a-ii",
+      "irish-2010-ol-p1-composition-a-iii",
+      "irish-2010-ol-p1-composition-b-i",
+      "irish-2010-ol-p1-composition-b-ii",
+      "irish-2010-ol-p1-composition-c-i",
+      "irish-2010-ol-p1-composition-c-ii",
+      "irish-2010-ol-p1-composition-d-i",
+      "irish-2010-ol-p1-composition-d-ii"
+    ],
+    "readingWholeCardIds": [
+      "irish-2010-ol-p1-reading-a-q1",
+      "irish-2010-ol-p1-reading-a-q2",
+      "irish-2010-ol-p1-reading-a-q3",
+      "irish-2010-ol-p1-reading-a-q4",
+      "irish-2010-ol-p1-reading-a-q5",
+      "irish-2010-ol-p1-reading-b-q1",
+      "irish-2010-ol-p1-reading-b-q2",
+      "irish-2010-ol-p1-reading-b-q3",
+      "irish-2010-ol-p1-reading-b-q4",
+      "irish-2010-ol-p1-reading-b-q5"
+    ],
+    "examStructure": {
+      "composition": 120,
+      "readingA": 50,
+      "readingB": 50,
+      "total": 220
+    },
+    "nonPoolDecisions": [
+      "Páipéar I before 2012 is the composition and the reading (220); the listening test is a paper of its own (irish_ordinary_2010_aural.py).",
+      "Composition: each of the nine printed titles is one 60-mark card (Tasc 3, Ábhar 9, Cumas Gaeilge 48, as the scheme prices each of the two pieces); choose-two is a choice, not a route; no combination cards. The scheme prints no 48-mark table, so Cumas Gaeilge is judged on its printed aspects.",
+      "Reading: the scheme prints no answers, only each question’s asks restated and one 10-mark price; each question is one card with one 10-mark criterion claimed whole (0 or 10) and marked tariffOnly; no part is a practice card of its own, because the scheme prices only the whole question."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Páipéar I = 220: composition 120 (any two of A–D at 60: Tasc 3, Ábhar 9, Cumas Gaeilge 48) and reading 100 (A the weather and B Raidió Rí-Rá, five questions each at 10).",
+      "Reading (PDF 4): each question restated with one price and no answer. One 0–5 language deduction under each passage; after B the redundancy penalty (“[Gearrfar pionós i ngeall ar iomarcaíocht]”) and the Nóta on showing the marks; cards state them without applying them.",
+      "Composition (PDF 3–4): the examiner’s Nóta misprints “Tasc” as “Tásc”; kept as printed. No 48-mark table and no short-attempt columns."
+    ],
+    "choicePolicy": "Choice is not a route: each printed composition title is one card carrying the printed choose-two instruction; no combination cards.",
+    "boundaries": "9 composition titles at 60 (answer any two; no combination cards); 10 whole reading questions (each one 10-mark price, not split between its parts; the scheme prints no answers)."
+  },
+  "cards": [
+    {
+      "id": "irish-2010-ol-p1-composition-a-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht A(i)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · GIOTA LEANÚNACH (60 marc)\nScríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:\n(i) An áit is fearr liom in Éirinn.",
+      "totalMarks": 60,
+      "topicId": "irish-2-6",
+      "conceptId": "irish-composition-a",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-i",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(i)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht A(i)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht A(ii)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · GIOTA LEANÚNACH (60 marc)\nScríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:\n(ii) Duine cáiliúil a thaitníonn go mór liom.",
+      "totalMarks": 60,
+      "topicId": "irish-2-6",
+      "conceptId": "irish-composition-a",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-ii",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht A(ii)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-a-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht A(iii)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nA · GIOTA LEANÚNACH (60 marc)\nScríobh giota leanúnach (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo:\n(iii) Draíocht an cheoil.",
+      "totalMarks": 60,
+      "topicId": "irish-2-6",
+      "conceptId": "irish-composition-a",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-A-iii",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(iii)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht A(iii)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-b-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht B(i)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nB · SCÉAL (60 marc)\nCeap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis.\n(i) Chonaic mé an liathróid ag teacht i mo threo. D’fhéach mé timpeall orm, ní raibh aon duine in aice liom. Léim mo chroí le háthas …",
+      "totalMarks": 60,
+      "topicId": "irish-2-3",
+      "conceptId": "irish-composition-b",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-B-i",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(i)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht B(i)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht B(ii)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nB · SCÉAL (60 marc)\nCeap scéal (leathleathanach nó mar sin) a mbeidh ceann amháin de na sleachta seo a leanas oiriúnach mar thús leis.\n(ii) Bhí brón orm gur thóg mé mo chara liom ar saoire mar bhí sé/sí ag gearán an t-am go léir.",
+      "totalMarks": 60,
+      "topicId": "irish-2-3",
+      "conceptId": "irish-composition-b",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-B-ii",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht B(ii)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-c-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht C(i)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nC · LITIR (60 marc)\n(i) Tá teach ósta nua oscailte ag do thuismitheoirí agus tá post samhraidh ar fáil sa chistin ann.\nScríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig cara leat ag insint dó/di faoin bpost agus ag moladh dó/di iarratas a chur isteach ar an bpost sin.",
+      "totalMarks": 60,
+      "topicId": "irish-2-8",
+      "conceptId": "irish-composition-c",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-C-i",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(i)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht C(i)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-c-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht C(ii)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nC · LITIR (60 marc)\n(ii) Tá tú féin agus do chara ag iarraidh airgead a bhailiú chun seandaoine a thabhairt ar saoire.\nScríobh an litir (leathleathanach nó mar sin) a chuirfeá chuig iarscoláire saibhir ó do scoil ag lorg airgid air/uirthi.",
+      "totalMarks": 60,
+      "topicId": "irish-2-8",
+      "conceptId": "irish-composition-c",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-C-ii",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht C(ii)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-d-i",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht D(i)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nD · COMHRÁ (60 marc)\n(i) Ba mhaith le do rang damhsa mór a chur ar siúl i halla na scoile ag deireadh na bliana.\nNíl an príomhoide róchinnte faoin smaoineamh. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh idir an bheirt agaibh faoin ábhar sin.",
+      "totalMarks": 60,
+      "topicId": "irish-2-9",
+      "conceptId": "irish-composition-d",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-D-i",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht D(i)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht D(i)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-composition-d-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "questionRef": "2010 OL Paper 1 Ceapadóireacht D(ii)",
+      "questionText": "Ní mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\n\nFreagair do rogha dhá cheann de A, B, C, D anseo.\n\nD · COMHRÁ (60 marc)\n(ii) Is maith leat féachaint ar na cláir réaltachta mar X Factor ar an teilifís ach is fearr le do chara na cláir spóirt.\nScríobh an comhrá (leathleathanach nó mar sin) a bheadh idir an bheirt agaibh faoi sin.",
+      "totalMarks": 60,
+      "topicId": "irish-2-9",
+      "conceptId": "irish-composition-d",
+      "paperPage": 2,
+      "schemePage": 3,
+      "taskRequirements": [
+        "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+        "Write in the form the question asks for.",
+        "Keep a clear, continuous link between the title and what you write.",
+        "Leathleathanach nó mar sin."
+      ],
+      "criteria": [
+        {
+          "id": "tasc",
+          "label": "An Tasc",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Freagair do rogha dhá cheann de A, B, C, D anseo. I gcás A, B, C, agus D (Dhá cheann le freagairt) Leathleathanach nó breis: Tasc = 3 marc Ábhar = 9 marc = 60 marc × 2 = 120 marc Cumas Gaeilge = 48 marc"
+          ]
+        },
+        {
+          "id": "abhar",
+          "label": "An tÁbhar",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gearrfar pionós ar iarrthóirí mura mbeidh na hiarrachtaí ceapadóireachta ad rem.]"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "An Cumas Gaeilge",
+          "kind": "award",
+          "maxMarks": 48,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Cumas Gaeilge = (i) fairsinge agus saibhreas Stór Gaeilge an iarrthóra (= 40%) móide (ii) beachtas maidir le máistreacht cruinnúsáide ar na príomhghnéithe de cheart na Gaeilge (= 50%) agus litriú (= 10%).]",
+            "Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 3 (Tásc), an marc a bhronntar as 9 (Ábhar) agus an marc a bhronntar as 48 (Gaeilge) a thaispeáint go soiléir ag bun na n-iarrachtaí ceapadóireachta."
+          ]
+        }
+      ],
+      "markingGuideNote": "Whole 60-mark composition: Tasc 3, Ábhar 9, Cumas Gaeilge 48. The 2010 scheme prints no 48-mark table: Cumas Gaeilge is judged on its printed aspects, (i) the range and richness of the candidate’s Irish (40%) and (ii) accuracy in the main features of correct Irish (50%) and spelling (10%), so the award can take any value from 0 to 48. Socruithe Réasúnta (scheme PDF 11): for candidates granted reasonable accommodations, spelling and certain grammar features are not counted; the scheme prints no bands for it.",
+      "paperFileid": "LC001GLP100IV",
+      "atlasQuestionId": "W-D-ii",
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        1,
+        2
+      ],
+      "schemeFileid": "LC001GLP000EV",
+      "schemePages": [
+        3
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht D(ii)",
+        "title": "Gaeilge Gnáthleibhéal 2010 · Páipéar 1 · Ceapadóireacht D(ii)",
+        "pages": [
+          1,
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-a-q1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-A-1",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint A · Ceist 1",
+      "questionText": "1. (a) Luaigh grúpa amháin daoine a chuireann spéis san aimsir. (Alt 1) (b) Cén toradh a bheadh ar aimsir thirim a leanfadh ar feadh i bhfad? (Alt 1)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q1",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "(a) + (b)",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Grúpa amháin daoine a chuireann spéis san aimsir (b) An toradh a bheadh ar aimsir thirim a leanfadh ar feadh i bhfad = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Agus anois an Aimsir …",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-a-q2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-A-2",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint A · Ceist 2",
+      "questionText": "2. (a) Luaigh rud amháin a thaispeánann go bhfuil an aimsir ag athrú. (Alt 2) (b) Cén dochar a dhéanann drochaimsir sa samhradh in Éirinn? (Alt 2)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q2",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "(a) + (b)",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Rud amháin a thaispeánann go bhfuil an aimsir ag athrú (b) An dochar a dhéanann drochaimsir sa samhradh in Éirinn = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Agus anois an Aimsir …",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-a-q3",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-A-3",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint A · Ceist 3",
+      "questionText": "3. (a) Luaigh rud maith amháin a dhéanann an bháisteach. (Alt 3) (b) Is maith le daoine uisce. Tabhair sampla amháin. (Alt 3)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q3",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "(a) + (b)",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Rud maith amháin a dhéanann an bháisteach (b) Is maith le daoine uisce. Tabhair sampla amháin = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Agus anois an Aimsir …",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-a-q4",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-A-4",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint A · Ceist 4",
+      "questionText": "4. Luaigh dhá dhrochrud a bhain leis an aimsir in Éirinn in 2009. (Alt 4)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q4",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. Dhá dhrochrud a bhain leis an aimsir in Éirinn in 2009 = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Agus anois an Aimsir …",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-a-q5",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-A-5",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint A · Ceist 5",
+      "questionText": "5. Luaigh dhá athrú a chaithfimid a dhéanamh sna blianta atá ag teacht. (Alt 5)",
+      "totalMarks": 10,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q5",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 3,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        3
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. Dhá athrú a chaithfimid a dhéanamh sna blianta atá ag teacht = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Agus anois an Aimsir …",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-b-q1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-B-1",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint B · Ceist 1",
+      "questionText": "1. Cá raibh Raidió Rí-Rá á chraoladh roimh thús mhí an Mhárta seo caite? (Alt 1)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. An áit a raibh Raidió Rí-Rá á chraoladh roimh thús mhí an Mhárta seo caite = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Craoladh Digiteach – Todhchaí an Raidió Gaeilge?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-b-q2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-B-2",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint B · Ceist 2",
+      "questionText": "2. Cén difríocht a bhí idir Raidió Rí-Rá agus stáisiúin ar nós Today FM, Spin 103.8 nó RTÉ 2FM? (Alt 2)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q2",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. An difríocht a bhí idir Raidió Rí-Rá agus stáisiúin ar nós Today FM, Spin 103.8 nó RTÉ 2FM. = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Craoladh Digiteach – Todhchaí an Raidió Gaeilge?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-b-q3",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-B-3",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint B · Ceist 3",
+      "questionText": "3. Cén fáth a raibh seans ag daoine óga taitneamh a bhaint as an gclár “Nocht ag a hOcht”? (Alt 3)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q3",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. An fáth a raibh seans ag daoine óga taitneamh a bhaint as an gclár “Nocht ag a hOcht” = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Craoladh Digiteach – Todhchaí an Raidió Gaeilge?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-b-q4",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-B-4",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint B · Ceist 4",
+      "questionText": "4. Luaigh na tíortha lasmuigh d’Éirinn ina raibh éisteoirí ag Raidió Rí-Rá. (Alt 4)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. Na tíortha lasmuigh d’Éirinn ina raibh éisteoirí ag Raidió Rí-Rá. = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Craoladh Digiteach – Todhchaí an Raidió Gaeilge?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2010-ol-p1-reading-b-q5",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "R-B-5",
+      "questionRef": "2010 OL Paper 1 Léamhthuiscint B · Ceist 5",
+      "questionText": "5. (a) Cén stáisiún raidió in Éirinn atá ag craoladh ar an gcóras digiteach anois? (b) Cad a tharlóidh má éiríonn go maith leis an gcóras digiteach in Éirinn? (Alt 5)",
+      "totalMarks": 10,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5",
+      "paperFileid": "LC001GLP100IV",
+      "paperPage": 4,
+      "schemeFileid": "LC001GLP000EV",
+      "schemePage": 4,
+      "schemePages": [
+        4
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        4
+      ],
+      "taskRequirements": [
+        "Read the official extract that goes with the question.",
+        "Answer every sub-part and keep to the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "(a) + (b)",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) An stáisiún raidió in Éirinn atá ag craoladh ar an gcóras digiteach anois (b) An rud a tharlóidh má éiríonn go maith leis an gcóras digiteach in Éirinn = 10 marc"
+          ],
+          "tariffOnly": true
+        }
+      ],
+      "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question; “[Gearrfar pionós i ngeall ar iomarcaíocht]” for redundancy, likewise.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Craoladh Digiteach – Todhchaí an Raidió Gaeilge?",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

@@ -2,7 +2,11 @@
 """Author every Design & Communication Graphics part the scheme prices.
 
     python3 scripts/markbank/authoring/dcg_all.py --report   # counts, refusals
-    python3 scripts/markbank/authoring/dcg_all.py > scripts/markbank/authored/dcg.json
+    python3 scripts/markbank/authoring/dcg_all.py --write    # authored/dcg.json
+
+--write, never a shell redirect: the generator reads the shipped file for the
+cards edited by hand after generation (SHIPPED_EDITS), and `> dcg.json`
+empties that file before the script can read it.
 
 WHAT A DCG CARD IS. The scheme prices one drawing as a numbered sequence of
 CONSTRUCTION STEPS, each with its own mark:
@@ -48,17 +52,89 @@ import cardlint                                              # noqa: E402
 import dcg_paper as DP                                       # noqa: E402
 import dcg_topics as DT                                      # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from dcg_scheme import (CUE_FLOOR, DcgScheme, cue_score,     # noqa: E402
-                        has_scheme)
-from markbank_authoring import anyN                          # noqa: E402
+from dcg_scheme import (CUE_FLOOR, DcgScheme, Unit,          # noqa: E402
+                        cue_score, has_scheme)
 
 SUBJECT = 'dcg'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
+# The sittings this deck cards. The census reads every sitting on disk,
+# 2010-2026; the deck grows a sitting at a time, each admitted here once its
+# cards, crops, paper link and Atlas question have been checked. A sitting not
+# yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
+CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
+          | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
+             (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
+             (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
+             (2012, 'hl'), (2012, 'ol'), (2011, 'hl'), (2011, 'ol'),
+             (2010, 'hl'), (2010, 'ol')})
+# The SEC's deferred sittings carded (dcg_paper.DEFERRED_SITTINGS lists those
+# in the archive). Each is its own census paper, 'Deferred'; its cards are
+# "dcg-<year>-<level>-deferred-..." and cite "... — Deferred sitting".
+CARDED_DEFERRED = {(2022, 'hl'), (2023, 'hl')}
+
+# Cards edited by hand after generation, kept exactly as shipped. None since
+# November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
+# by hand, with "elevation (2) and plan (2)" as parts, and step_row() now
+# builds exactly that from the scheme for every card.
+SHIPPED_EDITS = ()
+
+# Live card ids that a corrected citation would otherwise rename. An id keys a
+# student's review history and is never renamed: the citation is corrected,
+# the id is kept. 2019 Ordinary B-1's "(a) Given Elevation and Plan" shipped
+# as dcg-2019-ol-b1 citing "Q1(a), (b)" -- the old alignment spread it over
+# both letters; it prices (a), and November 2026's pairing cites it so.
+KEPT_IDS = {'dcg-2019-ol-b1a': 'dcg-2019-ol-b1'}
+AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.json')
+
+# The Topic Atlas files every printed question under the syllabus headings it
+# was verified against, question by question. A card must sit under a topic its
+# own Atlas question carries, or a student browsing that topic finds the
+# question and not the card. A card whose classified topic is not one of its
+# question's Atlas topics takes the question's primary Atlas topic: 2018
+# Higher B-3(c) classified as Rotation for the words "true length", inside a
+# question the Atlas files, rightly, under Intersecting Planes. Applied to every
+# sitting since November 2026, when it moved 77 of the 2019-2026 cards.
+ATLAS_TAGS = os.path.join(ROOT, 'scripts', 'paper-trail', 'topic-tags', 'tags',
+                          'design-and-communication-graphics.json')
+
+
+@functools.lru_cache(maxsize=None)
+def atlas_topics():
+    """{(year, level word, paperKey, n): [primary, secondary...]} for EV papers.
+
+    A deferred sitting's booklet ("LC562ALP014EV-deferred.pdf") is numbered as
+    June's, so its questions are keyed with a fifth element, 'deferred', and
+    never replace June's question of the same number."""
+    with open(ATLAS_TAGS, encoding='utf-8') as fh:
+        tags = json.load(fh)
+    out = {}
+    for paper in tags:
+        if paper['lang'] != 'ev':
+            continue
+        tail = ('deferred',) if paper['fileid'].endswith('-deferred.pdf') else ()
+        for q in paper['q']:
+            out[(paper['year'], paper['level'], paper['paperKey'], q['n'])
+                + tail] = \
+                [q['primary']] + ([q['secondary']] if q.get('secondary') else [])
+    return out
+
+
+def atlas_address(section, q):
+    """The Atlas's (paperKey, n) for a printed question: Section A is its own
+    booklet, numbered 1-4; Sections B and C share one, numbered 1-8."""
+    if section == 'A':
+        return 'section-a', str(q)
+    return 'single', str(q if section == 'B' else q + 3)
+
 # MAX_LONG_OPTION_ROWS in types/markBank.ts: the most options any one bounded
 # row may show. A unit longer than this is split by the scheme's OWN named
 # groups, which is the only division of it the SEC printed.
 MAX_STEPS_SHOWN = 16
+# MAX_ROWS in types/markBank.ts: the most REQUIRED rows a fixed-tariff card may
+# carry. test/markBankDeck.test.ts enforces it, with a debt list it says never
+# to grow.
+MAX_ROWS = 6
 
 # ------------------------------------------------------------------ pairing
 def pair(units, leaves, texts):
@@ -84,6 +160,34 @@ def pair(units, leaves, texts):
             paper_letters.append(key[2])
     if m == len(paper_letters) and [u.letter for u in units] == paper_letters:
         return [(u, [k for k in leaves if k[2] == u.letter]) for u in units]
+    # The scheme letters the SAME parts as the paper, in the same order, and
+    # prices some of a part under extra unlettered heads printed beneath its
+    # letter: 2017 Higher B-3 prints "(a) Required Plan (11)", then
+    # "Perspective Drawing of Prism (21)" and "Perspective of required lines
+    # on surfaces B, A and C (6)", then "(b) Development of Display Box (7)".
+    # The two documents still agree on every address, so an unlettered head
+    # belongs to the letter printed above it. Where the letters do NOT match
+    # (2021 Ordinary B-3 prices the paper's (b) under unlettered heads and
+    # letters its (c) "(b)"), the alignment below decides, as before.
+    # A letter may open more than one priced head: 2019 Ordinary B-1 scopes
+    # "(b) Interpenetration" over two priced sub-heads, each read as a unit
+    # lettered (b). The letters agree with the paper once each is counted
+    # where it is first printed.
+    if by_address(units, leaves):
+        out, letter = [], None
+        for u in units:
+            letter = u.letter or letter
+            under = [k for k in leaves if k[2] == letter]
+            # A head that prints the ROMAN it prices: 2011 Higher C-1 sets
+            # "(b) (i) Strike Line (4)" and "(ii) Dip of stratum (6)" against
+            # the paper's (b)(i) and (b)(ii) (2010 Higher C-1 the same). The
+            # roman is the address the SEC printed; spread over the whole
+            # letter, each card cited both romans and asked both.
+            r = HEAD_ROMAN.match(u.title)
+            if r and (letter and any(k[3] == r.group(1) for k in under)):
+                under = [k for k in under if k[3] == r.group(1)]
+            out.append((u, under))
+        return out
 
     # Every pairing the alignment makes has to PAY for itself. Scored on the
     # wording alone, spreading one unit over two asks always scores more than
@@ -143,6 +247,17 @@ def pair(units, leaves, texts):
     return [(units[k], out[k]) for k in range(m)]
 
 
+HEAD_ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)\s')
+
+
+def by_address(units, leaves):
+    """Do both documents letter the same parts in the same order, so that an
+    unlettered head belongs to the letter printed above it?"""
+    paper_letters = list(dict.fromkeys(k[2] for k in leaves if k[2]))
+    lettered = list(dict.fromkeys(u.letter for u in units if u.letter))
+    return bool(units) and bool(units[0].letter) and lettered == paper_letters
+
+
 # --------------------------------------------------------------- citations
 def ref_for(year, level, section, q, covered, all_leaves):
     """The paper's own address for what one card holds."""
@@ -195,14 +310,300 @@ def ask_text(covered, texts, parent):
     return PARTS_LIST.sub('', joined).strip()
 
 
-def card_id(year, level, section, q, covered, ordinal, many):
+def parent_words(P, section, q, covered):
+    """The lettered parts' own words, for a card that covers romans under them.
+
+    A letter that opens romans often states the data the romans work from:
+    2018 Higher C-4(a) describes the mechanism there -- "Crank OA, which is
+    48mm long ... AB and CB are both 110mm long" -- and its romans only say
+    what to draw, so a card without the letter's words asks for the locus of
+    a mechanism it never described. Lifted into the card's STEM, in order, once
+    per letter. 26 cards needed it in November 2026.
+    """
+    out = []
+    for letter in dict.fromkeys(k[2] for k in covered if k[2] and k[3]):
+        own = ' '.join((P.parent_text(section, q, letter) or '').split())
+        if own:
+            out.append(own)
+    return out
+
+
+def card_id(year, level, section, q, covered, ordinal, many, sitting='main'):
     letters = sorted({k[2] for k in covered if k[2]})
     tail = letters[0] if len(letters) == 1 else ''
     romans = sorted({k[3] for k in covered if k[3]})
     if len(romans) == 1 and len(letters) <= 1:
         tail += romans[0]
-    base = f'dcg-{year}-{level}-{section.lower()}{q}{tail}'
+    deferred = '-deferred' if sitting == 'deferred' else ''
+    base = f'dcg-{year}-{level}{deferred}-{section.lower()}{q}{tail}'
     return f'{base}-{ordinal}' if many else base
+
+
+# -------------------------------------------------------------------- rows
+# A step the scheme prices in parts, inside its own words. Three printed forms,
+# and nothing else is read as a price: "(2,2,2)" (and "(1, 2, 1)", "(3x1,2)",
+# "(4 or 1,1,1,1)"), "(4×1)", and "(Any = 1)" -- any curve earns 1, the
+# correct one the step's full marks. "(3 lines)" and "(12 min.)" are not
+# prices: a token that is not a number or a count of marks refuses the whole.
+SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
+# "(Any = 1)", "(Any = 1-2)", and with what is drawn named: "(any curve =
+# 1)" (2013 and 2014 Higher, five steps of 2023 Higher C-2), "(Any ellipse =
+# 2)" (2010 and 2011 Higher).
+ANY_PRICE = re.compile(r'^\s*any(?:\s+[a-z]+)?\s*=?\s*(\d{1,2})'
+                       r'(?:\s*-\s*(\d{1,2}))?\s*$', re.I)
+# "(<12 = 1)": fewer than the required divisions earns 1, the full number the
+# step's marks (2010 Higher C-4, 2011 Higher C-4). Read like "(Any = 1)".
+FEWER_PRICE = re.compile(r'^\s*<\s*\d{1,2}\s*=\s*(\d{1,2})()\s*$')
+# "(4×1)"; 2015 Higher A-1(b) adds what is counted: "(3 x 1 for each
+# surface)".
+COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})(?:\s+for\s+each\s+[a-z]+)?$')
+LABELLED = re.compile(r'^([A-Za-z]+)\s*=\s*(\d{1,2})$')
+# "Projections from elevation (2) and plan (2)": the step names its parts.
+NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
+
+
+def _subset_sums(values):
+    sums = {0}
+    for v in values:
+        sums |= {s + v for s in sums}
+    return sums
+
+
+def sub_ladder(text, marks):
+    """The marks a step can earn at the values printed inside it, or None.
+
+    Every reachable total of the printed parts and nothing between them: a
+    step priced "(2,2,2)" earns 0, 2, 4 or 6, never 3. Refused, and left a
+    single claim, wherever the printed parts do not add up to the step's own
+    printed mark -- 2024 Higher A-4 prints "(1,2)" against a 2-mark step.
+    """
+    # Two or more printed prices NAMED by what earns them, on one step: 2016
+    # Higher B-3(c) prints "Draw correct curve (Any = 1) ... (Ellipse = 2)"
+    # against 3 -- any curve earns 1, an ellipse 2, the correct curve the
+    # step's 3. Each named price is a value the SEC printed; nothing between.
+    named = [LABELLED.match(m.strip()) for m in SUB_PRICE.findall(text)]
+    named = [n for n in named if n]
+    if len(named) >= 2:
+        values = sorted({int(n.group(2)) for n in named})
+        return [0, *values, marks] if all(0 < v < marks for v in values) \
+            else None
+    # Two printed prices on one step that do not name what earns them:
+    # 2012 Higher C-2(a) prints "Draw outline of hyperbolic curves .....(3,2)
+    # ....(any = 2)" against 5. Every value either price reaches is a value the
+    # SEC printed a route to, so the ladder is the union of the two.
+    groups = SUB_PRICE.findall(text)
+    if len(groups) >= 2:
+        each = [sub_ladder(f'({g})', marks) for g in groups]
+        if all(each):
+            return sorted(set().union(*each))
+    for m in reversed(groups):
+        inner = m.strip()
+        a = ANY_PRICE.match(inner) or FEWER_PRICE.match(inner)
+        if a:
+            # "(Any = 1)": any curve earns 1, the right one the step's marks.
+            # "(Any = 1-2)" (2017 Higher C-2): any curve earns 1 or 2.
+            lo = int(a.group(1))
+            hi = int(a.group(2)) if a.group(2) else lo
+            if not 0 < lo <= hi < marks:
+                return None
+            return [0, *range(lo, hi + 1), marks]
+        reach = set()
+        for route in re.split(r'\s+or\s+', inner):
+            values = []
+            for token in re.split(r'\s*[,&+]\s*', route.strip()):
+                c = COUNT.match(token)
+                if c:
+                    values += [int(c.group(2))] * int(c.group(1))
+                elif token.isdigit():
+                    values.append(int(token))
+                else:
+                    return None
+            if sum(values) != marks:
+                return None
+            reach |= _subset_sums(values)
+        return sorted(reach) if len(reach) > 2 else None
+    return None
+
+
+def named_parts(text, marks):
+    """[(name, marks)] where the step prices its own named parts, or None."""
+    found = NAMED_PRICE.findall(text)
+    if len(found) < 2 or sum(int(n) for _w, n in found) != marks:
+        return None
+    return [(w.split()[-1], int(n)) for w, n in found]
+
+
+# A step that names another step by its roman: "Draw plan of horizontal section
+# (identified at (xi)) on AEFG", "Use of points established at (xii) & (xiii)".
+CITES_ROMAN = re.compile(r'\((?:x{0,2}(?:ix|iv|v?i{0,3}))\)')
+
+
+def numbered(steps):
+    """Do this unit's steps need the scheme's own romans to be told apart?
+
+    Where a step cites another by its roman, or the scheme prints the same step
+    twice under no heading (2017 Higher C-4(b) prints "Draw required locus" as
+    (xv) and (xix), once per 60° movement), a step's words alone cannot say
+    which one it is. The roman is printed beside every step in the scheme, so
+    it is lifted with the step's words, and only in such units.
+    """
+    texts = [s.text for s in steps]
+    return (len(set(texts)) != len(texts)
+            or any(CITES_ROMAN.search(t.replace('()', '')) for t in texts))
+
+
+def shown(step, with_roman):
+    return f'({step.roman}) {step.text}' if with_roman else step.text
+
+
+def step_row(row_id, step, with_roman=False):
+    """One step as a claim row: a point, or stepped where the step prints parts."""
+    named = named_parts(step.text, step.marks)
+    if named:
+        return {'id': row_id, 'kind': 'criterion', 'verbatim': shown(step, with_roman),
+                'marks': step.marks, 'permittedMarks': [0, step.marks],
+                'parts': [{'id': name.lower(), 'verbatim': name, 'marks': n,
+                           'permittedMarks': [0, n]} for name, n in named]}
+    ladder = sub_ladder(step.text, step.marks)
+    if ladder:
+        return {'id': row_id, 'kind': 'criterion',
+                'verbatim': shown(step, with_roman),
+                'marks': step.marks, 'permittedMarks': ladder}
+    return {'id': row_id, 'kind': 'point', 'verbatim': shown(step, with_roman),
+            'marks': step.marks}
+
+
+def step_ladder(step):
+    """A step's own steps when it is one PART of a long unit's row."""
+    named = named_parts(step.text, step.marks)
+    if named:
+        return sorted(_subset_sums([n for _w, n in named]))
+    return sub_ladder(step.text, step.marks) or [0, step.marks]
+
+
+PRESENTATION = re.compile(r'^Presentation\b', re.I)
+PRESENTATION_NOTE = ('The scheme prices Presentation on the whole question, '
+                     'not on one part: claim it once, here, for the finished '
+                     'drawing.')
+
+
+def step_rows(card_id, title, steps, extra=()):
+    """The scheme's priced steps as claim rows, each at its own printed marks.
+
+    A DCG drawing is priced as a run of construction steps, every one of them
+    REQUIRED and each worth its own printed mark. They were carried as one
+    anyN group ("All 3 of these -- 1 then 2 then 5 marks"), and an anyN group
+    pays by HOW MANY options are ticked, in the order the marks are listed:
+    ticking only dcg-2019-hl-a1b's 5-mark step scored 1. A step is a point the
+    student either drew or did not, so it is a row of its own, claimed on its
+    own, scored at its own price.
+
+    Up to MAX_ROWS steps, one point row per step. Past it -- 57 of the deck's
+    units price seven to sixteen steps -- one criterion row whose PARTS are the
+    steps, each awarded on its own at 0 or its printed marks: the model
+    Construction Studies prices its named components in, and the same claim,
+    since a part scores what is placed on it and nothing else.
+    """
+    tail = [{'id': '', 'kind': 'point', 'verbatim': s.text, 'marks': s.marks,
+             'contextNote': PRESENTATION_NOTE} for s in extra]
+    with_roman = numbered(steps)
+    if len(steps) + len(tail) <= MAX_ROWS:
+        rows = [step_row(f'{card_id}-r{i}', s, with_roman)
+                for i, s in enumerate(steps, 1)]
+    else:
+        rows = [_parts_row(card_id, title, steps, with_roman)]
+    for row in tail:
+        row['id'] = f'{card_id}-r{len(rows) + 1}'
+        rows.append(row)
+    return rows
+
+
+def _parts_row(card_id, title, steps, with_roman=False):
+    total = sum(s.marks for s in steps)
+    return {
+        'id': f'{card_id}-r1', 'kind': 'criterion', 'verbatim': title,
+        'marks': total, 'permittedMarks': [0, total],
+        'contextNote': 'The scheme prices this drawing step by step: award '
+                       'each step you drew its own marks.',
+        'parts': [{'id': f'step-{i}', 'verbatim': shown(s, with_roman),
+                   'marks': s.marks,
+                   'permittedMarks': step_ladder(s)}
+                  for i, s in enumerate(steps, 1)],
+    }
+
+
+# ------------------------------------------------------------ source material
+# Section C's Geologic Geometry question is answered ON a contour map that the
+# SEC prints on the back page of the SECTION A booklet, not with the question:
+# "This Contour Map is part of Section C and should only be used for the
+# answering of the Geologic Geometry Option". The question crop cannot show
+# it, so every C-1 card carries that page as source material, opened in the
+# official page reader from the Section A booklet (resolved by build-deck from
+# its Paper Trail label, never typed).
+# Matched across the line breaks and double spaces some years print in it.
+CONTOUR_CAPTION = re.compile(r'This\s+Contour\s+Map\s+is\s+part\s+of\s+Section\s+C', re.I)
+
+
+# The map is printed SIDEWAYS: its caption runs down a portrait page, and the
+# reader turns the page by this much, clockwise, to set it upright. Read from
+# the caption's own text direction, less any /Rotate the page already carries
+# (2013's booklets set /Rotate 270 and need nothing more).
+UPRIGHT = {(0, 1): 270, (0, -1): 90, (1, 0): 0, (-1, 0): 180}
+
+
+@functools.lru_cache(maxsize=None)
+def contour_map_page(year, level, sitting='main'):
+    """(one-based page, clockwise turn) of the contour map in the Section A
+    booklet, or None."""
+    import pymupdf
+    P = DP.load(year, level, SUBJECT, sitting)
+    for path in P.files:
+        with pymupdf.open(path) as doc:
+            prints_a = any(DP.QHEAD.match(r[3]) and r[3].startswith('A')
+                           for page in doc for r in DP.rows(page))
+            if not prints_a:
+                continue
+            pages = [i for i, page in enumerate(doc)
+                     if CONTOUR_CAPTION.search(page.get_text())]
+            if len(pages) != 1:
+                continue
+            page = doc[pages[0]]
+            dirs = {tuple(round(v) for v in line['dir'])
+                    for block in page.get_text('dict')['blocks']
+                    for line in block.get('lines', [])
+                    if CONTOUR_CAPTION.search(' '.join(
+                        ''.join(sp['text'] for sp in line['spans']).split())
+                        + ' is part of Section C')
+                    or 'Contour Map' in ''.join(sp['text'] for sp in line['spans'])}
+            if len(dirs) != 1 or next(iter(dirs)) not in UPRIGHT:
+                return None
+            return pages[0] + 1, (UPRIGHT[next(iter(dirs))] - page.rotation) % 360
+    return None
+
+
+def contour_map(year, level, sitting='main'):
+    found = contour_map_page(year, level, sitting)
+    if found is None:
+        return None
+    page, turn = found
+    word = 'Higher' if level == 'hl' else 'Ordinary'
+    # A deferred card's map is its own sitting's Section A booklet: build-deck
+    # resolves the label against the deferred index entry for a deferred card.
+    deferred = ', deferred examination' if sitting == 'deferred' else ''
+    return {
+        'kind': 'source-illustration',
+        'label': 'Contour Map',
+        'title': 'The contour map for Question C-1, on the back page of the '
+                 'Section A booklet',
+        'pages': [page],
+        **({'pageRotations': {str(page): turn}} if turn else {}),
+        'sourceLabel': 'Section A',
+        'attribution': f'SEC Leaving Certificate Design and Communication '
+                       f'Graphics {year} {word} Level{deferred}, Section A — '
+                       f'© State Examinations Commission.',
+        'presentationNote': 'The back page of the Section A booklet, exactly '
+                            'as it was printed for the examination.',
+    }
 
 
 # ----------------------------------------------------------------- figures
@@ -221,11 +622,14 @@ def figure_index():
         with open(path, encoding='utf-8') as fh:
             manifest = json.load(fh)
         for key in manifest:
-            m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)-paper-sec([ABC])'
+            m = re.fullmatch(r'dcg-(\d{4})-(HL|OL)(-deferred)?-paper-sec([ABC])'
                              r'-q(\d)-art', key)
             if m:
-                figs[(int(m.group(1)), m.group(2).lower(), m.group(3),
-                      int(m.group(4)))] = key
+                # A deferred sitting's crop is keyed with a fifth element, so
+                # it never stands in for June's question of the same number.
+                figs[(int(m.group(1)), m.group(2).lower(), m.group(4),
+                      int(m.group(5)))
+                     + (('deferred',) if m.group(3) else ())] = key
     return figs
 
 
@@ -264,8 +668,19 @@ def split_by_groups(unit):
     """
     groups = []
     for step in unit.steps:
+        # A step printed before the unit's first heading belongs to the whole
+        # unit, not to either section of it: 2016 Higher C-1(a) opens with
+        # "(i) Measure required 10mm distances perp. to pool edge" above its
+        # Embankment and Cutting headings. It is a piece of its own, under the
+        # unit's own printed title. After a heading, an unheaded step still
+        # refuses: nothing printed says where it belongs.
         if not step.group:
-            return None
+            if groups and groups[-1][0] != unit.title:
+                return None
+            if not groups:
+                groups.append((unit.title, []))
+            groups[-1][1].append(step)
+            continue
         if not groups or groups[-1][0] != step.group:
             groups.append((step.group, []))
         groups[-1][1].append(step)
@@ -287,16 +702,27 @@ def author(bind_figures=True):
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
-        P = DP.load(year, level, SUBJECT)
+        sitting = 'deferred' if paper.get('paper') == 'Deferred' else 'main'
+        # Everything a deferred card says about its sitting: the fifth key
+        # element its Atlas question and crop are filed under, and the
+        # citation's last words.
+        tail = ('deferred',) if sitting == 'deferred' else ()
+        cite = ' — Deferred sitting' if sitting == 'deferred' else ''
+        if (year, level) not in (CARDED if sitting == 'main'
+                                 else CARDED_DEFERRED):
+            refused['this sitting is censused and not yet carded'] += \
+                paper['leafCount']
+            continue
+        P = DP.load(year, level, SUBJECT, sitting)
         leaves = {tuple(leaf['key']) for leaf in paper['leaves']}
         texts = {ask.key: ask.full_text for ask in P.asks()}
         assert set(texts) == leaves, \
             f'{year} {level}: the authored leaf set is not the census leaf set'
-        if not has_scheme(year, level, SUBJECT):
+        if not has_scheme(year, level, SUBJECT, sitting):
             for key in sorted(leaves):
                 refused['no marking scheme is published for this sitting'] += 1
             continue
-        S = DcgScheme(year, level, SUBJECT)
+        S = DcgScheme(year, level, SUBJECT, sitting)
         wording = letter_only = forced = order_only = 0
 
         for qkey in sorted(P.questions):
@@ -308,13 +734,35 @@ def author(bind_figures=True):
             # A step the scheme prices on the QUESTION rather than on any of
             # its parts. Every Ordinary question ends with one -- a
             # presentation mark for the finished drawing, printed as the next
-            # roman in the run after the last part's last step -- and there is
-            # no ask on the paper to put it on: attaching it to a part would
-            # state a tariff against that part that the SEC never printed.
-            # Named and counted rather than dropped in silence, so the ledger
-            # says what is not on a card and why.
-            for step in (S.questions[qkey].trailer if qkey in S.questions
-                         else []):
+            # roman in the run after the last part's last step. There is no
+            # ask on the paper to price it against, so it is not folded into
+            # any part's tariff: it is its own row on the question's first
+            # card, saying so (PRESENTATION_NOTE), and that card's total grows
+            # by exactly the printed mark, so the question's cards add up to
+            # the question.
+            # Presentation is the one such step every Ordinary question prints,
+            # and it is a printed price, so it is claimable: a row on the
+            # question's FIRST card, saying the scheme prices it on the whole
+            # question. Any other question-level step stays a named refusal.
+            presentation = [step for step in (
+                S.questions[qkey].trailer if qkey in S.questions else [])
+                if PRESENTATION.match(step.text)]
+            # A question asked WHOLE that the scheme prices with no head at
+            # all: its romans follow "QUESTION A-3" straight away (2013
+            # Ordinary A-3; also 2011 Higher A-3, 2012 Higher A-3, 2012
+            # Ordinary A-4). The steps are the question's own unit, titled by
+            # the scheme's heading, at the sum of the marks printed against
+            # them (the question's printed "Total =", less Presentation).
+            loose = [step for step in (S.questions[qkey].trailer
+                                       if qkey in S.questions else [])
+                     if step not in presentation]
+            if not unit_list and loose and len(mine) == 1:
+                whole = Unit(None, f'Question {section}-{q}',
+                             sum(step.marks for step in loose))
+                whole.steps = list(loose)
+                unit_list = [whole]
+                loose = []
+            for step in loose:
                 reason = ('the scheme prices this step on the QUESTION, '
                           'under no part the paper asks')
                 refused[reason] += 1
@@ -339,16 +787,21 @@ def author(bind_figures=True):
             # is decided by how many cards the question makes and not by how
             # many share one address.
             bases = collections.Counter(
-                card_id(year, level, section, q, cov, 1, False)
+                card_id(year, level, section, q, cov, 1, False, sitting)
                 for _u, cov in pairing)
 
+            question_carded = False
+            addressed = by_address(unit_list, mine)
+            scope = None
             for index, (unit, covered) in enumerate(pairing, 1):
+                scope = unit.letter or scope
                 ref = ref_for(year, level, section, q, covered, leaves)
-                base = card_id(year, level, section, q, covered, 1, False)
+                base = card_id(year, level, section, q, covered, 1, False,
+                               sitting)
                 many = per_address[tuple(covered)] > 1
                 ordinal[base] += 1
                 cid = card_id(year, level, section, q, covered,
-                              ordinal[base], bases[base] > 1)
+                              ordinal[base], bases[base] > 1, sitting)
 
                 def note(reason, detail=''):
                     verdicts.append({'year': year, 'level': level, 'ref': ref,
@@ -365,6 +818,15 @@ def author(bind_figures=True):
                 elif score >= CUE_FLOOR:
                     wording += 1
                 elif unit.letter and any(unit.letter == k[2] for k in covered):
+                    letter_only += 1
+                elif addressed and scope and all(k[2] == scope
+                                                 for k in covered):
+                    # An unlettered head printed under its letter, where the
+                    # two documents letter the same parts: 2015 Higher B-1
+                    # prices (a) under "Outline Plan and Elevation", then
+                    # "Outline auxiliary view" and "Plan of elliptical
+                    # transmission area" beneath it. Its address is the
+                    # letter the SEC printed above it, not its order.
                     letter_only += 1
                 else:
                     order_only += 1
@@ -390,6 +852,11 @@ def author(bind_figures=True):
                 pieces = [(None, unit.marks, unit.steps)]
                 if len(unit.steps) > MAX_STEPS_SHOWN or repeats(unit):
                     split = split_by_groups(unit)
+                    # A step printed twice under no heading at all is told
+                    # apart by its roman, which step_rows then shows.
+                    if not split and len(unit.steps) <= MAX_STEPS_SHOWN \
+                            and numbered(unit.steps):
+                        split = pieces
                     if not split:
                         note('the scheme states the same priced step twice, '
                              'or more than '
@@ -398,7 +865,15 @@ def author(bind_figures=True):
                         continue
                     pieces = split
 
-                stem = ' '.join((qq['stem'] or '').split())
+                # The parts list an assembly prints is a table, and read as
+                # text it is two-word fragments: PARTS_LIST comes off the stem
+                # as it does off the ask. Left on, every C-5 stem ended "Part
+                # Name Qty. Main Body Base Brass Insert", and a C-5 asked whole
+                # printed its own words twice, the stem no longer matching the
+                # ask it repeats.
+                own = PARTS_LIST.sub('', ' '.join((qq['stem'] or '').split()))
+                stem = ' '.join([own.strip()]
+                                + parent_words(P, section, q, covered)).strip()
                 # A question the paper asks WHOLE has no ask of its own: its
                 # leaf text IS the stem, so the card would print the same
                 # paragraph twice, once above the other.
@@ -410,7 +885,16 @@ def author(bind_figures=True):
                 if topic is None:
                     note('files under no syllabus heading', why)
                     continue
-                figure = figures.get((year, level, section, q))
+                tags = atlas_topics().get(
+                    (year, LEVEL_WORD[level]) + atlas_address(section, q)
+                    + tail)
+                if not tags:
+                    note('the Topic Atlas lists no question at this '
+                         'address', ref)
+                    continue
+                if topic not in tags:
+                    topic = tags[0]
+                figure = figures.get((year, level, section, q) + tail)
                 if cardlint.NAMES_LETTERS.search(f'{stem} {question}') \
                         and not cardlint.INVITES_DRAWING.search(question):
                     note('names a lettered part this author cannot decode',
@@ -436,16 +920,14 @@ def author(bind_figures=True):
                     title = label or unit.title
                     if label or many:
                         piece_ref = f'{ref} — {title}'
+                    piece_ref += cite
                     if label:
                         piece_id = f'{cid}-{piece_no}'
-                    rows = [anyN(
-                        f'{piece_id}-r1', options[0], marks, len(options),
-                        step_marks[0], options,
-                        'The scheme prices this drawing step by step: '
-                        + ', '.join(str(m) for m in step_marks)
-                        + f' — {marks} marks in all, in the order the scheme '
-                          'sets them out.',
-                        steps=step_marks if len(set(step_marks)) > 1 else None)]
+                    extra = presentation if not question_carded else []
+                    question_carded = True
+                    piece_id = KEPT_IDS.get(piece_id, piece_id)
+                    rows = step_rows(piece_id, title, steps, extra)
+                    marks += sum(s.marks for s in extra)
                     cards.append({
                         'id': piece_id,
                         'topicId': topic,
@@ -464,8 +946,11 @@ def author(bind_figures=True):
                                         'notation': f'({marks})'},
                         'totalMarks': marks,
                         'rows': rows,
+                        **({'sourceMaterial': contour_map(year, level, sitting)}
+                           if section == 'C' and qq['option'] == 'Geologic Geometry'
+                           and contour_map(year, level, sitting) else {}),
                         'notes': (f'The scheme heads this {title!r} and prices '
-                                  f'it at {marks}. '
+                                  f'it at {marks - sum(s.marks for s in extra)}. '
                                   'Construction lines must be shown on all '
                                   'solutions, and the scheme notes that other '
                                   'valid solutions are acceptable and are '
@@ -481,6 +966,7 @@ def main():
     ap.add_argument('--report', action='store_true')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--verdicts')
+    ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
 
     cards, refused, examples, verdicts, stats = author()
@@ -507,7 +993,24 @@ def main():
             for e in examples[reason][:80 if args.all else 3]:
                 print(f'            {e}')
         return 0
-    print(json.dumps(cards, ensure_ascii=False, indent=1))
+    with open(AUTHORED, encoding='utf-8') as fh:
+        text = fh.read()
+    if not text.strip():
+        raise SystemExit(f'{AUTHORED} is empty: run with --write, not a shell '
+                         'redirect, which empties the file before it is read')
+    shipped = {c['id']: c for c in json.loads(text)}
+    generated = {c['id'] for c in cards}
+    for cid in SHIPPED_EDITS:
+        assert cid in shipped and cid in generated, f'{cid}: not in both decks'
+    cards = [shipped[c['id']] if c['id'] in SHIPPED_EDITS else c
+             for c in cards]
+    out = json.dumps(cards, ensure_ascii=False, indent=1) + '\n'
+    if args.write:
+        with open(AUTHORED, 'w', encoding='utf-8') as fh:
+            fh.write(out)
+        print(f'wrote {len(cards)} cards to {AUTHORED}')
+    else:
+        sys.stdout.write(out)
     return 0
 
 
