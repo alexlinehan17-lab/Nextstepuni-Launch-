@@ -170,11 +170,20 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
   }, [asks, topicId]);
   const marks = (cards ?? []).reduce((n, c) => n + (c.totalMarks ?? 0), 0);
   let lastStem = '';
+  // The printed figures these parts point at, once each and before them: shared material travels with each topic.
+  const figures = [...new Map((cards ?? []).flatMap(card => {
+    const figure = 'figure' in card ? card.figure : undefined;
+    return figure && !figure.solution ? [[figure.src, figure] as const] : [];
+  })).values()];
   return (
     <div className="px-4 pt-3 pb-4" data-testid="atlas-parts-on-topic">
       <p className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: '#7a7068' }}>
         On this topic: {here.length} of {asks.length} parts{cards && marks ? ` · ${marks} marks` : ''}
       </p>
+      {figures.map(figure => (
+        <img key={figure.src} src={figure.src} alt={figure.alt} loading="lazy" className="mt-2 rounded-md"
+          style={{ maxWidth: 'min(100%, 320px)', border: '1px solid #eeebe6' }} />
+      ))}
       <ol className="mt-2 space-y-2.5">
         {(cards ?? []).map(card => {
           const stem = card.stem && card.stem !== lastStem ? card.stem : '';
@@ -182,6 +191,7 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
           return (
             <li key={card.id}>
               {stem && <p className="text-[12.5px] italic mb-1" style={{ color: '#5a5550' }}>{stem}</p>}
+
               <div className="flex items-baseline gap-3">
                 <span className="shrink-0 text-[12px] font-bold tabular-nums" style={{ color: INK, minWidth: 64 }}>{card.questionRef.replace(/^\d{4} [A-Z]{2} /, '')}</span>
                 <span className="flex-1 text-[13.5px] leading-snug" style={{ color: INK }}>{card.questionText}</span>
