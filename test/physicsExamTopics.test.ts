@@ -12,6 +12,8 @@ import { describe, expect, it } from 'vitest';
 import physicsReference from '../data/examTopics/physics.json';
 import physicsEvidence from '../data/examTopics/physics-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/physics-curriculum-crosswalk.json';
+import reviewedDeferred2023 from '../data/examTopics/physics-2023-deferred-exam-topic-map.json';
+import reviewedDeferred2022 from '../data/examTopics/physics-2022-deferred-exam-topic-map.json';
 import reviewed2026 from '../data/examTopics/physics-2026-exam-topic-map.json';
 import reviewedOmissions from '../data/examTopics/physics-reference-omissions-topic-map.json';
 import markBankCoverage from '../scripts/markbank/coverage-baseline.json';
@@ -21,6 +23,8 @@ import { CARDS as ordinaryMarkBankCards } from '../components/MarkBank/cards/phy
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import {
   browseTopicIdsForQuestion,
+  logicalQuestionIdentity,
+  questionsForTopics,
   subjectAtlasStats,
   topicsForPaper,
   topicsForSubject,
@@ -151,9 +155,9 @@ describe('Physics exam-topic registry', () => {
       referenceOfficialAssociations: 2482,
       referenceMockAssociations: 2051,
       referenceProviderSampleAssociations: 168,
-      matchedAssociations: 1703,
-      sourceBlockedAssociations: 779,
-      matchedLogicalCards: 391,
+      matchedAssociations: 1836,
+      sourceBlockedAssociations: 646,
+      matchedLogicalCards: 419,
       retainedLocalLogicalCards: 41,
     });
     expect(
@@ -220,17 +224,17 @@ describe('Physics exam-topic registry', () => {
     }
   });
 
-  it('exposes every official Physics edition and question through 2026', () => {
+  it('preserves the main Physics corpus and adds reviewed deferred questions', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'physics');
     expect(physicsEvidence.summary).toMatchObject({
-      localPaperVariants: 68,
-      localPhysicalCards: 864,
-      localLogicalQuestions: 432,
+      localPaperVariants: 70,
+      localPhysicalCards: 892,
+      localLogicalQuestions: 460,
       preservedBaselineVariants: 63,
       preservedBaselineTasks: 790,
     });
-    expect(papers).toHaveLength(68);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(864);
+    expect(papers).toHaveLength(70);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(892);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     for (const paper of papers) {
@@ -288,12 +292,20 @@ describe('Physics exam-topic registry', () => {
       const [level, year, n] = key.split('|') as [
         'higher' | 'ordinary', string, string,
       ];
+      // A subsequent full-paper review may add topics to the omission repair.
+      // It must retain the repair and publish the complete reviewed mapping.
+      const annualPath = path.join(ROOT, 'data', 'examTopics', `physics-${year}-exam-topic-map.json`);
+      const annual = fs.existsSync(annualPath)
+        ? JSON.parse(fs.readFileSync(annualPath, 'utf8')).questions[`${level}|${n}`] as string[] | undefined
+        : undefined;
+      const completeIds = annual ?? expectedIds;
+      expect(completeIds).toEqual(expect.arrayContaining(expectedIds));
       expect(examTopicIdsForQuestion(
         'physics', level, Number(year), 'main', n, 'single', 'ev',
-      )).toEqual(expectedIds);
+      )).toEqual(completeIds);
       expect(examTopicIdsForQuestion(
         'physics', level, Number(year), 'main', n, 'single', 'iv',
-      )).toEqual(expectedIds);
+      )).toEqual(completeIds);
     }
     expect(physicsEvidence.retainedLocalCards.every(card => (
       card.resolution === 'retained-local-reviewed'
@@ -349,7 +361,7 @@ describe('Physics exam-topic registry', () => {
       expect(answerMap.q.map((question: { n: string }) => question.n))
         .toEqual(paper.q.map(question => question.n));
     }
-    expect(schemeMaps).toBe(67);
+    expect(schemeMaps).toBe(69);
     expect(paperOnlyVariants).toEqual([
       { year: 2020, fileid: 'LC021GLP000IV.pdf' },
     ]);
@@ -364,7 +376,7 @@ describe('Physics exam-topic registry', () => {
 
   it('keeps every shipped Mark Bank card linked to the exact old-course practice map', () => {
     const cards = [...higherMarkBankCards, ...ordinaryMarkBankCards];
-    expect(cards).toHaveLength(1133);
+    expect(cards).toHaveLength(4059);
 
     for (const card of cards) {
       const parsed = /^(\d{4})\s+(HL|OL)\s+Q(\d+)/.exec(card.questionRef);
@@ -377,7 +389,7 @@ describe('Physics exam-topic registry', () => {
         'physics',
         level,
         Number(year),
-        'main',
+        card.paperFileid.includes('-deferred') ? 'deferred' : 'main',
         question,
         'single',
         'ev',
@@ -393,25 +405,152 @@ describe('Physics exam-topic registry', () => {
     }
   });
 
+  it('makes every card reachable in the actual Atlas feed under its canonical curriculum topic', () => {
+    const feeds = new Map<string, ReturnType<typeof questionsForTopics>>();
+    for (const card of [...higherMarkBankCards, ...ordinaryMarkBankCards]) {
+      const fileid = card.paperFileid.replace(/\.pdf$/i, '') + '.pdf';
+      const n = /\bQ(\d+)/.exec(card.questionRef)?.[1];
+      expect(n, card.id).toBeDefined();
+      const paper = topicsForPaper('physics', card.year, card.level, 'ev', fileid);
+      const question = paper?.q.find(q => q.n === n);
+      expect(question, `${card.id}: missing exact source question`).toBeDefined();
+      const matchingTopics = browseTopicIdsForQuestion(paper!, question!)
+        .filter(id => curriculumNodeIdsForExamTopic(id).includes(card.topicId));
+      expect(matchingTopics.length, `${card.id}: no Atlas topic for ${card.topicId}`).toBeGreaterThan(0);
+      for (const topicId of matchingTopics) {
+        if (!feeds.has(topicId)) feeds.set(topicId, questionsForTopics('physics', [topicId]));
+        expect(feeds.get(topicId), `${card.id}: missing from ${topicId}`).toContainEqual({
+          subjectId: 'physics', year: card.year, level: card.level, lang: 'ev',
+          fileid, paperKey: paper!.paperKey, n,
+        });
+      }
+    }
+  });
+
+  it('keeps deferred questions and schemes separate from the main paper with the same numbers', () => {
+    const question = { subjectId: 'physics', level: 'higher' as const, year: 2022,
+      paperKey: 'single', n: '1', fileid: 'LC021ALP000EV.pdf' };
+    const deferred = { ...question, fileid: 'LC021ALP000EV-deferred.pdf' };
+    expect(logicalQuestionIdentity(question)).not.toBe(logicalQuestionIdentity(deferred));
+    expect(logicalQuestionIdentity(question)).toBe(logicalQuestionIdentity({ ...question, fileid: 'LC021ALP000IV.pdf' }));
+    expect(logicalQuestionIdentity(deferred)).toBe(logicalQuestionIdentity({ ...deferred, fileid: 'LC021ALP000IV-deferred.pdf' }));
+    const cards = higherMarkBankCards.filter(card => card.id.startsWith('phys-2022-hl-deferred-'));
+    expect(cards).toHaveLength(131);
+    for (const card of cards) {
+      expect(card.paperFileid, card.id).toBe('LC021ALP000EV-deferred');
+      expect(card.questionRef, card.id).toContain(' — Deferred sitting');
+      expect(card.schemeCitation, card.id).toContain('deferred examination');
+    }
+    const main = higherMarkBankCards.filter(card => card.year === 2022 && !card.id.includes('-deferred-'));
+    expect(main).toHaveLength(128);
+    expect(main.every(card => card.paperFileid === 'LC021ALP000EV')).toBe(true);
+    for (let n = 1; n <= 14; n += 1) {
+      const expected = reviewedDeferred2022.questions[
+        `higher|${n}` as keyof typeof reviewedDeferred2022.questions
+      ];
+      expect(new Set(examTopicIdsForQuestion('physics', 'higher', 2022, 'deferred', String(n), 'single', 'ev')))
+        .toEqual(new Set(expected));
+    }
+    expect(examTopicIdsForQuestion('physics', 'higher', 2022, 'main', '1', 'single', 'ev'))
+      .not.toEqual(examTopicIdsForQuestion('physics', 'higher', 2022, 'deferred', '1', 'single', 'ev'));
+    expect(PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'physics'
+      && paper.fileid.endsWith('-deferred.pdf')).map(paper => paper.year).sort()).toEqual([2022, 2023]);
+  });
+
+  it('includes the 2023 deferred capacitor page and keeps every new task in its Atlas topic', () => {
+    const cards = higherMarkBankCards.filter(card => card.id.startsWith('phys-2023-hl-deferred-'));
+    expect(cards).toHaveLength(131);
+    expect(cards.every(card => card.paperFileid === 'LC021ALP000EV-deferred'
+      && card.schemeCitation.includes('deferred examination'))).toBe(true);
+    expect(higherMarkBankCards.filter(card => card.year === 2023
+      && !card.id.includes('-deferred-'))).toHaveLength(128);
+    for (let n = 1; n <= 14; n += 1) {
+      expect(new Set(examTopicIdsForQuestion('physics', 'higher', 2023, 'deferred', String(n), 'single', 'ev')))
+        .toEqual(new Set(reviewedDeferred2023.questions[
+          `higher|${n}` as keyof typeof reviewedDeferred2023.questions
+        ]));
+    }
+    const anchors = JSON.parse(fs.readFileSync(path.join(ROOT,
+      'public/paper-anchors/2023/LC021ALP000EV-deferred.pdf.json'), 'utf8'));
+    // The final question page also prints acknowledgements. Stopping before it hides Q14(d).
+    expect(anchors.q.find((question: { n: string }) => question.n === '14'))
+      .toMatchObject({ endP: 15, endY: 0.35 });
+    const capacitors = cards.filter(card => card.id.startsWith('phys-2023-hl-deferred-q14-d-'));
+    expect(capacitors).toHaveLength(4);
+    expect(capacitors.at(-1)?.questionText).toContain('0.12 pF');
+    expect(capacitors.at(-1)?.questionText).toContain('0.3 mm');
+  });
+
+  it('preserves shared electronics totals, supplementary context, and alternative calculation routes', () => {
+    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2023-hl-deferred-${suffix}`)!;
+    for (const [suffix, total] of [['i-ii', 12], ['iii-v', 16], ['vi-vii', 15], ['viii-ix', 13]] as const) {
+      const shared = card(`q12-b-${suffix}`);
+      expect(shared.totalMarks).toBe(total);
+      expect(shared.tariffModel).toEqual({ kind: 'questionTotal' });
+      expect(shared.rows.every(row => row.marks === null)).toBe(true);
+      expect(shared.questionText).toContain('\n(');
+    }
+    const fusion = card('q11-iv');
+    expect(fusion.questionFigure?.includesPrompt).toBe(false);
+    expect(fusion.questionFigure?.candId).toBe('physics-2023-hl-deferred-q11-fusion-question');
+    expect(fusion.stem).toContain('fusion reactions');
+    expect(fusion.questionText).toContain('Calculate the energy');
+    expect(fusion.rows[2].contextNote).toContain('9.794 × 10⁻³⁰ kg');
+    const stone = card('q14-a-v');
+    expect(stone.totalMarks).toBe(9);
+    for (const route of ['equation', 'up-down']) {
+      expect(stone.rows.filter(row => 'route' in row && row.route === route)
+        .reduce((sum, row) => sum + (row.marks ?? 0), 0)).toBe(9);
+    }
+    for (const [suffix, intact] of [['q3-vi', 'measure to/from centre of the lens'],
+      ['q5-vi', 'reverse the diode/battery connections']]) {
+      expect(card(suffix).rows[0]).toMatchObject({
+        kind: 'anyN', group: { claimMax: 2, perOption: 3, options: expect.arrayContaining([intact]) },
+      });
+    }
+  });
+
+  it('retains the deferred capacitor plate signs and the separately priced diagram labels', () => {
+    const card = (suffix: string) => higherMarkBankCards.find(c => c.id === `phys-2022-hl-deferred-${suffix}`)!;
+    const a = card('q14-c-iii-plate-a');
+    const b = card('q14-c-iv-plate-b');
+    expect(a.totalMarks).toBe(3);
+    expect(b.totalMarks).toBe(3);
+    expect(a.rows[0]).toMatchObject({ verbatim: 'Q = (3 × 10⁻⁶) × 6 = (+)1.8 × 10⁻⁵ C', marks: 3 });
+    expect(b.rows[0]).toMatchObject({ verbatim: 'Q = –1.8 × 10⁻⁵ C', marks: 3 });
+    expect(card('q12-b-ii')).toMatchObject({
+      totalMarks: 9,
+      labelKey: [{ letter: 'A', meaning: 'cone', askedInThisQuestion: true },
+        { letter: 'B', meaning: 'coil', askedInThisQuestion: true },
+        { letter: 'C', meaning: 'magnet', askedInThisQuestion: true }],
+    });
+    expect(card('q14-d-iii')).toMatchObject({
+      totalMarks: 9,
+      labelKey: [{ letter: 'X', meaning: '36', askedInThisQuestion: true },
+        { letter: 'Y', meaning: 'n', askedInThisQuestion: true },
+        { letter: 'Z', meaning: 'Ba', askedInThisQuestion: true }],
+    });
+  });
+
   it('pins the independently measured Mark Bank remainder instead of hiding it', () => {
     expect(markBankCoverage.physics).toMatchObject({
-      cards: 1133,
-      leaves: 1224,
-      covered: 1119,
-      excluded: 46,
-      open: 59,
-      orphans: 6,
-      coveragePct: 95.2,
+      cards: 4059,
+      leaves: 3250,
+      covered: 3250,
+      excluded: 0,
+      open: 0,
+      orphans: 0,
+      coveragePct: 100,
     });
-    expect(markBankExclusions).toHaveLength(46);
+    expect(markBankExclusions).toHaveLength(0);
     expect(markBankExclusions.every(exclusion => (
       exclusion.ref && exclusion.reason && exclusion.evidence
     ))).toBe(true);
   });
 
-  it('surfaces all 432 entitled questions through all 113 topic buckets', () => {
+  it('surfaces all 460 entitled questions through all 113 topic buckets', () => {
     expect(subjectAtlasStats('physics')).toMatchObject({
-      questions: 432,
+      questions: 460,
       topics: 113,
       yearMin: 2010,
       yearMax: 2026,

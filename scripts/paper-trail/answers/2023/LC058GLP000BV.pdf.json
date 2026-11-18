@@ -1,7 +1,7 @@
 {
   "band": [
     1,
-    17
+    16
   ],
   "component": "000",
   "copyright": "© State Examinations Commission",
@@ -530,6 +530,30 @@
         {
           "p": 11,
           "r": [0.0, 0.0, 1.0, 0.92]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "endP": 10,
+      "endY": 0.6,
+      "label": "Text 3 · B School comparison",
+      "mode": "crop",
+      "n": "25",
+      "pP": 10,
+      "pY": [
+        0.31,
+        0.6
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.805,
+            1.0,
+            0.92
+          ]
         }
       ]
     }

@@ -1,0 +1,1428 @@
+{
+  "questionSha256": "6091b2af30aa83f86af4543db1a7564767949a7f014470ef5bbbeb3371827005",
+  "solutionSha256": "c3915e6641f6ee152fa5efb0836d9dd5bbe697ca071131cdea55a6306295cba3",
+  "tasks": {
+    "maths-2022-hl-p2-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          136,
+          548,
+          207
+        ],
+        [
+          4,
+          50,
+          217,
+          548,
+          236
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          364.92,
+          542,
+          530
+        ]
+      ],
+      "supplement": "matches-chart-2022-hl-deferred",
+      "supplementAlt": "NextStepUni bar chart with number of matches 41–46 and frequencies 3,8,16,17,8,1. Both axes labelled and every bar value shown; original SEC criteria follow."
+    },
+    "maths-2022-hl-p2-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          136,
+          548,
+          207
+        ],
+        [
+          5,
+          50,
+          56,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          71.7,
+          542,
+          376.32
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q1-c": {
+      "question": [
+        [
+          4,
+          50,
+          136,
+          548,
+          207
+        ],
+        [
+          5,
+          50,
+          445,
+          548,
+          508
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          376.32,
+          542,
+          605
+        ]
+      ],
+      "sourceNote": "The seventh pick must be a success. Choose the positions of the other two successes among the first six: C(6,2)(8/53)³(45/53)⁴ = 0.0268089…, giving 0.0268. Replacement makes the trials independent."
+    },
+    "maths-2022-hl-p2-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          129
+        ],
+        [
+          6,
+          50,
+          130,
+          548,
+          162
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          71.7,
+          542,
+          222.78
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          129
+        ],
+        [
+          6,
+          50,
+          301,
+          548,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          222.78,
+          542,
+          402.9
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q2-a-iii": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          129
+        ],
+        [
+          6,
+          50,
+          462,
+          548,
+          484
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          402.9,
+          542,
+          605.46
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          50,
+          53,
+          548,
+          328
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          605.46,
+          542,
+          735
+        ],
+        [
+          29,
+          55,
+          56.7,
+          542,
+          314
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q3-a-i": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          124
+        ],
+        [
+          8,
+          50,
+          125,
+          548,
+          144
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          348.78,
+          542,
+          500.52
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q3-a-ii": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          124
+        ],
+        [
+          8,
+          50,
+          285,
+          548,
+          320
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          500.52,
+          542,
+          667
+        ]
+      ],
+      "sourceNote": "The slope is (k+6)/(2k+2) for k≠−1. When k=−1 the line AP is vertical, so its slope is undefined."
+    },
+    "maths-2022-hl-p2-deferred-q3-a-iii": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          124
+        ],
+        [
+          8,
+          50,
+          285,
+          548,
+          304
+        ],
+        [
+          8,
+          50,
+          461,
+          548,
+          497
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          71.7,
+          542,
+          429.42
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q3-b": {
+      "question": [
+        [
+          9,
+          50,
+          54,
+          548,
+          74
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          429.42,
+          542,
+          715
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q4-a-i": {
+      "question": [
+        [
+          10,
+          50,
+          75,
+          548,
+          464
+        ],
+        [
+          10,
+          50,
+          477,
+          548,
+          498
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          71.7,
+          542,
+          478.62
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q4-a-ii": {
+      "question": [
+        [
+          10,
+          50,
+          75,
+          548,
+          464
+        ],
+        [
+          11,
+          50,
+          54,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          478.62,
+          542,
+          722
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q4-b": {
+      "question": [
+        [
+          11,
+          50,
+          331,
+          548,
+          415
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          56.7,
+          542,
+          310
+        ]
+      ],
+      "sourceNote": "Choose one horizontal tangent, y=6 or y=−4, and one vertical tangent, x=−8 or x=2. One valid pair earns the single overall award; there is no requirement to give all four lines."
+    },
+    "maths-2022-hl-p2-deferred-q5-a-i": {
+      "question": [
+        [
+          12,
+          50,
+          75,
+          548,
+          277
+        ],
+        [
+          12,
+          50,
+          289,
+          548,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          71.7,
+          542,
+          229.26
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q5-a-ii": {
+      "question": [
+        [
+          12,
+          50,
+          75,
+          548,
+          277
+        ],
+        [
+          12,
+          50,
+          518,
+          548,
+          536
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          229.26,
+          542,
+          426.96
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          50,
+          253,
+          548,
+          274
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          426.96,
+          542,
+          658
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          548,
+          126
+        ],
+        [
+          14,
+          225,
+          416,
+          409,
+          439
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          94.2,
+          542,
+          739
+        ]
+      ],
+      "supplement": "root-three-construction-2022-hl-deferred",
+      "supplementAlt": "NextStepUni compass-and-straightedge example. Draw circles centred at X and Y, each with radius XY=1, meeting at Z. Extend YX to W, with WX=1. The highlighted WZ has length √3. Circles, baseline, equilateral triangle, lengths and proof are shown; original SEC guidance follows."
+    },
+    "maths-2022-hl-p2-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          548,
+          252
+        ],
+        [
+          15,
+          50,
+          267,
+          548,
+          389.4
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          56.7,
+          542,
+          201.66
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          548,
+          252
+        ],
+        [
+          15,
+          50,
+          389.5,
+          548,
+          436
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          201.66,
+          542,
+          452
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q7-a-b": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          548,
+          389
+        ],
+        [
+          16,
+          50,
+          398,
+          548,
+          431
+        ],
+        [
+          16,
+          50,
+          489,
+          548,
+          522
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          71.7,
+          542,
+          500.94
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q7-c-i-ii": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          548,
+          389
+        ],
+        [
+          16,
+          50,
+          574,
+          548,
+          592
+        ],
+        [
+          16,
+          50,
+          650,
+          548,
+          698
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          500.94,
+          542,
+          720
+        ]
+      ],
+      "supplement": "judges-best-fit-2022-hl-deferred",
+      "supplementAlt": "NextStepUni example using all ten score pairs. A reasonable line y=0.3x+24 passes through the scatter, with points on both sides. At Mike’s score 35, the reading is Nuala’s score about 37. Other reasonable by-eye lines and consistent readings are accepted; original SEC criteria follow.",
+      "sourceNote": "Use all ten pairs in the table when fitting the line, including B, D and J. This example line is one reasonable by-eye choice. The SEC accepts a reasonable slope, points on both sides, and an estimate consistent with the student’s line; there is no unique exact estimate."
+    },
+    "maths-2022-hl-p2-deferred-q7-d-i": {
+      "question": [
+        [
+          17,
+          50,
+          56,
+          548,
+          305
+        ],
+        [
+          17,
+          50,
+          322,
+          548,
+          358
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          71.7,
+          542,
+          309.72
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q7-d-ii": {
+      "question": [
+        [
+          17,
+          50,
+          56,
+          548,
+          305
+        ],
+        [
+          17,
+          50,
+          530,
+          548,
+          563
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          309.72,
+          542,
+          429.78
+        ]
+      ],
+      "sourceNote": "The plotted line is y=0.5x+10. Its slope means Mike’s predicted score rises by 0.5 points for each extra point in Nuala’s score. This describes an association between their scores."
+    },
+    "maths-2022-hl-p2-deferred-q7-e-i": {
+      "question": [
+        [
+          18,
+          50,
+          56,
+          548,
+          89
+        ],
+        [
+          18,
+          50,
+          91,
+          548,
+          145
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          429.78,
+          542,
+          736
+        ]
+      ],
+      "sourceNote": "For a sample mean, use standard error 3.2/√12. The SEC’s normal-table calculation rounds the z-scores and gives 0.6246; keeping full precision gives about 0.6259. The scheme explicitly accepts rounding z up or down."
+    },
+    "maths-2022-hl-p2-deferred-q7-e-ii": {
+      "question": [
+        [
+          18,
+          50,
+          56,
+          548,
+          89
+        ],
+        [
+          18,
+          50,
+          345,
+          548,
+          393
+        ],
+        [
+          18,
+          50,
+          393,
+          548,
+          414
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          71.7,
+          542,
+          278.7
+        ]
+      ],
+      "sourceNote": "Following the SEC model, use the first-season standard deviation 3.2: z=(33.5−31.6)/(3.2/√20)≈2.655. Doubling the upper-tail probability gives p≈0.0078 (normal-table rounding)."
+    },
+    "maths-2022-hl-p2-deferred-q7-e-iii": {
+      "question": [
+        [
+          18,
+          50,
+          56,
+          548,
+          89
+        ],
+        [
+          18,
+          50,
+          345,
+          548,
+          393
+        ],
+        [
+          18,
+          50,
+          393,
+          548,
+          414
+        ],
+        [
+          18,
+          50,
+          583,
+          548,
+          633
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          278.7,
+          542,
+          383
+        ]
+      ],
+      "sourceNote": "The two-tailed p-value is below 0.05, so reject H₀: μ=31.6. The sample provides evidence that the mean score changed; this supports the website’s claim at the 5% level, rather than proving it."
+    },
+    "maths-2022-hl-p2-deferred-q8-a": {
+      "question": [
+        [
+          19,
+          50,
+          75,
+          548,
+          125
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          71.7,
+          542,
+          159.72
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q8-b": {
+      "question": [
+        [
+          19,
+          50,
+          296,
+          548,
+          385
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          159.72,
+          542,
+          353.4
+        ]
+      ],
+      "sourceNote": "There are 5 vowels, 1 fixed first digit, 10 choices for each middle digit, and 5 odd final digits: 5×1×10×10×5=2500. Digits may repeat."
+    },
+    "maths-2022-hl-p2-deferred-q8-c": {
+      "question": [
+        [
+          20,
+          50,
+          56,
+          548,
+          196
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          353.4,
+          542,
+          502.98
+        ]
+      ],
+      "sourceNote": "The final product in the source should use 0.19, not 1.19. The expected income is 1.20(0.16)+1.60(0.31)+1.95(0.34)+2.35(0.19)=€1.7975, which rounds to €1.80."
+    },
+    "maths-2022-hl-p2-deferred-q8-d-i": {
+      "question": [
+        [
+          20,
+          50,
+          396,
+          548,
+          464
+        ],
+        [
+          20,
+          50,
+          465,
+          548,
+          500
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          502.98,
+          542,
+          715
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q8-d-ii": {
+      "question": [
+        [
+          20,
+          50,
+          396,
+          548,
+          464
+        ],
+        [
+          21,
+          50,
+          54,
+          548,
+          125
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          56.7,
+          542,
+          332.34
+        ]
+      ],
+      "sourceNote": "The required cumulative probability is approximately 0.8093. The corresponding z-value is about 0.875, giving N≈73.1 g and hence 73 g. The source uses 0.88 and obtains 73.2 g; the final rounded answer is unchanged."
+    },
+    "maths-2022-hl-p2-deferred-q8-d-iii": {
+      "question": [
+        [
+          21,
+          50,
+          364,
+          548,
+          485
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          332.34,
+          542,
+          567
+        ]
+      ],
+      "sourceNote": "Condition on the mixed large/extra-large group: P(extra large)=19/(19+23)=19/42. At least five means exactly five or exactly six: C(6,5)(19/42)⁵(23/42)+(19/42)⁶≈0.071."
+    },
+    "maths-2022-hl-p2-deferred-q9-a-i": {
+      "question": [
+        [
+          22,
+          50,
+          77,
+          548,
+          300
+        ],
+        [
+          22,
+          50,
+          320,
+          548,
+          356
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          94.2,
+          542,
+          227.76
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q9-a-ii": {
+      "question": [
+        [
+          22,
+          50,
+          77,
+          548,
+          300
+        ],
+        [
+          23,
+          50,
+          53,
+          548,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          227.76,
+          542,
+          346.86
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q9-a-iii": {
+      "question": [
+        [
+          23,
+          50,
+          265,
+          548,
+          336
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          346.86,
+          542,
+          495.18
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          50,
+          56,
+          548,
+          336
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          495.18,
+          542,
+          736
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q9-c-i": {
+      "question": [
+        [
+          25,
+          50,
+          53,
+          548,
+          222
+        ],
+        [
+          25,
+          50,
+          223,
+          548,
+          258
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          56.7,
+          542,
+          212.76
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q9-c-ii": {
+      "question": [
+        [
+          25,
+          50,
+          53,
+          548,
+          222
+        ],
+        [
+          25,
+          50,
+          413,
+          548,
+          464
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          212.76,
+          542,
+          689.22
+        ]
+      ],
+      "sourceNote": "A rounded angle of 6° allows true angles from 5.5° up to 6.5°. Compare the error relative to each true height, not relative to the estimated height. The lower endpoint gives the larger relative error: about 9.15%, rounding to 9.2%."
+    },
+    "maths-2022-hl-p2-deferred-q10-a": {
+      "question": [
+        [
+          26,
+          50,
+          75,
+          548,
+          379
+        ],
+        [
+          26,
+          50,
+          392,
+          548,
+          448
+        ],
+        [
+          26,
+          343,
+          461,
+          535,
+          710
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          71.7,
+          542,
+          249.36
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q10-b": {
+      "question": [
+        [
+          26,
+          50,
+          75,
+          548,
+          379
+        ],
+        [
+          27,
+          50,
+          54,
+          548,
+          115
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          249.36,
+          542,
+          345.96
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q10-c": {
+      "question": [
+        [
+          26,
+          50,
+          75,
+          548,
+          379
+        ],
+        [
+          27,
+          50,
+          298,
+          548,
+          369
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          345.96,
+          542,
+          745
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q10-d-i": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          548,
+          194
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          80.34,
+          542,
+          213.36
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q10-d-ii": {
+      "question": [
+        [
+          28,
+          50,
+          77,
+          333,
+          159
+        ],
+        [
+          28,
+          50,
+          289,
+          548,
+          728
+        ],
+        [
+          29,
+          50,
+          56,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          213.36,
+          542,
+          537.42
+        ]
+      ]
+    },
+    "maths-2022-hl-p2-deferred-q10-d-iii": {
+      "question": [
+        [
+          28,
+          50,
+          77,
+          333,
+          159
+        ],
+        [
+          28,
+          50,
+          289,
+          548,
+          728
+        ],
+        [
+          29,
+          50,
+          272,
+          548,
+          293
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          537.42,
+          542,
+          668.94
+        ]
+      ],
+      "sourceNote": "C lies on y=1−x and on x=k, so its co-ordinates are (k,1−k). The source labels the scale 5C but prints the three awards 0,2,5; the card uses those exact awards as scale 5B."
+    },
+    "maths-2022-hl-p2-deferred-q10-d-iv": {
+      "question": [
+        [
+          28,
+          50,
+          77,
+          333,
+          159
+        ],
+        [
+          28,
+          50,
+          289,
+          548,
+          728
+        ],
+        [
+          29,
+          50,
+          56,
+          548,
+          89
+        ],
+        [
+          29,
+          50,
+          272,
+          548,
+          293
+        ],
+        [
+          29,
+          50,
+          420,
+          548,
+          477
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          70.62,
+          542,
+          294
+        ]
+      ],
+      "sourceNote": "The source labels this 5D but prints the four awards 0,2,3,5; these are retained as scale 5C. Either the congruent-triangle argument or the co-ordinate calculation establishes a shaded length of 1/2."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        120,
+        5,
+        760
+      ],
+      "scheme": [
+        26,
+        349,
+        27,
+        605
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        55,
+        7,
+        760
+      ],
+      "scheme": [
+        28,
+        56,
+        29,
+        314
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        55,
+        9,
+        760
+      ],
+      "scheme": [
+        29,
+        333,
+        30,
+        715
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        55,
+        11,
+        760
+      ],
+      "scheme": [
+        31,
+        56,
+        32,
+        310
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        55,
+        13,
+        760
+      ],
+      "scheme": [
+        33,
+        56,
+        33,
+        658
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        55,
+        15,
+        760
+      ],
+      "scheme": [
+        34,
+        79,
+        35,
+        452
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        120,
+        18,
+        760
+      ],
+      "scheme": [
+        36,
+        56,
+        38,
+        383
+      ]
+    },
+    "8": {
+      "paper": [
+        19,
+        55,
+        21,
+        760
+      ],
+      "scheme": [
+        39,
+        56,
+        40,
+        567
+      ]
+    },
+    "9": {
+      "paper": [
+        22,
+        55,
+        25,
+        760
+      ],
+      "scheme": [
+        41,
+        79,
+        42,
+        689.22
+      ]
+    },
+    "10": {
+      "paper": [
+        26,
+        55,
+        29,
+        760
+      ],
+      "scheme": [
+        43,
+        56,
+        45,
+        294
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "Visually inspected all 92 question and solution images, including three worked supplements. Corrected and individually re-inspected Q2(b), Q6(b)(i), Q6(b)(ii), and Q10(a) question crops to retain complete diagrams/answer slots and remove stray borders. All original scheme credit notes retained.",
+  "atlasInspectionNote": "Visually swept all 32 paper pages and source cover plus Paper 2 scheme pages 22–47; cross-checked all ten whole-question paper and scheme boundaries. Reconciled all 46 separately marked tasks and 380 offered marks. Q7(a–b) and Q7(c)(i–ii) remain shared awards; both Q10(d) scale-label conflicts follow the printed numeric bands without changing marks."
+}

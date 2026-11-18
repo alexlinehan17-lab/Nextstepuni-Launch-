@@ -1,0 +1,1873 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003BLP200EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "tasks": {
+    "1-a-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 53,
+          "bottom": 101,
+          "x0": 55,
+          "x1": 365
+        },
+        {
+          "page": 2,
+          "top": 108,
+          "bottom": 128,
+          "x0": 110,
+          "x1": 365
+        },
+        {
+          "page": 2,
+          "top": 62,
+          "bottom": 162,
+          "x0": 380,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 251,
+          "bottom": 455,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution"
+      ],
+      "inspectedQuestionSha256": "59a8eca4ae4c96a5d95d5fa066af8bd363138a54c6e3d77b2236f25c81458f0a",
+      "inspectedSolutionSha256": "af8913e34110c54c948de9284b6680774e3b159009058451b1bdd8e834df6f07",
+      "figureKey": "maths-2010-FL-scheme-p043-i0",
+      "publishedQuestionSha256": "cf78c7a13421948f2cd1644ef370ed5e8ae9f3592b1f76adf4cd614a72370d94"
+    },
+    "1-a-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 53,
+          "bottom": 101,
+          "x0": 55,
+          "x1": 365
+        },
+        {
+          "page": 2,
+          "top": 136,
+          "bottom": 156,
+          "x0": 110,
+          "x1": 365
+        },
+        {
+          "page": 2,
+          "top": 62,
+          "bottom": 162,
+          "x0": 380,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 251,
+          "bottom": 455,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution"
+      ],
+      "inspectedQuestionSha256": "c189c7fed67706c82655c99bd17d49b2eec4593c46f51d158d1f4768d46eb18e",
+      "inspectedSolutionSha256": "af8913e34110c54c948de9284b6680774e3b159009058451b1bdd8e834df6f07",
+      "figureKey": "maths-2010-FL-scheme-p043-i0",
+      "publishedQuestionSha256": "c3233a0832f6210c17480652b4f062d56dfe2ce88027bca3a91ecbbfe4fa2a9b"
+    },
+    "1-b-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 233,
+          "bottom": 490,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 328,
+          "bottom": 635,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Gives Simpson’s rule only"
+      ],
+      "inspectedQuestionSha256": "fb6f5b882331052775397e49fa54aa5e0be7be66cdcda49c37aadf5cf9ba3800",
+      "inspectedSolutionSha256": "de5f6d054275bf448ca190db72c7db26db89ba1d6d1abe3f40677d889ea30059",
+      "figureKey": "maths-2010-FL-scheme-p044-i0",
+      "publishedQuestionSha256": "97d6857e93a1b0f43cf82dd99b4e41ee105584d690ac427449bab0b4fb551e39"
+    },
+    "1-b-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 233,
+          "bottom": 459,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 2,
+          "top": 497,
+          "bottom": 588,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 328,
+          "bottom": 635,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Multiplies by 5.4"
+      ],
+      "inspectedQuestionSha256": "a4aff672d2c5a57ef3807ae3b058d4111fe71730c8c2c1cfc0bf14d39e8667fd",
+      "inspectedSolutionSha256": "de5f6d054275bf448ca190db72c7db26db89ba1d6d1abe3f40677d889ea30059",
+      "figureKey": "maths-2010-FL-scheme-p044-i0",
+      "publishedQuestionSha256": "18edade2e1435588d50f8760de5e3c9f9169efd3e5f5f782adf2d0af53093ada"
+    },
+    "2-a": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 53,
+          "bottom": 190,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 280,
+          "bottom": 428,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Correct formula without substitution"
+      ],
+      "inspectedQuestionSha256": "2afddf6431c4a1a405adfa591c9da78ab4ac175e2ed5c656219b4c5ec3f9dd86",
+      "inspectedSolutionSha256": "e783fbc081ca914b344e5ca3cacec91f00426f004cb77e0939a30cf8b8fd6e9c",
+      "figureKey": "maths-2010-FL-scheme-p045-i0",
+      "publishedQuestionSha256": "f007b876fefb3b137052c686ec3b4e3f24b91a893c36bf560e5fb091a490a82e"
+    },
+    "2-b-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 246,
+          "bottom": 280,
+          "x0": 80,
+          "x1": 375
+        },
+        {
+          "page": 3,
+          "top": 287,
+          "bottom": 325,
+          "x0": 80,
+          "x1": 375
+        },
+        {
+          "page": 3,
+          "top": 245,
+          "bottom": 355,
+          "x0": 429,
+          "x1": 540
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 589,
+          "bottom": 770,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Defines area"
+      ],
+      "inspectedQuestionSha256": "906ec28f2e8eb6f38d3194b5d997070d76e614bc34427de72b195e93a517033e",
+      "inspectedSolutionSha256": "b266c545cb32db6d22e3a2b7bb9e3400811ff9118553a69317534c5370488519",
+      "figureKey": "maths-2010-FL-scheme-p045-i1",
+      "publishedQuestionSha256": "9cadb0a901e27f61cbbdc5425a44a5905123895e529c7fac0b10828a3cd759cd"
+    },
+    "2-b-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 246,
+          "bottom": 280,
+          "x0": 80,
+          "x1": 375
+        },
+        {
+          "page": 3,
+          "top": 331,
+          "bottom": 352,
+          "x0": 80,
+          "x1": 375
+        },
+        {
+          "page": 3,
+          "top": 245,
+          "bottom": 355,
+          "x0": 429,
+          "x1": 540
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 589,
+          "bottom": 770,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Defines area"
+      ],
+      "inspectedQuestionSha256": "ed6a99a5d27790732448f0ee0bc9343e81282e6889b4eaffaa26c2fd93ea366a",
+      "inspectedSolutionSha256": "b266c545cb32db6d22e3a2b7bb9e3400811ff9118553a69317534c5370488519",
+      "figureKey": "maths-2010-FL-scheme-p045-i1",
+      "publishedQuestionSha256": "932866644b40bd5872e290d089922cbaaad7bfd9ae3a87fa929e88c0066e078c"
+    },
+    "2-c-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 402,
+          "bottom": 540,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 383,
+          "bottom": 605,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Correct formula without substitution"
+      ],
+      "inspectedQuestionSha256": "8c8800d14249f0fd008d061f291165c34501f56cb296fbf29b7c169c4d863dae",
+      "inspectedSolutionSha256": "0b70e05e39e4ab1a9d0eef1be31924760030464004c0e582ee08424ac0bba835",
+      "figureKey": "maths-2010-FL-scheme-p046-i0",
+      "publishedQuestionSha256": "f6306d3556601c4cbf5ebf4c48a22eb330d63d70491ba65d675b3400ae77204f"
+    },
+    "2-c-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 402,
+          "bottom": 540,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 577,
+          "bottom": 715,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 383,
+          "bottom": 605,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Error in balancing equation"
+      ],
+      "inspectedQuestionSha256": "e7ff0ab02ec2aa1d13d3c24a0bfe499928638b6c9f08f2ec2765e6dab1a61f4d",
+      "inspectedSolutionSha256": "0b70e05e39e4ab1a9d0eef1be31924760030464004c0e582ee08424ac0bba835",
+      "figureKey": "maths-2010-FL-scheme-p046-i0",
+      "publishedQuestionSha256": "47e6b7aceeacdd53840936846ec87df065a8868c7066006c6e8b2bbc76791670"
+    },
+    "3-a": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 46,
+          "bottom": 145,
+          "x0": 415,
+          "x1": 530
+        },
+        {
+          "page": 4,
+          "top": 67,
+          "bottom": 88,
+          "x0": 55,
+          "x1": 305
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 265,
+          "bottom": 455,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "cbce0ca1e6212af7ddaf4ae20fbbbd72a2a554872c2f3ad9ca3a1609d7571f25",
+      "inspectedSolutionSha256": "d25a00539f675dbd25cd23e013fb5f7387f4f16b6b8113d239ed3d68301589d7",
+      "figureKey": "maths-2010-FL-scheme-p047-i0",
+      "publishedQuestionSha256": "bc4bfb399d2f5b86fbfe05d84b47b8af45926f80b40771d975b2501a42ea832f"
+    },
+    "3-b-i": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 122,
+          "bottom": 142,
+          "x0": 80,
+          "x1": 300
+        },
+        {
+          "page": 4,
+          "top": 150,
+          "bottom": 170,
+          "x0": 110,
+          "x1": 250
+        },
+        {
+          "page": 4,
+          "top": 131,
+          "bottom": 239,
+          "x0": 306,
+          "x1": 470
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 212,
+          "bottom": 389,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "18f5e987db830c181c3aa202668ec43dc6ef10a893f968367b871c7a83b4566f",
+      "inspectedSolutionSha256": "85f7d28a8d0aa192a1bb93230e8b05410a7225459fadc1e13bb333c7aa8701be",
+      "figureKey": "maths-2010-FL-scheme-p048-i0",
+      "publishedQuestionSha256": "5bfbbc8120a3a047e2a7bb9bd2b4d388ad3b2ae4a6b2bd574ad6fa8b22804c1a"
+    },
+    "3-b-ii": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 122,
+          "bottom": 142,
+          "x0": 80,
+          "x1": 300
+        },
+        {
+          "page": 4,
+          "top": 170,
+          "bottom": 190,
+          "x0": 110,
+          "x1": 250
+        },
+        {
+          "page": 4,
+          "top": 131,
+          "bottom": 239,
+          "x0": 306,
+          "x1": 470
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 212,
+          "bottom": 389,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "16a0fc14f9c271af0f890aa903ec7d1b9086c0385b7964fc2ae430c63cd9379c",
+      "inspectedSolutionSha256": "85f7d28a8d0aa192a1bb93230e8b05410a7225459fadc1e13bb333c7aa8701be",
+      "figureKey": "maths-2010-FL-scheme-p048-i0",
+      "publishedQuestionSha256": "6c40d9acf8f973959b4a8e3b9e691d3f3eb846f380e458d4e00110affcb476ab"
+    },
+    "3-b-iii": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 122,
+          "bottom": 142,
+          "x0": 80,
+          "x1": 300
+        },
+        {
+          "page": 4,
+          "top": 190,
+          "bottom": 210,
+          "x0": 110,
+          "x1": 250
+        },
+        {
+          "page": 4,
+          "top": 131,
+          "bottom": 239,
+          "x0": 306,
+          "x1": 470
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 212,
+          "bottom": 389,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "7a3f4a5c970be1eaa4a9f770f45aed0792113cf78a6116dea8f7c5e9b09580b6",
+      "inspectedSolutionSha256": "85f7d28a8d0aa192a1bb93230e8b05410a7225459fadc1e13bb333c7aa8701be",
+      "figureKey": "maths-2010-FL-scheme-p048-i0",
+      "publishedQuestionSha256": "4eaf9ee1395d7ef9b40c9989f5937b67429aebf5ce537ca13dec2f80918b7f5d"
+    },
+    "3-b-iv": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 122,
+          "bottom": 142,
+          "x0": 80,
+          "x1": 300
+        },
+        {
+          "page": 4,
+          "top": 210,
+          "bottom": 230,
+          "x0": 110,
+          "x1": 250
+        },
+        {
+          "page": 4,
+          "top": 131,
+          "bottom": 239,
+          "x0": 306,
+          "x1": 470
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 212,
+          "bottom": 389,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "a15af99342488cd1720f27937af740ee3340bd2d249e23c0f566d5a39799b1a0",
+      "inspectedSolutionSha256": "85f7d28a8d0aa192a1bb93230e8b05410a7225459fadc1e13bb333c7aa8701be",
+      "figureKey": "maths-2010-FL-scheme-p048-i0",
+      "publishedQuestionSha256": "7395e3a4e68adf7c1d86f462641983e9430e5b2a393db20042a8a182a154bb51"
+    },
+    "3-c-i": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 265,
+          "bottom": 314,
+          "x0": 80,
+          "x1": 340
+        },
+        {
+          "page": 4,
+          "top": 316,
+          "bottom": 337,
+          "x0": 110,
+          "x1": 230
+        },
+        {
+          "page": 4,
+          "top": 260,
+          "bottom": 385,
+          "x0": 385,
+          "x1": 530
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 584,
+          "bottom": 770,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "109a734030c66e23a52ee9c56a68256199655d73094d13ecfd57d4fbef8c57f8",
+      "inspectedSolutionSha256": "9d991b49b0b8c00803ff56e37ee4edf3b430b51f72dda03c82dc393be56a7385",
+      "figureKey": "maths-2010-FL-scheme-p048-i1",
+      "publishedQuestionSha256": "8a42cd2e033a42de23f2e582b113453aa048b7d9cb5b8075093227757809fdb3"
+    },
+    "3-c-ii": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 265,
+          "bottom": 314,
+          "x0": 80,
+          "x1": 340
+        },
+        {
+          "page": 4,
+          "top": 338,
+          "bottom": 359,
+          "x0": 110,
+          "x1": 230
+        },
+        {
+          "page": 4,
+          "top": 260,
+          "bottom": 385,
+          "x0": 385,
+          "x1": 530
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 584,
+          "bottom": 770,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "a75320d4ce8c4f0f5617b9bfea283e0510c8dd1a22c35c714fe16bd8c4427b50",
+      "inspectedSolutionSha256": "9d991b49b0b8c00803ff56e37ee4edf3b430b51f72dda03c82dc393be56a7385",
+      "figureKey": "maths-2010-FL-scheme-p048-i1",
+      "publishedQuestionSha256": "0df536c83621bb4eb03cc06042d139084d410ba55212d3d279ad38bd7bb6779c"
+    },
+    "3-c-iii": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 265,
+          "bottom": 314,
+          "x0": 80,
+          "x1": 340
+        },
+        {
+          "page": 4,
+          "top": 361,
+          "bottom": 382,
+          "x0": 110,
+          "x1": 230
+        },
+        {
+          "page": 4,
+          "top": 260,
+          "bottom": 385,
+          "x0": 385,
+          "x1": 530
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 584,
+          "bottom": 770,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Geometrical error"
+      ],
+      "inspectedQuestionSha256": "faba36127f086524aa191715dd93c738d1dac34cce1014f3554d452fc35771f2",
+      "inspectedSolutionSha256": "9d991b49b0b8c00803ff56e37ee4edf3b430b51f72dda03c82dc393be56a7385",
+      "figureKey": "maths-2010-FL-scheme-p048-i1",
+      "publishedQuestionSha256": "752cae6380b97221f1db00ab446779b8f6b0ed7e8dc259f945071b9a1d4cdd09"
+    },
+    "4-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 459,
+          "bottom": 503,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 216,
+          "bottom": 554,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Draws axes"
+      ],
+      "inspectedQuestionSha256": "f27b77dbc0eced19f0bfe66fe4f44ef6f71879696393a515637761d2923a500b",
+      "inspectedSolutionSha256": "73a954e899571cd036c534e8f3f83d7ec771caa0308ccd0dbaaf014daee18dcd",
+      "figureKey": "maths-2010-FL-scheme-p049-i0",
+      "publishedQuestionSha256": "27a8a0d1f336484deac0a775e95205766ba78b0a56bdc6117ba5bf6eeed47744"
+    },
+    "4-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 525,
+          "bottom": 546,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 548,
+          "bottom": 569,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 154,
+          "bottom": 431,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "ca795b88b152eee50fcf203975c389ea241de647baade80aeef7ab67067355d7",
+      "inspectedSolutionSha256": "6df683eeae01f7b19f67d164fee1fdfaf6b797e07bd8bdddba66e7a4249e9ee5",
+      "figureKey": "maths-2010-FL-scheme-p050-i0",
+      "publishedQuestionSha256": "735bbc2a4e779c824a92ad3688b240f914925c9f9c9c48629726d1304786c647"
+    },
+    "4-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 525,
+          "bottom": 546,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 571,
+          "bottom": 590,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 154,
+          "bottom": 431,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "b0dc9e24f7f26e4ce9aac2934e663dabd2627d74528fa829794ae31222579b96",
+      "inspectedSolutionSha256": "6df683eeae01f7b19f67d164fee1fdfaf6b797e07bd8bdddba66e7a4249e9ee5",
+      "figureKey": "maths-2010-FL-scheme-p050-i0",
+      "publishedQuestionSha256": "72f37aaa9b10964e4a1b3307c2bd97592893bff583801c06230284263253158a"
+    },
+    "4-b-iii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 525,
+          "bottom": 546,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 591,
+          "bottom": 611,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 154,
+          "bottom": 431,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "d79d5316295d3a64b5ead35592c564175e7400a05d0786014dad9714158c6cfc",
+      "inspectedSolutionSha256": "6df683eeae01f7b19f67d164fee1fdfaf6b797e07bd8bdddba66e7a4249e9ee5",
+      "figureKey": "maths-2010-FL-scheme-p050-i0",
+      "publishedQuestionSha256": "8c6dc5d0ece134ef530b57e2da9468e1417f8fd4453d39a60cab89f5f0bfdbb5"
+    },
+    "4-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 631,
+          "bottom": 672,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 674,
+          "bottom": 694,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 181,
+          "bottom": 488,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "82d94176032b58c85f5be0a2ba95086a2a394f04c494d68c0eb02145dfe46ce3",
+      "inspectedSolutionSha256": "6d71e70e930a1fe2ad21381b17fd43933e9f8891e62fb95ccb8b044c8a83bb5b",
+      "figureKey": "maths-2010-FL-scheme-p051-i0",
+      "publishedQuestionSha256": "ff1821bf6d19e6d304d5d8ed3dcac2c0e1a3f903d04262da79198928300eaedb"
+    },
+    "4-c-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 631,
+          "bottom": 672,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 694,
+          "bottom": 713,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 181,
+          "bottom": 488,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "50751f3ce9f6ceb108280b9f771d1bed753b9e80631ebef5c94298598b9f7218",
+      "inspectedSolutionSha256": "6d71e70e930a1fe2ad21381b17fd43933e9f8891e62fb95ccb8b044c8a83bb5b",
+      "figureKey": "maths-2010-FL-scheme-p051-i0",
+      "publishedQuestionSha256": "8c94006d9b72edeec5143f14f256b95e08232bf61f255042d470e78933c7f879"
+    },
+    "4-c-iii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 631,
+          "bottom": 672,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 713,
+          "bottom": 750,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 181,
+          "bottom": 488,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect substitution once only"
+      ],
+      "inspectedQuestionSha256": "d4a5991fd95e9752d763794d6a0afae57eaeb81454cdeddbf59915778f3688c9",
+      "inspectedSolutionSha256": "6d71e70e930a1fe2ad21381b17fd43933e9f8891e62fb95ccb8b044c8a83bb5b",
+      "figureKey": "maths-2010-FL-scheme-p051-i0",
+      "publishedQuestionSha256": "6f30bf1c24c0448e69d99df4ab9597d8d88a24313cfc736ce2d40bf31b256c38"
+    },
+    "5-a-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 39,
+          "bottom": 100,
+          "x0": 55,
+          "x1": 345
+        },
+        {
+          "page": 5,
+          "top": 101,
+          "bottom": 120,
+          "x0": 110,
+          "x1": 180
+        },
+        {
+          "page": 5,
+          "top": 39,
+          "bottom": 122,
+          "x0": 353,
+          "x1": 482
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 260,
+          "bottom": 505,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Answer not in fraction form"
+      ],
+      "inspectedQuestionSha256": "0c26ed700b607781867065bf557d95741f6fffde36ecdcd260700fa750ec91c6",
+      "inspectedSolutionSha256": "886e4815d3f8bb9854c66e9b7187c5c9a89875cc29c77d189416d5ab8e07e885",
+      "figureKey": "maths-2010-FL-scheme-p052-i0",
+      "publishedQuestionSha256": "71f209cc927f9d08db18c934abc8b4b97127f1cf19779fa8dbd6a6519d72f690"
+    },
+    "5-a-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 39,
+          "bottom": 100,
+          "x0": 55,
+          "x1": 345
+        },
+        {
+          "page": 5,
+          "top": 121,
+          "bottom": 141,
+          "x0": 110,
+          "x1": 180
+        },
+        {
+          "page": 5,
+          "top": 39,
+          "bottom": 122,
+          "x0": 353,
+          "x1": 482
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 260,
+          "bottom": 505,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Answer not in fraction form"
+      ],
+      "inspectedQuestionSha256": "ee177ea7b11b7f1525c1c9eef5637ddbbc370856241206315e6fbcecf0658253",
+      "inspectedSolutionSha256": "886e4815d3f8bb9854c66e9b7187c5c9a89875cc29c77d189416d5ab8e07e885",
+      "figureKey": "maths-2010-FL-scheme-p052-i0",
+      "publishedQuestionSha256": "b6d31dded3d2bbe247fc15c7478df39518b681009dc1504754484e0dc6286bc4"
+    },
+    "5-b": {
+      "topic": "2-3",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 161,
+          "bottom": 252,
+          "x0": 80,
+          "x1": 384
+        },
+        {
+          "page": 5,
+          "top": 114,
+          "bottom": 268,
+          "x0": 413,
+          "x1": 547
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 244,
+          "bottom": 476,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Wrong mode"
+      ],
+      "inspectedQuestionSha256": "dd871ac0569bbd9d3497e3df061338129ab56a0e2a6298415ffc723c9e8981de",
+      "inspectedSolutionSha256": "123c7f932c8985bb297c88b824270a405ea13d67419608b84f2ddfbf25211992",
+      "figureKey": "maths-2010-FL-scheme-p053-i0",
+      "publishedQuestionSha256": "3959263c391a2b4b6da4d783994b569f28dec04b69a4c4f1f2f8065866371b1e"
+    },
+    "5-c-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 273,
+          "bottom": 293,
+          "x0": 80,
+          "x1": 360
+        },
+        {
+          "page": 5,
+          "top": 271,
+          "bottom": 357,
+          "x0": 369,
+          "x1": 508
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 175,
+          "bottom": 420,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Measures from diagram"
+      ],
+      "inspectedQuestionSha256": "fa6aff8736b1ec5350a6932133782e199a30bd7389492004b7c8892b2ffc0974",
+      "inspectedSolutionSha256": "fffececdef7083a65b2c5320b1f7007f95f6bcd7da077c4264b1d3a7ee4d8845",
+      "figureKey": "maths-2010-FL-scheme-p054-i0",
+      "publishedQuestionSha256": "39c7bec30e0d7fba15e452dc23c0a30cc3cd5aac9bd88255799c5ae4918e48b9"
+    },
+    "5-c-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 300,
+          "bottom": 335,
+          "x0": 80,
+          "x1": 360
+        },
+        {
+          "page": 5,
+          "top": 271,
+          "bottom": 357,
+          "x0": 369,
+          "x1": 508
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 175,
+          "bottom": 420,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Measures from diagram"
+      ],
+      "inspectedQuestionSha256": "c0c4b34af1557455015e1e295724d82d384e22fd56280c1b20e8f1764d5ddb76",
+      "inspectedSolutionSha256": "fffececdef7083a65b2c5320b1f7007f95f6bcd7da077c4264b1d3a7ee4d8845",
+      "figureKey": "maths-2010-FL-scheme-p054-i0",
+      "publishedQuestionSha256": "dc24edcdda380466ce7937a4fea56fa8265f5fe95bd1e67b8c4f6f9cec757c38"
+    },
+    "6-a": {
+      "topic": "1-1",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 374,
+          "bottom": 408,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 199,
+          "bottom": 366,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect answer of some merit"
+      ],
+      "inspectedQuestionSha256": "780ffaa0d8443d39f1172337e1da47adc7bb180ac23479dc04fe632282259e54",
+      "inspectedSolutionSha256": "bca43f83d9b5eeb17189f26e8a6c261a4929398b085cf2997dda22d818e137b0",
+      "figureKey": "maths-2010-FL-scheme-p055-i0",
+      "publishedQuestionSha256": "81066fc469f766ca88f70358f9a9d2eb288d592d2cdfd2da9ca9c635029824d7"
+    },
+    "6-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 427,
+          "bottom": 512,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 513,
+          "bottom": 533,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 540,
+          "bottom": 756,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "f033aeca1e6d74e7ce1b7fbc6e9bbcc1fab7ef579300062be1bae95cdd791146",
+      "inspectedSolutionSha256": "5bae564cf9380d4da5e03a2ac5eefefcbdc2ac688617c4fefa7912a0d4646473",
+      "figureKey": "maths-2010-FL-scheme-p055-i1",
+      "publishedQuestionSha256": "95535afc6a272d61b4075b97a9ee8a16f5358b251b3cdef187322c3bc4ee55ee"
+    },
+    "6-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 427,
+          "bottom": 512,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 533,
+          "bottom": 553,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 540,
+          "bottom": 756,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "4d591abe0bc92009b31596553a0b9ab140d60dde4650ec3157924fa397f7d9f1",
+      "inspectedSolutionSha256": "5bae564cf9380d4da5e03a2ac5eefefcbdc2ac688617c4fefa7912a0d4646473",
+      "figureKey": "maths-2010-FL-scheme-p055-i1",
+      "publishedQuestionSha256": "7d5c5f26fd6d35761df7a0190f240c8fbc0540d12d5cb2a9f49fb02044ff884c"
+    },
+    "6-b-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 427,
+          "bottom": 512,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 553,
+          "bottom": 573,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 540,
+          "bottom": 756,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "80fc130da1d43045685613214ec4a55c02aa4b2c4261d2dba8d397684817c117",
+      "inspectedSolutionSha256": "5bae564cf9380d4da5e03a2ac5eefefcbdc2ac688617c4fefa7912a0d4646473",
+      "figureKey": "maths-2010-FL-scheme-p055-i1",
+      "publishedQuestionSha256": "c605713d2a6cc5ab91e16ec332e91b6df78c08a0670462ab80251256f3e0bb76"
+    },
+    "6-b-iv": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 427,
+          "bottom": 512,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 573,
+          "bottom": 592,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 540,
+          "bottom": 756,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "08507e18d26f201df9c7166d14b432c3b3fb583229b71c6c914dcb762b6bf892",
+      "inspectedSolutionSha256": "5bae564cf9380d4da5e03a2ac5eefefcbdc2ac688617c4fefa7912a0d4646473",
+      "figureKey": "maths-2010-FL-scheme-p055-i1",
+      "publishedQuestionSha256": "0d5b286080f587966d8d231a984fde1e7bacda8a5da5effefdc5495a21df80d0"
+    },
+    "6-c-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 613,
+          "bottom": 718,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 719,
+          "bottom": 739,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 250,
+          "bottom": 562,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "d3f9ae3f9878dd13c44e86a60ba03458caba28e84463a0366655ebeeabf1a836",
+      "inspectedSolutionSha256": "a5d1e33eeb43741ad72e15077a099beea1e75259535b00aa64c82e5a79ff1bd5",
+      "figureKey": "maths-2010-FL-scheme-p056-i0",
+      "publishedQuestionSha256": "28813bdc88c55a0fe4049d37946b5bc5e36bfb9878ee65fbd73e8e9520da3046"
+    },
+    "6-c-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 613,
+          "bottom": 718,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 739,
+          "bottom": 759,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 250,
+          "bottom": 562,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "4c528685015ea74e8a75c37b9def9db84e43d139c394fb673e0430f6e586cec5",
+      "inspectedSolutionSha256": "a5d1e33eeb43741ad72e15077a099beea1e75259535b00aa64c82e5a79ff1bd5",
+      "figureKey": "maths-2010-FL-scheme-p056-i0",
+      "publishedQuestionSha256": "14d76915ff5c40e2ed9d6f28a5257a8ef703643e5395f4c62b84389bca85b179"
+    },
+    "6-c-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 613,
+          "bottom": 718,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 759,
+          "bottom": 779,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 250,
+          "bottom": 562,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "a9a13f6d53abe51e0a07e0343a8eb5e258a87978bdd63f58669b5bb07b7fc5d6",
+      "inspectedSolutionSha256": "a5d1e33eeb43741ad72e15077a099beea1e75259535b00aa64c82e5a79ff1bd5",
+      "figureKey": "maths-2010-FL-scheme-p056-i0",
+      "publishedQuestionSha256": "3a4146bf0f88f89ee01f58c927682bbf6663b80a6e5f16f661ecde627ddc503a"
+    },
+    "6-c-iv": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 613,
+          "bottom": 718,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 5,
+          "top": 779,
+          "bottom": 799,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 250,
+          "bottom": 562,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect n(S) apply once only"
+      ],
+      "inspectedQuestionSha256": "ceecabdd974e6a1e401f8887b89a4851ee21c1c6170d1667ce2301b25ef2a52a",
+      "inspectedSolutionSha256": "a5d1e33eeb43741ad72e15077a099beea1e75259535b00aa64c82e5a79ff1bd5",
+      "figureKey": "maths-2010-FL-scheme-p056-i0",
+      "publishedQuestionSha256": "686904afe0fa23e655d8da94f21a41935796d11137bf1c706f18ba5ab1f5bfe0"
+    },
+    "7-a": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 53,
+          "bottom": 114,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 211,
+          "bottom": 394,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Error in forming equation"
+      ],
+      "inspectedQuestionSha256": "adec2c8bb7d49062f788df021abf55239bff21f7367f5d32d4c6223d69a51ba8",
+      "inspectedSolutionSha256": "32f9bdface4ec4c652a2ba94a3e0620e231c56ad9700c2be3b4b1bfd6cc1b09c",
+      "figureKey": "maths-2010-FL-scheme-p057-i0",
+      "publishedQuestionSha256": "fa8ef27cd8c290713bca0ec57f3bd24298ec8eec746d27d4b1fb7cb409c50acc"
+    },
+    "7-b-i": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 112,
+          "bottom": 247,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 268,
+          "bottom": 340,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 55,
+          "bottom": 765,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect answer of some merit"
+      ],
+      "inspectedQuestionSha256": "56da52dacc0c5456754d3450a7275f3e571f46ffa7381812050cb8d505ae0131",
+      "inspectedSolutionSha256": "27832bd8de4dd2bfaeba7dfe6f50e701f18bdddd2d09b52370c6414546e33928",
+      "figureKey": "maths-2010-FL-scheme-p058-i0",
+      "publishedQuestionSha256": "3968f24953ad2ae46f07e6e4fe8bb3dc069e755dae724c5b07899e142719b8b4"
+    },
+    "7-b-ii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 112,
+          "bottom": 247,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 353,
+          "bottom": 373,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 55,
+          "bottom": 765,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect answer of some merit"
+      ],
+      "inspectedQuestionSha256": "eb80133b51c2949521e1a14a8f4f8bcf6dc90fc79f359260a64d5580b3e1dbd0",
+      "inspectedSolutionSha256": "27832bd8de4dd2bfaeba7dfe6f50e701f18bdddd2d09b52370c6414546e33928",
+      "figureKey": "maths-2010-FL-scheme-p058-i0",
+      "publishedQuestionSha256": "1a720f3ffb26fa757013009c64b3c77ce4deb26055cfa383a1a47cfddc6c8bcd"
+    },
+    "7-b-iii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 112,
+          "bottom": 247,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 353,
+          "bottom": 400,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 408,
+          "bottom": 428,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 55,
+          "bottom": 765,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect answer of some merit"
+      ],
+      "inspectedQuestionSha256": "551b3abc1d713178cd77167ef72892aee4741316b30c8cbccd9e7bfb0bd9e18e",
+      "inspectedSolutionSha256": "27832bd8de4dd2bfaeba7dfe6f50e701f18bdddd2d09b52370c6414546e33928",
+      "figureKey": "maths-2010-FL-scheme-p058-i0",
+      "publishedQuestionSha256": "156e9ed1227d13da32cd8d4d1540d0f574152bc4e6188bafccf08054335dc982"
+    },
+    "7-b-iv": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 112,
+          "bottom": 247,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 353,
+          "bottom": 400,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 6,
+          "top": 436,
+          "bottom": 456,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 55,
+          "bottom": 765,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Incorrect answer of some merit"
+      ],
+      "inspectedQuestionSha256": "ac29f98b8e8ff621654eefedeaad957be28507979c82c69f0aef8a9fae0174da",
+      "inspectedSolutionSha256": "27832bd8de4dd2bfaeba7dfe6f50e701f18bdddd2d09b52370c6414546e33928",
+      "figureKey": "maths-2010-FL-scheme-p058-i0",
+      "publishedQuestionSha256": "136f25d5297cd58a31ef46b836cc68b1bf13a352f5fa25184565bade6e51895b"
+    },
+    "7-c": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 477,
+          "bottom": 537,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 132,
+          "bottom": 436,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Work on SD or defines SD"
+      ],
+      "inspectedQuestionSha256": "9bf103276baf12ecb18470dab8f80f5a7311e12da5406e05301a12a0f7b6592d",
+      "inspectedSolutionSha256": "1a431657cdc8511f6ef7c8af75df6cc55aa02853a73f8597eef9f7b51fdb9529",
+      "figureKey": "maths-2010-FL-scheme-p059-i0",
+      "publishedQuestionSha256": "f43f757816a10a29eb671e1d47d652f444606db7f7d83867272638a6bf0fbb36"
+    },
+    "8-a-i": {
+      "topic": "2-4",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 53,
+          "bottom": 74,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 198,
+          "bottom": 453,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Opposite sides not equal"
+      ],
+      "inspectedQuestionSha256": "d457fff9c8d1735ce69fb900844f45450413c5dc3cd7a5a554a76425dcb778e1",
+      "inspectedSolutionSha256": "c1876227578d379ceca32edde3cfd1f41ecbf44b814fd7791f92de7dee1d296d",
+      "figureKey": "maths-2010-FL-scheme-p060-i0",
+      "publishedQuestionSha256": "a055999e475bd5763342a8b3468f01f378996c483a3e8dfc36031b11f07c9295"
+    },
+    "8-a-ii": {
+      "topic": "2-4",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 53,
+          "bottom": 101,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 198,
+          "bottom": 453,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Each incorrect or omitted symmetry"
+      ],
+      "inspectedQuestionSha256": "793d501492a8dac97a942bd28b30da7299c1be655ce99649e7484aa3e7c06015",
+      "inspectedSolutionSha256": "c1876227578d379ceca32edde3cfd1f41ecbf44b814fd7791f92de7dee1d296d",
+      "figureKey": "maths-2010-FL-scheme-p060-i0",
+      "publishedQuestionSha256": "efd6bbae4209af9c6eed0c5167fce6dfc4226d6086ac8f5050eb62d18dccf3e8"
+    },
+    "8-b-i": {
+      "topic": "2-4",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 136,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 373,
+          "bottom": 394,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 332,
+          "bottom": 674,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Treats OAB as the image triangle"
+      ],
+      "inspectedQuestionSha256": "682dbebbd89f4e8f90227f096b4533b561a139f59994f12c00a46dc2c6b2cb9c",
+      "inspectedSolutionSha256": "5ccd3e4143f04bd2112f56edeb714a7c4662caedaab25a34814adee9b40b8b0d",
+      "figureKey": "maths-2010-FL-scheme-p061-i0",
+      "publishedQuestionSha256": "bc2b753489ec1b7d0c6b6da557ebf376fbc03392d210c5c2f62bad9982214fd0"
+    },
+    "8-b-ii": {
+      "topic": "2-4",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 136,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 400,
+          "bottom": 422,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 332,
+          "bottom": 674,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Treats OAB as the image triangle"
+      ],
+      "inspectedQuestionSha256": "b14baa283b607b0c59c93c6b60b5c553b3281e0cb51e0a28a2742469400de402",
+      "inspectedSolutionSha256": "5ccd3e4143f04bd2112f56edeb714a7c4662caedaab25a34814adee9b40b8b0d",
+      "figureKey": "maths-2010-FL-scheme-p061-i0",
+      "publishedQuestionSha256": "27156cfa94837e32204bebbfe21bdd34a793b06d5c11c048731a3771621ede94"
+    },
+    "8-b-iii": {
+      "topic": "2-4",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 136,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 431,
+          "bottom": 468,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 332,
+          "bottom": 674,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Treats OAB as the image triangle"
+      ],
+      "inspectedQuestionSha256": "53b332af5c34d9ad16fa0651762075f9812cb7358be9cf672b60073bdc6138e8",
+      "inspectedSolutionSha256": "5ccd3e4143f04bd2112f56edeb714a7c4662caedaab25a34814adee9b40b8b0d",
+      "figureKey": "maths-2010-FL-scheme-p061-i0",
+      "publishedQuestionSha256": "5b13bbd6bad5accf652af098fe2976d348bd05af6f2fdba92dd8c6443e0fa6b5"
+    },
+    "8-c-i": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 502,
+          "bottom": 522,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 120,
+          "bottom": 472,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Each omitted side"
+      ],
+      "inspectedQuestionSha256": "c9ff9153bfd0090b0cc6864797e645ba00c85cdde266eda1228194eace0604a6",
+      "inspectedSolutionSha256": "e9c537ed18a1a2243e860fd44e4ca33337d4a4d0e3837caf669a583c296c5d03",
+      "figureKey": "maths-2010-FL-scheme-p062-i0",
+      "publishedQuestionSha256": "8959605dbaf4d4a065cb6d03382e9c9169f04aa4f99d94b2185cc1836ddb22e6"
+    },
+    "8-c-ii": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 502,
+          "bottom": 550,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 120,
+          "bottom": 472,
+          "x0": 55,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Note — Each bisector omitted"
+      ],
+      "inspectedQuestionSha256": "8859cbd612121f08806961e255d50c9ee0126206c2a636653cc74efde1e5ca91",
+      "inspectedSolutionSha256": "e9c537ed18a1a2243e860fd44e4ca33337d4a4d0e3837caf669a583c296c5d03",
+      "figureKey": "maths-2010-FL-scheme-p062-i0",
+      "publishedQuestionSha256": "bdfa1e55bda982829f361869b89b82239bf69900aae73f4ce999aefda06a13a5"
+    }
+  },
+  "visualReview": "All 51 question and 51 complete solution crops inspected. Corrected clipped attempt notes in Q6(c) and Q8(b); all affected copies share the re-inspected complete image. Every original diagram, axis, unit, table, formula and credit note retained.",
+  "publishedQuestionReview": "All 51 actual published question images visually inspected; all diagram labels, complete tables, symbols and prerequisite context retained."
+}

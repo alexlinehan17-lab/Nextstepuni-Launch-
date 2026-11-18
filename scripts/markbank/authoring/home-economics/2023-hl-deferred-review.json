@@ -1,0 +1,950 @@
+{
+  "schemaVersion": 1,
+  "year": 2023,
+  "level": "higher",
+  "sitting": "deferred",
+  "language": "ev",
+  "status": "source-review-complete; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "a": {
+      "fileid": "LC098ALP014EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2023/LC098ALP014EV.pdf",
+      "sha256": "3841b3f1398f2a92c6378812733017cc0c30b39a81b565b1ffb723f172e1df30",
+      "pages": 40
+    },
+    "bc": {
+      "fileid": "LC098ALP039EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2023/LC098ALP039EV.pdf",
+      "sha256": "06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3",
+      "pages": 12
+    },
+    "scheme": {
+      "fileid": "LC098ALP000EV.pdf",
+      "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC098ALP000EV.pdf",
+      "sha256": "1ff62adab752ea79017ecd7b7f40c1e553a399c34bfb07bda4b7e7a96548b952",
+      "pages": 32
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 32 pages: cover 1, deferred marking notice 2, candidate rubric 3, A 4–7, B 8–17, C 18–30, blank 31, back cover 32."
+  },
+  "sectionStatus": {
+    "A": "All 15 tasks carded; 84 offered marks.",
+    "B": "All 17 tasks carded; 280 offered marks.",
+    "C": "All 26 tasks carded; 385 offered marks."
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "boundaryDecisions": [
+    "A1: separate gel explanation (4) and culinary example (2).",
+    "A2/A3: required table entries remain one task per question.",
+    "A6: open choice of three paired sectors and exports; one task, not sector combinations.",
+    "A8/A11/A14: required or dependent headings remain one task.",
+    "Other A counts: open points/examples, no finite choice pool.",
+    "B5(c): scheme accidentally labels (b); paper identity (c) governs.",
+    "C1(a)(iii): published 5:3:0 ladder; allocation 3 provision/2 distribution does not permit standalone 2.",
+    "C1(c)(ii): published examples list inefficiencies, not model reductions; do not invent official models.",
+    "C4(a)(ii): heading says 9 × 2, but detailed 12+4+4 allocation and paper both require 20.",
+    "C4(c)(ii): historical marital-rights guidance needs an explicit consent clarification before publication."
+  ],
+  "paperRegionsA": {
+    "1": {
+      "page": 3,
+      "rect": [
+        0,
+        150.1197509765625,
+        595.219970703125,
+        344.1799621582031
+      ]
+    },
+    "2": {
+      "page": 3,
+      "rect": [
+        0,
+        371.81976318359375,
+        595.219970703125,
+        461.17999267578125
+      ]
+    },
+    "3": {
+      "page": 3,
+      "rect": [
+        0,
+        491.27972412109375,
+        595.219970703125,
+        657.2000122070312
+      ]
+    },
+    "4": {
+      "page": 4,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "5": {
+      "page": 4,
+      "rect": [
+        0,
+        257.8797607421875,
+        595.219970703125,
+        440.72003173828125
+      ]
+    },
+    "6": {
+      "page": 4,
+      "rect": [
+        0,
+        477.3597412109375,
+        595.219970703125,
+        631.280029296875
+      ]
+    },
+    "7": {
+      "page": 5,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "8": {
+      "page": 5,
+      "rect": [
+        0,
+        257.8797607421875,
+        595.219970703125,
+        440.72003173828125
+      ]
+    },
+    "9": {
+      "page": 5,
+      "rect": [
+        0,
+        456.7197570800781,
+        595.219970703125,
+        639.5
+      ]
+    },
+    "10": {
+      "page": 6,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "11": {
+      "page": 6,
+      "rect": [
+        0,
+        265.67974853515625,
+        595.219970703125,
+        448.52001953125
+      ]
+    },
+    "12": {
+      "page": 6,
+      "rect": [
+        0,
+        474.41973876953125,
+        595.219970703125,
+        657.260009765625
+      ]
+    },
+    "13": {
+      "page": 7,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "14": {
+      "page": 7,
+      "rect": [
+        0,
+        264.83966064453125,
+        595.219970703125,
+        462.32000732421875
+      ]
+    }
+  },
+  "schemeRegionsA": {
+    "1": {
+      "page": 4,
+      "rect": [
+        0,
+        147.479736328125,
+        595.219970703125,
+        329.65985107421875
+      ]
+    },
+    "2": {
+      "page": 4,
+      "rect": [
+        0,
+        353.93988037109375,
+        595.219970703125,
+        497.17999267578125
+      ]
+    },
+    "3": {
+      "page": 4,
+      "rect": [
+        0,
+        527.2796020507812,
+        595.219970703125,
+        734.47998046875
+      ]
+    },
+    "4": {
+      "page": 5,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        135.01971435546875
+      ]
+    },
+    "5": {
+      "page": 5,
+      "rect": [
+        0,
+        153.3597412109375,
+        595.219970703125,
+        261.559814453125
+      ]
+    },
+    "6": {
+      "page": 5,
+      "rect": [
+        0,
+        279.89984130859375,
+        595.219970703125,
+        544.8800048828125
+      ]
+    },
+    "7": {
+      "page": 5,
+      "rect": [
+        0,
+        556.9796752929688,
+        595.219970703125,
+        709.15966796875
+      ]
+    },
+    "8": {
+      "page": 6,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        259.58001708984375
+      ]
+    },
+    "9": {
+      "page": 6,
+      "rect": [
+        0,
+        278.51971435546875,
+        595.219970703125,
+        357.499755859375
+      ]
+    },
+    "10": {
+      "page": 6,
+      "rect": [
+        0,
+        375.77978515625,
+        595.219970703125,
+        502.6999816894531
+      ]
+    },
+    "11": {
+      "page": 6,
+      "rect": [
+        0,
+        521.759765625,
+        595.219970703125,
+        606.6798095703125
+      ]
+    },
+    "12": {
+      "page": 6,
+      "rect": [
+        0,
+        624.9597778320312,
+        595.219970703125,
+        777.1397705078125
+      ]
+    },
+    "13": {
+      "page": 7,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        135.01971435546875
+      ]
+    },
+    "14": {
+      "page": 7,
+      "rect": [
+        0,
+        147.3597412109375,
+        595.219970703125,
+        366.7999267578125
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2023-hl-deferred-sa-q1",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q1 — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q1-example",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q1 — culinary example — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q2",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q2 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q3",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q3 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q4",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q4 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q5",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q5 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q6",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q6 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q7",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q7 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q8",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q8 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q9",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q9 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q10",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q10 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q11",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q11 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q12",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q12 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q13",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q13 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q14",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q14 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(a) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(b) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(c) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1d",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(d) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1e",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(e) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(a) — Deferred sitting",
+      "marks": 22,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(b) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(a) — Deferred sitting",
+      "marks": 24,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(b) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(c) — Deferred sitting",
+      "marks": 8,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(a) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(b) — Deferred sitting",
+      "marks": 24,
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(c) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(a) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(b) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(c) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1ai",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(a)(i) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1aii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(a)(ii) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1aiii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(a)(iii) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1bi",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(b)(i) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1bii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(b)(ii) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1ci",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(c)(i) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q1cii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E1 Q1(c)(ii) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q2ai",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E2 Q2(a)(i) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q2aii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E2 Q2(a)(ii) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q2b",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E2 Q2(b) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q2ci",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E2 Q2(c)(i) — Deferred sitting",
+      "marks": 9,
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q2cii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E2 Q2(c)(ii) — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3ai",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(a)(i) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3aii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(a)(ii) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3aiii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(a)(iii) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3bi",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(b)(i) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3bii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(b)(ii) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3ci",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(c)(i) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q3cii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C E3 Q3(c)(ii) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4ai",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(a)(i) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4aii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(a)(ii) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4aiii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(a)(iii) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4bi",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(b)(i) — Deferred sitting",
+      "marks": 14,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4bii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(b)(ii) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-1-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4ci",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(c)(i) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sc-q4cii",
+      "status": "carded",
+      "section": "C",
+      "questionRef": "2023 HL Section C Q4(c)(ii) — Deferred sitting",
+      "marks": 15,
+      "topicId": "home-economics-2-1"
+    }
+  ],
+  "sectionBQuestion1Review": {
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      8,
+      9
+    ],
+    "tasks": 5,
+    "offeredMarks": 80,
+    "boundaries": "Five independently priced tasks. B1(a) all three foods required; B1(b) all three classifications and paired examples required; B1(c) all three properties required. B1(d) open factors. B1(e) requires one planning point, one purchasing point and three others. No combination expansion.",
+    "figure": {
+      "key": "home-economics-2023-hl-deferred-sb-q1a-chart",
+      "bounds": [
+        77,
+        216,
+        523,
+        465
+      ],
+      "scale": 2,
+      "sha256": "7d276c03c8566f8c9e76fb0cbcf9498f3a92f56e75562d7c8423778fbc9ca542"
+    },
+    "detail": "Full source guidance retained. B1(d) has factor names only; its reveal explicitly distinguishes those from unprinted model descriptions."
+  },
+  "sectionBRemainingReview": {
+    "paperPages": [
+      3,
+      4
+    ],
+    "schemePages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "tasks": 12,
+    "offeredMarks": 200,
+    "decisions": [
+      "Required coeliac headings remain one 22-mark account (8+6+8).",
+      "Malnutrition remains one dependent four-heading profile.",
+      "Two physical-agent functions keep their paired examples in one task.",
+      "Heat method, packaging material and statutory agency are open choices with answer routes, not separate scheduled cards.",
+      "All microwave and sociological headings required.",
+      "Economic/technological change reserves one point per heading plus two others.",
+      "Paper B5(c) is authoritative despite the scheme’s repeated (b) label."
+    ],
+    "sourceClarifications": {
+      "infant-gluten": {
+        "checked": "2026-11-01",
+        "source": "https://www.espghan.org/knowledge-center/publications/Gastroenterology/2024-Early-Life-Gluten-Free-Diet",
+        "note": "The 2024 ESPGHAN position paper finds that introduction between completed 4 and 12 months does not change cumulative coeliac-disease incidence. The scheme’s before-six-months statement is historical examination wording, not a general current conclusion."
+      },
+      "oats": {
+        "checked": "2026-11-01",
+        "source": "https://www2.hse.ie/conditions/coeliac-disease/treatment/",
+        "note": "HSE distinguishes contamination of oats and individual sensitivity to avenin. Most people with coeliac disease tolerate avenin; HSE advises discussing oats with a dietitian. The scheme’s blanket “avoid oats” wording is retained as 2023 marking guidance."
+      }
+    }
+  },
+  "sectionCQuestion1Review": {
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      18,
+      19,
+      20,
+      21
+    ],
+    "tasks": 7,
+    "offeredMarks": 110,
+    "candidateMarks": 80,
+    "decisions": [
+      "A(i) uses the full paper wording: from the nineteenth century.",
+      "A(iii) keeps the exact 5:3:0 per-point ladder; no invented standalone 2 despite the provision/distribution annotation.",
+      "B(i) and C(i) required headings remain one task each.",
+      "B(ii) is one open response with three paired principle/explanation/application slots and all four published example principles.",
+      "C(ii) is one open response with three paired inefficiency/reduction slots. No unprinted model reduction is presented as official."
+    ],
+    "sourceClarification": {
+      "checked": "2026-11-01",
+      "sources": [
+        "https://www.hsa.ie/eng/your_industry/agriculture_forestry/other_hazards/fire_electricity_chemicals/",
+        "https://www.se.com/nz/en/faqs/FAQ000218859/"
+      ],
+      "note": "An ordinary MCB provides overcurrent protection. An RCBO combines overcurrent and residual-current protection; the scheme’s statement that MCBs contain RCDs is too broad."
+    }
+  },
+  "sectionCQuestion2Review": {
+    "paperPages": [
+      6
+    ],
+    "schemePages": [
+      22,
+      23,
+      24
+    ],
+    "tasks": 5,
+    "offeredMarks": 55,
+    "candidateMarks": 40,
+    "decisions": [
+      "Sketch/description remain one 10-mark response; evaluation is a separate 15-mark task carrying the earlier prompt and original photo.",
+      "Natural fabric is one open profile with four complete source routes and an open other route; no combination expansion.",
+      "All three evaluation headings required; social/economic factors have no invented heading quota."
+    ],
+    "figure": {
+      "key": "home-economics-2023-hl-deferred-sc-q2a-graduation",
+      "bounds": [
+        160,
+        161,
+        428,
+        311
+      ],
+      "scale": 2,
+      "sha256": "756c366c95b636987d74c3a9b0f838955bd5f0f8f4da2f79ad8b4eda7c9f6fab"
+    }
+  },
+  "sectionCQuestion3Review": {
+    "paperPages": [
+      7
+    ],
+    "schemePages": [
+      25,
+      26,
+      27
+    ],
+    "tasks": 7,
+    "offeredMarks": 110,
+    "candidateMarks": 80,
+    "decisions": [
+      "All open factors, initiative and childcare choices remain one response per published mark boundary.",
+      "Retain both pages of attitudes and initiative guidance, with 2023 eligibility examples labelled historical.",
+      "C(i) follows the full original paper wording, which differs from the scheme.",
+      "C(ii) distinguishes the source list and generic evaluation criteria from unprinted model evaluations."
+    ]
+  },
+  "sectionCQuestion4Review": {
+    "paperPages": [
+      8
+    ],
+    "schemePages": [
+      28,
+      29,
+      30
+    ],
+    "tasks": 7,
+    "offeredMarks": 110,
+    "candidateMarks": 80,
+    "decisions": [
+      "A(ii): paper 20 and the detailed 12+4+4 allocation govern over the scheme’s erroneous 9-points heading.",
+      "A(i): five graded points; no invented one-per-nutrient quota.",
+      "B(i): two outlets, each keeping its name/advantage/disadvantage together.",
+      "B(ii): all three named management components; four graded points without invented per-heading quotas.",
+      "C(i) retains the paper’s three different cultural variations instruction."
+    ],
+    "sourceClarification": {
+      "checked": "2026-11-01",
+      "sources": [
+        "https://www.irishstatutebook.ie/eli/1990/act/32/section/5/enacted/en/html",
+        "https://www2.hse.ie/services/sexual-health/what-is/"
+      ],
+      "note": "Marriage does not remove the requirement for freely given consent to sexual activity. Consent can be withdrawn. Ireland abolished the marital rape exemption in 1990."
+    }
+  },
+  "completion": {
+    "tasks": 58,
+    "offeredPracticeMarks": 749,
+    "note": "All alternatives included for practice. Offered marks must not be confused with the candidate total. Full source sweep recorded above; browser QA remains pending."
+  }
+}

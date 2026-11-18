@@ -1,0 +1,1127 @@
+{
+  "questionSha256": "2b3251f7aa355f1bc2ddf0fa73b0640cf45947ef4fb7522a6066129532f225fa",
+  "solutionSha256": "31d908ba92708efe218e3c0a6db29625513077ebbf18fea2721cd776a07d97cd",
+  "tasks": {
+    "maths-2024-hl-p1-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          52,
+          143,
+          555,
+          167
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          130,
+          545,
+          282
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          52,
+          292,
+          555,
+          316
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          282,
+          545,
+          448
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q1-c": {
+      "question": [
+        [
+          5,
+          52,
+          53,
+          555,
+          123
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          327,
+          451,
+          540,
+          632
+        ]
+      ],
+      "sourceNote": "The printed scheme reverses the two y values. The correct pairs are (x, y) = (4, −23/2) and (−6, 17/2). The NextStepUni example corrects the pairings; the original SEC credit notes remain below and the full scheme is available in the reader.",
+      "supplement": "pairs-2024-hl-deferred",
+      "supplementAlt": "NextStepUni corrected simultaneous-equation solutions: x=4, y=−23/2; x=−6, y=17/2, followed by original SEC credit notes."
+    },
+    "maths-2024-hl-p1-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          555,
+          118
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          78,
+          545,
+          216
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          555,
+          96
+        ],
+        [
+          6,
+          52,
+          305,
+          555,
+          366
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          216,
+          545,
+          431
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          555,
+          127
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          431,
+          545,
+          771
+        ]
+      ],
+      "sourceNote": "The final numeric award is printed as 10j. The stray j is a typographical error; this is a 10-mark question."
+    },
+    "maths-2024-hl-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          555,
+          193
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          78,
+          545,
+          248
+        ]
+      ],
+      "sourceNote": "The required composition is g(f(x)), which gives 36x² − 72x + 36. The original notes also mention f(g(x)) for partial credit; that is not the requested composition."
+    },
+    "maths-2024-hl-p1-deferred-q3-b": {
+      "question": [
+        [
+          9,
+          52,
+          53,
+          555,
+          88
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          248,
+          545,
+          444
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          52,
+          209,
+          555,
+          293
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          444,
+          545,
+          691
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          555,
+          144
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          78,
+          545,
+          220
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q4-b": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          555,
+          96
+        ],
+        [
+          10,
+          52,
+          395,
+          555,
+          696
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          327,
+          245,
+          540,
+          371
+        ]
+      ],
+      "sourceNote": "The scheme says “Correctly labelled diagram” but supplies no diagram. The NextStepUni example shows all four labels. It is a schematic with no numeric coordinate scale: y = 2z, x = −z, and w = iz (a 90° anticlockwise rotation).",
+      "supplement": "argand-2024-hl-deferred",
+      "supplementAlt": "NextStepUni labelled Argand diagram: upper-left far y, upper-left near z, lower-left w, lower-right x; followed by original SEC credit notes."
+    },
+    "maths-2024-hl-p1-deferred-q4-c": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          555,
+          138
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          374,
+          545,
+          778
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          555,
+          155
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          78,
+          545,
+          273
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q5-b-i": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          113
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          273,
+          545,
+          342
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q5-b-ii": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          74
+        ],
+        [
+          13,
+          52,
+          237,
+          555,
+          293
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          342,
+          545,
+          640
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q6-a-i": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          555,
+          152
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          78,
+          545,
+          118
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q6-a-ii": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          555,
+          123
+        ],
+        [
+          14,
+          52,
+          275,
+          555,
+          311
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          118,
+          545,
+          462
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q6-b-i-ii": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          555,
+          398
+        ],
+        [
+          15,
+          52,
+          521,
+          555,
+          611
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          462,
+          545,
+          640
+        ]
+      ],
+      "sourceNote": "For part (ii), the full interval is 0 < a < 3. The printed a < 3 omits the strict lower bound: the integral is zero when a = 0, and positive only for 0 < a < 3 within the given domain."
+    },
+    "maths-2024-hl-p1-deferred-q7-a-i-ii": {
+      "question": [
+        [
+          16,
+          52,
+          154,
+          555,
+          365
+        ],
+        [
+          16,
+          52,
+          435,
+          555,
+          747
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          320,
+          81,
+          540,
+          333
+        ]
+      ],
+      "sourceNote": "The printed table incorrectly gives f(5) = −925; the formula and question paper both give +925. The scheme also omits the graph. The NextStepUni example supplies the corrected table and complete graph on 0 ≤ x ≤ 25, followed by the original SEC marking notes.",
+      "supplement": "shed-2024-hl-deferred",
+      "supplementAlt": "NextStepUni complete table and profit graph from x=0 to 25: −900, 925, 2200, 2625, 1900, −275 at steps of five; followed by original SEC credit notes."
+    },
+    "maths-2024-hl-p1-deferred-q7-b-i-ii": {
+      "question": [
+        [
+          17,
+          52,
+          53,
+          555,
+          157
+        ],
+        [
+          17,
+          52,
+          307,
+          555,
+          332
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          333,
+          545,
+          762
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q7-c": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          555,
+          439
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          78,
+          545,
+          217
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q7-d": {
+      "question": [
+        [
+          19,
+          52,
+          53,
+          555,
+          186
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          217,
+          545,
+          511
+        ]
+      ],
+      "sourceNote": "The scheme labels this 10C but lists five numeric bands: 0, 3, 5, 7, 10. The card labels that structure 10D and preserves all five published awards and the original credit notes."
+    },
+    "maths-2024-hl-p1-deferred-q8-a": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          256
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          78,
+          545,
+          260
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q8-b": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          220
+        ],
+        [
+          20,
+          52,
+          408,
+          555,
+          469
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          260,
+          545,
+          498
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q8-c": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          220
+        ],
+        [
+          21,
+          52,
+          53,
+          555,
+          92
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          498,
+          545,
+          635
+        ]
+      ],
+      "sourceNote": "The final printed line should read w′(5) = −1·06, not w′(t). This is a decrease of about 1·06 percentage points in water content per week at week 5."
+    },
+    "maths-2024-hl-p1-deferred-q8-d": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          220
+        ],
+        [
+          21,
+          52,
+          286,
+          555,
+          326
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          635,
+          545,
+          759
+        ]
+      ],
+      "sourceNote": "The scheme prints 5C (0, 2, 5). These three bands have a 5B structure; the card uses 5B while retaining every numeric award and the original explanation."
+    },
+    "maths-2024-hl-p1-deferred-q8-e-i-ii": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          220
+        ],
+        [
+          22,
+          52,
+          53,
+          555,
+          460
+        ],
+        [
+          22,
+          52,
+          537,
+          555,
+          598
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          327,
+          81,
+          540,
+          243
+        ]
+      ],
+      "sourceNote": "The scheme describes the graph in words without drawing it. This NextStepUni example uses k = −0·15; any k < −0·079 is valid. Both curves start at 25%, the faster curve lies below the original for t > 0, and both approach 5%. The displayed 0–60 week scale illustrates the curves; the question itself does not prescribe a numerical time-axis scale.",
+      "supplement": "drying-2024-hl-deferred",
+      "supplementAlt": "NextStepUni faster-drying graph using k=−0.15, with both curves starting at 25 and approaching 5; followed by original SEC credit notes."
+    },
+    "maths-2024-hl-p1-deferred-q8-f": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          555,
+          148
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          246,
+          545,
+          397
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q9-a": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          555,
+          523
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          78,
+          545,
+          203
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          555,
+          490
+        ],
+        [
+          25,
+          52,
+          53,
+          555,
+          78
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          203,
+          545,
+          402
+        ]
+      ],
+      "sourceNote": "Here f is defined for all real x. Its local maximum is (8/3, 64/27); the 0 ≤ x ≤ 2 restriction describes the wave image, not the domain of this local-maximum question."
+    },
+    "maths-2024-hl-p1-deferred-q9-c": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          555,
+          490
+        ],
+        [
+          25,
+          52,
+          427,
+          555,
+          467
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          402,
+          545,
+          606
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q9-d": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          555,
+          299
+        ],
+        [
+          26,
+          52,
+          53,
+          555,
+          372
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          78,
+          545,
+          460
+        ]
+      ],
+      "sourceNote": "Use ∫₀² f(x) dx − ∫₁·₅² g(x) dx. The scheme incorrectly prints a zero lower limit in two intermediate lines for g, but actually substitutes 1·5 and gets the correct area 25/24. Its scale label 10D also disagrees with the four numeric bands 0, 4, 6, 10; these awards are retained under the matching 10C label."
+    },
+    "maths-2024-hl-p1-deferred-q9-e-i": {
+      "question": [
+        [
+          27,
+          52,
+          53,
+          555,
+          198
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          460,
+          545,
+          545
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q9-e-ii": {
+      "question": [
+        [
+          27,
+          52,
+          53,
+          555,
+          198
+        ],
+        [
+          27,
+          52,
+          319,
+          555,
+          380
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          78,
+          545,
+          353
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q10-a": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          590
+        ],
+        [
+          28,
+          52,
+          612,
+          555,
+          714
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          78,
+          545,
+          217
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          590
+        ],
+        [
+          29,
+          52,
+          180,
+          555,
+          220
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          217,
+          545,
+          459
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q10-c": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          590
+        ],
+        [
+          29,
+          52,
+          427,
+          555,
+          467
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          459,
+          545,
+          582
+        ]
+      ],
+      "sourceNote": "The scheme prints 5C (0, 2, 5). These three numeric bands have a 5B structure; every published award is retained under the matching 5B label."
+    },
+    "maths-2024-hl-p1-deferred-q10-d-i": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          590
+        ],
+        [
+          30,
+          52,
+          235,
+          555,
+          261
+        ],
+        [
+          30,
+          52,
+          475,
+          555,
+          501
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          582,
+          545,
+          746
+        ]
+      ],
+      "sourceNote": "To find |AC|, subtract |BC| from |AB|: 120 − 96 = 24 cm. The printed formula incorrectly says |CD| here. The next calculation is correct: |AD| = |AC| + |CD| = 24 + 76·8 = 100·8 cm."
+    },
+    "maths-2024-hl-p1-deferred-q10-d-ii": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          590
+        ],
+        [
+          30,
+          52,
+          511,
+          555,
+          586
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          78,
+          545,
+          300
+        ]
+      ]
+    },
+    "maths-2024-hl-p1-deferred-q10-e": {
+      "question": [
+        [
+          31,
+          52,
+          53,
+          555,
+          254
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          300,
+          545,
+          574
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        123,
+        5,
+        775
+      ],
+      "scheme": [
+        6,
+        110,
+        6,
+        775
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        775
+      ],
+      "scheme": [
+        7,
+        56,
+        7,
+        774
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        775
+      ],
+      "scheme": [
+        8,
+        56,
+        8,
+        694
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        775
+      ],
+      "scheme": [
+        9,
+        56,
+        9,
+        780
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        775
+      ],
+      "scheme": [
+        10,
+        56,
+        10,
+        643
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        775
+      ],
+      "scheme": [
+        11,
+        56,
+        11,
+        643
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        132,
+        19,
+        775
+      ],
+      "scheme": [
+        12,
+        56,
+        13,
+        514
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        775
+      ],
+      "scheme": [
+        14,
+        56,
+        15,
+        400
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        27,
+        775
+      ],
+      "scheme": [
+        16,
+        56,
+        18,
+        356
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        53,
+        31,
+        775
+      ],
+      "scheme": [
+        19,
+        56,
+        20,
+        577
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-30",
+  "inspectionNote": "All 80 question/solution images inspected across nine QA sheets, with four revised question crops rechecked individually. All formulae, diagrams, table cells and source credit notes preserved. Four separately attributed NextStepUni examples visually checked; original PDF remains available.",
+  "atlasInspectionNote": "All ten whole-question spans checked against the independent complete paper/scheme visual sweep. Paper 1 only, using the exact deferred booklet; every task source page and answer rectangle lies within the corresponding Atlas question."
+}

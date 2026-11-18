@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Higher English Home Economics Section B Question 1",
+  "status": "source-reviewed; browser QA pending",
+  "generator": "scripts/markbank/authoring/he_review_2023_hl_section_b_q1.py",
+  "sources": {
+    "paper": "2023-hl-039-paper.pdf p2",
+    "scheme": "2023-marking-scheme.pdf pp10–11",
+    "hashes": "Pinned by generator"
+  },
+  "correctedExistingIds": [
+    "he-2023-hl-sb-q1a",
+    "he-2023-hl-sb-q1b",
+    "he-2023-hl-sb-q1d"
+  ],
+  "addedIds": [],
+  "marks": {
+    "before": 80,
+    "after": 80
+  },
+  "boundaryDecisions": "Four existing Q1(a–d) tasks retained; required Vitamin C headings remain one response.",
+  "corrections": [
+    "Original chart retained inline on question side with complete title, seven labels and percentages; no answer leakage.",
+    "Original stem restored: micronutrient intake, singular.",
+    "Q1(a): four source responses, each graded 5:4:3:2:1:0; all seven source paragraphs retained.",
+    "Q1(b): four absorption factors, each graded 5:4:3:0.",
+    "Q1(c): source lists verified unchanged, using the published binary bands.",
+    "Q1(d): five guidelines, each graded 4:2:0; full guidance including food pyramid, labelling and budget constraints.",
+    "Criterion notes retain paragraph breaks."
+  ],
+  "figure": {
+    "path": "public/exam-figures/home-economics/home-economics-2023-hl-sb-q1a-chart.png",
+    "bounds": [
+      74,
+      214,
+      520,
+      437
+    ],
+    "sha256": "f1f84567a87258e8adb5b4ea3b675d618764575838586c7f4a4a0e7cde9177d4",
+    "review": "Visually inspected complete original chart, all borders and labels."
+  },
+  "preservation": {
+    "allPreviousIdsRetained": true,
+    "otherRuntimeCardsUnchanged": true
+  },
+  "atlas": "Existing question/topic identities retained; 2023 B/C integration test covers every card.",
+  "validation": {
+    "vitest": "242 passed",
+    "python": "5 passed",
+    "browser": "Native pipe startup failed; no browser QA claim.",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "testTypecheck": "92 pre-existing errors: missing functions Firebase modules and Mathematics/Physics test narrowing; three errors introduced in the Home Economics helper were fixed, none remain in this test.",
+    "deterministicRegeneration": "byte-identical"
+  },
+  "remaining": "2023 B2–B5 and Section C review, then remaining English sittings; subject incomplete."
+}

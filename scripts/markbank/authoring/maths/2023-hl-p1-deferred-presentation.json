@@ -1,0 +1,1223 @@
+{
+  "questionSha256": "143e1f18e477dc166b40dadc43d26182e2172b6b01e4430b7adf88356898fb8c",
+  "solutionSha256": "71e49ca02f643ab56422044abfb1985a827f209bc490bf7775d374af91246666",
+  "tasks": {
+    "maths-2023-hl-p1-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          116,
+          565,
+          205
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          164,
+          550,
+          512
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q1-b-i": {
+      "question": [
+        [
+          5,
+          50,
+          54,
+          565,
+          164
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          56,
+          550,
+          315
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q1-b-ii": {
+      "question": [
+        [
+          5,
+          50,
+          54,
+          565,
+          137
+        ],
+        [
+          5,
+          50,
+          349,
+          565,
+          376
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          315,
+          550,
+          533
+        ]
+      ],
+      "sourceNote": "The x⁴ term is the eighth term in ascending order, with coefficient 120k³. The scheme refers to T₇ in its credit notes; irrespective of that label, 120k³ = 7680 gives k = 4."
+    },
+    "maths-2023-hl-p1-deferred-q2-a": {
+      "question": [
+        [
+          6,
+          50,
+          57,
+          565,
+          134
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          56,
+          550,
+          282
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q2-b-i": {
+      "question": [
+        [
+          6,
+          50,
+          532,
+          565,
+          570
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          282,
+          550,
+          371
+        ]
+      ],
+      "sourceNote": "This is Q2(b)(i). The detailed scheme repeats the label (b)(ii); the paper and summary confirm the 10B allocation. One suitable pair is a = 4, b = 3."
+    },
+    "maths-2023-hl-p1-deferred-q2-b-ii": {
+      "question": [
+        [
+          7,
+          50,
+          53,
+          565,
+          80
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          371,
+          550,
+          569
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q2-b-iii": {
+      "question": [
+        [
+          7,
+          50,
+          53,
+          565,
+          80
+        ],
+        [
+          7,
+          50,
+          264,
+          565,
+          318
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          569,
+          550,
+          760
+        ]
+      ],
+      "sourceNote": "The product telescopes to log₂(n + 1), with n + 1 entirely inside the logarithm. Thus n + 1 = 2¹¹ and n = 2047."
+    },
+    "maths-2023-hl-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          50,
+          56,
+          565,
+          139
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          56,
+          550,
+          297
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          50,
+          76,
+          565,
+          96
+        ],
+        [
+          8,
+          50,
+          421,
+          565,
+          466
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          297,
+          550,
+          552
+        ]
+      ],
+      "sourceNote": "In this part the roots are 2 − i and 2 + i. The scheme reuses z₁ in its working, but it does not mean the 11 − 2i found in part (a). Their sum is 4 and product is 5, so a = −4 and b = 5."
+    },
+    "maths-2023-hl-p1-deferred-q3-c": {
+      "question": [
+        [
+          8,
+          50,
+          76,
+          565,
+          96
+        ],
+        [
+          9,
+          50,
+          53,
+          565,
+          94
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          56,
+          550,
+          374
+        ]
+      ],
+      "sourceNote": "The intermediate line has two printing errors. The original number is 4 + 4√3i, with modulus 8 and argument π/3. Each cube-root angle is (π/3 + 2nπ)/3. The three final roots printed below are correct: modulus 2, with angles π/9, 7π/9 and 13π/9."
+    },
+    "maths-2023-hl-p1-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          50,
+          56,
+          565,
+          94
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          56,
+          550,
+          395
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q4-b-i": {
+      "question": [
+        [
+          11,
+          50,
+          53,
+          565,
+          100
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          56,
+          550,
+          191
+        ]
+      ],
+      "sourceNote": "The expanded line should read k³ − k³ − k + k = 0. Multiplying −(k² + 1) by k gives −k³ − k, not −k² − k. The substitution and conclusion are otherwise correct."
+    },
+    "maths-2023-hl-p1-deferred-q4-b-ii": {
+      "question": [
+        [
+          11,
+          50,
+          244,
+          565,
+          316
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          191,
+          550,
+          489
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q5-a-i-ii": {
+      "question": [
+        [
+          12,
+          50,
+          56,
+          565,
+          172
+        ],
+        [
+          12,
+          50,
+          320,
+          565,
+          418
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          56,
+          550,
+          311
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q5-a-iii": {
+      "question": [
+        [
+          12,
+          50,
+          56,
+          565,
+          172
+        ],
+        [
+          12,
+          50,
+          320,
+          565,
+          418
+        ],
+        [
+          13,
+          50,
+          53,
+          565,
+          78
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          311,
+          550,
+          484
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          50,
+          375,
+          565,
+          428
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          484,
+          550,
+          737
+        ]
+      ],
+      "sourceNote": "The (a) and (b) labels in the solution below identify two sides of the proof. They are not separately marked question parts."
+    },
+    "maths-2023-hl-p1-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          50,
+          56,
+          565,
+          169
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          56,
+          550,
+          554
+        ]
+      ],
+      "sourceNote": "This task uses the printed bands 0, 5, 8, 12, 15; the general 15D table uses 4 instead of 5. Also, g″(11/2) = 52 > 0 confirms the local minimum. At x = 10/3, g″ changes sign, giving the point of inflection."
+    },
+    "maths-2023-hl-p1-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          565,
+          139
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          56,
+          550,
+          250
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          565,
+          107
+        ],
+        [
+          15,
+          50,
+          366,
+          565,
+          405
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          250,
+          550,
+          536
+        ]
+      ],
+      "sourceNote": "After integration, f(a) = a² − a + 1/3 = (a − 1/2)² + 1/12. The squared term is non-negative, confirming a minimum value of 1/12 at a = 1/2."
+    },
+    "maths-2023-hl-p1-deferred-q7-a": {
+      "question": [
+        [
+          16,
+          50,
+          115,
+          565,
+          476
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          56,
+          550,
+          243
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q7-b": {
+      "question": [
+        [
+          16,
+          50,
+          135,
+          565,
+          198
+        ],
+        [
+          17,
+          50,
+          59,
+          565,
+          120
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          243,
+          550,
+          436
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q7-c": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          565,
+          93
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          436,
+          550,
+          607
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q7-d-i": {
+      "question": [
+        [
+          18,
+          50,
+          251,
+          565,
+          353
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          607,
+          550,
+          762
+        ]
+      ],
+      "sourceNote": "The twelfth root of 1.0553 is the monthly growth factor 1 + i. Subtract 1 to obtain i ≈ 0.004495498, or 0.45% per month to two decimal places. The scheme omits this subtraction in an intermediate line."
+    },
+    "maths-2023-hl-p1-deferred-q7-d-ii": {
+      "question": [
+        [
+          18,
+          50,
+          251,
+          565,
+          313
+        ],
+        [
+          19,
+          50,
+          55,
+          565,
+          87
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          56,
+          550,
+          235
+        ]
+      ],
+      "sourceNote": "The model solution uses the rounded monthly rate 0.45% from part (i), giving €751.68 per month."
+    },
+    "maths-2023-hl-p1-deferred-q7-e": {
+      "question": [
+        [
+          19,
+          50,
+          376,
+          565,
+          439
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          235,
+          550,
+          489
+        ]
+      ],
+      "sourceNote": "The investment exceeds €2A when t > log(2)/log(1.0675) ≈ 10.61164. Since t is a whole number, the least possible value is 11 years. The scheme’s final equals sign should be read as choosing that next whole year."
+    },
+    "maths-2023-hl-p1-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          50,
+          56,
+          565,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          56,
+          550,
+          276
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          565,
+          281
+        ],
+        [
+          20,
+          50,
+          458,
+          565,
+          495
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          276,
+          550,
+          405
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q8-a-iii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          565,
+          281
+        ],
+        [
+          21,
+          50,
+          53,
+          565,
+          124
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          405,
+          550,
+          612
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q8-a-iv": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          565,
+          281
+        ],
+        [
+          21,
+          50,
+          53,
+          565,
+          124
+        ],
+        [
+          21,
+          50,
+          362,
+          565,
+          401
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          612,
+          550,
+          769
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q8-b-i": {
+      "question": [
+        [
+          22,
+          50,
+          53,
+          565,
+          279
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          56,
+          550,
+          359
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q8-b-ii": {
+      "question": [
+        [
+          22,
+          50,
+          53,
+          565,
+          279
+        ],
+        [
+          23,
+          50,
+          53,
+          565,
+          93
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          359,
+          550,
+          553
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q9-a-i-ii": {
+      "question": [
+        [
+          24,
+          50,
+          56,
+          565,
+          207
+        ],
+        [
+          24,
+          50,
+          398,
+          565,
+          429
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          56,
+          550,
+          215
+        ]
+      ],
+      "sourceNote": "For N(10), the exponent is −0.814 × 10 = −8.14. The scheme’s −8.14 × 10 is a printing error; its final value of approximately 2994 trout is correct."
+    },
+    "maths-2023-hl-p1-deferred-q9-a-iii": {
+      "question": [
+        [
+          24,
+          50,
+          77,
+          565,
+          181
+        ],
+        [
+          25,
+          50,
+          55,
+          565,
+          78
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          215,
+          550,
+          364
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q9-a-iv": {
+      "question": [
+        [
+          24,
+          50,
+          77,
+          565,
+          181
+        ],
+        [
+          25,
+          50,
+          205,
+          565,
+          248
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          364,
+          550,
+          616
+        ]
+      ],
+      "sourceNote": "The source prints 5C (0,2,3,5) but lists Low, Mid and High Partial Credit. All numeric awards are retained; its extra Mid description has no distinct numeric award. The first whole month above the threshold is n = 5."
+    },
+    "maths-2023-hl-p1-deferred-q9-a-v": {
+      "question": [
+        [
+          24,
+          50,
+          77,
+          565,
+          181
+        ],
+        [
+          25,
+          50,
+          431,
+          565,
+          461
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          56,
+          550,
+          262
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q9-b-i": {
+      "question": [
+        [
+          26,
+          50,
+          55,
+          565,
+          224
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          56,
+          550,
+          248
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q9-b-ii": {
+      "question": [
+        [
+          26,
+          50,
+          55,
+          565,
+          224
+        ],
+        [
+          26,
+          50,
+          281,
+          565,
+          735
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          248,
+          550,
+          616
+        ]
+      ],
+      "sourceNote": "The labelled graph above is a NextStepUni reconstruction from the two printed functions. The orange points are the P(t) table values; the original SEC graph and marking guidance are retained below.",
+      "supplement": "trout-2023-hl-deferred",
+      "supplementAlt": "NextStepUni graph of both printed trout models over 0 to 8 months, with P values 400, 1312, 1904, 2289, 2538, 2700, 2805, 2874 and 2918. Both populations increase towards 3000; N initially gets steeper then flattens, whereas P flattens throughout. Original SEC worked graph and credit notes follow."
+    },
+    "maths-2023-hl-p1-deferred-q9-b-iii": {
+      "question": [
+        [
+          24,
+          50,
+          77,
+          565,
+          181
+        ],
+        [
+          26,
+          50,
+          55,
+          565,
+          126
+        ],
+        [
+          27,
+          50,
+          55,
+          565,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          616,
+          550,
+          734
+        ]
+      ],
+      "sourceNote": "The original model answer below confuses population size with growth rate around t = 5. A valid difference is that N initially gets steeper then flattens, while P flattens throughout. Both models increase towards 3000 trout. The NextStepUni graph and explanation correct the comparison while preserving the original SEC credit notes.",
+      "supplement": "trout-2023-hl-deferred",
+      "supplementAlt": "NextStepUni graph of both printed trout models over 0 to 8 months, with P values 400, 1312, 1904, 2289, 2538, 2700, 2805, 2874 and 2918. Both populations increase towards 3000; N initially gets steeper then flattens, whereas P flattens throughout. Original SEC worked graph and credit notes follow.",
+      "questionSupplement": "trout-context-2023-hl-deferred",
+      "questionSupplementAlt": "NextStepUni reconstruction of the two printed trout models over 0 to 8 months, followed by the original model definitions and comparison question. The vertical axis is the number of trout and the horizontal axis is months since stocking."
+    },
+    "maths-2023-hl-p1-deferred-q10-a-i": {
+      "question": [
+        [
+          28,
+          50,
+          56,
+          565,
+          310
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          56,
+          550,
+          191
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q10-a-ii": {
+      "question": [
+        [
+          28,
+          50,
+          76,
+          565,
+          277
+        ],
+        [
+          28,
+          50,
+          436,
+          565,
+          487
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          191,
+          550,
+          325
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q10-a-iii": {
+      "question": [
+        [
+          28,
+          50,
+          76,
+          565,
+          277
+        ],
+        [
+          29,
+          50,
+          56,
+          565,
+          100
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          325,
+          550,
+          518
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q10-b": {
+      "question": [
+        [
+          29,
+          50,
+          351,
+          565,
+          454
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          56,
+          550,
+          346
+        ]
+      ],
+      "sourceNote": "Here y in the model working denotes |BE|. When the right-angled triangle is isosceles, x = 7, so the wire length increases at 28/√98 ≈ 2.8 m/s."
+    },
+    "maths-2023-hl-p1-deferred-q10-c-i": {
+      "question": [
+        [
+          30,
+          50,
+          55,
+          565,
+          242
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          346,
+          550,
+          467
+        ]
+      ]
+    },
+    "maths-2023-hl-p1-deferred-q10-c-ii": {
+      "question": [
+        [
+          30,
+          50,
+          55,
+          565,
+          304
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          467,
+          550,
+          720
+        ]
+      ],
+      "sourceNote": "V(y) = π(288y − 2y³), for 0 ≤ y ≤ 12. At y = 4√3, V″(y) = −12πy < 0; the endpoint volumes are zero. This confirms the largest volume, 768π√3 ≈ 4179 cm³."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        116,
+        5,
+        760
+      ],
+      "scheme": [
+        6,
+        164,
+        7,
+        534
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        55,
+        7,
+        760
+      ],
+      "scheme": [
+        8,
+        55,
+        8,
+        762
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        55,
+        9,
+        760
+      ],
+      "scheme": [
+        9,
+        55,
+        10,
+        375
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        55,
+        11,
+        760
+      ],
+      "scheme": [
+        11,
+        55,
+        12,
+        490
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        55,
+        13,
+        760
+      ],
+      "scheme": [
+        13,
+        55,
+        13,
+        738
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        55,
+        15,
+        760
+      ],
+      "scheme": [
+        14,
+        55,
+        15,
+        537
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        115,
+        19,
+        760
+      ],
+      "scheme": [
+        16,
+        55,
+        17,
+        490
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        55,
+        23,
+        760
+      ],
+      "scheme": [
+        18,
+        55,
+        19,
+        554
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        55,
+        27,
+        760
+      ],
+      "scheme": [
+        20,
+        55,
+        22,
+        735
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        55,
+        30,
+        760
+      ],
+      "scheme": [
+        23,
+        55,
+        24,
+        721
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 88 question and solution images inspected in eight contact sheets, including complete formulae, diagrams, credit notes, scales and the derived trout graph. Q9(a)(v) and Q9(b)(iii) clipped text corrected, re-rendered and individually re-inspected. The comparison-question graph supplies context without giving a written answer; the corrected comparison is only in the solution.",
+  "atlasInspectionNote": "Independent paper sweep covered pages 1–32 and scheme pages 1–24. All ten whole-question regions verified against the original sources and every task crop; the complete paper/scheme page spans include all task context and markings."
+}

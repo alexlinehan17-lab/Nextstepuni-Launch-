@@ -29,6 +29,8 @@ export const ClaimRow: React.FC<{
   marks?: number;
   /** Printed values the row can take instead of one price (cloze: 3 or 2). */
   steps?: number[];
+  /** Unavailable new placements; an existing placement can still be cleared. */
+  disabledSteps?: number[];
   claimed: boolean;
   /** The step a stepped row sits on, 0 when unclaimed. */
   value?: number;
@@ -39,7 +41,7 @@ export const ClaimRow: React.FC<{
   disabled?: boolean;
   onToggle: () => void;
   onStep?: (step: number) => void;
-}> = ({ text, marks, steps, claimed, value = 0, note, tag, tone = 'full', disabled, onToggle, onStep }) => {
+}> = ({ text, marks, steps, disabledSteps, claimed, value = 0, note, tag, tone = 'full', disabled, onToggle, onStep }) => {
   if (steps && onStep) {
     return (
       <div className="mb-claim-row mb-claim-row--stepped" data-claimed={claimed} data-tone={tone}>
@@ -53,7 +55,7 @@ export const ClaimRow: React.FC<{
             <button
               key={step}
               type="button"
-              disabled={disabled}
+              disabled={disabled || (disabledSteps?.includes(step) && value !== step)}
               aria-pressed={value === step}
               aria-label={`${value === step ? 'Clear' : 'Claim'} ${step} marks for ${text}`}
               onClick={() => onStep(step)}

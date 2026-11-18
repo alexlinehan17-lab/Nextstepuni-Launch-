@@ -1,0 +1,1233 @@
+{
+  "questionSha256": "0a794e0bcfef8d5d157d1fdbb0b08d5c8e7d0fdd5e68a60d04207593e251dc28",
+  "solutionSha256": "34c9b0f4c918270f949fa811f2a2d92ddf146703c3003106f1304a228bac8ce3",
+  "tasks": {
+    "maths-2024-ol-p1-deferred-q1-a-i-ii": {
+      "question": [
+        [
+          4,
+          52,
+          136,
+          555,
+          193
+        ],
+        [
+          4,
+          52,
+          403,
+          555,
+          440
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          189,
+          545,
+          486
+        ]
+      ],
+      "sourceNote": "The exponent in the first line of part (ii) is a printing error. Use 1545 × 1.03, or 1500 × (1.03)², to obtain €1591.35. The alternative working and final answer are correct."
+    },
+    "maths-2024-ol-p1-deferred-q1-b-i-ii": {
+      "question": [
+        [
+          5,
+          52,
+          53,
+          555,
+          233
+        ],
+        [
+          5,
+          52,
+          360,
+          555,
+          402
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          486,
+          545,
+          765
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q2-a-i-ii": {
+      "question": [
+        [
+          6,
+          52,
+          73,
+          555,
+          384
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          77,
+          545,
+          359
+        ]
+      ],
+      "sourceNote": "The scheme says “four items” but lists three: plotting z₁, plotting z₂ and finding the conjugate of z₁. The listed credit criteria and numeric awards are preserved."
+    },
+    "maths-2024-ol-p1-deferred-q2-a-iii": {
+      "question": [
+        [
+          6,
+          52,
+          73,
+          555,
+          116
+        ],
+        [
+          6,
+          52,
+          385,
+          555,
+          424
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          359,
+          545,
+          530
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          555,
+          143
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          77,
+          545,
+          345
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          555,
+          149
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          77,
+          545,
+          260
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          52,
+          374,
+          555,
+          462
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          260,
+          545,
+          430
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          52,
+          53,
+          555,
+          120
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          430,
+          545,
+          718
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q4-a-i-ii": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          555,
+          149
+        ],
+        [
+          10,
+          52,
+          245,
+          555,
+          269
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          77,
+          545,
+          253
+        ]
+      ],
+      "sourceNote": "The mid-partial note has a typographical error: it should refer to expanding (x + 3)². The model solution x² + 6x + 14 is correct."
+    },
+    "maths-2024-ol-p1-deferred-q4-b": {
+      "question": [
+        [
+          10,
+          52,
+          450,
+          555,
+          526
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          253,
+          545,
+          522
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q4-c": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          555,
+          469
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          522,
+          545,
+          755
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q5-a-i-ii": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          555,
+          187
+        ],
+        [
+          12,
+          52,
+          285,
+          555,
+          337
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          77,
+          545,
+          324
+        ]
+      ],
+      "sourceNote": "Keep 1385.424 kWh until the final rounding. Multiplying by €0.1346 per kWh gives €186.4780704, rounded to €186.48. The scheme’s displayed intermediate 1385.42 is rounded prematurely; its final answer is correct."
+    },
+    "maths-2024-ol-p1-deferred-q5-a-iii": {
+      "question": [
+        [
+          12,
+          52,
+          434,
+          555,
+          492
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          324,
+          545,
+          466
+        ]
+      ],
+      "sourceNote": "The summary table labels this 5D, but the detailed marking notes explicitly give 5C with awards 0, 2, 3 and 5. This card follows the detailed allocation."
+    },
+    "maths-2024-ol-p1-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          342
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          466,
+          545,
+          592
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q6-a-i-ii": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          555,
+          149
+        ],
+        [
+          14,
+          52,
+          245,
+          555,
+          268
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          77,
+          545,
+          374
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q6-a-iii": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          555,
+          122
+        ],
+        [
+          14,
+          52,
+          363,
+          555,
+          633
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          374,
+          545,
+          537
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q6-b": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          555,
+          624
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          537,
+          545,
+          700
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          555,
+          548
+        ],
+        [
+          16,
+          52,
+          549,
+          555,
+          611
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          77,
+          545,
+          197
+        ]
+      ],
+      "sourceNote": "Lillian rests from 40 to 50 seconds on the question graph, for 10 seconds. The partial-credit example saying 45 to 55 seconds is a printing error."
+    },
+    "maths-2024-ol-p1-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          555,
+          548
+        ],
+        [
+          16,
+          52,
+          616,
+          555,
+          654
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          197,
+          545,
+          345
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q7-a-iii": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          555,
+          548
+        ],
+        [
+          17,
+          52,
+          53,
+          555,
+          143
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          345,
+          545,
+          508
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q7-b-i-ii": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          555,
+          548
+        ],
+        [
+          17,
+          52,
+          326,
+          555,
+          369
+        ],
+        [
+          17,
+          52,
+          495,
+          555,
+          582
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          508,
+          545,
+          775
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q7-c": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          555,
+          124
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          77,
+          545,
+          218
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q7-d-i-ii": {
+      "question": [
+        [
+          19,
+          52,
+          53,
+          555,
+          305
+        ],
+        [
+          19,
+          52,
+          458,
+          555,
+          516
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          218,
+          545,
+          479
+        ]
+      ],
+      "sourceNote": "In part (ii), 25 − 4.6993 is approximately 20.3007, not the printed intermediate 20.27. The final answer of 20.3°C is correct."
+    },
+    "maths-2024-ol-p1-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          183
+        ],
+        [
+          20,
+          52,
+          183,
+          555,
+          206
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          77,
+          545,
+          168
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q8-a-ii-iii": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          183
+        ],
+        [
+          20,
+          52,
+          303,
+          555,
+          400
+        ],
+        [
+          20,
+          52,
+          470,
+          555,
+          720
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          168,
+          545,
+          402
+        ]
+      ],
+      "sourceNote": "The SEC descriptors overlap at twelve correct items: mid partial says 6–12 and high partial says 12–14. Both original descriptors are retained; the source does not resolve that boundary."
+    },
+    "maths-2024-ol-p1-deferred-q8-a-iv": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          555,
+          183
+        ],
+        [
+          20,
+          52,
+          470,
+          555,
+          720
+        ],
+        [
+          21,
+          52,
+          53,
+          555,
+          146
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          402,
+          545,
+          516
+        ]
+      ],
+      "sourceNote": "The scheme supplies a time but no continued graph. This NextStepUni worked graph extends the printed function from 8 seconds to sea level and reads about 9.1 seconds. The original SEC answer and credit notes follow.",
+      "supplement": "firework-2024-ol-deferred",
+      "supplementAlt": "NextStepUni graph of h(t)=−4.8t²+41.65t+20, extending the curve beyond t=8 to its positive zero at approximately 9.13 seconds. Read about 9.1 seconds at sea level. Original SEC answer and criteria follow."
+    },
+    "maths-2024-ol-p1-deferred-q8-b-i-ii": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          555,
+          185
+        ],
+        [
+          22,
+          52,
+          339,
+          555,
+          362
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          516,
+          545,
+          742
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q8-c-i": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          555,
+          225
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          77,
+          545,
+          232
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q8-c-ii": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          555,
+          188
+        ],
+        [
+          23,
+          52,
+          379,
+          555,
+          416
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          232,
+          545,
+          347
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q9-a-i-ii": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          555,
+          168
+        ],
+        [
+          24,
+          52,
+          307,
+          555,
+          379
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          77,
+          545,
+          318
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          52,
+          532,
+          555,
+          604
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          318,
+          545,
+          459
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q9-c-i": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          555,
+          231
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          459,
+          545,
+          579
+        ]
+      ],
+      "sourceNote": "Use the byte values supplied in this examination table. They are the data for this question, rather than a statement of standard storage-unit definitions."
+    },
+    "maths-2024-ol-p1-deferred-q9-c-ii": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          555,
+          170
+        ],
+        [
+          25,
+          52,
+          327,
+          555,
+          397
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          579,
+          545,
+          761
+        ]
+      ],
+      "sourceNote": "Use the byte values supplied in this examination table, including 1 petabyte = 2⁶⁰ bytes. With these exam values, 7.6 × 2⁶⁰ ÷ 2⁴⁰ = 7,969,177.6, so the required rounded answer is 7,969,178."
+    },
+    "maths-2024-ol-p1-deferred-q9-d-i": {
+      "question": [
+        [
+          26,
+          52,
+          53,
+          555,
+          212
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          77,
+          545,
+          274
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q9-d-ii-iii": {
+      "question": [
+        [
+          26,
+          52,
+          53,
+          555,
+          177
+        ],
+        [
+          26,
+          52,
+          312,
+          555,
+          594
+        ],
+        [
+          27,
+          52,
+          53,
+          555,
+          124
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          274,
+          545,
+          495
+        ]
+      ],
+      "sourceNote": "The NextStepUni graph supplies the graphical working omitted from the scheme. The curve reaches 200 during 2027. Its doubling time is about four years. The scheme’s criteria call these subparts (i) and (ii); they correspond to paper (ii) and (iii).",
+      "supplement": "data-growth-2024-ol-deferred",
+      "supplementAlt": "NextStepUni graph of 64(1.19)^t over 2021–2029. Reading guides show 200 zettabytes crossed during 2027 and growth from about 75 in 2022 to about 150 in 2026, a doubling time of approximately four years. Original SEC answer and marking notes follow."
+    },
+    "maths-2024-ol-p1-deferred-q10-a": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          28,
+          52,
+          216,
+          555,
+          238
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          77,
+          545,
+          253
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          28,
+          52,
+          454,
+          555,
+          639
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          253,
+          545,
+          458
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q10-c-i": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          53,
+          555,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          458,
+          545,
+          614
+        ]
+      ],
+      "sourceNote": "Here the formula n + 2 counts grey tiles. The Tₙ notation used in this scheme row must not be confused with Tₙ for total tiles in part (d)."
+    },
+    "maths-2024-ol-p1-deferred-q10-c-ii": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          53,
+          555,
+          91
+        ],
+        [
+          29,
+          52,
+          217,
+          555,
+          254
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          614,
+          545,
+          730
+        ]
+      ],
+      "sourceNote": "This counts grey tiles: 25 + 2 = 27. The later part (d) uses Tₙ for total tiles, which is a different count."
+    },
+    "maths-2024-ol-p1-deferred-q10-c-iii": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          365,
+          555,
+          388
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          77,
+          545,
+          211
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q10-c-iv": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          540,
+          555,
+          563
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          211,
+          545,
+          303
+        ]
+      ]
+    },
+    "maths-2024-ol-p1-deferred-q10-d-i-ii": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          555,
+          185
+        ],
+        [
+          30,
+          52,
+          343,
+          555,
+          407
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          303,
+          545,
+          501
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        117,
+        5,
+        775
+      ],
+      "scheme": [
+        6,
+        169,
+        6,
+        765
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        55,
+        7,
+        775
+      ],
+      "scheme": [
+        7,
+        58,
+        8,
+        345
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        55,
+        9,
+        775
+      ],
+      "scheme": [
+        9,
+        58,
+        9,
+        718
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        55,
+        11,
+        775
+      ],
+      "scheme": [
+        10,
+        58,
+        10,
+        755
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        55,
+        13,
+        775
+      ],
+      "scheme": [
+        11,
+        58,
+        11,
+        592
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        55,
+        15,
+        775
+      ],
+      "scheme": [
+        12,
+        58,
+        12,
+        700
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        117,
+        19,
+        775
+      ],
+      "scheme": [
+        13,
+        58,
+        14,
+        479
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        55,
+        23,
+        775
+      ],
+      "scheme": [
+        15,
+        58,
+        16,
+        347
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        55,
+        27,
+        775
+      ],
+      "scheme": [
+        17,
+        58,
+        18,
+        495
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        55,
+        30,
+        775
+      ],
+      "scheme": [
+        19,
+        58,
+        20,
+        501
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "Inspected all 84 rendered question/solution images across eight contact sheets. Rechecked thirteen corrected crops separately, including full table borders, complete graph grids and the unobstructed extended firework curve. Both attributed worked graphs retain the original SEC criteria.",
+  "atlasInspectionNote": "Whole-question spans checked against the independent 32-page paper and scheme pages 1–20 visual sweep. All ten paper/answer pairs contain every task crop, including shared contexts and continuation pages; each uses the exact deferred booklet."
+}

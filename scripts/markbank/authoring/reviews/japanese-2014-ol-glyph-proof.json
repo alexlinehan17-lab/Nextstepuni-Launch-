@@ -1,0 +1,2308 @@
+{
+  "source": "examiner-reports/japanese/schemes/2014-ol.pdf",
+  "sha256": "69355ed48177aeaec82eb22b281381acfe9cea433c3a39a8791b88c662472f9f",
+  "method": "Direct visual reading of113 required original PDF glyph crops, each bound to font/gid, exact trace origin and original-image crop digest. Only starred glyphs are assigned text; other transcript characters remain original-image-only. No inferred character IDs, Unicode normalization or approximate outline matching.",
+  "glyphs": [
+    {
+      "font": "MSMincho",
+      "gid": 11,
+      "required": true,
+      "page": 9,
+      "origin": [
+        215.886,
+        564.696
+      ],
+      "crop": [
+        214.686,
+        552.096,
+        232.686,
+        568.296
+      ],
+      "imageSha256": "e1dc6c18636122982d0c846b8ef0615a5853aa9a858004a30a768f21df857801",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "("
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2058,
+      "required": true,
+      "page": 9,
+      "origin": [
+        133.866,
+        543.876
+      ],
+      "crop": [
+        132.564,
+        530.205,
+        152.094,
+        547.782
+      ],
+      "imageSha256": "d84e2d3212c26dadd4f3f57715dd5d43d8b8cb21bfec4850dff7f7d4ea0a564c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "、"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2059,
+      "required": true,
+      "page": 9,
+      "origin": [
+        287.944,
+        476.856
+      ],
+      "crop": [
+        286.642,
+        463.185,
+        306.172,
+        480.762
+      ],
+      "imageSha256": "b1880ac98c8a886d2959b06b786e0f3b1804c315c896346523186a31fac8c1a0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "。"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2102,
+      "required": true,
+      "page": 6,
+      "origin": [
+        164.466,
+        642.096
+      ],
+      "crop": [
+        163.266,
+        629.496,
+        181.266,
+        645.696
+      ],
+      "imageSha256": "fcbaf6993de318b2327865a1d1bdcccf9123cc609affd57d373d1c2bdf3cf126",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "あ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2104,
+      "required": true,
+      "page": 9,
+      "origin": [
+        170.007,
+        193.716
+      ],
+      "crop": [
+        168.705,
+        180.045,
+        188.235,
+        197.622
+      ],
+      "imageSha256": "fb0a2b1b9b85fd6936fc66c5d349d5592c3e84cde4de8bd2a5e217ebc8f8775b",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "い"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2106,
+      "required": true,
+      "page": 9,
+      "origin": [
+        169.973,
+        345.456
+      ],
+      "crop": [
+        168.671,
+        331.785,
+        188.201,
+        349.362
+      ],
+      "imageSha256": "9b6e95fac728ab70dec738431eaa8e3286358b047dcccf61123127e21dc9299d",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "う"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2110,
+      "required": true,
+      "page": 6,
+      "origin": [
+        112.446,
+        485.196
+      ],
+      "crop": [
+        111.246,
+        472.596,
+        129.246,
+        488.796
+      ],
+      "imageSha256": "bc783a40b0b45f6637bfa8b9b97a138e8c1dd90c0aaf798b1bd538f66e365c54",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "お"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2111,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        193.716
+      ],
+      "crop": [
+        142.584,
+        180.045,
+        162.114,
+        197.622
+      ],
+      "imageSha256": "4b493b6249a23bdddf727869c4b7004cf99ab3696fe6cb227429c995a1f6e5b4",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "か"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2112,
+      "required": true,
+      "page": 9,
+      "origin": [
+        209.886,
+        476.856
+      ],
+      "crop": [
+        208.584,
+        463.185,
+        228.114,
+        480.762
+      ],
+      "imageSha256": "cbd5dbb56cc4c9851baaa846f621405c294a2c1201d31d746778a81dd1ba0077",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "が"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2113,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.946,
+        294.876
+      ],
+      "crop": [
+        155.644,
+        281.205,
+        175.174,
+        298.782
+      ],
+      "imageSha256": "90936e6478828e29b56b5984549f94873c78490666e19009f609932d3395eba1",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "き"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2115,
+      "required": true,
+      "page": 9,
+      "origin": [
+        169.973,
+        244.296
+      ],
+      "crop": [
+        168.671,
+        230.625,
+        188.201,
+        248.202
+      ],
+      "imageSha256": "d837f382d63c9785a6895d4371f18969bfb61b34ad048b89f8d601e44026d1d4",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "く"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2117,
+      "required": true,
+      "page": 8,
+      "origin": [
+        143.586,
+        619.356
+      ],
+      "crop": [
+        142.386,
+        606.756,
+        160.386,
+        622.956
+      ],
+      "imageSha256": "6bb6dc46c8da0cfcaa60ddde0a9683691b956f3868f68cb3cc97da4d26742f1b",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "け"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2119,
+      "required": true,
+      "page": 9,
+      "origin": [
+        336.297,
+        519.036
+      ],
+      "crop": [
+        334.995,
+        505.365,
+        354.525,
+        522.942
+      ],
+      "imageSha256": "fd1c40168b6ba689fb4e4a71893b7aa3c46e1f0f50c5d11bb1b48883f3d66c04",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "こ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2120,
+      "required": true,
+      "page": 7,
+      "origin": [
+        148.266,
+        243.936
+      ],
+      "crop": [
+        147.066,
+        231.336,
+        165.066,
+        247.536
+      ],
+      "imageSha256": "5462621a11080e4e6b049f3634b4fd3c72d10766d441716ff8dc64cd6ec30160",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ご"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2121,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        345.456
+      ],
+      "crop": [
+        142.584,
+        331.785,
+        162.114,
+        349.362
+      ],
+      "imageSha256": "71f200bda94fc6281519e9e638e669940903ffb22568bccf03abfdb198ee036a",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "さ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2123,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.966,
+        218.976
+      ],
+      "crop": [
+        155.664,
+        205.305,
+        175.194,
+        222.882
+      ],
+      "imageSha256": "7c3656ecf886169d74c2eddc56076b75c8ad0ce345e1ad3bbcceb46fee633028",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "し"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2124,
+      "required": true,
+      "page": 7,
+      "origin": [
+        215.886,
+        357.816
+      ],
+      "crop": [
+        214.686,
+        345.216,
+        232.686,
+        361.416
+      ],
+      "imageSha256": "b21da5ad9682cd4913717d189ef45c7a7e98f5d0a82ab802946b64ed5bf5893c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "じ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2125,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.067,
+        294.876
+      ],
+      "crop": [
+        181.765,
+        281.205,
+        201.295,
+        298.782
+      ],
+      "imageSha256": "c54ff8142bd91d9164267a980e2a8052b9ee5535ecea68c8ac69a9c507b496f0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "す"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2127,
+      "required": true,
+      "page": 7,
+      "origin": [
+        240.006,
+        342.276
+      ],
+      "crop": [
+        238.806,
+        329.676,
+        256.806,
+        345.876
+      ],
+      "imageSha256": "eeb9d96e6f3e5e3a29483c953939798fad6e664114b73c242ad61b4e1d6310b0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "せ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2129,
+      "required": true,
+      "page": 9,
+      "origin": [
+        159.924,
+        476.856
+      ],
+      "crop": [
+        158.622,
+        463.185,
+        178.152,
+        480.762
+      ],
+      "imageSha256": "438c84afa40b9d5e3b44032c8be3b3da3658bcd99c8cee9aa2178ebcc7b15b70",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "そ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2131,
+      "required": true,
+      "page": 9,
+      "origin": [
+        170.046,
+        218.976
+      ],
+      "crop": [
+        168.744,
+        205.305,
+        188.274,
+        222.882
+      ],
+      "imageSha256": "2d32deb1e3a7a2f50e7e8259a4134cbb713b09bba6eb8ec85405bb6e5ff5d66c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "た"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2132,
+      "required": true,
+      "page": 9,
+      "origin": [
+        170.007,
+        143.136
+      ],
+      "crop": [
+        168.705,
+        129.465,
+        188.235,
+        147.042
+      ],
+      "imageSha256": "65cbdf478524c17d5f749fe96ed34c5e7c070fa42476e4f2b4cd171a693543c8",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "だ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2133,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.067,
+        143.136
+      ],
+      "crop": [
+        181.765,
+        129.465,
+        201.295,
+        147.042
+      ],
+      "imageSha256": "7e13b77ff41e7c7bad52d11ce585910a4cb355c8bf20f1d3a6c373b144943e73",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ち"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2135,
+      "required": true,
+      "page": 9,
+      "origin": [
+        116.826,
+        553.716
+      ],
+      "crop": [
+        116.226,
+        547.416,
+        125.226,
+        555.516
+      ],
+      "imageSha256": "da81977cd5b8479cfd17c627b488d8fd124d7984b24bd54d5081f57f0963edbe",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "っ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2138,
+      "required": true,
+      "page": 9,
+      "origin": [
+        146.915,
+        476.856
+      ],
+      "crop": [
+        145.613,
+        463.185,
+        165.143,
+        480.762
+      ],
+      "imageSha256": "e4d1f687fcfea3c9e5f59b6f4be40ee991d8387dc7f6c6b9f9b8e10a78efa9dc",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "て"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2139,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        218.976
+      ],
+      "crop": [
+        142.584,
+        205.305,
+        162.114,
+        222.882
+      ],
+      "imageSha256": "af0b2d9a329151ab6796bc6cdf90258fcd0ce9f92539fe325a05740c0e7031b4",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "で"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2140,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        143.136
+      ],
+      "crop": [
+        142.584,
+        129.465,
+        162.114,
+        147.042
+      ],
+      "imageSha256": "d65a49a84ce81d423b96a81199e1247f2dce2786085b27704b5cb75eb8add687",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "と"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2141,
+      "required": true,
+      "page": 9,
+      "origin": [
+        107.886,
+        476.856
+      ],
+      "crop": [
+        106.584,
+        463.185,
+        126.114,
+        480.762
+      ],
+      "imageSha256": "1a4f80666e23b5f98394872b6e87d9b837236d3d7b776b240939e58d0e750120",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ど"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2142,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.016,
+        345.456
+      ],
+      "crop": [
+        181.714,
+        331.785,
+        201.244,
+        349.362
+      ],
+      "imageSha256": "54a2d72c31440d0a81ab8739aa7dcf79d159b357356380476ad24276bdb8ba9c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "な"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2143,
+      "required": true,
+      "page": 9,
+      "origin": [
+        172.908,
+        519.036
+      ],
+      "crop": [
+        171.606,
+        505.365,
+        191.136,
+        522.942
+      ],
+      "imageSha256": "f6eae8ae22edbe6982838d0d373002fc3a67f2d0930947f2c8d0061ea7d7fcfb",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "に"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2145,
+      "required": true,
+      "page": 8,
+      "origin": [
+        251.554,
+        619.356
+      ],
+      "crop": [
+        250.354,
+        606.756,
+        268.354,
+        622.956
+      ],
+      "imageSha256": "9a3bbe1cc0868eb2f25ddd176d1364228b5aa7bd829d76f95aa5de7b898d4fee",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ね"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2146,
+      "required": true,
+      "page": 9,
+      "origin": [
+        172.934,
+        476.856
+      ],
+      "crop": [
+        171.632,
+        463.185,
+        191.162,
+        480.762
+      ],
+      "imageSha256": "dbad3ee7ce510bccaa71bbbd26c780516e7155d51d8cf08e7dbfdf8fbc66fba1",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "の"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2147,
+      "required": true,
+      "page": 9,
+      "origin": [
+        172.866,
+        502.176
+      ],
+      "crop": [
+        171.564,
+        488.505,
+        191.094,
+        506.082
+      ],
+      "imageSha256": "195f9ae866a0f35f23875db2d89511d3b315281c084e95d7949c3688d05ed7be",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "は"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2157,
+      "required": true,
+      "page": 7,
+      "origin": [
+        148.266,
+        212.796
+      ],
+      "crop": [
+        147.066,
+        200.196,
+        165.066,
+        216.396
+      ],
+      "imageSha256": "62f9451d62b39b4c281440e5d544121131e27c79c2b6a89f998d1c2a679d1b83",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "べ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2162,
+      "required": true,
+      "page": 9,
+      "origin": [
+        170.007,
+        294.876
+      ],
+      "crop": [
+        168.705,
+        281.205,
+        188.235,
+        298.782
+      ],
+      "imageSha256": "658ea4ab96d5b26636a02a3eb815e3091eddbd11e676d767f9f4758a6f28743f",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ま"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2163,
+      "required": true,
+      "page": 6,
+      "origin": [
+        140.466,
+        642.096
+      ],
+      "crop": [
+        139.266,
+        629.496,
+        157.266,
+        645.696
+      ],
+      "imageSha256": "f7543ecb70bece1e754b32ae476fcc1711f23d8fb2ab9d70324e647b7fa29da6",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "み"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2166,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.946,
+        143.136
+      ],
+      "crop": [
+        155.644,
+        129.465,
+        175.174,
+        147.042
+      ],
+      "imageSha256": "db1831e977a75904783e6209e701ee31792d19cad6ba18dfd6c748e3ba83d515",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "も"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2167,
+      "required": true,
+      "page": 7,
+      "origin": [
+        227.935,
+        357.816
+      ],
+      "crop": [
+        226.735,
+        345.216,
+        244.735,
+        361.416
+      ],
+      "imageSha256": "f6bdfd692010f7ae1d560c0cbe28c448e38d9e4aeff6521592877c953864f2ae",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ゃ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2169,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.93,
+        244.296
+      ],
+      "crop": [
+        155.628,
+        230.625,
+        175.158,
+        248.202
+      ],
+      "imageSha256": "020e7fc224043295c54ac14164467bccdc3a55339e9c887faabedd71477e50d3",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ゅ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2172,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.93,
+        345.456
+      ],
+      "crop": [
+        155.628,
+        331.785,
+        175.158,
+        349.362
+      ],
+      "imageSha256": "1584e1d1033573d6a1b4942537f3796cacbd43f3c5cc061b760d80e6bb98b970",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "よ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2173,
+      "required": true,
+      "page": 9,
+      "origin": [
+        196.06,
+        345.456
+      ],
+      "crop": [
+        194.758,
+        331.785,
+        214.288,
+        349.362
+      ],
+      "imageSha256": "bd0accc0ff90b7394b36745e462def2568ad85579210e127343de22327b52257",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ら"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2174,
+      "required": true,
+      "page": 7,
+      "origin": [
+        252.034,
+        357.816
+      ],
+      "crop": [
+        250.834,
+        345.216,
+        268.834,
+        361.416
+      ],
+      "imageSha256": "31320bcf1378fc49c2e89d861a344771a7f66026ba163e39c6b7674d63c15b8f",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "り"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2175,
+      "required": true,
+      "page": 7,
+      "origin": [
+        160.266,
+        212.796
+      ],
+      "crop": [
+        159.066,
+        200.196,
+        177.066,
+        216.396
+      ],
+      "imageSha256": "bbf48f9e0cbf476a2fd66b0096ad9c86f7e91493b1f09417304e1247c4b7d66d",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "る"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2176,
+      "required": true,
+      "page": 6,
+      "origin": [
+        196.446,
+        485.196
+      ],
+      "crop": [
+        195.246,
+        472.596,
+        213.246,
+        488.796
+      ],
+      "imageSha256": "4401f40666b5eba7461b488afb79a86a7b4defcf2d7ba4496296afd9c42c2152",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "れ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2179,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.946,
+        193.716
+      ],
+      "crop": [
+        155.644,
+        180.045,
+        175.174,
+        197.622
+      ],
+      "imageSha256": "ac40519755cc78d172f641522e363f8f7c767fbfcc842ddb16878aba2c4e5e6d",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "わ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2182,
+      "required": true,
+      "page": 9,
+      "origin": [
+        170.886,
+        543.876
+      ],
+      "crop": [
+        169.584,
+        530.205,
+        189.114,
+        547.782
+      ],
+      "imageSha256": "c57e291740eed5969aca415e3379625d5177497b84719cc8874a82db78a3ee02",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "を"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2183,
+      "required": true,
+      "page": 7,
+      "origin": [
+        172.266,
+        243.936
+      ],
+      "crop": [
+        171.066,
+        231.336,
+        189.066,
+        247.536
+      ],
+      "imageSha256": "92fb129b05608e1ab1b9a6aa86cddac96e01a471ed8b46be9e7dcb417998b5e0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ん"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2198,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        117.876
+      ],
+      "crop": [
+        142.584,
+        104.205,
+        162.114,
+        121.782
+      ],
+      "imageSha256": "a7f2d37c2e36f0565a7316d1c689d9e6794560ef0e7e2d9696f2c099909b1e0f",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "イ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2205,
+      "required": true,
+      "page": 8,
+      "origin": [
+        332.286,
+        560.616
+      ],
+      "crop": [
+        331.086,
+        548.016,
+        349.086,
+        564.216
+      ],
+      "imageSha256": "ba2dac323a1155ea2e6b43d89fddc31a91e32c968c46d6f12c95dca93c0ce408",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "カ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2209,
+      "required": true,
+      "page": 5,
+      "origin": [
+        227.946,
+        581.196
+      ],
+      "crop": [
+        226.746,
+        568.596,
+        244.746,
+        584.796
+      ],
+      "imageSha256": "19190a9d8099349963a1fc1ec909c29e7385c81f9700c656fbe9b41e27d3d764",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ク"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2213,
+      "required": true,
+      "page": 9,
+      "origin": [
+        107.886,
+        519.036
+      ],
+      "crop": [
+        106.584,
+        505.365,
+        126.114,
+        522.942
+      ],
+      "imageSha256": "e542dfc8a037d2359907b807f57a2716040307c1ae2f8c54b4102179dfac607c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "コ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2215,
+      "required": true,
+      "page": 9,
+      "origin": [
+        133.895,
+        519.036
+      ],
+      "crop": [
+        132.593,
+        505.365,
+        152.123,
+        522.942
+      ],
+      "imageSha256": "05824ace00bf101ad11ab63c61094d013e180ad451d3e9312da5db4959c079c2",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "サ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2219,
+      "required": true,
+      "page": 9,
+      "origin": [
+        169.994,
+        117.876
+      ],
+      "crop": [
+        168.692,
+        104.205,
+        188.222,
+        121.782
+      ],
+      "imageSha256": "3a5ec419e952981f1cf468282c2fb339764854a1ee827b1ddf0cc2c74407e681",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ス"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2220,
+      "required": true,
+      "page": 5,
+      "origin": [
+        227.946,
+        551.796
+      ],
+      "crop": [
+        226.746,
+        539.196,
+        244.746,
+        555.396
+      ],
+      "imageSha256": "461ef248f0f3155acee74a0a3ea358c360644b6415306d3cd83c050f331784cf",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ズ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2225,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.048,
+        117.876
+      ],
+      "crop": [
+        181.746,
+        104.205,
+        201.276,
+        121.782
+      ],
+      "imageSha256": "8df72789e5a1d3625df22fe609d2a36d7733816c25277520f0f9997a2ab1c67a",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "タ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2226,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        168.396
+      ],
+      "crop": [
+        142.584,
+        154.725,
+        162.114,
+        172.302
+      ],
+      "imageSha256": "57873176c579ee9ccac60f6c58d793aaefa1e0babef0051cb02586714ffc356b",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ダ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2229,
+      "required": true,
+      "page": 8,
+      "origin": [
+        344.286,
+        560.616
+      ],
+      "crop": [
+        343.086,
+        548.016,
+        361.086,
+        564.216
+      ],
+      "imageSha256": "464d3d6e212360cbc3856f77d97aafc5ade7bc0b40dfdddc31af3df959a4edba",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ッ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2233,
+      "required": true,
+      "page": 9,
+      "origin": [
+        248.317,
+        117.876
+      ],
+      "crop": [
+        247.015,
+        104.205,
+        266.545,
+        121.782
+      ],
+      "imageSha256": "f4c0e928381435d6d68450cae331f8a9f6c283138ead89ade11d1676b506f266",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "デ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2234,
+      "required": true,
+      "page": 9,
+      "origin": [
+        159.904,
+        519.036
+      ],
+      "crop": [
+        158.602,
+        505.365,
+        178.132,
+        522.942
+      ],
+      "imageSha256": "82cecffeace49ee6a48ed691a8666d8046b6e1d28fd2ddf31d239a721c173df7",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ト"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2235,
+      "required": true,
+      "page": 8,
+      "origin": [
+        308.286,
+        560.616
+      ],
+      "crop": [
+        307.086,
+        548.016,
+        325.086,
+        564.216
+      ],
+      "imageSha256": "3db0337cddfaf62f56084deedd797e36d2e68bc05892dbb60c7fb141ea4ed9d3",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ド"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2239,
+      "required": true,
+      "page": 5,
+      "origin": [
+        215.886,
+        581.196
+      ],
+      "crop": [
+        214.686,
+        568.596,
+        232.686,
+        584.796
+      ],
+      "imageSha256": "d41cc813c818803907d25448b853962209355be905d75cb61940c05e753f5fbe",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ネ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2243,
+      "required": true,
+      "page": 5,
+      "origin": [
+        215.886,
+        551.796
+      ],
+      "crop": [
+        214.686,
+        539.196,
+        232.686,
+        555.396
+      ],
+      "imageSha256": "836b238e92bf8f9b58afb5e014860efc8038874b7bb7475702f4ef0c4d0820a5",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "パ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2247,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        320.136
+      ],
+      "crop": [
+        142.584,
+        306.465,
+        162.114,
+        324.042
+      ],
+      "imageSha256": "def0d7aad710e778e83aca657178658928580efd88625fdd1161afa6f7fca252",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "フ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2248,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.946,
+        168.396
+      ],
+      "crop": [
+        155.644,
+        154.725,
+        175.174,
+        172.302
+      ],
+      "imageSha256": "ca07b6fea6fd0ef229a2aa2af4df6d8ccee7b35c782dca0989b24ccdc6476b82",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ブ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2249,
+      "required": true,
+      "page": 8,
+      "origin": [
+        356.286,
+        560.616
+      ],
+      "crop": [
+        355.086,
+        548.016,
+        373.086,
+        564.216
+      ],
+      "imageSha256": "f1a5b08c42857b5ce233e8b1c4d629dbec26dedde84cb90eff169cbd3650c825",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "プ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2253,
+      "required": true,
+      "page": 9,
+      "origin": [
+        222.209,
+        117.876
+      ],
+      "crop": [
+        220.907,
+        104.205,
+        240.437,
+        121.782
+      ],
+      "imageSha256": "fa869800c75dbb02abb3a5fee5aca3fb923e1ff58fda482ca08e5f50aae28d1a",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ホ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2267,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.93,
+        320.136
+      ],
+      "crop": [
+        155.628,
+        306.465,
+        175.158,
+        324.042
+      ],
+      "imageSha256": "d9a34ff9496de2a5cd0676414ad86fefa26774d2dfc24076eed1426a342d7c1e",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ラ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2268,
+      "required": true,
+      "page": 9,
+      "origin": [
+        235.263,
+        117.876
+      ],
+      "crop": [
+        233.961,
+        104.205,
+        253.491,
+        121.782
+      ],
+      "imageSha256": "26a70994242a32d8990f73bc34b0169e16e9e3442df937b1dcc0bd5181bb2887",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "リ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2269,
+      "required": true,
+      "page": 5,
+      "origin": [
+        240.006,
+        551.796
+      ],
+      "crop": [
+        238.806,
+        539.196,
+        256.806,
+        555.396
+      ],
+      "imageSha256": "b77fc4ffb9c42254edfbec7d3fb368266a387c4af861433117f862c7a297f8c1",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ル"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2270,
+      "required": true,
+      "page": 8,
+      "origin": [
+        152.286,
+        560.616
+      ],
+      "crop": [
+        151.086,
+        548.016,
+        169.086,
+        564.216
+      ],
+      "imageSha256": "cf75020f68a9d11a2f13dbcd22844bc313acb89af20e0cf3b7727dfe9b39a258",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "レ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2271,
+      "required": true,
+      "page": 8,
+      "origin": [
+        140.286,
+        560.616
+      ],
+      "crop": [
+        139.086,
+        548.016,
+        157.086,
+        564.216
+      ],
+      "imageSha256": "00e2af54696be4cd4b1f5c4f2f6e4390cbf7abd78932c4b01f9512d75ced9440",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ロ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2273,
+      "required": true,
+      "page": 8,
+      "origin": [
+        272.286,
+        560.616
+      ],
+      "crop": [
+        271.086,
+        548.016,
+        289.086,
+        564.216
+      ],
+      "imageSha256": "b4e9aa518a99a92e8ffa8e2e7740cc938c928389c1ee0f26cecd78af18df052c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ワ"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2277,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.067,
+        168.396
+      ],
+      "crop": [
+        181.765,
+        154.725,
+        201.295,
+        172.302
+      ],
+      "imageSha256": "608867d55654d62aab4d7915309fb078177bc9c5558326f65430e2ab8ca1d1ee",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ン"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2285,
+      "required": true,
+      "page": 9,
+      "origin": [
+        209.155,
+        117.876
+      ],
+      "crop": [
+        207.853,
+        104.205,
+        227.383,
+        121.782
+      ],
+      "imageSha256": "40e9caeb22dc3502f0ac7538ac7eb745f8e5026a1e0869e4b452e69b0ef9ea31",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "・"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2286,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.94,
+        117.876
+      ],
+      "crop": [
+        155.638,
+        104.205,
+        175.168,
+        121.782
+      ],
+      "imageSha256": "14b64dfb556c53e0aea855b15666c92d345e193e91310269c6482c24560c3f82",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "ー"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2901,
+      "required": true,
+      "page": 6,
+      "origin": [
+        160.446,
+        593.196
+      ],
+      "crop": [
+        159.246,
+        580.596,
+        177.246,
+        596.796
+      ],
+      "imageSha256": "f8e4e70ca1eb4c345605b4b79585a38b03f327395cdac19545853ba1cfb28f5b",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "三"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2983,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        166.116
+      ],
+      "crop": [
+        135.066,
+        153.516,
+        153.066,
+        169.716
+      ],
+      "imageSha256": "28b8593a804ab1db83808036a4d8f268dba8b4025c5c714791a7699b92654b42",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "二"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3015,
+      "required": true,
+      "page": 6,
+      "origin": [
+        172.446,
+        593.196
+      ],
+      "crop": [
+        171.246,
+        580.596,
+        189.246,
+        596.796
+      ],
+      "imageSha256": "d81d0415e9bd74b5f1125e169af3a6a21d4791de600f1cc7b37be4acb93fd390",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "人"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3026,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        181.656
+      ],
+      "crop": [
+        135.066,
+        169.056,
+        153.066,
+        185.256
+      ],
+      "imageSha256": "08a7e518ac9aeaa1ee118579cf62ef181570b446524079d3977f88e272cd99a6",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "今"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3121,
+      "required": true,
+      "page": 8,
+      "origin": [
+        221.924,
+        678.096
+      ],
+      "crop": [
+        220.724,
+        665.496,
+        238.724,
+        681.696
+      ],
+      "imageSha256": "ba4d8f0631410c27788e91b5296856d7c6c2b03cd625a55206e3afdb802f4d8f",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "何"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3667,
+      "required": true,
+      "page": 8,
+      "origin": [
+        245.917,
+        678.096
+      ],
+      "crop": [
+        244.717,
+        665.496,
+        262.717,
+        681.696
+      ],
+      "imageSha256": "a0a96167d7ee6ecb51e0a2f1c0f9cc6dc4cdb321f98939269ac0ef79ff19e7dd",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "前"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4350,
+      "required": true,
+      "page": 9,
+      "origin": [
+        119.886,
+        564.696
+      ],
+      "crop": [
+        118.686,
+        552.096,
+        136.686,
+        568.296
+      ],
+      "imageSha256": "d3dfba7f64afedea61b00d4a7f8d0e9184a1cfa81cc1ea91ffbf46e56c0fd738",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "器"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4420,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        269.556
+      ],
+      "crop": [
+        142.584,
+        255.885,
+        162.114,
+        273.462
+      ],
+      "imageSha256": "f6b16d6a3f9c7e30c42dad1a173268be324abde6d51e0eef28a4604b80d0e0b2",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "四"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4785,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        228.336
+      ],
+      "crop": [
+        135.066,
+        215.736,
+        153.066,
+        231.936
+      ],
+      "imageSha256": "14e8a0b7ecf4a1b4dc539fbbc25cfe2f03cb394de6d91f3a5b68822833ad31d2",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "大"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4842,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        103.836
+      ],
+      "crop": [
+        135.066,
+        91.236,
+        153.066,
+        107.436
+      ],
+      "imageSha256": "0f4f7402248db6430bcb63951a10c2471dc838adab78c2280f95f549aa2af2c1",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "女"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4850,
+      "required": true,
+      "page": 9,
+      "origin": [
+        222.896,
+        476.856
+      ],
+      "crop": [
+        221.594,
+        463.185,
+        241.124,
+        480.762
+      ],
+      "imageSha256": "43de183ca54d0807d16a5abc65303180778aa6ebcd8d73076e6bc1350843767c",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "好"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5066,
+      "required": true,
+      "page": 6,
+      "origin": [
+        112.446,
+        593.196
+      ],
+      "crop": [
+        111.246,
+        580.596,
+        129.246,
+        596.796
+      ],
+      "imageSha256": "9ae13d3e7fb781e357ba1012a2e02f84494c16076b674732d59e6f25e4bb83ba",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "子"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5469,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        119.436
+      ],
+      "crop": [
+        135.066,
+        106.836,
+        153.066,
+        123.036
+      ],
+      "imageSha256": "8272d0f5579eae8651b86dc3095c88682c6561f6427804578e7dba9764dec16a",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "川"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5562,
+      "required": true,
+      "page": 8,
+      "origin": [
+        233.921,
+        678.096
+      ],
+      "crop": [
+        232.721,
+        665.496,
+        250.721,
+        681.696
+      ],
+      "imageSha256": "14bc6c564e33acda12b950b9c60e43cff23fc491da2c809410da267d6f9ef3d8",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "年"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5585,
+      "required": true,
+      "page": 6,
+      "origin": [
+        196.446,
+        530.496
+      ],
+      "crop": [
+        195.246,
+        517.896,
+        213.246,
+        534.096
+      ],
+      "imageSha256": "47af844ee0fee91ca69d1b479ca9323913baf60b10d5699f99dcdbbe61dcd700",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "店"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6253,
+      "required": true,
+      "page": 9,
+      "origin": [
+        159.919,
+        502.176
+      ],
+      "crop": [
+        158.617,
+        488.505,
+        178.147,
+        506.082
+      ],
+      "imageSha256": "31b402923e922763fea480f0b0be0cc99f926a66bc545375c60c4d517f80b472",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "手"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6821,
+      "required": true,
+      "page": 9,
+      "origin": [
+        120.906,
+        543.876
+      ],
+      "crop": [
+        119.604,
+        530.205,
+        139.134,
+        547.782
+      ],
+      "imageSha256": "bb4f3074be540e23be65c491a61b770b9e4a83dcd71d108435a5c4ce4c4071d0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "日"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6892,
+      "required": true,
+      "page": 9,
+      "origin": [
+        156.966,
+        269.556
+      ],
+      "crop": [
+        155.664,
+        255.885,
+        175.194,
+        273.462
+      ],
+      "imageSha256": "aaab66b7ba41e82f1eed89bbf3c3754e576a129a1587586a31f2db51242d9ab0",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "時"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7045,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        243.936
+      ],
+      "crop": [
+        135.066,
+        231.336,
+        153.066,
+        247.536
+      ],
+      "imageSha256": "8213dab5fcb0dae6abeb3f4da6d08bda4026ae61c98e1fcbeae91d5110115acd",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "朝"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7055,
+      "required": true,
+      "page": 8,
+      "origin": [
+        281.906,
+        678.096
+      ],
+      "crop": [
+        280.706,
+        665.496,
+        298.706,
+        681.696
+      ],
+      "imageSha256": "d9c96318bb1a718f17ad100e8697e8c8494656928a510f9c319a436e01d883fb",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "本"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7094,
+      "required": true,
+      "page": 8,
+      "origin": [
+        305.899,
+        678.096
+      ],
+      "crop": [
+        304.699,
+        665.496,
+        322.699,
+        681.696
+      ],
+      "imageSha256": "c96b0e58ac8ec644c572f2390d9c0fd45bb4d7838138a9d0d17c8e5f7a487b94",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "text": "来"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7462,
+      "required": true,
+      "page": 9,
+      "origin": [
+        155.346,
+        453.276
+      ],
+      "crop": [
+        154.146,
+        440.676,
+        172.146,
+        456.876
+      ],
+      "imageSha256": "cb4b16e7ddb3dec34e314556854e33899a64a892dae8f7760d4846d5332484ba",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "楽"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7735,
+      "required": true,
+      "page": 9,
+      "origin": [
+        146.911,
+        502.176
+      ],
+      "crop": [
+        145.609,
+        488.505,
+        165.139,
+        506.082
+      ],
+      "imageSha256": "fb831b0ce32aa4d5598741cb5b0adb1c4f3a239c584a0246d2039054158871f7",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "歌"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7830,
+      "required": true,
+      "page": 9,
+      "origin": [
+        107.886,
+        543.876
+      ],
+      "crop": [
+        106.584,
+        530.205,
+        126.114,
+        547.782
+      ],
+      "imageSha256": "913389d8930e3498f24c549158c913f05935a0589ce6bc1de040f48027b1c5a7",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "毎"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8727,
+      "required": true,
+      "page": 8,
+      "origin": [
+        137.946,
+        576.156
+      ],
+      "crop": [
+        136.746,
+        563.556,
+        154.746,
+        579.756
+      ],
+      "imageSha256": "60b77d3fe138e12085591cab43094384605f5460d90b40765f1d8c03c36b1b21",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "父"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8768,
+      "required": true,
+      "page": 6,
+      "origin": [
+        188.466,
+        642.096
+      ],
+      "crop": [
+        187.266,
+        629.496,
+        205.266,
+        645.696
+      ],
+      "imageSha256": "0196ce79d7d92915818c0da7b2c22c0a2c329a8ebffe560a6d97ea4f4b0a0517",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "物"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9192,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        150.516
+      ],
+      "crop": [
+        135.066,
+        137.916,
+        153.066,
+        154.116
+      ],
+      "imageSha256": "60deb7face6e5b0ed530a5b8d4e5206ce06b9c36f81db8cd1861acae8b42d0da",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "男"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 10938,
+      "required": true,
+      "page": 9,
+      "origin": [
+        183.846,
+        543.876
+      ],
+      "crop": [
+        182.544,
+        530.205,
+        202.074,
+        547.782
+      ],
+      "imageSha256": "c75379ea4cea0e461bd72e7803dfe02ac501789ff5dc0e357351b23817cddcf4",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "聞"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12188,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.886,
+        294.876
+      ],
+      "crop": [
+        142.584,
+        281.205,
+        162.114,
+        298.782
+      ],
+      "imageSha256": "7c7ddef8ccaa6246b2ed0028b86e680dde5a641333c25244b81b07a9c22bda60",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "行"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12562,
+      "required": true,
+      "page": 9,
+      "origin": [
+        196.06,
+        320.136
+      ],
+      "crop": [
+        194.758,
+        306.465,
+        214.288,
+        324.042
+      ],
+      "imageSha256": "1f9280d8373f971a4e211c5a3b1af7e2a8e4db330fba08cdd45855e6181e4591",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "語"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12577,
+      "required": true,
+      "page": 9,
+      "origin": [
+        185.886,
+        502.176
+      ],
+      "crop": [
+        184.584,
+        488.505,
+        204.114,
+        506.082
+      ],
+      "imageSha256": "ba3c57e9c70aca5521b2c77d63e5248f63e04a4b2c8e221dc2121366746e702e",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "誰"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14434,
+      "required": true,
+      "page": 9,
+      "origin": [
+        143.346,
+        453.276
+      ],
+      "crop": [
+        142.146,
+        440.676,
+        160.146,
+        456.876
+      ],
+      "imageSha256": "047b491106b8313284856bc1eab99f74e86b39afbff820dae76a8b998d1ff812",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "音"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14551,
+      "required": true,
+      "page": 7,
+      "origin": [
+        136.266,
+        212.796
+      ],
+      "crop": [
+        135.066,
+        200.196,
+        153.066,
+        216.396
+      ],
+      "imageSha256": "b873f1c096b9a047ae093f3aac9e794700df144ec6708f053033cfe950a13129",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "食"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14567,
+      "required": true,
+      "page": 7,
+      "origin": [
+        125.886,
+        388.956
+      ],
+      "crop": [
+        124.686,
+        376.356,
+        142.686,
+        392.556
+      ],
+      "imageSha256": "6bb1850811af72755819041078de853160ecd86d25b35bc745f6f4d21570478b",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "飲"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14902,
+      "required": true,
+      "page": 6,
+      "origin": [
+        112.446,
+        696.696
+      ],
+      "crop": [
+        111.246,
+        684.096,
+        129.246,
+        700.296
+      ],
+      "imageSha256": "7c0b105fa04266809220f2640b3b82afd06ef3185c0ad118cfccd7b0cf81e81e",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "魚"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15910,
+      "required": true,
+      "page": 9,
+      "origin": [
+        105.246,
+        101.316
+      ],
+      "crop": [
+        104.046,
+        88.716,
+        122.046,
+        104.916
+      ],
+      "imageSha256": "055bc5cc4ad8ed032b77e1ba3e4745a744e141df2da6f6eb4c70454a1e67f800",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "（"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15911,
+      "required": true,
+      "page": 9,
+      "origin": [
+        164.946,
+        101.316
+      ],
+      "crop": [
+        163.746,
+        88.716,
+        181.746,
+        104.916
+      ],
+      "imageSha256": "339b31c769da59b646d250a825b445f3ecbc9770a219bc82fae844c8db9daf15",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "）"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15917,
+      "required": true,
+      "page": 7,
+      "origin": [
+        300.23,
+        357.816
+      ],
+      "crop": [
+        299.03,
+        345.216,
+        317.03,
+        361.416
+      ],
+      "imageSha256": "6967755032ee619a6106ee08024a13db91cacd1b29dd6f9bd57f7760c1568eb8",
+      "contactSheet": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "text": "／"
+    }
+  ],
+  "sheets": [
+    {
+      "path": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-01.png",
+      "sha256": "da68b724239f5e4e32f9129247b159bb722bfb7d8215fe999c2e7511a982c365",
+      "gids": [
+        11,
+        2058,
+        2059,
+        2102,
+        2104,
+        2106,
+        2110,
+        2111,
+        2112,
+        2113,
+        2115,
+        2117,
+        2119,
+        2120,
+        2121,
+        2123,
+        2124,
+        2125,
+        2127,
+        2129,
+        2131,
+        2132,
+        2133,
+        2135,
+        2138,
+        2139,
+        2140,
+        2141,
+        2142,
+        2143,
+        2145,
+        2146,
+        2147,
+        2157,
+        2162,
+        2163,
+        2166,
+        2167,
+        2169,
+        2172,
+        2173,
+        2174,
+        2175,
+        2176,
+        2179,
+        2182,
+        2183,
+        2198,
+        2205,
+        2209,
+        2213,
+        2215,
+        2219,
+        2220,
+        2225,
+        2226,
+        2229,
+        2233,
+        2234,
+        2235,
+        2239,
+        2243,
+        2247,
+        2248,
+        2249,
+        2253,
+        2267,
+        2268,
+        2269,
+        2270,
+        2271,
+        2273,
+        2277,
+        2285,
+        2286,
+        2901,
+        2983,
+        3015,
+        3026,
+        3121,
+        3667,
+        4350,
+        4420,
+        4785,
+        4842,
+        4850,
+        5066,
+        5469,
+        5562,
+        5585,
+        6253,
+        6821,
+        6892,
+        7045,
+        7055,
+        7094
+      ]
+    },
+    {
+      "path": "scripts/markbank/authoring/reviews/glyphs/japanese-2014-ol-glyphs-02.png",
+      "sha256": "7dc07ca9b0e4f1abd77cea9020407518ecca799c0fe0e74ce30c1a9713b22fa5",
+      "gids": [
+        7462,
+        7735,
+        7830,
+        8727,
+        8768,
+        9192,
+        10938,
+        12188,
+        12562,
+        12577,
+        14434,
+        14551,
+        14567,
+        14902,
+        15910,
+        15911,
+        15917
+      ]
+    }
+  ],
+  "reviewedAt": "2026-11-10",
+  "independentContextChecks": [
+    {
+      "text": "ね",
+      "page": 8,
+      "location": "Q3.4(ii) source restatement どこにすねいますか",
+      "review": "Russian lane independently read the literal original image. Internal gid/origin association separately verified by the Japanese trace gate."
+    },
+    {
+      "text": "ゅ",
+      "page": 9,
+      "location": "Q4(vi) しゅくだい",
+      "review": "Russian lane independently confirmed smallゅ in the original image."
+    },
+    {
+      "text": "よ",
+      "page": 9,
+      "location": "Q4(x) さようなら",
+      "review": "Russian lane independently confirmed fullよ in the original image."
+    },
+    {
+      "text": "プ",
+      "page": 8,
+      "location": "Q3.4(i) ワールド・カップ",
+      "review": "Russian lane independently confirmed the printed handakuten in the original image."
+    }
+  ]
+}

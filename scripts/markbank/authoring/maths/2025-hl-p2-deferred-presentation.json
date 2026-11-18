@@ -1,0 +1,1269 @@
+{
+  "questionSha256": "e78fe93679d66a0b22221315e812d725d423155b340df1bd25574ae706ea7f4a",
+  "solutionSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
+  "tasks": {
+    "maths-2025-hl-p2-deferred-q1-a-i": {
+      "question": [
+        [
+          4,
+          52,
+          139,
+          546,
+          363
+        ],
+        [
+          4,
+          52,
+          380,
+          546,
+          400
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          153.22,
+          541,
+          262.69
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q1-a-ii": {
+      "question": [
+        [
+          4,
+          52,
+          139,
+          546,
+          363
+        ],
+        [
+          4,
+          52,
+          519,
+          546,
+          546
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          261.49,
+          541,
+          428.19
+        ]
+      ],
+      "sourceNote": "The scheme repeats the label (a)(i) on this row. This is the solution to printed Q1(a)(ii), the acute angle between AB and AC."
+    },
+    "maths-2025-hl-p2-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          52,
+          139,
+          546,
+          363
+        ],
+        [
+          5,
+          52,
+          53,
+          546,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          426.99,
+          541,
+          615.3
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q2-a-i-ii": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          546,
+          437
+        ],
+        [
+          6,
+          52,
+          490,
+          546,
+          525
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          77.74,
+          541,
+          297.73
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q2-b-i": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          546,
+          270
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          296.53000000000003,
+          541,
+          405.99
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q2-b-ii": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          546,
+          225
+        ],
+        [
+          7,
+          52,
+          510,
+          546,
+          596
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          404.79,
+          541,
+          474.99
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q3-a-i-ii": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          546,
+          151
+        ],
+        [
+          8,
+          52,
+          285,
+          546,
+          300
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          77.74,
+          541,
+          358.57
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q3-b-i-ii": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          546,
+          116
+        ],
+        [
+          8,
+          52,
+          427,
+          546,
+          489
+        ],
+        [
+          9,
+          52,
+          53,
+          546,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          357.37,
+          541,
+          487.59000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q3-c": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          546,
+          116
+        ],
+        [
+          8,
+          52,
+          427,
+          546,
+          447
+        ],
+        [
+          9,
+          52,
+          203,
+          546,
+          254
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          486.39000000000004,
+          541,
+          600.9
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q4-a-b": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          546,
+          125
+        ],
+        [
+          10,
+          52,
+          250,
+          546,
+          314
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          77.74,
+          541,
+          345.61
+        ]
+      ],
+      "sourceNote": "In part (b), the exact values are cos(−π/6) = √3/2 and sin(−π/6) = −1/2. The printed intermediate line interchanges these magnitudes. The correct expression √3/2 − (−1/2) still gives the printed final answer, 1·3660."
+    },
+    "maths-2025-hl-p2-deferred-q4-c": {
+      "question": [
+        [
+          10,
+          52,
+          436,
+          546,
+          501
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          344.41,
+          541,
+          480.03000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q4-d": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          546,
+          384
+        ],
+        [
+          11,
+          52,
+          545,
+          546,
+          579
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          478.83000000000004,
+          541,
+          618.3
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          546,
+          735
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          77.74,
+          541,
+          527.1899999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          546,
+          429
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          525.99,
+          541,
+          669.42
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q6-a-i": {
+      "question": [
+        [
+          14,
+          52,
+          73,
+          546,
+          118
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          77.74,
+          541,
+          204.82000000000002
+        ]
+      ],
+      "sourceNote": "Read the radius calculation as √(2² + (−1)² + 20) = 5. The printed line omits parentheses around −1 before squaring; the square contributes +1."
+    },
+    "maths-2025-hl-p2-deferred-q6-a-ii": {
+      "question": [
+        [
+          14,
+          52,
+          73,
+          546,
+          94
+        ],
+        [
+          14,
+          52,
+          327,
+          546,
+          371
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          203.62,
+          541,
+          459.87
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          546,
+          259
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          458.67,
+          541,
+          605.6999999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          288,
+          199
+        ],
+        [
+          15,
+          294,
+          53,
+          536,
+          247
+        ],
+        [
+          15,
+          52,
+          456,
+          546,
+          494
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          604.5,
+          541,
+          728.5799999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-a": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          546,
+          741
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          77.74,
+          541,
+          205.66000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-b-i": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          299,
+          295
+        ],
+        [
+          17,
+          52,
+          53,
+          546,
+          296
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          204.46,
+          541,
+          316.93
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-b-ii": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          299,
+          295
+        ],
+        [
+          17,
+          52,
+          53,
+          546,
+          296
+        ],
+        [
+          17,
+          52,
+          494,
+          546,
+          516
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          315.73,
+          541,
+          457.59000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-c": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          299,
+          295
+        ],
+        [
+          18,
+          52,
+          53,
+          546,
+          260
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          456.39000000000004,
+          541,
+          547.5899999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-d": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          299,
+          295
+        ],
+        [
+          18,
+          52,
+          453,
+          546,
+          495
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          546.39,
+          541,
+          618.06
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q7-e": {
+      "question": [
+        [
+          16,
+          52,
+          143,
+          299,
+          295
+        ],
+        [
+          19,
+          52,
+          53,
+          546,
+          323
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          77.74,
+          541,
+          415.71000000000004
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          546,
+          382
+        ],
+        [
+          20,
+          52,
+          428,
+          546,
+          450
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          77.74,
+          541,
+          219.46
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          546,
+          382
+        ],
+        [
+          21,
+          52,
+          53,
+          546,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          218.26,
+          541,
+          396.01
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-a-iii": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          546,
+          382
+        ],
+        [
+          21,
+          52,
+          286,
+          546,
+          357
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          394.81,
+          541,
+          651.66
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-b-i": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          546,
+          175
+        ],
+        [
+          22,
+          52,
+          179,
+          546,
+          201
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          650.46,
+          541,
+          735.68
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-b-ii": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          546,
+          175
+        ],
+        [
+          22,
+          52,
+          383,
+          546,
+          419
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          77.74,
+          541,
+          366.61
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q8-c": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          546,
+          152
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          365.41,
+          541,
+          613.5
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-a-i": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          546,
+          279
+        ],
+        [
+          24,
+          52,
+          281,
+          546,
+          303
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          77.74,
+          541,
+          190.18
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-a-ii": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          546,
+          279
+        ],
+        [
+          24,
+          52,
+          405,
+          546,
+          469
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          188.98,
+          541,
+          265.81
+        ]
+      ],
+      "sourceNote": "Here the model solution uses A for the event “urban voter”. Using U avoids confusion with Alayah: P(D ∪ U) = 0·382 + 0·82 − 0·302 = 0·90."
+    },
+    "maths-2025-hl-p2-deferred-q9-a-iii": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          546,
+          279
+        ],
+        [
+          25,
+          52,
+          53,
+          546,
+          115
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          264.61,
+          541,
+          382.33
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-a-iv": {
+      "question": [
+        [
+          24,
+          52,
+          74,
+          546,
+          279
+        ],
+        [
+          25,
+          52,
+          307,
+          546,
+          405
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          381.13,
+          541,
+          572.4599999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-b-i-ii": {
+      "question": [
+        [
+          26,
+          52,
+          53,
+          546,
+          132
+        ],
+        [
+          26,
+          52,
+          243,
+          546,
+          279
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          77.74,
+          541,
+          303.73
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-c-i": {
+      "question": [
+        [
+          27,
+          52,
+          53,
+          546,
+          146
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          302.53000000000003,
+          541,
+          372.97
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q9-c-ii": {
+      "question": [
+        [
+          27,
+          52,
+          53,
+          546,
+          110
+        ],
+        [
+          27,
+          52,
+          258,
+          546,
+          329
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          371.77000000000004,
+          541,
+          653.5799999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q10-a-i": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          546,
+          148
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          77.74,
+          541,
+          190.18
+        ]
+      ],
+      "sourceNote": "The scheme rounds z = (82 − 78)/6 to 0·67 and uses a normal table to obtain 74·86%. Keeping the unrounded z gives approximately 74·75%. Its high-partial note “3 correct new entries” appears copied from a table question; the published awards and original notes are retained without inventing a replacement criterion."
+    },
+    "maths-2025-hl-p2-deferred-q10-a-ii": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          546,
+          117
+        ],
+        [
+          28,
+          52,
+          344,
+          546,
+          402
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          188.98,
+          541,
+          391.09000000000003
+        ]
+      ],
+      "sourceNote": "The required cumulative probability is P(Z ≤ z) = 0·5918, giving z ≈ 0·23 and k ≈ 79·4 minutes. The printed line P(Z > x) = 0·5918 has the wrong tail for this positive z. The partial-credit notes about two or three results also appear copied from another question; the original notes and numeric awards are retained."
+    },
+    "maths-2025-hl-p2-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          74,
+          546,
+          117
+        ],
+        [
+          29,
+          52,
+          53,
+          546,
+          220
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          389.89000000000004,
+          541,
+          773.5999999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q10-c-i": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          546,
+          112
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          77.74,
+          541,
+          207.58
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q10-c-ii": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          546,
+          90
+        ],
+        [
+          30,
+          80,
+          270,
+          546,
+          292
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          206.38,
+          541,
+          348.85
+        ]
+      ]
+    },
+    "maths-2025-hl-p2-deferred-q10-c-iii": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          546,
+          90
+        ],
+        [
+          30,
+          52,
+          474,
+          546,
+          527
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          347.65000000000003,
+          541,
+          474.87
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        119,
+        5,
+        775
+      ],
+      "scheme": [
+        31,
+        132,
+        31,
+        617
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        775
+      ],
+      "scheme": [
+        32,
+        56,
+        32,
+        477
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        775
+      ],
+      "scheme": [
+        33,
+        56,
+        33,
+        603
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        775
+      ],
+      "scheme": [
+        34,
+        56,
+        34,
+        620
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        775
+      ],
+      "scheme": [
+        35,
+        56,
+        35,
+        671
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        775
+      ],
+      "scheme": [
+        36,
+        56,
+        36,
+        730
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        120,
+        19,
+        775
+      ],
+      "scheme": [
+        37,
+        56,
+        38,
+        418
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        775
+      ],
+      "scheme": [
+        39,
+        56,
+        40,
+        615
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        27,
+        775
+      ],
+      "scheme": [
+        41,
+        56,
+        42,
+        655
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        53,
+        30,
+        775
+      ],
+      "scheme": [
+        43,
+        56,
+        44,
+        477
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-30",
+  "inspectionNote": "All 43 question and 43 solution images visually inspected on five question sheets and four solution sheets. Seven adjusted question crops re-rendered and inspected separately: full spinner table border, no clipped committee-question line, complete prompts and diagrams. Required construction grid and proof headings preserved. All formulas, tables and original credit notes remain typeset; source inconsistencies have explicit notes.",
+  "atlasInspectionNote": "All ten whole-question spans cross-checked against the visually inspected 32-page paper and corresponding scheme rows on pages 31–44. Page 31 is headed Paper 1 in error; these are the deferred Paper 2 solutions. Full question continuations, shared scales and all scheme guidance are included."
+}

@@ -1,0 +1,1548 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV-deferred.pdf",
+  "schemeFileid": "LC003GLP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "0a794e0bcfef8d5d157d1fdbb0b08d5c8e7d0fdd5e68a60d04207593e251dc28",
+  "schemeSha256": "34c9b0f4c918270f949fa811f2a2d92ddf146703c3003106f1304a228bac8ce3",
+  "reviewedAt": "2026-10-31",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and scheme pages 1–20. Every task reconciled against its published mark boundary; all question and solution crops inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 42 tasks and 380 offered marks. Exam-level choice does not remove practice questions. Shared published allocations remain together.",
+    "Q1(a)(ii): the printed compound-interest expression has an extra exponent. Correct working is 1545 × 1.03 or 1500 × (1.03)^2 = 1591.35.",
+    "Q2(a)(i)–(ii): the scheme says four items but lists three: two plotted points and the conjugate. Preserve its actual numeric credit bands and listed criteria.",
+    "Q4(a)(ii): the mid-partial note prints (x=3)^2 instead of (x+3)^2.",
+    "Q5(a)(ii): the exact intermediate cost uses 1385.424 kWh; the printed multiplier 1385.42 has been rounded prematurely. The final €186.48 is correct.",
+    "Q5(a)(iii): detailed marking notes give 5C (0,2,3,5); the summary says 5D. Use the explicit detailed numeric allocation.",
+    "Q6(b) matches all three functions to their derivatives in one response. The six diagrams are required context, not six selectable tasks.",
+    "Q7(a)(i): the rest is from 40 to 50 seconds on the paper. The partial-credit example says 45 to 55; the final duration of 10 seconds is correct.",
+    "Q7(d)(ii): subtracting 4.6993 from 25 gives 20.3007, not the printed intermediate 20.27. The final 20.3 degrees Celsius is correct.",
+    "Q7(a)(iii) retains all three printed choices and justification in one card.",
+    "Q8(a)(ii)–(iii): the official partial-credit descriptions overlap at twelve correct items. Preserve the wording and make the ambiguity explicit rather than inventing a replacement criterion.",
+    "Q8(a)(iv) and Q9(d)(ii)–(iii) require work on graphs, but the scheme supplies only text. Attributed NextStepUni worked graphs supply the missing drawings while retaining the original SEC criteria.",
+    "Q9(c): use the byte values printed in the exam table, including its nonstandard 1 petabyte = 2^60 bytes; do not silently change the examination data.",
+    "Q9(d)(ii): the continuous model crosses 200 zettabytes during 2027, not at the start of 2028. The scheme labels the two shared-task credit notes (i),(ii), corresponding to paper (ii),(iii).",
+    "Q10(c): the scheme uses T_n for grey tiles; Q10(d) uses T_n for total tiles. Keep these distinct: grey n+2, white n(n+1), total n^2+2n+2."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-ol-p1-deferred-q1-a-i-ii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        6
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Fiadh has €1500 saved. She put this money in a savings account with a rate of 3% per annum compound interest.",
+      "questionText": "(i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 2 years.",
+      "solutionQuotes": [
+        "At least one correct substitution"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q1-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q1-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q1-b-i-ii",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        6
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The table gives the 2024 USC rates: first €12 012 at 0·5%; next €13 748 at 2%; next €44 284 at 4%; balance at the top rate.",
+      "questionText": "(i) At what annual income does a worker start paying the top rate of USC? (ii) Mike’s annual income for 2024 is €65 000. Work out how much he will pay in USC for 2024.",
+      "solutionQuotes": [
+        "Correct formulation of any two USC rates",
+        "Work of merit in both parts"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q1-b-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q1-b-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q2-a-i-ii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers.",
+      "questionText": "(i) Plot and label z₁ and z₂ on the Argand Diagram below. (ii) Write down the complex conjugate of z₁.",
+      "solutionQuotes": [
+        "One item correct",
+        "Two items correct"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q2-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q2-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q2-a-iii",
+      "printedParts": [
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers.",
+      "questionText": "Work out the modulus of z₁. That is, find |z₁|. Give your answer in the form a√b.",
+      "solutionQuotes": [
+        "Modulus formula",
+        "Fully correct substitution into modulus formula"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q2-a-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q2-a-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "questionText": "u = 1 + 4i and v = a + bi are two complex numbers, where a, b ∈ ℤ. Given that u − 2v = −3 + 10i, find the value of a and the value of b.",
+      "solutionQuotes": [
+        "Any relevant substitution in the given equation."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q2-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q2-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following inequality in x ∈ ℕ: 5(x − 3) + 2 < 11. List your solutions. Remember that x ∈ ℕ.",
+      "solutionQuotes": [
+        "but solution set not listed."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q3-a-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q3-a-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Write the following expression as a single fraction, where x ≠ 0, x ≠ −1, x ∈ ℝ: 1/x − 2/(x + 1). Give your answer in its simplest form.",
+      "solutionQuotes": [
+        "identified as the lowest common denominator.",
+        "Some relevant multiplication."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Use algebra to solve the simultaneous equations: xy = 6; x − y = 1.",
+      "solutionQuotes": [
+        "Writes one variable in terms of the other",
+        "Finds the two co-ordinate sets",
+        "Three steps correct"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q4-a-i-ii",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "f(x) = (x + 3)² + 5, where x ∈ ℝ.",
+      "questionText": "(i) Find the value of f(0). (ii) Write f(x) in the form ax² + bx + c, where a, b, c ∈ ℝ.",
+      "solutionQuotes": [
+        "some correct substitution in (i) or some correct expansion in (ii)",
+        "(i) correct and work of merit in (ii)."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q4-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q4-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x: 3x² − 4x − 9 = 0. Give each answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Quadratic formula written",
+        "Formula fully correctly substituted",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q4-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q4-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "questionText": "The graph of the quadratic function g(x) is shown below, drawn to scale. The y-axis is not shown. Using the information below, draw the y-axis into the diagram. The roots are x = −2 and x = 3; g(0) = −6. Label the y-axis and the points where g(x) cuts both axes.",
+      "solutionQuotes": [
+        "axis drawn but no labels",
+        "axis not labelled"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q4-c-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q4-c-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q5-a-i-ii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In Caoimhe’s gas bill the volume of gas used is converted to kilowatt-hours. Her current gas-meter reading is 12 518 m³ and her previous reading was 12 398 m³.",
+      "questionText": "(i) The conversion rate is 1 m³ = 11·5452 kilowatt-hours. Find the volume of gas used since the previous reading, in m³, and hence show this is equal to 1385·424 kilowatt-hours. (ii) Gas costs 13·46 cent per kilowatt-hour. Find the cost of the gas used during this period, in euro, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Volume of gas used:",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q5-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q5-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q5-a-iii",
+      "printedParts": [
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Caoimhe’s total gas bill is €227·47 before VAT. Work out her total gas bill after VAT at 9% has been added. Give your answer in euro, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "some relevant use of 9%",
+        "Finds the total VAT"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q5-a-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q5-a-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Caoimhe wants to estimate the area of her farm, in m². She measures at intervals of 200 m, starting at the right-hand edge. The measurements are shown on the diagram, correct to the nearest metre. Use the Trapezoidal Rule and the measurements to estimate the area of the farm, in m².",
+      "solutionQuotes": [
+        "Trapezoidal rule written.",
+        "Fully correct substitution."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ.",
+      "questionText": "(i) Find h′(x), the derivative of h(x). (ii) Hence, find the slope of the tangent when x = 1.",
+      "solutionQuotes": [
+        "some correct differentiation in (i) or some correct substitution in (ii)",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q6-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q6-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ.",
+      "questionText": "The graph of h(x) is shown for −0·5 ≤ x ≤ 4·5, x ∈ ℝ. Draw the tangent to the graph at the point where x = 1. Use the same axes and scales.",
+      "solutionQuotes": [
+        "The point (1, 8) indicated on the diagram.",
+        "A line with a consistent slope with (a)(ii)"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q6-a-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q6-a-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "questionText": "The first three diagrams show the graphs of a, b and c, which are cubic, quadratic and linear respectively. The next three show d, e and f, each a slope function (derivative) of a, b or c. Write d, e and f in the correct place in the table to match every function to its slope function.",
+      "solutionQuotes": [
+        "some relevant work on diagrams",
+        "One correct."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q6-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q6-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+      "questionText": "How long does Lillian stop for? Give your answer in seconds.",
+      "solutionQuotes": [
+        "Indicates the period on the diagram."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-a-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-a-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+      "questionText": "Find Lillian’s speed for the first 50 m. Give your answer in metres per second.",
+      "solutionQuotes": [
+        "Time = 40",
+        "or equivalent fraction"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-a-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-a-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+      "questionText": "Does Lillian’s speed increase, decrease or stay the same for the second 50 m? Tick one box only: Increases / Decreases / Stays the same. Give a reason for your answer.",
+      "solutionQuotes": [
+        "Decreases",
+        "The slope is steeper for the first 50 m",
+        "Correct answer with no reason or incorrect reason"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-a-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-a-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-b-i-ii",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+      "questionText": "Darragh swims at a constant speed of 10 m every 7 seconds. (i) How many seconds does it take him to swim 50 m? (ii) Darragh starts swimming 10 seconds after Lillian. He swims 50 m, stops for 5 seconds, then swims a second 50 m at the same constant speed. Graph the distance Darragh swims on the diagram and label it D. Use the same axes and scales.",
+      "solutionQuotes": [
+        "Any relevant point on the graph.",
+        "(i) correct and one section of the graph correct"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-b-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-b-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "The average speed for the world record of the women’s 100 m freestyle is 1·934 metres per second. Work out how long it took her to swim the 100 m, in seconds. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Some use of given values",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-c-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-c-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q7-d-i-ii",
+      "printedParts": [
+        "Q7(d)(i)",
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "C = 1·163 P V (T₂ − T₁), where P is the electricity cost per kWh, V is the pool volume in m³, T₁ is the average air temperature in °C, and T₂ is the heated pool temperature in °C.",
+      "questionText": "Mike’s pool has volume 9 m³ and he wants to heat it to 25°C. Electricity costs €0·431 per kWh. (i) Work out the heating cost when the average air temperature is 13°C, in euro to 2 decimal places. (ii) Find the average air temperature T₁ when the heating cost is €21·20, in degrees Celsius to 1 decimal place.",
+      "solutionQuotes": [
+        "some correct substitution into the given formula in (i) or (ii)",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q7-d-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q7-d-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+      "questionText": "Show that the firework is set off from a height of 20 metres above sea level.",
+      "solutionQuotes": [
+        "some correct substitution"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-a-ii-iii",
+      "printedParts": [
+        "Q8(a)(ii)",
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+      "questionText": "(ii) Complete the table of h(t) for t = 0, 1, 2, 3, 4, 5, 6, 7, 8, to the nearest whole number. The table supplies h(0) = 20, h(3) = 102 and h(8) = 46. (iii) Draw the graph of h(t) for 0 ≤ t ≤ 8, t ∈ ℝ.",
+      "solutionQuotes": [
+        "Solution requires 16 items, 6 values in table, 9 points plotted and the curve",
+        "Apply a * if 15 items correct"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-a-ii-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-a-ii-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+      "questionText": "The firework fails to explode. Continue your graph from part (a)(iii) to find how long it takes from set off to reach sea level: find t for which h(t) = 0. Show your work on the graph and give your answer in seconds.",
+      "solutionQuotes": [
+        "9.1",
+        "continues the graph."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-a-iv-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-a-iv-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-b-i-ii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A second firework’s height above sea level is g(t) = −5t² + 45t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and g(t) > 0.",
+      "questionText": "The firework is designed to explode at its maximum height. (i) Use calculus to find t when it is at its maximum height. (ii) Use your answer to find its maximum height.",
+      "solutionQuotes": [
+        "some correct differentiation in (i) or some relevant substitution in (ii)",
+        "Work of merit in both parts",
+        "No units or incorrect units"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-b-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-b-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur.",
+      "questionText": "Express potassium nitrate : charcoal : sulphur in the ratio a : b : c in its simplest form, where a, b, c ∈ ℕ.",
+      "solutionQuotes": [
+        "Correct common denominator identified.",
+        "but ratio not in simplest form."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-c-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-c-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur.",
+      "questionText": "There are 25 grams of charcoal in the mixture. Work out how many grams of potassium nitrate are in this mixture.",
+      "solutionQuotes": [
+        "125 g of potassium nitrate in the mixture."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q8-c-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q8-c-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A company sells memory sticks. (i) A memory stick costs €19·99, reduced to €16·99 in a sale. Find the percentage discount, to the nearest percent. (ii) The company buys 10 000 memory sticks from the USA at $9·50 each. Use €1 = $1·09 to find the total cost in euro, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Finds the discount.",
+        "Finds the cost of 10000 units in dollars.",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Seán’s flight from Shannon to New York took off at 09:45. New York is 5 hours behind Ireland. The flight time is 7 hours 35 minutes. What is the local time when his flight is due to land?",
+      "solutionQuotes": [
+        "some relevant addition or subtraction",
+        "17:20 or 5.20 found"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes.",
+      "questionText": "Write the number of bytes in one gigabyte in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ. Give a correct to 3 significant figures.",
+      "solutionQuotes": [
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-c-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-c-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes.",
+      "questionText": "A desktop computer has 1 terabyte of storage. A NASA super computer has 7·6 petabytes. Work out how many desktop computers are needed to equal the NASA computer’s storage. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "Converts either 1 terabyte or 7 ∙6 petabytes to bytes.",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-c-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-c-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ.",
+      "questionText": "Use d(t) to find the predicted amount of data in the world by the start of 2026, in zettabytes to 1 decimal place.",
+      "solutionQuotes": [
+        "in the given function.",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-d-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-d-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q9-d-ii-iii",
+      "printedParts": [
+        "Q9(d)(ii)",
+        "Q9(d)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ.",
+      "questionText": "(ii) In which year will the predicted amount of data first reach 200 zettabytes? (iii) Use suitable values from the graph to estimate the number of years it takes for the amount of data to double, to the nearest whole number. Show your work for both parts on the graph.",
+      "solutionQuotes": [
+        "2027",
+        "approximately 4 years for data to double",
+        "Or similar"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q9-d-ii-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q9-d-ii-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Draw the fourth pattern in the sequence into the box below.",
+      "solutionQuotes": [
+        "correct number of grey tiles.",
+        "No shading",
+        "One tile missing"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-a-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-a-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Complete the table to show the number of grey tiles, white tiles and total tiles in the first four patterns. Given entries: pattern 1 has 3 grey, 2 white, total 5; pattern 2 total 10; pattern 3 has 5 grey; pattern 4 has 20 white.",
+      "solutionQuotes": [
+        "Solution consists of 6 table entries:",
+        "1 correct table entry.",
+        "4 correct table entries."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Find a formula in terms of n for the number of grey tiles in pattern n, where n ∈ ℕ.",
+      "solutionQuotes": [
+        "Correct formula"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-c-i-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-c-i-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Using your formula from part (c)(i), or otherwise, work out the number of grey tiles in the 25th pattern.",
+      "solutionQuotes": [
+        "some correct substitution into formula derived in (i).",
+        "Finds a new term in the pattern"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-c-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-c-ii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Find the total number of grey tiles in the first 25 patterns of the sequence.",
+      "solutionQuotes": [
+        "375 tiles",
+        "Formula fully substituted."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-c-iii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-c-iii-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-c-iv",
+      "printedParts": [
+        "Q10(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns shown contain grey tiles and white tiles.",
+      "questionText": "Find how many white tiles are in the 8th pattern of the sequence.",
+      "solutionQuotes": [
+        "72 tiles",
+        "finding Pattern 5."
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-c-iv-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-c-iv-question"
+    },
+    {
+      "id": "maths-2024-ol-p1-deferred-q10-d-i-ii",
+      "printedParts": [
+        "Q10(d)(i)",
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The total number of tiles in pattern n is Tₙ = n² + bn + c, where b, c ∈ ℝ are constants.",
+      "questionText": "(i) Remember T₂ = 10. Substitute in the formula to show that 2b + c = 6. (ii) Solve b + c = 4 and 2b + c = 6 to find b and c.",
+      "solutionQuotes": [
+        "Some work of merit in forming equation.",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2024-ol-p1-deferred-q10-d-i-ii-solution",
+      "questionFigureKey": "maths-2024-ol-p1-deferred-q10-d-i-ii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Every offered question retained for practice."
+    },
+    {
+      "pages": [
+        4,
+        29
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same task."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "wording": "either a, b or c",
+      "classification": "answer-selection",
+      "reason": "All three graph matches required in one shared allocation; the six graphs are not alternative tasks."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "All three speed choices and justification retained in one card."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Examination choice; retain every question for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Examination choice; retain every question for practice."
+    },
+    "4:1a9e90b593531647": {
+      "classification": "exam-level-selection",
+      "reason": "Examination choice; retain every question for practice."
+    },
+    "4:883b84d328b71027": {
+      "classification": "method-choice",
+      "reason": "Alternative ways to solve the same required task."
+    },
+    "15:c8b1249fec6f19e6": {
+      "classification": "answer-selection",
+      "reason": "All three function matches required together, not alternative practice tasks."
+    },
+    "15:2dff5d693ed5c4fe": {
+      "classification": "answer-selection",
+      "reason": "All three function matches required together, not alternative practice tasks."
+    },
+    "16:95107f39d13a8ac0": {
+      "classification": "exam-level-selection",
+      "reason": "Examination choice; retain every question for practice."
+    },
+    "29:331b5f14d9bf616b": {
+      "classification": "method-choice",
+      "reason": "Alternative ways to solve the same required task."
+    }
+  }
+}

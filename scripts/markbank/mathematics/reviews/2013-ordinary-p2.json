@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2013,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "c86dc2625fdfb3f94aebf825fdb5f98b4cbed045756e09277480cc33d26060a7",
+  "schemeSha256": "4319204ecd7c5e2156e0d66eba5c5df4eff752e799521130b2c114e1a8f732ac",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 20 original question pages and scheme PDF pages 35–68, including every model, scale, allocation and detailed credit note. Forty marking units include both Q6 alternatives; Q2(a)(i)+(ii) share one 10C scale.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    54,
+    55
+  ],
+  "sourceNotes": [
+    "325 offered marks, 300 candidate marks; both Q6 routes retained. The unlettered Q6B proof is one 25D task with all five bands.",
+    "Q2(a)(i)+(ii) is one shared 10C task; its list of all eight outcomes is required, not an answer-choice pool. Q2(b) requires every category, not a finite selection.",
+    "Paper 2 uses 5B 0,3,5; 5C 0,3,4,5; 10C 0,4,7,10; 10D 0,2,5,8,10; 15D 0,4,7,11,15; 25D 0,6,12,19,25.",
+    "Phase 2-specific credit conditions for Q3, Q4 and Q5 retained, including line-equation, radius-squared and exact-pi criteria.",
+    "Only ten starred tasks allow Full Credit minus one. Q7(d)(i) explicitly accepts 78. Q7(c) preserves both accepted interquartile ranges.",
+    "Original construction baseline, proof diagram, full 21-year table, stem-and-leaf plot, scatter plot and search diagrams accompany all dependent tasks. Prior answers are not supplied in question context."
+  ],
+  "cards": [
+    {
+      "id": "maths-2013-ol-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Katie tossed a coin 200 times and threw 109 heads. Joe tossed the same coin 400 times and threw 238 heads. Lucy tossed the same coin 500 times and threw 291 heads. Katie, Joe and Lucy now think the coin may be biased.",
+      "questionText": "Give a reason why they think that the coin may be biased."
+    },
+    {
+      "id": "maths-2013-ol-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Katie tossed a coin 200 times and threw 109 heads. Joe tossed the same coin 400 times and threw 238 heads. Lucy tossed the same coin 500 times and threw 291 heads. Katie, Joe and Lucy now think the coin may be biased.",
+      "questionText": "Lucy uses all the above data and calculates that the best estimate of the probability of throwing a head with this coin is 0·58. Show how Lucy might have calculated this probability."
+    },
+    {
+      "id": "maths-2013-ol-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Katie tossed a coin 200 times and threw 109 heads. Joe tossed the same coin 400 times and threw 238 heads. Lucy tossed the same coin 500 times and threw 291 heads. Katie, Joe and Lucy now think the coin may be biased.",
+      "questionText": "Joe agrees with Lucy’s estimate of 0·58 as the probability of throwing a head with this coin. He claims that the probability of throwing 3 successive heads with this coin is less than the probability of throwing 2 successive tails. Calculate the probability of each event and state whether Joe’s claim is true or not."
+    },
+    {
+      "id": "maths-2013-ol-p2-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        38,
+        57
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An unbiased circular spinner has a movable pointer and five equal sectors, two coloured green and three coloured red.",
+      "questionText": "(i) Find the probability that the pointer stops on green for one spin of the spinner. (ii) List all the possible outcomes of 3 successive spins of the spinner."
+    },
+    {
+      "id": "maths-2013-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        39,
+        57
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An unbiased circular spinner has a movable pointer and five equal sectors, two coloured green and three coloured red. Part (a)(ii): list all possible outcomes of three successive spins.",
+      "questionText": "A game consists of spinning the spinner 3 times. Each time the spinner stops on green the player wins €1; otherwise the player wins nothing. For example, if the outcome of one game is “green, red, green” the player wins €2. Complete the table of required outcomes for winnings of €0, €1, €2 and €3."
+    },
+    {
+      "id": "maths-2013-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        57
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An unbiased circular spinner has a movable pointer and five equal sectors, two coloured green and three coloured red.",
+      "questionText": "Is one spin of the spinner above an example of a Bernoulli trial? Explain what a Bernoulli trial is."
+    },
+    {
+      "id": "maths-2013-ol-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "l is the line 3x + 2y + 18 = 0.",
+      "questionText": "Find the slope of l."
+    },
+    {
+      "id": "maths-2013-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "l is the line 3x + 2y + 18 = 0.",
+      "questionText": "The line k is perpendicular to l and cuts the x-axis at the point (7, 0). Find the equation of k."
+    },
+    {
+      "id": "maths-2013-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "l is the line 3x + 2y + 18 = 0. The line k is perpendicular to l and cuts the x-axis at (7, 0).",
+      "questionText": "Find the co-ordinates of the point of intersection of the lines l and k."
+    },
+    {
+      "id": "maths-2013-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The point A has co-ordinates (8, 6) and O is the origin. The diagram shows circles c₁ and c₂. c₁ has centre (0, 0) and radius |OA|; c₂ has a diameter of [OA].",
+      "questionText": "Find the equation of c₁."
+    },
+    {
+      "id": "maths-2013-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The point A has co-ordinates (8, 6) and O is the origin. The diagram shows circles c₁ and c₂. c₁ has centre (0, 0) and radius |OA|; c₂ has a diameter of [OA].",
+      "questionText": "Find the equation of c₂."
+    },
+    {
+      "id": "maths-2013-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The point A has co-ordinates (8, 6) and O is the origin. The diagram shows circles c₁ and c₂. c₁ has centre (0, 0) and radius |OA|; c₂ has a diameter of [OA].",
+      "questionText": "The circle c₂ cuts the x-axis at the point P. Find the co-ordinates of P."
+    },
+    {
+      "id": "maths-2013-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        60
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid cylinder has a radius of 10 mm and a height of 45 mm.",
+      "questionText": "Draw a sketch of the net of the surface of the cylinder and write its dimensions on the sketch.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        43,
+        60
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid cylinder has a radius of 10 mm and a height of 45 mm.",
+      "questionText": "Calculate the volume of the cylinder. Give your answer in terms of π.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        43,
+        60
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid cylinder has a radius of 10 mm and a height of 45 mm.",
+      "questionText": "A sphere has the same volume as the cylinder. Find the surface area of the sphere. Give your answer in terms of π.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q6a-a",
+      "printedParts": [
+        "Q6A(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the triangle ABC such that |AB| = 8 cm, |BC| = |AC| = 5 cm. The point A is given to you.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "Part (a): Construct the triangle ABC such that |AB| = 8 cm, |BC| = |AC| = 5 cm. The point A is given to you.",
+      "questionText": "On the same diagram, construct the image of the triangle ABC under the axial symmetry in AB.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q6a-c",
+      "printedParts": [
+        "Q6A(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "Part (a): Construct the triangle ABC such that |AB| = 8 cm, |BC| = |AC| = 5 cm. The point A is given to you. Part (b): construct the reflected triangle in AB.",
+      "questionText": "Justify the statement “AC′BC is a parallelogram” where C′ is the image of C under the axial symmetry in AB."
+    },
+    {
+      "id": "maths-2013-ol-p2-q6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "totalMarks": 25,
+      "scale": "25D",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        19,
+        25
+      ],
+      "schemePages": [
+        45,
+        61
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "In the acute-angled triangle ABC, AP ⟂ BC, BQ ⟂ AC and CR ⟂ AB. The original diagram is supplied.",
+      "questionText": "Prove that |∠ABQ| + |∠BCR| + |∠CAP| = 90°."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "Complete the back to back stem and leaf plot to show the marriage rate and death rate in Ireland during the period covered by the table."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61. Part (a): complete the back to back stem and leaf plot.",
+      "questionText": "State one difference that can be observed between the distributions of the marriage rate and the death rate in your plot."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "Find the median and interquartile range of the yearly marriage rates in Ireland from 1990 to 2010."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "Find the mean of the death rate in Ireland from 1990 to 2010. Give your answer correct to one decimal place.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61. Part (d)(i): find the mean death rate correct to one decimal place.",
+      "questionText": "The standard deviation of the death rates in the table is 10·3. List all of the death rates that are within 1 standard deviation of the mean."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "In 2010, the number of children born in Ireland was 75 174. Use this number to estimate the total population of Ireland in 2010."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61. Part (e): use 75 174 births in 2010 to estimate the total population.",
+      "questionText": "Use your answer to (e) to estimate the number of people who died in Ireland in 2010."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "“More children were born in Ireland in 1990 than in 2000.” Give a reason, based on the data, why this statement is not necessarily true."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-h",
+      "printedParts": [
+        "Q7(h)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table shows the rates of births, marriages and deaths in Ireland from 1990 to 2010, per 10 000 of the estimated population. Rows (year: births, marriages, deaths): 1990: 151, 51, 90; 1991: 150, 49, 89; 1992: 144, 47, 87; 1993: 138, 47, 90; 1994: 135, 46, 86; 1995: 135, 43, 90; 1996: 140, 45, 87; 1997: 144, 43, 86; 1998: 146, 45, 85; 1999: 144, 50, 87; 2000: 145, 51, 83; 2001: 150, 50, 79; 2002: 155, 52, 76; 2003: 155, 51, 73; 2004: 153, 52, 71; 2005: 148, 52, 68; 2006: 154, 52, 67; 2007: 163, 52, 64; 2008: 168, 50, 63; 2009: 167, 48, 63; 2010: 165, 46, 61.",
+      "questionText": "Find the ratio, Birth rate : Death rate, for the two years 1990 and 2010. Based on your answers for the two years, what would you predict about the population of Ireland in future years? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2013-ol-p2-q7-i",
+      "printedParts": [
+        "Q7(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Birth and death rates are per 10 000 of the estimated population in Ireland, 1990–2010. The original scatter plot is supplied.",
+      "questionText": "The birth rate and death rate over the 21 years are plotted against each other in the scatter plot below. The correlation coefficient between the two sets of data is −0·85. Describe the relationship between the two sets of data and suggest a reason why this might be the case."
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. Fishing boats search the triangular area KAB.",
+      "questionText": "Find |∠BKA|."
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. Fishing boats search the triangular area KAB.",
+      "questionText": "Find the area of the triangle KAB.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram.",
+      "questionText": "Write the area of the triangle KAB as a percentage of the area of the sector KAB."
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram.",
+      "questionText": "Use the cosine rule to find the length of [AB].",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-a-v",
+      "printedParts": [
+        "Q8(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        51,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. Part (a)(iv): use the cosine rule to find |AB|.",
+      "questionText": "What does your answer to (iv) above show about the triangle KAB?"
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram.",
+      "questionText": "A helicopter took part in the search. The helicopter flew from the point F around the perimeter of the search area. What distance did the helicopter fly, correct to the nearest km?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram.",
+      "questionText": "The helicopter then flew in a straight line from F to D and from D on to C, also in a straight line. Draw the path of the helicopter on the diagram."
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. The helicopter then flew in a straight line from F to D and from D on to C, also in a straight line.",
+      "questionText": "A theorem on your course can be used to find |∠FDC|. Write down |∠FDC| and state the theorem."
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. The helicopter then flew in a straight line from F to D and from D on to C, also in a straight line.",
+      "questionText": "The helicopter flew at a speed of 80 km/h. How long did it take to fly from F to D and on to C?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. A lifeboat taking part in the search sailed, in a straight line, from K until it reached a point X, the midpoint of [ED].",
+      "questionText": "Calculate |KX|.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16,
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A search is begun for a buoy that has become detached from its mooring at sea. The area to be searched is a circle of radius 30 km from the last known position, K, of the buoy. The search area is divided into six equal sectors indicated by A, B, C, D, E and F in the original diagram. The helicopter then flew in a straight line from F to D and from D on to C, also in a straight line. A lifeboat taking part in the search sailed, in a straight line, from K until it reached a point X, the midpoint of [ED].",
+      "questionText": "The buoy was located at the point where the path KX, of the lifeboat, crossed the path FD of the helicopter. How far was the buoy from X?",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        10,
+        11
+      ],
+      "wording": "either Question 6A or Question 6B; Answer either 6A or 6B; OR",
+      "classification": "numbered-alternatives",
+      "reason": "Both complete routes retained at 25 marks each."
+    },
+    {
+      "pages": [
+        4,
+        5
+      ],
+      "wording": "List all the possible outcomes; Complete the following table",
+      "classification": "all-required-outcomes",
+      "reason": "Every spinner outcome and winnings category is required, no finite answer selection."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "State one difference",
+      "classification": "open-response",
+      "reason": "No finite pool of possible differences is supplied."
+    }
+  ],
+  "selectionDecisions": {
+    "2:49ae738f6c1bc59c": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained."
+    },
+    "2:84816ad1afca88ae": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained."
+    },
+    "3:4d4feb007b8f08ca": {
+      "classification": "all-required",
+      "reason": "All printed tasks retained."
+    },
+    "10:bbcd0ea46576e107": {
+      "classification": "numbered-alternatives",
+      "reason": "Both Q6A and Q6B retained."
+    }
+  }
+}

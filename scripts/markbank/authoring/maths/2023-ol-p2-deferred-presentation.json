@@ -1,0 +1,1641 @@
+{
+  "questionSha256": "03fab7bb6c81f525fa03cd5fc51a6ce4b7ede2d90554d0ab930d9cb8dc9797e7",
+  "solutionSha256": "a26b1052de619384b1623938a6b37ee9b00a095244fd450b0f6617b4806eaeb0",
+  "tasks": {
+    "maths-2023-ol-p2-deferred-q1-a-i": {
+      "question": [
+        [
+          4,
+          50,
+          135,
+          555,
+          355
+        ],
+        [
+          4,
+          50,
+          362,
+          555,
+          381
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          208,
+          550,
+          449
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q1-a-ii": {
+      "question": [
+        [
+          4,
+          50,
+          135,
+          555,
+          355
+        ],
+        [
+          4,
+          50,
+          455,
+          555,
+          509
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          449,
+          550,
+          527
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q1-a-iii": {
+      "question": [
+        [
+          4,
+          50,
+          135,
+          555,
+          355
+        ],
+        [
+          5,
+          50,
+          55,
+          555,
+          138
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          527,
+          550,
+          650
+        ]
+      ],
+      "sourceNote": "A win probability of 1/36 means exactly one ordered dice pair gives that product. The complete list is 1,9,16,25,36. Products such as 4 also occur as 1×4 and 4×1, so they do not qualify."
+    },
+    "maths-2023-ol-p2-deferred-q1-b": {
+      "question": [
+        [
+          5,
+          50,
+          209,
+          555,
+          257
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          56,
+          550,
+          215
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          50,
+          76,
+          555,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          78,
+          550,
+          241
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          50,
+          76,
+          555,
+          110
+        ],
+        [
+          6,
+          50,
+          267,
+          555,
+          286
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          241,
+          550,
+          398
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q2-b-i": {
+      "question": [
+        [
+          7,
+          50,
+          55,
+          555,
+          306
+        ],
+        [
+          7,
+          50,
+          320,
+          555,
+          350
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          398,
+          550,
+          598
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q2-b-ii": {
+      "question": [
+        [
+          7,
+          50,
+          55,
+          555,
+          306
+        ],
+        [
+          7,
+          50,
+          505,
+          555,
+          539
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          598,
+          550,
+          772
+        ]
+      ],
+      "sourceNote": "The random name is chosen from all 55,959 registered births, not just girls. Add the five female-name counts to get 1,730, then use 1730/55959×100≈3.1%."
+    },
+    "maths-2023-ol-p2-deferred-q3-a-i": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          555,
+          117
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          78,
+          550,
+          295
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q3-a-ii": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          555,
+          95
+        ],
+        [
+          8,
+          50,
+          272,
+          555,
+          327
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          295,
+          550,
+          444
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q3-a-iii": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          555,
+          95
+        ],
+        [
+          9,
+          50,
+          53,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          444,
+          550,
+          702
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q3-b": {
+      "question": [
+        [
+          9,
+          50,
+          309,
+          555,
+          353
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          56,
+          550,
+          215
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q4-a-i": {
+      "question": [
+        [
+          10,
+          50,
+          74,
+          555,
+          118
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          82,
+          550,
+          314
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q4-a-ii-iii": {
+      "question": [
+        [
+          10,
+          50,
+          74,
+          555,
+          95
+        ],
+        [
+          10,
+          50,
+          412,
+          555,
+          434
+        ],
+        [
+          10,
+          50,
+          507,
+          555,
+          529
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          314,
+          550,
+          540
+        ]
+      ],
+      "sourceNote": "Parts (ii) and (iii) share one 5C award. The circle is x²+y²=25. For p(−1,−3), x²+y²=10<25, so p lies inside; state that conclusion."
+    },
+    "maths-2023-ol-p2-deferred-q4-b-i": {
+      "question": [
+        [
+          11,
+          50,
+          55,
+          555,
+          183
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          56,
+          550,
+          201
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q4-b-ii": {
+      "question": [
+        [
+          11,
+          50,
+          55,
+          555,
+          183
+        ],
+        [
+          11,
+          50,
+          267,
+          555,
+          296
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          201,
+          550,
+          484
+        ]
+      ],
+      "sourceNote": "Give two valid points on each circle: four ordered pairs altogether. The scheme’s points are examples; other points satisfying the respective equations also work."
+    },
+    "maths-2023-ol-p2-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          474
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          100,
+          550,
+          441
+        ],
+        [
+          34,
+          55,
+          463,
+          550,
+          632
+        ]
+      ],
+      "sourceNote": "Two points were already supplied on the paper, so seven new plots are required. The original scheme graph also shows the line and reading used later in parts (c) and (d)."
+    },
+    "maths-2023-ol-p2-deferred-q5-b": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          171
+        ],
+        [
+          12,
+          50,
+          482,
+          555,
+          533
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          632,
+          550,
+          750
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q5-c": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          171
+        ],
+        [
+          12,
+          50,
+          200,
+          555,
+          474
+        ],
+        [
+          13,
+          50,
+          55,
+          555,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          100,
+          550,
+          441
+        ],
+        [
+          35,
+          55,
+          56,
+          550,
+          154
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q5-d": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          171
+        ],
+        [
+          12,
+          50,
+          200,
+          555,
+          474
+        ],
+        [
+          13,
+          50,
+          55,
+          555,
+          75
+        ],
+        [
+          13,
+          50,
+          143,
+          555,
+          178
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          100,
+          550,
+          441
+        ],
+        [
+          35,
+          55,
+          154,
+          550,
+          244
+        ]
+      ],
+      "sourceNote": "Read up from 18.5°C to your line of best fit, then across to the sales axis. The official example gives about 290 units; a similar reading consistent with the candidate’s line is allowed."
+    },
+    "maths-2023-ol-p2-deferred-q5-e": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          171
+        ],
+        [
+          13,
+          50,
+          246,
+          555,
+          331
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          244,
+          550,
+          453
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q6-a-i": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          295
+        ],
+        [
+          14,
+          50,
+          296,
+          555,
+          315
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          78,
+          550,
+          205
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q6-a-ii": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          295
+        ],
+        [
+          14,
+          50,
+          381,
+          555,
+          418
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          205,
+          550,
+          382
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q6-b": {
+      "question": [
+        [
+          15,
+          50,
+          55,
+          555,
+          398
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          382,
+          550,
+          604
+        ]
+      ],
+      "sourceNote": "Draw PQ=8 cm. Draw an arc centred at P with radius 6 cm and an arc centred at Q with radius 8 cm; label an intersection R. Join PR and QR and keep the construction arcs visible. The printed tolerance is ±0.25 cm; screen scaling is not a physical ruler."
+    },
+    "maths-2023-ol-p2-deferred-q6-c": {
+      "question": [
+        [
+          15,
+          50,
+          404,
+          555,
+          436
+        ],
+        [
+          15,
+          355,
+          448,
+          533.4,
+          557
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          56,
+          550,
+          326
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q7-a": {
+      "question": [
+        [
+          16,
+          50,
+          139,
+          555,
+          334
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          114,
+          550,
+          311
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q7-b": {
+      "question": [
+        [
+          17,
+          50,
+          55,
+          555,
+          280
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          311,
+          550,
+          567
+        ]
+      ],
+      "sourceNote": "Use nine ordinates at 20 m spacing: 0,30,35,40,45,30,25,30,40. The seven interior ordinates sum to 235. Area = 20/2×[0+40+2×235] = 5100 m². The detailed scale explicitly awards low partial credit at 5 marks; the general table shows 4."
+    },
+    "maths-2023-ol-p2-deferred-q7-c": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          555,
+          252
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          567,
+          550,
+          765
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q7-d": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          555,
+          104
+        ],
+        [
+          18,
+          50,
+          145,
+          555,
+          252
+        ],
+        [
+          18,
+          50,
+          414,
+          555,
+          449
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          56,
+          550,
+          193
+        ]
+      ],
+      "sourceNote": "One lap is 200+18π≈256.55 m. To reach at least 5000 m, round the quotient upwards: 19 laps fall short, so 20 complete laps are needed."
+    },
+    "maths-2023-ol-p2-deferred-q7-e-i": {
+      "question": [
+        [
+          19,
+          50,
+          55,
+          555,
+          159
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          193,
+          550,
+          470
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q7-e-ii": {
+      "question": [
+        [
+          19,
+          50,
+          55,
+          555,
+          159
+        ],
+        [
+          19,
+          50,
+          309,
+          555,
+          344
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          470,
+          550,
+          646
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q7-e-iii": {
+      "question": [
+        [
+          19,
+          50,
+          55,
+          555,
+          159
+        ],
+        [
+          19,
+          50,
+          309,
+          555,
+          327
+        ],
+        [
+          19,
+          50,
+          494,
+          555,
+          529
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          56,
+          550,
+          258
+        ]
+      ],
+      "sourceNote": "The toy volume is 30π cm³. Each bead has radius 0.2 cm and volume 4π/375 cm³. The 1500 beads occupy 16π cm³, leaving 14π cm³: 14/30×100 = 46⅔%, or about 46.7%."
+    },
+    "maths-2023-ol-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          555,
+          324
+        ],
+        [
+          20,
+          50,
+          339,
+          555,
+          374
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          78,
+          550,
+          233
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          555,
+          324
+        ],
+        [
+          21,
+          50,
+          53,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          233,
+          550,
+          399
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q8-a-iii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          555,
+          324
+        ],
+        [
+          21,
+          50,
+          264,
+          555,
+          302
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          399,
+          550,
+          594
+        ]
+      ],
+      "sourceNote": "In the question, x is the distance moved towards the lighthouse. Let d be the distance still remaining: d=31.7/tan(2A)≈249 m. Therefore x=500−d≈251 m. The scheme uses x temporarily for d, but its final 251 m answer is the distance moved."
+    },
+    "maths-2023-ol-p2-deferred-q8-b-i": {
+      "question": [
+        [
+          22,
+          50,
+          55,
+          555,
+          274
+        ],
+        [
+          22,
+          50,
+          275,
+          555,
+          310
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          56,
+          550,
+          301
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q8-b-ii": {
+      "question": [
+        [
+          22,
+          50,
+          55,
+          555,
+          274
+        ],
+        [
+          23,
+          50,
+          53,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          301,
+          550,
+          633
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q8-b-iii": {
+      "question": [
+        [
+          22,
+          50,
+          55,
+          555,
+          274
+        ],
+        [
+          23,
+          50,
+          386,
+          555,
+          421
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          56,
+          550,
+          238
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-a": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          555,
+          423
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          78,
+          550,
+          209
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          24,
+          50,
+          437,
+          555,
+          481
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          209,
+          550,
+          389
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-c": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          25,
+          50,
+          55,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          389,
+          550,
+          551
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-d": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          25,
+          50,
+          271,
+          555,
+          306
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          551,
+          550,
+          752
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-e": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          25,
+          50,
+          485,
+          555,
+          570
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          56,
+          550,
+          182
+        ]
+      ],
+      "sourceNote": "Alice and Ciara are 4 km apart, so each has walked 2 km when they meet. At the same pace and time, Brian has moved from (2,1) to (2,3), and Dave from (2,7) to (2,5). Both positions are required."
+    },
+    "maths-2023-ol-p2-deferred-q9-f": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          26,
+          50,
+          273,
+          345,
+          295
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          182,
+          550,
+          352
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-g-i": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          26,
+          50,
+          444,
+          555,
+          495
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          352,
+          550,
+          505
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-g-ii": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          26,
+          50,
+          444,
+          555,
+          465
+        ],
+        [
+          27,
+          50,
+          53,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          505,
+          550,
+          728
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q9-h": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          340,
+          205
+        ],
+        [
+          24,
+          350,
+          101,
+          545,
+          330
+        ],
+        [
+          27,
+          50,
+          245,
+          555,
+          264
+        ]
+      ],
+      "solution": [
+        [
+          46,
+          55,
+          56,
+          550,
+          267
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q10-a-i": {
+      "question": [
+        [
+          28,
+          50,
+          76,
+          555,
+          382
+        ],
+        [
+          28,
+          50,
+          395,
+          555,
+          415
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          55,
+          78,
+          550,
+          231
+        ]
+      ],
+      "sourceNote": "Here the SEC model expects the minimum-to-maximum intervals: petrol 156–213 cents and diesel 145–205 cents. Their statistical ranges (maximum minus minimum) are 57 and 60 cents. The scheme gives those two differences high partial credit, so include the endpoints to match its full-credit response."
+    },
+    "maths-2023-ol-p2-deferred-q10-a-ii": {
+      "question": [
+        [
+          28,
+          50,
+          76,
+          555,
+          382
+        ],
+        [
+          28,
+          50,
+          543,
+          555,
+          578
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          55,
+          231,
+          550,
+          442
+        ]
+      ],
+      "sourceNote": "For the 12 diesel prices, mean = 177.9167 cents and population standard deviation = 18.9976 cents. Rounded to the nearest cent: 178 cents and 19 cents."
+    },
+    "maths-2023-ol-p2-deferred-q10-a-iii": {
+      "question": [
+        [
+          28,
+          50,
+          76,
+          555,
+          382
+        ],
+        [
+          29,
+          50,
+          55,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          55,
+          442,
+          550,
+          611
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q10-a-iv": {
+      "question": [
+        [
+          29,
+          50,
+          217,
+          555,
+          410
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          56,
+          550,
+          315
+        ]
+      ]
+    },
+    "maths-2023-ol-p2-deferred-q10-b-i": {
+      "question": [
+        [
+          30,
+          50,
+          55,
+          555,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          315,
+          550,
+          437
+        ]
+      ],
+      "sourceNote": "The margin is 1/√1276≈0.0279946 as a proportion, or 2.79946 percentage points. To three decimal places, report 0.028 as a proportion or 2.799% as in the SEC example; keep the units clear."
+    },
+    "maths-2023-ol-p2-deferred-q10-b-ii": {
+      "question": [
+        [
+          30,
+          50,
+          158,
+          555,
+          251
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          437,
+          550,
+          623
+        ]
+      ],
+      "supplement": "confidence-2023-ol-deferred",
+      "supplementAlt": "NextStepUni worked confidence interval: 740/1276 ± 1/√1276 gives proportion limits 0.552 and 0.608 to three decimal places, or percentage limits 55.194% and 60.793%. The original scheme rounds early and shows 55.191% to 60.789%; its credit notes are reproduced below.",
+      "sourceNote": "Keeping full precision until the final step gives 740/1276 ± 1/√1276 = (0.55194268,0.60793193), or (55.194%,60.793%) to three decimal places. The printed scheme uses the rounded 57.99% and 2.799%, giving (55.191%,60.789%). Both the original example and its official award criteria are retained."
+    },
+    "maths-2023-ol-p2-deferred-q10-b-iii": {
+      "question": [
+        [
+          30,
+          50,
+          158,
+          555,
+          204
+        ],
+        [
+          30,
+          50,
+          542,
+          555,
+          563
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          623,
+          550,
+          686
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        114,
+        5,
+        760
+      ],
+      "scheme": [
+        27,
+        186,
+        28,
+        215
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        760
+      ],
+      "scheme": [
+        29,
+        55,
+        29,
+        772
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        760
+      ],
+      "scheme": [
+        30,
+        55,
+        31,
+        215
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        760
+      ],
+      "scheme": [
+        32,
+        55,
+        33,
+        484
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        760
+      ],
+      "scheme": [
+        34,
+        55,
+        35,
+        453
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        760
+      ],
+      "scheme": [
+        36,
+        55,
+        37,
+        326
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        117,
+        19,
+        760
+      ],
+      "scheme": [
+        38,
+        91,
+        40,
+        258
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        760
+      ],
+      "scheme": [
+        41,
+        55,
+        43,
+        238
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        27,
+        760
+      ],
+      "scheme": [
+        44,
+        55,
+        46,
+        267
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        53,
+        30,
+        760
+      ],
+      "scheme": [
+        47,
+        55,
+        48,
+        686
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 54 question and 54 solution images visually inspected in eleven contact sheets. Eight corrected question images separately inspected, then the final triangle and three toy-diagram crops inspected at full size. Full tables, graphs, construction box, shared Q4(a)(ii–iii) allocation, Q7(b) detailed 15D scale and exact confidence-interval supplement checked. No clipped required content.",
+  "atlasInspectionNote": "All 32 paper pages and scheme pages 24–52 independently swept; shared scheme introduction previously reviewed. Ten whole-question paper/answer spans checked against original page boundaries and continuation pages. Q1 and Q7 exclude preceding section instructions; all final-page tasks retained."
+}

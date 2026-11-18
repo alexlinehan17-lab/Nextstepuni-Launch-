@@ -1,0 +1,1472 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV-deferred.pdf",
+  "schemeFileid": "LC003ALP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "5d27ced5f822674331b23cb878b80de3ce33cf75224d3ca45b9733ebd55544ca",
+  "schemeSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual sweep of all 32 question-paper pages and scheme pages 1–25. Every printed part cross-checked against its own published scale; all question and solution images are separately inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 380 offered marks, with candidates selecting five Section A and three Section B questions for 300 marks.",
+    "40 independently marked tasks. Q6(c)(i)–(ii) share one 10C scale; Q7(a)–(b) share one 10D scale and remain together.",
+    "Q4(b) and Q7(d) each require one tick and a justification. All printed options remain in one card; no combinations are generated.",
+    "Q1(c) uses n in the paper, but the final lines of the model solution use x. A note explains that these lines refer to n; n=1 satisfies the domain and n=-2 is excluded.",
+    "Q3(c): the model answer’s sum 6 and product 10 refer to the conjugate pair, not all three roots. A note makes this explicit.",
+    "Q4(b): a horizontal line sufficiently close to and below the local maximum meets the continuous graph on both sides. The scheme’s phrase for all values of y<12 is too broad; the student-facing note gives the local argument.",
+    "Q7(a)–(b): the scheme prints A(1)=101.3 for the constant A, and labels 32.68 as 1 d.p. The question asks for two decimal places; the note retains A=101.3 and 32.68 to two decimal places.",
+    "Q9(b)(ii): the scheme calculates the positive magnitude 1.35 m³/hour of the decrease. The signed derivatives are dh/dt=-0.03 and dV/dt=-1.35; the distinction is explained.",
+    "Q10(a)(i): the printed model graph is clipped at its right edge and contains paragraph glyphs. An explicitly attributed NextStepUni table and complete 0–32 second graph, calculated from the paper formula, precede the original SEC credit notes. The original full scheme remains accessible.",
+    "Q10(a)(iii) prints Scale 10C (0,4,6,10), but also describes a Mid Partial Credit category. No extra numeric band is invented: the printed numeric scale and complete original notes are retained with an explicit inconsistency note."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-hl-p1-deferred-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Solve the following equation in x. Give each answer correct to 2 decimal places. 2x² − 8x − 11 = 0.",
+      "solutionQuotes": [
+        "Fully substituted quadratic formula",
+        "Apply a * for no rounding or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q1-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q1-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "questionText": "Find the range of values of p ∈ ℝ for which: |2p + 7| ≥ 3.",
+      "solutionQuotes": [
+        "One value of p found",
+        "Both values of p found",
+        "Apply a * once if strict inequality/inequalities are used"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "Solve the following equation for n ∈ ℝ, where n > 0: log₂(8 − 4n) − 2 log₂ n = 2.",
+      "solutionQuotes": [
+        "Simplifies to an equation in n with one log",
+        "Equation written without logs",
+        "Apply a * for incorrect solution not eliminated"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q1-c-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q1-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "questionText": "Prove by induction that the following identity is true for all n ∈ ℕ: 1 + 2 + 3 + … + n = n(n + 1)/2.",
+      "solutionQuotes": [
+        "2 steps correct",
+        "3 steps correct",
+        "Omits part or all of conclusion but otherwise correct."
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q2-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q2-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Solve the equation 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+      "solutionQuotes": [
+        "Sets up quadratic equation",
+        "Factors found",
+        "Correctly substituted quadratic formula"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q2-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q2-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Part (b)(i) asks you to solve 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+      "questionText": "Hence, or otherwise, find the values of x ∈ ℝ for which: 4⁻ˣ + 2(4ˣ) = 3.",
+      "solutionQuotes": [
+        "Finds one correct value of x"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q2-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q2-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The original Argand diagram and table are included.",
+      "questionText": "The complex number z₁ is shown in the Argand diagram below. Three other complex numbers are plotted, and are labelled A, B, and C, respectively. Write A, B, and C in the appropriate spaces in the table below, to show which point represents each complex number: −z₁, the complex conjugate of z₁, and iz₁.",
+      "solutionQuotes": [
+        "One point correctly identified"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q3-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q3-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "Use De Moivre’s theorem to solve the equation w² = 4i. Give each answer in the form a + bi, where a, b ∈ ℝ.",
+      "solutionQuotes": [
+        "2 steps correct",
+        "3 steps correct",
+        "Roots found correctly, but one or both in polar form"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-algebra-cubics"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "z = (3 − i) is a root of the equation: z³ − 2z² − 14z + 40 = 0. Find the other two roots of this equation. One should be complex and the other should be real.",
+      "solutionQuotes": [
+        "Finds quadratic factor"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "Solve the following pair of simultaneous equations in x, y ∈ ℝ: y = 3x² − 32x + 54; y = 2x + 14.",
+      "solutionQuotes": [
+        "Equation in one variable correctly established",
+        "x values found, but no y values",
+        "y values found, but no x values"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q4-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q4-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "questionText": "f: ℝ → ℝ is a continuous function. The graph of y = f(x) has one local maximum point, which is at (7, 12). Is y = f(x) injective (one-to-one) on the interval x ∈ [6, 8]? Justify your answer. Hint: draw a sketch of the graph of y = f(x) near the point (7, 12). Tick one box only: Yes; No; We don’t have enough information to be sure.",
+      "solutionQuotes": [
+        "Correct box ticked",
+        "Correct box ticked with work of merit in justification"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q4-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q4-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "questionText": "The diagram shows the graphs of the functions h(x) and k(x), where h(x) = −½x² + 4x + 1 and k(x) = 9 − x. Note that h(2) = k(2) and h(8) = k(8). Use integration to find the area enclosed between the graphs of h(x) and k(x), from x = 2 to x = 8.",
+      "solutionQuotes": [
+        "Integration indicated",
+        "Integration of both functions (or combined function) fully correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q4-c-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q4-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "Multiply out and simplify (x − 1)³.",
+      "solutionQuotes": [
+        "Binomial expanded correctly",
+        "One error in binomial expansion, but otherwise correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q5-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q5-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "A cubic function h(x) has the following equation in x ∈ ℝ: h(x) = x³ − 6x² − 15x + 10. Find the co-ordinates of the local maximum point and the local minimum point of h(x).",
+      "solutionQuotes": [
+        "Differentiation fully correct",
+        "x values found",
+        "Turning points found, but max/min not identified"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "f is the following function, where x ∈ ℝ, x ≠ ½: f(x) = 2x + 5 + 1/(2x − 1). Find the values of x for which f′(x) = 0.",
+      "solutionQuotes": [
+        "Award Low Partial Credit at most, if chain or quotient rule is not used",
+        "Differentiation fully correct",
+        "Quadratic without fraction"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q5-c-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q5-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "The population of a region is now 6·7 million people. This population is growing at a rate of 10% per year. At this growth rate, the population will be greater than 20 million for the first time n years from now, where n ∈ ℕ. Find the value of n.",
+      "solutionQuotes": [
+        "Equation / inequality set up",
+        "Log equation in n"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q6-a-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q6-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "f is the following function, where x ∈ ℝ is in radians: f(x) = sin 3x cos x. Use the product rule to find the value of f′(π/4).",
+      "solutionQuotes": [
+        "Award LP credit at most if product rule is not used.",
+        "One step correct",
+        "Two steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q6-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q6-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q6-c-i-ii",
+      "printedParts": [
+        "Q6(c)(i)",
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The continuous function y = g(x) is defined for −10 ≤ x ≤ 50, x ∈ ℝ. Its graph is shown below. It has three turning points: two local minimum points and one local maximum point. All of these are shown on the graph. The two endpoints of the graph are also shown. Use the information in the graph to answer the following questions.",
+      "questionText": "(i) k ∈ ℝ is a constant. The horizontal line y = k does not cut the graph of y = g(x). Write down one possible value of k. (ii) p ∈ ℝ is a constant. The horizontal line y = p cuts the graph of y = g(x) at exactly 2 points. Write down the ranges of possible values of p.",
+      "solutionQuotes": [
+        "Part (i) correct",
+        "Part (ii) correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q6-c-i-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q6-c-i-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q7-a-b",
+      "printedParts": [
+        "Q7(a)",
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d).",
+      "questionText": "(a) The air pressure at sea level (h = 0) is 101·3 units. Show that A = 101·3. (b) Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "One part correct",
+        "One part correct and work of merit in the 2nd part"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q7-a-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q7-a-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+      "questionText": "Altitude sickness is caused by low air pressure. Some people start to feel sick when the air pressure is at 80 units. At what height above sea level would these people start to feel sick? Give your answer correct to the nearest metre.",
+      "solutionQuotes": [
+        "Some correct substitution",
+        "Equation in ℎ with no indices (logs handled correctly)"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q7-c-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q7-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+      "questionText": "A ball, B, is at sea level, so h = 0. A second ball, C, is at a height above sea level of H metres, where H > 0. Each ball is raised up 40 m, so that the air pressure on each decreases. Which ball, if any, will have a greater decrease in air pressure? Justify your answer. Tick one box only: B; C; B and C will have the same decrease.",
+      "solutionQuotes": [
+        "Correct box ticked",
+        "Some relevant calculations",
+        "Correct box ticked with relevant but incomplete calculations given"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q7-d-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q7-d-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+      "questionText": "Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Correct substitution for ℎ"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q7-e-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q7-e-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+      "questionText": "Work out the value of h for which the air pressure is 80 units, according to this formula. Give your answer correct to the nearest metre.",
+      "solutionQuotes": [
+        "Equation with ℎ term to the power of 1",
+        "Apply a * for incorrect rounding or no rounding"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q7-e-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q7-e-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+      "questionText": "Write the total amount of money in his pension fund at the end of the 25 years as the sum of a series. Include the first two and last two terms of the series.",
+      "solutionQuotes": [
+        "2 correct terms"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+      "questionText": "Find the total amount of money in the pension fund at the end of the 25 years. Give your answer correct to the nearest cent.",
+      "solutionQuotes": [
+        "formula with fully correct substitution",
+        "Apply a * for no rounding or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "questionText": "At the end of the 25 years, Jon also puts an additional lump sum into his pension fund. His total pension fund is now €165 646·20. At this point, Jon retires, and stops paying money into his pension fund. Instead, he is now going to take out €A per month at the end of each month, for the next 20 years. Assuming that the interest rate remains at 0·35% per month, work out the maximum value that A can be. (That is, the value of A that would mean there is no money left in the pension fund after 20 years.)",
+      "solutionQuotes": [
+        "Formula with some substitution",
+        "Fully substituted amortisation/Sn formula"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+      "questionText": "Use this to write y in terms of x.",
+      "solutionQuotes": [
+        "Accept correct answer without work",
+        "mentions 60%"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-c-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-c-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+      "questionText": "In 2021, the company increased the number of Type X cameras it made by 1500, and increased the number of Type Y cameras by 900. As a result, in 2021, 50% of the cameras the company made were Type X. Work out the total number of cameras the company made in 2021.",
+      "solutionQuotes": [
+        "Finds the value of x or y"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-c-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-c-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "According to a Type X speed camera, a car is travelling at 112 km/hour. The company claims that their Type X speed camera can measure speed with a maximum error of 3·5%. Use this to work out the maximum actual speed of the car. Give your answer in km/hour, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Formula with full substitution",
+        "Apply a * for incorrect rounding or no rounding"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q8-d-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q8-d-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+      "questionText": "Use this information to write h in terms of x.",
+      "solutionQuotes": [
+        "diameter = 4x"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+      "questionText": "Show that the volume of the cylinder can be written as: V(x) = 20πx² − 4πx³.",
+      "solutionQuotes": [
+        "Accept candidates expression for h from part(i)",
+        "Volume of cylinder formula fully substituted in terms of x"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "V(x) is the volume, in cm³, of a cylinder cut from the sheet of tin in part (a), with radius x cm.",
+      "questionText": "Use differentiation to find the maximum volume that such a cylinder can have. Give your answer correct to the nearest cm³. Remember that V(x) = 20πx² − 4πx³.",
+      "solutionQuotes": [
+        "1 step correct",
+        "2 steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-a-iii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-iii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics",
+        "mathematics-higher-functions"
+      ],
+      "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. V(x) = 20πx² − 4πx³.",
+      "questionText": "The graph on the right shows V(x) for a range of values of x ∈ ℝ. The x-axis is shown, but the y-axis is not. The graph of V(x) cuts the x-axis at the points (a, 0) and (b, 0), with a < b, as shown. By referring to the diagram on the previous page, or otherwise, find the value of a and the value of b.",
+      "solutionQuotes": [
+        "Accept correct answers without work",
+        "One value of x given"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-a-iv-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-iv-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+      "questionText": "Find the height of the liquid in the container when the volume of liquid is 203·285 m³. Give your answer in metres, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Equation set up",
+        "Equation with index removed"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+      "questionText": "Liquid is leaking from this container. At a certain time, the height of the liquid in the container is 1 m. At this time, the height of the liquid is decreasing at a rate of 0·03 m/hour. Find the rate at which the volume of liquid in the container is decreasing at this time. Give your answer in m³/hour.",
+      "solutionQuotes": [
+        "Steps can happen in different orders.",
+        "Step 2 does not need to be explicitly stated",
+        "2 steps correct",
+        "3 steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q9-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q9-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+      "questionText": "Complete the table below and hence draw the graph of V(t) in the domain 0 ≤ t ≤ 32, t ∈ ℝ, on the grid below. Give your values correct to 1 decimal place. The table gives t = 0, 4, 8, 12, 16, 20, 24, 28, 32, with V(4) = 29·7 and V(24) = 53·6 already supplied.",
+      "solutionQuotes": [
+        "3 parts correct",
+        "8 parts correct",
+        "14 parts correct",
+        "16 parts correct"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+      "questionText": "Find the acceleration (rate of change of speed) of the skydiver one second after they jump from the airplane. Give your answer, in m/s², correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Differentiation fully correct",
+        "Apply a * for incorrect rounding or no rounding"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q10-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+      "questionText": "Use integration to find the average speed of the skydiver over the first 10 seconds after the jump. Give your answer correct to the nearest m/s.",
+      "solutionQuotes": [
+        "Indication of integration is required to be awarded any credit",
+        "Accept correct answer without unit",
+        "2 steps correct",
+        "3 steps correct"
+      ],
+      "markingNote": "The printed row gives Scale 10C (0, 4, 6, 10), but also mentions Mid Partial Credit without assigning a separate mark. The numeric scale is retained; the original notes are available below.",
+      "figureKey": "maths-2025-hl-p1-deferred-q10-a-iii-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-iii-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+      "questionText": "Find the terminal velocity of the skydiver, that is, find the value of lim V(t) as t → ∞.",
+      "solutionQuotes": [
+        "Accept correct answers without work",
+        "substitutes 2 or more positive integers for t"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q10-a-iv-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-iv-question"
+    },
+    {
+      "id": "maths-2025-hl-p1-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "The airplane flies d km out to a jumpsite, at an average speed of x km/hour. It then flies d km back from the jumpsite. Throughout the return journey, its speed is 10% less than x km/hour. Find the percentage increase in the time it will take for the return journey. Give your answer as a percentage, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Work of merit, for example, return speed"
+      ],
+      "figureKey": "maths-2025-hl-p1-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2025-hl-p1-deferred-q10-b-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Any five / Any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Every question is retained for practice, including questions not selected during the examination."
+    },
+    {
+      "pages": [
+        7,
+        23
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods within the same task; no task selection or expansion."
+    },
+    {
+      "pages": [
+        10,
+        17
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "Each question is one choice-and-justification task. All three printed options remain together."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:9ef5a335c442ebe6": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level selection; all questions retained for practice."
+    },
+    "3:e524e5d1657d4e49": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level selection; all questions retained for practice."
+    },
+    "4:b62b6133e61fdb2b": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level selection; all questions retained for practice."
+    },
+    "7:6ceb09fc9aac3768": {
+      "classification": "method-choice",
+      "reason": "Alternative mathematical methods for the same required task."
+    },
+    "16:590195f4dddc3c90": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level selection; all questions retained for practice."
+    },
+    "23:48bf0d2477bbf85b": {
+      "classification": "method-choice",
+      "reason": "Alternative mathematical methods for the same required task."
+    }
+  }
+}

@@ -1,0 +1,1924 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2023,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV-deferred.pdf",
+  "schemeFileid": "LC003GLP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "03fab7bb6c81f525fa03cd5fc51a6ce4b7ede2d90554d0ab930d9cb8dc9797e7",
+  "schemeSha256": "a26b1052de619384b1623938a6b37ee9b00a095244fd450b0f6617b4806eaeb0",
+  "reviewedAt": "2026-10-31",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and scheme pages 1–2 and 24–52. Each required task reconciled with its detailed mark allocation, including shared parts, printed answer choices and all diagrams. Final question/solution crops inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    25,
+    26
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 54 tasks, 380 offered marks. Q4(a)(ii) and (iii) share one 5C allocation and remain one card.",
+    "Paper 2 has 5B (0,3,5), 5C (0,3,4,5), 10C (0,4,6,10), unlike Paper 1. Q7(b) detailed scheme explicitly uses 15D (0,5,8,12,15), overriding the general table’s 4-mark low-credit band.",
+    "Q1(a)(iii) requires every product with exactly one ordered dice outcome: 1,9,16,25,36. The five answers are not a selectable subset.",
+    "Q2(b) samples the full birth register. Both probabilities have denominator 55,959; the female subtotal is not the denominator for part (ii).",
+    "Q4(b)(ii) requires two points on each circle. These are open mathematical examples, not a fixed finite question pool; all four requested points stay on one 5C card.",
+    "Q5(e) is one answer-selection task with six printed alternatives and a reason; all alternatives remain on one card. Q5(c)–(d) retain the original plotted example and its line of best fit.",
+    "Q6(b) construction retains the given point, full drawing area, model triangle, compass arcs and ±0.25 cm tolerance. Q6(c) rejects x=4 because a side would be negative.",
+    "Q7(b) has nine ordinates including the zero at A: 0,30,35,40,45,30,25,30,40 at 20 m intervals. Their interior sum is 235 and area 5100 m².",
+    "Q7(d) rounds upwards to 20 complete laps to reach at least 5 km. Q7(e) uses 2 mm = 0.2 cm for each bead and gives 46⅔% empty space (46.7% in the scheme).",
+    "Q8(a)(iii): the source uses x for the remaining distance, then correctly concludes the boat moves 251 m. The paper’s x is the distance moved: x=500−31.7/tan(2A). A clarification distinguishes the variables.",
+    "Q9(e) requires both walkers’ positions, (2,3) and (2,5), at the instant Alice and Ciara meet; Brian and Dave have not yet met. Q9(f) is not a square: adjacent slopes are not perpendicular and the diagonals have different lengths.",
+    "Q10(a)(i) uses range to mean minimum-to-maximum intervals in its model. Retain petrol 156–213 cents and diesel 145–205 cents. The ordinary statistical ranges 57 and 60 cents are correct differences but receive high partial credit in this scheme.",
+    "Q10(a)(ii) uses population standard deviation, 18.9976 cents, rounded to 19; mean 177.9167 rounds to 178. All eight months within one standard deviation remain in part (iii).",
+    "Q10(b)(ii) rounds 740/1276×100 early to 57.99, producing printed limits 55.191% and 60.789%. Retaining precision gives 55.194% and 60.793% to 3 decimal places, or proportion limits 0.552 and 0.608. A labelled NextStepUni worked example shows the calculation; official credit notes remain unchanged."
+  ],
+  "cards": [
+    {
+      "id": "maths-2023-ol-p2-deferred-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+      "questionText": "Complete the table.",
+      "solutionQuotes": [
+        "Any 1 correct entry",
+        "5 rows or columns correct"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q1-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q1-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+      "questionText": "The game is won if the product of the numbers is a multiple of 3. What is the probability of winning the game on one throw of the two dice? Give your answer in the form p/q, where p, q ∈ ℕ.",
+      "solutionQuotes": [
+        "Correct numerator or denominator"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q1-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q1-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+      "questionText": "The rule for winning the game is changed. The game is now won if the product of the numbers, recorded in the table, from one throw of the two dice is n, where n ∈ ℕ. The probability of winning the game is now 1/36. List the possible values of n.",
+      "solutionQuotes": [
+        "Possible values of n are:",
+        "One correct value of n"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q1-a-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q1-a-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "There are 25 students in a class. There are 15 male students of which 3 wear glasses. In total 7 students in this class wear glasses. If a student is selected at random from this class find the probability that the student is a female who does not wear glasses.",
+      "solutionQuotes": [
+        "Finds 4 or 10 or has 25 as denominator",
+        "Numerator correct"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "In how many ways can the letters of the word ACTION be arranged, using all 6 letters?",
+      "solutionQuotes": [
+        "Writes any correct arrangement"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q2-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q2-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "The six letters of ACTION are arranged using all 6 letters.",
+      "questionText": "In how many of these arrangements are the three vowels (A, I, and O) together?",
+      "solutionQuotes": [
+        "Finds 24"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q2-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q2-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is:",
+      "questionText": "the most popular male name or the most popular female name? Give your answer as a percentage correct to 1 decimal place.",
+      "solutionQuotes": [
+        "finds 1007",
+        "Both numerator and denominator"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q2-b-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q2-b-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is:",
+      "questionText": "one of the 5 female names that appears in the table above? Give your answer as a percentage correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Finds 1730",
+        "Correct numerator and denominator"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q2-b-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q2-b-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The equation of line t is: 2x − 3y + 7 = 0.",
+      "questionText": "Write down the slope of t.",
+      "solutionQuotes": [
+        "Attempts to isolate"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q3-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q3-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The equation of line t is: 2x − 3y + 7 = 0.",
+      "questionText": "The equation of line v is: ax − 6y + 1 = 0, where a ∈ ℝ. Line t is parallel to line v. Find the value of a.",
+      "solutionQuotes": [
+        "Equates both fractions but fails to finish"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q3-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q3-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The equation of line t is: 2x − 3y + 7 = 0.",
+      "questionText": "The equation of line w is: 3x + 2y − 9 = 0. Solve simultaneous equations to find the point of intersection of t and w.",
+      "solutionQuotes": [
+        "Point of intersection is (1, 3)",
+        "Answers not given as a pair of"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q3-a-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q3-a-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "A(−2,3), B(2,4), and C(0,0) are the 3 vertices of a triangle. Find, in square units, the area of triangle ACB.",
+      "solutionQuotes": [
+        "area formula",
+        "Formula fully substituted correctly."
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s.",
+      "questionText": "Find the centre and the radius of s.",
+      "solutionQuotes": [
+        "Centre or Radius correct"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q4-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q4-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q4-a-ii-iii",
+      "printedParts": [
+        "Q4(a)(ii)",
+        "Q4(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s.",
+      "questionText": "(ii) Write down the equation of the circle s. (iii) Show, by calculation, that the point p(−1,−3) lies inside the circle s.",
+      "solutionQuotes": [
+        "Equation of circle found",
+        "No conclusion in (iii)"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q4-a-ii-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q4-a-ii-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9.",
+      "questionText": "Write down the centre and the radius of each of the following circles.",
+      "solutionQuotes": [
+        "4 parts to solution",
+        "Any 3 parts correct"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q4-b-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q4-b-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9.",
+      "questionText": "Hence, or otherwise, write down the co-ordinates of two points on the circle k and two points on the circle p.",
+      "solutionQuotes": [
+        "4 points to solution",
+        "One correct point given"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q4-b-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q4-b-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+      "questionText": "Complete the scatter plot of the data on the grid below.",
+      "solutionQuotes": [
+        "7 correct plots required",
+        "Up to 6 correct plots"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q5-a-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q5-a-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+      "questionText": "The sales at 22° seems out of line with the other data. State what name is given to a point that seems out of line with other data and suggest a reason why this might have happened in the case of the data in the table.",
+      "solutionQuotes": [
+        "Name: Outlier",
+        "shop closed at midday."
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+      "questionText": "Ignoring the point (22,140), draw the line of best fit on the scatter plot, by eye.",
+      "solutionQuotes": [
+        "Work on graph",
+        "Joins the data points"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q5-c-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q5-c-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        34,
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. Draw the line of best fit by eye, ignoring (22,140).",
+      "questionText": "Use your line of best fit to estimate the sales of units of ice cream on a day with a mean daily temperature of 18·5 degrees. Show your work clearly on the grid in part (a).",
+      "solutionQuotes": [
+        "From the diagram, sales of 290",
+        "or similar from candidates line"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q5-d-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q5-d-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q5-e",
+      "printedParts": [
+        "Q5(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+      "questionText": "You may ignore the point (22,140) in answering this part. From the list of values below, select the one which you believe best represents the correlation coefficient of the first 8 data points in the table and give a reason for your choice. 0·25, −0·9, 0·7, 0·95, 0·1, −0·55.",
+      "solutionQuotes": [
+        "Answer: 0·95",
+        "perfect correlation of 1"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q5-e-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q5-e-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors.",
+      "questionText": "What is |∠BOC|?",
+      "solutionQuotes": [
+        "writes 360"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q6-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q6-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors.",
+      "questionText": "Hence, or otherwise, find |FE|. Give your answer, in cm, in surd form.",
+      "solutionQuotes": [
+        "Theorem of Pythagoras written"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q6-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q6-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct a triangle PQR where |PQ| = 8 cm, |QR| = 8 cm, and |PR| = 6 cm. Show all construction lines clearly. The point P is given below.",
+      "solutionQuotes": [
+        "Two correct lengths drawn.",
+        "Construction correct without arcs"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q6-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q6-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The right-angled triangle shown below has sides: x − 7, x, and x + 1. Find the value of x.",
+      "solutionQuotes": [
+        "Fully expands brackets correctly",
+        "Fails to eliminate 4 as a solution"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q6-c-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q6-c-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe got a new puppy. The puppy must be kept indoors at night. Kobe bought a six-sided cage in the shape of a cuboid for his puppy. The cage has a length of 1·2 metres, a width of 80 cm, and a height of 70 cm.",
+      "questionText": "Find the volume of the space that the cage will occupy. Give your answer in cm³.",
+      "solutionQuotes": [
+        "Writes 120 cm",
+        "Multiplies any two lengths correctly"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-a-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-a-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows the plan of a field behind Kobe’s house where the puppy can play. The horizontal line AB represents a wooden fence. At equal intervals of 20 m along this fence perpendicular measurements (in metres) are taken to the opposite side of the field.",
+      "questionText": "Use the Trapezoidal Rule to estimate the area of this field in m².",
+      "solutionQuotes": [
+        "235 found",
+        "Trapezoidal Rule formula with full"
+      ],
+      "markingNote": "The detailed task-specific scale is 15D (0,5,8,12,15). It explicitly uses 5 marks for low partial credit, unlike the general table’s 4-mark band.",
+      "figureKey": "maths-2023-ol-p2-deferred-q7-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m.",
+      "questionText": "Find the distance they will walk in one full lap of this path. Give your answer in metres, correct to two decimal places.",
+      "solutionQuotes": [
+        "Finds length of curved path"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-c-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-c-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m.",
+      "questionText": "Kobe would like to walk his puppy at least 5 km each day. How many complete laps of the path will he need to finish each day?",
+      "solutionQuotes": [
+        "Answer as 19 laps from correct work"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-d-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-d-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown.",
+      "questionText": "Find the volume of this toy (in cm³) in terms of π.",
+      "solutionQuotes": [
+        "Total volume",
+        "One error in substitution and finishes"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-e-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-e-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown.",
+      "questionText": "The inside of this toy is filled with spherical foam beads each of radius 2 mm. Find the volume of one bead. Give your answer (in cm³) in terms of π.",
+      "solutionQuotes": [
+        "Writes 2 mm = 0·2 cm",
+        "Formula for sphere fully substituted"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-e-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-e-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q7-e-iii",
+      "printedParts": [
+        "Q7(e)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown. The inside of this toy is filled with spherical foam beads each of radius 2 mm.",
+      "questionText": "1500 of the beads are used to stuff the toy. Find the percentage of empty space inside the toy.",
+      "solutionQuotes": [
+        "Finds volume of 1500 beads",
+        "Finds volume of empty space"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q7-e-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q7-e-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+      "questionText": "Find the distance between the boat and the top of the lighthouse. Give your answer correct to the nearest metre.",
+      "solutionQuotes": [
+        "writes Pythagoras theorem"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+      "questionText": "Find the size of the angle A, the angle of elevation of the top of the lighthouse from the boat. Give your answer, in degrees, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Finds 0·0634"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+      "questionText": "The boat moves x metres closer to the lighthouse, so that the angle of elevation doubles in size (2A). Find the value of x, correct to the nearest whole number.",
+      "solutionQuotes": [
+        "The boat moves 251 m closer",
+        "Sets up equation correctly"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-a-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-a-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+      "questionText": "Write down the size of the angle BPL and hence find the area of the triangle BPL. Give your answer for the area correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Finds 135",
+        "area formula fully"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-b-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-b-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+      "questionText": "Use the Cosine Rule to find how far the point B is from L. Give your answer correct to one decimal place.",
+      "solutionQuotes": [
+        "Cosine Rule Formula correctly",
+        "Treats triangle as right angled"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-b-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-b-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+      "questionText": "Use the Sine Rule to find |∠PLB|. Give your answer, in degrees, correct to one decimal place.",
+      "solutionQuotes": [
+        "Sine Rule Formula correctly substituted"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q8-b-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q8-b-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Write down the co-ordinates of the position of each person’s house. One is already given: Alice, A(0,4).",
+      "solutionQuotes": [
+        "Any one coordinate/point correct",
+        "Any two points correct"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-a-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-a-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Ciara says that the distance from her house to Brian’s house is the same as the distance from her house to Dave’s house. Show that |CB| = |CD|.",
+      "solutionQuotes": [
+        "Finds |𝐶𝐵| or |𝐶𝐷|"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-b-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-b-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Dave says that the path from his house to Brian’s house is perpendicular to the path from Alice to Ciara’s. Based on Alice’s co-ordinate diagram, explain why this is true.",
+      "solutionQuotes": [
+        "perpendicular to AC"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-c-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-c-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Is the path from Brian’s house to Ciara’s house perpendicular to the path from Dave’s house to Ciara’s house? Justify your answer, using slopes or distances.",
+      "solutionQuotes": [
+        "Finds both slopes correctly",
+        "Slope Formula or relevant work on one"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-d-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-d-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Alice and Ciara both leave their houses and walk towards each other. Brian and Dave do the same. Write down the co-ordinates of the points where Brian and Dave will be when Alice and Ciara meet. (Assume they all leave their houses at the same time and walk at the same pace.)",
+      "solutionQuotes": [
+        "Brian will be at (2, 3)",
+        "Dave will be at (2, 5)"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-e-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-e-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-f",
+      "printedParts": [
+        "Q9(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Is ABCD a square? Justify your answer.",
+      "solutionQuotes": [
+        "Answer: NO",
+        "Correct answer and some relevant work"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-f-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-f-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-g-i",
+      "printedParts": [
+        "Q9(g)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "The local shop is situated at O(0,0). Find the distance from Ciara’s house to the shop. Give your answer, in km, in surd form.",
+      "solutionQuotes": [
+        "Some substitution into distance formula"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-g-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-g-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-g-ii",
+      "printedParts": [
+        "Q9(g)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24,
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. The local shop is situated at O(0,0).",
+      "questionText": "Find the angle between Dave’s house, the shop, and Ciara’s house (i.e. |∠DOC|). Give your answer correct to the nearest degree.",
+      "solutionQuotes": [
+        "Drop perpendicular from D",
+        "Drop perpendicular from C"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-g-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-g-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q9-h",
+      "printedParts": [
+        "Q9(h)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+      "questionText": "Find, in km², the area enclosed between the four houses (i.e. the area of ABCD).",
+      "solutionQuotes": [
+        "Area of half shape found correctly"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q9-h-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q9-h-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+      "questionText": "Write down the range for the price of both petrol and diesel.",
+      "solutionQuotes": [
+        "Petrol 156 to 213",
+        "Diesel 145 to 205"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+      "questionText": "Find the mean and the standard deviation of the price of diesel during the period. Give each answer correct to the nearest cent.",
+      "solutionQuotes": [
+        "Finds Mean or Standard Deviation"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-a-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-a-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+      "questionText": "List the months in which the price of diesel was within one standard deviation of the mean price for diesel.",
+      "solutionQuotes": [
+        "November, December, January, February,",
+        "March, April, May, August"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-a-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-a-iii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Sean drives a diesel car, Jenny drives a petrol car. At the start of one week in April 2022, both Sean and Jenny had a full tank of fuel. Both drove 340 km, and then filled their tank to capacity again. Sean’s car: diesel, 191 cent per litre, uses an average of 5·4 litres per 100 km driven. Jenny’s car: petrol, 181 cent per litre, uses an average of 6·2 litres per 100 km driven.",
+      "questionText": "Which car was cheaper to fill after the 340 km of driving, and by how much? Give your second answer correct to the nearest cent.",
+      "solutionQuotes": [
+        "Finds correct number of litres for both",
+        "Finds total cost of fuel for both"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-a-iv-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-a-iv-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Find the margin of error associated with a survey of 1276 people. Give your answer correct to 3 decimal places.",
+      "solutionQuotes": [
+        "Writes correct formula",
+        "Formula substituted correctly"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-b-i-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-b-i-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "In a particular survey, 1276 people were selected at random in a particular area. Of those surveyed, 740 of them said they were satisfied with the level of public transport in their area. Create a 95% confidence interval for the level of satisfaction amongst the population in this area. Give your answer correct to 3 decimal places.",
+      "solutionQuotes": [
+        "Finds 57·99",
+        "One boundary found"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-b-ii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-b-ii-question"
+    },
+    {
+      "id": "maths-2023-ol-p2-deferred-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a survey, 1276 people were selected at random in a particular area; 740 said they were satisfied with public transport.",
+      "questionText": "What change could be made to decrease the margin of error in this survey?",
+      "solutionQuotes": [
+        "Increase number of people"
+      ],
+      "figureKey": "maths-2023-ol-p2-deferred-q10-b-iii-solution",
+      "questionFigureKey": "maths-2023-ol-p2-deferred-q10-b-iii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained for practice."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "List the possible values",
+      "classification": "required-answers",
+      "reason": "All five products with one ordered outcome are required, not a choice of a subset."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "one of the 5 female names",
+      "classification": "event-definition",
+      "reason": "Defines the probability event including all five names, not a question-choice pool."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "wording": "two points on the circle k and two points on the circle p",
+      "classification": "open-examples",
+      "reason": "Two arbitrary valid points per circle, not a fixed finite selectable pool; one response and one 5C allocation."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "select the one / give a reason",
+      "classification": "answer-selection",
+      "reason": "All six correlation coefficients and required reason stay together on one 5B card."
+    },
+    {
+      "pages": [
+        25
+      ],
+      "wording": "slopes or distances",
+      "classification": "method-choice",
+      "reason": "Alternative proofs of one required geometric conclusion, not separate tasks."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "3:17cd88693f14912f": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "4:0701376918586e67": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "7:ffdd545225436987": {
+      "classification": "event-definition",
+      "reason": "All five names define one probability event."
+    },
+    "11:583f07fcdacc8ed8": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required task."
+    },
+    "14:3b865a7cbeae797a": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required task."
+    },
+    "16:c61bc044a9b93184": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    }
+  }
+}

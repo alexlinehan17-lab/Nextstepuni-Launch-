@@ -32,6 +32,7 @@ Exit code is the number of problems (open + orphans + unparsed + stale
 exclusions), so `reconcile.py <subject>` in a shell IS the done-check.
 """
 import argparse
+import glob
 import collections
 import json
 import os
@@ -41,6 +42,7 @@ import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
+from ja_review_refs import reviewed_japanese_refs, bind_japanese_ref  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -78,7 +80,7 @@ HEAD = re.compile(
     # the address — so the card cites "Section E Q(b)(ii)" and the census keys
     # it with q=None. History goes one step further: a part priced whole, with
     # nothing numbered beneath it, is cited by its section alone.
-    r'(?:\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
+    r'(?:\s+(?:Q(?P<q>\d{1,2}[A-Z]?)?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
@@ -183,17 +185,23 @@ def shipped_cards(subject):
             for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
                 data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
                 out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
-    if subject == 'applied-maths':
+    if subject in ('applied-maths', 'russian', 'japanese'):
         # Mirror withReviewedCards: preserve literal identities, apply audited
         # corrections, then append newly reviewed tasks. CI imports the actual
         # runtime deck and pins these same identity/ref pairs.
         with open(os.path.join(DECKS, subject, 'reviewed.json'), encoding='utf-8') as fh:
             reviewed = json.load(fh)
         by_id = {card['id']: card for card in reviewed}
-        assert len(by_id) == len(reviewed), 'Duplicate Applied Mathematics runtime identity'
+        assert len(by_id) == len(reviewed), f'Duplicate {subject} runtime identity'
         originals = {cid for cid, _ in out}
         for cid in originals & by_id.keys():
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
+        if subject == 'japanese':
+            aliases = json.load(open(os.path.join(DECKS, subject, 'aliases.json'), encoding='utf-8'))
+            for old, target in aliases.items():
+                assert old in originals and target in by_id and target not in aliases
+                assert old.startswith(target + '-') and old != target, f'Invalid Japanese consolidation: {old}'
+            out = [(cid, ref) for cid, ref in out if cid not in aliases]
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
     if subject == 'religious-education':
@@ -430,12 +438,25 @@ def parse_ref(ref):
     if not d['q'] and not d['abq'] and not d['section'] and not d['paper'] \
             and not d.get('topic'):
         return None
-    q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
+    q = 'ABQ' if d['abq'] else ((int(d['q']) if d['q'].isdigit() else d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
     paths, cur_letter, cur_roman, dash = [], None, None, False
     pos = m.end()
+    after_separator = False
     while pos < len(core):
+        # Some reviewed holistic tasks spell out the question number for
+        # every part: Q10(b)(i),Q10(b)(ii),Q10(c)(i),Q10(c)(ii).
+        # Reset the part context, but never silently fold a different
+        # question (or an alternative route) into this question's coverage.
+        repeated = re.match(r'\s*Q(\d{1,2}[A-Z]?)(-alt)?(?=\s*\()', core[pos:])
+        if repeated:
+            if not after_separator or repeated[1] != d['q'] or repeated[2] != d['alt']:
+                return None
+            pos += repeated.end()
+            cur_letter, cur_roman, dash = None, None, False
+            after_separator = False
+            continue
         t = PART_TOKEN.match(core, pos)
         if not t:
             break
@@ -445,7 +466,9 @@ def parse_ref(ref):
             dash = True
             continue
         if is_sep:
+            after_separator = True
             continue
+        after_separator = False
         cls = _classify(tok)
         tok = tok.lower()
         if cls == 'letter':
@@ -626,6 +649,24 @@ def load_exclusions(subject):
         return json.load(fh)
 
 
+def reviewed_maths_paper_keys():
+    """Resolve parallel editions by reviewed booklet identity, never the shared Q number."""
+    result = {}
+    for path in glob.glob(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', '*.json')):
+        with open(path) as source:
+            review = json.load(source)
+        m = re.search(r'LP(\d{3})EV', review['paperFileid'])
+        if not m:
+            continue
+        component = m.group(1)
+        label = {'100': 'Paper 1', '200': 'Paper 2'}.get(component, component)
+        if review['year'] == 2014:
+            label = {'130': 'Paper 1', '230': 'Paper 2'}.get(component, label)
+        for task in review['cards']:
+            result[task['id']] = label
+    return result
+
+
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
     if subject == 'accounting':
@@ -646,14 +687,29 @@ def reconcile_subject(subject, census=None):
     orphans, unparsed = [], []
 
     cards = shipped_cards(subject)
-    for cid, refstr in cards:
+    # Russian alone has an audited shared summary allocation spanning four
+    # original questions. Expand only exact coverage references, never the
+    # runtime card count or the independent printed-task denominator.
+    joint_refs = {}
+    if subject == 'russian':
+        from ru_joint_tasks import reviewed_joint_coverage
+        joint_refs = reviewed_joint_coverage(cards, idx)
+    coverage_refs = [(cid, ref) for cid, refstr in cards
+                     for ref in joint_refs.get(cid, [refstr])]
+    exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
+    exact_japanese_refs = reviewed_japanese_refs() if subject == 'japanese' else {}
+    for cid, refstr in coverage_refs:
         ref = parse_ref(refstr)
+        if subject == 'japanese':
+            ref = bind_japanese_ref(cid, refstr, ref, exact_japanese_refs)
         if subject == 'chemistry':
             ref = chemistry_choice(refstr, ref)
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
         deferred = None
+        if cid in exact_papers:
+            ref['paper'] = exact_papers[cid]
         if subject == 'history':
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("hist-2023-hl-deferred-lm-...") and
@@ -667,7 +723,7 @@ def reconcile_subject(subject, census=None):
                 continue
             if hist_deferred:
                 ref['paper'] = 'Deferred'
-        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german'):
+        if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'physics', 'home-economics'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...") and the
@@ -678,7 +734,9 @@ def reconcile_subject(subject, census=None):
                                       'engineering': r'^eng-\d{4}-(?:hl|ol)-deferred-',
                                       'dcg': r'^dcg-\d{4}-(?:hl|ol)-deferred-',
                                       'spanish': r'^es-\d{4}-(?:hl|ol)-deferred-',
-                                      'german': r'^de-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'german': r'^de-\d{4}-(?:hl|ol)-deferred-',
+                                      'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
+                                      'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue
@@ -846,13 +904,15 @@ def content_hash(subject):
             names += ['rows.json']
         for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
-    if subject in ('physical-education', 'applied-maths'):
+    if subject in ('physical-education', 'applied-maths', 'russian', 'japanese'):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'religious-education' and os.path.exists(os.path.join(DECKS, subject, 'rubric-authored.json')):
         for name in ('rubric-authored.json', 'rubric.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'japanese':
+        h.update(open(os.path.join(DECKS, subject, 'aliases.json'), 'rb').read())
     if subject == 'business':
         # Reviewed rubric cards and printed routes are data, not literal cards.
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
@@ -901,7 +961,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'religious-education'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'religious-education', 'russian', 'japanese'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

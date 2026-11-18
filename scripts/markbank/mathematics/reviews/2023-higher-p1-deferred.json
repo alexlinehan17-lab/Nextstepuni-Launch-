@@ -1,0 +1,1618 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2023,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV-deferred.pdf",
+  "schemeFileid": "LC003ALP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "143e1f18e477dc166b40dadc43d26182e2172b6b01e4430b7adf88356898fb8c",
+  "schemeSha256": "71e49ca02f643ab56422044abfb1985a827f209bc490bf7775d374af91246666",
+  "reviewedAt": "2026-10-31",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and scheme pages 1–24, cross-checking each printed part against its own allocation. All question/solution crops inspected before publication; graph checked against both printed functions.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    4
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 44 tasks and 380 offered marks. Exam-level choice does not remove practice questions. Q5(a)(i)–(ii) share 15D and Q9(a)(i)–(ii) share 15C; each pair stays together.",
+    "Q1(b) explicitly uses ascending powers. Its third term is 45k⁸/x⁶. Q1(b)(ii) credit notes refer to T7; the x⁴ term is the eighth term in ascending order. Its coefficient 120k³ and final k=4 are correct.",
+    "Q2(b)(i) is mislabelled (b)(ii) in the detailed scheme; reconcile to the paper and summary. Q2(b)(iii) means log₂(n+1), not log₂(n)+1.",
+    "Q3(b) reuses z1 from the previous part in the model solution; here the given root is 2−i, not 11−2i. The resulting a=−4 and b=5 are correct.",
+    "Q3(c) drops a factor 4 before √3i and omits division of the angles by 3 in an intermediate line. Its three final roots are correct: modulus 2 and angles π/9, 7π/9, 13π/9. The card explains the correct intermediate formula.",
+    "Q4(b)(i) expands −(k²+1)k incorrectly as −k²−k. It must be −k³−k. The card supplies the corrected expansion.",
+    "Q6(a) specifically prints 15D (0,5,8,12,15), unlike the general 15D table (0,4,8,12,15). Retain its task-specific numeric bands only for this card. Local minimum confirmed by g″(11/2)=52>0.",
+    "Q7(d)(i) writes the growth factor 1.004495498 as the interest rate i. Subtract 1 before expressing it as 0.45%. Q7(d)(ii) uses that rounded monthly rate. Q7(e) requires the least whole year strictly above log(2)/log(1.0675), namely 11; 10.61164 is not equal to 11.",
+    "Q8(a)(iii) and Q5(b) use (a)/(b) internally in the model proof; these are working steps, not extra printed tasks. Q8(b)(i) keeps the proof and both roots together under 10D.",
+    "Q9(a)(ii) prints −8.14×10 in the exponential substitution; the correct exponent is −0.814×10=−8.14. The final answer 2994 is correct.",
+    "Q9(a)(iv) prints 5C (0,2,3,5) but gives Low, Mid and High Partial Credit descriptions. Preserve numeric bands and original wording; the extra Mid description has no distinct numeric award, so no substitute official allocation is invented.",
+    "Q9(b)(iii) incorrectly compares rates on intervals separated at t=5, confusing graph height with slope. An attributed NextStepUni graph and valid comparison explain that both populations increase towards 3000, N initially steepens then flattens, while P flattens throughout. Original SEC wording remains visible with an explicit correction.",
+    "Q10(b) uses y for |BE| in its working, independent of the y in the later cylinder question. Q10(c)(ii) maximum is at y=4√3 with V″(y)=−12πy<0; the endpoints give zero volume."
+  ],
+  "cards": [
+    {
+      "id": "maths-2023-hl-p1-deferred-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        6
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "Solve the simultaneous equations x + y = 2, y + 2z = 12, 5x + 7y + z = 13.",
+      "solutionQuotes": [
+        "Effort to eliminate one variable",
+        "2 equations in 2 unknowns",
+        "2 unknowns found"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q1-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q1-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+      "questionText": "Find, in terms of k and x, the third term in this expansion.",
+      "solutionQuotes": [
+        "Effort at binomial term",
+        "3rd term found but in decreasing powers of"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q1-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q1-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+      "questionText": "The coefficient of x⁴ in this expansion is 7680. Find the value of k.",
+      "solutionQuotes": [
+        "Effort at binomial term"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q1-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q1-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "questionText": "Solve the following inequality, for x ∈ ℝ, x ≠ 1: (3x + 1)/(x − 1) ≤ 6.",
+      "solutionQuotes": [
+        "One correct linear inequality",
+        "Multiplication completed correctly",
+        "2 correct linear inequalities"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q2-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q2-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "Write down a pair of real values of a and b, if log₃4 = (log₂a)/(log₂b).",
+      "solutionQuotes": [
+        "Partial Credit:"
+      ],
+      "markingNote": "The detailed scheme labels this row (b)(ii); the paper and summary identify it as (b)(i). Its allocation is 10B (0,5,10).",
+      "figureKey": "maths-2023-hl-p1-deferred-q2-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "Show that (log₂3)(log₃4) = 2.",
+      "solutionQuotes": [
+        "some work with logs"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q2-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "(log₂3)(log₃4) = 2.",
+      "questionText": "Hence, or otherwise, solve for n ∈ ℕ, the equation (log₂3)(log₃4)(log₄5) … (logₙ₋₁n)(logₙ(n + 1)) = 11.",
+      "solutionQuotes": [
+        "One term written in terms of",
+        "LHS of expression written in terms of"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q2-b-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "z₁ = 25(3 − i)/(7 − i). Write z₁ in the form a + bi, where a, b ∈ ℝ.",
+      "solutionQuotes": [
+        "Some correct multiplication"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q3-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q3-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "2 − i is a root of the equation z² + az + b = 0, where a, b ∈ ℤ. Find the value of a and the value of b.",
+      "solutionQuotes": [
+        "Mention of sum of roots or product",
+        "Mentions conjugate",
+        "A factor written"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "Use De Moivre’s theorem to solve the equation z³ = 4 + 4√3i. Give each of your solutions in the form r(cos θ + i sin θ), where r ∈ ℕ and 0 ≤ θ ≤ 2π.",
+      "solutionQuotes": [
+        "Relevant diagram drawn",
+        "One solution in required form"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "questionText": "Prove by induction that 13ⁿ − 1 is divisible by 12 for all n ∈ ℕ.",
+      "solutionQuotes": [
+        "Omits conclusion but otherwise"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q4-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q4-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "f(x) = x³ − (k² + 1)x + k, where x, k ∈ ℝ.",
+      "questionText": "Show that f(k) = 0.",
+      "solutionQuotes": [
+        "Fully correct substitution"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q4-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q4-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Show that x = 10 is a root of the following equation, where x ∈ ℝ, and hence find the other two roots, in the form p ± √q, where p, q ∈ ℤ: x³ − 101x + 10 = 0.",
+      "solutionQuotes": [
+        "First cycle of long division correct",
+        "Only 1 of the irrational roots listed"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q4-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q4-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q5-a-i-ii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "In this question part, p and q ∈ ℚ.",
+      "questionText": "(i) The following three terms are in arithmetic sequence: p, q, and 1/4. Write q in terms of p. (ii) The following three terms are in geometric sequence: p, 1/4, and q. Write q in terms of p.",
+      "solutionQuotes": [
+        "(i) or (ii) correct"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q5-a-i-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q5-a-i-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q5-a-iii",
+      "printedParts": [
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "In this question part, p and q ∈ ℚ. The terms p, q, 1/4 are in arithmetic sequence; the terms p, 1/4, q are in geometric sequence.",
+      "questionText": "Using your results from part (i) and part (ii), find the values of p.",
+      "solutionQuotes": [
+        "Some use of previous answers"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q5-a-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q5-a-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "questionText": "The general term of another sequence is uₙ = n[(n − 2)!] for all n ≥ 2, n ∈ ℕ. Show that uₙ₊₁ = (n − 1)uₙ + (n − 1)!",
+      "solutionQuotes": [
+        "Proves true for a particular case"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "The function g is defined as follows, for x ∈ ℝ: g: x ↦ 4x³ − 40x² + 77x. Use calculus to find the co-ordinates of the local minimum point of g and the point of inflection of g.",
+      "solutionQuotes": [
+        "Minimum Point or inflection point"
+      ],
+      "markingNote": "This task explicitly prints 15D (0,5,8,12,15). Its 5-mark low-partial band overrides the general table’s 4-mark band; every published numeric award is retained.",
+      "figureKey": "maths-2023-hl-p1-deferred-q6-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q6-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+      "questionText": "Find f(5).",
+      "solutionQuotes": [
+        "Fully correct substitution",
+        "Fully correct integration"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q6-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q6-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+      "questionText": "Find the minimum value of f(a).",
+      "solutionQuotes": [
+        "Some correct integration",
+        "Some correct substitution of both limits",
+        "Fully correct integration"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q6-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q6-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+      "questionText": "The table below shows some details on how the balance of the debt of €20 000 is reduced over the first four months. At the end of each month, interest of 0·526% on the previous month’s balance is calculated – for example, the interest at the end of month 1 is €105·20. This interest is paid out of Caoimhe’s €389·56 monthly payment; the remainder of the €389·56 is then paid off the outstanding balance. Complete the table.",
+      "solutionQuotes": [
+        "3 correct new entries",
+        "6 correct new entries"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q7-a-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-a-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+      "questionText": "Find the amount that Caoimhe still owes at the end of the first two years of making repayments by finding the sum of the present values of the remaining 36 payments on the loan.",
+      "solutionQuotes": [
+        "Series correctly formulated"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q7-b-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-b-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "questionText": "Find, correct to 1 decimal place, the annual percentage rate (APR) that is equivalent to a monthly interest rate of 0·526%.",
+      "solutionQuotes": [
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q7-c-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-c-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+      "questionText": "Find the monthly interest rate that is equivalent to an APR of 5·53%. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q7-d-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-d-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+      "questionText": "Find the amount that Caoimhe repays each month on the new 1-year loan.",
+      "solutionQuotes": [
+        "Some relevant substitution into",
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q7-d-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-d-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "A sum of money, €A, is invested in a fund and is withdrawn after t years, where t ∈ ℕ. The money is invested at a fixed APR of 6·75%. Find the least value of t needed so that the investment will amount to more than €2A when it is withdrawn from the fund.",
+      "solutionQuotes": [
+        "Accept correct answer verified",
+        "Formula in"
+      ],
+      "markingNote": "The threshold is about 10.61164 years; because t is a whole number and the investment must exceed €2A, the least valid t is 11.",
+      "figureKey": "maths-2023-hl-p1-deferred-q7-e-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q7-e-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+      "questionText": "Find A, the area of triangle XYZ, in terms of l and m.",
+      "solutionQuotes": [
+        "Some correct substitution into a",
+        "Recognition of 90° angle in semi-"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+      "questionText": "Express l + m in terms of P and d.",
+      "solutionQuotes": [
+        "Some understanding of perimeter",
+        "Some relevant substitution"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+      "questionText": "Using the identity l² + m² = (l + m)² − 2lm, or otherwise, show that d = (P² − 4A)/(2P).",
+      "solutionQuotes": [
+        "Some use of Pythagoras",
+        "Some use of given identity"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-a-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Part (a)(iii): d = (P² − 4A)/(2P).",
+      "questionText": "Given that A = 120 cm² and P = 60 cm, use the result from part (a)(iii) to find the radius of the semi-circle.",
+      "solutionQuotes": [
+        "Any relevant substitution",
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-a-iv-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-iv-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm.",
+      "questionText": "Show that r satisfies the equation r² − 10r + 16 = 0, and find the roots of this equation.",
+      "solutionQuotes": [
+        "Relevant substitution into area of",
+        "Relevant substitution into perimeter",
+        "Any two from the MPC list"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm. From part (i), r satisfies r² − 10r + 16 = 0.",
+      "questionText": "Find the corresponding values of β and explain why only one value is valid in the context of the question.",
+      "solutionQuotes": [
+        "8 radians is not valid as it is more than 1 full",
+        "reason"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q8-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q8-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+      "questionText": "(i) Find the number of trout in the lake when it was first stocked. (ii) Find the approximate number of trout in the lake at the end of month 10.",
+      "solutionQuotes": [
+        "Some correct substitution into",
+        "(i) or (ii) correct"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q9-a-i-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-i-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+      "questionText": "Show that the number of trout in the lake has a limiting value of 3000.",
+      "solutionQuotes": [
+        "Attempts at showing the limit by"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q9-a-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-functions"
+      ],
+      "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+      "questionText": "Month n is the first month when the number of trout in the lake had risen above 2650. Find the value of n.",
+      "solutionQuotes": [
+        "Full Credit -1:"
+      ],
+      "markingNote": "The source prints 5C (0,2,3,5) but lists Low, Mid and High Partial Credit descriptions. Its numeric awards are preserved. The extra Mid description has no distinct numeric award; no substitute official allocation is invented.",
+      "figureKey": "maths-2023-hl-p1-deferred-q9-a-iv-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-iv-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+      "questionText": "Find in terms of t, the rate at which the number of trout in the lake is increasing.",
+      "solutionQuotes": [
+        "Quotient rule correctly applied",
+        "Chain rule correctly applied but"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q9-a-v-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-v-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+      "questionText": "Complete the table below (round each value to the nearest whole number). t: 0, 1, 2, 3, 4, 5, 6, 7, 8. P(t): 400, blank, blank, blank, blank, 2700, blank, blank, blank.",
+      "solutionQuotes": [
+        "One correct new entry",
+        "4 correct new entries"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q9-b-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked. N(t) = 3000/(1 + 6·5e^(−0·814t)).",
+      "questionText": "Draw the graph of P(t) in the domain 0 ≤ t ≤ 8, t ∈ ℝ on the grid below. Note: The graph of N(t) is already plotted on the grid.",
+      "solutionQuotes": [
+        "One correct new plot",
+        "4 correct new plots"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q9-b-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24,
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+      "questionText": "By referencing the graphs, describe one similarity and one difference between the two models.",
+      "solutionQuotes": [
+        "One correct similarity or difference"
+      ],
+      "markingNote": "Use a mathematically valid comparison. The source’s t=5 comparison confuses population size with growth rate. Both models increase towards 3000; N initially becomes steeper then flattens, while P flattens throughout. This explanation is NextStepUni’s correction; the original SEC credit notes are retained.",
+      "figureKey": "maths-2023-hl-p1-deferred-q9-b-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+      "questionText": "Find the distance |BD|, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Recognises Pythagoras",
+        "Pythagoras fully substituted"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+      "questionText": "Show that the total length of the wire (from B to E to D) is √(x² + 49) + √(x² − 50x + 794).",
+      "solutionQuotes": [
+        "Some correct substitution into"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-a-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-ii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+      "questionText": "Find the two possible values of x for which ∠BED is a right angle. Give each answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Mid Partial Credit:",
+        "High Partial Credit:"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-a-iii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-iii-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "In the right-angled triangle ABE, |AB| = 7 m and |AE| = x m. The right angle is at A.",
+      "questionText": "Part of the same diagram is shown on the right. As the distance x increases, so does the distance |BE|. x is increasing at a rate of 4 m per second. Find the rate at which the distance |BE| is increasing at the instant when the triangle ABE is isosceles. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Any relevant derivative",
+        "2∙8 m/s"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y.",
+      "questionText": "Show that x² = 144 − y².",
+      "solutionQuotes": [
+        "Recognises Pythagoras"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-c-i-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-c-i-question"
+    },
+    {
+      "id": "maths-2023-hl-p1-deferred-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y. Part (i): x² = 144 − y².",
+      "questionText": "Write the volume of the cylinder in terms of y and hence find the volume of the largest right circular cylinder that fits inside a sphere of radius 12 cm. Give your answer correct to the nearest cm³.",
+      "solutionQuotes": [
+        "Some correct substitution into"
+      ],
+      "figureKey": "maths-2023-hl-p1-deferred-q10-c-ii-solution",
+      "questionFigureKey": "maths-2023-hl-p1-deferred-q10-c-ii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained for practice."
+    },
+    {
+      "pages": [
+        7,
+        21
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required task, not a finite choice of questions."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "a pair of real values",
+      "classification": "open-answer",
+      "reason": "One pair satisfying the log identity, not a finite list of choices."
+    },
+    {
+      "pages": [
+        27
+      ],
+      "wording": "one similarity and one difference",
+      "classification": "required-headings",
+      "reason": "Two required aspects of one holistic 5-mark comparison; no finite alternatives printed."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "All questions retained irrespective of exam selection."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "All questions retained irrespective of exam selection."
+    },
+    "4:171223722496f51d": {
+      "classification": "exam-level-selection",
+      "reason": "All questions retained irrespective of exam selection."
+    },
+    "7:e463c2511480828a": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required task."
+    },
+    "16:34d5d2ff0c42cbc9": {
+      "classification": "exam-level-selection",
+      "reason": "All questions retained irrespective of exam selection."
+    },
+    "21:19b99c6b97b7f4ba": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required task."
+    }
+  }
+}

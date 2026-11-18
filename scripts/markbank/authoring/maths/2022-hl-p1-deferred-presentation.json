@@ -1,0 +1,1384 @@
+{
+  "questionSha256": "0ac8607d9f9d12b8f27bb3db8cf74f32898d2d3a6ea5ebb3de6316caf8b477ce",
+  "solutionSha256": "c3915e6641f6ee152fa5efb0836d9dd5bbe697ca071131cdea55a6306295cba3",
+  "tasks": {
+    "maths-2022-hl-p1-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          138,
+          548,
+          185
+        ]
+      ],
+      "solution": [
+        [
+          5,
+          55,
+          179.52,
+          542,
+          353.46
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          347,
+          548,
+          402
+        ]
+      ],
+      "solution": [
+        [
+          5,
+          55,
+          353.46,
+          542,
+          680
+        ]
+      ],
+      "sourceNote": "The question requires De Moivre’s theorem. The SEC notes require polar form for any credit and the full requested form 0+5832 i; writing only 5832 i is listed under Full Credit −1."
+    },
+    "maths-2022-hl-p1-deferred-q1-c": {
+      "question": [
+        [
+          5,
+          50,
+          55,
+          548,
+          430
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          56.7,
+          542,
+          294
+        ]
+      ],
+      "supplement": "venn-2022-hl-deferred",
+      "supplementAlt": "NextStepUni completed Venn diagram. Real only: √17. Intersection of real numbers and rational-component complex numbers: 2.5 and cos 180°+i sin 180° (=−1). X only: 3 i and 3+2 i. Outside both: π+5 i. All six placements and the original SEC criteria are retained."
+    },
+    "maths-2022-hl-p1-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          96
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          92.04,
+          542,
+          244.56
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          96
+        ],
+        [
+          6,
+          50,
+          250,
+          548,
+          320
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          244.56,
+          542,
+          348.24
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q2-a-iii": {
+      "question": [
+        [
+          6,
+          50,
+          250,
+          548,
+          285
+        ],
+        [
+          6,
+          50,
+          505,
+          548,
+          539
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          348.24,
+          542,
+          686
+        ]
+      ],
+      "sourceNote": "Use non-negative integer witnesses for t=2 m+1 and tᵏ=2 h+1, so the case t=1 is included. The inductive product is 2(2 hm+h+m)+1, which is odd. The three proof stages form one 10D task."
+    },
+    "maths-2022-hl-p1-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          50,
+          295,
+          548,
+          357
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          78.6,
+          542,
+          256
+        ]
+      ],
+      "sourceNote": "Combine over x(3 x−5) to get (30−16 x)/[x(3 x−5)]. The original expression is defined only for x≠0 and x≠5/3."
+    },
+    "maths-2022-hl-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          147
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          70.62,
+          542,
+          415.38
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          50,
+          301,
+          548,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          415.38,
+          542,
+          592
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          50,
+          54,
+          548,
+          138
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          54,
+          542,
+          554
+        ]
+      ],
+      "sourceNote": "The complete solution is x≤7/11 or x>3/2. Include 7/11, where equality holds, and exclude 3/2, where the denominator is zero."
+    },
+    "maths-2022-hl-p1-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          169
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          70.62,
+          542,
+          315.18
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q4-b": {
+      "question": [
+        [
+          11,
+          50,
+          55,
+          548,
+          142
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          315.18,
+          542,
+          486.36
+        ]
+      ],
+      "sourceNote": "The full-credit composition is h(g(x))=10 x²−5 x+22. The source’s reference to g(h(x)) appears only in its high-partial-credit notes; it is not the requested composition."
+    },
+    "maths-2022-hl-p1-deferred-q4-c": {
+      "question": [
+        [
+          11,
+          50,
+          354,
+          548,
+          644
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          486.36,
+          542,
+          562
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          155
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          70.62,
+          542,
+          171.3
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q5-b": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          131
+        ],
+        [
+          12,
+          50,
+          283,
+          548,
+          311
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          171.3,
+          542,
+          282.18
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q5-c": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          131
+        ],
+        [
+          12,
+          50,
+          437,
+          548,
+          517
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          282.18,
+          542,
+          449.34
+        ]
+      ],
+      "sourceNote": "The scheme uses k in its working, but the requested variable is x. Solving gives eˣ=4/7 and x=ln 4−ln 7."
+    },
+    "maths-2022-hl-p1-deferred-q5-d": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          131
+        ],
+        [
+          13,
+          50,
+          57,
+          548,
+          141
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          449.34,
+          542,
+          683
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q6-a-i-ii-iii": {
+      "question": [
+        [
+          14,
+          50,
+          76,
+          548,
+          211
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          70.62,
+          542,
+          385.62
+        ]
+      ],
+      "sourceNote": "All three points share one 20D award: local minimum (4,−29), local maximum (0,3), and point of inflection (2,−13). Keep the complete calculus working and select one overall award."
+    },
+    "maths-2022-hl-p1-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          50,
+          55,
+          548,
+          358
+        ],
+        [
+          15,
+          50,
+          370,
+          548,
+          391
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          385.62,
+          542,
+          486.42
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          50,
+          55,
+          548,
+          358
+        ],
+        [
+          15,
+          50,
+          475,
+          548,
+          496
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          486.42,
+          542,
+          541
+        ]
+      ],
+      "sourceNote": "The graph is not one-to-one: a horizontal line, for example y=3, meets it at three different x-values. Consequently its inverse relation is not a function on the stated domain."
+    },
+    "maths-2022-hl-p1-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          50,
+          140,
+          548,
+          290
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          70.62,
+          542,
+          249
+        ]
+      ],
+      "supplement": "car-table-2022-hl-deferred",
+      "supplementAlt": "NextStepUni corrected table. Years 0,1,2,3,4 have prices €24,000, €18,000, €13,500, €10,125 and €7,593.75. The original SEC table mistakenly labels them 1–5; its price values and official credit notes are retained.",
+      "sourceNote": "The paper starts at Year 0. The scheme’s table has shifted year headings; use years 0–4 for the five prices shown in the worked example."
+    },
+    "maths-2022-hl-p1-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          50,
+          140,
+          548,
+          207
+        ],
+        [
+          16,
+          50,
+          421,
+          548,
+          491
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          269.22,
+          542,
+          374.94
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q7-a-iii": {
+      "question": [
+        [
+          16,
+          50,
+          140,
+          548,
+          207
+        ],
+        [
+          16,
+          50,
+          590,
+          548,
+          625
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          374.94,
+          542,
+          500.88
+        ]
+      ],
+      "sourceNote": "Solve 24000(0.75)ᵖ<1000. The threshold is p>11.047…, so the first whole year is 12."
+    },
+    "maths-2022-hl-p1-deferred-q7-a-iv": {
+      "question": [
+        [
+          16,
+          50,
+          140,
+          548,
+          207
+        ],
+        [
+          17,
+          50,
+          57,
+          548,
+          104
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          500.88,
+          542,
+          620
+        ]
+      ],
+      "sourceNote": "Sum 20 prices, from Year 0 through Year 19. The sum is about €95,695.56, which rounds to €95,700 to the nearest ten euro."
+    },
+    "maths-2022-hl-p1-deferred-q7-b": {
+      "question": [
+        [
+          17,
+          50,
+          345,
+          548,
+          442
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          70.62,
+          542,
+          329.94
+        ]
+      ],
+      "sourceNote": "An average value over ten years is one tenth of the area under P(x), so use (1/10)∫₀¹⁰P(x)dx. The result is about €10,000.58, rounding to €10,001."
+    },
+    "maths-2022-hl-p1-deferred-q7-c": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          548,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          329.94,
+          542,
+          422.16
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q7-d-i": {
+      "question": [
+        [
+          18,
+          50,
+          239,
+          548,
+          345
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          422.16,
+          542,
+          615.9
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q7-d-ii": {
+      "question": [
+        [
+          19,
+          50,
+          55,
+          548,
+          140
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          615.9,
+          542,
+          737
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          381
+        ],
+        [
+          20,
+          50,
+          391,
+          548,
+          472
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          70.62,
+          542,
+          213.78
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          381
+        ],
+        [
+          20,
+          50,
+          488,
+          548,
+          568
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          213.78,
+          542,
+          357.42
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q8-b": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          129
+        ],
+        [
+          21,
+          50,
+          57,
+          548,
+          178
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          357.42,
+          542,
+          558.54
+        ]
+      ],
+      "sourceNote": "The stationary values are approximately 2.4274 and 8.2393; only the first lies in 0<x<6. Its second derivative is negative, so the maximum occurs at x=2.4 cm to one decimal place. The SEC accepts this without endpoint checking."
+    },
+    "maths-2022-hl-p1-deferred-q8-c-i": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          129
+        ],
+        [
+          22,
+          50,
+          56,
+          548,
+          111
+        ],
+        [
+          22,
+          50,
+          121,
+          548,
+          143
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          558.54,
+          542,
+          678
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q8-c-ii": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          129
+        ],
+        [
+          22,
+          50,
+          56,
+          548,
+          111
+        ],
+        [
+          22,
+          50,
+          297,
+          548,
+          524
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          70.62,
+          542,
+          242.34
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q8-c-iii": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          129
+        ],
+        [
+          22,
+          50,
+          56,
+          548,
+          111
+        ],
+        [
+          22,
+          50,
+          539,
+          548,
+          575
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          242.34,
+          542,
+          385.5
+        ]
+      ],
+      "sourceNote": "The polynomial roots are 0,15 and 21, but a real box needs positive height and both base lengths positive. Thus 0<x<15; the endpoints would flatten the box."
+    },
+    "maths-2022-hl-p1-deferred-q8-d": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          548,
+          129
+        ],
+        [
+          23,
+          50,
+          57,
+          548,
+          158
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          385.5,
+          542,
+          677
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q9-a-i": {
+      "question": [
+        [
+          24,
+          50,
+          78,
+          548,
+          223
+        ],
+        [
+          24,
+          50,
+          227,
+          548,
+          259
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          70.62,
+          542,
+          249.78
+        ]
+      ],
+      "supplement": "linear-model-2022-hl-deferred",
+      "supplementAlt": "NextStepUni correction: V(0)=2506 gives b=2506; V(1)=2734 gives a=228. Therefore V(x)=228 x+2506. The source finds 228 but prints 288 in its final expression; original SEC criteria follow.",
+      "sourceNote": "The correct increase is 2734−2506=228. The scheme’s final 288 x is a typo; its preceding calculation correctly gives 228."
+    },
+    "maths-2022-hl-p1-deferred-q9-a-ii": {
+      "question": [
+        [
+          24,
+          50,
+          78,
+          548,
+          223
+        ],
+        [
+          24,
+          50,
+          416,
+          548,
+          464
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          249.78,
+          542,
+          336.6
+        ]
+      ],
+      "supplement": "quadratic-model-2022-hl-deferred",
+      "supplementAlt": "NextStepUni example: V(x)=x²+227 x+2506 gives 2506 at x=0 and 2734 at x=1. The complete family is cx²+(228−c)x+2506 with c≠0. The SEC accepts any valid quadratic; its original credit notes follow."
+    },
+    "maths-2022-hl-p1-deferred-q9-a-iii": {
+      "question": [
+        [
+          24,
+          50,
+          78,
+          548,
+          223
+        ],
+        [
+          25,
+          50,
+          57,
+          548,
+          105
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          336.6,
+          542,
+          526.38
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q9-b": {
+      "question": [
+        [
+          25,
+          50,
+          345,
+          548,
+          445
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          526.38,
+          542,
+          749
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q9-c-i-ii": {
+      "question": [
+        [
+          26,
+          50,
+          57,
+          548,
+          190
+        ],
+        [
+          26,
+          50,
+          291,
+          548,
+          394
+        ],
+        [
+          26,
+          50,
+          395,
+          548,
+          416
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          70.62,
+          542,
+          192.84
+        ]
+      ],
+      "sourceNote": "These two parts share one 5C allocation. The display first changes from 47 to 48 at an average 47.5 km/h. Similarly, 115 to 116 means 115.5 km/h, so D=115.5 T."
+    },
+    "maths-2022-hl-p1-deferred-q9-c-iii": {
+      "question": [
+        [
+          26,
+          50,
+          57,
+          411,
+          154
+        ],
+        [
+          26,
+          420,
+          62,
+          544,
+          171
+        ],
+        [
+          26,
+          50,
+          291,
+          548,
+          394
+        ],
+        [
+          26,
+          50,
+          528,
+          548,
+          584
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          192.84,
+          542,
+          391.02
+        ]
+      ],
+      "sourceNote": "In 20 minutes at 120 km/h, Fred travels 40 km. The new average is 116.5 km/h, so 116.5=(D+40)/(T+1/3)."
+    },
+    "maths-2022-hl-p1-deferred-q9-c-iv": {
+      "question": [
+        [
+          27,
+          50,
+          55,
+          548,
+          223
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          391.02,
+          542,
+          557
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q10-a": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          239
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          70.62,
+          542,
+          227.82
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          95
+        ],
+        [
+          28,
+          50,
+          247,
+          548,
+          535
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          227.82,
+          542,
+          414.9
+        ]
+      ],
+      "sourceNote": "The source uses the rounded 201 cm³ from part(a), giving 51 cm³ of fallen sand. Using the exact initial 64πcm³ still gives h=5.80 cm to two decimal places."
+    },
+    "maths-2022-hl-p1-deferred-q10-c": {
+      "question": [
+        [
+          28,
+          50,
+          542,
+          548,
+          614
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          414.9,
+          542,
+          576.96
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q10-d": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          95
+        ],
+        [
+          29,
+          50,
+          57,
+          355,
+          124
+        ],
+        [
+          29,
+          376,
+          55,
+          545,
+          220
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          576.96,
+          542,
+          738
+        ]
+      ]
+    },
+    "maths-2022-hl-p1-deferred-q10-e": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          95
+        ],
+        [
+          29,
+          50,
+          57,
+          355,
+          105
+        ],
+        [
+          29,
+          376,
+          55,
+          545,
+          220
+        ],
+        [
+          29,
+          50,
+          258,
+          548,
+          312
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          100.08,
+          542,
+          440.28
+        ]
+      ],
+      "sourceNote": "The final unit printed on the paper is a typo: radius changes in cm/s, not cm³/s. Here H=3 R and V=πR³; at V=8π, R=2. Therefore dR/dt=−1/(4π)cm/s, a decrease of 1/(4π)cm/s."
+    },
+    "maths-2022-hl-p1-deferred-q10-f-i-ii": {
+      "question": [
+        [
+          30,
+          50,
+          55,
+          548,
+          253
+        ],
+        [
+          30,
+          50,
+          380,
+          548,
+          415
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          440.28,
+          542,
+          561
+        ]
+      ],
+      "sourceNote": "Both parts share one 10 Caward. The slant height is 4√10 cm. The sector’s arc is the cone’s base circumference 8π, so θ=360/√10≈114°."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        120,
+        5,
+        760
+      ],
+      "scheme": [
+        5,
+        157,
+        6,
+        294
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        55,
+        7,
+        760
+      ],
+      "scheme": [
+        7,
+        78,
+        8,
+        256
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        55,
+        9,
+        760
+      ],
+      "scheme": [
+        9,
+        55,
+        10,
+        554
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        55,
+        11,
+        760
+      ],
+      "scheme": [
+        11,
+        55,
+        11,
+        562
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        55,
+        13,
+        760
+      ],
+      "scheme": [
+        12,
+        55,
+        12,
+        683
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        55,
+        15,
+        760
+      ],
+      "scheme": [
+        13,
+        55,
+        13,
+        541
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        120,
+        19,
+        760
+      ],
+      "scheme": [
+        14,
+        55,
+        15,
+        737
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        55,
+        23,
+        760
+      ],
+      "scheme": [
+        16,
+        55,
+        17,
+        677
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        55,
+        27,
+        760
+      ],
+      "scheme": [
+        18,
+        55,
+        19,
+        557
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        55,
+        30,
+        760
+      ],
+      "scheme": [
+        20,
+        55,
+        21,
+        561
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "Visually inspected all 96 question and solution images, including four worked supplements. Corrected and individually re-inspected Q4(c), Q8(d), Q9(c)(iii), Q10(d), and Q10(e) question crops to retain complete diagrams and remove partial answer boxes. Every printed task and all scheme credit notes retained.",
+  "atlasInspectionNote": "Visually swept all 32 paper pages and P1 scheme pages 1–21; cross-checked all ten whole-question paper and scheme boundaries, including multi-page context. All 48 separately marked tasks reconciled to the published allocations; Q6(a)(i–iii), Q9(c)(i–ii), and Q10(f)(i–ii) remain shared tasks."
+}

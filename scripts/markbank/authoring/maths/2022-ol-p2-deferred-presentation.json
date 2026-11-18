@@ -1,0 +1,1610 @@
+{
+  "questionSha256": "b8bca6279ae95456b7894ffd952de5651efbbb2113db99175e784f05df2da020",
+  "solutionSha256": "fca7c725b02521ffb8463ad1b29f518b1d3905839d5ca50ab5a065cae42ee1f7",
+  "tasks": {
+    "maths-2022-ol-p2-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          147,
+          548,
+          331
+        ],
+        [
+          4,
+          50,
+          341,
+          548,
+          413
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          50,
+          176.8,
+          548,
+          433.37
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          147,
+          548,
+          331
+        ],
+        [
+          4,
+          50,
+          428,
+          548,
+          449
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          50,
+          433.37,
+          548,
+          744
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q1-c": {
+      "question": [
+        [
+          4,
+          50,
+          147,
+          548,
+          331
+        ],
+        [
+          4,
+          50,
+          576,
+          548,
+          597
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          50,
+          78.03,
+          548,
+          322.1
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q1-d": {
+      "question": [
+        [
+          4,
+          50,
+          147,
+          548,
+          331
+        ],
+        [
+          4,
+          50,
+          428,
+          548,
+          449
+        ],
+        [
+          4,
+          50,
+          576,
+          548,
+          597
+        ],
+        [
+          5,
+          50,
+          55,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          50,
+          322.1,
+          548,
+          612
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q2-a": {
+      "question": [
+        [
+          6,
+          50,
+          74,
+          548,
+          339
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          50,
+          98.78,
+          548,
+          420.87
+        ]
+      ],
+      "sourceNote": "The line h²=25 in the original solution is a typo. From 3²+h²=5², h²=25−9=16, so h=4 cm and the area is 9×4=36 cm²."
+    },
+    "maths-2022-ol-p2-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          50,
+          55,
+          548,
+          381
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          50,
+          420.87,
+          548,
+          732
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q3-a-i": {
+      "question": [
+        [
+          8,
+          50,
+          74,
+          548,
+          117
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          50,
+          119.53,
+          548,
+          460.37
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q3-a-ii": {
+      "question": [
+        [
+          8,
+          50,
+          74,
+          548,
+          94
+        ],
+        [
+          8,
+          50,
+          299,
+          548,
+          321
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          50,
+          460.37,
+          548,
+          668
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q3-b-i": {
+      "question": [
+        [
+          9,
+          50,
+          53,
+          548,
+          262
+        ],
+        [
+          9,
+          50,
+          269,
+          548,
+          290
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          50,
+          78.03,
+          548,
+          358.85
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q3-b-ii": {
+      "question": [
+        [
+          9,
+          50,
+          53,
+          548,
+          262
+        ],
+        [
+          9,
+          50,
+          417,
+          548,
+          454
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          50,
+          358.85,
+          548,
+          590
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          243
+        ],
+        [
+          10,
+          50,
+          254,
+          548,
+          275
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          50,
+          78.03,
+          574,
+          245.08
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q4-b": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          243
+        ],
+        [
+          10,
+          50,
+          375,
+          548,
+          394
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          50,
+          245.08,
+          574,
+          427.12
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q4-c": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          243
+        ],
+        [
+          10,
+          50,
+          495,
+          548,
+          514
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          50,
+          427.12,
+          574,
+          640
+        ]
+      ],
+      "sourceNote": "The SEC accepts either quartile convention shown: Q₁=144.5, Q₃=155.5 gives IQR=11 cm; Q₁=143, Q₃=155 gives IQR=12 cm. Use one convention consistently."
+    },
+    "maths-2022-ol-p2-deferred-q4-d": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          243
+        ],
+        [
+          11,
+          50,
+          53,
+          548,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          50,
+          78.03,
+          574,
+          334.85
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q4-e": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          548,
+          243
+        ],
+        [
+          11,
+          50,
+          53,
+          548,
+          75
+        ],
+        [
+          11,
+          50,
+          237,
+          548,
+          287
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          50,
+          334.85,
+          574,
+          580
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          145
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          50,
+          78.03,
+          548,
+          252.33
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q5-b-i-ii": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          124
+        ],
+        [
+          12,
+          50,
+          246,
+          548,
+          300
+        ],
+        [
+          12,
+          50,
+          429,
+          548,
+          448
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          50,
+          252.33,
+          548,
+          703
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q5-c": {
+      "question": [
+        [
+          12,
+          50,
+          76,
+          548,
+          124
+        ],
+        [
+          13,
+          50,
+          55,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          50,
+          78.03,
+          548,
+          392.62
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q5-d": {
+      "question": [
+        [
+          13,
+          50,
+          216,
+          548,
+          308
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          50,
+          392.62,
+          548,
+          628
+        ]
+      ],
+      "sourceNote": "Two losses cost €4 and one win adds €3 to the starting €7: €7−€4+€3=€6. The returned €2 stake is not an additional profit."
+    },
+    "maths-2022-ol-p2-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          50,
+          76,
+          548,
+          493
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          50,
+          78.03,
+          548,
+          392.37
+        ]
+      ],
+      "supplement": "centroid-2022-ol-deferred",
+      "supplementAlt": "NextStepUni compass-and-straightedge centroid construction using the exact proportions of the printed triangle: construct two side midpoints M and N, then join opposite vertices to them. The medians intersect at G. Construction arcs, bisectors and original SEC notes are retained."
+    },
+    "maths-2022-ol-p2-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          548,
+          264
+        ],
+        [
+          15,
+          50,
+          279,
+          548,
+          300
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          50,
+          392.37,
+          548,
+          463.62
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          548,
+          264
+        ],
+        [
+          15,
+          50,
+          398,
+          548,
+          420
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          50,
+          463.62,
+          548,
+          730.73
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q6-b-iii": {
+      "question": [
+        [
+          15,
+          50,
+          53,
+          548,
+          264
+        ],
+        [
+          15,
+          50,
+          602,
+          548,
+          624
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          50,
+          730.73,
+          548,
+          771
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          50,
+          139,
+          548,
+          373
+        ],
+        [
+          16,
+          50,
+          386,
+          548,
+          406
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          50,
+          98.78,
+          548,
+          365.1
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          50,
+          139,
+          548,
+          373
+        ],
+        [
+          16,
+          50,
+          507,
+          548,
+          540
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          50,
+          365.1,
+          548,
+          674
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-a-iii-iv": {
+      "question": [
+        [
+          16,
+          50,
+          139,
+          548,
+          373
+        ],
+        [
+          16,
+          50,
+          641,
+          548,
+          718
+        ],
+        [
+          17,
+          50,
+          53,
+          548,
+          405
+        ],
+        [
+          17,
+          50,
+          433,
+          548,
+          452
+        ],
+        [
+          17,
+          50,
+          495,
+          548,
+          515
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          50,
+          78.03,
+          548,
+          760
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-a-v": {
+      "question": [
+        [
+          16,
+          50,
+          139,
+          548,
+          373
+        ],
+        [
+          17,
+          50,
+          600,
+          548,
+          619
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          50,
+          78.03,
+          548,
+          228.33
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-b-i": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          548,
+          332
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          50,
+          228.33,
+          548,
+          379.1
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-b-ii": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          548,
+          374
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          50,
+          379.1,
+          548,
+          590
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q7-b-iii": {
+      "question": [
+        [
+          18,
+          50,
+          55,
+          548,
+          160
+        ],
+        [
+          18,
+          50,
+          558,
+          548,
+          608
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          50,
+          78.03,
+          548,
+          322
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          19,
+          50,
+          74,
+          548,
+          140
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          50,
+          78.03,
+          548,
+          236.83
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          19,
+          50,
+          74,
+          548,
+          140
+        ],
+        [
+          19,
+          50,
+          236,
+          548,
+          287
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          50,
+          236.83,
+          548,
+          623
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-a-iii": {
+      "question": [
+        [
+          19,
+          50,
+          74,
+          548,
+          140
+        ],
+        [
+          19,
+          50,
+          236,
+          548,
+          287
+        ],
+        [
+          19,
+          50,
+          413,
+          548,
+          485
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          50,
+          78.03,
+          548,
+          346.85
+        ]
+      ],
+      "sourceNote": "The interval is 32.8%–40.8%, which contains 34%. Fail to reject the journalist’s claim at the 5% level: the sample does not provide sufficient evidence against it. This does not prove that 34% is the true population percentage."
+    },
+    "maths-2022-ol-p2-deferred-q8-b-i": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          20,
+          50,
+          308,
+          548,
+          343
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          50,
+          346.85,
+          548,
+          544.9
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-b-ii": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          20,
+          50,
+          386,
+          548,
+          405
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          50,
+          544.9,
+          548,
+          672
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-b-iii": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          20,
+          50,
+          534,
+          548,
+          631
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          50,
+          78.03,
+          548,
+          225.33
+        ]
+      ],
+      "sourceNote": "Choose 1: it is the closest of the five offered values to the strong positive correlation in these data. The actual correlation is not exactly 1."
+    },
+    "maths-2022-ol-p2-deferred-q8-b-iv": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          21,
+          50,
+          53,
+          548,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          50,
+          225.33,
+          548,
+          489.4
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q8-b-v": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          21,
+          50,
+          257,
+          548,
+          314
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          50,
+          489.4,
+          548,
+          691
+        ]
+      ],
+      "supplement": "shoe-estimate-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstructed scatter plot with all 20 shoe-size and height pairs. A reasonable by-eye line gives shoe size about 9.3 at 178 cm, within the original example of 9–9.5. Dashed reading lines, labels and original SEC notes are included."
+    },
+    "maths-2022-ol-p2-deferred-q8-b-vi": {
+      "question": [
+        [
+          20,
+          50,
+          53,
+          548,
+          298
+        ],
+        [
+          21,
+          50,
+          257,
+          548,
+          278
+        ],
+        [
+          21,
+          50,
+          442,
+          548,
+          477
+        ]
+      ],
+      "solution": [
+        [
+          46,
+          50,
+          78.03,
+          548,
+          327
+        ]
+      ],
+      "sourceNote": "The mean rises from 3410/20=170.5 cm to (3410+178)/21≈170.857 cm. The median remains 172 cm, so the mean has the bigger increase."
+    },
+    "maths-2022-ol-p2-deferred-q9-a": {
+      "question": [
+        [
+          22,
+          50,
+          76,
+          548,
+          478
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          50,
+          78.03,
+          548,
+          585
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q9-b": {
+      "question": [
+        [
+          22,
+          50,
+          76,
+          548,
+          478
+        ],
+        [
+          23,
+          50,
+          55,
+          548,
+          125
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          50,
+          78.03,
+          548,
+          308.85
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q9-c-i": {
+      "question": [
+        [
+          23,
+          50,
+          55,
+          548,
+          89
+        ],
+        [
+          23,
+          50,
+          281,
+          548,
+          385
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          50,
+          308.85,
+          548,
+          658
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q9-c-ii": {
+      "question": [
+        [
+          24,
+          50,
+          55,
+          548,
+          125
+        ]
+      ],
+      "solution": [
+        [
+          49,
+          50,
+          78.03,
+          548,
+          246.33
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q9-c-iii": {
+      "question": [
+        [
+          24,
+          50,
+          89,
+          548,
+          125
+        ],
+        [
+          24,
+          50,
+          278,
+          548,
+          553
+        ]
+      ],
+      "solution": [
+        [
+          49,
+          50,
+          246.33,
+          548,
+          596
+        ]
+      ],
+      "sourceNote": "The full width includes the 3 cm overlap: a=170 cm and b=28π+3≈90.96 cm, rounded to 91 cm."
+    },
+    "maths-2022-ol-p2-deferred-q9-d": {
+      "question": [
+        [
+          25,
+          50,
+          55,
+          548,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          50,
+          50,
+          78.03,
+          548,
+          355
+        ]
+      ],
+      "sourceNote": "Keep full precision between steps: l=√(14²+22²)=√680≈26.1 cm, and curved area=14π√680≈1146.9 cm². The original scheme uses the already-rounded 26.1 cm to obtain 1147.9 cm²; its route and marking guidance are retained below."
+    },
+    "maths-2022-ol-p2-deferred-q10-a-i": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          305,
+          548,
+          327
+        ]
+      ],
+      "solution": [
+        [
+          51,
+          50,
+          78.03,
+          548,
+          227.33
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-a-ii": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          305,
+          548,
+          327
+        ],
+        [
+          26,
+          50,
+          425,
+          548,
+          446
+        ]
+      ],
+      "solution": [
+        [
+          51,
+          50,
+          227.33,
+          548,
+          323.1
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-b": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          545,
+          548,
+          587
+        ]
+      ],
+      "solution": [
+        [
+          51,
+          50,
+          323.1,
+          548,
+          541.15
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-c": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          545,
+          548,
+          587
+        ],
+        [
+          27,
+          50,
+          53,
+          548,
+          90
+        ]
+      ],
+      "solution": [
+        [
+          51,
+          50,
+          541.15,
+          548,
+          745
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-d": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          27,
+          50,
+          216,
+          548,
+          253
+        ]
+      ],
+      "solution": [
+        [
+          52,
+          50,
+          78.03,
+          548,
+          296.08
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-e-i": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          545,
+          548,
+          587
+        ],
+        [
+          27,
+          50,
+          437,
+          548,
+          521
+        ]
+      ],
+      "solution": [
+        [
+          52,
+          50,
+          296.08,
+          548,
+          463.12
+        ]
+      ],
+      "supplement": "enlargement-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstruction of the original labelled triangles. Extend AD, BE and CF backwards to their common point (0,6), the centre of enlargement. All six original co-ordinates, axes and SEC credit notes remain included."
+    },
+    "maths-2022-ol-p2-deferred-q10-e-ii": {
+      "question": [
+        [
+          26,
+          50,
+          74,
+          548,
+          298
+        ],
+        [
+          26,
+          50,
+          545,
+          548,
+          587
+        ],
+        [
+          27,
+          50,
+          216,
+          548,
+          253
+        ],
+        [
+          27,
+          50,
+          437,
+          548,
+          472
+        ],
+        [
+          27,
+          50,
+          538,
+          548,
+          573
+        ]
+      ],
+      "solution": [
+        [
+          52,
+          50,
+          463.12,
+          548,
+          632
+        ]
+      ]
+    },
+    "maths-2022-ol-p2-deferred-q10-f": {
+      "question": [
+        [
+          28,
+          50,
+          53,
+          548,
+          321
+        ]
+      ],
+      "solution": [
+        [
+          53,
+          50,
+          78.03,
+          548,
+          572
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        122,
+        5,
+        314
+      ],
+      "scheme": [
+        29,
+        155.3,
+        30,
+        612
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        55,
+        7,
+        675
+      ],
+      "scheme": [
+        31,
+        77.28,
+        31,
+        732
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        55,
+        9,
+        635
+      ],
+      "scheme": [
+        32,
+        98.03,
+        33,
+        590
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        55,
+        11,
+        488
+      ],
+      "scheme": [
+        34,
+        56.78,
+        35,
+        580
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        55,
+        13,
+        489
+      ],
+      "scheme": [
+        36,
+        56.78,
+        37,
+        628
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        55,
+        15,
+        721
+      ],
+      "scheme": [
+        38,
+        56.78,
+        38,
+        771
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        119,
+        18,
+        733
+      ],
+      "scheme": [
+        39,
+        77.28,
+        42,
+        322
+      ]
+    },
+    "8": {
+      "paper": [
+        19,
+        55,
+        21,
+        684
+      ],
+      "scheme": [
+        43,
+        56.78,
+        46,
+        327
+      ]
+    },
+    "9": {
+      "paper": [
+        22,
+        55,
+        25,
+        588
+      ],
+      "scheme": [
+        47,
+        56.78,
+        50,
+        355
+      ]
+    },
+    "10": {
+      "paper": [
+        26,
+        55,
+        28,
+        502
+      ],
+      "scheme": [
+        51,
+        56.78,
+        53,
+        572
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 106 images visually inspected across five question and seven solution contact sheets. Three clipped question borders (Q1a, Q7a iii–iv, Q10e i) and five solution crops on the two wider table pages were corrected and reinspected. All three reconstructed worked diagrams inspected. Complete context, numeric scales, alternative solutions, graphics and credit notes retained.",
+  "atlasInspectionNote": "All 32 examination pages and scheme pages 1–2 and 25–55 visually swept. Whole-question start/end anchors checked against printed headings, drawing/answer areas and final marking notes. All ten questions map to their exact deferred booklet and scheme."
+}

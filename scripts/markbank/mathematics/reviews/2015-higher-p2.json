@@ -1,0 +1,1140 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "f1b4ca2e64a7867477f6a8f7eba01d189337c116aab0cc78b120552492cfe250",
+  "schemeSha256": "01da919c931eb4b0872f69fad0e769f421412b0144892871c39b9759ebe0d0d2",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual reading of all 20 question PDF pages and combined-scheme PDF pages 35–68. Every printed task checked against model solutions (37–53), the scale table/general notes (54), allocation summary (55) and detailed marking notes (56–64).",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 40,
+    "8": 65,
+    "9": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    54,
+    55
+  ],
+  "sourceNotes": [
+    "All nine questions are required, totalling 300 marks. All 35 tasks are retained. The question booklet has 19 numbered pages plus its back cover.",
+    "Q1(b)(i)+(ii), Q3(c)(i)+(ii) and Q8(f)(i)+(ii) each share one published scale and are one card. Q6(b) is one proof worth 20 marks, assessed by Diagram/Given 5B, Construction 5B and Proof 10C; preserve all three scales within the one task. The general minor-error deduction is applied only once per printed part.",
+    "Paper 2 uses 15C [0,5,12,15], unlike Paper 1. Other bands: 5B [0,2,5], 5C [0,2,4,5], 5D [0,2,3,4,5], 10B [0,5,10], 10C [0,4,8,10], 10D [0,2,5,8,10], 15D [0,4,7,11,15].",
+    "All 35 cards are new. Typeset model solutions and detailed credit notes are combined in solution crops revealed only after the student answers. Prose quotes preserve source wording. Where equation objects extract as disconnected glyphs (Q7(c)(i), Q8(e)(i)/(ii), Q9(d)(i)), the quote identifies the scale while the verified crop carries the complete solution and credit notes.",
+    "Q6(a) preserves original geometry and measurement access. Q7 retains the machine diagram in every dependent task; Q8 retains conditional probabilities and definitions; Q9 retains each relevant golf diagram. Source references use PDF positions; scheme printed page numbers are two less."
+  ],
+  "cards": [
+    {
+      "id": "maths-2015-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and noting the sum of the two numbers thrown. If the sum is 9 or greater it is recorded as a “win” (W). If the sum is 8 or less it is recorded as a “loss” (L).",
+      "questionText": "Complete the table below to show all possible outcomes of the experiment."
+    },
+    {
+      "id": "maths-2015-hl-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and noting the sum of the two numbers thrown. If the sum is 9 or greater it is recorded as a “win” (W). If the sum is 8 or less it is recorded as a “loss” (L).",
+      "questionText": "(i) Find the probability of a win on one throw of the two dice. (ii) Find the probability that each of 3 successive throws of the two dice results in a loss. Give your answer correct to four decimal places."
+    },
+    {
+      "id": "maths-2015-hl-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        56
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and noting the sum of the two numbers thrown. If the sum is 9 or greater it is recorded as a “win” (W). If the sum is 8 or less it is recorded as a “loss” (L).",
+      "questionText": "The experiment is repeated until a total of 3 wins occur. Find the probability that the third win occurs on the tenth throw of the two dice. Give your answer correct to four decimal places."
+    },
+    {
+      "id": "maths-2015-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        38,
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A survey of 100 shoppers, randomly selected from a large number of Saturday supermarket shoppers, showed that the mean shopping spend was €90·45. The standard deviation of this sample was €20·73.",
+      "questionText": "Find a 95% confidence interval for the mean amount spent in a supermarket on that Saturday."
+    },
+    {
+      "id": "maths-2015-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        38,
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A survey of 100 shoppers, randomly selected from a large number of Saturday supermarket shoppers, showed that the mean shopping spend was €90·45. The standard deviation of this sample was €20·73. Part (a): Find a 95% confidence interval for the mean amount spent in a supermarket on that Saturday.",
+      "questionText": "A supermarket has claimed that the mean amount spent by shoppers on a Saturday is €94. Based on the survey, test the supermarket’s claim using a 5% level of significance. Clearly state your null hypothesis, your alternative hypothesis, and your conclusion."
+    },
+    {
+      "id": "maths-2015-hl-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A survey of 100 shoppers, randomly selected from a large number of Saturday supermarket shoppers, showed that the mean shopping spend was €90·45. The standard deviation of this sample was €20·73. Part (b): A supermarket has claimed that the mean amount spent by shoppers on a Saturday is €94. Based on the survey, test the supermarket’s claim using a 5% level of significance. Clearly state your null hypothesis, your alternative hypothesis, and your conclusion.",
+      "questionText": "Find the p-value of the test you performed in part (b) above and explain what this value represents in the context of the question."
+    },
+    {
+      "id": "maths-2015-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The co-ordinates of two points are A(4, −1) and B(7, t). The line l₁: 3x − 4y − 12 = 0 is perpendicular to AB. Find the value of t."
+    },
+    {
+      "id": "maths-2015-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l₁ is 3x − 4y − 12 = 0.",
+      "questionText": "Find, in terms of k, the distance between the point P(10, k) and l₁."
+    },
+    {
+      "id": "maths-2015-hl-p2-q3-c-i",
+      "printedParts": [
+        "Q3(c)(i)",
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        58
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l₁ is 3x − 4y − 12 = 0.",
+      "questionText": "P(10, k) is on a bisector of the angles between the lines l₁ and l₂: 5x + 12y − 20 = 0. (i) Find the possible values of k. (ii) If k > 0, find the distance from P to l₁."
+    },
+    {
+      "id": "maths-2015-hl-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Two circles s and c touch internally at B, as shown. The equation of the circle s is (x − 1)² + (y + 6)² = 360.",
+      "questionText": "Write down the co-ordinates of the centre of s. Write down the radius of s in the form a√10, where a ∈ ℕ."
+    },
+    {
+      "id": "maths-2015-hl-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Two circles s and c touch internally at B, as shown. The equation of the circle s is (x − 1)² + (y + 6)² = 360. The point K is the centre of circle c. The radius of c is one-third the radius of s. The co-ordinates of B are (7, 12).",
+      "questionText": "Find the co-ordinates of K."
+    },
+    {
+      "id": "maths-2015-hl-p2-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Two circles s and c touch internally at B, as shown. The equation of the circle s is (x − 1)² + (y + 6)² = 360. The point K is the centre of circle c. The radius of c is one-third the radius of s. The co-ordinates of B are (7, 12). Part (b)(i): Find the co-ordinates of K.",
+      "questionText": "Find the equation of c."
+    },
+    {
+      "id": "maths-2015-hl-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Two circles s and c touch internally at B, as shown. The equation of the circle s is (x − 1)² + (y + 6)² = 360. The point K is the centre of circle c. The radius of c is one-third the radius of s. The co-ordinates of B are (7, 12).",
+      "questionText": "Find the equation of the common tangent at B. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2015-hl-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        42,
+        60
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that tan(A + B) = (tan A + tan B)/(1 − tan A tan B)."
+    },
+    {
+      "id": "maths-2015-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42,
+        60
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find all the values of x for which sin(3x) = √3/2, 0 ≤ x ≤ 360, x in degrees."
+    },
+    {
+      "id": "maths-2015-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        43,
+        60
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Construct the centroid of the triangle ABC below. Show all construction lines. (Where measurement is used, show all relevant measurements and calculations clearly.)",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 20,
+      "components": [
+        {
+          "id": "diagram-given",
+          "label": "Diagram / Given",
+          "code": "5B",
+          "marks": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "code": "5B",
+          "marks": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "id": "proof",
+          "label": "Proof",
+          "code": "10C",
+          "marks": [
+            0,
+            4,
+            8,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        44,
+        60
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Prove that, if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal line. Complete the sections: Diagram; Given; To Prove; Construction; Proof."
+    },
+    {
+      "id": "maths-2015-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        12,
+        15
+      ],
+      "schemePages": [
+        45,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A flat machine part consists of two circular ends attached to a plate, as shown (diagram not to scale). The sides of the plate, HK and PQ, are tangential to each circle. The larger circle has centre A and radius 4r cm. The smaller circle has centre B and radius r cm. The length of [HK] is 8r cm and |AB| = 20√73 cm.",
+      "questionText": "Find r, the radius of the smaller circle. (Hint: Draw BT ∥ KH, T ∈ AH.)"
+    },
+    {
+      "id": "maths-2015-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        12,
+        15
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A flat machine part consists of two circular ends attached to a plate, as shown (diagram not to scale). The sides of the plate, HK and PQ, are tangential to each circle. The larger circle has centre A and radius 4r cm. The smaller circle has centre B and radius r cm. The length of [HK] is 8r cm and |AB| = 20√73 cm. Part (a): Find r, the radius of the smaller circle. (Hint: Draw BT ∥ KH, T ∈ AH.)",
+      "questionText": "Find the area of the quadrilateral ABKH."
+    },
+    {
+      "id": "maths-2015-hl-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A flat machine part consists of two circular ends attached to a plate, as shown (diagram not to scale). The sides of the plate, HK and PQ, are tangential to each circle. The larger circle has centre A and radius 4r cm. The smaller circle has centre B and radius r cm. The length of [HK] is 8r cm and |AB| = 20√73 cm. Part (a): Find r, the radius of the smaller circle. (Hint: Draw BT ∥ KH, T ∈ AH.)",
+      "questionText": "Find |∠HAP|, in degrees, correct to one decimal place."
+    },
+    {
+      "id": "maths-2015-hl-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        61
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A flat machine part consists of two circular ends attached to a plate, as shown (diagram not to scale). The sides of the plate, HK and PQ, are tangential to each circle. The larger circle has centre A and radius 4r cm. The smaller circle has centre B and radius r cm. The length of [HK] is 8r cm and |AB| = 20√73 cm. Part (a): Find r, the radius of the smaller circle. (Hint: Draw BT ∥ KH, T ∈ AH.) Part (b): Find the area of the quadrilateral ABKH. Part (c)(i): Find |∠HAP|, in degrees, correct to one decimal place.",
+      "questionText": "Find the area of the machine part, correct to the nearest cm²."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw.",
+      "questionText": "Find the probability that Michael is successful (S) with all three of his first three free throws in a game."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw.",
+      "questionText": "Find the probability that Michael is unsuccessful (U) with his first two free throws and successful with the third."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        47,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw.",
+      "questionText": "List all the ways that Michael could be successful with his third free throw in a game and hence find the probability that Michael is successful with his third free throw."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw. Let pₙ be the probability that Michael is successful with his nth free throw in the game (and hence (1 − pₙ) is the probability that Michael is unsuccessful with his nth free throw).",
+      "questionText": "Show that pₙ₊₁ = 0·6 + 0·2pₙ."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw. Let pₙ be the probability that Michael is successful with his nth free throw in the game (and hence (1 − pₙ) is the probability that Michael is unsuccessful with his nth free throw). Part (d)(i): Show that pₙ₊₁ = 0·6 + 0·2pₙ.",
+      "questionText": "Assume that p is Michael’s success rate in the long run; that is, for large values of n, we have pₙ₊₁ ≈ pₙ ≈ p. Using the result from part (d)(i) above, or otherwise, show that p = 0·75."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-e-i",
+      "printedParts": [
+        "Q8(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        62
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw. Let pₙ be the probability that Michael is successful with his nth free throw in the game (and hence (1 − pₙ) is the probability that Michael is unsuccessful with his nth free throw). Part (d)(i): Show that pₙ₊₁ = 0·6 + 0·2pₙ. For all positive integers n, let aₙ = p − pₙ, where p = 0·75 as above.",
+      "questionText": "Use the ratio aₙ₊₁/aₙ to show that aₙ is a geometric sequence with common ratio 1/5."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-e-ii",
+      "printedParts": [
+        "Q8(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw. Let pₙ be the probability that Michael is successful with his nth free throw in the game (and hence (1 − pₙ) is the probability that Michael is unsuccessful with his nth free throw). Part (d)(i): Show that pₙ₊₁ = 0·6 + 0·2pₙ. For all positive integers n, let aₙ = p − pₙ, where p = 0·75 as above. Part (e)(i): Use the ratio aₙ₊₁/aₙ to show that aₙ is a geometric sequence with common ratio 1/5.",
+      "questionText": "Find the smallest value of n for which p − pₙ < 0·00001."
+    },
+    {
+      "id": "maths-2015-hl-p2-q8-f-i",
+      "printedParts": [
+        "Q8(f)(i)",
+        "Q8(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        49,
+        63
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In basketball, players often have to take free throws. When Michael takes his first free throw in any game, the probability that he is successful is 0·7. For all subsequent free throws in the game, the probability that he is successful is: 0·8 if he has been successful on the previous throw; 0·6 if he has been unsuccessful on the previous throw. You arrive at a game in which Michael is playing. You know that he has already taken many free throws, but you do not know what pattern of success he has had.",
+      "questionText": "(i) Based on this knowledge, what is your estimate of the probability that Michael will be successful with his next free throw in the game? (ii) Why would it not be appropriate to consider Michael’s subsequent free throws in the game as a sequence of Bernoulli trials?"
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        50,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Joan is playing golf. She is 150 m from the centre of a circular green of diameter 30 m. The diagram shows the range of directions in which Joan can hit the ball so that it could land on the green. Find α, the measure of the angle of this range of directions. Give your answer, in degrees, correct to one decimal place."
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        50,
+        51,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "At the next hole, Joan, at T, attempts to hit the ball in the direction of the hole H. Her shot is off target and the ball lands at A, a distance of 190 metres from T, where |∠ATH| = 18°. |TH| is 385 metres. Find |AH|, the distance from the ball to the hole, correct to the nearest metre."
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        52,
+        63
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "At another hole, where the ground is not level, Joan hits the ball from K, as shown. The ball lands at B. The height of the ball, in metres, above the horizontal line OB is given by h = −6t² + 22t + 8, where t is the time in seconds after the ball is struck and h is the height of the ball.",
+      "questionText": "Find the height of K above OB."
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        52,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "At another hole, where the ground is not level, Joan hits the ball from K, as shown. The ball lands at B. The height of the ball, in metres, above the horizontal line OB is given by h = −6t² + 22t + 8, where t is the time in seconds after the ball is struck and h is the height of the ball. Part (c)(i): Find the height of K above OB.",
+      "questionText": "The horizontal speed of the ball over the straight distance [OB] is a constant 38 m s⁻¹. Find the angle of elevation of K from B, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        53,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "At a later hole, Joan’s first shot lands at the point G, on ground that is sloping downwards, as shown. A vertical tree, [CE], 25 metres high, stands between G and the hole. The distance, |GC|, from the ball to the bottom of the tree is also 25 metres. The angle of elevation at G to the top of the tree, E, is θ, where θ = tan⁻¹(1/2). The height of the top of the tree above the horizontal, GD, is h metres and |GD| = d metres.",
+      "questionText": "Write d and |CD| in terms of h."
+    },
+    {
+      "id": "maths-2015-hl-p2-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "At a later hole, Joan’s first shot lands at the point G, on ground that is sloping downwards, as shown. A vertical tree, [CE], 25 metres high, stands between G and the hole. The distance, |GC|, from the ball to the bottom of the tree is also 25 metres. The angle of elevation at G to the top of the tree, E, is θ, where θ = tan⁻¹(1/2). The height of the top of the tree above the horizontal, GD, is h metres and |GD| = d metres. Part (d)(i): Write d and |CD| in terms of h.",
+      "questionText": "Hence, or otherwise, find h."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question is required and retained."
+    },
+    {
+      "pages": [
+        13,
+        17
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods of the same task, not a choice of questions."
+    },
+    {
+      "pages": [
+        3,
+        7,
+        8,
+        12,
+        13
+      ],
+      "wording": "all possible outcomes / all values / all construction lines / all the ways / all positive integers",
+      "classification": "all-items-required",
+      "reason": "Required exhaustive work or mathematical domain, not a choose-k pool."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "Every printed question is required and retained."
+    },
+    "3:2e47c275831a2142": {
+      "classification": "all-questions-required",
+      "reason": "Every printed question is required and retained."
+    },
+    "10:0c3dd2b01bf83fa3": {
+      "classification": "all-questions-required",
+      "reason": "Every printed question is required and retained."
+    },
+    "13:1114328c2f43172c": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task."
+    },
+    "17:6adc03527b297b4d": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task."
+    }
+  }
+}

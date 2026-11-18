@@ -57,9 +57,24 @@ def english_deck_cards():
     return legacy + cards
 
 
+def japanese_deck_cards():
+    """Lint the exact served union, including reviewed rubrics and source crops."""
+    from reconcile import shipped_cards
+    served = {cid for cid, _ref in shipped_cards('japanese')}
+    with open(os.path.join(AUTHORED, 'japanese.json')) as fh:
+        cards = {card['id']: card for card in json.load(fh)}
+    with open(os.path.join(DECKS, 'japanese', 'reviewed.json')) as fh:
+        cards.update((card['id'], card) for card in json.load(fh))
+    missing = served - cards.keys()
+    if missing:
+        raise SystemExit(f'cardlint: Japanese served IDs have no source card: {sorted(missing)}')
+    return [cards[cid] for cid in sorted(served)]
+
+
 # A deck whose served cards span several files is read by its own loader.
 DECK_LOADERS = {
     'english': english_deck_cards,
+    'japanese': japanese_deck_cards,
 }
 
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',

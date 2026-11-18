@@ -1,0 +1,394 @@
+{
+  "v": 1,
+  "paperOnly": 1,
+  "paperFileid": "LC098ALP000EV.pdf",
+  "schemeFileid": "",
+  "component": "000",
+  "band": [
+    1,
+    1
+  ],
+  "copyright": "© State Examinations Commission",
+  "q": [
+    {
+      "n": "1",
+      "label": "Section A · Q1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [
+        0.164807,
+        0.345092
+      ],
+      "endP": 2,
+      "endY": 0.345092,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "2",
+      "label": "Section A · Q2",
+      "printOrder": 2,
+      "pP": 2,
+      "pY": [
+        0.345092,
+        0.582954
+      ],
+      "endP": 2,
+      "endY": 0.582954,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "3",
+      "label": "Section A · Q3",
+      "printOrder": 3,
+      "pP": 2,
+      "pY": [
+        0.582954,
+        0.73046
+      ],
+      "endP": 2,
+      "endY": 0.73046,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "4",
+      "label": "Section A · Q4",
+      "printOrder": 4,
+      "pP": 2,
+      "pY": [
+        0.73046,
+        0.914489
+      ],
+      "endP": 2,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "5",
+      "label": "Section A · Q5",
+      "printOrder": 5,
+      "pP": 3,
+      "pY": [
+        0.047373,
+        0.342384
+      ],
+      "endP": 3,
+      "endY": 0.342384,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "6",
+      "label": "Section A · Q6",
+      "printOrder": 6,
+      "pP": 3,
+      "pY": [
+        0.342384,
+        0.571838
+      ],
+      "endP": 3,
+      "endY": 0.571838,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "7",
+      "label": "Section A · Q7",
+      "printOrder": 7,
+      "pP": 3,
+      "pY": [
+        0.571838,
+        0.914489
+      ],
+      "endP": 3,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "8",
+      "label": "Section A · Q8",
+      "printOrder": 8,
+      "pP": 4,
+      "pY": [
+        0.047373,
+        0.325995
+      ],
+      "endP": 4,
+      "endY": 0.325995,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "9",
+      "label": "Section A · Q9",
+      "printOrder": 9,
+      "pP": 4,
+      "pY": [
+        0.325995,
+        0.604617
+      ],
+      "endP": 4,
+      "endY": 0.604617,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "10",
+      "label": "Section A · Q10",
+      "printOrder": 10,
+      "pP": 4,
+      "pY": [
+        0.604617,
+        0.914489
+      ],
+      "endP": 4,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "11",
+      "label": "Section A · Q11",
+      "printOrder": 11,
+      "pP": 5,
+      "pY": [
+        0.047373,
+        0.276826
+      ],
+      "endP": 5,
+      "endY": 0.276826,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "12",
+      "label": "Section A · Q12",
+      "printOrder": 12,
+      "pP": 5,
+      "pY": [
+        0.276826,
+        0.914489
+      ],
+      "endP": 5,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "13",
+      "label": "Section B · Q1",
+      "printOrder": 13,
+      "pP": 6,
+      "pY": [
+        0.132313,
+        0.914489
+      ],
+      "endP": 6,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "14",
+      "label": "Section B · Q2",
+      "printOrder": 14,
+      "pP": 7,
+      "pY": [
+        0.047515,
+        0.393691
+      ],
+      "endP": 7,
+      "endY": 0.393691,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "15",
+      "label": "Section B · Q3",
+      "printOrder": 15,
+      "pP": 7,
+      "pY": [
+        0.393691,
+        0.914489
+      ],
+      "endP": 7,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "16",
+      "label": "Section B · Q4",
+      "printOrder": 16,
+      "pP": 8,
+      "pY": [
+        0.047515,
+        0.428536
+      ],
+      "endP": 8,
+      "endY": 0.428536,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "17",
+      "label": "Section B · Q5",
+      "printOrder": 17,
+      "pP": 8,
+      "pY": [
+        0.428536,
+        0.914489
+      ],
+      "endP": 8,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "18",
+      "label": "Section C · Q1",
+      "printOrder": 18,
+      "pP": 9,
+      "pY": [
+        0.023753,
+        0.914489
+      ],
+      "endP": 9,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "19",
+      "label": "Section C · Q2",
+      "printOrder": 19,
+      "pP": 10,
+      "pY": [
+        0.023753,
+        0.914489
+      ],
+      "endP": 10,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "20",
+      "label": "Section C · Q3",
+      "printOrder": 20,
+      "pP": 11,
+      "pY": [
+        0.023753,
+        0.914489
+      ],
+      "endP": 11,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    }
+  ]
+}

@@ -1,0 +1,1600 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003GLP000EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "tasks": {
+    "1-a-i": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 54,
+          "bottom": 73,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 77,
+          "bottom": 96,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 222,
+          "bottom": 239,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 6,
+          "top": 254,
+          "bottom": 733,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answers with or without work",
+        "Blunders (−3) — Invented total, part (ii)"
+      ],
+      "inspectedQuestionSha256": "a302e86aafaf2fb06b1fd0c62c3901ac2f2b85c7b7e4e4c89ba698ccc604804e",
+      "inspectedSolutionSha256": "47bf4779c4c3dd726e6ef885a914fbd151011d3c62f61da74b9238b11b9b472c"
+    },
+    "1-a-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 54,
+          "bottom": 73,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 100,
+          "bottom": 120,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 238,
+          "bottom": 733,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answers with or without work",
+        "Blunders (−3) — Invented total, part (ii)"
+      ],
+      "inspectedQuestionSha256": "802a56fca1c687ca58ac3e825e441b68f469c5e9ec4c1a623c4a2d28cd45cfc7",
+      "inspectedSolutionSha256": "e086d7b0ff3f7708f117c7a5d878b37a570640464740d67a61595aa100cb1f0c"
+    },
+    "1-b-i": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 136,
+          "bottom": 179,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 158,
+          "bottom": 550,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with or without work",
+        "Slips (−1) — Fails to round-off, method II"
+      ],
+      "inspectedQuestionSha256": "4a1293f24b2c0e2974237df987bf75dd37b1ce014e2eaa34a6e9486b38d14fa5",
+      "inspectedSolutionSha256": "a0b2755a43aaa459b680e0c47d8252204eec32e2d1699e8206c178a7dce09dbd"
+    },
+    "1-b-ii": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 136,
+          "bottom": 215,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 68,
+          "bottom": 416,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 7,
+          "top": 490,
+          "bottom": 550,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Incorrect rounding-off, or fails to round-off",
+        "Attempts — Mentions 105%"
+      ],
+      "inspectedQuestionSha256": "d4e25b75a141325fffed294899c674a1697577336613acf9d3f359b31cbdbaf6",
+      "inspectedSolutionSha256": "c971d59ced2c49ad5171b60239b3cbd24e918e57112ce2a2c4f9612065a9b931"
+    },
+    "1-c-i": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 233,
+          "bottom": 291,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 255,
+          "bottom": 743,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Incorrect rounding-off, or fails to round-off",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "1a9a968fdfe5f3627e861fcf519d35ac90d26466403aade37845b65c6140fe7d",
+      "inspectedSolutionSha256": "63cb5efb8c1a6c5be33aca8a9099d006b15616aacc4a75dbffbb278497929db1"
+    },
+    "1-c-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 233,
+          "bottom": 267,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 296,
+          "bottom": 343,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 68,
+          "bottom": 477,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Incorrect or omitted units",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "25fd2b77ffb58b37d4d0816df52e9a2af32a23ed90b2504ceb28e64f1e30ab49",
+      "inspectedSolutionSha256": "b83a4c013fde66649ca2ead9ab440051cb63233e8693c7e79d7120f6c456f624"
+    },
+    "1-c-iii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 233,
+          "bottom": 267,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 347,
+          "bottom": 422,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 68,
+          "bottom": 521,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Incorrect rounding-off",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "1f0db662b96746797551b2f45d0c88b05b929093fee7ed147087ccfa96ebf795",
+      "inspectedSolutionSha256": "0633ebe75105375d87767cb390e0af7ed40afb967243d1bb169eb6d4bedef65d"
+    },
+    "2-a": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 466,
+          "bottom": 486,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 180,
+          "bottom": 558,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Note correct substitution for a at any point merits 10 marks",
+        "Note — Substitution of 4 for x and then solving for a: Att 3 + 5 marks"
+      ],
+      "inspectedQuestionSha256": "6159d8fa16df4930e33b295d177c2d72645d5bf55d8dc9c97c113c680ec75933",
+      "inspectedSolutionSha256": "b9bf80bb9d4834085de7fc192fc89c9eaa099be98ca5adeaa237a1a5442289df"
+    },
+    "2-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 505,
+          "bottom": 531,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 154,
+          "bottom": 474,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical errors",
+        "Attempts — Correctly lists/tests one element of A"
+      ],
+      "inspectedQuestionSha256": "7bd5c1b777761debdc0be5dd7c3f38705f3b34ca62f2f8f82be57a47b4e69b63",
+      "inspectedSolutionSha256": "6ece50afa5ac1dea893f4ffb7cd0848707e017416802ebe408d0657aeeb605a3"
+    },
+    "2-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 531,
+          "bottom": 567,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 505,
+          "bottom": 725,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 13,
+          "top": 286,
+          "bottom": 343,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical errors e.g. transposing",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "c4db2a1ab76e2633b992940a6364fbd895e83e1ee50c1ad736d8e1c4fdd10795",
+      "inspectedSolutionSha256": "ee5d76f4fa6e91043afe2f8ee06d110f1754d0aaf9fe23dea8224e9d461742c3"
+    },
+    "2-b-iii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 505,
+          "bottom": 587,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 81,
+          "bottom": 334,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Each missing or incorrect element to a maximum of 3"
+      ],
+      "inspectedQuestionSha256": "951b9a6b27187bbe057f7ed54dc517e840ccd1e882dd4806e126b18d728a3055",
+      "inspectedSolutionSha256": "afc02d6637b81e23a0431f642a6869b92435b25138353be0dd9d49e201db0f7e"
+    },
+    "2-c-i": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 605,
+          "bottom": 625,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 631,
+          "bottom": 652,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 170,
+          "bottom": 325,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Attempts — Some effort at substituting 0 for x",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "4fca107527450303213014bf239d9a79b86f5cf375b695a05d76e4160eb55d85",
+      "inspectedSolutionSha256": "c8c14f0978bbc4b0c8feb7960eb6d3544a2efd341f5cc0acb21f2b233ac79c54"
+    },
+    "2-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 605,
+          "bottom": 625,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 631,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 334,
+          "bottom": 516,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates d from part(i)",
+        "Attempts — Invents value of d and continues with some correct work"
+      ],
+      "inspectedQuestionSha256": "e3f1dd8748a8d4cccb4a5271b1baffa96d6bdf23041a43cfc6cc6ab08c63b3ed",
+      "inspectedSolutionSha256": "c57ccbd3fe4655ad8500b1c41d03b50d9deace8e36087800b8403ea6eefe26f7"
+    },
+    "2-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 605,
+          "bottom": 702,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 68,
+          "bottom": 512,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Omits given root, 3."
+      ],
+      "inspectedQuestionSha256": "8713c3c1e3084ae5735b87bbe859406f37d035e2a2c01e68980cf94c4d7bbf36",
+      "inspectedSolutionSha256": "80f473665cf4c558c93cae0cd79957cc7613d7fbbf706ddfe890cba0c2cd68fb"
+    },
+    "3-a": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 47,
+          "bottom": 78,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 185,
+          "bottom": 361,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical error – each time if different",
+        "Attempts — Some correct multiplication"
+      ],
+      "inspectedQuestionSha256": "26e5c332efd3f02100c6b15d2a6ba221b29817014141cc2d7953df0d03b659e2",
+      "inspectedSolutionSha256": "e6b555758fa866216d00d49d2e60d093c3a0e552173aac172909e08e36545d75"
+    },
+    "3-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 99,
+          "bottom": 174,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 183,
+          "bottom": 720,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Correct isolation of x or y merits first 5 marks (Step 1)"
+      ],
+      "inspectedQuestionSha256": "1c759b6490ad584e6fe1b1d95880b4740743b8ac203e8872bf2442040895273d",
+      "inspectedSolutionSha256": "a761e61d5ce504a4382c78796b813195cc6f66538fdba8d3ebff71d4cba6a130"
+    },
+    "3-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 99,
+          "bottom": 174,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 175,
+          "bottom": 205,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 68,
+          "bottom": 285,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect substitution of answers from (i)"
+      ],
+      "inspectedQuestionSha256": "fd57e2aecea8b7cd0eb94548a3222ba5f92812dbf308d00db55d46622b74761f",
+      "inspectedSolutionSha256": "a95826e8d3780822da31092d0a554f4c214558bba6f62fdf9d08f64ff3f782b0"
+    },
+    "3-c-i": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 226,
+          "bottom": 278,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 162,
+          "bottom": 547,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Note if equation at Step 1 is linear, maximum marks at Step 2 is Att 2",
+        "Worthless — Trying to find answers by trial and error at this point"
+      ],
+      "inspectedQuestionSha256": "08b419c5e45f49dbf68dae7685a4adb33e972b48d2643668f8e2d97a27c6cc9e",
+      "inspectedSolutionSha256": "3dedbb8ecd5025ec076e198c333e4d740084d0fbffb8c93f3e12fcfa38f2c49f"
+    },
+    "3-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 226,
+          "bottom": 305,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 68,
+          "bottom": 392,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect or no conclusion if using incorrect solutions"
+      ],
+      "inspectedQuestionSha256": "a9d274dcad82c0089de5d61cd1b84ae3ee075c275bebc045872bd6196df3d26b",
+      "inspectedSolutionSha256": "4d251d35b6625ab01a774ebb1144c1f3b7e7c5f16255a777820d521d1854ad99"
+    },
+    "4-a-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 368,
+          "bottom": 404,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 405,
+          "bottom": 425,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 22,
+          "top": 226,
+          "bottom": 244,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 22,
+          "top": 258,
+          "bottom": 571,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No penalty for interchange of real and imaginary axes if consistent",
+        "Blunders (−3) — Mathematical error e.g. sign error"
+      ],
+      "inspectedQuestionSha256": "7d9ec1239faf2a191fdfa7fd4eaab00d1616ee68cb08917b30951df5635e5b58",
+      "inspectedSolutionSha256": "718b476bad66da5437ef299bbe68365e5d9e1fcdc3f7d73b8bc512c697d63b68"
+    },
+    "4-a-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 368,
+          "bottom": 404,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 425,
+          "bottom": 446,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 22,
+          "top": 243,
+          "bottom": 571,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No penalty for interchange of real and imaginary axes if consistent",
+        "Blunders (−3) — Mathematical error e.g. sign error"
+      ],
+      "inspectedQuestionSha256": "f52fc81eb64aacfcc5946213bf49254daa2372746da652a947a2ddf44ccd27c3",
+      "inspectedSolutionSha256": "b451720d5c7f476a0687ccd03c72f9fc05479e44d7a450e7fcd5e96ae872f58f"
+    },
+    "4-b-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 466,
+          "bottom": 487,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 495,
+          "bottom": 520,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 23,
+          "top": 168,
+          "bottom": 321,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical error e.g. i² ≠ −1",
+        "Attempts — Substitution for z"
+      ],
+      "inspectedQuestionSha256": "2f4fb3fe9bf37c79bf7529f485f0f784bf6c95d86e7eefda3ae71456c36aebef",
+      "inspectedSolutionSha256": "c42d3ab7cbe5fba80e8c01e59f628903e2fef6527bf5901694939ba699f0f2fd"
+    },
+    "4-b-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 466,
+          "bottom": 487,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 529,
+          "bottom": 550,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 23,
+          "top": 346,
+          "bottom": 545,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Incorrect or no conclusion if (i) incorrect"
+      ],
+      "inspectedQuestionSha256": "db98b5d2bc3a120a80c1b5cba8e166a9ea2ec8ece5e0115cf3cb3c8e303b070c",
+      "inspectedSolutionSha256": "0e1c4139a19c83ae9e5958e3f4dc1cbbe2a928cce3f819b0481d03e7542df7c4"
+    },
+    "4-b-iii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 466,
+          "bottom": 487,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 558,
+          "bottom": 580,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 68,
+          "bottom": 318,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect or no conclusion if (i) incorrect",
+        "Attempts — Conjugate found and stops"
+      ],
+      "inspectedQuestionSha256": "daea3cef049541d03b87466b6710b124e8b108f6b9ad32a4618640b2d3fb6976",
+      "inspectedSolutionSha256": "7220847abba1877bfd0b3a3b44e3620e358faaeed945224ef02442c5caa02576"
+    },
+    "4-c-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 600,
+          "bottom": 638,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 463,
+          "bottom": 669,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect conjugate",
+        "Attempts — Finds conjugate and stops"
+      ],
+      "inspectedQuestionSha256": "7c6270394c2dbced950851d3bf3c1ff2e915695dbbf89975708d5e1bc0a21f04",
+      "inspectedSolutionSha256": "827b4fcec1f020a486a1faa8ce066371d97fb1953b1d576a185b565cba84b59d"
+    },
+    "4-c-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 600,
+          "bottom": 638,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 645,
+          "bottom": 705,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 74,
+          "bottom": 480,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Only finds one value in Step 2"
+      ],
+      "inspectedQuestionSha256": "5060473e096e8e94a01c1b60fc7b255d0f2ae0ce55b96b9e5ac49c10e566ac02",
+      "inspectedSolutionSha256": "4d0e39aca497965368a5bdd0f4e936adfa9097f3ae2c8b930ad26e34e6176eae"
+    },
+    "5-a": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 54,
+          "bottom": 88,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 208,
+          "bottom": 528,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Each missing term",
+        "Note — Accept correct answers without work"
+      ],
+      "inspectedQuestionSha256": "993b92cd6f0e4e1a3725233847f4417060cc2b2904b561785dfaa89d55d306b2",
+      "inspectedSolutionSha256": "1df86f5cedf82b123a0625275b2ba7a4e115e18a36ddca8882a5dde13b0239dd"
+    },
+    "5-b-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 104,
+          "bottom": 124,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 127,
+          "bottom": 147,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 181,
+          "bottom": 435,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical error e.g. sign of d"
+      ],
+      "inspectedQuestionSha256": "af1249f96eef6de84554228320b0c3e2a51bcd5152ab46fd447e2539b4073c7a",
+      "inspectedSolutionSha256": "f676b37e3b4fc29838d0530b8fd245e2eda6bf20591b997f8d7fbd5d39795520"
+    },
+    "5-b-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 104,
+          "bottom": 124,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 151,
+          "bottom": 174,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 457,
+          "bottom": 733,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect term from complete list"
+      ],
+      "inspectedQuestionSha256": "806ceda770e5f8c6d2fc2830434f003f5c1dadf4ca701cf43c4ddab594b78a2f",
+      "inspectedSolutionSha256": "8351c6797f9f9992a1e8d3a638d47973aabdc1711dd7c16a35be4589438ab081"
+    },
+    "5-b-iii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 104,
+          "bottom": 124,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 178,
+          "bottom": 201,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 68,
+          "bottom": 382,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Re-writes list but fails to sum"
+      ],
+      "inspectedQuestionSha256": "3ed2549d92687192e53536b1d9bee90a7eaf0a9ef6d74fae7c4db0b792cede43",
+      "inspectedSolutionSha256": "7a63343aeeca52259a3d6a20652e17ee5ba56cb95bdd962fa9505e74f3826c3b"
+    },
+    "5-c-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 218,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 158,
+          "bottom": 402,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No penalty if single value of h not selected at this point"
+      ],
+      "inspectedQuestionSha256": "7a5b5a8a336d0ebaa00af916e0bee9d6f30d0b6f192e2b273f8f1b02797aaeb1",
+      "inspectedSolutionSha256": "4fff9bd8db80162baa20960aa773678dfa8f51db4906033ea2764cbc72f1b428"
+    },
+    "5-c-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 218,
+          "bottom": 277,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 303,
+          "bottom": 323,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 409,
+          "bottom": 780,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Answer k = 5 Method 1",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "5c2fc8d37b8897a357ccbcdf53f2ee5d4771811c9541f71f994f4bbd35fd2e19",
+      "inspectedSolutionSha256": "413b023069a9c74a1ea3977466afafff3507904f1dd22a5089cc6f21ab8aeb06"
+    },
+    "6-a-i": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 372,
+          "bottom": 576,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 378,
+          "bottom": 600,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Only one correct answer",
+        "Note — Accept correct answers without work"
+      ],
+      "inspectedQuestionSha256": "86d475d10973b95bcc146b6b81e0de2657b6d7b11d54fde94e6d2f22d4724753",
+      "inspectedSolutionSha256": "3b06e1031897ae9c3c44df10d5cb1f0836f66e15f8b3d28bbd8b21f69e167069"
+    },
+    "6-a-ii": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 372,
+          "bottom": 557,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 579,
+          "bottom": 599,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 68,
+          "bottom": 281,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Accept candidate’s value for period from (i)",
+        "Blunders (−3) — Incorrect reading (if work shown)"
+      ],
+      "inspectedQuestionSha256": "4949e32f56169fa88b3334b2d00f7dd3d42c86e57a548832fb9b9c22cc45121a",
+      "inspectedSolutionSha256": "2e85fff8f4fba53ad1fc18c1c99b781c6f630cfb561d1230c6644587ff283a03"
+    },
+    "6-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 617,
+          "bottom": 637,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 32,
+          "top": 153,
+          "bottom": 503,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation, omitted term"
+      ],
+      "inspectedQuestionSha256": "4c01b07ca3d712e2aae8b83b701a0c33225dc1d5847d1a5512f54d8e3e9305eb",
+      "inspectedSolutionSha256": "6da2724eca5f99335e803c70181bbe5111fcd54509be6fda9e8c859b57440b52"
+    },
+    "6-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 636,
+          "bottom": 674,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 68,
+          "bottom": 606,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Mathematical error solving inequality – once only"
+      ],
+      "sourceNote": "The paper states x ≠ 3 but omits x ≠ 0; both are excluded by the denominator. The scheme’s answer x > 1.5 must retain x ≠ 3, so the solution is (1.5, 3) ∪ (3, ∞). The original source and published marks are preserved.",
+      "inspectedQuestionSha256": "d802ff0ffc89466473f420d7ecb7e0ec3fb0514de2b42a0134b265b5a1f196c1",
+      "inspectedSolutionSha256": "42743ee77b1e74d45f2efa31f3e602f8514d0d897aa2b4fe88365ab9eb427761"
+    },
+    "6-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 690,
+          "bottom": 741,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 180,
+          "bottom": 564,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error finding slope of tangent e.g. use of P – Step 2"
+      ],
+      "inspectedQuestionSha256": "1b2a6322a672853ec17d9d39184e5534dc777cb9838534732ae2422413b967e8",
+      "inspectedSolutionSha256": "dedfb62379a7b6d98b0e0aa1a30c6d207cbf2b7e4aeb9248640d4db893782715"
+    },
+    "6-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 690,
+          "bottom": 782,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 570,
+          "bottom": 752,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Attempts — Finds (1, 3) again",
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "4b6cdeead8bac538fadf7cc8d1d61599cd7af84829e4a2381d0fefd89f66235a",
+      "inspectedSolutionSha256": "393f5bdea2c848a578f586c2e39aab0f196f665d5ab7b45d731d928dc233328a"
+    },
+    "7-a": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 82,
+          "bottom": 104,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 185,
+          "bottom": 415,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Only one non zero term correct, award 9 marks",
+        "Note — Correct answer without work or notation: full marks"
+      ],
+      "inspectedQuestionSha256": "f32788ab099903fb0c30f475faa7b68e2fce2888dc8222019b596c68b8465723",
+      "inspectedSolutionSha256": "2de6db2327bf80900dee976fcbe23fe0dcdc39ca1ae6a3ae29c9a379b298fdb7"
+    },
+    "7-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 140,
+          "bottom": 218,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 198,
+          "bottom": 653,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No marks for writing u/v formula from tables and stopping"
+      ],
+      "inspectedQuestionSha256": "c05f4f2020ed0aab7e85e129b9530870691700fdcbeeb71f5c57fecb7f43c110",
+      "inspectedSolutionSha256": "0149fa6de33279edd00158915723cdedbd36c49d6de155162448d7626c21c82a"
+    },
+    "7-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 229,
+          "bottom": 265,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 37,
+          "top": 54,
+          "bottom": 585,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Attempts — Some correct element of the chain rule e.g. index 3 or coefficient 4"
+      ],
+      "sourceNote": "In the second method, the initial definition of u is misprinted with an extra power 4. It should read u = x² − 2x − 9, with y = u⁴, consistent with the derivatives and final answer 24 that follow.",
+      "inspectedQuestionSha256": "0e12c9ab742c5adec7ee216cae3f73165c514fb69ee9b051a65b8ff1227afb3b",
+      "inspectedSolutionSha256": "60db403a52b98526fa8ffd40a891588bb9b80f0d56b7ba788e85920aea73f2d2"
+    },
+    "7-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 299,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 383,
+          "bottom": 404,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 191,
+          "bottom": 267,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 38,
+          "top": 273,
+          "bottom": 558,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Correct answer without work: Att 2"
+      ],
+      "inspectedQuestionSha256": "01f4ad7f874cfbabde10f712e8cac2d9bc1f7763e31877bf734ea64d5e653cc7",
+      "inspectedSolutionSha256": "5a70f6082bc6cbf4e9d772ee053b7cb5c630c6e3d1d3c9807f60c362c2ab8331"
+    },
+    "7-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 299,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 411,
+          "bottom": 431,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 193,
+          "bottom": 267,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 39,
+          "top": 68,
+          "bottom": 327,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No use of derivative merits 0 at this part",
+        "Note — Accept candidates derivative from (i)"
+      ],
+      "inspectedQuestionSha256": "a35771f7868f490262fb04ce2d954e3221e03343abd7e8f156fce579b35f2e12",
+      "inspectedSolutionSha256": "405e1b097979fbe0c4fd068a8ded0cd4f2286534aa36dd5c451678d35563b81c"
+    },
+    "7-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 299,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 439,
+          "bottom": 473,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 193,
+          "bottom": 267,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 39,
+          "top": 344,
+          "bottom": 640,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in differentiation"
+      ],
+      "inspectedQuestionSha256": "d7e6d702b4ffd0c3a58acb93fb72deb0d00ab7129bb2eb64955e657c50c676c8",
+      "inspectedSolutionSha256": "5a2b58985a4952d4e981c58a7eb443f055b8a5e9ea8afbd3d78bfa928fc02796"
+    },
+    "8-i": {
+      "topic": "5-1",
+      "atlas": "graphing-functions",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 156,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 289,
+          "bottom": 537,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Do not penalise if candidate writes 1/3 as 0.3"
+      ],
+      "inspectedQuestionSha256": "5b4ca3e15d7ad54f4998615412be06be394562bd99cf4f6a9c4eb789d4f80c58",
+      "inspectedSolutionSha256": "43d13f70b97585297e9422479bdff3d3573facdd531863e223959de3f732a881"
+    },
+    "8-ii": {
+      "topic": "5-1",
+      "atlas": "graphing-functions",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 173,
+          "bottom": 500,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 440,
+          "bottom": 750,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 42,
+          "top": 68,
+          "bottom": 301,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Joins both sides of graph i.e. ignoring asymptote",
+        "Blunders (−3) — Plots points but does not join or joined incorrectly"
+      ],
+      "inspectedQuestionSha256": "032bd5e7a742e569abc98deaf938d10d4f2293a20d35561653d7b4fa5a81131b",
+      "inspectedSolutionSha256": "ac7f073da1e6054188cb471815345c4db112e70f03e7731b9b2eca3918212c74"
+    },
+    "8-iii": {
+      "topic": "5-1",
+      "atlas": "graphing-functions",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 173,
+          "bottom": 555,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 440,
+          "bottom": 750,
+          "x0": 49,
+          "x1": 572
+        },
+        {
+          "page": 42,
+          "top": 309,
+          "bottom": 554,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — Only two points required",
+        "Note — No penalty for not drawing on same diagram"
+      ],
+      "inspectedQuestionSha256": "eecb500306c26390a1e60cd09f27eab8a837d92e283fb20aa85e35c331042149",
+      "inspectedSolutionSha256": "b7a19995d5067f7529ca481ce7afa9a1976ff30a3b1cfeb68b011bc24441a8a0"
+    },
+    "8-iv": {
+      "topic": "5-1",
+      "atlas": "graphing-functions",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 173,
+          "bottom": 581,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 118,
+          "bottom": 568,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Attempts — Shows on graph only"
+      ],
+      "sourceNote": "The printed solution gives x ≥ −1 with no upper bound. On the plotted domain −5 ≤ x ≤ 1 requested in the question, that branch is −1 ≤ x ≤ 1. Thus the graph-based answer is [−3, −2) ∪ [−1, 1]. The original five-mark allocation is unchanged.",
+      "inspectedQuestionSha256": "a127fecc2018e58a1baf2b400aa62f2d084d0b30b377ba799f8fb267436f440c",
+      "inspectedSolutionSha256": "bf04d6c951b9e4fc6201f256fa967dfacd022c6fa4ffc469b6300af323ba832f"
+    },
+    "8-v": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 54,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 591,
+          "bottom": 611,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 117,
+          "bottom": 558,
+          "x0": 49,
+          "x1": 572
+        }
+      ],
+      "rows": [
+        "Note — No quotient or chain rule in differentiation, merits attempt mark at most",
+        "Attempts — States function is always “decreasing”"
+      ],
+      "inspectedQuestionSha256": "64b969c152206c198dc04dbac388bfa6765d85ced686911f3e420bf36573821a",
+      "inspectedSolutionSha256": "2fbca143d1255fe6e16acbf1adfbc597602c52660085a5b42523708bf409009f"
+    }
+  }
+}
