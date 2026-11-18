@@ -3,6 +3,7 @@ import type { BusinessRubric, SecRubricCard } from '../../../../types/markBank';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 import data from './rubric-authored.json';
 import routePools from './route-pools.json';
+import imageAnswers from './image-answers.json';
 import { expandBusinessRoutePools } from './routes.mjs';
 
 interface AuthoredCard {
@@ -26,6 +27,17 @@ interface AuthoredCard {
 export function businessRubricCards(level: 'higher' | 'ordinary'): SecRubricCard[] {
   const authored = [...data.cards, ...expandBusinessRoutePools(routePools.pools)] as AuthoredCard[];
   return authored.filter(card => card.level === level).map(card => {
+    const image = (imageAnswers.cards as Record<string, { page: number; region: number[]; schemeFileid: string }>)[card.id];
+    if (image && (image.schemeFileid !== card.rubric.schemeFileid || !card.rubric.schemePages.includes(image.page))) {
+      throw new Error(`Business card ${card.id}: reviewed image no longer matches its scheme`);
+    }
+    const schemePages = image
+      ? [image.page, ...card.rubric.schemePages.filter(page => page !== image.page)]
+      : card.rubric.schemePages;
+    const rubric: BusinessRubric = image ? {
+      ...card.rubric, schemePages,
+      schemeRegions: schemePages.map(p => ({ p, r: (p === image.page ? image.region : [0, 0, 1, 1]) as [number, number, number, number] })),
+    } : card.rubric;
     const specification = resolveCurriculumSpecification('Business', card.year);
     if ([card.topicId, ...(card.additionalTopicIds ?? [])].some(id =>
       !specification?.groups.some(group => group.topics.some(topic => topic.id === id)))) {
@@ -52,7 +64,7 @@ export function businessRubricCards(level: 'higher' | 'ordinary'): SecRubricCard
           card.sourceLabel === 'QUESTION PAPER' ? 'question-paper-source' : 'case-study-source', 'scheme-page-review'],
         humanReviewedBy: 'agent-paper-and-scheme-review', humanReviewedAt: '2026-10-07',
       },
-      rubric: card.rubric,
+      rubric,
     };
   });
 }
