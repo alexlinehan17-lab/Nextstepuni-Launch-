@@ -8,8 +8,9 @@ import { isRubricCard, tariffReconciles, UNPRINTED_ANSWER } from '../types/markB
 const written = REVIEWED_CARDS.filter(c => c.year === 2017 && c.level === 'ordinary' && !c.audioMaterial);
 const get = (suffix: string) => {
   const card = written.find(c => c.id === `ru-2017-ol-${suffix}`);
-  if (!card || !isRubricCard(card)) throw new Error(suffix);
-  return card;
+  if (!card || !isRubricCard(card)
+    || (card.rubric.system !== 'language-writing' && card.rubric.system !== 'language-points')) throw new Error(suffix);
+  return { ...card, rubric: card.rubric };
 };
 const points = (suffix: string) => {
   const card = get(suffix);
