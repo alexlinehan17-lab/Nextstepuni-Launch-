@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2022-ol-p2-deferred'
+PREFIX='maths-2022-ol-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2022-ol-p2-deferred'
 p=Paper(year=2022,level='ordinary',paper_key='p2',sitting='deferred',
- paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2022 OL Paper 2 — Deferred',
+ paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2022 OL Paper 2',
  scales={'5A':[0,5],'5B':[0,3,5],'5C':[0,2,3,5],'10B':[0,5,10],'10C':[0,3,7,10],'10D':[0,3,5,8,10],'15D':[0,4,8,12,15]},
  reviewed_at='2026-10-31',general_notes=[2,26,27],scheme_pages=[1,2]+list(range(25,56)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -28,7 +30,7 @@ p=Paper(year=2022,level='ordinary',paper_key='p2',sitting='deferred',
  'Q10(e)(i) requires construction lines as well as (0,6). Q10(e)(ii) retains the original diagram and line/construction instructions without revealing their answers. Q10(f) retains both trig routes to 50.9 degrees.'
  ],out_name='2022-ordinary-p2-deferred.json',atlas_prefix='mathematics-ordinary-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 coord='In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.'
 A('1-a','Q1(a)','10C',[29],[4],'2-2','co-ordinate-geometry-of-the-line','Write down the co-ordinates of A and of B.',['One correct set of coordinates'],coord)
 A('1-b','Q1(b)','5C',[29],[4],'2-2','co-ordinate-geometry-of-the-line,area-volume','Find the area of the triangle APB.',['Fully correct substitution into a correct relevant formula'],coord)

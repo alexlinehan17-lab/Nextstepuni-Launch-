@@ -2,7 +2,7 @@
   "questionSha256": "9262fb1ba9abc922770885e9c2957414a9a36086adb04eea102f08f00a0787aa",
   "solutionSha256": "a26b1052de619384b1623938a6b37ee9b00a095244fd450b0f6617b4806eaeb0",
   "tasks": {
-    "maths-2023-ol-p1-deferred-q1-a-i": {
+    "maths-2023-ol-deferred-p1-q1-a-i": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q1-a-ii": {
+    "maths-2023-ol-deferred-p1-q1-a-ii": {
       "question": [
         [
           4,
@@ -49,7 +49,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q1-b": {
+    "maths-2023-ol-deferred-p1-q1-b": {
       "question": [
         [
           4,
@@ -76,7 +76,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q1-c": {
+    "maths-2023-ol-deferred-p1-q1-c": {
       "question": [
         [
           4,
@@ -103,7 +103,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q2-a": {
+    "maths-2023-ol-deferred-p1-q2-a": {
       "question": [
         [
           6,
@@ -126,7 +126,7 @@
       "supplementAlt": "NextStepUni shows x≥−2 as a continuous ray to the right from a closed dot at −2. It includes every real value at least −2, not just integers. Original SEC algebra and credit notes follow.",
       "sourceNote": "The question specifies real numbers. The solution set is every real x≥−2. The NextStepUni diagram makes the complete continuous ray explicit; the dots in the source should not be read as an integers-only solution."
     },
-    "maths-2023-ol-p1-deferred-q2-b": {
+    "maths-2023-ol-deferred-p1-q2-b": {
       "question": [
         [
           6,
@@ -146,7 +146,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q2-c-i-ii": {
+    "maths-2023-ol-deferred-p1-q2-c-i-ii": {
       "question": [
         [
           7,
@@ -173,7 +173,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q3-a": {
+    "maths-2023-ol-deferred-p1-q3-a": {
       "question": [
         [
           8,
@@ -194,7 +194,7 @@
       ],
       "sourceNote": "The low-credit example’s “−7 for y” is a variable-name error: the question gives x = −7. Substituting for x yields −35 − 4y = 1, so y = −9, as in the model solution."
     },
-    "maths-2023-ol-p1-deferred-q3-b": {
+    "maths-2023-ol-deferred-p1-q3-b": {
       "question": [
         [
           8,
@@ -214,7 +214,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q3-c": {
+    "maths-2023-ol-deferred-p1-q3-c": {
       "question": [
         [
           9,
@@ -235,7 +235,7 @@
       ],
       "sourceNote": "Keep each x with its matching y: the two solutions are (x,y) = (−1,−3) and (3,1). Both satisfy x−y=2 and x²+y²=10."
     },
-    "maths-2023-ol-p1-deferred-q4-a": {
+    "maths-2023-ol-deferred-p1-q4-a": {
       "question": [
         [
           10,
@@ -255,7 +255,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q4-b": {
+    "maths-2023-ol-deferred-p1-q4-b": {
       "question": [
         [
           10,
@@ -276,7 +276,7 @@
       ],
       "sourceNote": "Factor the numerator as (3x−4)(2x−5), then cancel for x≠5/2. The answer is h(x)=3x−4 on that original domain. The printed statement x∈ℝ omits the denominator restriction; x=5/2 remains undefined."
     },
-    "maths-2023-ol-p1-deferred-q4-c-i-ii-iii": {
+    "maths-2023-ol-deferred-p1-q4-c-i-ii-iii": {
       "question": [
         [
           11,
@@ -311,7 +311,7 @@
       ],
       "sourceNote": "All three printed parts share 10D. The source’s “Work of Merit in” mid-credit bullet is incomplete. Its explicit complete mid-credit alternative is “Any 1 correct section”; the original wording and numeric scale remain unchanged."
     },
-    "maths-2023-ol-p1-deferred-q5-a-i": {
+    "maths-2023-ol-deferred-p1-q5-a-i": {
       "question": [
         [
           12,
@@ -331,7 +331,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q5-a-ii": {
+    "maths-2023-ol-deferred-p1-q5-a-ii": {
       "question": [
         [
           12,
@@ -358,7 +358,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q5-b-i": {
+    "maths-2023-ol-deferred-p1-q5-b-i": {
       "question": [
         [
           13,
@@ -378,7 +378,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q5-b-ii": {
+    "maths-2023-ol-deferred-p1-q5-b-ii": {
       "question": [
         [
           13,
@@ -405,7 +405,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q6-a": {
+    "maths-2023-ol-deferred-p1-q6-a": {
       "question": [
         [
           14,
@@ -425,7 +425,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q6-b": {
+    "maths-2023-ol-deferred-p1-q6-b": {
       "question": [
         [
           14,
@@ -452,7 +452,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q6-c-i": {
+    "maths-2023-ol-deferred-p1-q6-c-i": {
       "question": [
         [
           14,
@@ -479,7 +479,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q6-c-ii": {
+    "maths-2023-ol-deferred-p1-q6-c-ii": {
       "question": [
         [
           14,
@@ -507,7 +507,7 @@
       ],
       "sourceNote": "f′(x)=3(x−3)(x+1). It changes from positive to negative at x=−1 (local maximum (−1,5)) and from negative to positive at x=3 (local minimum (3,−27)). Both labelled points belong to this single 5C response."
     },
-    "maths-2023-ol-p1-deferred-q7-a": {
+    "maths-2023-ol-deferred-p1-q7-a": {
       "question": [
         [
           16,
@@ -527,7 +527,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q7-b-i": {
+    "maths-2023-ol-deferred-p1-q7-b-i": {
       "question": [
         [
           16,
@@ -554,7 +554,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q7-b-ii": {
+    "maths-2023-ol-deferred-p1-q7-b-ii": {
       "question": [
         [
           16,
@@ -588,7 +588,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q7-c": {
+    "maths-2023-ol-deferred-p1-q7-c": {
       "question": [
         [
           16,
@@ -615,7 +615,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q7-d": {
+    "maths-2023-ol-deferred-p1-q7-d": {
       "question": [
         [
           18,
@@ -636,7 +636,7 @@
       ],
       "sourceNote": "Keep the units consistent: 32−10−9 = 13 minutes = 780 seconds remain for sprints and jogs. There are n−1 jogs between n sprints, so 10n+60(n−1)=780. Thus 70n=840 and n=12. The source’s first line mixes minutes and seconds; its subsequent equation and final answer are correct."
     },
-    "maths-2023-ol-p1-deferred-q8-a-i": {
+    "maths-2023-ol-deferred-p1-q8-a-i": {
       "question": [
         [
           19,
@@ -656,7 +656,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q8-a-ii": {
+    "maths-2023-ol-deferred-p1-q8-a-ii": {
       "question": [
         [
           19,
@@ -683,7 +683,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q8-b": {
+    "maths-2023-ol-deferred-p1-q8-b": {
       "question": [
         [
           19,
@@ -717,7 +717,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q8-c-i-ii-iii": {
+    "maths-2023-ol-deferred-p1-q8-c-i-ii-iii": {
       "question": [
         [
           20,
@@ -752,7 +752,7 @@
       ],
       "sourceNote": "A part-hour is charged as a full hour: 4 hours 15 minutes means five billed hours. A charges €100+5×€60=€400 and B €80+5×€70=€430. The equal-cost result n=2 refers to the whole billed-hour count in the question."
     },
-    "maths-2023-ol-p1-deferred-q8-d": {
+    "maths-2023-ol-deferred-p1-q8-d": {
       "question": [
         [
           21,
@@ -772,7 +772,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-a-i": {
+    "maths-2023-ol-deferred-p1-q9-a-i": {
       "question": [
         [
           22,
@@ -799,7 +799,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-a-ii": {
+    "maths-2023-ol-deferred-p1-q9-a-ii": {
       "question": [
         [
           22,
@@ -826,7 +826,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-a-iii": {
+    "maths-2023-ol-deferred-p1-q9-a-iii": {
       "question": [
         [
           22,
@@ -853,7 +853,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-a-iv": {
+    "maths-2023-ol-deferred-p1-q9-a-iv": {
       "question": [
         [
           22,
@@ -880,7 +880,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-a-v": {
+    "maths-2023-ol-deferred-p1-q9-a-v": {
       "question": [
         [
           22,
@@ -907,7 +907,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-b-i": {
+    "maths-2023-ol-deferred-p1-q9-b-i": {
       "question": [
         [
           24,
@@ -927,7 +927,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q9-b-ii": {
+    "maths-2023-ol-deferred-p1-q9-b-ii": {
       "question": [
         [
           25,
@@ -948,7 +948,7 @@
       ],
       "sourceNote": "Apply the discount to the VAT-inclusive price first: €125×0.85=€106.25. The VAT portion is €106.25×23/123≈€19.87. The source’s “€125−15%” is shorthand for reducing €125 by 15%."
     },
-    "maths-2023-ol-p1-deferred-q10-a-i": {
+    "maths-2023-ol-deferred-p1-q10-a-i": {
       "question": [
         [
           26,
@@ -968,7 +968,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q10-a-ii": {
+    "maths-2023-ol-deferred-p1-q10-a-ii": {
       "question": [
         [
           26,
@@ -995,7 +995,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q10-a-iii": {
+    "maths-2023-ol-deferred-p1-q10-a-iii": {
       "question": [
         [
           26,
@@ -1030,7 +1030,7 @@
       ],
       "sourceNote": "The detailed scheme awards this refund calculation 5C (0,2,3,5). The summary swaps its scale with part (iv); the task-specific allocation and matching low/high credit notes are followed here."
     },
-    "maths-2023-ol-p1-deferred-q10-a-iv": {
+    "maths-2023-ol-deferred-p1-q10-a-iv": {
       "question": [
         [
           26,
@@ -1058,7 +1058,7 @@
       ],
       "sourceNote": "The detailed scheme awards this pay-increase calculation 5D (0,2,3,4,5). The summary swaps its scale with part (iii). The 3-mark mid-partial award belongs here. The increase is (€218.85−€178.85)/0.40=€100."
     },
-    "maths-2023-ol-p1-deferred-q10-b-i": {
+    "maths-2023-ol-deferred-p1-q10-b-i": {
       "question": [
         [
           28,
@@ -1085,7 +1085,7 @@
         ]
       ]
     },
-    "maths-2023-ol-p1-deferred-q10-b-ii": {
+    "maths-2023-ol-deferred-p1-q10-b-ii": {
       "question": [
         [
           28,

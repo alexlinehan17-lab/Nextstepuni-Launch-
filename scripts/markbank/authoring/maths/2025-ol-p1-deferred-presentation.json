@@ -2,7 +2,7 @@
   "questionSha256": "f01f83c3007071466c3e543bbd7818590cff38248eef2e4997b954dce0f438d3",
   "solutionSha256": "47a46a4fe30407c1e457cbe994409e8c3d51709cf7444d64c570d45840176df0",
   "tasks": {
-    "maths-2025-ol-p1-deferred-q1-a": {
+    "maths-2025-ol-deferred-p1-q1-a": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q1-b": {
+    "maths-2025-ol-deferred-p1-q1-b": {
       "question": [
         [
           4,
@@ -42,7 +42,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q1-c": {
+    "maths-2025-ol-deferred-p1-q1-c": {
       "question": [
         [
           5,
@@ -62,7 +62,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q2-a-i-ii": {
+    "maths-2025-ol-deferred-p1-q2-a-i-ii": {
       "question": [
         [
           6,
@@ -82,7 +82,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q2-b": {
+    "maths-2025-ol-deferred-p1-q2-b": {
       "question": [
         [
           6,
@@ -109,7 +109,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q2-c": {
+    "maths-2025-ol-deferred-p1-q2-c": {
       "question": [
         [
           6,
@@ -136,7 +136,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q3-a-i": {
+    "maths-2025-ol-deferred-p1-q3-a-i": {
       "question": [
         [
           8,
@@ -156,7 +156,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q3-a-ii": {
+    "maths-2025-ol-deferred-p1-q3-a-ii": {
       "question": [
         [
           8,
@@ -183,7 +183,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q3-b-i-ii": {
+    "maths-2025-ol-deferred-p1-q3-b-i-ii": {
       "question": [
         [
           9,
@@ -210,7 +210,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q4-a": {
+    "maths-2025-ol-deferred-p1-q4-a": {
       "question": [
         [
           10,
@@ -230,7 +230,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q4-b": {
+    "maths-2025-ol-deferred-p1-q4-b": {
       "question": [
         [
           10,
@@ -257,7 +257,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q4-c": {
+    "maths-2025-ol-deferred-p1-q4-c": {
       "question": [
         [
           10,
@@ -291,7 +291,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q4-d": {
+    "maths-2025-ol-deferred-p1-q4-d": {
       "question": [
         [
           10,
@@ -318,7 +318,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q5-a-i": {
+    "maths-2025-ol-deferred-p1-q5-a-i": {
       "question": [
         [
           12,
@@ -338,7 +338,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q5-a-ii": {
+    "maths-2025-ol-deferred-p1-q5-a-ii": {
       "question": [
         [
           12,
@@ -365,7 +365,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q5-b-i-ii": {
+    "maths-2025-ol-deferred-p1-q5-b-i-ii": {
       "question": [
         [
           13,
@@ -385,7 +385,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q6-a": {
+    "maths-2025-ol-deferred-p1-q6-a": {
       "question": [
         [
           14,
@@ -405,7 +405,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q6-b": {
+    "maths-2025-ol-deferred-p1-q6-b": {
       "question": [
         [
           14,
@@ -425,7 +425,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q6-c": {
+    "maths-2025-ol-deferred-p1-q6-c": {
       "question": [
         [
           15,
@@ -445,7 +445,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-a-i": {
+    "maths-2025-ol-deferred-p1-q7-a-i": {
       "question": [
         [
           16,
@@ -465,7 +465,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-a-ii": {
+    "maths-2025-ol-deferred-p1-q7-a-ii": {
       "question": [
         [
           16,
@@ -492,7 +492,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-a-iii": {
+    "maths-2025-ol-deferred-p1-q7-a-iii": {
       "question": [
         [
           17,
@@ -512,7 +512,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-b": {
+    "maths-2025-ol-deferred-p1-q7-b": {
       "question": [
         [
           18,
@@ -532,7 +532,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-c-i": {
+    "maths-2025-ol-deferred-p1-q7-c-i": {
       "question": [
         [
           19,
@@ -552,7 +552,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q7-c-ii": {
+    "maths-2025-ol-deferred-p1-q7-c-ii": {
       "question": [
         [
           19,
@@ -572,7 +572,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-a-i": {
+    "maths-2025-ol-deferred-p1-q8-a-i": {
       "question": [
         [
           20,
@@ -592,7 +592,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-a-ii": {
+    "maths-2025-ol-deferred-p1-q8-a-ii": {
       "question": [
         [
           20,
@@ -619,7 +619,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-a-iii": {
+    "maths-2025-ol-deferred-p1-q8-a-iii": {
       "question": [
         [
           20,
@@ -646,7 +646,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-a-iv": {
+    "maths-2025-ol-deferred-p1-q8-a-iv": {
       "question": [
         [
           21,
@@ -666,7 +666,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-b": {
+    "maths-2025-ol-deferred-p1-q8-b": {
       "question": [
         [
           22,
@@ -686,7 +686,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-c-i": {
+    "maths-2025-ol-deferred-p1-q8-c-i": {
       "question": [
         [
           23,
@@ -706,7 +706,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q8-c-ii": {
+    "maths-2025-ol-deferred-p1-q8-c-ii": {
       "question": [
         [
           23,
@@ -733,7 +733,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q9-a-i": {
+    "maths-2025-ol-deferred-p1-q9-a-i": {
       "question": [
         [
           24,
@@ -753,7 +753,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q9-a-ii-iii": {
+    "maths-2025-ol-deferred-p1-q9-a-ii-iii": {
       "question": [
         [
           24,
@@ -787,7 +787,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q9-b-i-ii": {
+    "maths-2025-ol-deferred-p1-q9-b-i-ii": {
       "question": [
         [
           24,
@@ -821,7 +821,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q9-c-i": {
+    "maths-2025-ol-deferred-p1-q9-c-i": {
       "question": [
         [
           26,
@@ -841,7 +841,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q9-c-ii": {
+    "maths-2025-ol-deferred-p1-q9-c-ii": {
       "question": [
         [
           26,
@@ -861,7 +861,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q10-a-i-ii": {
+    "maths-2025-ol-deferred-p1-q10-a-i-ii": {
       "question": [
         [
           27,
@@ -888,7 +888,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q10-b-i-ii": {
+    "maths-2025-ol-deferred-p1-q10-b-i-ii": {
       "question": [
         [
           28,
@@ -908,7 +908,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q10-c-i": {
+    "maths-2025-ol-deferred-p1-q10-c-i": {
       "question": [
         [
           29,
@@ -928,7 +928,7 @@
         ]
       ]
     },
-    "maths-2025-ol-p1-deferred-q10-c-ii": {
+    "maths-2025-ol-deferred-p1-q10-c-ii": {
       "question": [
         [
           29,

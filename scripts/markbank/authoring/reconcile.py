@@ -699,12 +699,17 @@ def reconcile_subject(subject, census=None):
     exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
     exact_japanese_refs = reviewed_japanese_refs() if subject == 'japanese' else {}
     for cid, refstr in coverage_refs:
-        # A Mathematics deferred card cites "2025 HL Paper 1 — Deferred Q1(a)",
-        # and a 2014 Foundation card "2014 FL Paper 1 (Project Maths) Q1(a)":
+        # A 2014 Foundation card cites "2014 FL Paper 1 (Project Maths) Q1(a)":
         # the booklet is already pinned by reviewed_maths_paper_keys, so read
-        # the address after it whole.
-        ref = parse_ref(refstr.replace(' — Deferred Q', ' Q').replace(' (Project Maths) Q', ' Q')
+        # the address after it whole. A deferred card cites the June form plus
+        # " — Deferred sitting" (CARD-STANDARD.md section 4), and its booklet is
+        # pinned the same way.
+        ref = parse_ref(refstr.replace(' (Project Maths) Q', ' Q')
                         if subject == 'maths' else refstr)
+        if subject == 'maths' and bool(re.match(r'^maths-\d{4}-(?:hl|ol|fl)-deferred-', cid)) != (' — Deferred sitting' in refstr):
+            # The id and the citation must agree, as every other subject's do.
+            unparsed.append({'id': cid, 'ref': refstr})
+            continue
         if subject == 'japanese':
             ref = bind_japanese_ref(cid, refstr, ref, exact_japanese_refs)
         if subject == 'chemistry':

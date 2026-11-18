@@ -2,7 +2,7 @@
   "questionSha256": "2b3251f7aa355f1bc2ddf0fa73b0640cf45947ef4fb7522a6066129532f225fa",
   "solutionSha256": "31d908ba92708efe218e3c0a6db29625513077ebbf18fea2721cd776a07d97cd",
   "tasks": {
-    "maths-2024-hl-p1-deferred-q1-a": {
+    "maths-2024-hl-deferred-p1-q1-a": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q1-b": {
+    "maths-2024-hl-deferred-p1-q1-b": {
       "question": [
         [
           4,
@@ -42,7 +42,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q1-c": {
+    "maths-2024-hl-deferred-p1-q1-c": {
       "question": [
         [
           5,
@@ -65,7 +65,7 @@
       "supplement": "pairs-2024-hl-deferred",
       "supplementAlt": "NextStepUni corrected simultaneous-equation solutions: x=4, y=−23/2; x=−6, y=17/2, followed by original SEC credit notes."
     },
-    "maths-2024-hl-p1-deferred-q2-a-i": {
+    "maths-2024-hl-deferred-p1-q2-a-i": {
       "question": [
         [
           6,
@@ -85,7 +85,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q2-a-ii": {
+    "maths-2024-hl-deferred-p1-q2-a-ii": {
       "question": [
         [
           6,
@@ -112,7 +112,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q2-b": {
+    "maths-2024-hl-deferred-p1-q2-b": {
       "question": [
         [
           7,
@@ -133,7 +133,7 @@
       ],
       "sourceNote": "The final numeric award is printed as 10j. The stray j is a typographical error; this is a 10-mark question."
     },
-    "maths-2024-hl-p1-deferred-q3-a": {
+    "maths-2024-hl-deferred-p1-q3-a": {
       "question": [
         [
           8,
@@ -154,7 +154,7 @@
       ],
       "sourceNote": "The required composition is g(f(x)), which gives 36x² − 72x + 36. The original notes also mention f(g(x)) for partial credit; that is not the requested composition."
     },
-    "maths-2024-hl-p1-deferred-q3-b": {
+    "maths-2024-hl-deferred-p1-q3-b": {
       "question": [
         [
           9,
@@ -174,7 +174,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q3-c": {
+    "maths-2024-hl-deferred-p1-q3-c": {
       "question": [
         [
           9,
@@ -194,7 +194,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q4-a": {
+    "maths-2024-hl-deferred-p1-q4-a": {
       "question": [
         [
           10,
@@ -214,7 +214,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q4-b": {
+    "maths-2024-hl-deferred-p1-q4-b": {
       "question": [
         [
           10,
@@ -244,7 +244,7 @@
       "supplement": "argand-2024-hl-deferred",
       "supplementAlt": "NextStepUni labelled Argand diagram: upper-left far y, upper-left near z, lower-left w, lower-right x; followed by original SEC credit notes."
     },
-    "maths-2024-hl-p1-deferred-q4-c": {
+    "maths-2024-hl-deferred-p1-q4-c": {
       "question": [
         [
           11,
@@ -264,7 +264,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q5-a": {
+    "maths-2024-hl-deferred-p1-q5-a": {
       "question": [
         [
           12,
@@ -284,7 +284,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q5-b-i": {
+    "maths-2024-hl-deferred-p1-q5-b-i": {
       "question": [
         [
           13,
@@ -304,7 +304,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q5-b-ii": {
+    "maths-2024-hl-deferred-p1-q5-b-ii": {
       "question": [
         [
           13,
@@ -331,7 +331,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q6-a-i": {
+    "maths-2024-hl-deferred-p1-q6-a-i": {
       "question": [
         [
           14,
@@ -351,7 +351,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q6-a-ii": {
+    "maths-2024-hl-deferred-p1-q6-a-ii": {
       "question": [
         [
           14,
@@ -378,7 +378,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q6-b-i-ii": {
+    "maths-2024-hl-deferred-p1-q6-b-i-ii": {
       "question": [
         [
           15,
@@ -406,7 +406,7 @@
       ],
       "sourceNote": "For part (ii), the full interval is 0 < a < 3. The printed a < 3 omits the strict lower bound: the integral is zero when a = 0, and positive only for 0 < a < 3 within the given domain."
     },
-    "maths-2024-hl-p1-deferred-q7-a-i-ii": {
+    "maths-2024-hl-deferred-p1-q7-a-i-ii": {
       "question": [
         [
           16,
@@ -436,7 +436,7 @@
       "supplement": "shed-2024-hl-deferred",
       "supplementAlt": "NextStepUni complete table and profit graph from x=0 to 25: −900, 925, 2200, 2625, 1900, −275 at steps of five; followed by original SEC credit notes."
     },
-    "maths-2024-hl-p1-deferred-q7-b-i-ii": {
+    "maths-2024-hl-deferred-p1-q7-b-i-ii": {
       "question": [
         [
           17,
@@ -463,7 +463,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q7-c": {
+    "maths-2024-hl-deferred-p1-q7-c": {
       "question": [
         [
           18,
@@ -483,7 +483,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q7-d": {
+    "maths-2024-hl-deferred-p1-q7-d": {
       "question": [
         [
           19,
@@ -504,7 +504,7 @@
       ],
       "sourceNote": "The scheme labels this 10C but lists five numeric bands: 0, 3, 5, 7, 10. The card labels that structure 10D and preserves all five published awards and the original credit notes."
     },
-    "maths-2024-hl-p1-deferred-q8-a": {
+    "maths-2024-hl-deferred-p1-q8-a": {
       "question": [
         [
           20,
@@ -524,7 +524,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q8-b": {
+    "maths-2024-hl-deferred-p1-q8-b": {
       "question": [
         [
           20,
@@ -551,7 +551,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q8-c": {
+    "maths-2024-hl-deferred-p1-q8-c": {
       "question": [
         [
           20,
@@ -579,7 +579,7 @@
       ],
       "sourceNote": "The final printed line should read w′(5) = −1·06, not w′(t). This is a decrease of about 1·06 percentage points in water content per week at week 5."
     },
-    "maths-2024-hl-p1-deferred-q8-d": {
+    "maths-2024-hl-deferred-p1-q8-d": {
       "question": [
         [
           20,
@@ -607,7 +607,7 @@
       ],
       "sourceNote": "The scheme prints 5C (0, 2, 5). These three bands have a 5B structure; the card uses 5B while retaining every numeric award and the original explanation."
     },
-    "maths-2024-hl-p1-deferred-q8-e-i-ii": {
+    "maths-2024-hl-deferred-p1-q8-e-i-ii": {
       "question": [
         [
           20,
@@ -644,7 +644,7 @@
       "supplement": "drying-2024-hl-deferred",
       "supplementAlt": "NextStepUni faster-drying graph using k=−0.15, with both curves starting at 25 and approaching 5; followed by original SEC credit notes."
     },
-    "maths-2024-hl-p1-deferred-q8-f": {
+    "maths-2024-hl-deferred-p1-q8-f": {
       "question": [
         [
           23,
@@ -664,7 +664,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q9-a": {
+    "maths-2024-hl-deferred-p1-q9-a": {
       "question": [
         [
           24,
@@ -684,7 +684,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q9-b": {
+    "maths-2024-hl-deferred-p1-q9-b": {
       "question": [
         [
           24,
@@ -712,7 +712,7 @@
       ],
       "sourceNote": "Here f is defined for all real x. Its local maximum is (8/3, 64/27); the 0 ≤ x ≤ 2 restriction describes the wave image, not the domain of this local-maximum question."
     },
-    "maths-2024-hl-p1-deferred-q9-c": {
+    "maths-2024-hl-deferred-p1-q9-c": {
       "question": [
         [
           24,
@@ -739,7 +739,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q9-d": {
+    "maths-2024-hl-deferred-p1-q9-d": {
       "question": [
         [
           24,
@@ -767,7 +767,7 @@
       ],
       "sourceNote": "Use ∫₀² f(x) dx − ∫₁·₅² g(x) dx. The scheme incorrectly prints a zero lower limit in two intermediate lines for g, but actually substitutes 1·5 and gets the correct area 25/24. Its scale label 10D also disagrees with the four numeric bands 0, 4, 6, 10; these awards are retained under the matching 10C label."
     },
-    "maths-2024-hl-p1-deferred-q9-e-i": {
+    "maths-2024-hl-deferred-p1-q9-e-i": {
       "question": [
         [
           27,
@@ -787,7 +787,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q9-e-ii": {
+    "maths-2024-hl-deferred-p1-q9-e-ii": {
       "question": [
         [
           27,
@@ -814,7 +814,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q10-a": {
+    "maths-2024-hl-deferred-p1-q10-a": {
       "question": [
         [
           28,
@@ -841,7 +841,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q10-b": {
+    "maths-2024-hl-deferred-p1-q10-b": {
       "question": [
         [
           28,
@@ -868,7 +868,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q10-c": {
+    "maths-2024-hl-deferred-p1-q10-c": {
       "question": [
         [
           28,
@@ -896,7 +896,7 @@
       ],
       "sourceNote": "The scheme prints 5C (0, 2, 5). These three numeric bands have a 5B structure; every published award is retained under the matching 5B label."
     },
-    "maths-2024-hl-p1-deferred-q10-d-i": {
+    "maths-2024-hl-deferred-p1-q10-d-i": {
       "question": [
         [
           28,
@@ -931,7 +931,7 @@
       ],
       "sourceNote": "To find |AC|, subtract |BC| from |AB|: 120 − 96 = 24 cm. The printed formula incorrectly says |CD| here. The next calculation is correct: |AD| = |AC| + |CD| = 24 + 76·8 = 100·8 cm."
     },
-    "maths-2024-hl-p1-deferred-q10-d-ii": {
+    "maths-2024-hl-deferred-p1-q10-d-ii": {
       "question": [
         [
           28,
@@ -958,7 +958,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p1-deferred-q10-e": {
+    "maths-2024-hl-deferred-p1-q10-e": {
       "question": [
         [
           31,

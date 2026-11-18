@@ -94,7 +94,9 @@ class Paper:
             card = dict(
                 id=c['id'], topicId=c['topicId'], conceptId=c['id'].split(f'-{self.year}-')[1].split('-', 1)[1],
                 level=self.level, year=self.year, subjectId='maths', section=self.section_of(q),
-                questionRef=f'{self.ref} ' + ', '.join(c['printedParts']),
+                # CARD-STANDARD.md section 4: a deferred sitting is the June citation plus " — Deferred sitting".
+                questionRef=f'{self.ref} ' + ', '.join(c['printedParts'])
+                + (' — Deferred sitting' if self.sitting == 'deferred' else ''),
             )
             if c.get('stem'):
                 card['stem'] = c['stem']

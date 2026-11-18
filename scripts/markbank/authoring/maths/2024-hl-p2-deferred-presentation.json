@@ -2,7 +2,7 @@
   "questionSha256": "86a67c187032908f698ba3dd74a639dd49c5a01ce96a1dee72fd5feafc67ee78",
   "solutionSha256": "31d908ba92708efe218e3c0a6db29625513077ebbf18fea2721cd776a07d97cd",
   "tasks": {
-    "maths-2024-hl-p2-deferred-q1-a-i-ii": {
+    "maths-2024-hl-deferred-p2-q1-a-i-ii": {
       "question": [
         [
           4,
@@ -29,7 +29,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q1-a-iii": {
+    "maths-2024-hl-deferred-p2-q1-a-iii": {
       "question": [
         [
           4,
@@ -56,7 +56,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q1-b": {
+    "maths-2024-hl-deferred-p2-q1-b": {
       "question": [
         [
           5,
@@ -76,7 +76,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q2-a": {
+    "maths-2024-hl-deferred-p2-q2-a": {
       "question": [
         [
           6,
@@ -97,7 +97,7 @@
       ],
       "sourceNote": "The generic distance formula has a typographical error: use (y₂ − y₁)², not (y₂ − x₁)². The substituted values and final equation (x − 2)² + (y − 4)² = 58 are correct."
     },
-    "maths-2024-hl-p2-deferred-q2-b": {
+    "maths-2024-hl-deferred-p2-q2-b": {
       "question": [
         [
           6,
@@ -118,7 +118,7 @@
       ],
       "sourceNote": "The seven printed points are examples. Any two distinct points on (x − 9)² + (y + 2)² = 52, other than the given (3, −6), answer the question. Keep both points in one response."
     },
-    "maths-2024-hl-p2-deferred-q2-c": {
+    "maths-2024-hl-deferred-p2-q2-c": {
       "question": [
         [
           7,
@@ -138,7 +138,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q3-a": {
+    "maths-2024-hl-deferred-p2-q3-a": {
       "question": [
         [
           8,
@@ -161,7 +161,7 @@
       "supplement": "tangent-2024-hl-deferred",
       "supplementAlt": "NextStepUni compass construction: extend PQ, mark U and V equally distant from Q, intersect equal-radius arcs centred at U and V, and draw the perpendicular tangent through those intersections and Q. Original SEC credit notes follow."
     },
-    "maths-2024-hl-p2-deferred-q3-b": {
+    "maths-2024-hl-deferred-p2-q3-b": {
       "question": [
         [
           8,
@@ -181,7 +181,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q3-c": {
+    "maths-2024-hl-deferred-p2-q3-c": {
       "question": [
         [
           9,
@@ -202,7 +202,7 @@
       ],
       "sourceNote": "The last printed angle label should be ∠AOE, not ∠AOB. The requested angle is 3x; ∠AOB is 180° − 4x. The original working and credit notes remain below."
     },
-    "maths-2024-hl-p2-deferred-q4-a": {
+    "maths-2024-hl-deferred-p2-q4-a": {
       "question": [
         [
           10,
@@ -222,7 +222,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q4-b-i": {
+    "maths-2024-hl-deferred-p2-q4-b-i": {
       "question": [
         [
           10,
@@ -245,7 +245,7 @@
       "supplement": "double-angle-2024-hl-deferred",
       "supplementAlt": "NextStepUni proof: sin(A+B)=sin A cos B+cos A sin B. Set B=A to obtain sin(2A)=sin A cos A+cos A sin A=2 sin A cos A. Original SEC credit notes follow."
     },
-    "maths-2024-hl-p2-deferred-q4-b-ii": {
+    "maths-2024-hl-deferred-p2-q4-b-ii": {
       "question": [
         [
           10,
@@ -273,7 +273,7 @@
       ],
       "sourceNote": "This is part (b)(ii) on the question paper; the scheme labels it (c). Since 0° < W < 45°, sin W is non-zero and can be cancelled to obtain cos W = 5/6."
     },
-    "maths-2024-hl-p2-deferred-q5-a-i-ii": {
+    "maths-2024-hl-deferred-p2-q5-a-i-ii": {
       "question": [
         [
           12,
@@ -300,7 +300,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q5-b-i": {
+    "maths-2024-hl-deferred-p2-q5-b-i": {
       "question": [
         [
           13,
@@ -320,7 +320,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q5-b-ii": {
+    "maths-2024-hl-deferred-p2-q5-b-ii": {
       "question": [
         [
           13,
@@ -347,7 +347,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q5-b-iii": {
+    "maths-2024-hl-deferred-p2-q5-b-iii": {
       "question": [
         [
           13,
@@ -374,7 +374,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q6-a-i": {
+    "maths-2024-hl-deferred-p2-q6-a-i": {
       "question": [
         [
           14,
@@ -394,7 +394,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q6-a-ii": {
+    "maths-2024-hl-deferred-p2-q6-a-ii": {
       "question": [
         [
           14,
@@ -421,7 +421,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q6-b": {
+    "maths-2024-hl-deferred-p2-q6-b": {
       "question": [
         [
           15,
@@ -441,7 +441,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q7-a-i": {
+    "maths-2024-hl-deferred-p2-q7-a-i": {
       "question": [
         [
           16,
@@ -462,7 +462,7 @@
       ],
       "sourceNote": "X is the height of one tree, not a sample mean as the printed subscript suggests. The scheme rounds z to ±1·11 before using the normal table, giving 0·733. Without that intermediate rounding the probability is approximately 0·73348."
     },
-    "maths-2024-hl-p2-deferred-q7-a-ii": {
+    "maths-2024-hl-deferred-p2-q7-a-ii": {
       "question": [
         [
           16,
@@ -490,7 +490,7 @@
       ],
       "sourceNote": "The scheme uses the rounded table value z = −1·64 and obtains 315·72 cm. A direct inverse-normal calculation uses z ≈ −1·64485 and gives about 315·59 cm; the small difference comes from table rounding."
     },
-    "maths-2024-hl-p2-deferred-q7-b": {
+    "maths-2024-hl-deferred-p2-q7-b": {
       "question": [
         [
           16,
@@ -517,7 +517,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q7-c-i-ii": {
+    "maths-2024-hl-deferred-p2-q7-c-i-ii": {
       "question": [
         [
           18,
@@ -554,7 +554,7 @@
       "supplement": "confidence-2024-hl-deferred",
       "supplementAlt": "NextStepUni corrected interpretation of a 95% confidence interval for the infected population proportion, followed by the original numerical calculation and unchanged SEC credit criteria."
     },
-    "maths-2024-hl-p2-deferred-q7-d-i-ii": {
+    "maths-2024-hl-deferred-p2-q7-d-i-ii": {
       "question": [
         [
           19,
@@ -574,7 +574,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q8-a-i": {
+    "maths-2024-hl-deferred-p2-q8-a-i": {
       "question": [
         [
           20,
@@ -594,7 +594,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q8-a-ii": {
+    "maths-2024-hl-deferred-p2-q8-a-ii": {
       "question": [
         [
           20,
@@ -621,7 +621,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q8-b": {
+    "maths-2024-hl-deferred-p2-q8-b": {
       "question": [
         [
           21,
@@ -641,7 +641,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q8-c": {
+    "maths-2024-hl-deferred-p2-q8-c": {
       "question": [
         [
           21,
@@ -662,7 +662,7 @@
       ],
       "sourceNote": "The last dimension in the scheme is mislabelled Height. The dimensions are height 48 cm, width 72 cm and length 120 cm, to the nearest centimetre."
     },
-    "maths-2024-hl-p2-deferred-q8-d": {
+    "maths-2024-hl-deferred-p2-q8-d": {
       "question": [
         [
           22,
@@ -682,7 +682,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q8-e": {
+    "maths-2024-hl-deferred-p2-q8-e": {
       "question": [
         [
           23,
@@ -702,7 +702,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q9-a-i": {
+    "maths-2024-hl-deferred-p2-q9-a-i": {
       "question": [
         [
           24,
@@ -722,7 +722,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q9-a-ii": {
+    "maths-2024-hl-deferred-p2-q9-a-ii": {
       "question": [
         [
           24,
@@ -752,7 +752,7 @@
       "supplement": "scatter-2024-hl-deferred",
       "supplementAlt": "Original SEC scatterplot with an attributed NextStepUni line of best fit and guides reading approximately 90 kg at height 1.8 m. The original axes have weight horizontally and height vertically. SEC credit notes follow."
     },
-    "maths-2024-hl-p2-deferred-q9-b-i-ii": {
+    "maths-2024-hl-deferred-p2-q9-b-i-ii": {
       "question": [
         [
           25,
@@ -779,7 +779,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q9-c": {
+    "maths-2024-hl-deferred-p2-q9-c": {
       "question": [
         [
           26,
@@ -799,7 +799,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q9-d-i-ii": {
+    "maths-2024-hl-deferred-p2-q9-d-i-ii": {
       "question": [
         [
           27,
@@ -826,7 +826,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q10-a-i-ii": {
+    "maths-2024-hl-deferred-p2-q10-a-i-ii": {
       "question": [
         [
           28,
@@ -856,7 +856,7 @@
       "supplement": "wheel-2024-hl-deferred",
       "supplementAlt": "NextStepUni table and smooth graph of h(t)=30−30cos(5πt), from 0 to 0.8 seconds. Heights at 0.1-second intervals: 0,30,60,30,0,30,60,30,0 centimetres. Original SEC credit notes follow."
     },
-    "maths-2024-hl-p2-deferred-q10-b": {
+    "maths-2024-hl-deferred-p2-q10-b": {
       "question": [
         [
           28,
@@ -883,7 +883,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q10-c-i": {
+    "maths-2024-hl-deferred-p2-q10-c-i": {
       "question": [
         [
           29,
@@ -903,7 +903,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q10-c-ii": {
+    "maths-2024-hl-deferred-p2-q10-c-ii": {
       "question": [
         [
           28,
@@ -944,7 +944,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q10-d-i": {
+    "maths-2024-hl-deferred-p2-q10-d-i": {
       "question": [
         [
           30,
@@ -964,7 +964,7 @@
         ]
       ]
     },
-    "maths-2024-hl-p2-deferred-q10-d-ii": {
+    "maths-2024-hl-deferred-p2-q10-d-ii": {
       "question": [
         [
           30,

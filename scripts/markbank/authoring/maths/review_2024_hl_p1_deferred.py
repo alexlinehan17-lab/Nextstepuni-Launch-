@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2024-hl-p1-deferred'
+PREFIX='maths-2024-hl-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2024-hl-p1-deferred'
 p=Paper(year=2024,level='higher',paper_key='p1',sitting='deferred',
- paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2024 HL Paper 1 — Deferred',
+ paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2024 HL Paper 1',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,4,6,10],'10D':[0,3,5,7,10],'15D':[0,4,6,8,15],'20D':[0,8,11,13,20]},
  reviewed_at='2026-10-30',general_notes=[2,3,4,5],scheme_pages=list(range(1,21)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -27,7 +29,7 @@ p=Paper(year=2024,level='higher',paper_key='p1',sitting='deferred',
  'Q10(d)(i) should subtract BC, not CD, to find AC. The numeric calculation 120−96=24 and subsequent AD=100.8 are correct.',
  ],out_name='2024-higher-p1-deferred.json',atlas_prefix='mathematics-higher-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 def label_note(printed,correct,marks):
  return {'markingNote':f'The scheme prints {printed}, but its numeric awards ({marks}) have the structure of {correct}. The card uses {correct} to label these bands; every published numeric award is retained.'}
 A('1-a','Q1(a)','10C',[6],[4],'4-1','algebra-expressions-factorising','Factorise fully 5x² − 45.',['a common factor identified','mentions difference of 2 squares'])

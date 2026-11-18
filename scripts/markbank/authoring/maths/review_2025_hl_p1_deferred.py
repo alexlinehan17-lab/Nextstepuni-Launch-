@@ -3,10 +3,12 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
 
-PREFIX='maths-2025-hl-p1-deferred'
+PREFIX='maths-2025-hl-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2025-hl-p1-deferred'
 p=Paper(year=2025,level='higher',paper_key='p1',sitting='deferred',
     paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',
-    prefix=PREFIX,ref='2025 HL Paper 1 — Deferred',
+    prefix=PREFIX,ref='2025 HL Paper 1',
     scales={'5B':[0,2,5],'5C':[0,2,3,5],'5D':[0,2,3,4,5],
             '10B':[0,5,10],'10C':[0,4,6,10],'10D':[0,2,4,6,10],
             '15C':[0,4,8,15],'15D':[0,4,7,10,15]},
@@ -28,7 +30,7 @@ p=Paper(year=2025,level='higher',paper_key='p1',sitting='deferred',
 
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
     p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,
-          dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+          dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 
 A('1-a','Q1(a)','10C',[8],[4],'4-2','algebra-solving-equations,algebra-quadratics',
   'Solve the following equation in x. Give each answer correct to 2 decimal places. 2x² − 8x − 11 = 0.',

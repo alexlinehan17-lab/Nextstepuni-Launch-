@@ -769,7 +769,8 @@ def build(ledger, year, level):
         card = {
             'id': cid, 'subjectId': 'physics', 'topicId': t['topic'], 'conceptId': t['concept'],
             'section': t['sec'],
-            'questionRef': f'{year} {LT} {t["ref"]}' + (' — Deferred sitting' if deferred else '') + (f' — {t["route"]}' if t['route'] else '')
+            # CARD-STANDARD.md section 4: the June citation (route label included), then " — Deferred sitting".
+            'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else '') + (' — Deferred sitting' if deferred else '')
                            + (f' — {item[1]}' if item else ''),
         }
         if stem:

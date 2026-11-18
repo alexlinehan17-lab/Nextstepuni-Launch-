@@ -124064,7 +124064,7 @@
   "topicId": "phys-2-6",
   "conceptId": "spacing",
   "section": "A",
-  "questionRef": "2022 HL Q4(iii) — Deferred sitting — Grating spacing",
+  "questionRef": "2022 HL Q4(iii) — Grating spacing — Deferred sitting",
   "stem": "The following is part of a student’s report on an experiment to measure the wavelength of monochromatic light with a diffraction grating. “The apparatus, including a monochromatic light source, was arranged so that a number of bright images could be observed. The position of the central bright image was noted. After this the angular positions of the other images were determined and the formula nλ = dsinθ was used to find the wavelength of the light.”",
   "questionText": "Explain how the value of d was determined.",
   "tariffModel": {
@@ -124090,7 +124090,7 @@
   "topicId": "phys-2-6",
   "conceptId": "angle",
   "section": "A",
-  "questionRef": "2022 HL Q4(iv) — Deferred sitting — Angle of diffraction",
+  "questionRef": "2022 HL Q4(iv) — Angle of diffraction — Deferred sitting",
   "stem": "The following is part of a student’s report on an experiment to measure the wavelength of monochromatic light with a diffraction grating. “The apparatus, including a monochromatic light source, was arranged so that a number of bright images could be observed. The position of the central bright image was noted. After this the angular positions of the other images were determined and the formula nλ = dsinθ was used to find the wavelength of the light.”",
   "questionText": "Explain how the value of θ for each image, was determined.",
   "tariffModel": {
@@ -124849,7 +124849,7 @@
   "topicId": "phys-4-5",
   "conceptId": "q6l-particle",
   "section": "B",
-  "questionRef": "2022 HL Q6(l) — Deferred sitting — particle",
+  "questionRef": "2022 HL Q6(l) — particle — Deferred sitting",
   "questionText": "Name the metal used as a target in the Cockroft and Walton experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -124873,7 +124873,7 @@
   "topicId": "phys-3-3",
   "conceptId": "q6l-led",
   "section": "B",
-  "questionRef": "2022 HL Q6(l) — Deferred sitting — led",
+  "questionRef": "2022 HL Q6(l) — led — Deferred sitting",
   "questionText": "A light‐emitting diode emits light of a particular colour when a current flows. What determines the colour of the emitted light?",
   "tariffModel": {
    "kind": "fixed"
@@ -124897,7 +124897,7 @@
   "topicId": "phys-1-1",
   "conceptId": "displacement",
   "section": "B",
-  "questionRef": "2022 HL Q7(i) — Deferred sitting — Displacement",
+  "questionRef": "2022 HL Q7(i) — Displacement — Deferred sitting",
   "questionText": "Define displacement",
   "tariffModel": {
    "kind": "fixed"
@@ -124921,7 +124921,7 @@
   "topicId": "phys-1-1",
   "conceptId": "velocity",
   "section": "B",
-  "questionRef": "2022 HL Q7(ii) — Deferred sitting — Velocity",
+  "questionRef": "2022 HL Q7(ii) — Velocity — Deferred sitting",
   "questionText": "Define velocity.",
   "tariffModel": {
    "kind": "fixed"
@@ -125482,7 +125482,7 @@
   "topicId": "phys-3-6",
   "conceptId": "faraday",
   "section": "B",
-  "questionRef": "2022 HL Q9(i) — Deferred sitting — Faraday’s law",
+  "questionRef": "2022 HL Q9(i) — Faraday’s law — Deferred sitting",
   "questionText": "State Faraday’s law of electromagnetic induction",
   "tariffModel": {
    "kind": "fixed"
@@ -125512,7 +125512,7 @@
   "topicId": "phys-3-6",
   "conceptId": "lenz",
   "section": "B",
-  "questionRef": "2022 HL Q9(ii) — Deferred sitting — Lenz’s law",
+  "questionRef": "2022 HL Q9(ii) — Lenz’s law — Deferred sitting",
   "questionText": "State Lenz’s law.",
   "tariffModel": {
    "kind": "fixed"
@@ -125958,7 +125958,7 @@
   "topicId": "phys-4-2",
   "conceptId": "photon",
   "section": "B",
-  "questionRef": "2022 HL Q10(b)(iv) — Deferred sitting — Photon energy",
+  "questionRef": "2022 HL Q10(b)(iv) — Photon energy — Deferred sitting",
   "stem": "The photocell is based on the photoelectric effect. Light of frequency 7.6 × 10¹⁴ Hz is incident on a metal that has a work function of 2.1 eV.",
   "questionText": "Calculate (iv) the energy of a photon of the incident light",
   "tariffModel": {
@@ -125991,7 +125991,7 @@
   "topicId": "phys-4-2",
   "conceptId": "electron",
   "section": "B",
-  "questionRef": "2022 HL Q10(b)(v) — Deferred sitting — Maximum electron energy",
+  "questionRef": "2022 HL Q10(b)(v) — Maximum electron energy — Deferred sitting",
   "stem": "The photocell is based on the photoelectric effect. Light of frequency 7.6 × 10¹⁴ Hz is incident on a metal that has a work function of 2.1 eV.",
   "questionText": "Calculate the energy of the most energetic electron emitted.",
   "tariffModel": {
@@ -126023,7 +126023,7 @@
   "topicId": "phys-3-2",
   "conceptId": "pd",
   "section": "B",
-  "questionRef": "2022 HL Q11(i) — Deferred sitting — Potential difference",
+  "questionRef": "2022 HL Q11(i) — Potential difference — Deferred sitting",
   "questionText": "Define potential difference",
   "tariffModel": {
    "kind": "fixed"
@@ -126071,7 +126071,7 @@
   "topicId": "phys-3-3",
   "conceptId": "resistance",
   "section": "B",
-  "questionRef": "2022 HL Q11(ii) — Deferred sitting — Resistance",
+  "questionRef": "2022 HL Q11(ii) — Resistance — Deferred sitting",
   "questionText": "Define resistance.",
   "tariffModel": {
    "kind": "fixed"
@@ -126334,7 +126334,7 @@
   "topicId": "phys-4-5",
   "conceptId": "quark",
   "section": "B",
-  "questionRef": "2022 HL Q12(a)(i) — Deferred sitting — Quark",
+  "questionRef": "2022 HL Q12(a)(i) — Quark — Deferred sitting",
   "stem": "CERN, based near Geneva, is the European centre for research in particle physics. The photograph shows the particle accelerator in CERN, which is in a 27 km long circular tunnel. The accelerator has been used to find many of the fundamental particles of matter.",
   "questionText": "Explain what is meant by the following terms: quark",
   "tariffModel": {
@@ -126366,7 +126366,7 @@
   "topicId": "phys-4-5",
   "conceptId": "lepton",
   "section": "B",
-  "questionRef": "2022 HL Q12(a)(ii) — Deferred sitting — Lepton",
+  "questionRef": "2022 HL Q12(a)(ii) — Lepton — Deferred sitting",
   "stem": "CERN, based near Geneva, is the European centre for research in particle physics. The photograph shows the particle accelerator in CERN, which is in a 27 km long circular tunnel. The accelerator has been used to find many of the fundamental particles of matter.",
   "questionText": "Explain what is meant by the following terms: lepton",
   "tariffModel": {
@@ -126398,7 +126398,7 @@
   "topicId": "phys-4-5",
   "conceptId": "meson",
   "section": "B",
-  "questionRef": "2022 HL Q12(a)(iii) — Deferred sitting — Meson",
+  "questionRef": "2022 HL Q12(a)(iii) — Meson — Deferred sitting",
   "stem": "CERN, based near Geneva, is the European centre for research in particle physics. The photograph shows the particle accelerator in CERN, which is in a 27 km long circular tunnel. The accelerator has been used to find many of the fundamental particles of matter.",
   "questionText": "Explain what is meant by the following terms: meson",
   "tariffModel": {
@@ -126425,7 +126425,7 @@
   "topicId": "phys-4-5",
   "conceptId": "baryon",
   "section": "B",
-  "questionRef": "2022 HL Q12(a)(iv) — Deferred sitting — Baryon",
+  "questionRef": "2022 HL Q12(a)(iv) — Baryon — Deferred sitting",
   "stem": "CERN, based near Geneva, is the European centre for research in particle physics. The photograph shows the particle accelerator in CERN, which is in a 27 km long circular tunnel. The accelerator has been used to find many of the fundamental particles of matter.",
   "questionText": "Explain what is meant by the following terms: baryon",
   "tariffModel": {
@@ -126788,7 +126788,7 @@
   "topicId": "phys-3-3",
   "conceptId": "ammeter",
   "section": "B",
-  "questionRef": "2022 HL Q12(b)(vi) — Deferred sitting — Ammeter",
+  "questionRef": "2022 HL Q12(b)(vi) — Ammeter — Deferred sitting",
   "questionText": "Describe how a moving‐coil galvanometer may be arranged so as to function (vi) as an ammeter",
   "tariffModel": {
    "kind": "fixed"
@@ -126818,7 +126818,7 @@
   "topicId": "phys-3-3",
   "conceptId": "voltmeter",
   "section": "B",
-  "questionRef": "2022 HL Q12(b)(vii) — Deferred sitting — Voltmeter",
+  "questionRef": "2022 HL Q12(b)(vii) — Voltmeter — Deferred sitting",
   "questionText": "Describe how a moving‐coil galvanometer may be arranged so as to function as a voltmeter.",
   "tariffModel": {
    "kind": "fixed"
@@ -127233,7 +127233,7 @@
   "topicId": "phys-1-3",
   "conceptId": "velocity",
   "section": "B",
-  "questionRef": "2022 HL Q14(a)(iv) — Deferred sitting — Maximum velocity",
+  "questionRef": "2022 HL Q14(a)(iv) — Maximum velocity — Deferred sitting",
   "stem": "The length of the spiral spring in the diagram increases from 50 cm to 56 cm when a body of weight 0.7 N is hung from the spring. When the body at the end of the spring is pulled down by a further short distance and then released, the mass oscillates with simple harmonic motion.",
   "questionText": "At what point during its oscillation does the body have (iv) maximum velocity",
   "tariffModel": {
@@ -127259,7 +127259,7 @@
   "topicId": "phys-1-3",
   "conceptId": "acceleration",
   "section": "B",
-  "questionRef": "2022 HL Q14(a)(v) — Deferred sitting — Maximum acceleration",
+  "questionRef": "2022 HL Q14(a)(v) — Maximum acceleration — Deferred sitting",
   "stem": "The length of the spiral spring in the diagram increases from 50 cm to 56 cm when a body of weight 0.7 N is hung from the spring. When the body at the end of the spring is pulled down by a further short distance and then released, the mass oscillates with simple harmonic motion.",
   "questionText": "At what point during its oscillation does the body have maximum acceleration?",
   "tariffModel": {
@@ -127490,7 +127490,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-a",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(iii) — Deferred sitting — Plate A charge",
+  "questionRef": "2022 HL Q14(c)(iii) — Plate A charge — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right.",
   "questionText": "Calculate the charge on (iii) plate A",
   "tariffModel": {
@@ -127516,7 +127516,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-b",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(iv) — Deferred sitting — Plate B charge",
+  "questionRef": "2022 HL Q14(c)(iv) — Plate B charge — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right.",
   "questionText": "Calculate the charge on plate B.",
   "tariffModel": {
@@ -127568,7 +127568,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-a",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(vi) — Deferred sitting — Parallel plate A",
+  "questionRef": "2022 HL Q14(c)(vi) — Parallel plate A — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right. A 2 µF capacitor, with plates X and Y, is now connected in parallel with the first capacitor across the 6 V battery, as shown in the diagram on the left.",
   "questionText": "Calculate the charge that is now on plate A",
   "tariffModel": {
@@ -127594,7 +127594,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-b",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(vii) — Deferred sitting — Parallel plate B",
+  "questionRef": "2022 HL Q14(c)(vii) — Parallel plate B — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right. A 2 µF capacitor, with plates X and Y, is now connected in parallel with the first capacitor across the 6 V battery, as shown in the diagram on the left.",
   "questionText": "Calculate the charge that is now on plate B",
   "tariffModel": {
@@ -127620,7 +127620,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-x",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(viii) — Deferred sitting — Parallel plate X",
+  "questionRef": "2022 HL Q14(c)(viii) — Parallel plate X — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right. A 2 µF capacitor, with plates X and Y, is now connected in parallel with the first capacitor across the 6 V battery, as shown in the diagram on the left.",
   "questionText": "Calculate the charge that is now on plate X",
   "tariffModel": {
@@ -127646,7 +127646,7 @@
   "topicId": "phys-3-2",
   "conceptId": "plate-y",
   "section": "B",
-  "questionRef": "2022 HL Q14(c)(ix) — Deferred sitting — Parallel plate Y",
+  "questionRef": "2022 HL Q14(c)(ix) — Parallel plate Y — Deferred sitting",
   "stem": "A parallel plate capacitor of capacitance 3 µF has plates A and B connected across a 6 V battery, as shown in the diagram on the right. A 2 µF capacitor, with plates X and Y, is now connected in parallel with the first capacitor across the 6 V battery, as shown in the diagram on the left.",
   "questionText": "Calculate the charge that is now on plate Y.",
   "tariffModel": {
@@ -129378,7 +129378,7 @@
   "topicId": "phys-4-5",
   "conceptId": "q6l-neutrino",
   "section": "B",
-  "questionRef": "2023 HL Q6(l) — Deferred sitting — neutrino",
+  "questionRef": "2023 HL Q6(l) — neutrino — Deferred sitting",
   "questionText": "Explain why the existence of the neutrino was first proposed.",
   "tariffModel": {
    "kind": "fixed"
@@ -129402,7 +129402,7 @@
   "topicId": "phys-3-4",
   "conceptId": "q6l-relay",
   "section": "B",
-  "questionRef": "2023 HL Q6(l) — Deferred sitting — relay",
+  "questionRef": "2023 HL Q6(l) — relay — Deferred sitting",
   "questionText": "What is an electromagnetic relay? State one use of an electromagnetic relay.",
   "tariffModel": {
    "kind": "fixed"
@@ -131174,7 +131174,7 @@
   "topicId": "phys-3-3",
   "conceptId": "q12b-i-ii",
   "section": "B",
-  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (i)–(ii)",
+  "questionRef": "2023 HL Q12(b) — Parts (i)–(ii) — Deferred sitting",
   "stem": "The semiconductor industry has grown to become one of the most important industries in modern society. The development of semiconductors and integrated electronic circuits has led to a range of new devices which have changed the way people live.",
   "questionText": "(i) What is a semiconductor?\n(ii) Sketch the graph to show the variation of resistance with temperature for a semiconductor thermistor.",
   "tariffModel": {
@@ -131220,7 +131220,7 @@
   "topicId": "phys-3-3",
   "conceptId": "q12b-iii-v",
   "section": "B",
-  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (iii)–(v)",
+  "questionRef": "2023 HL Q12(b) — Parts (iii)–(v) — Deferred sitting",
   "stem": "The semiconductor industry has grown to become one of the most important industries in modern society. The development of semiconductors and integrated electronic circuits has led to a range of new devices which have changed the way people live. Rectification is an important process in modern electronics.",
   "questionText": "(iii) A semiconductor diode can be used as a half‐wave rectifier. Explain the term ‘half‐wave rectifier’.\n(iv) A bridge rectifier can provide full‐wave rectification. Draw the circuit diagram of a bridge rectifier.\n(v) What device can be used to smooth the current from a bridge rectifier?",
   "tariffModel": {
@@ -131271,7 +131271,7 @@
   "topicId": "phys-3-3",
   "conceptId": "q12b-vi-vii",
   "section": "B",
-  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (vi)–(vii)",
+  "questionRef": "2023 HL Q12(b) — Parts (vi)–(vii) — Deferred sitting",
   "stem": "The semiconductor industry has grown to become one of the most important industries in modern society. The development of semiconductors and integrated electronic circuits has led to a range of new devices which have changed the way people live. A rectifier can be used to produce the direct current needed by a transistor.",
   "questionText": "(vi) Describe with the aid of a labelled diagram the basic structure of a bi‐polar transistor.\n(vii) The diagram below shows a thermistor used in a transistor circuit. Explain what happens in the circuit when the thermistor is kept at a low temperature.",
   "tariffModel": {
@@ -131330,7 +131330,7 @@
   "topicId": "phys-3-3",
   "conceptId": "q12b-viii-ix",
   "section": "B",
-  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (viii)–(ix)",
+  "questionRef": "2023 HL Q12(b) — Parts (viii)–(ix) — Deferred sitting",
   "stem": "The semiconductor industry has grown to become one of the most important industries in modern society. The development of semiconductors and integrated electronic circuits has led to a range of new devices which have changed the way people live. Logic gates are the basic building blocks of digital electronic circuits.",
   "questionText": "(viii) Draw a circuit diagram to show how a transistor can be used to make a NOT gate.\n(ix) Draw the truth table for a NOT gate",
   "tariffModel": {

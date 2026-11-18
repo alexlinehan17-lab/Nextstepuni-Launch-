@@ -8521,8 +8521,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2024-ol-p1-deferred-q8-a-iv",
-      "phoneCard": "maths-2024-ol-p1-deferred-q9-d-ii-iii",
+      "desktopCard": "maths-2024-ol-deferred-p1-q8-a-iv",
+      "phoneCard": "maths-2024-ol-deferred-p1-q9-d-ii-iii",
       "phoneViewport": [
         390,
         844
@@ -8603,8 +8603,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2024-ol-p2-deferred-q7-a-i",
-      "phoneCard": "maths-2024-ol-p2-deferred-q7-c-iii",
+      "desktopCard": "maths-2024-ol-deferred-p2-q7-a-i",
+      "phoneCard": "maths-2024-ol-deferred-p2-q7-c-iii",
       "phoneViewport": [
         390,
         844
@@ -8693,8 +8693,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2023-hl-p1-deferred-q9-b-iii",
-      "phoneCard": "maths-2023-hl-p1-deferred-q6-a",
+      "desktopCard": "maths-2023-hl-deferred-p1-q9-b-iii",
+      "phoneCard": "maths-2023-hl-deferred-p1-q6-a",
       "phoneViewport": [
         390,
         844
@@ -8790,8 +8790,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2023-hl-p2-deferred-q9-c-i-ii",
-      "phoneCard": "maths-2023-hl-p2-deferred-q10-c",
+      "desktopCard": "maths-2023-hl-deferred-p2-q9-c-i-ii",
+      "phoneCard": "maths-2023-hl-deferred-p2-q10-c",
       "phoneViewport": [
         390,
         844
@@ -8877,8 +8877,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2023-ol-p1-deferred-q2-a",
-      "phoneCard": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii",
+      "desktopCard": "maths-2023-ol-deferred-p1-q2-a",
+      "phoneCard": "maths-2023-ol-deferred-p1-q8-c-i-ii-iii",
       "phoneViewport": [
         390,
         844
@@ -8974,8 +8974,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2023-ol-p2-deferred-q7-b",
-      "phoneCard": "maths-2023-ol-p2-deferred-q10-b-ii",
+      "desktopCard": "maths-2023-ol-deferred-p2-q7-b",
+      "phoneCard": "maths-2023-ol-deferred-p2-q10-b-ii",
       "phoneViewport": [
         390,
         844
@@ -9068,8 +9068,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2022-hl-p1-deferred-q1-c",
-      "phoneCard": "maths-2022-hl-p1-deferred-q6-a-i-ii-iii",
+      "desktopCard": "maths-2022-hl-deferred-p1-q1-c",
+      "phoneCard": "maths-2022-hl-deferred-p1-q6-a-i-ii-iii",
       "phoneViewport": [
         390,
         844
@@ -9167,8 +9167,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2022-hl-p2-deferred-q6-a",
-      "phoneCard": "maths-2022-hl-p2-deferred-q7-c-i-ii",
+      "desktopCard": "maths-2022-hl-deferred-p2-q6-a",
+      "phoneCard": "maths-2022-hl-deferred-p2-q7-c-i-ii",
       "phoneViewport": [
         390,
         844
@@ -9265,8 +9265,8 @@
     },
     "browser": {
       "engine": "Chrome via CUA",
-      "desktopCard": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii",
-      "phoneCard": "maths-2022-ol-p1-deferred-q10-d-ii",
+      "desktopCard": "maths-2022-ol-deferred-p1-q8-b-i-ii-iii",
+      "phoneCard": "maths-2022-ol-deferred-p1-q10-d-ii",
       "phoneViewport": [
         390,
         844

@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2023-hl-p1-deferred'
+PREFIX='maths-2023-hl-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2023-hl-p1-deferred'
 p=Paper(year=2023,level='higher',paper_key='p1',sitting='deferred',
- paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2023 HL Paper 1 — Deferred',
+ paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2023 HL Paper 1',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'5D':[0,2,3,4,5],'10B':[0,5,10],'10C':[0,4,7,10],'10D':[0,3,5,8,10],'15C':[0,6,12,15],'15D':[0,4,8,12,15],'20D':[0,5,10,15,20]},
  reviewed_at='2026-10-31',general_notes=[2,4],scheme_pages=list(range(1,25)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -25,7 +27,7 @@ p=Paper(year=2023,level='higher',paper_key='p1',sitting='deferred',
  'Q10(b) uses y for |BE| in its working, independent of the y in the later cylinder question. Q10(c)(ii) maximum is at y=4√3 with V″(y)=−12πy<0; the endpoints give zero volume.'
  ],out_name='2023-higher-p1-deferred.json',atlas_prefix='mathematics-higher-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 A('1-a','Q1(a)','15D',[6],[4],'4-2','algebra-simultaneous-equations','Solve the simultaneous equations x + y = 2, y + 2z = 12, 5x + 7y + z = 13.',['Effort to eliminate one variable','2 equations in 2 unknowns','2 unknowns found'])
 binomial='The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.'
 A('1-b-i','Q1(b)(i)','10C',[7],[5],'4-1','algebra-expressions-factorising','Find, in terms of k and x, the third term in this expansion.',['Effort at binomial term','3rd term found but in decreasing powers of'],stem=binomial)

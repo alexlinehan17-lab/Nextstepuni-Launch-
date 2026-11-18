@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2022-ol-p1-deferred'
+PREFIX='maths-2022-ol-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2022-ol-p1-deferred'
 p=Paper(year=2022,level='ordinary',paper_key='p1',sitting='deferred',
- paper_file='LC003GLP100EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2022 OL Paper 1 — Deferred',
+ paper_file='LC003GLP100EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2022 OL Paper 1',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,3,7,10],'10D':[0,3,5,8,10],'15C':[0,5,10,15],'15D':[0,4,8,12,15]},
  reviewed_at='2026-10-31',general_notes=[2,4,5],scheme_pages=list(range(1,25)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -24,7 +26,7 @@ p=Paper(year=2022,level='ordinary',paper_key='p1',sitting='deferred',
  'Q10(d)(ii) retains both riders’ complete data and the original graph. A reconstructed reading gives about 13:03, within the source’s 13:00–13:20 range (source example about 13:05). Q10(e) uses t in hours from 10:00; Q10(f) converts 30 minutes to 0.5 hours.'
  ],out_name='2022-ordinary-p1-deferred.json',atlas_prefix='mathematics-ordinary-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 A('1-a','Q1(a)','10D',[7],[4],'3-2','indices','Write 5^(−3) and 4^(3/2) without using indices.',['Relevant work with indices in either part','One correct solution together with relevant work with indices in the other part'])
 A('1-b','Q1(b)','10C',[7],[4],'3-2','indices','Given that (√8)⁶/8⁵ = 8^t where t ∈ ℤ, find the value of t.',['Relevant work with indices'])
 A('1-c','Q1(c)','10C',[8],[5],'4-1','algebra','Write the following as a single fraction in its simplest form: 2/(7x−5) − 4/(3x+1).',['writes the LCM','Full 2nd Line of the solution'])

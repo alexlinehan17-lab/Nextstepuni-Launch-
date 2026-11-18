@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2024-ol-p2-deferred'
+PREFIX='maths-2024-ol-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2024-ol-p2-deferred'
 p=Paper(year=2024,level='ordinary',paper_key='p2',sitting='deferred',
- paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2024 OL Paper 2 — Deferred',
+ paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2024 OL Paper 2',
  scales={'5A':[0,5],'5B':[0,2,5],'5C':[0,2,3,5],'10B':[0,4,10],'10C':[0,4,5,10],'10D':[0,3,5,7,10],'15D':[0,4,6,8,15]},
  reviewed_at='2026-10-31',general_notes=[2,22,23],scheme_pages=[1,2]+list(range(21,41)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -26,7 +28,7 @@ p=Paper(year=2024,level='ordinary',paper_key='p2',sitting='deferred',
  'Q10(b): the published solution takes the acute angle 42.5 degrees. The sine equation alone also allows 137.5 degrees; the sketch indicates the acute configuration but is explicitly not to scale.',
  ],out_name='2024-ordinary-p2-deferred.json',atlas_prefix='mathematics-ordinary-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 line='A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).'
 A('1-a-i','Q1(a)(i)','10C',[24],[4],'2-2','co-ordinate-geometry-of-the-line','Use the equation to find the co-ordinates of point Q.',['Some correct transposition.'],line)
 A('1-a-ii','Q1(a)(ii)','5C',[24],[4],'2-2','co-ordinate-geometry-of-the-line','Plot and label the points P and Q on the co-ordinate diagram below. Hence, draw the line k.',['coordinates swapped.','Label/s missing'],line)

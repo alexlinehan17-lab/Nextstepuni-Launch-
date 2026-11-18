@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2023-ol-p2-deferred'
+PREFIX='maths-2023-ol-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2023-ol-p2-deferred'
 p=Paper(year=2023,level='ordinary',paper_key='p2',sitting='deferred',
- paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2023 OL Paper 2 — Deferred',
+ paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2023 OL Paper 2',
  scales={'5A':[0,5],'5B':[0,3,5],'5C':[0,3,4,5],'5D':[0,2,3,4,5],'10C':[0,4,6,10],'10D':[0,4,6,8,10],'15C':[0,5,10,15],'15D':[0,5,8,12,15]},
  reviewed_at='2026-10-31',general_notes=[2,25,26],scheme_pages=[1,2]+list(range(24,53)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -26,7 +28,7 @@ p=Paper(year=2023,level='ordinary',paper_key='p2',sitting='deferred',
  'Q10(b)(ii) rounds 740/1276×100 early to 57.99, producing printed limits 55.191% and 60.789%. Retaining precision gives 55.194% and 60.793% to 3 decimal places, or proportion limits 0.552 and 0.608. A labelled NextStepUni worked example shows the calculation; official credit notes remain unchanged.'
  ],out_name='2023-ordinary-p2-deferred.json',atlas_prefix='mathematics-ordinary-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 dice='In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.'
 A('1-a-i','Q1(a)(i)','10D',[27],[4],'1-2','probability','Complete the table.',['Any 1 correct entry','5 rows or columns correct'],dice)
 A('1-a-ii','Q1(a)(ii)','5B',[27],[4],'1-2','probability','The game is won if the product of the numbers is a multiple of 3. What is the probability of winning the game on one throw of the two dice? Give your answer in the form p/q, where p, q ∈ ℕ.',['Correct numerator or denominator'],dice)

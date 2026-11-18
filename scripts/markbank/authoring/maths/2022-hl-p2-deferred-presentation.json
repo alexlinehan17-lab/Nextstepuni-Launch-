@@ -2,7 +2,7 @@
   "questionSha256": "6091b2af30aa83f86af4543db1a7564767949a7f014470ef5bbbeb3371827005",
   "solutionSha256": "c3915e6641f6ee152fa5efb0836d9dd5bbe697ca071131cdea55a6306295cba3",
   "tasks": {
-    "maths-2022-hl-p2-deferred-q1-a": {
+    "maths-2022-hl-deferred-p2-q1-a": {
       "question": [
         [
           4,
@@ -31,7 +31,7 @@
       "supplement": "matches-chart-2022-hl-deferred",
       "supplementAlt": "NextStepUni bar chart with number of matches 41–46 and frequencies 3,8,16,17,8,1. Both axes labelled and every bar value shown; original SEC criteria follow."
     },
-    "maths-2022-hl-p2-deferred-q1-b": {
+    "maths-2022-hl-deferred-p2-q1-b": {
       "question": [
         [
           4,
@@ -58,7 +58,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q1-c": {
+    "maths-2022-hl-deferred-p2-q1-c": {
       "question": [
         [
           4,
@@ -86,7 +86,7 @@
       ],
       "sourceNote": "The seventh pick must be a success. Choose the positions of the other two successes among the first six: C(6,2)(8/53)³(45/53)⁴ = 0.0268089…, giving 0.0268. Replacement makes the trials independent."
     },
-    "maths-2022-hl-p2-deferred-q2-a-i": {
+    "maths-2022-hl-deferred-p2-q2-a-i": {
       "question": [
         [
           6,
@@ -113,7 +113,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q2-a-ii": {
+    "maths-2022-hl-deferred-p2-q2-a-ii": {
       "question": [
         [
           6,
@@ -140,7 +140,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q2-a-iii": {
+    "maths-2022-hl-deferred-p2-q2-a-iii": {
       "question": [
         [
           6,
@@ -167,7 +167,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q2-b": {
+    "maths-2022-hl-deferred-p2-q2-b": {
       "question": [
         [
           7,
@@ -194,7 +194,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q3-a-i": {
+    "maths-2022-hl-deferred-p2-q3-a-i": {
       "question": [
         [
           8,
@@ -221,7 +221,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q3-a-ii": {
+    "maths-2022-hl-deferred-p2-q3-a-ii": {
       "question": [
         [
           8,
@@ -249,7 +249,7 @@
       ],
       "sourceNote": "The slope is (k+6)/(2k+2) for k≠−1. When k=−1 the line AP is vertical, so its slope is undefined."
     },
-    "maths-2022-hl-p2-deferred-q3-a-iii": {
+    "maths-2022-hl-deferred-p2-q3-a-iii": {
       "question": [
         [
           8,
@@ -283,7 +283,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q3-b": {
+    "maths-2022-hl-deferred-p2-q3-b": {
       "question": [
         [
           9,
@@ -303,7 +303,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q4-a-i": {
+    "maths-2022-hl-deferred-p2-q4-a-i": {
       "question": [
         [
           10,
@@ -330,7 +330,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q4-a-ii": {
+    "maths-2022-hl-deferred-p2-q4-a-ii": {
       "question": [
         [
           10,
@@ -357,7 +357,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q4-b": {
+    "maths-2022-hl-deferred-p2-q4-b": {
       "question": [
         [
           11,
@@ -378,7 +378,7 @@
       ],
       "sourceNote": "Choose one horizontal tangent, y=6 or y=−4, and one vertical tangent, x=−8 or x=2. One valid pair earns the single overall award; there is no requirement to give all four lines."
     },
-    "maths-2022-hl-p2-deferred-q5-a-i": {
+    "maths-2022-hl-deferred-p2-q5-a-i": {
       "question": [
         [
           12,
@@ -405,7 +405,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q5-a-ii": {
+    "maths-2022-hl-deferred-p2-q5-a-ii": {
       "question": [
         [
           12,
@@ -432,7 +432,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q5-b": {
+    "maths-2022-hl-deferred-p2-q5-b": {
       "question": [
         [
           13,
@@ -452,7 +452,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q6-a": {
+    "maths-2022-hl-deferred-p2-q6-a": {
       "question": [
         [
           14,
@@ -481,7 +481,7 @@
       "supplement": "root-three-construction-2022-hl-deferred",
       "supplementAlt": "NextStepUni compass-and-straightedge example. Draw circles centred at X and Y, each with radius XY=1, meeting at Z. Extend YX to W, with WX=1. The highlighted WZ has length √3. Circles, baseline, equilateral triangle, lengths and proof are shown; original SEC guidance follows."
     },
-    "maths-2022-hl-p2-deferred-q6-b-i": {
+    "maths-2022-hl-deferred-p2-q6-b-i": {
       "question": [
         [
           15,
@@ -508,7 +508,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q6-b-ii": {
+    "maths-2022-hl-deferred-p2-q6-b-ii": {
       "question": [
         [
           15,
@@ -535,7 +535,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q7-a-b": {
+    "maths-2022-hl-deferred-p2-q7-a-b": {
       "question": [
         [
           16,
@@ -569,7 +569,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q7-c-i-ii": {
+    "maths-2022-hl-deferred-p2-q7-c-i-ii": {
       "question": [
         [
           16,
@@ -606,7 +606,7 @@
       "supplementAlt": "NextStepUni example using all ten score pairs. A reasonable line y=0.3x+24 passes through the scatter, with points on both sides. At Mike’s score 35, the reading is Nuala’s score about 37. Other reasonable by-eye lines and consistent readings are accepted; original SEC criteria follow.",
       "sourceNote": "Use all ten pairs in the table when fitting the line, including B, D and J. This example line is one reasonable by-eye choice. The SEC accepts a reasonable slope, points on both sides, and an estimate consistent with the student’s line; there is no unique exact estimate."
     },
-    "maths-2022-hl-p2-deferred-q7-d-i": {
+    "maths-2022-hl-deferred-p2-q7-d-i": {
       "question": [
         [
           17,
@@ -633,7 +633,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q7-d-ii": {
+    "maths-2022-hl-deferred-p2-q7-d-ii": {
       "question": [
         [
           17,
@@ -661,7 +661,7 @@
       ],
       "sourceNote": "The plotted line is y=0.5x+10. Its slope means Mike’s predicted score rises by 0.5 points for each extra point in Nuala’s score. This describes an association between their scores."
     },
-    "maths-2022-hl-p2-deferred-q7-e-i": {
+    "maths-2022-hl-deferred-p2-q7-e-i": {
       "question": [
         [
           18,
@@ -689,7 +689,7 @@
       ],
       "sourceNote": "For a sample mean, use standard error 3.2/√12. The SEC’s normal-table calculation rounds the z-scores and gives 0.6246; keeping full precision gives about 0.6259. The scheme explicitly accepts rounding z up or down."
     },
-    "maths-2022-hl-p2-deferred-q7-e-ii": {
+    "maths-2022-hl-deferred-p2-q7-e-ii": {
       "question": [
         [
           18,
@@ -724,7 +724,7 @@
       ],
       "sourceNote": "Following the SEC model, use the first-season standard deviation 3.2: z=(33.5−31.6)/(3.2/√20)≈2.655. Doubling the upper-tail probability gives p≈0.0078 (normal-table rounding)."
     },
-    "maths-2022-hl-p2-deferred-q7-e-iii": {
+    "maths-2022-hl-deferred-p2-q7-e-iii": {
       "question": [
         [
           18,
@@ -766,7 +766,7 @@
       ],
       "sourceNote": "The two-tailed p-value is below 0.05, so reject H₀: μ=31.6. The sample provides evidence that the mean score changed; this supports the website’s claim at the 5% level, rather than proving it."
     },
-    "maths-2022-hl-p2-deferred-q8-a": {
+    "maths-2022-hl-deferred-p2-q8-a": {
       "question": [
         [
           19,
@@ -786,7 +786,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q8-b": {
+    "maths-2022-hl-deferred-p2-q8-b": {
       "question": [
         [
           19,
@@ -807,7 +807,7 @@
       ],
       "sourceNote": "There are 5 vowels, 1 fixed first digit, 10 choices for each middle digit, and 5 odd final digits: 5×1×10×10×5=2500. Digits may repeat."
     },
-    "maths-2022-hl-p2-deferred-q8-c": {
+    "maths-2022-hl-deferred-p2-q8-c": {
       "question": [
         [
           20,
@@ -828,7 +828,7 @@
       ],
       "sourceNote": "The final product in the source should use 0.19, not 1.19. The expected income is 1.20(0.16)+1.60(0.31)+1.95(0.34)+2.35(0.19)=€1.7975, which rounds to €1.80."
     },
-    "maths-2022-hl-p2-deferred-q8-d-i": {
+    "maths-2022-hl-deferred-p2-q8-d-i": {
       "question": [
         [
           20,
@@ -855,7 +855,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q8-d-ii": {
+    "maths-2022-hl-deferred-p2-q8-d-ii": {
       "question": [
         [
           20,
@@ -883,7 +883,7 @@
       ],
       "sourceNote": "The required cumulative probability is approximately 0.8093. The corresponding z-value is about 0.875, giving N≈73.1 g and hence 73 g. The source uses 0.88 and obtains 73.2 g; the final rounded answer is unchanged."
     },
-    "maths-2022-hl-p2-deferred-q8-d-iii": {
+    "maths-2022-hl-deferred-p2-q8-d-iii": {
       "question": [
         [
           21,
@@ -904,7 +904,7 @@
       ],
       "sourceNote": "Condition on the mixed large/extra-large group: P(extra large)=19/(19+23)=19/42. At least five means exactly five or exactly six: C(6,5)(19/42)⁵(23/42)+(19/42)⁶≈0.071."
     },
-    "maths-2022-hl-p2-deferred-q9-a-i": {
+    "maths-2022-hl-deferred-p2-q9-a-i": {
       "question": [
         [
           22,
@@ -931,7 +931,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q9-a-ii": {
+    "maths-2022-hl-deferred-p2-q9-a-ii": {
       "question": [
         [
           22,
@@ -958,7 +958,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q9-a-iii": {
+    "maths-2022-hl-deferred-p2-q9-a-iii": {
       "question": [
         [
           23,
@@ -978,7 +978,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q9-b": {
+    "maths-2022-hl-deferred-p2-q9-b": {
       "question": [
         [
           24,
@@ -998,7 +998,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q9-c-i": {
+    "maths-2022-hl-deferred-p2-q9-c-i": {
       "question": [
         [
           25,
@@ -1025,7 +1025,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q9-c-ii": {
+    "maths-2022-hl-deferred-p2-q9-c-ii": {
       "question": [
         [
           25,
@@ -1053,7 +1053,7 @@
       ],
       "sourceNote": "A rounded angle of 6° allows true angles from 5.5° up to 6.5°. Compare the error relative to each true height, not relative to the estimated height. The lower endpoint gives the larger relative error: about 9.15%, rounding to 9.2%."
     },
-    "maths-2022-hl-p2-deferred-q10-a": {
+    "maths-2022-hl-deferred-p2-q10-a": {
       "question": [
         [
           26,
@@ -1087,7 +1087,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q10-b": {
+    "maths-2022-hl-deferred-p2-q10-b": {
       "question": [
         [
           26,
@@ -1114,7 +1114,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q10-c": {
+    "maths-2022-hl-deferred-p2-q10-c": {
       "question": [
         [
           26,
@@ -1141,7 +1141,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q10-d-i": {
+    "maths-2022-hl-deferred-p2-q10-d-i": {
       "question": [
         [
           28,
@@ -1161,7 +1161,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q10-d-ii": {
+    "maths-2022-hl-deferred-p2-q10-d-ii": {
       "question": [
         [
           28,
@@ -1195,7 +1195,7 @@
         ]
       ]
     },
-    "maths-2022-hl-p2-deferred-q10-d-iii": {
+    "maths-2022-hl-deferred-p2-q10-d-iii": {
       "question": [
         [
           28,
@@ -1230,7 +1230,7 @@
       ],
       "sourceNote": "C lies on y=1−x and on x=k, so its co-ordinates are (k,1−k). The source labels the scale 5C but prints the three awards 0,2,5; the card uses those exact awards as scale 5B."
     },
-    "maths-2022-hl-p2-deferred-q10-d-iv": {
+    "maths-2022-hl-deferred-p2-q10-d-iv": {
       "question": [
         [
           28,

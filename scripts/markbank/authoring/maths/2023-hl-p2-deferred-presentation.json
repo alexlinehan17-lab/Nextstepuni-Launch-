@@ -2,7 +2,7 @@
   "questionSha256": "79a36341a542a55e386009942f5b4e0b9bd95b84b03819c2e06b634cf0a9fbca",
   "solutionSha256": "71e49ca02f643ab56422044abfb1985a827f209bc490bf7775d374af91246666",
   "tasks": {
-    "maths-2023-hl-p2-deferred-q1-a": {
+    "maths-2023-hl-deferred-p2-q1-a": {
       "question": [
         [
           4,
@@ -29,7 +29,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q1-b": {
+    "maths-2023-hl-deferred-p2-q1-b": {
       "question": [
         [
           4,
@@ -63,7 +63,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q1-c": {
+    "maths-2023-hl-deferred-p2-q1-c": {
       "question": [
         [
           4,
@@ -104,7 +104,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q2-a-i": {
+    "maths-2023-hl-deferred-p2-q2-a-i": {
       "question": [
         [
           6,
@@ -124,7 +124,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q2-a-ii": {
+    "maths-2023-hl-deferred-p2-q2-a-ii": {
       "question": [
         [
           6,
@@ -151,7 +151,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q2-b": {
+    "maths-2023-hl-deferred-p2-q2-b": {
       "question": [
         [
           7,
@@ -172,7 +172,7 @@
       ],
       "sourceNote": "The printed intermediate line 4k = 8 is a sign error: 15 + 4k = 7 gives 4k = −8 and k = −2. The final centre (5, −2), radius 3 and circle equation are correct."
     },
-    "maths-2023-hl-p2-deferred-q3-a": {
+    "maths-2023-hl-deferred-p2-q3-a": {
       "question": [
         [
           8,
@@ -206,7 +206,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q3-b": {
+    "maths-2023-hl-deferred-p2-q3-b": {
       "question": [
         [
           8,
@@ -240,7 +240,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q3-c": {
+    "maths-2023-hl-deferred-p2-q3-c": {
       "question": [
         [
           8,
@@ -274,7 +274,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q3-d": {
+    "maths-2023-hl-deferred-p2-q3-d": {
       "question": [
         [
           8,
@@ -315,7 +315,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q4-a-i-ii": {
+    "maths-2023-hl-deferred-p2-q4-a-i-ii": {
       "question": [
         [
           10,
@@ -345,7 +345,7 @@
       "supplementAlt": "NextStepUni completes the addition proof: sin(A+B)=cos[90°−(A+B)]=cos[(90°−A)−B]=cos(90°−A)cos B+sin(90°−A)sin B=sin A cos B+cos A sin B. The original SEC solution for both parts, including sin 2A=4/5 and cos 2A=−3/5, and joint 20D criteria follow.",
       "sourceNote": "Parts (i) and (ii) share 20D. The printed proof stops after the cofunction identities; the NextStepUni example supplies the final substitution and conclusion. The original solution remains below."
     },
-    "maths-2023-hl-p2-deferred-q4-b-i": {
+    "maths-2023-hl-deferred-p2-q4-b-i": {
       "question": [
         [
           11,
@@ -365,7 +365,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q4-b-ii": {
+    "maths-2023-hl-deferred-p2-q4-b-ii": {
       "question": [
         [
           11,
@@ -392,7 +392,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q5-a-i": {
+    "maths-2023-hl-deferred-p2-q5-a-i": {
       "question": [
         [
           12,
@@ -412,7 +412,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q5-a-ii": {
+    "maths-2023-hl-deferred-p2-q5-a-ii": {
       "question": [
         [
           12,
@@ -439,7 +439,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q5-b": {
+    "maths-2023-hl-deferred-p2-q5-b": {
       "question": [
         [
           13,
@@ -459,7 +459,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q5-c": {
+    "maths-2023-hl-deferred-p2-q5-c": {
       "question": [
         [
           13,
@@ -480,7 +480,7 @@
       ],
       "sourceNote": "The source’s “A and B are independent” refers to C and D in this question. Use P(C ∩ D) = P(C)P(D) = 0.5P(D). Then 0.85 = 0.5 + P(D) − 0.5P(D), so P(D) = 0.7."
     },
-    "maths-2023-hl-p2-deferred-q6-a-i": {
+    "maths-2023-hl-deferred-p2-q6-a-i": {
       "question": [
         [
           14,
@@ -500,7 +500,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q6-a-ii": {
+    "maths-2023-hl-deferred-p2-q6-a-ii": {
       "question": [
         [
           14,
@@ -527,7 +527,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q6-a-iii": {
+    "maths-2023-hl-deferred-p2-q6-a-iii": {
       "question": [
         [
           14,
@@ -554,7 +554,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q6-b-i": {
+    "maths-2023-hl-deferred-p2-q6-b-i": {
       "question": [
         [
           15,
@@ -574,7 +574,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q6-b-ii": {
+    "maths-2023-hl-deferred-p2-q6-b-ii": {
       "question": [
         [
           15,
@@ -601,7 +601,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q7-a-i": {
+    "maths-2023-hl-deferred-p2-q7-a-i": {
       "question": [
         [
           16,
@@ -628,7 +628,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q7-a-ii": {
+    "maths-2023-hl-deferred-p2-q7-a-ii": {
       "question": [
         [
           16,
@@ -662,7 +662,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q7-a-iii": {
+    "maths-2023-hl-deferred-p2-q7-a-iii": {
       "question": [
         [
           16,
@@ -689,7 +689,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q7-a-iv": {
+    "maths-2023-hl-deferred-p2-q7-a-iv": {
       "question": [
         [
           16,
@@ -717,7 +717,7 @@
       ],
       "sourceNote": "The source reuses the rounded side 29.9 cm, giving h ≈ 4.95 cm. Keeping the exact side 16 + 8√3 cm until the end also gives 5 cm to the nearest centimetre."
     },
-    "maths-2023-hl-p2-deferred-q7-a-v": {
+    "maths-2023-hl-deferred-p2-q7-a-v": {
       "question": [
         [
           16,
@@ -751,7 +751,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q7-a-vi": {
+    "maths-2023-hl-deferred-p2-q7-a-vi": {
       "question": [
         [
           16,
@@ -786,7 +786,7 @@
       ],
       "sourceNote": "The source repeats the same absolute-value branch twice. The other branch gives b = 20 + 8√3, outside the prism. The interior top-circle centre is (4√3 + 8, 4 + 8√3), with radius 4, as in the final equation."
     },
-    "maths-2023-hl-p2-deferred-q7-b": {
+    "maths-2023-hl-deferred-p2-q7-b": {
       "question": [
         [
           19,
@@ -806,7 +806,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q8-a-i": {
+    "maths-2023-hl-deferred-p2-q8-a-i": {
       "question": [
         [
           20,
@@ -833,7 +833,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q8-a-ii": {
+    "maths-2023-hl-deferred-p2-q8-a-ii": {
       "question": [
         [
           20,
@@ -860,7 +860,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q8-a-iii": {
+    "maths-2023-hl-deferred-p2-q8-a-iii": {
       "question": [
         [
           20,
@@ -887,7 +887,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q8-b-i": {
+    "maths-2023-hl-deferred-p2-q8-b-i": {
       "question": [
         [
           22,
@@ -915,7 +915,7 @@
       ],
       "sourceNote": "The official answer 11:00 assumes both cars have passed O: 100t = 120t − 40 gives t = 2 hours. If B’s constant motion is also assumed before it passes O, distance is |120t − 40| and t = 2/11 hour (about 9:10:55) is an earlier solution. The question does not explicitly exclude that interval."
     },
-    "maths-2023-hl-p2-deferred-q8-b-ii": {
+    "maths-2023-hl-deferred-p2-q8-b-ii": {
       "question": [
         [
           22,
@@ -942,7 +942,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q8-b-iii": {
+    "maths-2023-hl-deferred-p2-q8-b-iii": {
       "question": [
         [
           22,
@@ -970,7 +970,7 @@
       ],
       "sourceNote": "From (5t − 3)(155t + 23) = 0, the negative root is −23/155, not the printed −23/115. Discard it because the time must be after 9:00. The valid t = 3/5 hour gives 9:36."
     },
-    "maths-2023-hl-p2-deferred-q9-a": {
+    "maths-2023-hl-deferred-p2-q9-a": {
       "question": [
         [
           24,
@@ -991,7 +991,7 @@
       ],
       "sourceNote": "Use the class midpoints 10, 30, 50, 70, 90 and frequencies 4, 8, 10, 6, 2. The weighted sum Σxf is 1380, giving an estimated mean of 1380/30 = 46%."
     },
-    "maths-2023-hl-p2-deferred-q9-b": {
+    "maths-2023-hl-deferred-p2-q9-b": {
       "question": [
         [
           24,
@@ -1011,7 +1011,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q9-c-i-ii": {
+    "maths-2023-hl-deferred-p2-q9-c-i-ii": {
       "question": [
         [
           25,
@@ -1039,7 +1039,7 @@
       ],
       "sourceNote": "The detailed scheme awards 20D jointly to the table and expected value. The summary’s extra 10C is inconsistent with both the detailed criteria and Q9’s printed 50 marks. Expected goals = 10/3; an average need not be a whole number."
     },
-    "maths-2023-hl-p2-deferred-q9-d": {
+    "maths-2023-hl-deferred-p2-q9-d": {
       "question": [
         [
           26,
@@ -1062,7 +1062,7 @@
       "supplementAlt": "NextStepUni completes the requested proportion. Male:female=3:2 means three male shares out of five total: 3/(3+2)=3/5=0.6=60%. A five-section bar shows three male shares and two female shares. Check: 71(0.6)+73(0.4)=71.8. Original SEC solution and criteria follow.",
       "sourceNote": "The printed solution ends at male:female = 3:2. The question asks for the proportion of all candidates who were male: 3/(3+2) = 3/5 = 60%."
     },
-    "maths-2023-hl-p2-deferred-q10-a-i": {
+    "maths-2023-hl-deferred-p2-q10-a-i": {
       "question": [
         [
           27,
@@ -1089,7 +1089,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q10-a-ii": {
+    "maths-2023-hl-deferred-p2-q10-a-ii": {
       "question": [
         [
           27,
@@ -1116,7 +1116,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p2-deferred-q10-a-iii": {
+    "maths-2023-hl-deferred-p2-q10-a-iii": {
       "question": [
         [
           27,
@@ -1144,7 +1144,7 @@
       ],
       "sourceNote": "The logarithmic step must read n ln(0.92) ≤ ln(0.1). Since ln(0.92) is negative, division reverses the inequality: n ≥ ln(0.1)/ln(0.92) ≈ 27.615. The least whole number is 28, as in the source’s final answer."
     },
-    "maths-2023-hl-p2-deferred-q10-b-i": {
+    "maths-2023-hl-deferred-p2-q10-b-i": {
       "question": [
         [
           28,
@@ -1172,7 +1172,7 @@
       ],
       "sourceNote": "The source rounds z to −0.83 for the tables. With unrounded z = −0.8333…, the probability is about 0.2023; either method gives 20% to the requested nearest percentage."
     },
-    "maths-2023-hl-p2-deferred-q10-b-ii": {
+    "maths-2023-hl-deferred-p2-q10-b-ii": {
       "question": [
         [
           28,
@@ -1200,7 +1200,7 @@
       ],
       "sourceNote": "The source uses the rounded 20% from part (i), giving P(X < k) ≈ 0.75. Using the unrounded probability gives about 0.7523 instead. Both produce k = 10.12 ml to two decimal places."
     },
-    "maths-2023-hl-p2-deferred-q10-c": {
+    "maths-2023-hl-deferred-p2-q10-c": {
       "question": [
         [
           28,

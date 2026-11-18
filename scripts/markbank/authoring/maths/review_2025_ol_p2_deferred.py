@@ -3,10 +3,12 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
 
-PREFIX='maths-2025-ol-p2-deferred'
+PREFIX='maths-2025-ol-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2025-ol-p2-deferred'
 p=Paper(year=2025,level='ordinary',paper_key='p2',sitting='deferred',
     paper_file='LC003GLP200EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',
-    prefix=PREFIX,ref='2025 OL Paper 2 — Deferred',
+    prefix=PREFIX,ref='2025 OL Paper 2',
     scales={'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,4,6,10],'10D':[0,3,5,7,10],'15D':[0,6,8,10,15]},
     reviewed_at='2026-10-30',general_notes=[2,24,25,26,27],scheme_pages=[1,2]+list(range(23,45)),
     printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -25,7 +27,7 @@ p=Paper(year=2025,level='ordinary',paper_key='p2',sitting='deferred',
 
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
     p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,
-        dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+        dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 
 A('1-a','Q1(a)','10C',[27],[4],'2-2','co-ordinate-geometry-of-the-line',
   'The line p has a slope of 3/2 and crosses the y-axis at the point (0, 4). Find the equation of p.',

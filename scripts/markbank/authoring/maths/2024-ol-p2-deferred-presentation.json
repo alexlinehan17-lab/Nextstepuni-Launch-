@@ -2,7 +2,7 @@
   "questionSha256": "016e2611958b0e83494d2b320f141ac81ac58694796b884a1795ad462331518b",
   "solutionSha256": "34c9b0f4c918270f949fa811f2a2d92ddf146703c3003106f1304a228bac8ce3",
   "tasks": {
-    "maths-2024-ol-p2-deferred-q1-a-i": {
+    "maths-2024-ol-deferred-p2-q1-a-i": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q1-a-ii": {
+    "maths-2024-ol-deferred-p2-q1-a-ii": {
       "question": [
         [
           4,
@@ -50,7 +50,7 @@
       ],
       "sourceNote": "The source graph also shows R, which belongs to part (iii). Here plot P(2,0), Q(0,4) and the straight line k through them."
     },
-    "maths-2024-ol-p2-deferred-q1-a-iii": {
+    "maths-2024-ol-deferred-p2-q1-a-iii": {
       "question": [
         [
           4,
@@ -87,7 +87,7 @@
       "supplementAlt": "NextStepUni completed parallelogram O(0,0), P(2,0), Q(0,4), R(−2,4), followed by the original SEC credit notes.",
       "sourceNote": "The official answer gives R(−2,4) but omits the completed parallelogram. The NextStepUni drawing shows all four sides and labelled vertices."
     },
-    "maths-2024-ol-p2-deferred-q1-b": {
+    "maths-2024-ol-deferred-p2-q1-b": {
       "question": [
         [
           5,
@@ -107,7 +107,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q2-a-i": {
+    "maths-2024-ol-deferred-p2-q2-a-i": {
       "question": [
         [
           6,
@@ -127,7 +127,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q2-a-ii": {
+    "maths-2024-ol-deferred-p2-q2-a-ii": {
       "question": [
         [
           6,
@@ -154,7 +154,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q2-a-iii": {
+    "maths-2024-ol-deferred-p2-q2-a-iii": {
       "question": [
         [
           6,
@@ -181,7 +181,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q2-b-i": {
+    "maths-2024-ol-deferred-p2-q2-b-i": {
       "question": [
         [
           7,
@@ -201,7 +201,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q2-b-ii": {
+    "maths-2024-ol-deferred-p2-q2-b-ii": {
       "question": [
         [
           7,
@@ -228,7 +228,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q3-a-i": {
+    "maths-2024-ol-deferred-p2-q3-a-i": {
       "question": [
         [
           8,
@@ -248,7 +248,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q3-a-ii-iii": {
+    "maths-2024-ol-deferred-p2-q3-a-ii-iii": {
       "question": [
         [
           8,
@@ -282,7 +282,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q3-b": {
+    "maths-2024-ol-deferred-p2-q3-b": {
       "question": [
         [
           9,
@@ -302,7 +302,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q4-a-i-ii": {
+    "maths-2024-ol-deferred-p2-q4-a-i-ii": {
       "question": [
         [
           10,
@@ -322,7 +322,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q4-b-i-ii": {
+    "maths-2024-ol-deferred-p2-q4-b-i-ii": {
       "question": [
         [
           11,
@@ -350,7 +350,7 @@
       ],
       "sourceNote": "The diagram defines p as A only (A \\ B). The partial-credit example prints B \\ A = p in error. The worked solution correctly gives p = 16 and q = 29."
     },
-    "maths-2024-ol-p2-deferred-q4-b-iii": {
+    "maths-2024-ol-deferred-p2-q4-b-iii": {
       "question": [
         [
           11,
@@ -377,7 +377,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q5-a-i": {
+    "maths-2024-ol-deferred-p2-q5-a-i": {
       "question": [
         [
           12,
@@ -397,7 +397,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q5-a-ii": {
+    "maths-2024-ol-deferred-p2-q5-a-ii": {
       "question": [
         [
           12,
@@ -424,7 +424,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q5-b-i-ii": {
+    "maths-2024-ol-deferred-p2-q5-b-i-ii": {
       "question": [
         [
           13,
@@ -451,7 +451,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q5-b-iii": {
+    "maths-2024-ol-deferred-p2-q5-b-iii": {
       "question": [
         [
           13,
@@ -471,7 +471,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q6-a": {
+    "maths-2024-ol-deferred-p2-q6-a": {
       "question": [
         [
           14,
@@ -491,7 +491,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q6-b-i": {
+    "maths-2024-ol-deferred-p2-q6-b-i": {
       "question": [
         [
           15,
@@ -511,7 +511,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q6-b-ii": {
+    "maths-2024-ol-deferred-p2-q6-b-ii": {
       "question": [
         [
           15,
@@ -539,7 +539,7 @@
       ],
       "sourceNote": "This is part (b)(ii) on the paper. The summary’s (ii)(iii) label is a printing error; the full similarity proof earns one 10-mark allocation."
     },
-    "maths-2024-ol-p2-deferred-q7-a-i": {
+    "maths-2024-ol-deferred-p2-q7-a-i": {
       "question": [
         [
           16,
@@ -562,7 +562,7 @@
       "supplementAlt": "Complete original SEC scatterplot with Day 1 at (23,500) and Day 2 at (17,400), followed by official marking guidance.",
       "sourceNote": "The PDF table clips the graph’s right edge. The complete embedded SEC graph is reproduced above, unchanged, with NextStepUni captions identifying Day 1 and Day 2. The circle is for part (iv)."
     },
-    "maths-2024-ol-p2-deferred-q7-a-ii": {
+    "maths-2024-ol-deferred-p2-q7-a-ii": {
       "question": [
         [
           16,
@@ -590,7 +590,7 @@
       ],
       "sourceNote": "The detailed scheme label “5B” is a typo: its printed awards are 0, 4 and 10, and the summary confirms 10B. This task is worth 10 marks."
     },
-    "maths-2024-ol-p2-deferred-q7-a-iii": {
+    "maths-2024-ol-deferred-p2-q7-a-iii": {
       "question": [
         [
           16,
@@ -617,7 +617,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q7-a-iv": {
+    "maths-2024-ol-deferred-p2-q7-a-iv": {
       "question": [
         [
           16,
@@ -647,7 +647,7 @@
       "supplement": "icecream-outlier-2024-ol-deferred",
       "supplementAlt": "Complete original SEC scatterplot with the low point at about (19,147) circled; a possible early closure is offered as an illustrative explanation. Original credit notes follow."
     },
-    "maths-2024-ol-p2-deferred-q7-b-i": {
+    "maths-2024-ol-deferred-p2-q7-b-i": {
       "question": [
         [
           18,
@@ -667,7 +667,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q7-b-ii": {
+    "maths-2024-ol-deferred-p2-q7-b-ii": {
       "question": [
         [
           18,
@@ -694,7 +694,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q7-c-i-ii": {
+    "maths-2024-ol-deferred-p2-q7-c-i-ii": {
       "question": [
         [
           19,
@@ -721,7 +721,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q7-c-iii": {
+    "maths-2024-ol-deferred-p2-q7-c-iii": {
       "question": [
         [
           19,
@@ -758,7 +758,7 @@
       "supplementAlt": "NextStepUni hypothesis test: H0 p=0.30, H1 p≠0.30; rounded interval 17.4% to 28.6% excludes 30%, so reject H0. Original SEC solution and credit notes follow.",
       "sourceNote": "Using the requested rounded answers gives 23% ± 5.6% = (17.4%, 28.6%). The scheme’s (17.5%, 28.7%) comes from unrounded values, despite its rounded first line. Both exclude 30% and give the same conclusion. The worked example supplies the hypotheses explicitly."
     },
-    "maths-2024-ol-p2-deferred-q8-a-i": {
+    "maths-2024-ol-deferred-p2-q8-a-i": {
       "question": [
         [
           20,
@@ -778,7 +778,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q8-a-ii": {
+    "maths-2024-ol-deferred-p2-q8-a-ii": {
       "question": [
         [
           20,
@@ -805,7 +805,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q8-a-iii": {
+    "maths-2024-ol-deferred-p2-q8-a-iii": {
       "question": [
         [
           21,
@@ -825,7 +825,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q8-b-i-ii": {
+    "maths-2024-ol-deferred-p2-q8-b-i-ii": {
       "question": [
         [
           21,
@@ -852,7 +852,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q8-c-i": {
+    "maths-2024-ol-deferred-p2-q8-c-i": {
       "question": [
         [
           22,
@@ -872,7 +872,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q8-c-ii": {
+    "maths-2024-ol-deferred-p2-q8-c-ii": {
       "question": [
         [
           22,
@@ -899,7 +899,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-a-i": {
+    "maths-2024-ol-deferred-p2-q9-a-i": {
       "question": [
         [
           23,
@@ -919,7 +919,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-a-ii": {
+    "maths-2024-ol-deferred-p2-q9-a-ii": {
       "question": [
         [
           23,
@@ -946,7 +946,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-a-iii": {
+    "maths-2024-ol-deferred-p2-q9-a-iii": {
       "question": [
         [
           23,
@@ -973,7 +973,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-b-i": {
+    "maths-2024-ol-deferred-p2-q9-b-i": {
       "question": [
         [
           24,
@@ -993,7 +993,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-b-ii": {
+    "maths-2024-ol-deferred-p2-q9-b-ii": {
       "question": [
         [
           24,
@@ -1013,7 +1013,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-c-i": {
+    "maths-2024-ol-deferred-p2-q9-c-i": {
       "question": [
         [
           25,
@@ -1034,7 +1034,7 @@
       ],
       "sourceNote": "The published 5C scale gives 0, 2, 3 and 5 marks, but its notes also include an extra “Mid Partial Credit” descriptor (6 correct). That descriptor has no separate numeric award. The original wording and available awards are preserved; no additional mark has been invented."
     },
-    "maths-2024-ol-p2-deferred-q9-c-ii": {
+    "maths-2024-ol-deferred-p2-q9-c-ii": {
       "question": [
         [
           25,
@@ -1061,7 +1061,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q9-c-iii": {
+    "maths-2024-ol-deferred-p2-q9-c-iii": {
       "question": [
         [
           25,
@@ -1089,7 +1089,7 @@
       ],
       "sourceNote": "For the set P asked about, the two middle values are 7 and 11. M = (7 + 11)/2 = 9, so M belongs to P′. The scheme’s additional median reference does not create another required task."
     },
-    "maths-2024-ol-p2-deferred-q10-a-i": {
+    "maths-2024-ol-deferred-p2-q10-a-i": {
       "question": [
         [
           26,
@@ -1109,7 +1109,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q10-a-ii": {
+    "maths-2024-ol-deferred-p2-q10-a-ii": {
       "question": [
         [
           26,
@@ -1136,7 +1136,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q10-a-iii": {
+    "maths-2024-ol-deferred-p2-q10-a-iii": {
       "question": [
         [
           26,
@@ -1164,7 +1164,7 @@
       ],
       "sourceNote": "Bring forward the 77° angle from part (ii), not part (iv) as one credit note says. Angle DEA = 180° − 37° − 77° = 66°; AD = 80 sin 66° ≈ 73 m."
     },
-    "maths-2024-ol-p2-deferred-q10-a-iv": {
+    "maths-2024-ol-deferred-p2-q10-a-iv": {
       "question": [
         [
           26,
@@ -1191,7 +1191,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q10-a-v": {
+    "maths-2024-ol-deferred-p2-q10-a-v": {
       "question": [
         [
           26,
@@ -1218,7 +1218,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p2-deferred-q10-b": {
+    "maths-2024-ol-deferred-p2-q10-b": {
       "question": [
         [
           28,

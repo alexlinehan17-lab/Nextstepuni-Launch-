@@ -3,10 +3,12 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
 
-PREFIX='maths-2025-hl-p2-deferred'
+PREFIX='maths-2025-hl-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2025-hl-p2-deferred'
 p=Paper(year=2025,level='higher',paper_key='p2',sitting='deferred',
     paper_file='LC003ALP200EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',
-    prefix=PREFIX,ref='2025 HL Paper 2 — Deferred',
+    prefix=PREFIX,ref='2025 HL Paper 2',
     scales={'5B':[0,2,5],'5C':[0,2,3,5],'5D':[0,2,3,4,5],
             '10B':[0,5,10],'10C':[0,4,7,10],'10D':[0,3,5,7,10],
             '15C':[0,5,10,15],'15D':[0,4,7,11,15]},
@@ -30,7 +32,7 @@ p=Paper(year=2025,level='higher',paper_key='p2',sitting='deferred',
 
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
     p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,
-          dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+          dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 
 triangle='The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].'
 A('1-a-i','Q1(a)(i)','10C',[31],[4],'2-2','co-ordinate-geometry-of-the-line',

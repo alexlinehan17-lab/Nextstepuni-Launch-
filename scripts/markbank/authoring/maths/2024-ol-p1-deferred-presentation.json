@@ -2,7 +2,7 @@
   "questionSha256": "0a794e0bcfef8d5d157d1fdbb0b08d5c8e7d0fdd5e68a60d04207593e251dc28",
   "solutionSha256": "34c9b0f4c918270f949fa811f2a2d92ddf146703c3003106f1304a228bac8ce3",
   "tasks": {
-    "maths-2024-ol-p1-deferred-q1-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q1-a-i-ii": {
       "question": [
         [
           4,
@@ -30,7 +30,7 @@
       ],
       "sourceNote": "The exponent in the first line of part (ii) is a printing error. Use 1545 × 1.03, or 1500 × (1.03)², to obtain €1591.35. The alternative working and final answer are correct."
     },
-    "maths-2024-ol-p1-deferred-q1-b-i-ii": {
+    "maths-2024-ol-deferred-p1-q1-b-i-ii": {
       "question": [
         [
           5,
@@ -57,7 +57,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q2-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q2-a-i-ii": {
       "question": [
         [
           6,
@@ -78,7 +78,7 @@
       ],
       "sourceNote": "The scheme says “four items” but lists three: plotting z₁, plotting z₂ and finding the conjugate of z₁. The listed credit criteria and numeric awards are preserved."
     },
-    "maths-2024-ol-p1-deferred-q2-a-iii": {
+    "maths-2024-ol-deferred-p1-q2-a-iii": {
       "question": [
         [
           6,
@@ -105,7 +105,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q2-b": {
+    "maths-2024-ol-deferred-p1-q2-b": {
       "question": [
         [
           7,
@@ -125,7 +125,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q3-a": {
+    "maths-2024-ol-deferred-p1-q3-a": {
       "question": [
         [
           8,
@@ -145,7 +145,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q3-b": {
+    "maths-2024-ol-deferred-p1-q3-b": {
       "question": [
         [
           8,
@@ -165,7 +165,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q3-c": {
+    "maths-2024-ol-deferred-p1-q3-c": {
       "question": [
         [
           9,
@@ -185,7 +185,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q4-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q4-a-i-ii": {
       "question": [
         [
           10,
@@ -213,7 +213,7 @@
       ],
       "sourceNote": "The mid-partial note has a typographical error: it should refer to expanding (x + 3)². The model solution x² + 6x + 14 is correct."
     },
-    "maths-2024-ol-p1-deferred-q4-b": {
+    "maths-2024-ol-deferred-p1-q4-b": {
       "question": [
         [
           10,
@@ -233,7 +233,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q4-c": {
+    "maths-2024-ol-deferred-p1-q4-c": {
       "question": [
         [
           11,
@@ -253,7 +253,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q5-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q5-a-i-ii": {
       "question": [
         [
           12,
@@ -281,7 +281,7 @@
       ],
       "sourceNote": "Keep 1385.424 kWh until the final rounding. Multiplying by €0.1346 per kWh gives €186.4780704, rounded to €186.48. The scheme’s displayed intermediate 1385.42 is rounded prematurely; its final answer is correct."
     },
-    "maths-2024-ol-p1-deferred-q5-a-iii": {
+    "maths-2024-ol-deferred-p1-q5-a-iii": {
       "question": [
         [
           12,
@@ -302,7 +302,7 @@
       ],
       "sourceNote": "The summary table labels this 5D, but the detailed marking notes explicitly give 5C with awards 0, 2, 3 and 5. This card follows the detailed allocation."
     },
-    "maths-2024-ol-p1-deferred-q5-b": {
+    "maths-2024-ol-deferred-p1-q5-b": {
       "question": [
         [
           13,
@@ -322,7 +322,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q6-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q6-a-i-ii": {
       "question": [
         [
           14,
@@ -349,7 +349,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q6-a-iii": {
+    "maths-2024-ol-deferred-p1-q6-a-iii": {
       "question": [
         [
           14,
@@ -376,7 +376,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q6-b": {
+    "maths-2024-ol-deferred-p1-q6-b": {
       "question": [
         [
           15,
@@ -396,7 +396,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q7-a-i": {
+    "maths-2024-ol-deferred-p1-q7-a-i": {
       "question": [
         [
           16,
@@ -424,7 +424,7 @@
       ],
       "sourceNote": "Lillian rests from 40 to 50 seconds on the question graph, for 10 seconds. The partial-credit example saying 45 to 55 seconds is a printing error."
     },
-    "maths-2024-ol-p1-deferred-q7-a-ii": {
+    "maths-2024-ol-deferred-p1-q7-a-ii": {
       "question": [
         [
           16,
@@ -451,7 +451,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q7-a-iii": {
+    "maths-2024-ol-deferred-p1-q7-a-iii": {
       "question": [
         [
           16,
@@ -478,7 +478,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q7-b-i-ii": {
+    "maths-2024-ol-deferred-p1-q7-b-i-ii": {
       "question": [
         [
           16,
@@ -512,7 +512,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q7-c": {
+    "maths-2024-ol-deferred-p1-q7-c": {
       "question": [
         [
           18,
@@ -532,7 +532,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q7-d-i-ii": {
+    "maths-2024-ol-deferred-p1-q7-d-i-ii": {
       "question": [
         [
           19,
@@ -560,7 +560,7 @@
       ],
       "sourceNote": "In part (ii), 25 − 4.6993 is approximately 20.3007, not the printed intermediate 20.27. The final answer of 20.3°C is correct."
     },
-    "maths-2024-ol-p1-deferred-q8-a-i": {
+    "maths-2024-ol-deferred-p1-q8-a-i": {
       "question": [
         [
           20,
@@ -587,7 +587,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q8-a-ii-iii": {
+    "maths-2024-ol-deferred-p1-q8-a-ii-iii": {
       "question": [
         [
           20,
@@ -622,7 +622,7 @@
       ],
       "sourceNote": "The SEC descriptors overlap at twelve correct items: mid partial says 6–12 and high partial says 12–14. Both original descriptors are retained; the source does not resolve that boundary."
     },
-    "maths-2024-ol-p1-deferred-q8-a-iv": {
+    "maths-2024-ol-deferred-p1-q8-a-iv": {
       "question": [
         [
           20,
@@ -659,7 +659,7 @@
       "supplement": "firework-2024-ol-deferred",
       "supplementAlt": "NextStepUni graph of h(t)=−4.8t²+41.65t+20, extending the curve beyond t=8 to its positive zero at approximately 9.13 seconds. Read about 9.1 seconds at sea level. Original SEC answer and criteria follow."
     },
-    "maths-2024-ol-p1-deferred-q8-b-i-ii": {
+    "maths-2024-ol-deferred-p1-q8-b-i-ii": {
       "question": [
         [
           22,
@@ -686,7 +686,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q8-c-i": {
+    "maths-2024-ol-deferred-p1-q8-c-i": {
       "question": [
         [
           23,
@@ -706,7 +706,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q8-c-ii": {
+    "maths-2024-ol-deferred-p1-q8-c-ii": {
       "question": [
         [
           23,
@@ -733,7 +733,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q9-a-i-ii": {
+    "maths-2024-ol-deferred-p1-q9-a-i-ii": {
       "question": [
         [
           24,
@@ -760,7 +760,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q9-b": {
+    "maths-2024-ol-deferred-p1-q9-b": {
       "question": [
         [
           24,
@@ -780,7 +780,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q9-c-i": {
+    "maths-2024-ol-deferred-p1-q9-c-i": {
       "question": [
         [
           25,
@@ -801,7 +801,7 @@
       ],
       "sourceNote": "Use the byte values supplied in this examination table. They are the data for this question, rather than a statement of standard storage-unit definitions."
     },
-    "maths-2024-ol-p1-deferred-q9-c-ii": {
+    "maths-2024-ol-deferred-p1-q9-c-ii": {
       "question": [
         [
           25,
@@ -829,7 +829,7 @@
       ],
       "sourceNote": "Use the byte values supplied in this examination table, including 1 petabyte = 2⁶⁰ bytes. With these exam values, 7.6 × 2⁶⁰ ÷ 2⁴⁰ = 7,969,177.6, so the required rounded answer is 7,969,178."
     },
-    "maths-2024-ol-p1-deferred-q9-d-i": {
+    "maths-2024-ol-deferred-p1-q9-d-i": {
       "question": [
         [
           26,
@@ -849,7 +849,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q9-d-ii-iii": {
+    "maths-2024-ol-deferred-p1-q9-d-ii-iii": {
       "question": [
         [
           26,
@@ -886,7 +886,7 @@
       "supplement": "data-growth-2024-ol-deferred",
       "supplementAlt": "NextStepUni graph of 64(1.19)^t over 2021–2029. Reading guides show 200 zettabytes crossed during 2027 and growth from about 75 in 2022 to about 150 in 2026, a doubling time of approximately four years. Original SEC answer and marking notes follow."
     },
-    "maths-2024-ol-p1-deferred-q10-a": {
+    "maths-2024-ol-deferred-p1-q10-a": {
       "question": [
         [
           28,
@@ -913,7 +913,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q10-b": {
+    "maths-2024-ol-deferred-p1-q10-b": {
       "question": [
         [
           28,
@@ -940,7 +940,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q10-c-i": {
+    "maths-2024-ol-deferred-p1-q10-c-i": {
       "question": [
         [
           28,
@@ -968,7 +968,7 @@
       ],
       "sourceNote": "Here the formula n + 2 counts grey tiles. The Tₙ notation used in this scheme row must not be confused with Tₙ for total tiles in part (d)."
     },
-    "maths-2024-ol-p1-deferred-q10-c-ii": {
+    "maths-2024-ol-deferred-p1-q10-c-ii": {
       "question": [
         [
           28,
@@ -1003,7 +1003,7 @@
       ],
       "sourceNote": "This counts grey tiles: 25 + 2 = 27. The later part (d) uses Tₙ for total tiles, which is a different count."
     },
-    "maths-2024-ol-p1-deferred-q10-c-iii": {
+    "maths-2024-ol-deferred-p1-q10-c-iii": {
       "question": [
         [
           28,
@@ -1030,7 +1030,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q10-c-iv": {
+    "maths-2024-ol-deferred-p1-q10-c-iv": {
       "question": [
         [
           28,
@@ -1057,7 +1057,7 @@
         ]
       ]
     },
-    "maths-2024-ol-p1-deferred-q10-d-i-ii": {
+    "maths-2024-ol-deferred-p1-q10-d-i-ii": {
       "question": [
         [
           30,

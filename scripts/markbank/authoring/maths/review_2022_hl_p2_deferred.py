@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2022-hl-p2-deferred'
+PREFIX='maths-2022-hl-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2022-hl-p2-deferred'
 p=Paper(year=2022,level='higher',paper_key='p2',sitting='deferred',
- paper_file='LC003ALP200EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2022 HL Paper 2 — Deferred',
+ paper_file='LC003ALP200EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2022 HL Paper 2',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,3,7,10],'10D':[0,3,5,8,10],'15D':[0,4,8,12,15]},
  reviewed_at='2026-10-31',general_notes=[23,24],scheme_pages=[1,*range(22,48)],
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -25,7 +27,7 @@ p=Paper(year=2022,level='higher',paper_key='p2',sitting='deferred',
  'Q10(d)(ii) is one congruence proof, not a choice of triangle combinations. Q10(d)(iv) offers two solution routes under one allocation; both retained. Its card includes the preceding requested results as context without supplying an answer.'
  ],out_name='2022-higher-p2-deferred.json',atlas_prefix='mathematics-higher-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 matches='The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.'
 A('1-a','Q1(a)','10C',[26],[4],'1-6','statistics-descriptive-statistics','Draw a suitable chart to show this data. Label your chart clearly.',['Any suitable labelled graphical display.'],matches)
 A('1-b','Q1(b)','10D',[27],[4,5],'1-6','statistics-descriptive-statistics','Find the mean, mode, and median number of matches per box. Give the mean correct to 1 decimal place.',['median is 27th box','Mode correct'],matches)

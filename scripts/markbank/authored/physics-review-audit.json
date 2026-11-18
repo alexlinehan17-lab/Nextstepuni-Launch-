@@ -204546,7 +204546,7 @@
      "status": "carded",
      "key": "Q4(iii):spacing",
      "id": "phys-2022-hl-deferred-q4-iii-spacing",
-     "questionRef": "2022 HL Q4(iii) — Deferred sitting — Grating spacing",
+     "questionRef": "2022 HL Q4(iii) — Grating spacing — Deferred sitting",
      "section": "A",
      "paper": {
       "doc": "paper",
@@ -204585,7 +204585,7 @@
      "status": "carded",
      "key": "Q4(iv):angle",
      "id": "phys-2022-hl-deferred-q4-iv-angle",
-     "questionRef": "2022 HL Q4(iv) — Deferred sitting — Angle of diffraction",
+     "questionRef": "2022 HL Q4(iv) — Angle of diffraction — Deferred sitting",
      "section": "A",
      "paper": {
       "doc": "paper",
@@ -205469,7 +205469,7 @@
      "status": "carded",
      "key": "q6l-particle",
      "id": "phys-2022-hl-deferred-q6-l-particle",
-     "questionRef": "2022 HL Q6(l) — Deferred sitting — particle",
+     "questionRef": "2022 HL Q6(l) — particle — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -205507,7 +205507,7 @@
      "status": "carded",
      "key": "q6l-led",
      "id": "phys-2022-hl-deferred-q6-l-led",
-     "questionRef": "2022 HL Q6(l) — Deferred sitting — led",
+     "questionRef": "2022 HL Q6(l) — led — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -205545,7 +205545,7 @@
      "status": "carded",
      "key": "Q7(i):displacement",
      "id": "phys-2022-hl-deferred-q7-i-displacement",
-     "questionRef": "2022 HL Q7(i) — Deferred sitting — Displacement",
+     "questionRef": "2022 HL Q7(i) — Displacement — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -205585,7 +205585,7 @@
      "status": "carded",
      "key": "Q7(ii):velocity",
      "id": "phys-2022-hl-deferred-q7-ii-velocity",
-     "questionRef": "2022 HL Q7(ii) — Deferred sitting — Velocity",
+     "questionRef": "2022 HL Q7(ii) — Velocity — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206205,7 +206205,7 @@
      "status": "carded",
      "key": "Q9(i):faraday",
      "id": "phys-2022-hl-deferred-q9-i-faraday",
-     "questionRef": "2022 HL Q9(i) — Deferred sitting — Faraday’s law",
+     "questionRef": "2022 HL Q9(i) — Faraday’s law — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206247,7 +206247,7 @@
      "status": "carded",
      "key": "Q9(ii):lenz",
      "id": "phys-2022-hl-deferred-q9-ii-lenz",
-     "questionRef": "2022 HL Q9(ii) — Deferred sitting — Lenz’s law",
+     "questionRef": "2022 HL Q9(ii) — Lenz’s law — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206746,7 +206746,7 @@
      "status": "carded",
      "key": "Q10(b)(iv):photon",
      "id": "phys-2022-hl-deferred-q10-b-iv-photon",
-     "questionRef": "2022 HL Q10(b)(iv) — Deferred sitting — Photon energy",
+     "questionRef": "2022 HL Q10(b)(iv) — Photon energy — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206788,7 +206788,7 @@
      "status": "carded",
      "key": "Q10(b)(v):electron",
      "id": "phys-2022-hl-deferred-q10-b-v-electron",
-     "questionRef": "2022 HL Q10(b)(v) — Deferred sitting — Maximum electron energy",
+     "questionRef": "2022 HL Q10(b)(v) — Maximum electron energy — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206830,7 +206830,7 @@
      "status": "carded",
      "key": "Q11(i):pd",
      "id": "phys-2022-hl-deferred-q11-i-pd",
-     "questionRef": "2022 HL Q11(i) — Deferred sitting — Potential difference",
+     "questionRef": "2022 HL Q11(i) — Potential difference — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -206873,7 +206873,7 @@
      "status": "carded",
      "key": "Q11(ii):resistance",
      "id": "phys-2022-hl-deferred-q11-ii-resistance",
-     "questionRef": "2022 HL Q11(ii) — Deferred sitting — Resistance",
+     "questionRef": "2022 HL Q11(ii) — Resistance — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207162,7 +207162,7 @@
      "status": "carded",
      "key": "Q12(a)(i):quark",
      "id": "phys-2022-hl-deferred-q12-a-i-quark",
-     "questionRef": "2022 HL Q12(a)(i) — Deferred sitting — Quark",
+     "questionRef": "2022 HL Q12(a)(i) — Quark — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207204,7 +207204,7 @@
      "status": "carded",
      "key": "Q12(a)(ii):lepton",
      "id": "phys-2022-hl-deferred-q12-a-ii-lepton",
-     "questionRef": "2022 HL Q12(a)(ii) — Deferred sitting — Lepton",
+     "questionRef": "2022 HL Q12(a)(ii) — Lepton — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207246,7 +207246,7 @@
      "status": "carded",
      "key": "Q12(a)(iii):meson",
      "id": "phys-2022-hl-deferred-q12-a-iii-meson",
-     "questionRef": "2022 HL Q12(a)(iii) — Deferred sitting — Meson",
+     "questionRef": "2022 HL Q12(a)(iii) — Meson — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207286,7 +207286,7 @@
      "status": "carded",
      "key": "Q12(a)(iv):baryon",
      "id": "phys-2022-hl-deferred-q12-a-iv-baryon",
-     "questionRef": "2022 HL Q12(a)(iv) — Deferred sitting — Baryon",
+     "questionRef": "2022 HL Q12(a)(iv) — Baryon — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207696,7 +207696,7 @@
      "status": "carded",
      "key": "Q12(b)(vi):ammeter",
      "id": "phys-2022-hl-deferred-q12-b-vi-ammeter",
-     "questionRef": "2022 HL Q12(b)(vi) — Deferred sitting — Ammeter",
+     "questionRef": "2022 HL Q12(b)(vi) — Ammeter — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -207737,7 +207737,7 @@
      "status": "carded",
      "key": "Q12(b)(vii):voltmeter",
      "id": "phys-2022-hl-deferred-q12-b-vii-voltmeter",
-     "questionRef": "2022 HL Q12(b)(vii) — Deferred sitting — Voltmeter",
+     "questionRef": "2022 HL Q12(b)(vii) — Voltmeter — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208220,7 +208220,7 @@
      "status": "carded",
      "key": "Q14(a)(iv):velocity",
      "id": "phys-2022-hl-deferred-q14-a-iv-velocity",
-     "questionRef": "2022 HL Q14(a)(iv) — Deferred sitting — Maximum velocity",
+     "questionRef": "2022 HL Q14(a)(iv) — Maximum velocity — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208259,7 +208259,7 @@
      "status": "carded",
      "key": "Q14(a)(v):acceleration",
      "id": "phys-2022-hl-deferred-q14-a-v-acceleration",
-     "questionRef": "2022 HL Q14(a)(v) — Deferred sitting — Maximum acceleration",
+     "questionRef": "2022 HL Q14(a)(v) — Maximum acceleration — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208572,7 +208572,7 @@
      "status": "carded",
      "key": "Q14(c)(iii):plate-a",
      "id": "phys-2022-hl-deferred-q14-c-iii-plate-a",
-     "questionRef": "2022 HL Q14(c)(iii) — Deferred sitting — Plate A charge",
+     "questionRef": "2022 HL Q14(c)(iii) — Plate A charge — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208611,7 +208611,7 @@
      "status": "carded",
      "key": "Q14(c)(iv):plate-b",
      "id": "phys-2022-hl-deferred-q14-c-iv-plate-b",
-     "questionRef": "2022 HL Q14(c)(iv) — Deferred sitting — Plate B charge",
+     "questionRef": "2022 HL Q14(c)(iv) — Plate B charge — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208688,7 +208688,7 @@
      "status": "carded",
      "key": "Q14(c)(vi):plate-a",
      "id": "phys-2022-hl-deferred-q14-c-vi-plate-a",
-     "questionRef": "2022 HL Q14(c)(vi) — Deferred sitting — Parallel plate A",
+     "questionRef": "2022 HL Q14(c)(vi) — Parallel plate A — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208727,7 +208727,7 @@
      "status": "carded",
      "key": "Q14(c)(vii):plate-b",
      "id": "phys-2022-hl-deferred-q14-c-vii-plate-b",
-     "questionRef": "2022 HL Q14(c)(vii) — Deferred sitting — Parallel plate B",
+     "questionRef": "2022 HL Q14(c)(vii) — Parallel plate B — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208766,7 +208766,7 @@
      "status": "carded",
      "key": "Q14(c)(viii):plate-x",
      "id": "phys-2022-hl-deferred-q14-c-viii-plate-x",
-     "questionRef": "2022 HL Q14(c)(viii) — Deferred sitting — Parallel plate X",
+     "questionRef": "2022 HL Q14(c)(viii) — Parallel plate X — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -208805,7 +208805,7 @@
      "status": "carded",
      "key": "Q14(c)(ix):plate-y",
      "id": "phys-2022-hl-deferred-q14-c-ix-plate-y",
-     "questionRef": "2022 HL Q14(c)(ix) — Deferred sitting — Parallel plate Y",
+     "questionRef": "2022 HL Q14(c)(ix) — Parallel plate Y — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -211469,7 +211469,7 @@
      "status": "carded",
      "key": "q6l-neutrino",
      "id": "phys-2023-hl-deferred-q6-l-neutrino",
-     "questionRef": "2023 HL Q6(l) — Deferred sitting — neutrino",
+     "questionRef": "2023 HL Q6(l) — neutrino — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -211508,7 +211508,7 @@
      "status": "carded",
      "key": "q6l-relay",
      "id": "phys-2023-hl-deferred-q6-l-relay",
-     "questionRef": "2023 HL Q6(l) — Deferred sitting — relay",
+     "questionRef": "2023 HL Q6(l) — relay — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -213692,7 +213692,7 @@
      "status": "carded",
      "key": "q12b-i-ii",
      "id": "phys-2023-hl-deferred-q12-b-i-ii",
-     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (i)–(ii)",
+     "questionRef": "2023 HL Q12(b) — Parts (i)–(ii) — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -213739,7 +213739,7 @@
      "status": "carded",
      "key": "q12b-iii-v",
      "id": "phys-2023-hl-deferred-q12-b-iii-v",
-     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (iii)–(v)",
+     "questionRef": "2023 HL Q12(b) — Parts (iii)–(v) — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -213787,7 +213787,7 @@
      "status": "carded",
      "key": "q12b-vi-vii",
      "id": "phys-2023-hl-deferred-q12-b-vi-vii",
-     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (vi)–(vii)",
+     "questionRef": "2023 HL Q12(b) — Parts (vi)–(vii) — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",
@@ -213834,7 +213834,7 @@
      "status": "carded",
      "key": "q12b-viii-ix",
      "id": "phys-2023-hl-deferred-q12-b-viii-ix",
-     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (viii)–(ix)",
+     "questionRef": "2023 HL Q12(b) — Parts (viii)–(ix) — Deferred sitting",
      "section": "B",
      "paper": {
       "doc": "paper",

@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2023-ol-p1-deferred'
+PREFIX='maths-2023-ol-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2023-ol-p1-deferred'
 p=Paper(year=2023,level='ordinary',paper_key='p1',sitting='deferred',
- paper_file='LC003GLP100EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2023 OL Paper 1 — Deferred',
+ paper_file='LC003GLP100EV-deferred.pdf',scheme_file='LC003GLP000EV-deferred.pdf',prefix=PREFIX,ref='2023 OL Paper 1',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'5D':[0,2,3,4,5],'10B':[0,7,10],'10C':[0,3,7,10],'10D':[0,4,6,8,10],'15C':[0,5,10,15],'15D':[0,4,8,12,15]},
  reviewed_at='2026-10-31',general_notes=[2,4,5],scheme_pages=list(range(1,24)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -25,7 +27,7 @@ p=Paper(year=2023,level='ordinary',paper_key='p1',sitting='deferred',
  'Q10(b) contains two investment scenarios as problem data, not a student choice. Both required calculations are retained. Year-start deposits in Option 2 grow for three, two and one years respectively.'
  ],out_name='2023-ordinary-p1-deferred.json',atlas_prefix='mathematics-ordinary-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 complex_stem='Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i.'
 A('1-a-i','Q1(a)(i)','15D',[6],[4],'4-4','complex-numbers','Plot and label z₁, z₂, and the complex conjugate of z₂ on the Argand Diagram below.',['3 parts correct','Apply F* if labels omitted'],stem=complex_stem)
 A('1-a-ii','Q1(a)(ii)','5C',[6],[4],'4-4','complex-numbers','Find |z₁ − z₂|. Give your answer in surd form.',['formula for Modulus'],stem=complex_stem)

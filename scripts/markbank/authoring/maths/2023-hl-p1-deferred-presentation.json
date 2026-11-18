@@ -2,7 +2,7 @@
   "questionSha256": "143e1f18e477dc166b40dadc43d26182e2172b6b01e4430b7adf88356898fb8c",
   "solutionSha256": "71e49ca02f643ab56422044abfb1985a827f209bc490bf7775d374af91246666",
   "tasks": {
-    "maths-2023-hl-p1-deferred-q1-a": {
+    "maths-2023-hl-deferred-p1-q1-a": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q1-b-i": {
+    "maths-2023-hl-deferred-p1-q1-b-i": {
       "question": [
         [
           5,
@@ -42,7 +42,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q1-b-ii": {
+    "maths-2023-hl-deferred-p1-q1-b-ii": {
       "question": [
         [
           5,
@@ -70,7 +70,7 @@
       ],
       "sourceNote": "The x⁴ term is the eighth term in ascending order, with coefficient 120k³. The scheme refers to T₇ in its credit notes; irrespective of that label, 120k³ = 7680 gives k = 4."
     },
-    "maths-2023-hl-p1-deferred-q2-a": {
+    "maths-2023-hl-deferred-p1-q2-a": {
       "question": [
         [
           6,
@@ -90,7 +90,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q2-b-i": {
+    "maths-2023-hl-deferred-p1-q2-b-i": {
       "question": [
         [
           6,
@@ -111,7 +111,7 @@
       ],
       "sourceNote": "This is Q2(b)(i). The detailed scheme repeats the label (b)(ii); the paper and summary confirm the 10B allocation. One suitable pair is a = 4, b = 3."
     },
-    "maths-2023-hl-p1-deferred-q2-b-ii": {
+    "maths-2023-hl-deferred-p1-q2-b-ii": {
       "question": [
         [
           7,
@@ -131,7 +131,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q2-b-iii": {
+    "maths-2023-hl-deferred-p1-q2-b-iii": {
       "question": [
         [
           7,
@@ -159,7 +159,7 @@
       ],
       "sourceNote": "The product telescopes to log₂(n + 1), with n + 1 entirely inside the logarithm. Thus n + 1 = 2¹¹ and n = 2047."
     },
-    "maths-2023-hl-p1-deferred-q3-a": {
+    "maths-2023-hl-deferred-p1-q3-a": {
       "question": [
         [
           8,
@@ -179,7 +179,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q3-b": {
+    "maths-2023-hl-deferred-p1-q3-b": {
       "question": [
         [
           8,
@@ -207,7 +207,7 @@
       ],
       "sourceNote": "In this part the roots are 2 − i and 2 + i. The scheme reuses z₁ in its working, but it does not mean the 11 − 2i found in part (a). Their sum is 4 and product is 5, so a = −4 and b = 5."
     },
-    "maths-2023-hl-p1-deferred-q3-c": {
+    "maths-2023-hl-deferred-p1-q3-c": {
       "question": [
         [
           8,
@@ -235,7 +235,7 @@
       ],
       "sourceNote": "The intermediate line has two printing errors. The original number is 4 + 4√3i, with modulus 8 and argument π/3. Each cube-root angle is (π/3 + 2nπ)/3. The three final roots printed below are correct: modulus 2, with angles π/9, 7π/9 and 13π/9."
     },
-    "maths-2023-hl-p1-deferred-q4-a": {
+    "maths-2023-hl-deferred-p1-q4-a": {
       "question": [
         [
           10,
@@ -255,7 +255,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q4-b-i": {
+    "maths-2023-hl-deferred-p1-q4-b-i": {
       "question": [
         [
           11,
@@ -276,7 +276,7 @@
       ],
       "sourceNote": "The expanded line should read k³ − k³ − k + k = 0. Multiplying −(k² + 1) by k gives −k³ − k, not −k² − k. The substitution and conclusion are otherwise correct."
     },
-    "maths-2023-hl-p1-deferred-q4-b-ii": {
+    "maths-2023-hl-deferred-p1-q4-b-ii": {
       "question": [
         [
           11,
@@ -296,7 +296,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q5-a-i-ii": {
+    "maths-2023-hl-deferred-p1-q5-a-i-ii": {
       "question": [
         [
           12,
@@ -323,7 +323,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q5-a-iii": {
+    "maths-2023-hl-deferred-p1-q5-a-iii": {
       "question": [
         [
           12,
@@ -357,7 +357,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q5-b": {
+    "maths-2023-hl-deferred-p1-q5-b": {
       "question": [
         [
           13,
@@ -378,7 +378,7 @@
       ],
       "sourceNote": "The (a) and (b) labels in the solution below identify two sides of the proof. They are not separately marked question parts."
     },
-    "maths-2023-hl-p1-deferred-q6-a": {
+    "maths-2023-hl-deferred-p1-q6-a": {
       "question": [
         [
           14,
@@ -399,7 +399,7 @@
       ],
       "sourceNote": "This task uses the printed bands 0, 5, 8, 12, 15; the general 15D table uses 4 instead of 5. Also, g″(11/2) = 52 > 0 confirms the local minimum. At x = 10/3, g″ changes sign, giving the point of inflection."
     },
-    "maths-2023-hl-p1-deferred-q6-b-i": {
+    "maths-2023-hl-deferred-p1-q6-b-i": {
       "question": [
         [
           15,
@@ -419,7 +419,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q6-b-ii": {
+    "maths-2023-hl-deferred-p1-q6-b-ii": {
       "question": [
         [
           15,
@@ -447,7 +447,7 @@
       ],
       "sourceNote": "After integration, f(a) = a² − a + 1/3 = (a − 1/2)² + 1/12. The squared term is non-negative, confirming a minimum value of 1/12 at a = 1/2."
     },
-    "maths-2023-hl-p1-deferred-q7-a": {
+    "maths-2023-hl-deferred-p1-q7-a": {
       "question": [
         [
           16,
@@ -467,7 +467,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q7-b": {
+    "maths-2023-hl-deferred-p1-q7-b": {
       "question": [
         [
           16,
@@ -494,7 +494,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q7-c": {
+    "maths-2023-hl-deferred-p1-q7-c": {
       "question": [
         [
           18,
@@ -514,7 +514,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q7-d-i": {
+    "maths-2023-hl-deferred-p1-q7-d-i": {
       "question": [
         [
           18,
@@ -535,7 +535,7 @@
       ],
       "sourceNote": "The twelfth root of 1.0553 is the monthly growth factor 1 + i. Subtract 1 to obtain i ≈ 0.004495498, or 0.45% per month to two decimal places. The scheme omits this subtraction in an intermediate line."
     },
-    "maths-2023-hl-p1-deferred-q7-d-ii": {
+    "maths-2023-hl-deferred-p1-q7-d-ii": {
       "question": [
         [
           18,
@@ -563,7 +563,7 @@
       ],
       "sourceNote": "The model solution uses the rounded monthly rate 0.45% from part (i), giving €751.68 per month."
     },
-    "maths-2023-hl-p1-deferred-q7-e": {
+    "maths-2023-hl-deferred-p1-q7-e": {
       "question": [
         [
           19,
@@ -584,7 +584,7 @@
       ],
       "sourceNote": "The investment exceeds €2A when t > log(2)/log(1.0675) ≈ 10.61164. Since t is a whole number, the least possible value is 11 years. The scheme’s final equals sign should be read as choosing that next whole year."
     },
-    "maths-2023-hl-p1-deferred-q8-a-i": {
+    "maths-2023-hl-deferred-p1-q8-a-i": {
       "question": [
         [
           20,
@@ -604,7 +604,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q8-a-ii": {
+    "maths-2023-hl-deferred-p1-q8-a-ii": {
       "question": [
         [
           20,
@@ -631,7 +631,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q8-a-iii": {
+    "maths-2023-hl-deferred-p1-q8-a-iii": {
       "question": [
         [
           20,
@@ -658,7 +658,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q8-a-iv": {
+    "maths-2023-hl-deferred-p1-q8-a-iv": {
       "question": [
         [
           20,
@@ -692,7 +692,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q8-b-i": {
+    "maths-2023-hl-deferred-p1-q8-b-i": {
       "question": [
         [
           22,
@@ -712,7 +712,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q8-b-ii": {
+    "maths-2023-hl-deferred-p1-q8-b-ii": {
       "question": [
         [
           22,
@@ -739,7 +739,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q9-a-i-ii": {
+    "maths-2023-hl-deferred-p1-q9-a-i-ii": {
       "question": [
         [
           24,
@@ -767,7 +767,7 @@
       ],
       "sourceNote": "For N(10), the exponent is −0.814 × 10 = −8.14. The scheme’s −8.14 × 10 is a printing error; its final value of approximately 2994 trout is correct."
     },
-    "maths-2023-hl-p1-deferred-q9-a-iii": {
+    "maths-2023-hl-deferred-p1-q9-a-iii": {
       "question": [
         [
           24,
@@ -794,7 +794,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q9-a-iv": {
+    "maths-2023-hl-deferred-p1-q9-a-iv": {
       "question": [
         [
           24,
@@ -822,7 +822,7 @@
       ],
       "sourceNote": "The source prints 5C (0,2,3,5) but lists Low, Mid and High Partial Credit. All numeric awards are retained; its extra Mid description has no distinct numeric award. The first whole month above the threshold is n = 5."
     },
-    "maths-2023-hl-p1-deferred-q9-a-v": {
+    "maths-2023-hl-deferred-p1-q9-a-v": {
       "question": [
         [
           24,
@@ -849,7 +849,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q9-b-i": {
+    "maths-2023-hl-deferred-p1-q9-b-i": {
       "question": [
         [
           26,
@@ -869,7 +869,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q9-b-ii": {
+    "maths-2023-hl-deferred-p1-q9-b-ii": {
       "question": [
         [
           26,
@@ -899,7 +899,7 @@
       "supplement": "trout-2023-hl-deferred",
       "supplementAlt": "NextStepUni graph of both printed trout models over 0 to 8 months, with P values 400, 1312, 1904, 2289, 2538, 2700, 2805, 2874 and 2918. Both populations increase towards 3000; N initially gets steeper then flattens, whereas P flattens throughout. Original SEC worked graph and credit notes follow."
     },
-    "maths-2023-hl-p1-deferred-q9-b-iii": {
+    "maths-2023-hl-deferred-p1-q9-b-iii": {
       "question": [
         [
           24,
@@ -938,7 +938,7 @@
       "questionSupplement": "trout-context-2023-hl-deferred",
       "questionSupplementAlt": "NextStepUni reconstruction of the two printed trout models over 0 to 8 months, followed by the original model definitions and comparison question. The vertical axis is the number of trout and the horizontal axis is months since stocking."
     },
-    "maths-2023-hl-p1-deferred-q10-a-i": {
+    "maths-2023-hl-deferred-p1-q10-a-i": {
       "question": [
         [
           28,
@@ -958,7 +958,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q10-a-ii": {
+    "maths-2023-hl-deferred-p1-q10-a-ii": {
       "question": [
         [
           28,
@@ -985,7 +985,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q10-a-iii": {
+    "maths-2023-hl-deferred-p1-q10-a-iii": {
       "question": [
         [
           28,
@@ -1012,7 +1012,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q10-b": {
+    "maths-2023-hl-deferred-p1-q10-b": {
       "question": [
         [
           29,
@@ -1033,7 +1033,7 @@
       ],
       "sourceNote": "Here y in the model working denotes |BE|. When the right-angled triangle is isosceles, x = 7, so the wire length increases at 28/√98 ≈ 2.8 m/s."
     },
-    "maths-2023-hl-p1-deferred-q10-c-i": {
+    "maths-2023-hl-deferred-p1-q10-c-i": {
       "question": [
         [
           30,
@@ -1053,7 +1053,7 @@
         ]
       ]
     },
-    "maths-2023-hl-p1-deferred-q10-c-ii": {
+    "maths-2023-hl-deferred-p1-q10-c-ii": {
       "question": [
         [
           30,

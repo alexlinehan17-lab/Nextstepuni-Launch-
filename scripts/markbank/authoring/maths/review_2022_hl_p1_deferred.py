@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2022-hl-p1-deferred'
+PREFIX='maths-2022-hl-deferred-p1'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2022-hl-p1-deferred'
 p=Paper(year=2022,level='higher',paper_key='p1',sitting='deferred',
- paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2022 HL Paper 1 — Deferred',
+ paper_file='LC003ALP100EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2022 HL Paper 1',
  scales={'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,3,7,10],'10D':[0,3,5,8,10],'15D':[0,4,8,12,15],'20D':[0,5,10,15,20]},
  reviewed_at='2026-10-31',general_notes=[2,4],scheme_pages=list(range(1,22)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -25,7 +27,7 @@ p=Paper(year=2022,level='higher',paper_key='p1',sitting='deferred',
  'Q10(e) scheme lists any two intermediate steps for mid partial credit; that is examiner guidance, not a printed student choice. Q10(f)(i–ii) share 10C: slant height 4√10 cm and sector angle 114°.'
  ],out_name='2022-higher-p1-deferred.json',atlas_prefix='mathematics-higher-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 A('1-a','Q1(a)','10C',[5],[4],'4-4','complex-numbers','Write the following complex number in the form m + ni, where m,n ∈ ℝ and i² = −1: (3 − 5i)(2 + 4i).',['Correct expansion (second line of solution)'])
 A('1-b','Q1(b)','10D',[5],[4],'4-4','complex-numbers','Use De Moivre’s theorem to write the following complex number in the form p + qi, where p,q ∈ ℝ and i² = −1: (3 − 3i)⁶.',['polar form must be used','Subs into de Moivre’s Theorem'])
 A('1-c','Q1(c)','10D',[6],[5],'4-4','complex-numbers','Write each number in the correct region on the Venn diagram above, to show which region each number lies in. Six numbers: √17; 3i; 3+2i; π+5i; 2·5; cos180° + i sin180°.',['One value in correct region','4 values in correct region'],'ℝ is the set of real numbers. ℂ is the set of complex numbers. X is the set of complex numbers whose real and imaginary parts are both rational. These sets are shown in the Venn diagram below; i²=−1.')

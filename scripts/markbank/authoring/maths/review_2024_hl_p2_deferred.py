@@ -2,9 +2,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solution_lib import Paper
-PREFIX='maths-2024-hl-p2-deferred'
+PREFIX='maths-2024-hl-deferred-p2'
+# Crops keep the names they were cut under; the card id takes the standard form.
+FIGURE_PREFIX='maths-2024-hl-p2-deferred'
 p=Paper(year=2024,level='higher',paper_key='p2',sitting='deferred',
- paper_file='LC003ALP200EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2024 HL Paper 2 — Deferred',
+ paper_file='LC003ALP200EV-deferred.pdf',scheme_file='LC003ALP000EV-deferred.pdf',prefix=PREFIX,ref='2024 HL Paper 2',
  scales={'5A':[0,5],'5B':[0,2,5],'5C':[0,2,3,5],'10C':[0,4,6,10],'10D':[0,3,5,7,10],'15C':[0,6,8,15],'15D':[0,4,6,8,15]},
  reviewed_at='2026-10-30',general_notes=[2,21,22],scheme_pages=[1,2]+list(range(21,41)),
  printed_marks={**{str(q):30 for q in range(1,7)},**{str(q):50 for q in range(7,11)}},
@@ -24,7 +26,7 @@ p=Paper(year=2024,level='higher',paper_key='p2',sitting='deferred',
  'Q10(a) printed scheme table headings 0–8 should be 0–0.8 seconds. The scheme omits its graph. An attributed complete table and smooth curve use the question’s exact domain and units.',
  ],out_name='2024-higher-p2-deferred.json',atlas_prefix='mathematics-higher-',section_of=lambda q:'A' if q<=6 else 'B')
 def A(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem=None,extra=None):
- p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{PREFIX}-q{suffix}-solution',questionFigureKey=f'{PREFIX}-q{suffix}-question'))
+ p.add(suffix,parts,scale,scheme,pages,topic,atlas,prompt,quotes,stem,dict(extra or {},figureKey=f'{FIGURE_PREFIX}-q{suffix}-solution',questionFigureKey=f'{FIGURE_PREFIX}-q{suffix}-question'))
 triangle='The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).'
 A('1-a-i-ii','Q1(a)(i),Q1(a)(ii)','15D',[23],[4],'2-2','co-ordinate-geometry-of-the-line','(i) Write down the midpoint of [PQ]. (ii) Hence, or otherwise, find the equation of the perpendicular bisector of [PQ].',['Find the midpoint','Find slope of perpendicular bisector','3 steps correct'],stem=triangle)
 A('1-a-iii','Q1(a)(iii)','5C',[23],[4,5],'2-2','co-ordinate-geometry-of-the-line,geometry-constructions-proofs','Hence, find the co-ordinates of the circumcentre of the triangle PQR (that is, the point where the perpendicular bisectors of the sides meet).',['effort to calculate perpendicular bisector'],stem=triangle)

@@ -109,7 +109,7 @@
   ],
   "cards": [
     {
-      "id": "maths-2022-hl-p2-deferred-q1-a",
+      "id": "maths-2022-hl-deferred-p2-q1-a",
       "printedParts": [
         "Q1(a)"
       ],
@@ -140,7 +140,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q1-a-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q1-b",
+      "id": "maths-2022-hl-deferred-p2-q1-b",
       "printedParts": [
         "Q1(b)"
       ],
@@ -174,7 +174,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q1-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q1-c",
+      "id": "maths-2022-hl-deferred-p2-q1-c",
       "printedParts": [
         "Q1(c)"
       ],
@@ -206,7 +206,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q1-c-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q2-a-i",
+      "id": "maths-2022-hl-deferred-p2-q2-a-i",
       "printedParts": [
         "Q2(a)(i)"
       ],
@@ -237,7 +237,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q2-a-ii",
+      "id": "maths-2022-hl-deferred-p2-q2-a-ii",
       "printedParts": [
         "Q2(a)(ii)"
       ],
@@ -268,7 +268,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q2-a-iii",
+      "id": "maths-2022-hl-deferred-p2-q2-a-iii",
       "printedParts": [
         "Q2(a)(iii)"
       ],
@@ -299,7 +299,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q2-b",
+      "id": "maths-2022-hl-deferred-p2-q2-b",
       "printedParts": [
         "Q2(b)"
       ],
@@ -332,7 +332,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q2-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q3-a-i",
+      "id": "maths-2022-hl-deferred-p2-q3-a-i",
       "printedParts": [
         "Q3(a)(i)"
       ],
@@ -363,7 +363,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q3-a-ii",
+      "id": "maths-2022-hl-deferred-p2-q3-a-ii",
       "printedParts": [
         "Q3(a)(ii)"
       ],
@@ -394,7 +394,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q3-a-iii",
+      "id": "maths-2022-hl-deferred-p2-q3-a-iii",
       "printedParts": [
         "Q3(a)(iii)"
       ],
@@ -425,7 +425,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q3-b",
+      "id": "maths-2022-hl-deferred-p2-q3-b",
       "printedParts": [
         "Q3(b)"
       ],
@@ -456,7 +456,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q3-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q4-a-i",
+      "id": "maths-2022-hl-deferred-p2-q4-a-i",
       "printedParts": [
         "Q4(a)(i)"
       ],
@@ -488,7 +488,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q4-a-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q4-a-ii",
+      "id": "maths-2022-hl-deferred-p2-q4-a-ii",
       "printedParts": [
         "Q4(a)(ii)"
       ],
@@ -520,7 +520,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q4-a-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q4-b",
+      "id": "maths-2022-hl-deferred-p2-q4-b",
       "printedParts": [
         "Q4(b)"
       ],
@@ -551,7 +551,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q4-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q5-a-i",
+      "id": "maths-2022-hl-deferred-p2-q5-a-i",
       "printedParts": [
         "Q5(a)(i)"
       ],
@@ -582,7 +582,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q5-a-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q5-a-ii",
+      "id": "maths-2022-hl-deferred-p2-q5-a-ii",
       "printedParts": [
         "Q5(a)(ii)"
       ],
@@ -614,7 +614,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q5-a-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q5-b",
+      "id": "maths-2022-hl-deferred-p2-q5-b",
       "printedParts": [
         "Q5(b)"
       ],
@@ -645,7 +645,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q5-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q6-a",
+      "id": "maths-2022-hl-deferred-p2-q6-a",
       "printedParts": [
         "Q6(a)"
       ],
@@ -676,7 +676,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q6-a-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q6-b-i",
+      "id": "maths-2022-hl-deferred-p2-q6-b-i",
       "printedParts": [
         "Q6(b)(i)"
       ],
@@ -706,7 +706,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q6-b-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q6-b-ii",
+      "id": "maths-2022-hl-deferred-p2-q6-b-ii",
       "printedParts": [
         "Q6(b)(ii)"
       ],
@@ -737,7 +737,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q6-b-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-a-b",
+      "id": "maths-2022-hl-deferred-p2-q7-a-b",
       "printedParts": [
         "Q7(a)",
         "Q7(b)"
@@ -770,7 +770,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-a-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-c-i-ii",
+      "id": "maths-2022-hl-deferred-p2-q7-c-i-ii",
       "printedParts": [
         "Q7(c)(i)",
         "Q7(c)(ii)"
@@ -802,7 +802,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-c-i-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-d-i",
+      "id": "maths-2022-hl-deferred-p2-q7-d-i",
       "printedParts": [
         "Q7(d)(i)"
       ],
@@ -834,7 +834,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-d-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-d-ii",
+      "id": "maths-2022-hl-deferred-p2-q7-d-ii",
       "printedParts": [
         "Q7(d)(ii)"
       ],
@@ -864,7 +864,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-d-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-e-i",
+      "id": "maths-2022-hl-deferred-p2-q7-e-i",
       "printedParts": [
         "Q7(e)(i)"
       ],
@@ -898,7 +898,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-e-ii",
+      "id": "maths-2022-hl-deferred-p2-q7-e-ii",
       "printedParts": [
         "Q7(e)(ii)"
       ],
@@ -930,7 +930,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q7-e-iii",
+      "id": "maths-2022-hl-deferred-p2-q7-e-iii",
       "printedParts": [
         "Q7(e)(iii)"
       ],
@@ -961,7 +961,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-a",
+      "id": "maths-2022-hl-deferred-p2-q8-a",
       "printedParts": [
         "Q8(a)"
       ],
@@ -990,7 +990,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-a-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-b",
+      "id": "maths-2022-hl-deferred-p2-q8-b",
       "printedParts": [
         "Q8(b)"
       ],
@@ -1021,7 +1021,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-c",
+      "id": "maths-2022-hl-deferred-p2-q8-c",
       "printedParts": [
         "Q8(c)"
       ],
@@ -1052,7 +1052,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-c-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-d-i",
+      "id": "maths-2022-hl-deferred-p2-q8-d-i",
       "printedParts": [
         "Q8(d)(i)"
       ],
@@ -1083,7 +1083,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-d-ii",
+      "id": "maths-2022-hl-deferred-p2-q8-d-ii",
       "printedParts": [
         "Q8(d)(ii)"
       ],
@@ -1116,7 +1116,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q8-d-iii",
+      "id": "maths-2022-hl-deferred-p2-q8-d-iii",
       "printedParts": [
         "Q8(d)(iii)"
       ],
@@ -1148,7 +1148,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-a-i",
+      "id": "maths-2022-hl-deferred-p2-q9-a-i",
       "printedParts": [
         "Q9(a)(i)"
       ],
@@ -1179,7 +1179,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-a-ii",
+      "id": "maths-2022-hl-deferred-p2-q9-a-ii",
       "printedParts": [
         "Q9(a)(ii)"
       ],
@@ -1211,7 +1211,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-a-iii",
+      "id": "maths-2022-hl-deferred-p2-q9-a-iii",
       "printedParts": [
         "Q9(a)(iii)"
       ],
@@ -1241,7 +1241,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-b",
+      "id": "maths-2022-hl-deferred-p2-q9-b",
       "printedParts": [
         "Q9(b)"
       ],
@@ -1273,7 +1273,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-c-i",
+      "id": "maths-2022-hl-deferred-p2-q9-c-i",
       "printedParts": [
         "Q9(c)(i)"
       ],
@@ -1304,7 +1304,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-c-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q9-c-ii",
+      "id": "maths-2022-hl-deferred-p2-q9-c-ii",
       "printedParts": [
         "Q9(c)(ii)"
       ],
@@ -1336,7 +1336,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q9-c-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-a",
+      "id": "maths-2022-hl-deferred-p2-q10-a",
       "printedParts": [
         "Q10(a)"
       ],
@@ -1367,7 +1367,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-a-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-b",
+      "id": "maths-2022-hl-deferred-p2-q10-b",
       "printedParts": [
         "Q10(b)"
       ],
@@ -1398,7 +1398,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-b-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-c",
+      "id": "maths-2022-hl-deferred-p2-q10-c",
       "printedParts": [
         "Q10(c)"
       ],
@@ -1433,7 +1433,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-c-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-d-i",
+      "id": "maths-2022-hl-deferred-p2-q10-d-i",
       "printedParts": [
         "Q10(d)(i)"
       ],
@@ -1463,7 +1463,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-i-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-d-ii",
+      "id": "maths-2022-hl-deferred-p2-q10-d-ii",
       "printedParts": [
         "Q10(d)(ii)"
       ],
@@ -1497,7 +1497,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-ii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-d-iii",
+      "id": "maths-2022-hl-deferred-p2-q10-d-iii",
       "printedParts": [
         "Q10(d)(iii)"
       ],
@@ -1528,7 +1528,7 @@
       "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-iii-question"
     },
     {
-      "id": "maths-2022-hl-p2-deferred-q10-d-iv",
+      "id": "maths-2022-hl-deferred-p2-q10-d-iv",
       "printedParts": [
         "Q10(d)(iv)"
       ],

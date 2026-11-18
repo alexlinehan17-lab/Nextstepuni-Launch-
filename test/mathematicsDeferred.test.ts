@@ -22,12 +22,12 @@ import review2023HL1 from '../scripts/markbank/mathematics/reviews/2023-higher-p
 // The Mathematics decks hold question cards only; typed so, the tests read their point-card fields.
 const CARDS = ORDINARY_DECK as SecQuestionCard[];
 const HIGHER_CARDS = HIGHER_DECK as SecQuestionCard[];
-const prefix = 'maths-2025-ol-p1-deferred-q';
+const prefix = 'maths-2025-ol-deferred-p1-q';
 const cards = CARDS.filter(c => c.id.startsWith(prefix));
 
 
 describe('2024 Higher deferred Paper 2', () => {
-  const prefix='maths-2024-hl-p2-deferred-q';
+  const prefix='maths-2024-hl-deferred-p2-q';
   const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
   it('covers all 380 offered marks at the 41 published task boundaries', () => {
     expect(cards).toHaveLength(41);
@@ -89,7 +89,7 @@ describe('2024 Higher deferred Paper 2', () => {
 });
 
 describe('2023 Higher deferred Paper 1', () => {
-  const prefix='maths-2023-hl-p1-deferred-q';
+  const prefix='maths-2023-hl-deferred-p1-q';
   const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
   it('retains shared allocations and every independently reviewed task', () => {
     expect(cards).toHaveLength(44);
@@ -152,7 +152,7 @@ describe('2023 Higher deferred Paper 1', () => {
   });
 });
 describe('2024 Higher deferred Paper 1', () => {
-  const prefix='maths-2024-hl-p1-deferred-q';
+  const prefix='maths-2024-hl-deferred-p1-q';
   const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
   it('preserves every printed task at its published boundary and all 380 offered marks', () => {
     expect(cards).toHaveLength(40);
@@ -222,7 +222,7 @@ describe('2024 Higher deferred Paper 1', () => {
 });
 
 describe('2025 Higher deferred Paper 2', () => {
-  const prefix='maths-2025-hl-p2-deferred-q';
+  const prefix='maths-2025-hl-deferred-p2-q';
   const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
   it('retains all printed tasks at their own allocations, keeping shared marks together', () => {
     expect(cards).toHaveLength(43);
@@ -282,7 +282,7 @@ describe('2025 Higher deferred Paper 2', () => {
 });
 
 describe('2025 Higher deferred Paper 1', () => {
-  const prefix='maths-2025-hl-p1-deferred-q';
+  const prefix='maths-2025-hl-deferred-p1-q';
   const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
   it('retains every printed part at its published allocation, including grouped parts and choices', () => {
     expect(cards).toHaveLength(40);
@@ -434,7 +434,7 @@ describe('2025 Ordinary deferred Paper 1', () => {
 });
 
 describe('2025 Ordinary deferred Paper 2', () => {
-  const prefix='maths-2025-ol-p2-deferred-q';
+  const prefix='maths-2025-ol-deferred-p2-q';
   const cards=CARDS.filter(c=>c.id.startsWith(prefix));
   it('retains all 45 reviewed tasks, shared allocations, printed choices and 380 offered marks', () => {
     expect(cards.map(c=>c.id).sort()).toEqual(reviewP2.cards.map(c=>c.id).sort());
@@ -503,7 +503,7 @@ describe('2025 Ordinary deferred Paper 2', () => {
 
 describe('2024 Ordinary deferred Paper 1', () => {
   const review=JSON.parse(readFileSync('scripts/markbank/mathematics/reviews/2024-ordinary-p1-deferred.json','utf8')) as typeof reviewP2;
-  const prefix='maths-2024-ol-p1-deferred-q';
+  const prefix='maths-2024-ol-deferred-p1-q';
   const cards=CARDS.filter(c=>c.id.startsWith(prefix));
   it('covers every question, shared mark allocation and printed response choice', () => {
     expect(cards).toHaveLength(42);
@@ -577,7 +577,7 @@ describe('2024 Ordinary deferred Paper 1', () => {
 
 describe('2024 Ordinary deferred Paper 2', () => {
   const review=JSON.parse(readFileSync('scripts/markbank/mathematics/reviews/2024-ordinary-p2-deferred.json','utf8')) as typeof reviewP2;
-  const prefix='maths-2024-ol-p2-deferred-q';
+  const prefix='maths-2024-ol-deferred-p2-q';
   const cards=CARDS.filter(c=>c.id.startsWith(prefix));
   it('covers every question, shared allocation and finite response choice once', () => {
     expect(cards).toHaveLength(50);

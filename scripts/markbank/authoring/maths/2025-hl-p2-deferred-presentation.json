@@ -2,7 +2,7 @@
   "questionSha256": "e78fe93679d66a0b22221315e812d725d423155b340df1bd25574ae706ea7f4a",
   "solutionSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
   "tasks": {
-    "maths-2025-hl-p2-deferred-q1-a-i": {
+    "maths-2025-hl-deferred-p2-q1-a-i": {
       "question": [
         [
           4,
@@ -29,7 +29,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q1-a-ii": {
+    "maths-2025-hl-deferred-p2-q1-a-ii": {
       "question": [
         [
           4,
@@ -57,7 +57,7 @@
       ],
       "sourceNote": "The scheme repeats the label (a)(i) on this row. This is the solution to printed Q1(a)(ii), the acute angle between AB and AC."
     },
-    "maths-2025-hl-p2-deferred-q1-b": {
+    "maths-2025-hl-deferred-p2-q1-b": {
       "question": [
         [
           4,
@@ -84,7 +84,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q2-a-i-ii": {
+    "maths-2025-hl-deferred-p2-q2-a-i-ii": {
       "question": [
         [
           6,
@@ -111,7 +111,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q2-b-i": {
+    "maths-2025-hl-deferred-p2-q2-b-i": {
       "question": [
         [
           7,
@@ -131,7 +131,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q2-b-ii": {
+    "maths-2025-hl-deferred-p2-q2-b-ii": {
       "question": [
         [
           7,
@@ -158,7 +158,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q3-a-i-ii": {
+    "maths-2025-hl-deferred-p2-q3-a-i-ii": {
       "question": [
         [
           8,
@@ -185,7 +185,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q3-b-i-ii": {
+    "maths-2025-hl-deferred-p2-q3-b-i-ii": {
       "question": [
         [
           8,
@@ -219,7 +219,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q3-c": {
+    "maths-2025-hl-deferred-p2-q3-c": {
       "question": [
         [
           8,
@@ -253,7 +253,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q4-a-b": {
+    "maths-2025-hl-deferred-p2-q4-a-b": {
       "question": [
         [
           10,
@@ -281,7 +281,7 @@
       ],
       "sourceNote": "In part (b), the exact values are cos(−π/6) = √3/2 and sin(−π/6) = −1/2. The printed intermediate line interchanges these magnitudes. The correct expression √3/2 − (−1/2) still gives the printed final answer, 1·3660."
     },
-    "maths-2025-hl-p2-deferred-q4-c": {
+    "maths-2025-hl-deferred-p2-q4-c": {
       "question": [
         [
           10,
@@ -301,7 +301,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q4-d": {
+    "maths-2025-hl-deferred-p2-q4-d": {
       "question": [
         [
           11,
@@ -328,7 +328,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q5-a": {
+    "maths-2025-hl-deferred-p2-q5-a": {
       "question": [
         [
           12,
@@ -348,7 +348,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q5-b": {
+    "maths-2025-hl-deferred-p2-q5-b": {
       "question": [
         [
           13,
@@ -368,7 +368,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q6-a-i": {
+    "maths-2025-hl-deferred-p2-q6-a-i": {
       "question": [
         [
           14,
@@ -389,7 +389,7 @@
       ],
       "sourceNote": "Read the radius calculation as √(2² + (−1)² + 20) = 5. The printed line omits parentheses around −1 before squaring; the square contributes +1."
     },
-    "maths-2025-hl-p2-deferred-q6-a-ii": {
+    "maths-2025-hl-deferred-p2-q6-a-ii": {
       "question": [
         [
           14,
@@ -416,7 +416,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q6-b-i": {
+    "maths-2025-hl-deferred-p2-q6-b-i": {
       "question": [
         [
           15,
@@ -436,7 +436,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q6-b-ii": {
+    "maths-2025-hl-deferred-p2-q6-b-ii": {
       "question": [
         [
           15,
@@ -470,7 +470,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-a": {
+    "maths-2025-hl-deferred-p2-q7-a": {
       "question": [
         [
           16,
@@ -490,7 +490,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-b-i": {
+    "maths-2025-hl-deferred-p2-q7-b-i": {
       "question": [
         [
           16,
@@ -517,7 +517,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-b-ii": {
+    "maths-2025-hl-deferred-p2-q7-b-ii": {
       "question": [
         [
           16,
@@ -551,7 +551,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-c": {
+    "maths-2025-hl-deferred-p2-q7-c": {
       "question": [
         [
           16,
@@ -578,7 +578,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-d": {
+    "maths-2025-hl-deferred-p2-q7-d": {
       "question": [
         [
           16,
@@ -605,7 +605,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q7-e": {
+    "maths-2025-hl-deferred-p2-q7-e": {
       "question": [
         [
           16,
@@ -632,7 +632,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-a-i": {
+    "maths-2025-hl-deferred-p2-q8-a-i": {
       "question": [
         [
           20,
@@ -659,7 +659,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-a-ii": {
+    "maths-2025-hl-deferred-p2-q8-a-ii": {
       "question": [
         [
           20,
@@ -686,7 +686,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-a-iii": {
+    "maths-2025-hl-deferred-p2-q8-a-iii": {
       "question": [
         [
           20,
@@ -713,7 +713,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-b-i": {
+    "maths-2025-hl-deferred-p2-q8-b-i": {
       "question": [
         [
           22,
@@ -740,7 +740,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-b-ii": {
+    "maths-2025-hl-deferred-p2-q8-b-ii": {
       "question": [
         [
           22,
@@ -767,7 +767,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q8-c": {
+    "maths-2025-hl-deferred-p2-q8-c": {
       "question": [
         [
           23,
@@ -787,7 +787,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-a-i": {
+    "maths-2025-hl-deferred-p2-q9-a-i": {
       "question": [
         [
           24,
@@ -814,7 +814,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-a-ii": {
+    "maths-2025-hl-deferred-p2-q9-a-ii": {
       "question": [
         [
           24,
@@ -842,7 +842,7 @@
       ],
       "sourceNote": "Here the model solution uses A for the event “urban voter”. Using U avoids confusion with Alayah: P(D ∪ U) = 0·382 + 0·82 − 0·302 = 0·90."
     },
-    "maths-2025-hl-p2-deferred-q9-a-iii": {
+    "maths-2025-hl-deferred-p2-q9-a-iii": {
       "question": [
         [
           24,
@@ -869,7 +869,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-a-iv": {
+    "maths-2025-hl-deferred-p2-q9-a-iv": {
       "question": [
         [
           24,
@@ -896,7 +896,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-b-i-ii": {
+    "maths-2025-hl-deferred-p2-q9-b-i-ii": {
       "question": [
         [
           26,
@@ -923,7 +923,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-c-i": {
+    "maths-2025-hl-deferred-p2-q9-c-i": {
       "question": [
         [
           27,
@@ -943,7 +943,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q9-c-ii": {
+    "maths-2025-hl-deferred-p2-q9-c-ii": {
       "question": [
         [
           27,
@@ -970,7 +970,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q10-a-i": {
+    "maths-2025-hl-deferred-p2-q10-a-i": {
       "question": [
         [
           28,
@@ -991,7 +991,7 @@
       ],
       "sourceNote": "The scheme rounds z = (82 − 78)/6 to 0·67 and uses a normal table to obtain 74·86%. Keeping the unrounded z gives approximately 74·75%. Its high-partial note “3 correct new entries” appears copied from a table question; the published awards and original notes are retained without inventing a replacement criterion."
     },
-    "maths-2025-hl-p2-deferred-q10-a-ii": {
+    "maths-2025-hl-deferred-p2-q10-a-ii": {
       "question": [
         [
           28,
@@ -1019,7 +1019,7 @@
       ],
       "sourceNote": "The required cumulative probability is P(Z ≤ z) = 0·5918, giving z ≈ 0·23 and k ≈ 79·4 minutes. The printed line P(Z > x) = 0·5918 has the wrong tail for this positive z. The partial-credit notes about two or three results also appear copied from another question; the original notes and numeric awards are retained."
     },
-    "maths-2025-hl-p2-deferred-q10-b": {
+    "maths-2025-hl-deferred-p2-q10-b": {
       "question": [
         [
           28,
@@ -1046,7 +1046,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q10-c-i": {
+    "maths-2025-hl-deferred-p2-q10-c-i": {
       "question": [
         [
           30,
@@ -1066,7 +1066,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q10-c-ii": {
+    "maths-2025-hl-deferred-p2-q10-c-ii": {
       "question": [
         [
           30,
@@ -1093,7 +1093,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p2-deferred-q10-c-iii": {
+    "maths-2025-hl-deferred-p2-q10-c-iii": {
       "question": [
         [
           30,

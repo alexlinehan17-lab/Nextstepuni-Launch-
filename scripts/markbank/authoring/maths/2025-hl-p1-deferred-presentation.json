@@ -2,7 +2,7 @@
   "questionSha256": "5d27ced5f822674331b23cb878b80de3ce33cf75224d3ca45b9733ebd55544ca",
   "solutionSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
   "tasks": {
-    "maths-2025-hl-p1-deferred-q1-a": {
+    "maths-2025-hl-deferred-p1-q1-a": {
       "question": [
         [
           4,
@@ -22,7 +22,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q1-b": {
+    "maths-2025-hl-deferred-p1-q1-b": {
       "question": [
         [
           4,
@@ -42,7 +42,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q1-c": {
+    "maths-2025-hl-deferred-p1-q1-c": {
       "question": [
         [
           5,
@@ -63,7 +63,7 @@
       ],
       "sourceNote": "The final lines of the printed solution use x where the question uses n. Read those lines as n = 1 or n = −2; the condition n > 0 leaves n = 1."
     },
-    "maths-2025-hl-p1-deferred-q2-a": {
+    "maths-2025-hl-deferred-p1-q2-a": {
       "question": [
         [
           6,
@@ -83,7 +83,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q2-b-i": {
+    "maths-2025-hl-deferred-p1-q2-b-i": {
       "question": [
         [
           7,
@@ -103,7 +103,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q2-b-ii": {
+    "maths-2025-hl-deferred-p1-q2-b-ii": {
       "question": [
         [
           7,
@@ -130,7 +130,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q3-a": {
+    "maths-2025-hl-deferred-p1-q3-a": {
       "question": [
         [
           8,
@@ -150,7 +150,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q3-b": {
+    "maths-2025-hl-deferred-p1-q3-b": {
       "question": [
         [
           8,
@@ -177,7 +177,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q3-c": {
+    "maths-2025-hl-deferred-p1-q3-c": {
       "question": [
         [
           9,
@@ -198,7 +198,7 @@
       ],
       "sourceNote": "The sum 6 and product 10 in the model answer refer to the conjugate pair 3 − i and 3 + i. The third root is −4."
     },
-    "maths-2025-hl-p1-deferred-q4-a": {
+    "maths-2025-hl-deferred-p1-q4-a": {
       "question": [
         [
           10,
@@ -218,7 +218,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q4-b": {
+    "maths-2025-hl-deferred-p1-q4-b": {
       "question": [
         [
           10,
@@ -239,7 +239,7 @@
       ],
       "sourceNote": "The answer is No. A horizontal line sufficiently close to and below the local maximum meets the continuous graph on both sides of x = 7. The scheme’s wording “for all values of y < 12” is too broad; the local argument is enough to show that the function is not one-to-one."
     },
-    "maths-2025-hl-p1-deferred-q4-c": {
+    "maths-2025-hl-deferred-p1-q4-c": {
       "question": [
         [
           11,
@@ -259,7 +259,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q5-a": {
+    "maths-2025-hl-deferred-p1-q5-a": {
       "question": [
         [
           12,
@@ -279,7 +279,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q5-b": {
+    "maths-2025-hl-deferred-p1-q5-b": {
       "question": [
         [
           12,
@@ -299,7 +299,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q5-c": {
+    "maths-2025-hl-deferred-p1-q5-c": {
       "question": [
         [
           13,
@@ -319,7 +319,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q6-a": {
+    "maths-2025-hl-deferred-p1-q6-a": {
       "question": [
         [
           14,
@@ -339,7 +339,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q6-b": {
+    "maths-2025-hl-deferred-p1-q6-b": {
       "question": [
         [
           14,
@@ -359,7 +359,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q6-c-i-ii": {
+    "maths-2025-hl-deferred-p1-q6-c-i-ii": {
       "question": [
         [
           15,
@@ -386,7 +386,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q7-a-b": {
+    "maths-2025-hl-deferred-p1-q7-a-b": {
       "question": [
         [
           16,
@@ -414,7 +414,7 @@
       ],
       "sourceNote": "A is the constant 101·3. The model answer prints A(1) in part (a), and labels 32·68 as 1 d.p. in part (b). The question asks for two decimal places: 32·68 is the correctly rounded answer."
     },
-    "maths-2025-hl-p1-deferred-q7-c": {
+    "maths-2025-hl-deferred-p1-q7-c": {
       "question": [
         [
           16,
@@ -441,7 +441,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q7-d": {
+    "maths-2025-hl-deferred-p1-q7-d": {
       "question": [
         [
           16,
@@ -468,7 +468,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q7-e-i": {
+    "maths-2025-hl-deferred-p1-q7-e-i": {
       "question": [
         [
           18,
@@ -488,7 +488,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q7-e-ii": {
+    "maths-2025-hl-deferred-p1-q7-e-ii": {
       "question": [
         [
           18,
@@ -515,7 +515,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-a-i": {
+    "maths-2025-hl-deferred-p1-q8-a-i": {
       "question": [
         [
           19,
@@ -535,7 +535,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-a-ii": {
+    "maths-2025-hl-deferred-p1-q8-a-ii": {
       "question": [
         [
           19,
@@ -562,7 +562,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-b": {
+    "maths-2025-hl-deferred-p1-q8-b": {
       "question": [
         [
           20,
@@ -582,7 +582,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-c-i": {
+    "maths-2025-hl-deferred-p1-q8-c-i": {
       "question": [
         [
           20,
@@ -602,7 +602,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-c-ii": {
+    "maths-2025-hl-deferred-p1-q8-c-ii": {
       "question": [
         [
           20,
@@ -629,7 +629,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q8-d": {
+    "maths-2025-hl-deferred-p1-q8-d": {
       "question": [
         [
           21,
@@ -649,7 +649,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-a-i": {
+    "maths-2025-hl-deferred-p1-q9-a-i": {
       "question": [
         [
           22,
@@ -669,7 +669,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-a-ii": {
+    "maths-2025-hl-deferred-p1-q9-a-ii": {
       "question": [
         [
           22,
@@ -696,7 +696,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-a-iii": {
+    "maths-2025-hl-deferred-p1-q9-a-iii": {
       "question": [
         [
           23,
@@ -716,7 +716,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-a-iv": {
+    "maths-2025-hl-deferred-p1-q9-a-iv": {
       "question": [
         [
           22,
@@ -750,7 +750,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-b-i": {
+    "maths-2025-hl-deferred-p1-q9-b-i": {
       "question": [
         [
           24,
@@ -770,7 +770,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q9-b-ii": {
+    "maths-2025-hl-deferred-p1-q9-b-ii": {
       "question": [
         [
           24,
@@ -798,7 +798,7 @@
       ],
       "sourceNote": "The question asks how quickly the volume is decreasing, so the answer is a decrease of 1·35 m³/hour. Using signed rates, dh/dt = −0·03 and dV/dt = −1·35. The printed working uses the positive magnitudes of these decreases."
     },
-    "maths-2025-hl-p1-deferred-q10-a-i": {
+    "maths-2025-hl-deferred-p1-q10-a-i": {
       "question": [
         [
           26,
@@ -828,7 +828,7 @@
       "supplementAlt": "NextStepUni worked speed graph over 0 to 32 seconds, followed by original SEC credit notes. At t = 0, 4, 8, 12, 16, 20, 24, 28, 32 seconds, speeds are 0.0, 29.7, 43.1, 49.1, 51.8, 53.0, 53.6, 53.8, 53.9 m/s.",
       "sourceNote": "The printed SEC graph is clipped at its right edge and contains stray formatting marks. The clean graph below is a NextStepUni worked example calculated from the question’s formula over the full 0–32 second domain. The original SEC credit notes follow it."
     },
-    "maths-2025-hl-p1-deferred-q10-a-ii": {
+    "maths-2025-hl-deferred-p1-q10-a-ii": {
       "question": [
         [
           26,
@@ -855,7 +855,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q10-a-iii": {
+    "maths-2025-hl-deferred-p1-q10-a-iii": {
       "question": [
         [
           26,
@@ -883,7 +883,7 @@
       ],
       "sourceNote": "The scheme prints Scale 10C (0, 4, 6, 10), but its notes also refer to Mid Partial Credit without assigning an additional mark. The credit selector follows the printed numeric scale; the complete original notes are shown for context."
     },
-    "maths-2025-hl-p1-deferred-q10-a-iv": {
+    "maths-2025-hl-deferred-p1-q10-a-iv": {
       "question": [
         [
           26,
@@ -910,7 +910,7 @@
         ]
       ]
     },
-    "maths-2025-hl-p1-deferred-q10-b": {
+    "maths-2025-hl-deferred-p1-q10-b": {
       "question": [
         [
           28,
