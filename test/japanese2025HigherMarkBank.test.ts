@@ -62,8 +62,9 @@ describe('Japanese 2025 Higher independent source review', () => {
     });
     const live = new Set([...higher, ...ordinary].map(card => card.id));
     for (const id of originalIds) expect(live.has(id) || live.has(CARD_ID_ALIASES[id]), id).toBe(true);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1556);
-    expect(live.size).toBe(600 + 1556 - 391);
+    // Add independently reviewed2011OL49,2010HL66 and2010OL61; frozen600/391 stay unchanged.
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1556 + 49 + 66 + 61);
+    expect(live.size).toBe(600 + 1556 + 49 + 66 + 61 - 391);
     expect(cards.filter(card => originalIds.includes(card.id))).toHaveLength(29);
   });
 

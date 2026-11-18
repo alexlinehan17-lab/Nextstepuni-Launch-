@@ -63,8 +63,9 @@ describe('Japanese 2019 Higher independent source review', () => {
     expect(originalIds.some(id => id.startsWith('ja-2019-'))).toBe(false);
     expect(review.consolidations).toEqual([]);
     expect(Object.keys(aliases)).toHaveLength(391);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1556);
-    expect(live.size).toBe(600 + 1556 - 391);
+    // Add independently reviewed2011OL49,2010HL66 and2010OL61; frozen600/391 stay unchanged.
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1556 + 49 + 66 + 61);
+    expect(live.size).toBe(600 + 1556 + 49 + 66 + 61 - 391);
   });
 
   it('keeps every required finite pool whole without inventing optional answers', () => {
