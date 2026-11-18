@@ -574,7 +574,7 @@
   },
   "maths": {
     "cards": 5188,
-    "contentHash": "2ed9e6fbf0ca8381",
+    "contentHash": "78caa4001fdce205",
     "coveragePct": 99.4,
     "covered": 5601,
     "excluded": 0,
@@ -585,7 +585,7 @@
       "count": 82,
       "hash": "85af10c8f0afdec2"
     },
-    "refsHash": "7c61b135f32db8f4"
+    "refsHash": "8e1e27da1b7b1b20"
   },
   "modern-greek": {
     "cards": 79,
@@ -619,7 +619,7 @@
   },
   "physics": {
     "cards": 4059,
-    "contentHash": "0c46069304e513ca",
+    "contentHash": "c474c88f67d95d7f",
     "coveragePct": 100.0,
     "covered": 3250,
     "excluded": 0,
@@ -630,7 +630,7 @@
       "count": 34,
       "hash": "235feb6c1db85258"
     },
-    "refsHash": "4e627bce73a83c24"
+    "refsHash": "c8412e48ab29b939"
   },
   "polish": {
     "cards": 237,
