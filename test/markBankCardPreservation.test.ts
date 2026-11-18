@@ -2045,13 +2045,14 @@ const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
  * unseen passages, carded with the translation panel, and the 21 asks of
  * Ancient Greek 2022 Ordinary, a paper the SEC published no marking scheme
  * for. Every card frozen before them keeps its id. */
-const treatmentAdditionIds = new Set([...AGREEK_ORDINARY]
-  .filter(card => (card.kind === 'question' || card.kind === 'diagram') && card.noScheme === true)
+const treatmentAdditionIds = new Set([...LATIN_HIGHER, ...AGREEK_ORDINARY]
+  .filter(card => (card.kind === 'rubric' && card.rubric.system === 'translation')
+    || ((card.kind === 'question' || card.kind === 'diagram') && card.noScheme === true))
   .map(card => card.id));
 
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
-  if (name === 'ancient-greek:ordinary') return ids.filter(id => !treatmentAdditionIds.has(id));
+  if (name === 'latin:higher' || name === 'ancient-greek:ordinary') return ids.filter(id => !treatmentAdditionIds.has(id));
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
@@ -2369,6 +2370,7 @@ describe('Mark Bank card preservation', () => {
       'agr-2022-ol-q2-ii-f', 'agr-2022-ol-q2-ii-g', 'agr-2022-ol-q2-ii-h', 'agr-2022-ol-q3-i', 'agr-2022-ol-q3-ii',
       'agr-2022-ol-q3-iii', 'agr-2022-ol-q3-iv', 'agr-2022-ol-q3-v', 'agr-2022-ol-q3-vi', 'agr-2022-ol-q3-vii',
       'agr-2022-ol-q3-viii',
+      'lat-2023-hl-a-q2-i', 'lat-2023-hl-a-q2-ii', 'lat-2023-hl-b-q2-i', 'lat-2023-hl-b-q2-ii',
     ]);
     expect([...treatmentAdditionIds].filter(id => id in CARD_ID_ALIASES)).toEqual([]);
   });
@@ -2481,7 +2483,7 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
-        : name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
+        : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
@@ -2511,7 +2513,7 @@ describe('Mark Bank card preservation', () => {
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
         + historyEssayIds.size + spanishAddedTotal + germanAddedTotal
-        // Review pack 1 prototype: Ancient Greek 21.
+        // Review pack 1 prototypes: Latin 4 + Ancient Greek 21.
         + treatmentAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
