@@ -4882,6 +4882,8 @@ def census_home_economics_deferred():
     """
     import hashlib
     path = os.path.join(ROOT, 'scripts/markbank/authoring/home-economics/deferred-source-inventory.json')
+    if not os.path.exists(path):
+        return []                       # no reviewed deferred Home Economics in this tree
     with open(path, encoding='utf-8') as fh:
         inventory = json.load(fh)
     papers = []
@@ -4969,6 +4971,8 @@ def census_physics_deferred():
     from types import SimpleNamespace
     from phys_sources import source_path
     path = os.path.join(ROOT, 'scripts/markbank/authored/physics-review-audit.json')
+    if not os.path.exists(path):
+        return []                       # no reviewed deferred Physics in this tree
     with open(path, encoding='utf-8') as fh:
         audit = json.load(fh)
     papers = []
