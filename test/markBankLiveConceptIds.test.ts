@@ -18,33 +18,28 @@ import { describe, expect, it } from 'vitest';
 import pins from './fixtures/markBankLiveConceptIds.json';
 import overrides from '../scripts/markbank/live-concept-ids.json';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
-import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
-import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
-import { CARDS as MATHS_FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
-import { CARDS as PHYSICS_HIGHER } from '../components/MarkBank/cards/physics/higher';
-import { CARDS as PHYSICS_ORDINARY } from '../components/MarkBank/cards/physics/ordinary';
-import { CARDS as HOME_EC_HIGHER } from '../components/MarkBank/cards/home-economics/higher';
-import { CARDS as HOME_EC_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
-import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
-import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
-import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
-import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
-import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { loadCards, levelsFor } from '../components/MarkBank/deck';
 
-const decks = [MATHS_HIGHER, MATHS_ORDINARY, MATHS_FOUNDATION, PHYSICS_HIGHER, PHYSICS_ORDINARY,
-  HOME_EC_HIGHER, HOME_EC_ORDINARY, JAPANESE_HIGHER, JAPANESE_ORDINARY, RUSSIAN_HIGHER, RUSSIAN_ORDINARY, LCVP_COMMON];
-const conceptById = new Map(decks.flat().map(card => [card.id, card.conceptId]));
+const SUBJECTS = ['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp'];
 const live = pins as Record<string, string>;
 const copiedBack = overrides as Record<string, string>;
 
+/** Every card the app serves in the six subjects, at every level it builds. */
+const served = async () => {
+  const decks = await Promise.all(SUBJECTS.flatMap(subject =>
+    levelsFor(subject).map(level => loadCards(subject, level))));
+  return new Map(decks.flat().map(card => [card.id, card.conceptId]));
+};
+
 describe('live cards keep their conceptId through the reviewed decks', () => {
-  it('pins every live card that is still a card', () => {
+  it('pins every live card that is still a card', async () => {
+    const conceptById = await served();
     expect(Object.keys(live)).toHaveLength(3_249);
     const moved = Object.entries(live)
       .filter(([id, conceptId]) => conceptById.get(id) !== conceptId)
       .map(([id, conceptId]) => `${id}: live ${conceptId}, now ${conceptById.get(id) ?? '(no card)'}`);
     expect(moved).toEqual([]);
-  });
+  }, 60_000);
 
   it('copies back exactly the 130 live values a review had changed', () => {
     expect(Object.keys(copiedBack)).toHaveLength(130);
