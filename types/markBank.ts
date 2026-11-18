@@ -597,6 +597,16 @@ export interface SecPointCardBase extends SecCardBase {
     label: string;
     rows: MarkRow[];
   }>;
+  /**
+   * The SEC published no marking scheme for this card's paper (Ancient Greek
+   * Ordinary in most years). The question is shown as printed, with the
+   * paper's own marks, and it cannot be scored: there is nothing to check an
+   * answer against. Such a card has the `questionTotal` tariff and exactly
+   * one row, a criterion reading NO_SCHEME_PUBLISHED with no marks, which the
+   * session shows as a statement and never as something to claim. Its result
+   * carries no marks either way.
+   */
+  noScheme?: true;
 }
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
@@ -1532,7 +1542,56 @@ export interface HistoryEssayRubric {
  *  build-deck.mjs, which refuses any other wording. */
 export const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric;
+/**
+ * One unit of a passage the scheme marks phrase by phrase: the words of the
+ * PASSAGE the candidate was given (Latin, at Latin Q2), cut where the scheme
+ * cuts them, and the marks the scheme writes after the cut ("…ferunt;/4").
+ * `text` is lifted from the scheme with the mark removed; it is the source
+ * text, never an answer.
+ */
+export interface TranslationUnit {
+  id: string;
+  text: string;
+  marks: number;
+}
+
+/**
+ * An unseen translation marked by unit of meaning (Latin Higher Q2, 2023 on).
+ *
+ * The scheme prints no model translation. It prints the passage cut into
+ * units with a mark after each, and the rule it marks them by: "Full marks
+ * are awarded per unit of meaning based on demonstrating thorough
+ * understanding of syntax and vocabulary. Partial marks are awarded based on
+ * demonstrating sufficient understanding…". So the student marks their own
+ * translation unit by unit, full, partial or none, and the card adds up the
+ * units. The scheme names no partial value, so a partial unit is any whole
+ * mark between none and full, and the student chooses it.
+ */
+export interface TranslationRubric {
+  system: 'translation';
+  /** The scheme's own rule for marking a unit, verbatim, one entry per printed sentence or bullet. */
+  schemeGuidance: string[];
+  /** The language the units are printed in, for `lang` on each unit (e.g. 'la'). */
+  sourceLanguage: string;
+  units: TranslationUnit[];
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
+/** The fixed line a translation card carries: NextStepUni's, not the SEC's.
+ *  Mirrored in build-deck.mjs, which refuses any other wording. */
+export const TRANSLATION_NO_MODEL = 'The scheme prints no model translation.';
+
+/**
+ * The fixed line a card carries when the SEC published no marking scheme for
+ * its paper (PLAN-2026-11-18 R4). The card shows the question as printed and
+ * says it cannot be scored; the paper's own marks stay on it. Mirrored in
+ * build-deck.mjs, which refuses any other wording on such a card.
+ */
+export const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric | TranslationRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1598,6 +1657,8 @@ export type SecCard = SecPointCard | SecRubricCard;
 export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
 export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'question' || c.kind === 'diagram';
 export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
+/** A card whose paper has no published marking scheme: shown, never scored. */
+export const isNoSchemeCard = (c: SecCard): boolean => (c.kind === 'question' || c.kind === 'diagram') && c.noScheme === true;
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
@@ -1990,6 +2051,18 @@ export function tariffReconciles(card: SecCard): boolean {
             && marks.every(mark => allowed.includes(mark));
         });
     }
+    if (card.rubric.system === 'translation') {
+      // The units are the passage as the scheme cuts it; their marks are the
+      // marks written after each cut, and they make the question's total.
+      const { units, schemeGuidance, schemeFileid, schemePages } = card.rubric;
+      return Boolean(schemeFileid)
+        && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && schemeGuidance.length > 0 && schemeGuidance.every(line => line.trim().length > 0)
+        && units.length > 0
+        && new Set(units.map(unit => unit.id)).size === units.length
+        && units.every(unit => unit.text.trim().length > 0 && Number.isInteger(unit.marks) && unit.marks > 0)
+        && units.reduce((sum, unit) => sum + unit.marks, 0) === card.totalMarks;
+    }
     if (card.rubric.system === 'history-essay') {
       const { cm, oe, schemeFileid, schemePages } = card.rubric;
       // A ladder covers 0..top exactly once, every band a run of whole marks.
@@ -2074,6 +2147,13 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
   }
   const { tariffModel: t, rows, totalMarks } = card;
+  // No scheme was published: the card carries the paper's marks and one
+  // statement, and nothing on it is claimable.
+  if (card.noScheme) {
+    return t.kind === 'questionTotal' && rows.length === 1 && !card.answerVariants?.length && !card.questionBonus
+      && rows[0].kind === 'criterion' && rows[0].verbatim === NO_SCHEME_PUBLISHED && rows[0].marks === null
+      && Number.isInteger(totalMarks) && totalMarks > 0;
+  }
   const bonus = card.questionBonus;
   if (bonus && (t.kind !== 'fixed' || !card.taskGroups?.length
     || !bonus.id || rows.some(row => row.id === bonus.id)
