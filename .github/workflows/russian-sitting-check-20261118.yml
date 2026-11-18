@@ -1,0 +1,85 @@
+{
+  "name": "Russian 2021 Higher batch verification 18 November",
+  "permissions": {
+    "contents": "read"
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "wip/russian-2026-11-18"
+      ]
+    }
+  },
+  "concurrency": {
+    "group": "russian-2021hl-check-20261118",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "verify-candidate": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 25,
+      "env": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "with": {
+            "fetch-depth": 2
+          }
+        },
+        {
+          "name": "Verify exact source candidate",
+          "id": "integrity",
+          "run": "test \"$(git rev-parse HEAD^)\" = c983b807305b7816d5e41041fa567254ee16fe1f\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/russian-sitting-check-20261118.yml"
+        },
+        {
+          "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "with": {
+            "node-version": 22,
+            "cache": "npm"
+          }
+        },
+        {
+          "name": "Install pinned plans heavy wrapper",
+          "run": "python3 - <<'PYWRAPPER'\nfrom pathlib import Path\nimport hashlib,os\ns='#!/bin/bash\\n# Serialise heavy checks across all NextStepUni subject agents on this 16 GB Mac.\\n# Usage: bash heavy.sh <command ...>   (typecheck, build, lint, multi-file vitest,\\n# dev server + browser QA). Waits for the lock, runs, releases even on failure.\\n# Default Vitest to one worker, including runs inside nested shell scripts.\\n# A single lock holder otherwise starts one worker per test file and can exhaust\\n# this 16 GB Mac. An explicit VITEST_MAX_WORKERS environment setting is retained.\\nexport VITEST_MAX_WORKERS=\"${VITEST_MAX_WORKERS:-1}\"\\nLOCK=/private/tmp/claude-501/nsu-heavy.lock\\nwhile ! mkdir \"$LOCK\" 2>/dev/null; do\\n  if [ -f \"$LOCK/pid\" ] && ! kill -0 \"$(cat \"$LOCK/pid\" 2>/dev/null)\" 2>/dev/null; then rm -rf \"$LOCK\"; continue; fi\\n  sleep 5\\ndone\\necho $$ > \"$LOCK/pid\"\\necho \"$(date \\'+%H:%M:%S\\') $PWD :: $*\" > \"$LOCK/what\"\\ntrap \\'rm -rf \"$LOCK\"\\' EXIT INT TERM\\n# Cap every heavy run at 90 minutes: on 2026-10-12 one hung vitest held this\\n# lock for 21 hours and stalled every agent. SIGALRM ends the command and the\\n# EXIT trap releases the lock.\\nperl -e \\'alarm shift @ARGV; exec @ARGV or die \"exec: $!\"\\' 5400 \"$@\"\\nrc=$?\\n[ $rc -eq 142 ] && echo \"heavy.sh: command exceeded 90 minutes and was stopped: $*\" >&2\\nexit $rc\\n'\nassert hashlib.sha256(s.encode()).hexdigest()=='1a08d53f6f6d9c49293659339abcd4d6649e745314d2b693909a2557f3358295'\ns=s.replace('LOCK=/private/tmp/claude-501/nsu-heavy.lock','LOCK='+os.environ['RUNNER_TEMP']+'/nsu-heavy.lock')\np=Path(os.environ['RUNNER_TEMP'])/'plans/tools/heavy.sh';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s)\nPYWRAPPER"
+        },
+        {
+          "name": "Install dependencies",
+          "id": "dependencies",
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm ci --no-audit --no-fund"
+        },
+        {
+          "name": "Full application types",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm run typecheck"
+        },
+        {
+          "name": "Prepare changed-test type configuration",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "python3 - <<'PYCONFIG'\nfrom pathlib import Path\nimport json\np=Path('tmp/russian-review/2021-hl-nov18-types.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps({'extends': '../../tsconfig.test.json', 'include': ['../../test/russian2021HigherReviewed.test.tsx', '../../test/russian2026Reviewed.test.ts', '../../test/russianSummaryLanguageExceptions.test.ts', '../../test/russianHostedAnswerRoutes.test.ts', '../../test/setup.ts', '../../vite-env.d.ts']}))\nPYCONFIG"
+        },
+        {
+          "name": "Changed-test types",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node --max-old-space-size=8192 node_modules/typescript/lib/tsc.js --noEmit -p tmp/russian-review/2021-hl-nov18-types.json"
+        },
+        {
+          "name": "Changed TypeScript lint",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" node node_modules/eslint/bin/eslint.js test/russian2021HigherReviewed.test.tsx test/russian2026Reviewed.test.ts test/russianSummaryLanguageExceptions.test.ts test/russianHostedAnswerRoutes.test.ts components/PaperTrail/vaultResolve.ts --max-warnings 0"
+        },
+        {
+          "name": "Normal production build",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "bash \"$RUNNER_TEMP/plans/tools/heavy.sh\" npm run build"
+        },
+        {
+          "name": "Confirm generation leaves source unchanged",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "git diff --exit-code\ngit status --short"
+        }
+      ]
+    }
+  }
+}
