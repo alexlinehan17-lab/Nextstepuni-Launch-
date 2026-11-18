@@ -5,7 +5,7 @@ import { CARDS as ORDINARY } from '../components/MarkBank/cards/russian/ordinary
 import { languageMarks, languageScoreId, languageFlagId, languageGroupId, languageRowId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const legacy = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/russian.json', import.meta.url), 'utf8'));
+const legacy = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/russian.json`, 'utf8'));
 
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2024&&c.level==='ordinary');
 function get(suffix:string){

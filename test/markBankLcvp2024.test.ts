@@ -8,7 +8,7 @@ import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const local = JSON.parse(readFileSync(new URL('../data/examTopics/link-modules-local-crosswalk.json', import.meta.url), 'utf8'));
+const local = JSON.parse(readFileSync(`${__dirname}/../data/examTopics/link-modules-local-crosswalk.json`, 'utf8'));
 
 const all = CARDS.filter(c => c.id.startsWith('lcvp-2024-cl-'));
 const get = (suffix: string) => {

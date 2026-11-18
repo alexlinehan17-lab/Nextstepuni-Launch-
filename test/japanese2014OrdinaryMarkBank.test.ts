@@ -10,7 +10,7 @@ import { marksClaimed } from '../components/MarkBank/SessionScreen';
 import { languageMarks, languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import type { PaperAnswerMap } from '../types/paperTrail';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2014-ol.json', import.meta.url), 'utf8'));
+const review = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2014-ol.json`, 'utf8'));
 
 const cards = ordinary.filter(card => card.year === 2014);
 const idFor = (key: (string | number | null)[]) => `ja-2014-ol-${key.filter(part => part !== null).join('-').toLowerCase()}`;

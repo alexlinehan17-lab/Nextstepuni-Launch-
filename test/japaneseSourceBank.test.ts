@@ -2,8 +2,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { japaneseBoundBankAnswers } from '../scripts/markbank/japanese-source-answers.mjs';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const original = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2015-ol.json', import.meta.url), 'utf8'));
-const original2013 = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2013-ol.json', import.meta.url), 'utf8'));
+const original = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2015-ol.json`, 'utf8'));
+const original2013 = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2013-ol.json`, 'utf8'));
 
 const source = () => {
   const review = structuredClone(original);

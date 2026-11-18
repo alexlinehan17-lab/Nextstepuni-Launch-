@@ -11,8 +11,8 @@ import { languageCriterionValue, languagePointsMarks, languageWritingMarks, type
 import { tariffReconciles, type LanguageWritingRubric, type LanguagePointsRubric } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const review = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2026-hl.json', import.meta.url), 'utf8'));
-const figures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-japanese.json', import.meta.url), 'utf8'));
+const review = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2026-hl.json`, 'utf8'));
+const figures = JSON.parse(readFileSync(`${__dirname}/../components/MarkBank/figures-japanese.json`, 'utf8'));
 
 const idFor = (key: (string | number | null)[]) => `ja-2026-hl-${key.filter(part => part !== null).join('-').toLowerCase()}`;
 const cards = higher.filter(card => card.year === 2026);

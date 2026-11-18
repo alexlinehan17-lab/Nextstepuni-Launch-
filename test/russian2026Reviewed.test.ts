@@ -12,8 +12,8 @@ import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { HOSTED_ANSWER_OVERRIDES } from '../components/PaperTrail/vaultResolve';
 import { reviewedRussianJointTask } from '../scripts/markbank/russianJointTasks.mjs';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const legacy = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/russian.json', import.meta.url), 'utf8'));
-const sources = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/russian-reviewed-sources.json', import.meta.url), 'utf8'));
+const legacy = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/russian.json`, 'utf8'));
+const sources = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/russian-reviewed-sources.json`, 'utf8'));
 
 const get = (suffix: string) => {
   const card = REVIEWED_CARDS.find(card=>card.id===`ru-2026-hl-${suffix}`);

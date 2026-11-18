@@ -5,7 +5,7 @@ import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBa
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { isRubricCard } from '../types/markBank';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const sources = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/russian-reviewed-sources.json', import.meta.url), 'utf8'));
+const sources = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/russian-reviewed-sources.json`, 'utf8'));
 const sourceCard=()=>{const c=REVIEWED_CARDS.find(c=>c.id==='ru-2012-hl-c1-2-ii');if(!c||isRubricCard(c))throw new Error('Missing complete confidence task');return c;};
 afterEach(cleanup);
 describe('Russian 2012 compulsory-feeling allocation conflict',()=>{

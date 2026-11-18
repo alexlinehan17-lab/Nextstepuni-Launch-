@@ -10,7 +10,7 @@ import bcAnchors from '../scripts/paper-trail/answers/2025/LC098GLP039EV.pdf.jso
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const local = JSON.parse(readFileSync(new URL('../data/examTopics/home-economics-s-and-s-local-crosswalk.json', import.meta.url), 'utf8'));
+const local = JSON.parse(readFileSync(`${__dirname}/../data/examTopics/home-economics-s-and-s-local-crosswalk.json`, 'utf8'));
 const all = CARDS.filter(c => c.id.startsWith('he-2025-ol-'));
 const get = (suffix: string) => {
   const c = all.find(c => c.id === `he-2025-ol-${suffix}`);

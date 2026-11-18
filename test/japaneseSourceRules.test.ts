@@ -2,8 +2,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { assertJapaneseConditionLabel, matchesNamedLanguageCondition } from '../scripts/markbank/japanese-source-rules.mjs';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const review2011 = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2011-hl.json', import.meta.url), 'utf8'));
-const review2012 = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/reviews/japanese-2012-hl.json', import.meta.url), 'utf8'));
+const review2011 = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2011-hl.json`, 'utf8'));
+const review2012 = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/reviews/japanese-2012-hl.json`, 'utf8'));
 
 it('accepts only the literal 2014 Ordinary fractional romaji/script condition', () => {
   const printed = '(1/2 marks if answered in romaji or Japanese script)';

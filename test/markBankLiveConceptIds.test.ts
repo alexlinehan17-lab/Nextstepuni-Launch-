@@ -20,7 +20,7 @@ import overrides from '../scripts/markbank/live-concept-ids.json';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { loadCards, levelsFor } from '../components/MarkBank/deck';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const pins = JSON.parse(readFileSync(new URL('./fixtures/markBankLiveConceptIds.json', import.meta.url), 'utf8'));
+const pins = JSON.parse(readFileSync(`${__dirname}/./fixtures/markBankLiveConceptIds.json`, 'utf8'));
 
 const SUBJECTS = ['maths', 'physics', 'home-economics', 'japanese', 'russian', 'lcvp'];
 const live = pins as Record<string, string>;

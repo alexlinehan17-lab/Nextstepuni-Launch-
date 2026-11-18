@@ -98,7 +98,8 @@ describe('every shipped step menu without option prices scores as before', () =>
               const picked = g.options.map((_o, j) => j).slice(0, k);
               expect(ladderGroupMarks({ ...g, perOptionSteps: g.perOptionSteps }, picked), `${card.id} ${row.id} k=${k}`)
                 .toBe(before(g.perOptionSteps, g.claimMax, k));
-              if ((card as SecQuestionCard).tariffModel?.kind === 'fixed') {
+              // A Mathematics scale card is scored by its SEC scale, not by row picks.
+              if ((card as SecQuestionCard).tariffModel?.kind === 'fixed' && !(card as SecQuestionCard).mathematicsScale) {
                 const solo = { ...card, rows: [row] } as SecQuestionCard;
                 expect(marksClaimed(solo, {}, { [rowId(row, i)]: picked }), `${card.id} ${row.id} k=${k} on screen`)
                   .toBe(before(g.perOptionSteps, g.claimMax, k));

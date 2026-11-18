@@ -20,9 +20,9 @@ import { CARDS as PHYS_ORDINARY } from '../components/MarkBank/cards/physics/ord
 import exclusions from '../scripts/markbank/authoring/exclusions/physics.json';
 import { tariffReconciles } from '../types/markBank';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const audit = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/physics-review-audit.json', import.meta.url), 'utf8'));
-const physicsFigures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures-physics.json', import.meta.url), 'utf8'));
-const sharedFigures = JSON.parse(readFileSync(new URL('../components/MarkBank/figures.json', import.meta.url), 'utf8'));
+const audit = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/physics-review-audit.json`, 'utf8'));
+const physicsFigures = JSON.parse(readFileSync(`${__dirname}/../components/MarkBank/figures-physics.json`, 'utf8'));
+const sharedFigures = JSON.parse(readFileSync(`${__dirname}/../components/MarkBank/figures.json`, 'utf8'));
 
 type Task = { id: string; questionRef: string; total: number; route: string | null; status: string;
   evidence?: string; cells?: { printed: string[]; sum: number | null; waiver?: string } };

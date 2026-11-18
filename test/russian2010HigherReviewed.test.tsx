@@ -7,7 +7,7 @@ import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageFlagId, languageGroupId, languageLengthId, languageMarks, languageOtherLanguageId, languageRowId, languageScoreId, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
 // Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const sources = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/russian-reviewed-sources.json', import.meta.url), 'utf8'));
+const sources = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/russian-reviewed-sources.json`, 'utf8'));
 
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2010&&c.level==='higher');
 const card=(suffix:string)=>{const c=sitting.find(c=>c.id===`ru-2010-hl-${suffix}`);if(!c)throw new Error(suffix);return c;};

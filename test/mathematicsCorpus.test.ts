@@ -126,9 +126,9 @@ import ordinary2026p2 from '../scripts/markbank/mathematics/reviews/2026-ordinar
 const HIGHER = HIGHER_DECK as SecQuestionCard[];
 const ORDINARY = ORDINARY_DECK as SecQuestionCard[];
 const FOUNDATION = FOUNDATION_DECK as SecQuestionCard[];
-const mathsSchemeCatalogue = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json', import.meta.url), 'utf8'));
-const questionCropOverrides = JSON.parse(readFileSync(new URL('../scripts/markbank/authoring/maths_qfig_overrides.json', import.meta.url), 'utf8'));
-const schemeRowFigures = JSON.parse(readFileSync(new URL('../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json', import.meta.url), 'utf8'));
+const mathsSchemeCatalogue = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json`, 'utf8'));
+const questionCropOverrides = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authoring/maths_qfig_overrides.json`, 'utf8'));
+const schemeRowFigures = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json`, 'utf8'));
 
 describe('2012 Higher Project Maths Phase 3 Paper 1', () => {
   const cards = HIGHER.filter(c => c.id.startsWith('maths-2012-hl-p1-project-'));
