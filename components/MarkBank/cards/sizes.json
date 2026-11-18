@@ -198,5 +198,8 @@
  "accounting": {
   "higher": 721,
   "ordinary": 644
+ },
+ "music": {
+  "higher": 46
  }
 }

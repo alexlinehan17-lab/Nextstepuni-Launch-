@@ -2193,6 +2193,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   ukrainian: {
     higher: () => import('./cards/ukrainian/higher'),
   },
+  // Review pack 1 prototype (treatments lane): 2025 Higher only, so Higher only.
+  music: {
+    higher: () => import('./cards/music/higher'),
+  },
   'modern-greek': {
     higher: () => import('./cards/modern-greek/higher'),
   },

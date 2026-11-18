@@ -145,6 +145,7 @@ import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-gree
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -2373,6 +2374,15 @@ describe('Mark Bank card preservation', () => {
       'lat-2023-hl-a-q2-i', 'lat-2023-hl-a-q2-ii', 'lat-2023-hl-b-q2-i', 'lat-2023-hl-b-q2-ii',
     ]);
     expect([...treatmentAdditionIds].filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+  });
+
+  it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
+    // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
+    // and one Listening elective card for its five asks (one shared band).
+    // Composing Section B's three asks are not carded: no card type takes
+    // their half mark per correct note (treatments lane README).
+    expect(MUSIC_HIGHER).toHaveLength(46);
+    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
   });
 
   it('protects the complete current bank', () => {

@@ -134,3 +134,37 @@ describe('Latin 2023 Higher Q2: an unseen translation marked unit by unit', () =
     expect(LATIN_HIGHER.filter(c => isRubricCard(c)).every(c => c.year === 2023 && c.questionRef.includes('Q2('))).toBe(true);
   });
 });
+
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+
+describe('Music 2025 Higher: the whole sitting on card types that exist', () => {
+  const listening = MUSIC_HIGHER.filter(card => card.section === 'L');
+  it('cards all 42 listening asks, Composing Section A and the elective, and leaves Composing Section B', () => {
+    expect(listening).toHaveLength(42);
+    expect(MUSIC_HIGHER.filter(card => card.section === 'A').map(card => card.id).sort())
+      .toEqual(['mus-2025-hl-c-a-q1', 'mus-2025-hl-c-a-q2', 'mus-2025-hl-c-a-q3']);
+    expect(MUSIC_HIGHER.some(card => card.section === 'B')).toBe(false);
+    expect(MUSIC_HIGHER.filter(card => card.section === 'E').map(card => card.questionRef)).toEqual(['2025 HL Elective Q1–Q4(b)']);
+    expect(MUSIC_HIGHER.every(tariffReconciles)).toBe(true);
+  });
+
+  it('plays the SEC\'s own published sound file on every listening card that needs the recording', () => {
+    const withAudio = listening.filter(card => card.audioMaterial);
+    expect(withAudio).toHaveLength(37);
+    for (const card of withAudio) {
+      expect(['LC067ZLP045EV.mp3', 'LC067ZLP046EV.mp3']).toContain(card.audioMaterial!.secFileid);
+      expect(card.audioMaterial!.playbackUrl).toBe(`https://www.examinations.ie/archive/exampapers/2025/${card.audioMaterial!.secFileid}`);
+    }
+  });
+
+  it('places band-marked answers on the scheme\'s own bands, each covering every mark once', () => {
+    const grids = MUSIC_HIGHER.filter(isRubricCard);
+    expect(grids).toHaveLength(9);
+    for (const card of grids) {
+      if (card.rubric.system !== 'french') throw new Error(card.id);
+      const [criterion] = card.rubric.criteria;
+      const marks = criterion.bands!.flatMap(band => band.marks).sort((a, b) => a - b);
+      expect(marks).toEqual(Array.from({ length: card.totalMarks + 1 }, (_, i) => i));
+    }
+  });
+});

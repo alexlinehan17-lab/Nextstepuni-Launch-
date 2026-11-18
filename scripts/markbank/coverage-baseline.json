@@ -602,6 +602,21 @@
     },
     "refsHash": "98497719950dbd78"
   },
+  "music": {
+    "cards": 46,
+    "contentHash": "a64b63acda765490",
+    "coveragePct": 94.3,
+    "covered": 50,
+    "excluded": 0,
+    "leaves": 53,
+    "open": 3,
+    "orphans": 0,
+    "papers": {
+      "count": 3,
+      "hash": "a8e3a2545845e20d"
+    },
+    "refsHash": "c2ebc900e30e56ea"
+  },
   "physical-education": {
     "cards": 772,
     "contentHash": "751f4b855c8fbccc",

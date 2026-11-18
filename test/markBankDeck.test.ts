@@ -105,6 +105,7 @@ import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
 import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
@@ -148,6 +149,8 @@ const SAMPLE_CARDS = [
   ...LATVIAN_HIGHER, ...CZECH_HIGHER,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
+  // Review pack 1 prototype: Music 2025 Higher only.
+  ...MUSIC_HIGHER,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
   ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
   // Higher only: Modern Greek is examined at ONE level and there is no

@@ -270,7 +270,10 @@ def reconcile_manifest(subject, census):
 
     cards = shipped_cards(subject)
     manifest_path = os.path.join(DECKS, subject, 'authored.json')
-    manifest = json.load(open(manifest_path, encoding='utf-8'))
+    # Music's cards are built by build-deck into its level modules, so it has
+    # no reviewed manifest and no withdrawn aliases.
+    manifest = (json.load(open(manifest_path, encoding='utf-8'))
+                if subject != 'music' else {})
     aliases = manifest.get('withdrawnAliases', manifest.get('aliases', {}))
     shipped_ids = {cid for cid, _ in cards}
     covered = set()
@@ -282,6 +285,11 @@ def reconcile_manifest(subject, census):
     if subject == 'irish':
         for name in irish_manifest_files():
             covers.update(json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8')).get('covers', {}))
+    if subject == 'music':
+        # One card for asks the scheme marks together (the Listening elective's
+        # Q2-Q4(b) share one band; Q1 carries no marks): the census says which.
+        covers.update(json.load(open(os.path.join(ROOT, 'scripts', 'markbank', 'authored',
+                                                  'music-census.json'), encoding='utf-8')).get('covers', {}))
     for cid, ref in cards:
         wanted = expected.get(cid)
         # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
@@ -638,7 +646,7 @@ def reconcile_subject(subject, census=None):
         return reconcile_applied(census)
     if subject == 'geography':
         return reconcile_geography(census)
-    if subject in ('english', 'irish', 'art', 'politics-and-society'):
+    if subject in ('english', 'irish', 'art', 'politics-and-society', 'music'):
         return reconcile_manifest(subject, census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)

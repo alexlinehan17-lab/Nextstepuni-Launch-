@@ -212,6 +212,14 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/lcvp',
     blocked: new Set(),
   },
+  /* Review pack 1 prototype (treatments lane): ONE sitting, 2025 Higher. */
+  music: {
+    title: 'Music',
+    specVersion: 'lc-music-syllabus',
+    specNote: 'Cards are tagged to the Listening, Composing and elective strands of the Leaving\n * Certificate Music syllabus. A sitting is up to THREE booklets: Listening (core),\n * Composing and, at Higher Level, the Listening elective. A listening card plays the\n * SEC\'s own published sound file; a band-marked answer is placed on the scheme\'s\n * printed bands.',
+    figureDir: 'public/exam-figures/music',
+    blocked: new Set(),
+  },
   german: {
     title: 'German',
     /* The syllabus these papers were sat under and the one still being sat.
@@ -744,10 +752,13 @@ function historyEssayFault(c, scheme) {
 /** The decks whose writing is a rubric card on the French grid shape, gated
  *  by spanishGridFault: Spanish, and German (whose expression criterion may
  *  carry a printed lower scale). */
-const GRID_SUBJECTS = new Set(['spanish', 'german']);
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music']);
+/** Music is sat in separate booklets; a card's section names the booklet it is
+ *  printed in, by the Paper Trail index's own label. */
+const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
 function spanishGridFault(c, scheme) {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish or German marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German or Music marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -1700,6 +1711,8 @@ for (const c of cards) {
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
     const fileid = deferredCard(SUBJECT_ID, c)
       ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
@@ -2094,6 +2107,8 @@ for (const c of cards) {
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', year, level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
