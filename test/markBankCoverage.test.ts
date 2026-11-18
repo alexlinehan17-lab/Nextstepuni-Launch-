@@ -44,10 +44,20 @@ import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/account
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
+import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import japanese2023OrdinaryReview from '../scripts/markbank/authoring/reviews/japanese-2023-ol.json';
+import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
+import japanese2023HigherReview from '../scripts/markbank/authoring/reviews/japanese-2023-hl.json';
+import japanese2019HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2019-hl-census.json';
+import japanese2019HigherReview from '../scripts/markbank/authoring/reviews/japanese-2019-hl.json';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -56,9 +66,32 @@ const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 const irishManifests = (): string[] => [...readFileSync(resolve(
   __dirname, '..', 'components', 'MarkBank', 'cards', 'irish', 'factory.ts'), 'utf8')
   .matchAll(/^import \w+ from '\.\/([\w-]+\.json)';/gm)].map((m) => m[1]);
+// These papers print roman tasks directly beneath Part D, without a Q number.
+// Accept only the independent censuses' exact source-bound IDs and references.
+// Other subjects and the generic citation grammar remain unchanged.
+const japaneseUnnumberedRefs = new Map(([
+  [japanese2023HigherCensus, japanese2023HigherReview],
+  [japanese2023OrdinaryCensus, japanese2023OrdinaryReview],
+  [japanese2019HigherCensus, japanese2019HigherReview],
+] as const).flatMap(([census, review]) => census.tasks
+  .filter(task => task.key[0] === 'LD' && task.key[1] === null
+    && (census.year === 2023 || 'paperRef' in task))
+  .map(task => {
+    const [section, , letter, roman] = task.key;
+    const id = `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
+    const ref = `${census.year} ${census.level.toUpperCase()} Section ${section}(${roman})${letter === null ? '' : `(${letter})`}`;
+    const reviewed = review.cards.find(card => card.id === id);
+    if (reviewed?.questionRef !== ref || JSON.stringify(reviewed.sourceEvidence.paperPages) !== JSON.stringify(task.paperPages)) {
+      throw new Error(`Unbound Japanese unnumbered reference: ${id}`);
+    }
+    return [id, ref] as const;
+  })));
+const isJapaneseUnnumberedRef = (id: string, ref: string) => japaneseUnnumberedRefs.get(id) === ref;
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'russian') return [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].map(({id, questionRef: ref}) => ({id, ref}));
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  if (subject === 'japanese') return [...JAPANESE_HIGHER, ...JAPANESE_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   if (subject === 'french') {
     return [...FRENCH_HIGHER, ...FRENCH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -191,7 +224,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education' || subject === 'russian' || subject === 'japanese') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -203,7 +236,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
 
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
-      .filter(({ ref }) => {
+      .filter(({ id, ref }) => {
+        if (subject === 'japanese' && isJapaneseUnnumberedRef(id, ref)) return false;
         if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
@@ -235,6 +269,20 @@ describe('Mark Bank paper-coverage ratchet', () => {
       })
       .map(({ id, ref }) => `${id}: "${ref}"`);
     expect(bad, `${subject}: unparseable questionRef(s)`).toEqual([]);
+  });
+
+  it('japanese unnumbered references reject another year, sibling, order or suffix', () => {
+    expect(japaneseUnnumberedRefs.size).toBe(22);
+    for (const [id, ref] of japaneseUnnumberedRefs) {
+      expect(isJapaneseUnnumberedRef(id, ref)).toBe(true);
+      expect(isJapaneseUnnumberedRef(id, ref.replace(/^\d{4}/, year => String(Number(year) + 1)))).toBe(false);
+      expect(isJapaneseUnnumberedRef(id, ref + ' — unrelated')).toBe(false);
+    }
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(iv)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(a)(iv)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('unbound-id', '2023 HL Section LD(i)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(v)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(a)(v)')).toBe(false);
   });
 
   it('every subject with a deck is measured', () => {
@@ -273,7 +321,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
-    if (subject === 'physical-education' || subject === 'applied-maths') {
+    if (subject === 'physical-education' || subject === 'applied-maths' || subject === 'russian' || subject === 'japanese') {
       // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
       for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
@@ -286,6 +334,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
+    }
+    if (subject === 'japanese') {
+      h.update(readFileSync(resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, 'aliases.json')));
     }
     if (subject === 'business') {
       // Same files and order as reconcile.py's content hash.

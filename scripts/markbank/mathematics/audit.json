@@ -6254,7 +6254,7 @@
       "paperAvailable": true,
       "schemeAvailable": true,
       "paperPages": 20,
-      "answerSidecarAvailable": false,
+      "answerSidecarAvailable": true,
       "reviewed": true,
       "reviewedTaskCount": 43,
       "selectionCandidates": [
@@ -6503,7 +6503,7 @@
       "paperAvailable": true,
       "schemeAvailable": true,
       "paperPages": 16,
-      "answerSidecarAvailable": false,
+      "answerSidecarAvailable": true,
       "reviewed": true,
       "reviewedTaskCount": 39,
       "selectionCandidates": [

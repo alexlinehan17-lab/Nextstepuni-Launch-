@@ -7,6 +7,7 @@ import { paperEntry, resolvePaperFileid, resolveCompanionFileid } from './paperI
 import { audioMaterialFault } from './audioMaterial.mjs';
 import { reviewedRussianJointTask } from './russianJointTasks.mjs';
 import { validateReviewedRussianQuestionTopics } from './russianJointTopics.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const read = relative => JSON.parse(readFileSync(resolve(ROOT, relative), 'utf8'));
@@ -32,11 +33,12 @@ const cards = authored.map(({ review, ...card }) => {
     topicId: card.topicId, paperFileid: paper.doc.f, schemeFileid: paper.scheme.f, ...review };
   reviewedRussianJointTask(record, card);
   records.push(record);
-  return { ...card, source: 'sec', paperFileid, specVersion: 'lc-russian-syllabus',
+  // A live card keeps its live conceptId (R12; liveConceptIds.mjs).
+  return withLiveConceptId({ ...card, source: 'sec', paperFileid, specVersion: 'lc-russian-syllabus',
     schemeCitation: `SEC Russian ${card.year} ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme, pages ${review.schemePages.join(', ')} — © State Examinations Commission.`,
     schemeRegion: { schemeFileid: paper.scheme.f, p: review.schemePages[0], r: [0, 0, 1, 1] },
     qa: { gates: ['original-pdf-review', 'printed-task-census', 'source-defined-tariff', ...(previous ? ['reviewed-card-correction'] : [])],
-      humanReviewedBy: 'Codex source review; browser QA pending', humanReviewedAt: '2026-11-06' } };
+      humanReviewedBy: 'Codex source review; browser QA pending', humanReviewedAt: '2026-11-06' } });
 });
 await validateReviewedRussianQuestionTopics(ROOT, records, cards);
 const out = resolve(ROOT, 'components/MarkBank/cards/russian');

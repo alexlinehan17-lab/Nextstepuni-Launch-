@@ -38,6 +38,7 @@ import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
 import { reviewedLcvpSource, readLcvpDeferredScheme } from './lcvpSources.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { videoMaterialFault } from './videoMaterial.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -1233,7 +1234,9 @@ for (const raw of rawCards) {
     if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
     appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
   }
-  cards.push(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card);
+  // A live card keeps its live conceptId (R12): live-concept-ids.json lists the
+  // only cards this touches, all in Codex's reviewed subjects.
+  cards.push(withLiveConceptId(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card));
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
 }
 

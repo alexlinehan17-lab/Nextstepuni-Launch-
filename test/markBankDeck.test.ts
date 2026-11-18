@@ -25,7 +25,13 @@ import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
 import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
+import { japaneseBoundBankAnswers } from '../scripts/markbank/japanese-source-answers.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
+import { reviewedPhysicsSourceMetadata } from '../scripts/markbank/physicsSources.mjs';
+import { reviewedHomeEconomicsSourceMetadata } from '../scripts/markbank/homeEconomicsSources.mjs';
+
+// These assertions join committed deck/Atlas/scheme identities. Original PDF
+// hashes remain mandatory in authoring; optional corpus tests verify those bytes.
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -197,8 +203,9 @@ const comparable = (text: string) => comparableScheme(text);
 
 // A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
 // "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...",
-// "dcg-2022-hl-deferred-...") traces to that sitting's own scheme
-// ("2022-hl-deferred.md"), as build-deck reads it.
+// "dcg-2022-hl-deferred-...", "phys-2022-hl-deferred-...",
+// "he-2023-hl-deferred-...", "maths-2025-hl-p1-deferred-...") traces to that
+// sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'dcg' && /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
@@ -206,14 +213,22 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'spanish' && /^es-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-p\d-deferred-/.test(card.id ?? ''));
+// Codex's reviewed subjects bind each card to its exact reviewed booklet.
+const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 
-const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
+type SchemeCard = { id?: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } };
+const schemeFor = (card: SchemeCard) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : card.level === 'foundation' ? 'fl' : 'ol'}${deferredCard(card) ? '-deferred' : ''}.md`);
+    `${card.year}-${({ higher: 'hl', ordinary: 'ol', foundation: 'fl', common: 'cl' } as Record<string, string>)[card.level]}${
+      card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project'
+        : deferredCard(card) ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { id?: string; year: number; level: string; subjectId: string }) => {
+const schemeText = (card: SchemeCard) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -266,6 +281,15 @@ describe('every card traces to the marking scheme on disk', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       const scheme = schemeText(card);
+      // This one approved paper/scheme discrepancy has an exact source-bound
+      // correction. Validate the emitted card against the original review and
+      // literal quantity/option selectors; all other claims stay scheme-bound.
+      let boundAnswers = new Set<string>();
+      if (card.id === 'ja-2010-ol-1-3-iii') {
+        const review = JSON.parse(readFileSync(resolve(__dirname, '../scripts/markbank/authoring/reviews/japanese-2010-ol.json'), 'utf8'));
+        const original = review.cards.find((item: { id: string }) => item.id === card.id);
+        boundAnswers = japaneseBoundBankAnswers({ ...original, ...card }, review);
+      }
       for (const row of card.rows) {
         if (row.unprinted) {
           // An unprinted row claims nothing from the scheme: the scheme prints
@@ -296,7 +320,7 @@ describe('every card traces to the marking scheme on disk', () => {
           // As the build: a menu option pairing a label with its value, read
           // from a scheme table ("thoracic — 12"), traces when each half does.
           const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
-          if (!claimMatches(scheme, claim)
+          if (!claimMatches(scheme, claim) && !boundAnswers.has(claim)
             && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
             bad.push(`${card.questionRef}: "${claim}"`);
           }
@@ -553,7 +577,8 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
+    const { audioQuestionPaperFileid } = await import('../scripts/markbank/audioMaterial.mjs');
+    const { resolvePaperFileid, resolveIndexedPaperFileid, corpusSubjectFor, deferredPaperEntry, paperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
@@ -570,7 +595,7 @@ describe('every card points at the question paper it came from', () => {
           return c.paperFileid === null
             || c.paperFileid !== resolvePaperFileid('dcg', c.year, c.level, c.section, 'deferred');
         }
-        if (deferredCard(c)) {
+        if (deferredCard(c) && !REVIEWED_SOURCE_SUBJECTS.has(c.subjectId)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
           return c.paperFileid !== null
             && c.paperFileid !== String(deferred?.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/, '');
@@ -581,10 +606,15 @@ describe('every card points at the question paper it came from', () => {
         const sourceSection = c.subjectId === 'maths'
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
-        return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(
-            corpusSubjectFor(c.subjectId, c.questionRef),
-            c.year, c.level, sourceSection);
+        const source = c.subjectId === 'maths' && 'mathematicsScale' in c
+          && c.mathematicsScale && c.sourceMaterial?.sourceFileid
+          ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
+          : c.subjectId === 'physics' ? reviewedPhysicsSourceMetadata(c.id)
+          : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSourceMetadata(c.id) : undefined;
+        const expected = audioQuestionPaperFileid(c, c.subjectId) ?? (source
+          ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
+          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection));
+        return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);

@@ -7,6 +7,7 @@ import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
 import { assertJapaneseConditionLabel, assertJapaneseNaebaException, assertJapaneseSelectedContent, assertJapanese2010ManualResponses, assertJapaneseSourceOnlyFigure, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
 import { assertJapaneseVariantSources, assertJapanese2011ListeningCorrection, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -127,7 +128,8 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
     if (unsupported.length) throw new Error(`${card.id}: answer not found in original scheme: ${JSON.stringify(unsupported)}`);
     const unsupportedGuidance = guidance.filter(text => !claimMatches(scheme, text) && !claimMatches(selectedScheme, text));
     if (unsupportedGuidance.length) throw new Error(`${card.id}: rubric guidance not found in original scheme selectors: ${JSON.stringify(unsupportedGuidance)}`);
-    cards.push(repair(card));
+    // A live card keeps its live conceptId (R12; liveConceptIds.mjs).
+    cards.push(withLiveConceptId(repair(card)));
   }
 }
 if (new Set(cards.map(card => card.id)).size !== cards.length) throw new Error('Duplicate Japanese reviewed identity');

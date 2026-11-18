@@ -10875,7 +10875,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
-    id: "he-2024-hl-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-fabric-profile",
+    id: "he-2024-hl-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile",
     section: "C", questionRef: "2024 HL Section C E2 Q2(b)",
     stem: "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
     questionText: "Write a profile of a fabric manufactured from natural fibres. Refer to:\n• fibre production\n• fabric properties\n• identification test. ",

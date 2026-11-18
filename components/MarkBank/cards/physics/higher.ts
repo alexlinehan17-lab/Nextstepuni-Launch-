@@ -1906,7 +1906,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC021ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
-    id: "phys-2021-hl-q9-iii", topicId: "phys-2-1", conceptId: "hollow-plastic-insulation",
+    id: "phys-2021-hl-q9-iii", topicId: "phys-2-1", conceptId: "hollow-plastic-picnic-box-walls",
     section: "B", questionRef: "2021 HL Q9(iii)",
     stem: "Ice is used as a coolant due to the high specific heat capacities of ice and water and the high specific latent heat of fusion of ice. It is the principal coolant used in ice packs for insulated picnic boxes, such as the one shown.",
     questionText: "Suggest two reasons why the walls of a picnic box are made from hollow plastic rather than solid plastic.",
