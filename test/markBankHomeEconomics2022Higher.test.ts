@@ -74,7 +74,8 @@ describe('2022 Higher Home Economics full source review', () => {
     expect(sitting.some(c => c.id.endsWith('q1aii-properties'))).toBe(false);
     expect(c.answerVariants).toHaveLength(10);
     for (const v of c.answerVariants ?? []) expect(v.rows.map(r => r.marks)).toEqual([2, 12, 6]);
-    const wood = c.answerVariants?.find(v => v.label === 'Wood')!;
+    const wood = c.answerVariants?.find(v => v.label === 'Wood');
+    if (!wood) throw new Error('2022 HL: no Wood answer variant');
     expect(wood.rows[0].contextNote).toContain('oak, beech maple');
     expect(wood.rows[2].contextNote).toContain('marked and scratched easily');
     expect(c.answerVariants?.find(v => v.label === 'Cork')?.rows[2].contextNote).toContain('porous so will stain if not sealed');

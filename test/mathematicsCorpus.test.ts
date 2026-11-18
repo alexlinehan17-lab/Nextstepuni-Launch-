@@ -4193,7 +4193,7 @@ describe('2010 Higher legacy Paper 1 — all four non-unit fifth roots', () => {
     }
   });
   it('retains the two-tangent and three-slope methods as separate scoring alternatives', () => {
-    const methods=card('6-c-ii').mathematicsScale?.methods!;
+    const methods=card('6-c-ii').mathematicsScale?.methods ?? [];
     expect(methods.map(m=>m.components.map(c=>c.maximum))).toEqual([[5,5],[10]]);
     expect(methods[1].components[0].attempt).toBe(3);
     expect(card('6-c-ii').mathematicsScale?.markingNote).toContain('Both points and both tangents');
@@ -4455,7 +4455,7 @@ describe('2010 Ordinary legacy Paper 1 — complete original deduction tasks', (
   it('restricts exceptional fixed awards and keeps the separate working-shown route', () => {
     expect(card('1-c-ii').mathematicsScale?.methods?.[0].components[0].permittedMarks).toEqual([0,2,5]);
     for(const suffix of ['5-a','6-b-i']) {
-      const methods=card(suffix).mathematicsScale?.methods!;
+      const methods=card(suffix).mathematicsScale?.methods ?? [];
       expect(methods.map(m=>m.id)).toEqual(['working-shown','answers-without-work']);
       expect(methods[1].components[0].permittedMarks).toEqual([0,3,4,7,10]);
     }
