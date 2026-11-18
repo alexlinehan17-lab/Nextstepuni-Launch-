@@ -14601,7 +14601,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "recording-studio-business",
     section: "A", questionRef: "2015 CL Section A Q1",
@@ -14646,7 +14646,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a2", topicId: "lcvp-link-modules-1-1", conceptId: "business-suitability",
     section: "A", questionRef: "2015 CL Section A Q2",
@@ -14691,7 +14691,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a3", topicId: "lcvp-link-modules-1-1", conceptId: "wedding-band-niche-market",
     section: "A", questionRef: "2015 CL Section A Q3",
@@ -14737,7 +14737,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a4", topicId: "lcvp-link-modules-1-1", conceptId: "previous-business-learning",
     section: "A", questionRef: "2015 CL Section A Q4",
@@ -14782,7 +14782,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a5", topicId: "lcvp-link-modules-1-1", conceptId: "local-enterprise-office-support",
     section: "A", questionRef: "2015 CL Section A Q5",
@@ -14828,7 +14828,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "business-idea-problems",
     section: "A", questionRef: "2015 CL Section A Q6",
@@ -14873,7 +14873,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a7", topicId: "lcvp-link-modules-1-1", conceptId: "business-plan-importance-improvements",
     section: "A", questionRef: "2015 CL Section A Q7",
@@ -14919,7 +14919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-a8", topicId: "lcvp-link-modules-1-1", conceptId: "enterprise-mentoring-benefits",
     section: "A", questionRef: "2015 CL Section A Q8",
@@ -14964,7 +14964,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b1", topicId: "lcvp-link-modules-1-1", conceptId: "business-case-definitions",
     section: "B", questionRef: "2015 CL Section B Q1",
@@ -15000,7 +15000,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "corporate-social-responsibility-definition",
     section: "B", questionRef: "2015 CL Section B Q2(i)",
@@ -15037,7 +15037,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b2ii", topicId: "lcvp-link-modules-1-1", conceptId: "csr-policy-alternatives",
     section: "B", questionRef: "2015 CL Section B Q2(ii)",
@@ -15075,7 +15075,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b2iii", topicId: "lcvp-link-modules-1-1", conceptId: "csr-strategy-areas",
     section: "B", questionRef: "2015 CL Section B Q2(iii)",
@@ -15112,7 +15112,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "case-diversification-definition",
     section: "B", questionRef: "2015 CL Section B Q3(i)",
@@ -15149,7 +15149,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-b3ii", topicId: "lcvp-link-modules-1-1", conceptId: "diversification-reasons",
     section: "B", questionRef: "2015 CL Section B Q3(ii)",
@@ -15186,7 +15186,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c1a", topicId: "lcvp-link-modules-1-3", conceptId: "planned-lcvp-activity",
     section: "C", questionRef: "2015 CL Section C Q1(a)",
@@ -15211,7 +15211,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c1b", topicId: "lcvp-link-modules-1-3", conceptId: "activity-planning-benefits",
     section: "C", questionRef: "2015 CL Section C Q1(b)",
@@ -15235,7 +15235,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c1c", topicId: "lcvp-link-modules-1-3", conceptId: "activity-research-methods",
     section: "C", questionRef: "2015 CL Section C Q1(c)",
@@ -15259,7 +15259,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c1d", topicId: "lcvp-link-modules-1-3", conceptId: "activity-evaluation-methods",
     section: "C", questionRef: "2015 CL Section C Q1(d)",
@@ -15286,7 +15286,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c2ai", topicId: "lcvp-link-modules-1-2", conceptId: "named-voluntary-body",
     section: "C", questionRef: "2015 CL Section C Q2(a)(i)",
@@ -15310,7 +15310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c2aii", topicId: "lcvp-link-modules-1-2", conceptId: "volunteer-definition",
     section: "C", questionRef: "2015 CL Section C Q2(a)(ii)",
@@ -15334,7 +15334,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c2b", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-commercial-comparison",
     section: "C", questionRef: "2015 CL Section C Q2(b)",
@@ -15358,7 +15358,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c2c", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-body-community-benefits",
     section: "C", questionRef: "2015 CL Section C Q2(c)",
@@ -15382,7 +15382,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c2d", topicId: "lcvp-link-modules-1-2", conceptId: "volunteer-ethical-obligations",
     section: "C", questionRef: "2015 CL Section C Q2(d)",
@@ -15406,7 +15406,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c3a", topicId: "lcvp-link-modules-0-3", conceptId: "finding-work-placement",
     section: "C", questionRef: "2015 CL Section C Q3(a)",
@@ -15430,7 +15430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c3b", topicId: "lcvp-link-modules-0-3", conceptId: "work-placement-request-letter",
     section: "C", questionRef: "2015 CL Section C Q3(b)",
@@ -15455,7 +15455,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c3c", topicId: "lcvp-link-modules-0-0", conceptId: "employability-characteristics",
     section: "C", questionRef: "2015 CL Section C Q3(c)",
@@ -15480,7 +15480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c3d", topicId: "lcvp-link-modules-0-3", conceptId: "placement-working-world-preparation",
     section: "C", questionRef: "2015 CL Section C Q3(d)",
@@ -15504,7 +15504,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4ai", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-definition",
     section: "C", questionRef: "2015 CL Section C Q4(a)(i)",
@@ -15528,7 +15528,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4aii", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-examples",
     section: "C", questionRef: "2015 CL Section C Q4(a)(ii)",
@@ -15552,7 +15552,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4b", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union-member-benefits",
     section: "C", questionRef: "2015 CL Section C Q4(b)",
@@ -15577,7 +15577,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4ci", topicId: "lcvp-link-modules-0-0", conceptId: "employment-contract-definition",
     section: "C", questionRef: "2015 CL Section C Q4(c)(i)",
@@ -15602,7 +15602,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4cii", topicId: "lcvp-link-modules-0-0", conceptId: "employment-contract-content",
     section: "C", questionRef: "2015 CL Section C Q4(c)(ii)",
@@ -15627,7 +15627,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "employer-safety-responsibilities",
     section: "C", questionRef: "2015 CL Section C Q4(d)",
@@ -15651,7 +15651,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c5a", topicId: "lcvp-link-modules-0-2", conceptId: "career-investigation-definition",
     section: "C", questionRef: "2015 CL Section C Q5(a)",
@@ -15675,7 +15675,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c5bi", topicId: "lcvp-link-modules-0-2", conceptId: "investigated-career-name",
     section: "C", questionRef: "2015 CL Section C Q5(b)(i)",
@@ -15699,7 +15699,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c5bii", topicId: "lcvp-link-modules-0-2", conceptId: "career-investigation-steps",
     section: "C", questionRef: "2015 CL Section C Q5(b)(ii)",
@@ -15723,7 +15723,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c5c", topicId: "lcvp-link-modules-0-2", conceptId: "career-subjects-relevance",
     section: "C", questionRef: "2015 CL Section C Q5(c)",
@@ -15748,7 +15748,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c5d", topicId: "lcvp-link-modules-0-2", conceptId: "two-career-pathways",
     section: "C", questionRef: "2015 CL Section C Q5(d)",
@@ -15774,7 +15774,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c6a", topicId: "lcvp-link-modules-1-3", conceptId: "loom-band-idea-generation",
     section: "C", questionRef: "2015 CL Section C Q6(a)",
@@ -15798,7 +15798,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c6bi", topicId: "lcvp-link-modules-1-3", conceptId: "market-research-definition",
     section: "C", questionRef: "2015 CL Section C Q6(b)(i)",
@@ -15822,7 +15822,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c6bii", topicId: "lcvp-link-modules-1-3", conceptId: "other-market-research-tools",
     section: "C", questionRef: "2015 CL Section C Q6(b)(ii)",
@@ -15846,7 +15846,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c6c", topicId: "lcvp-link-modules-1-3", conceptId: "questionnaire-disadvantages",
     section: "C", questionRef: "2015 CL Section C Q6(c)",
@@ -15873,7 +15873,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2015, level: "common",
-    paperFileid: null,
+    paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2015 Common Level — © State Examinations Commission.",
     id: "lcvp-2015-cl-c6d", topicId: "lcvp-link-modules-1-3", conceptId: "loom-band-ict-uses",
     section: "C", questionRef: "2015 CL Section C Q6(d)",

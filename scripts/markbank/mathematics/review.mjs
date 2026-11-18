@@ -1,11 +1,14 @@
 import { validReviewedMathematicsMarking } from './marking-rules.mjs';
 /** Reviewed SEC Mathematics boundaries and placement, shared by both tools. */
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 export function mathematicsReviews() {
   const directory = new URL('./reviews/', import.meta.url);
+  // build-deck imports this module for every subject; a tree without reviewed
+  // Mathematics has no reviews to read.
+  if (!existsSync(directory)) return [];
   return readdirSync(directory).filter(name => name.endsWith('.json')).sort()
     .map(name => JSON.parse(readFileSync(new URL(name, directory), 'utf8')));
 }
