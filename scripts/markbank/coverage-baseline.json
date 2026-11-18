@@ -30,11 +30,11 @@
     "refsHash": "e0d39c458d72982a"
   },
   "ancient-greek": {
-    "cards": 383,
-    "contentHash": "a367719c91764025",
+    "cards": 404,
+    "contentHash": "20c4392f54a33e25",
     "coveragePct": 100.0,
-    "covered": 387,
-    "excluded": 371,
+    "covered": 408,
+    "excluded": 350,
     "leaves": 758,
     "open": 0,
     "orphans": 0,
@@ -42,7 +42,7 @@
       "count": 27,
       "hash": "211caedff97f5a80"
     },
-    "refsHash": "2ecf53681016b22d"
+    "refsHash": "d07829765aae8bf1"
   },
   "applied-maths": {
     "cards": 1486,

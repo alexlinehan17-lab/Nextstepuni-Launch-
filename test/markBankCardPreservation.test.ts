@@ -2040,8 +2040,18 @@ const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
     || card.id.includes('-deferred-'))
   .map(card => card.id));
+/* Review pack 1 prototypes (treatments lane, 18 Nov 2026), counted on top of
+ * the frozen bank as the History essays are: Latin 2023 Higher Q2's four
+ * unseen passages, carded with the translation panel, and the 21 asks of
+ * Ancient Greek 2022 Ordinary, a paper the SEC published no marking scheme
+ * for. Every card frozen before them keeps its id. */
+const treatmentAdditionIds = new Set([...AGREEK_ORDINARY]
+  .filter(card => (card.kind === 'question' || card.kind === 'diagram') && card.noScheme === true)
+  .map(card => card.id));
+
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name === 'ancient-greek:ordinary') return ids.filter(id => !treatmentAdditionIds.has(id));
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
@@ -2352,6 +2362,17 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins the review pack 1 prototypes beside the frozen set', () => {
+    expect([...treatmentAdditionIds].sort()).toEqual([
+      'agr-2022-ol-a-q1', 'agr-2022-ol-b-q1', 'agr-2022-ol-c-q1', 'agr-2022-ol-d-q1', 'agr-2022-ol-q2-i',
+      'agr-2022-ol-q2-ii-a', 'agr-2022-ol-q2-ii-b', 'agr-2022-ol-q2-ii-c', 'agr-2022-ol-q2-ii-d', 'agr-2022-ol-q2-ii-e',
+      'agr-2022-ol-q2-ii-f', 'agr-2022-ol-q2-ii-g', 'agr-2022-ol-q2-ii-h', 'agr-2022-ol-q3-i', 'agr-2022-ol-q3-ii',
+      'agr-2022-ol-q3-iii', 'agr-2022-ol-q3-iv', 'agr-2022-ol-q3-v', 'agr-2022-ol-q3-vi', 'agr-2022-ol-q3-vii',
+      'agr-2022-ol-q3-viii',
+    ]);
+    expect([...treatmentAdditionIds].filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -2459,7 +2480,8 @@ describe('Mark Bank card preservation', () => {
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
-        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+        : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
+        : name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length : 0;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
@@ -2488,7 +2510,9 @@ describe('Mark Bank card preservation', () => {
         + chemistryAdded.size - chemistryWithdrawnShipped.length
         + engineeringAdditionIds.size
         // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
-        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal);
+        + historyEssayIds.size + spanishAddedTotal + germanAddedTotal
+        // Review pack 1 prototype: Ancient Greek 21.
+        + treatmentAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
