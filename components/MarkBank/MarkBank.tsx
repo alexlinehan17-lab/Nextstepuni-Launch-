@@ -1,4 +1,5 @@
 import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
+import { consumeInitialMarkBankCards } from './markBankDeepLink';
 import { resolveSubjectId } from '../../curriculumRegistry';
 /**
  * @license
@@ -141,7 +142,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     && SUBJECTS.some(subject => subject.id === saved.subjectId && canSelectSubject(subject.title))
     && deckSize(saved.subjectId, saved.level) > 0,
   );
-  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
+  // A Topic Atlas question's "Practise these parts" link opens its own deck (markBankDeepLink).
+  const [cardLink] = useState(() => {
+    const link = consumeInitialMarkBankCards();
+    const subject = link && SUBJECTS.find(s => s.id === link.subjectId);
+    return link && subject && canSelectSubject(subject.title) && deckSize(link.subjectId, link.level as Level) > 0 ? link : null;
+  });
+  const linkedChoice = cardLink ? { subjectId: cardLink.subjectId, level: cardLink.level as Level } : null;
+  const initialChoice = linkedChoice ?? (savedIsValid && saved ? saved : profileDefault) ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
@@ -229,6 +237,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
   useEffect(() => () => {
     if (launchTimerRef.current !== null) window.clearTimeout(launchTimerRef.current);
   }, []);
+
+  const cardLinkUsed = useRef(false);
+  useEffect(() => {
+    if (!cardLink || cardLinkUsed.current || cardsLoading || subjectId !== cardLink.subjectId || level !== cardLink.level) return;
+    cardLinkUsed.current = true;
+    const byId = new Map(cards.map(card => [card.id, card]));
+    const queue = cardLink.cardIds.map(id => byId.get(id)).filter((card): card is SecCard => Boolean(card));
+    if (queue.length) setScreen({ name: 'session', cards: queue });
+  }, [cardLink, cards, cardsLoading, subjectId, level]);
 
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);

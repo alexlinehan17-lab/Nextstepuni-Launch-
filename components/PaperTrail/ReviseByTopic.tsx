@@ -24,7 +24,7 @@ import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
 import HorizontalTabs from '../ui/HorizontalTabs';
 import { releaseVaultPdfs } from './vaultDocs';
-import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
+import { buildVaultLink, consumeInitialVaultLocation, initialVaultFocus } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 
 const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
@@ -87,8 +87,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subjectId === subjectId ? restore.subtopicId : boot?.subjectId === subjectId ? boot.subtopicId ?? null : null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
   const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
-  const [levelFilter, setLevelFilter] = useState<'all' | string>(restore?.subjectId === subjectId ? restore.level ?? 'all' : 'all');
-  const [yearFilter, setYearFilter] = useState<'all' | number>('all');
+  // A card's "Topic Atlas" link (atlasModel.atlasLinkForCard) also names its question: open the topic on that
+  // question's year and level.
+  const [focus] = useState(() => (boot ? initialVaultFocus() : null));
+  const [levelFilter, setLevelFilter] = useState<'all' | string>(restore?.subjectId === subjectId ? restore.level ?? 'all' : focus?.level ?? 'all');
+  const [yearFilter, setYearFilter] = useState<'all' | number>(focus?.year ?? 'all');
   const [topicQuery, setTopicQuery] = useState('');
   const [politicsView, setPoliticsView] = useState<'tasks' | 'papers'>('tasks');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
@@ -115,7 +118,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     prevLevel.current = level;
   }, [level]);
   // A new topic starts with fresh level + year filters.
+  const focusUsed = useRef(false);
   useEffect(() => {
+    if (!focusUsed.current && focus && boot?.subjectId === subjectId && boot?.subtopicId === subtopicId) {
+      focusUsed.current = true;
+      setLevelFilter(focus.level ?? 'all');
+      setYearFilter(focus.year ?? 'all');
+      return;
+    }
     setLevelFilter(restore?.subjectId === subjectId && restore?.subtopicId === subtopicId ? restore.level ?? 'all' : 'all');
     setYearFilter('all');
   }, [subtopicId, subjectId, restore?.subjectId, restore?.subtopicId, restore?.level]);
@@ -338,6 +348,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 saved={saved}
                 onToggleReview={() => toggleReview(q)}
                 onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId, ...(levelFilter !== 'all' ? { level: levelFilter } : {}) })}
+                topicId={subtopicId}
+                onOpenTopic={id => setSubtopicId(id)}
               />
             );
           })}

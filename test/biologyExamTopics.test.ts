@@ -94,7 +94,9 @@ describe('Biology exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('biology')).toHaveLength(122);
+    // The registry keeps all 122 reference topics (above). Biology's Atlas now browses the single model's one list,
+    // the 66 new-course headings its cards are filed under (components/PaperTrail/atlasModel.ts).
+    expect(topicsForSubject('biology')).toHaveLength(66);
   });
 
   it('bridges every practice bucket to the correct canonical specification', () => {
@@ -302,10 +304,10 @@ describe('Biology exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 534 entitled questions through all 122 topic buckets', () => {
+  it('surfaces all 534 entitled questions through the single model\'s 66 headings', () => {
     expect(subjectAtlasStats('biology')).toMatchObject({
       questions: 534,
-      topics: 122,
+      topics: 66,
       yearMin: 2010,
       yearMax: 2026,
     });
