@@ -5491,7 +5491,7 @@
       ],
       "replacedHistoricalExclusionCount": 26,
       "validation": {
-        "status": "Source and focused runtime checks passed; wider checks interrupted by removed shared dependencies. Final checks and push in progress.",
+        "status": "Source, all subject/required runtime checks, lint, reconciliation and preservation passed. Batch application types/build/browser review pending.",
         "sourceQuoteGate": {
           "cards": 41,
           "slices": 429,
@@ -5524,10 +5524,10 @@
           ]
         },
         "sourceCoverageComplete": true,
-        "sourceCheckpointPassed": false,
+        "sourceCheckpointPassed": true,
         "sittingCompletion": false,
         "heldNumericTasks": [],
-        "appTypes": "pending batch check",
+        "appTypes": "Local4GiB heap exhausted; isolated remote verification pending.",
         "build": "pending batch check",
         "browserQA": "Native browser available; browser-host unavailable. Batch review pending.",
         "rootIntegrationRequirements": [
@@ -5540,7 +5540,18 @@
           "passed": true
         },
         "sourceEvidence": "reviews/russian-2021-hl-sec-20261118/archive-recheck.json",
-        "splitCategoryReport": "reviews/russian-2021-hl-sec-20261118/split-and-category.json"
+        "splitCategoryReport": "reviews/russian-2021-hl-sec-20261118/split-and-category.json",
+        "wholeSubjectReconciliation": {
+          "covered": 1438,
+          "asks": 1463,
+          "open": 25,
+          "excluded": 0,
+          "staleExclusions": 254,
+          "orphans": 0,
+          "unparsed": 0
+        },
+        "runtimeCasesPassed": 707,
+        "coverageCasesPassed": 3
       }
     }
   ]

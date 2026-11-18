@@ -1,0 +1,36 @@
+{
+  "all1355PriorAuthoredRecordsUnchanged": true,
+  "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+  "all1355PriorRuntimeRecordsUnchanged": true,
+  "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+  "scripts/paper-trail/answers/2021/LC099ALP000BV.pdf.json": {
+    "allPriorRowsUnchanged": 0,
+    "newRows": 21
+  },
+  "scripts/paper-trail/answers/2021/LC099ALPA00BV.pdf.json": {
+    "allPriorRowsUnchanged": 4,
+    "newRows": 20
+  },
+  "public/paper-answers/2021/LC099ALP000BV.pdf.json": {
+    "allPriorRowsUnchanged": 0,
+    "newRows": 21
+  },
+  "public/paper-answers/2021/LC099ALPA00BV.pdf.json": {
+    "allPriorRowsUnchanged": 4,
+    "newRows": 20
+  },
+  "public/paper-anchors/2021/LC099ALP000BV.pdf.json": {
+    "allPriorRowsUnchanged": 0,
+    "newRows": 21
+  },
+  "public/paper-anchors/2021/LC099ALPA00BV.pdf.json": {
+    "allPriorRowsUnchanged": 4,
+    "newRows": 20
+  },
+  "allOtherRussianAnswerMapsByteIdentical": true,
+  "allPriorRussianTopicQuestionRecordsUnchanged": true,
+  "priorJointManifestUnchanged": true,
+  "allPriorRussianFullAtlasQuestionRecordsUnchanged": true,
+  "allOtherSittingAuditRecordsUnchanged": true,
+  "only26Reviewed2021ExclusionsReplaced": true
+}
