@@ -304,9 +304,9 @@ def listening(source):
             for group in c['rubric']['groups']:
                 for row in group['rows']:row['marks']=r['printedDetailMarks']
         c['rubric']['taskRequirements']=[source['listeningGuidance'],r['publishedSourceBlock']]
-        c['rubric']['markingGuideNote']='Use distinct accepted responses under the original quota and local tariff. Each printed plus-linked bullet remains one complete response; no unprinted one-mark component allocation is inferred. Russian answers and non-invalidating excess material are explicitly accepted.'
+        c['rubric']['markingGuideNote']='Use distinct accepted responses up to the number requested. Claim the marks the scheme gives for each complete response. Each printed plus-linked bullet remains one complete response. Russian answers and non-invalidating excess material are explicitly accepted.'
         if r['id']=='ru-2021-hl-l3-2':
-            c['rubric']['markingGuideNote']+=' The original prompt asks for two details, while the marking scheme explicitly prints 1 x 4 marks and awards four marks for any reference to speaking English. One four-mark claim preserves that local tariff; it is not divided into invented two-mark parts.'
+            c['rubric']['markingGuideNote']+=' The original prompt asks for two details, while the marking scheme explicitly prints 1 x 4 marks and gives four marks for any reference to speaking English. This response has one four-mark claim.'
         c['review']['guidancePages']=[19]
         c['topicId']=topics[c['id']]['topicId'];c['additionalTopicIds']=topics[c['id']]['additionalTopicIds']
         c['sourceMaterial']['kind']='source-question'
@@ -364,7 +364,7 @@ def language_and_matching(docs,source):
     for group in c['rubric']['groups']:group['rows'][0]['marks']=1
     c['topicId']=r['topicId'];c['additionalTopicIds']=r['additionalTopicIds']
     c['rubric']['taskRequirements']=[r['publishedSourceBlock']]
-    c['rubric']['markingGuideNote']='Choose ten distinct words from the original Music pool. The printed list repeats синтезатор at entries5 and10: both literal entries remain in the source guidance, but that one word can earn one mark once. Preserve the printed Cultural Awareness heading and identity alongside the music/meaning topic coverage. The source explicitly awards no mark for YouTube in English or Russian.'
+    c['rubric']['markingGuideNote']='Choose ten distinct words from the original Music pool. The printed list repeats синтезатор at entries 5 and 10: both entries remain in the source guidance, but that one word can earn one mark once. The scheme gives no mark for YouTube in English or Russian.'
     result.append(c)
     r=records['la2-i'];body=r['publishedSourceBlock']
     pairs=re.findall(r'(?<![\w.])[1-5]\.\s*(\S+)\s+(\S+)',body)
@@ -391,7 +391,7 @@ def language_and_matching(docs,source):
     assert len(answers)==15
     c=as_points(source_card(r),answers,15)
     c['rubric']['taskRequirements']=[r['publishedSourceBlock'].split('В середине лета',1)[0]]
-    c['rubric']['markingGuideNote']='Thirteen bracketed prompts supply fifteen separately priced forms. The first printed past/present pair is one accepted alternative for the same prompt, not two credits. Preserve both accepted forms alongside the exact general spelling/transcription and wrong-tense rules; no source answer is silently corrected.'
+    c['rubric']['markingGuideNote']='The scheme gives marks for fifteen forms across thirteen bracketed prompts. The first printed past/present pair gives two accepted alternatives for one answer. Both accepted forms appear alongside the scheme’s spelling, transcription and wrong-tense rules.'
     result.append(c)
     assert len(result)==6 and sum(c['totalMarks'] for c in result)==90
     return result

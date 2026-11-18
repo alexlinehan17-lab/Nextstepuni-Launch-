@@ -1,0 +1,217 @@
+{
+  "recordedAt": "2026-11-18T22:13:37.804963+00:00",
+  "completedCommands": {
+    "written-tags.result": {
+      "command": [
+        "node",
+        "scripts/paper-trail/topic-tags/build-tags.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "author-final.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_review_2017_ol.py",
+        "--written-only"
+      ],
+      "exitCode": 0
+    },
+    "written-runtime.result": {
+      "command": [
+        "node",
+        "scripts/markbank/build-russian-reviewed.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-ask-topics.result": {
+      "command": [
+        "node",
+        "scripts/landing/ask-topics.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-anchors.result": {
+      "command": [
+        "node",
+        "scripts/paper-trail/build-russian-reviewed-anchors.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-source.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/test_ru_2017_ol_sources.py"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "runtime-final.result": {
+      "command": [
+        "node",
+        "scripts/markbank/build-russian-reviewed.mjs"
+      ],
+      "exitCode": 0
+    },
+    "changed-lint.result": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "test/russian2017OrdinaryReviewed.test.tsx",
+        "scripts/markbank/build-russian-reviewed.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-lint.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_cardlint.py"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "source-final.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/test_ru_2017_ol_sources.py"
+      ],
+      "exitCode": 0
+    },
+    "written-scoring-required.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2017OrdinaryReviewed.test.tsx",
+        "test/russian2026Reviewed.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/curriculumRegistry.test.ts",
+        "test/markBankDeck.test.ts",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 1,
+      "expected": 0
+    },
+    "route-final.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russianHostedAnswerRoutes.test.ts",
+        "test/russian2026Reviewed.test.ts",
+        "test/russian2017OrdinaryReviewed.test.tsx",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0
+    },
+    "scoring.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/russian2017OrdinaryReviewed.test.tsx",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0
+    },
+    "topics.result": {
+      "command": [
+        "node",
+        "tmp/russian-review/2017-ol/topic-report.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-deck.result": {
+      "command": [
+        "node",
+        "scripts/markbank/build-deck.mjs",
+        "scripts/markbank/authored/russian.json"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "route-lint.result": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "components/PaperTrail/vaultResolve.ts",
+        "test/russianHostedAnswerRoutes.test.ts"
+      ],
+      "exitCode": 0
+    },
+    "written-showcase.result": {
+      "command": [
+        "node",
+        "scripts/build-subject-showcase.mjs"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "coverage-final.result": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/markBankCoverage.test.ts",
+        "-t",
+        "russian",
+        "--maxWorkers=1",
+        "--pool=threads"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "written-ledger.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/reconcile.py",
+        "russian",
+        "--baseline",
+        "write",
+        "--json",
+        "tmp/russian-review/2017-ol/written-ledger.json"
+      ],
+      "exitCode": 120,
+      "expected": 120
+    },
+    "written-author.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/ru_review_2017_ol.py",
+        "--written-only"
+      ],
+      "exitCode": 0,
+      "expected": 0
+    },
+    "preservation.result": {
+      "command": [
+        "python3",
+        "tmp/russian-review/2017-ol/prove-preservation.py"
+      ],
+      "exitCode": 0
+    },
+    "baseline-final.result": {
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/reconcile.py",
+        "russian",
+        "--baseline",
+        "write",
+        "--json",
+        "tmp/russian-review/2017-ol/written-ledger.json"
+      ],
+      "exitCode": 120,
+      "expected": 120
+    }
+  },
+  "historicalInitialFailures": "Initial combined run passed all three required repository files (233 cases), with two incorrect new route expectations and a missing hosted route entry failing. Expectations were corrected to match the existing mutually exclusive route implementation; the exact route entry was added after screenshots. Final scoring, route and lint commands pass.",
+  "remoteTypesAndBuild": "Pending for this 2017 written checkpoint; the earlier 2021 run does not cover these changes."
+}

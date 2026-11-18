@@ -5478,7 +5478,7 @@
       "newCards": 24,
       "correctedCards": 17,
       "previousIdsPreserved": 199,
-      "sourceReview": "41 of 41 asks from the original papers have cards. Every card uses the printed marks; the essay uses the printed content10/expression20 grid and the fixed no-answer line. Alex approved all17 live-card corrections on18November; every live id and conceptId is preserved.",
+      "sourceReview": "41 of 41 asks from the original papers have cards. Every card uses the printed marks; the essay uses the printed content 10/expression 20 grid and the fixed no-answer line. Alex approved all 17 live-card corrections on 18 November; every live ID and conceptId is preserved.",
       "diagnosedReaderIssues": [
         "Independent52-page visual census counts41 asks: three guided-writing genre headings share one complete40-mark printed choice containing all six alternatives. The repeated Irish LA2(i) label below OR is disclosed and does not create another ask.",
         "All17 existing2021 card ids and conceptIds are retained. Twenty-four new asks are added. The 1355 earlier reviewed card objects are unchanged.",
@@ -5491,7 +5491,7 @@
       ],
       "replacedHistoricalExclusionCount": 26,
       "validation": {
-        "status": "Source, all subject/required runtime checks, lint, reconciliation and preservation passed. Batch application types/build/browser review pending.",
+        "status": "Source and carding checks passed. Remote types and production build passed; browser samples reviewed. Final wording checks queued. Embedded SEC playback remains a release issue.",
         "sourceQuoteGate": {
           "cards": 41,
           "slices": 429,
@@ -5527,9 +5527,9 @@
         "sourceCheckpointPassed": true,
         "sittingCompletion": false,
         "heldNumericTasks": [],
-        "appTypes": "Local4GiB heap exhausted; isolated remote verification pending.",
-        "build": "pending batch check",
-        "browserQA": "Native browser available; browser-host unavailable. Batch review pending.",
+        "appTypes": "Passed remote run 44394104267 after local 4 GiB heap exhaustion.",
+        "build": "Normal production build passed in remote run 44394104267; generation left source unchanged.",
+        "browserQA": "Nine text cards at 390 px and 1120 px, light and dark: 36 combinations reviewed. Essay saved 30/30; summary reached 10/10; hosted original pages loaded. Direct official audio played; embedded playback failed.",
         "rootIntegrationRequirements": [
           "Verify approved17 corrected cards on current shared screens, preserving every live id and conceptId.",
           "Verify all41 card-to-Atlas bindings under the same primary heading."
@@ -5551,7 +5551,148 @@
           "unparsed": 0
         },
         "runtimeCasesPassed": 707,
-        "coverageCasesPassed": 3
+        "coverageCasesPassed": 3,
+        "cardingComplete": true,
+        "releaseReady": false,
+        "remoteVerification": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/44394104267",
+        "browserEvidence": "reviews/russian-2021-hl-sec-20261118/browser-review.json"
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "reviewedAt": "2026-11-18",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceHashes": {
+        "paper": {
+          "pages": 20,
+          "sha256": "2b705ed6fdff983ac7effe1b4d3737fdaca5a1cd893f19b8b58946f544d713f6"
+        },
+        "aural": {
+          "pages": 8,
+          "sha256": "98fbb84beb3eb52c85dc18ccca198dfb964a2b7727444aa42634a041f3bcdd61"
+        },
+        "scheme": {
+          "pages": 16,
+          "sha256": "27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f"
+        }
+      },
+      "independentSourceAsks": 51,
+      "writtenTasks": 33,
+      "listeningTasks": 18,
+      "cardedAsks": 33,
+      "openAsks": 18,
+      "newCards": 33,
+      "correctedCards": 0,
+      "printedWrittenMarks": 220,
+      "printedListeningSectionTotals": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "writtenPracticeMarks": 220,
+      "sourceReview": "Original paper and scheme census: 51 asks. The 33 written asks are carded. The 18 listening asks remain open pending Alex’s decision on the conflicting printed allocations; no five-mark full-answer inference has been published.",
+      "diagnosedReaderIssues": [
+        "The reading weather answer offers a complete hot-and-cold route or two distinct details; the existing mutually exclusive route controls preserve both.",
+        "Weather paraphrases and generic/specific propaganda answers share source-defined response quotas, so the same feature cannot earn duplicate credit.",
+        "The date is one two-mark response with its printed partial; the scheme’s optional day does not become an extra answer.",
+        "Cursive writing uses the printed six-mark total, half-mark deductions and rounding direction. No unsupported per-phrase allocation is inferred.",
+        "Mix and match retains all ten numbered original answers at four marks each. Structuring discourse uses the ten underlined inserted words at two marks each.",
+        "Short-answer cultural writing is one two-of-five choice; extended writing is one one-of-three choice. Their complete original choices, content/expression/coherence instructions and printed bands remain visible.",
+        "The three tasks with no model answer retain the exact fixed line and fresh SEC scheme evidence.",
+        "Scheme footers are excluded only by their exact numeral and bottom coordinate; full answer pools and two-page writing guidance remain intact."
+      ],
+      "validation": {
+        "sourceChecks": {
+          "cases": 9,
+          "sourcePassages": 275,
+          "passed": true
+        },
+        "scoringChecks": {
+          "cases": 14,
+          "passed": true
+        },
+        "requiredRepositoryChecks": {
+          "files": 3,
+          "cases": 233,
+          "passed": true
+        },
+        "russianCoverageChecks": {
+          "cases": 3,
+          "passed": true
+        },
+        "all1396PriorReviewedCardsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "cardingComplete": false,
+        "releaseReady": false,
+        "sittingCompletion": false,
+        "sittingOpenTasks": 18,
+        "sittingExcludedTasks": 0,
+        "sourceEvidence": "reviews/russian-2017-ol-sec-20261118/archive-recheck.json",
+        "printedCensus": "reviews/russian-2017-ol-sec-20261118/printed-census.json",
+        "splitCategoryReport": "reviews/russian-2017-ol-sec-20261118/split-and-category.json",
+        "wholeSubjectReconciliation": {
+          "covered": 1471,
+          "asks": 1489,
+          "open": 18,
+          "excluded": 0,
+          "staleExclusions": 254,
+          "orphans": 0,
+          "unparsed": 0
+        },
+        "browserEvidence": "reviews/russian-2017-ol-sec-20261118/browser-review.json",
+        "browserQA": "36 combinations visually reviewed; extended writing saved 30/30; both exclusive reading routes reached 4/4; original pages loaded.",
+        "hostedRouteChecks": "Passed, including all reviewed Russian source bindings."
       }
     }
   ]
