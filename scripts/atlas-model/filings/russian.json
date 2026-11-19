@@ -603,6 +603,150 @@
         "russian-0-7"
       ],
       "x"
+    ],
+    "ru-2019-hl-l1": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l3": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4": [
+      [
+        "russian-0-1"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-2-i": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-2-ii": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-3": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-4": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-5-i": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l1-5-ii": [
+      [
+        "russian-0-9"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2-2-i": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2-2-ii": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2-3-i": [
+      [
+        "russian-0-4"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2-3-ii": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l2-4": [
+      [
+        "russian-0-8"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l3-1-ii": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l3-2-i": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l3-2-ii": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l3-3": [
+      [
+        "russian-0-7"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4-1-ii": [
+      [
+        "russian-0-4"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4-2-i": [
+      [
+        "russian-0-5"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4-2-ii": [
+      [
+        "russian-0-3"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4-3-i": [
+      [
+        "russian-0-4"
+      ],
+      "x"
+    ],
+    "ru-2019-hl-l4-3-ii": [
+      [
+        "russian-0-4"
+      ],
+      "x"
     ]
   },
   "releaseScope": "New or changed asks replayed after the 19 November release. Combine with the coordinator’s independent Stage 1r filings before enabling the single model; unchanged existing asks are deliberately not re-filed here."
