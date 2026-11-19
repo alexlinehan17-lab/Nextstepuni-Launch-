@@ -26,7 +26,7 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
   const file = `scripts/paper-trail/answers/${fileid}.json`;
   const map = fs.existsSync(path.join(ROOT,file)) ? read(file) : {
     v: 1, paperFileid: first.paperFileid, schemeFileid: first.schemeFileid,
-    component: first.component, band: [1, Math.max(...tasks.flatMap(task=>task.schemePages))],
+    component: first.component, band: [1, 1 + Math.max(...tasks.flatMap(task=>task.schemePages))],
     copyright: '© State Examinations Commission', q: [],
   };
   let tag = tags.find(tag=>tag.year===first.year && tag.fileid===first.paperFileid && tag.lang==='ev');
@@ -47,6 +47,7 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
       const question = {n,label:original.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
         pP:original.questionPages[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
         region:original.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1,
+        taskRoute:true,
         ...((joint || task.atlasQuestionKey) ? {markBankCardId:card.id} : {})};
       const existing = map.q.find(row=>row.n===n);
       if(existing) {
@@ -62,6 +63,8 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
     verifyRussianJointTags(task, card, tag);
   }
   map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
+  // The upper scheme-page bound is exclusive, including on older maps.
+  map.band[1]=Math.max(map.band[1],1+Math.max(...map.q.flatMap(q=>q.region.map(segment=>segment.p))));
   write(file,map);
   write(`public/paper-answers/${fileid}.json`,map);
 }
