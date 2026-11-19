@@ -141,6 +141,117 @@ def source(pages, kind='source-question', title='Original question'):
         presentationNote='Read the complete original source and question in context.')
 
 
+def apply_r7_r4(cards, raw):
+    """Original-paper spans and explicitly labelled scheme allocations, reviewed 19 Nov.
+
+    These are new 2014 asks. No existing live sitting is selected or rewritten.
+    Generic component marks alone never create a split here.
+    """
+    unprinted = 'The scheme prints no answer for this part.'
+    by = {c['id'].removeprefix('lcvp-2014-cl-'): c for c in cards}
+
+    def missing(marks, note, count=None, per=None, ladder=None):
+        row = dict(id='unprinted-answer', kind='criterion', verbatim=unprinted,
+            unprinted=True, marks=marks, permittedMarks=ladder or list(range(marks + 1)),
+            contextNote=note)
+        if count:
+            row['parts'] = [dict(id=f'response-{i}', verbatim=f'Response {i}',
+                marks=per, permittedMarks=list(range(per + 1))) for i in range(1, count + 1)]
+        return row
+
+    def split(suffix, second_start, first_marks, second_marks, concept, ref, rows):
+        original = by[suffix]
+        full = original['questionText']
+        assert full.count(second_start) == 1
+        cut = full.index(second_start)
+        first, second = full[:cut].strip(), full[cut:].strip()
+        assert first + ' ' + second == full
+        assert first_marks + second_marks == original['totalMarks']
+        index = cards.index(original)
+        follow = deepcopy(original)
+        original.update(questionText=first, totalMarks=first_marks, rows=[rows[0]])
+        follow.update(id=original['id'] + '-2', conceptId=concept,
+            questionRef=original['questionRef'] + ' — ' + ref,
+            questionText=second, stem=original['stem'] + ' ' + first,
+            totalMarks=second_marks, rows=[rows[1]])
+        cards[index:index + 1] = [original, follow]
+        by[suffix + '-2'] = follow
+        return original, follow
+
+    assert 'valid expansion' in tidy(raw[key('A', 8, None)])
+    assert by['a8']['rows'][0]['group']['claimMax'] == 6
+    by['a8']['rows'].append({'id': 'missing-career-review-expansion', 'kind': 'criterion', 'verbatim': 'The scheme prints no answer for this part.', 'marks': 0, 'unprinted': True, 'contextNote': 'This notice applies only to the missing valid expansion in original option 4. Retain its complete printed career-area, team-role and experience criteria in the original pool above. The scheme gives six responses one mark each; use those existing response controls. This notice adds no marks and invents no expansion.'}
+    )
+
+    text = tidy(raw[key('C', 1, 'a')])
+    assert 'Title of career investigated' in text and '1 mark' in text
+    by['c1a']['rows'] = [missing(1, 'Title of career investigated. 1 mark. ')]
+
+    text = tidy(raw[key('C', 1, 'c')])
+    for literal in ['Personal traits', 'Relevant skill', 'Must be relevant to the career.',
+                    '3 @ 1m for stating', '3 @ 2m (1 + 1) for explaining']:
+        assert literal in text, literal
+    split('c1c', 'Explain the reasons', 3, 6,
+        'career-qualities-skills-relevance-explanation', 'relevance of qualities/skills', [
+        missing(3, 'Personal traits | Relevant skill. Must be relevant to the career. 3 @ 1m for stating. Use three distinct relevant qualities/skills for the same chosen career.', 3, 1),
+        missing(6, 'Personal traits | Relevant skill. Must be relevant to the career. 3 @ 2m (1 + 1) for explaining. Explain the relevance of the same three qualities/skills to the same chosen career.', 3, 2)])
+
+    missing_library = 'Use the local library/college propectus + valid expansion.'
+    assert missing_library in tidy(raw[key('C', 1, 'd')])
+    by['c1d']['rows'].append(dict(id='missing-library-expansion', kind='criterion',
+        verbatim=unprinted, marks=0, unprinted=True,
+        contextNote='This notice applies only to the missing valid expansion in original option 6: Use the local library/college propectus + valid expansion. The printed option and all other model responses remain above. The scheme gives three responses 3 marks each, 1 + 2 (0/2); use those existing response controls. This notice adds no marks and invents no expansion.'))
+
+    text = tidy(raw[key('C', 2, 'a')])
+    assert '1m for naming' in text and '1m for outline' in text
+    split('c2a', 'Outline the type of work', 1, 1,
+        'visited-local-business-work', 'type of work', [
+        missing(1, 'Name the business and give a brief outline of the work. 1m for naming. '),
+        missing(1, 'Name the business and give a brief outline of the work. 1m for outline. Use the same business named in the first ask.')])
+
+    text = tidy(raw[key('C', 2, 'c')])
+    for literal in ['Mention particular knowledge/skills', '3 @ 1m for naming the subjects',
+                    '3 @ 2m (1 + 1) for explanation']:
+        assert literal in text, literal
+    split('c2c', 'Explain how each subject', 3, 6,
+        'subjects-visit-application', 'use of subjects', [
+        missing(3, 'Mention particular knowledge/skills. 3 @ 1m for naming the subjects. The paper requires three Leaving Certificate subjects other than Link Modules.', 3, 1),
+        missing(6, 'Mention particular knowledge/skills. 3 @ 2m (1 + 1) for explanation. Use the same three selected subjects and the same visit.', 3, 2)])
+
+    text = tidy(raw[key('C', 4, 'c')])
+    assert '1m for identifying resource' in text and '1m for explanation' in text
+    original = by['c4c']
+    pool = original['rows'][0]['contextNote'].split('Complete original guidance: ', 1)[1]
+    assert len(pool.split(' | ')) == 4
+    rows = []
+    for action, note in [('identifying', 'Keep three distinct resources.'),
+                         ('explanation', 'Use the same three resources identified for the mini company making plant pot holders.')]:
+        row = missing(3, 'The scheme gives 3 @ 2m, 1m for identifying resource and 1m for explanation. '
+            f'This ask carries the three {action} marks. {note} Complete original guidance: ' + pool, 3, 1)
+        row['id'] = 'responses'
+        del row['unprinted']
+        rows.append(row)
+    first, second = split('c4c', 'and outline why each resource', 3, 3,
+        'mini-company-resource-reasons', 'reasons resources are needed', rows)
+    for card in [first, second]:
+        card['rows'][0]['verbatim'] = card['questionText']
+
+    text = tidy(raw[key('C', 5, 'a')])
+    assert 'Name of group 1m' in text and 'Outline of the type of work 2m (0/2)' in text
+    split('c5a', 'Outline the type of work', 1, 2,
+        'local-voluntary-organisation-work', 'type of work', [
+        missing(1, 'Name of group 1m. '),
+        missing(2, 'Outline of the type of work 2m (0/2). Use the same voluntary group/organisation named in the first ask.', ladder=[0, 2])])
+
+    row = by['c6a']['rows'][0]
+    assert 'Each must be explained for the mark' in tidy(raw[key('C', 6, 'a')])
+    assert len(row['contextNote'].split('Complete original guidance: ', 1)[1].split(' | ')) == 7
+    row.update(verbatim=unprinted, unprinted=True)
+    row['contextNote'] += ' The printed names above are retained; the scheme prints no explanation for them.'
+    assert len(cards) == 45 and sum(c['totalMarks'] for c in cards) == 210
+    return cards
+
+
 def build():
     paper, scheme = documents()
     raw = scheme_parts(scheme)
@@ -329,6 +440,7 @@ def build():
     second['rows'][0]['verbatim'] = second_text
     cards[index:index + 1] = [joint, second]
     assert len(cards) == 40 and sum(card['totalMarks'] for card in cards) == 210
+    cards = apply_r7_r4(cards, raw)
     return cards, scheme
 
 
@@ -340,14 +452,14 @@ def write(cards, scheme):
     review = json.loads(REVIEW.read_text())
     proof = review['sourceVerification']['proof']
     digest = hashlib.sha256(json.dumps(cards, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
-    assert proof['tasks'] == review['manualPricedTasks'] == 40
+    assert proof['tasks'] == review['manualPricedTasks'] == 45
     assert digest == proof['authoredSubsetSha256'], 'Refresh the mandatory original-source gate before writes'
     assert review['sourceVerification']['validatedAuthoringSha256'] == hashlib.sha256((ROOT / 'scripts/markbank/authoring/lcvp_review_2014.py').read_bytes()).hexdigest()
     path = ROOT / 'scripts/markbank/authored/lcvp.json'
     old = json.loads(path.read_text())
     preserved = [c for c in old if c['year'] != 2014]
     prior = [c for c in old if c['year'] == 2014]
-    assert len(prior) in [0, 40] and len(preserved) == 518
+    assert len(prior) in [0, 40, 45] and len(preserved) == 518
     assert {c['id']: c['conceptId'] for c in prior}.items() <= {c['id']: c['conceptId'] for c in cards}.items()
     result, inserted = [], False
     for card in old:

@@ -9411,8 +9411,8 @@
     "paperFileid": "LC462CLP000EV.pdf",
     "sourceLeaves": 39,
     "rawReaderLeaves": 39,
-    "practiceTasks": 40,
-    "paperAsks": 40,
+    "practiceTasks": 45,
+    "paperAsks": 45,
     "physicalQuestions": 17,
     "markBankMappings": [
       {
@@ -9560,6 +9560,15 @@
         ]
       },
       {
+        "id": "lcvp-2014-cl-c1c-2",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "12",
+        "topicId": "lcvp-link-modules-0-2",
+        "atlasTopicIds": [
+          "link-modules-common-1-career-investigation"
+        ]
+      },
+      {
         "id": "lcvp-2014-cl-c1d",
         "fileid": "LC462CLP000EV.pdf",
         "n": "12",
@@ -9578,6 +9587,15 @@
         ]
       },
       {
+        "id": "lcvp-2014-cl-c2a-2",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-1",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      {
         "id": "lcvp-2014-cl-c2b",
         "fileid": "LC462CLP000EV.pdf",
         "n": "13",
@@ -9588,6 +9606,15 @@
       },
       {
         "id": "lcvp-2014-cl-c2c",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "13",
+        "topicId": "lcvp-link-modules-1-1",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-business-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2014-cl-c2c-2",
         "fileid": "LC462CLP000EV.pdf",
         "n": "13",
         "topicId": "lcvp-link-modules-1-1",
@@ -9668,6 +9695,15 @@
         ]
       },
       {
+        "id": "lcvp-2014-cl-c4c-2",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "15",
+        "topicId": "lcvp-link-modules-1-3",
+        "atlasTopicIds": [
+          "link-modules-common-2-an-enterprise-activity"
+        ]
+      },
+      {
         "id": "lcvp-2014-cl-c4d",
         "fileid": "LC462CLP000EV.pdf",
         "n": "15",
@@ -9687,6 +9723,15 @@
       },
       {
         "id": "lcvp-2014-cl-c5a",
+        "fileid": "LC462CLP000EV.pdf",
+        "n": "16",
+        "topicId": "lcvp-link-modules-1-2",
+        "atlasTopicIds": [
+          "link-modules-common-2-local-voluntarycommunity-enterprises"
+        ]
+      },
+      {
+        "id": "lcvp-2014-cl-c5a-2",
         "fileid": "LC462CLP000EV.pdf",
         "n": "16",
         "topicId": "lcvp-link-modules-1-2",

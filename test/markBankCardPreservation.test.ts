@@ -2781,11 +2781,11 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
-  it('retains all 244 reviewed LCVP additions beside the unchanged original 314 identities', () => {
+  it('retains all 249 reviewed LCVP additions beside the unchanged original 314 identities', () => {
     const added = LCVP_COMMON.filter(card => lcvpAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...LCVP_2014_ADDED_IDS, ...LCVP_2015_ADDED_IDS, ...LCVP_2016_ADDED_IDS, ...LCVP_2017_ADDED_IDS, ...LCVP_2018_ADDED_IDS, ...LCVP_2019_ADDED_IDS, ...LCVP_2020_ADDED_IDS, ...LCVP_2021_ADDED_IDS, ...LCVP_2022_ADDED_IDS, ...LCVP_2023_ADDED_IDS, ...LCVP_2024_ADDED_IDS, ...LCVP_2025_ADDED_IDS, ...LCVP_2026_ADDED_IDS].sort());
-    expect(lcvpAdditionIds.size).toBe(244);
-    expect(LCVP_COMMON).toHaveLength(558);
+    expect(lcvpAdditionIds.size).toBe(249);
+    expect(LCVP_COMMON).toHaveLength(563);
   });
   it('retains reviewed Russian additions beside the original frozen identities', () => {
     const additions = [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].filter(card => !russianFrozen.has(card.id));

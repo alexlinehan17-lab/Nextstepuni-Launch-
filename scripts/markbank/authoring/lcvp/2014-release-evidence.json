@@ -1,7 +1,7 @@
 {
   "review": "Independent source preflight completed19November2026 before release replay.",
   "printedLeafLabels": 39,
-  "paperAsks": 40,
+  "paperAsks": 45,
   "requiredSplit": {
     "id": "lcvp-2014-cl-c4d",
     "live": false,
@@ -38,7 +38,7 @@
     "rule": "R7 / CARD-STANDARD §5: separate printed asks with separate marks.",
     "liveApprovalNeeded": false,
     "parentConfirmedRuleSettlesThis": true,
-    "implementation": "Implemented by lcvp_review_2014.py: first draft ID/concept retained; second new card;40ask census."
+    "implementation": "Six printed parts yield two separately marked asks each; original draft IDs/concept IDs retained on the first ask. 39 original labels,45 asks,210 offered marks."
   },
   "sources": [
     {
@@ -194,11 +194,14 @@
   "newOnly": true,
   "limitations": [
     "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
-    "Single-model generation and production integration are owned by the coordinator and not yet complete."
+    "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
+    "SEC archive no-answer recheck remains blocked.",
+    "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim.",
+    "Six-card settled-state/full-modal screenshot follow-up remains pending;68 functional/layout cases already passed."
   ],
-  "releaseStatus": "Unfinished WIP: source and application checks passed; browser, ten filing decisions and shared model/video integration remain pending.",
+  "releaseStatus": "Unfinished WIP:45 source/application/browser checks passed; visual follow-up,10filing decisions and shared model/video integration pending.",
   "displayFilingReview": {
-    "asks": 40,
+    "asks": 45,
     "firstReaderOriginalPagesSeen": 50,
     "independentSample": 15,
     "independentAgreements": 5,
@@ -216,10 +219,148 @@
     ],
     "internalTopicIdsChanged": false,
     "existing518FilingsOverwritten": false,
-    "decisionEvidence": "REVIEW/2026-11-19-lcvp-release/third-reader-input.json in the shared plans folder"
+    "decisionEvidence": "REVIEW/2026-11-19-lcvp-release/third-reader-input.json in the shared plans folder",
+    "additionalSplitAsksCompared": 10,
+    "additionalSplitAgreements": 10,
+    "newOnlyCombinedHandoff": "REVIEW/2026-11-19-lcvp-release/45-new-ask-filing-handoff.json",
+    "canonicalFilingWritten": false
   },
   "releaseSnapshot": "https://drive.google.com/file/d/1PHjEcp8s340w5H5clFGdGF_wQb6T98zH/view",
   "verification": {
+    "recordedAt": "2026-11-19T18:52:40.642598+00:00",
+    "preservedLiveAuthoredCards": 518,
+    "preservedLiveRuntimeCards": 518,
+    "newAsks": 45,
+    "printedLeafLabels": 39,
+    "offeredMarks": 210,
+    "wholeNoAnswerAsks": 9,
+    "partialNoAnswerAsks": 3,
+    "passed": [
+      "Original PDFs reproduce exact45-card reviewed payload",
+      "All518 prior authored/runtime cards unchanged",
+      "All45 source bindings and original Atlas links;17 prior Atlas question identities preserved",
+      "All unrelated subject records/routes and coverage baseline entries unchanged",
+      "Cardlint",
+      "275checks in7focused suites",
+      "3LCVP coverage checks;2014open0/excluded0/orphans0",
+      "3871PaperTrail checks",
+      "Application and scoped sitting-check types",
+      "Source syntax and scopedlint",
+      "All45cached-original source openings",
+      "68phone/desktop light/dark browser cases,0pageerrors and0documentoverflow",
+      "8zero-mark notice interactions add0marks"
+    ],
+    "pending": [
+      "Native2014video playback has not been verified; official listing/headers/container prefix were verified.",
+      "Ten display headings still need coordinator adjudication; shared single-model generation/production integration remain pending.",
+      "SEC archive no-answer recheck remains blocked.",
+      "Browser source openings use hash-verified cached PDFs; no hosted availability or signed-in navigation claim.",
+      "Six-card settled-state/full-modal screenshot follow-up remains pending;68 functional/layout cases already passed."
+    ],
+    "evidenceHashes": {
+      "checks45/complete.json": "4cc069ec7467847c2992c5f942b62c0880dea66ce6f996bd96a3851ea4877f14",
+      "checks45/original-source-proof.json": "f0d91df3459202e5685ef5d29d56e3f036956e7fedf72c10477336bc1d417ae7",
+      "45-runtime-preservation-and-links.json": "a279292bec5bddfc33ed8f54bcf72eaf4ffe1e43611bcf1f5f9bc8d8679d4953",
+      "checks45/baseline-preservation.json": "b1fa1bd324ce488fedbcb1a5c032964f1865f89a37fed38a22df7d87fb54e2e3",
+      "checks45/required-checks.log": "3b1353bb769a9858a340a7e70b5913872fc91246dde14839f0d70a5efde4782d",
+      "checks45/coverage.log": "e46f2717134b701362dac3400d4e2486df51cb06288674132ef3e2e0df954e6f",
+      "checks45/paper-trail.log": "315ec00e625eaddbce9b25562e323f5964dd49ee8c6de13698981a877a7c8bfd",
+      "browser45/results.json": "92e9408fca832c7b13f7e69ed46bb421cf9e0fc3caaca3e76b1d6ed805923d3e",
+      "45-new-ask-filing-handoff.json": "acf404ed5a873c9b7934d8fa8d8b99d7731e2f42da9dab5791647246e0ac24bc"
+    }
+  },
+  "correctionReview": {
+    "reviewedAt": "2026-11-19T18:14:20.361139+00:00",
+    "reader": "root",
+    "independence": "Informed review of the second reader correction proposal, not a new blind filing pass. Earlier first reading remains preserved.",
+    "originalPaperPagesViewed": [
+      14,
+      15,
+      17,
+      18,
+      23,
+      24,
+      26,
+      29,
+      30,
+      31
+    ],
+    "originalSchemePhysicalPagesViewed": [
+      8,
+      9,
+      11,
+      12,
+      13,
+      14
+    ],
+    "decision": "45 asks, 39 printed labels, 210 offered marks, 160 exam marks; five additional splits supported.",
+    "splits": {
+      "C1(c)": [
+        3,
+        6
+      ],
+      "C2(a)": [
+        1,
+        1
+      ],
+      "C2(c)": [
+        3,
+        6
+      ],
+      "C4(c)": [
+        3,
+        3
+      ],
+      "C5(a)": [
+        1,
+        2
+      ]
+    },
+    "wholeNoAnswer": [
+      "C1(a)",
+      "C1(c)-stating",
+      "C1(c)-explaining",
+      "C2(a)-name",
+      "C2(a)-work",
+      "C2(c)-names",
+      "C2(c)-use",
+      "C5(a)-name",
+      "C5(a)-work"
+    ],
+    "partialNoAnswer": [
+      {
+        "ref": "C1(d)",
+        "schemePhysicalPage": 8,
+        "printedOption": "Use the local library/college propectus + valid expansion.",
+        "missing": "The expansion is not printed; keep all seven original options and scope the fixed last no-answer notice to this option. Do not allocate extra marks."
+      },
+      {
+        "ref": "C6(a)",
+        "schemePhysicalPage": 14,
+        "missing": "Seven characteristic names are printed; explanations are not. Keep the whole four-mark ask with all names, the explanation requirement and fixed no-answer notice."
+      },
+      {
+        "ref": "A8",
+        "schemePhysicalPage": 5,
+        "missing": "Option4 requires a valid expansion but prints only career-review criteria; retain six original options and controls, append a scoped zero-mark notice."
+      }
+    ],
+    "requiredPayloadCorrection": "C4(c)-2 must retain the original initial word and: and outline why each resource is needed.",
+    "keptWhole": [
+      "C6(c), descriptions with internal heading/expansion components",
+      "C6(d), paired entrepreneur/manager comparisons"
+    ],
+    "constraints": [
+      "Preserve all 40 prior draft IDs/conceptIds and all 518 live cards unchanged.",
+      "Fresh archive rechecks remain pending with audio coordinator while SEC is blocked.",
+      "Original 40-draft checks do not validate the 45-card correction.",
+      "Ten earlier filing differences remain pending; file new split asks individually."
+    ]
+  },
+  "correctionPayloadSha256": "ab42c365418746321d6df8744fec76d67af05fe01337928ba930f43dfed589d3",
+  "wholeNoAnswerAsks": 9,
+  "partialNoAnswerAsks": 3,
+  "historicalVerification40": {
     "recordedAt": "2026-11-19T17:07:25.183366+00:00",
     "preservedLiveCards": 518,
     "newAsks": 40,

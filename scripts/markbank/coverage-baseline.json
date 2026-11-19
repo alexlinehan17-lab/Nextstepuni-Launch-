@@ -513,8 +513,8 @@
     "refsHash": "cbfff690c93f65b8"
   },
   "lcvp": {
-    "cards": 558,
-    "contentHash": "b79cc290b3ef54b5",
+    "cards": 563,
+    "contentHash": "ab71baa3ff028729",
     "coveragePct": 78.1,
     "covered": 570,
     "excluded": 0,
@@ -525,7 +525,7 @@
       "count": 25,
       "hash": "aec10355e05833e6"
     },
-    "refsHash": "52bd78886e19667b"
+    "refsHash": "1c562edeb4cd0c1d"
   },
   "lithuanian": {
     "cards": 306,

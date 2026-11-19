@@ -55,8 +55,8 @@ export function lcvpSourceMap(review, readSource = path => readFileSync(resolve(
 export function lcvp2014SourceMap(review, readSource = path => readFileSync(resolve(root, path))) {
   if (review?.year !== 2014 || review.level !== 'common' || review.sitting !== 'main'
       || review.language !== 'ev' || review.manualOriginalLeaves !== 39
-      || review.manualPaperAsks !== 40 || review.manualPricedTasks !== 40
-      || review.tasks?.length !== 40 || !review.visualSweep?.paper || !review.visualSweep?.writtenScheme) {
+      || review.manualPaperAsks !== 45 || review.manualPricedTasks !== 45
+      || review.tasks?.length !== 45 || !review.visualSweep?.paper || !review.visualSweep?.writtenScheme) {
     throw new Error('Unreviewed LCVP 2014 main sitting');
   }
   const expected = [

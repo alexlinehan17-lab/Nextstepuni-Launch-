@@ -66,7 +66,7 @@ def anchors():
 
 def apply():
     review = read(str(REVIEW.relative_to(ROOT)))
-    assert review['manualPricedTasks'] == 40
+    assert review['manualPricedTasks'] == 45
     questions = anchors()
     old = read(f'scripts/paper-trail/answers/2014/{FILE}.json')
     assert [q['n'] for q in old['q']] == [q['n'] for q in questions] == [str(n) for n in range(1, 18)]
@@ -107,7 +107,7 @@ def apply():
                    if section in ['A', 'B'] else inverse[card['topicId']])
         topics[n].update(targets)
         mappings.append(dict(id=card['id'], fileid=FILE, n=n, topicId=card['topicId'], atlasTopicIds=targets))
-    assert len(mappings) == 40 and all(canonical.values())
+    assert len(mappings) == 45 and all(canonical.values())
     path = 'scripts/paper-trail/topic-tags/tags/link-modules.json'
     tags = read(path)
     prior = [p for p in tags if p['year'] == 2014 and p['fileid'] == FILE]
@@ -154,13 +154,13 @@ def apply():
     local_path = 'data/examTopics/link-modules-local-crosswalk.json'
     local = read(local_path)
     local['reviewedEnglish2014'] = dict(review=str(REVIEW.relative_to(ROOT)), paperFileid=FILE,
-        sourceLeaves=39, rawReaderLeaves=39, practiceTasks=40, paperAsks=40, physicalQuestions=17, markBankMappings=mappings,
+        sourceLeaves=39, rawReaderLeaves=39, practiceTasks=45, paperAsks=45, physicalQuestions=17, markBankMappings=mappings,
         originalAtlasTopicIds=original_topics, atlasTopicCorrections=review['atlasTopicCorrections'],
         canonicalTopicIdsByQuestion={n: sorted(v) for n, v in canonical.items()},
         canonicalWavePolicy='Two representative legacy wave fields; full canonical nodes and actual Atlas browse memberships are retained in this crosswalk/direct runtime.',
         policy='All original 1–17 identities retained. Complete paper ranges and matching scheme regions reviewed; canonical content topics and original assessment-format Atlas buckets retained. Numeric scoring holds and native playback QA are separate from source/task coverage.')
     write(local_path, local)
-    print('LCVP 2014: all 17 original sidecar/runtime identities retained; approved B1 topic correction recorded; 40 separately marked asks mapped; non-LCVP records unchanged.')
+    print('LCVP 2014: all 17 original sidecar/runtime identities retained; approved B1 topic correction recorded; 45 separately marked asks mapped; non-LCVP records unchanged.')
 
 
 if __name__ == '__main__':

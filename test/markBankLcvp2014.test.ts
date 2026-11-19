@@ -18,19 +18,19 @@ const get = (suffix: string) => {
 };
 const pool = (suffix: string, index = 0) => {
   const row = get(suffix).rows[index];
-  return row.group?.options ?? row.contextNote!.split('Complete original guidance: ')[1].split(' | ');
+  return row.group?.options ?? row.contextNote!.split('Complete original guidance: ')[1].split(' The printed names above are retained;')[0].split(' | ');
 };
 
 describe('LCVP 2014: all original tasks, choices and Atlas identities', () => {
-  it('retains all 40 separately marked asks and every emitted authored field', () => {
+  it('retains all 45 separately marked asks and every emitted authored field', () => {
     expect(review.manualOriginalLeaves).toBe(39);
-    expect(review.manualPricedTasks).toBe(40);
-    expect(review.manualSectionTasks).toEqual({ A: 8, B: 5, C: 27 });
+    expect(review.manualPricedTasks).toBe(45);
+    expect(review.manualSectionTasks).toEqual({ A: 8, B: 5, C: 32 });
     expect(review.paperPrintedTariffUnits).toBe(35);
     expect(review.rawReaderAudit.capturedTariffSum).toBe(44);
     expect(review.candidateWrittenMarks).toBe(160);
     expect(review.originalMarkBankCards).toBe(0);
-    expect(all).toHaveLength(40);
+    expect(all).toHaveLength(45);
     expect(all.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(210);
     const expected = authored.filter(c => c.year === 2014);
     expect(all.map(c => c.id).sort()).toEqual(expected.map(c => c.id).sort());
@@ -97,18 +97,19 @@ describe('LCVP 2014: all original tasks, choices and Atlas identities', () => {
   });
 
   it('preserves whole matched profiles and indivisible explanation components', () => {
-    for (const suffix of ['c1c', 'c2c', 'c6c']) {
+    for (const suffix of ['c6c']) {
       expect(get(suffix).rows.map(r => r.marks)).toEqual([3, 3, 3]);
       for (const row of get(suffix).rows) expect(row.parts?.map(p => p.permittedMarks)).toEqual([[0, 1], [0, 1, 2]]);
     }
-    expect(pool('c1c')).toHaveLength(2);
-    expect(pool('c1c')[1]).toContain('Must be relevant to the career.');
-    expect(get('c2c').rows[0].contextNote).toContain('OTHER THAN Link Modules');
+    expect(get('c1c').rows[0].contextNote).toContain('Must be relevant to the career.');
+    expect(get('c2c').rows[0].contextNote).toContain('other than Link Modules');
     for (const suffix of ['c1d', 'c3d']) {
-      expect(get(suffix).rows).toHaveLength(3);
-      for (const row of get(suffix).rows) expect(row.parts?.map(p => p.permittedMarks)).toEqual([[0, 1], [0, 2]]);
+      const scored = get(suffix).rows.filter(row => row.marks);
+      expect(scored).toHaveLength(3);
+      for (const row of scored) expect(row.parts?.map(p => p.permittedMarks)).toEqual([[0, 1], [0, 2]]);
     }
-    expect(get('c5a').rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 1], [0, 2]]);
+    expect(get('c5a').rows[0].permittedMarks).toEqual([0, 1]);
+    expect(get('c5a-2').rows[0].permittedMarks).toEqual([0, 2]);
     for (const suffix of ['c1b', 'c1c', 'c1d']) expect(get(suffix).stem).toContain(get('c1a').questionText);
     for (const suffix of ['c2b', 'c2c', 'c2d']) expect(get(suffix).stem).toContain(get('c2a').questionText);
     for (const [suffix, count] of [['c1b', 6], ['c1d', 7], ['c2b', 7], ['c2d', 7], ['c3b', 10], ['c3c', 7], ['c3d', 10], ['c4b', 8], ['c4c', 4], ['c5b', 7], ['c5di', 4], ['c5dii', 5], ['c6b', 8], ['c6c', 8]] as const) expect(pool(suffix)).toHaveLength(count);
@@ -122,7 +123,10 @@ describe('LCVP 2014: all original tasks, choices and Atlas identities', () => {
     expect(rows[1].contextNote).toContain('* Compulsory item');
     expect(rows[2].group).toMatchObject({ claimMax: 4, perOption: 1 });
     expect(rows[2].group?.options).toEqual(['Draw up a plan of work', 'Finance', 'Permission from Principal', 'Assigning tasks/roles', 'Date/time of the next meeting', 'AOB']);
-    for (const row of get('c4c').rows) expect(row.parts?.map(p => p.verbatim)).toEqual(['Resource', 'Explanation']);
+    for (const suffix of ['c4c', 'c4c-2']) {
+      expect(get(suffix).totalMarks).toBe(3);
+      expect(get(suffix).rows[0].parts?.map(p => p.marks)).toEqual([1, 1, 1]);
+    }
     for (const phrase of ['Skilled team members', 'Teachers', 'Parents', 'General public']) expect(pool('c4c')[0]).toContain(phrase);
     for (const phrase of ['Wood, glue nails', 'Tools & Equipment', 'Specialist rooms']) expect(pool('c4c')[1]).toContain(phrase);
     expect(get('c4d').totalMarks).toBe(3);
@@ -155,6 +159,35 @@ describe('LCVP 2014: all original tasks, choices and Atlas identities', () => {
     expect(get('c6a').rows[0].group).toBeUndefined();
   });
 
+  it('keeps all six separately marked splits and nine whole plus three partial no-answer notices', () => {
+    const splits = [['c1c', 3, 6], ['c2a', 1, 1], ['c2c', 3, 6], ['c4c', 3, 3], ['c4d', 3, 6], ['c5a', 1, 2]] as const;
+    for (const [suffix, first, second] of splits) {
+      expect(get(suffix).totalMarks).toBe(first);
+      expect(get(`${suffix}-2`).totalMarks).toBe(second);
+      if (suffix !== 'c4d') expect(get(`${suffix}-2`).stem).toContain(get(suffix).questionText);
+    }
+    expect(get('c4c-2').questionText).toBe('and outline why each resource is needed.');
+    const whole = ['c1a', 'c1c', 'c1c-2', 'c2a', 'c2a-2', 'c2c', 'c2c-2', 'c5a', 'c5a-2'];
+    const partial = ['a8', 'c1d', 'c6a'];
+    const actual = all.filter(card => card.kind === 'question' && card.rows.some(row => row.unprinted)).map(card => card.id);
+    expect(actual.sort()).toEqual([...whole, ...partial].map(suffix => `lcvp-2014-cl-${suffix}`).sort());
+    for (const suffix of whole) {
+      expect(get(suffix).rows).toHaveLength(1);
+      expect(get(suffix).rows[0]).toMatchObject({ kind: 'criterion', unprinted: true, verbatim: 'The scheme prints no answer for this part.' });
+    }
+    for (const suffix of ['a8', 'c1d']) {
+      expect(get(suffix).rows.at(-1)).toMatchObject({ kind: 'criterion', unprinted: true, marks: 0, verbatim: 'The scheme prints no answer for this part.' });
+      expect(get(suffix).rows.at(-1)?.permittedMarks).toBeUndefined();
+    }
+    expect(pool('a8')).toHaveLength(6);
+    expect(get('a8').rows[0].group).toMatchObject({ claimMax: 6, perOption: 1 });
+    expect(get('c1d').rows.at(-1)?.contextNote).toContain('propectus');
+    for (const suffix of ['c1c', 'c2c']) {
+      expect(get(suffix).rows[0].parts?.map(part => part.marks)).toEqual([1, 1, 1]);
+      expect(get(`${suffix}-2`).rows[0].parts?.map(part => part.marks)).toEqual([2, 2, 2]);
+    }
+  });
+
   it('retains both full cells of all six entrepreneur/manager contrasts', () => {
     expect(pool('c6d')).toEqual([
       'Comes up with an idea/sets up the business — Implements entrepeneur’s idea/runs the business on a daily basis',
@@ -180,7 +213,7 @@ describe('LCVP 2014: all original tasks, choices and Atlas identities', () => {
     expect(anchors.q.find(q => q.n === '11')?.endP).toBe(12);
     expect(anchors.q.slice(11).map(q => q.region.map(r => r.p))).toEqual([[8], [9], [10], [11, 12], [12, 13], [14]]);
     const crosswalk = local.reviewedEnglish2014;
-    expect(crosswalk.markBankMappings).toHaveLength(40);
+    expect(crosswalk.markBankMappings).toHaveLength(45);
     expect(Object.keys(crosswalk.originalAtlasTopicIds)).toHaveLength(17);
     expect(crosswalk.atlasTopicCorrections).toEqual(review.atlasTopicCorrections);
     expect(review.originalAtlasMemberships.canonicalWaveTopics['9']).toEqual(['lcvp-link-modules-1-4']);

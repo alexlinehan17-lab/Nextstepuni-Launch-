@@ -16224,6 +16224,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 6,
     rows: [
     { id: "responses", kind: "anyN", verbatim: "Describe how the project should be evaluated by the class.", marks: 6, contextNote: "Original 6 responses at 1 or 0 marks each. All alternatives remain. Keep the full fourth model: review of career options + valid expansion in light of the role or experience. The skills model includes team, financial and marketing skills.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Review the aims and objectives of the project. If they raised the money required/win the award (competition) and were able to donate extra finance to the special education school.","They should have a class discussion involving everyone to review the activity and to get feedback.","They should carry out a survey/swot analysis/use questions/to review feedback from those involved.","They could carry out a review of career options + valid expansion (mention of career area, in light of their role in the team and or in light of experience gained).","Review skills developed/team, financial, marketing.","Ask the teacher or other relevant parties their opinion on the activity."]} },
+    { id: "missing-career-review-expansion", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 0, contextNote: "This notice applies only to the missing valid expansion in original option 4. Retain its complete printed career-area, team-role and experience criteria in the original pool above. The scheme gives six responses one mark each; use those existing response controls. This notice adds no marks and invents no expansion.", unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16453,7 +16454,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the career you investigated as part of your LCVP Link Modules.",
     tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 1,
     rows: [
-    { id: "career", kind: "point", verbatim: "Title of career investigated", marks: 1 },
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "Title of career investigated. 1 mark. ", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16498,12 +16499,34 @@ export const CARDS: SecCard[] = [
     id: "lcvp-2014-cl-c1c", topicId: "lcvp-link-modules-0-2", conceptId: "career-qualities-skills-relevance",
     section: "C", questionRef: "2014 CL Section C Q1(c)",
     stem: "Career Investigation introduces the skills of research and planning. Name the career you investigated as part of your LCVP Link Modules.",
-    questionText: "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.",
-    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 9,
+    questionText: "State three qualities/skills relevant to this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 3,
     rows: [
-    { id: "profile-1", kind: "criterion", verbatim: "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.", marks: 3, contextNote: "Complete profile 1 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Quality/skill","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Reason relevant to this career","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "profile-2", kind: "criterion", verbatim: "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.", marks: 3, contextNote: "Complete profile 2 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Quality/skill","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Reason relevant to this career","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "profile-3", kind: "criterion", verbatim: "State three qualities/skills relevant to this career. Explain the reasons why these qualities/skills are relevant to this career.", marks: 3, contextNote: "Complete profile 3 of 3. Original 3@1m for stating + 3@2m (1+1) for explaining. Must be relevant to the SAME career. Keep the two open source categories; no example or prescribed category mix is invented. Keep each response distinct and credit it only once. Complete original guidance: Personal traits | Relevant skill Must be relevant to the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Quality/skill","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Reason relevant to this career","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "Personal traits | Relevant skill. Must be relevant to the career. 3 @ 1m for stating. Use three distinct relevant qualities/skills for the same chosen career.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2014 Common Level — © State Examinations Commission.",
+    id: "lcvp-2014-cl-c1c-2", topicId: "lcvp-link-modules-0-2", conceptId: "career-qualities-skills-relevance-explanation",
+    section: "C", questionRef: "2014 CL Section C Q1(c) — relevance of qualities/skills",
+    stem: "Career Investigation introduces the skills of research and planning. Name the career you investigated as part of your LCVP Link Modules. State three qualities/skills relevant to this career.",
+    questionText: "Explain the reasons why these qualities/skills are relevant to this career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "Personal traits | Relevant skill. Must be relevant to the career. 3 @ 2m (1 + 1) for explaining. Explain the relevance of the same three qualities/skills to the same chosen career.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16530,6 +16553,7 @@ export const CARDS: SecCard[] = [
     { id: "response-1", kind: "criterion", verbatim: "Evaluate the different methods of research used in your Career Investigation.", marks: 3, contextNote: "Response 1 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
     { id: "response-2", kind: "criterion", verbatim: "Evaluate the different methods of research used in your Career Investigation.", marks: 3, contextNote: "Response 2 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
     { id: "response-3", kind: "criterion", verbatim: "Evaluate the different methods of research used in your Career Investigation.", marks: 3, contextNote: "Response 3 of 3. Original 3@3m (1 + 2 (0/2)). The two-mark component is indivisible: 0 or 2, no 1-mark partial. No fixed semantic division beyond the printed components is inferred. Complete original guidance: Use the Internet and websites/to review/assess information about different colleges, points requirements and career options. This is a useful method as it is convienient/fast way to access information you need. | Interviewing a person involved in the career. This is useful to determine the skills and qualities required and to get information on the daily duties involved in the career. | Attend open days in colleges. This is useful to determine the difference between the colleges. Speak to lecturers to get information about the courses. | Career Fairs e.g. Higher Options Conference. This allows you to get first hand/different information in the one place. | Meeting with the Guidance Counsellor, given personal advice/options available to them. | Use the local library/college propectus + valid expansion. | Work experience/shadowing. To get a first hand insight into the career.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"1m","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"2m","marks":2,"permittedMarks":[0,2]}] },
+    { id: "missing-library-expansion", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 0, contextNote: "This notice applies only to the missing valid expansion in original option 6: Use the local library/college propectus + valid expansion. The printed option and all other model responses remain above. The scheme gives three responses 3 marks each, 1 + 2 (0/2); use those existing response controls. This notice adds no marks and invents no expansion.", unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16550,10 +16574,34 @@ export const CARDS: SecCard[] = [
     id: "lcvp-2014-cl-c2a", topicId: "lcvp-link-modules-1-1", conceptId: "visited-local-business",
     section: "C", questionRef: "2014 CL Section C Q2(a)",
     stem: "A visit out to a local business is a valuable learning experience for LCVP students.",
-    questionText: "Name the business your LCVP class visited. Outline the type of work carried out by this business.",
-    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 2,
+    questionText: "Name the business your LCVP class visited.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 1,
     rows: [
-    { id: "profile-1", kind: "criterion", verbatim: "Name the business your LCVP class visited. Outline the type of work carried out by this business.", marks: 2, contextNote: "Complete profile 1 of 1. One complete name-and-outline task; 1m for naming and 1m for outline. Keep each response distinct and credit it only once. Complete original guidance: Name the business and give a brief outline of the work.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Name","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Outline","marks":1,"permittedMarks":[0,1]}] },
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "Name the business and give a brief outline of the work. 1m for naming. ", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2014 Common Level — © State Examinations Commission.",
+    id: "lcvp-2014-cl-c2a-2", topicId: "lcvp-link-modules-1-1", conceptId: "visited-local-business-work",
+    section: "C", questionRef: "2014 CL Section C Q2(a) — type of work",
+    stem: "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited.",
+    questionText: "Outline the type of work carried out by this business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 1,
+    rows: [
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "Name the business and give a brief outline of the work. 1m for outline. Use the same business named in the first ask.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16598,12 +16646,34 @@ export const CARDS: SecCard[] = [
     id: "lcvp-2014-cl-c2c", topicId: "lcvp-link-modules-1-1", conceptId: "business-visit-subject-connections",
     section: "C", questionRef: "2014 CL Section C Q2(c)",
     stem: "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited. Outline the type of work carried out by this business.",
-    questionText: "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.",
-    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 9,
+    questionText: "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 3,
     rows: [
-    { id: "profile-1", kind: "criterion", verbatim: "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.", marks: 3, contextNote: "Complete profile 1 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use in organisation/planning","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "profile-2", kind: "criterion", verbatim: "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.", marks: 3, contextNote: "Complete profile 2 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use in organisation/planning","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "profile-3", kind: "criterion", verbatim: "Name three Leaving Certificate subjects, other than the Link Modules, which you are studying. Explain how each subject was useful in the organisation/planning of this visit.", marks: 3, contextNote: "Complete profile 3 of 3. Original 3@1m naming + 3@2m (1+1) explanation. THREE subjects OTHER THAN Link Modules, each linked to the SAME visit. Mention particular knowledge/skills; no invented subjects. Keep each response distinct and credit it only once. Complete original guidance: Mention particular knowledge/skills", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Use in organisation/planning","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "Mention particular knowledge/skills. 3 @ 1m for naming the subjects. The paper requires three Leaving Certificate subjects other than Link Modules.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2014 Common Level — © State Examinations Commission.",
+    id: "lcvp-2014-cl-c2c-2", topicId: "lcvp-link-modules-1-1", conceptId: "subjects-visit-application",
+    section: "C", questionRef: "2014 CL Section C Q2(c) — use of subjects",
+    stem: "A visit out to a local business is a valuable learning experience for LCVP students. Name the business your LCVP class visited. Outline the type of work carried out by this business. Name three Leaving Certificate subjects, other than the Link Modules, which you are studying.",
+    questionText: "Explain how each subject was useful in the organisation/planning of this visit.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 6,
+    rows: [
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "Mention particular knowledge/skills. 3 @ 2m (1 + 1) for explanation. Use the same three selected subjects and the same visit.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16796,12 +16866,34 @@ export const CARDS: SecCard[] = [
     id: "lcvp-2014-cl-c4c", topicId: "lcvp-link-modules-1-3", conceptId: "mini-company-resources",
     section: "C", questionRef: "2014 CL Section C Q4(c)",
     stem: "Your LCVP class has decided to run a mini company making plant pot holders.",
-    questionText: "Identify the resources needed to run this activity and outline why each resource is needed.",
-    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 6,
+    questionText: "Identify the resources needed to run this activity",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 3,
     rows: [
-    { id: "profile-1", kind: "criterion", verbatim: "Identify the resources needed to run this activity and outline why each resource is needed.", marks: 2, contextNote: "Complete profile 1 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]}] },
-    { id: "profile-2", kind: "criterion", verbatim: "Identify the resources needed to run this activity and outline why each resource is needed.", marks: 2, contextNote: "Complete profile 2 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]}] },
-    { id: "profile-3", kind: "criterion", verbatim: "Identify the resources needed to run this activity and outline why each resource is needed.", marks: 2, contextNote: "Complete profile 3 of 3. Original three complete resource/reason profiles: 1m identifying resource + 1m explanation. Retain every nested example in all four source categories. Keep each response distinct and credit it only once. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation","marks":1,"permittedMarks":[0,1]}] },
+    { id: "responses", kind: "criterion", verbatim: "Identify the resources needed to run this activity", marks: 3, contextNote: "The scheme gives 3 @ 2m, 1m for identifying resource and 1m for explanation. This ask carries the three identifying marks. Keep three distinct resources. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2014 Common Level — © State Examinations Commission.",
+    id: "lcvp-2014-cl-c4c-2", topicId: "lcvp-link-modules-1-3", conceptId: "mini-company-resource-reasons",
+    section: "C", questionRef: "2014 CL Section C Q4(c) — reasons resources are needed",
+    stem: "Your LCVP class has decided to run a mini company making plant pot holders. Identify the resources needed to run this activity",
+    questionText: "and outline why each resource is needed.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 3,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "and outline why each resource is needed.", marks: 3, contextNote: "The scheme gives 3 @ 2m, 1m for identifying resource and 1m for explanation. This ask carries the three explanation marks. Use the same three resources identified for the mini company making plant pot holders. Complete original guidance: People Skilled team members to design, cut out and make the potholders. Others to market and sell. Teachers Parents General public | Raw Materials/Facilities Wood, glue nails, tools, template of a pot holder. These are needed to make the pot holders Tools & Equipment Specialist rooms | Finance You need money to buy your raw materials and to begin your advertising campaign | Internet and ICT Market Research to determine price etc. Flyers, posters, keep accounts, correspondence", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -16870,10 +16962,34 @@ export const CARDS: SecCard[] = [
     id: "lcvp-2014-cl-c5a", topicId: "lcvp-link-modules-1-2", conceptId: "local-voluntary-organisation",
     section: "C", questionRef: "2014 CL Section C Q5(a)",
     stem: "Voluntary groups/organisations carry out important work in local communities.",
-    questionText: "Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.",
-    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 3,
+    questionText: "Name a voluntary group/organisation that operates in your locality.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 1,
     rows: [
-    { id: "profile-1", kind: "criterion", verbatim: "Name a voluntary group/organisation that operates in your locality. Outline the type of work carried out by this voluntary group/organisation.", marks: 3, contextNote: "Complete profile 1 of 1. Original name 1m + outline 2m (0/2). Same voluntary group; no 1-mark partial for outline and no invented personal example. Keep each response distinct and credit it only once. Complete original guidance: Name of group | Outline of the type of work", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Name of group","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Outline of the type of work","marks":2,"permittedMarks":[0,2]}] },
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "Name of group 1m. ", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2014 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2014 Common Level — © State Examinations Commission.",
+    id: "lcvp-2014-cl-c5a-2", topicId: "lcvp-link-modules-1-2", conceptId: "local-voluntary-organisation-work",
+    section: "C", questionRef: "2014 CL Section C Q5(a) — type of work",
+    stem: "Voluntary groups/organisations carry out important work in local communities. Name a voluntary group/organisation that operates in your locality.",
+    questionText: "Outline the type of work carried out by this voluntary group/organisation.",
+    tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 2,
+    rows: [
+    { id: "unprinted-answer", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "Outline of the type of work 2m (0/2). Use the same voluntary group/organisation named in the first ask.", permittedMarks: [0,2], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
@@ -17020,7 +17136,7 @@ export const CARDS: SecCard[] = [
     questionText: "State and explain four personal characteristics of an entrepreneur.",
     tariffModel: {"kind":"fixed","notation":"Original 2014 marking scheme allocation."}, totalMarks: 4,
     rows: [
-    { id: "characteristics", kind: "criterion", verbatim: "State and explain four personal characteristics of an entrepreneur.", marks: 4, contextNote: "Original 4@1m each. Each must be explained for the mark. A bare trait name receives no mark; manually assess each complete distinct characteristic/explanation. All seven source traits remain; no explanation is invented. Keep each response distinct and credit it only once. Complete original guidance: Hard working | Innovative/creative | Risk taker | Communicator | Adaptible | Flexible | Self Confident", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}] },
+    { id: "characteristics", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "Original 4@1m each. Each must be explained for the mark. A bare trait name receives no mark; manually assess each complete distinct characteristic/explanation. All seven source traits remain; no explanation is invented. Keep each response distinct and credit it only once. Complete original guidance: Hard working | Innovative/creative | Risk taker | Communicator | Adaptible | Flexible | Self Confident The printed names above are retained; the scheme prints no explanation for them.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-question",
