@@ -493,6 +493,10 @@ export interface SecCardBase extends CardBase {
   // "2026 HL Section L2 Q1" files under 'L2'.
   | 'L'
   | 'L1' | 'L2' | 'L3' | 'L4'
+  // Polish's Listening Comprehension Test prints five parts, "Część A" to
+  // "Część E", each numbering its questions from 1, so the part is in the
+  // address: "2026 HL Section LA Q1" files under 'LA' (pl_listen_specs).
+  | 'LA' | 'LB' | 'LC' | 'LD' | 'LE'
   // German's two written-production sections, each a choice of (a) or (b):
   // Äußerung zum Thema and Schriftliche Produktion, cited "Section AT Q(a)".
   | 'AT' | 'SP'
