@@ -206,7 +206,8 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'spanish' && /^es-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'english' && /^english-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 
 const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
@@ -563,6 +564,13 @@ describe('every card points at the question paper it came from', () => {
           const entry = paperEntry('irish', c.year, c.level, c.paperFileid);
           const named = entry?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
           return entry?.sitting !== 'deferred' || String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
+        }
+        // English's deferred sitting is two papers, as June's is: a deferred card's paper is the one its
+        // section names in the year's deferred entry ("Deferred · Paper One" for section 1).
+        if (deferredCard(c) && c.subjectId === 'english') {
+          const deferred = deferredPaperEntry('english', c.year, c.level);
+          const named = deferred?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
+          return String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
         }
         // DCG's deferred sitting is two booklets, as June's is: a deferred
         // card's paper is the one printing its section, found as June's is.

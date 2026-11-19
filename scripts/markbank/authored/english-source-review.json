@@ -5677,6 +5677,153 @@
       "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
       "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
       "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
+    },
+    "english-2025-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Stories from the Irish Traveller Community",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "052966cf07f2a7f4f28888d34f4cadcdc25233e1bcbc2c2609e9f34473715185"
+    },
+    "english-2025-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Stories from the Irish Traveller Community",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "096bc78660a9e2dc6e13c28dc97a2d3ee6378cf130856c99f6bc752019d17a2b"
+    },
+    "english-2025-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "is an edited adaptation of the introduction by Oein DeBhairduin to his collection of",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF5 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 1. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Community on the Wall",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "46bf88bbb7d6b1ccab9744d65c44a6baf8a2df02f67e7224254ebc448ed03aa1"
+    },
+    "english-2025-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Community on the Wall",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "22cd1b40791ccbae57531cc7aeffd312dbc6f9da038ecf4c92fc4bf8f48c4759"
+    },
+    "english-2025-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "THE COMMUNITY ON THE WALL",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF7 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 2. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9a1a6dbdda99a81c708030e3dbb56f0db80775cd746e07e23a5db6277de4620a"
+    },
+    "english-2025-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "d4b06c34ed6d66e4d2a6b46fcfb7b8ff3cdf9665cf06a100eba8a495b93e3bd0"
+    },
+    "english-2025-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "is based on edited extracts from a speech delivered by Irish President, Michael D.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF10 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9c0f4ac74ed37e44e80c5e9398a9a00f3acb952d9aebf1112e9cfaef02d7ffde"
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9966af03924c38b02779b9c64b55d2437f985f4bcf2fdf4ddfebe047f3805296"
+    },
+    "english-2025-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9b05830075e10f137b3ad656a1c59fd130a7e2e78523f3a955aaaa48b6dd1ff8"
     }
   }
 }

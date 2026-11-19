@@ -3719,10 +3719,12 @@ const registerAdditiveQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
     }).filter(topicId => topicAppliesToExamYear(runtime.subjectId, TOPICS_BY_ID.get(topicId)!, year));
     if (!added.length) continue;
     const key = fileQuestionKey(runtime.subjectId, level, year, 'main', fileid, n, paperKey, lang);
-    const current = FILE_QUESTION_TOPICS.get(key) ?? [
+    // A deferred paper ("…-deferred.pdf") is numbered like June's but is not June's paper: its question
+    // starts from its own reviewed topics only, never from June's question of the same number.
+    const current = FILE_QUESTION_TOPICS.get(key) ?? (/-deferred\.pdf$/i.test(fileid) ? [] : [
       ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey)) ?? []),
       ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey, lang)) ?? []),
-    ];
+    ]);
     FILE_QUESTION_TOPICS.set(key, [...new Set([...current, ...added])]);
   }
 };

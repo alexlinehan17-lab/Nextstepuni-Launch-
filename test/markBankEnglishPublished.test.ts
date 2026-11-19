@@ -166,7 +166,8 @@ describe('English paper-by-paper publication', () => {
     expect(ALL.filter(entry => BRIDGED_PAPERS.has(
       `english-${entry.year}-${entry.level === 'higher' ? 'hl' : 'ol'}-p${entry.section}`))
       .every(entry => PUBLISHED_IDS.has(entry.id))).toBe(true);
-    expect(PUBLISHED.filter(entry => entry.year === 2025 && entry.level === 'higher')).toHaveLength(46);
+    expect(PUBLISHED.filter(entry => entry.year === 2025 && entry.level === 'higher'
+      && !entry.id.includes('-deferred-'))).toHaveLength(46);
   });
 
   it('keeps the six 2025 Paper 1 indicative lists, lifted verbatim from the scheme', () => {
@@ -330,6 +331,36 @@ describe('English published printed choices and readers', () => {
     expect(card('english-2016-ol-p1-t1-a-iii-b').sourceMaterial).toBeUndefined();
     expect(card('english-2026-ol-p2-prescribed-c-q1-a').sourceMaterial).toMatchObject({ title: 'It’s Not', pages: [17] });
     expect(card('english-2010-ol-p2-comparative-a-q1-a').stem).toContain('Before beginning, name the texts');
+  });
+});
+
+describe('English deferred sittings', () => {
+  // The SEC's deferred papers are papers of their own (CARD-STANDARD section 4): the id and the citation
+  // both say so, the scheme cited is the deferred scheme, and a task its scheme sets out no block for
+  // (finalised only for the questions attempted) is marked on that scheme's general criteria and grid.
+  const deferred = RECORDS.filter(record => record.id.includes('-deferred-'));
+  it('names every deferred card as the deferred sitting, twice', () => {
+    expect(deferred.length).toBeGreaterThanOrEqual(44);
+    for (const record of deferred) {
+      expect(record.id, record.id).toMatch(/^english-\d{4}-(?:hl|ol)-deferred-p[12]-/);
+      expect(record.questionRef.endsWith(' — Deferred sitting'), record.id).toBe(true);
+      expect(record.paperFileid.endsWith('-deferred'), record.id).toBe(true);
+      expect(record.atlas.fileid, record.id).toBe(`${record.paperFileid}.pdf`);
+      expect(card(record.id).schemeCitation, record.id).toMatch(/, deferred examination — © State Examinations Commission\.$/);
+    }
+    expect(RECORDS.filter(record => !record.id.includes('-deferred-'))
+      .some(record => record.questionRef.includes('Deferred'))).toBe(false);
+  });
+
+  it('marks the 2025 Higher composition the deferred scheme omits on the printed grid of its own scheme', () => {
+    const story = card('english-2025-hl-deferred-p1-composing-1');
+    expect([story.totalMarks, story.rubric.assessment.mode]).toEqual([100, 'discrete']);
+    expect(story.schemeCitation).toBe(
+      'SEC English Higher Level marking scheme 2025, pp.3, 13, 40, deferred examination — © State Examinations Commission.');
+    // QA(ii) is printed identically under all three texts: one card, three Atlas placements.
+    const own = RECORDS.find(record => record.id === 'english-2025-hl-deferred-p1-t1-a-ii')!;
+    expect(placesOf(own).map(place => place.n)).toEqual(['8', '10', '12']);
+    expect(card('english-2025-hl-deferred-p1-t1-a-ii').sourceMaterial).toBeUndefined();
   });
 });
 

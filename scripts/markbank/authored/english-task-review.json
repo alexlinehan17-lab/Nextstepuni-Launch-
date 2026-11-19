@@ -66604,6 +66604,1206 @@
         "notes": "One global mark ex 20 from the 2020 OL combined grid (PDF53, O1–O8), P+C and L+M read together."
       },
       "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–19. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)(b) 15 combined 9/6, Q2 “Combined Criteria ex 20” 12/8. Grid PDF53."
+    },
+    "english-2025-hl-deferred-p1-t1-a-i": {
+      "taskSha256": "243c2ffe5bcfe10c3822749ea0fff38194c1b2c147b68cce8fed5513fad7b597",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        4
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF4: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t1-a-ii": {
+      "taskSha256": "08af91f0f944a72b443444a37f9487ad88b5d8536d5a0e30119008c961d0eead",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t1-a-iii": {
+      "taskSha256": "f8b3e1c60ec86efe5ea2f5ecfeed24679cc99f675c7ef54b1a8aae7ffe4c7141",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 20,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF5: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t1-b": {
+      "taskSha256": "2609932c10d08d70a1fcc9f9c9de42c160eec9888a6b42b4ba0230ef396afc9d",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF6: “Mark ex 50 by reference to the criteria for assessment”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-t2-a-i": {
+      "taskSha256": "430bb9a612f0902602373907f5eb6c3c7fd33bc9a279fbb4429a0d20141847a5",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t2-a-ii": {
+      "taskSha256": "0baa61bb3aa17d41b41b4eb79178ea29407295ad4e659803551326b040f9f306",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF7: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t2-a-iii": {
+      "taskSha256": "fca586ab650f580285a8012f513ba84f834472a3eb22a6a11b906c6269542593",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 20,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF8: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t2-b": {
+      "taskSha256": "093f44de1489b707ee2097440a147e92c7eb99de0176ceae7e7bcda162581561",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF9: “Mark ex 50 by reference to the criteria for assessment”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-t3-a-i": {
+      "taskSha256": "25d1e5e5f864643df8e3310857cad3f176ee416193fabe5f7aae3f5033d8402e",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t3-a-ii": {
+      "taskSha256": "5320725795bffd05bd367a6ba85c8314d31deac7637439e34a6c875577b88f7d",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 15,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF10: “Mark ex 15 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t3-a-iii": {
+      "taskSha256": "a97b719d81527a5c120824c3f22d0479df366a554193a61eec09dd78ec222578",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 20,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF11: “Mark ex 20 by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p1-t3-b": {
+      "taskSha256": "342ff06f677645c744f1cc101ad9821058f60651e71f6fe48d6d9850ea0fb103",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF12: “Mark ex 50 by reference to the criteria for assessment”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-composing-1": {
+      "taskSha256": "843e234e93b4ab51028f5027dd898e71507a70f368a8b779ce8c0ec579af5e82",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        3,
+        13,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 100 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 12 paper pages viewed; the prompt and its 100-mark tariff are the paper’s (PDF8: “Each composition carries 100 marks”). Marked as every composition on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 100-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p1-composing-2": {
+      "taskSha256": "0621f50f0f467136484f27ccaeb58b4e6a684305af05324fa13af6473694195f",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        3,
+        13,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 100 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 12 paper pages viewed; the prompt and its 100-mark tariff are the paper’s (PDF8: “Each composition carries 100 marks”). Marked as every composition on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 100-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p1-composing-3": {
+      "taskSha256": "9457344586da2aa5de394880ced07243635badb80ed6807ac75340192a68bd76",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF14: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-composing-4": {
+      "taskSha256": "4cf46dc1d276d9898fb22b702003e25458c0ba2217e3171acd4106be78757bf2",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF15: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-composing-5": {
+      "taskSha256": "f59a89ecc946f49c00f9778308c4e8f8472938858ac934dab4965b377046fa76",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        3,
+        13,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 100 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 12 paper pages viewed; the prompt and its 100-mark tariff are the paper’s (PDF8: “Each composition carries 100 marks”). Marked as every composition on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 100-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p1-composing-6": {
+      "taskSha256": "8b16d876c82f668b8504dde88f541e8730868a32e8bb46a87fbfb7e4e74cf9be",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF16: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p1-composing-7": {
+      "taskSha256": "030e3032430048b5f132eacf8d9fa3d1e9d920ea31d1ca8f59e23bcc8d7f75fe",
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 100,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        13,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 12 paper pages viewed. Exact task and award verified on scheme PDF17: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-single-a-i": {
+      "taskSha256": "0da4f2eeb70eed75d3dd8774fe58ea1fbe25d7f35134733cc75171dc37649620",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-a-ii": {
+      "taskSha256": "2788f99338dc0ffa1ae3f70c70d72ad9c5e5d52dd69c986707739cc1610c2693",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-b-i": {
+      "taskSha256": "a4fc2cb2438ec30fb9efcda6bdba113e76e7b7291d404faa9701a6b84675fc85",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-b-ii": {
+      "taskSha256": "9eac5300a8f1caab1035cda78219a870b7b13fda86e1293a8f4a8cbfde2ed02e",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-c-i": {
+      "taskSha256": "2187e059d65ee99196ef350b158f7e2c8a8c6697db234a69adc620a43134733b",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF19: “Mark ex 60 … using the breakdown of marks below”, P 18 / C 18 / L 18 / M 6 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-single-c-ii": {
+      "taskSha256": "290f403daf9db0a5dcd9249ddc735aac31d287fa9552b49acf04ae45ac523f85",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-d-i": {
+      "taskSha256": "3b89a83c54e96c20dce982e818fce0dd682d3fbf1557f42ad476e62c491321b5",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF20: “Mark ex 60 … using the breakdown of marks below”, P 18 / C 18 / L 18 / M 6 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-single-d-ii": {
+      "taskSha256": "fb22a71f8df232e2add81b93e8159321914269b724e86871f765c638300b29bb",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF21: “Mark ex 60 … using the breakdown of marks below”, P 18 / C 18 / L 18 / M 6 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-single-e-i": {
+      "taskSha256": "1865972017c0e7b985244c97ddb53d9874c68fe5396bd8ef09ec5bb58142b215",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-single-e-ii": {
+      "taskSha256": "7989dbe821caa962142e692a4cc2f2d7cc4ac7dd444057d46824214f9ea22757",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 60,
+      "schemePages": [
+        3,
+        18,
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for 60 marks is printed on PDF40 (Appendix 2)."
+      },
+      "reason": "The 2025 deferred marking scheme prints no block for this task: unlike the 2022-2024 deferred schemes it carries the general PDF2 note, and it sets out task-specific guidance for only some of the paper’s tasks. All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (PDF2: SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF40. No task-specific guidance exists to quote."
+    },
+    "english-2025-hl-deferred-p2-comparative-a-q1-a": {
+      "taskSha256": "3b36dcd14d6faa0f56cb242d55e87087f0fc981a44192df34875e51fd370033f",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 30,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF23: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-a-q1-b": {
+      "taskSha256": "7ba27b7863fa49916459e15831a508b5b30876e1bf90a166e51fb353d8afe0f2",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 40,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF24: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-a-q2": {
+      "taskSha256": "7975027485453d3df100b35547f23a7c8144cb8414b2c39f5dc89f3780b7b577",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 70,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF25: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-comparative-b-q1-a": {
+      "taskSha256": "544bc84ebddf14e272999fc55d1e6b5053555fca6519975c9cb6205d6008078a",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF26: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-b-q1-b": {
+      "taskSha256": "a1416be8b47635b123664615964322039e211160344dda49f1f9ae52555c54cc",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 40,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF27: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-b-q2": {
+      "taskSha256": "1930de0ce708a32a75513bd0d22eab0480b632fcbc0ab902398ed11fdba36a9b",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 70,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF28: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-comparative-c-q1-a": {
+      "taskSha256": "9848c3fe30c5c5bd491b82339d933b4056b87c844e968e941b15d246e31361cb",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 30,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF29: “Mark ex 30 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-c-q1-b": {
+      "taskSha256": "140067e2780be8e0c977e2e2f54cd1090d23c2cc2326104addc812ab1ed30849",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 40,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF30: “Mark ex 40 by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF40); the P/C/L/M lines describe the criteria and carry no marks."
+    },
+    "english-2025-hl-deferred-p2-comparative-c-q2": {
+      "taskSha256": "4b613f49777574975927b0ae0cf59b9b6c031f968b5063b9110371743254130e",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 70,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF31: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-a": {
+      "taskSha256": "bbbb4456fc2fd5cd02d61f0ae0fdf52bf1b1dc999002cde77b9664062ffa3b24",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF32: “Mark ex 10 by reference to the criteria for assessment” (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-b": {
+      "taskSha256": "846d833d456e0c258e54186483fc3f9388ec43935590b832f864e02f1592334a",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF32: “Mark ex 10 by reference to the criteria for assessment” (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p2-unseen-q2": {
+      "taskSha256": "f768aa638ae7d25ecd80f06fdfd5da1bf0aecfc3f16236b947fabad6e5b05368",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 20,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF40); no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF33: “Mark ex 20 by reference to the criteria for assessment” (combined grid PDF40). No invented splits or submarks."
+    },
+    "english-2025-hl-deferred-p2-prescribed-1": {
+      "taskSha256": "98bd1afca4a4b930431826de776c2611d3bd4cc4f2b0e6ada541abf0397f7509",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF34: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-prescribed-2": {
+      "taskSha256": "afaed655046fb092b0ec9065ecafab7406b10f87be9def156cc7e99081b3f711",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF35: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-prescribed-3": {
+      "taskSha256": "35f7f4589044913e8b1f736701c09a6a3ced22bd1f77c0e94a9de655f45ed3bb",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF36: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-prescribed-4": {
+      "taskSha256": "700ee1cf088b4a23bcecd7eab7e1e292608cf58ff0e5f9c5ea830da1af26ef46",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF37: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
+    },
+    "english-2025-hl-deferred-p2-prescribed-5": {
+      "taskSha256": "d02c33a0d26beda9793016dd89885b22a3d8469ea9e7fe95e0c560e3ff03c0bf",
+      "paperSha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+      "schemeSha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+      "totalMarks": 50,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        18,
+        22,
+        39,
+        40,
+        41
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2025 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF40."
+      },
+      "reason": "All 8 paper pages viewed. Exact task and award verified on scheme PDF38: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF40)."
     }
   }
 }

@@ -3962,6 +3962,159 @@
       "source": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
       "sourceSha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608"
     },
+    "english-2022-ol-deferred-p2-prescribed-a": {
+      "topicId": "english-11-30",
+      "title": "Valentine",
+      "canonicalLabel": "Carol Ann Duffy",
+      "observedHeading": "Poetry A · Valentine",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2022-ol-deferred-p2-prescribed-b": {
+      "topicId": "english-11-23",
+      "title": "An Irish Airman Foresees His Death",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Poetry B · An Irish Airman Foresees His Death",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2022-ol-deferred-p2-prescribed-c": {
+      "topicId": "english-11-0",
+      "title": "Filling Station",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry C · Filling Station",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2022-ol-deferred-p2-prescribed-d": {
+      "topicId": "english-11-66",
+      "title": "Interlude",
+      "canonicalLabel": "Caitríona O'Reilly",
+      "observedHeading": "Poetry D · Interlude",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2022-ol-deferred-p2-prescribed-e": {
+      "topicId": "english-11-67",
+      "title": "Frogs",
+      "canonicalLabel": "Randolph Healy",
+      "observedHeading": "Poetry E · Frogs",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2022-ol-deferred-p2-prescribed-f": {
+      "topicId": "english-11-11",
+      "title": "On First Looking Into Chapman’s Homer",
+      "canonicalLabel": "John Keats",
+      "observedHeading": "Poetry F · On First Looking Into Chapman’s Homer",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2022-ol-deferred-p2-single-a": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text A · By The Bog Of Cats",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-b": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text B · All The Light We Cannot See",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-c": {
+      "topicId": "english-12-18",
+      "title": "Room",
+      "canonicalLabel": "Room (Emma Donoghue)",
+      "observedHeading": "Single Text C · Room",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-d": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text D · Philadelphia, Here I Come!",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-e": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text E · A Doll’s House",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-f": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text F · Othello",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-g": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text G · Frankenstein",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-h": {
+      "topicId": "english-12-24",
+      "title": "The Lauras",
+      "canonicalLabel": "The Lauras (Sara Taylor)",
+      "observedHeading": "Single Text H · The Lauras",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
+    "english-2022-ol-deferred-p2-single-i": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text I · The Picture Of Dorian Gray",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b"
+    },
     "english-2023-hl-deferred-p2-prescribed-1": {
       "topicId": "english-11-0",
       "title": "Elizabeth Bishop",
@@ -4151,6 +4304,159 @@
       "paperPage": 3,
       "source": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
       "sourceSha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6"
+    },
+    "english-2024-ol-deferred-p2-prescribed-a": {
+      "topicId": "english-11-18",
+      "title": "Street",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Poetry A · Street",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2024-ol-deferred-p2-prescribed-b": {
+      "topicId": "english-11-68",
+      "title": "Extract From They Clapped",
+      "canonicalLabel": "Nikki Giovanni",
+      "observedHeading": "Poetry B · Extract From They Clapped",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2024-ol-deferred-p2-prescribed-c": {
+      "topicId": "english-11-69",
+      "title": "New Liberty Hall",
+      "canonicalLabel": "Austin Clarke",
+      "observedHeading": "Poetry C · New Liberty Hall",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2024-ol-deferred-p2-prescribed-d": {
+      "topicId": "english-11-16",
+      "title": "Buying Winkles",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Poetry D · Buying Winkles",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2024-ol-deferred-p2-prescribed-e": {
+      "topicId": "english-11-50",
+      "title": "The Thought-Fox",
+      "canonicalLabel": "Ted Hughes",
+      "observedHeading": "Poetry E · The Thought-Fox",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2024-ol-deferred-p2-prescribed-f": {
+      "topicId": "english-11-9",
+      "title": "Inversnaid",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Poetry F · Inversnaid",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2024-ol-deferred-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-b": {
+      "topicId": "english-12-31",
+      "title": "Silas Marner",
+      "canonicalLabel": "Silas Marner (George Eliot)",
+      "observedHeading": "Single Text B · Silas Marner",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-c": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text C · Philadelphia, Here I Come!",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-d": {
+      "topicId": "english-12-7",
+      "title": "A Raisin in the Sun",
+      "canonicalLabel": "A Raisin in the Sun (Lorraine Hansberry)",
+      "observedHeading": "Single Text D · A Raisin In The Sun",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-e": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text E · The Crucible",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-f": {
+      "topicId": "english-12-20",
+      "title": "The Cove",
+      "canonicalLabel": "The Cove (Ron Rash)",
+      "observedHeading": "Single Text F · The Cove",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-g": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text G · Hamlet",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-h": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text H · Frankenstein",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
+    },
+    "english-2024-ol-deferred-p2-single-i": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text I · The Picture Of Dorian Gray",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee"
     },
     "english-2025-hl-deferred-p2-prescribed-1": {
       "topicId": "english-11-21",

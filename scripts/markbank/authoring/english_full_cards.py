@@ -646,9 +646,10 @@ def extract_record(record):
                 scopes[parent['n']] = scoped
             scoped = scopes[parent['n']]
             card['schemePage'], card['schemeTraceScore'] = trace_scheme(record, card['questionText'], scoped)
-            if card['schemePage'] is None and parent.get('mode') != 'pagejump':
-                raise AssertionError('no marking-scheme trace inside its own scheme block: ' + card['id'])
-            card['schemeAbsent'] = parent.get('mode') == 'pagejump' and record.get('sitting') == 'deferred'
+            # Only a deferred task can trace to nothing (trace_scheme raises for June's): either its whole block is
+            # absent (a pagejump map entry) or its option's block omits this part. Both are reviewed as absent.
+            card['schemeAbsent'] = record.get('sitting') == 'deferred' and \
+                (parent.get('mode') == 'pagejump' or card['schemePage'] is None)
             for task in split_marked_tasks(card, scoped, record):
                 source = reviewed_source(task['id'], task['questionText'], task.get('sourceMaterial'))
                 if source:
@@ -659,6 +660,8 @@ def extract_record(record):
                     task['additionalSourceMaterials'] = [source_from_attachment(a, task['id']) for a in additional]
                 apply_source_exclusion(task, record)
                 apply_reviewed_context(task, record)
+                if record.get('sitting') == 'deferred' and task.get('schemePage') is None:
+                    task['schemeAbsent'] = True
                 leaf_tasks.append(task)
         if record.get('sitting') == 'deferred':
             # A deferred sitting's citation says so after the June form (CARD-STANDARD section 4):

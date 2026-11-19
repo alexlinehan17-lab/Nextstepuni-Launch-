@@ -78,6 +78,7 @@ describe('Paper Trail syllabus history', () => {
 const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
   '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf'];
 const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '2025|LC001ALP200IV-deferred.pdf', '2025|LC001GLP100IV-deferred.pdf', '2025|LC001GLP200IV-deferred.pdf', '2024|LC001ALP100IV-deferred.pdf', '2024|LC001ALP200IV-deferred.pdf', '2024|LC001GLP100IV-deferred.pdf', '2024|LC001GLP200IV-deferred.pdf', '2023|LC001ALP100IV-deferred.pdf', '2023|LC001ALP200IV-deferred.pdf', '2023|LC001GLP100IV-deferred.pdf', '2023|LC001GLP200IV-deferred.pdf', '2022|LC001GLP100IV-deferred.pdf', '2022|LC001GLP200IV-deferred.pdf', '2022|LC001ALP100IV-deferred.pdf', '2022|LC001ALP200IV-deferred.pdf'];
+const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2025|LC002ALP200EV-deferred.pdf'];
 const ADMITTED_DEFERRED = new Set([
   'economics|2022|LC034ALP000EV-deferred.pdf',
   'history|2022|LC004ALP000EV-deferred.pdf',
@@ -94,6 +95,8 @@ const ADMITTED_DEFERRED = new Set([
   // German 2022 Higher, the deferred sitting (2026-11-13): written and listening.
   'german|2022|LC011ALP000BV-deferred.pdf',
   'german|2022|LC011ALPA00BV-deferred.pdf',
+  // English's deferred sittings, published paper by paper (english_publish.py, from 2026-11-19).
+  ...ENGLISH_DEFERRED_PAPERS.map(paper => `english|${paper}`),
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

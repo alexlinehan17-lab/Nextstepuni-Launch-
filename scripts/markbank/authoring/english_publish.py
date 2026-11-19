@@ -213,7 +213,9 @@ def legacy_additional_sources(bridged=frozenset()):
     aggregated = {}
     for task_id, attachment in sorted(attachments.items()):
         extra = attachment.get('additionalSources') or []
-        paper_id = re.match(r'^(english-\d{4}-(?:hl|ol)-p[12])-', task_id).group(1)
+        # A deferred task ("english-2025-hl-deferred-p1-...") is never a legacy paper's.
+        match = re.match(r'^(english-\d{4}-(?:hl|ol)-p[12])-', task_id)
+        paper_id = match.group(1) if match else None
         if not extra or paper_id not in papers or paper_id in bridged:
             continue
         parent = next((cid for cid in legacy_ids if task_id == cid or task_id.startswith(cid + '-')), None)

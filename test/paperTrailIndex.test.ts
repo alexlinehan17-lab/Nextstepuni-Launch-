@@ -9,6 +9,8 @@
  * jcToolVisibility.test.ts instead.
  */
 
+import { existsSync } from 'fs';
+import { resolve } from 'path';
 import { describe, it, expect } from 'vitest';
 import { CURRICULUM } from '../curriculum';
 import {
@@ -191,9 +193,13 @@ describe('Paper Trail sittings', () => {
         expect(item.label, where).toMatch(/^Deferred · /);
         expect(item.doc.f, where).toMatch(/-deferred\.(pdf|jpg)$/);
         if (item.scheme) expect(item.scheme.f, where).toMatch(/-deferred\.pdf$/);
-        // No answer map has been built for a deferred paper; a June sidecar
-        // keyed by the shared SEC fileid must never light it.
-        expect(item.answers, where).toBeUndefined();
+        // A June sidecar keyed by the shared SEC fileid must never light a deferred
+        // paper: only a reviewed map of the deferred paper itself, keyed by its own
+        // "…-deferred.pdf" id (English's, from 2026-11-19), may set the flag.
+        if (item.answers !== undefined) {
+          expect(existsSync(resolve(__dirname, `../scripts/paper-trail/answers/${entry.year}/${item.doc.f}.json`)), where)
+            .toBe(true);
+        }
       } else {
         expect(item.doc.f, where).not.toMatch(/-deferred\./);
         if (item.scheme) expect(item.scheme.f, where).not.toMatch(/-deferred\./);

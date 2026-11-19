@@ -2942,7 +2942,11 @@ describe('Mark Bank card preservation', () => {
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(2_685);
+    // 2,685 June cards; the deferred sittings (from 2026-11-19, "english-<year>-<lv>-deferred-…") are new ids
+    // on top, never a June id.
+    expect([...published].filter(id => !id.includes('-deferred-'))).toHaveLength(2_685);
+    expect([...published].filter(id => id.includes('-deferred-'))
+      .every(id => /^english-20(?:22|23|24|25)-(?:hl|ol)-deferred-p[12]-/.test(id))).toBe(true);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -2972,14 +2976,18 @@ describe('Mark Bank card preservation', () => {
     }
     const papers = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers].map(paper => paper.paperId);
     expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
-    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary,
-    // none reusing a frozen ID or an alias key.
-    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level)).length;
+    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary June cards,
+    // none reusing a frozen ID or an alias key; and, from 2026-11-19, the deferred sittings' new ids
+    // (2025 Higher: 44).
+    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level) && !id.includes('-deferred-')).length;
     const aliased = (level: string) => englishAliasIds.filter(id => id.includes(level)).length;
     expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
+    const deferredAdded = (level: string) => [...englishAdditionIds]
+      .filter(id => id.includes(`${level}deferred-`)).length;
+    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([44, 0]);
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
-    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-'));
-    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-'));
+    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-') + deferredAdded('-hl-'));
+    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-') + deferredAdded('-ol-'));
   });
 
   it('adds the reviewed Biology sittings on top of the frozen 2021-2025 set without replacing an id', () => {

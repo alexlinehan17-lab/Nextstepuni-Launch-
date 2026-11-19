@@ -343,6 +343,9 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'english|2025|LC002ALP200EV.pdf',
   'english|2025|LC002GLP100EV.pdf',
   'english|2025|LC002GLP200EV.pdf',
+  // English deferred sittings, published paper by paper (english_publish.py): reviewed deferred answer maps.
+  'english|2025|LC002ALP100EV-deferred.pdf',
+  'english|2025|LC002ALP200EV-deferred.pdf',
   'english|2026|LC002ALP100EV.pdf',
   'english|2026|LC002ALP200EV.pdf',
   'english|2026|LC002GLP100EV.pdf',

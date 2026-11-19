@@ -146,6 +146,7 @@ def apply(key, review, check):
     # 2. Readers (source attachments) and printed duplicates, before tasks are extracted.
     extracted = extract(records)
     attachments = read('english-source-review.json')
+    previous = dict(attachments['attachments'])
     for tid in [t for t in attachments['attachments'] if t.startswith(key_prefix(key))]:
         del attachments['attachments'][tid]
     for tid, decision in review.get('sources', {}).items():
@@ -155,7 +156,9 @@ def apply(key, review, check):
         entry = dict(decision)
         if decision['kind'] == 'not-required':
             card = next(c for c in parsed if c['id'] == tid or tid.startswith(c['id'] + '-'))
-            default = card['sourceMaterial']
+            # The reader the exclusion removes: the card's default, or (once excluded, the leaf shares the
+            # card's dict) the reader the previous run recorded, which extraction re-checks against the default.
+            default = card.get('sourceMaterial') or previous[tid]['excludedSource']
             entry = {'kind': 'not-required',
                      'excludedSource': {k: default[k] for k in ('label', 'title', 'pages')},
                      'paperSha256': by_paper[paper_id]['questionPaper']['sha256'],
@@ -200,21 +203,24 @@ def apply(key, review, check):
             allocation = override.get('allocation', default.get('allocation'))
             parent = parents[task['atlasParent']]
             if task.get('schemeAbsent'):
-                pages = review['criteria']['absentPages'][paper_id[-2:]]
-                reason = DEFERRED_NOTE + ' ' + review['criteria']['absentReason'][kind]
+                pages = review['criteria']['absentPages'][kind]
+                reason = review['criteria'].get('absentPreamble', DEFERRED_NOTE) + ' ' + \
+                    review['criteria']['absentReason'][kind].format(marks=task['totalMarks'])
             else:
-                pages = override.get('schemePages') or sorted({s['p'] for s in parent.get('schemeRegion') or parent['region']})
+                # The page the task's own wording is traced to inside its scheme block.
+                pages = override.get('schemePages') or [task['schemePage']]
                 printed = scheme_split(scheme, parent.get('schemeRegion') or parent['region']) \
                     if mode == 'discrete' or kind not in ('comparative-q1', 'qa', 'unseen') else None
                 if mode == 'discrete' and len(tasks_in_block(tasks, task)) == 1 and printed and printed != allocation:
                     raise ValueError(f"{task['id']}: the scheme prints {printed}, the review says {allocation}")
                 if mode != 'discrete' and printed and len(tasks_in_block(tasks, task)) == 1:
                     raise ValueError(f"{task['id']}: the scheme prints a split {printed} for a combined task")
-                reason = review['criteria']['presentReason'][kind]
+                reason = review['criteria']['presentReason'][kind].format(marks=task['totalMarks'], page=pages[0])
             criteria = {'mode': mode}
             if mode == 'discrete':
                 criteria['allocation'] = allocation
-            criteria['notes'] = (override.get('notes') or default['notes'])
+            notes = override.get('notes') or (default['absentNotes'] if task.get('schemeAbsent') else default['notes'])
+            criteria['notes'] = notes.format(marks=task['totalMarks'])
             task_reviews['tasks'][task['id']] = {
                 'taskSha256': task_fingerprint(task),
                 'paperSha256': record['questionPaper']['sha256'], 'schemeSha256': record['markingScheme']['sha256'],
@@ -223,6 +229,8 @@ def apply(key, review, check):
                 'criteria': criteria, 'reason': reason}
             decision = review.get('selection', {}).get(task['id'])
             if decision:
+                # "{page}" in a reason is the scheme page the task's wording traces to.
+                decision = {**decision, 'reason': decision['reason'].format(page=task.get('schemePage'))}
                 entry = {'questionSha256': fingerprint(task['questionText']), **decision}
                 english_choices.expand(task, entry)
                 selections['decisions'][task['id']] = entry
@@ -236,7 +244,7 @@ def apply(key, review, check):
         source_pages = set(review['sourcePages'].get(paper_id[-2:], []))
         last_page = record['questionPaper']['pages']
         for hit in hits:
-            local = hit['id'][len(paper_id) + 1:]
+            local = hit['id'][len(key_prefix(key)):]
             decision = overrides.get(local) or classify(hit, tasks, suggested_tasks, source_pages, last_page)
             if not decision:
                 raise ValueError(f'{hit["id"]}: unclassified raw directive {hit["text"]!r}')
@@ -292,22 +300,29 @@ def norm(text):
 
 def classify(hit, tasks, suggested_tasks, source_pages, last_page):
     text = hit['text'].strip()
+    if re.fullmatch(r'(?i)or', text):
+        # A standalone OR between printed alternatives, each its own task.
+        return {'kind': 'exam-instruction'}
     suggested = suggested_tasks(hit, tasks)
     if suggested:
         return {'kind': 'tasks', 'taskIds': suggested}
-    bare = norm(re.sub(r'^\s*(?:[1-9]\.|\((?:[a-c]|i{1,3}|iv)\))\s*', '', text))
+    bare = text
+    while True:
+        stripped = re.sub(r'^\s*(?:[1-9]\.|\((?:[a-c]|i{1,3}|iv)\))\s*', '', bare)
+        if stripped == bare:
+            break
+        bare = stripped
+    bare = norm(bare)
     inside = [t for t in tasks if any(region['p'] == hit['page'] and region['r'][1] - .01 <= hit['y'] < region['r'][3]
                                       for region in t.get('paperRegion', []))]
-    holders = [t['id'] for t in inside if bare and bare in norm(t['rawQuestionText'])]
+    holders = [t['id'] for t in inside if len(bare.split()) >= 2 and f' {bare} ' in f" {norm(t['rawQuestionText'])} "]
     if holders:
         return {'kind': 'tasks', 'taskIds': holders}
-    if re.fullmatch(r'(?i)or', text):
-        return {'kind': 'exam-instruction'}
     if hit['page'] == last_page and re.search(r'(?i)copyright|examination paper|third.party|authoris|section 53|'
                                                r'commission does not|\(2000\)', hit['context']):
         return {'kind': 'non-selection'}
-    if hit['page'] == 1 or re.match(r'(?i)^(?:candidates (?:must|should|may)|answer|write a composition on any one|'
-                                    r'read the following poem|you must answer|[A-C]\s+[A-Z ,]+$)', text):
+    if hit['page'] == 1 or re.match(r'(?i)^(?:candidates\s+(?:must|should|may)|answer|write\s+a\s+composition\s+on\s+any|'
+                                    r'read\s+the\s+following\s+poem|you\s+must\s+answer|[A-C]\s+[A-Z ,]+$)', text):
         return {'kind': 'exam-instruction'}
     if hit['page'] in source_pages and not inside:
         return {'kind': 'source-prose'}

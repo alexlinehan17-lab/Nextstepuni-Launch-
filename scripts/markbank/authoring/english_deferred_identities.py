@@ -32,6 +32,19 @@ import english_p2_ol as p2ol  # noqa: E402
 
 PATH = ROOT / 'scripts/markbank/authored/english-exam-identities.json'
 
+# The byline printed under each deferred Ordinary poem (read on the page; each must occur in its text layer),
+# and the curriculum name of a poet the paper prints differently ("Carol Anne Duffy" is the SEC's spelling).
+BYLINES = {
+    ('english-2022-ol-deferred-p2', 'a'): 'Carol Anne Duffy', ('english-2022-ol-deferred-p2', 'b'): 'W.B Yeats',
+    ('english-2022-ol-deferred-p2', 'c'): 'Elizabeth Bishop', ('english-2022-ol-deferred-p2', 'd'): 'Caitríona O’Reilly',
+    ('english-2022-ol-deferred-p2', 'e'): 'Randolph Healy', ('english-2022-ol-deferred-p2', 'f'): 'John Keats',
+    ('english-2024-ol-deferred-p2', 'a'): 'E. Ní Chuilleanáin', ('english-2024-ol-deferred-p2', 'b'): 'Nikki Giovanni',
+    ('english-2024-ol-deferred-p2', 'c'): 'Austin Clarke', ('english-2024-ol-deferred-p2', 'd'): 'Paula Meehan',
+    ('english-2024-ol-deferred-p2', 'e'): 'Ted Hughes', ('english-2024-ol-deferred-p2', 'f'): 'Gerard Manley Hopkins',
+}
+CURRICULUM_NAME = {'Carol Anne Duffy': 'Carol Ann Duffy', 'E. Ní Chuilleanáin': 'Eiléan Ní Chuilleanáin',
+                   'Caitríona O’Reilly': "Caitríona O'Reilly"}
+
 
 def curriculum_names():
     text = (ROOT / 'curriculum.ts').read_text()
@@ -102,10 +115,14 @@ def identities_for(record, texts, poets, names):
                 letter = re.search(r'Poetry ([A-F])', block.label).group(1).lower()
                 key = f"{record['id']}-prescribed-{letter}"
                 text = doc[block.p_page].get_text()
-                byline = next((name for name in poets.values() if same_in(name, text)), None)
-                if not byline:
-                    raise ValueError(f'{key}: no curriculum poet printed under {block.label!r} on PDF{block.p_page + 1}')
-                node = next(n for n, name in names.items() if name == byline)
+                printed = BYLINES[(record['id'], letter)]
+                if printed not in text:
+                    raise ValueError(f'{key}: byline {printed!r} is not printed on PDF{block.p_page + 1}')
+                byline = CURRICULUM_NAME.get(printed, printed)
+                node = next((n for n, name in names.items() if same(name, byline)), None)
+                if not node:
+                    raise ValueError(f'{key}: no curriculum poet {byline!r}')
+                byline = names[node]
                 out[key] = {'topicId': node, 'title': block.label.split(' · ')[1], 'canonicalLabel': byline, **base,
                             'sourcePages': [block.p_page + 1]}
     return out

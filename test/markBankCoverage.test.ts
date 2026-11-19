@@ -209,7 +209,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
           // papers are atomic, so a part label may follow the question and a
           // finite route appends its label after " · ".
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?$/.test(ref);
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?(?: — Deferred sitting)?$/.test(ref);
         }
         if (subject === 'irish') {
           // Generated 2021–2025 corpus plus the reviewed components: listening

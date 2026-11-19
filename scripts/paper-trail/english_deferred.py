@@ -55,7 +55,6 @@ import english_p2_ol as p2ol  # noqa: E402
 REPO = os.path.dirname(os.path.dirname(HERE))
 CORPUS = os.path.join(REPO, "paper-trail-corpus")
 ANSWERS = os.path.join(HERE, "answers")
-ANCHORS = os.path.join(REPO, "public", "paper-anchors")
 COPYRIGHT = "© State Examinations Commission"
 
 # Every English deferred sitting the SEC archive holds (paperTrailData.ts).
@@ -405,19 +404,6 @@ def build_p2(year, level):
     return sidecar, absent
 
 
-def anchors_of(sidecar):
-    """The paper-side-only map the Topic Atlas reads (PAPER-ANCHORS.md)."""
-    q = []
-    for e in sorted(sidecar["q"], key=lambda e: int(e["n"])):
-        a = {"n": e["n"], "pP": e["pP"], "pY": e["pY"], "region": [{"p": 1}], "mode": "pagejump", "conf": 0.5}
-        for key in ("label", "printOrder", "paperRegion"):
-            if key in e:
-                a[key] = e[key]
-        q.append(a)
-    return {"v": 1, "paperFileid": sidecar["paperFileid"], "schemeFileid": "", "component": sidecar["component"],
-            "band": [1, 1], "copyright": COPYRIGHT, "paperOnly": 1, "q": q}
-
-
 def dump(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
@@ -435,7 +421,9 @@ def main():
             report.append({"year": year, "level": level, "component": sidecar["component"],
                            "tasks": len(sidecar["q"]), "schemeAbsent": absent})
             print(f"{tag}: {len(sidecar['q'])} blocks; scheme sets out no block for {absent or 'none'}")
-            for directory, value in ((ANSWERS, sidecar), (ANCHORS, anchors_of(sidecar))):
+            # June's English papers are served by these reviewed maps hosted byte-identically in
+            # public/paper-answers once a paper is published (english_publish.py), never by paper-anchors.
+            for directory, value in ((ANSWERS, sidecar),):
                 path = os.path.join(directory, str(year), sidecar["paperFileid"] + ".json")
                 text = dump(value)
                 if args.check:
