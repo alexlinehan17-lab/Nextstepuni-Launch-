@@ -47,7 +47,9 @@ LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 OPTION = re.compile(r'^\(\s*([a-e])\s*\)\s*(.*)$')
 # The scheme's options: "(a) a house for sale" (2024-2026) or "a) a hotel" (2023).
 KEY_OPTION = re.compile(r'^\(?\s*([a-e])\s*\)\s*(.*)$')
-DIALOGUE = re.compile(r'^Dialogue\s+(\d)\s*\.?\s*$', re.I)
+# "Dialogue 3." alone, or with its title on the same line ("Dialogue 3.
+# Interview with Paola Lombardi", 2020 Higher).
+DIALOGUE = re.compile(r'^Dialogue\s+(\d)\s*(?:\.\s*(.*))?$', re.I)
 
 
 def recording(year):
@@ -79,6 +81,18 @@ class Booklet:
                 s = IP._clean(text)
                 if not s or IP.FURNITURE.match(s):
                     continue
+                # The page footer "Iodáilis ‐ Ardleibhéal" and the back cover
+                # "Higher level Italian Monday 24 June 12:10 – 12:50" (2021-
+                # 2024): read after a question they would join its text.
+                if re.match(r'^(?:Iodáilis\s*[‐\-–]\s*(?:Ard|Gnáth)leibh|(?:[‐\-–]\s*)?(?:Higher|Ordinary) level Italian\b)', s, re.I):
+                    continue
+                # The pages after the last dialogue (a notes page, a blank
+                # page, the back cover) end the booklet: read on, their lines
+                # would join the last question.
+                if section == 'B' and dialogue == 3 and self.dialogues[3]['asks'] and re.match(
+                        r'^(?:You may use this page|Leathanach Bán|Blank Page|Leaving Certificate Examination\s*[‐\-–]'
+                        r'|Scrúdú na hArdteistiméireachta\s*[‐\-–]|(?:[‐\-–]\s*)?(?:Higher|Ordinary) level$)', s, re.I):
+                    return
                 # A row the column finder could not split reads as 'L'; the
                 # English column is the right half of the sheet.
                 if _x >= 0.45 * width:
@@ -98,6 +112,12 @@ class Booklet:
                     # question, without its "4.", on the right: the number
                     # opens that question.
                     tail = re.search(r'\s(\d{1,2})\s*\.\s*$', s)
+                    # The same in Section A (2018 Ordinary 6. and 8.).
+                    if tail and section == 'A' and int(tail.group(1)) == max(self.section_a or [0]) + 1:
+                        n = int(tail.group(1))
+                        self.section_a[n] = {'stem': [], 'options': [], 'page': pno + 1}
+                        cur = self.section_a[n]['stem']
+                        continue
                     if tail and section == 'B' and dialogue is not None:
                         n = int(tail.group(1))
                         if n == max(self.dialogues[dialogue]['asks'] or [0]) + 1:
@@ -121,7 +141,7 @@ class Booklet:
                 m = DIALOGUE.match(s)
                 if m and section == 'B':
                     dialogue = int(m.group(1))
-                    self.dialogues[dialogue] = {'title': [], 'asks': {}}
+                    self.dialogues[dialogue] = {'title': [m.group(2)] if m.group(2) else [], 'asks': {}}
                     cur = self.dialogues[dialogue]['title']
                     continue
                 m = IP.NUM_MARK.match(s)
@@ -160,6 +180,20 @@ class Booklet:
                     cur.append(s)
 
 
+def _join(spans):
+    """A row's text: spans in reading order, a space between two spans unless
+    the second abuts the first ("A" + "n earthquake", 2018 Higher)."""
+    out, prev = '', None
+    for sp in sorted(spans, key=lambda sp: sp['bbox'][0]):
+        t = sp['text'].strip()
+        if prev is not None:
+            out += '' if sp['bbox'][0] - prev['bbox'][2] < 0.6 and not sp['text'][:1].isspace() \
+                and not prev['text'][-1:].isspace() else ' '
+        out += t
+        prev = sp
+    return out
+
+
 def section_a_key(year, level):
     """(marks a question, {question: (letter, scheme words or None)}) for Section A.
 
@@ -176,10 +210,23 @@ def section_a_key(year, level):
     started = False
     with pymupdf.open(path) as doc:
         for page in doc:
+            # An option's letter may be a line of its own with its words on
+            # the same baseline as the next line ("(a)" and "The North", 2018
+            # Higher): that pair is one row. Nothing else is joined.
+            rows = []
             for block in page.get_text('dict')['blocks']:
                 for line in block.get('lines', []):
                     spans = [sp for sp in line['spans'] if sp['text'].strip()]
-                    text = ' '.join(sp['text'].strip() for sp in spans)
+                    if not spans:
+                        continue
+                    y = round(line['bbox'][3], 1)
+                    if (rows and abs(rows[-1][0] - y) < 2
+                            and re.fullmatch(r'\(\s*[a-e]\s*\)', _join(rows[-1][1]))):
+                        rows[-1][1].extend(spans)
+                    else:
+                        rows.append([y, spans])
+            for _y, spans in rows:
+                    text = _join(spans)
                     if not started:
                         started = bool(re.match(r'LISTENING\s+COMPREHENSION', text, re.I))
                         if not started:
@@ -203,7 +250,12 @@ def section_a_key(year, level):
                     if m and q is not None:
                         body = [sp for sp in spans
                                 if not re.fullmatch(r'\(?\s*[a-e]\s*\)', sp['text'].strip())]
-                        if body and all('Bold' in sp['font'] for sp in body):
+                        # The option's words are bold: wholly, or a word set
+                        # bold after its first letter ("A" + "n earthquake",
+                        # 2018 Higher) - most of the words' letters bold.
+                        nb = sum(len(sp['text'].strip()) for sp in body if 'Bold' in sp['font'])
+                        nall = sum(len(sp['text'].strip()) for sp in body)
+                        if body and nb * 2 > nall:
                             bold.setdefault(q, []).append(
                                 (m.group(1), ' '.join(m.group(2).split())))
     return per, key
@@ -513,6 +565,11 @@ OVERRIDES = {
         'claimMax': 2, 'perOption': 4,
         'options': ['Emotional/nervous', 'a little nervous/excited', 'worried'],
         'note': ['(any two elements)', '(If just one emotion is given and if another reason also given – allow an additional 1 mark only. Reasons - It’s the first time /Living together (is not easy)/(Facing) other people’s habits/ Language barriers)']},
+    # "4 marks" printed on the line ABOVE "8. His family (1) for at least
+    # (1m) two (1) weeks(1) (1+1+1+1)", so the reader never prices the ask.
+    (2018, 'hl', 3, 8): {'total': 4, 'points': [('His family', 1), ('for at least', 1),
+                                                ('two', 1), ('weeks', 1)],
+                         'note': ['His family (1) for at least (1m) two (1) weeks(1) (1+1+1+1)']},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',

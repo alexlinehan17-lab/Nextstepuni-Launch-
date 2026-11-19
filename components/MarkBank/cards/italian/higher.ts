@@ -5530,7 +5530,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Paolo’s job.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He travels a lot/Travels around Italy","They call him from everywhere in Italy","He participates in workshops/conferences","He goes to primary and secondary schools","He helps young people to understand the benefits of sport","He helps teachers to understand the benefit of sport"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme prints this line as \"7. Any two of: 4 (2+2) marks\", an SEC misprint; it is read as \"7. Any two of: 4 marks (2+2)\", which the printed total of its section confirms.", group: {"claimMax":2,"perOption":2,"options":["He travels a lot/Travels around Italy","They call him from everywhere in Italy","He participates in workshops/conferences","He goes to primary and secondary schools","He helps young people to understand the benefits of sport","He helps teachers to understand the benefit of sport"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5899,7 +5899,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2026 Higher Level, pp.26-33 — © State Examinations Commission.",
     id: "it-2026-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
     section: "C", questionRef: "2026 HL Section C Q3(a)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nSiete da poco tornati da un corso di due mesi di lingua full immersion in Italia presso una scuola internazionale di Firenze. All’inizio andava tutto bene, ma dopo una settimana sono emersi problemi sia per quanto riguarda i corsi che le strutture di alloggio.\nScrivete una e‐mail o lettera di reclamo al Direttore della scuola dove avete studiato, spiegate chi siete, una piccola descrizione della vostra esperienza in Italia, menzionate un motivo per cui non siete rimasti soddisfatti della scuola e un problema che avete trovato con l’alloggio e che cosa si propone la scuola a riguardo.\nScrivete una e‐mail o lettera a:\nDirettore c/o Scuola Italiana di Firenze, NÓ / OR",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nSiete da poco tornati da un corso di due mesi di lingua full immersion in Italia presso una scuola internazionale di Firenze. All’inizio andava tutto bene, ma dopo una settimana sono emersi problemi sia per quanto riguarda i corsi che le strutture di alloggio.\nScrivete una e‐mail o lettera di reclamo al Direttore della scuola dove avete studiato, spiegate chi siete, una piccola descrizione della vostra esperienza in Italia, menzionate un motivo per cui non siete rimasti soddisfatti della scuola e un problema che avete trovato con l’alloggio e che cosa si propone la scuola a riguardo.\nScrivete una e‐mail o lettera a:\nDirettore c/o Scuola Italiana di Firenze, Via Vanvitelli 2/a, 1254 Firenze, oppure a: scuolaitalianafirenze@firenze.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -6070,7 +6070,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2026 Higher Level, pp.26-33 — © State Examinations Commission.",
     id: "it-2026-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2026 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nAvete visto su un portale internet di Lega Ambiente che c’è la possibilità di partecipare ad un campo di volontariato in Italia. I progetti disponibili sono volontariato sportivo, per esempio come allenatore, arbitro ecc. o volontariato per la cultura e l’ambiente, per esempio fare visite guidate Scrivete all’Ufficio di Reclute Volontari per sottoporre la vostra candidatura, spiegando il tipo di esperienza di volontariato che volete fare tra i due disponibili e perché. Descrivete un’esperienza di volontariato che avete fatto nel passato. Menzionate due motivi per cui vorreste candidarvi e perché siete la persona giusta per questo tipo di esperienza.\nScrivete una lettera o e‐mail al nostro Ufficio di Reclute Volontari: via Salaria 403, 00199 Roma, You may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nHigher Level Italian Monday, 22 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nAvete visto su un portale internet di Lega Ambiente che c’è la possibilità di partecipare ad un campo di volontariato in Italia. I progetti disponibili sono volontariato sportivo, per esempio come allenatore, arbitro ecc. o volontariato per la cultura e l’ambiente, per esempio fare visite guidate nei musei ecc.\nScrivete all’Ufficio di Reclute Volontari per sottoporre la vostra candidatura, spiegando il tipo di esperienza di volontariato che volete fare tra i due disponibili e perché. Descrivete un’esperienza di volontariato che avete fatto nel passato. Menzionate due motivi per cui vorreste candidarvi e perché siete la persona giusta per questo tipo di esperienza.\nScrivete una lettera o e‐mail al nostro Ufficio di Reclute Volontari: via Salaria 403, 00199 Roma, volontariato@legambiente.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -7433,7 +7433,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
     id: "it-2025-hl-c-1-a", topicId: "italian-6-0", conceptId: "1-written-composition-linked-to-reading-comprehe",
     section: "C", questionRef: "2025 HL Section C Q1(a)–(e)",
-    questionText: "1. Written composition linked to reading comprehension (journalistic passage).\nAnswer any three of parts (a), (b), (c), (d), (e).\n(25 marks)\nNell’articolo si parla di graffiti e street art.\n(a) Come considerate i graffiti: arte o vandalismo? Spiegate perché.\n(b) Pensate che i graffiti possano avere una funzione positiva sui muri di una città? Perché?\n(c) Siete contrari ai graffiti sui monumenti come statue, chiese, palazzi antichi e musei?\n(d) Avreste interesse a partecipare ad un workshop per imparare ad eseguire graffiti e\n(e) Se poteste dipingere un graffito e murales nel vostro quartiere, cosa vi piacerebbe",
+    questionText: "1. Written composition linked to reading comprehension (journalistic passage).\nAnswer any three of parts (a), (b), (c), (d), (e).\n(25 marks)\nNell’articolo si parla di graffiti e street art.\n(a) Come considerate i graffiti: arte o vandalismo? Spiegate perché.\n(b) Pensate che i graffiti possano avere una funzione positiva sui muri di una città? Perché?\n(c) Siete contrari ai graffiti sui monumenti come statue, chiese, palazzi antichi e musei?\n(d) Avreste interesse a partecipare ad un workshop per imparare ad eseguire graffiti e murales?\n(e) Se poteste dipingere un graffito e murales nel vostro quartiere, cosa vi piacerebbe dipingere?",
     totalMarks: 25,
     rubric: {
           "system": "french",
@@ -7576,9 +7576,9 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC013ALP000BV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
-    id: "it-2025-hl-c-2", topicId: "italian-6-1", conceptId: "2-guided-composition-25-marks-use-any-six-of-the",
+    id: "it-2025-hl-c-2", topicId: "italian-6-1", conceptId: "2-guided-composition-25-marks-describe-how-you-o",
     section: "C", questionRef: "2025 HL Section C Q2",
-    questionText: "2. Guided Composition.\n(25 marks)\nUse any six of the ideas listed below.\n• Domenica pomeriggio\n• evento beneficenza\n• fine anno scolastico\n• invitare parenti e amici\n• attività per adulti\n• giochi per bambini\n• bevande e cibo\n• premi per una lotteria\n• raccogliere soldi",
+    questionText: "2. Guided Composition.\n(25 marks)\nDescribe how you organised a charity event.\nUse any six of the ideas listed below.\n• Domenica pomeriggio\n• evento beneficenza\n• fine anno scolastico\n• invitare parenti e amici\n• attività per adulti\n• giochi per bambini\n• bevande e cibo\n• premi per una lotteria\n• raccogliere soldi",
     totalMarks: 25,
     rubric: {
           "system": "french",
@@ -7723,7 +7723,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
     id: "it-2025-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
     section: "C", questionRef: "2025 HL Section C Q3(a)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nLa famiglia italiana con cui avete soggiornato durante uno scambio linguistico vi ha invitato a trascorrere una settimana nella loro casa estiva a Forte dei Marmi, ma non potete accettare.\nScrivete una lettera/un’e-mail alla Signora Polizzi in cui declinate il loro invito e: li ringraziate per aver pensato a voi; spiegate i due motivi per cui non potete andare; parlate del meraviglioso periodo che avete trascorso con loro l’anno scorso; condividete alcune notizie personali; suggerite di incontrarvi in un altro momento quando sarete in Toscana alla fine dell’anno.\nNÓ / OR",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nLa famiglia italiana con cui avete soggiornato durante uno scambio linguistico vi ha invitato a trascorrere una settimana nella loro casa estiva a Forte dei Marmi, ma non potete accettare.\nScrivete una lettera/un’e-mail alla Signora Polizzi in cui declinate il loro invito e: li ringraziate per aver pensato a voi; spiegate i due motivi per cui non potete andare; parlate del meraviglioso periodo che avete trascorso con loro l’anno scorso; condividete alcune notizie personali; suggerite di incontrarvi in un altro momento quando sarete in Toscana alla fine dell’anno.\nScrivete a:\nOppure email:\nSig.ra Giovanna Polizzi polizzigiovanna@tim.it Via Fiume 4, 50123 Firenze",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -7889,7 +7889,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2025 Higher Level, pp.26-32 — © State Examinations Commission.",
     id: "it-2025-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2025 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nAvete letto il seguente annuncio e avete deciso di fare domanda.\nScrivete all’Ufficio Selezione del Personale in Via della Libertà, n°17, 20122 Milano, oppure a info@viaggietribù.it, indicando per quale ruolo vi vorreste candidare, le caratteristiche che vi rendono particolarmente adatti/e a quel ruolo, l’esperienza lavorativa passata, la disponibilità Sono iniziati i casting per animazione turistica per la prossima estate!\nLa ricerca è rivolta ad animatori con o senza esperienza di età compresa tra 18 e 25 anni e disponibilità di almeno 2 mesi durante la stagione Se per qualsiasi motivo pensate di avere le caratteristiche giuste (sportivi, estroversi ecc.) e volete vivere con noi questa fantastica esperienza… …contattateci ora ed inviate la vostra candidatura!\nYou may use this page for extra work.\nMake sure to label extra work clearly with the You may use this page for extra work.\nMake sure to label extra work clearly with the Q3 (a): https://www.toscanaovunquebella.it/en/forte-dei-marmi/the-return C3 (a): https://www.toscanaovunquebella.it/en/forte-dei-marmi/the-return Higher Level Italian Monday, 23 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nAvete letto il seguente annuncio e avete deciso di fare domanda.\nScrivete all’Ufficio Selezione del Personale in Via della Libertà, n°17, 20122 Milano, oppure a info@viaggietribù.it, indicando per quale ruolo vi vorreste candidare, le caratteristiche che vi rendono particolarmente adatti/e a quel ruolo, l’esperienza lavorativa passata, la disponibilità lavorativa e informazioni utili personali.\nSono iniziati i casting per animazione turistica per la prossima estate!\nLa ricerca è rivolta ad animatori con o senza esperienza di età compresa tra 18 e 25 anni e disponibilità di almeno 2 mesi durante la stagione estiva.\nSe per qualsiasi motivo pensate di avere le caratteristiche giuste (sportivi, estroversi ecc.) e volete vivere con noi questa fantastica esperienza… …contattateci ora ed inviate la vostra candidatura!",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -8649,8 +8649,8 @@ export const CARDS: SecCard[] = [
     id: "it-2024-hl-la-8", topicId: "italian-3-1", conceptId: "special-offer-allows-change-reservation-within",
     section: "L", questionRef: "2024 HL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The special offer allows you to\n(a) change your flight within 48 hours\n(b) check‐in a 20kg bag for free\n(c) choose your seat\n(d) have free food and drinks on board Iodáilis ‐ Ardleibhéal",
-    questionChoices: ["change your flight within 48 hours","check‐in a 20kg bag for free","choose your seat","have free food and drinks on board Iodáilis ‐ Ardleibhéal"],
+    questionText: "The special offer allows you to\n(a) change your flight within 48 hours\n(b) check‐in a 20kg bag for free\n(c) choose your seat\n(d) have free food and drinks on board",
+    questionChoices: ["change your flight within 48 hours","check‐in a 20kg bag for free","choose your seat","have free food and drinks on board"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "change your reservation within 48h", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
@@ -8934,7 +8934,7 @@ export const CARDS: SecCard[] = [
     id: "it-2024-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-giada-plan-year-time-full",
     section: "L", questionRef: "2024 HL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What does Giada plan to do in a year’s time? Give full details. Iodáilis ‐ Ardleibhéal",
+    questionText: "What does Giada plan to do in a year’s time? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":1,"options":["She would like to go abroad","One of her uncles lives in Canada / the uncles can help her find a job","She will practise/learn both English and French"]} },
@@ -9220,7 +9220,7 @@ export const CARDS: SecCard[] = [
     id: "it-2024-hl-lb3-8", topicId: "italian-3-0", conceptId: "riccardo-looking-forward-visiting-west-ireland",
     section: "L", questionRef: "2024 HL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Why is Riccardo looking forward to visiting the West of Ireland? Iodáilis ‐ Ardleibhéal Higher level Italian Monday 24 June 12:10 – 12:50",
+    questionText: "Why is Riccardo looking forward to visiting the West of Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1-1", kind: "point", verbatim: "He has never been in smaller towns", marks: 3, contextNote: "Answer in English or Irish." },
@@ -9540,7 +9540,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Higher Level, pp.20-25 — © State Examinations Commission.",
     id: "it-2024-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
     section: "C", questionRef: "2024 HL Section C Q3(a)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nProgettate di passare un periodo in Italia per un tirocinio* e decidete di scrivere all’Agenzia Scambi Europa. Spiegate perché scegliete di fare un’esperienza di lavoro in Italia, in quale settore lavorativo vorreste acquisire esperienza e perché vi interessa quel settore in particolare.\nParlate delle vostre passate esperienze di lavoro e dei vostri studi. Spiegate il periodo in cui vorreste fare il vostro tirocinio e in quale città. Chiedete anche informazioni sugli alloggi NÓ / OR",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nProgettate di passare un periodo in Italia per un tirocinio* e decidete di scrivere all’Agenzia Scambi Europa. Spiegate perché scegliete di fare un’esperienza di lavoro in Italia, in quale settore lavorativo vorreste acquisire esperienza e perché vi interessa quel settore in particolare.\nParlate delle vostre passate esperienze di lavoro e dei vostri studi. Spiegate il periodo in cui vorreste fare il vostro tirocinio e in quale città. Chiedete anche informazioni sugli alloggi disponibili.\nScrivete a:\nAgenzia Scambi Europa, Piazza Risorgimento nº 48 00192 Roma Oppure a info@agenziascambieuropa.it *tirocinio = taithí oibre/intéirneacht/work experience/internship",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -9701,7 +9701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Higher Level, pp.20-25 — © State Examinations Commission.",
     id: "it-2024-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2024 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nDi recente avete acquistato da un’agenzia italiana online alcuni biglietti per andare al concerto del vostro cantante preferito a Milano con i vostri amici. Dopo aver prenotato aereo e albergo per voi e i vostri amici, avete ricevuto dei biglietti sbagliati per un altro concerto in una Scrivete all’agenzia ed esprimete il vostro disappunto. Spiegate i problemi organizzativi riguardo a viaggio e soggiorno che vi causa il cambiamento di data; indicate due motivi per cui dovete assolutamente andare al concerto che avete scelto; proponete una soluzione al problema.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nHigher Level Italian Monday, 24 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nDi recente avete acquistato da un’agenzia italiana online alcuni biglietti per andare al concerto del vostro cantante preferito a Milano con i vostri amici. Dopo aver prenotato aereo e albergo per voi e i vostri amici, avete ricevuto dei biglietti sbagliati per un altro concerto in una data diversa.\nScrivete all’agenzia ed esprimete il vostro disappunto. Spiegate i problemi organizzativi riguardo a viaggio e soggiorno che vi causa il cambiamento di data; indicate due motivi per cui dovete assolutamente andare al concerto che avete scelto; proponete una soluzione al problema.\nScrivete a:\nDirettore dell’Agenzia Compra Online Via XX Settembre nº 25 20123 Milano Oppure a info@compraonline.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -10444,8 +10444,8 @@ export const CARDS: SecCard[] = [
     id: "it-2023-hl-la-8", topicId: "italian-3-1", conceptId: "news-item-about-recycled-materials",
     section: "L", questionRef: "2023 HL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The news item is about\n(a) artificial intelligence\n(b) fashion\n(c) nutrition\n(d) recycled materials Iodáilis ‐ Ardleibhéal",
-    questionChoices: ["artificial intelligence","fashion","nutrition","recycled materials Iodáilis ‐ Ardleibhéal"],
+    questionText: "The news item is about\n(a) artificial intelligence\n(b) fashion\n(c) nutrition\n(d) recycled materials",
+    questionChoices: ["artificial intelligence","fashion","nutrition","recycled materials"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "recycled materials", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
@@ -10732,7 +10732,7 @@ export const CARDS: SecCard[] = [
     id: "it-2023-hl-lb2-4", topicId: "italian-3-0", conceptId: "anna-hopeful-that-she-will-able",
     section: "L", questionRef: "2023 HL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Why is Anna hopeful that she will be able to play in the final? Iodáilis ‐ Ardleibhéal",
+    questionText: "Why is Anna hopeful that she will be able to play in the final?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["The dates of the final (1m) have been postponed/changed/later (1m)","There are four weeks (1m) left/remaining/to the final (1m)","(She is confident) that she will recover (1m) in time (1m)/she will be better in time/she can get better on time/plenty of time to recover/she has lots of time"]} },
@@ -11011,10 +11011,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC013ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
-    id: "it-2023-hl-lb3-8", topicId: "italian-3-0", conceptId: "will-sabrina-july-full-iod-ilis",
+    id: "it-2023-hl-lb3-8", topicId: "italian-3-0", conceptId: "will-sabrina-july-full",
     section: "L", questionRef: "2023 HL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What will Sabrina do in July? Give full details. Iodáilis ‐ Ardleibhéal Higher level Italian Monday 26 June 12:10 – 12:50",
+    questionText: "What will Sabrina do in July? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She will work in a summer camp (2m) with children between 6 and 12 (2m) years of age.","She will have to organise/to plan/prepare/to do (2m) some games/activities through/in English (2m)"]} },
@@ -11335,7 +11335,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2023 Higher Level, pp.22-27 — © State Examinations Commission.",
     id: "it-2023-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
     section: "C", questionRef: "2023 HL Section C Q3(a)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nSiete appena ritornate/i da un corso di italiano in una nuova scuola di lingua in Italia.\nScrivete alla scuola per dare il feedback dettagliato che vi ha chiesto. Riassumete i particolari del corso che avete seguito (il periodo, il livello, ecc.). Indicate due cose di cui siete molto soddisfatte/i e una che non vi è piaciuta tanto. Date anche la vostra opinione sulle attività extracurriculari e suggerite qualche cambiamento che si potrebbe fare per migliorare Mandate il feedback a Italiano per tutti NÓ / OR",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nSiete appena ritornate/i da un corso di italiano in una nuova scuola di lingua in Italia.\nScrivete alla scuola per dare il feedback dettagliato che vi ha chiesto. Riassumete i particolari del corso che avete seguito (il periodo, il livello, ecc.). Indicate due cose di cui siete molto soddisfatte/i e una che non vi è piaciuta tanto. Date anche la vostra opinione sulle attività extracurriculari e suggerite qualche cambiamento che si potrebbe fare per migliorare l’esperienza in futuro.\nMandate il feedback a Italiano per tutti Viale Mazzini 24 47921 Rimini Oppure a info@italianopertutti.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -11496,7 +11496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2023 Higher Level, pp.22-27 — © State Examinations Commission.",
     id: "it-2023-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2023 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nIl prossimo inverno avete intenzione di fare una settimana bianca in Trentino con la vostra famiglia. Contattate “Visittrentino” per trovare l’offerta giusta per voi. Specificate le date del vostro soggiorno e il tipo di alloggio che è più adatto alle vostre esigenze.\nChiedete informazioni sulle lezioni di sci. Chiedete inoltre se ci sono cose da fare e da vedere per chi non vuole sciare.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nHigher Level Italian Monday, 26 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nIl prossimo inverno avete intenzione di fare una settimana bianca in Trentino con la vostra famiglia. Contattate “Visittrentino” per trovare l’offerta giusta per voi. Specificate le date del vostro soggiorno e il tipo di alloggio che è più adatto alle vostre esigenze.\nChiedete informazioni sulle lezioni di sci. Chiedete inoltre se ci sono cose da fare e da vedere per chi non vuole sciare.\nScrivete a Visittrentino Via Romagnosi 11 38122 Trento Oppure a info@visittrentino.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -12248,8 +12248,8 @@ export const CARDS: SecCard[] = [
     id: "it-2022-hl-la-8", topicId: "italian-3-1", conceptId: "new-trend-public-workplaces-about-pets",
     section: "L", questionRef: "2022 HL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The new trend in public workplaces is about\n(a) encouraging teamwork\n(b) flexible working times\n(c) pets in the office\n(d) the use of new technologies Iodáilis ‐ Ardleibhéal",
-    questionChoices: ["encouraging teamwork","flexible working times","pets in the office","the use of new technologies Iodáilis ‐ Ardleibhéal"],
+    questionText: "The new trend in public workplaces is about\n(a) encouraging teamwork\n(b) flexible working times\n(c) pets in the office\n(d) the use of new technologies",
+    questionChoices: ["encouraging teamwork","flexible working times","pets in the office","the use of new technologies"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "pets in the office", marks: 2, contextNote: "The scheme sets the right option in bold: (c)." },
@@ -12532,7 +12532,7 @@ export const CARDS: SecCard[] = [
     id: "it-2022-hl-lb2-4", topicId: "italian-3-0", conceptId: "would-agata-like-open-art-school",
     section: "L", questionRef: "2022 HL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Why would Agata like to open an art school for young people? Give one reason. Iodáilis ‐ Ardleibhéal",
+    questionText: "Why would Agata like to open an art school for young people? Give one reason.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To give them an opportunity (2) to be creative (2) to develop/help (2) their creativity (2)","To occupy them/keep them busy (2) in their free time (2)","For the positive impact (2) on wellbeing (2)/positive effect (2) on them (2)"]} },
@@ -12813,7 +12813,7 @@ export const CARDS: SecCard[] = [
     id: "it-2022-hl-lb3-8", topicId: "italian-3-0", conceptId: "piero-going-after-his-sailing-trip",
     section: "L", questionRef: "2022 HL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What is Piero going to do after his sailing trip? Iodáilis ‐ Ardleibhéal Higher level Italian Monday 27 June 12:10 – 12:50",
+    questionText: "What is Piero going to do after his sailing trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Go to the mountains", marks: 4, contextNote: "Answer in English or Irish." },
@@ -13295,7 +13295,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2022 Higher Level, pp.22-27 — © State Examinations Commission.",
     id: "it-2022-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2022 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nNÓ / OR I tuoi vicini di casa hanno intenzione di passare una vacanza in Sardegna in una proprietà in affitto e ti hanno chiesto di contattare da parte loro un’agenzia del posto.\nScrivete al direttore dell’agenzia indicando il periodo in cui hanno intenzione di andare, la durata del soggiorno e il tipo di alloggio che desiderano.\nSpecificate inoltre le loro esigenze specifiche e perché hanno queste esigenze (per esempio:\nvicinanza al mare, posti da visitare, accesso per i disabili, se sono ammessi animali domestici, ecc...). Descrivete gli interessi dei vostri vicini e chiedete le modalità di pagamento.\nYou may use this page for extra work.\nquestion number and part.\nYou may use this page for extra work.\nquestion number and part.\nHigher Level Italian Monday, 27 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nI tuoi vicini di casa hanno intenzione di passare una vacanza in Sardegna in una proprietà in affitto e ti hanno chiesto di contattare da parte loro un’agenzia del posto.\nScrivete al direttore dell’agenzia indicando il periodo in cui hanno intenzione di andare, la durata del soggiorno e il tipo di alloggio che desiderano.\nSpecificate inoltre le loro esigenze specifiche e perché hanno queste esigenze (per esempio:\nvicinanza al mare, posti da visitare, accesso per i disabili, se sono ammessi animali domestici, ecc...). Descrivete gli interessi dei vostri vicini e chiedete le modalità di pagamento.\nScrivete a:\nAgenzia Isola Smeralda Srl Lungomare Cattoni, 64/A 07038 Trinità d'Agultu e Vignola (OT)\ninfo@agenziaisolasmeralda.com",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -14051,8 +14051,8 @@ export const CARDS: SecCard[] = [
     id: "it-2021-hl-la-8", topicId: "italian-3-1", conceptId: "main-character-new-series-detective",
     section: "L", questionRef: "2021 HL Section LA Q8",
     stem: "In this section eight statements or news items will be heard twice. After the first hearing there will be a short pause. For each question choose what you consider the most appropriate answer and indicate your choice by circling the appropriate letter.",
-    questionText: "The main character in the new series is a\n(a) detective\n(b) jockey\n(c) painter\n(d) writer Iodáilis ‐ Ardleibhéal",
-    questionChoices: ["detective","jockey","painter","writer Iodáilis ‐ Ardleibhéal"],
+    questionText: "The main character in the new series is a\n(a) detective\n(b) jockey\n(c) painter\n(d) writer",
+    questionChoices: ["detective","jockey","painter","writer"],
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "detective", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
@@ -14157,7 +14157,7 @@ export const CARDS: SecCard[] = [
     id: "it-2021-hl-lb1-3", topicId: "italian-3-0", conceptId: "food-does-michele-suggest-bring-picnic",
     section: "L", questionRef: "2021 HL Section LB1 Q3",
     stem: "Dialogue 1. Conversation between Nicoletta and Michele. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What food does Michele suggest they bring for the picnic? Give two details. Mention two activities they are planning to do during the excursion.",
+    questionText: "What food does Michele suggest they bring for the picnic? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Drinks","Ham (1) Panini/Sandwiches (2)","Rice (1) salad (2)","Zucchini (1) Omelette (2)"]} },
@@ -14295,10 +14295,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC013ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
-    id: "it-2021-hl-lb2-4", topicId: "italian-3-0", conceptId: "where-identity-card-found-full-iod",
+    id: "it-2021-hl-lb2-4", topicId: "italian-3-0", conceptId: "where-identity-card-found-full",
     section: "L", questionRef: "2021 HL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Sara and Davide. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Where was the identity card found? Give full details. Iodáilis ‐ Ardleibhéal",
+    questionText: "Where was the identity card found? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["In the restaurant (2) where she had lunch (2) with a friend (2)","In the restaurant (2) on the floor (2) near the till/the cash register (2)"]} },
@@ -14582,7 +14582,7 @@ export const CARDS: SecCard[] = [
     id: "it-2021-hl-lb3-8", topicId: "italian-3-0", conceptId: "does-she-say-about-italian-islands",
     section: "L", questionRef: "2021 HL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Laura Miller. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What does she say about the Italian islands? Give one detail. Iodáilis ‐ Ardleibhéal Higher level Italian Monday 28 June 12:10 – 12:50",
+    questionText: "What does she say about the Italian islands? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She has not been there yet","They are on her to-do list/ She would like to go there","Beautiful (2) beaches (2)","Fish (2) is very good (2)"]} },
@@ -14901,7 +14901,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2021 Higher Level, pp.20-24 — © State Examinations Commission.",
     id: "it-2021-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
     section: "C", questionRef: "2021 HL Section C Q3(a)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nAvete letto il seguente annuncio e avete deciso di fare domanda.\nPROSSIMA APERTURA DEL PARCO COMMERCIALE PIÙ GRANDE D’ITALIA Siamo alla ricerca di personale per le seguenti figure personale nelle catene di ristorazione veloce, magazzinieri, nelle profumerie, nei negozi di abbigliamento e di accessori sportivi. Cerchiamo ragazzi di età compresa tra i 18 e i 25 anni, in possesso di diploma di Scrivete una lettera o un’email in cui indicate il ruolo per cui vi candidate, le caratteristiche che vi rendono particolarmente adatte/i a quel ruolo, l’esperienza lavorativa precedente, il periodo in cui interessi personali, attività che svolgete nel tempo libero, lingue conosciute...).\nScrivete all’Ufficio Selezione del Personale, oppure a info@davincivillage.it NÓ / OR",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(a)\nAvete letto il seguente annuncio e avete deciso di fare domanda.\nPROSSIMA APERTURA DEL PARCO COMMERCIALE PIÙ GRANDE D’ITALIA Siamo alla ricerca di personale per le seguenti figure professionali: aiuto cucina e personale da sala, baristi, personale nelle catene di ristorazione veloce, magazzinieri, estetiste, cassieri, aiuto parrucchieri e addetti alle vendite nelle profumerie, nei negozi di abbigliamento e di accessori sportivi. Cerchiamo ragazzi di età compresa tra i 18 e i 25 anni, in possesso di diploma di maturità, disponibili a fare brevi sostituzioni e a lavorare nei giorni festivi e nei fine settimana.\nScrivete una lettera o un’email in cui indicate il ruolo per cui vi candidate, le caratteristiche che vi rendono particolarmente adatte/i a quel ruolo, l’esperienza lavorativa precedente, il periodo in cui siete disponibili a lavorare, se avete i requisiti richiesti nell’annuncio e altre notizie utili (es:\ninteressi personali, attività che svolgete nel tempo libero, lingue conosciute...).\nScrivete all’Ufficio Selezione del Personale, Via Montanari n° 30, 00054 Fiumicino, Roma oppure a info@davincivillage.it",
     totalMarks: 50,
     rubric: {
           "system": "french",
@@ -15062,7 +15062,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2021 Higher Level, pp.20-24 — © State Examinations Commission.",
     id: "it-2021-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
     section: "C", questionRef: "2021 HL Section C Q3(b)",
-    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nGli esami sono finiti ed è tempo di vacanze e di ringraziamenti.\nScrivete una lettera o un’email alla Prof.ssa Verdi, la vostra insegnante d’italiano, per ringraziarla di tutto quello che ha fatto per voi. Parlate di come è stato per voi studiare l’italiano, perché avete scelto di studiare questa lingua, cosa vi è piaciuto in particolare (es: un aspetto della cultura italiana, un viaggio fatto in Italia con la scuola, il progetto e‐twinning...). Parlate anche dei vostri progetti futuri e indicate se e come pensate di usare l’italiano.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nYou may use this page for extra work.\nMake sure to label extra work clearly with the question number and part.\nQ3 (a): http://www.iisvolta.edu.it/home/scuola‐mondo‐del‐lavoro/offerte‐di‐lavoro/ Leathanach 16: C3 (a): http://www.iisvolta.edu.it/home/scuola‐mondo‐del‐lavoro/offerte‐di‐lavoro/ Higher Level Italian Monday, 28 June Morning 9:30 – 12:00",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b). (50 marks)\n(b)\nGli esami sono finiti ed è tempo di vacanze e di ringraziamenti.\nScrivete una lettera o un’email alla Prof.ssa Verdi, la vostra insegnante d’italiano, per ringraziarla di tutto quello che ha fatto per voi. Parlate di come è stato per voi studiare l’italiano, perché avete scelto di studiare questa lingua, cosa vi è piaciuto in particolare (es: un aspetto della cultura italiana, un viaggio fatto in Italia con la scuola, il progetto e‐twinning...). Parlate anche dei vostri progetti futuri e indicate se e come pensate di usare l’italiano.",
     totalMarks: 50,
     rubric: {
           "system": "french",

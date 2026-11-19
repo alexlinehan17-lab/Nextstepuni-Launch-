@@ -6156,7 +6156,7 @@ export const CARDS: SecCard[] = [
     questionText: "Leo is going to take a train from Rome to Milan to meet his Italian friend Samuele.\nWrite out Leo’s plan for the weekend in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. La sveglia suona alle 7:15 e Anna si sveglia","2. Appena sveglia, Anna si alza e si prepara per andare alla stazione","3. Quando arriva alla stazione di Roma, Anna compra un biglietto del treno per Milano","4. Dopo aver comprato il biglietto, Anna aspetta il treno.","5. Dopo essersi seduta al suo posto sul treno, Anna ascolta la musica con le cuffie e si rilassa","6. Quando arriva a Milano va direttamente in centro.","7. In centro incontra Samuele, si abbracciano e si scambiano tutte le loro notizie!","8. Il giorno seguente torna a casa, contenta dopo aver passato dei bei momenti con Samuele."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark. The scheme heads this question \"Francesca has a very busy weekend ahead\" and names Anna in its lines, where the paper names Leo: the lines are shown as the scheme prints them.", group: {"claimMax":8,"perOption":1,"options":["1. La sveglia suona alle 7:15 e Anna si sveglia","2. Appena sveglia, Anna si alza e si prepara per andare alla stazione","3. Quando arriva alla stazione di Roma, Anna compra un biglietto del treno per Milano","4. Dopo aver comprato il biglietto, Anna aspetta il treno.","5. Dopo essersi seduta al suo posto sul treno, Anna ascolta la musica con le cuffie e si rilassa","6. Quando arriva a Milano va direttamente in centro.","7. In centro incontra Samuele, si abbracciano e si scambiano tutte le loro notizie!","8. Il giorno seguente torna a casa, contenta dopo aver passato dei bei momenti con Samuele."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7277,9 +7277,9 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
-    id: "it-2025-ol-c-3", topicId: "italian-6-5", conceptId: "francesca-has-a-busy-weekend-ahead-write-out-fra",
+    id: "it-2025-ol-c-3", topicId: "italian-6-5", conceptId: "francesca-has-a-busy-weekend-ahead-she-writes-in",
     section: "C", questionRef: "2025 OL Section C Q3",
-    questionText: "Francesca has a busy weekend ahead.\nWrite out Francesca’s plan for the weekend in the correct order.",
+    questionText: "Francesca has a busy weekend ahead.\nShe writes in her diary, but the details got mixed up.\nWrite out Francesca’s plan for the weekend in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Primo fine settimana dopo gli esami: ho finito! Voglio fare tantissime cose questo fine settimana.","2. Prima di tutto devo sistemare la mia cameretta. Dopo gli esami è un disastro.","3. In secondo luogo, devo aiutare mamma a preparare la cena, questa sera, venerdì abbiamo degli invitati/","4. Domani mattina, sabato, ho promesso a Claudia di andare con lei in centro a fare colazione e un po’ di shopping.","5. Sabato sera ho la festa della scuola! Ci incontriamo tutti insieme per festeggiare.","6. Domenica mattina presto vado a correre, mi devo tenere in forma, soprattutto per le vacanze!","7. Domenica sera devo preparare la valigia! Lunedì si parte!","8. Dovrò andare in aeroporto presto lunedì mattina. Parto per le vacanze! Me le sono proprio meritate."]} },
@@ -7555,8 +7555,8 @@ export const CARDS: SecCard[] = [
     id: "it-2024-ol-la-8", topicId: "italian-3-1", conceptId: "special-offer-relates",
     section: "L", questionRef: "2024 OL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The special offer relates to\n(a) bus journeys\n(b) ferry trips\n(c) flights\n(d) train journeys Iodáilis ‐ Gnáthleibhéal",
-    questionChoices: ["bus journeys","ferry trips","flights","train journeys Iodáilis ‐ Gnáthleibhéal"],
+    questionText: "The special offer relates to\n(a) bus journeys\n(b) ferry trips\n(c) flights\n(d) train journeys",
+    questionChoices: ["bus journeys","ferry trips","flights","train journeys"],
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "8. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
@@ -7833,10 +7833,10 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
-    id: "it-2024-ol-lb2-4", topicId: "italian-3-0", conceptId: "family-member-lives-canada-iod-ilis",
+    id: "it-2024-ol-lb2-4", topicId: "italian-3-0", conceptId: "family-member-lives-canada",
     section: "L", questionRef: "2024 OL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Alberto and Giada. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Which family member lives in Canada? Iodáilis ‐ Gnáthleibhéal",
+    questionText: "Which family member lives in Canada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Her uncle", marks: 4, contextNote: "Answer in English or Irish." },
@@ -8116,7 +8116,7 @@ export const CARDS: SecCard[] = [
     id: "it-2024-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-ireland-riccardo-looking-forward-going",
     section: "L", questionRef: "2024 OL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Riccardo Vianelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Where in Ireland is Riccardo looking forward to going? Give one detail. Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 24 June 12:10 – 12:50",
+    questionText: "Where in Ireland is Riccardo looking forward to going? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["The west coast","Smaller towns","Outside Dublin","Somewhere he has never been before"]} },
@@ -8348,9 +8348,9 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2024 Ordinary Level, pp.14-16 — © State Examinations Commission.",
-    id: "it-2024-ol-c-2", topicId: "italian-6-4", conceptId: "without-using-your-personal-details-fill-in-the-",
+    id: "it-2024-ol-c-2", topicId: "italian-6-4", conceptId: "an-italian-holiday-resort-is-looking-for-summert",
     section: "C", questionRef: "2024 OL Section C Q2",
-    questionText: "Without using your personal details fill in the form below in Italian.\nThe same answer should not be used twice.\n(max 22 marks) A.\nAnswer any eight of the following nine questions.\nAnswer any seven of the following eight questions.\nNote some questions have 2 parts.",
+    questionText: "An Italian holiday resort is looking for summertime staff.\nWithout using your personal details fill in the form below in Italian.\nThe same answer should not be used twice.\n(max 22 marks) A.\nAnswer any eight of the following nine questions.\nAnswer any seven of the following eight questions.\nNote some questions have 2 parts.",
     totalMarks: 22,
     rubric: {
           "system": "french",
@@ -8400,9 +8400,9 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
-    id: "it-2024-ol-c-3", topicId: "italian-6-5", conceptId: "write-roberto-s-weekend-messages-to-his-mother-i",
+    id: "it-2024-ol-c-3", topicId: "italian-6-5", conceptId: "roberto-is-at-an-italian-music-festival-write-ro",
     section: "C", questionRef: "2024 OL Section C Q3",
-    questionText: "Write Roberto’s weekend messages to his mother in the correct order.",
+    questionText: "Roberto is at an Italian Music Festival.\nWrite Roberto’s weekend messages to his mother in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Ciao mamma, domani vado al festival della musica! Come sono felice! Parto domani mattina alle 8 e 30 con il treno.","2. Sono in stazione! Il treno dovrebbe partire alle 8 e trenta ma ha già un ritardo di 1 ora! Che disastro!","3. Siamo partiti finalmente. Arrivo a Bergamo alle 12 e 45. Avrò sicuramente fame.","4. È l’una! Sono arrivato a Bergamo, mangio un panino prima di prendere l’autobus.","5. Sono appena salito sull’autobus… è pienissimo di ragazzi che vanno al Festival!","6. L’autobus del Festival è stato veloce… sono arrivato!","7. Wow mamma, c’è tantissima gente qui al Festival! Che bello. Ora devo trovare un posto per montare la tenda.","8. Ho montato la tenda, è stato abbastanza facile. Ora iniziano i concerti! Ci sentiamo a fine serata! Ciao!"]} },
@@ -8678,8 +8678,8 @@ export const CARDS: SecCard[] = [
     id: "it-2023-ol-la-8", topicId: "italian-3-1", conceptId: "news-item-about",
     section: "L", questionRef: "2023 OL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The news item is about\n(a) a college open day\n(b) a concert\n(c) a furniture and design fair\n(d) a new television series Iodáilis ‐ Gnáthleibhéal",
-    questionChoices: ["a college open day","a concert","a furniture and design fair","a new television series Iodáilis ‐ Gnáthleibhéal"],
+    questionText: "The news item is about\n(a) a college open day\n(b) a concert\n(c) a furniture and design fair\n(d) a new television series",
+    questionChoices: ["a college open day","a concert","a furniture and design fair","a new television series"],
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "8. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
@@ -8959,7 +8959,7 @@ export const CARDS: SecCard[] = [
     id: "it-2023-ol-lb2-4", topicId: "italian-3-0", conceptId: "other-symptom-anna-had-after-she",
     section: "L", questionRef: "2023 OL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Max and Anna. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Mention one other symptom Anna had after she fell. Iodáilis ‐ Gnáthleibhéal",
+    questionText: "Mention one other symptom Anna had after she fell.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "One of ` — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “One of `”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"]} },
@@ -9236,10 +9236,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
-    id: "it-2023-ol-lb3-8", topicId: "italian-3-0", conceptId: "did-sabrina-miss-while-ireland-iod",
+    id: "it-2023-ol-lb3-8", topicId: "italian-3-0", conceptId: "did-sabrina-miss-while-ireland",
     section: "L", questionRef: "2023 OL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Sabrina Bellanova. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What did Sabrina miss while in Ireland? Give two details. Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 26 June 12:10 – 12:50",
+    questionText: "What did Sabrina miss while in Ireland? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Ice-cream (gelato) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Ice-cream (gelato)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["The sea ¬`","The sun","Heat","(Hot weather is acceptable as an equivalent of The sun","The heat but not in addition to either one)"]} },
@@ -9412,7 +9412,7 @@ export const CARDS: SecCard[] = [
                 },
                 {
                       "id": "language",
-                      "label": "Language and conversational expressions 7 marks",
+                      "label": "Language and conversational expressions",
                       "maxMarks": 7,
                       "permittedMarks": [0,1,2,3,4,5,6,7],
                       "guidance": [
@@ -9527,9 +9527,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
-    id: "it-2023-ol-c-3", topicId: "italian-6-5", conceptId: "write-the-sequence-of-claudia-s-weekend-in-the-c",
+    id: "it-2023-ol-c-3", topicId: "italian-6-5", conceptId: "claudia-s-weekend-trip-write-the-sequence-of-cla",
     section: "C", questionRef: "2023 OL Section C Q3",
-    questionText: "Write the sequence of Claudia’s weekend in the correct order.",
+    questionText: "Claudia’s weekend trip.\nWrite the sequence of Claudia’s weekend in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. È venerdì. Claudia e la sua famiglia hanno organizzato un fine settimana in montagna a Trento, il treno parte tra un paio di ore dalla stazione centrale di Verona.","2. Arrivano alla stazione di Verona venerdì pomeriggio alle 16:30.","3. Arrivati alla stazione di Trento, prendono un taxi e si dirigono all’hotel in centro.","4. Dopo aver fatto il check-in in hotel decidono di andare in pizzeria in centro.","5. Dopo aver mangiato, tornano in hotel per un meritato riposo!","6. È sabato mattina. Claudia e la sua famiglia si incontrano per fare la colazione.","7. Dopo la colazione escono per esplorare il meraviglioso paesaggio!","8. La famiglia ha passato ore in montagna e non vedono già l’ora di ritornarci in futuro."]} },
@@ -9805,8 +9805,8 @@ export const CARDS: SecCard[] = [
     id: "it-2022-ol-la-8", topicId: "italian-3-1", conceptId: "city-council-crema-has-adopted",
     section: "L", questionRef: "2022 OL Section LA Q8",
     stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
-    questionText: "The City Council of Crema has adopted\n(a) two cats\n(b) two dogs\n(c) two rabbits\n(d) two goats Iodáilis ‐ Gnáthleibhéal",
-    questionChoices: ["two cats","two dogs","two rabbits","two goats Iodáilis ‐ Gnáthleibhéal"],
+    questionText: "The City Council of Crema has adopted\n(a) two cats\n(b) two dogs\n(c) two rabbits\n(d) two goats",
+    questionChoices: ["two cats","two dogs","two rabbits","two goats"],
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "8. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
@@ -10085,10 +10085,10 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
-    id: "it-2022-ol-lb2-4", topicId: "italian-3-0", conceptId: "has-positive-effect-people-wellbeing-iod",
+    id: "it-2022-ol-lb2-4", topicId: "italian-3-0", conceptId: "has-positive-effect-people-wellbeing",
     section: "L", questionRef: "2022 OL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Agata and Franco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "What has a positive effect on people’s wellbeing? Give two details. Iodáilis ‐ Gnáthleibhéal",
+    questionText: "What has a positive effect on people’s wellbeing? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Art","Music","Sport","Nature"]} },
@@ -10368,7 +10368,7 @@ export const CARDS: SecCard[] = [
     id: "it-2022-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-piero-going-after-sailing-trip",
     section: "L", questionRef: "2022 OL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Piero De Bellis. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Where is Piero going after the sailing trip? Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 27 June 12:10 – 12:50",
+    questionText: "Where is Piero going after the sailing trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The seaside 1 mark)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “The mountains (for a few days)”. Answer in English or Irish." },
@@ -10548,7 +10548,7 @@ export const CARDS: SecCard[] = [
                 },
                 {
                       "id": "language",
-                      "label": "Language and conversational expressions 7 marks",
+                      "label": "Language and conversational expressions",
                       "maxMarks": 7,
                       "permittedMarks": [0,1,2,3,4,5,6,7],
                       "guidance": [
@@ -10608,9 +10608,9 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2022 Ordinary Level, pp.13-15 — © State Examinations Commission.",
-    id: "it-2022-ol-c-2", topicId: "italian-6-4", conceptId: "without-using-your-own-name-and-address-fill-in-",
+    id: "it-2022-ol-c-2", topicId: "italian-6-4", conceptId: "you-are-going-to-volunteer-in-an-animal-shelter-",
     section: "C", questionRef: "2022 OL Section C Q2",
-    questionText: "Without using your own name and address fill in the form below in Italian.\nThe same answer should not be used twice.\nAnswer any seven of the following eight questions.\nNote some questions have two parts.\nAnswer any eight of the following nine questions.",
+    questionText: "You are going to volunteer in an animal shelter.\nWithout using your own name and address fill in the form below in Italian.\nThe same answer should not be used twice.\nAnswer any seven of the following eight questions.\nNote some questions have two parts.\nAnswer any eight of the following nine questions.",
     totalMarks: 22,
     rubric: {
           "system": "french",
@@ -10638,12 +10638,7 @@ export const CARDS: SecCard[] = [
                             "Box B – 14 marks (7x2)",
                             "Marks awarded for the best 7 questions (out of 8 questions)",
                             "Where a question has two parts award 1+1",
-                            "(When the same word is used to answer multiple questions, marks may only be allocated once).",
-                            "Question 3",
-                            "A new Italian restaurant is opening in Killarney 8 marks (8x1 mark)",
-                            "1. Il nostro nuovo ristorante aprirà a Killarney fra una settimana. La prima sera offriremo un",
-                            "menù speciale al costo di 25€",
-                            "2. Prima della cena verrà servito un aperitivo analcolico alla pera."
+                            "(When the same word is used to answer multiple questions, marks may only be allocated once)."
                       ]
                 }
           ],
@@ -10667,7 +10662,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-c-3", topicId: "italian-6-5", conceptId: "a-new-italian-restaurant-is-opening-in-killarney",
     section: "C", questionRef: "2022 OL Section C Q3",
-    questionText: "A new Italian restaurant is opening in Killarney.\n(8 marks) The note below got mixed up.\nWrite it in the correct order.",
+    questionText: "A new Italian restaurant is opening in Killarney.\nThe note below got mixed up.\nWrite it in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Il nostro nuovo ristorante aprirà a Killarney fra una settimana. La prima sera offriremo un menù speciale al costo di 25€","2. Prima della cena verrà servito un aperitivo analcolico alla pera.","3. Subito dopo l’aperitivo serviremo il cibo","4. La cena comincerà con un antipasto di salumi e formaggi.","5. Dopo l’antipasto arriveranno i primi piatti.","6. Dopo i primi saranno serviti i secondi piatti insieme ai contorni.","7. Il menù finirà con una buonissima selezione di dolci e il caffè.","8. Alla fine della serata, ognuno tornerà a casa con una scatola di biscotti artigianali fatti a mano da noi."]} },
@@ -10943,8 +10938,8 @@ export const CARDS: SecCard[] = [
     id: "it-2021-ol-la-8", topicId: "italian-3-1", conceptId: "announcement-about",
     section: "L", questionRef: "2021 OL Section LA Q8",
     stem: "In this section eight statements or news items will be heard twice. After the first hearing there will be a short pause. For each question choose what you consider the most appropriate answer and indicate your choice by circling the appropriate letter.",
-    questionText: "The announcement is about a\n(a) nature programme\n(b) new exercise programme\n(c) new TV crime series\n(d) quiz show Iodáilis ‐ Gnáthleibhéal",
-    questionChoices: ["nature programme","new exercise programme","new TV crime series","quiz show Iodáilis ‐ Gnáthleibhéal"],
+    questionText: "The announcement is about a\n(a) nature programme\n(b) new exercise programme\n(c) new TV crime series\n(d) quiz show",
+    questionChoices: ["nature programme","new exercise programme","new TV crime series","quiz show"],
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "8. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
@@ -11221,10 +11216,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
-    id: "it-2021-ol-lb2-4", topicId: "italian-3-0", conceptId: "who-found-missing-item-iod-ilis",
+    id: "it-2021-ol-lb2-4", topicId: "italian-3-0", conceptId: "who-found-missing-item",
     section: "L", questionRef: "2021 OL Section LB2 Q4",
     stem: "Dialogue 2. Conversation between Sara and Davide. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Who found the missing item? Iodáilis ‐ Gnáthleibhéal",
+    questionText: "Who found the missing item?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The waiter from the restaurant (she ate at).", marks: 5, contextNote: "Answer in English or Irish." },
@@ -11503,10 +11498,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
-    id: "it-2021-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-would-laura-like-visit-iod",
+    id: "it-2021-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-would-laura-like-visit",
     section: "L", questionRef: "2021 OL Section LB3 Q8",
     stem: "Dialogue 3. Interview with Laura Miller. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
-    questionText: "Where would Laura like to visit? Iodáilis ‐ Gnáthleibhéal Ordinary level Italian Monday 28 June 12:10 – 12:50",
+    questionText: "Where would Laura like to visit?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1-1", kind: "point", verbatim: "The beaches/where they serve great fish", marks: 2, contextNote: "Answer in English or Irish." },
@@ -11790,9 +11785,9 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC013GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
-    id: "it-2021-ol-c-3", topicId: "italian-6-5", conceptId: "write-the-sequence-of-andrea-s-school-timetable-",
+    id: "it-2021-ol-c-3", topicId: "italian-6-5", conceptId: "school-timetable-andrea-has-a-very-busy-school-s",
     section: "C", questionRef: "2021 OL Section C Q3",
-    questionText: "Write the sequence of Andrea’s school timetable in the correct order.",
+    questionText: "School timetable\nAndrea has a very busy school schedule.\nWrite the sequence of Andrea’s school timetable in the correct order.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Andrea esce di casa alle 7.45 e va a scuola in bici. Alle otto in punto suona la campanella","2. Andrea inizia la sua giornata scolastica con due ore di matematica","3. Poi durante la ricreazione incontra i suoi amici e chiacchierano mentre mangia un panino.","4. Finita la ricreazione, Andrea ritorna in classe, adesso lo aspetta il test di Italiano!","5. Dopo il test di italiano Andrea ha un’ora di educazione fisica.","6. Finalmente sono finite le lezioni.","7. Dopo le lezioni Andrea rimane a scuola per delle attività extracurriculari","8. Torna a casa con la sua bici dopo 2 ore di prove di recitazione per il musical della scuola"]} },

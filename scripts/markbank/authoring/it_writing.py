@@ -131,6 +131,13 @@ PAGE_FURNITURE = re.compile(r'^(?:Leaving Certificate|Italian\s*[—–-]|Iod[á
                             r'|Lch\s+\d|Page\s+\d|\d{1,3}$|_+$)', re.I)
 
 
+# Where the last task ends: the back pages that follow it (extra-work pages,
+# acknowledgements, the copyright notice, a blank page, the back cover).
+TASK_END = re.compile(r'^(?:You may use this page for extra work|Make sure to label extra work'
+                      r'|Acknowledgements?$|Admhálacha|Admháil|Copyright notice|Fógra Cóipchirt'
+                      r'|Leathanach Bán|Blank Page)', re.I)
+
+
 def paper_task(year, level, item, english_only=False):
     """The printed task: the English rubric and the Italian task, in page order.
 
@@ -154,6 +161,11 @@ def paper_task(year, level, item, english_only=False):
                 if not s or PAGE_FURNITURE.match(s):
                     continue
                 s = s.replace('\uf0b7', '•')
+                if on and lines and TASK_END.match(s):
+                    return lines, page_of
+                # "NÓ / OR" between the two options of a choice is not task text.
+                if on and re.fullmatch(r'NÓ\s*/\s*OR', s):
+                    continue
                 # A page with no column bound of its own reads every group as
                 # 'L'; the English column is the right half of the sheet.
                 if x >= 0.45 * P.width:
@@ -182,10 +194,31 @@ def paper_task(year, level, item, english_only=False):
                         cut = IRISH.search(tail, 3)
                         lines.append(tail[:cut.start()].strip() if cut else tail)
                         continue
+                    # An English instruction welded after its Irish twin in
+                    # one group: "Déan cur síos ar an gcaoi ar eagraigh tú
+                    # imeacht Describe how you organised a charity event."
+                    # (2025 Higher C2) - the English sentence is kept.
+                    en = re.search(r'\s((?:Describe|Write|Use|Using|Imagine|Choose|Answer|Tell|Explain)'
+                                   r'\b[^.?!]*[.?!])\s*$', s)
+                    if en and IRISH.search(s[:en.start()]):
+                        lines.append(en.group(1))
+                        continue
                     it = len(ITALIAN_WORDS.findall(s))
                     marked = bool(re.match(r'^(?:\([a-e]\)|•)', s))
                     irish = bool(IRISH.search(s)) and it < 2
-                    if irish or not (it or marked):
+                    # Inside a lettered task the page is the Italian task at
+                    # full width: a short line with no listed Italian word
+                    # ("Scrivete a:", "Via Nicotera 1,", "00195 Roma.", 2016)
+                    # is the task's own, kept unless it reads as Irish.
+                    in_task = any(re.match(r'^\([a-e]\)', l) for l in lines)
+                    # The guided composition's ideas, "Notte prima esami –
+                    # andare a letto presto – …", run on to a second line
+                    # ("godersi vacanze.", 2019): a dash-separated list, or the
+                    # line after one that ends on a dash, is the task's own.
+                    if not IRISH.search(s) and lines and (
+                            re.search(r'\s[–-]\s*$', lines[-1]) or (' – ' in s and ' – ' in lines[-1])):
+                        in_task = True
+                    if irish or not (it or marked or (in_task and not IRISH.search(s))):
                         continue
                 if not lines or lines[-1] != s:
                     lines.append(s)
@@ -281,6 +314,14 @@ def english_sentences(year, level, item):
 
 def split_choice(lines):
     """{'a': lines, 'b': lines} for a task printed as "(a)" or "(b)"."""
+    # The label may share its row with the task's first line ("(a) Avete
+    # deciso …", 2015-2016): it is cut off onto a line of its own.
+    if '(a)' not in lines or '(b)' not in lines:
+        cut = []
+        for l in lines:
+            m = re.match(r'^\(([ab])\)\s+(\S.*)$', l)
+            cut += ([f'({m.group(1)})', m.group(2)] if m else [l])
+        lines = cut
     try:
         ia = lines.index('(a)')
         ib = lines.index('(b)')
@@ -398,6 +439,17 @@ def higher(year):
     return out
 
 
+# Where the scheme's order task does not match the paper's, said on the card
+# (the first row's contextNote), never corrected: 2026 Ordinary's scheme heads
+# Question 3 "Francesca has a very busy weekend ahead" (the 2025 title) and
+# names Anna in its lines; the paper sets Leo's weekend.
+ORDER_MISMATCH = {
+    2026: (' The scheme heads this question "Francesca has a very busy weekend ahead" '
+           'and names Anna in its lines, where the paper names Leo: the lines are shown '
+           'as the scheme prints them.'),
+}
+
+
 # ------------------------------------------------------------- Ordinary ---
 def ordinary(year):
     S = Scheme(year, 'ol')
@@ -408,6 +460,14 @@ def ordinary(year):
     # layout a row reader welds; the card carries the paper's English
     # instruction and the page itself (its source) shows the task as printed.
     t1, p1 = english_sentences(year, 'ol', 1)
+    if not t1:
+        # 2019 and earlier print the choice with no full stop ("1. Informal
+        # Writing (30 marks) / Choose (a) Informal Letter / or / (b) Dialogue"):
+        # the English column's head, up to where the first option's own task
+        # begins (its second "(a)").
+        col, p1 = english_column(year, 'ol', 1)
+        seen = [k for k, l in enumerate(col) if l.startswith('(a)')]
+        t1 = col[:seen[1]] if len(seen) > 1 else col[:4]
     head = join_lines(t1)
     choice = {'a': head, 'b': head}
     for letter, head, stop in (('a', r'^\(a\)\s*E-mail/Letter', r'^OR$'),
@@ -429,51 +489,103 @@ def ordinary(year):
         out.append(rubric_card(year, 'ol', 1, letter, [letter], [
             criterion('format', fmt[0] if len(fmt) == 1 else 'Format', 7, fmt),
             criterion('content', 'Content and communication', 16, content),
-            criterion('language', block[li].split(':')[0].replace(' 7 marks (2+2+2+1)', ''),
+            criterion('language', re.sub(r'\s+7 marks$', '', block[li].split(':')[0].replace(' 7 marks (2+2+2+1)', '')),
                       7, [block[li]], bands, lower_scale(0, rule, 7))],
             [S.lines[S.at(r'^Question 1 30 marks', c0)], block[0], rule], '\n'.join(join_lines(task)), p1, 30,
             note=S.lines[S.at(r'^Question 1 30 marks', c0)], pages=opages))
     # C2 form-filling: two boxes, each priced by its best N answers
     i2 = S.at(r'^Question 2 FORM-FILLING', c0)
-    q2 = S.span(r'^Question 2 FORM-FILLING', r'^3\.\s', c0)
-    ia = next(k for k, l in enumerate(q2) if l.startswith('Box A'))
-    ib = next(k for k, l in enumerate(q2) if l.startswith('Box B'))
+    # It ends where Question 3 begins: "3. <title>" or "Question 3" (2019,
+    # 2022), never inside Question 3's own numbered lines.
+    q2 = S.span(r'^Question 2 FORM-FILLING', r'^(?:3\.\s|Question 3\b)', c0)
+    ia = next((k for k, l in enumerate(q2) if l.startswith('Box A')), None)
     t2, p2 = english_sentences(year, 'ol', 2)
-    out.append(rubric_card(year, 'ol', 2, None, [], [
-        criterion('box-a', 'Box A', 8, q2[ia:ib]),
-        criterion('box-b', 'Box B', 14, q2[ib:])],
-        q2[:ia], '\n'.join(join_lines(t2)), p2, 22, note=q2[0], pages=opages))
+    # The task's opening sentence ("You are going to volunteer in an animal
+    # shelter.", 2022), broken by its Irish twin in the page's running text,
+    # is taken from the English column where the sentences above lost it.
+    col2, _p = english_column(year, 'ol', 2)
+    w = next((k for k, l in enumerate(col2) if l.startswith('Without using')), None)
+    if w:
+        head2 = re.sub(r'^2\s*\.\s*', '', flat(' '.join(col2[:w])))
+        if head2 and head2 not in flat(' '.join(t2)):
+            t2 = [head2] + t2
+    if ia is not None:
+        ib = next(k for k, l in enumerate(q2) if l.startswith('Box B'))
+        out.append(rubric_card(year, 'ol', 2, None, [], [
+            criterion('box-a', 'Box A', 8, q2[ia:ib]),
+            criterion('box-b', 'Box B', 14, q2[ib:])],
+            q2[:ia], '\n'.join(join_lines(t2)), p2, 22, note=q2[0], pages=opages))
+    else:
+        # 2019 and earlier price each field of the form on its own line
+        # ("Nazionalità 2 marks", "Qualità 4 marks (2+2)"): one criterion per
+        # printed field, labelled with the field's name as printed.
+        crit, first = [], None
+        for k, l in enumerate(q2[1:], 1):
+            m = re.match(r'^(.+?)\s+(\d+)\s+marks?\b', l)
+            if not m:
+                continue
+            first = k if first is None else first
+            cid = 'field-' + re.sub(r'[^a-z0-9]+', '-', m.group(1).lower()).strip('-')
+            crit.append(criterion(cid, m.group(1), int(m.group(2)), [l]))
+        assert crit and len({c['id'] for c in crit}) == len(crit), f'{year} OL C2: fields'
+        out.append(rubric_card(year, 'ol', 2, None, [], crit, q2[:first],
+                               '\n'.join(join_lines(t2)), p2, 22, note=q2[0], pages=opages))
     # C3 the sequence: eight lines in the printed order, one mark each
     # Its head is "3. Francesca has a very busy weekend ahead (8x1 mark)"
     # (2025-2026), "3. Andrea's school schedule 8 marks" over "(8x1 mark)"
     # (2021) or "Question 3" over the title (2022): the eight lines follow.
     q3 = S.span(r'^(?:Question 3\b|3\.\s)', r'^APPENDIX 1', S.at(r'^Question 2 FORM', c0))
     rows, cur = [], None
+    # An examiner's instruction printed in capitals in brackets under the
+    # lines (2016: "(IF THE LAST PIECE OF THE SEQUENCE IS IN THE EIGHT SPOT
+    # AWARD THE MARK)") is quoted on the card, never read as part of a line.
+    caps, in_caps = [], False
     for l in q3[1:]:
-        m = re.match(r'^(\d)\.\s*(.*)$', l)
+        if in_caps or re.match(r"^\([A-Z][A-Z ,'’-]{8,}", l):
+            caps.append(l)
+            in_caps = not l.rstrip().endswith(')')
+            continue
+        # 2016 prints its first line "1 Mi alzo …" with no stop after the 1.
+        m = re.match(r'^(\d)\.\s*(.*)$', l) or (not rows and re.match(r'^(1)\s+(\S.*)$', l))
         if m:
             cur = [int(m.group(1)), m.group(2)]
             rows.append(cur)
         elif cur and not re.match(r'^\(?\d+x\d', l):
             cur[1] = f'{cur[1]} {l}'
+    if not rows:
+        # 2017 and earlier print the eight lines unnumbered, one to a line,
+        # under the head: the order is the order printed.
+        body = [l for l in q3[1:] if l.strip() and not re.match(r'^(?:\d+|## Page \d+|\(?\d+x\d.*)$', l.strip())]
+        rows = [[k + 1, l.strip()] for k, l in enumerate(body)]
     assert [r[0] for r in rows] == list(range(1, 9)), (year, [r[0] for r in rows])
     for _n, t in rows:
         S.check(t)
-    t3, p3 = english_sentences(year, 'ol', 3)
+    if caps:
+        S.check(' '.join(caps))
     # The eight sentences to order are set in two columns on the page, which a
-    # row reader welds together; the card carries the instruction and the
-    # sentence the paper says to begin with, and the page itself (its source)
-    # shows the eight sentences as printed.
-    t3 = join_lines(t3)
+    # row reader welds together; the card carries the paper's English
+    # instruction - the English column, read word by word, from the question's
+    # head to "… in the correct order." - and the page itself (its source)
+    # shows the line to begin with and the eight sentences as printed. Read
+    # off the page's running text instead, a sentence broken by its Irish
+    # twin beside it was dropped ("She writes in her diary, but the details
+    # got mixed up.", 2025).
+    col, p3 = english_column(year, 'ol', 3)
+    # A head with "(8 marks)" on the line beneath it is a title ("3. Daily
+    # routine"), its own line; one that runs on ("3. A new Italian restaurant
+    # is opening in" / "Killarney. (8 marks)") is the first sentence.
+    title = (len(col) > 1 and col[1].strip() == '(8 marks)') or col[0].rstrip().endswith('(8 marks)')
+    col = [re.sub(r'\s*\(8 marks\)\s*', ' ', re.sub(r'^3\s*\.\s*', '', l)).strip() for l in col]
+    col = [l for l in col if l]
+    t3 = ([col[0]] + join_lines(col[1:])) if title else join_lines(col)
     order = next((k for k, l in enumerate(t3) if re.search(r'in the correct order\.\s*$', l)), None)
     assert order is not None, f'{year} OL C3: no "in the correct order." line'
-    begin = next((k for k, l in enumerate(t3) if re.match(r'^Begin with this line', l)), None)
-    t3 = t3[:begin + 2] if begin is not None else t3[:order + 1]
+    t3 = t3[:order + 1]
     out.append({
         'id': f'it-{year}-ol-c-3', 'subjectId': 'italian', 'level': 'ordinary', 'year': year,
         'section': 'C', 'topicId': TOPIC[('ol', 3)],
         'conceptId': re.sub(r'[^a-z0-9]+', '-', flat(' '.join(t3))[:60].lower()).strip('-')[:48],
-        'questionRef': f'{year} OL Section C Q3', 'questionText': '\n'.join(join_lines(t3)),
+        'questionRef': f'{year} OL Section C Q3', 'questionText': '\n'.join(t3),
         'tariffModel': {'kind': 'fixed'}, 'totalMarks': 8,
         # One menu row of the eight printed lines, a mark for each in its place
         # ("8x1 mark"): a fixed card shows at most six rows.
@@ -487,7 +599,8 @@ def ordinary(year):
             'to put in order.')),
     })
     out[-1]['rows'][0]['contextNote'] = ('The scheme prints the order line by line; each line '
-                                         'in its place is one mark.')
+                                         'in its place is one mark.' + ORDER_MISMATCH.get(year, '')
+                                         + (f' The scheme adds: "{flat(" ".join(caps))}".' if caps else ''))
     return out
 
 
