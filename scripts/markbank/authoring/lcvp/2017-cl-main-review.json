@@ -1,0 +1,3131 @@
+{
+  "schemaVersion": 1,
+  "year": 2017,
+  "level": "common",
+  "sitting": "main",
+  "language": "ev",
+  "status": "per-sitting-source-and-runtime-verified; native-QA-separate",
+  "createdAt": "2026-11-12T13:33:50.542805+00:00",
+  "reviewedBy": "Codex",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "year": 2017,
+      "path": "paper-trail-corpus/exampapers/2017/LC462CLPO00EV.pdf",
+      "fileid": "LC462CLPO00EV.pdf",
+      "sha256": "9a37c1d576ef1166a0343814c53d69ba9583d0bd0ac1ffbc22b1a712e56fca71",
+      "pages": 32
+    },
+    {
+      "kind": "markingschemes",
+      "year": 2017,
+      "path": "paper-trail-corpus/markingschemes/2017/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "ea64635f6bdbebea17ce35fb814768be75a929aea94c0abe9900a86d8aa7d46f",
+      "pages": 16
+    }
+  ],
+  "visualSweep": {
+    "paper": "All32originalpagesviewed:cover1/instructions2;A3–7(includingA5continuation4–5);completeAmy’sChocolatecase8;B9–12(B2continuation10–11,B3 11–12);repeatedoverview13;C1 14–16,C2 17–19,C3 20–22,C4 23–25,C5 26–28,C6 29–31;examinerwritten/portfolioadministrativegrid32isnotacandidateask.",
+    "writtenScheme": "All16originalpagesviewed:cover1/source-use note2/written160-markintro3;A4–5;B6–8includingtenpairedentrepreneur/employeecontrasts;C1 9,C2 10,C3 11–12,C4 12–13,C5 13–14,C6 14;explicitblank15/backcover16. Allcross-pagepoolsretained."
+  },
+  "evidence": [
+    {
+      "path": "tmp/lcvp-2017-visual-notes.md",
+      "sha256": "c43a8fdd45d61e87478f1418e7d91cf0145143b973579666f5d8f1e5de8ea1be"
+    },
+    {
+      "path": "tmp/lcvp-2017-paper-ledger-draft.json",
+      "sha256": "1d9c134f57749d82a762c8b813376e3a39dab24c13e7cc968fee6ac672f0a46b"
+    },
+    {
+      "path": "tmp/lcvp-2017-scheme-tariffs-draft.json",
+      "sha256": "1f0164c46833c186d00ff0371bb9863b0c49096eec966e02875d68e7ba93aacd"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-01.png",
+      "sha256": "0eb2093e4db6640f8cde0e3e60211a17f1ba85e5a9d526440f956f96a16b93c6"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-02.png",
+      "sha256": "c356eb57d69e84e64d97e149e1d84e985373bc9ad0596e1e446cd566263febe4"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-03.png",
+      "sha256": "805cc3ee6b82fdb8808427238f66870c1584245e127c1ec05805a6c5f79c1449"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-04.png",
+      "sha256": "df5365d87ad0bcc5f09ab41bbeec45e08de8ca5e15df9c5fcc6679e9190f5819"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-05.png",
+      "sha256": "28c1ebc66f0a1b58a34f75b30a9a7ee148d44cd25c22edb95d86e7aef0cc10ff"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-06.png",
+      "sha256": "7c03d4ea4fd881be087168721bf964681ae736d531d6501f601ccd88a1d08e92"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-07.png",
+      "sha256": "4876f33fd15b6d5856029a9ecdb176a9f452f06f47204fd4e445e17a8f2ce197"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/paper-08.png",
+      "sha256": "05a3a1ba28e56d46dc3e5f5bd2ecc3a4d4a87aaaca1c3d73c66650f318f9088c"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/scheme-01.png",
+      "sha256": "1963325119d38a4370810f83fc50aac9fcebab40067fc06a820b118a9f6263ca"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/scheme-02.png",
+      "sha256": "f732b21293f8df21b4d845e4787f36d46826b6b09a54b53948a21e8438396f91"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/scheme-03.png",
+      "sha256": "0bc00d301b5e5061555124f132152a12de62c5731d97abe68b00aeb97ad52491"
+    },
+    {
+      "path": "tmp/pdfs/lcvp-review/2017-main/scheme-04.png",
+      "sha256": "f6b193f3863bb17701ce03e577ff78fc165d81bb03743b01d6e1f1349b02e8b8"
+    }
+  ],
+  "manualOriginalLeaves": 38,
+  "manualSectionLeaves": {
+    "A": 8,
+    "B": 6,
+    "C": 24
+  },
+  "manualPricedTasks": 38,
+  "manualSectionTasks": {
+    "A": 8,
+    "B": 6,
+    "C": 24
+  },
+  "manualPaperLeaves": [
+    {
+      "key": "A1",
+      "pages": [
+        3
+      ],
+      "paperMarks": 1
+    },
+    {
+      "key": "A2",
+      "pages": [
+        3
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "A3",
+      "pages": [
+        3
+      ],
+      "paperMarks": 3
+    },
+    {
+      "key": "A4",
+      "pages": [
+        4
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "A5",
+      "pages": [
+        4,
+        5
+      ],
+      "paperMarks": 4,
+      "continuationPending": false
+    },
+    {
+      "key": "A6",
+      "pages": [
+        5
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "A7",
+      "pages": [
+        6
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "A8",
+      "pages": [
+        7
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "B1",
+      "pages": [
+        9
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "B2a",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentPaperMarks": 12
+    },
+    {
+      "key": "B2b",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentPaperMarks": 12
+    },
+    {
+      "key": "B2c",
+      "pages": [
+        10,
+        11
+      ],
+      "paperMarks": null,
+      "parentPaperMarks": 12
+    },
+    {
+      "key": "B3a",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "parentPaperMarks": 12
+    },
+    {
+      "key": "B3b",
+      "pages": [
+        11,
+        12
+      ],
+      "paperMarks": null,
+      "parentPaperMarks": 12
+    },
+    {
+      "key": "C1a",
+      "pages": [
+        14
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C1b",
+      "pages": [
+        14,
+        15
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C1c",
+      "pages": [
+        15
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C1d",
+      "pages": [
+        16
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C2a",
+      "pages": [
+        17
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "C2b",
+      "pages": [
+        17
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C2c",
+      "pages": [
+        18
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C2d",
+      "pages": [
+        19
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C3a",
+      "pages": [
+        20
+      ],
+      "paperMarks": 3
+    },
+    {
+      "key": "C3b",
+      "pages": [
+        20
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C3c",
+      "pages": [
+        21
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C3d",
+      "pages": [
+        22
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C4a",
+      "pages": [
+        23
+      ],
+      "paperMarks": 3
+    },
+    {
+      "key": "C4b",
+      "pages": [
+        23
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C4c",
+      "pages": [
+        24
+      ],
+      "paperMarks": 10
+    },
+    {
+      "key": "C4d",
+      "pages": [
+        25
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C5a",
+      "pages": [
+        26
+      ],
+      "paperMarks": 4
+    },
+    {
+      "key": "C5b",
+      "pages": [
+        26,
+        27
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C5c",
+      "pages": [
+        27
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C5d",
+      "pages": [
+        28
+      ],
+      "paperMarks": 9
+    },
+    {
+      "key": "C6a",
+      "pages": [
+        29
+      ],
+      "paperMarks": 2
+    },
+    {
+      "key": "C6b",
+      "pages": [
+        29
+      ],
+      "paperMarks": 6
+    },
+    {
+      "key": "C6c",
+      "pages": [
+        30
+      ],
+      "paperMarks": 8
+    },
+    {
+      "key": "C6d",
+      "pages": [
+        31
+      ],
+      "paperMarks": 9
+    }
+  ],
+  "pricedTaskLedger": [
+    {
+      "key": "A1",
+      "schemePage": 4,
+      "marks": 1,
+      "allocation": "Whole1; two equivalent source phrasings",
+      "poolCount": 2
+    },
+    {
+      "key": "A2",
+      "schemePage": 4,
+      "marks": 2,
+      "allocation": "Mixed Bag Gaming; whole2m, no internal split",
+      "poolCount": 1,
+      "sourceEmphasis": "Gaming is bold in the original; retain visible emphasis guidance, do not infer a new partial ladder"
+    },
+    {
+      "key": "A3",
+      "schemePage": 4,
+      "marks": 3,
+      "allocation": "2m + 1m",
+      "poolCount": 3,
+      "allocationReview": "Root independently viewed physical4 and approved two distinct credited reasons worth2then1 from the complete three-model pool. Keep original open Why stem unchanged; no reason-specific assignment or split cards."
+    },
+    {
+      "key": "A4",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "4@1m",
+      "poolCount": 5
+    },
+    {
+      "key": "A5",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "YES/NO1m; Justification3@1m",
+      "poolCount": 5
+    },
+    {
+      "key": "A6",
+      "schemePage": 4,
+      "marks": 4,
+      "allocation": "4@1m",
+      "poolCount": 6
+    },
+    {
+      "key": "A7",
+      "schemePage": 5,
+      "marks": 6,
+      "allocation": "6@1m",
+      "poolCount": 7
+    },
+    {
+      "key": "A8",
+      "schemePage": 5,
+      "marks": 6,
+      "allocation": "6@1m",
+      "poolCount": 6
+    },
+    {
+      "key": "B1",
+      "schemePage": 6,
+      "marks": 6,
+      "allocation": "3@2m(1+1); Any valid expansion",
+      "poolCount": 8,
+      "sourceInstruction": "Field research points1/2/3/4; Desk research points5/6/7/8; no required mix"
+    },
+    {
+      "key": "B2a",
+      "schemePage": 6,
+      "marks": 2,
+      "allocation": "2@1m",
+      "poolCount": 5
+    },
+    {
+      "key": "B2b",
+      "schemePage": 7,
+      "marks": 6,
+      "allocation": "3@2m(0/2)",
+      "poolCount": 9
+    },
+    {
+      "key": "B2c",
+      "schemePage": 7,
+      "marks": 4,
+      "allocation": "4@1m",
+      "poolCount": 8
+    },
+    {
+      "key": "B3a",
+      "schemePage": 8,
+      "marks": 2,
+      "allocation": "2@1m; Contrast must be present",
+      "poolCount": 10,
+      "layout": "Ten matched entrepreneur/employee table rows; both original cells required in each displayed model, no column dropping"
+    },
+    {
+      "key": "B3b",
+      "schemePage": 8,
+      "marks": 10,
+      "allocation": "5@2m(1+1)",
+      "poolCount": 9
+    },
+    {
+      "key": "C1a",
+      "schemePage": 9,
+      "marks": 4,
+      "allocation": "Career name2 + reason2; no invented internal split",
+      "poolCount": 0
+    },
+    {
+      "key": "C1b",
+      "schemePage": 9,
+      "marks": 4,
+      "allocation": "One Skill2(1+1) AND one Quality2(1+1)",
+      "poolCount": [
+        4,
+        4
+      ],
+      "sourceInstruction": "Both example lists end ellipsis; retain open personal answers"
+    },
+    {
+      "key": "C1c",
+      "schemePage": 9,
+      "marks": 8,
+      "allocation": "4@2m(1+1)",
+      "poolCount": 7
+    },
+    {
+      "key": "C1d",
+      "schemePage": 9,
+      "marks": 9,
+      "allocation": "3@3m(1+2(0/2))",
+      "poolCount": 5
+    },
+    {
+      "key": "C2a",
+      "schemePage": 10,
+      "marks": 2,
+      "allocation": "1m+1m",
+      "poolCount": 1
+    },
+    {
+      "key": "C2b",
+      "schemePage": 10,
+      "marks": 6,
+      "allocation": "3@2m(1+1); No repetition",
+      "poolCount": 5
+    },
+    {
+      "key": "C2c",
+      "schemePage": 10,
+      "marks": 9,
+      "allocation": "3@3m(1+2(0/2))",
+      "poolCount": 6
+    },
+    {
+      "key": "C2d",
+      "schemePage": 10,
+      "marks": 8,
+      "allocation": "2@3m(1+2) and1@2(1+1)",
+      "poolCount": 5
+    },
+    {
+      "key": "C3a",
+      "schemePage": 11,
+      "marks": 3,
+      "allocation": "Name1; activity2(0/2)",
+      "poolCount": 0
+    },
+    {
+      "key": "C3b",
+      "schemePage": 11,
+      "marks": 6,
+      "allocation": "3@2m(0/2)",
+      "poolCount": 8
+    },
+    {
+      "key": "C3c",
+      "schemePage": 11,
+      "marks": 8,
+      "allocation": "4@2m(1+1)",
+      "poolCount": 8
+    },
+    {
+      "key": "C3d",
+      "schemePages": [
+        11,
+        12
+      ],
+      "marks": 8,
+      "allocation": "4@2m(1+1)",
+      "poolCount": 6
+    },
+    {
+      "key": "C4a",
+      "schemePage": 12,
+      "marks": 3,
+      "allocation": "Name1 + two objectives@1",
+      "poolCount": 6
+    },
+    {
+      "key": "C4b",
+      "schemePage": 12,
+      "marks": 6,
+      "allocation": "3@2m(1+1)",
+      "poolCount": 8
+    },
+    {
+      "key": "C4c",
+      "schemePage": 12,
+      "marks": 10,
+      "allocation": "Ten named components at1 each",
+      "components": [
+        "Own address & Business address",
+        "Date",
+        "Opening & salutation",
+        "Introduction",
+        "Request for permission to visit",
+        "Date of visit",
+        "Closing",
+        "Layout/neatness",
+        "Spelling",
+        "Grammar/paragraphs/punctuation"
+      ]
+    },
+    {
+      "key": "C4d",
+      "schemePages": [
+        12,
+        13
+      ],
+      "marks": 6,
+      "allocation": "3@2m(1+1)",
+      "poolCount": 8,
+      "continuationPending": false
+    },
+    {
+      "key": "C5a",
+      "schemePage": 13,
+      "marks": 4,
+      "allocation": "2m+2m; complete definition with no fixed descriptor split",
+      "poolCount": 1
+    },
+    {
+      "key": "C5b",
+      "schemePage": 13,
+      "marks": 6,
+      "allocation": "6@1m",
+      "poolCount": 8
+    },
+    {
+      "key": "C5c",
+      "schemePage": 13,
+      "marks": 6,
+      "allocation": "6@1m",
+      "poolCount": 9
+    },
+    {
+      "key": "C5d",
+      "schemePages": [
+        13,
+        14
+      ],
+      "marks": 9,
+      "allocation": "3@3m(1+2)",
+      "poolCount": 6
+    },
+    {
+      "key": "C6a",
+      "schemePage": 14,
+      "marks": 2,
+      "allocation": "2@1m each",
+      "poolCount": 5
+    },
+    {
+      "key": "C6b",
+      "schemePage": 14,
+      "marks": 6,
+      "allocation": "Any two valid points under three headings; no marks for headings;3@2m(1+1)",
+      "poolCount": 7,
+      "selection": "Paper prints three open headings, not a closed seven-option choice. All seven scheme example headings remain visible; no invented plan points."
+    },
+    {
+      "key": "C6c",
+      "schemePage": 14,
+      "marks": 8,
+      "allocation": "4@2m(1+1)",
+      "poolCount": 7
+    },
+    {
+      "key": "C6d",
+      "schemePage": 14,
+      "marks": 9,
+      "allocation": "3@3m(1+1+1); Method+2statements",
+      "poolCount": 5
+    }
+  ],
+  "candidateWrittenMarks": 160,
+  "offeredPracticeMarks": 210,
+  "numericHolds": [],
+  "selectionAndContextReview": [
+    {
+      "key": "A3",
+      "classification": "Combined descending tariff",
+      "detail": "Unchanged paper Why stem, allthreeoriginalreasons,twodistinctcredited-reasonslots2then1. Do notrewriteastatetwo,pin2markstoschemereason1,orsplitmodelcards.",
+      "independentCoordinatorReview": "Root independently viewed full schemephysical4 and approved this source interpretation."
+    },
+    {
+      "key": "B3a",
+      "classification": "Complete contrasts",
+      "detail": "2@1m; Contrast must be present. Two complete-contrast slots; retainbothoriginalcellsforeachofthetenpairedrows. Nevercreditanunpairedcolumn."
+    },
+    {
+      "key": "C1b",
+      "classification": "Two required personal components",
+      "detail": "One skill and one quality,each2(1+1);bothopenexamplepoolsremainonewhole4-marktask."
+    },
+    {
+      "key": "C1d/C2c",
+      "classification": "Explicit component ladder",
+      "detail": "Eachresponse1+2(0/2). Preservebinary2-markcomponent;donotinvent1of2."
+    },
+    {
+      "key": "C2d",
+      "classification": "Unequal chosen-response awards",
+      "detail": "Two3-markresponses(1+2)andone2-markresponse(1+1),allfiveoriginalmodels. Do notassignhigherawardstofixedmodels."
+    },
+    {
+      "key": "C4c",
+      "classification": "Whole letter with ten allocated components",
+      "detail": "Alltennamed1-markcomponents;ownandbusinessaddressesshareone. Keepfullbusiness-visitcontextandentirelettertask."
+    },
+    {
+      "key": "C6b",
+      "classification": "Three open headings with illustrative model pool",
+      "detail": "Paperhasnofiniteclosedlist;schemeprovidessevenmodelheadings,anytwovalidpointsundereachofthree,andnoheadingmarks. Onewhole6-marktask,nochoicecombinationsornewmodelpoints."
+    },
+    {
+      "key": "C6d",
+      "classification": "Method and two statements",
+      "detail": "Three responses eachwithmethod1andtwofurtherstatements1+1;fullfive-modelpoolretained."
+    }
+  ],
+  "rawCensusClassification": {
+    "status": "not-run-before-independent-visual-sweep"
+  },
+  "validationProgress": {
+    "generationFailure": "First deck build emitted435/dropped1: repeated per-option column labels did not match contiguous original cells. Source pair format corrected using the existing em-dash table contract; full source refresh and zero-drop rebuild required.",
+    "remaining": [],
+    "targetedInitialResult": {
+      "passed": 7,
+      "failed": 1,
+      "failure": "Strict authored/emitted equality found empty contextNote fields omitted by compiler. Remove only those empty optional fields; do not weaken equality.",
+      "evidence": "tmp/lcvp-2017-targeted-before-empty-note.log",
+      "emptyNoteRows": [
+        [
+          "lcvp-2017-cl-a1",
+          "business"
+        ]
+      ],
+      "resolvedBy": "Only the failed equality case rerun after empty-field cleanup; seven other cases retained with emitted runtime byte-identical."
+    },
+    "runtimeCasesPassed": 138,
+    "passedStages": [
+      "Final mandatory original source/census/media gate",
+      "Corrected generation:436cards,zero drops",
+      "Cardlint:436cards,zero flags",
+      "Reconciliation:38/38,zero open/excluded/orphans",
+      "Eight targeted/identity cases:7retained+1filtered recovery",
+      "Curriculum registry:17 cases",
+      "Card preservation:113 cases"
+    ],
+    "resourceRefusals": [
+      {
+        "stage": "Required deck test",
+        "startedFreeBytes": 4982407168,
+        "startedMemoryFreePercent": 51,
+        "startedKernelPressure": 1,
+        "stopFreeBytes": 4731695104,
+        "stopKernelPressure": 2,
+        "ownedProcessGroup": 68658,
+        "ownedProcessGroupGone": true,
+        "ownedTempBytesRemoved": 250184026,
+        "assertionFailure": false,
+        "evidence": "tmp/lcvp-2017-deck-test.log"
+      }
+    ],
+    "requiredDeckProof": {
+      "kind": "remote",
+      "conclusion": "success",
+      "passedCases": 104,
+      "verifiedAt": "2026-11-12T16:31:38.885253+00:00",
+      "runId": 43258625344,
+      "jobId": 131323541138,
+      "url": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43258625344",
+      "sourceCandidate": "15db3bfa72f2e620c337e2a1dfc8f9750ab9cb46",
+      "supportedCandidate": "26f823b2a794307905752faf69cab784ca4d223b",
+      "workflowCommit": "037ef3f297165a052e7cfd7e0173d5862e7a860c",
+      "sourceFileHashes": {
+        "components/MarkBank/cards/lcvp/common.ts": "2c94a1f451b8fc4ac2643780102a38012698251c0c4b57d00e82cdcd53a1a5a8",
+        "components/MarkBank/cards/sizes.json": "d2b510f0eefb4519d31e481404d39ca38d927c25960d42dc0c936b6966d025d0",
+        "components/landing/subjectShowcase.json": "5013df21db784ae44749624b197aace5945396e78f68690e44a58b0178c673fa",
+        "data/examTopics/direct-question-runtime.json": "af82a96e6bccea198a1eed281169880e2eda681e19d2723e1448f6646cc4308a",
+        "data/examTopics/link-modules-local-crosswalk.json": "63c0c084a0fabcd5684365db90a23c58b6dafd83ddc44c3cf0461b13d12257dc",
+        "data/paperTrail/paperTopicTags-runtime.json": "1c7ee54ceec9509c74bdfb07822e871b69eb8a2b9ac01f6bb4025e85b53964a2",
+        "data/paperTrail/paperTopicTags.json": "881644d0bfcea53d6539436c6a5c1fd8c716cbfce58bd32743899359b7527933",
+        "examiner-reports/lcvp/schemes/2017-cl.md": "eedc322c794a8bc2c16c039d70a0f4262eecded21e42784ff69d87217deec09c",
+        "public/paper-anchors/2017/LC462CLPO00EV.pdf.json": "293d10ae130ebe44671f566cc6df0516deb5951201495a954310fbe3ef3b5ab3",
+        "public/paper-answers/2017/LC462CLPO00EV.pdf.json": "6582aa78e5659ebaa5cb72b136e11598402e10e5ee39cd06e2870a9d9e25aaa4",
+        "scripts/markbank/authored/lcvp.json": "da22d74157c032bae91e181ecb4544dd49efd2172b5807e8d82fc59aedededa1",
+        "scripts/markbank/authoring/lcvp/2017-cl-main-review.json": "51a6e981d506b9bf74bf988a298ac801a56fdea4be97be3ea4824e3b134fe179",
+        "scripts/markbank/authoring/lcvp/README.md": "6b1bcdcb8a2937f5e49982c334cb8005acf05505b1679798b2c60f6db0dd421f",
+        "scripts/markbank/authoring/lcvp_atlas_2017.py": "5839af833f0bfb14469bc6033cb16fa015f4c1463bd5526f178bd9045025faa0",
+        "scripts/markbank/authoring/lcvp_review_2017.py": "217b600b72fb39745fc02165a405646968a25951f7b9db85340ab8fb0d40063a",
+        "scripts/markbank/authoring/lcvp_validate_2017_source.py": "10e5c40c765b2deb0591cdedb3bdaf6ceb51de7c24c89052bfe773c855e03421",
+        "scripts/paper-trail/answers/2017/LC462CLPO00EV.pdf.json": "6582aa78e5659ebaa5cb72b136e11598402e10e5ee39cd06e2870a9d9e25aaa4",
+        "scripts/paper-trail/topic-tags/tags/link-modules.json": "7987acee68728b836f94b53696420a3c9c54d5e52ccd85ce4f48c0eada94086f",
+        "test/fixtures/lcvpReviewed.ts": "47afe1d2450774cc1291fffe3d90ce94f71ddb2e33d5b4a52fc2cb5c5c85a58d",
+        "test/markBankCardPreservation.test.ts": "05b3740facc3dcee66f10e7fc73d04a9732b125670384025d4b18cbf162d72a0",
+        "test/markBankLcvp2017.test.ts": "feaf5d25e9c976055a637e01ce0da171d9e18cde6d9a557dc58109239d20f0f6"
+      },
+      "approvedSupport": {
+        "before": "de6cabce712bfd5045c7c0db5c085811e87dcce1",
+        "after": "08c62bc5a691f881bdf3741fd49c5f1f3547b2cf",
+        "files": [
+          "scripts/markbank/deferredSourceMetadata.test.mjs",
+          "scripts/markbank/homeEconomicsSources.mjs",
+          "scripts/markbank/physicsSources.mjs",
+          "scripts/markbank/physicsSources.test.mjs",
+          "test/markBankDeck.test.ts",
+          "test/markBankHomeEconomicsDeferred.test.ts"
+        ],
+        "beforeBlobsIdentical": true,
+        "patchByteIdentical": true
+      },
+      "log": {
+        "path": "tmp/continuous-review/nov12-ci-43258625344.log",
+        "sha256": "c9bded9c078e8b0e818af852a2c33db1093895f33574f2f826de14cbe47edef3"
+      },
+      "result": {
+        "path": "tmp/continuous-review/nov12-lcvp2017-deck-ci-result.json",
+        "sha256": "e983d62b244cbf7a112079b6af9fb5692aa911b15f29bc0d84e709d0a405cacd"
+      },
+      "scope": "Only the 104 remaining required deck cases. No completed local gate repeated; no local assertion failure relabeled."
+    },
+    "postFrozenMetadataChange": "After the104-case deck proof, restore the deterministic author stage label and attach this proof. No source/runtime/test content changed from the frozen21-file candidate.",
+    "finalOutcome": "All per-sitting gates passed. The historical first-build B3(a) source-binding drop was corrected through original native table-cell reading order and the existing paired-cell contract; no source validation bypass."
+  },
+  "rawReaderAudit": {
+    "leaves": 38,
+    "continuityFlags": [],
+    "capturedTariffSum": 44,
+    "classification": "reader-layout limitation: tariffs following answer-space pages and continuation pages are absent from the generic marks map. Independent paper/scheme ledger is 210 offered/160 candidate. No missing source tasks inferred from the 44-mark parser subset."
+  },
+  "originalMarkBankCards": 0,
+  "originalAtlasMemberships": {
+    "baseline": "ecd7ff846",
+    "existingRuntimeIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "questionTopicIds": {
+      "1": [
+        "link-modules-common-audio-visual"
+      ],
+      "2": [
+        "link-modules-common-audio-visual"
+      ],
+      "3": [
+        "link-modules-common-audio-visual"
+      ],
+      "4": [
+        "link-modules-common-audio-visual"
+      ],
+      "5": [
+        "link-modules-common-audio-visual"
+      ],
+      "6": [
+        "link-modules-common-audio-visual"
+      ],
+      "7": [
+        "link-modules-common-audio-visual"
+      ],
+      "8": [
+        "link-modules-common-audio-visual"
+      ],
+      "9": [
+        "link-modules-common-case-study"
+      ],
+      "10": [
+        "link-modules-common-case-study"
+      ],
+      "11": [
+        "link-modules-common-case-study"
+      ],
+      "12": [
+        "link-modules-common-1-career-investigation"
+      ],
+      "13": [
+        "link-modules-common-2-enterprise-skills"
+      ],
+      "14": [
+        "link-modules-common-2-local-voluntarycommunity-enterprises"
+      ],
+      "15": [
+        "link-modules-common-2-local-business-enterprises"
+      ],
+      "16": [
+        "link-modules-common-1-job-seeking-skills"
+      ],
+      "17": [
+        "link-modules-common-1-career-investigation"
+      ]
+    },
+    "canonicalWaveTopics": {
+      "1": [
+        "lcvp-link-modules-1-1",
+        "lcvp-link-modules-0-3"
+      ],
+      "2": [
+        "lcvp-link-modules-0-3"
+      ],
+      "3": [
+        "lcvp-link-modules-0-3"
+      ],
+      "4": [
+        "lcvp-link-modules-0-3"
+      ],
+      "5": [
+        "lcvp-link-modules-0-2",
+        "lcvp-link-modules-0-3"
+      ],
+      "6": [
+        "lcvp-link-modules-1-1"
+      ],
+      "7": [
+        "lcvp-link-modules-0-1"
+      ],
+      "8": [
+        "lcvp-link-modules-0-3"
+      ],
+      "9": [
+        "lcvp-link-modules-1-1"
+      ],
+      "10": [
+        "lcvp-link-modules-1-1"
+      ],
+      "11": [
+        "lcvp-link-modules-1-1",
+        "lcvp-link-modules-1-0"
+      ],
+      "12": [
+        "lcvp-link-modules-0-2"
+      ],
+      "13": [
+        "lcvp-link-modules-1-0",
+        "lcvp-link-modules-0-0"
+      ],
+      "14": [
+        "lcvp-link-modules-1-2"
+      ],
+      "15": [
+        "lcvp-link-modules-1-1"
+      ],
+      "16": [
+        "lcvp-link-modules-0-0"
+      ],
+      "17": [
+        "lcvp-link-modules-0-2",
+        "lcvp-link-modules-1-0"
+      ]
+    },
+    "paperFileid": "LC462CLPO00EV.pdf",
+    "schemeFileid": "LC462CLP000EV.pdf"
+  },
+  "sourceVerification": {
+    "evidence": "tmp/lcvp-2017-source-gate-final.json",
+    "sha256": "d22b8beb84b0eefeb377e1429d12fc9727d1807cdfc4fd158be70587ce1346c7",
+    "validatedAuthoringSha256": "217b600b72fb39745fc02165a405646968a25951f7b9db85340ab8fb0d40063a",
+    "validatedGateSha256": "10e5c40c765b2deb0591cdedb3bdaf6ceb51de7c24c89052bfe773c855e03421",
+    "proof": {
+      "year": 2017,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        16
+      ],
+      "manualLeaves": 38,
+      "rawLeaves": 38,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Tariffs after answer spaces/continuations are omitted by the generic reader; independent original ledger governs.",
+      "tasks": 38,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 210,
+      "heldWholeTaskMarks": 0,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "originalAtlasIdentities": 17,
+      "authoredSubsetSha256": "76625620d8b2ade25fef1818c1a36175cc4d8a7388effca46a1b99259be3a36c",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null
+          ],
+          "wordingRecall": 0.9167
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b"
+          ],
+          "wordingRecall": 0.8889
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d"
+          ],
+          "wordingRecall": 0.9
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 48 original pages independently reviewed before parser/legacy audit. Full Amy case, all ten paired contrasts, cross-page answer pools, unequal response tariffs and all three open plan headings retained."
+    }
+  },
+  "tasks": [
+    {
+      "id": "lcvp-2017-cl-a1",
+      "questionRef": "2017 CL Section A Q1",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-a2",
+      "questionRef": "2017 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2017-cl-a3",
+      "questionRef": "2017 CL Section A Q3",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2017-cl-a4",
+      "questionRef": "2017 CL Section A Q4",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2017-cl-a5",
+      "questionRef": "2017 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-a6",
+      "questionRef": "2017 CL Section A Q6",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-a7",
+      "questionRef": "2017 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2017-cl-a8",
+      "questionRef": "2017 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2017-cl-b1",
+      "questionRef": "2017 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-b2a",
+      "questionRef": "2017 CL Section B Q2(a)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2017-cl-b2b",
+      "questionRef": "2017 CL Section B Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-b2c",
+      "questionRef": "2017 CL Section B Q2(c)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-b3a",
+      "questionRef": "2017 CL Section B Q3(a)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2017-cl-b3b",
+      "questionRef": "2017 CL Section B Q3(b)",
+      "marks": 10,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-c1a",
+      "questionRef": "2017 CL Section C Q1(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c1b",
+      "questionRef": "2017 CL Section C Q1(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c1c",
+      "questionRef": "2017 CL Section C Q1(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c1d",
+      "questionRef": "2017 CL Section C Q1(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c2a",
+      "questionRef": "2017 CL Section C Q2(a)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c2b",
+      "questionRef": "2017 CL Section C Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c2c",
+      "questionRef": "2017 CL Section C Q2(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c2d",
+      "questionRef": "2017 CL Section C Q2(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c3a",
+      "questionRef": "2017 CL Section C Q3(a)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c3b",
+      "questionRef": "2017 CL Section C Q3(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c3c",
+      "questionRef": "2017 CL Section C Q3(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c3d",
+      "questionRef": "2017 CL Section C Q3(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c4a",
+      "questionRef": "2017 CL Section C Q4(a)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-c4b",
+      "questionRef": "2017 CL Section C Q4(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-c4c",
+      "questionRef": "2017 CL Section C Q4(c)",
+      "marks": 10,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2017-cl-c4d",
+      "questionRef": "2017 CL Section C Q4(d)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c5a",
+      "questionRef": "2017 CL Section C Q5(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c5b",
+      "questionRef": "2017 CL Section C Q5(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c5c",
+      "questionRef": "2017 CL Section C Q5(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2017-cl-c5d",
+      "questionRef": "2017 CL Section C Q5(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2017-cl-c6a",
+      "questionRef": "2017 CL Section C Q6(a)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2017-cl-c6b",
+      "questionRef": "2017 CL Section C Q6(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2017-cl-c6c",
+      "questionRef": "2017 CL Section C Q6(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2017-cl-c6d",
+      "questionRef": "2017 CL Section C Q6(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-3"
+    }
+  ],
+  "atlasPreview": {
+    "path": "tmp/lcvp-2017-atlas-preview.json",
+    "sha256": "31738834c75635dfaf8f967a2e626bb8ec9426e942d77206277f06028faa207c",
+    "physicalIdentities": 17,
+    "continuations": {
+      "A5": [
+        4,
+        5
+      ],
+      "B2": [
+        10,
+        11
+      ],
+      "B3": [
+        11,
+        12
+      ]
+    },
+    "sourceFileidPolicy": "Retain original paper LC462CLPO00EV.pdf (letter O) paired with original scheme LC462CLP000EV.pdf (zero); all 17 prior memberships retained. No Atlas writes yet."
+  },
+  "coordinatorIndependentTariffReview": {
+    "sourceSha256": "ea64635f6bdbebea17ce35fb814768be75a929aea94c0abe9900a86d8aa7d46f",
+    "physicalPages": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "approvedContracts": [
+      "C1d/C2c 1+2(0/2), explanation component binary0/2",
+      "C2d three chosen responses 3/3/2, all five models; no fixed model-price assignment",
+      "C4c all ten one-mark items; both addresses jointly one mark",
+      "C5d literal1+2, no unprinted intermediate; sixth team-player continues onto physical14",
+      "C6b anytwo valid points underthree open headings, noheadingmarks, allsevenmodelheadings",
+      "C3a activity0/2; C3b threequestions0/2each",
+      "C3d sixth word-of-mouth continues onto physical12",
+      "C4d full eight models across physical12–13",
+      "C6d method plus two statements,1+1+1"
+    ],
+    "reviewer": "Coordinating Codex independently viewed scheme-03.png and scheme-04.png"
+  },
+  "coordinatorIndependentCaseReview": {
+    "sourceSha256": "ea64635f6bdbebea17ce35fb814768be75a929aea94c0abe9900a86d8aa7d46f",
+    "physicalPages": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "approvedContracts": [
+      "B3a allten paired contrasts; two1-mark complete contrasts, no isolated-column credit",
+      "B3b allnine models;5x2(1+1)",
+      "B2b allnine models;3x2(0/2), no1-mark partial",
+      "B2c alleight models;4x1",
+      "B1 alleight models;3x2(1+1), field1–4/desk5–8 labels retained"
+    ],
+    "reviewer": "Coordinating Codex independently viewed scheme-02.png"
+  },
+  "previousSourceVerificationBeforeParentContextRefresh": {
+    "evidence": "tmp/lcvp-2017-source-gate.json",
+    "sha256": "202984b2dea4f882ecfe6ab1718c9c36b96a18421c4bf9ecd59eef7a10853fe6",
+    "validatedAuthoringSha256": "ee768d6136612d38ea1a31396399b95b66f78183af80e507cae327a263e3d357",
+    "validatedGateSha256": "2d0cc89ed30a4c050d0e293534686f795b7537ec49f9fec4a50f4f260277151d",
+    "proof": {
+      "year": 2017,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        16
+      ],
+      "manualLeaves": 38,
+      "rawLeaves": 38,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Tariffs after answer spaces/continuations are omitted by the generic reader; independent original ledger governs.",
+      "tasks": 38,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 210,
+      "heldWholeTaskMarks": 0,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "originalAtlasIdentities": 17,
+      "authoredSubsetSha256": "714b3bca94883c906b3a6d185a2a9978d377e123eb4e182306e63cbf1f8f326f",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null
+          ],
+          "wordingRecall": 0.9167
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b"
+          ],
+          "wordingRecall": 0.8889
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d"
+          ],
+          "wordingRecall": 0.9
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 48 original pages independently reviewed before parser/legacy audit. Full Amy case, all ten paired contrasts, cross-page answer pools, unequal response tariffs and all three open plan headings retained."
+    },
+    "policy": "Mandatory original-source gate is separate from portable runtime tests. No 2017 authored/deck/Atlas writes or runtime validation have occurred."
+  },
+  "finalContextReview": "All 38 full prompts reviewed; six dependent career/business prompts retain their exact original parent instruction. Response labels and C6(d) Method/Statement 1/Statement 2 parts reviewed after refresh.",
+  "sourcePairPresentation": "B3(a) retains both exact cells of all ten original rows as ENTREPRENEUR — EMPLOYEE, with the column-order labels in visible contextNote. The existing table-half provenance contract checks each complete cell independently, while each option remains one complete contrast worth1mark. No source text or allocation changed.",
+  "sourceTranscriptReadingOrder": "Physical8 uses the original PDF native text-block order, which keeps each wrapped table cell contiguous. All other pages retain spatial reading order. Full original text retained, no authored answers appended to the transcript; mandatory source gate verifies every complete cell against native page8 text.",
+  "sourceVerificationBeforeTableCorrection": {
+    "evidence": "tmp/lcvp-2017-before-table-format-source-gate-final.json",
+    "sha256": "b8401aca65ec1b47cf8be1ede5364a93a4d9131ed440351314316b317e4425e6",
+    "validatedAuthoringSha256": "de6682872b2232c4234852a6279bcf61a219ab6e78d5e1387ea41775aeb62952",
+    "validatedGateSha256": "8a965c7beae683c08f1134447b1a38adeeaf60673b55240c5dc5dd6ea1bab754",
+    "proof": {
+      "year": 2017,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        16
+      ],
+      "manualLeaves": 38,
+      "rawLeaves": 38,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Tariffs after answer spaces/continuations are omitted by the generic reader; independent original ledger governs.",
+      "tasks": 38,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 210,
+      "heldWholeTaskMarks": 0,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "originalAtlasIdentities": 17,
+      "authoredSubsetSha256": "fe8f3cdc3e4ed2a989c984c2cef9cf15f338a19876561a0d70c8dcd69b78e797",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null
+          ],
+          "wordingRecall": 0.9167
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b"
+          ],
+          "wordingRecall": 0.8889
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d"
+          ],
+          "wordingRecall": 0.9
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 48 original pages independently reviewed before parser/legacy audit. Full Amy case, all ten paired contrasts, cross-page answer pools, unequal response tariffs and all three open plan headings retained."
+    }
+  },
+  "sourceVerificationBeforeEmptyOptionalCleanup": {
+    "evidence": "tmp/lcvp-2017-before-empty-note-source-gate-final.json",
+    "sha256": "a1537e4a6672be834a9fdcf162cddb8d0dafeb94ecfb54aa5cb8c1509cb6512c",
+    "validatedAuthoringSha256": "e5af7906e421f35d74c9bfa3fefbdedd76ab82129cd7027de83bd13f58847065",
+    "validatedGateSha256": "10e5c40c765b2deb0591cdedb3bdaf6ceb51de7c24c89052bfe773c855e03421",
+    "proof": {
+      "year": 2017,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        16
+      ],
+      "manualLeaves": 38,
+      "rawLeaves": 38,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Tariffs after answer spaces/continuations are omitted by the generic reader; independent original ledger governs.",
+      "tasks": 38,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 210,
+      "heldWholeTaskMarks": 0,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "originalAtlasIdentities": 17,
+      "authoredSubsetSha256": "a10ec6f7ea8b6af388979fb6e11c1185abf5d256617a103b38bbf11b40ebfb74",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null
+          ],
+          "wordingRecall": 0.9167
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b"
+          ],
+          "wordingRecall": 0.8889
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d"
+          ],
+          "wordingRecall": 0.9
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 48 original pages independently reviewed before parser/legacy audit. Full Amy case, all ten paired contrasts, cross-page answer pools, unequal response tariffs and all three open plan headings retained."
+    }
+  },
+  "validation": {
+    "completedAt": "2026-11-12T16:40:47.485013+00:00",
+    "sourceGate": {
+      "year": 2017,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        32,
+        16
+      ],
+      "manualLeaves": 38,
+      "rawLeaves": 38,
+      "rawCapturedTariffSum": 44,
+      "rawTariffLimitation": "Tariffs after answer spaces/continuations are omitted by the generic reader; independent original ledger governs.",
+      "tasks": 38,
+      "marks": 210,
+      "candidateWrittenMarks": 160,
+      "pricedMarks": 210,
+      "heldWholeTaskMarks": 0,
+      "continuityFlags": [],
+      "originalMarkBankCards": 0,
+      "originalAtlasIdentities": 17,
+      "authoredSubsetSha256": "76625620d8b2ade25fef1818c1a36175cc4d8a7388effca46a1b99259be3a36c",
+      "wordingAlignment": [
+        {
+          "key": [
+            "A",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            2,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            3,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            4,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            5,
+            null
+          ],
+          "wordingRecall": 0.9167
+        },
+        {
+          "key": [
+            "A",
+            6,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            7,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "A",
+            8,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            1,
+            null
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "B",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            1,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            2,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            3,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            4,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "b"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            5,
+            "d"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "a"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "b"
+          ],
+          "wordingRecall": 0.8889
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "c"
+          ],
+          "wordingRecall": 1.0
+        },
+        {
+          "key": [
+            "C",
+            6,
+            "d"
+          ],
+          "wordingRecall": 0.9
+        }
+      ],
+      "originalVideo": "Official MP4 listing/headers/prefix verified; no full-file hash or playback claim",
+      "scope": "All 48 original pages independently reviewed before parser/legacy audit. Full Amy case, all ten paired contrasts, cross-page answer pools, unequal response tariffs and all three open plan headings retained."
+    },
+    "regeneration": {
+      "regenerations": 1,
+      "filesChecked": 22,
+      "unrelatedCardsPreserved": 398,
+      "original2017IdsRetained": 0,
+      "addedCards": 38,
+      "nonLcvpRecordsUnchanged": true
+    },
+    "coverage": {
+      "previous": {
+        "cards": 398,
+        "contentHash": "39537b9dea7338b1",
+        "coveragePct": 56.2,
+        "covered": 410,
+        "excluded": 0,
+        "leaves": 730,
+        "open": 320,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "5f49b847dccd109b"
+      },
+      "current": {
+        "cards": 436,
+        "contentHash": "2c94a1f451b8fc4a",
+        "coveragePct": 61.4,
+        "covered": 448,
+        "excluded": 0,
+        "leaves": 730,
+        "open": 282,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "3c4180f66f72df73"
+      },
+      "targetSitting": {
+        "year": 2017,
+        "level": "cl",
+        "paper": null,
+        "leaves": 38,
+        "covered": 38,
+        "excluded": 0,
+        "open": []
+      },
+      "otherSubjectsUnchanged": true
+    },
+    "targetedRecovery": {
+      "onlyAuthoredChange": "Remove empty A1 business-row contextNote",
+      "emittedRuntimeSha256": "2c94a1f451b8fc4ac2643780102a38012698251c0c4b57d00e82cdcd53a1a5a8",
+      "emittedRuntimeUnchanged": true,
+      "priorTargetedPassed": 7
+    },
+    "requiredDeckProof": {
+      "kind": "remote",
+      "conclusion": "success",
+      "passedCases": 104,
+      "verifiedAt": "2026-11-12T16:31:38.885253+00:00",
+      "runId": 43258625344,
+      "jobId": 131323541138,
+      "url": "https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/actions/runs/43258625344",
+      "sourceCandidate": "15db3bfa72f2e620c337e2a1dfc8f9750ab9cb46",
+      "supportedCandidate": "26f823b2a794307905752faf69cab784ca4d223b",
+      "workflowCommit": "037ef3f297165a052e7cfd7e0173d5862e7a860c",
+      "sourceFileHashes": {
+        "components/MarkBank/cards/lcvp/common.ts": "2c94a1f451b8fc4ac2643780102a38012698251c0c4b57d00e82cdcd53a1a5a8",
+        "components/MarkBank/cards/sizes.json": "d2b510f0eefb4519d31e481404d39ca38d927c25960d42dc0c936b6966d025d0",
+        "components/landing/subjectShowcase.json": "5013df21db784ae44749624b197aace5945396e78f68690e44a58b0178c673fa",
+        "data/examTopics/direct-question-runtime.json": "af82a96e6bccea198a1eed281169880e2eda681e19d2723e1448f6646cc4308a",
+        "data/examTopics/link-modules-local-crosswalk.json": "63c0c084a0fabcd5684365db90a23c58b6dafd83ddc44c3cf0461b13d12257dc",
+        "data/paperTrail/paperTopicTags-runtime.json": "1c7ee54ceec9509c74bdfb07822e871b69eb8a2b9ac01f6bb4025e85b53964a2",
+        "data/paperTrail/paperTopicTags.json": "881644d0bfcea53d6539436c6a5c1fd8c716cbfce58bd32743899359b7527933",
+        "examiner-reports/lcvp/schemes/2017-cl.md": "eedc322c794a8bc2c16c039d70a0f4262eecded21e42784ff69d87217deec09c",
+        "public/paper-anchors/2017/LC462CLPO00EV.pdf.json": "293d10ae130ebe44671f566cc6df0516deb5951201495a954310fbe3ef3b5ab3",
+        "public/paper-answers/2017/LC462CLPO00EV.pdf.json": "6582aa78e5659ebaa5cb72b136e11598402e10e5ee39cd06e2870a9d9e25aaa4",
+        "scripts/markbank/authored/lcvp.json": "da22d74157c032bae91e181ecb4544dd49efd2172b5807e8d82fc59aedededa1",
+        "scripts/markbank/authoring/lcvp/2017-cl-main-review.json": "51a6e981d506b9bf74bf988a298ac801a56fdea4be97be3ea4824e3b134fe179",
+        "scripts/markbank/authoring/lcvp/README.md": "6b1bcdcb8a2937f5e49982c334cb8005acf05505b1679798b2c60f6db0dd421f",
+        "scripts/markbank/authoring/lcvp_atlas_2017.py": "5839af833f0bfb14469bc6033cb16fa015f4c1463bd5526f178bd9045025faa0",
+        "scripts/markbank/authoring/lcvp_review_2017.py": "217b600b72fb39745fc02165a405646968a25951f7b9db85340ab8fb0d40063a",
+        "scripts/markbank/authoring/lcvp_validate_2017_source.py": "10e5c40c765b2deb0591cdedb3bdaf6ceb51de7c24c89052bfe773c855e03421",
+        "scripts/paper-trail/answers/2017/LC462CLPO00EV.pdf.json": "6582aa78e5659ebaa5cb72b136e11598402e10e5ee39cd06e2870a9d9e25aaa4",
+        "scripts/paper-trail/topic-tags/tags/link-modules.json": "7987acee68728b836f94b53696420a3c9c54d5e52ccd85ce4f48c0eada94086f",
+        "test/fixtures/lcvpReviewed.ts": "47afe1d2450774cc1291fffe3d90ce94f71ddb2e33d5b4a52fc2cb5c5c85a58d",
+        "test/markBankCardPreservation.test.ts": "05b3740facc3dcee66f10e7fc73d04a9732b125670384025d4b18cbf162d72a0",
+        "test/markBankLcvp2017.test.ts": "feaf5d25e9c976055a637e01ce0da171d9e18cde6d9a557dc58109239d20f0f6"
+      },
+      "approvedSupport": {
+        "before": "de6cabce712bfd5045c7c0db5c085811e87dcce1",
+        "after": "08c62bc5a691f881bdf3741fd49c5f1f3547b2cf",
+        "files": [
+          "scripts/markbank/deferredSourceMetadata.test.mjs",
+          "scripts/markbank/homeEconomicsSources.mjs",
+          "scripts/markbank/physicsSources.mjs",
+          "scripts/markbank/physicsSources.test.mjs",
+          "test/markBankDeck.test.ts",
+          "test/markBankHomeEconomicsDeferred.test.ts"
+        ],
+        "beforeBlobsIdentical": true,
+        "patchByteIdentical": true
+      },
+      "log": {
+        "path": "tmp/continuous-review/nov12-ci-43258625344.log",
+        "sha256": "c9bded9c078e8b0e818af852a2c33db1093895f33574f2f826de14cbe47edef3"
+      },
+      "result": {
+        "path": "tmp/continuous-review/nov12-lcvp2017-deck-ci-result.json",
+        "sha256": "e983d62b244cbf7a112079b6af9fb5692aa911b15f29bc0d84e709d0a405cacd"
+      },
+      "scope": "Only the 104 remaining required deck cases. No completed local gate repeated; no local assertion failure relabeled."
+    },
+    "requiredAndTargetedTestsPassed": 242,
+    "matchingCoverageTestsPassed": 3,
+    "localRuntimeCasesPassed": 141,
+    "remoteRuntimeCasesPassed": 104,
+    "checks": "Independent48-page visual/source/media gate; all38 original tasks/210marks; cardlint/reconcile; all398priorcards and314original concepts; 8targeted/identity+17curriculum+113preservation+104deck+3filteredcoverage; one unchanged regeneration; all unrelated full/decoded/direct Atlas retained; narrow lint. Historical local deck import stopped at memory pressure2 before assertions; separately bound requiredDeckProof records the actual successful deck run.",
+    "baselineOrder": "Measured only after original source/zero-orphan/identity and all required runtime cases passed; all other subject baselines retained.",
+    "scoringScope": "38 leaves form38 complete tasks with210 offered/160candidate marks. All210 marks have source allocations; no numeric hold introduced.",
+    "broadValidation": "Data-only sitting under documented cadence; coordinator owns combined types/build and release QA.",
+    "pendingChecks": [
+      "Coordinator native-video/browser release QA"
+    ],
+    "logs": [
+      {
+        "path": "tmp/lcvp-2017-source-gate-final.json",
+        "sha256": "d22b8beb84b0eefeb377e1429d12fc9727d1807cdfc4fd158be70587ce1346c7"
+      },
+      {
+        "path": "tmp/lcvp-2017-cardlint.json",
+        "sha256": "35895097a8611a64e9704715c9deaae0135664072ca655551cd225354b9a4778"
+      },
+      {
+        "path": "tmp/lcvp-2017-prebaseline.log",
+        "sha256": "ed96e61ec028ba3bf8699aa95342f0c516ba0277e8b94f8cb15265b8c6d1ce0b"
+      },
+      {
+        "path": "tmp/lcvp-2017-targeted-before-empty-note.log",
+        "sha256": "f2372b85cb4e19493b2fc7830b7cb0018fe4bfa7aea15c240af5c47b8d354f37"
+      },
+      {
+        "path": "tmp/lcvp-2017-targeted-equality.log",
+        "sha256": "af03c12fb822d44d1d45c24a4df9ecd44ae3ce3d4362c35996dc8203509ef588"
+      },
+      {
+        "path": "tmp/lcvp-2017-curriculum-test.log",
+        "sha256": "884634e95d3e8921e3ea10feeee1d159896360c54577038d065bd55e55477e2f"
+      },
+      {
+        "path": "tmp/lcvp-2017-preservation-test.log",
+        "sha256": "62db86c9150180d54241d0bd1d188aa3e2258b8dfb335067069ace668a66fa91"
+      },
+      {
+        "path": "tmp/lcvp-2017-deck-test.log",
+        "sha256": "5b0174726835319c2ca3af31b12f9dba478692a743aae2cb7382d216338e505d"
+      },
+      {
+        "path": "tmp/lcvp-2017-ratchet.log",
+        "sha256": "37eb38991fb334801be46f6af09068bd5a83ece2ec336e1702275defc17b7e86"
+      },
+      {
+        "path": "tmp/lcvp-2017-coverage.log",
+        "sha256": "87f03e363e5559a3fed16dac9426da3aa573cf07e4472d22d7b5ecbd59abeb7a"
+      },
+      {
+        "path": "tmp/lcvp-2017-regeneration.log",
+        "sha256": "346360b117541bdbeb110376fb3ea42462c9fb6762d450c800dd23191af012fc"
+      },
+      {
+        "path": "tmp/lcvp-2017-lint.log",
+        "sha256": "d4794141affae7b79a9d80f12c46b0f2fa0120aed3c14af29142cef9611fb0ef"
+      },
+      {
+        "path": "tmp/continuous-review/nov12-ci-43258625344.log",
+        "sha256": "c9bded9c078e8b0e818af852a2c33db1093895f33574f2f826de14cbe47edef3"
+      }
+    ]
+  }
+}
