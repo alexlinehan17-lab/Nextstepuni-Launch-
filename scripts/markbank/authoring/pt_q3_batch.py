@@ -37,12 +37,11 @@ LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 # Sittings with no live card before this lane: a rewrite replaces them whole.
 ALL_NEW = {2026}
 # Written tasks held: 2025/2026 for the shared lower-scale change (see the
-# docstring); 2022 because its grids print each band's range ("10 - 13 marks")
-# on a line of its own between the two halves of a wrapped bullet, so three
-# lifted lines per card trace in neither of the grid gate's forms -- asked of
-# the coordinator 19 Nov 2026. (2023, whose grids print their marks only in
-# the marks cells, is carded through the gate's cells form, ca408de7e.)
-WRITING_HELD = {2022, 2025, 2026}
+# docstring). (2023, whose grids print their marks only in the marks cells,
+# is carded through the grid gate's cells form, ca408de7e; 2022, whose grids
+# print each band's range on a line of its own inside a wrapped bullet,
+# through its band-range-line form, d9cc8de6a.)
+WRITING_HELD = {2025, 2026}
 # Sittings whose listening asks have no spec yet (pt_specs.LISTENING): they
 # stay open, and a write/add of the sitting carries no listening card.
 LISTENING_PENDING = {2022}

@@ -1508,6 +1508,7 @@ const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
   2025: { higher: 31, ordinary: 34 },
   2024: { higher: 45, ordinary: 37 },
   2023: { higher: 43, ordinary: 44 },
+  2022: { higher: 9, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
