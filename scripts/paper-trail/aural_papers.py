@@ -167,8 +167,12 @@ def lines_with_pos(page):
 # later Partes. Every other Portuguese map (2022 HL, 2025, 2026) already
 # numbers the Partes. A general restart test would move maps of other
 # languages too (Japanese, Polish, Russian), so the override names the
-# papers. EV and IV twins alike.
-FORCE_PARTS = {"2022/LC018GLPA00EV.pdf", "2022/LC018GLPA00IV.pdf",
+# papers. EV and IV twins alike. The Polish 2026 Ordinary booklet does the
+# same with its five Części (A 1-5, C 1-6, E 1-7): the run "1..7" read A1-5,
+# C6 and E7; the EV map's scheme run then started on the READING pages (p7),
+# and the IV map's entry "6" ran from Część C Q6 to Część E Q6.
+FORCE_PARTS = {"2026/LC548GLPA00EV.pdf", "2026/LC548GLPA00IV.pdf",
+               "2022/LC018GLPA00EV.pdf", "2022/LC018GLPA00IV.pdf",
                "2023/LC018ALPA00EV.pdf", "2023/LC018ALPA00IV.pdf",
                "2023/LC018GLPA00EV.pdf", "2023/LC018GLPA00IV.pdf",
                "2024/LC018ALPA00EV.pdf", "2024/LC018ALPA00IV.pdf",
@@ -350,6 +354,38 @@ def scheme_blocks(doc, want_n, paper_words, parts_mode=False):
     return best
 
 
+# Booklets whose LAST part's answers run on past the page they start on. The
+# last entry of a map otherwise ends at the foot of its first scheme page
+# (right for a last QUESTION), which cut off the rest of the Polish 2026
+# Ordinary Część E (EV p13 -> p14, IV p14 -> p15). Keyed for the same reason
+# as FORCE_PARTS: a general rule moves the maps of eleven languages.
+LAST_PART_TO_KEY_END = {"2026/LC548GLPA00EV.pdf", "2026/LC548GLPA00IV.pdf"}
+
+# A heading that ends a scheme's listening key: its appendices (the modified
+# marking scheme, the audio scripts), a line opening "APPENDIX" / "AGUISÍN".
+KEY_END = re.compile(r"^(?:APPENDIX|AGUIS[ÍI]N)\b")
+
+
+def _key_end(doc, start, start_y):
+    """Where the listening key ends, for a last part that begins on scheme page
+    `start` (1-based) at height `start_y`, as (page, y): at the first later
+    appendix heading -- at its own height when answers are printed above it
+    on its page (Polish 2026 Higher p16 sets "APPENDIX 1" under Część E's last
+    answer), else at the foot of the page before -- or at the foot of the page
+    before the first later transcript page. A scheme with neither is refused,
+    never run on to its last page."""
+    for pi in range(start - 1, len(doc)):
+        lines = [ln for ln in lines_with_pos(doc[pi]) if pi > start - 1 or ln[2] > start_y]
+        for txt, _x, y in lines:
+            if KEY_END.match(txt):
+                above = any(ln[2] < y for ln in lines)
+                return (pi + 1, y) if above else (pi, 1.0)
+        if pi > start - 1 and TRANSCRIPT.search(doc[pi].get_text()):
+            return pi, 1.0
+    raise ValueError(f"no appendix or transcript after scheme page {start}: "
+                     "the key's end cannot be read, so the last part is not extended")
+
+
 def build_sidecar(paper_path, scheme_path):
     paper, scheme = fitz.open(paper_path), fitz.open(scheme_path)
     key = f"{os.path.basename(os.path.dirname(paper_path))}/{os.path.basename(paper_path)}"
@@ -375,6 +411,8 @@ def build_sidecar(paper_path, scheme_path):
         spg, sy = sb[n]
         if i + 1 < len(ordered):
             npg, ny = sb[ordered[i + 1]]
+        elif key in LAST_PART_TO_KEY_END:
+            npg, ny = _key_end(scheme, spg, sy)
         else:
             npg, ny = spg, 1.0
         region = []
