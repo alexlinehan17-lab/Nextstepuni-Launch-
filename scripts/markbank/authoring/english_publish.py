@@ -185,6 +185,10 @@ def card_record(route, record, review, grids):
         card['choiceParentId'] = route['choiceParentId']
         card['choiceLabel'] = route['choiceRoute']['label']
     card['schemePages'] = review['schemePages']
+    if route.get('schemeAbsent'):
+        # A deferred task its scheme sets out no block for: the card shows UNPRINTED_ANSWER and the
+        # general criteria and grid pages it is marked on (coordinator ruling, 2026-11-19).
+        card['schemeOmitsTask'] = True
     card['assessment'] = assessment_for(route, review, sitting_key, grids)
     card['paperFileid'] = record['paperFileid'].removesuffix('.pdf')
     card['atlas'] = {'fileid': record['paperFileid'], 'n': str(route['atlasParent'])}

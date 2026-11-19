@@ -4297,6 +4297,7 @@
     13,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -4333,6 +4334,7 @@
     13,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -4437,6 +4439,7 @@
     13,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5451,6 +5454,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5487,6 +5491,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5523,6 +5528,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5559,6 +5565,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5629,6 +5636,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5733,6 +5741,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -5770,6 +5779,7 @@
     18,
     40
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2025-higher-deferred",
@@ -7511,6 +7521,7 @@
     14,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -7547,6 +7558,7 @@
     14,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -8624,6 +8636,7 @@
     20,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -8830,6 +8843,7 @@
     20,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -8866,6 +8880,7 @@
     20,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -8936,6 +8951,7 @@
     20,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2024-higher-deferred",
@@ -8972,6 +8988,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -9003,6 +9020,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -9068,6 +9086,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -9099,6 +9118,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -9164,6 +9184,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -9195,6 +9216,7 @@
     27,
     39
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2024-higher-deferred"
@@ -10704,6 +10726,7 @@
     13,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -10875,6 +10898,7 @@
     13,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -11815,6 +11839,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -11851,6 +11876,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -11887,6 +11913,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -11924,6 +11951,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -12029,6 +12057,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -12065,6 +12094,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -12101,6 +12131,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -12137,6 +12168,7 @@
     19,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "discrete",
     "grid": "2023-higher-deferred",
@@ -12173,6 +12205,7 @@
     22,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2023-higher-deferred"
@@ -12204,6 +12237,7 @@
     22,
     38
    ],
+   "schemeOmitsTask": true,
    "assessment": {
     "mode": "combined",
     "grid": "2023-higher-deferred"

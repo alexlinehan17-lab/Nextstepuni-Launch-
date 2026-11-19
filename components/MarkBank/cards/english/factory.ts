@@ -287,6 +287,8 @@ interface PublishedEnglishCard {
   atlas: { fileid: string; n: string };
   /** Indicative bullets lifted verbatim from the card's scheme page (bridge ledger). */
   indicativeMaterial?: string[];
+  /** A deferred task its scheme sets out no block for (english_publish.py, from the reviewed ledgers). */
+  schemeOmitsTask?: true;
 }
 
 export interface PublishedEnglishManifest {
@@ -444,6 +446,10 @@ const makePublishedCard = (
     assessment: publishedAssessment(card, grids),
     ...(card.indicativeMaterial?.length ? { indicativeMaterial: card.indicativeMaterial } : {}),
     indicativeMaterialNote: INDICATIVE_NOTE,
+    // A task the deferred scheme sets out no block for: the fixed line, then where its marks come from.
+    ...(card.schemeOmitsTask ? { unprintedAnswer: {
+      citation: `Marked on the scheme’s general criteria for assessment and its printed grid (${pageList(card.schemePages)}).`,
+    } } : {}),
   },
 });
 

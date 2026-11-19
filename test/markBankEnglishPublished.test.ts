@@ -357,6 +357,15 @@ describe('English deferred sittings', () => {
     expect([story.totalMarks, story.rubric.assessment.mode]).toEqual([100, 'discrete']);
     expect(story.schemeCitation).toBe(
       'SEC English Higher Level marking scheme 2025, pp.3, 13, 40, deferred examination — © State Examinations Commission.');
+    // The deferred scheme sets out no block for it: the fixed line and the pages it is marked on.
+    expect(story.rubric.unprintedAnswer).toEqual({
+      citation: 'Marked on the scheme’s general criteria for assessment and its printed grid (pp.3, 13, 40).' });
+    expect(card('english-2025-hl-deferred-p1-composing-3').rubric.unprintedAnswer).toBeUndefined();
+    // Only a deferred task its scheme omits carries the line; no June card does.
+    const omitted = PUBLISHED.filter(entry => entry.rubric.unprintedAnswer);
+    expect(omitted.every(entry => entry.id.includes('-deferred-'))).toBe(true);
+    expect(omitted.map(entry => entry.id).sort()).toEqual(
+      RECORDS.filter(record => (record as { schemeOmitsTask?: true }).schemeOmitsTask).map(record => record.id).sort());
     // QA(ii) is printed identically under all three texts: one card, three Atlas placements.
     const own = RECORDS.find(record => record.id === 'english-2025-hl-deferred-p1-t1-a-ii')!;
     expect(placesOf(own).map(place => place.n)).toEqual(['8', '10', '12']);
