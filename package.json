@@ -14,7 +14,7 @@
     "lint": "eslint . --max-warnings 0",
     "lint:ci": "eslint .",
     "typecheck": "node --max-old-space-size=8192 ./node_modules/typescript/lib/tsc.js --noEmit",
-    "typecheck:test": "node --max-old-space-size=8192 ./node_modules/typescript/lib/tsc.js --noEmit -p tsconfig.test.json",
+    "typecheck:test": "node --max-old-space-size=12288 ./node_modules/typescript/lib/tsc.js --noEmit -p tsconfig.test.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:rules": "firebase emulators:exec --only firestore,storage \"vitest run --config vitest.rules.config.ts\"",

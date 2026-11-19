@@ -26,12 +26,19 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
 import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
+import { reviewedPhysicsSource } from './physicsSources.mjs';
+import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
+import { reviewedLcvpSource, readLcvpDeferredScheme } from './lcvpSources.mjs';
+import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
+import { videoMaterialFault } from './videoMaterial.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -842,9 +849,8 @@ const ladderOf = (g) => {
  * already records. Filing it as 'higher' would have every card cite a Higher
  * Level paper that does not exist.
  */
-const LEVELS = ['higher', 'ordinary', 'common'];
-const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
-const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
+const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl', foundation: 'fl' };
+const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation' };
 
 /* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
  * "eng-2022-hl-deferred-q1-a", "dcg-2022-hl-deferred-a2a",
@@ -859,6 +865,9 @@ const DEFERRED_ID = {
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
   german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
+  'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
+  maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -876,8 +885,19 @@ const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
 function schemeFor(subjectId, card) {
+  // A deferred Link Modules card reads the transcript of its own reviewed
+  // archive scheme, never June's.
+  const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
+  if (lcvpSource) {
+    const file = lcvpSource.schemeTextPath;
+    if (!schemeCache.has(file)) schemeCache.set(file, comparableScheme(readLcvpDeferredScheme(lcvpSource)));
+    return schemeCache.get(file);
+  }
+  // An older Maths sitting prints a standard and a Project Maths booklet, each
+  // with its own scheme; the reviewed source names which one a card is from.
+  const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
   const deferred = deferredCard(subjectId, card);
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${deferred ? '-deferred' : ''}`;
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -1112,6 +1132,8 @@ if (subjectIds.length !== 1) {
   process.exit(1);
 }
 const SUBJECT_ID = subjectIds[0];
+const LEVELS = ['higher', 'ordinary', ...(SUBJECT_ID === 'maths' ? ['foundation'] : []), 'common'];
+if (SUBJECT_ID === 'maths') validateMathematicsReviewSources();
 const SUBJECT = SUBJECTS[SUBJECT_ID];
 if (SUBJECT_ID === 'economics') {
   // During the corpus audit, unreviewed papers remain explicitly pending.
@@ -1214,7 +1236,16 @@ for (const id of Object.keys(subjectSourceBindings)) {
 
 const appliedCorrections = [];
 const cards = [];
+// These two authored Japanese candidates were absent from the frozen served
+// deck. A later generic provenance improvement must not silently publish an
+// unreviewed older sitting during the 2026 source review. They remain OPEN in
+// the paper ledger until their 2021 Ordinary source review resolves them.
+const pendingJapaneseCandidates = new Set(['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv']);
 for (const raw of rawCards) {
+  if (SUBJECT_ID === 'japanese' && pendingJapaneseCandidates.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: unshipped legacy candidate; awaiting its original-paper review`);
+    continue;
+  }
   if (repairedFrenchIds.has(raw.id)) {
     appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
     continue;
@@ -1282,7 +1313,9 @@ for (const raw of rawCards) {
     if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
     appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
   }
-  cards.push(card);
+  // A live card keeps its live conceptId (R12): live-concept-ids.json lists the
+  // only cards this touches, all in Codex's reviewed subjects.
+  cards.push(withLiveConceptId(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card));
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
 }
 
@@ -1325,6 +1358,7 @@ const figureRecord = (key) => {
       alt: inspected.alt,
       attribution: inspected.attribution,
       ...(inspected.solution ? { solution: true } : {}),
+      ...(inspected.sourceNote ? { sourceNote: inspected.sourceNote } : {}),
     };
   }
 
@@ -1539,8 +1573,8 @@ function groupFault(c) {
 
 function sourceMaterialFault(source, field = 'sourceMaterial') {
   if (!source || typeof source !== 'object') return `${field} is not an object`;
-  if (!['source-text', 'source-illustration'].includes(source.kind)) {
-    return `${field}.kind must be source-text or source-illustration`;
+  if (!['source-text', 'source-illustration', 'source-question'].includes(source.kind)) {
+    return `${field}.kind must be source-text, source-illustration or source-question`;
   }
   for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
     if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
@@ -1628,13 +1662,19 @@ function relabelDistractors(c) {
  * answered without seeing which diagram is meant. Where two cards claim the same
  * question, the one carrying a figure wins.
  */
+// A repeated printed reference in two distinct Mathematics booklets is two
+// tasks. Preserve ordinary duplicate resolution within each exact booklet.
+const questionIdentity = c => SUBJECT_ID === 'maths'
+  ? JSON.stringify([reviewedMathematicsSource(c.id)?.paperFileid ?? null, c.questionRef, c.mathematicsScale?.practiceInstruction ?? null])
+  : c.questionRef;
 const byQuestion = new Map();
 for (const c of cards) {
-  const prev = byQuestion.get(c.questionRef);
-  if (!prev) { byQuestion.set(c.questionRef, c); continue; }
+  const key = questionIdentity(c);
+  const prev = byQuestion.get(key);
+  if (!prev) { byQuestion.set(key, c); continue; }
   const prevHasFigure = Boolean(prev.figureKey);
   const thisHasFigure = Boolean(c.figureKey);
-  if (thisHasFigure && !prevHasFigure) byQuestion.set(c.questionRef, c);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(key, c);
 }
 
 const out = [];
@@ -1800,7 +1840,7 @@ for (const c of cards) {
       && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
     throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
   }
-  if (byQuestion.get(c.questionRef) !== c) {
+  if (byQuestion.get(questionIdentity(c)) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
   }
@@ -1843,6 +1883,12 @@ for (const c of cards) {
 
   const badVariants = answerVariantsFault(c);
   if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
+
+  const badAudio = audioMaterialFault(c, SUBJECT_ID);
+  if (badAudio) { dropped.push(`${c.id}: ${badAudio}`); continue; }
+
+  const badVideo = videoMaterialFault(c, SUBJECT_ID);
+  if (badVideo) throw new Error(`${c.id}: ${badVideo}`);
 
   const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
     .filter(Boolean);
@@ -1943,7 +1989,9 @@ for (const c of cards) {
    * with a questionFigure — so this was the odd one out, in the same way the
    * INVITES_DRAWING exemption above had drifted. Measured across every
    * authored deck in the repo: exactly ONE card changes verdict. */
-  if (namesLetters && !((c.figureKey || c.questionFigureKey)
+  const hasReviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
+    && c.sourceMaterial?.kind === 'source-question' && c.sourceMaterial.pages?.length;
+  if (namesLetters && !hasReviewedMathematicsSource && !((c.figureKey || c.questionFigureKey)
       && Array.isArray(c.labelKey) && c.labelKey.length)) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
@@ -2093,17 +2141,33 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const deferredEntry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  /* Codex's reviewed subjects bind each card to the exact booklet and scheme a
+   * reviewer read (an older Maths sitting prints two booklets with the same
+   * paper numbers; a deferred Physics or Home Economics card names its own
+   * deferred pair). Whether a card is deferred is still read one way, from its
+   * id (deferredCard), and the reviewed source must agree with it. */
+  const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id)
+    : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id)
+    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id)
+    : SUBJECT_ID === 'lcvp' ? reviewedLcvpSource(c) : undefined;
+  if (reviewedSource && (reviewedSource.sitting === 'deferred') !== deferredCard(SUBJECT_ID, c)) {
+    throw new Error(`${c.id}: its reviewed source sitting (${reviewedSource.sitting}) disagrees with its id`);
+  }
+  const deferredEntry = !reviewedSource && deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
   /* A Spanish listening card (section L) is answered from the Listening
    * Comprehension Test, a separate SEC booklet the Paper Trail index labels
    * "Aural Paper": its paper is that booklet, never the written paper the
    * section-less resolver returns for a language. German's listening test is
-   * the same booklet in four parts, filed L1 to L4. No other deck has these. */
+   * the same booklet in four parts, filed L1 to L4. Japanese and Russian
+   * listening cards carry their recording and name their Aural Paper through
+   * audioQuestionPaperFileid. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
   /* A DCG deferred sitting is two booklets, as June's is: its card opens the
    * one that prints its section, never simply the entry's first. */
-  const fileid = deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+  const fileid = reviewedSource
+    ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
+    : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
     ? (SUBJECT_ID === 'dcg'
@@ -2113,7 +2177,8 @@ for (const c of cards) {
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
       : SUBJECT_ID === 'music'
       ? resolveCompanionFileid('music', year, level, MUSIC_BOOKLET[c.section])
-      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+      : audioQuestionPaperFileid(c, SUBJECT_ID)
+        ?? resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
@@ -2121,26 +2186,29 @@ for (const c of cards) {
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
     schemeCitation: ${q(c.noScheme
-    ? `No marking scheme: the SEC published none for ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''}. Question quoted from the SEC examination paper — © State Examinations Commission.`
-    : `Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    ? `No marking scheme: the SEC published none for ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''}. Question quoted from the SEC examination paper — © State Examinations Commission.`
+    : `Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
     rows: [
 ${rows}
-    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
 // A later provenance, glyph or figure rejection must not silently remove a
 // task that the independent physical-paper census requires. Fail before writes.
 if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
+
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id), dropped);
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
  * "64 cards" was reported for a subject whose papers print 500 asks. Best
  * effort: a machine without python3 still builds. */
+if (SUBJECT_ID !== 'maths') {
 try {
   const { execSync } = await import('node:child_process');
   const led = execSync(
@@ -2152,6 +2220,7 @@ try {
   process.stderr.write(first
     ? `LEDGER ${first}\n`
     : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
 }
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
@@ -2212,7 +2281,10 @@ if (businessRubrics.length) {
 // point-card source, so each printed ask is carded once.
 const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve(OUT_DIR, 'rubric-authored.json'))
   ? JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards : [];
-const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+// Applied Maths, Japanese and Russian lay a reviewed overlay (reviewed.json)
+// over the generated cards of each level module.
+const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
+const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
       : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
@@ -2254,9 +2326,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 ${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).join('\n')}
 ];
 ` : ''}
-export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
+export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -2273,13 +2345,15 @@ for (const level of LEVELS) {
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
-  const reviewedIds = SUBJECT_ID === 'applied-maths'
+  const reviewedIds = reviewedOverlaySubject
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  const reviewedAliases = SUBJECT_ID === 'japanese'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
   const additionsCount = SUBJECT_ID === 'french'
     ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
-  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 
@@ -2295,3 +2369,16 @@ for (const level of LEVELS) {
 const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
 const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
 writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);
+
+
+// Mathematics reconciles the just-written modules against the full Paper Trail
+// inventory, including Foundation. The legacy ledger counts only two levels
+// and runs before the files are written, so it cannot report this build.
+if (SUBJECT_ID === 'maths') {
+  const { execFileSync } = await import('node:child_process');
+  try {
+    process.stderr.write(execFileSync('python3', [resolve(ROOT, 'scripts/markbank/mathematics/audit.py')], { encoding: 'utf8' }));
+  } catch (error) {
+    process.stderr.write(String(error.stdout ?? error.message));
+  }
+}

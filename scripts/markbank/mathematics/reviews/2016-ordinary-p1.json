@@ -1,0 +1,1155 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2016,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "c8d59c42675118a8833e29cbb28cb0ca281dff789c13f42604925f4659f87b42",
+  "schemeSha256": "646321674a62752356d9a6fd253ea56e667334201c6405e1cf47e306e353e90a",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 1–20 of the combined Ordinary Level scheme (cover, notes, the Paper 1 title page, the scale table on page 5, the summary of mark allocations on page 6, and every Paper 1 model solution and marking note on pages 7–20). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 50,
+    "9": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 50 marks, Q9 45 marks). Every question is retained.",
+    "39 independently marked units, matching the printed summary of allocations on scheme page 6. Q5(a)(i)+(ii) and Q6(c)(i)+(ii) each share one printed scale and are one task.",
+    "Paper 1 bands from the 2016 Ordinary scale table on scheme page 5: 5A 0,5; 5B 0,2,5; 5C 0,2,4,5; 5D 0,2,3,4,5; 10B 0,3,10; 10C 0,2,5,10; 10D 0,2,4,6,10; 15C 0,3,7,15; 15D 0,4,7,11,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 39 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Stacked fractions are written a/b and exponents in prompts use caret notation (10(1·74)^h). The Q5(b) model solution names its terms with a U the text layer cannot carry, so its equations are quoted without the U1/U2 labels and its “Some relevant substitution into Un” band is not quoted.",
+    "Seven parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal: Q2(b) (the Argand diagram), Q5(a)(i)+(ii) (the completed table and differences), Q5(b) (the band naming Un), Q8(b)(i) (the table), Q8(b)(ii) (the graph), Q9(a)(i) (the table) and Q9(a)(ii) (the graphs).",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 2); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2016-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes.",
+      "questionText": "One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay."
+    },
+    {
+      "id": "maths-2016-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes. Part (a): One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay.",
+      "questionText": "One week, she works for h hours and makes d deliveries. Write a formula in h and d for the wage (w) she receives."
+    },
+    {
+      "id": "maths-2016-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes. Part (a): One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay.",
+      "questionText": "Another week, she works for 6 hours and makes 12 deliveries. She also works 5 hours on a Sunday, at time and a half, and makes some deliveries. In total, she receives €161·50 for that week. Find how many deliveries she makes on the Sunday."
+    },
+    {
+      "id": "maths-2016-ol-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers.",
+      "questionText": "Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2016-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers. Part (a): Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ.",
+      "questionText": "Plot z₁, z₂, and z₃ on the given Argand diagram and label each point clearly."
+    },
+    {
+      "id": "maths-2016-ol-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers. Part (a): Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ.",
+      "questionText": "Investigate if |z₂ − z₃| = |z₁ + z₂|."
+    },
+    {
+      "id": "maths-2016-ol-p1-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers.",
+      "questionText": "Find the complex number w, such that w = z₁/z₂. Give your answer in the form a + bi, where a, b ∈ ℝ."
+    },
+    {
+      "id": "maths-2016-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve for x: 3(x − 7) + 5(x − 4) = 15, where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2016-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        3,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the equations below to find the value of a and the value of b: 4a + 3b = −3; 5a = 25 + 2b."
+    },
+    {
+      "id": "maths-2016-ol-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "List all the values of x that satisfy the inequality 2(2x − 3) + 6x < 25, where x ∈ ℕ."
+    },
+    {
+      "id": "maths-2016-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ.",
+      "questionText": "Find the coordinates of the point at which the graph of f cuts the y-axis."
+    },
+    {
+      "id": "maths-2016-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ.",
+      "questionText": "Verify, using algebra, that the point A(1, 7) is on the graph of f."
+    },
+    {
+      "id": "maths-2016-ol-p1-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ.",
+      "questionText": "Find f′(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1."
+    },
+    {
+      "id": "maths-2016-ol-p1-q4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ. Part (c)(i): Find f′(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1.",
+      "questionText": "Hence, find the equation of the tangent to the graph of f at the point A(1, 7)."
+    },
+    {
+      "id": "maths-2016-ol-p1-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first five numbers in a pattern of numbers are given in the table below. Table: Term, Number. U1 13; U2 15; U3 19; U4 25; U5 33; U6 _; U7 _; U8 _.",
+      "questionText": "(i) Follow the pattern in the table above to write the next three numbers into the table. (ii) Use the data in the table to show that the pattern is quadratic."
+    },
+    {
+      "id": "maths-2016-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The first five numbers in a pattern of numbers are given in the table below. Table: Term, Number. U1 13; U2 15; U3 19; U4 25; U5 33; U6 _; U7 _; U8 _.",
+      "questionText": "Uₙ = n² + bn + c where b, c ∈ ℤ. Find the value of b and the value of c."
+    },
+    {
+      "id": "maths-2016-ol-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "The table below shows the first five terms of an arithmetic sequence. Find an expression for Tₙ, the nth term of the sequence. Hence, or otherwise, find the value of T₃₀, the 30th term. Table: Term, Number. T1 12; T2 14; T3 16; T4 18; T5 20."
+    },
+    {
+      "id": "maths-2016-ol-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage.",
+      "questionText": "Each fortnight, Fiona pays income tax at the rate of 20% on the first €1300 she earns and 40% on the remainder. She has tax credits of €126 per fortnight. Find how much income tax she pays per fortnight."
+    },
+    {
+      "id": "maths-2016-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage.",
+      "questionText": "Each fortnight, Fiona also pays USC on her gross wage. The rates are: 1% on the first €462 she earns, 3% on the next €214, and 5·5% on the balance. Find the total amount of USC she pays each fortnight."
+    },
+    {
+      "id": "maths-2016-ol-p1-q6-c-i",
+      "printedParts": [
+        "Q6(c)(i)",
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage. Part (a): Each fortnight, Fiona pays income tax at the rate of 20% on the first €1300 she earns and 40% on the remainder. She has tax credits of €126 per fortnight. Find how much income tax she pays per fortnight. Part (b): Each fortnight, Fiona also pays USC on her gross wage. The rates are: 1% on the first €462 she earns, 3% on the next €214, and 5·5% on the balance. Find the total amount of USC she pays each fortnight.",
+      "questionText": "(i) Fiona pays PRSI amounting to €18 each fortnight. Find the sum of her fortnightly deductions. (ii) Write the sum of her fortnightly deductions as a percentage of her gross wage. Give your answer correct to one decimal place."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3.",
+      "questionText": "Find the value of the investment at the end of 3 years if Paul chooses Option 1 and does not take any money out."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3.",
+      "questionText": "Find the value of the investment at the end of 3 years if Paul chooses Option 2."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3.",
+      "questionText": "Give one issue, other than the rate of interest earned, that Paul might take into account when deciding between Option 1 and Option 2."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Paul would like his investment of €8000 to amount to €9000 after 3 years. What annual rate of compound interest would be required for this to happen? Give your answer as a percentage."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Another bank offers to invest his €8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t − 1·2t² where v is the value of the fund, in euro, and t is the time, in months, since the €8000 was invested.",
+      "questionText": "Find the value of the money in the fund after 12 months."
+    },
+    {
+      "id": "maths-2016-ol-p1-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Another bank offers to invest his €8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t − 1·2t² where v is the value of the fund, in euro, and t is the time, in months, since the €8000 was invested. Part (e)(i): Find the value of the money in the fund after 12 months.",
+      "questionText": "Mary invests €8000 for 1 year at r % per annum. After 1 year her investment is worth the same amount as the answer to part (e)(i) above. Find the value of r, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown.",
+      "questionText": "By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (a): By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x.",
+      "questionText": "Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6·5, _, _, _, _, _, _. A (m²): _, _, _, _, 26, _, _, _, _, _, _."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (b)(i): Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6·5, _, _, _, _, _, _. A (m²): _, _, _, _, 26, _, _, _, _, _, _.",
+      "questionText": "Use the values of x and A from the table to plot the graph of A on the grid below."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (b)(ii): Use the values of x and A from the table to plot the graph of A on the grid below.",
+      "questionText": "Use your graph to estimate the maximum value of A and write the corresponding length and width. Table: A: Maximum area (m²) _; Length (m) _; Width (m) _."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (a): By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x.",
+      "questionText": "Show that the area of the rectangle can be written as A = 10·5x − x²."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(i): Show that the area of the rectangle can be written as A = 10·5x − x².",
+      "questionText": "Find dA/dx."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-d-iii",
+      "printedParts": [
+        "Q8(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(ii): Find dA/dx.",
+      "questionText": "Hence, find the value of x which will give the maximum area."
+    },
+    {
+      "id": "maths-2016-ol-p1-q8-d-iv",
+      "printedParts": [
+        "Q8(d)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(i): Show that the area of the rectangle can be written as A = 10·5x − x². Part (d)(iii): Hence, find the value of x which will give the maximum area.",
+      "questionText": "Find this maximum area."
+    },
+    {
+      "id": "maths-2016-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours.",
+      "questionText": "Complete the table below to show what Company A charges and what Company B charges for jobs that take up to 5 hours. Where necessary give the charge correct to the nearest cent. Table: Time (hours): 0, 1, 2, 3, 4, 5. A(h) (€): _, _, _, _, 68, _. B(h) (€): _, _, _, _, 91·66, _."
+    },
+    {
+      "id": "maths-2016-ol-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(i): Complete the table below to show what Company A charges and what Company B charges for jobs that take up to 5 hours. Where necessary give the charge correct to the nearest cent. Table: Time (hours): 0, 1, 2, 3, 4, 5. A(h) (€): _, _, _, _, 68, _. B(h) (€): _, _, _, _, 91·66, _.",
+      "questionText": "On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly."
+    },
+    {
+      "id": "maths-2016-ol-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(ii): On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly.",
+      "questionText": "Which company would charge least for a job that takes 2½ hours to complete? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2016-ol-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(ii): On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly.",
+      "questionText": "Use your graphs to estimate the value of h for which the charge is the same for both companies."
+    },
+    {
+      "id": "maths-2016-ol-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours.",
+      "questionText": "Find the difference in cost for a job that takes 6 hours to complete."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        12
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "Option 1 and Option 2",
+      "classification": "mathematical-context",
+      "reason": "The two investment options are both evaluated in required tasks (a) and (b), and (c) asks about choosing between them; there is no printed choice of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:e7b28c2c29184c9d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "9:1140575fab7c4ccf": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "12:5b1e224a2e9b4139": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "12:dabd24cf05f81f64": {
+      "classification": "mathematical-context",
+      "reason": "The two investment options are both evaluated in required tasks (a) and (b), and (c) asks about choosing between them; there is no printed choice of prompts."
+    },
+    "12:cf23b293fb6dcd4e": {
+      "classification": "mathematical-context",
+      "reason": "The two investment options are both evaluated in required tasks (a) and (b), and (c) asks about choosing between them; there is no printed choice of prompts."
+    }
+  }
+}

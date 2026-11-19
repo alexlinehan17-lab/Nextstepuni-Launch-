@@ -1,0 +1,1235 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2023,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "9052b555ed7c67b31ab4999b72ba6d093a2bb6e436121ede930cafeda11a989e",
+  "schemeSha256": "93ff918688f035f8913891baa00334849135b724b07faccd04345e104c960437",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 32 paper pages and all 20 marking-scheme pages; every separately marked block checked against the page 5 allocation summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 45,
+    "10": 45,
+    "11": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The 35 marking units include cross-letter groupings Q1(b)/(c), Q4(a)/(b), Q5(b)/(c) and Q11(a)/(b)/(c). All component prompts remain together.",
+    "Q2(a)(i) carries the physical-scale ruler to support the 9 cm by 5 cm rectangle construction.",
+    "Q7(c) accepts constructed PIN examples and asks a counting problem. The possible mathematical answers are not practice-prompt variants."
+  ],
+  "cards": [
+    {
+      "id": "maths-2023-fl-q1-a",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "31 matches were played in the UEFA Women’s EURO 2022 finals. The number of goals in each of the matches is shown below: 1, 5, 5, 4, 4, 2, 2, 6; 2, 8, 1, 2, 3, 5, 2, 3; 5, 1, 3, 1, 5, 5, 2, 1; 3, 2, 1, 1, 4, 3, 3.",
+      "questionText": "(i) Complete the table below to show how many matches had 1 goal, 2 goals, etc. (ii) In the line plot below, each match is represented by a dot. Complete the line plot. Two columns are filled in.",
+      "solutionQuotes": [
+        "7, 7, 6, 3, 6, 1, 0, 1"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q1-b-c",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)",
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "31 matches were played in the UEFA Women’s EURO 2022 finals. The number of goals in each of the matches is shown below: 1, 5, 5, 4, 4, 2, 2, 6; 2, 8, 1, 2, 3, 5, 2, 3; 5, 1, 3, 1, 5, 5, 2, 1; 3, 2, 1, 1, 4, 3, 3.",
+      "questionText": "(b)(i) In how many matches was exactly 1 goal scored? (ii) In how many matches were 4 goals or more scored? (c) Work out the percentage of the matches in which less than 3 goals were scored. Give your answer correct to the nearest percent.",
+      "solutionQuotes": [
+        "3 + 6 + 1 + 1 = 11",
+        "45% to nearest percent"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below.",
+      "questionText": "Construct the rectangle ABCD, including the diagonal [AC], in the space below. The side [AB] is already given.",
+      "solutionQuotes": [
+        "3 lines constructed correctly"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2023-fl-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below.",
+      "questionText": "Use Pythagoras’ Theorem to find the length of the diagonal [AC]. Give your answer in cm, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "10·30 cm"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q2-b",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below. Pádraig marked the angle CAB as X in his sketch.",
+      "questionText": "(i) Tick which of the following is correct. Tick one box only: sin X = 5/7; cos X = 5/9; tan X = 5/9; tan X = 9/5. (ii) Hence, use your calculator to work out the size of angle X. Give your answer correct to the nearest degree.",
+      "solutionQuotes": [
+        "identifies opposite/adjacent/hypotenuse"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Nyura wants to buy breakfast cereal. The cereal she likes comes in two different box sizes: Box A and Box B. In the local shop, both boxes are on “special offer” as shown: Box A, usual price €5 for 400 g, special offer 20% off marked price. Box B, usual price €6 for 600 g, special offer 10% extra free.",
+      "questionText": "(i) Box A contains 400 g and usually costs €5. The special offer has 20% off this price. Work out the “special offer” price of Box A. (ii) Box B usually has 600 g. The special offer has an extra 10% free. Work out the “special offer” number of grams of cereal in Box B.",
+      "solutionQuotes": [
+        "5 × 0·8 = €4",
+        "600 × 1·1 = 660 g"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Nyura wants to buy breakfast cereal. The cereal she likes comes in two different box sizes: Box A and Box B. In the local shop, both boxes are on “special offer” as shown: Box A, usual price €5 for 400 g, special offer 20% off marked price. Box B, usual price €6 for 600 g, special offer 10% extra free.",
+      "questionText": "Work out which box offers the better value for money. Justify your answer with calculations. Answer A or B.",
+      "solutionQuotes": [
+        "Answer: B (more grams per euro)"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q3-b",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Fionn had to do the following calculation: 107·97/(12·2 − 3·05).",
+      "questionText": "(i) First, he made an estimate of what the answer should be. To do this, he wrote each number correct to the nearest whole number. By writing each number correct to the nearest whole number, use the boxes below to work out Fionn’s estimate. (ii) Use a calculator to find the actual value of 107·97/(12·2 − 3·05).",
+      "solutionQuotes": [
+        "one or both numbers rounded off correctly in (i)"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q4-a-b",
+      "printedParts": [
+        "Q4(a)",
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "",
+      "questionText": "(a) A fair spinner is shown in the diagram. Seán spins it. What is the probability that the arrow lands on a number greater than 5? (b) Below is a list of numbers, some of which could be probabilities: 0·79, 1, 0·2, −0·4. Complete the table below by writing the correct probabilities from the list above next to the corresponding description: Likely, Unlikely, Certain. You do not need to use all the numbers given.",
+      "solutionQuotes": [
+        "Likely: 0·79",
+        "Unlikely: 0·2",
+        "Certain: 1"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a school all students, boys and girls, study either French or German. No student studies both subjects. There are 240 boys in the school. 96 of the boys study French. 50 of the girls study German. 60 more girls study French than study German.",
+      "questionText": "Complete the table below.",
+      "solutionQuotes": [
+        "240 – 96 and fails to finish correctly"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q4-c-ii-iii",
+      "printedParts": [
+        "Q4(c)(ii)",
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "In a school all students, boys and girls, study either French or German. No student studies both subjects. There are 240 boys in the school. 96 of the boys study French. 50 of the girls study German. 60 more girls study French than study German.",
+      "questionText": "(ii) A boy is chosen at random from the school. Find the probability that he studies French. (iii) A student is chosen at random from the school. Find the probability that the student is a girl.",
+      "solutionQuotes": [
+        "Correct numerator or denominator"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q5-a",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The students in a class were surveyed about their hair colour. The results are shown in the table below. Hair colour: Brown, Red, Blonde, Black, Other. Number of students: 12, 3, 4, 8, 3, respectively.",
+      "questionText": "(i) Work out the total number of students in the class. (ii) Draw a bar chart on the grid below to show the information in the table.",
+      "solutionQuotes": [
+        "12 + 3 + 4 + 8 + 3 = 30"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q5-b-c",
+      "printedParts": [
+        "Q5(b)",
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "",
+      "questionText": "(b) A list of numbers is shown below. The numbers are written in increasing order. Two of the numbers are missing: 1, 2, 4, [blank], 10, 14, [blank]. Fill in the two missing numbers so that the median of the list of numbers is 9 and the range of the list of numbers is 17. (c) The mode of 3 numbers is 4. The mean of the same 3 numbers is 5. Write the 3 numbers into the 3 boxes below.",
+      "solutionQuotes": [
+        "1, 2, 4, 9, 10, 14, 18",
+        "4, 4, 7"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q6-a",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line",
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Four points, A, B, C, and D are shown on the co-ordinate diagram below.",
+      "questionText": "(i) Write down the coordinates of point A. (ii) Complete the table below, by filling in the correct image of the point A under each of the given transformations: Axial symmetry in x-axis; Axial symmetry in y-axis; Central symmetry in the point (0, 0). Image of point A: B, C, or D.",
+      "solutionQuotes": [
+        "Axial symmetry in x-axis: D or (3, -4)"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q6-b-i-ii",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "John travelled to the cinema to watch a film. The distance-time graph below shows his distance travelled from home, to the cinema and home again.",
+      "questionText": "(i) On the way to the cinema John stopped at a shop to buy sweets. How long did he spend in the shop? (ii) How far was the cinema from John’s house?",
+      "solutionQuotes": [
+        "10 minutes",
+        "16 km"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "John travelled to the cinema to watch a film. The distance-time graph below shows his distance travelled from home, to the cinema and home again.",
+      "questionText": "Three parts of the graph are labelled a, b, and c. In which of the three parts a, b, or c was John travelling slowest? Give a reason for your answer, based on the graph.",
+      "solutionQuotes": [
+        "The slope of the line is less steep than a or b"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q7-a",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Kinga is buying a computer online. The price, excluding VAT, is €500. She must pay VAT at 23%.",
+      "questionText": "(i) Work out how much VAT Kinga must pay. (ii) She must also pay a delivery charge of €40. The delivery charge is added after the VAT at 23%. Work out how much Kinga pays in total for the computer, including the VAT and delivery charge.",
+      "solutionQuotes": [
+        "500 × 0·23 = €115",
+        "500 + 115 + 40 = €655"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The distance from the Earth to the Moon is approximately 384 000 kilometres. An unmanned space ship travels at a speed of 12 kilometres per second.",
+      "questionText": "Work out how long it would take to travel from the Earth to the Moon. Give your answer in minutes, correct to the nearest minute.",
+      "solutionQuotes": [
+        "384 000 ÷ 12 = 32 000 seconds"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q7-c",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)",
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A 4-digit PIN code uses the digits 0 to 9 inclusive. An example of a 4-digit PIN code is 0 3 3 1.",
+      "questionText": "(i) Write down an example of a 4-digit PIN code ending in an even number. (ii) Kinga has a 4-digit PIN code for her bank card. How many possible codes are there? (iii) Kinga remembers her PIN code as two 2-digit numbers. The first 2-digit number is between 20 and 29. The second 2-digit number is twice the first one. Each of the 4 digits is different. Write a possible 4-digit code for Kinga’s bank card in the boxes below.",
+      "solutionQuotes": [
+        "10 × 10 × 10 × 10 = 10 000",
+        "2 3 4 6 or other correct answer"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The diagram below shows some steps (not to scale). The total height of the steps is 30 cm and the total length is 120 cm, as shown. Each individual step has a height of 10 cm and a length of l cm.",
+      "questionText": "Find the value of l. Give your answer in cm.",
+      "solutionQuotes": [
+        "120 ÷ 3 = 40 cm"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows some steps (not to scale). The total height of the steps is 30 cm and the total length is 120 cm, as shown. Each individual step has a height of 10 cm and a length of l cm.",
+      "questionText": "Find, in cm², the area of the shape above.",
+      "solutionQuotes": [
+        "10 × 40 = 400 cm²",
+        "400 × 6 = 2400 cm²"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q8-b",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Christian is filling glasses with orange juice. Each glass is roughly in the shape of a cylinder with a radius of 3 cm and a height of 14 cm, as shown in the diagram.",
+      "questionText": "(i) Work out the volume of each glass, correct to the nearest cm³. (ii) Christian has four 1 litre containers of orange juice. He fills glasses with 360 cm³ of orange juice. Work out how many glasses Christian can fill, using the juice from these four containers. Note: 1 litre = 1000 cm³.",
+      "solutionQuotes": [
+        "396 cm³ to the nearest cm³",
+        "11 full glasses"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q9-a",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Janusz and Sophia have a rectangular garden. It has a pond and a shed, as shown in the diagram below (not to scale). The pond has a radius of 1·5 m. A concrete path around the pond has a width of 0·5 m. The size of the shed is 3 m × 2 m.",
+      "questionText": "(i) Work out the area of the shed. (ii) Show that the area of the pond and concrete path together is 12·57 m², correct to 2 decimal places.",
+      "solutionQuotes": [
+        "2 × 3 = 6 m²",
+        "Radius of pond + path = 2"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q9-b",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Janusz and Sophia have a rectangular garden. It has a pond and a shed, as shown in the diagram below (not to scale). The pond has a radius of 1·5 m. A concrete path around the pond has a width of 0·5 m. The size of the shed is 3 m × 2 m. The total area of the garden is 96 m². Janusz decides to plant all of the garden, except the area covered by the shed, the pond and the path, with wildflowers. It is recommended that the wildflower seeds be sown at the rate of 2·4 g/m².",
+      "questionText": "(i) Find the area of the garden to be sown with the wildflower seeds. Give your answer, in m², correct to the nearest whole number. (ii) Work out how many grams of wildflower seeds will be needed, to the nearest gram.",
+      "solutionQuotes": [
+        "77 × 2·4 = 184·8 = 185 g"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q9-c",
+      "printedParts": [
+        "Q9(c)(i)",
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Their two children, Ronan and Maja, have been to the market, where they each bought a plant. The graph below shows the growth of Ronan’s plant over a number of weeks. Week 0 is when they buy their plants.",
+      "questionText": "(i) What height was Ronan’s plant when he bought it? (ii) How much did his plant grow by each week?",
+      "solutionQuotes": [
+        "15 cm",
+        "17 – 15 = 2 cm per week"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Maja’s plant was 10 cm high when she bought it. Maja’s plant grew at the rate of 3 cm a week.",
+      "questionText": "Complete the table below to show the height of her plant after each of the first 6 weeks.",
+      "solutionQuotes": [
+        "3 or 4 correct entries"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q9-d-ii-iii",
+      "printedParts": [
+        "Q9(d)(ii)",
+        "Q9(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Their two children, Ronan and Maja, have been to the market, where they each bought a plant. The graph below shows the growth of Ronan’s plant over a number of weeks. Week 0 is when they buy their plants. Maja’s plant was 10 cm high when she bought it. Maja’s plant grew at the rate of 3 cm a week.",
+      "questionText": "(ii) On the diagram on the previous page, draw a graph to show the height of Maja’s plant over the first 6 weeks. Use the same axes and scales as the graph of Ronan’s plant. (iii) Using your graph, write down the co-ordinates of the point of intersection of the two graphs and explain what each co-ordinate means in the context of the heights of the two plants.",
+      "solutionQuotes": [
+        "After 5 weeks both plants are 25 cm tall"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q10-a",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "There is a canteen in Gráinne’s school. Students who get a Lunch Special pick one sandwich, one drink, and one piece of fruit. The table below shows the options. Sandwich: Tuna, Egg, Ham, Salad. Drink: Water, Milk, Fruit Juice. Fruit: Apple, Banana. Gráinne selects a sandwich, a drink, and a piece of fruit.",
+      "questionText": "(i) How many different Lunch Specials are possible? For example, one Lunch Special is a ham sandwich, milk, and an apple. (ii) Gráinne does not pick ham or tuna. She also does not pick a banana. How many different Lunch Specials can Gráinne pick?",
+      "solutionQuotes": [
+        "4 × 3 × 2 = 24",
+        "2 × 3 × 1 = 6"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Students pay €4·00 for a Lunch Special. The school is donating 20% of the sales of all Lunch Specials to a local charity.",
+      "questionText": "Work out how many Lunch Specials need to be sold if the charity is to get €500.",
+      "solutionQuotes": [
+        "500 ÷ 0·8 = 625"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q10-c",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Gráinne has a bag of mixed sweets. There are 4 red and 6 green sweets in the bag. She picks one sweet at random from the bag.",
+      "questionText": "(i) What is the probability that Gráinne picks a green sweet? (ii) Gráinne eats a green sweet. She then picks another sweet at random from the bag. What is the probability that the second sweet that Gráinne picks is green?",
+      "solutionQuotes": [
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q10-d",
+      "printedParts": [
+        "Q10(d)(i)",
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "There is a park near Gráinne’s home. A path goes around the park. The path consists of two parallel sections that are joined by quarter circular ends, of radius 40 m, as shown in the diagram. The parallel sections are each 140 m long. The perpendicular distance between them is 40 m.",
+      "questionText": "(i) Work out the length of one lap of the path. Give your answer to the nearest metre. (ii) Every day, Gráinne goes for a run on the path. Work out the number of full laps she must run in order to cover a distance of at least 5 km.",
+      "solutionQuotes": [
+        "140 + 140 + 40π = 405·66",
+        "13 laps"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q11-a-b-c",
+      "printedParts": [
+        "Q11(a)",
+        "Q11(b)",
+        "Q11(c)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aidan and Briana live near Charlestown in Co. Mayo. They decide to go on holidays to Orlando in Florida. They will fly out from Dublin Airport.",
+      "questionText": "(a) They will travel from their home to the airport, a distance of 200 km. The journey will take 2½ hours. Work out the average speed for the journey. (b) Their flight is due to leave the airport at 14:50. They want to arrive at the airport 3½ hours before their flight is due to leave. What is the latest time that they should leave their home? (c) The local time in Dublin is 5 hours ahead of the time in Orlando. For example, 11:00 in Dublin is 06:00 in Orlando. The time taken for the flight is 8 hours and 35 minutes. What will the local time in Orlando be when they land? Remember their flight is due to leave the airport at 14:50.",
+      "solutionQuotes": [
+        "80 km/hour",
+        "14:50 – 3:30 – 2:30 = 08:50"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q11-d",
+      "printedParts": [
+        "Q11(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aidan and Briana live near Charlestown in Co. Mayo. They decide to go on holidays to Orlando in Florida. They will fly out from Dublin Airport. On arrival in Orlando, they decide to get some US Dollars. The exchange rate is $1 = €0·97. They change €500 into Dollars.",
+      "questionText": "How many US Dollars will they get? Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "500 ÷ 0·97 = $515·46"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q11-e",
+      "printedParts": [
+        "Q11(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aidan and Briana borrowed €5000 for the holiday. The interest rate is 6% compound interest per year. At the end of the first year they will pay back €2000.",
+      "questionText": "Work out how much they will have to pay back at the end of the second year in order to clear the loan.",
+      "solutionQuotes": [
+        "5000 × 1·06 = 5300",
+        "5300 – 2000 = 3300",
+        "3300 × 1·06 = €3498"
+      ]
+    },
+    {
+      "id": "maths-2023-fl-q11-f",
+      "printedParts": [
+        "Q11(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The distance from Dublin to Orlando is approximately 6535 km. There are 450 passengers booked on the flight. It is estimated that this flight will produce, on average, 102 grams of CO₂ per passenger per km.",
+      "questionText": "Work out how much CO₂ the flight to Orlando will produce in total. Give your answer in kilograms (kg).",
+      "solutionQuotes": [
+        "102 × 450 × 6535",
+        "299,956·5 kg"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        7,
+        8,
+        10,
+        14,
+        15
+      ],
+      "classification": "answer-selection",
+      "reason": "The listed trig ratios, cereal boxes, probability values, transformed points and graph sections are competing mathematical answers or required table entries, not optional practice prompts."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "classification": "answer-construction",
+      "reason": "The PIN tasks ask students to construct and count mathematical solutions; the digits and constraints are problem data, not a printed selection of examination prompts."
+    },
+    {
+      "pages": [
+        24
+      ],
+      "classification": "mathematical-counting",
+      "reason": "The sandwich/drink/fruit menu is the sample space to count. Gráinne’s choices occur within the scenario and do not offer alternative examination tasks."
+    }
+  ],
+  "selectionDecisions": {
+    "3:1896bd7d9c4fd46c": {
+      "classification": "exam-level-selection",
+      "reason": "Retain all tasks while the exam candidate selects seven Section A and two Section B questions."
+    },
+    "4:7f8644d1be436769": {
+      "classification": "exam-level-selection",
+      "reason": "Retain all tasks while the exam candidate selects seven Section A and two Section B questions."
+    },
+    "11:ddd0fe76ed4babfe": {
+      "classification": "mathematical-context",
+      "reason": "Either describes the school language categories. Chosen at random describes sampling in a probability problem, not selecting an examination prompt."
+    },
+    "20:ce5306245f12e872": {
+      "classification": "exam-level-selection",
+      "reason": "Retain all tasks while the exam candidate selects seven Section A and two Section B questions."
+    },
+    "3:79a0a4e7ab83698c": {
+      "classification": "exam-level-selection",
+      "reason": "The cover instructions require seven of the eight Section A questions. Every separately marked task is retained for practice; combinations of whole exam selections do not become distinct cards."
+    }
+  }
+}

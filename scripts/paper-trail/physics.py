@@ -126,7 +126,7 @@ def paper_index() -> list[dict]:
     if not match:
         raise RuntimeError("Could not locate Physics in paperTrailData.ts")
     # Reviewed window only: June sittings from 2010. The deferred sitting and the
-    # 1995-2009 archive papers carry no answer maps or Mark Bank cards.
+    # 1995-2009 archive papers are handled outside this main-sitting generator.
     return [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
             if not entry.get("sitting") and entry["year"] >= 2010]
 
@@ -489,7 +489,10 @@ def main() -> None:
                 raise RuntimeError(f"Preservation failure: changed {paper_id} Q{number}")
             preserved_cards += 1
 
-    TAGS_PATH.write_text(json.dumps(papers, indent=1, ensure_ascii=False) + "\n")
+    # Deferred reviews have their own source-pinned generator and geometry.
+    # Keep those records verbatim when regenerating the main-sitting corpus.
+    deferred = [paper for paper in existing if paper['fileid'].endswith('-deferred.pdf')]
+    TAGS_PATH.write_text(json.dumps(papers + deferred, indent=1, ensure_ascii=False) + "\n")
     for year, fileid, anchor_map in generated_maps:
         target_dir = HOSTED_ROOT / str(year)
         target_dir.mkdir(parents=True, exist_ok=True)

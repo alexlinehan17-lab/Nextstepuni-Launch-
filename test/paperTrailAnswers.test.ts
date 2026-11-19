@@ -69,7 +69,9 @@ describe('Paper Trail answer sidecars — shape', () => {
       // A map may add only reviewed sub-tasks to a paper whose whole questions
       // were never anchored (Agricultural Science 2018 HL): then every entry is
       // a parentN sub-task with its own audited region.
-      const subTasksOnly = map.q.every(q => Boolean(q.parentN));
+      // A reviewed task route (Russian): its own key, its own audited region, no printed parent number.
+      const isRoute = (q: typeof map.q[number]) => q.taskRoute === true;
+      const subTasksOnly = map.q.every(q => Boolean(q.parentN) || isRoute(q));
       if (!subTasksOnly) expect(printed.length).toBeGreaterThan(0);
       const nums = printed.map(q => Number(q.n));
       // question numbers strictly increasing (monotonic, no dupes)
@@ -133,6 +135,11 @@ describe('Paper Trail answer sidecars — shape', () => {
         if (q.mode === 'crop') {
           if (printed.includes(q)) expect(pages).toEqual([...pages].sort((a, b) => a - b));
           else expect(new Set(q.region.map(seg => JSON.stringify(seg))).size, `${file} ${q.n} duplicate segment`).toBe(q.region.length);
+        } else if (isRoute(q)) {
+          // A reviewed task route whose answer spans several scheme pages jumps to
+          // the first and lists them all ("Open the marking scheme to read it in full").
+          const jumpPages = q.region.map(seg => seg.p);
+          expect(jumpPages, `${file} ${q.n} jump pages in order`).toEqual([...jumpPages].sort((a, b) => a - b));
         } else {
           expect(q.region.length).toBe(1);
         }
@@ -147,6 +154,17 @@ describe('Paper Trail answer sidecars — shape', () => {
         const parents = new Set(printed.map(q => q.n));
         for (const task of tasks) {
           const id = `${file} ${task.n}`;
+          if (isRoute(task)) {
+            // Russian reviewed task route: practised as its own Mark Bank task, with
+            // an explicit audited paper region the reader returns as-is and a place
+            // in the paper's print order. Its prompt and tariff live on the card.
+            expect(typeof task.label === 'string' && task.label.trim().length > 0, `${id} label`).toBe(true);
+            expect(task.parentN === undefined && task.practiceTask === undefined && !/^\d+$/.test(task.n), `${id} own key`).toBe(true);
+            expect(task.paperRegion?.length, `${id} explicit paper region`).toBeGreaterThan(0);
+            expect(Number.isInteger(task.printOrder) && task.printOrder! > 0, `${id} printOrder`).toBe(true);
+            expect(paperRegionFor(map.q, task.n), `${id} usable paper region`).toEqual(task.paperRegion);
+            continue;
+          }
           if (task.parentN) {
             // Agricultural Science reviewed sub-task: rooted in a retained
             // printed question by parentN, with an explicit audited region the

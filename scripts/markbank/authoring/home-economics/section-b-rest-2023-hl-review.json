@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Higher English Home Economics B2–B5",
+  "status": "source-reviewed; browser QA pending",
+  "generator": "scripts/markbank/authoring/he_review_2023_hl_section_b_rest.py",
+  "sources": {
+    "paper": "2023-hl-039-paper.pdf pp3–4",
+    "scheme": "2023-marking-scheme.pdf pp12–17",
+    "hashes": "Pinned by generator"
+  },
+  "correctedExistingIds": [
+    "he-2023-hl-sb-q2a",
+    "he-2023-hl-sb-q2c",
+    "he-2023-hl-sb-q3a",
+    "he-2023-hl-sb-q3c",
+    "he-2023-hl-sb-q4a",
+    "he-2023-hl-sb-q4b",
+    "he-2023-hl-sb-q4c",
+    "he-2023-hl-sb-q5a",
+    "he-2023-hl-sb-q5b",
+    "he-2023-hl-sb-q5c"
+  ],
+  "addedIds": [],
+  "marks": {
+    "before": 200,
+    "after": 200
+  },
+  "boundaryDecisions": {
+    "Q2(a)": "Five nutrition points retain the explicit nutrient/type/function allocation and all five published paragraphs.",
+    "Q2(b)/Q3(b)": "Earlier source-reviewed open-choice cards retained unchanged.",
+    "Q3(c)/Q5(c)": "One open-choice card each; named choices are answer routes, not separate scheduled cards. Name and detail score separately.",
+    "Q4(a)": "Three required factors each have a scoring row, plus a fourth distinct additional point.",
+    "Q4(b)": "Four point slots with explicit maximum two per technique. Self-assessment requires applying this cap to the written response; no automatic classification of a written point is claimed. Allows 2+2, 2+1+1 and 1+1+1+1 distributions.",
+    "Q5(b)": "Three compulsory terms remain one response, each graded separately."
+  },
+  "corrections": [
+    "Published partial-credit steps replace all-or-nothing claims.",
+    "All omitted factors and examples restored; no arbitrary option cap.",
+    "Unsupported exact meanings for partial grades removed.",
+    "Original shared stems and question wording restored.",
+    "Historic legal content is labelled published 2023 examination guidance."
+  ],
+  "preservation": {
+    "allPreviousIdsRetained": true,
+    "otherRuntimeCardsUnchanged": true,
+    "existingAliasesUnchanged": true
+  },
+  "atlas": "All 2023 Higher B/C cards checked against their section-specific Atlas question and canonical topic.",
+  "validation": {
+    "vitest": "245 passed",
+    "python": "6 passed",
+    "browser": "Native pipe startup failed; no browser QA claim.",
+    "typecheck": "passed",
+    "deterministicRegeneration": "byte-identical",
+    "testTypecheck": "Full test type-check retains 92 previously recorded unrelated errors; no new Home Economics errors in the previous batch."
+  },
+  "remaining": "Section C review, remaining English sittings and subject-wide independent reconciliation; subject incomplete."
+}

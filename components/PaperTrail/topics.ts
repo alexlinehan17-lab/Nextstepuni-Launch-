@@ -40,9 +40,10 @@ export const paperKeyOf = (label: string): string =>
  * Music have independently selectable components that restart at Q1; legacy
  * Spanish uses one paper slot for both written and aural cards. Their
  * normalised booklet id must therefore remain in the logical key to prevent
- * false deduplication. The SEC's deferred sitting ("...-deferred.pdf") is a
- * paper of its own numbered like June's, so its questions are never collapsed
- * into June's; no other booklet's key changes. */
+ * false deduplication. Mathematics likewise retains standard and Project Maths
+ * booklets. The SEC's deferred sitting ("...-deferred.pdf") is a paper of its
+ * own numbered like June's, so its questions are never collapsed into June's;
+ * no other booklet's key changes. */
 export const logicalQuestionIdentity = (question: Pick<
   TopicSibling,
   'subjectId' | 'level' | 'year' | 'paperKey' | 'fileid' | 'n'
@@ -51,9 +52,11 @@ export const logicalQuestionIdentity = (question: Pick<
   question.level,
   question.year,
   question.paperKey,
-  question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
-    ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
-    : isDeferredFileid(question.fileid) ? 'deferred' : '',
+  question.subjectId === 'mathematics'
+    ? question.fileid.replace(/(?:EV|IV)(?=(?:-deferred)?\.pdf$)/i, 'BV')
+    : question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
+      ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
+      : isDeferredFileid(question.fileid) ? 'deferred' : '',
   question.n,
 ].join('|');
 
@@ -80,7 +83,7 @@ export function browseTopicIdsForQuestion(
     paper.subjectId,
     paper.level,
     paper.year,
-    'main',
+    indexedSitting(paper.subjectId, paper.year, paper.level, paper.lang, paper.fileid),
     question.n,
     paper.paperKey,
     paper.lang,
@@ -97,6 +100,22 @@ const questionHasTopic = (paper: PaperTopicTags, question: QuestionTopicTag, top
 
 const paperId = (subjectId: string, year: number, level: string, lang: string, fileid: string) =>
   `${subjectId}|${year}|${level}|${lang}|${fileid}`;
+
+// A deferred Q1 is a different question from June's Q1. For the subjects whose
+// deferred sittings Codex mapped in the exam-topic registry, resolve the sitting
+// from the indexed booklet, including when reading older tag records. Every
+// other subject keeps reading its questions as it always has.
+const SITTING_SCOPED_SUBJECTS = new Set(['mathematics', 'physics', 'home-economics-s-and-s', 'link-modules', 'japanese', 'russian']);
+const indexedSittings = new Map<string, 'main' | 'deferred' | 'sample'>();
+for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
+  if (!SITTING_SCOPED_SUBJECTS.has(subjectId)) continue;
+  for (const entry of entries) for (const item of entry.papers) {
+    indexedSittings.set(paperId(subjectId, entry.year, entry.level, entry.lang, item.doc.f),
+      item.sitting ?? entry.sitting ?? 'main');
+  }
+}
+const indexedSitting = (subjectId: string, year: number, level: string, lang: string, fileid: string) =>
+  indexedSittings.get(paperId(subjectId, year, level, lang, fileid)) ?? 'main';
 
 /**
  * Merge a completed exam-topic audit into the local corpus without mutating or
@@ -124,13 +143,15 @@ for (const source of PAPER_TOPIC_TAGS) {
 
 for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
   if (!examTopicTaxonomyFor(subjectId)) continue;
+  const sittingScoped = SITTING_SCOPED_SUBJECTS.has(subjectId);
   const mappings = examQuestionTopicMappingsForSubject(subjectId)
-    .filter(mapping => mapping.sitting === 'main');
+    .filter(mapping => sittingScoped || mapping.sitting === 'main');
   for (const entry of entries) {
     for (const item of entry.papers) {
       const itemPaperKey = paperKeyOf(item.label);
       const candidateQuestions = mappings.filter(mapping =>
         mapping.year === entry.year
+        && (!sittingScoped || mapping.sitting === (item.sitting ?? entry.sitting ?? 'main'))
         && mapping.level === entry.level
         && mapping.paperKey === itemPaperKey
         && (mapping.lang === 'any' || mapping.lang === entry.lang));
@@ -185,7 +206,7 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
           subjectId,
           entry.level,
           entry.year,
-          'main',
+          mapping.sitting,
           mapping.n,
           itemPaperKey,
           entry.lang,

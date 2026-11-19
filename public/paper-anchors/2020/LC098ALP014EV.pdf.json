@@ -1,0 +1,242 @@
+{
+  "v": 1,
+  "paperOnly": 1,
+  "paperFileid": "LC098ALP014EV.pdf",
+  "schemeFileid": "",
+  "component": "014",
+  "band": [
+    1,
+    1
+  ],
+  "copyright": "© State Examinations Commission",
+  "q": [
+    {
+      "n": "1",
+      "label": "Section A · Q1",
+      "printOrder": 1,
+      "pP": 3,
+      "pY": [
+        0.175154,
+        0.386579
+      ],
+      "endP": 3,
+      "endY": 0.386579,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "2",
+      "label": "Section A · Q2",
+      "printOrder": 2,
+      "pP": 3,
+      "pY": [
+        0.386579,
+        0.668194
+      ],
+      "endP": 3,
+      "endY": 0.668194,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "3",
+      "label": "Section A · Q3",
+      "printOrder": 3,
+      "pP": 3,
+      "pY": [
+        0.668194,
+        0.906817
+      ],
+      "endP": 3,
+      "endY": 0.906817,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "4",
+      "label": "Section A · Q4",
+      "printOrder": 4,
+      "pP": 4,
+      "pY": [
+        0.066627,
+        0.299002
+      ],
+      "endP": 4,
+      "endY": 0.299002,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "5",
+      "label": "Section A · Q5",
+      "printOrder": 5,
+      "pP": 4,
+      "pY": [
+        0.299002,
+        0.56323
+      ],
+      "endP": 4,
+      "endY": 0.56323,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "6",
+      "label": "Section A · Q6",
+      "printOrder": 6,
+      "pP": 4,
+      "pY": [
+        0.56323,
+        0.906817
+      ],
+      "endP": 4,
+      "endY": 0.906817,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "7",
+      "label": "Section A · Q7",
+      "printOrder": 7,
+      "pP": 5,
+      "pY": [
+        0.066627,
+        0.270213
+      ],
+      "endP": 5,
+      "endY": 0.270213,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "8",
+      "label": "Section A · Q8",
+      "printOrder": 8,
+      "pP": 5,
+      "pY": [
+        0.270213,
+        0.44943
+      ],
+      "endP": 5,
+      "endY": 0.44943,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "9",
+      "label": "Section A · Q9",
+      "printOrder": 9,
+      "pP": 5,
+      "pY": [
+        0.44943,
+        0.906817
+      ],
+      "endP": 5,
+      "endY": 0.906817,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "10",
+      "label": "Section A · Q10",
+      "printOrder": 10,
+      "pP": 6,
+      "pY": [
+        0.066627,
+        0.330784
+      ],
+      "endP": 6,
+      "endY": 0.330784,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "11",
+      "label": "Section A · Q11",
+      "printOrder": 11,
+      "pP": 6,
+      "pY": [
+        0.330784,
+        0.595012
+      ],
+      "endP": 6,
+      "endY": 0.595012,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "12",
+      "label": "Section A · Q12",
+      "printOrder": 12,
+      "pP": 6,
+      "pY": [
+        0.595012,
+        0.906817
+      ],
+      "endP": 6,
+      "endY": 0.906817,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    }
+  ]
+}

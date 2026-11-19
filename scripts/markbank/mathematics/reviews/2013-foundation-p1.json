@@ -1,0 +1,954 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2013,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "11283c9d846e0a1f78b5b1c60fb37d0417bbc00e7f144bcda06beb415f106045",
+  "schemeSha256": "447394dc691d39b689cec19197a926131ec7ab7b8a5efc88ecc545bebda06c45",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 16 original paper pages and scheme PDF pages 1–28. All 29 printed task groups (30 component scales) retained; five finite Q9(b,c) row routes generated mechanically, giving 33 cards. Publication follows the current one-card-per-printed-choice policy; legacy routes and source checks are retained in choice-policy.json.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 40,
+    "9": 35,
+    "10": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    20,
+    21
+  ],
+  "sourceNotes": [
+    "Q1(a,b,c) is one 25D task. Q2(a), Q2(b), Q3(a), Q3(b), Q9(f) and all four Q10(b) read-offs retain shared scales. Q9(b,c) is one 5B task for each of five row choices. Candidate tariff remains 300 marks.",
+    "Six whole-task starred units: Q1, Q3(a,b), Q5(a,b,c). Q10(a) has independent Points 25D and Graph 10C components; only Graph permits Full Credit minus one. It does not depend on full points credit.",
+    "Foundation scales: 5B 0,2,5; 5C 0,2,4,5; 10B 0,5,10; 10C 0,3,7,10; 15C 0,6,10,15; 20C 0,7,13,20; 25D 0,6,12,19,25. Q2(a) uses 15D 0,4,7,11,15 from the detailed notes.",
+    "Every original table, number line, pyramid net, flight timetable, fence diagram and graph grid retained with prior context. Required entries are not optional answer routes.",
+    "Sections A/B/C follow the original paper and scheme: Q1–7, Q8–9, Q10. Graph-reading estimates retain all four official answers. No Phase 3-only simultaneous-equation or discount tasks imported."
+  ],
+  "cards": [
+    {
+      "id": "maths-2013-fl-p1-q1",
+      "printedParts": [
+        "Q1(a)",
+        "Q1(b)",
+        "Q1(c)"
+      ],
+      "totalMarks": 25,
+      "scale": "25D",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        19,
+        25
+      ],
+      "schemePages": [
+        7,
+        22
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "questionText": "Use your calculator. (a) Find ∛264·3, correct to two decimal places. (b) Find the exact value of 1/(0·5)² − (1·2)³. (c) Write down the whole number closest to √70 × tan 56°.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        8,
+        22
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "The table lists 3, −2, −0·5, √2, 2⅔, sin 30° and π. Its columns are natural numbers ℕ, integers ℤ, rational numbers ℚ and real numbers ℝ. The original table and number line are supplied.",
+      "questionText": "(i) Tick each box opposite a number if it belongs to that set. (ii) Mark every number in the table on the number line and label each clearly."
+    },
+    {
+      "id": "maths-2013-fl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8,
+        22
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems",
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The average distance from the earth to the moon is 3·84 × 10⁵ km.",
+      "questionText": "(i) Write this distance as a whole number of kilometres. (ii) It took Apollo astronauts 3 days and 4 hours to travel from earth to the moon. Find their average speed in km per hour."
+    },
+    {
+      "id": "maths-2013-fl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        9,
+        23
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Liam draws a soccer pitch at a scale of 1 cm = 6·25 m. His rectangle is 16 cm long and 11 cm wide; the original diagram includes the centre circle.",
+      "questionText": "(i) Find the length of the soccer pitch. (ii) Find its perimeter.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9,
+        23
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Liam draws a soccer pitch at a scale of 1 cm = 6·25 m. His rectangle is 16 cm long and 11 cm wide; the original diagram includes the centre circle.",
+      "questionText": "The centre circle has radius 9·15 m. (i) Calculate its area on the soccer pitch. (ii) Find the correct radius for Liam’s scaled diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        7,
+        13,
+        20
+      ],
+      "schemePages": [
+        10,
+        23
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mary buys a new car costing €26 000. The garage gives her €8400 for her old car and she has savings of €5600. She borrows the remainder.",
+      "questionText": "How much does she borrow?"
+    },
+    {
+      "id": "maths-2013-fl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        10,
+        23
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mary buys a new car costing €26 000. The garage gives her €8400 for her old car and she has savings of €5600. She borrows the remainder.",
+      "questionText": "She borrows the money for three years at an annual equivalent rate (AER) of 11%. She repays all the money and interest in one repayment at the end of the three years. How much interest will she pay?"
+    },
+    {
+      "id": "maths-2013-fl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The original diagram shows the net of a figure with a square base and four triangular sides. Each grid unit is 5 mm. The base length is labelled w and each triangular side’s height is labelled d.",
+      "questionText": "Find w, the length of the base, and d, the height of each triangular side.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The original diagram shows the net of a figure with a square base and four triangular sides. Each grid unit is 5 mm. The base length is labelled w and each triangular side’s height is labelled d.",
+      "questionText": "Find the area of the base of the figure.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The original diagram shows the net of a figure with a square base and four triangular sides. Each grid unit is 5 mm. The base length is labelled w and each triangular side’s height is labelled d.",
+      "questionText": "Find the total surface area of the figure.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        12,
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "questionText": "Find the value of a² + b² when a = 20 and b = 21."
+    },
+    {
+      "id": "maths-2013-fl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        12,
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "In part (a), a = 20 and b = 21.",
+      "questionText": "Given that a² + b² = c², find the value of c."
+    },
+    {
+      "id": "maths-2013-fl-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        12,
+        24
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "questionText": "Solve the equation x² − 3x − 10 = 0."
+    },
+    {
+      "id": "maths-2013-fl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "questionText": "Simplify 2(3x − 6) − (4x − 8)."
+    },
+    {
+      "id": "maths-2013-fl-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "questionText": "Solve the equation 7x − 4 = 5x + 16."
+    },
+    {
+      "id": "maths-2013-fl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        13,
+        25
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "questionText": "Write down the natural numbers which satisfy 3x − 2 ≤ 13."
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mr and Mrs Murphy and their three children plan a week’s holiday from Dublin to Arrecife. Outbound E107 operates Monday, Thursday, Friday and Saturday, 06:45–10:40; E117 Saturday, 13:15–17:25. Return E108 operates Monday, Thursday, Friday and Saturday, 11:55–15:55; E118 Saturday, 18:40–22:35. They book the early outbound flight on Saturday and the latest return flight on the following Saturday afternoon.",
+      "questionText": "Give the flight numbers for both their outbound flight and their return flight."
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mr and Mrs Murphy and their three children plan a week’s holiday from Dublin to Arrecife. Outbound E107 operates Monday, Thursday, Friday and Saturday, 06:45–10:40; E117 Saturday, 13:15–17:25. Return E108 operates Monday, Thursday, Friday and Saturday, 11:55–15:55; E118 Saturday, 18:40–22:35. They book the early outbound flight on Saturday and the latest return flight on the following Saturday afternoon.",
+      "questionText": "The latest check-in time at Dublin is 1 hour 50 minutes before departure. What is the latest check-in time for their outbound flight?"
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mr and Mrs Murphy and their three children plan a week’s holiday from Dublin to Arrecife. Outbound E107 operates Monday, Thursday, Friday and Saturday, 06:45–10:40; E117 Saturday, 13:15–17:25. Return E108 operates Monday, Thursday, Friday and Saturday, 11:55–15:55; E118 Saturday, 18:40–22:35. They book the early outbound flight on Saturday and the latest return flight on the following Saturday afternoon.",
+      "questionText": "How long does their flight from Dublin to Arrecife take?"
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14,
+        26
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mr and Mrs Murphy and their three children plan a week’s holiday from Dublin to Arrecife. Outbound E107 operates Monday, Thursday, Friday and Saturday, 06:45–10:40; E117 Saturday, 13:15–17:25. Return E108 operates Monday, Thursday, Friday and Saturday, 11:55–15:55; E118 Saturday, 18:40–22:35. They book the early outbound flight on Saturday and the latest return flight on the following Saturday afternoon.",
+      "questionText": "Their return flight is delayed by 1 hour 40 minutes. At what time does it arrive back in Dublin?"
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15,
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The Murphy family consists of two adults and three children. Return airfare is €360 per adult and €270 per child. A week’s hotel accommodation costs €420 per adult and €210 for each of the first two children; the third child is free. Insurance costs €18·75 per person.",
+      "questionText": "Find the total cost of the airfares for the Murphy family."
+    },
+    {
+      "id": "maths-2013-fl-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        15,
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The Murphy family consists of two adults and three children. Return airfare is €360 per adult and €270 per child. A week’s hotel accommodation costs €420 per adult and €210 for each of the first two children; the third child is free. Insurance costs €18·75 per person.",
+      "questionText": "Find the total cost of the holiday for the Murphy family."
+    },
+    {
+      "id": "maths-2013-fl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        16,
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Jim builds a fence with three horizontal rails between each two vertical posts. The original diagrams show two, three and four posts. The table has post counts x = 2, 3, 4, 5, 6, with rail counts y = 3, 6 and three blanks.",
+      "questionText": "Complete the table."
+    },
+    {
+      "id": "maths-2013-fl-p1-q9-b-row-2",
+      "printedParts": [
+        "Q9(b)",
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Jim builds a fence with three horizontal rails between each two vertical posts. The original diagrams show two, three and four posts. The table has post counts x = 2, 3, 4, 5, 6, with rail counts y = 3, 6 and three blanks. Jim’s rule: subtract 1 from the number of posts and multiply the answer by 3.",
+      "questionText": "(b) Write an algebraic expression to represent Jim’s rule, using x to represent the number of posts and y to represent the number of rails. (c) Test your expression in (b) above using the numbers in one row of the table.",
+      "selectionChoice": {
+        "groupId": "q9-b-c",
+        "pool": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "choose": 1,
+        "sourcePage": 12,
+        "sourceDirective": "Test your expression in (b) above using the numbers in one row of the table.",
+        "instruction": "Write the expression, then test it using any one row of the table."
+      }
+    },
+    {
+      "id": "maths-2013-fl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Jim builds a fence with three horizontal rails between each two vertical posts. The original diagrams show two, three and four posts. The table has post counts x = 2, 3, 4, 5, 6, with rail counts y = 3, 6 and three blanks. Jim’s rule: subtract 1 from the number of posts and multiply the answer by 3.",
+      "questionText": "Jim uses 60 posts. Find the number of rails he needs."
+    },
+    {
+      "id": "maths-2013-fl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Jim builds a fence with three horizontal rails between each two vertical posts. The original diagrams show two, three and four posts. The table has post counts x = 2, 3, 4, 5, 6, with rail counts y = 3, 6 and three blanks. Ann’s rule: multiply the number of posts by 3, then subtract 3.",
+      "questionText": "Write an algebraic expression for Ann’s rule using x for posts and y for rails."
+    },
+    {
+      "id": "maths-2013-fl-p1-q9-f",
+      "printedParts": [
+        "Q9(f)(i)",
+        "Q9(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        17,
+        27
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Jim builds a fence with three horizontal rails between each two vertical posts. The original diagrams show two, three and four posts. The table has post counts x = 2, 3, 4, 5, 6, with rail counts y = 3, 6 and three blanks. Ann’s rule: multiply the number of posts by 3, then subtract 3.",
+      "questionText": "Use Ann’s rule. (i) Find how many rails are needed for 10 posts. (ii) Find how many posts are used if 228 rails are needed."
+    },
+    {
+      "id": "maths-2013-fl-p1-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 35,
+      "components": [
+        {
+          "id": "points",
+          "label": "Points",
+          "code": "25D",
+          "marks": [
+            0,
+            6,
+            12,
+            19,
+            25
+          ]
+        },
+        {
+          "id": "graph",
+          "label": "Graph",
+          "code": "10C",
+          "fullCreditMinusOne": true,
+          "marks": [
+            0,
+            3,
+            7,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        18,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "questionText": "Draw the graph of the function f on the supplied grid.",
+      "stem": "Let f(x) = 2x² − 3x − 6, for −2 ≤ x ≤ 3, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2013-fl-p1-q10-b",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)",
+        "Q10(b)(iii)",
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        18,
+        19,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Let f(x) = 2x² − 3x − 6, for −2 ≤ x ≤ 3, x ∈ ℝ. Part (a): draw the graph on the supplied grid.",
+      "questionText": "Use your graph to estimate: (i) f(1·5); (ii) the minimum value of f(x); (iii) the values of x for which f(x) = 2; (iv) the range of values of x for which f(x) is decreasing."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10,
+        14
+      ],
+      "wording": "Answer all ten questions; Answer all seven questions; Answer both Question 8 and Question 9; Answer Question 10",
+      "classification": "all-required",
+      "reason": "Every task across all three sections retained."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "using the numbers in one row of the table",
+      "classification": "finite-choose-one-of-five",
+      "reason": "All five row routes generated at the joint Q9(b,c) 5B boundary."
+    },
+    {
+      "pages": [
+        4,
+        12
+      ],
+      "wording": "Tick each box; Mark each of the numbers; complete the table",
+      "classification": "all-required-entries",
+      "reason": "Every table entry is required; no optional pool."
+    }
+  ],
+  "selectionDecisions": {
+    "2:31aa4d5589d0dbed": {
+      "classification": "all-required",
+      "reason": "All required questions in all three sections retained."
+    },
+    "3:96565373158b0002": {
+      "classification": "all-required",
+      "reason": "All required questions in all three sections retained."
+    }
+  }
+}

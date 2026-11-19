@@ -1,0 +1,1127 @@
+{
+  "paperFileid": "LC003GLP130EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "offeredMarks": 350,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50
+  },
+  "scales": {
+    "5A": [
+      0,
+      5
+    ],
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10A": [
+      0,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      8,
+      10
+    ],
+    "15C": [
+      0,
+      8,
+      13,
+      15
+    ],
+    "15D": [
+      0,
+      7,
+      10,
+      13,
+      15
+    ]
+  },
+  "status": "Complete: independent source and crop review, publication, reconciliation and runtime verification passed",
+  "reviewedAt": "2026-10-30",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "generalNotesPages": [
+    18,
+    19,
+    20,
+    26
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        21
+      ],
+      "questionText": "Explain what a prime number is."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        21
+      ],
+      "questionText": "Express 2652 as a product of prime numbers."
+    },
+    {
+      "suffix": "1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        21
+      ],
+      "questionText": "The number 2⁶¹ − 1 is prime. Using your calculator, or otherwise, express its value to two significant figures as a × 10ⁿ, where 1 ≤ a < 10 and n is natural.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        7,
+        21
+      ],
+      "questionText": "Use your scientific-notation answer from part (c) to state how many digits are in the exact value of 2⁶¹ − 1.",
+      "stem": "Part (c) asks for 2⁶¹ − 1 to two significant figures in scientific notation. Calculate this first if practising independently."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        21
+      ],
+      "questionText": "How much is in the account at the end of the two years?",
+      "stem": "A €20,000 deposit earns 3% in the first year and 6% in the second. Interest is added at the end of each year."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        8,
+        21
+      ],
+      "questionText": "Show that, to the nearest euro, the same interest is earned by investing the money for two years at 4.49% compound interest (AER).",
+      "stem": "A €20,000 deposit earns 3% in the first year and 6% in the second. Interest is added at the end of each year."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        22
+      ],
+      "questionText": "Write out the first three terms.",
+      "stem": "The arithmetic sequence is Tₙ = 38 − 4n, for n = 1, 2, 3, 4, …."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        22
+      ],
+      "questionText": "What is the first negative term?",
+      "stem": "The arithmetic sequence is Tₙ = 38 − 4n, for n = 1, 2, 3, 4, …."
+    },
+    {
+      "suffix": "3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        22
+      ],
+      "questionText": "Find the sum of the first 15 terms.",
+      "stem": "The arithmetic sequence is Tₙ = 38 − 4n, for n = 1, 2, 3, 4, …."
+    },
+    {
+      "suffix": "3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        22
+      ],
+      "questionText": "Find n for which the sum of the first n terms is 0.",
+      "stem": "The arithmetic sequence is Tₙ = 38 − 4n, for n = 1, 2, 3, 4, …."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        23
+      ],
+      "questionText": "Solve 2f + (2/3)g + 1 = 0 and f + (1/2)g + 1 = 0."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        23
+      ],
+      "questionText": "Solve 5 − (3/4)x ≤ 19/8 and show the solution set on the original number line."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "questionText": "Find z² and z³.",
+      "stem": "z = 1 + i, where i² = −1."
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "questionText": "Verify that z⁴ = −4.",
+      "stem": "z = 1 + i, where i² = −1."
+    },
+    {
+      "suffix": "5-a-iii",
+      "printedParts": [
+        "Q5(a)(iii)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "questionText": "Show z, z², z³ and z⁴ on the original Argand diagram.",
+      "stem": "z = 1 + i, where i² = −1.",
+      "markingNote": "Calculate z² and z³ if practising independently; z⁴ = −4 is given by part (a)(ii). Follow through the candidate’s values from (a)(i)."
+    },
+    {
+      "suffix": "5-a-iv",
+      "printedParts": [
+        "Q5(a)(iv)"
+      ],
+      "scale": "10A",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        11,
+        24
+      ],
+      "questionText": "Make one observation about the pattern of points on your Argand diagram.",
+      "stem": "z = 1 + i, where i² = −1. First plot z, z², z³ and z⁴ on the supplied Argand diagram, as required in (a)(iii).",
+      "markingNote": "The ten marks are for the observation, but the scheme requires at least two points plotted in (a)(iii). When practising independently, make the plot before the observation; the preparatory plot carries no extra marks on this card."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "schemePages": [
+        12,
+        24
+      ],
+      "questionText": "Using z⁴, or otherwise, find z⁸, z¹² and z¹⁶ and complete the original table.",
+      "stem": "z = 1 + i, where i² = −1. z⁴ = −4."
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "schemePages": [
+        12,
+        24
+      ],
+      "questionText": "Based on the pattern of values from part (b), or otherwise, state whether z⁴⁰ is positive or negative. Explain your answer.",
+      "stem": "z = 1 + i, where i² = −1. z⁴ = −4. Part (b) asks for z⁸, z¹² and z¹⁶; calculate these if using the pattern."
+    },
+    {
+      "suffix": "5-d-e-f",
+      "printedParts": [
+        "Q5(d)",
+        "Q5(e)",
+        "Q5(f)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        7,
+        8,
+        9
+      ],
+      "schemePages": [
+        12,
+        13,
+        24
+      ],
+      "questionText": "(d) Write z⁴⁰ as a power of 2. (e) Find z⁴¹. (f) On an Argand diagram, how far from the origin is z⁴¹?",
+      "stem": "z = 1 + i, where i² = −1. From part (a)(ii), z⁴ = −4.",
+      "markingNote": "Parts (d), (e) and (f) share one five-mark scale. Complete all three; do not award five marks to each part."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        14,
+        25
+      ],
+      "questionText": "Complete the original altitude table for t = 0, 20, 40, 60, 80 and 100 seconds.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation."
+    },
+    {
+      "suffix": "6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        15,
+        25
+      ],
+      "questionText": "Draw a graph of the altitude for the first 100 seconds after separation.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation.",
+      "markingNote": "Use the table from (a), or calculate it when practising independently. Follow through the candidate’s table values; the scheme’s reference to “(i)” means (a)."
+    },
+    {
+      "suffix": "6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "scale": "5A",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        15,
+        14,
+        25
+      ],
+      "questionText": "Use your graph to estimate the greatest altitude reached.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation. Draw the altitude graph for the first 100 seconds if practising independently.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-d",
+      "printedParts": [
+        "Q6(d)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        15,
+        14,
+        25
+      ],
+      "questionText": "Use the graph to estimate one time at which the altitude is 60 km. Show your work clearly on the graph.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation. Draw the altitude graph for the first 100 seconds if practising independently.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "6-e",
+      "printedParts": [
+        "Q6(e)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        12
+      ],
+      "schemePages": [
+        16,
+        25
+      ],
+      "questionText": "Check your answer to part (d) using the formula for altitude.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation. Part (d) estimates a time when the altitude is 60 km. Use your own estimate; if practising independently, use 26 seconds as the graphical estimate to check."
+    },
+    {
+      "suffix": "6-f",
+      "printedParts": [
+        "Q6(f)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        12
+      ],
+      "schemePages": [
+        16,
+        25
+      ],
+      "questionText": "By solving an equation, find t when the altitude is 9 km.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation."
+    },
+    {
+      "suffix": "6-g",
+      "printedParts": [
+        "Q6(g)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        12
+      ],
+      "schemePages": [
+        16,
+        25
+      ],
+      "questionText": "By finding the change in altitude in one second, or otherwise, estimate the speed at which the rockets are falling when the altitude is 9 km.",
+      "stem": "Booster rockets separate from a space shuttle. Their altitude is h = 45 + (7/10)t − (1/200)t², where h is kilometres above sea level and t is seconds after separation. First find the time when h = 9, or carry forward your answer from part (f).",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        27
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Period and range",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the period and range of f.",
+      "stem": "f is the periodic function defined for all real x by the original graph."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of f(71)",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find f(71).",
+      "stem": "f is the periodic function defined for all real x by the original graph."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative and simplification",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate (4x − 1)(3 − 2x²) and simplify.",
+      "markingNote": "The ten-mark allocation includes seven for differentiation and three for simplification. No product rule, or an oversimplified expansion with fewer than three terms, earns at most attempt three."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        30
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative inequality",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Given y = 1/(x² − 3x), find the range of x for which dy/dx < 0.",
+      "markingNote": "Seven marks for differentiation and three for solving the inequality, with an overall attempt floor of three."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        31
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Differentiation",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Tangent equation",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the tangent to y = f(x) at P(1, 3).",
+      "stem": "f(x) = 2x + 1/x, for real x ≠ 0.",
+      "markingNote": "The original scheme caps a derivative simplified to a constant as shown at two attempt marks for each step (four total)."
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Other point Q",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Q is another point on y = f(x) whose tangent is parallel to the tangent at P(1, 3). Find Q.",
+      "stem": "f(x) = 2x + 1/x, for real x ≠ 0."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        32
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate x³ − 7x² + 6x."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        33
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative in specified form",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate (3x + 1)/(x − 2), writing the answer as k/(x − 2)ⁿ, where k and n are integers."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        34
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative at x = −2",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Given y = (x² − 2x − 9)⁴, find dy/dx when x = −2."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        17
+      ],
+      "schemePages": [
+        35
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Speed after three seconds",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the speed after three seconds.",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        17
+      ],
+      "schemePages": [
+        35,
+        36
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Stopping distance",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "How far is the ball from its starting point when it stops moving?",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start."
+    },
+    {
+      "suffix": "8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        17
+      ],
+      "schemePages": [
+        35,
+        36
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Constant deceleration proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that the ball’s speed decreases at a constant rate while it is moving.",
+      "stem": "A ball rolls in a straight line. Its distance s metres is s = 18t − 2t², where t is seconds from the start.",
+      "markingNote": "If the candidate’s second derivative is not a negative constant and no explanation is given, apply the specified one-mark slip. A first derivative alone earns zero."
+    },
+    {
+      "suffix": "9-i",
+      "printedParts": [
+        "Q9(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        18
+      ],
+      "schemePages": [
+        37
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Completed table",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Copy and complete the original table of f(x).",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "All five missing entries are required in one fifteen-mark task. No separate cell tariff is published. When no work is shown, each missing or incorrect value loses three marks, subject to the published attempt rule."
+    },
+    {
+      "suffix": "9-ii",
+      "printedParts": [
+        "Q9(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        18
+      ],
+      "schemePages": [
+        38,
+        39
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Completed curve",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Copy and complete the original graph from x = −5 to x = 1.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "The original solution diagram also includes g from part (iii); score only f here. Follow through table values unless oversimplified. If part (i) earned zero, at most attempt three, unless the work is independently redone as the source allows."
+    },
+    {
+      "suffix": "9-iii",
+      "printedParts": [
+        "Q9(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        18
+      ],
+      "schemePages": [
+        38,
+        39
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Line graph",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "On the same diagram, draw g(x) = x + 2 for −5 ≤ x ≤ 1.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2. Complete f’s original graph from x = −5 to x = 1.",
+      "markingNote": "The shared original solution diagram includes both curves. Score only g here; two correct points and the correct line earn ten marks."
+    },
+    {
+      "suffix": "9-iv",
+      "printedParts": [
+        "Q9(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        18,
+        19
+      ],
+      "schemePages": [
+        40
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Graphical inequality",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graphs to estimate the range of x for which f(x) ≤ g(x).",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2. g(x) = x + 2, drawn for −5 ≤ x ≤ 1; complete the original graph of f on that same interval."
+    },
+    {
+      "suffix": "9-v",
+      "printedParts": [
+        "Q9(v)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        18,
+        19
+      ],
+      "schemePages": [
+        41
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "No-turning-points proof",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove that y = f(x) has no turning points.",
+      "stem": "f(x) = 1/(x + 2), where x is real and x ≠ −2.",
+      "markingNote": "Seven marks for the derivative and three for the conclusion. The derivative is negative on each interval of its domain; x = −2 is excluded."
+    }
+  ],
+  "selectionReview": [
+    {
+      "classification": "whole-examination-selection",
+      "reason": "Answer all four Section A questions, both Section B questions and any two of three Section C questions is whole-examination selection. Retain all nine questions and every separately practicable mark unit, without duplicating exam bundles."
+    },
+    {
+      "classification": "open-method-choice",
+      "reason": "Calculator or otherwise, using an earlier value or otherwise, patterns or otherwise, and a one-second altitude change or otherwise permit alternative methods, not a finite printed answer pool."
+    },
+    {
+      "classification": "required-work",
+      "reason": "Every requested term, power, graph feature and table entry is required. Q5(a)(iv) asks for any valid observation from the student’s plot; Q6(d) asks for a graph reading. Neither supplies a finite printed answer pool. Q5(d,e,f) share one five-mark response; named deduction steps remain within their original tasks."
+    }
+  ],
+  "notes": [
+    "All 20 paper pages and all scheme pages 1–42 independently visually inspected, including allocation summary, models, detailed scale notes and Section C deduction rules.",
+    "43 complete practice tasks, 44 scoring components, 350 offered marks and 300 candidate marks. Q5(d,e,f) share a single 5C scale. Q7(c)(i) retains two separate 5-mark steps within one tangent task.",
+    "Only Q1(c), Q6(c), Q6(d) and Q6(g) carry the published starred one-mark deduction. The 2011 Ordinary scales differ from Higher Level scales.",
+    "Q5(a)(iv) requires at least two prior plotted points before full credit; the standalone card includes the plotting context and records this prerequisite.",
+    "Section C shares printed tasks with the legacy 2011 OL Paper 1, but this edition retains its own source identity, page references, question numbers and images.",
+    "The source typo in Q7(b)(ii), the extra exponent in Q8(b)(ii), and the plotted-domain upper bound in Q9(iv) are explained beside the unchanged original solutions.",
+    "All alternatives in model solutions are retained. None is a task-internal finite selection pool."
+  ],
+  "paperSha256": "ebba67d4c3862b342b30e9a70ff62f5f251c461a3ba7d329161828d0dcc0142b",
+  "schemeSha256": "8f5f26d039d785de5584b6f8ee8fe6f601529c33e97f7df0afb76a8537631d7c"
+}

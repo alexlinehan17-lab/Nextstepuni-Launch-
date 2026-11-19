@@ -51,6 +51,7 @@ import japaneseAuditJson from './japanese.json';
 import japaneseRuntimeJson from './japanese-runtime.json';
 import linkModulesAuditJson from './link-modules.json';
 import mathematicsQuestionRuntimeJson from './mathematics-question-runtime.json';
+import mathematicsReviewedQuestionRuntimeJson from './mathematics-reviewed-question-runtime.json';
 import mathematicsRuntimeJson from './mathematics-runtime.json';
 import musicRuntimeJson from './music-runtime.json';
 import physicalEducationQuestionRuntimeJson from './physical-education-question-runtime.json';
@@ -484,7 +485,10 @@ interface TechnologyRuntime {
 
 interface ChemistryRuntime extends BiologyRuntime {}
 
-interface PhysicsRuntime extends BiologyRuntime {}
+interface PhysicsRuntime extends Omit<BiologyRuntime, 'questionMappings'> {
+  /** [h/o, year-2000, question, topic indexes, optional deferred sitting] */
+  questionMappings: Array<['h' | 'o', number, string, number[], 'd'?]>;
+}
 
 interface DesignAndCommunicationGraphicsRuntime {
   v: 1;
@@ -558,7 +562,7 @@ interface BrowserQuestionRuntime {
   schemaVersion: 1;
   subjectId: string;
   topicIds: string[];
-  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes] */
+  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes, optional sitting] */
   questionMappings: Array<[
     'h' | 'o' | 'f',
     'e' | 'i',
@@ -567,6 +571,7 @@ interface BrowserQuestionRuntime {
     string,
     string,
     number[],
+    ExamSitting?,
   ]>;
 }
 
@@ -3569,6 +3574,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
     fileid,
     n,
     topicIndexes,
+    sitting = 'main',
   ] of runtime.questionMappings) {
     const topicIds = topicIndexes.map(topicIndex => {
       const topicId = runtime.topicIds[topicIndex];
@@ -3587,7 +3593,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
         runtime.subjectId,
         browserAuditLevel(levelCode),
         year,
-        'main',
+        sitting,
         fileid,
         n,
         paperKey,
@@ -3611,6 +3617,22 @@ registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(geographyReviewedQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
+registerBrowserQuestionRuntime(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime);
+// The 2011 legacy Ordinary/Foundation first booklets are indexed as "Exam
+// Paper" (slot "single"), although the independent review calls them Paper 1.
+// Keep both exact-booklet lookup slots so the preserved Atlas rows receive the
+// reviewed topics too. No alias may cross a year, level or physical booklet.
+const mathematicsLegacySlotAliases = (mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime)
+  .questionMappings.filter(row => row[2] === 2011 && row[3] === 'p1'
+    && ['LC003BLP000EV.pdf', 'LC003GLP000EV.pdf'].includes(row[4]));
+registerBrowserQuestionRuntime({
+  ...(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime),
+  questionMappings: mathematicsLegacySlotAliases.map(row => {
+    const alias = [...row] as typeof row;
+    alias[3] = 'single';
+    return alias;
+  }),
+});
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
 
 // Exact SEC-task evidence supplements the preserved historical reference map.
@@ -3650,6 +3672,9 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
 
   for (const paper of PAPER_TOPIC_TAGS) {
     if (paper.subjectId !== taxonomy.subjectId) continue;
+    // The index gives deferred files a distinct virtual name. A canonical
+    // fallback must preserve that sitting just as exact runtime mappings do.
+    const sitting: ExamSitting = /-deferred\.pdf$/i.test(paper.fileid) ? 'deferred' : 'main';
     for (const question of paper.q) {
       const topicIds = [...new Set(
         [question.primary, question.secondary]
@@ -3670,7 +3695,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         question.n,
         paper.paperKey,
       );
@@ -3678,7 +3703,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         paper.fileid,
         question.n,
         paper.paperKey,
@@ -4035,16 +4060,16 @@ for (const [levelCode, yearOffset, n, topicIndexes] of chemistryRuntime.question
   );
 }
 
-// Physics shares the audited mapping between both official-language editions.
-// Exact factual joins cover 391 logical cards; 41 valid local questions absent
-// from the snapshot are retained from direct SEC-paper review.
-for (const [levelCode, yearOffset, n, topicIndexes] of physicsRuntime.questionMappings) {
+// Physics main mappings are shared between official-language editions.
+// Reviewed deferred sittings have a separate key, even when their Q numbers
+// match the main paper. Direct reviews also retain reference omissions.
+for (const [levelCode, yearOffset, n, topicIndexes, sittingCode] of physicsRuntime.questionMappings) {
   QUESTION_TOPICS.set(
     questionKey(
       physicsRuntime.subjectId,
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
-      'main',
+      sittingCode === 'd' ? 'deferred' : 'main',
       n,
       'single',
     ),

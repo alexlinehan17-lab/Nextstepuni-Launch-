@@ -1,0 +1,1530 @@
+{
+  "home-economics-2023-hl-sa-q3-scheme": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-sa-q3-scheme.png",
+    "md5": "98e266b2e2505b24561299d83d6f9b2c",
+    "solution": true,
+    "alt": "Official table of food-poisoning bacteria and associated high-risk foods. Salmonella: eggs, meat, fish, poultry, milk, cheese. E-coli: milk, cheese, meat, polluted water. Listeria: cheese, pâté, cook chill foods, coleslaw, milk, meat, ice cream, seafood. Clostridium botulinum: canned fish/food, vacuum packed meat, milk, cheese, yoghurt. Clostridium perfringens/welchii: vegetables. Staphylococcus aureus: meat, milk, cheese. Bacillus cereus: cooked rice, cereals, herbs. Campylobacter: milk, poultry, shellfish. Each published list is non-exhaustive.",
+    "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 6 — © State Examinations Commission.",
+    "sourceNote": "Inspected crop from the hash-pinned official scheme; bounds [55, 472, 548, 712], rendered at 2×."
+  },
+  "home-economics-2023-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-sb-q1a-chart.png",
+    "md5": "f7cc757ff23e169d1051b3ef45e7a3ac",
+    "alt": "Sources of iron in Irish teenagers aged 13–18 years. Breakfast cereals 22%; meat and meat products 20%; breads and rolls 14%; grains, rice and pasta 10%; vegetables and potatoes 9%; confectionery, biscuits and preserves 11%; other 14%.",
+    "attribution": "SEC Home Economics 2023 Higher Level examination paper, Sections B and C page 2 — © State Examinations Commission.",
+    "sourceNote": "Complete original question chart, visually checked with title, all seven labels and percentages, and all borders. No marking-scheme material. Bounds [74,214,520,437], 2×."
+  },
+  "home-economics-2023-hl-sc-q1bi-scheme": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-sc-q1bi-scheme.png",
+    "md5": "d3972b124395e12f3fa7ee5becdf19f5",
+    "alt": "SEC scheme: Property; Explanation; Example. Reflected: rays bounce off a shiny surface; mirrors, polished porcelain, light colours on walls, gloss paint, glazed wall tiles. Diffused: rays scatter through translucent substances or on a non-reflecting surface; net curtains, frosted glass, translucent lampshades. Absorbed: dark and matt surfaces absorb light; dark painted walls, brick walls, stone. Dispersed: a prism or crystal splits rays into component colours; chandeliers. Refracted: thick or ridged glass bends rays; glass bricks, double glazing.",
+    "solution": true,
+    "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 19 — © State Examinations Commission.",
+    "sourceNote": "Original three-column table; all five rows, headers and borders visually verified. Bounds [53,153,547,376], 2×."
+  },
+  "home-economics-2023-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sa-q14-symbols.png",
+    "md5": "1df70f374f6a88a0939b1ec4073de1a7",
+    "alt": "Two care symbols, in vertical order. Top: a square containing three vertical lines. Bottom: a square containing a circle, with a diagonal cross over it.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, visually inspected with all content and borders. Bounds [83, 322, 220, 626], 2×. No marking-scheme answer content."
+  },
+  "home-economics-2023-ol-sb-q1a-table": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sb-q1a-table.png",
+    "md5": "730a9ab779838dd540339890d5c38cd1",
+    "alt": "Nutrition per 100 g. Columns: Peanut & chocolate; Peanut & caramel; Crunchy peanut butter. Energy: 492, 373, 518 kcal. Protein: 25.6, 36.3, 25 g. Carbohydrates: 24, 16, 26 g; of which sugars: 15, 3, 16 g. Fibre: 13.6, 16.1, 14 g. Fat: 30, 15.9, 12 g; of which saturates: 9, 8, 5 g. Salt: 0.95, 0.73, 0.59 g.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, visually inspected with all content and borders. Bounds [54, 199, 542, 439], 2×. No marking-scheme answer content."
+  },
+  "home-economics-2023-ol-sc-q2ai-fashion": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sc-q2ai-fashion.png",
+    "md5": "5a6b86b577b18a24de0df86396767f6a",
+    "alt": "Three festival-fashion photographs. Left: two people wearing layered tops, shorts or a skirt, sunglasses and tall boots. Centre: a person in a sleeveless top, shorts, trainers and sunglasses, with a shirt tied around the waist. Right: a person in a blazer, long-sleeved top, trousers, boots and sunglasses.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "All original fashion photographs and source credit, visually inspected at 2×; source bounds [132, 123, 515, 332]. No neighbouring question fragments or answers."
+  },
+  "home-economics-2023-hl-deferred-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sb-q1a-chart.png",
+    "md5": "8cd97ecf5188bec998c8e69afa3223ce",
+    "alt": "Consumption of potatoes, pasta and rice at the evening meal among Irish adults. Age groups: 18–24, 25–34, 35–44, 45–54, 55–64, 65+ years. Potatoes: 14%, 21%, 26%, 33%, 38%, 43%. Pasta: 18%, 16%, 14%, 13%, 10%, 10%. Rice: 16%, 12%, 11%, 12%, 11%, 6%. Vertical axis: consumption rate, 0–50%; horizontal axis: age group.",
+    "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original question chart, bounds [77, 216, 523, 465], rendered at 2×. All axes, age groups, data labels and legend retained. Source SHA256 06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3."
+  },
+  "home-economics-2023-hl-deferred-sc-q2a-graduation": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sc-q2a-graduation.png",
+    "md5": "b2eb887848057f923f3b0048678e3160",
+    "alt": "Original graduation-ball photograph: a group wearing formal dresses and suits at a celebration.",
+    "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 6; photograph credited to www.etiquettejulie.com — © State Examinations Commission.",
+    "sourceNote": "Original image, bounds [160, 161, 428, 311], rendered at 2×. Source SHA256 06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3."
+  },
+  "home-economics-2022-hl-deferred-sb-q1a-labels": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-deferred-sb-q1a-labels.png",
+    "md5": "49bc3888077ec4857788b2357ba38bdd",
+    "alt": "Why consumers consult food labels: nutrient information 37%; calorie content 35%; specific ingredients 34%; allergen information 13%; food additives 3%; origin 3%. Horizontal axis: 0–40%.",
+    "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 2; adapted from FSAI research — © State Examinations Commission.",
+    "sourceNote": "Original chart, bounds [82, 187, 534, 419], rendered at 2×. Source SHA256 8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03. All six bars, values, labels and axis retained."
+  },
+  "home-economics-2022-hl-deferred-sc-q1ai-fuels": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-deferred-sc-q1ai-fuels.png",
+    "md5": "713eb15feb663109c98cf4ab6ebf88cd",
+    "alt": "2020 fuel costs (cent/kWh) and efficiency: standard coal 5.66, 60%; kerosene oil 8.60, 80%; natural gas Band D2 6.86, 90%; electricity Band DE 17.77, 100%; electricity night rate 9.60, 100% (shared electricity cell).",
+    "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 5; source SEAI — © State Examinations Commission.",
+    "sourceNote": "Original table, bounds [111, 217, 541, 351], rendered at 2×. Source SHA256 8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03. Shared electricity efficiency cell retained."
+  },
+  "home-economics-2022-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sa-q14-symbols.png",
+    "md5": "2fe507fc73cab2d4870c053a630e0ac8",
+    "alt": "Two care symbols, in vertical order. Top: a crossed-out triangle. Bottom: a square containing one horizontal line.",
+    "attribution": "SEC Home Economics 2022 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [53, 315, 202, 599], rendered at 2×; visually checked. SHA256 90d8c2d6644c2a27fa8adc091140bb44171917dadf0007a42cc84b77e2927197."
+  },
+  "home-economics-2022-ol-sb-q1a-milk": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sb-q1a-milk.png",
+    "md5": "0c86dee104f47bbfb5c37b7c8ea0b971",
+    "alt": "Nutrition per 100 ml. Whole milk: 64 kcal, protein 3.4 g, carbohydrates 4.7 g, fat 3.5 g, calcium 119 mg, vitamin B12 0.4 µg. Super Milk Fat-free: 35 kcal, protein 3.3 g, carbohydrates 5.0 g, fat 0.2 g, calcium 160 mg, vitamin B12 0.4 µg.",
+    "attribution": "SEC Home Economics 2022 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [59, 216, 533, 345], rendered at 2×; visually checked. SHA256 1b36e8fdb3b37bfcb8ffb59c9c9611b621fd4121bd4751b2dd0d2425592b5007."
+  },
+  "home-economics-2022-ol-sc-q1-room": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sc-q1-room.png",
+    "md5": "e41db0cabdc7345a9d5905151544f958",
+    "alt": "An overhead view of an open-plan kitchen, dining and living room. Left: corner sofa, armchair, coffee table, television and window. Right: dining table with four chairs, kitchen units, hob, extractor, sink and worktops. Pale wood-effect flooring continues throughout.",
+    "attribution": "SEC Home Economics 2022 Ordinary examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source image only; bounds [115, 210, 493, 345], 2×. Complete image visually inspected. SHA256 40f65cef79179c3b439f18971011e3ae4e67af491c70981b6c946bf3951574b0."
+  },
+  "home-economics-2022-ol-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sc-q2-outfits.png",
+    "md5": "3bc92b2b7fdd32e99fd05e49fc876b59",
+    "alt": "Two athleisure outfits. Left: navy open zip jacket, white T-shirt, navy drawstring joggers and white trainers. Right: open taupe hooded jacket, white T-shirt, cropped olive trousers with a drawstring waist, white socks and light-coloured trainers. Both full outfits are visible.",
+    "attribution": "SEC Home Economics 2022 Ordinary examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source image only; bounds [199, 129, 382, 302], 2×. Complete image visually inspected. SHA256 2f033a5e8d4600fcc94c9f2e5c47947f643a232873a838678f291de84e9f25e5."
+  },
+  "home-economics-2022-hl-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sa-q14-symbols.png",
+    "md5": "cb44ad636cab1bc612bc55d6f13fbd24",
+    "alt": "Two original symbols in vertical order: Green dot, then Eco label. Original source captions retained.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [42, 265, 143, 537], rendered at 2×; visually checked. SHA256 174d909296ee3b9b21897737cbce37cf720688f3e304826629e3ca2608817a82."
+  },
+  "home-economics-2022-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sb-q1a-chart.png",
+    "md5": "326289ac0e50a00155f99091ff88bf90",
+    "alt": "Factors that make it difficult for teenagers to eat a healthy diet. Percentage agreeing: likes/dislikes 57; convenience 52; availability 35; cost 29; advertising 25; other 3. Source: National Teens Food Survey II, adapted from iuna.net.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [88, 224, 528, 436], rendered at 2×; visually checked. SHA256 b9f185b143e06326d16de7bf6aa3333fc2ac2556161ed06cdcbd1e23a08ac5db."
+  },
+  "home-economics-2022-hl-sc-q2ai-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sc-q2ai-outfits.png",
+    "md5": "562a6219c0caafc4ff3a23e0efa0b0b6",
+    "alt": "Original smart-casual outfits: one person wears a navy blazer, dark top, beige trousers and trainers; the other wears a light shirt, grey trousers and trainers. Both complete outfits and the source caption are visible.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [173, 144, 398, 304], rendered at 2×; visually checked. SHA256 9350cdadd30b7be3472830c09d95ae0ae3d8ea3eca8c8b1fb9e3e6a4a51daf49."
+  },
+  "home-economics-2021-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2021-hl-sb-q1a-chart.png",
+    "md5": "d5b820cd04d713c7fba84125b1663f1a",
+    "alt": "Original two-ring infographic: Health and Wellbeing 42%; Responsible Living 27%. Influences on evening meal consumption. Source: What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House.",
+    "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [135, 216, 477, 357], rendered at 2×; visually checked. SHA256 e60964c51bcabe973965b499b0bc118abfa33e0af6066aeabce054f2209d5f65."
+  },
+  "home-economics-2021-hl-sc-q2ai-athleisure": {
+    "src": "/exam-figures/home-economics/home-economics-2021-hl-sc-q2ai-athleisure.png",
+    "md5": "f5829310cefc4d3dc67643a185d515b2",
+    "alt": "Original four athleisure outfits: dark jacket and light trousers; green sweatshirt and shorts; black outfit and white trainers; white top, scarf and black leggings. The complete three-photo montage and Pinterest source caption are visible.",
+    "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [169, 157, 414, 313], rendered at 2×; visually checked. SHA256 d2bcadde4d98f244fb25af1744c0bd3384817e1ee9694f0dce286dfae43c91c7."
+  },
+  "home-economics-2021-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sa-q14-symbols.png",
+    "md5": "ec162deae90aadb563c55c478794b9cb",
+    "alt": "Two original care symbols, top to bottom: a hand in a wash tub; an iron with two dots. Original Woolmark and Omo source captions retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [72, 110, 185, 380], rendered at 2×; visually checked. SHA256 7b76ffc580bb5a2c7c7e8c82c619cb8090a49e1d00206dac9b93513d18d1929d."
+  },
+  "home-economics-2021-ol-sb-q1a-yoghurt": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sb-q1a-yoghurt.png",
+    "md5": "d83578a3bb3e4fd3039153d76fee7f1a",
+    "alt": "Original nutrition table per 100 g: full fat / low fat / fat free natural yoghurt. Energy: 133 / 65 / 54 kcal; fat: 9.4 / 1.8 / 0.4 g; saturates: 5.5 / 1.1 / 0.2 g; carbohydrate: 5.9 / 6.9 / 7.6 g; sugars: 3.2 / 6.8 / 7.3 g; fibre: 0.3 / 0.5 / 0.5 g; protein: 6.0 / 4.8 / 4.8 g; salt: 0.20 / 0.20 / 0.19 g.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [82, 247, 535, 448], rendered at 2×; visually checked. SHA256 ff4896f57205f1504b1a8b95db16d374de2260435e5f3a9a6e323c2715354a10."
+  },
+  "home-economics-2021-ol-sc-q1a-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q1a-heat-loss.png",
+    "md5": "ab3de37dd6f573f2a3bfea6c48f43d63",
+    "alt": "Original heat-loss diagram for a family home: roof 25%, walls 35%, windows 15%, doors 10%, floor 15%. Original ORS caption retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [128, 214, 428, 360], rendered at 2×; visually checked. SHA256 8fc9b53fecb8121c0305f10120c69356798051eb2248aed3f32433ca78800ea8."
+  },
+  "home-economics-2021-ol-sc-q2a-occasion-wear": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q2a-occasion-wear.png",
+    "md5": "edf97b716532640cda8262558c00a66a",
+    "alt": "The two original occasion-wear outfits: a red lace dress with fitted bodice and flared skirt, and a grey suit with shirt, tie and pocket square. Original Pinterest and The Black Tux captions retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [160, 130, 395, 332], rendered at 2×; visually checked. SHA256 bf829a5626fa7b6c2725c6fb583b0b6dd46f2306f81b7a5dda1c536a76c41ab2."
+  },
+  "home-economics-2024-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sb-q1a-chart.png",
+    "md5": "07f6ed1803701e8e44c8cd29c04659ea",
+    "alt": "Original Eurobarometer chart, 2022 (blue) / 2019 (red), percentage of consumers: cost 63 / 57; food safety 52 / 51; origin of food 36 / 44; impact on environment 11 / 0; nutrient content 52 / 52. Both year keys, axes and EFSA caption retained.",
+    "attribution": "SEC Home Economics 2024 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [85, 207, 551, 452], rendered at 2×; visually checked. SHA256 61037c3834e030eacb4996f4327d96db010879fdd09d39b43e0388b776ef0550."
+  },
+  "home-economics-2024-hl-sb-q1b-chemistry": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sb-q1b-chemistry.png",
+    "md5": "7d29ebacdf80ac5308e201f9a7625e77",
+    "alt": "Original marking-scheme chemical diagrams: glucose ring structure with atom and hydroxyl-group labels, and two monosaccharide rings joining with loss of H₂O. Includes the corresponding structure and formation guidance.",
+    "attribution": "SEC Home Economics 2024 Higher Level marking scheme, page 12 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [54, 80, 551, 405], rendered at 2×; visually checked. SHA256 d864a5a04f4edcb13d9c72942c1a7503ab463985806b4b82b59cf80291704208.",
+    "solution": true
+  },
+  "home-economics-2024-hl-sc-q2ai-summer-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sc-q2ai-summer-outfits.png",
+    "md5": "e870cf3582c96299b4442e2443de9c86",
+    "alt": "Both original summer outfits: a floral dress with thin straps and an asymmetrical hem, and a denim jacket with white T-shirt, beige trousers and white trainers. Both original source captions retained.",
+    "attribution": "SEC Home Economics 2024 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [165, 136, 369, 297], rendered at 2×; visually checked. SHA256 659ce7703e0241eb2ed0545ceee56eab6b2b65b16b746f3cc6dadd3022025883."
+  },
+  "home-economics-2024-ol-sb-q1a-food-choice": {
+    "src": "/exam-figures/home-economics/home-economics-2024-ol-sb-q1a-food-choice.png",
+    "md5": "d7da5b4d0444fc00034e34a8f5e74a08",
+    "alt": "Original diagram showing seven factors affecting food choice: food availability, work patterns, emotions, cooking skills, time, money, and likes and dislikes. All seven photographs and labels are retained.",
+    "attribution": "SEC Home Economics 2024 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [60, 193, 528, 419], rendered at 2×; visually checked. SHA256 9120990a0a57b54ac42c6a0e7bb6211f4c9176ec470994deb1eb52d98c89b0cd."
+  },
+  "home-economics-2024-ol-sc-q2a-sportswear": {
+    "src": "/exam-figures/home-economics/home-economics-2024-ol-sc-q2a-sportswear.png",
+    "md5": "e002c6dd8801a22f9ae5b105bd5c85bf",
+    "alt": "Both original sportswear outfits: a man in a white and dark jacket with a green shoulder stripe and dark tracksuit bottoms; a woman in a dark jacket, yellow top, dark leggings with a yellow stripe and bright trainers. The original Pinterest caption is retained.",
+    "attribution": "SEC Home Economics 2024 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [190, 132, 393, 305], rendered at 2×; visually checked. SHA256 7d345a91a3d526711e0c5dfdfb36eb121e297ef795eca5f904189864bf74686d."
+  },
+  "home-economics-2025-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sb-q1a-chart.png",
+    "md5": "622bf81377a71211c968669656633398",
+    "alt": "Original 2024 survey chart: bread, potatoes, pasta, rice and grains 23%; sugar, drinks, biscuits and cakes 21%; others 16%; meat and meat products 14%; fruit and vegetables 9%; milk and yogurt 7%; breakfast cereals 5%; soups and sauces 3%. National Adult Nutrition Survey II, Summary Report, 2024 caption retained.",
+    "attribution": "SEC Home Economics 2025 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [126, 192, 555, 429], rendered at 2×. SHA256 c4cc6577c6548412b8c64b66d843f09457d11f50b441ede28043c97f166d1fa7."
+  },
+  "home-economics-2025-hl-sc-q2a-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sc-q2a-outfits.png",
+    "md5": "9f2126f7d10feed8430abe51d99a7ac2",
+    "alt": "Both original blazer outfits: first, grey blazer, printed white T-shirt, blue wide-leg jeans, boots and yellow handbag; second, navy blazer, white top, dark trousers and trainers, with suitcase. Original picture-source caption retained.",
+    "attribution": "SEC Home Economics 2025 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [152, 127, 475, 348], rendered at 2×. SHA256 c1e9b24508ebf58c5330bcb7f59cfb59dafff22bce916ae19bf25b2740bf4166."
+  },
+  "home-economics-2025-hl-sb-q3a-scheme-table": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sb-q3a-scheme-table.png",
+    "md5": "d5dccd5ffdd4ca6bc05fa22e961e4b9f",
+    "alt": "Complete original marking table for Salmonella, Listeria, E. coli, Clostridium botulinum and Staphylococcus aureus, with sources, high-risk foods, growth factors and symptoms. The additional Clostridium perfringens and Campylobacter acceptance is retained below the table.",
+    "attribution": "SEC Home Economics 2025 Higher Level marking scheme, page 15 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [30, 195, 576, 760], rendered at 2×. SHA256 0b69512ef2b7a0a87a0a60190c4428e25065e7849b2e5f85070dbdde6546d0fe.",
+    "solution": true
+  },
+  "home-economics-2025-ol-sa-q14-care-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sa-q14-care-symbols.png",
+    "md5": "018e8ed4298c1db2d2f037e3de308c6f",
+    "alt": "Both original fabric-care symbols in printed order: hand in a wash tub, then an iron with two dots; original Woolmark and OMO source captions retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [96, 366, 225, 610], rendered at 2×. SHA256 afe96c8eb618978a454e21ad63a7aab1cd28e8de4e3318c5f8e9a85bd6908850."
+  },
+  "home-economics-2025-ol-sb-q1a-soups": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sb-q1a-soups.png",
+    "md5": "034c0791f6abf970247103aa0c99ad16",
+    "alt": "Original comparison per 100 g. Soup A cook-chill costs €2.89; Soup B canned costs €2.00. A/B: energy 27/32 kcal, protein 1.1/0.8 g, carbohydrates 4.3/5.6 g, sugars 2.2/1.0 g, fibre 3.0/0.5 g, fat 0.6/0.5 g, saturates 0.1/0.3 g, salt 0.2/0.8 g. Both product images and source captions retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [89, 218, 520, 499], rendered at 2×. SHA256 a84f3246f7ba7c3a054382088457bfb6dc89ac350bab3f10e287d9a9589ad70f."
+  },
+  "home-economics-2025-ol-sc-q1a-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q1a-heat-loss.png",
+    "md5": "c5e7cc93c868076268c579696a2f1168",
+    "alt": "Original house heat-loss diagram with the five printed percentages: 25%, 35%, 10%, 15% and 15% and the Synergy Files source caption.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [177, 228, 489, 361], rendered at 2×. SHA256 81bc60181d8bc82a6a12fc1a17244820542a29fc27eb0bbb7fd231a2184d8ccd."
+  },
+  "home-economics-2025-ol-sc-q2a-wedding-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q2a-wedding-outfits.png",
+    "md5": "b9bc022d9f1b514613a9eaade14264af",
+    "alt": "All three original wedding outfits in printed order: a black one-shoulder jumpsuit, a dark grey suit with black top, and a blue floral dress. Original image-source caption retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [168, 149, 475, 333], rendered at 2×. SHA256 2dc316c406a03029e1c79706b0d9cc43253e714fe2b5d88265445e515718c2df."
+  },
+  "home-economics-2025-ol-sc-q3a-classroom": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q3a-classroom.png",
+    "md5": "a1f3169ec4ed5a31d8e74fd5b1313518",
+    "alt": "Original classroom photograph with children and their teacher, with the Logo Leisurewear source caption.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [208, 132, 404, 291], rendered at 2×. SHA256 1176512475b0d7724d1885609d01df6a7b46dc92170ba5f71a45d01a574af08d."
+  },
+  "home-economics-2025-ol-sc-q4a-yoghurt": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q4a-yoghurt.png",
+    "md5": "71b552657a12e3654fa93a702c9a92d4",
+    "alt": "Both original yoghurt photographs and their source captions: multiple retail tubs on the left and jars and small yoghurt pots on the right.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [102, 140, 514, 267], rendered at 2×. SHA256 d55a8a02115dc2cc754bfe0cfa62644d4a576d664d60b4102dbc69fcfcd0767d."
+  },
+  "home-economics-2026-hl-sa-q1-carbohydrate-table": {
+    "src": "/exam-figures/home-economics/home-economics-2026-hl-sa-q1-carbohydrate-table.png",
+    "md5": "d224c1ef7abb1966a469e2f543a29e53",
+    "alt": "Original blank carbohydrate table. Columns: Monosaccharide, Disaccharide, Polysaccharide. Required rows: Chemical formula and Example; all six cells retained.",
+    "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [83, 171, 544, 280], rendered at 2×. SHA256 9be5a679a36d276db2ceebc586459022b2958fea30c5d18362bb6325030f5e48."
+  },
+  "home-economics-2026-hl-sa-q5-uht-table": {
+    "src": "/exam-figures/home-economics/home-economics-2026-hl-sa-q5-uht-table.png",
+    "md5": "129e9a27280f35fac8ae5325097d7df6",
+    "alt": "Original blank milk-processing table. Process: Ultra Heat Treatment; required answer columns: Temperature, Time and Effect.",
+    "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [83, 339, 544, 462], rendered at 2×. SHA256 41d3f10bee278fb6e131a186aea7fb322eb4ae263eb16fead6745de0ded82a1f."
+  },
+  "home-economics-2026-hl-sb-q1a-protein-snacks": {
+    "src": "/exam-figures/home-economics/home-economics-2026-hl-sb-q1a-protein-snacks.png",
+    "md5": "423f9c5a8a6901bc23ca86d51ef522a3",
+    "alt": "Original high-protein snack table per 100 g/100 ml, including the adjacent product photograph and source caption. Protein bar / high-protein fruit yogurt: energy 523/122 kcal, protein 17/12 g, fat 37/2.9 g, saturates 7.6/1.3 g, carbohydrate 24/10 g, sugars 16/8 g, calcium 60/190 mg, fibre 13/3.5 g, salt 0.8/0.2 g.",
+    "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [78, 214, 539, 414], rendered at 2×. SHA256 ab66c21a305231f551dcf3fea99492ac323acef005d6f124a875dc6eace5636e."
+  },
+  "home-economics-2026-ol-sa-q7-pastry": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q7-pastry.png",
+    "md5": "31ad2b824b86e1d98239bc074f594610",
+    "alt": "Original photograph of flour being sifted into a bowl, with the printed Freepik source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [207, 76, 490, 184], rendered at 2×. SHA256 6af5da13a430e0b8f854bbaf05612aef86b8e1072ae0a5fd49c49b950f11608a."
+  },
+  "home-economics-2026-ol-sa-q12-energy-label": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q12-energy-label.png",
+    "md5": "295623432c838cb46a573be4a3a94380",
+    "alt": "Original fridge-freezer EU energy label and source caption. Rating D on the A–G scale; 265 kWh/annum; frozen compartment 208 L, fresh-food compartment 372 L; noise 41 dB, class C; QR code at the top. The adjacent original answer space is retained.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [55, 449, 542, 718], rendered at 2×. SHA256 e1d5c789b726c115e14929fcae191bff220243befe042005c36936c1b89e5ec0."
+  },
+  "home-economics-2026-ol-sa-q14-fabrics": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q14-fabrics.png",
+    "md5": "e593639ad6fafb6cc08087d75880c9f0",
+    "alt": "Original collage of colourful cushions, fabric swatches, upholstery and patterned household textiles, with the printed source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [115, 313, 506, 538], rendered at 2×. SHA256 3211e15df6ab68ad1db4ed35c861db691f8b2b7e64e8c97b4b2eacaea5310a4e."
+  },
+  "home-economics-2026-ol-sb-q1a-lasagne": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q1a-lasagne.png",
+    "md5": "e469b5fc2ae2960d1602ec234b63959e",
+    "alt": "Original vegetarian-lasagne nutrition table per 100 g with adjacent food photograph and source caption. Energy 117 kcal; protein 4.8 g; carbohydrate 9.0 g, sugars 4.4 g; fibre 6.0 g; fats 3.5 g, saturates 0.0 g; iron printed as 1.0 g; salt 0.3 g. The iron unit is reproduced exactly as printed.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [76, 210, 565, 433], rendered at 2×. SHA256 c27a737ae1740108674a19e4319c2891dd6ca1866ad2c294d0b3277e597621a8."
+  },
+  "home-economics-2026-ol-sb-q3a-food-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q3a-food-pyramid.png",
+    "md5": "98074b60bdce56e31b83e3f6d2d6da12",
+    "alt": "Original six-shelf Food Pyramid for adults, teenagers and children aged five and over, with source caption. Top foods high in fat, sugar and salt: not every day, maximum once or twice a week. Fats/spreads/oils: very small amounts. Meat/poultry/fish/eggs/beans/nuts: 2 servings; milk/yogurt/cheese: 3 servings; wholemeal cereals/breads/potatoes/pasta/rice: 3–5 servings; vegetables/salad/fruit: 5–7 servings a day.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [53, 326, 565, 634], rendered at 2×. SHA256 7ed41cd59c550a97cb29703a7d5afecd7c4f6d4cdd28fe24cf508040c9123921."
+  },
+  "home-economics-2026-ol-sb-q4a-microwave": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q4a-microwave.png",
+    "md5": "e891293eac1a65a871d31935c80ee3c3",
+    "alt": "Original photograph of a white microwave oven with a dark front window and two rotary controls, and the printed Powercity source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [157, 104, 525, 278], rendered at 2×. SHA256 d58b9c75fe72c7f6a6ac1635838d27bfaddd34040bd5eba4aaf367c4c77d7063."
+  },
+  "home-economics-2026-ol-sc-q1-house-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q1-house-plan.png",
+    "md5": "eeb4cdf6699c9ffa84470cc6609e02b1",
+    "alt": "Original family-house floor plan. Left: utility, playroom and sitting room above an open kitchen/dining room with patio doors to the garden. Centre: entrance hall, coat and bag storage, bathroom and ensuite. Right: main bedroom, walk-in wardrobe, two further bedrooms including a cot, and garage and gym. Doors, circulation and all room labels retained.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [44, 204, 535, 367], rendered at 2×. SHA256 563a81c56028d5c8ea06511b1469a512dfba347e55d9f5118d4d714b8774db53."
+  },
+  "home-economics-2026-ol-sc-q2-uniforms": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q2-uniforms.png",
+    "md5": "f5a2b44fdda7a69549194237282af509",
+    "alt": "Original photograph of four health care uniforms: a white coat, blue tunic and trousers, black tunic and trousers, and green tunic and trousers, with source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [159, 120, 538, 297], rendered at 2×. SHA256 6cb0589980e4b7a024b642137e83bbfc669962f9fec45a34ac650eba465f6170."
+  },
+  "home-economics-2026-ol-sc-q3-workers": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q3-workers.png",
+    "md5": "ba3eb25b09bd0a4793be8c4ed224f0e7",
+    "alt": "Original photograph of three construction workers wearing hard hats and high-visibility vests while consulting a plan, with the printed Building source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [209, 124, 526, 265], rendered at 2×. SHA256 1a3bd248c5f42d03c7d9c77b7ab0b5bdbfc9a0dc8bfa69b41e84d3f2f0ab97be."
+  },
+  "home-economics-2026-ol-sc-q4-pregnancy": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q4-pregnancy.png",
+    "md5": "d0cb50b2b1e5b0ac403c216416f2c2a3",
+    "alt": "Original photograph of a pregnant woman preparing vegetables at a kitchen counter, with the printed source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [173, 126, 535, 278], rendered at 2×. SHA256 7d778f995adcb946d853ed7be2365d6b680612e702eb64fdd63342fa4e4f56d3."
+  },
+  "home-economics-2010-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q1.png",
+    "md5": "8e9651762b80fb5795a4944682b8c696",
+    "alt": "Original protein-digestion question and table. Given cells: Organ / Gland, Pancreas; Secretion, Pancreatic Juice. Blank answer columns: Enzyme, Substrate and Product.",
+    "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 560.219970703125, 290.5675354003906], rendered at 2×. SHA256 4c6f6df4f4c0c37d4d3d4d453a0c831523e79e307199ba89eac3f152c4ecb14d."
+  },
+  "home-economics-2010-hl-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q2.png",
+    "md5": "ee9885900f1d0e8e8b457316798295e8",
+    "alt": "Original question and three-row blank sugar-properties table. Columns: Property and Culinary use. The student selects three properties and a matching use for each.",
+    "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 290.5675354003906, 560.219970703125, 490.84765625], rendered at 2×. SHA256 2392098642ce25d68cf7124822d13564e4b6cd47ed1482df1ad095ca39361205."
+  },
+  "home-economics-2010-hl-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q7.png",
+    "md5": "f87d0c30319593c6b0aa14440beb8046",
+    "alt": "Original question and conditioning-agent table. Required choice: two of Humectants, Polyphosphates and Stabilisers; blank Function column.",
+    "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 481.4876708984375, 560.219970703125, 770], rendered at 2×. SHA256 ca21e60db229e0cdada62d564ce8dc6ddaf752e515ff177065200e70312300fc."
+  },
+  "home-economics-2010-hl-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q12.png",
+    "md5": "698ec2526da96528d76ec6f6c0633fae",
+    "alt": "Original consumer-symbol question. Green Dot logo with two interlocking circular arrows and Eco Label flower logo with EU stars; both printed captions and answer spaces retained.",
+    "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 233.08753967285156, 560.219970703125, 770], rendered at 2×. SHA256 d5ac7f71f615f4d5db130e4fb7db0affdd1262ab0c9b38ab24763d54ce649850."
+  },
+  "home-economics-2010-hl-sb-q1-exports": {
+    "src": "/exam-figures/home-economics/home-economics-2010-hl-sb-q1-exports.png",
+    "md5": "39081bfe14917a1c76393100510378cd",
+    "alt": "Original Bord Bia pie chart, Breakdown of Irish food and drink exports, 2008 (%). Dairy Products 29%, Beef 21%, Prepared Foods 18%, Beverages 15%, Pigmeat 4%, Seafood 4%, Other 9%. Complete title, seven sectors, labels and source caption retained.",
+    "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [150, 150, 505, 475], rendered at 2×. SHA256 c9f88d187078825ec013a482448f4ae3c157c8dbb1b4e65caaaae8415a6f8d94."
+  },
+  "home-economics-2010-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q2.png",
+    "md5": "6a6bda79217110a9b5505a3a02844437",
+    "alt": "Original carbohydrate cloze question with word bank: liver, energy, cellulose. All three sentences and answer blanks retained.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 400.9676818847656, 560.219970703125, 566.5675048828125], rendered at2×. SHA256 e1adfeca6161ac67972b52855d105a2ce24a49a02401467896ff480dadc563cc."
+  },
+  "home-economics-2010-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q4.png",
+    "md5": "df47bb54ee33036bdccafabfc799a280",
+    "alt": "Original vitamin true/false table with all three statements and empty answer columns. Statements concern night blindness and vitamin A, vitamin C and iron absorption, and whether vitamin B is fat-soluble.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 560.219970703125, 228.4076690673828], rendered at2×. SHA256 37d4c2b3dc82230a02cd3c1f35910839a672cdbb2e69ae4e7a7d06f45996e084."
+  },
+  "home-economics-2010-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q7.png",
+    "md5": "9433eb4719cac16f91f74787ddd22405",
+    "alt": "Original three-row flour and culinary-use table. Each row asks for a type of flour and one different matching culinary use.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 587.1475830078125, 560.219970703125, 790], rendered at2×. SHA256 77e077e2939d6387494ba04753c698f8fea2ce04a8074f45082cc0db62fee714."
+  },
+  "home-economics-2010-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q8.png",
+    "md5": "a4be808aae8a52f88ff9f917cf790fe9",
+    "alt": "Original food-additive matching table. Given options: herbs and spices, vitamin E, turmeric. Given classes: Colourings, Flavourings, Antioxidants; answer cells blank.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 560.219970703125, 256.0076599121094], rendered at2×. SHA256 0b77980d775bdb748d91bcf6e4c9300a7a877d164e986bf201669988c9dab0a9."
+  },
+  "home-economics-2010-ol-sa-q9-symbol": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q9-symbol.png",
+    "md5": "009cef192a3c6a021507537100de9c6a",
+    "alt": "Original household-cleaning hazard symbol: a bold black diagonal cross inside a square; the identification and explanation are left to the student.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [98, 390, 201, 498], rendered at2×. SHA256 3ca3e04191299eb3e8c265696e1ad07a045c6e4ae6de6da60c9bb33521ff0c2e."
+  },
+  "home-economics-2010-ol-sb-q1-milk": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sb-q1-milk.png",
+    "md5": "64cc1282e7bcc97ee7e2119cf94bf4b4",
+    "alt": "Original nutritional information per 100g: Whole Milk / Semi-skimmed Milk. Energy kcal 66 / 46; Protein (g) 3.3 / 3.5; Carbohydrates (g) 4.6 / 4.7; Fat (g) 3.9 / 1.7; Saturated fatty acids (g) 2.5 / 1.1; Calcium 118 / 120; Iron (mg) 0.03 / 0.02; Vitamin A (Retinol) 30 / 19; Folate 8 / 9; Vitamin C 2 / 2. All source rows and units retained; no missing units inferred.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 180, 550, 462], rendered at2×. SHA256 484ad1d5d6682b67544cd878747cec2887ca37033fe3c2c2e55462581eb8eaad."
+  },
+  "home-economics-2010-ol-sc-q1-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q1-plan.png",
+    "md5": "79c40e64de6766603d7d77aedb8de380",
+    "alt": "Original two-bedroom house floor plan, with both bedrooms, bathroom, corridor, hall, lounge and kitchen/dining labels, walls, doors and windows intact. Blueprint Home Plans attribution retained.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [130, 170, 505, 444], rendered at2×. SHA256 d0f7e57368324b1458f51b6f44653860425d1983be18f2aa568fbe10bba6d6da."
+  },
+  "home-economics-2010-ol-sc-q2-fashion": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q2-fashion.png",
+    "md5": "ed2b99c2a3e4a9c089b2bc77be378aa8",
+    "alt": "Original black-and-white photograph of two adults wearing formal outfits. Complete photograph retained: dress, suit, patterned shirt and neckwear, hat, sunglasses, belt and jewellery are visible.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [199, 85, 382, 350], rendered at2×. SHA256 7e336340a581f85609ec5d896ecb2b82550b0c0f1d319d65bd9da7077fa79eef."
+  },
+  "home-economics-2011-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q1.png",
+    "md5": "7e89aaf8a983f701f6459af07e0528ef",
+    "alt": "Original carbohydrate question and blank table: Classification, Example, Food Source. Rows: Monosaccharides, Disaccharides, Polysaccharides.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 322.7875671386719], rendered at 2×. SHA256 4af1d105ea32c92c0f27e46e324ca4a1f7e8a531c9ffe626ece39dafb6155e69."
+  },
+  "home-economics-2011-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q4.png",
+    "md5": "16001ce7ce96cb6968eae021ccd3e7a3",
+    "alt": "Original protein question and blank table: Food / Type of Protein, with Fish, Eggs and Wheat in the food column.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 598.7276611328125, 570.219970703125, 793.19189453125], rendered at 2×. SHA256 517c3e8d4e40395b2506e93ff0c516cbe59127e9f04134a81b85a9be9f22b5e2."
+  },
+  "home-economics-2011-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q6.png",
+    "md5": "504839dce97cc17e011d0c708442f386",
+    "alt": "Original food-additives question and blank antioxidant table: Example, Function, Example of use.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 214.6675567626953, 570.219970703125, 351.8876647949219], rendered at 2×. SHA256 b623a86b7fe64b027083de7de2bf296e113c332f3e5bf1a33c32b0d8f6344e96."
+  },
+  "home-economics-2011-hl-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q12.png",
+    "md5": "502a5c5dc4583dcefd28cf1410c01237",
+    "alt": "Original consumer-symbol question with the CE marking and the double-square insulation symbol, both numbered labels and answer spaces retained.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 300], rendered at 2×. SHA256 d2f4eceac21e91dd3dec8749955d014f6e65ebc814e87a690a1f6c5b59d74da3."
+  },
+  "home-economics-2011-hl-sb-q1-dairy": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sb-q1-dairy.png",
+    "md5": "bfa99d2b979754430a30285e973fe985",
+    "alt": "Original bar chart: Retail Dairy Market in Republic of Ireland 2009. Milk 39%, Yogurts 26%, Cheese 18%, Cream and fats 17%. Complete four bars, percentage axis, product labels, title, legend and NDC source caption retained. The paper excludes independent/doorstep sales.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [90, 185, 530, 458], rendered at 2×. SHA256 54dbc2dad72cd8ead1b72b41a79c86b786083229487d436c32c0a573c04d4085."
+  },
+  "home-economics-2011-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q1.png",
+    "md5": "87ec6e920eab65a5cf34af6844842164",
+    "alt": "Original carbohydrate matching table and printed classification choices. Sources: cellulose e.g. vegetables, glucose e.g. fruit, sucrose e.g. table sugar; blank Classification column.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 354.8876647949219], rendered at 2×. SHA256 9ff71592ac34c53ae4f015ac0fb9da8aed6c68ce32f3cb8f9d6043e649ab9f03."
+  },
+  "home-economics-2011-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q3.png",
+    "md5": "b43380d377645ba32dcb46fb69916df3",
+    "alt": "Original B-vitamin cloze with all three complete sentences and the printed word bank: folic acid, thiamine, energy.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 506.6875915527344, 570.219970703125, 690], rendered at 2×. SHA256 ba9c0fc2d12cb295078c8e1abebe8ade7db957e7f6dda716e4902bed5951abbf."
+  },
+  "home-economics-2011-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q4.png",
+    "md5": "8cb17e3d2adb5df03fdadb11891f86ef",
+    "alt": "Original three-statement True/False table: osteoporosis, lacto-vegetarian dairy produce, and cholesterol transport; both response columns retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 247.60768127441406], rendered at 2×. SHA256 7183dfd5f33d692ffd475c7cd556e44cd2a75189a48363721d3f7706183c4630."
+  },
+  "home-economics-2011-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q5.png",
+    "md5": "c38abd229e015e65d8cf82f751dfa4cb",
+    "alt": "Original preservation-function matching table and word bank: pectin, blanching, sugar and vinegar; all three function rows retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 247.60768127441406, 570.219970703125, 463.6676940917969], rendered at 2×. SHA256 97f6271ec781bede56a8cdfb82d573e6b4529e24d87e2e4b0e833b4673f08a14."
+  },
+  "home-economics-2011-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q6.png",
+    "md5": "42f7248fc4c335c1d5f0cdcca5eaf806",
+    "alt": "Original raising-agent question, all three dish rows Bread / Sponge Cake / Muffins, blank Raising Agents column, and dependent underlying-principle prompt.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 463.6676940917969, 570.219970703125, 793.19189453125], rendered at 2×. SHA256 5e7c0977cfb5cabef00a1c8a81c97c8b13374f82726b521ba91a3f918287a5c9."
+  },
+  "home-economics-2011-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q9.png",
+    "md5": "c67f6ed5605c9b8a4d1fbf861e32955f",
+    "alt": "Original appliance energy label and question. Complete A–G efficiency scale, large A rating arrow, energy and washing/spinning performance, capacity, water and noise rows, and EU logo retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.1476745605469, 570.219970703125, 793.2518920898438], rendered at 2×. SHA256 9401a7b4ac2e6cc7695417531a0b7b7aa70ec18cfb77f31353761138c93f851d."
+  },
+  "home-economics-2011-ol-sb-q1-fish": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sb-q1-fish.png",
+    "md5": "7cce1c158b77d91082ccfef0aadc0a61",
+    "alt": "Original nutrition table per 100 g for Cod and Salmon. Protein 18.3 g/20.2 g; fat 0.7 g/11.0 g; carbohydrate 0 g/0 g; cod minerals Iron, Phosphorus, Iodine; salmon minerals Phosphorus, Calcium, Iodine; vitamins B group / A,D,B group; energy 80 kcal/180 kcal. Complete headings, units and both rows retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 145, 545, 311], rendered at 2×. SHA256 dc09a72e256ab40ae6dff839b984dd07941d8b51416ce822d26bf18ca13d30c4."
+  },
+  "home-economics-2011-ol-sb-q2-fruit": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sb-q2-fruit.png",
+    "md5": "ae2b924db1bb5a8e0487310574596542",
+    "alt": "Original fooddudes.ie chart: More portions of fruit & veg being eaten in the HOME (%). All six paired bar categories None, One, Two, Three, Four, Five; black children and grey parents legend; full percentage axis 0–35; title and source caption retained. Bars carry no exact printed value labels.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [125, 105, 520, 365], rendered at 2×. SHA256 0c0f8c0e1e04ad8076fc7a3ba45c4e6d37ea46cc1f0e54f7e099ee21a6a4248d."
+  },
+  "home-economics-2011-ol-sc-q1-houses": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sc-q1-houses.png",
+    "md5": "a850659995d2e43dd4b8b011b17bedae",
+    "alt": "All three original housing-style photographs: a multi-storey apartment building, a detached single-storey house and adjoining two-storey houses. Complete images retained, without redrawing or invented labels.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [100, 176, 470, 322], rendered at 2×. SHA256 2dc83fa800e25bd3be2f336a572db47a74e3143820482be41d3aa69b3d95d344."
+  },
+  "home-economics-2011-ol-sc-q3-poverty": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sc-q3-poverty.png",
+    "md5": "46b4951b38f5d9620fd94bcabcf03cda",
+    "alt": "Original Poverty in Ireland 2008 table. Consistent Poverty 4.2% (178,074 people); At Risk of Poverty 14.4% (610,538 people); footnote also known as relative poverty. Complete title, two rows and footnote retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [145, 133, 475, 238], rendered at 2×. SHA256 9302ae8cd75191d0e9fc731229e309efcde763f3f2e80e3034670f8f2ac33527."
+  },
+  "home-economics-2012-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q5.png",
+    "md5": "6ed845e5d5e6c7c4161e58a455e823b7",
+    "alt": "Original alternative (novel) protein question table. Plant and Micro-organisms rows, Source and Product columns; all blank input cells retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 219.2875518798828, 570.219970703125, 383.2676696777344], rendered at 2.5×. SHA256 55eb5bedfdd2b405f11bcde9a8c020eafa67675440e20c50c21c88f0cafc55bc."
+  },
+  "home-economics-2012-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q6.png",
+    "md5": "efca1e462eb72320d4603997caa1ed2e",
+    "alt": "Original heat-transfer question table. Complete Method of Heat Transfer and Cooking Method columns, three blank rows and the printed paired-response prompt.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 383.2676696777344, 570.219970703125, 585.5875854492188], rendered at 2.5×. SHA256 a95e6fd86cec1453b6b9322df10112c076144531e5fe0c60d0b65309fb94b05d."
+  },
+  "home-economics-2012-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q8.png",
+    "md5": "cb43ce460373d1ded41bbcde42af0249",
+    "alt": "Original mould diagram and question. All labelled A, B and C pointers, intact spore structures and hyphal network retained; blank answer spaces remain.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 299.7475280761719], rendered at 2.5×. SHA256 efe9cf98bdec4d58926d4a8d83241114bf3117ae0a45a895eb19af676eba5b90."
+  },
+  "home-economics-2012-hl-sb-q1-servings": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1-servings.png",
+    "md5": "2ef4fd77f552e7e5fa47f34ac61cff41",
+    "alt": "Original daily food-group servings table. Age groups 5–13, 14–18, 19–50 and 51+, each Male/Female. Bread/Cereals moderately active: 3–5/3–4, 5–7/4, 5–7/4–5, 4–5/3–4; sedentary: 3–5/3–4, 4–5/3, 4–6/3–4, 4/3. Fruit & Vegetables: 5/5, 5–6/5, 5–7/5–6, 5/5. All original headings, gender/activity labels and cells retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 234, 557, 401], rendered at 2.5×. SHA256 2b570fdb72422ec74613fc22adca05847c6f78bc3dee08f8447e4c12348facbf."
+  },
+  "home-economics-2012-hl-sc-q3-unemployment": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sc-q3-unemployment.png",
+    "md5": "2f4fc40a31116d4c8a9091cd723c03ad",
+    "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [103, 165, 546, 257], rendered at 2.5×. SHA256 302633aaada576c04377dae6ed1b6947d210224cba19fa057be9f3e8c6cafbee."
+  },
+  "home-economics-2012-hl-sb-q1b-carbohydrates": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1b-carbohydrates.png",
+    "md5": "b227c2cf716216e15fb88c996f4c4e60",
+    "alt": "Original carbohydrate answer models: labelled glucose chemical structure, disaccharide formation equation and ring diagram with water eliminated, plus hydrolysis and inversion explanation. Complete source diagrams, symbols and printed eight-mark allocations retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level marking scheme, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [76, 106, 575, 404], rendered at 2.5×. SHA256 7a1049c12390ad17fae20d4d06e774a38b95dd20422517389abc94a441365828.",
+    "solution": true
+  },
+  "home-economics-2012-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q1.png",
+    "md5": "94cf79e181e67af90b7950436110bcad",
+    "alt": "Original protein true/false question: three complete statements, True and False columns, all blank tick cells.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 152.56764221191406, 570.219970703125, 368.68768310546875], rendered at 2.5×. SHA256 48a1c80c7de1f4fbb7854ee68cb7af11f1bf0790ea1e1151a3fc0c1847caadbb."
+  },
+  "home-economics-2012-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q2.png",
+    "md5": "19655d4db59ca0437eb60e6d13d1ca77",
+    "alt": "Original starch cloze: insoluble, gelatinisation, hygroscopic word bank and all three complete statements with their blank spaces.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 368.68768310546875, 570.219970703125, 571.0675048828125], rendered at 2.5×. SHA256 d78b644fcdb5869d5d818a9bb76341ccc6be716f0529949d08a505643f125847."
+  },
+  "home-economics-2012-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q5.png",
+    "md5": "b916c4e44f67690f6bc3c00c8ed8530d",
+    "alt": "Original vegetarian food-source table: Protein, Calcium, Vitamin B, with Source 1 and Source 2 blank cells.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 219.28761291503906, 570.219970703125, 393.9476623535156], rendered at 2.5×. SHA256 86b9941fa1f9be664b5dab0e8e008f80b4b76327c792d3ea41537debdcfbc421."
+  },
+  "home-economics-2012-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q6.png",
+    "md5": "7a750aa28e3a12e58e22b5a92f326dbf",
+    "alt": "Original fruit table: Class of Fruit and matching Example columns, three paired blank numbered rows.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 393.9476623535156, 570.219970703125, 568.6676635742188], rendered at 2.5×. SHA256 177eb8cf9559dafdd962c20c7a74a80b0950c94f7e4026f1483dd479389e29c1."
+  },
+  "home-economics-2012-ol-sa-q10": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q10.png",
+    "md5": "0fb6089230c729196d260062f354b45b",
+    "alt": "Original six-property textile pool: Durable, Colourfast, Irritant, Windproof, Flammable, Absorbent; choose three and all blank tick cells retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.0876159667969, 570.219970703125, 792.6519165039062], rendered at 2.5×. SHA256 61f54f36fe9ef43a91b3278026e6b43e2ce8d563124628faf17298dfc862fda4."
+  },
+  "home-economics-2012-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q11.png",
+    "md5": "d1302dab05374b4efc82716b814840d6",
+    "alt": "Original renewable/non-renewable energy table and its separately worded request for two energy-reduction methods. Complete blank table and answer rules retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 260.3876037597656], rendered at 2.5×. SHA256 ab84195b1696de8cfe291116c0129b5c32a9e09058d5369c545075b5f9a4d842."
+  },
+  "home-economics-2012-ol-sb-q1-choice": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sb-q1-choice.png",
+    "md5": "9463506f6a97d3f1863ad7022ae26901",
+    "alt": "Original National Adult Nutritional Survey 2011 food-choice pie chart and Irish Universities Nutrition Alliance caption: Taste 41%, Health & Nutrition 36%, Cost 9%, Convenience 7%, Mood 2%, Weight Control 5%. All six sectors and labels retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [80, 127.8, 555, 359], rendered at 2.5×. SHA256 1ac6b99e08d0313973f425c1a2309c866cca1603660bbe43598bbfe7c375e5f2."
+  },
+  "home-economics-2012-ol-sc-q1-water": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sc-q1-water.png",
+    "md5": "73268cec4aefdc4760da5cc45c61f0c4",
+    "alt": "Original full water-treatment diagram: reservoir, screening, sedimentation, filtration, chlorination and fluoridation, softening and testing, high storage reservoir and to mains. All original diagram labels and border retained; no diagram redrawn.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [86, 187, 553, 361], rendered at 2.5×. SHA256 afb66a584514b08f0d390d191103f181d2d1b89b863ebba92465c3b157723e8f."
+  },
+  "home-economics-2012-ol-sc-q2-uniform": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sc-q2-uniform.png",
+    "md5": "5d63e687bb3cc76e87fc2a68738d6cdf",
+    "alt": "Original full school uniform photograph: two complete outfits including shirt, cardigan and crest, trousers, skirt and shoes. No garments cropped.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [208, 110, 399, 319], rendered at 2.5×. SHA256 9d1af39369e95a11f39653c7c35c2598725845e4699c550771709704f861c410."
+  },
+  "home-economics-2013-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q1.png",
+    "md5": "bdf1fe75bbf6001c3020b68221aa77d0",
+    "alt": "Original protein-function question table with all three protein types and blank function cells.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 318.1675109863281], rendered at 2.5×. SHA256 e825d8fa99142a19cdafb9bc2e129f3ebc59904546735a21f3a770dc1d6877f8."
+  },
+  "home-economics-2013-hl-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q3.png",
+    "md5": "929594cb91627a0a1afe1e52ee5bc8b1",
+    "alt": "Original six-row vitamin-deficiency question table: Nightblindness, Rickets, Poor blood clotting, Anaemia, Beri-beri, Neural tube defects; all blank vitamin cells retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 525.16748046875, 570.219970703125, 793.19189453125], rendered at 2.5×. SHA256 3bfae11312ec339b04c81d13a98374897143b0a60b04e186131541667efeed68."
+  },
+  "home-economics-2013-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q4.png",
+    "md5": "e17d0a7d26c11bfe3a98070d24cf7a32",
+    "alt": "Original flour and culinary-use table, complete headings and three paired blank rows.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 205.48756408691406], rendered at 2.5×. SHA256 d6141c3f787ca881883fa979b51d89a7c5bd2c211b23f60b09416c412c8d970f."
+  },
+  "home-economics-2013-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q6.png",
+    "md5": "953702c893e5ed3c79b50a594ca1875c",
+    "alt": "Original food-contamination table with Pesticides and Metal residues, How contamination occurs and Possible effect on the body headings; all blank cells retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 412.4875183105469, 570.219970703125, 596.5676879882812], rendered at 2.5×. SHA256 00595edd51c2d2d1868c528b020ff0d8d2f7dfe894b71281b00bb2b65c176e11."
+  },
+  "home-economics-2013-hl-sb-q1-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sb-q1-pyramid.png",
+    "md5": "31c6ceddede4b431fb8ca7c568a169f1",
+    "alt": "Original five-shelf Food Pyramid daily-servings table with complete SLAN 2007 source caption. 1998/2007 percentages: cereals/breads/potatoes40/26; fruit/vegetables56/65; milk/cheese/yoghurt22/20; meat/fish/poultry/alternatives36/39; top shelf fats/sugar/salt14/14. All original shelf names and daily-serving limits retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [81, 175, 541, 468], rendered at 2.5×. SHA256 953c0bf7e273b4e4f8e423e06b82778918294ed9cb5660a68af3827b6f28d050."
+  },
+  "home-economics-2013-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q1.png",
+    "md5": "cebe72be850dafd0087177f43e98382e",
+    "alt": "Original fat-classification question with the complete avocado, sardines, cheese choice pool and blank Animal, Vegetable (Plant), Marine table.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 341.0876770019531], rendered at 2.5×. SHA256 846082f200ae5695afca5f95fa6f480ccff99988816b92de3671f2f1a45608cc."
+  },
+  "home-economics-2013-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q3.png",
+    "md5": "41464cd9315679d1b7072fcab6553dd3",
+    "alt": "Original coronary-heart-disease true/false question table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 546.4676513671875, 570.219970703125, 786.5319213867188], rendered at 2.5×. SHA256 6f5369f4fe0fbafe521434a4460814e5e0189c4f6bf362f342bbdfcca1d3ad64."
+  },
+  "home-economics-2013-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q4.png",
+    "md5": "6942bd2f84ac8b90bb7dae0e43cea260",
+    "alt": "Original cooking-method question table with Moist cooking methods, Dry cooking methods and Frying columns, two blank example rows for each.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 188.2676544189453], rendered at 2.5×. SHA256 d00bf5e2f42ea65faf604b1e865cbd0f038f8c98b7298c5e37f770c80c14c801."
+  },
+  "home-economics-2013-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q6.png",
+    "md5": "75e790559c18c69668cbcc252888cfe6",
+    "alt": "Original soup true/false question table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 367.66766357421875, 570.219970703125, 542.3876342773438], rendered at 2.5×. SHA256 7fd966cbc4ef68459a97cb9b192e43b29c31068c44c6329516bb1ca75d4cf7a4."
+  },
+  "home-economics-2013-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q8.png",
+    "md5": "06e71aace99c7e12814d5c17a338082a",
+    "alt": "Original complete textile-care symbols: hand in wash tub and crossed-out tumble-dryer symbol, both with full blank response spaces.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 328.7276306152344], rendered at 2.5×. SHA256 f3b9d4a0321d227b8fb84e8701dcdd20021093844823955233493172745bb385."
+  },
+  "home-economics-2013-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q11.png",
+    "md5": "8331a6b210968a6f6142cbc9832cd395",
+    "alt": "Original electrical-appliance safety-feature and example-of-use table, full prompt and both blank paired rows.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 202.06764221191406], rendered at 2.5×. SHA256 47122e12f3e0a4b7922146564bad96fe8c31aec7c1bdc947826b49f877a82426."
+  },
+  "home-economics-2013-ol-sb-q1-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sb-q1-pyramid.png",
+    "md5": "c51f1752a776d137c770f4f73eecef47",
+    "alt": "Original complete food pyramid illustration and its Food Safety Authority, 2012 caption. Every pictured food and shelf, top and base, retained from the original examination paper.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 110, 548, 427], rendered at 2.5×. SHA256 62059cf04d097fc36bfd686f20f3c44f4dc37533a7371485be771621329a8e97."
+  },
+  "home-economics-2013-ol-sc-q1-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sc-q1-heat-loss.png",
+    "md5": "8a0418302fe7209fee4e3a7c67797c99",
+    "alt": "Original house heat-loss diagram. Complete house and arrows, roof25%, windows15%, walls35%, doors10%, floors15%, and Average heat loss from a house caption retained.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [198, 179, 405, 384], rendered at 2.5×. SHA256 1a1721464fbe4aed24d436a4eb437b297e1a6c563359d08f5ab8065da4b9094a."
+  },
+  "home-economics-2014-hl-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q2.png",
+    "md5": "1ea614bb23259bc39805d63e84e48434",
+    "alt": "Original lipid-digestion question table, complete Small Intestine row and blank Secretion, Enzyme and Product cells.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 373.3675537109375, 570.219970703125, 495.4676818847656], rendered at 2.5×. SHA256 a8bf94d8e349a9bd524f6dc5089441fbb1c206b630ea4d9b1c95d700cfd01884."
+  },
+  "home-economics-2014-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q6.png",
+    "md5": "9c3a9008836e7e5d578526813df416ed",
+    "alt": "Original cheese-classification question table with three blank classification/example pairs and the complete prompt.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.0874328613281, 570.219970703125, 620.147705078125], rendered at 2.5×. SHA256 89ca5ddda2c458b05d71bde30d69ef31e9a4bea9d94cc6c70a97dd6dae2b1057."
+  },
+  "home-economics-2014-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q8.png",
+    "md5": "112e752bc7529550ffd30562b10ead83",
+    "alt": "Original micro-organism/use question table: Lactic acid bacteria, Lactobacillus bulgaricus and Yeast; all blank use cells retained.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 212.26771545410156], rendered at 2.5×. SHA256 4c58f09f63df68a1e8f724b5b2fc420e7ebb14885d9151788f01e77ffd273359."
+  },
+  "home-economics-2014-hl-sb-q1-costs": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1-costs.png",
+    "md5": "c891d149ba56a946a9544049d2d29842",
+    "alt": "Original four-household, three-outlet food-cost table: every household description, euro value, percentage and daily calorie requirement retained; complete multiple-supermarket, low-cost-shop and local-shop headings.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.03999773661296, 166.55999755859375, 548.8000081380209, 465.22800903320314], rendered at 2.5×. SHA256 01aab8cf429f71aa691b543c06f5aad2414b6512171613778b6e51d4187deb36."
+  },
+  "home-economics-2014-hl-sc-q2-dress": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q2-dress.png",
+    "md5": "fbfa9defa71fe282f92e39a102dc7761",
+    "alt": "Complete original examination photograph for the Imelda May dress-design question, including the striped dress, belt, arms and shoes; full original frame retained.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [247.3000030517578, 127.17999267578125, 363.79998779296875, 332.8999938964844], rendered at 2.5×. SHA256 5e805ab3dd85c8c171f2dafd05bc208a42a357f250d55106226bb7f0876a87d4."
+  },
+  "home-economics-2014-hl-sb-q1d-protein": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1d-protein.png",
+    "md5": "900fb6ec928f4213f95a48ad48a7e59e",
+    "alt": "Original complete protein-classification answer table, preserving merged Simple/Animal/Plant and Conjugated groups, subgroups, all examples and aligned food sources.",
+    "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [54.40177590506418, 417.6600036621094, 559.1903599330357, 645.8200022379557], rendered at 2.5×. SHA256 bd3c6ba5881e54ce85d0abda16dd842bbb35565193179073a17bf6ee59c7ec37.",
+    "solution": true
+  },
+  "home-economics-2014-hl-sc-q1aii-allowance": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q1aii-allowance.png",
+    "md5": "b29100f38a6cebac1a2db069b0abe2d0",
+    "alt": "Original image-only marking note: Due to an inconsistency between the English and Irish versions of the examination paper, non-renewable sources of energy were also accepted.",
+    "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 19 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [354.6816101074219, 509.5430603027344, 589.8394775390625, 552.8961791992188], rendered at 2.5×. SHA256 3112608b04ed38e098c7ab9b35dd06bd0bd93e14c3bec11c1bd126811674c987.",
+    "solution": true
+  },
+  "home-economics-2014-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q1.png",
+    "md5": "71a9024336039ca2fda622c4789025e8",
+    "alt": "Original fats true/false table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 152.56764221191406, 570.219970703125, 341.0876770019531], rendered at 2.5×. SHA256 c2e84d579fb75d1d6a9eb82899fdbb8ae6ff28148a0f597e226c4693bb76a66f."
+  },
+  "home-economics-2014-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q2.png",
+    "md5": "068fbaacefb2e1c372406d0d08ca06e2",
+    "alt": "Original two-row vitamin-classification and example table, complete question and paired blank cells.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 341.0876770019531, 570.219970703125, 492.16766357421875], rendered at 2.5×. SHA256 79dcbba9246561aa871d86cc7f8d8dd7aba7cef31e3b59c160c70578e711d5a3."
+  },
+  "home-economics-2014-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q4.png",
+    "md5": "400ce4b87813e1cb9ac539f733a803ad",
+    "alt": "Original diet/health true/false table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 228.4076690673828], rendered at 2.5×. SHA256 53b0d00402dedd14bad21e42392142ab1d5f14f9682945d467b45ad59e1c3571."
+  },
+  "home-economics-2014-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q5.png",
+    "md5": "568ff4c45527b15dd105ec671758a00c",
+    "alt": "Original cheese nutrient tick table, all Protein/Vitamin C/Calcium choices and the complete companion cooking-effects question.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 228.4076690673828, 570.219970703125, 448.8476257324219], rendered at 2.5×. SHA256 464a4be458a1c51981e01c077b31549a814129a526b0932bfaa57af0f516e518."
+  },
+  "home-economics-2014-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q9.png",
+    "md5": "6bc03ccd8798e4c4bbc0b243015178aa",
+    "alt": "Original microwave part/function matching question, complete wave guide/turntable/magnetron choice pool and all three function rows.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 246.88758850097656, 570.219970703125, 462.94769287109375], rendered at 2.5×. SHA256 d23fae1def6f0adf70841f74484024ac63403eef3f2f4eca5c2c4ac2b6528580."
+  },
+  "home-economics-2014-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q11.png",
+    "md5": "f9e72e79ccf11e004870b34d4f6227b5",
+    "alt": "Original natural/synthetic fibre table and complete companion question asking why natural fibres are used in household textiles.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 260.3876037597656], rendered at 2.5×. SHA256 545d9aaf6034e57d9c71f09ff047a585d03a69ed1420f0966a3de44c12991480."
+  },
+  "home-economics-2014-ol-sb-q1-nutrients": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sb-q1-nutrients.png",
+    "md5": "e064616228218fe3950d196e52110fad",
+    "alt": "Original three-dish carbohydrate/protein/fat table: Beef Lasagne11.8g/8.1g/8.9g; Sweet & Sour Chicken & Rice20.0g/6.8g/0.4g; Cheese Burger27.1g/14.2g/3.2g. All original headings, dish names and units retained; FSAI attribution remains in the source stem.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [83.53199768066406, 168.47999572753906, 526.007958984375, 280.7279907226563], rendered at 2.5×. SHA256 dc898ed9fbd54306022d264a87598ff9483263726aead56eea4ccb6611647458."
+  },
+  "home-economics-2014-ol-sc-q1-electricity": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sc-q1-electricity.png",
+    "md5": "411ae988b598d6c524d966a40c8e9512",
+    "alt": "Both original electricity-supply pictures, complete Meter Box and Miniature Circuit Breakers, with their original captions.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [153.24000549316406, 180.36001586914062, 465.37298583984375, 327.6717224121094], rendered at 2.5×. SHA256 f61bb13185cdfa86bac3a663f95a96a0ed31caa2d83c12853f9ca82e3be95775."
+  },
+  "home-economics-2015-hl-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2.png",
+    "md5": "02f88a83a7e78c27a17e08ffc476545a",
+    "alt": "Original carbohydrate table: all three named classes, Example and Food source columns, and every blank cell.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 304.3675231933594, 570.219970703125, 483.7674255371094], rendered at 2.5×. SHA256 5c4476ce216694c183e33d8518a2bd7059dd3fd964f17516639e7e21fd5c4b2c."
+  },
+  "home-economics-2015-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q5.png",
+    "md5": "e3854c33dc69622e5df5cb7c0e693faf",
+    "alt": "Original wheat-grain table: complete Bran/Endosperm/Germ inputs and nutritional-significance cells.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 39.88771057128906, 570.219970703125, 223.0076446533203], rendered at 2.5×. SHA256 029ced0ae20330d296a6f5cf37f0025bd47e4a30d5556f55e6cbad0728b894a8."
+  },
+  "home-economics-2015-hl-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q7.png",
+    "md5": "0ae511f3351179c661db9c1a8c5a8592",
+    "alt": "Original sauce-classification question and TWO blank classification/example rows, preserving the printed response quota.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 374.8076171875, 570.219970703125, 527.4475708007812], rendered at 2.5×. SHA256 55be8c8284e5c6b5a588eeb70bbaba4d1a3d41881a89734dacd7fb3381816963."
+  },
+  "home-economics-2015-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q8.png",
+    "md5": "23c1cb85391d6b21c716b0424f1b1d72",
+    "alt": "Original enzymic-spoilage question asking TWO of THREE named treatments: Blanching, Cold temperatures and Acids.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 527.4475708007812, 570.219970703125, 792.2164916992188], rendered at 2.5×. SHA256 c2991c49220e21eb95307aee7df08b9074b7ade421a7a41dbc340807ee17715b."
+  },
+  "home-economics-2015-hl-sb-q1-survey": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q1-survey.png",
+    "md5": "abbdb7adca8c76bfa0293588083fe060",
+    "alt": "Complete original school-food survey quotation, including every outlet percentage and all nine food/drink categories and percentages.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.44000244140625, 115.79998779296875, 523.739990234375, 295.32000732421875], rendered at 2.5×. SHA256 e58eb3d287c270949fe9e246d656b907d53ba4f3c78a01debc25b2ab76c05b64."
+  },
+  "home-economics-2015-hl-sa-q2-answer-table": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2-answer-table.png",
+    "md5": "76e32d2c5781795bb30b7d7d2effeb46",
+    "alt": "Original complete carbohydrate answer table, preserving each class and the aligned example/food-source associations.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [66.67200469970703, 269.0999755859375, 540.527978515625, 440.93999099731445], rendered at 2.5×. SHA256 aaaacc05cce803e061135eacb2e00f4fe00c670cf470d6d21ff7d7cee24ac8a7.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q3b-moulds": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q3b-moulds.png",
+    "md5": "0600b83ad82c57093d89a87d44c47d04",
+    "alt": "Original four-mould table with every name, characteristic and applicable reproduction method; complete general reproduction guidance remains in the answer rows.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 12 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.88000170389812, 306.41998291015625, 548.9200032552084, 501.29997634887695], rendered at 2.5×. SHA256 05166fd3ce175db061a0b70d0249c85a80fb2d59d52f671957e2f5a2a9dece89.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q4b-budget": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4b-budget.png",
+    "md5": "46596e973545a024d49c69236c26998a",
+    "alt": "Original ten-area family budget, preserving all percentages, euro amounts and reasons, including underlined compulsory Housing, Food and Savings.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 13 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [74.98000367482503, 445.99196166992186, 541.8199869791666, 689.2079711914063], rendered at 2.5×. SHA256 bac5b0e228459268b28066d7893450dc916ee30220ea9f24ddc364fdadff557c.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q4c-savings": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4c-savings.png",
+    "md5": "92fac17264061be883c4ca835c91d099",
+    "alt": "Original complete six-model savings table: institution/scheme, historical interest, access and tax remain aligned in their original cells.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 14 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.89000177383423, 146.23197021484376, 549.1499938964844, 678.653306749132], rendered at 2.5×. SHA256 6848e25917eabdcd6b59a4292352e364a601cafd894f2ec4d6ab8b262bb25ad9.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sc-q1aii-plastics": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sc-q1aii-plastics.png",
+    "md5": "bfeb21a964fc75396305b15392e47441",
+    "alt": "Original Thermoplastic/Thermosetting comparison table, retaining both properties and all matching example/use pairs.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 16 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.86000156402588, 549.6599731445312, 534.6599731445312, 734.4599990844727], rendered at 2.5×. SHA256 130d96814007ae884d4f51c0f8ca002e467cab9a9fc086ea5937b990c54f599c.",
+    "solution": true
+  },
+  "home-economics-2015-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q1.png",
+    "md5": "566e3656b4a6a2a38d328b56f315db81",
+    "alt": "Original calcium true/false table with all three complete statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 138.7676544189453, 570.219970703125, 282.55997467041016], rendered at 2.5×. SHA256 cecf04d5c037209c01acca239076240810cec68c42c8d037b5b7d1029d7b5da5."
+  },
+  "home-economics-2015-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q6.png",
+    "md5": "883e07e408ed2312b7d2c8da4948f67e",
+    "alt": "Original food-spoilage true/false table with all three complete statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 426.2875061035156, 570.219970703125, 583.8200073242188], rendered at 2.5×. SHA256 daca9cbdbd309b5987a16bff2e369bca5ca0c1f57db37acfbd96c346600de783."
+  },
+  "home-economics-2015-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q7.png",
+    "md5": "f47581b64d0827ca4e63b32b551cf78f",
+    "alt": "Original cheese matching question: all three supplied choices and complete Hard/Soft/Processed cheese blank rows.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 39.88777160644531, 570.219970703125, 211.30000813802084], rendered at 2.5×. SHA256 4e8fd7f962e67ba3e9e495d7fa285ccc2e5eb5e713355a779c302ab0f8bd78df."
+  },
+  "home-economics-2015-ol-sb-q1-meats": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sb-q1-meats.png",
+    "md5": "474328500295550b2fa3c3cef1663396",
+    "alt": "Original four-meat nutritional table: Beef, Chicken, Liver and Pork, all five nutrient columns, every value and original unit.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [84.25999895731609, 196.08001708984375, 527.5600179036459, 341.4942932128906], rendered at 2.5×. SHA256 c23c13aabed77f5f4ccb784ad964372077693dc2fe850494f40d0dfba18f6faf."
+  },
+  "home-economics-2015-ol-sc-q3-school": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sc-q3-school.png",
+    "md5": "d5a47cdcd0da284e3dbfef872c3bacae",
+    "alt": "Original school-leaver table: every year group and count1,500/1,777/1,064/3,299 from2009/2010, preserving the chart input.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [117.43999926249187, 138.5400390625, 485.0199839274089, 276.25998942057294], rendered at 2.5×. SHA256 8ff921a7fd3dd3f9cd23ff01e458809f6ab539a35962ea83e3e03c52773a325b."
+  },
+  "home-economics-2015-ol-sc-q1-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sc-q1-plan.png",
+    "md5": "369e305b4fbee090c2f88c543db37f3c",
+    "alt": "Complete original floor plan for Sean and Julie: all four bedrooms, bathroom, ensuite, WC, kitchen/dining, utility, garage and lounge, with every door/wall and original label.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [104.94000244140625, 198.05999755859375, 503.0400085449219, 408.6600036621094], rendered at 2.5×. SHA256 4b69ca311c4935d83d1e0660dd28d8b188de64ed1af82d830930ad2cbdb8c07d."
+  },
+  "home-economics-2016-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q1.png",
+    "md5": "169ed93e058b3056549f33a78832b6e9",
+    "alt": "Original protein table: Casein, Actin and Albumin, with all three blank food-source cells.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 124.60768127441406, 570.219970703125, 273.4099884033203], rendered at 2.5×. SHA256 32994c2ed9d87a62a2a53d8173a99a5dc596e770655696b32de7cf93c0b22774."
+  },
+  "home-economics-2016-hl-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q7.png",
+    "md5": "18a30e226ca2f83b9cb27a57d5c96cfc",
+    "alt": "Original labelled yeast diagram with A, B and C, every pointer, blank answer field and the original image attribution.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 25.727678298950195, 570.219970703125, 250.5475616455078], rendered at 2.5×. SHA256 06a9f32b6ea21e88720ab09e1685f7f70aadfdf19de8bde4dae37de8388ed61f."
+  },
+  "home-economics-2016-hl-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q11.png",
+    "md5": "28156645402ceba6969a29611c8cb336",
+    "alt": "Original upholstered-furniture question with both property answer spaces and the complete fire/flame-resistant label and companion question.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 246.4674835205078, 570.219970703125, 556.0672607421875], rendered at 2.5×. SHA256 6c77a321fb9e9c70b4144ad20c41d8f4a73d75bf4f0db3fee398addd8df6fbfa."
+  },
+  "home-economics-2016-hl-sb-q1-fibre": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1-fibre.png",
+    "md5": "d01cfb11e84fe1da9d25da5ef482bec9",
+    "alt": "Original fibre-intake table: all six food groups and total, both 18–64 and ≥65 age categories, percentages and gram values including 19.2 and 19.0 totals.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [91.26000156402588, 191.51078444260818, 535.8799874441964, 375.4058801987592], rendered at 2.5×. SHA256 e76cc7bc989074b45d6f4c10615d69f566de246faf118ea9df07a54a776506be."
+  },
+  "home-economics-2016-hl-sb-q1d-diseases": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1d-diseases.png",
+    "md5": "50ba2b735fc18d1d8f8d0f7bdc2dab81",
+    "alt": "Complete original five-model bowel-disease table with all names, matching accounts and symptoms/effects; no table row or continuation is omitted.",
+    "attribution": "SEC Home Economics 2016 Higher Level marking scheme, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [66.75199839274089, 225.49769474909857, 555.2120198567708, 755.5292147122897], rendered at 2.5×. SHA256 f310fc50f1438673b71e6aac6fb50dfc7102f64d61fa5f99984fcea183a3ce8a.",
+    "solution": true
+  },
+  "home-economics-2016-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q1.png",
+    "md5": "d17c72cfc38e9b58166a1caa39aaf543",
+    "alt": "Original protein true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 138.7676544189453, 570.219970703125, 284.06545188210225], rendered at 2.5×. SHA256 3009381143a70a6b9485e15823fe9b79c07d6baa23f5168b1abe81ba1ddcebee."
+  },
+  "home-economics-2016-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q2.png",
+    "md5": "0ad77ad415df434ee8ec850d1c657ea2",
+    "alt": "Original carbohydrate source table with Sugar, Starch and Fibre and all blank dietary-source fields.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 315.4675598144531, 570.219970703125, 463.910005569458], rendered at 2.5×. SHA256 b7d6e5cda31c05982cadaaa12b8d0fa317e1967efd85bb1aa775be786d583f32."
+  },
+  "home-economics-2016-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q6.png",
+    "md5": "478e58329119c6c2ce273a68007782bc",
+    "alt": "Complete original cheese cloze with every blank and the full curds, lactic acid, rennin word bank.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 215.6875762939453, 570.219970703125, 432.8874816894531], rendered at 2.5×. SHA256 7ec42bb0a142829fe2ba3b6d8a0b2235434812354de244ad74041f92346d17cd."
+  },
+  "home-economics-2016-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q7.png",
+    "md5": "b81bbc90e84a30364aaa9ca043a27533",
+    "alt": "Original freezing true/false question with all three statements, temperature and blank True/False columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 432.8874816894531, 570.219970703125, 623.7854558771306], rendered at 2.5×. SHA256 1980191f3805481f25349179cb5eac75d9aec135ede8551507b35086bad0739c."
+  },
+  "home-economics-2016-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q8.png",
+    "md5": "0450fc82a893f2ba67f4225e3673d23f",
+    "alt": "Original vegetable table with Pulse, Root and Green categories and both blank example columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 39.88771057128906, 570.219970703125, 185.18546641956675], rendered at 2.5×. SHA256 23708fb61ddca89ddf51c9ee727c141ab36382f21eb1e6f84da7ad1a47dbe06a."
+  },
+  "home-economics-2016-ol-sa-q10": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q10.png",
+    "md5": "a73131a84d316598ffeaf8842e9bd87e",
+    "alt": "Both original fabric-care symbols, hand-wash and do-not-bleach, with the full question and blank response spaces.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 395.9875183105469, 570.219970703125, 792.6519165039062], rendered at 2.5×. SHA256 ad790bae1e70f59c2c891c0a0000feb72f81cddc3ccbcd31fb8ec1cf72fd6685."
+  },
+  "home-economics-2016-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q11.png",
+    "md5": "f6e59a4f3c37f0071b10dc90470e37ba",
+    "alt": "Original appliance table with Kettle, Food processor and Toaster, and blank Element/Motor columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 39.88771057128906, 570.219970703125, 198.98546808416194], rendered at 2.5×. SHA256 c911ffc49c49b32f97261b6533b432c7aa2e2f4c3d8940b98ec822be5b09fd77."
+  },
+  "home-economics-2016-ol-sb-q1-meals": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q1-meals.png",
+    "md5": "1a4b0eac02fa69417323b29e7c7c9b66",
+    "alt": "Complete original comparison of Fisherman’s pie and Chicken curry with rice: all ingredients, energy and five nutrient values per serving, with original units.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.41000032424927, 196.55079064002405, 535.2666558159722, 407.4654554887251], rendered at 2.5×. SHA256 92a5811be8b84ad32ee7353b44c857ea28a9599bad7fe75731ac0423747a76d0."
+  },
+  "home-economics-2016-ol-sc-q1-kitchen": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q1-kitchen.png",
+    "md5": "453e9470bb3a2f0b431a4ad4c657feb1",
+    "alt": "Complete original kitchen layout with all visible appliances, storage, worktops, windows and original source attribution.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [103.37999725341797, 190.4400177001953, 491.8800048828125, 353.28399658203125], rendered at 2.5×. SHA256 2a0684cecdf8064132e6136fe3dd4dc322c3be7c2a6fab715b18fdaa6ab8e611."
+  },
+  "home-economics-2016-ol-sc-q2-suits": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q2-suits.png",
+    "md5": "77a0d10a08223346b06698e36ac031b5",
+    "alt": "Both original office-suit examples, male and female, in full with the original image attribution.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [178.3800048828125, 125.33999633789062, 403.0884704589844, 350.67138671875], rendered at 2.5×. SHA256 14455fcaac8c6fc05945aba43296900b6fe671e00abc52386559316224381546."
+  },
+  "home-economics-2016-ol-sb-q2b-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q2b-menu.png",
+    "md5": "c396d73c83b4ace9145a97e32d0a8727",
+    "alt": "Complete original breakfast, lunch and dinner model including every food/drink and the printed Egg Mayonnaise anomaly in the lacto-vegetarian menu.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level marking scheme, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [195.1699981689453, 391.1499938964844, 407.22998046875, 618.9400024414062], rendered at 2.5×. SHA256 860d85065b6eee044d628b867aed01b9f88f382848f67de108ee8979f8207ac5.",
+    "solution": true
+  },
+  "home-economics-2017-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q4.png",
+    "md5": "36102b187f450dec274bf411a6179bbc",
+    "alt": "Complete original anaemia table with Cause, Effect of deficiency and Corrective measure blank fields.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 46.3197021484375, 570.219970703125, 239.57001495361328], rendered at 2.5×. SHA256 a8b64d7b8f4efe19127ad3437f197e2c27473758c8f33690bbf5107dccfd6e16."
+  },
+  "home-economics-2017-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q6.png",
+    "md5": "fe1f14a3845c777177ee9851800bdf0d",
+    "alt": "Complete original two-bacterium profile table with Food poisoning bacteria, Description/characteristic and Habitat headings and both blank rows.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 516.5399169921875, 570.219970703125, 760.2254444469105], rendered at 2.5×. SHA256 258a96aa92711ee512a7ce25eff8ca22d9174acce2e3d72d51d14c113e03d9c2."
+  },
+  "home-economics-2017-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q8.png",
+    "md5": "699f6915e860e6b3421ec6622e68c41f",
+    "alt": "Complete original Ultra Heat Treatment table with blank Temperature, Time and Effect cells.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 236.69989013671875, 570.219970703125, 376.1171340942383], rendered at 2.5×. SHA256 fddbcf0573aaafebcb477a3f79a806c2109d427855837286e0a6d38aaaaa4591."
+  },
+  "home-economics-2017-hl-sb-q1-bmi": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sb-q1-bmi.png",
+    "md5": "04f4857cf319674e1cfdd6f554b53d2f",
+    "alt": "Complete original BMI chart: six age groups, four BMI categories, percentage axis, all bars and full legend.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [81.4800033569336, 217.44000244140625, 519.47998046875, 408.7799987792969], rendered at 2.5×. SHA256 d39cd65003d6aeee0650870d45a0b5ce177f808663ab353c026b9502aa6e7dbd."
+  },
+  "home-economics-2017-hl-sc-q1-bungalow": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q1-bungalow.png",
+    "md5": "b333092f02fa26baf976848af3068163",
+    "alt": "Complete original Murphy family bungalow, all room labels including Bedroom 2, doors, windows, title and attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [112.68000030517578, 177.83999633789062, 486.6000061035156, 361.239990234375], rendered at 2.5×. SHA256 71e110e17b1c2d6aff0e415d1b98f0c6f4422946dc8bb406b285f6f2278dfaa4."
+  },
+  "home-economics-2017-hl-sc-q2-outfit": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q2-outfit.png",
+    "md5": "5eacc83a12853927b875904cee80588e",
+    "alt": "Complete original athleisure outfit photograph and original attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [222.83999633789062, 123.83999633789062, 398.03997802734375, 369.084716796875], rendered at 2.5×. SHA256 af7a6ab075ae2676ce0ec56ca502ddeffd012cb447a6c6525de1e13ae9ff66dc."
+  },
+  "home-economics-2017-hl-sc-q3-unemployment": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q3-unemployment.png",
+    "md5": "57c18fa7f8be3e969fb1da3e7ac50396",
+    "alt": "Complete original unemployment table for 2011–2016, all six percentages, row heading and The Irish Times attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [69.05999755859375, 140.2220458984375, 543.5399780273438, 227.00469970703125], rendered at 2.5×. SHA256 409230aa853bd7cf076acc469dea2e13fabdb7162ecfe430d3439552857b5e63."
+  },
+  "home-economics-2017-hl-sb-q1b-carbohydrates": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sb-q1b-carbohydrates.png",
+    "md5": "088b7fb07c87dae45236b4f9731266da",
+    "alt": "Complete original carbohydrate classification, chemical formula, examples and food-source table, preserving subscripts and all printed alternatives.",
+    "attribution": "SEC Home Economics 2017 Higher Level marking scheme, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [39.49199905395508, 142.6919921875, 541.7279907226563, 333.8879821777344], rendered at 2.5×. SHA256 cc11150b1d6e973b439cd7b83d59b508b44109fd28291d27de82568dda36a86f.",
+    "solution": true
+  },
+  "home-economics-2017-hl-sa-q7-equation": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q7-equation.png",
+    "md5": "5896ad04a7117460fe41716fe18694b7",
+    "alt": "Complete original fermentation equation with yeast, glucose, moisture, warmth, reaction arrow, carbon dioxide, alcohol and energy; original subscripts preserved.",
+    "attribution": "SEC Home Economics 2017 Higher Level marking scheme, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.92005157470703, 277.7319641113281, 545.0640258789062, 295.2120361328125], rendered at 2.5×. SHA256 ea8062ed96dddc516c1e96349eda4dbc6fda4ecc843e92775527f5b27db90726.",
+    "solution": true
+  },
+  "home-economics-2017-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q1.png",
+    "md5": "384bf3198bf7819e701b593d0af94acb",
+    "alt": "Original lipid true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 144.5396728515625, 570.219970703125, 291.625468860973], rendered at 2.5×. SHA256 cb9f24781160c751845910fa25b534b35520bd81dc743c59261377f0bc1f8a48."
+  },
+  "home-economics-2017-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q3.png",
+    "md5": "4d2a0b78b13e4c78a593e303a35e7224",
+    "alt": "Original protein table with Eggs, Peas and Fish and blank High Biological Value/Low Biological Value columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 474.119873046875, 570.219970703125, 639.5654518821023], rendered at 2.5×. SHA256 a061fb2c6aedd08a4d601213a106518405988dac146c8b9d085363ee95dc0391."
+  },
+  "home-economics-2017-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q6.png",
+    "md5": "64ba34b8697fca8d42b606e01c9e527a",
+    "alt": "Original cooking-method table with Grilling, Steaming and Roasting and both blank example columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 399.8397521972656, 570.219970703125, 561.625468860973], rendered at 2.5×. SHA256 beddc77b1aaa65a80035eba8687787343a2a0672d2c404824f8f1253e7b131b3."
+  },
+  "home-economics-2017-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q7.png",
+    "md5": "f674e2b076acb0c08b336b5316c07a93",
+    "alt": "Complete original cereal cloze, with all three blank sentences and the bran, endosperm, staple word bank.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 597.5997314453125, 570.219970703125, 793.6446533203125], rendered at 2.5×. SHA256 c72b1f7bc763a65f8689fc1753216c89214da44136d74ed7294661c06c05c2a1."
+  },
+  "home-economics-2017-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q8.png",
+    "md5": "6033d5fb28402cdfaa2d3c541dbdb6da",
+    "alt": "Original food-additives true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 41.939697265625, 570.219970703125, 233.54545177112925], rendered at 2.5×. SHA256 e856afe00b0d9bcdad340cd9255c0600b63fcf13e1867b94f8db751943161640."
+  },
+  "home-economics-2017-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q11.png",
+    "md5": "85e0851cfd63558204d8ebd69787a697",
+    "alt": "Complete original historical refrigerator energy label, including A–G bands, rating A, annual 325 kWh, storage volumes, noise field and attribution, with the original question and answer space.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 41.939697265625, 570.219970703125, 472.13970947265625], rendered at 2.5×. SHA256 b81b69a254a128a5158a5b4ca814ac20f5c5208a8c2117e45c82436dcac2d753."
+  },
+  "home-economics-2017-ol-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q12.png",
+    "md5": "c2e4c2ac2ca4fe13a3f82bd16965b8c1",
+    "alt": "Original pollution table with Air pollution, Water pollution and Noise pollution and all blank example fields.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 472.13970947265625, 570.219970703125, 652.5500068664551], rendered at 2.5×. SHA256 c21268d6bbe7c69168f894e4970a97dee1a4aa6a62644c644ec66c5349ae2cce."
+  },
+  "home-economics-2017-ol-sb-q1-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sb-q1-chart.png",
+    "md5": "9c44dd9f365a321b6e194ffbf530016c",
+    "alt": "Complete original fruit-and-vegetable consumption chart: all three age groups 15–34, 35–54 and 55+, both men/women bars, full legend, percent axis and title.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [83.81999969482422, 156.6000213623047, 525.7799682617188, 410.8800048828125], rendered at 2.5×. SHA256 3fa3ac4d926764731390312921e3700bb783aac38dd379653e91ed1fa6aa5f7c."
+  },
+  "home-economics-2017-ol-sb-q2-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sb-q2-menu.png",
+    "md5": "3f8687af86123d58fa903168cc2c217d",
+    "alt": "Complete original Paul and Lisa school-day menu: breakfast, morning break, lunch and dinner, retaining every food and drink.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [164.43999481201172, 99.37749735514323, 445.2433386908637, 319.55454323508525], rendered at 2.5×. SHA256 3d7c8f196858ab8b8bc394c9dffa16f9ad1f4cf0fcdf037ce2409e053264fe3f."
+  },
+  "home-economics-2017-ol-sc-q1-housing": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sc-q1-housing.png",
+    "md5": "9addac56896fbcbf4d7ed7493ed9a7f8",
+    "alt": "All three original housing-style images in full, with their original source attributions.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.58000183105469, 180.1199951171875, 500.8000183105469, 294.5697021484375], rendered at 2.5×. SHA256 141f783be3a57a31b9502d87c5b11e8d1508cad5694f3790d74d8e4ba4b23a39."
+  },
+  "home-economics-2017-ol-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sc-q2-outfits.png",
+    "md5": "2f2393e2374b8aebe72b26bbef04f16b",
+    "alt": "Both original Debs outfits, suit and dress, shown completely with both original source attributions.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [140.77999877929688, 122.21998596191406, 456.82000732421875, 350.7746887207031], rendered at 2.5×. SHA256 9bd6349f0d235ec3b12f26700d6b76dfafe2f4fedc87a5fd94e90c7364765bff."
+  },
+  "home-economics-2018-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q1.png",
+    "md5": "4dd4ded7233545e0b7f8bfeb4b1f25d0",
+    "alt": "Complete original Organ, Enzyme, Substrate and Product table with required Pancreas and Small Intestine blank rows.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 145.73980712890625, 570.219970703125, 295.2371303013393], rendered at 2.5×. SHA256 7df325418e5ece44547e7a8449b3e14d2587870b78b74a25d969595668731493."
+  },
+  "home-economics-2018-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q5.png",
+    "md5": "3d8d966e238393e123c11b34ebc29ead",
+    "alt": "Complete original gluten-free symbol and question, including the request for two labelled products.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 276.77978515625, 570.219970703125, 525.8400268554688], rendered at 2.5×. SHA256 adbffcabc29351bb41a608886ed7eb3b352305565f5b0ef1ad2a37b6956f5c0c."
+  },
+  "home-economics-2018-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q6.png",
+    "md5": "845b6a6840b4181ebdddee22b4054eb1",
+    "alt": "Complete original processed-food table with all three category headings and blank Food/Product fields.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 525.8400268554688, 570.219970703125, 718.1899948120117], rendered at 2.5×. SHA256 88d6fbb670d098d53085e8633bf68556355b503dddcb10a44e4012d492dd3893."
+  },
+  "home-economics-2018-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q8.png",
+    "md5": "028668e3ff1478bc92dd6a3b1c3db0ad",
+    "alt": "Complete original optimum-growth temperature table with Psychrophiles, Mesophiles and Thermophiles.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 280.67974853515625, 570.219970703125, 436.0099849700928], rendered at 2.5×. SHA256 fa3dabdedc63c49440b5e56e120314df44c140d3d94375739e62e57d2097f89c."
+  },
+  "home-economics-2018-hl-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q9.png",
+    "md5": "25bd259b9261ab2a96065071413e022b",
+    "alt": "Complete original two-textile/property table and companion fire-retardant finish question.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 471.8997497558594, 570.219970703125, 782.0797119140625], rendered at 2.5×. SHA256 233bb33f4c980e8ac6d0bb8a263f8e044db1c628b3ae1f19a8430f0aebcccf84."
+  },
+  "home-economics-2018-hl-sb-q1-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sb-q1-menu.png",
+    "md5": "26746a4173d52e8afda0ecc88f7bf963",
+    "alt": "Complete original six-dish Sample Main Course Menu, all ingredients, accompaniments and calorie totals.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.36000061035156, 174.8397216796875, 541.0800170898438, 430.9254455566406], rendered at 2.5×. SHA256 713a5934a36ae31df1357ed38b56267829c63c6b11df34f5bfcfe7dfbd07d3d9."
+  },
+  "home-economics-2018-hl-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sc-q2-outfits.png",
+    "md5": "0f02b020efe9d620707c5ec926ea6e8c",
+    "alt": "Complete original four outfits and Adored Vintage: Runway Report/Sonia Rykiel attribution.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [175.0800018310547, 142.94003295898438, 420.239990234375, 336.8647155761719], rendered at 2.5×. SHA256 3549264a451bba0c736ed5109a26bb14a4a4d1faa5aff4c53fa12dc469385064."
+  },
+  "home-economics-2018-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q1.png",
+    "md5": "d02585789482b50fded2015c8edce45a",
+    "alt": "Complete original three-statement iron True/False table and both answer columns.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 145.73974609375, 570.219970703125, 291.625468860973], rendered at 2.5×. SHA256 7fd1dde2fdadf88ba9fc4a2c73f7b8c7db7bfd79b61bbc874f857874155799a3."
+  },
+  "home-economics-2018-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q2.png",
+    "md5": "fbdd0597f899c1d10a37211f7147d635",
+    "alt": "Complete original vitamin cloze task with all three offered words and all three blank statements.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 327.65972900390625, 570.219970703125, 531.1797485351562], rendered at 2.5×. SHA256 fcdfb0a7a77398565af8e434fbdcea86521f8fdb31764354349872c08dcdbce8."
+  },
+  "home-economics-2018-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q4.png",
+    "md5": "2c497da24d8254e1fc8a1d27a25c6eac",
+    "alt": "Complete original lipid-source matching task, all three offered source categories and all three foods.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 233.21002960205078], rendered at 2.5×. SHA256 327421fae550ef4a6514df0445d798f7fb58361e0b52aeb16ab3d9b0ec7ba2b8."
+  },
+  "home-economics-2018-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q7.png",
+    "md5": "1ac81bd33b877a33f2f7b8ff8625b9c8",
+    "alt": "Complete original food-preservation True/False table with all three statements and both answer columns.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 251.9054509943182], rendered at 2.5×. SHA256 983414775ec19218098c538847372bff65c3a07b2cb50d8b43753f7738f13583."
+  },
+  "home-economics-2018-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q8.png",
+    "md5": "45a90985c7c36e5c8976f9678d16aa32",
+    "alt": "Complete original food spoilage/production cloze task, all three offered words and all three blank statements.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 287.8797607421875, 570.219970703125, 470.999755859375], rendered at 2.5×. SHA256 78f81f0b2c8934b69873ecde5d6d74fa9709d79c21acb2c35c784ec392e098dc."
+  },
+  "home-economics-2018-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sa-q11.png",
+    "md5": "b1c47ede7f12b6480ca8d01230f02938",
+    "alt": "Both complete original textile-care symbols, hot iron and drip dry, and their answer spaces.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 311.8197021484375, 570.219970703125, 509.5797119140625], rendered at 2.5×. SHA256 61b9a34f1cd96cabffcb379fb9f7dc807a34e2de575bb4e18f0377a60789f43b."
+  },
+  "home-economics-2018-ol-sb-q1-lasagne": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sb-q1-lasagne.png",
+    "md5": "74b9b0680cc6ff5f1c6cd4b42fd6e616",
+    "alt": "Complete original pre-prepared beef lasagne table, all ingredients and seven nutrition lines with original values and units per100g.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.41000032424927, 188.9039794921875, 527.7066989474827, 356.31000328063965], rendered at 2.5×. SHA256 da0516f7c4b4b222f6caf0fd04fde4c9c40441493cc2ce8254e6a50222f6103d."
+  },
+  "home-economics-2018-ol-sc-q1-water": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sc-q1-water.png",
+    "md5": "591c4a8df455aa2d16b11ece582832ad",
+    "alt": "Complete original cold-water system diagram: storage tank, ball valve, overflow pipe and stopcock labels, all pipes, fixtures and house outline.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [175.8000030517578, 207.6600341796875, 405.29998779296875, 332.280029296875], rendered at 2.5×. SHA256 ad9d19a214146e305fe2eaf7123049509fc23b8aa3542d1a11a42fbe7be9eccf."
+  },
+  "home-economics-2018-ol-sc-q2-uniforms": {
+    "src": "/exam-figures/home-economics/home-economics-2018-ol-sc-q2-uniforms.png",
+    "md5": "3ce1917b4baaba1a21c8c6e073974da9",
+    "alt": "Complete original photograph of three primary-school uniforms and full www.aldi.ie attribution.",
+    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [198.60000610351562, 143.72000122070312, 369.239990234375, 357.9247131347656], rendered at 2.5×. SHA256 919cc857d1e52cb3f15b2a801e04005b70a59ba1e66459232fc384d1174be2f4."
+  },
+  "home-economics-2019-hl-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2019-hl-sa-q3.png",
+    "md5": "27de540c0b45616b4534362d96c9b718",
+    "alt": "Complete original mineral-deficiency table with Osteomalacia, Dry flaky skin and Goitre rows and blank Mineral answers.",
+    "attribution": "SEC Home Economics 2019 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 581.2796020507812, 570.219970703125, 740.6899948120117], rendered at 2.5×. SHA256 a48fc02659ab596c5d25b57ac1fff03110005fb5566dd2ef1646be2ad17a38a3."
+  },
+  "home-economics-2019-hl-sb-q1-survey": {
+    "src": "/exam-figures/home-economics/home-economics-2019-hl-sb-q1-survey.png",
+    "md5": "40d3de00ef7eda6eab19153209c77ed6",
+    "alt": "Complete original Healthy Snacking Survey chart: low sugar 66%, low fat 56%, calories 54%, low salt 36%, high protein 35%, additive free 26%, clean 23%, raw 5%, with full Bord Bia attribution.",
+    "attribution": "SEC Home Economics 2019 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [76.63999938964844, 208.87998962402344, 522.4783325195312, 427.0447082519531], rendered at 2.5×. SHA256 5bdd513c46df71a225464d8f25df54d3a6c69b98d2e8627659b714c95672af45."
+  },
+  "home-economics-2019-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q1.png",
+    "md5": "dde2e2a0983ff079325c281d7cbec02f",
+    "alt": "Complete original three-statement water True/False table.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 145.73974609375, 570.219970703125, 291.625468860973], rendered at 2.5×. SHA256 db63f81fa7ae79e74cd03b1f4aa3780d36c072f2a8a3d12a1c376dfafafa4bb8."
+  },
+  "home-economics-2019-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q2.png",
+    "md5": "34c9de43e7bec06500c6699eeee1300c",
+    "alt": "Complete original vitamin cloze task and rhodopsin, rickets, ascorbic acid word pool.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 327.65972900390625, 570.219970703125, 524.9998168945312], rendered at 2.5×. SHA256 aa2bd4b29dc521632ee0baa71b74693b9c4262eaa999bfd55cd8c3544d297d69."
+  },
+  "home-economics-2019-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q5.png",
+    "md5": "d554d442f0d9e3cb58d937fecf877bc0",
+    "alt": "Complete original fruit-class table with two blank fruit fields EACH for citrus, dried and stone fruit.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 286.1397705078125, 570.219970703125, 522.7100143432617], rendered at 2.5×. SHA256 38446f77efc364aa9bf76c61c8a8659324a7b8c34ec40b81ad4dbc605fb033ed."
+  },
+  "home-economics-2019-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q7.png",
+    "md5": "6469703c0529c0a148f4dfd57fe880a1",
+    "alt": "Complete original two-pastry and matching suitable-dish table.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 215.75000762939453], rendered at 2.5×. SHA256 80599b45b68bee344fb6adde1375e7f785ee5a82c724b076ec9bb5afee1a162b."
+  },
+  "home-economics-2019-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q8.png",
+    "md5": "2271fbb1a039b5a7c8cc631bf10ef167",
+    "alt": "Complete original grilling, deep-frying and poaching True/False table.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 251.6397705078125, 570.219970703125, 440.245454268022], rendered at 2.5×. SHA256 dd76128c45d7f7f4cbfedf10bfc204e8b786c1d392830c2fd1605c13535e8af5."
+  },
+  "home-economics-2019-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q9.png",
+    "md5": "f9b7d452a629a4f2ad71a9c0b4a7f5bb",
+    "alt": "Complete original household-textile cloze task and shrink, static, proban word pool.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 476.2197570800781, 570.219970703125, 772.359619140625], rendered at 2.5×. SHA256 766e71ad70d80c065d0d4905122fdb47eb576b23cf278088d0ded047595e2e6b."
+  },
+  "home-economics-2019-ol-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sa-q12.png",
+    "md5": "d0ba3a71d5125d5a948c6239dbe175bd",
+    "alt": "Complete original universal recycling and European Union eco-label symbols and explanation question.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 485.759765625, 570.219970703125, 772.7797241210938], rendered at 2.5×. SHA256 e7eeea058fc2673a854f3e7787d7aebab25cb1c5013f30c4b51533375816d820."
+  },
+  "home-economics-2019-ol-sb-q1-bread": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sb-q1-bread.png",
+    "md5": "071df7b807b9202436619a4c4c04fab2",
+    "alt": "Complete original Types of Baked Goods Purchased Weekly chart: white sliced bread 71, French bread 45, soda/brown bread 43, wraps 37, rolls/buns/baps 26; all category labels, percentage legend and Bord Bia 2017 attribution.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [81.5999984741211, 196.61997985839844, 518.8800048828125, 375.2247009277344], rendered at 2.5×. SHA256 8ff5f5aa6ab0a36ce78b2de43ac982049fa288b13da6247ef93dcdb1a07a31ee."
+  },
+  "home-economics-2019-ol-sc-q1-house": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sc-q1-house.png",
+    "md5": "a62cffe9ebc689bd10b7e9ffac623573",
+    "alt": "Complete original house photograph and cbaarchitecture.ie attribution.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [168.3000030517578, 181.739990234375, 412.08001708984375, 328.4246826171875], rendered at 2.5×. SHA256 548f7f972e0b5f32ecbc067bb6f039c38da570c3a4d8e97246320a25323aeff1."
+  },
+  "home-economics-2019-ol-sc-q2-leisure": {
+    "src": "/exam-figures/home-economics/home-economics-2019-ol-sc-q2-leisure.png",
+    "md5": "0cb4a3dd192136b8919185f669f7a8c1",
+    "alt": "Complete original four runners and their leisurewear, with full Lidl attribution; used for both suitability and matching-jacket tasks.",
+    "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [194.94000244140625, 143.39999389648438, 386.1600036621094, 323.4447021484375], rendered at 2.5×. SHA256 927a1dd9df0e072c5a2b0d15a8093745e6673d8ea66445882a2f8d73539c7e9a."
+  },
+  "home-economics-2020-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q1.png",
+    "md5": "d4095ea208023aa222d4612bf21210ee",
+    "alt": "Complete original carbohydrate table: required formula and example fields for monosaccharides, disaccharides and polysaccharides.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 147.479736328125, 570.219970703125, 286.4000244140625], rendered at 2.5×. SHA256 0f25cdb71ef8204fca0e48cb078f030bfca437ff850befbf28c82cc2fb6ffc23."
+  },
+  "home-economics-2020-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q4.png",
+    "md5": "f1d8e19d550a98cc940ed1bc84258c6f",
+    "alt": "Complete original vitamin-deficiency table: poor blood clotting, neural tube defects and night blindness.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 212.70003255208334], rendered at 2.5×. SHA256 cabb2c3342d846e23e49e48b69330a5f94a2d66ad0693e4a1b48f7809edb46ed."
+  },
+  "home-economics-2020-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q8.png",
+    "md5": "6c511cc6896c0dbdb829e60c18edd258",
+    "alt": "Complete original artificial-sweetener class/type and matching-example table.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 227.51971435546875, 570.219970703125, 339.3599853515625], rendered at 2.5×. SHA256 6abd69d0b50716fe787ddb7f480e44a4e1ba82997740d3df72a0216e1b82b36d."
+  },
+  "home-economics-2020-hl-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q9.png",
+    "md5": "bb93cba99e3edd7641b99f38f4526680",
+    "alt": "Both complete original consumer symbols: Green Dot and PET identification 1 recycling symbol, with repak.ie and clearpak.com source captions.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 378.41973876953125, 570.219970703125, 763.5396728515625], rendered at 2.5×. SHA256 5e52d20c3177866e0aab98a9b69a8e4f3d28c9ac6dcc33bd262a4641f5075d32."
+  },
+  "home-economics-2020-hl-sb-q1-portions": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sb-q1-portions.png",
+    "md5": "3a9c80d07dec8a367d7ec8077d210938",
+    "alt": "Complete original safefood portion-size table: all ten situations and three percentage columns (sometimes, always and never difficult), with complete safefood.eu/media/safefoodlibrary attribution.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Sections B/C booklet page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [80.78399658203125, 217.20590209960938, 513.1600036621094, 486.86468505859375], rendered at 2.5×. SHA256 82eb0a0920171ce159b5c7db585b375bbf6b33b53d57b4fb9ef27359b037c758."
+  },
+  "home-economics-2020-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q1.png",
+    "md5": "ea075c4265c51ed9f2575f4f76875b77",
+    "alt": "Complete original three-statement carbohydrate True/False table.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 153.65972900390625, 570.219970703125, 292.57999420166016], rendered at 2.5×. SHA256 86b8176e9d5e5527c3a0db9cc9be2767628c084bf18b87ccf2e9e83613a3a9d1."
+  },
+  "home-economics-2020-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q3.png",
+    "md5": "558251e7acba905fac46aa1a71582b40",
+    "alt": "Complete original milk-processing cloze task, all three blanks and spray drying, pasteurised, homogenisation word pool.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 554.1597290039062, 570.219970703125, 763.5396728515625], rendered at 2.5×. SHA256 6d1be13f9968f3a0ec54d8ff88fcc4754db5d8dddc441b2e474ac1a569d13296."
+  },
+  "home-economics-2020-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q4.png",
+    "md5": "679dc9432d389bbd15b5f8106b1c37ca",
+    "alt": "Complete original two egg culinary-use and matching food/dish blank table.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 182.58001708984375], rendered at 2.5×. SHA256 d622514f668916b276491c0777aca0cda61e5bad84c535da7c58975799f54b6c."
+  },
+  "home-economics-2020-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q5.png",
+    "md5": "8575551d62ce4e70aeca49564b308c0d",
+    "alt": "Complete original three-statement sauce True/False table.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 236.27972412109375, 570.219970703125, 389.84001541137695], rendered at 2.5×. SHA256 33a1e040cbec3ce409aac39cada2e6d5b182e829056a2a7b3ddac96a91425988."
+  },
+  "home-economics-2020-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q7.png",
+    "md5": "ccba826cb122a5142e35cec8b2d4fe70",
+    "alt": "Complete original three-row diet-effect table: high saturated fat, low fibre and low calcium.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 195.05999755859375], rendered at 2.5×. SHA256 bbe5764edec0e2d517843dd3b324054a703f93b12820ab2071d699eb1cf02d86."
+  },
+  "home-economics-2020-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q9.png",
+    "md5": "c5daf24b9900dddb86344850e5e9682c",
+    "alt": "Complete original three-statement USC, utility bills and child benefit True/False table.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 480.65972900390625, 570.219970703125, 634.1960083007813], rendered at 2.5×. SHA256 264ea7984a3eb77c082f55bd896e13d4ff0aa0cb12f5c230a1360d01462951bf."
+  },
+  "home-economics-2020-ol-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q12.png",
+    "md5": "0b117927b148f8d0eac94232ea56594b",
+    "alt": "Both complete original textile-care symbols, their response spaces and full goodhousekeeping.com attribution.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 504.9595947265625, 570.219970703125, 763.5396728515625], rendered at 2.5×. SHA256 61c980e2317973e4e4f7454bd1a3337bdd1729d5a55c940886bb4af92baa7152."
+  },
+  "home-economics-2020-ol-sb-q1-red-meat": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sb-q1-red-meat.png",
+    "md5": "74d90f7cae39d1512719beed5b1985f8",
+    "alt": "Complete original Reduction in red meat consumption chart: all six reasons and percentages (11, 17, 27, 30, 30, 67), with the full Dietary Lifestyles Report / Thinking House / Bord Bia attribution.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [55.0, 160.2197265625, 545.0, 485.5796813964844], rendered at 2.5×. SHA256 68c04ff842d7b837f84b55f88198dbb4ba992307dda9e5ccc703dba91a1be651."
+  },
+  "home-economics-2020-ol-sc-q1-floor-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q1-floor-plan.png",
+    "md5": "7df7d012d3db80bf3c8c4e03c7ef1a1a",
+    "alt": "Complete original ground-floor plan with all rooms, patio, garage, stairs and front-door label, retained for both suitability and accessibility-modification tasks.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [115.87999725341797, 215.66001892089844, 527.5914306640625, 362.260009765625], rendered at 2.5×. SHA256 bc4ae80d4db218890531690aaac9ccfe6f998064b8a40fe213aae5556c48de4d."
+  },
+  "home-economics-2020-ol-sc-q2-clothing": {
+    "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q2-clothing.png",
+    "md5": "dbd9aae9bac84210cb1f2bec761404d2",
+    "alt": "Complete original children’s clothing photograph and full dunnesstores.com attribution; retained for suitability and matching fabric tasks.",
+    "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [190.27999877929688, 138.739990234375, 390.82000732421875, 339.6846923828125], rendered at 2.5×. SHA256 4dcb008084e4987bd397607aba991143345af6dba0b92301f11bcfa013d35806."
+  }
+}

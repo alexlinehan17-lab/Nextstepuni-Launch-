@@ -48,6 +48,7 @@ import {
   MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
   isNoSchemeCard,
+  isConfidenceReviewCard,
   isPointCard,
   isRubricCard,
   NO_SCHEME_PUBLISHED,
@@ -96,12 +97,16 @@ import AppliedMathematicsRubricPanel, {
   appliedMathematicsMarks,
   type AppliedMathematicsScoreId,
 } from './AppliedMathematicsRubricPanel';
+import MathematicsScalePanel, { mathematicsScaleMarks, type MathematicsScaleCard } from './MathematicsScalePanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
+import VideoSourcePlayer from './VideoSourcePlayer';
 import AccountingAssessment, { accountingMarks, accountingScoreId } from './AccountingAssessment';
 import type { AccountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
+import LanguageRubricPanel from './LanguageRubricPanel';
+import { languageMarks, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId } from './languageScoring';
 import ReligiousEducationRubricPanel, { religiousEducationMarks, type ReligiousEducationScoreId } from './ReligiousEducationRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, rubricLanguage, type FrenchScoreId } from './frenchRubric';
@@ -185,6 +190,23 @@ export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
 
 /** A part's claim lives under its row's id, so a row's claims travel together. */
 export const partClaimId = (rowId: string, partId: string) => `${rowId}:${partId}`;
+/** A source-defined language adjustment travels with the answer, separately
+ * from its original tariff or selected mark. Option indices stay stable when
+ * another selected option is removed from a descending allocation. */
+export const answerLanguageClaimId = (id: string, optionIndex?: number) =>
+  `language:other-language:point:${JSON.stringify([id, optionIndex ?? null])}`;
+export const extraneousMaterialClaimId = 'answer:extraneous-material:response';
+/** 1 for every card without a published answer-language or extraneous-material
+ *  rule, so their marks are exactly what they were before these rules existed. */
+const answerCreditMultiplier = (card: SecCard, claims: Record<string, RowClaim>, id: string, optionIndex?: number) => {
+  const language = card.answerLanguageRule && claims[answerLanguageClaimId(id, optionIndex)] === 1
+    ? card.answerLanguageRule.otherLanguageMultiplier : 1;
+  const extraneous = card.extraneousMaterialRule && claims[extraneousMaterialClaimId] === 1
+    ? card.extraneousMaterialRule.multiplier : 1;
+  // Either published condition earns half credit. The source does not award
+  // quarter credit when both occur; an explicit zero rule still earns zero.
+  return Math.min(language, extraneous);
+};
 const partMarksClaimed = (part: MarkRowPart, claim: RowClaim) => {
   if (claim === 'yes') return part.marks;
   return typeof claim === 'number' && part.permittedMarks.includes(claim) ? claim : 0;
@@ -272,6 +294,7 @@ function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
  */
 export function claimableTotal(card: SecCard): number {
   if (isRubricCard(card)) return card.totalMarks;
+  if (card.mathematicsScale) return card.totalMarks;
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
   // The scheme prices the question, not its parts, so the rows carry no marks
   // of their own — the question's own total is the only number that exists.
@@ -292,11 +315,20 @@ export function claimableTotal(card: SecCard): number {
 /** Only a `fixed` tariff may show per-row mark chips: for the other conventions
  *  a per-row number would be arithmetically wrong, so we show none. */
 export const showsRowMarks = (card: SecCard) =>
-  isPointCard(card) && card.tariffModel.kind === 'fixed';
+  isPointCard(card) && !card.mathematicsScale && card.tariffModel.kind === 'fixed';
+
+/** A menu's saved picks that still name distinct, published options, at most
+ *  the number the examiner marks. A duplicated or stale saved index never
+ *  counts twice or manufactures credit. */
+const validOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
+  [...new Set(picks)]
+    .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length);
+const selectedOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
+  validOptionIndices(group, picks).slice(0, group.claimMax);
 
 /** How many of a menu row's options the student has picked; 0 for any other row. */
 const menuPicks = (row: MarkRow, picks: Record<string, number[]>, id: string) =>
-  row.kind === 'anyN' && row.group ? (picks[id] ?? []).filter(oi => oi >= 0 && oi < row.group!.options.length).length : 0;
+  row.kind === 'anyN' && row.group ? selectedOptionIndices(row.group, picks[id]).length : 0;
 
 /**
  * Which mutually exclusive answer route the student has committed to, if any.
@@ -314,10 +346,16 @@ export function committedRoute(
   picks: Record<string, number[]> = {},
 ): string | null {
   if (!isPointCard(card)) return null;
+  // A ticked point commits first, so reopened work keeps the route its ticks
+  // were scored on; a menu pick commits only where nothing is ticked.
+  for (let i = 0; i < card.rows.length; i++) {
+    const r = card.rows[i];
+    if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+  }
   for (let i = 0; i < card.rows.length; i++) {
     const r = card.rows[i];
     const id = rowId(r, i);
-    if (r.route && (isClaimed(claims, id) || menuPicks(r, picks, id) > 0)) return r.route;
+    if (r.route && menuPicks(r, picks, id) > 0) return r.route;
   }
   return null;
 }
@@ -343,19 +381,36 @@ export function marksClaimed(
       // capped at its own price where it carries one (ladderGroupMarks): a
       // "1 mark only" option in a "3 + 1" menu earns 1 alone, and 3 + 1 with a
       // full answer. Without option prices it is the first steps, as before.
+      const selected = selectedOptionIndices(r.group, picks[id]);
+      // A published answer-language or extraneous-material rule adjusts each
+      // chosen answer on its own (Japanese, Russian), at its step in the
+      // allocation. Cards without one score exactly as before.
+      if (card.answerLanguageRule || card.extraneousMaterialRule) {
+        const group = r.group;
+        return n + selected.reduce((sum, option, position) => sum
+          + (group.perOptionSteps?.[position] ?? group.perOption)
+            * answerCreditMultiplier(card, claims, id, option), 0);
+      }
       if (r.group.perOptionSteps) {
-        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, picks[id] ?? []);
+        return n + ladderGroupMarks({ ...r.group, perOptionSteps: r.group.perOptionSteps }, validOptionIndices(r.group, picks[id]));
       }
       // Options priced one by one: every answer once, at the best of it claimed.
       const optionMarks = r.group.optionMarks;
-      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, picks[id] ?? []);
-      const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
-      return n + claimedMarks(r.group, chosen);
+      if (optionMarks) return n + optionGroupMarks({ ...r.group, optionMarks }, validOptionIndices(r.group, picks[id]));
+      // Distinct published options only: a duplicated saved index never pays twice.
+      return n + claimedMarks(r.group, selected.length);
     }
-    if (r.parts) return n + partsMarksClaimed(r, id, claims);
-    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
-    return isClaimed(claims, id) ? n + rowMarks(r) : n;
-  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
+    if (r.parts) {
+      if (!card.answerLanguageRule && !card.extraneousMaterialRule) return n + partsMarksClaimed(r, id, claims);
+      return n + Math.min(r.marks ?? 0, r.parts.reduce((sum, part) => {
+        const partId = partClaimId(id, part.id);
+        return sum + partMarksClaimed(part, claims[partId] ?? 'no') * answerCreditMultiplier(card, claims, partId);
+      }, 0));
+    }
+    const multiplier = answerCreditMultiplier(card, claims, id);
+    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no') * multiplier;
+    return isClaimed(claims, id) ? n + rowMarks(r) * multiplier : n;
+  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') * answerCreditMultiplier(card, claims, bonus.id) : 0);
 }
 
 /**
@@ -420,7 +475,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | ReligiousEducationScoreId | HistoryEssayScoreId | TranslationScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | ReligiousEducationScoreId | HistoryEssayScoreId | LanguageScoreId | TranslationScoreId | 'mathematics' | `mathematics:${string}`;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -588,6 +643,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'accounting') return accountingMarks(card as SecRubricCard & { rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }> }, scores);
   if (card.rubric.system === 'business') return businessMarks(card, scores);
   if (card.rubric.system === 'french') return frenchMarks(card, scores);
+  if (card.rubric.system === 'language-writing' || card.rubric.system === 'language-points') return languageMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
@@ -629,7 +685,8 @@ const Tally: React.FC<{ value: number; reduced: boolean }> = ({ value, reduced }
     const tick = (t: number) => {
       if (start === undefined) start = t;
       const p = Math.min(1, Math.max(0, (t - start) / 260));
-      setShown(Math.round(from + (value - from) * (1 - Math.pow(1 - p, 3))));
+      const precision = Number.isInteger(from) && Number.isInteger(value) ? 1 : 2;
+      setShown(Math.round((from + (value - from) * (1 - Math.pow(1 - p, 3))) * precision) / precision);
       if (p < 1) raf.current = requestAnimationFrame(tick);
       else setShown(value);
     };
@@ -696,10 +753,22 @@ const MarkRowView: React.FC<{
   /** Keep the printed line breaks inside a row's text (History: a verdict on
    *  its own line above its first reason). */
   keepLines?: boolean;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, keepLines }) => {
+  /** A published rule that pays an answer in the wrong language at a fraction
+   *  (Japanese, Russian): a control per answer records the condition. */
+  answerLanguageRule?: SecCard['answerLanguageRule'];
+  languageClaims?: Record<string, RowClaim>;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, keepLines, answerLanguageRule, languageClaims }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+  const languageControl = (target: string, label: string, disabled: boolean) => showMarks && answerLanguageRule && (
+    <label className="mb-language-flag" style={{ margin: '6px 0 8px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
+      <input type="checkbox" aria-label={languageCreditAriaLabel(answerLanguageRule, label)}
+        disabled={blocked || disabled} checked={languageClaims?.[target] === 1}
+        onChange={event => onClaim(target, event.currentTarget.checked ? 1 : 0)} />
+      <span>{languageCreditCondition(answerLanguageRule)} · {answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    </label>
+  );
 
   if (row.permittedMarks && row.parts) {
     // "Design feature 1 (2 for point, 4 for discussion)": each named component
@@ -730,6 +799,7 @@ const MarkRowView: React.FC<{
                     </button>
                   ))}
                 </div>
+                {languageControl(answerLanguageClaimId(partClaimId(id, part.id)), `${part.verbatim} · ${row.verbatim}`, selected === 0)}
               </div>
             );
           })}
@@ -758,6 +828,7 @@ const MarkRowView: React.FC<{
             </button>
           ))}
         </div>
+        {languageControl(answerLanguageClaimId(id), row.verbatim, selected === 0)}
         {blocked && blockedReason ? <p>{blockedReason}</p> : null}
       </section>
     );
@@ -831,8 +902,8 @@ const MarkRowView: React.FC<{
             // row is: its picks would score nothing (routes.ts).
             const disabled = blocked || (!on && (atCap || Boolean(usedAlready)));
             return (
+              <React.Fragment key={oi}>
               <button
-                key={oi}
                 type="button"
                 onClick={() => onPick(id, oi)}
                 disabled={disabled}
@@ -889,6 +960,8 @@ const MarkRowView: React.FC<{
                   </span>
                 )}
               </button>
+              {languageControl(answerLanguageClaimId(id, oi), option, !on)}
+              </React.Fragment>
             );
           })}
         </div>
@@ -1013,6 +1086,8 @@ const MarkRowView: React.FC<{
           </span>
         )}
       </button>
+
+      {languageControl(answerLanguageClaimId(id), row.verbatim, !claimed)}
 
       {blocked && blockedReason !== '' && (
         <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
@@ -1816,6 +1891,11 @@ const RubricPanel: React.FC<{
       rubric: Extract<SecRubricCard['rubric'], { system: 'business' }>;
     }} scores={props.scores} onScore={props.onScore} />;
   }
+  if (props.card.rubric.system === 'language-writing' || props.card.rubric.system === 'language-points') {
+    return <LanguageRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'language-writing' | 'language-points' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'french') {
     return <FrenchRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'french' }>;
@@ -2502,6 +2582,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   }, [answerVariantId, baseAssessmentCard]);
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
+  // A held task (isConfidenceReviewCard) is reviewed against its guidance with
+  // no mark total: the reviewed sources do not settle one.
+  const confidenceReview = Boolean(assessmentCard && isConfidenceReviewCard(assessmentCard));
+  const mathematicsCard = assessmentCard && isPointCard(assessmentCard) && assessmentCard.mathematicsScale
+    ? assessmentCard as MathematicsScaleCard : undefined;
   useEffect(() => {
     setAnswerVariantId(revisit ? savedResponse?.answerVariantId ?? null : null);
   }, [baseAssessmentCard?.id, revisit, savedResponse]);
@@ -2516,16 +2601,35 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
     assessmentCard.rows.forEach((r, i) => {
-      out[rowId(r, i)] = claimOf(rowId(r, i));
-      for (const part of r.parts ?? []) out[partClaimId(rowId(r, i), part.id)] = claimOf(partClaimId(rowId(r, i), part.id));
+      const id = rowId(r, i);
+      out[id] = claimOf(id);
+      const copyLanguageClaim = (answerId: string, optionIndex?: number) => {
+        if (assessmentCard.answerLanguageRule) {
+          const key = answerLanguageClaimId(answerId, optionIndex);
+          out[key] = claimOf(key);
+        }
+      };
+      copyLanguageClaim(id);
+      r.group?.options.forEach((_, optionIndex) => copyLanguageClaim(id, optionIndex));
+      for (const part of r.parts ?? []) {
+        const partId = partClaimId(id, part.id);
+        out[partId] = claimOf(partId);
+        copyLanguageClaim(partId);
+      }
     });
-    if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
+    if (assessmentCard.questionBonus) {
+      out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
+      const key = answerLanguageClaimId(assessmentCard.questionBonus.id);
+      if (assessmentCard.answerLanguageRule) out[key] = claimOf(key);
+    }
+    if (assessmentCard.extraneousMaterialRule) out[extraneousMaterialClaimId] = claimOf(extraneousMaterialClaimId);
     return out;
   }, [assessmentCard, claimOf]);
 
   const total = assessmentCard ? claimableTotal(assessmentCard) : 0;
   const got = assessmentCard
-    ? isRubricCard(assessmentCard) ? rubricMarks(assessmentCard, rubricScores) : marksClaimed(assessmentCard, rowClaims, picks)
+    ? mathematicsCard ? mathematicsScaleMarks(mathematicsCard, rubricScores.mathematics, rubricScores)
+      : isRubricCard(assessmentCard) ? rubricMarks(assessmentCard, rubricScores) : marksClaimed(assessmentCard, rowClaims, picks)
     : 0;
   const left = Math.max(0, total - got);
 
@@ -2557,7 +2661,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const unclaimedNames = unclaimed.slice(0, 3);
   const unclaimedMore = unclaimed.length - unclaimedNames.length;
   const suggested = assessmentCard
-    ? isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
+    ? mathematicsCard ? got === total ? 'got' : got > 0 ? 'shaky' : 'missed'
+      : isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
   /* A History essay is placed in two halves, paragraph by paragraph and then
      as a whole. Until the whole answer is placed on an OE band its marks are a
@@ -2580,6 +2685,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
       : assessmentCard.rubric.system === 'french' ? `${rubricLanguage(assessmentCard.subjectId)} marking grid`
+      : assessmentCard.rubric.system === 'language-writing' ? 'Writing marking grid'
+      : assessmentCard.rubric.system === 'language-points' ? 'SEC answer allocation'
       : assessmentCard.rubric.system === 'business' ? 'Business allocation'
       : assessmentCard.rubric.system === 'history-essay' ? 'History essay'
       : assessmentCard.rubric.system === 'translation' ? 'unit-by-unit' : 'Geography allocation'
@@ -2597,6 +2704,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setSchemeInteracted(true);
     setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
+      // A Mathematics step mark replaces any deduction placed against the old one.
+      if (id.startsWith('mathematics:') && id !== 'mathematics:deduction') next['mathematics:deduction'] = 0;
       // The SEC's cap is a rule, not a warning. Lowering Purpose also lowers a
       // previously selected C/L mark so the visible state can never imply an
       // award the examiner is forbidden to make.
@@ -2715,7 +2824,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         // Where the scheme leaves per-row values undefined we score no marks, so
         // we must not report a total either — otherwise the close screen reads
         // "0 of 20 marks" for a card the student may have answered perfectly.
-        marksAvailable: isRubricCard(member) || showsRowMarks(member)
+        marksAvailable: isRubricCard(member) || (isPointCard(member) && member.mathematicsScale) || showsRowMarks(member)
           ? claimableTotal(member)
           : 0,
       } satisfies SessionCardResult;
@@ -2856,7 +2965,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} {marksWord(assessmentCard.totalMarks)} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -3071,9 +3180,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 11.5px/1 ${MONO}`, background: INK, color: 'var(--mb-paper)',
                 borderRadius: 6, padding: '5px 8px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
               }}>
-                {assessmentCard.totalMarks}m
+                {confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks}m`}
               </span>
             </div>
+
+            {assessmentCard.kind === 'question' && assessmentCard.mathematicsScale?.practiceInstruction && (
+              <p style={{ margin: '12px 0 0', font: `600 14px/1.6 ${SANS}`, color: INK }}>
+                {assessmentCard.mathematicsScale.practiceInstruction}
+              </p>
+            )}
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
               /* A printed bullet list keeps one item to a line; a History stem
@@ -3102,6 +3217,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
+            {/* The recording stays playable when the SEC's printed question replaces
+                the typed text (a Japanese listening crop): hiding it withheld the one
+                thing the student has to hear. */}
+            {printedQuestionReplacesText && audioMaterial && <AudioSourcePlayer source={audioMaterial} />}
+            {assessmentCard.videoMaterial && <VideoSourcePlayer source={assessmentCard.videoMaterial} />}
             {!printedQuestionReplacesText && (audioMaterial && listeningScoredAlone(assessmentCard) ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
@@ -3123,7 +3243,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               Practise: {assessmentCard.practiceFocus}
             </p>}
 
-            {figure && (revealed || !figure.solution) && (
+            {figure && !(mathematicsCard && figure.solution) && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing
                  with the card's own border. A full-bleed hairline rule marks
                  where our typesetting ends and the SEC's print begins.
@@ -3268,7 +3388,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && !wholeResponseAssessment && cardRoutes(assessmentCard.rows).length < 2 && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && !mathematicsCard && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3304,6 +3424,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         <p style={{ margin: 0, font: `400 12px/1.5 ${SANS}`, color: MUTED }}>{assessmentCard.rows[0].contextNote}</p>
                       )}
                     </section>
+                  ) : mathematicsCard ? (
+                    <MathematicsScalePanel card={mathematicsCard}
+                      selected={rubricScores.mathematics}
+                      onSelect={marks => setRubricScore('mathematics', marks)}
+                      componentScores={rubricScores}
+                      onComponentSelect={(id, marks) => setRubricScore(`mathematics:${id}`, marks)} />
                   ) : isPointCard(assessmentCard) ? (
                     <>
                       <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
@@ -3353,6 +3479,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             picks={picks[id] ?? []}
                             takenElsewhere={takenByRow[id]}
                             partClaims={row.parts ? Object.fromEntries(row.parts.map(part => [part.id, rowClaims[partClaimId(id, part.id)] ?? 'no'])) : undefined}
+                            answerLanguageRule={assessmentCard.answerLanguageRule}
+                            languageClaims={rowClaims}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
@@ -3372,11 +3500,30 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             blocked={false}
                             reduced={reduced}
                             picks={[]}
+                            answerLanguageRule={assessmentCard.answerLanguageRule}
+                            languageClaims={rowClaims}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
                         </div>
                       )}
+
+                      {assessmentCard.answerLanguageRule && <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+                        {assessmentCard.answerLanguageRule.sourceText}
+                      </p>}
+                      {assessmentCard.extraneousMaterialRule && <div>
+                        <label className="mb-language-flag">
+                          <input type="checkbox" aria-label={assessmentCard.extraneousMaterialRule.conditionLabel
+                            ?? 'Strong evidence of extraneous material in this response'}
+                            checked={rowClaims[extraneousMaterialClaimId] === 1}
+                            onChange={event => setClaim(extraneousMaterialClaimId, event.currentTarget.checked ? 1 : 0)} />
+                          <span>{assessmentCard.extraneousMaterialRule.conditionLabel
+                            ?? 'Strong evidence of extraneous material'} · half credit</span>
+                        </label>
+                        <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+                          {assessmentCard.extraneousMaterialRule.sourceText}
+                        </p>
+                      </div>}
 
                       {/* Said only of a split that falls: "4 + 4" pays every answer
                           the same, and "higher than the rest" would be false of it. */}
@@ -3388,8 +3535,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       )}
                       {assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
-                          Check the required parts above, then choose how securely you answered.
+                          {confidenceReview ? <>
+                            Review your complete answer against the source guidance and required parts above,
+                            then choose how securely you answered.
+                          </> : <>
+                            Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
+                            Check the required parts above, then choose how securely you answered.
+                          </>}
                         </p>
                       )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
@@ -3562,10 +3714,16 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
                     {isNoSchemeCard(assessmentCard)
                       ? <>Nothing on this card can be scored, so there is no suggestion. Choose how it went yourself.</>
+                      : mathematicsCard
+                      ? !schemeInteracted
+                        ? <>No credit selected yet. Use the SEC {mathematicsCard.mathematicsScale.methods ? 'step marks' : 'scale'} above for a mark-based suggestion, or choose your own grade now.</>
+                        : <>Your SEC {mathematicsCard.mathematicsScale.methods ? 'award' : 'scale award'} is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                       : !schemeInteracted
                       ? isRubricCard(assessmentCard)
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
-                        : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
+                        : confidenceReview
+                          ? <>Compare your response with the scheme, then choose how securely you answered. Marks are not calculated for this task.</>
+                          : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
                         ? placementPending
                           ? assessmentCard.rubric.system === 'translation'

@@ -1,0 +1,243 @@
+{
+  "scope": "Reviewed Russian listening tasks, 2021–2026 available completed sittings",
+  "canonicalTaxonomy": "curriculum.ts",
+  "reviewedListeningTasks": 216,
+  "correctedTasks": 18,
+  "preservation": "All 796 previously reviewed cards retain identical non-topic fields; all additional topic IDs and original source anchors unchanged.",
+  "changes": [
+    {
+      "id": "ru-2026-ol-l2-2-i",
+      "questionText": "Give two details about Peter’s first trip\nto Russia.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-8",
+        "label": "Travel & Transport"
+      },
+      "rationale": "The question concerns a first trip to Russia, its destination, travel and encounters."
+    },
+    {
+      "id": "ru-2026-ol-l3-1-i",
+      "questionText": "What is available in the co‐working\nspace? Give two details.",
+      "from": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "to": {
+        "id": "russian-0-4",
+        "label": "Work"
+      },
+      "rationale": "The task asks about facilities offered in a co-working space."
+    },
+    {
+      "id": "ru-2026-ol-l3-1-ii",
+      "questionText": "When do the co‐working facilities open to\nthe public? Give two details.",
+      "from": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "to": {
+        "id": "russian-0-4",
+        "label": "Work"
+      },
+      "rationale": "The task asks about access hours for the co-working facilities."
+    },
+    {
+      "id": "ru-2026-ol-l3-2-iii",
+      "questionText": "What is the cost of the camp package?\n19 000\n9000\n90 000\n99 000",
+      "from": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "to": {
+        "id": "russian-0-9",
+        "label": "Buying Goods & Services"
+      },
+      "rationale": "The task asks for the price of a camp package."
+    },
+    {
+      "id": "ru-2026-ol-l4-1-ii",
+      "questionText": "What did Elena do after school?\nGive two details.",
+      "from": {
+        "id": "russian-0-4",
+        "label": "Work"
+      },
+      "to": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "rationale": "The accepted pool covers conservatory entry, study, exams and student achievements."
+    },
+    {
+      "id": "ru-2023-ol-l1-1-i",
+      "questionText": "Give two details about Irina’s daily routine.",
+      "from": {
+        "id": "russian-0-11",
+        "label": "Feelings & Attitudes"
+      },
+      "to": {
+        "id": "russian-2-2",
+        "label": "Everyday Life in the Community"
+      },
+      "rationale": "The accepted details describe the speaker’s everyday eating and sleeping routine."
+    },
+    {
+      "id": "ru-2023-ol-l1-1-ii",
+      "questionText": "What are the doctor’s recommendations?\nGive two details.",
+      "from": {
+        "id": "russian-0-11",
+        "label": "Feelings & Attitudes"
+      },
+      "to": {
+        "id": "russian-2-2",
+        "label": "Everyday Life in the Community"
+      },
+      "rationale": "The accepted details recommend changes to that everyday eating and sleeping routine."
+    },
+    {
+      "id": "ru-2021-ol-l1-2",
+      "questionText": "Give one detail about Andrei’s interests.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "rationale": "The question and accepted pool concern sports, chess and playing instruments."
+    },
+    {
+      "id": "ru-2021-ol-l1-3",
+      "questionText": "Why does Anna want to bring Charlie to the\nvet? Give one detail.",
+      "from": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "to": {
+        "id": "russian-0-9",
+        "label": "Buying Goods & Services"
+      },
+      "rationale": "The question concerns the reason for seeking a veterinary service."
+    },
+    {
+      "id": "ru-2021-ol-l1-4",
+      "questionText": "What is this man’s telephone number?",
+      "from": {
+        "id": "russian-0-8",
+        "label": "Travel & Transport"
+      },
+      "to": {
+        "id": "russian-0-14",
+        "label": "Passing on Messages"
+      },
+      "rationale": "The task retrieves a telephone number being communicated."
+    },
+    {
+      "id": "ru-2021-ol-l2-1-ii",
+      "questionText": "Victor talks about his first experiences\nwith Gaelic football. Give one detail.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "rationale": "The question concerns first experiences playing Gaelic football."
+    },
+    {
+      "id": "ru-2021-ol-l2-2",
+      "questionText": "Victor talks about his club. Give one detail.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "rationale": "The accepted pool describes a Gaelic-football club and its activities."
+    },
+    {
+      "id": "ru-2021-ol-l2-3",
+      "questionText": "What does Victor most like about Gaelic\nfootball? Give one detail.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-5",
+        "label": "Leisure Pursuits"
+      },
+      "rationale": "The question asks what the speaker likes about playing Gaelic football."
+    },
+    {
+      "id": "ru-2021-ol-l2-4",
+      "questionText": "What are Victor’s hopes/dreams for the\nfuture? Give one detail.",
+      "from": {
+        "id": "russian-0-3",
+        "label": "Learning"
+      },
+      "to": {
+        "id": "russian-0-6",
+        "label": "Plans & Future Action"
+      },
+      "rationale": "The question explicitly asks about future hopes and dreams."
+    },
+    {
+      "id": "ru-2021-ol-l3-4",
+      "questionText": "Name two famous tourist attractions you\ncould visit in Moscow while on this trip.",
+      "from": {
+        "id": "russian-2-1",
+        "label": "Modern Literary Texts"
+      },
+      "to": {
+        "id": "russian-0-8",
+        "label": "Travel & Transport"
+      },
+      "rationale": "The task asks for tourist attractions to visit during the trip."
+    },
+    {
+      "id": "ru-2021-ol-l4-1-i",
+      "questionText": "Give one personal detail about Sasha.",
+      "from": {
+        "id": "russian-0-1",
+        "label": "Family & Home"
+      },
+      "to": {
+        "id": "russian-0-7",
+        "label": "Events in People's Lives"
+      },
+      "rationale": "The pool covers education, childhood, birth and residence rather than family relationships."
+    },
+    {
+      "id": "ru-2021-ol-l4-1-ii",
+      "questionText": "Give one detail about Sasha’s first posts on\nInstagram.",
+      "from": {
+        "id": "russian-0-1",
+        "label": "Family & Home"
+      },
+      "to": {
+        "id": "russian-0-4",
+        "label": "Work"
+      },
+      "rationale": "The question concerns the first posts in the subject’s blogging career."
+    },
+    {
+      "id": "ru-2021-ol-l4-2",
+      "questionText": "Give two details about Sasha’s success.",
+      "from": {
+        "id": "russian-0-11",
+        "label": "Feelings & Attitudes"
+      },
+      "to": {
+        "id": "russian-0-4",
+        "label": "Work"
+      },
+      "rationale": "The pool describes professional blogging success, earnings, audiences and commercial projects."
+    }
+  ]
+}

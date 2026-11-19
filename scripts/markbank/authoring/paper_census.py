@@ -71,7 +71,10 @@ SUBJECTS = {
     # its levels are.
     'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
-    'physics': {'mode': 'merged'},
+    # Main English Physics sittings from 2010 through 2026 have now been
+    # independently reviewed against every paper and marking-scheme page.
+    # Deferred sittings are a separate remaining inventory/review workstream.
+    'physics': {'mode': 'merged', 'from': 2010},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
@@ -612,6 +615,12 @@ def _letters_in_order(subject, letters):
 # what the page prints). The empty-leaf flag stands down only while the reader
 # extracts exactly that text: a change in what it reads raises the flag again.
 SHORT_ASKS = {
+    ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
+                                                    'scheme p16 puts all four materials in one stepped 6+2+1+1 '
+                                                    'response. The card keeps the full prompt and all four matches.'),
+    ('physics', 2019, 'hl', 'Q3(iv)'): ('dried?', 'Paper p3 prints "How was the ice (iii) crushed, (iv) dried?"; '
+                                              'scheme p8 prices drying separately at 3 marks. The card retains '
+                                              'the shared "How was the ice" lead-in.'),
     **{('biology', 2020, 'ol', f'Q5({x})'): ('', 'p5: an empty answer box under cell drawing; the ask is Q5\'s '
                                                'lead-in "Select the cell name from the following list and insert '
                                                'it into the appropriate box underneath each"')
@@ -911,6 +920,9 @@ SHORT_ASKS = {
                                                           'do the following initials stand for?"'),
     ('economics', 2014, 'ol', 'Section B Q6(a)(ii)'): ('Money;', 'p8: the term "Money;" under "(a) Explain the '
                                                                  'following terms:"'),
+    ('physics', 2026, 'ol', 'Q6(d)(ii)'): ('force.', 'p6: the parent prompt asks for an instrument to measure '
+                                                  '(i) energy transferred and (ii) force; one Q6(d) card '
+                                                  'contains both priced answers, joulemeter and newton balance.'),
 }
 
 
@@ -994,8 +1006,10 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
         # sets Q10 twice joined by OR; the alternative files under -10) and sit
         # outside the run, and so does 'ABQ', Business's headless compulsory
         # question.
-        qs = sorted({k[-3] for k in keys if k[:-3] == pre
-                     and isinstance(k[-3], int) and k[-3] > 0})
+        question_keys = {k[-3] for k in keys if k[:-3] == pre
+                         and ((isinstance(k[-3], int) and k[-3] > 0)
+                              or re.fullmatch(r'\d+[A-Z]', str(k[-3])))}
+        qs = sorted({int(re.match(r'\d+', str(q)).group()) for q in question_keys})
         # The interior-gap and leading-question checks, ONCE. They were run
         # twice — a copy inside `if scoped:` without the runs-on exemption
         # below and a copy outside it that ignored `scoped` altogether — which
@@ -1461,16 +1475,82 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
+def lettered_alternatives(P, parts, texts):
+    """Read printed numbered alternatives directly from paper blocks.
+
+    The forward-only main reader merges 6A/6B into Q6. Keep their printed
+    addresses and restart part numbering for each alternative. This helper
+    is enabled only for independently reviewed layout families below.
+    """
+    found, current, open_key = {}, None, None
+    for text in P._all_blocks():
+        heading = re.search(r'(?:^|\. )Question\s+(\d{1,2}[A-Z])\b', text)
+        if heading:
+            current = heading.group(1)
+            open_key = (current, None, None)
+            found.setdefault(open_key, [])
+            continue
+        if PP.QHEAD.match(text) or re.match(r'^(?:Section|SECTION)\s', text):
+            current, open_key = None, None
+        if current is None or PP.FURNITURE.match(text) or text == 'OR':
+            continue
+        letter, roman, rest = PP._leading(text)
+        if letter or roman:
+            open_key = (current, letter or (open_key[1] if open_key else None), roman)
+            found.setdefault(open_key, []).append(rest)
+        elif open_key:
+            found[open_key].append(text)
+    # Retain a whole proof when the alternative has no lettered parts.
+    # For lettered alternatives, its bare heading is shared setup, not an ask.
+    lettered = {k[0] for k in found if k[1] is not None}
+    found = {k: lines for k, lines in found.items()
+             if any(line.strip() for line in lines) and not (k[0] in lettered and k[1:] == (None, None))}
+    numbers = {int(re.match(r'\d+', k[0]).group()) for k in found}
+    parts = {k for k in parts if k[0] not in numbers}
+    texts = {k: v for k, v in texts.items() if k[0] not in numbers}
+    for key, lines in found.items():
+        parts.add(key)
+        texts[key] = PP.unligature(' '.join(lines))
+    return parts, texts
+
+
 def census_merged(subject, year, level, component=None, *, files=None):
     P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    if (subject, year, level) == ('physics', 2012, 'ol'):
+        # Paper p6 prints vii/viii inside the block following vi. The generic
+        # reader leaves them in vi's text. Split the actual printed markers,
+        # with wording assertions so a changed source cannot silently pass.
+        parent = (8, None, 'vi')
+        pieces = re.split(r'\((vii|viii)\)\s*', texts[parent])
+        assert len(pieces) == 5 and pieces[1::2] == ['vii', 'viii']
+        assert 'number of units of electricity used' in pieces[2]
+        assert 'cost of the energy used' in pieces[4]
+        texts[parent] = pieces[0].strip()
+        for roman, wording in zip(pieces[1::2], pieces[2::2]):
+            key = (8, None, roman)
+            assert key not in parts
+            parts.add(key)
+            texts[key] = wording.strip()
     if subject == 'chemistry':
         parts, texts = chemistry_choice_parts(year, level, parts, texts)
     if subject == 'construction-studies':
         from construction_census_repairs import apply_construction_census_repairs
         parts, texts = apply_construction_census_repairs(year, level, parts, texts)
+
+
+    if subject == 'maths' and (year, level, component) in {(2010, 'ol', '230'), (2010, 'hl', '230'), (2011, 'ol', '230'), (2011, 'hl', '230'), (2012, 'ol', '230'), (2012, 'hl', '230'), (2012, 'hl', '200'), (2012, 'ol', '200'), (2013, 'ol', '200'), (2013, 'hl', '200'), (2013, 'ol', '230'), (2013, 'hl', '230'), (2014, 'hl', '230'), (2014, 'ol', '230')}:
+        parts, texts = lettered_alternatives(P, parts, texts)
+    if subject == 'maths' and (year, level, component) in {(2013, 'ol', '200'), (2013, 'ol', '230')}:
+        # Original page 15: (i) follows (h) at the lettered margin. It is the
+        # separate scatter-plot task, not a roman subpart of the ratio task.
+        old, new = (7, 'h', 'i'), (7, 'i', None)
+        assert old in parts and 'scatter plot' in texts[old]
+        parts.remove(old)
+        parts.add(new)
+        texts[new] = texts.pop(old)
     return parts, texts, P.files
 
 
@@ -1667,7 +1747,7 @@ TECH_PAGE_FURNITURE = re.compile(
 TECH_CAPTION_ROMANS = {(2012, 'hl', 'A', 14)}
 
 
-def census_sections(subject, year, level):
+def census_sections(subject, year, level, files=None):
     """The section-restart walker: Business and Home Economics.
 
     paper.py reads a sitting as one forward-numbered sequence, and these
@@ -1687,7 +1767,7 @@ def census_sections(subject, year, level):
     P = PP.Paper.__new__(PP.Paper)
     P.subject, P.year, P.level, P.component = subject, year, level, None
     root = PP.papers_dir(subject)
-    P.files = sorted(os.path.join(root, f) for f in os.listdir(root)
+    P.files = files if files is not None else sorted(os.path.join(root, f) for f in os.listdir(root)
                      if re.fullmatch(rf'{year}-{level}(-\d+)?-paper\.pdf', f))
     if not P.files:
         raise FileNotFoundError(f'no {year} {level} paper for {subject}')
@@ -1702,8 +1782,17 @@ def census_sections(subject, year, level):
         # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
         # Stait ... 136 marks Instructions" -- through the continuation rule.
         blocks.append(FILE_BREAK)
+        # The deferred B/C cover repeats Section C's rubric after the first
+        # booklet has already contributed A tasks. It is not a section start:
+        # letting it advance the state to C hides every following B question.
+        # Both published 2022/2023 covers are instructions only.
+        skip_pages = (1,) if (subject == 'home-economics' and files is not None
+                              and '/deferredexams/' in path
+                              and path.endswith('LC098ALP039EV.pdf')) else ()
         for block in (_business_blocks(path) if subject == 'business' else
-                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None)):
+                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None,
+                                 skip_pages=skip_pages,
+                                 strip_pages=(4, 7, 9) if (subject, year, level) == ('home-economics', 2011, 'ol') else ())):
             # The answerbook's own back matter -- its instructions, its ruled
             # pages, the image acknowledgements and the copyright notice --
             # follows the last question in the SAME booklet, and the walker
@@ -1718,6 +1807,61 @@ def census_sections(subject, year, level):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
+            if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))):
+                # The reviewed combined booklet merges its answer rules and
+                # next question into one PDF block. Quoted B heads follow a
+                # parenthesised tariff or a full stop; C's rubric precedes the elective
+                # in that same block. Preserve source text while exposing
+                # those real boundaries (paper pp2–5, 8–11). This is scoped
+                # to the independently swept 2010–2012 Higher/Ordinary and 2013 Higher/Ordinary plus 2014–2015 Higher/Ordinary and 2016 Higher/Ordinary plus 2017–2019 Higher/Ordinary sittings.
+                # 2011 Ordinary pp4/7/9 use strip-set text with duplicated
+                # glyphs at strip edges. The positional reader above keeps
+                # each original glyph once and restores printed part markers.
+                block = re.sub(r'(?<=_)\s+(?=\d{1,2}\.\s+)', '\n', block)
+                block = re.sub(r'(?<=[.)])\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
+                block = re.sub(r'\s+(?=Elective\s+\d\b)', '\n', block)
+            if (subject, year, level) == ('home-economics', 2012, 'hl'):
+                # The genuine C1(c) head is printed with a stray marker space.
+                block = re.sub(r'\(([a-c])\s+\)', r'(\1)', block)
+            if (subject, year, level) == ('home-economics', 2013, 'ol'):
+                # Original paper p8 B5(b) starts its two priced roman asks
+                # with lowercase continuation clauses after "Comment on:".
+                # The generic uppercase splitter misses both real headings.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the importance of independence|how the state supports))', '\n', block)
+            if (subject, year, level) == ('home-economics', 2014, 'ol'):
+                # Paper7 B3(b)'s two genuine priced roman asks follow
+                # Outline: as lowercase clauses. Keep both original markers.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the range of convenience soups|the advantages and disadvantages of convenience soups))', '\n', block)
+            if (subject, year, level) == ('home-economics', 2015, 'ol'):
+                # Original paper7 B2(a)/B3(a) print lowercase inline romans.
+                # B3's two leaves share one flexible24 tariff; count both.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the causes of obesity|the health risks|the nutritional value|the dietetic value))', '\n', block)
+            if (subject, year, level) == ('home-economics', 2016, 'ol'):
+                # Original paper7/8 B3(a),B3(b),B5(b) print lowercase roman
+                # asks. Each pair shares one flexible20 tariff, but the
+                # independent source census retains both printed leaves.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the nutritional|the dietetic|the factors to be considered|the effects of heat|the rights|the responsibilities))', '\n', block)
+            if (subject, year, level) in {('home-economics', 2017, 'ol'), ('home-economics', 2018, 'ol'), ('home-economics', 2019, 'ol')}:
+                # Original 2017–2019 paper7 B3(a) prints two lowercase inline roman
+                # asks. Their shared20 tariff remains one authored task,
+                # but the independent source census retains both leaves.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the nutritive value|the dietetic value))', '\n', block)
+            if (subject, year, level) == ('home-economics', 2019, 'ol'):
+                # Paper5 A11's roman markers label the two named definition
+                # answer slots within one numbered short question, rather
+                # than additional prose questions. Both required definitions
+                # and their original 3-mark tariffs remain in the card.
+                block = re.sub(r'\((?:i|ii)\)\s+(?=(?:Gross Income|Net Income)\s+_)', '', block)
+            if (subject, year, level) == ('home-economics', 2015, 'hl'):
+                # Page6 extracts the B1 number and (a) after the answering rubric.
+                block = re.sub(r'(?<=\.)\s+(?=1\.\s+\(a\)\s+Using the information given above)', '\n', block)
+                # Original paper6 prints lowercase inline roman headings in
+                # B1(a) and B1(c). B1(a)'s two source leaves share one flexible
+                # 24-mark tariff; the independent census keeps both leaves.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the provision|the nutritional significance|what is osteoporosis|the main factors))', '\n', block)
+            # Original 2020 Ordinary B/C booklet p3 B3(a) prints two inline
+            # lowercase roman asks (nutritive and dietetic value). Its shared
+            # flexible tariff is one authored task but both source leaves stay.
             # Business short questions can share a PDF block with the previous
             # question's underscore answer rules. Those rules have no sentence
             # punctuation, so the ordinary inline-head splitter misses Q2/Q3
@@ -1728,13 +1872,21 @@ def census_sections(subject, year, level):
             chunks = (re.split(r'(?<=_)\s+(?=\d{1,2}\.\s+)'
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
-                      if subject == 'business' else [block])
+                      if subject == 'business' else block.split('\n')
+                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))) else re.split(r'\s+(?=\((?:i|ii)\)\s+(?:the nutritive value|the dietetic value))', block)
+                      if (subject, year, level) == ('home-economics', 2020, 'ol') else [block])
             # Technology's older Section A booklets set the next head straight
             # after the last ruled answer line in one block: 2012 Higher reads
             # "(ii) An electric motor ____ 8. A design for a wooden toy is
             # shown.", and Question 8 was lost into Question 7(ii).
             qsplit = PP.INLINE_QHEAD_AFTER_LINE if subject == 'technology' else PP.INLINE_QHEAD
             for text in (part for chunk in chunks for part in qsplit.split(chunk)):
+                if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))):
+                    # A's roman markers label answer spaces, including the
+                    # two pictured symbols in Q12; they carry no prose asks.
+                    # Preserve the whole question rather than an empty (i).
+                    text = re.sub(r'\((?:i{1,3}|iv)\)\s*(?=_{3,})', '', text)
+                    text = re.sub(r'_{3,}', '', text)
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not
                     # independent printed asks. Keep actual roman prose.
@@ -1905,7 +2057,12 @@ def census_sections(subject, year, level):
                                            or sh.group(1) > section) \
                     and (section is None
                          or any(k[0] == section for k in parts)
-                         or (subject == 'technology'
+                         or ((subject == 'technology'
+                         # Every 2010 Ordinary A ask is a whole question;
+                         # its ruled roman blanks are correctly discarded.
+                         # Those real question stems still establish A before
+                         # B begins. Cover rubrics have no such question stem.
+                              or (subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol'), ('home-economics', 2012, 'hl'), ('home-economics', 2012, 'ol'), ('home-economics', 2013, 'hl'), ('home-economics', 2013, 'ol'), ('home-economics', 2014, 'hl'), ('home-economics', 2014, 'ol'), ('home-economics', 2015, 'hl'), ('home-economics', 2015, 'ol'), ('home-economics', 2016, 'hl'), ('home-economics', 2016, 'ol'), ('home-economics', 2017, 'hl'), ('home-economics', 2017, 'ol'), ('home-economics', 2018, 'hl'), ('home-economics', 2018, 'ol'), ('home-economics', 2019, 'hl'), ('home-economics', 2019, 'ol')})
                              and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
@@ -1967,6 +2124,21 @@ def census_sections(subject, year, level):
             # information supplied...'. Unread, its whole Section 2 vanished
             # from the census and every card citing it read as an orphan.
             text = re.sub(r'^QUESTION\s+(\d{1,2})\b', r'Question \1', text)
+        if (subject, year, level, section, q, letter) in {('home-economics', 2015, 'ol', 'C', 1, 'a'), ('home-economics', 2017, 'hl', 'C', 1, 'a')} and text == '2':
+            # Original paper9: this lone glyph at(454,237) lies INSIDE the
+            # floor-plan image(108,201,500,406), in Bedroom2. It is a diagram
+            # label, not the next question; the following three asks remain1(a).
+            # 2017 Higher paper9 repeats this text-layer Bedroom2 label
+            # inside its original bungalow plan. The complete original plans
+            # and labels are retained; only the census ignores the glyph.
+            continue
+        if (subject, year, level, section, q) == ('home-economics', 2015, 'hl', 'B', None) \
+                and text == '1.' and index + 1 < len(blocks) \
+                and blocks[index + 1].startswith('(a) Using the information given above'):
+            # Original paper6 prints B1's number beside a separate survey box.
+            # The first head has no prior q for the generic next-number rule.
+            q, letter, roman = 1, None, None
+            continue
         m = PP.QHEAD.match(text)
         if not m:
             un = PP.RUBRIC_HEAD.sub('', text, count=1)
@@ -2043,6 +2215,23 @@ def census_sections(subject, year, level):
         if q is None:
             continue
         if PP.RUBRIC.match(text):
+            continue
+        if (subject, year, level, section, q, letter) == \
+                ('home-economics', 2010, 'ol', 'B', 1, None) \
+                and re.match(r'^\(g\)(?:\s|$)', text):
+            # The source nutrition table prints grams as '(g)' before (a).
+            # These are input units, not a phantom question part (g).
+            stems.setdefault((section, q, None), []).append(text)
+            continue
+        if (subject, year, level, section, q, letter, roman) == \
+                ('home-economics', 2022, 'ol', 'C', 1, 'c', 'i') \
+                and text.startswith('(a) miniature circuit breakers'):
+            # Paper p5 nests device labels (a)/(b) inside Q1(c)(i).
+            # Scheme p18 prices each device at 5 marks. Neither label opens
+            # another elective part: the following (ii) is still Q1(c)(ii).
+            # Keep the full device list with its ask, instead of moving the
+            # safety question into the earlier kitchen-lighting Q1(a)(ii).
+            parts.setdefault((section, q, letter, roman), []).append(text)
             continue
         u = re.match(r'\(([A-H])\)\s*', text)
         if u:
@@ -2341,6 +2530,12 @@ def census_ja(subject, year, level):
 
     P = JaPaper(year, level, subject)
     S = JaScheme(year, level, subject)
+    from ja_review_census import reviewed_census
+    reviewed = reviewed_census(year, level)
+    if reviewed:
+        P.reviewed_task_census = reviewed
+        texts = {tuple(task['key']): f"Original {task['component']} task, pages {task['paperPages']}; scheme pages {task['schemePages']}; {task['marks']} marks" for task in reviewed['tasks']}
+        return set(texts), texts, [P.path, P.aural_path], P, S
     texts = {}
     for ask in P.all_asks():
         texts[ask.key] = ask.text
@@ -2973,6 +3168,14 @@ def census_ru(subject, year, level):
 
     for unit, item, roman, text in P.aural_asks():
         texts[(unit, item, None, roman)] = text
+
+    from ru_review_census import reviewed_keys
+    independently_reviewed = reviewed_keys(year, level)
+    if independently_reviewed is not None:
+        # Only the explicitly reviewed sitting changes. The denominator is
+        # the independent paper sweep, including the complete writing pool.
+        texts = {key: texts.get(key, P.unit_head.get(key[0], key[0]))
+                 for key in independently_reviewed}
 
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
@@ -4098,7 +4301,13 @@ def census_subject(subject):
     papers = []
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':
-            units = [(cfg['papers'].get(c, c), c) for c in comps if c]
+            labels = cfg['papers']
+            if subject == 'maths' and year == 2014:
+                # The 2014 Project Maths edition is the sole numbered paper.
+                # Earlier years contain parallel legacy/project editions; do
+                # not collapse those distinct sources onto a shared key.
+                labels = {**labels, '130': 'Paper 1', '230': 'Paper 2'}
+            units = [(labels.get(c, c), c) for c in comps if c]
         elif cfg.get('components'):
             # A subject whose sitting is two SEPARATE papers a candidate
             # chooses between, rather than two booklets of one paper. Each is
@@ -4234,8 +4443,14 @@ def census_subject(subject):
                 flags += ru_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'ja':
-                flags += ja_flags(P_, S_)
-                marks = {(None, 0): lang_cover_marks(files)}
+                if getattr(P_, 'reviewed_task_census', None):
+                    # The source-pinned physical sweep owns these boundaries;
+                    # item-level parser mismatches remain diagnostic elsewhere.
+                    flags = []
+                    marks = {(None, 0): P_.reviewed_task_census['checksums']['total']}
+                else:
+                    flags += ja_flags(P_, S_)
+                    marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'lat':
                 flags += lat_flags(P_, S_)
                 # The paper's own total changed with the 2023 syllabus: 300
@@ -4364,6 +4579,13 @@ def census_subject(subject):
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}
+            elif subject == 'physics' and year == 2022:
+                # Both official 2022 papers print Section B as 224 marks and
+                # say to answer four questions at 56 marks each (page 5).
+                # Later papers use a 280-mark Section B, so label the genuine
+                # 2022 tariff format instead of flagging it as a missing 56.
+                label = 'Section B (224 marks)'
+                marks = marks_by_question(files, subject)
             elif marks is None:
                 marks = marks_by_question(files if cfg['mode'] != 'papers' else
                                           [f for f in files], subject,
@@ -4430,6 +4652,12 @@ def census_subject(subject):
         papers.extend(census_spanish_deferred())
     if subject == 'german':
         papers.extend(census_german_deferred())
+    if subject == 'maths':
+        papers.extend(census_maths_reviewed_booklets())
+    if subject == 'physics':
+        papers.extend(census_physics_deferred())
+    if subject == 'home-economics':
+        papers.extend(census_home_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4667,6 +4895,143 @@ def census_irish_deferred():
             'year': year, 'level': level, 'paper': f'Deferred Paper {component}',
             'leafCount': len(leaves), 'leaves': leaves,
             'marksSum': None, 'marksQuestions': 0, 'flags': [],
+        })
+    return papers
+
+
+
+def census_home_economics_deferred():
+    """Both published English sittings, including tasks not yet authored.
+
+    Read raw source booklets independently of the reviewed card ledger. Counts
+    remain diagnostic; source review decides actual practice-task boundaries.
+    """
+    import hashlib
+    path = os.path.join(ROOT, 'scripts/markbank/authoring/home-economics/deferred-source-inventory.json')
+    if not os.path.exists(path):
+        return []                       # no reviewed deferred Home Economics in this tree
+    with open(path, encoding='utf-8') as fh:
+        inventory = json.load(fh)
+    papers = []
+    for sitting in inventory['sittings']:
+        year, level = sitting['year'], sitting['level']
+        assert level == 'hl' and sitting['language'] == 'ev' and sitting['sitting'] == 'deferred'
+        files = []
+        for kind, component in [('a', '014'), ('bc', '039')]:
+            source = sitting['sources'][kind]
+            expected = f'paper-trail-corpus/deferredexams/{year}/LC098ALP{component}EV.pdf'
+            assert source['path'] == expected
+            pdf = os.path.join(ROOT, expected)
+            with open(pdf, 'rb') as fh:
+                assert hashlib.sha256(fh.read()).hexdigest() == source['sha256']
+            files.append(pdf)
+        parts, texts, _ = census_sections('home-economics', year, level, files=files)
+        leaves = list(leaves_of(parts))
+        papers.append(dict(year=year, level=level, paper='Deferred', leafCount=len(leaves),
+            leaves=[dict(key=list(k), label=key_label(k, 'home-economics'), text=texts.get(k, '')[:160]) for k in leaves],
+            marksSum=None, marksQuestions=0, flags=continuity_flags(parts, texts, 'home-economics')))
+    return papers
+
+
+def maths_booklet_label(review):
+    """The census paper name of one reviewed Mathematics booklet.
+
+    Older sittings print a standard and a Project Maths booklet with the same
+    paper numbers, so a booklet is named by its SEC component; a deferred
+    booklet is its own paper ("Deferred Paper 1"), never June's. reconcile.py
+    keys every reviewed card by this same name (reviewed_maths_paper_keys).
+    """
+    component = re.search(r'LP(\d{3})EV', review['paperFileid']).group(1)
+    label = {'100': 'Paper 1', '200': 'Paper 2'}.get(component, component)
+    if review['year'] == 2014:
+        label = {'130': 'Paper 1', '230': 'Paper 2'}.get(component, label)
+    return f'Deferred {label}' if review.get('sitting') == 'deferred' else label
+
+
+def census_maths_reviewed_booklets():
+    """Mathematics Foundation and deferred booklets, read from the archive.
+
+    The June Higher and Ordinary booklets are linked under examiner-reports
+    and read by sittings(); Foundation (29 booklets, 2010-2026) and the
+    deferred sittings (16 booklets, 2022-2025) are read here, one reviewed
+    booklet at a time, straight from paper-trail-corpus, the way the Physics
+    and Home Economics deferred papers are. Each is a paper of its own, so no
+    ask lands on a June or Higher leaf with the same address. Only Mathematics
+    calls this; no other subject's census changes.
+    """
+    import glob as _glob
+    papers = []
+    for path in sorted(_glob.glob(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', '*.json'))):
+        with open(path, encoding='utf-8') as fh:
+            review = json.load(fh)
+        deferred = review.get('sitting') == 'deferred'
+        if review['level'] != 'foundation' and not deferred:
+            continue
+        level = {'higher': 'hl', 'ordinary': 'ol', 'foundation': 'fl'}[review['level']]
+        component = re.search(r'LP(\d{3})EV', review['paperFileid']).group(1)
+        folder = 'deferredexams' if deferred else 'exampapers'
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', folder, str(review['year']),
+                           review['paperFileid'].replace('-deferred.pdf', '.pdf'))
+        label = maths_booklet_label(review)
+        try:
+            parts, texts, _ = census_merged('maths', review['year'], level, component, files=[pdf])
+        except Exception as e:                       # noqa: BLE001
+            papers.append({'year': review['year'], 'level': level, 'paper': label,
+                           'error': f'{type(e).__name__}: {e}'})
+            continue
+        leaves = leaves_of(parts)
+        papers.append({
+            'year': review['year'], 'level': level, 'paper': label,
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'maths'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0,
+            'flags': continuity_flags(parts, texts, 'maths'),
+        })
+    return papers
+
+
+def census_physics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves."""
+    import hashlib
+    from types import SimpleNamespace
+    path = os.path.join(ROOT, 'scripts/markbank/authored/physics-review-audit.json')
+    if not os.path.exists(path):
+        return []                       # no reviewed deferred Physics in this tree
+    from phys_sources import source_path
+    with open(path, encoding='utf-8') as fh:
+        audit = json.load(fh)
+    papers = []
+    for key, review in audit['sittings'].items():
+        if review.get('sitting') != 'deferred':
+            continue
+        match = re.fullmatch(r'(\d{4})-(hl|ol)-deferred', key)
+        assert match and review['status'] == 'reviewed', key
+        year, level = int(match[1]), match[2]
+        source = review['sources']['paper']
+        ledger = SimpleNamespace(SITTING='deferred', YEAR=year, LEVEL=level,
+                                 SOURCES=review['sources'])
+        pdf = source_path(ROOT, ledger, 'paper')
+        with open(pdf, 'rb') as fh:
+            assert hashlib.sha256(fh.read()).hexdigest() == source['sha256'], key
+        parts, texts, _ = census_merged('physics', year, level, files=[pdf])
+        leaves = list(leaves_of(parts))
+        flags = continuity_flags(parts, texts, 'physics')
+        # The actual 2022 deferred paper p10 prints a shared "Define" command
+        # over four numbered terms. These two single-word terms are complete
+        # asks, not extraction loss. Keep this separate from main-paper waivers.
+        short_terms = {(2022, 'hl', 'Q12(a)(i)'): 'quark',
+                       (2022, 'hl', 'Q12(a)(iii)'): 'meson'}
+        flags = [f for f in flags if not (
+            f['type'] == 'empty-leaf'
+            and (year, level, f['where']) in short_terms
+            and f['detail'] == f"extracted text: {short_terms[(year, level, f['where'])]!r}")]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'physics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })
     return papers
 

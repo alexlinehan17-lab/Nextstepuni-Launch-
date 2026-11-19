@@ -1,0 +1,1908 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 112,
+          "bottom": 149,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 195,
+          "bottom": 655,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "99370c3c2b53109cff789b28855545e1fcf7b5c07e5cc1e13706300e66da2616",
+      "inspectedSolutionSha256": "562425530b1f009f17b4c442b9cbdf4ec0a73e669cb328a31b17ee572a44fba6",
+      "inspectedPublishedQuestionSha256": "f072ed17e164a050616ae63bfdbdd1a06a393ac2feb6349673a669fcae797d2d"
+    },
+    "1-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 174,
+          "bottom": 195,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 156,
+          "bottom": 324,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Both correct 5 marks; One correct 2 marks; None correct 0 marks"
+      ],
+      "inspectedQuestionSha256": "f5ff63fa423bdc5ee84de6146aa87b88ffc4c48099aec45b7e1e4e695cc564d6",
+      "inspectedSolutionSha256": "9fc6f5770540b1bff14de079f64c5b269c699b61484a7532dec487b2403b424a",
+      "inspectedPublishedQuestionSha256": "33e66aa64f6ebe91c4d965448d939b2fdebc0858b2dfc0662706e30e54d29a34"
+    },
+    "1-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 208,
+          "bottom": 244,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 345,
+          "bottom": 763,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 44,
+          "top": 53,
+          "bottom": 102,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "16e176cfe999e9b956976ba120d64fde458e8722aeb59c002999de74cc5bb4e1",
+      "inspectedSolutionSha256": "8a3f48c22824587192c09c1fb186202de377a02b6f9e1b0f975fd4ab628ffdd0",
+      "inspectedPublishedQuestionSha256": "09b441ecdbd92cbf6e819e49f00cb174ae880ea2d682b8cacc958b5938bdca57"
+    },
+    "1-c": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 266,
+          "bottom": 304,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 208,
+          "bottom": 765,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 45,
+          "top": 53,
+          "bottom": 407,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Slips and blunders do not apply. Award 0, 5 or 15 marks, as follows:"
+      ],
+      "sourceNote": "The two printed radius calculations contain √(16 + 2). This should be √(16 + 4) = √20. The final circle (x − 6)² + (y − 2)² = 20 is correct. The mediator line should read 3y − 3 = x − 3, hence x − 3y = 0; the next simultaneous equations use this correct relation.",
+      "inspectedQuestionSha256": "b84ad6ebc1f0ca40041957fa7674b50e5af582015c6698a265d75d53cfe1f7a5",
+      "inspectedSolutionSha256": "ae1fd92421642cf4da81db264197ea7610ce3219857a22f70474197802de5a51",
+      "inspectedPublishedQuestionSha256": "98cff7dd8a82ee8abd4e4697854f8972c4490042da59835988131c0a14f22978"
+    },
+    "2-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 354,
+          "bottom": 410,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 205,
+          "bottom": 461,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "95eb71274cbfda642f2230bcf605441742f15d401ab254e305f60b5d173f0d9c",
+      "inspectedSolutionSha256": "373403a83e88d13c46930a0fe557afbb4b033362fd4a5652244ae772a5bb5228",
+      "inspectedPublishedQuestionSha256": "3b27be57e9ebec4152ffff32151ad7a8f84e7bee6813a2f9eb173fbcdcf5d129"
+    },
+    "2-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 428,
+          "bottom": 486,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 604,
+          "bottom": 760,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Both correct: 5 marks; One correct: 2 marks; None correct: 0 marks"
+      ],
+      "inspectedQuestionSha256": "2db055fe4da3faa16a282abf9cd91238bfc0b9580181418d19c57f4ac68568a8",
+      "inspectedSolutionSha256": "65afae4b7742f025f21570a64a066257c114e6727a4ec8407163b0aea15527f1",
+      "inspectedPublishedQuestionSha256": "15968f2618c7f5295b167dde08c2429a6a1e1d5cccdea93f80a6ccfb68410a14"
+    },
+    "2-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 428,
+          "bottom": 455,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 500,
+          "bottom": 552,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 53,
+          "bottom": 217,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (5 marks) — Substitutes correctly"
+      ],
+      "inspectedQuestionSha256": "c2005f2d875ccd42257f2486df4c3ccc0a251071a0ce78d0297dde022c6ffeb9",
+      "inspectedSolutionSha256": "2fd0ee5669ba9e79d2462a0652dc0450c33182a278e79f74e968f6dfa92abe06",
+      "inspectedPublishedQuestionSha256": "7b724c74ca49aa01abbfafe5e112b5e6116b2dea076d44b16b6f59d0635abc2c"
+    },
+    "2-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 560,
+          "bottom": 628,
+          "x0": 52,
+          "x1": 375
+        },
+        {
+          "page": 2,
+          "top": 550,
+          "bottom": 707,
+          "x0": 375,
+          "x1": 545
+        },
+        {
+          "page": 2,
+          "top": 635,
+          "bottom": 660,
+          "x0": 52,
+          "x1": 375
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 439,
+          "bottom": 680,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "9236cab65c0a935b7b053a1b652b4bdc81a1db699b418cd6772f1282fa881889",
+      "inspectedSolutionSha256": "9f4f8c19d36df15f093ba7dd7041934a8a629a129064546e05ec839eff1ef0d8",
+      "inspectedPublishedQuestionSha256": "178eb76e79f9aad607f94f1dc353a41fed7ad0671b9925307cd0816a3e8a4410"
+    },
+    "2-c-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 560,
+          "bottom": 628,
+          "x0": 52,
+          "x1": 375
+        },
+        {
+          "page": 2,
+          "top": 550,
+          "bottom": 707,
+          "x0": 375,
+          "x1": 545
+        },
+        {
+          "page": 2,
+          "top": 667,
+          "bottom": 694,
+          "x0": 52,
+          "x1": 375
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 53,
+          "bottom": 310,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "ec2e98fb56b818d80a0a157a0db6d7eee7adda6f81f06fb3655f64897f84e520",
+      "inspectedSolutionSha256": "8064eb2c88ad25cf212b6fd95e7e21249690c25fdddab8857f730ba529f635a3",
+      "inspectedPublishedQuestionSha256": "8514002c78eaffe02ca12600edc73e7499d0a48a6057ce87b8232ab7bb488444"
+    },
+    "2-c-iii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 560,
+          "bottom": 628,
+          "x0": 52,
+          "x1": 375
+        },
+        {
+          "page": 2,
+          "top": 550,
+          "bottom": 707,
+          "x0": 375,
+          "x1": 545
+        },
+        {
+          "page": 2,
+          "top": 710,
+          "bottom": 731,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 327,
+          "bottom": 408,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Hit /Miss"
+      ],
+      "inspectedQuestionSha256": "4d39337da53a9be1519eff7910f52b112a2cf75ad31e49f896b96c2409513276",
+      "inspectedSolutionSha256": "83d3378bcd59f1f971d48798e78cd57e0e6fe6a34f3a9c7fa425c0cbe436e108",
+      "inspectedPublishedQuestionSha256": "4ae1f166f051530f140faed7b780e5784cd5579091585469c66e75cfd03a5aba"
+    },
+    "3-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 53,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 213,
+          "bottom": 480,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "505bf1890603eae685b60f32f61ab4c8ddde0165aebf2e2d703f50414c8ad7a1",
+      "inspectedSolutionSha256": "84ae9e10eac4b67f993fd005d9545c5beb95f1c7d9de91886afce42c53893ce3",
+      "inspectedPublishedQuestionSha256": "2df068b12509778e193bd11b8cf811ba73dba0f744a60069ab467f78f9df6028"
+    },
+    "3-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 111,
+          "bottom": 148,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 592,
+          "bottom": 779,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 50,
+          "top": 53,
+          "bottom": 138,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "86da314e212dd2a59213c0e5d686a3aaaf137cbedcf843d8c53dda33400f22d6",
+      "inspectedSolutionSha256": "628976372e0d3529cc6296af6de3288c52ba4f6a9b4d10042d700361cc26d378",
+      "inspectedPublishedQuestionSha256": "80ec5bdded81520b325591b6f9ea96d1bdd82a7acb5f74f61433e18640d982ba"
+    },
+    "3-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 111,
+          "bottom": 130,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 157,
+          "bottom": 189,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 151,
+          "bottom": 420,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "85d8cd6c9cafa6c5f95943271c2064ce9eacefdf698e13caa7573e47ba005fec",
+      "inspectedSolutionSha256": "8aa148e7d2afc4892d7f36914755970cf652daba31144c64733d3992874c40c2",
+      "inspectedPublishedQuestionSha256": "75a5c23a8e1798d6a44657155005b820ed74771af1b38829b398d35eb2bfb232"
+    },
+    "3-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 207,
+          "bottom": 279,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 544,
+          "bottom": 779,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 51,
+          "top": 53,
+          "bottom": 175,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "13e58e35ceeb16515e374d7690a47734bcb6fada1b9a85acbc5f33f12568d1a1",
+      "inspectedSolutionSha256": "18825cc1ea8e0224bb8481748b130cb5a9e867b9106e9c05a63f5c52b36b3668",
+      "inspectedPublishedQuestionSha256": "f9ad530c9562850c882479aecf862b11087df5c64b1609c61539c391b41e0628"
+    },
+    "3-c-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 207,
+          "bottom": 248,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 289,
+          "bottom": 314,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 204,
+          "bottom": 598,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — all three solutions not found ⇒ attempt mark at most."
+      ],
+      "inspectedQuestionSha256": "70edf9e9bd20e8fc3f13fa5e1169a8bd1e9904316ee3beb1a503ace3ec5b7562",
+      "inspectedSolutionSha256": "7731fdc322a5eb2bc153735de71b57a297815be434c171d45bb2db60220f35cb",
+      "inspectedPublishedQuestionSha256": "5bb36fe4d6a34cff024b58da0fc8e4e45ea57c82e4be07620cfe1570c537477e"
+    },
+    "4-a": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 363,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 194,
+          "bottom": 507,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The worked answer changes the label to PQR in its last line. The angle requested and calculated is QPR, at P: 30° or 150°.",
+      "inspectedQuestionSha256": "87803fbce20f97c805177bc0e38ed43de4be607db910e4d590a22a01b9875954",
+      "inspectedSolutionSha256": "75a169e0ea1d6adfef6174235c5ca31f494e4b4d1e76eb989ff806a72e84c849",
+      "inspectedPublishedQuestionSha256": "d7b5358dd838c727174b5bf932b98038719407fbbcaf9bac3e5f621807c3c830"
+    },
+    "4-b": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 434,
+          "bottom": 457,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 105,
+          "bottom": 610,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "77e83ee1b492a4b99c4fe669f2951ee70d6b8a8b1aadcd4a8726a31929f3055d",
+      "inspectedSolutionSha256": "93a2c3c6e7916d20de042c50ebe949f151b975aa8a31a671aebf055fa5823358",
+      "inspectedPublishedQuestionSha256": "68703ed9e524155cfe044620373b457da81c661f5ab0eb6717732204a57baf2c"
+    },
+    "4-c-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 478,
+          "bottom": 685,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 352,
+          "bottom": 561,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "ea29f67b2b7a94ed2fb23f721da9e5bd981470cc3904904ba6c5a430db9651e0",
+      "inspectedSolutionSha256": "d5775fcb2e6e9d9e224d03af3b54b8b382dc18efceb4d4547ab8f7398a9fb189",
+      "inspectedPublishedQuestionSha256": "b2b0693c58a7f48a9f488f6e2ae24ae18ec47f6b96f9bd9ed15b78d8a476f59c"
+    },
+    "4-c-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 478,
+          "bottom": 685,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 694,
+          "bottom": 745,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 568,
+          "bottom": 779,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 55,
+          "top": 53,
+          "bottom": 101,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "08d576e8e43b00050daca16d65aecad70941224d9c43771a70ccbbe4a688607f",
+      "inspectedSolutionSha256": "c387c4c4150eb40f644ea67971bb524cc535e4dfe231de709093e57ff1e931a1",
+      "inspectedPublishedQuestionSha256": "4dc42ba1fb927cb2a2fbf287025288acbfd6b3e54bbcf20dce2b19ce1e591caf"
+    },
+    "4-c-iii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 478,
+          "bottom": 685,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 694,
+          "bottom": 780,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 99,
+          "bottom": 327,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (5 marks) — Correct expression for r in terms of p and q"
+      ],
+      "inspectedQuestionSha256": "5967955b44025124d144dd60120c3c87665069f4ef77a4a59b6cb49545e86b47",
+      "inspectedSolutionSha256": "df9b23a27f0731ad9ed09f7fd381cc699cbaf2232abee677e233beda1cfbe461",
+      "inspectedPublishedQuestionSha256": "1cc2769ce50dce3377a79fcf843abf4fc657ec5468d62fbc3cba7a66d669b85b"
+    },
+    "5-a": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 54,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 185,
+          "bottom": 768,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "ed380c8d01f9496bf61c0729b7d53a6b518ce7810adf66bcb6e3d9f0ee361c8d",
+      "inspectedSolutionSha256": "e4dfdbeab8bf5a00928bcfe831388d8be1f023d0f659b3e9a8652f12a75a9e30",
+      "inspectedPublishedQuestionSha256": "65df809c833204a7071c316f10e1e7c5b8bab5b23e9d5e86537dcfb90a232ad9"
+    },
+    "5-b-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 112,
+          "bottom": 285,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 277,
+          "bottom": 666,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "630dca6ffbbacdd99c5f459989544443d5b802271a4890b956bf1d61399747bc",
+      "inspectedSolutionSha256": "227f06fb342f8b4f418e3203122241bc84b4023a2cf37f440ab4107bffece492",
+      "inspectedPublishedQuestionSha256": "160a117c63d8389ce19e1534bcdc30e8fb8e4170bfe803ae95b9b4ab4493db0e"
+    },
+    "5-b-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 112,
+          "bottom": 256,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 4,
+          "top": 291,
+          "bottom": 324,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 53,
+          "bottom": 459,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "506d508941597da75df363eebd5dd4c03d6f7139ad3c4958c6fd3cc4ba6aa1b7",
+      "inspectedSolutionSha256": "fa4669c329a383f7afe1e33781f2d7c6b0ad201c3cdf68b9f247a97d9d2e1b3c",
+      "inspectedPublishedQuestionSha256": "0cd9ffa5da8dc180585d7012eca70102daad83699fc085b22c69644773cf581c"
+    },
+    "5-c-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 346,
+          "bottom": 372,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 565,
+          "bottom": 775,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 59,
+          "top": 53,
+          "bottom": 147,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "39ed783d3235fe412aefb52586816684816f25e23ca129dc5371fefc9e2d3972",
+      "inspectedSolutionSha256": "eaa4e030399fc14cc25fdf7d110578fe82547b3ceafc3e04792043842ea9d235",
+      "inspectedPublishedQuestionSha256": "0d8efdf23ce03ee4f8f957187c437b95ebd553aaa6baaabfdc1b1e53f579491b"
+    },
+    "5-c-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 346,
+          "bottom": 442,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 151,
+          "bottom": 706,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (3 marks) — Solution set with one omitted or incorrect value"
+      ],
+      "inspectedQuestionSha256": "42753062879b4b1955c71ab59a67f38790490aede8f416c78491de7f9667053d",
+      "inspectedSolutionSha256": "b396bc9b3f738415891408f88e4c0627f3904b2f6e4796d93d4aae6a777d1615",
+      "inspectedPublishedQuestionSha256": "9351a3b8260e610320a8b3998191d856e54051beca20af3b295b2e5c45b3d3a7"
+    },
+    "6-a": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 490,
+          "bottom": 553,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 216,
+          "bottom": 578,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "0906167f93ba8729516e266b26e8ad8a8de8d7d6d2f960ef0d55d0a6bbe5950b",
+      "inspectedSolutionSha256": "b76be7189b7b44e8f3aada7dbc9d0618ab73425d13b024bd180f3d155cc65fb2",
+      "inspectedPublishedQuestionSha256": "997c43db78ea4fe121c9696ac4a90a49ebe42cd65ddd809d2f616bc4e6b958b3"
+    },
+    "6-b": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 574,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 145,
+          "bottom": 565,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "36fb74d6853f44a9ae16e3ec80e57ad6ae11dbf4871180cec55ab93a04253138",
+      "inspectedSolutionSha256": "2b067dc720673d67a92a4e539eb72bf2c54c35f7969bb5a4c2ee44978a781d02",
+      "inspectedPublishedQuestionSha256": "a7a9f04e378ed7a47e229090c81d5191298e18790d756d2ca4a541072772a12e"
+    },
+    "6-c": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 656,
+          "bottom": 725,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 129,
+          "bottom": 715,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (6 marks) — Correct expression for one or other case"
+      ],
+      "inspectedQuestionSha256": "70dfa5b4aa04c9dd8b90cfdfe91756600f6bb8e6af7d4b507ff065eeb34c0c54",
+      "inspectedSolutionSha256": "cd4c2b285da7bc2c0b09782bd890405232287c6e4ffd8b38e3c9a3668399cfeb",
+      "inspectedPublishedQuestionSha256": "24ee4014e984f102f99b0801ea99f40a7f55d6b798c93d665c36252df1ab7ec0"
+    },
+    "7-a": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 53,
+          "bottom": 142,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 230,
+          "bottom": 366,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (3 marks) — Solution with one error"
+      ],
+      "inspectedQuestionSha256": "aa27d1339879062945905df045d72b09800613cfe25b7a580a4e400c32f89a1f",
+      "inspectedSolutionSha256": "000f32f3426889b338ca9ebadce158faf8bef4c3078c08f3a9fc12032d987b24",
+      "inspectedPublishedQuestionSha256": "88360acc719580b5da9f96f2562a08ad2880ab7d3a659d4db52b4e36a0e4a6e5"
+    },
+    "7-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 162,
+          "bottom": 277,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 278,
+          "bottom": 297,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 581,
+          "bottom": 779,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 64,
+          "top": 53,
+          "bottom": 131,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "6874fa6a0a1fabc2cfe4738a4e89b5ae4693aa916b520f4b0d23bb17eed035d1",
+      "inspectedSolutionSha256": "4d1174b1dd2cef42542fa6987d7dd366ecc80f54e2ce3dbeb40ab39bb9e8dd71",
+      "inspectedPublishedQuestionSha256": "1f16084be1645953c720a52ca8552a0c50b0015fe31074770a802d65bb45587c"
+    },
+    "7-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 162,
+          "bottom": 277,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 298,
+          "bottom": 317,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 137,
+          "bottom": 409,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "27ec13345687adbf65b1f98d1706c76f7bf937372616356c5755401191c7417e",
+      "inspectedSolutionSha256": "2e724c887d0dea897e905f8c48b26e82d67c5de5feea0c6d43768fefa8ec1d1b",
+      "inspectedPublishedQuestionSha256": "410649b010e4858a2cf869ee5666e2b8e87617a2985ac566841f4fef3c269fd5"
+    },
+    "7-b-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 162,
+          "bottom": 277,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 317,
+          "bottom": 336,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 416,
+          "bottom": 586,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (3 marks) — Correct expression all three terms in P(2 texts) or all three terms in P(1 text)."
+      ],
+      "inspectedQuestionSha256": "20049a5a35844cc91d395fd887b70b4535f49e3b329393ef95220f695270aae1",
+      "inspectedSolutionSha256": "99370112fc1bde93829e0610efa5531c9afc1d37f14771d605b0bd54b6d4e3ab",
+      "inspectedPublishedQuestionSha256": "c3f6cfdf5e329bdf2032377f769f7fc9ddce02d179bbe3835549312ea4e262d2"
+    },
+    "7-c-i": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 357,
+          "bottom": 408,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 65,
+          "top": 177,
+          "bottom": 382,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Attempt (3 marks) — Expression for mean or standard deviation correct."
+      ],
+      "sourceNote": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
+      "inspectedQuestionSha256": "b9c15437c8b7a68497d5daa652e75d739258e7ceea2aa8359b5d812cef75c48c",
+      "inspectedSolutionSha256": "bf530e14693b6e18aeca25456dfc3a634874929dc6e86a7a94ed1385fd2d2861",
+      "inspectedPublishedQuestionSha256": "e168dbacaa42ab5836d16a37629f8b0f851ab9ac28455b9bcbbb4ff5a1a7daaa"
+    },
+    "7-c-ii": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 357,
+          "bottom": 454,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 65,
+          "top": 393,
+          "bottom": 582,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — If not ‘Hence’ (i.e. otherwise) 3 marks for mean and/or standard deviation correct"
+      ],
+      "sourceNote": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
+      "inspectedQuestionSha256": "1b85666b4b65521bc832933de10079e118278ae5ac1624d7a8e60a9d7819f6ed",
+      "inspectedSolutionSha256": "30c9ea4bbb26ba53d6f397e0d30f03290b0b9104b1390bf7e90bc4e040f5218d",
+      "inspectedPublishedQuestionSha256": "e0ce4bd5c21c60217a4b55514e9e0f6c1e597d8e0563dad7b30c6b940a95c673"
+    },
+    "8-a": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 97,
+          "bottom": 129,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 66,
+          "top": 178,
+          "bottom": 504,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Omits constant of integration"
+      ],
+      "inspectedQuestionSha256": "be357637a26d7c5981a3eda79047d35441b7d99234247a696d03890eb1fc6fd0",
+      "inspectedSolutionSha256": "94fa3314c2122b5e537ad61270515166c7a96dcc5644413fd7f5adabd11c19c0",
+      "inspectedPublishedQuestionSha256": "f0ddb1fe6db13ccff2f3d0ca590ebf1959ca9279aaba5b43b3860bf2662dbf12"
+    },
+    "8-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 139,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 162,
+          "bottom": 258,
+          "x0": 345,
+          "x1": 545
+        },
+        {
+          "page": 6,
+          "top": 169,
+          "bottom": 203,
+          "x0": 52,
+          "x1": 345
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 66,
+          "top": 671,
+          "bottom": 766,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Hit /Miss"
+      ],
+      "inspectedQuestionSha256": "0f8528d718a0ccd60351e6921013bb4acf259b302e7cfdb33f33c97689515135",
+      "inspectedSolutionSha256": "024b04340ce9e71486ec90d03a6da052ea5bb1ca2089bff5c63ff3b020556be8",
+      "inspectedPublishedQuestionSha256": "6ab4380581feb0ad7e706b65823efaf698e89e4d49a357a914bf830b2b79e6ee"
+    },
+    "8-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 139,
+          "bottom": 258,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 67,
+          "top": 53,
+          "bottom": 242,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — If candidate gets no marks for (b)(i), then cannot get any marks for (b)(ii)."
+      ],
+      "inspectedQuestionSha256": "d38a239a7b5cda4404d8105827becfa7b36f08952dc35a3eea401b3b79e8455f",
+      "inspectedSolutionSha256": "642d0e38cc06f0830bf196bfa5745b19c581fc9cce81f3a9d0a1bc155a1871cf",
+      "inspectedPublishedQuestionSha256": "1eb5058b63b991ba72b1947f815ebdc8484010e664405e3c9748fa27943386b4"
+    },
+    "8-c-i": {
+      "topic": "5-1",
+      "atlas": "functions,trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 281,
+          "bottom": 320,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 67,
+          "top": 398,
+          "bottom": 784,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 68,
+          "top": 53,
+          "bottom": 151,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Each term not derived (to max of 2)"
+      ],
+      "inspectedQuestionSha256": "cfac8ce229c69980d7d9d8800229cab264866576efb4b4fddef7ffa733796177",
+      "inspectedSolutionSha256": "9417b0b9b61d0ccdb8604f531e3ee287a85e5bf0a6ac5fda69e29f69f4cf71ca",
+      "inspectedPublishedQuestionSha256": "5b64a7849172466134bb4c09f1ebf57e77efbcf8eb5f02ca0c2a279eb6c442d5"
+    },
+    "8-c-ii": {
+      "topic": "5-1",
+      "atlas": "functions,trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 281,
+          "bottom": 384,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 68,
+          "top": 169,
+          "bottom": 288,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Hit/Miss"
+      ],
+      "inspectedQuestionSha256": "0f599045df0147618503134fac17dad82147b6825388ae8fb6b0d69b4751e233",
+      "inspectedSolutionSha256": "e3eaa8e5c70846425a51309022a1471c591ba85b8ab61483c1a9f78a4308eb71",
+      "inspectedPublishedQuestionSha256": "544f6c3bd849dcfb5eb921c84684a7a88829c6587341cbe629ab47eb827accda"
+    },
+    "8-c-iii": {
+      "topic": "5-1",
+      "atlas": "functions,trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 327,
+          "bottom": 418,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 68,
+          "top": 303,
+          "bottom": 389,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Note — Hit/Miss"
+      ],
+      "inspectedQuestionSha256": "d2821a3769be01dd0126f4599a6a24af8210611ae3b80df4715baaed1ceaded0",
+      "inspectedSolutionSha256": "e9bd2d6221e9460224f0ad06ae4e556ee7ce99930dd9bca297ed1b6bc50d4f25",
+      "inspectedPublishedQuestionSha256": "04334e72053acb1cf1b8342a5a1fe14ed3f691d382d36e4bb3cc022de887a555"
+    },
+    "9-a": {
+      "topic": "1-7",
+      "atlas": "statistics-z-scores",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 467,
+          "bottom": 504,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 69,
+          "top": 186,
+          "bottom": 502,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "3accc64b74d2eb80ed45ba448a0ad6c30e7b039c117bdbd4866866848c01abb9",
+      "inspectedSolutionSha256": "22a4fd082f64bbea88ee4ace6ed608d56769b345962d197bc09ab4022d19694c",
+      "inspectedPublishedQuestionSha256": "be8bb74fa0899eb3fce73a450a38601c29d014075c5517f72617d7bd998ade86"
+    },
+    "9-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 524,
+          "bottom": 590,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 591,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 651,
+          "bottom": 670,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 69,
+          "top": 672,
+          "bottom": 768,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 70,
+          "top": 53,
+          "bottom": 211,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The slip note says two decimal places, but the paper and model answer require three. Use three decimal places.",
+      "inspectedQuestionSha256": "177d86a6d5862cfea0a71857415f8f14c6e3d01bb13d8f56d8d9936ec1b0c97d",
+      "inspectedSolutionSha256": "9e2025d98cbd5960271cce6c30a4d3be4022ded3ac28b9c50345f27135d20687",
+      "inspectedPublishedQuestionSha256": "b92a6abf5331d9b1a407b63e03195a8561bbfa3110defddf7c9f46126033347b"
+    },
+    "9-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 524,
+          "bottom": 590,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 611,
+          "bottom": 630,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 651,
+          "bottom": 670,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 70,
+          "top": 232,
+          "bottom": 484,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "999383a6c31560122fe391ab4dd6e576fe97a59035a114ccadffc01e2fd5267c",
+      "inspectedSolutionSha256": "696e5db359eafbdf4b4c964e90cb5f7ee3e99ba436885f2902f3ef73166a3255",
+      "inspectedPublishedQuestionSha256": "e3068c8fb0bc1b3f693d51d0e1e13345b676b4448b1cc1305f96c4ef6bd649da"
+    },
+    "9-b-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 524,
+          "bottom": 590,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 631,
+          "bottom": 650,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 651,
+          "bottom": 670,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 70,
+          "top": 484,
+          "bottom": 773,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "054b79c370ede30f675c4c9067ccb90714e12c150350a30e5884422c8cbbd083",
+      "inspectedSolutionSha256": "055753a4718b12d168d58c31d06838f8de9eb7138a10576df34106cf4b1cc845",
+      "inspectedPublishedQuestionSha256": "870cefb6be9a0a15c4d68145d7a61b9ddf8177f8fc8135705a1f3539ef01769d"
+    },
+    "9-c": {
+      "topic": "1-7",
+      "atlas": "statistics-inferential-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 687,
+          "bottom": 767,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 71,
+          "top": 143,
+          "bottom": 579,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The exact interval is 80 ± 1.96(6/√50) grams, approximately [78.3369, 81.6631]. To one decimal place this is [78.3, 81.7], not the printed [78.3, 81.6].",
+      "inspectedQuestionSha256": "4d5474f17c88bb4d0ed76df1f2323ef54bae44a06bb29bdfbbda7304a29c1eb8",
+      "inspectedSolutionSha256": "b5cb0ac19ced099b0d1fa92ed12f3f2ddaa64d6dc764c9e47868a1d3b980eca2",
+      "inspectedPublishedQuestionSha256": "2d7fe445123ed5d4e35748082ee3f28108086b477d4765b494130e081c772889"
+    },
+    "10-a-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 52,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 76,
+          "bottom": 96,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 72,
+          "top": 203,
+          "bottom": 421,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
+      "inspectedQuestionSha256": "15eca90b27917f22ff4edf9713629d16b5c20ad8a5f49302bd090c41246c6382",
+      "inspectedSolutionSha256": "b42a6443c93c35a5a3c9372e1632a6f057130d28eefd05e094dcf959c4df35bc",
+      "inspectedPublishedQuestionSha256": "f6dbd8590bcd81a7af64930223401fbd2984fda8c3d917b6946d28fa9c32de84"
+    },
+    "10-a-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 52,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 97,
+          "bottom": 120,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 72,
+          "top": 420,
+          "bottom": 692,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
+      "inspectedQuestionSha256": "86d4ce2410f0c8c36759f583fd6c9005a0c69897cfa5c43316b9e6484f842d50",
+      "inspectedSolutionSha256": "bd0bfa0de1ff00feb023d6f50a6bdeae8ffdba70db04c1ac455728db5c1c42c4",
+      "inspectedPublishedQuestionSha256": "b2f6b69a4a16d40023ffa8f8700e85d5e127fca57e5b1ae6ae6f1d34277a4443"
+    },
+    "10-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 137,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 270,
+          "bottom": 290,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 73,
+          "top": 332,
+          "bottom": 571,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect element (max of 2)"
+      ],
+      "inspectedQuestionSha256": "89198b34c84c962622f7246fe808f96db9329161f11718b9da90f4685c4d0874",
+      "inspectedSolutionSha256": "7c2ec4dc47d37381ebc21453ac2f8ff6dd83767a2be74cf9ed1cbef4fc35e9c8",
+      "inspectedPublishedQuestionSha256": "9ad1d9b74dd98a49b7cfa7e04eb48c4b6422d5db3a22126ae54fdd1b55adc9ff"
+    },
+    "10-b-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 137,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 292,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 73,
+          "top": 582,
+          "bottom": 782,
+          "x0": 65,
+          "x1": 540
+        },
+        {
+          "page": 74,
+          "top": 53,
+          "bottom": 156,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "e17ab8fec1d2d7f78c5a0a3ce7ab9644b9927be1011c6506875f0b5981a2d5fc",
+      "inspectedSolutionSha256": "2bb1e62252c0e417b97b51e02c30bb7a9e6d245a541a229c78c20fed6b0a7d62",
+      "inspectedPublishedQuestionSha256": "bf5bb6bb919edb34427e0452d45da762d33bb9d265fd6723b3abba971f8c4dad"
+    },
+    "10-b-iii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 137,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 316,
+          "bottom": 338,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 74,
+          "top": 160,
+          "bottom": 356,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "f6c1cb08415719d02a9be06d56965f063c7e1e63ce4f89f7210d36371959a826",
+      "inspectedSolutionSha256": "35daabfbefc4ebea8cfa31e40172ef94b0af475daf84e92dc6fbce4515427f15",
+      "inspectedPublishedQuestionSha256": "c5dc365fbcc243e5622be7e64afd4fdf19dafd02bded80ae74ee4b1af58dabc8"
+    },
+    "10-b-iv": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 137,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 339,
+          "bottom": 361,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 74,
+          "top": 366,
+          "bottom": 622,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "30d5921e379c10a7f27306d5e898775f549171d1d90023b2447f3f3e9d7f0075",
+      "inspectedSolutionSha256": "c8ac05d52581dcf751054d71ccd05849b862b75238833ab0216d4b75825eef60",
+      "inspectedPublishedQuestionSha256": "403c6c0f06e16c4cb3f2c445cd501ec72e22b2fd08aa88fe3903199c62aba6f1"
+    },
+    "10-b-v": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 137,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 339,
+          "bottom": 422,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 75,
+          "top": 53,
+          "bottom": 784,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "879f64cf1a4335a4039d08b1c5c49f4e4210cec5e58cbd6ccf3167989d97da2d",
+      "inspectedSolutionSha256": "fe316f2bd5165135e3916d6af608e63638984c2b7735a437181a96c351335cf1",
+      "inspectedPublishedQuestionSha256": "1c8638775388a8e31748baf2032838dd6e765b4cb205fe82b210bcee8b1cc999"
+    },
+    "11-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 447,
+          "bottom": 492,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 76,
+          "top": 210,
+          "bottom": 524,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The model assumes that the major axis lies along the x-axis. The question does not state its orientation; rotated ellipses with the same axes also meet the stated conditions.",
+      "inspectedQuestionSha256": "b30ac9aec37f7786da94eed2eb2852b84db305c29603459d596f933705ecdbd1",
+      "inspectedSolutionSha256": "f810194b2bc9f053b02b88cc240f3ad26296f045dec10bfe1230eebefca332df",
+      "inspectedPublishedQuestionSha256": "1b43950fb28df64649217f2cd97991ee6e4cfbfea32ff459852631cbef2769f7"
+    },
+    "11-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 505,
+          "bottom": 559,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 77,
+          "top": 53,
+          "bottom": 748,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The source page mislabels this task as (c)(i) and 11(b)(ii); it is Q11(b)(i). Both the geometric and coordinate proofs below address the requested midpoint result.",
+      "inspectedQuestionSha256": "71998d5331cc4e30261de43060c0e5f637e0bc8c3fc6a679ee4961396ce58f54",
+      "inspectedSolutionSha256": "d75bba8a54d0b96eab7b9e7b81608177a35a463ba35cb18805d8b175a96136d0",
+      "inspectedPublishedQuestionSha256": "b214da9790811bdf6da123ed31c1d11ebf7a3adf5f6c67bab5614152753ec9a4"
+    },
+    "11-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 505,
+          "bottom": 532,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 562,
+          "bottom": 599,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 78,
+          "top": 53,
+          "bottom": 458,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "1dbce955171f58bc8c0779601a040d79a6d7c26352798a86ef6646f2118ddeba",
+      "inspectedSolutionSha256": "a7c60200cf992e2bd77ddd052fd614670852b411fa7374d806c47d5484ae195f",
+      "inspectedPublishedQuestionSha256": "194bdf66db7d2ed531d50de8eec44055861ac10d29e16bb02b6128dcbe40af3c"
+    },
+    "11-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 621,
+          "bottom": 749,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 79,
+          "top": 246,
+          "bottom": 690,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "sourceNote": "The first displayed transformation prints y′ = y/10. It should be y′ = y/5, consistent with the subsequent inverse transformation and image coordinates.",
+      "inspectedQuestionSha256": "32fa5f1ba6e4dc15eb96ac68348f4bab354f35dcdefa73762eeef6fa8b184c8e",
+      "inspectedSolutionSha256": "b5db5c0f601cb366b0f147606c0bc54d45855805843c5456f6b404825e512d49",
+      "inspectedPublishedQuestionSha256": "4bddab54b7635e7064671e3f64409071f49e3d3ade9057e161beaf05fcc5f50a"
+    },
+    "11-c-ii": {
+      "topic": "3-3",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 621,
+          "bottom": 708,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 7,
+          "top": 751,
+          "bottom": 785,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 80,
+          "top": 53,
+          "bottom": 382,
+          "x0": 65,
+          "x1": 540
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedQuestionSha256": "a333de146281f457bc326639c6087b1429b4c698aa92606f386e28df170c3066",
+      "inspectedSolutionSha256": "21d1348ca8d967aac5cbfb047a63649b6b82a38e62f79a3871d9086994a79cf3",
+      "inspectedPublishedQuestionSha256": "a869dc3246d6f0ea1605aefa440976e1ce6bc927b73468807853b727984871e5"
+    }
+  }
+}
