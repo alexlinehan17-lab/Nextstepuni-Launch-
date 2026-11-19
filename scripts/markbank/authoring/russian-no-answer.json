@@ -860,17 +860,6 @@
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-r4-final-sec-20261119/2014-hl.json"
     },
-    "ru-2012-hl-la1-iii": {
-      "printedMarks": 2,
-      "schemePages": [
-        7
-      ],
-      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
-      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
-      "reviewedAt": "2026-11-19",
-      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
-      "noticePrefix": "Full-credit example: "
-    },
     "ru-2012-hl-la1": {
       "printedMarks": 2,
       "schemePages": [
@@ -891,16 +880,16 @@
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json"
     },
-    "ru-2010-hl-la1-4": {
+    "ru-2012-hl-la1-iii": {
       "printedMarks": 2,
       "schemePages": [
-        5,
-        6
+        7
       ],
-      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
-      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "schemePath": "examiner-reports/russian/schemes/2012-hl.pdf",
+      "schemeSha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
       "reviewedAt": "2026-11-19",
-      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2012-hl.json",
+      "noticePrefix": "Full-credit example: "
     },
     "ru-2010-hl-la1-1-ii": {
       "printedMarks": 2,
@@ -936,6 +925,17 @@
       "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
     },
     "ru-2010-hl-la1-3": {
+      "printedMarks": 2,
+      "schemePages": [
+        5,
+        6
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2010-hl.pdf",
+      "schemeSha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-language-splits-20261119/2010-hl.json"
+    },
+    "ru-2010-hl-la1-4": {
       "printedMarks": 2,
       "schemePages": [
         5,

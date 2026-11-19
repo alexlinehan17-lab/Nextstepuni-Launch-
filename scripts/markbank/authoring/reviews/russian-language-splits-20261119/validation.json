@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-19T12:53:09.948193+00:00",
+  "sourceChecks": "originals.log",
+  "requiredChecks": "required.log",
+  "reconciliation": "ledger.json",
+  "existingIdsAndConceptsPreserved": 1488,
+  "newCards": 7,
+  "allOtherCardsUnchanged": true,
+  "combinedMarksUnchanged": true,
+  "sourceOriginalChecksPassed": 24,
+  "sourceCards": 85,
+  "sourcePassages": 781,
+  "coverage": {
+    "asksCarded": 1496,
+    "asksCounted": 1496,
+    "cards": 1495,
+    "open": 0,
+    "excluded": 0,
+    "orphans": 0,
+    "unread": 0
+  },
+  "browserReview": "Existing treatments; lower-panel and new individual scoring review remain pending.",
+  "releaseComplete": false
+}
