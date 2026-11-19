@@ -1592,7 +1592,28 @@
         "sittingExclusions": 0,
         "browserQa": "pending; browser host unavailable"
       },
-      "sourceReview": "complete"
+      "sourceReview": "complete",
+      "planRecheck20261119": {
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2025-ol.json",
+        "retiredExclusions": 32,
+        "fixedNoAnswerCards": [
+          "ru-2025-ol-la2",
+          "ru-2025-ol-sa",
+          "ru-2025-ol-ew"
+        ],
+        "allPrintedMarksAndGridsUnchanged": true,
+        "currentRussianLedger": {
+          "asksCounted": 1489,
+          "asksCarded": 1489,
+          "open": 0,
+          "excluded": 0,
+          "staleExclusions": 0,
+          "orphans": 0,
+          "unreadPapers": 0
+        },
+        "releaseComplete": false,
+        "remaining": "Hosted audio and full R1–R12 sweep, then coordinator release."
+      }
     },
     {
       "year": 2024,
