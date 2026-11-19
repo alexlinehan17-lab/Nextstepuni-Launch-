@@ -54,7 +54,7 @@ const englishBooklet = (fileid: string) => fileid.replace(/IV(?=\.pdf$)/i, 'EV')
 const questionKey = (subjectId: string, year: number, level: string, fileid: string, n: string) =>
   `${subjectId}|${year}|${level}|${englishBooklet(fileid)}|${n}`;
 
-for (const file of FILES) {
+for (const file of FILES.filter(f => f.v === 2)) {
   const headings = file.topics.map(t => ({ ...t, label: t.code ? `${t.code} ${t.title}` : t.title }));
   headingsBySubject.set(file.subjectId, headings);
   groupsBySubject.set(file.subjectId, file.groups.map(g => ({ id: g.id, level: g.level, label: g.label, topics: g.topics.map(i => headings[i]) })));

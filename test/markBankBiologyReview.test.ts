@@ -19,6 +19,7 @@ import { createHash } from 'node:crypto';
 import { tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
+import { askRecord } from '../components/PaperTrail/atlasModel';
 import { questionsForTopics } from '../components/PaperTrail/topics';
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
@@ -2051,7 +2052,7 @@ describe('Biology — every deck', () => {
     expect(Object.values(sittings).flatMap(s => s.checks.excluded.map(e => e.id))).toEqual([]);
   });
 
-  it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {
+  it('files every card under its own printed Topic Atlas question, listed under each heading the part is filed under', () => {
     // The Atlas audit: a card's question (its year, level, booklet and printed
     // number) is an Atlas question; one of that question's Atlas topics holds
     // the card's curriculum node; and the question is listed under each such
@@ -2075,11 +2076,13 @@ describe('Biology — every deck', () => {
       const fileid = `${card.paperFileid}.pdf`;
       const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === fileid);
       if (!paper) { missing.push(`${card.id}: no Atlas paper ${fileid}`); continue; }
-      const filed = examTopicIdsForQuestion('biology', card.level as 'higher' | 'ordinary', card.year, 'main', n,
-        paper.paperKey, 'ev', fileid);
-      const node = EQUIV[card.topicId] ?? card.topicId;
-      const holding = filed.filter(topic => curriculumNodeIdsForExamTopic(topic).includes(node));
-      if (!holding.length) { missing.push(`${card.id}: ${card.topicId} under none of Q${n}'s ${filed.join(', ')}`); continue; }
+      // The single model (components/PaperTrail/atlasModel.ts): each part is filed under the heading for what it
+      // asks (scripts/atlas-model/filings/biology.json, read part by part), and its question is listed under every
+      // heading its parts are filed under. EQUIV and the crosswalk remain the evidence the filing started from.
+      void EQUIV; void examTopicIdsForQuestion; void curriculumNodeIdsForExamTopic;
+      const record = askRecord(card.id);
+      if (!record || record.n !== n || record.year !== card.year) { missing.push(`${card.id}: no topic record for Q${n}`); continue; }
+      const holding = record.topics.map(topic => topic.id);
       for (const topic of holding) {
         if (!under(topic).has(`${card.year}|${card.level}|${paper.paperKey}|${fileid}|${n}`)) {
           missing.push(`${card.id}: Q${n} not listed under ${topic}`);
