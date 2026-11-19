@@ -626,3 +626,43 @@ SPECS[(2023, 'hl')] = [
     C('LE5', [menu([S(n) for n in range(493, 496)], T(492))]),
 ]
 
+
+
+# ================================================================ 2023 OL ===
+# Scheme .md lines 316-455 (pages 11-15). Część A and B answer in Polish, C to
+# E in English. Section totals as printed: A 24, B 21, C 27, D 18, E 30 (= 120).
+SPECS[(2023, 'ol')] = [
+    C('LA1', [one(S(318), T(318))]),
+    # "(2 x 3m)" over three printed answers and "Podaj 2 szczegóły": two of them.
+    C('LA2', [menu([S(321), S(322), S(323)], T(320))]),
+    C('LA3i', [menu([S(326), S(327), S(328)], T(325))]),
+    C('LA3ii', [one(S(332), T(331, each=True)), one(S(333), T(331, each=True))], total=T(331)),
+    # Multiple choice; the census reads the four printed options with the question.
+    C('LA4', [one(S(336), T(336))]),
+    C('LB1', [menu([S(n) for n in range(344, 347)], T(343))]),
+    C('LB2', [one(S(348), T(348))]),
+    C('LB3', [menu([S(n) for n in range(351, 358)], T(350))]),
+    C('LB4', [menu([S(360), S(361)], T(359))]),
+    C('LC1', [menu([S(365), S(366)], T(364))]),
+    C('LC2', [one(S(372), T(372))]),
+    C('LC3', [menu([S(n) for n in range(375, 380)], T(374))]),
+    C('LC4', [one(S(381, after='Mrągowo. '), T(381))]),
+    C('LC5', [menu([S(n) for n in range(384, 395)], T(383))]),
+    C('LC6', [one(S(396), T(396))]),
+    C('LD1', [one(S(403, after='built? '), T(402, each=True), lead=S(403, before=' in 1970s')),
+              one(S(404, after='is it? '), T(402, each=True), lead=S(404, before=' (almost)')),
+              one(S(405, after='remind us of? '), T(402, each=True), lead=S(405, before=' a wave'))],
+      total=T(402)),
+    C('LD2', [one(S(407, after='town. '), T(406))]),
+    C('LD3', [menu([S(n) for n in range(410, 413)], T(409))]),
+    C('LE1', [one(S(416, before=' ✓'), T(416))],
+      extra=(PL(7, 'in September'), PL(7, 'for the thirty'), PL(7, 'for Polish students'),
+             PL(7, 'online only'))),
+    C('LE2', [menu([S(n) for n in range(419, 427)], T(418))]),
+    C('LE3', [one(S(432, after='type '), T(431, each=True), lead=S(432, before=' photo')),
+              one(S(433, after='title '), T(431, each=True), lead=S(433, before=' ‘My')),
+              one(S(434, after='prize '), T(431, each=True), lead=S(434, before=' 1200'))],
+      total=T(431), extra=(PL(7, 'type'), PL(7, 'title'), PL(7, 'main prize'))),
+    C('LE4', [menu([S(n) for n in range(437, 450)], T(436))]),
+    C('LE5', [menu([J(S(452), S(453)), S(454), S(455)], T(451))]),
+]

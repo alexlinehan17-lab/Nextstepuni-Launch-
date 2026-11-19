@@ -70,6 +70,32 @@ class TextRemainder:
                          f'printed for its other {len(others)} parts')
 
 
+class OptionOnly:
+    """A price printed as "(2 marks for one option only)", wrapped over two
+    lines: one answer, from the printed alternatives, at that price."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        line = doc['scheme'][self.n - 1].replace('\xa0', ' ')
+        m = re.search(r'\(\s*(\d{1,2})\s*marks?\s+for\s+one\b', line)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "for one option" price: {line!r}')
+        return 1, int(m.group(1)), m.group(0)
+
+
+def columns(d, page, y0, y1, edges):
+    """A printed table's columns between y0 and y1 on a paper page, each read
+    top to bottom and left to right inside its own x-range: "Marta lubi: •
+    modę oraz • utwory Stanisława Lema". `edges` are the column boundaries."""
+    out = []
+    for lo, hi in zip(edges, edges[1:]):
+        cell = sorted((l for l in d['lines'] if l.page == page and y0 <= l.y <= y1 and lo <= l.x < hi),
+                      key=lambda l: (round(l.y / 4), l.x))
+        out.append(re.sub(r'\s+', ' ', ' '.join(l.text for l in cell)).strip())
+    return out
+
+
 def lifted(*sels):
     """A note quoting printed lines, for the student."""
     return lambda d: ' '.join(f'The scheme notes: “{s.text(d)}”.' for s in sels)
@@ -159,6 +185,44 @@ SPECS[(2023, 'hl')] = [
 ]
 
 
+# ================================================================ 2023 OL ===
+SPECS[(2023, 'ol')] = [
+    # Ordering (rendered paper p7, scheme p5): one card for the printed
+    # question, a row for each numbered sentence with the position the scheme
+    # prints for it and its "2 marks". (iii) is the worked example, printed
+    # with its "1" (the census leaves it out: 18526a518), and is shown in the
+    # question as printed.
+    R('A1g', [one(S(134, after='street. '), T(134), lead=PL(7, '(i) ')),
+              one(S(135, after='pictures. '), T(135), lead=PL(7, '(ii) ')),
+              one(S(137, after='picture. '), T(137), lead=PL(7, '(iv) ')),
+              one(S(138, after='gallery. '), T(138), lead=PL(7, '(v) '))],
+      question=lambda d, q: '\n'.join(
+          [_marker_off(PL(7, '(g) Put').text(d)) + ' ' + PL(7, '(paragraphs: 5, 6)').text(d),
+           PL(7, '(i) ').text(d), PL(7, '(ii) ').text(d),
+           PL(7, '(iii) ').text(d) + ' ' + PL(7, '1').text(d),
+           PL(7, '(iv) ').text(d), PL(7, '(v) ').text(d)]),
+      note='The positions are the scheme\'s (p5, rendered); (iii) is the printed example.'),
+    # One printed ask over three columns (paper p10): each person's interests,
+    # and the museum the scheme names for each. Zosia's two museums are
+    # alternatives, "(2 marks for one option only)".
+    R('A2d', [one(S(164, after='Marta – '), T(164), lead=PL(10, 'Marta lubi:')),
+              one(S(165, after='Tomek – '), T(165), lead=PL(10, 'Tomek lubi:')),
+              menu([S(166, after='Zosia – ', before='/ Żywe'),
+                    S(166, after='Poznania/ ', before=' (2 marks')], OptionOnly(166),
+                   lead=PL(10, 'Zosia lubi:'))],
+      question=lambda d, q: '\n'.join(
+          [q.split(' Marta lubi:')[0]] + columns(d, 10, 450, 505, (60, 220, 375, 600))),
+      extra_pages=(10,),
+      note='Zosia: the scheme prices one of its two museums, "(2 marks for one option only)".'),
+    # The table's answers are printed in its right-hand column (rendered
+    # scheme p8): the old exclusion ("no answer, only its price") misread it.
+    R('A3ai', [one(S(206, after='(i) '), T(208))]),
+    R('A3aii', [one(S(209, after='listu '), T(209))]),
+    R('A3aiii', [one(S(210, after='Miejscowość '), T(210))]),
+    R('A3aiv', [one(S(211, after='Data '), T(211))]),
+]
+
+
 # ================================================================ 2024 OL ===
 SPECS[(2024, 'ol')] = [
     # Rendered scheme p6: the (v) tick stands in the Prawda column. The price
@@ -226,12 +290,16 @@ def cards(year, level):
     doc = {'scheme': scheme_lines(year, level)}
     P = pl_paper.PlPaper(year, level)
     doc['paper'] = [(l.page, l.text) for l in P.lines]
+    doc['lines'] = P.lines
     asks = {a.key: a for a in P.all_asks()}
     out = []
     for spec in specs:
         m = KEY.match(spec.key)
         key = ('A', int(m.group(1)), m.group(2), m.group(3))
-        ask = asks[key]
+        # A card for a whole printed question whose rows the census reads as
+        # romans (an ordering task) cites the question; its page is theirs.
+        ask = asks.get(key) or next(a for k, a in sorted(asks.items(), key=str)
+                                    if k[:3] == key[:3])
         question = ask.full_text
         if spec.question:
             question = spec.question(doc, question)
