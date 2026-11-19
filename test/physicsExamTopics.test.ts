@@ -8,7 +8,8 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { askRecord, atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import physicsReference from '../data/examTopics/physics.json';
 import physicsEvidence from '../data/examTopics/physics-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/physics-curriculum-crosswalk.json';
@@ -62,6 +63,9 @@ const baseline = preservationBaseline as Baseline;
 const referenceTopics = VARIANTS.flatMap(
   variant => physicsReference.variants[variant].topics,
 );
+
+// Physics parts are filed by what each asks under the one heading list (single model); load the filing first.
+beforeAll(() => loadAllAtlasModels());
 
 describe('Physics exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('physics')!;
@@ -125,7 +129,11 @@ describe('Physics exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('physics')).toHaveLength(113);
+    // The single model (Alex, 18 Nov 2026): the Atlas shows one list, the new-course headings at both levels.
+    const newCourse = taxonomy.topics.filter(topic => topic.course === 'new').map(topic => topic.id).sort();
+    expect(topicsForSubject('physics').map(topic => topic.subtopicId).sort()).toEqual(newCourse);
+    expect(atlasHeadings('physics')!.map(topic => topic.id).sort()).toEqual(newCourse);
+    expect(topicsForSubject('physics')).toHaveLength(53);
   });
 
   it('bridges every practice bucket to the correct canonical specification', () => {
@@ -406,7 +414,7 @@ describe('Physics exam-topic registry', () => {
     }
   });
 
-  it('makes every card reachable in the actual Atlas feed under its canonical curriculum topic', () => {
+  it('makes every card reachable in the actual Atlas feed under the headings it is filed under', () => {
     const feeds = new Map<string, ReturnType<typeof questionsForTopics>>();
     for (const card of [...higherMarkBankCards, ...ordinaryMarkBankCards]) {
       const fileid = card.paperFileid.replace(/\.pdf$/i, '') + '.pdf';
@@ -415,9 +423,11 @@ describe('Physics exam-topic registry', () => {
       const paper = topicsForPaper('physics', card.year, card.level, 'ev', fileid);
       const question = paper?.q.find(q => q.n === n);
       expect(question, `${card.id}: missing exact source question`).toBeDefined();
-      const matchingTopics = browseTopicIdsForQuestion(paper!, question!)
-        .filter(id => curriculumNodeIdsForExamTopic(id).includes(card.topicId));
-      expect(matchingTopics.length, `${card.id}: no Atlas topic for ${card.topicId}`).toBeGreaterThan(0);
+      // The single model: the card's own topic record names its headings (each part filed by what it asks), and
+      // its printed question is listed under every one of them.
+      const matchingTopics = askRecord(card.id)?.topics.map(topic => topic.id) ?? [];
+      expect(matchingTopics.length, `${card.id}: not filed`).toBeGreaterThan(0);
+      expect(matchingTopics.filter(id => !browseTopicIdsForQuestion(paper!, question!).includes(id)), card.id).toEqual([]);
       for (const topicId of matchingTopics) {
         if (!feeds.has(topicId)) feeds.set(topicId, questionsForTopics('physics', [topicId]));
         expect(feeds.get(topicId), `${card.id}: missing from ${topicId}`).toContainEqual({
@@ -549,10 +559,10 @@ describe('Physics exam-topic registry', () => {
     ))).toBe(true);
   });
 
-  it('surfaces all 460 entitled questions through all 113 topic buckets', () => {
+  it('surfaces all 460 entitled questions through the 53 headings of the one list', () => {
     expect(subjectAtlasStats('physics')).toMatchObject({
       questions: 460,
-      topics: 113,
+      topics: 53,
       yearMin: 2010,
       yearMax: 2026,
     });
