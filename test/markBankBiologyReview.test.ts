@@ -10,7 +10,7 @@
  * checked against the SEC PDFs by bio_review.py; this pins what reached the
  * shipped deck so a later regeneration cannot silently drop or reshape it.
  */
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
@@ -21,6 +21,8 @@ import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { askRecord } from '../components/PaperTrail/atlasModel';
 import { questionsForTopics } from '../components/PaperTrail/topics';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAtlasModelsForTest());
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
   status: 'carded' | 'excluded' | 'verified' | 'corrected' | 'added' };

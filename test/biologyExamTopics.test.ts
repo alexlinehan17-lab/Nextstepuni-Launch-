@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import biologyReference from '../data/examTopics/biology.json';
 import biologyEvidence from '../data/examTopics/biology-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/biology-curriculum-crosswalk.json';
@@ -33,6 +33,8 @@ import {
   resolveCurriculumSpecification,
 } from '../curriculumRegistry';
 import preservationBaseline from './fixtures/biologyTopicQuestionBaseline.json';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAtlasModelsForTest());
 
 const ROOT = process.cwd();
 const VARIANTS = [

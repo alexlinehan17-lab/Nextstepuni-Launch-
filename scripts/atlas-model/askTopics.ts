@@ -48,8 +48,9 @@ export interface AskTopicFile {
 
 const FILINGS = import.meta.glob('./filings/*.json', { eager: true, import: 'default' }) as Record<string, SubjectFiling>;
 export const FILED_SUBJECTS: string[] = Object.values(FILINGS).map(f => f.subject).sort();
-/** Subjects the app already reads (components/PaperTrail/atlasModel.ts); the rest join in Stage 2. */
-export const MODEL_SUBJECTS = ['biology'] as const;
+/** Subjects the app reads (data/atlasModel/headings.json lists exactly these). Subjects join a few per pull request;
+ *  physics, home-economics, maths, japanese, russian and lcvp join after the Codex release lands. */
+export const MODEL_SUBJECTS: readonly string[] = ['biology', 'chemistry', 'agricultural-science'];
 export const filingFor = (subject: string): SubjectFiling | null => Object.values(FILINGS).find(f => f.subject === subject) ?? null;
 
 const curriculumLabel = new Map(CURRICULUM.flatMap(c => c.strands.flatMap(s => s.subtopics.map(t => [t.id, t.name] as const))));

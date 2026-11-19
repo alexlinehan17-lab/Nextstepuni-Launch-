@@ -4,10 +4,10 @@
  *
  * Open the Mark Bank on exactly the cards a Topic Atlas question names ("Practise these parts in the Mark Bank",
  * atlasModel.markBankLinkForCards). Reads the boot-time URL snapshot once, like vaultDeepLink; never touches history.
- * Only cards with a topic record in the single model are honoured, so a link can only open real cards of one deck.
+ * Only a subject in the single model is honoured, and MarkBank.tsx keeps only cards its own deck holds.
  */
 import { getBootParam } from '../../utils/bootParams';
-import { askRecord } from '../PaperTrail/atlasModel';
+import { isModelSubject } from '../PaperTrail/atlasModel';
 
 let consumed = false;
 
@@ -17,11 +17,12 @@ export function consumeInitialMarkBankCards(): MarkBankCardLink | null {
   if (consumed) return null;
   consumed = true;
   if (getBootParam('tool') !== 'mark-bank') return null;
-  const ids = (getBootParam('cards') ?? '').split(',').map(id => id.trim()).filter(Boolean).slice(0, 60);
-  const first = ids.map(askRecord).find(Boolean);
-  if (!first) return null;
-  const cardIds = ids.filter(id => { const r = askRecord(id); return r?.subjectId === first.subjectId && r.level === first.level; });
-  return { subjectId: first.subjectId, level: first.level, cardIds };
+  const subjectId = getBootParam('mbsubject') ?? '';
+  const level = getBootParam('mblevel') ?? '';
+  const cardIds = (getBootParam('cards') ?? '').split(',').map(id => id.trim()).filter(Boolean).slice(0, 60);
+  // Only a subject in the single model, at a real level; MarkBank.tsx then keeps only cards its deck holds.
+  if (!isModelSubject(subjectId) || !['higher', 'ordinary', 'foundation', 'common'].includes(level) || !cardIds.length) return null;
+  return { subjectId, level, cardIds };
 }
 
 /** Reset the once-guard: test-only. */

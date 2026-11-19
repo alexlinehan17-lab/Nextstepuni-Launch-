@@ -1,5 +1,6 @@
 import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
 import { consumeInitialMarkBankCards } from './markBankDeepLink';
+import { loadAtlasModel } from '../PaperTrail/atlasModel';
 import { resolveSubjectId } from '../../curriculumRegistry';
 /**
  * @license
@@ -221,7 +222,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     let cancelled = false;
     setCardsLoading(true);
     setCardsError(false);
-    loadCards(subjectId, level).then(loaded => {
+    // The subject's filing under the Topic Atlas headings arrives with its cards (atlasModel.ts).
+    Promise.all([loadCards(subjectId, level), loadAtlasModel(subjectId)]).then(([loaded]) => {
       if (cancelled) return;
       setCards(loaded);
       setCardsLoading(false);

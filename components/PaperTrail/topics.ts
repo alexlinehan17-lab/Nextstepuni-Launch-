@@ -22,7 +22,7 @@ import {
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 import { physicalEducationTask, withPhysicalEducationAtlasTasks } from './physicalEducationTasks';
 import { isDeferredFileid } from './sitting';
-import { isModelSubject, modelHeadingGroups, modelHeadings, modelTopicsForQuestion } from './atlasModel';
+import { atlasHeadingGroups, atlasHeadings, atlasModelVersion, isModelSubject, modelTopicsForQuestion } from './atlasModel';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -74,13 +74,16 @@ export function browseTopicIdsForQuestion(
   paper: Pick<PaperTopicTags, 'subjectId' | 'level' | 'year' | 'paperKey' | 'lang' | 'fileid'>,
   question: QuestionTopicTag,
 ): string[] {
-  const reviewedTask = physicalEducationTask({ ...paper, n: question.n });
-  if (reviewedTask) return reviewedTask.examTopicIds;
   // The single model (atlasModel.ts): a printed question's headings are its parts' headings, each part filed once.
   const modelled = modelTopicsForQuestion(paper.subjectId, paper.year, paper.level, paper.fileid, question.n);
   if (modelled) return modelled;
-  if (!examTopicTaxonomyFor(paper.subjectId)) return canonicalTopicIds(question);
-  return examTopicIdsForQuestion(
+  const reviewedTask = physicalEducationTask({ ...paper, n: question.n });
+  // A model subject's question with no card yet keeps its own tags, limited to the subject's one list.
+  const list = isModelSubject(paper.subjectId) ? atlasHeadings(paper.subjectId) : null;
+  const keep = (ids: string[]) => (list ? ids.filter(id => list.some(t => t.id === id)) : ids);
+  if (reviewedTask) return keep(reviewedTask.examTopicIds);
+  if (!examTopicTaxonomyFor(paper.subjectId)) return keep(canonicalTopicIds(question));
+  return keep(examTopicIdsForQuestion(
     paper.subjectId,
     paper.level,
     paper.year,
@@ -89,7 +92,7 @@ export function browseTopicIdsForQuestion(
     paper.paperKey,
     paper.lang,
     paper.fileid,
-  );
+  ));
 }
 
 const questionHasTopic = (paper: PaperTopicTags, question: QuestionTopicTag, topicId: string): boolean => {
@@ -367,7 +370,7 @@ export interface SubjectTopic {
 export function topicsForSubject(subjectId: string): SubjectTopic[] {
   const agg = new Map<string, { questions: Set<string>; years: Set<number> }>();
   // A subject in the single model shows its one heading list, so the other course's headings do not linger empty.
-  for (const topic of modelHeadings(subjectId) ?? examTopicTaxonomyFor(subjectId)?.topics ?? []) {
+  for (const topic of atlasHeadings(subjectId) ?? examTopicTaxonomyFor(subjectId)?.topics ?? []) {
     agg.set(topic.id, { questions: new Set<string>(), years: new Set<number>() });
   }
   for (const p of ATLAS_TOPIC_TAGS) {
@@ -428,7 +431,8 @@ export interface SubjectAtlasStats {
 const statsMemo = new Map<string, SubjectAtlasStats>();
 
 export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
-  let s = statsMemo.get(subjectId);
+  const memoKey = `${subjectId}|${atlasModelVersion()}`;
+  let s = statsMemo.get(memoKey);
   if (s) return s;
   const perYearQuestions = new Map<number, Set<string>>();
   const topicIds = new Set<string>();
@@ -446,7 +450,7 @@ export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
   }
   const perYear = new Map([...perYearQuestions].map(([year, ids]) => [year, ids.size]));
   const years = [...perYear.keys()].sort((a, b) => a - b);
-  const auditedTopicCount = modelHeadings(subjectId)?.length ?? examTopicTaxonomyFor(subjectId)?.topics.length;
+  const auditedTopicCount = atlasHeadings(subjectId)?.length ?? examTopicTaxonomyFor(subjectId)?.topics.length;
   s = {
     questions: questions.size,
     topics: auditedTopicCount ?? topicIds.size,
@@ -455,7 +459,7 @@ export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
     years,
     perYear,
   };
-  statsMemo.set(subjectId, s);
+  statsMemo.set(memoKey, s);
   return s;
 }
 
@@ -490,15 +494,16 @@ export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[
   const out: AtlasStrand[] = [];
   const claimed = new Set<string>();
   const examTaxonomy = examTopicTaxonomyFor(subjectId);
-  if (isModelSubject(subjectId)) {
-    // One heading list: the groups the Mark Bank shows, per level, named by level only.
-    for (const level of ['higher', 'ordinary', 'foundation', 'common']) {
-      for (const group of modelHeadingGroups(subjectId, level)) {
-        const ids = group.topics.map(t => t.id).filter(id => tagged.has(id));
-        if (!ids.length) continue;
-        out.push({ id: group.id, name: `${level[0].toUpperCase()}${level.slice(1)} Level · ${group.label}`, subtopicIds: ids });
-        for (const id of ids) claimed.add(id);
-      }
+  const modelGroups = atlasHeadingGroups(subjectId);
+  if (modelGroups) {
+    // One heading list: the groups the Mark Bank shows, named by level where the list has two levels.
+    const twoLevels = new Set(modelGroups.map(g => g.level).filter(l => l !== 'all')).size > 1;
+    for (const group of modelGroups) {
+      const ids = group.topics.map(t => t.id).filter(id => tagged.has(id));
+      if (!ids.length) continue;
+      const levelWord = group.level === 'all' || !twoLevels ? '' : `${group.level[0].toUpperCase()}${group.level.slice(1)} Level · `;
+      out.push({ id: group.id, name: `${levelWord}${group.label}`, subtopicIds: ids });
+      for (const id of ids) claimed.add(id);
     }
   } else if (examTaxonomy) {
     const labelCounts = new Map<string, number>();

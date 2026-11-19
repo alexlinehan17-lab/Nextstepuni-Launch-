@@ -16,4 +16,19 @@ try {
     const multi = file.questions.filter(q => new Set(q[5].flatMap(a => a[1])).size > 1).length;
     console.log(`${subjectId}: ${asks + file.unplaced.length} asks (${file.unplaced.length} not yet in the Atlas) in ${file.questions.length} printed questions (${multi} with parts under more than one heading), ${file.topics.length} headings.`);
   }
+  // The eager manifest: every subject the app reads, with its one heading list and which Atlas subject shows each
+  // group. The asks themselves stay in data/atlasModel/<subject>.json and load when the subject opens.
+  const { MODEL_SUBJECTS } = await server.ssrLoadModule('/scripts/atlas-model/askTopics.ts');
+  const { atlasSubjectFor } = await server.ssrLoadModule('/scripts/atlas-model/checks.ts');
+  const { readFile } = await import('node:fs/promises');
+  const subjects = [];
+  for (const subjectId of [...MODEL_SUBJECTS].sort()) {
+    const file = JSON.parse(await readFile(new URL(`../../data/atlasModel/${subjectId}.json`, import.meta.url), 'utf8'));
+    const home = atlasSubjectFor(subjectId) ?? subjectId;
+    const used = file.groups.map(g => new Set(file.questions.filter(q => q[5].some(([, t]) => t.some(i => g.topics.includes(i)))).map(q => q[0])));
+    const groups = file.groups.map((g, i) => ({ ...g, atlasId: [...used[i]].sort()[0] ?? home }));
+    subjects.push({ subjectId, atlasIds: [...new Set([home, ...groups.map(g => g.atlasId)])], headingSource: file.headingSource, groups, topics: file.topics });
+  }
+  await writeFile(new URL('../../data/atlasModel/headings.json', import.meta.url), `${JSON.stringify({ v: 1, subjects })}\n`);
+  console.log(`headings.json: ${subjects.length} subjects the app reads (${subjects.map(s => s.subjectId).join(', ')}).`);
 } finally { await server.close(); }

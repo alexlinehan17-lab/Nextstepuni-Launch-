@@ -26,6 +26,7 @@ import HorizontalTabs from '../ui/HorizontalTabs';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation, initialVaultFocus } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
+import { isModelLoaded, isModelSubject, loadAtlasModel } from './atlasModel';
 
 const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
 
@@ -159,15 +160,26 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     setRevVer(v => v + 1);
   };
 
+  // The single model: a subject's filing (which part sits under which heading) loads when the subject opens.
+  const [modelReady, setModelReady] = useState(0);
+  const modelPending = Boolean(subjectId && isModelSubject(subjectId) && !isModelLoaded(subjectId));
+  useEffect(() => {
+    if (!subjectId || !isModelSubject(subjectId) || isModelLoaded(subjectId)) return;
+    let live = true;
+    loadAtlasModel(subjectId).then(() => { if (live) setModelReady(v => v + 1); });
+    return () => { live = false; };
+  }, [subjectId]);
+
   // Per-topic mastery for the chosen subject (accuracy + FSRS retention).
   const masteryMap = useMemo(() => {
     void revVer; // recompute after adding cards changes retention signals
+    void modelReady;
     const m = new Map<string, TopicMastery>();
     if (subjectId) for (const t of masteryForSubject(uid, subjectId)) m.set(t.subtopicId, t);
     return m;
-  }, [subjectId, uid, revVer]);
+  }, [subjectId, uid, revVer, modelReady]);
 
-  const baseTopics: SubjectTopic[] = useMemo(() => (subjectId ? topicsForSubject(subjectId) : []), [subjectId]);
+  const baseTopics: SubjectTopic[] = useMemo(() => { void modelReady; return subjectId ? topicsForSubject(subjectId) : []; }, [subjectId, modelReady]);
   const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
   const sortedTopics: SubjectTopic[] = useMemo(() => {
     if (sort === 'busiest') return baseTopics; // already count-sorted
@@ -189,8 +201,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     return sortedTopics.filter(t => t.label.toLowerCase().includes(q));
   }, [sortedTopics, topicQuery]);
   const allEditions = useMemo(
-    () => (subjectId && subtopicId ? siblingsFor(subjectId, subtopicId) : []),
-    [subjectId, subtopicId],
+    () => { void modelReady; return subjectId && subtopicId ? siblingsFor(subjectId, subtopicId) : []; },
+    [subjectId, subtopicId, modelReady],
   );
   const hasIrish = useMemo(() => allEditions.some(q => q.lang === 'iv'), [allEditions]);
   // One edition per printed question: the preferred language where it exists,
@@ -205,6 +217,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     }
     return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
   }, [allEditions, langPref]);
+
+  if (modelPending) {
+    return <div className="w-full max-w-2xl mx-auto pb-12"><p role="status" className="text-[13px] py-6" style={{ color: '#7a7068' }}>Loading this subject’s topics…</p></div>;
+  }
 
   if (subjectId === 'politics-and-society' && subtopicId && politicsView === 'tasks') {
     return <div className="w-full max-w-2xl mx-auto pb-12">
@@ -455,7 +471,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                         {String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}
                       </span>
                       <span className="flex-1 min-w-0">
-                        <span className="block text-[15.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
+                        <span className="block text-[15.5px] leading-snug text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{t.label}</span>
                         <span className="block sm:hidden text-[11.5px] mt-0.5 tabular-nums" style={{ color: '#9e9186' }}>{t.count} questions · {t.years} of {totalYears} years</span>
                       </span>
                       {masteryMap.size > 0 && (

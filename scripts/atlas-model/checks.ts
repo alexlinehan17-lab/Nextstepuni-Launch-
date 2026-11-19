@@ -22,7 +22,7 @@ import { SUBJECTS, levelsFor, loadCards } from '../../components/MarkBank/deck';
 import {
   browseTopicIdsForQuestion, logicalQuestionIdentity, questionsForTopics, topicLabel, topicsForPaper,
 } from '../../components/PaperTrail/topics';
-import { askRecord, isModelSubject } from '../../components/PaperTrail/atlasModel';
+import { askRecord, isModelSubject, loadAllAtlasModels } from '../../components/PaperTrail/atlasModel';
 import { physicalEducationTask } from '../../components/PaperTrail/physicalEducationTasks';
 import { curriculumNodeIdsForExamTopic, examTopicDefinition, examTopicTaxonomyFor } from '../../data/examTopics/registry';
 import { PAPER_TRAIL_SUBJECTS } from '../../paperTrailData';
@@ -64,6 +64,7 @@ function aliasExpander(bankId: string) {
 }
 
 export async function runAtlasModelChecks(): Promise<CheckResult> {
+  await loadAllAtlasModels();
   const result: CheckResult = { cards: {}, questions: {}, totals: { cards: 0, cardsReaching: 0, atlasQuestions: 0, atlasQuestionsWithCard: 0 } };
   const credited = new Map<string, Set<string>>(); // atlas subject -> logical identities with a card
   const credit = (atlas: string, identity: string) => { const s = credited.get(atlas) ?? new Set(); s.add(identity); credited.set(atlas, s); };
