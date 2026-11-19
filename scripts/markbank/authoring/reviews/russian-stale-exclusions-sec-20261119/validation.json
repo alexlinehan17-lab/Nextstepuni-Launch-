@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-19T11:11:36.905207+00:00",
+  "sourceVerifiedCards": 418,
+  "fixedNoticeRegenerationIsIdempotent": true,
+  "sourceVerification": "sources.log",
+  "requiredChecks": {
+    "files": 4,
+    "cases": 241,
+    "passed": true
+  },
+  "reconciliation": "ledger-zero.json",
+  "sourcePassages": 4053
+}

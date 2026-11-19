@@ -1,0 +1,33 @@
+{
+  "baseCommit": "387080393ebb755e5c412de8645737861f59cb0f",
+  "retainedCardIdsAndConceptIds": 1485,
+  "unchangedCards": 1462,
+  "noticeOnlyCards": [
+    "ru-2021-ol-ew",
+    "ru-2021-ol-la1",
+    "ru-2021-ol-sa",
+    "ru-2022-hl-gw",
+    "ru-2022-hl-se",
+    "ru-2022-ol-ew",
+    "ru-2022-ol-la1",
+    "ru-2022-ol-sa",
+    "ru-2023-hl-gw",
+    "ru-2023-hl-se",
+    "ru-2023-ol-ew",
+    "ru-2023-ol-la2",
+    "ru-2023-ol-sa",
+    "ru-2024-hl-gw",
+    "ru-2024-hl-se",
+    "ru-2024-ol-ew",
+    "ru-2024-ol-la1",
+    "ru-2024-ol-sa",
+    "ru-2025-hl-gw",
+    "ru-2025-hl-se",
+    "ru-2025-ol-ew",
+    "ru-2025-ol-la2",
+    "ru-2025-ol-sa"
+  ],
+  "allMarksRowsGridsAndOriginal199CardsUnchanged": true,
+  "allOtherSubjectDecksUnchanged": true,
+  "originalExclusionsRetainedIn": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/original-exclusions.json"
+}
