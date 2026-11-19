@@ -4,6 +4,7 @@ import { cleanup, render, screen, waitFor, fireEvent } from "@testing-library/re
 import Lenis from "lenis";
 import {readAnswer} from "../components/PaperTrail/answerDeskStore";
 import Viewer from "../components/PaperTrail/Viewer";
+import { audioPlaybackUrl } from "../components/MarkBank/audioStorage";
 vi.mock("../components/PaperTrail/pdfjsLoader", () => ({
   loadPdfjs: () => new Promise(() => {}),
 }));
@@ -39,7 +40,9 @@ describe("Paper Trail previews", () => {
       topics={{ subjectId, year: 2026, level: subjectId === 'french' ? 'ordinary' : 'higher', lang: 'ev', fileid, paperKey: 'aural', q: [] }}
       onClose={() => {}} />);
     const player = screen.getByRole('dialog').querySelector('audio');
-    expect(player).toHaveAttribute('src', `https://www.examinations.ie/archive/exampapers/2026/${recording}`);
+    const recordingUrl = `https://www.examinations.ie/archive/exampapers/2026/${recording}`;
+    // The hosted copy where one is verified (audioStorage.ts), otherwise the SEC's address.
+    expect(player).toHaveAttribute('src', audioPlaybackUrl({ canonicalUrl: recordingUrl, playbackUrl: recordingUrl }));
     expect(player).toHaveAttribute('controls');
   });
   it("exempts the portalled viewer from the landing page scroll controller", () => {

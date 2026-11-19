@@ -409,7 +409,7 @@
   },
   "home-economics": {
     "cards": 1953,
-    "contentHash": "ead4865b78f642a1",
+    "contentHash": "20400c88d00a24b1",
     "coveragePct": 100.0,
     "covered": 1908,
     "excluded": 0,
@@ -469,7 +469,7 @@
   },
   "japanese": {
     "cards": 1941,
-    "contentHash": "c3a55117845c56b1",
+    "contentHash": "590f3b7d410664f0",
     "coveragePct": 100.0,
     "covered": 1941,
     "excluded": 0,
@@ -634,7 +634,7 @@
   },
   "physics": {
     "cards": 4059,
-    "contentHash": "c474c88f67d95d7f",
+    "contentHash": "70f52ffc394db870",
     "coveragePct": 100.0,
     "covered": 3250,
     "excluded": 0,
@@ -648,19 +648,19 @@
     "refsHash": "c8412e48ab29b939"
   },
   "polish": {
-    "cards": 237,
-    "contentHash": "408ba0b39d9d0167",
-    "coveragePct": 100.0,
-    "covered": 243,
-    "excluded": 310,
-    "leaves": 553,
-    "open": 0,
+    "cards": 678,
+    "contentHash": "9689cc52a2528375",
+    "coveragePct": 84.4,
+    "covered": 695,
+    "excluded": 0,
+    "leaves": 823,
+    "open": 128,
     "orphans": 0,
     "papers": {
-      "count": 17,
-      "hash": "593a0709ee51ab08"
+      "count": 32,
+      "hash": "6a6c3eeffb300707"
     },
-    "refsHash": "727a4af11e33aa55"
+    "refsHash": "f2714dd07b399726"
   },
   "politics-and-society": {
     "cards": 623,
