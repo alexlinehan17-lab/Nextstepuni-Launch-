@@ -3942,8 +3942,8 @@ describe('Mark Bank card preservation', () => {
      * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
      * original ID; every reviewed sitting's shipped IDs are still present,
      * live or (a choose-N combination card) through a progress alias. */
-    // + the carded deferred sittings, all new ids (2022 Higher 120, 2023 Higher 124).
-    expect(geographyAdditionIds.size).toBe(3492 + 120 + 124);
+    // + the carded deferred sittings, all new ids (2022 Higher 120, 2023 Higher 124, 2024 Higher 124).
+    expect(geographyAdditionIds.size).toBe(3492 + 120 + 124 + 124);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);

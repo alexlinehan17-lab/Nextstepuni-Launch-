@@ -150833,6 +150833,4054 @@
         }
       ],
       "rule": "Independent review ledger: Leaving Certificate Geography 2023 Higher Level, deferred sitting.\n\nThe SEC's deferred examination is a paper of its own. Sources (English\neditions, harvested in paper-trail-corpus/deferredexams/2023 and\ndeferredmarkingschemes/2023, filed by Paper Trail as \"<fileid>-deferred\";\nsizes pinned in EXPECTED_SOURCES and the generated audit): Part One and\nAnswerbook LC005ALP042EV (48 pages), Part Two LC005ALP043EV (20 pages),\nmarking scheme LC005ALP000EV (64 pages), and the sitting's own companions:\nthe 1:50 000 Listowel map LC005CLP003EV, its legend LC005CLPC00EV and the\nListowel aerial photograph LC005CLP004EV, published only as a JPEG.\n\nVisual sweep (every page rendered and read on 2026-11-19):\n  Part One booklet p1 cover; p2 instructions (Part One \"Attempt any TEN\",\n  80 marks; Part Two \"attempt FOUR\", 320 marks); p3-p13 Questions 1-12 (p8\n  holds Q6 and Q7); p14 Part Two answerbook instructions; p15-p18 graph\n  paper; p19-p47 lined answer pages; p48 back cover.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3-p8 Sections 1-2\n  (Q1-Q6); p9 Section 3 divider; p10-p15 Electives (Q7-Q12); p16 Section 4\n  divider and note; p17-p18 Options (Q13-Q24); p19 \"Do not hand this up\";\n  p20 back cover and copyright notice.\n  Scheme p1 cover; p2 the note on deferred marking schemes; p3 notes and\n  annotation key; p4 Part One table (two columns, Q1-Q6 and Q7-Q12, each\n  question's parts side by side); p5 the notes and annotation key again;\n  p6-p24 Q1-Q6 (each reprints its question); p25 Electives divider; p26-p43\n  Q7-Q12; p44 Options divider; p45 option outline and Overall Coherence\n  descriptors; p46 option annotations; p47-p54 Q13-Q24; p55-p58\n  Geographical Investigation (coursework); p59 investigation topics; p60\n  Irish-language bonus marks; p61-p64 blank.\n  Companions: Listowel map extract (the River Feale and the Smearlagh River,\n  the N69 and R523); OS legend sheet; oblique aerial photograph of Listowel.\n\nThe deferred scheme sets out every printed part, so every part is carded\nwith its own published allocation. Its Part One table prints each\nquestion's parts side by side; each part reads its own column (Q1, Q3 and\nQ4's letters and their process/landform columns). It heads Question 11\n\"Q1\" and prints 8A(ii) as \"(i)\" under the graph; both are placed by their\nposition and wording. Part Two follows the June 2023 ledger: every A-part\nroman is a task; B, C and options are one task each, except 11B, whose (i)\nand (ii) the scheme prices separately. Finite printed choices are routes:\n1C, 2C and 8B one of the printed bullets; 3B (i) or (ii), with (i)'s one\nfluvial or one coastal or one glacial landform. Choose-N-of-M pools are one\ncard with every printed item (9B any two, 11C two of three, 17 and 18 any\nthree of four). 10B's two printed areas and 24's three printed features are\ncompulsory."
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "sitting": "deferred",
+      "lang": "ev",
+      "status": "reviewed",
+      "reviewedAt": "2026-11-19",
+      "sources": {
+        "paper1": {
+          "fileid": "LC005ALP042EV.pdf",
+          "bytes": 3688449,
+          "sha256": "16c3c732c2bfee4eefa9d610768df182d2ad4946a98a389d3cd02d43b54fd9fc",
+          "pages": 48
+        },
+        "paper2": {
+          "fileid": "LC005ALP043EV.pdf",
+          "bytes": 1321410,
+          "sha256": "5598b7c85915d5977db7782ad65f6e5bcc2dfaf62bc4f4055ab00f22512f3458",
+          "pages": 20
+        },
+        "scheme": {
+          "fileid": "LC005ALP000EV.pdf",
+          "bytes": 972404,
+          "sha256": "ed4b5146946305d7926e1e8dff0124c0de47603a344f74b87ff9ab8138bc0fc1",
+          "pages": 54
+        },
+        "map": {
+          "fileid": "LC005CLP003EV.pdf",
+          "bytes": 4631383,
+          "sha256": "ac641e2f02aa3d3707891244d662248d76d3966de996d22ed9ca3dd644d8fe5d",
+          "pages": 1
+        },
+        "legend": {
+          "fileid": "LC005CLPC00EV.pdf",
+          "bytes": 890021,
+          "sha256": "4ac0d8f9a781cff43bcb5b87550dfce62eaaa88a207c5247579d10812cc37b6b",
+          "pages": 1
+        },
+        "aerial": {
+          "fileid": "LC005CLP004EV.jpg",
+          "bytes": 4932403,
+          "sha256": "0f7388ba9f25a8c60538464f2a5a147f2fc9e2f09fd2b257327fbd3e22022747",
+          "pages": 1
+        }
+      },
+      "pageReview": {
+        "paper1": {
+          "1": "cover",
+          "2": "instructions",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "question",
+          "12": "question",
+          "13": "question",
+          "14": "answerbook instructions",
+          "15": "graph-paper answer page",
+          "16": "graph-paper answer page",
+          "17": "graph-paper answer page",
+          "18": "graph-paper answer page",
+          "19": "lined answer page",
+          "20": "lined answer page",
+          "21": "lined answer page",
+          "22": "lined answer page",
+          "23": "lined answer page",
+          "24": "lined answer page",
+          "25": "lined answer page",
+          "26": "lined answer page",
+          "27": "lined answer page",
+          "28": "lined answer page",
+          "29": "lined answer page",
+          "30": "lined answer page",
+          "31": "lined answer page",
+          "32": "lined answer page",
+          "33": "lined answer page",
+          "34": "lined answer page",
+          "35": "lined answer page",
+          "36": "lined answer page",
+          "37": "lined answer page",
+          "38": "lined answer page",
+          "39": "lined answer page",
+          "40": "lined answer page",
+          "41": "lined answer page",
+          "42": "lined answer page",
+          "43": "lined answer page",
+          "44": "lined answer page",
+          "45": "lined answer page",
+          "46": "lined answer page",
+          "47": "lined answer page",
+          "48": "copyright/back cover"
+        },
+        "paper2": {
+          "1": "cover",
+          "2": "Part Two instructions",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "10": "question",
+          "11": "question",
+          "12": "question",
+          "13": "question",
+          "14": "question",
+          "15": "question",
+          "17": "question",
+          "18": "question",
+          "9": "section divider",
+          "16": "section divider and option note",
+          "19": "do not hand this up",
+          "20": "copyright/back cover"
+        },
+        "scheme": {
+          "1": "cover",
+          "2": "note on deferred marking schemes",
+          "3": "Part One table",
+          "4": "Part Two allocation",
+          "5": "Part Two allocation",
+          "6": "Part Two allocation",
+          "7": "Part Two allocation",
+          "8": "Part Two allocation",
+          "9": "Part Two allocation",
+          "10": "Part Two allocation",
+          "11": "Part Two allocation",
+          "12": "Part Two allocation",
+          "13": "Part Two allocation",
+          "14": "Part Two allocation",
+          "15": "Part Two allocation",
+          "16": "Part Two allocation",
+          "17": "Part Two allocation",
+          "18": "Part Two allocation",
+          "19": "Part Two allocation",
+          "20": "Part Two allocation",
+          "21": "Part Two allocation",
+          "22": "Part Two allocation",
+          "23": "section divider",
+          "24": "Part Two allocation",
+          "25": "Part Two allocation",
+          "26": "Part Two allocation",
+          "27": "Part Two allocation",
+          "28": "Part Two allocation",
+          "29": "Part Two allocation",
+          "30": "Part Two allocation",
+          "31": "Part Two allocation",
+          "32": "Part Two allocation",
+          "33": "Part Two allocation",
+          "34": "Part Two allocation",
+          "35": "Part Two allocation",
+          "36": "Part Two allocation",
+          "37": "Part Two allocation",
+          "38": "Part Two allocation",
+          "39": "Part Two allocation",
+          "40": "Part Two allocation",
+          "41": "Part Two allocation",
+          "42": "section divider and option note",
+          "43": "option allocation",
+          "44": "option allocation",
+          "45": "option allocation",
+          "46": "option allocation",
+          "47": "geographical investigation (coursework)",
+          "48": "geographical investigation (coursework)",
+          "49": "geographical investigation (coursework)",
+          "50": "geographical investigation (coursework)",
+          "51": "geographical investigation (coursework)",
+          "52": "investigation topics",
+          "53": "Irish-language bonus marks",
+          "54": "blank"
+        }
+      },
+      "selectionScan": [
+        [
+          1,
+          2,
+          "attempt any ten"
+        ],
+        [
+          1,
+          2,
+          "attempt four"
+        ],
+        [
+          1,
+          3,
+          "attempt any ten"
+        ],
+        [
+          2,
+          2,
+          "attempt four"
+        ],
+        [
+          2,
+          4,
+          "one of the following"
+        ],
+        [
+          2,
+          5,
+          "answer (i) or (ii)"
+        ],
+        [
+          2,
+          5,
+          "or one"
+        ],
+        [
+          2,
+          5,
+          "or one"
+        ],
+        [
+          2,
+          6,
+          "one of the following"
+        ],
+        [
+          2,
+          12,
+          "one of the following"
+        ],
+        [
+          2,
+          13,
+          "any two"
+        ],
+        [
+          2,
+          13,
+          "any one"
+        ],
+        [
+          2,
+          14,
+          "two of the following"
+        ],
+        [
+          2,
+          17,
+          "any one"
+        ],
+        [
+          2,
+          17,
+          "three of the following"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "scan": [
+            [
+              1,
+              2,
+              "attempt any ten"
+            ],
+            [
+              1,
+              2,
+              "attempt four"
+            ],
+            [
+              1,
+              3,
+              "attempt any ten"
+            ],
+            [
+              2,
+              2,
+              "attempt four"
+            ]
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "Part One any ten of twelve and Part Two four questions are attempt rules; every question is carded."
+        },
+        {
+          "scan": [
+            [
+              2,
+              4,
+              "one of the following"
+            ],
+            [
+              2,
+              6,
+              "one of the following"
+            ],
+            [
+              2,
+              12,
+              "one of the following"
+            ],
+            [
+              2,
+              13,
+              "any one"
+            ],
+            [
+              2,
+              17,
+              "any one"
+            ]
+          ],
+          "kind": "closed-choose-one",
+          "reason": "2B one of three printed impacts -> 3 routes; 4B one of two printed indicators -> 2 routes; 9C one of three printed activities -> 3 routes; 10C any one of three printed factors -> 3 routes; 14 any one of three printed issues -> 3 routes."
+        },
+        {
+          "scan": [
+            [
+              2,
+              5,
+              "answer (i) or (ii)"
+            ],
+            [
+              2,
+              5,
+              "or one"
+            ],
+            [
+              2,
+              5,
+              "or one"
+            ]
+          ],
+          "kind": "closed-route",
+          "reason": "3C: (i) or (ii); (i) offers one fluvial OR one coastal OR one glacial landform -> 4 routes."
+        },
+        {
+          "scan": [
+            [
+              2,
+              13,
+              "any two"
+            ],
+            [
+              2,
+              14,
+              "two of the following"
+            ],
+            [
+              2,
+              17,
+              "three of the following"
+            ]
+          ],
+          "kind": "choose-n-one-card",
+          "reason": "10B any two of three printed problems, 11B two of three printed land-uses and 15 three of four printed themes -> one card each with every printed item (choice is not a route; the scheme marks each chosen item alike). Open choices are not fanned out: \"one urban area\", \"one multi-national company\", \"example(s)\", \"one global climate type\"; 3B \"and/or\" is open. Compulsory lists stay whole: 1A, 4A, 7A and 10A each bullet, 6B both challenges, 17 each activity."
+        }
+      ],
+      "questionTotals": {
+        "Part 1 Q1": 8,
+        "Part 1 Q10": 8,
+        "Part 1 Q11": 8,
+        "Part 1 Q12": 8,
+        "Part 1 Q2": 8,
+        "Part 1 Q3": 8,
+        "Part 1 Q4": 8,
+        "Part 1 Q5": 8,
+        "Part 1 Q6": 8,
+        "Part 1 Q7": 8,
+        "Part 1 Q8": 8,
+        "Part 1 Q9": 8,
+        "Part 2 Q10A": 20,
+        "Part 2 Q10B": 30,
+        "Part 2 Q10C": 30,
+        "Part 2 Q11A": 20,
+        "Part 2 Q11B": 30,
+        "Part 2 Q11C": 30,
+        "Part 2 Q12A": 20,
+        "Part 2 Q12B": 30,
+        "Part 2 Q12C": 30,
+        "Part 2 Q13": 80,
+        "Part 2 Q14": 80,
+        "Part 2 Q15": 80,
+        "Part 2 Q16": 80,
+        "Part 2 Q17": 80,
+        "Part 2 Q18": 80,
+        "Part 2 Q19": 80,
+        "Part 2 Q1A": 20,
+        "Part 2 Q1B": 30,
+        "Part 2 Q1C": 30,
+        "Part 2 Q20": 80,
+        "Part 2 Q21": 80,
+        "Part 2 Q22": 80,
+        "Part 2 Q23": 80,
+        "Part 2 Q24": 80,
+        "Part 2 Q2A": 20,
+        "Part 2 Q2B": 30,
+        "Part 2 Q2C": 30,
+        "Part 2 Q3A": 20,
+        "Part 2 Q3B": 30,
+        "Part 2 Q3C": 30,
+        "Part 2 Q4A": 20,
+        "Part 2 Q4B": 30,
+        "Part 2 Q4C": 30,
+        "Part 2 Q5A": 20,
+        "Part 2 Q5B": 30,
+        "Part 2 Q5C": 30,
+        "Part 2 Q6A": 20,
+        "Part 2 Q6B": 30,
+        "Part 2 Q6C": 30,
+        "Part 2 Q7A": 20,
+        "Part 2 Q7B": 30,
+        "Part 2 Q7C": 30,
+        "Part 2 Q8A": 20,
+        "Part 2 Q8B": 30,
+        "Part 2 Q8C": 30,
+        "Part 2 Q9A": 20,
+        "Part 2 Q9B": 30,
+        "Part 2 Q9C": 30
+      },
+      "taskCount": 112,
+      "cardCount": 124,
+      "legacyIds": [],
+      "addedIds": [
+        "geography-2024-hl-deferred-p1-q1",
+        "geography-2024-hl-deferred-p1-q1-ii",
+        "geography-2024-hl-deferred-p1-q1-iii",
+        "geography-2024-hl-deferred-p1-q10",
+        "geography-2024-hl-deferred-p1-q10-ii",
+        "geography-2024-hl-deferred-p1-q10-iii",
+        "geography-2024-hl-deferred-p1-q10-iv",
+        "geography-2024-hl-deferred-p1-q11",
+        "geography-2024-hl-deferred-p1-q11-ii",
+        "geography-2024-hl-deferred-p1-q11-iii",
+        "geography-2024-hl-deferred-p1-q11-iv",
+        "geography-2024-hl-deferred-p1-q12",
+        "geography-2024-hl-deferred-p1-q2",
+        "geography-2024-hl-deferred-p1-q2-ii",
+        "geography-2024-hl-deferred-p1-q3",
+        "geography-2024-hl-deferred-p1-q3-ii",
+        "geography-2024-hl-deferred-p1-q3-iii",
+        "geography-2024-hl-deferred-p1-q4",
+        "geography-2024-hl-deferred-p1-q4-ii",
+        "geography-2024-hl-deferred-p1-q4-iii",
+        "geography-2024-hl-deferred-p1-q5",
+        "geography-2024-hl-deferred-p1-q6",
+        "geography-2024-hl-deferred-p1-q6-ii",
+        "geography-2024-hl-deferred-p1-q6-iii",
+        "geography-2024-hl-deferred-p1-q6-iv",
+        "geography-2024-hl-deferred-p1-q7",
+        "geography-2024-hl-deferred-p1-q7-ii",
+        "geography-2024-hl-deferred-p1-q7-iii",
+        "geography-2024-hl-deferred-p1-q7-iv",
+        "geography-2024-hl-deferred-p1-q8",
+        "geography-2024-hl-deferred-p1-q8-ii",
+        "geography-2024-hl-deferred-p1-q8-iii",
+        "geography-2024-hl-deferred-p1-q8-iv",
+        "geography-2024-hl-deferred-p1-q9",
+        "geography-2024-hl-deferred-p2-q10a",
+        "geography-2024-hl-deferred-p2-q10b",
+        "geography-2024-hl-deferred-p2-q10c-development-of-resources",
+        "geography-2024-hl-deferred-p2-q10c-income-levels",
+        "geography-2024-hl-deferred-p2-q10c-society-and-culture",
+        "geography-2024-hl-deferred-p2-q11a",
+        "geography-2024-hl-deferred-p2-q11a-ii",
+        "geography-2024-hl-deferred-p2-q11a-iii",
+        "geography-2024-hl-deferred-p2-q11a-iv",
+        "geography-2024-hl-deferred-p2-q11a-v",
+        "geography-2024-hl-deferred-p2-q11b",
+        "geography-2024-hl-deferred-p2-q11c",
+        "geography-2024-hl-deferred-p2-q12a",
+        "geography-2024-hl-deferred-p2-q12a-ii",
+        "geography-2024-hl-deferred-p2-q12b",
+        "geography-2024-hl-deferred-p2-q12c",
+        "geography-2024-hl-deferred-p2-q13",
+        "geography-2024-hl-deferred-p2-q14-deforestation",
+        "geography-2024-hl-deferred-p2-q14-desertification",
+        "geography-2024-hl-deferred-p2-q14-global-warming",
+        "geography-2024-hl-deferred-p2-q15",
+        "geography-2024-hl-deferred-p2-q16",
+        "geography-2024-hl-deferred-p2-q17",
+        "geography-2024-hl-deferred-p2-q18",
+        "geography-2024-hl-deferred-p2-q19",
+        "geography-2024-hl-deferred-p2-q1a",
+        "geography-2024-hl-deferred-p2-q1b",
+        "geography-2024-hl-deferred-p2-q1c",
+        "geography-2024-hl-deferred-p2-q20",
+        "geography-2024-hl-deferred-p2-q21",
+        "geography-2024-hl-deferred-p2-q22",
+        "geography-2024-hl-deferred-p2-q23",
+        "geography-2024-hl-deferred-p2-q24",
+        "geography-2024-hl-deferred-p2-q2a",
+        "geography-2024-hl-deferred-p2-q2a-ii",
+        "geography-2024-hl-deferred-p2-q2a-iii",
+        "geography-2024-hl-deferred-p2-q2a-iv",
+        "geography-2024-hl-deferred-p2-q2a-v",
+        "geography-2024-hl-deferred-p2-q2a-vi",
+        "geography-2024-hl-deferred-p2-q2b-the-impact-of-coastal-defence-meas",
+        "geography-2024-hl-deferred-p2-q2b-the-impact-of-flood-control-measur",
+        "geography-2024-hl-deferred-p2-q2b-the-impact-of-human-activities-on",
+        "geography-2024-hl-deferred-p2-q2c",
+        "geography-2024-hl-deferred-p2-q3a",
+        "geography-2024-hl-deferred-p2-q3a-ii",
+        "geography-2024-hl-deferred-p2-q3a-iii",
+        "geography-2024-hl-deferred-p2-q3a-iv",
+        "geography-2024-hl-deferred-p2-q3a-v",
+        "geography-2024-hl-deferred-p2-q3a-vi",
+        "geography-2024-hl-deferred-p2-q3b",
+        "geography-2024-hl-deferred-p2-q3c-route-i-coastal-landform",
+        "geography-2024-hl-deferred-p2-q3c-route-i-fluvial-landform",
+        "geography-2024-hl-deferred-p2-q3c-route-i-glacial-landform",
+        "geography-2024-hl-deferred-p2-q3c-route-ii",
+        "geography-2024-hl-deferred-p2-q4a",
+        "geography-2024-hl-deferred-p2-q4b-language",
+        "geography-2024-hl-deferred-p2-q4b-religion",
+        "geography-2024-hl-deferred-p2-q4c",
+        "geography-2024-hl-deferred-p2-q5a",
+        "geography-2024-hl-deferred-p2-q5a-ii",
+        "geography-2024-hl-deferred-p2-q5a-iii",
+        "geography-2024-hl-deferred-p2-q5a-iv",
+        "geography-2024-hl-deferred-p2-q5a-v",
+        "geography-2024-hl-deferred-p2-q5a-vi",
+        "geography-2024-hl-deferred-p2-q5b",
+        "geography-2024-hl-deferred-p2-q5c",
+        "geography-2024-hl-deferred-p2-q6a",
+        "geography-2024-hl-deferred-p2-q6a-ii",
+        "geography-2024-hl-deferred-p2-q6a-iii",
+        "geography-2024-hl-deferred-p2-q6a-iv",
+        "geography-2024-hl-deferred-p2-q6a-v",
+        "geography-2024-hl-deferred-p2-q6a-vi",
+        "geography-2024-hl-deferred-p2-q6b",
+        "geography-2024-hl-deferred-p2-q6c",
+        "geography-2024-hl-deferred-p2-q7a",
+        "geography-2024-hl-deferred-p2-q7b",
+        "geography-2024-hl-deferred-p2-q7c",
+        "geography-2024-hl-deferred-p2-q8a",
+        "geography-2024-hl-deferred-p2-q8a-ii",
+        "geography-2024-hl-deferred-p2-q8a-iii",
+        "geography-2024-hl-deferred-p2-q8a-iv",
+        "geography-2024-hl-deferred-p2-q8a-v",
+        "geography-2024-hl-deferred-p2-q8b",
+        "geography-2024-hl-deferred-p2-q8c",
+        "geography-2024-hl-deferred-p2-q9a",
+        "geography-2024-hl-deferred-p2-q9a-ii",
+        "geography-2024-hl-deferred-p2-q9b",
+        "geography-2024-hl-deferred-p2-q9c-financial-services",
+        "geography-2024-hl-deferred-p2-q9c-footloose-industries",
+        "geography-2024-hl-deferred-p2-q9c-mass-tourism"
+      ],
+      "idCorrections": [],
+      "aliases": [],
+      "tasks": [
+        {
+          "key": "p1-1-i",
+          "questionRef": "2024 HL Part 1 Q1(i) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 3,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Fault scarp",
+              "maxMarks": 1
+            },
+            {
+              "label": "Focus",
+              "maxMarks": 1
+            },
+            {
+              "label": "Epicentre",
+              "maxMarks": 1
+            },
+            {
+              "label": "Seismic wave",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q1"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-1-ii",
+          "questionRef": "2024 HL Part 1 Q1(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Instrument",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q1-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-1-iii",
+          "questionRef": "2024 HL Part 1 Q1(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Type of fault",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes",
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q1-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-i",
+          "questionRef": "2024 HL Part 1 Q2(i) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Slumping",
+              "maxMarks": 1
+            },
+            {
+              "label": "Compression",
+              "maxMarks": 1
+            },
+            {
+              "label": "Braiding",
+              "maxMarks": 1
+            },
+            {
+              "label": "Avalanche",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q2"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-ii",
+          "questionRef": "2024 HL Part 1 Q2(ii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Slumping",
+              "maxMarks": 1
+            },
+            {
+              "label": "Compression",
+              "maxMarks": 1
+            },
+            {
+              "label": "Braiding",
+              "maxMarks": 1
+            },
+            {
+              "label": "Avalanche",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q2-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-i",
+          "questionRef": "2024 HL Part 1 Q3(i) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 5,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Arête",
+              "maxMarks": 1
+            },
+            {
+              "label": "Lagoon",
+              "maxMarks": 1
+            },
+            {
+              "label": "Corrie lake/tarn",
+              "maxMarks": 1
+            },
+            {
+              "label": "Confluence",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation",
+            "geography-higher-mapwork",
+            "geography-higher-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q3"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-ii",
+          "questionRef": "2024 HL Part 1 Q3(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Direction",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q3-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-iii",
+          "questionRef": "2024 HL Part 1 Q3(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Process",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-10"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q3-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4-i",
+          "questionRef": "2024 HL Part 1 Q4(i) — Deferred sitting",
+          "marks": 3,
+          "paperPage": 6,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Sandstone",
+              "maxMarks": 1
+            },
+            {
+              "label": "Granite",
+              "maxMarks": 1
+            },
+            {
+              "label": "Basalt",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q4"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4-ii",
+          "questionRef": "2024 HL Part 1 Q4(ii) — Deferred sitting",
+          "marks": 3,
+          "paperPage": 6,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Sandstone",
+              "maxMarks": 1
+            },
+            {
+              "label": "Granite",
+              "maxMarks": 1
+            },
+            {
+              "label": "Basalt",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q4-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4-iii",
+          "questionRef": "2024 HL Part 1 Q4(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Metamorphic rock",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q4-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5",
+          "questionRef": "2024 HL Part 1 Q5 — Deferred sitting",
+          "marks": 8,
+          "paperPage": 7,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Climatic region",
+              "maxMarks": 1
+            },
+            {
+              "label": "Geomorphological region",
+              "maxMarks": 1
+            },
+            {
+              "label": "Administrative region in Ireland",
+              "maxMarks": 1
+            },
+            {
+              "label": "Core region",
+              "maxMarks": 1
+            },
+            {
+              "label": "Urban region",
+              "maxMarks": 1
+            },
+            {
+              "label": "Cultural region in Ireland",
+              "maxMarks": 1
+            },
+            {
+              "label": "Peripheral region",
+              "maxMarks": 1
+            },
+            {
+              "label": "Administrative region in France",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q5"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-i",
+          "questionRef": "2024 HL Part 1 Q6(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q6"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-ii",
+          "questionRef": "2024 HL Part 1 Q6(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q6-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-iii",
+          "questionRef": "2024 HL Part 1 Q6(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q6-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-iv",
+          "questionRef": "2024 HL Part 1 Q6(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q6-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-i",
+          "questionRef": "2024 HL Part 1 Q7(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Height",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q7"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-ii",
+          "questionRef": "2024 HL Part 1 Q7(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Length",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q7-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-iii",
+          "questionRef": "2024 HL Part 1 Q7(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Forestry",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q7-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-iv",
+          "questionRef": "2024 HL Part 1 Q7(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Area",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q7-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-i",
+          "questionRef": "2024 HL Part 1 Q8(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Direction",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q8"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-ii",
+          "questionRef": "2024 HL Part 1 Q8(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Lake",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q8-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iii",
+          "questionRef": "2024 HL Part 1 Q8(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Grid reference",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q8-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iv",
+          "questionRef": "2024 HL Part 1 Q8(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "River",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q8-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9",
+          "questionRef": "2024 HL Part 1 Q9 — Deferred sitting",
+          "marks": 8,
+          "paperPage": 10,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Locations of B, C, D and E",
+              "maxMarks": 8
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos"
+          ],
+          "sources": [
+            "page",
+            "aerial"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q9"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-i",
+          "questionRef": "2024 HL Part 1 Q10(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Percentage",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q10"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-ii",
+          "questionRef": "2024 HL Part 1 Q10(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Percentage",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q10-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-iii",
+          "questionRef": "2024 HL Part 1 Q10(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Above or below",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q10-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-iv",
+          "questionRef": "2024 HL Part 1 Q10(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q10-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-i",
+          "questionRef": "2024 HL Part 1 Q11(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Country",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q11"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-ii",
+          "questionRef": "2024 HL Part 1 Q11(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Years",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q11-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iii",
+          "questionRef": "2024 HL Part 1 Q11(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "Difference",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q11-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iv",
+          "questionRef": "2024 HL Part 1 Q11(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            3
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q11-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12",
+          "questionRef": "2024 HL Part 1 Q12 — Deferred sitting",
+          "marks": 8,
+          "paperPage": 13,
+          "schemePages": [
+            3,
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Deforestation",
+              "maxMarks": 2
+            },
+            {
+              "label": "Volcanic eruption",
+              "maxMarks": 2
+            },
+            {
+              "label": "Delta",
+              "maxMarks": 2
+            },
+            {
+              "label": "Forest fires",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p1-q12"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a",
+          "questionRef": "2024 HL Part 2 Q1A — Deferred sitting",
+          "marks": 20,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Proportion (sketch outline)",
+              "maxMarks": 4
+            },
+            {
+              "label": "The entire area of Lough Rusheen in the centre of the map",
+              "maxMarks": 4
+            },
+            {
+              "label": "The entire area of land above 300 metres west of Easting 12",
+              "maxMarks": 4
+            },
+            {
+              "label": "An area of deciduous woodland in the southwest of the map",
+              "maxMarks": 4
+            },
+            {
+              "label": "The entire course of the Castlebar River from M 180 923 to M 139 903, where it enters Lannagh/Castlebar Lough.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q1a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1b",
+          "questionRef": "2024 HL Part 2 Q1B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 3,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Metamorphic rocks named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination of formation",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q1b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1c",
+          "questionRef": "2024 HL Part 2 Q1C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 3,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q1c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-i",
+          "questionRef": "2024 HL Part 2 Q2A(i) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "A",
+              "maxMarks": 2
+            },
+            {
+              "label": "B",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-ii",
+          "questionRef": "2024 HL Part 2 Q2A(ii) — Deferred sitting",
+          "marks": 6,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "C",
+              "maxMarks": 2
+            },
+            {
+              "label": "D",
+              "maxMarks": 2
+            },
+            {
+              "label": "E",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-iii",
+          "questionRef": "2024 HL Part 2 Q2A(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-iv",
+          "questionRef": "2024 HL Part 2 Q2A(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Weathering",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-v",
+          "questionRef": "2024 HL Part 2 Q2A(v) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-vi",
+          "questionRef": "2024 HL Part 2 Q2A(vi) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Term",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2a-vi"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b",
+          "questionRef": "2024 HL Part 2 Q2B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 4,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Impact on process identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2b-the-impact-of-flood-control-measur",
+            "geography-2024-hl-deferred-p2-q2b-the-impact-of-coastal-defence-meas",
+            "geography-2024-hl-deferred-p2-q2b-the-impact-of-human-activities-on"
+          ],
+          "routes": [
+            "The impact of flood control measures on river processes",
+            "The impact of coastal defence measures on coastal processes",
+            "The impact of human activities on mass movement processes"
+          ]
+        },
+        {
+          "key": "p2-2c",
+          "questionRef": "2024 HL Part 2 Q2C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 4,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics",
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q2c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-i",
+          "questionRef": "2024 HL Part 2 Q3A(i) — Deferred sitting",
+          "marks": 8,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "A",
+              "maxMarks": 2
+            },
+            {
+              "label": "B",
+              "maxMarks": 2
+            },
+            {
+              "label": "C",
+              "maxMarks": 2
+            },
+            {
+              "label": "D",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-ii",
+          "questionRef": "2024 HL Part 2 Q3A(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Tectonic plate",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iii",
+          "questionRef": "2024 HL Part 2 Q3A(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Term",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iv",
+          "questionRef": "2024 HL Part 2 Q3A(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Mineral",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-v",
+          "questionRef": "2024 HL Part 2 Q3A(v) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Process",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-vi",
+          "questionRef": "2024 HL Part 2 Q3A(vi) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 5,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3a-vi"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b",
+          "questionRef": "2024 HL Part 2 Q3B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 5,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-0-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rivers",
+            "geography-higher-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3c",
+          "questionRef": "2024 HL Part 2 Q3C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 5,
+          "schemePages": [
+            12,
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Process of erosion identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Landform named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-0-10",
+            "geography-0-11",
+            "geography-0-8",
+            "geography-0-9"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation",
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q3c-route-i-fluvial-landform",
+            "geography-2024-hl-deferred-p2-q3c-route-i-coastal-landform",
+            "geography-2024-hl-deferred-p2-q3c-route-i-glacial-landform",
+            "geography-2024-hl-deferred-p2-q3c-route-ii"
+          ],
+          "routes": [
+            "Route (i) · one fluvial landform",
+            "Route (i) · one coastal landform",
+            "Route (i) · one glacial landform",
+            "Route (ii)"
+          ]
+        },
+        {
+          "key": "p2-4a",
+          "questionRef": "2024 HL Part 2 Q4A — Deferred sitting",
+          "marks": 20,
+          "paperPage": 6,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Map outline",
+              "maxMarks": 4
+            },
+            {
+              "label": "The outline of a named feature of relief (upland or lowland)",
+              "maxMarks": 4
+            },
+            {
+              "label": "A named urban centre",
+              "maxMarks": 4
+            },
+            {
+              "label": "A named road or rail link",
+              "maxMarks": 4
+            },
+            {
+              "label": "The course of a named river.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q4a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b",
+          "questionRef": "2024 HL Part 2 Q4B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 6,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Example",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental",
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q4b-language",
+            "geography-2024-hl-deferred-p2-q4b-religion"
+          ],
+          "routes": [
+            "Language",
+            "Religion"
+          ]
+        },
+        {
+          "key": "p2-4c",
+          "questionRef": "2024 HL Part 2 Q4C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 6,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Factors identified",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination of the two factors (7/6 and 6/7 SRPs)",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q4c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-i",
+          "questionRef": "2024 HL Part 2 Q5A(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Airport",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-ii",
+          "questionRef": "2024 HL Part 2 Q5A(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Passengers",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iii",
+          "questionRef": "2024 HL Part 2 Q5A(iii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Two airports",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iv",
+          "questionRef": "2024 HL Part 2 Q5A(iv) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Mean",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-v",
+          "questionRef": "2024 HL Part 2 Q5A(v) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-vi",
+          "questionRef": "2024 HL Part 2 Q5A(vi) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 7,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5a-vi"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5b",
+          "questionRef": "2024 HL Part 2 Q5B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 7,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Cause identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination of cause and impact (7/6 and 6/7 SRPs)",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-1-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5c",
+          "questionRef": "2024 HL Part 2 Q5C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 7,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Examination",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q5c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-i",
+          "questionRef": "2024 HL Part 2 Q6A(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Income",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-ii",
+          "questionRef": "2024 HL Part 2 Q6A(ii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Two farm types",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iii",
+          "questionRef": "2024 HL Part 2 Q6A(iii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Increase",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iv",
+          "questionRef": "2024 HL Part 2 Q6A(iv) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Change",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-v",
+          "questionRef": "2024 HL Part 2 Q6A(v) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-vi",
+          "questionRef": "2024 HL Part 2 Q6A(vi) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 8,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Benefit",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6a-vi"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b",
+          "questionRef": "2024 HL Part 2 Q6B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 8,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Social challenge identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Economic challenge identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Explanation of the two challenges (7/6 and 6/7 SRPs)",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6c",
+          "questionRef": "2024 HL Part 2 Q6C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 8,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Urban area named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factors identified",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental",
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q6c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a",
+          "questionRef": "2024 HL Part 2 Q7A — Deferred sitting",
+          "marks": 20,
+          "paperPage": 10,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Proportion (sketch outline)",
+              "maxMarks": 4
+            },
+            {
+              "label": "A lake",
+              "maxMarks": 4
+            },
+            {
+              "label": "Two connecting streets",
+              "maxMarks": 4
+            },
+            {
+              "label": "A carpark in the left foreground",
+              "maxMarks": 4
+            },
+            {
+              "label": "A sports stadium.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q7a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7b",
+          "questionRef": "2024 HL Part 2 Q7B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 10,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Multinational company named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Impact on world trade identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q7b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c",
+          "questionRef": "2024 HL Part 2 Q7C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 10,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Impact on primary activity identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-european-union"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q7c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-i",
+          "questionRef": "2024 HL Part 2 Q8A(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Fuel type",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-ii",
+          "questionRef": "2024 HL Part 2 Q8A(ii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 11,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Two fuel types",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-iii",
+          "questionRef": "2024 HL Part 2 Q8A(iii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 11,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Calculation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-iv",
+          "questionRef": "2024 HL Part 2 Q8A(iv) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Example",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-energy"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-v",
+          "questionRef": "2024 HL Part 2 Q8A(v) — Deferred sitting",
+          "marks": 8,
+          "paperPage": 11,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Reason 1",
+              "maxMarks": 4
+            },
+            {
+              "label": "Reason 2",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-energy"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b",
+          "questionRef": "2024 HL Part 2 Q8B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 11,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Challenges identified",
+              "maxMarks": 4
+            },
+            {
+              "label": "Developing economy named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-3-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-developing-economies"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8c",
+          "questionRef": "2024 HL Part 2 Q8C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 11,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Reason 1",
+              "maxMarks": 10
+            },
+            {
+              "label": "Reason 2",
+              "maxMarks": 10
+            },
+            {
+              "label": "Reason 3",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-elective-economic",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q8c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-i",
+          "questionRef": "2024 HL Part 2 Q9A(i) — Deferred sitting",
+          "marks": 16,
+          "paperPage": 12,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Title",
+              "maxMarks": 2
+            },
+            {
+              "label": "Axes named (bar chart) / circle and centre (pie chart)",
+              "maxMarks": 2
+            },
+            {
+              "label": "6 items illustrated",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q9a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-ii",
+          "questionRef": "2024 HL Part 2 Q9A(ii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 12,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q9a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b",
+          "questionRef": "2024 HL Part 2 Q9B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 12,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Examination",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q9b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9c",
+          "questionRef": "2024 HL Part 2 Q9C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 12,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Developed economy named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-elective-economic"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q9c-footloose-industries",
+            "geography-2024-hl-deferred-p2-q9c-financial-services",
+            "geography-2024-hl-deferred-p2-q9c-mass-tourism"
+          ],
+          "routes": [
+            "Footloose industries",
+            "Financial services",
+            "Mass tourism"
+          ]
+        },
+        {
+          "key": "p2-10a",
+          "questionRef": "2024 HL Part 2 Q10A — Deferred sitting",
+          "marks": 20,
+          "paperPage": 13,
+          "schemePages": [
+            33
+          ],
+          "criteria": [
+            {
+              "label": "Proportion (sketch outline)",
+              "maxMarks": 4
+            },
+            {
+              "label": "A river",
+              "maxMarks": 4
+            },
+            {
+              "label": "A church",
+              "maxMarks": 4
+            },
+            {
+              "label": "A roundabout",
+              "maxMarks": 4
+            },
+            {
+              "label": "A bridge.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q10a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10b",
+          "questionRef": "2024 HL Part 2 Q10B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 13,
+          "schemePages": [
+            34
+          ],
+          "criteria": [
+            {
+              "label": "Example of urban centre",
+              "maxMarks": 2
+            },
+            {
+              "label": "Discussion of problem one",
+              "maxMarks": 14
+            },
+            {
+              "label": "Discussion of problem two",
+              "maxMarks": 14
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q10b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c",
+          "questionRef": "2024 HL Part 2 Q10C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 13,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q10c-development-of-resources",
+            "geography-2024-hl-deferred-p2-q10c-income-levels",
+            "geography-2024-hl-deferred-p2-q10c-society-and-culture"
+          ],
+          "routes": [
+            "Development of resources",
+            "Income levels",
+            "Society and culture"
+          ]
+        },
+        {
+          "key": "p2-11a-i",
+          "questionRef": "2024 HL Part 2 Q11A(i) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 14,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Pyramid",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-ii",
+          "questionRef": "2024 HL Part 2 Q11A(ii) — Deferred sitting",
+          "marks": 2,
+          "paperPage": 14,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Age group",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-iii",
+          "questionRef": "2024 HL Part 2 Q11A(iii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 14,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Pyramid",
+              "maxMarks": 2
+            },
+            {
+              "label": "Evidence",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-iv",
+          "questionRef": "2024 HL Part 2 Q11A(iv) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 14,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Pyramid",
+              "maxMarks": 2
+            },
+            {
+              "label": "Developed country",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-v",
+          "questionRef": "2024 HL Part 2 Q11A(v) — Deferred sitting",
+          "marks": 8,
+          "paperPage": 14,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Challenge 1",
+              "maxMarks": 4
+            },
+            {
+              "label": "Challenge 2",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b",
+          "questionRef": "2024 HL Part 2 Q11B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 14,
+          "schemePages": [
+            37
+          ],
+          "criteria": [
+            {
+              "label": "Named Irish city",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination of land-use 1",
+              "maxMarks": 14
+            },
+            {
+              "label": "Examination of land-use 2",
+              "maxMarks": 14
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography",
+            "geography-higher-urban-land-uses"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c",
+          "questionRef": "2024 HL Part 2 Q11C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 14,
+          "schemePages": [
+            38
+          ],
+          "criteria": [
+            {
+              "label": "Reason 1",
+              "maxMarks": 10
+            },
+            {
+              "label": "Reason 2",
+              "maxMarks": 10
+            },
+            {
+              "label": "Reason 3",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q11c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-i",
+          "questionRef": "2024 HL Part 2 Q12A(i) — Deferred sitting",
+          "marks": 16,
+          "paperPage": 15,
+          "schemePages": [
+            39
+          ],
+          "criteria": [
+            {
+              "label": "Title",
+              "maxMarks": 2
+            },
+            {
+              "label": "Axes named (bar chart) / circle and centre (pie chart)",
+              "maxMarks": 2
+            },
+            {
+              "label": "6 items illustrated",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q12a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-ii",
+          "questionRef": "2024 HL Part 2 Q12A(ii) — Deferred sitting",
+          "marks": 4,
+          "paperPage": 15,
+          "schemePages": [
+            39
+          ],
+          "criteria": [
+            {
+              "label": "Challenge",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q12a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b",
+          "questionRef": "2024 HL Part 2 Q12B — Deferred sitting",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q12b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12c",
+          "questionRef": "2024 HL Part 2 Q12C — Deferred sitting",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q12c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-13",
+          "questionRef": "2024 HL Part 2 Q13 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-5-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q13"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-14",
+          "questionRef": "2024 HL Part 2 Q14 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-5-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q14-global-warming",
+            "geography-2024-hl-deferred-p2-q14-deforestation",
+            "geography-2024-hl-deferred-p2-q14-desertification"
+          ],
+          "routes": [
+            "Global warming",
+            "Deforestation",
+            "Desertification"
+          ]
+        },
+        {
+          "key": "p2-15",
+          "questionRef": "2024 HL Part 2 Q15 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-5-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q15"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-16",
+          "questionRef": "2024 HL Part 2 Q16 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            44
+          ],
+          "criteria": [
+            {
+              "label": "Aspects (3 @ 20 marks or 4 @ 15 marks)",
+              "maxMarks": 60
+            },
+            {
+              "label": "Overall coherence",
+              "maxMarks": 20
+            }
+          ],
+          "topicIds": [
+            "geography-6-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q16"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-17",
+          "questionRef": "2024 HL Part 2 Q17 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            44
+          ],
+          "criteria": [
+            {
+              "label": "Aspects (3 @ 20 marks or 4 @ 15 marks)",
+              "maxMarks": 60
+            },
+            {
+              "label": "Overall coherence",
+              "maxMarks": 20
+            }
+          ],
+          "topicIds": [
+            "geography-6-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q17"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-18",
+          "questionRef": "2024 HL Part 2 Q18 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 17,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-6-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q18"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-19",
+          "questionRef": "2024 HL Part 2 Q19 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            45
+          ],
+          "criteria": [
+            {
+              "label": "Aspects (3 @ 20 marks or 4 @ 15 marks)",
+              "maxMarks": 60
+            },
+            {
+              "label": "Overall coherence",
+              "maxMarks": 20
+            }
+          ],
+          "topicIds": [
+            "geography-7-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q19"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-20",
+          "questionRef": "2024 HL Part 2 Q20 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-7-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q20"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-21",
+          "questionRef": "2024 HL Part 2 Q21 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-7-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q21"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-22",
+          "questionRef": "2024 HL Part 2 Q22 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-8-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q22"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-23",
+          "questionRef": "2024 HL Part 2 Q23 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-8-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q23"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-24",
+          "questionRef": "2024 HL Part 2 Q24 — Deferred sitting",
+          "marks": 80,
+          "paperPage": 18,
+          "schemePages": [
+            2
+          ],
+          "criteria": [
+            {
+              "label": "The scheme prints no answer for this part.",
+              "maxMarks": 80
+            }
+          ],
+          "topicIds": [
+            "geography-8-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2024-hl-deferred-p2-q24"
+          ],
+          "routes": []
+        }
+      ],
+      "rule": "Independent review ledger: Leaving Certificate Geography 2024 Higher Level, deferred sitting.\n\nThe SEC's deferred examination is a paper of its own. Sources (English\neditions, harvested in paper-trail-corpus/deferredexams/2024 and\ndeferredmarkingschemes/2024, filed by Paper Trail as \"<fileid>-deferred\";\nsizes pinned in EXPECTED_SOURCES and the generated audit): Part One and\nAnswerbook LC005ALP042EV (48 pages), Part Two LC005ALP043EV (20 pages),\nmarking scheme LC005ALP000EV (54 pages), and the sitting's own companions:\nthe 1:50 000 Castlebar map LC005CLP003EV, its legend LC005CLPC00EV and the\nCastlebar aerial photograph LC005CLP004EV, published only as a JPEG.\n\nVisual sweep (every page rendered and read on 2026-11-19):\n  Part One booklet p1 cover; p2 instructions (Part One \"Attempt any TEN\",\n  80 marks; Part Two \"attempt FOUR\", 320 marks); p3-p13 Questions 1-12 (p9\n  holds Q7 and Q8); p14 Part Two answerbook instructions; p15-p18 graph\n  paper; p19-p47 lined answer pages; p48 back cover and copyright notice.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3-p8 Sections 1-2\n  (Q1-Q6); p9 Section 3 divider; p10-p15 Electives (Q7-Q12); p16 Section 4\n  divider and note; p17-p18 Options (Q13-Q24); p19-p20 \"Do not hand this up\"\n  and the copyright notice.\n  Scheme p1 cover; p2 the note on deferred marking schemes; p3 Part One\n  table (two columns, Q1-Q6 and Q7-Q12), running on to the top of p4 (Q6(iv)\n  and Q12(iv)); p4-p22 Q1-Q6 (each reprints its question; no annotation\n  tables); p23 Electives divider; p24-p41 Q7-Q12; p42 Options divider and\n  note; p43-p46 Q13-Q24; p47-p51 Geographical Investigation (coursework);\n  p52 investigation topics; p53 Irish-language bonus marks; p54 blank.\n  Companions: Castlebar map extract (Lough Rusheen, Lannagh/Castlebar\n  Lough, the N5); OS legend sheet; oblique aerial photograph of Castlebar.\n\nThis deferred scheme was \"finalised only for the questions attempted by the\ncandidates\" (its p2 note) and prints no allocation for 10C, 12B, 12C and\noptions 13, 14, 15, 18, 20, 21, 22, 23 and 24: it reprints each question\nand its tariff and nothing more. Each is carded with one row, \"The scheme\nprints no answer for this part.\", whose guidance is that note (p2), so the\nstudent marks it on its printed tariff and the scheme's own reason is\nshown. Every other part carries its published allocation. The Part One\ntable prints Q2's and Q4's two parts side by side (letter and setting,\nlocation and photograph); each part reads its own column. It numbers Q1's\n(ii) and (iii) \"(ii) (a)\" and \"(b)\", and Q4's (iii) \"(ii)\"; each is placed\nby its wording. Q9 prints the four locations with no per-row marks (the\nquestion's 8 marks), so it is one criterion. 2A prices (v) at 2 and (vi) at\n4, as printed. The options' Overall Coherence is \"20 marks graded*\" with no\ndescriptor table in this scheme, so its marks are not stepped. Finite\nprinted choices are routes: 2B, 4B, 9C, 10C and 14 one of the printed\nbullets; 3C (i) or (ii), with (i)'s one fluvial or one coastal or one\nglacial landform. Choose-N-of-M pools are one card with every printed item\n(10B any two, 11B two of three, 15 three of four). 3B \"the coastal\nlandscape and/or the fluvial landscape\" is open (either or both), one card."
     }
   ]
 }

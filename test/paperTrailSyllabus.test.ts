@@ -123,7 +123,7 @@ const ADMITTED_DEFERRED = new Set([
   ...[2022, 2023, 2024, 2025].flatMap(year => ['ALP100', 'ALP200', 'GLP100', 'GLP200']
     .map(booklet => `mathematics|${year}|LC003${booklet}EV-deferred.pdf`)),
   // Geography: Part One and Part Two of each carded Higher deferred sitting.
-  ...[2022, 2023].flatMap(year => ['ALP042', 'ALP043']
+  ...[2022, 2023, 2024].flatMap(year => ['ALP042', 'ALP043']
     .map(booklet => `geography|${year}|LC005${booklet}EV-deferred.pdf`)),
 ]);
 

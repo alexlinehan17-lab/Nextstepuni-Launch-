@@ -50,6 +50,7 @@ const DEFERRED_REF = ' — Deferred sitting';
 const DEFERRED_SITTINGS: Record<string, { tasks: number; cards: number; routed: number }> = {
   '2022-higher': { tasks: 112, cards: 120, routed: 5 },
   '2023-higher': { tasks: 114, cards: 124, routed: 4 },
+  '2024-higher': { tasks: 112, cards: 124, routed: 6 },
 };
 const deferredTotal = (key: 'tasks' | 'cards' | 'routed') =>
   Object.values(DEFERRED_SITTINGS).reduce((sum, row) => sum + row[key], 0);
@@ -688,7 +689,7 @@ describe('independently reviewed Geography sittings', () => {
   ] as const)('keeps every shipped %s %s id (live or progress-aliased) and adds only newly separated parts',
     (year, level, legacy, added, corrected) => {
       const review = sitting(year, level);
-      const ids = new Set(ALL.filter(card => card.year === year && card.level === level)
+      const ids = new Set(ALL.filter(card => card.year === year && card.level === level && !isDeferred(card))
         .map(card => card.id));
       expect(review.legacyIds).toHaveLength(legacy);
       // A shipped combination card of a choose-N pool is withdrawn and its

@@ -44,6 +44,7 @@ import fitz
 import geography_review as GR
 import geography_review_2022_hl_deferred as REVIEW_2022_HL_DEFERRED
 import geography_review_2023_hl_deferred as REVIEW_2023_HL_DEFERRED
+import geography_review_2024_hl_deferred as REVIEW_2024_HL_DEFERRED
 import geography_review_2026_hl as REVIEW_2026_HL
 import geography_review_2026_ol as REVIEW_2026_OL
 import geography_review_2025_hl as REVIEW_2025_HL
@@ -154,6 +155,7 @@ REVIEWED = {
 REVIEWED_DEFERRED: dict[tuple[int, str], Any] = {
     (2022, 'higher'): REVIEW_2022_HL_DEFERRED,
     (2023, 'higher'): REVIEW_2023_HL_DEFERRED,
+    (2024, 'higher'): REVIEW_2024_HL_DEFERRED,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
