@@ -87,8 +87,12 @@ UNIT_A = re.compile(r'^SECTION\s+A\s+READING\s+COMPREHENSION\b', re.I)
 # Higher's Section B is one of three routes a candidate chooses between, and
 # the scheme heads each: the unseen passage, the prescribed novel (itself A or
 # B) and the essay. Ordinary's is five publicity pieces.
-UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b', re.I)
-UNIT_B2_HL = re.compile(r'^B\s*2\.?\s*Literary\s+passage\s+from\s+[Pp]rescribed\s+novel\b', re.I)
+# 2026 heads the section "SECTION B Literary Passage (60 marks)" and its routes
+# "B 1. Unseen passage" and "B 2. Prescribed novel".
+UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b'
+                       r'|^B\s*1\.?\s*Unseen\s+passage\b', re.I)
+UNIT_B2_HL = re.compile(r'^B\s*2\.?\s*Literary\s+passage\s+from\s+[Pp]rescribed\s+novel\b'
+                        r'|^B\s*2\.?\s*Prescribed\s+novel\b', re.I)
 UNIT_B3_HL = re.compile(r'^B\s*3\.?\s*Essay\s+on\s+prescribed\s+text\b', re.I)
 UNIT_B_OL = re.compile(r'^SECTION\s+B\s*:?\s*PUBLICITY\b', re.I)
 UNIT_C = re.compile(r'^Section\s+C\s+WRITING\b', re.I)
@@ -210,6 +214,10 @@ MISPRINTS = {
     # beside a bracket as a tariff, which would find one in every answer that
     # ends in a date.
     (2022, 'ol'): [('1. Three of: 6 (2+2+2)', '1. Three of: 6 marks (2+2+2)')],
+    # 2026 Higher prices Dialogue 3 Q7 "Any two of: 4 (2+2) marks", the word
+    # after the split instead of before it; the dialogue's other seven asks
+    # and its printed total (32) say the 4 is marks.
+    (2026, 'hl'): [('7. Any two of: 4 (2+2) marks', '7. Any two of: 4 marks (2+2)')],
 }
 
 
