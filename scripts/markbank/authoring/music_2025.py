@@ -66,7 +66,8 @@ AUDIO = {
 
 
 def norm(text):
-    text = unicodedata.normalize('NFKC', text or '').lower()
+    # a printed ♭ reaches the text layer as the music font's "b" (music_cards.norm)
+    text = unicodedata.normalize('NFKC', (text or '').replace('♭', 'b')).lower()
     text = re.sub('[‐-―]', '-', text)
     return re.sub(r'[^a-z0-9Ā-ſ]+', '', text)
 

@@ -50,7 +50,7 @@
   {
    "paper": "composing",
    "page": 14,
-   "why": "Q5 \"Preparatory work\" (plot the chords of F# minor): unnumbered, no marks in the scheme; i, ii°, III+ and vii° printed already filled in"
+   "why": "Q5 \"Preparatory work\" (plot the chords of F♯ minor): unnumbered, no marks in the scheme; i, ii°, III+ and vii° printed already filled in"
   },
   {
    "paper": "composing",
@@ -660,7 +660,7 @@
      "options": [
       "No Woodwind — Woodwind",
       "Piano — No piano",
-      "(A) Major — (F#) Minor",
+      "(A) Major — (F♯) Minor",
       "Allegro — Adagio",
       "Homophonic — Polyphonic",
       "Metre"
@@ -3184,7 +3184,7 @@
     15
    ],
    "crop": null,
-   "questionText": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of F# minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionText": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of F♯ minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
    "questionContext": null,
    "excerptLine": null,
    "needsRecording": false,

@@ -59,9 +59,45 @@ LEVEL_WORD = {'higher': 'Higher Level', 'ordinary': 'Ordinary Level'}
 
 
 def norm(text):
-    text = unicodedata.normalize('NFKC', text or '').lower()
+    # A printed flat or sharp sign reaches the text layer as the music font's
+    # "b" / "#": compare a card's ♭ with that "b" (♯ and "#" both drop out below).
+    text = unicodedata.normalize('NFKC', (text or '').replace('♭', 'b')).lower()
     text = re.sub('[‐-―]', '-', text)
     return re.sub(r'[^a-z0-9Ā-ſ]+', '', text)
+
+
+MUSIC_FONTS = ('Opus', 'Rousseau', 'Maestro', 'Petrucci', 'Sonata', 'Bravura')
+SIGN = {'b': '♭', '#': '♯'}
+
+
+def music_signs(pdf):
+    """Where the text layer types a flat or sharp in a music font (OpusTextStd's "b" is
+    drawn as ♭, Rousseau's "#" as ♯): the line as the text layer spells it, a few
+    characters either side of the letter and its sign, whitespace collapsed. A card
+    string that spells one of these with the plain letter has dropped the printed
+    sign (2025 HL Composing Q4 "Eb major" for the printed E♭ major)."""
+    out = set()
+    for page in fitz.open(pdf):
+        for block in page.get_text('rawdict')['blocks']:
+            for line in block.get('lines', []):
+                chars = [(c['c'], span['font']) for span in line['spans'] for c in span['chars']]
+                text = ''.join(c for c, _ in chars)
+                for i, (c, font) in enumerate(chars):
+                    if c in SIGN and i and chars[i - 1][0] in 'ABCDEFG' and any(f in font for f in MUSIC_FONTS) \
+                            and not any(f in chars[i - 1][1] for f in MUSIC_FONTS):
+                        left = re.sub(r'\s+', ' ', text[max(0, i - 7):i])
+                        right = re.sub(r'\s+', ' ', text[i + 1:i + 7])
+                        out.add((left, c, right))
+    return out
+
+
+def dropped_sign(text, signs):
+    flat = re.sub(r'\s+', ' ', text or '')
+    for left, c, right in signs:
+        core = left[-2:] + c + right[:4]
+        if core in flat:
+            return f'{left}{SIGN[c]}{right}'
+    return None
 
 
 def recordings(year, deferred):
@@ -103,6 +139,8 @@ class Sitting:
         if os.path.exists(md):
             text += open(md, encoding='utf-8').read()
         self.scheme_text = norm(text)
+        self.scheme_signs = music_signs(self.scheme_pdf)
+        self.paper_signs = {kind: music_signs(path) for kind, path in self.papers.items()}
         self.attr_paper = (f'SEC Leaving Certificate Music {self.year} {LEVEL_WORD[self.level]} '
                            f'{"deferred " if self.deferred else ""}examination paper — © State Examinations Commission')
         self.attr_scheme = (f'SEC Leaving Certificate Music {self.year} {LEVEL_WORD[self.level]} marking scheme'
@@ -127,6 +165,9 @@ class Sitting:
     def scheme(self, text):
         if not text or norm(text) not in self.scheme_text:
             raise SystemExit(f'{self.year} {self.tag}: not in the scheme: {text!r}')
+        printed = dropped_sign(text, self.scheme_signs)
+        if printed:
+            raise SystemExit(f'{self.year} {self.tag}: the scheme prints a music-font sign here ({printed!r}): {text!r}')
         return text
 
     def paper(self, kind, text):
@@ -138,6 +179,9 @@ class Sitting:
         t = norm(text)
         if not t or (t not in self.paper_text.get(kind, '') and t not in self.ocr_text.get(kind, '')):
             raise SystemExit(f'{self.year} {self.tag}: not in the {kind} booklet: {text!r}')
+        printed = dropped_sign(text, self.paper_signs.get(kind, set()))
+        if printed:
+            raise SystemExit(f'{self.year} {self.tag}: the {kind} booklet prints a music-font sign here ({printed!r}): {text!r}')
         return text
 
     def quote(self, lines):
@@ -289,8 +333,22 @@ def question_text(s, a):
     """The ask's words, each piece checked against the booklet (the title and
     bullets of a composing question are checked one by one)."""
     text = a['questionText']
-    for piece in text.split(' • '):
-        s.paper(a['paper'], piece)
+    for line in text.split('\n'):
+        for piece in line.split(' • '):
+            s.paper(a['paper'], piece)
+    return text
+
+
+def printed_block(s, kind, text):
+    """A lead-in or excerpt line, each printed line checked against the booklet
+    on its own: the lines of the block, its bullets, and each numbered lyric line
+    ("Line 4 Galileo, ..."), label and words together. A reading of a page in
+    bands can repeat or reorder whole lines at a band edge, never a line's words."""
+    if any(r['booklet'] == kind and r['text'] == text for r in s.data.get('readFromPage', [])):
+        return text
+    for line in text.split('\n'):
+        for piece in re.split(r' (?=Line \d+ )', line.removeprefix('• ')):
+            s.paper(kind, piece)
     return text
 
 
@@ -319,10 +377,10 @@ def point_card(s, a, atlas):
     atlas.check(s, a, topic)
     card = {'id': cid, 'subjectId': 'music', 'level': s.level, 'year': s.year,
             'section': {'listening': 'L', 'composing': 'A', 'elective': 'E'}[a['paper']],
-            'topicId': topic, 'conceptId': music_2025.concept(question), 'questionRef': s.ref(a),
+            'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question), 'questionRef': s.ref(a),
             'questionText': question, 'totalMarks': a['marks'],
             'sourceMaterial': source_for(s, a, f'{BOOKLET[a["paper"]]} — Question {q}')}
-    stem = ' '.join(s.paper(a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
+    stem = ' '.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
     if stem:
         card['stem'] = stem
     if a.get('needsRecording'):
@@ -391,7 +449,7 @@ def grid_card(s, a, atlas, cid=None, ref=None, question=None):
              else 'Listening elective — Questions' if a['paper'] == 'elective'
              else f'Question {q} {a["address"].split(" ")[1][0]}' if ' ' in a['address'] else f'Question {q}')
     card = {'id': cid, 'kind': 'rubric', 'subjectId': 'music', 'level': s.level, 'year': s.year,
-            'section': section, 'topicId': topic, 'conceptId': music_2025.concept(question),
+            'section': section, 'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question),
             'questionRef': ref or s.ref(a), 'questionText': question, 'totalMarks': a['marks'],
             'schemePages': spec['schemePages'],
             'rubric': {'system': 'french', 'taskRequirements': [s.scheme(x) for x in spec.get('taskRequirements', [])],

@@ -2770,7 +2770,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2025-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-bass-chords-complete-compose",
     section: "B", questionRef: "2025 HL Composing Section B Q4",
     stem: "Answer one question only in this section.",
-    questionText: "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of Eb major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    questionText: "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
     totalMarks: 60,
     rubric: {
           "system": "french",
@@ -3783,7 +3783,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two differences between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Excerpt 1 — Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2 marks for each of two valid differences between the music in Excerpt 1 and Excerpt 2” “For Example: Not Exhaustive” “Any other valid difference.” “Must refer to both excerpts or use a clear comparative term i.e. slower, etc.” “Answers must refer to the same point of difference.”", openList: true, group: {"claimMax":2,"perOption":2,"options":["No Woodwind — Woodwind","Piano — No piano","(A) Major — (F#) Minor","Allegro — Adagio","Homophonic — Polyphonic","Metre"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Excerpt 1 — Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2 marks for each of two valid differences between the music in Excerpt 1 and Excerpt 2” “For Example: Not Exhaustive” “Any other valid difference.” “Must refer to both excerpts or use a clear comparative term i.e. slower, etc.” “Answers must refer to the same point of difference.”", openList: true, group: {"claimMax":2,"perOption":2,"options":["No Woodwind — Woodwind","Piano — No piano","(A) Major — (F♯) Minor","Allegro — Adagio","Homophonic — Polyphonic","Metre"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6509,7 +6509,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2026-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
     section: "B", questionRef: "2026 HL Composing Section B Q5",
     stem: "Answer one question only in this section:",
-    questionText: "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of F# minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    questionText: "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of F♯ minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
     totalMarks: 60,
     rubric: {
           "system": "french",
@@ -9102,7 +9102,7 @@ export const CARDS: SecCard[] = [
     id: "mus-2024-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
     section: "B", questionRef: "2024 HL Composing Section B Q4",
     stem: "Answer one question only in this section:",
-    questionText: "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of F# minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    questionText: "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of F♯ minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
     totalMarks: 60,
     rubric: {
           "system": "french",
@@ -9863,7 +9863,7 @@ export const CARDS: SecCard[] = [
           "candId": "music-2023-HL-l-q1-d-score",
           "src": "/exam-figures/music/markbank/music-2023-HL-l-q1-d-score.png",
           "srcHash": "468071c92e6934a8a1d600e1c46e1a14",
-          "alt": "The printed lyrics (lines 1-4, with the chords Bb and Gm boxed over line 1), the question and its three printed chord options (Cm, F, Eb), printed with Listening Q1(d) in the 2023 Higher Level paper, as the SEC set it.",
+          "alt": "The printed lyrics (lines 1-4, with the chords B♭ and Gm boxed over line 1), the question and its three printed chord options (Cm, F, E♭), printed with Listening Q1(d) in the 2023 Higher Level paper, as the SEC set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Music 2023 Higher Level examination paper — © State Examinations Commission",
           "includesPrompt": true
