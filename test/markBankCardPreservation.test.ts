@@ -1504,9 +1504,13 @@ const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 51, ordinary: 52 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 31, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
+  'por-2025-hl-a-1-b-ii',
+  'por-2025-hl-a-1-i',
+  'por-2025-hl-a-2-j-i',
 ]);
 const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
   || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN

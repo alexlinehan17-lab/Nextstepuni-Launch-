@@ -105,12 +105,12 @@ def write(year, level):
             json.dump(kept, fh, ensure_ascii=False, indent=1)
             fh.write('\n')
     authored, new = sitting_cards(year, level)
-    # Beside its own sitting's cards, or after the newest earlier sitting of
-    # the same level; first in the file if there is none.
-    at = max((i for i, c in enumerate(authored) if c['level'] == lv and c['year'] >= year),
+    # After its own sitting's last card, or else after the newest earlier
+    # sitting of the same level (2026, which had none, went after 2025).
+    at = max((i for i, c in enumerate(authored) if c['level'] == lv and c['year'] == year),
              default=None)
     if at is None:
-        at = max((i for i, c in enumerate(authored) if c['level'] == lv and c['year'] <= year),
+        at = max((i for i, c in enumerate(authored) if c['level'] == lv and c['year'] < year),
                  default=len(authored) - 1)
     out = authored[:at + 1] + new + authored[at + 1:]
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
