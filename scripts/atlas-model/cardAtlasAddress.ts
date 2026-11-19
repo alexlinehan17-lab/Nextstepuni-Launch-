@@ -12,6 +12,7 @@
  */
 import spanishAtlas from '../markbank/authoring/spanish-atlas.json';
 import japaneseAtlas from '../markbank/authoring/japanese-atlas.json';
+import italianAtlas from '../markbank/authoring/italian-atlas.json';
 import physicalEducationTasks from '../../data/paperTrail/physicalEducationTasks.json';
 import accountingAuthored from '../../components/MarkBank/cards/accounting/authored.json';
 import agsciRuntime from '../../data/examTopics/agricultural-science-question-runtime.json';
@@ -44,6 +45,7 @@ const economicsReviews = import.meta.glob('../markbank/authoring/reviews/economi
 
 const spanish = (spanishAtlas as { cards: Record<string, { fileid: string; n: string }> }).cards;
 const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
+const italian = (italianAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
 const peByCard = new Map((physicalEducationTasks as Array<{ cardId: string; fileid: string; n: string }>).map(t => [t.cardId, t]));
 const accByCard = new Map(((accountingAuthored as { cards: Json[] }).cards).map(c => [String(c.id), c]));
 const agsciByCard = new Map(((agsciRuntime as { markBankCards: Json[] }).markBankCards).map(r => [String(r.cardId), r]));
@@ -190,9 +192,11 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const e = japanese[c.id];
       return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
     }
-    case 'italian':
-      // The Atlas numbers these papers straight through; card citations restart in each section. No join yet.
-      return { fail: 'no-address-rule', cls: 'none' };
+    case 'italian': {
+      // The Atlas numbers each Italian paper straight through by section: a committed join, like Japanese.
+      const e = italian[c.id];
+      return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+    }
     default: {
       void atlas;
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
