@@ -454,6 +454,8 @@ def attach_language_rule(cards, scheme):
 
 def save_reviewed(cards):
     """Replace this reviewed batch by stable ID and preserve other sittings."""
+    from ru_no_answer import annotate_no_answers
+    cards = annotate_no_answers(cards)
     output = ROOT / 'scripts/markbank/authored/russian-reviewed.json'
     output.parent.mkdir(parents=True, exist_ok=True)
     previous = json.loads(output.read_text()) if output.exists() else []
